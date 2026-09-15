@@ -385,12 +385,14 @@ Here are what those buttons on the screen(For downloadable version) do in detail
 **Edit & Making Your Own Entry**  
 Allows you to edit the text file containing the items, for example, you could delete an ability you do not like for it to not appear any more or add your own item to the list. Beware that if you do not format the item you add correctly it will cause the gacha to stop working. To add an item you must follow this format.
 
-(Ability Number).(Ability Name),(Rating)  
+(Ability Number).(Ability Name),(Rating),(Source - optional)  
 \#(Description)
+
+Source is the fandom or work the entry comes from, for example, Demon Slayer or Generic if it has no specific source. If the source is omitted the gacha still works.
 
 Ability number can be any number you can put, just don't try to add characters other than 1 through 9\. But be careful to make it not overlap with other numbers or else the gacha will freak out.
 
-Ability names can be anything as long as you don't add emojis or special characters. And definitely no (,) or (.) can be added or else the gacha will not run.
+Ability names can be anything as long as you don't add emojis or special characters. And definitely no (,) or (.) can be added or else the gacha will not run. The same goes for the source: no commas.
 
 Rating must be written as (Number.Number), for example, 0.2  4.2   5.3   5.6   8.0  etc.
 

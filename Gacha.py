@@ -14,6 +14,7 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
     elements = []
     weights = []
     rarities = []
+    sources = []
     descriptions = []
     tempdescription = []
     weightsum = 0
@@ -35,8 +36,12 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
             if match:
                 parts = line.strip().split(',')
                 element, rarity = parts[0], parts[1]
-                #print(element, rarity)
+                # Optional third field: fandom/work source ('N. Name,Rarity,Source').
+                # Legacy two-field headers ('N. Name,Rarity') yield an empty source.
+                source = parts[2].strip() if len(parts) > 2 else ""
+                #print(element, rarity, source)
                 elements.append(element)
+                sources.append(source)
                 weights.append(1 / (pow(4, abs(avgrarity - (float(rarity))))))  # Convert weight to integer
                 if(float(rarity) <= maxrarity and minrarity < float(rarity)):
                     weightsum += (1 / (pow(4, abs(avgrarity - (float(rarity))))))
@@ -50,6 +55,7 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
                         elements.pop()
                         weights.pop()
                         rarities.pop()
+                        sources.pop()
                         continue
                     line = line.replace(pgtext, "")
                     print("Replaced:" + line)
@@ -58,6 +64,7 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
                         elements.pop()
                         weights.pop()
                         rarities.pop()
+                        sources.pop()
                         continue
                     line = line.replace(familiartext, "")
                 if scifitext in line:
@@ -65,13 +72,14 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
                         elements.pop()
                         weights.pop()
                         rarities.pop()
+                        sources.pop()
                         continue
                     line = line.replace(familiartext, "")
                 tempdescription.append(line)
     if (tempdescription):
         descriptions.append(' '.join(tempdescription).strip())
         tempdescription = []
-    return elements,weights,rarities,descriptions, weightsum, chosentype
+    return elements,weights,rarities,descriptions, weightsum, chosentype, sources
 
 def randomizer(min,max,avg,exponent):
     floatmax = float(max)
@@ -90,7 +98,7 @@ def randomizer(min,max,avg,exponent):
     return float(rarity[0])
 
 def run_gacha(type,min,avg,max,pullcount): # type - gacha mode, min-avg-max - rarities
-    elements, weights, rarities, descriptions, weightsum, chosentype = read_file_with_weight(type,avg,min,max)
+    elements, weights, rarities, descriptions, weightsum, chosentype, sources = read_file_with_weight(type,avg,min,max)
     runcount = 0
 #    averagepull = 0
 #    averagecheck = 0
@@ -101,6 +109,7 @@ def run_gacha(type,min,avg,max,pullcount): # type - gacha mode, min-avg-max - ra
         filtered_elements = [elem for elem, val in zip(elements, rarities) if abs(val - raritypull) <= 0.2]
         filtered_weights = [weight for weight, val in zip(weights, rarities) if abs(val - raritypull) <= 0.2]
         filtered_descriptions = [description for description, val in zip(descriptions, rarities) if abs(val - raritypull) <= 0.2]
+        filtered_sources = [source for source, val in zip(sources, rarities) if abs(val - raritypull) <= 0.2]
         #print( str(len(filtered_elements)) + ' ' + str(len(filtered_weights)) + ' ' + str(len(filtered_rarities)) + ' ' + str(len(filtered_descriptions)))
         #print(str(len(elements)) + ' ' + str(len(weights)) + ' ' + str(len(descriptions)) + ' ' + str(len(rarities)))
         if len(filtered_elements) == 0:
@@ -110,6 +119,7 @@ def run_gacha(type,min,avg,max,pullcount): # type - gacha mode, min-avg-max - ra
         selected_element = filtered_elements[index[0]]
         selected_rarity = filtered_rarities[index[0]]
         selected_description = filtered_descriptions[index[0]]
+        selected_source = filtered_sources[index[0]]
         selected_description = selected_description.replace('#','')
         print(f"Selected element: {selected_element} with rarity: {selected_rarity} and {round(luckpercentage, 2)}% odds")
         if selected_rarity < 1.0:
@@ -143,7 +153,10 @@ def run_gacha(type,min,avg,max,pullcount): # type - gacha mode, min-avg-max - ra
             color = '#ff0000'
             tier = 'Transcendent'
         resultLabel.config(text=selected_element +  ' ' + str(selected_rarity) + ' (' + str(round(luckpercentage, 2)) + '%)', fg=color)
-        headerLabel.config(text= '-'+tier+' ' + chosentype + '-', fg=color)
+        if selected_source:
+            headerLabel.config(text= '-'+tier+' ' + chosentype + ' [' + selected_source + ']-', fg=color)
+        else:
+            headerLabel.config(text= '-'+tier+' ' + chosentype + '-', fg=color)
 #        print("length of description : " + str(len(selected_description)))
         descriptionLabel.config(text=selected_description)
         runcount += 1
