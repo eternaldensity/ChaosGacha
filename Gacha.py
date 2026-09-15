@@ -24,6 +24,8 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
     pgtext = "(Nsfw)"
     familiartext = "(Character)"
     scifitext = "(Tech)"
+    treetext = "(Tree)"
+    gachatext = "(Gacha)"
     if filename == 'random':
         filename = ['ability','item','familiar','trait', 'skill']
         filename = random.choice(filename)
@@ -50,6 +52,12 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
                     descriptions.append(' '.join(tempdescription).strip())
                     tempdescription = []
             else: # If the line doesn't start with a number heading it is a part of the description.
+                if treetext in line: # Tree-only entries never roll in the Gacha
+                    elements.pop()
+                    weights.pop()
+                    rarities.pop()
+                    sources.pop()
+                    continue
                 if pgtext in line:
                     if pgmode:
                         elements.pop()
@@ -74,7 +82,9 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
                         rarities.pop()
                         sources.pop()
                         continue
-                    line = line.replace(familiartext, "")
+                    line = line.replace(scifitext, "")
+                if gachatext in line: # Gacha-only marker is not content; hide it
+                    line = line.replace(gachatext, "")
                 tempdescription.append(line)
     if (tempdescription):
         descriptions.append(' '.join(tempdescription).strip())

@@ -185,7 +185,7 @@
 93. Tinker Supreme, 7.9, Generic
 #(Tech) You are the supreme Tinker who innovates wondrous constructs on your own merits without needing specializations, which now only boost your natural prowess. You cannot utilize Tinker abilities that are not from your native world.
 94. Gambler, 4.3, Generic
-#Every time you would roll the ticket, you first roll a D20: {20}= Ticket Rank Up, {19 - 17}= Advantage, {16 - 13}= Change Ticket Type, {12 - 8}= Nothing happens, {7 - 2}= Ticket Rank Down, {1}= Ticket is destroyed. This trait can be rerolled or toggled.
+#(Gacha) Every time you would roll the ticket, you first roll a D20: {20}= Ticket Rank Up, {19 - 17}= Advantage, {16 - 13}= Change Ticket Type, {12 - 8}= Nothing happens, {7 - 2}= Ticket Rank Down, {1}= Ticket is destroyed. This trait can be rerolled or toggled.
 95. Lady Killer, 2.8, Generic
 #Women always find you at least a little attractive regardless of preferences, and many consider you handsome.
 96. Charming Smile, 1.3, Generic
@@ -931,11 +931,11 @@
 466. Long Live the King, 4.8, Generic
 #May his reign last a thousand years. People even slightly loyal to you become much more loyal, you earn loyalty more easily, and people viewing you favorably make sacrifices for you more willingly.
 467. Tickets Please, 3.3, Generic
-#You can withdraw your tickets as physical, tangible tickets to hand to others. If someone else rips the ticket, they receive the roll result instead, subject to the same rules as you.
+#(Gacha) You can withdraw your tickets as physical, tangible tickets to hand to others. If someone else rips the ticket, they receive the roll result instead, subject to the same rules as you.
 468. Swiper no Swiping!, 2.6, Generic
 #You cannot be stolen from. Any owned item taken without your consent returns to your possession in a convenient location.
 469. Trade-In, 5.7, Generic
-#When you roll a ticket, you can reroll it with its rarity lowered by one stage (Platinum to Gold, Gold to Silver, etc.), but do not blame the gacha if it does not work out.
+#(Gacha) When you roll a ticket, you can reroll it with its rarity lowered by one stage (Platinum to Gold, Gold to Silver, etc.), but do not blame the gacha if it does not work out.
 470. Sea Serpent, 5.9, Generic
 #You are a Sea Serpent or Hybrid, a true apex predator of the seas. You can unleash your Sea Serpent characteristics as a Hybrid form or full Sea Serpent size. You also gain greatly superhuman physical abilities and grow empowered when wet or underwater. All Water-based abilities cost less energy and gain potency, but drying out drastically reduces all your stats.
 471. Leviathan, 7.5, Generic
@@ -1151,7 +1151,7 @@
 575. Dullahan's Deception, 2.2, Generic
 #Your head freely detaches from your neck/torso while staying connected in a higher dimension, so you still eat, speak, and breathe. Decapitation is useless against you.
 576. Chaos Duplication, 4.8, Generic
-#You grant copies of your own abilities and traits to others by burning a ticket equal in value to what you grant: bronze grants common, silver grants uncommon, gold grants rare, etc. Higher tickets grant double the replicants of the previous rarity: silver = 2x common, gold = 4x common, etc.
+#(Gacha) You grant copies of your own abilities and traits to others by burning a ticket equal in value to what you grant: bronze grants common, silver grants uncommon, gold grants rare, etc. Higher tickets grant double the replicants of the previous rarity: silver = 2x common, gold = 4x common, etc.
 577. Fair Use, 5.2, Generic
 #Anything you create cannot be used without your permission, acting as a blacklist and whitelist. Even if you leave your spaceship with keys in, no one can pilot it. Potions you leave act like water for anyone else using them.
 578. Crushing Daunt, 5.6, Generic

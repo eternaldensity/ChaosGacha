@@ -1909,7 +1909,7 @@
 958. Rule Breaker, 6.4, Generic
 #The rules no longer matter to you. You can expend energy to remove rules affecting you or a touched target — remove gravity on yourself, magic on a target, being targetable by magic, etc. Vaguer and more impactful rules cost more energy. A broken rule slowly restores itself, but its effects do not.
 959. Diamond Draw, 5.5, Generic
-#You can temporarily summon a random item from the Diamond Item Gacha lasting 1 hour before disappearing (you roll the gacha with a temporary ticket). This ability starts its 8-hour cooldown on use. If an elixir is pulled, its effects are temporary. 2-hour cooldown.
+#(Gacha) You can temporarily summon a random item from the Diamond Item Gacha lasting 1 hour before disappearing (you roll the gacha with a temporary ticket). This ability starts its 8-hour cooldown on use. If an elixir is pulled, its effects are temporary. 2-hour cooldown.
 960. Chainsaw Man, 6.8, Chainsaw Man
 #You are the Chainsaw hybrid. Pulling the ripcord on your chest turns you into hybrid form, replacing your head with a chainsaw and sprouting chainsaws on your arms and optionally legs. In this form you gain enhanced physical stats and blood-fueled extreme regeneration. You are immortal in hybrid state — as long as your heart remains, pulling your ripcord revives you.
 961. Bang!, 4.6, Chainsaw Man
@@ -1989,7 +1989,7 @@
 998. Martyr, 3.9, Generic
 #You can take others' burdens onto yourself. By touching them, you transfer their injuries, exhaustion, curses, sicknesses, and other ailments to yourself.
 999. Reroll, 3.6, Generic
-#"Lucky" When you roll this ability, whatever ticket you got it with is rolled twice and this ability is removed.
+#(Gacha) "Lucky" When you roll this ability, whatever ticket you got it with is rolled twice and this ability is removed.
 1000. Disillusioned, 2.5, Generic
 #You can see through any physical deception and concealment — pitfalls, physical disguises, bent light, one-way mirrors, etc. Any physical illusion meant to deceive senses fails on you.
 1001. Piercing Eyes, 2.1, Generic
@@ -2375,7 +2375,7 @@
 1191. Charon's Bell, 4.7, Generic
 #Ring the Ferryman's bell to call the souls of the dead to you, by default all souls in range, or a specific soul instantly if you hold something relevant like corpse parts or mementos, as long as their soul is in your dimension. Powerful unwilling targets can resist. Called spirits are not commanded but can be interacted with, and you can store 100 souls by default, equal to a grown man, increasing with energy reserves.
 1192. Call to Arms, 4.3, Generic
-#Call to Arms rolls the familiar gacha to temporarily grant you a familiar fighting by your side for 1 hour, then it disappears. At 1 Ability Slot you pull Bronze, 2 slots = Silver, 3 slots = Gold, 4 Slots = Platinum, capping at 5 slots = Diamond. 24 Hour cooldown.
+#(Gacha) Call to Arms rolls the familiar gacha to temporarily grant you a familiar fighting by your side for 1 hour, then it disappears. At 1 Ability Slot you pull Bronze, 2 slots = Silver, 3 slots = Gold, 4 Slots = Platinum, capping at 5 slots = Diamond. 24 Hour cooldown.
 1193. Summon Angelic Guardian, 3.5, Generic
 #Temporarily summon a low-ranking Angel or Holy Spirit from the Heavenly Realm, such as Lesser Light Fairy, Angel Guardians, Archangel Flames (Overlord), 2 Winged Angels, etc., limited to Uncommon familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 1194. Summon Angel, 4.4, Generic

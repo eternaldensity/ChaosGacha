@@ -431,7 +431,7 @@
 216. Infinity Gauntlet, 2.6, Marvel
 #The gauntlet itself, very durable, but stones not included.
 217. Greed's Coin, 4.8, Generic
-#"Fancy your chances?" Choose an inventory ticket and flip a coin. Heads gives the ticket an advantage; Tails destroys it.
+#(Gacha) "Fancy your chances?" Choose an inventory ticket and flip a coin. Heads gives the ticket an advantage; Tails destroys it.
 218. Durable Baseball Bat, 1.8, Generic
 #An extremely durable baseball bat that takes at least a nuclear bomb to deform.
 219. Combat Armor, 3.6, Generic
@@ -461,11 +461,11 @@
 231. Monster Cell, 6.7, One Punch Man
 #A hand-sized virus-like cell. Eating it makes you unbelievably stronger and transforms you into a monstrous creature with extended lifespan, at the cost of never developing further by natural means.
 232. Ability Ticket, 5.5, Generic
-#A ticket acting as a 6x Advantage Platinum Ability Gacha Ticket.
+#(Gacha) A ticket acting as a 6x Advantage Platinum Ability Gacha Ticket.
 233. Trait Ticket, 5.2, Generic
-#A ticket acting as a 6x Advantage Platinum Trait Gacha Ticket.
+#(Gacha) A ticket acting as a 6x Advantage Platinum Trait Gacha Ticket.
 234. Skill Ticket, 5.1, Generic
-#A ticket acting as a 6x Advantage Platinum Skill Gacha Ticket.
+#(Gacha) A ticket acting as a 6x Advantage Platinum Skill Gacha Ticket.
 235. Uroboros Virus, 4.6, Resident Evil
 #A powerful transforming virus. Mismatched hosts become an anomalous mass of blackened matter with incredible regeneration; matched hosts gain enhanced stats and bio-immortality with commandable viral healing. Or pour the vial into the ocean and watch the apocalypse.
 236. Tvirus, 3.3, Resident Evil
@@ -1211,7 +1211,7 @@
 606. Staff of Regrowth, 3.5, Terraria
 #A staff of solidified flower suffused with nature energy. Expend energy to nourish and rapidly grow plants in range, even reviving half-dead seeds on arid land into lush fertile ground; stronger or demanding plants cost more energy. Amplifies nature-based abilities channeled through it.
 607. Reroll Chip, 3.8, Generic
-#A golden poker chip that lets you reroll your latest gacha ticket, discarding its result for a different result on the same ticket. The chip vanishes upon use.
+#(Gacha) A golden poker chip that lets you reroll your latest gacha ticket, discarding its result for a different result on the same ticket. The chip vanishes upon use.
 608. Vibranium Weave Patch, 4.2, MCU
 #An ordinary-looking sticker that suffuses clothing with integrated Vibranium weaving, making it incredibly durable and able to disperse kinetic energy so even a baseline human can survive a tank shell. Only enough for up to 5 kg of clothing.
 609. The Rock, 1.5, Generic
@@ -1583,13 +1583,13 @@
 792. Artoria Fumo, 5.2, Fate
 #A Fumo of Britain's true king that, when shaken violently, temporarily enacts Avalon as a nigh-absolute barrier on the shaker. You cannot move or use abilities while it is active.
 793. "Alice" Fumo, 4.8, Black Souls
-#A Fumo of the Dear Girl that, when shaken violently, rerolls your most recently rolled ticket. Cooldown: 336 hours.
+#(Gacha) A Fumo of the Dear Girl that, when shaken violently, rerolls your most recently rolled ticket. Cooldown: 336 hours.
 794. Node Fumo, 5.0, Black Souls
 #A Fumo of the White Queen, Node, that makes all cooldowns and restock timers pass 5x faster while you sleep in the same building or room as it.
 795. Mabel Fumo, 5.7, Black Souls
-#A Fumo of a certain Girl of Nihility that produces a Random Gold Ticket it can be found holding every 168 hours.
+#(Gacha) A Fumo of a certain Girl of Nihility that produces a Random Gold Ticket it can be found holding every 168 hours.
 796. Mary Sue Fumo, 5.3, Black Souls
-#A Fumo of a certain Annoying Fairy that lets you change the type of any one ticket you hold by slamming or punching it against a wall. Cooldown: 168 hours.
+#(Gacha) A Fumo of a certain Annoying Fairy that lets you change the type of any one ticket you hold by slamming or punching it against a wall. Cooldown: 168 hours.
 797. Reimu Fumo, 4.1, Touhou
 #A Fumo of a certain destitute Shrine Maiden that, when shaken violently, erects a spiritual barrier against Unholy/Dark beings around a location. Only one barrier at a time.
 798. Cirno Fumo, 3.5, Touhou
@@ -1675,7 +1675,7 @@
 838. Berserker Armor, 2.2, Berserk
 #A Dwarven Blacksmith's exceptionally durable magical armor that fits the wearer perfectly. It boosts performance by suppressing pain and mental limiters, impales you to pin your body together when damaged, and self-repairs over time. It amplifies negative emotions, requiring careful moderation.
 839. The Cursed Ticket, 2.0, Generic
-#"Fancy your chances?" A ticket that, when torn, spins the Curse Roulette for the user and automatically applies the result and earned ticket to the recipient.
+#(Gacha) "Fancy your chances?" A ticket that, when torn, spins the Curse Roulette for the user and automatically applies the result and earned ticket to the recipient.
 840. Metal Gear, 0.3, Generic
 #A rather ordinary, if extraordinarily solid, iron gear.
 841. Taimanin Changing Booth, 2.2, Taimanin

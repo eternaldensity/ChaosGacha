@@ -398,6 +398,8 @@ Rating must be written as (Number.Number), for example, 0.2  4.2   5.3   5.6   8
 
 You must also add a description under the item for it to be counted, if you do not want to add a description just put a \# but there needs to be at least something under the ability for it to not break.
 
+Optional system tags: put `(Gacha)` at the start of a description to make that entry Gacha-only, or `(Tree)` to make it Tree-only. Entries with neither tag appear in both the Gacha and the Chaos Tree.
+
 **—Copy—**  
 The copy button copies the current ability or item you have on your screen alongside its rarity and description to your clipboard for you to be able to copy and paste it with ease.
 

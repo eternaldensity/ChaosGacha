@@ -841,7 +841,7 @@
 421. Patrasche, 1.4, Re:Zero
 #Patrasche is an unusually intelligent, emotionally aware Ground Dragon, a bipedal lizard akin to a horse. Strong enough to bite off a man's head, she runs horse-fast even pulling a carriage via Divine Protection of Wind Evasion, nullifying wind resistance for her and what touches her.
 422. Gacha Man, 3.3, Generic
-#What is that — an event, not a regular familiar? Gacha Man is in your world now, within roughly an hour of travel, holding a briefcase. Locate and execute him within an hour to gain an Advantage Gold Choice Gacha Ticket, or he leaves and you get nothing. (Gacha Man is not eligible for revival or insurance, he must die.)
+#(Gacha) What is that — an event, not a regular familiar? Gacha Man is in your world now, within roughly an hour of travel, holding a briefcase. Locate and execute him within an hour to gain an Advantage Gold Choice Gacha Ticket, or he leaves and you get nothing. (Gacha Man is not eligible for revival or insurance, he must die.)
 423. Piercing Ox, 3.5, Jujutsu Kaisen
 #An Ox Shikigami of great physical power that grows stronger the longer it moves in a straight line. Its power scales with your energy levels.
 424. Tiger Funeral, 5.4, Jujutsu Kaisen
