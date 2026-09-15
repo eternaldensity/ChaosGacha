@@ -2,8 +2,8 @@
 #One Punch Man - You are an apprentice in the legendary martial art created by the S-Rank Hero Silverfang, this martial art focuses on defence and redirection of the enemy's attacks by flowing like water and striking like a raging river. With enough training, you can completely counter an enemy's blow with double their power.
 2. Intermediate Cooking, 2.3
 #You are as skilled as a seasoned chef, your cooking is better than most people with you being able to make complex dishes without much problem and most of the food you cook tastes pretty good.
-3.Iaijutsu,3.4
-#A refined blade art that takes advantage of the motion of drawing the blade from its sheath to unleashing blitzingly fast, precise slashes. With experience, the user can imbue their scabbard with energy to propel the sword even faster and increase the potency of their attacks.
+3. Iaijutsu, 3.4
+#A refined blade art that takes advantage of the motion of drawing the blade from its sheath to unleashing blitzing fast, precise slashes. With experience, the user can imbue their scabbard with energy to propel the sword even faster and increase the potency of their attacks.
 4. Intermediate Acting, 2.4
 #You are a skilled actor, being able to properly portray yourself in the way you want to be seen and concealing your real emotions. But people familiar with you or people who have good intuition like detectives can probably see through your acting.
 5. Intermediate Shooting, 2.2
@@ -17,9 +17,9 @@
 9. Intermediate Biology, 2.6
 #You are learned enough in the field of Biology to be a professor, and you have good knowledge of how most organs and organisms function, you know how most things interact with biology and how to affect biology yourself.
 10. Intermediate Physics, 2.7
-#You are learned enough in the field of Physics to be a professor, you know how physics works and how they interact with objects. You can spot and understand how most phenomena interact with the laws of the universe.
+#You are learned enough in the field of Physics to be a professor, you know how physics works and how it interacts with objects. You can spot and understand how most phenomena interact with the laws of the universe.
 11. Intermediate Chemistry, 2.5
-#You are learned enough in the field of Chemistry to be a professor, enough to be a professor, you understand how most common compounds are formed and remember the interactions of chemicals and reactions well.
+#You are learned enough in the field of Chemistry to be a professor, you understand how most common compounds are formed and remember the interactions of chemicals and reactions well.
 12. Intermediate Math, 2.8
 #You are very good at math, enough to be considered somewhat of a savant. You can rapidly calculate numbers in your head very accurately, faster than most people. You can also keep track of numbers and variables especially well.
 13. Intermediate Blacksmithing, 2.0
@@ -31,72 +31,72 @@
 16. Intermediate Blunt Weapon Mastery, 2.1
 #You are fairly skilled in handling blunt instruments and weapons such as hammers, mauls and clubs. You know how to effectively move your body and weapon to make good use of it, being able to match most practitioners in skill and finesse.
 17. Intermediate Polearm Mastery, 2.6
-#You are fairly skilled in handling bladed instruments and weapons such as spears, halbers and sickles. You know how to effectively move your body and weapon to make good use of it, being able to match most practitioners in skill and finesse.
+#You are fairly skilled in handling bladed instruments and weapons such as spears, halberds and sickles. You know how to effectively move your body and weapon to make good use of it, being able to match most practitioners in skill and finesse.
 18. Intermediate Item Construction, 3.3
 #You know how to make decent magical and enchanted items, if you know fire magic, you can turn a regular sword into a sword that can light itself on fire on command. If you have the ability Invisibility, you can probably make a cloak that suppresses your presence.
-19. Polar Channel flow - Celluar Overdrive, 3.5
-#You have mastered the Pugilist skill of pushing every single cell in your body to their absolute limits drawing up every ounce of energy they have to augment all of your stats to their limits.Using this skill places immense strain on the body and repeated use may cause permanent damage.
+19. Polar Channel Flow - Cellular Overdrive, 3.5
+#You have mastered the Pugilist skill of pushing every single cell in your body to its absolute limits, drawing up every ounce of energy they have to augment all of your stats to their limits. Using this skill places immense strain on the body and repeated use may cause permanent damage.
 20. All Life Eradication Fist, 8.4
-#One punch Man - The pinnacle of all martial arts, the fusion of the mastery of dozens of supernatural martial arts and the knowledge granted by god, you are able to manipulate the flow of cosmic and all forms of energy with your martial arts and are able to replicate almost any known phenomenon. You must be sufficiently physically strong to be able to utilize this skill in any meaningful capacity.
+#One Punch Man - The pinnacle of all martial arts, the fusion of the mastery of dozens of supernatural martial arts and the knowledge granted by god, you are able to manipulate the flow of cosmic and all forms of energy with your martial arts and are able to replicate almost any known phenomenon. You must be sufficiently physically strong to be able to utilize this skill in any meaningful capacity.
 21. Spear of Untraceable Trajectory, 6.7
-#Everyone Else is a Returnee - Your mastery of the spear is to such a degree you that disobey even physics. When you attack with the spear you can hit multiple locations at once, the greater your mastery the higher the number of locations. Similar to Tsubame Gaeshi from Fate.
-22. Nanaya Assasination Arts, 4.7
+#Everyone Else is a Returnee - Your mastery of the spear is to such a degree that you disobey even physics. When you attack with the spear you can hit multiple locations at once, the greater your mastery the higher the number of locations. Similar to Tsubame Gaeshi from Fate.
+22. Nanaya Assassination Arts, 4.7
 #Tsukihime - You are trained in the unique assassination arts of the Nanaya Family, a clan of selectively bred demon hunters. This art focuses on extremely quick movements and mobility rather than stealth, also having the user move unpredictably even using ceilings and walls as footholds. This art is especially strong against non-humans.
 23. Whirlwind Iron Cutting Fist, 5.6
-#One Punch Man - You are an apprentice in the supernatural martial developed by the legendary martial artist Bomb after decades of self-training. This style resembles kung fu and focuses on moving the body in such ways that it produces razor-sharp currents of wind that the user sends like whirlwinds, decimating any target.
-24.Backflipping,0.2
+#One Punch Man - You are an apprentice in the supernatural martial art developed by the legendary martial artist Bomb after decades of self-training. This style resembles kung fu and focuses on moving the body in such ways that it produces razor-sharp currents of wind that the user sends like whirlwinds, decimating any target.
+24. Backflipping, 0.2
 #You know how to perform a gnarly backflip, frontflips may be a bit challenging though.
 25. Water Breathing, 3.1
 #Demon Slayer - Water Breathing is a specialized swordsmanship style and breathing technique that mimics water, specifically the flow, flexibility and adaptability of the liquid and replicates it with the user's movements, techniques and abilities. Most, if not all, known techniques involve the user bending their body, arm and weapon in a fluid motion to match the movements of rushing or flowing water. With magical power, water can be manifested to further augment the power of the style.
 26. Fire Breathing, 3.3
 #Demon Slayer - Fire Breathing is a specialized swordsmanship style and breathing technique that mimics flames and replicates them with the user's movements, techniques and abilities. Most, if not all, known techniques and forms involve extremely powerful singular strikes which 'burn' their opponents, with most attacks being initiated from a high stance. With magical power, fire can be manifested to further augment the power of the style.
-27. Wind breathing, 3.8
+27. Wind Breathing, 3.8
 #Demon Slayer - Wind Breathing is a specialized swordsmanship style and breathing technique that mimics wind, specifically powerful torrents of air and whirlwinds, and replicates it with the user's movements, techniques and abilities. Most, if not all, known techniques and forms involve purely offensive attacks, most of which utilise fast rotating movements to generate swift whirlwind-like slashes that greatly increase the wielder's striking range as well as utilizing the air around them to deliver sharp sickle-shaped flying slash attacks and gale force winds.
-28. Thunder breathing, 4.0
+28. Thunder Breathing, 4.0
 #Demon Slayer - Thunder Breathing is a specialized swordsmanship style and breathing technique that mimics lightning, specifically swift strikes and movements akin to lightning ripping through the sky, and replicates it with the user's movements, techniques and abilities. Most, if not all, known techniques and forms involve utilizing blinding speeds and immensely fast attacks to overwhelm the enemy in an instant. With magical power, thunder can be manifested to further augment the power of the style.
-29. Sun breathing, 4.4
-#Demon Slayer - Sun Breathing is a specialized swordsmanship style and breathing technique created by the legendary swordsman Yoriichi Tsugikuni that mimics the sun and replicates it with the user's movements, techniques, and abilities. All techniques and forms are extremely varied and have no set pattern, making them the most versatile and effective against enemies. With magical power, solar flames that are effective against unholy can be manifested.
+29. Sun Breathing, 4.4
+#Demon Slayer - Sun Breathing is a specialized swordsmanship style and breathing technique created by the legendary swordsman Yoriichi Tsugikuni that mimics the sun and replicates it with the user's movements, techniques, and abilities. All techniques and forms are extremely varied and have no set pattern, making them the most versatile and effective against enemies. With magical power, solar flames that are effective against the unholy can be manifested.
 30. Intermediate Kama Sutra, 2.2
-#(Nsfw)You are experienced in the sexual arts, being skilled at pleasuring your partner and being a pleasant recipient. You know how to spot arousal and what your partner responds to.
+#(Nsfw) You are experienced in the sexual arts, being skilled at pleasuring your partner and being a pleasant recipient. You know how to spot arousal and what your partner responds to.
 31. Intermediate Taming, 2.1
 #You are good at taming and training wild creatures, making them submit to you, making them obedient, submissive and loyal to you. Also being good at learning how to tame specific creatures. This can also be applied to people to an extent.
 32. Intermediate Pressure Points, 3.8
-#You are experienced at spotting and using pressure points on the body, human or animal. Allowing you to press on pressure points to paralyse people or other points to cause them pleasure etc. Using it in combat, while not easy is possible.
+#You are experienced at spotting and using pressure points on the body, human or animal, allowing you to press on pressure points to paralyse people or other points to cause them pleasure etc. Using it in combat, while not easy, is possible.
 33. Intermediate Massage, 2.5
 #You are as skilled as an experienced masseuse, being able to relieve pressure, cause pleasure and relax the muscles of people you are massaging.
 34. Divine Gaming, 7.0
-#You are godlike at all kinds of games, chess, video games, gambling, bottle tosss anything of the sort. You are nigh unbeatable at any game unless it is against another godlike being of a similar domain.
+#You are godlike at all kinds of games, chess, video games, gambling, bottle toss, anything of the sort. You are nigh unbeatable at any game unless it is against another godlike being of a similar domain.
 35. Intermediate Driving, 1.8
 #You are a seasoned driver, you are capable of handling a variety of vehicles ranging from bikes and cars to aircraft with familiarity.
 36. Intermediate Leadership, 2.7
 #You are a leader, you know how to motivate, take charge of and lead people with decent effectiveness, instilling confidence into them and making them do what you want them to do. You are an effective leader.
 37. Intermediate Charisma, 3.8
-#You have an aura of charisma around you, it is less of a skill and more of something that is just around you. People of note feel themselves more attracted to your presence, it's subtle things like people paying more attention to you, taking you more seriously etc.
+#You have an aura of charisma around you. It is less of a skill and more of something that is just around you. People of note feel themselves more attracted to your presence, it's subtle things like people paying more attention to you, taking you more seriously etc.
 38. Throwing, 2.2
 #You are fairly skilled at throwing a variety of objects with speed and accuracy, being able to land a stone on the head of a target from across the street without trouble.
 39. Intermediate Medicine, 2.9
 #You are as skilled as a doctor, possessing a variety of medical knowledge and skills in treating injuries, illnesses and problems as well as familiarity with the body and medicine as well as its applications.
 40. Kung Fu, 2.5
-#You are an apprentice in Kung Fu, a Chinese martial art that refines the body,  that emphasizes discipline, efficiency, and adaptability. It encompasses various techniques, including strikes, guards, footwork, and grappling. With sufficient mastery over Kung Fu, you can enhance your strikes with your internal energy
+#You are an apprentice in Kung Fu, a Chinese martial art that refines the body, that emphasizes discipline, efficiency, and adaptability. It encompasses various techniques, including strikes, guards, footwork, and grappling. With sufficient mastery over Kung Fu, you can enhance your strikes with your internal energy.
 41. Bajiquan, 3.5
-#You are an apprentice in Bajiquan, a Chinese martial art specializing in explosive short-range attacks and aggressive forward momentum to break through enemy defences. With sufficient mastery over Bajiquan, you can enhance your strikes with your internal energy
+#You are an apprentice in Bajiquan, a Chinese martial art specializing in explosive short-range attacks and aggressive forward momentum to break through enemy defences. With sufficient mastery over Bajiquan, you can enhance your strikes with your internal energy.
 42. Taekwondo, 3.7
-#You are an apprentice in Taekwondo, a dynamic Korean martial art specializing in speed, agility, and powerful kicking techniques. It combines high, spinning, and jumping kicks with fast footwork and precise strikes to deliver devastating blows. With sufficient mastery, you can enhance your strikes with your internal energy
+#You are an apprentice in Taekwondo, a dynamic Korean martial art specializing in speed, agility, and powerful kicking techniques. It combines high, spinning, and jumping kicks with fast footwork and precise strikes to deliver devastating blows. With sufficient mastery, you can enhance your strikes with your internal energy.
 43. Renewal Taekwondo, 6.6
-#God of Highschool - A specialized form of Taekwondo specializing in strong linear kicks like regular Taekwondo, it initially resembles simply a more refined and powerful Taekwondo style. The true power is only revealed when the user achieves Recoilless by mastering it, allowing them to focus all of their energy on their perfected strikes to unleash devastating effects.
+#God of High School - A specialized form of Taekwondo specializing in strong linear kicks like regular Taekwondo, it initially resembles simply a more refined and powerful Taekwondo style. The true power is only revealed when the user achieves Recoilless by mastering it, allowing them to focus all of their energy on their perfected strikes to unleash devastating effects.
 44. Karate, 2.4
-#You are an apprentice in Karate, A Japanese martial art specializing in powerful strikes, strong stances, and precise technique. With direct, forceful movements using punches, kicks, knee strikes, and blocks to generate maximum impact. Practitioners develop explosive power, speed, and efficiency, making Karate a well-rounded combat skill for both offence and defence. With sufficient mastery, you can enhance your strikes with your internal energy
+#You are an apprentice in Karate, a Japanese martial art specializing in powerful strikes, strong stances, and precise technique. With direct, forceful movements using punches, kicks, knee strikes, and blocks to generate maximum impact. Practitioners develop explosive power, speed, and efficiency, making Karate a well-rounded combat skill for both offence and defence. With sufficient mastery, you can enhance your strikes with your internal energy.
 45. Suppression, 4.0
 #You are a master of suppressing yourself, getting rid of your presence, lowering it to that of an ordinary presence or fully concealing all of your energy. You can make a presence that shakes gods into one that doesn't seem out of place with foliage.
 46. Krav Maga, 2.6
-#You are an apprentice of Krav Maga, a brutally efficient martial art made for military use, it emphasizes instinctive movements, rapid strikes, and efficient takedowns to neutralize threats as quickly as possible. Krav Maga incorporates techniques from boxing, wrestling, judo, and street fighting. With sufficient mastery, you can enhance your strikes with your internal energy
+#You are an apprentice of Krav Maga, a brutally efficient martial art made for military use, it emphasizes instinctive movements, rapid strikes, and efficient takedowns to neutralize threats as quickly as possible. Krav Maga incorporates techniques from boxing, wrestling, judo, and street fighting. With sufficient mastery, you can enhance your strikes with your internal energy.
 47. Muay Thai, 2.9
 #You are an apprentice of Muay Thai, a powerful Thai martial art known as the "Art of Eight Limbs," utilizing punches, kicks, elbows, and knee strikes for devastating close and mid-range combat. It emphasizes powerful strikes, clinch fighting, and relentless conditioning to build endurance and toughness. With sufficient mastery, you can enhance your strikes with your internal energy.
 48. Intimidation, 3.3
 #You are skilled at intimidating people, making them feel fear and shake in their boots with your mere presence, you instinctively know how to present yourself in ways that invoke terror.
 49. Novice Cooking, 1.3
 #You are a novice in the culinary arts, you can cook most basic meals and they will taste good. But don't expect to get a job as a chef. You will however improve much faster than other people if you choose to train yourself.
-50.Wilderness Survival,2.4
+50. Wilderness Survival, 2.4
 #You are very skilled at surviving in the wilderness, whether that is making temporary shelter out of materials you can find, identifying safe sources of food, knowing how to track animals, how to secure your stuff, and generally everything needed to know to survive in the wilderness effectively.
 51. Novice Acting, 1.4
 #You are a novice actor, you know how to portray yourself in the ways you want to be seen and hide your real emotions but it is not difficult for experienced people to see through your acting. You will however improve much faster than other people if you choose to train yourself.
@@ -105,7 +105,7 @@
 53. Novice Hand-to-Hand Combat, 1.5
 #You are reasonably talented in hand-to-hand combat. You know how to punch and where to punch and that's enough for most people. You won't be winning against professionals but you can confidently beat up the average person. You will however improve much faster than other people if you choose to train yourself.
 54. Novice Programming, 1.4
-#You know how to code on the level of a novice, you can create simple programs and know how to read, understand and spot mistakes in codes. And you can do so in every single coding language you have encountered.
+#You know how to code on the level of a novice, you can create simple programs and know how to read, understand and spot mistakes in code. And you can do so in every single coding language you have encountered.
 55. Novice Mechanics, 1.1
 #You are as skilled as a mechanic apprentice, you know how to fix basic appliances and maybe even a car when provided with the right tools. You will however improve much faster than other people if you choose to train yourself.
 56. Novice Biology, 1.1
@@ -121,15 +121,15 @@
 61. Novice Teaching, 1.8
 #You are as skilled as a fresh teacher, you know how to impart your knowledge and skills to people well enough but you can't guarantee they will listen or take your lesson to heart.
 62. Novice Blade Weapon Mastery, 1.9
-#You are reasonably talented in handling bladed weapons such as swords and knives. You know how to hold the sword and keep the sharp pointed toward the enemy as well as being able to align the edge of your cuts and poke the stabby end into people.
+#You are reasonably talented in handling bladed weapons such as swords and knives. You know how to hold the sword and keep the sharp point toward the enemy as well as being able to align the edge of your cuts and poke the stabby end into people.
 63. Novice Blunt Weapon Mastery, 1.5
 #You are reasonably talented in handling blunt weapons such as hammers or clubs. You know how to move your body to do damage with the instrument you are holding, but there is only so much finesse to handling a large stick.
 64. Novice Polearm Mastery, 1.8
-#You are reasonably talented in handling polearms such as spears, halberds or scythes. You know how to smack with the long stick, how to cut with the blade at the end of the long stick, you know how to tab people with the pointy end of the long stick, and that is enough for most people.
+#You are reasonably talented in handling polearms such as spears, halberds or scythes. You know how to smack with the long stick, how to cut with the blade at the end of the long stick, you know how to stab people with the pointy end of the long stick, and that is enough for most people.
 65. Novice Item Construction, 2.1
 #You know how to create minor enchanted and special items, not anything that can be called a proper item but things like a plate that heats itself up or a mask that purifies air are possible as long as you have the proper knowledge base.
 66. Novice Kama Sutra, 1.5
-#(Nsfw)You are reasonably talented in the carnal arts, you know what goes where and how to pleasure your partner as well as what not to do during coitus.
+#(Nsfw) You are reasonably talented in the carnal arts, you know what goes where and how to pleasure your partner as well as what not to do during coitus.
 67. Novice Taming, 1.1
 #You know how to tame wild creatures, but not very precisely. With trial and error, you can probably tame a creature but it won't be easy, though you can easily tame and train mundane animals.
 68. Novice Massage, 1.2
@@ -139,71 +139,71 @@
 70. Novice Leadership, 2.4
 #You know a bit about leading and motivating people, you won't be leading armies anytime soon but the team you lead will probably find you an agreeable leader and you are decent at resolving conflict among members and motivating your team.
 71. Novice Charisma, 1.9
-#You have an aura of charisma around you, it is less of a skill and more of something that is just about you, a change in your demeanour and how you hold yourself perhaps. People of note feel themselves more attracted to your presence, it's subtle things like people paying more attention to you, taking you more seriously etc. Though at this level it is not too noticeable
+#You have an aura of charisma around you. It is less of a skill and more of something that is just about you, a change in your demeanour and how you hold yourself perhaps. People of note feel themselves more attracted to your presence, it's subtle things like people paying more attention to you, taking you more seriously etc. Though at this level it is not too noticeable.
 72. Novice Medicine, 1.5
 #You are about as skilled as a doctor in training, you know how to perform first aid, how to apply medicine, what most medicines do, and in a pinch improvise medical tools to perform basic surgery.
 73. Adept Cooking, 3.3
 #You are great at cooking, at the level of a veteran chef, you can cook most meals with great flavour, there aren't many who would be disappointed with your cooking. You could easily get a job as a private chef.
-74.Literacy,2.2
+74. Literacy, 2.2
 #You know how to read effectively, you'd be shocked at how little people possess this skill. You know all common languages and mundane languages of the world you are in, and are very skilled at reading books and grimoires, allowing you to read them much faster and digest the information inside of them better.
 75. Adept Acting, 3.4
 #You are as skilled as a veteran actor, being able to effectively present yourself in the ways you want to be seen to invoke the emotions you want to invoke while hiding your real thoughts and feelings. It would take a seasoned detective to suss you out.
 76. Adept Shooting, 3.5
 #You are a natural crack shot, being able to wield most projectile-based weaponry with great familiarity and accuracy, rarely missing your shots unless you are against an opponent of similar skill.
 77. Adept Hand-to-Hand Combat, 3.6
-#You are very talented in unarmed combat, on the level of a veteran martial artist. You know how to move your body to unleash powerful blows, at this level your arms and legs are lethal weapons.
+#You are very talented in unarmed combat, on the level of a veteran martial artist. You know how to move your body to unleash powerful blows. At this level, your arms and legs are lethal weapons.
 78. Adept Programming, 3.1
-#You are as skilled as a veteran programmer, being able to write and design complex programs and algorithms while being able to quickly spot mistakes and problems in the codes you write. In addition, you write code far faster than you should be able to without sacrificing quality.
+#You are as skilled as a veteran programmer, being able to write and design complex programs and algorithms while being able to quickly spot mistakes and problems in the code you write. In addition, you write code far faster than you should be able to without sacrificing quality.
 79. Adept Mechanics, 3.2
-#You are as skilled as a veteran engineer, if given the tools you can repair almost any mundane machine and you could even design a car from scratch and build it yourself. In addition, you tinker and design faster than you should be able to without sacrificing quality.
+#You are as skilled as a veteran engineer. If given the tools you can repair almost any mundane machine and you could even design a car from scratch and build it yourself. In addition, you tinker and design faster than you should be able to without sacrificing quality.
 80. Adept Biology, 3.6
 #Your experience and knowledge in the field of Biology is on par with a Senior Scientist. You are very knowledgeable in the study of life, such as how living organisms function, how they are formed and what they are made of.
 81. Adept Physics, 3.8
-#Your experience and knowledge in the field of Physics is on par with a Senior Scientist. You are very knowledgeable in the study of the laws of the universe, such as how things are affected by gravity, how electromagnetism works and its effects, how nuclear fission and fusion work etc.
+#Your experience and knowledge in the field of Physics is on par with a Senior Scientist. You are very knowledgeable in the study of the laws of the universe, such as how things are affected by gravity, how electromagnetism works and its effects, how nuclear fission and fusion work, etc.
 82. Adept Chemistry, 3.7
 #Your experience and knowledge in the field of Chemistry is on par with a Senior Scientist. You are very knowledgeable in the study of matter, such as what most substances are formed of, how most substances interact with each other, how to form chemical compounds and how to influence matter in the ways you want.
 83. Adept Math, 3.9
 #You are a savant in terms of mathematical and calculative ability, you will never need a calculator since your head crunches calculations faster than you can type them into a calculator, while you aren't competing with computers just yet, you are far faster than you should be.
 84. Adept Blacksmithing, 3.4
-#You are as skilled as a veteran blacksmith. You can create fine weapons and armour without problem, with practice you can even make rare weapons that are sought after. In addition, your understanding of metallurgy and forging are far beyond the average person.
+#You are as skilled as a veteran blacksmith. You can create fine weapons and armour without a problem. With practice, you can even make rare weapons that are sought after. In addition, your understanding of metallurgy and forging is far beyond the average person.
 85. Adept Teaching, 3.2
-#You are a great teacher, you could even call yourself GTO if your name starts with O. You are skilled at imparting your knowledge and skills to others, even if they are a poor student. You can also teach anyone any one of your skills as long as they are physically capable and the skill is below rare rank.
+#You are a great teacher. You could even call yourself GTO if your name starts with O. You are skilled at imparting your knowledge and skills to others, even if they are a poor student. You can also teach anyone any one of your skills as long as they are physically capable and the skill is below rare rank.
 86. Adept Blade Weapon Mastery, 3.5
 #You are very talented at wielding bladed weapons, on the level of a veteran swordsman. You are able to effectively wield any bladed weapon such as swords and daggers with great efficiency and finesse.
 87. Adept Blunt Weapon Mastery, 3.2
 #You are very talented at wielding blunt weapons such as hammers and clubs. When you are holding any blunt weapon you can exert almost supernatural levels of strength with them.
 88. Adept Polearm Mastery, 3.4
-#You are very talented at wielding polearms, on the level of a veteran spearsman. You are able to effectively wield any polearm such as spears, sickles and halberds with great efficiency and finesse.
+#You are very talented at wielding polearms, on the level of a veteran spearman. You are able to effectively wield any polearm such as spears, sickles and halberds with great efficiency and finesse.
 89. Adept Item Construction, 4.9
-#You know how to create enchanted and special items depending on your capabilities, if you know fire magic, you could turn a regular ring into one that deploys a fire barrier in an emergency, or if you have the ability of teleportation you could create a ring that teleports people to a set location etc.
+#You know how to create enchanted and special items depending on your capabilities. If you know fire magic, you could turn a regular ring into one that deploys a fire barrier in an emergency, or if you have the ability of teleportation you could create a ring that teleports people to a set location, etc.
 90. Adept Kama Sutra, 3.3
-#(Nsfw)You are very talented in the carnal art, being able to spot signs of arousal and attraction, in addition, you instinctively know how to pleasure your partner in bed and be a very pleasant recipient, enhancing pleasure for both of you.
+#(Nsfw) You are very talented in the carnal arts, being able to spot signs of arousal and attraction. In addition, you instinctively know how to pleasure your partner in bed and be a very pleasant recipient, enhancing pleasure for both of you.
 91. Adept Taming, 3.1
-#You are great at taming, making beings submit to your ownership or superiority. You know how to gain the obedience and loyalty of eligible familiars and people to a lesser extent. You are also good at training them too.
+#You are great at taming, making beings submit to your ownership or superiority. You know how to gain the obedience and loyalty of eligible familiars and people to a lesser extent. You are also good at training them.
 92. Adept Massage, 3.6
-#You are as skilled as a seasoned masseuse, being able to give a variety of massages that help get rid of exhaustion, recover stamina, revitalize the body and mind and even invoke sexual pleasure. Few would leave the massage bed unsatisfied.
+#You are as skilled as a seasoned masseuse, being able to give a variety of massages that help get rid of exhaustion, recover stamina, revitalize the body and mind, and even invoke sexual pleasure. Few would leave the massage bed unsatisfied.
 93. Adept Driving, 3.0
 #You are as skilled as a veteran driver, being able to handle any vehicle with familiarity and ease. If you participate in a race, chances are you will embarrass the competition.
 94. Adept Leadership, 4.2
-#You are a skilled leader, whether that is about small teams or even companies. You know how to get people's loyalty, give them morale, manage and lead them. You would be known as a great commander if you led a military into war.
+#You are a skilled leader, whether that is about small teams or even companies. You know how to get people's loyalty, boost their morale, manage, and lead them. You would be known as a great commander if you led a military into war.
 95. Adept Charisma, 4.4
-#You have an aura of charisma around you, it is less of a skill and more of something that is just around you. People of note feel themselves more attracted to your presence, you are more intimidating when you want to be, you are more persuasive when you try to be,
+#You have an aura of charisma around you. It is less of a skill and more of something that is just around you. People of note feel themselves more attracted to your presence, you are more intimidating when you want to be, you are more persuasive when you try to be,
 96. Adept Medicine, 4.1
-#You are very skilled in all areas of medicine, you can do surgery, diagnose conditions, create medicine etc. You are fully qualified as a veteran in all areas of medicine. You can also make your own medicine given the ingredients, even magical ones such as potions depending on the world you are in.
+#You are very skilled in all areas of medicine. You can do surgery, diagnose conditions, create medicine, etc. You are fully qualified as a veteran in all areas of medicine. You can also make your own medicine given the ingredients, even magical ones such as potions depending on the world you are in.
 97. Expert Cooking, 4.4
-#You are an expert in the culinary arts, you are better than most chefs will ever be. You can cook almost any meal if given ingredients and it will almost certainly taste great. At the very least, no one leaves your dining table unsatisfied. Still not quite at foodgasm levels but you are close.
-98.Grooming,1.9
-#NOT THAT KIND- You are very skilled at grooming, taking care of your hair, your hygiene, your cleanliness, etc., basically, you are skilled at making yourself and others look presentable.
+#You are an expert in the culinary arts. You are better than most chefs will ever be. You can cook almost any meal if given ingredients and it will almost certainly taste great. At the very least, no one leaves your dining table unsatisfied. Still not quite at foodgasm levels, but you are close.
+98. Grooming, 1.9
+#NOT THAT KIND - You are very skilled at grooming, taking care of your hair, your hygiene, your cleanliness, etc., basically, you are skilled at making yourself and others look presentable.
 99. Expert Acting, 4.4
 #You are an expert actor, being able to skillfully portray yourself in the way you want to be perceived in order to invoke the emotions you want to invoke and hide the emotions you want to hide. It would take a real expert to see through your mask.
 100. Expert Shooting, 4.6
-#You are an expert marksman, you handle all firearms and projectiles with great skill and finesse to the point where people might wonder if you have special power. You can even curve your shots and utilize ricochets. You can also better predict the trajectory of enemy projectiles.
+#You are an expert marksman. You handle all firearms and projectiles with great skill and finesse to the point where people might wonder if you have special power. You can even curve your shots and utilize ricochets. You can also better predict the trajectory of enemy projectiles.
 101. Expert Hand-to-Hand Combat, 4.5
-#You are an expert martial artist, you move your body like it is a lethal weapon, knowing where to strike and how to move your body to deal damage with expert skill. You learn and master other types of unarmed martial arts much faster.
+#You are an expert martial artist. You move your body like it is a lethal weapon, knowing where to strike and how to move your body to deal damage with expert skill. You learn and master other types of unarmed martial arts much faster.
 102. Expert Programming, 4.1
-#You are an expert programmer, your skill with coding is comparable to a low-level Tinker ability. You can craft and code complex algorithms and programs with ease, you can even make basic artificial intelligences.
+#You are an expert programmer. Your skill with coding is comparable to a low-level Tinker ability. You can craft and code complex algorithms and programs with ease. You can even make basic artificial intelligences.
 103. Expert Mechanics, 4.2
-#You are an expert mechanic, your skill at designing, fixing and building machinery is comparable to a low-level Tinker ability. You can fix and build any mundane machine without a problem and even design your improved versions. With enough time and practice you can even build low-level tinkertech.
+#You are an expert mechanic. Your skill at designing, fixing and building machinery is comparable to a low-level Tinker ability. You can fix and build any mundane machine without a problem and even design your improved versions. With enough time and practice you can even build low-level tinkertech.
 104. Expert Biology, 4.1
 #You are an expert in the field of Biology, the study of life. You are intimately familiar with the biology of most organisms, ranging from mammals to cellular life. If you were to be given magic, you could probably figure out Biomancy rather quickly.
 105. Expert Physics, 4.6
@@ -211,115 +211,115 @@
 106. Expert Chemistry, 4.4
 #You are an expert in the field of Chemistry, the study of matter. You are intimately familiar with how most chemical compounds and materials are formed as well as how they react to each other and stimuli. If you were to be given magic, you could probably become an alchemist rather quickly.
 107. Expert Math, 4.9
-#You are a true savant when it comes to mathematics and calculations. You can solve most problems relating to numbers with ease and the speed at which you crunch numbers and do calculations in your head
+#You are a true savant when it comes to mathematics and calculations. You can solve most problems relating to numbers with ease, and the speed at which you crunch numbers and do calculations in your head is far beyond most people.
 108. Expert Blacksmithing, 5.2
-#You are an expert blacksmith, the kind that would shack up in the mountains as a hermit, visited by a knight on their quest to slay a dragon. You are intimately familiar with building all kinds of cold weapons and the weapons you create are of supernatural quality, you could forge an iron sword that can cut an iron block in half. You can also grant your weapons special traits depending on the materials you forge them out of.
+#You are an expert blacksmith, the kind that would shack up in the mountains as a hermit, visited by a knight on their quest to slay a dragon. You are intimately familiar with building all kinds of cold weapons and the weapons you create are of supernatural quality. You could forge an iron sword that can cut an iron block in half. You can also grant your weapons special traits depending on the materials you forge them out of.
 109. Expert Teaching, 4.8
-#You are an expert teacher, the kind a protagonist would encounter mid-way through their journey to learn an essential skill from you before leaving and forgetting about you. You are incredibly skilled at imparting your knowledge and skills to your pupils, you could pick any old farmboy and turn him into a fine warrior.
+#You are an expert teacher. The kind a protagonist would encounter mid-way through their journey to learn an essential skill from you before leaving and forgetting about you. You are incredibly skilled at imparting your knowledge and skills to your pupils. You could pick any old farmboy and turn him into a fine warrior.
 110. Expert Blade Weapon Mastery, 4.9
-#You are an expert of the bladed weapons such as daggers and swords, not quite in the realm of legends but in the old ages people would sing songs about how you could slay 100 men with a single blade. Your expertise and finesse with blades are the stuff of rumours.
+#You are an expert in bladed weapons such as daggers and swords, not quite in the realm of legends but in the old ages people would sing songs about how you could slay 100 men with a single blade. Your expertise and finesse with blades are the stuff of rumours.
 111. Expert Blunt Weapon Mastery, 4.6
-#You are an expert of blunt weapons like hammers and clubs, the might with which you swing these weapons can brown the pants of any common man. If these were the old ages, there would be folklore about how you splattered a man across the battlefield with a simple mace.
+#You are an expert in blunt weapons like hammers and clubs, the might with which you swing these weapons can brown the pants of any common man. If these were the old ages, there would be folklore about how you splattered a man across the battlefield with a simple mace.
 112. Expert Polearm Mastery, 4.8
-#You are an expert at wielding polearms like spears, halberds and scythes, while not quite on the level of heroes like Cu Chulainn you are ferocious with the spear in your own right. You wield the spear as if it were an extension of your own body.
+#You are an expert at wielding polearms like spears, halberds and scythes, while not quite on the level of heroes like Cu Chulainn, you are ferocious with the spear in your own right. You wield the spear as if it were an extension of your own body.
 113. Expert Item Construction, 5.7
-#You know how to create great enchanted and special items depending on your capabilities, if you know fire magic, you could turn a regular ring into one that deploys fireballs, walls of fire and makes the user resistant to fire, or if you have the ability of teleportation you could create a ring that teleports people to a set location etc.
+#You know how to create great enchanted and special items depending on your capabilities. If you know fire magic, you could turn a regular ring into one that deploys fireballs, walls of fire and makes the user resistant to fire, or if you have the ability of teleportation you could create a ring that teleports people to a set location, etc.
 114. Expert Kama Sutra, 4.5
-#(Nsfw)You are an expert in the carnal, being intimately familiar with picking up signs of arousal and pleasuring your partners in bed. Unless your partner is completely frigid, no one will leave your bed unsatisfied, your skill in bed is unmatched by most. If you were given magic you could probably create Eromancy.
+#(Nsfw) You are an expert in the carnal arts, being intimately familiar with picking up signs of arousal and pleasuring your partners in bed. Unless your partner is completely frigid, no one will leave your bed unsatisfied. Your skill in bed is unmatched by most. If you were given magic you could probably create Eromancy.
 115. Expert Taming, 4.1
-#You are an expert in taming and domestication. You know how to turn a ferocious beast into your best buddy, and you know how to skillfully train creatures to gain their obedience and their loyalty. This can also be applied to people to a lesser extent.
+#You are an expert in taming and domestication. You know how to turn a ferocious beast into your best buddy, and you know how to skillfully train creatures to gain their obedience and loyalty. This can also be applied to people to a lesser extent.
 116. Expert Massage, 4.0
-#You are an expert masseuse on the level of a grandpa who spent his life refining his craft. You can give massages that melt away exhaustion, help revitalize the body, ones that give unmatched sexual pleasure, relieve tension etc.
+#You are an expert masseuse on the level of a grandpa who spent his life refining his craft. You can give massages that melt away exhaustion, help revitalize the body, ones that give unmatched sexual pleasure, relieve tension, etc.
 117. Expert Driving, 4.0
-#You are an expert driver for all kinds of vehicles ranging from scooters to spaceships, you can probably outrace a motorcycle while riding a tricycle. If it has controls to steer it, you can make that baby purr for you in a way others can only hope to imitate.
+#You are an expert driver for all kinds of vehicles ranging from scooters to spaceships. You can probably outrace a motorcycle while riding a tricycle. If it has controls to steer it, you can make that baby purr for you in a way others can only hope to imitate.
 118. Expert Leadership, 5.3
-#You are an expert leader, on par with famous leaders throughout history like Iskandar or King Arthur. You know how to motivate, lead and manage the people you are responsible for with finesse and efficiency. You could probably run your own country if you put in some elbow grease.
+#You are an expert leader, on par with famous leaders throughout history like Iskandar or King Arthur. You know how to motivate, lead, and manage the people you are responsible for with finesse and efficiency. You could probably run your own country if you put in some elbow grease.
 119. Expert Charisma, 5.2
-#You have an aura of charisma around you, it is less of a skill and more of something about your presence. People of note feel themselves more attracted to your presence, you are more intimidating when you want to be, you are more persuasive when you try to be,
+#You have an aura of charisma around you. It is less of a skill and more of something about your presence. People of note feel themselves more attracted to your presence, you are more intimidating when you want to be, you are more persuasive when you try to be,
 120. Expert Medicine, 4.9
 #You are an expert in all fields of medicine that regular humans can seldom match. You know how to perform surgery, make your own supernatural medicine, and diagnose ailments with ease and finesse.
 121. Master Cooking, 5.6
-#You are a real master of cooking, you can cook almost any dish to incredible levels of taste to the point where they might even gain supernatural traits depending on the ingredients you used. You can induce actual foodgasms with your cooking.
-122.Makeup,1.2
-#You are very skilled at applying makeup and enhancing natural beauty with products. 
+#You are a real master of cooking. You can cook almost any dish to incredible levels of taste to the point where they might even gain supernatural traits depending on the ingredients you used. You can induce actual foodgasms with your cooking.
+122. Makeup, 1.2
+#You are very skilled at applying makeup and enhancing natural beauty with products.
 123. Master Acting, 5.2
-#You are a master actor, maybe at this point, you can't even tell where the mask is and where you are. You are able to present yourself in any way you would want to be seen and perfectly mask your emotions when you need to. It would take nothing less than the eyes of a truth seer to see beyond your mask.
+#You are a master actor. Maybe at this point, you can't even tell where the mask is and where you are. You are able to present yourself in any way you would want to be seen and perfectly mask your emotions when you need to. It would take nothing less than the eyes of a truth seer to see beyond your mask.
 124. Master Shooting, 5.3
 #Your marksmanship is on the level of legends like Orion or Arash, or it might be if you train enough. Few mortals can dodge your projectiles, in the old times you would have been hailed as a legendary archer.
 125. Master Hand-to-Hand Combat, 5.5
-#Your skills and talent in martial arts are on the level of legends, you are a true prodigy. You can quickly master most forms of martial arts and your basic comprehension of unarmed combat is incredible, your hands and feet are actual weapons that wouldn't lose out to swords and spears.
+#Your skills and talent in martial arts are on the level of legends. You are a true prodigy. You can quickly master most forms of martial arts and your basic comprehension of unarmed combat is incredible, your hands and feet are actual weapons that wouldn't lose out to swords and spears.
 126. Master Programming, 5.7
-#You are a master programmer, your skills are to the point where they may as well be tinker abilities except this is all raw skill. You can easily code complex algorithms and programs as well creating your own Artificial Intelligence. Sci-fi worlds fear you.
+#You are a master programmer, your skills are to the point where they may as well be tinker abilities except this is all raw skill. You can easily code complex algorithms and programs as well as creating your own Artificial Intelligence. Sci-fi worlds fear you.
 127. Master Mechanics, 5.8
-#You are a master mechanic, your skill at designing, fixing and building machinery can be called a Tinker ability itself if it weren't pure skill. You can easily design, repair, build and improve all mundane appliances. And with enough time and effort, you can create and design your own brand of  Tinkertech.
+#You are a master mechanic, your skill at designing, fixing and building machinery can be called a Tinker ability itself if it weren't pure skill. You can easily design, repair, build and improve all mundane appliances. And with enough time and effort, you can create and design your own brand of Tinkertech.
 128. Master Biology, 6.0
-#You are a master in the field of Biology, the study of life. You are perfectly familiar with the biology of most organisms, ranging from mammals to cellular life to the point where you can guess and estimate the biology of a completely unfamiliar creature. If given time and effort you can also create your own godforsaken biological hybrids and homunculus and even improve the physiology of beings through surgery. But you will need to study to digest all of this knowledge and make use of it due to the immense quantity.
+#You are a master in the field of Biology, the study of life. You are perfectly familiar with the biology of most organisms, ranging from mammals to cellular life to the point where you can guess and estimate the biology of a completely unfamiliar creature. If given time and effort you can also create your own godforsaken biological hybrids and homunculi and even improve the physiology of beings through surgery. But you will need to study to digest all of this knowledge and make use of it due to the immense quantity.
 129. Master Physics, 6.3
-#You are a master in the field of Physics, the study of the laws of the universe. You know how the laws of the universe work and how they interact with the world at large, if given enough time and effort you could probably invent anti-gravity, railgun tech, cold fusion etc. But you will need to study to digest all of this knowledge and make use of it due to the immense quantity.
+#You are a master in the field of Physics, the study of the laws of the universe. You know how the laws of the universe work and how they interact with the world at large, if given enough time and effort you could probably invent anti-gravity, railgun tech, cold fusion, etc. But you will need to study to digest all of this knowledge and make use of it due to the immense quantity.
 130. Master Chemistry, 6.1
-#You are a master in the field of Chemistry, the study of matter. You are perfectly familiar with how most compounds and objects are formed and what reactions cause with what. With your level of mastery, you can probably make your own brand of supersoldier serum if given enough time. But you will need to study to digest all of this knowledge and make use of it due to the immense quantity.
+#You are a master in the field of Chemistry, the study of matter. You are perfectly familiar with how most compounds and objects are formed and what reactions occur with what. With your level of mastery, you can probably make your own brand of supersoldier serum if given enough time. But you will need to study to digest all of this knowledge and make use of it due to the immense quantity.
 131. Master Math, 6.1
-#You can't be described as a basic savant anymore, you are truly superhuman when it comes to the matter of numbers, mathematics and calculations to the point where someone might question if you have a computer inside of your head.
+#You can't be described as a basic savant anymore. You are truly superhuman when it comes to the matter of numbers, mathematics and calculations to the point where someone might question if you have a computer inside of your head.
 132. Master Blacksmithing, 5.9
 #You are a master blacksmith, and while not quite on the level of someone like Muramasa, describing your works as anything below works of art is an insult. You make weapons, not for simple men but for mighty warriors and heroes of legend. With time and effort, you can create weapons on the level of noble phantasms.
 133. Master Teaching, 5.8
-#You are a master master, does that make sense? You can masterfully impart your knowledge and skills onto your pupil, and while you aren't quite on the level of the Kingmaker like Merlin you can train heroes yourself, if this were the old times, people from across the country would journey to gain your teachings.
+#You are a master teacher, does that make sense? You can masterfully impart your knowledge and skills onto your pupil, and while you aren't quite on the level of the Kingmaker like Merlin you can train heroes yourself, if this were the old times, people from across the country would journey to gain your teachings.
 134. Master Blade Weapon Mastery, 5.9
-#You are a true master of the blades, the kind only spoken in legends, you are spoken in the same vein as people like King Arthur and Lancelot, you are on the cusp of the sword saint realm but you aren't quite there yet.
+#You are a true master of the blades, the kind only spoken of in legends. You are spoken in the same vein as people like King Arthur and Lancelot, you are on the cusp of the sword saint realm but you aren't quite there yet.
 135. Master Blunt Weapon Mastery, 5.7
 #You are a true master of the blunt weapon, the kind only spoken of in legends. You are one with your hammer, and the strength you can exert while wielding a blunt weapon is far beyond what you would normally be able to. You can shatter the walls of a castle with a branch from a tree.
 136. Master Polearm Mastery, 5.8
-#You are a true master of polearms, the kind only spoken in legends, your skills are spoken in the same vein as people like Cu Chulainn and Lu Bu. You can handle and all polearms such as spears, glaives and scythes with mastery.
+#You are a true master of polearms, the kind only spoken of in legends. Your skills are spoken in the same vein as people like Cu Chulainn and Lu Bu. You can handle all polearms such as spears, glaives and scythes with mastery.
 137. Master Item Construction, 6.3
-#You know how to create epic enchanted and special items depending on your capabilities, if you know fire magic, you could turn a regular ring into one that allows the user to use fire magic themselves at a lower level.  If you had an ability like superhuman, you could create a ring that turns the average Joe into a super soldier. Stronger enchantments demand stronger base materials.
+#You know how to create epic enchanted and special items depending on your capabilities. If you know fire magic, you could turn a regular ring into one that allows the user to use fire magic themselves at a lower level. If you had an ability like superhuman, you could create a ring that turns the average Joe into a super soldier. Stronger enchantments demand stronger base materials.
 138. Master Kama Sutra, 6.5
-#(Nsfw)You are a true master of lovemaking and passion, no mortal man can match your mastery over the carnal arts, and the bodies of your partners may as well be putty in your hands, even gods would be rendered to helpless messes with your lovemaking skills.
+#(Nsfw) You are a true master of lovemaking and passion, no mortal man can match your mastery over the carnal arts, and the bodies of your partners may as well be putty in your hands. Even gods would be rendered to helpless messes with your lovemaking skills.
 139. Master Taming, 5.1
-#You are a true master tamer. You can turn even the most ferocious bloodthirsty manic beast into a living room pet. You are a master at also training familiars to gain their obedience and loyalty. This can also apply to people to a lesser extent.
+#You are a true master tamer. You can turn even the most ferocious, bloodthirsty, manic beast into a living room pet. You are also a master at training familiars to gain their obedience and loyalty. This can also apply to people to a lesser extent.
 140. Master Massage, 5.5
-#You are a master masseuse, better than any mortal can be. Your massages can even heal injuries and ailments, your massages are therapeutic and cause immense pleasure and comfort. Even the bodies gods are like putty in your hands.
+#You are a master masseuse, better than any mortal can be. Your massages can even heal injuries and ailments, your massages are therapeutic and cause immense pleasure and comfort. Even the bodies of gods are like putty in your hands.
 141. Master Driving, 5.0
-#You are a true master at driving any kind of vehicle, if it has steering, you can ride any vehicle or mount as if they were your extensions of your body. Ranging from rollerblades to star-sized spacecrafts.
+#You are a true master at driving any kind of vehicle. If it has steering, you can ride any vehicle or mount as if it were an extension of your body. Ranging from rollerblades to star-sized spacecraft.
 142. Master Leadership, 5.8
 #You are a master leader, making you excellent at managing, leading, motivating and earning the loyalty of anyone under your leadership. You could easily run your own country, and if these were the old times, you would be hailed as a legendary general.
-143.Master Charisma, 5.6
-#You have an aura of charisma around you, it is less of a skill and more of something about your presence. People of note feel themselves more attracted to your presence, when you want to appear intimidating your presence strikes fear, when you want to calm someone down your aura appears serene etc.
+143. Master Charisma, 5.6
+#You have an aura of charisma around you. It is less of a skill and more of something about your presence. People of note feel themselves more attracted to your presence, when you want to appear intimidating your presence strikes fear, when you want to calm someone down your aura appears serene etc.
 144. Master Medicine, 5.7
 #You are a true master in all fields of medicine that regular humans can seldom match. You can perform surgery, make your own medicine, and diagnose ailments with extreme efficiency and precision. You could create and design your own medicines, with practice, you could even create superhuman medicines.
 145. Grandmaster Cooking, 6.6
-#You are Grandmaster of Cooking, better than any mortal has any right to be. You can cook any meal ranging from Elder Dragon Steaks, to Leviathan Sushi, your foods, in addition to being incredible in taste are also bestowed with special wonderous effects depending on what you are cooking.
+#You are a Grandmaster of Cooking, better than any mortal has any right to be. You can cook any meal ranging from Elder Dragon steaks to Leviathan sushi. Your foods, in addition to being incredible in taste are also bestowed with special wondrous effects depending on what you are cooking.
 146. Grandmaster Shooting, 6.3
-#You are a Grandmaster Marksman, you are better than any mortal has any right to be in the same vein as Bullseyet. Your accuracy is almost absolute with any ranged weapon and projectile, and the lethality of any projectile in your hands is unmatched. You could kill a man two streets away by flicking a toothpick through the gap in their eyesocket into their brain.
+#You are a Grandmaster Marksman. You are better than any mortal has any right to be in the same vein as Bullseye. Your accuracy is almost absolute with any ranged weapon and projectile, and the lethality of any projectile in your hands is unmatched. You could kill a man two streets away by flicking a toothpick through the gap in their eyesocket into their brain.
 147. Grandmaster Hand-to-Hand Combat, 6.5
 #Your skill level in martial arts has reached the level of a Saint. Even without any abilities or energy, your mastery has reached a point where your arms and legs can strike the intangible, you can kick people so hard you literally shatter their soul or slap the magic out of their hands.
 148. Grandmaster Programming, 6.9
-#You are a Grandmaster Programmer, you would be the scourge of any advanced civilization and artificial intelligences, you can casually code incredibly complex programs, and even create your powerful intelligences. If given enough time you could probably code your own Ultron.
+#You are a Grandmaster Programmer. You would be the scourge of any advanced civilization and artificial intelligences, you can casually code incredibly complex programs, and even create your own powerful intelligences. If given enough time you could probably code your own Ultron.
 149. Grandmaster Mechanics, 6.7
 #You are on the level of a Saint in terms of mechanics, even in the Stone Age you could probably still create an automated factory. At this point, your skill is on the level of a Tinker Ability. You can easily build, design, fix, and innovate most forms of technology, even ones that are beyond the technology of your current world. You can even create generalized Tinker Tech.
 150. Grandmaster Biology, 7.0
-#Your comprehension in the field of Biology, the study of life is beyond any mortal should have. You instinctively understand the biology of organisms to the point where with a simple scan you can point out their genetic blueprint and know how to alter biology, DNA and genetics to your own ends. You will need time and study to properly digest the sheer amount of information this skill provides, at this level, the amount of knowledge stops becoming knowledge and simply comprehension and instinct toward the world around you instead.
+#Your comprehension in the field of Biology, the study of life is beyond what any mortal should have. You instinctively understand the biology of organisms to the point where with a simple scan you can point out their genetic blueprint and know how to alter biology, DNA and genetics to your own ends. You will need time and study to properly digest the sheer amount of information this skill provides, at this level, the amount of knowledge stops becoming knowledge and simply becomes comprehension and instinct toward the world around you instead.
 151. Grandmaster Physics, 7.3
-#Your comprehension in the field of Physics, the study of the laws of the universe is beyond any mortal should have. You know how the laws of the universe work and how they interact with the world at large and how to manipulate those forces to your ends. You will need time and study to properly digest the sheer amount of information this skill provides, at this level, the amount of knowledge stops becoming knowledge and simply comprehension and instinct toward the world around you instead.
+#Your comprehension in the field of Physics, the study of the laws of the universe is beyond what any mortal should have. You know how the laws of the universe work and how they interact with the world at large and how to manipulate those forces to your ends. You will need time and study to properly digest the sheer amount of information this skill provides, at this level, the amount of knowledge stops becoming knowledge and simply becomes comprehension and instinct toward the world around you instead.
 152. Grandmaster Chemistry, 7.1
-#Your comprehension in the field of Chemistry, the study of matter is beyond any mortal should have. You know how matters and materials are formed, how they form more matter with each other and how matters interact with each other to the point where you could easily come up with never-before-seen miracle alloys and materials never thought of. You will need time and study to properly digest the sheer amount of information this skill provides, at this level, the amount of knowledge stops becoming knowledge and simply comprehension and instinct toward the world around you instead.
+#Your comprehension in the field of Chemistry, the study of matter is beyond what any mortal should have. You know how matter and materials are formed, how they form more matter with each other and how matter interacts with each other to the point where you could easily come up with never-before-seen miracle alloys and materials never thought of. You will need time and study to properly digest the sheer amount of information this skill provides, at this level, the amount of knowledge stops becoming knowledge and simply becomes comprehension and instinct toward the world around you instead.
 153. Grandmaster Math, 7.2
-#Your comprehension and understanding of numbers, mathematics and calculations is at a concerning level. You could go to NASA and outcalculate their computers. The speed at which your brain and mind can crunch numbers and calculations is beyond the level of what most computers can achieve. If you forgot your computer at home your mind is a better alternative anyway.
+#Your comprehension and understanding of numbers, mathematics and calculations are at a concerning level. You could go to NASA and outcalculate their computers. The speed at which your brain and mind can crunch numbers and calculations is beyond the level of what most computers can achieve. If you forgot your computer at home your mind is a better alternative anyway.
 154. Grandmaster Blacksmithing, 6.9
-#You are a grandmaster Blacksmith, you are what heroes and legends go to, to get their legendary armaments forged. You could give Muramasa a run for his money and with enough resources, you could probably make your own Durandal, Gram, Gae Bolg etc.
+#You are a grandmaster Blacksmith, you are what heroes and legends go to to get their legendary armaments forged. You could give Muramasa a run for his money and with enough resources, you could probably make your own Durandal, Gram, Gae Bolg, etc.
 155. Grandmaster Teaching, 6.8
-#You are a grandmaster at teaching, on par with people such as the King Maker Merlin, just without the decades of experience and repertoire of skills to teach. But if you have the skills yourself, you could pick up a random country girl and train her into a hero of legends.
+#You are a grandmaster at teaching, on par with people such as the Kingmaker Merlin, just without the decades of experience and repertoire of skills to teach. But if you have the skills yourself, you could pick up a random country girl and train her into a hero of legends.
 156. Grandmaster Blade Weapon Mastery, 6.9
-#You are a swordmaster on the level of a Saint, like mythical legends such as Musashi and Sasaki Kojiro. Even without abilities or energy your skill is at a level where you can even the intangible, you can cut souls, energy, and magic with nothing but your bare body and a blade of any kind.
+#You are a swordmaster on the level of a Saint, like mythical legends such as Musashi and Sasaki Kojiro. Even without abilities or energy, your skill is at a level where you can cut even the intangible, you can cut souls, energy, and magic with nothing but your bare body and a blade of any kind.
 157. Grandmaster Blunt Weapon Mastery, 6.9
-#You have reached saint level with Blunt weapons... somehow, you have reached a level of skill where you can handle a club with such skill that you can smash and shatter the intangible, as in, you can hit someone with your club so hard their body, mind and soul shatters. You can also bat away magic like it is a softball.
+#You have reached saint level with Blunt weapons... somehow, you have reached a level of skill where you can handle a club with such skill that you can smash and shatter the intangible, as in, you can hit someone with your club so hard their body, mind and soul shatter. You can also bat away magic like it is a softball.
 158. Grandmaster Polearm Mastery, 6.8
-#You have reached saint level with Polearms, your skill with the spear allows you to pierce and cut the intangible without needing to use any abilities or energy. You can stab someone's soul with your spear, cut their ability in half, bat away magic with the shaft of your spear etc.
+#You have reached saint level with Polearms, your skill with the spear allows you to pierce and cut the intangible without needing to use any abilities or energy. You can stab someone's soul with your spear, cut their ability in half, bat away magic with the shaft of your spear, etc.
 159. Grandmaster Item Construction, 6.7
 #You know how to create legendary enchanted and special items depending on your capabilities such as knowledge, abilities and skills. The artefacts you create are rated on the level of national treasures and items of legend. You can craft a ring that allows its user to use the ability teleportation or a ring that lets you use fire magic, maybe an armor that can resist the heat of the sun, the limits are only on your abilities.
 160. Grandmaster Leadership, 6.4
-#Your skill in leadership and ruling is at the peak of what a person could achieve. You could manage a kingdom and an army in your sleep, for you the act is as easy as playing a game simulating it. People under your rule and command are naturally more loyal and obedient to your rule, the chance of people rebelling against you is nill unless you are just that bad.
+#Your skill in leadership and ruling is at the peak of what a person could achieve. You could manage a kingdom and an army in your sleep, for you, the act is as easy as playing a game simulating it. People under your rule and command are naturally more loyal and obedient to your rule, the chance of people rebelling against you is nil unless you are just that bad.
 161. Grandmaster Medicine, 6.5
-#You have reached beyond human but not quite god in terms of all fields of medicine and healing. You can perform surgery, modify bodies, and create legendary medicines as well as identify and know how to cure almost all illnesses and ailments. If you were in a cultivation world you would be titled the medicine king.
+#You have reached beyond human but not quite a god in terms of all fields of medicine and healing. You can perform surgery, modify bodies, and create legendary medicines as well as identify and know how to cure almost all illnesses and ailments. If you were in a cultivation world you would be titled the Medicine King.
 162. Divine Cooking, 7.3
 #Your cooking talent is on the level of the gods, the food you cook can give someone an epiphany and change their lives. You can get gods to form a queue outside of your restaurant to taste your cooking.
 163. Divine Shooting, 7.4
@@ -327,278 +327,278 @@
 164. Divine Hand-to-Hand Combat, 7.7
 #Your skill and talent with martial arts is something that can only be described as godly. You can learn someone's martial art just by exchanging blows with them, you can make up your martial arts on the spot that would normally take masters tens of years to come up with.
 165. Divine Programming, 7.6
-#Your programming is on the level of the gods. Is this even coding anymore? No? You can translate your code into an actual magic formula to execute in the world. In addition, with your coding abilities, you could bring galactical empires to their knees and make any robot weep. You could probably outcode Ultron.
+#Your programming is on the level of the gods. Is this even coding anymore? No? You can translate your code into an actual magic formula to execute in the world. In addition, with your coding abilities, you could bring galactic empires to their knees and make any robot weep. You could probably outcode Ultron.
 166. Divine Mechanics, 7.5
 #Your ability to create, design, fix and improve machinery is on the level of Gods. You can outbuild Tony Stark, it doesn't matter the world you are in, with some time you could probably build a spaceship in the Stone Age. You can practically build any machine as long as you have the proper knowledge and abilities.
 167. Principle of Life, 8.1
-#You possess the knowledge of the creator when it comes to the field of Life and Biology. You know how to create, modify, and understand life. But this knowledge is too much for a mortal vessel, so the knowledge manifests as instinctive comprehension when it comes to all matters of life, the stronger you get the more access you will get to the principle.
+#You possess the knowledge of the creator when it comes to the field of Life and Biology. You know how to create, modify, and understand life. But this knowledge is too much for a mortal vessel, so the knowledge manifests as instinctive comprehension when it comes to all matters of law, the stronger you get, the more access you will get to the principle.
 168. Principle of Law, 8.5
-#You possess the knowledge of the creator when it comes to the fundamental forces of the universe. You know perfectly how the laws that make up the world work and how to manipulate them to your desires. But this knowledge is too much for a mortal vessel, so the knowledge manifests as instinctive comprehension when it comes to all matters of life, the stronger you get the more access you will get to the principle.
+#You possess the knowledge of the creator when it comes to the fundamental forces of the universe. You know perfectly how the laws that make up the world work and how to manipulate them to your desires. But this knowledge is too much for a mortal vessel, so the knowledge manifests as instinctive comprehension when it comes to all matters of law, the stronger you get, the more access you will get to the principle.
 169. Principle of Matter, 8.2
-#You possess the knowledge of the creator when it comes to the field of matter and creation. You know how to construct, transmute, and understand matter, even create matter that doesn't exist. But this knowledge is too much for a mortal vessel, so the knowledge manifests as instinctive comprehension when it comes to all matters of life, the stronger you get the more access you will get to the principle.
+#You possess the knowledge of the creator when it comes to the field of matter and creation. You know how to construct, transmute, and understand matter, even create matter that doesn't exist. But this knowledge is too much for a mortal vessel, so the knowledge manifests as instinctive comprehension when it comes to all matters of law, the stronger you get, the more access you will get to the principle.
 170. Divine Formula, 8.0
-#Your internal calculator is beyond that of a calculator, you can effortlessly solve all mathematical problems and perform calculations faster than the fastest supercomputers. You could probably replicate the Kankara formula from DxD. But if your vessel is too weak it might be wise to not use all of your computational power to not melt your brain.
+#Your internal calculator is beyond that of a calculator, you can effortlessly solve all mathematical problems and perform calculations faster than the fastest supercomputers. You could probably replicate the Kankara formula from DxD. But if your vessel is too weak, it might be wise not to use all of your computational power, so as not to melt your brain.
 171. Divine Blacksmithing, 7.8
-#Your blacksmithing skill is qualified to be on the level of a god, with enough training you could Hephaestus a run for their money. With enough resources and time, you can forge your own Excalibur, Gugnir, Longinus, Mjolnir etc.
+#Your blacksmithing skill is qualified to be on the level of a god, with enough training you could give Hephaestus a run for his money. With enough resources and time, you can forge your own Excalibur, Gungnir, Longinus, Mjolnir, etc.
 172. Divine Teaching, 7.2
 #Your ability to impart your skills and knowledge to others is on a divine level. You could train the average farmboy into a demigod with enough effort. There is no one you cannot teach.
 173. Divine Blade Weapon Mastery, 7.8
-#Your level of mastery with swords is divine, with training, there is nothing you cannot cut. Space, Time, Heat, Mind, Souls, the only limit is the effort you are willing to put in. If you are not strong enough you may need training to properly digest this skill.
+#Your level of mastery with swords is divine, with training, there is nothing you cannot cut. space, time, heat, mind, souls, the only limit is the effort you are willing to put in. If you are not strong enough you may need training to properly digest this skill.
 174. Divine Polearm Mastery, 7.8
-#Your level of mastery with polearms is divine, with training, there is nothing you cannot stab, cut or strike. Space, Time, Heat, Mind, Souls, the only limit is the effort you are willing to put in. If you are not strong enough you may need training to properly digest this skill.
+#Your level of mastery with polearms is divine, with training, there is nothing you cannot stab, cut or strike. space, time, heat, mind, souls, the only limit is the effort you are willing to put in. If you are not strong enough you may need training to properly digest this skill.
 175. Divine Blunt Weapon Mastery, 7.8
-#Your level of mastery with blunt instruments is divine, with training, there is nothing you cannot crush and shatter. Space, Time, Heat, Mind, Souls, the only limit is the effort you are willing to put in. If you are not strong enough you may need training to properly digest this skill.
+#Your level of mastery with blunt instruments is divine, with training, there is nothing you cannot crush and shatter. space, time, heat, mind, souls, the only limit is the effort you are willing to put in. If you are not strong enough you may need training to properly digest this skill.
 176. Divine Item Construction, 7.9
-#Your knowledge of creating artefacts and wonderous items is on the level of gods. The items you could create can be hailed as holy grails, if you have the skills, resources, time and abilities you could even make your own divine artefacts like a tesseract, a holy grail or even a Longinus.
+#Your knowledge of creating artefacts and wonderous items is on the level of gods. The items you could create can be hailed as holy grails. If you have the skills, resources, time and abilities you could even make your own divine artefacts like a tesseract, a holy grail or even a Longinus.
 177. Divine Leadership, 7.4
-#Your leadership and ruling skills are on a divine level, you could maintain a galaxy-spanning empire and still be able to handle all bureaucracy yourself. Any army you lead will be soldiers with unstoppable morale and might, any empire you lead will prosper.
+#Your leadership and ruling skills are on a divine level, you could maintain a galaxy-spanning empire and still be able to handle all bureaucracy yourself. Any army you lead will consist of soldiers with unstoppable morale and might, any empire you lead will prosper.
 178. Divine Charisma, 7.9
 #You have the presence and aura of a god. Your sheer charisma can bring people to their knees, attract people of note to you, calm down a raging beast, or inspire awe from the masses. You will be the most popular being alive.
 179. Divine Medicine, 7.5
-#You are as skilled as a god of health and medicine. You can modify and heal bodies to your liking as long as you have the tools, you know how to cure any ailment, not only that but you can create divine medicines like Panaceas and Elixirs of Immortality. But this knowledge is too much for a mortal vessel, so the knowledge manifests as instinctive comprehension when it comes to all matters of life, the stronger you get the more access you will get to the Divine Knowledge.
-180.Novice Interfacing,1.4
-#You are nimble I can give you that, you know how to pick basic locks, pick pockets, find your way around mechanisms and move with decent grace. 
-181.Intermediate Interfacing,2.3
-#You are a tricky one, you know how to pick locks, pick pockets, figure out the kinks in mechanics and have a feeling for knowing your way around things. Your fingers may get a little restless. 
-182.Adept Interfacing,3.4
-#You are one dextrous fellow with slippery fingers. You can easily pick the most mundane locks, empty people's pockets without them noticing, perform magic tricks(performance, not actual magic), feel your way around the kinks in mechanics, and all around have some very dextrous fingers best at knowing their way around things, few barriers can keep you out, good luck keeping you in jail. 
-183.Expert Interfacing,4.3
-#Your skill in interfacing is at the level where there are few locks and mechanisms that can keep you out. You can probably steal someone's clothes off of their body without them noticing. Your ability to feel around and exploit the weaknesses fo mechanisms such as locks, machines, terminals etc. is on an incredible level.
-184.Master Interfacing,5.8
-#You are a master of interfacing, your fingers are so nimble that any lock or barrier may as well not exist in front of you. You could probably pick your way into Area 53 with a single hairpin. You can steal someone's underwear off their body without them noticing. You can interface with and exploit the weakness of any lock or mechanism like it's your own body. 
-185.Novice Savoir Faire,1.8
+#You are as skilled as a god of health and medicine. You can modify and heal bodies to your liking as long as you have the tools, you know how to cure any ailment, not only that but you can create divine medicines like Panaceas and Elixirs of Immortality. But this knowledge is too much for a mortal vessel, so the knowledge manifests as instinctive comprehension when it comes to all matters of life, the stronger you get, the more access you will get to the Divine Knowledge.
+180. Novice Interfacing, 1.4
+#You are nimble, I'll give you that, you know how to pick basic locks, pick pockets, find your way around mechanisms and move with decent grace.
+181. Intermediate Interfacing, 2.3
+#You are a tricky one, you know how to pick locks, pick pockets, figure out the kinks in mechanics and have a feeling for knowing your way around things. Your fingers may get a little restless.
+182. Adept Interfacing, 3.4
+#You are one dexterous fellow with slippery fingers. You can easily pick the most mundane locks, empty people's pockets without them noticing, perform magic tricks (performance, not actual magic), feel your way around the kinks in mechanics, and all around have some very dexterous fingers best at knowing their way around things, few barriers can keep you out, good luck keeping you in jail.
+183. Expert Interfacing, 4.3
+#Your skill in interfacing is at the level where there are few locks and mechanisms that can keep you out. You can probably steal someone's clothes off of their body without them noticing. Your ability to feel around and exploit the weaknesses of mechanisms such as locks, machines, terminals etc. is on an incredible level.
+184. Master Interfacing, 5.8
+#You are a master of interfacing, your fingers are so nimble that any lock or barrier may as well not exist in front of you. You could probably pick your way into Area 51 with a single hairpin. You can steal someone's underwear off their body without them noticing. You can interface with and exploit the weakness of any lock or mechanism like it's your own body.
+185. Novice Savoir Faire, 1.8
 #You know how to move with some relative grace and finesse. You are light on your feet, you know how to dance and how to place your feet so that you don't trip and fall. And if you do fall, you can do so with some semblance of grace.
-186.Intermediate Savoir Faire,2.7
+186. Intermediate Savoir Faire, 2.7
 #You know how to move with grace and finesse. You are light on your feet and you can definitely tear up the dance floor. You rarely lose your balance and can perform parkour. You can also perform flips and manoeuvres with decent grace.
-187.Adept Savoir Faire,3.8
-#You are one smooth bastard. Grace and Finesse are natural to you. Allowing you to move with flair and smoothness. You are skilled at acrobatics, dancing, parkour and anything that requires finesse or agility
-188.Expert Savoir Faire,4.9
-#You are one stylish and cool bastard. Your finesse is unmatched. You can perform acrobatics, dancing, parkour and anything that requires finesse or agility at the level of an expert. You move like the wind and water, you are truly one stylish bastard. 
-189.Master Savoir Faire,5.9
-#You are the master of grace, cool and finesse. You perform feats of acrobatics, dancing, parkour and nimbleness that would baffle the minds of any as natural as you breathe. Even as a baseline human, you could probably dance around bullets.
-190.Novice Stealth,1.4
-You are a novice in the way of stealth, you know how to mask your footsteps, how to sneak up on people, how to check for traps, and how to gather information more effectively. But anyone actually involved in the field is better than you.
-191.Intermediate Stealth,2.4
-You are experienced in the way of stealth, you know how to move silently, how to sneak up on people, how to check for traps, and how to gather information more effectively. You would be a qualified ninja grunt.
-192.Adept Stealth,3.6
-You are skilled in the way of stealth, you know how to move silently, how to sneak up on people, how to check for traps, you can blend into your surroundings and sneak up on people who know you are coming. You would make Solid Snake proud.
-193.Expert Stealth,4.7
-You are an expert in the way of stealth, you know how to move like a ghost, silently, blend into your surroundings and swim with the shadows. You could sneak into a military base and no soul would know you were there. You could stalk an owl through a forest while wearing a high-visibility jacket. You are up there with the greatest assassins.
-194.Master Stealth,5.8
-You have mastered the art of stealth, you blend in with the shadows and move without a single sound, you can also suppress your presence so much that even someone looking directly at you would struggle to distinguish between you and the world around you. You are in league with even the greatest of the Hassasin.
-195.Jack of All Trades,3.2
-#You have novice-level expertise in all basic trades (Novice Blacksmithing, Medicine, Mechanics, Cooking, Interfacing) with competence of an apprentice and are fairly talented in those fields. Does not extend to combat skills. 
-196.Queen of All Trades,4.6
-#You have intermediate-level expertise in all basic trades (Intermediate Blacksmithing, Medicine, Mechanics, Cooking, Interfacing) with fair competence comparable to actual performers of the trade and are talented in those fields. 
-197.King of All Trades,5.1
-#You have Adept-level expertise in all basic trades (Adept Blacksmithing, Medicine, Mechanics, Cooking, Interfacing) with competence comparable to an actual veteran of the trade and are greatly talented in those fields. 
-198.Ace of All Trades,6.2
-#You have Expert-level expertise in all basic trade skills(Expert Blacksmithing, Medicine, Mechanics, Cooking, Interfacing), granting you expertise comparable to the real masters of the trades. And if you choose to train them further, you are also far more talented in any Trade field.
-199.Calligraphy,0.8
+187. Adept Savoir Faire, 3.8
+#You are one smooth bastard. grace and finesse are natural to you, allowing you to move with flair and smoothness. You are skilled at acrobatics, dancing, parkour and anything that requires finesse or agility
+188. Expert Savoir Faire, 4.9
+#You are one stylish and cool bastard. Your finesse is unmatched. You can perform acrobatics, dancing, parkour and anything that requires finesse or agility at the level of an expert. You move like the wind and water, you are truly one stylish bastard.
+189. Master Savoir Faire, 5.9
+#You are the master of grace, coolness and finesse. You perform feats of acrobatics, dancing, parkour and nimbleness that would baffle the minds of anyone as naturally as you breathe. Even as a baseline human, you could probably dance around bullets.
+190. Novice Stealth, 1.4
+#You are a novice in the way of stealth, you know how to mask your footsteps, how to sneak up on people, how to check for traps, and how to gather information more effectively. But anyone actually involved in the field is better than you.
+191. Intermediate Stealth, 2.4
+#You are experienced in the way of stealth, you know how to move silently, how to sneak up on people, how to check for traps, and how to gather information more effectively. You would be a qualified ninja grunt.
+192. Adept Stealth, 3.6
+#You are skilled in the way of stealth, you know how to move silently, how to sneak up on people, how to check for traps, you can blend into your surroundings and sneak up on people who know you are coming. You would make Solid Snake proud.
+193. Expert Stealth, 4.7
+#You are an expert in the way of stealth, you know how to move like a ghost, silently, blend into your surroundings and swim with the shadows. You could sneak into a military base and no soul would know you were there. You could stalk an owl through a forest while wearing a high-visibility jacket. You are up there with the greatest assassins.
+194. Master Stealth, 5.8
+#You have mastered the art of stealth, you blend in with the shadows and move without a single sound, you can also suppress your presence so much that even someone looking directly at you would struggle to distinguish between you and the world around you. You are in league with even the greatest of the Hassassin.
+195. Jack of All Trades, 3.2
+#You have novice-level expertise in all basic trades (Novice Blacksmithing, Medicine, Mechanics, Cooking, Interfacing) with competence of an apprentice and are fairly talented in those fields. It does not extend to combat skills.
+196. Queen of All Trades, 4.6
+#You have intermediate-level expertise in all basic trades (Intermediate Blacksmithing, Medicine, Mechanics, Cooking, Interfacing) with fair competence comparable to actual performers of the trade and are talented in those fields.
+197. King of All Trades, 5.1
+#You have Adept-level expertise in all basic trades (Adept Blacksmithing, Medicine, Mechanics, Cooking, Interfacing) with competence comparable to an actual veteran of the trade and are greatly talented in those fields.
+198. Ace of All Trades, 6.2
+#You have Expert-level expertise in all basic trade skills (Expert Blacksmithing, Medicine, Mechanics, Cooking, Interfacing), granting you expertise comparable to the real masters of the trades. And if you choose to train them further, you are also far more talented in any trade field.
+199. Calligraphy, 0.8
 #You have excellent handwriting, allowing you to write extremely fast while maintaining appealing writing.
-200.Meditation,2.5
+200. Meditation, 2.5
 #You are well-versed in the art of meditation, which is calming down and clearing your mind of distractions. While in a meditative state, your energy recovers slightly faster.
-201.Etiquette,1.0
-#You have excellent etiquette, knowing how to present yourself with a regal bearing and not breaking rules of high society while maintaining decorum and politeness.
-202.Swimming,1.1
+201. Etiquette, 1.0
+#You have excellent etiquette, knowing how to present yourself with a regal bearing and not breaking the rules of high society while maintaining decorum and politeness.
+202. Swimming, 1.1
 #You know how to swim very well, on par with an Olympian swimmer even; if you are dunked into water, chances are, you won't drown.
-203.Novice Performance,1.0
-#You know how to put in a performance. You are able to play all musical instruments enough to play basic songs, you can also sing decently, you can dance without tripping. You would fit right in with a high school band.
-204.Intermediate Performance,2.1
-#You are a qualified performer. Being able to play all basic musical instruments enough to play most songs on them, and you can sing most songs well enough that people may just like them. If you get on the dance floor you won't be an eyesore to anyone. You can assemble your own semi-successful band.
-205.Adept Performance,3.2
-#You are a great performer. You can play all musical instruments well enough to impress most people, and you are great at singing too, enough to capture people's attention with your tunes and have a flair for impressing crowds. You certainly know how to put on a show. You would have a very successful entertainer career.
-206.Expert Performance,4.1
+203. Novice Performance, 1.0
+#You know how to put on a performance. You are able to play all musical instruments enough to play basic songs, you can also sing decently, you can dance without tripping. You would fit right in with a high school band.
+204. Intermediate Performance, 2.1
+#You are a qualified performer, being able to play all basic musical instruments enough to play most songs on them, and you can sing most songs well enough that people may just like them. If you get on the dance floor you won't be an eyesore to anyone. You can assemble your own semi-successful band.
+205. Adept Performance, 3.2
+#You are a great performer. You can play all musical instruments well enough to impress most people, and you are great at singing too, enough to capture people's attention with your tunes and have a flair for impressing crowds. You certainly know how to put on a show. You would have a very successful entertainment career.
+206. Expert Performance, 4.1
 #You have the skills of an expert performer. You can play any instrument about as well as anyone can, and sing with a voice that impresses just about anyone. You can captivate large crowds with your performance, and imbue your emotions into your songs, you know how to sway crowds like an expert. You would be hailed as one of the classics and counted among the greats.
-207.Master Performance,5.6
+207. Master Performance, 5.6
 #You have mastered the art of putting on a performance. You can play any instrument well enough to impress the world, your voice when singing is nothing short of captivating. You can sway entire crowds, put on performances that make crowds weep or cheer, you know how to capture and sway crowds instinctively. Without a doubt, you would be hailed as one of the greatest artists and idols of all time.
-208.Novice Management,1.6
-#You are a novice at managing things. You know how to schedule your day, distribute your tasks, and attention to spend your time better. You would make a decent secretary. 
-209.Intermediate Management,2.6
+208. Novice Management, 1.6
+#You are a novice at managing things. You know how to schedule your day, distribute your tasks and allocate attention to spend your time better. You would make a decent secretary.
+209. Intermediate Management, 2.6
 #You are fairly skilled at management tasks, you can split your attention adequately between tasks, distribute tasks, structure things, manage groups, etc. You would make a fine secretary or a small business owner.
-210.Adept Management,3.7
-#You are skilled at management tasks, you know how to distribute tasks, handle them efficiently, handle employees or minions, multitask efficiently and deal with financial problems efficiently. You could easily run your own company or be an excelling financial advisor. 
-211.Expert Management,4.6
-#You have become an expert in the art of management. Whether it is managing finances, people, assets, distributing tasks or managing your own attention and problems you can do so with brutal efficiency and expertise. You can easily run a multi-national company or a nation. 
-212.Master Management,5.8
-#You are a master of management. You can easily manage tasks, people, assets, finances, distribution of tasks, and just about anything needed to manage a large group such as a company or even a country. You can also freely split your attention between tasks seamlessly, almost like parallel processing. You can increase your mastery even further by training and experience. 
-213.Novice Discipline,1.2
-#You have basic discipline. You are able to endure slight hardship, able to force yourself to eat things you don't want to eat and study when you don't want to but your discipline is not that much greater than the average person.
-214.Intermediate Discipline,2.5
-#Your discipline is remarkable. You are fairly disciplined, being able to endure hardship such as discomfort and pain without audible complaints. You can force yourself to train even when you don't want to and get out of bed even when it's very comfortable, you are pretty good at maintaining focus. People would say you have an excellent work ethic.  
-215.Adept Discipline,3.6
-#Your dedication and focus are admirable. You are very disciplined, being able to focus on tasks without falling to distractions, you are able to grit your teeth and get it done, even when in pain you can push on. You are able to push through discomfort, annoyance, and pain to get whatever job you need to get done. It is hard to use mental abilities on you. 
-216.Expert Discipline,4.8
-#You have a mind made of iron. Your focus is sharp as a blade, if you do not want to be interrupted you won't be, if you know you need to keep going, you will. You can endure the toughest of training, even if your body starts breaking down you can force it to keep going for longer. You are very resistant to mental influences and effects.
-217.Master Discipline,6.0
-#You are the master of your own mind, the god of your own ship. Pain has no effect on your abilities, you can endure the toughest of punishments even if you think you can't. Your focus cannot be shaken, your discipline is unmatched. Your mind cannot be shaken by those weaker than yourself, and even then they will not have a good time. You are as disciplined as Batman himself. 
-218.Rokushiki,5.0
-#One Piece - A special superhuman martial arts developed for only the most expert and skilled of the Marines and Cipher Pol agents. Rokushiki consists of 6 different special superhuman techniques and a secret 7th one they have achieved mastery over the others. You start with knowledge of all techniques but have to train to use them.
-219.Caryll Runecraft,4.2
-#The Outer Ones beyond the stars whisper to you, and allow you to catch glimpses of their knowledge in the form of runes. You can memorize the runes of the Outer Gods to acquire some boons. But you will have to study to memorize the runes given to you. You can only have three runes active at a time  List of Runes: https://bloodborne.wiki.fextralife.com/Caryll+Runes
-220.Novice Conceptualization,1.9
-#Conceptualization is your ability to understand what shouldn't be, in essence, it is your ability to comprehend the mystical, magical and eldrich. You have an easier time comprehending, understanding and learning mystical and exotic effects but so much above the average person. 
-221.Intermediate Conceptualization,2.9
-#Conceptualization is your ability to understand what is beyond the mundane. You are an intermediate at comprehending the Mystical and Esoteric. You learn and master magic faster, and you are better at understanding the composition of abilities and esoteric effects. 
-222.Adept Conceptualization,3.9
+210. Adept Management, 3.7
+#You are skilled at management tasks, you know how to distribute tasks, handle them efficiently, handle employees or minions, multitask efficiently and deal with financial problems efficiently. You could easily run your own company or be an excellent financial advisor.
+211. Expert Management, 4.6
+#You have become an expert in the art of management. Whether it is managing finances, people, assets, distributing tasks or managing your own attention and problems you can do so with brutal efficiency and expertise. You can easily run a multinational company or a nation.
+212. Master Management, 5.8
+#You are a master of management. You can easily manage tasks, people, assets, finances, distribution of tasks, and just about anything needed to manage a large group such as a company or even a country. You can also freely split your attention between tasks seamlessly, almost like parallel processing. You can increase your mastery even further by training and experience.
+213. Novice Discipline, 1.2
+#You have basic discipline. You are able to endure slight hardship, able to force yourself to eat things you don't want to eat and study when you don't want to, but your discipline is not that much greater than the average person.
+214. Intermediate Discipline, 2.5
+#Your discipline is remarkable. You are fairly disciplined, being able to endure hardship such as discomfort and pain without audible complaints. You can force yourself to train even when you don't want to and get out of bed even when it's very comfortable, you are pretty good at maintaining focus. People would say you have an excellent work ethic.
+215. Adept Discipline, 3.6
+#Your dedication and focus are admirable. You are very disciplined, being able to focus on tasks without falling to distractions, you are able to grit your teeth and get it done, even when in pain you can push on. You are able to push through discomfort, annoyance, and pain to get whatever job you need to get done. It is hard to use mental abilities on you.
+216. Expert Discipline, 4.8
+#You have a mind made of iron. Your focus is sharp as a blade. If you do not want to be interrupted you won't be, if you know you need to keep going, you will. You can endure the toughest of training, even if your body starts breaking down you can force it to keep going for longer. You are very resistant to mental influences and effects.
+217. Master Discipline, 6.0
+#You are the master of your own mind, the captain of your own ship. Pain has no effect on your abilities, you can endure the toughest of punishments even if you think you can't. Your focus cannot be shaken, your discipline is unmatched. Your mind cannot be shaken by those weaker than yourself, and even then they will not have a good time. You are as disciplined as Batman himself.
+218. Rokushiki, 5.0
+#One Piece - A special superhuman martial arts developed only for the most expert and skilled of the Marines and Cipher Pol agents. Rokushiki consists of 6 different special superhuman techniques and a secret 7th one once you have achieved mastery over the others. You start with knowledge of all techniques but have to train to use them.
+219. Caryll Runecraft, 4.2
+#The Outer Ones beyond the stars whisper to you, and allow you to catch glimpses of their knowledge in the form of runes. You can memorize the runes of the Outer Gods to acquire some boons. But you will have to study to memorize the runes given to you. You can only have three runes active at a time. List of Runes: https://bloodborne.wiki.fextralife.com/Caryll+Runes
+220. Novice Conceptualization, 1.9
+#Conceptualization is your ability to understand what shouldn't be, in essence, it is your ability to comprehend the mystical, magical and eldritch. You have an easier time comprehending, understanding and learning mystical and exotic effects but only slightly above the average person.
+221. Intermediate Conceptualization, 2.9
+#Conceptualization is your ability to understand what is beyond the mundane. You are at an intermediate level in comprehending the Mystical and Esoteric. You learn and master magic faster, and you are better at understanding the composition of abilities and esoteric effects.
+222. Adept Conceptualization, 3.9
 #Conceptualization is your ability to understand what is beyond the mundane and inexplicable. With this level, your mind probably won't be shattered by hearing the old ones whisper. Magic and Esoteric make more sense to you when you see them, you understand, learn, and develop magic more easily and have a better time understanding the mystical side of reality.
-223.Expert Conceptualization,4.8
-#Conceptualization is your ability to understand what is beyond mundane reality into the realm of esoterics and mystical. Your mind is more easily able to comprehend arcane mysteries and esoterics. Allowing you to learn and develop things like magic far more easily and possess a great intuition towards the esoteric side of reality.
-224.Master Conceptualization,6.2
-#Conceptualization is your ability to understand what is below the veil of base reality. You are able to comprehend and understand arcane mysteries and Outer concepts like it is second nature. You are able to understand, dissect, learn and develop magic and mystery to a level that far outstrips most mages. You could hold a conversation with the old ones and even translate their words into runes with training if you were to ever hear them or use their words to break the minds of others.
-225.Divine Conceptualization,9.0
-#You have achieved true conceptualization, your mind is wired differently from those of mortals and immortals. Understanding magic and mystery is not any harder than regular math or reading words on a paper. You could instinctively use magic and due to your natural understanding of the stars, you can call upon the powers of the Outer Gods, and use their words to bend reality around with enough practice. It would not be wrong to consider you an infant Outer God.
-226.Somas Winemaking,5.1
-#Danmachi - You are as great at making wine and other alcoholic products as the god Soma. But you still need experimentation to figure out the wines you can make with the resources. Even god does not succeed every time.
-227.Quickening,4.7
-#Bloodborne - You have mastered the Quickening Technique of the Old Hunters, allowing you to briefly dash forward with incredible speed while shrouding your form in arcane fog to obscure your movements. This can put quite a strain on the stamina and energy. 
-228.Edna Mode,3.8
-#Incredibles - You are not a simple fashionista baby, you are THE fashionista. You are a master of designing clothes and costumes; if someone needs a costume, they come to YOU. Your skill in creating costumes can be compared to a Tinker even because you are just THAT good.
-229.Salt Distillation,0.1
+223. Expert Conceptualization, 4.8
+#Conceptualization is your ability to understand what is beyond mundane reality into the realm of esoterica and the mystical. Your mind is more easily able to comprehend arcane mysteries and esoterics. Allowing you to learn and develop things like magic far more easily and possess a great intuition towards the esoteric side of reality.
+224. Master Conceptualization, 6.2
+#Conceptualization is your ability to understand what is behind the veil of base reality. You are able to comprehend and understand arcane mysteries and Outer concepts like it is second nature. You are able to understand, dissect, learn and develop magic and mystery to a level that far outstrips most mages. You could hold a conversation with the old ones and even translate their words into runes with training if you were to ever hear them or use their words to break the minds of others.
+225. Divine Conceptualization, 9.0
+#You have achieved true conceptualization, your mind is wired differently from those of mortals and immortals. Understanding magic and mystery is not any harder than regular math or reading words on paper. You could instinctively use magic and due to your natural understanding of the stars, you can call upon the powers of the Outer Gods, and use their words to bend reality with enough practice. It would not be wrong to consider you an infant Outer God.
+226. Soma's Winemaking, 5.1
+#Danmachi - You are as great at making wine and other alcoholic products as the god Soma. But you still need experimentation to figure out the wines you can make with the resources. Even a god does not succeed every time.
+227. Quickening, 4.7
+#Bloodborne - You have mastered the Quickening Technique of the Old Hunters, allowing you to briefly dash forward with incredible speed while shrouding your form in arcane fog to obscure your movements. This can put quite a strain on the stamina and energy.
+228. Edna Mode, 3.8
+#Incredibles - You are not a simple fashionista baby, you are THE fashionista. You are a master of designing clothes and costumes; if someone needs a costume, they come to YOU. Your skill in creating costumes can even be compared to a Tinker because you are just THAT good.
+229. Salt Distillation, 0.1
 #You are skilled at extracting salt from sources of water or tears.
-230.Prana Bindu,4.8
-#Dune - You are learned in the ways of Prana Bindu, allowing you to train in controlling your body beyond human levels. From controlling how your individual muscles move, to controlling individual strands and eventually, with enough training, controlling your very own nerves and bioelectrical signals.
-231.Novice Communication,1.2
-#Communication is the ability to better understand what others mean and how fo convey your thoughts effectively. At a novice level, you may not be that much better than the regular person, but at least you know how to properly communicate with people, which is a strangely rare skill these days.
-232.Intermediate Communication,2.3 
-#You are skilled at understanding others and conveying your own intent through words and actions. Allowing you to better discern the emotions behind their words and make yourself understood to people who otherwise have a hard time understanding you.
-233.Adept Communication,3.6
-#You are greatly skilled at communicating, understanding others and conveying your intentions. You can make yourself understood to basically anyone; you could even communicate through exclusively body language and still be understood. You are able to pick up on the intents and emotions of people easily through their body language, tone of voice, slight shakes as they speak, etc. it is difficult to hide their intention in front of you unless they are something like a trained spy.
-234.Expert Communication,4.6
+230. Prana Bindu, 4.8
+#Dune - You have learned the ways of Prana Bindu, allowing you to train in controlling your body beyond human levels, from controlling how your individual muscles move, to controlling individual strands and eventually, with enough training, controlling your very own nerves and bioelectrical signals.
+231. Novice Communication, 1.2
+#Communication is the ability to better understand what others mean and how to convey your thoughts effectively. At a novice level, you may not be that much better than the regular person, but at least you know how to properly communicate with people, which is a strangely rare skill these days.
+232. Intermediate Communication, 2.3
+#You are skilled at understanding others and conveying your own intent through words and actions, allowing you to better discern the emotions behind their words and make yourself understood to people who otherwise have a hard time understanding you.
+233. Adept Communication, 3.6
+#You are greatly skilled at communicating, understanding others and conveying your intentions. You can make yourself understood to basically anyone; you could even communicate exclusively through body language and still be understood. You are able to pick up on the intents and emotions of people easily through their body language, tone of voice, slight shakes as they speak, etc. It is difficult to hide their intentions in front of you unless they are someone like a trained spy.
+234. Expert Communication, 4.6
 #You are an expert in communication. You can always convey what you mean to anyone, be it the stupidest human or the lowliest beast; you can even live your life through gestures and not be misunderstood. You can tell when people lie and understand their true intentions by cold reading them; they don't even have to talk, you can understand what they want and what they feel just by extreme cold reading.
-235.Master Communication,5.2
+235. Master Communication, 5.2
 #You are the absolute master in communication, to the point where it borders magic. You may not understand what language they speak, but you can read their intent and emotions from a simple glance enough to basically mind-read them. And you always know how to perfectly convey what you mean, you can convey a hundred words with a single nod, talk to animals and make them understand you, or perfectly convey just how badly you will hurt or love someone.
-236.Novice Persuasion,1.9
-Persuasion is your skill in convincing people. At novice rank you are slightly better than the average person at appealing your case and trying to convince people with words. 
-237.Intermediate Persuasion,2.7
+236. Novice Persuasion, 1.9
+#Persuasion is your skill in convincing people. At novice rank you are slightly better than the average person at pleading your case and trying to convince people with words.
+237. Intermediate Persuasion, 2.7
 #You are skilled in convincing people, with your words or actions, like a used car salesman or a lawyer. You have a decent feel for what words would resonate with the type of person you're speaking with.
-238.Adept Persuasion,3.9
-#You are a skilled talker for sure, you are well-trained in the art of convincing people with your words and actions. Being able to present yourself in ways that make you easier to believe and knowing to make people better believe what you are what you are saying to them. You would make a damn fine politician.
-239.Expert Persuasion,4.8
-#You are an expert in the art of Persuasion, having a great feel for what words are more effective on what types of people, being able to far more easily sway them with your words and actions. You are skilled enough to persuade people to do things they would otherwise not be willing to do.
-240.Master Persuasion,6.2
+238. Adept Persuasion, 3.9
+#You are a skilled talker for sure. You are well-trained in the art of convincing people with your words and actions. Being able to present yourself in ways that make you easier to believe and knowing to make people better believe what you are saying to them. You would make a damn fine politician.
+239. Expert Persuasion, 4.8
+#You are an expert in the art of Persuasion, having a great feel for what words are more effective on what types of people, being able to sway them far more easily with your words and actions. You are skilled enough to persuade people to do things they would otherwise not be willing to do.
+240. Master Persuasion, 6.2
 #You have mastered the art of Persuasion, the ability to convince people and make them see what you see. You are among the best talkers in history, you have an almost supernatural awareness of what words and actions work best on which people. But beware, no matter how skilled you are, some people just cannot be made to listen.
-241.Novice Ninjutsu,2.0
-#You have passed very basic Ninja Training, although you cannot be considered an actual ninja by any means, you have the basic training. You know how to handle most knives and swords enough to not cut yourself, have a basic grasp on acrobatics, moving around sneakily and using tools in battle.
-242.Intermediate Ninjutsu,3.8
+241. Novice Ninjutsu, 2.0
+#You have passed very basic Ninja Training, although you cannot be considered an actual ninja by any means, you have the basic training. You know how to handle most knives and swords enough to not cut yourself, have a basic grasp of acrobatics, moving around sneakily and using tools in battle.
+242. Intermediate Ninjutsu, 3.8
 #You are a Ninja, although more around the rank of a Ninja grunt. You are able to handle throwing weapons, knives and swords with relative skill. And you are also decent at sneaking around and performing feats of acrobatics and espionage. Your training allows you to use tools in combat with more finesse.
-243.Adept Ninjutsu,4.5
+243. Adept Ninjutsu, 4.5
 #You are a real ninja, not just a footman, but a fully fledged Ninja. You are able to skillfully handle thrown weapons, bladed weapons and engage in hand-to-hand combat. You are also a skilled acrobat and can mask your sounds and presence fairly effectively. You have great proficiency in using tools in the midst of combat. Although not a match against another Adept in any one of those fields, your skills make you a formidable Ninja.
-244.Expert Ninjutsu,5.2
-#You are a true Expert Ninja, with skills that have been polished to a honed edge. You can handle thrown weapons, bladed weapons with great efficiency and engage in unarmed combat with the same level of skill, focusing on quick and brutal decisive strikes. Your real skill in combat shines when using tools to supplement your fighting style. Your Agility and Acrobatics are incredible, being able to aim dodge bullets even with base human stats and parkour as naturally as if you were walking, and your stealth makes you a shadow in the night, suppressing your presence, blending into the background and leaving no tracks are like second nature to you. Most would be hard-pressed to spot you. Although not a match against another Expert in any one of those fields, your skills make you a formidable Ninja. The influx of skills may take some time and training to digest.
-245.Master Ninjutsu,6.4
-#You are a Master Ninja, having achieved mastery over several crafts to have honed your skills to incredible levels. You are able to expertly utilise Thrown Weapons, Tools, Bladed Weapons, and Unarmed Combat to achieve a very lethal style of combat that only other masters can match. You are an expert at acrobatics and stealth, being able to hide your presence from all but the most vigilant eyes and blend in with your environment. You move with utmost efficiency and grace. Although not a match against another Master in any one of those fields, your skills make you a formidable Ninja. The influx of skills may take some time and training to digest.
-246.Mixology,1.8
+244. Expert Ninjutsu, 5.2
+#You are a true Expert Ninja, with skills that have been polished to a honed edge. You can handle thrown weapons, bladed weapons with great efficiency and engage in unarmed combat with the same level of skill, focusing on quick and brutal decisive strikes. Your real skill in combat shines when using tools to supplement your fighting style. Your agility and acrobatics are incredible, being able to aim-dodge bullets even with base human stats and parkour as naturally as if you were walking, and your stealth makes you a shadow in the night, suppressing your presence, blending into the background and leaving no tracks is like second nature to you. Most would be hard-pressed to spot you. Although not a match against another Expert in any one of those fields, your skills make you a formidable Ninja. The influx of skills may take some time and training to digest.
+245. Master Ninjutsu, 6.4
+#You are a Master Ninja, having achieved mastery over several crafts to hone your skills to incredible levels. You are able to expertly utilize thrown weapons, tools, bladed weapons, and unarmed combat to achieve a very lethal style of combat that only other masters can match. You are an expert at acrobatics and stealth, being able to hide your presence from all but the most vigilant eyes and blend in with your environment. You move with utmost efficiency and grace. Although not a match against another Master in any one of those fields, your skills make you a formidable Ninja. The influx of skills may take some time and training to digest.
+246. Mixology, 1.8
 #You have the skills of a well-trained mixologist and bartender. You know how to mix most drinks and come up with your own alcohol combinations that taste great, as well as managing a bar and dealing with drunk people.
-247.Begging,2.4
+247. Begging, 2.4
 #You are very skilled at throwing your dignity away and begging people for things. Get on the ground on all fours and start crying, and you could get most people to think you are pitiful enough to grant your request. Who needs dignity when you can beg people for free things? People are more receptive to your begging, and it is easier to get people to accept your requests this way. Warning: Effects are heavily dependent on the type of individual; works especially well against soft-hearted people.
-248.Architecture,1.8
-#You are very skilled at the craft of Architecture, designing buildings and structures that both look good and hold up well. You could design entire cities, well, minus the infrastructure. But you could still easily get a job as an architect.
-249.Litigation,2.5
+248. Architecture, 1.8
+#You are very skilled at the craft of architecture, designing buildings and structures that both look good and hold up well. You could design entire cities, well, minus the infrastructure. But you could still easily get a job as an architect.
+249. Litigation, 2.5
 #You have the skills of an experienced lawyer, having a great grasp on the laws of the world, country and city you are in, to the point where you can easily defend yourself or a client in their local court of law. If someone has a problem, they'd better call you.
-250.Gooning,2.3
+250. Gooning, 2.3
 #You are skilled at the art of gooning, that is, being a low-rank thug for a boss. You know how to shake people down for money, intimidate someone for their wallet, and have novice-level skill in wielding knives, pistols and fighting unarmed. You can also use a Brooklyn accent at will. You could easily score a low-ranking job in any organised crime organisation.
-251.Cosplayer,2.3
-#You are very skilled in cosplaying and dressing up. You can also sew well enough to create convincing cosplay outfits and outfits in general, but you are better at making clothes you have seen before. People may even mistake you for someone else if you cosplay as a real person. 
-252.Servitude,2.8
-#You are one hell of a Maid/Butler, having great skill in housekeeping, manners and many manners of servitude. You can clean, keep track of schedules, remember people's preferences, you know how to present yourself in a professional yet approachable manner and overall are experienced in all skills that would be needed by someone in the profession.
-253.Aura Farming,2.1
-#You are skilled at presenting yourself in ways that are ""cool"" and ""badass"". You have a unique for spotting instances and timings to ""farm aura"", interjecting at just the perfect moment, making a dramatic entrance, standing on top of a ledge with your back turned as your cape flutters majestically, producing a crisp dap. You are also skilled at not seeming ""uncool"" such as avoiding tripping, stuttering, if you mess up you will have a better time at recovering to not lose your ""Aura"". 
-254.Fishman Karate,5.0
-#One Piece - You have the knowledge of Fishman Karate, the unique martial art invented by Fishmen that allows them to manipulate water offensively alongside martial arts. You can use preexisting water to enhance the power of your blows, disrupt the fluids inside your opponent with your hits or transmit the power of your fists through the moisture in the air. You begin as a White Belt in the air and can train yourself to reach higher mastery.
-255.Clowning Around,1.1
+251. Cosplayer, 2.3
+#You are very skilled in cosplaying and dressing up. You can also sew well enough to create convincing cosplay outfits and outfits in general, but you are better at making clothes you have seen before. People may even mistake you for someone else if you cosplay as a real person.
+252. Servitude, 2.8
+#You are one hell of a Maid/Butler, having great skill in housekeeping, manners and many forms of servitude. You can clean, keep track of schedules, remember people's preferences, you know how to present yourself in a professional yet approachable manner and overall are experienced in all skills that would be needed by someone in the profession.
+253. Aura Farming, 2.1
+#You are skilled at presenting yourself in ways that are "cool" and "badass". You have a unique eye for spotting instances and timings to "farm aura", interjecting at just the perfect moment, making a dramatic entrance, standing on top of a ledge with your back turned as your cape flutters majestically, producing a crisp dap. You are also skilled at not seeming "uncool" such as avoiding tripping, stuttering, if you mess up you will have a better time at recovering to not lose your "Aura".
+254. Fishman Karate, 5.0
+#One Piece - You have the knowledge of Fishman Karate, the unique martial art invented by Fishmen that allows them to manipulate water offensively alongside martial arts. You can use preexisting water to enhance the power of your blows, disrupt the fluids inside your opponent with your hits or transmit the power of your fists through the moisture in the air. You begin as a white belt in the art and can train yourself to reach higher mastery.
+255. Clowning Around, 1.1
 #You are a graduate from Clown College, you know how to tell lame jokes, entertain kids, make balloon animals, fit in comically small cars, apply humorous makeup, and other such skills needed by a professional clown.
-256.Novice Spycraft,2.1
+256. Novice Spycraft, 2.1
 #You are trained to be a Spy, not good enough to be considered a proper one, but enough to benefit from the training. You know how to better eavesdrop on people, how to mask your feelings better, deceive people, use disguises and deduce what people are thinking. You can also use guns and knives without killing yourself. You are no match for anyone actually trained in those fields, but the experience makes you better than the average man.
-257.Intermediate Spycraft,3.4
+257. Intermediate Spycraft, 3.4
 #You are properly trained to be a fully fledged spy, not the best among them or even great, but enough to qualify. You can eavesdrop on conversations better, know how to snoop for information far better, how to interrogate someone, how to deceive people, how to use a disguise and how to engage in combat if the need arises using Knives and Guns. You are not a match for a fellow intermediate in any one of those skills, but they make you a decent spy nonetheless.
-258.Adept Spycraft,4.6
-#You are a real spy, the kind that would infiltrate other countries and make Bonds James proud. You are skilled at gathering information, infiltrating places, acting, masking your real emotions, effectively using disguises, reading people, and if need be, you can handle yourself well in combat using Knives, Guns and Hand-to-Hand Combat. While not a match for a fellow adepts in any one of those skills, but they make you an effective spy.
-259.Expert Spycraft,5.3
-#You are an Expert Spy, the kind that would make Loid Forger proud. You are greatly skilled at gathering information, infiltration, acting, maintaining your calm, enduring stress, disguising, cold reading people and if the need arises, you are plenty skilled in combat using Unarmed, Knives and Guns. While not a match for a fellow adept in any one of those skills, they make you a great spy nonetheless.
-260.Master Spycraft,6.2
-#You are a Master Spy, among the best there is. You are an expert in gathering information,  infiltration, deception, acting, maintaining your cool, disguising, acting, cold reading people, and in the need for it, you are an expert combatant in using Unarmed, Knives and Guns. While not a match for a fellow master in any single one of those skills, they make you a master spy nonetheless.
-261.Stylist,1.7
-#You have the skill of a skilled hair stylist, enough to get employed by celebrities and nobles, you know how to style hair and make it look good like it's second nature to you.
-262.Cheer,3.1
+258. Adept Spycraft, 4.6
+#You are a real spy, the kind that would infiltrate other countries and make James Bond proud. You are skilled at gathering information, infiltrating places, acting, masking your real emotions, effectively using disguises, reading people, and if need be, you can handle yourself well in combat using Knives, Guns and Hand-to-Hand Combat. While not a match for a fellow adept in any one of those skills, they make you an effective spy.
+259. Expert Spycraft, 5.3
+#You are an Expert Spy, the kind that would make Loid Forger proud. You are greatly skilled at gathering information, infiltration, acting, maintaining your calm, enduring stress, disguising, cold reading people and if the need arises, you are plenty skilled in combat using unarmed, knives and guns. While not a match for a fellow expert in any one of those skills, they make you a great spy nonetheless.
+260. Master Spycraft, 6.2
+#You are a Master Spy, among the best there is. You are an expert in gathering information, infiltration, deception, acting, maintaining your cool, disguising, cold reading people, and if the need arises, you are an expert combatant in using unarmed, knives and guns. While not a match for a fellow master in any single one of those skills, they make you a master spy nonetheless.
+261. Stylist, 1.7
+#You have the skill of a hair stylist, enough to get employed by celebrities and nobles; you know how to style hair and make it look good like it's second nature to you.
+262. Cheer, 3.1
 #You have a natural knack for giving motivation and cheering people up. You have a feel for what words someone wants to hear right now and what to do to cheer them up or get them out of a slump. You'd also be one hell of a cheerleader.
-263.Novice Fine Arts,1.4
-#You are a novice artist, someone who pursues fine arts, having a beginner level of skill in most arts such as Painting, Engraving, Sketching, Sculpting, etc., and in general have some skill in making things more aesthetically pleasing. But it would be a stretch to call you a real artist.
-264.Intermediate Fine Arts,2.4
-#You have the skills of a professional Fine Artist, having a good level of skill in most fine arts such as Drawing, Painting, Sketching, Sculpting, Engraving, etc., and in general the art of making things more aesthetically pleasing. You could probably get a job like a painter, illustrator, sculptor without much hassle, but you wouldn't exactly stand out.
-265.Adept Fine Arts,3.2
-#You have the skills of an experienced Senior Artist, having a great deal of skill in most fine arts such as Drawing, Painting, Sketching, Sculpting, Engraving, etc., and in general, the art of making things more aesthetically pleasing comes naturally to you. You could easily get a job in the arts; if these were the medieval times, most nobles would hire your services.
-266.Expert Fine Arts,4.5
-#You have the skills of an Expert Renowned Artist, having impressive skill in most fine arts such as Drawing, Painting, Sketching, Sculpting, Engraving, etc., and in general, the art of making things more aesthetically pleasing comes naturally to you. Your works of art would be put in a museum and sell for great amounts of money at auctions, you have the skills to make paintings that evoke great emotion and sculptures that almost look alive. If these were the medieval times, Nobles would line up for your services, and your name would go down in history.
-267.Master Fine Arts,5.4
+263. Novice Fine Arts, 1.4
+#You are a novice artist, someone who pursues fine arts, having a beginner level of skill in most arts such as painting, engraving, sketching, sculpting, etc., and in general have some skill in making things more aesthetically pleasing. But it would be a stretch to call you a real artist.
+264. Intermediate Fine Arts, 2.4
+#You have the skills of a professional Fine Artist, having a good level of skill in most fine arts such as drawing, painting, sketching, sculpting, engraving, etc., and in general the art of making things more aesthetically pleasing. You could probably get a job like a painter, illustrator, sculptor without much hassle, but you wouldn't exactly stand out.
+265. Adept Fine Arts, 3.2
+#You have the skills of an experienced Senior Artist, having a great deal of skill in most fine arts such as drawing, painting, sketching, sculpting, engraving, etc., and in general, the art of making things more aesthetically pleasing comes naturally to you. You could easily get a job in the arts; if these were the medieval times, most nobles would hire your services.
+266. Expert Fine Arts, 4.5
+#You have the skills of an Expert Renowned Artist, having impressive skill in most fine arts such as drawing, painting, sketching, sculpting, engraving, etc., and in general, the art of making things more aesthetically pleasing comes naturally to you. Your works of art would be put in a museum and sell for great amounts of money at auctions, you have the skills to make paintings that evoke great emotion and sculptures that almost look alive. If these were the medieval times, nobles would line up for your services, and your name would go down in history.
+267. Master Fine Arts, 5.4
 #You have the skills of a true Master Artist. Having incredible, almost supernatural skill in most fine arts, Drawing, Painting, Sketching, Sculpting, Engraving, etc., and in general, the art of making things more aesthetically pleasing comes naturally to you. Given some time and inspiration, you can produce masterpieces; you instinctively know what kind of aesthetics appeals to what kinds of people, how to pour your thoughts and emotions into your works, and create art that can shake the hearts of even the sternest art critics. You would most likely be renowned as one of the greatest in art history. And you are the exact kind of person they speak in legends of gods being pissy about mortals beating them in a game of skill and cursing them.
-268.Farming,1.9
-#You have extensive farming knowledge and skills that can compete with the most experienced of farmers, including how to maintain a farm, care for livestock, know how to maintain soil, etc.
-269.Sign Language,0.8
-#You know how to use the basic sign language of this world as well as you can speak your native language. 
-270.Mental Image Blocking,1.9
-#Batman - You have learned a technique to block out mind readers and telepaths by masking your real thoughts with conjured mental images, taught to you by the ever-elusive Tibetan Monks
-271.Mind Control Resistance,3.1
+268. Farming, 1.9
+#You have extensive farming knowledge and skills that can compete with the most experienced of farmers, including how to maintain a farm, care for livestock, maintain soil, etc.
+269. Sign Language, 0.8
+#You know how to use the basic sign language of this world as well as you can speak your native language.
+270. Mental Image Blocking, 1.9
+#Batman - You have learned a technique to block out mind readers and telepaths by masking your real thoughts with conjured mental images, taught to you by the ever-elusive Tibetan Monks.
+271. Mind Control Resistance, 3.1
 #Batman - Thanks to the teachings of the Tibetan Monks you have learned how to resist Mind Control and Mind Reading. The amount of resistance you can put up is proportional to your mental strength and overall power level.
-272.Army Breaker,4.1
+272. Army Breaker, 4.1
 #Strike it Rich - Rikudou: Army Breaker is a specialized martial art that has its basis in Karate movements. Emphasizing the weight of the arms, shifting of one's center of balance, and relaxation to deliver blows fast as whips yet heavy as hammers, a skilled enough human can even cut down to bone with a single blow. With enough practice, the user can control their own joints to elongate their arm further and increase the power behind the attacks called "Dawn".
-273.Kaiwan Style,5.2
-#Kengan Ashura - You are an apprentice in the Kaiwan Style, an assassination Martial art that has roots in multiple martial arts, mainly in Karate. Practice of it requires knowledge of the nervous system, pressure points, and Qigong. Although simplistic from the outside, this martial art focuses on direct strikes perfected with timing as well as great control over the body. The main move is Devil Lance, which is a direct spear-like strike that possesses great power but requires superhuman conditioning to use properly. Skilled enough users can use "Motionless" to predict the next moves of their opponents and strike their open spots.
-274.The Niko Style,6.1
-#Kengan Ashura - You are an apprentice in the Niko Style. A compilation of various "Kata's" that require great control of one's body and a lot of skill and practice. The Adamantine Kata focuses on tightening and bracing one's muscles to deliver powerful blows and withstand attacks. The Flame Kata focuses on dodging, footwork, and agility. The Redirection Kata focuses on shifting and parrying the blows of other opponents. The Water Kata focuses on binds and holds. One can combine all 4 Kata's principles into Demonsbane, a devastating strike, but it requires immense skill to use properly. The secret techniques of Possessing Spirit allow one to speed up their heartbeat to extreme levels to improve their physical performance, while Fallen Demon allows one to forcefully slow down perception of time, but both of these techniques can damage the user.
-275.Possessing Spirit,3.1
+273. Kaiwan Style, 5.2
+#Kengan Ashura - You are an apprentice in the Kaiwan Style, an assassination martial art that has roots in multiple martial arts, mainly in Karate. Practice of it requires knowledge of the nervous system, pressure points, and Qigong. Although simplistic from the outside, this martial art focuses on direct strikes perfected with timing as well as great control over the body. The main move is Devil Lance, which is a direct spear-like strike that possesses great power but requires superhuman conditioning to use properly. Skilled enough users can use "Motionless" to predict the next moves of their opponents and strike their open spots.
+274. The Niko Style, 6.1
+#Kengan Ashura - You are an apprentice in the Niko Style. A compilation of various "Katas" that require great control of one's body and a lot of skill and practice. The Adamantine Kata focuses on tightening and bracing one's muscles to deliver powerful blows and withstand attacks. The Flame Kata focuses on dodging, footwork, and agility. The Redirection Kata focuses on shifting and parrying the blows of other opponents. The Water Kata focuses on binds and holds. One can combine all 4 Kata principles into Demonsbane, a devastating strike, but it requires immense skill to use properly. The secret techniques of Possessing Spirit allow one to speed up their heartbeat to extreme levels to improve their physical performance, while Fallen Demon allows one to forcefully slow down perception of time, but both of these techniques can damage the user.
+275. Possessing Spirit, 3.1
 #Kengan Ashura - Otherwise referred to as "Advance" allows one to speed up their heartbeat and blood flow to massively increase their performance, but can cause difficulty in controlling one's Bloodlust, which can be trained. First Gear increases one's physical performance and makes it harder to control themselves. Second Gear further increases physical performance, but induces bloodlust in the user and lowers their self-control. Third Gear increases their heartbeat and blood flow to inhuman levels, making one appear to be almost possessed by a demon, massively amplifying their physical performance and their bloodlust while suppressing their sense of pain, but it is likely to cause permanent damage without intervention. The drawbacks of this technique are that it can damage the user's heart, veins, and other organs due to the immense strain placed on them and the inhuman blood flow.
-276.Kaolan Style,4.7
-#Kengan Ashura - You are an apprentice in the Kaolan Style. An all-rounder striking technique that combines aspects of both Muay Thai and Boxing, invented by the genius boxer Kaolan Wongsavat. This style focuses on adaptability, power, and speed to overpower opponents and overwhelm them with quick strikes while being able to respond to most moves. The standout move of this style is 'Flash' which focuses on throwing a hail of flicker jabs at great speeds in a single breath to overwhelm opponents. And its most powerful move is "God Blow", a straight punch thrown at incredible speeds with similar principle that is so fast it can hurt the users arm if thrown improperly.
-277.Lingshu Chin Na,3.0
-#Kengan Ashura - You are a practitioner of the Lingsu Chin Na, a special Chinese martial arts style based around striking the acupoints of the opponent to deliver debilitating blows without the need for greater strength. Using knowledge of the human body, the user lands quick and precise finger jabs towards the acupoints to debilitate the target with each strike, making it incredibly effective and deadly when used properly. But the further a target's biology deviates from human biology, the harder the martial art will be to use without studying.
-278.Kujin Style,2.7
-#Kengan Ashura - The Kujin style is a martial arts style developed in Japan to counter heavily armored or lumbering large opponents. The main technique of this style is based around throws, sweeps, and trips to get the opponent to the ground and then finish them off while they are on the ground with powerful blows. But may struggle against more traditional martial arts.
-279.Martial Foresight,4.1
+276. Kaolan Style, 4.7
+#Kengan Ashura - You are an apprentice in the Kaolan Style. An all-rounder striking technique that combines aspects of both Muay Thai and Boxing, invented by the genius boxer Kaolan Wongsavat. This style focuses on adaptability, power, and speed to overpower opponents and overwhelm them with quick strikes while being able to respond to most moves. The standout move of this style is 'Flash' which focuses on throwing a hail of flicker jabs at great speeds in a single breath to overwhelm opponents. And its most powerful move is "God Blow", a straight punch thrown at incredible speeds with similar principle that is so fast it can hurt the user's arm if thrown improperly.
+277. Lingshu Chin Na, 3.0
+#Kengan Ashura - You are a practitioner of the Lingshu Chin Na, a special Chinese martial arts style based around striking the acupoints of the opponent to deliver debilitating blows without the need for greater strength. Using knowledge of the human body, the user lands quick and precise finger jabs towards the acupoints to debilitate the target with each strike, making it incredibly effective and deadly when used properly. But the further a target's biology deviates from human biology, the harder the martial art will be to use without studying.
+278. Kujin Style, 2.7
+#Kengan Ashura - The Kujin style is a martial arts style developed in Japan to counter heavily armored or lumbering large opponents. The main technique of this style is based around throws, sweeps, and trips to get the opponent to the ground and then finish them off while they are on the ground with powerful blows. But it may struggle against more traditional martial arts.
+279. Martial Foresight, 4.1
 #Kengan Ashura - The Foresight is a technique developed by skilled fighters. It is a skill that allows one to predict a target's moves to dodge and counter them through quick analysis and instinct. Your Foresight is quite basic, and will require actual fights to train and develop.
-280.Novice Arms Mastery,2.9
-#You are able to handle all conventional weapons, ranging from knives to swords to axes to polearms to guns to bows to even chained weapons and clubs with basic proficiency, enough to have some familiarity and know how it's used.
-281.Intermediate Arms Mastery,3.9
+280. Novice Arms Mastery, 2.9
+#You are able to handle all conventional weapons, ranging from knives to swords to axes to polearms to guns to bows to even chained weapons and clubs with basic proficiency, enough to have some familiarity and know how they're used.
+281. Intermediate Arms Mastery, 3.9
 #You are able to handle all conventional weapons, ranging from knives to swords to axes to polearms to guns to bows to even chained weapons and clubs with notable proficiency, enough to match a general practitioner of the weapon and wield them effectively.
-282.Adept Arms Mastery,4.9
+282. Adept Arms Mastery, 4.9
 #You are able to handle all conventional weapons, ranging from knives to swords to axes to polearms to guns to bows to even chained weapons and clubs with great skill, enough to match most dedicated practitioners in skill.
-283.Expert Arms Mastery,5.9
-#You are able to handle all conventional weapons, ranging from knives to swords to axes to polearms to guns to bows to even chained weapons and clubs with incredible skill enough to match real experts who have specialize in those weapons.
-284.Master Arms Mastery,6.9
-#You have mastery over all conventional and non-conventional weapons, ranging from knives, billhooks, boomerangs, swords, whips, etc. Any weapon you lay your hands on, you can use as if you have been using it all your life, and you can easily recognize and dissect other Weapon Arts you may witness. Mastery over Weapons in general gives you incredible martial prowess. 
-285.Novice Total Concentration Breathing,2.4
-Demon Slayer - You are a novice of the Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, giving you a superhuman physique as long as you maintain the breathing. As a novice, you only have the know-how to perform the very basics of the technique. But it can be improved with practice.
-286.Intermediate Total Concentration Breathing,3.6
-Demon Slayer - You are learned in the way of the Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, giving you a superhuman physique as long as you maintain the breathing. As an intermediate, you can perform the technique well enough to actively maintain it during combat. But it can be improved with practice.
-287.Adept Total Concentration Breathing,4.4
-Demon Slayer - You are an adept in the way of the Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, giving you a superhuman physique as long as you maintain the breathing. As an adept, you can easily maintain the breathing technique during a fight without additional strain and even use maintain it during daily life as long as you are not exhausted or excessively distracted. You can also use this technique to stop your own bleeding and increase your recovery speed.
-288.Expert Total Concentration Breathing,5.3
-Demon Slayer - You are an expert in the way of the Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, allowing the user to exert superhuman physical performance. As an Expert on par with a Hashira, you have achieved Total Concentration Breathing - Constant, making it so that you maintain this breathing technique even when sleeping. In addition, you can use this breathing technique to forcefully close wounds, expel poison, and speed up your recovery.
-289.Pre-Initiative,5.4
-#Kengan Ashura - Pre-Initiative is a more advanced version of a regular fighter's foresight; it is the ability to know an enemy's move before they even use it and counter it before they even throw it. This is achieved through extensive familiarity with martial arts and analyzing the opponent's fighting style. Although it requires quite a lot of training and sparring to master, as well as familiarity with a lot of different fighting styles, a master of Pre-Initiative can seem almost Omniscient during a fight against a lesser opponent after exchanging only a few moves.
-290.Reduced Earth,3.4
+283. Expert Arms Mastery, 5.9
+#You are able to handle all conventional weapons, ranging from knives to swords to axes to polearms to guns to bows to even chained weapons and clubs with incredible skill enough to match real experts who have specialized in those weapons.
+284. Master Arms Mastery, 6.9
+#You have mastery over all conventional and non-conventional weapons, ranging from knives, billhooks, boomerangs, swords, whips, etc. Any weapon you lay your hands on, you can use as if you have been using it all your life, and you can easily recognize and dissect other Weapon Arts you may witness. Mastery over Weapons in general gives you incredible martial prowess.
+285. Novice Total Concentration Breathing, 2.4
+#Demon Slayer - You are a novice of the Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, giving you a superhuman physique as long as you maintain the breathing. As a novice, you only have the know-how to perform the very basics of the technique. But it can be improved with practice.
+286. Intermediate Total Concentration Breathing, 3.6
+#Demon Slayer - You are learned in the way of the Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, giving you a superhuman physique as long as you maintain the breathing. As an intermediate, you can perform the technique well enough to actively maintain it during combat. But it can be improved with practice.
+287. Adept Total Concentration Breathing, 4.4
+#Demon Slayer - You are an adept in the way of the Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, giving you a superhuman physique as long as you maintain the breathing. As an adept, you can easily maintain the breathing technique during a fight without additional strain and even use maintain it during daily life as long as you are not exhausted or excessively distracted. You can also use this technique to stop your own bleeding and increase your recovery speed.
+288. Expert Total Concentration Breathing, 5.3
+#Demon Slayer - You are an expert in the way of the Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, allowing the user to exert superhuman physical performance. As an Expert on par with a Hashira, you have achieved Total Concentration Breathing - Constant, making it so that you maintain this breathing technique even when sleeping. In addition, you can use this breathing technique to forcefully close wounds, expel poison, and speed up your recovery.
+289. Pre-Initiative, 5.4
+#Kengan Ashura - Pre-Initiative is a more advanced version of a regular fighter's foresight; it is the ability to know an enemy's move before they even use it and counter it before they even throw it. This is achieved through extensive familiarity with martial arts and analyzing the opponent's fighting style. Although it requires quite a lot of training and sparring to master, as well as familiarity with a lot of different fighting styles, a master of Pre-Initiative can seem almost omniscient during a fight against a lesser opponent after exchanging only a few moves.
+290. Reduced Earth, 3.4
 #Fate - Reduced earth is a special movement technique that allows the user to cover a short distance with a single extremely fast movement through a mix of practiced breathing, footwork, and exertion. But this technique is quite exhausting to use.
-291.Ryu's Shotokan,5.7
+291. Ryu's Shotokan, 5.7
 #Street Fighter - You are a practitioner of the Shotokan, a school of special Karate created by Ryu. This school of martial arts focuses on direct, powerful strikes with a mix of kicks and punches, mixing aggression and defense. With enough practice, one may be able to tap into the [Kyoi no Hado] and harness Ki to enhance the power of their blows, perform special techniques, and use the Hadoken.
-292.Akuma's Shotokan,6.2
-#Street Fighter - You are a practitioner of the Shotokan, a school of special Karate created by Akuma. This school of martial arts focuses on direct, powerful strikes with a mix of kicks and punches, focusing on brutal aggression and offense. With enough practice, one may be able to tap into the [Satsui no Hado] and harness raw killing as Ki to enhance their body, imbue Ki into their strikes, transform their inner energy into dark flame like Ki, use the Gohadoken and take on a more demonic form to further increase their powers, but overuse without control can lead to the user losing control of themselves and turning into a demon. One needs to practice great skill and control to not lose themselves and master it.
-293.The Shotokan,6.3
-#Street Fighter - You are a practitioner of the Shotokan, a school of special Karate created by Goutetsu. This school of martial arts focuses on direct, powerful strikes with a mix of kicks and punches, but the real heart of the martial arts is the Satsui and the Kyoi no Hado, symbolizing Dark and Light. As one practices this martial art, they may be able to awaken and practice one of the Hado to tap into the full power of this martial art and be able to reinforce their strikes with Ki and release energy waves to supplement their fighting style. 
-294.Master Total Concentration Breathing,6.1
-Demon Slayer - You have completely mastered Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, giving you exceptional physical performance and allowing you to use your body to its utmost potential. Having mastered the Technique, you can maintain this style as easily as regular breathing. In addition, your mastery means that as long as you maintain the breathing, your recovery speeds are sped up.
-295.Dapping,0.2
-#You are a master at dapping up people effectively, whether it's judging dap up distance, or producing a satisfying crispy dap regardless of the other parties skill or constition.
-296.Boggarts Boiling Brilliance,1.4
-#Elden Ring - You have learned the art of boiling some mean crab, prawn, and crustations in general with great skill on the level of the great Big Boggart. While your crab might be the magical ones from the Lands Between, it will taste spectacular nonetheless.
-297.Hacking,2.5
-#You are skilled at leveraging your skills to get into networks and get past digitized and cyber defenses.
-298.Crying,0.5
+292. Akuma's Shotokan, 6.2
+#Street Fighter - You are a practitioner of the Shotokan, a school of special Karate created by Akuma. This school of martial arts focuses on direct, powerful strikes with a mix of kicks and punches, focusing on brutal aggression and offense. With enough practice, one may be able to tap into the [Satsui no Hado] and harness raw killing intent as Ki to enhance their body, imbue Ki into their strikes, transform their inner energy into dark flame-like Ki, use the Gohadoken and take on a more demonic form to further increase their powers, but overuse without control can lead to the user losing control of themselves and turning into a demon. One needs to practice great skill and control to not lose themselves and master it.
+293. The Shotokan, 6.3
+#Street Fighter - You are a practitioner of the Shotokan, a school of special Karate created by Goutetsu. This school of martial arts focuses on direct, powerful strikes with a mix of kicks and punches, but the real heart of the martial arts is the Satsui and the Kyoi no Hado, symbolizing Dark and Light. As one practices this martial art, they may be able to awaken and practice one of the Hado to tap into the full power of this martial art and be able to reinforce their strikes with Ki and release energy waves to supplement their fighting style.
+294. Master Total Concentration Breathing, 6.1
+#Demon Slayer - You have completely mastered Total Concentration Breathing technique, a specialized breathing technique that allows you to increase the concentration of oxygen in your blood and activate your muscles better, giving you exceptional physical performance and allowing you to use your body to its utmost potential. Having mastered the Technique, you can maintain this style as easily as regular breathing. In addition, your mastery means that as long as you maintain the breathing, your recovery speeds are sped up.
+295. Dapping, 0.2
+#You are a master at dapping up people effectively, whether it's judging dap up distance, or producing a satisfying crispy dap regardless of the other party's skill or constitution.
+296. Boggart's Boiling Brilliance, 1.4
+#Elden Ring - You have learned the art of boiling some mean crab, prawn, and crustaceans in general with great skill on the level of the great Big Boggart. While your crab might be the magical ones from the Lands Between, it will taste spectacular nonetheless.
+297. Hacking, 2.5
+#You are skilled at leveraging your skills to get into networks and get past digital and cyber defenses.
+298. Crying, 0.5
 #You know how to cry at will, and it is very convincing too.
-299.Judging,2.7
+299. Judging, 2.7
 #You are very skilled in judging and figuring out the morality of the people you encounter, as well as spotting ill intent.
-300.Commerce,2.5
+300. Commerce, 2.5
 #You are very skilled in haggling and figuring out monetary values and getting a good price for everything.
-301.Tax Evasion,1.0
+301. Tax Evasion, 1.0
 #You are a master of tax evasion. If you desire it, the government will not see a particle of your money more than you want them to. Knowing the ins and outs of money laundering, obfuscating, etc.
-302.Kidnapping,1.8
+302. Kidnapping, 1.8
 #You are very skilled at kidnapping targets, allowing you to plan for such occasions with great skill and finesse, and execute them with practiced moves.
