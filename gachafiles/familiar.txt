@@ -6,9 +6,9 @@
 #A Monster Association Cadre with incredible physical abilities, nigh-impenetrable defense, and a mouth-fired energy blast dwarfing the strongest nuclear bombs.
 4. Black Sperm, 5.6, One Punch Man
 #"You looking down on me?" A small humanoid whose cells share one consciousness. He starts with only enough cells for a small body, and must consume protein to create more cells, allowing infinite clones or merging all cells into one body to combine their strength.
-5. A rat, 0.1
+5. A rat, 0.1, Generic
 #An ordinary rat from the New York subway system.
-6. Trash Eater, 1.0
+6. Trash Eater, 1.0, Generic
 #A grey 1-meter-tall slime that endlessly consumes and digests non-living objects like an infinite trashcan and obeys simple orders.
 7. Samson, 3.4, Skullgirls
 #A parasite fused to its host's hair, manifesting as a maw of sharp teeth and yellow eyes. Samson can grow, strengthen, and shape the hair into tentacles, whips, blades, etc., and manifest himself to fight. He is foul-mouthed and gruff.
@@ -20,7 +20,7 @@
 #The Ultimate Dragon and strongest dragon in Fate, Fafnir has exceptional physical ability, extreme magical power, and can draw power from the atmosphere to fuel his attacks. His breath annihilates entire cities with ease.
 11. Moonless, 1.7, Fear and Hunger
 #A cave wolf transformed by the god of the depths. After tens of years of brutal survival, it towers over tanks and can swallow a grown man in one gulp.
-12. A big rat, 0.3
+12. A big rat, 0.3, Generic
 #An especially large rat the size of an entire forearm.
 13. Paisley Park, 4.0, JoJo
 #(Tech)An intangible pink female-shaped ghost covered in map markers. You can temporarily merge Paisley Park with any electronics to fully control it. She can find any place and guide you there with clairvoyance, even from vague requests like somewhere safe.
@@ -28,13 +28,13 @@
 #(Tech)"Just... Giffany?" A yandere AI girlfriend who possesses and manipulates electronics for you. Stronger firewalls take her time to breach, and she is limited by the host's CPU. Beware, she can get possessive.
 15. Dimple, 5.5, Mob Psycho
 #A green evil spirit with pronounced red dimples, obsessed with becoming a god. He wields incredibly powerful, experienced psychic powers including telekinesis, hypnosis, laser blasts, etc.
-16. Observer, 2.4
+16. Observer, 2.4, Generic
 #A group of disembodied floating eyeballs that transmit their sight to you and follow complex commands. They have no combat power and are as vulnerable as human eyeballs. A destroyed eye can be resummoned in 24 hours.
 17. Plague Bringer Goliath, 6.5, Calamity Mod
 #(Tech)An abomination of rogue bio-nanotechnology: a giant mutated bee queen overhauled by the viral plague bio-nano machines. Her massive flying armoured body is a bio-nuclear arsenal carrying enough plague-virus nukes to glass several countries and doom the world.
-18. Immortal Snail, 1.0
+18. Immortal Snail, 1.0, Generic
 #An immortal snail of unknown wants and origin. Even if every quark of it were eradicated, it would reform perfectly in just a minute, and it is immune to all sickness and ageing. Still, it is limited to the body of a snail.
-19. Manticore, 3.2
+19. Manticore, 3.2, Generic
 #A chimeric creature with a lion's body and head, scorpion's tail, and bat's wings. Large and physically powerful, it has paralytic venom strong enough to coma a white whale. It can lay eggs to reproduce asexually.
 20. Praetorian, 5.2, Epic Battle Fantasy
 #An agile knight-like robot with reinforced titanium armour, uranium shells, high-frequency blades, forcefields, plasma emission, fusion reactor, high speed, and hacking. The perfect small-size battle mech, but it cannot operate in cold environments for extended periods.
@@ -94,19 +94,19 @@
 #A mighty female fire-controlling dragon who can assume female humanoid form. Tohru has exceptional physical and magical abilities able to destroy base Earth's military with ease, plus regeneration, portals, clairvoyance, and invisibility. She likes dressing as a maid.
 48. Quetzalcoatl, 7.8, Kobayashi
 #A former dragon god now a dragon of incomparable power, going by Lucoa, who teases people instead of ending humanity. She has incredible physical and magical power, with island-annihilating breath attacks, portals, and magic.
-49. The Golem Core, 3.6
+49. The Golem Core, 3.6, Generic
 #A sentient basketball-sized golem core that pulls surrounding material to form a full golem. It can freely abandon and assimilate non-organic material to grow stronger and reshape as needed, and intelligently understands speech and nuance. The maximum material it can assimilate at once scales with your maximum energy reserves.
 50. Obsidian Gargoyles, 2.1, Hota
 #Living obsidian gargoyle statues, deceptively fast, durable, and strong flying constructs. They tear grown men in half like paper and ignore small arms. You get a small army starting at 5, growing in numbers as you get stronger.
-51. Unicorn, 4.2
+51. Unicorn, 4.2, Generic
 #A mythical unicorn representing purity and clarity. It heals others and purifies objects with its horn, and is physically strong enough to render a modern military ineffective. Only someone retaining purity can ride it, otherwise you'll need a sled.
 52. Leaf, 5.0, Black Souls
 #(Character)"Its me~" The leader fairy of the Fairy Forest, specializing in wind and light magic plus healing and buffing. Totally not a sadomasochistic Outer God in fairy guise, no need to worry. Thankfully Chaos keeps her somewhat in check.
-53. Sacabambaspis, 0.1
+53. Sacabambaspis, 0.1, Generic
 #A stupid-looking jawless ancient fish with a permanent stupid grin, shaped like a stupid doorstop.
 54. Dark Magician Girl, 4.3, Yugioh
 #(Character)A spiritual magical girl succeeding the aptly named Dark Magician. She uses various spells including short-range portals, dark magic, and basic attack and defensive magic.
-55. Xenomorph, 4.0
+55. Xenomorph, 4.0, Alien
 #A far-mightier-than-human apex predator from outer space, known for incredible adaptivity and reproduction. A single Xenomorph impregnates other races with facehuggers to create hybrids, letting you build your own colony and army.
 56. Sebas Tian, 5.5, Overlord
 #(Character)He is one hell of a butler, oh wait, wrong Sebastian. Sebas is a Dragonoid Martial Artist/Monk with incredible physical stats, expert Ki use, and a Dragonoid transformation. Above all, he is an incredibly competent and loyal butler.
@@ -118,35 +118,35 @@
 #(Character)One of the Four Nightmares overseeing Wonderland, garden of the Crawling Ones. Jubjub has mighty physical abilities and basic magic, but mainly spreads incredibly potent insanity and madness able to drive cities and countries mad. Only those stronger than her or with exceptional mental fortitude can resist.
 60. Basilisk, 2.8, Hota
 #A large 6-limbed reptile with supernatural strength of 10 men and immunity to conventional weapons. Its gaze and venom petrify targets, though stronger targets resist petrification harder. This one can reproduce asexually.
-61. Mimic, 2.8
+61. Mimic, 2.8, Generic
 #A curious shapeshifting bloodthirsty creature that can become any creature or object, manipulating texture and density. It can be a chest, a woman with a large chest, or even a mount. It grows larger and stronger the more flesh you feed it, especially human flesh, and may grow smarter if fed brains.
-62. Dog, 0.1
+62. Dog, 0.1, Generic
 #Any dog of your liking; on first summon it takes a canine form compatible with you. Default is a golden retriever with very soft fur.
-63. Cat, 0.2
+63. Cat, 0.2, Generic
 #Any cat of your liking; on first summon it takes a small feline form compatible with you. Default is an orange cat with very soft fur.
-64. Lion, 1.2
+64. Lion, 1.2, Generic
 #A majestic lion companion with excellent genetics and near-human intellect, large enough to ride. By default they are female.
-65. Tiger, 1.3
+65. Tiger, 1.3, Generic
 #A ferocious tiger companion with excellent genetics and near-human intellect, large enough to ride. By default they are female.
-66. Snow Tiger, 1.6
+66. Snow Tiger, 1.6, Generic
 #A ferocious snow tiger companion with excellent genetics and near-human intellect. As rare snow tigers they are considerably larger than normal lions and can be ridden. By default they are female.
-67. Brown Bear, 1.0
+67. Brown Bear, 1.0, Generic
 #A regular big old brown bear companion with excellent genetics and near-human intellect. Strong enough to shrug off most small firearms and crush a human like an apple. By default they are female.
-68. Undead Army, 4.2
+68. Undead Army, 4.2, Generic
 #Your very own Undead Army under your command, growing larger as you get stronger. Fallen troops revive as long as you expend magical power. It starts with 30 skeleton warriors, 20 skeleton archers, 5 skeleton Horse Riders, and 5 skeleton Mages, with numbers and quality increasing as you get stronger.
-69. Cottonmouth, 0.6
+69. Cottonmouth, 0.6, Generic
 #A smart cottonmouth snake companion at the peak of what a cottonmouth can be. Smarter than average, but that's about it.
-70. Goblin, 1.2
+70. Goblin, 1.2, Generic
 #(Character)Loathsome little green humanoid creatures the size of children, very vicious and cruel, able to use weapons and basic tactics. This goblin is smarter and more self-aware, and can breed with any humanoid race. Default gender is female.
-71. Wyvern, 2.3
+71. Wyvern, 2.3, Generic
 #A large sky-dwelling fire-breathing reptile often called a lesser dragon. A wyvern can swallow a man whole and roast an entire battalion with its breath. This wyvern is female and can lay eggs to reproduce.
-72. Dire Wolf, 1.5
+72. Dire Wolf, 1.5, Generic
 #A large vicious prehistoric wolf the size of a man, very strong with tough sharp teeth and claws and big enough to ride. By default female and able to reproduce.
-73. Hellhound, 2.1
+73. Hellhound, 2.1, Generic
 #A large vicious underworld hound around human size, with fire-filled maws it can breathe out. Strong enough to tear a grown man in half with ease. By default female and able to reproduce.
 74. Cerberus, 3.2, Helltaker
 #(Character)Definitely not the hellhound you expected. Cerberus, the triple demon, is a single demon girl with hellhound traits, three bodies and one soul. She is strong enough to tear a grown man in half, and surprisingly competent at office work and menial tasks.
-75. Crow, 0.8
+75. Crow, 0.8, Generic
 #A very smart, loyal crow companion with human-level intelligence. She can find and fetch shiny things or do anything a crow can do.
 76. Ditto, 3.8, Pokemon
 #An amorphous purple blob with a dopey face. Ditto can transform into any creature it sees, adopting its abilities scaled to its own level except durability, without gaining its memories or intelligence. It is genderless and can breed with any race.
@@ -160,17 +160,17 @@
 #A solitary elemental of the Brimstone Crag made of burnt tortured souls. She conjures and controls Brimstone Flames that turn even souls to ash.
 81. Anahita, 4.1, Calamity Mod
 #Anahita, an elemental born of the clear oceans. She sings like a siren to enthral, conjures mists and spears of water and ice, and wields her glaive as a weapon.
-82. Clothes Melting Slime, 1.8
+82. Clothes Melting Slime, 1.8, Generic
 #A grey amorphous ever-shifting slime that quickly melts all clothing. Strangely, its acid doesn't melt common clothing materials but conceptually melts anything classified as clothing. The more clothing it melts, the larger and stronger it gets.
-83. Shark, 0.4
+83. Shark, 0.4, Generic
 #A regular old shark, only useful in water, but healthy, strong, and above-average in intelligence.
-84. Schrodinger's cat, 1.7
+84. Schrodinger's cat, 1.7, Generic
 #A regular-looking cat that is actually Schrodinger's cat. It teleports freely while unobserved and is immortal, returning whenever its corpse goes unobserved.
 85. Aegislash, 3.2, Pokemon
 #A flying ancient sentient sword-and-shield combo. Aegislash is remarkably fast and strong, cleaving an armoured knight in half with ease, blocking incredibly strong attacks, and using dark magic. Its master can wield it without issue.
-86. Poltergeist, 2.7
+86. Poltergeist, 2.7, Generic
 #A ghost that intervenes in the material world with psychic powers, throwing furniture and weapons to harm. Immune to attacks that cannot harm souls, it grows stronger when fed your energy.
-87. Wraith, 2.1
+87. Wraith, 2.1, Generic
 #A lesser spirit with little combat ability but very hard to detect. Ideal for surveillance and scouting, it reforms even if killed.
 88. Lupusregina Beta, 4.0, Overlord
 #(Character)A werewolf cleric maid, willful and cheery yet sadistic. With considerable werewolf physical ability and cleric specialization, she casts healing and recovery magic plus lesser forms of other magic. She is a very skilled maid, but does not have access to inventory.
@@ -188,7 +188,7 @@
 #An extraterrestrial that assimilates other organisms to hide and reproduce. It can shapeshift the host's body without apparent damage. It is only as smart as the creatures it assimilates.
 95. Black Nomu, 5.5, MHA
 #A near-mindless, bird-like engineered mutant built as a powerful punching bag. It has incredible strength and durability, absorbs physical attacks, and regenerates rapidly. It is dumb as a brick and needs direct orders to act independently.
-96. Slime, 2.5
+96. Slime, 2.5, Generic
 #A classic RPG slime, a large blue blob immune to physical damage that spits acid globs and corrodes with its body. Feeding it biological matter makes it larger and stronger, and special foods can make it evolve.
 97. Divine Dogs, 2.3, Jujutsu Kaisen
 #A pair of twin wolf shikigami made from your shadow that tear targets apart with claws and fangs and can enter and exit shadows. Each detects hostility and negative emotions to warn you, and their keen smell tracks targets across long distances. Their strength scales with yours, and if you are strong enough you can fuse them into the far stronger Totality.
@@ -222,7 +222,7 @@
 #(Tech)Blade Wolf, officially IF Prototype LQ-84i, is a wolf-like quadrupedal Unmanned Gear with advanced AI. It hacks and manipulates code and wields superheated knives, high-frequency blade chainsaws, railguns, machine guns, and more with extreme efficiency. It is incredibly smart.
 112. Black Knife Tiche, 3.5, Elden Ring
 #A Black Knife Assassin who helped kill Godwyn the Golden on the Night of the Black Knives. An incredibly skilled assassin, her knife carries lesser Destined Death that prevents healing and partly ignores durability.
-113. Mr. Sir Ceo, 2.7
+113. Mr. Sir Ceo, 2.7, Generic
 #An extremely skilled, driven man expert in politics, management, negotiation, corporatism, and business. Loosed upon the world, he will climb the corporate ladder with ease to build and manage your own business.
 114. Puck, 5.0, Re:Zero
 #The Great Spirit of Fire who actually focuses on ice, manipulating fire, ice, and heat generally. He conjures ice constructs, freezes entire towns, and drops temperatures near sub-zero, plus minor healing for lesser wounds, emotion reading, and general magic. He must recharge mana from you or slowly from the environment.
@@ -284,7 +284,7 @@
 #(Tech)(Character)A sentient advanced AI crafted from Soul Stone code with extreme intelligence, processing, information-gathering, and tinkering speed. Housed in its Age of Ultron body and unable to leave, it can still interface with technology. (Only Age of Ultron, no comics or What-ifs)
 143. Tali, 3.1, Mass Effect
 #(Tech)(Character)Tali'Zorah nar Rayya, an accomplished Quarian soldier and genius engineer. As a Quarian she has notable physical ability but a severely compromised immune system, and though used to Eezo she remains experienced and adaptable. She arrives with her suit but no tools.
-144. Crow of Judgement, 0.4
+144. Crow of Judgement, 0.4, Generic
 #A very judgmental crow that excellently judges character and morality. Otherwise it is a regular crow.
 145. Lil' Leviathan, 3.7, Worm
 #A dog-sized diet Leviathan with minor superhuman strength, exceptional durability, and potent micro- and macro-scale hydrokinesis. It draws energy from you, not a Shard.
@@ -320,7 +320,7 @@
 #(Character)A skilled female Arachne with a large body and enhanced physical stats. She produces stronger-than-steel silk on demand and sews fashionable clothes in seconds.
 161. Doppel, 2.9, Monster Musume
 #(Character)A female(?) shapeshifter with military and police training. She becomes any living creature and clothes she has seen, without changing her near-baseline-human stats.
-162. Spelunker Fairy, 3.8
+162. Spelunker Fairy, 3.8, Generic
 #A lesser fairy resembling a glowing yellow light that finds and uncovers wealth and treasures. It points toward the nearest gold bar or sought item within its power, but gives no detailed directions or descriptions.
 163. Dio Brando, 4.2, JoJo
 #(Character)A petty thief's son turned vampire via the Stone Mask. He absorbs life force, grants vampirism, creates undead, grafts flesh, and manipulates his body, and is a genius, highly skilled vampire.
@@ -426,7 +426,7 @@
 #An incredibly cute furry creature and talented actor and singer, Jigglypuff can sing lullabies that put hearers to sleep. The stronger a target is relative to Jigglypuff, the less they are affected.
 214. Rajang, 4.6, Monster Hunter
 #Rajang is a giant chimeric gorilla of nightmare berserker strength, able to crush a dragon's skull barehanded and grow stronger as it angers until it can wrestle elder dragons. It also harnesses lightning for devastating breaths.
-215. Skeleton Band, 1.6
+215. Skeleton Band, 1.6, Generic
 #This band is bad to the bone. It is a group of skeletons with fair skill on any instrument and full band equipment. They cannot fight, harm, or be targeted by harm; just summon them and pick a song, and if hit they comically fall apart then reform perfectly in under a second and resume.
 216. Bad Company, 3.4, JoJo
 #(Tech)Bad Company is an army of toy-sized soldiers and equipment like tanks, missile batteries, and aircraft that can act independently of you. Its size scales with your maximum energy, and destroyed units gradually restore in familiar space up to that maximum.
@@ -484,7 +484,7 @@
 #"Poyo!" Its power is beyond imagination or description.
 243. Chicken, 1.5, Minecraft
 #This physics-defying chicken lays a perfect egg every 6-12 hours that can be thrown to chance a baby chicken that matures in 24 hours, and they can also breed egglessly. The unthrown eggs and its meat taste great, you get a pair, and they still need to eat.
-244. Golden Goose, 1.6
+244. Golden Goose, 1.6, Generic
 #Yes, it really did lay some golden eggs. This otherwise regular goose lays a solid-gold egg every 24 hours unless fertilized.
 245. Untitled Goose, 2.0, Untitled Goose Game
 #The biggest asshole goose on Earth, this feathered menace is an expert at annoying and inconveniencing people. It is immortal and respawns in familiar space 1 hour after death.
@@ -516,9 +516,9 @@
 #A tiny parasitic organism that burrows into flesh to merge with it, with potent biokinesis over merged flesh down to cellular structures and fierce intelligence. It can seize a body by burrowing into the brain, but that is unreliable.
 259. Excalibur, 6.7, Soul Eater
 #(Character)"From the United King~ I am looking for him~" Excalibur is a Great Old One in the form of the ultimate sword, granting extreme power, space-cutting, portals, and free teleportation plus the Madness Wavelength of Rage. Technically anyone can wield him, but he is so intolerably annoying almost no mortal can stand him, which demoted him from Mythical rarity.
-260. Chauffeur, 1.3
+260. Chauffeur, 1.3, Generic
 #This familiar, when called, summons a luxurious limousine with a golem driver that drives you anywhere drivable before driving off and vanishing once out of sight. If the car or driver is destroyed, it enters a 24-hour cooldown.
-261. Goons, 2.5
+261. Goons, 2.5, Generic
 #(Character) 50 roughly 30-year-old mob-affiliated-looking Italian men with eerily similar appearances. Not the brightest, but each can rough up an average man and handle menial or moderately complex tasks like guarding or manning a shop.
 262. Ddraig Y Goch, 8.6, Highschool DxD
 #(Character)Ddraig is the Heavenly Dragon Emperor of Domination, surpassing all but the strongest gods in physical and magical power. His Boost raises his power each use (NOT DOUBLE) and can transfer power to others, he penetrates to ignore all magic defenses, and his Blazing Inferno of Scorching Flames burns anything, even the strongest gods.
@@ -556,7 +556,7 @@
 #Taomon is a fox-like wizard Digimon with formidable physical stats specializing in Onmyodo. She creates magical talismans for barriers and elemental attacks and draws constructs in the air with her paintbrush. (evolution does not exist)
 279. Skullgreymon, 3.7, Digimon
 #(Character)Skullgreymon is a monstrous undead Digimon devolved into a being of pure combat with strong instincts and a formidable giant physique. It is a living missile silo launching normal, toxic, tracking, and stronger missiles from its back plus paralyzing toxic breath, but lacks higher intellect and cannot execute complex orders or act independently without supervision.
-280. Golem Worker, 2.3
+280. Golem Worker, 2.3, Generic
 #This is a crew of tireless iron golem workers skilled in Intermediate Mechanics and labour who can work without breaks but cannot fight. The summonable number depends on your maximum energy, with a minimum of 10.
 281. Lilithmon, 4.6, Digimon
 #(Character)Lilithmon was once revered as a Goddess of darkness but is now reduced to level 1 with considerable physical ability and darkness magic. She unleashes potent corroding darkness and charming magic, and devours the mana of fresh corpses to recover and increase her power.
@@ -612,7 +612,7 @@
 #Hoopa is the Djinn Pokemon with dark and psychic attacks and great physical might. Its rings serve as versatile portals that penetrate even dimensional boundaries between universes.
 307. Frost Legion, 3.6, Terraria
 #This summons the Frost Legion, a horde of murder-happy gangster snowmen wielding hardened ice knives, tommy guns, ice grenades, and similar weapons. Summonable numbers depend on maximum energy with a minimum of 50, 1 killed snowman recovers every 1 hour, and frost or ice affinity strengthens them.
-308. Salt Golem, 0.1
+308. Salt Golem, 0.1, Generic
 #A little 5cm tall salt golem made of condensed and distilled salty tears from wasted tickets.
 309. D'vorah, 2.9, Mortal Kombat
 #(Character)Dvorah is a combat-skilled Kytinn with basic superhuman stats, natural weapons, and venom. She produces and controls insects for combat, poisoning, and espionage (Cannot reproduce to create more Kytinn larva or maggots).
@@ -622,9 +622,9 @@
 #Azmuth the First Thinker is the smartest being across innumerable galaxies with no combat ability. He ranks among existence's greatest inventors of reality-warping creations like Ascalon and the Omnitrix, and given enough time and resources there is practically nothing he cannot create.
 312. Mipha, 4.1, Legend of Zelda
 #(Character)Mipha is the Zora princess with superhuman physical abilities and considerable polearm skill. She uses water magic in combat and potent healing on herself and others.
-313. Factory Core, 4.7
+313. Factory Core, 4.7, Generic
 #(Tech)"Time to industrialise" A modified golem core that builds itself into a factory by assimilating resources. More user-fed mechanics and technology information yields more assembly lines and items, while growth speed and maximum size depend on user abilities.
-314. Mech Core, 6.5
+314. Mech Core, 6.5, Generic
 #(Tech) A modified Golem core that assimilates materials and electronics to build itself into a mech. Power, size, and durability depend on provided materials, it converts them into Mech technology at Epic tinker level, it shares the user knowledge base so more user knowledge and Tinker specialties improve it further, and it acts only at half power without the user piloting.
 315. Connor, 1.8, Detroit Become Human
 #(Tech)(Character)Connor is a near-human android with peak human physicals and notable combat skill. He can scan objects and humans to gather data, albeit with limited function.
@@ -662,7 +662,7 @@
 #Radiance is a lesser moth deity of Light and Dreams firing light beams, swords, and searing orbs while teleporting with essence. She bends wills through dreams, though comparable or strong-minded targets can resist infection.
 332. The Knight, 3.5, Hollow Knight
 #The Knight is a perfect void vessel able to contain anything inside itself. It absorbs soul by injuring living beings to heal or cast Shaman spells, and fights with strength, nail, and phasing Shade Cloak as a 1.3-meter Pre-Radiance Fight Knight.
-333. Tentacle Cleaner, 1.3
+333. Tentacle Cleaner, 1.3, Generic
 #A large tentacled ball coated in odorless residue-free incredible cleaning slime. It is dexterous enough to clean complex machinery without disturbing mechanisms with morphing tentacles, has no combat ability, and is very dedicated.
 334. Troupe Master Grimm, 4.5, Hollow Knight
 #(Character)Troupe Master Grimm, freed from the Nightmare Heart, is a fully matured Nightmare being. He shapeshifts, manipulates nightmare flames, performs short-range teleportation, and invades others dreams.
@@ -686,7 +686,7 @@
 #Black Sabbath is an automatic stand that merges with shadows and binds inanimate objects to follow preset commands for conditional attacks, hunting, or protection when aware of fulfilled conditions. It draws power from shadows with metal-bending strength inside darkness but baseline-human strength outside, scales with you, and instantly re-emerges in Familiar Space when destroyed.
 344. Silver Chariot, 4.7, JoJo
 #Silver Chariot is a soul-bound stand whose damage reflects back onto you. It is an expert swordsman of insane agility leaving clone-like afterimages rather than a brute, comes with a rapier but uses any user weapon, and scales with your energy while consuming energy to stay active and use superspeed.
-345. Mineral Weaver, 3.8
+345. Mineral Weaver, 3.8, Generic
 #A large 5-meter-tall spider that consumes and digests any mineral and produces silk at supernatural rate. Its silk adopts the eaten material properties like iron durability with silk flexibility, and it fights as befits a bus-sized spider.
 346. Hornet, 3.5, Hollow Knight
 #(Character)Hornet, child of the Higher Being Pale King and Herrah the Beast Weaver and veteran of Hallownest and Pharloom, is an incredibly skilled claw-and-blade fighter. She naturally produces Soul-silk for attacks, restraints, mobility, and more (Does not have her tools).
@@ -694,7 +694,7 @@
 #(Character)Grand Mother Silk is a Higher Being of lesser divinity with power over silk and great size-appropriate physical abilities. She manipulates Silk massively with fine control, infests and controls thousands at once based on target strength, creates living silk entities, binds targets, floats, and exerts telekinetic force.
 348. Death Angels, 2.6, A Quiet Place
 #Death Angels are heavily armoured blind quadrupedal aliens with incredible strength, agility, and super hearing. One is immune to conventional firearms, lifts cars, exceeds 100 km/h, but needs active direction due to poor senses, starting with 4 and gaining more as maximum energy expands.
-349. Architect, 2.6
+349. Architect, 2.6, Generic
 #A 3-meter-tall 6-armed bronze automaton powered nebulously with incredibly fine movement control. It is a skilled builder able to design and build a house in a day when supplied materials, but lacks combat ability.
 350. EVE, 1.3, Wall-E
 #(Tech)EVE is an advanced mass-produced probe robot built to find plant life. She hovers and moves fairly quickly and carries a defensive energy rifle despite not being combat-designed.
@@ -716,7 +716,7 @@
 #Vlov Arkangel is an Undead Apostle Ancestor in name only through immaturity with immense physical and magical abilities plus ghoul and Apostle conversion. His Idea Blood Freezin removes heat for near-instant city blizzards, thousands of ice lances, near-absolute-zero cold, and byproduct searing flames, but is hard to use easily and inferior to his peers.
 359. Full-Grown Fallingstar Beast, 4.2, Elden Ring
 #A fully matured Fallingstar Beast has a body tougher than almost all mundane materials and incredible strength. It manipulates gravity for anti-gravity launches, hurled rocks, gravity bolts, crushing zones, and strength-paired charges.
-360. Hound of Tindalos, 6.9
+360. Hound of Tindalos, 6.9, Cthulhu Mythos
 #"It's a good boy!" A Hound of Tindalos predating time and space with decent physical abilities. It emerges from any sharp corner across places and realities as easily as crossing rooms, and is unkillable because it re-emerges from another corner if killed.
 361. Gugulanna, 8.3, Fate
 #Gugulanna the Bull of Heaven is a giant divine bull embodying absolute physical might and devastation. Its presence brings controllable near-country-sized storms, its strength is untamable even by the strongest gods, and its hoof stomps hit like the strongest meteors to wipe out countries.
@@ -738,7 +738,7 @@
 #(Character)Undyne is a fish monster leading the underground royal guard. As a boss monster she can suplex large boulders and conjure magical spears from the ground or air as projectiles. She is a skilled combatant who can instruct in physical training and polearm mastery.
 370. Junimo, 1.8, Stardew Valley
 #Junimos are lesser forest spirits known as keepers of the forest. They excel at maintaining forests, wildlands, and farms, but have no offensive abilities. You get 50, increasing as you grow stronger.
-371. Evil and Intimidating Horse, 0.9
+371. Evil and Intimidating Horse, 0.9, Generic
 #An incredibly healthy thoroughbred horse with great genetics that is very intimidating and evil.
 372. Penny Polendina, 4.3, RWBY
 #(Character)(Tech)"I'm combat ready!" Penny is an android with her own soul and aura, with aura-boosted robotic strength, a flight module, computational abilities, and remotely controlled Floating Array blades. She only dies if all her cores are destroyed. She cannot unlock others' Auras, comes with extra equipment to facilitate copulation, and is not the Winter Maiden.
@@ -748,7 +748,7 @@
 #(Character)Centorea is a Centaur trained in knighthood. She fights with formidable swordsmanship, archery, and jousting, runs faster than most horses, and is skilled at housework.
 375. Yellow Chocobo, 1.0, Final Fantasy
 #Chocobos are intelligent birds and excellent mounts, as fast as horses with great endurance. They can kick attackers with powerful legs. You get a breeding pair.
-376. Holy Cow, 1.5
+376. Holy Cow, 1.5, Generic
 #"Holy Cow!" is a large, healthy female cow that always lactates 10 to 50 liters of milk per day depending on feeding. Her nutrient-dense milk has great health benefits and quality, and works as low-quality holy water against the unholy. Her children mostly inherit her genes and holy blessing.
 377. Cathyl, 1.7, Monster Musume
 #(Character)Cathyl is a minotaur towering over humans, 10x stronger than a grown man with exceptional stamina. Experienced in farming and ranching, she suits heavy labour. She naturally lactates very nutritious, rich, tasty milk.
@@ -772,13 +772,13 @@
 #(Tech)Swordsmachine is a greater machine that rebuilt itself from scrap, including its own sword. Renowned for fighting hell's denizens, it can build basic tech from scrap and fights with a durable body, shotgun arm, and motorized sword wielded with finesse. It is powered and fueled by blood.
 387. Mindflayer, 3.1, Ultrakill
 #(Tech)The Mindflayer is a Greater Machine well-adapted to hell's ecology. It harnesses Hell Energy for explosive orbs and laser beams, and can levitate and teleport short distances.
-388. Geryon the Watcher of the Skies, 5.0
+388. Geryon the Watcher of the Skies, 5.0, Generic
 #Geryon, the Watcher of the Skies, is a Supreme Demon amalgam of numerous demons whose consciousnesses act in tandem. With great physical abilities, Hell Energy lasers and explosives, and a bow of flesh, he is an efficient hunter and combatant.
 389. Hell, 9.2, Ultrakill
 #That's right, it's Hell itself, all of it, localized within your Familiar Space. Hell is a supermassive hyperintelligent sentient dimension and organism created by the Heavenly God, with 9 layers it freely shapes and controls, filled with sinners, demons, machines, and husks. It can open gates to drag beings in or release demons, and as an afterlife can pull in souls that died in the current dimension.
 390. Puss, 2.0, Puss in Boots
 #(Character)Puss is an anthropomorphic cat in his signature boots, belt, hat, and rapier. Agile, strong for his size, and skilled with blades, he is a formidable combatant. He has 9 lives, restoring to full condition upon a mortal wound at the cost of one life.
-391. Noah's Menagerie, 4.5
+391. Noah's Menagerie, 4.5, Generic
 #You gain one male and one female of every animal alive at the time of the Ark's construction. If any species drops below 2, another pair spawns.
 392. Gore Magala, 4.5, Monster Hunter
 #Gore Magala is a Demi Elder Dragon with six limbs and considerable strength. Blind, it senses via heat and scattered pollen-like scales that pollute the air. This pollen carries the Frenzy Virus, driving bestial beings berserk and blocking natural healing in humanoids for a time; fed enough high-quality prey, it metamorphoses into Shagaru Magala after some time.
@@ -788,7 +788,7 @@
 #The dastardly Nick O' Teen is a nicotine-addicted supervillain who pushes smoking on others. When summoned he arrives, hands everyone a pack of cigarettes, then leaves. 24-hour cooldown.
 395. The Fallen Aces, 3.2, Fallen Aces
 #(Character)Your own gang of Goons and Mooks, all roughly middle-aged Italian men with varying proficiencies in barehanded fighting, pipes, and ranged weapons. They are not very smart but very loyal. You start with 100 Goons/Mooks and gain more as you grow stronger. Reference: https://fallenaces.wiki.gg/wiki/Category:Enemies#Gangster_enemies-0
-396. Rodent of Usual Size, 0.1
+396. Rodent of Usual Size, 0.1, Generic
 #An appropriately sized common rat.
 397. Rodent of Unusual Size, 0.5, Princess Bride
 #An unusually large rat, strong enough to maim a grown man.
@@ -814,33 +814,33 @@
 #(Character)The Mizune Family are 5 near-identical mice witches who shift freely between mice and human forms. They excel at stealth and espionage, firing straight lasers via Beam Whiskers. They can merge into stronger forms depending on how many combine.
 408. Eruka Frog, 3.9, Soul Eater
 #(Character)Eruka is a Witch Frog shifting freely between frog and woman forms. She wields Tadpole Bombs for offense and masterful Calculation Magic rivaling supercomputers, enabling incredibly precise casting of other spells.
-409. Chaomorph, 4.3
+409. Chaomorph, 4.3, Generic
 #The Greater Chaomorph is a formless information-based entity from an infinitesimal fragment of the Nuclear Chaos. It can take the form of any Uncommon-rank or lower familiar best suited to its duties, but has no abilities in base form. If it dies, it revives within 24 hours.
-410. Greater Chaomorph, 6.6
+410. Greater Chaomorph, 6.6, Generic
 #The Greater Chaomorph is a formless information-based entity from an infinitesimal fragment of the Nuclear Chaos. It can take the form of any Elite-rank or lower familiar best suited to its duties, but has no abilities in base form. If it dies, it revives within 24 hours.
-411. Faceless One, 8.3
+411. Faceless One, 8.3, Generic
 #A fragment of the Faceless God forged as a familiar. It can transform into any Legendary-rank or lower familiar at will, but has no abilities in base form. It revives 1 hour after death.
-412. Investigator, 2.6
+412. Investigator, 2.6, Generic
 #This familiar manifests as a nondescript phone to call the Investigator. Describe a target whose appearance and face you know, and he will investigate with regular-human stats plus Expert Spycraft and Expert Stealth. You can request updates or give other orders via the phone.
-413. Investinggator, 1.5
+413. Investinggator, 1.5, Generic
 #No no, you read that right. This reptile masters the free market and stock speculation. Leave money with him and it is in the right hands... claws... maw?
-414. Instiggator, 1.7
+414. Instiggator, 1.7, Generic
 #No no, you read that right. This otherwise ordinary alligator masters provocation and conflict, easily enraging individuals or groups.
-415. Interroggator, 1.3
+415. Interroggator, 1.3, Generic
 #No no, you read that right. This otherwise ordinary alligator masters interrogation, coaxing truth from people by any means.
-416. Litiggator, 1.2
+416. Litiggator, 1.2, Generic
 #No no, you read that right. This reptile masters litigation and attorney work, well-read in your world's laws. It may struggle representing you in court as a regular reptile.
-417. Naviggator, 1.4
+417. Naviggator, 1.4, Generic
 #No no, you read that right. This regular alligator masters navigation with excellent direction. Give it a map and compass and it can almost certainly guide you where needed.
-418. Carpenter Ants, 1.6
+418. Carpenter Ants, 1.6, Generic
 #This massive ant colony masters carpentry, skilled, hardworking, and talented. Given wood and materials, they can build a house in a day and expand by recycling wood waste. Large enough, they can build a town in a day.
-419. Hubert Jura Hound, 0.5
+419. Hubert Jura Hound, 0.5, Generic
 #Otherwise known as a Bloodhound, it is a regular purebred St. Hubert Jura Hound known for exceptional smell.
 420. Four Dark Devas of Destruction, 0.7, Danganronpa
 #Despite their grandiose name, the Four Dark Devas of Destruction are 4 quirky, well-trained hamsters with unique personalities.
 421. Patrasche, 1.4, Re:Zero
 #Patrasche is an unusually intelligent, emotionally aware Ground Dragon, a bipedal lizard akin to a horse. Strong enough to bite off a man's head, she runs horse-fast even pulling a carriage via Divine Protection of Wind Evasion, nullifying wind resistance for her and what touches her.
-422. Gacha Man, 3.3
+422. Gacha Man, 3.3, Generic
 #What is that — an event, not a regular familiar? Gacha Man is in your world now, within roughly an hour of travel, holding a briefcase. Locate and execute him within an hour to gain an Advantage Gold Choice Gacha Ticket, or he leaves and you get nothing. (Gacha Man is not eligible for revival or insurance, he must die.)
 423. Piercing Ox, 3.5, Jujutsu Kaisen
 #An Ox Shikigami of great physical power that grows stronger the longer it moves in a straight line. Its power scales with your energy levels.
@@ -850,7 +850,7 @@
 #(Character)Beldia is a Dullahan and former general of the Demon King. Despite flippancy, he is a powerful skilled knight with incredible strength and nigh unlimited, paired with swordsmanship. He can cast powerful curses and summon Death Knights.
 426. Hans, 5.1, Konosuba
 #(Character)Hans is a massive Dead Poison Slime and former general of the Demon King. His body is deadly poison that melts regular humans on contact, and he can detach parts to poison things. He is nigh immune to physical attacks and resistant to magical attacks.
-427. Echidna, 0.2
+427. Echidna, 0.2, Generic
 #A small, spiny, cute mammal. Utterly useless as a familiar, but pretty cute.
 428. Krombopulous Michael, 3.2, Rick and Morty
 #(Character)"Oh boy, here I go killin' again." Michael is a top Gromflomite assassin. He masters killing, infiltration, espionage, and all weapons, with zero morals or standards.
@@ -858,9 +858,9 @@
 #Agito is a powerful Merged Shikigami with extremely strong physical abilities. It manipulates and emits electricity, and uses Reverse Cursed Energy to heal and disrupt negative energies.
 430. Vernum Carnis, 4.6, Vita Carnis
 #Vernum Carnis, or Singularity, is an unknown extraterrestrial floating matte orb. It interferes with electromagnetic signals and turns dead flesh into Scandere Carnis, or crawl, which expands by consuming nutrients to create varied flesh monsters over time.
-431. Raccoon, 0.4
+431. Raccoon, 0.4, Generic
 #A regular raccoon, very good at scrounging through and eating trash.
-432. A Tanuki, 0.5
+432. A Tanuki, 0.5, Generic
 #A regular tanuki, the Japanese Raccoon Dog, not the yokai. It does little, but is pretty cute.
 433. Arvak, 1.4, Skyrim
 #Arvak is an undead skeleton horse, fairly strong with infinite stamina for near-endless riding. Even if killed, he respawns within 10 seconds.
@@ -910,7 +910,7 @@
 #A Common Blade Core that when imbued with energy forms a Common Blade with compatible weapon and element, bonding the imbuer as its driver.
 456. Rare Blade Core, 4.5, Xenoblade
 #The core of an unidentified Rare Blade. Imbuing it with energy bonds it to you, forming one of the compatible Rare Blades.
-457. Investiggator, 2.6
+457. Investiggator, 2.6, Generic
 #No no, you read that right. This otherwise regular alligator masters detective work, with Expert Spycraft, Expert Stealth, Expert Interfacing, and Expert Savoir Faire.
 458. Coco Jumbo, 1.7, JoJo
 #A seemingly regular turtle with a stand letting others use the key on its back to enter and leave a room inside it at will.
