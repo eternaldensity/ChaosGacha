@@ -1,5 +1,5 @@
-1. Water Stream Crushing Rock, 5.9
-#One Punch Man - You are an apprentice in the legendary martial art created by S-Rank Hero Silverfang. You flow like water to defend and redirect enemy attacks, then strike like a raging river, and with enough training you counter an enemy's blow with double their power.
+1. Water Stream Crushing Rock, 5.9, One Punch Man
+#You are an apprentice in the legendary martial art created by S-Rank Hero Silverfang. You flow like water to defend and redirect enemy attacks, then strike like a raging river, and with enough training you counter an enemy's blow with double their power.
 2. Intermediate Cooking, 2.3
 #You are as skilled as a seasoned chef. You make complex dishes with little trouble, and most of your food tastes pretty good.
 3. Iaijutsu, 3.4
@@ -36,26 +36,26 @@
 #You know how to make decent magical and enchanted items. If you know fire magic, you turn a regular sword into a sword that lights itself on fire on command, and if you have the ability Invisibility, you probably make a cloak that suppresses your presence.
 19. Polar Channel Flow - Cellular Overdrive, 3.5
 #You have mastered the Pugilist skill of pushing every cell in your body to its absolute limits. You draw up every ounce of their energy to augment all your stats to their limits, but this places immense strain on your body and repeated use may cause permanent damage.
-20. All Life Eradication Fist, 8.4
-#One Punch Man - You know the pinnacle of all martial arts, fusing mastery of dozens of supernatural martial arts with knowledge granted by god. You manipulate the flow of cosmic and all forms of energy with your martial arts to replicate almost any known phenomenon, but you must be sufficiently physically strong to utilize this skill in any meaningful capacity.
-21. Spear of Untraceable Trajectory, 6.7
-#Everyone Else is a Returnee - Your spear mastery reaches such a degree that you disobey even physics. When you attack with the spear, you hit multiple locations at once with the number rising with your mastery, similar to Tsubame Gaeshi from Fate.
-22. Nanaya Assassination Arts, 4.7
-#Tsukihime - You are trained in the unique assassination arts of the Nanaya Family, a clan of selectively bred demon hunters. You focus on extremely quick movements and mobility rather than stealth, moving unpredictably and using ceilings and walls as footholds, and you are especially strong against non-humans.
-23. Whirlwind Iron Cutting Fist, 5.6
-#One Punch Man - You are an apprentice in the supernatural martial art developed by the legendary martial artist Bomb after decades of self-training. Your style resembles kung fu, and you move your body to produce razor-sharp currents of wind that you send like whirlwinds to decimate any target.
+20. All Life Eradication Fist, 8.4, One Punch Man
+#You know the pinnacle of all martial arts, fusing mastery of dozens of supernatural martial arts with knowledge granted by god. You manipulate the flow of cosmic and all forms of energy with your martial arts to replicate almost any known phenomenon, but you must be sufficiently physically strong to utilize this skill in any meaningful capacity.
+21. Spear of Untraceable Trajectory, 6.7, Everyone Else is a Returnee
+#Your spear mastery reaches such a degree that you disobey even physics. When you attack with the spear, you hit multiple locations at once with the number rising with your mastery, similar to Tsubame Gaeshi from Fate.
+22. Nanaya Assassination Arts, 4.7, Tsukihime
+#You are trained in the unique assassination arts of the Nanaya Family, a clan of selectively bred demon hunters. You focus on extremely quick movements and mobility rather than stealth, moving unpredictably and using ceilings and walls as footholds, and you are especially strong against non-humans.
+23. Whirlwind Iron Cutting Fist, 5.6, One Punch Man
+#You are an apprentice in the supernatural martial art developed by the legendary martial artist Bomb after decades of self-training. Your style resembles kung fu, and you move your body to produce razor-sharp currents of wind that you send like whirlwinds to decimate any target.
 24. Backflipping, 0.2
 #You know how to perform a gnarly backflip, though frontflips may be a bit challenging.
-25. Water Breathing, 3.1
-#Demon Slayer - You practice Water Breathing, a specialized swordsmanship style and breathing technique that mimics water's flow, flexibility, and adaptability through your movements, techniques, and abilities. Most, if not all, known techniques bend your body, arm, and weapon in fluid motion to match rushing or flowing water, and with magical power you manifest water to further augment the style.
-26. Fire Breathing, 3.3
-#Demon Slayer - You practice Fire Breathing, a specialized swordsmanship style and breathing technique that mimics flames through your movements, techniques, and abilities. Most, if not all, known techniques and forms are extremely powerful singular strikes that 'burn' opponents from a high stance, and with magical power you manifest fire to further augment the style.
-27. Wind Breathing, 3.8
-#Demon Slayer - You practice Wind Breathing, a specialized swordsmanship style and breathing technique that mimics wind, specifically powerful torrents of air and whirlwinds, through your movements, techniques, and abilities. Most, if not all, known techniques and forms are purely offensive attacks using fast rotating movements to generate swift whirlwind-like slashes that greatly increase your striking range, as well as using the surrounding air to deliver sharp sickle-shaped flying slash attacks and gale force winds.
-28. Thunder Breathing, 4.0
-#Demon Slayer - You practice Thunder Breathing, a specialized swordsmanship style and breathing technique that mimics lightning, specifically swift strikes and movements akin to lightning ripping through the sky, through your movements, techniques, and abilities. Most, if not all, known techniques and forms use blinding speeds and immensely fast attacks to overwhelm the enemy in an instant, and with magical power you manifest thunder to further augment the style.
-29. Sun Breathing, 4.4
-#Demon Slayer - You practice Sun Breathing, the specialized swordsmanship style and breathing technique created by legendary swordsman Yoriichi Tsugikuni that mimics the sun through your movements, techniques, and abilities. All techniques and forms are extremely varied with no set pattern, making them the most versatile and effective against enemies, and with magical power you manifest solar flames effective against the unholy.
+25. Water Breathing, 3.1, Demon Slayer
+#You practice Water Breathing, a specialized swordsmanship style and breathing technique that mimics water's flow, flexibility, and adaptability through your movements, techniques, and abilities. Most, if not all, known techniques bend your body, arm, and weapon in fluid motion to match rushing or flowing water, and with magical power you manifest water to further augment the style.
+26. Fire Breathing, 3.3, Demon Slayer
+#You practice Fire Breathing, a specialized swordsmanship style and breathing technique that mimics flames through your movements, techniques, and abilities. Most, if not all, known techniques and forms are extremely powerful singular strikes that 'burn' opponents from a high stance, and with magical power you manifest fire to further augment the style.
+27. Wind Breathing, 3.8, Demon Slayer
+#You practice Wind Breathing, a specialized swordsmanship style and breathing technique that mimics wind, specifically powerful torrents of air and whirlwinds, through your movements, techniques, and abilities. Most, if not all, known techniques and forms are purely offensive attacks using fast rotating movements to generate swift whirlwind-like slashes that greatly increase your striking range, as well as using the surrounding air to deliver sharp sickle-shaped flying slash attacks and gale force winds.
+28. Thunder Breathing, 4.0, Demon Slayer
+#You practice Thunder Breathing, a specialized swordsmanship style and breathing technique that mimics lightning, specifically swift strikes and movements akin to lightning ripping through the sky, through your movements, techniques, and abilities. Most, if not all, known techniques and forms use blinding speeds and immensely fast attacks to overwhelm the enemy in an instant, and with magical power you manifest thunder to further augment the style.
+29. Sun Breathing, 4.4, Demon Slayer
+#You practice Sun Breathing, the specialized swordsmanship style and breathing technique created by legendary swordsman Yoriichi Tsugikuni that mimics the sun through your movements, techniques, and abilities. All techniques and forms are extremely varied with no set pattern, making them the most versatile and effective against enemies, and with magical power you manifest solar flames effective against the unholy.
 30. Intermediate Kama Sutra, 2.2
 #(Nsfw) You are experienced in the sexual arts. You skillfully pleasure your partner, are a pleasant recipient, and know how to spot arousal and what your partner responds to.
 31. Intermediate Taming, 2.1
@@ -82,8 +82,8 @@
 #You are an apprentice in Bajiquan, a Chinese martial art specializing in explosive short-range attacks and aggressive forward momentum to break through enemy defences. With sufficient mastery, you enhance your strikes with your internal energy.
 42. Taekwondo, 3.7
 #You are an apprentice in Taekwondo, a dynamic Korean martial art specializing in speed, agility, and powerful kicking techniques. You combine high, spinning, and jumping kicks with fast footwork and precise strikes to deliver devastating blows, and with sufficient mastery you enhance your strikes with your internal energy.
-43. Renewal Taekwondo, 6.6
-#God of High School - You practice a specialized form of Taekwondo specializing in strong linear kicks like regular Taekwondo. It initially resembles simply a more refined and powerful Taekwondo style, but its true power emerges when you achieve Recoilless by mastering it, letting you focus all your energy into perfected strikes to unleash devastating effects.
+43. Renewal Taekwondo, 6.6, God of High School
+#You practice a specialized form of Taekwondo specializing in strong linear kicks like regular Taekwondo. It initially resembles simply a more refined and powerful Taekwondo style, but its true power emerges when you achieve Recoilless by mastering it, letting you focus all your energy into perfected strikes to unleash devastating effects.
 44. Karate, 2.4
 #You are an apprentice in Karate, a Japanese martial art specializing in powerful strikes, strong stances, and precise technique. You use direct, forceful punches, kicks, knee strikes, and blocks for maximum impact to develop explosive power, speed, and efficiency for well-rounded offence and defence, and with sufficient mastery you enhance your strikes with your internal energy.
 45. Suppression, 4.0
@@ -432,8 +432,8 @@
 #Your mind is iron and your focus is sharp as a blade. If you refuse interruption, you are not interrupted; if you must continue, you do. You endure the toughest training even as your body breaks down, forcing it onward longer. You strongly resist mental influences and effects.
 217. Master Discipline, 6.0
 #You are master of your own mind and captain of your own ship. Pain does not impair your abilities, and you endure the toughest punishments even when you think you cannot. Your focus and discipline cannot be shaken. Your mind cannot be shaken by those weaker than you, and even stronger foes struggle. You are as disciplined as Batman himself.
-218. Rokushiki, 5.0
-#One Piece - You train in Rokushiki, the superhuman martial art for only the most expert Marines and Cipher Pol agents. It holds 6 special superhuman techniques plus a secret 7th once you master the others. You start knowing all techniques but must train to use them.
+218. Rokushiki, 5.0, One Piece
+#You train in Rokushiki, the superhuman martial art for only the most expert Marines and Cipher Pol agents. It holds 6 special superhuman techniques plus a secret 7th once you master the others. You start knowing all techniques but must train to use them.
 219. Caryll Runecraft, 4.2
 #The Outer Ones beyond the stars whisper to you, letting you glimpse their knowledge as runes. You memorize the Outer Gods' runes to gain boons, but you must study to memorize the runes given to you. You can only hold three runes active at a time. List of Runes: https://bloodborne.wiki.fextralife.com/Caryll+Runes
 220. Novice Conceptualization, 1.9
@@ -448,16 +448,16 @@
 #Conceptualization is your ability to grasp what hides behind base reality's veil. You comprehend arcane mysteries and Outer concepts like second nature, understanding, dissecting, learning, and developing magic and mystery far beyond most mages. You converse with the old ones and, with training, translate their words into runes or use them to break minds.
 225. Divine Conceptualization, 9.0
 #You have achieved true conceptualization; your mind is wired unlike mortals and immortals. Grasping magic and mystery is no harder than basic math or reading words on paper. You instinctively use magic, and through natural understanding of the stars you call on the Outer Gods' powers and bend reality with their words given enough practice. You may rightly be considered an infant Outer God.
-226. Soma's Winemaking, 5.1
-#Danmachi - You make wine and other alcohol as well as the god Soma. You still need to experiment to learn what you can make with available resources, and you do not succeed every time.
-227. Quickening, 4.7
-#Bloodborne - You have mastered the Old Hunters' Quickening Technique. You briefly dash forward at incredible speed while shrouding your form in arcane fog to obscure your movements. It heavily strains your stamina and energy.
-228. Edna Mode, 3.8
-#Incredibles - You are THE fashionista, a master designer of clothes and costumes. Your costume creation rivals a Tinker.
+226. Soma's Winemaking, 5.1, Danmachi
+#You make wine and other alcohol as well as the god Soma. You still need to experiment to learn what you can make with available resources, and you do not succeed every time.
+227. Quickening, 4.7, Bloodborne
+#You have mastered the Old Hunters' Quickening Technique. You briefly dash forward at incredible speed while shrouding your form in arcane fog to obscure your movements. It heavily strains your stamina and energy.
+228. Edna Mode, 3.8, Incredibles
+#You are THE fashionista, a master designer of clothes and costumes. Your costume creation rivals a Tinker.
 229. Salt Distillation, 0.1
 #You can skillfully extract salt from water sources or tears.
-230. Prana Bindu, 4.8
-#Dune - You have learned Prana Bindu. You train bodily control beyond human levels, from individual muscles to individual strands, and eventually, with enough training, your nerves and bioelectrical signals.
+230. Prana Bindu, 4.8, Dune
+#You have learned Prana Bindu. You train bodily control beyond human levels, from individual muscles to individual strands, and eventually, with enough training, your nerves and bioelectrical signals.
 231. Novice Communication, 1.2
 #You are slightly better than average at understanding others and conveying your thoughts clearly. You know how to properly communicate with people.
 232. Intermediate Communication, 2.3
@@ -504,8 +504,8 @@
 #You are one hell of a maid/butler, skilled in housekeeping, manners, and servitude. You clean, track schedules, remember preferences, and present yourself professionally yet approachably.
 253. Aura Farming, 2.1
 #You are skilled at presenting yourself as cool and badass. You spot the perfect moments to farm aura: interjecting on cue, making dramatic entrances, or posing caped on a ledge. You avoid seeming uncool by not tripping or stuttering, and recover well from mistakes to keep your aura.
-254. Fishman Karate, 5.0
-#One Piece - You know Fishman Karate, the Fishmen's martial art for manipulating water offensively. You use existing water to strengthen your blows, disrupt fluids inside opponents with your hits, or transmit your fists' power through airborne moisture. You start as a white belt and can train to higher mastery.
+254. Fishman Karate, 5.0, One Piece
+#You know Fishman Karate, the Fishmen's martial art for manipulating water offensively. You use existing water to strengthen your blows, disrupt fluids inside opponents with your hits, or transmit your fists' power through airborne moisture. You start as a white belt and can train to higher mastery.
 255. Clowning Around, 1.1
 #You are a Clown College graduate. You tell lame jokes, entertain kids, make balloon animals, fit in comically small cars, apply humorous makeup, and perform other professional clown skills.
 256. Novice Spycraft, 2.1
@@ -536,26 +536,26 @@
 #You have extensive farming knowledge rivaling the most experienced farmers, including maintaining a farm, caring for livestock, maintaining soil, and more.
 269. Sign Language, 0.8
 #You use this world's basic sign language as fluently as your native language.
-270. Mental Image Blocking, 1.9
-#Batman - You learned from the elusive Tibetan Monks to block mind readers and telepaths by masking your thoughts with conjured mental images.
-271. Mind Control Resistance, 3.1
-#Batman - Thanks to the Tibetan Monks' teachings, you resist mind control and mind reading. Your resistance scales with your mental strength and overall power level.
-272. Army Breaker, 4.1
-#Strike it Rich - Rikudou: Army Breaker is a specialized martial art based in Karate movements. You emphasize arm weight, shifting balance, and relaxation to strike fast as whips yet heavy as hammers; skilled enough, you cut to bone in one blow. With enough practice, you control your joints to elongate your arms and empower the attacks called Dawn.
-273. Kaiwan Style, 5.2
-#Kengan Ashura - You are an apprentice in the Kaiwan Style, an assassination art rooted in multiple arts, mainly Karate. It requires knowledge of the nervous system, pressure points, and Qigong. Outwardly simplistic, it focuses on perfectly timed direct strikes and great bodily control. Its main move is Devil Lance, a spear-like strike of great power that demands superhuman conditioning. Skilled users can use Motionless to predict opponents' next moves and strike their openings.
-274. The Niko Style, 6.1
-#Kengan Ashura - You are an apprentice in the Niko Style, a compilation of Katas demanding great bodily control, skill, and practice. The Adamantine Kata tightens and braces muscles to deliver powerful blows and withstand attacks. The Flame Kata focuses on dodging, footwork, and agility. The Redirection Kata shifts and parries opponents' blows. The Water Kata focuses on binds and holds. You combine all four into Demonsbane, a devastating strike demanding immense skill. Its secret Possessing Spirit speeds your heartbeat to extremes to boost performance, while Fallen Demon forcibly slows your time perception, but both can damage you.
-275. Possessing Spirit, 3.1
-#Kengan Ashura - Otherwise called Advance, you speed up your heartbeat and blood flow to massively boost performance, but it can make your bloodlust harder to control, which you can train. First Gear boosts performance and makes self-control harder. Second Gear further boosts performance but induces bloodlust and lowers self-control. Third Gear raises heartbeat and blood flow to inhuman levels, making you seem demon-possessed, massively amplifying performance and bloodlust while suppressing pain, but likely causing permanent damage without intervention. It can damage your heart, veins, and organs from immense strain and inhuman blood flow.
-276. Kaolan Style, 4.7
-#Kengan Ashura - You are an apprentice in the Kaolan Style, an all-rounder combining Muay Thai and Boxing, invented by genius boxer Kaolan Wongsavat. It focuses on adaptability, power, and speed to overwhelm opponents with quick strikes while answering most moves. Its standout Flash throws a hail of flicker jabs at great speed in a single breath. Its strongest God Blow is an incredibly fast straight punch that can injure your arm if thrown improperly.
-277. Lingshu Chin Na, 3.0
-#Kengan Ashura - You practice Lingshu Chin Na, a Chinese art striking opponents' acupoints to debilitate without needing greater strength. Using bodily knowledge, you land quick, precise finger jabs to acupoints, debilitating with each strike when used properly. The further a target's biology deviates from human, the harder you will find it to use without study.
-278. Kujin Style, 2.7
-#Kengan Ashura - The Kujin Style is a Japanese art made to counter heavily armored or large, lumbering opponents. You rely on throws, sweeps, and trips to ground opponents, then finish them with powerful blows while they are down. But you may struggle against more traditional martial arts.
-279. Martial Foresight, 4.1
-#Kengan Ashura - Foresight is a technique of skilled fighters. You predict targets' moves to dodge and counter them through quick analysis and instinct. Your Foresight is basic, and will require real fights to train and develop.
+270. Mental Image Blocking, 1.9, Batman
+#You learned from the elusive Tibetan Monks to block mind readers and telepaths by masking your thoughts with conjured mental images.
+271. Mind Control Resistance, 3.1, Batman
+#Thanks to the Tibetan Monks' teachings, you resist mind control and mind reading. Your resistance scales with your mental strength and overall power level.
+272. Army Breaker, 4.1, Strike it Rich
+#Rikudou: Army Breaker is a specialized martial art based in Karate movements. You emphasize arm weight, shifting balance, and relaxation to strike fast as whips yet heavy as hammers; skilled enough, you cut to bone in one blow. With enough practice, you control your joints to elongate your arms and empower the attacks called Dawn.
+273. Kaiwan Style, 5.2, Kengan Ashura
+#You are an apprentice in the Kaiwan Style, an assassination art rooted in multiple arts, mainly Karate. It requires knowledge of the nervous system, pressure points, and Qigong. Outwardly simplistic, it focuses on perfectly timed direct strikes and great bodily control. Its main move is Devil Lance, a spear-like strike of great power that demands superhuman conditioning. Skilled users can use Motionless to predict opponents' next moves and strike their openings.
+274. The Niko Style, 6.1, Kengan Ashura
+#You are an apprentice in the Niko Style, a compilation of Katas demanding great bodily control, skill, and practice. The Adamantine Kata tightens and braces muscles to deliver powerful blows and withstand attacks. The Flame Kata focuses on dodging, footwork, and agility. The Redirection Kata shifts and parries opponents' blows. The Water Kata focuses on binds and holds. You combine all four into Demonsbane, a devastating strike demanding immense skill. Its secret Possessing Spirit speeds your heartbeat to extremes to boost performance, while Fallen Demon forcibly slows your time perception, but both can damage you.
+275. Possessing Spirit, 3.1, Kengan Ashura
+#Otherwise called Advance, you speed up your heartbeat and blood flow to massively boost performance, but it can make your bloodlust harder to control, which you can train. First Gear boosts performance and makes self-control harder. Second Gear further boosts performance but induces bloodlust and lowers self-control. Third Gear raises heartbeat and blood flow to inhuman levels, making you seem demon-possessed, massively amplifying performance and bloodlust while suppressing pain, but likely causing permanent damage without intervention. It can damage your heart, veins, and organs from immense strain and inhuman blood flow.
+276. Kaolan Style, 4.7, Kengan Ashura
+#You are an apprentice in the Kaolan Style, an all-rounder combining Muay Thai and Boxing, invented by genius boxer Kaolan Wongsavat. It focuses on adaptability, power, and speed to overwhelm opponents with quick strikes while answering most moves. Its standout Flash throws a hail of flicker jabs at great speed in a single breath. Its strongest God Blow is an incredibly fast straight punch that can injure your arm if thrown improperly.
+277. Lingshu Chin Na, 3.0, Kengan Ashura
+#You practice Lingshu Chin Na, a Chinese art striking opponents' acupoints to debilitate without needing greater strength. Using bodily knowledge, you land quick, precise finger jabs to acupoints, debilitating with each strike when used properly. The further a target's biology deviates from human, the harder you will find it to use without study.
+278. Kujin Style, 2.7, Kengan Ashura
+#The Kujin Style is a Japanese art made to counter heavily armored or large, lumbering opponents. You rely on throws, sweeps, and trips to ground opponents, then finish them with powerful blows while they are down. But you may struggle against more traditional martial arts.
+279. Martial Foresight, 4.1, Kengan Ashura
+#Foresight is a technique of skilled fighters. You predict targets' moves to dodge and counter them through quick analysis and instinct. Your Foresight is basic, and will require real fights to train and develop.
 280. Novice Arms Mastery, 2.9
 #You handle all conventional weapons, from knives to swords to axes to polearms to guns to bows to chained weapons and clubs, with basic proficiency, enough for familiarity and knowing how they are used.
 281. Intermediate Arms Mastery, 3.9
@@ -566,30 +566,30 @@
 #You handle all conventional weapons, from knives to swords to axes to polearms to guns to bows to chained weapons and clubs, with incredible skill, enough to match real experts specialized in those weapons.
 284. Master Arms Mastery, 6.9
 #You have mastery over all conventional and non-conventional weapons, from knives, billhooks, boomerangs, swords, whips, and more. Any weapon you hold, you use as if you have wielded it all your life, and you easily recognize and dissect other Weapon Arts you witness. Your general Weapon mastery grants incredible martial prowess.
-285. Novice Total Concentration Breathing, 2.4
-#Demon Slayer - You are a novice of Total Concentration Breathing, a breathing technique that raises blood oxygen and better activates your muscles, granting a superhuman physique while maintained. As a novice, you know only the very basics, but you can improve with practice.
-286. Intermediate Total Concentration Breathing, 3.6
-#Demon Slayer - You are learned in Total Concentration Breathing, a breathing technique that raises blood oxygen and better activates your muscles, granting a superhuman physique while maintained. As an intermediate, you actively maintain it in combat, but you can improve with practice.
-287. Adept Total Concentration Breathing, 4.4
-#Demon Slayer - You are an adept in Total Concentration Breathing, a breathing technique that raises blood oxygen and better activates your muscles, granting a superhuman physique while maintained. As an adept, you easily maintain it in a fight without added strain, and in daily life unless exhausted or excessively distracted. You also use it to stop your own bleeding and speed recovery.
-288. Expert Total Concentration Breathing, 5.3
-#Demon Slayer - You are an expert in Total Concentration Breathing on par with a Hashira, a breathing technique that raises blood oxygen and better activates your muscles for superhuman performance. You have achieved Total Concentration Breathing Constant, maintaining it even while sleeping. You also forcefully close wounds, expel poison, and speed recovery.
-289. Pre-Initiative, 5.4
-#Kengan Ashura - Pre-Initiative is an advanced form of a fighter's foresight; you know an enemy's move before they use it and counter before they throw it. It comes from extensive martial arts familiarity and analyzing opponents' styles. It demands much training, sparring, and familiarity with many styles, but a master seems almost omniscient against a lesser opponent after only a few exchanged moves.
-290. Reduced Earth, 3.4
-#Fate - Reduced earth is a movement technique for covering a short distance in a single extremely fast movement through practiced breathing, footwork, and exertion. But it is quite exhausting to use.
-291. Ryu's Shotokan, 5.7
-#Street Fighter - You practice Ryu's Shotokan, a special Karate school created by Ryu. It focuses on direct, powerful strikes with kicks and punches, mixing aggression and defense. With enough practice, you tap into the Kyoi no Hado and harness Ki to empower your blows, perform special techniques, and use the Hadoken.
-292. Akuma's Shotokan, 6.2
-#Street Fighter - You practice Akuma's Shotokan, a special Karate school created by Akuma. It focuses on direct, powerful strikes with kicks and punches, emphasizing brutal aggression and offense. With enough practice, you tap into the Satsui no Hado and harness raw killing intent as Ki to enhance your body, imbue your strikes, turn your inner energy into dark flame-like Ki, use the Gohadoken, and take a more demonic form to further boost power, but overuse without control can make you lose yourself and turn into a demon. You need great skill and control to avoid losing yourself and master it.
-293. The Shotokan, 6.3
-#Street Fighter - You practice Goutetsu's Shotokan, a special Karate school. It focuses on direct, powerful strikes with kicks and punches, but its heart is the Satsui and Kyoi no Hado, Dark and Light. As you practice, you may awaken and train in one Hado to tap its full power, reinforcing your strikes with Ki and releasing energy waves to supplement your style.
-294. Master Total Concentration Breathing, 6.1
-#Demon Slayer - You have fully mastered Total Concentration Breathing, a breathing technique that raises blood oxygen and better activates your muscles, granting exceptional performance and letting you use your body to its utmost potential. You maintain it as easily as regular breathing. While maintained, your recovery speeds are sped up.
+285. Novice Total Concentration Breathing, 2.4, Demon Slayer
+#You are a novice of Total Concentration Breathing, a breathing technique that raises blood oxygen and better activates your muscles, granting a superhuman physique while maintained. As a novice, you know only the very basics, but you can improve with practice.
+286. Intermediate Total Concentration Breathing, 3.6, Demon Slayer
+#You are learned in Total Concentration Breathing, a breathing technique that raises blood oxygen and better activates your muscles, granting a superhuman physique while maintained. As an intermediate, you actively maintain it in combat, but you can improve with practice.
+287. Adept Total Concentration Breathing, 4.4, Demon Slayer
+#You are an adept in Total Concentration Breathing, a breathing technique that raises blood oxygen and better activates your muscles, granting a superhuman physique while maintained. As an adept, you easily maintain it in a fight without added strain, and in daily life unless exhausted or excessively distracted. You also use it to stop your own bleeding and speed recovery.
+288. Expert Total Concentration Breathing, 5.3, Demon Slayer
+#You are an expert in Total Concentration Breathing on par with a Hashira, a breathing technique that raises blood oxygen and better activates your muscles for superhuman performance. You have achieved Total Concentration Breathing Constant, maintaining it even while sleeping. You also forcefully close wounds, expel poison, and speed recovery.
+289. Pre-Initiative, 5.4, Kengan Ashura
+#Pre-Initiative is an advanced form of a fighter's foresight; you know an enemy's move before they use it and counter before they throw it. It comes from extensive martial arts familiarity and analyzing opponents' styles. It demands much training, sparring, and familiarity with many styles, but a master seems almost omniscient against a lesser opponent after only a few exchanged moves.
+290. Reduced Earth, 3.4, Fate
+#Reduced earth is a movement technique for covering a short distance in a single extremely fast movement through practiced breathing, footwork, and exertion. But it is quite exhausting to use.
+291. Ryu's Shotokan, 5.7, Street Fighter
+#You practice Ryu's Shotokan, a special Karate school created by Ryu. It focuses on direct, powerful strikes with kicks and punches, mixing aggression and defense. With enough practice, you tap into the Kyoi no Hado and harness Ki to empower your blows, perform special techniques, and use the Hadoken.
+292. Akuma's Shotokan, 6.2, Street Fighter
+#You practice Akuma's Shotokan, a special Karate school created by Akuma. It focuses on direct, powerful strikes with kicks and punches, emphasizing brutal aggression and offense. With enough practice, you tap into the Satsui no Hado and harness raw killing intent as Ki to enhance your body, imbue your strikes, turn your inner energy into dark flame-like Ki, use the Gohadoken, and take a more demonic form to further boost power, but overuse without control can make you lose yourself and turn into a demon. You need great skill and control to avoid losing yourself and master it.
+293. The Shotokan, 6.3, Street Fighter
+#You practice Goutetsu's Shotokan, a special Karate school. It focuses on direct, powerful strikes with kicks and punches, but its heart is the Satsui and Kyoi no Hado, Dark and Light. As you practice, you may awaken and train in one Hado to tap its full power, reinforcing your strikes with Ki and releasing energy waves to supplement your style.
+294. Master Total Concentration Breathing, 6.1, Demon Slayer
+#You have fully mastered Total Concentration Breathing, a breathing technique that raises blood oxygen and better activates your muscles, granting exceptional performance and letting you use your body to its utmost potential. You maintain it as easily as regular breathing. While maintained, your recovery speeds are sped up.
 295. Dapping, 0.2
 #You are a master at dapping people up effectively, judging dap distance and producing a satisfying crispy dap regardless of the other party's skill or constitution.
-296. Boggart's Boiling Brilliance, 1.4
-#Elden Ring - You have learned to boil crab, prawn, and crustaceans in general with great skill, on the level of the great Big Boggart. Even if your crab is the magical kind from the Lands Between, it will taste spectacular.
+296. Boggart's Boiling Brilliance, 1.4, Elden Ring
+#You have learned to boil crab, prawn, and crustaceans in general with great skill, on the level of the great Big Boggart. Even if your crab is the magical kind from the Lands Between, it will taste spectacular.
 297. Hacking, 2.5
 #You are skilled at leveraging your skills to breach networks and bypass digital and cyber defenses.
 298. Crying, 0.5
