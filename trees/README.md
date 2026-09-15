@@ -45,8 +45,24 @@ Distance from the sphere centre encodes rarity magnitude: low rarity sits
 near the centre, high rarity near the surface. The `d` on each edge is the
 raw 3D distance between the two nodes.
 
+Node `id` 0 is the synthetic **Origin** root (`file: "__root__"`): it sits
+at the exact centre, is free to unlock, and links to the real node nearest
+the centre. All real nodes have `id >= 1`.
+
 ## Regenerating
 
 `python3 tools/generate_tree.py --help` lists all parameters (placement,
 clustering, degree distribution, rejoin bias, link falloff, max link
 distance, per-source filtering). Every tree is reproducible from its `seed`.
+
+## Using a tree
+
+`tools/chaos_tree_use.py` is the usage engine (CLI + importable API). The
+root is free; every other node costs 1 core plus points equal to `10^rarity`.
+Tickets add 1 core each and pool their tier points into a shared wallet
+(bronze 25, silver 250, gold 2.5k, ... transcendent 10B). Only nodes
+adjacent to unlocked nodes are visible by default; special tickets (skip N,
+`<category>` jump, choice N jump, hop) reach further. See the module
+docstring for the full rules and CLI reference.
+
+Run the self-test with `python3 tools/test_chaos_tree.py`.

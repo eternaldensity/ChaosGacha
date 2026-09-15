@@ -345,29 +345,72 @@ def generate_tree(items, params, rng):
             comp = {find(i) for i in range(n)}
 
     # --- stats ---
+    return nodes, edges, targets
+
+
+def add_root(nodes, edges):
+    """Insert the synthetic origin node (id 0, at the sphere centre) and link
+    it to the real node nearest the centre (lowest rarity). Real node ids are
+    shifted up by one. Returns (nodes_with_root, edges_with_root)."""
+    root = {
+        "id": 0,
+        "file": "__root__",
+        "number": 0,
+        "name": "Origin",
+        "rarity": 0.0,
+        "source": "System",
+        "tag": "both",
+        "description": "The Chaos Tree's root. Free to unlock; every other "
+                       "node costs to unlock.",
+        "pos": [0.0, 0.0, 0.0],
+        "r": 0.0,
+    }
+    real = [dict(nd, id=nd["id"] + 1) for nd in nodes]
+    out_edges = [{"a": e["a"] + 1, "b": e["b"] + 1, "d": e["d"],
+                  **({"bridge": True} if e.get("bridge") else {})}
+                 for e in edges]
+    nearest = min(real, key=lambda nd: (nd["r"], nd["id"]))
+    out_edges.append({"a": 0, "b": nearest["id"], "d": nearest["r"]})
+    return [root] + real, out_edges
+
+
+def compute_stats(nodes, edges, targets):
+    n = len(nodes)
+    adj = [set() for _ in range(n)]
+    for e in edges:
+        adj[e["a"]].add(e["b"])
+        adj[e["b"]].add(e["a"])
     degrees = Counter(len(adj[i]) for i in range(n))
     lens = [e["d"] for e in edges]
     parent = list(range(n))
+
     def find2(x):
         while parent[x] != x:
             parent[x] = parent[parent[x]]
             x = parent[x]
         return x
+
     for e in edges:
         ra, rb = find2(e["a"]), find2(e["b"])
         if ra != rb:
             parent[ra] = rb
     components = len({find2(i) for i in range(n)})
+    entries = [nd for nd in nodes if nd["file"] != "__root__"]
     stats = {
         "nodes": n,
+        "entries": len(entries),
         "edges": len(edges),
         "components": components,
         "cycles": len(edges) - n + components,
-        "bridges": bridges,
+        "bridges": sum(1 for e in edges if e.get("bridge")),
+        "root": {"id": 0, "name": "Origin",
+                 "first_child": next(nd["id"] for nd in entries
+                                     if nd["id"] == edges[-1]["b"])},
         "degree": {
             "min": min(degrees),
             "max": max(degrees),
-            "requested_mean": round(sum(targets) / n, 3),
+            "requested_mean": round(sum(targets) / len(entries), 3)
+                              if targets else 0,
             "mean": round(sum(d * c for d, c in degrees.items()) / n, 3),
             "histogram": {str(d): c for d, c in sorted(degrees.items())},
         },
@@ -375,12 +418,12 @@ def generate_tree(items, params, rng):
             "mean": round(sum(lens) / len(lens), 4) if lens else 0,
             "max": round(max(lens), 4) if lens else 0,
         },
-        "tags": {t: sum(1 for nd in nodes if nd["tag"] == t)
+        "tags": {t: sum(1 for nd in entries if nd["tag"] == t)
                  for t in ("gacha", "tree", "both")},
-        "sources": {s: sum(1 for nd in nodes if nd["source"] == s)
-                    for s in sorted({nd["source"] for nd in nodes})},
+        "sources": {s: sum(1 for nd in entries if nd["source"] == s)
+                    for s in sorted({nd["source"] for nd in entries})},
     }
-    return nodes, edges, stats
+    return stats
 
 
 def save_tree(nodes, edges, stats, items, params, seed, out_path):
@@ -480,14 +523,16 @@ def main():
     }
 
     rng = random.Random(args.seed)
-    nodes, edges, stats = generate_tree(items, params, rng)
+    nodes, edges, targets = generate_tree(items, params, rng)
+    nodes, edges = add_root(nodes, edges)
+    stats = compute_stats(nodes, edges, targets)
 
     out = args.out or os.path.join(TREE_DIR, f"chaos-tree-{args.seed}.json")
     save_tree(nodes, edges, stats, items, params, args.seed, out)
 
-    print(f"tree: {stats['nodes']} nodes, {stats['edges']} edges, "
-          f"{stats['components']} component(s), {stats['cycles']} cycle(s), "
-          f"{stats['bridges']} bridge(s)")
+    print(f"tree: {stats['entries']} entries + root = {stats['nodes']} nodes, "
+          f"{stats['edges']} edges, {stats['components']} component(s), "
+          f"{stats['cycles']} cycle(s), {stats['bridges']} bridge(s)")
     print(f"degree: min {stats['degree']['min']}, mean "
           f"{stats['degree']['mean']}, max {stats['degree']['max']}")
     print(f"link distance: mean {stats['link_distance']['mean']}, "
