@@ -1264,3 +1264,11 @@
 #Your eyes are the fabled Six Eyes of the Gojo Clan, passively granting extreme visual prowess that sees through physical obstacles and detects all forms of energy extremely well. They act like a supercomputer for processing energy and information, granting incredible efficiency with abilities and letting you passively perform incredibly taxing calculations. They are taxing to use, so you may need to cover your eyes to rest them from the information they passively process.
 632. Garlic Infused Blood, 0.2, Generic
 #Your blood is infused with garlic, so the next vampire that bites you will really regret it.
+633. Prosperity +10%, 2.0, Generic
+#(Tree)(Meta:ticket-bonus:10) Every ticket you are awarded grants 10% extra points. Stacks additively with other Prosperity traits.
+634. Prosperity +20%, 3.0, Generic
+#(Tree)(Meta:ticket-bonus:20) Every ticket you are awarded grants 20% extra points. Stacks additively with other Prosperity traits.
+635. Prosperity +30%, 4.0, Generic
+#(Tree)(Meta:ticket-bonus:30) Every ticket you are awarded grants 30% extra points. Stacks additively with other Prosperity traits.
+636. Prosperity +40%, 5.0, Generic
+#(Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.

@@ -484,8 +484,8 @@
 #Mehrunes Dagon's dagger. Capable of cutting anything the user can interact with — space, time, soul, connections, etc. The only limit is the user, not the dagger.
 243. Skeleton Key, 8.2, Skyrim
 #Magical key of Nocturnal that can unlock anything the user perceives, from locks and walls to inner potential and portals to other worlds. Its only limit is the user, not the key.
-244. Cloak of Invisibility, 2.4, Harry Potter
-#One of the Deathly Hallows that renders anyone covered invisible and resistant to clairvoyance.
+244. Cloak of Elvenkind, 2.4, DnD
+#A hooded elven cloak woven from shadow that renders the wearer invisible while the hood is raised and resistant to divination and scrying. Nearly undetectable while motionless.
 245. Annihilation Maker, 7.6, DxD
 #One of the strongest Longinus crafted by God that creates shadow monsters from the user's shadow by expending mana, with abilities based on the user's imagination and abilities. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 246. Unknown Dictator, 5.8, DxD
@@ -1698,3 +1698,9 @@
 #(Tech) The City is a Dyson-sphere-origin megastructure of hyper-compressed defensive and computational layers, factories, cities, and terminals holding millions of impossibly advanced technologies and blueprints. Your key opens portals to any part and gives absolute command authority. For size it lives in a pocket universe but can open portals into your reality.
 850. Erdtree Seed, 4.2, Elden Ring
 #A seed that sprouts a small ineffectual Erdtree, grown larger by supplying energy or ritually burying corpses beneath it. When strong enough it blesses those under its light, warding disease and curses, nourishing land, and boosting recovery and healing.
+851. Undo Stone, 3.5, Generic
+#(Tree)(Meta:lock-refund) Single use. Crush the stone to lock one of your unlocked nodes and refund its core and points.
+852. Tree Graft, 6.0, Generic
+#(Tree)(Meta:add-link:3) Three uses. Add a connection between two close, unconnected nodes.
+853. Chaos Die, 6.5, Generic
+#(Tree)(Meta:gacha:5) Single use. Roll to unlock a random locked node with rarity 5 or below for free.

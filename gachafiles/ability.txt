@@ -2764,3 +2764,17 @@
 #(Tech) Manipulate any machine interface as if wired to your nerves and brain via physical contact.
 1386. Adamantine Sealing Chains, 5.7, Naruto
 #Manifest and control Uzumaki Adamantine Sealing Chains as incredibly durable chains that suppress and seal bound targets' energy. Suppression scales with energy spent and your power advantage; chain power and count scale with energy used.
+1387. Sight +1, 2.0, Generic
+#(Tree)(Meta:sight:1) You can view locked nodes one extra connection away from unlocked nodes.
+1388. Sight +2, 3.0, Generic
+#(Tree)(Meta:sight:2) You can view locked nodes two extra connections away from unlocked nodes. Overrides Sight +1.
+1389. Far Sight, 4.0, Generic
+#(Tree)(Meta:see-far) You can view locked nodes within a set distance of unlocked nodes, even if unconnected to them.
+1390. Trace Name, 4.5, Generic
+#(Tree)(Meta:trace-name) You can trace a route to the closest locked nodes whose name contains a chosen word or phrase.
+1391. Trace Description, 5.5, Generic
+#(Tree)(Meta:trace-desc) You can trace a route to the closest locked nodes whose description contains a chosen word or phrase.
+1392. Glimpse, 5.0, Generic
+#(Tree)(Meta:reveal-temp) Single use. Reveal the full tree for 10 seconds.
+1393. Omnisight, 9.0, Generic
+#(Tree)(Meta:reveal-full) Permanently reveal the entire tree.

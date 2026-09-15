@@ -143,6 +143,7 @@ def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
         "source": cur["source"] or "Generic",
         "tag": tag,
         "description": visible,
+        "meta": sorted(t for t in tokens if t.startswith("Meta:")),
     })
 
 

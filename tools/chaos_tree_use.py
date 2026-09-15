@@ -11,9 +11,10 @@ By default only nodes adjacent to an unlocked node are visible/unlockable.
 Special tickets reach further (see below).
 
 Ticket tiers (points; cores always 1)
-    bronze 25, silver 250, gold 2.5k, platinum 25k, diamond 250k,
-    legendary 2.5M, mythical 25M, divine 250M, transcendent 10B.
-    (10B covers every rarity: 10^9.9 ~ 7.9B.)
+    bronze 50, silver 500, gold 5k, platinum 50k, diamond 500k,
+    legendary 5M, mythical 50M, divine 500M, transcendent 5B.
+    (points pool in the wallet, so higher rarities are reachable by
+    combining several tickets)
 
 Special tickets (tier optional; if present the tier still adds its core's
 points, otherwise the ticket is traversal-only and adds 0 points):
@@ -27,39 +28,67 @@ points, otherwise the ticket is traversal-only and adds 0 points):
                      intermediate node on the shortest path from the
                      unlocked set to it
 
+Tree meta nodes: normal ability/item/trait entries carrying a (Tree) tag
+and a (Meta:<key>:<value>) token in their description (stored in the JSON
+'meta' field). While unlocked they grant an effect:
+    sight:N        view locked nodes N extra connections away
+    see-far        view locked nodes within SEE_FAR_DISTANCE of unlocked
+                   nodes even if unconnected
+    trace-name     allow the trace command against node names
+    trace-desc     allow the trace command against descriptions
+    reveal-full    permanently reveal the whole tree
+    ticket-bonus:N every ticket awarded grants N% extra points (additive)
+    reveal-temp    one use: reveal the full tree for 10 seconds
+    lock-refund    one use: lock an unlocked node and refund core+points
+    add-link:N     N uses: add an edge between two close unconnected nodes
+    gacha:R        one use: randomly unlock a locked node with rarity <= R
+Unlocking is adjacency-based: sight/reveal only let you SEE further; the
+skip/jump/hop tickets are still how you travel.
+
 Modes of use (CLI):
     init STATE --tree TREE.json          create a fresh player state
     award STATE TICKET [TICKET...]       award tickets (adds cores + points)
     state STATE                          show wallet, cores, inventory, nodes
     visible STATE                        list unlockable nodes and their costs
-    unlock STATE NODE                    normal unlock (must be visible)
+    unlock STATE NODE                    normal unlock (must be adjacent)
     skip STATE NODE [--n N]              unlock with a skip ticket
     jump STATE CATEGORY --from ID [--pick I]   jump / choice-N jump
     hop STATE NODE                       unlock with a hop ticket
+    use STATE ACTION [ARGS]              lockrefund NODE | addlink A B |
+                                         reveal | gacha
+    trace STATE --name X [--n N]         trace routes to closest matches
+           STATE --desc X [--n N]        (requires the matching trace node)
 """
 import argparse
 import json
 import math
 import os
+import random
+import re
 import sys
+import time
 from collections import deque
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # --- editable tuning -------------------------------------------------------
 TIER_POINTS = {
-    "bronze": 25,
-    "silver": 250,
-    "gold": 2500,
-    "platinum": 25000,
-    "diamond": 250000,
-    "legendary": 2500000,
-    "mythical": 25000000,
-    "divine": 250000000,
-    "transcendent": 10000000000,
+    "bronze": 50,
+    "silver": 500,
+    "gold": 5000,
+    "platinum": 50000,
+    "diamond": 500000,
+    "legendary": 5000000,
+    "mythical": 50000000,
+    "divine": 500000000,
+    "transcendent": 5000000000,
 }
 CATEGORIES = ["ability", "item", "skill", "trait", "familiar"]
 ROOT_ID = 0
+SEE_FAR_DISTANCE = 0.35     # sphere units; used by the Far Sight meta node
+ADD_LINK_DISTANCE = 0.25    # sphere units; max span for Graft
+TRACE_DEFAULT_N = 3
+META_RE = re.compile(r"\(Meta:([^)]+)\)")
 
 
 # --- tree + state ----------------------------------------------------------
@@ -79,7 +108,8 @@ def load_tree(path):
 
 def new_state(tree_path):
     return {"tree": tree_path, "points": 0.0, "cores": 0,
-            "inventory": [], "unlocked": [ROOT_ID]}
+            "inventory": [], "unlocked": [ROOT_ID],
+            "meta_used": {}, "added_links": [], "reveal_temp_until": 0}
 
 
 def load_state(path):
@@ -102,12 +132,114 @@ def node_cost(tree, nid):
     return 10.0 ** tree["by_id"][nid]["rarity"]
 
 
-def visible(tree, unlocked):
-    adj = tree["adj"]
-    vis = set()
+def parse_meta(desc):
+    """Extract (Meta:key:value) / (Meta:flag) tokens from a description."""
+    out = []
+    for m in META_RE.finditer(desc):
+        key = m.group(1)
+        if ":" in key:
+            k, v = key.split(":", 1)
+            try:
+                v = int(v)
+            except ValueError:
+                pass
+        else:
+            k, v = key, True
+        out.append((k, v))
+    return out
+
+
+def iter_meta(nd):
+    """Meta tokens for a node: from the JSON 'meta' field if present, plus
+    any (Meta:...) tokens left in the raw description (e.g. hand-made trees)."""
+    for raw in nd.get("meta") or []:
+        key = raw[5:] if raw.startswith("Meta:") else raw
+        if ":" in key:
+            k, v = key.split(":", 1)
+            try:
+                v = int(v)
+            except ValueError:
+                pass
+        else:
+            k, v = key, True
+        yield k, v
+    yield from parse_meta(nd["description"])
+
+
+def derive_meta(tree, unlocked):
+    """Capabilities granted by currently unlocked meta nodes."""
+    meta = {"sight": 0, "see_far": False, "trace_name": False,
+            "trace_desc": False, "reveal_full": False, "reveal_temp": False,
+            "ticket_bonus": 0, "lock_refund": 0, "add_link": 0,
+            "gacha": 0, "gacha_max": 0}
     for u in unlocked:
-        vis.update(adj[u])
-    vis.difference_update(unlocked)
+        nd = tree["by_id"][u]
+        for k, v in iter_meta(nd):
+            if k == "sight":
+                meta["sight"] = max(meta["sight"], int(v))
+            elif k == "see-far":
+                meta["see_far"] = True
+            elif k == "trace-name":
+                meta["trace_name"] = True
+            elif k == "trace-desc":
+                meta["trace_desc"] = True
+            elif k == "reveal-full":
+                meta["reveal_full"] = True
+            elif k == "reveal-temp":
+                meta["reveal_temp"] = True
+            elif k == "ticket-bonus":
+                meta["ticket_bonus"] += int(v)
+            elif k == "lock-refund":
+                meta["lock_refund"] += 1
+            elif k == "add-link":
+                meta["add_link"] += int(v)
+            elif k == "gacha":
+                meta["gacha"] += 1
+                meta["gacha_max"] = max(meta["gacha_max"], int(v))
+    return meta
+
+
+def view_state(tree, state):
+    """Derived capabilities plus the temporary-reveal timestamp."""
+    meta = derive_meta(tree, state["unlocked"])
+    meta["reveal_temp_until"] = state.get("reveal_temp_until", 0)
+    return meta
+
+
+def _frontier(tree, unlocked):
+    adj = tree["adj"]
+    f = set()
+    for u in unlocked:
+        f.update(adj[u])
+    f.difference_update(unlocked)
+    return f
+
+
+def visible(tree, unlocked, meta=None):
+    """Locked nodes you can see. Base = neighbours of unlocked nodes; the
+    sight/see-far/reveal meta nodes extend this."""
+    meta = meta or {}
+    now = time.time()
+    if meta.get("reveal_full") or meta.get("reveal_temp_until", 0) >= now:
+        return sorted(i for i in tree["by_id"] if i not in unlocked)
+    adj = tree["adj"]
+    sight = meta.get("sight", 0)
+    if sight <= 0 and not meta.get("see_far"):
+        vis = set()
+        for u in unlocked:
+            vis.update(adj[u])
+        vis.difference_update(unlocked)
+        return sorted(vis)
+    dist, _ = hop_distances(tree, unlocked)
+    vis = {i for i in dist if dist[i] <= 1 + sight and i not in unlocked}
+    if meta.get("see_far"):
+        for u in unlocked:
+            unode = tree["by_id"][u]
+            for nd in tree["nodes"]:
+                if nd["id"] in unlocked or nd["id"] in vis:
+                    continue
+                if distance3(unode, nd) <= SEE_FAR_DISTANCE:
+                    vis.add(nd["id"])
     return sorted(vis)
 
 
@@ -209,11 +341,11 @@ def parse_ticket(spec):
     return tier, kind, params
 
 
-def award(state, spec):
+def award(state, spec, bonus_pct=0):
     tier, kind, params = parse_ticket(spec)
     state["cores"] += 1
-    if tier is not None:
-        state["points"] += TIER_POINTS[tier]
+    base = TIER_POINTS.get(tier, 0)
+    state["points"] += base * (1.0 + bonus_pct / 100.0)
     if kind != "plain":
         ticket = {"kind": kind, "tier": tier}
         ticket.update(params)
@@ -224,13 +356,14 @@ def award(state, spec):
 # --- unlocks ---------------------------------------------------------------
 
 def unlock(state, tree, nid):
-    """Normal unlock: node must be visible (adjacent to an unlocked node)."""
+    """Normal unlock: node must be adjacent to an unlocked node."""
     if nid == ROOT_ID:
         raise UsageError("the root is free")
     if nid in state["unlocked"]:
         raise UsageError(f"node {nid} is already unlocked")
-    if nid not in visible(tree, state["unlocked"]):
-        raise UsageError(f"node {nid} is not visible (unlock its neighbours first)")
+    if nid not in _frontier(tree, state["unlocked"]):
+        raise UsageError(f"node {nid} is not adjacent to an unlocked node "
+                         f"(use a skip/jump/hop ticket to reach it)")
     _pay(state, tree, nid)
     _unlock(state, nid)
 
@@ -329,11 +462,117 @@ def unlock_hop(state, tree, nid):
     _unlock(state, nid, extra=[intermediate])
 
 
+# --- meta abilities ---------------------------------------------------------
+
+def _used(state, key):
+    return state["meta_used"].get(key, 0)
+
+
+def apply_added_links(tree, state):
+    for a, b in state.get("added_links", []):
+        tree["adj"][a].add(b)
+        tree["adj"][b].add(a)
+    return tree
+
+
+def use_lock_refund(state, tree, nid):
+    """Lock an unlocked node and refund its core + points (single use)."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "lock_refund") >= meta["lock_refund"]:
+        raise UsageError("no lock-refund charge left")
+    if nid == ROOT_ID:
+        raise UsageError("the root cannot be locked")
+    if nid not in state["unlocked"]:
+        raise UsageError(f"node {nid} is not unlocked")
+    refund = node_cost(tree, nid)
+    state["unlocked"].remove(nid)
+    state["points"] += refund
+    state["cores"] += 1
+    state["meta_used"]["lock_refund"] = _used(state, "lock_refund") + 1
+    return refund
+
+
+def use_add_link(state, tree, a, b):
+    """Add an edge between two close, unconnected nodes (limited uses)."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "add_link") >= meta["add_link"]:
+        raise UsageError("no add-link charge left")
+    if a == b or a == ROOT_ID or b == ROOT_ID:
+        raise UsageError("links join two real nodes")
+    if b in tree["adj"][a]:
+        raise UsageError(f"nodes {a} and {b} are already connected")
+    d = distance3(tree["by_id"][a], tree["by_id"][b])
+    if d > ADD_LINK_DISTANCE:
+        raise UsageError(f"nodes {a} and {b} are too far apart "
+                         f"({fmt(d)} > {ADD_LINK_DISTANCE})")
+    tree["adj"][a].add(b)
+    tree["adj"][b].add(a)
+    state["added_links"].append([a, b])
+    state["meta_used"]["add_link"] = _used(state, "add_link") + 1
+    return d
+
+
+def use_reveal(state, tree):
+    """Temporary full reveal (10 seconds)."""
+    meta = derive_meta(tree, state["unlocked"])
+    if not meta["reveal_temp"]:
+        raise UsageError("you have no Glimpse (reveal) charge")
+    state["reveal_temp_until"] = time.time() + 10
+    return state["reveal_temp_until"]
+
+
+def use_gacha(state, tree):
+    """Randomly unlock a locked node with rarity <= R (single use)."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "gacha") >= meta["gacha"]:
+        raise UsageError("no gacha charge left")
+    eligible = [nd for nd in tree["nodes"]
+                if nd["id"] != ROOT_ID and nd["id"] not in state["unlocked"]
+                and nd["rarity"] <= meta["gacha_max"]]
+    if not eligible:
+        raise UsageError("no locked node with low enough rarity to roll")
+    target = random.choice(eligible)
+    _unlock(state, target["id"])
+    state["meta_used"]["gacha"] = _used(state, "gacha") + 1
+    return target
+
+
+def trace(tree, state, field, x, n=TRACE_DEFAULT_N):
+    """Trace routes to the n closest locked nodes whose name/description
+    contains x. Returns a list of (dist, node, [path ids])."""
+    meta = derive_meta(tree, state["unlocked"])
+    cap = "trace_name" if field == "name" else "trace_desc"
+    if not meta[cap]:
+        raise UsageError(f"you lack the trace-by-{field} ability")
+    x = x.lower()
+    dist, prev = hop_distances(tree, state["unlocked"])
+    matches = []
+    for nd in tree["nodes"]:
+        if nd["id"] == ROOT_ID or nd["id"] in state["unlocked"]:
+            continue
+        hay = nd["name"].lower() if field == "name" else nd["description"].lower()
+        if x in hay and nd["id"] in dist:
+            near = min((distance3(tree["by_id"][u], nd)
+                        for u in state["unlocked"]), default=math.inf)
+            matches.append((dist[nd["id"]], near, nd))
+    matches.sort(key=lambda m: (m[0], m[1], m[2]["id"]))
+    out = []
+    for d, _near, nd in matches[:n]:
+        path = [nd["id"]]
+        cur = nd["id"]
+        while cur in prev:
+            cur = prev[cur]
+            path.append(cur)
+        path.reverse()
+        out.append((d, nd, path))
+    return out
+
+
 # --- CLI -------------------------------------------------------------------
 
-def _visible_lines(tree, unlocked):
+def _visible_lines(tree, unlocked, meta=None):
     rows = []
-    for nid in visible(tree, unlocked):
+    for nid in visible(tree, unlocked, meta):
         nd = tree["by_id"][nid]
         rows.append((nid, nd["name"], nd["rarity"], nd["file"],
                      nd["source"], node_cost(tree, nid)))
@@ -393,6 +632,18 @@ def build_parser():
     p = add("hop", help="unlock with a hop ticket")
     p.add_argument("state")
     p.add_argument("node", type=int)
+
+    p = add("use", help="use a meta ability (lockrefund/addlink/reveal/gacha)")
+    p.add_argument("state")
+    p.add_argument("action", choices=["lockrefund", "addlink", "reveal", "gacha"])
+    p.add_argument("args", nargs="*", type=int, help="node ids")
+
+    p = add("trace", help="trace routes to closest matching locked nodes")
+    p.add_argument("state")
+    p.add_argument("--name", help="match a substring in node names")
+    p.add_argument("--desc", help="match a substring in descriptions")
+    p.add_argument("--n", type=int, default=TRACE_DEFAULT_N,
+                   help="number of matches to trace (default 3)")
     return ap
 
 
@@ -408,11 +659,14 @@ def main(argv=None):
 
     state = load_state(args.state)
     tree = load_tree(state["tree"])
+    apply_added_links(tree, state)
+    meta = view_state(tree, state)
 
     if args.cmd == "award":
+        bonus_pct = meta["ticket_bonus"]
         for spec in args.tickets:
-            tier, kind, params = award(state, spec)
-            pts = TIER_POINTS.get(tier, 0)
+            tier, kind, params = award(state, spec, bonus_pct)
+            pts = TIER_POINTS.get(tier, 0) * (1.0 + bonus_pct / 100.0)
             extra = f" [{kind}]" if kind != "plain" else ""
             print(f"awarded {tier or 'tierless'}{extra}: +1 core, "
                   f"+{fmt(pts)} pts")
@@ -420,15 +674,34 @@ def main(argv=None):
         print(f"tree: {tree['path']}")
         print(f"points: {fmt(state['points'])}   cores: {state['cores']}")
         print(f"unlocked: {len(state['unlocked'])} node(s)")
+        meta_bits = [f"sight+{meta['sight']}"] if meta["sight"] else []
+        if meta["see_far"]:
+            meta_bits.append("see-far")
+        if meta["trace_name"]:
+            meta_bits.append("trace-name")
+        if meta["trace_desc"]:
+            meta_bits.append("trace-desc")
+        if meta["reveal_full"]:
+            meta_bits.append("reveal-full")
+        if meta["ticket_bonus"]:
+            meta_bits.append(f"ticket+{meta['ticket_bonus']}%")
+        for key, label in (("lock_refund", "lock-refund"),
+                           ("add_link", "add-link"), ("gacha", "gacha")):
+            if meta[key]:
+                left = meta[key] - state["meta_used"].get(key, 0)
+                meta_bits.append(f"{label}x{left}")
+        if meta["reveal_temp"] and state["reveal_temp_until"] <= time.time():
+            meta_bits.append("reveal(10s)")
+        print("meta: " + (", ".join(meta_bits) if meta_bits else "none"))
         print("inventory:")
         for i, t in enumerate(state["inventory"]):
             print(f"  [{i}] {t['tier']} {t['kind']} "
                   f"({', '.join(f'{k}={v}' for k, v in t.items() if k not in ('kind', 'tier'))})")
         print("visible:")
-        for nid, name, r, f, src, cost in _visible_lines(tree, state["unlocked"]):
+        for nid, name, r, f, src, cost in _visible_lines(tree, state["unlocked"], meta):
             print(f"  {nid}. {name} [{f} | {src}] rarity {r} cost {fmt(cost)}")
     elif args.cmd == "visible":
-        for nid, name, r, f, src, cost in _visible_lines(tree, state["unlocked"]):
+        for nid, name, r, f, src, cost in _visible_lines(tree, state["unlocked"], meta):
             print(f"{nid}. {name} [{f} | {src}] rarity {r} cost {fmt(cost)}")
     elif args.cmd == "unlock":
         unlock(state, tree, args.node)
@@ -457,6 +730,34 @@ def main(argv=None):
     elif args.cmd == "hop":
         unlock_hop(state, tree, args.node)
         print(f"unlocked {args.node}. {tree['by_id'][args.node]['name']} (hop)")
+    elif args.cmd == "use":
+        if args.action == "lockrefund":
+            if len(args.args) != 1:
+                raise UsageError("use lockrefund NODE")
+            refund = use_lock_refund(state, tree, args.args[0])
+            print(f"locked {args.args[0]} and refunded {fmt(refund)} pts + 1 core")
+        elif args.action == "addlink":
+            if len(args.args) != 2:
+                raise UsageError("use addlink A B")
+            d = use_add_link(state, tree, args.args[0], args.args[1])
+            print(f"linked {args.args[0]} -- {args.args[1]} (span {fmt(d)})")
+        elif args.action == "reveal":
+            until = use_reveal(state, tree)
+            print(f"full tree revealed for 10s (until {until:.0f})")
+        elif args.action == "gacha":
+            target = use_gacha(state, tree)
+            print(f"rolled {target['id']}. {target['name']} "
+                  f"({target['file']}, rarity {target['rarity']})")
+    elif args.cmd == "trace":
+        if args.name is None and args.desc is None:
+            raise UsageError("trace needs --name X or --desc X")
+        field = "name" if args.name is not None else "desc"
+        x = args.name if args.name is not None else args.desc
+        for d, nd, path in trace(tree, state, field, x, args.n):
+            route = " -> ".join(
+                f"{p}.{tree['by_id'][p]['name']}" for p in path)
+            print(f"[{d} hop] {nd['id']}. {nd['name']} "
+                  f"(rarity {nd['rarity']}) :: {route}")
 
     save_state(state, args.state)
     return 0
