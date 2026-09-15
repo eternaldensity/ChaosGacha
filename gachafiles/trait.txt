@@ -122,16 +122,16 @@
 #Your bite contains paralyzing venom that scales with your physical abilities.
 62. Iron Man, 2.4
 #You tolerate horrible sleeping conditions, strain, wounds, and exhaustion far better, making you very hardy and enduring.
-63. Shiver, 3.4
-#Disco Elysium - You are supernaturally attuned to the world around you, hearing its voice in whispers of wind and city.
-64. Inland Empire, 4.1
-#Disco Elysium - You are unusually attuned to supernatural instincts, randomly hearing insights and flashes of the future you must decipher. Honing this sense grants otherwise-unobtainable insights, but without control you cannot distinguish reality from intuition like a schizophrenic.
-65. Half Light, 2.2
-#Disco Elysium - You are unnaturally attuned to your baser fight, flight, and fuck instincts, almost hearing them speak to you. Honing this sense helps you gauge others, fight, and know when to run, but without control you become a paranoid savage.
-66. Volition, 4.6
-#Disco Elysium - You are unnaturally connected to your inner morale, determination, and will to keep going. Honing this sense lets you hold your will against extreme adversity and perform feats of willpower with ease, but losing control leads to overconfidence.
-67. Raphael Ambrosius Costeau, 2.6
-#Disco Elysium - You listen to your inner detective with increased deductive reasoning and cue-reading, making you basically a detective without any real detective training.
+63. Shiver, 3.4, Disco Elysium
+#You are supernaturally attuned to the world around you, hearing its voice in whispers of wind and city.
+64. Inland Empire, 4.1, Disco Elysium
+#You are unusually attuned to supernatural instincts, randomly hearing insights and flashes of the future you must decipher. Honing this sense grants otherwise-unobtainable insights, but without control you cannot distinguish reality from intuition like a schizophrenic.
+65. Half Light, 2.2, Disco Elysium
+#You are unnaturally attuned to your baser fight, flight, and fuck instincts, almost hearing them speak to you. Honing this sense helps you gauge others, fight, and know when to run, but without control you become a paranoid savage.
+66. Volition, 4.6, Disco Elysium
+#You are unnaturally connected to your inner morale, determination, and will to keep going. Honing this sense lets you hold your will against extreme adversity and perform feats of willpower with ease, but losing control leads to overconfidence.
+67. Raphael Ambrosius Costeau, 2.6, Disco Elysium
+#You listen to your inner detective with increased deductive reasoning and cue-reading, making you basically a detective without any real detective training.
 68. Blood Pack, 1.4
 #Your body holds approximately 5 times the average person's blood with no noticeable effect on you.
 69. Steady, 3.9
@@ -142,8 +142,8 @@
 #Your body accepts change without damage and curbs negative side effects, so healing works better on you and changes like super soldier serum or unstable abilities harm you less.
 72. White Mage, 3.6
 #Your recovery abilities are more potent and cost less energy, and people feel more grateful for your healing.
-73. Endbringer Physiology, 8.3
-#Worm (Race Change) - You look unchanged but your physiology is overhauled into an Endbringer's, granting extreme physical stats and complete immunity to all Biological and mental abilities. Your body has hundreds of layers that grow exponentially more durable toward your core through warped spacetime, though outer layers are not much more durable, and you eventually regenerate as long as your core survives. Reaching your core requires destroying at least a planet-sized mass even at minimum durability, you resist unwilling Spacetime effects, your durability and stats scale with base stats, and you retain all prior bodily functions.
+73. Endbringer Physiology, 8.3, Worm
+#Race Change - You look unchanged but your physiology is overhauled into an Endbringer's, granting extreme physical stats and complete immunity to all Biological and mental abilities. Your body has hundreds of layers that grow exponentially more durable toward your core through warped spacetime, though outer layers are not much more durable, and you eventually regenerate as long as your core survives. Reaching your core requires destroying at least a planet-sized mass even at minimum durability, you resist unwilling Spacetime effects, your durability and stats scale with base stats, and you retain all prior bodily functions.
 74. Healthy, 1.5
 #You are very healthy with slightly increased vitality and virility, and any prior natural health complications are fixed.
 75. Cardio, 1.3
@@ -396,8 +396,8 @@
 #You never lose your balance short of your legs being sheared off.
 199. Zenkai Boost, 5.6
 #Every time you return from near death, all your stats permanently increase.
-200. Black Heart, 6.3
-#Solo Leveling - You hold a second metaphysical heart that massively increases your mana capacity and regeneration while significantly boosting all necromancy abilities.
+200. Black Heart, 6.3, Solo Leveling
+#You hold a second metaphysical heart that massively increases your mana capacity and regeneration while significantly boosting all necromancy abilities.
 201. Energy Heart, 5.8
 #Your heart is replaced by a metaphysical alternative pumping raw energy through your veins, massively increasing your maximum energy reserves. Your natural regeneration speeds add to your energy regeneration alongside regular recovery.
 202. Mana Substitution, 4.0
@@ -480,14 +480,14 @@
 #When you die, you keep moving and using your abilities for up to 1 hour before death finally claims you.
 241. Infinite Money Glitch, 6.9
 #You can always pull exactly what you need to pay from your pocket as perfect legal tender that causes no inflation. You somehow find enough money whenever you need it.
-242. Magic Circuits, 4.8
-#Fate/Tsukihime - You possess natural Magic Circuits that act as magic computers in your body, helping you regenerate energy and actualise magic and abilities. Their quantity and quality depend on your energy reserves and energy traits, or double if you already have Magic Circuits.
+242. Magic Circuits, 4.8, Fate/Tsukihime
+#You possess natural Magic Circuits that act as magic computers in your body, helping you regenerate energy and actualise magic and abilities. Their quantity and quality depend on your energy reserves and energy traits, or double if you already have Magic Circuits.
 243. Nature's Embrace, 4.2
 #Nature favors you: trees offer you fresh fruit, animals and nature-aligned beings are affectionate and aid you, and you maneuver forests with ease. You recover energy faster the closer you are to nature.
 244. Nature's Chosen, 5.7
 #As Mother Nature's favored one, you receive her protection in forests and nature. Wild animals are friendly, understand your words, trees part to guide you, bounties offer fresh produce, and nature-aligned beings recognize her touch on you. You recover energy faster the closer you are to nature.
-245. Hamon, 4.3
-#JoJo - You instinctively use and master Hamon breathing to harness Life Magnetism and sunlight through your breath. Extended practice grants you a superhuman physique, vitality, longevity, and more, and you can grant others Hamon Breathing by punching their diaphragms.
+245. Hamon, 4.3, JoJo
+#You instinctively use and master Hamon breathing to harness Life Magnetism and sunlight through your breath. Extended practice grants you a superhuman physique, vitality, longevity, and more, and you can grant others Hamon Breathing by punching their diaphragms.
 246. Gaia's Child, 6.8
 #You are Gaia's child, and Mother Nature actively defends you in forests with spear-hard branches, rising trunks, and shielding roots. Animals and nature-aligned beings favor you affectionately, and some recognize her touch on you.
 247. Heavy Weapons Guy, 3.7
@@ -640,54 +640,54 @@
 #Everyone you meet forms a good impression of you once they get to know you, even evil dictators, violent murderers, or mindless beasts. This only works on named characters.
 321. My Friend Now, 5.5
 #Everyone you meet starts friendly toward you unless they already hold a preconceived opinion of you. You can share a drink with even Thanos or Death itself.
-322. Uchiha, 6.0
-#Naruto - You carry Uchiha Clan blood, granting you increased Martial Talent, Energy Reserves, and Fire Affinity. You can potentially unlock a Natural Sharingan (Epic Ability) that costs no ability slot. (Does not give Chakra)
-323. Uzumaki, 6.4
-#Naruto - You carry Uzumaki Clan blood, granting you greatly increased Vitality and Energy Reserves. You heal yourself and others by imbuing your blood with energy and life force, and you can potentially unlock Adamantine Sealing Chains (Epic Ability) that costs no ability slot. (Does not give Chakra)
-324. Hyuga, 5.1
-#Naruto - You carry Hyuga Clan blood, granting you increased Martial Talent, Energy Reserves, and Dexterity. You can potentially unlock a natural Byakugan (Elite Ability) that costs no ability slot. (Does not give Chakra or dormant alien god genes)
-325. Senju, 6.8
-#Naruto - You descend directly from Hashirama Senju, gaining greatly increased lifeforce, energy reserves, and martial prowess. You can potentially unlock natural Wood Release (Legendary Ability) and gain increased Nature Affinity. (Does not give Chakra)
-326. Hanma, 3.5
-#Baki - You are a Hanma with exceptional genetics, giving you increased poison resistance, far faster physical stat growth, and greatly increased martial talent. You carry overwhelming testosterone compared to other men, or equal genetic gifts without the testosterone if you are female.
+322. Uchiha, 6.0, Naruto
+#You carry Uchiha Clan blood, granting you increased Martial Talent, Energy Reserves, and Fire Affinity. You can potentially unlock a Natural Sharingan (Epic Ability) that costs no ability slot. (Does not give Chakra)
+323. Uzumaki, 6.4, Naruto
+#You carry Uzumaki Clan blood, granting you greatly increased Vitality and Energy Reserves. You heal yourself and others by imbuing your blood with energy and life force, and you can potentially unlock Adamantine Sealing Chains (Epic Ability) that costs no ability slot. (Does not give Chakra)
+324. Hyuga, 5.1, Naruto
+#You carry Hyuga Clan blood, granting you increased Martial Talent, Energy Reserves, and Dexterity. You can potentially unlock a natural Byakugan (Elite Ability) that costs no ability slot. (Does not give Chakra or dormant alien god genes)
+325. Senju, 6.8, Naruto
+#You descend directly from Hashirama Senju, gaining greatly increased lifeforce, energy reserves, and martial prowess. You can potentially unlock natural Wood Release (Legendary Ability) and gain increased Nature Affinity. (Does not give Chakra)
+326. Hanma, 3.5, Baki
+#You are a Hanma with exceptional genetics, giving you increased poison resistance, far faster physical stat growth, and greatly increased martial talent. You carry overwhelming testosterone compared to other men, or equal genetic gifts without the testosterone if you are female.
 327. Lesser Undead, 2.5
 #Race - You are a lesser undead and must choose between zombie or skeleton. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your choice, and this race toggle is permanent until contested.
 328. Greater Undead, 3.8
 #Race - You are a greater undead and transform into a Death Knight or Lich based on your stats. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your form.
-329. Fishman, 4.6
-#Race(One Piece) - You are a Fishman of a random hybrid with naturally stronger physical stats than humans. You breathe underwater, hold great water affinity, communicate with sea-bound creatures, and can learn Fishman Karate.
-330. Lunarian, 6.2
-#Race(One Piece) - You are a Lunarian of a legendary race with massively increased physical stats, wings, and natural fire manipulation. While the fire on your back stays lit, your durability is massively increased.
-331. Nightkin, 4.9
-#Race(Fate) - You are a Nightkin vampire created from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding as long as you hold blood, and you grow stronger and can evolve to the next undeath stage by consuming enough blood.
-332. Nightmare, 5.2
-#Race(Tsukihime) - You are a Nightmare vampire born from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding while you hold blood and can turn people into ghouls. You wield your own unique Elite Rank Ability with no ability slot and evolve to the next undeath stage by consuming enough blood.
-333. Dead Apostle, 6.7
-#Race(Tsukihime) - You are a fully realized Dead Apostle with vastly superior physical stats and time-rewinding regenerative immortality while you hold blood. You gain your own Epic ranked ability that costs no ability slot, turn humans and animals into lower-ranking apostle thralls, and grow stronger and recover energy the more blood you consume.
-334. Dead Apostle Ancestor, 8.0
-#Race(Tsukihime) - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
+329. Fishman, 4.6, One Piece
+#Race - You are a Fishman of a random hybrid with naturally stronger physical stats than humans. You breathe underwater, hold great water affinity, communicate with sea-bound creatures, and can learn Fishman Karate.
+330. Lunarian, 6.2, One Piece
+#Race - You are a Lunarian of a legendary race with massively increased physical stats, wings, and natural fire manipulation. While the fire on your back stays lit, your durability is massively increased.
+331. Nightkin, 4.9, Fate
+#Race - You are a Nightkin vampire created from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding as long as you hold blood, and you grow stronger and can evolve to the next undeath stage by consuming enough blood.
+332. Nightmare, 5.2, Tsukihime
+#Race - You are a Nightmare vampire born from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding while you hold blood and can turn people into ghouls. You wield your own unique Elite Rank Ability with no ability slot and evolve to the next undeath stage by consuming enough blood.
+333. Dead Apostle, 6.7, Tsukihime
+#Race - You are a fully realized Dead Apostle with vastly superior physical stats and time-rewinding regenerative immortality while you hold blood. You gain your own Epic ranked ability that costs no ability slot, turn humans and animals into lower-ranking apostle thralls, and grow stronger and recover energy the more blood you consume.
+334. Dead Apostle Ancestor, 8.0, Tsukihime
+#Race - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
 335. Beastkin, 3.5
 #Race - You are a beastkin of a random animal such as bear, rabbit, cat, wolf, etc., with enhanced physical stats and night vision. You gain unique traits and biological features based on your hybrid.
-336. Ghoul, 4.2
-#Race(Tokyo Ghoul) - You are a flesh-eating ghoul with a chosen Kagune and formidable regeneration. You cannot digest anything but human flesh, and you slowly turn feral if you go longer than two weeks without dining.
-337. One-Eyed Ghoul, 5.3
-#Race(Tokyo Ghoul) - You are a One-Eyed Ghoul, stronger than an average ghoul, with superhuman stats and a chosen Kagune. You grow stronger by eating human flesh but can also eat normal human food.
-338. Vampire, 3.7
-#Race(JoJo) - You are a vampire born of the Stone Mask created by Pillar Man Kars. You gain amped physical stats, ghoul and vampire creation, and flesh manipulation, but you are deathly vulnerable to sunlight.
-339. Pillar Men, 4.6
-#Race(JoJo) - You are a pillar man unlocked by the Stone Mask with self-biokinesis, flesh absorption, thrall creation, and massively increased physical stats. You are vulnerable to sunlight.
-340. Perfect Lifeform, 5.8
-#Race(JoJo) - You are a perfect lifeform unlocked as a pillar man by the Stone Mask with the super Aja. You gain enhanced physical and magical stats and freely manipulate your own biology and body shape.
-341. Viltrumite, 7.5
-#Race(Invincible) - You are a Viltrumite of one of the galaxy's fiercest warrior races with an incredibly powerful body and free flight. You are almost invulnerable except to a specific sound frequency.
-342. Kryptonian, 8.8
-#Race(DC) - You are a Kryptonian whose physical and energy reserves grow with sunlight exposure. You gain heat vision, ice breath, high-speed flight, no need to breathe, tactile telekinesis, X-ray vision, and more, becoming basically a living god under a yellow sun.
-343. Saiyan, 7.0
-#Race(Dragon Ball) - You are a Saiyan warrior with a great natural physique and a monkey tail weakness. Under a full moon you turn into a rampaging giant monkey with massively increased stats, but you still need decades of training to grow truly strong.
-344. Child of Man, 8.4
-#Warhammer 40k - You are the child of the God Emperor of Mankind, sharing his gifted physique, charisma, martial prowess, scientific gift, and potential as the strongest Psyker. You can master all non-Chaos Psyker Disciplines and eventually tear apart a planet with Psyker power alone through training, as your power emulates the Warp without connecting to it.
-345. Majin, 7.9
-#Race(Dragon Ball) - You are a Majin descendant of Majin Buu with a malleable gum-like physique and massively enhanced physical and magical stats. You survive and regenerate from even a handful of your body and absorb people and objects to strengthen yourself, though you start with only greatly superhuman abilities and increased energy.
+336. Ghoul, 4.2, Tokyo Ghoul
+#Race - You are a flesh-eating ghoul with a chosen Kagune and formidable regeneration. You cannot digest anything but human flesh, and you slowly turn feral if you go longer than two weeks without dining.
+337. One-Eyed Ghoul, 5.3, Tokyo Ghoul
+#Race - You are a One-Eyed Ghoul, stronger than an average ghoul, with superhuman stats and a chosen Kagune. You grow stronger by eating human flesh but can also eat normal human food.
+338. Vampire, 3.7, JoJo
+#Race - You are a vampire born of the Stone Mask created by Pillar Man Kars. You gain amped physical stats, ghoul and vampire creation, and flesh manipulation, but you are deathly vulnerable to sunlight.
+339. Pillar Men, 4.6, JoJo
+#Race - You are a pillar man unlocked by the Stone Mask with self-biokinesis, flesh absorption, thrall creation, and massively increased physical stats. You are vulnerable to sunlight.
+340. Perfect Lifeform, 5.8, JoJo
+#Race - You are a perfect lifeform unlocked as a pillar man by the Stone Mask with the super Aja. You gain enhanced physical and magical stats and freely manipulate your own biology and body shape.
+341. Viltrumite, 7.5, Invincible
+#Race - You are a Viltrumite of one of the galaxy's fiercest warrior races with an incredibly powerful body and free flight. You are almost invulnerable except to a specific sound frequency.
+342. Kryptonian, 8.8, DC
+#Race - You are a Kryptonian whose physical and energy reserves grow with sunlight exposure. You gain heat vision, ice breath, high-speed flight, no need to breathe, tactile telekinesis, X-ray vision, and more, becoming basically a living god under a yellow sun.
+343. Saiyan, 7.0, Dragon Ball
+#Race - You are a Saiyan warrior with a great natural physique and a monkey tail weakness. Under a full moon you turn into a rampaging giant monkey with massively increased stats, but you still need decades of training to grow truly strong.
+344. Child of Man, 8.4, Warhammer 40k
+#You are the child of the God Emperor of Mankind, sharing his gifted physique, charisma, martial prowess, scientific gift, and potential as the strongest Psyker. You can master all non-Chaos Psyker Disciplines and eventually tear apart a planet with Psyker power alone through training, as your power emulates the Warp without connecting to it.
+345. Majin, 7.9, Dragon Ball
+#Race - You are a Majin descendant of Majin Buu with a malleable gum-like physique and massively enhanced physical and magical stats. You survive and regenerate from even a handful of your body and absorb people and objects to strengthen yourself, though you start with only greatly superhuman abilities and increased energy.
 346. Rodrigues, 2.7
 #You are a Brazilian descendant of the legendary Jetstream Sam. You can double jump and hold talent in swordsmanship and swordsmithing.
 347. Tepes, 3.8
@@ -698,8 +698,8 @@
 #Your skeleton is incredibly durable and dense, seeming nigh unbreakable without poisoning you. Note that your skeleton isn't real adamantium and scales with your physical stats.
 350. Vibranium Skeleton, 6.6
 #Your skeleton resembles Vibranium more than bone, seeming nigh unbreakable while absorbing and storing kinetic energy. You spend that stored energy to temporarily enhance your physical strength. Note that your skeleton isn't real Vibranium and scales with your physical stats.
-351. Adamantium Bonding, 4.2
-#Marvel - Your skeleton is bonded with Adamantium, making it borderline unbreakable but severely poisoning you. You should wait to activate this trait unless you have countermeasures lined up.
+351. Adamantium Bonding, 4.2, Marvel
+#Your skeleton is bonded with Adamantium, making it borderline unbreakable but severely poisoning you. You should wait to activate this trait unless you have countermeasures lined up.
 352. Sensor, 2.9
 #You hold a knack for sensing and locating energy/mana/chakra, etc. Your energy-sensing and Thinker abilities are enhanced.
 353. Man vs World, 4.8
@@ -740,18 +740,18 @@
 #All magic is completely nullified against you, so even a god of magic dropping the Big Bang on you would not scratch you. You cannot use magic to any extent while this trait stays active.
 371. Summoner, 4.5
 #You summon and command creatures, familiars, spirits, and summons naturally. Your familiars gain enhanced stats for less energy, your projection-type abilities and spells grow more potent, and you build affection and loyalty with summons and contracted entities more easily.
-372. Brand of Tzeentch, 5.8
-#Warhammer 40k - You wear the brand of Tzeentch, the Changer of Ways, greatly speeding your comprehension and learning. You improve skill and magic far faster and can learn spells normally barred to you by restrictions like race. Note: Brands do not connect you to the Chaos Gods or Warp.
-373. Brand of Slaanesh, 4.6
-#Warhammer 40k - You wear the brand of Slaanesh, the Lord of Pleasure, greatly increasing your understanding of others and letting you vaguely feel their emotions. Your presence grows naturally more charismatic and alluring. Note: Brands do not connect you to the Chaos Gods or Warp.
-374. Brand of Khorne, 5.3
-#Warhammer 40k - You wear the brand of Khorne, the Blood God, greatly increasing your combat propensity with heightened instincts and intuition for any weapon or skill. You track blood and sense killing intent instinctively as a natural killing machine. Note: Brands do not connect you to the Chaos Gods or Warp.
-375. Brand of Nurgle, 5.4
-#Warhammer 40k - You wear the brand of Nurgle, the Plague Father, making you immune to poisons, toxins, and diseases below Legendary rank and greatly resistant above it. You understand poisons, toxins, and diseases better, increasing related ability potency and your power to cure them. Note: Brands do not connect you to the Chaos Gods or Warp.
-376. Spiral, 9.9
-#Tengen Toppa Gurenn Lagann - If you hold the will, you find a way.
-377. Monster of God, 7.2
-#Hellsing | Race Change - You are a monster of god transformed by Helena's Nail through your heart, with monstrous physical stats and holy energy so potent your touch sets a true vampire ablaze. You conjure and freely control holy thorned vines like limbs that protect you on instinct and set anything unholy they touch ablaze with holy fire. You stay completely immortal while your heart remains intact as your vines rebuild your body without consuming energy or using an ability slot.
+372. Brand of Tzeentch, 5.8, Warhammer 40k
+#You wear the brand of Tzeentch, the Changer of Ways, greatly speeding your comprehension and learning. You improve skill and magic far faster and can learn spells normally barred to you by restrictions like race. Note: Brands do not connect you to the Chaos Gods or Warp.
+373. Brand of Slaanesh, 4.6, Warhammer 40k
+#You wear the brand of Slaanesh, the Lord of Pleasure, greatly increasing your understanding of others and letting you vaguely feel their emotions. Your presence grows naturally more charismatic and alluring. Note: Brands do not connect you to the Chaos Gods or Warp.
+374. Brand of Khorne, 5.3, Warhammer 40k
+#You wear the brand of Khorne, the Blood God, greatly increasing your combat propensity with heightened instincts and intuition for any weapon or skill. You track blood and sense killing intent instinctively as a natural killing machine. Note: Brands do not connect you to the Chaos Gods or Warp.
+375. Brand of Nurgle, 5.4, Warhammer 40k
+#You wear the brand of Nurgle, the Plague Father, making you immune to poisons, toxins, and diseases below Legendary rank and greatly resistant above it. You understand poisons, toxins, and diseases better, increasing related ability potency and your power to cure them. Note: Brands do not connect you to the Chaos Gods or Warp.
+376. Spiral, 9.9, Tengen Toppa Gurenn Lagann
+#If you hold the will, you find a way.
+377. Monster of God, 7.2, Hellsing
+#Race Change - You are a monster of god transformed by Helena's Nail through your heart, with monstrous physical stats and holy energy so potent your touch sets a true vampire ablaze. You conjure and freely control holy thorned vines like limbs that protect you on instinct and set anything unholy they touch ablaze with holy fire. You stay completely immortal while your heart remains intact as your vines rebuild your body without consuming energy or using an ability slot.
 378. Magical Girl Transformation, 0.3
 #You perform all transformations with overly dramatic Magical Girl Transformation flair.
 379. Hard to Kill, 7.5
@@ -772,10 +772,10 @@
 #You halve the restock timer and cooldown of all your items.
 387. Avaricious Greed, 7.2
 #More, more, more: you cannot get enough, as the restock timers and cooldown of all your items drop by 100x.
-388. Blood Demon, 5.4
-#Demon Slayer - You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
-389. Progenitor Demon, 6.9
-#Demon Slayer - You are a progenitor sharing all of Muzan Kibutsuji's powers with free shapeshifting, extremely powerful regeneration, and superhuman physical abilities. You turn others into demons with your blood, but sunlight is extremely lethal to you.
+388. Blood Demon, 5.4, Demon Slayer
+#You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
+389. Progenitor Demon, 6.9, Demon Slayer
+#You are a progenitor sharing all of Muzan Kibutsuji's powers with free shapeshifting, extremely powerful regeneration, and superhuman physical abilities. You turn others into demons with your blood, but sunlight is extremely lethal to you.
 390. Regenerative, 4.7
 #Your body receives all healing unusually well with 5x stronger natural regeneration and 2x more effective healing effects.
 391. Wardrobe, 3.5
@@ -784,8 +784,8 @@
 #You gain literally nothing, which makes your unluckiness simply impressive.
 393. No Weakness, 6.0
 #You set any negative resistance you hold to zero, turning even an 8x fire weakness to neutral and leaving even a shadow demon unharmed by light.
-394. Beast, 9.5
-#Fate - You are a Beast of Humanity formed from humanity's evil who loves Humanity. You hold nigh unlimited magical power and mystery with your own Logos or Law and your own Nega ability, a Divine-level authority costing no slot. You also hold Independent Manifestation and any other powers a beast holds.
+394. Beast, 9.5, Fate
+#You are a Beast of Humanity formed from humanity's evil who loves Humanity. You hold nigh unlimited magical power and mystery with your own Logos or Law and your own Nega ability, a Divine-level authority costing no slot. You also hold Independent Manifestation and any other powers a beast holds.
 395. Metabolism, 1.9
 #You control your unnaturally variable metabolism at will. You slow it to a near stop or speed it to unnaturally fast levels.
 396. Hunger, 2.7
@@ -802,24 +802,24 @@
 #You increase your fame and gain recognition and rewards for achievements more easily. You also assert your achievements and make people believe you more easily.
 402. Gloryhound, 4.6
 #You are a Gloryhound with a sixth sense for opportunities that increase your fame and reputation. You make people perceive you as you want more easily by shifting your vibe to feel dangerous, comforting, or imposing.
-403. King Engine, 8.2
-#One Punch Man - You hold the King Engine in your heart that beats loudly at just the right moments. You master bluffing so fully that others delude themselves about you without your claims, making you almost invincible with enough luck to back it up.
-404. Psyker, 5.5
-#Warhammer 40k - You are a Psyker who emulates Immaterium power through infinite Chaos instead of drawing from it. You choose one of the 5 common disciplines to specialise in and wield. (Only one may be chosen, another can be chosen if the trait is rolled again)
-405. Greater Psyker, 6.5
-#Warhammer 40k - You are a Greater Psyker who emulates Immaterium power through infinite Chaos instead of drawing from it. You master disciplines far quicker and master all 5 common disciplines without penalty.
-406. Psyker(Biomancy), 4.8
-#Warhammer 40k - You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Biomancy and trains to manipulate the flesh of friend and foe with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Biomancy_Discipline
-407. Psyker(Pyromancy), 4.2
-#Warhammer 40k - You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Pyromancy and trains to create fire from your mind and weave it into firestorms and attacks. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Pyromancy_Discipline
-408. Psyker(Telekinesis), 4.9
-#Warhammer 40k - You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telekinesis and trains to manipulate space and the material world with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telekinesis_Discipline
-409. Psyker(Telepathy), 5.1
-#Warhammer 40k - You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telepathy and trains to bind the wills and minds around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telepathy_Discipline
-410. Psyker(Divination), 5.3
-#Warhammer 40k - You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Divination and trains to uncover the past, present, and future around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Divination_Discipline
-411. Old Blood, 6.3
-#Bloodborne - You carry Great One blood granting you greater vitality, energy, Esoteric resistance, and larger reserves that make Magic and Esoteric Arts easier to learn, understand, and train. Your blood heals in proportion to your vitality, but heavy drinkers risk your corruptive presence while you can exert greater influence over those who consume it. (You are not an actual Great One)
+403. King Engine, 8.2, One Punch Man
+#You hold the King Engine in your heart that beats loudly at just the right moments. You master bluffing so fully that others delude themselves about you without your claims, making you almost invincible with enough luck to back it up.
+404. Psyker, 5.5, Warhammer 40k
+#You are a Psyker who emulates Immaterium power through infinite Chaos instead of drawing from it. You choose one of the 5 common disciplines to specialise in and wield. (Only one may be chosen, another can be chosen if the trait is rolled again)
+405. Greater Psyker, 6.5, Warhammer 40k
+#You are a Greater Psyker who emulates Immaterium power through infinite Chaos instead of drawing from it. You master disciplines far quicker and master all 5 common disciplines without penalty.
+406. Psyker(Biomancy), 4.8, Warhammer 40k
+#You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Biomancy and trains to manipulate the flesh of friend and foe with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Biomancy_Discipline
+407. Psyker(Pyromancy), 4.2, Warhammer 40k
+#You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Pyromancy and trains to create fire from your mind and weave it into firestorms and attacks. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Pyromancy_Discipline
+408. Psyker(Telekinesis), 4.9, Warhammer 40k
+#You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telekinesis and trains to manipulate space and the material world with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telekinesis_Discipline
+409. Psyker(Telepathy), 5.1, Warhammer 40k
+#You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telepathy and trains to bind the wills and minds around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telepathy_Discipline
+410. Psyker(Divination), 5.3, Warhammer 40k
+#You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Divination and trains to uncover the past, present, and future around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Divination_Discipline
+411. Old Blood, 6.3, Bloodborne
+#You carry Great One blood granting you greater vitality, energy, Esoteric resistance, and larger reserves that make Magic and Esoteric Arts easier to learn, understand, and train. Your blood heals in proportion to your vitality, but heavy drinkers risk your corruptive presence while you can exert greater influence over those who consume it. (You are not an actual Great One)
 412. Salty Tears, 0.1
 #Your tears are now twice as salty.
 413. Lucky Romantic, 2.5
@@ -894,8 +894,8 @@
 #Ichor flows through your veins. You gain extreme vitality, a natural healing factor, and incredible poison and disease resistance. Even as a regular human, you will live into your late thousands. Your blood also has healing properties and serves as an excellent potion ingredient.
 448. Edible Fluids, 1.2
 #Your bodily fluids such as sweat, saliva, blood, and ejaculate are nutritionally and calorically dense, very healthy, and surprisingly good-tasting. Consuming your own fluids does nothing for you.
-449. Midi-Chlorians, 6.3
-#Star Wars - Your biology contains special microscopic lifeforms attuned to the Force. You can train in the ways of the Force, with your midichlorian count depending on your stats and traits. The higher your count, the more potent your Force connection and the faster you master Force-related abilities.
+449. Midi-Chlorians, 6.3, Star Wars
+#Your biology contains special microscopic lifeforms attuned to the Force. You can train in the ways of the Force, with your midichlorian count depending on your stats and traits. The higher your count, the more potent your Force connection and the faster you master Force-related abilities.
 450. Deus Eggs Machina, 0.8
 #You can find a regular chicken egg anywhere at opportune moments.
 451. Drunk Driver, 0.9
@@ -952,8 +952,8 @@
 #Your body is tempered by the Vile. When diseases or poisons afflict you, your body uses them as fuel to grow stronger and develop a stronger immune system. The stronger and more exotic the affliction, the faster your body increases its physical stats and develops immunity.
 477. Glowing One, 5.0
 #You passively absorb radiation like a sponge, consuming it to fuel your body and energy. Absorbing enough radiation, such as Gamma Radiation, X-rays, and even ultraviolet radiation, permanently increases your physical stats and energy reserves proportionally to the amount absorbed. You are also immune to radiation's negative effects and recover stamina and energy faster when exposed to it. While sunlight has negligible effect, eating radium chips would likely act like cultivation pills for you.
-478. Soul Vessel, 5.5
-#Hollow Knight - You are a vessel. You can absorb and channel "soul" to heal yourself by focusing or train to use it in Shaman spells such as Howling Wraiths, Soul Nails, short-range teleportation, and similar spells. You gain soul by injuring living beings, and your maximum storage scales with your maximum energy while remaining distinctly separate.
+478. Soul Vessel, 5.5, Hollow Knight
+#You are a vessel. You can absorb and channel "soul" to heal yourself by focusing or train to use it in Shaman spells such as Howling Wraiths, Soul Nails, short-range teleportation, and similar spells. You gain soul by injuring living beings, and your maximum storage scales with your maximum energy while remaining distinctly separate.
 479. Ambidextrous, 1.2
 #You are perfectly ambidextrous. You use both arms and hands as if both were dominant, and the same balance applies to all limbs, perfectly balanced, as all things should be.
 480. Tune Up, 3.3
@@ -970,20 +970,20 @@
 #You are very good at getting under people's skin, whether angering them or breaking their stoic mask with a joke or flirty remark. Others find it harder to keep their composure around you.
 486. Steel Man, 4.1
 #You have a heart of steel that endures any hardship; your body needs less than even the bare minimum. You need only 1/100th of your normal sustenance; you can go entire years without eating, months without drinking a drop of water, and need only 1/100th of your usual sleep, sleeping every few months or so even as a regular human.
-487. Blacklight Physique, 7.4
-#Prototype - Race Change - Your previous genetic material is completely assimilated, turning you into a living mass of Blacklight Virus. Even at base, you can smash apart tanks and outrun cars. You can also regenerate by assimilating biological matter. As long as even a fist-sized mass of Blacklight forming your core remains, you still live. You can analyze and replicate any biological part you consume. The stronger the assimilated target, the harder it is to assimilate them.
-488. Dragonlord, 7.0
-#Elden Ring - Race Change - You are the hatchling of Placidusax, the Dragonlord. As a Royal Ancient Dragon, albeit a child, you gain greatly superhuman physical abilities and greatly increased magical powers. You can shift between your 5-headed ancient dragon form and humanoid form at will; your dragon form's size depends on your power level and maturity. You possess gilded gravel scales granting incredible resilience, and as Placidusax's child, you can breathe incinerating golden flames and manifest crimson dragon lightning. Unique to your lineage, you possess immense time affinity, letting you learn time spells on your own through natural inclination. But even with talent, time is no trifling power and mastery will take a very, very long time.
-489. Everlasting Dragon, 6.8
-#Dark Souls - Race Change - You are an Everlasting Dragon, a being from before time and light; well, at least a hatchling of one. As an Everlasting Dragon, you gain greatly superhuman stats and magical abilities. Most of all, you possess the Stone Scales of Immortality. While in dragon form with your scales on, you are incredibly resilient to any attack, as if armored in adamantium with similar magic resistance, plus great regenerative abilities. But lightning or a greatly powerful attack rends your scales from your flesh and removes your increased durability. You can shift between base and dragon forms at will.
+487. Blacklight Physique, 7.4, Prototype
+#Race Change - Your previous genetic material is completely assimilated, turning you into a living mass of Blacklight Virus. Even at base, you can smash apart tanks and outrun cars. You can also regenerate by assimilating biological matter. As long as even a fist-sized mass of Blacklight forming your core remains, you still live. You can analyze and replicate any biological part you consume. The stronger the assimilated target, the harder it is to assimilate them.
+488. Dragonlord, 7.0, Elden Ring
+#Race Change - You are the hatchling of Placidusax, the Dragonlord. As a Royal Ancient Dragon, albeit a child, you gain greatly superhuman physical abilities and greatly increased magical powers. You can shift between your 5-headed ancient dragon form and humanoid form at will; your dragon form's size depends on your power level and maturity. You possess gilded gravel scales granting incredible resilience, and as Placidusax's child, you can breathe incinerating golden flames and manifest crimson dragon lightning. Unique to your lineage, you possess immense time affinity, letting you learn time spells on your own through natural inclination. But even with talent, time is no trifling power and mastery will take a very, very long time.
+489. Everlasting Dragon, 6.8, Dark Souls
+#Race Change - You are an Everlasting Dragon, a being from before time and light; well, at least a hatchling of one. As an Everlasting Dragon, you gain greatly superhuman stats and magical abilities. Most of all, you possess the Stone Scales of Immortality. While in dragon form with your scales on, you are incredibly resilient to any attack, as if armored in adamantium with similar magic resistance, plus great regenerative abilities. But lightning or a greatly powerful attack rends your scales from your flesh and removes your increased durability. You can shift between base and dragon forms at will.
 490. Nidhogg, 7.8
 #Race Change - You are a descendant of Nidhogg, the mythical dragon of Death and Decay. You can swap between base and Nidhogg forms at will; your degree of transformation dictates your accessible power. You gain tremendous physical abilities and incredibly potent, dense magical energy. You gain overwhelming affinity for necromancy, letting you naturally revive the dead as undead under your command and massively boosting the potency and efficiency of any necromancy-based abilities or spells you use. Your dragon breath distills the concept of decay, rotting whatever it touches down to flesh, soul, and existence. Effectiveness varies with target and power level.
 491. Gift of Nyar, 4.9
 #You have received a gift from Nyarlathotep, the Crawling Ones. All Stranger abilities gain potency and cost less energy to use. You also grow more proficient in deception, obscurification, and acting.
 492. Hydra Heart, 7.8
 #Your heart is that of a Mythical Hydra, granting Epic-level regeneration that expends stamina and energy. In addition, you possess 9 lives. Whenever your heart or head is destroyed, you almost instantly restore to peak health with all negative conditions cleansed. Any resurrection effect of Legendary rank or above can restore a life.
-493. Ork Colour Theory, 4.5
-#Warhammer 40k - You hold a PhD in Ork Colour Theory. You can paint things to gain the benefits Orks gain. RED IZ FASTA, BLACK IZ TOUGHA, YELLOW IZ BIG BOOM, PURPLE IS SNEAKYY, BLUE IZ LUCKER AND GREEN IZ DA BEST. For a target to benefit, you must paint it yourself.
+493. Ork Colour Theory, 4.5, Warhammer 40k
+#You hold a PhD in Ork Colour Theory. You can paint things to gain the benefits Orks gain. RED IZ FASTA, BLACK IZ TOUGHA, YELLOW IZ BIG BOOM, PURPLE IS SNEAKYY, BLUE IZ LUCKER AND GREEN IZ DA BEST. For a target to benefit, you must paint it yourself.
 494. Reaper's Writ, 5.4
 #Death itself permits you to kill anything, and reality obeys. Against an Immortal target, you can nullify their immortality. Any lethal blow you land that would kill them without immortality enacts absolute death and prevents resurrection unless you declare they may live. Even a god, avatar, or spirit loses immortality before you.
 495. Introspection, 1.8
@@ -998,16 +998,16 @@
 #Your natural healing works differently; instead of regenerating, your body constantly restores itself to its healthiest state at your normal regeneration speed, affecting even curses, diseases, and afflictions. Of course, the more severe the effect, the longer and harder your restoration to full condition becomes.
 500. Tune Up, 3.3
 #Your body has received a Tune Up. All previous health complications are erased, and your body improves to increase your latent genetic potential and give you a fit, incredibly healthy body.
-501. Code of Immortality, 7.6
-#Code Geass - You bear the Code of Immortality from an imitation of C's World. Whenever you suffer fatal wounds, sickness, or otherwise cannot function, a pocket dimension constantly producing replacement parts for your existence instantly replaces parts of you, keeping you healthy, ageless, and alive. This includes your mind and soul. You can only stay dead if separated from your dimension, your lives are exhausted faster than they reproduce, or you are killed by a spatial attack. In addition, you can grant individuals Geass, an eye-manifested power whose exact function and strength depend on their potential. You can always sense anyone you give Geass to and those they deem closest to them.
+501. Code of Immortality, 7.6, Code Geass
+#You bear the Code of Immortality from an imitation of C's World. Whenever you suffer fatal wounds, sickness, or otherwise cannot function, a pocket dimension constantly producing replacement parts for your existence instantly replaces parts of you, keeping you healthy, ageless, and alive. This includes your mind and soul. You can only stay dead if separated from your dimension, your lives are exhausted faster than they reproduce, or you are killed by a spatial attack. In addition, you can grant individuals Geass, an eye-manifested power whose exact function and strength depend on their potential. You can always sense anyone you give Geass to and those they deem closest to them.
 502. Shoebody, 1.8
 #"Bop!" Your skull is unusually durable, and your headbutts and skull-based attacks are more potent.
-503. Silkheart, 5.2
-#Silksong - You can naturally turn your energy reserves into silk. You can manipulate this silk as part of your body and dissolve it at will. You can control it to perform a wide variety of Silk Arts, such as shooting silk needles, whipping it around, binding your own wounds, and similar uses.
+503. Silkheart, 5.2, Silksong
+#You can naturally turn your energy reserves into silk. You can manipulate this silk as part of your body and dissolve it at will. You can control it to perform a wide variety of Silk Arts, such as shooting silk needles, whipping it around, binding your own wounds, and similar uses.
 504. Chaos Response, 4.3
 #Your existence is chaos as defined by the chaos gacha, automatically feeding back into whatever tries to examine you. Future sight becomes scrambled and incoherent, abilities reading you malfunction, and mind-reading causes at least a severe headache.
-505. Broken Limiter, 9.5
-#One Punch Man - You possess a broken limiter, making your physical abilities practically boundless. Whenever you are pushed, your physical abilities grow exponentially, scaling with how challenged you are.
+505. Broken Limiter, 9.5, One Punch Man
+#You possess a broken limiter, making your physical abilities practically boundless. Whenever you are pushed, your physical abilities grow exponentially, scaling with how challenged you are.
 506. Elementalist, 3.8
 #You have great affinity with the elements. Elemental abilities and spells cost less energy, and elementals and spirits gain affinity for you and like you more easily.
 507. Exorcist, 3.4
@@ -1036,12 +1036,12 @@
 #Race Change - You are the Eclipse, pure necromancy shaped as an undead, a living icon of death meant to extinguish life. Though only superhuman physically, your magical reserves are vast and incredibly potent with infinite stamina from undeath. As Necromancy embodied, your affinity for Necromancy spells and Abilities is unmatched, increasing all their potency beyond normal limits and letting you invent spells by instinct and learn existing ones by observation. You can also naturally use [True Necromancy] to raise an undead army, all undead under your command are naturally more powerful and cognizant, and you can command an unlimited number at once. Any undead outside your command naturally feels compelled to submit to you.
 519. Skeleton, 2.2
 #Race Change - You are an animated skeleton, the most basic undead. Your physical stats match your living state, but you need no sustenance or rest, needing only your own energy reserves to sustain yourself. You also gain increased Necro and Dark affinity but gain vulnerability to Light- and Holy-based abilities. (This can be rerolled for free)
-520. Kure, 2.8
-#Kengan Ashura - You are a member of the Kure Clan, selectively bred as assassins and martial artists. Your genes grant increased physical abilities, greater physical growth, and better combat instincts. You can also use "Removal", removing the brain's natural limiters that prevent using 100% of your physical strength to avoid self-injury. You can increase your Removal percentage through training.
+520. Kure, 2.8, Kengan Ashura
+#You are a member of the Kure Clan, selectively bred as assassins and martial artists. Your genes grant increased physical abilities, greater physical growth, and better combat instincts. You can also use "Removal", removing the brain's natural limiters that prevent using 100% of your physical strength to avoid self-injury. You can increase your Removal percentage through training.
 521. Pretty Up, 1.9
 #You gain a cosmetic alteration to your physique and form, making you more attractive by your own standards. You may gain longer, prettier hair, a few inches of height, different eye color, and similar changes. You cannot completely change your looks, only enhance what exists; an ordinary person becomes fairly attractive, but anyone who knows you can still recognize you.
-522. Newtype, 4.2
-#Gundam - You are a Newtype, an evolved human adapted to space. Other than a slightly stronger body, you gain greatly increased spatial awareness and mental focus, boosting all Thinker abilities. You can also naturally sense malintent directed at you. With enough training and meditation, you may even unlock communication with others' minds.
+522. Newtype, 4.2, Gundam
+#You are a Newtype, an evolved human adapted to space. Other than a slightly stronger body, you gain greatly increased spatial awareness and mental focus, boosting all Thinker abilities. You can also naturally sense malintent directed at you. With enough training and meditation, you may even unlock communication with others' minds.
 523. Rule of Cool, 2.8
 #You hold the Rule of Cool. Physics bends slightly around you to let you do things the "cool" way despite impossibility, Style AND Substance baby. You can snatch a bullet from the air and send it back, walk away from an explosion unfazed, perform mid-fight tricks without disadvantage, and similar feats; doing things the cool way comes naturally to you. (Does not affect your stats or level of skills.)
 524. Crazy Lure, 3.2
@@ -1054,8 +1054,8 @@
 #Your hugs and snuggles comfort even broken souls, feeling like the softest, warmest blanket while therapeutically stabilizing and comforting your target.
 528. Chompers, 1.4
 #Your teeth are spectacularly strong and durable, letting you bite and chew rock without damage. You never worry about dental health, and any broken teeth regrow like fingernails.
-529. Nakiri, 2.9
-#Shokugeki no Souma - You are a child of the Nakiri Clan, a born gourmet and chef with natural cooking affinity who improves skills and recipes far faster than ordinary people. You possess the God Tongue, discerning taste unimaginably well and identifying specific ingredients and their amounts from a single bite.
+529. Nakiri, 2.9, Shokugeki no Souma
+#You are a child of the Nakiri Clan, a born gourmet and chef with natural cooking affinity who improves skills and recipes far faster than ordinary people. You possess the God Tongue, discerning taste unimaginably well and identifying specific ingredients and their amounts from a single bite.
 530. Anathema, 6.4
 #You oppose the Gods and Divine, possessing massive resistance to all Divine influence and Authorities, and your physical and magical abilities massively increase against Divine opponents.
 531. Dominant, 4.1
@@ -1126,24 +1126,24 @@
 #Race Change - You are a Child of Ziz, Primordial beast rival to Behemoth and Leviathan and ruler of the skies. You possess greatly enhanced physical and magical abilities, and you reveal and hide your true form at will, partially or fully becoming a titanic avian beast. You naturally manipulate weather at will — storms, blizzards, rain, hurricanes, tornadoes, etc. — plus greater lightning. All your weather-based abilities and spells are greatly enhanced. You greatly resist wind, ice, and electricity-based abilities. Your energy and health recovery are enhanced under open skies. You possess decreased water and earth affinity.
 564. Allowance, 2.2
 #You receive the equivalent of 2x the daily minimum wage for whatever city/country you currently live in, deposited into your account or wallet every single day.
-565. Kyoi no Hado, 5.7
-#Street Fighter - You have awakened the Kyoi no Hado, the Surge of Mindless Intent, also called the Sacred Hado, letting you tap your own Ki reserves. It requires calmness, balance, resoluteness, and focus to draw power from your inner energy and soul. You reinforce strikes with it, protect your body from foreign influences, and shape it into wave-like surges offensively and defensively. Skilled enough users interact with souls. Practicing it increases your mental and spiritual defenses.
-566. Satsui no Hado, 5.8
-#Street Fighter - You have awakened the Satsui no Hado, the Surge of Killing Intent, also called the Dark Hado, letting you tap your inner Ki reserves. It requires tapping your animalistic bloodlust, rage, and murderous intent to manifest killing intent and draw inner energy through it. It slightly transforms you, enhancing physical strength, letting you imbue strikes with energy, and turning Ki into dark flame-like energy. Skilled enough users telekinetically control objects. The more you practice it, the stronger you grow, and the stronger your desire for conflict and conquest grows. Without control you may transform into an Oni, but you can tame it no matter how difficult.
+565. Kyoi no Hado, 5.7, Street Fighter
+#You have awakened the Kyoi no Hado, the Surge of Mindless Intent, also called the Sacred Hado, letting you tap your own Ki reserves. It requires calmness, balance, resoluteness, and focus to draw power from your inner energy and soul. You reinforce strikes with it, protect your body from foreign influences, and shape it into wave-like surges offensively and defensively. Skilled enough users interact with souls. Practicing it increases your mental and spiritual defenses.
+566. Satsui no Hado, 5.8, Street Fighter
+#You have awakened the Satsui no Hado, the Surge of Killing Intent, also called the Dark Hado, letting you tap your inner Ki reserves. It requires tapping your animalistic bloodlust, rage, and murderous intent to manifest killing intent and draw inner energy through it. It slightly transforms you, enhancing physical strength, letting you imbue strikes with energy, and turning Ki into dark flame-like energy. Skilled enough users telekinetically control objects. The more you practice it, the stronger you grow, and the stronger your desire for conflict and conquest grows. Without control you may transform into an Oni, but you can tame it no matter how difficult.
 567. Reptilian Rapport, 2.7
 #You have great affinity with lizards, reptiles, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your reptilian affinity, regeneration-based effects, abilities, and spells applied to you are more potent.
 567. Canis Companion, 2.6
 #You have great affinity with dogs, canines, wolves, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your Canis affinity, your sense-based abilities and traits are more potent, and you control your own senses more easily.
 568. Arthropod Affiliate, 2.4
 #You have great affinity with insects, arachnids, crustaceans, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your arthropod affinity, you possess slightly increased durability, and your armor-based abilities and effects cost slightly less energy to use.
-569. Warrior of Sunlight, 4.1
-#Dark Souls - You are a Warrior of Sunlight, praising the sun and devoting faith to it to receive power in return. You possess increased vitality. All your Lightning and Fire-based abilities are slightly more potent and carry traces of sunlight, further increasing potency against Undead and Dragons. Beings aligned with Sun and Light may favor you more.
-570. Gravelord Servant, 3.4
-#Dark Souls - You are a Gravelord Servant, servant of Nito, the first of the dead. You possess increased energy reserves, and your Necromancy and Soul-based abilities are more powerful. You possess greater affinity toward undead, and mindless wild undead do not treat you as an enemy unless provoked.
-571. Darkwraith, 3.1
-#Dark Souls - You are a Darkwraith, seeking to wield darkness and end light. Your physical abilities are slightly enhanced in darkness. All your Dark-based abilities and spells are more potent and inflict additional damage against Light-aligned beings.
-572. Path of Dragon, 4.2
-#Dark Souls - You follow the Path of the Dragon, seeking to transcend life through Dragons' flesh. You offer Dragons' flesh to the Everlasting Dragons and imbue it into your own flesh, enhancing all physical stats relative to how strong its owner was compared to you and gaining minor draconic aspects. The more flesh you offer, the more draconic you become, potentially becoming an Everlasting Dragon (Legendary) yourself.
+569. Warrior of Sunlight, 4.1, Dark Souls
+#You are a Warrior of Sunlight, praising the sun and devoting faith to it to receive power in return. You possess increased vitality. All your Lightning and Fire-based abilities are slightly more potent and carry traces of sunlight, further increasing potency against Undead and Dragons. Beings aligned with Sun and Light may favor you more.
+570. Gravelord Servant, 3.4, Dark Souls
+#You are a Gravelord Servant, servant of Nito, the first of the dead. You possess increased energy reserves, and your Necromancy and Soul-based abilities are more powerful. You possess greater affinity toward undead, and mindless wild undead do not treat you as an enemy unless provoked.
+571. Darkwraith, 3.1, Dark Souls
+#You are a Darkwraith, seeking to wield darkness and end light. Your physical abilities are slightly enhanced in darkness. All your Dark-based abilities and spells are more potent and inflict additional damage against Light-aligned beings.
+572. Path of Dragon, 4.2, Dark Souls
+#You follow the Path of the Dragon, seeking to transcend life through Dragons' flesh. You offer Dragons' flesh to the Everlasting Dragons and imbue it into your own flesh, enhancing all physical stats relative to how strong its owner was compared to you and gaining minor draconic aspects. The more flesh you offer, the more draconic you become, potentially becoming an Everlasting Dragon (Legendary) yourself.
 573. Covenant Leader, 5.4
 #You can establish your own covenant. Those pledging themselves to your service and joining it acquire boons from you based on their contribution. The boons you grant are lesser copies of your traits and abilities, fueled by accumulated karma. Rarity depends on contribution level but never reaches the original's rarity. If they break your covenant's laws, their boons are instantly revoked.
 574. Pendragon, 5.3
@@ -1164,14 +1164,14 @@
 #"Not to be confused with a maid of fire." You temper your body with flames, increasing your physical abilities proportionally to the intensity and potency of the flames burning you. You must endure exposure for extended periods to temper properly. This grants no fire resistance or immunity, and the higher your flame resistance, the less effective it is.
 582. Vessel, 4.5
 #Your body and soul are incredible vessels, perfectly suited to sealing things inside and containing them. Whatever you seal inside or absorb finds it far harder to rebel and break out. You also fit much more into your vessel.
-583. Prime Soul, 7.6
-#Ultrakill - Your soul has ascended to a Prime Soul, grown so powerful it needs no body to exist. Your soul affinity is massively enhanced, and you massively resist all soul, mind, and existence-targeting abilities. If you die, you shed your Husk and continue existing in Prime Soul form.
+583. Prime Soul, 7.6, Ultrakill
+#Your soul has ascended to a Prime Soul, grown so powerful it needs no body to exist. Your soul affinity is massively enhanced, and you massively resist all soul, mind, and existence-targeting abilities. If you die, you shed your Husk and continue existing in Prime Soul form.
 584. Mythril Fist, 4.8
 #Your fists are like Mythril, considerably augmenting the power of all your unarmed strikes and enhancing all fist-based abilities.
 585. Adamantine Fist, 5.5
 #Your fists are like Adamantine, unbreakable and incredibly powerful and durable. The power of all your unarmed strikes is greatly enhanced, and all fist-based abilities are easier to use and more powerful.
-586. Regenerator, 5.9
-#Hellsing - You are a Regenerator, an advanced bioengineered human with superhuman physical performance and incredible natural regeneration that heals bullet wounds in seconds without fundamentally changing your humanity. Lethal wounds are still lethal, so exercise caution.
+586. Regenerator, 5.9, Hellsing
+#You are a Regenerator, an advanced bioengineered human with superhuman physical performance and incredible natural regeneration that heals bullet wounds in seconds without fundamentally changing your humanity. Lethal wounds are still lethal, so exercise caution.
 587. The Santa Clause, 1.9
 #You fall under Santa's clause: people do not mind you entering places you should not be or lingering where you are not meant to be. They still get offended and angry if you cause a disturbance or do something offensive.
 588. Sexercise, 1.5
@@ -1212,36 +1212,36 @@
 #Your health is insured: whenever you are wounded, you are granted the exact money needed to pay a professional to treat your injuries or illnesses. Attempting insurance fraud may revoke this trait.
 606. Touch of Death, 4.6
 #You possess uncanny intuition for linking blows and keeping momentum when attacking. Once you land your first attack, you keep up pressure and chain attacks far more easily, exploiting the opening it creates.
-607. No Life King, 7.6
-#Hellsing - You are a vampire of the original Vampire's lineage: Dracula, Nosferatu, the No Life King. Besides massively increased physical abilities, you convert your body into Shadow Matter at will and shapeshift with it. By feeding on others' blood, you fully heal yourself and absorb their souls to use as familiars.
+607. No Life King, 7.6, Hellsing
+#You are a vampire of the original Vampire's lineage: Dracula, Nosferatu, the No Life King. Besides massively increased physical abilities, you convert your body into Shadow Matter at will and shapeshift with it. By feeding on others' blood, you fully heal yourself and absorb their souls to use as familiars.
 608. Bully, 2.5
 #Against opponents already greatly weaker than you, you possess increased physical stats and your abilities cost less energy.
 609. Luddite, 4.2
 #(Tech) No machine takes your job or life. Whenever you face an opponent relying on high-level technology, you gain augmented reflexes, comprehension, and combat instincts against them, and attacks from high-technology constructs are less effective against you.
 610. Technoclast, 7.1
 #(Tech) You are the bane of Man and Machine. Against a high-technology target, all your abilities are greatly augmented and you gain massively increased combat instincts. You massively resist any effect from high technology, to the point a railgun hits like a slingshot. These effects amplify further if your opponent is an artificial high-tech lifeform.
-611. Style, 4.2
-#Ultrakill - You have a style meter: the more stylishly you fight, the faster you regenerate Vitality and Energy, up to 3x faster atop all multipliers, provided you stay stylish enough during the fight.
+611. Style, 4.2, Ultrakill
+#You have a style meter: the more stylishly you fight, the faster you regenerate Vitality and Energy, up to 3x faster atop all multipliers, provided you stay stylish enough during the fight.
 612. Acid Reflux, 2.1
 #Whenever a target damages you, all your bodily fluids — blood, spit, sweat, etc. — act as acid toward them, with potency scaling with your physical stats.
 613. Sober, 1.8
 #You are immune to all addictive effects: you can use hard drugs, cigarettes, alcohol, venom, mentats, psycho, black lace, etc. every other day and drop them instantly without withdrawal or addiction symptoms.
 614. Variable Gene, 4.9
 #Your genetics are highly variable: you toggle racial traits at will, either returning to your original race or becoming 100% of another race trait you own, and back.
-615. Firebender, 5.1
-#Avatar - You have natural talent as a Firebender, naturally producing and bending fire. Its potency depends on your natural attunement, martial-arts skill, and energy levels. Skilled enough users generate and direct electricity. Potency follows the sun: weaker at night, stronger by day, unusable during an eclipse.
-616. Earthbending, 5.2
-#Avatar - You have natural talent as an Earthbender, bending and controlling Earth. Its potency scales with your attunement to Earth, martial-arts skill, and energy levels. Skilled enough users sense Earth through tremors and manipulate impure metals and lava.
-617. Waterbending, 6.2
-#Avatar - You have natural talent as a Waterbender, bending and controlling Water. Its potency scales with your attunement to Water, martial-arts skill and finesse, and energy levels. Skilled enough Waterbenders transform water into ice and heal wounds with bending, and some bend the blood of those weaker than them. Potency follows the moon: strongest at night and full moon, weaker by day.
-618. Airbending, 5.8
-#Avatar - You have natural talent as an Airbender, manipulating and bending Air. Its potency scales with your attunement to Air, martial-arts skill, mentality, and energy levels. Skilled enough Airbenders achieve flight, bend air from lungs, and sense vibrations through air.
+615. Firebender, 5.1, Avatar
+#You have natural talent as a Firebender, naturally producing and bending fire. Its potency depends on your natural attunement, martial-arts skill, and energy levels. Skilled enough users generate and direct electricity. Potency follows the sun: weaker at night, stronger by day, unusable during an eclipse.
+616. Earthbending, 5.2, Avatar
+#You have natural talent as an Earthbender, bending and controlling Earth. Its potency scales with your attunement to Earth, martial-arts skill, and energy levels. Skilled enough users sense Earth through tremors and manipulate impure metals and lava.
+617. Waterbending, 6.2, Avatar
+#You have natural talent as a Waterbender, bending and controlling Water. Its potency scales with your attunement to Water, martial-arts skill and finesse, and energy levels. Skilled enough Waterbenders transform water into ice and heal wounds with bending, and some bend the blood of those weaker than them. Potency follows the moon: strongest at night and full moon, weaker by day.
+618. Airbending, 5.8, Avatar
+#You have natural talent as an Airbender, manipulating and bending Air. Its potency scales with your attunement to Air, martial-arts skill, mentality, and energy levels. Skilled enough Airbenders achieve flight, bend air from lungs, and sense vibrations through air.
 619. Hypertrophic Mechanic, 4.4
 #(Tech) Whenever you use machinery or sufficiently complex technology, it develops hypertrophy. After use, letting it rest or repairing it makes it slightly more robust and powerful. Slow and steady wins the race.
 620. Item Hypertrophy, 5.3
 #All items you use grow stronger over time through rigorous use and wear: letting an item rest or repairing it after great use makes it slightly more robust and powerful. Slow and steady wins the race.
-621. Super Sniffer, 5.4
-#Demon Slayer - Your nose is scarily good, impossibly accurate and precise. You discern people by smell and sniff out emotions, intent, and just about anything smell can sense.
+621. Super Sniffer, 5.4, Demon Slayer
+#Your nose is scarily good, impossibly accurate and precise. You discern people by smell and sniff out emotions, intent, and just about anything smell can sense.
 622. Enhanced Lungs, 2.4
 #You possess an exceptional set of lungs: tougher, more flexible, and far better at processing air, delivering energy to your body and oxygen to your blood more easily.
 623. Nature Lungs, 3.5
@@ -1260,7 +1260,7 @@
 #You possess the eye of the Tiger: the willingness to push forward, break your body training, and shed no tears. You train exceptionally well, pushing your limits more easily and recovering from training far faster.
 630. Castle Doctrine, 3.2
 #Whenever you fight as the defender in an area you own, all your physical stats are enhanced and your abilities cost less energy to use. This extends to all your allies in the same area.
-631. Six Eyes, 7.0
-#Jujutsu Kaisen - Your eyes are the fabled Six Eyes of the Gojo Clan, passively granting extreme visual prowess that sees through physical obstacles and detects all forms of energy extremely well. They act like a supercomputer for processing energy and information, granting incredible efficiency with abilities and letting you passively perform incredibly taxing calculations. They are taxing to use, so you may need to cover your eyes to rest them from the information they passively process.
+631. Six Eyes, 7.0, Jujutsu Kaisen
+#Your eyes are the fabled Six Eyes of the Gojo Clan, passively granting extreme visual prowess that sees through physical obstacles and detects all forms of energy extremely well. They act like a supercomputer for processing energy and information, granting incredible efficiency with abilities and letting you passively perform incredibly taxing calculations. They are taxing to use, so you may need to cover your eyes to rest them from the information they passively process.
 632. Garlic Infused Blood, 0.2
 #Your blood is infused with garlic, so the next vampire that bites you will really regret it.
