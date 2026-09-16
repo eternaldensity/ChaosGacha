@@ -1,0 +1,594 @@
+"use strict";
+/* Chaos Tree usage-engine port (tools/chaos_tree_use.py). Same rules:
+ * synthetic root free; every node costs 1 core + 10^rarity points (halved
+ * for root-adjacent nodes under Root Pact); tickets pool tier points into
+ * a shared wallet; sight/reveal extend visibility; special tickets and
+ * tree-meta abilities reach further. Operates on a runtime tree from
+ * ChaosGen.buildRuntime(). */
+window.ChaosEngine = (function () {
+  const TIER_POINTS = {
+    bronze: 50, silver: 500, gold: 5000, platinum: 50000, diamond: 500000,
+    legendary: 5000000, mythical: 50000000, divine: 500000000,
+    transcendent: 5000000000
+  };
+  const TIERS = ["bronze", "silver", "gold", "platinum", "diamond",
+    "legendary", "mythical", "divine", "transcendent"];
+  const CATEGORIES = ["ability", "item", "skill", "trait", "familiar"];
+  const ROOT_ID = 0;
+  const SEE_FAR_DISTANCE = 0.35;
+  const ADD_LINK_DISTANCE = 0.25;
+  const TRACE_DEFAULT_N = 3;
+
+  class ChaosError extends Error {}
+
+  function fmt(n) {
+    return Number(n).toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 });
+  }
+
+  function newState() {
+    return {
+      points: 0, cores: 0, inventory: [], unlocked: [ROOT_ID],
+      meta_used: {}, added_links: [], swaps: [],
+      reveal_temp_until: 0, history: [], echo_used: 0
+    };
+  }
+
+  // ---- meta tokens ------------------------------------------------------
+  const META_RE = /\(Meta:([^)]+)\)/g;
+  function splitToken(raw) {
+    const key = raw.startsWith("Meta:") ? raw.slice(5) : raw;
+    const i = key.indexOf(":");
+    if (i < 0) return [key, true];
+    const v = key.slice(i + 1);
+    const num = /^-?\d+$/.test(v) ? parseInt(v, 10) : v;
+    return [key.slice(0, i), num];
+  }
+  function iterMeta(nd) {
+    const out = [];
+    for (const raw of (nd.meta || [])) out.push(splitToken(raw));
+    const desc = nd.description || "";
+    let m;
+    META_RE.lastIndex = 0;
+    while ((m = META_RE.exec(desc)) !== null) {
+      const key = m[1], i = key.indexOf(":");
+      if (i < 0) out.push([key, true]);
+      else {
+        const v = key.slice(i + 1);
+        out.push([key.slice(0, i), /^-?\d+$/.test(v) ? parseInt(v, 10) : v]);
+      }
+    }
+    return out;
+  }
+
+  function deriveMeta(tree, unlocked) {
+    const meta = {
+      sight: 0, see_far: false, trace_name: false, trace_desc: false,
+      reveal_full: false, reveal_temp: false, ticket_bonus: 0,
+      lock_refund: 0, add_link: 0, gacha: 0, gacha_min: 0, gacha_max: 0,
+      echo: 0, survey: 0, compass: false, duplicate: 0, duplicate_max: 0,
+      cat_sight: {}, lifeline: 0, recall: 0, root_pact: false,
+      shuffle: 0, swap: 0, reshuffle: 0
+    };
+    for (const u of unlocked) {
+      const nd = tree.byId[u];
+      if (!nd) continue;
+      for (const [k, v] of iterMeta(nd)) {
+        if (k === "sight") meta.sight = Math.max(meta.sight, v | 0);
+        else if (k === "see-far") meta.see_far = true;
+        else if (k === "trace-name") meta.trace_name = true;
+        else if (k === "trace-desc") meta.trace_desc = true;
+        else if (k === "reveal-full") meta.reveal_full = true;
+        else if (k === "reveal-temp") meta.reveal_temp = true;
+        else if (k === "ticket-bonus") meta.ticket_bonus += v | 0;
+        else if (k === "lock-refund") meta.lock_refund += 1;
+        else if (k === "add-link") meta.add_link += v | 0;
+        else if (k === "gacha") {
+          meta.gacha += 1;
+          if (typeof v === "string" && v.includes("-")) {
+            const [lo, hi] = v.split("-", 2).map(Number);
+            meta.gacha_min = Math.max(meta.gacha_min, lo);
+            meta.gacha_max = Math.max(meta.gacha_max, hi);
+          } else meta.gacha_max = Math.max(meta.gacha_max, v | 0);
+        }
+        else if (k === "echo") meta.echo += 1;
+        else if (k === "survey") meta.survey = Math.max(meta.survey, v === true ? 1 : (v | 0));
+        else if (k === "compass") meta.compass = true;
+        else if (k === "duplicate") {
+          meta.duplicate += 1;
+          meta.duplicate_max = Math.max(meta.duplicate_max, v | 0);
+        }
+        else if (k === "sight-cat") {
+          let cat, depth;
+          if (typeof v === "string" && v.includes(":")) [cat, depth] = v.split(":", 2);
+          else { cat = String(v); depth = 1; }
+          meta.cat_sight[cat] = Math.max(meta.cat_sight[cat] || 0, depth | 0);
+        }
+        else if (k === "lifeline") meta.lifeline += 1;
+        else if (k === "recall") meta.recall += 1;
+        else if (k === "root-pact") meta.root_pact = true;
+        else if (k === "shuffle") meta.shuffle += 1;
+        else if (k === "swap") meta.swap += 1;
+        else if (k === "reshuffle") meta.reshuffle += 1;
+      }
+    }
+    return meta;
+  }
+
+  function viewState(tree, state) {
+    const meta = deriveMeta(tree, state.unlocked);
+    meta.reveal_temp_until = state.reveal_temp_until || 0;
+    return meta;
+  }
+
+  // ---- graph helpers ----------------------------------------------------
+  function dist3(a, b) {
+    return Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+  }
+
+  function frontier(tree, unlocked) {
+    const set = new Set(unlocked), out = new Set();
+    for (const u of unlocked) for (const b of (tree.adj[u] || [])) {
+      if (!set.has(b)) out.add(b);
+    }
+    return out;
+  }
+
+  function hopDistances(tree, unlocked) {
+    const dist = {}, prev = {}, q = [];
+    for (const u of unlocked) { dist[u] = 0; q.push(u); }
+    while (q.length) {
+      const a = q.shift();
+      for (const b of (tree.adj[a] || [])) {
+        if (!(b in dist)) { dist[b] = dist[a] + 1; prev[b] = a; q.push(b); }
+      }
+    }
+    return { dist, prev };
+  }
+
+  function visible(tree, unlocked, meta) {
+    meta = meta || {};
+    const now = Date.now() / 1000;
+    const unlockedSet = new Set(unlocked);
+    if (meta.reveal_full || (meta.reveal_temp_until || 0) >= now) {
+      return tree.nodes.filter(nd => !unlockedSet.has(nd.id)).map(nd => nd.id)
+        .sort((a, b) => a - b);
+    }
+    const sight = meta.sight || 0, catSight = meta.cat_sight || {};
+    if (sight <= 0 && !meta.see_far && !Object.keys(catSight).length) {
+      return [...frontier(tree, unlocked)].sort((a, b) => a - b);
+    }
+    const { dist } = hopDistances(tree, unlocked);
+    const vis = new Set();
+    for (const k in dist) {
+      const i = Number(k);
+      if (!unlockedSet.has(i) && dist[k] <= 1 + sight) vis.add(i);
+    }
+    for (const cat in catSight) {
+      for (const k in dist) {
+        const i = Number(k);
+        if (!unlockedSet.has(i) && tree.byId[i].file === cat &&
+            dist[k] <= 1 + catSight[cat]) vis.add(i);
+      }
+    }
+    if (meta.see_far) {
+      for (const u of unlocked) {
+        const un = tree.byId[u];
+        for (const nd of tree.nodes) {
+          if (unlockedSet.has(nd.id) || vis.has(nd.id)) continue;
+          if (dist3(un.pos, nd.pos) <= SEE_FAR_DISTANCE) vis.add(nd.id);
+        }
+      }
+    }
+    return [...vis].sort((a, b) => a - b);
+  }
+
+  function surveyNames(tree, unlocked, meta) {
+    meta = meta || {};
+    const depth = meta.survey || 0;
+    if (!depth) return [];
+    const { dist } = hopDistances(tree, unlocked);
+    const shown = new Set(visible(tree, unlocked, meta));
+    const unlockedSet = new Set(unlocked);
+    const out = [];
+    for (const k in dist) {
+      const i = Number(k);
+      if (!unlockedSet.has(i) && !shown.has(i) &&
+          dist[k] > 1 && dist[k] <= 1 + depth) {
+        out.push([i, tree.byId[i].name]);
+      }
+    }
+    return out.sort((a, b) => a[0] - b[0]);
+  }
+
+  // ---- costs / awards ---------------------------------------------------
+  function nodeCost(tree, nid) { return Math.pow(10, tree.byId[nid].rarity); }
+
+  function nodeCostFor(state, tree, nid) {
+    let cost = nodeCost(tree, nid);
+    const meta = deriveMeta(tree, state.unlocked);
+    if (meta.root_pact && (tree.adj[ROOT_ID] || new Set()).has(nid)) cost /= 2;
+    return cost;
+  }
+
+  function pay(state, tree, nid) {
+    if (state.cores < 1) throw new ChaosError("not enough cores (award a ticket first)");
+    const cost = nodeCostFor(state, tree, nid);
+    if (state.points < cost) {
+      throw new ChaosError(`not enough points: need ${fmt(cost)}, have ${fmt(state.points)}`);
+    }
+    state.cores -= 1;
+    state.points -= cost;
+  }
+
+  function unlockNode(state, nid, extra) {
+    const add = [nid].concat(extra || []);
+    for (const i of add) if (!state.unlocked.includes(i)) state.unlocked.push(i);
+    state.unlocked.sort((a, b) => a - b);
+    state.history = (state.history || []).concat(add);
+  }
+
+  function parseTicket(spec) {
+    const toks = String(spec).toLowerCase().replace(/,/g, " ").split(/\s+/).filter(Boolean);
+    let tier = null, kind = "plain", n = null, category = null;
+    for (let i = 0; i < toks.length; i++) {
+      const t = toks[i];
+      if (t in TIER_POINTS) tier = t;
+      else if (CATEGORIES.includes(t)) category = t;
+      else if (t === "skip") {
+        kind = "skip";
+        if (i + 1 < toks.length && /^\d+$/.test(toks[i + 1])) n = parseInt(toks[++i], 10);
+      }
+      else if (/^skip\d+$/.test(t)) { kind = "skip"; n = parseInt(t.slice(4), 10); }
+      else if (t === "hop") kind = "hop";
+      else if (t === "jump") { if (kind === "plain") kind = "jump"; }
+      else if (t === "choice") {
+        kind = "choice";
+        if (i + 1 < toks.length && /^\d+$/.test(toks[i + 1])) n = parseInt(toks[++i], 10);
+      }
+      else if (/^choice\d+$/.test(t)) { kind = "choice"; n = parseInt(t.slice(6), 10); }
+      else throw new ChaosError(`unrecognised ticket token: ${t}`);
+    }
+    const params = {};
+    if (kind === "skip") params.n = n || 1;
+    else if (kind === "jump") {
+      if (!category) throw new ChaosError("jump ticket needs a category");
+      params.category = category;
+    }
+    else if (kind === "choice") { params.n = n || 3; params.category = category || null; }
+    if (!tier && kind === "plain") throw new ChaosError("a plain ticket needs a tier");
+    return { tier, kind, params };
+  }
+
+  function award(state, spec, bonusPct, echo) {
+    bonusPct = bonusPct || 0;
+    const { tier, kind, params } = parseTicket(spec);
+    state.cores += 1;
+    let pts = (TIER_POINTS[tier] || 0) * (1 + bonusPct / 100);
+    if (echo) {
+      pts *= 2;
+      state.echo_used = (state.echo_used || 0) + 1;
+    }
+    state.points += pts;
+    if (kind !== "plain") {
+      const t = Object.assign({ kind, tier }, params);
+      state.inventory.push(t);
+    }
+    return { tier, kind, params, pts };
+  }
+
+  // ---- unlocks ----------------------------------------------------------
+  function unlock(state, tree, nid) {
+    if (nid === ROOT_ID) throw new ChaosError("the root is free");
+    if (state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is already unlocked`);
+    if (!frontier(tree, state.unlocked).has(nid)) {
+      throw new ChaosError(`node ${nid} is not adjacent to an unlocked node (use a skip/jump/hop ticket to reach it)`);
+    }
+    pay(state, tree, nid);
+    unlockNode(state, nid);
+  }
+
+  function unlockSkip(state, tree, nid, n) {
+    if (state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is already unlocked`);
+    const { dist } = hopDistances(tree, state.unlocked);
+    if (!(nid in dist)) throw new ChaosError(`node ${nid} is not connected to the unlocked set`);
+    const tickets = state.inventory.filter(t => t.kind === "skip");
+    let pick = null;
+    if (n != null) {
+      pick = tickets.find(t => t.n === n) || null;
+      if (!pick) throw new ChaosError(`no skip ${n} ticket in inventory`);
+    } else {
+      const ok = tickets.filter(t => 1 + t.n >= dist[nid])
+        .sort((a, b) => a.n - b.n);
+      pick = ok[0] || null;
+      if (!pick) throw new ChaosError(`no skip ticket reaches node ${nid} (${dist[nid]} hops)`);
+    }
+    state.inventory.splice(state.inventory.indexOf(pick), 1);
+    pay(state, tree, nid);
+    unlockNode(state, nid);
+  }
+
+  function jumpCandidates(tree, category, fromId, unlocked) {
+    const unlockedSet = new Set(unlocked);
+    if (!unlockedSet.has(fromId)) throw new ChaosError(`chosen node ${fromId} is not unlocked`);
+    const from = tree.byId[fromId];
+    const cands = [];
+    for (const nd of tree.nodes) {
+      if (nd.id === ROOT_ID) continue;
+      if (category != null && nd.file !== category) continue;
+      if (unlockedSet.has(nd.id) || (tree.adj[fromId] || new Set()).has(nd.id)) continue;
+      cands.push([dist3(from.pos, nd.pos), nd]);
+    }
+    cands.sort((a, b) => (a[0] - b[0]) || (a[1].id - b[1].id));
+    return cands;
+  }
+
+  function unlockJump(state, tree, category, fromId, pick) {
+    pick = pick || 0;
+    const tickets = state.inventory.filter(t =>
+      (t.kind === "jump" || t.kind === "choice") &&
+      (t.category == null || t.category === category));
+    if (!tickets.length) throw new ChaosError(`no ${(category || "any")} jump/choice ticket in inventory`);
+    const ticket = tickets[0];
+    const eff = category != null ? category : ticket.category;
+    const cands = jumpCandidates(tree, eff, fromId, state.unlocked);
+    if (!cands.length) throw new ChaosError("no unlockable nodes not directly connected to node " + fromId);
+    const limit = ticket.kind === "choice" ? ticket.n : 1;
+    const list = cands.slice(0, limit);
+    if (pick < 0 || pick >= list.length) throw new ChaosError(`pick ${pick} out of range`);
+    state.inventory.splice(state.inventory.indexOf(ticket), 1);
+    const target = list[pick][1].id;
+    pay(state, tree, target);
+    unlockNode(state, target);
+    return target;
+  }
+
+  function unlockHop(state, tree, nid) {
+    const tickets = state.inventory.filter(t => t.kind === "hop");
+    if (!tickets.length) throw new ChaosError("no hop ticket in inventory");
+    if (state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is already unlocked`);
+    const { dist, prev } = hopDistances(tree, state.unlocked);
+    if (!(nid in dist)) throw new ChaosError(`node ${nid} is not connected to the unlocked set`);
+    if (dist[nid] < 2) throw new ChaosError(`node ${nid} is too close for a hop ticket (needs 2+ hops)`);
+    const path = [nid];
+    let cur = nid;
+    while (cur in prev) { cur = prev[cur]; path.push(cur); }
+    path.reverse();
+    const intermediate = path[1];
+    state.inventory.splice(state.inventory.indexOf(tickets[0]), 1);
+    pay(state, tree, nid);
+    unlockNode(state, nid, [intermediate]);
+  }
+
+  // ---- meta abilities ---------------------------------------------------
+  function used(state, key) { return (state.meta_used || {})[key] || 0; }
+  function consume(state, key) {
+    state.meta_used = state.meta_used || {};
+    state.meta_used[key] = used(state, key) + 1;
+  }
+
+  function applyAddedLinks(tree, state) {
+    for (const [a, b] of (state.added_links || [])) {
+      if (tree.adj[a] && tree.adj[b]) { tree.adj[a].add(b); tree.adj[b].add(a); }
+    }
+    return tree;
+  }
+
+  function swapNodes(tree, a, b) {
+    if (a === b) return;
+    const na = tree.byId[a], nb = tree.byId[b];
+    const t = na.pos; na.pos = nb.pos; nb.pos = t;
+    if ("r" in na && "r" in nb) { const r = na.r; na.r = nb.r; nb.r = r; }
+    const adj = tree.adj;
+    const sa = new Set([...(adj[a] || [])].filter(x => x !== b));
+    const sb = new Set([...(adj[b] || [])].filter(x => x !== a));
+    const ab = (adj[a] || new Set()).has(b);
+    for (const x of sa) adj[x].delete(a);
+    for (const x of sb) adj[x].delete(b);
+    adj[a] = sb; adj[b] = sa;
+    for (const x of sb) adj[x].add(a);
+    for (const x of sa) adj[x].add(b);
+    if (ab) { adj[a].add(b); adj[b].add(a); }
+  }
+
+  function applySwaps(tree, state) {
+    for (const [a, b] of (state.swaps || [])) {
+      if (tree.byId[a] && tree.byId[b]) swapNodes(tree, a, b);
+    }
+    return tree;
+  }
+
+  function useLockRefund(state, tree, nid) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "lock_refund") >= meta.lock_refund) throw new ChaosError("no lock-refund charge left");
+    if (nid === ROOT_ID) throw new ChaosError("the root cannot be locked");
+    if (!state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is not unlocked`);
+    const refund = nodeCostFor(state, tree, nid);
+    state.unlocked.splice(state.unlocked.indexOf(nid), 1);
+    state.points += refund;
+    state.cores += 1;
+    consume(state, "lock_refund");
+    return refund;
+  }
+
+  function useAddLink(state, tree, a, b) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "add_link") >= meta.add_link) throw new ChaosError("no add-link charge left");
+    if (a === b || a === ROOT_ID || b === ROOT_ID) throw new ChaosError("links join two real nodes");
+    if ((tree.adj[a] || new Set()).has(b)) throw new ChaosError(`nodes ${a} and ${b} are already connected`);
+    const d = dist3(tree.byId[a].pos, tree.byId[b].pos);
+    if (d > ADD_LINK_DISTANCE) throw new ChaosError(`nodes ${a} and ${b} are too far apart`);
+    tree.adj[a].add(b); tree.adj[b].add(a);
+    state.added_links = state.added_links || [];
+    state.added_links.push([a, b]);
+    consume(state, "add_link");
+    return d;
+  }
+
+  function useReveal(state, tree) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (!meta.reveal_temp) throw new ChaosError("you have no Glimpse (reveal) charge");
+    state.reveal_temp_until = Date.now() / 1000 + 10;
+    return state.reveal_temp_until;
+  }
+
+  function useGacha(state, tree, rng) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "gacha") >= meta.gacha) throw new ChaosError("no gacha charge left");
+    const unlockedSet = new Set(state.unlocked);
+    const eligible = tree.nodes.filter(nd =>
+      nd.id !== ROOT_ID && !unlockedSet.has(nd.id) &&
+      nd.rarity >= meta.gacha_min && nd.rarity <= meta.gacha_max);
+    if (!eligible.length) throw new ChaosError("no locked node in the rarity range to roll");
+    const target = rng ? rng.pick(eligible) : eligible[Math.floor(Math.random() * eligible.length)];
+    unlockNode(state, target.id);
+    consume(state, "gacha");
+    return target;
+  }
+
+  function useLifeline(state, tree, nid) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "lifeline") >= meta.lifeline) throw new ChaosError("no lifeline charge left");
+    if (nid === ROOT_ID) throw new ChaosError("the root is free already");
+    if (state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is already unlocked`);
+    if (!frontier(tree, state.unlocked).has(nid)) throw new ChaosError(`node ${nid} is not adjacent to an unlocked node`);
+    unlockNode(state, nid);
+    consume(state, "lifeline");
+  }
+
+  function useRecall(state, tree) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "recall") >= meta.recall) throw new ChaosError("no recall charge left");
+    const hist = state.history || [];
+    if (!hist.length) throw new ChaosError("no unlocks to undo");
+    const nid = hist.pop();
+    if (!state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is already locked`);
+    state.unlocked.splice(state.unlocked.indexOf(nid), 1);
+    state.points += nodeCostFor(state, tree, nid);
+    state.cores += 1;
+    consume(state, "recall");
+    return nid;
+  }
+
+  function useDuplicate(state, tree, rng) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "duplicate") >= meta.duplicate) throw new ChaosError("no duplicate charge left");
+    const sources = new Set(state.unlocked.map(u => tree.byId[u].source));
+    sources.delete("Generic"); sources.delete("");
+    if (!sources.size) throw new ChaosError("you own no nodes with a real source to duplicate");
+    const arr = [...sources].sort();
+    const src = rng ? rng.pick(arr) : arr[Math.floor(Math.random() * arr.length)];
+    const unlockedSet = new Set(state.unlocked);
+    const eligible = tree.nodes.filter(nd =>
+      nd.id !== ROOT_ID && !unlockedSet.has(nd.id) &&
+      nd.source === src && nd.rarity <= meta.duplicate_max);
+    if (!eligible.length) throw new ChaosError(`no locked ${src} node with rarity <= ${meta.duplicate_max} to duplicate`);
+    const target = rng ? rng.pick(eligible) : eligible[Math.floor(Math.random() * eligible.length)];
+    unlockNode(state, target.id);
+    consume(state, "duplicate");
+    return target;
+  }
+
+  function chooseShufflePartner(tree, state, a) {
+    const meta = deriveMeta(tree, state.unlocked);
+    const vis = new Set(visible(tree, state.unlocked, meta));
+    if (!vis.has(a)) throw new ChaosError(`node ${a} is not a visible locked node`);
+    const ra = tree.byId[a].rarity;
+    const unlockedSet = new Set(state.unlocked);
+    let cands = tree.nodes.filter(nd =>
+      !unlockedSet.has(nd.id) && !vis.has(nd.id) &&
+      Math.abs(nd.rarity - ra) <= 0.2);
+    if (!cands.length) cands = tree.nodes.filter(nd => vis.has(nd.id) && nd.id !== a);
+    if (!cands.length) throw new ChaosError(`no node to shuffle with node ${a}`);
+    return cands;
+  }
+
+  function doSwapRecord(state, tree, a, b) {
+    swapNodes(tree, a, b);
+    state.swaps = state.swaps || [];
+    state.swaps.push([a, b]);
+  }
+
+  function useShuffle(state, tree, a, rng) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "shuffle") >= meta.shuffle) throw new ChaosError("no shuffle charge left");
+    if (state.unlocked.includes(a)) throw new ChaosError(`node ${a} is already unlocked`);
+    const cands = chooseShufflePartner(tree, state, a);
+    const b = (rng ? rng.pick(cands) : cands[Math.floor(Math.random() * cands.length)]).id;
+    doSwapRecord(state, tree, a, b);
+    consume(state, "shuffle");
+    return b;
+  }
+
+  function useSwap(state, tree, a, b) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "swap") >= meta.swap) throw new ChaosError("no swap charge left");
+    if (a === b) throw new ChaosError("swap needs two different nodes");
+    if (state.unlocked.includes(a) || state.unlocked.includes(b)) throw new ChaosError("both nodes must be locked");
+    const vis = new Set(visible(tree, state.unlocked, meta));
+    if (!vis.has(a) || !vis.has(b)) throw new ChaosError("both nodes must be visible");
+    doSwapRecord(state, tree, a, b);
+    consume(state, "swap");
+  }
+
+  function useReshuffle(state, tree, a, rng) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (!meta.reshuffle) throw new ChaosError("you have no reshuffle ability");
+    if (state.unlocked.includes(a)) throw new ChaosError(`node ${a} is already unlocked`);
+    const cost = nodeCost(tree, a) / 4;
+    if (state.points < cost) throw new ChaosError(`not enough points: need ${fmt(cost)}, have ${fmt(state.points)}`);
+    const cands = chooseShufflePartner(tree, state, a);
+    const b = (rng ? rng.pick(cands) : cands[Math.floor(Math.random() * cands.length)]).id;
+    state.points -= cost;
+    doSwapRecord(state, tree, a, b);
+    return { cost, b };
+  }
+
+  function trace(tree, state, field, x, n) {
+    n = n || TRACE_DEFAULT_N;
+    const meta = deriveMeta(tree, state.unlocked);
+    const cap = field === "name" ? "trace_name" : field === "desc" ? "trace_desc" : "compass";
+    if (!meta[cap]) {
+      const verb = field === "source" ? "compass" : "trace-by-" + field;
+      throw new ChaosError(`you lack the ${verb} ability`);
+    }
+    const q = String(x).toLowerCase();
+    const { dist, prev } = hopDistances(tree, state.unlocked);
+    const unlockedSet = new Set(state.unlocked);
+    const matches = [];
+    for (const nd of tree.nodes) {
+      if (nd.id === ROOT_ID || unlockedSet.has(nd.id)) continue;
+      const hay = field === "name" ? nd.name.toLowerCase()
+        : field === "desc" ? (nd.description || "").toLowerCase()
+        : (nd.source || "").toLowerCase();
+      if (hay.includes(q) && (nd.id in dist)) {
+        let near = Infinity;
+        for (const u of state.unlocked) {
+          const d = dist3(tree.byId[u].pos, nd.pos);
+          if (d < near) near = d;
+        }
+        matches.push([dist[nd.id], near, nd]);
+      }
+    }
+    matches.sort((a, b) => (a[0] - b[0]) || (a[1] - b[1]) || (a[2].id - b[2].id));
+    return matches.slice(0, n).map(([d, , nd]) => {
+      const path = [nd.id];
+      let cur = nd.id;
+      while (cur in prev) { cur = prev[cur]; path.push(cur); }
+      path.reverse();
+      return { dist: d, node: nd, path };
+    });
+  }
+
+  return {
+    TIER_POINTS, TIERS, CATEGORIES, ROOT_ID,
+    SEE_FAR_DISTANCE, ADD_LINK_DISTANCE, TRACE_DEFAULT_N,
+    ChaosError, fmt, newState,
+    iterMeta, deriveMeta, viewState,
+    dist3, frontier, hopDistances, visible, surveyNames,
+    nodeCost, nodeCostFor, parseTicket, award,
+    unlock, unlockSkip, jumpCandidates, unlockJump, unlockHop,
+    useLockRefund, useAddLink, useReveal, useGacha, useLifeline,
+    useRecall, useDuplicate, useShuffle, useSwap, useReshuffle,
+    trace, applyAddedLinks, applySwaps, swapNodes, unlockNode
+  };
+})();

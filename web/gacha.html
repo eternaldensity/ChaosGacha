@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chaos Gacha</title>
+<link rel="stylesheet" href="css/app.css">
+<style>
+.preset-grid, .cat-grid { display: grid; gap: 8px; }
+.preset-grid { grid-template-columns: repeat(3, 1fr); }
+.cat-grid { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 700px) { .cat-grid { grid-template-columns: repeat(3, 1fr); } }
+.pick { border: 2px solid transparent; }
+.pick.sel { border-color: var(--accent); background: #2a3342; }
+#rollBtn { width: 100%; font-size: 1.25rem; min-height: 60px; }
+.result-name { font-size: 1.2rem; margin: 4px 0; }
+</style>
+</head>
+<body>
+<header class="app">
+  <h1>🎰 Chaos Gacha</h1>
+  <nav><a href="tree.html">🌳 Tree</a></nav>
+</header>
+<main>
+  <section class="tabpage active" id="tab-roll">
+    <div class="card">
+      <h2>Ticket</h2>
+      <label>Preset</label>
+      <div class="preset-grid" id="presetGrid"></div>
+      <div class="row" style="margin-top:8px">
+        <div><label for="cMin">Min</label><input type="number" id="cMin" step="0.1" value="1.5"></div>
+        <div><label for="cAvg">Avg</label><input type="number" id="cAvg" step="0.1" value="3.3"></div>
+        <div><label for="cMax">Max</label><input type="number" id="cMax" step="0.1" value="5.3"></div>
+      </div>
+      <label style="margin-top:8px">Category</label>
+      <div class="cat-grid" id="catGrid"></div>
+      <label for="q">Filter pool (optional)</label>
+      <input type="search" id="q" placeholder="name or source contains…">
+      <div style="margin-top:12px"><button class="primary" id="rollBtn">ROLL</button></div>
+    </div>
+    <div class="card" id="resultCard" style="display:none">
+      <h2>Result</h2>
+      <div class="result" id="resultBody"></div>
+    </div>
+    <div class="card">
+      <h2>My tickets <span class="muted small" id="ticketCount"></span></h2>
+      <div class="row">
+        <div><label for="tkTier">Tier</label><select id="tkTier"></select></div>
+        <div><label for="tkCat">Category</label><select id="tkCat"></select></div>
+      </div>
+      <div style="margin-top:10px"><button id="btnAddTicket" style="width:100%">+ Add ticket</button></div>
+      <ul class="list" id="ticketList"></ul>
+    </div>
+  </section>
+
+  <section class="tabpage" id="tab-history">
+    <div class="card">
+      <div class="row">
+        <h2 style="flex:1">History <span class="muted small" id="histCount"></span></h2>
+        <div style="flex:0 0 auto" class="row">
+          <button id="btnExportHist">⬇</button>
+          <button id="btnImportHist">⬆</button>
+          <button id="btnClearHist" class="danger">Clear</button>
+          <input type="file" id="fileHist" accept=".json,application/json" style="display:none">
+        </div>
+      </div>
+      <ul class="list" id="histList"></ul>
+    </div>
+  </section>
+</main>
+<nav class="tabs" id="tabs">
+  <button data-tab="roll" class="active"><span class="ico">🎰</span>Roll</button>
+  <button data-tab="history"><span class="ico">📜</span>History</button>
+</nav>
+<div id="toast" class="toast" style="display:none"></div>
+<script src="data/entries.js"></script>
+<script src="js/gacha.js"></script>
+<script src="js/gacha-app.js"></script>
+</body>
+</html>
