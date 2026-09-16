@@ -57,6 +57,14 @@ header.app nav a {
   color: var(--accent); text-decoration: none;
   padding: 10px 6px; font-size: 0.95rem; white-space: nowrap;
 }
+header.app .homelink {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  color: var(--accent); text-decoration: none;
+  padding: 10px 6px; font-size: 0.95rem; white-space: nowrap;
+}
+@media (max-width: 480px) {
+  header.app .homelink .lbl { display: none; }
+}
 main { padding: 12px 12px 24px; }
 .card {
   background: linear-gradient(180deg, #202636, #191e29);
