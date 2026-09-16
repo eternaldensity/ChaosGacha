@@ -269,28 +269,69 @@
   }
 
   // ---- 3D view ---------------------------------------------------------------
-  const cam = { yaw: 0.6, pitch: 0.35, dist: 3.2 };
+  const PROJ_F = 3.0; // perspective focal length
+  const cam = { yaw: 0.6, pitch: 0.35, dist: 3.2, zoom: 1 };
   const canvas = $("view3d");
   const ctx = canvas.getContext("2d");
   let projected = []; // [{id,x,y,r,node,vis}]
   let lastFitKey = "";
   // Frame the shown nodes: with only the root + one neighbour unlocked the
-  // sphere is mostly empty, so zoom in; as the tree fills out, ease back to
-  // the full-sphere default. Runs only when the shown set changes, so manual
-  // zoom/rotate is never overridden mid-session.
+  // sphere is mostly empty, so magnify (zoom) in; as the tree fills out,
+  // ease back to ~full-sphere framing. Runs only when the shown set changes,
+  // so manual zoom/rotate is never overridden mid-session.
   function maybeAutoFit(d) {
     const key = d.tree.id + ":" + d.st.unlocked.length + ":" + d.vis.size + ":" +
       (d.st.swaps || []).length + ":" + (d.st.added_links || []).length;
     if (key === lastFitKey) return;
     lastFitKey = key;
+    const shown = [];
     let maxR = 0.12;
+    let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9, z0 = 1e9, z1 = -1e9;
     for (const nd of d.rt.nodes) {
       if (!d.vis.has(nd.id) && !d.unl.has(nd.id)) continue;
-      const r = Math.hypot(nd.pos[0], nd.pos[1], nd.pos[2]);
+      const p = nd.pos;
+      shown.push(p);
+      const r = Math.hypot(p[0], p[1], p[2]);
       if (r > maxR) maxR = r;
+      if (p[0] < x0) x0 = p[0]; if (p[0] > x1) x1 = p[0];
+      if (p[1] < y0) y0 = p[1]; if (p[1] > y1) y1 = p[1];
+      if (p[2] < z0) z0 = p[2]; if (p[2] > z1) z1 = p[2];
     }
     cam.dist = Math.max(1.05, Math.min(4.2, 1.05 + maxR * 2.15));
+    const proj = PROJ_F / (PROJ_F + cam.dist); // scale at origin
+    // zoom so the shown cloud's diameter fills ~60% of the smaller side
+    const spreadWorld = Math.max(0.04, Math.hypot(x1 - x0, y1 - y0, z1 - z0));
+    cam.zoom = Math.max(1, Math.min(15, 1.476 / (spreadWorld * proj)));
+    // With only a few nodes out, the default angle can stack them along the
+    // view axis (one hidden dot). Pick an angle that spreads them on screen
+    // (full perspective projection, so foreshortening counts).
+    if (shown.length > 1 && shown.length <= 8) {
+      const spread = (yw, pt) => {
+        const cy = Math.cos(yw), sy = Math.sin(yw);
+        const cp = Math.cos(pt), sp = Math.sin(pt);
+        let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+        for (const p of shown) {
+          const x = p[0] * cy - p[2] * sy, z = p[0] * sy + p[2] * cy;
+          const y2 = p[1] * cp - z * sp, z2 = p[1] * sp + z * cp;
+          const s = PROJ_F / (PROJ_F + z2 + cam.dist);
+          const sx = x * s, syy = y2 * s;
+          if (sx < x0) x0 = sx; if (sx > x1) x1 = sx;
+          if (syy < y0) y0 = syy; if (syy > y1) y1 = syy;
+        }
+        return Math.hypot(x1 - x0, y1 - y0);
+      };
+      let best = null;
+      for (let i = 0; i < 8; i++) {
+        for (const pt of [0.2, 0.55, 0.95]) {
+          const yw = (i / 8) * Math.PI * 2;
+          const sp = spread(yw, pt);
+          if (!best || sp > best[0]) best = [sp, yw, pt];
+        }
+      }
+      if (best && best[0] > 1e-6) { cam.yaw = best[1]; cam.pitch = best[2]; }
+    }
   }
+  window.__treeDebug = { cam, getProjected: () => projected };
   function fitCanvas() {
     const r = canvas.getBoundingClientRect();
     const dpr = Math.min(2, window.devicePixelRatio || 1);
@@ -305,7 +346,7 @@
     let x = p[0] * cy - p[2] * sy, z = p[0] * sy + p[2] * cy, y = p[1];
     const cp = Math.cos(pitch), sp = Math.sin(pitch);
     const y2 = y * cp - z * sp, z2 = y * sp + z * cp;
-    const f = 3.0, scale = f / (f + z2 + dist);
+    const scale = PROJ_F / (PROJ_F + z2 + dist);
     return [x * scale, y2 * scale, scale];
   }
 
@@ -331,7 +372,7 @@
     if (!d) return;
     updateViewInfo();
     maybeAutoFit(d);
-    const cx = W / 2, cy = H / 2, base = Math.min(W, H) * 0.42;
+    const cx = W / 2, cy = H / 2, base = Math.min(W, H) * 0.42 * cam.zoom;
     // edges between shown nodes
     ctx.lineWidth = 1;
     ctx.strokeStyle = "rgba(140,150,175,0.28)";
@@ -356,12 +397,11 @@
     }
     items.sort((a, b) => a.s - b.s);
     projected = [];
-    const sparse = items.length < 40;
+    const dotScale = Math.min(cam.zoom, 3.5);
     for (const it of items) {
       const unlocked = d.unl.has(it.nd.id);
       const col = catColor(it.nd.file);
-      const baseR = sparse ? 6.2 : (unlocked ? 3.4 : 2.6);
-      const rad = Math.max(2, Math.min(10, baseR + it.nd.rarity * 0.55)) * (window.devicePixelRatio || 1) / 1.5;
+      const rad = Math.max(2, Math.min(10, (unlocked ? 3.4 : 2.6) + it.nd.rarity * 0.55)) * dotScale * (window.devicePixelRatio || 1) / 1.5;
       ctx.beginPath();
       ctx.arc(it.x, it.y, rad, 0, Math.PI * 2);
       if (unlocked) { ctx.fillStyle = col; ctx.fill(); }
@@ -400,7 +440,7 @@
       } else if (pts.size === 2) {
         const [p, q] = [...pts.values()];
         const d = Math.hypot(p[0] - q[0], p[1] - q[1]);
-        if (lastPinch) cam.dist = Math.max(1.2, Math.min(8, cam.dist * (lastPinch / d)));
+        if (lastPinch) cam.zoom = Math.max(0.3, Math.min(15, cam.zoom * (d / lastPinch)));
         lastPinch = d;
         draw3D();
       }
@@ -414,7 +454,7 @@
     canvas.addEventListener("pointercancel", up);
     canvas.addEventListener("wheel", e => {
       e.preventDefault();
-      cam.dist = Math.max(1.2, Math.min(8, cam.dist * (1 + e.deltaY * 0.001)));
+      cam.zoom = Math.max(0.3, Math.min(15, cam.zoom * (1 - e.deltaY * 0.0015)));
       draw3D();
     }, { passive: false });
 
@@ -435,7 +475,9 @@
     }
   })();
   $("btnResetCam").addEventListener("click", () => {
-    cam.yaw = 0.6; cam.pitch = 0.35; cam.dist = 3.2; draw3D();
+    cam.yaw = 0.6; cam.pitch = 0.35;
+    lastFitKey = ""; // force re-fit on next draw
+    draw3D();
   });
 
   // ---- node tab (detail + 2D neighbours) --------------------------------------
