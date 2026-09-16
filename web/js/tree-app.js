@@ -26,11 +26,9 @@
     for (const c of DATA.classes) if (r < c.max) return c;
     return DATA.classes[DATA.classes.length - 1];
   }
-  const CAT_COLORS = {
-    ability: "#b388ff", item: "#ffd54f", skill: "#7cc4ff",
-    trait: "#69f0ae", familiar: "#ff8a65", __root__: "#ffffff"
-  };
-  const catColor = f => CAT_COLORS[f] || "#9aa0b0";
+  // Node colour encodes rarity tier (same classes as the gacha results);
+  // category is still shown as text everywhere.
+  const classColor = r => classOf(r).color;
 
   // ---- storage ---------------------------------------------------------
   function loadDB() {
@@ -82,8 +80,7 @@
       rt = G.buildRuntime(payload);
     } else {
       const res = await G.generate(DATA.entries, tree.seed, tree.params || {}, {
-        limit: tree.limit || null,
-        includeGachaOnly: !!(tree.params && tree.params.includeGachaOnly)
+        limit: tree.limit || null, ...(tree.filters || {})
       }, () => {});
       rt = G.buildRuntime(res);
     }
@@ -207,7 +204,8 @@
       id: nid,
       name: (t.name + (fresh ? " (fresh)" : " (copy)")).slice(0, 60),
       seed: t.seed, params: JSON.parse(JSON.stringify(t.params || {})),
-      limit: t.limit || null, static: !!t.static, createdAt: Date.now(),
+      limit: t.limit || null, filters: JSON.parse(JSON.stringify(t.filters || {})),
+      static: !!t.static, createdAt: Date.now(),
       dataVersion: fresh && !t.static ? (DATA.dataVersion || null) : (t.dataVersion || null)
     };
     if (t.static) {
@@ -222,27 +220,88 @@
     saveDB(); renderTrees(); refreshAll();
     return nt;
   }
+  function readGenForm() {
+    const num = (id, def) => {
+      const v = parseFloat($(id).value);
+      return isNaN(v) ? def : v;
+    };
+    const files = [...document.querySelectorAll(".fFile")]
+      .filter(c => c.checked).map(c => c.value);
+    const srcs = $("newSources").value.split(",").map(s => s.trim()).filter(Boolean);
+    return {
+      name: ($("newName").value.trim() || "Untitled tree").slice(0, 60),
+      seed: parseInt($("newSeed").value, 10) || Math.floor(Math.random() * 1e9),
+      limit: $("newSize").value ? parseInt($("newSize").value, 10) : null,
+      params: {
+        meanDegree: num("newDegree", 2.5),
+        rejoinBias: Math.max(0, Math.min(1, num("newRejoin", 0.7))),
+        rootLinks: Math.max(1, Math.min(8, parseInt($("newRoots").value, 10) || 3)),
+        radius: num("newRadius", 1.0),
+        distanceVariance: num("newVar", 0.15),
+        clustering: num("newCluster", 0.3),
+        clusters: Math.max(1, parseInt($("newClusters").value, 10) || 3),
+        degreeDist: $("newDegDist").value || "poisson",
+        degreeMin: Math.max(0, parseInt($("newDegMin").value, 10) || 0),
+        degreeMax: $("newDegMax").value === "" ? null : Math.max(1, parseInt($("newDegMax").value, 10)),
+        linkFalloff: num("newFalloff", 2.0),
+        maxLinkDistance: num("newMaxDist", 0.6),
+        connect: $("newConnect").checked
+      },
+      filters: {
+        files,
+        rarityMin: $("newRmin").value === "" ? null : num("newRmin", null),
+        rarityMax: $("newRmax").value === "" ? null : num("newRmax", null),
+        sources: srcs,
+        includeGachaOnly: $("newGachaOnly").checked
+      }
+    };
+  }
+
+  // Live preview: render the form's settings into the 3D view without
+  // saving. Tune + re-preview freely, then Generate to keep it.
+  let preview = null; // {rt, stats}
+  function previewStats(rt) {
+    const degs = rt.nodes.map(nd => (rt.adj[nd.id] || new Set()).size);
+    const lens = rt.edges.map(e => e.d);
+    const seen = new Set();
+    let comps = 0;
+    for (const nd of rt.nodes) {
+      if (seen.has(nd.id)) continue;
+      comps++;
+      const q = [nd.id];
+      seen.add(nd.id);
+      while (q.length) {
+        for (const b of (rt.adj[q.pop()] || [])) {
+          if (!seen.has(b)) { seen.add(b); q.push(b); }
+        }
+      }
+    }
+    const mean = a => a.reduce((x, y) => x + y, 0) / Math.max(1, a.length);
+    return {
+      nodes: rt.nodes.length, edges: rt.edges.length, comps,
+      degMean: mean(degs).toFixed(2), degMax: Math.max(...degs),
+      linkMean: mean(lens).toFixed(3), linkMax: Math.max(...lens).toFixed(3),
+      roots: (rt.adj[0] || new Set()).size
+    };
+  }
 
   $("btnCreate").addEventListener("click", async () => {
-    const name = ($("newName").value.trim() || "Untitled tree").slice(0, 60);
-    const seed = parseInt($("newSeed").value, 10) || Math.floor(Math.random() * 1e9);
-    const limit = $("newSize").value ? parseInt($("newSize").value, 10) : null;
-    const params = {
-      meanDegree: parseFloat($("newDegree").value) || 2.5,
-      rejoinBias: Math.max(0, Math.min(1, parseFloat($("newRejoin").value || "0.7"))),
-      rootLinks: Math.max(1, Math.min(8, parseInt($("newRoots").value, 10) || 3))
-    };
+    const form = readGenForm();
     const btn = $("btnCreate");
     btn.disabled = true;
     $("genProg").style.display = "block";
     const bar = $("genProg").firstElementChild;
     try {
-      const res = await G.generate(DATA.entries, seed, params, { limit }, (frac, label) => {
-        bar.style.width = Math.round(frac * 100) + "%";
-        $("genMsg").textContent = `${label}… ${Math.round(frac * 100)}%`;
-      });
-      const tree = { id: uid(), name, seed, params, limit, createdAt: Date.now(),
-        dataVersion: DATA.dataVersion || null };
+      const res = await G.generate(DATA.entries, form.seed, form.params,
+        { limit: form.limit, ...form.filters }, (frac, label) => {
+          bar.style.width = Math.round(frac * 100) + "%";
+          $("genMsg").textContent = `${label}… ${Math.round(frac * 100)}%`;
+        });
+      const tree = {
+        id: uid(), name: form.name, seed: form.seed, params: form.params,
+        limit: form.limit, filters: form.filters,
+        createdAt: Date.now(), dataVersion: DATA.dataVersion || null
+      };
       DB.trees.push(tree);
       DB.states[tree.id] = E.newState();
       DB.activeId = tree.id;
@@ -250,19 +309,55 @@
       runtimes.set(tree.id, G.buildRuntime(res));
       saveDB(); renderTrees(); refreshAll();
       $("genMsg").textContent = `Generated ${res.nodes.length} nodes.`;
+      exitPreview();
       showTab("view3d");
     } catch (e) { err(e); }
     btn.disabled = false;
     setTimeout(() => { $("genProg").style.display = "none"; }, 1200);
   });
 
+  $("btnPreview").addEventListener("click", async () => {
+    const form = readGenForm();
+    const btn = $("btnPreview");
+    btn.disabled = true;
+    $("genProg").style.display = "block";
+    const bar = $("genProg").firstElementChild;
+    try {
+      const res = await G.generate(DATA.entries, form.seed, form.params,
+        { limit: form.limit, ...form.filters }, (frac, label) => {
+          bar.style.width = Math.round(frac * 100) + "%";
+          $("genMsg").textContent = `Preview: ${label}… ${Math.round(frac * 100)}%`;
+        });
+      const rt = G.buildRuntime(res);
+      const s = previewStats(rt);
+      preview = { rt };
+      $("previewStats").textContent =
+        `${s.nodes} nodes · ${s.edges} edges · ${s.comps} component${s.comps === 1 ? "" : "s"} · ` +
+        `degree ⌀${s.degMean} max ${s.degMax} · link ⌀${s.linkMean} max ${s.linkMax} · ${s.roots} root links`;
+      $("previewBar").style.display = "block";
+      $("genMsg").textContent = `Preview ready: ${s.nodes} nodes.`;
+      lastFitKey = "";
+      showTab("view3d");
+    } catch (e) { err(e); }
+    btn.disabled = false;
+    setTimeout(() => { $("genProg").style.display = "none"; }, 1200);
+  });
+  $("btnPreviewCreate").addEventListener("click", () => $("btnCreate").click());
+  $("btnPreviewExit").addEventListener("click", () => exitPreview());
+  function exitPreview() {
+    if (!preview) return;
+    preview = null;
+    $("previewBar").style.display = "none";
+    lastFitKey = "";
+    refreshAll();
+  }
   $("btnExport").addEventListener("click", () => {
     const t = activeTree();
     if (!t) return toast("No active tree to export.", true);
     const payload = {
       app: "chaos-tree", v: 1, exportedAt: new Date().toISOString(),
       tree: { name: t.name, seed: t.seed, params: t.params || {}, limit: t.limit || null,
-              dataVersion: t.dataVersion || null,
+              filters: t.filters || {}, dataVersion: t.dataVersion || null,
               static: !!t.static, topology: t.static ? loadStatic(t.id) : null },
       state: DB.states[t.id] || E.newState()
     };
@@ -284,7 +379,7 @@
         const tree = { id: uid(), name: String(td.name || f.name).slice(0, 60),
           seed: td.seed != null ? td.seed : Math.floor(Math.random() * 1e9),
           params: td.params || {}, limit: td.limit || null,
-          dataVersion: td.dataVersion || null,
+          filters: td.filters || {}, dataVersion: td.dataVersion || null,
           static: !!td.static, createdAt: Date.now() };
         if (td.static && td.topology) saveStatic(tree.id, td.topology);
         DB.trees.push(tree);
@@ -419,6 +514,13 @@
   }
 
   async function viewData() {
+    if (preview) {
+      const all = new Set(preview.rt.nodes.map(n => n.id));
+      return {
+        tree: { name: "Preview", id: "preview" }, rt: preview.rt,
+        st: E.newState(), meta: {}, vis: all, unl: new Set(), isPreview: true
+      };
+    }
     const c = await current();
     if (!c) return null;
     const meta = E.viewState(c.rt, c.st);
@@ -429,6 +531,11 @@
   async function updateViewInfo() {
     const d = await viewData();
     if (!d) { $("viewInfo").textContent = "No tree selected."; return; }
+    if (d.isPreview) {
+      $("viewInfo").textContent =
+        `Preview · ${d.rt.nodes.length} nodes · not saved — tune the form and re-preview, or create the tree.`;
+      return;
+    }
     $("viewInfo").textContent =
       `${esc(d.tree.name)} · ${d.st.unlocked.length}/${d.rt.nodes.length} unlocked · ${d.vis.size} visible`;
   }
@@ -468,7 +575,7 @@
     const dotScale = Math.min(cam.zoom, 3.5);
     for (const it of items) {
       const unlocked = d.unl.has(it.nd.id);
-      const col = catColor(it.nd.file);
+      const col = classColor(it.nd.rarity);
       const rad = Math.max(2, Math.min(10, (unlocked ? 3.4 : 2.6) + it.nd.rarity * 0.55)) * dotScale * (window.devicePixelRatio || 1) / 1.5;
       ctx.beginPath();
       ctx.arc(it.x, it.y, rad, 0, Math.PI * 2);
@@ -560,7 +667,7 @@
       if (best != null) {
         selectedId = best;
         draw3D();
-        showTab("node");
+        if (!preview) showTab("node");
       }
     }
   })();
@@ -654,14 +761,14 @@
       l.setAttribute("stroke", "#333947");
       svg.appendChild(l);
     }
-    circle(cx, cyy, 26, catColor(nd.file), "#fff", nd.id, shortName(nd.name));
+    circle(cx, cyy, 26, classColor(nd.rarity), "#fff", nd.id, shortName(nd.name));
     nbs.forEach((b, i) => {
       const a = (2 * Math.PI * i) / Math.max(1, nbs.length) - Math.PI / 2;
       const x = cx + R0 * Math.cos(a), y = cyy + R0 * Math.sin(a);
       const bnd = c.rt.byId[b];
       const isUnl = c.st.unlocked.includes(b);
-      circle(x, y, 15, isUnl ? catColor(bnd.file) : "#20242e",
-        catColor(bnd.file), b, shortName(bnd.name));
+      const bcol = classColor(bnd.rarity);
+      circle(x, y, 15, isUnl ? bcol : "#20242e", bcol, b, shortName(bnd.name));
     });
     const legend = document.createElementNS(NS, "text");
     legend.setAttribute("x", 8); legend.setAttribute("y", 292);
@@ -1034,6 +1141,24 @@
 
   // ---- boot ---------------------------------------------------------------
   fillTicketForm();
+  $("fileChecks").innerHTML = "";
+  for (const f of ["ability", "item", "skill", "trait", "familiar"]) {
+    const lab = document.createElement("label");
+    lab.style.cssText = "display:flex;gap:6px;align-items:center;min-height:44px;flex:1;";
+    lab.title = `Draw entries from ${f}. Uncheck all = use all five.`;
+    const cb = document.createElement("input");
+    cb.type = "checkbox"; cb.className = "fFile"; cb.value = f; cb.checked = true;
+    cb.style.cssText = "width:22px;height:22px";
+    const nm = document.createElement("span");
+    nm.textContent = f;
+    lab.append(cb, nm);
+    $("fileChecks").appendChild(lab);
+  }
+  $("srcList").innerHTML = [...new Set((DATA.entries || []).map(e => e.s).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b)).map(s => `<option value="${esc(s)}">`).join("");
+  $("classLegend").innerHTML = (DATA.classes || [])
+    .map(c => `<span class="pill" style="margin:2px" title="rarity &lt; ${c.max}"><span class="dot" style="background:${esc(c.color)}"></span>${esc(c.name)}</span>`)
+    .join(" ");
   $("ownCat").innerHTML = `<option value="">All</option>` +
     E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });

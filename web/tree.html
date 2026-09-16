@@ -39,12 +39,12 @@
     </div>
     <div class="card">
       <h2>New tree</h2>
-      <label for="newName">Name</label>
+      <label for="newName" title="Display name for this tree.">Name</label>
       <input type="text" id="newName" placeholder="My first tree" maxlength="60">
       <div class="row">
-        <div><label for="newSeed">Seed</label>
+        <div><label for="newSeed" title="Same seed + same options = same tree. Web seeds are app-local (they don't reproduce the Python tool's trees).">Seed</label>
           <input type="number" id="newSeed" value="2"></div>
-        <div><label for="newSize">Entries (size)</label>
+        <div><label for="newSize" title="Randomly sample at most this many entries. Smaller trees generate faster. Blank = use everything.">Entries (size)</label>
           <select id="newSize">
             <option value="">Full (~3650)</option>
             <option value="1500">Large (1500)</option>
@@ -53,14 +53,69 @@
           </select></div>
       </div>
       <div class="row">
-        <div><label for="newDegree">Mean degree</label>
-          <input type="number" id="newDegree" value="2.5" step="0.5" min="1" max="6"></div>
-        <div><label for="newRejoin">Rejoin bias</label>
-          <input type="number" id="newRejoin" value="0.7" step="0.1" min="0" max="1"></div>
-        <div><label for="newRoots">Start options</label>
-          <input type="number" id="newRoots" value="3" step="1" min="1" max="8"></div>
+        <div><label for="newDegree" title="Average links per node — higher means a denser, more tangled web.">Mean degree</label>
+          <input type="number" id="newDegree" value="2.5" step="0.5" min="1" max="6" title="Average links per node — higher means a denser, more tangled web."></div>
+        <div><label for="newRejoin" title="Penalty (0–1) against linking nodes that already share a neighbour. 1.0 forbids loops entirely (tree-like).">Rejoin bias</label>
+          <input type="number" id="newRejoin" value="0.7" step="0.1" min="0" max="1" title="Penalty (0–1) against linking nodes that already share a neighbour. 1.0 forbids loops entirely (tree-like)."></div>
+        <div><label for="newRoots" title="How many lowest-rarity nodes attach to the free Origin root — your starting options, spread in different directions.">Start options</label>
+          <input type="number" id="newRoots" value="3" step="1" min="1" max="8" title="How many lowest-rarity nodes attach to the free Origin root — your starting options, spread in different directions."></div>
       </div>
-      <div style="margin-top:10px"><button class="primary" id="btnCreate" style="width:100%">Generate tree</button></div>
+      <details id="advBox" style="margin-top:8px">
+        <summary>Advanced options</summary>
+        <div class="muted small">Which entries go in</div>
+        <div class="row" id="fileChecks" style="margin-top:4px"></div>
+        <div class="row">
+          <div><label for="newRmin" title="Only include entries at or above this rarity.">Rarity from</label>
+            <input type="number" id="newRmin" step="0.1" min="0" placeholder="any" title="Only include entries at or above this rarity."></div>
+          <div><label for="newRmax" title="Only include entries at or below this rarity.">Rarity to</label>
+            <input type="number" id="newRmax" step="0.1" min="0" placeholder="any" title="Only include entries at or below this rarity."></div>
+        </div>
+        <label for="newSources" title="Comma-separated fandom/source labels to include. Blank = all sources.">Sources (comma-separated, blank = all)</label>
+        <input type="text" id="newSources" list="srcList" placeholder="Fate, One Piece" title="Comma-separated fandom/source labels to include. Blank = all sources.">
+        <datalist id="srcList"></datalist>
+        <div class="row" style="margin-top:8px">
+          <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Also include (Gacha)-tagged entries, which are normally excluded from trees.">
+            <input type="checkbox" id="newGachaOnly" style="width:22px;height:22px"> Include gacha-only</label>
+          <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Force a single connected component, adding long bridge links if needed.">
+            <input type="checkbox" id="newConnect" checked style="width:22px;height:22px"> Force connected</label>
+        </div>
+        <div class="muted small" style="margin-top:8px">Placement</div>
+        <div class="row">
+          <div><label for="newRadius" title="Sphere size in normalized units; all positions scale with it.">Radius</label>
+            <input type="number" id="newRadius" value="1.0" step="0.1" min="0.2" title="Sphere size in normalized units; all positions scale with it."></div>
+          <div><label for="newVar" title="Radial jitter as a fraction of radius; spreads same-rarity nodes across neighbouring shells.">Distance variance</label>
+            <input type="number" id="newVar" value="0.15" step="0.05" min="0" max="1" title="Radial jitter as a fraction of radius; spreads same-rarity nodes across neighbouring shells."></div>
+        </div>
+        <div class="row">
+          <div><label for="newCluster" title="How strongly nodes pull toward a few anchors: 0 = even shells, 1 = tight clumps.">Clustering</label>
+            <input type="number" id="newCluster" value="0.3" step="0.1" min="0" max="1" title="How strongly nodes pull toward a few anchors: 0 = even shells, 1 = tight clumps."></div>
+          <div><label for="newClusters" title="Number of cluster anchors.">Clusters</label>
+            <input type="number" id="newClusters" value="3" step="1" min="1" max="12" title="Number of cluster anchors."></div>
+        </div>
+        <div class="muted small" style="margin-top:8px">Links</div>
+        <div class="row">
+          <div><label for="newDegDist" title="How link counts are distributed across nodes.">Degree dist</label>
+            <select id="newDegDist" title="How link counts are distributed across nodes.">
+              <option value="poisson" selected>poisson</option>
+              <option value="constant">constant</option>
+              <option value="powerlaw">powerlaw</option>
+            </select></div>
+          <div><label for="newDegMin" title="Minimum links per node.">Degree min</label>
+            <input type="number" id="newDegMin" value="1" step="1" min="0" title="Minimum links per node."></div>
+          <div><label for="newDegMax" title="Maximum links per node. Blank = automatic.">Degree max</label>
+            <input type="number" id="newDegMax" placeholder="auto" step="1" min="1" title="Maximum links per node. Blank = automatic."></div>
+        </div>
+        <div class="row">
+          <div><label for="newFalloff" title="How strongly short links are preferred. 0 = distance-blind.">Link falloff</label>
+            <input type="number" id="newFalloff" value="2.0" step="0.5" min="0" title="How strongly short links are preferred. 0 = distance-blind."></div>
+          <div><label for="newMaxDist" title="Cap link length as a fraction of radius.">Max link distance</label>
+            <input type="number" id="newMaxDist" value="0.6" step="0.1" min="0.1" title="Cap link length as a fraction of radius."></div>
+        </div>
+      </details>
+      <div class="row" style="margin-top:10px">
+        <button class="primary" id="btnCreate" title="Generate and save a new tree with these settings.">Generate tree</button>
+        <button id="btnPreview" title="Render these settings into the 3D view without saving, with summary stats — tune and re-preview freely.">Preview</button>
+      </div>
       <div class="progress" id="genProg" style="display:none"><div></div></div>
       <div class="muted small" id="genMsg" style="margin-top:6px"></div>
     </div>
@@ -77,6 +132,14 @@
   </section>
 
   <section class="tabpage" id="tab-view3d">
+    <div class="card" id="previewBar" style="display:none;border-color:var(--accent)">
+      <b>Preview</b> <span id="previewStats" class="small muted"></span>
+      <div class="row" style="margin-top:8px">
+        <button class="primary" id="btnPreviewCreate">Create tree with these settings</button>
+        <button id="btnPreviewExit">Exit preview</button>
+      </div>
+      <div class="muted small">Not saved — other tabs still show the active tree.</div>
+    </div>
     <div class="card">
       <div class="row">
         <div class="muted small" id="viewInfo">No tree selected.</div>
@@ -84,6 +147,7 @@
       </div>
       <div style="margin-top:8px" class="viewwrap"><canvas class="view" id="view3d"></canvas><div class="hovertip" id="hoverTip"></div></div>
       <div class="muted small" id="selInfo" style="margin-top:6px">Drag to rotate · scroll / pinch to zoom · tap a node to select it.</div>
+      <div class="small muted" id="classLegend" style="margin-top:6px"></div>
     </div>
   </section>
 

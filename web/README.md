@@ -3,6 +3,10 @@
 Two single-purpose pages sharing `css/app.css` (mobile-first layout):
 
 - `tree.html` — Chaos Tree: generate and play multiple named trees.
+  The New-tree form covers all generator options (hover any label for an
+  explanation); Preview renders the current settings into the 3D view with
+  summary stats so parameters can be tuned live before generating.
+  Node colour encodes rarity tier (see the legend under the 3D view).
   Progress is saved per tree in `localStorage`; export/import moves a tree
   plus its progress as one JSON file (Python `chaos-tree` JSONs import too).
   Includes a canvas 3D view of visible nodes/connections, an SVG
