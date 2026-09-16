@@ -101,8 +101,14 @@
       <summary>Filters &amp; options</summary>
       <label for="q">Name / source contains</label>
       <input type="search" id="q" placeholder="e.g. flame, Fate…">
-      <label for="fSource">Source</label>
-      <select id="fSource"><option value="">Any source</option></select>
+      <details id="gfBox" style="margin-top:8px">
+        <summary title="Uncheck sources to exclude them. Uncheck all = include everything.">Sources (<span id="gfCount">all</span>)</summary>
+        <div class="row" style="margin:6px 0">
+          <button id="gfAll">All</button>
+          <button id="gfNone">None</button>
+        </div>
+        <div id="gfSources"></div>
+      </details>
       <div class="row">
         <div><label for="fRmin">Rarity from</label>
           <input type="number" id="fRmin" step="0.1" min="0" placeholder="any"></div>

@@ -748,7 +748,7 @@
 #You wear the brand of Khorne, the Blood God, greatly increasing your combat propensity with heightened instincts and intuition for any weapon or skill. You track blood and sense killing intent instinctively as a natural killing machine. Note: Brands do not connect you to the Chaos Gods or Warp.
 375. Brand of Nurgle, 5.4, Warhammer 40k
 #You wear the brand of Nurgle, the Plague Father, making you immune to poisons, toxins, and diseases below Legendary rank and greatly resistant above it. You understand poisons, toxins, and diseases better, increasing related ability potency and your power to cure them. Note: Brands do not connect you to the Chaos Gods or Warp.
-376. Spiral, 9.9, Tengen Toppa Gurenn Lagann
+376. Spiral, 9.9, Gurren Lagann
 #If you hold the will, you find a way.
 377. Monster of God, 7.2, Hellsing
 #Race Change - You are a monster of god transformed by Helena's Nail through your heart, with monstrous physical stats and holy energy so potent your touch sets a true vampire ablaze. You conjure and freely control holy thorned vines like limbs that protect you on instinct and set anything unholy they touch ablaze with holy fire. You stay completely immortal while your heart remains intact as your vines rebuild your body without consuming energy or using an ability slot.

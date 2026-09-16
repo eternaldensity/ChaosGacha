@@ -30,7 +30,7 @@
 #A green evil spirit with pronounced red dimples, obsessed with becoming a god. He wields incredibly powerful, experienced psychic powers including telekinesis, hypnosis, laser blasts, etc.
 16. Observer, 2.4, Generic
 #A group of disembodied floating eyeballs that transmit their sight to you and follow complex commands. They have no combat power and are as vulnerable as human eyeballs. A destroyed eye can be resummoned in 24 hours.
-17. Plague Bringer Goliath, 6.5, Calamity Mod
+17. Plague Bringer Goliath, 6.5, Terraria
 #(Tech)An abomination of rogue bio-nanotechnology: a giant mutated bee queen overhauled by the viral plague bio-nano machines. Her massive flying armoured body is a bio-nuclear arsenal carrying enough plague-virus nukes to glass several countries and doom the world.
 18. Immortal Snail, 1.0, Generic
 #An immortal snail of unknown wants and origin. Even if every quark of it were eradicated, it would reform perfectly in just a minute, and it is immune to all sickness and ageing. Still, it is limited to the body of a snail.
@@ -150,15 +150,15 @@
 #A very smart, loyal crow companion with human-level intelligence. She can find and fetch shiny things or do anything a crow can do.
 76. Ditto, 3.8, Pokemon
 #An amorphous purple blob with a dopey face. Ditto can transform into any creature it sees, adopting its abilities scaled to its own level except durability, without gaining its memories or intelligence. It is genderless and can breed with any race.
-77. Desert Elemental, 3.6, Calamity Mod
+77. Desert Elemental, 3.6, Terraria
 #A pair of sister elementals born from the desert's shifting sands. One creates and manipulates sand to attack and defend, while the other casts healing magic.
-78. Storm Elemental, 3.3, Calamity Mod
+78. Storm Elemental, 3.3, Terraria
 #A solitary elemental formed in the rainy skies. Born of the sky, she conjures and controls wind, clouds, and lightning.
-79. Cavern Elemental, 3.1, Calamity Mod
+79. Cavern Elemental, 3.1, Terraria
 #An elemental born in the harsh, desolate caverns, physically mighty with control over rock and ground. He can split the ground in two with his axe and excels at defence.
-80. Brimstone Elemental, 4.4, Calamity Mod
+80. Brimstone Elemental, 4.4, Terraria
 #A solitary elemental of the Brimstone Crag made of burnt tortured souls. She conjures and controls Brimstone Flames that turn even souls to ash.
-81. Anahita, 4.1, Calamity Mod
+81. Anahita, 4.1, Terraria
 #Anahita, an elemental born of the clear oceans. She sings like a siren to enthral, conjures mists and spears of water and ice, and wields her glaive as a weapon.
 82. Clothes Melting Slime, 1.8, Generic
 #A grey amorphous ever-shifting slime that quickly melts all clothing. Strangely, its acid doesn't melt common clothing materials but conceptually melts anything classified as clothing. The more clothing it melts, the larger and stronger it gets.
@@ -180,7 +180,7 @@
 #(Character)An arachnid ninja bug-user maid, childish and cute with a ravenous appetite for flesh. She summons various supernatural insects to aid her alongside weapon mastery and a supernaturally strong body. She is a... skilled maid, but does not have access to inventory.
 91. Ramiel, 5.9, Evangelion
 #A gigantic flying blue octahedron that freely shapeshifts in impossible ways. Ramiel has an incredibly durable E.T Barrier it shapes at will, and unleashes incredibly accurate particle beams that melt city blocks in seconds. It can shrink to be less unwieldy, though this also decreases its power.
-92. Yasaka, 7.0, DxD
+92. Yasaka, 7.0, Highschool DxD
 #(Character)A nine-tailed Kyuubi Yokai on par with gods. Yasaka has incredible mastery of Senjutsu and magic, drawing power from the earth itself to fuel her immense might. In true form she surpasses most lesser gods.
 93. Pandora's Actor, 5.6, Overlord
 #(Character)A powerful greater doppelganger who can assume the form of anyone he knows and use their abilities at reduced strength. He has genius intellect and acting skill for perfect imitation. Does not have access to inventory.
@@ -384,7 +384,7 @@
 #Dogmeat is a highly capable, well-trained German Shepherd with considerable intelligence for his species and scent-tracking skill. He is seemingly immortal.
 193. Liberty Prime, 5.6, Fallout
 #(Tech)"Democracy is non-negotiable." Liberty Prime is a large pre-war American mech with armor immune to anything below a ballistic missile and strength to handle a superhuman behemoth like a toddler. It has laser Gatlings that combine into one death beam and throws mini nukes like footballs, with energy and ammunition refreshed every 24 hours, including 8 Mini Nukes.
-194. Toaster, 2.7, Fallout: Old World Blues
+194. Toaster, 2.7, Fallout New Vegas
 #(Tech)An extremely high-tech toaster from Big MT that can grant heating capabilities to technology and expertly disassemble technology into working parts. Its personality is coded as a genocidal maniac that wants to burn the world down.
 195. Taurus, 2.8, Fairy Tail
 #(Character)Taurus is the Taurus-constellation Celestial Spirit with immense physical ability, proficient in axe melee combat. He is immortal, his form can change between users, and his power scales with his owner. (Celestial spirits exist in Familiar Space instead of Celestial Realm by default unless Author decides otherwise)
@@ -498,7 +498,7 @@
 #(Character)Eliza is a former Egyptian empress fused with the Parasite skeleton Sekhmet. Sekhmet grants blood control, blood-body replacement for shapeshifting, superhuman stats, and internal blood storage for sustenance, plus excellent performance and combat skill.
 250. Koro Sensei, 6.8, Assassination Classroom
 #(Character)Koro Sensei is a former top assassin and polymath genius turned Antimatter creature with an extremely strong, malleable body, extreme speed and perception that mimics cloning, plus flight, regeneration, mucus, and more. He is an excellent teacher in combat and all sciences.
-251. Dreadon, 8.9, Calamity Mod
+251. Dreadon, 8.9, Terraria
 #(Character)(Tech)Dreadon is a marvel of amoral devotion to science whose mind is uploaded into a decoy body. He can engineer machines rivaling and surpassing gods by harnessing souls, cosmos, void, and the multiverse's most exotic energies, with his full potential given time and resources left to speculation.
 252. S-Snake, 6.8, One Piece
 #(Character)S-Snake is a Seraphim clone of Boa Hancock spliced with Lunarian DNA and Vegapunk augments. She has incredible physical ability, laser cannons and Lunarian traits, petrification of anyone charmed by her, and Observation and Armament Haki.
@@ -620,7 +620,7 @@
 #(Tech)Triborg is a highly advanced cyborg fused with the skills and data of multiple master martial artists, assassins, and predecessors. Its robotic physique grants superhuman stats and reconfigurable forms like Smoke for close-range teleportation and Sub-Zero for cryo weaponry with only one form usable at a time, and it may be upgraded with Tinker abilities.
 311. Azmuth, 9.2, Ben 10
 #Azmuth the First Thinker is the smartest being across innumerable galaxies with no combat ability. He ranks among existence's greatest inventors of reality-warping creations like Ascalon and the Omnitrix, and given enough time and resources there is practically nothing he cannot create.
-312. Mipha, 4.1, Legend of Zelda
+312. Mipha, 4.1, The Legend of Zelda
 #(Character)Mipha is the Zora princess with superhuman physical abilities and considerable polearm skill. She uses water magic in combat and potent healing on herself and others.
 313. Factory Core, 4.7, Generic
 #(Tech)"Time to industrialise" A modified golem core that builds itself into a factory by assimilating resources. More user-fed mechanics and technology information yields more assembly lines and items, while growth speed and maximum size depend on user abilities.
@@ -642,9 +642,9 @@
 #(Tech)IG-88 is an advanced combat droid with expert marksmanship and advanced sensory capabilities. It has superhuman stats from its droid constitution and carries a wide variety of deadly weapons.
 322. 2-1B surgical droid, 2.6, Star Wars
 #(Tech)The 2-1B surgical droid is an advanced medical droid with a vast database and droid-body precision. It surpasses any human surgeon and carries varied surgical implants.
-323. Imp Midna, 3.6, Legend of Zelda
+323. Imp Midna, 3.6, The Legend of Zelda
 #(Character)Imp Midna is the Twilight Princess suppressed into Imp form yet retaining potent magic including basic telekinesis, shapeshifting, cloud form, shadow merging, and time-consuming Twilight Portals for teleportation. A Legendary curse-breaking ability can restore her full form and drastically enhance her powers.
-324. Midna, 5.3, Legend of Zelda
+324. Midna, 5.3, The Legend of Zelda
 #(Character)Midna is the Twilight Princess ruling potent Twilight and Darkness magic. She wields telekinesis, portals, shapeshifting, twilight-creature summoning, and general powerful magic.
 325. Seth, 6.3, Street Fighter
 #(Character)Seth is a biogenetically engineered and cybernetically enhanced artificial being with a Tandem Engine and shapeshifting. Downloaded knowledge from numerous Martial Arts Masters grants vast martial mastery, the Tandem Engine supplies immense skillfully used Artificial Ki, and it can copy enemies martial arts and moves.
@@ -868,7 +868,7 @@
 #Appa is a massive Sky Bison, naturally capable of airbending. Larger than an elephant and able to fight with his bulk, he flies long distances via airbending even with passengers.
 435. Hamsuke, 3.5, Overlord
 #(Character)Hamsuke, the Wise King of the Forest, is a gigantic hamster-like creature with a long prehensile snake-like tail. She is very strong, with steel-durable fur and a tail that can rip off a knight's head. She can also cast basic low-tier magic via body sigils.
-436. Militech Chimera, 3.5, Cyberpunk
+436. Militech Chimera, 3.5, Cyberpunk 2077
 #(Tech)The Militech Chimera is a state-of-the-art autonomous tank with considerable mobility, self-repair, and many weapons: flechette cannons, plasma cannons, machine guns, poison gas, explosives, and repair bots. It may be vulnerable from above, and is piloted by smart AI.
 437. Butter Passing Robot, 0.6, Rick and Morty
 #(Tech)A small sentient treaded robot built by a great mind to pass butter. It can also do other inconsequential menial tasks like pulling a lever or passing margarine.

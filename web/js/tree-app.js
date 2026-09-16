@@ -265,7 +265,8 @@
     };
     const files = [...document.querySelectorAll(".fFile")]
       .filter(c => c.checked).map(c => c.value);
-    const srcs = $("newSources").value.split(",").map(s => s.trim()).filter(Boolean);
+    const srcs = [...document.querySelectorAll(".srcCheck")]
+      .filter(c => c.checked).map(c => c.value);
     return {
       name: ($("newName").value.trim() || "Untitled tree").slice(0, 60),
       seed: parseInt($("newSeed").value, 10) || Math.floor(Math.random() * 1e9),
@@ -1357,8 +1358,42 @@
     lab.append(cb, nm);
     $("fileChecks").appendChild(lab);
   }
-  $("srcList").innerHTML = [...new Set((DATA.entries || []).map(e => e.s).filter(Boolean))]
-    .sort((a, b) => a.localeCompare(b)).map(s => `<option value="${esc(s)}">`).join("");
+  function refreshSrcCount() {
+    const boxes = [...document.querySelectorAll(".srcCheck")];
+    const n = boxes.filter(c => c.checked).length;
+    $("srcCount").textContent = n === boxes.length ? "all" : `${n}/${boxes.length}`;
+  }
+  (function buildSrcChecks() {
+    const host = $("srcChecks");
+    host.innerHTML = "";
+    const counts = {};
+    for (const e of (DATA.entries || [])) {
+      if (e.t === "tree" || !e.s) continue;
+      counts[e.s] = (counts[e.s] || 0) + 1;
+    }
+    for (const s of Object.keys(counts).sort((a, b) => a.localeCompare(b))) {
+      const lab = document.createElement("label");
+      lab.style.cssText = "display:flex;gap:6px;align-items:center;min-height:44px;flex:1;min-width:44%;";
+      lab.title = `${counts[s]} entries`;
+      const cb = document.createElement("input");
+      cb.type = "checkbox"; cb.className = "srcCheck"; cb.value = s; cb.checked = true;
+      cb.style.cssText = "width:22px;height:22px";
+      cb.addEventListener("change", refreshSrcCount);
+      const nm = document.createElement("span");
+      nm.textContent = `${s} (${counts[s]})`;
+      lab.append(cb, nm);
+      host.appendChild(lab);
+    }
+    refreshSrcCount();
+  })();
+  $("srcAll").addEventListener("click", () => {
+    document.querySelectorAll(".srcCheck").forEach(c => { c.checked = true; });
+    refreshSrcCount();
+  });
+  $("srcNone").addEventListener("click", () => {
+    document.querySelectorAll(".srcCheck").forEach(c => { c.checked = false; });
+    refreshSrcCount();
+  });
   $("classLegend").innerHTML = "";
   for (const cl of (DATA.classes || [])) {
     const b = document.createElement("button");

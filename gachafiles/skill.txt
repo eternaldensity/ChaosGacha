@@ -336,7 +336,7 @@
 #You possess the creator's knowledge of the fundamental forces of the universe. You know perfectly how the world's laws work and how to manipulate them to your desires. But this knowledge is too much for a mortal vessel, so it manifests as instinctive comprehension of all matters of law; the stronger you get, the more access you gain to the principle.
 169. Principle of Matter, 8.2, Generic
 #You possess the creator's knowledge of matter and creation. You know how to construct, transmute, and understand matter, even creating matter that does not exist. But this knowledge is too much for a mortal vessel, so it manifests as instinctive comprehension of all matters of matter; the stronger you get, the more access you gain to the principle.
-170. Divine Formula, 8.0, DxD
+170. Divine Formula, 8.0, Highschool DxD
 #Your internal calculator surpasses any calculator. You effortlessly solve all mathematical problems and calculate faster than the fastest supercomputers. You can probably replicate the Kankara formula from DxD. But if your vessel is too weak, do not use all your computational power or you will melt your brain.
 171. Divine Blacksmithing, 7.8, Generic
 #Your blacksmithing skill is on the level of a god. With enough training you give Hephaestus a run for his money. With enough resources and time, you forge your own Excalibur, Gungnir, Longinus, Mjolnir, etc.

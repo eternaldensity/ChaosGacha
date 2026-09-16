@@ -77,6 +77,7 @@
   const CATS = ["random", "ability", "item", "skill", "trait", "familiar"];
 
   function sourcesFor(cat) {
+    if (DATA.sources && DATA.sources[cat]) return DATA.sources[cat].slice();
     const cats = cat === "random" ? CATS.slice(1) : [cat];
     const s = new Set();
     for (const e of DATA.entries) {
@@ -84,18 +85,40 @@
     }
     return [...s].sort((a, b) => a.localeCompare(b));
   }
+  function checkedSources() {
+    return [...document.querySelectorAll(".gfCheck")]
+      .filter(c => c.checked).map(c => c.value);
+  }
   function refreshSources(keep) {
-    const sel = $("fSource");
-    const cur = keep ? sel.value : "";
-    sel.innerHTML = `<option value="">Any source</option>` +
-      sourcesFor(category).map(s => `<option${s === cur ? " selected" : ""}>${esc(s)}</option>`).join("");
+    const prev = keep ? checkedSources() : null;
+    const host = $("gfSources");
+    host.innerHTML = "";
+    for (const s of sourcesFor(category)) {
+      const lab = document.createElement("label");
+      lab.style.cssText = "display:flex;gap:6px;align-items:center;min-height:44px;flex:1;min-width:44%;";
+      const cb = document.createElement("input");
+      cb.type = "checkbox"; cb.className = "gfCheck"; cb.value = s;
+      cb.checked = !prev || prev.includes(s);
+      cb.style.cssText = "width:22px;height:22px";
+      cb.addEventListener("change", () => { refreshSrcCount(); updatePoolCount(); collectFilters(); });
+      const nm = document.createElement("span");
+      nm.textContent = s;
+      lab.append(cb, nm);
+      host.appendChild(lab);
+    }
+    refreshSrcCount();
     updatePoolCount();
+  }
+  function refreshSrcCount() {
+    const boxes = [...document.querySelectorAll(".gfCheck")];
+    const n = boxes.filter(c => c.checked).length;
+    $("gfCount").textContent = n === boxes.length ? "all" : `${n}/${boxes.length}`;
   }
   function collectFilters() {
     const rmin = parseFloat($("fRmin").value), rmax = parseFloat($("fRmax").value);
     const F = {
       q: $("q").value,
-      source: $("fSource").value || null,
+      sources: checkedSources(),
       rmin: isNaN(rmin) ? null : rmin,
       rmax: isNaN(rmax) ? null : rmax,
       hideNsfw: !!$("fNsfw").checked,
@@ -103,7 +126,7 @@
       dedup: !!$("fDedup").checked
     };
     DB.settings.filters = {
-      q: F.q, source: F.source,
+      q: F.q, sources: F.sources,
       rmin: $("fRmin").value, rmax: $("fRmax").value,
       hideNsfw: F.hideNsfw, hideTech: F.hideTech, dedup: F.dedup
     };
@@ -119,13 +142,18 @@
     $("fTech").checked = !!F.hideTech;
     $("fDedup").checked = !!F.dedup;
     refreshSources(false);
-    if (F.source) $("fSource").value = F.source;
+    // legacy single-source setting -> check just that one
+    const legacy = F.sources || (F.source ? [F.source] : null);
+    if (legacy) {
+      document.querySelectorAll(".gfCheck").forEach(c => { c.checked = legacy.includes(c.value); });
+      refreshSrcCount();
+    }
     updatePoolCount();
   }
   function updatePoolCount() {
     try {
       const F = {
-        q: $("q").value, source: $("fSource").value || null,
+        q: $("q").value, sources: checkedSources(),
         rmin: parseFloat($("fRmin").value) || null,
         rmax: parseFloat($("fRmax").value) || null,
         hideNsfw: !!$("fNsfw").checked, hideTech: !!$("fTech").checked
@@ -136,7 +164,7 @@
         const ql = (F.q || "").trim().toLowerCase();
         n += DATA.entries.filter(e =>
           e.f === c && e.t !== "tree" &&
-          (!F.source || e.s === F.source) &&
+          (!F.sources.length || F.sources.includes(e.s)) &&
           (F.rmin == null || e.r >= F.rmin) &&
           (F.rmax == null || e.r <= F.rmax) &&
           (!F.hideNsfw || !e.nsfw) && (!F.hideTech || !e.tech) &&
@@ -438,7 +466,15 @@
     save();
   });
   restoreFilters();
-  for (const id of ["q", "fSource", "fRmin", "fRmax", "fNsfw", "fTech", "fDedup"]) {
+  $("gfAll").addEventListener("click", () => {
+    document.querySelectorAll(".gfCheck").forEach(c => { c.checked = true; });
+    refreshSrcCount(); updatePoolCount(); collectFilters();
+  });
+  $("gfNone").addEventListener("click", () => {
+    document.querySelectorAll(".gfCheck").forEach(c => { c.checked = false; });
+    refreshSrcCount(); updatePoolCount(); collectFilters();
+  });
+  for (const id of ["q", "fRmin", "fRmax", "fNsfw", "fTech", "fDedup"]) {
     $(id).addEventListener("change", () => { collectFilters(); updatePoolCount(); });
     $(id).addEventListener("input", updatePoolCount);
   }

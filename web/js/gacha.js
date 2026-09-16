@@ -27,8 +27,9 @@ window.ChaosGacha = (function () {
       .replace(/\((Nsfw|Tech|Character|Gacha)\)/g, "").trim();
   }
 
-  // filters: {q, source, rmin, rmax, hideNsfw, hideTech, exclude[]}.
-  // A plain string is treated as {q} (backwards compatible).
+  // filters: {q, source|sources, rmin, rmax, hideNsfw, hideTech, exclude[]}.
+  // A plain string is treated as {q} (backwards compatible); a single
+  // source string behaves like a one-element sources list.
   function normFilt(f) {
     if (typeof f === "string") return { q: f };
     return f || {};
@@ -44,10 +45,11 @@ window.ChaosGacha = (function () {
       cat = cats[Math.floor(rnd() * cats.length)];
     }
     const ql = (F.q || "").trim().toLowerCase();
+    const srcs = F.sources || (F.source ? [F.source] : null);
     const excl = F.exclude && F.exclude.length ? new Set(F.exclude) : null;
     const pool = entries.filter(e =>
       e.f === cat && e.t !== "tree" &&
-      (!F.source || e.s === F.source) &&
+      (!srcs || !srcs.length || srcs.includes(e.s)) &&
       (F.rmin == null || e.r >= F.rmin) &&
       (F.rmax == null || e.r <= F.rmax) &&
       (!F.hideNsfw || !e.nsfw) &&

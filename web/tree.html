@@ -93,9 +93,14 @@
           <div><label for="newRmax" title="Only include entries at or below this rarity.">Rarity to</label>
             <input type="number" id="newRmax" step="0.1" min="0" placeholder="any" title="Only include entries at or below this rarity."></div>
         </div>
-        <label for="newSources" title="Comma-separated fandom/source labels to include. Blank = all sources.">Sources (comma-separated, blank = all)</label>
-        <input type="text" id="newSources" list="srcList" placeholder="Fate, One Piece" title="Comma-separated fandom/source labels to include. Blank = all sources.">
-        <datalist id="srcList"></datalist>
+        <details id="srcBox" style="margin-top:8px">
+          <summary title="Uncheck sources to exclude them. Uncheck all = include everything.">Sources (<span id="srcCount">all</span>)</summary>
+          <div class="row" style="margin:6px 0">
+            <button id="srcAll">All</button>
+            <button id="srcNone">None</button>
+          </div>
+          <div id="srcChecks"></div>
+        </details>
         <div class="row" style="margin-top:8px">
           <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Also include (Nsfw)-tagged entries in generated trees.">
             <input type="checkbox" id="newNsfw" style="width:22px;height:22px"> Include NSFW</label>

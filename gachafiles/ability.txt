@@ -28,7 +28,7 @@
 #Form and launch fireballs from your hands or other appendages; size and potency depend on energy expended.
 15. Flame Weaponry, 3.6, Generic
 #Emit fire shaped into any cold weaponry such as swords, axes, hammers, bows, and crossbows. The flames mimic the weapon's properties, staying sharp as a sword or heavy as a hammer.
-16. Frostflare, 4.5, Calamity Mod
+16. Frostflare, 4.5, Terraria
 #Emit and control incredibly powerful Frostflare, flames that freeze instead of burning. While using it, you gain incredible ice and cold resistance in exchange for vulnerability to flame.
 17. Fire Absorption, 4.3, Generic
 #Absorb fire into your body to release later as your own flames or convert into energy. Strong flames may be impossible or painful to absorb, and absorbing too much without releasing causes internal burning.
@@ -36,9 +36,9 @@
 #Control flames and ignition on the level of a Level 5 Esper from Toaru, with unmatched precision, range, and control.
 19. Unholy Flames, 5.7, Generic
 #Wield Hell flames so potent even you are not fully immune, suffering burns from overuse. They deal severe damage to Holy and Light-based beings.
-20. Profaned Flames, 6.2, Calamity Mod
+20. Profaned Flames, 6.2, Terraria
 #Channel and control Providence's Profaned Flames, which are incomparably hot, turn all to impartial ash, and ignore all fire resistance.
-21. Profaned Guardian Transformation, 6.5, Calamity Mod
+21. Profaned Guardian Transformation, 6.5, Terraria
 #Temporarily take the form of one of Providence's guardians, massively boosting physical stats and granting flame wings and Profaned Flame manipulation. Maintaining it slowly burns you from the inside until released, mitigated only by fire resistance.
 22. Shadowflames, 4.7, Terraria
 #Emit and control Shadowflame, soundless flames with no energy signature that burn away light, making them extremely hard to perceive. An experienced user can hide them from all senses.
@@ -190,7 +190,7 @@
 #Heavily boost ice-ability power while keeping your mind calm, sharp, and resistant to mental influences. You are also immune to all frost effects below Epic rank.
 96. Cryokinesis, 4.5, Generic
 #Telekinetically create and control ice and cold, making ice constructs, remotely freezing objects, and similar effects.
-97. White Album, 4.8, JoJo Stand
+97. White Album, 4.8, JoJo
 #Freeze objects with extreme temperatures and form a dispellable cold-ice armor around yourself. With training, you can plunge objects to near sub-zero temperatures.
 98. Cold Wave, 3.2, Generic
 #Unleash debilitating cold waves from your body that boost Ice-based abilities and spells while active. Those exposed slowly lose stamina in the harsh cold.
@@ -204,9 +204,9 @@
 #Summon a fierce blizzard that boosts ice-based ability power.
 103. Snow Manipulation, 3.4, Generic
 #Create and control snow, with amount and power equal to energy expended.
-104. Snow Logia, 4.9, Monet from One Piece
+104. Snow Logia, 4.9, One Piece
 #Create, control, and turn into snow, becoming a living entity of snow.
-105. Ice Logia, 7.1, Aokiji from One Piece
+105. Ice Logia, 7.1, One Piece
 #Create, control, and turn into ice, becoming a living entity of ice.
 106. Freezing Breath, 3.1, Generic
 #Charge and unleash a freezing breath of frigid winds that freezes what it hits. Longer charging and more energy increase power.
@@ -310,7 +310,7 @@
 #(Tech) Emit electromagnetic waves that disable and cripple all technology with an interface. With training, you can fine-tune them to activate or control electronics instead.
 156. Impulse, 2.0, Generic
 #Quicken your body's electrical signals to proportionally increase reflexes and speed. Overuse may cause nerve damage.
-157. Godspeed, 4.2, HxH
+157. Godspeed, 4.2, Hunter x Hunter
 #Overhaul your nervous system with your own lightning for near-instant reflexes and extreme speed. It damages your body over time, so extended use is not recommended.
 158. Electrokinesis, 4.8, Generic
 #Create and control electricity at will, from shooting lightning bolts to tweaking your own bioelectricity. You cannot control electromagnetic waves.
@@ -472,7 +472,7 @@
 #Sink into shadows and travel within them like Black Sabbath from JoJo. Sunlight while inside burns you and deals damage.
 237. Shadow Hands, 3.2, Generic
 #Manifest controllable floating hands of shadow. They can grip, crush, slash, and combine into larger, stronger forms.
-238. Sethan, 4.6, Sethan from JoJo
+238. Sethan, 4.6, JoJo
 #Move your shadow as a living, attacking creature. Those who step on it rapidly de-age until you are unconscious or deactivate it; stronger opponents de-age slower.
 239. Shadow Puppeteer, 3.7, Naruto
 #Extend your shadow; when it touches a target's shadow, their movements mimic yours until dispelled.
@@ -578,7 +578,7 @@
 #Conjure a light ball that bursts into blinding flash and noise, disorienting enemies and heavily harming dark enemies.
 290. Light of Glory, 3.3, Generic
 #Call victorious light from the heavens to bolster allies. Those touched gain slightly increased physical stats, mental resistance, vigor, and courage.
-291. Light Grenade, 2.8, DBZ
+291. Light Grenade, 2.8, Dragon Ball
 #Conjure and launch a fast, powerful grenade of exploding light energy.
 292. Beam, 3.4, Generic
 #Shoot a near-instant beam of concentrated light and heat from your fingers.
@@ -634,9 +634,9 @@
 #Bathe a target in healing light to restore them from even lethal damage; any wound short of death can be healed. Scales with power; stronger targets cost more.
 318. Pillar of Light, 3.4, Generic
 #Call down a pillar of searing light anywhere in sensory range. Deals extra damage to unholy beings.
-319. Judgement Call, 4.8, EBF
+319. Judgement Call, 4.8, Epic Battle Fantasy
 #Summon an erupting fountain of pure divine light dealing massive pillar-like destruction, lethal to Unholy beings, plus purification. Drains most energy; stronger than some Epic abilities but held back by cost and charge time.
-320. Genesis, 7.7, EBF
+320. Genesis, 7.7, Epic Battle Fantasy
 #"May there be mercy on man and machine for their sins." Call a gigantic crucifix of absolute holy light dealing country-erasing judgment; no Unholy being survives, while allies caught are healed of all conditions. Spends all energy; 30-day cooldown.
 321. Light Trick, 3.4, Generic
 #Bend light into sight-deceiving optical illusions. Light can be solidified for disguise, but touch reveals the trick.
@@ -814,7 +814,7 @@
 #Your body moves as if in zero gravity, letting you float freely though with little control.
 408. Low Gravity, 2.1, Generic
 #Create low-gravity zones in your line of sight, reducing the weight and falling speed of objects inside.
-409. Burden Breaker, 5.3, Calamity Mod
+409. Burden Breaker, 5.3, Terraria
 #"More speed" While active, your speed ignores physics including air resistance, gravity, and friction. You gain momentum indefinitely until deactivated, making it incredibly uncontrollable and potentially stranding you at the universe's edge.
 410. Nuclear, 6.7, Generic
 #Create and control localized nuclear reactions with your energy, becoming a living nuclear weapon platform. Increased use causes radiation poisoning that fades over time.
@@ -942,7 +942,7 @@
 #Extends your sight beyond your eyes, controllable like a free spectator camera.
 472. Super Jump, 1.8, Generic
 #Lets you leap great distances, such as over a building for a regular person. Also grants immunity to falling damage.
-473. Shaper, 6.9, Worm Panacea
+473. Shaper, 6.9, Worm
 #Freely manipulates flesh and biomaterials by contact with perfect cellular precision. Larger power gaps let targets resist your changes more.
 474. Tool Manipulation, 3.5, Generic
 #Assigns an object under your lifting strength as a target to telekinetically control with extreme limb-like precision.
@@ -956,7 +956,7 @@
 #Fires a laser beam that dresses anyone in any mundane clothing of your choice.
 479. Spirit Gathering, 7.2, Generic
 #Channels and uses as your own the energy of anyone willing to share it, regardless of distance.
-480. Power of Destruction, 6.8, DxD
+480. Power of Destruction, 6.8, Highschool DxD
 #Conjures and controls pure destructive energy that can annihilate anything with enough magical power.
 481. Full Counter, 7.1, Nanatsu no Taizai
 #With precise timing, counters any attack thrown at you and returns it with double power.
@@ -1072,7 +1072,7 @@
 #Casts an ability with delayed effect, such as a fireball firing 1 minute later in place, or healing held until needed.
 537. Permeation, 4.6, MHA
 #Phases through objects and attacks non-selectively, so you can fall through ground and go blind phasing your head. Disabling inside solid matter ejects you headfirst at high speed.
-538. Dress Break, 3.4, DxD
+538. Dress Break, 3.4, Highschool DxD
 #Destroys a touched target's clothing or armor by touch, delayable up to an hour.
 539. Multiplicity, 4.7, Generic
 #Uses multiple instances of an ability at once, like triple fireball or tenfold lightning strike, each costing appropriate energy.
@@ -1180,7 +1180,7 @@
 #Lets you enforce the clauses and conditions of any contract you make. Conditions must be set while enforcement is active, and enforcement binds both you and your target.
 591. Binding Vow, 4.5, Jujutsu Kaisen
 #Lets you create binding vows, promises with reality itself. Breaking a vow between parties inflicts the penalty regardless of strength. You can also make self-vows, sacrificing something to boost energy output, such as being weaker at night to be stronger by day.
-592. Chop Chop, 3.7, One Piece Buggy
+592. Chop Chop, 3.7, One Piece
 #Lets you split your body apart and telekinetically float the parts around with your feet as the anchor. You are immune to slashing attacks while active, but limbs too far from your feet go inactive.
 593. Lord of Shades, 7.0, Hollow Knight
 #You are the embodiment of the Void, a vast devouring abyssal fluid that seeks to consume. You can shape it into tendrils, barbs, blades, fangs, mouths and more, defaulting to barbed tendrils; you can turn into void, shapeshift, corrupt living creatures to strengthen and control them though it can be resisted, and subsume beings to store them or drain their energy without gaining it.
@@ -1188,9 +1188,9 @@
 #Lets you exert incredible repulsive force, enough to wipe out entire streets as a normal human. Has a 5-second cooldown.
 595. Universal Pull, 4.1, Naruto
 #Lets you exert incredible attractive force to pull distant targets or bury a target under surrounding objects. Has a 5-second cooldown.
-596. Operation, 7.2, One Piece Trafalgar Law
+596. Operation, 7.2, One Piece
 #Lets you create a circular zone where you control space like an operating table, swapping objects, amputating without harm, removing hearts, teleporting, and more with training. Maintaining the zone and using the power costs immense energy.
-597. Azure Dragon Form, 7.8, One Piece Kaido
+597. Azure Dragon Form, 7.8, One Piece
 #Lets you transform into a giant Eastern Azure Dragon or hybrid at will, massively boosting physical abilities. Grants elemental breath attacks like fire, lightning, and air, plus fire clouds to lift things or fly.
 598. Buddha Form, 6.8, One Piece
 #Lets you transform into a giant golden Buddha statue, massively boosting physical abilities. Grants golden shockwaves and near-invulnerability to most damage in this form.
@@ -1262,7 +1262,7 @@
 #While active, you cannot use energy or mana in any way. In exchange, physical abilities rise with your energy reserves, you are immune to spells cast directly on you, and you cannot be detected or directly targeted by magical means.
 632. White Tiger Form, 3.1, Generic
 #Lets you transform into a snow tiger or hybrid, gaining enhanced senses, predatory instincts, natural weapons, increased physical stats, and tiger traits.
-633. Swamp Logia, 6.2, One Piece Caribou
+633. Swamp Logia, 6.2, One Piece
 #Lets you generate, control, create, and turn into mud or bottomless swamp. You can drag objects or people inside to store them in stasis.
 634. Idle Death Gamble, 5.5, Jujutsu Kaisen
 #See https://jujutsu-kaisen.fandom.com/wiki/Idle_Death_Gamble
@@ -1298,7 +1298,7 @@
 #Wood Release lets you create, shape, and control wood and plant life. Roots you create can absorb and suppress energy/mana.
 650. Dust Release, 7.2, Naruto
 #Lets you form three-dimensional translucent constructs like spheres and cubes that, once launched, reduce anything passing through to dust on a molecular level.
-651. Skill Drain, 4.7, Worm Victor
+651. Skill Drain, 4.7, Worm
 #Lets you drain others' skills through touch to worsen theirs and improve yours, e.g. swordsmanship. Cannot exceed the victim's level, so draining 1000 novices will not make you a sword god.
 652. Velocity, 3.6, Worm
 #You move 10x faster but influence the world 10x less. Punches hit 10x weaker and air resistance hits 10x stronger, etc.
@@ -1384,7 +1384,7 @@
 #(Tech) Build tech related to personal computers, such as small supercomputers, etc.
 693. Tinker - Games, 2.3, Generic
 #(Tech) Build tech related to games or entertainment programs. You are over 100x more efficient than an average experienced full dev team at making them.
-694. Tinker - Dreadon, 8.3, Calamity Mod
+694. Tinker - Dreadon, 8.3, Terraria
 #(Tech) Build tech emulating Dreadon from Calamity Mod, harnessing practically any energy. Includes hyper light chainsaws, black hole bombs, cosmic-energy godslaying mechs, a godslaying sword of damned souls, and an instant universe-range sniper; limits are creativity, resources, and time.
 695. Tinker - Sensors, 4.8, Generic
 #(Tech) Build tech related to sensors, sensing, and tracking like radars, sonars, magic sensors, trackers, etc.
@@ -1446,11 +1446,11 @@
 #Transform fully or partially into slime, mostly negating physical damage and exploiting a slimy physique.
 724. Cursed Flames, 3.4, Terraria
 #Throw green fireballs that cannot burn inanimates, bouncing off them like rubber, but devour living flesh and stick like glue.
-725. Burning Sea, 4.3, Calamity Mod
+725. Burning Sea, 4.3, Terraria
 #Throw crimson flame balls strengthened by water; dousing with water is like throwing crude oil on fire.
-726. Brimstone, 4.7, Calamity Mod
+726. Brimstone, 4.7, Terraria
 #Conjure and wield Brimstone Crag flames tempered by tortured souls' agony. Incomparably hot, incinerating everything and burning intangibles like souls.
-727. Ranchor, 6.7, Calamity Mod
+727. Ranchor, 6.7, Terraria
 #Wield Ranchor, ultimate brimstone flames of malice and revenge. Burns anything including souls, energy, and flesh, but also burns the user to a lesser extent with more use.
 728. Banishing Fire, 3.6, Generic
 #Holy fire gifted to clerics by angels as blessings, harmless to regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings and blocks their healing.
@@ -1492,7 +1492,7 @@
 #Link senses with willing others via touch, seeing from each other's perspective. Too many links cause disorientation.
 747. Sleep Talk, 2.4, Generic
 #Talk to sleepers to influence them, shaping dreams or opinions like hypnosis.
-748. Probability Estimation, 6.8, Worm Dinah
+748. Probability Estimation, 6.8, Worm
 #View probabilities of any questioned outcome, like dying tomorrow or finding something somewhere. Always accurate except around blind spots.
 749. Adhesion, 1.9, Generic
 #Turn skin incredibly sticky to cling to walls or hold ordinary people. You feel no difference and control which parts stick.
@@ -1508,9 +1508,9 @@
 #"Vault-Tec Assisted Targeting System" puts your body on autopilot to aim attacks or aids melee as a helpful Intermediate-level combat AI.
 755. Warp Mist, 6.5, MHA
 #Create and control portal-like dark mists shapable to your liking, reaching anywhere visited or seen. With training, use coordinates and images for unvisited places plus more mist.
-756. Phenex, 7.6, DxD
+756. Phenex, 7.6, Highschool DxD
 #You are the Phenex, immortal through flames that near-instantly regenerate you from a single shred. Also wield powerful flames and winds with ease.
-757. Crack, 6.7, DxD
+757. Crack, 6.7, Highschool DxD
 #Create tears in things in range, neutralizing attacks or directly ravaging targets for massive damage. Tears resist healing, taking hours even for Epic-ranked healing.
 758. Number Man, 8.1, Worm
 #You possess nigh-infinite computational power for numbers and calculations, shaming even the strongest sci-fi supercomputers in math.
@@ -1520,7 +1520,7 @@
 #Stockpile energy while in an active slot, holding up to 3x your storage but taking 24 hours to fill completely.
 761. Cockroach Physique, 4.1, Generic
 #Turn into a humanoid cockroach or hybrid at will, gaining extreme resilience, increased physicality, and mundane cockroach traits.
-762. Candy Paramecia, 4.2, One Piece Perospero
+762. Candy Paramecia, 4.2, One Piece
 #Create and control candy as viscous syrup that hardens under your control; control ends after separation. With training, make it steel-hard and manipulate it off-body.
 763. Bronze Creation, 3.5, Generic
 #Create and shape bronze, the superior metal and alloy, into weapons, armor, or constructs. Can reinforce it with your energy.
@@ -1792,7 +1792,7 @@
 #Lets you sense hostile or killing intent directed at you and its source, though trained killers are harder to read.
 900. Dangersense, 3.8, Generic
 #Lets you sense incoming danger, with stronger threats producing stronger sensations.
-901. Bungee Gum, 3.7, HxH
+901. Bungee Gum, 3.7, Hunter x Hunter
 #Lets you conjure and manipulate Bungee Gum, a substance with the properties of both rubber and gum.
 902. Material Absorption, 4.8, Ben 10/Marvel
 #Lets you absorb a touched material to coat or transform your body and gain its properties, including esoteric ones like vibranium. Steel grants resilience and conductivity, uranium radioactivity, glass brittleness.
@@ -2020,7 +2020,7 @@
 #You can enforce the Law of Restoration on a target, forcefully restoring it to its deemed "restored" state. Even corpses can return to life and even erasure reversed if something remains. More powerful, damaged, or abnormal targets cost more energy. While slotted, it activates on your own death.
 1014. Inner Isles, 5.8, Generic
 #There is an island inside your being. You can create doors to a spatial dimension within your existence — a small vegetated island in a vast lifeless ocean. Creating larger doors and maintaining doors consumes energy.
-1015. Sea Serpent of the End, 7.2, DxD
+1015. Sea Serpent of the End, 7.2, Highschool DxD
 #You can transform into Leviathan, the Sea Serpent of the End. As this giant mythical sea snake, you control all water in range on a massive scale, tilting seas and drowning cities, creating more water serpents, and summoning flood-causing rains. All water-based abilities and effects are massively amplified in this form.
 1016. Gradual Transformation, 3.6, Generic
 #You can gradually transform your body into any shape, but the slowness demands care. Turning into a cat takes roughly 3 hours, and you cannot increase or decrease mass by more than 500%.
@@ -2044,9 +2044,9 @@
 #You can shed blood to form a ground puddle from which to summon one or several Blood Golems. Summoned strength or number scales with physical stats and blood shed (minimum 100ml).
 1026. Apothecary Physique, 5.8, Generic
 #Apothecary Physique lets you manipulate your body's interior to reproduce any consumed chemical or digestible item's effects, like health, mana, iron-skin, or night-vision potions, as long as it was Epic rank or below. It also grants complete control over your biochemistry.
-1027. Seraph Tracers, 5.0, Calamity Mod
+1027. Seraph Tracers, 5.0, Terraria
 #"At the speed of heaven" You can manifest Seraphic wings, amplifying speed and granting free high-speed flight. While manifest, you resist mundane environmental effects below Epic rank — swimming in lava, walking on water or through natural fire, ignoring fall damage, breathing in space, etc. The wings are superhumanly strong, easily bisecting people and scaling with physical stats.
-1028. Nebula Mantle, 3.6, Terraria/Calamity Mod
+1028. Nebula Mantle, 3.6, Terraria
 #"The very stars guide your flight" You can manifest cosmic wings granting fast flight without existing in physical space. While active they resonate with cosmic energies, boosting all spell power and accelerating energy recovery closer to night.
 1029. Icarus' Folly, 3.5, Generic
 #"And so the sun never allowed a mortal to fly again" You can enact Icarus' Folly in an area, evoking the sun's wrath against fliers. Those exceeding 10 meters elevation burn in holy inferno, hotter the higher above ground they are. Zone width depends on energy expended — larger areas cost more. Victims instinctively sense flight's danger.

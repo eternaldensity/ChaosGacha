@@ -114,6 +114,9 @@ def main():
                "dataVersion": data_version,
                "counts": {c: sum(1 for e in compact if e["f"] == c)
                           for c in CATEGORIES},
+               "sources": {
+                   c: sorted({e["s"] for e in compact if e["f"] == c})
+                   for c in CATEGORIES},
                "tiers": TIERS, "classes": CLASSES, "categories": CATEGORIES,
                "entries": compact}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
