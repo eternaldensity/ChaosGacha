@@ -273,6 +273,24 @@
   const canvas = $("view3d");
   const ctx = canvas.getContext("2d");
   let projected = []; // [{id,x,y,r,node,vis}]
+  let lastFitKey = "";
+  // Frame the shown nodes: with only the root + one neighbour unlocked the
+  // sphere is mostly empty, so zoom in; as the tree fills out, ease back to
+  // the full-sphere default. Runs only when the shown set changes, so manual
+  // zoom/rotate is never overridden mid-session.
+  function maybeAutoFit(d) {
+    const key = d.tree.id + ":" + d.st.unlocked.length + ":" + d.vis.size + ":" +
+      (d.st.swaps || []).length + ":" + (d.st.added_links || []).length;
+    if (key === lastFitKey) return;
+    lastFitKey = key;
+    let maxR = 0.12;
+    for (const nd of d.rt.nodes) {
+      if (!d.vis.has(nd.id) && !d.unl.has(nd.id)) continue;
+      const r = Math.hypot(nd.pos[0], nd.pos[1], nd.pos[2]);
+      if (r > maxR) maxR = r;
+    }
+    cam.dist = Math.max(1.05, Math.min(4.2, 1.05 + maxR * 2.15));
+  }
   function fitCanvas() {
     const r = canvas.getBoundingClientRect();
     const dpr = Math.min(2, window.devicePixelRatio || 1);
@@ -312,6 +330,7 @@
     const d = await viewData();
     if (!d) return;
     updateViewInfo();
+    maybeAutoFit(d);
     const cx = W / 2, cy = H / 2, base = Math.min(W, H) * 0.42;
     // edges between shown nodes
     ctx.lineWidth = 1;
@@ -337,10 +356,12 @@
     }
     items.sort((a, b) => a.s - b.s);
     projected = [];
+    const sparse = items.length < 40;
     for (const it of items) {
       const unlocked = d.unl.has(it.nd.id);
       const col = catColor(it.nd.file);
-      const rad = Math.max(2, Math.min(9, (unlocked ? 3.4 : 2.6) + it.nd.rarity * 0.55)) * (window.devicePixelRatio || 1) / 1.5;
+      const baseR = sparse ? 6.2 : (unlocked ? 3.4 : 2.6);
+      const rad = Math.max(2, Math.min(10, baseR + it.nd.rarity * 0.55)) * (window.devicePixelRatio || 1) / 1.5;
       ctx.beginPath();
       ctx.arc(it.x, it.y, rad, 0, Math.PI * 2);
       if (unlocked) { ctx.fillStyle = col; ctx.fill(); }

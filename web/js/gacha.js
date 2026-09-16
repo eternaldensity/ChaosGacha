@@ -27,19 +27,34 @@ window.ChaosGacha = (function () {
       .replace(/\((Nsfw|Tech|Character|Gacha)\)/g, "").trim();
   }
 
-  // category: one of the 5, or "random". q: optional substring filter.
-  function buildPool(entries, category, q, rnd) {
+  // filters: {q, source, rmin, rmax, hideNsfw, hideTech, exclude[]}.
+  // A plain string is treated as {q} (backwards compatible).
+  function normFilt(f) {
+    if (typeof f === "string") return { q: f };
+    return f || {};
+  }
+
+  // category: one of the 5, or "random".
+  function buildPool(entries, category, filt, rnd) {
     rnd = rnd || Math.random;
+    const F = normFilt(filt);
     let cat = category;
     if (cat === "random") {
       const cats = ["ability", "item", "skill", "trait", "familiar"];
       cat = cats[Math.floor(rnd() * cats.length)];
     }
-    const ql = (q || "").trim().toLowerCase();
+    const ql = (F.q || "").trim().toLowerCase();
+    const excl = F.exclude && F.exclude.length ? new Set(F.exclude) : null;
     const pool = entries.filter(e =>
       e.f === cat && e.t !== "tree" &&
+      (!F.source || e.s === F.source) &&
+      (F.rmin == null || e.r >= F.rmin) &&
+      (F.rmax == null || e.r <= F.rmax) &&
+      (!F.hideNsfw || !e.nsfw) &&
+      (!F.hideTech || !e.tech) &&
+      (!excl || !excl.has(e.name)) &&
       (!ql || e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql)));
-    if (!pool.length) throw new Error("no entries match (try clearing the filter)");
+    if (!pool.length) throw new Error("no entries match (loosen the filters)");
     return { cat, pool };
   }
 
@@ -58,9 +73,9 @@ window.ChaosGacha = (function () {
     return { entry: filt[idx], weight: fw[idx], pull };
   }
 
-  function roll(entries, tiers, category, min, max, avg, q, rnd) {
+  function roll(entries, tiers, category, min, max, avg, filt, rnd) {
     rnd = rnd || Math.random;
-    const { cat, pool } = buildPool(entries, category, q, rnd);
+    const { cat, pool } = buildPool(entries, category, filt, rnd);
     const wOf = e => 1 / Math.pow(4, Math.abs(avg - e.r));
     let weightsum = 0;
     for (const e of pool) if (e.r <= max && min < e.r) weightsum += wOf(e);
@@ -81,9 +96,9 @@ window.ChaosGacha = (function () {
   // Candidate strip for the spin animation: plausible results drawn through
   // the same pull/filter/weight path as roll(). Caller appends the true
   // result at the end. `category` must already be resolved (not "random").
-  function drawStrip(entries, category, min, max, avg, q, count, rnd) {
+  function drawStrip(entries, category, min, max, avg, filt, count, rnd) {
     rnd = rnd || Math.random;
-    const { cat, pool } = buildPool(entries, category, q, rnd);
+    const { cat, pool } = buildPool(entries, category, filt, rnd);
     const items = [];
     let guard = 0;
     while (items.length < count && guard++ < count * 40) {

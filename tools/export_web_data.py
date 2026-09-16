@@ -53,13 +53,47 @@ CLASSES = [
 CATEGORIES = ["ability", "item", "skill", "trait", "familiar"]
 
 
+def flag_map():
+    """Map (file, number) -> token set by re-scanning the raw data files.
+    Used to preserve NSFW/Tech flags that the tree pipeline strips."""
+    out = {}
+    for path in [os.path.join(gt.GACHA_DIR, f + ".txt") for f in gt.ALL_FILES]:
+        file = os.path.basename(path)[:-4]
+        cur = None
+        desc_lines = []
+        with open(path, encoding="utf-8") as fh:
+            lines = fh.read().splitlines()
+        def flush():
+            if cur is not None:
+                toks, _ = gt.parse_description(
+                    " ".join(l.strip() for l in desc_lines if l.strip()))
+                out[(file, cur)] = toks
+        for line in lines:
+            m = gt.HEADER_RE.match(line)
+            if m:
+                flush()
+                cur = int(m.group(1))
+                desc_lines = []
+            else:
+                desc_lines.append(line)
+        flush()
+    return out
+
+
 def main():
     entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True)
+    flags = flag_map()
     compact = []
     for e in entries:
-        compact.append({"f": e["file"], "n": e["number"], "name": e["name"],
-                        "r": e["rarity"], "s": e["source"], "t": e["tag"],
-                        "d": e["description"], "m": e.get("meta", [])})
+        toks = flags.get((e["file"], e["number"]), set())
+        item = {"f": e["file"], "n": e["number"], "name": e["name"],
+                "r": e["rarity"], "s": e["source"], "t": e["tag"],
+                "d": e["description"], "m": e.get("meta", [])}
+        if "Nsfw" in toks:
+            item["nsfw"] = True
+        if "Tech" in toks:
+            item["tech"] = True
+        compact.append(item)
     payload = {"generated_at": datetime.datetime.now(datetime.timezone.utc)
                .isoformat(timespec="seconds"),
                "counts": {c: sum(1 for e in compact if e["f"] == c)

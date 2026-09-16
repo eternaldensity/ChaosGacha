@@ -59,9 +59,28 @@
       </div>
       <label style="margin-top:8px">Category</label>
       <div class="cat-grid" id="catGrid"></div>
-      <label for="q">Filter pool (optional)</label>
-      <input type="search" id="q" placeholder="name or source contains…">
       <div style="margin-top:12px"><button class="primary" id="rollBtn">ROLL</button></div>
+    </div>
+    <details class="card" id="filterBox">
+      <summary>Filters &amp; options</summary>
+      <label for="q">Name / source contains</label>
+      <input type="search" id="q" placeholder="e.g. flame, Fate…">
+      <label for="fSource">Source</label>
+      <select id="fSource"><option value="">Any source</option></select>
+      <div class="row">
+        <div><label for="fRmin">Rarity from</label>
+          <input type="number" id="fRmin" step="0.1" min="0" placeholder="any"></div>
+        <div><label for="fRmax">Rarity to</label>
+          <input type="number" id="fRmax" step="0.1" min="0" placeholder="any"></div>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <label style="display:flex;gap:8px;align-items:center;min-height:44px">
+          <input type="checkbox" id="fNsfw" style="width:22px;height:22px"> Hide NSFW</label>
+        <label style="display:flex;gap:8px;align-items:center;min-height:44px">
+          <input type="checkbox" id="fTech" style="width:22px;height:22px"> Hide Tech</label>
+      </div>
+      <label style="display:flex;gap:8px;align-items:center;min-height:44px">
+        <input type="checkbox" id="fDedup" style="width:22px;height:22px"> Skip already-rolled</label>
       <div class="row" style="margin-top:8px">
         <div><label for="spinSpeed">Spin slowdown</label>
           <select id="spinSpeed">
@@ -71,7 +90,8 @@
             <option value="slow">Slow</option>
           </select></div>
       </div>
-    </div>
+      <div class="muted small" id="poolCount" style="margin-top:8px"></div>
+    </details>
     <div class="card" id="reelCard" style="display:none">
       <div class="reel" id="reel" title="Tap to skip"><div class="reel-inner" id="reelInner"></div></div>
       <div class="muted small" style="margin-top:4px">Tap the wheel to skip.</div>

@@ -24,10 +24,11 @@
         const d = JSON.parse(raw);
         d.tickets = d.tickets || []; d.history = d.history || [];
         d.settings = d.settings || { spin: "normal" };
+        d.settings.filters = d.settings.filters || {};
         return d;
       }
     } catch (e) {}
-    return { tickets: [], history: [], settings: { spin: "normal" } };
+    return { tickets: [], history: [], settings: { spin: "normal", filters: {} } };
   }
   function save() {
     try { localStorage.setItem(LS, JSON.stringify(DB)); }
@@ -66,6 +67,76 @@
   // preset + category pickers
   let preset = "gold", category = "random";
   const CATS = ["random", "ability", "item", "skill", "trait", "familiar"];
+
+  function sourcesFor(cat) {
+    const cats = cat === "random" ? CATS.slice(1) : [cat];
+    const s = new Set();
+    for (const e of DATA.entries) {
+      if (cats.includes(e.f) && e.t !== "tree" && e.s) s.add(e.s);
+    }
+    return [...s].sort((a, b) => a.localeCompare(b));
+  }
+  function refreshSources(keep) {
+    const sel = $("fSource");
+    const cur = keep ? sel.value : "";
+    sel.innerHTML = `<option value="">Any source</option>` +
+      sourcesFor(category).map(s => `<option${s === cur ? " selected" : ""}>${esc(s)}</option>`).join("");
+    updatePoolCount();
+  }
+  function collectFilters() {
+    const rmin = parseFloat($("fRmin").value), rmax = parseFloat($("fRmax").value);
+    const F = {
+      q: $("q").value,
+      source: $("fSource").value || null,
+      rmin: isNaN(rmin) ? null : rmin,
+      rmax: isNaN(rmax) ? null : rmax,
+      hideNsfw: !!$("fNsfw").checked,
+      hideTech: !!$("fTech").checked,
+      dedup: !!$("fDedup").checked
+    };
+    DB.settings.filters = {
+      q: F.q, source: F.source,
+      rmin: $("fRmin").value, rmax: $("fRmax").value,
+      hideNsfw: F.hideNsfw, hideTech: F.hideTech, dedup: F.dedup
+    };
+    save();
+    return F;
+  }
+  function restoreFilters() {
+    const F = (DB.settings && DB.settings.filters) || {};
+    $("q").value = F.q || "";
+    $("fRmin").value = F.rmin || "";
+    $("fRmax").value = F.rmax || "";
+    $("fNsfw").checked = !!F.hideNsfw;
+    $("fTech").checked = !!F.hideTech;
+    $("fDedup").checked = !!F.dedup;
+    refreshSources(false);
+    if (F.source) $("fSource").value = F.source;
+    updatePoolCount();
+  }
+  function updatePoolCount() {
+    try {
+      const F = {
+        q: $("q").value, source: $("fSource").value || null,
+        rmin: parseFloat($("fRmin").value) || null,
+        rmax: parseFloat($("fRmax").value) || null,
+        hideNsfw: !!$("fNsfw").checked, hideTech: !!$("fTech").checked
+      };
+      const cats = category === "random" ? CATS.slice(1) : [category];
+      let n = 0;
+      for (const c of cats) {
+        const ql = (F.q || "").trim().toLowerCase();
+        n += DATA.entries.filter(e =>
+          e.f === c && e.t !== "tree" &&
+          (!F.source || e.s === F.source) &&
+          (F.rmin == null || e.r >= F.rmin) &&
+          (F.rmax == null || e.r <= F.rmax) &&
+          (!F.hideNsfw || !e.nsfw) && (!F.hideTech || !e.tech) &&
+          (!ql || e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql))).length;
+      }
+      $("poolCount").textContent = `≈${n} entr${n === 1 ? "y" : "ies"} in pool.`;
+    } catch (e) { /* controls not ready */ }
+  }
   function renderPickers() {
     const pg = $("presetGrid");
     pg.innerHTML = "";
@@ -87,7 +158,7 @@
       const b = document.createElement("button");
       b.className = "pick" + (category === c ? " sel" : "");
       b.textContent = c === "random" ? "🎲 random" : c;
-      b.addEventListener("click", () => { category = c; renderPickers(); });
+      b.addEventListener("click", () => { category = c; renderPickers(); refreshSources(true); });
       cg.appendChild(b);
     }
     $("tkTier").innerHTML = DATA.tiers.map(t => `<option>${t.name}</option>`).join("");
@@ -107,9 +178,11 @@
 
   function doRoll(min, max, avg, cat, ticketId) {
     if (spinning) return;
+    const F = collectFilters();
+    if (F.dedup) F.exclude = DB.history.map(h => h.name);
     let r;
     try {
-      r = G.roll(DATA.entries, DATA.tiers, cat, min, max, avg, $("q").value);
+      r = G.roll(DATA.entries, DATA.tiers, cat, min, max, avg, F);
     } catch (e) { toast(e.message, true); return; }
     if (ticketId) DB.tickets = DB.tickets.filter(t => t.id !== ticketId);
     DB.history.unshift(Object.assign({ id: uid(), at: Date.now(), min, max, avg }, r));
@@ -118,7 +191,7 @@
     const speed = (DB.settings && DB.settings.spin) || "normal";
     const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (speed === "off" || reduced || !window.requestAnimationFrame) { showResult(r); return; }
-    spinReel(r, min, max, avg, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal);
+    spinReel(r, min, max, avg, F, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal);
   }
 
   const SPIN_SPEEDS = {
@@ -128,10 +201,10 @@
   };
   let spinning = false;
 
-  function spinReel(r, min, max, avg, opt) {
+  function spinReel(r, min, max, avg, filt, opt) {
     let items;
     try {
-      items = G.drawStrip(DATA.entries, r.category, min, max, avg, $("q").value, opt.n);
+      items = G.drawStrip(DATA.entries, r.category, min, max, avg, filt, opt.n);
     } catch (e) { showResult(r); return; }
     items.push({ name: r.name, rarity: r.rarity, source: r.source, category: r.category });
     const reel = $("reel"), inner = $("reelInner");
@@ -267,5 +340,10 @@
     DB.settings.spin = $("spinSpeed").value;
     save();
   });
+  restoreFilters();
+  for (const id of ["q", "fSource", "fRmin", "fRmax", "fNsfw", "fTech", "fDedup"]) {
+    $(id).addEventListener("change", () => { collectFilters(); updatePoolCount(); });
+    $(id).addEventListener("input", updatePoolCount);
+  }
   renderTickets();
 })();
