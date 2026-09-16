@@ -25,16 +25,18 @@
       if (raw) {
         const d = JSON.parse(raw);
         d.history = d.history || [];
+        d.settings = d.settings || {};
         return d;
       }
     } catch (e) {}
-    return { history: [] };
+    return { history: [], settings: {} };
   }
   function save() {
     try { localStorage.setItem(LS, JSON.stringify(DB)); }
     catch (e) { toast("Storage full.", true); }
   }
   let DB = load();
+  if (DB.settings.reward === undefined) DB.settings.reward = true;
   const uid = () => Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
   let lastResult = null;
   let spinning = false;
@@ -68,11 +70,18 @@
     return cands[Math.floor(rnd() * cands.length)];
   }
 
+  function rewardsOn() { return DB.settings.reward !== false; }
+  function updateRewardUI() {
+    if (!lastResult) return;
+    const choice = (lastResult.tier === "Major" || lastResult.tier === "Ultimate");
+    $("rewardRow").style.display = (rewardsOn() && choice) ? "flex" : "none";
+    $("rewardBtn").style.display = rewardsOn() ? "" : "none";
+  }
+
   function showResult(r) {
     lastResult = r;
     $("resultCard").style.display = "block";
-    const choice = (r.tier === "Major" || r.tier === "Ultimate");
-    $("rewardRow").style.display = choice ? "flex" : "none";
+    updateRewardUI();
     $("resultBody").innerHTML =
       `<div class="small muted">d20 = ${r.roll} — ${esc(r.tier)}</div>` +
       `<div class="result-name"><b>${esc(r.label)}</b> <span class="pill">severity ${r.sev}</span></div>` +
@@ -154,6 +163,13 @@
   }
 
   $("spinBtn").addEventListener("click", spin);
+
+  $("rewardToggle").checked = rewardsOn();
+  $("rewardToggle").addEventListener("change", () => {
+    DB.settings.reward = $("rewardToggle").checked;
+    save();
+    updateRewardUI();
+  });
 
   $("rewardBtn").addEventListener("click", () => {
     if (!lastResult) return;
