@@ -188,6 +188,14 @@ summary::marker { color: var(--accent); }
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: #3a4152; border-radius: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
+.sitefoot {
+  text-align: center; color: var(--muted);
+  font-size: 0.8rem; line-height: 1.8;
+  padding: 20px 14px 10px;
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
+}
+.sitefoot a { color: var(--accent); }
 .kv { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; }
 .kv .k { color: var(--muted); }
 select.inline, input.inline { width: auto; flex: 1; }
