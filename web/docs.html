@@ -82,10 +82,10 @@
       <h3>Starting options</h3>
       <p class="muted small">How you ended up where you ended up — and what tickets you start holding.</p>
       <ul>
-        <li><b>1 — Transmigration.</b> Still you, baseline human, fresh body in a new world with maybe some downloaded local knowledge — clothes on your back and the gacha in your soul. Starts with: <b>3× Random Gold tickets</b>.</li>
-        <li><b>2 — Native.</b> You live here; this is all normal to you. Prior training and an established backstory — but less starter pity. Starts with: <b>1× Random Gold</b>, or <b>2× Random Silver</b>, or <b>3× Random Bronze</b>.</li>
+        <li><b>1 — Transmigration.</b> Still you, baseline human, fresh body in a new world with maybe some downloaded local knowledge — clothes on your back and the gacha in your soul. Starts with: <b>3× Random Gold tickets</b>.<br><button class="cyoa-start" id="cyoa-transmigration" data-start="transmigration" style="margin-top:6px">Start with these</button></li>
+        <li><b>2 — Native.</b> You live here; this is all normal to you. Prior training and an established backstory — but less starter pity. Starts with: <b>1× Random Gold</b> <button class="cyoa-start" id="cyoa-native1" data-start="native1">Start</button>, or <b>2× Random Silver</b> <button class="cyoa-start" id="cyoa-native2" data-start="native2">Start</button>, or <b>3× Random Bronze</b> <button class="cyoa-start" id="cyoa-native3" data-start="native3">Start</button>.</li>
         <li><b>3 — Take Over.</b> You woke in a canon character's body with their memories, training, and powers. No starter pity — go earn your own tickets. Starts with: <b>no tickets</b>.</li>
-        <li><b>4 — Changed Fate.</b> You were meant to be the fated protagonist with a cheat — instead the multiverse replaced it with the gacha, and there's no canon to lean on. Starts with: <b>1× Platinum Random + 2× Gold Random</b>, or <b>1× Triple-Advantage Platinum Random</b>.</li>
+        <li><b>4 — Changed Fate.</b> You were meant to be the fated protagonist with a cheat — instead the multiverse replaced it with the gacha, and there's no canon to lean on. Starts with: <b>1× Platinum Random + 2× Gold Random</b> <button class="cyoa-start" id="cyoa-changed1" data-start="changed1">Start</button>, or <b>1× Triple-Advantage Platinum Random</b> (roll all three, keep the best) <button class="cyoa-start" id="cyoa-changed2" data-start="changed2">Start</button>.</li>
       </ul>
       <div class="note">If your opening rolls can't support the story, reroll a few times until they can — and feel free to adjust the starts and their tickets. The story matters more than the rules.</div>
     </div>
@@ -194,5 +194,6 @@
   }
 })();
 </script>
+<script src="js/docs.js"></script>
 </body>
 </html>

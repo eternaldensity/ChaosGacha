@@ -11,6 +11,7 @@ import datetime
 import hashlib
 import json
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -82,6 +83,50 @@ def flag_map():
 
 
 def main():
+    export_entries()
+    export_curses()
+
+
+def export_curses():
+    # web/data/curses.txt mirrors the original site's curse list verbatim
+    # (attribution: BronzDeck, see web README + site footer).
+    path = os.path.join(ROOT, "web", "data", "curses.txt")
+    out = []
+    cur = None
+    for line in open(path, encoding="utf-8").read().splitlines():
+        s = line.strip()
+        if not s:
+            if cur:
+                out.append(cur)
+                cur = None
+            continue
+        m = re.match(r"^(.*?)\((\d+)\)$", s)
+        if m and cur is None:
+            cur = {"label": m.group(1).strip(), "sev": int(m.group(2)),
+                   "desc": []}
+        elif cur is not None:
+            cur["desc"].append(s)
+    if cur:
+        out.append(cur)
+    compact = []
+    for e in out:
+        desc = [d for d in e["desc"] if not d.startswith("|Resolve:")]
+        res = [d for d in e["desc"] if d.startswith("|Resolve:")]
+        compact.append({
+            "label": e["label"], "sev": e["sev"],
+            "desc": " ".join(desc),
+            "resolve": res[0].replace("|Resolve:", "").strip(" |") if res else None,
+        })
+    dest = os.path.join(ROOT, "web", "data", "curses.js")
+    with open(dest, "w", encoding="utf-8") as fh:
+        fh.write("window.CHAOS_CURSES = ")
+        fh.write(json.dumps(compact, ensure_ascii=False, separators=(",", ":")))
+        fh.write(";\n")
+    print(f"wrote {dest} ({os.path.getsize(dest)} bytes, "
+          f"{len(compact)} curses)")
+
+
+def export_entries():
     entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True, True)
     flags = flag_map()
     # Data version: hash over topology/behaviour-relevant fields (file,

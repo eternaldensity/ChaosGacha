@@ -23,6 +23,12 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   desktop app, a ticket wallet, roll history, spin-wheel animation with
   adjustable slowdown, filters, ×10 multi-pull, result sharing, history
   stats, and history import/export.
+- `curse.html` — Curse Roulette port: d20 spin with the original severity
+  bands, resolve conditions, per-tier ticket rewards paid into the shared
+  wallet, and a resolvable curse history. List source: the original
+  site's curse list, vendored under `web/data/curses.txt`.
+- `docs.html` — tabbed documentation; the Story Start tab can seed the
+  ticket wallet with the CYOA opening tickets.
 
 Serve the `web/` directory over HTTP (e.g. `python3 -m http.server` inside
 `web/`) and open `tree.html` / `gacha.html`. `entries.js` is loaded with a
