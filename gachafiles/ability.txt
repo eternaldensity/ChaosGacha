@@ -28,7 +28,7 @@
 #Form and launch fireballs from your hands or other appendages; size and potency depend on energy expended.
 15. Flame Weaponry, 3.6, Generic
 #Emit fire shaped into any cold weaponry such as swords, axes, hammers, bows, and crossbows. The flames mimic the weapon's properties, staying sharp as a sword or heavy as a hammer.
-16. Frostflare, 4.5, Terraria
+16. Frostflare, 4.5, Calamity Mod
 #Emit and control incredibly powerful Frostflare, flames that freeze instead of burning. While using it, you gain incredible ice and cold resistance in exchange for vulnerability to flame.
 17. Fire Absorption, 4.3, Generic
 #Absorb fire into your body to release later as your own flames or convert into energy. Strong flames may be impossible or painful to absorb, and absorbing too much without releasing causes internal burning.
@@ -36,9 +36,9 @@
 #Control flames and ignition on the level of a Level 5 Esper from Toaru, with unmatched precision, range, and control.
 19. Unholy Flames, 5.7, Generic
 #Wield Hell flames so potent even you are not fully immune, suffering burns from overuse. They deal severe damage to Holy and Light-based beings.
-20. Profaned Flames, 6.2, Terraria
+20. Profaned Flames, 6.2, Calamity Mod
 #Channel and control Providence's Profaned Flames, which are incomparably hot, turn all to impartial ash, and ignore all fire resistance.
-21. Profaned Guardian Transformation, 6.5, Terraria
+21. Profaned Guardian Transformation, 6.5, Calamity Mod
 #Temporarily take the form of one of Providence's guardians, massively boosting physical stats and granting flame wings and Profaned Flame manipulation. Maintaining it slowly burns you from the inside until released, mitigated only by fire resistance.
 22. Shadowflames, 4.7, Terraria
 #Emit and control Shadowflame, soundless flames with no energy signature that burn away light, making them extremely hard to perceive. An experienced user can hide them from all senses.
@@ -814,7 +814,7 @@
 #Your body moves as if in zero gravity, letting you float freely though with little control.
 408. Low Gravity, 2.1, Generic
 #Create low-gravity zones in your line of sight, reducing the weight and falling speed of objects inside.
-409. Burden Breaker, 5.3, Terraria
+409. Burden Breaker, 5.3, Calamity Mod
 #"More speed" While active, your speed ignores physics including air resistance, gravity, and friction. You gain momentum indefinitely until deactivated, making it incredibly uncontrollable and potentially stranding you at the universe's edge.
 410. Nuclear, 6.7, Generic
 #Create and control localized nuclear reactions with your energy, becoming a living nuclear weapon platform. Increased use causes radiation poisoning that fades over time.
@@ -1384,7 +1384,7 @@
 #(Tech) Build tech related to personal computers, such as small supercomputers, etc.
 693. Tinker - Games, 2.3, Generic
 #(Tech) Build tech related to games or entertainment programs. You are over 100x more efficient than an average experienced full dev team at making them.
-694. Tinker - Dreadon, 8.3, Terraria
+694. Tinker - Dreadon, 8.3, Calamity Mod
 #(Tech) Build tech emulating Dreadon from Calamity Mod, harnessing practically any energy. Includes hyper light chainsaws, black hole bombs, cosmic-energy godslaying mechs, a godslaying sword of damned souls, and an instant universe-range sniper; limits are creativity, resources, and time.
 695. Tinker - Sensors, 4.8, Generic
 #(Tech) Build tech related to sensors, sensing, and tracking like radars, sonars, magic sensors, trackers, etc.
@@ -1446,11 +1446,11 @@
 #Transform fully or partially into slime, mostly negating physical damage and exploiting a slimy physique.
 724. Cursed Flames, 3.4, Terraria
 #Throw green fireballs that cannot burn inanimates, bouncing off them like rubber, but devour living flesh and stick like glue.
-725. Burning Sea, 4.3, Terraria
+725. Burning Sea, 4.3, Calamity Mod
 #Throw crimson flame balls strengthened by water; dousing with water is like throwing crude oil on fire.
-726. Brimstone, 4.7, Terraria
+726. Brimstone, 4.7, Calamity Mod
 #Conjure and wield Brimstone Crag flames tempered by tortured souls' agony. Incomparably hot, incinerating everything and burning intangibles like souls.
-727. Ranchor, 6.7, Terraria
+727. Ranchor, 6.7, Calamity Mod
 #Wield Ranchor, ultimate brimstone flames of malice and revenge. Burns anything including souls, energy, and flesh, but also burns the user to a lesser extent with more use.
 728. Banishing Fire, 3.6, Generic
 #Holy fire gifted to clerics by angels as blessings, harmless to regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings and blocks their healing.
@@ -2044,9 +2044,9 @@
 #You can shed blood to form a ground puddle from which to summon one or several Blood Golems. Summoned strength or number scales with physical stats and blood shed (minimum 100ml).
 1026. Apothecary Physique, 5.8, Generic
 #Apothecary Physique lets you manipulate your body's interior to reproduce any consumed chemical or digestible item's effects, like health, mana, iron-skin, or night-vision potions, as long as it was Epic rank or below. It also grants complete control over your biochemistry.
-1027. Seraph Tracers, 5.0, Terraria
+1027. Seraph Tracers, 5.0, Calamity Mod
 #"At the speed of heaven" You can manifest Seraphic wings, amplifying speed and granting free high-speed flight. While manifest, you resist mundane environmental effects below Epic rank — swimming in lava, walking on water or through natural fire, ignoring fall damage, breathing in space, etc. The wings are superhumanly strong, easily bisecting people and scaling with physical stats.
-1028. Nebula Mantle, 3.6, Terraria
+1028. Nebula Mantle, 3.6, Calamity Mod
 #"The very stars guide your flight" You can manifest cosmic wings granting fast flight without existing in physical space. While active they resonate with cosmic energies, boosting all spell power and accelerating energy recovery closer to night.
 1029. Icarus' Folly, 3.5, Generic
 #"And so the sun never allowed a mortal to fly again" You can enact Icarus' Folly in an area, evoking the sun's wrath against fliers. Those exceeding 10 meters elevation burn in holy inferno, hotter the higher above ground they are. Zone width depends on energy expended — larger areas cost more. Victims instinctively sense flight's danger.

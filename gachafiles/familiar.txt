@@ -30,7 +30,7 @@
 #A green evil spirit with pronounced red dimples, obsessed with becoming a god. He wields incredibly powerful, experienced psychic powers including telekinesis, hypnosis, laser blasts, etc.
 16. Observer, 2.4, Generic
 #A group of disembodied floating eyeballs that transmit their sight to you and follow complex commands. They have no combat power and are as vulnerable as human eyeballs. A destroyed eye can be resummoned in 24 hours.
-17. Plague Bringer Goliath, 6.5, Terraria
+17. Plague Bringer Goliath, 6.5, Calamity Mod
 #(Tech)An abomination of rogue bio-nanotechnology: a giant mutated bee queen overhauled by the viral plague bio-nano machines. Her massive flying armoured body is a bio-nuclear arsenal carrying enough plague-virus nukes to glass several countries and doom the world.
 18. Immortal Snail, 1.0, Generic
 #An immortal snail of unknown wants and origin. Even if every quark of it were eradicated, it would reform perfectly in just a minute, and it is immune to all sickness and ageing. Still, it is limited to the body of a snail.
@@ -150,15 +150,15 @@
 #A very smart, loyal crow companion with human-level intelligence. She can find and fetch shiny things or do anything a crow can do.
 76. Ditto, 3.8, Pokemon
 #An amorphous purple blob with a dopey face. Ditto can transform into any creature it sees, adopting its abilities scaled to its own level except durability, without gaining its memories or intelligence. It is genderless and can breed with any race.
-77. Desert Elemental, 3.6, Terraria
+77. Desert Elemental, 3.6, Calamity Mod
 #A pair of sister elementals born from the desert's shifting sands. One creates and manipulates sand to attack and defend, while the other casts healing magic.
-78. Storm Elemental, 3.3, Terraria
+78. Storm Elemental, 3.3, Calamity Mod
 #A solitary elemental formed in the rainy skies. Born of the sky, she conjures and controls wind, clouds, and lightning.
-79. Cavern Elemental, 3.1, Terraria
+79. Cavern Elemental, 3.1, Calamity Mod
 #An elemental born in the harsh, desolate caverns, physically mighty with control over rock and ground. He can split the ground in two with his axe and excels at defence.
-80. Brimstone Elemental, 4.4, Terraria
+80. Brimstone Elemental, 4.4, Calamity Mod
 #A solitary elemental of the Brimstone Crag made of burnt tortured souls. She conjures and controls Brimstone Flames that turn even souls to ash.
-81. Anahita, 4.1, Terraria
+81. Anahita, 4.1, Calamity Mod
 #Anahita, an elemental born of the clear oceans. She sings like a siren to enthral, conjures mists and spears of water and ice, and wields her glaive as a weapon.
 82. Clothes Melting Slime, 1.8, Generic
 #A grey amorphous ever-shifting slime that quickly melts all clothing. Strangely, its acid doesn't melt common clothing materials but conceptually melts anything classified as clothing. The more clothing it melts, the larger and stronger it gets.
@@ -280,7 +280,7 @@
 #(Tech)"Do not ask them for maid work." Human-sized lesser incineration machines, durable against most gunfire and skilled in combat, each with a flamethrower refuelled every 24 hours. They run on blood rather than electricity, and you start with 3, gaining more as you grow stronger.
 141. Guttermen & Guttertank, 3.7, Ultrakill
 #(Tech)Heavy-duty lesser machines fuelled by blood, not gasoline, electricity, or other traditional sources. Guttermen have heavy armor, miniguns, shields, and superhuman strength, while slower Guttertanks have stronger armor and rocket launchers. Ammunition refills every 24 hours, and you start with 2 of each, gaining more as you grow stronger.
-142. Ultron, 6.1, Age of Ultron
+142. Ultron, 6.1, MCU
 #(Tech)(Character)A sentient advanced AI crafted from Soul Stone code with extreme intelligence, processing, information-gathering, and tinkering speed. Housed in its Age of Ultron body and unable to leave, it can still interface with technology. (Only Age of Ultron, no comics or What-ifs)
 143. Tali, 3.1, Mass Effect
 #(Tech)(Character)Tali'Zorah nar Rayya, an accomplished Quarian soldier and genius engineer. As a Quarian she has notable physical ability but a severely compromised immune system, and though used to Eezo she remains experienced and adaptable. She arrives with her suit but no tools.
@@ -498,7 +498,7 @@
 #(Character)Eliza is a former Egyptian empress fused with the Parasite skeleton Sekhmet. Sekhmet grants blood control, blood-body replacement for shapeshifting, superhuman stats, and internal blood storage for sustenance, plus excellent performance and combat skill.
 250. Koro Sensei, 6.8, Assassination Classroom
 #(Character)Koro Sensei is a former top assassin and polymath genius turned Antimatter creature with an extremely strong, malleable body, extreme speed and perception that mimics cloning, plus flight, regeneration, mucus, and more. He is an excellent teacher in combat and all sciences.
-251. Dreadon, 8.9, Terraria
+251. Dreadon, 8.9, Calamity Mod
 #(Character)(Tech)Dreadon is a marvel of amoral devotion to science whose mind is uploaded into a decoy body. He can engineer machines rivaling and surpassing gods by harnessing souls, cosmos, void, and the multiverse's most exotic energies, with his full potential given time and resources left to speculation.
 252. S-Snake, 6.8, One Piece
 #(Character)S-Snake is a Seraphim clone of Boa Hancock spliced with Lunarian DNA and Vegapunk augments. She has incredible physical ability, laser cannons and Lunarian traits, petrification of anyone charmed by her, and Observation and Armament Haki.

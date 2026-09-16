@@ -10,9 +10,9 @@
 #Sword of the Evil Dragon Slaying Rabbit. Against dragons, enhances the wielder's physical stats and ignores a portion of their durability.
 6. Demon Catalyst, 4.8, Black Souls
 #Staff carved from a great demon's bones and soul. Amplifies all spells cast through it by 2x but also doubles their mana consumption.
-7. Astral Injection, 3.5, Terraria
+7. Astral Injection, 3.5, Calamity Mod
 #Injection of starborn astral blight essence. Massively increases energy regeneration for 10 minutes while tearing and rotting your insides. Restock Timer: 120 hours.
-8. Yharim Stimulants, 4.1, Terraria
+8. Yharim Stimulants, 4.1, Calamity Mod
 #Injection crafted by Dreadon granting immense might. Greatly boosts physical ability and regeneration for 30 minutes, followed by weakness and exhaustion. Restock Timer: 120 hours.
 9. Ring of Invisibility, 2.0, Generic
 #Ornate platinum ring that constantly bends light around the wearer, rendering them invisible.
@@ -34,7 +34,7 @@
 #Sacred Gear created by God that conjures demonic sword constructs with properties based on the user's capability and skill. Cannot create a sword that does something the user cannot do.
 18. A skeleton, 0.3, Generic
 #Ordinary human skeleton from a completely ordinary person.
-19. Auric Tesla Armor, 7.0, Terraria
+19. Auric Tesla Armor, 7.0, Calamity Mod
 #(Tech) Power armor modeled on the God Slaying Tyrant's. Grants extreme physical boost, Rare rank regeneration, hovering, and an extremely fast dash every 10 seconds. Managed by a virtual intelligence controlling its systems.
 20. Enuma Elish, 8.7, Fate
 #Gilgamesh - Sword of Rupture, Ea, granted by the gods and forged before swords existed. Releases red winds that shred spacetime without expending user energy, and at full power fires a beam that strips the world's texture, annihilating everything in its path.
@@ -98,7 +98,7 @@
 #Teleports you to Belethor's General Goods in Skyrim, Tamriel for 1 hour. Cannot leave a 10-meter circle from arrival; can buy native goods like Soul Gems and Magic Books. Cooldown: 720 hours.
 50. Hito Hito no Mi, 4.0, One Piece
 #Devil Fruit letting an object or animal assume human or hybrid form, at the cost of being unable to swim.
-51. Triactis True Paladinian Mage-Hammer of Might, 7.1, Terraria
+51. Triactis True Paladinian Mage-Hammer of Might, 7.1, Calamity Mod
 #Hammer of the greatest Paladin, with mountain-flattening might. Greatly amplifies magical and physical abilities and spells cast through it. Returns to the user when thrown, like Mjolnir.
 52. Ticket to the ITOPOD, 3.0, NGU Idle
 #Sends you to the ITOPOD, the Infinite Tower of Pissed Off Dudes. Fight random enemies floor-by-floor in gauntlet format, each as strong as its floor; earn an item equal to your final floor, but death is permanent. One time use. (A/N: Each floor corresponds to a familiar whose rarity equals Floor Number divided by 10. Floor 1 is a 0.1 rarity familiar while floor 32 is a 3.2 familiar.)
@@ -106,29 +106,29 @@
 #(Tome) Love Advice From the Great Duke of hell - While held, lets you create and control hands from any surface like your own limbs. With practice and study, usable without the tome.
 54. Furniture Catalog, 2.5, Generic
 #Instantly buys and teleports any mundane furniture from your current world to you at manufacturing cost. Unusable in combat or hostile territory.
-55. Abyssal Diving Suit, 4.2, Terraria
+55. Abyssal Diving Suit, 4.2, Calamity Mod
 #(Tech) Extremely tough power armor for deep-sea exploration down to 3,000 km. Adapts flawlessly to poison, corrosion, and pressure, letting you move and live underwater with ease.
-56. Grand Gelatin, 4.8, Terraria
+56. Grand Gelatin, 4.8, Calamity Mod
 #Rainbow gel in an ornate bottle. Consuming it grants Advanced Poison Resistance plus sizeable vitality and agility boosts.
 57. Ring of Swiftness, 2.1, Generic
 #Magical ornate silver ring improving agility, reflexes, and balance.
 58. Sand Cloak, 2.8, Generic
 #Dusty brown cloak hiding your presence. Once every 8 hours, shroud yourself in a violent localized sandstorm to retreat or hide.
-59. Ambrosial Ampule, 5.8, Terraria
+59. Ambrosial Ampule, 5.8, Calamity Mod
 #Ambrosia of the gods. Drinking it massively boosts vitality to near-regeneration and cures all illnesses and ailments.
-60. Bloom Stone, 3.2, Terraria
+60. Bloom Stone, 3.2, Calamity Mod
 #Ancient green-gem necklace granting sunlight-based regeneration: Uncommon in morning, Rare at noon, Uncommon in afternoon, Common in evening, none at night.
 61. Butcher's Bag of Infinite Meat, 1.7, Generic
 #Bag of limitless fresh mundane Earth animal meat in all cuts. Withdraw up to 100 kg every 24 hours by reaching in and thinking of the cut. Clean, not ethically sourced; ignore the implications.
-62. Living Dew, 5.2, Terraria
+62. Living Dew, 5.2, Calamity Mod
 #Living dew from the ancient jungle's depths. Consuming it significantly increases vitality and lifespan, granting strong ailment resistance and faster healing, amplified in jungles or forests.
-63. Permafrost's Concoction, 6.2, Terraria
+63. Permafrost's Concoction, 6.2, Calamity Mod
 #Culmination of Archmage Permafrost's work. Greatly increases energy/mana reserves and regeneration, massively buffs frost abilities at reduced cost, and grants strong cold and flame resistance.
 64. THE Stop Sign, 4.5, Generic
 #Indestructible stop sign. Whatever its head contacts instantly loses all momentum.
-65. Trinket of Chi, 2.3, Terraria
+65. Trinket of Chi, 2.3, Calamity Mod
 #Trinket of a monk who stood still until becoming a statue. Standing still over 3 seconds speeds energy/mana and health recovery.
-66. Evasion Scarf, 3.7, Terraria
+66. Evasion Scarf, 3.7, Calamity Mod
 #Scarf of a shadow-swift rogue. Activate to gain a large speed boost and intangibility while moving straight for 1 second, slipping through attacks or walls. 30 second cooldown.
 67. Grimoire of Hemomancy, 4.6, Black Clover
 #(Tome) Teaches Blood Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Blood_Magic
@@ -164,7 +164,7 @@
 #Large cauldron filling itself with a chosen major potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, greater Healing, greater Regeneration, Iron Skin, dragon breath, etc. Must know the potion (No Elixirs), Epic rank or below.
 83. Absorption Line, 4.7, Highschool DxD
 #Sacred Gear created by God. It allows the user to conjure energy lines that attach to targets to siphon energy. Can also bind opponents or swing like Spider-Man.
-84. Dreadon's Gaming Chair, 4.9, Terraria
+84. Dreadon's Gaming Chair, 4.9, Calamity Mod
 #(Tech) Incredibly powerful floating chair with more compute than the strongest supercomputers. Flies at supersonic speeds with powerful protective forcefields. The ultimate gaming chair.
 85. Returner's Clock, 4.9, Generic
 #Ornate antique hand clock with 3 unrefillable charges. Spend a charge to return to the morning of the current day. Turns to dust after all 3 are spent.
@@ -478,7 +478,7 @@
 #A wrapped-gift box that gives precisely the item you need for the situation, as long as it is Rare rank or below. Vanishes once used.
 240. Cloak of Levitation, 4.6, Marvel
 #A Sorcerer Supreme relic allowing free flight. Self-aware, it can pull its wearer from danger and hinder opponents on its own.
-241. Plague Canister, 5.7, Terraria
+241. Plague Canister, 5.7, Calamity Mod
 #(Tech) A canister of the Plague, a self-replicating nanomachine virus devouring biomass and turning living things into mindless biomechanically enhanced zombies for its hivemind. Releasing it without sufficient biokinetic or techno mastery dooms the world, though without a core they lack a hivemind command center.
 242. Mehrunes Razor, 7.1, Skyrim
 #Mehrunes Dagon's dagger. Capable of cutting anything the user can interact with — space, time, soul, connections, etc. The only limit is the user, not the dagger.
@@ -652,17 +652,17 @@
 #An ornate red-and-gold ring that attracts wealth, making it easier to make money and find treasures.
 327. Gold Ring Gift, 1.0, Generic
 #A gold ring to gift a loved one whose patterns customize themselves to the recipient. Restock Timer: 48 hours.
-328. Chlorophyte Bar, 3.9, Terraria
+328. Chlorophyte Bar, 3.9, Calamity Mod
 #A refined Chlorophyte bar from the deep ancient jungles, far more flexible and durable than mundane metal, capable of converting sunlight into energy. Synergizes very well with bio and nature abilities. Restock Timer: 8 hours.
-329. Aerolite Bar, 2.6, Terraria
+329. Aerolite Bar, 2.6, Calamity Mod
 #A refined Aerolite bar from the sky islands infused with sky energy that releases wind and can emulate weather under special conditions when infused with energy. Synergizes very well with lightning and air. Restock Timer: 8 hours.
-330. Astral Bar, 4.2, Terraria
+330. Astral Bar, 4.2, Calamity Mod
 #A refined, nigh-unbreakable bar from the Astral Infection containing refined cosmic energy that releases cosmic energies when infused with energy. Restock Timer: 8 hours.
-331. Broken Biome Blade, 2.8, Terraria
+331. Broken Biome Blade, 2.8, Calamity Mod
 #A broken sword handle that produces a blade with the properties of whatever element it is infused with when given energy.
-332. Roxcalibur, 3.3, Terraria
+332. Roxcalibur, 3.3, Calamity Mod
 #The legendary sword in the stone that you could not pull out; wield it stone and all as a bludgeoning weapon. Meeting all original Excalibur conditions lets you draw it to gain both Excalibur and an unbreakable rock.
-333. Sahara Slicers, 2.4, Terraria
+333. Sahara Slicers, 2.4, Calamity Mod
 #A pair of arid daggers that manifests 10 arid shivs every 30 seconds to launch as a volley at opponents.
 334. Unbreakable Blade, 3.0, Generic
 #A simple sharp steel longsword that is completely unbreakable and undamageable.
@@ -734,7 +734,7 @@
 #One of the Longinus created by God housing Ddraig's soul, the Heavenly Dragon of Domination. This gauntlet amplifies your stats by expending stamina, with higher boosts costing more stamina.
 368. Divine Dividing, 7.8, Highschool DxD
 #One of the Longinus created by God housing Albion's soul, the Heavenly Dragon of Supremacy. These wings grant flight and divide enemies' magical power to replenish your own reserves, venting excess through the wings.
-369. Holy Collider, 6.0, Terraria
+369. Holy Collider, 6.0, Calamity Mod
 #A sword carved from the profaned god's corpse that emits divine flame explosions on contact and releases holy flames by expending your energy. Holy and fire abilities are amplified when using it as a focus.
 370. Jackal & Casull, 3.7, Hellsing
 #An unwieldy pair of hand-cannon pistols wielded by a certain vampire: white Casull and black Jackal. Each holds 6 rounds of 13mm blessed silver exploding rounds and requires supernatural strength to wield and fire without tearing your arms off. You receive 2 magazines every 24 hours.
@@ -802,19 +802,19 @@
 #Think of the person you want to affect and rip the ticket to make them fall in love with you. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 402. Auto Doc, 3.9, Fallout
 #(Tech) An autonomous advanced doctor station from Big MT. created by Doctor Mobius. This large capsule performs even the most complicated procedures with near-perfect expertise from simple instructions when hooked to sufficient power.
-403. Blight Spewer, 5.7, Terraria
+403. Blight Spewer, 5.7, Calamity Mod
 #(Tech) An advanced flamethrower spewing Plague Nanomachine clouds that seek flesh and devour it from the inside out. The nanomachines disintegrate after a few seconds as a safety precaution.
-404. Shadethrower, 3.6, Terraria
+404. Shadethrower, 3.6, Calamity Mod
 #(Tech) A modified flamethrower converting regular burnable fuel into corrupted flames that rapidly rot whatever they burn.
-405. Heavenly Gale, 7.8, Terraria
+405. Heavenly Gale, 7.8, Calamity Mod
 #A divine bow crafted from earth and cosmos essences that converts any nocked arrow into exotic resonance crystals. They summon resonant lightning where they strike, powerful enough to flay gods alive and rend the surface world.
-406. Telluric Gale, 6.2, Terraria
+406. Telluric Gale, 6.2, Calamity Mod
 #A bow crafted from the profaned goddess's remains that converts any nocked arrow into powerful scorching bolts of divine holy flame powered by your energy.
-407. The Storm, 4.7, Terraria
+407. The Storm, 4.7, Calamity Mod
 #A bow carved from the storm weaver's remains that converts any nocked arrow into a lightning bolt scaling with its wielder's power.
-408. Hoarfrost Bow, 4.2, Terraria
+408. Hoarfrost Bow, 4.2, Calamity Mod
 #A mystical bow made from the frozen castle's essence that turns any nocked arrow into freezing mist scaling with its wielder's power.
-409. Lunarian Bow, 3.6, Terraria
+409. Lunarian Bow, 3.6, Calamity Mod
 #A bow crafted from the natural world's elements that converts your energy into energy arrows to fire.
 410. Phoenix Feather, 6.6, Black Souls
 #Placing this feather on a corpse whose soul still exists and is not blocked by Legendary rank or higher resurrection prevention revives them, consuming the feather. Restock Timer: 720 hours.
@@ -952,11 +952,11 @@
 #A folded contract promising full satisfaction; insert build specifications, location, and sufficient funds covering construction and labor, then sign. It burns to ash, your request having been retroactively expertly built with the money removed. Restock Timer: 720 hours.
 477. Mansion of the Boundary, 8.8, Generic
 #A taste-tailored mansion sitting in the middle of everything in its own impenetrable dimension even Outer Ones cannot breach. Enter through any door you touch and exit at any door in reality, even other multiverses or gardens.
-478. Plague Reaper Armor, 6.4, Terraria
+478. Plague Reaper Armor, 6.4, Calamity Mod
 #(Tech) High-tech plague doctor armour fused with Plague Nanovirus, greatly amplifying physical stats with aiming HUD. Immune to diseases and poison below Divine Level, it greatly amplifies your poison and bio abilities and can temporarily release Nanoviruses to rot enemies from within before dissolving safely.
-479. Wulfrum Armor, 2.8, Terraria
+479. Wulfrum Armor, 2.8, Calamity Mod
 #(Tech) Simple high-tech wulfrum armour with reasonable defense and comfort. An activated switch turns it into power armour with a supplied powerful machine gun; this mode has a 24-hour cooldown.
-480. Photon Ripper, 5.9, Terraria
+480. Photon Ripper, 5.9, Calamity Mod
 #(Tech) Dreadon's Exo-material chainsaw projecting dozens of adjustable hard-light teeth spinning at insane speeds, shredding almost anything. Slight overkill for trees.
 481. Master Ninja's Belt, 3.4, Generic
 #A master ninja's inconspicuous black belt granting incredible acrobatics, wall-sticking, fall damage immunity, and muffling of unintentional sounds up to speaking volume.
@@ -1288,7 +1288,7 @@
 #An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km pocket dimension with a small mountain, natural healing hot springs, bamboo forest, and great view; the mountain cannot be descended. Springs slightly accelerate natural healing and replenish automatically. The exit gate stays open and leads to where the entrance was last opened.
 645. Apartments Key, 5.1, Generic
 #An ornate key that when turned in a large space creates a portal to a 1 googol kilometers cubed pocket dimension lined with lifeless but powered Earth-standard apartments facing an empty center. The exit gate stays open and leads to where the entrance was last opened.
-646. Silver Samurai Armor, 5.1, The Wolverine/MCU
+646. Silver Samurai Armor, 5.1, MCU
 #An Adamantium-plated powered exoskeleton with superheated Adamantium blade, over 100 tons lifting strength, and life support letting even a sick old man use it fully. It conforms to any vaguely humanoid user and recharges to full within an hour when not in active use. (Mutagen manipulation device not included).
 647. Psycho, 1.1, Fallout
 #An addictive soldier's combat drug that suppresses pain, induces bloodthirsty haze, and boosts reflexes, metabolism, and concentration, with heavy addiction and side effects a skilled chemist might improve. You get 8 doses in a bandoleer. Restock Timer: 24 hours.
