@@ -20,18 +20,20 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "web", "data", "entries.js")
 
 # Ticket tiers mirrored from Gacha.py (presets / presetmin / presetavg /
-# presetmax) plus the tree-mode point values from tools/chaos_tree_use.py.
+# presetmax) plus the tree-mode point values from tools/chaos_tree_use.py
+# and the button colors sampled from the original site's tier PNGs
+# (bronze.png … divine.png; transcendent extrapolated darker than divine).
 TIERS = [
-    {"name": "bronze", "min": 0.1, "avg": 1.3, "max": 3.3, "points": 50},
-    {"name": "silver", "min": 0.5, "avg": 2.3, "max": 4.3, "points": 500},
-    {"name": "gold", "min": 1.5, "avg": 3.3, "max": 5.3, "points": 5000},
-    {"name": "platinum", "min": 2.5, "avg": 4.3, "max": 6.3, "points": 50000},
-    {"name": "diamond", "min": 3.5, "avg": 5.3, "max": 7.3, "points": 500000},
-    {"name": "legendary", "min": 4.5, "avg": 6.3, "max": 8.3, "points": 5000000},
-    {"name": "mythical", "min": 5.5, "avg": 7.3, "max": 9.3, "points": 50000000},
-    {"name": "divine", "min": 6.5, "avg": 8.3, "max": 10.0, "points": 500000000},
+    {"name": "bronze", "min": 0.1, "avg": 1.3, "max": 3.3, "points": 50, "color": "#74573e"},
+    {"name": "silver", "min": 0.5, "avg": 2.3, "max": 4.3, "points": 500, "color": "#acb9b8"},
+    {"name": "gold", "min": 1.5, "avg": 3.3, "max": 5.3, "points": 5000, "color": "#f6c54c"},
+    {"name": "platinum", "min": 2.5, "avg": 4.3, "max": 6.3, "points": 50000, "color": "#bcd5eb"},
+    {"name": "diamond", "min": 3.5, "avg": 5.3, "max": 7.3, "points": 500000, "color": "#9bf3eb"},
+    {"name": "legendary", "min": 4.5, "avg": 6.3, "max": 8.3, "points": 5000000, "color": "#f5993d"},
+    {"name": "mythical", "min": 5.5, "avg": 7.3, "max": 9.3, "points": 50000000, "color": "#ff6bae"},
+    {"name": "divine", "min": 6.5, "avg": 8.3, "max": 10.0, "points": 500000000, "color": "#f61e1e"},
     {"name": "transcendent", "min": 7.5, "avg": 9.3, "max": 10.0,
-     "points": 5000000000},
+     "points": 5000000000, "color": "#8f1010"},
 ]
 
 # Rarity classes mirrored from Gacha.py run_gacha().

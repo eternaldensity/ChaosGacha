@@ -44,6 +44,24 @@
       if (b.dataset.tab === "history") renderHistory();
     }));
 
+  // Tier button colors (sampled from the original site's tier art).
+  function hexRgb(h) {
+    return [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+  }
+  function mix(h, target, amt) {
+    const [r, g, b] = hexRgb(h);
+    const m = (c, t) => Math.round(c + (t - c) * amt);
+    return `rgb(${m(r, target[0])},${m(g, target[1])},${m(b, target[2])})`;
+  }
+  function tierStyle(t) {
+    const base = t.color || "#555";
+    const [r, g, b] = hexRgb(base);
+    const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    const fg = lum > 0.6 ? "#1a1a1a" : "#ffffff";
+    return `background:linear-gradient(180deg, ${mix(base, [255, 255, 255], 0.35)} 0%, ${base} 45%, ${mix(base, [0, 0, 0], 0.3)} 100%);` +
+      `color:${fg};text-shadow:${lum > 0.6 ? "0 1px 0 rgba(255,255,255,.35)" : "0 1px 2px rgba(0,0,0,.6)"};`;
+  }
+
   // preset + category pickers
   let preset = "gold", category = "random";
   const CATS = ["random", "ability", "item", "skill", "trait", "familiar"];
@@ -53,7 +71,8 @@
     for (const t of DATA.tiers) {
       const b = document.createElement("button");
       b.className = "pick" + (preset === t.name ? " sel" : "");
-      b.innerHTML = `<b>${esc(t.name)}</b><br><span class="small muted">⌀${t.avg}</span>`;
+      b.setAttribute("style", tierStyle(t));
+      b.innerHTML = `<b>${esc(t.name)}</b><br><span class="small" style="opacity:.85">⌀${t.avg}</span>`;
       b.addEventListener("click", () => {
         preset = t.name;
         $("cMin").value = t.min; $("cAvg").value = t.avg; $("cMax").value = t.max;
@@ -115,7 +134,8 @@
     ul.innerHTML = DB.tickets.length ? "" : "<li class='muted'>No tickets — quick-roll above, or add tickets here and spend them.</li>";
     for (const t of DB.tickets) {
       const li = document.createElement("li");
-      li.innerHTML = `<div class="grow"><b>${esc(t.tier)}</b> <span class="pill">${esc(t.cat)}</span></div>`;
+      const tp = tierOf(t.tier);
+      li.innerHTML = `<div class="grow"><span class="pill" style="${esc(tierStyle(tp))}border:none">${esc(t.tier)}</span> <span class="pill">${esc(t.cat)}</span></div>`;
       const b = document.createElement("button");
       b.textContent = "Roll 🎲"; b.className = "primary";
       b.addEventListener("click", () => {
