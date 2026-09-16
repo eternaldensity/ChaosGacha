@@ -1054,7 +1054,7 @@
 #(Tech) The Classic Omnitrix, the first version released. This biologically-bound watch transforms the user into any of 10 aliens (possibly more with experimentation) for roughly 30 minutes before cooldown, and can capture DNA of contacted creatures to become them. Tampering requires at least Master Mechanics and Biology.
 528. Omnitrix, 9.3, Ben 10
 #(Tech) The True Omnitrix, Azmuth's final version. It transforms the user into any of millions of stored aliens, from living gravity-manipulating planetoids to multiversal reality warpers.
-529. Chaquetrix, 6.9, Chaquetrix
+529. Chaquetrix, 6.9, Ben 10
 #(Character) (Tech) A weird Omnitrix variant that creates and summons the selected alien as a breeding-compatible companion to help or "help" you. It holds only the original 10 but includes a lifeform analyser to eventually expand the roster.
 530. Divine Stone, 5.8, Arifureta
 #Despite its name, not of Divine Origin. This 10cm crystallised-energy crystal holds enchantments very well and melts over time into an Ambrosia with incredibly potent healing and curing properties.
