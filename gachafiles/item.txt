@@ -1960,3 +1960,57 @@
 #A packet of synthetic blue crystals that unlocks escalating brain capacity: perfect recall, telepathy, then matter and time itself. Unstable, leaks, and past a point there is no coming back.
 981. Time Loop Cave, 5.2, Palm Springs
 #A desert cave that traps whoever enters during a tremor in a repeating day. Rehearse anything forever; rumor says one explosion inside, mid-quake, gets you out.
+982. Electric Locomotive, 4.6, Satisfactory
+#A multi-wagon electric freight locomotive that hauls entire factories' output on your rail lines.
+983. Freight Wagon, 3.4, Satisfactory
+#A cavernous freight car that follows your locomotive anywhere rails go.
+984. Locomotive, 4.2, Factorio
+#A diesel workhorse locomotive for a fully automated rail network; schedule not included.
+985. Cargo Wagon, 3.2, Factorio
+#A steel cargo wagon that loads and unloads itself at smart stations.
+986. Rail Car, 3.0, Astroneer
+#A click-together rail car for the railway you really should have built sooner.
+987. Mugen Train, 5.6, Demon Slayer
+#An eight-car demon that fused with its own train; two hundred passengers aboard, all asleep.
+988. Puffing Tom, 4.4, One Piece
+#The Sea Train that runs on water rails between Water 7 and its neighbors, rocketing through Aqua Laguna.
+989. Minecart Shotgun, 4.0, Dwarf Fortress
+#A shotgun rigged to a high-speed minecart loop; anything in the corridor ceases to be a problem.
+990. Ishimura Tram, 3.2, Dead Space
+#The USG Ishimura's tram network, still running its route through a ship full of necromorphs.
+991. Ecliptic Express, 5.0, Resident Evil
+#A Umbrella luxury train crawling with T-virus horrors and exactly one working brake lever too few.
+992. Powered Rail, 2.2, Minecraft
+#Golden rails that boost any passing minecart, with or without redstone attached.
+993. Spirit Train, 4.8, The Legend of Zelda
+#The sacred Spirit Tracks engine, blessed rails and all; evil cannot board without an invitation.
+994. Passing Train, 2.0, Stardew Valley
+#On certain days a freight train rumbles through the valley, shaking loose coal, wood, and geodes.
+995. Molentary Express, 4.2, Professor Layton
+#A luxury puzzle-box express where every passenger is lying and the dining car hides a secret.
+996. Galaxy Express 999, 6.8, Galaxy Express 999
+#A spacefaring steam locomotive running the Andromeda line; tickets cost more than most planets.
+997. Kotetsujo, 4.8, Kabaneri of the Iron Fortress
+#An armored steam fortress-train with a very good crane and a worse kabane problem.
+998. Snowpiercer, 6.6, Snowpiercer
+#A thousand-and-one-car perpetual-motion train circling a frozen Earth, class system included.
+999. The Engine, 6.0, Snowpiercer
+#Wilford's sacred Engine: eternal, unknowable, and the only warm thing left on the planet.
+1000. Polar Express, 4.6, The Polar Express
+#A Christmas Eve steam train to the North Pole for children who still believe loudly enough.
+1001. Orient Express, 3.6, Agatha Christie
+#The Simplon-Orient luxury express, first class only, murderer probably included.
+1002. Source Code, 5.4, Source Code
+#A program that drops your mind into a doomed train passenger's final eight minutes, looping with memories intact until you find the bomb. Your body waits safely outside.
+1003. Jules Verne Time Train, 7.2, Back to the Future
+#Doc's flying steam-locomotive time machine, running on steam and pure showmanship.
+1004. Spatchcock, 4.0, Sunless Skies
+#A patchwork sky-locomotive held together by rivets, prayer, and Roger's excellent tea service.
+1005. War Rig, 4.8, Mad Max
+#The armored tanker rig: guzzoline, mothers' milk, and one very shiny steering wheel.
+1006. Armored Train, 5.4, Battlefield
+#A behemoth armored battle train bristling with cannons; the track is more of a suggestion.
+1007. Aurora, 5.0, Metro
+#A working steam locomotive hauling the last livable train yards east through the radiation.
+1008. Sea Railway, 3.8, Studio Ghibli
+#A one-way rail line gliding over open ocean toward Swamp Bottom; exact fare unknown.

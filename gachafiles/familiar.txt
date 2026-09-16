@@ -1018,3 +1018,9 @@
 #A perfectly ordinary cat who is secretly a Flerken, with pocket dimensions and tentacles inside.
 510. Miss Minutes, 3.2, MCU
 #The TVA's cheerful cartoon-clock mascot AI, happy to explain the rules while locking the doors.
+511. Coalossal, 4.4, Pokemon
+#A walking coal furnace the size of a truck; its G-Max wildfire form once ended a broadcast early.
+512. The Last Stag, 3.4, Hollow Knight
+#The last of the stagways stags, who will carry you anywhere the stag stations still stand.
+513. Thomas the Tank Engine, 2.8, Thomas & Friends
+#A really useful blue tank engine who believes almost any job is worth doing, branch line or main line.

@@ -652,3 +652,5 @@
 #Argue, deduce, and mediate with a cool head when colonists disagree.
 327. Mystic Arts, 4.0, MCU
 #Kamar-Taj training in spellcraft, relics, and dimensional etiquette, from mandalas to the Mirror Dimension.
+328. Train Hopping, 2.2, Divergent
+#Board and ride moving trains Dauntless-style: sprint, grab, swing up, and do not look down.
