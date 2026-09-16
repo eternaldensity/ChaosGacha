@@ -1622,7 +1622,7 @@
 #Lets you borrow processing power from objects by touch, slowing them while massively speeding yourself up. Overuse can cause brain damage to both parties.
 812. Gallant, 4.6, Worm
 #Lets you sense emotions and fire projectiles that deal no damage but temporarily alter the target's emotions, such as euphoria or depression.
-813. Empathy, 2.8, Generic
+813. Emotion Sense, 2.8, Generic
 #Lets you sense people's emotions, with training discerning their causes and finer details.
 814. Heartbreaker, 5.8, Worm
 #Lets you manipulate emotions of people within 50 meters, subtly tweaking or overwhelming them with anything from adoration to suicidal urges. Effectiveness scales with power difference.
@@ -2872,3 +2872,17 @@
 #Retain skills, relationships, and knowledge across loops of your life on Vertumna, redoing years better each time.
 1440. Seeker Subroutine, 3.4, Tron 2.0
 #Launch homing energy seekers from your identity disc that hunt targets around corners.
+1441. Adenine Volley, 3.2, Genome Guardian
+#Spray rapidfire nucleotide shots; pair it with another weapon to discover hybrid bioweapons.
+1442. Cytosine Precision, 3.4, Genome Guardian
+#Fire precise nucleotide shots that strike weak points; pair it to discover hybrid bioweapons.
+1443. Guanine Spread, 3.6, Genome Guardian
+#Unleash wide-spread nucleotide shots that blanket microbe waves; pair it to discover hybrid bioweapons.
+1444. Thymine Detonation, 4.0, Genome Guardian
+#Detonate explosive nucleotide shots that clear clustered microbes; pair it to discover hybrid bioweapons.
+1445. Summon Tsunami, 5.4, Cities Skylines
+#Call down a city-devouring tsunami wave, then watch the flooded districts from your disaster overview.
+1446. Firewall, 3.2, Tron 2.0
+#Equip a defensive subroutine that hardens your disc against hostile code and viral attacks.
+1447. Timeline Shift, 5.8, Life is Strange
+#Shift yourself between two parallel timelines, carrying objects and consequences across with you.

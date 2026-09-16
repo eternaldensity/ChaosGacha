@@ -988,3 +988,29 @@
 #The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
 495. Captain Boomer, 4.8, Q-UP
 #A 3-ton whale with a day job who competes in the coin-flipping esport beside you.
+496. Peska the Troll, 3.2, Q-UP
+#A trash-talking troll hero whose jeers tilt opponents right off the ladder.
+497. HyperQbe the Streamer, 3.4, Q-UP
+#An always-live streamer hero narrating your flips to an audience of thousands.
+498. Mercury, 3.6, Tron 2.0
+#A skilled program ally who fights beside you in the Game Grid and knows its back doors.
+499. Data Wraith, 4.0, Tron 2.0
+#A viral hunter prowling the system for programs to derez, currently pointed at your enemies.
+500. Spirit Doe, 4.2, Life is Strange
+#A luminous doe that appears at turning points, watching over your choices.
+501. Spidertron, 5.6, Factorio
+#A spider-legged combat mech with rocket launchers that follows your remote orders.
+502. Little Scout, 2.2, Outer Wilds
+#A reusable camera probe that photographs the unknown and always comes back.
+503. Automaton, 4.4, Frostpunk
+#A steam-powered automaton worker that labors through deadly frost without complaint.
+504. Duplicant, 2.0, Oxygen Not Included
+#A cheerful cloning-vat colonist who digs, builds, and stresses about everything.
+505. Tamed Wolf, 2.6, Valheim
+#A once-wild wolf, now loyal, that hunts and guards beside you.
+506. Molly, 3.0, Deep Rock Galactic
+#The team's beloved M.U.L.E. robot that hauls minerals and headbutts glyphids.
+507. Beaver, 1.4, Timberborn
+#An industrious beaver that dams rivers and drags logs all day long.
+508. Golem, 3.4, Timberborn
+#A mechanical beaver golem that works around the clock without food or rest.

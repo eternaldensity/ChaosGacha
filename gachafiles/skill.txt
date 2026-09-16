@@ -634,3 +634,19 @@
 #Handle Nomads, Pilgrims, and Minotaurs across every biome without scratching the paint.
 318. Pal Training, 2.8, Palworld
 #Raise, breed, and work Pals to peak performance without anyone getting eaten.
+319. Animals, 1.8, I Was a Teenage Exocolonist
+#Handle Vertumna's alien fauna calmly, from fur-antlered grazers to things with too many legs.
+320. Combat, 2.2, I Was a Teenage Exocolonist
+#Defend the colony with blades, bows, and level-headed aim when the planet pushes back.
+321. Creativity, 2.0, I Was a Teenage Exocolonist
+#Art, music, and writing that lift the whole colony's spirits through hard years.
+322. Engineering, 2.4, I Was a Teenage Exocolonist
+#Keep the colony's generators, walls, and weird alien-tech hybrids running.
+323. Leadership, 2.2, I Was a Teenage Exocolonist
+#Organize expeditions and councils so the colony actually follows the plan.
+324. Logic, 2.0, I Was a Teenage Exocolonist
+#Solve colony problems with clear reasoning, from supply math to alien puzzles.
+325. Organization, 1.8, I Was a Teenage Exocolonist
+#Keep stockpiles, chores, and expeditions sorted no matter how chaotic the season.
+326. Reasoning, 2.2, I Was a Teenage Exocolonist
+#Argue, deduce, and mediate with a cool head when colonists disagree.

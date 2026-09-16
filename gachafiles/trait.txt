@@ -956,7 +956,7 @@
 #You are a vessel. You can absorb and channel "soul" to heal yourself by focusing or train to use it in Shaman spells such as Howling Wraiths, Soul Nails, short-range teleportation, and similar spells. You gain soul by injuring living beings, and your maximum storage scales with your maximum energy while remaining distinctly separate.
 479. Ambidextrous, 1.2, Generic
 #You are perfectly ambidextrous. You use both arms and hands as if both were dominant, and the same balance applies to all limbs, perfectly balanced, as all things should be.
-480. Tune Up, 3.3, Generic
+480. Total Overhaul, 3.3, Generic
 #You have received a body tune-up. Every aspect of your body upgrades, slightly increasing all physical stats and energy reserves and, most importantly, fixing all physical or genetic problems afflicting your body at the moment you roll this trait.
 481. Greater Beastkin, 4.4, Generic
 #Race Change - You are a Greater Beastkin, half beast and half whatever you are. You gain superhuman physical abilities and enhanced natural senses and instincts. You gain more affinity for nature-based abilities and spells, letting you use them more effectively. Your beast side is powerful too; even simple cat claws are tough as iron. (Chosen beast is decided by the writer, not an in-story choice)
@@ -1310,3 +1310,15 @@
 #Bonded with Vertumna's alien Glow, a symbiotic light that shares its strange senses.
 655. Root Access, 4.2, Tron 2.0
 #System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
+656. Hexagonal Skill Grid, 3.8, Q-UP
+#Your abilities arrange on a hexagonal grid, triggering off coin flips in combo chains.
+657. The City Must Survive, 3.0, Frostpunk
+#No matter the frost or the cost, you will keep the last city alive through the storm.
+658. Rock and Stone, 1.6, Deep Rock Galactic
+#For Rock and Stone! Morale, teamwork, and mineral yields all improve when shouted properly.
+659. Keen Hearing, 2.2, Project Zomboid
+#You hear zombies, alarms, and breaking windows from much further away.
+660. Handy, 2.0, Project Zomboid
+#You are handy: maintenance, repairs, and barricading all go faster in your hands.
+661. The Factory Must Grow, 2.4, Factorio
+#Production must expand to meet the needs of the ever-expanding production. The factory grows.

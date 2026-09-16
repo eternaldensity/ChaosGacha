@@ -1874,3 +1874,61 @@
 #The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty. Totally fair.
 938. Identity Disc, 4.0, Tron 2.0
 #A program's everything on a glowing disc: memory, weapon, and backup, worn on the back.
+939. Impossible Shard, 4.6, Q-UP
+#A shard of Impossible rarity; slotting it multiplies everything your build does.
+940. Passenger Blimp, 3.4, Cities Skylines
+#A lumbering passenger blimp that ferries citizens across your skyline in style.
+941. Space Elevator, 7.2, Cities Skylines
+#A unique-building space elevator that fires tourists and freight straight into orbit.
+942. Instant Camera, 1.8, Life is Strange
+#An instant camera for capturing the moments that matter, before you rewind them.
+943. Planetary Shield, 5.8, Dyson Sphere Program
+#A planet-wide shield generator that shrugs off anything short of a star going out.
+944. Vertical Launching Silo, 5.0, Dyson Sphere Program
+#A silo that launches rockets, warpers, and sphere components straight into orbit.
+945. Power Armor, 4.6, Factorio
+#Modular power armor with room for exoskeletons, shields, batteries, and a personal fusion reactor.
+946. Personal Roboport, 4.2, Factorio
+#A wearable roboport that deploys your own construction robots wherever you stand.
+947. Blueprint Book, 3.6, Factorio
+#A book of stamped-down factory blueprints; plop down entire production blocks at once.
+948. Scout Launcher, 2.8, Outer Wilds
+#A wrist-mounted launcher firing a reusable camera probe that photographs the unknown.
+949. Signalscope, 2.6, Outer Wilds
+#A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
+950. Ash Twin Project, 7.8, Outer Wilds
+#The Nomai station at the heart of the 22-minute loop; knowing it exists changes everything.
+951. The Generator, 6.8, Frostpunk
+#A towering coal-fired Generator, the last source of heat on Earth; the city lives or dies with it.
+952. Steam Hub, 4.0, Frostpunk
+#A portable steam hub extending the Generator's warmth to distant districts.
+953. Atmo Suit, 3.2, Oxygen Not Included
+#A sealed suit with its own oxygen supply for space, magma, and chlorine zones alike.
+954. Super Computer, 2.8, Oxygen Not Included
+#A humming research station that turns raw data and power into steady research progress.
+955. Drakkar, 4.2, Valheim
+#A clinker-built Viking longship that outruns sea serpents with the wind behind it.
+956. Megingjord, 4.8, Valheim
+#Thor's strength belt, granting the bearer the carrying might of a giant.
+957. Wishbone, 3.6, Valheim
+#A dowsing wishbone that tugs toward buried silver and hidden treasure.
+958. Pickaxe, 2.2, Deep Rock Galactic
+#A tempered pickaxe for rock, dirt, and the occasional glyphid skull.
+959. Flare Gun, 2.4, Deep Rock Galactic
+#Fires a burning flare that sticks where it lands and lights up the whole cave.
+960. Terrain Tool, 2.8, Astroneer
+#A deformable-terrain multitool for digging, flattening, and analyzing alien soil.
+961. Shuttle, 3.8, Astroneer
+#A single-seat interplanetary shuttle; pack solid fuel and pick a landing zone.
+962. RTG, 4.4, Astroneer
+#A radioisotope thermoelectric generator delivering endless quiet power.
+963. Spiked Baseball Bat, 2.4, Project Zomboid
+#A Louisville classic wrapped in nails; quiet, reliable, and permanently bloody.
+964. Sledgehammer, 2.8, Project Zomboid
+#Destroys walls, doors, and skulls with equal enthusiasm. Heavy, though.
+965. Generator, 3.0, Project Zomboid
+#A portable gas generator that keeps the lights and freezers on after the grid dies.
+966. Galaxy Sword, 5.2, Stardew Valley
+#A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen.
+967. Junimo Hut, 3.8, Stardew Valley
+#A hut housing Junimos who emerge each morning to harvest your crops for you.
