@@ -1971,15 +1971,15 @@
 986. Rail Car, 3.0, Astroneer
 #A click-together rail car for the railway you really should have built sooner.
 987. Mugen Train, 5.6, Demon Slayer
-#An eight-car demon that fused with its own train; two hundred passengers aboard, all asleep.
+#An eight-car demon fused with its own train, bound to your service as transport; its sleeping passengers never wake unless you allow it.
 988. Puffing Tom, 4.4, One Piece
 #The Sea Train that runs on water rails between Water 7 and its neighbors, rocketing through Aqua Laguna.
 989. Minecart Shotgun, 4.0, Dwarf Fortress
 #A shotgun rigged to a high-speed minecart loop; anything in the corridor ceases to be a problem.
 990. Ishimura Tram, 3.2, Dead Space
-#The USG Ishimura's tram network, still running its route through a ship full of necromorphs.
+#A complete tram network in a box: track, cars, and stations that unfold wherever you lay them. Ship and necromorphs not included.
 991. Ecliptic Express, 5.0, Resident Evil
-#A Umbrella luxury train crawling with T-virus horrors and exactly one working brake lever too few.
+#A Umbrella luxury train, delivered fumigated and horror-free, ready to run wherever you lay track.
 992. Powered Rail, 2.2, Minecraft
 #Golden rails that boost any passing minecart, with or without redstone attached.
 993. Spirit Train, 4.8, The Legend of Zelda
@@ -1989,13 +1989,13 @@
 995. Molentary Express, 4.2, Professor Layton
 #A luxury puzzle-box express where every passenger is lying and the dining car hides a secret.
 996. Galaxy Express 999, 6.8, Galaxy Express 999
-#A spacefaring steam locomotive running the Andromeda line; tickets cost more than most planets.
+#A spacefaring steam locomotive bonded to you as its passenger of record, running its Andromeda circuit wherever you ask. You never pay the fare.
 997. Kotetsujo, 4.8, Kabaneri of the Iron Fortress
 #An armored steam fortress-train with a very good crane and a worse kabane problem.
 998. Snowpiercer, 6.6, Snowpiercer
-#A thousand-and-one-car perpetual-motion train circling a frozen Earth, class system included.
+#A thousand-and-one-car perpetual-motion train, yours to command, laying its own track wherever you point it. Frozen apocalypse and class uprising not included.
 999. The Engine, 6.0, Snowpiercer
-#Wilford's sacred Engine: eternal, unknowable, and the only warm thing left on the planet.
+#Wilford's sacred Engine, yours to install: eternal heat and power for a settlement, a ship, or a very warm room.
 1000. Polar Express, 4.6, The Polar Express
 #A Christmas Eve steam train to the North Pole for children who still believe loudly enough.
 1001. Orient Express, 3.6, Agatha Christie

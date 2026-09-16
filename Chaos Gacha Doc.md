@@ -378,6 +378,10 @@ Presets are the chosen presets based on the ticket system I use in my works, bro
 
 For example: A Gold Item Gacha Ticket is a ticket that allows you to roll the Item Gacha in the Gold preset with an average rarity of 3.3.
 
+## `Explanation: What you get`
+
+Vehicles, locations, and other big entries arrive self-contained and at your disposal: you get the thing itself, functional, without its home setting, apocalypse, or cast unless its description explicitly includes them.
+
 ## `Explanation: Buttons`
 
 Here are what those buttons on the screen(For downloadable version) do in detail.
