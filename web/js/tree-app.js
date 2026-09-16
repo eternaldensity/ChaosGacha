@@ -108,6 +108,7 @@
       p.classList.toggle("active", p.id === "tab-" + name));
     if (name === "view3d") requestAnimationFrame(draw3D);
     if (name === "node") renderNode();
+    if (name === "owned") renderOwned();
     if (name === "tickets") renderTickets();
     if (name === "trees") renderTrees();
   }
@@ -116,19 +117,39 @@
   function uid() {
     return Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
   }
+  function treeMismatch(t) {
+    return !t.static && !!t.dataVersion && !!DATA.dataVersion &&
+      t.dataVersion !== DATA.dataVersion;
+  }
   function renderTrees() {
     const ul = $("treeList");
+    const at = activeTree();
     $("treeCount").textContent = DB.trees.length
-      ? `${DB.trees.length} tree${DB.trees.length > 1 ? "s" : ""} · active: ${activeTree() ? activeTree().name : "none"}`
+      ? `${DB.trees.length} tree${DB.trees.length > 1 ? "s" : ""} · active: ${at ? at.name : "none"}`
       : "No trees yet — generate one below.";
+    const warn = $("verWarn");
+    if (at && treeMismatch(at)) {
+      warn.style.display = "block";
+      $("verWarnText").textContent =
+        `"${at.name}" was generated with data v${at.dataVersion}, current data is v${DATA.dataVersion}. ` +
+        `Regenerating now may produce a different tree (entry counts or rarities changed). Export a backup first if its progress matters.`;
+    } else warn.style.display = "none";
     ul.innerHTML = "";
     for (const t of DB.trees) {
       const st = DB.states[t.id];
       const li = document.createElement("li");
+      li.style.flexWrap = "wrap";
+      const mis = treeMismatch(t);
       li.innerHTML =
-        `<div class="grow"><b>${esc(t.name)}</b><br>` +
-        `<span class="muted small">${t.static ? "imported file" : "seed " + esc(String(t.seed)) + (t.limit ? " · " + t.limit + " entries" : " · full")}
-        ${st ? " · " + st.unlocked.length + " unlocked · " + E.fmt(st.points) + " pts · " + st.cores + " cores" : ""}</span></div>`;
+        `<div class="grow"><b>${esc(t.name)}</b>` +
+        (mis ? ` <span class="pill" style="border-color:var(--bad);color:var(--bad)">⚠ data v${esc(t.dataVersion)}≠v${esc(DATA.dataVersion)}</span>` : "") +
+        `<br>` +
+        `<span class="muted small">${t.static ? "imported file" : "seed " + esc(String(t.seed)) + (t.limit ? " · " + t.limit + " entries" : " · full")}` +
+        (t.dataVersion ? " · data v" + esc(t.dataVersion) : "") +
+        `${st ? " · " + st.unlocked.length + " unlocked · " + E.fmt(st.points) + " pts · " + st.cores + " cores" : ""}</span></div>`;
+      const actions = document.createElement("div");
+      actions.className = "row";
+      actions.style.cssText = "width:100%;margin-top:6px";
       const open = document.createElement("button");
       open.textContent = t.id === DB.activeId ? "Active ✓" : "Open";
       open.disabled = t.id === DB.activeId;
@@ -155,9 +176,51 @@
         if (DB.activeId === t.id) DB.activeId = DB.trees.length ? DB.trees[0].id : null;
         saveDB(); renderTrees(); refreshAll();
       });
-      li.append(open, ren, del);
+      const copy = document.createElement("button");
+      copy.textContent = "📋 Copy"; copy.title = "Copy tree with its progress";
+      copy.addEventListener("click", () => {
+        try {
+          const nt = duplicateTree(t, false);
+          toast(`Copied as "${nt.name}".`);
+        } catch (e) { err(e); }
+      });
+      const fresh = document.createElement("button");
+      fresh.textContent = "🌱 Fresh"; fresh.title = "Fresh copy: same parameters, new progress";
+      fresh.addEventListener("click", () => {
+        try {
+          const nt = duplicateTree(t, true);
+          toast(`Fresh copy "${nt.name}" started.`);
+        } catch (e) { err(e); }
+      });
+      actions.append(open, ren, copy, fresh, del);
+      li.appendChild(actions);
       ul.appendChild(li);
     }
+  }
+
+  // Copy keeps the definition and duplicates progress; fresh keeps the
+  // definition (seed/params/topology) but restarts progress. Generated
+  // fresh copies record the current data version since they regenerate.
+  function duplicateTree(t, fresh) {
+    const nid = uid();
+    const nt = {
+      id: nid,
+      name: (t.name + (fresh ? " (fresh)" : " (copy)")).slice(0, 60),
+      seed: t.seed, params: JSON.parse(JSON.stringify(t.params || {})),
+      limit: t.limit || null, static: !!t.static, createdAt: Date.now(),
+      dataVersion: fresh && !t.static ? (DATA.dataVersion || null) : (t.dataVersion || null)
+    };
+    if (t.static) {
+      const p = loadStatic(t.id);
+      if (!p) throw new Error("static tree data missing (re-import the file)");
+      saveStatic(nid, p);
+    }
+    DB.trees.push(nt);
+    DB.states[nid] = fresh ? E.newState()
+      : JSON.parse(JSON.stringify(DB.states[t.id] || E.newState()));
+    DB.activeId = nid;
+    saveDB(); renderTrees(); refreshAll();
+    return nt;
   }
 
   $("btnCreate").addEventListener("click", async () => {
@@ -177,7 +240,8 @@
         bar.style.width = Math.round(frac * 100) + "%";
         $("genMsg").textContent = `${label}… ${Math.round(frac * 100)}%`;
       });
-      const tree = { id: uid(), name, seed, params, limit, createdAt: Date.now() };
+      const tree = { id: uid(), name, seed, params, limit, createdAt: Date.now(),
+        dataVersion: DATA.dataVersion || null };
       DB.trees.push(tree);
       DB.states[tree.id] = E.newState();
       DB.activeId = tree.id;
@@ -197,6 +261,7 @@
     const payload = {
       app: "chaos-tree", v: 1, exportedAt: new Date().toISOString(),
       tree: { name: t.name, seed: t.seed, params: t.params || {}, limit: t.limit || null,
+              dataVersion: t.dataVersion || null,
               static: !!t.static, topology: t.static ? loadStatic(t.id) : null },
       state: DB.states[t.id] || E.newState()
     };
@@ -218,6 +283,7 @@
         const tree = { id: uid(), name: String(td.name || f.name).slice(0, 60),
           seed: td.seed != null ? td.seed : Math.floor(Math.random() * 1e9),
           params: td.params || {}, limit: td.limit || null,
+          dataVersion: td.dataVersion || null,
           static: !!td.static, createdAt: Date.now() };
         if (td.static && td.topology) saveStatic(tree.id, td.topology);
         DB.trees.push(tree);
@@ -228,7 +294,7 @@
       } else if (payload && payload.format === "chaos-tree" && payload.nodes && payload.edges) {
         const tree = { id: uid(), name: f.name.replace(/\.json$/i, "").slice(0, 60),
           seed: payload.seed != null ? payload.seed : 0, params: {}, limit: null,
-          static: true, createdAt: Date.now() };
+          dataVersion: null, static: true, createdAt: Date.now() };
         saveStatic(tree.id, { nodes: payload.nodes, edges: payload.edges });
         DB.trees.push(tree);
         DB.states[tree.id] = E.newState();
@@ -254,6 +320,7 @@
     renderTrees();
     if (currentTab === "view3d") draw3D();
     if (currentTab === "node") await renderNode();
+    if (currentTab === "owned") await renderOwned();
     if (currentTab === "tickets") await renderTickets();
     updateViewInfo();
   }
@@ -605,6 +672,88 @@
     svg.appendChild(legend);
   }
 
+  // ---- owned tab (sortable/filterable table, unlock order by default) ------
+  let ownedSort = { key: "order", dir: 1 };
+  const OWN_COLS = [
+    { key: "order", label: "#" },
+    { key: "name", label: "Name" },
+    { key: "file", label: "Cat" },
+    { key: "rarity", label: "Rarity" },
+    { key: "cost", label: "Cost" },
+    { key: "source", label: "Source" }
+  ];
+  function ownedRows(rt, st) {
+    const pos = new Map((st.history || []).map((id, i) => [id, i]));
+    return st.unlocked.map(id => ({
+      id, nd: rt.byId[id], order: pos.has(id) ? pos.get(id) : -1
+    })).filter(r => r.nd);
+  }
+  async function renderOwned() {
+    const head = $("ownedHead"), body = $("ownedBody");
+    head.innerHTML = ""; body.innerHTML = "";
+    const c = await current();
+    if (!c) { $("ownedCount").textContent = ""; return; }
+    const { st, rt } = c;
+    for (const col of OWN_COLS) {
+      const th = document.createElement("th");
+      th.style.cssText = "text-align:left;padding:4px;border-bottom:1px solid var(--line);white-space:nowrap";
+      const b = document.createElement("button");
+      b.style.cssText = "min-height:44px;padding:6px 8px;font-size:0.85rem;";
+      b.textContent = col.label + (ownedSort.key === col.key ? (ownedSort.dir > 0 ? " ▲" : " ▼") : "");
+      b.addEventListener("click", () => {
+        if (ownedSort.key === col.key) ownedSort.dir *= -1;
+        else ownedSort = { key: col.key, dir: 1 };
+        renderOwned();
+      });
+      th.appendChild(b);
+      head.appendChild(th);
+    }
+    let rows = ownedRows(rt, st);
+    const q = ($("ownQ").value || "").trim().toLowerCase();
+    const cat = $("ownCat").value || "";
+    if (q) rows = rows.filter(r =>
+      r.nd.name.toLowerCase().includes(q) ||
+      (r.nd.source || "").toLowerCase().includes(q));
+    if (cat) rows = rows.filter(r => r.nd.file === cat);
+    const val = (r) => {
+      switch (ownedSort.key) {
+        case "order": return r.order;
+        case "name": return r.nd.name.toLowerCase();
+        case "file": return r.nd.file;
+        case "rarity": return r.nd.rarity;
+        case "cost": return r.id === 0 ? -1 : E.nodeCostFor(st, rt, r.id);
+        case "source": return (r.nd.source || "").toLowerCase();
+        default: return 0;
+      }
+    };
+    rows.sort((a, b) => {
+      const va = val(a), vb = val(b);
+      const d = va < vb ? -1 : va > vb ? 1 : a.order - b.order;
+      return d * ownedSort.dir;
+    });
+    $("ownedCount").textContent = `(${rows.length}/${st.unlocked.length})`;
+    for (const r of rows) {
+      const tr = document.createElement("tr");
+      tr.style.cssText = "border-top:1px solid var(--line);cursor:pointer";
+      const cls = classOf(r.nd.rarity);
+      const cost = r.id === 0 ? "—" : E.fmt(E.nodeCostFor(st, rt, r.id));
+      tr.innerHTML =
+        `<td style="padding:8px">${r.order < 0 ? "★" : r.order + 1}</td>` +
+        `<td style="padding:8px"><span class="dot" style="background:${esc(cls.color)}"></span>${esc(r.nd.name)}</td>` +
+        `<td style="padding:8px">${esc(r.nd.file)}</td>` +
+        `<td style="padding:8px">${r.nd.rarity}</td>` +
+        `<td style="padding:8px">${cost}</td>` +
+        `<td style="padding:8px">${esc(r.nd.source || "—")}</td>`;
+      tr.addEventListener("click", () => { selectedId = r.id; showTab("node"); });
+      body.appendChild(tr);
+    }
+    if (!rows.length) {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td colspan="6" class="muted" style="padding:8px">No owned nodes match.</td>`;
+      body.appendChild(tr);
+    }
+  }
+
   // ---- tickets tab --------------------------------------------------------------
   const TICKET_TIERS = ["bronze", "silver", "gold", "platinum", "diamond", "legendary", "mythical", "divine", "transcendent"];
   function fillTicketForm() {
@@ -884,6 +1033,14 @@
 
   // ---- boot ---------------------------------------------------------------
   fillTicketForm();
+  $("ownCat").innerHTML = `<option value="">All</option>` +
+    E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
+  $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });
+  $("ownCat").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });
+  try {
+    const n = (DATA.entries || []).length;
+    $("dataVer").textContent = `data v${DATA.dataVersion || "?"} · ${n} entries`;
+  } catch (e) {}
   renderTrees();
   if (DB.activeId && getTree(DB.activeId)) showTab("view3d");
   else showTab("trees");

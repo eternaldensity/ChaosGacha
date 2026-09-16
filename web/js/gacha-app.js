@@ -338,6 +338,10 @@
 
   renderPickers();
   $("cMin").value = 1.5; $("cAvg").value = 3.3; $("cMax").value = 5.3;
+  try {
+    const n = (DATA.entries || []).length;
+    $("dataVer").textContent = `data v${DATA.dataVersion || "?"} · ${n} entries`;
+  } catch (e) {}
   $("spinSpeed").value = (DB.settings && DB.settings.spin) || "normal";
   $("spinSpeed").addEventListener("change", () => {
     DB.settings.spin = $("spinSpeed").value;

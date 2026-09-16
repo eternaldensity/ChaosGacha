@@ -8,6 +8,7 @@ window.CHAOS_DATA. Rerun after editing the data files:
     python3 tools/export_web_data.py
 """
 import datetime
+import hashlib
 import json
 import os
 import sys
@@ -83,6 +84,17 @@ def flag_map():
 def main():
     entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True)
     flags = flag_map()
+    # Data version: hash over topology/behaviour-relevant fields (file,
+    # number, rarity, source, tag, meta tokens). Display text (names,
+    # descriptions) is excluded so prose edits don't invalidate trees.
+    # Trees record the version they were generated with; a mismatch warns
+    # that regeneration may produce a different tree.
+    h = hashlib.sha256()
+    for e in entries:
+        h.update(("\x1f".join([e["file"], str(e["number"]), repr(e["rarity"]),
+                               e["source"] or "", e["tag"],
+                               ",".join(e.get("meta", []))]) + "\n").encode("utf-8"))
+    data_version = h.hexdigest()[:10]
     compact = []
     for e in entries:
         toks = flags.get((e["file"], e["number"]), set())
@@ -96,6 +108,7 @@ def main():
         compact.append(item)
     payload = {"generated_at": datetime.datetime.now(datetime.timezone.utc)
                .isoformat(timespec="seconds"),
+               "dataVersion": data_version,
                "counts": {c: sum(1 for e in compact if e["f"] == c)
                           for c in CATEGORIES},
                "tiers": TIERS, "classes": CLASSES, "categories": CATEGORIES,
