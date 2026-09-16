@@ -1714,7 +1714,163 @@
 #(Tree)(Meta:recall) Single use. Undo your most recent unlock: the node is locked again and its core and points refunded.
 858. Shuffle, 4.0, Generic
 #(Tree)(Meta:shuffle) Single use. Exchange the location and connections of a visible locked node with a random not-visible locked node of similar rarity (±0.2). If no not-visible candidate exists, a visible one is chosen.
-859. Swap, 5.0, Generic
+859. Node Swap, 5.0, Generic
 #(Tree)(Meta:swap) Single use. Exchange the location and connections of two visible locked nodes of your choice.
 860. Reshuffle, 5.5, Generic
 #(Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.
+861. Pal Sphere, 1.6, Palworld
+#The basic sphere for catching weakened Pals; it shakes three times, then clicks.
+862. Mega Sphere, 2.4, Palworld
+#Improved catch rate over the basic sphere, for Pals past the early zones.
+863. Giga Sphere, 3.2, Palworld
+#High-grade sphere that holds even sturdy mid-game Pals.
+864. Hyper Sphere, 4.0, Palworld
+#Advanced sphere for powerful Pals; rarely fails on anything but bosses.
+865. Ultra Sphere, 4.8, Palworld
+#Near-top-tier sphere with a catch rate worthy of endgame hunts.
+866. Legendary Sphere, 5.8, Palworld
+#The ultimate sphere, forged for Legends; even a Jetragon can end up inside.
+867. Portable Miner, 2.2, Satisfactory
+#Plop it on any resource node and it mines hands-free into its own little inventory.
+868. Chainsaw, 2.4, Satisfactory
+#Clears whole forests in seconds and mulches wood and leaves into biomass.
+869. Xeno-Zapper, 2.0, Satisfactory
+#Standard-issue electric prod; stings alien wildlife and gets stingers moving.
+870. Rebar Gun, 2.6, Satisfactory
+#Fires sharpened rebar spikes; silent, cheap, and surprisingly lethal.
+871. Nobelisk Detonator, 3.0, Satisfactory
+#Remote-detonated explosive charges for clearing rock, trees, and hogs.
+872. Object Scanner, 2.8, Satisfactory
+#Pings the direction of selected resources, crash sites, and power slugs.
+873. Blade Runners, 3.2, Satisfactory
+#Exoskeleton legs that boost sprint speed and let you powerslide under everything.
+874. Jetpack, 4.2, Satisfactory
+#Packaged-fuel flight with a satisfying roar; keep an eye on the fuel gauge.
+875. Gas Mask, 2.2, Satisfactory
+#Breathe easy in poison-pillared zones while the filter holds out.
+876. Mercer Sphere, 5.4, Satisfactory
+#A humming alien artifact of unknown purpose that the hub desperately wants scanned.
+877. Somersloop, 5.6, Satisfactory
+#An impossible looping doodad that overclocks any machine it touches.
+878. Analysis Visor, 2.6, No Man's Sky
+#Tag flora, fauna, and minerals through your visor; uploads pay out in Nanites.
+879. Terrain Manipulator, 3.4, No Man's Sky
+#Reshape whole landscapes, mine underfoot, and flatten base sites with multitool modes.
+880. Boltcaster, 2.8, No Man's Sky
+#The trusty starting multitool weapon; rapid plasma bolts with endless upgrades.
+881. Blaze Javelin, 3.6, No Man's Sky
+#A charged railbeam that pierces rock and sentinels alike.
+882. Hyperdrive, 4.6, No Man's Sky
+#Fold space between stars on warp cells; the whole galaxy opens up.
+883. Minotaur Exocraft, 5.2, No Man's Sky
+#A piloted mech suit with mining laser, stomp jets, and a cockpit with a view.
+884. Living Ship, 6.8, No Man's Sky
+#A grown void-egg starship that is alive: it gestates its own upgrades, bleeds, and sings in transit.
+885. Foundation, 2.4, Dyson Sphere Program
+#Pave any terrain flat for building; the entire factory stands on these.
+886. Solar Sail, 3.0, Dyson Sphere Program
+#Paper-thin orbital mirrors, launched by the thousand to begin the swarm.
+887. Proliferator, 3.8, Dyson Sphere Program
+#A spray that overclocks production lines and multiplies their output.
+888. Strange Matter, 5.2, Dyson Sphere Program
+#Exotic late-game material for the strangest recipes in the tech tree.
+889. Antimatter Fuel Rod, 6.2, Dyson Sphere Program
+#Dense annihilation fuel that keeps Icarus flying between stars.
+890. EM Rail Ejector, 4.4, Dyson Sphere Program
+#A mass driver that hurls solar sails and small carriers into orbit.
+891. Gravity Gloves, 3.8, Half-Life Alyx
+#Flick your wrists to snatch distant objects and ammo straight into your hands. Everyone calls them the Russells.
+892. Combine Pistol, 3.0, Half-Life Alyx
+#Standard Combine sidearm with reflex sight and resin upgrades.
+893. Combine Shotgun, 3.6, Half-Life Alyx
+#Double-barrel burst cannon that deletes headcrabs up close.
+894. Combine SMG, 3.4, Half-Life Alyx
+#Rapid-fire Combine automatic with an energy-ball secondary fire.
+895. Xen Grenade, 2.8, Half-Life Alyx
+#Volatile Xen flora that detonates seconds after you grab it. Throw fast.
+896. Climbing Axe, 2.4, Tomb Raider
+#Lara's iconic axe: climbs ice walls, pries doors, and ends fights.
+897. Recurve Bow, 2.8, Tomb Raider
+#Silent with retrievable arrows; rope, fire, and poison upgrades with tinkering.
+898. Heavy Pistol, 2.6, Tomb Raider
+#Hard-hitting sidearm for when stealth stops being an option.
+899. Rope Ascender, 3.4, Tomb Raider
+#Motorized ascender that zips you up ropes and rappels you down cliffs.
+900. Seaglide, 2.6, Subnautica
+#Handheld underwater scooter with light and sonar map; every diver's first love.
+901. Seamoth, 4.2, Subnautica
+#Nippy one-person sub with crush-depth upgrades and a perimeter defense zapper.
+902. Prawn Suit, 5.2, Subnautica
+#Powered exosuit with drill and grapple arms, for punching leviathans in the face.
+903. Cyclops, 6.4, Subnautica
+#A full submarine base with silent running, decoys, and room for a Seamoth in the belly.
+904. Habitat Builder, 3.6, Subnautica
+#Prints seabase modules from titanium anywhere with a flat-ish seabed.
+905. Stasis Rifle, 4.0, Subnautica
+#Freezes anything in a time bubble, up to and including Reapers. Briefly.
+906. Thermoblade, 3.0, Subnautica
+#Superheated survival knife that cooks fish as it cuts them.
+907. Ultra Glide Fins, 2.4, Subnautica
+#Slick fins that make you properly fast underwater.
+908. Focus, 3.2, Horizon Zero Dawn
+#Ear-mounted AR that scans machines, tags weak points, and replays echoes of the past.
+909. Shield-Weaver, 5.6, Horizon Zero Dawn
+#Ancient power armor projecting a rechargeable energy shield around its wearer.
+910. Ropecaster, 3.4, Horizon Zero Dawn
+#Pins machines down with tethers; enough ropes will tie down a Thunderjaw.
+911. Tripcaster, 3.2, Horizon Zero Dawn
+#Lays shock, fire, and explosive tripwires for the ambush engineer.
+912. Blast Sling, 3.8, Horizon Zero Dawn
+#Lobs proximity bombs in a satisfying arc with a bigger boom.
+913. Tearblaster, 3.6, Horizon Zero Dawn
+#Close-range cannon blast that rips armor plates and components clean off.
+914. Black Lotus, 8.6, MTG
+#Sacrifice it for three mana of any color. The most famous cardboard on Earth.
+915. Mox Pearl, 7.2, MTG
+#Zero-mana artifact that taps for white. Power Nine fast mana.
+916. Mox Ruby, 7.2, MTG
+#Zero-mana artifact that taps for red. Power Nine fast mana.
+917. Mox Sapphire, 7.4, MTG
+#Zero-mana artifact that taps for blue; the priciest of the five Moxen.
+918. Mox Jet, 7.2, MTG
+#Zero-mana artifact that taps for black. Power Nine fast mana.
+919. Mox Emerald, 7.2, MTG
+#Zero-mana artifact that taps for green. Power Nine fast mana.
+920. Charge Rifle, 4.4, RimWorld
+#Spacer-tech pulse rifle that outshoots anything short of a charge lance.
+921. Charge Lance, 4.8, RimWorld
+#Long-range armor-melting spacer rifle; one shot can delete a torso.
+922. Healer Mech Serum, 5.4, RimWorld
+#Glitterworld nanomachines that regenerate scars, missing organs, and chronic ills.
+923. Resurrector Mech Serum, 6.2, RimWorld
+#Brings back the recently dead, full resurrection psychosis side effects included.
+924. Tranquilizer Rifle, 3.2, Deus Ex
+#Long-range nonlethal takedowns; one dart naps a guard for minutes.
+925. Zenith 10mm Pistol, 2.8, Deus Ex
+#Custom compact pistol, whisper-quiet with a suppressor and laser sight.
+926. Nanoceramic Blade, 3.6, Deus Ex
+#Monomolecular sword that cuts through armor, bots, and bad decisions.
+927. Service Weapon, 5.0, Control
+#The Director's shapeshifting gun: Spin, Grip, Shatter, Pierce, and Charge forms in one impossible object.
+928. Hotline, 4.4, Control
+#A red Bakelite phone that calls the Board directly, geometry optional.
+929. Hedron Resonance Amplifier, 4.6, Control
+#Wearable Hedron tech that shields the mind from Hiss resonance.
+930. Vacpack, 3.0, Slime Rancher
+#Vacuum, shoot, and store slimes, food, and plorts with four color-coded tanks.
+931. Slime Key, 3.4, Slime Rancher
+#A statue-shaped key that opens Slime Gates into new ranch zones.
+932. Flak Cannon, 5.0, Genome Guardian
+#Blast Shotgun crossed with more shotgun: the all-powerful flak answer to everything.
+933. Blast Shotgun, 4.2, Genome Guardian
+#Bomb plus shotgun: spread explosives that clear whole microbe waves.
+934. Dice Turret, 3.8, Genome Guardian
+#A gambling turret whose wild random shots somehow always pay off.
+935. Idol of Rebirth, 4.6, Divinity Original Sin
+#A full idol that automatically resurrects its bearer once, then crumbles.
+936. Resurrection Scroll, 3.0, Divinity Original Sin
+#Bring an ally back mid-fight; every tactician carries a stack.
+937. Q-Up Coin, 2.0, Q-UP
+#The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty. Totally fair.
+938. Identity Disc, 4.0, Tron 2.0
+#A program's everything on a glowing disc: memory, weapon, and backup, worn on the back.

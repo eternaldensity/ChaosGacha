@@ -2782,7 +2782,7 @@
 #(Tree)(Meta:echo) Single use. The next ticket you are awarded pays double points.
 1395. Survey, 3.0, Generic
 #(Tree)(Meta:survey:1) You can see the names of locked nodes one extra connection away from unlocked nodes.
-1396. Compass, 5.0, Generic
+1396. Source Compass, 5.0, Generic
 #(Tree)(Meta:compass) You can trace a route to the closest locked node of any chosen source.
 1397. Sight: Ability, 2.5, Generic
 #(Tree)(Meta:sight-cat:ability:1) You can view ability nodes one extra connection away from unlocked nodes.
@@ -2794,3 +2794,81 @@
 #(Tree)(Meta:sight-cat:trait:1) You can view trait nodes one extra connection away from unlocked nodes.
 1401. Sight: Familiar, 2.5, Generic
 #(Tree)(Meta:sight-cat:familiar:1) You can view familiar nodes one extra connection away from unlocked nodes.
+1402. Telekinetic Launch, 4.2, Control
+#Rip loose concrete, furniture, and machinery from the environment and hurl it as telekinetic artillery; charged throws stagger even the Hiss.
+1403. Seize, 4.6, Control
+#Weaken an enemy then seize their mind outright, turning them into a temporary ally that fights and dies for you.
+1404. Debris Shield, 3.8, Control
+#Tear rubble from the surroundings into a rotating barrier that eats gunfire, then launch the whole shield back at whoever shot you.
+1405. Evade, 3.0, Control
+#A short telekinetic dash that phases through incoming fire; upgraded chains link multiple dashes together.
+1406. Levitate, 4.0, Control
+#Rise and drift on telekinetic lift while raining debris from above; full upgrades allow true flight and meteor ground slams.
+1407. Icarus Landing System, 3.2, Deus Ex
+#Fall from any height wrapped in an electromagnetic glare shield that disperses on impact, landing unharmed every time.
+1408. Smart Vision, 3.4, Deus Ex
+#See living targets and machines through walls, with threats, cameras, and robots highlighted and assessed.
+1409. Glass-Shield Cloaking, 4.4, Deus Ex
+#Bend light around yourself to turn nearly invisible while moving slowly; it drinks energy fast so keep moving with purpose.
+1410. Titan Shield, 4.8, Deus Ex
+#Project hardened dermal armor that shrugs off bullets and explosions while active, at a heavy energy cost.
+1411. Remote Hacking, 4.0, Deus Ex
+#Breach cameras, turrets, robots, and door panels from a distance without ever touching a terminal.
+1412. CASIE, 3.6, Deus Ex
+#Read micro-expressions and pheromones to profile anyone mid-conversation, then nudge them toward the answer you wanted.
+1413. Psycast Skip, 3.8, RimWorld
+#Teleport yourself or a nearby pawn a short distance, blinking through walls and out of danger at the cost of neural heat.
+1414. Psycast Farskip, 5.6, RimWorld
+#Open a skipgate that relocates your whole caravan across the world map, or dumps an enemy raid somewhere far away.
+1415. Psycast Berserk Pulse, 4.6, RimWorld
+#Drive every humanlike in an area into a murderous berserk rage, friend and foe alike. Do not stand in the pulse.
+1416. Psycast Invisibility, 4.2, RimWorld
+#Vanish from enemy perception entirely and walk through a raid unseen; attacking breaks the effect.
+1417. Word of Serenity, 3.4, RimWorld
+#Speak with irresistible calm that ends mental breaks on the spot and steadies volatile colonists.
+1418. Time Walk, 7.8, MTG
+#Take an extra turn after this one. Two mana, one extra turn, and a permanent seat on every banned list.
+1419. Ancestral Recall, 7.4, MTG
+#Target player draws three cards. One blue mana for the most efficient draw spell ever printed.
+1420. Counterspell, 4.4, MTG
+#Counter target spell. Two blue mana that simply says no to anything.
+1421. Swords to Plowshares, 4.2, MTG
+#Exile target creature; its controller gains life equal to its power. One mana of unconditional removal.
+1422. Dark Ritual, 3.8, MTG
+#Add three black mana in a burst. The turn-one kill enabler since Alpha.
+1423. Giant Growth, 2.4, MTG
+#Target creature gets +3/+3 until end of turn. One green mana of timeless combat math.
+1424. Nether Swap, 4.0, Divinity Original Sin
+#Swap the positions of any two characters or objects in range, teleporting both at once.
+1425. Adrenaline, 3.2, Divinity Original Sin
+#Gain 2 action points now at the cost of 2 next turn; the classic opening-move rush.
+1426. Chameleon Cloak, 3.6, Divinity Original Sin
+#Blend perfectly into the surroundings, turning invisible for two turns unless you attack or cast.
+1427. Chicken Claw, 3.0, Divinity Original Sin
+#Polymorph an enemy into a clucking chicken that wanders helplessly for its turn.
+1428. Tentacle Lash, 3.4, Divinity Original Sin
+#Sprout a tentacle that lashes distant enemies for damage and disarms them.
+1429. Bull Horns, 2.8, Divinity Original Sin
+#Grow horns that gore targets when you rush them, knocking victims down.
+1430. Infect, 3.2, Divinity Original Sin
+#Infect a target with disease that eats through armour and keeps rotting them each turn.
+1431. Flay Skin, 4.2, Divinity Original Sin
+#Strip all magic armour from enemies around you, leaving them open to every status effect.
+1432. Time Warp, 6.4, Divinity Original Sin
+#Fane's special source skill: grant a character an entire extra turn after their current one ends.
+1433. Apotheosis, 6.8, Divinity Original Sin
+#Take the first step toward godhood: all Source skills cost 3 less and attributes surge for two turns.
+1434. Temporal Rewind, 5.2, Life is Strange
+#Rewind time by seconds or minutes while retaining full memory of the undone timeline, then choose better.
+1435. Telekinetic Blast, 4.6, Life is Strange
+#Unleash concussive telekinetic force that hurls people, cars, and debris away from you.
+1436. Concentration, 2.8, Horizon Zero Dawn
+#Slow the world to a crawl while aiming, lining up machine weak-point shots with perfect calm.
+1437. Silent Strike, 3.0, Horizon Zero Dawn
+#Takedown unaware machines and humans from stealth for massive damage.
+1438. Survivalist, 2.6, Tomb Raider
+#Hunter vision that highlights enemies, animals, traps, and salvage through the environment.
+1439. Loop Memory, 5.0, I Was a Teenage Exocolonist
+#Retain skills, relationships, and knowledge across loops of your life on Vertumna, redoing years better each time.
+1440. Seeker Subroutine, 3.4, Tron 2.0
+#Launch homing energy seekers from your identity disc that hunt targets around corners.

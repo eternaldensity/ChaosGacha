@@ -918,3 +918,73 @@
 #A small army of Hollows wielding swords, shields, spears, and crossbows. Not very smart or strong, but weapon-trained. You start with 50 and gain more as you grow stronger.
 460. Lopunny, 2.3, Pokemon
 #"There are no laws against the Pokemon Batman!" Lopunny is a bunny-like Pokemon with great agility and leg strength, delivering devastating kicks and moving rapidly.
+461. Lamball, 1.2, Palworld
+#A round woolly starter Pal whose fluffy body makes a perfect shield and pillow.
+462. Chikipi, 1.0, Palworld
+#A cheerful chicken Pal that lays eggs wherever it wanders.
+463. Lifmunk, 2.2, Palworld
+#A gliding squirrel Pal that mans a submachine gun from your shoulder.
+464. Foxparks, 2.4, Palworld
+#A fox Pal that transforms into a living flamethrower when you hug it. Huggy Fire.
+465. Pengullet, 2.0, Palworld
+#A penguin Pal that loads itself into a launcher as living ammunition.
+466. Tocotoco, 2.2, Palworld
+#A dapper bird Pal that fires explosive eggs from its Eggbomb Launcher.
+467. Tanzee, 2.6, Palworld
+#A monkey Pal wielding an assault rifle with its Cheery Rifle partner skill.
+468. Leezpunk, 2.8, Palworld
+#A sneaky lizard Pal whose Sixth Sense sniffs out nearby dungeons.
+469. Lunaris, 3.4, Palworld
+#An antlered Pal whose Antigravity lets you carry far more than you should.
+470. Bushi, 4.2, Palworld
+#A ronin Pal that answers threats with its Brandish Blade iaido draw.
+471. Grizzbolt, 4.6, Palworld
+#An electric bear Pal that shoulders a minigun as its Yellow Tank partner skill.
+472. Palworld Anubis, 5.4, Palworld
+#A jackal martial-artist Pal, Guardian of the Desert, who empowers your strikes.
+473. Strider, 2.8, Horizon Zero Dawn
+#An overridden horse-like machine that serves as a fast, loyal mount.
+474. Broadhead, 3.0, Horizon Zero Dawn
+#A bull-like machine mount that gores whatever charges you.
+475. Sawtooth, 4.2, Horizon Zero Dawn
+#An overridden predator machine that hunts at your side.
+476. Stalker, 4.6, Horizon Zero Dawn
+#An overridden stealth machine that cloaks beside you until it strikes.
+477. Pink Slime, 1.2, Slime Rancher
+#The friendliest slime: eats anything, loves everything, wiggles constantly.
+478. Tabby Slime, 1.8, Slime Rancher
+#A catlike slime that steals food, knocks things over, and purrs about it.
+479. Phosphor Slime, 2.2, Slime Rancher
+#A nocturnal glow slime, harmless by day and radiant by night.
+480. Hunter Slime, 3.0, Slime Rancher
+#A feral-eyed predator slime that turns invisible before it pounces.
+481. Honey Slime, 2.4, Slime Rancher
+#A sweet slime oozing minty honey; nearby slimes agitate from the smell.
+482. Puddle Slime, 2.6, Slime Rancher
+#A shy water slime that only thrives in ponds and evaporates on dry land.
+483. Quantum Slime, 3.8, Slime Rancher
+#A paradox slime that exists in multiple places until observed.
+484. Lucky Slime, 4.6, Slime Rancher
+#An impossibly rare coin-faced slime that bursts into newbucks when fed meat.
+485. Gold Slime, 5.8, Slime Rancher
+#The rarest slime: appears anywhere, eats anything, and pops into plorts of pure gold.
+486. Tiyanki Matriarch, 5.2, Stellaris
+#An ancient space-whale matriarch leading her pod across the stars beside you.
+487. Space Amoeba, 4.4, Stellaris
+#A docile void amoeba the size of a frigate, trailing your fleet like a puppy.
+488. War Dog, 2.2, Dwarf Fortress
+#A trained wardog that hunts and holds the line beside its handler.
+489. Barn Cat, 1.4, Dwarf Fortress
+#Vermin control with whiskers; will adopt you and explode in population.
+490. Grizzly Bear, 3.2, Dwarf Fortress
+#A war-trained grizzly that mauls sieges on command.
+491. Cuddlefish, 2.8, Subnautica
+#An endearing deep-sea pet that plays fetch and follows you home.
+492. Lizard Doggo, 2.4, Satisfactory
+#A loyal alien pup that follows you around and occasionally digs up surprises.
+493. Chirpy, 1.6, Cities Skylines
+#The relentlessly cheerful seagull mascot, narrating your city one chirp at a time.
+494. Shivan Dragon, 6.4, MTG
+#The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
+495. Captain Boomer, 4.8, Q-UP
+#A 3-ton whale with a day job who competes in the coin-flipping esport beside you.

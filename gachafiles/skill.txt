@@ -602,3 +602,35 @@
 #You are a master of tax evasion. If you wish, the government sees no more of your money than you allow. You know the ins and outs of money laundering, obfuscating, and more.
 302. Kidnapping, 1.8, Generic
 #You are very skilled at kidnapping targets, planning such operations with great skill and finesse and executing them with practiced moves.
+303. Factory Planning, 3.2, Satisfactory
+#Lay out production lines, manifolds, and bus feeds that scale up without dissolving into spaghetti.
+304. Machine Override, 3.4, Horizon Zero Dawn
+#Hack overridden machines to fight for you or serve as mounts.
+305. Bushcraft, 2.8, Tomb Raider
+#Forage, hunt, craft, and read the land in any hostile wild.
+306. Colony Medicine, 3.6, RimWorld
+#Triage, surgery, and glitterworld care with whatever counts as a hospital.
+307. Colony Construction, 3.0, RimWorld
+#Raise bases fast and sturdy, from wooden shacks to plasteel fortresses.
+308. Deep Space Survey, 3.4, Stellaris
+#Chart stars, anomalies, and habitable worlds with professional thoroughness.
+309. Galactic Diplomacy, 3.8, Stellaris
+#Federations, vassals, and first contact without starting an extermination war. Usually.
+310. Sneaking, 2.6, Divinity Original Sin
+#Move unseen, pick pockets, and backstab with professional discretion.
+311. Persuasion, 3.0, Divinity Original Sin
+#Talk down fights, talk up prices, and talk your way into restricted areas.
+312. Masonry, 2.4, Dwarf Fortress
+#Cut stone blocks and raise fortresses that outlast civilizations.
+313. Brewing, 2.2, Dwarf Fortress
+#Turn pig tails and plump helmets into life-giving dwarven ale.
+314. Deckbuilding, 3.0, MTG
+#Build sixty-card engines where every draw does exactly what the plan needs.
+315. Slime Science, 3.6, Slime Rancher
+#Gadgets, pumps, and teleporters powered by slime science and questionable ethics.
+316. Computer Hacking, 3.4, Deus Ex
+#Breach security ratings, ATMs, and robots with time to spare and no alarms.
+317. Exocraft Piloting, 3.2, No Man's Sky
+#Handle Nomads, Pilgrims, and Minotaurs across every biome without scratching the paint.
+318. Pal Training, 2.8, Palworld
+#Raise, breed, and work Pals to peak performance without anyone getting eaten.

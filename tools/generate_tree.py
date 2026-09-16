@@ -283,7 +283,7 @@ def generate_tree(items, params, rng):
 
     order = list(range(n))
     rng.shuffle(order)
-    for a in order:
+    for qi, a in enumerate(order):
         while len(adj[a]) < targets[a]:
             cands = candidates(a)
             if not cands:
@@ -313,6 +313,8 @@ def generate_tree(items, params, rng):
             adj[a].add(chosen)
             adj[chosen].add(a)
             union(a, chosen)
+        if (qi + 1) % 1000 == 0 or qi + 1 == n:
+            print(f"  linking... {qi + 1}/{n} nodes", flush=True)
 
     # --- connectivity pass (optional) ---
     bridges = 0
@@ -547,7 +549,10 @@ def main():
     }
 
     rng = random.Random(args.seed)
+    print(f"loaded {len(items)} entries, generating (seed {args.seed})...",
+          flush=True)
     nodes, edges, targets = generate_tree(items, params, rng)
+    print("linking done, adding root + stats...", flush=True)
     nodes, edges = add_root(nodes, edges, n_links=args.root_links)
     stats = compute_stats(nodes, edges, targets)
 

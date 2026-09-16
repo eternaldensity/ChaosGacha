@@ -1274,3 +1274,39 @@
 #(Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.
 637. Root Pact, 4.0, Generic
 #(Tree)(Meta:root-pact) Nodes directly connected to the Origin root unlock at half points cost.
+638. Intelligent, 3.4, Stellaris
+#Your mind learns fast: research, engineering, and study all come noticeably easier.
+639. Rapid Breeders, 3.0, Stellaris
+#Your kind multiplies quickly; growth, recovery, and repopulation outpace everyone.
+640. Mind over Matter, 5.6, Stellaris
+#Your mind touches the Shroud; latent psychic potential hums beneath every thought.
+641. Lithoid, 4.2, Stellaris
+#You are living rock: silicon flesh that shrugs off hunger and laughs at vacuum.
+642. Hive-Minded, 4.8, Stellaris
+#You are a node in a greater gestalt, sharing senses and purpose with the whole.
+643. Ocean-Born, 3.2, Stellaris
+#Born to water worlds; you swim, dive, and work the seas better than any landwalker.
+644. Iron-Willed, 3.0, RimWorld
+#Your mood barely moves; break risks, pain, and horror slide off a steady mind.
+645. Kind, 2.6, RimWorld
+#You lift everyone around you and never start social fights; even raiders hesitate.
+646. Psychopath, 3.8, RimWorld
+#No empathy, no problem: organ harvesting, butchering, and horror leave you untouched.
+647. Cannibal, 3.4, RimWorld
+#Human meat is a delicacy and butchering people is honest work; corpses are groceries.
+648. Arsonist, 2.8, RimWorld
+#You love fire a little too much and will occasionally go start one on purpose. Sorry.
+649. Strange Mood, 4.4, Dwarf Fortress
+#Fall into a fey trance, claim a workshop, and produce a priceless artifact from whatever is at hand.
+650. Traffic Engineer, 3.2, Cities Skylines
+#Intuitively read any road network and know exactly which interchange untangles it.
+651. Zoning Intuition, 2.8, Cities Skylines
+#Always know the right mix of residential, commercial, and industrial before demand spikes.
+652. Planeswalker's Spark, 7.6, MTG
+#The rare spark that lets a mage planeswalk between worlds; it ignites in moments of crisis.
+653. Backtalk, 2.4, Life is Strange
+#Weaponized sarcasm: talk your way past anyone by pushing exactly the right buttons.
+654. Glow-Touched, 4.0, I Was a Teenage Exocolonist
+#Bonded with Vertumna's alien Glow, a symbiotic light that shares its strange senses.
+655. Root Access, 4.2, Tron 2.0
+#System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
