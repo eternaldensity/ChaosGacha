@@ -410,7 +410,7 @@
         ctx.beginPath(); ctx.arc(it.x, it.y, rad + 4, 0, Math.PI * 2);
         ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.stroke(); ctx.lineWidth = 1;
       }
-      projected.push({ id: it.nd.id, x: it.x, y: it.y, r: rad + 8 });
+      projected.push({ id: it.nd.id, x: it.x, y: it.y, r: rad + 8, name: `#${it.nd.id} ${it.nd.name} · ${it.nd.rarity}` });
     }
     if (selectedId != null && d.rt.byId[selectedId]) {
       const nd = d.rt.byId[selectedId];
@@ -423,13 +423,34 @@
   (function bindCamera() {
     const pts = new Map();
     let lastPinch = 0, moved = 0;
+    const tip = $("hoverTip");
+    function hideTip() { tip.style.display = "none"; }
+    function hover(e) {
+      const r = canvas.getBoundingClientRect();
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      const x = (e.clientX - r.left) * dpr, y = (e.clientY - r.top) * dpr;
+      let best = null, bd = 1e9;
+      // need runtime names: look up via the last drawn frame's ids
+      for (const p of projected) {
+        const d = Math.hypot(p.x - x, p.y - y);
+        if (d < p.r && d < bd) { bd = d; best = p; }
+      }
+      if (best && best.name) {
+        tip.textContent = best.name;
+        tip.style.display = "block";
+        tip.style.left = (e.clientX - r.left) + "px";
+        tip.style.top = (e.clientY - r.top) + "px";
+      } else hideTip();
+    }
     canvas.addEventListener("pointerdown", e => {
       canvas.setPointerCapture(e.pointerId);
       pts.set(e.pointerId, [e.clientX, e.clientY]);
       moved = 0;
     });
     canvas.addEventListener("pointermove", e => {
+      if (e.pointerType !== "touch" && !pts.has(e.pointerId)) { hover(e); return; }
       if (!pts.has(e.pointerId)) return;
+      hideTip();
       const prev = pts.get(e.pointerId);
       pts.set(e.pointerId, [e.clientX, e.clientY]);
       moved += Math.abs(e.clientX - prev[0]) + Math.abs(e.clientY - prev[1]);
@@ -452,6 +473,7 @@
     };
     canvas.addEventListener("pointerup", up);
     canvas.addEventListener("pointercancel", up);
+    canvas.addEventListener("pointerleave", hideTip);
     canvas.addEventListener("wheel", e => {
       e.preventDefault();
       cam.zoom = Math.max(0.3, Math.min(15, cam.zoom * (1 - e.deltaY * 0.0015)));
@@ -481,6 +503,10 @@
   });
 
   // ---- node tab (detail + 2D neighbours) --------------------------------------
+  function shortName(s) {
+    s = String(s == null ? "" : s);
+    return s.length > 16 ? s.slice(0, 15) + "…" : s;
+  }
   function nodeLine(nd, unl, extra) {
     const cls = classOf(nd.rarity);
     return `<div><span class="dot" style="background:${esc(cls.color)}"></span>` +
@@ -524,11 +550,17 @@
       if (ok) toast(`Unlocked ${nd.name}.`);
     });
 
-    // 2D neighbour view: center + ring.
+    // 2D neighbour view: center + ring. Only neighbours you can actually
+    // see (unlocked, frontier, or revealed by an ability) are shown; hidden
+    // nodes stay hidden. Normal unlocks stay frontier-only (engine-enforced);
+    // abilities (lifeline/gacha/duplicate/…) are the only other paths.
     const NS = "http://www.w3.org/2000/svg";
     const cx = 180, cyy = 150, R0 = 96;
-    const nbs = [...(c.rt.adj[nd.id] || [])].sort((a, b) => a - b);
+    const unlSet = new Set(c.st.unlocked);
     const vis = new Set(E.visible(c.rt, c.st.unlocked, meta));
+    const nbs = [...(c.rt.adj[nd.id] || [])]
+      .filter(b => unlSet.has(b) || vis.has(b))
+      .sort((a, b) => a - b);
     function circle(x, y, r, fill, stroke, id, label) {
       const g = document.createElementNS(NS, "g");
       g.style.cursor = "pointer";
@@ -554,19 +586,22 @@
       l.setAttribute("stroke", "#333947");
       svg.appendChild(l);
     }
-    circle(cx, cyy, 26, catColor(nd.file), "#fff", nd.id, "#" + nd.id);
+    circle(cx, cyy, 26, catColor(nd.file), "#fff", nd.id, shortName(nd.name));
     nbs.forEach((b, i) => {
       const a = (2 * Math.PI * i) / Math.max(1, nbs.length) - Math.PI / 2;
       const x = cx + R0 * Math.cos(a), y = cyy + R0 * Math.sin(a);
       const bnd = c.rt.byId[b];
       const isUnl = c.st.unlocked.includes(b);
       circle(x, y, 15, isUnl ? catColor(bnd.file) : "#20242e",
-        !isUnl && !vis.has(b) ? "#4a4f5e" : catColor(bnd.file), b, "#" + b);
+        catColor(bnd.file), b, shortName(bnd.name));
     });
     const legend = document.createElementNS(NS, "text");
     legend.setAttribute("x", 8); legend.setAttribute("y", 292);
     legend.setAttribute("fill", "#9aa0b0"); legend.setAttribute("font-size", "10");
-    legend.textContent = `${esc(nd.name)} — ${nbs.length} connection${nbs.length === 1 ? "" : "s"} (tap a dot to inspect)`;
+    const totalConns = new Set(c.rt.adj[nd.id] || []).size;
+    const hidden = totalConns - nbs.length;
+    legend.textContent = `${nd.name} — ${nbs.length} shown` +
+      (hidden ? ` · ${hidden} hidden` : "") + " (tap a dot to inspect)";
     svg.appendChild(legend);
   }
 

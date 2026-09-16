@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Chaos Tree</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -61,7 +62,7 @@
         <div class="muted small" id="viewInfo">No tree selected.</div>
         <div style="flex:0 0 auto"><button id="btnResetCam">Reset view</button></div>
       </div>
-      <div style="margin-top:8px"><canvas class="view" id="view3d"></canvas></div>
+      <div style="margin-top:8px" class="viewwrap"><canvas class="view" id="view3d"></canvas><div class="hovertip" id="hoverTip"></div></div>
       <div class="muted small" id="selInfo" style="margin-top:6px">Drag to rotate · scroll / pinch to zoom · tap a node to select it.</div>
     </div>
   </section>
