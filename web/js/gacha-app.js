@@ -105,6 +105,7 @@
       cb.style.cssText = "width:22px;height:22px";
       cb.addEventListener("change", () => { refreshSrcCount(); updatePoolCount(); collectFilters(); });
       const nm = document.createElement("span");
+      nm.className = "srcbreak";
       nm.textContent = `${s} [${breakdown(s)}]`;
       lab.append(cb, nm);
       host.appendChild(lab);
