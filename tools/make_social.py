@@ -14,6 +14,7 @@ import zlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "web", "social")
+ICON_DIR = os.path.join(ROOT, "web", "icons")
 W, H = 1200, 630
 
 
@@ -28,27 +29,29 @@ LINK = hexrgb("#3d4457")
 
 
 class Canvas:
-    def __init__(self):
-        self.px = bytearray(W * H * 3)
+    def __init__(self, w=W, h=H):
+        self.w, self.h = w, h
+        self.px = bytearray(w * h * 3)
 
     def set(self, x, y, c):
-        if 0 <= x < W and 0 <= y < H:
-            i = (y * W + x) * 3
+        if 0 <= x < self.w and 0 <= y < self.h:
+            i = (y * self.w + x) * 3
             self.px[i:i + 3] = bytes(c)
 
     def background(self):
-        for y in range(H):
-            t = y / (H - 1)
+        w, h = self.w, self.h
+        for y in range(h):
+            t = y / (h - 1)
             c = tuple(round(a + (b - a) * t) for a, b in zip(INK_TOP, INK_BOT))
-            row = bytes(c) * W
-            self.px[y * W * 3:(y + 1) * W * 3] = row
+            row = bytes(c) * w
+            self.px[y * w * 3:(y + 1) * w * 3] = row
         # vignette: darken toward the corners
-        cx, cy = W / 2, H / 2
+        cx, cy = w / 2, h / 2
         maxd = math.hypot(cx, cy)
-        for y in range(0, H, 2):
-            for x in range(0, W, 2):
+        for y in range(0, h, 2):
+            for x in range(0, w, 2):
                 f = 1.0 - 0.35 * (math.hypot(x - cx, y - cy) / maxd) ** 2
-                i = (y * W + x) * 3
+                i = (y * w + x) * 3
                 self.px[i] = int(self.px[i] * f)
                 self.px[i + 1] = int(self.px[i + 1] * f)
                 self.px[i + 2] = int(self.px[i + 2] * f)
@@ -73,15 +76,16 @@ class Canvas:
             self.disc(round(x0 + (x1 - x0) * t), round(y0 + (y1 - y0) * t), w, c)
 
     def save(self, path):
+        w, h = self.w, self.h
         raw = bytearray()
-        for y in range(H):
+        for y in range(h):
             raw.append(0)
-            raw += self.px[y * W * 3:(y + 1) * W * 3]
+            raw += self.px[y * w * 3:(y + 1) * w * 3]
         def chunk(typ, data):
             out = struct.pack(">I", len(data)) + typ + data
             out += struct.pack(">I", zlib.crc32(typ + data) & 0xFFFFFFFF)
             return out
-        ihdr = struct.pack(">IIBBBBB", W, H, 8, 2, 0, 0, 0)
+        ihdr = struct.pack(">IIBBBBB", w, h, 8, 2, 0, 0, 0)
         png = (b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", ihdr) +
                chunk(b"IDAT", zlib.compress(bytes(raw), 9)) + chunk(b"IEND", b""))
         with open(path, "wb") as fh:
@@ -144,8 +148,33 @@ def make(name, sats, palette, seed):
     cv.save(os.path.join(OUT_DIR, name))
 
 
+def make_icons():
+    """App icons for the PWA manifest (opaque squares, OS masks them)."""
+    sats = [(-1, -0.72, hexrgb("#7cc4ff")), (0.95, -0.78, hexrgb("#ff6bae")),
+            (-1.1, 0.66, hexrgb("#11d939")), (1.05, 0.7, hexrgb("#b388ff")),
+            (0, -1.05, hexrgb("#9bf3eb")), (-0.4, 1.0, hexrgb("#f5993d"))]
+    for size, name in ((512, "icon-512.png"), (192, "icon-192.png"),
+                       (180, "apple-touch-icon.png")):
+        cv = Canvas(size, size)
+        cv.background()
+        cx = cy = size // 2
+        for dx, dy, _c in sats:
+            cv.link(cx, cy, cx + int(dx * size * 0.32), cy + int(dy * size * 0.32),
+                    LINK, max(2, size // 160))
+        cv.glow(cx, cy, int(size * 0.085), GOLD)
+        for dx, dy, c in sats:
+            x, y = cx + int(dx * size * 0.32), cy + int(dy * size * 0.32)
+            cv.glow(x, y, int(size * 0.05), c, layers=3)
+            cv.disc(x, y, int(size * 0.05), c)
+        cv.disc(cx, cy, int(size * 0.085), GOLD)
+        cv.disc(cx - int(size * 0.023), cy - int(size * 0.026),
+                int(size * 0.026), (255, 242, 207))
+        cv.save(os.path.join(ICON_DIR, name))
+
+
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
+    os.makedirs(ICON_DIR, exist_ok=True)
     tree_pal = [hexrgb(c) for c in
                 ["#7cc4ff", "#b388ff", "#69f0ae", "#11d939", "#ffd54f"]]
     gacha_pal = [hexrgb(c) for c in
@@ -153,6 +182,7 @@ def main():
     make("social-tree.png", TREE_SATS, tree_pal, 7)
     make("social-gacha.png", GACHA_SATS, gacha_pal, 21)
     make("social.png", INDEX_SATS, tree_pal + gacha_pal, 42)
+    make_icons()
 
 
 if __name__ == "__main__":
