@@ -115,7 +115,7 @@
     $("q").value = F.q || "";
     $("fRmin").value = F.rmin || "";
     $("fRmax").value = F.rmax || "";
-    $("fNsfw").checked = !!F.hideNsfw;
+    $("fNsfw").checked = F.hideNsfw !== false; // safe by default
     $("fTech").checked = !!F.hideTech;
     $("fDedup").checked = !!F.dedup;
     refreshSources(false);
