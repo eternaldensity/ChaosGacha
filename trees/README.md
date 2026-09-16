@@ -53,10 +53,15 @@ the centre. All real nodes have `id >= 1`.
 **Tree-meta nodes.** A handful of ordinary ability/item/trait entries carry a
 `(Tree)` tag plus a `(Meta:...)` token (kept in the node's `meta` field).
 They grant tree-utility effects once unlocked: extended sight (`sight:N`,
-`see-far`), route tracing by name/description (`trace-name`, `trace-desc`),
-full-tree reveals (`reveal-temp`, `reveal-full`), +N% ticket points
-(`ticket-bonus:N`, additive), a lock-and-refund (`lock-refund`), added edges
-(`add-link:N`), and a random unlock (`gacha:R`). They never roll in the Gacha.
+`sight-cat:<cat>:N`, `see-far`, names-only `survey:N`), route tracing by
+name/description/source (`trace-name`, `trace-desc`, `compass`), full-tree
+reveals (`reveal-temp`, `reveal-full`), +N% ticket points (`ticket-bonus:N`,
+additive) or a one-time double payout (`echo`), a lock-and-refund
+(`lock-refund`), a free frontier unlock (`lifeline`), an undo of the last
+unlock (`recall`), added edges (`add-link:N`), topology swaps
+(`shuffle`/`swap`/`reshuffle`), random unlocks (`gacha:R` or `gacha:R-S`,
+plus a rarity-capped same-source `duplicate:R`), and half-price unlocks for
+root-adjacent nodes (`root-pact`). They never roll in the Gacha.
 
 ## Regenerating
 

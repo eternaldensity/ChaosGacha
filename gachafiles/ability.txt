@@ -2778,3 +2778,19 @@
 #(Tree)(Meta:reveal-temp) Single use. Reveal the full tree for 10 seconds.
 1393. Omnisight, 9.0, Generic
 #(Tree)(Meta:reveal-full) Permanently reveal the entire tree.
+1394. Echo, 4.0, Generic
+#(Tree)(Meta:echo) Single use. The next ticket you are awarded pays double points.
+1395. Survey, 3.0, Generic
+#(Tree)(Meta:survey:1) You can see the names of locked nodes one extra connection away from unlocked nodes.
+1396. Compass, 5.0, Generic
+#(Tree)(Meta:compass) You can trace a route to the closest locked node of any chosen source.
+1397. Sight: Ability, 2.5, Generic
+#(Tree)(Meta:sight-cat:ability:1) You can view ability nodes one extra connection away from unlocked nodes.
+1398. Sight: Item, 2.5, Generic
+#(Tree)(Meta:sight-cat:item:1) You can view item nodes one extra connection away from unlocked nodes.
+1399. Sight: Skill, 2.5, Generic
+#(Tree)(Meta:sight-cat:skill:1) You can view skill nodes one extra connection away from unlocked nodes.
+1400. Sight: Trait, 2.5, Generic
+#(Tree)(Meta:sight-cat:trait:1) You can view trait nodes one extra connection away from unlocked nodes.
+1401. Sight: Familiar, 2.5, Generic
+#(Tree)(Meta:sight-cat:familiar:1) You can view familiar nodes one extra connection away from unlocked nodes.

@@ -31,17 +31,31 @@ points, otherwise the ticket is traversal-only and adds 0 points):
 Tree meta nodes: normal ability/item/trait entries carrying a (Tree) tag
 and a (Meta:<key>:<value>) token in their description (stored in the JSON
 'meta' field). While unlocked they grant an effect:
-    sight:N        view locked nodes N extra connections away
-    see-far        view locked nodes within SEE_FAR_DISTANCE of unlocked
-                   nodes even if unconnected
-    trace-name     allow the trace command against node names
-    trace-desc     allow the trace command against descriptions
-    reveal-full    permanently reveal the whole tree
-    ticket-bonus:N every ticket awarded grants N% extra points (additive)
-    reveal-temp    one use: reveal the full tree for 10 seconds
-    lock-refund    one use: lock an unlocked node and refund core+points
-    add-link:N     N uses: add an edge between two close unconnected nodes
-    gacha:R        one use: randomly unlock a locked node with rarity <= R
+    sight:N            view locked nodes N extra connections away
+    sight-cat:<cat>:N  view <cat> nodes N extra connections away
+    see-far            view locked nodes within SEE_FAR_DISTANCE of unlocked
+                       nodes even if unconnected
+    survey:N           see the names of locked nodes N extra connections away
+    trace-name         allow the trace command against node names
+    trace-desc         allow the trace command against descriptions
+    compass            allow trace --source against sources
+    reveal-full        permanently reveal the whole tree
+    ticket-bonus:N     every ticket awarded grants N% extra points (additive)
+    echo               one use: the next awarded ticket pays double points
+    reveal-temp        one use: reveal the full tree for 10 seconds
+    lock-refund        one use: lock an unlocked node and refund core+points
+    lifeline           one use: free unlock of a frontier (adjacent) node
+    recall             one use: undo the most recent unlock (refund)
+    add-link:N         N uses: add an edge between two close unconnected nodes
+    gacha:R or R-S     one use: randomly unlock a locked node in that rarity
+                       range (e.g. gacha:5 = 0..5, gacha:5-7 = 5..7)
+    duplicate:R        one use: unlock a random locked node sharing a source
+                       with one of your nodes (Generic excluded), rarity <= R
+    shuffle            one use: swap a visible locked node with a random
+                       not-visible one of similar rarity (+-0.2)
+    swap               one use: swap two visible locked nodes of your choice
+    reshuffle          unlimited shuffle, costs a quarter of the node's cost
+    root-pact          nodes adjacent to the root unlock at half points
 Unlocking is adjacency-based: sight/reveal only let you SEE further; the
 skip/jump/hop tickets are still how you travel.
 
@@ -55,9 +69,12 @@ Modes of use (CLI):
     jump STATE CATEGORY --from ID [--pick I]   jump / choice-N jump
     hop STATE NODE                       unlock with a hop ticket
     use STATE ACTION [ARGS]              lockrefund NODE | addlink A B |
-                                         reveal | gacha
+                                         reveal | gacha | lifeline NODE |
+                                         recall | duplicate | shuffle NODE |
+                                         swap A B | reshuffle NODE
     trace STATE --name X [--n N]         trace routes to closest matches
-           STATE --desc X [--n N]        (requires the matching trace node)
+           STATE --desc X [--n N]
+           STATE --source X [--n N]      (needs the matching ability)
 """
 import argparse
 import json
@@ -109,7 +126,8 @@ def load_tree(path):
 def new_state(tree_path):
     return {"tree": tree_path, "points": 0.0, "cores": 0,
             "inventory": [], "unlocked": [ROOT_ID],
-            "meta_used": {}, "added_links": [], "reveal_temp_until": 0}
+            "meta_used": {}, "added_links": [], "reveal_temp_until": 0,
+            "history": [], "swaps": [], "echo_used": 0}
 
 
 def load_state(path):
@@ -171,7 +189,11 @@ def derive_meta(tree, unlocked):
     meta = {"sight": 0, "see_far": False, "trace_name": False,
             "trace_desc": False, "reveal_full": False, "reveal_temp": False,
             "ticket_bonus": 0, "lock_refund": 0, "add_link": 0,
-            "gacha": 0, "gacha_max": 0}
+            "gacha": 0, "gacha_min": 0, "gacha_max": 0,
+            "echo": 0, "survey": 0, "compass": False, "duplicate": 0,
+            "duplicate_max": 0, "cat_sight": {}, "lifeline": 0,
+            "recall": 0, "root_pact": False, "shuffle": 0, "swap": 0,
+            "reshuffle": 0}
     for u in unlocked:
         nd = tree["by_id"][u]
         for k, v in iter_meta(nd):
@@ -195,7 +217,40 @@ def derive_meta(tree, unlocked):
                 meta["add_link"] += int(v)
             elif k == "gacha":
                 meta["gacha"] += 1
-                meta["gacha_max"] = max(meta["gacha_max"], int(v))
+                if isinstance(v, str) and "-" in v:
+                    lo, hi = v.split("-", 1)
+                    meta["gacha_min"] = max(meta["gacha_min"], int(lo))
+                    meta["gacha_max"] = max(meta["gacha_max"], int(hi))
+                else:
+                    meta["gacha_max"] = max(meta["gacha_max"], int(v))
+            elif k == "echo":
+                meta["echo"] += 1
+            elif k == "survey":
+                meta["survey"] = max(meta["survey"], 1 if v is True else int(v))
+            elif k == "compass":
+                meta["compass"] = True
+            elif k == "duplicate":
+                meta["duplicate"] += 1
+                meta["duplicate_max"] = max(meta["duplicate_max"], int(v))
+            elif k == "sight-cat":
+                if isinstance(v, str) and ":" in v:
+                    cat, depth = v.split(":", 1)
+                else:
+                    cat, depth = str(v), 1
+                meta["cat_sight"][cat] = max(meta["cat_sight"].get(cat, 0),
+                                             int(depth))
+            elif k == "lifeline":
+                meta["lifeline"] += 1
+            elif k == "recall":
+                meta["recall"] += 1
+            elif k == "root-pact":
+                meta["root_pact"] = True
+            elif k == "shuffle":
+                meta["shuffle"] += 1
+            elif k == "swap":
+                meta["swap"] += 1
+            elif k == "reshuffle":
+                meta["reshuffle"] += 1
     return meta
 
 
@@ -217,14 +272,15 @@ def _frontier(tree, unlocked):
 
 def visible(tree, unlocked, meta=None):
     """Locked nodes you can see. Base = neighbours of unlocked nodes; the
-    sight/see-far/reveal meta nodes extend this."""
+    sight/see-far/cat-sight/reveal meta nodes extend this."""
     meta = meta or {}
     now = time.time()
     if meta.get("reveal_full") or meta.get("reveal_temp_until", 0) >= now:
         return sorted(i for i in tree["by_id"] if i not in unlocked)
     adj = tree["adj"]
     sight = meta.get("sight", 0)
-    if sight <= 0 and not meta.get("see_far"):
+    cat_sight = meta.get("cat_sight", {})
+    if sight <= 0 and not meta.get("see_far") and not cat_sight:
         vis = set()
         for u in unlocked:
             vis.update(adj[u])
@@ -232,6 +288,11 @@ def visible(tree, unlocked, meta=None):
         return sorted(vis)
     dist, _ = hop_distances(tree, unlocked)
     vis = {i for i in dist if dist[i] <= 1 + sight and i not in unlocked}
+    for cat, depth in cat_sight.items():
+        for i in dist:
+            if (i not in unlocked and tree["by_id"][i]["file"] == cat
+                    and dist[i] <= 1 + depth):
+                vis.add(i)
     if meta.get("see_far"):
         for u in unlocked:
             unode = tree["by_id"][u]
@@ -241,6 +302,23 @@ def visible(tree, unlocked, meta=None):
                 if distance3(unode, nd) <= SEE_FAR_DISTANCE:
                     vis.add(nd["id"])
     return sorted(vis)
+
+
+def survey_names(tree, unlocked, meta=None):
+    """Names of locked nodes within 1+survey extra connections that are not
+    already shown in full detail by the visible list."""
+    meta = meta or {}
+    depth = meta.get("survey", 0)
+    if not depth:
+        return []
+    dist, _ = hop_distances(tree, unlocked)
+    shown = set(visible(tree, unlocked, meta))
+    out = []
+    for i in dist:
+        if (i not in unlocked and i not in shown
+                and 1 < dist[i] <= 1 + depth):
+            out.append((i, tree["by_id"][i]["name"]))
+    return sorted(out)
 
 
 def hop_distances(tree, unlocked):
@@ -265,10 +343,20 @@ def distance3(a, b):
     return math.dist(a["pos"], b["pos"])
 
 
+def _node_cost_for(state, tree, nid):
+    """Points cost to unlock nid now (halved for root-adjacent nodes when the
+    Root Pact is owned)."""
+    cost = node_cost(tree, nid)
+    meta = derive_meta(tree, state["unlocked"])
+    if meta.get("root_pact") and nid in tree["adj"][ROOT_ID]:
+        cost /= 2.0
+    return cost
+
+
 def _pay(state, tree, nid):
     if state["cores"] < 1:
         raise UsageError("not enough cores (award a ticket first)")
-    cost = node_cost(tree, nid)
+    cost = _node_cost_for(state, tree, nid)
     if state["points"] < cost:
         raise UsageError(
             f"not enough points: need {fmt(cost)}, have {fmt(state['points'])}")
@@ -277,8 +365,37 @@ def _pay(state, tree, nid):
 
 
 def _unlock(state, nid, extra=None):
-    state["unlocked"].extend([nid] if extra is None else [nid] + extra)
+    add = [nid] + (extra or [])
+    state["unlocked"].extend(add)
     state["unlocked"] = sorted(set(state["unlocked"]))
+    state.setdefault("history", []).extend(add)
+
+
+def _swap_nodes(tree, a, b):
+    """Exchange the position and adjacency of two nodes (Shuffle/Swap)."""
+    if a == b:
+        return
+    na, nb = tree["by_id"][a], tree["by_id"][b]
+    na["pos"], nb["pos"] = nb["pos"], na["pos"]
+    if "r" in na and "r" in nb:
+        na["r"], nb["r"] = nb["r"], na["r"]
+    adj = tree["adj"]
+    sa = set(adj[a]) - {b}
+    sb = set(adj[b]) - {a}
+    ab = b in adj[a]
+    for n in sa:
+        adj[n].discard(a)
+    for n in sb:
+        adj[n].discard(b)
+    adj[a] = sb
+    adj[b] = sa
+    for n in sb:
+        adj[n].add(a)
+    for n in sa:
+        adj[n].add(b)
+    if ab:
+        adj[a].add(b)
+        adj[b].add(a)
 
 
 class UsageError(Exception):
@@ -341,11 +458,15 @@ def parse_ticket(spec):
     return tier, kind, params
 
 
-def award(state, spec, bonus_pct=0):
+def award(state, spec, bonus_pct=0, echo=False):
     tier, kind, params = parse_ticket(spec)
     state["cores"] += 1
     base = TIER_POINTS.get(tier, 0)
-    state["points"] += base * (1.0 + bonus_pct / 100.0)
+    pts = base * (1.0 + bonus_pct / 100.0)
+    if echo:
+        pts *= 2.0
+        state["echo_used"] = state.get("echo_used", 0) + 1
+    state["points"] += pts
     if kind != "plain":
         ticket = {"kind": kind, "tier": tier}
         ticket.update(params)
@@ -475,6 +596,12 @@ def apply_added_links(tree, state):
     return tree
 
 
+def apply_swaps(tree, state):
+    for a, b in state.get("swaps", []):
+        _swap_nodes(tree, a, b)
+    return tree
+
+
 def use_lock_refund(state, tree, nid):
     """Lock an unlocked node and refund its core + points (single use)."""
     meta = derive_meta(tree, state["unlocked"])
@@ -484,7 +611,7 @@ def use_lock_refund(state, tree, nid):
         raise UsageError("the root cannot be locked")
     if nid not in state["unlocked"]:
         raise UsageError(f"node {nid} is not unlocked")
-    refund = node_cost(tree, nid)
+    refund = _node_cost_for(state, tree, nid)
     state["unlocked"].remove(nid)
     state["points"] += refund
     state["cores"] += 1
@@ -522,35 +649,172 @@ def use_reveal(state, tree):
 
 
 def use_gacha(state, tree):
-    """Randomly unlock a locked node with rarity <= R (single use)."""
+    """Randomly unlock a locked node in the ticket's rarity range."""
     meta = derive_meta(tree, state["unlocked"])
     if _used(state, "gacha") >= meta["gacha"]:
         raise UsageError("no gacha charge left")
+    lo, hi = meta["gacha_min"], meta["gacha_max"]
     eligible = [nd for nd in tree["nodes"]
                 if nd["id"] != ROOT_ID and nd["id"] not in state["unlocked"]
-                and nd["rarity"] <= meta["gacha_max"]]
+                and lo <= nd["rarity"] <= hi]
     if not eligible:
-        raise UsageError("no locked node with low enough rarity to roll")
+        raise UsageError(f"no locked node in the rarity range "
+                         f"{lo}..{hi} to roll")
     target = random.choice(eligible)
     _unlock(state, target["id"])
     state["meta_used"]["gacha"] = _used(state, "gacha") + 1
     return target
 
 
-def trace(tree, state, field, x, n=TRACE_DEFAULT_N):
-    """Trace routes to the n closest locked nodes whose name/description
-    contains x. Returns a list of (dist, node, [path ids])."""
+def use_lifeline(state, tree, nid):
+    """Unlock a frontier node (adjacent to an unlocked node) for free."""
     meta = derive_meta(tree, state["unlocked"])
-    cap = "trace_name" if field == "name" else "trace_desc"
+    if _used(state, "lifeline") >= meta["lifeline"]:
+        raise UsageError("no lifeline charge left")
+    if nid == ROOT_ID:
+        raise UsageError("the root is free already")
+    if nid in state["unlocked"]:
+        raise UsageError(f"node {nid} is already unlocked")
+    if nid not in _frontier(tree, state["unlocked"]):
+        raise UsageError(f"node {nid} is not adjacent to an unlocked node")
+    _unlock(state, nid)
+    state["meta_used"]["lifeline"] = _used(state, "lifeline") + 1
+
+
+def use_recall(state, tree):
+    """Undo the most recent unlock (lock it and refund core + points)."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "recall") >= meta["recall"]:
+        raise UsageError("no recall charge left")
+    hist = state.get("history", [])
+    if not hist:
+        raise UsageError("no unlocks to undo")
+    nid = hist.pop()
+    if nid not in state["unlocked"]:
+        raise UsageError(f"node {nid} is already locked")
+    state["unlocked"].remove(nid)
+    state["points"] += _node_cost_for(state, tree, nid)
+    state["cores"] += 1
+    state["meta_used"]["recall"] = _used(state, "recall") + 1
+    return nid
+
+
+def use_duplicate(state, tree):
+    """Unlock a random locked node sharing a source with an unlocked node
+    (Generic sources excluded), capped by rarity (single use)."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "duplicate") >= meta["duplicate"]:
+        raise UsageError("no duplicate charge left")
+    sources = {tree["by_id"][u]["source"] for u in state["unlocked"]}
+    sources.discard("Generic")
+    sources.discard("")
+    if not sources:
+        raise UsageError("you own no nodes with a real source to duplicate")
+    src = random.choice(sorted(sources))
+    eligible = [nd for nd in tree["nodes"]
+                if nd["id"] != ROOT_ID and nd["id"] not in state["unlocked"]
+                and nd["source"] == src
+                and nd["rarity"] <= meta["duplicate_max"]]
+    if not eligible:
+        raise UsageError(f"no locked {src} node with rarity <= "
+                         f"{meta['duplicate_max']} to duplicate")
+    target = random.choice(eligible)
+    _unlock(state, target["id"])
+    state["meta_used"]["duplicate"] = _used(state, "duplicate") + 1
+    return target
+
+
+def _shuffle_candidate(tree, state, a):
+    """Pick the node to swap with a: a not-visible locked node of similar
+    rarity (±0.2), else a random visible locked node."""
+    meta = derive_meta(tree, state["unlocked"])
+    vis = set(visible(tree, state["unlocked"], meta))
+    if a not in vis:
+        raise UsageError(f"node {a} is not a visible locked node")
+    ra = tree["by_id"][a]["rarity"]
+    cands = [nd for nd in tree["nodes"]
+             if nd["id"] not in state["unlocked"] and nd["id"] not in vis
+             and abs(nd["rarity"] - ra) <= 0.2]
+    if not cands:
+        cands = [nd for nd in tree["nodes"]
+                 if nd["id"] in vis and nd["id"] != a]
+    if not cands:
+        raise UsageError(f"no node to shuffle with node {a}")
+    return random.choice(cands)["id"]
+
+
+def use_shuffle(state, tree, a):
+    """Single use. Swap node a (a visible locked node) with a random
+    not-visible locked node of similar rarity."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "shuffle") >= meta["shuffle"]:
+        raise UsageError("no shuffle charge left")
+    if a in state["unlocked"]:
+        raise UsageError(f"node {a} is already unlocked")
+    b = _shuffle_candidate(tree, state, a)
+    _swap_nodes(tree, a, b)
+    state["swaps"].append([a, b])
+    state["meta_used"]["shuffle"] = _used(state, "shuffle") + 1
+    return b
+
+
+def use_swap(state, tree, a, b):
+    """Single use. Swap two visible locked nodes of your choice."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "swap") >= meta["swap"]:
+        raise UsageError("no swap charge left")
+    if a == b:
+        raise UsageError("swap needs two different nodes")
+    if a in state["unlocked"] or b in state["unlocked"]:
+        raise UsageError("both nodes must be locked")
+    vis = set(visible(tree, state["unlocked"], meta))
+    if a not in vis or b not in vis:
+        raise UsageError("both nodes must be visible")
+    _swap_nodes(tree, a, b)
+    state["swaps"].append([a, b])
+    state["meta_used"]["swap"] = _used(state, "swap") + 1
+
+
+def use_reshuffle(state, tree, a):
+    """Unlimited Shuffle that costs a quarter of the chosen node's cost."""
+    meta = derive_meta(tree, state["unlocked"])
+    if meta["reshuffle"] <= 0:
+        raise UsageError("you have no reshuffle ability")
+    if a in state["unlocked"]:
+        raise UsageError(f"node {a} is already unlocked")
+    cost = node_cost(tree, a) / 4.0
+    if state["points"] < cost:
+        raise UsageError(f"not enough points: need {fmt(cost)}, "
+                         f"have {fmt(state['points'])}")
+    b = _shuffle_candidate(tree, state, a)
+    state["points"] -= cost
+    _swap_nodes(tree, a, b)
+    state["swaps"].append([a, b])
+    return cost, b
+
+
+def trace(tree, state, field, x, n=TRACE_DEFAULT_N):
+    """Trace routes to the n closest locked nodes whose name/description/
+    source contains x. Returns a list of (dist, node, [path ids])."""
+    meta = derive_meta(tree, state["unlocked"])
+    cap = {"name": "trace_name", "desc": "trace_desc",
+           "source": "compass"}[field]
     if not meta[cap]:
-        raise UsageError(f"you lack the trace-by-{field} ability")
+        verb = {"name": "trace-by-name", "desc": "trace-by-desc",
+                "source": "compass"}[field]
+        raise UsageError(f"you lack the {verb} ability")
     x = x.lower()
     dist, prev = hop_distances(tree, state["unlocked"])
     matches = []
     for nd in tree["nodes"]:
         if nd["id"] == ROOT_ID or nd["id"] in state["unlocked"]:
             continue
-        hay = nd["name"].lower() if field == "name" else nd["description"].lower()
+        if field == "name":
+            hay = nd["name"].lower()
+        elif field == "desc":
+            hay = nd["description"].lower()
+        else:
+            hay = nd["source"].lower()
         if x in hay and nd["id"] in dist:
             near = min((distance3(tree["by_id"][u], nd)
                         for u in state["unlocked"]), default=math.inf)
@@ -633,15 +897,18 @@ def build_parser():
     p.add_argument("state")
     p.add_argument("node", type=int)
 
-    p = add("use", help="use a meta ability (lockrefund/addlink/reveal/gacha)")
+    p = add("use", help="use a meta ability")
     p.add_argument("state")
-    p.add_argument("action", choices=["lockrefund", "addlink", "reveal", "gacha"])
+    p.add_argument("action", choices=["lockrefund", "addlink", "reveal", "gacha",
+                                      "lifeline", "recall", "duplicate",
+                                      "shuffle", "swap", "reshuffle"])
     p.add_argument("args", nargs="*", type=int, help="node ids")
 
     p = add("trace", help="trace routes to closest matching locked nodes")
     p.add_argument("state")
     p.add_argument("--name", help="match a substring in node names")
     p.add_argument("--desc", help="match a substring in descriptions")
+    p.add_argument("--source", help="match a source label (needs Compass)")
     p.add_argument("--n", type=int, default=TRACE_DEFAULT_N,
                    help="number of matches to trace (default 3)")
     return ap
@@ -659,17 +926,25 @@ def main(argv=None):
 
     state = load_state(args.state)
     tree = load_tree(state["tree"])
+    apply_swaps(tree, state)
     apply_added_links(tree, state)
     meta = view_state(tree, state)
 
     if args.cmd == "award":
         bonus_pct = meta["ticket_bonus"]
+        echo_left = meta["echo"] - state.get("echo_used", 0)
         for spec in args.tickets:
-            tier, kind, params = award(state, spec, bonus_pct)
+            use_echo = echo_left > 0
+            tier, kind, params = award(state, spec, bonus_pct, echo=use_echo)
+            if use_echo:
+                echo_left -= 1
             pts = TIER_POINTS.get(tier, 0) * (1.0 + bonus_pct / 100.0)
+            if use_echo:
+                pts *= 2.0
             extra = f" [{kind}]" if kind != "plain" else ""
+            echo_mark = " (echo!)" if use_echo else ""
             print(f"awarded {tier or 'tierless'}{extra}: +1 core, "
-                  f"+{fmt(pts)} pts")
+                  f"+{fmt(pts)} pts{echo_mark}")
     elif args.cmd == "state":
         print(f"tree: {tree['path']}")
         print(f"points: {fmt(state['points'])}   cores: {state['cores']}")
@@ -686,10 +961,27 @@ def main(argv=None):
         if meta["ticket_bonus"]:
             meta_bits.append(f"ticket+{meta['ticket_bonus']}%")
         for key, label in (("lock_refund", "lock-refund"),
-                           ("add_link", "add-link"), ("gacha", "gacha")):
+                           ("add_link", "add-link"), ("gacha", "gacha"),
+                           ("lifeline", "lifeline"), ("recall", "recall"),
+                           ("duplicate", "duplicate"), ("shuffle", "shuffle"),
+                           ("swap", "swap")):
             if meta[key]:
                 left = meta[key] - state["meta_used"].get(key, 0)
                 meta_bits.append(f"{label}x{left}")
+        if meta["reshuffle"]:
+            meta_bits.append("reshuffle")
+        if meta["survey"]:
+            meta_bits.append(f"survey+{meta['survey']}")
+        if meta["compass"]:
+            meta_bits.append("compass")
+        if meta["root_pact"]:
+            meta_bits.append("root-pact")
+        if meta["cat_sight"]:
+            meta_bits.append("cat-sight:" + ",".join(
+                f"{c}+{d}" for c, d in sorted(meta["cat_sight"].items())))
+        echo_left = meta["echo"] - state.get("echo_used", 0)
+        if echo_left > 0:
+            meta_bits.append(f"echo x{echo_left}")
         if meta["reveal_temp"] and state["reveal_temp_until"] <= time.time():
             meta_bits.append("reveal(10s)")
         print("meta: " + (", ".join(meta_bits) if meta_bits else "none"))
@@ -700,9 +992,13 @@ def main(argv=None):
         print("visible:")
         for nid, name, r, f, src, cost in _visible_lines(tree, state["unlocked"], meta):
             print(f"  {nid}. {name} [{f} | {src}] rarity {r} cost {fmt(cost)}")
+        for i, name in survey_names(tree, state["unlocked"], meta):
+            print(f"  surveyed: {i}. {name}")
     elif args.cmd == "visible":
         for nid, name, r, f, src, cost in _visible_lines(tree, state["unlocked"], meta):
             print(f"{nid}. {name} [{f} | {src}] rarity {r} cost {fmt(cost)}")
+        for i, name in survey_names(tree, state["unlocked"], meta):
+            print(f"surveyed: {i}. {name}")
     elif args.cmd == "unlock":
         unlock(state, tree, args.node)
         print(f"unlocked {args.node}. {tree['by_id'][args.node]['name']}")
@@ -748,11 +1044,47 @@ def main(argv=None):
             target = use_gacha(state, tree)
             print(f"rolled {target['id']}. {target['name']} "
                   f"({target['file']}, rarity {target['rarity']})")
+        elif args.action == "lifeline":
+            if len(args.args) != 1:
+                raise UsageError("use lifeline NODE")
+            use_lifeline(state, tree, args.args[0])
+            print(f"free unlocked {args.args[0]}. "
+                  f"{tree['by_id'][args.args[0]]['name']}")
+        elif args.action == "recall":
+            nid = use_recall(state, tree)
+            print(f"locked {nid}. {tree['by_id'][nid]['name']} again "
+                  f"and refunded its core + points")
+        elif args.action == "duplicate":
+            target = use_duplicate(state, tree)
+            print(f"duplicated {target['id']}. {target['name']} "
+                  f"({target['source']}, rarity {target['rarity']})")
+        elif args.action == "shuffle":
+            if len(args.args) != 1:
+                raise UsageError("use shuffle NODE")
+            b = use_shuffle(state, tree, args.args[0])
+            print(f"shuffled {args.args[0]} with {b}. "
+                  f"{tree['by_id'][b]['name']}")
+        elif args.action == "swap":
+            if len(args.args) != 2:
+                raise UsageError("use swap A B")
+            use_swap(state, tree, args.args[0], args.args[1])
+            print(f"swapped {args.args[0]} -- {args.args[1]}")
+        elif args.action == "reshuffle":
+            if len(args.args) != 1:
+                raise UsageError("use reshuffle NODE")
+            cost, b = use_reshuffle(state, tree, args.args[0])
+            print(f"reshuffled {args.args[0]} with {b} "
+                  f"for {fmt(cost)} pts")
     elif args.cmd == "trace":
-        if args.name is None and args.desc is None:
-            raise UsageError("trace needs --name X or --desc X")
-        field = "name" if args.name is not None else "desc"
-        x = args.name if args.name is not None else args.desc
+        if args.source is None:
+            if args.name is None and args.desc is None:
+                raise UsageError("trace needs --name X, --desc X or --source X")
+            field = "name" if args.name is not None else "desc"
+            x = args.name if args.name is not None else args.desc
+        else:
+            if args.name is not None or args.desc is not None:
+                raise UsageError("give only one of --name/--desc/--source")
+            field, x = "source", args.source
         for d, nd, path in trace(tree, state, field, x, args.n):
             route = " -> ".join(
                 f"{p}.{tree['by_id'][p]['name']}" for p in path)

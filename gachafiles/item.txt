@@ -1704,3 +1704,17 @@
 #(Tree)(Meta:add-link:3) Three uses. Add a connection between two close, unconnected nodes.
 853. Chaos Die, 6.5, Generic
 #(Tree)(Meta:gacha:5) Single use. Roll to unlock a random locked node with rarity 5 or below for free.
+854. Greater Wild Roll, 7.0, Generic
+#(Tree)(Meta:gacha:5-7) Single use. Roll to unlock a random locked node with rarity between 5 and 7 for free.
+855. Duplicate, 6.0, Generic
+#(Tree)(Meta:duplicate:5) Single use. Unlock a random locked node that shares a source with one of your unlocked nodes (source not Generic), with rarity 5 or below.
+856. Lifeline, 3.0, Generic
+#(Tree)(Meta:lifeline) Single use. Unlock any node adjacent to an unlocked node for free.
+857. Recall, 3.5, Generic
+#(Tree)(Meta:recall) Single use. Undo your most recent unlock: the node is locked again and its core and points refunded.
+858. Shuffle, 4.0, Generic
+#(Tree)(Meta:shuffle) Single use. Exchange the location and connections of a visible locked node with a random not-visible locked node of similar rarity (±0.2). If no not-visible candidate exists, a visible one is chosen.
+859. Swap, 5.0, Generic
+#(Tree)(Meta:swap) Single use. Exchange the location and connections of two visible locked nodes of your choice.
+860. Reshuffle, 5.5, Generic
+#(Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.

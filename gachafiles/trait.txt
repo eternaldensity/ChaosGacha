@@ -1272,3 +1272,5 @@
 #(Tree)(Meta:ticket-bonus:30) Every ticket you are awarded grants 30% extra points. Stacks additively with other Prosperity traits.
 636. Prosperity +40%, 5.0, Generic
 #(Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.
+637. Root Pact, 4.0, Generic
+#(Tree)(Meta:root-pact) Nodes directly connected to the Origin root unlock at half points cost.
