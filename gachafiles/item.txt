@@ -1932,3 +1932,5 @@
 #A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen.
 967. Junimo Hut, 3.8, Stardew Valley
 #A hut housing Junimos who emerge each morning to harvest your crops for you.
+968. SHIELD Flying Car, 4.0, Marvel
+#Coulson's cherry-red 1962 Corvette convertible with VTOL flight, machine guns, and flamethrowers. She has a name, and it is Lola.
