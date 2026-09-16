@@ -436,7 +436,25 @@
   const cam = { yaw: 0.6, pitch: 0.35, dist: 3.2, zoom: 1 };
   const canvas = $("view3d");
   const ctx = canvas.getContext("2d");
-  let projected = []; // [{id,x,y,r,node,vis}]
+  let projected = []; // [{id,x,y,r,name,hex}]
+  // A locked node is unlockable right now when it sits on the frontier
+  // (normal unlocks are adjacency-only) and the wallet covers it.
+  // Pass a precomputed frontier set when checking many nodes per frame.
+  function canUnlockNow(st, rt, nid, front) {
+    if (nid === 0 || st.unlocked.includes(nid)) return false;
+    if (!(front || E.frontier(rt, st.unlocked)).has(nid)) return false;
+    if ((st.cores || 0) < 1) return false;
+    return st.points >= E.nodeCostFor(st, rt, nid);
+  }
+  function hexPath(c, x, y, r) {
+    c.beginPath();
+    for (let i = 0; i < 6; i++) {
+      const a = -Math.PI / 2 + (Math.PI / 3) * i;
+      const px = x + r * Math.cos(a), py = y + r * Math.sin(a);
+      if (i) c.lineTo(px, py); else c.moveTo(px, py);
+    }
+    c.closePath();
+  }
   let lastFitKey = "";
   // Frame the shown nodes: with only the root + one neighbour unlocked the
   // sphere is mostly empty, so magnify (zoom) in; as the tree fills out,
@@ -573,19 +591,23 @@
     items.sort((a, b) => a.s - b.s);
     projected = [];
     const dotScale = Math.min(cam.zoom, 3.5);
+    const front = E.frontier(d.rt, d.st.unlocked);
     for (const it of items) {
       const unlocked = d.unl.has(it.nd.id);
       const col = classColor(it.nd.rarity);
       const rad = Math.max(2, Math.min(10, (unlocked ? 3.4 : 2.6) + it.nd.rarity * 0.55)) * dotScale * (window.devicePixelRatio || 1) / 1.5;
+      const hex = !unlocked && canUnlockNow(d.st, d.rt, it.nd.id, front);
       ctx.beginPath();
-      ctx.arc(it.x, it.y, rad, 0, Math.PI * 2);
+      if (hex) hexPath(ctx, it.x, it.y, rad);
+      else ctx.arc(it.x, it.y, rad, 0, Math.PI * 2);
       if (unlocked) { ctx.fillStyle = col; ctx.fill(); }
       else { ctx.globalAlpha = 0.55; ctx.fillStyle = "#20242e"; ctx.fill(); ctx.strokeStyle = col; ctx.stroke(); ctx.globalAlpha = 1; }
       if (it.nd.id === selectedId) {
-        ctx.beginPath(); ctx.arc(it.x, it.y, rad + 4, 0, Math.PI * 2);
+        if (hex) hexPath(ctx, it.x, it.y, rad + 4);
+        else { ctx.beginPath(); ctx.arc(it.x, it.y, rad + 4, 0, Math.PI * 2); }
         ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.stroke(); ctx.lineWidth = 1;
       }
-      projected.push({ id: it.nd.id, x: it.x, y: it.y, r: rad + 8, name: `#${it.nd.id} ${it.nd.name} · ${it.nd.rarity}` });
+      projected.push({ id: it.nd.id, x: it.x, y: it.y, r: rad + 8, name: `#${it.nd.id} ${it.nd.name} · ${it.nd.rarity}`, hex });
     }
     if (selectedId != null && d.rt.byId[selectedId]) {
       const nd = d.rt.byId[selectedId];
@@ -736,13 +758,25 @@
     const nbs = [...(c.rt.adj[nd.id] || [])]
       .filter(b => unlSet.has(b) || vis.has(b))
       .sort((a, b) => a - b);
-    function circle(x, y, r, fill, stroke, id, label) {
+    function circle(x, y, r, fill, stroke, id, label, hex) {
       const g = document.createElementNS(NS, "g");
       g.style.cursor = "pointer";
-      const ci = document.createElementNS(NS, "circle");
-      ci.setAttribute("cx", x); ci.setAttribute("cy", y); ci.setAttribute("r", r);
-      ci.setAttribute("fill", fill); ci.setAttribute("stroke", stroke || "#333947");
-      g.appendChild(ci);
+      if (hex) {
+        const pts = [];
+        for (let i = 0; i < 6; i++) {
+          const a = -Math.PI / 2 + (Math.PI / 3) * i;
+          pts.push((x + r * Math.cos(a)).toFixed(1) + "," + (y + r * Math.sin(a)).toFixed(1));
+        }
+        const pg = document.createElementNS(NS, "polygon");
+        pg.setAttribute("points", pts.join(" "));
+        pg.setAttribute("fill", fill); pg.setAttribute("stroke", stroke || "#333947");
+        g.appendChild(pg);
+      } else {
+        const ci = document.createElementNS(NS, "circle");
+        ci.setAttribute("cx", x); ci.setAttribute("cy", y); ci.setAttribute("r", r);
+        ci.setAttribute("fill", fill); ci.setAttribute("stroke", stroke || "#333947");
+        g.appendChild(ci);
+      }
       const t = document.createElementNS(NS, "text");
       t.setAttribute("x", x); t.setAttribute("y", y + r + 13);
       t.setAttribute("text-anchor", "middle");
@@ -761,14 +795,16 @@
       l.setAttribute("stroke", "#333947");
       svg.appendChild(l);
     }
-    circle(cx, cyy, 26, classColor(nd.rarity), "#fff", nd.id, shortName(nd.name));
+    circle(cx, cyy, 26, classColor(nd.rarity), "#fff", nd.id, shortName(nd.name),
+      !unl && canUnlockNow(c.st, c.rt, nd.id));
     nbs.forEach((b, i) => {
       const a = (2 * Math.PI * i) / Math.max(1, nbs.length) - Math.PI / 2;
       const x = cx + R0 * Math.cos(a), y = cyy + R0 * Math.sin(a);
       const bnd = c.rt.byId[b];
       const isUnl = c.st.unlocked.includes(b);
       const bcol = classColor(bnd.rarity);
-      circle(x, y, 15, isUnl ? bcol : "#20242e", bcol, b, shortName(bnd.name));
+      circle(x, y, 15, isUnl ? bcol : "#20242e", bcol, b, shortName(bnd.name),
+        !isUnl && canUnlockNow(c.st, c.rt, b));
     });
     const legend = document.createElementNS(NS, "text");
     legend.setAttribute("x", 8); legend.setAttribute("y", 292);
@@ -1158,7 +1194,7 @@
     .sort((a, b) => a.localeCompare(b)).map(s => `<option value="${esc(s)}">`).join("");
   $("classLegend").innerHTML = (DATA.classes || [])
     .map(c => `<span class="pill" style="margin:2px" title="rarity &lt; ${c.max}"><span class="dot" style="background:${esc(c.color)}"></span>${esc(c.name)}</span>`)
-    .join(" ");
+    .join(" ") + ` <span class="pill" style="margin:2px" title="Locked, on the frontier, and covered by your wallet">⬡ unlockable now</span>`;
   $("ownCat").innerHTML = `<option value="">All</option>` +
     E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });
