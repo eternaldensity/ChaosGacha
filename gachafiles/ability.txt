@@ -2902,3 +2902,7 @@
 #Weave lifelike illusions, duplicates, and shapeshifts the way Loki does: constantly and without permission.
 1455. Rune Magic, 4.8, MCU
 #Inscribe witch runes that steal any spell cast inside them and turn rival magic against its caster.
+1456. Rail Laying, 3.6, Generic
+#Lay finished railway track behind you as you walk, sleepers ballast and all, on any terrain that holds still.
+1457. Rail Gauge Setting, 3.2, Generic
+#Telekinetically true up any visible rails to a perfect gauge of your choosing, down to the millimetre.

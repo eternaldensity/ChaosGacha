@@ -654,3 +654,9 @@
 #Kamar-Taj training in spellcraft, relics, and dimensional etiquette, from mandalas to the Mirror Dimension.
 328. Train Hopping, 2.2, Divergent
 #Board and ride moving trains Dauntless-style: sprint, grab, swing up, and do not look down.
+329. Model Railroad Building, 1.6, Generic
+#Design and build detailed model railroads, from benchwork and wiring to weathered tiny trees.
+330. Train Driving, 2.4, Generic
+#Operate locomotives properly: signals, timetables, braking curves, and all.
+331. Railway Engineering, 3.0, Generic
+#Survey grades, lay out yards, and engineer full-size railways that stay up and on time.
