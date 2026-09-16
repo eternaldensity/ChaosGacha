@@ -6,7 +6,7 @@ import os
 import re
 import webbrowser
 import subprocess
-pgmode = 0
+pgmode = 1
 classicfamiliar = 0
 scifi = 0
 
@@ -295,7 +295,7 @@ def open_settings():
     font_menu.place(x=138, y=100, in_=settings_window, anchor="center")
     font_menu.configure(pady=10, padx=30, background='#1f1f1f', activebackground='#1f1f1f', foreground='white', activeforeground='white')
     font_selection.trace_add("write", update_font)
-    pg_button = Button(settings_window, text='PG Mode: Off', width=24, command=lambda: togglefilter("pgmode"), font=(selectedfont, 12), background='#111', fg='#FFF')
+    pg_button = Button(settings_window, text='PG Mode: On', width=24, command=lambda: togglefilter("pgmode"), font=(selectedfont, 12), background='#111', fg='#FFF')
     pg_button.place(x=138, y=160, in_=settings_window, anchor="center")
     familiar_button = Button(settings_window, text='Classic Familiars: Off', width=24, command=lambda: togglefilter("classicfamiliar"), font=(selectedfont, 12), background='#111', fg='#FFF')
     familiar_button.place(x=138, y=200, in_=settings_window, anchor="center")

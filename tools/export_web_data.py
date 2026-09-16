@@ -82,18 +82,21 @@ def flag_map():
 
 
 def main():
-    entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True)
+    entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True, True)
     flags = flag_map()
     # Data version: hash over topology/behaviour-relevant fields (file,
-    # number, rarity, source, tag, meta tokens). Display text (names,
-    # descriptions) is excluded so prose edits don't invalidate trees.
-    # Trees record the version they were generated with; a mismatch warns
-    # that regeneration may produce a different tree.
+    # number, rarity, source, tag, meta tokens, nsfw/tech flags). Display
+    # text (names, descriptions) is excluded so prose edits don't
+    # invalidate trees. Trees record the version they were generated with;
+    # a mismatch warns that regeneration may produce a different tree.
     h = hashlib.sha256()
     for e in entries:
+        toks = flags.get((e["file"], e["number"]), set())
         h.update(("\x1f".join([e["file"], str(e["number"]), repr(e["rarity"]),
                                e["source"] or "", e["tag"],
-                               ",".join(e.get("meta", []))]) + "\n").encode("utf-8"))
+                               ",".join(e.get("meta", [])),
+                               "nsfw" if "Nsfw" in toks else "",
+                               "tech" if "Tech" in toks else ""]) + "\n").encode("utf-8"))
     data_version = h.hexdigest()[:10]
     compact = []
     for e in entries:

@@ -30,6 +30,11 @@
   // category is still shown as text everywhere.
   const classColor = r => classOf(r).color;
 
+  // Display preference: NSFW nodes are hidden everywhere unless opted in.
+  // (Generation excludes them by default separately, via filters.includeNsfw.)
+  function showNsfw() { return !!(DB.settings && DB.settings.showNsfw); }
+  function visNode(nd) { return !nd || showNsfw() || !nd.nsfw; }
+
   // ---- storage ---------------------------------------------------------
   function loadDB() {
     try {
@@ -37,10 +42,11 @@
       if (raw) {
         const db = JSON.parse(raw);
         db.trees = db.trees || []; db.states = db.states || {};
+        db.settings = db.settings || {};
         return db;
       }
     } catch (e) { /* corrupted -> fresh */ }
-    return { trees: [], states: {}, activeId: null, guideSeen: false };
+    return { trees: [], states: {}, activeId: null, guideSeen: false, settings: {} };
   }
   function saveDB() {
     try { localStorage.setItem(LS_KEY, JSON.stringify(DB)); }
@@ -272,14 +278,15 @@
         degreeMax: $("newDegMax").value === "" ? null : Math.max(1, parseInt($("newDegMax").value, 10)),
         linkFalloff: num("newFalloff", 2.0),
         maxLinkDistance: num("newMaxDist", 0.6),
-        connect: $("newConnect").checked
+        connect: !!$("newConnect").checked
       },
       filters: {
         files,
         rarityMin: $("newRmin").value === "" ? null : num("newRmin", null),
         rarityMax: $("newRmax").value === "" ? null : num("newRmax", null),
         sources: srcs,
-        includeGachaOnly: $("newGachaOnly").checked
+        includeGachaOnly: !!$("newGachaOnly").checked,
+        includeNsfw: !!$("newNsfw").checked
       }
     };
   }
@@ -598,6 +605,7 @@
     ctx.strokeStyle = "rgba(140,150,175,0.28)";
     ctx.beginPath();
     for (const nd of d.rt.nodes) {
+      if (!visNode(nd)) continue;
       if (!d.vis.has(nd.id) && !d.unl.has(nd.id)) continue;
       for (const b of (d.rt.adj[nd.id] || [])) {
         if (b < nd.id) continue;
@@ -611,6 +619,7 @@
     // nodes, far first
     const items = [];
     for (const nd of d.rt.nodes) {
+      if (!visNode(nd)) continue;
       if (!d.vis.has(nd.id) && !d.unl.has(nd.id)) continue;
       const [x, y, s] = project(nd.pos);
       items.push({ nd, x: cx + x * base, y: cy - y * base, s });
@@ -746,7 +755,7 @@
       return;
     }
     const hits = c.rt.nodes
-      .filter(nd => nd.id !== 0 && nd.name.toLowerCase().includes(q))
+      .filter(nd => nd.id !== 0 && visNode(nd) && nd.name.toLowerCase().includes(q))
       .sort((a, b) => a.name.localeCompare(b.name))
       .slice(0, 15);
     if (!hits.length) {
@@ -832,7 +841,7 @@
     const unlSet = new Set(c.st.unlocked);
     const vis = new Set(E.visible(c.rt, c.st.unlocked, meta));
     const nbs = [...(c.rt.adj[nd.id] || [])]
-      .filter(b => unlSet.has(b) || vis.has(b))
+      .filter(b => (unlSet.has(b) || vis.has(b)) && visNode(c.rt.byId[b]))
       .sort((a, b) => a - b);
     function circle(x, y, r, fill, stroke, id, label, hex) {
       const g = document.createElementNS(NS, "g");
@@ -906,7 +915,7 @@
     const pos = new Map((st.history || []).map((id, i) => [id, i]));
     return st.unlocked.map(id => ({
       id, nd: rt.byId[id], order: pos.has(id) ? pos.get(id) : -1
-    })).filter(r => r.nd);
+    })).filter(r => r.nd && visNode(r.nd));
   }
   async function renderOwned() {
     const head = $("ownedHead"), body = $("ownedBody");
@@ -988,7 +997,7 @@
     return s;
   }
   function nodeOptions(ids, rt, extra) {
-    return ids.map(id => {
+    return ids.filter(id => visNode(rt.byId[id])).map(id => {
       const nd = rt.byId[id];
       return `<option value="${id}">#${id} ${esc(nd.name)} (${nd.file}, ${nd.rarity}${extra ? ", " + extra(nd) : ""})</option>`;
     }).join("");
@@ -1196,7 +1205,8 @@
     const box = $("unlockList");
     box.innerHTML = "";
     const { st, rt } = c;
-    const ids = [...E.frontier(rt, st.unlocked)].filter(id => id !== 0);
+    const ids = [...E.frontier(rt, st.unlocked)]
+      .filter(id => id !== 0 && visNode(rt.byId[id]));
     ids.sort((a, b) => E.nodeCostFor(st, rt, a) - E.nodeCostFor(st, rt, b));
     if (!ids.length) {
       box.innerHTML = "<li class='muted'>Nothing on the frontier — reach further with tickets.</li>";
@@ -1228,7 +1238,8 @@
       box.appendChild(li);
     }
   }
-    const surveyed = E.surveyNames(rt, st.unlocked, m);
+    const surveyed = E.surveyNames(rt, st.unlocked, m)
+      .filter(([i]) => visNode(rt.byId[i]));
     if (surveyed.length) {
       const d = document.createElement("details");
       const s = document.createElement("summary");
@@ -1283,7 +1294,7 @@
     ul.innerHTML = "";
     if (!q) return toast("Type something to trace.", true);
     try {
-      const res = E.trace(c.rt, c.st, field, q, 5);
+      const res = E.trace(c.rt, c.st, field, q, 5).filter(r => visNode(r.node));
       if (!res.length) ul.innerHTML = "<li class='muted'>No matches.</li>";
       for (const r of res) {
         const li = document.createElement("li");
@@ -1301,6 +1312,12 @@
 
   // ---- boot ---------------------------------------------------------------
   fillTicketForm();
+  $("showNsfw").checked = showNsfw();
+  $("showNsfw").addEventListener("change", () => {
+    DB.settings.showNsfw = $("showNsfw").checked;
+    saveDB();
+    refreshAll();
+  });
   if (!DB.guideSeen) $("guideCard").style.display = "block";
   $("btnGuideOk").addEventListener("click", () => {
     DB.guideSeen = true;

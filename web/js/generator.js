@@ -46,6 +46,7 @@ window.ChaosGen = (function () {
     return entries.filter(e =>
       files.includes(e.f) &&
       (e.t !== "gacha" || opts.includeGachaOnly) &&
+      (opts.includeNsfw || !e.nsfw) &&
       (opts.rarityMin == null || e.r >= opts.rarityMin) &&
       (opts.rarityMax == null || e.r <= opts.rarityMax) &&
       (!opts.sources || !opts.sources.length || opts.sources.includes(e.s)));
@@ -90,7 +91,9 @@ window.ChaosGen = (function () {
       nodes.push({
         id: idx, file: item.f, number: item.n, name: item.name,
         rarity: item.r, source: item.s, tag: item.t, description: item.d,
-        meta: (item.m || []).slice(), pos,
+        meta: (item.m || []).slice(),
+        ...(item.nsfw ? { nsfw: true } : {}),
+        pos,
         r: Math.round(radial * 1e6) / 1e6
       });
       if (onStep && idx % 500 === 0) {
