@@ -37,7 +37,7 @@ slotless grants, slot-bypass pricing).
   rez-block permanent?
 - **[267. Black Hole](entries/ability.md#267-black-hole) — 5.0 Epic (Generic)**: trainable REAL black holes — size/lifetime cap, or
   virtual-only?
-- **[320. Genesis](entries/ability.md#320-genesis) — 7.7 Mythical (EBF)**: country-erasing, no Unholy survives + allies healed.
+- **[320. Genesis](entries/ability.md#320-genesis) — 7.7 Mythical (Epic Battle Fantasy)**: country-erasing, no Unholy survives + allies healed.
   Who counts Unholy? Rank/resistance? Collateral/consent?
 - **[390. Reality Slash](entries/ability.md#390-reality-slash) — 5.7 Epic (Generic) / [392. Stillness](entries/ability.md#392-stillness) — 6.8 Legendary (Re:Zero) / [456. Vector Manipulation](entries/ability.md#456-vector-manipulation) — 8.8 Divine (Toaru) /
   [458. Lockdown](entries/ability.md#458-lockdown) — 6.0 Legendary (Generic) / [462. Absolute Gateway](entries/ability.md#462-absolute-gateway) — 6.0 Legendary (Generic) / [465. Adamantine Skin](entries/ability.md#465-adamantine-skin) — 6.8 Legendary (Generic) / 481. Full
@@ -71,7 +71,7 @@ slotless grants, slot-bypass pricing).
 
 - **69 (+68/66/67) Hydrokinesis / [193. Ferrokinesis](entries/ability.md#193-ferrokinesis) — 4.9 Elite (Generic) (blood) / 162. Stun
   Shock (open puppetry) / [239. Shadow Puppeteer](entries/ability.md#239-shadow-puppeteer) — 3.7 Rare (Naruto) / [303. Confessor's Light](entries/ability.md#303-confessors-light) — 3.3 Rare (Generic)
-  (forced truth) / [238. Sethan](entries/ability.md#238-sethan) — 4.6 Elite (Sethan from JoJo) (forced de-aging) / [338. Bone Manipulation](entries/ability.md#338-bone-manipulation) — 4.8 Elite (Worm)
+  (forced truth) / [238. Sethan](entries/ability.md#238-sethan) — 4.6 Elite (JoJo) (forced de-aging) / [338. Bone Manipulation](entries/ability.md#338-bone-manipulation) — 4.8 Elite (Worm)
   (others' skeletons) / [424. Metallica](entries/ability.md#424-metallica) — 4.8 Elite (Generic) (no resist clause — add 378/379's
   strength rule) / [429. Fabric Manipulation](entries/ability.md#429-fabric-manipulation) — 4.2 Elite (MHA) (forced restraint/undress) /
   435. Enchantment Eyes / 438. Death Perception (absolute no-save kill —

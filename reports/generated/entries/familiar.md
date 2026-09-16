@@ -1,16 +1,16 @@
 # familiar — Entry Reference
 
-460 entries. Sorted by rarity, then number.
+518 entries. Sorted by rarity, then number.
 
 | Tier | Count |
 |---|---|
 | Trash | 21 |
-| Common | 49 |
-| Uncommon | 62 |
-| Rare | 81 |
-| Elite | 93 |
-| Epic | 59 |
-| Legendary | 47 |
+| Common | 57 |
+| Uncommon | 81 |
+| Rare | 93 |
+| Elite | 106 |
+| Epic | 64 |
+| Legendary | 48 |
 | Mythical | 23 |
 | Divine | 13 |
 | Transcendent | 12 |
@@ -43,7 +43,7 @@
 | 231 | [Pepsi Man](#231-pepsi-man) | 0.9 | Pepsi |
 | 371 | [Evil and Intimidating Horse](#371-evil-and-intimidating-horse) | 0.9 | Generic |
 
-### Common (49)
+### Common (57)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -54,12 +54,15 @@
 | 318 | [B-1 Battle Droid](#318-b-1-battle-droid) | 1.0 | Star Wars |
 | 375 | [Yellow Chocobo](#375-yellow-chocobo) | 1.0 | Final Fantasy |
 | 394 | [Nick O' Teen](#394-nick-o-teen) | 1.0 | DC |
+| 462 | [Chikipi](#462-chikipi) | 1.0 | Palworld |
 | 379 | [The Doll](#379-the-doll) | 1.1 | Bloodborne |
 | 64 | [Lion](#64-lion) | 1.2 | Generic |
 | 70 | [Goblin](#70-goblin) | 1.2 | Generic |
 | 206 | [Herbie](#206-herbie) | 1.2 | The Love Bug |
 | 265 | [Remy](#265-remy) | 1.2 | Ratatouille |
 | 416 | [Litiggator](#416-litiggator) | 1.2 | Generic |
+| 461 | [Lamball](#461-lamball) | 1.2 | Palworld |
+| 477 | [Pink Slime](#477-pink-slime) | 1.2 | Slime Rancher |
 | 65 | [Tiger](#65-tiger) | 1.3 | Generic |
 | 260 | [Chauffeur](#260-chauffeur) | 1.3 | Generic |
 | 333 | [Tentacle Cleaner](#333-tentacle-cleaner) | 1.3 | Generic |
@@ -70,6 +73,8 @@
 | 417 | [Naviggator](#417-naviggator) | 1.4 | Generic |
 | 421 | [Patrasche](#421-patrasche) | 1.4 | Re:Zero |
 | 433 | [Arvak](#433-arvak) | 1.4 | Skyrim |
+| 489 | [Barn Cat](#489-barn-cat) | 1.4 | Dwarf Fortress |
+| 507 | [Beaver](#507-beaver) | 1.4 | Timberborn |
 | 72 | [Dire Wolf](#72-dire-wolf) | 1.5 | Generic |
 | 182 | [Wooloo](#182-wooloo) | 1.5 | Pokemon |
 | 243 | [Chicken](#243-chicken) | 1.5 | Minecraft |
@@ -81,6 +86,8 @@
 | 244 | [Golden Goose](#244-golden-goose) | 1.6 | Generic |
 | 275 | [THWOMP](#275-thwomp) | 1.6 | Mario |
 | 418 | [Carpenter Ants](#418-carpenter-ants) | 1.6 | Generic |
+| 493 | [Chirpy](#493-chirpy) | 1.6 | Cities Skylines |
+| 517 | [Chumtoad](#517-chumtoad) | 1.6 | Half-Life |
 | 11 | [Moonless](#11-moonless) | 1.7 | Fear and Hunger |
 | 84 | [Schrodinger's cat](#84-schrodingers-cat) | 1.7 | Generic |
 | 192 | [Dogmeat](#192-dogmeat) | 1.7 | Fallout |
@@ -93,11 +100,12 @@
 | 315 | [Connor](#315-connor) | 1.8 | Detroit Become Human |
 | 319 | [B-2 Battle Droids](#319-b-2-battle-droids) | 1.8 | Star Wars |
 | 370 | [Junimo](#370-junimo) | 1.8 | Stardew Valley |
+| 478 | [Tabby Slime](#478-tabby-slime) | 1.8 | Slime Rancher |
 | 305 | [Alcremie](#305-alcremie) | 1.9 | Pokemon |
 | 382 | [Miriel the Pastor of Vows](#382-miriel-the-pastor-of-vows) | 1.9 | Elden Ring |
 | 383 | [Bucky](#383-bucky) | 1.9 | Chainsaw Man |
 
-### Uncommon (62)
+### Uncommon (81)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -106,12 +114,20 @@
 | 201 | [Stray Cat](#201-stray-cat) | 2.0 | JoJo |
 | 245 | [Untitled Goose](#245-untitled-goose) | 2.0 | Untitled Goose Game |
 | 390 | [Puss](#390-puss) | 2.0 | Puss in Boots |
+| 465 | [Pengullet](#465-pengullet) | 2.0 | Palworld |
+| 504 | [Duplicant](#504-duplicant) | 2.0 | Oxygen Not Included |
+| 516 | [Snark](#516-snark) | 2.0 | Half-Life |
 | 50 | [Obsidian Gargoyles](#50-obsidian-gargoyles) | 2.1 | Hota |
 | 73 | [Hellhound](#73-hellhound) | 2.1 | Generic |
 | 87 | [Wraith](#87-wraith) | 2.1 | Generic |
 | 367 | [Gathering Swarm](#367-gathering-swarm) | 2.1 | Hollow Knight |
 | 28 | [Capra Demons](#28-capra-demons) | 2.2 | Dark Souls |
 | 373 | [Beowolf Pack](#373-beowolf-pack) | 2.2 | RWBY |
+| 463 | [Lifmunk](#463-lifmunk) | 2.2 | Palworld |
+| 466 | [Tocotoco](#466-tocotoco) | 2.2 | Palworld |
+| 479 | [Phosphor Slime](#479-phosphor-slime) | 2.2 | Slime Rancher |
+| 488 | [War Dog](#488-war-dog) | 2.2 | Dwarf Fortress |
+| 502 | [Little Scout](#502-little-scout) | 2.2 | Outer Wilds |
 | 71 | [Wyvern](#71-wyvern) | 2.3 | Generic |
 | 97 | [Divine Dogs](#97-divine-dogs) | 2.3 | Jujutsu Kaisen |
 | 185 | [Potato GLaDOS](#185-potato-glados) | 2.3 | Portal |
@@ -122,6 +138,10 @@
 | 101 | [Max Elephant](#101-max-elephant) | 2.4 | Jujutsu Kaisen |
 | 178 | [Darkbeast Paarl](#178-darkbeast-paarl) | 2.4 | Bloodborne |
 | 381 | [Royal Sentinels](#381-royal-sentinels) | 2.4 | Dark Souls |
+| 464 | [Foxparks](#464-foxparks) | 2.4 | Palworld |
+| 481 | [Honey Slime](#481-honey-slime) | 2.4 | Slime Rancher |
+| 492 | [Lizard Doggo](#492-lizard-doggo) | 2.4 | Satisfactory |
+| 514 | [Lamarr](#514-lamarr) | 2.4 | Half-Life |
 | 32 | [Charizard](#32-charizard) | 2.5 | Pokemon |
 | 96 | [Slime](#96-slime) | 2.5 | Generic |
 | 151 | [King Nothing](#151-king-nothing) | 2.5 | JoJo |
@@ -140,10 +160,13 @@
 | 412 | [Investigator](#412-investigator) | 2.6 | Generic |
 | 448 | [Goss Harag](#448-goss-harag) | 2.6 | Monster Hunter |
 | 457 | [Investiggator](#457-investiggator) | 2.6 | Generic |
+| 467 | [Tanzee](#467-tanzee) | 2.6 | Palworld |
+| 482 | [Puddle Slime](#482-puddle-slime) | 2.6 | Slime Rancher |
+| 505 | [Tamed Wolf](#505-tamed-wolf) | 2.6 | Valheim |
 | 33 | [Aerodactyl](#33-aerodactyl) | 2.7 | Pokemon |
 | 86 | [Poltergeist](#86-poltergeist) | 2.7 | Generic |
 | 113 | [Mr. Sir Ceo](#113-mr-sir-ceo) | 2.7 | Generic |
-| 194 | [Toaster](#194-toaster) | 2.7 | Fallout: Old World Blues |
+| 194 | [Toaster](#194-toaster) | 2.7 | Fallout New Vegas |
 | 197 | [Cancer](#197-cancer) | 2.7 | Fairy Tail |
 | 351 | [Bell Gargoyles](#351-bell-gargoyles) | 2.7 | Dark Souls |
 | 386 | [Swordsmachine](#386-swordsmachine) | 2.7 | Ultrakill |
@@ -158,13 +181,17 @@
 | 213 | [Jigglypuff](#213-jigglypuff) | 2.8 | Pokemon |
 | 277 | [Renamon](#277-renamon) | 2.8 | Digimon |
 | 455 | [Common Blade Core](#455-common-blade-core) | 2.8 | Xenoblade |
+| 468 | [Leezpunk](#468-leezpunk) | 2.8 | Palworld |
+| 473 | [Strider](#473-strider) | 2.8 | Horizon Zero Dawn |
+| 491 | [Cuddlefish](#491-cuddlefish) | 2.8 | Subnautica |
+| 513 | [Thomas the Tank Engine](#513-thomas-the-tank-engine) | 2.8 | Thomas & Friends |
 | 160 | [Rachnera Arachnera](#160-rachnera-arachnera) | 2.9 | Monster Musume |
 | 161 | [Doppel](#161-doppel) | 2.9 | Monster Musume |
 | 309 | [D'vorah](#309-dvorah) | 2.9 | Mortal Kombat |
 | 317 | [Magnaguard](#317-magnaguard) | 2.9 | Star Wars |
 | 452 | [Canyne Pack](#452-canyne-pack) | 2.9 | Monster Hunter |
 
-### Rare (81)
+### Rare (93)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -176,6 +203,9 @@
 | 353 | [Ravenous Crystal Lizard](#353-ravenous-crystal-lizard) | 3.0 | Dark Souls |
 | 378 | [Dragonslayer Armor](#378-dragonslayer-armor) | 3.0 | Dark Souls |
 | 406 | [Nosferatu Zod](#406-nosferatu-zod) | 3.0 | Berserk |
+| 474 | [Broadhead](#474-broadhead) | 3.0 | Horizon Zero Dawn |
+| 480 | [Hunter Slime](#480-hunter-slime) | 3.0 | Slime Rancher |
+| 506 | [Molly](#506-molly) | 3.0 | Deep Rock Galactic |
 | 29 | [Taurus Demons](#29-taurus-demons) | 3.1 | Dark Souls |
 | 79 | [Cavern Elemental](#79-cavern-elemental) | 3.1 | Calamity Mod |
 | 143 | [Tali](#143-tali) | 3.1 | Mass Effect |
@@ -191,6 +221,9 @@
 | 121 | [Senko](#121-senko) | 3.2 | Sewayaki Kitsune Senko-san |
 | 395 | [The Fallen Aces](#395-the-fallen-aces) | 3.2 | Fallen Aces |
 | 428 | [Krombopulous Michael](#428-krombopulous-michael) | 3.2 | Rick and Morty |
+| 490 | [Grizzly Bear](#490-grizzly-bear) | 3.2 | Dwarf Fortress |
+| 496 | [Peska the Troll](#496-peska-the-troll) | 3.2 | Q-UP |
+| 510 | [Miss Minutes](#510-miss-minutes) | 3.2 | MCU |
 | 78 | [Storm Elemental](#78-storm-elemental) | 3.3 | Calamity Mod |
 | 352 | [Black Knights](#352-black-knights) | 3.3 | Dark Souls |
 | 422 | [Gacha Man](#422-gacha-man) | 3.3 | Generic |
@@ -200,6 +233,10 @@
 | 216 | [Bad Company](#216-bad-company) | 3.4 | JoJo |
 | 302 | [Lucario](#302-lucario) | 3.4 | Pokemon |
 | 321 | [IG-88](#321-ig-88) | 3.4 | Star Wars |
+| 469 | [Lunaris](#469-lunaris) | 3.4 | Palworld |
+| 497 | [HyperQbe the Streamer](#497-hyperqbe-the-streamer) | 3.4 | Q-UP |
+| 508 | [Golem](#508-golem) | 3.4 | Timberborn |
+| 512 | [The Last Stag](#512-the-last-stag) | 3.4 | Hollow Knight |
 | 44 | [Zoroark](#44-zoroark) | 3.5 | Pokemon |
 | 112 | [Black Knife Tiche](#112-black-knife-tiche) | 3.5 | Elden Ring |
 | 129 | [Suu](#129-suu) | 3.5 | Monster Musume |
@@ -212,12 +249,13 @@
 | 346 | [Hornet](#346-hornet) | 3.5 | Hollow Knight |
 | 423 | [Piercing Ox](#423-piercing-ox) | 3.5 | Jujutsu Kaisen |
 | 435 | [Hamsuke](#435-hamsuke) | 3.5 | Overlord |
-| 436 | [Militech Chimera](#436-militech-chimera) | 3.5 | Cyberpunk |
+| 436 | [Militech Chimera](#436-militech-chimera) | 3.5 | Cyberpunk 2077 |
 | 49 | [The Golem Core](#49-the-golem-core) | 3.6 | Generic |
 | 77 | [Desert Elemental](#77-desert-elemental) | 3.6 | Calamity Mod |
 | 154 | [Mukago](#154-mukago) | 3.6 | Demon Slayer |
 | 307 | [Frost Legion](#307-frost-legion) | 3.6 | Terraria |
-| 323 | [Imp Midna](#323-imp-midna) | 3.6 | Legend of Zelda |
+| 323 | [Imp Midna](#323-imp-midna) | 3.6 | The Legend of Zelda |
+| 498 | [Mercury](#498-mercury) | 3.6 | Tron 2.0 |
 | 102 | [Rabbit Escape](#102-rabbit-escape) | 3.7 | Jujutsu Kaisen |
 | 106 | [Bat Devil](#106-bat-devil) | 3.7 | Chainsaw Man |
 | 109 | [Iron](#109-iron) | 3.7 | Solo Leveling |
@@ -241,6 +279,7 @@
 | 310 | [Triborg](#310-triborg) | 3.8 | Mortal Kombat |
 | 345 | [Mineral Weaver](#345-mineral-weaver) | 3.8 | Generic |
 | 407 | [Mizune Family](#407-mizune-family) | 3.8 | Soul Eater |
+| 483 | [Quantum Slime](#483-quantum-slime) | 3.8 | Slime Rancher |
 | 118 | [Nyotengu](#118-nyotengu) | 3.9 | Dead or Alive |
 | 148 | [Tai Lung](#148-tai-lung) | 3.9 | Kung Fu Panda |
 | 189 | [Yuri Alpha](#189-yuri-alpha) | 3.9 | Overlord |
@@ -250,7 +289,7 @@
 | 369 | [Undyne](#369-undyne) | 3.9 | Undertale |
 | 408 | [Eruka Frog](#408-eruka-frog) | 3.9 | Soul Eater |
 
-### Elite (93)
+### Elite (106)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -267,6 +306,8 @@
 | 248 | [Pearl](#248-pearl) | 4.0 | Steven Universe |
 | 289 | [Medusamon](#289-medusamon) | 4.0 | Digimon |
 | 439 | [Lunagaron](#439-lunagaron) | 4.0 | Monster Hunter |
+| 499 | [Data Wraith](#499-data-wraith) | 4.0 | Tron 2.0 |
+| 518 | [Vortigaunt Ally](#518-vortigaunt-ally) | 4.0 | Half-Life |
 | 34 | [Articuno](#34-articuno) | 4.1 | Pokemon |
 | 45 | [Haspid](#45-haspid) | 4.1 | Hota |
 | 81 | [Anahita](#81-anahita) | 4.1 | Calamity Mod |
@@ -276,7 +317,7 @@
 | 179 | [Kirin](#179-kirin) | 4.1 | Monster Hunter |
 | 188 | [Narberal Gamma](#188-narberal-gamma) | 4.1 | Overlord |
 | 208 | [Diamond Golem](#208-diamond-golem) | 4.1 | Hota |
-| 312 | [Mipha](#312-mipha) | 4.1 | Legend of Zelda |
+| 312 | [Mipha](#312-mipha) | 4.1 | The Legend of Zelda |
 | 43 | [Garchomp](#43-garchomp) | 4.2 | Pokemon |
 | 51 | [Unicorn](#51-unicorn) | 4.2 | Generic |
 | 59 | [Jubjub](#59-jubjub) | 4.2 | Black Souls |
@@ -291,6 +332,9 @@
 | 359 | [Full-Grown Fallingstar Beast](#359-full-grown-fallingstar-beast) | 4.2 | Elden Ring |
 | 368 | [Toriel](#368-toriel) | 4.2 | Undertale |
 | 440 | [Shogun Ceanataur](#440-shogun-ceanataur) | 4.2 | Monster Hunter |
+| 470 | [Bushi](#470-bushi) | 4.2 | Palworld |
+| 475 | [Sawtooth](#475-sawtooth) | 4.2 | Horizon Zero Dawn |
+| 500 | [Spirit Doe](#500-spirit-doe) | 4.2 | Life is Strange |
 | 2 | [Blair](#2-blair) | 4.3 | Soul Eater |
 | 54 | [Dark Magician Girl](#54-dark-magician-girl) | 4.3 | Yugioh |
 | 211 | [Registeel](#211-registeel) | 4.3 | Pokemon |
@@ -305,6 +349,10 @@
 | 285 | [Angewomon](#285-angewomon) | 4.4 | Digimon |
 | 286 | [Ladydevimon](#286-ladydevimon) | 4.4 | Digimon |
 | 380 | [Lady of Ariandel](#380-lady-of-ariandel) | 4.4 | Dark Souls |
+| 487 | [Space Amoeba](#487-space-amoeba) | 4.4 | Stellaris |
+| 503 | [Automaton](#503-automaton) | 4.4 | Frostpunk |
+| 509 | [Goose the Flerken](#509-goose-the-flerken) | 4.4 | MCU |
+| 511 | [Coalossal](#511-coalossal) | 4.4 | Pokemon |
 | 37 | [Thunderbirds](#37-thunderbirds) | 4.5 | Hota |
 | 108 | [Igris](#108-igris) | 4.5 | Solo Leveling |
 | 146 | [Lil' Behemoth](#146-lil-behemoth) | 4.5 | Worm |
@@ -324,6 +372,9 @@
 | 385 | [Flesh Leviathan](#385-flesh-leviathan) | 4.6 | Ultrakill |
 | 430 | [Vernum Carnis](#430-vernum-carnis) | 4.6 | Vita Carnis |
 | 451 | [Qurio Swarm](#451-qurio-swarm) | 4.6 | Monster Hunter |
+| 471 | [Grizzbolt](#471-grizzbolt) | 4.6 | Palworld |
+| 476 | [Stalker](#476-stalker) | 4.6 | Horizon Zero Dawn |
+| 484 | [Lucky Slime](#484-lucky-slime) | 4.6 | Slime Rancher |
 | 58 | [Mosquito](#58-mosquito) | 4.7 | One Punch Man |
 | 103 | [Round Deer](#103-round-deer) | 4.7 | Jujutsu Kaisen |
 | 171 | [Parthunaax](#171-parthunaax) | 4.7 | Skyrim |
@@ -342,13 +393,14 @@
 | 366 | [Terraprisma](#366-terraprisma) | 4.8 | Terraria |
 | 404 | [Zenobia](#404-zenobia) | 4.8 | Xenoblade |
 | 425 | [Beldia](#425-beldia) | 4.8 | Konosuba |
+| 495 | [Captain Boomer](#495-captain-boomer) | 4.8 | Q-UP |
 | 21 | [Dark Eater Midir](#21-dark-eater-midir) | 4.9 | Dark Souls |
 | 166 | [Kars](#166-kars) | 4.9 | JoJo |
 | 210 | [Regice](#210-regice) | 4.9 | Pokemon |
 | 402 | [Dromarch](#402-dromarch) | 4.9 | Xenoblade |
 | 445 | [Garangolm](#445-garangolm) | 4.9 | Monster Hunter |
 
-### Epic (59)
+### Epic (64)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -371,12 +423,15 @@
 | 165 | [The Pillar Men](#165-the-pillar-men) | 5.2 | JoJo |
 | 292 | [Lil' Slaanesh](#292-lil-slaanesh) | 5.2 | Warhammer 40k |
 | 443 | [Nakarkos](#443-nakarkos) | 5.2 | Monster Hunter |
-| 324 | [Midna](#324-midna) | 5.3 | Legend of Zelda |
+| 486 | [Tiyanki Matriarch](#486-tiyanki-matriarch) | 5.2 | Stellaris |
+| 515 | [DØG](#515-døg) | 5.2 | Half-Life |
+| 324 | [Midna](#324-midna) | 5.3 | The Legend of Zelda |
 | 446 | [Velkhana](#446-velkhana) | 5.3 | Monster Hunter |
 | 164 | [DIO](#164-dio) | 5.4 | JoJo |
 | 239 | [Lapis Lazuli](#239-lapis-lazuli) | 5.4 | Steven Universe |
 | 347 | [Grand Mother Silk](#347-grand-mother-silk) | 5.4 | Silksong |
 | 424 | [Tiger Funeral](#424-tiger-funeral) | 5.4 | Jujutsu Kaisen |
+| 472 | [Palworld Anubis](#472-palworld-anubis) | 5.4 | Palworld |
 | 15 | [Dimple](#15-dimple) | 5.5 | Mob Psycho |
 | 56 | [Sebas Tian](#56-sebas-tian) | 5.5 | Overlord |
 | 95 | [Black Nomu](#95-black-nomu) | 5.5 | MHA |
@@ -391,6 +446,7 @@
 | 246 | [Peridot](#246-peridot) | 5.6 | Steven Universe |
 | 400 | [Aegaeon](#400-aegaeon) | 5.6 | Xenoblade |
 | 444 | [Amatsu](#444-amatsu) | 5.6 | Monster Hunter |
+| 501 | [Spidertron](#501-spidertron) | 5.6 | Factorio |
 | 115 | [Beatrice](#115-beatrice) | 5.7 | Re:Zero |
 | 173 | [Neferpitou](#173-neferpitou) | 5.7 | Hunter x Hunter |
 | 180 | [Valstrax](#180-valstrax) | 5.7 | Monster Hunter |
@@ -405,6 +461,7 @@
 | 169 | [Ultimate Kars](#169-ultimate-kars) | 5.8 | JoJo |
 | 336 | [V1](#336-v1) | 5.8 | Ultrakill |
 | 393 | [Shagaru Magala](#393-shagaru-magala) | 5.8 | Monster Hunter |
+| 485 | [Gold Slime](#485-gold-slime) | 5.8 | Slime Rancher |
 | 91 | [Ramiel](#91-ramiel) | 5.9 | Evangelion |
 | 153 | [Muzan](#153-muzan) | 5.9 | Demon Slayer |
 | 228 | [Jogo](#228-jogo) | 5.9 | Jujutsu Kaisen |
@@ -412,7 +469,7 @@
 | 342 | [Venom](#342-venom) | 5.9 | Sony Venom Movies |
 | 357 | [Dwarf in the Flask](#357-dwarf-in-the-flask) | 5.9 | Fullmetal Alchemist |
 
-### Legendary (47)
+### Legendary (48)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -421,7 +478,7 @@
 | 225 | [Kenjaku](#225-kenjaku) | 6.0 | Jujutsu Kaisen |
 | 365 | [Prometheus Homie](#365-prometheus-homie) | 6.0 | One Piece |
 | 449 | [Malzeno](#449-malzeno) | 6.0 | Monster Hunter |
-| 142 | [Ultron](#142-ultron) | 6.1 | Age of Ultron |
+| 142 | [Ultron](#142-ultron) | 6.1 | MCU |
 | 233 | [Endbringer Leviathan](#233-endbringer-leviathan) | 6.1 | Worm |
 | 256 | [Mothra](#256-mothra) | 6.1 | Monsterverse |
 | 364 | [Zeus Homie](#364-zeus-homie) | 6.1 | One Piece |
@@ -436,6 +493,7 @@
 | 328 | [Cream](#328-cream) | 6.4 | JoJo |
 | 363 | [Golem Keter Malkuth](#363-golem-keter-malkuth) | 6.4 | Fate |
 | 384 | [Earthmover](#384-earthmover) | 6.4 | Ultrakill |
+| 494 | [Shivan Dragon](#494-shivan-dragon) | 6.4 | MTG |
 | 17 | [Plague Bringer Goliath](#17-plague-bringer-goliath) | 6.5 | Calamity Mod |
 | 124 | [Shukaku](#124-shukaku) | 6.5 | Naruto |
 | 299 | [Obelisk the Tormentor](#299-obelisk-the-tormentor) | 6.5 | Yugioh |
@@ -468,7 +526,7 @@
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
-| 92 | [Yasaka](#92-yasaka) | 7.0 | DxD |
+| 92 | [Yasaka](#92-yasaka) | 7.0 | Highschool DxD |
 | 234 | [Endbringer Simurgh](#234-endbringer-simurgh) | 7.0 | Worm |
 | 257 | [Shimo](#257-shimo) | 7.0 | Monsterverse |
 | 264 | [Mewtwo](#264-mewtwo) | 7.0 | Pokemon |
@@ -2112,7 +2170,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.0 | Mythical | DxD |
+| 7.0 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -2982,7 +3040,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.1 | Legendary | Age of Ultron |
+| 6.1 | Legendary | MCU |
 
 **Description**
 
@@ -3886,7 +3944,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 2.7 | Uncommon | Fallout: Old World Blues |
+| 2.7 | Uncommon | Fallout New Vegas |
 
 **Description**
 
@@ -5916,7 +5974,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.1 | Elite | Legend of Zelda |
+| 4.1 | Elite | The Legend of Zelda |
 
 **Description**
 
@@ -6103,7 +6161,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.6 | Rare | Legend of Zelda |
+| 3.6 | Rare | The Legend of Zelda |
 
 **Description**
 
@@ -6120,7 +6178,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.3 | Epic | Legend of Zelda |
+| 5.3 | Epic | The Legend of Zelda |
 
 **Description**
 
@@ -7798,7 +7856,7 @@
 
 **Description**
 
-> What is that — an event, not a regular familiar? Gacha Man is in your world now, within roughly an hour of travel, holding a briefcase. Locate and execute him within an hour to gain an Advantage Gold Choice Gacha Ticket, or he leaves and you get nothing. (Gacha Man is not eligible for revival or insurance, he must die.)
+> (Gacha) What is that — an event, not a regular familiar? Gacha Man is in your world now, within roughly an hour of travel, holding a briefcase. Locate and execute him within an hour to gain an Advantage Gold Choice Gacha Ticket, or he leaves and you get nothing. (Gacha Man is not eligible for revival or insurance, he must die.)
 
 **Flagged in reports**
 
@@ -8036,7 +8094,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.5 | Rare | Cyberpunk |
+| 3.5 | Rare | Cyberpunk 2077 |
 
 **Description**
 
@@ -8449,6 +8507,992 @@
 **Description**
 
 > "There are no laws against the Pokemon Batman!" Lopunny is a bunny-like Pokemon with great agility and leg strength, delivering devastating kicks and moving rapidly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 461. Lamball
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.2 | Common | Palworld |
+
+**Description**
+
+> A round woolly starter Pal whose fluffy body makes a perfect shield and pillow.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 462. Chikipi
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.0 | Common | Palworld |
+
+**Description**
+
+> A cheerful chicken Pal that lays eggs wherever it wanders.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 463. Lifmunk
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Palworld |
+
+**Description**
+
+> A gliding squirrel Pal that mans a submachine gun from your shoulder.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 464. Foxparks
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Palworld |
+
+**Description**
+
+> A fox Pal that transforms into a living flamethrower when you hug it. Huggy Fire.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 465. Pengullet
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Palworld |
+
+**Description**
+
+> A penguin Pal that loads itself into a launcher as living ammunition.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 466. Tocotoco
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Palworld |
+
+**Description**
+
+> A dapper bird Pal that fires explosive eggs from its Eggbomb Launcher.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 467. Tanzee
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Palworld |
+
+**Description**
+
+> A monkey Pal wielding an assault rifle with its Cheery Rifle partner skill.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 468. Leezpunk
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Palworld |
+
+**Description**
+
+> A sneaky lizard Pal whose Sixth Sense sniffs out nearby dungeons.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 469. Lunaris
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Palworld |
+
+**Description**
+
+> An antlered Pal whose Antigravity lets you carry far more than you should.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 470. Bushi
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Palworld |
+
+**Description**
+
+> A ronin Pal that answers threats with its Brandish Blade iaido draw.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 471. Grizzbolt
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Palworld |
+
+**Description**
+
+> An electric bear Pal that shoulders a minigun as its Yellow Tank partner skill.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 472. Palworld Anubis
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Palworld |
+
+**Description**
+
+> A jackal martial-artist Pal, Guardian of the Desert, who empowers your strikes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 473. Strider
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Horizon Zero Dawn |
+
+**Description**
+
+> An overridden horse-like machine that serves as a fast, loyal mount.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 474. Broadhead
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Horizon Zero Dawn |
+
+**Description**
+
+> A bull-like machine mount that gores whatever charges you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 475. Sawtooth
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Horizon Zero Dawn |
+
+**Description**
+
+> An overridden predator machine that hunts at your side.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 476. Stalker
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Horizon Zero Dawn |
+
+**Description**
+
+> An overridden stealth machine that cloaks beside you until it strikes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 477. Pink Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.2 | Common | Slime Rancher |
+
+**Description**
+
+> The friendliest slime: eats anything, loves everything, wiggles constantly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 478. Tabby Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.8 | Common | Slime Rancher |
+
+**Description**
+
+> A catlike slime that steals food, knocks things over, and purrs about it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 479. Phosphor Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Slime Rancher |
+
+**Description**
+
+> A nocturnal glow slime, harmless by day and radiant by night.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 480. Hunter Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Slime Rancher |
+
+**Description**
+
+> A feral-eyed predator slime that turns invisible before it pounces.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 481. Honey Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Slime Rancher |
+
+**Description**
+
+> A sweet slime oozing minty honey; nearby slimes agitate from the smell.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 482. Puddle Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Slime Rancher |
+
+**Description**
+
+> A shy water slime that only thrives in ponds and evaporates on dry land.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 483. Quantum Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Slime Rancher |
+
+**Description**
+
+> A paradox slime that exists in multiple places until observed.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 484. Lucky Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Slime Rancher |
+
+**Description**
+
+> An impossibly rare coin-faced slime that bursts into newbucks when fed meat.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 485. Gold Slime
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Slime Rancher |
+
+**Description**
+
+> The rarest slime: appears anywhere, eats anything, and pops into plorts of pure gold.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 486. Tiyanki Matriarch
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Stellaris |
+
+**Description**
+
+> An ancient space-whale matriarch leading her pod across the stars beside you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 487. Space Amoeba
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Stellaris |
+
+**Description**
+
+> A docile void amoeba the size of a frigate, trailing your fleet like a puppy.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 488. War Dog
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Dwarf Fortress |
+
+**Description**
+
+> A trained wardog that hunts and holds the line beside its handler.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 489. Barn Cat
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.4 | Common | Dwarf Fortress |
+
+**Description**
+
+> Vermin control with whiskers; will adopt you and explode in population.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 490. Grizzly Bear
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Dwarf Fortress |
+
+**Description**
+
+> A war-trained grizzly that mauls sieges on command.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 491. Cuddlefish
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Subnautica |
+
+**Description**
+
+> An endearing deep-sea pet that plays fetch and follows you home.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 492. Lizard Doggo
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Satisfactory |
+
+**Description**
+
+> A loyal alien pup that follows you around and occasionally digs up surprises.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 493. Chirpy
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.6 | Common | Cities Skylines |
+
+**Description**
+
+> The relentlessly cheerful seagull mascot, narrating your city one chirp at a time.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 494. Shivan Dragon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.4 | Legendary | MTG |
+
+**Description**
+
+> The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 495. Captain Boomer
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Q-UP |
+
+**Description**
+
+> A 3-ton whale with a day job who competes in the coin-flipping esport beside you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 496. Peska the Troll
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Q-UP |
+
+**Description**
+
+> A trash-talking troll hero whose jeers tilt opponents right off the ladder.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 497. HyperQbe the Streamer
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Q-UP |
+
+**Description**
+
+> An always-live streamer hero narrating your flips to an audience of thousands.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 498. Mercury
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Tron 2.0 |
+
+**Description**
+
+> A skilled program ally who fights beside you in the Game Grid and knows its back doors.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 499. Data Wraith
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Tron 2.0 |
+
+**Description**
+
+> A viral hunter prowling the system for programs to derez, currently pointed at your enemies.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 500. Spirit Doe
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Life is Strange |
+
+**Description**
+
+> A luminous doe that appears at turning points, watching over your choices.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 501. Spidertron
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Factorio |
+
+**Description**
+
+> A spider-legged combat mech with rocket launchers that follows your remote orders.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 502. Little Scout
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Outer Wilds |
+
+**Description**
+
+> A reusable camera probe that photographs the unknown and always comes back.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 503. Automaton
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Frostpunk |
+
+**Description**
+
+> A steam-powered automaton worker that labors through deadly frost without complaint.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 504. Duplicant
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Oxygen Not Included |
+
+**Description**
+
+> A cheerful cloning-vat colonist who digs, builds, and stresses about everything.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 505. Tamed Wolf
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Valheim |
+
+**Description**
+
+> A once-wild wolf, now loyal, that hunts and guards beside you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 506. Molly
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Deep Rock Galactic |
+
+**Description**
+
+> The team's beloved M.U.L.E. robot that hauls minerals and headbutts glyphids.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 507. Beaver
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.4 | Common | Timberborn |
+
+**Description**
+
+> An industrious beaver that dams rivers and drags logs all day long.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 508. Golem
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Timberborn |
+
+**Description**
+
+> A mechanical beaver golem that works around the clock without food or rest.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 509. Goose the Flerken
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | MCU |
+
+**Description**
+
+> A perfectly ordinary cat who is secretly a Flerken, with pocket dimensions and tentacles inside.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 510. Miss Minutes
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | MCU |
+
+**Description**
+
+> The TVA's cheerful cartoon-clock mascot AI, happy to explain the rules while locking the doors.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 511. Coalossal
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Pokemon |
+
+**Description**
+
+> A walking coal furnace the size of a truck; its G-Max wildfire form once ended a broadcast early.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 512. The Last Stag
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Hollow Knight |
+
+**Description**
+
+> The last of the stagways stags, who will carry you anywhere the stag stations still stand.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 513. Thomas the Tank Engine
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Thomas & Friends |
+
+**Description**
+
+> A really useful blue tank engine who believes almost any job is worth doing, branch line or main line.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 514. Lamarr
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Half-Life |
+
+**Description**
+
+> Dr. Kleiner's de-beaked pet headcrab, affectionate and almost entirely harmless. Almost.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 515. DØG
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Half-Life |
+
+**Description**
+
+> Alyx's giant robot dog: loyal, playful, and capable of ripping a Hunter in half.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 516. Snark
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Half-Life |
+
+**Description**
+
+> A chittering alien beetle that hunts whatever it sees, then explodes. Throw away from face.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 517. Chumtoad
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.6 | Common | Half-Life |
+
+**Description**
+
+> A small purple toad of mysterious provenance. It does nothing, beautifully.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 518. Vortigaunt Ally
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Half-Life |
+
+**Description**
+
+> A shackled vortigaunt no longer; it heals your wounds and hurls lightning at your enemies.
 
 **Decision**
 

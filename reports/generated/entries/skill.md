@@ -1,14 +1,14 @@
 # skill — Entry Reference
 
-302 entries. Sorted by rarity, then number.
+334 entries. Sorted by rarity, then number.
 
 | Tier | Count |
 |---|---|
 | Trash | 6 |
-| Common | 45 |
-| Uncommon | 54 |
-| Rare | 51 |
-| Elite | 48 |
+| Common | 48 |
+| Uncommon | 70 |
+| Rare | 63 |
+| Elite | 49 |
 | Epic | 41 |
 | Legendary | 32 |
 | Mythical | 19 |
@@ -28,7 +28,7 @@
 | 199 | [Calligraphy](#199-calligraphy) | 0.8 | Generic |
 | 269 | [Sign Language](#269-sign-language) | 0.8 | Generic |
 
-### Common (45)
+### Common (48)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -61,6 +61,7 @@
 | 52 | [Novice Shooting](#52-novice-shooting) | 1.6 | Generic |
 | 57 | [Novice Physics](#57-novice-physics) | 1.6 | Generic |
 | 208 | [Novice Management](#208-novice-management) | 1.6 | Generic |
+| 329 | [Model Railroad Building](#329-model-railroad-building) | 1.6 | Generic |
 | 60 | [Novice Blacksmithing](#60-novice-blacksmithing) | 1.7 | Generic |
 | 261 | [Stylist](#261-stylist) | 1.7 | Generic |
 | 35 | [Intermediate Driving](#35-intermediate-driving) | 1.8 | Generic |
@@ -70,6 +71,8 @@
 | 246 | [Mixology](#246-mixology) | 1.8 | Generic |
 | 248 | [Architecture](#248-architecture) | 1.8 | Generic |
 | 302 | [Kidnapping](#302-kidnapping) | 1.8 | Generic |
+| 319 | [Animals](#319-animals) | 1.8 | I Was a Teenage Exocolonist |
+| 325 | [Organization](#325-organization) | 1.8 | I Was a Teenage Exocolonist |
 | 62 | [Novice Blade Weapon Mastery](#62-novice-blade-weapon-mastery) | 1.9 | Generic |
 | 71 | [Novice Charisma](#71-novice-charisma) | 1.9 | Generic |
 | 98 | [Grooming](#98-grooming) | 1.9 | Generic |
@@ -78,13 +81,15 @@
 | 268 | [Farming](#268-farming) | 1.9 | Generic |
 | 270 | [Mental Image Blocking](#270-mental-image-blocking) | 1.9 | Batman |
 
-### Uncommon (54)
+### Uncommon (70)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 13 | [Intermediate Blacksmithing](#13-intermediate-blacksmithing) | 2.0 | Generic |
 | 14 | [Intermediate Teaching](#14-intermediate-teaching) | 2.0 | Generic |
 | 241 | [Novice Ninjutsu](#241-novice-ninjutsu) | 2.0 | Generic |
+| 321 | [Creativity](#321-creativity) | 2.0 | I Was a Teenage Exocolonist |
+| 324 | [Logic](#324-logic) | 2.0 | I Was a Teenage Exocolonist |
 | 7 | [Intermediate Programming](#7-intermediate-programming) | 2.1 | Generic |
 | 16 | [Intermediate Blunt Weapon Mastery](#16-intermediate-blunt-weapon-mastery) | 2.1 | Generic |
 | 31 | [Intermediate Taming](#31-intermediate-taming) | 2.1 | Generic |
@@ -97,6 +102,12 @@
 | 30 | [Intermediate Kama Sutra](#30-intermediate-kama-sutra) | 2.2 | Generic |
 | 38 | [Throwing](#38-throwing) | 2.2 | Generic |
 | 74 | [Literacy](#74-literacy) | 2.2 | Generic |
+| 313 | [Brewing](#313-brewing) | 2.2 | Dwarf Fortress |
+| 320 | [Combat](#320-combat) | 2.2 | I Was a Teenage Exocolonist |
+| 323 | [Leadership](#323-leadership) | 2.2 | I Was a Teenage Exocolonist |
+| 326 | [Reasoning](#326-reasoning) | 2.2 | I Was a Teenage Exocolonist |
+| 328 | [Train Hopping](#328-train-hopping) | 2.2 | Divergent |
+| 334 | [Crowbar Combat](#334-crowbar-combat) | 2.2 | Half-Life |
 | 2 | [Intermediate Cooking](#2-intermediate-cooking) | 2.3 | Generic |
 | 15 | [Intermediate Blade Weapon Mastery](#15-intermediate-blade-weapon-mastery) | 2.3 | Generic |
 | 181 | [Intermediate Interfacing](#181-intermediate-interfacing) | 2.3 | Generic |
@@ -111,6 +122,9 @@
 | 247 | [Begging](#247-begging) | 2.4 | Generic |
 | 264 | [Intermediate Fine Arts](#264-intermediate-fine-arts) | 2.4 | Generic |
 | 285 | [Novice Total Concentration Breathing](#285-novice-total-concentration-breathing) | 2.4 | Demon Slayer |
+| 312 | [Masonry](#312-masonry) | 2.4 | Dwarf Fortress |
+| 322 | [Engineering](#322-engineering) | 2.4 | I Was a Teenage Exocolonist |
+| 330 | [Train Driving](#330-train-driving) | 2.4 | Generic |
 | 6 | [Intermediate Hand-to-Hand Combat](#6-intermediate-hand-to-hand-combat) | 2.5 | Generic |
 | 11 | [Intermediate Chemistry](#11-intermediate-chemistry) | 2.5 | Generic |
 | 33 | [Intermediate Massage](#33-intermediate-massage) | 2.5 | Generic |
@@ -124,6 +138,8 @@
 | 17 | [Intermediate Polearm Mastery](#17-intermediate-polearm-mastery) | 2.6 | Generic |
 | 46 | [Krav Maga](#46-krav-maga) | 2.6 | Generic |
 | 209 | [Intermediate Management](#209-intermediate-management) | 2.6 | Generic |
+| 310 | [Sneaking](#310-sneaking) | 2.6 | Divinity Original Sin |
+| 332 | [Theoretical Physics](#332-theoretical-physics) | 2.6 | Half-Life |
 | 10 | [Intermediate Physics](#10-intermediate-physics) | 2.7 | Generic |
 | 36 | [Intermediate Leadership](#36-intermediate-leadership) | 2.7 | Generic |
 | 186 | [Intermediate Savoir Faire](#186-intermediate-savoir-faire) | 2.7 | Generic |
@@ -132,17 +148,24 @@
 | 299 | [Judging](#299-judging) | 2.7 | Generic |
 | 12 | [Intermediate Math](#12-intermediate-math) | 2.8 | Generic |
 | 252 | [Servitude](#252-servitude) | 2.8 | Generic |
+| 305 | [Bushcraft](#305-bushcraft) | 2.8 | Tomb Raider |
+| 318 | [Pal Training](#318-pal-training) | 2.8 | Palworld |
+| 333 | [Xenobiology](#333-xenobiology) | 2.8 | Half-Life |
 | 39 | [Intermediate Medicine](#39-intermediate-medicine) | 2.9 | Generic |
 | 47 | [Muay Thai](#47-muay-thai) | 2.9 | Generic |
 | 221 | [Intermediate Conceptualization](#221-intermediate-conceptualization) | 2.9 | Generic |
 | 280 | [Novice Arms Mastery](#280-novice-arms-mastery) | 2.9 | Generic |
 
-### Rare (51)
+### Rare (63)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 93 | [Adept Driving](#93-adept-driving) | 3.0 | Generic |
 | 277 | [Lingshu Chin Na](#277-lingshu-chin-na) | 3.0 | Kengan Ashura |
+| 307 | [Colony Construction](#307-colony-construction) | 3.0 | RimWorld |
+| 311 | [Persuasion](#311-persuasion) | 3.0 | Divinity Original Sin |
+| 314 | [Deckbuilding](#314-deckbuilding) | 3.0 | MTG |
+| 331 | [Railway Engineering](#331-railway-engineering) | 3.0 | Generic |
 | 25 | [Water Breathing](#25-water-breathing) | 3.1 | Demon Slayer |
 | 78 | [Adept Programming](#78-adept-programming) | 3.1 | Generic |
 | 91 | [Adept Taming](#91-adept-taming) | 3.1 | Generic |
@@ -155,6 +178,8 @@
 | 195 | [Jack of All Trades](#195-jack-of-all-trades) | 3.2 | Generic |
 | 205 | [Adept Performance](#205-adept-performance) | 3.2 | Generic |
 | 265 | [Adept Fine Arts](#265-adept-fine-arts) | 3.2 | Generic |
+| 303 | [Factory Planning](#303-factory-planning) | 3.2 | Satisfactory |
+| 317 | [Exocraft Piloting](#317-exocraft-piloting) | 3.2 | No Man's Sky |
 | 18 | [Intermediate Item Construction](#18-intermediate-item-construction) | 3.3 | Generic |
 | 26 | [Fire Breathing](#26-fire-breathing) | 3.3 | Demon Slayer |
 | 48 | [Intimidation](#48-intimidation) | 3.3 | Generic |
@@ -167,6 +192,9 @@
 | 182 | [Adept Interfacing](#182-adept-interfacing) | 3.4 | Generic |
 | 257 | [Intermediate Spycraft](#257-intermediate-spycraft) | 3.4 | Generic |
 | 290 | [Reduced Earth](#290-reduced-earth) | 3.4 | Fate |
+| 304 | [Machine Override](#304-machine-override) | 3.4 | Horizon Zero Dawn |
+| 308 | [Deep Space Survey](#308-deep-space-survey) | 3.4 | Stellaris |
+| 316 | [Computer Hacking](#316-computer-hacking) | 3.4 | Deus Ex |
 | 19 | [Polar Channel Flow - Cellular Overdrive](#19-polar-channel-flow-cellular-overdrive) | 3.5 | Generic |
 | 41 | [Bajiquan](#41-bajiquan) | 3.5 | Generic |
 | 76 | [Adept Shooting](#76-adept-shooting) | 3.5 | Generic |
@@ -178,6 +206,8 @@
 | 215 | [Adept Discipline](#215-adept-discipline) | 3.6 | Generic |
 | 233 | [Adept Communication](#233-adept-communication) | 3.6 | Generic |
 | 286 | [Intermediate Total Concentration Breathing](#286-intermediate-total-concentration-breathing) | 3.6 | Demon Slayer |
+| 306 | [Colony Medicine](#306-colony-medicine) | 3.6 | RimWorld |
+| 315 | [Slime Science](#315-slime-science) | 3.6 | Slime Rancher |
 | 42 | [Taekwondo](#42-taekwondo) | 3.7 | Generic |
 | 82 | [Adept Chemistry](#82-adept-chemistry) | 3.7 | Generic |
 | 210 | [Adept Management](#210-adept-management) | 3.7 | Generic |
@@ -188,12 +218,13 @@
 | 187 | [Adept Savoir Faire](#187-adept-savoir-faire) | 3.8 | Generic |
 | 228 | [Edna Mode](#228-edna-mode) | 3.8 | Incredibles |
 | 242 | [Intermediate Ninjutsu](#242-intermediate-ninjutsu) | 3.8 | Generic |
+| 309 | [Galactic Diplomacy](#309-galactic-diplomacy) | 3.8 | Stellaris |
 | 83 | [Adept Math](#83-adept-math) | 3.9 | Generic |
 | 222 | [Adept Conceptualization](#222-adept-conceptualization) | 3.9 | Generic |
 | 238 | [Adept Persuasion](#238-adept-persuasion) | 3.9 | Generic |
 | 281 | [Intermediate Arms Mastery](#281-intermediate-arms-mastery) | 3.9 | Generic |
 
-### Elite (48)
+### Elite (49)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -201,6 +232,7 @@
 | 45 | [Suppression](#45-suppression) | 4.0 | Generic |
 | 116 | [Expert Massage](#116-expert-massage) | 4.0 | Generic |
 | 117 | [Expert Driving](#117-expert-driving) | 4.0 | Generic |
+| 327 | [Mystic Arts](#327-mystic-arts) | 4.0 | MCU |
 | 96 | [Adept Medicine](#96-adept-medicine) | 4.1 | Generic |
 | 102 | [Expert Programming](#102-expert-programming) | 4.1 | Generic |
 | 104 | [Expert Biology](#104-expert-biology) | 4.1 | Generic |
@@ -357,7 +389,7 @@
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
-| 170 | [Divine Formula](#170-divine-formula) | 8.0 | DxD |
+| 170 | [Divine Formula](#170-divine-formula) | 8.0 | Highschool DxD |
 | 167 | [Principle of Life](#167-principle-of-life) | 8.1 | Generic |
 | 169 | [Principle of Matter](#169-principle-of-matter) | 8.2 | Generic |
 | 20 | [All Life Eradication Fist](#20-all-life-eradication-fist) | 8.4 | One Punch Man |
@@ -3316,7 +3348,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 8.0 | Divine | DxD |
+| 8.0 | Divine | Highschool DxD |
 
 **Description**
 
@@ -5653,6 +5685,550 @@
 **Flagged in reports**
 
 - [clarity] - **302. Kidnapping** — "planning + practiced moves": keep abstract
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 303. Factory Planning
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Satisfactory |
+
+**Description**
+
+> Lay out production lines, manifolds, and bus feeds that scale up without dissolving into spaghetti.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 304. Machine Override
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Horizon Zero Dawn |
+
+**Description**
+
+> Hack overridden machines to fight for you or serve as mounts.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 305. Bushcraft
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Tomb Raider |
+
+**Description**
+
+> Forage, hunt, craft, and read the land in any hostile wild.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 306. Colony Medicine
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | RimWorld |
+
+**Description**
+
+> Triage, surgery, and glitterworld care with whatever counts as a hospital.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 307. Colony Construction
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | RimWorld |
+
+**Description**
+
+> Raise bases fast and sturdy, from wooden shacks to plasteel fortresses.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 308. Deep Space Survey
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Stellaris |
+
+**Description**
+
+> Chart stars, anomalies, and habitable worlds with professional thoroughness.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 309. Galactic Diplomacy
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Stellaris |
+
+**Description**
+
+> Federations, vassals, and first contact without starting an extermination war. Usually.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 310. Sneaking
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Divinity Original Sin |
+
+**Description**
+
+> Move unseen, pick pockets, and backstab with professional discretion.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 311. Persuasion
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Divinity Original Sin |
+
+**Description**
+
+> Talk down fights, talk up prices, and talk your way into restricted areas.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 312. Masonry
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Dwarf Fortress |
+
+**Description**
+
+> Cut stone blocks and raise fortresses that outlast civilizations.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 313. Brewing
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Dwarf Fortress |
+
+**Description**
+
+> Turn pig tails and plump helmets into life-giving dwarven ale.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 314. Deckbuilding
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | MTG |
+
+**Description**
+
+> Build sixty-card engines where every draw does exactly what the plan needs.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 315. Slime Science
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Slime Rancher |
+
+**Description**
+
+> Gadgets, pumps, and teleporters powered by slime science and questionable ethics.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 316. Computer Hacking
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Deus Ex |
+
+**Description**
+
+> Breach security ratings, ATMs, and robots with time to spare and no alarms.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 317. Exocraft Piloting
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | No Man's Sky |
+
+**Description**
+
+> Handle Nomads, Pilgrims, and Minotaurs across every biome without scratching the paint.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 318. Pal Training
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Palworld |
+
+**Description**
+
+> Raise, breed, and work Pals to peak performance without anyone getting eaten.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 319. Animals
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.8 | Common | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Handle Vertumna's alien fauna calmly, from fur-antlered grazers to things with too many legs.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 320. Combat
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Defend the colony with blades, bows, and level-headed aim when the planet pushes back.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 321. Creativity
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Art, music, and writing that lift the whole colony's spirits through hard years.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 322. Engineering
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Keep the colony's generators, walls, and weird alien-tech hybrids running.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 323. Leadership
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Organize expeditions and councils so the colony actually follows the plan.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 324. Logic
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Solve colony problems with clear reasoning, from supply math to alien puzzles.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 325. Organization
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.8 | Common | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Keep stockpiles, chores, and expeditions sorted no matter how chaotic the season.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 326. Reasoning
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Argue, deduce, and mediate with a cool head when colonists disagree.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 327. Mystic Arts
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | MCU |
+
+**Description**
+
+> Kamar-Taj training in spellcraft, relics, and dimensional etiquette, from mandalas to the Mirror Dimension.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 328. Train Hopping
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Divergent |
+
+**Description**
+
+> Board and ride moving trains Dauntless-style: sprint, grab, swing up, and do not look down.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 329. Model Railroad Building
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.6 | Common | Generic |
+
+**Description**
+
+> Design and build detailed model railroads, from benchwork and wiring to weathered tiny trees.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 330. Train Driving
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Generic |
+
+**Description**
+
+> Operate locomotives properly: signals, timetables, braking curves, and all.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 331. Railway Engineering
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Generic |
+
+**Description**
+
+> Survey grades, lay out yards, and engineer full-size railways that stay up and on time.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 332. Theoretical Physics
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Half-Life |
+
+**Description**
+
+> Relativistic math, quantum field doodles, and resonance-cascade risk assessment from first principles.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 333. Xenobiology
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Half-Life |
+
+**Description**
+
+> Study, catalogue, and handle border-world fauna without dying.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 334. Crowbar Combat
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Half-Life |
+
+**Description**
+
+> The free-man's martial art: swings, pries, jams, and one quiet hallway at a time.
 
 **Decision**
 

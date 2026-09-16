@@ -168,7 +168,7 @@ skill	166	Divine Mechanics	7.5	Mythical	Generic
 skill	167	Principle of Life	8.1	Divine	Generic					
 skill	168	Principle of Law	8.5	Divine	Generic					
 skill	169	Principle of Matter	8.2	Divine	Generic					
-skill	170	Divine Formula	8.0	Divine	DxD	REF				
+skill	170	Divine Formula	8.0	Divine	Highschool DxD	REF				
 skill	171	Divine Blacksmithing	7.8	Mythical	Generic					
 skill	172	Divine Teaching	7.2	Mythical	Generic					
 skill	173	Divine Blade Weapon Mastery	7.8	Mythical	Generic					
@@ -301,6 +301,38 @@ skill	299	Judging	2.7	Uncommon	Generic	REF
 skill	300	Commerce	2.5	Uncommon	Generic					
 skill	301	Tax Evasion	1.0	Common	Generic	REF				
 skill	302	Kidnapping	1.8	Common	Generic	REF				
+skill	303	Factory Planning	3.2	Rare	Satisfactory					
+skill	304	Machine Override	3.4	Rare	Horizon Zero Dawn					
+skill	305	Bushcraft	2.8	Uncommon	Tomb Raider					
+skill	306	Colony Medicine	3.6	Rare	RimWorld					
+skill	307	Colony Construction	3.0	Rare	RimWorld					
+skill	308	Deep Space Survey	3.4	Rare	Stellaris					
+skill	309	Galactic Diplomacy	3.8	Rare	Stellaris					
+skill	310	Sneaking	2.6	Uncommon	Divinity Original Sin					
+skill	311	Persuasion	3.0	Rare	Divinity Original Sin					
+skill	312	Masonry	2.4	Uncommon	Dwarf Fortress					
+skill	313	Brewing	2.2	Uncommon	Dwarf Fortress					
+skill	314	Deckbuilding	3.0	Rare	MTG					
+skill	315	Slime Science	3.6	Rare	Slime Rancher					
+skill	316	Computer Hacking	3.4	Rare	Deus Ex					
+skill	317	Exocraft Piloting	3.2	Rare	No Man's Sky					
+skill	318	Pal Training	2.8	Uncommon	Palworld					
+skill	319	Animals	1.8	Common	I Was a Teenage Exocolonist					
+skill	320	Combat	2.2	Uncommon	I Was a Teenage Exocolonist					
+skill	321	Creativity	2.0	Uncommon	I Was a Teenage Exocolonist					
+skill	322	Engineering	2.4	Uncommon	I Was a Teenage Exocolonist					
+skill	323	Leadership	2.2	Uncommon	I Was a Teenage Exocolonist					
+skill	324	Logic	2.0	Uncommon	I Was a Teenage Exocolonist					
+skill	325	Organization	1.8	Common	I Was a Teenage Exocolonist					
+skill	326	Reasoning	2.2	Uncommon	I Was a Teenage Exocolonist					
+skill	327	Mystic Arts	4.0	Elite	MCU					
+skill	328	Train Hopping	2.2	Uncommon	Divergent					
+skill	329	Model Railroad Building	1.6	Common	Generic					
+skill	330	Train Driving	2.4	Uncommon	Generic					
+skill	331	Railway Engineering	3.0	Rare	Generic					
+skill	332	Theoretical Physics	2.6	Uncommon	Half-Life					
+skill	333	Xenobiology	2.8	Uncommon	Half-Life					
+skill	334	Crowbar Combat	2.2	Uncommon	Half-Life					
 trait	1	Nothing Wrong Here	4.1	Elite	Generic					
 trait	2	Efficient Physique	2.7	Uncommon	Generic					
 trait	3	Hygienic	1.9	Common	Generic					
@@ -676,7 +708,7 @@ trait	372	Brand of Tzeentch	5.8	Epic	Warhammer 40k
 trait	373	Brand of Slaanesh	4.6	Elite	Warhammer 40k					
 trait	374	Brand of Khorne	5.3	Epic	Warhammer 40k					
 trait	375	Brand of Nurgle	5.4	Epic	Warhammer 40k					
-trait	376	Spiral	9.9	Transcendent	Tengen Toppa Gurenn Lagann					
+trait	376	Spiral	9.9	Transcendent	Gurren Lagann					
 trait	377	Monster of God	7.2	Mythical	Hellsing					
 trait	378	Magical Girl Transformation	0.3	Trash	Generic					
 trait	379	Hard to Kill	7.5	Mythical	Generic					
@@ -780,7 +812,7 @@ trait	476	Vile Temper	4.8	Elite	Generic
 trait	477	Glowing One	5.0	Epic	Generic					
 trait	478	Soul Vessel	5.5	Epic	Hollow Knight					
 trait	479	Ambidextrous	1.2	Common	Generic					
-trait	480	Tune Up	3.3	Rare	Generic					
+trait	480	Total Overhaul	3.3	Rare	Generic					
 trait	481	Greater Beastkin	4.4	Elite	Generic					
 trait	482	Noble Beastkin	5.7	Epic	Generic					
 trait	483	Royal Beastkin	6.1	Legendary	Generic					
@@ -934,6 +966,38 @@ trait	629	Eye of the Tiger	3.6	Rare	Generic
 trait	630	Castle Doctrine	3.2	Rare	Generic					
 trait	631	Six Eyes	7.0	Mythical	Jujutsu Kaisen					
 trait	632	Garlic Infused Blood	0.2	Trash	Generic					
+trait	633	Prosperity +10%	2.0	Uncommon	Generic					
+trait	634	Prosperity +20%	3.0	Rare	Generic					
+trait	635	Prosperity +30%	4.0	Elite	Generic					
+trait	636	Prosperity +40%	5.0	Epic	Generic					
+trait	637	Root Pact	4.0	Elite	Generic					
+trait	638	Intelligent	3.4	Rare	Stellaris					
+trait	639	Rapid Breeders	3.0	Rare	Stellaris					
+trait	640	Mind over Matter	5.6	Epic	Stellaris					
+trait	641	Lithoid	4.2	Elite	Stellaris					
+trait	642	Hive-Minded	4.8	Elite	Stellaris					
+trait	643	Ocean-Born	3.2	Rare	Stellaris					
+trait	644	Iron-Willed	3.0	Rare	RimWorld					
+trait	645	Kind	2.6	Uncommon	RimWorld					
+trait	646	Psychopath	3.8	Rare	RimWorld					
+trait	647	Cannibal	3.4	Rare	RimWorld					
+trait	648	Arsonist	2.8	Uncommon	RimWorld					
+trait	649	Strange Mood	4.4	Elite	Dwarf Fortress					
+trait	650	Traffic Engineer	3.2	Rare	Cities Skylines					
+trait	651	Zoning Intuition	2.8	Uncommon	Cities Skylines					
+trait	652	Planeswalker's Spark	7.6	Mythical	MTG					
+trait	653	Backtalk	2.4	Uncommon	Life is Strange					
+trait	654	Glow-Touched	4.0	Elite	I Was a Teenage Exocolonist					
+trait	655	Root Access	4.2	Elite	Tron 2.0					
+trait	656	Hexagonal Skill Grid	3.8	Rare	Q-UP					
+trait	657	The City Must Survive	3.0	Rare	Frostpunk					
+trait	658	Rock and Stone	1.6	Common	Deep Rock Galactic					
+trait	659	Keen Hearing	2.2	Uncommon	Project Zomboid					
+trait	660	Handy	2.0	Uncommon	Project Zomboid					
+trait	661	The Factory Must Grow	2.4	Uncommon	Factorio					
+trait	662	MIT Graduate	2.2	Uncommon	Half-Life					
+trait	663	Silent Protagonist	1.8	Common	Half-Life					
+trait	664	Employed by the G-Man	6.4	Legendary	Half-Life					
 familiar	1	ORT	9.8	Transcendent	Fate	REF				
 familiar	2	Blair	4.3	Elite	Soul Eater					
 familiar	3	Overgrown Rover	6.7	Legendary	One Punch Man					
@@ -1025,7 +1089,7 @@ familiar	88	Lupusregina Beta	4.0	Elite	Overlord
 familiar	89	Solution Epsilon	4.1	Elite	Overlord					
 familiar	90	Entoma Zeta	3.2	Rare	Overlord					
 familiar	91	Ramiel	5.9	Epic	Evangelion					
-familiar	92	Yasaka	7.0	Mythical	DxD					
+familiar	92	Yasaka	7.0	Mythical	Highschool DxD					
 familiar	93	Pandora's Actor	5.6	Epic	Overlord					
 familiar	94	The thing	4.2	Elite	John Carpenter's The Thing					
 familiar	95	Black Nomu	5.5	Epic	MHA					
@@ -1075,7 +1139,7 @@ familiar	138	Ibaraki Douji	4.8	Elite	Fate
 familiar	139	Tamamo no Mae	5.5	Epic	Fate					
 familiar	140	Streetcleaners	2.8	Uncommon	Ultrakill					
 familiar	141	Guttermen & Guttertank	3.7	Rare	Ultrakill					
-familiar	142	Ultron	6.1	Legendary	Age of Ultron					
+familiar	142	Ultron	6.1	Legendary	MCU					
 familiar	143	Tali	3.1	Rare	Mass Effect					
 familiar	144	Crow of Judgement	0.4	Trash	Generic					
 familiar	145	Lil' Leviathan	3.7	Rare	Worm					
@@ -1127,7 +1191,7 @@ familiar	190	Carla	4.5	Elite	Fairy Tail
 familiar	191	Daisy	0.2	Trash	Doom					
 familiar	192	Dogmeat	1.7	Common	Fallout					
 familiar	193	Liberty Prime	5.6	Epic	Fallout	REF				
-familiar	194	Toaster	2.7	Uncommon	Fallout: Old World Blues					
+familiar	194	Toaster	2.7	Uncommon	Fallout New Vegas					
 familiar	195	Taurus	2.8	Uncommon	Fairy Tail					
 familiar	196	Aquarius	3.8	Rare	Fairy Tail					
 familiar	197	Cancer	2.7	Uncommon	Fairy Tail					
@@ -1245,7 +1309,7 @@ familiar	308	Salt Golem	0.1	Trash	Generic
 familiar	309	D'vorah	2.9	Uncommon	Mortal Kombat					
 familiar	310	Triborg	3.8	Rare	Mortal Kombat					
 familiar	311	Azmuth	9.2	Transcendent	Ben 10					
-familiar	312	Mipha	4.1	Elite	Legend of Zelda					
+familiar	312	Mipha	4.1	Elite	The Legend of Zelda					
 familiar	313	Factory Core	4.7	Elite	Generic					
 familiar	314	Mech Core	6.5	Legendary	Generic					
 familiar	315	Connor	1.8	Common	Detroit Become Human					
@@ -1256,8 +1320,8 @@ familiar	319	B-2 Battle Droids	1.8	Common	Star Wars
 familiar	320	KX Executor Droids	3.0	Rare	Star Wars					
 familiar	321	IG-88	3.4	Rare	Star Wars					
 familiar	322	2-1B surgical droid	2.6	Uncommon	Star Wars					
-familiar	323	Imp Midna	3.6	Rare	Legend of Zelda					
-familiar	324	Midna	5.3	Epic	Legend of Zelda					
+familiar	323	Imp Midna	3.6	Rare	The Legend of Zelda					
+familiar	324	Midna	5.3	Epic	The Legend of Zelda					
 familiar	325	Seth	6.3	Legendary	Street Fighter					
 familiar	326	Horus	4.6	Elite	JoJo					
 familiar	327	The Fool	3.9	Rare	JoJo					
@@ -1369,7 +1433,7 @@ familiar	432	A Tanuki	0.5	Trash	Generic
 familiar	433	Arvak	1.4	Common	Skyrim					
 familiar	434	Appa	2.5	Uncommon	Avatar					
 familiar	435	Hamsuke	3.5	Rare	Overlord					
-familiar	436	Militech Chimera	3.5	Rare	Cyberpunk					
+familiar	436	Militech Chimera	3.5	Rare	Cyberpunk 2077					
 familiar	437	Butter Passing Robot	0.6	Trash	Rick and Morty					
 familiar	438	Magnamalo	3.7	Rare	Monster Hunter					
 familiar	439	Lunagaron	4.0	Elite	Monster Hunter					
@@ -1394,6 +1458,64 @@ familiar	457	Investiggator	2.6	Uncommon	Generic
 familiar	458	Coco Jumbo	1.7	Common	JoJo					
 familiar	459	Hollow Army	2.5	Uncommon	Dark Souls					
 familiar	460	Lopunny	2.3	Uncommon	Pokemon					
+familiar	461	Lamball	1.2	Common	Palworld					
+familiar	462	Chikipi	1.0	Common	Palworld					
+familiar	463	Lifmunk	2.2	Uncommon	Palworld					
+familiar	464	Foxparks	2.4	Uncommon	Palworld					
+familiar	465	Pengullet	2.0	Uncommon	Palworld					
+familiar	466	Tocotoco	2.2	Uncommon	Palworld					
+familiar	467	Tanzee	2.6	Uncommon	Palworld					
+familiar	468	Leezpunk	2.8	Uncommon	Palworld					
+familiar	469	Lunaris	3.4	Rare	Palworld					
+familiar	470	Bushi	4.2	Elite	Palworld					
+familiar	471	Grizzbolt	4.6	Elite	Palworld					
+familiar	472	Palworld Anubis	5.4	Epic	Palworld					
+familiar	473	Strider	2.8	Uncommon	Horizon Zero Dawn					
+familiar	474	Broadhead	3.0	Rare	Horizon Zero Dawn					
+familiar	475	Sawtooth	4.2	Elite	Horizon Zero Dawn					
+familiar	476	Stalker	4.6	Elite	Horizon Zero Dawn					
+familiar	477	Pink Slime	1.2	Common	Slime Rancher					
+familiar	478	Tabby Slime	1.8	Common	Slime Rancher					
+familiar	479	Phosphor Slime	2.2	Uncommon	Slime Rancher					
+familiar	480	Hunter Slime	3.0	Rare	Slime Rancher					
+familiar	481	Honey Slime	2.4	Uncommon	Slime Rancher					
+familiar	482	Puddle Slime	2.6	Uncommon	Slime Rancher					
+familiar	483	Quantum Slime	3.8	Rare	Slime Rancher					
+familiar	484	Lucky Slime	4.6	Elite	Slime Rancher					
+familiar	485	Gold Slime	5.8	Epic	Slime Rancher					
+familiar	486	Tiyanki Matriarch	5.2	Epic	Stellaris					
+familiar	487	Space Amoeba	4.4	Elite	Stellaris					
+familiar	488	War Dog	2.2	Uncommon	Dwarf Fortress					
+familiar	489	Barn Cat	1.4	Common	Dwarf Fortress					
+familiar	490	Grizzly Bear	3.2	Rare	Dwarf Fortress					
+familiar	491	Cuddlefish	2.8	Uncommon	Subnautica					
+familiar	492	Lizard Doggo	2.4	Uncommon	Satisfactory					
+familiar	493	Chirpy	1.6	Common	Cities Skylines					
+familiar	494	Shivan Dragon	6.4	Legendary	MTG					
+familiar	495	Captain Boomer	4.8	Elite	Q-UP					
+familiar	496	Peska the Troll	3.2	Rare	Q-UP					
+familiar	497	HyperQbe the Streamer	3.4	Rare	Q-UP					
+familiar	498	Mercury	3.6	Rare	Tron 2.0					
+familiar	499	Data Wraith	4.0	Elite	Tron 2.0					
+familiar	500	Spirit Doe	4.2	Elite	Life is Strange					
+familiar	501	Spidertron	5.6	Epic	Factorio					
+familiar	502	Little Scout	2.2	Uncommon	Outer Wilds					
+familiar	503	Automaton	4.4	Elite	Frostpunk					
+familiar	504	Duplicant	2.0	Uncommon	Oxygen Not Included					
+familiar	505	Tamed Wolf	2.6	Uncommon	Valheim					
+familiar	506	Molly	3.0	Rare	Deep Rock Galactic					
+familiar	507	Beaver	1.4	Common	Timberborn					
+familiar	508	Golem	3.4	Rare	Timberborn					
+familiar	509	Goose the Flerken	4.4	Elite	MCU					
+familiar	510	Miss Minutes	3.2	Rare	MCU					
+familiar	511	Coalossal	4.4	Elite	Pokemon					
+familiar	512	The Last Stag	3.4	Rare	Hollow Knight					
+familiar	513	Thomas the Tank Engine	2.8	Uncommon	Thomas & Friends					
+familiar	514	Lamarr	2.4	Uncommon	Half-Life					
+familiar	515	DØG	5.2	Epic	Half-Life					
+familiar	516	Snark	2.0	Uncommon	Half-Life					
+familiar	517	Chumtoad	1.6	Common	Half-Life					
+familiar	518	Vortigaunt Ally	4.0	Elite	Half-Life					
 item	1	Gae Bolg	5.3	Epic	Fate					
 item	2	Excalibur the Sword of Promised Victory	7.0	Mythical	Fate					
 item	3	Laevatein	7.8	Mythical	Fate					
@@ -1408,9 +1530,9 @@ item	11	Spear of Longinus X	5.5	Epic	Evangelion
 item	12	Invisible Air	4.0	Elite	Fate					
 item	13	Gae Buidhe	4.2	Elite	Fate					
 item	14	Gae Dearg	4.8	Elite	Fate					
-item	15	Gram	6.0	Legendary	DxD					
-item	16	Durandal	5.3	Epic	DxD					
-item	17	Sword Birth	5.0	Epic	DxD					
+item	15	Gram	6.0	Legendary	Highschool DxD					
+item	16	Durandal	5.3	Epic	Highschool DxD					
+item	17	Sword Birth	5.0	Epic	Highschool DxD					
 item	18	A skeleton	0.3	Trash	Generic					
 item	19	Auric Tesla Armor	7.0	Mythical	Calamity Mod					
 item	20	Enuma Elish	8.7	Divine	Fate	REF				
@@ -1431,7 +1553,7 @@ item	34	Grimoire of the Aeromancer	4.4	Elite	Generic
 item	35	Alchemilia	3.6	Rare	Generic					
 item	36	The Assembly	5.2	Epic	Generic	REF				
 item	37	Bar of Vibranium	5.1	Epic	Marvel					
-item	38	Angel Ring	4.7	Elite	Modded Minecraft					
+item	38	Angel Ring	4.7	Elite	Minecraft					
 item	39	Black Barrel	7.4	Mythical	Fate	REF				
 item	40	Black Key Rites	4.2	Elite	Fate					
 item	41	Shroud of Martin	4.5	Elite	Fate					
@@ -1470,13 +1592,13 @@ item	73	Blackrazor	5.5	Epic	DnD
 item	74	Verminshroud	4.2	Elite	DnD					
 item	75	Topaz Annihilator	4.7	Elite	DnD					
 item	76	Hypnos' Mask	3.5	Rare	Generic					
-item	77	Blade Smith	5.1	Epic	DxD					
-item	78	Dimension Lost	8.2	Divine	DxD	REF				
-item	79	Sephiroth Graal	7.4	Mythical	DxD					
+item	77	Blade Smith	5.1	Epic	Highschool DxD					
+item	78	Dimension Lost	8.2	Divine	Highschool DxD	REF				
+item	79	Sephiroth Graal	7.4	Mythical	Highschool DxD					
 item	80	Alchemist's Cauldron	3.6	Rare	Generic					
 item	81	Dragon Vessel Intermediate	4.2	Elite	Generic					
 item	82	Dragon Vessel Major	5.3	Epic	Generic					
-item	83	Absorption Line	4.7	Elite	DxD					
+item	83	Absorption Line	4.7	Elite	Highschool DxD					
 item	84	Dreadon's Gaming Chair	4.9	Elite	Calamity Mod					
 item	85	Returner's Clock	4.9	Elite	Generic	REF				
 item	86	Havel's Greatshield	2.2	Uncommon	Dark Souls					
@@ -1637,16 +1759,16 @@ item	240	Cloak of Levitation	4.6	Elite	Marvel
 item	241	Plague Canister	5.7	Epic	Calamity Mod					
 item	242	Mehrunes Razor	7.1	Mythical	Skyrim					
 item	243	Skeleton Key	8.2	Divine	Skyrim					
-item	244	Cloak of Invisibility	2.4	Uncommon	Harry Potter					
-item	245	Annihilation Maker	7.6	Mythical	DxD					
-item	246	Unknown Dictator	5.8	Epic	DxD					
-item	247	Zenith Tempest	7.6	Mythical	DxD					
-item	248	Star Buster Blaster	7.0	Mythical	DxD					
-item	249	Canis Lycaon	6.1	Legendary	DxD					
-item	250	True Longinus	7.4	Mythical	DxD					
-item	251	Telos Karma	8.5	Divine	DxD	REF				
-item	252	Regulus Nemea	6.2	Legendary	DxD					
-item	253	Nereid Kyre	7.4	Mythical	DxD					
+item	244	Cloak of Elvenkind	2.4	Uncommon	DnD					
+item	245	Annihilation Maker	7.6	Mythical	Highschool DxD					
+item	246	Unknown Dictator	5.8	Epic	Highschool DxD					
+item	247	Zenith Tempest	7.6	Mythical	Highschool DxD					
+item	248	Star Buster Blaster	7.0	Mythical	Highschool DxD					
+item	249	Canis Lycaon	6.1	Legendary	Highschool DxD					
+item	250	True Longinus	7.4	Mythical	Highschool DxD					
+item	251	Telos Karma	8.5	Divine	Highschool DxD	REF				
+item	252	Regulus Nemea	6.2	Legendary	Highschool DxD					
+item	253	Nereid Kyre	7.4	Mythical	Highschool DxD					
 item	254	Can of Pain	1.5	Common	Generic					
 item	255	Nights Edge	4.2	Elite	Terraria					
 item	256	Moonveil	3.5	Rare	Elden Ring					
@@ -1758,10 +1880,10 @@ item	361	Great Swamp Ring	2.9	Uncommon	Dark Souls
 item	362	Chaos Witch's Ring	3.8	Rare	Generic					
 item	363	Sage's Ring	3.1	Rare	Dark Souls					
 item	364	Sahelanthropus	5.1	Epic	Metal Gear					
-item	365	Twilight Healing	4.8	Elite	DxD					
-item	366	Gravity Jail	3.8	Rare	DxD					
-item	367	Boosted Gear	7.9	Mythical	DxD					
-item	368	Divine Dividing	7.8	Mythical	DxD					
+item	365	Twilight Healing	4.8	Elite	Highschool DxD					
+item	366	Gravity Jail	3.8	Rare	Highschool DxD					
+item	367	Boosted Gear	7.9	Mythical	Highschool DxD					
+item	368	Divine Dividing	7.8	Mythical	Highschool DxD					
 item	369	Holy Collider	6.0	Legendary	Calamity Mod					
 item	370	Jackal & Casull	3.7	Rare	Hellsing					
 item	371	Dragon Slayer	2.6	Uncommon	Berserk					
@@ -1893,7 +2015,7 @@ item	496	Neuralyzer	3.8	Rare	Men in Black
 item	497	Jarate Training Kit	0.8	Trash	Team Fortress 2					
 item	498	1 UP	6.1	Legendary	Mario					
 item	499	Portal Gun	3.4	Rare	Portal					
-item	500	Gordon's Crowbar	1.4	Common	Half Life					
+item	500	Gordon's Crowbar	1.4	Common	Half-Life					
 item	501	Stamin-Up	1.8	Common	Call of Duty					
 item	502	Deadshot Daiquiri	2.2	Uncommon	Call of Duty					
 item	503	Vulture's Aid	2.4	Uncommon	Call of Duty					
@@ -1917,25 +2039,25 @@ item	520	Blades of Chaos	6.8	Legendary	God of War
 item	521	Blade of Olympus	7.5	Mythical	God of War					
 item	522	Leviathan Axe	5.0	Epic	God of War					
 item	523	Draupnir Spear	4.6	Elite	God of War					
-item	524	Canto	3.3	Rare	Cyberpunk					
+item	524	Canto	3.3	Rare	Cyberpunk 2077					
 item	525	Kano's Eye	3.1	Rare	Mortal Kombat					
 item	526	Hsu's Cybernetic Heart	4.5	Elite	Mortal Kombat					
 item	527	Classic Omnitrix	5.8	Epic	Ben 10					
 item	528	Omnitrix	9.3	Transcendent	Ben 10					
-item	529	Chaquetrix	6.9	Legendary	Chaquetrix					
+item	529	Chaquetrix	6.9	Legendary	Ben 10					
 item	530	Divine Stone	5.8	Epic	Arifureta					
 item	531	Falcon's Eye	1.8	Common	Xiaolin Showdown					
 item	532	Mantis Flip Coin	1.5	Common	Xiaolin Showdown					
 item	533	Captain's Shield	4.3	Elite	Marvel					
 item	534	Guardian Shield	2.5	Uncommon	God of War					
-item	535	Shield Saw	3.1	Rare	Doomslayer					
+item	535	Shield Saw	3.1	Rare	Doom					
 item	536	Feedbacker	5.1	Epic	Ultrakill					
 item	537	Marksman Revolver	4.8	Elite	Ultrakill					
 item	538	Dust Supply Crate	5.1	Epic	RWBY					
 item	539	Crescent Rose	2.2	Uncommon	RWBY					
 item	540	Myrtenaster	2.9	Uncommon	RWBY					
 item	541	Sento	4.9	Elite	Mortal Kombat					
-item	542	Light Cycle	2.2	Uncommon	Tron					
+item	542	Light Cycle	2.2	Uncommon	Tron 2.0					
 item	543	Robot Workbench	4.6	Elite	Fallout					
 item	544	Robot Assembly	5.6	Epic	Generic					
 item	545	Web Fluid & Shooters	3.4	Rare	Spider-Man					
@@ -1959,7 +2081,7 @@ item	562	Yukari Fumo	4.8	Elite	Touhou
 item	563	Blue Spider Lily	6.3	Legendary	Demon Slayer					
 item	564	Volendrung	4.2	Elite	Elder Scrolls					
 item	565	Reaper's Census	4.6	Elite	Generic					
-item	566	Venom Vial	2.6	Uncommon	Batman/DC					
+item	566	Venom Vial	2.6	Uncommon	Batman					
 item	567	Origin Rounds	3.8	Rare	Fate					
 item	568	Erza Fumo	2.4	Uncommon	Fairy Tail					
 item	569	Lancelot Albion	6.1	Legendary	Code Geass					
@@ -2039,7 +2161,7 @@ item	642	Dust Mines Key	5.2	Epic	Generic
 item	643	Magic Lake Key	4.6	Elite	RWBY					
 item	644	Hot Springs Key	4.1	Elite	Generic					
 item	645	Apartments Key	5.1	Epic	Generic					
-item	646	Silver Samurai Armor	5.1	Epic	The Wolverine/MCU					
+item	646	Silver Samurai Armor	5.1	Epic	MCU					
 item	647	Psycho	1.1	Common	Fallout					
 item	648	Mentats	2.0	Uncommon	Fallout					
 item	649	Buffout	1.9	Common	Fallout					
@@ -2244,6 +2366,165 @@ item	847	Heavenly Tribulation Ticket	3.8	Rare	Generic
 item	848	Gravitational Beam Emitter	5.9	Epic	Blame					
 item	849	The City	9.6	Transcendent	Blame	REF				
 item	850	Erdtree Seed	4.2	Elite	Elden Ring					
+item	851	Undo Stone	3.5	Rare	Generic					
+item	852	Tree Graft	6.0	Legendary	Generic					
+item	853	Chaos Die	6.5	Legendary	Generic					
+item	854	Greater Wild Roll	7.0	Mythical	Generic					
+item	855	Duplicate	6.0	Legendary	Generic					
+item	856	Lifeline	3.0	Rare	Generic					
+item	857	Recall	3.5	Rare	Generic					
+item	858	Shuffle	4.0	Elite	Generic					
+item	859	Node Swap	5.0	Epic	Generic					
+item	860	Reshuffle	5.5	Epic	Generic					
+item	861	Pal Sphere	1.6	Common	Palworld					
+item	862	Mega Sphere	2.4	Uncommon	Palworld					
+item	863	Giga Sphere	3.2	Rare	Palworld					
+item	864	Hyper Sphere	4.0	Elite	Palworld					
+item	865	Ultra Sphere	4.8	Elite	Palworld					
+item	866	Legendary Sphere	5.8	Epic	Palworld					
+item	867	Portable Miner	2.2	Uncommon	Satisfactory					
+item	868	Chainsaw	2.4	Uncommon	Satisfactory					
+item	869	Xeno-Zapper	2.0	Uncommon	Satisfactory					
+item	870	Rebar Gun	2.6	Uncommon	Satisfactory					
+item	871	Nobelisk Detonator	3.0	Rare	Satisfactory					
+item	872	Object Scanner	2.8	Uncommon	Satisfactory					
+item	873	Blade Runners	3.2	Rare	Satisfactory					
+item	874	Jetpack	4.2	Elite	Satisfactory					
+item	875	Gas Mask	2.2	Uncommon	Satisfactory					
+item	876	Mercer Sphere	5.4	Epic	Satisfactory					
+item	877	Somersloop	5.6	Epic	Satisfactory					
+item	878	Analysis Visor	2.6	Uncommon	No Man's Sky					
+item	879	Terrain Manipulator	3.4	Rare	No Man's Sky					
+item	880	Boltcaster	2.8	Uncommon	No Man's Sky					
+item	881	Blaze Javelin	3.6	Rare	No Man's Sky					
+item	882	Hyperdrive	4.6	Elite	No Man's Sky					
+item	883	Minotaur Exocraft	5.2	Epic	No Man's Sky					
+item	884	Living Ship	6.8	Legendary	No Man's Sky					
+item	885	Foundation	2.4	Uncommon	Dyson Sphere Program					
+item	886	Solar Sail	3.0	Rare	Dyson Sphere Program					
+item	887	Proliferator	3.8	Rare	Dyson Sphere Program					
+item	888	Strange Matter	5.2	Epic	Dyson Sphere Program					
+item	889	Antimatter Fuel Rod	6.2	Legendary	Dyson Sphere Program					
+item	890	EM Rail Ejector	4.4	Elite	Dyson Sphere Program					
+item	891	Gravity Gloves	3.8	Rare	Half-Life					
+item	892	Combine Pistol	3.0	Rare	Half-Life					
+item	893	Combine Shotgun	3.6	Rare	Half-Life					
+item	894	Combine SMG	3.4	Rare	Half-Life					
+item	895	Xen Grenade	2.8	Uncommon	Half-Life					
+item	896	Climbing Axe	2.4	Uncommon	Tomb Raider					
+item	897	Recurve Bow	2.8	Uncommon	Tomb Raider					
+item	898	Heavy Pistol	2.6	Uncommon	Tomb Raider					
+item	899	Rope Ascender	3.4	Rare	Tomb Raider					
+item	900	Seaglide	2.6	Uncommon	Subnautica					
+item	901	Seamoth	4.2	Elite	Subnautica					
+item	902	Prawn Suit	5.2	Epic	Subnautica					
+item	903	Cyclops	6.4	Legendary	Subnautica					
+item	904	Habitat Builder	3.6	Rare	Subnautica					
+item	905	Stasis Rifle	4.0	Elite	Subnautica					
+item	906	Thermoblade	3.0	Rare	Subnautica					
+item	907	Ultra Glide Fins	2.4	Uncommon	Subnautica					
+item	908	Focus	3.2	Rare	Horizon Zero Dawn					
+item	909	Shield-Weaver	5.6	Epic	Horizon Zero Dawn					
+item	910	Ropecaster	3.4	Rare	Horizon Zero Dawn					
+item	911	Tripcaster	3.2	Rare	Horizon Zero Dawn					
+item	912	Blast Sling	3.8	Rare	Horizon Zero Dawn					
+item	913	Tearblaster	3.6	Rare	Horizon Zero Dawn					
+item	914	Black Lotus	8.6	Divine	MTG					
+item	915	Mox Pearl	7.2	Mythical	MTG					
+item	916	Mox Ruby	7.2	Mythical	MTG					
+item	917	Mox Sapphire	7.4	Mythical	MTG					
+item	918	Mox Jet	7.2	Mythical	MTG					
+item	919	Mox Emerald	7.2	Mythical	MTG					
+item	920	Charge Rifle	4.4	Elite	RimWorld					
+item	921	Charge Lance	4.8	Elite	RimWorld					
+item	922	Healer Mech Serum	5.4	Epic	RimWorld					
+item	923	Resurrector Mech Serum	6.2	Legendary	RimWorld					
+item	924	Tranquilizer Rifle	3.2	Rare	Deus Ex					
+item	925	Zenith 10mm Pistol	2.8	Uncommon	Deus Ex					
+item	926	Nanoceramic Blade	3.6	Rare	Deus Ex					
+item	927	Service Weapon	5.0	Epic	Control					
+item	928	Hotline	4.4	Elite	Control					
+item	929	Hedron Resonance Amplifier	4.6	Elite	Control					
+item	930	Vacpack	3.0	Rare	Slime Rancher					
+item	931	Slime Key	3.4	Rare	Slime Rancher					
+item	932	Flak Cannon	5.0	Epic	Genome Guardian					
+item	933	Blast Shotgun	4.2	Elite	Genome Guardian					
+item	934	Dice Turret	3.8	Rare	Genome Guardian					
+item	935	Idol of Rebirth	4.6	Elite	Divinity Original Sin					
+item	936	Resurrection Scroll	3.0	Rare	Divinity Original Sin					
+item	937	Q-Up Coin	2.0	Uncommon	Q-UP					
+item	938	Identity Disc	4.0	Elite	Tron 2.0					
+item	939	Impossible Shard	4.6	Elite	Q-UP					
+item	940	Passenger Blimp	3.4	Rare	Cities Skylines					
+item	941	Space Elevator	7.2	Mythical	Cities Skylines					
+item	942	Instant Camera	1.8	Common	Life is Strange					
+item	943	Planetary Shield	5.8	Epic	Dyson Sphere Program					
+item	944	Vertical Launching Silo	5.0	Epic	Dyson Sphere Program					
+item	945	Power Armor	4.6	Elite	Factorio					
+item	946	Personal Roboport	4.2	Elite	Factorio					
+item	947	Blueprint Book	3.6	Rare	Factorio					
+item	948	Scout Launcher	2.8	Uncommon	Outer Wilds					
+item	949	Signalscope	2.6	Uncommon	Outer Wilds					
+item	950	Ash Twin Project	7.8	Mythical	Outer Wilds					
+item	951	The Generator	6.8	Legendary	Frostpunk					
+item	952	Steam Hub	4.0	Elite	Frostpunk					
+item	953	Atmo Suit	3.2	Rare	Oxygen Not Included					
+item	954	Super Computer	2.8	Uncommon	Oxygen Not Included					
+item	955	Drakkar	4.2	Elite	Valheim					
+item	956	Megingjord	4.8	Elite	Valheim					
+item	957	Wishbone	3.6	Rare	Valheim					
+item	958	Pickaxe	2.2	Uncommon	Deep Rock Galactic					
+item	959	Flare Gun	2.4	Uncommon	Deep Rock Galactic					
+item	960	Terrain Tool	2.8	Uncommon	Astroneer					
+item	961	Shuttle	3.8	Rare	Astroneer					
+item	962	RTG	4.4	Elite	Astroneer					
+item	963	Spiked Baseball Bat	2.4	Uncommon	Project Zomboid					
+item	964	Sledgehammer	2.8	Uncommon	Project Zomboid					
+item	965	Generator	3.0	Rare	Project Zomboid					
+item	966	Galaxy Sword	5.2	Epic	Stardew Valley					
+item	967	Junimo Hut	3.8	Rare	Stardew Valley					
+item	968	SHIELD Flying Car	4.0	Elite	Marvel					
+item	969	Darkhold	7.6	Mythical	MCU					
+item	970	Book of Vishanti	7.2	Mythical	MCU					
+item	971	Ten Rings	6.4	Legendary	MCU					
+item	972	Loki's Sceptre	7.0	Mythical	MCU					
+item	973	Staff of the Living Tribunal	4.6	Elite	MCU					
+item	974	TemPad	5.8	Epic	MCU					
+item	975	TVA Pruning Baton	4.6	Elite	MCU					
+item	976	Reset Charge	5.2	Epic	MCU					
+item	977	Yaka Arrow	4.4	Elite	MCU					
+item	978	Yondu's Fin	3.8	Rare	MCU					
+item	979	Photostatic Veil	3.4	Rare	MCU					
+item	980	CPH4	5.2	Epic	Lucy					
+item	981	Time Loop Cave	5.2	Epic	Palm Springs					
+item	982	Electric Locomotive	4.6	Elite	Satisfactory					
+item	983	Freight Wagon	3.4	Rare	Satisfactory					
+item	984	Locomotive	4.2	Elite	Factorio					
+item	985	Cargo Wagon	3.2	Rare	Factorio					
+item	986	Rail Car	3.0	Rare	Astroneer					
+item	987	Mugen Train	5.6	Epic	Demon Slayer					
+item	988	Puffing Tom	4.4	Elite	One Piece					
+item	989	Minecart Shotgun	4.0	Elite	Dwarf Fortress					
+item	990	Ishimura Tram	3.2	Rare	Dead Space					
+item	991	Ecliptic Express	5.0	Epic	Resident Evil					
+item	992	Powered Rail	2.2	Uncommon	Minecraft					
+item	993	Spirit Train	4.8	Elite	The Legend of Zelda					
+item	994	Passing Train	2.0	Uncommon	Stardew Valley					
+item	995	Molentary Express	4.2	Elite	Professor Layton					
+item	996	Galaxy Express 999	6.8	Legendary	Galaxy Express 999					
+item	997	Kotetsujo	4.8	Elite	Kabaneri of the Iron Fortress					
+item	998	Snowpiercer	6.6	Legendary	Snowpiercer					
+item	999	The Engine	6.0	Legendary	Snowpiercer					
+item	1000	Polar Express	4.6	Elite	The Polar Express					
+item	1001	Orient Express	3.6	Rare	Agatha Christie					
+item	1002	Source Code	5.4	Epic	Source Code					
+item	1003	Jules Verne Time Train	7.2	Mythical	Back to the Future					
+item	1004	Spatchcock	4.0	Elite	Sunless Skies					
+item	1005	War Rig	4.8	Elite	Mad Max					
+item	1006	Armored Train	5.4	Epic	Battlefield					
+item	1007	Aurora	5.0	Epic	Metro					
+item	1008	Sea Railway	3.8	Rare	Studio Ghibli					
+item	1009	LLM Workstation Laptop	3.6	Rare	Generic					
 ability	1	Tinder	1.3	Common	Generic					
 ability	2	Ember	2.3	Uncommon	Generic					
 ability	3	Blaze	3.3	Rare	Generic					
@@ -2340,15 +2621,15 @@ ability	93	Ice Manipulation	4.8	Elite	MHA
 ability	94	Half Hot Half Cold	5.6	Epic	MHA					
 ability	95	Frozen Heart	4.8	Elite	Generic	REF				
 ability	96	Cryokinesis	4.5	Elite	Generic					
-ability	97	White Album	4.8	Elite	JoJo Stand					
+ability	97	White Album	4.8	Elite	JoJo					
 ability	98	Cold Wave	3.2	Rare	Generic					
 ability	99	Frigid Winds	4.3	Elite	Generic					
 ability	100	Cryomaster	7.5	Mythical	Toaru					
 ability	101	Snow Warning	2.3	Uncommon	Generic					
 ability	102	Blizzard	3.7	Rare	Generic					
 ability	103	Snow Manipulation	3.4	Rare	Generic					
-ability	104	Snow Logia	4.9	Elite	Monet from One Piece					
-ability	105	Ice Logia	7.1	Mythical	Aokiji from One Piece					
+ability	104	Snow Logia	4.9	Elite	One Piece					
+ability	105	Ice Logia	7.1	Mythical	One Piece					
 ability	106	Freezing Breath	3.1	Rare	Generic					
 ability	107	Ice Sprout	2.2	Uncommon	Generic					
 ability	108	Black Ice	4.3	Elite	Generic					
@@ -2400,7 +2681,7 @@ ability	153	Storm Call	5.8	Epic	Generic
 ability	154	Lightning Form	4.4	Elite	Generic					
 ability	155	Radio Waves	3.1	Rare	MHA					
 ability	156	Impulse	2.0	Uncommon	Generic					
-ability	157	Godspeed	4.2	Elite	HxH					
+ability	157	Godspeed	4.2	Elite	Hunter x Hunter					
 ability	158	Electrokinesis	4.8	Elite	Generic					
 ability	159	Electromagnetokinesis	6.0	Legendary	Generic					
 ability	160	Assign	3.3	Rare	Generic					
@@ -2481,7 +2762,7 @@ ability	234	Desert Logia	6.2	Legendary	One Piece
 ability	235	Blackout	2.4	Uncommon	Generic					
 ability	236	Shadow Travel	3.4	Rare	Generic					
 ability	237	Shadow Hands	3.2	Rare	Generic					
-ability	238	Sethan	4.6	Elite	Sethan from JoJo	REF				
+ability	238	Sethan	4.6	Elite	JoJo	REF				
 ability	239	Shadow Puppeteer	3.7	Rare	Naruto	REF				
 ability	240	Shadow Tag	3.0	Rare	Generic					
 ability	241	Shadow Dart	1.8	Common	Generic					
@@ -2534,7 +2815,7 @@ ability	287	Exorcist's Light	2.3	Uncommon	Generic
 ability	288	Invisibility	2.5	Uncommon	Generic					
 ability	289	Flash Grenade	1.8	Common	Generic					
 ability	290	Light of Glory	3.3	Rare	Generic					
-ability	291	Light Grenade	2.8	Uncommon	DBZ					
+ability	291	Light Grenade	2.8	Uncommon	Dragon Ball					
 ability	292	Beam	3.4	Rare	Generic					
 ability	293	Lesser Blessing	2.6	Uncommon	Generic					
 ability	294	Blessing	3.5	Rare	Generic					
@@ -2562,8 +2843,8 @@ ability	315	Healing Light	3.5	Rare	Generic
 ability	316	Greater Healing Light	4.3	Elite	Generic					
 ability	317	Divine Healing Light	5.5	Epic	Generic					
 ability	318	Pillar of Light	3.4	Rare	Generic					
-ability	319	Judgement Call	4.8	Elite	EBF					
-ability	320	Genesis	7.7	Mythical	EBF	REF				
+ability	319	Judgement Call	4.8	Elite	Epic Battle Fantasy					
+ability	320	Genesis	7.7	Mythical	Epic Battle Fantasy	REF				
 ability	321	Light Trick	3.4	Rare	Generic					
 ability	322	Light Speed	4.7	Elite	Generic					
 ability	323	Sanctuary	5.4	Epic	Generic					
@@ -2716,14 +2997,14 @@ ability	469	Portal Creation	5.5	Epic	Generic
 ability	470	Doormaker	7.6	Mythical	Generic					
 ability	471	Clairvoyance	4.4	Elite	Generic					
 ability	472	Super Jump	1.8	Common	Generic					
-ability	473	Shaper	6.9	Legendary	Worm Panacea					
+ability	473	Shaper	6.9	Legendary	Worm					
 ability	474	Tool Manipulation	3.5	Rare	Generic					
 ability	475	Energy Drain	4.5	Elite	Generic					
 ability	476	Double Jump	1.5	Common	Generic					
 ability	477	Sky Jumper	2.7	Uncommon	Generic					
 ability	478	Clothes Beam	2.6	Uncommon	Dragon Ball					
 ability	479	Spirit Gathering	7.2	Mythical	Generic					
-ability	480	Power of Destruction	6.8	Legendary	DxD					
+ability	480	Power of Destruction	6.8	Legendary	Highschool DxD					
 ability	481	Full Counter	7.1	Mythical	Nanatsu no Taizai					
 ability	482	Destruction Incarnate	8.1	Divine	Generic					
 ability	483	Ice Man	9.2	Transcendent	Marvel					
@@ -2781,7 +3062,7 @@ ability	534	Penetrate	4.6	Elite	Generic	REF
 ability	535	Boost	4.9	Elite	Generic					
 ability	536	Delay	3.8	Rare	Generic					
 ability	537	Permeation	4.6	Elite	MHA					
-ability	538	Dress Break	3.4	Rare	DxD					
+ability	538	Dress Break	3.4	Rare	Highschool DxD					
 ability	539	Multiplicity	4.7	Elite	Generic					
 ability	540	Deduction	4.2	Elite	Worm					
 ability	541	Condemnation	7.1	Mythical	Generic	REF				
@@ -2835,12 +3116,12 @@ ability	588	Rubber Body	3.7	Rare	Generic
 ability	589	Magic Jammer	4.8	Elite	Generic					
 ability	590	Contract Creation	3.7	Rare	Generic					
 ability	591	Binding Vow	4.5	Elite	Jujutsu Kaisen					
-ability	592	Chop Chop	3.7	Rare	One Piece Buggy					
+ability	592	Chop Chop	3.7	Rare	One Piece					
 ability	593	Lord of Shades	7.0	Mythical	Hollow Knight					
 ability	594	Almighty Push	4.8	Elite	Naruto					
 ability	595	Universal Pull	4.1	Elite	Naruto					
-ability	596	Operation	7.2	Mythical	One Piece Trafalgar Law					
-ability	597	Azure Dragon Form	7.8	Mythical	One Piece Kaido					
+ability	596	Operation	7.2	Mythical	One Piece					
+ability	597	Azure Dragon Form	7.8	Mythical	One Piece					
 ability	598	Buddha Form	6.8	Legendary	One Piece					
 ability	599	Cow Form	2.6	Uncommon	One Piece					
 ability	600	Sea Snake Form	5.8	Epic	Generic					
@@ -2876,7 +3157,7 @@ ability	629	Infernal Chains	3.8	Rare	Generic
 ability	630	Angel Style	2.7	Uncommon	Generic	REF				
 ability	631	Heavenly Restriction	5.2	Epic	Jujutsu Kaisen					
 ability	632	White Tiger Form	3.1	Rare	Generic					
-ability	633	Swamp Logia	6.2	Legendary	One Piece Caribou					
+ability	633	Swamp Logia	6.2	Legendary	One Piece					
 ability	634	Idle Death Gamble	5.5	Epic	Jujutsu Kaisen					
 ability	635	Susanoo	4.6	Elite	Naruto					
 ability	636	Perfect Mangekyo Sharingan - Sasuke	6.1	Legendary	Naruto					
@@ -2894,7 +3175,7 @@ ability	647	Slipper	1.7	Common	Generic
 ability	648	Waypoint	4.4	Elite	Generic					
 ability	649	Wood Release	6.8	Legendary	Naruto					
 ability	650	Dust Release	7.2	Mythical	Naruto	REF				
-ability	651	Skill Drain	4.7	Elite	Worm Victor					
+ability	651	Skill Drain	4.7	Elite	Worm					
 ability	652	Velocity	3.6	Rare	Worm					
 ability	653	Chameleon Hide	1.1	Common	Generic					
 ability	654	Rinnegan	8.8	Divine	Naruto	REF				
@@ -2991,7 +3272,7 @@ ability	744	Induce Baldness	0.7	Trash	Generic
 ability	745	Dream Mirror	1.7	Common	Generic					
 ability	746	Share Sense	2.3	Uncommon	Generic					
 ability	747	Sleep Talk	2.4	Uncommon	Generic					
-ability	748	Probability Estimation	6.8	Legendary	Worm Dinah					
+ability	748	Probability Estimation	6.8	Legendary	Worm					
 ability	749	Adhesion	1.9	Common	Generic					
 ability	750	Lion Form	3.6	Rare	Generic					
 ability	751	Fake Weapon	0.7	Trash	Generic					
@@ -2999,13 +3280,13 @@ ability	752	Bear Manipulation	0.9	Trash	Generic
 ability	753	Healing Kiss	4.2	Elite	MHA	REF				
 ability	754	VATS	2.8	Uncommon	Fallout					
 ability	755	Warp Mist	6.5	Legendary	MHA					
-ability	756	Phenex	7.6	Mythical	DxD					
-ability	757	Crack	6.7	Legendary	DxD					
+ability	756	Phenex	7.6	Mythical	Highschool DxD					
+ability	757	Crack	6.7	Legendary	Highschool DxD					
 ability	758	Number Man	8.1	Divine	Worm					
 ability	759	Route	1.8	Common	Generic					
 ability	760	Stockpile	3.0	Rare	Generic					
 ability	761	Cockroach Physique	4.1	Elite	Generic					
-ability	762	Candy Paramecia	4.2	Elite	One Piece Perospero					
+ability	762	Candy Paramecia	4.2	Elite	One Piece					
 ability	763	Bronze Creation	3.5	Rare	Generic					
 ability	764	Blood Burn	3.8	Rare	Generic					
 ability	765	Devil Regeneration	5.9	Epic	Generic					
@@ -3056,7 +3337,7 @@ ability	809	Save & Load	9.0	Transcendent	Generic	REF
 ability	810	Xavier	7.7	Mythical	Generic	REF				
 ability	811	We Are Network	4.8	Elite	Generic					
 ability	812	Gallant	4.6	Elite	Worm					
-ability	813	Empathy	2.8	Uncommon	Generic					
+ability	813	Emotion Sense	2.8	Uncommon	Generic					
 ability	814	Heartbreaker	5.8	Epic	Worm					
 ability	815	Piloting	5.0	Epic	Generic					
 ability	816	Snap Out of It!	3.8	Rare	Generic					
@@ -3141,7 +3422,7 @@ ability	897	Mystic Eyes of Flaw Perception	6.2	Legendary	Generic
 ability	898	Enhanced Senses	4.1	Elite	Generic					
 ability	899	Sixth Sense	4.6	Elite	Generic					
 ability	900	Dangersense	3.8	Rare	Generic					
-ability	901	Bungee Gum	3.7	Rare	HxH					
+ability	901	Bungee Gum	3.7	Rare	Hunter x Hunter					
 ability	902	Material Absorption	4.8	Elite	Ben 10/Marvel					
 ability	903	Greater Material Absorption	5.9	Epic	Ben 10/Marvel					
 ability	904	Galvanic Mechamorph Form	5.7	Epic	Ben 10					
@@ -3255,7 +3536,7 @@ ability	1011	Hyper	6.5	Legendary	Generic
 ability	1012	Divinity Healing	8.6	Divine	Generic					
 ability	1013	Law of Restoration	7.5	Mythical	Generic					
 ability	1014	Inner Isles	5.8	Epic	Generic					
-ability	1015	Sea Serpent of the End	7.2	Mythical	DxD					
+ability	1015	Sea Serpent of the End	7.2	Mythical	Highschool DxD					
 ability	1016	Gradual Transformation	3.6	Rare	Generic					
 ability	1017	Meltdowner	6.1	Legendary	Toaru					
 ability	1018	Curse Breaker	3.6	Rare	Generic					
@@ -3268,7 +3549,7 @@ ability	1024	Loboan Form	4.9	Elite	Ben 10
 ability	1025	Blood Golem	2.5	Uncommon	Fear and Hunger					
 ability	1026	Apothecary Physique	5.8	Epic	Generic					
 ability	1027	Seraph Tracers	5.0	Epic	Calamity Mod					
-ability	1028	Nebula Mantle	3.6	Rare	Terraria/Calamity Mod					
+ability	1028	Nebula Mantle	3.6	Rare	Calamity Mod					
 ability	1029	Icarus' Folly	3.5	Rare	Generic					
 ability	1030	Bullseye	2.9	Uncommon	Generic					
 ability	1031	Perfect Impostor	6.0	Legendary	Generic					
@@ -3627,3 +3908,77 @@ ability	1383	Drifting Mines	3.8	Rare	Generic
 ability	1384	Weapon Mode	2.6	Uncommon	Generic					
 ability	1385	Perfect Interface	2.0	Uncommon	Generic					
 ability	1386	Adamantine Sealing Chains	5.7	Epic	Naruto					
+ability	1387	Sight +1	2.0	Uncommon	Generic					
+ability	1388	Sight +2	3.0	Rare	Generic					
+ability	1389	Far Sight	4.0	Elite	Generic					
+ability	1390	Trace Name	4.5	Elite	Generic					
+ability	1391	Trace Description	5.5	Epic	Generic					
+ability	1392	Glimpse	5.0	Epic	Generic					
+ability	1393	Omnisight	9.0	Transcendent	Generic					
+ability	1394	Echo	4.0	Elite	Generic					
+ability	1395	Survey	3.0	Rare	Generic					
+ability	1396	Source Compass	5.0	Epic	Generic					
+ability	1397	Sight: Ability	2.5	Uncommon	Generic					
+ability	1398	Sight: Item	2.5	Uncommon	Generic					
+ability	1399	Sight: Skill	2.5	Uncommon	Generic					
+ability	1400	Sight: Trait	2.5	Uncommon	Generic					
+ability	1401	Sight: Familiar	2.5	Uncommon	Generic					
+ability	1402	Telekinetic Launch	4.2	Elite	Control					
+ability	1403	Seize	4.6	Elite	Control					
+ability	1404	Debris Shield	3.8	Rare	Control					
+ability	1405	Evade	3.0	Rare	Control					
+ability	1406	Levitate	4.0	Elite	Control					
+ability	1407	Icarus Landing System	3.2	Rare	Deus Ex					
+ability	1408	Smart Vision	3.4	Rare	Deus Ex					
+ability	1409	Glass-Shield Cloaking	4.4	Elite	Deus Ex					
+ability	1410	Titan Shield	4.8	Elite	Deus Ex					
+ability	1411	Remote Hacking	4.0	Elite	Deus Ex					
+ability	1412	CASIE	3.6	Rare	Deus Ex					
+ability	1413	Psycast Skip	3.8	Rare	RimWorld					
+ability	1414	Psycast Farskip	5.6	Epic	RimWorld					
+ability	1415	Psycast Berserk Pulse	4.6	Elite	RimWorld					
+ability	1416	Psycast Invisibility	4.2	Elite	RimWorld					
+ability	1417	Word of Serenity	3.4	Rare	RimWorld					
+ability	1418	Time Walk	7.8	Mythical	MTG					
+ability	1419	Ancestral Recall	7.4	Mythical	MTG					
+ability	1420	Counterspell	4.4	Elite	MTG					
+ability	1421	Swords to Plowshares	4.2	Elite	MTG					
+ability	1422	Dark Ritual	3.8	Rare	MTG					
+ability	1423	Giant Growth	2.4	Uncommon	MTG					
+ability	1424	Nether Swap	4.0	Elite	Divinity Original Sin					
+ability	1425	Adrenaline	3.2	Rare	Divinity Original Sin					
+ability	1426	Chameleon Cloak	3.6	Rare	Divinity Original Sin					
+ability	1427	Chicken Claw	3.0	Rare	Divinity Original Sin					
+ability	1428	Tentacle Lash	3.4	Rare	Divinity Original Sin					
+ability	1429	Bull Horns	2.8	Uncommon	Divinity Original Sin					
+ability	1430	Infect	3.2	Rare	Divinity Original Sin					
+ability	1431	Flay Skin	4.2	Elite	Divinity Original Sin					
+ability	1432	Time Warp	6.4	Legendary	Divinity Original Sin					
+ability	1433	Apotheosis	6.8	Legendary	Divinity Original Sin					
+ability	1434	Temporal Rewind	5.2	Epic	Life is Strange					
+ability	1435	Telekinetic Blast	4.6	Elite	Life is Strange					
+ability	1436	Concentration	2.8	Uncommon	Horizon Zero Dawn					
+ability	1437	Silent Strike	3.0	Rare	Horizon Zero Dawn					
+ability	1438	Survivalist	2.6	Uncommon	Tomb Raider					
+ability	1439	Loop Memory	5.0	Epic	I Was a Teenage Exocolonist					
+ability	1440	Seeker Subroutine	3.4	Rare	Tron 2.0					
+ability	1441	Adenine Volley	3.2	Rare	Genome Guardian					
+ability	1442	Cytosine Precision	3.4	Rare	Genome Guardian					
+ability	1443	Guanine Spread	3.6	Rare	Genome Guardian					
+ability	1444	Thymine Detonation	4.0	Elite	Genome Guardian					
+ability	1445	Summon Tsunami	5.4	Epic	Cities Skylines					
+ability	1446	Firewall	3.2	Rare	Tron 2.0					
+ability	1447	Timeline Shift	5.8	Epic	Life is Strange					
+ability	1448	Eldritch Constructs	4.6	Elite	MCU					
+ability	1449	Mirror Dimension	5.4	Epic	MCU					
+ability	1450	Chaos Magic	6.6	Legendary	MCU					
+ability	1451	Probability Hex	5.0	Epic	MCU					
+ability	1452	Astral Projection	3.8	Rare	MCU					
+ability	1453	Dreamwalking	5.8	Epic	MCU					
+ability	1454	Asgardian Illusions	4.2	Elite	MCU					
+ability	1455	Rune Magic	4.8	Elite	MCU					
+ability	1456	Rail Laying	3.6	Rare	Generic					
+ability	1457	Rail Gauge Setting	3.2	Rare	Generic					
+ability	1458	Vortessence	4.4	Elite	Half-Life					
+ability	1459	Xen Transit	5.6	Epic	Half-Life					
+ability	1460	Antlion Pheromones	3.0	Rare	Half-Life					

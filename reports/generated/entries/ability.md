@@ -1,19 +1,19 @@
 # ability — Entry Reference
 
-1383 entries. Sorted by rarity, then number.
+1457 entries. Sorted by rarity, then number.
 
 | Tier | Count |
 |---|---|
 | Trash | 25 |
 | Common | 80 |
-| Uncommon | 197 |
-| Rare | 304 |
-| Elite | 273 |
-| Epic | 202 |
-| Legendary | 160 |
-| Mythical | 83 |
+| Uncommon | 207 |
+| Rare | 329 |
+| Elite | 294 |
+| Epic | 214 |
+| Legendary | 163 |
+| Mythical | 85 |
 | Divine | 41 |
-| Transcendent | 18 |
+| Transcendent | 19 |
 
 ## Index by tier
 
@@ -132,7 +132,7 @@
 | 1272 | [Highlight](#1272-highlight) | 1.9 | Generic |
 | 1381 | [Focused Strikes](#1381-focused-strikes) | 1.9 | Generic |
 
-### Uncommon (197)
+### Uncommon (207)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -146,6 +146,7 @@
 | 1145 | [Tinker - Robotics (I)](#1145-tinker-robotics-i) | 2.0 | Generic |
 | 1362 | [Ganta Gun](#1362-ganta-gun) | 2.0 | Deadman Wonderland |
 | 1385 | [Perfect Interface](#1385-perfect-interface) | 2.0 | Generic |
+| 1387 | [Sight +1](#1387-sight-1) | 2.0 | Generic |
 | 188 | [Stonesprout](#188-stonesprout) | 2.1 | Generic |
 | 222 | [Crystals](#222-crystals) | 2.1 | Generic |
 | 408 | [Low Gravity](#408-low-gravity) | 2.1 | Generic |
@@ -216,6 +217,7 @@
 | 1137 | [Conjure Rock](#1137-conjure-rock) | 2.4 | Generic |
 | 1224 | [Vinelash](#1224-vinelash) | 2.4 | Generic |
 | 1252 | [Adventure Line](#1252-adventure-line) | 2.4 | Stanley Parable |
+| 1423 | [Giant Growth](#1423-giant-growth) | 2.4 | MTG |
 | 40 | [Flame Burst](#40-flame-burst) | 2.5 | Generic |
 | 42 | [Flamethrower](#42-flamethrower) | 2.5 | Generic |
 | 60 | [Mist](#60-mist) | 2.5 | Generic |
@@ -238,6 +240,11 @@
 | 1172 | [Mind Blast](#1172-mind-blast) | 2.5 | Generic |
 | 1264 | [Sightline](#1264-sightline) | 2.5 | Generic |
 | 1300 | [Tinker - Mech (I)](#1300-tinker-mech-i) | 2.5 | Generic |
+| 1397 | [Sight: Ability](#1397-sight-ability) | 2.5 | Generic |
+| 1398 | [Sight: Item](#1398-sight-item) | 2.5 | Generic |
+| 1399 | [Sight: Skill](#1399-sight-skill) | 2.5 | Generic |
+| 1400 | [Sight: Trait](#1400-sight-trait) | 2.5 | Generic |
+| 1401 | [Sight: Familiar](#1401-sight-familiar) | 2.5 | Generic |
 | 23 | [Fire Fist](#23-fire-fist) | 2.6 | Generic |
 | 25 | [Coat Flames](#25-coat-flames) | 2.6 | Generic |
 | 166 | [Lightning Spear](#166-lightning-spear) | 2.6 | Generic |
@@ -268,6 +275,7 @@
 | 1269 | [Bulk Up](#1269-bulk-up) | 2.6 | Generic |
 | 1363 | [Crow Claw](#1363-crow-claw) | 2.6 | Deadman Wonderland |
 | 1384 | [Weapon Mode](#1384-weapon-mode) | 2.6 | Generic |
+| 1438 | [Survivalist](#1438-survivalist) | 2.6 | Tomb Raider |
 | 65 | [Sponge](#65-sponge) | 2.7 | Generic |
 | 120 | [Wind Blade](#120-wind-blade) | 2.7 | Generic |
 | 136 | [Wind Barrier](#136-wind-barrier) | 2.7 | Generic |
@@ -295,7 +303,7 @@
 | 229 | [Dig](#229-dig) | 2.8 | Generic |
 | 245 | [Shadow Blade](#245-shadow-blade) | 2.8 | Generic |
 | 249 | [Bottomless Swamp](#249-bottomless-swamp) | 2.8 | Generic |
-| 291 | [Light Grenade](#291-light-grenade) | 2.8 | DBZ |
+| 291 | [Light Grenade](#291-light-grenade) | 2.8 | Dragon Ball |
 | 309 | [Golden Fist](#309-golden-fist) | 2.8 | Generic |
 | 310 | [Exorcism](#310-exorcism) | 2.8 | Generic |
 | 556 | [Date Scouter](#556-date-scouter) | 2.8 | Generic |
@@ -308,7 +316,7 @@
 | 770 | [Bloody Carthus](#770-bloody-carthus) | 2.8 | Generic |
 | 773 | [Sugar Rush](#773-sugar-rush) | 2.8 | MHA |
 | 796 | [Ratio Technique](#796-ratio-technique) | 2.8 | Jujutsu Kaisen |
-| 813 | [Empathy](#813-empathy) | 2.8 | Generic |
+| 813 | [Emotion Sense](#813-emotion-sense) | 2.8 | Generic |
 | 837 | [Shark Physique](#837-shark-physique) | 2.8 | Generic |
 | 892 | [Wolf Form](#892-wolf-form) | 2.8 | Generic |
 | 972 | [Door Crossing](#972-door-crossing) | 2.8 | Re:Zero |
@@ -319,6 +327,8 @@
 | 1131 | [Internal Duplication](#1131-internal-duplication) | 2.8 | Generic |
 | 1223 | [Bamboo Sprout](#1223-bamboo-sprout) | 2.8 | Generic |
 | 1287 | [Bloody Loan](#1287-bloody-loan) | 2.8 | Generic |
+| 1429 | [Bull Horns](#1429-bull-horns) | 2.8 | Divinity Original Sin |
+| 1436 | [Concentration](#1436-concentration) | 2.8 | Horizon Zero Dawn |
 | 38 | [Bloodflame Talons](#38-bloodflame-talons) | 2.9 | Elden Ring |
 | 44 | [Fire Breath](#44-fire-breath) | 2.9 | Generic |
 | 131 | [Sonic Blast](#131-sonic-blast) | 2.9 | Generic |
@@ -334,7 +344,7 @@
 | 1290 | [Equal Blood](#1290-equal-blood) | 2.9 | Generic |
 | 1293 | [Lesser Curse](#1293-lesser-curse) | 2.9 | Generic |
 
-### Rare (304)
+### Rare (329)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -364,6 +374,12 @@
 | 1320 | [Fusrodah](#1320-fusrodah) | 3.0 | Skyrim |
 | 1346 | [Acid](#1346-acid) | 3.0 | Generic |
 | 1360 | [Morbing](#1360-morbing) | 3.0 | Generic |
+| 1388 | [Sight +2](#1388-sight-2) | 3.0 | Generic |
+| 1395 | [Survey](#1395-survey) | 3.0 | Generic |
+| 1405 | [Evade](#1405-evade) | 3.0 | Control |
+| 1427 | [Chicken Claw](#1427-chicken-claw) | 3.0 | Divinity Original Sin |
+| 1437 | [Silent Strike](#1437-silent-strike) | 3.0 | Horizon Zero Dawn |
+| 1460 | [Antlion Pheromones](#1460-antlion-pheromones) | 3.0 | Half-Life |
 | 106 | [Freezing Breath](#106-freezing-breath) | 3.1 | Generic |
 | 155 | [Radio Waves](#155-radio-waves) | 3.1 | MHA |
 | 167 | [Great Lightning Spear](#167-great-lightning-spear) | 3.1 | Generic |
@@ -416,6 +432,12 @@
 | 1341 | [Acid Rain](#1341-acid-rain) | 3.2 | Generic |
 | 1365 | [Blood Fist](#1365-blood-fist) | 3.2 | Deadman Wonderland |
 | 1375 | [Ignis Boost](#1375-ignis-boost) | 3.2 | Generic |
+| 1407 | [Icarus Landing System](#1407-icarus-landing-system) | 3.2 | Deus Ex |
+| 1425 | [Adrenaline](#1425-adrenaline) | 3.2 | Divinity Original Sin |
+| 1430 | [Infect](#1430-infect) | 3.2 | Divinity Original Sin |
+| 1441 | [Adenine Volley](#1441-adenine-volley) | 3.2 | Genome Guardian |
+| 1446 | [Firewall](#1446-firewall) | 3.2 | Tron 2.0 |
+| 1457 | [Rail Gauge Setting](#1457-rail-gauge-setting) | 3.2 | Generic |
 | 3 | [Blaze](#3-blaze) | 3.3 | Generic |
 | 45 | [Explosive Sweat](#45-explosive-sweat) | 3.3 | MHA |
 | 84 | [Ink Manipulation](#84-ink-manipulation) | 3.3 | Generic |
@@ -453,7 +475,7 @@
 | 381 | [Blink](#381-blink) | 3.4 | Generic |
 | 447 | [Hook & Line](#447-hook-line) | 3.4 | Generic |
 | 504 | [Oni](#504-oni) | 3.4 | Generic |
-| 538 | [Dress Break](#538-dress-break) | 3.4 | DxD |
+| 538 | [Dress Break](#538-dress-break) | 3.4 | Highschool DxD |
 | 617 | [Scouter](#617-scouter) | 3.4 | Generic |
 | 708 | [Soften](#708-soften) | 3.4 | Generic |
 | 724 | [Cursed Flames](#724-cursed-flames) | 3.4 | Terraria |
@@ -464,6 +486,11 @@
 | 1226 | [Razor Leaves](#1226-razor-leaves) | 3.4 | Generic |
 | 1367 | [Owl's Eyeball](#1367-owls-eyeball) | 3.4 | Deadman Wonderland |
 | 1377 | [Aero Boost](#1377-aero-boost) | 3.4 | Generic |
+| 1408 | [Smart Vision](#1408-smart-vision) | 3.4 | Deus Ex |
+| 1417 | [Word of Serenity](#1417-word-of-serenity) | 3.4 | RimWorld |
+| 1428 | [Tentacle Lash](#1428-tentacle-lash) | 3.4 | Divinity Original Sin |
+| 1440 | [Seeker Subroutine](#1440-seeker-subroutine) | 3.4 | Tron 2.0 |
+| 1442 | [Cytosine Precision](#1442-cytosine-precision) | 3.4 | Genome Guardian |
 | 10 | [Ignite](#10-ignite) | 3.5 | Generic |
 | 29 | [Heatwave](#29-heatwave) | 3.5 | Generic |
 | 68 | [Water Manipulation](#68-water-manipulation) | 3.5 | Generic |
@@ -538,12 +565,16 @@
 | 999 | [Reroll](#999-reroll) | 3.6 | Generic |
 | 1016 | [Gradual Transformation](#1016-gradual-transformation) | 3.6 | Generic |
 | 1018 | [Curse Breaker](#1018-curse-breaker) | 3.6 | Generic |
-| 1028 | [Nebula Mantle](#1028-nebula-mantle) | 3.6 | Terraria/Calamity Mod |
+| 1028 | [Nebula Mantle](#1028-nebula-mantle) | 3.6 | Calamity Mod |
 | 1164 | [Tinker - Resources](#1164-tinker-resources) | 3.6 | Generic |
 | 1254 | [Tanuki's Leaves](#1254-tanukis-leaves) | 3.6 | Generic |
 | 1267 | [Soul Spear](#1267-soul-spear) | 3.6 | Dark Souls |
 | 1274 | [Rescale](#1274-rescale) | 3.6 | Generic |
 | 1323 | [Guard](#1323-guard) | 3.6 | Generic |
+| 1412 | [CASIE](#1412-casie) | 3.6 | Deus Ex |
+| 1426 | [Chameleon Cloak](#1426-chameleon-cloak) | 3.6 | Divinity Original Sin |
+| 1443 | [Guanine Spread](#1443-guanine-spread) | 3.6 | Genome Guardian |
+| 1456 | [Rail Laying](#1456-rail-laying) | 3.6 | Generic |
 | 73 | [Torrent](#73-torrent) | 3.7 | Generic |
 | 102 | [Blizzard](#102-blizzard) | 3.7 | Generic |
 | 134 | [Airlock](#134-airlock) | 3.7 | Generic |
@@ -560,7 +591,7 @@
 | 547 | [Life Share](#547-life-share) | 3.7 | Generic |
 | 588 | [Rubber Body](#588-rubber-body) | 3.7 | Generic |
 | 590 | [Contract Creation](#590-contract-creation) | 3.7 | Generic |
-| 592 | [Chop Chop](#592-chop-chop) | 3.7 | One Piece Buggy |
+| 592 | [Chop Chop](#592-chop-chop) | 3.7 | One Piece |
 | 637 | [Susanoo Ribs](#637-susanoo-ribs) | 3.7 | Naruto |
 | 702 | [Dark Hand](#702-dark-hand) | 3.7 | Dark Souls |
 | 777 | [Spectral Claw](#777-spectral-claw) | 3.7 | Unordinary |
@@ -569,7 +600,7 @@
 | 875 | [Overheat](#875-overheat) | 3.7 | Generic |
 | 887 | [Bear Form](#887-bear-form) | 3.7 | Generic |
 | 894 | [Fist Projection](#894-fist-projection) | 3.7 | Generic |
-| 901 | [Bungee Gum](#901-bungee-gum) | 3.7 | HxH |
+| 901 | [Bungee Gum](#901-bungee-gum) | 3.7 | Hunter x Hunter |
 | 1007 | [Future Prediction](#1007-future-prediction) | 3.7 | Generic |
 | 1049 | [Tinker - Minimisation](#1049-tinker-minimisation) | 3.7 | Generic |
 | 1053 | [Tinker - Industrialisation](#1053-tinker-industrialisation) | 3.7 | Generic |
@@ -621,6 +652,10 @@
 | 1259 | [Rasengan](#1259-rasengan) | 3.8 | Naruto |
 | 1297 | [Kamikaze](#1297-kamikaze) | 3.8 | Generic |
 | 1383 | [Drifting Mines](#1383-drifting-mines) | 3.8 | Generic |
+| 1404 | [Debris Shield](#1404-debris-shield) | 3.8 | Control |
+| 1413 | [Psycast Skip](#1413-psycast-skip) | 3.8 | RimWorld |
+| 1422 | [Dark Ritual](#1422-dark-ritual) | 3.8 | MTG |
+| 1452 | [Astral Projection](#1452-astral-projection) | 3.8 | MCU |
 | 32 | [Kamino](#32-kamino) | 3.9 | Jujutsu Kaisen |
 | 164 | [Railgun](#164-railgun) | 3.9 | Generic |
 | 253 | [Shadow Chains](#253-shadow-chains) | 3.9 | Generic |
@@ -643,7 +678,7 @@
 | 1275 | [Liaison](#1275-liaison) | 3.9 | Generic |
 | 1332 | [Sing](#1332-sing) | 3.9 | Generic |
 
-### Elite (273)
+### Elite (294)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -668,6 +703,12 @@
 | 910 | [Ripper Mode](#910-ripper-mode) | 4.0 | Metal Gear |
 | 983 | [Stone Free](#983-stone-free) | 4.0 | JoJo |
 | 995 | [Time Accel](#995-time-accel) | 4.0 | Fate |
+| 1389 | [Far Sight](#1389-far-sight) | 4.0 | Generic |
+| 1394 | [Echo](#1394-echo) | 4.0 | Generic |
+| 1406 | [Levitate](#1406-levitate) | 4.0 | Control |
+| 1411 | [Remote Hacking](#1411-remote-hacking) | 4.0 | Deus Ex |
+| 1424 | [Nether Swap](#1424-nether-swap) | 4.0 | Divinity Original Sin |
+| 1444 | [Thymine Detonation](#1444-thymine-detonation) | 4.0 | Genome Guardian |
 | 142 | [Atmospheric Pressure Manipulation](#142-atmospheric-pressure-manipulation) | 4.1 | Generic |
 | 185 | [Meteor Strike](#185-meteor-strike) | 4.1 | Generic |
 | 305 | [Greater Purification](#305-greater-purification) | 4.1 | Generic |
@@ -689,7 +730,7 @@
 | 1338 | [Deep Dredge](#1338-deep-dredge) | 4.1 | Generic |
 | 112 | [Typhoon](#112-typhoon) | 4.2 | Generic |
 | 138 | [Weather Manipulation](#138-weather-manipulation) | 4.2 | Generic |
-| 157 | [Godspeed](#157-godspeed) | 4.2 | HxH |
+| 157 | [Godspeed](#157-godspeed) | 4.2 | Hunter x Hunter |
 | 206 | [Karura's Blessing](#206-karuras-blessing) | 4.2 | Generic |
 | 215 | [Thousand Arrows](#215-thousand-arrows) | 4.2 | Pokemon |
 | 216 | [Metal Manipulation](#216-metal-manipulation) | 4.2 | MHA |
@@ -715,12 +756,17 @@
 | 692 | [Tinker - Computers](#692-tinker-computers) | 4.2 | Generic |
 | 740 | [Gigantism](#740-gigantism) | 4.2 | Generic |
 | 753 | [Healing Kiss](#753-healing-kiss) | 4.2 | MHA |
-| 762 | [Candy Paramecia](#762-candy-paramecia) | 4.2 | One Piece Perospero |
+| 762 | [Candy Paramecia](#762-candy-paramecia) | 4.2 | One Piece |
 | 935 | [Muscular](#935-muscular) | 4.2 | MHA |
 | 1105 | [Tinker - Augments (III)](#1105-tinker-augments-iii) | 4.2 | Generic |
 | 1139 | [Swordmaster](#1139-swordmaster) | 4.2 | Generic |
 | 1268 | [Crystal Soul Spear](#1268-crystal-soul-spear) | 4.2 | Dark Souls |
 | 1344 | [Acid Cloak](#1344-acid-cloak) | 4.2 | Generic |
+| 1402 | [Telekinetic Launch](#1402-telekinetic-launch) | 4.2 | Control |
+| 1416 | [Psycast Invisibility](#1416-psycast-invisibility) | 4.2 | RimWorld |
+| 1421 | [Swords to Plowshares](#1421-swords-to-plowshares) | 4.2 | MTG |
+| 1431 | [Flay Skin](#1431-flay-skin) | 4.2 | Divinity Original Sin |
+| 1454 | [Asgardian Illusions](#1454-asgardian-illusions) | 4.2 | MCU |
 | 17 | [Fire Absorption](#17-fire-absorption) | 4.3 | Generic |
 | 37 | [Blood Flames](#37-blood-flames) | 4.3 | Elden Ring |
 | 90 | [Iceberg](#90-iceberg) | 4.3 | Generic |
@@ -769,6 +815,9 @@
 | 1147 | [Tinker - Robotics (III)](#1147-tinker-robotics-iii) | 4.4 | Generic |
 | 1194 | [Summon Angel](#1194-summon-angel) | 4.4 | Generic |
 | 1301 | [Tinker - Mech (II)](#1301-tinker-mech-ii) | 4.4 | Generic |
+| 1409 | [Glass-Shield Cloaking](#1409-glass-shield-cloaking) | 4.4 | Deus Ex |
+| 1420 | [Counterspell](#1420-counterspell) | 4.4 | MTG |
+| 1458 | [Vortessence](#1458-vortessence) | 4.4 | Half-Life |
 | 16 | [Frostflare](#16-frostflare) | 4.5 | Calamity Mod |
 | 96 | [Cryokinesis](#96-cryokinesis) | 4.5 | Generic |
 | 194 | [Terrakinesis](#194-terrakinesis) | 4.5 | Generic |
@@ -790,9 +839,10 @@
 | 1215 | [Tinker - Arcology](#1215-tinker-arcology) | 4.5 | Generic |
 | 1217 | [Summon nature Spirit](#1217-summon-nature-spirit) | 4.5 | Generic |
 | 1342 | [Caustic Storm](#1342-caustic-storm) | 4.5 | Generic |
+| 1390 | [Trace Name](#1390-trace-name) | 4.5 | Generic |
 | 52 | [Lava](#52-lava) | 4.6 | Generic |
 | 69 | [Hydrokinesis](#69-hydrokinesis) | 4.6 | Generic |
-| 238 | [Sethan](#238-sethan) | 4.6 | Sethan from JoJo |
+| 238 | [Sethan](#238-sethan) | 4.6 | JoJo |
 | 352 | [Bio Armor](#352-bio-armor) | 4.6 | Generic |
 | 373 | [Poison Factory](#373-poison-factory) | 4.6 | Generic |
 | 498 | [Audacity](#498-audacity) | 4.6 | Generic |
@@ -820,6 +870,10 @@
 | 1347 | [Greater Acid](#1347-greater-acid) | 4.6 | Generic |
 | 1354 | [Arid Hell](#1354-arid-hell) | 4.6 | Generic |
 | 1370 | [Lunagaron Form](#1370-lunagaron-form) | 4.6 | Monster Hunter |
+| 1403 | [Seize](#1403-seize) | 4.6 | Control |
+| 1415 | [Psycast Berserk Pulse](#1415-psycast-berserk-pulse) | 4.6 | RimWorld |
+| 1435 | [Telekinetic Blast](#1435-telekinetic-blast) | 4.6 | Life is Strange |
+| 1448 | [Eldritch Constructs](#1448-eldritch-constructs) | 4.6 | MCU |
 | 12 | [Mystic Eyes of Flame](#12-mystic-eyes-of-flame) | 4.7 | Generic |
 | 22 | [Shadowflames](#22-shadowflames) | 4.7 | Terraria |
 | 36 | [Godslayer Apostle Flames](#36-godslayer-apostle-flames) | 4.7 | Elden Ring |
@@ -833,7 +887,7 @@
 | 539 | [Multiplicity](#539-multiplicity) | 4.7 | Generic |
 | 620 | [Strength Sap](#620-strength-sap) | 4.7 | Generic |
 | 623 | [Angel Form](#623-angel-form) | 4.7 | Generic |
-| 651 | [Skill Drain](#651-skill-drain) | 4.7 | Worm Victor |
+| 651 | [Skill Drain](#651-skill-drain) | 4.7 | Worm |
 | 679 | [Tinker - Teleportation](#679-tinker-teleportation) | 4.7 | Generic |
 | 714 | [Clay Bombs](#714-clay-bombs) | 4.7 | Naruto |
 | 726 | [Brimstone](#726-brimstone) | 4.7 | Calamity Mod |
@@ -854,13 +908,13 @@
 | 11 | [Conflagration](#11-conflagration) | 4.8 | Generic |
 | 93 | [Ice Manipulation](#93-ice-manipulation) | 4.8 | MHA |
 | 95 | [Frozen Heart](#95-frozen-heart) | 4.8 | Generic |
-| 97 | [White Album](#97-white-album) | 4.8 | JoJo Stand |
+| 97 | [White Album](#97-white-album) | 4.8 | JoJo |
 | 139 | [Wind Alteration](#139-wind-alteration) | 4.8 | Generic |
 | 158 | [Electrokinesis](#158-electrokinesis) | 4.8 | Generic |
 | 265 | [Cursecraft](#265-cursecraft) | 4.8 | Generic |
 | 279 | [Shadow Beast Form](#279-shadow-beast-form) | 4.8 | Generic |
 | 281 | [Umbrakinesis](#281-umbrakinesis) | 4.8 | Generic |
-| 319 | [Judgement Call](#319-judgement-call) | 4.8 | EBF |
+| 319 | [Judgement Call](#319-judgement-call) | 4.8 | Epic Battle Fantasy |
 | 338 | [Bone Manipulation](#338-bone-manipulation) | 4.8 | Worm |
 | 360 | [High Speed Regeneration](#360-high-speed-regeneration) | 4.8 | Generic |
 | 416 | [Blast Mark](#416-blast-mark) | 4.8 | Generic |
@@ -898,8 +952,10 @@
 | 1221 | [Nine-Tailed Foxfire](#1221-nine-tailed-foxfire) | 4.8 | Generic |
 | 1273 | [Bequeath](#1273-bequeath) | 4.8 | Generic |
 | 1283 | [Lightning Flames](#1283-lightning-flames) | 4.8 | Katekyo Hitman Reborn |
+| 1410 | [Titan Shield](#1410-titan-shield) | 4.8 | Deus Ex |
+| 1455 | [Rune Magic](#1455-rune-magic) | 4.8 | MCU |
 | 48 | [Explosion!](#48-explosion) | 4.9 | Konosuba |
-| 104 | [Snow Logia](#104-snow-logia) | 4.9 | Monet from One Piece |
+| 104 | [Snow Logia](#104-snow-logia) | 4.9 | One Piece |
 | 119 | [Aerokinesis](#119-aerokinesis) | 4.9 | Generic |
 | 193 | [Ferrokinesis](#193-ferrokinesis) | 4.9 | Generic |
 | 224 | [Pure Gem Creation](#224-pure-gem-creation) | 4.9 | Generic |
@@ -921,7 +977,7 @@
 | 1186 | [Summon Demon](#1186-summon-demon) | 4.9 | Generic |
 | 1336 | [Chargeback](#1336-chargeback) | 4.9 | Ultrakill |
 
-### Epic (202)
+### Epic (214)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -942,6 +998,10 @@
 | 1140 | [Knighting](#1140-knighting) | 5.0 | Generic |
 | 1284 | [Mist Flames](#1284-mist-flames) | 5.0 | Katekyo Hitman Reborn |
 | 1357 | [Astral Walk](#1357-astral-walk) | 5.0 | Generic |
+| 1392 | [Glimpse](#1392-glimpse) | 5.0 | Generic |
+| 1396 | [Source Compass](#1396-source-compass) | 5.0 | Generic |
+| 1439 | [Loop Memory](#1439-loop-memory) | 5.0 | I Was a Teenage Exocolonist |
+| 1451 | [Probability Hex](#1451-probability-hex) | 5.0 | MCU |
 | 140 | [Oxidiser](#140-oxidiser) | 5.1 | Generic |
 | 271 | [Chaos Entity Release](#271-chaos-entity-release) | 5.1 | Generic |
 | 282 | [Abyss Barrier](#282-abyss-barrier) | 5.1 | Generic |
@@ -986,6 +1046,7 @@
 | 1242 | [Smoke Conduit Physiology](#1242-smoke-conduit-physiology) | 5.2 | Infamous |
 | 1279 | [Sky Flames](#1279-sky-flames) | 5.2 | Katekyo Hitman Reborn |
 | 1337 | [Parry](#1337-parry) | 5.2 | Ultrakill |
+| 1434 | [Temporal Rewind](#1434-temporal-rewind) | 5.2 | Life is Strange |
 | 118 | [Tempest](#118-tempest) | 5.3 | Generic |
 | 409 | [Burden Breaker](#409-burden-breaker) | 5.3 | Calamity Mod |
 | 495 | [Grand Theft](#495-grand-theft) | 5.3 | Generic |
@@ -1017,6 +1078,8 @@
 | 1241 | [Black Trial](#1241-black-trial) | 5.4 | Black Souls |
 | 1324 | [Greater Guard](#1324-greater-guard) | 5.4 | Generic |
 | 1352 | [Conflagration Emotion](#1352-conflagration-emotion) | 5.4 | Generic |
+| 1445 | [Summon Tsunami](#1445-summon-tsunami) | 5.4 | Cities Skylines |
+| 1449 | [Mirror Dimension](#1449-mirror-dimension) | 5.4 | MCU |
 | 137 | [Heavy Wind](#137-heavy-wind) | 5.5 | Generic |
 | 317 | [Divine Healing Light](#317-divine-healing-light) | 5.5 | Generic |
 | 346 | [hybrid Ghoul Physiology](#346-hybrid-ghoul-physiology) | 5.5 | Tokyo Ghoul |
@@ -1044,6 +1107,7 @@
 | 1288 | [Bloody Savings](#1288-bloody-savings) | 5.5 | Generic |
 | 1335 | [Diction](#1335-diction) | 5.5 | Generic |
 | 1348 | [Melter](#1348-melter) | 5.5 | Generic |
+| 1391 | [Trace Description](#1391-trace-description) | 5.5 | Generic |
 | 94 | [Half Hot Half Cold](#94-half-hot-half-cold) | 5.6 | MHA |
 | 204 | [Primordial Earth](#204-primordial-earth) | 5.6 | Generic |
 | 430 | [String Manipulation](#430-string-manipulation) | 5.6 | Generic |
@@ -1060,6 +1124,8 @@
 | 1143 | [Reaper's Voice](#1143-reapers-voice) | 5.6 | Generic |
 | 1178 | [Conjure Greater Water Elemental](#1178-conjure-greater-water-elemental) | 5.6 | Generic |
 | 1292 | [Inversion](#1292-inversion) | 5.6 | Generic |
+| 1414 | [Psycast Farskip](#1414-psycast-farskip) | 5.6 | RimWorld |
+| 1459 | [Xen Transit](#1459-xen-transit) | 5.6 | Half-Life |
 | 19 | [Unholy Flames](#19-unholy-flames) | 5.7 | Generic |
 | 91 | [Ice Age](#91-ice-age) | 5.7 | Generic |
 | 260 | [Gate of Nightmares](#260-gate-of-nightmares) | 5.7 | Generic |
@@ -1114,6 +1180,8 @@
 | 1243 | [Neon Conduit Physiology](#1243-neon-conduit-physiology) | 5.8 | Infamous |
 | 1302 | [Tinker - Mech (III)](#1302-tinker-mech-iii) | 5.8 | Generic |
 | 1308 | [Tinker - Ultrakill](#1308-tinker-ultrakill) | 5.8 | Ultrakill |
+| 1447 | [Timeline Shift](#1447-timeline-shift) | 5.8 | Life is Strange |
+| 1453 | [Dreamwalking](#1453-dreamwalking) | 5.8 | MCU |
 | 79 | [Hydrofreeze](#79-hydrofreeze) | 5.9 | Unordinary |
 | 273 | [Void Distorter Form](#273-void-distorter-form) | 5.9 | Generic |
 | 524 | [Atlas](#524-atlas) | 5.9 | Generic |
@@ -1128,7 +1196,7 @@
 | 1187 | [Summon Fiend](#1187-summon-fiend) | 5.9 | Generic |
 | 1307 | [Tinker - Henshin](#1307-tinker-henshin) | 5.9 | Generic |
 
-### Legendary (160)
+### Legendary (163)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -1165,7 +1233,7 @@
 | 234 | [Desert Logia](#234-desert-logia) | 6.2 | One Piece |
 | 400 | [Superhot](#400-superhot) | 6.2 | SUPER HOT |
 | 557 | [Absolute Territory](#557-absolute-territory) | 6.2 | Generic |
-| 633 | [Swamp Logia](#633-swamp-logia) | 6.2 | One Piece Caribou |
+| 633 | [Swamp Logia](#633-swamp-logia) | 6.2 | One Piece |
 | 690 | [Tinker - RWBY](#690-tinker-rwby) | 6.2 | RWBY |
 | 897 | [Mystic Eyes of Flaw Perception](#897-mystic-eyes-of-flaw-perception) | 6.2 | Generic |
 | 981 | [Teleport](#981-teleport) | 6.2 | Generic |
@@ -1200,6 +1268,7 @@
 | 1282 | [Sun Flames](#1282-sun-flames) | 6.4 | Katekyo Hitman Reborn |
 | 1333 | [Siren's Song](#1333-sirens-song) | 6.4 | Generic |
 | 1349 | [Dissolver](#1349-dissolver) | 6.4 | Generic |
+| 1432 | [Time Warp](#1432-time-warp) | 6.4 | Divinity Original Sin |
 | 21 | [Profaned Guardian Transformation](#21-profaned-guardian-transformation) | 6.5 | Calamity Mod |
 | 514 | [Everlasting Dragon Form](#514-everlasting-dragon-form) | 6.5 | Dark Souls |
 | 567 | [Synthesis](#567-synthesis) | 6.5 | Generic |
@@ -1234,6 +1303,7 @@
 | 1142 | [Greed's Deal](#1142-greeds-deal) | 6.6 | Generic |
 | 1188 | [Summon Archfiend](#1188-summon-archfiend) | 6.6 | Generic |
 | 1327 | [Mystic Eyes of Slowness](#1327-mystic-eyes-of-slowness) | 6.6 | Generic |
+| 1450 | [Chaos Magic](#1450-chaos-magic) | 6.6 | MCU |
 | 7 | [Disaster Flames](#7-disaster-flames) | 6.7 | Jujutsu Kaisen |
 | 283 | [Shadow Monarch](#283-shadow-monarch) | 6.7 | Solo Leveling |
 | 375 | [Doku](#375-doku) | 6.7 | One Piece |
@@ -1246,7 +1316,7 @@
 | 716 | [Nilbog](#716-nilbog) | 6.7 | Worm |
 | 717 | [World Painting](#717-world-painting) | 6.7 | Dark Souls |
 | 727 | [Ranchor](#727-ranchor) | 6.7 | Calamity Mod |
-| 757 | [Crack](#757-crack) | 6.7 | DxD |
+| 757 | [Crack](#757-crack) | 6.7 | Highschool DxD |
 | 929 | [Poison Dragon Slayer](#929-poison-dragon-slayer) | 6.7 | Fairy Tail |
 | 931 | [Shadow Dragon Slayer](#931-shadow-dragon-slayer) | 6.7 | Fairy Tail |
 | 933 | [Earth Dragon Slayer](#933-earth-dragon-slayer) | 6.7 | Fairy Tail |
@@ -1263,7 +1333,7 @@
 | 392 | [Stillness](#392-stillness) | 6.8 | Re:Zero |
 | 417 | [Carbon Manipulation](#417-carbon-manipulation) | 6.8 | Generic |
 | 465 | [Adamantine Skin](#465-adamantine-skin) | 6.8 | Generic |
-| 480 | [Power of Destruction](#480-power-of-destruction) | 6.8 | DxD |
+| 480 | [Power of Destruction](#480-power-of-destruction) | 6.8 | Highschool DxD |
 | 501 | [Crimson Fucker](#501-crimson-fucker) | 6.8 | Hellsing |
 | 546 | [Perfect Unknowable](#546-perfect-unknowable) | 6.8 | Overlord |
 | 573 | [Trajectory Manipulation](#573-trajectory-manipulation) | 6.8 | Generic |
@@ -1272,7 +1342,7 @@
 | 649 | [Wood Release](#649-wood-release) | 6.8 | Naruto |
 | 706 | [Saiyan Physiology](#706-saiyan-physiology) | 6.8 | Dragon Ball |
 | 711 | [Multiply](#711-multiply) | 6.8 | Invincible |
-| 748 | [Probability Estimation](#748-probability-estimation) | 6.8 | Worm Dinah |
+| 748 | [Probability Estimation](#748-probability-estimation) | 6.8 | Worm |
 | 781 | [Hydrogen Manipulation](#781-hydrogen-manipulation) | 6.8 | Generic |
 | 801 | [Clockwork](#801-clockwork) | 6.8 | Generic |
 | 829 | [Ajin Form](#829-ajin-form) | 6.8 | Ajin |
@@ -1285,15 +1355,16 @@
 | 1209 | [True Necromancy](#1209-true-necromancy) | 6.8 | Generic |
 | 1316 | [Aerophibian Form](#1316-aerophibian-form) | 6.8 | Ben 10 |
 | 1319 | [Florauna Form](#1319-florauna-form) | 6.8 | Ben 10 |
+| 1433 | [Apotheosis](#1433-apotheosis) | 6.8 | Divinity Original Sin |
 | 248 | [Death's Instrument](#248-deaths-instrument) | 6.9 | Generic |
 | 362 | [Regenerative Immortality](#362-regenerative-immortality) | 6.9 | Generic |
 | 398 | [Time Manipulation](#398-time-manipulation) | 6.9 | Unordinary |
 | 464 | [Quake](#464-quake) | 6.9 | One Piece |
-| 473 | [Shaper](#473-shaper) | 6.9 | Worm Panacea |
+| 473 | [Shaper](#473-shaper) | 6.9 | Worm |
 | 926 | [Fire Dragon Slayer](#926-fire-dragon-slayer) | 6.9 | Fairy Tail |
 | 1379 | [Ten Shadows](#1379-ten-shadows) | 6.9 | Jujutsu Kaisen |
 
-### Mythical (83)
+### Mythical (85)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -1311,7 +1382,7 @@
 | 1310 | [Ectonurite Form](#1310-ectonurite-form) | 7.0 | Ben 10 |
 | 1328 | [Mystic Eyes of Transfusion](#1328-mystic-eyes-of-transfusion) | 7.0 | Generic |
 | 1374 | [Fatalis Form](#1374-fatalis-form) | 7.0 | Monster Hunter |
-| 105 | [Ice Logia](#105-ice-logia) | 7.1 | Aokiji from One Piece |
+| 105 | [Ice Logia](#105-ice-logia) | 7.1 | One Piece |
 | 481 | [Full Counter](#481-full-counter) | 7.1 | Nanatsu no Taizai |
 | 519 | [Nine Eyes](#519-nine-eyes) | 7.1 | Second Coming of Gluttony |
 | 541 | [Condemnation](#541-condemnation) | 7.1 | Generic |
@@ -1325,11 +1396,11 @@
 | 18 | [Pyromaster](#18-pyromaster) | 7.2 | Generic |
 | 421 | [Sunshine](#421-sunshine) | 7.2 | Nanatsu no Taizai |
 | 479 | [Spirit Gathering](#479-spirit-gathering) | 7.2 | Generic |
-| 596 | [Operation](#596-operation) | 7.2 | One Piece Trafalgar Law |
+| 596 | [Operation](#596-operation) | 7.2 | One Piece |
 | 642 | [The Absorber](#642-the-absorber) | 7.2 | Generic |
 | 650 | [Dust Release](#650-dust-release) | 7.2 | Naruto |
 | 833 | [Nice Guy](#833-nice-guy) | 7.2 | Worm |
-| 1015 | [Sea Serpent of the End](#1015-sea-serpent-of-the-end) | 7.2 | DxD |
+| 1015 | [Sea Serpent of the End](#1015-sea-serpent-of-the-end) | 7.2 | Highschool DxD |
 | 1075 | [Tinker - Kuseno](#1075-tinker-kuseno) | 7.2 | One Punch Man |
 | 1076 | [Armageddon Blade](#1076-armageddon-blade) | 7.2 | Generic |
 | 1350 | [Grand Dissolution](#1350-grand-dissolution) | 7.2 | Generic |
@@ -1345,6 +1416,7 @@
 | 625 | [New Order](#625-new-order) | 7.4 | MHA |
 | 957 | [Blacklight](#957-blacklight) | 7.4 | Generic |
 | 1331 | [Providence](#1331-providence) | 7.4 | Generic |
+| 1419 | [Ancestral Recall](#1419-ancestral-recall) | 7.4 | MTG |
 | 77 | [Aquamaster](#77-aquamaster) | 7.5 | Generic |
 | 100 | [Cryomaster](#100-cryomaster) | 7.5 | Toaru |
 | 455 | [Kinetic Energy Manipulation](#455-kinetic-energy-manipulation) | 7.5 | Generic |
@@ -1355,12 +1427,12 @@
 | 24 | [Fire Logia](#24-fire-logia) | 7.6 | One Piece |
 | 470 | [Doormaker](#470-doormaker) | 7.6 | Generic |
 | 564 | [Overhaul](#564-overhaul) | 7.6 | MHA |
-| 756 | [Phenex](#756-phenex) | 7.6 | DxD |
+| 756 | [Phenex](#756-phenex) | 7.6 | Highschool DxD |
 | 792 | [Dead Apostle Ancestor Form](#792-dead-apostle-ancestor-form) | 7.6 | Fate/Tsukihime |
 | 835 | [Majin Physique](#835-majin-physique) | 7.6 | Dragon Ball |
 | 1079 | [Hulk Out](#1079-hulk-out) | 7.6 | Marvel |
 | 161 | [Electromaster](#161-electromaster) | 7.7 | Toaru |
-| 320 | [Genesis](#320-genesis) | 7.7 | EBF |
+| 320 | [Genesis](#320-genesis) | 7.7 | Epic Battle Fantasy |
 | 544 | [Gravity Manipulation](#544-gravity-manipulation) | 7.7 | Generic |
 | 802 | [Luck Aura](#802-luck-aura) | 7.7 | Generic |
 | 810 | [Xavier](#810-xavier) | 7.7 | Generic |
@@ -1372,12 +1444,13 @@
 | 266 | [Darkness Devil](#266-darkness-devil) | 7.8 | Chainsaw Man |
 | 438 | [Mystic Eyes of Death Perception](#438-mystic-eyes-of-death-perception) | 7.8 | Fate |
 | 561 | [Power Mimicry](#561-power-mimicry) | 7.8 | Generic |
-| 597 | [Azure Dragon Form](#597-azure-dragon-form) | 7.8 | One Piece Kaido |
+| 597 | [Azure Dragon Form](#597-azure-dragon-form) | 7.8 | One Piece |
 | 666 | [Tinker - Bombs](#666-tinker-bombs) | 7.8 | Generic |
 | 675 | [Tinker - Bio](#675-tinker-bio) | 7.8 | Generic |
 | 1096 | [Tinker - Bio (IV)](#1096-tinker-bio-iv) | 7.8 | Generic |
 | 1102 | [Tinker - Alchemy (V)](#1102-tinker-alchemy-v) | 7.8 | Generic |
 | 1210 | [Exalted Necromancy](#1210-exalted-necromancy) | 7.8 | Generic |
+| 1418 | [Time Walk](#1418-time-walk) | 7.8 | MTG |
 | 794 | [Schrodinger](#794-schrodinger) | 7.9 | Hellsing |
 | 1060 | [Tinker - Time](#1060-tinker-time) | 7.9 | Generic |
 
@@ -1427,13 +1500,14 @@
 | 947 | [D4C](#947-d4c) | 8.8 | JoJo |
 | 911 | [Atomic Manipulation](#911-atomic-manipulation) | 8.9 | Generic |
 
-### Transcendent (18)
+### Transcendent (19)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 580 | [Heaven's Feel](#580-heavens-feel) | 9.0 | Fate |
 | 809 | [Save & Load](#809-save-load) | 9.0 | Generic |
 | 1135 | [Return By Death](#1135-return-by-death) | 9.0 | Re:Zero |
+| 1393 | [Omnisight](#1393-omnisight) | 9.0 | Generic |
 | 579 | [Kaleidoscope](#579-kaleidoscope) | 9.1 | Fate |
 | 483 | [Ice Man](#483-ice-man) | 9.2 | Marvel |
 | 581 | [Denial of Nothingness](#581-denial-of-nothingness) | 9.2 | Fate |
@@ -3104,7 +3178,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.8 | Elite | JoJo Stand |
+| 4.8 | Elite | JoJo |
 
 **Description**
 
@@ -3223,7 +3297,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.9 | Elite | Monet from One Piece |
+| 4.9 | Elite | One Piece |
 
 **Description**
 
@@ -3240,7 +3314,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.1 | Mythical | Aokiji from One Piece |
+| 7.1 | Mythical | One Piece |
 
 **Description**
 
@@ -4132,7 +4206,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.2 | Elite | HxH |
+| 4.2 | Elite | Hunter x Hunter |
 
 **Description**
 
@@ -5521,7 +5595,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.6 | Elite | Sethan from JoJo |
+| 4.6 | Elite | JoJo |
 
 **Description**
 
@@ -6442,7 +6516,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 2.8 | Uncommon | DBZ |
+| 2.8 | Uncommon | Dragon Ball |
 
 **Description**
 
@@ -6930,7 +7004,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.8 | Elite | EBF |
+| 4.8 | Elite | Epic Battle Fantasy |
 
 **Description**
 
@@ -6947,7 +7021,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.7 | Mythical | EBF |
+| 7.7 | Mythical | Epic Battle Fantasy |
 
 **Description**
 
@@ -9612,7 +9686,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.9 | Legendary | Worm Panacea |
+| 6.9 | Legendary | Worm |
 
 **Description**
 
@@ -9731,7 +9805,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.8 | Legendary | DxD |
+| 6.8 | Legendary | Highschool DxD |
 
 **Description**
 
@@ -10743,7 +10817,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.4 | Rare | DxD |
+| 3.4 | Rare | Highschool DxD |
 
 **Description**
 
@@ -11685,7 +11759,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.7 | Rare | One Piece Buggy |
+| 3.7 | Rare | One Piece |
 
 **Description**
 
@@ -11753,7 +11827,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.2 | Mythical | One Piece Trafalgar Law |
+| 7.2 | Mythical | One Piece |
 
 **Description**
 
@@ -11770,7 +11844,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.8 | Mythical | One Piece Kaido |
+| 7.8 | Mythical | One Piece |
 
 **Description**
 
@@ -12390,7 +12464,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.2 | Legendary | One Piece Caribou |
+| 6.2 | Legendary | One Piece |
 
 **Description**
 
@@ -12704,7 +12778,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.7 | Elite | Worm Victor |
+| 4.7 | Elite | Worm |
 
 **Description**
 
@@ -14373,7 +14447,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.8 | Legendary | Worm Dinah |
+| 6.8 | Legendary | Worm |
 
 **Description**
 
@@ -14513,7 +14587,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.6 | Mythical | DxD |
+| 7.6 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -14530,7 +14604,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.7 | Legendary | DxD |
+| 6.7 | Legendary | Highschool DxD |
 
 **Description**
 
@@ -14615,7 +14689,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.2 | Elite | One Piece Perospero |
+| 4.2 | Elite | One Piece |
 
 **Description**
 
@@ -15494,7 +15568,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 813. Empathy
+## 813. Emotion Sense
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -16955,7 +17029,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.7 | Rare | HxH |
+| 3.7 | Rare | Hunter x Hunter |
 
 **Description**
 
@@ -17965,7 +18039,7 @@
 
 **Description**
 
-> You can temporarily summon a random item from the Diamond Item Gacha lasting 1 hour before disappearing (you roll the gacha with a temporary ticket). This ability starts its 8-hour cooldown on use. If an elixir is pulled, its effects are temporary. 2-hour cooldown.
+> (Gacha) You can temporarily summon a random item from the Diamond Item Gacha lasting 1 hour before disappearing (you roll the gacha with a temporary ticket). This ability starts its 8-hour cooldown on use. If an elixir is pulled, its effects are temporary. 2-hour cooldown.
 
 **Decision**
 
@@ -18661,7 +18735,7 @@
 
 **Description**
 
-> "Lucky" When you roll this ability, whatever ticket you got it with is rolled twice and this ability is removed.
+> (Gacha) "Lucky" When you roll this ability, whatever ticket you got it with is rolled twice and this ability is removed.
 
 **Decision**
 
@@ -18929,7 +19003,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.2 | Mythical | DxD |
+| 7.2 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -19150,7 +19224,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.6 | Rare | Terraria/Calamity Mod |
+| 3.6 | Rare | Calamity Mod |
 
 **Description**
 
@@ -21970,7 +22044,7 @@
 
 **Description**
 
-> Call to Arms rolls the familiar gacha to temporarily grant you a familiar fighting by your side for 1 hour, then it disappears. At 1 Ability Slot you pull Bronze, 2 slots = Silver, 3 slots = Gold, 4 Slots = Platinum, capping at 5 slots = Diamond. 24 Hour cooldown.
+> (Gacha) Call to Arms rolls the familiar gacha to temporarily grant you a familiar fighting by your side for 1 hour, then it disappears. At 1 Ability Slot you pull Bronze, 2 slots = Silver, 3 slots = Gold, 4 Slots = Platinum, capping at 5 slots = Diamond. 24 Hour cooldown.
 
 **Decision**
 
@@ -25289,6 +25363,1264 @@
 **Description**
 
 > Manifest and control Uzumaki Adamantine Sealing Chains as incredibly durable chains that suppress and seal bound targets' energy. Suppression scales with energy spent and your power advantage; chain power and count scale with energy used.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1387. Sight +1
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Generic |
+
+**Description**
+
+> (Tree)(Meta:sight:1) You can view locked nodes one extra connection away from unlocked nodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1388. Sight +2
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Generic |
+
+**Description**
+
+> (Tree)(Meta:sight:2) You can view locked nodes two extra connections away from unlocked nodes. Overrides Sight +1.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1389. Far Sight
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Generic |
+
+**Description**
+
+> (Tree)(Meta:see-far) You can view locked nodes within a set distance of unlocked nodes, even if unconnected to them.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1390. Trace Name
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.5 | Elite | Generic |
+
+**Description**
+
+> (Tree)(Meta:trace-name) You can trace a route to the closest locked nodes whose name contains a chosen word or phrase.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1391. Trace Description
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Generic |
+
+**Description**
+
+> (Tree)(Meta:trace-desc) You can trace a route to the closest locked nodes whose description contains a chosen word or phrase.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1392. Glimpse
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Generic |
+
+**Description**
+
+> (Tree)(Meta:reveal-temp) Single use. Reveal the full tree for 10 seconds.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1393. Omnisight
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.0 | Transcendent | Generic |
+
+**Description**
+
+> (Tree)(Meta:reveal-full) Permanently reveal the entire tree.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1394. Echo
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Generic |
+
+**Description**
+
+> (Tree)(Meta:echo) Single use. The next ticket you are awarded pays double points.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1395. Survey
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Generic |
+
+**Description**
+
+> (Tree)(Meta:survey:1) You can see the names of locked nodes one extra connection away from unlocked nodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1396. Source Compass
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Generic |
+
+**Description**
+
+> (Tree)(Meta:compass) You can trace a route to the closest locked node of any chosen source.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1397. Sight: Ability
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.5 | Uncommon | Generic |
+
+**Description**
+
+> (Tree)(Meta:sight-cat:ability:1) You can view ability nodes one extra connection away from unlocked nodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1398. Sight: Item
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.5 | Uncommon | Generic |
+
+**Description**
+
+> (Tree)(Meta:sight-cat:item:1) You can view item nodes one extra connection away from unlocked nodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1399. Sight: Skill
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.5 | Uncommon | Generic |
+
+**Description**
+
+> (Tree)(Meta:sight-cat:skill:1) You can view skill nodes one extra connection away from unlocked nodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1400. Sight: Trait
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.5 | Uncommon | Generic |
+
+**Description**
+
+> (Tree)(Meta:sight-cat:trait:1) You can view trait nodes one extra connection away from unlocked nodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1401. Sight: Familiar
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.5 | Uncommon | Generic |
+
+**Description**
+
+> (Tree)(Meta:sight-cat:familiar:1) You can view familiar nodes one extra connection away from unlocked nodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1402. Telekinetic Launch
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Control |
+
+**Description**
+
+> Rip loose concrete, furniture, and machinery from the environment and hurl it as telekinetic artillery; charged throws stagger even the Hiss.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1403. Seize
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Control |
+
+**Description**
+
+> Weaken an enemy then seize their mind outright, turning them into a temporary ally that fights and dies for you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1404. Debris Shield
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Control |
+
+**Description**
+
+> Tear rubble from the surroundings into a rotating barrier that eats gunfire, then launch the whole shield back at whoever shot you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1405. Evade
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Control |
+
+**Description**
+
+> A short telekinetic dash that phases through incoming fire; upgraded chains link multiple dashes together.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1406. Levitate
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Control |
+
+**Description**
+
+> Rise and drift on telekinetic lift while raining debris from above; full upgrades allow true flight and meteor ground slams.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1407. Icarus Landing System
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Deus Ex |
+
+**Description**
+
+> Fall from any height wrapped in an electromagnetic glare shield that disperses on impact, landing unharmed every time.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1408. Smart Vision
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Deus Ex |
+
+**Description**
+
+> See living targets and machines through walls, with threats, cameras, and robots highlighted and assessed.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1409. Glass-Shield Cloaking
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Deus Ex |
+
+**Description**
+
+> Bend light around yourself to turn nearly invisible while moving slowly; it drinks energy fast so keep moving with purpose.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1410. Titan Shield
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Deus Ex |
+
+**Description**
+
+> Project hardened dermal armor that shrugs off bullets and explosions while active, at a heavy energy cost.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1411. Remote Hacking
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Deus Ex |
+
+**Description**
+
+> Breach cameras, turrets, robots, and door panels from a distance without ever touching a terminal.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1412. CASIE
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Deus Ex |
+
+**Description**
+
+> Read micro-expressions and pheromones to profile anyone mid-conversation, then nudge them toward the answer you wanted.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1413. Psycast Skip
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | RimWorld |
+
+**Description**
+
+> Teleport yourself or a nearby pawn a short distance, blinking through walls and out of danger at the cost of neural heat.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1414. Psycast Farskip
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | RimWorld |
+
+**Description**
+
+> Open a skipgate that relocates your whole caravan across the world map, or dumps an enemy raid somewhere far away.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1415. Psycast Berserk Pulse
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | RimWorld |
+
+**Description**
+
+> Drive every humanlike in an area into a murderous berserk rage, friend and foe alike. Do not stand in the pulse.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1416. Psycast Invisibility
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | RimWorld |
+
+**Description**
+
+> Vanish from enemy perception entirely and walk through a raid unseen; attacking breaks the effect.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1417. Word of Serenity
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | RimWorld |
+
+**Description**
+
+> Speak with irresistible calm that ends mental breaks on the spot and steadies volatile colonists.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1418. Time Walk
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.8 | Mythical | MTG |
+
+**Description**
+
+> Take an extra turn after this one. Two mana, one extra turn, and a permanent seat on every banned list.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1419. Ancestral Recall
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.4 | Mythical | MTG |
+
+**Description**
+
+> Target player draws three cards. One blue mana for the most efficient draw spell ever printed.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1420. Counterspell
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | MTG |
+
+**Description**
+
+> Counter target spell. Two blue mana that simply says no to anything.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1421. Swords to Plowshares
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | MTG |
+
+**Description**
+
+> Exile target creature; its controller gains life equal to its power. One mana of unconditional removal.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1422. Dark Ritual
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | MTG |
+
+**Description**
+
+> Add three black mana in a burst. The turn-one kill enabler since Alpha.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1423. Giant Growth
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | MTG |
+
+**Description**
+
+> Target creature gets +3/+3 until end of turn. One green mana of timeless combat math.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1424. Nether Swap
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Divinity Original Sin |
+
+**Description**
+
+> Swap the positions of any two characters or objects in range, teleporting both at once.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1425. Adrenaline
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Divinity Original Sin |
+
+**Description**
+
+> Gain 2 action points now at the cost of 2 next turn; the classic opening-move rush.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1426. Chameleon Cloak
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Divinity Original Sin |
+
+**Description**
+
+> Blend perfectly into the surroundings, turning invisible for two turns unless you attack or cast.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1427. Chicken Claw
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Divinity Original Sin |
+
+**Description**
+
+> Polymorph an enemy into a clucking chicken that wanders helplessly for its turn.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1428. Tentacle Lash
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Divinity Original Sin |
+
+**Description**
+
+> Sprout a tentacle that lashes distant enemies for damage and disarms them.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1429. Bull Horns
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Divinity Original Sin |
+
+**Description**
+
+> Grow horns that gore targets when you rush them, knocking victims down.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1430. Infect
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Divinity Original Sin |
+
+**Description**
+
+> Infect a target with disease that eats through armour and keeps rotting them each turn.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1431. Flay Skin
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Divinity Original Sin |
+
+**Description**
+
+> Strip all magic armour from enemies around you, leaving them open to every status effect.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1432. Time Warp
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.4 | Legendary | Divinity Original Sin |
+
+**Description**
+
+> Fane's special source skill: grant a character an entire extra turn after their current one ends.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1433. Apotheosis
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.8 | Legendary | Divinity Original Sin |
+
+**Description**
+
+> Take the first step toward godhood: all Source skills cost 3 less and attributes surge for two turns.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1434. Temporal Rewind
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Life is Strange |
+
+**Description**
+
+> Rewind time by seconds or minutes while retaining full memory of the undone timeline, then choose better.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1435. Telekinetic Blast
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Life is Strange |
+
+**Description**
+
+> Unleash concussive telekinetic force that hurls people, cars, and debris away from you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1436. Concentration
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Horizon Zero Dawn |
+
+**Description**
+
+> Slow the world to a crawl while aiming, lining up machine weak-point shots with perfect calm.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1437. Silent Strike
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Horizon Zero Dawn |
+
+**Description**
+
+> Takedown unaware machines and humans from stealth for massive damage.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1438. Survivalist
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Tomb Raider |
+
+**Description**
+
+> Hunter vision that highlights enemies, animals, traps, and salvage through the environment.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1439. Loop Memory
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Retain skills, relationships, and knowledge across loops of your life on Vertumna, redoing years better each time.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1440. Seeker Subroutine
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Tron 2.0 |
+
+**Description**
+
+> Launch homing energy seekers from your identity disc that hunt targets around corners.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1441. Adenine Volley
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Genome Guardian |
+
+**Description**
+
+> Spray rapidfire nucleotide shots; pair it with another weapon to discover hybrid bioweapons.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1442. Cytosine Precision
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Genome Guardian |
+
+**Description**
+
+> Fire precise nucleotide shots that strike weak points; pair it to discover hybrid bioweapons.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1443. Guanine Spread
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Genome Guardian |
+
+**Description**
+
+> Unleash wide-spread nucleotide shots that blanket microbe waves; pair it to discover hybrid bioweapons.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1444. Thymine Detonation
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Genome Guardian |
+
+**Description**
+
+> Detonate explosive nucleotide shots that clear clustered microbes; pair it to discover hybrid bioweapons.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1445. Summon Tsunami
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Cities Skylines |
+
+**Description**
+
+> Call down a city-devouring tsunami wave, then watch the flooded districts from your disaster overview.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1446. Firewall
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Tron 2.0 |
+
+**Description**
+
+> Equip a defensive subroutine that hardens your disc against hostile code and viral attacks.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1447. Timeline Shift
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Life is Strange |
+
+**Description**
+
+> Shift yourself between two parallel timelines, carrying objects and consequences across with you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1448. Eldritch Constructs
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | MCU |
+
+**Description**
+
+> Shape Eldritch magic into whips, shields, blades, and bindings that strike spirits as well as soldiers.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1449. Mirror Dimension
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | MCU |
+
+**Description**
+
+> Fold yourself and your enemies into the Mirror Dimension, where cities bend and no collateral escapes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1450. Chaos Magic
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.6 | Legendary | MCU |
+
+**Description**
+
+> Wield raw Chaos Magic that rewrites probability and reality on contact; it always takes something back.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1451. Probability Hex
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | MCU |
+
+**Description**
+
+> Hex the odds themselves so the unlikely keeps happening to everyone but you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1452. Astral Projection
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | MCU |
+
+**Description**
+
+> Step out of your body as an astral form to scout unseen while your body sleeps on.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1453. Dreamwalking
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | MCU |
+
+**Description**
+
+> Possess your own variants across the multiverse by dreamwalking into their bodies.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1454. Asgardian Illusions
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | MCU |
+
+**Description**
+
+> Weave lifelike illusions, duplicates, and shapeshifts the way Loki does: constantly and without permission.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1455. Rune Magic
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | MCU |
+
+**Description**
+
+> Inscribe witch runes that steal any spell cast inside them and turn rival magic against its caster.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1456. Rail Laying
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Generic |
+
+**Description**
+
+> Lay finished railway track behind you as you walk, sleepers ballast and all, on any terrain that holds still.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1457. Rail Gauge Setting
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Generic |
+
+**Description**
+
+> Telekinetically true up any visible rails to a perfect gauge of your choosing, down to the millimetre.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1458. Vortessence
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Half-Life |
+
+**Description**
+
+> Channel the Vortessence to knit wounds closed and throw crackling green lightning alike.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1459. Xen Transit
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Half-Life |
+
+**Description**
+
+> Slip between Earth and the border world Xen, stepping across like the Nihilanth shuffled you there.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1460. Antlion Pheromones
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Half-Life |
+
+**Description**
+
+> Exude the scent-command that turns nearby antlions into your obedient swarm.
 
 **Decision**
 

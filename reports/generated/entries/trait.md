@@ -1,17 +1,17 @@
 # trait — Entry Reference
 
-633 entries. Sorted by rarity, then number.
+665 entries. Sorted by rarity, then number.
 
 | Tier | Count |
 |---|---|
 | Trash | 15 |
-| Common | 42 |
-| Uncommon | 124 |
-| Rare | 137 |
-| Elite | 137 |
-| Epic | 73 |
-| Legendary | 40 |
-| Mythical | 45 |
+| Common | 44 |
+| Uncommon | 133 |
+| Rare | 147 |
+| Elite | 144 |
+| Epic | 75 |
+| Legendary | 41 |
+| Mythical | 46 |
 | Divine | 12 |
 | Transcendent | 8 |
 
@@ -37,7 +37,7 @@
 | 451 | [Drunk Driver](#451-drunk-driver) | 0.9 | Generic |
 | 452 | [Ceaseless Discharge](#452-ceaseless-discharge) | 0.9 | Generic |
 
-### Common (42)
+### Common (44)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -65,6 +65,7 @@
 | 76 | [Nimble](#76-nimble) | 1.6 | Generic |
 | 197 | [Free Flier](#197-free-flier) | 1.6 | Generic |
 | 236 | [Charming Eyes](#236-charming-eyes) | 1.6 | Generic |
+| 658 | [Rock and Stone](#658-rock-and-stone) | 1.6 | Deep Rock Galactic |
 | 77 | [Durable](#77-durable) | 1.7 | Generic |
 | 239 | [Chronolog](#239-chronolog) | 1.7 | Generic |
 | 253 | [Flexible](#253-flexible) | 1.7 | Generic |
@@ -77,6 +78,7 @@
 | 595 | [Electrician](#595-electrician) | 1.8 | Generic |
 | 613 | [Sober](#613-sober) | 1.8 | Generic |
 | 626 | [Spine of Steel](#626-spine-of-steel) | 1.8 | Generic |
+| 663 | [Silent Protagonist](#663-silent-protagonist) | 1.8 | Half-Life |
 | 3 | [Hygienic](#3-hygienic) | 1.9 | Generic |
 | 31 | [Animal Lover](#31-animal-lover) | 1.9 | Generic |
 | 395 | [Metabolism](#395-metabolism) | 1.9 | Generic |
@@ -84,12 +86,14 @@
 | 551 | [Perfect Skin](#551-perfect-skin) | 1.9 | Generic |
 | 587 | [The Santa Clause](#587-the-santa-clause) | 1.9 | Generic |
 
-### Uncommon (124)
+### Uncommon (133)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 170 | [Cat's Feet](#170-cats-feet) | 2.0 | Generic |
 | 319 | [Musk](#319-musk) | 2.0 | Generic |
+| 633 | [Prosperity +10%](#633-prosperity-10) | 2.0 | Generic |
+| 660 | [Handy](#660-handy) | 2.0 | Project Zomboid |
 | 51 | [Silent Steps](#51-silent-steps) | 2.1 | Generic |
 | 80 | [Breathless](#80-breathless) | 2.1 | Generic |
 | 86 | [Poseidon's Kiss](#86-poseidons-kiss) | 2.1 | Generic |
@@ -121,6 +125,8 @@
 | 554 | [Endless Stomach](#554-endless-stomach) | 2.2 | Generic |
 | 564 | [Allowance](#564-allowance) | 2.2 | Generic |
 | 575 | [Dullahan's Deception](#575-dullahans-deception) | 2.2 | Generic |
+| 659 | [Keen Hearing](#659-keen-hearing) | 2.2 | Project Zomboid |
+| 662 | [MIT Graduate](#662-mit-graduate) | 2.2 | Half-Life |
 | 50 | [Linguist](#50-linguist) | 2.3 | Generic |
 | 131 | [Sexual Calibration](#131-sexual-calibration) | 2.3 | Generic |
 | 177 | [Lucky Sukebe](#177-lucky-sukebe) | 2.3 | Generic |
@@ -141,6 +147,8 @@
 | 568 | [Arthropod Affiliate](#568-arthropod-affiliate) | 2.4 | Generic |
 | 605 | [Health Insurance](#605-health-insurance) | 2.4 | Generic |
 | 622 | [Enhanced Lungs](#622-enhanced-lungs) | 2.4 | Generic |
+| 653 | [Backtalk](#653-backtalk) | 2.4 | Life is Strange |
+| 661 | [The Factory Must Grow](#661-the-factory-must-grow) | 2.4 | Factorio |
 | 10 | [Cardboard World](#10-cardboard-world) | 2.5 | Generic |
 | 15 | [Mountman](#15-mountman) | 2.5 | Generic |
 | 28 | [Kakyoin's Gift](#28-kakyoins-gift) | 2.5 | Generic |
@@ -178,6 +186,7 @@
 | 567 | [Canis Companion](#567-2-canis-companion) | 2.6 | Generic |
 | 596 | [Lightning Catcher](#596-lightning-catcher) | 2.6 | Generic |
 | 628 | [Thermal Adaptor](#628-thermal-adaptor) | 2.6 | Generic |
+| 645 | [Kind](#645-kind) | 2.6 | RimWorld |
 | 2 | [Efficient Physique](#2-efficient-physique) | 2.7 | Generic |
 | 7 | [Antibody](#7-antibody) | 2.7 | Generic |
 | 70 | [Empathy](#70-empathy) | 2.7 | Generic |
@@ -207,13 +216,15 @@
 | 498 | [Netoranger](#498-netoranger) | 2.8 | Generic |
 | 520 | [Kure](#520-kure) | 2.8 | Kengan Ashura |
 | 523 | [Rule of Cool](#523-rule-of-cool) | 2.8 | Generic |
+| 648 | [Arsonist](#648-arsonist) | 2.8 | RimWorld |
+| 651 | [Zoning Intuition](#651-zoning-intuition) | 2.8 | Cities Skylines |
 | 33 | [Bitch Breaker](#33-bitch-breaker) | 2.9 | Generic |
 | 130 | [Feline Friend](#130-feline-friend) | 2.9 | Generic |
 | 309 | [Library Mind](#309-library-mind) | 2.9 | Generic |
 | 352 | [Sensor](#352-sensor) | 2.9 | Generic |
 | 529 | [Nakiri](#529-nakiri) | 2.9 | Shokugeki no Souma |
 
-### Rare (137)
+### Rare (147)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -222,6 +233,10 @@
 | 178 | [Spirit Affinity](#178-spirit-affinity) | 3.0 | Generic |
 | 401 | [Vaunt](#401-vaunt) | 3.0 | Generic |
 | 461 | [Trainee Tinker](#461-trainee-tinker) | 3.0 | Generic |
+| 634 | [Prosperity +20%](#634-prosperity-20) | 3.0 | Generic |
+| 639 | [Rapid Breeders](#639-rapid-breeders) | 3.0 | Stellaris |
+| 644 | [Iron-Willed](#644-iron-willed) | 3.0 | RimWorld |
+| 657 | [The City Must Survive](#657-the-city-must-survive) | 3.0 | Frostpunk |
 | 38 | [Voice](#38-voice) | 3.1 | Generic |
 | 56 | [Iron Palate](#56-iron-palate) | 3.1 | Generic |
 | 186 | [Dexterous](#186-dexterous) | 3.1 | Generic |
@@ -242,6 +257,8 @@
 | 463 | [Nascent Esper](#463-nascent-esper) | 3.2 | Generic |
 | 524 | [Crazy Lure](#524-crazy-lure) | 3.2 | Generic |
 | 630 | [Castle Doctrine](#630-castle-doctrine) | 3.2 | Generic |
+| 643 | [Ocean-Born](#643-ocean-born) | 3.2 | Stellaris |
+| 650 | [Traffic Engineer](#650-traffic-engineer) | 3.2 | Cities Skylines |
 | 45 | [Ice Resistance](#45-ice-resistance) | 3.3 | Generic |
 | 104 | [Mysterious Stranger](#104-mysterious-stranger) | 3.3 | Generic |
 | 134 | [Hero Candidate](#134-hero-candidate) | 3.3 | Generic |
@@ -257,7 +274,7 @@
 | 453 | [Scarousing](#453-scarousing) | 3.3 | Generic |
 | 464 | [Initiate Magician](#464-initiate-magician) | 3.3 | Generic |
 | 467 | [Tickets Please](#467-tickets-please) | 3.3 | Generic |
-| 480 | [Tune Up](#480-tune-up) | 3.3 | Generic |
+| 480 | [Total Overhaul](#480-total-overhaul) | 3.3 | Generic |
 | 500 | [Tune Up](#500-tune-up) | 3.3 | Generic |
 | 9 | [Devil's Advocate](#9-devils-advocate) | 3.4 | Generic |
 | 27 | [Winner's Rights](#27-winners-rights) | 3.4 | Generic |
@@ -274,6 +291,8 @@
 | 507 | [Exorcist](#507-exorcist) | 3.4 | Generic |
 | 570 | [Gravelord Servant](#570-gravelord-servant) | 3.4 | Dark Souls |
 | 597 | [Thirsty](#597-thirsty) | 3.4 | Generic |
+| 638 | [Intelligent](#638-intelligent) | 3.4 | Stellaris |
+| 647 | [Cannibal](#647-cannibal) | 3.4 | RimWorld |
 | 11 | [Photosynthesis](#11-photosynthesis) | 3.5 | Generic |
 | 19 | [Greater Headpat](#19-greater-headpat) | 3.5 | Generic |
 | 40 | [Fire Resistance](#40-fire-resistance) | 3.5 | Generic |
@@ -347,6 +366,8 @@
 | 506 | [Elementalist](#506-elementalist) | 3.8 | Generic |
 | 514 | [Lich](#514-lich) | 3.8 | Generic |
 | 525 | [Beelzebub's Blessing](#525-beelzebubs-blessing) | 3.8 | Generic |
+| 646 | [Psychopath](#646-psychopath) | 3.8 | RimWorld |
+| 656 | [Hexagonal Skill Grid](#656-hexagonal-skill-grid) | 3.8 | Q-UP |
 | 20 | [Efficient Cells](#20-efficient-cells) | 3.9 | Generic |
 | 46 | [Thermal Balance](#46-thermal-balance) | 3.9 | Generic |
 | 69 | [Steady](#69-steady) | 3.9 | Generic |
@@ -355,7 +376,7 @@
 | 308 | [Vault](#308-vault) | 3.9 | Generic |
 | 312 | [All Trades](#312-all-trades) | 3.9 | Generic |
 
-### Elite (137)
+### Elite (144)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -370,6 +391,9 @@
 | 367 | [The Taker](#367-the-taker) | 4.0 | Generic |
 | 465 | [Incubus/Succubus](#465-incubussuccubus) | 4.0 | Generic |
 | 601 | [Shoulder to Shoulder](#601-shoulder-to-shoulder) | 4.0 | Generic |
+| 635 | [Prosperity +30%](#635-prosperity-30) | 4.0 | Generic |
+| 637 | [Root Pact](#637-root-pact) | 4.0 | Generic |
+| 654 | [Glow-Touched](#654-glow-touched) | 4.0 | I Was a Teenage Exocolonist |
 | 1 | [Nothing Wrong Here](#1-nothing-wrong-here) | 4.1 | Generic |
 | 64 | [Inland Empire](#64-inland-empire) | 4.1 | Disco Elysium |
 | 83 | [Magician](#83-magician) | 4.1 | Generic |
@@ -402,6 +426,8 @@
 | 572 | [Path of Dragon](#572-path-of-dragon) | 4.2 | Dark Souls |
 | 609 | [Luddite](#609-luddite) | 4.2 | Generic |
 | 611 | [Style](#611-style) | 4.2 | Ultrakill |
+| 641 | [Lithoid](#641-lithoid) | 4.2 | Stellaris |
+| 655 | [Root Access](#655-root-access) | 4.2 | Tron 2.0 |
 | 85 | [Esper](#85-esper) | 4.3 | Generic |
 | 94 | [Gambler](#94-gambler) | 4.3 | Generic |
 | 103 | [Reactive Precognition](#103-reactive-precognition) | 4.3 | Generic |
@@ -421,6 +447,7 @@
 | 481 | [Greater Beastkin](#481-greater-beastkin) | 4.4 | Generic |
 | 599 | [Super Heavyweight](#599-super-heavyweight) | 4.4 | Generic |
 | 619 | [Hypertrophic Mechanic](#619-hypertrophic-mechanic) | 4.4 | Generic |
+| 649 | [Strange Mood](#649-strange-mood) | 4.4 | Dwarf Fortress |
 | 8 | [Longevity](#8-longevity) | 4.5 | Generic |
 | 16 | [Magic Resistance](#16-magic-resistance) | 4.5 | Generic |
 | 167 | [Hero](#167-hero) | 4.5 | Generic |
@@ -488,6 +515,7 @@
 | 560 | [Roc](#560-roc) | 4.8 | Generic |
 | 576 | [Chaos Duplication](#576-chaos-duplication) | 4.8 | Generic |
 | 584 | [Mythril Fist](#584-mythril-fist) | 4.8 | Generic |
+| 642 | [Hive-Minded](#642-hive-minded) | 4.8 | Stellaris |
 | 133 | [Ygdar Orus Li Ox](#133-ygdar-orus-li-ox) | 4.9 | Generic |
 | 148 | [Surging Magic Power](#148-surging-magic-power) | 4.9 | Generic |
 | 179 | [Immortal Soul](#179-immortal-soul) | 4.9 | Generic |
@@ -497,7 +525,7 @@
 | 491 | [Gift of Nyar](#491-gift-of-nyar) | 4.9 | Generic |
 | 614 | [Variable Gene](#614-variable-gene) | 4.9 | Generic |
 
-### Epic (73)
+### Epic (75)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -506,6 +534,7 @@
 | 140 | [Ex Nihilo](#140-ex-nihilo) | 5.0 | Generic |
 | 432 | [Biodroid](#432-biodroid) | 5.0 | Generic |
 | 477 | [Glowing One](#477-glowing-one) | 5.0 | Generic |
+| 636 | [Prosperity +40%](#636-prosperity-40) | 5.0 | Generic |
 | 227 | [Recoilless](#227-recoilless) | 5.1 | Generic |
 | 315 | [No Peeking](#315-no-peeking) | 5.1 | Generic |
 | 324 | [Hyuga](#324-hyuga) | 5.1 | Naruto |
@@ -548,6 +577,7 @@
 | 199 | [Zenkai Boost](#199-zenkai-boost) | 5.6 | Generic |
 | 254 | [Demon King](#254-demon-king) | 5.6 | Generic |
 | 578 | [Crushing Daunt](#578-crushing-daunt) | 5.6 | Generic |
+| 640 | [Mind over Matter](#640-mind-over-matter) | 5.6 | Stellaris |
 | 139 | [The Favorite](#139-the-favorite) | 5.7 | Generic |
 | 207 | [Living Nightmare](#207-living-nightmare) | 5.7 | Generic |
 | 244 | [Nature's Chosen](#244-natures-chosen) | 5.7 | Generic |
@@ -575,7 +605,7 @@
 | 470 | [Sea Serpent](#470-sea-serpent) | 5.9 | Generic |
 | 586 | [Regenerator](#586-regenerator) | 5.9 | Hellsing |
 
-### Legendary (40)
+### Legendary (41)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -597,6 +627,7 @@
 | 323 | [Uzumaki](#323-uzumaki) | 6.4 | Naruto |
 | 512 | [Necro Kaiser](#512-necro-kaiser) | 6.4 | Generic |
 | 530 | [Anathema](#530-anathema) | 6.4 | Generic |
+| 664 | [Employed by the G-Man](#664-employed-by-the-g-man) | 6.4 | Half-Life |
 | 362 | [Throne](#362-throne) | 6.5 | Generic |
 | 405 | [Greater Psyker](#405-greater-psyker) | 6.5 | Warhammer 40k |
 | 459 | [Lunar Lycan](#459-lunar-lycan) | 6.5 | Generic |
@@ -620,7 +651,7 @@
 | 241 | [Infinite Money Glitch](#241-infinite-money-glitch) | 6.9 | Generic |
 | 389 | [Progenitor Demon](#389-progenitor-demon) | 6.9 | Demon Slayer |
 
-### Mythical (45)
+### Mythical (46)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -653,6 +684,7 @@
 | 583 | [Prime Soul](#583-prime-soul) | 7.6 | Ultrakill |
 | 592 | [CEO of Sex](#592-ceo-of-sex) | 7.6 | Generic |
 | 607 | [No Life King](#607-no-life-king) | 7.6 | Hellsing |
+| 652 | [Planeswalker's Spark](#652-planeswalkers-spark) | 7.6 | MTG |
 | 90 | [Grand Mage](#90-grand-mage) | 7.7 | Generic |
 | 256 | [Chosen Champion](#256-chosen-champion) | 7.7 | Generic |
 | 427 | [Daemon](#427-daemon) | 7.7 | Generic |
@@ -698,7 +730,7 @@
 | 394 | [Beast](#394-beast) | 9.5 | Fate |
 | 505 | [Broken Limiter](#505-broken-limiter) | 9.5 | One Punch Man |
 | 417 | [Absolute Victory](#417-absolute-victory) | 9.7 | Generic |
-| 376 | [Spiral](#376-spiral) | 9.9 | Tengen Toppa Gurenn Lagann |
+| 376 | [Spiral](#376-spiral) | 9.9 | Gurren Lagann |
 
 ## Entries
 
@@ -2307,7 +2339,7 @@
 
 **Description**
 
-> Every time you would roll the ticket, you first roll a D20: {20}= Ticket Rank Up, {19 - 17}= Advantage, {16 - 13}= Change Ticket Type, {12 - 8}= Nothing happens, {7 - 2}= Ticket Rank Down, {1}= Ticket is destroyed. This trait can be rerolled or toggled.
+> (Gacha) Every time you would roll the ticket, you first roll a D20: {20}= Ticket Rank Up, {19 - 17}= Advantage, {16 - 13}= Change Ticket Type, {12 - 8}= Nothing happens, {7 - 2}= Ticket Rank Down, {1}= Ticket is destroyed. This trait can be rerolled or toggled.
 
 **Decision**
 
@@ -7141,7 +7173,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 9.9 | Transcendent | Tengen Toppa Gurenn Lagann |
+| 9.9 | Transcendent | Gurren Lagann |
 
 **Description**
 
@@ -8692,7 +8724,7 @@
 
 **Description**
 
-> You can withdraw your tickets as physical, tangible tickets to hand to others. If someone else rips the ticket, they receive the roll result instead, subject to the same rules as you.
+> (Gacha) You can withdraw your tickets as physical, tangible tickets to hand to others. If someone else rips the ticket, they receive the roll result instead, subject to the same rules as you.
 
 **Decision**
 
@@ -8726,7 +8758,7 @@
 
 **Description**
 
-> When you roll a ticket, you can reroll it with its rarity lowered by one stage (Platinum to Gold, Gold to Silver, etc.), but do not blame the gacha if it does not work out.
+> (Gacha) When you roll a ticket, you can reroll it with its rarity lowered by one stage (Platinum to Gold, Gold to Silver, etc.), but do not blame the gacha if it does not work out.
 
 **Decision**
 
@@ -8905,7 +8937,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 480. Tune Up
+## 480. Total Overhaul
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -10582,7 +10614,7 @@
 
 **Description**
 
-> You grant copies of your own abilities and traits to others by burning a ticket equal in value to what you grant: bronze grants common, silver grants uncommon, gold grants rare, etc. Higher tickets grant double the replicants of the previous rarity: silver = 2x common, gold = 4x common, etc.
+> (Gacha) You grant copies of your own abilities and traits to others by burning a ticket equal in value to what you grant: bronze grants common, silver grants uncommon, gold grants rare, etc. Higher tickets grant double the replicants of the previous rarity: silver = 2x common, gold = 4x common, etc.
 
 **Decision**
 
@@ -11543,6 +11575,550 @@
 **Description**
 
 > Your blood is infused with garlic, so the next vampire that bites you will really regret it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 633. Prosperity +10%
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Generic |
+
+**Description**
+
+> (Tree)(Meta:ticket-bonus:10) Every ticket you are awarded grants 10% extra points. Stacks additively with other Prosperity traits.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 634. Prosperity +20%
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Generic |
+
+**Description**
+
+> (Tree)(Meta:ticket-bonus:20) Every ticket you are awarded grants 20% extra points. Stacks additively with other Prosperity traits.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 635. Prosperity +30%
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Generic |
+
+**Description**
+
+> (Tree)(Meta:ticket-bonus:30) Every ticket you are awarded grants 30% extra points. Stacks additively with other Prosperity traits.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 636. Prosperity +40%
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Generic |
+
+**Description**
+
+> (Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 637. Root Pact
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Generic |
+
+**Description**
+
+> (Tree)(Meta:root-pact) Nodes directly connected to the Origin root unlock at half points cost.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 638. Intelligent
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Stellaris |
+
+**Description**
+
+> Your mind learns fast: research, engineering, and study all come noticeably easier.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 639. Rapid Breeders
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Stellaris |
+
+**Description**
+
+> Your kind multiplies quickly; growth, recovery, and repopulation outpace everyone.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 640. Mind over Matter
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Stellaris |
+
+**Description**
+
+> Your mind touches the Shroud; latent psychic potential hums beneath every thought.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 641. Lithoid
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Stellaris |
+
+**Description**
+
+> You are living rock: silicon flesh that shrugs off hunger and laughs at vacuum.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 642. Hive-Minded
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Stellaris |
+
+**Description**
+
+> You are a node in a greater gestalt, sharing senses and purpose with the whole.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 643. Ocean-Born
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Stellaris |
+
+**Description**
+
+> Born to water worlds; you swim, dive, and work the seas better than any landwalker.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 644. Iron-Willed
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | RimWorld |
+
+**Description**
+
+> Your mood barely moves; break risks, pain, and horror slide off a steady mind.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 645. Kind
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | RimWorld |
+
+**Description**
+
+> You lift everyone around you and never start social fights; even raiders hesitate.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 646. Psychopath
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | RimWorld |
+
+**Description**
+
+> No empathy, no problem: organ harvesting, butchering, and horror leave you untouched.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 647. Cannibal
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | RimWorld |
+
+**Description**
+
+> Human meat is a delicacy and butchering people is honest work; corpses are groceries.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 648. Arsonist
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | RimWorld |
+
+**Description**
+
+> You love fire a little too much and will occasionally go start one on purpose. Sorry.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 649. Strange Mood
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Dwarf Fortress |
+
+**Description**
+
+> Fall into a fey trance, claim a workshop, and produce a priceless artifact from whatever is at hand.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 650. Traffic Engineer
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Cities Skylines |
+
+**Description**
+
+> Intuitively read any road network and know exactly which interchange untangles it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 651. Zoning Intuition
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Cities Skylines |
+
+**Description**
+
+> Always know the right mix of residential, commercial, and industrial before demand spikes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 652. Planeswalker's Spark
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.6 | Mythical | MTG |
+
+**Description**
+
+> The rare spark that lets a mage planeswalk between worlds; it ignites in moments of crisis.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 653. Backtalk
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Life is Strange |
+
+**Description**
+
+> Weaponized sarcasm: talk your way past anyone by pushing exactly the right buttons.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 654. Glow-Touched
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | I Was a Teenage Exocolonist |
+
+**Description**
+
+> Bonded with Vertumna's alien Glow, a symbiotic light that shares its strange senses.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 655. Root Access
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Tron 2.0 |
+
+**Description**
+
+> System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 656. Hexagonal Skill Grid
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Q-UP |
+
+**Description**
+
+> Your abilities arrange on a hexagonal grid, triggering off coin flips in combo chains.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 657. The City Must Survive
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Frostpunk |
+
+**Description**
+
+> No matter the frost or the cost, you will keep the last city alive through the storm.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 658. Rock and Stone
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.6 | Common | Deep Rock Galactic |
+
+**Description**
+
+> For Rock and Stone! Morale, teamwork, and mineral yields all improve when shouted properly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 659. Keen Hearing
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Project Zomboid |
+
+**Description**
+
+> You hear zombies, alarms, and breaking windows from much further away.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 660. Handy
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Project Zomboid |
+
+**Description**
+
+> You are handy: maintenance, repairs, and barricading all go faster in your hands.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 661. The Factory Must Grow
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Factorio |
+
+**Description**
+
+> Production must expand to meet the needs of the ever-expanding production. The factory grows.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 662. MIT Graduate
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Half-Life |
+
+**Description**
+
+> You hold a doctorate from MIT and solve physics problems the way other people breathe.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 663. Silent Protagonist
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.8 | Common | Half-Life |
+
+**Description**
+
+> You simply never speak, and somehow this only makes everyone trust you more.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 664. Employed by the G-Man
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.4 | Legendary | Half-Life |
+
+**Description**
+
+> You have a vague arrangement with a reality-adjusting bureaucrat in a blue suit. Rise and shine.
 
 **Decision**
 

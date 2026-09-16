@@ -40,14 +40,14 @@ one for the other — the single biggest systemic fix below.
 - **[39. Black Barrel](entries/item.md#39-black-barrel) — 7.4 Mythical (Fate) (7.4)**: mortality imposed on "anything it hits, even
   absolute immortals" — resist/rank save? Graze = permanent? Vs
   Transcendent immortality?
-- **[78. Dimension Lost](entries/item.md#78-dimension-lost) — 8.2 Divine (DxD) (8.2)**: "inviolable" barriers/portals — what beats
+- **[78. Dimension Lost](entries/item.md#78-dimension-lost) — 8.2 Divine (Highschool DxD) (8.2)**: "inviolable" barriers/portals — what beats
   it? Size/duration/inhabitants/energy?
 - **[85. Returner's Clock](entries/item.md#85-returners-clock) — 4.9 Elite (Generic) (4.9)**: 3 unrefillable day-resets — memories/
   items/rolls retained? Paradox? Undo death / re-farm feats?
 - **242/243** (Mehrunes Razor, Skeleton Key): "only limit is the user" —
   define mechanically (energy? rank? skill?) or confirm Transcendent-tier
   at 7–8.
-- **[251. Telos Karma](entries/item.md#251-telos-karma) — 8.5 Divine (DxD) (8.5)**: causality wish, larger = more energy — rank
+- **[251. Telos Karma](entries/item.md#251-telos-karma) — 8.5 Divine (Highschool DxD) (8.5)**: causality wish, larger = more energy — rank
   cap? Paradox formula? Death-of-gods / ticket-gain affirmations?
 - **274. Armageddon Blade (5.4)**: world-ending hellfire rain at Epic —
   area/rank cap/friendly-fire/cost?

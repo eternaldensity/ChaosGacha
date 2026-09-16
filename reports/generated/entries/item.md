@@ -1,18 +1,18 @@
 # item — Entry Reference
 
-850 entries. Sorted by rarity, then number.
+1009 entries. Sorted by rarity, then number.
 
 | Tier | Count |
 |---|---|
 | Trash | 36 |
-| Common | 112 |
-| Uncommon | 124 |
-| Rare | 181 |
-| Elite | 173 |
-| Epic | 124 |
-| Legendary | 50 |
-| Mythical | 34 |
-| Divine | 11 |
+| Common | 114 |
+| Uncommon | 152 |
+| Rare | 225 |
+| Elite | 209 |
+| Epic | 148 |
+| Legendary | 62 |
+| Mythical | 46 |
+| Divine | 12 |
 | Transcendent | 5 |
 
 ## Index by tier
@@ -58,7 +58,7 @@
 | 105 | [All-purpose tool](#105-all-purpose-tool) | 0.9 | DnD |
 | 747 | [Leather Bag of Holding](#747-leather-bag-of-holding) | 0.9 | Generic |
 
-### Common (112)
+### Common (114)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -96,7 +96,7 @@
 | 161 | [Scrap Iron Candy](#161-scrap-iron-candy) | 1.4 | Black Souls |
 | 208 | [Super Absorbent Sponge](#208-super-absorbent-sponge) | 1.4 | Terraria |
 | 437 | [Bottle of Infinite Lotion](#437-bottle-of-infinite-lotion) | 1.4 | Generic |
-| 500 | [Gordon's Crowbar](#500-gordons-crowbar) | 1.4 | Half Life |
+| 500 | [Gordon's Crowbar](#500-gordons-crowbar) | 1.4 | Half-Life |
 | 613 | [Morphing Blade](#613-morphing-blade) | 1.4 | Generic |
 | 621 | [Black Knight Set](#621-black-knight-set) | 1.4 | Dark Souls |
 | 675 | [Helltaker's Apron](#675-helltakers-apron) | 1.4 | Helltaker |
@@ -134,6 +134,7 @@
 | 670 | [Feline Attachment](#670-feline-attachment) | 1.6 | Generic |
 | 673 | [Prayer Beads](#673-prayer-beads) | 1.6 | Generic |
 | 721 | [Peach Tree](#721-peach-tree) | 1.6 | Chinese Myth |
+| 861 | [Pal Sphere](#861-pal-sphere) | 1.6 | Palworld |
 | 61 | [Butcher's Bag of Infinite Meat](#61-butchers-bag-of-infinite-meat) | 1.7 | Generic |
 | 115 | [Magic Scroll Blizzard](#115-magic-scroll-blizzard) | 1.7 | Generic |
 | 142 | [Liquor Spring](#142-liquor-spring) | 1.7 | Hunter x Hunter |
@@ -164,6 +165,7 @@
 | 746 | [Physician's Ring](#746-physicians-ring) | 1.8 | Generic |
 | 804 | [Youmu Fumo](#804-youmu-fumo) | 1.8 | Touhou |
 | 813 | [Mokou Fumo](#813-mokou-fumo) | 1.8 | Touhou |
+| 942 | [Instant Camera](#942-instant-camera) | 1.8 | Life is Strange |
 | 130 | [Crate of Explosives](#130-crate-of-explosives) | 1.9 | Generic |
 | 147 | [X-ray Goggles](#147-x-ray-goggles) | 1.9 | Hunter x Hunter |
 | 152 | [Long Lost Delivery](#152-long-lost-delivery) | 1.9 | Hunter x Hunter |
@@ -175,7 +177,7 @@
 | 714 | [Third Arm Sash](#714-third-arm-sash) | 1.9 | Xiaolin Showdown |
 | 842 | [Claidheamh Mor](#842-claidheamh-mor) | 1.9 | Team Fortress 2 |
 
-### Uncommon (124)
+### Uncommon (152)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -193,6 +195,9 @@
 | 661 | [Reduvia](#661-reduvia) | 2.0 | Elden Ring |
 | 693 | [Thalasin](#693-thalasin) | 2.0 | Generic |
 | 839 | [The Cursed Ticket](#839-the-cursed-ticket) | 2.0 | Generic |
+| 869 | [Xeno-Zapper](#869-xeno-zapper) | 2.0 | Satisfactory |
+| 937 | [Q-Up Coin](#937-q-up-coin) | 2.0 | Q-UP |
+| 994 | [Passing Train](#994-passing-train) | 2.0 | Stardew Valley |
 | 57 | [Ring of Swiftness](#57-ring-of-swiftness) | 2.1 | Generic |
 | 151 | [Hideout Realtor](#151-hideout-realtor) | 2.1 | Hunter x Hunter |
 | 159 | [Hero's Bandages](#159-heros-bandages) | 2.1 | Generic |
@@ -208,13 +213,17 @@
 | 467 | [Riptide](#467-riptide) | 2.2 | Percy Jackson |
 | 502 | [Deadshot Daiquiri](#502-deadshot-daiquiri) | 2.2 | Call of Duty |
 | 539 | [Crescent Rose](#539-crescent-rose) | 2.2 | RWBY |
-| 542 | [Light Cycle](#542-light-cycle) | 2.2 | Tron |
+| 542 | [Light Cycle](#542-light-cycle) | 2.2 | Tron 2.0 |
 | 624 | [Eochaid's Dancing Blade](#624-eochaids-dancing-blade) | 2.2 | Elden Ring |
 | 632 | [Satchel of Seeds](#632-satchel-of-seeds) | 2.2 | Generic |
 | 805 | [Ran Fumo](#805-ran-fumo) | 2.2 | Touhou |
 | 831 | [Flynn's Ring](#831-flynns-ring) | 2.2 | Dark Souls |
 | 838 | [Berserker Armor](#838-berserker-armor) | 2.2 | Berserk |
 | 841 | [Taimanin Changing Booth](#841-taimanin-changing-booth) | 2.2 | Taimanin |
+| 867 | [Portable Miner](#867-portable-miner) | 2.2 | Satisfactory |
+| 875 | [Gas Mask](#875-gas-mask) | 2.2 | Satisfactory |
+| 958 | [Pickaxe](#958-pickaxe) | 2.2 | Deep Rock Galactic |
+| 992 | [Powered Rail](#992-powered-rail) | 2.2 | Minecraft |
 | 27 | [Dragon Ball](#27-dragon-ball) | 2.3 | Dragon Ball |
 | 65 | [Trinket of Chi](#65-trinket-of-chi) | 2.3 | Calamity Mod |
 | 126 | [Stimpack](#126-stimpack) | 2.3 | Fallout |
@@ -226,7 +235,7 @@
 | 95 | [Blue Stoneplate Ring](#95-blue-stoneplate-ring) | 2.4 | Dark Souls |
 | 131 | [Gold Apple](#131-gold-apple) | 2.4 | Minecraft |
 | 158 | [Levitation Necklace](#158-levitation-necklace) | 2.4 | Generic |
-| 244 | [Cloak of Invisibility](#244-cloak-of-invisibility) | 2.4 | Harry Potter |
+| 244 | [Cloak of Elvenkind](#244-cloak-of-elvenkind) | 2.4 | DnD |
 | 267 | [Second Face](#267-second-face) | 2.4 | Generic |
 | 311 | [Nymph Waterfall](#311-nymph-waterfall) | 2.4 | Hota |
 | 333 | [Sahara Slicers](#333-sahara-slicers) | 2.4 | Calamity Mod |
@@ -239,6 +248,13 @@
 | 659 | [Vordt's Great Hammer](#659-vordts-great-hammer) | 2.4 | Dark Souls |
 | 739 | [Phone A Friend](#739-phone-a-friend) | 2.4 | Generic |
 | 749 | [Silver Bag of Holding](#749-silver-bag-of-holding) | 2.4 | Generic |
+| 862 | [Mega Sphere](#862-mega-sphere) | 2.4 | Palworld |
+| 868 | [Chainsaw](#868-chainsaw) | 2.4 | Satisfactory |
+| 885 | [Foundation](#885-foundation) | 2.4 | Dyson Sphere Program |
+| 896 | [Climbing Axe](#896-climbing-axe) | 2.4 | Tomb Raider |
+| 907 | [Ultra Glide Fins](#907-ultra-glide-fins) | 2.4 | Subnautica |
+| 959 | [Flare Gun](#959-flare-gun) | 2.4 | Deep Rock Galactic |
+| 963 | [Spiked Baseball Bat](#963-spiked-baseball-bat) | 2.4 | Project Zomboid |
 | 54 | [Furniture Catalog](#54-furniture-catalog) | 2.5 | Generic |
 | 94 | [Red Stoneplate Ring](#94-red-stoneplate-ring) | 2.5 | Dark Souls |
 | 102 | [Sakuya Fumo](#102-sakuya-fumo) | 2.5 | Generic |
@@ -263,11 +279,16 @@
 | 392 | [Holy Antidote](#392-holy-antidote) | 2.6 | Generic |
 | 423 | [T-51b Power Armor](#423-t-51b-power-armor) | 2.6 | Fallout |
 | 460 | [Celestial Bronze](#460-celestial-bronze) | 2.6 | Percy Jackson |
-| 566 | [Venom Vial](#566-venom-vial) | 2.6 | Batman/DC |
+| 566 | [Venom Vial](#566-venom-vial) | 2.6 | Batman |
 | 651 | [Dragonslayer Spear](#651-dragonslayer-spear) | 2.6 | Dark Souls |
 | 656 | [Darkmoon Bow](#656-darkmoon-bow) | 2.6 | Dark Souls |
 | 713 | [Sword of the Storm](#713-sword-of-the-storm) | 2.6 | Xiaolin Showdown |
 | 743 | [Hell Taxes](#743-hell-taxes) | 2.6 | Generic |
+| 870 | [Rebar Gun](#870-rebar-gun) | 2.6 | Satisfactory |
+| 878 | [Analysis Visor](#878-analysis-visor) | 2.6 | No Man's Sky |
+| 898 | [Heavy Pistol](#898-heavy-pistol) | 2.6 | Tomb Raider |
+| 900 | [Seaglide](#900-seaglide) | 2.6 | Subnautica |
+| 949 | [Signalscope](#949-signalscope) | 2.6 | Outer Wilds |
 | 109 | [The Collar of Obedience](#109-the-collar-of-obedience) | 2.7 | Generic |
 | 180 | [IX - The Hermit](#180-ix-the-hermit) | 2.7 | Generic |
 | 221 | [Goku Uniform 1star](#221-goku-uniform-1star) | 2.7 | Kill La Kill |
@@ -294,6 +315,15 @@
 | 689 | [Asauchi](#689-asauchi) | 2.8 | Bleach |
 | 744 | [Heaven Taxes](#744-heaven-taxes) | 2.8 | Generic |
 | 788 | [Blood Vial](#788-blood-vial) | 2.8 | Bloodborne |
+| 872 | [Object Scanner](#872-object-scanner) | 2.8 | Satisfactory |
+| 880 | [Boltcaster](#880-boltcaster) | 2.8 | No Man's Sky |
+| 895 | [Xen Grenade](#895-xen-grenade) | 2.8 | Half-Life |
+| 897 | [Recurve Bow](#897-recurve-bow) | 2.8 | Tomb Raider |
+| 925 | [Zenith 10mm Pistol](#925-zenith-10mm-pistol) | 2.8 | Deus Ex |
+| 948 | [Scout Launcher](#948-scout-launcher) | 2.8 | Outer Wilds |
+| 954 | [Super Computer](#954-super-computer) | 2.8 | Oxygen Not Included |
+| 960 | [Terrain Tool](#960-terrain-tool) | 2.8 | Astroneer |
+| 964 | [Sledgehammer](#964-sledgehammer) | 2.8 | Project Zomboid |
 | 87 | [Sanctus - Dark souls](#87-sanctus-dark-souls) | 2.9 | Dark Souls |
 | 92 | [Slumbering Dragoncrest Ring](#92-slumbering-dragoncrest-ring) | 2.9 | Dark Souls |
 | 153 | [Witch's Rejuvenation Potion](#153-witchs-rejuvenation-potion) | 2.9 | Hunter x Hunter |
@@ -304,7 +334,7 @@
 | 540 | [Myrtenaster](#540-myrtenaster) | 2.9 | RWBY |
 | 718 | [Surplus Stockpile](#718-surplus-stockpile) | 2.9 | Generic |
 
-### Rare (181)
+### Rare (225)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -318,6 +348,15 @@
 | 572 | [Sutherland](#572-sutherland) | 3.0 | Code Geass |
 | 704 | [Can of Whoopass](#704-can-of-whoopass) | 3.0 | Generic |
 | 781 | [Belvaac](#781-belvaac) | 3.0 | Akame ga Kill |
+| 856 | [Lifeline](#856-lifeline) | 3.0 | Generic |
+| 871 | [Nobelisk Detonator](#871-nobelisk-detonator) | 3.0 | Satisfactory |
+| 886 | [Solar Sail](#886-solar-sail) | 3.0 | Dyson Sphere Program |
+| 892 | [Combine Pistol](#892-combine-pistol) | 3.0 | Half-Life |
+| 906 | [Thermoblade](#906-thermoblade) | 3.0 | Subnautica |
+| 930 | [Vacpack](#930-vacpack) | 3.0 | Slime Rancher |
+| 936 | [Resurrection Scroll](#936-resurrection-scroll) | 3.0 | Divinity Original Sin |
+| 965 | [Generator](#965-generator) | 3.0 | Project Zomboid |
+| 986 | [Rail Car](#986-rail-car) | 3.0 | Astroneer |
 | 128 | [Moonlight Greatsword](#128-moonlight-greatsword) | 3.1 | Dark Souls |
 | 134 | [Lightsaber](#134-lightsaber) | 3.1 | Star Wars |
 | 227 | [Any Vehicle Voucher](#227-any-vehicle-voucher) | 3.1 | Generic |
@@ -326,7 +365,7 @@
 | 384 | [Demon King's Daggers](#384-demon-kings-daggers) | 3.1 | Solo Leveling |
 | 466 | [Ring of the Bull](#466-ring-of-the-bull) | 3.1 | Generic |
 | 525 | [Kano's Eye](#525-kanos-eye) | 3.1 | Mortal Kombat |
-| 535 | [Shield Saw](#535-shield-saw) | 3.1 | Doomslayer |
+| 535 | [Shield Saw](#535-shield-saw) | 3.1 | Doom |
 | 547 | [Mechanical Tentacles](#547-mechanical-tentacles) | 3.1 | Spider-Man |
 | 589 | [Emperor's New Clothes](#589-emperors-new-clothes) | 3.1 | Generic |
 | 612 | [Very Hot Soup](#612-very-hot-soup) | 3.1 | Generic |
@@ -348,6 +387,14 @@
 | 680 | [Shikai - Shinso](#680-shikai-shinso) | 3.2 | Bleach |
 | 771 | [Heavy Pressure](#771-heavy-pressure) | 3.2 | Akame ga Kill |
 | 780 | [Extase](#780-extase) | 3.2 | Akame ga Kill |
+| 863 | [Giga Sphere](#863-giga-sphere) | 3.2 | Palworld |
+| 873 | [Blade Runners](#873-blade-runners) | 3.2 | Satisfactory |
+| 908 | [Focus](#908-focus) | 3.2 | Horizon Zero Dawn |
+| 911 | [Tripcaster](#911-tripcaster) | 3.2 | Horizon Zero Dawn |
+| 924 | [Tranquilizer Rifle](#924-tranquilizer-rifle) | 3.2 | Deus Ex |
+| 953 | [Atmo Suit](#953-atmo-suit) | 3.2 | Oxygen Not Included |
+| 985 | [Cargo Wagon](#985-cargo-wagon) | 3.2 | Factorio |
+| 990 | [Ishimura Tram](#990-ishimura-tram) | 3.2 | Dead Space |
 | 21 | [Pokeball Set](#21-pokeball-set) | 3.3 | Pokemon |
 | 47 | [Pokedex](#47-pokedex) | 3.3 | Pokemon |
 | 114 | [Monstergirls and You](#114-monstergirls-and-you) | 3.3 | Generic |
@@ -358,7 +405,7 @@
 | 332 | [Roxcalibur](#332-roxcalibur) | 3.3 | Calamity Mod |
 | 355 | [Familiar Contract](#355-familiar-contract) | 3.3 | Generic |
 | 394 | [Omni Phone](#394-omni-phone) | 3.3 | Generic |
-| 524 | [Canto](#524-canto) | 3.3 | Cyberpunk |
+| 524 | [Canto](#524-canto) | 3.3 | Cyberpunk 2077 |
 | 810 | [Yuugi Fumo](#810-yuugi-fumo) | 3.3 | Touhou |
 | 132 | [Enchanted Golden Apple](#132-enchanted-golden-apple) | 3.4 | Minecraft |
 | 140 | [Skin Care Hot Springs](#140-skin-care-hot-springs) | 3.4 | Generic |
@@ -383,6 +430,14 @@
 | 691 | [Exorcists Mace](#691-exorcists-mace) | 3.4 | Generic |
 | 745 | [Hircine's Ring](#745-hircines-ring) | 3.4 | Skyrim |
 | 830 | [Dojo Key](#830-dojo-key) | 3.4 | Generic |
+| 879 | [Terrain Manipulator](#879-terrain-manipulator) | 3.4 | No Man's Sky |
+| 894 | [Combine SMG](#894-combine-smg) | 3.4 | Half-Life |
+| 899 | [Rope Ascender](#899-rope-ascender) | 3.4 | Tomb Raider |
+| 910 | [Ropecaster](#910-ropecaster) | 3.4 | Horizon Zero Dawn |
+| 931 | [Slime Key](#931-slime-key) | 3.4 | Slime Rancher |
+| 940 | [Passenger Blimp](#940-passenger-blimp) | 3.4 | Cities Skylines |
+| 979 | [Photostatic Veil](#979-photostatic-veil) | 3.4 | MCU |
+| 983 | [Freight Wagon](#983-freight-wagon) | 3.4 | Satisfactory |
 | 7 | [Astral Injection](#7-astral-injection) | 3.5 | Calamity Mod |
 | 76 | [Hypnos' Mask](#76-hypnos-mask) | 3.5 | Generic |
 | 107 | [Magical Beans](#107-magical-beans) | 3.5 | Generic |
@@ -403,6 +458,8 @@
 | 798 | [Cirno Fumo](#798-cirno-fumo) | 3.5 | Touhou |
 | 802 | [Eirin Fumo](#802-eirin-fumo) | 3.5 | Touhou |
 | 826 | [Bathhouse Key](#826-bathhouse-key) | 3.5 | Generic |
+| 851 | [Undo Stone](#851-undo-stone) | 3.5 | Generic |
+| 857 | [Recall](#857-recall) | 3.5 | Generic |
 | 35 | [Alchemilia](#35-alchemilia) | 3.6 | Generic |
 | 69 | [Tome of Vector Magic](#69-tome-of-vector-magic) | 3.6 | Soul Eater |
 | 80 | [Alchemist's Cauldron](#80-alchemists-cauldron) | 3.6 | Generic |
@@ -430,6 +487,15 @@
 | 750 | [Golden Bag of Holding](#750-golden-bag-of-holding) | 3.6 | Generic |
 | 769 | [Perfector](#769-perfector) | 3.6 | Akame ga Kill |
 | 773 | [Shamshir](#773-shamshir) | 3.6 | Akame ga Kill |
+| 881 | [Blaze Javelin](#881-blaze-javelin) | 3.6 | No Man's Sky |
+| 893 | [Combine Shotgun](#893-combine-shotgun) | 3.6 | Half-Life |
+| 904 | [Habitat Builder](#904-habitat-builder) | 3.6 | Subnautica |
+| 913 | [Tearblaster](#913-tearblaster) | 3.6 | Horizon Zero Dawn |
+| 926 | [Nanoceramic Blade](#926-nanoceramic-blade) | 3.6 | Deus Ex |
+| 947 | [Blueprint Book](#947-blueprint-book) | 3.6 | Factorio |
+| 957 | [Wishbone](#957-wishbone) | 3.6 | Valheim |
+| 1001 | [Orient Express](#1001-orient-express) | 3.6 | Agatha Christie |
+| 1009 | [LLM Workstation Laptop](#1009-llm-workstation-laptop) | 3.6 | Generic |
 | 53 | [Tome of Hands](#53-tome-of-hands) | 3.7 | Generic |
 | 66 | [Evasion Scarf](#66-evasion-scarf) | 3.7 | Calamity Mod |
 | 72 | [Belt of Giant Strength](#72-belt-of-giant-strength) | 3.7 | DnD |
@@ -460,7 +526,7 @@
 | 289 | [Orb of Driving Rain](#289-orb-of-driving-rain) | 3.8 | Hota |
 | 338 | [Bag of Ore](#338-bag-of-ore) | 3.8 | Generic |
 | 362 | [Chaos Witch's Ring](#362-chaos-witchs-ring) | 3.8 | Generic |
-| 366 | [Gravity Jail](#366-gravity-jail) | 3.8 | DxD |
+| 366 | [Gravity Jail](#366-gravity-jail) | 3.8 | Highschool DxD |
 | 388 | [Divine Crucifix](#388-divine-crucifix) | 3.8 | Generic |
 | 442 | [Deed to Mansion](#442-deed-to-mansion) | 3.8 | Generic |
 | 496 | [Neuralyzer](#496-neuralyzer) | 3.8 | Men in Black |
@@ -476,6 +542,14 @@
 | 737 | [Knuckleblaster](#737-knuckleblaster) | 3.8 | Ultrakill |
 | 776 | [Gaea Foundation](#776-gaea-foundation) | 3.8 | Akame ga Kill |
 | 847 | [Heavenly Tribulation Ticket](#847-heavenly-tribulation-ticket) | 3.8 | Generic |
+| 887 | [Proliferator](#887-proliferator) | 3.8 | Dyson Sphere Program |
+| 891 | [Gravity Gloves](#891-gravity-gloves) | 3.8 | Half-Life |
+| 912 | [Blast Sling](#912-blast-sling) | 3.8 | Horizon Zero Dawn |
+| 934 | [Dice Turret](#934-dice-turret) | 3.8 | Genome Guardian |
+| 961 | [Shuttle](#961-shuttle) | 3.8 | Astroneer |
+| 967 | [Junimo Hut](#967-junimo-hut) | 3.8 | Stardew Valley |
+| 978 | [Yondu's Fin](#978-yondus-fin) | 3.8 | MCU |
+| 1008 | [Sea Railway](#1008-sea-railway) | 3.8 | Studio Ghibli |
 | 23 | [Cornucopia](#23-cornucopia) | 3.9 | Generic |
 | 88 | [Altar of Earth](#88-altar-of-earth) | 3.9 | Hota |
 | 138 | [Movement Ring](#138-movement-ring) | 3.9 | Generic |
@@ -490,7 +564,7 @@
 | 778 | [Mastema](#778-mastema) | 3.9 | Akame ga Kill |
 | 799 | [Remilia Fumo](#799-remilia-fumo) | 3.9 | Touhou |
 
-### Elite (173)
+### Elite (209)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -514,6 +588,14 @@
 | 785 | [Hekatonkheires](#785-hekatonkheires) | 4.0 | Akame ga Kill |
 | 803 | [Suika Fumo](#803-suika-fumo) | 4.0 | Touhou |
 | 845 | [Prismatic Cloak](#845-prismatic-cloak) | 4.0 | Generic |
+| 858 | [Shuffle](#858-shuffle) | 4.0 | Generic |
+| 864 | [Hyper Sphere](#864-hyper-sphere) | 4.0 | Palworld |
+| 905 | [Stasis Rifle](#905-stasis-rifle) | 4.0 | Subnautica |
+| 938 | [Identity Disc](#938-identity-disc) | 4.0 | Tron 2.0 |
+| 952 | [Steam Hub](#952-steam-hub) | 4.0 | Frostpunk |
+| 968 | [SHIELD Flying Car](#968-shield-flying-car) | 4.0 | Marvel |
+| 989 | [Minecart Shotgun](#989-minecart-shotgun) | 4.0 | Dwarf Fortress |
+| 1004 | [Spatchcock](#1004-spatchcock) | 4.0 | Sunless Skies |
 | 8 | [Yharim Stimulants](#8-yharim-stimulants) | 4.1 | Calamity Mod |
 | 31 | [Grimoire of the White Mage](#31-grimoire-of-the-white-mage) | 4.1 | Generic |
 | 46 | [Playful Cloud](#46-playful-cloud) | 4.1 | Jujutsu Kaisen |
@@ -564,6 +646,13 @@
 | 815 | [Tewi Fumo](#815-tewi-fumo) | 4.2 | Touhou |
 | 837 | [Monster Fucker Permit](#837-monster-fucker-permit) | 4.2 | Generic |
 | 850 | [Erdtree Seed](#850-erdtree-seed) | 4.2 | Elden Ring |
+| 874 | [Jetpack](#874-jetpack) | 4.2 | Satisfactory |
+| 901 | [Seamoth](#901-seamoth) | 4.2 | Subnautica |
+| 933 | [Blast Shotgun](#933-blast-shotgun) | 4.2 | Genome Guardian |
+| 946 | [Personal Roboport](#946-personal-roboport) | 4.2 | Factorio |
+| 955 | [Drakkar](#955-drakkar) | 4.2 | Valheim |
+| 984 | [Locomotive](#984-locomotive) | 4.2 | Factorio |
+| 995 | [Molentary Express](#995-molentary-express) | 4.2 | Professor Layton |
 | 26 | [Tricksters Book of Illusions](#26-tricksters-book-of-illusions) | 4.3 | Generic |
 | 32 | [Grimoire of the Pyromancer](#32-grimoire-of-the-pyromancer) | 4.3 | Generic |
 | 187 | [XVI - The Tower](#187-xvi-the-tower) | 4.3 | Generic |
@@ -583,6 +672,12 @@
 | 387 | [Teleportation Amulet](#387-teleportation-amulet) | 4.4 | Generic |
 | 446 | [Transformer Spark](#446-transformer-spark) | 4.4 | Transformers |
 | 640 | [Beach Key](#640-beach-key) | 4.4 | Generic |
+| 890 | [EM Rail Ejector](#890-em-rail-ejector) | 4.4 | Dyson Sphere Program |
+| 920 | [Charge Rifle](#920-charge-rifle) | 4.4 | RimWorld |
+| 928 | [Hotline](#928-hotline) | 4.4 | Control |
+| 962 | [RTG](#962-rtg) | 4.4 | Astroneer |
+| 977 | [Yaka Arrow](#977-yaka-arrow) | 4.4 | MCU |
+| 988 | [Puffing Tom](#988-puffing-tom) | 4.4 | One Piece |
 | 41 | [Shroud of Martin](#41-shroud-of-martin) | 4.5 | Fate |
 | 64 | [THE Stop Sign](#64-the-stop-sign) | 4.5 | Generic |
 | 90 | [Covetous Gold Serpent Ring](#90-covetous-gold-serpent-ring) | 4.5 | Dark Souls |
@@ -615,12 +710,21 @@
 | 783 | [Big Leaguer](#783-big-leaguer) | 4.6 | Akame ga Kill |
 | 784 | [Lionel](#784-lionel) | 4.6 | Akame ga Kill |
 | 801 | [Patchouli Fumo](#801-patchouli-fumo) | 4.6 | Touhou |
+| 882 | [Hyperdrive](#882-hyperdrive) | 4.6 | No Man's Sky |
+| 929 | [Hedron Resonance Amplifier](#929-hedron-resonance-amplifier) | 4.6 | Control |
+| 935 | [Idol of Rebirth](#935-idol-of-rebirth) | 4.6 | Divinity Original Sin |
+| 939 | [Impossible Shard](#939-impossible-shard) | 4.6 | Q-UP |
+| 945 | [Power Armor](#945-power-armor) | 4.6 | Factorio |
+| 973 | [Staff of the Living Tribunal](#973-staff-of-the-living-tribunal) | 4.6 | MCU |
+| 975 | [TVA Pruning Baton](#975-tva-pruning-baton) | 4.6 | MCU |
+| 982 | [Electric Locomotive](#982-electric-locomotive) | 4.6 | Satisfactory |
+| 1000 | [Polar Express](#1000-polar-express) | 4.6 | The Polar Express |
 | 24 | [Tome of the Erdtree](#24-tome-of-the-erdtree) | 4.7 | Elden Ring |
 | 28 | [Stone Mask](#28-stone-mask) | 4.7 | JoJo |
-| 38 | [Angel Ring](#38-angel-ring) | 4.7 | Modded Minecraft |
+| 38 | [Angel Ring](#38-angel-ring) | 4.7 | Minecraft |
 | 45 | [HF Murasama](#45-hf-murasama) | 4.7 | Metal Gear Rising Revengeance |
 | 75 | [Topaz Annihilator](#75-topaz-annihilator) | 4.7 | DnD |
-| 83 | [Absorption Line](#83-absorption-line) | 4.7 | DxD |
+| 83 | [Absorption Line](#83-absorption-line) | 4.7 | Highschool DxD |
 | 121 | [Tome of the Starscourge](#121-tome-of-the-starscourge) | 4.7 | Elden Ring |
 | 133 | [Grimoire of Wind Magic](#133-grimoire-of-wind-magic) | 4.7 | Black Clover |
 | 135 | [Wand of the Ice Fairy](#135-wand-of-the-ice-fairy) | 4.7 | Generic |
@@ -648,7 +752,7 @@
 | 310 | [Hydra Pond](#310-hydra-pond) | 4.8 | Hota |
 | 337 | [Portable Supercomputer](#337-portable-supercomputer) | 4.8 | Generic |
 | 340 | [Droid Factory](#340-droid-factory) | 4.8 | Star Wars |
-| 365 | [Twilight Healing](#365-twilight-healing) | 4.8 | DxD |
+| 365 | [Twilight Healing](#365-twilight-healing) | 4.8 | Highschool DxD |
 | 537 | [Marksman Revolver](#537-marksman-revolver) | 4.8 | Ultrakill |
 | 549 | [Favour Cheque](#549-favour-cheque) | 4.8 | Generic |
 | 562 | [Yukari Fumo](#562-yukari-fumo) | 4.8 | Touhou |
@@ -658,6 +762,12 @@
 | 697 | [Element Zero](#697-element-zero) | 4.8 | Mass Effect |
 | 793 | ["Alice" Fumo](#793-alice-fumo) | 4.8 | Black Souls |
 | 822 | [Hylian Shield](#822-hylian-shield) | 4.8 | The Legend of Zelda |
+| 865 | [Ultra Sphere](#865-ultra-sphere) | 4.8 | Palworld |
+| 921 | [Charge Lance](#921-charge-lance) | 4.8 | RimWorld |
+| 956 | [Megingjord](#956-megingjord) | 4.8 | Valheim |
+| 993 | [Spirit Train](#993-spirit-train) | 4.8 | The Legend of Zelda |
+| 997 | [Kotetsujo](#997-kotetsujo) | 4.8 | Kabaneri of the Iron Fortress |
+| 1005 | [War Rig](#1005-war-rig) | 4.8 | Mad Max |
 | 84 | [Dreadon's Gaming Chair](#84-dreadons-gaming-chair) | 4.9 | Calamity Mod |
 | 85 | [Returner's Clock](#85-returners-clock) | 4.9 | Generic |
 | 281 | [Admirals Hat](#281-admirals-hat) | 4.9 | Hota |
@@ -668,11 +778,11 @@
 | 457 | [Tome of Alteration](#457-tome-of-alteration) | 4.9 | Skyrim |
 | 541 | [Sento](#541-sento) | 4.9 | Mortal Kombat |
 
-### Epic (124)
+### Epic (148)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
-| 17 | [Sword Birth](#17-sword-birth) | 5.0 | DxD |
+| 17 | [Sword Birth](#17-sword-birth) | 5.0 | Highschool DxD |
 | 192 | [XXI - The World](#192-xxi-the-world) | 5.0 | Generic |
 | 306 | [Elemental Conflux](#306-elemental-conflux) | 5.0 | Hota |
 | 350 | [Grimoire of Lightning Magic](#350-grimoire-of-lightning-magic) | 5.0 | Black Clover |
@@ -686,8 +796,14 @@
 | 761 | [Cross Tail](#761-cross-tail) | 5.0 | Akame ga Kill |
 | 782 | [Black Marlin](#782-black-marlin) | 5.0 | Akame ga Kill |
 | 794 | [Node Fumo](#794-node-fumo) | 5.0 | Black Souls |
+| 859 | [Node Swap](#859-node-swap) | 5.0 | Generic |
+| 927 | [Service Weapon](#927-service-weapon) | 5.0 | Control |
+| 932 | [Flak Cannon](#932-flak-cannon) | 5.0 | Genome Guardian |
+| 944 | [Vertical Launching Silo](#944-vertical-launching-silo) | 5.0 | Dyson Sphere Program |
+| 991 | [Ecliptic Express](#991-ecliptic-express) | 5.0 | Resident Evil |
+| 1007 | [Aurora](#1007-aurora) | 5.0 | Metro |
 | 37 | [Bar of Vibranium](#37-bar-of-vibranium) | 5.1 | Marvel |
-| 77 | [Blade Smith](#77-blade-smith) | 5.1 | DxD |
+| 77 | [Blade Smith](#77-blade-smith) | 5.1 | Highschool DxD |
 | 177 | [VI - The Lovers](#177-vi-the-lovers) | 5.1 | Generic |
 | 234 | [Skill Ticket](#234-skill-ticket) | 5.1 | Generic |
 | 316 | [Cloud Temple](#316-cloud-temple) | 5.1 | Hota |
@@ -698,7 +814,7 @@
 | 538 | [Dust Supply Crate](#538-dust-supply-crate) | 5.1 | RWBY |
 | 626 | [Velvet Sword](#626-velvet-sword) | 5.1 | Elden Ring |
 | 645 | [Apartments Key](#645-apartments-key) | 5.1 | Generic |
-| 646 | [Silver Samurai Armor](#646-silver-samurai-armor) | 5.1 | The Wolverine/MCU |
+| 646 | [Silver Samurai Armor](#646-silver-samurai-armor) | 5.1 | MCU |
 | 759 | [Shambala](#759-shambala) | 5.1 | Akame ga Kill |
 | 762 | [Erastone](#762-erastone) | 5.1 | Akame ga Kill |
 | 823 | [Mirror Shield](#823-mirror-shield) | 5.1 | The Legend of Zelda |
@@ -717,8 +833,15 @@
 | 730 | [The House of Leaves](#730-the-house-of-leaves) | 5.2 | House of Leaves |
 | 758 | [Pumpkin](#758-pumpkin) | 5.2 | Akame ga Kill |
 | 792 | [Artoria Fumo](#792-artoria-fumo) | 5.2 | Fate |
+| 883 | [Minotaur Exocraft](#883-minotaur-exocraft) | 5.2 | No Man's Sky |
+| 888 | [Strange Matter](#888-strange-matter) | 5.2 | Dyson Sphere Program |
+| 902 | [Prawn Suit](#902-prawn-suit) | 5.2 | Subnautica |
+| 966 | [Galaxy Sword](#966-galaxy-sword) | 5.2 | Stardew Valley |
+| 976 | [Reset Charge](#976-reset-charge) | 5.2 | MCU |
+| 980 | [CPH4](#980-cph4) | 5.2 | Lucy |
+| 981 | [Time Loop Cave](#981-time-loop-cave) | 5.2 | Palm Springs |
 | 1 | [Gae Bolg](#1-gae-bolg) | 5.3 | Fate |
-| 16 | [Durandal](#16-durandal) | 5.3 | DxD |
+| 16 | [Durandal](#16-durandal) | 5.3 | Highschool DxD |
 | 22 | [Inverted Spear of Heaven](#22-inverted-spear-of-heaven) | 5.3 | Jujutsu Kaisen |
 | 82 | [Dragon Vessel Major](#82-dragon-vessel-major) | 5.3 | Generic |
 | 111 | [Mystery of the Night Sky](#111-mystery-of-the-night-sky) | 5.3 | Black Souls |
@@ -740,6 +863,10 @@
 | 779 | [Adramelech](#779-adramelech) | 5.4 | Akame ga Kill |
 | 800 | [Flandre Fumo](#800-flandre-fumo) | 5.4 | Touhou |
 | 812 | [Kanako Fumo](#812-kanako-fumo) | 5.4 | Touhou |
+| 876 | [Mercer Sphere](#876-mercer-sphere) | 5.4 | Satisfactory |
+| 922 | [Healer Mech Serum](#922-healer-mech-serum) | 5.4 | RimWorld |
+| 1002 | [Source Code](#1002-source-code) | 5.4 | Source Code |
+| 1006 | [Armored Train](#1006-armored-train) | 5.4 | Battlefield |
 | 11 | [Spear of Longinus X](#11-spear-of-longinus-x) | 5.5 | Evangelion |
 | 73 | [Blackrazor](#73-blackrazor) | 5.5 | DnD |
 | 223 | [Goku Uniform 3star](#223-goku-uniform-3star) | 5.5 | Kill La Kill |
@@ -753,6 +880,7 @@
 | 774 | [Murasame](#774-murasame) | 5.5 | Akame ga Kill |
 | 806 | [Suwako Fumo](#806-suwako-fumo) | 5.5 | Touhou |
 | 821 | [The Master Sword](#821-the-master-sword) | 5.5 | The Legend of Zelda |
+| 860 | [Reshuffle](#860-reshuffle) | 5.5 | Generic |
 | 44 | [Character Card Destiny's Child](#44-character-card-destinys-child) | 5.6 | Generic |
 | 261 | [Halo of Light](#261-halo-of-light) | 5.6 | Generic |
 | 293 | [Tome of Water](#293-tome-of-water) | 5.6 | Hota |
@@ -762,6 +890,9 @@
 | 726 | [Clarent](#726-clarent) | 5.6 | Fate |
 | 756 | [Arata](#756-arata) | 5.6 | Tokyo Ghoul |
 | 811 | [Utsuho Fumo](#811-utsuho-fumo) | 5.6 | Touhou |
+| 877 | [Somersloop](#877-somersloop) | 5.6 | Satisfactory |
+| 909 | [Shield-Weaver](#909-shield-weaver) | 5.6 | Horizon Zero Dawn |
+| 987 | [Mugen Train](#987-mugen-train) | 5.6 | Demon Slayer |
 | 30 | [Grimoire of the Twice Dead Death Mage](#30-grimoire-of-the-twice-dead-death-mage) | 5.7 | Death Mage |
 | 241 | [Plague Canister](#241-plague-canister) | 5.7 | Calamity Mod |
 | 257 | [Malikeths Black Blade](#257-malikeths-black-blade) | 5.7 | Elden Ring |
@@ -776,7 +907,7 @@
 | 795 | [Mabel Fumo](#795-mabel-fumo) | 5.7 | Black Souls |
 | 59 | [Ambrosial Ampule](#59-ambrosial-ampule) | 5.8 | Calamity Mod |
 | 237 | [Modified Tvirus](#237-modified-tvirus) | 5.8 | Resident Evil |
-| 246 | [Unknown Dictator](#246-unknown-dictator) | 5.8 | DxD |
+| 246 | [Unknown Dictator](#246-unknown-dictator) | 5.8 | Highschool DxD |
 | 278 | [Armor of the Dammed](#278-armor-of-the-dammed) | 5.8 | Hota |
 | 292 | [Tome of Earth](#292-tome-of-earth) | 5.8 | Hota |
 | 443 | [Door to Jail](#443-door-to-jail) | 5.8 | Generic |
@@ -789,6 +920,9 @@
 | 571 | [Gawainn](#571-gawainn) | 5.8 | Code Geass |
 | 598 | [Icon of Greed](#598-icon-of-greed) | 5.8 | Generic |
 | 809 | [Yuyuko Fumo](#809-yuyuko-fumo) | 5.8 | Touhou |
+| 866 | [Legendary Sphere](#866-legendary-sphere) | 5.8 | Palworld |
+| 943 | [Planetary Shield](#943-planetary-shield) | 5.8 | Dyson Sphere Program |
+| 974 | [TemPad](#974-tempad) | 5.8 | MCU |
 | 127 | [Staff of the Phoenix](#127-staff-of-the-phoenix) | 5.9 | Generic |
 | 229 | [Senzu Bean](#229-senzu-bean) | 5.9 | Dragon Ball |
 | 308 | [Dragon's Hoard](#308-dragons-hoard) | 5.9 | Generic |
@@ -797,17 +931,20 @@
 | 818 | [Reimu Deka Fumo](#818-reimu-deka-fumo) | 5.9 | Touhou |
 | 848 | [Gravitational Beam Emitter](#848-gravitational-beam-emitter) | 5.9 | Blame |
 
-### Legendary (50)
+### Legendary (62)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
-| 15 | [Gram](#15-gram) | 6.0 | DxD |
+| 15 | [Gram](#15-gram) | 6.0 | Highschool DxD |
 | 276 | [Angellic Alliance](#276-angellic-alliance) | 6.0 | Hota |
 | 369 | [Holy Collider](#369-holy-collider) | 6.0 | Calamity Mod |
 | 420 | [Wind Release Jutsu Scroll](#420-wind-release-jutsu-scroll) | 6.0 | Naruto |
 | 599 | [Heal Juice](#599-heal-juice) | 6.0 | Generic |
 | 766 | [Grand Chariot](#766-grand-chariot) | 6.0 | Akame ga Kill |
-| 249 | [Canis Lycaon](#249-canis-lycaon) | 6.1 | DxD |
+| 852 | [Tree Graft](#852-tree-graft) | 6.0 | Generic |
+| 855 | [Duplicate](#855-duplicate) | 6.0 | Generic |
+| 999 | [The Engine](#999-the-engine) | 6.0 | Snowpiercer |
+| 249 | [Canis Lycaon](#249-canis-lycaon) | 6.1 | Highschool DxD |
 | 472 | [Dragon Dictionary](#472-dragon-dictionary) | 6.1 | Skyrim |
 | 498 | [1 UP](#498-1-up) | 6.1 | Mario |
 | 569 | [Lancelot Albion](#569-lancelot-albion) | 6.1 | Code Geass |
@@ -815,13 +952,15 @@
 | 755 | [Cloud Gouger](#755-cloud-gouger) | 6.1 | Kagurabachi |
 | 814 | [Junko Fumo](#814-junko-fumo) | 6.1 | Touhou |
 | 63 | [Permafrost's Concoction](#63-permafrosts-concoction) | 6.2 | Calamity Mod |
-| 252 | [Regulus Nemea](#252-regulus-nemea) | 6.2 | DxD |
+| 252 | [Regulus Nemea](#252-regulus-nemea) | 6.2 | Highschool DxD |
 | 291 | [Tome of Air](#291-tome-of-air) | 6.2 | Hota |
 | 299 | [Elixir of Life](#299-elixir-of-life) | 6.2 | Hota |
 | 317 | [Experimental Shop](#317-experimental-shop) | 6.2 | Hota |
 | 406 | [Telluric Gale](#406-telluric-gale) | 6.2 | Calamity Mod |
 | 688 | [Bankai - Gonryomaru](#688-bankai-gonryomaru) | 6.2 | Bleach |
 | 770 | [Shitoukazer](#770-shitoukazer) | 6.2 | Akame ga Kill |
+| 889 | [Antimatter Fuel Rod](#889-antimatter-fuel-rod) | 6.2 | Dyson Sphere Program |
+| 923 | [Resurrector Mech Serum](#923-resurrector-mech-serum) | 6.2 | RimWorld |
 | 314 | [Crystal Cave](#314-crystal-cave) | 6.3 | Hota |
 | 563 | [Blue Spider Lily](#563-blue-spider-lily) | 6.3 | Demon Slayer |
 | 570 | [Gurenn Seiken](#570-gurenn-seiken) | 6.3 | Code Geass |
@@ -831,11 +970,15 @@
 | 463 | [Emperor's Blade](#463-emperors-blade) | 6.4 | Samurai Jack |
 | 478 | [Plague Reaper Armor](#478-plague-reaper-armor) | 6.4 | Calamity Mod |
 | 731 | [The Dragon Balls](#731-the-dragon-balls) | 6.4 | Dragon Ball |
+| 903 | [Cyclops](#903-cyclops) | 6.4 | Subnautica |
+| 971 | [Ten Rings](#971-ten-rings) | 6.4 | MCU |
 | 353 | [Grimoire of Darkness Magic](#353-grimoire-of-darkness-magic) | 6.5 | Black Clover |
 | 415 | [Danzo's Right Arm](#415-danzos-right-arm) | 6.5 | Naruto |
 | 684 | [Bankai - Minazuki](#684-bankai-minazuki) | 6.5 | Bleach |
 | 825 | [Earth Key](#825-earth-key) | 6.5 | Generic |
+| 853 | [Chaos Die](#853-chaos-die) | 6.5 | Generic |
 | 410 | [Phoenix Feather](#410-phoenix-feather) | 6.6 | Black Souls |
+| 998 | [Snowpiercer](#998-snowpiercer) | 6.6 | Snowpiercer |
 | 210 | [Metal Gear Excelsus](#210-metal-gear-excelsus) | 6.7 | Metal Gear |
 | 231 | [Monster Cell](#231-monster-cell) | 6.7 | One Punch Man |
 | 313 | [Magic Forest](#313-magic-forest) | 6.8 | Hota |
@@ -848,22 +991,27 @@
 | 741 | [The Census](#741-the-census) | 6.8 | Generic |
 | 753 | [Gate of Holding](#753-gate-of-holding) | 6.8 | Generic |
 | 768 | [Demon's Extract](#768-demons-extract) | 6.8 | Akame ga Kill |
+| 884 | [Living Ship](#884-living-ship) | 6.8 | No Man's Sky |
+| 951 | [The Generator](#951-the-generator) | 6.8 | Frostpunk |
+| 996 | [Galaxy Express 999](#996-galaxy-express-999) | 6.8 | Galaxy Express 999 |
 | 144 | [Golden Scales](#144-golden-scales) | 6.9 | Hunter x Hunter |
 | 301 | [Horn of the Abyss](#301-horn-of-the-abyss) | 6.9 | Hota |
-| 529 | [Chaquetrix](#529-chaquetrix) | 6.9 | Chaquetrix |
+| 529 | [Chaquetrix](#529-chaquetrix) | 6.9 | Ben 10 |
 
-### Mythical (34)
+### Mythical (46)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 2 | [Excalibur the Sword of Promised Victory](#2-excalibur-the-sword-of-promised-victory) | 7.0 | Fate |
 | 19 | [Auric Tesla Armor](#19-auric-tesla-armor) | 7.0 | Calamity Mod |
-| 248 | [Star Buster Blaster](#248-star-buster-blaster) | 7.0 | DxD |
+| 248 | [Star Buster Blaster](#248-star-buster-blaster) | 7.0 | Highschool DxD |
 | 471 | [Nail of Helena](#471-nail-of-helena) | 7.0 | Hellsing |
 | 487 | [Chaos Card](#487-chaos-card) | 7.0 | Binding of Isaac |
 | 511 | [Sling Ring](#511-sling-ring) | 7.0 | Marvel |
 | 682 | [Shikai - Kyokai Suigetsu](#682-shikai-kyokai-suigetsu) | 7.0 | Bleach |
 | 734 | [Hie Hie no Mi](#734-hie-hie-no-mi) | 7.0 | One Piece |
+| 854 | [Greater Wild Roll](#854-greater-wild-roll) | 7.0 | Generic |
+| 972 | [Loki's Sceptre](#972-lokis-sceptre) | 7.0 | MCU |
 | 51 | [Triactis True Paladinian Mage-Hammer of Might](#51-triactis-true-paladinian-mage-hammer-of-might) | 7.1 | Calamity Mod |
 | 242 | [Mehrunes Razor](#242-mehrunes-razor) | 7.1 | Skyrim |
 | 817 | [Utsuho Deka Fumo](#817-utsuho-deka-fumo) | 7.1 | Touhou |
@@ -873,36 +1021,47 @@
 | 702 | [Stormbreaker](#702-stormbreaker) | 7.2 | MCU |
 | 733 | [Magu Magu no Mi](#733-magu-magu-no-mi) | 7.2 | One Piece |
 | 767 | [Incursio](#767-incursio) | 7.2 | Akame ga Kill |
+| 915 | [Mox Pearl](#915-mox-pearl) | 7.2 | MTG |
+| 916 | [Mox Ruby](#916-mox-ruby) | 7.2 | MTG |
+| 918 | [Mox Jet](#918-mox-jet) | 7.2 | MTG |
+| 919 | [Mox Emerald](#919-mox-emerald) | 7.2 | MTG |
+| 941 | [Space Elevator](#941-space-elevator) | 7.2 | Cities Skylines |
+| 970 | [Book of Vishanti](#970-book-of-vishanti) | 7.2 | MCU |
+| 1003 | [Jules Verne Time Train](#1003-jules-verne-time-train) | 7.2 | Back to the Future |
 | 220 | [Kamui Senketsu](#220-kamui-senketsu) | 7.3 | Kill La Kill |
 | 488 | [Ring of the Shooting Star](#488-ring-of-the-shooting-star) | 7.3 | Overlord |
 | 679 | [Bankai - Ryujin Jakka](#679-bankai-ryujin-jakka) | 7.3 | Bleach |
 | 39 | [Black Barrel](#39-black-barrel) | 7.4 | Fate |
-| 79 | [Sephiroth Graal](#79-sephiroth-graal) | 7.4 | DxD |
-| 250 | [True Longinus](#250-true-longinus) | 7.4 | DxD |
-| 253 | [Nereid Kyre](#253-nereid-kyre) | 7.4 | DxD |
+| 79 | [Sephiroth Graal](#79-sephiroth-graal) | 7.4 | Highschool DxD |
+| 250 | [True Longinus](#250-true-longinus) | 7.4 | Highschool DxD |
+| 253 | [Nereid Kyre](#253-nereid-kyre) | 7.4 | Highschool DxD |
+| 917 | [Mox Sapphire](#917-mox-sapphire) | 7.4 | MTG |
 | 521 | [Blade of Olympus](#521-blade-of-olympus) | 7.5 | God of War |
-| 245 | [Annihilation Maker](#245-annihilation-maker) | 7.6 | DxD |
-| 247 | [Zenith Tempest](#247-zenith-tempest) | 7.6 | DxD |
+| 245 | [Annihilation Maker](#245-annihilation-maker) | 7.6 | Highschool DxD |
+| 247 | [Zenith Tempest](#247-zenith-tempest) | 7.6 | Highschool DxD |
+| 969 | [Darkhold](#969-darkhold) | 7.6 | MCU |
 | 309 | [Dragon Utopia](#309-dragon-utopia) | 7.7 | Hota |
 | 703 | [The Trumpet of Apocalypse](#703-the-trumpet-of-apocalypse) | 7.7 | Generic |
 | 3 | [Laevatein](#3-laevatein) | 7.8 | Fate |
-| 368 | [Divine Dividing](#368-divine-dividing) | 7.8 | DxD |
+| 368 | [Divine Dividing](#368-divine-dividing) | 7.8 | Highschool DxD |
 | 405 | [Heavenly Gale](#405-heavenly-gale) | 7.8 | Calamity Mod |
 | 829 | [Space Stone](#829-space-stone) | 7.8 | Marvel |
-| 367 | [Boosted Gear](#367-boosted-gear) | 7.9 | DxD |
+| 950 | [Ash Twin Project](#950-ash-twin-project) | 7.8 | Outer Wilds |
+| 367 | [Boosted Gear](#367-boosted-gear) | 7.9 | Highschool DxD |
 
-### Divine (11)
+### Divine (12)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 492 | [Power Stone](#492-power-stone) | 8.0 | Marvel |
 | 732 | [Pika Pika no Mi](#732-pika-pika-no-mi) | 8.0 | One Piece |
 | 493 | [Soul Stone](#493-soul-stone) | 8.1 | Marvel |
-| 78 | [Dimension Lost](#78-dimension-lost) | 8.2 | DxD |
+| 78 | [Dimension Lost](#78-dimension-lost) | 8.2 | Highschool DxD |
 | 243 | [Skeleton Key](#243-skeleton-key) | 8.2 | Skyrim |
 | 42 | [Enkidu](#42-enkidu) | 8.4 | Fate |
-| 251 | [Telos Karma](#251-telos-karma) | 8.5 | DxD |
+| 251 | [Telos Karma](#251-telos-karma) | 8.5 | Highschool DxD |
 | 464 | [Stopwatch](#464-stopwatch) | 8.5 | Generic |
+| 914 | [Black Lotus](#914-black-lotus) | 8.6 | MTG |
 | 20 | [Enuma Elish](#20-enuma-elish) | 8.7 | Fate |
 | 477 | [Mansion of the Boundary](#477-mansion-of-the-boundary) | 8.8 | Generic |
 | 491 | [Eye of Agamotto](#491-eye-of-agamotto) | 8.8 | Marvel |
@@ -1165,7 +1324,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.0 | Legendary | DxD |
+| 6.0 | Legendary | Highschool DxD |
 
 **Description**
 
@@ -1182,7 +1341,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.3 | Epic | DxD |
+| 5.3 | Epic | Highschool DxD |
 
 **Description**
 
@@ -1199,7 +1358,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.0 | Epic | DxD |
+| 5.0 | Epic | Highschool DxD |
 
 **Description**
 
@@ -1568,7 +1727,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.7 | Elite | Modded Minecraft |
+| 4.7 | Elite | Minecraft |
 
 **Description**
 
@@ -2235,7 +2394,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.1 | Epic | DxD |
+| 5.1 | Epic | Highschool DxD |
 
 **Description**
 
@@ -2252,7 +2411,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 8.2 | Divine | DxD |
+| 8.2 | Divine | Highschool DxD |
 
 **Description**
 
@@ -2273,7 +2432,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.4 | Mythical | DxD |
+| 7.4 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -2341,7 +2500,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.7 | Elite | DxD |
+| 4.7 | Elite | Highschool DxD |
 
 **Description**
 
@@ -4635,7 +4794,7 @@
 
 **Description**
 
-> "Fancy your chances?" Choose an inventory ticket and flip a coin. Heads gives the ticket an advantage; Tails destroys it.
+> (Gacha) "Fancy your chances?" Choose an inventory ticket and flip a coin. Heads gives the ticket an advantage; Tails destroys it.
 
 **Decision**
 
@@ -4890,7 +5049,7 @@
 
 **Description**
 
-> A ticket acting as a 6x Advantage Platinum Ability Gacha Ticket.
+> (Gacha) A ticket acting as a 6x Advantage Platinum Ability Gacha Ticket.
 
 **Decision**
 
@@ -4907,7 +5066,7 @@
 
 **Description**
 
-> A ticket acting as a 6x Advantage Platinum Trait Gacha Ticket.
+> (Gacha) A ticket acting as a 6x Advantage Platinum Trait Gacha Ticket.
 
 **Decision**
 
@@ -4924,7 +5083,7 @@
 
 **Description**
 
-> A ticket acting as a 6x Advantage Platinum Skill Gacha Ticket.
+> (Gacha) A ticket acting as a 6x Advantage Platinum Skill Gacha Ticket.
 
 **Decision**
 
@@ -5086,15 +5245,15 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 244. Cloak of Invisibility
+## 244. Cloak of Elvenkind
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 2.4 | Uncommon | Harry Potter |
+| 2.4 | Uncommon | DnD |
 
 **Description**
 
-> One of the Deathly Hallows that renders anyone covered invisible and resistant to clairvoyance.
+> A hooded elven cloak woven from shadow that renders the wearer invisible while the hood is raised and resistant to divination and scrying. Nearly undetectable while motionless.
 
 **Decision**
 
@@ -5107,7 +5266,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.6 | Mythical | DxD |
+| 7.6 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -5124,7 +5283,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.8 | Epic | DxD |
+| 5.8 | Epic | Highschool DxD |
 
 **Description**
 
@@ -5141,7 +5300,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.6 | Mythical | DxD |
+| 7.6 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -5158,7 +5317,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.0 | Mythical | DxD |
+| 7.0 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -5175,7 +5334,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.1 | Legendary | DxD |
+| 6.1 | Legendary | Highschool DxD |
 
 **Description**
 
@@ -5192,7 +5351,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.4 | Mythical | DxD |
+| 7.4 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -5209,7 +5368,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 8.5 | Divine | DxD |
+| 8.5 | Divine | Highschool DxD |
 
 **Description**
 
@@ -5230,7 +5389,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.2 | Legendary | DxD |
+| 6.2 | Legendary | Highschool DxD |
 
 **Description**
 
@@ -5247,7 +5406,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.4 | Mythical | DxD |
+| 7.4 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -7159,7 +7318,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 4.8 | Elite | DxD |
+| 4.8 | Elite | Highschool DxD |
 
 **Description**
 
@@ -7176,7 +7335,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.8 | Rare | DxD |
+| 3.8 | Rare | Highschool DxD |
 
 **Description**
 
@@ -7193,7 +7352,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.9 | Mythical | DxD |
+| 7.9 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -7210,7 +7369,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 7.8 | Mythical | DxD |
+| 7.8 | Mythical | Highschool DxD |
 
 **Description**
 
@@ -9470,7 +9629,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 1.4 | Common | Half Life |
+| 1.4 | Common | Half-Life |
 
 **Description**
 
@@ -9886,7 +10045,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.3 | Rare | Cyberpunk |
+| 3.3 | Rare | Cyberpunk 2077 |
 
 **Description**
 
@@ -9971,7 +10130,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.9 | Legendary | Chaquetrix |
+| 6.9 | Legendary | Ben 10 |
 
 **Description**
 
@@ -10073,7 +10232,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.1 | Rare | Doomslayer |
+| 3.1 | Rare | Doom |
 
 **Description**
 
@@ -10192,7 +10351,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 2.2 | Uncommon | Tron |
+| 2.2 | Uncommon | Tron 2.0 |
 
 **Description**
 
@@ -10608,7 +10767,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 2.6 | Uncommon | Batman/DC |
+| 2.6 | Uncommon | Batman |
 
 **Description**
 
@@ -11329,7 +11488,7 @@
 
 **Description**
 
-> A golden poker chip that lets you reroll your latest gacha ticket, discarding its result for a different result on the same ticket. The chip vanishes upon use.
+> (Gacha) A golden poker chip that lets you reroll your latest gacha ticket, discarding its result for a different result on the same ticket. The chip vanishes upon use.
 
 **Flagged in reports**
 
@@ -12008,7 +12167,7 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.1 | Epic | The Wolverine/MCU |
+| 5.1 | Epic | MCU |
 
 **Description**
 
@@ -14531,7 +14690,7 @@
 
 **Description**
 
-> A Fumo of the Dear Girl that, when shaken violently, rerolls your most recently rolled ticket. Cooldown: 336 hours.
+> (Gacha) A Fumo of the Dear Girl that, when shaken violently, rerolls your most recently rolled ticket. Cooldown: 336 hours.
 
 **Decision**
 
@@ -14569,7 +14728,7 @@
 
 **Description**
 
-> A Fumo of a certain Girl of Nihility that produces a Random Gold Ticket it can be found holding every 168 hours.
+> (Gacha) A Fumo of a certain Girl of Nihility that produces a Random Gold Ticket it can be found holding every 168 hours.
 
 **Flagged in reports**
 
@@ -14590,7 +14749,7 @@
 
 **Description**
 
-> A Fumo of a certain Annoying Fairy that lets you change the type of any one ticket you hold by slamming or punching it against a wall. Cooldown: 168 hours.
+> (Gacha) A Fumo of a certain Annoying Fairy that lets you change the type of any one ticket you hold by slamming or punching it against a wall. Cooldown: 168 hours.
 
 **Flagged in reports**
 
@@ -15341,7 +15500,7 @@
 
 **Description**
 
-> "Fancy your chances?" A ticket that, when torn, spins the Curse Roulette for the user and automatically applies the result and earned ticket to the recipient.
+> (Gacha) "Fancy your chances?" A ticket that, when torn, spins the Curse Roulette for the user and automatically applies the result and earned ticket to the recipient.
 
 **Decision**
 
@@ -15537,6 +15696,2709 @@
 **Description**
 
 > A seed that sprouts a small ineffectual Erdtree, grown larger by supplying energy or ritually burying corpses beneath it. When strong enough it blesses those under its light, warding disease and curses, nourishing land, and boosting recovery and healing.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 851. Undo Stone
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.5 | Rare | Generic |
+
+**Description**
+
+> (Tree)(Meta:lock-refund) Single use. Crush the stone to lock one of your unlocked nodes and refund its core and points.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 852. Tree Graft
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.0 | Legendary | Generic |
+
+**Description**
+
+> (Tree)(Meta:add-link:3) Three uses. Add a connection between two close, unconnected nodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 853. Chaos Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.5 | Legendary | Generic |
+
+**Description**
+
+> (Tree)(Meta:gacha:5) Single use. Roll to unlock a random locked node with rarity 5 or below for free.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 854. Greater Wild Roll
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.0 | Mythical | Generic |
+
+**Description**
+
+> (Tree)(Meta:gacha:5-7) Single use. Roll to unlock a random locked node with rarity between 5 and 7 for free.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 855. Duplicate
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.0 | Legendary | Generic |
+
+**Description**
+
+> (Tree)(Meta:duplicate:5) Single use. Unlock a random locked node that shares a source with one of your unlocked nodes (source not Generic), with rarity 5 or below.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 856. Lifeline
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Generic |
+
+**Description**
+
+> (Tree)(Meta:lifeline) Single use. Unlock any node adjacent to an unlocked node for free.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 857. Recall
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.5 | Rare | Generic |
+
+**Description**
+
+> (Tree)(Meta:recall) Single use. Undo your most recent unlock: the node is locked again and its core and points refunded.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 858. Shuffle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Generic |
+
+**Description**
+
+> (Tree)(Meta:shuffle) Single use. Exchange the location and connections of a visible locked node with a random not-visible locked node of similar rarity (±0.2). If no not-visible candidate exists, a visible one is chosen.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 859. Node Swap
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Generic |
+
+**Description**
+
+> (Tree)(Meta:swap) Single use. Exchange the location and connections of two visible locked nodes of your choice.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 860. Reshuffle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Generic |
+
+**Description**
+
+> (Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 861. Pal Sphere
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.6 | Common | Palworld |
+
+**Description**
+
+> The basic sphere for catching weakened Pals; it shakes three times, then clicks.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 862. Mega Sphere
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Palworld |
+
+**Description**
+
+> Improved catch rate over the basic sphere, for Pals past the early zones.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 863. Giga Sphere
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Palworld |
+
+**Description**
+
+> High-grade sphere that holds even sturdy mid-game Pals.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 864. Hyper Sphere
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Palworld |
+
+**Description**
+
+> Advanced sphere for powerful Pals; rarely fails on anything but bosses.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 865. Ultra Sphere
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Palworld |
+
+**Description**
+
+> Near-top-tier sphere with a catch rate worthy of endgame hunts.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 866. Legendary Sphere
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Palworld |
+
+**Description**
+
+> The ultimate sphere, forged for Legends; even a Jetragon can end up inside.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 867. Portable Miner
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Satisfactory |
+
+**Description**
+
+> Plop it on any resource node and it mines hands-free into its own little inventory.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 868. Chainsaw
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Satisfactory |
+
+**Description**
+
+> Clears whole forests in seconds and mulches wood and leaves into biomass.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 869. Xeno-Zapper
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Satisfactory |
+
+**Description**
+
+> Standard-issue electric prod; stings alien wildlife and gets stingers moving.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 870. Rebar Gun
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Satisfactory |
+
+**Description**
+
+> Fires sharpened rebar spikes; silent, cheap, and surprisingly lethal.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 871. Nobelisk Detonator
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Satisfactory |
+
+**Description**
+
+> Remote-detonated explosive charges for clearing rock, trees, and hogs.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 872. Object Scanner
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Satisfactory |
+
+**Description**
+
+> Pings the direction of selected resources, crash sites, and power slugs.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 873. Blade Runners
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Satisfactory |
+
+**Description**
+
+> Exoskeleton legs that boost sprint speed and let you powerslide under everything.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 874. Jetpack
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Satisfactory |
+
+**Description**
+
+> Packaged-fuel flight with a satisfying roar; keep an eye on the fuel gauge.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 875. Gas Mask
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Satisfactory |
+
+**Description**
+
+> Breathe easy in poison-pillared zones while the filter holds out.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 876. Mercer Sphere
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Satisfactory |
+
+**Description**
+
+> A humming alien artifact of unknown purpose that the hub desperately wants scanned.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 877. Somersloop
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Satisfactory |
+
+**Description**
+
+> An impossible looping doodad that overclocks any machine it touches.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 878. Analysis Visor
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | No Man's Sky |
+
+**Description**
+
+> Tag flora, fauna, and minerals through your visor; uploads pay out in Nanites.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 879. Terrain Manipulator
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | No Man's Sky |
+
+**Description**
+
+> Reshape whole landscapes, mine underfoot, and flatten base sites with multitool modes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 880. Boltcaster
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | No Man's Sky |
+
+**Description**
+
+> The trusty starting multitool weapon; rapid plasma bolts with endless upgrades.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 881. Blaze Javelin
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | No Man's Sky |
+
+**Description**
+
+> A charged railbeam that pierces rock and sentinels alike.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 882. Hyperdrive
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | No Man's Sky |
+
+**Description**
+
+> Fold space between stars on warp cells; the whole galaxy opens up.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 883. Minotaur Exocraft
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | No Man's Sky |
+
+**Description**
+
+> A piloted mech suit with mining laser, stomp jets, and a cockpit with a view.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 884. Living Ship
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.8 | Legendary | No Man's Sky |
+
+**Description**
+
+> A grown void-egg starship that is alive: it gestates its own upgrades, bleeds, and sings in transit.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 885. Foundation
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Dyson Sphere Program |
+
+**Description**
+
+> Pave any terrain flat for building; the entire factory stands on these.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 886. Solar Sail
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Dyson Sphere Program |
+
+**Description**
+
+> Paper-thin orbital mirrors, launched by the thousand to begin the swarm.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 887. Proliferator
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Dyson Sphere Program |
+
+**Description**
+
+> A spray that overclocks production lines and multiplies their output.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 888. Strange Matter
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Dyson Sphere Program |
+
+**Description**
+
+> Exotic late-game material for the strangest recipes in the tech tree.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 889. Antimatter Fuel Rod
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.2 | Legendary | Dyson Sphere Program |
+
+**Description**
+
+> Dense annihilation fuel that keeps Icarus flying between stars.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 890. EM Rail Ejector
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Dyson Sphere Program |
+
+**Description**
+
+> A mass driver that hurls solar sails and small carriers into orbit.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 891. Gravity Gloves
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Half-Life |
+
+**Description**
+
+> Flick your wrists to snatch distant objects and ammo straight into your hands. Everyone calls them the Russells.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 892. Combine Pistol
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Half-Life |
+
+**Description**
+
+> Standard Combine sidearm with reflex sight and resin upgrades.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 893. Combine Shotgun
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Half-Life |
+
+**Description**
+
+> Double-barrel burst cannon that deletes headcrabs up close.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 894. Combine SMG
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Half-Life |
+
+**Description**
+
+> Rapid-fire Combine automatic with an energy-ball secondary fire.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 895. Xen Grenade
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Half-Life |
+
+**Description**
+
+> Volatile Xen flora that detonates seconds after you grab it. Throw fast.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 896. Climbing Axe
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Tomb Raider |
+
+**Description**
+
+> Lara's iconic axe: climbs ice walls, pries doors, and ends fights.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 897. Recurve Bow
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Tomb Raider |
+
+**Description**
+
+> Silent with retrievable arrows; rope, fire, and poison upgrades with tinkering.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 898. Heavy Pistol
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Tomb Raider |
+
+**Description**
+
+> Hard-hitting sidearm for when stealth stops being an option.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 899. Rope Ascender
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Tomb Raider |
+
+**Description**
+
+> Motorized ascender that zips you up ropes and rappels you down cliffs.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 900. Seaglide
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Subnautica |
+
+**Description**
+
+> Handheld underwater scooter with light and sonar map; every diver's first love.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 901. Seamoth
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Subnautica |
+
+**Description**
+
+> Nippy one-person sub with crush-depth upgrades and a perimeter defense zapper.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 902. Prawn Suit
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Subnautica |
+
+**Description**
+
+> Powered exosuit with drill and grapple arms, for punching leviathans in the face.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 903. Cyclops
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.4 | Legendary | Subnautica |
+
+**Description**
+
+> A full submarine base with silent running, decoys, and room for a Seamoth in the belly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 904. Habitat Builder
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Subnautica |
+
+**Description**
+
+> Prints seabase modules from titanium anywhere with a flat-ish seabed.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 905. Stasis Rifle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Subnautica |
+
+**Description**
+
+> Freezes anything in a time bubble, up to and including Reapers. Briefly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 906. Thermoblade
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Subnautica |
+
+**Description**
+
+> Superheated survival knife that cooks fish as it cuts them.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 907. Ultra Glide Fins
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Subnautica |
+
+**Description**
+
+> Slick fins that make you properly fast underwater.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 908. Focus
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Horizon Zero Dawn |
+
+**Description**
+
+> Ear-mounted AR that scans machines, tags weak points, and replays echoes of the past.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 909. Shield-Weaver
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Horizon Zero Dawn |
+
+**Description**
+
+> Ancient power armor projecting a rechargeable energy shield around its wearer.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 910. Ropecaster
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Horizon Zero Dawn |
+
+**Description**
+
+> Pins machines down with tethers; enough ropes will tie down a Thunderjaw.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 911. Tripcaster
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Horizon Zero Dawn |
+
+**Description**
+
+> Lays shock, fire, and explosive tripwires for the ambush engineer.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 912. Blast Sling
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Horizon Zero Dawn |
+
+**Description**
+
+> Lobs proximity bombs in a satisfying arc with a bigger boom.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 913. Tearblaster
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Horizon Zero Dawn |
+
+**Description**
+
+> Close-range cannon blast that rips armor plates and components clean off.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 914. Black Lotus
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.6 | Divine | MTG |
+
+**Description**
+
+> Sacrifice it for three mana of any color. The most famous cardboard on Earth.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 915. Mox Pearl
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.2 | Mythical | MTG |
+
+**Description**
+
+> Zero-mana artifact that taps for white. Power Nine fast mana.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 916. Mox Ruby
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.2 | Mythical | MTG |
+
+**Description**
+
+> Zero-mana artifact that taps for red. Power Nine fast mana.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 917. Mox Sapphire
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.4 | Mythical | MTG |
+
+**Description**
+
+> Zero-mana artifact that taps for blue; the priciest of the five Moxen.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 918. Mox Jet
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.2 | Mythical | MTG |
+
+**Description**
+
+> Zero-mana artifact that taps for black. Power Nine fast mana.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 919. Mox Emerald
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.2 | Mythical | MTG |
+
+**Description**
+
+> Zero-mana artifact that taps for green. Power Nine fast mana.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 920. Charge Rifle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | RimWorld |
+
+**Description**
+
+> Spacer-tech pulse rifle that outshoots anything short of a charge lance.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 921. Charge Lance
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | RimWorld |
+
+**Description**
+
+> Long-range armor-melting spacer rifle; one shot can delete a torso.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 922. Healer Mech Serum
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | RimWorld |
+
+**Description**
+
+> Glitterworld nanomachines that regenerate scars, missing organs, and chronic ills.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 923. Resurrector Mech Serum
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.2 | Legendary | RimWorld |
+
+**Description**
+
+> Brings back the recently dead, full resurrection psychosis side effects included.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 924. Tranquilizer Rifle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Deus Ex |
+
+**Description**
+
+> Long-range nonlethal takedowns; one dart naps a guard for minutes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 925. Zenith 10mm Pistol
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Deus Ex |
+
+**Description**
+
+> Custom compact pistol, whisper-quiet with a suppressor and laser sight.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 926. Nanoceramic Blade
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Deus Ex |
+
+**Description**
+
+> Monomolecular sword that cuts through armor, bots, and bad decisions.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 927. Service Weapon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Control |
+
+**Description**
+
+> The Director's shapeshifting gun: Spin, Grip, Shatter, Pierce, and Charge forms in one impossible object.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 928. Hotline
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Control |
+
+**Description**
+
+> A red Bakelite phone that calls the Board directly, geometry optional.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 929. Hedron Resonance Amplifier
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Control |
+
+**Description**
+
+> Wearable Hedron tech that shields the mind from Hiss resonance.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 930. Vacpack
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Slime Rancher |
+
+**Description**
+
+> Vacuum, shoot, and store slimes, food, and plorts with four color-coded tanks.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 931. Slime Key
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Slime Rancher |
+
+**Description**
+
+> A statue-shaped key that opens Slime Gates into new ranch zones.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 932. Flak Cannon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Genome Guardian |
+
+**Description**
+
+> Blast Shotgun crossed with more shotgun: the all-powerful flak answer to everything.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 933. Blast Shotgun
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Genome Guardian |
+
+**Description**
+
+> Bomb plus shotgun: spread explosives that clear whole microbe waves.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 934. Dice Turret
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Genome Guardian |
+
+**Description**
+
+> A gambling turret whose wild random shots somehow always pay off.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 935. Idol of Rebirth
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Divinity Original Sin |
+
+**Description**
+
+> A full idol that automatically resurrects its bearer once, then crumbles.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 936. Resurrection Scroll
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Divinity Original Sin |
+
+**Description**
+
+> Bring an ally back mid-fight; every tactician carries a stack.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 937. Q-Up Coin
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Q-UP |
+
+**Description**
+
+> The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty. Totally fair.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 938. Identity Disc
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Tron 2.0 |
+
+**Description**
+
+> A program's everything on a glowing disc: memory, weapon, and backup, worn on the back.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 939. Impossible Shard
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Q-UP |
+
+**Description**
+
+> A shard of Impossible rarity; slotting it multiplies everything your build does.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 940. Passenger Blimp
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Cities Skylines |
+
+**Description**
+
+> A lumbering passenger blimp that ferries citizens across your skyline in style.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 941. Space Elevator
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.2 | Mythical | Cities Skylines |
+
+**Description**
+
+> A unique-building space elevator that fires tourists and freight straight into orbit.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 942. Instant Camera
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.8 | Common | Life is Strange |
+
+**Description**
+
+> An instant camera for capturing the moments that matter, before you rewind them.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 943. Planetary Shield
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Dyson Sphere Program |
+
+**Description**
+
+> A planet-wide shield generator that shrugs off anything short of a star going out.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 944. Vertical Launching Silo
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Dyson Sphere Program |
+
+**Description**
+
+> A silo that launches rockets, warpers, and sphere components straight into orbit.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 945. Power Armor
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Factorio |
+
+**Description**
+
+> Modular power armor with room for exoskeletons, shields, batteries, and a personal fusion reactor.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 946. Personal Roboport
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Factorio |
+
+**Description**
+
+> A wearable roboport that deploys your own construction robots wherever you stand.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 947. Blueprint Book
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Factorio |
+
+**Description**
+
+> A book of stamped-down factory blueprints; plop down entire production blocks at once.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 948. Scout Launcher
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Outer Wilds |
+
+**Description**
+
+> A wrist-mounted launcher firing a reusable camera probe that photographs the unknown.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 949. Signalscope
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Outer Wilds |
+
+**Description**
+
+> A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 950. Ash Twin Project
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.8 | Mythical | Outer Wilds |
+
+**Description**
+
+> The Nomai station at the heart of the 22-minute loop; knowing it exists changes everything.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 951. The Generator
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.8 | Legendary | Frostpunk |
+
+**Description**
+
+> A towering coal-fired Generator, the last source of heat on Earth; the city lives or dies with it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 952. Steam Hub
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Frostpunk |
+
+**Description**
+
+> A portable steam hub extending the Generator's warmth to distant districts.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 953. Atmo Suit
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Oxygen Not Included |
+
+**Description**
+
+> A sealed suit with its own oxygen supply for space, magma, and chlorine zones alike.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 954. Super Computer
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Oxygen Not Included |
+
+**Description**
+
+> A humming research station that turns raw data and power into steady research progress.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 955. Drakkar
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Valheim |
+
+**Description**
+
+> A clinker-built Viking longship that outruns sea serpents with the wind behind it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 956. Megingjord
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Valheim |
+
+**Description**
+
+> Thor's strength belt, granting the bearer the carrying might of a giant.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 957. Wishbone
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Valheim |
+
+**Description**
+
+> A dowsing wishbone that tugs toward buried silver and hidden treasure.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 958. Pickaxe
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Deep Rock Galactic |
+
+**Description**
+
+> A tempered pickaxe for rock, dirt, and the occasional glyphid skull.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 959. Flare Gun
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Deep Rock Galactic |
+
+**Description**
+
+> Fires a burning flare that sticks where it lands and lights up the whole cave.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 960. Terrain Tool
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Astroneer |
+
+**Description**
+
+> A deformable-terrain multitool for digging, flattening, and analyzing alien soil.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 961. Shuttle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Astroneer |
+
+**Description**
+
+> A single-seat interplanetary shuttle; pack solid fuel and pick a landing zone.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 962. RTG
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | Astroneer |
+
+**Description**
+
+> A radioisotope thermoelectric generator delivering endless quiet power.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 963. Spiked Baseball Bat
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.4 | Uncommon | Project Zomboid |
+
+**Description**
+
+> A Louisville classic wrapped in nails; quiet, reliable, and permanently bloody.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 964. Sledgehammer
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.8 | Uncommon | Project Zomboid |
+
+**Description**
+
+> Destroys walls, doors, and skulls with equal enthusiasm. Heavy, though.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 965. Generator
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Project Zomboid |
+
+**Description**
+
+> A portable gas generator that keeps the lights and freezers on after the grid dies.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 966. Galaxy Sword
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Stardew Valley |
+
+**Description**
+
+> A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 967. Junimo Hut
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Stardew Valley |
+
+**Description**
+
+> A hut housing Junimos who emerge each morning to harvest your crops for you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 968. SHIELD Flying Car
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Marvel |
+
+**Description**
+
+> Coulson's cherry-red 1962 Corvette convertible with VTOL flight, machine guns, and flamethrowers. She has a name, and it is Lola.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 969. Darkhold
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.6 | Mythical | MCU |
+
+**Description**
+
+> The Book of the Damned, transcribed from Wundagore's dark dimension; every spell in it corrupts its reader.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 970. Book of Vishanti
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.2 | Mythical | MCU |
+
+**Description**
+
+> The collected white magic counterweight to the Darkhold; its defensive spells answer nearly anything.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 971. Ten Rings
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.4 | Legendary | MCU |
+
+**Description**
+
+> Ten bracelets of alien origin granting longevity, concussive blasts, and a small army's obedience.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 972. Loki's Sceptre
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.0 | Mythical | MCU |
+
+**Description**
+
+> The Chitauri sceptre housing the Mind Stone, bending minds and firing energy alike.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 973. Staff of the Living Tribunal
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | MCU |
+
+**Description**
+
+> A mystic staff that cracks the ground with golden force and pries open sealed things.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 974. TemPad
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | MCU |
+
+**Description**
+
+> A TVA time-pad that opens Time Doors to anywhen; pruning charges not included.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 975. TVA Pruning Baton
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | MCU |
+
+**Description**
+
+> A TVA baton that prunes branched timelines, variant clutter, and people, all with one touch.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 976. Reset Charge
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | MCU |
+
+**Description**
+
+> A timeline-nuking charge that prunes a whole branched reality back to the Sacred Timeline.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 977. Yaka Arrow
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | MCU |
+
+**Description**
+
+> A whistle-guided Yaka arrow that carves through targets and curves back to hand.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 978. Yondu's Fin
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | MCU |
+
+**Description**
+
+> The head-mounted Centaurian fin that conducts the Yaka arrow by whistle alone.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 979. Photostatic Veil
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | MCU |
+
+**Description**
+
+> A Black Widow mesh mask that wears anyone's face well enough to fool scanners.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 980. CPH4
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Lucy |
+
+**Description**
+
+> A packet of synthetic blue crystals that unlocks escalating brain capacity: perfect recall, telepathy, then matter and time itself. Unstable, leaks, and past a point there is no coming back.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 981. Time Loop Cave
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Palm Springs |
+
+**Description**
+
+> A desert cave that traps whoever enters during a tremor in a repeating day. Rehearse anything forever; rumor says one explosion inside, mid-quake, gets you out.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 982. Electric Locomotive
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Satisfactory |
+
+**Description**
+
+> A multi-wagon electric freight locomotive that hauls entire factories' output on your rail lines.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 983. Freight Wagon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Satisfactory |
+
+**Description**
+
+> A cavernous freight car that follows your locomotive anywhere rails go.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 984. Locomotive
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Factorio |
+
+**Description**
+
+> A diesel workhorse locomotive for a fully automated rail network; schedule not included.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 985. Cargo Wagon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Factorio |
+
+**Description**
+
+> A steel cargo wagon that loads and unloads itself at smart stations.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 986. Rail Car
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.0 | Rare | Astroneer |
+
+**Description**
+
+> A click-together rail car for the railway you really should have built sooner.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 987. Mugen Train
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Demon Slayer |
+
+**Description**
+
+> An eight-car demon that fused with its own train; two hundred passengers aboard, all asleep.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 988. Puffing Tom
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.4 | Elite | One Piece |
+
+**Description**
+
+> The Sea Train that runs on water rails between Water 7 and its neighbors, rocketing through Aqua Laguna.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 989. Minecart Shotgun
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Dwarf Fortress |
+
+**Description**
+
+> A shotgun rigged to a high-speed minecart loop; anything in the corridor ceases to be a problem.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 990. Ishimura Tram
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.2 | Rare | Dead Space |
+
+**Description**
+
+> The USG Ishimura's tram network, still running its route through a ship full of necromorphs.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 991. Ecliptic Express
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Resident Evil |
+
+**Description**
+
+> A Umbrella luxury train crawling with T-virus horrors and exactly one working brake lever too few.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 992. Powered Rail
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.2 | Uncommon | Minecraft |
+
+**Description**
+
+> Golden rails that boost any passing minecart, with or without redstone attached.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 993. Spirit Train
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | The Legend of Zelda |
+
+**Description**
+
+> The sacred Spirit Tracks engine, blessed rails and all; evil cannot board without an invitation.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 994. Passing Train
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.0 | Uncommon | Stardew Valley |
+
+**Description**
+
+> On certain days a freight train rumbles through the valley, shaking loose coal, wood, and geodes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 995. Molentary Express
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Professor Layton |
+
+**Description**
+
+> A luxury puzzle-box express where every passenger is lying and the dining car hides a secret.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 996. Galaxy Express 999
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.8 | Legendary | Galaxy Express 999 |
+
+**Description**
+
+> A spacefaring steam locomotive running the Andromeda line; tickets cost more than most planets.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 997. Kotetsujo
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Kabaneri of the Iron Fortress |
+
+**Description**
+
+> An armored steam fortress-train with a very good crane and a worse kabane problem.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 998. Snowpiercer
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.6 | Legendary | Snowpiercer |
+
+**Description**
+
+> A thousand-and-one-car perpetual-motion train circling a frozen Earth, class system included.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 999. The Engine
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.0 | Legendary | Snowpiercer |
+
+**Description**
+
+> Wilford's sacred Engine: eternal, unknowable, and the only warm thing left on the planet.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1000. Polar Express
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | The Polar Express |
+
+**Description**
+
+> A Christmas Eve steam train to the North Pole for children who still believe loudly enough.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1001. Orient Express
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Agatha Christie |
+
+**Description**
+
+> The Simplon-Orient luxury express, first class only, murderer probably included.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1002. Source Code
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Source Code |
+
+**Description**
+
+> A program that drops your mind into a doomed train passenger's final eight minutes, looping with memories intact until you find the bomb. Your body waits safely outside.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1003. Jules Verne Time Train
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.2 | Mythical | Back to the Future |
+
+**Description**
+
+> Doc's flying steam-locomotive time machine, running on steam and pure showmanship.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1004. Spatchcock
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.0 | Elite | Sunless Skies |
+
+**Description**
+
+> A patchwork sky-locomotive held together by rivets, prayer, and Roger's excellent tea service.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1005. War Rig
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Mad Max |
+
+**Description**
+
+> The armored tanker rig: guzzoline, mothers' milk, and one very shiny steering wheel.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1006. Armored Train
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Battlefield |
+
+**Description**
+
+> A behemoth armored battle train bristling with cannons; the track is more of a suggestion.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1007. Aurora
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Metro |
+
+**Description**
+
+> A working steam locomotive hauling the last livable train yards east through the radiation.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1008. Sea Railway
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Studio Ghibli |
+
+**Description**
+
+> A one-way rail line gliding over open ocean toward Swamp Bottom; exact fare unknown.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1009. LLM Workstation Laptop
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.6 | Rare | Generic |
+
+**Description**
+
+> A top-spec laptop with an absurd amount of VRAM that runs a genuinely helpful AI assistant entirely offline. Battery life: optimistic.
 
 **Decision**
 

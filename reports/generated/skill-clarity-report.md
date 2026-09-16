@@ -47,7 +47,7 @@ resistance checks, duration? Or beasts-only?
 duration, save, or human vs non-human scope.
 **Ask:** closed effect list + duration/limits in combat?
 
-### [170. Divine Formula](entries/skill.md#170-divine-formula) — 8.0 Divine (DxD), 8.0
+### [170. Divine Formula](entries/skill.md#170-divine-formula) — 8.0 Divine (Highschool DxD), 8.0
 "Replicate the Kankara formula from DxD" is undefined in-repo. "Vessel too
 weak … melt your brain" — vessel has no mechanical meaning.
 **Ask:** what should Kankara do in ChaosGacha terms (calculation?
