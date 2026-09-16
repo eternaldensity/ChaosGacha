@@ -168,6 +168,7 @@
   function showResult(r) {
     const cls = G.rarityClass(DATA.classes, r.rarity);
     $("resultCard").style.display = "block";
+    $("resultCard").style.boxShadow = `0 0 32px ${cls.color}44, var(--shadow)`;
     $("resultBody").innerHTML =
       `<div class="small" style="color:${esc(cls.color)}">— ${esc(cls.name)} ${esc(r.category)}${r.source ? " [" + esc(r.source) + "]" : ""} —</div>` +
       `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${r.rarity}</div>` +
