@@ -1322,3 +1322,9 @@
 #You are handy: maintenance, repairs, and barricading all go faster in your hands.
 661. The Factory Must Grow, 2.4, Factorio
 #Production must expand to meet the needs of the ever-expanding production. The factory grows.
+662. MIT Graduate, 2.2, Half-Life
+#You hold a doctorate from MIT and solve physics problems the way other people breathe.
+663. Silent Protagonist, 1.8, Half-Life
+#You simply never speak, and somehow this only makes everyone trust you more.
+664. Employed by the G-Man, 6.4, Half-Life
+#You have a vague arrangement with a reality-adjusting bureaucrat in a blue suit. Rise and shine.

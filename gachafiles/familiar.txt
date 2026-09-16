@@ -1024,3 +1024,13 @@
 #The last of the stagways stags, who will carry you anywhere the stag stations still stand.
 513. Thomas the Tank Engine, 2.8, Thomas & Friends
 #A really useful blue tank engine who believes almost any job is worth doing, branch line or main line.
+514. Lamarr, 2.4, Half-Life
+#Dr. Kleiner's de-beaked pet headcrab, affectionate and almost entirely harmless. Almost.
+515. DØG, 5.2, Half-Life
+#Alyx's giant robot dog: loyal, playful, and capable of ripping a Hunter in half.
+516. Snark, 2.0, Half-Life
+#A chittering alien beetle that hunts whatever it sees, then explodes. Throw away from face.
+517. Chumtoad, 1.6, Half-Life
+#A small purple toad of mysterious provenance. It does nothing, beautifully.
+518. Vortigaunt Ally, 4.0, Half-Life
+#A shackled vortigaunt no longer; it heals your wounds and hurls lightning at your enemies.

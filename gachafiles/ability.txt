@@ -2906,3 +2906,9 @@
 #Lay finished railway track behind you as you walk, sleepers ballast and all, on any terrain that holds still.
 1457. Rail Gauge Setting, 3.2, Generic
 #Telekinetically true up any visible rails to a perfect gauge of your choosing, down to the millimetre.
+1458. Vortessence, 4.4, Half-Life
+#Channel the Vortessence to knit wounds closed and throw crackling green lightning alike.
+1459. Xen Transit, 5.6, Half-Life
+#Slip between Earth and the border world Xen, stepping across like the Nihilanth shuffled you there.
+1460. Antlion Pheromones, 3.0, Half-Life
+#Exude the scent-command that turns nearby antlions into your obedient swarm.

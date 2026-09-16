@@ -660,3 +660,9 @@
 #Operate locomotives properly: signals, timetables, braking curves, and all.
 331. Railway Engineering, 3.0, Generic
 #Survey grades, lay out yards, and engineer full-size railways that stay up and on time.
+332. Theoretical Physics, 2.6, Half-Life
+#Relativistic math, quantum field doodles, and resonance-cascade risk assessment from first principles.
+333. Xenobiology, 2.8, Half-Life
+#Study, catalogue, and handle border-world fauna without dying.
+334. Crowbar Combat, 2.2, Half-Life
+#The free-man's martial art: swings, pries, jams, and one quiet hallway at a time.
