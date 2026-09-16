@@ -1,11 +1,12 @@
 /* Offline cache for the Chaos Gacha web apps. App shell + data bundle;
  * player saves live in localStorage and need no network at all. */
-const CACHE = "chaos-gacha-web-v1";
+const CACHE = "chaos-gacha-web-v2";
 const ASSETS = [
   "./",
   "index.html",
   "tree.html",
   "gacha.html",
+  "docs.html",
   "manifest.webmanifest",
   "favicon.svg",
   "css/app.css",
