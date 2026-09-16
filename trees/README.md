@@ -47,8 +47,9 @@ near the centre, high rarity near the surface. The `d` on each edge is the
 raw 3D distance between the two nodes.
 
 Node `id` 0 is the synthetic **Origin** root (`file: "__root__"`): it sits
-at the exact centre, is free to unlock, and links to the real node nearest
-the centre. All real nodes have `id >= 1`.
+at the exact centre, is free to unlock, and links to the `root-links`
+nearest-to-centre nodes (default 3), spread apart so play starts with
+options in different directions. All real nodes have `id >= 1`.
 
 **Tree-meta nodes.** A handful of ordinary ability/item/trait entries carry a
 `(Tree)` tag plus a `(Meta:...)` token (kept in the node's `meta` field).

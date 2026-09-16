@@ -229,7 +229,8 @@
     const limit = $("newSize").value ? parseInt($("newSize").value, 10) : null;
     const params = {
       meanDegree: parseFloat($("newDegree").value) || 2.5,
-      rejoinBias: Math.max(0, Math.min(1, parseFloat($("newRejoin").value || "0.7")))
+      rejoinBias: Math.max(0, Math.min(1, parseFloat($("newRejoin").value || "0.7"))),
+      rootLinks: Math.max(1, Math.min(8, parseInt($("newRoots").value, 10) || 3))
     };
     const btn = $("btnCreate");
     btn.disabled = true;

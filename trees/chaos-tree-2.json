@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 2,
-  "generated_at": "2026-09-15T13:52:44Z",
+  "generated_at": "2026-09-16T06:01:31Z",
   "params": {
     "files": [
       "skill",
@@ -28,32 +28,37 @@
     "rejoin_bias": 0.7,
     "link_falloff": 2.0,
     "max_link_distance": 0.6,
+    "root_links": 3,
     "connect": true
   },
   "stats": {
     "nodes": 3642,
     "entries": 3641,
-    "edges": 6140,
+    "edges": 6142,
     "components": 1,
-    "cycles": 2499,
+    "cycles": 2501,
     "bridges": 0,
     "root": {
       "id": 0,
       "name": "Origin",
-      "first_child": 4
+      "children": [
+        4,
+        334,
+        382
+      ]
     },
     "degree": {
       "min": 1,
       "max": 12,
       "requested_mean": 2.569,
-      "mean": 3.372,
+      "mean": 3.373,
       "histogram": {
-        "1": 409,
-        "2": 815,
-        "3": 880,
+        "1": 408,
+        "2": 814,
+        "3": 882,
         "4": 721,
-        "5": 443,
-        "6": 207,
+        "5": 442,
+        "6": 208,
         "7": 104,
         "8": 45,
         "9": 12,
@@ -92962,6 +92967,16 @@
       "a": 0,
       "b": 4,
       "d": 0.05
+    },
+    {
+      "a": 0,
+      "b": 334,
+      "d": 0.301248
+    },
+    {
+      "a": 0,
+      "b": 382,
+      "d": 0.330601
     }
   ]
 }

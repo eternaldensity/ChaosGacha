@@ -28,7 +28,9 @@ def build_small_tree():
     rng = random.Random(10)
     nodes, edges, targets = gt.generate_tree(items[:20], params, rng)
     nodes, edges = gt.add_root(nodes, edges)
+    assert sum(1 for e in edges if e["a"] == 0) == 3  # 3 starting options
     stats = gt.compute_stats(nodes, edges, targets)
+    assert stats["root"]["children"] == [e["b"] for e in edges if e["a"] == 0]
     gt.save_tree(nodes, edges, stats, items[:20], params, 10, path)
     return tmp, path
 

@@ -40,6 +40,8 @@ Links:
 Output:
   --out PATH                 JSON destination (default trees/chaos-tree-<seed>.json)
   --seed N                   RNG seed (default 12345)
+  --root-links N             starting nodes linked to the Origin root
+                             (nearest-to-centre, spread apart; default 3)
 
 Examples
 --------
@@ -349,10 +351,16 @@ def generate_tree(items, params, rng):
     return nodes, edges, targets
 
 
-def add_root(nodes, edges):
+def _dist_pos(a, b):
+    return math.dist(a["pos"], b["pos"])
+
+
+def add_root(nodes, edges, n_links=3, min_sep=0.35):
     """Insert the synthetic origin node (id 0, at the sphere centre) and link
-    it to the real node nearest the centre (lowest rarity). Real node ids are
-    shifted up by one. Returns (nodes_with_root, edges_with_root)."""
+    it to the n_links nearest-to-centre nodes (lowest rarity), spread apart
+    by at least min_sep so the player starts with options in different
+    directions (separation is relaxed if there aren't enough candidates).
+    Real node ids are shifted up by one. Returns (nodes, edges)."""
     root = {
         "id": 0,
         "file": "__root__",
@@ -370,8 +378,21 @@ def add_root(nodes, edges):
     out_edges = [{"a": e["a"] + 1, "b": e["b"] + 1, "d": e["d"],
                   **({"bridge": True} if e.get("bridge") else {})}
                  for e in edges]
-    nearest = min(real, key=lambda nd: (nd["r"], nd["id"]))
-    out_edges.append({"a": 0, "b": nearest["id"], "d": nearest["r"]})
+    n_links = max(1, min(n_links, len(real)))
+    cands = sorted(real, key=lambda nd: (nd["r"], nd["id"]))
+    chosen = []
+    for nd in cands:
+        if len(chosen) >= n_links:
+            break
+        if all(_dist_pos(nd, c) >= min_sep for c in chosen):
+            chosen.append(nd)
+    for nd in cands:  # relax the separation rather than link fewer
+        if len(chosen) >= n_links:
+            break
+        if all(nd["id"] != c["id"] for c in chosen):
+            chosen.append(nd)
+    for nd in chosen:
+        out_edges.append({"a": 0, "b": nd["id"], "d": nd["r"]})
     return [root] + real, out_edges
 
 
@@ -405,8 +426,7 @@ def compute_stats(nodes, edges, targets):
         "cycles": len(edges) - n + components,
         "bridges": sum(1 for e in edges if e.get("bridge")),
         "root": {"id": 0, "name": "Origin",
-                 "first_child": next(nd["id"] for nd in entries
-                                     if nd["id"] == edges[-1]["b"])},
+                 "children": [e["b"] for e in edges if e["a"] == 0]},
         "degree": {
             "min": min(degrees),
             "max": max(degrees),
@@ -473,6 +493,8 @@ def main():
     ap.add_argument("--degree-min", type=int, default=1)
     ap.add_argument("--degree-max", type=int)
     ap.add_argument("--rejoin-bias", type=float, default=0.7)
+    ap.add_argument("--root-links", type=int, default=3,
+                    help="how many starting nodes link to the Origin root")
     ap.add_argument("--link-falloff", type=float, default=2.0)
     ap.add_argument("--max-link-distance", type=float, default=0.6)
     ap.add_argument("--no-connect", action="store_true")
@@ -520,12 +542,13 @@ def main():
         "rejoin_bias": args.rejoin_bias,
         "link_falloff": args.link_falloff,
         "max_link_distance": args.max_link_distance,
+        "root_links": args.root_links,
         "connect": not args.no_connect,
     }
 
     rng = random.Random(args.seed)
     nodes, edges, targets = generate_tree(items, params, rng)
-    nodes, edges = add_root(nodes, edges)
+    nodes, edges = add_root(nodes, edges, n_links=args.root_links)
     stats = compute_stats(nodes, edges, targets)
 
     out = args.out or os.path.join(TREE_DIR, f"chaos-tree-{args.seed}.json")
