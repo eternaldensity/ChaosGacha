@@ -123,5 +123,37 @@ window.ChaosGacha = (function () {
     return classes[classes.length - 1];
   }
 
-  return { rarityPull, cleanDesc, roll, drawStrip, rarityClass };
+  // Gambler trait (d20 ticket mods). Tiers ordered lowest -> highest.
+  function gamblerRoll(rnd) {
+    rnd = rnd || Math.random;
+    const d20 = 1 + Math.floor(rnd() * 20);
+    const effect = d20 === 20 ? "rankUp"
+      : d20 >= 17 ? "advantage"
+      : d20 >= 13 ? "changeType"
+      : d20 >= 8 ? "nothing"
+      : d20 >= 2 ? "rankDown" : "destroyed";
+    return { d20, effect };
+  }
+  const GAMBLE_CATS = ["ability", "item", "skill", "trait", "familiar"];
+  function gamblerApply(tiers, tier, cat, rnd) {
+    const { d20, effect } = gamblerRoll(rnd);
+    let t = tier, c = cat, advantage = false, destroyed = false;
+    const i = tiers.indexOf(tier);
+    if (effect === "rankUp") t = tiers[Math.min(tiers.length - 1, i < 0 ? 0 : i + 1)];
+    else if (effect === "rankDown") t = tiers[Math.max(0, i < 0 ? 0 : i - 1)];
+    else if (effect === "advantage") advantage = true;
+    else if (effect === "destroyed") destroyed = true;
+    else if (effect === "changeType") {
+      const pool = GAMBLE_CATS.filter(x => x !== cat);
+      c = pool[Math.floor((rnd || Math.random)() * pool.length)];
+    }
+    return { d20, effect, tier: t, cat: c, advantage, destroyed };
+  }
+  function gamblerLabel(g) {
+    return { rankUp: "Rank Up", advantage: "Advantage", changeType: "Changed Type",
+      nothing: "No change", rankDown: "Rank Down", destroyed: "Destroyed" }[g.effect];
+  }
+
+  return { rarityPull, cleanDesc, roll, drawStrip, rarityClass,
+    gamblerRoll, gamblerApply, gamblerLabel };
 })();

@@ -40,7 +40,8 @@
 
   function resultText(r) {
     const cls = G.rarityClass(DATA.classes, r.rarity);
-    return `🎰 ${r.name} (${r.rarity}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""})`;
+    return `🎰 ${r.name} (${r.rarity}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""})` +
+      (r.d20 != null ? ` 🎲${r.d20} ${G.gamblerLabel({ effect: r.geffect })}` : "");
   }
   window.__gacha = window.__gacha || {};
   window.__gacha.resultText = resultText;
@@ -215,18 +216,64 @@
       `<div class="small" style="color:${esc(cls.color)}">— ${esc(cls.name)} ${esc(r.category)}${r.source ? " [" + esc(r.source) + "]" : ""} —</div>` +
       `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${r.rarity}</div>` +
       `<div class="small muted">${r.odds.toFixed(2)}% odds</div>` +
+      (r.d20 != null ? `<div class="small muted">🎲 Gambler d20 → ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</div>` : "") +
       (r.description ? `<p>${esc(r.description)}</p>` : "");
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
-  function doRoll(min, max, avg, cat, ticketId) {
+  function showDestroyed(g, note) {
+    lastResult = null;
+    const cls = G.rarityClass(DATA.classes, 0);
+    $("resultCard").style.display = "block";
+    $("resultCard").style.boxShadow = "";
+    $("multiCard").style.display = "none";
+    $("resultBody").innerHTML =
+      `<div class="result-name">💥 Ticket destroyed</div>` +
+      `<div class="small muted">🎲 Gambler d20 → ${g.d20}: Destroyed. ` +
+      (note || "No roll, no history entry.") + `</div>`;
+    $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  function tierNames() { return DATA.tiers.map(t => t.name); }
+  function presetNums(name) {
+    const t = DATA.tiers.find(t => t.name === name);
+    return t ? { min: t.min, avg: t.avg, max: t.max } : null;
+  }
+
+  function doRoll(min, max, avg, cat, ticketId, tierName) {
     if (spinning) return;
     const F = collectFilters();
     if (F.dedup) F.exclude = DB.history.map(h => h.name);
+    let g = null;
+    if (DB.settings.gambler) {
+      g = G.gamblerApply(tierNames(), tierName || "bronze", cat);
+      if (g.effect === "rankUp" || g.effect === "rankDown") {
+        const pn = presetNums(g.tier);
+        if (pn) { min = pn.min; avg = pn.avg; max = pn.max; }
+      }
+      cat = g.cat;
+      if (g.effect === "destroyed") {
+        if (ticketId) DB.tickets = DB.tickets.filter(t => t.id !== ticketId);
+        save(); renderTickets();
+        showDestroyed(g);
+        return;
+      }
+    }
+    const rollOnce = () => G.roll(DATA.entries, DATA.tiers, cat, min, max, avg, F);
     let r;
     try {
-      r = G.roll(DATA.entries, DATA.tiers, cat, min, max, avg, F);
+      r = rollOnce();
+      if (g && g.effect === "advantage") {
+        const r2 = rollOnce();
+        if (r2.rarity >= r.rarity) {
+          r2.gambleNote = `kept ${r2.rarity} over ${r.rarity}`;
+          r = r2;
+        } else {
+          r.gambleNote = `kept ${r.rarity} over ${r2.rarity}`;
+        }
+      }
     } catch (e) { toast(e.message, true); return; }
+    if (g) { r.d20 = g.d20; r.geffect = g.effect; }
     if (ticketId) DB.tickets = DB.tickets.filter(t => t.id !== ticketId);
     DB.history.unshift(Object.assign({ id: uid(), at: Date.now(), min, max, avg }, r));
     if (DB.history.length > 500) DB.history.length = 500;
@@ -304,7 +351,7 @@
   $("rollBtn").addEventListener("click", () => {
     const min = parseFloat($("cMin").value), avg = parseFloat($("cAvg").value), max = parseFloat($("cMax").value);
     if (!(min < max) || isNaN(avg)) return toast("Need min < max and a numeric avg.", true);
-    doRoll(min, max, avg, category, null);
+    doRoll(min, max, avg, category, null, preset);
   });
 
   $("btnMulti").addEventListener("click", () => {
@@ -313,14 +360,41 @@
     if (!(min < max) || isNaN(avg)) return toast("Need min < max and a numeric avg.", true);
     const F = collectFilters();
     if (F.dedup) F.exclude = DB.history.map(h => h.name);
+    const useGamble = !!DB.settings.gambler;
     const results = [];
+    let destroyed = 0;
     try {
       for (let i = 0; i < 10; i++) {
+        let mm = min, ma = avg, mx = max, cc = category, g = null;
+        if (useGamble) {
+          g = G.gamblerApply(tierNames(), preset, category);
+          if (g.effect === "rankUp" || g.effect === "rankDown") {
+            const pn = presetNums(g.tier);
+            if (pn) { mm = pn.min; ma = pn.avg; mx = pn.max; }
+          }
+          cc = g.cat;
+          if (g.effect === "destroyed") { destroyed++; continue; }
+        }
         if (F.dedup) F.exclude = DB.history.map(h => h.name).concat(results.map(r => r.name));
-        results.push(G.roll(DATA.entries, DATA.tiers, category, min, max, avg, F));
+        const rollOnce = () => G.roll(DATA.entries, DATA.tiers, cc, mm, ma, mx, F);
+        let r = rollOnce();
+        if (g && g.effect === "advantage") {
+          const r2 = rollOnce();
+          if (r2.rarity >= r.rarity) {
+            r2.gambleNote = `kept ${r2.rarity} over ${r.rarity}`;
+            r = r2;
+          } else {
+            r.gambleNote = `kept ${r.rarity} over ${r2.rarity}`;
+          }
+        }
+        if (g) { r.d20 = g.d20; r.geffect = g.effect; }
+        results.push(r);
       }
     } catch (e) { toast(e.message + (results.length ? ` (${results.length} landed first)` : ""), true); }
-    if (!results.length) return;
+    if (!results.length) {
+      showDestroyed({ d20: "—" }, "Gambler destroyed all ten tickets. Brutal.");
+      return;
+    }
     const stamped = results.map(r => Object.assign({ id: uid(), at: Date.now(), min, max, avg }, r));
     DB.history.unshift(...stamped);
     if (DB.history.length > 500) DB.history.length = 500;
@@ -328,7 +402,8 @@
     let best = results[0];
     for (const r of results) if (r.rarity > best.rarity) best = r;
     showResult(best);
-    $("multiHead").textContent = `best of 10 below`;
+    $("multiHead").textContent = `best of ${results.length}` +
+      (destroyed ? ` (${destroyed} destroyed)` : "") + ` below`;
     const ul = $("multiList");
     ul.innerHTML = "";
     results.slice().sort((a, b) => b.rarity - a.rarity).forEach(r => {
@@ -384,7 +459,7 @@
       b.textContent = "Roll 🎲"; b.className = "primary";
       b.addEventListener("click", () => {
         const p = tierOf(t.tier);
-        doRoll(p.min, p.max, p.avg, t.cat, t.id);
+        doRoll(p.min, p.max, p.avg, t.cat, t.id, t.tier);
       });
       li.appendChild(b);
       ul.appendChild(li);
@@ -420,7 +495,8 @@
       const cls = G.rarityClass(DATA.classes, h.rarity);
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
-        `<b>${esc(h.name)}</b> <span class="pill">${esc(h.category)} ${h.rarity}</span><br>` +
+        `<b>${esc(h.name)}</b> <span class="pill">${esc(h.category)} ${h.rarity}</span>` +
+        (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }))}">🎲${h.d20}</span>` : "") + `<br>` +
         `<span class="muted small">${esc(h.source || "—")} · ${new Date(h.at).toLocaleString()} · ${h.odds.toFixed(2)}%</span></div>`;
       const b = document.createElement("button");
       b.textContent = "👁";
@@ -465,6 +541,11 @@
     $("dataVer").textContent = `data v${DATA.dataVersion || "?"} · ${n} entries`;
   } catch (e) {}
   $("spinSpeed").value = (DB.settings && DB.settings.spin) || "normal";
+  $("gambler").checked = !!(DB.settings && DB.settings.gambler);
+  $("gambler").addEventListener("change", () => {
+    DB.settings.gambler = $("gambler").checked;
+    save();
+  });
   $("spinSpeed").addEventListener("change", () => {
     DB.settings.spin = $("spinSpeed").value;
     save();
