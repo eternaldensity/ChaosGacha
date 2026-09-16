@@ -1382,21 +1382,28 @@
   (function buildSrcChecks() {
     const host = $("srcChecks");
     host.innerHTML = "";
+    const FILES = ["ability", "item", "skill", "trait", "familiar"];
+    const LETTER = { ability: "A", item: "I", skill: "S", trait: "T", familiar: "F" };
     const counts = {};
     for (const e of (DATA.entries || [])) {
       if (e.t === "tree" || !e.s) continue;
-      counts[e.s] = (counts[e.s] || 0) + 1;
+      counts[e.s] = counts[e.s] || {};
+      counts[e.s][e.f] = (counts[e.s][e.f] || 0) + 1;
     }
+    const breakdown = s => FILES.filter(f => counts[s][f])
+      .map(f => `${counts[s][f]}${LETTER[f]}`).join(", ");
+    const total = s => Object.values(counts[s]).reduce((a, b) => a + b, 0);
     for (const s of Object.keys(counts).sort((a, b) => a.localeCompare(b))) {
       const lab = document.createElement("label");
       lab.style.cssText = "display:flex;gap:6px;align-items:center;min-height:44px;flex:1;min-width:44%;";
-      lab.title = `${counts[s]} entries`;
+      lab.title = `${total(s)} entries: ${breakdown(s)}`;
       const cb = document.createElement("input");
-      cb.type = "checkbox"; cb.className = "srcCheck"; cb.value = s;       cb.checked = true;
+      cb.type = "checkbox"; cb.className = "srcCheck"; cb.value = s;
+      cb.checked = true;
       cb.style.cssText = "width:22px;height:22px";
       cb.addEventListener("change", () => { refreshSrcCount(); saveSrcExcluded(); });
       const nm = document.createElement("span");
-      nm.textContent = `${s} (${counts[s]})`;
+      nm.textContent = `${s} [${breakdown(s)}]`;
       lab.append(cb, nm);
       host.appendChild(lab);
     }

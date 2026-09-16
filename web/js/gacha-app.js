@@ -76,15 +76,6 @@
   let preset = "gold", category = "random";
   const CATS = ["random", "ability", "item", "skill", "trait", "familiar"];
 
-  function sourcesFor(cat) {
-    if (DATA.sources && DATA.sources[cat]) return DATA.sources[cat].slice();
-    const cats = cat === "random" ? CATS.slice(1) : [cat];
-    const s = new Set();
-    for (const e of DATA.entries) {
-      if (cats.includes(e.f) && e.t !== "tree" && e.s) s.add(e.s);
-    }
-    return [...s].sort((a, b) => a.localeCompare(b));
-  }
   function checkedSources() {
     return [...document.querySelectorAll(".gfCheck")]
       .filter(c => c.checked).map(c => c.value);
@@ -93,16 +84,28 @@
     const prev = keep ? checkedSources() : null;
     const host = $("gfSources");
     host.innerHTML = "";
-    for (const s of sourcesFor(category)) {
+    const FILES = ["ability", "item", "skill", "trait", "familiar"];
+    const LETTER = { ability: "A", item: "I", skill: "S", trait: "T", familiar: "F" };
+    const counts = {};
+    for (const e of DATA.entries) {
+      if (e.t === "tree" || !e.s) continue;
+      if (category !== "random" && e.f !== category) continue;
+      counts[e.s] = counts[e.s] || {};
+      counts[e.s][e.f] = (counts[e.s][e.f] || 0) + 1;
+    }
+    const breakdown = s => FILES.filter(f => counts[s][f])
+      .map(f => `${counts[s][f]}${LETTER[f]}`).join(", ");
+    for (const s of Object.keys(counts).sort((a, b) => a.localeCompare(b))) {
       const lab = document.createElement("label");
       lab.style.cssText = "display:flex;gap:6px;align-items:center;min-height:44px;flex:1;min-width:44%;";
+      lab.title = `${s}: ${breakdown(s)}`;
       const cb = document.createElement("input");
       cb.type = "checkbox"; cb.className = "gfCheck"; cb.value = s;
       cb.checked = !prev || prev.includes(s);
       cb.style.cssText = "width:22px;height:22px";
       cb.addEventListener("change", () => { refreshSrcCount(); updatePoolCount(); collectFilters(); });
       const nm = document.createElement("span");
-      nm.textContent = s;
+      nm.textContent = `${s} [${breakdown(s)}]`;
       lab.append(cb, nm);
       host.appendChild(lab);
     }
