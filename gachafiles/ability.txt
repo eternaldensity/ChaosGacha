@@ -2886,3 +2886,19 @@
 #Equip a defensive subroutine that hardens your disc against hostile code and viral attacks.
 1447. Timeline Shift, 5.8, Life is Strange
 #Shift yourself between two parallel timelines, carrying objects and consequences across with you.
+1448. Eldritch Constructs, 4.6, MCU
+#Shape Eldritch magic into whips, shields, blades, and bindings that strike spirits as well as soldiers.
+1449. Mirror Dimension, 5.4, MCU
+#Fold yourself and your enemies into the Mirror Dimension, where cities bend and no collateral escapes.
+1450. Chaos Magic, 6.6, MCU
+#Wield raw Chaos Magic that rewrites probability and reality on contact; it always takes something back.
+1451. Probability Hex, 5.0, MCU
+#Hex the odds themselves so the unlikely keeps happening to everyone but you.
+1452. Astral Projection, 3.8, MCU
+#Step out of your body as an astral form to scout unseen while your body sleeps on.
+1453. Dreamwalking, 5.8, MCU
+#Possess your own variants across the multiverse by dreamwalking into their bodies.
+1454. Asgardian Illusions, 4.2, MCU
+#Weave lifelike illusions, duplicates, and shapeshifts the way Loki does: constantly and without permission.
+1455. Rune Magic, 4.8, MCU
+#Inscribe witch runes that steal any spell cast inside them and turn rival magic against its caster.

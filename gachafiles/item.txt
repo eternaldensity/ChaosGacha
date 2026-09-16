@@ -1934,3 +1934,13 @@
 #A hut housing Junimos who emerge each morning to harvest your crops for you.
 968. SHIELD Flying Car, 4.0, Marvel
 #Coulson's cherry-red 1962 Corvette convertible with VTOL flight, machine guns, and flamethrowers. She has a name, and it is Lola.
+969. Darkhold, 7.6, MCU
+#The Book of the Damned, transcribed from Wundagore's dark dimension; every spell in it corrupts its reader.
+970. Book of Vishanti, 7.2, MCU
+#The collected white magic counterweight to the Darkhold; its defensive spells answer nearly anything.
+971. Ten Rings, 6.4, MCU
+#Ten bracelets of alien origin granting longevity, concussive blasts, and a small army's obedience.
+972. Loki's Sceptre, 7.0, MCU
+#The Chitauri sceptre housing the Mind Stone, bending minds and firing energy alike.
+973. Staff of the Living Tribunal, 4.6, MCU
+#A mystic staff that cracks the ground with golden force and pries open sealed things.

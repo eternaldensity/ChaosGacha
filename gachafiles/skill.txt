@@ -650,3 +650,5 @@
 #Keep stockpiles, chores, and expeditions sorted no matter how chaotic the season.
 326. Reasoning, 2.2, I Was a Teenage Exocolonist
 #Argue, deduce, and mediate with a cool head when colonists disagree.
+327. Mystic Arts, 4.0, MCU
+#Kamar-Taj training in spellcraft, relics, and dimensional etiquette, from mandalas to the Mirror Dimension.
