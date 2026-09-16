@@ -2014,3 +2014,5 @@
 #A working steam locomotive hauling the last livable train yards east through the radiation.
 1008. Sea Railway, 3.8, Studio Ghibli
 #A one-way rail line gliding over open ocean toward Swamp Bottom; exact fare unknown.
+1009. LLM Workstation Laptop, 3.6, Generic
+#A top-spec laptop with an absurd amount of VRAM that runs a genuinely helpful AI assistant entirely offline. Battery life: optimistic.
