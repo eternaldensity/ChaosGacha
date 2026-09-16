@@ -1363,6 +1363,22 @@
     const n = boxes.filter(c => c.checked).length;
     $("srcCount").textContent = n === boxes.length ? "all" : `${n}/${boxes.length}`;
   }
+  function srcExcluded() {
+    return [...document.querySelectorAll(".srcCheck")]
+      .filter(c => !c.checked).map(c => c.value);
+  }
+  function saveSrcExcluded() {
+    DB.formExcluded = srcExcluded();
+    saveDB();
+  }
+  function downloadJson(filename, obj) {
+    const blob = new Blob([JSON.stringify(obj)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  }
   (function buildSrcChecks() {
     const host = $("srcChecks");
     host.innerHTML = "";
@@ -1376,23 +1392,50 @@
       lab.style.cssText = "display:flex;gap:6px;align-items:center;min-height:44px;flex:1;min-width:44%;";
       lab.title = `${counts[s]} entries`;
       const cb = document.createElement("input");
-      cb.type = "checkbox"; cb.className = "srcCheck"; cb.value = s; cb.checked = true;
+      cb.type = "checkbox"; cb.className = "srcCheck"; cb.value = s;       cb.checked = true;
       cb.style.cssText = "width:22px;height:22px";
-      cb.addEventListener("change", refreshSrcCount);
+      cb.addEventListener("change", () => { refreshSrcCount(); saveSrcExcluded(); });
       const nm = document.createElement("span");
       nm.textContent = `${s} (${counts[s]})`;
       lab.append(cb, nm);
       host.appendChild(lab);
     }
+    const saved = new Set(DB.formExcluded || []);
+    if (saved.size) {
+      host.querySelectorAll("input").forEach(c => { c.checked = !saved.has(c.value); });
+    }
     refreshSrcCount();
   })();
   $("srcAll").addEventListener("click", () => {
     document.querySelectorAll(".srcCheck").forEach(c => { c.checked = true; });
-    refreshSrcCount();
+    refreshSrcCount(); saveSrcExcluded();
   });
   $("srcNone").addEventListener("click", () => {
     document.querySelectorAll(".srcCheck").forEach(c => { c.checked = false; });
-    refreshSrcCount();
+    refreshSrcCount(); saveSrcExcluded();
+  });
+  $("srcExport").addEventListener("click", () => {
+    downloadJson("chaos-tree-source-exclusions.json", {
+      app: "chaos-tree", kind: "source-exclusions", version: 1,
+      excluded: srcExcluded().sort()
+    });
+  });
+  $("srcImport").addEventListener("click", () => $("fileSrc").click());
+  $("fileSrc").addEventListener("change", async () => {
+    const f = $("fileSrc").files[0];
+    if (!f) return;
+    try {
+      const p = JSON.parse(await f.text());
+      const listed = Array.isArray(p.excluded) ? p.excluded : null;
+      if (!listed) throw new Error("not a source-exclusions file");
+      const known = new Set([...document.querySelectorAll(".srcCheck")].map(c => c.value));
+      const valid = listed.filter(s => known.has(s));
+      document.querySelectorAll(".srcCheck").forEach(c => { c.checked = !valid.includes(c.value); });
+      refreshSrcCount(); saveSrcExcluded();
+      toast(`Excluded ${valid.length} source${valid.length === 1 ? "" : "s"}` +
+        (listed.length > valid.length ? ` (${listed.length - valid.length} unknown ignored)` : "") + ".");
+    } catch (e) { toast(e.message || "Import failed.", true); }
+    $("fileSrc").value = "";
   });
   $("classLegend").innerHTML = "";
   for (const cl of (DATA.classes || [])) {

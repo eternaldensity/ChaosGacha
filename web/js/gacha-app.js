@@ -474,6 +474,36 @@
     document.querySelectorAll(".gfCheck").forEach(c => { c.checked = false; });
     refreshSrcCount(); updatePoolCount(); collectFilters();
   });
+  $("gfExport").addEventListener("click", () => {
+    const checked = new Set(checkedSources());
+    const excluded = [...document.querySelectorAll(".gfCheck")]
+      .map(c => c.value).filter(v => !checked.has(v)).sort();
+    const blob = new Blob([JSON.stringify({
+      app: "chaos-gacha", kind: "source-exclusions", version: 1, excluded
+    })], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "chaos-gacha-source-exclusions.json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  });
+  $("gfImport").addEventListener("click", () => $("fileGfSrc").click());
+  $("fileGfSrc").addEventListener("change", async () => {
+    const f = $("fileGfSrc").files[0];
+    if (!f) return;
+    try {
+      const p = JSON.parse(await f.text());
+      const listed = Array.isArray(p.excluded) ? p.excluded : null;
+      if (!listed) throw new Error("not a source-exclusions file");
+      const known = new Set([...document.querySelectorAll(".gfCheck")].map(c => c.value));
+      const valid = listed.filter(s => known.has(s));
+      document.querySelectorAll(".gfCheck").forEach(c => { c.checked = !valid.includes(c.value); });
+      refreshSrcCount(); updatePoolCount(); collectFilters();
+      toast(`Excluded ${valid.length} source${valid.length === 1 ? "" : "s"}` +
+        (listed.length > valid.length ? ` (${listed.length - valid.length} unknown ignored)` : "") + ".");
+    } catch (e) { toast(e.message || "Import failed.", true); }
+    $("fileGfSrc").value = "";
+  });
   for (const id of ["q", "fRmin", "fRmax", "fNsfw", "fTech", "fDedup"]) {
     $(id).addEventListener("change", () => { collectFilters(); updatePoolCount(); });
     $(id).addEventListener("input", updatePoolCount);
