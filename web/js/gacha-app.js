@@ -197,16 +197,19 @@
   const SPIN_SPEEDS = {
     fast: { dur: 1200, n: 16 },
     normal: { dur: 2600, n: 30 },
-    slow: { dur: 4200, n: 46 }
+    slow: { dur: 4200, n: 46 },
+    slower: { dur: 6200, n: 64 }
   };
+  const TRAIL_ROWS = 8; // decoys past the winner so the list end never shows
   let spinning = false;
 
   function spinReel(r, min, max, avg, filt, opt) {
     let items;
     try {
-      items = G.drawStrip(DATA.entries, r.category, min, max, avg, filt, opt.n);
+      items = G.drawStrip(DATA.entries, r.category, min, max, avg, filt, opt.n + TRAIL_ROWS);
     } catch (e) { showResult(r); return; }
-    items.push({ name: r.name, rarity: r.rarity, source: r.source, category: r.category });
+    const winIdx = opt.n;
+    items.splice(winIdx, 0, { name: r.name, rarity: r.rarity, source: r.source, category: r.category });
     const reel = $("reel"), inner = $("reelInner");
     inner.innerHTML = "";
     for (const it of items) {
@@ -225,7 +228,7 @@
     const rows = Array.from(inner.children);
     const rowh = rows.length ? rows[0].offsetHeight || 54 : 54;
     const viewH = reel.clientHeight || rowh * 5;
-    const total = Math.max(0, items.length * rowh - viewH / 2 - rowh / 2);
+    const total = Math.max(0, winIdx * rowh + rowh / 2 - viewH / 2);
     const t0 = performance.now();
     let done = false;
     const finish = () => { done = true; };
@@ -243,7 +246,7 @@
         rows[i].style.opacity = (1 - 0.8 * Math.pow(d, 1.5)).toFixed(3);
       }
       if (t >= 1) {
-        rows[rows.length - 1].classList.add("winner");
+        rows[winIdx].classList.add("winner");
         reel.onclick = null;
         spinning = false;
         $("rollBtn").disabled = false;
