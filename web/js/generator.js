@@ -7,11 +7,11 @@ window.ChaosGen = (function () {
   const R = window.ChaosRng;
 
   const DEFAULTS = {
-    radius: 1.0, innerFraction: 0.12, distanceVariance: 0.15,
+    radius: 10.0, innerFraction: 0.12, distanceVariance: 0.05,
     clustering: 0.3, clusters: 3,
     degreeDist: "poisson", meanDegree: 2.5, degreeMin: 1, degreeMax: null,
     rejoinBias: 0.7, linkFalloff: 2.0, maxLinkDistance: 0.6,
-    rootLinks: 3, rootMinSep: 0.35,
+    rootLinks: 3, rootMinSep: null, // null = 0.35x outermost radius
     connect: true
   };
 
@@ -216,8 +216,9 @@ window.ChaosGen = (function () {
       return o;
     });
     const nLinks = Math.max(1, Math.min(P.rootLinks || 3, real.length));
-    const sep = P.rootMinSep != null ? P.rootMinSep : 0.35;
     const cands = real.slice().sort((a, b) => (a.r - b.r) || (a.id - b.id));
+    const sep = P.rootMinSep != null ? P.rootMinSep
+      : 0.35 * (cands.length ? cands[0].r : 1.0);
     const chosen = [];
     for (const nd of cands) {
       if (chosen.length >= nLinks) break;

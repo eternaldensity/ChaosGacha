@@ -107,9 +107,9 @@
         <div class="muted small" style="margin-top:8px">Placement</div>
         <div class="row">
           <div><label for="newRadius" title="Sphere size in normalized units; all positions scale with it.">Radius</label>
-            <input type="number" id="newRadius" value="1.0" step="0.1" min="0.2" title="Sphere size in normalized units; all positions scale with it."></div>
+            <input type="number" id="newRadius" value="10.0" step="1" min="1" title="Sphere size in normalized units; all positions scale with it."></div>
           <div><label for="newVar" title="Radial jitter as a fraction of radius; spreads same-rarity nodes across neighbouring shells.">Distance variance</label>
-            <input type="number" id="newVar" value="0.15" step="0.05" min="0" max="1" title="Radial jitter as a fraction of radius; spreads same-rarity nodes across neighbouring shells."></div>
+            <input type="number" id="newVar" value="0.05" step="0.01" min="0" max="1" title="Radial jitter as a fraction of radius; spreads same-rarity nodes across neighbouring shells."></div>
         </div>
         <div class="row">
           <div><label for="newCluster" title="How strongly nodes pull toward a few anchors: 0 = even shells, 1 = tight clumps.">Clustering</label>
@@ -168,7 +168,12 @@
     <div class="card">
       <div class="row">
         <div class="muted small" id="viewInfo">No tree selected.</div>
-        <div style="flex:0 0 auto"><button id="btnResetCam">Reset view</button></div>
+        <div style="flex:0 0 auto" class="row">
+          <button id="btnOrigin" title="Select the Origin root node">◎ Origin</button>
+          <button id="btnResetCam">Reset view</button>
+          <label style="display:flex;gap:6px;align-items:center;min-height:44px" title="Show/hide connection lines.">
+            <input type="checkbox" id="showEdges" checked style="width:22px;height:22px"> Links</label>
+        </div>
       </div>
       <div style="margin-top:8px" class="viewwrap"><canvas class="view" id="view3d"></canvas><div class="hovertip" id="hoverTip"></div></div>
       <div class="muted small" id="selInfo" style="margin-top:6px">Drag to rotate · scroll / pinch to zoom · tap a node to select it.</div>

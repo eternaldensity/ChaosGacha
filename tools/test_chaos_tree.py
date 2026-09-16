@@ -118,6 +118,10 @@ def main():
     cands = cu._jump_candidates(tree, "ability", from_id, st["unlocked"])[:2]
     assert len(cands) >= 1
     pick_idx = 1 if len(cands) >= 2 else 0
+    target = cands[pick_idx][1]["id"]
+    while cu.node_cost(tree, target) > st["points"]:
+        cu.main(["award", state_path, "gold"])
+        st = cu.load_state(state_path)
     cu.main(["jump", state_path, "ability", "--from", str(from_id),
              "--pick", str(pick_idx)])
     st = cu.load_state(state_path)
@@ -173,7 +177,7 @@ def make_tree(nodes, edges):
 
 
 def test_meta():
-    P = lambda x, y: [x, y, 0.0]
+    P = lambda x, y: [x * 10, y * 10, 0.0]
     nodes = [
         {"id": 0, "name": "Origin", "rarity": 0, "file": "__root__",
          "source": "", "description": "", "pos": P(0, 0)},
@@ -295,7 +299,7 @@ def test_meta():
 
 
 def test_meta2():
-    P = lambda x, y: [x, y, 0.0]
+    P = lambda x, y: [x * 10, y * 10, 0.0]
     nodes = [
         {"id": 0, "name": "Origin", "rarity": 0, "file": "__root__",
          "source": "", "description": "", "pos": P(0, 0)},

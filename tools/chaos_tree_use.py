@@ -102,8 +102,8 @@ TIER_POINTS = {
 }
 CATEGORIES = ["ability", "item", "skill", "trait", "familiar"]
 ROOT_ID = 0
-SEE_FAR_DISTANCE = 0.35     # sphere units; used by the Far Sight meta node
-ADD_LINK_DISTANCE = 0.25    # sphere units; max span for Graft
+SEE_FAR_DISTANCE = 3.5      # sphere units (radius 10); used by the Far Sight meta node
+ADD_LINK_DISTANCE = 2.5     # sphere units (radius 10); max span for Graft
 TRACE_DEFAULT_N = 3
 META_RE = re.compile(r"\(Meta:([^)]+)\)")
 

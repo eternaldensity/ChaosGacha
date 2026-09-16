@@ -15,8 +15,8 @@ window.ChaosEngine = (function () {
     "legendary", "mythical", "divine", "transcendent"];
   const CATEGORIES = ["ability", "item", "skill", "trait", "familiar"];
   const ROOT_ID = 0;
-  const SEE_FAR_DISTANCE = 0.35;
-  const ADD_LINK_DISTANCE = 0.25;
+  const SEE_FAR_DISTANCE = 3.5;
+  const ADD_LINK_DISTANCE = 2.5;
   const TRACE_DEFAULT_N = 3;
 
   class ChaosError extends Error {}

@@ -21,8 +21,9 @@ Content:
   --limit N                  randomly sample at most N entries
 
 Placement:
-  --radius F                 sphere radius (normalized units, default 1.0)
-  --distance-variance F      radial jitter as a fraction of radius (0..1)
+  --radius F                 sphere radius (normalized units, default 10.0)
+  --distance-variance F      radial jitter as a fraction of radius (0..1;
+                             default 0.05)
   --clustering F             how strongly nodes pull toward cluster anchors
                              (0 = uniform on shells, 1 = tight clusters)
   --clusters N               number of cluster anchors
@@ -363,12 +364,13 @@ def _dist_pos(a, b):
     return math.dist(a["pos"], b["pos"])
 
 
-def add_root(nodes, edges, n_links=3, min_sep=0.35):
+def add_root(nodes, edges, n_links=3, min_sep=None):
     """Insert the synthetic origin node (id 0, at the sphere centre) and link
     it to the n_links nearest-to-centre nodes (lowest rarity), spread apart
-    by at least min_sep so the player starts with options in different
-    directions (separation is relaxed if there aren't enough candidates).
-    Real node ids are shifted up by one. Returns (nodes, edges)."""
+    so the player starts with options in different directions (separation
+    defaults to 0.35x the nearest node's radius, relaxed if there aren't
+    enough candidates). Real node ids are shifted up by one.
+    Returns (nodes, edges)."""
     root = {
         "id": 0,
         "file": "__root__",
@@ -388,6 +390,8 @@ def add_root(nodes, edges, n_links=3, min_sep=0.35):
                  for e in edges]
     n_links = max(1, min(n_links, len(real)))
     cands = sorted(real, key=lambda nd: (nd["r"], nd["id"]))
+    if min_sep is None:
+        min_sep = 0.35 * (cands[0]["r"] if cands else 1.0)
     chosen = []
     for nd in cands:
         if len(chosen) >= n_links:
@@ -493,8 +497,8 @@ def main():
     ap.add_argument("--include-nsfw", action="store_true",
                     help="include (Nsfw)-tagged entries (excluded by default)")
     ap.add_argument("--limit", type=int)
-    ap.add_argument("--radius", type=float, default=1.0)
-    ap.add_argument("--distance-variance", type=float, default=0.15)
+    ap.add_argument("--radius", type=float, default=10.0)
+    ap.add_argument("--distance-variance", type=float, default=0.05)
     ap.add_argument("--clustering", type=float, default=0.3)
     ap.add_argument("--clusters", type=int, default=3)
     ap.add_argument("--degree-dist", default="poisson",

@@ -29,6 +29,9 @@
   // Node colour encodes rarity tier (same classes as the gacha results);
   // category is still shown as text everywhere.
   const classColor = r => classOf(r).color;
+  // Rarity-tier visibility toggles (legend doubles as the control).
+  const hiddenClasses = new Set();
+  function nodeShown(nd) { return !hiddenClasses.has(classOf(nd.rarity).name); }
 
   // Display preference: NSFW nodes are hidden everywhere unless opted in.
   // (Generation excludes them by default separately, via filters.includeNsfw.)
@@ -157,7 +160,7 @@
       open.textContent = t.id === DB.activeId ? "Active ✓" : "Open";
       open.disabled = t.id === DB.activeId;
       open.addEventListener("click", async () => {
-        DB.activeId = t.id; saveDB(); renderTrees(); refreshAll();
+        DB.activeId = t.id; selectedId = 0; saveDB(); renderTrees(); refreshAll();
         try { await getRuntime(t); showTab("view3d"); }
         catch (e) { err(e); }
       });
@@ -177,6 +180,7 @@
         try { localStorage.removeItem(LS_STATIC + "." + t.id); } catch (e) {}
         memoryStatic.delete(t.id); dropRuntime(t.id);
         if (DB.activeId === t.id) DB.activeId = DB.trees.length ? DB.trees[0].id : null;
+        selectedId = 0;
         saveDB(); renderTrees(); refreshAll();
       });
       const copy = document.createElement("button");
@@ -250,6 +254,7 @@
     DB.states[nid] = fresh ? E.newState()
       : JSON.parse(JSON.stringify(DB.states[t.id] || E.newState()));
     DB.activeId = nid;
+    selectedId = 0;
     saveDB(); renderTrees(); refreshAll();
     return nt;
   }
@@ -269,8 +274,8 @@
         meanDegree: num("newDegree", 2.5),
         rejoinBias: Math.max(0, Math.min(1, num("newRejoin", 0.7))),
         rootLinks: Math.max(1, Math.min(8, parseInt($("newRoots").value, 10) || 3)),
-        radius: num("newRadius", 1.0),
-        distanceVariance: num("newVar", 0.15),
+        radius: num("newRadius", 10.0),
+        distanceVariance: num("newVar", 0.05),
         clustering: num("newCluster", 0.3),
         clusters: Math.max(1, parseInt($("newClusters").value, 10) || 3),
         degreeDist: $("newDegDist").value || "poisson",
@@ -381,6 +386,7 @@
   function exitPreview() {
     if (!preview) return;
     preview = null;
+    selectedId = 0;
     $("previewBar").style.display = "none";
     lastFitKey = "";
     refreshAll();
@@ -418,7 +424,7 @@
         if (td.static && td.topology) saveStatic(tree.id, td.topology);
         DB.trees.push(tree);
         DB.states[tree.id] = Object.assign(E.newState(), payload.state || {});
-        DB.activeId = tree.id; saveDB(); renderTrees(); refreshAll();
+        DB.activeId = tree.id; selectedId = 0; saveDB(); renderTrees(); refreshAll();
         toast(`Imported "${tree.name}".`);
         showTab("view3d");
       } else if (payload && payload.format === "chaos-tree" && payload.nodes && payload.edges) {
@@ -428,7 +434,7 @@
         saveStatic(tree.id, { nodes: payload.nodes, edges: payload.edges });
         DB.trees.push(tree);
         DB.states[tree.id] = E.newState();
-        DB.activeId = tree.id; saveDB(); renderTrees(); refreshAll();
+        DB.activeId = tree.id; selectedId = 0; saveDB(); renderTrees(); refreshAll();
         toast(`Imported Python tree "${tree.name}".`);
         showTab("view3d");
       } else throw new Error("unrecognised file (need a chaos-tree export or Python tree JSON)");
@@ -471,6 +477,7 @@
   const canvas = $("view3d");
   const ctx = canvas.getContext("2d");
   let projected = []; // [{id,x,y,r,name,hex}]
+  let showEdges = true;
   // A locked node is unlockable right now when it sits on the frontier
   // (normal unlocks are adjacency-only) and the wallet covers it.
   // Pass a precomputed frontier set when checking many nodes per frame.
@@ -516,7 +523,7 @@
     const proj = PROJ_F / (PROJ_F + cam.dist); // scale at origin
     // zoom so the shown cloud's diameter fills ~60% of the smaller side
     const spreadWorld = Math.max(0.04, Math.hypot(x1 - x0, y1 - y0, z1 - z0));
-    cam.zoom = Math.max(1, Math.min(15, 1.476 / (spreadWorld * proj)));
+    cam.zoom = Math.max(0.05, Math.min(15, 1.476 / (spreadWorld * proj)));
     // With only a few nodes out, the default angle can stack them along the
     // view axis (one hidden dot). Pick an angle that spreads them on screen
     // (full perspective projection, so foreshortening counts).
@@ -604,11 +611,13 @@
     ctx.lineWidth = 1;
     ctx.strokeStyle = "rgba(140,150,175,0.28)";
     ctx.beginPath();
-    for (const nd of d.rt.nodes) {
-      if (!visNode(nd)) continue;
+    if (showEdges) for (const nd of d.rt.nodes) {
+      if (!visNode(nd) || !nodeShown(nd)) continue;
       if (!d.vis.has(nd.id) && !d.unl.has(nd.id)) continue;
       for (const b of (d.rt.adj[nd.id] || [])) {
         if (b < nd.id) continue;
+        const nb = d.rt.byId[b];
+        if (!visNode(nb) || !nodeShown(nb)) continue;
         if (!d.vis.has(b) && !d.unl.has(b)) continue;
         const [x1, y1] = project(nd.pos), [x2, y2] = project(d.rt.byId[b].pos);
         ctx.moveTo(cx + x1 * base, cy - y1 * base);
@@ -619,7 +628,7 @@
     // nodes, far first
     const items = [];
     for (const nd of d.rt.nodes) {
-      if (!visNode(nd)) continue;
+      if (!visNode(nd) || !nodeShown(nd)) continue;
       if (!d.vis.has(nd.id) && !d.unl.has(nd.id)) continue;
       const [x, y, s] = project(nd.pos);
       items.push({ nd, x: cx + x * base, y: cy - y * base, s });
@@ -631,7 +640,7 @@
     for (const it of items) {
       const unlocked = d.unl.has(it.nd.id);
       const col = classColor(it.nd.rarity);
-      const rad = Math.max(2, Math.min(10, (unlocked ? 3.4 : 2.6) + it.nd.rarity * 0.55)) * dotScale * (window.devicePixelRatio || 1) / 1.5;
+      const rad = Math.max(1.2, Math.min(10, (unlocked ? 3.4 : 2.6) + it.nd.rarity * 0.55) * dotScale * (window.devicePixelRatio || 1) / 1.5);
       const hex = !unlocked && canUnlockNow(d.st, d.rt, it.nd.id, front);
       ctx.beginPath();
       if (hex) hexPath(ctx, it.x, it.y, rad);
@@ -643,7 +652,9 @@
         else { ctx.beginPath(); ctx.arc(it.x, it.y, rad + 4, 0, Math.PI * 2); }
         ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.stroke(); ctx.lineWidth = 1;
       }
-      projected.push({ id: it.nd.id, x: it.x, y: it.y, r: rad + 8, name: `#${it.nd.id} ${it.nd.name} · ${it.nd.rarity}`, hex });
+      const rOrigin = it.nd.r != null ? it.nd.r
+        : Math.hypot(it.nd.pos[0], it.nd.pos[1], it.nd.pos[2]);
+      projected.push({ id: it.nd.id, x: it.x, y: it.y, r: rad + 8, name: `#${it.nd.id} ${it.nd.name} · ${it.nd.rarity} · r ${rOrigin.toFixed(2)}`, hex });
     }
     if (selectedId != null && d.rt.byId[selectedId]) {
       const nd = d.rt.byId[selectedId];
@@ -694,7 +705,7 @@
       } else if (pts.size === 2) {
         const [p, q] = [...pts.values()];
         const d = Math.hypot(p[0] - q[0], p[1] - q[1]);
-        if (lastPinch) cam.zoom = Math.max(0.3, Math.min(15, cam.zoom * (d / lastPinch)));
+        if (lastPinch) cam.zoom = Math.max(0.05, Math.min(15, cam.zoom * (d / lastPinch)));
         lastPinch = d;
         draw3D();
       }
@@ -709,7 +720,7 @@
     canvas.addEventListener("pointerleave", hideTip);
     canvas.addEventListener("wheel", e => {
       e.preventDefault();
-      cam.zoom = Math.max(0.3, Math.min(15, cam.zoom * (1 - e.deltaY * 0.0015)));
+      cam.zoom = Math.max(0.05, Math.min(15, cam.zoom * (1 - e.deltaY * 0.0015)));
       draw3D();
     }, { passive: false });
 
@@ -732,6 +743,14 @@
   $("btnResetCam").addEventListener("click", () => {
     cam.yaw = 0.6; cam.pitch = 0.35;
     lastFitKey = ""; // force re-fit on next draw
+    draw3D();
+  });
+  $("btnOrigin").addEventListener("click", () => {
+    selectedId = 0;
+    draw3D();
+  });
+  $("showEdges").addEventListener("change", () => {
+    showEdges = $("showEdges").checked;
     draw3D();
   });
 
@@ -1340,9 +1359,28 @@
   }
   $("srcList").innerHTML = [...new Set((DATA.entries || []).map(e => e.s).filter(Boolean))]
     .sort((a, b) => a.localeCompare(b)).map(s => `<option value="${esc(s)}">`).join("");
-  $("classLegend").innerHTML = (DATA.classes || [])
-    .map(c => `<span class="pill" style="margin:2px" title="rarity &lt; ${c.max}"><span class="dot" style="background:${esc(c.color)}"></span>${esc(c.name)}</span>`)
-    .join(" ") + ` <span class="pill" style="margin:2px" title="Locked, on the frontier, and covered by your wallet">⬡ unlockable now</span>`;
+  $("classLegend").innerHTML = "";
+  for (const cl of (DATA.classes || [])) {
+    const b = document.createElement("button");
+    b.className = "pill";
+    b.style.cssText = "margin:2px;min-height:36px;";
+    b.dataset.cls = cl.name;
+    b.title = `rarity < ${cl.max} — click to hide/show`;
+    b.innerHTML = `<span class="dot" style="background:${esc(cl.color)}"></span>${esc(cl.name)}`;
+    b.addEventListener("click", () => {
+      if (hiddenClasses.has(cl.name)) hiddenClasses.delete(cl.name);
+      else hiddenClasses.add(cl.name);
+      b.style.opacity = hiddenClasses.has(cl.name) ? "0.35" : "1";
+      draw3D();
+    });
+    $("classLegend").appendChild(b);
+  }
+  const key = document.createElement("span");
+  key.className = "pill";
+  key.style.cssText = "margin:2px";
+  key.title = "Locked, on the frontier, and covered by your wallet";
+  key.textContent = "⬡ unlockable now";
+  $("classLegend").appendChild(key);
   $("ownCat").innerHTML = `<option value="">All</option>` +
     E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });
