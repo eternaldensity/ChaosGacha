@@ -23,10 +23,11 @@
       if (raw) {
         const d = JSON.parse(raw);
         d.tickets = d.tickets || []; d.history = d.history || [];
+        d.settings = d.settings || { spin: "normal" };
         return d;
       }
     } catch (e) {}
-    return { tickets: [], history: [] };
+    return { tickets: [], history: [], settings: { spin: "normal" } };
   }
   function save() {
     try { localStorage.setItem(LS, JSON.stringify(DB)); }
@@ -105,6 +106,7 @@
   }
 
   function doRoll(min, max, avg, cat, ticketId) {
+    if (spinning) return;
     let r;
     try {
       r = G.roll(DATA.entries, DATA.tiers, cat, min, max, avg, $("q").value);
@@ -112,7 +114,72 @@
     if (ticketId) DB.tickets = DB.tickets.filter(t => t.id !== ticketId);
     DB.history.unshift(Object.assign({ id: uid(), at: Date.now(), min, max, avg }, r));
     if (DB.history.length > 500) DB.history.length = 500;
-    save(); showResult(r); renderTickets();
+    save(); renderTickets();
+    const speed = (DB.settings && DB.settings.spin) || "normal";
+    const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (speed === "off" || reduced || !window.requestAnimationFrame) { showResult(r); return; }
+    spinReel(r, min, max, avg, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal);
+  }
+
+  const SPIN_SPEEDS = {
+    fast: { dur: 1200, n: 16 },
+    normal: { dur: 2600, n: 30 },
+    slow: { dur: 4200, n: 46 }
+  };
+  let spinning = false;
+
+  function spinReel(r, min, max, avg, opt) {
+    let items;
+    try {
+      items = G.drawStrip(DATA.entries, r.category, min, max, avg, $("q").value, opt.n);
+    } catch (e) { showResult(r); return; }
+    items.push({ name: r.name, rarity: r.rarity, source: r.source, category: r.category });
+    const reel = $("reel"), inner = $("reelInner");
+    inner.innerHTML = "";
+    for (const it of items) {
+      const cls = G.rarityClass(DATA.classes, it.rarity);
+      const row = document.createElement("div");
+      row.className = "rrow";
+      row.innerHTML = `<span class="dot" style="background:${esc(cls.color)}"></span>` +
+        `<span class="nm">${esc(it.name)}</span>` +
+        `<span class="pill">${esc(it.category)} ${it.rarity}</span>`;
+      inner.appendChild(row);
+    }
+    $("reelCard").style.display = "block";
+    $("resultCard").style.display = "none";
+    $("rollBtn").disabled = true;
+    spinning = true;
+    const rows = Array.from(inner.children);
+    const rowh = rows.length ? rows[0].offsetHeight || 54 : 54;
+    const viewH = reel.clientHeight || rowh * 5;
+    const total = Math.max(0, items.length * rowh - viewH / 2 - rowh / 2);
+    const t0 = performance.now();
+    let done = false;
+    const finish = () => { done = true; };
+    reel.onclick = finish;
+    function frame(now) {
+      if (done) now = t0 + opt.dur;
+      const t = Math.min(1, (now - t0) / opt.dur);
+      const p = 1 - Math.pow(1 - t, 4); // ease-out: fast whizz, gentle settle
+      const off = total * p;
+      inner.style.transform = `translateY(${-off}px)`;
+      for (let i = 0; i < rows.length; i++) {
+        const center = i * rowh + rowh / 2 - off;
+        const d = Math.min(1, Math.abs(center - viewH / 2) / (viewH / 2));
+        rows[i].style.transform = `scaleY(${(1 - 0.6 * Math.pow(d, 1.3)).toFixed(3)})`;
+        rows[i].style.opacity = (1 - 0.8 * Math.pow(d, 1.5)).toFixed(3);
+      }
+      if (t >= 1) {
+        rows[rows.length - 1].classList.add("winner");
+        reel.onclick = null;
+        spinning = false;
+        $("rollBtn").disabled = false;
+        showResult(r);
+        return;
+      }
+      window.requestAnimationFrame(frame);
+    }
+    window.requestAnimationFrame(frame);
   }
 
   $("rollBtn").addEventListener("click", () => {
@@ -195,5 +262,10 @@
 
   renderPickers();
   $("cMin").value = 1.5; $("cAvg").value = 3.3; $("cMax").value = 5.3;
+  $("spinSpeed").value = (DB.settings && DB.settings.spin) || "normal";
+  $("spinSpeed").addEventListener("change", () => {
+    DB.settings.spin = $("spinSpeed").value;
+    save();
+  });
   renderTickets();
 })();
