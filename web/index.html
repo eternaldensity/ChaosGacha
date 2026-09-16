@@ -19,6 +19,8 @@
 <meta name="twitter:image" content="https://eternaldensity.github.io/ChaosGacha/social/social.png">
 <title>Chaos Gacha — Web Apps</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -47,5 +49,6 @@
   <div>Disclaimer: I do not own, nor have any claim over any of the entries from the gacha that come from other works.</div>
   <div>Original Chaos Gacha by <a href="https://www.chaosgacha.com/" target="_blank" rel="noopener">BronzDeck</a></div>
 </footer>
+<script>if (typeof navigator !== "undefined" && "serviceWorker" in navigator) { addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); }); }</script>
 </body>
 </html>

@@ -19,6 +19,8 @@
 <meta name="twitter:image" content="https://eternaldensity.github.io/ChaosGacha/social/social-gacha.png">
 <title>Chaos Gacha</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="stylesheet" href="css/app.css">
 <style>
 .preset-grid, .cat-grid { display: grid; gap: 8px; }
@@ -90,7 +92,10 @@
       </div>
       <label style="margin-top:8px">Category</label>
       <div class="cat-grid" id="catGrid"></div>
-      <div style="margin-top:12px"><button class="primary" id="rollBtn">ROLL</button></div>
+      <div style="margin-top:12px" class="row">
+        <button class="primary" id="rollBtn">ROLL</button>
+        <button id="btnMulti" title="Ten quick rolls at once (no spin animation)">×10</button>
+      </div>
     </div>
     <details class="card" id="filterBox">
       <summary>Filters &amp; options</summary>
@@ -131,6 +136,13 @@
     <div class="card" id="resultCard" style="display:none">
       <h2>Result</h2>
       <div class="result" id="resultBody"></div>
+      <div class="row" style="margin-top:8px">
+        <button id="btnCopy" title="Copy result as text for chats">📋 Copy</button>
+      </div>
+    </div>
+    <div class="card" id="multiCard" style="display:none">
+      <h2>Multi-pull <span class="muted small" id="multiHead"></span></h2>
+      <ul class="list" id="multiList"></ul>
     </div>
     <div class="card">
       <h2>My tickets <span class="muted small" id="ticketCount"></span></h2>
@@ -144,6 +156,10 @@
   </section>
 
   <section class="tabpage" id="tab-history">
+    <div class="card">
+      <h2>Stats</h2>
+      <div class="small" id="statBody"><span class="muted">No rolls yet.</span></div>
+    </div>
     <div class="card">
       <div class="row">
         <h2 style="flex:1">History <span class="muted small" id="histCount"></span></h2>
@@ -163,6 +179,7 @@
   <button data-tab="history"><span class="ico">📜</span>History</button>
 </nav>
 <div id="toast" class="toast" style="display:none"></div>
+<script>if (typeof navigator !== "undefined" && "serviceWorker" in navigator) { addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); }); }</script>
 <footer class="sitefoot">
   <div>Disclaimer: I do not own, nor have any claim over any of the entries from the gacha that come from other works.</div>
   <div>Original Chaos Gacha by <a href="https://www.chaosgacha.com/" target="_blank" rel="noopener">BronzDeck</a></div>

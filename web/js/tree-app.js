@@ -40,7 +40,7 @@
         return db;
       }
     } catch (e) { /* corrupted -> fresh */ }
-    return { trees: [], states: {}, activeId: null };
+    return { trees: [], states: {}, activeId: null, guideSeen: false };
   }
   function saveDB() {
     try { localStorage.setItem(LS_KEY, JSON.stringify(DB)); }
@@ -104,7 +104,7 @@
     document.querySelectorAll(".tabpage").forEach(p =>
       p.classList.toggle("active", p.id === "tab-" + name));
     if (name === "view3d") requestAnimationFrame(draw3D);
-    if (name === "node") renderNode();
+    if (name === "node") { renderNode(); renderFinder(); }
     if (name === "owned") renderOwned();
     if (name === "tickets") renderTickets();
     if (name === "trees") renderTrees();
@@ -193,6 +193,33 @@
       li.appendChild(actions);
       ul.appendChild(li);
     }
+    updateProgress();
+  }
+
+  async function updateProgress() {
+    const box = $("progCard");
+    const t = activeTree();
+    if (!t) { box.style.display = "none"; return; }
+    const myId = t.id;
+    let rt;
+    try { rt = await getRuntime(t); } catch (e) { box.style.display = "none"; return; }
+    if (DB.activeId !== myId) return; // switched away mid-flight
+    const st = activeState();
+    const total = rt.nodes.length, have = st.unlocked.length;
+    const pct = Math.round(have / Math.max(1, total) * 100);
+    $("progHead").textContent = `${have}/${total} (${pct}%) — ${t.name}`;
+    $("progBar").style.width = pct + "%";
+    const byFile = {}, byClass = {};
+    for (const id of st.unlocked) {
+      const nd = rt.byId[id];
+      if (!nd) continue;
+      byFile[nd.file] = (byFile[nd.file] || 0) + 1;
+      const cn = classOf(nd.rarity).name;
+      byClass[cn] = (byClass[cn] || 0) + 1;
+    }
+    const escJoin = ent => ent.map(([k, v]) => `${k} ${v}`).join(" · ");
+    $("progBody").textContent = escJoin(Object.entries(byFile)) + " — " + escJoin(Object.entries(byClass));
+    box.style.display = "block";
   }
 
   // Copy keeps the definition and duplicates progress; fresh keeps the
@@ -699,6 +726,55 @@
     draw3D();
   });
 
+  // ---- node finder ------------------------------------------------------------
+  // Rotate the camera to face a node head-on (it then projects to center).
+  function faceCamera(rt, nid) {
+    const p = rt.byId[nid].pos;
+    const rxz = Math.hypot(p[0], p[2]);
+    if (rxz < 1e-9) return; // at the origin: already centered
+    cam.yaw = Math.atan2(p[0], p[2]);
+    cam.pitch = Math.max(-1.4, Math.min(1.4, Math.atan2(p[1], rxz)));
+  }
+  async function renderFinder() {
+    const ul = $("findList");
+    ul.innerHTML = "";
+    const c = await current();
+    if (!c) return;
+    const q = ($("findQ").value || "").trim().toLowerCase();
+    if (q.length < 2) {
+      ul.innerHTML = "<li class='muted'>Type at least 2 characters.</li>";
+      return;
+    }
+    const hits = c.rt.nodes
+      .filter(nd => nd.id !== 0 && nd.name.toLowerCase().includes(q))
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .slice(0, 15);
+    if (!hits.length) {
+      ul.innerHTML = "<li class='muted'>No matches.</li>";
+      return;
+    }
+    for (const nd of hits) {
+      const li = document.createElement("li");
+      li.innerHTML = `<div class="grow"><b>#${nd.id} ${esc(nd.name)}</b> ` +
+        `<span class="pill">${esc(nd.file)} ${nd.rarity}</span><br>` +
+        `<span class="muted small">${esc(nd.source || "—")}${c.st.unlocked.includes(nd.id) ? " · unlocked" : ""}</span></div>`;
+      li.style.cursor = "pointer";
+      li.addEventListener("click", () => { selectedId = nd.id; showTab("node"); });
+      const go = document.createElement("button");
+      go.textContent = "View";
+      go.title = "Face the camera at this node";
+      go.addEventListener("click", (ev) => {
+        if (ev.stopPropagation) ev.stopPropagation();
+        selectedId = nd.id;
+        faceCamera(c.rt, nd.id);
+        lastFitKey = "finder"; // keep this framing until the tree changes
+        showTab("view3d");
+      });
+      li.appendChild(go);
+      ul.appendChild(li);
+    }
+  }
+
   // ---- node tab (detail + 2D neighbours) --------------------------------------
   function shortName(s) {
     s = String(s == null ? "" : s);
@@ -854,6 +930,7 @@
     }
     let rows = ownedRows(rt, st);
     const q = ($("ownQ").value || "").trim().toLowerCase();
+    if (typeof console !== "undefined" && console.log) console.log("DBG renderOwned q=" + JSON.stringify(q) + " unlocked=" + st.unlocked.length);
     const cat = $("ownCat").value || "";
     if (q) rows = rows.filter(r =>
       r.nd.name.toLowerCase().includes(q) ||
@@ -922,6 +999,7 @@
     const inv = $("invList"), meta = $("metaBox");
     if (!c) {
       inv.innerHTML = "<li class='muted'>No tree selected.</li>";
+      $("unlockList").innerHTML = "<li class='muted'>No tree selected.</li>";
       return;
     }
     const { st, rt } = c;
@@ -1112,6 +1190,44 @@
       addMeta("Reshuffle (unlimited)", "Shuffle at a quarter of the node's points cost.", row);
     }
     if (!any) meta.innerHTML = "<span class='muted small'>Unlock tree-meta nodes (Sight, Graft, Chaos Die…) to gain abilities.</span>";
+
+  // Frontier nodes, cheapest first, with one-tap unlock.
+  async function renderUnlockable(c) {
+    const box = $("unlockList");
+    box.innerHTML = "";
+    const { st, rt } = c;
+    const ids = [...E.frontier(rt, st.unlocked)].filter(id => id !== 0);
+    ids.sort((a, b) => E.nodeCostFor(st, rt, a) - E.nodeCostFor(st, rt, b));
+    if (!ids.length) {
+      box.innerHTML = "<li class='muted'>Nothing on the frontier — reach further with tickets.</li>";
+      return;
+    }
+    for (const id of ids.slice(0, 30)) {
+      const nd = rt.byId[id];
+      const cost = E.nodeCostFor(st, rt, id);
+      const ok = st.cores >= 1 && st.points >= cost;
+      const li = document.createElement("li");
+      li.innerHTML = `<div class="grow"><b>${esc(nd.name)}</b> ` +
+        `<span class="pill">${esc(nd.file)} ${nd.rarity}</span><br>` +
+        `<span class="muted small">${E.fmt(cost)} pts + 1 core</span></div>`;
+      const b = document.createElement("button");
+      b.textContent = "Unlock";
+      b.className = "primary";
+      b.disabled = !ok;
+      b.title = ok ? `Unlock ${nd.name}` : (st.cores < 1 ? "Needs 1 core (award a ticket)" : `Needs ${E.fmt(cost)} pts`);
+      b.addEventListener("click", async () => {
+        const done = await mutate(({ st, rt }) => E.unlock(st, rt, id));
+        if (done) toast(`Unlocked ${nd.name}.`);
+      });
+      li.appendChild(b);
+      box.appendChild(li);
+    }
+    if (ids.length > 30) {
+      const li = document.createElement("li");
+      li.innerHTML = `<span class="muted small">…and ${ids.length - 30} more (pricier).</span>`;
+      box.appendChild(li);
+    }
+  }
     const surveyed = E.surveyNames(rt, st.unlocked, m);
     if (surveyed.length) {
       const d = document.createElement("details");
@@ -1132,23 +1248,31 @@
       d.appendChild(ul);
       meta.appendChild(d);
     }
+    await renderUnlockable(c);
   }
 
   $("btnAward").addEventListener("click", async () => {
     const tier = $("tkTier").value, kind = $("tkKind").value;
     const n = parseInt($("tkN").value, 10) || 2;
     const cat = $("tkCat").value;
+    const count = Math.max(1, Math.min(10, parseInt($("tkCount").value, 10) || 1));
     let spec = tier;
     if (kind === "skip") spec = `${tier} skip${n}`;
     else if (kind === "jump") spec = `${tier} ${cat} jump`;
     else if (kind === "choice") spec = `${tier} choice ${n} jump`;
     else if (kind === "hop") spec = `${tier} hop`;
+    let totalPts = 0;
     const ok = await mutate(({ st, rt }) => {
       const m = E.viewState(rt, st);
-      const echoLeft = m.echo - (st.echo_used || 0);
-      E.award(st, spec, m.ticket_bonus, echoLeft > 0);
+      let echoLeft = m.echo - (st.echo_used || 0);
+      for (let i = 0; i < count; i++) {
+        const useEcho = echoLeft > 0;
+        const r = E.award(st, spec, m.ticket_bonus, useEcho);
+        if (useEcho) echoLeft--;
+        totalPts += r.pts;
+      }
     });
-    if (ok) { toast(`Awarded ${spec}.`); }
+    if (ok) toast(`Awarded ${count}× ${spec}: +${count} core${count === 1 ? "" : "s"}, +${E.fmt(totalPts)} pts.`);
   });
 
   $("btnTrace").addEventListener("click", async () => {
@@ -1177,6 +1301,13 @@
 
   // ---- boot ---------------------------------------------------------------
   fillTicketForm();
+  if (!DB.guideSeen) $("guideCard").style.display = "block";
+  $("btnGuideOk").addEventListener("click", () => {
+    DB.guideSeen = true;
+    saveDB();
+    $("guideCard").style.display = "none";
+  });
+  $("findQ").addEventListener("input", () => { if (currentTab === "node") renderFinder(); });
   $("fileChecks").innerHTML = "";
   for (const f of ["ability", "item", "skill", "trait", "familiar"]) {
     const lab = document.createElement("label");

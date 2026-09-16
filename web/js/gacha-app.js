@@ -36,6 +36,14 @@
   }
   let DB = load();
   const uid = () => Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
+  let lastResult = null;
+
+  function resultText(r) {
+    const cls = G.rarityClass(DATA.classes, r.rarity);
+    return `🎰 ${r.name} (${r.rarity}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""})`;
+  }
+  window.__gacha = window.__gacha || {};
+  window.__gacha.resultText = resultText;
 
   // tabs
   document.querySelectorAll("#tabs button").forEach(b =>
@@ -165,10 +173,12 @@
     $("tkCat").innerHTML = CATS.map(c => `<option>${c}</option>`).join("");
   }
 
-  function showResult(r) {
+  function showResult(r, keepMulti) {
+    lastResult = r;
     const cls = G.rarityClass(DATA.classes, r.rarity);
     $("resultCard").style.display = "block";
     $("resultCard").style.boxShadow = `0 0 32px ${cls.color}44, var(--shadow)`;
+    if (!keepMulti) $("multiCard").style.display = "none";
     $("resultBody").innerHTML =
       `<div class="small" style="color:${esc(cls.color)}">— ${esc(cls.name)} ${esc(r.category)}${r.source ? " [" + esc(r.source) + "]" : ""} —</div>` +
       `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${r.rarity}</div>` +
@@ -265,6 +275,64 @@
     doRoll(min, max, avg, category, null);
   });
 
+  $("btnMulti").addEventListener("click", () => {
+    if (spinning) return;
+    const min = parseFloat($("cMin").value), avg = parseFloat($("cAvg").value), max = parseFloat($("cMax").value);
+    if (!(min < max) || isNaN(avg)) return toast("Need min < max and a numeric avg.", true);
+    const F = collectFilters();
+    if (F.dedup) F.exclude = DB.history.map(h => h.name);
+    const results = [];
+    try {
+      for (let i = 0; i < 10; i++) {
+        if (F.dedup) F.exclude = DB.history.map(h => h.name).concat(results.map(r => r.name));
+        results.push(G.roll(DATA.entries, DATA.tiers, category, min, max, avg, F));
+      }
+    } catch (e) { toast(e.message + (results.length ? ` (${results.length} landed first)` : ""), true); }
+    if (!results.length) return;
+    const stamped = results.map(r => Object.assign({ id: uid(), at: Date.now(), min, max, avg }, r));
+    DB.history.unshift(...stamped);
+    if (DB.history.length > 500) DB.history.length = 500;
+    save(); renderTickets(); renderStats();
+    let best = results[0];
+    for (const r of results) if (r.rarity > best.rarity) best = r;
+    showResult(best);
+    $("multiHead").textContent = `best of 10 below`;
+    const ul = $("multiList");
+    ul.innerHTML = "";
+    results.slice().sort((a, b) => b.rarity - a.rarity).forEach(r => {
+      const cls = G.rarityClass(DATA.classes, r.rarity);
+      const li = document.createElement("li");
+      li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
+        `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${r.rarity}</span>` +
+        (r === best ? ` <span class="pill" style="border-color:var(--accent);color:var(--accent)">★ best</span>` : "") +
+        `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
+      const b = document.createElement("button");
+      b.textContent = "👁";
+      b.addEventListener("click", () => showResult(r, true));
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+    $("multiCard").style.display = "block";
+  });
+
+  $("btnCopy").addEventListener("click", async () => {
+    if (!lastResult) return;
+    const t = resultText(lastResult);
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(t);
+      } else {
+        const ta = document.createElement("textarea");
+        ta.value = t;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      toast("Copied!");
+    } catch (e) { toast("Copy failed.", true); }
+  });
+
   $("btnAddTicket").addEventListener("click", () => {
     DB.tickets.push({ id: uid(), tier: $("tkTier").value, cat: $("tkCat").value });
     save(); renderTickets();
@@ -291,7 +359,28 @@
     }
   }
 
+  function renderStats() {
+    const box = $("statBody");
+    const h = DB.history;
+    if (!h.length) { box.innerHTML = "<span class='muted'>No rolls yet.</span>"; return; }
+    let best = h[0];
+    const byClass = {};
+    for (const r of h) {
+      if (r.rarity > best.rarity) best = r;
+      const cn = G.rarityClass(DATA.classes, r.rarity).name;
+      byClass[cn] = (byClass[cn] || 0) + 1;
+    }
+    const bc = G.rarityClass(DATA.classes, best.rarity);
+    box.innerHTML =
+      `<div class="kv"><span class="k">Rolls</span><b>${h.length}</b></div>` +
+      `<div class="kv"><span class="k">Best</span><b><span class="dot" style="background:${esc(bc.color)}"></span>${esc(best.name)} (${best.rarity})</b></div>` +
+      `<div style="margin-top:4px">` +
+      Object.entries(byClass).map(([k, v]) => `<span class="pill" style="margin:2px">${esc(k)}×${v}</span>`).join("") +
+      `</div>`;
+  }
+
   function renderHistory() {
+    renderStats();
     $("histCount").textContent = DB.history.length ? `(${DB.history.length})` : "";
     const ul = $("histList");
     ul.innerHTML = DB.history.length ? "" : "<li class='muted'>No rolls yet.</li>";

@@ -19,6 +19,8 @@
 <meta name="twitter:image" content="https://eternaldensity.github.io/ChaosGacha/social/social-tree.png">
 <title>Chaos Tree</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -30,6 +32,25 @@
 <main>
   <section class="tabpage" id="tab-trees">
     <div class="card" id="verWarn" style="display:none;border-color:var(--bad)">
+      <b>⚠ Data version mismatch.</b> <span id="verWarnText" class="small"></span>
+    </div>
+    <div class="card" id="guideCard" style="display:none;border-color:var(--accent)">
+      <h2>How to play</h2>
+      <div class="small">
+        1. 🌳 The <b>Origin root</b> (sphere centre) is free and already unlocked.<br>
+        2. 🎟 <b>Award tickets</b> (Tickets tab) — each gives 1 core + points for a shared wallet.<br>
+        3. 🔓 <b>Unlock</b> glowing frontier nodes next to yours (1 core + points each).<br>
+        4. 🎫 <b>Special tickets</b> (skip / jump / hop) reach distant nodes.<br>
+        5. ✨ Unlock <b>tree-meta nodes</b> (Sight, Graft, Chaos Die…) for powers.<br>
+        6. 💾 Progress saves automatically; export backups from below.
+      </div>
+      <div style="margin-top:8px"><button id="btnGuideOk" style="width:100%">Got it</button></div>
+    </div>
+    <div class="card" id="progCard" style="display:none">
+      <h2>Progress <span class="muted small" id="progHead"></span></h2>
+      <div class="progress"><div id="progBar"></div></div>
+      <div class="small muted" id="progBody" style="margin-top:6px"></div>
+    </div>
       <b>⚠ Data version mismatch.</b> <span id="verWarnText" class="small"></span>
     </div>
     <div class="card">
@@ -152,6 +173,13 @@
   </section>
 
   <section class="tabpage" id="tab-node">
+    <div class="card">
+      <h2>Find node</h2>
+      <div class="row">
+        <div><input type="search" id="findQ" placeholder="name contains…"></div>
+      </div>
+      <ul class="list" id="findList"></ul>
+    </div>
     <div class="card" id="nodeCard"><h2>No node selected</h2>
       <p class="muted">Pick a node in the 3D view or from a list below.</p></div>
     <div class="card">
@@ -190,6 +218,10 @@
     <div class="card">
       <h2>Award tickets</h2>
       <div class="row">
+        <div><label for="tkCount">Count</label>
+          <select id="tkCount"><option value="1">×1</option><option value="5">×5</option><option value="10">×10</option></select></div>
+      </div>
+      <div class="row">
         <div><label for="tkTier">Tier</label><select id="tkTier"></select></div>
         <div><label for="tkKind">Kind</label>
           <select id="tkKind">
@@ -206,6 +238,11 @@
         <div><label for="tkCat">Category (jump)</label><select id="tkCat"></select></div>
       </div>
       <div style="margin-top:10px"><button class="primary" id="btnAward" style="width:100%">Award ticket</button></div>
+    </div>
+    <div class="card">
+      <h2>Unlockable now</h2>
+      <div class="muted small">Frontier nodes, cheapest first.</div>
+      <ul class="list" id="unlockList"></ul>
     </div>
     <div class="card">
       <h2>Inventory &amp; actions</h2>
@@ -235,6 +272,7 @@
   <button data-tab="tickets"><span class="ico">🎟</span>Tickets</button>
 </nav>
 <div id="toast" class="toast" style="display:none"></div>
+<script>if (typeof navigator !== "undefined" && "serviceWorker" in navigator) { addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); }); }</script>
 <footer class="sitefoot">
   <div>Disclaimer: I do not own, nor have any claim over any of the entries from the gacha that come from other works.</div>
   <div>Original Chaos Gacha by <a href="https://www.chaosgacha.com/" target="_blank" rel="noopener">BronzDeck</a></div>

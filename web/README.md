@@ -7,6 +7,8 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   explanation); Preview renders the current settings into the 3D view with
   summary stats so parameters can be tuned live before generating.
   Node colour encodes rarity tier (see the legend under the 3D view).
+  Play aids: unlockable-now list, bulk ticket awards, node finder, sortable
+  owned-nodes table, progress snapshot, first-run guide.
   Progress is saved per tree in `localStorage`; export/import moves a tree
   plus its progress as one JSON file (Python `chaos-tree` JSONs import too).
   Includes a canvas 3D view of visible nodes/connections, an SVG
@@ -18,7 +20,9 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   parameters, new progress). Each tree records the data version it was
   generated with; a mismatch warns that regeneration may differ.
 - `gacha.html` — Chaos Gacha roller with the same presets/odds as the
-  desktop app, a ticket wallet, roll history, and history import/export.
+  desktop app, a ticket wallet, roll history, spin-wheel animation with
+  adjustable slowdown, filters, ×10 multi-pull, result sharing, history
+  stats, and history import/export.
 
 Serve the `web/` directory over HTTP (e.g. `python3 -m http.server` inside
 `web/`) and open `tree.html` / `gacha.html`. `entries.js` is loaded with a
