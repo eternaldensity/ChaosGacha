@@ -1944,3 +1944,15 @@
 #The Chitauri sceptre housing the Mind Stone, bending minds and firing energy alike.
 973. Staff of the Living Tribunal, 4.6, MCU
 #A mystic staff that cracks the ground with golden force and pries open sealed things.
+974. TemPad, 5.8, MCU
+#A TVA time-pad that opens Time Doors to anywhen; pruning charges not included.
+975. TVA Pruning Baton, 4.6, MCU
+#A TVA baton that prunes branched timelines, variant clutter, and people, all with one touch.
+976. Reset Charge, 5.2, MCU
+#A timeline-nuking charge that prunes a whole branched reality back to the Sacred Timeline.
+977. Yaka Arrow, 4.4, MCU
+#A whistle-guided Yaka arrow that carves through targets and curves back to hand.
+978. Yondu's Fin, 3.8, MCU
+#The head-mounted Centaurian fin that conducts the Yaka arrow by whistle alone.
+979. Photostatic Veil, 3.4, MCU
+#A Black Widow mesh mask that wears anyone's face well enough to fool scanners.

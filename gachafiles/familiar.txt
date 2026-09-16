@@ -1016,3 +1016,5 @@
 #A mechanical beaver golem that works around the clock without food or rest.
 509. Goose the Flerken, 4.4, MCU
 #A perfectly ordinary cat who is secretly a Flerken, with pocket dimensions and tentacles inside.
+510. Miss Minutes, 3.2, MCU
+#The TVA's cheerful cartoon-clock mascot AI, happy to explain the rules while locking the doors.
