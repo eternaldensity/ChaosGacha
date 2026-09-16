@@ -1956,3 +1956,5 @@
 #The head-mounted Centaurian fin that conducts the Yaka arrow by whistle alone.
 979. Photostatic Veil, 3.4, MCU
 #A Black Widow mesh mask that wears anyone's face well enough to fool scanners.
+980. CPH4, 5.2, Lucy
+#A packet of synthetic blue crystals that unlocks escalating brain capacity: perfect recall, telepathy, then matter and time itself. Unstable, leaks, and past a point there is no coming back.
