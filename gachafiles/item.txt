@@ -84,8 +84,8 @@
 #Chains of Heaven that suppress even gods, manifested anytime and controlled mentally. Stronger against holier or more divine targets.
 43. A pair of very comfortable socks, 0.1, Generic
 #Very comfortable socks. Rolling this from the multiverse's treasures deserves pity.
-44. Character Card Destiny's Child, 5.6, Generic
-#Legendary Mechanic - Predicts a future 'opportunity' like a mission, item, or person's action with accurate detail. Has 5 uses, then fades.
+44. Character Card Destiny's Child, 5.6, Legendary Mechanic
+#Predicts a future 'opportunity' like a mission, item, or person's action with accurate detail. Has 5 uses, then fades.
 45. HF Murasama, 4.7, Metal Gear Rising Revengeance
 #(Tech) Crimson expert High Frequency blade, best of its kind, cutting practically any physical material. Includes a gunslash for Iai moves; sheath has infinite charge.
 46. Playful Cloud, 4.1, Jujutsu Kaisen
@@ -1749,9 +1749,9 @@
 875. Gas Mask, 2.2, Satisfactory
 #Breathe easy in poison-pillared zones while the filter holds out.
 876. Mercer Sphere, 5.4, Satisfactory
-#A humming alien artifact of unknown purpose that the hub desperately wants scanned.
+#A humming alien artifact. Research it in the MAM to unlock alien technology, starting with extra personal inventory slots.
 877. Somersloop, 5.6, Satisfactory
-#An impossible looping doodad that overclocks any machine it touches.
+#An impossible looping doodad; slot it into a machine to double that machine's output.
 878. Analysis Visor, 2.6, No Man's Sky
 #Tag flora, fauna, and minerals through your visor; uploads pay out in Nanites.
 879. Terrain Manipulator, 3.4, No Man's Sky
@@ -1853,7 +1853,7 @@
 927. Service Weapon, 5.0, Control
 #The Director's shapeshifting gun: Spin, Grip, Shatter, Pierce, and Charge forms in one impossible object.
 928. Hotline, 4.4, Control
-#A red Bakelite phone that calls the Board directly, geometry optional.
+#A red Bakelite phone that calls the Board directly, geometry optional. The Board answers in cryptic instructions, sideways comments, and fragments of backstory that turn out to matter later.
 929. Hedron Resonance Amplifier, 4.6, Control
 #Wearable Hedron tech that shields the mind from Hiss resonance.
 930. Vacpack, 3.0, Slime Rancher

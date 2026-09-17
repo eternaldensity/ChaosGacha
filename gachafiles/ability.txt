@@ -1,5 +1,5 @@
 1. Tinder, 1.3, Generic
-#Produce and control weak flames about as strong as matchsticks or bonfires.
+#Produce and control weak little flames, never stronger than matchsticks and candle flames.
 2. Ember, 2.3, Generic
 #Produce and control moderate flames that can be shaped into attacks like fireballs and fire arrows.
 3. Blaze, 3.3, Generic
@@ -534,16 +534,16 @@
 #Conjure and control weaker small-scale virtual black holes. With training, you can conjure real black holes.
 268. Void Dragon's Breath, 4.0, Generic
 #Charge and unleash erosive void breath that drains the energy of what it touches. Longer charge and more energy mean a stronger breath.
-269. Void Mirror Image, 1.5, Generic
-#Legendary Mechanic - Conjure controlled clones of yourself that cannot interact with the world and serve as distractions.
-270. Void Travel, 3.9, Generic
-#Legendary Mechanic - Slip into the void dimension to traverse space without interacting with the real world; time flows slower there. Distance covered equals real distance for short-range teleportation. 30-second stay, increasable with training. 5 Minute cooldown.
-271. Chaos Entity Release, 5.1, Generic
-#Legendary Mechanic - Release physical form to become a Void Observer, a sentient grey energy cloud that slips into the void at will, intangible yet able to observe reality. Staying inside slowly drains energy and grants near-immunity to physical force, but damage taken reflects onto your real body.
-272. Void Path, 6.4, Generic
-#Legendary Mechanic - Open gates to the Void Dimension to traverse it, banish entities inside, or bring entities out. Use with caution.
-273. Void Distorter Form, 5.9, Generic
-#Legendary Mechanic - Transform into a Void Distorter, a Void-native being that distorts and shapes void to ravage the natural world with spatial distortions. Can also use Void Travel.
+269. Void Mirror Image, 1.5, Legendary Mechanic
+#Conjure controlled clones of yourself that cannot interact with the world and serve as distractions.
+270. Void Travel, 3.9, Legendary Mechanic
+#Slip into the void dimension to traverse space without interacting with the real world; time flows slower there. Distance covered equals real distance for short-range teleportation. 30-second stay, increasable with training. 5 Minute cooldown.
+271. Chaos Entity Release, 5.1, Legendary Mechanic
+#Release physical form to become a Void Observer, a sentient grey energy cloud that slips into the void at will, intangible yet able to observe reality. Staying inside slowly drains energy and grants near-immunity to physical force, but damage taken reflects onto your real body.
+272. Void Path, 6.4, Legendary Mechanic
+#Open gates to the Void Dimension to traverse it, banish entities inside, or bring entities out. Use with caution.
+273. Void Distorter Form, 5.9, Legendary Mechanic
+#Transform into a Void Distorter, a Void-native being that distorts and shapes void to ravage the natural world with spatial distortions. Can also use Void Travel.
 274. Abyssal Jail, 5.2, Generic
 #Manifest Abyss in the natural world to trap entities in a localized Abyss that isolates and drains their energy and vitality. Breaking out by force is possible but incredibly difficult.
 275. Abyss Skin, 3.8, Generic
@@ -830,8 +830,8 @@
 #Revive an entity dead no longer than you have been alive. Requires sacrifices like money, valuables, or artefacts scaling with target strength, doubled for unwilling targets.
 416. Blast Mark, 4.8, Generic
 #Mark objects with a rune you can charge with energy to detonate at any time. Explosion power scales with energy spent; stored energy fades over time.
-417. Carbon Manipulation, 6.8, Generic
-#Legendary Mechanic - Telekinetically sense and control carbon down to a molecular level. Controlling carbon inside living creatures is harder based on their power relative to yours.
+417. Carbon Manipulation, 6.8, Legendary Mechanic
+#Telekinetically sense and control carbon down to a molecular level. Controlling carbon inside living creatures is harder based on their power relative to yours.
 418. Soul Read, 2.9, JoJo
 #Ask a soul yes-or-no questions it must answer truthfully. Cannot be used on targets stronger than you.
 419. Emergency Exit, 2.5, Generic
@@ -1610,8 +1610,8 @@
 #Enchant items from your abilities and traits, e.g. pyrokinesis grants fire enchantments, or imbue the power itself as limited-use consumables. Strength depends on item and power level.
 806. Greater Enchanting, 5.3, Generic
 #Lets you enchant items based on your abilities and traits, granting related effects or imbuing the ability itself as limited uses. Enchantment strength scales with the item and your power level.
-807. Esper Silence, 5.4, Generic
-#Legendary Mechanic - Lets you disable a target's ability by touching them. Duration scales with power difference, minimum 3 seconds. 5-minute cooldown.
+807. Esper Silence, 5.4, Legendary Mechanic
+#Lets you disable a target's ability by touching them. Duration scales with power difference, minimum 3 seconds. 5-minute cooldown.
 808. Flawed Return, 5.1, Generic
 #Lets you rewind time up to 5 minutes with a 10-minute cooldown. Your body rewinds too, so injuries and exhaustion carry over.
 809. Save & Load, 9.0, Generic
@@ -2312,10 +2312,10 @@
 #This tinker ability lets you design and build technology related to vehicles, including impossible supernatural ones. Examples include a sound-speed ship that does not shake, an air-riding motorcycle via hard light, a sports car 10x better armored than a tank with a year of fuel efficiency, or a killdozer rivaling the Batmobile.
 1160. Fumofication, 5.2, Generic
 #Touch a target to turn them into a fumo immune to all damage, though they still feel everything done to them. Stronger targets can resist, and duration scales with energy expended and power difference. You cannot Fumo someone for 1 hour after they awaken from the effect.
-1161. Void Shadow, 2.2, Generic
-#Legendary Mechanic - Conjure an invulnerable shadow copy of yourself that cannot interact with the world. It moves extremely fast, can disrupt others' vision, and lets you see through its eyes. Lasts 30 minutes at base, one at a time; duration can be increased by training.
-1162. Void Distortion, 5.9, Generic
-#Legendary Mechanic - Pull on the Void Dimension to cause spatial disruptions in the material world. It inflicts massive devastation and damage in exchange for incredibly taxing energy expenditure.
+1161. Void Shadow, 2.2, Legendary Mechanic
+#Conjure an invulnerable shadow copy of yourself that cannot interact with the world. It moves extremely fast, can disrupt others' vision, and lets you see through its eyes. Lasts 30 minutes at base, one at a time; duration can be increased by training.
+1162. Void Distortion, 5.9, Legendary Mechanic
+#Pull on the Void Dimension to cause spatial disruptions in the material world. It inflicts massive devastation and damage in exchange for incredibly taxing energy expenditure.
 1163. Choices & Choices, 4.3, Generic
 #When you need to make a choice, activate to view up to 3 relevant choices and their vague outcomes. For example, [We shouldn't go +reputation with X --Reputation with Y, Z Dies].
 1164. Tinker - Resources, 3.6, Generic
