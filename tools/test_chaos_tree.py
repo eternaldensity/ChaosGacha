@@ -453,7 +453,304 @@ def test_meta2():
     print("meta2-node tests passed")
 
 
+def _shake_tree():
+    """Small tree: Shake unlocked; locked nodes pair up in two rarity bands."""
+    P = lambda x, y: [x * 10, y * 10, 0.0]
+    nodes = [
+        {"id": 0, "name": "Origin", "rarity": 0, "file": "__root__",
+         "source": "", "description": "", "pos": P(0, 0)},
+        {"id": 1, "name": "Shaker", "rarity": 6.0, "file": "item",
+         "source": "Generic", "description": "(Meta:shake)", "pos": P(0.6, 0)},
+        {"id": 2, "name": "Anchor", "rarity": 1.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.1, 0)},
+        {"id": 3, "name": "Cee", "rarity": 1.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.3, 0)},
+        {"id": 4, "name": "Dee", "rarity": 1.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.35, 0)},
+        {"id": 5, "name": "Eee", "rarity": 2.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.4, 0)},
+        {"id": 6, "name": "Eff", "rarity": 2.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.45, 0)},
+    ]
+    edges = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6)]
+    return make_tree(nodes, edges)
+
+
+def test_meta3():
+    import copy
+
+    # shake: locked entries permute within rarity bands, the rest stays put
+    tree = _shake_tree()
+    pristine = copy.deepcopy(tree["nodes"])
+    adj_before = {k: set(v) for k, v in tree["adj"].items()}
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1, 2]
+    assert cu.view_state(tree, st)["shake"] == 1
+    n = cu.use_shake(st, tree)
+    assert n == 2  # {3,4} and {5,6} each swap once
+    by = tree["by_id"]
+    assert by[3]["name"] == "Dee" and by[4]["name"] == "Cee"
+    assert by[5]["name"] == "Eff" and by[6]["name"] == "Eee"
+    for u in (0, 1, 2):  # unlocked entries untouched
+        assert by[u]["name"] == pristine[u]["name"]
+    for nd in tree["nodes"]:  # positions, links, per-spot rarity kept
+        assert nd["pos"] == pristine[nd["id"]]["pos"]
+        assert abs(nd["rarity"] - pristine[nd["id"]]["rarity"]) <= 0.05 + 1e-9
+    assert tree["adj"] == adj_before
+    assert st["meta_used"]["shake"] == 1
+    assert "charge" in expect_error(cu.use_shake, st, tree)
+
+    # entry swaps persist: a fresh copy + recorded swaps replays identically
+    tree2 = make_tree(copy.deepcopy(pristine),
+                      [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6)])
+    cu.apply_entry_swaps(tree2, st)
+    assert [(nd["id"], nd["name"]) for nd in tree2["nodes"]] == \
+        [(nd["id"], nd["name"]) for nd in tree["nodes"]]
+
+    # shake with no charge (node still locked) and with no pairable nodes
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0]
+    assert "charge" in expect_error(cu.use_shake, st, _shake_tree())
+    lonely = make_tree(
+        [dict(n) for n in _shake_tree()["nodes"][:3]],
+        [(0, 1), (1, 2)])
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    assert "band" in expect_error(cu.use_shake, st, lonely)
+
+    # chaosquake: forced swap proves unlocked nodes keep places, not faces
+    P = lambda x, y: [x * 10, y * 10, 0.0]
+    qnodes = [
+        {"id": 0, "name": "Origin", "rarity": 0, "file": "__root__",
+         "source": "", "description": "", "pos": P(0, 0)},
+        {"id": 1, "name": "Quake", "rarity": 1.0, "file": "item",
+         "source": "Generic", "description": "(Meta:chaosquake)",
+         "pos": P(0.1, 0)},
+        {"id": 2, "name": "Rock", "rarity": 1.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.2, 0)},
+    ]
+    qtree = make_tree(qnodes, [(0, 1), (1, 2)])
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    assert cu.view_state(qtree, st)["chaosquake"] == 1
+    cu.use_chaosquake(st, qtree)
+    assert qtree["by_id"][1]["name"] == "Rock"
+    assert qtree["by_id"][2]["name"] == "Quake"
+    assert qtree["by_id"][0]["name"] == "Origin"  # root never moves
+    assert st["meta_used"]["chaosquake"] == 1
+    assert "charge" in expect_error(cu.use_chaosquake, st, qtree)
+
+    print("meta3-node tests passed")
+
+
+def _gamble_tree():
+    P = lambda x, y: [x * 10, y * 10, 0.0]
+    nodes = [
+        {"id": 0, "name": "Origin", "rarity": 0, "file": "__root__",
+         "source": "", "description": "", "pos": P(0, 0)},
+        {"id": 1, "name": "BronzeDie", "rarity": 1.3, "file": "item",
+         "source": "Generic", "description": "(Meta:gamble:2)",
+         "pos": P(0.13, 0)},
+        {"id": 2, "name": "SilverDie", "rarity": 2.3, "file": "item",
+         "source": "Generic", "description": "(Meta:gamble:4)",
+         "pos": P(0.23, 0)},
+        {"id": 3, "name": "DiamondDie", "rarity": 5.3, "file": "item",
+         "source": "Generic",
+         "description": "(Meta:gamble:10)(Meta:gamble-reroll:1)",
+         "pos": P(0.53, 0)},
+        {"id": 4, "name": "TransDie", "rarity": 9.3, "file": "item",
+         "source": "Generic",
+         "description": "(Meta:gamble:16)(Meta:gamble-twice)",
+         "pos": P(0.93, 0)},
+        {"id": 5, "name": "Twig", "rarity": 0.2, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.1, 0)},
+    ]
+    edges = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+    return make_tree(nodes, edges)
+
+
+class _ScriptedD20:
+    """Monkeypatch cu._d20 with a fixed roll script."""
+    def __init__(self, vals):
+        self.it = iter(vals)
+        self.real = cu._d20
+    def __enter__(self):
+        cu._d20 = lambda: next(self.it)
+        return self
+    def __exit__(self, *a):
+        cu._d20 = self.real
+        return False
+
+
+def test_meta4():
+    tree = _gamble_tree()
+
+    # twin keyword parses order-free and costs no charge
+    assert cu.parse_ticket("gold twin") == ("gold", "plain", {"twin": True})
+    assert cu.parse_ticket("twin silver hop") == (
+        "silver", "hop", {"twin": True})
+    assert cu.parse_ticket("gold twin skip2") == (
+        "gold", "skip", {"n": 2, "twin": True})
+    st = cu.new_state("<synthetic>")
+    cu.award(st, "bronze twin")
+    assert st["cores"] == 2 and abs(st["points"] - 50) < 1e-9
+    cu.award(st, "silver twin hop")
+    assert st["cores"] == 4
+    assert st["inventory"][-1]["twin"] is True
+    assert st["meta_used"].get("gamble", 0) == 0
+
+    # d20 bands and tier-ladder edges
+    bands = {20: "rankUp", 19: "twin", 17: "twin", 16: "changeType",
+             13: "changeType", 12: "nothing", 8: "nothing", 7: "rankDown",
+             2: "rankDown", 1: "destroyed"}
+    for d, e in bands.items():
+        assert cu.gambler_effect(d) == e
+    assert cu._shift_tier(None, +1) == "bronze"
+    assert cu._shift_tier(None, -1) is None
+    assert cu._shift_tier("bronze", -1) is None
+    assert cu._shift_tier("transcendent", +1) == "transcendent"
+    assert cu._shift_tier("gold", +1) == "platinum"
+
+    # derive: charges sum, reroll takes the max, twice is a flag
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1, 2, 3, 4]
+    mv = cu.view_state(tree, st)
+    assert mv["gamble"] == 32 and mv["gamble_reroll"] == 1
+    assert mv["gamble_twice"] is True
+
+    # gambling with no dice and without a tree both fail cleanly
+    st = cu.new_state("<synthetic>")
+    assert "charge" in expect_error(cu.award, st, "gold",
+                                    **{"gamble": True, "tree": tree})
+    assert "tree" in expect_error(cu.award, st, "gold", **{"gamble": True})
+
+    # rankUp spends one charge and shifts the payout tier
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    with _ScriptedD20([20]):
+        tier, kind, params = cu.award(st, "bronze", gamble=True, tree=tree)
+    assert tier == "silver" and abs(st["points"] - 500) < 1e-9
+    assert st["cores"] == 1 and st["meta_used"]["gamble"] == 1
+    assert params["d20"] == 20 and params["geffect"] == "rankUp"
+    with _ScriptedD20([10]):
+        cu.award(st, "bronze", gamble=True, tree=tree)
+    assert st["meta_used"]["gamble"] == 2
+    assert "charge" in expect_error(cu.award, st, "bronze",
+                                    **{"gamble": True, "tree": tree})
+
+    # rolled twin stamps the inventory ticket and doubles the cores
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    with _ScriptedD20([18]):
+        tier, kind, params = cu.award(st, "silver hop",
+                                      gamble=True, tree=tree)
+    assert st["cores"] == 2 and kind == "hop"
+    assert st["inventory"][-1]["twin"] is True
+    assert st["inventory"][-1]["d20"] == 18
+
+    # changeType swaps kind (never the same) with consistent fresh params
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    with _ScriptedD20([13]):
+        tier, kind, params = cu.award(st, "silver skip2",
+                                      gamble=True, tree=tree)
+    assert kind in ("plain", "jump", "choice", "hop")
+    if kind == "skip":
+        raise AssertionError("changeType must pick a different kind")
+    if kind == "jump":
+        assert params["category"] in cu.CATEGORIES
+    elif kind == "choice":
+        assert params["n"] == 2
+    elif kind == "hop":
+        assert "n" not in params and "category" not in params
+    assert params["geffect"] == "changeType"
+
+    # rankDown to tierless pays nothing; destroy halves with twin mercy
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    with _ScriptedD20([2]):
+        tier, kind, params = cu.award(st, "bronze",
+                                      gamble=True, tree=tree)
+    assert tier is None and st["points"] == 0 and st["cores"] == 1
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    with _ScriptedD20([1]):
+        tier, kind, params = cu.award(st, "bronze",
+                                      gamble=True, tree=tree)
+    assert st["cores"] == 0 and abs(st["points"] - 25) < 1e-9
+    assert params.get("destroyed") is True
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    with _ScriptedD20([1]):
+        cu.award(st, "bronze twin", gamble=True, tree=tree)
+    assert st["cores"] == 1 and abs(st["points"] - 25) < 1e-9
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1]
+    with _ScriptedD20([1]):
+        cu.award(st, "silver hop", gamble=True, tree=tree)
+    assert st["cores"] == 0 and abs(st["points"] - 250) < 1e-9
+    assert st["inventory"] == []
+
+    # reroll discards lows (one charge) and the trail is recorded
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 3]
+    with _ScriptedD20([1, 10]):
+        tier, kind, params = cu.award(st, "bronze",
+                                      gamble=True, tree=tree)
+    assert params["d20"] == 10 and params["rerolls"] == [1]
+    assert st["meta_used"]["gamble"] == 1
+
+    # gamble-twice: both rolls apply; a settled 20 stops at one roll
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 4]
+    with _ScriptedD20([13, 18]):
+        tier, kind, params = cu.award(st, "bronze",
+                                      gamble=True, tree=tree)
+    assert params["d20"] == [13, 18]
+    assert params["geffect"] == ["changeType", "twin"]
+    assert params.get("twin") is True and st["cores"] == 2
+    assert st["meta_used"]["gamble"] == 1
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 4]
+    with _ScriptedD20([20]):
+        tier, kind, params = cu.award(st, "bronze",
+                                      gamble=True, tree=tree)
+    assert params["d20"] == 20 and tier == "silver"
+
+    # note formatting mirrors the d20/geffect stamps
+    assert cu.gamble_note({}) == ""
+    assert cu.gamble_note(params) == "d20 20 Rank Up"
+    assert "rerolled 1" in cu.gamble_note({"d20": 10, "geffect": "nothing",
+                                           "rerolls": [1]})
+
+    # CLI: --gamble flag rejects undercharged batches before awarding
+    import tempfile, os
+    tmp = tempfile.mkdtemp(prefix="chaos-gamble-test-")
+    tpath = os.path.join(tmp, "t.json")
+    import generate_tree as gt
+    items = gt.load_entries(["ability"], None, None, set(), set(), True)
+    rparams = {"radius": 1.0, "distance_variance": 0.15,
+               "clustering": 0.4, "clusters": 2, "degree_dist": "poisson",
+               "mean_degree": 2.0, "degree_min": 1, "degree_max": None,
+               "rejoin_bias": 0.9, "link_falloff": 2.0,
+               "max_link_distance": 0.6, "connect": True}
+    import random
+    nodes, edges, targets = gt.generate_tree(items[:20], rparams,
+                                             random.Random(10))
+    nodes, edges = gt.add_root(nodes, edges)
+    stats = gt.compute_stats(nodes, edges, targets)
+    gt.save_tree(nodes, edges, stats, items[:20], rparams, 10, tpath)
+    spath = os.path.join(tmp, "s.json")
+    cu.main(["init", spath, "--tree", tpath])
+    assert "gamble charges" in expect_error(
+        cu.main, ["award", spath, "--gamble", "gold", "silver"])
+
+    print("meta4-node tests passed")
+
+
 if __name__ == "__main__":
     main()
     test_meta()
     test_meta2()
+    test_meta3()
+    test_meta4()

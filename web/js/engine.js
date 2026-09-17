@@ -28,7 +28,7 @@ window.ChaosEngine = (function () {
   function newState() {
     return {
       points: 0, cores: 0, inventory: [], unlocked: [ROOT_ID],
-      meta_used: {}, added_links: [], swaps: [],
+      meta_used: {}, added_links: [], swaps: [], entry_swaps: [],
       reveal_temp_until: 0, history: [], echo_used: 0
     };
   }
@@ -67,7 +67,8 @@ window.ChaosEngine = (function () {
       lock_refund: 0, add_link: 0, gacha: 0, gacha_min: 0, gacha_max: 0,
       echo: 0, survey: 0, compass: false, duplicate: 0, duplicate_max: 0,
       cat_sight: {}, lifeline: 0, recall: 0, root_pact: false,
-      shuffle: 0, swap: 0, reshuffle: 0
+      shuffle: 0, swap: 0, reshuffle: 0, shake: 0, chaosquake: 0,
+      gamble: 0, gamble_reroll: 0, gamble_twice: false
     };
     for (const u of unlocked) {
       const nd = tree.byId[u];
@@ -109,6 +110,11 @@ window.ChaosEngine = (function () {
         else if (k === "shuffle") meta.shuffle += 1;
         else if (k === "swap") meta.swap += 1;
         else if (k === "reshuffle") meta.reshuffle += 1;
+        else if (k === "shake") meta.shake += 1;
+        else if (k === "chaosquake") meta.chaosquake += 1;
+        else if (k === "gamble") meta.gamble += v | 0;
+        else if (k === "gamble-reroll") meta.gamble_reroll = Math.max(meta.gamble_reroll, v | 0);
+        else if (k === "gamble-twice") meta.gamble_twice = true;
       }
     }
     return meta;
@@ -229,7 +235,7 @@ window.ChaosEngine = (function () {
 
   function parseTicket(spec) {
     const toks = String(spec).toLowerCase().replace(/,/g, " ").split(/\s+/).filter(Boolean);
-    let tier = null, kind = "plain", n = null, category = null;
+    let tier = null, kind = "plain", n = null, category = null, twin = false;
     for (let i = 0; i < toks.length; i++) {
       const t = toks[i];
       if (t in TIER_POINTS) tier = t;
@@ -246,9 +252,11 @@ window.ChaosEngine = (function () {
         if (i + 1 < toks.length && /^\d+$/.test(toks[i + 1])) n = parseInt(toks[++i], 10);
       }
       else if (/^choice\d+$/.test(t)) { kind = "choice"; n = parseInt(t.slice(6), 10); }
+      else if (t === "twin") twin = true;
       else throw new ChaosError(`unrecognised ticket token: ${t}`);
     }
     const params = {};
+    if (twin) params.twin = true;
     if (kind === "skip") params.n = n || 1;
     else if (kind === "jump") {
       if (!category) throw new ChaosError("jump ticket needs a category");
@@ -259,21 +267,116 @@ window.ChaosEngine = (function () {
     return { tier, kind, params };
   }
 
-  function award(state, spec, bonusPct, echo) {
+  function award(state, spec, bonusPct, echo, gamble, tree, rng) {
     bonusPct = bonusPct || 0;
-    const { tier, kind, params } = parseTicket(spec);
-    state.cores += 1;
+    let { tier, kind, params } = parseTicket(spec);
+    let twin = !!params.twin, destroyed = false;
+    if (gamble) {
+      if (!tree) throw new ChaosError("gambling a ticket needs its tree");
+      ({ tier, kind, params, destroyed } = gambleTicket(state, tree, tier, kind, params, rng));
+      twin = !!params.twin;
+    }
+    let cores = 1 + (twin ? 1 : 0);
     let pts = (TIER_POINTS[tier] || 0) * (1 + bonusPct / 100);
+    if (destroyed) {
+      cores = twin ? 1 : 0;
+      pts /= 2;
+    }
+    state.cores += cores;
     if (echo) {
       pts *= 2;
       state.echo_used = (state.echo_used || 0) + 1;
     }
     state.points += pts;
-    if (kind !== "plain") {
+    if (kind !== "plain" && !destroyed) {
       const t = Object.assign({ kind, tier }, params);
       state.inventory.push(t);
     }
-    return { tier, kind, params, pts };
+    return { tier, kind, params, pts, cores };
+  }
+
+  const GAMBLE_LABELS = { rankUp: "Rank Up", twin: "Twin", changeType: "New Kind",
+    nothing: "No change", rankDown: "Rank Down", destroyed: "Destroyed" };
+
+  function gamblerEffect(d) {
+    if (d === 20) return "rankUp";
+    if (d >= 17) return "twin";
+    if (d >= 13) return "changeType";
+    if (d >= 8) return "nothing";
+    if (d >= 2) return "rankDown";
+    return "destroyed";
+  }
+
+  function shiftTier(tier, delta) {
+    const tiers = Object.keys(TIER_POINTS);
+    if (tier == null) return delta > 0 ? "bronze" : null;
+    const i = tiers.indexOf(tier) + delta;
+    if (i < 0) return null;
+    return tiers[Math.min(tiers.length - 1, i)];
+  }
+
+  function gambleNewKind(kind, rng) {
+    const pool = ["plain", "skip", "jump", "choice", "hop"].filter(k => k !== kind);
+    return rng ? rng.pick(pool) : pool[Math.floor(Math.random() * pool.length)];
+  }
+
+  function gambleKindParams(kind, rng) {
+    if (kind === "skip") return { n: 1 };
+    if (kind === "jump") return { category: rng ? rng.pick(CATEGORIES) : CATEGORIES[Math.floor(Math.random() * CATEGORIES.length)] };
+    if (kind === "choice") return { n: 2, category: null };
+    return {};
+  }
+
+  function settleRoll(threshold, rng) {
+    const roll = () => rng ? rng.int(20) + 1 : 1 + Math.floor(Math.random() * 20);
+    const trail = [];
+    let d = roll();
+    while (d <= threshold) { trail.push(d); d = roll(); }
+    return [d, trail];
+  }
+
+  function gambleTicket(state, tree, tier, kind, params, rng) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "gamble") >= meta.gamble) throw new ChaosError("no gamble charge left");
+    consume(state, "gamble");
+    const threshold = meta.gamble_reroll;
+    const rerolls = [];
+    let [d, trail] = settleRoll(threshold, rng);
+    rerolls.push(...trail);
+    const rolls = [[d, gamblerEffect(d)]];
+    if (meta.gamble_twice && d !== 20) {
+      [d, trail] = settleRoll(threshold, rng);
+      rerolls.push(...trail);
+      rolls.push([d, gamblerEffect(d)]);
+    }
+    let twin = !!params.twin, destroyed = false;
+    for (const [v, effect] of rolls) {
+      if (effect === "rankUp") tier = shiftTier(tier, 1);
+      else if (effect === "twin") twin = true;
+      else if (effect === "changeType") {
+        kind = gambleNewKind(kind, rng);
+        delete params.n; delete params.category;
+        Object.assign(params, gambleKindParams(kind, rng));
+      }
+      else if (effect === "rankDown") tier = shiftTier(tier, -1);
+      else if (effect === "destroyed") destroyed = true;
+    }
+    if (twin) params.twin = true;
+    if (rolls.length === 1) { params.d20 = rolls[0][0]; params.geffect = rolls[0][1]; }
+    else { params.d20 = rolls.map(r => r[0]); params.geffect = rolls.map(r => r[1]); }
+    if (rerolls.length) params.rerolls = rerolls;
+    if (destroyed) params.destroyed = true;
+    return { tier, kind, params, destroyed };
+  }
+
+  function gambleNote(params) {
+    if (params.d20 == null) return "";
+    const ds = Array.isArray(params.d20) ? params.d20 : [params.d20];
+    const es = Array.isArray(params.geffect) ? params.geffect : [params.geffect];
+    let note = "d20 " + ds.map((v, i) => `${v} ${GAMBLE_LABELS[es[i]]}`).join("+");
+    if (params.rerolls && params.rerolls.length) note += ` (rerolled ${params.rerolls.join(", ")})`;
+    if (params.destroyed) note += " DESTROYED";
+    return note;
   }
 
   // ---- unlocks ----------------------------------------------------------
@@ -395,6 +498,79 @@ window.ChaosEngine = (function () {
       if (tree.byId[a] && tree.byId[b]) swapNodes(tree, a, b);
     }
     return tree;
+  }
+
+  function swapTol(tree) {
+    const p = tree.params || {};
+    const v = Number(p.distance_variance ?? p.distanceVariance ?? 0.05);
+    return v > 0 ? v : 0.05;
+  }
+
+  function swapEntries(tree, a, b) {
+    const na = tree.byId[a], nb = tree.byId[b];
+    for (const key of new Set([...Object.keys(na), ...Object.keys(nb)])) {
+      if (key === "id" || key === "pos" || key === "r") continue;
+      const t = na[key]; na[key] = nb[key]; nb[key] = t;
+    }
+  }
+
+  function applyEntrySwaps(tree, state) {
+    for (const [a, b] of (state.entry_swaps || [])) {
+      if (tree.byId[a] && tree.byId[b]) swapEntries(tree, a, b);
+    }
+    return tree;
+  }
+
+  function shuffleEntryBucket(state, tree, ids, rng) {
+    const order = ids.slice();
+    if (rng) rng.shuffle(order);
+    else {
+      for (let i = order.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+      }
+    }
+    state.entry_swaps = state.entry_swaps || [];
+    let n = 0;
+    for (let j = 1; j < order.length; j++) {
+      const a = order[0], b = order[j];
+      swapEntries(tree, a, b);
+      state.entry_swaps.push([a, b]);
+      n++;
+    }
+    return n;
+  }
+
+  function entryBuckets(tree, ids) {
+    const tol = swapTol(tree), buckets = {};
+    for (const i of ids) {
+      const k = Math.round(tree.byId[i].rarity / tol);
+      (buckets[k] = buckets[k] || []).push(i);
+    }
+    return Object.values(buckets).filter(v => v.length > 1);
+  }
+
+  function useShake(state, tree, rng) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "shake") >= meta.shake) throw new ChaosError("no shake charge left");
+    const unlockedSet = new Set(state.unlocked);
+    const ids = tree.nodes.filter(nd => nd.id !== ROOT_ID && !unlockedSet.has(nd.id)).map(nd => nd.id);
+    const buckets = entryBuckets(tree, ids);
+    if (!buckets.length) throw new ChaosError("no locked nodes share a rarity band to shuffle");
+    const n = buckets.reduce((s, b) => s + shuffleEntryBucket(state, tree, b, rng), 0);
+    consume(state, "shake");
+    return n;
+  }
+
+  function useChaosquake(state, tree, rng) {
+    const meta = deriveMeta(tree, state.unlocked);
+    if (used(state, "chaosquake") >= meta.chaosquake) throw new ChaosError("no chaosquake charge left");
+    const ids = tree.nodes.filter(nd => nd.id !== ROOT_ID).map(nd => nd.id);
+    const buckets = entryBuckets(tree, ids);
+    if (!buckets.length) throw new ChaosError("no nodes share a rarity band to shuffle");
+    const n = buckets.reduce((s, b) => s + shuffleEntryBucket(state, tree, b, rng), 0);
+    consume(state, "chaosquake");
+    return n;
   }
 
   function useLockRefund(state, tree, nid) {
@@ -589,6 +765,8 @@ window.ChaosEngine = (function () {
     unlock, unlockSkip, jumpCandidates, unlockJump, unlockHop,
     useLockRefund, useAddLink, useReveal, useGacha, useLifeline,
     useRecall, useDuplicate, useShuffle, useSwap, useReshuffle,
-    trace, applyAddedLinks, applySwaps, swapNodes, unlockNode
+    useShake, useChaosquake, gambleTicket, gamblerEffect, gambleNote,
+    trace, applyAddedLinks, applySwaps, swapNodes, unlockNode,
+    swapEntries, applyEntrySwaps
   };
 })();

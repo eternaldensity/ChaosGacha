@@ -2016,3 +2016,25 @@
 #A one-way rail line gliding over open ocean toward Swamp Bottom; exact fare unknown.
 1009. LLM Workstation Laptop, 3.6, Generic
 #A top-spec laptop with an absurd amount of VRAM that runs a genuinely helpful AI assistant entirely offline. Battery life: optimistic.
+1010. Shake the Tree, 6.0, Generic
+#(Tree)(Meta:shake) Single use. Shuffle which entry sits on every locked node. Positions and connections don't move, and every node keeps a similar rarity.
+1011. ChaosQuake, 7.5, Generic
+#(Tree)(Meta:chaosquake) Single use. Shuffle which entry sits on every node, locked or unlocked alike. Your unlocked nodes keep their places but not their faces; rarities stay similar.
+1012. Gambler's Bronze Die, 1.3, Generic
+#(Tree)(Meta:gamble:2) Unlocking this die lets you gamble 2 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1013. Gambler's Silver Die, 2.3, Generic
+#(Tree)(Meta:gamble:4) Unlocking this die lets you gamble 4 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1014. Gambler's Gold Die, 3.3, Generic
+#(Tree)(Meta:gamble:6) Unlocking this die lets you gamble 6 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1015. Gambler's Platinum Die, 4.3, Generic
+#(Tree)(Meta:gamble:10) Unlocking this die lets you gamble 10 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1016. Gambler's Diamond Die, 5.3, Generic
+#(Tree)(Meta:gamble:10)(Meta:gamble-reroll:1) Unlocking this die lets you gamble 10 awarded tickets, and all your die rolls reroll natural 1s. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1017. Gambler's Legendary Die, 6.3, Generic
+#(Tree)(Meta:gamble:12)(Meta:gamble-reroll:5) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 5s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1018. Gambler's Mythical Die, 7.3, Generic
+#(Tree)(Meta:gamble:12)(Meta:gamble-reroll:7) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 7s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1019. Gambler's Divine Die, 8.3, Generic
+#(Tree)(Meta:gamble:12)(Meta:gamble-reroll:9) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 9s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1020. Gambler's Transcendent Die, 9.3, Generic
+#(Tree)(Meta:gamble:16)(Meta:gamble-twice) Unlocking this die lets you gamble 16 awarded tickets, and every gamble gets a second d20 roll whenever the first roll isn't a natural 20. Each roll uses the same table (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).

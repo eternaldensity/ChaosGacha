@@ -60,7 +60,9 @@ reveals (`reveal-temp`, `reveal-full`), +N% ticket points (`ticket-bonus:N`,
 additive) or a one-time double payout (`echo`), a lock-and-refund
 (`lock-refund`), a free frontier unlock (`lifeline`), an undo of the last
 unlock (`recall`), added edges (`add-link:N`), topology swaps
-(`shuffle`/`swap`/`reshuffle`), random unlocks (`gacha:R` or `gacha:R-S`,
+(`shuffle`/`swap`/`reshuffle`), entry reshuffles that keep every node in
+place (`shake` for locked nodes, `chaosquake` for all non-root nodes), gambled tickets (`gamble:N` charges from Gambler's Dice, with `gamble-reroll:N`
+floors and a `gamble-twice` second roll on the best dice), random unlocks (`gacha:R` or `gacha:R-S`,
 plus a rarity-capped same-source `duplicate:R`), and half-price unlocks for
 root-adjacent nodes (`root-pact`). They never roll in the Gacha.
 
@@ -76,7 +78,10 @@ distance, per-source filtering). Every tree is reproducible from its `seed`.
 root is free; every other node costs 1 core plus points equal to `10^rarity`.
 Tickets add 1 core each and pool their tier points into a shared wallet
 (bronze 50, silver 500, gold 5k, ... transcendent 5B; Prosperity nodes add
-an additive +N%). Only nodes adjacent to unlocked nodes are unlockable by
+an additive +N%). A `twin` ticket (e.g. `gold twin`) grants a second core,
+free. With `award --gamble`, each ticket instead rolls a d20 (1 gamble
+charge each): 20 tier up, 17-19 twin, 13-16 new kind, 8-12 nothing, 2-7
+tier down, 1 destroyed (no base core, half points; a twin keeps 1 core). Only nodes adjacent to unlocked nodes are unlockable by
 default; special tickets (skip N, `<category>` jump, choice N jump, hop)
 reach further. See the module docstring for the full rules and CLI reference.
 

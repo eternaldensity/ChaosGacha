@@ -28,6 +28,10 @@ points, otherwise the ticket is traversal-only and adds 0 points):
                      intermediate node on the shortest path from the
                      unlocked set to it
 
+Ticket options:
+    twin             any ticket may carry the twin token ('gold twin');
+                     it grants a second core at award (free, always allowed)
+
 Tree meta nodes: normal ability/item/trait entries carrying a (Tree) tag
 and a (Meta:<key>:<value>) token in their description (stored in the JSON
 'meta' field). While unlocked they grant an effect:
@@ -55,13 +59,24 @@ and a (Meta:<key>:<value>) token in their description (stored in the JSON
                        not-visible one of similar rarity (+-0.2)
     swap               one use: swap two visible locked nodes of your choice
     reshuffle          unlimited shuffle, costs a quarter of the node's cost
+    shake              one use: reassign entries among locked nodes
+                       (rarity-preserving; positions and links stay put)
+    chaosquake         one use: reassign entries among ALL non-root nodes;
+                       unlocked nodes keep their places but not their faces
+    gamble:N           N gambled tickets: roll a d20 per awarded ticket
+                       (20: tier up, 17-19: twin, 13-16: new kind,
+                       8-12: nothing, 2-7: tier down, 1: destroyed for
+                       no base core and half points)
+    gamble-reroll:N    reroll gamble d20s of N and below (best die wins)
+    gamble-twice       gambles get a second d20 unless the first is a 20
     root-pact          nodes adjacent to the root unlock at half points
 Unlocking is adjacency-based: sight/reveal only let you SEE further; the
 skip/jump/hop tickets are still how you travel.
 
 Modes of use (CLI):
     init STATE --tree TREE.json          create a fresh player state
-    award STATE TICKET [TICKET...]       award tickets (adds cores + points)
+    award STATE [--gamble] TICKET [...]  award tickets (adds cores + points;
+                                         --gamble rolls a d20 per ticket)
     state STATE                          show wallet, cores, inventory, nodes
     visible STATE                        list unlockable nodes and their costs
     unlock STATE NODE                    normal unlock (must be adjacent)
@@ -71,7 +86,8 @@ Modes of use (CLI):
     use STATE ACTION [ARGS]              lockrefund NODE | addlink A B |
                                          reveal | gacha | lifeline NODE |
                                          recall | duplicate | shuffle NODE |
-                                         swap A B | reshuffle NODE
+                                         swap A B | reshuffle NODE |
+                                         shake | chaosquake
     trace STATE --name X [--n N]         trace routes to closest matches
            STATE --desc X [--n N]
            STATE --source X [--n N]      (needs the matching ability)
@@ -127,7 +143,8 @@ def new_state(tree_path):
     return {"tree": tree_path, "points": 0.0, "cores": 0,
             "inventory": [], "unlocked": [ROOT_ID],
             "meta_used": {}, "added_links": [], "reveal_temp_until": 0,
-            "history": [], "swaps": [], "echo_used": 0}
+            "history": [], "swaps": [], "echo_used": 0,
+            "entry_swaps": []}
 
 
 def load_state(path):
@@ -193,7 +210,8 @@ def derive_meta(tree, unlocked):
             "echo": 0, "survey": 0, "compass": False, "duplicate": 0,
             "duplicate_max": 0, "cat_sight": {}, "lifeline": 0,
             "recall": 0, "root_pact": False, "shuffle": 0, "swap": 0,
-            "reshuffle": 0}
+            "reshuffle": 0, "shake": 0, "chaosquake": 0,
+            "gamble": 0, "gamble_reroll": 0, "gamble_twice": False}
     for u in unlocked:
         nd = tree["by_id"][u]
         for k, v in iter_meta(nd):
@@ -251,6 +269,16 @@ def derive_meta(tree, unlocked):
                 meta["swap"] += 1
             elif k == "reshuffle":
                 meta["reshuffle"] += 1
+            elif k == "shake":
+                meta["shake"] += 1
+            elif k == "chaosquake":
+                meta["chaosquake"] += 1
+            elif k == "gamble":
+                meta["gamble"] += int(v)
+            elif k == "gamble-reroll":
+                meta["gamble_reroll"] = max(meta["gamble_reroll"], int(v))
+            elif k == "gamble-twice":
+                meta["gamble_twice"] = True
     return meta
 
 
@@ -406,11 +434,12 @@ class UsageError(Exception):
 
 def parse_ticket(spec):
     """Parse a ticket spec like 'gold', 'gold skip2', 'item jump',
-    'choice 3 jump ability', 'hop gold'. Returns (tier, kind, params).
-    Tier is optional for special tickets (0 points, traversal only)."""
+    'choice 3 jump ability', 'hop gold', 'gold twin'. Returns
+    (tier, kind, params). Tier is optional for special tickets (0 points,
+    traversal only). The 'twin' token flags a +1 bonus core at award."""
     toks = spec.lower().replace(",", " ").split()
     tier, kind = None, "plain"
-    n, category = None, None
+    n, category, twin = None, None, False
     i = 0
     while i < len(toks):
         t = toks[i]
@@ -437,11 +466,15 @@ def parse_ticket(spec):
                 i += 1
         elif t.startswith("choice") and t[6:].isdigit():
             kind, n = "choice", int(t[6:])
+        elif t == "twin":
+            twin = True
         else:
             raise UsageError(f"unrecognised ticket token: {t!r}")
         i += 1
 
     params = {}
+    if twin:
+        params["twin"] = True
     if kind == "skip":
         params["n"] = n or 1
     elif kind == "jump":
@@ -458,20 +491,162 @@ def parse_ticket(spec):
     return tier, kind, params
 
 
-def award(state, spec, bonus_pct=0, echo=False):
+def award(state, spec, bonus_pct=0, echo=False, gamble=False, tree=None):
+    """Award a ticket: +1 core (a 'twin' ticket grants a second core) plus
+    tier points. Special tickets also land in the inventory. With
+    gamble=True one gamble charge is spent rolling a d20 for the ticket
+    (needs tree=... to read unlocked dice)."""
     tier, kind, params = parse_ticket(spec)
-    state["cores"] += 1
+    twin = params.get("twin", False)
+    destroyed = False
+    if gamble:
+        if tree is None:
+            raise UsageError("gambling a ticket needs its tree")
+        tier, kind, params, destroyed = gamble_ticket(
+            state, tree, tier, kind, params)
+        twin = params.get("twin", False)
+    cores = 1 + (1 if twin else 0)
     base = TIER_POINTS.get(tier, 0)
+    if destroyed:
+        # generosity rule: the base core is lost but a twin keeps one
+        cores = 1 if twin else 0
+        base = base / 2
+    state["cores"] += cores
     pts = base * (1.0 + bonus_pct / 100.0)
     if echo:
         pts *= 2.0
         state["echo_used"] = state.get("echo_used", 0) + 1
     state["points"] += pts
-    if kind != "plain":
+    if kind != "plain" and not destroyed:
         ticket = {"kind": kind, "tier": tier}
         ticket.update(params)
         state["inventory"].append(ticket)
     return tier, kind, params
+
+
+def _d20():
+    """One d20 roll. Module-level indirection so tests can script rolls."""
+    return random.randint(1, 20)
+
+
+def gambler_effect(d):
+    """d20 value -> effect key (mirrors the Gacha Gambler trait)."""
+    if d == 20:
+        return "rankUp"
+    if d >= 17:
+        return "twin"
+    if d >= 13:
+        return "changeType"
+    if d >= 8:
+        return "nothing"
+    if d >= 2:
+        return "rankDown"
+    return "destroyed"
+
+
+def _shift_tier(tier, delta):
+    """Move a tier up/down the ladder; bronze-1 falls to tierless."""
+    tiers = list(TIER_POINTS)
+    if tier is None:
+        return "bronze" if delta > 0 else None
+    i = tiers.index(tier) + delta
+    if i < 0:
+        return None
+    return tiers[min(len(tiers) - 1, i)]
+
+
+def _gamble_new_kind(kind):
+    pool = ["plain", "skip", "jump", "choice", "hop"]
+    pool.remove(kind)
+    return random.choice(pool)
+
+
+def _gamble_kind_params(kind):
+    if kind == "skip":
+        return {"n": 1}
+    if kind == "jump":
+        return {"category": random.choice(CATEGORIES)}
+    if kind == "choice":
+        return {"n": 2, "category": None}
+    return {}
+
+
+def _settle_roll(threshold):
+    """Roll until above the reroll threshold; returns (d, discarded)."""
+    trail = []
+    d = _d20()
+    while d <= threshold:
+        trail.append(d)
+        d = _d20()
+    return d, trail
+
+
+def gamble_ticket(state, tree, tier, kind, params):
+    """Spend one gamble charge rolling a d20 for a ticket. Applies rank,
+    twin, kind-change and destroy effects; returns
+    (tier, kind, params, destroyed) with the rolls stamped into params
+    (d20, geffect, and rerolls when any were discarded)."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "gamble") >= meta["gamble"]:
+        raise UsageError("no gamble charge left")
+    state["meta_used"]["gamble"] = _used(state, "gamble") + 1
+    threshold = meta["gamble_reroll"]
+    rerolls = []
+    d, trail = _settle_roll(threshold)
+    rerolls.extend(trail)
+    rolls = [(d, gambler_effect(d))]
+    if meta["gamble_twice"] and d != 20:
+        d2, trail2 = _settle_roll(threshold)
+        rerolls.extend(trail2)
+        rolls.append((d2, gambler_effect(d2)))
+    twin = params.get("twin", False)
+    destroyed = False
+    for d, effect in rolls:
+        if effect == "rankUp":
+            tier = _shift_tier(tier, +1)
+        elif effect == "twin":
+            twin = True
+        elif effect == "changeType":
+            kind = _gamble_new_kind(kind)
+            for k in ("n", "category"):
+                params.pop(k, None)
+            params.update(_gamble_kind_params(kind))
+        elif effect == "rankDown":
+            tier = _shift_tier(tier, -1)
+        elif effect == "destroyed":
+            destroyed = True
+    if twin:
+        params["twin"] = True
+    if len(rolls) == 1:
+        params["d20"], params["geffect"] = rolls[0]
+    else:
+        params["d20"] = [d for d, _ in rolls]
+        params["geffect"] = [e for _, e in rolls]
+    if rerolls:
+        params["rerolls"] = rerolls
+    if destroyed:
+        params["destroyed"] = True
+    return tier, kind, params, destroyed
+
+
+GAMBLE_LABELS = {"rankUp": "Rank Up", "twin": "Twin",
+                 "changeType": "New Kind", "nothing": "No change",
+                 "rankDown": "Rank Down", "destroyed": "Destroyed"}
+
+
+def gamble_note(params):
+    """Short human-readable summary of a gambled ticket's rolls."""
+    if "d20" not in params:
+        return ""
+    d, e = params["d20"], params["geffect"]
+    if not isinstance(d, list):
+        d, e = [d], [e]
+    note = "d20 " + "+".join(f"{v} {GAMBLE_LABELS[g]}" for v, g in zip(d, e))
+    if params.get("rerolls"):
+        note += f" (rerolled {', '.join(map(str, params['rerolls']))})"
+    if params.get("destroyed"):
+        note += " DESTROYED"
+    return note
 
 
 # --- unlocks ---------------------------------------------------------------
@@ -600,6 +775,86 @@ def apply_swaps(tree, state):
     for a, b in state.get("swaps", []):
         _swap_nodes(tree, a, b)
     return tree
+
+
+def _swap_tol(tree):
+    """Rarity tolerance for entry shuffles: the tree's placement variance
+    (0.05 when unknown, e.g. hand-made trees)."""
+    try:
+        return float(tree.get("meta", {}).get("params", {}).get(
+            "distance_variance", 0.05))
+    except (AttributeError, TypeError, ValueError):
+        return 0.05
+
+
+def _swap_entries(tree, a, b):
+    """Exchange two nodes' entries (everything but id/pos/radius)."""
+    na, nb = tree["by_id"][a], tree["by_id"][b]
+    for key in set(na) | set(nb):
+        if key in ("id", "pos", "r"):
+            continue
+        na[key], nb[key] = nb.get(key), na.get(key)
+
+
+def apply_entry_swaps(tree, state):
+    for a, b in state.get("entry_swaps", []):
+        if a in tree["by_id"] and b in tree["by_id"]:
+            _swap_entries(tree, a, b)
+    return tree
+
+
+def _shuffle_entry_bucket(state, tree, ids):
+    """Permute a bucket's entries (one n-cycle through a shuffled order)."""
+    order = list(ids)
+    random.shuffle(order)
+    swaps = state.setdefault("entry_swaps", [])
+    n = 0
+    for j in range(1, len(order)):
+        a, b = order[0], order[j]
+        _swap_entries(tree, a, b)
+        swaps.append([a, b])
+        n += 1
+    return n
+
+
+def _entry_buckets(tree, ids):
+    tol = _swap_tol(tree)
+    buckets = {}
+    for i in ids:
+        buckets.setdefault(round(tree["by_id"][i]["rarity"] / tol), []).append(i)
+    return [v for v in buckets.values() if len(v) > 1]
+
+
+def use_shake(state, tree):
+    """Single use: reassign entries among LOCKED nodes. Positions, links
+    and rarities-per-position stay put (within placement variance)."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "shake") >= meta["shake"]:
+        raise UsageError("no shake charge left")
+    unlocked = set(state["unlocked"])
+    ids = [nd["id"] for nd in tree["nodes"]
+           if nd["id"] != ROOT_ID and nd["id"] not in unlocked]
+    buckets = _entry_buckets(tree, ids)
+    if not buckets:
+        raise UsageError("no locked nodes share a rarity band to shuffle")
+    n = sum(_shuffle_entry_bucket(state, tree, b) for b in buckets)
+    state["meta_used"]["shake"] = _used(state, "shake") + 1
+    return n
+
+
+def use_chaosquake(state, tree):
+    """Single use: reassign entries among ALL non-root nodes, locked or
+    unlocked. Unlocked nodes keep their places but not their faces."""
+    meta = derive_meta(tree, state["unlocked"])
+    if _used(state, "chaosquake") >= meta["chaosquake"]:
+        raise UsageError("no chaosquake charge left")
+    ids = [nd["id"] for nd in tree["nodes"] if nd["id"] != ROOT_ID]
+    buckets = _entry_buckets(tree, ids)
+    if not buckets:
+        raise UsageError("no nodes share a rarity band to shuffle")
+    n = sum(_shuffle_entry_bucket(state, tree, b) for b in buckets)
+    state["meta_used"]["chaosquake"] = _used(state, "chaosquake") + 1
+    return n
 
 
 def use_lock_refund(state, tree, nid):
@@ -870,6 +1125,8 @@ def build_parser():
     p = add("award", help="award one or more tickets")
     p.add_argument("state")
     p.add_argument("tickets", nargs="+")
+    p.add_argument("--gamble", action="store_true",
+                   help="roll a d20 for each ticket (1 gamble charge each)")
 
     p = add("state", help="show wallet, cores, inventory and unlocked nodes")
     p.add_argument("state")
@@ -901,7 +1158,8 @@ def build_parser():
     p.add_argument("state")
     p.add_argument("action", choices=["lockrefund", "addlink", "reveal", "gacha",
                                       "lifeline", "recall", "duplicate",
-                                      "shuffle", "swap", "reshuffle"])
+                                      "shuffle", "swap", "reshuffle",
+                                      "shake", "chaosquake"])
     p.add_argument("args", nargs="*", type=int, help="node ids")
 
     p = add("trace", help="trace routes to closest matching locked nodes")
@@ -928,23 +1186,39 @@ def main(argv=None):
     tree = load_tree(state["tree"])
     apply_swaps(tree, state)
     apply_added_links(tree, state)
+    apply_entry_swaps(tree, state)
     meta = view_state(tree, state)
 
     if args.cmd == "award":
         bonus_pct = meta["ticket_bonus"]
         echo_left = meta["echo"] - state.get("echo_used", 0)
+        if args.gamble:
+            need, have = len(args.tickets), meta["gamble"] - _used(state, "gamble")
+            if have < need:
+                raise UsageError(
+                    f"need {need} gamble charges, have {have}")
         for spec in args.tickets:
             use_echo = echo_left > 0
-            tier, kind, params = award(state, spec, bonus_pct, echo=use_echo)
+            tier, kind, params = award(state, spec, bonus_pct,
+                                       echo=use_echo, gamble=args.gamble,
+                                       tree=tree)
             if use_echo:
                 echo_left -= 1
             pts = TIER_POINTS.get(tier, 0) * (1.0 + bonus_pct / 100.0)
+            if params.get("destroyed"):
+                pts /= 2
             if use_echo:
                 pts *= 2.0
+            if params.get("destroyed"):
+                cores_n = 1 if params.get("twin") else 0
+            else:
+                cores_n = 1 + (1 if params.get("twin") else 0)
             extra = f" [{kind}]" if kind != "plain" else ""
             echo_mark = " (echo!)" if use_echo else ""
-            print(f"awarded {tier or 'tierless'}{extra}: +1 core, "
-                  f"+{fmt(pts)} pts{echo_mark}")
+            note = gamble_note(params)
+            print(f"awarded {tier or 'tierless'}{extra}: +{cores_n} core(s), "
+                  f"+{fmt(pts)} pts{echo_mark}"
+                  + (f" [{note}]" if note else ""))
     elif args.cmd == "state":
         print(f"tree: {tree['path']}")
         print(f"points: {fmt(state['points'])}   cores: {state['cores']}")
@@ -963,11 +1237,17 @@ def main(argv=None):
         for key, label in (("lock_refund", "lock-refund"),
                            ("add_link", "add-link"), ("gacha", "gacha"),
                            ("lifeline", "lifeline"), ("recall", "recall"),
-                           ("duplicate", "duplicate"), ("shuffle", "shuffle"),
-                           ("swap", "swap")):
+                            ("duplicate", "duplicate"), ("shuffle", "shuffle"),
+                            ("swap", "swap"), ("shake", "shake"),
+                            ("chaosquake", "chaosquake"),
+                            ("gamble", "gamble")):
             if meta[key]:
                 left = meta[key] - state["meta_used"].get(key, 0)
                 meta_bits.append(f"{label}x{left}")
+        if meta["gamble_reroll"]:
+            meta_bits.append(f"reroll<={meta['gamble_reroll']}")
+        if meta["gamble_twice"]:
+            meta_bits.append("second-roll")
         if meta["reshuffle"]:
             meta_bits.append("reshuffle")
         if meta["survey"]:
@@ -1075,6 +1355,12 @@ def main(argv=None):
             cost, b = use_reshuffle(state, tree, args.args[0])
             print(f"reshuffled {args.args[0]} with {b} "
                   f"for {fmt(cost)} pts")
+        elif args.action == "shake":
+            n = use_shake(state, tree)
+            print(f"shook the tree: {n} locked nodes reassigned")
+        elif args.action == "chaosquake":
+            n = use_chaosquake(state, tree)
+            print(f"chaosquake: {n} nodes reassigned")
     elif args.cmd == "trace":
         if args.source is None:
             if args.name is None and args.desc is None:

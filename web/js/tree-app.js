@@ -87,15 +87,18 @@
       const payload = loadStatic(tree.id);
       if (!payload) throw new Error("static tree data missing (re-import the file)");
       rt = G.buildRuntime(payload);
+      rt.params = payload.params || {};
     } else {
       const res = await G.generate(DATA.entries, tree.seed, tree.params || {}, {
         limit: tree.limit || null, ...(tree.filters || {})
       }, () => {});
       rt = G.buildRuntime(res);
+      rt.params = Object.assign({}, G.DEFAULTS, tree.params || {});
     }
     const st = DB.states[tree.id] || E.newState();
     E.applySwaps(rt, st);
     E.applyAddedLinks(rt, st);
+    E.applyEntrySwaps(rt, st);
     runtimes.set(tree.id, rt);
     return rt;
   }
@@ -1023,6 +1026,11 @@
     let s = `${t.tier || "tierless"} ${t.kind}`;
     if (t.kind === "skip" || t.kind === "choice") s += ` ${t.n}`;
     if (t.category) s += ` ${t.category}`;
+    if (t.twin) s += " 👯";
+    if (t.d20 != null) {
+      const ds = Array.isArray(t.d20) ? t.d20.join("+") : t.d20;
+      s += ` 🎲${ds}`;
+    }
     return s;
   }
   function nodeOptions(ids, rt, extra) {
@@ -1057,10 +1065,12 @@
     if (echoLeft > 0) bits.push(`echo×${echoLeft}`);
     if (m.root_pact) bits.push("root-pact");
     if (Object.keys(m.cat_sight).length) bits.push("cat-sight");
-    for (const k of ["lock_refund", "add_link", "gacha", "lifeline", "recall", "duplicate", "shuffle", "swap"]) {
+    for (const k of ["lock_refund", "add_link", "gacha", "lifeline", "recall", "duplicate", "shuffle", "swap", "shake", "chaosquake", "gamble"]) {
       if (m[k]) bits.push(`${k.replace(/_/g, "-")}×${m[k] - ((st.meta_used || {})[k] || 0)}`);
     }
     if (m.reshuffle) bits.push("reshuffle");
+    if (m.gamble_reroll) bits.push(`reroll≤${m.gamble_reroll}`);
+    if (m.gamble_twice) bits.push("second-roll");
     $("wMeta").textContent = bits.length ? bits.join(", ") : "none";
 
     // inventory
@@ -1068,7 +1078,9 @@
     if (!st.inventory.length) inv.innerHTML = "<li class='muted'>No tickets — award one above.</li>";
     st.inventory.forEach((t, idx) => {
       const li = document.createElement("li");
-      li.innerHTML = `<div class="grow"><b>${esc(ticketLabel(t))}</b></div>`;
+      const note = E.gambleNote(t);
+      li.innerHTML = `<div class="grow"><b${note ? ` title="${esc(note)}"` : ""}>${esc(ticketLabel(t))}</b>` +
+        (note ? `<div class="small muted">🎲 ${esc(note)}</div>` : "") + `</div>`;
       const ctl = document.createElement("div");
       ctl.className = "row";
       ctl.style.marginTop = "6px";
@@ -1227,6 +1239,22 @@
       row.append(sel, btn("Reshuffle (¼ cost)", ({ st, rt }) => E.useReshuffle(st, rt, parseInt(sel.value, 10))));
       addMeta("Reshuffle (unlimited)", "Shuffle at a quarter of the node's points cost.", row);
     }
+    if (m.shake && have("shake")) {
+      any = true;
+      addMeta(`Shake the Tree ×${m.shake - used("shake")}`, "Reassign entries among locked nodes. Positions and links stay put; rarities stay similar.",
+        btn("Shake", ({ st, rt }) => {
+          const n = E.useShake(st, rt);
+          toast(`Shook the tree: ${n} locked nodes reassigned.`);
+        }));
+    }
+    if (m.chaosquake && have("chaosquake")) {
+      any = true;
+      addMeta(`ChaosQuake ×${m.chaosquake - used("chaosquake")}`, "Reassign entries among ALL non-root nodes. Unlocked nodes keep their places but not their faces.",
+        btn("ChaosQuake", ({ st, rt }) => {
+          const n = E.useChaosquake(st, rt);
+          toast(`ChaosQuake: ${n} nodes reassigned.`);
+        }));
+    }
     if (!any) meta.innerHTML = "<span class='muted small'>Unlock tree-meta nodes (Sight, Graft, Chaos Die…) to gain abilities.</span>";
 
   // Frontier nodes, cheapest first, with one-tap unlock.
@@ -1297,23 +1325,35 @@
     const n = parseInt($("tkN").value, 10) || 2;
     const cat = $("tkCat").value;
     const count = Math.max(1, Math.min(10, parseInt($("tkCount").value, 10) || 1));
+    const wantTwin = $("tkTwin") && $("tkTwin").checked;
+    const wantGamble = $("tkGamble") && $("tkGamble").checked;
     let spec = tier;
     if (kind === "skip") spec = `${tier} skip${n}`;
     else if (kind === "jump") spec = `${tier} ${cat} jump`;
     else if (kind === "choice") spec = `${tier} choice ${n} jump`;
     else if (kind === "hop") spec = `${tier} hop`;
-    let totalPts = 0;
+    if (wantTwin) spec += " twin";
+    let totalPts = 0, totalCores = 0;
+    const notes = [];
     const ok = await mutate(({ st, rt }) => {
       const m = E.viewState(rt, st);
+      if (wantGamble) {
+        const have = m.gamble - ((st.meta_used || {}).gamble || 0);
+        if (have < count) throw new E.ChaosError(`need ${count} gamble charges, have ${have}`);
+      }
       let echoLeft = m.echo - (st.echo_used || 0);
       for (let i = 0; i < count; i++) {
         const useEcho = echoLeft > 0;
-        const r = E.award(st, spec, m.ticket_bonus, useEcho);
+        const r = E.award(st, spec, m.ticket_bonus, useEcho, wantGamble, rt);
         if (useEcho) echoLeft--;
         totalPts += r.pts;
+        totalCores += r.cores;
+        const note = E.gambleNote(r.params);
+        if (note) notes.push(note);
       }
     });
-    if (ok) toast(`Awarded ${count}× ${spec}: +${count} core${count === 1 ? "" : "s"}, +${E.fmt(totalPts)} pts.`);
+    if (ok) toast(`Awarded ${count}× ${spec}: +${totalCores} core${totalCores === 1 ? "" : "s"}, +${E.fmt(totalPts)} pts.` +
+      (notes.length ? ` 🎲 ${notes.join(" · ")}` : ""));
   });
 
   $("btnTrace").addEventListener("click", async () => {
