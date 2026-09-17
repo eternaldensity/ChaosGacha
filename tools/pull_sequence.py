@@ -174,7 +174,7 @@ def render_markdown(picks, index, curses):
                 head = f"#### {e['name']}"
                 if p["flag"]:
                     head += f" {p['flag']}"
-                out.append(f"{head}\n\n{e['description']}\n")
+                out.append(f"{head}\n\n{e['description']}\n\nSource: {e['source']}\n")
     if curse_picks:
         out.append("## Curses\n")
         for p in curse_picks:
