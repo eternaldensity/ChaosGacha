@@ -50,7 +50,7 @@ Produce and control weak little flames, never stronger than matchsticks and cand
 
 #### Genderswap
 
-Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, and partial swaps are possible.
+Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
 
 ## Items
 

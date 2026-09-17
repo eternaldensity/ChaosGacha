@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 3,
-  "generated_at": "2026-09-17T05:12:13Z",
+  "generated_at": "2026-09-17T07:00:49Z",
   "params": {
     "files": [
       "skill",
@@ -60252,7 +60252,7 @@
       "rarity": 1.8,
       "source": "Generic",
       "tag": "both",
-      "description": "Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, and partial swaps are possible.",
+      "description": "Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.",
       "meta": [],
       "pos": [
         -1.932561,

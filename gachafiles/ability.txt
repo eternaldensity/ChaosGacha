@@ -2065,7 +2065,7 @@
 1036. Sex Manipulation, 1.0, Generic
 #(Nsfw) Allows you to alter your genitals to your liking as long as the changes aren't absurd.
 1037. Genderswap, 1.8, Generic
-#Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, and partial swaps are possible.
+#Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
 1038. Deception, 3.1, Generic
 #Your words are imbued with lies, making them sound more convincing and believable. Stronger targets and more unbelievable lies reduce effectiveness and consume more energy.
 1039. Vainglory, 6.4, Generic
