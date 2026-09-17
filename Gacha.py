@@ -9,6 +9,7 @@ import subprocess
 pgmode = 1
 classicfamiliar = 0
 scifi = 0
+nonconmode = 1
 
 def read_file_with_weight(filename,avg,min,max): # Creates a list of the available gacha pulls within the rarity range
     elements = []
@@ -22,6 +23,7 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
     avgrarity = float(avg)
     maxrarity = float(max)
     pgtext = "(Nsfw)"
+    noncontext = "(Noncon)"
     familiartext = "(Character)"
     scifitext = "(Tech)"
     treetext = "(Tree)"
@@ -67,6 +69,14 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
                         continue
                     line = line.replace(pgtext, "")
                     print("Replaced:" + line)
+                if noncontext in line:
+                    if nonconmode:
+                        elements.pop()
+                        weights.pop()
+                        rarities.pop()
+                        sources.pop()
+                        continue
+                    line = line.replace(noncontext, "")
                 if familiartext in line:
                     if classicfamiliar:
                         elements.pop()
@@ -301,6 +311,8 @@ def open_settings():
     familiar_button.place(x=138, y=200, in_=settings_window, anchor="center")
     scifi_button = Button(settings_window, text='No Scifi: Off', width=24, command=lambda: togglefilter("scifi"), font=(selectedfont, 12), background='#111', fg='#FFF')
     scifi_button.place(x=138, y=240, in_=settings_window, anchor="center")
+    noncon_button = Button(settings_window, text='No Noncon: On', width=24, command=lambda: togglefilter("nonconmode"), font=(selectedfont, 12), background='#111', fg='#FFF')
+    noncon_button.place(x=138, y=280, in_=settings_window, anchor="center")
     text_options = ["Courier", "Arial", "Times New Roman", "Comic Sans MS", "Papyrus", "Wingdings"]
     updateoptions()
 
@@ -308,12 +320,15 @@ def togglefilter(filtertype):
     global pgmode
     global classicfamiliar
     global scifi
+    global nonconmode
     if filtertype == "pgmode":
         pgmode = pgmode ^ 1
     elif filtertype == "classicfamiliar":
         classicfamiliar = classicfamiliar ^ 1
     elif filtertype == "scifi":
         scifi = scifi ^ 1
+    elif filtertype == "nonconmode":
+        nonconmode = nonconmode ^ 1
     updateoptions()
 
 def updateoptions():
@@ -321,9 +336,11 @@ def updateoptions():
     global familiar_button
     global pg_button
     global scifi_button
+    global noncon_button
     global pgmode
     global classicfamiliar
     global scifi
+    global nonconmode
     if pgmode:
         pg_button.config(text="PG Mode: On")
     else:
@@ -336,6 +353,10 @@ def updateoptions():
         scifi_button.config(text="No Scifi: On")
     else:
         scifi_button.config(text= "No Scifi: Off")
+    if nonconmode:
+        noncon_button.config(text="No Noncon: On")
+    else:
+        noncon_button.config(text="No Noncon: Off")
 
 def update_font(*args):
     global selectedfont

@@ -59,6 +59,8 @@
       <ul class="list" id="treeList"></ul>
       <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Show (Nsfw)-tagged nodes in views. Off by default.">
         <input type="checkbox" id="showNsfw" style="width:22px;height:22px"> Show NSFW nodes</label>
+      <label id="showNonconRow" style="display:flex;gap:8px;align-items:center;min-height:44px" title="Show nodes flagged for primarily non-consensual sexual use. Off by default; only offered while NSFW nodes are shown.">
+        <input type="checkbox" id="showNoncon" style="width:22px;height:22px"> Show Noncon nodes</label>
     </div>
     <div class="card">
       <h2>New tree</h2>
@@ -107,6 +109,8 @@
         <div class="row" style="margin-top:8px">
           <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Also include (Nsfw)-tagged entries in generated trees.">
             <input type="checkbox" id="newNsfw" style="width:22px;height:22px"> Include NSFW</label>
+          <label id="newNonconRow" style="display:flex;gap:8px;align-items:center;min-height:44px" title="Also include entries flagged for primarily non-consensual sexual use. Only offered while NSFW is included.">
+            <input type="checkbox" id="newNoncon" style="width:22px;height:22px"> Include Noncon</label>
           <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Also include (Gacha)-tagged entries, which are normally excluded from trees.">
             <input type="checkbox" id="newGachaOnly" style="width:22px;height:22px"> Include gacha-only</label>
           <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Force a single connected component, adding long bridge links if needed.">

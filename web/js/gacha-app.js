@@ -128,13 +128,14 @@
       rmin: isNaN(rmin) ? null : rmin,
       rmax: isNaN(rmax) ? null : rmax,
       hideNsfw: !!$("fNsfw").checked,
+      hideNoncon: !!$("fNoncon").checked,
       hideTech: !!$("fTech").checked,
       dedup: !!$("fDedup").checked
     };
     DB.settings.filters = {
       q: F.q, sources: F.sources,
       rmin: $("fRmin").value, rmax: $("fRmax").value,
-      hideNsfw: F.hideNsfw, hideTech: F.hideTech, dedup: F.dedup
+      hideNsfw: F.hideNsfw, hideNoncon: F.hideNoncon, hideTech: F.hideTech, dedup: F.dedup
     };
     save();
     return F;
@@ -145,8 +146,10 @@
     $("fRmin").value = F.rmin || "";
     $("fRmax").value = F.rmax || "";
     $("fNsfw").checked = F.hideNsfw !== false; // safe by default
+    $("fNoncon").checked = F.hideNoncon !== false; // safe by default
     $("fTech").checked = !!F.hideTech;
     $("fDedup").checked = !!F.dedup;
+    updateNonconRow();
     refreshSources(false);
     // legacy single-source setting -> check just that one
     const legacy = F.sources || (F.source ? [F.source] : null);
@@ -162,7 +165,7 @@
         q: $("q").value, sources: checkedSources(),
         rmin: parseFloat($("fRmin").value) || null,
         rmax: parseFloat($("fRmax").value) || null,
-        hideNsfw: !!$("fNsfw").checked, hideTech: !!$("fTech").checked
+        hideNsfw: !!$("fNsfw").checked, hideNoncon: !!$("fNoncon").checked, hideTech: !!$("fTech").checked
       };
       const cats = category === "random" ? CATS.slice(1) : [category];
       let n = 0;
@@ -173,7 +176,7 @@
           (!F.sources.length || F.sources.includes(e.s)) &&
           (F.rmin == null || e.r >= F.rmin) &&
           (F.rmax == null || e.r <= F.rmax) &&
-          (!F.hideNsfw || !e.nsfw) && (!F.hideTech || !e.tech) &&
+          (!F.hideNsfw || !e.nsfw) && (!F.hideNoncon || !e.noncon) && (!F.hideTech || !e.tech) &&
           (!ql || e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql))).length;
       }
       $("poolCount").textContent = `≈${n} entr${n === 1 ? "y" : "ies"} in pool.`;
@@ -595,9 +598,15 @@
     } catch (e) { toast(e.message || "Import failed.", true); }
     $("fileGfSrc").value = "";
   });
-  for (const id of ["q", "fRmin", "fRmax", "fNsfw", "fTech", "fDedup"]) {
+  for (const id of ["q", "fRmin", "fRmax", "fNsfw", "fNoncon", "fTech", "fDedup"]) {
     $(id).addEventListener("change", () => { collectFilters(); updatePoolCount(); });
     $(id).addEventListener("input", updatePoolCount);
   }
+  // The Noncon toggle only appears once NSFW content itself is allowed in.
+  function updateNonconRow() {
+    const row = $("fNonconRow");
+    if (row) row.style.display = $("fNsfw").checked ? "none" : "";
+  }
+  $("fNsfw").addEventListener("change", updateNonconRow);
   renderTickets();
 })();

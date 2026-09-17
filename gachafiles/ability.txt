@@ -223,9 +223,9 @@
 112. Typhoon, 4.2, Generic
 #Manifest and control typhoons at will, from miniature direct attacks to area-wide devastation.
 113. Breeze, 0.4, Generic
-#Conjure a light breeze from your body, far too weak to knock a grown man down.
+#Conjure a light breeze from your body, far too weak to knock a grown person down.
 114. Gust, 1.6, Generic
-#Conjure and control winds strong enough to injure people and knock grown men off their feet.
+#Conjure and control winds strong enough to injure people and knock grown people off their feet.
 115. Wind, 2.4, Generic
 #Conjure and control winds and air with decent power and precision, strong enough to kill with wind lashes or throw people with gusts.
 116. Gale, 3.5, Generic
@@ -691,7 +691,7 @@
 346. hybrid Ghoul Physiology, 5.5, Tokyo Ghoul
 #Transform into a hybrid ghoul, far stronger than average ghouls with none of their weaknesses. Massively amplifies physical attributes, grants powerful regeneration and a random Kagune, and removes the need to eat human flesh while retaining its benefits.
 347. Dragon Kakuja, 7.0, Tokyo Ghoul
-#"Become a true biological terror." Take the form of a Dragon Kakuja, an over 10km centipede-like dragon of RC cells stronger than any man-made material. Passively emit high-density RC clouds that turn nearby things into flesh-eating superhuman monsters under your telepathic control, and morph your body into tentacles or flesh monsters.
+#"Become a true biological terror." Take the form of a Dragon Kakuja, an over 10km centipede-like dragon of RC cells stronger than any artificial material. Passively emit high-density RC clouds that turn nearby things into flesh-eating superhuman monsters under your telepathic control, and morph your body into tentacles or flesh monsters.
 348. Keratin Manipulation, 3.9, Generic
 #Generate and control keratin to form constructs like horns, armour, and shields, or fire scales and needles.
 349. Fierce Wings, 4.9, MHA
@@ -735,7 +735,7 @@
 368. Hormone Manipulation, 4.0, One Piece
 #Freely create, control, and design custom hormones. Inject them into others via bloodstream exposure or fluid exchange.
 369. Tentacles, 3.4, Generic
-#Manifest controllable biological tentacles that act as extra limbs to smash, grab, whip, molest, and manipulate.
+#Manifest controllable biological tentacles that act as extra limbs to smash, grab, whip, and manipulate.
 370. Four Arms, 1.7, Generic
 #Manifest an extra set of arms that are as easy to control as your first pair.
 371. Venom Injection, 2.2, Generic
@@ -983,7 +983,7 @@
 492. Vita Telum, 4.4, Generic
 #Converts your life into supernaturally durable weapons of solidified blood emerging from an open wound. Greater vitality or sacrificed lifespan makes them stronger, with lifespan sacrifice also granting powerful effects based on your abilities and traits. Created weapons fade in power over time until returning to normal blood.
 493. Authority of Lust, 6.6, Generic
-#When activated, everyone who can see you treats you as an object of affection, platonic or romantic, with stronger effect at larger power gaps in your favor. Mundanes may surrender life savings or spouse, while equals may only treat you as an ordinary friend.
+#(Noncon) When activated, everyone who can see you treats you as an object of affection, platonic or romantic, with stronger effect at larger power gaps in your favor. Mundanes may surrender life savings or spouse, while equals may only treat you as an ordinary friend.
 494. Steal, 3.3, Generic
 #Remotely steals an unbound target's possession within 10 meters without them noticing. More valuable objects cost more energy.
 495. Grand Theft, 5.3, Generic
@@ -991,7 +991,7 @@
 496. Record, 2.7, Generic
 #Trash Count - Records your sight into memory in perfect detail, recallable anytime as if constantly in mind, surpassing photographic memory.
 497. Arousal, 3.6, Generic
-#(Nsfw) Makes targets in your vision aroused, or climax with enough arousal. Stronger targets cost more energy, and far stronger ones notice your attempts.
+#(Nsfw)(Noncon) Makes targets in your vision aroused, or climax with enough arousal. Stronger targets cost more energy, and far stronger ones notice your attempts.
 498. Audacity, 4.6, Generic
 #Lets you go unnoticed as people ignore you to their utmost, allowing theft, break-ins, or kills without comment. Stronger targets resist more, noticing drastic acts; upkeep costs energy and stamina.
 499. Mind Reading, 4.5, Generic
@@ -1149,7 +1149,7 @@
 575. Somnabulist, 4.2, MHA
 #Emits very powerful sleeping gas from your skin as purple mist.
 576. Phantom Touch, 2.3, Generic
-#Lets you touch a target at range, making them feel your hands or mouth on a spot of your choosing. These are phantom sensations only and cannot physically affect them.
+#(Noncon) Lets you touch a target at range, making them feel your hands or mouth on a spot of your choosing. These are phantom sensations only and cannot physically affect them.
 577. Collaring, 3.8, Generic
 #Lets you collar a defeated or submitting target, preventing them from moving to harm you and forcing them to obey your orders. Manifests as a translucent, hideable collar and chain around their neck.
 578. Material Swim, 2.4, Generic
@@ -1227,7 +1227,7 @@
 614. True Telekinesis, 8.8, Generic
 #Your telekinesis is second to none, usable as forcefield, invisible force, or direct object manipulation, limited only by training. Rivals or exceeds Tatsumaki from One Punch Man.
 615. Daily Grind, 4.3, Generic
-#Once this ability has spent 24 total hours in an active slot, permanently add a regular grown man's strength and endurance to your stats. Repeatable.
+#Once this ability has spent 24 total hours in an active slot, permanently add a regular grown person's strength and endurance to your stats. Repeatable.
 616. Training Booster, 4.8, Generic
 #While active, all training is twice as effective, doubling for each empty ability slot: 1 empty slot = 2x, 2 = 4x, 3 = 8x, etc.
 617. Scouter, 3.4, Generic
@@ -1251,7 +1251,7 @@
 626. Word Magic, 6.4, Generic
 #Lets you actualize words written in the air, such as FREEZE to freeze, IMMOVABLE to pin mid-air, and BURN to ignite. Words too strong for your level fail.
 627. Life Fiber Creation, 5.8, Kill La Kill
-#Lets you convert lifeforce into Life Fibers, stronger than any manmade material yet more elastic than silk. You can freely control them and surround yourself to significantly boost physical abilities.
+#Lets you convert lifeforce into Life Fibers, stronger than any artificial material yet more elastic than silk. You can freely control them and surround yourself to significantly boost physical abilities.
 628. Life Fiber hybrid, 6.8, Generic
 #Your body is infused with Life Fibers, granting massively superhuman physical abilities, incredible healing, and immense vitality. Wounds pull back together, even rejoining halves split apart.
 629. Infernal Chains, 3.8, Generic
@@ -1977,7 +1977,7 @@
 992. Prophetic Compass, 3.5, Generic
 #You can conjure a phantasmal compass in your hands that points toward your target. As long as you know the target and carry something related to it, you can track it down.
 993. Tentacled Creature, 3.3, Generic
-#You can turn into a hentai tentacle creature or manifest its tentacles at will. You resemble a ball with numerous tentacles that act as both limbs and reproductive organs.
+#(Noncon) You can turn into a hentai tentacle creature or manifest its tentacles at will. You resemble a ball with numerous tentacles that act as both limbs and reproductive organs.
 994. Madness Wavelength, 5.2, Generic
 #You emit a wavelength that alters the minds and perceptions of those it touches. You can drive a whole town to madness while passing by, and can tweak the madness exerted.
 995. Time Accel, 4.0, Fate
@@ -2057,7 +2057,7 @@
 1032. Sticky Icky, 0.4, Generic
 #Your skin is uncomfortably sticky to others, as if soaked in glue or soda, though you feel no difference.
 1033. Tinker - Erotics, 2.6, Generic
-#(Tech) Tinker - Allows you to build technological constructs or items related to sexual events, such as aphrodisiacs, sexual instruments, contraceptives, etc.
+#(Tech)(Noncon) Tinker - Allows you to build technological constructs or items related to sexual events, such as aphrodisiacs, sexual instruments, contraceptives, etc.
 1034. Shrine, 6.1, Jujutsu Kaisen
 #The Cursed Technique of the King of Curses. Shrine grants Cleave, Dismantle, and Furnace. Dismantle sends flying invisible slashes of varying power, Cleave creates stronger instant slashes on touched targets, and Furnace manifests a powerful fire arrow. With enough mastery or enlightenment, you may unleash the Malevolent Shrine.
 1035. Imagine Breaker, 6.5, Toaru
@@ -2065,7 +2065,7 @@
 1036. Sex Manipulation, 1.0, Generic
 #(Nsfw) Allows you to alter your genitals to your liking as long as the changes aren't absurd.
 1037. Genderswap, 1.8, Generic
-#Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
+#Allows you to swap your gender and the genders of those who don't or can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
 1038. Deception, 3.1, Generic
 #Your words are imbued with lies, making them sound more convincing and believable. Stronger targets and more unbelievable lies reduce effectiveness and consume more energy.
 1039. Vainglory, 6.4, Generic
@@ -2333,7 +2333,7 @@
 1170. Edict, 4.8, Generic
 #Impose rules by touching targets and expending energy; targets feel incredible mental compulsion to follow them, like forbidding milk, forcing travel at set times, or banning clothes in a room. Stronger targets are harder to affect, and edicts against self-preservation are exponentially harder.
 1171. Phantom Sensation, 3.3, Generic
-#Project sensations of actions onto someone in your line of sight without physically affecting them. You can project groping, licking, scratching, choking, burning, stabbing, hanging, etc., provided you could do those things without the ability.
+#(Noncon) Project sensations of actions onto someone in your line of sight without physically affecting them. You can project groping, licking, scratching, choking, burning, stabbing, hanging, etc., provided you could do those things without the ability.
 1172. Mind Blast, 2.5, Generic
 #Send a wave of shimmering psionic energy through your eyes. On hitting a sentient target it causes mental damage, confusion, and painful headaches. Effectiveness depends on the target's mental and magical power.
 1173. Geass - Command, 5.4, Code Geass
@@ -2373,7 +2373,7 @@
 1190. Roentgenium Manipulation, 0.1, Generic
 #Sense and telekinetically control Roentgenium in a radius around you. Range and power can be increased by training, scaling with your energy reserves.
 1191. Charon's Bell, 4.7, Generic
-#Ring the Ferryman's bell to call the souls of the dead to you, by default all souls in range, or a specific soul instantly if you hold something relevant like corpse parts or mementos, as long as their soul is in your dimension. Powerful unwilling targets can resist. Called spirits are not commanded but can be interacted with, and you can store 100 souls by default, equal to a grown man, increasing with energy reserves.
+#Ring the Ferryman's bell to call the souls of the dead to you, by default all souls in range, or a specific soul instantly if you hold something relevant like corpse parts or mementos, as long as their soul is in your dimension. Powerful unwilling targets can resist. Called spirits are not commanded but can be interacted with, and you can store 100 souls by default, equal to a grown person, increasing with energy reserves.
 1192. Call to Arms, 4.3, Generic
 #(Gacha) Call to Arms rolls the familiar gacha to temporarily grant you a familiar fighting by your side for 1 hour, then it disappears. At 1 Ability Slot you pull Bronze, 2 slots = Silver, 3 slots = Gold, 4 Slots = Platinum, capping at 5 slots = Diamond. 24 Hour cooldown.
 1193. Summon Angelic Guardian, 3.5, Generic
@@ -2491,7 +2491,7 @@
 1249. Fight Mode, 1.3, Generic
 #Fill your body with adrenaline, norepinephrine, cortisol, endorphins, testosterone, and dopamine to enter an enhanced fight mode. Get your head in the game without suffering overdose consequences.
 1250. Induce Lactation, 1.5, Generic
-#(Nsfw) Induce lactation on targets in your line of sight, provided they are biologically capable.
+#(Nsfw)(Noncon) Induce lactation on targets in your line of sight, provided they are biologically capable.
 1251. Anchor Back, 1.8, Generic
 #Place a mark where you stand; while active you can teleport back to it. Greater distance costs more energy. Only one mark at a time.
 1252. Adventure Line, 2.4, Stanley Parable
@@ -2635,7 +2635,7 @@
 1321. Comprehensive Recovery, 6.2, Generic
 #While Recovery stays slotted, every 24 hours slotted you are fully cured of all injuries, afflictions, curses, illnesses, and other health issues below Divine Rank. Removing it resets the timer.
 1322. Hoard, 5.7, Generic
-#Access spatial storage for non-living objects like an inventory. While active, value stored (as gold coins) boosts physical stats, e.g. a thousand coins adds a grown man's strength.
+#Access spatial storage for non-living objects like an inventory. While active, value stored (as gold coins) boosts physical stats, e.g. a thousand coins adds a grown person's strength.
 1323. Guard, 3.6, Generic
 #Mark a target as your Guard ward; damage they would take transfers to you proportionally — their 10% damage becomes your 10% damage.
 1324. Greater Guard, 5.4, Generic

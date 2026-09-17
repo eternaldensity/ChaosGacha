@@ -24,10 +24,10 @@ window.ChaosGacha = (function () {
 
   function cleanDesc(d) {
     return String(d || "").replace(/#/g, "")
-      .replace(/\((Nsfw|Tech|Character|Gacha)\)/g, "").trim();
+      .replace(/\((Nsfw|Tech|Character|Gacha|Noncon)\)/g, "").trim();
   }
 
-  // filters: {q, source|sources, rmin, rmax, hideNsfw, hideTech, exclude[]}.
+  // filters: {q, source|sources, rmin, rmax, hideNsfw, hideNoncon, hideTech, exclude[]}.
   // A plain string is treated as {q} (backwards compatible); a single
   // source string behaves like a one-element sources list.
   function normFilt(f) {
@@ -53,6 +53,7 @@ window.ChaosGacha = (function () {
       (F.rmin == null || e.r >= F.rmin) &&
       (F.rmax == null || e.r <= F.rmax) &&
       (!F.hideNsfw || !e.nsfw) &&
+      (!F.hideNoncon || !e.noncon) &&
       (!F.hideTech || !e.tech) &&
       (!excl || !excl.has(e.name)) &&
       (!ql || e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql)));

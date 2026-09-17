@@ -225,7 +225,7 @@
 113. Meeseeks Box, 4.5, Rick and Morty
 #Button-activated box summoning a very competent Mr. Meeseeks who obeys your order then disappears. Orders it cannot complete or taking over 7 days make it hostile and violent.
 114. Monstergirls and You, 3.3, Generic
-#Monster-girl book turning any monster it touches into an attractive female version for the user. Strength and abilities unchanged; target sees the change as natural.
+#(Noncon) Monster-girl book turning any monster it touches into an attractive female version for the user. Strength and abilities unchanged; target sees the change as natural.
 115. Magic Scroll Blizzard, 1.7, Generic
 #Magical scroll invoking a fierce 1 km blizzard centered on the user, harmless to them, lasting 30 minutes. Restock Timer: 8 hours.
 116. Exorcist's Gloves, 1.1, Generic
@@ -437,7 +437,7 @@
 219. Combat Armor, 3.6, Generic
 #A tailored basic Combat Armor set. Place 10 kilograms of any ore inside, and after 24 hours the armor's composition changes to that ore or metal.
 220. Kamui Senketsu, 7.3, Kill La Kill
-#Sentient clothing made exclusively of liber that synchronizes with its wearer, extremely augmenting physical abilities while draining vitality. More durable than any manmade material, it can act independently and shapeshift into various forms.
+#Sentient clothing made exclusively of liber that synchronizes with its wearer, extremely augmenting physical abilities while draining vitality. More durable than any artificial material, it can act independently and shapeshift into various forms.
 221. Goku Uniform 1star, 2.7, Kill La Kill
 #A school uniform of 10% Life Fibers granting superhuman strength to break walls and flip cars. Extremely durable beyond carbon fiber. Choose colors before taking it out.
 222. Goku Uniform 2star, 3.8, Kill La Kill
@@ -769,7 +769,7 @@
 385. Demon King's Longsword, 4.2, Solo Leveling
 #A giant sword wielded by the demon king that summons devastating thunderstorms with each swing, growing stronger with its user.
 386. Kamish's Wrath, 4.7, Solo Leveling
-#A pair of daggers made from the dragon Kamish, nigh unbreakable and sharper than any manmade blade. They synchronize with your mana to adjust strength, and you can increase their weight at will.
+#A pair of daggers made from the dragon Kamish, nigh unbreakable and sharper than any artificial blade. They synchronize with your mana to adjust strength, and you can increase their weight at will.
 387. Teleportation Amulet, 4.4, Generic
 #An ornate platinum amulet that teleports the wearer anywhere they can see, with a 1-minute cooldown.
 388. Divine Crucifix, 3.8, Generic
@@ -791,15 +791,15 @@
 396. Character Card Wolverine, 5.0, Generic
 #A character card granting yourself or another Wolverine's full healing factor for 10 minutes. 3 uses.
 397. Bronze Heart Ticket, 1.5, Generic
-#Think of the person you want to affect and rip the ticket to make them like you slightly more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Noncon) Think of the person you want to affect and rip the ticket to make them like you slightly more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 398. Silver Heart Ticket, 2.5, Generic
-#Think of the person you want to affect and rip the ticket to make them like you more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Noncon) Think of the person you want to affect and rip the ticket to make them like you more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 399. Gold Heart Ticket, 3.5, Generic
-#Think of the person you want to affect and rip the ticket to make them like you a lot more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Noncon) Think of the person you want to affect and rip the ticket to make them like you a lot more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 400. Royal Heart Ticket, 4.5, Generic
-#Think of the person you want to affect and rip the ticket to make them like you considerably more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Noncon) Think of the person you want to affect and rip the ticket to make them like you considerably more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 401. Cupid's Ticket, 5.5, Generic
-#Think of the person you want to affect and rip the ticket to make them fall in love with you. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Noncon) Think of the person you want to affect and rip the ticket to make them fall in love with you. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 402. Auto Doc, 3.9, Fallout
 #(Tech) An autonomous advanced doctor station from Big MT. created by Doctor Mobius. This large capsule performs even the most complicated procedures with near-perfect expertise from simple instructions when hooked to sufficient power.
 403. Blight Spewer, 5.7, Calamity Mod
@@ -943,7 +943,7 @@
 472. Dragon Dictionary, 6.1, Skyrim
 #(Tome) Parthuunax's dictionary teaching anyone Thu'um, containing all Tamriel Shouts for study. Learning speed depends on magical and vocal talent, with more powerful esoteric shouts and stages harder to learn. Spell List: https://elderscrolls.fandom.com/wiki/Dragon_Shouts
 473. Cupid's Arrow, 6.8, Generic
-#An arrow making two pierced people fall in love; stab each target once, with the first stabbed falling for the second. Repeat reversed for reciprocity. Legendary rank or stronger targets can resist.
+#(Noncon) An arrow making two pierced people fall in love; stab each target once, with the first stabbed falling for the second. Repeat reversed for reciprocity. Legendary rank or stronger targets can resist.
 474. Hand of Midas, 5.8, Generic
 #King Midas's severed hand retaining its gold-touch; anything touched with the pointer finger under 5 tons or weaker than Epic rank becomes solid gold. Living beings can resist depending on strength.
 475. FREAK Chip, 5.0, Hellsing
@@ -1107,7 +1107,7 @@
 554. Skeleton in Closet, 0.4, Generic
 #A completely ordinary skeleton from an ordinary person, complete with its own closet.
 555. Fairy Dust, 1.0, Peter Pan
-#Fairy Dust freshly shaken from Tinker Bell. This pouch floats 5 grown men for 1 hour or one grown man for 5 hours. Restock Timer: 24 hours.
+#Fairy Dust freshly shaken from Tinker Bell. This pouch floats 5 grown people for 1 hour or one grown person for 5 hours. Restock Timer: 24 hours.
 556. Skippy, 1.7, Cyberpunk 2077
 #(Tech) Skippy, a Smart Handgun firing homing bullets with onboard AI that aims on the fly and distinguishes ally from enemy, while judging your actions. You get 5 magazines every 24 hours.
 557. Herrera Outlaw, 1.0, Cyberpunk 2077
@@ -1425,7 +1425,7 @@
 713. Sword of the Storm, 2.6, Xiaolin Showdown
 #An intangible Shen Gong Wu sword that when imbued with energy creates powerful winds and enhances wind and weather abilities.
 714. Third Arm Sash, 1.9, Xiaolin Showdown
-#A Shen Gong Wu sash acting as a controllable third arm, long, flexible, and considerably stronger than a grown man.
+#A Shen Gong Wu sash acting as a controllable third arm, long, flexible, and considerably stronger than a grown person.
 715. Ascalon, 9.6, Ben 10
 #Azmuth's Ascalon, one of the universe's greatest weapons, channeling reality's fundamental forces to create Cosmic-energy armor granting immense physical boost, defense, and mental immunity. It can cleave anything including realms, reality, and spacetime for teleportation, and project energy slashes. It can deflect, reflect, and cut energy itself, and drain the powers of opponents it stabs.
 716. Duffel of Hardware, 3.6, Generic
@@ -1477,7 +1477,7 @@
 739. Phone A Friend, 2.4, Generic
 #A simple one-use landline phone. Dial while picturing the face of someone whose name you know in your current universe and they receive a copy to answer with. Calls last at most 1 hour, after which the phone is erased from existence.
 740. Ejaculatte, 2.5, Generic
-#(Nsfw) A strangely branded but normal-looking can of coffee that makes the drinker orgasm intensely and uncontrollably when drunk. Restock Timer: 8 hours.
+#(Nsfw)(Noncon) A strangely branded but normal-looking can of coffee that makes the drinker orgasm intensely and uncontrollably when drunk. Restock Timer: 8 hours.
 741. The Census, 6.8, Generic
 #A book listing name, address, occupation, and short bio of every named living sapient creature within a 1 million-kilometer range. It auto-sorts and filters by age, race, address, height, etc. per your specifications, and you can open directly to a being's page if you know their name and appearance.
 742. Extremely Loud Metal Pipe, 0.4, Generic
@@ -1671,7 +1671,7 @@
 836. Bold & Brash, 0.3, Spongebob
 #Squidward Quincy Tentacles's Bikini Bottom masterpiece that refreshes to perfect condition every 24 hours to protect the canvas.
 837. Monster Fucker Permit, 4.2, Generic
-#"Officially Sanctioned by the Goat herself." Pointed at a monster or creature, this permit turns them into a more humanoid attractive member of your attracted gender and grants baseline intelligence if lacking. Authority figures accept it as legitimate proof you are qualified for monster-girl cases.
+#(Noncon) "Officially Sanctioned by the Goat herself." Pointed at a monster or creature, this permit turns them into a more humanoid attractive member of your attracted gender and grants baseline intelligence if lacking. Authority figures accept it as legitimate proof you are qualified for monster-girl cases.
 838. Berserker Armor, 2.2, Berserk
 #A Dwarven Blacksmith's exceptionally durable magical armor that fits the wearer perfectly. It boosts performance by suppressing pain and mental limiters, impales you to pin your body together when damaged, and self-repairs over time. It amplifies negative emotions, requiring careful moderation.
 839. The Cursed Ticket, 2.0, Generic

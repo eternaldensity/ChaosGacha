@@ -9,7 +9,7 @@
 5. Blind Eye, 1.1, Generic
 #You disappear in a crowd and go unnoticed as long as you should not stand out.
 6. What's Monogamy, 3.0, Generic
-#Your potential partners accept your harem without questioning the logistics or logic of multiple lovers.
+#(Noncon) Your potential partners accept your harem without questioning the logistics or logic of multiple lovers.
 7. Antibody, 2.7, Generic
 #You strongly resist most diseases.
 8. Longevity, 4.5, Generic
@@ -23,7 +23,7 @@
 12. Enhanced Stamina, 2.2, Generic
 #You have inordinate stamina relative to your current form, so it persists if you change species.
 13. Terrifying Presence, 3.6, Generic
-#You terrify others at will, making children cry and grown men piss themselves as you seem more a sadistic force of nature than a man.
+#You terrify others at will, making children cry and grown people piss themselves as you seem more a sadistic force of nature than a person.
 14. Battle Continuation, 4.6, Generic
 #You fight through wounds, exhaustion, and injuries without dulling pain, and you recover fine as long as the wound is not lethal and you can still stand.
 15. Mountman, 2.5, Generic
@@ -186,8 +186,8 @@
 #(Tech) You are the supreme Tinker who innovates wondrous constructs on your own merits without needing specializations, which now only boost your natural prowess. You cannot utilize Tinker abilities that are not from your native world.
 94. Gambler, 4.3, Generic
 #(Gacha) Every time you would roll the ticket, you first roll a D20: {20}= Ticket Rank Up, {19 - 17}= Advantage, {16 - 13}= Change Ticket Type, {12 - 8}= Nothing happens, {7 - 2}= Ticket Rank Down, {1}= Ticket is destroyed. This trait can be rerolled or toggled.
-95. Lady Killer, 2.8, Generic
-#Women always find you at least a little attractive regardless of preferences, and many consider you handsome.
+95. Heartbreaker, 2.8, Generic
+#People always find you at least a little attractive regardless of preferences, and many consider you strikingly attractive.
 96. Charming Smile, 1.3, Generic
 #Your smile charms others, putting people at ease and making you more attractive to preferred partners.
 97. Minty Breath, 0.2, Generic
@@ -215,7 +215,7 @@
 108. Smell the Magic, 3.4, Generic
 #You smell magic and mysticism, deciphering people through their magical scent — a necromancer reeks of death and decay, an ice magician smells like crisp winter air, etc.
 109. One Size Fits All, 1.0, Generic
-#(Nsfw) Your partners feel no discomfort from your physical features; your phallus somehow fits inside them even at ludicrous sizes.
+#(Nsfw) Your partners feel no discomfort from your physical features; your anatomy somehow fits them even at ludicrous sizes.
 110. Salt Detection, 0.1, Generic
 #You sense the location of salt, but only salt ready for human consumption.
 111. Commander, 3.6, Generic
@@ -261,7 +261,7 @@
 131. Sexual Calibration, 2.3, Generic
 #(Nsfw) You eliminate sex's minor inconveniences, adjusting how STDs, hygiene, and unwanted pregnancy affect you. You are also very talented in the tantric arts.
 132. Golden Shot, 1.3, Generic
-#Your swimmers are the strongest in the world; any woman you cum inside WILL get pregnant, even if she is more barren than arid deserts. (If you didn't have the right equipment before, you will now if you choose to. If not, reroll this trait.)
+#(Noncon) Your swimmers are the strongest in the world; anyone you cum inside WILL get pregnant, even if they are more barren than arid deserts. (If you lack the right equipment, you gain it should you choose to. If not, reroll this trait.)
 133. Ygdar Orus Li Ox, 4.9, Generic
 #"You only live once." At the moment of your death, you resuscitate with all lethal wounds healed and some energy restored, then this trait is deleted from your status.
 134. Hero Candidate, 3.3, Generic
@@ -281,9 +281,9 @@
 141. Peerless, 3.6, Generic
 #You are peerless in bed, quickly adapting to partners' preferences and learning their weak spots, and you improve in the tantric arts much faster. None leave your bed unsatisfied.
 142. Helltaker, 3.3, Generic
-#"You wake up, dreaming of a harem of demon girls." Infernally aligned/Demonic beings find you more attractive and grant their affection more easily.
+#"You wake up, dreaming of a harem of demons." Infernally aligned/Demonic beings find you more attractive and grant their affection more easily.
 143. Heaventaker, 3.5, Generic
-#"You wake up, dreaming of a harem of... angel girls? That doesn't sound right-" Holy aligned/Angelic beings find you more attractive and grant their affection more easily.
+#"You wake up, dreaming of a harem of... angels? That doesn't sound right-" Holy aligned/Angelic beings find you more attractive and grant their affection more easily.
 144. Denied from Oblivion, 6.4, Generic
 #Hell's gates are closed to you and heaven kicked down the ladder, leaving you stuck here. You remain in the mortal world as a soul after death.
 145. Curse Devouring Physique, 4.2, Generic
@@ -351,7 +351,7 @@
 176. Boundless Stamina, 4.4, Generic
 #Your stamina is boundless; even as a regular person you can run a marathon with ease and need only a minute's rest afterward. Your stamina recovers incredibly quickly and exhaustion fades much faster.
 177. Lucky Sukebe, 2.3, Generic
-#(Nsfw) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find a girl changing.
+#(Nsfw)(Noncon) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find someone changing.
 178. Spirit Affinity, 3.0, Generic
 #You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
 179. Immortal Soul, 4.9, Generic
@@ -516,9 +516,9 @@
 #You project a charismatic aura that draws people in and elevates you in their eyes.
 259. Sensual Presence, 3.6, Generic
 #(Nsfw) You project a subtle sensual presence that increasingly attracts and arouses those exposed to it. It only affects people friendly to you.
-260. Harem Lord, 2.7, Generic
+260. Harem Keeper, 2.7, Generic
 #You face far less resistance from potential partners and society when building a harem, though it remains challenging.
-261. Harem King, 3.3, Generic
+261. Harem Sovereign, 3.3, Generic
 #Your preferred partners are more attracted to you, and neither society nor your partners object to your harem itself, though other relationship issues may remain.
 262. Camaraderie, 3.1, Generic
 #You build affection, trust, and respect with teammates and allies much faster, especially by fighting alongside them. You also cooperate with others far more effectively.
@@ -597,15 +597,15 @@
 299. Blessing of Bast, 2.7, Generic
 #Blessed by Bast, goddess of cats and grace, you gain cat-like reflexes, agility, and night vision. Felines adore you.
 300. Fertility Calibration, 2.2, Generic
-#You freely adjust your own fertility from absolute sterility to extreme potency. You can impregnate even the completely infertile, or match the Goat of a Thousand Young.
+#(Noncon) You freely adjust your own fertility from absolute sterility to extreme potency. You can impregnate even the completely infertile, or match the Goat of a Thousand Young.
 301. Draw of Fate, 3.3, Generic
 #Your fate is strong and immoderate, curving toward you like a main protagonist. You draw plenty of luck, both good and bad.
 302. Dealmaker, 4.5, Generic
 #"A Deal's a Deal." People feel compelled to fulfil their end of any explicit deal they make with you (No clever wording or Fae deals). It is also far easier for you to goad people into outrageous bets.
 303. Hentai Protagonist, 4.8, Generic
-#(Nsfw) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
+#(Nsfw)(Noncon) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
 304. Ecchi Protagonist, 3.5, Generic
-#(Nsfw) Your path is shaped by the Ecchi genre, drawing you into situations like walking in on someone changing, joining a dorm of attractive people, or getting locked in a closet with someone hot.
+#(Nsfw)(Noncon) Your path is shaped by the Ecchi genre, drawing you into situations like walking in on someone changing, joining a dorm of attractive people, or getting locked in a closet with someone hot.
 305. Honesty, 2.2, Generic
 #You project an aura that draws honesty from others. People lie worse around you and feel greater remorse for deceiving you.
 306. Truthspeaker, 4.2, Generic
@@ -735,7 +735,7 @@
 368. Monstergirl Enthusiast, 2.5, Generic
 #(Nsfw) Hybrid girls and those of the opposite gender with monster or beast traits like you more and build relationships with you more easily. Some monsters you encounter seem oddly humanoid and compatible.
 369. Reaper's Presence, 4.4, Generic
-#Upgrade to Terrifying Presence - You project a nightmarish presence that can make a grown man soil himself without a word. Every gesture you make can feel like a death threat when you want it to.
+#Upgrade to Terrifying Presence - You project a nightmarish presence that can make a grown person soil themselves without a word. Every gesture you make can feel like a death threat when you want it to.
 370. Magic Is Not Real, 7.4, Generic
 #All magic is completely nullified against you, so even a god of magic dropping the Big Bang on you would not scratch you. You cannot use magic to any extent while this trait stays active.
 371. Summoner, 4.5, Generic

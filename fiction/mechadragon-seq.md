@@ -50,7 +50,7 @@ Produce and control weak little flames, never stronger than matchsticks and cand
 
 #### Genderswap
 
-Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
+Allows you to swap your gender and the genders of those who don't or can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
 
 ## Items
 
@@ -140,7 +140,7 @@ You master riding any mount; when mounted, your senses link and you communicate 
 
 #### Reaper's Presence
 
-Upgrade to Terrifying Presence - You project a nightmarish presence that can make a grown man soil himself without a word. Every gesture you make can feel like a death threat when you want it to.
+Upgrade to Terrifying Presence - You project a nightmarish presence that can make a grown person soil themselves without a word. Every gesture you make can feel like a death threat when you want it to.
 
 #### Challenge DLC (not chosen)
 

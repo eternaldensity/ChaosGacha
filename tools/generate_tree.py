@@ -18,6 +18,8 @@ Content:
   --include-gacha-only       also include (Gacha)-tagged entries
   --include-nsfw             also include (Nsfw)-tagged entries (excluded
                              by default)
+  --include-noncon           also include (Noncon)-tagged entries (excluded
+                             by default)
   --limit N                  randomly sample at most N entries
 
 Placement:
@@ -88,7 +90,7 @@ def parse_description(desc: str):
 
 
 def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
-                 include_gacha_only, include_nsfw=False):
+                 include_gacha_only, include_nsfw=False, include_noncon=False):
     entries = []
     for file in files:
         path = os.path.join(GACHA_DIR, file + ".txt")
@@ -104,7 +106,7 @@ def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
                 if cur is not None:
                     _finalize(file, cur, desc_lines, rarity_min, rarity_max,
                               sources, exclude_sources, include_gacha_only,
-                              include_nsfw, entries)
+                              include_nsfw, include_noncon, entries)
                 cur = {
                     "num": int(m.group(1)),
                     "name": m.group(2).strip(),
@@ -117,12 +119,12 @@ def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
         if cur is not None:
             _finalize(file, cur, desc_lines, rarity_min, rarity_max,
                       sources, exclude_sources, include_gacha_only,
-                      include_nsfw, entries)
+                      include_nsfw, include_noncon, entries)
     return entries
 
 
 def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
-              include_gacha_only, include_nsfw, entries):
+              include_gacha_only, include_nsfw, include_noncon, entries):
     desc = " ".join(l.strip() for l in desc_lines if l.strip())
     tokens, visible = parse_description(desc)
     if "Tree" in tokens:
@@ -143,6 +145,8 @@ def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
         return
     if "Nsfw" in tokens and not include_nsfw:
         return
+    if "Noncon" in tokens and not include_noncon:
+        return
     entries.append({
         "file": file,
         "number": cur["num"],
@@ -153,6 +157,7 @@ def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
         "description": visible,
         "meta": sorted(t for t in tokens if t.startswith("Meta:")),
         **({"nsfw": True} if "Nsfw" in tokens else {}),
+        **({"noncon": True} if "Noncon" in tokens else {}),
     })
 
 
@@ -479,7 +484,8 @@ def save_tree(nodes, edges, stats, items, params, seed, out_path):
 def list_sources():
     for file in ALL_FILES:
         srcs = set()
-        for i in load_entries([file], None, None, set(), set(), True, True):
+        for i in load_entries([file], None, None, set(), set(), True, True,
+                              True):
             srcs.add(i["source"])
         print(f"{file}: {', '.join(sorted(srcs))}")
 
@@ -496,6 +502,8 @@ def main():
     ap.add_argument("--include-gacha-only", action="store_true")
     ap.add_argument("--include-nsfw", action="store_true",
                     help="include (Nsfw)-tagged entries (excluded by default)")
+    ap.add_argument("--include-noncon", action="store_true",
+                    help="include (Noncon)-tagged entries (excluded by default)")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--radius", type=float, default=10.0)
     ap.add_argument("--distance-variance", type=float, default=0.05)
@@ -530,7 +538,7 @@ def main():
 
     items = load_entries(files, args.rarity_min, args.rarity_max,
                          sources, excludes, args.include_gacha_only,
-                         args.include_nsfw)
+                         args.include_nsfw, args.include_noncon)
     if args.limit and args.limit < len(items):
         rng = random.Random(args.seed)
         items = rng.sample(items, args.limit)
@@ -546,6 +554,7 @@ def main():
         "exclude_sources": sorted(excludes) or [],
         "include_gacha_only": args.include_gacha_only,
         "include_nsfw": args.include_nsfw,
+        "include_noncon": args.include_noncon,
         "limit": args.limit,
         "radius": args.radius,
         "distance_variance": args.distance_variance,

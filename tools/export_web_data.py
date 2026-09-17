@@ -57,7 +57,7 @@ CATEGORIES = ["ability", "item", "skill", "trait", "familiar"]
 
 def flag_map():
     """Map (file, number) -> token set by re-scanning the raw data files.
-    Used to preserve NSFW/Tech flags that the tree pipeline strips."""
+    Used to preserve NSFW/Tech/Noncon flags that the tree pipeline strips."""
     out = {}
     for path in [os.path.join(gt.GACHA_DIR, f + ".txt") for f in gt.ALL_FILES]:
         file = os.path.basename(path)[:-4]
@@ -127,10 +127,11 @@ def export_curses():
 
 
 def export_entries():
-    entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True, True)
+    entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True,
+                              True, True)
     flags = flag_map()
     # Data version: hash over topology/behaviour-relevant fields (file,
-    # number, rarity, source, tag, meta tokens, nsfw/tech flags). Display
+    # number, rarity, source, tag, meta tokens, nsfw/tech/noncon flags). Display
     # text (names, descriptions) is excluded so prose edits don't
     # invalidate trees. Trees record the version they were generated with;
     # a mismatch warns that regeneration may produce a different tree.
@@ -141,7 +142,8 @@ def export_entries():
                                e["source"] or "", e["tag"],
                                ",".join(e.get("meta", [])),
                                "nsfw" if "Nsfw" in toks else "",
-                               "tech" if "Tech" in toks else ""]) + "\n").encode("utf-8"))
+                               "tech" if "Tech" in toks else "",
+                               "noncon" if "Noncon" in toks else ""]) + "\n").encode("utf-8"))
     data_version = h.hexdigest()[:10]
     compact = []
     for e in entries:
@@ -153,6 +155,8 @@ def export_entries():
             item["nsfw"] = True
         if "Tech" in toks:
             item["tech"] = True
+        if "Noncon" in toks:
+            item["noncon"] = True
         compact.append(item)
     payload = {"generated_at": datetime.datetime.now(datetime.timezone.utc)
                .isoformat(timespec="seconds"),

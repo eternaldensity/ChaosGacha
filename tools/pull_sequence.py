@@ -123,7 +123,7 @@ def load_curses():
 
 def load_index():
     index = {}
-    items = gt.load_entries(FILES, None, None, set(), set(), True, True)
+    items = gt.load_entries(FILES, None, None, set(), set(), True, True, True)
     for e in items:
         index[(e["file"], e["number"])] = e
     return index

@@ -34,9 +34,21 @@
   function nodeShown(nd) { return !hiddenClasses.has(classOf(nd.rarity).name); }
 
   // Display preference: NSFW nodes are hidden everywhere unless opted in.
+  // Noncon nodes hide behind a second opt-in, offered only with NSFW on.
   // (Generation excludes them by default separately, via filters.includeNsfw.)
   function showNsfw() { return !!(DB.settings && DB.settings.showNsfw); }
-  function visNode(nd) { return !nd || showNsfw() || !nd.nsfw; }
+  function showNoncon() { return !!(DB.settings && DB.settings.showNoncon); }
+  function visNode(nd) {
+    return !nd || ((showNsfw() || !nd.nsfw) && (showNoncon() || !nd.noncon));
+  }
+  // The Noncon toggles only appear once NSFW content itself is allowed in.
+  function updateNonconRows() {
+    for (const [box, row] of [["showNsfw", "showNonconRow"],
+                              ["newNsfw", "newNonconRow"]]) {
+      const b = $(box), r = $(row);
+      if (b && r) r.style.display = b.checked ? "" : "none";
+    }
+  }
 
   // ---- storage ---------------------------------------------------------
   function loadDB() {
@@ -295,7 +307,8 @@
         rarityMax: $("newRmax").value === "" ? null : num("newRmax", null),
         sources: srcs,
         includeGachaOnly: !!$("newGachaOnly").checked,
-        includeNsfw: !!$("newNsfw").checked
+        includeNsfw: !!$("newNsfw").checked,
+        includeNoncon: !!($("newNoncon") && $("newNoncon").checked)
       }
     };
   }
@@ -1386,8 +1399,19 @@
   $("showNsfw").addEventListener("change", () => {
     DB.settings.showNsfw = $("showNsfw").checked;
     saveDB();
+    updateNonconRows();
     refreshAll();
   });
+  if ($("showNoncon")) {
+    $("showNoncon").checked = showNoncon();
+    $("showNoncon").addEventListener("change", () => {
+      DB.settings.showNoncon = $("showNoncon").checked;
+      saveDB();
+      refreshAll();
+    });
+  }
+  if ($("newNsfw")) $("newNsfw").addEventListener("change", updateNonconRows);
+  updateNonconRows();
   if (!DB.guideSeen) $("guideCard").style.display = "block";
   $("btnGuideOk").addEventListener("click", () => {
     DB.guideSeen = true;

@@ -19,7 +19,7 @@
 10. Fafnir - Fate, 6.8, Fate
 #The Ultimate Dragon and strongest dragon in Fate, Fafnir has exceptional physical ability, extreme magical power, and can draw power from the atmosphere to fuel his attacks. His breath annihilates entire cities with ease.
 11. Moonless, 1.7, Fear and Hunger
-#A cave wolf transformed by the god of the depths. After tens of years of brutal survival, it towers over tanks and can swallow a grown man in one gulp.
+#A cave wolf transformed by the god of the depths. After tens of years of brutal survival, it towers over tanks and can swallow a grown person in one gulp.
 12. A big rat, 0.3, Generic
 #An especially large rat the size of an entire forearm.
 13. Paisley Park, 4.0, JoJo
@@ -97,7 +97,7 @@
 49. The Golem Core, 3.6, Generic
 #A sentient basketball-sized golem core that pulls surrounding material to form a full golem. It can freely abandon and assimilate non-organic material to grow stronger and reshape as needed, and intelligently understands speech and nuance. The maximum material it can assimilate at once scales with your maximum energy reserves.
 50. Obsidian Gargoyles, 2.1, Hota
-#Living obsidian gargoyle statues, deceptively fast, durable, and strong flying constructs. They tear grown men in half like paper and ignore small arms. You get a small army starting at 5, growing in numbers as you get stronger.
+#Living obsidian gargoyle statues, deceptively fast, durable, and strong flying constructs. They tear grown people in half like paper and ignore small arms. You get a small army starting at 5, growing in numbers as you get stronger.
 51. Unicorn, 4.2, Generic
 #A mythical unicorn representing purity and clarity. It heals others and purifies objects with its horn, and is physically strong enough to render a modern military ineffective. Only someone retaining purity can ride it, otherwise you'll need a sled.
 52. Leaf, 5.0, Black Souls
@@ -137,15 +137,15 @@
 69. Cottonmouth, 0.6, Generic
 #A smart cottonmouth snake companion at the peak of what a cottonmouth can be. Smarter than average, but that's about it.
 70. Goblin, 1.2, Generic
-#(Character)Loathsome little green humanoid creatures the size of children, very vicious and cruel, able to use weapons and basic tactics. This goblin is smarter and more self-aware, and can breed with any humanoid race. Default gender is female.
+#(Character)Loathsome little green humanoid creatures the size of children, very vicious and cruel, able to use weapons and basic tactics. This goblin is smarter and more self-aware, and can breed with any humanoid race. Default gender varies.
 71. Wyvern, 2.3, Generic
 #A large sky-dwelling fire-breathing reptile often called a lesser dragon. A wyvern can swallow a man whole and roast an entire battalion with its breath. This wyvern is female and can lay eggs to reproduce.
 72. Dire Wolf, 1.5, Generic
-#A large vicious prehistoric wolf the size of a man, very strong with tough sharp teeth and claws and big enough to ride. By default female and able to reproduce.
+#A large vicious prehistoric wolf the size of a person, very strong with tough sharp teeth and claws and big enough to ride. By default female and able to reproduce.
 73. Hellhound, 2.1, Generic
-#A large vicious underworld hound around human size, with fire-filled maws it can breathe out. Strong enough to tear a grown man in half with ease. By default female and able to reproduce.
+#A large vicious underworld hound around human size, with fire-filled maws it can breathe out. Strong enough to tear a grown person in half with ease. By default female and able to reproduce.
 74. Cerberus, 3.2, Helltaker
-#(Character)Definitely not the hellhound you expected. Cerberus, the triple demon, is a single demon girl with hellhound traits, three bodies and one soul. She is strong enough to tear a grown man in half, and surprisingly competent at office work and menial tasks.
+#(Character)Definitely not the hellhound you expected. Cerberus, the triple demon, is a single demon girl with hellhound traits, three bodies and one soul. She is strong enough to tear a grown person in half, and surprisingly competent at office work and menial tasks.
 75. Crow, 0.8, Generic
 #A very smart, loyal crow companion with human-level intelligence. She can find and fetch shiny things or do anything a crow can do.
 76. Ditto, 3.8, Pokemon
@@ -161,7 +161,7 @@
 81. Anahita, 4.1, Calamity Mod
 #Anahita, an elemental born of the clear oceans. She sings like a siren to enthral, conjures mists and spears of water and ice, and wields her glaive as a weapon.
 82. Clothes Melting Slime, 1.8, Generic
-#A grey amorphous ever-shifting slime that quickly melts all clothing. Strangely, its acid doesn't melt common clothing materials but conceptually melts anything classified as clothing. The more clothing it melts, the larger and stronger it gets.
+#(Noncon) A grey amorphous ever-shifting slime that quickly melts all clothing. Strangely, its acid doesn't melt common clothing materials but conceptually melts anything classified as clothing. The more clothing it melts, the larger and stronger it gets.
 83. Shark, 0.4, Generic
 #A regular old shark, only useful in water, but healthy, strong, and above-average in intelligence.
 84. Schrodinger's cat, 1.7, Generic
@@ -239,7 +239,7 @@
 120. 20% Gun Devil, 6.9, Chainsaw Man
 #A skyscraper-sized fragment of the Gun Devil made of guns and human parts. It instantly shoots the heart of any living being within 1000 meters, fires oversized guns for mass destruction, and circles the globe in minutes. As a devil it makes contracts and heals by consuming blood.
 121. Senko, 3.2, Sewayaki Kitsune Senko-san
-#(Character)A single-tail kitsune excelling at housekeeping and caretaking like a wife or mother. She can use foxfire, minor telekinesis, disguise, and barriers, but prefers domestic tasks.
+#(Character)A single-tail kitsune excelling at housekeeping and caretaking, preferring domestic tasks. She can use foxfire, minor telekinesis, disguise, and barriers.
 122. Yozora, 4.1, Sewayaki Kitsune Senko-san
 #(Character)A wise four-tailed kitsune good at managing people and caretaking. She wields considerable magic for foxfire, telekinesis, perception alteration, barriers, and portals.
 123. Kurama, 7.3, Naruto
@@ -411,7 +411,7 @@
 206. Herbie, 1.2, The Love Bug
 #Herbie is a sentient self-driving Volkswagen Beetle with unusually great performance beyond what it should manage. He slowly repairs himself while unsummoned when damaged.
 207. Iron Golem, 2.8, Hota
-#Iron Golems forged from excellent craftsmanship and magic with high magic resistance, incredible defense, and strength to tear a grown man in half with ease. You start with 4 and can summon more scaling with your maximum energy and physical abilities.
+#Iron Golems forged from excellent craftsmanship and magic with high magic resistance, incredible defense, and strength to tear a grown person in half with ease. You start with 4 and can summon more scaling with your maximum energy and physical abilities.
 208. Diamond Golem, 4.1, Hota
 #Diamond Golems forged from incredible craftsmanship and lost magic, immune to most mundane arms below missiles and mostly immune to all magic below Epic tier. They can tear steel barehanded; you start with 4 and can summon more scaling with your maximum energy and physical abilities.
 209. Regirock, 4.6, Pokemon
@@ -443,7 +443,7 @@
 222. Shalltear Bloodfallen, 6.8, Overlord
 #(Character)Shalltear was a Nazarick Floor Guardian, a True Vampire Valkyrie made with a vampire god's blood and exceptional in both physical and magical combat with hemokinesis, elemental, charm, holy magic, and more. She can turn others into vampires, and comes with only basic clothes and no inventory access. (A/N: No time stop)
 223. Albedo, 5.7, Overlord
-#(Character)Albedo was a Nazarick Floor Guardian, a succubus dark knight and true tank who can destroy fortress walls in one blow and resist anything that cannot level a street thanks to many defensive abilities. She can use basic magic, has exceptional intelligence plus most wifely skills, and comes only with her basic dress and no inventory.
+#(Character)Albedo was a Nazarick Floor Guardian, a succubus dark knight and true tank who can destroy fortress walls in one blow and resist anything that cannot level a street thanks to many defensive abilities. She can use basic magic, has exceptional intelligence plus most domestic skills, and comes only with her basic dress and no inventory.
 224. Cure Elim Los Malvar, 7.3, Overlord
 #Cure Elim is the Elder Coffin Dragon Lord near the pinnacle of Necromancy with already incredible stats. Using unique wild magic that absorbs souls to fuel itself, he can absorb entire cities' souls to turn all inhabitants undead, control them near-perfectly regardless of number, use varied powerful wild magic, and unleash a soul-annihilating breath.
 225. Kenjaku, 6.0, Jujutsu Kaisen
@@ -581,7 +581,7 @@
 291. Lil' Khorne, 5.1, Warhammer 40k
 #(Character)Lil Khorne is a Chaos God shrunk to Level 1 and an incredible warrior with immense physical power and mastery of all weapons and warfare. It has greater magic resistance in exchange for being unable to use magic, starts weak for an Epic familiar at roughly Rare power, and slowly levels back up through aligned actions without reaching original power anytime soon.
 292. Lil' Slaanesh, 5.2, Warhammer 40k
-#(Character)Lil Slaanesh is a Chaos God shrunk to Level 1 and a mistress of debauchery and corruption specializing in charms and manipulating sensation and minds. She excels at understanding and corrupting people, starts weak for an Epic familiar at roughly Rare power, and slowly levels back up through aligned actions without reaching original power anytime soon.
+#(Character)Lil Slaanesh is a Chaos God shrunk to Level 1 and a Prince of debauchery and corruption specializing in charms and manipulating sensation and minds. She excels at understanding and corrupting people, starts weak for an Epic familiar at roughly Rare power, and slowly levels back up through aligned actions without reaching original power anytime soon.
 293. Lil' Tzeentch, 5.7, Warhammer 40k
 #(Character)Lil Tzeentch is a Chaos God shrunk to Level 1 and an incredible magician who studies and learns all magic at incredible pace. It is also an excellent planner for business, ruling, warfare, and espionage, starts weak for an Epic familiar at roughly Rare power, and slowly levels back up through aligned actions without reaching original power anytime soon.
 294. Lil' Nurgle, 5.0, Warhammer 40k
@@ -743,7 +743,7 @@
 372. Penny Polendina, 4.3, RWBY
 #(Character)(Tech)"I'm combat ready!" Penny is an android with her own soul and aura, with aura-boosted robotic strength, a flight module, computational abilities, and remotely controlled Floating Array blades. She only dies if all her cores are destroyed. She cannot unlock others' Auras, comes with extra equipment to facilitate copulation, and is not the Winter Maiden.
 373. Beowolf Pack, 2.2, RWBY
-#A pack of Beowolves, basic Grimm of black evil fluid sized like large bears with wolf traits. Each can flip cars and bisect a grown man, and can track strong negative emotions. You start with 10 and gain more as you grow stronger.
+#A pack of Beowolves, basic Grimm of black evil fluid sized like large bears with wolf traits. Each can flip cars and bisect a grown person, and can track strong negative emotions. You start with 10 and gain more as you grow stronger.
 374. Centorea Shianus, 2.5, Monster Musume
 #(Character)Centorea is a Centaur trained in knighthood. She fights with formidable swordsmanship, archery, and jousting, runs faster than most horses, and is skilled at housework.
 375. Yellow Chocobo, 1.0, Final Fantasy
@@ -751,7 +751,7 @@
 376. Holy Cow, 1.5, Generic
 #"Holy Cow!" is a large, healthy female cow that always lactates 10 to 50 liters of milk per day depending on feeding. Her nutrient-dense milk has great health benefits and quality, and works as low-quality holy water against the unholy. Her children mostly inherit her genes and holy blessing.
 377. Cathyl, 1.7, Monster Musume
-#(Character)Cathyl is a minotaur towering over humans, 10x stronger than a grown man with exceptional stamina. Experienced in farming and ranching, she suits heavy labour. She naturally lactates very nutritious, rich, tasty milk.
+#(Character)Cathyl is a minotaur towering over humans, 10x stronger than a grown person with exceptional stamina. Experienced in farming and ranching, she suits heavy labour. She naturally lactates very nutritious, rich, tasty milk.
 378. Dragonslayer Armor, 3.0, Dark Souls
 #A hulking magically animated iron armor tough enough to withstand dragons and warriors. It smashes boulders with surprising agility, and its weapon releases bolts and arcs of lightning with each swing.
 379. The Doll, 1.1, Bloodborne
@@ -791,7 +791,7 @@
 396. Rodent of Usual Size, 0.1, Generic
 #An appropriately sized common rat.
 397. Rodent of Unusual Size, 0.5, Princess Bride
-#An unusually large rat, strong enough to maim a grown man.
+#An unusually large rat, strong enough to maim a grown person.
 398. Cancerous Rodent, 1.5, Ultrakill
 #An otherwise normal gnarly glowing green rat constantly emitting harmful radiation surpassing radium or enriched uranium.
 399. Mythra and Pyra, 6.3, Xenoblade
