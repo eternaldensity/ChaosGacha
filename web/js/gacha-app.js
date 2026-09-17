@@ -41,7 +41,8 @@
   function resultText(r) {
     const cls = G.rarityClass(DATA.classes, r.rarity);
     return `🎰 ${r.name} (${r.rarity}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""})` +
-      (r.d20 != null ? ` 🎲${r.d20} ${G.gamblerLabel({ effect: r.geffect })}` : "");
+      (r.d20 != null ? ` 🎲${r.d20} ${G.gamblerLabel({ effect: r.geffect })}` : "") +
+      (r.description ? `\n${r.description}` : "");
   }
   window.__gacha = window.__gacha || {};
   window.__gacha.resultText = resultText;
@@ -501,7 +502,12 @@
       const b = document.createElement("button");
       b.textContent = "👁";
       b.title = "View";
-      b.addEventListener("click", () => showResult(h));
+      b.addEventListener("click", () => {
+        const rollTab = [...document.querySelectorAll("#tabs button")]
+          .find(x => x.dataset && x.dataset.tab === "roll");
+        if (rollTab) rollTab.click();
+        showResult(h);
+      });
       li.appendChild(b);
       ul.appendChild(li);
     }

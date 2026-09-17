@@ -479,6 +479,7 @@
   const ctx = canvas.getContext("2d");
   let projected = []; // [{id,x,y,r,name,hex}]
   let showEdges = true;
+  let showRadial = true; // r = radial distance, occasionally useful for debugging
   // A locked node is unlockable right now when it sits on the frontier
   // (normal unlocks are adjacency-only) and the wallet covers it.
   // Pass a precomputed frontier set when checking many nodes per frame.
@@ -655,12 +656,15 @@
       }
       const rOrigin = it.nd.r != null ? it.nd.r
         : Math.hypot(it.nd.pos[0], it.nd.pos[1], it.nd.pos[2]);
-      projected.push({ id: it.nd.id, x: it.x, y: it.y, r: rad + 8, name: `#${it.nd.id} ${it.nd.name} · ${it.nd.rarity} · r ${rOrigin.toFixed(2)}`, hex });
+      const rTxt = showRadial ? ` · r ${rOrigin.toFixed(2)}` : "";
+      projected.push({ id: it.nd.id, x: it.x, y: it.y, r: rad + 8, name: `#${it.nd.id} ${it.nd.name} · ${it.nd.rarity}${rTxt}`, hex });
     }
     if (selectedId != null && d.rt.byId[selectedId]) {
       const nd = d.rt.byId[selectedId];
+      const rSel = nd.r != null ? nd.r : Math.hypot(nd.pos[0], nd.pos[1], nd.pos[2]);
       $("selInfo").textContent =
         `#${nd.id} ${nd.name} [${nd.file} | ${nd.source}] rarity ${nd.rarity}` +
+        (showRadial ? ` · r ${rSel.toFixed(2)}` : "") +
         (d.unl.has(nd.id) ? " · unlocked" : " · locked");
     }
   }
@@ -754,6 +758,10 @@
     showEdges = $("showEdges").checked;
     draw3D();
   });
+  $("showRadial").addEventListener("change", () => {
+    showRadial = $("showRadial").checked;
+    draw3D();
+  });
 
   // ---- node finder ------------------------------------------------------------
   // Rotate the camera to face a node head-on (it then projects to center).
@@ -838,6 +846,7 @@
         const ok = c.st.cores >= 1 && c.st.points >= cost;
         actions = `<div class="row" style="margin-top:8px"><button class="primary" data-act="unlock" ${ok ? "" : "disabled"}>` +
           `Unlock (${E.fmt(cost)} pts + 1 core)</button></div>` +
+          `<div class="muted small" style="margin-top:4px">Wallet: ${E.fmt(c.st.points)} pts · ${c.st.cores} cores.</div>` +
           (ok ? "" : `<div class="muted small" style="margin-top:4px">Needs 1 core + ${E.fmt(cost)} pts (have ${c.st.cores} / ${E.fmt(c.st.points)}).</div>`);
       } else {
         actions = `<div class="muted small" style="margin-top:8px">Not adjacent — reach it with a skip / jump / hop ticket (Tickets tab).</div>`;
@@ -1225,6 +1234,7 @@
     const box = $("unlockList");
     box.innerHTML = "";
     const { st, rt } = c;
+    $("unlockWallet").textContent = `Wallet: ${E.fmt(st.points)} pts · ${st.cores} cores.`;
     const ids = [...E.frontier(rt, st.unlocked)]
       .filter(id => id !== 0 && visNode(rt.byId[id]));
     ids.sort((a, b) => E.nodeCostFor(st, rt, a) - E.nodeCostFor(st, rt, b));
@@ -1467,6 +1477,12 @@
   key.title = "Locked, on the frontier, and covered by your wallet";
   key.textContent = "⬡ unlockable now";
   $("classLegend").appendChild(key);
+  const rkey = document.createElement("span");
+  rkey.className = "pill";
+  rkey.style.cssText = "margin:2px";
+  rkey.title = "r is the node's distance from the Origin root";
+  rkey.textContent = "r = radial distance";
+  $("classLegend").appendChild(rkey);
   $("ownCat").innerHTML = `<option value="">All</option>` +
     E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });

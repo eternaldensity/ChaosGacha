@@ -40,7 +40,7 @@ TIERS = [
 
 # Rarity classes mirrored from Gacha.py run_gacha().
 CLASSES = [
-    {"max": 1.0, "name": "Trash", "color": "#a39589"},
+    {"max": 1.0, "name": "Trash", "color": "#878d96"},
     {"max": 2.0, "name": "Common", "color": "#9c7e5a"},
     {"max": 3.0, "name": "Uncommon", "color": "#aed1d1"},
     {"max": 4.0, "name": "Rare", "color": "#11d939"},

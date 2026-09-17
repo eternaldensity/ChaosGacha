@@ -133,7 +133,7 @@ def run_gacha(type,min,avg,max,pullcount): # type - gacha mode, min-avg-max - ra
         selected_description = selected_description.replace('#','')
         print(f"Selected element: {selected_element} with rarity: {selected_rarity} and {round(luckpercentage, 2)}% odds")
         if selected_rarity < 1.0:
-            color = '#a39589'
+            color = '#878d96'
             tier = 'Trash'
         elif selected_rarity < 2.0:
             color = '#9c7e5a'

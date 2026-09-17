@@ -28,8 +28,9 @@
 .cat-grid { grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 700px) { .cat-grid { grid-template-columns: repeat(3, 1fr); } }
 .pick { border: 2px solid transparent; }
+.preset-grid .pick, .cat-grid .pick { min-height: 58px; font-size: 1.05rem; font-weight: 700; }
 .pick.sel { border-color: var(--accent); background: #2a3342; }
-.pick.sel { border-color: #fff; }
+.pick.sel { border-color: #fff; box-shadow: 0 0 0 2px #fff, 0 4px 16px rgba(0,0,0,.5); }
 #rollBtn { width: 100%; font-size: 1.25rem; min-height: 60px; }
 .result-name { font-size: 1.2rem; margin: 4px 0; }
 /* Spin wheel: a vertical reel seen edge-on. Rows compress and fade toward

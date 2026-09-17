@@ -39,7 +39,7 @@
       <div class="small">
         1. 🌳 The <b>Origin root</b> (sphere centre) is free and already unlocked.<br>
         2. 🎟 <b>Award tickets</b> (Tickets tab) — each gives 1 core + points for a shared wallet.<br>
-        3. 🔓 <b>Unlock</b> glowing frontier nodes next to yours (1 core + points each).<br>
+        3. 🔓 <b>Unlock</b> frontier nodes next to yours (1 core + points each; ⬡ marks affordable ones).<br>
         4. 🎫 <b>Special tickets</b> (skip / jump / hop) reach distant nodes.<br>
         5. ✨ Unlock <b>tree-meta nodes</b> (Sight, Graft, Chaos Die…) for powers.<br>
         6. 💾 Progress saves automatically; export backups from below.
@@ -181,6 +181,8 @@
           <button id="btnResetCam">Reset view</button>
           <label style="display:flex;gap:6px;align-items:center;min-height:44px" title="Show/hide connection lines.">
             <input type="checkbox" id="showEdges" checked style="width:22px;height:22px"> Links</label>
+          <label style="display:flex;gap:6px;align-items:center;min-height:44px" title="Show each node's distance from the Origin (r). Mostly useful for debugging.">
+            <input type="checkbox" id="showRadial" checked style="width:22px;height:22px"> r</label>
         </div>
       </div>
       <div style="margin-top:8px" class="viewwrap"><canvas class="view" id="view3d"></canvas><div class="hovertip" id="hoverTip"></div></div>
@@ -258,7 +260,7 @@
     </div>
     <div class="card">
       <h2>Unlockable now</h2>
-      <div class="muted small">Frontier nodes, cheapest first.</div>
+      <div class="muted small">Frontier nodes, cheapest first. <span id="unlockWallet"></span></div>
       <ul class="list" id="unlockList"></ul>
     </div>
     <div class="card">
