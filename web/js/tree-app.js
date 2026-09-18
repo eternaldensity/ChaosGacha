@@ -744,10 +744,10 @@
     updateViewInfo();
     maybeAutoFit(d);
     const cx = W / 2, cy = H / 2, base = Math.min(W, H) * 0.42 * cam.zoom;
-    // edges between shown nodes
+    // edges between shown nodes; links with both ends unlocked draw
+    // brighter so owned routes stand out from the fog of locked ones
     ctx.lineWidth = 1;
-    ctx.strokeStyle = "rgba(140,150,175,0.28)";
-    ctx.beginPath();
+    const dim = new Path2D(), lit = new Path2D();
     if (showEdges) for (const nd of d.rt.nodes) {
       if (!visNode(nd) || !nodeShown(nd)) continue;
       if (!d.vis.has(nd.id) && !d.unl.has(nd.id)) continue;
@@ -759,11 +759,15 @@
         const p1 = project(nd.pos), p2 = project(d.rt.byId[b].pos);
         if (!p1 || !p2) continue;
         const [x1, y1] = p1, [x2, y2] = p2;
-        ctx.moveTo(cx + x1 * base, cy - y1 * base);
-        ctx.lineTo(cx + x2 * base, cy - y2 * base);
+        const path = (d.unl.has(nd.id) && d.unl.has(b)) ? lit : dim;
+        path.moveTo(cx + x1 * base, cy - y1 * base);
+        path.lineTo(cx + x2 * base, cy - y2 * base);
       }
     }
-    ctx.stroke();
+    ctx.strokeStyle = "rgba(140,150,175,0.28)";
+    ctx.stroke(dim);
+    ctx.strokeStyle = "rgba(238,194,95,0.75)";
+    ctx.stroke(lit);
     // nodes, far first
     const items = [];
     for (const nd of d.rt.nodes) {
