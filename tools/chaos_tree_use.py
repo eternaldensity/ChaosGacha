@@ -11,8 +11,10 @@ By default only nodes adjacent to an unlocked node are visible/unlockable.
 Special tickets reach further (see below).
 
 Ticket tiers (points; cores always 1)
-    bronze 50, silver 500, gold 5k, platinum 50k, diamond 500k,
-    legendary 5M, mythical 50M, divine 500M, transcendent 5B.
+    trash 5, bronze 50, silver 500, gold 5k, aluminium 25k, platinum 50k,
+    diamond 500k, legendary 5M, mythical 50M, divine 500M, transcendent 5B.
+    Wild tickets roll 2d8 instead: smaller die N pays 10^(N+1) points,
+    doubled on doubles.
     (points pool in the wallet, so higher rarities are reachable by
     combining several tickets)
 
@@ -105,16 +107,21 @@ from collections import deque
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # --- editable tuning -------------------------------------------------------
+# Tier ladder, lowest first. Wild has no fixed value: awarding a wild ticket
+# rolls 2d8, takes the smaller as N for 10^(N+1) points, doubled on doubles.
 TIER_POINTS = {
+    "trash": 5,
     "bronze": 50,
     "silver": 500,
     "gold": 5000,
+    "aluminium": 25000,
     "platinum": 50000,
     "diamond": 500000,
     "legendary": 5000000,
     "mythical": 50000000,
     "divine": 500000000,
     "transcendent": 5000000000,
+    "wild": 0,
 }
 CATEGORIES = ["ability", "item", "skill", "trait", "familiar"]
 ROOT_ID = 0
@@ -495,7 +502,8 @@ def award(state, spec, bonus_pct=0, echo=False, gamble=False, tree=None):
     """Award a ticket: +1 core (a 'twin' ticket grants a second core) plus
     tier points. Special tickets also land in the inventory. With
     gamble=True one gamble charge is spent rolling a d20 for the ticket
-    (needs tree=... to read unlocked dice)."""
+    (needs tree=... to read unlocked dice). Returns
+    (tier, kind, params, pts) with the points actually paid."""
     tier, kind, params = parse_ticket(spec)
     twin = params.get("twin", False)
     destroyed = False
@@ -506,7 +514,12 @@ def award(state, spec, bonus_pct=0, echo=False, gamble=False, tree=None):
             state, tree, tier, kind, params)
         twin = params.get("twin", False)
     cores = 1 + (1 if twin else 0)
-    base = TIER_POINTS.get(tier, 0)
+    if tier == "wild":
+        d1, d2 = _wild_rolls()
+        base = wild_points(d1, d2)
+        params["wild"] = [d1, d2]
+    else:
+        base = TIER_POINTS.get(tier, 0)
     if destroyed:
         # generosity rule: the base core is lost but a twin keeps one
         cores = 1 if twin else 0
@@ -521,7 +534,20 @@ def award(state, spec, bonus_pct=0, echo=False, gamble=False, tree=None):
         ticket = {"kind": kind, "tier": tier}
         ticket.update(params)
         state["inventory"].append(ticket)
-    return tier, kind, params
+    return tier, kind, params, pts
+
+
+def _wild_rolls():
+    """2d8 for a wild ticket. Module-level so tests can script rolls."""
+    return random.randint(1, 8), random.randint(1, 8)
+
+
+def wild_points(d1, d2):
+    """Wild ticket base points: smaller die N -> 10^(N+1), doubled on doubles."""
+    pts = 10.0 ** (min(d1, d2) + 1)
+    if d1 == d2:
+        pts *= 2.0
+    return pts
 
 
 def _d20():
@@ -545,7 +571,7 @@ def gambler_effect(d):
 
 
 def _shift_tier(tier, delta):
-    """Move a tier up/down the ladder; bronze-1 falls to tierless."""
+    """Move a tier up/down the ladder; bottom-1 falls to tierless."""
     tiers = list(TIER_POINTS)
     if tier is None:
         return "bronze" if delta > 0 else None
@@ -1199,16 +1225,11 @@ def main(argv=None):
                     f"need {need} gamble charges, have {have}")
         for spec in args.tickets:
             use_echo = echo_left > 0
-            tier, kind, params = award(state, spec, bonus_pct,
-                                       echo=use_echo, gamble=args.gamble,
-                                       tree=tree)
+            tier, kind, params, pts = award(
+                state, spec, bonus_pct,
+                echo=use_echo, gamble=args.gamble, tree=tree)
             if use_echo:
                 echo_left -= 1
-            pts = TIER_POINTS.get(tier, 0) * (1.0 + bonus_pct / 100.0)
-            if params.get("destroyed"):
-                pts /= 2
-            if use_echo:
-                pts *= 2.0
             if params.get("destroyed"):
                 cores_n = 1 if params.get("twin") else 0
             else:
@@ -1216,8 +1237,13 @@ def main(argv=None):
             extra = f" [{kind}]" if kind != "plain" else ""
             echo_mark = " (echo!)" if use_echo else ""
             note = gamble_note(params)
+            wild_mark = ""
+            if params.get("wild"):
+                d1, d2 = params["wild"]
+                wild_mark = f" (wild {d1}+{d2}" + \
+                    (" double!" if d1 == d2 else "") + ")"
             print(f"awarded {tier or 'tierless'}{extra}: +{cores_n} core(s), "
-                  f"+{fmt(pts)} pts{echo_mark}"
+                  f"+{fmt(pts)} pts{echo_mark}{wild_mark}"
                   + (f" [{note}]" if note else ""))
     elif args.cmd == "state":
         print(f"tree: {tree['path']}")

@@ -77,8 +77,9 @@ distance, max link distance, per-source filtering). Every tree is reproducible f
 `tools/chaos_tree_use.py` is the usage engine (CLI + importable API). The
 root is free; every other node costs 1 core plus points equal to `10^rarity`.
 Tickets add 1 core each and pool their tier points into a shared wallet
-(bronze 50, silver 500, gold 5k, ... transcendent 5B; Prosperity nodes add
-an additive +N%). A `twin` ticket (e.g. `gold twin`) grants a second core,
+(trash 5, bronze 50, silver 500, gold 5k, aluminium 25k, platinum 50k, ...,
+transcendent 5B; wild tickets roll 2d8 for 10^(smaller+1) points, doubled
+on doubles; Prosperity nodes add an additive +N%). A `twin` ticket (e.g. `gold twin`) grants a second core,
 free. With `award --gamble`, each ticket instead rolls a d20 (1 gamble
 charge each): 20 tier up, 17-19 twin, 13-16 new kind, 8-12 nothing, 2-7
 tier down, 1 destroyed (no base core, half points; a twin keeps 1 core). Only nodes adjacent to unlocked nodes are unlockable by

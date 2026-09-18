@@ -582,6 +582,19 @@ class _ScriptedD20:
         return False
 
 
+class _ScriptedWild:
+    """Monkeypatch cu._wild_rolls with a fixed 2d8 script."""
+    def __init__(self, vals):
+        self.it = iter(vals)
+        self.real = cu._wild_rolls
+    def __enter__(self):
+        cu._wild_rolls = lambda: next(self.it)
+        return self
+    def __exit__(self, *a):
+        cu._wild_rolls = self.real
+        return False
+
+
 def test_meta4():
     tree = _gamble_tree()
 
@@ -607,9 +620,15 @@ def test_meta4():
         assert cu.gambler_effect(d) == e
     assert cu._shift_tier(None, +1) == "bronze"
     assert cu._shift_tier(None, -1) is None
-    assert cu._shift_tier("bronze", -1) is None
-    assert cu._shift_tier("transcendent", +1) == "transcendent"
-    assert cu._shift_tier("gold", +1) == "platinum"
+    assert cu._shift_tier("bronze", -1) == "trash"
+    assert cu._shift_tier("transcendent", +1) == "wild"
+    assert cu._shift_tier("wild", +1) == "wild"
+    assert cu._shift_tier("wild", -1) == "transcendent"
+    assert cu._shift_tier("trash", -1) is None
+    assert cu._shift_tier("bronze", +1) == "silver"
+    assert cu._shift_tier("gold", +1) == "aluminium"
+    assert cu._shift_tier("aluminium", -1) == "gold"
+    assert cu._shift_tier("gold", +1) == "aluminium"
 
     # derive: charges sum, reroll takes the max, twice is a flag
     st = cu.new_state("<synthetic>")
@@ -628,7 +647,7 @@ def test_meta4():
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 1]
     with _ScriptedD20([20]):
-        tier, kind, params = cu.award(st, "bronze", gamble=True, tree=tree)
+        tier, kind, params, _pts = cu.award(st, "bronze", gamble=True, tree=tree)
     assert tier == "silver" and abs(st["points"] - 500) < 1e-9
     assert st["cores"] == 1 and st["meta_used"]["gamble"] == 1
     assert params["d20"] == 20 and params["geffect"] == "rankUp"
@@ -642,7 +661,7 @@ def test_meta4():
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 1]
     with _ScriptedD20([18]):
-        tier, kind, params = cu.award(st, "silver hop",
+        tier, kind, params, _pts = cu.award(st, "silver hop",
                                       gamble=True, tree=tree)
     assert st["cores"] == 2 and kind == "hop"
     assert st["inventory"][-1]["twin"] is True
@@ -652,7 +671,7 @@ def test_meta4():
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 1]
     with _ScriptedD20([13]):
-        tier, kind, params = cu.award(st, "silver skip2",
+        tier, kind, params, _pts = cu.award(st, "silver skip2",
                                       gamble=True, tree=tree)
     assert kind in ("plain", "jump", "choice", "hop")
     if kind == "skip":
@@ -669,13 +688,13 @@ def test_meta4():
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 1]
     with _ScriptedD20([2]):
-        tier, kind, params = cu.award(st, "bronze",
+        tier, kind, params, _pts = cu.award(st, "bronze",
                                       gamble=True, tree=tree)
-    assert tier is None and st["points"] == 0 and st["cores"] == 1
+    assert tier == "trash" and st["points"] == 5 and st["cores"] == 1
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 1]
     with _ScriptedD20([1]):
-        tier, kind, params = cu.award(st, "bronze",
+        tier, kind, params, _pts = cu.award(st, "bronze",
                                       gamble=True, tree=tree)
     assert st["cores"] == 0 and abs(st["points"] - 25) < 1e-9
     assert params.get("destroyed") is True
@@ -695,7 +714,7 @@ def test_meta4():
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 3]
     with _ScriptedD20([1, 10]):
-        tier, kind, params = cu.award(st, "bronze",
+        tier, kind, params, _pts = cu.award(st, "bronze",
                                       gamble=True, tree=tree)
     assert params["d20"] == 10 and params["rerolls"] == [1]
     assert st["meta_used"]["gamble"] == 1
@@ -704,7 +723,7 @@ def test_meta4():
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 4]
     with _ScriptedD20([13, 18]):
-        tier, kind, params = cu.award(st, "bronze",
+        tier, kind, params, _pts = cu.award(st, "bronze",
                                       gamble=True, tree=tree)
     assert params["d20"] == [13, 18]
     assert params["geffect"] == ["changeType", "twin"]
@@ -713,7 +732,7 @@ def test_meta4():
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 4]
     with _ScriptedD20([20]):
-        tier, kind, params = cu.award(st, "bronze",
+        tier, kind, params, _pts = cu.award(st, "bronze",
                                       gamble=True, tree=tree)
     assert params["d20"] == 20 and tier == "silver"
 
@@ -748,9 +767,43 @@ def test_meta4():
     print("meta4-node tests passed")
 
 
+def test_wild():
+    assert cu.wild_points(3, 5) == 10.0 ** 4
+    assert cu.wild_points(8, 8) == 2.0 * 10.0 ** 9
+    assert cu.wild_points(1, 2) == 10.0 ** 2
+
+    # wild award pays the roll, recorded for display
+    st = cu.new_state("<synthetic>")
+    with _ScriptedWild([(3, 5)]):
+        tier, kind, params, pts = cu.award(st, "wild")
+    assert tier == "wild" and params["wild"] == [3, 5]
+    assert abs(pts - 10000) < 1e-9 and abs(st["points"] - 10000) < 1e-9
+    assert st["cores"] == 1
+
+    # doubles double
+    st = cu.new_state("<synthetic>")
+    with _ScriptedWild([(6, 6)]):
+        tier, kind, params, pts = cu.award(st, "wild")
+    assert abs(pts - 2.0 * 10.0 ** 7) < 1e-3
+
+    # trash / aluminium fixed points; twin still works on wild
+    st = cu.new_state("<synthetic>")
+    cu.award(st, "trash")
+    assert abs(st["points"] - 5) < 1e-9
+    cu.award(st, "aluminium")
+    assert abs(st["points"] - (5 + 25000)) < 1e-9
+    st = cu.new_state("<synthetic>")
+    with _ScriptedWild([(2, 4)]):
+        cu.award(st, "wild twin")
+    assert st["cores"] == 2 and abs(st["points"] - 1000) < 1e-9
+
+    print("wild-ticket tests passed")
+
+
 if __name__ == "__main__":
     main()
     test_meta()
     test_meta2()
     test_meta3()
     test_meta4()
+    test_wild()

@@ -26,9 +26,11 @@ OUT = os.path.join(ROOT, "web", "data", "entries.js")
 # and the button colors sampled from the original site's tier PNGs
 # (bronze.png … divine.png; transcendent extrapolated darker than divine).
 TIERS = [
+    {"name": "trash", "min": 0.1, "avg": 0.5, "max": 1.5, "points": 5, "color": "#708090"},
     {"name": "bronze", "min": 0.1, "avg": 1.3, "max": 3.3, "points": 50, "color": "#74573e"},
     {"name": "silver", "min": 0.5, "avg": 2.3, "max": 4.3, "points": 500, "color": "#acb9b8"},
     {"name": "gold", "min": 1.5, "avg": 3.3, "max": 5.3, "points": 5000, "color": "#f6c54c"},
+    {"name": "aluminium", "min": 1.0, "avg": 4.0, "max": 6.0, "points": 25000, "color": "#ede6d6"},
     {"name": "platinum", "min": 2.5, "avg": 4.3, "max": 6.3, "points": 50000, "color": "#bcd5eb"},
     {"name": "diamond", "min": 3.5, "avg": 5.3, "max": 7.3, "points": 500000, "color": "#9bf3eb"},
     {"name": "legendary", "min": 4.5, "avg": 6.3, "max": 8.3, "points": 5000000, "color": "#f5993d"},
@@ -36,6 +38,10 @@ TIERS = [
     {"name": "divine", "min": 6.5, "avg": 8.3, "max": 10.0, "points": 500000000, "color": "#f61e1e"},
     {"name": "transcendent", "min": 7.5, "avg": 9.3, "max": 10.0,
      "points": 5000000000, "color": "#8f1010"},
+    # Wild has no fixed points: award rolls 2d8, takes the smaller as N for
+    # 10^(N+1) points, doubled on doubles. Points here is only a fallback.
+    {"name": "wild", "min": 1.0, "avg": 5.0, "max": 10.0,
+     "points": 0, "color": "#228b22"},
 ]
 
 # Rarity classes mirrored from Gacha.py run_gacha().

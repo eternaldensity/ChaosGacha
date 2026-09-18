@@ -7,6 +7,8 @@
   const $ = id => document.getElementById(id);
   const esc = s => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  // Whole-number rarities display with .0 so the wheel reads consistently.
+  const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
 
   function toast(msg, isErr) {
     const t = $("toast");
@@ -40,7 +42,7 @@
 
   function resultText(r) {
     const cls = G.rarityClass(DATA.classes, r.rarity);
-    return `🎰 ${r.name} (${r.rarity}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""})` +
+    return `🎰 ${r.name} (${fmtR(r.rarity)}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""})` +
       (r.d20 != null ? ` 🎲${r.d20} ${G.gamblerLabel({ effect: r.geffect })}` : "") +
       (r.description ? `\n${r.description}` : "");
   }
@@ -218,7 +220,7 @@
     if (!keepMulti) $("multiCard").style.display = "none";
     $("resultBody").innerHTML =
       `<div class="small" style="color:${esc(cls.color)}">— ${esc(cls.name)} ${esc(r.category)}${r.source ? " [" + esc(r.source) + "]" : ""} —</div>` +
-      `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${r.rarity}</div>` +
+      `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${fmtR(r.rarity)}</div>` +
       `<div class="small muted">${r.odds.toFixed(2)}% odds</div>` +
       (r.d20 != null ? `<div class="small muted">🎲 Gambler d20 → ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</div>` : "") +
       (r.description ? `<p>${esc(r.description)}</p>` : "");
@@ -271,10 +273,10 @@
       if (g && g.effect === "advantage") {
         const r2 = rollOnce();
         if (r2.rarity >= r.rarity) {
-          r2.gambleNote = `kept ${r2.rarity} over ${r.rarity}`;
+          r2.gambleNote = `kept ${fmtR(r2.rarity)} over ${fmtR(r.rarity)}`;
           r = r2;
         } else {
-          r.gambleNote = `kept ${r.rarity} over ${r2.rarity}`;
+          r.gambleNote = `kept ${fmtR(r.rarity)} over ${fmtR(r2.rarity)}`;
         }
       }
     } catch (e) { toast(e.message, true); return; }
@@ -330,7 +332,7 @@
       row.className = "rrow";
       row.innerHTML = `<span class="dot" style="background:${esc(cls.color)}"></span>` +
         `<span class="nm">${esc(it.name)}</span>` +
-        `<span class="pill">${esc(it.category)} ${it.rarity}</span>`;
+        `<span class="pill">${esc(it.category)} ${fmtR(it.rarity)}</span>`;
       inner.appendChild(row);
     }
     $("reelCard").style.display = "block";
@@ -406,10 +408,10 @@
         if (g && g.effect === "advantage") {
           const r2 = rollOnce();
           if (r2.rarity >= r.rarity) {
-            r2.gambleNote = `kept ${r2.rarity} over ${r.rarity}`;
+            r2.gambleNote = `kept ${fmtR(r2.rarity)} over ${fmtR(r.rarity)}`;
             r = r2;
           } else {
-            r.gambleNote = `kept ${r.rarity} over ${r2.rarity}`;
+            r.gambleNote = `kept ${fmtR(r.rarity)} over ${fmtR(r2.rarity)}`;
           }
         }
         if (g) { r.d20 = g.d20; r.geffect = g.effect; }
@@ -435,7 +437,7 @@
       const cls = G.rarityClass(DATA.classes, r.rarity);
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
-        `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${r.rarity}</span>` +
+        `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${fmtR(r.rarity)}</span>` +
         (r === best ? ` <span class="pill" style="border-color:var(--accent);color:var(--accent)">★ best</span>` : "") +
         `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
       const b = document.createElement("button");
@@ -470,7 +472,7 @@
     save(); renderTickets();
   });
 
-  function tierOf(name) { return DATA.tiers.find(t => t.name === name) || DATA.tiers[2]; }
+  function tierOf(name) { return DATA.tiers.find(t => t.name === name) || DATA.tiers.find(t => t.name === "gold"); }
 
   function renderTickets() {
     $("ticketCount").textContent = DB.tickets.length ? `(${DB.tickets.length})` : "";
@@ -505,7 +507,7 @@
     const bc = G.rarityClass(DATA.classes, best.rarity);
     box.innerHTML =
       `<div class="kv"><span class="k">Rolls</span><b>${h.length}</b></div>` +
-      `<div class="kv"><span class="k">Best</span><b><span class="dot" style="background:${esc(bc.color)}"></span>${esc(best.name)} (${best.rarity})</b></div>` +
+      `<div class="kv"><span class="k">Best</span><b><span class="dot" style="background:${esc(bc.color)}"></span>${esc(best.name)} (${fmtR(best.rarity)})</b></div>` +
       `<div style="margin-top:4px">` +
       Object.entries(byClass).map(([k, v]) => `<span class="pill" style="margin:2px">${esc(k)}×${v}</span>`).join("") +
       `</div>`;
@@ -520,7 +522,7 @@
       const cls = G.rarityClass(DATA.classes, h.rarity);
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
-        `<b>${esc(h.name)}</b> <span class="pill">${esc(h.category)} ${h.rarity}</span>` +
+        `<b>${esc(h.name)}</b> <span class="pill">${esc(h.category)} ${fmtR(h.rarity)}</span>` +
         (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }))}">🎲${h.d20}</span>` : "") + `<br>` +
         `<span class="muted small">${esc(h.source || "—")} · ${new Date(h.at).toLocaleString()} · ${h.odds.toFixed(2)}%</span></div>`;
       const b = document.createElement("button");

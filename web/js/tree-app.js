@@ -1153,7 +1153,7 @@
   }
 
   // ---- tickets tab --------------------------------------------------------------
-  const TICKET_TIERS = ["bronze", "silver", "gold", "platinum", "diamond", "legendary", "mythical", "divine", "transcendent"];
+  const TICKET_TIERS = ["trash", "bronze", "silver", "gold", "aluminium", "platinum", "diamond", "legendary", "mythical", "divine", "transcendent", "wild"];
   function fillTicketForm() {
     $("tkTier").innerHTML = TICKET_TIERS.map(t => `<option>${t}</option>`).join("");
     $("tkCat").innerHTML = E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
@@ -1521,6 +1521,10 @@
         totalCores += r.cores;
         const note = E.gambleNote(r.params);
         if (note) notes.push(note);
+        if (r.params.wild) {
+          const [d1, d2] = r.params.wild;
+          notes.push(`wild ${d1}+${d2}` + (d1 === d2 ? " double!" : ""));
+        }
       }
     });
     if (ok) toast(`Awarded ${count}× ${spec}: +${totalCores} core${totalCores === 1 ? "" : "s"}, +${E.fmt(totalPts)} pts.` +

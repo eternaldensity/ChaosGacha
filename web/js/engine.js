@@ -6,13 +6,18 @@
  * tree-meta abilities reach further. Operates on a runtime tree from
  * ChaosGen.buildRuntime(). */
 window.ChaosEngine = (function () {
+  // Tier ladder, lowest first. Wild has no fixed value: awarding a wild
+  // ticket rolls 2d8, takes the smaller as N for 10^(N+1) points, doubled
+  // on doubles.
   const TIER_POINTS = {
-    bronze: 50, silver: 500, gold: 5000, platinum: 50000, diamond: 500000,
+    trash: 5, bronze: 50, silver: 500, gold: 5000, aluminium: 25000,
+    platinum: 50000, diamond: 500000,
     legendary: 5000000, mythical: 50000000, divine: 500000000,
-    transcendent: 5000000000
+    transcendent: 5000000000, wild: 0
   };
-  const TIERS = ["bronze", "silver", "gold", "platinum", "diamond",
-    "legendary", "mythical", "divine", "transcendent"];
+  const TIERS = ["trash", "bronze", "silver", "gold", "aluminium",
+    "platinum", "diamond",
+    "legendary", "mythical", "divine", "transcendent", "wild"];
   const CATEGORIES = ["ability", "item", "skill", "trait", "familiar"];
   const ROOT_ID = 0;
   const SEE_FAR_DISTANCE = 3.5;
@@ -277,7 +282,15 @@ window.ChaosEngine = (function () {
       twin = !!params.twin;
     }
     let cores = 1 + (twin ? 1 : 0);
-    let pts = (TIER_POINTS[tier] || 0) * (1 + bonusPct / 100);
+    let pts;
+    if (tier === "wild") {
+      const d1 = 1 + Math.floor(Math.random() * 8);
+      const d2 = 1 + Math.floor(Math.random() * 8);
+      pts = wildPoints(d1, d2) * (1 + bonusPct / 100);
+      params.wild = [d1, d2];
+    } else {
+      pts = (TIER_POINTS[tier] || 0) * (1 + bonusPct / 100);
+    }
     if (destroyed) {
       cores = twin ? 1 : 0;
       pts /= 2;
@@ -297,6 +310,12 @@ window.ChaosEngine = (function () {
 
   const GAMBLE_LABELS = { rankUp: "Rank Up", twin: "Twin", changeType: "New Kind",
     nothing: "No change", rankDown: "Rank Down", destroyed: "Destroyed" };
+
+  function wildPoints(d1, d2) {
+    let pts = Math.pow(10, Math.min(d1, d2) + 1);
+    if (d1 === d2) pts *= 2;
+    return pts;
+  }
 
   function gamblerEffect(d) {
     if (d === 20) return "rankUp";
@@ -769,6 +788,7 @@ window.ChaosEngine = (function () {
     useLockRefund, useAddLink, useReveal, useGacha, useLifeline,
     useRecall, useDuplicate, useShuffle, useSwap, useReshuffle,
     useShake, useChaosquake, gambleTicket, gamblerEffect, gambleNote,
+    wildPoints,
     trace, applyAddedLinks, applySwaps, swapNodes, unlockNode,
     swapEntries, applyEntrySwaps
   };
