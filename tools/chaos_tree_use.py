@@ -42,7 +42,9 @@ and a (Meta:<key>:<value>) token in their description (stored in the JSON
     see-far            view locked nodes within SEE_FAR_DISTANCE of unlocked
                        nodes even if unconnected
     survey:N           see the names of locked nodes N extra connections away
-    trace-name         allow the trace command against node names
+    trace-name         allow the trace command against node names (free,
+                       unlimited while unlocked)
+    trace-name-use     one use: trace routes to a node by name
     trace-desc         allow the trace command against descriptions
     compass            allow trace --source against sources
     reveal-full        permanently reveal the whole tree
@@ -220,7 +222,8 @@ def derive_meta(tree, unlocked):
             "duplicate_max": 0, "cat_sight": {}, "lifeline": 0,
             "recall": 0, "root_pact": False, "shuffle": 0, "swap": 0,
             "reshuffle": 0, "shake": 0, "chaosquake": 0,
-            "gamble": 0, "gamble_reroll": 0, "gamble_twice": False}
+            "gamble": 0, "gamble_reroll": 0, "gamble_twice": False,
+            "trace_name_use": 0}
     for u in unlocked:
         nd = tree["by_id"][u]
         for k, v in iter_meta(nd):
@@ -288,6 +291,8 @@ def derive_meta(tree, unlocked):
                 meta["gamble_reroll"] = max(meta["gamble_reroll"], int(v))
             elif k == "gamble-twice":
                 meta["gamble_twice"] = True
+            elif k == "trace-name-use":
+                meta["trace_name_use"] += 1
     return meta
 
 
@@ -1098,14 +1103,21 @@ def use_reshuffle(state, tree, a):
 
 def trace(tree, state, field, x, n=TRACE_DEFAULT_N):
     """Trace routes to the n closest locked nodes whose name/description/
-    source contains x. Returns a list of (dist, node, [path ids])."""
+    source contains x. Returns a list of (dist, node, [path ids]).
+    Name traces are free while a trace-name node is unlocked, otherwise
+    each one spends a trace-name-use charge (e.g. Scent Hound)."""
     meta = derive_meta(tree, state["unlocked"])
     cap = {"name": "trace_name", "desc": "trace_desc",
            "source": "compass"}[field]
     if not meta[cap]:
-        verb = {"name": "trace-by-name", "desc": "trace-by-desc",
-                "source": "compass"}[field]
-        raise UsageError(f"you lack the {verb} ability")
+        if field == "name" and \
+                _used(state, "trace_name_use") < meta["trace_name_use"]:
+            state["meta_used"]["trace_name_use"] = \
+                _used(state, "trace_name_use") + 1
+        else:
+            verb = {"name": "trace-by-name", "desc": "trace-by-desc",
+                    "source": "compass"}[field]
+            raise UsageError(f"you lack the {verb} ability")
     x = x.lower()
     dist, prev = hop_distances(tree, state["unlocked"])
     matches = []
@@ -1288,7 +1300,8 @@ def main(argv=None):
                             ("duplicate", "duplicate"), ("shuffle", "shuffle"),
                             ("swap", "swap"), ("shake", "shake"),
                             ("chaosquake", "chaosquake"),
-                            ("gamble", "gamble")):
+                            ("gamble", "gamble"),
+                            ("trace_name_use", "trace-name-use")):
             if meta[key]:
                 left = meta[key] - state["meta_used"].get(key, 0)
                 meta_bits.append(f"{label}x{left}")

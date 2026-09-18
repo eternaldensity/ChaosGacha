@@ -471,8 +471,11 @@ def _shake_tree():
          "source": "Generic", "description": "plain", "pos": P(0.4, 0)},
         {"id": 6, "name": "Eff", "rarity": 2.0, "file": "ability",
          "source": "Generic", "description": "plain", "pos": P(0.45, 0)},
+        {"id": 7, "name": "Hound", "rarity": 4.3, "file": "item",
+         "source": "Generic", "description": "(Meta:trace-name-use)",
+         "pos": P(0.55, 0)},
     ]
-    edges = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6)]
+    edges = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7)]
     return make_tree(nodes, edges)
 
 
@@ -770,6 +773,19 @@ def test_meta4():
     print("meta4-node tests passed")
 
 
+def test_trace_use():
+    tree = _shake_tree()
+    st = cu.new_state("<synthetic>")
+    st["unlocked"] = [0, 1, 7]  # Shaker + Hound, no trace-name passive
+    assert cu.view_state(tree, st)["trace_name_use"] == 1
+    res = cu.trace(tree, st, "name", "cee")
+    assert res and res[0][1]["id"] == 3
+    assert st["meta_used"]["trace_name_use"] == 1
+    assert "ability" in expect_error(cu.trace, tree, st, "name", "dee")
+
+    print("trace-use tests passed")
+
+
 def test_wild():
     assert cu.wild_points(3, 5) == 10.0 ** 4
     assert cu.wild_points(8, 8) == 2.0 * 10.0 ** 9
@@ -810,3 +826,4 @@ if __name__ == "__main__":
     test_meta3()
     test_meta4()
     test_wild()
+    test_trace_use()

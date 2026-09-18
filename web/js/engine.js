@@ -73,7 +73,7 @@ window.ChaosEngine = (function () {
       echo: 0, survey: 0, compass: false, duplicate: 0, duplicate_max: 0,
       cat_sight: {}, lifeline: 0, recall: 0, root_pact: false,
       shuffle: 0, swap: 0, reshuffle: 0, shake: 0, chaosquake: 0,
-      gamble: 0, gamble_reroll: 0, gamble_twice: false
+      gamble: 0, gamble_reroll: 0, gamble_twice: false, trace_name_use: 0
     };
     for (const u of unlocked) {
       const nd = tree.byId[u];
@@ -120,6 +120,7 @@ window.ChaosEngine = (function () {
         else if (k === "gamble") meta.gamble += v | 0;
         else if (k === "gamble-reroll") meta.gamble_reroll = Math.max(meta.gamble_reroll, v | 0);
         else if (k === "gamble-twice") meta.gamble_twice = true;
+        else if (k === "trace-name-use") meta.trace_name_use += 1;
       }
     }
     return meta;
@@ -766,8 +767,12 @@ window.ChaosEngine = (function () {
     const meta = deriveMeta(tree, state.unlocked);
     const cap = field === "name" ? "trace_name" : field === "desc" ? "trace_desc" : "compass";
     if (!meta[cap]) {
-      const verb = field === "source" ? "compass" : "trace-by-" + field;
-      throw new ChaosError(`you lack the ${verb} ability`);
+      if (field === "name" && used(state, "trace_name_use") < meta.trace_name_use) {
+        consume(state, "trace_name_use");
+      } else {
+        const verb = field === "source" ? "compass" : "trace-by-" + field;
+        throw new ChaosError(`you lack the ${verb} ability`);
+      }
     }
     const q = String(x).toLowerCase();
     const { dist, prev } = hopDistances(tree, state.unlocked);

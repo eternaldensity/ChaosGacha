@@ -1207,7 +1207,7 @@
     if (echoLeft > 0) bits.push(`echo×${echoLeft}`);
     if (m.root_pact) bits.push("root-pact");
     if (Object.keys(m.cat_sight).length) bits.push("cat-sight");
-    for (const k of ["lock_refund", "add_link", "gacha", "lifeline", "recall", "duplicate", "shuffle", "swap", "shake", "chaosquake", "gamble"]) {
+    for (const k of ["lock_refund", "add_link", "gacha", "lifeline", "recall", "duplicate", "shuffle", "swap", "shake", "chaosquake", "gamble", "trace_name_use"]) {
       if (m[k]) bits.push(`${k.replace(/_/g, "-")}×${m[k] - ((st.meta_used || {})[k] || 0)}`);
     }
     if (m.reshuffle) bits.push("reshuffle");
@@ -1566,6 +1566,7 @@
     if (!q) return toast("Type something to trace.", true);
     try {
       const res = E.trace(c.rt, c.st, field, q, 5).filter(r => visNode(r.node));
+      saveDB(); // single-use traces (e.g. Scent Hound) spend a charge
       if (!res.length) ul.innerHTML = "<li class='muted'>No matches.</li>";
       for (const r of res) {
         const li = document.createElement("li");

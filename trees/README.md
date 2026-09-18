@@ -55,7 +55,8 @@ options in different directions. All real nodes have `id >= 1`.
 `(Tree)` tag plus a `(Meta:...)` token (kept in the node's `meta` field).
 They grant tree-utility effects once unlocked: extended sight (`sight:N`,
 `sight-cat:<cat>:N`, `see-far`, names-only `survey:N`), route tracing by
-name/description/source (`trace-name`, `trace-desc`, `compass`), full-tree
+name/description/source (`trace-name`, `trace-desc`, `compass`; plus
+single-shot `trace-name-use`), full-tree
 reveals (`reveal-temp`, `reveal-full`), +N% ticket points (`ticket-bonus:N`,
 additive) or a one-time double payout (`echo`), a lock-and-refund
 (`lock-refund`), a free frontier unlock (`lifeline`), an undo of the last
