@@ -2072,3 +2072,21 @@
 #The witch's staff: forceful bolts, a charged omega blast that consumes magick, and a special that lobs your casting stone and recalls it. Never runs dry, only runs hot.
 1037. Arachne's Cocoon, 4.8, Hades 2
 #A spool of Arachne's silk that wraps you in ablative armor cocoons, each absorbing a full hit before bursting. Three cocoons per rest; the silk itches terribly.
+1038. Old Spiked Collar, 5.2, Hades
+#A spiked collar granting a reserve of bonus health that absorbs harm first. The reserve refills between battles; Cerberus has never noticed it missing.
+1039. Pom Blossom, 5.5, Hades
+#A divine flower that grows a random power a full rank after every major battle. Minor scuffles don't interest it.
+1040. Skull Earring, 5.3, Hades
+#An earring that makes your attacks hit notably harder while you are badly hurt. Stopping to heal wastes its attention.
+1041. White Antler, 5.4, Hades
+#An antler charm making critical strikes far more likely; clean hits find weak points on their own.
+1042. Lambent Plume, 5.5, Hades
+#A feather that stacks dodge chance the longer you keep moving without stopping. Standing still resets it.
+1043. Harpy Feather Duster, 4.6, Hades
+#A duster that makes breakables and containers hide more valuables. Dust first, loot second.
+1044. Cosmic Egg, 5.6, Hades
+#A cosmic egg that thins local reality: chaotic phenomena and strangers seek you out, and offerings made to Chaos, such as Chaos Gate sacrifices, run stronger.
+1045. Luckier Tooth, 5.3, Hades 2
+#A luckier tooth that cheats death once per venture at partial strength. Skelly swears this one works better than the last one.
+1046. Knuckle Bones, 5.2, Hades 2
+#Knucklebones that make your guardians and companions hit harder and endure longer. They rattle approvingly at good plans.

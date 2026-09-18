@@ -1340,3 +1340,27 @@
 #Every defeat tempers you against its cause, stacking resistance up to a firm cap. Dying deliberately still counts; the gods find it hilarious.
 670. Omega Moves, 5.6, Hades 2
 #Charge any attack or technique with your energy for an empowered omega version: wider, harder, and hungrier. Overcharging past your limits burns you instead.
+671. Dhampir, 4.8, Generic
+#Race Change - You are half-vampire: manageable blood hunger, sunlight that itches rather than kills, and no power over thralls. You keep the fangs, the pallor, and the dramatic entrances.
+672. Kitsune, 5.4, Generic
+#Race Change - You are a nine-tailed fox spirit; tails mark power ranks, with foxfire and layered illusion growing stronger per tail.
+673. Dryad, 4.2, Generic
+#Race Change - You are a tree-bound fey rooted to a bonded tree: bloom, root, and seasonal moods, empowered near your tree and diminished far from it.
+674. Gargoyle, 5.0, Generic
+#Race Change - You are living stone by day and a winged hunter by night: near-invulnerable while perched motionless, ravenous once the sun sets.
+675. Time Lord, 6.8, Doctor Who
+#Race Change - You are a Time Lord with limited regenerations: death becomes a new body instead, with a new face and a reshuffled temperament. Regenerations spent do not return.
+676. Yautja Hunter, 5.8, Predator
+#Race Change - You are a Yautja trophy hunter with thermal vision and cloaking affinity, bound by a hard honor code around worthy prey.
+677. Krogan Battlemaster, 5.4, Mass Effect
+#Race Change - You are a krogan battlemaster with redundant organs and blood rage, famously hard to kill and, thanks to the genophage, famously hard to make more of.
+678. T-800, 5.2, Terminator
+#Race Change - You are living tissue over a hyperalloy endoskeleton: no pain, no fear, no stopping, plus a power cell with opinions.
+679. Fremen, 4.2, Dune
+#Race Change - You are Fremen of the deep desert: moisture discipline, stillsuit synergy, and the art of walking without rhythm.
+680. Furyan, 5.0, Riddick
+#Race Change - You are Furyan: eyeshine that turns darkness transparent, rage-fueled resilience, and an affinity with animals.
+681. Belter, 3.8, The Expanse
+#Race Change - You are a Belter with elongated low-g physiology and stellar navigation intuition, and bones that go brittle the moment real gravity shows up.
+682. Na'vi, 5.4, James Cameron's Avatar
+#Race Change - You are Na'vi: nine feet of blue muscle and bone with a neural queue that bonds with beasts and the world-mind alike.
