@@ -1384,3 +1384,5 @@
 #You always end up in the aisle seat, wanted or not. Climbing over you is everyone's cardio.
 692. Bedhead, 0.1, Generic
 #Your hair wakes up styled by a storm. Combs have filed complaints.
+693. Cold Feet, 0.2, Generic
+#Your feet are always cold, regardless of socks, weather, or magic. Thick socks help slightly.

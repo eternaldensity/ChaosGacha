@@ -2950,8 +2950,6 @@
 #Shift the flavor of food slightly: sweeter, saltier, or faintly of pennies.
 1479. Static Cling, 0.3, Generic
 #Your clothes cling statically at dramatic moments. Dryer sheets help for an hour.
-1480. Cold Feet, 0.2, Generic
-#Your feet are always cold, regardless of socks, weather, or magic. Thick socks help slightly.
 1481. Warm Hands, 0.3, Generic
 #Your hands are always warm. Comforting in winter; melts chocolate in summer.
 1482. Hiccup, 0.2, Generic
