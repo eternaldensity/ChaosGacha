@@ -694,3 +694,7 @@
 #Hold a reaction shot on a lane: the first hostile to move through it eats an aimed attack. Moving yourself cancels it; reloading cancels everything.
 348. Micro, 5.1, StarCraft
 #Split attention across many simultaneous tasks: stutter-stepping, focus-firing, and retreating the wounded, all at once. APM bragging rights included.
+349. Wall Ride, 5.2, Overwatch
+#Ride along walls while moving, chaining surfaces without losing speed. Looking cool is mandatory; falling is educational.
+350. Speed Flip, 5.1, Rocket League
+#The fastest possible kickoff launch: flip-cancel into supersonic speed off the line. Beats everyone slower; ties everyone else doing it.

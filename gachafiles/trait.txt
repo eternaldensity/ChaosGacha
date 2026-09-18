@@ -1396,3 +1396,7 @@
 #Rise as a knight of the Ebon Blade: runeblade hunger, frost and unholy command, no need for rest or breath. Holy ground itches; paladins itch more.
 698. Infested, 5.4, StarCraft
 #Zerg infestation creeps through you: fast regeneration, creep affinity, and hive whispers at the edge of hearing. Fire still works on you, fans included.
+699. On Fire, 5.0, Overwatch
+#Perform well and you catch fire: burning bright, hitting harder, and announcing yourself to everyone. Slumps extinguish you; the flame remembers.
+700. What a Save!, 5.0, Rocket League
+#Reflexively celebrate every rescue, block, and near-miss with genuine joy. Allies find it inspiring; opponents find it personal.

@@ -1116,3 +1116,7 @@
 #A waste-collecting robot with a cockroach friend and bottomless curiosity. Compacts trash, collects treasures, and holds your hand when it rains.
 559. EVE Probe, 5.6, WALL-E
 #A sleek probe with an ion cannon, scanner suite, and a plant-shaped hole in her priorities. Fast, lethal, and slowly learning tenderness.
+560. Snowball, 5.2, Overwatch
+#A cryo-drone buddy firing freeze rays and blizzards on request. Loyal, round, and colder than your ex's heart.
+561. The Ball, 4.8, Rocket League
+#A giant soccar ball that follows you everywhere and bounces off everything. Explodes on a timer; the timer is a secret, even from the ball.

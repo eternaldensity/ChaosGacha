@@ -2976,3 +2976,9 @@
 #Call down a raging psionic storm that shreds shields, flesh, and circuitry alike across a wide area. Allies inside fare exactly as badly.
 1492. Solar Charge, 4.5, WALL-E
 #Drink direct sunlight to recharge energy, stamina, and small devices. Overcast skies provide faucet-level trickle; true night provides nothing.
+1493. Transcendence, 5.6, Overwatch
+#Become an invulnerable beacon of harmony, healing allies around you massively while drifting slowly forward. You cannot attack, and snipers wait patiently.
+1494. Graviton Surge, 5.9, Overwatch
+#Open a black hole that drags all nearby foes to its center and holds them there. Devastating combined with literally anything else.
+1495. Supersonic, 5.2, Rocket League
+#Push past supersonic speed on foot or wheels; anything you touch at full speed explodes away from you. Steering is aspirational.
