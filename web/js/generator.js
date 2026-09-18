@@ -10,7 +10,8 @@ window.ChaosGen = (function () {
     radius: 10.0, innerFraction: 0.12, distanceVariance: 0.05,
     clustering: 0.3, clusters: 3,
     degreeDist: "poisson", meanDegree: 2.5, degreeMin: 1, degreeMax: null,
-    rejoinBias: 0.7, linkFalloff: 2.0, maxLinkDistance: 0.6,
+    rejoinBias: 0.7, linkFalloff: 4.0, maxLinkDistance: 0.6,
+    localLinkDistance: 0.25,
     rootLinks: 3, rootMinSep: null, // null = 0.35x outermost radius
     connect: true
   };
@@ -109,6 +110,11 @@ window.ChaosGen = (function () {
     if (P.degreeMin > 0 && n > 1) targets = targets.map(t => Math.max(P.degreeMin, t));
 
     const maxd = P.maxLinkDistance * radius;
+    // Local-first search mirroring the Python tool: gather candidates
+    // inside a small radius, expanding toward the cap only while a node
+    // finds nothing, so links stay local without stranding sparse nodes.
+    let locald = (P.localLinkDistance != null ? P.localLinkDistance : 0.25) * radius;
+    if (!(locald > 0)) locald = maxd > 0 ? maxd : radius;
     const falloff = Math.max(0, P.linkFalloff);
     const bias = Math.max(0, Math.min(1, P.rejoinBias));
     const adj = nodes.map(() => new Set());
@@ -124,7 +130,7 @@ window.ChaosGen = (function () {
       if (ra !== rb) parent[ra] = rb;
     }
 
-    const cell = maxd > 0 ? maxd : radius;
+    const cell = locald;
     const grid = new Map();
     nodes.forEach((nd, i) => {
       const key = gridKey(nd.pos, cell);
@@ -134,17 +140,18 @@ window.ChaosGen = (function () {
     function gridKey(p, c) {
       return Math.floor(p[0] / c) + "," + Math.floor(p[1] / c) + "," + Math.floor(p[2] / c);
     }
-    function candidates(a) {
+    function candidates(a, radius) {
+      const rings = Math.max(1, Math.ceil(radius / cell));
       const p = nodes[a].pos;
       const cx = Math.floor(p[0] / cell), cy = Math.floor(p[1] / cell), cz = Math.floor(p[2] / cell);
       const out = [];
-      for (let dx = -1; dx <= 1; dx++) for (let dy = -1; dy <= 1; dy++) for (let dz = -1; dz <= 1; dz++) {
+      for (let dx = -rings; dx <= rings; dx++) for (let dy = -rings; dy <= rings; dy++) for (let dz = -rings; dz <= rings; dz++) {
         const cellNodes = grid.get((cx + dx) + "," + (cy + dy) + "," + (cz + dz));
         if (!cellNodes) continue;
         for (const b of cellNodes) {
           if (b === a || adj[a].has(b)) continue;
           const d = dist3(nodes[a].pos, nodes[b].pos);
-          if (d <= maxd) out.push([b, d]);
+          if (d <= radius) out.push([b, d]);
         }
       }
       return out;
@@ -153,11 +160,16 @@ window.ChaosGen = (function () {
     const order = rng.shuffle(nodes.map((_, i) => i));
     let done = 0;
     for (const a of order) {
+      let radius = maxd > 0 ? Math.min(locald, maxd) : locald;
       while (adj[a].size < targets[a]) {
-        const cands = candidates(a);
-        if (!cands.length) break;
+        const cands = candidates(a, radius);
+        if (!cands.length) {
+          if (maxd > 0 && radius < maxd) { radius = Math.min(maxd, radius * 1.5); continue; }
+          break;
+        }
+        const denom = maxd > 0 ? maxd : radius;
         const scores = cands.map(([b, d]) => {
-          let s = falloff > 0 ? Math.pow(1.0 - d / maxd, falloff) : 1.0;
+          let s = falloff > 0 ? Math.pow(1.0 - d / denom, falloff) : 1.0;
           if (bias > 0 && find(a) === find(b)) s *= (1.0 - bias);
           return Math.max(0, s);
         });
@@ -181,11 +193,14 @@ window.ChaosGen = (function () {
     }
 
     if (P.connect && n > 1) {
+      // Cross-component search runs at the full cap: components are beyond
+      // local reach, so the rare long bridges legitimately come from here.
+      const span = maxd > 0 ? maxd : locald;
       let comp = new Set(nodes.map((_, i) => find(i)));
       while (comp.size > 1) {
         let best = null;
         for (let a = 0; a < n; a++) {
-          for (const [b, d] of candidates(a)) {
+          for (const [b, d] of candidates(a, span)) {
             if (find(a) === find(b)) continue;
             if (!best || d < best[0]) best = [d, a, b];
           }

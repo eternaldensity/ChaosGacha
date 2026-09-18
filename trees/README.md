@@ -69,8 +69,8 @@ root-adjacent nodes (`root-pact`). They never roll in the Gacha.
 ## Regenerating
 
 `python3 tools/generate_tree.py --help` lists all parameters (placement,
-clustering, degree distribution, rejoin bias, link falloff, max link
-distance, per-source filtering). Every tree is reproducible from its `seed`.
+clustering, degree distribution, rejoin bias, link falloff, local link
+distance, max link distance, per-source filtering). Every tree is reproducible from its `seed`.
 
 ## Using a tree
 

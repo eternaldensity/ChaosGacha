@@ -297,8 +297,9 @@
         degreeDist: $("newDegDist").value || "poisson",
         degreeMin: Math.max(0, parseInt($("newDegMin").value, 10) || 0),
         degreeMax: $("newDegMax").value === "" ? null : Math.max(1, parseInt($("newDegMax").value, 10)),
-        linkFalloff: num("newFalloff", 2.0),
+        linkFalloff: num("newFalloff", 4.0),
         maxLinkDistance: num("newMaxDist", 0.6),
+        localLinkDistance: num("newLocalDist", 0.25),
         connect: !!$("newConnect").checked
       },
       filters: {

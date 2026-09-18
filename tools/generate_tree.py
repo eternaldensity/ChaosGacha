@@ -39,6 +39,10 @@ Links:
                              already share a neighbour (branch rejoining);
                              1.0 forbids it entirely (acyclic)
   --link-falloff F           exponent preferring short links (0 = none)
+  --local-link-distance F    preferred search radius as a fraction of radius
+                             (default 0.25); expands toward --max-link-distance
+                             only while a node finds nothing, so links stay
+                             local without stranding sparse nodes
   --max-link-distance F      link cap as a fraction of radius
   --no-connect               don't force a single connected component
 
@@ -245,6 +249,14 @@ def generate_tree(items, params, rng):
         targets = [max(params["degree_min"], t) for t in targets]
 
     maxd = params["max_link_distance"] * radius
+    # Local-first search: candidates are gathered inside a small radius
+    # (default 0.35x) and the radius expands only while a node finds
+    # nothing, so long links form solely where the neighbourhood is empty.
+    # This keeps connectivity local without stranding sparse nodes the way
+    # a small hard cap would.
+    locald = params.get("local_link_distance", 0.25) * radius
+    if not locald > 0:
+        locald = maxd if maxd > 0 else radius
     falloff = max(0.0, params["link_falloff"])
     bias = max(0.0, min(1.0, params["rejoin_bias"]))
 
@@ -269,40 +281,48 @@ def generate_tree(items, params, rng):
         if ra != rb:
             parent[ra] = rb
 
-    # Spatial grid for local neighbour lookup: cell side = maxd, so every
-    # candidate within maxd lives in an adjacent cell (or the node's own).
-    cell = maxd if maxd > 0 else radius
+    # Spatial grid for local neighbour lookup. Cell side = the local search
+    # radius; wider searches walk additional rings of cells, so narrowing
+    # the local radius also shrinks every lookup instead of scanning the
+    # whole tree the way a maxd-sized cell does.
+    cell = locald
     grid = {}
     for i, nd in enumerate(nodes):
         key = (int(nd["pos"][0] // cell), int(nd["pos"][1] // cell),
                int(nd["pos"][2] // cell))
         grid.setdefault(key, []).append(i)
 
-    def candidates(a):
+    def candidates(a, radius):
+        rings = max(1, int(math.ceil(radius / cell)))
         p = nodes[a]["pos"]
         cx, cy, cz = (int(p[0] // cell), int(p[1] // cell), int(p[2] // cell))
         out = []
-        for dx in (-1, 0, 1):
-            for dy in (-1, 0, 1):
-                for dz in (-1, 0, 1):
+        for dx in range(-rings, rings + 1):
+            for dy in range(-rings, rings + 1):
+                for dz in range(-rings, rings + 1):
                     for b in grid.get((cx + dx, cy + dy, cz + dz), ()):
                         if b == a or b in adj[a]:
                             continue
                         d = dist(nodes[a], nodes[b])
-                        if d <= maxd:
+                        if d <= radius:
                             out.append((b, d))
         return out
 
     order = list(range(n))
     rng.shuffle(order)
     for qi, a in enumerate(order):
+        radius = min(locald, maxd) if maxd > 0 else locald
         while len(adj[a]) < targets[a]:
-            cands = candidates(a)
+            cands = candidates(a, radius)
             if not cands:
+                if maxd > 0 and radius < maxd:
+                    radius = min(maxd, radius * 1.5)
+                    continue
                 break
             scores = []
+            denom = maxd if maxd > 0 else radius
             for b, d in cands:
-                s = (1.0 - d / maxd) ** falloff if falloff > 0 else 1.0
+                s = (1.0 - d / denom) ** falloff if falloff > 0 else 1.0
                 # branch rejoining: linking into the component a already
                 # belongs to would close a loop. Higher bias makes that
                 # progressively less likely; 1.0 forbids it (acyclic).
@@ -329,13 +349,17 @@ def generate_tree(items, params, rng):
             print(f"  linking... {qi + 1}/{n} nodes", flush=True)
 
     # --- connectivity pass (optional) ---
+    # Cross-component search always runs at the full cap: components are by
+    # definition beyond local reach, so this is where the rare long bridge
+    # links legitimately come from.
     bridges = 0
     if params["connect"] and n > 1:
         comp = {find(i) for i in range(n)}
+        span = maxd if maxd > 0 else locald
         while len(comp) > 1:
             best = None
             for a in range(n):
-                for (b, d) in candidates(a):
+                for (b, d) in candidates(a, span):
                     if find(a) == find(b):
                         continue
                     if best is None or d < best[0]:
@@ -517,7 +541,8 @@ def main():
     ap.add_argument("--rejoin-bias", type=float, default=0.7)
     ap.add_argument("--root-links", type=int, default=3,
                     help="how many starting nodes link to the Origin root")
-    ap.add_argument("--link-falloff", type=float, default=2.0)
+    ap.add_argument("--link-falloff", type=float, default=4.0)
+    ap.add_argument("--local-link-distance", type=float, default=0.25)
     ap.add_argument("--max-link-distance", type=float, default=0.6)
     ap.add_argument("--no-connect", action="store_true")
     ap.add_argument("--out")
@@ -566,6 +591,7 @@ def main():
         "degree_max": args.degree_max,
         "rejoin_bias": args.rejoin_bias,
         "link_falloff": args.link_falloff,
+        "local_link_distance": args.local_link_distance,
         "max_link_distance": args.max_link_distance,
         "root_links": args.root_links,
         "connect": not args.no_connect,
