@@ -1102,3 +1102,11 @@
 #A mewling dead soul, faintly green. Company, of a sort.
 552. Grunt (sleeping), 0.3, Halo
 #Naps through briefings and wakes screaming at nothing. Needs a nap schedule posted visibly.
+553. Cylon Raider, 5.2, Battlestar Galactica
+#A biomechanical fighter craft with a rebellious streak, fast, evasive, and fond of its pilot. Resurrects with you if you can afford the facility.
+554. Tachikoma Unit, 5.6, Ghost in the Shell
+#An active-duty AI spider-tank: cheerful, curious, armed, and networked to its siblings. Develops individuality at plot-convenient moments.
+555. Gremlin, 5.0, XCOM
+#A flying support drone that heals allies, stuns enemies, and hacks networks from orbit-adjacent altitudes. Sarcastic beeps included free.
+556. Wisp, 5.0, Warcraft
+#A night elf worker wisp: gathers, scouts, and detonates itself against summoned things. Reforms by morning, slightly smugger.

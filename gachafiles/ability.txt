@@ -2960,3 +2960,15 @@
 #Your shoes squeak on command. Stealth is not an option while shod.
 1484. Wrinkle, 0.3, Generic
 #Smooth wrinkles from clothing by touch. Does not work on skin, no matter how often asked.
+1485. Asgard Beam, 5.5, Stargate
+#Snatch targets with teleport beams at line of sight: relocate allies to safety or scatter foes. Living cargo arrives nauseated; rapid repeat beams compound the nausea.
+1486. FTL Jump, 5.6, Battlestar Galactica
+#Fold space to jump yourself and nearby allies across star systems near-instantly. Each jump needs plotted coordinates and a spool-up; blind jumps land you somewhere exciting.
+1487. Thermoptic Camouflage, 5.5, Ghost in the Shell
+#Bend light around yourself into near-total invisibility while moving slowly. Sprinting, rain, and smoke betray you; thermal optics see straight through it.
+1488. Witcher Signs, 5.4, The Witcher
+#Cast the five witcher signs with a gesture: stunning Aard, burning Igni, trapping Yrden, shielding Quen, and charming Axii. Simple, fast, and weaker than true sorcery.
+1489. Heroism, 5.5, Warcraft
+#Drive allies into a mass battle frenzy: greatly quickened strikes and movement for under a minute, then exhaustion. One chorus per battle; the drums remember.
+1490. Psionics, 5.6, XCOM
+#Break minds at range: panic rookies, dominate the weak-willed, and detonate Rift anomalies. Each intrusion risks feedback that stuns you instead.

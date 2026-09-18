@@ -1386,3 +1386,11 @@
 #Your hair wakes up styled by a storm. Combs have filed complaints.
 693. Cold Feet, 0.2, Generic
 #Your feet are always cold, regardless of socks, weather, or magic. Thick socks help slightly.
+694. Tok'ra Blending, 5.4, Stargate
+#Share your body with a Tok'ra symbiote: two minds, one body, rapid healing, and centuries of stolen Goa'uld secrets. Veto rights are mutual and absolute.
+695. Cylon Resurrection, 5.8, Battlestar Galactica
+#Death downloads you into a fresh identical body, memories intact to the moment of death. Needs a resurrection facility in range; without one, you stay dead like everyone else.
+696. Trial of the Grasses, 5.6, The Witcher
+#Survive the mutagenic Trial: lightning reflexes, immunity to most poisons and diseases, decades of extended life, and sterility. Most subjects do not survive it; you did.
+697. Ebon Knight, 5.8, Warcraft
+#Rise as a knight of the Ebon Blade: runeblade hunger, frost and unholy command, no need for rest or breath. Holy ground itches; paladins itch more.

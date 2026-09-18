@@ -2152,3 +2152,17 @@
 #A dull shiv. Shanks poorly. Intimidates only the already intimidated.
 1077. Lethe Water (sip), 0.5, Hades
 #One sip erases roughly the last minute. Single use; the flask stays empty as a lesson.
+1078. Zat'nik'tel, 4.8, Stargate
+#Goa'uld sidearm with three settings per target: first shot stuns, second kills, third disintegrates. Resets are per target, so count your shots.
+1079. Sarcophagus, 5.8, Stargate
+#Goa'uld healing sarcophagus that restores any wound, illness, or age on a long rest inside. Each use costs a sliver of soul and feeds a quiet hunger for more.
+1080. Puddle Jumper, 5.6, Stargate
+#A cloaking puddle jumper seating four: flies, swims, squeezes through gates, and hides from nearly everything. Needs drone weapons separately; they are never included.
+1081. Viper Mk II, 5.4, Battlestar Galactica
+#A Colonial Viper interceptor: brutally fast, manually flown, no networked systems to subvert. Lands like a brick and turns like a rumour.
+1082. Witcher Medallion, 5.0, The Witcher
+#A wolf's-head medallion vibrating near magic, monsters, and curses, stronger for closer and fouler. Useless as jewelry; wolves approve.
+1083. Hearthstone, 5.0, Warcraft
+#Bind to an inn and return to it from anywhere after a short channel, once per day. Binds to inns only; dungeons, war zones, and other people's houses do not count.
+1084. Mimic Beacon, 5.2, XCOM
+#A thrown hologram projector impersonating a soldier badly enough to draw all enemy fire. Lasts until destroyed or disbelieved, whichever comes first.

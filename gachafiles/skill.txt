@@ -688,3 +688,7 @@
 #Spin a pen around your thumb. You drop it four times out of five.
 345. Speed Walking, 0.3, Generic
 #Walk just below a jog without technically running. Race walkers nod respectfully.
+346. Cyber Warfare, 5.3, Ghost in the Shell
+#Hack cyberbrains, drones, and networks mid-combat: spoof senses, hijack limbs, and ghost-dive opposition hackers. Air-gapped targets just laugh.
+347. Overwatch, 5.3, XCOM
+#Hold a reaction shot on a lane: the first hostile to move through it eats an aimed attack. Moving yourself cancels it; reloading cancels everything.
