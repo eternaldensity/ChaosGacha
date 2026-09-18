@@ -969,6 +969,19 @@
       (extra || "") + `</div>` +
       (nd.description ? `<p class="small">${esc(nd.description)}</p>` : "");
   }
+  // First held jump/choice ticket that can reach nid, with the launch node
+  // and pick the engine will accept (mirrors unlockJump's ticket choice).
+  function nodeJumpPlay(rt, st, nid) {
+    const jt = st.inventory.find(t => t.kind === "jump" || t.kind === "choice");
+    if (!jt) return null;
+    const limit = jt.kind === "choice" ? jt.n : 1;
+    for (const u of st.unlocked) {
+      const cands = E.jumpCandidates(rt, jt.category, u, st.unlocked).slice(0, limit);
+      const idx = cands.findIndex(([dd, cand]) => cand.id === nid);
+      if (idx >= 0) return { ticket: jt, from: u, pick: idx };
+    }
+    return null;
+  }
   async function renderNode() {
     const card = $("nodeCard"), svg = $("nbrSvg");
     svg.innerHTML = "";
@@ -992,7 +1005,18 @@
           `<div class="muted small" style="margin-top:4px">Wallet: ${E.fmt(c.st.points)} pts · ${c.st.cores} cores.</div>` +
           (ok ? "" : `<div class="muted small" style="margin-top:4px">Needs 1 core + ${E.fmt(cost)} pts (have ${c.st.cores} / ${E.fmt(c.st.points)}).</div>`);
       } else {
-        actions = `<div class="muted small" style="margin-top:8px">Not adjacent — reach it with a skip / jump / hop ticket (Tickets tab).</div>`;
+        const { dist } = E.hopDistances(c.rt, c.st.unlocked);
+        const skipOk = c.st.inventory.some(t => t.kind === "skip" &&
+          dist[nd.id] != null && dist[nd.id] <= 1 + t.n);
+        const play = nodeJumpPlay(c.rt, c.st, nd.id);
+        if (!skipOk && !play) {
+          actions = `<div class="muted small" style="margin-top:8px">Not adjacent — reach it with a skip / jump / hop ticket (Tickets tab).</div>`;
+        } else {
+          actions = `<div class="row" style="margin-top:8px">` +
+            (skipOk ? `<button class="primary" data-act="skip">Skip →</button>` : "") +
+            (play ? `<button class="primary" data-act="jump">Jump →</button>` : "") + `</div>` +
+            `<div class="muted small" style="margin-top:4px">Wallet: ${E.fmt(c.st.points)} pts · ${c.st.cores} cores.</div>`;
+        }
       }
     } else if (unl) {
       actions = `<div class="muted small" style="margin-top:8px">Unlocked ✓</div>`;
@@ -1000,8 +1024,23 @@
     card.innerHTML = `<h2>Selected node</h2>` + nodeLine(nd, unl) + actions;
     const ub = card.querySelector('[data-act="unlock"]');
     if (ub) ub.addEventListener("click", async () => {
-      const ok = await mutate(({ st, rt }) => E.unlock(st, rt, nd.id));
-      if (ok) toast(`Unlocked ${nd.name}.`);
+      const done = await mutate(({ st, rt }) => E.unlock(st, rt, nd.id));
+      if (done) toast(`Unlocked ${nd.name}.`);
+    });
+    // Skip / jump straight from the node view when a held ticket reaches it.
+    const sb = card.querySelector('[data-act="skip"]');
+    if (sb) sb.addEventListener("click", async () => {
+      const done = await mutate(({ st, rt }) => E.unlockSkip(st, rt, nd.id));
+      if (done) toast(`Unlocked ${nd.name} (skip).`);
+    });
+    const jb = card.querySelector('[data-act="jump"]');
+    if (jb) jb.addEventListener("click", async () => {
+      const done = await mutate(({ st, rt }) => {
+        const play = nodeJumpPlay(rt, st, nd.id);
+        if (!play) throw new E.ChaosError("no held jump ticket reaches this node");
+        return E.unlockJump(st, rt, play.ticket.category, play.from, play.pick);
+      });
+      if (done) toast(`Unlocked ${nd.name} (jump).`);
     });
 
     // 2D neighbour view: center + ring. Only neighbours you can actually
