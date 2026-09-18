@@ -1013,8 +1013,8 @@
           actions = `<div class="muted small" style="margin-top:8px">Not adjacent — reach it with a skip / jump / hop ticket (Tickets tab).</div>`;
         } else {
           actions = `<div class="row" style="margin-top:8px">` +
-            (skipOk ? `<button class="primary" data-act="skip">Skip →</button>` : "") +
-            (play ? `<button class="primary" data-act="jump">Jump →</button>` : "") + `</div>` +
+            (skipOk ? `<button class="primary" data-act="skip">Unlock with Skip →</button>` : "") +
+            (play ? `<button class="primary" data-act="jump">Unlock with Jump →</button>` : "") + `</div>` +
             `<div class="muted small" style="margin-top:4px">Wallet: ${E.fmt(c.st.points)} pts · ${c.st.cores} cores.</div>`;
         }
       }
@@ -1611,7 +1611,7 @@
         const li = document.createElement("li");
         li.innerHTML = `<div class="grow"><b>#${r.node.id} ${esc(r.node.name)}</b> ` +
           `<span class="pill">${r.dist} hop${r.dist === 1 ? "" : "s"}</span><br>` +
-          `<span class="muted small">${esc(r.path.map(p => "#" + p).join(" → "))}</span></div>`;
+          `<span class="muted small">${esc(r.path.map(p => c.rt.byId[p] ? c.rt.byId[p].name : "#" + p).join(" → "))}</span></div>`;
         const go = document.createElement("button");
         go.textContent = "View";
         go.addEventListener("click", () => { selectedId = r.node.id; showTab("node"); });
