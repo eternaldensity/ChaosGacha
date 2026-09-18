@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 3,
-  "generated_at": "2026-09-18T12:34:41Z",
+  "generated_at": "2026-09-18T12:59:25Z",
   "params": {
     "files": [
       "skill",
@@ -42991,7 +42991,7 @@
       "rarity": 3.6,
       "source": "Factorio",
       "tag": "both",
-      "description": "A book of stamped-down factory blueprints; plop down entire production blocks at once.",
+      "description": "A book of stamped-down factory blueprints recorded by scanning layouts you have built. Stamp ghost-images of entire production blocks, walls, or furnace rows at once; construction robots, yours or borrowed, then build them for real, consuming materials from your stock, as the book conjures no matter itself. Synergises with any Tinker, construction, or automation abilities, which can feed it new designs and supply the builders and belts to realise them.",
       "meta": [],
       "pos": [
         4.527459,

@@ -1891,7 +1891,7 @@
 946. Personal Roboport, 4.2, Factorio
 #A wearable roboport that deploys your own construction robots wherever you stand.
 947. Blueprint Book, 3.6, Factorio
-#A book of stamped-down factory blueprints; plop down entire production blocks at once.
+#A book of stamped-down factory blueprints recorded by scanning layouts you have built. Stamp ghost-images of entire production blocks, walls, or furnace rows at once; construction robots, yours or borrowed, then build them for real, consuming materials from your stock, as the book conjures no matter itself. Synergises with any Tinker, construction, or automation abilities, which can feed it new designs and supply the builders and belts to realise them.
 948. Scout Launcher, 2.8, Outer Wilds
 #A wrist-mounted launcher firing a reusable camera probe that photographs the unknown.
 949. Signalscope, 2.6, Outer Wilds
