@@ -1042,3 +1042,63 @@
 #A ravenous beast that devours artifacts whole, growing larger and stronger with each one. Indiscriminate: it cannot tell your artifacts from anyone else's.
 522. Scylla and the Sirens, 5.7, Hades 2
 #A monstrous musical trio whose battle-song hardens allies and unravels foes. They demand top billing, an audience, and absolutely no requests.
+523. Tribble, 0.5, Star Trek
+#A cooing ball of fur that eats grain and multiplies if overfed. Do not overfeed it.
+524. Adipose, 0.4, Doctor Who
+#A tiny waddling fat blob. Harmless, hungry, and weirdly cheerful about both.
+525. Woodsprite, 0.3, James Cameron's Avatar
+#A floating seed that follows the pure-hearted and lands on you approvingly. No further function known.
+526. Desert Mouse, 0.4, Dune
+#A kangaroo mouse that survives anything dry. Hoards crumbs with desert discipline.
+527. T-1, 0.5, Terminator
+#A battlefield robot that tips over on uneven ground and apologizes in beeps.
+528. ED-209 (stairs), 0.6, RoboCop
+#An enforcement droid that cannot do stairs. Announces arrests at top volume regardless.
+529. Tachikoma (nap mode), 0.5, Ghost in the Shell
+#A spider-tank that mostly naps and dreams of oil. Wakes up for compliments.
+530. Mimic (mug), 0.4, Prey
+#A shapeshifter stuck as a coffee mug. Forgets how to turn back for hours at a time.
+531. XCOM Rookie, 0.4, XCOM
+#Misses 95% of shots and panics photogenically. Somehow survives.
+532. Roach (distant), 0.4, The Witcher
+#Comes when whistled, from very far away, eventually. Loyal at range.
+533. Nug (royal), 0.3, Dragon Age
+#A tiny royal rabbit-pig that demands lettuce and receives it.
+534. Mockingjay (tone-deaf), 0.4, The Hunger Games
+#Copies tunes off-key with total confidence. Nobody has the heart to stop it.
+535. Direwolf Pup (runt), 0.5, Game of Thrones
+#Smallest of the litter and fierce about snacks. Will grow; slowly.
+536. Palisman (sleepy), 0.4, The Owl House
+#A bat palisman asleep twenty hours a day. The other four hours it judges you.
+537. Fairy (common), 0.3, Touhou
+#A weak common fairy. Revives shortly after every beating, annoyingly cheerful about it.
+538. Goblin (illiterate), 0.4, Pathfinder
+#Fears writing, loves fire a normal amount (for a goblin). Cannot read this entry.
+539. Peasant (pitchfork), 0.2, Dungeons & Dragons
+#Has a pitchfork and fears everything. Mobs only if at least forty others join first.
+540. Boo, 0.3, Baldur's Gate
+#A miniature giant space hamster squeaking tactical advice. The tactics are sound.
+541. Morte, 0.4, Planescape
+#A floating skull that complains constantly and knows things. Mostly complains.
+542. Peon, 0.3, Warcraft
+#Gathers resources slowly and asks if something needs doing. Something always does.
+543. SCV (cowardly), 0.3, StarCraft
+#Builds slowly and flees loudly at the first sign of trouble. Excellent alarm system.
+544. Poro, 0.4, League of Legends
+#Round, friendly, and tongue-first. Loves snacks; fears nothing, understands less.
+545. Dodo, 0.3, Ark
+#Level one forever. Waddles directly into danger with total confidence.
+546. Peeper, 0.3, Subnautica
+#A big-eyed fish that watches you. Just watches.
+547. Keeper, 0.5, Mass Effect
+#A silent Citadel keeper tending machines. Ignores you completely, which is the job.
+548. Gonk Droid, 0.4, Star Wars
+#A power droid saying only "gonk". Charges small devices very slowly.
+549. Zoomer, 0.4, Metroid
+#Crawls walls and ceilings harmlessly. Startles easily; startles you in return.
+550. Storm Crow, 0.5, MTG
+#A crow that eats grain and judges your plays. Strictly worse than it thinks.
+551. Shade, 0.5, Hades
+#A mewling dead soul, faintly green. Company, of a sort.
+552. Grunt (sleeping), 0.3, Halo
+#Naps through briefings and wakes screaming at nothing. Needs a nap schedule posted visibly.

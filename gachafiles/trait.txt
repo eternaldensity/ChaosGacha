@@ -1364,3 +1364,23 @@
 #Race Change - You are a Belter with elongated low-g physiology and stellar navigation intuition, and bones that go brittle the moment real gravity shows up.
 682. Na'vi, 5.4, James Cameron's Avatar
 #Race Change - You are Na'vi: nine feet of blue muscle and bone with a neural queue that bonds with beasts and the world-mind alike.
+683. Redshirt, 0.6, Star Trek
+#Trouble finds you first on away missions. Senior officers keep forgetting your name.
+684. I'll Be Back, 0.5, Terminator
+#You always announce your return, and you always do. Eventually.
+685. They'll Remember That, 0.4, Telltale
+#Non-player characters insist they will remember your choices. They won't.
+686. Arrow to the Knee, 0.5, Skyrim
+#An old arrow wound aches in cold or damp weather. It is never plot-relevant.
+687. Mismatched Socks, 0.1, Generic
+#Your socks never match, no matter how carefully you pair them. The dryer denies everything.
+688. Umbrella Loser, 0.2, Generic
+#Every umbrella you own is lost within a month. Rain finds this hilarious.
+689. Password Forgetter, 0.2, Generic
+#You forget every password except old expired ones.
+690. Chronically Early, 0.2, Generic
+#You arrive exactly five minutes early to everything, and wait where everyone can see you.
+691. Aisle Seat, 0.1, Generic
+#You always end up in the aisle seat, wanted or not. Climbing over you is everyone's cardio.
+692. Bedhead, 0.1, Generic
+#Your hair wakes up styled by a storm. Combs have filed complaints.

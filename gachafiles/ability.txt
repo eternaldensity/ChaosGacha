@@ -2932,3 +2932,31 @@
 #Tear open a way to Chaos at the cost of a measure of your vitality, and choose one of three offered boons. Stronger offerings draw stronger boons, and Chaos does not give refunds.
 1470. Moon Hex, 5.8, Hades 2
 #Your hex charges as you fight; unleash it as a devastating moon blast that freezes lesser foes solid and sunders barriers. Fully spent, it begins charging again immediately.
+1471. Static Shock, 0.2, Generic
+#Deliver a mild static shock on touch. Startles; harms nothing but composure.
+1472. Nightlight, 0.3, Generic
+#Glow faintly in the dark, about as bright as a nightlight. Cannot be switched off while you sleep.
+1473. Itch, 0.2, Generic
+#Inflict a mild itch on a target once per day. Somehow they always know it was you.
+1474. Sneeze, 0.3, Generic
+#Induce a single sneeze in someone nearby. Useless in combat, devastating in libraries.
+1475. Fizz, 0.4, Generic
+#Carbonate any drink on touch. Flat drinks fear you.
+1476. Untie, 0.3, Generic
+#Loosen any knot slightly. Fully untying anything takes all day.
+1477. Rewind (3 seconds), 0.9, Life is Strange
+#Rewind time by three seconds, once per day. Enough to catch a falling glass. Sometimes.
+1478. Flavor, 0.4, Generic
+#Shift the flavor of food slightly: sweeter, saltier, or faintly of pennies.
+1479. Static Cling, 0.3, Generic
+#Your clothes cling statically at dramatic moments. Dryer sheets help for an hour.
+1480. Cold Feet, 0.2, Generic
+#Your feet are always cold, regardless of socks, weather, or magic. Thick socks help slightly.
+1481. Warm Hands, 0.3, Generic
+#Your hands are always warm. Comforting in winter; melts chocolate in summer.
+1482. Hiccup, 0.2, Generic
+#Give someone the hiccups for about a minute. No cure assists.
+1483. Squeak, 0.2, Generic
+#Your shoes squeak on command. Stealth is not an option while shod.
+1484. Wrinkle, 0.3, Generic
+#Smooth wrinkles from clothing by touch. Does not work on skin, no matter how often asked.

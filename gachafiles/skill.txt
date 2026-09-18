@@ -668,3 +668,23 @@
 #The free-man's martial art: swings, pries, jams, and one quiet hallway at a time.
 335. Scry, 5.1, MTG
 #Glimpse the immediate future and quietly rearrange it: look at the next few outcomes, keep the order or bury the worst of them. Stronger minds see further and bury deeper.
+336. Barrel Roll, 0.4, Star Fox
+#Do a barrel roll on command. You get dizzy after two.
+337. Belter Creole, 0.5, The Expanse
+#Basic Belter phrases for docking, haggling, and swearing. Your accent outs you instantly.
+338. Running Down Corridors, 0.4, Doctor Who
+#Run down corridors with purpose while shouting explanations. Slightly faster when pursued.
+339. Small Talk, 0.2, Generic
+#Sustain conversations about the weather indefinitely. Any other topic ends them.
+340. Power Nap, 0.3, Generic
+#Fall asleep anywhere in under a minute and wake in ten, mostly refreshed. Loud noises void the warranty.
+341. Microwave Timing, 0.2, Generic
+#Stop the microwave with one second left, usually. The beep fears you, mostly.
+342. Coin Spin, 0.3, Generic
+#Spin a coin on a table and catch it about half the time.
+343. Stone Skip, 0.3, Generic
+#Skip a stone once on calm water. Twice, if nobody is watching.
+344. Pen Spinning, 0.2, Generic
+#Spin a pen around your thumb. You drop it four times out of five.
+345. Speed Walking, 0.3, Generic
+#Walk just below a jog without technically running. Race walkers nod respectfully.

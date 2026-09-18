@@ -2090,3 +2090,65 @@
 #A luckier tooth that cheats death once per venture at partial strength. Skelly swears this one works better than the last one.
 1046. Knuckle Bones, 5.2, Hades 2
 #Knucklebones that make your guardians and companions hit harder and endure longer. They rattle approvingly at good plans.
+1047. Left Sock, 0.1, Generic
+#A single left sock. Its partner is never found, in any world.
+1048. Dead Battery, 0.2, Generic
+#A battery that is mysteriously always dead. Devices reject it on sight.
+1049. Allen Key, 0.2, Generic
+#A very specific size that fits nothing you own. Indestructible by neglect.
+1050. Fortune Cookie (blank), 0.3, Generic
+#The fortune slip is blank. The cookie is stale. Interpret freely.
+1051. Hotel Pen, 0.1, Generic
+#Writes for exactly one signature, then gives up. Stolen legally.
+1052. Traffic Cone (mini), 0.3, Generic
+#A miniature traffic cone. Directs nothing; respected by no one.
+1053. Single Chopstick, 0.2, Generic
+#One chopstick. Pairs with nothing. Stabs adequately.
+1054. Deflated Balloon, 0.2, Generic
+#A balloon with no air and no squeak left. Pops only emotionally.
+1055. USB Cable (wrong end), 0.3, Generic
+#Both ends are the wrong end. Data transfer is theoretical.
+1056. Takeout Menu (closed), 0.2, Generic
+#Menu for a restaurant that closed years ago. The pictures still look good.
+1057. Empty Missile Tank, 0.4, Metroid
+#An empty missile expansion tank. Holds sandwiches now.
+1058. Oxygen Candle (half), 0.5, The Expanse
+#Half a chemical oxygen candle. Burns fifteen minutes of thin, tinny air.
+1059. Unobtanium Pebble, 0.3, James Cameron's Avatar
+#A pebble of unobtanium too small to interest anyone. Worth: one (1) pebble.
+1060. Stillsuit Patch Kit, 0.4, Dune
+#Patches stillsuit leaks adequately. Does not patch the wearer's complaining.
+1061. Mud (thermal), 0.5, Predator
+#Special mud that hides body heat from thermal vision while wet. Dries fast; reapply under fire.
+1062. Endoskeleton Finger, 0.4, Terminator
+#One hyperalloy finger. Points accusingly. Cannot be bent, broken, or returned.
+1063. Sonic Screwdriver (dead), 0.6, Doctor Who
+#Does everything except work: the battery is dead and replacements don't exist. Still excellent for pointing.
+1064. Talkie Toaster, 0.5, Red Dwarf
+#A toaster obsessed with toast. Asks about toast. Toasts adequately.
+1065. Towel, 0.4, Hitchhiker
+#A large, mostly clean towel. Hugely useful in ways that only become clear during emergencies.
+1066. Lawgiver (empty), 0.6, Judge Dredd
+#A voice-activated sidearm with no ammunition and no voice authorization. Makes a convincing paperweight.
+1067. MALP (stuck), 0.5, Stargate
+#A probe stuck in a ditch just past the event horizon. Telemetry works; retrieval does not.
+1068. Cylon Toaster (quiet), 0.4, Battlestar Galactica
+#Makes toast and says nothing. The silence is the point. Probably.
+1069. Encyclopedia Galactica (abridged), 0.5, Foundation
+#Abridged to one volume. Covers everything briefly and nothing usefully.
+1070. Knife Missile (blunt), 0.6, Culture
+#A formerly godlike smart munition, now blunt and docile. Follows you like a duckling.
+1071. DRD (lost), 0.4, Farscape
+#A small repair bot, lost. Fixes tiny things nearby while looking for its Pilot.
+1072. Cardboard Box (soggy), 0.5, Metal Gear
+#Stealth camouflage, waterlogged. Fools no one but smells like rain.
+1073. Companion Cube (inert), 0.6, Portal
+#An inert weighted companion cube. Will never threaten to stab you and, in fact, cannot.
+1074. Joja Cola, 0.2, Stardew Valley
+#Corporate cola. Restores a sip of energy and a pang of guilt.
+1075. Bonesaw, 0.5, MTG
+#A bone saw granting +1/+0. Rusty, loud, and eager.
+1076. Shiv (dull), 0.4, Riddick
+#A dull shiv. Shanks poorly. Intimidates only the already intimidated.
+1077. Lethe Water (sip), 0.5, Hades
+#One sip erases roughly the last minute. Single use; the flask stays empty as a lesson.
