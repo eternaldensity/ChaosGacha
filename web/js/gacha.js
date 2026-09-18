@@ -100,19 +100,31 @@ window.ChaosGacha = (function () {
   // the same pull/filter/weight path as roll(). Decoys only — the caller
   // splices the true result in afterwards, so this shapes the theater for
   // variety: never the same entry twice in a row, and preferably nothing
-  // repeated within the last few rows. `category` must already be resolved
-  // (not "random").
+  // repeated within the last few rows. `category` may be "random", in
+  // which case each row resolves its own category.
   function drawStrip(entries, category, min, max, avg, filt, count, rnd) {
     rnd = rnd || Math.random;
-    const { cat, pool } = buildPool(entries, category, filt, rnd);
-    const distinct = new Set(pool.map(e => e.name)).size > 1;
+    // "random" resolves per row so a random ticket's wheel mixes types
+    // instead of echoing the winner's category all the way down.
+    const wanted = category === "random"
+      ? ["ability", "item", "skill", "trait", "familiar"] : [category];
+    const pools = [];
+    for (const c of wanted) {
+      try {
+        const built = buildPool(entries, c, filt, rnd);
+        if (built.pool.length) pools.push(built);
+      } catch (e) { /* category filtered out entirely */ }
+    }
+    if (!pools.length) throw new Error("no entries match (loosen the filters)");
+    const distinct = new Set(
+      pools.flatMap(p => p.pool.map(e => e.name))).size > 1;
     const items = [];
-    const push = e => items.push(
-      { name: e.name, rarity: e.r, source: e.s || "", category: cat });
+    const push = (e, c) => items.push(
+      { name: e.name, rarity: e.r, source: e.s || "", category: c });
     const prevName = () => items.length ? items[items.length - 1].name : null;
     // Uniform in-ticket-range pick, used when the weighted draw keeps
     // repeating: variety is mandatory for theater, exact odds are not.
-    const rangedFallback = () => {
+    const rangedFallback = pool => {
       const prev = prevName();
       const cands = pool.filter(e => e.r > min && e.r <= max && e.name !== prev);
       if (!cands.length) return null;
@@ -120,32 +132,40 @@ window.ChaosGacha = (function () {
     };
     let guard = 0;
     while (items.length < count && guard++ < count * 60) {
-      let pick = null, fallback = null;
+      let pick = null, pickCat = null, fallback = null, fallbackCat = null;
       for (let t = 0; t < 12 && !pick; t++) {
-        const hit = drawOne(pool, min, max, avg, rnd);
+        const P = pools[Math.floor(rnd() * pools.length)];
+        const hit = drawOne(P.pool, min, max, avg, rnd);
         if (!hit) continue;
         const e = hit.entry;
-        if (distinct && e.name === prevName()) { fallback = fallback || e; continue; }
-        if (items.slice(-3).some(it => it.name === e.name)) {
-          fallback = fallback || e;
+        if (distinct && e.name === prevName()) {
+          fallback = fallback || e; fallbackCat = fallbackCat || P.cat;
           continue;
         }
-        pick = e;
+        if (items.slice(-3).some(it => it.name === e.name)) {
+          fallback = fallback || e; fallbackCat = fallbackCat || P.cat;
+          continue;
+        }
+        pick = e; pickCat = P.cat;
       }
       const prev = prevName();
-      const e = pick
-        || ((fallback && fallback.name !== prev) ? fallback : null)
-        || rangedFallback()
-        || fallback;
-      if (e) push(e);
+      let e = pick, c = pickCat;
+      if (!e && fallback && fallback.name !== prev) { e = fallback; c = fallbackCat; }
+      if (!e) {
+        const P = pools[Math.floor(rnd() * pools.length)];
+        e = rangedFallback(P.pool);
+        if (e) c = P.cat;
+        else if (fallback) { e = fallback; c = fallbackCat; }
+      }
+      if (e) push(e, c);
     }
-    let i = 0, skips = 0;
-    while (items.length < count && pool.length &&
-           skips++ < count * 4 + pool.length) {
-      const e = pool[i++ % pool.length];
-      const prev = items.length ? items[items.length - 1].name : null;
-      if (distinct && e.name === prev) continue;
-      push(e);
+    let i = 0, skips = 0, pi = 0;
+    while (items.length < count && pools.length &&
+           skips++ < count * 4 + pools.length) {
+      const P = pools[pi++ % pools.length];
+      const e = P.pool[i++ % P.pool.length];
+      if (distinct && e.name === prevName()) continue;
+      push(e, P.cat);
     }
     return items;
   }

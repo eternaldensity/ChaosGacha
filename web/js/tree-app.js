@@ -491,6 +491,10 @@
 
   // ---- 3D view ---------------------------------------------------------------
   const PROJ_F = 3.0; // perspective focal length
+  // View-space depth cutoff: the camera flies inside the cloud, so nodes at
+  // or behind the camera plane would project mirrored and hugely magnified
+  // (scale explodes as depth approaches -PROJ_F). Skip them instead.
+  const NEAR = 0.5;
   const cam = { yaw: 0.6, pitch: 0.35, dist: 3.2, zoom: 1 };
   const canvas = $("view3d");
   const ctx = canvas.getContext("2d");
@@ -587,7 +591,9 @@
     let x = p[0] * cy - p[2] * sy, z = p[0] * sy + p[2] * cy, y = p[1];
     const cp = Math.cos(pitch), sp = Math.sin(pitch);
     const y2 = y * cp - z * sp, z2 = y * sp + z * cp;
-    const scale = PROJ_F / (PROJ_F + z2 + dist);
+    const depth = z2 + dist;
+    if (depth < NEAR) return null;
+    const scale = PROJ_F / (PROJ_F + depth);
     return [x * scale, y2 * scale, scale];
   }
 
@@ -638,7 +644,9 @@
         const nb = d.rt.byId[b];
         if (!visNode(nb) || !nodeShown(nb)) continue;
         if (!d.vis.has(b) && !d.unl.has(b)) continue;
-        const [x1, y1] = project(nd.pos), [x2, y2] = project(d.rt.byId[b].pos);
+        const p1 = project(nd.pos), p2 = project(d.rt.byId[b].pos);
+        if (!p1 || !p2) continue;
+        const [x1, y1] = p1, [x2, y2] = p2;
         ctx.moveTo(cx + x1 * base, cy - y1 * base);
         ctx.lineTo(cx + x2 * base, cy - y2 * base);
       }
@@ -649,7 +657,9 @@
     for (const nd of d.rt.nodes) {
       if (!visNode(nd) || !nodeShown(nd)) continue;
       if (!d.vis.has(nd.id) && !d.unl.has(nd.id)) continue;
-      const [x, y, s] = project(nd.pos);
+      const pr = project(nd.pos);
+      if (!pr) continue;
+      const [x, y, s] = pr;
       items.push({ nd, x: cx + x * base, y: cy - y * base, s });
     }
     items.sort((a, b) => a.s - b.s);

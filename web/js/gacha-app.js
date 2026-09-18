@@ -285,7 +285,7 @@
     const speed = (DB.settings && DB.settings.spin) || "normal";
     const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (speed === "off" || reduced || !window.requestAnimationFrame) { showResult(r); return; }
-    spinReel(r, min, max, avg, F, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal);
+    spinReel(r, min, max, avg, F, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal, cat);
   }
 
   const SPIN_SPEEDS = {
@@ -297,10 +297,10 @@
   const TRAIL_ROWS = 8; // decoys past the winner so the list end never shows
   let spinning = false;
 
-  function spinReel(r, min, max, avg, filt, opt) {
+  function spinReel(r, min, max, avg, filt, opt, reqCat) {
     let items;
     try {
-      items = G.drawStrip(DATA.entries, r.category, min, max, avg, filt, opt.n + TRAIL_ROWS);
+      items = G.drawStrip(DATA.entries, reqCat || r.category, min, max, avg, filt, opt.n + TRAIL_ROWS);
     } catch (e) { showResult(r); return; }
     const winIdx = opt.n;
     items.splice(winIdx, 0, { name: r.name, rarity: r.rarity, source: r.source, category: r.category });
