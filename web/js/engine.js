@@ -222,14 +222,23 @@ window.ChaosEngine = (function () {
     return cost;
   }
 
+  function couponCover(state, cost) {
+    const t = (state.inventory || []).find(t => t.kind === "coupon");
+    return t ? Math.min(cost, t.value) : 0;
+  }
+
   function pay(state, tree, nid) {
     if (state.cores < 1) throw new ChaosError("not enough cores (award a ticket first)");
     const cost = nodeCostFor(state, tree, nid);
-    if (state.points < cost) {
-      throw new ChaosError(`not enough points: need ${fmt(cost)}, have ${fmt(state.points)}`);
+    const cover = cost > 0 ? couponCover(state, cost) : 0;
+    const pick = cover > 0
+      ? state.inventory.find(t => t.kind === "coupon") : null;
+    if (state.points < cost - cover) {
+      throw new ChaosError(`not enough points: need ${fmt(cost - cover)}, have ${fmt(state.points)}`);
     }
+    if (pick) state.inventory.splice(state.inventory.indexOf(pick), 1);
     state.cores -= 1;
-    state.points -= cost;
+    state.points -= cost - cover;
   }
 
   function unlockNode(state, nid, extra) {
@@ -259,9 +268,11 @@ window.ChaosEngine = (function () {
       }
       else if (/^choice\d+$/.test(t)) { kind = "choice"; n = parseInt(t.slice(6), 10); }
       else if (t === "twin") twin = true;
+      else if (t === "coupon") kind = "coupon";
       else throw new ChaosError(`unrecognised ticket token: ${t}`);
     }
     const params = {};
+    if (twin) params.twin = true;
     if (twin) params.twin = true;
     if (kind === "skip") params.n = n || 1;
     else if (kind === "jump") {
@@ -270,6 +281,7 @@ window.ChaosEngine = (function () {
     }
     else if (kind === "choice") { params.n = n || 3; params.category = category || null; }
     if (!tier && kind === "plain") throw new ChaosError("a plain ticket needs a tier");
+    if (!tier && kind === "coupon") throw new ChaosError("a coupon ticket needs a tier");
     return { tier, kind, params };
   }
 
@@ -300,6 +312,11 @@ window.ChaosEngine = (function () {
     if (echo) {
       pts *= 2;
       state.echo_used = (state.echo_used || 0) + 1;
+    }
+    if (kind === "coupon") {
+      // Coupons bank their would-be payout instead of paying the wallet.
+      params.value = pts;
+      pts = 0;
     }
     state.points += pts;
     if (kind !== "plain" && !destroyed) {
@@ -815,6 +832,7 @@ window.ChaosEngine = (function () {
     useShake, useChaosquake, gambleTicket, gamblerEffect, gambleNote,
     wildPoints,
     trace, applyAddedLinks, applySwaps, swapNodes, unlockNode,
+    couponCover,
     swapEntries, applyEntrySwaps
   };
 })();

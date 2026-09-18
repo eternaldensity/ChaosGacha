@@ -152,6 +152,7 @@ def main():
         ("item jump", (None, "jump", {"category": "item"})),
         ("gold item jump", ("gold", "jump", {"category": "item"})),
         ("choice 2 jump bronze", ("bronze", "choice", {"n": 2, "category": None})),
+        ("gold coupon", ("gold", "coupon", {})),
         ("hop", (None, "hop", {})),
         ("gold hop", ("gold", "hop", {})),
     ]
@@ -819,6 +820,92 @@ def test_wild():
     print("wild-ticket tests passed")
 
 
+def _coupon_tree():
+    P = lambda x, y: [x * 10, y * 10, 0.0]
+    nodes = [
+        {"id": 0, "name": "Origin", "rarity": 0, "file": "__root__",
+         "source": "", "description": "", "pos": P(0, 0)},
+        {"id": 1, "name": "Cheap", "rarity": 1.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.1, 0)},
+        {"id": 2, "name": "Pricey", "rarity": 3.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.3, 0)},
+        {"id": 3, "name": "Steep", "rarity": 4.0, "file": "ability",
+         "source": "Generic", "description": "plain", "pos": P(0.4, 0)},
+    ]
+    return make_tree(nodes, [(0, 1), (1, 2), (2, 3)])
+
+
+def test_coupon():
+    tree = _coupon_tree()
+
+    # parsing: coupon needs a tier like plain does
+    assert cu.parse_ticket("gold coupon") == ("gold", "coupon", {})
+    assert "tier" in expect_error(cu.parse_ticket, "coupon")
+    assert "tier" in expect_error(cu.parse_ticket, "hop coupon")
+
+    # award: core yes, wallet points no, value banked
+    st = cu.new_state("<synthetic>")
+    tier, kind, params, pts = cu.award(st, "gold coupon")
+    assert pts == 0 and st["points"] == 0 and st["cores"] == 1
+    assert st["inventory"] == [
+        {"kind": "coupon", "tier": "gold", "value": 5000}]
+
+    # full cover: wallet untouched, ticket gone, core still due
+    st["points"], st["cores"] = 0.0, 1
+    cu.unlock(st, tree, 1)  # cost 10, coupon 5000
+    assert st["unlocked"] == [0, 1]
+    assert st["points"] == 0 and st["cores"] == 0
+    assert st["inventory"] == []
+
+    # partial cover: wallet pays the remainder, leftover value lost
+    st = cu.new_state("<synthetic>")
+    st["points"], st["cores"] = 10.0, 1
+    cu.unlock(st, tree, 1)  # cost 10, no coupon yet
+    cu.award(st, "bronze coupon")  # 50
+    st["points"] += 2000.0
+    cu.unlock(st, tree, 2)  # cost 1000: 50 coupon + 950 wallet
+    assert abs(st["points"] - 1050.0) < 1e-9
+    assert st["cores"] == 0 and st["inventory"] == []
+
+    # FIFO order across several coupons
+    st = cu.new_state("<synthetic>")
+    cu.award(st, "silver coupon")
+    cu.award(st, "gold coupon")
+    st["points"], st["cores"] = 0.0, 1
+    cu.unlock(st, tree, 1)
+    assert [t["tier"] for t in st["inventory"]] == ["gold"]
+
+    # failed unlock keeps its coupon (atomic)
+    st = cu.new_state("<synthetic>")
+    st["points"], st["cores"] = 10.0, 1
+    cu.unlock(st, tree, 1)
+    cu.award(st, "bronze coupon")  # 50
+    st["points"], st["cores"] = 0.0, 1
+    assert "points" in expect_error(cu.unlock, st, tree, 2)  # cost 1000
+    assert len(st["inventory"]) == 1 and st["cores"] == 1
+
+    # cores are never covered
+    st = cu.new_state("<synthetic>")
+    cu.award(st, "gold coupon")
+    st["points"], st["cores"] = 0.0, 0
+    assert "cores" in expect_error(cu.unlock, st, tree, 1)
+
+    # echo and ticket bonus inflate the banked value
+    st = cu.new_state("<synthetic>")
+    tier, kind, params, pts = cu.award(st, "gold coupon", 100, echo=True)
+    assert abs(params["value"] - 5000 * 2 * 2) < 1e-9
+    assert pts == 0 and st["points"] == 0
+
+    # wild coupons roll their cap
+    st = cu.new_state("<synthetic>")
+    with _ScriptedWild([(4, 6)]):
+        tier, kind, params, pts = cu.award(st, "wild coupon")
+    assert params["value"] == 10.0 ** 5 and pts == 0
+    assert st["inventory"][-1]["value"] == 10.0 ** 5
+
+    print("coupon tests passed")
+
+
 if __name__ == "__main__":
     main()
     test_meta()
@@ -827,3 +914,4 @@ if __name__ == "__main__":
     test_meta4()
     test_wild()
     test_trace_use()
+    test_coupon()

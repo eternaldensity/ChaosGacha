@@ -29,6 +29,9 @@ points, otherwise the ticket is traversal-only and adds 0 points):
     hop              unlock a node at hop distance >= 2, plus ONE free
                      intermediate node on the shortest path from the
                      unlocked set to it
+    coupon           pays no points; instead banks its tier value, spent
+                     automatically (oldest first, remainder lost) against
+                     the points cost of a later unlock (cores still due)
 
 Ticket options:
     twin             any ticket may carry the twin token ('gold twin');
@@ -399,11 +402,19 @@ def _pay(state, tree, nid):
     if state["cores"] < 1:
         raise UsageError("not enough cores (award a ticket first)")
     cost = _node_cost_for(state, tree, nid)
-    if state["points"] < cost:
+    pick, cover = None, 0
+    if cost > 0:
+        for t in state["inventory"]:
+            if t["kind"] == "coupon":
+                pick, cover = t, min(cost, t["value"])
+                break
+    if state["points"] < cost - cover:
         raise UsageError(
-            f"not enough points: need {fmt(cost)}, have {fmt(state['points'])}")
+            f"not enough points: need {fmt(cost - cover)}, have {fmt(state['points'])}")
+    if pick is not None:
+        state["inventory"].remove(pick)
     state["cores"] -= 1
-    state["points"] -= cost
+    state["points"] -= cost - cover
 
 
 def _unlock(state, nid, extra=None):
@@ -482,6 +493,8 @@ def parse_ticket(spec):
             kind, n = "choice", int(t[6:])
         elif t == "twin":
             twin = True
+        elif t == "coupon":
+            kind = "coupon"
         else:
             raise UsageError(f"unrecognised ticket token: {t!r}")
         i += 1
@@ -501,6 +514,9 @@ def parse_ticket(spec):
         params["category"] = category  # None = any category
     if tier is None and kind == "plain":
         raise UsageError("a plain ticket needs a tier "
+                         f"({', '.join(TIER_POINTS)})")
+    if tier is None and kind == "coupon":
+        raise UsageError("a coupon ticket needs a tier "
                          f"({', '.join(TIER_POINTS)})")
     return tier, kind, params
 
@@ -536,6 +552,11 @@ def award(state, spec, bonus_pct=0, echo=False, gamble=False, tree=None):
     if echo:
         pts *= 2.0
         state["echo_used"] = state.get("echo_used", 0) + 1
+    if kind == "coupon":
+        # coupons pay no points now; the would-be payout becomes the
+        # coupon's value toward a later unlock (remainder lost on use)
+        params["value"] = pts
+        pts = 0
     state["points"] += pts
     if kind != "plain" and not destroyed:
         ticket = {"kind": kind, "tier": tier}
@@ -1276,8 +1297,11 @@ def main(argv=None):
                 d1, d2 = params["wild"]
                 wild_mark = f" (wild {d1}+{d2}" + \
                     (" double!" if d1 == d2 else "") + ")"
+            coupon_mark = ""
+            if kind == "coupon" and not params.get("destroyed"):
+                coupon_mark = f" (coupon worth {fmt(params['value'])} pts)"
             print(f"awarded {tier or 'tierless'}{extra}: +{cores_n} core(s), "
-                  f"+{fmt(pts)} pts{echo_mark}{wild_mark}"
+                  f"+{fmt(pts)} pts{echo_mark}{wild_mark}{coupon_mark}"
                   + (f" [{note}]" if note else ""))
     elif args.cmd == "state":
         print(f"tree: {tree['path']}")

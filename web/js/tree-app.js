@@ -599,7 +599,8 @@
     if (nid === 0 || st.unlocked.includes(nid)) return false;
     if (!(front || E.frontier(rt, st.unlocked)).has(nid)) return false;
     if ((st.cores || 0) < 1) return false;
-    return st.points >= E.nodeCostFor(st, rt, nid);
+    const cost = E.nodeCostFor(st, rt, nid);
+    return st.points >= cost - E.couponCover(st, cost);
   }
   function hexPath(c, x, y, r) {
     c.beginPath();
@@ -999,7 +1000,7 @@
     if (!unl && nd.id !== 0) {
       if (front) {
         const cost = E.nodeCostFor(c.st, c.rt, nd.id);
-        const ok = c.st.cores >= 1 && c.st.points >= cost;
+        const ok = c.st.cores >= 1 && c.st.points >= cost - E.couponCover(c.st, cost);
         actions = `<div class="row" style="margin-top:8px"><button class="primary" data-act="unlock" ${ok ? "" : "disabled"}>` +
           `Unlock (${E.fmt(cost)} pts + 1 core)</button></div>` +
           `<div class="muted small" style="margin-top:4px">Wallet: ${E.fmt(c.st.points)} pts · ${c.st.cores} cores.</div>` +
@@ -1203,7 +1204,9 @@
   }
   function ticketLabel(t) {
     // Skip/jump/choice/hop tickets spend no tier: their points paid out at
-    // award time, so the label shows only what the action needs.
+    // award time, so the label shows only what the action needs. Coupons
+    // are the exception: their banked value is live information.
+    if (t.kind === "coupon") return `coupon · ${E.fmt(t.value || 0)} pts`;
     let s = (t.kind === "plain" && t.tier ? t.tier + " " : "") + t.kind;
     if (t.kind === "skip" || t.kind === "choice") s += ` ${t.n}`;
     if (t.category) s += ` ${t.category}`;
@@ -1509,7 +1512,7 @@
     for (const id of ids.slice(unlockPage * UNLOCK_PAGE, (unlockPage + 1) * UNLOCK_PAGE)) {
       const nd = rt.byId[id];
       const cost = E.nodeCostFor(st, rt, id);
-      const ok = st.cores >= 1 && st.points >= cost;
+      const ok = st.cores >= 1 && st.points >= cost - E.couponCover(st, cost);
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><b>${esc(nd.name)}</b> ` +
         `<span class="pill">${esc(nd.file)} ${nd.rarity}</span><br>` +
@@ -1586,6 +1589,7 @@
         totalCores += r.cores;
         const note = E.gambleNote(r.params);
         if (note) notes.push(note);
+        if (r.params.value != null) notes.push(`coupon ${E.fmt(r.params.value)} pts`);
         if (r.params.wild) {
           const [d1, d2] = r.params.wild;
           notes.push(`wild ${d1}+${d2}` + (d1 === d2 ? " double!" : ""));
