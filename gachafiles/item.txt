@@ -2175,4 +2175,4 @@
 1088. Battle-Car, 5.4, Rocket League
 #A supersonic acrobatic rocket car with flip, boost, and demolition manners. Ball not included; walls are load-bearing suggestions.
 1089. Scent Hound, 3.5, Generic
-#(Tree)(Meta:trace-name-use) A tireless scent hound that traces the route to the closest node matching a name, one use. It finds the way; going there is your problem.
+#(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.

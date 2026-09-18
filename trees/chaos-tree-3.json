@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 3,
-  "generated_at": "2026-09-18T12:28:41Z",
+  "generated_at": "2026-09-18T12:33:21Z",
   "params": {
     "files": [
       "skill",
@@ -45432,7 +45432,7 @@
       "rarity": 3.5,
       "source": "Generic",
       "tag": "tree",
-      "description": "A tireless scent hound that traces the route to the closest node matching a name, one use. It finds the way; going there is your problem.",
+      "description": "A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.",
       "meta": [
         "Meta:trace-name-use"
       ],
