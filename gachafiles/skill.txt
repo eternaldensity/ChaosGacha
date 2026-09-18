@@ -666,3 +666,5 @@
 #Study, catalogue, and handle border-world fauna without dying.
 334. Crowbar Combat, 2.2, Half-Life
 #The free-man's martial art: swings, pries, jams, and one quiet hallway at a time.
+335. Scry, 5.1, MTG
+#Glimpse the immediate future and quietly rearrange it: look at the next few outcomes, keep the order or bury the worst of them. Stronger minds see further and bury deeper.

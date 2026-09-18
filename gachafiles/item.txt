@@ -448,7 +448,7 @@
 #(Tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
 225. Infinite Bowl of Spaghetti, 1.5, Generic
 #An infinite spaghetti bowl that cannot be poured out, but servings can be taken infinitely. The spaghetti is always comfortably warm and tastes pretty good.
-226. Kanaedas Bike, 1.3, Akira
+226. Kaneda's Bike, 1.3, Akira
 #(Tech) A very fancy, fast, iconic sci-fi-ish bike.
 227. Any Vehicle Voucher, 3.1, Generic
 #(Tech) Exchangeable anytime for any Mundane Vehicle in your world, from supercar to cruise ship. The vehicle teleports in front of you with all legal work handled.
@@ -1583,13 +1583,13 @@
 792. Artoria Fumo, 5.2, Fate
 #A Fumo of Britain's true king that, when shaken violently, temporarily enacts Avalon as a nigh-absolute barrier on the shaker. You cannot move or use abilities while it is active.
 793. "Alice" Fumo, 4.8, Black Souls
-#(Gacha) A Fumo of the Dear Girl that, when shaken violently, rerolls your most recently rolled ticket. Cooldown: 336 hours.
+#A Fumo of the Dear Girl that, when shaken violently, rerolls your most recently rolled ticket. Cooldown: 336 hours.
 794. Node Fumo, 5.0, Black Souls
 #A Fumo of the White Queen, Node, that makes all cooldowns and restock timers pass 5x faster while you sleep in the same building or room as it.
 795. Mabel Fumo, 5.7, Black Souls
-#(Gacha) A Fumo of a certain Girl of Nihility that produces a Random Gold Ticket it can be found holding every 168 hours.
+#A Fumo of a certain Girl of Nihility that produces a Random Gold Ticket it can be found holding every 168 hours.
 796. Mary Sue Fumo, 5.3, Black Souls
-#(Gacha) A Fumo of a certain Annoying Fairy that lets you change the type of any one ticket you hold by slamming or punching it against a wall. Cooldown: 168 hours.
+#A Fumo of a certain Annoying Fairy that lets you change the type of any one ticket you hold by slamming or punching it against a wall. Cooldown: 168 hours.
 797. Reimu Fumo, 4.1, Touhou
 #A Fumo of a certain destitute Shrine Maiden that, when shaken violently, erects a spiritual barrier against Unholy/Dark beings around a location. Only one barrier at a time.
 798. Cirno Fumo, 3.5, Touhou
@@ -2013,7 +2013,7 @@
 1007. Aurora, 5.0, Metro
 #A working steam locomotive hauling the last livable train yards east through the radiation.
 1008. Sea Railway, 3.8, Studio Ghibli
-#A one-way rail line gliding over open ocean toward Swamp Bottom; exact fare unknown.
+#A one-way spectral rail line gliding over open ocean to Swamp Bottom, departing every dawn whether or not you are aboard. Fare is a single vivid memory paid at the gate; the train carries you and whatever you can hold, never deviates, never stops between stations, and cannot be ridden twice in the same direction.
 1009. LLM Workstation Laptop, 3.6, Generic
 #A top-spec laptop with an absurd amount of VRAM that runs a genuinely helpful AI assistant entirely offline. Battery life: optimistic.
 1010. Shake the Tree, 6.0, Generic
@@ -2038,3 +2038,37 @@
 #(Tree)(Meta:gamble:12)(Meta:gamble-reroll:9) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 9s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1020. Gambler's Transcendent Die, 9.3, Generic
 #(Tree)(Meta:gamble:16)(Meta:gamble-twice) Unlocking this die lets you gamble 16 awarded tickets, and every gamble gets a second d20 roll whenever the first roll isn't a natural 20. Each roll uses the same table (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+1021. Morph Ball, 4.6, Metroid
+#(Tech) Compress into an armored rolling sphere a third of your height, fast and nearly silent. Lay energy bombs, three active at a time, and boost-charge for a destructive burst of speed.
+1022. Varia Suit, 5.5, Metroid
+#(Tech) Powered exosuit with major damage reduction, full heat and cold immunity, and an arm cannon firing charged plasma bolts. Heavy, obvious, and hungry for energy cells.
+1023. Gravity Suit, 5.7, Metroid
+#(Tech) Upgraded powered exosuit that moves through liquid, lava, and crushing gravity as though they were air, with greater defense than lesser suits. Same appetite for energy cells.
+1024. Birthing Pod, 5.8, MTG
+#Feed this biomechanical pod a living creature or minion to dissolve it and birth a slightly stronger creature of a related kind. One hatching at a time; the pod hungers again within a day.
+1025. Mimic Vat, 5.5, MTG
+#Imprint the recently fallen into this vat to produce temporary token copies of them, loyal to you, each lasting a single battle. One imprint stored at a time.
+1026. The Ozolith, 5.6, MTG
+#A floating crystal that drinks in the counters of your fallen minions and lets you redistribute them onto your survivors. Counters left unassigned past a day decay away.
+1027. Pithing Needle, 5.1, MTG
+#Name one ability, item power, or spell; its owner cannot activate it while you hold this needle and picture them clearly. One name at a time; renaming takes an hour of focus.
+1028. Panharmonicon, 5.3, MTG
+#A humming engine that doubles the triggered effects of things you control: arrivals, deaths, thresholds, all of it firing twice. Costs are not copied, and upkeep still ticks once.
+1029. Mirror of Night, 5.7, Hades
+#A mirror of stolen darkness with a talent tree you allocate at will: stubborn defiance, death resistance, energy reserves, casting strength, and more. Refund and reallocate freely between battles.
+1030. Lucky Tooth, 5.3, Hades
+#A Cerberus fang that takes a killing blow for you instead, leaving you barely standing. Reforms by the next dawn, and only while you carry no other death-cheating trinket.
+1031. Stygius, the Stygian Blade, 5.9, Hades
+#The prince's underworld sword with shifting aspects: swift slashes, a lunging special, and a nova that spends your casting stone for ruinous damage. It never dulls and never leaves your hand unasked.
+1032. Pierced Butterfly, 5.4, Hades
+#A keepsake butterfly that drinks in flawless victories: each battle you end untouched sharpens all your attacks noticeably, stacking until something finally lands a hit and resets it.
+1033. Fishing Rod, 3.8, Hades
+#A simple rod that catches something worthwhile in any liquid, including lava, chaos, and the Styx: mostly fish, occasionally riches, rarely something that bites back.
+1034. Arcana Deck, 5.5, Hades 2
+#A deck of major arcana you activate within your grasp: the Sorceress quickens casts, the Titan hardens skin, the Huntress sharpens strikes, and more. Deeper grasp holds more cards.
+1035. Ghost Onion, 5.2, Hades 2
+#A spectral onion that revives you once per battle at half strength with full energy, then needs a full rest to regrow. Smells faintly of the surface.
+1036. Descura, the Witch's Staff, 5.4, Hades 2
+#The witch's staff: forceful bolts, a charged omega blast that consumes magick, and a special that lobs your casting stone and recalls it. Never runs dry, only runs hot.
+1037. Arachne's Cocoon, 4.8, Hades 2
+#A spool of Arachne's silk that wraps you in ablative armor cocoons, each absorbing a full hit before bursting. Three cocoons per rest; the silk itches terribly.

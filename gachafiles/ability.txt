@@ -2912,3 +2912,23 @@
 #Slip between Earth and the border world Xen, stepping across like the Nihilanth shuffled you there.
 1460. Antlion Pheromones, 3.0, Half-Life
 #Exude the scent-command that turns nearby antlions into your obedient swarm.
+1461. Screw Attack, 5.9, Metroid
+#Launch into a spinning somersault charge that shreds through anything it touches while you stay invincible throughout. You cannot steer mid-spin, and landing somewhere awkward is your own problem.
+1462. Space Jump, 5.2, Metroid
+#Jump again in midair as often as you like while spinning, each leap matching a grounded jump. Works only while moving; stall and you fall.
+1463. Shinespark, 5.6, Metroid
+#Store a full sprint's momentum, then launch yourself as an invincible supersonic projectile in a chosen direction until something very solid stops you. Charging takes a few seconds of uninterrupted running.
+1464. Flash Shift, 5.1, Metroid
+#Blink a short distance instantly, up to three times before touching ground resets the count. Each shift preserves your momentum and can aim any direction including straight up.
+1465. Proliferate, 5.5, MTG
+#Add one more counter of each kind already present on anything you choose: charges, poison, energy reserves, fading timers, all of it. Cannot create a counter type that isn't already there.
+1466. Populate, 5.2, MTG
+#Create a copy of a token, summon, or other expendable minion you own, identical down to its remaining duration. One copy per use.
+1467. Overload, 5.8, MTG
+#Scale any single-target effect you produce to strike every valid target instead, at triple the energy cost. Friend and foe alike, no exceptions.
+1468. Cipher, 5.4, MTG
+#Encode one of your effects onto a melee strike; whenever that strike lands, the encoded effect triggers again for free. One encoded effect at a time; encoding a new one overwrites the old.
+1469. Chaos Gate, 5.5, Hades
+#Tear open a way to Chaos at the cost of a measure of your vitality, and choose one of three offered boons. Stronger offerings draw stronger boons, and Chaos does not give refunds.
+1470. Moon Hex, 5.8, Hades 2
+#Your hex charges as you fight; unleash it as a devastating moon blast that freezes lesser foes solid and sunders barriers. Fully spent, it begins charging again immediately.

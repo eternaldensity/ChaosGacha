@@ -1034,3 +1034,11 @@
 #A small purple toad of mysterious provenance. It does nothing, beautifully.
 518. Vortigaunt Ally, 4.0, Half-Life
 #A shackled vortigaunt no longer; it heals your wounds and hurls lightning at your enemies.
+519. Metroid, 5.4, Metroid
+#A floating energy-draining jellyfish that latches onto victims and drains them dry in seconds, growing larger as it feeds. Lethally vulnerable to cold, which freezes it solid.
+520. Solemn Simulacrum, 5.2, MTG
+#A melancholy golem butler, the saddest robot. It fetches you a useful resource on arrival and another when it dies, apologizing the entire time.
+521. Atog, 5.0, MTG
+#A ravenous beast that devours artifacts whole, growing larger and stronger with each one. Indiscriminate: it cannot tell your artifacts from anyone else's.
+522. Scylla and the Sirens, 5.7, Hades 2
+#A monstrous musical trio whose battle-song hardens allies and unravels foes. They demand top billing, an audience, and absolutely no requests.
