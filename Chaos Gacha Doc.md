@@ -160,6 +160,8 @@ Here is an example feat for each category assuming the user is roughly on the sa
 
 **Feat Tiers:**
 
+Trash: Trash feats aren't really feats at all. They're given out as an insult or a tease, for deeds that barely qualify as accomplishing anything, like remembering to water a plant for a week, losing a fight gracefully, or showing up on time three days running.
+
 Bronze: Bronze feats are feats that are usually possible for unpowered people to achieve but are still notable accomplishments. Like pickpocketing 10 people in a row without being caught, hunting wolves for the first time, winning a roughly equal fight against an unpowered person, being hired at a job, etc.
 
 Silver: Silver feats are feats that actually enter into the realm of supernatural or peak human, or less depending on how far along you are. For example, putting on a show that impresses a large crowd, earning 10,000 dollars in one day, taking down a gang in their own hideout, killing a bear with your bare hands, taking down an adversary capable of breaking down walls and slaughtering a crowd etc.
@@ -168,6 +170,8 @@ Gold: Gold feats are feats that are firmly in the impressive category. If you ca
 
 Platinum: Platinum feats are not just impressive anymore, they are true accomplishments. Such as breaking a record that you had no right to break, escaping almost certain death, pacifying a being massively stronger than you are, defeating formidable foes who can level entire city blocks with their attacks like a skyrim dragon.
 
+Aluminium: Aluminium feats sit between gold and platinum and are usually a joke, the kind of thing handed out as a quest reward with a wink, like fetching twenty rat pelts or running an errand for Pepsi Man. Genuinely useful, rarely dignified.
+
 Diamond: Diamond feats are truly extraordinary and rare, being feats that are truly beyond the ordinary. These are feats like seducing Satan’s wife, helping fend off the chitauri invasion, contract a truly powerful dragon as a familiar, save a city from doom, slay an opponent like the Nomu(MHA). These are feats that are truly epic.
 
 Legendary: Legendary feats are as their names say, Legendary feats, things that would put a legend on your name, something no normal person can accomplish. These are feats like steal Thanos’ gauntlet off of his hands, slay a legendary dragon, tear the wings off of an arch angels back, save an entire country or even the planet from a legendary threat, seduce a real god, kill a being like full power Shigaraki Tomura(MHA), win the Holy Grail War(Fate). These are feats only stuff of legends can do.
@@ -175,6 +179,8 @@ Legendary: Legendary feats are as their names say, Legendary feats, things that 
 Mythical: Mythical feats are feats that puts you shoulder to shoulder with divine beings. You accomplish feats only godlike beings could hope to achieve, most lower worlds cannot even reach such a height. These are feats like saving the entire planet from a prophecy, besting the Sword Saint(Re:Zero), seducing Lady Death(Marvel), conquering a high rank world, defeating the Dragon King(Acnologia), stealing Gilgamesh's Treasury(Fate), pacifying Scion(Worm). Mythical feats are those that shake the universe at their foundation. 
 
 Divine: Divine feats are finality, feats that cannot be compared and cannot even be accomplished under normal circumstances. Feats that put you on part with even the strongest of beings in existence. Feats such as defeating Scion(Worm), defeating Goetia by yourself(Fate), conquering an entire high tier world/universe, defeat the Justice League, rob Darkseid blind, seduce Darkseid, Conquer Earth(Marvel/DC). In general, Divine Feats are proof of your absolute supremacy. 
+
+Wild: Wild feats don't sit on the scale at all. They're for doing something completely, incomprehensibly random in an extreme situation and somehow coming out on top against all odds anyway, like defeating a far stronger foe by tripping over a bucket that sets off exactly the right chain of accidents. No one, least of all you, could ever repeat it.
 
 Now of course, do not take these classifications as gospel, adjust the feats according the world your character is in and their circumstances. This is just a guideline or a reference for you to use. 
 
