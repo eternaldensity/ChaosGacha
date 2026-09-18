@@ -1213,10 +1213,14 @@
           fromSel.innerHTML = nodeOptions(fromIds, rt);
           const cat = t.category;
           const showCands = () => {
+            const { dist } = E.hopDistances(rt, st.unlocked);
             const list = E.jumpCandidates(rt, cat, parseInt(fromSel.value, 10), st.unlocked)
               .slice(0, t.kind === "choice" ? t.n : 1);
-            pickSel.innerHTML = list.map(([dd, nd], i) =>
-              `<option value="${i}">#${nd.id} ${esc(nd.name)} (${nd.rarity})</option>`).join("");
+            pickSel.innerHTML = list.map(([dd, nd], i) => {
+              const hops = dist[nd.id] == null ? "isolated"
+                : `${dist[nd.id]} hop${dist[nd.id] === 1 ? "" : "s"}`;
+              return `<option value="${i}">#${nd.id} ${esc(nd.name)} (${nd.rarity}, ${dd.toFixed(1)} away, ${hops})</option>`;
+            }).join("");
           };
           const pickSel = document.createElement("select");
           fromSel.addEventListener("change", showCands);
