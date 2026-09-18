@@ -1110,7 +1110,9 @@
     $("tkCat").innerHTML = E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
   }
   function ticketLabel(t) {
-    let s = `${t.tier || "tierless"} ${t.kind}`;
+    // Skip/jump/choice/hop tickets spend no tier: their points paid out at
+    // award time, so the label shows only what the action needs.
+    let s = (t.kind === "plain" && t.tier ? t.tier + " " : "") + t.kind;
     if (t.kind === "skip" || t.kind === "choice") s += ` ${t.n}`;
     if (t.category) s += ` ${t.category}`;
     if (t.twin) s += " 👯";
