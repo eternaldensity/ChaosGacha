@@ -1194,9 +1194,11 @@
       if (t.kind === "skip") {
         const { dist } = E.hopDistances(rt, st.unlocked);
         const cands = rt.nodes.filter(nd => !st.unlocked.includes(nd.id) && nd.id !== 0 &&
-          (dist[nd.id] != null && dist[nd.id] <= 1 + t.n)).map(nd => nd.id);
+          (dist[nd.id] != null && dist[nd.id] <= 1 + t.n)).map(nd => nd.id)
+          .sort((a, b) => (dist[a] - dist[b]) ||
+            (E.nodeCost(rt, a) - E.nodeCost(rt, b)));
         const sel = document.createElement("select");
-        sel.innerHTML = nodeOptions(cands, rt, nd => "cost " + E.fmt(E.nodeCost(rt, nd.id)));
+        sel.innerHTML = nodeOptions(cands, rt, nd => `${dist[nd.id]} hop${dist[nd.id] === 1 ? "" : "s"}, cost ` + E.fmt(E.nodeCost(rt, nd.id)));
         if (!sel.options.length) {
           ctl.appendChild(emptyNote("No node in reach of this ticket."));
         } else {
