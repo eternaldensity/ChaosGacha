@@ -246,6 +246,7 @@
 
   function doRoll(min, max, avg, cat, ticketId, tierName) {
     if (spinning) return;
+    $("filterBox").open = false;
     const F = collectFilters();
     if (F.dedup) F.exclude = DB.history.map(h => h.name);
     let g = null;
@@ -377,6 +378,7 @@
 
   $("btnMulti").addEventListener("click", () => {
     if (spinning) return;
+    $("filterBox").open = false;
     const min = parseFloat($("cMin").value), avg = parseFloat($("cAvg").value), max = parseFloat($("cMax").value);
     if (!(min < max) || isNaN(avg)) return toast("Need min < max and a numeric avg.", true);
     const F = collectFilters();
