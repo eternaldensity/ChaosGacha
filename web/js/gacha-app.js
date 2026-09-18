@@ -382,7 +382,7 @@
     const min = parseFloat($("cMin").value), avg = parseFloat($("cAvg").value), max = parseFloat($("cMax").value);
     if (!(min < max) || isNaN(avg)) return toast("Need min < max and a numeric avg.", true);
     const F = collectFilters();
-    if (F.dedup) F.exclude = DB.history.map(h => h.name);
+    const histExcl = F.dedup ? DB.history.map(h => h.name) : [];
     const useGamble = !!DB.settings.gambler;
     const results = [];
     let destroyed = 0;
@@ -398,7 +398,9 @@
           cc = g.cat;
           if (g.effect === "destroyed") { destroyed++; continue; }
         }
-        if (F.dedup) F.exclude = DB.history.map(h => h.name).concat(results.map(r => r.name));
+        // A batch never repeats itself: always exclude this batch's
+        // results so far (plus history when skip-already-rolled is on).
+        F.exclude = histExcl.concat(results.map(r => r.name));
         const rollOnce = () => G.roll(DATA.entries, DATA.tiers, cc, mm, ma, mx, F);
         let r = rollOnce();
         if (g && g.effect === "advantage") {
