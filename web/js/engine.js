@@ -391,6 +391,7 @@ window.ChaosEngine = (function () {
   }
 
   function unlockSkip(state, tree, nid, n) {
+    if (!Number.isInteger(nid)) throw new ChaosError("choose a target node first");
     if (state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is already unlocked`);
     const { dist } = hopDistances(tree, state.unlocked);
     if (!(nid in dist)) throw new ChaosError(`node ${nid} is not connected to the unlocked set`);
@@ -411,6 +412,7 @@ window.ChaosEngine = (function () {
   }
 
   function jumpCandidates(tree, category, fromId, unlocked) {
+    if (!Number.isInteger(fromId)) throw new ChaosError("unlock a node first — jumps launch from unlocked nodes");
     const unlockedSet = new Set(unlocked);
     if (!unlockedSet.has(fromId)) throw new ChaosError(`chosen node ${fromId} is not unlocked`);
     const from = tree.byId[fromId];
@@ -446,6 +448,7 @@ window.ChaosEngine = (function () {
   }
 
   function unlockHop(state, tree, nid) {
+    if (!Number.isInteger(nid)) throw new ChaosError("choose a target node first");
     const tickets = state.inventory.filter(t => t.kind === "hop");
     if (!tickets.length) throw new ChaosError("no hop ticket in inventory");
     if (state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is already unlocked`);

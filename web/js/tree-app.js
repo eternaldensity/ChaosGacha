@@ -1165,12 +1165,21 @@
     if (!st.inventory.length) inv.innerHTML = "<li class='muted'>No tickets — award one above.</li>";
     st.inventory.forEach((t, idx) => {
       const li = document.createElement("li");
+      // Wrap: the label takes the first line, the 100%-wide controls
+      // their own line below, instead of squeezing the label to nothing.
+      li.style.flexWrap = "wrap";
       const note = E.gambleNote(t);
       li.innerHTML = `<div class="grow"><b${note ? ` title="${esc(note)}"` : ""}>${esc(ticketLabel(t))}</b>` +
         (note ? `<div class="small muted">🎲 ${esc(note)}</div>` : "") + `</div>`;
       const ctl = document.createElement("div");
       ctl.className = "row";
       ctl.style.marginTop = "6px";
+      const emptyNote = text => {
+        const span = document.createElement("span");
+        span.className = "muted small";
+        span.textContent = text;
+        return span;
+      };
       const useBtn = (label, fn) => {
         const b = document.createElement("button");
         b.textContent = label; b.className = "primary";
@@ -1186,29 +1195,42 @@
           (dist[nd.id] != null && dist[nd.id] <= 1 + t.n)).map(nd => nd.id);
         const sel = document.createElement("select");
         sel.innerHTML = nodeOptions(cands, rt, nd => "cost " + E.fmt(E.nodeCost(rt, nd.id)));
-        ctl.append(sel, useBtn(`Skip →`, ({ st, rt }) => E.unlockSkip(st, rt, parseInt(sel.value, 10), t.n)));
+        if (!sel.options.length) {
+          ctl.appendChild(emptyNote("No node in reach of this ticket."));
+        } else {
+          ctl.append(sel, useBtn(`Skip →`, ({ st, rt }) => E.unlockSkip(st, rt, parseInt(sel.value, 10), t.n)));
+        }
       } else if (t.kind === "jump" || t.kind === "choice") {
-        const fromSel = document.createElement("select");
-        fromSel.innerHTML = nodeOptions(st.unlocked.filter(u => u !== 0), rt);
-        const cat = t.category;
-        const showCands = () => {
-          const list = E.jumpCandidates(rt, cat, parseInt(fromSel.value, 10), st.unlocked)
-            .slice(0, t.kind === "choice" ? t.n : 1);
-          pickSel.innerHTML = list.map(([dd, nd], i) =>
-            `<option value="${i}">#${nd.id} ${esc(nd.name)} (${nd.rarity})</option>`).join("");
-        };
-        const pickSel = document.createElement("select");
-        fromSel.addEventListener("change", showCands);
-        ctl.append(fromSel, pickSel);
-        showCands();
-        ctl.append(useBtn(t.kind === "choice" ? "Choice jump →" : "Jump →",
-          ({ st, rt }) => E.unlockJump(st, rt, cat, parseInt(fromSel.value, 10), parseInt(pickSel.value || "0", 10))));
+        const fromIds = st.unlocked.filter(u => u !== 0);
+        if (!fromIds.length) {
+          ctl.appendChild(emptyNote("Unlock a node first — jumps launch from unlocked nodes."));
+        } else {
+          const fromSel = document.createElement("select");
+          fromSel.innerHTML = nodeOptions(fromIds, rt);
+          const cat = t.category;
+          const showCands = () => {
+            const list = E.jumpCandidates(rt, cat, parseInt(fromSel.value, 10), st.unlocked)
+              .slice(0, t.kind === "choice" ? t.n : 1);
+            pickSel.innerHTML = list.map(([dd, nd], i) =>
+              `<option value="${i}">#${nd.id} ${esc(nd.name)} (${nd.rarity})</option>`).join("");
+          };
+          const pickSel = document.createElement("select");
+          fromSel.addEventListener("change", showCands);
+          ctl.append(fromSel, pickSel);
+          showCands();
+          ctl.append(useBtn(t.kind === "choice" ? "Choice jump →" : "Jump →",
+            ({ st, rt }) => E.unlockJump(st, rt, cat, parseInt(fromSel.value, 10), parseInt(pickSel.value || "0", 10))));
+        }
       } else if (t.kind === "hop") {
         const { dist } = E.hopDistances(rt, st.unlocked);
         const cands = rt.nodes.filter(nd => !st.unlocked.includes(nd.id) && (dist[nd.id] || 0) >= 2).map(nd => nd.id);
         const sel = document.createElement("select");
         sel.innerHTML = nodeOptions(cands.slice(0, 400), rt);
-        ctl.append(sel, useBtn("Hop →", ({ st, rt }) => E.unlockHop(st, rt, parseInt(sel.value, 10))));
+        if (!sel.options.length) {
+          ctl.appendChild(emptyNote("No node far enough away for this ticket."));
+        } else {
+          ctl.append(sel, useBtn("Hop →", ({ st, rt }) => E.unlockHop(st, rt, parseInt(sel.value, 10))));
+        }
       } else {
         const span = document.createElement("span");
         span.className = "muted small";
