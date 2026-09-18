@@ -2166,3 +2166,7 @@
 #Bind to an inn and return to it from anywhere after a short channel, once per day. Binds to inns only; dungeons, war zones, and other people's houses do not count.
 1084. Mimic Beacon, 5.2, XCOM
 #A thrown hologram projector impersonating a soldier badly enough to draw all enemy fire. Lasts until destroyed or disbelieved, whichever comes first.
+1085. Combat Stim, 5.0, StarCraft
+#Military-grade combat stims: greatly quickened strikes and dulled pain for a few minutes, at the cost of a chunk of health. Side effects include confidence.
+1086. Plant in a Boot, 5.0, WALL-E
+#A living plant growing in an old boot: proof that life finds a way. Tends to inspire hope, directives, and mutiny in roughly that order.

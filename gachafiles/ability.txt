@@ -2972,3 +2972,7 @@
 #Drive allies into a mass battle frenzy: greatly quickened strikes and movement for under a minute, then exhaustion. One chorus per battle; the drums remember.
 1490. Psionics, 5.6, XCOM
 #Break minds at range: panic rookies, dominate the weak-willed, and detonate Rift anomalies. Each intrusion risks feedback that stuns you instead.
+1491. Psionic Storm, 5.8, StarCraft
+#Call down a raging psionic storm that shreds shields, flesh, and circuitry alike across a wide area. Allies inside fare exactly as badly.
+1492. Solar Charge, 4.5, WALL-E
+#Drink direct sunlight to recharge energy, stamina, and small devices. Overcast skies provide faucet-level trickle; true night provides nothing.

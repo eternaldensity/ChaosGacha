@@ -1394,3 +1394,5 @@
 #Survive the mutagenic Trial: lightning reflexes, immunity to most poisons and diseases, decades of extended life, and sterility. Most subjects do not survive it; you did.
 697. Ebon Knight, 5.8, Warcraft
 #Rise as a knight of the Ebon Blade: runeblade hunger, frost and unholy command, no need for rest or breath. Holy ground itches; paladins itch more.
+698. Infested, 5.4, StarCraft
+#Zerg infestation creeps through you: fast regeneration, creep affinity, and hive whispers at the edge of hearing. Fire still works on you, fans included.

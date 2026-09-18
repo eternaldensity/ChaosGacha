@@ -1074,7 +1074,7 @@
 #A weak common fairy. Revives shortly after every beating, annoyingly cheerful about it.
 538. Goblin (illiterate), 0.4, Pathfinder
 #Fears writing, loves fire a normal amount (for a goblin). Cannot read this entry.
-539. Peasant (pitchfork), 0.2, Dungeons & Dragons
+539. Peasant (pitchfork), 0.2, DnD
 #Has a pitchfork and fears everything. Mobs only if at least forty others join first.
 540. Boo, 0.3, Baldur's Gate
 #A miniature giant space hamster squeaking tactical advice. The tactics are sound.
@@ -1110,3 +1110,9 @@
 #A flying support drone that heals allies, stuns enemies, and hacks networks from orbit-adjacent altitudes. Sarcastic beeps included free.
 556. Wisp, 5.0, Warcraft
 #A night elf worker wisp: gathers, scouts, and detonates itself against summoned things. Reforms by morning, slightly smugger.
+557. Zergling, 5.2, StarCraft
+#A pair-bonded zergling duo, fast, bladed, and eager. Comes as two because one would get lonely; both fit roughly one pocket.
+558. WALL-E, 5.2, WALL-E
+#A waste-collecting robot with a cockroach friend and bottomless curiosity. Compacts trash, collects treasures, and holds your hand when it rains.
+559. EVE Probe, 5.6, WALL-E
+#A sleek probe with an ion cannon, scanner suite, and a plant-shaped hole in her priorities. Fast, lethal, and slowly learning tenderness.
