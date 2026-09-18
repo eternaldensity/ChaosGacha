@@ -1457,8 +1457,8 @@
       go.textContent = "View";
       go.title = `Open ${nd.name} in the node view`;
       go.addEventListener("click", () => { selectedId = id; showTab("node"); });
-      li.appendChild(b);
       li.appendChild(go);
+      li.appendChild(b);
       box.appendChild(li);
     }
     if (ids.length > 30) {
