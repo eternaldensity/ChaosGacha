@@ -304,6 +304,23 @@
     } catch (e) { showResult(r); return; }
     const winIdx = opt.n;
     items.splice(winIdx, 0, { name: r.name, rarity: r.rarity, source: r.source, category: r.category });
+    // The winner is predetermined; don't let a decoy double it up visually.
+    for (const j of [winIdx - 1, winIdx + 1]) {
+      if (j < 0 || j >= items.length || items[j].name !== r.name) continue;
+      const other = j < winIdx ? items[j - 1] : items[j + 1];
+      for (let t = 0; t < 30; t++) {
+        const k = Math.floor(Math.random() * items.length);
+        if (Math.abs(k - winIdx) <= 1 || Math.abs(k - j) <= 1) continue;
+        const a = items[k];
+        if (a.name === r.name) continue;
+        if (other && a.name === other.name) continue;
+        if (k > 0 && items[k - 1].name === r.name) continue;
+        if (k < items.length - 1 && items[k + 1].name === r.name) continue;
+        items[k] = items[j];
+        items[j] = a;
+        break;
+      }
+    }
     const reel = $("reel"), inner = $("reelInner");
     inner.innerHTML = "";
     for (const it of items) {

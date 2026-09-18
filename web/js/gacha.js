@@ -97,24 +97,55 @@ window.ChaosGacha = (function () {
   }
 
   // Candidate strip for the spin animation: plausible results drawn through
-  // the same pull/filter/weight path as roll(). Caller appends the true
-  // result at the end. `category` must already be resolved (not "random").
+  // the same pull/filter/weight path as roll(). Decoys only — the caller
+  // splices the true result in afterwards, so this shapes the theater for
+  // variety: never the same entry twice in a row, and preferably nothing
+  // repeated within the last few rows. `category` must already be resolved
+  // (not "random").
   function drawStrip(entries, category, min, max, avg, filt, count, rnd) {
     rnd = rnd || Math.random;
     const { cat, pool } = buildPool(entries, category, filt, rnd);
+    const distinct = new Set(pool.map(e => e.name)).size > 1;
     const items = [];
+    const push = e => items.push(
+      { name: e.name, rarity: e.r, source: e.s || "", category: cat });
+    const prevName = () => items.length ? items[items.length - 1].name : null;
+    // Uniform in-ticket-range pick, used when the weighted draw keeps
+    // repeating: variety is mandatory for theater, exact odds are not.
+    const rangedFallback = () => {
+      const prev = prevName();
+      const cands = pool.filter(e => e.r > min && e.r <= max && e.name !== prev);
+      if (!cands.length) return null;
+      return cands[Math.floor(rnd() * cands.length)];
+    };
     let guard = 0;
-    while (items.length < count && guard++ < count * 40) {
-      const hit = drawOne(pool, min, max, avg, rnd);
-      if (hit) {
+    while (items.length < count && guard++ < count * 60) {
+      let pick = null, fallback = null;
+      for (let t = 0; t < 12 && !pick; t++) {
+        const hit = drawOne(pool, min, max, avg, rnd);
+        if (!hit) continue;
         const e = hit.entry;
-        items.push({ name: e.name, rarity: e.r, source: e.s || "", category: cat });
+        if (distinct && e.name === prevName()) { fallback = fallback || e; continue; }
+        if (items.slice(-3).some(it => it.name === e.name)) {
+          fallback = fallback || e;
+          continue;
+        }
+        pick = e;
       }
+      const prev = prevName();
+      const e = pick
+        || ((fallback && fallback.name !== prev) ? fallback : null)
+        || rangedFallback()
+        || fallback;
+      if (e) push(e);
     }
-    let i = 0;
-    while (items.length < count && pool.length) {
+    let i = 0, skips = 0;
+    while (items.length < count && pool.length &&
+           skips++ < count * 4 + pool.length) {
       const e = pool[i++ % pool.length];
-      items.push({ name: e.name, rarity: e.r, source: e.s || "", category: cat });
+      const prev = items.length ? items[items.length - 1].name : null;
+      if (distinct && e.name === prev) continue;
+      push(e);
     }
     return items;
   }
