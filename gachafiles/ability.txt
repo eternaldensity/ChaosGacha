@@ -2950,6 +2950,8 @@
 #Shift the flavor of food slightly: sweeter, saltier, or faintly of pennies.
 1479. Static Cling, 0.3, Generic
 #Your clothes cling statically at dramatic moments. Dryer sheets help for an hour.
+1480. Earworm, 0.4, Generic
+#Plant a jingle in someone's head for about an hour. They will hum it. Everyone will know why.
 1481. Warm Hands, 0.3, Generic
 #Your hands are always warm. Comforting in winter; melts chocolate in summer.
 1482. Hiccup, 0.2, Generic
