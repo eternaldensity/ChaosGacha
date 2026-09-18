@@ -1453,7 +1453,12 @@
         const done = await mutate(({ st, rt }) => E.unlock(st, rt, id));
         if (done) toast(`Unlocked ${nd.name}.`);
       });
+      const go = document.createElement("button");
+      go.textContent = "View";
+      go.title = `Open ${nd.name} in the node view`;
+      go.addEventListener("click", () => { selectedId = id; showTab("node"); });
       li.appendChild(b);
+      li.appendChild(go);
       box.appendChild(li);
     }
     if (ids.length > 30) {
