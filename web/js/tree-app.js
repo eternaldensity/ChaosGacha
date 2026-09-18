@@ -1428,7 +1428,27 @@
     if (!any) meta.innerHTML = "<span class='muted small'>Unlock tree-meta nodes (Sight, Graft, Chaos Die…) to gain abilities.</span>";
 
   // Frontier nodes, cheapest first, with one-tap unlock.
+  const UNLOCK_PAGE = 30;
+  let unlockPage = 0, unlockOpen = true, lastUnlockCtx = null;
+  function applyUnlockVisibility() {
+    $("unlockList").style.display = unlockOpen ? "" : "none";
+    $("unlockPage").style.display = unlockOpen ? "" : "none";
+    $("unlockPrev").style.display = unlockOpen ? "" : "none";
+    $("unlockNext").style.display = unlockOpen ? "" : "none";
+    $("unlockToggle").textContent = unlockOpen ? "Hide" : "Show";
+  }
+  $("unlockToggle").addEventListener("click", () => {
+    unlockOpen = !unlockOpen;
+    applyUnlockVisibility();
+  });
+  $("unlockPrev").addEventListener("click", async () => {
+    if (unlockPage > 0) { unlockPage--; if (lastUnlockCtx) await renderUnlockable(lastUnlockCtx); }
+  });
+  $("unlockNext").addEventListener("click", async () => {
+    unlockPage++; if (lastUnlockCtx) await renderUnlockable(lastUnlockCtx);
+  });
   async function renderUnlockable(c) {
+    lastUnlockCtx = c;
     const box = $("unlockList");
     box.innerHTML = "";
     const { st, rt } = c;
@@ -1436,11 +1456,18 @@
     const ids = [...E.frontier(rt, st.unlocked)]
       .filter(id => id !== 0 && visNode(rt.byId[id]));
     ids.sort((a, b) => E.nodeCostFor(st, rt, a) - E.nodeCostFor(st, rt, b));
+    const pages = Math.max(1, Math.ceil(ids.length / UNLOCK_PAGE));
+    unlockPage = Math.max(0, Math.min(unlockPage, pages - 1));
+    $("unlockPage").textContent = ids.length
+      ? `${unlockPage * UNLOCK_PAGE + 1}–${Math.min(ids.length, (unlockPage + 1) * UNLOCK_PAGE)} of ${ids.length}` : "";
+    $("unlockPrev").disabled = unlockPage === 0;
+    $("unlockNext").disabled = unlockPage >= pages - 1;
+    applyUnlockVisibility();
     if (!ids.length) {
       box.innerHTML = "<li class='muted'>Nothing on the frontier — reach further with tickets.</li>";
       return;
     }
-    for (const id of ids.slice(0, 30)) {
+    for (const id of ids.slice(unlockPage * UNLOCK_PAGE, (unlockPage + 1) * UNLOCK_PAGE)) {
       const nd = rt.byId[id];
       const cost = E.nodeCostFor(st, rt, id);
       const ok = st.cores >= 1 && st.points >= cost;
@@ -1463,11 +1490,6 @@
       go.addEventListener("click", () => { selectedId = id; showTab("node"); });
       li.appendChild(go);
       li.appendChild(b);
-      box.appendChild(li);
-    }
-    if (ids.length > 30) {
-      const li = document.createElement("li");
-      li.innerHTML = `<span class="muted small">…and ${ids.length - 30} more (pricier).</span>`;
       box.appendChild(li);
     }
   }
