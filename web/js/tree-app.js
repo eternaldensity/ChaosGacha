@@ -1571,6 +1571,7 @@
     else if (kind === "jump") spec = `${tier} ${cat} jump`;
     else if (kind === "choice") spec = `${tier} choice ${n} jump`;
     else if (kind === "hop") spec = `${tier} hop`;
+    else if (kind === "coupon") spec = `${tier} coupon`;
     if (wantTwin) spec += " twin";
     let totalPts = 0, totalCores = 0;
     const notes = [];
