@@ -70,6 +70,8 @@
   let DB = loadDB();
   const runtimes = new Map();   // treeId -> runtime
   const memoryStatic = new Map(); // treeId -> payload (quota fallback)
+  const memoryGen = new Map(); // treeId -> {key, res} generated-tree cache
+  const LS_GEN = "chaosTree.gen.v1";
   function loadStatic(id) {
     if (memoryStatic.has(id)) return memoryStatic.get(id);
     try {
@@ -101,9 +103,19 @@
       rt = G.buildRuntime(payload);
       rt.params = payload.params || {};
     } else {
-      const res = await G.generate(DATA.entries, tree.seed, tree.params || {}, {
-        limit: tree.limit || null, ...(tree.filters || {})
-      }, () => {});
+      // Regenerating a full tree costs seconds; reuse the cached result
+      // when the seed/config/data haven't changed (quota failures fall
+      // back to regenerating, as before).
+      const key = genCacheKey(tree);
+      const hit = key && loadGenerated(tree.id);
+      let res = (hit && hit.key === key) ? hit.res : null;
+      if (res) res = JSON.parse(JSON.stringify(res));
+      if (!res) {
+        res = await G.generate(DATA.entries, tree.seed, tree.params || {}, {
+          limit: tree.limit || null, ...(tree.filters || {})
+        }, () => {});
+        if (key) saveGenerated(tree.id, key, res);
+      }
       rt = G.buildRuntime(res);
       rt.params = Object.assign({}, G.DEFAULTS, tree.params || {});
     }
@@ -115,6 +127,30 @@
     return rt;
   }
   function dropRuntime(id) { runtimes.delete(id); }
+  function genCacheKey(tree) {
+    try {
+      return JSON.stringify([tree.seed, tree.params || {},
+        tree.filters || {}, tree.limit || null, DATA.dataVersion || null]);
+    } catch (e) { return null; }
+  }
+  function loadGenerated(id) {
+    if (memoryGen.has(id)) return memoryGen.get(id);
+    try {
+      const raw = localStorage.getItem(LS_GEN + "." + id);
+      if (raw) { const p = JSON.parse(raw); memoryGen.set(id, p); return p; }
+    } catch (e) { /* ignore */ }
+    return null;
+  }
+  function saveGenerated(id, key, res) {
+    // Snapshot: the live runtime aliases its nodes, and swap application
+    // mutates them in place, so the cache must own an isolated copy.
+    let snap = null;
+    try { snap = JSON.parse(JSON.stringify({ key, res })); }
+    catch (e) { return; }
+    memoryGen.set(id, snap);
+    try { localStorage.setItem(LS_GEN + "." + id, JSON.stringify(snap)); }
+    catch (e) { /* quota: regenerate next time, as today */ }
+  }
 
   // ---- tabs --------------------------------------------------------------
   let currentTab = "trees";
@@ -127,7 +163,7 @@
       b.classList.toggle("active", b.dataset.tab === name));
     document.querySelectorAll(".tabpage").forEach(p =>
       p.classList.toggle("active", p.id === "tab-" + name));
-    if (name === "view3d") requestAnimationFrame(draw3D);
+    if (name === "view3d") requestDraw();
     if (name === "node") { renderNode(); renderFinder(); }
     if (name === "owned") renderOwned();
     if (name === "tickets") renderTickets();
@@ -193,7 +229,8 @@
         DB.trees = DB.trees.filter(x => x.id !== t.id);
         delete DB.states[t.id];
         try { localStorage.removeItem(LS_STATIC + "." + t.id); } catch (e) {}
-        memoryStatic.delete(t.id); dropRuntime(t.id);
+        try { localStorage.removeItem(LS_GEN + "." + t.id); } catch (e) {}
+        memoryStatic.delete(t.id); memoryGen.delete(t.id); dropRuntime(t.id);
         if (DB.activeId === t.id) DB.activeId = DB.trees.length ? DB.trees[0].id : null;
         selectedId = 0;
         saveDB(); renderTrees(); refreshAll();
@@ -264,6 +301,10 @@
       const p = loadStatic(t.id);
       if (!p) throw new Error("static tree data missing (re-import the file)");
       saveStatic(nid, p);
+    } else {
+      const hit = loadGenerated(t.id);
+      const nk = genCacheKey(nt);
+      if (hit && nk && hit.key === nk) saveGenerated(nid, nk, hit.res);
     }
     DB.trees.push(nt);
     DB.states[nid] = fresh ? E.newState()
@@ -364,6 +405,7 @@
       DB.activeId = tree.id;
       dropRuntime(tree.id);
       runtimes.set(tree.id, G.buildRuntime(res));
+      saveGenerated(tree.id, genCacheKey(tree), res);
       saveDB(); renderTrees(); refreshAll();
       $("genMsg").textContent = `Generated ${res.nodes.length} nodes.`;
       exitPreview();
@@ -472,7 +514,7 @@
   }
   async function refreshAll() {
     renderTrees();
-    if (currentTab === "view3d") draw3D();
+    if (currentTab === "view3d") requestDraw();
     if (currentTab === "node") await renderNode();
     if (currentTab === "owned") await renderOwned();
     if (currentTab === "tickets") await renderTickets();
@@ -583,7 +625,28 @@
     canvas.width = Math.max(1, Math.round(r.width * dpr));
     canvas.height = Math.max(1, Math.round(r.height * dpr));
   }
-  window.addEventListener("resize", () => { fitCanvas(); draw3D(); });
+  window.addEventListener("resize", () => { fitCanvas(); requestDraw(); });
+
+  // Coalesce redraw requests onto one frame: drag/zoom handlers fire far
+  // more often than the display refreshes, and each full redraw walks the
+  // whole tree, so uncoalesced draws queue up and tank the framerate.
+  // A request arriving mid-draw sets a dirty flag for one follow-up frame.
+  let drawQueued = false, drawDirty = false, drawing = false;
+  function requestDraw() {
+    if (currentTab !== "view3d") return;
+    if (drawing || drawQueued) { drawDirty = true; return; }
+    drawQueued = true;
+    requestAnimationFrame(async () => {
+      drawQueued = false;
+      if (currentTab !== "view3d") return;
+      drawing = true;
+      try { await draw3D(); } finally { drawing = false; }
+      if (drawDirty && currentTab === "view3d") {
+        drawDirty = false;
+        requestDraw();
+      } else drawDirty = false;
+    });
+  }
 
   function project(p) {
     const { yaw, pitch, dist } = cam;
@@ -733,13 +796,13 @@
       if (pts.size === 1) {
         cam.yaw += (e.clientX - prev[0]) * 0.008;
         cam.pitch = Math.max(-1.4, Math.min(1.4, cam.pitch + (e.clientY - prev[1]) * 0.008));
-        draw3D();
+        requestDraw();
       } else if (pts.size === 2) {
         const [p, q] = [...pts.values()];
         const d = Math.hypot(p[0] - q[0], p[1] - q[1]);
         if (lastPinch) cam.zoom = Math.max(0.05, Math.min(15, cam.zoom * (d / lastPinch)));
         lastPinch = d;
-        draw3D();
+        requestDraw();
       }
     });
     const up = e => {
@@ -753,7 +816,7 @@
     canvas.addEventListener("wheel", e => {
       e.preventDefault();
       cam.zoom = Math.max(0.05, Math.min(15, cam.zoom * (1 - e.deltaY * 0.0015)));
-      draw3D();
+      requestDraw();
     }, { passive: false });
 
     function tapSelect(e) {
@@ -767,7 +830,7 @@
       }
       if (best != null) {
         selectedId = best;
-        draw3D();
+        requestDraw();
         if (!preview) showTab("node");
       }
     }
@@ -775,19 +838,19 @@
   $("btnResetCam").addEventListener("click", () => {
     cam.yaw = 0.6; cam.pitch = 0.35;
     lastFitKey = ""; // force re-fit on next draw
-    draw3D();
+    requestDraw();
   });
   $("btnOrigin").addEventListener("click", () => {
     selectedId = 0;
-    draw3D();
+    requestDraw();
   });
   $("showEdges").addEventListener("change", () => {
     showEdges = $("showEdges").checked;
-    draw3D();
+    requestDraw();
   });
   $("showRadial").addEventListener("change", () => {
     showRadial = $("showRadial").checked;
-    draw3D();
+    requestDraw();
   });
 
   // ---- node finder ------------------------------------------------------------
@@ -1542,7 +1605,7 @@
       if (hiddenClasses.has(cl.name)) hiddenClasses.delete(cl.name);
       else hiddenClasses.add(cl.name);
       b.style.opacity = hiddenClasses.has(cl.name) ? "0.35" : "1";
-      draw3D();
+      requestDraw();
     });
     $("classLegend").appendChild(b);
   }
