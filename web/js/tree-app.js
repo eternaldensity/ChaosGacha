@@ -252,6 +252,16 @@
         } catch (e) { err(e); }
       });
       actions.append(open, ren, copy, fresh, del);
+      if (!t.static) {
+        const use = document.createElement("button");
+        use.textContent = "⚙ Use options";
+        use.title = "Load this tree's generator options into the form to tweak and regenerate";
+        use.addEventListener("click", () => {
+          writeGenForm(t);
+          toast(`Options from "${t.name}" loaded — tweak and Generate.`);
+        });
+        actions.append(use);
+      }
       li.appendChild(actions);
       ul.appendChild(li);
     }
@@ -313,6 +323,45 @@
     selectedId = 0;
     saveDB(); renderTrees(); refreshAll();
     return nt;
+  }
+  // Inverse of readGenForm: load a saved (generated, non-static) tree's
+  // options into the New Tree form for tweaking. Missing fields fall back
+  // to the form defaults, mirroring readGenForm.
+  function writeGenForm(t) {
+    const P = t.params || {}, F = t.filters || {};
+    const set = (id, v) => { $(id).value = v; };
+    const check = (id, v) => { if ($(id)) $(id).checked = !!v; };
+    const num = (v, def) => (v == null || isNaN(parseFloat(v))) ? def : v;
+    $("newName").value = ((t.name || "Untitled tree") + " (tweak)").slice(0, 60);
+    set("newSeed", t.seed != null ? t.seed : "");
+    set("newSize", t.limit != null ? t.limit : "");
+    set("newDegree", num(P.meanDegree, 2.5));
+    set("newRejoin", num(P.rejoinBias, 0.7));
+    set("newRoots", num(P.rootLinks, 3));
+    set("newRadius", num(P.radius, 10.0));
+    set("newVar", num(P.distanceVariance, 0.05));
+    set("newCluster", num(P.clustering, 0.3));
+    set("newClusters", num(P.clusters, 3));
+    if ($("newDegDist") && P.degreeDist) $("newDegDist").value = P.degreeDist;
+    set("newDegMin", (P.degreeMin != null && P.degreeMin !== 0) ? P.degreeMin : "");
+    set("newDegMax", P.degreeMax != null ? P.degreeMax : "");
+    set("newFalloff", num(P.linkFalloff, 4.0));
+    set("newMaxDist", num(P.maxLinkDistance, 0.6));
+    set("newLocalDist", num(P.localLinkDistance, 0.25));
+    check("newConnect", P.connect !== false);
+    const files = Array.isArray(F.files) ? F.files : [];
+    document.querySelectorAll(".fFile").forEach(c => { c.checked = files.includes(c.value); });
+    set("newRmin", (F.rarityMin != null) ? F.rarityMin : "");
+    set("newRmax", (F.rarityMax != null) ? F.rarityMax : "");
+    const srcs = Array.isArray(F.sources) ? F.sources : null;
+    document.querySelectorAll(".srcCheck").forEach(c => {
+      if (srcs == null || !srcs.length) c.checked = true;
+      else c.checked = srcs.includes(c.value);
+    });
+    check("newGachaOnly", F.includeGachaOnly);
+    check("newNsfw", F.includeNsfw);
+    check("newNoncon", F.includeNoncon);
+    updateNonconRows();
   }
   function readGenForm() {
     const num = (id, def) => {
