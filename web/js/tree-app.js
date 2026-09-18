@@ -1645,12 +1645,6 @@
   key.title = "Locked, on the frontier, and covered by your wallet";
   key.textContent = "⬡ unlockable now";
   $("classLegend").appendChild(key);
-  const rkey = document.createElement("span");
-  rkey.className = "pill";
-  rkey.style.cssText = "margin:2px";
-  rkey.title = "r is the node's distance from the Origin root";
-  rkey.textContent = "r = radial distance";
-  $("classLegend").appendChild(rkey);
   $("ownCat").innerHTML = `<option value="">All</option>` +
     E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });
