@@ -40,7 +40,7 @@ TIERS = [
     # Rank-wise it sits between mythical and divine, though mythical<->divine
     # rank straight past it (as gold<->platinum skip aluminium).
     {"name": "wild", "min": 1.0, "avg": 5.0, "max": 10.0,
-     "points": 0, "color": "#228b22"},
+     "points": 0, "color": "#228b22", "flat": True},
     {"name": "divine", "min": 6.5, "avg": 8.3, "max": 10.0, "points": 500000000, "color": "#f61e1e"},
     {"name": "transcendent", "min": 7.5, "avg": 9.3, "max": 10.0,
      "points": 5000000000, "color": "#8f1010"},

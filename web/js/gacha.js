@@ -3,14 +3,15 @@
  * Pool = all entries except Tree-tagged ones; rarity-pull then ±0.2 filter,
  * weights 1/4^|avg-rarity|. */
 window.ChaosGacha = (function () {
-  function rarityPull(min, max, avg, rnd) {
+  function rarityPull(min, max, avg, rnd, exp) {
     rnd = rnd || Math.random;
+    const k = exp || 4;
     const vals = [], weights = [];
     let x = min;
     while (x < max) {
       vals.push(x);
       x += 0.1;
-      weights.push(1 / Math.pow(4, Math.abs(avg - x)));
+      weights.push(1 / Math.pow(k, Math.abs(avg - x)));
     }
     let total = 0;
     for (const w of weights) total += w;
@@ -27,7 +28,8 @@ window.ChaosGacha = (function () {
       .replace(/\((Nsfw|Tech|Character|Gacha|Noncon)\)/g, "").trim();
   }
 
-  // filters: {q, source|sources, rmin, rmax, hideNsfw, hideNoncon, hideTech, exclude[]}.
+  // filters: {q, source|sources, rmin, rmax, hideNsfw, hideNoncon, hideTech, exclude[], flat}.
+  // flat=true flattens rarity weighting to uniform (wild tickets).
   // A plain string is treated as {q} (backwards compatible); a single
   // source string behaves like a one-element sources list.
   function normFilt(f) {
@@ -61,11 +63,15 @@ window.ChaosGacha = (function () {
     return { cat, pool };
   }
 
-  function drawOne(pool, min, max, avg, rnd) {
-    const pull = rarityPull(min, max, avg, rnd);
-    const filt = pool.filter(e => Math.abs(e.r - pull) <= 0.2);
+  function drawOne(pool, min, max, avg, rnd, exp) {
+    const pull = rarityPull(min, max, avg, rnd, exp);
+    // Flat mode pairs its uniform pull with a wide window so sparse
+    // regions (Trash, high tiers) actually resolve instead of missing.
+    const window = (exp === 1) ? 1.0 : 0.2;
+    const filt = pool.filter(e => Math.abs(e.r - pull) <= window);
     if (!filt.length) return null;
-    const fw = filt.map(e => 1 / Math.pow(4, Math.abs(avg - e.r)));
+    const k = exp || 4;
+    const fw = filt.map(e => 1 / Math.pow(k, Math.abs(avg - e.r)));
     let total = 0;
     for (const w of fw) total += w;
     let pick = rnd() * total, acc = 0, idx = filt.length - 1;
@@ -78,13 +84,14 @@ window.ChaosGacha = (function () {
 
   function roll(entries, tiers, category, min, max, avg, filt, rnd) {
     rnd = rnd || Math.random;
+    const exp = normFilt(filt).flat ? 1 : 4;
     const { cat, pool } = buildPool(entries, category, filt, rnd);
-    const wOf = e => 1 / Math.pow(4, Math.abs(avg - e.r));
+    const wOf = e => 1 / Math.pow(exp, Math.abs(avg - e.r));
     let weightsum = 0;
     for (const e of pool) if (e.r <= max && min < e.r) weightsum += wOf(e);
     if (weightsum <= 0) throw new Error("rarity range matches nothing");
     for (let attempt = 0; attempt < 200; attempt++) {
-      const hit = drawOne(pool, min, max, avg, rnd);
+      const hit = drawOne(pool, min, max, avg, rnd, exp);
       if (!hit) continue;
       const e = hit.entry;
       return {
@@ -116,6 +123,7 @@ window.ChaosGacha = (function () {
       } catch (e) { /* category filtered out entirely */ }
     }
     if (!pools.length) throw new Error("no entries match (loosen the filters)");
+    const exp = normFilt(filt).flat ? 1 : 4;
     const distinct = new Set(
       pools.flatMap(p => p.pool.map(e => e.name))).size > 1;
     const items = [];
@@ -135,7 +143,7 @@ window.ChaosGacha = (function () {
       let pick = null, pickCat = null, fallback = null, fallbackCat = null;
       for (let t = 0; t < 12 && !pick; t++) {
         const P = pools[Math.floor(rnd() * pools.length)];
-        const hit = drawOne(P.pool, min, max, avg, rnd);
+        const hit = drawOne(P.pool, min, max, avg, rnd, exp);
         if (!hit) continue;
         const e = hit.entry;
         if (distinct && e.name === prevName()) {

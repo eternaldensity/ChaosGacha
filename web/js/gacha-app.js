@@ -250,6 +250,8 @@
     if (spinning) return;
     $("filterBox").open = false;
     const F = collectFilters();
+    const tp = DATA.tiers.find(t => t.name === (tierName || preset));
+    F.flat = !!(tp && tp.flat);
     if (F.dedup) F.exclude = DB.history.map(h => h.name);
     let g = null;
     if (DB.settings.gambler) {
@@ -403,6 +405,8 @@
         // A batch never repeats itself: always exclude this batch's
         // results so far (plus history when skip-already-rolled is on).
         F.exclude = histExcl.concat(results.map(r => r.name));
+        const effTier = g ? g.tier : preset;
+        F.flat = !!((DATA.tiers.find(t => t.name === effTier) || {}).flat);
         const rollOnce = () => G.roll(DATA.entries, DATA.tiers, cc, mm, ma, mx, F);
         let r = rollOnce();
         if (g && g.effect === "advantage") {
