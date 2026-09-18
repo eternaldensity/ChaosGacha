@@ -1199,7 +1199,9 @@
   // ---- tickets tab --------------------------------------------------------------
   const TICKET_TIERS = ["trash", "bronze", "silver", "gold", "aluminium", "platinum", "diamond", "legendary", "mythical", "wild", "divine", "transcendent"];
   function fillTicketForm() {
-    $("tkTier").innerHTML = TICKET_TIERS.map(t => `<option>${t}</option>`).join("");
+    $("tkTier").innerHTML = TICKET_TIERS.map(t => `<option>${t}</option>`).join("") +
+      `<option value="">tierless</option>`;
+    $("tkTier").value = "bronze"; // preserve the historical default
     $("tkCat").innerHTML = E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
   }
   function ticketLabel(t) {
