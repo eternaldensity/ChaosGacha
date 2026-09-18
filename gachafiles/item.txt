@@ -2174,5 +2174,5 @@
 #An injection granting one ally massive damage and resistance for a short push. Recipient hears heroic music; enemies hear footsteps.
 1088. Battle-Car, 5.4, Rocket League
 #A supersonic acrobatic rocket car with flip, boost, and demolition manners. Ball not included; walls are load-bearing suggestions.
-1089. Scent Hound, 3.5, Generic
+1089. Scent Hound Whistle, 3.5, Generic
 #(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.
