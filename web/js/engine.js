@@ -12,12 +12,12 @@ window.ChaosEngine = (function () {
   const TIER_POINTS = {
     trash: 5, bronze: 50, silver: 500, gold: 5000, aluminium: 25000,
     platinum: 50000, diamond: 500000,
-    legendary: 5000000, mythical: 50000000, divine: 500000000,
-    transcendent: 5000000000, wild: 0
+    legendary: 5000000, mythical: 50000000, wild: 0, divine: 500000000,
+    transcendent: 5000000000
   };
   const TIERS = ["trash", "bronze", "silver", "gold", "aluminium",
     "platinum", "diamond",
-    "legendary", "mythical", "divine", "transcendent", "wild"];
+    "legendary", "mythical", "wild", "divine", "transcendent"];
   const CATEGORIES = ["ability", "item", "skill", "trait", "familiar"];
   const ROOT_ID = 0;
   const SEE_FAR_DISTANCE = 3.5;
@@ -326,12 +326,32 @@ window.ChaosEngine = (function () {
     return "destroyed";
   }
 
+  // Rank graph (not plain ladder order): gold<->platinum skip over
+  // aluminium, mythical<->divine skip over wild.
+  const RANK_UP = {
+    trash: "bronze", bronze: "silver", silver: "gold",
+    gold: "platinum", aluminium: "platinum",
+    platinum: "diamond", diamond: "legendary",
+    legendary: "mythical", mythical: "divine",
+    wild: "divine", divine: "transcendent",
+    transcendent: "transcendent"
+  };
+  const RANK_DOWN = {
+    trash: null, bronze: "trash", silver: "bronze",
+    gold: "silver", aluminium: "gold", platinum: "gold",
+    diamond: "platinum", legendary: "diamond",
+    mythical: "legendary", wild: "mythical",
+    divine: "mythical", transcendent: "divine"
+  };
   function shiftTier(tier, delta) {
-    const tiers = Object.keys(TIER_POINTS);
-    if (tier == null) return delta > 0 ? "bronze" : null;
-    const i = tiers.indexOf(tier) + delta;
-    if (i < 0) return null;
-    return tiers[Math.min(tiers.length - 1, i)];
+    const table = delta > 0 ? RANK_UP : RANK_DOWN;
+    let t = tier;
+    for (let i = 0; i < Math.abs(delta); i++) {
+      if (t == null) return delta > 0 ? "bronze" : null;
+      if (!(t in table)) break;
+      t = table[t];
+    }
+    return t;
   }
 
   function gambleNewKind(kind, rng) {

@@ -621,14 +621,17 @@ def test_meta4():
     assert cu._shift_tier(None, +1) == "bronze"
     assert cu._shift_tier(None, -1) is None
     assert cu._shift_tier("bronze", -1) == "trash"
-    assert cu._shift_tier("transcendent", +1) == "wild"
-    assert cu._shift_tier("wild", +1) == "wild"
-    assert cu._shift_tier("wild", -1) == "transcendent"
+    assert cu._shift_tier("transcendent", +1) == "transcendent"
+    assert cu._shift_tier("wild", +1) == "divine"
+    assert cu._shift_tier("wild", -1) == "mythical"
     assert cu._shift_tier("trash", -1) is None
     assert cu._shift_tier("bronze", +1) == "silver"
-    assert cu._shift_tier("gold", +1) == "aluminium"
+    assert cu._shift_tier("gold", +1) == "platinum"
     assert cu._shift_tier("aluminium", -1) == "gold"
-    assert cu._shift_tier("gold", +1) == "aluminium"
+    assert cu._shift_tier("aluminium", +1) == "platinum"
+    assert cu._shift_tier("platinum", -1) == "gold"
+    assert cu._shift_tier("mythical", +1) == "divine"
+    assert cu._shift_tier("divine", -1) == "mythical"
 
     # derive: charges sum, reroll takes the max, twice is a flag
     st = cu.new_state("<synthetic>")

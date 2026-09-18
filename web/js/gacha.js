@@ -187,12 +187,28 @@ window.ChaosGacha = (function () {
     return { d20, effect };
   }
   const GAMBLE_CATS = ["ability", "item", "skill", "trait", "familiar"];
+  // Gambler rank graph (mirrors the tree engine): gold<->platinum skip
+  // over aluminium, mythical<->divine skip over wild.
+  const RANK_UP = {
+    trash: "bronze", bronze: "silver", silver: "gold",
+    gold: "platinum", aluminium: "platinum",
+    platinum: "diamond", diamond: "legendary",
+    legendary: "mythical", mythical: "divine",
+    wild: "divine", divine: "transcendent",
+    transcendent: "transcendent"
+  };
+  const RANK_DOWN = {
+    trash: null, bronze: "trash", silver: "bronze",
+    gold: "silver", aluminium: "gold", platinum: "gold",
+    diamond: "platinum", legendary: "diamond",
+    mythical: "legendary", wild: "mythical",
+    divine: "mythical", transcendent: "divine"
+  };
   function gamblerApply(tiers, tier, cat, rnd) {
     const { d20, effect } = gamblerRoll(rnd);
     let t = tier, c = cat, advantage = false, destroyed = false;
-    const i = tiers.indexOf(tier);
-    if (effect === "rankUp") t = tiers[Math.min(tiers.length - 1, i < 0 ? 0 : i + 1)];
-    else if (effect === "rankDown") t = tiers[Math.max(0, i < 0 ? 0 : i - 1)];
+    if (effect === "rankUp") t = RANK_UP[tier] != null ? RANK_UP[tier] : tier;
+    else if (effect === "rankDown") t = RANK_DOWN[tier] || tier;
     else if (effect === "advantage") advantage = true;
     else if (effect === "destroyed") destroyed = true;
     else if (effect === "changeType") {

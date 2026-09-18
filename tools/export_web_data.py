@@ -35,13 +35,15 @@ TIERS = [
     {"name": "diamond", "min": 3.5, "avg": 5.3, "max": 7.3, "points": 500000, "color": "#9bf3eb"},
     {"name": "legendary", "min": 4.5, "avg": 6.3, "max": 8.3, "points": 5000000, "color": "#f5993d"},
     {"name": "mythical", "min": 5.5, "avg": 7.3, "max": 9.3, "points": 50000000, "color": "#ff6bae"},
+    # Wild has no fixed points: award rolls 2d8, takes the smaller as N for
+    # 10^(N+1) points, doubled on doubles. Points here is only a fallback.
+    # Rank-wise it sits between mythical and divine, though mythical<->divine
+    # rank straight past it (as gold<->platinum skip aluminium).
+    {"name": "wild", "min": 1.0, "avg": 5.0, "max": 10.0,
+     "points": 0, "color": "#228b22"},
     {"name": "divine", "min": 6.5, "avg": 8.3, "max": 10.0, "points": 500000000, "color": "#f61e1e"},
     {"name": "transcendent", "min": 7.5, "avg": 9.3, "max": 10.0,
      "points": 5000000000, "color": "#8f1010"},
-    # Wild has no fixed points: award rolls 2d8, takes the smaller as N for
-    # 10^(N+1) points, doubled on doubles. Points here is only a fallback.
-    {"name": "wild", "min": 1.0, "avg": 5.0, "max": 10.0,
-     "points": 0, "color": "#228b22"},
 ]
 
 # Rarity classes mirrored from Gacha.py run_gacha().

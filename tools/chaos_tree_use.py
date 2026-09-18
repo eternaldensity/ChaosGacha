@@ -109,6 +109,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # --- editable tuning -------------------------------------------------------
 # Tier ladder, lowest first. Wild has no fixed value: awarding a wild ticket
 # rolls 2d8, takes the smaller as N for 10^(N+1) points, doubled on doubles.
+# Rank-ups/downs follow _RANK_UP/_RANK_DOWN below rather than this order:
+# gold<->platinum and mythical<->divine skip over aluminium and wild.
 TIER_POINTS = {
     "trash": 5,
     "bronze": 50,
@@ -119,9 +121,9 @@ TIER_POINTS = {
     "diamond": 500000,
     "legendary": 5000000,
     "mythical": 50000000,
+    "wild": 0,
     "divine": 500000000,
     "transcendent": 5000000000,
-    "wild": 0,
 }
 CATEGORIES = ["ability", "item", "skill", "trait", "familiar"]
 ROOT_ID = 0
@@ -571,14 +573,34 @@ def gambler_effect(d):
 
 
 def _shift_tier(tier, delta):
-    """Move a tier up/down the ladder; bottom-1 falls to tierless."""
-    tiers = list(TIER_POINTS)
-    if tier is None:
-        return "bronze" if delta > 0 else None
-    i = tiers.index(tier) + delta
-    if i < 0:
-        return None
-    return tiers[min(len(tiers) - 1, i)]
+    """Move a tier up/down the rank graph (not plain ladder order):
+    gold<->platinum skip over aluminium, and mythical<->divine skip over
+    wild; aluminium and wild rank to their neighbours. Bottom-1 falls to
+    tierless, top floors."""
+    table = _RANK_UP if delta > 0 else _RANK_DOWN
+    for _ in range(abs(delta)):
+        if tier is None:
+            tier = "bronze" if delta > 0 else None
+            continue
+        tier = table.get(tier, tier)
+    return tier
+
+
+_RANK_UP = {
+    "trash": "bronze", "bronze": "silver", "silver": "gold",
+    "gold": "platinum", "aluminium": "platinum",
+    "platinum": "diamond", "diamond": "legendary",
+    "legendary": "mythical", "mythical": "divine",
+    "wild": "divine", "divine": "transcendent",
+    "transcendent": "transcendent",
+}
+_RANK_DOWN = {
+    "trash": None, "bronze": "trash", "silver": "bronze",
+    "gold": "silver", "aluminium": "gold", "platinum": "gold",
+    "diamond": "platinum", "legendary": "diamond",
+    "mythical": "legendary", "wild": "mythical",
+    "divine": "mythical", "transcendent": "divine",
+}
 
 
 def _gamble_new_kind(kind):
