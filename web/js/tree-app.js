@@ -11,6 +11,8 @@
   const esc = s => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+  // Whole-number rarities display with .0 for consistency.
+  const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
 
   function toast(msg, isErr) {
     const t = $("toast");
@@ -1000,11 +1002,12 @@
     if (!unl && nd.id !== 0) {
       if (front) {
         const cost = E.nodeCostFor(c.st, c.rt, nd.id);
-        const ok = c.st.cores >= 1 && c.st.points >= cost - E.couponCover(c.st, cost);
+        const cover = E.couponCover(c.st, cost);
+        const ok = c.st.cores >= 1 && c.st.points >= cost - cover;
         actions = `<div class="row" style="margin-top:8px"><button class="primary" data-act="unlock" ${ok ? "" : "disabled"}>` +
-          `Unlock (${E.fmt(cost)} pts + 1 core)</button></div>` +
+          `Unlock (${E.fmt(cost - cover)} pts + 1 core${cover ? ` · coupon −${E.fmt(cover)}` : ""})</button></div>` +
           `<div class="muted small" style="margin-top:4px">Wallet: ${E.fmt(c.st.points)} pts · ${c.st.cores} cores.</div>` +
-          (ok ? "" : `<div class="muted small" style="margin-top:4px">Needs 1 core + ${E.fmt(cost)} pts (have ${c.st.cores} / ${E.fmt(c.st.points)}).</div>`);
+          (ok ? "" : `<div class="muted small" style="margin-top:4px">Needs 1 core + ${E.fmt(cost - cover)} pts (have ${c.st.cores} / ${E.fmt(c.st.points)}).</div>`);
       } else {
         const { dist } = E.hopDistances(c.rt, c.st.unlocked);
         const skipOk = c.st.inventory.some(t => t.kind === "skip" &&
@@ -1517,7 +1520,7 @@
       const ok = st.cores >= 1 && st.points >= cost - E.couponCover(st, cost);
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><b>${esc(nd.name)}</b> ` +
-        `<span class="pill">${esc(nd.file)} ${nd.rarity}</span><br>` +
+        `<span class="pill">${esc(nd.file)} ${fmtR(nd.rarity)}</span><br>` +
         `<span class="muted small">${E.fmt(cost)} pts + 1 core</span></div>`;
       const b = document.createElement("button");
       b.textContent = "Unlock";

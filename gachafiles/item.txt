@@ -1821,7 +1821,7 @@
 911. Tripcaster, 3.2, Horizon Zero Dawn
 #Lays shock, fire, and explosive tripwires for the ambush engineer.
 912. Blast Sling, 3.8, Horizon Zero Dawn
-#Lobs proximity bombs in a satisfying arc with a bigger boom.
+#Lobs proximity bombs in a satisfying arc with a bigger boom. Bomb ammunition restocks every 24 hours.
 913. Tearblaster, 3.6, Horizon Zero Dawn
 #Close-range cannon blast that rips armor plates and components clean off.
 914. Black Lotus, 8.6, MTG
@@ -2063,7 +2063,7 @@
 1032. Pierced Butterfly, 5.4, Hades
 #A keepsake butterfly that drinks in flawless victories: each battle you end untouched sharpens all your attacks noticeably, stacking until something finally lands a hit and resets it.
 1033. Fishing Rod, 3.8, Hades
-#A simple rod that catches something worthwhile in any liquid, including lava, chaos, and the Styx: mostly fish, occasionally riches, rarely something that bites back.
+#A simple rod that catches something worthwhile in any liquid, including lava, chaos, and the Styx: mostly fish, occasionally riches, rarely something that bites back. One notable catch per day; endless minnows.
 1034. Arcana Deck, 5.5, Hades 2
 #A deck of major arcana you activate within your grasp: the Sorceress quickens casts, the Titan hardens skin, the Huntress sharpens strikes, and more. Deeper grasp holds more cards.
 1035. Ghost Onion, 5.2, Hades 2
@@ -2171,8 +2171,14 @@
 1086. Plant in a Boot, 5.0, WALL-E
 #A living plant growing in an old boot: proof that life finds a way. Tends to inspire hope, directives, and mutiny in roughly that order.
 1087. Nano Boost, 5.4, Overwatch
-#An injection granting one ally massive damage and resistance for a short push. Recipient hears heroic music; enemies hear footsteps.
+#An injection granting one ally massive damage and resistance for a short push. Recipient hears heroic music; enemies hear footsteps. One dose; a new dose brews per week.
 1088. Battle-Car, 5.4, Rocket League
-#A supersonic acrobatic rocket car with flip, boost, and demolition manners. Ball not included; walls are load-bearing suggestions.
+#A supersonic acrobatic rocket car with flip, boost, and demolition manners. Ball not included; walls are load-bearing suggestions. Boost refills from pads and pickups; without it, just a fast car.
+1089. Fact or Fiction, 5.6, MTG
+#A misprinted card: rip it to roll four gold tickets, keep two, and your nemesis receives the other two.
+1090. Gifts Given, 5.4, MTG
+#A misprinted card: rip it to gain five silver coupons; your nemesis divides them into two groups, you keep one group and they take the other.
+1091. Cat Costume, 0.4, Generic
+#The lowest-effort cat costume: fuzzy pink cat ears with bells, pink bow collar with a bell, white fluffy tail. Supply your own gloves, boots, and underwear.
 1089. Scent Hound Whistle, 3.5, Generic
 #(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.

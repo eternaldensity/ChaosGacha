@@ -975,7 +975,7 @@
 488. War Dog, 2.2, Dwarf Fortress
 #A trained wardog that hunts and holds the line beside its handler.
 489. Barn Cat, 1.4, Dwarf Fortress
-#Vermin control with whiskers; will adopt you and explode in population.
+#A premier mouser that puts an ordinary Cat to shame: clears vermin tirelessly instead of lounging, thrives on scraps and ill weather that would flatten a house cat, and multiplies into a self-sustaining clowder that adopts you permanently.
 490. Grizzly Bear, 3.2, Dwarf Fortress
 #A war-trained grizzly that mauls sieges on command.
 491. Cuddlefish, 2.8, Subnautica
@@ -1120,3 +1120,5 @@
 #A cryo-drone buddy firing freeze rays and blizzards on request. Loyal, round, and colder than your ex's heart.
 561. The Ball, 4.8, Rocket League
 #A giant soccar ball that follows you everywhere and bounces off everything. Explodes on a timer; the timer is a secret, even from the ball.
+562. Code Geese, 2.5, Generic
+#A pair of geese with expert programming skills. They type exclusively by hunt and peck, loudly, at 3 AM. Code reviews take a while.

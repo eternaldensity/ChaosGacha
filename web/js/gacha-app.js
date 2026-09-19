@@ -407,7 +407,7 @@
         F.exclude = histExcl.concat(results.map(r => r.name));
         const effTier = g ? g.tier : preset;
         F.flat = !!((DATA.tiers.find(t => t.name === effTier) || {}).flat);
-        const rollOnce = () => G.roll(DATA.entries, DATA.tiers, cc, mm, ma, mx, F);
+        const rollOnce = () => G.roll(DATA.entries, DATA.tiers, cc, mm, mx, ma, F);
         let r = rollOnce();
         if (g && g.effect === "advantage") {
           const r2 = rollOnce();

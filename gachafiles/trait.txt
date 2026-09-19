@@ -1400,3 +1400,7 @@
 #Perform well and you catch fire: burning bright, hitting harder, and announcing yourself to everyone. Slumps extinguish you; the flame remembers.
 700. What a Save!, 5.0, Rocket League
 #Reflexively celebrate every rescue, block, and near-miss with genuine joy. Allies find it inspiring; opponents find it personal.
+701. Power of the Bear, 4.6, Generic
+#While wearing a cheap costume you have supersoldier strength and toughness, but cannot make any visually impressive moves. You're not incompetent, just unimpressive as you walk up to your foes and knock them down.
+702. Mysterious Lover, 3.4, Generic
+#On a weekly basis you receive an extravagant thoughtful gift or a singing telegram. It might be from your landlord.
