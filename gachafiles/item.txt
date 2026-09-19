@@ -1946,8 +1946,8 @@
 #A mystic staff that cracks the ground with golden force and pries open sealed things.
 974. TemPad, 5.8, MCU
 #A TVA time-pad that opens Time Doors to anywhen; pruning charges not included.
-975. TVA Pruning Baton, 4.6, MCU
-#A TVA baton that prunes branched timelines, variant clutter, and people, all with one touch.
+975. Time Stick, 4.6, MCU
+#A TVA Time Stick that alters a target's flow of time, or disintegrates organic and inorganic targets alike, sending them to the Void. Touch range only.
 976. Reset Charge, 5.2, MCU
 #A timeline-nuking charge that prunes a whole branched reality back to the Sacred Timeline.
 977. Yaka Arrow, 4.4, MCU

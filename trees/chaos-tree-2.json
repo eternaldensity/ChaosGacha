@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 2,
-  "generated_at": "2026-09-19T06:21:44Z",
+  "generated_at": "2026-09-19T07:42:07Z",
   "params": {
     "files": [
       "skill",
@@ -43586,11 +43586,11 @@
       "id": 2541,
       "file": "item",
       "number": 975,
-      "name": "TVA Pruning Baton",
+      "name": "Time Stick",
       "rarity": 4.6,
       "source": "MCU",
       "tag": "both",
-      "description": "A TVA baton that prunes branched timelines, variant clutter, and people, all with one touch.",
+      "description": "A TVA Time Stick that alters a target's flow of time, or disintegrates organic and inorganic targets alike, sending them to the Void. Touch range only.",
       "meta": [],
       "pos": [
         5.060526,
