@@ -698,3 +698,7 @@
 #Ride along walls while moving, chaining surfaces without losing speed. Looking cool is mandatory; falling is educational.
 350. Speed Flip, 5.1, Rocket League
 #The fastest possible kickoff launch: flip-cancel into supersonic speed off the line. Beats everyone slower; ties everyone else doing it.
+351. Chem-Baron Negotiation, 5.2, League of Legends / Arcane
+#Conduct any negotiation from unassailable calm without raising your voice: read rooms, make offers that refuse themselves, and keep underlings loyal through fear dressed as respect.
+352. Madcap Gadgeteering, 5.3, League of Legends / Arcane
+#Build devastating weapons from scrap that work despite violating several design principles and most safety regulations. Brilliant, usually; explosive, occasionally, including the successes.

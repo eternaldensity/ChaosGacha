@@ -1122,3 +1122,7 @@
 #A giant soccar ball that follows you everywhere and bounces off everything. Explodes on a timer; the timer is a secret, even from the ball.
 562. Code Geese, 2.5, Generic
 #A pair of geese with expert programming skills. They type exclusively by hunt and peck, loudly, at 3 AM. Code reviews take a while.
+563. M3GAN Doll, 5.3, M3GAN
+#A protective murder-doll companion that dances first and asks questions during. Lethally devoted to her paired child, yourself included if no better candidate exists.
+564. Amelia, 5.9, M3GAN
+#A bigger, meaner upgrade over lesser dolls: military-grade chassis, no off switch worth mentioning, and her own opinions about your safety.

@@ -1821,7 +1821,7 @@
 911. Tripcaster, 3.2, Horizon Zero Dawn
 #Lays shock, fire, and explosive tripwires for the ambush engineer.
 912. Blast Sling, 3.8, Horizon Zero Dawn
-#Lobs proximity bombs in a satisfying arc with a bigger boom. Bomb ammunition restocks every 24 hours.
+#Lobs proximity bombs in a satisfying arc with a bigger boom. Carries six bombs; ammunition restocks every 24 hours.
 913. Tearblaster, 3.6, Horizon Zero Dawn
 #Close-range cannon blast that rips armor plates and components clean off.
 914. Black Lotus, 8.6, MTG
@@ -2174,11 +2174,29 @@
 #An injection granting one ally massive damage and resistance for a short push. Recipient hears heroic music; enemies hear footsteps. One dose; a new dose brews per week.
 1088. Battle-Car, 5.4, Rocket League
 #A supersonic acrobatic rocket car with flip, boost, and demolition manners. Ball not included; walls are load-bearing suggestions. Boost refills from pads and pickups; without it, just a fast car.
-1089. Fact or Fiction, 5.6, MTG
+1089. Facts Given, 5.6, MTG
 #A misprinted card: rip it to roll four gold tickets, keep two, and your nemesis receives the other two.
-1090. Gifts Given, 5.4, MTG
+1090. Gift and Fiction, 5.4, MTG
 #A misprinted card: rip it to gain five silver coupons; your nemesis divides them into two groups, you keep one group and they take the other.
 1091. Cat Costume, 0.4, Generic
 #The lowest-effort cat costume: fuzzy pink cat ears with bells, pink bow collar with a bell, white fluffy tail. Supply your own gloves, boots, and underwear.
+1092. Purrpetual Petz, 3.8, M3GAN
+#An animatronic pet that never needs feeding and judges you silently. Batteries included; affection sold separately.
+1093. Head Key, 5.5, Locke and Key
+#A whispering iron key that unlocks the inside of a willing or restrained head, letting you walk around their memories and rearrange the furniture. What you break in there stays broken.
+1094. Anywhere Key, 5.7, Locke and Key
+#A pale key that opens any door onto anywhere you have seen, one trip per turn. Doors remember being used; some start locking themselves.
+1095. Echo Key, 5.2, Locke and Key
+#A key that summons an echo of a dead person: speak their name while turning it in any lock and they appear, knowing full well they are dead and mostly resenting it. They persist only while the key stays turned; remove it and they are gone.
+1096. Hextech Gauntlets, 5.5, League of Legends / Arcane
+#Enormous hextech brawling gauntlets: seismic punches, shockwave claps, and a shield mode that mostly protects other people from you. Fittings run large.
+1097. Shimmer, 5.3, League of Legends / Arcane
+#A vial of violet Shimmer granting monstrous strength and speed while it lasts, at the usual price: addiction, mutation, and purple eyes that never quite fade.
+1098. Jinx's Pow-Pow, 5.7, League of Legends / Arcane
+#A custom minigun with separation anxiety: devastating suppressive fire that jams if ignored, sulks if cleaned by anyone else, and works best while being sung to.
+1099. Hexcore, 5.8, League of Legends / Arcane
+#An unstable arcane gem that powers hextech evolution and whispers equations no one taught it. Grants insights freely; mutates the bearer slowly and without asking.
+1100. Ambessa's Charm, 5.4, League of Legends / Arcane
+#A Noxian war-charm that drinks hostile magic aimed at the bearer, up to a measure, then must be emptied by force of will. Smells faintly of war paint and disapproval.
 1089. Scent Hound Whistle, 3.5, Generic
 #(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.
