@@ -1719,17 +1719,17 @@
 860. Reshuffle, 5.5, Generic
 #(Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.
 861. Pal Sphere, 1.6, Palworld
-#The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out.
+#The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 862. Mega Sphere, 2.4, Palworld
-#Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts.
+#Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 863. Giga Sphere, 3.2, Palworld
-#High-grade catching sphere that holds even sturdy catches that would shred lesser spheres.
+#High-grade catching sphere that holds even sturdy catches that would shred lesser spheres Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 864. Hyper Sphere, 4.0, Palworld
-#Advanced catching sphere for powerful catches; rarely fails on anything short of a boss.
+#Advanced catching sphere for powerful catches; rarely fails on anything short of a boss Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 865. Ultra Sphere, 4.8, Palworld
-#Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise.
+#Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 866. Legendary Sphere, 5.8, Palworld
-#The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside.
+#The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 867. Portable Miner, 2.2, Satisfactory
 #Plop it on any resource node and it mines hands-free into its own little inventory.
 868. Chainsaw, 2.4, Satisfactory

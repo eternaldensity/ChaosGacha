@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 3,
-  "generated_at": "2026-09-19T03:37:29Z",
+  "generated_at": "2026-09-19T03:39:52Z",
   "params": {
     "files": [
       "skill",
@@ -41653,7 +41653,7 @@
       "rarity": 1.6,
       "source": "Palworld",
       "tag": "both",
-      "description": "The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out.",
+      "description": "The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         2.279951,
@@ -41670,7 +41670,7 @@
       "rarity": 2.4,
       "source": "Palworld",
       "tag": "both",
-      "description": "Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts.",
+      "description": "Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         -3.035404,
@@ -41687,7 +41687,7 @@
       "rarity": 3.2,
       "source": "Palworld",
       "tag": "both",
-      "description": "High-grade catching sphere that holds even sturdy catches that would shred lesser spheres.",
+      "description": "High-grade catching sphere that holds even sturdy catches that would shred lesser spheres Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         -3.575092,
@@ -41704,7 +41704,7 @@
       "rarity": 4.0,
       "source": "Palworld",
       "tag": "both",
-      "description": "Advanced catching sphere for powerful catches; rarely fails on anything short of a boss.",
+      "description": "Advanced catching sphere for powerful catches; rarely fails on anything short of a boss Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         -2.468407,
@@ -41721,7 +41721,7 @@
       "rarity": 4.8,
       "source": "Palworld",
       "tag": "both",
-      "description": "Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise.",
+      "description": "Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         -4.342221,
@@ -41738,7 +41738,7 @@
       "rarity": 5.8,
       "source": "Palworld",
       "tag": "both",
-      "description": "The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside.",
+      "description": "The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         1.986685,
