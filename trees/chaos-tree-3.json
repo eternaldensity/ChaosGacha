@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 3,
-  "generated_at": "2026-09-19T03:18:56Z",
+  "generated_at": "2026-09-19T03:37:29Z",
   "params": {
     "files": [
       "skill",
@@ -41653,7 +41653,7 @@
       "rarity": 1.6,
       "source": "Palworld",
       "tag": "both",
-      "description": "The basic sphere for catching weakened Pals; it shakes three times, then clicks.",
+      "description": "The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out.",
       "meta": [],
       "pos": [
         2.279951,
@@ -41670,7 +41670,7 @@
       "rarity": 2.4,
       "source": "Palworld",
       "tag": "both",
-      "description": "Improved catch rate over the basic sphere, for Pals past the early zones.",
+      "description": "Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts.",
       "meta": [],
       "pos": [
         -3.035404,
@@ -41687,7 +41687,7 @@
       "rarity": 3.2,
       "source": "Palworld",
       "tag": "both",
-      "description": "High-grade sphere that holds even sturdy mid-game Pals.",
+      "description": "High-grade catching sphere that holds even sturdy catches that would shred lesser spheres.",
       "meta": [],
       "pos": [
         -3.575092,
@@ -41704,7 +41704,7 @@
       "rarity": 4.0,
       "source": "Palworld",
       "tag": "both",
-      "description": "Advanced sphere for powerful Pals; rarely fails on anything but bosses.",
+      "description": "Advanced catching sphere for powerful catches; rarely fails on anything short of a boss.",
       "meta": [],
       "pos": [
         -2.468407,
@@ -41721,7 +41721,7 @@
       "rarity": 4.8,
       "source": "Palworld",
       "tag": "both",
-      "description": "Near-top-tier sphere with a catch rate worthy of endgame hunts.",
+      "description": "Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise.",
       "meta": [],
       "pos": [
         -4.342221,
@@ -41738,7 +41738,7 @@
       "rarity": 5.8,
       "source": "Palworld",
       "tag": "both",
-      "description": "The ultimate sphere, forged for Legends; even a Jetragon can end up inside.",
+      "description": "The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside.",
       "meta": [],
       "pos": [
         1.986685,
@@ -42860,7 +42860,7 @@
       "rarity": 5.0,
       "source": "Genome Guardian",
       "tag": "both",
-      "description": "Blast Shotgun crossed with more shotgun: the all-powerful flak answer to everything.",
+      "description": "Blast Shotgun crossed with more shotgun: a deployable turret and the all-powerful flak answer to microbe waves and swarms. Against anything else, still a superb flak cannon.",
       "meta": [],
       "pos": [
         4.961784,
@@ -42877,7 +42877,7 @@
       "rarity": 4.2,
       "source": "Genome Guardian",
       "tag": "both",
-      "description": "Bomb plus shotgun: spread explosives that clear whole microbe waves.",
+      "description": "Bomb plus shotgun: a deployable turret spraying spread explosives that clear whole microbe waves. Against anything else, still a superb shotgun.",
       "meta": [],
       "pos": [
         3.83167,
@@ -42894,7 +42894,7 @@
       "rarity": 3.8,
       "source": "Genome Guardian",
       "tag": "both",
-      "description": "A gambling turret whose wild random shots somehow always pay off.",
+      "description": "A deployable gambling turret whose wild random shots somehow always pay off, built for microbe waves but happy to shoot anything.",
       "meta": [],
       "pos": [
         0.810496,
@@ -70000,7 +70000,7 @@
       "rarity": 3.2,
       "source": "Genome Guardian",
       "tag": "both",
-      "description": "Spray rapidfire nucleotide shots; pair it with another weapon to discover hybrid bioweapons.",
+      "description": "Deploy a floating gun-turret spraying rapidfire nucleotide shots, built to mulch microbe waves and swarms; pair it with another weapon to discover hybrid bioweapons. Against non-microbial foes it is merely a good gun.",
       "meta": [],
       "pos": [
         -0.513946,
@@ -70017,7 +70017,7 @@
       "rarity": 3.4,
       "source": "Genome Guardian",
       "tag": "both",
-      "description": "Fire precise nucleotide shots that strike weak points; pair it to discover hybrid bioweapons.",
+      "description": "Deploy a floating gun-turret firing precise nucleotide shots that strike weak points and burrow into swarms; pair it to discover hybrid bioweapons. Against non-microbial foes it is merely a good gun.",
       "meta": [],
       "pos": [
         -0.340579,
@@ -70034,7 +70034,7 @@
       "rarity": 3.6,
       "source": "Genome Guardian",
       "tag": "both",
-      "description": "Unleash wide-spread nucleotide shots that blanket microbe waves; pair it to discover hybrid bioweapons.",
+      "description": "Deploy a floating gun-turret unleashing wide-spread nucleotide shots that blanket microbe waves; pair it to discover hybrid bioweapons. Against non-microbial foes it is merely a good gun.",
       "meta": [],
       "pos": [
         -3.108574,
@@ -70051,7 +70051,7 @@
       "rarity": 4.0,
       "source": "Genome Guardian",
       "tag": "both",
-      "description": "Detonate explosive nucleotide shots that clear clustered microbes; pair it to discover hybrid bioweapons.",
+      "description": "Deploy a floating gun-turret detonating explosive nucleotide shots that clear clustered microbes; pair it to discover hybrid bioweapons. Against non-microbial foes it is merely a good gun.",
       "meta": [],
       "pos": [
         0.366496,

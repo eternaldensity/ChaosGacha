@@ -1719,17 +1719,17 @@
 860. Reshuffle, 5.5, Generic
 #(Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.
 861. Pal Sphere, 1.6, Palworld
-#The basic sphere for catching weakened Pals; it shakes three times, then clicks.
+#The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out.
 862. Mega Sphere, 2.4, Palworld
-#Improved catch rate over the basic sphere, for Pals past the early zones.
+#Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts.
 863. Giga Sphere, 3.2, Palworld
-#High-grade sphere that holds even sturdy mid-game Pals.
+#High-grade catching sphere that holds even sturdy catches that would shred lesser spheres.
 864. Hyper Sphere, 4.0, Palworld
-#Advanced sphere for powerful Pals; rarely fails on anything but bosses.
+#Advanced catching sphere for powerful catches; rarely fails on anything short of a boss.
 865. Ultra Sphere, 4.8, Palworld
-#Near-top-tier sphere with a catch rate worthy of endgame hunts.
+#Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise.
 866. Legendary Sphere, 5.8, Palworld
-#The ultimate sphere, forged for Legends; even a Jetragon can end up inside.
+#The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside.
 867. Portable Miner, 2.2, Satisfactory
 #Plop it on any resource node and it mines hands-free into its own little inventory.
 868. Chainsaw, 2.4, Satisfactory
@@ -1861,11 +1861,11 @@
 931. Slime Key, 3.4, Slime Rancher
 #A statue-shaped key that opens Slime Gates into new ranch zones.
 932. Flak Cannon, 5.0, Genome Guardian
-#Blast Shotgun crossed with more shotgun: the all-powerful flak answer to everything.
+#Blast Shotgun crossed with more shotgun: a deployable turret and the all-powerful flak answer to microbe waves and swarms. Against anything else, still a superb flak cannon.
 933. Blast Shotgun, 4.2, Genome Guardian
-#Bomb plus shotgun: spread explosives that clear whole microbe waves.
+#Bomb plus shotgun: a deployable turret spraying spread explosives that clear whole microbe waves. Against anything else, still a superb shotgun.
 934. Dice Turret, 3.8, Genome Guardian
-#A gambling turret whose wild random shots somehow always pay off.
+#A deployable gambling turret whose wild random shots somehow always pay off, built for microbe waves but happy to shoot anything.
 935. Idol of Rebirth, 4.6, Divinity Original Sin
 #A full idol that automatically resurrects its bearer once, then crumbles.
 936. Resurrection Scroll, 3.0, Divinity Original Sin

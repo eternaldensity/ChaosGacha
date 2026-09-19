@@ -2873,13 +2873,13 @@
 1440. Seeker Subroutine, 3.4, Tron 2.0
 #Launch homing energy seekers from your identity disc that hunt targets around corners.
 1441. Adenine Volley, 3.2, Genome Guardian
-#Spray rapidfire nucleotide shots; pair it with another weapon to discover hybrid bioweapons.
+#Deploy a floating gun-turret spraying rapidfire nucleotide shots, built to mulch microbe waves and swarms; pair it with another weapon to discover hybrid bioweapons. Against non-microbial foes it is merely a good gun.
 1442. Cytosine Precision, 3.4, Genome Guardian
-#Fire precise nucleotide shots that strike weak points; pair it to discover hybrid bioweapons.
+#Deploy a floating gun-turret firing precise nucleotide shots that strike weak points and burrow into swarms; pair it to discover hybrid bioweapons. Against non-microbial foes it is merely a good gun.
 1443. Guanine Spread, 3.6, Genome Guardian
-#Unleash wide-spread nucleotide shots that blanket microbe waves; pair it to discover hybrid bioweapons.
+#Deploy a floating gun-turret unleashing wide-spread nucleotide shots that blanket microbe waves; pair it to discover hybrid bioweapons. Against non-microbial foes it is merely a good gun.
 1444. Thymine Detonation, 4.0, Genome Guardian
-#Detonate explosive nucleotide shots that clear clustered microbes; pair it to discover hybrid bioweapons.
+#Deploy a floating gun-turret detonating explosive nucleotide shots that clear clustered microbes; pair it to discover hybrid bioweapons. Against non-microbial foes it is merely a good gun.
 1445. Summon Tsunami, 5.4, Cities Skylines
 #Call down a city-devouring tsunami wave, then watch the flooded districts from your disaster overview.
 1446. Firewall, 3.2, Tron 2.0
