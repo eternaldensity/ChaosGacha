@@ -11,6 +11,38 @@
   const esc = s => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+  // Hosts whose URLs become clickable links (new tab, opener detached).
+  // Anything else stays inert text, so arbitrary sites never auto-link.
+  const LINK_SUFFIXES = [".fandom.com", ".fextralife.com"];
+  const LINK_HOSTS = ["dnd5e.wikidot.com", "heroes.thelazy.net",
+    "fallenaces.wiki.gg"];
+  // Escape HTML, then linkify whitelisted http(s) URLs. Unbalanced
+  // trailing ")" (MediaWiki titles contain balanced ones) and trailing
+  // punctuation are left as plain text so links resolve.
+  function linkify(text) {
+    return String(text == null ? "" : text)
+      .split(/(https?:\/\/[^\s<>"'\]]+)/g).map(part => {
+        if (!/^https?:\/\//.test(part)) return esc(part);
+        let url = part, trail = "";
+        while (url.endsWith(")") &&
+               (url.match(/\(/g) || []).length < (url.match(/\)/g) || []).length) {
+          url = url.slice(0, -1);
+          trail = ")" + trail;
+        }
+        const punct = url.match(/[.,;:!?]+$/);
+        if (punct) {
+          url = url.slice(0, -punct[0].length);
+          trail = punct[0] + trail;
+        }
+        let host = "";
+        try { host = new URL(url).hostname.toLowerCase(); }
+        catch (e) { return esc(part); }
+        const ok = LINK_HOSTS.includes(host) ||
+          LINK_SUFFIXES.some(s => host === s.slice(1) || host.endsWith(s));
+        if (!ok || !url) return esc(part);
+        return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(url)}</a>${esc(trail)}`;
+      }).join("");
+  }
   // Whole-number rarities display with .0 for consistency.
   const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
 
@@ -970,7 +1002,7 @@
       `<span class="pill">${esc(nd.source || "—")}</span></div>` +
       `<div class="small muted">${esc(cls.name)} · rarity ${nd.rarity} · cost ${unl ? "—" : E.fmt(Math.pow(10, nd.rarity))}` +
       (extra || "") + `</div>` +
-      (nd.description ? `<p class="small">${esc(nd.description)}</p>` : "");
+      (nd.description ? `<p class="small">${linkify(nd.description)}</p>` : "");
   }
   // First held jump/choice ticket that can reach nid, with the launch node
   // and pick the engine will accept (mirrors unlockJump's ticket choice).

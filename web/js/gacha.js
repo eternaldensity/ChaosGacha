@@ -24,7 +24,9 @@ window.ChaosGacha = (function () {
   }
 
   function cleanDesc(d) {
-    return String(d || "").replace(/#/g, "")
+    // Strip leading # markers and (Tag) tokens only; interior characters
+    // (including # inside URLs) are content and must survive.
+    return String(d || "").replace(/^#+/, "")
       .replace(/\((Nsfw|Tech|Character|Gacha|Noncon)\)/g, "").trim();
   }
 

@@ -683,7 +683,7 @@
 342. Grimoire of Izalith, 4.6, Dark Souls
 #(Tome) A grimoire teaching the Pyromancies of the Great Swamp and Izalith. Spell List: https://darksouls.fandom.com/wiki/Pyromancy_(Dark_Souls)
 343. Tome of the Way of the White, 3.6, Dark Souls
-#(Tome) Rhea of Thorolund's tome teaching all her Way of the White miracles. | Spell List: https://darksouls.fandom.com/wiki/Rhea_of_Thorolund#Miracles
+#(Tome) Rhea of Thorolund's tome teaching all her Way of the White miracles. | Spell List: https://darksouls.fandom.com/wiki/Rhea_of_Thorolund#Wares
 344. Tome of Orbeck, 4.7, Dark Souls
 #(Tome) Orbeck of Vinheim's tome of research and anecdotes teaching all his spells. | Spell List: https://darksouls.fandom.com/wiki/Orbeck_of_Vinheim#Wares
 345. Rites of the Dragon Communion, 5.4, Elden Ring

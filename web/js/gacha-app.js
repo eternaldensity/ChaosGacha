@@ -7,6 +7,38 @@
   const $ = id => document.getElementById(id);
   const esc = s => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  // Hosts whose URLs become clickable links (new tab, opener detached).
+  // Anything else stays inert text, so arbitrary sites never auto-link.
+  const LINK_SUFFIXES = [".fandom.com", ".fextralife.com"];
+  const LINK_HOSTS = ["dnd5e.wikidot.com", "heroes.thelazy.net",
+    "fallenaces.wiki.gg"];
+  // Escape HTML, then linkify whitelisted http(s) URLs. Unbalanced
+  // trailing ")" (MediaWiki titles contain balanced ones) and trailing
+  // punctuation are left as plain text so links resolve.
+  function linkify(text) {
+    return String(text == null ? "" : text)
+      .split(/(https?:\/\/[^\s<>"'\]]+)/g).map(part => {
+        if (!/^https?:\/\//.test(part)) return esc(part);
+        let url = part, trail = "";
+        while (url.endsWith(")") &&
+               (url.match(/\(/g) || []).length < (url.match(/\)/g) || []).length) {
+          url = url.slice(0, -1);
+          trail = ")" + trail;
+        }
+        const punct = url.match(/[.,;:!?]+$/);
+        if (punct) {
+          url = url.slice(0, -punct[0].length);
+          trail = punct[0] + trail;
+        }
+        let host = "";
+        try { host = new URL(url).hostname.toLowerCase(); }
+        catch (e) { return esc(part); }
+        const ok = LINK_HOSTS.includes(host) ||
+          LINK_SUFFIXES.some(s => host === s.slice(1) || host.endsWith(s));
+        if (!ok || !url) return esc(part);
+        return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(url)}</a>${esc(trail)}`;
+      }).join("");
+  }
   // Whole-number rarities display with .0 so the wheel reads consistently.
   const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
 
@@ -223,7 +255,7 @@
       `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${fmtR(r.rarity)}</div>` +
       `<div class="small muted">${r.odds.toFixed(2)}% odds</div>` +
       (r.d20 != null ? `<div class="small muted">🎲 Gambler d20 → ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</div>` : "") +
-      (r.description ? `<p>${esc(r.description)}</p>` : "");
+      (r.description ? `<p>${linkify(r.description)}</p>` : "");
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
