@@ -2178,7 +2178,7 @@
 #A misprinted card: rip it to roll four gold tickets, keep two, and your nemesis receives the other two.
 1090. Gift and Fiction, 5.4, MTG
 #A misprinted card: rip it to gain five silver coupons; your nemesis divides them into two groups, you keep one group and they take the other.
-1091. Cat Costume, 0.4, Generic
+1091. Cat Costume, 0.4, Baby Cat
 #The lowest-effort cat costume: fuzzy pink cat ears with bells, pink bow collar with a bell, white fluffy tail. Supply your own gloves, boots, and underwear.
 1092. Purrpetual Petz, 3.8, M3GAN
 #An animatronic pet that never needs feeding and judges you silently. Batteries included; affection sold separately.
