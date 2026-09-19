@@ -1126,3 +1126,5 @@
 #A protective murder-doll companion that dances first and asks questions during. Lethally devoted to her paired child, yourself included if no better candidate exists.
 564. Amelia, 5.9, M3GAN
 #A bigger, meaner upgrade over lesser dolls: military-grade chassis, no off switch worth mentioning, and her own opinions about your safety.
+565. Roz, 4.6, The Wild Robot
+#A ROZZUM helper robot gone feral: gentle, hyper-competent caretaker of both machines and wild things, fluent in every animal language through patient listening. Accidentally adopts orphans.
