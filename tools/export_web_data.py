@@ -62,6 +62,14 @@ CLASSES = [
 
 CATEGORIES = ["ability", "item", "skill", "trait", "familiar"]
 
+# Curses with mature/sexual content. curses.txt is verbatim from the original
+# site and (unlike the gacha entries) carries no content flags, so this list is
+# maintained by hand and drives the web app's "Hide NSFW" filter.
+NSFW_CURSES = {
+    "Infertile", "Curse of Gray", "1/2", "Perverted Aura",
+    "Masochist", "Exhibitionist", "Lust",
+}
+
 
 def flag_map():
     """Map (file, number) -> token set by re-scanning the raw data files.
@@ -120,11 +128,14 @@ def export_curses():
     for e in out:
         desc = [d for d in e["desc"] if not d.startswith("|Resolve:")]
         res = [d for d in e["desc"] if d.startswith("|Resolve:")]
-        compact.append({
+        item = {
             "label": e["label"], "sev": e["sev"],
             "desc": " ".join(desc),
             "resolve": res[0].replace("|Resolve:", "").strip(" |") if res else None,
-        })
+        }
+        if e["label"] in NSFW_CURSES:
+            item["nsfw"] = True
+        compact.append(item)
     dest = os.path.join(ROOT, "web", "data", "curses.js")
     with open(dest, "w", encoding="utf-8") as fh:
         fh.write("window.CHAOS_CURSES = ")

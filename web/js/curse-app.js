@@ -37,6 +37,8 @@
   }
   let DB = load();
   if (DB.settings.reward === undefined) DB.settings.reward = true;
+  if (DB.settings.spin === undefined) DB.settings.spin = "normal";
+  if (DB.settings.nsfw === undefined) DB.settings.nsfw = true; // safe by default
   const uid = () => Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
   let lastResult = null;
   let spinning = false;
@@ -59,15 +61,41 @@
     return [{ tier: "platinum", cat }];
   }
 
-  function pickCurse(roll, rnd) {
+  function nsfwHidden() { return DB.settings.nsfw !== false; }
+  function cursePool() {
+    return nsfwHidden() ? CURSES.filter(c => !c.nsfw) : CURSES;
+  }
+
+  function pickCurse(roll, rnd, list) {
     rnd = rnd || Math.random;
-    let cands = CURSES.filter(c => c.sev === roll);
+    const src = (list && list.length) ? list : CURSES;
+    let cands = src.filter(c => c.sev === roll);
     if (!cands.length) {
       let best = Infinity;
-      for (const c of CURSES) best = Math.min(best, Math.abs(c.sev - roll));
-      cands = CURSES.filter(c => Math.abs(c.sev - roll) === best);
+      for (const c of src) best = Math.min(best, Math.abs(c.sev - roll));
+      cands = src.filter(c => Math.abs(c.sev - roll) === best);
     }
     return cands[Math.floor(rnd() * cands.length)];
+  }
+
+  // Decoys for the spin strip: variety only, never the winner and never the
+  // same curse twice in a row (or within the last few rows). Mirrors the
+  // gacha strip: `count` rows before the winner plus TRAIL_ROWS past it so
+  // the end of the list never scrolls into view.
+  const TRAIL_ROWS = 8;
+  function buildStrip(winner, count, list) {
+    const pool = list.filter(c => c.label !== winner.label);
+    const total = count + TRAIL_ROWS;
+    const decoys = [];
+    let guard = 0;
+    while (decoys.length < total && guard++ < total * 40 && pool.length) {
+      const c = pool[Math.floor(Math.random() * pool.length)];
+      if (decoys.slice(-3).some(it => it.label === c.label)) continue;
+      decoys.push(c);
+    }
+    while (decoys.length < total) decoys.push(pool[decoys.length % pool.length] || winner);
+    decoys.splice(count, 0, winner);
+    return decoys;
   }
 
   function rewardsOn() { return DB.settings.reward !== false; }
@@ -91,17 +119,22 @@
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
-  const SPIN = { dur: 2400, n: 26 };
+  const SPIN_SPEEDS = {
+    fast: { dur: 1200, n: 16 },
+    normal: { dur: 2600, n: 30 },
+    slow: { dur: 4200, n: 46 },
+    slower: { dur: 6200, n: 64 }
+  };
   function spin() {
     if (spinning || !CURSES.length) return;
+    const list = cursePool();
+    if (!list.length) { toast("No curses match the current filter.", true); return; }
+    const speed = (DB.settings && DB.settings.spin) || "normal";
+    const opt = SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal;
     const roll = 1 + Math.floor(Math.random() * 20);
     const tier = tierOf(roll);
-    const winner = pickCurse(roll);
-    const items = [];
-    for (let i = 0; i < SPIN.n; i++) {
-      items.push(CURSES[Math.floor(Math.random() * CURSES.length)]);
-    }
-    items.push(winner);
+    const winner = pickCurse(roll, null, list);
+    const items = speed === "off" ? null : buildStrip(winner, opt.n, list);
     const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const r = {
       id: uid(), at: Date.now(), roll, tier,
@@ -111,11 +144,11 @@
     DB.history.unshift(r);
     if (DB.history.length > 200) DB.history.length = 200;
     save(); renderHistory();
-    if (reduced || !window.requestAnimationFrame) { showResult(r); return; }
-    spinReel(r, items);
+    if (speed === "off" || reduced || !window.requestAnimationFrame) { showResult(r); return; }
+    spinReel(r, items, opt);
   }
 
-  function spinReel(r, items) {
+  function spinReel(r, items, opt) {
     const reel = $("reel"), inner = $("reelInner");
     inner.innerHTML = "";
     for (const it of items) {
@@ -132,14 +165,14 @@
     const rows = Array.from(inner.children);
     const rowh = rows.length ? rows[0].offsetHeight || 54 : 54;
     const viewH = reel.clientHeight || rowh * 5;
-    const winIdx = items.length - 1;
+    const winIdx = opt.n;
     const total = Math.max(0, winIdx * rowh + rowh / 2 - viewH / 2);
     const t0 = performance.now();
     let done = false;
     reel.onclick = () => { done = true; };
     function frame(now) {
-      if (done) now = t0 + SPIN.dur;
-      const t = Math.min(1, (now - t0) / SPIN.dur);
+      if (done) now = t0 + opt.dur;
+      const t = Math.min(1, (now - t0) / opt.dur);
       const p = 1 - Math.pow(1 - t, 4);
       const off = total * p;
       inner.style.transform = `translateY(${-off}px)`;
@@ -171,6 +204,18 @@
     updateRewardUI();
   });
 
+  $("spinSpeed").value = DB.settings.spin || "normal";
+  $("spinSpeed").addEventListener("change", () => {
+    DB.settings.spin = $("spinSpeed").value;
+    save();
+  });
+
+  $("fNsfw").checked = nsfwHidden();
+  $("fNsfw").addEventListener("change", () => {
+    DB.settings.nsfw = $("fNsfw").checked;
+    save();
+  });
+
   $("rewardBtn").addEventListener("click", () => {
     if (!lastResult) return;
     let gdb;
@@ -186,6 +231,31 @@
     }
     try { localStorage.setItem(GLS, JSON.stringify(gdb)); } catch (e) {}
     toast(`Sent ${lastResult.reward.length} ticket${lastResult.reward.length === 1 ? "" : "s"} to your wallet.`);
+  });
+
+  function resultText(r) {
+    return `🎡 ${r.label} (${r.tier}, d20 ${r.roll}, severity ${r.sev})` +
+      (r.desc ? `\n${r.desc}` : "") +
+      (r.resolve ? `\nResolve: ${r.resolve}` : "") +
+      (r.reward && r.reward.length ? `\nReward: ${r.reward.map(t => `${t.tier} ${t.cat}`).join(" + ")}` : "");
+  }
+
+  $("btnCopy").addEventListener("click", async () => {
+    if (!lastResult) return;
+    const t = resultText(lastResult);
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(t);
+      } else {
+        const ta = document.createElement("textarea");
+        ta.value = t;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      toast("Copied!");
+    } catch (e) { toast("Copy failed.", true); }
   });
 
   function renderHistory() {
@@ -215,8 +285,8 @@
   });
 
   window.__curse = {
-    tierOf, pickCurse, rewardFor,
-    resultText: r => `🎡 ${r.label} (${r.tier}, d20 ${r.roll})`
+    tierOf, pickCurse, rewardFor, resultText,
+    nsfwHidden, cursePool
   };
   renderHistory();
 })();
