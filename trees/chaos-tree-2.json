@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 2,
-  "generated_at": "2026-09-19T11:38:58Z",
+  "generated_at": "2026-09-21T01:57:43Z",
   "params": {
     "files": [
       "skill",
@@ -26979,7 +26979,7 @@
       "rarity": 0.3,
       "source": "StarCraft",
       "tag": "both",
-      "description": "Builds slowly and flees loudly at the first sign of trouble. Excellent alarm system.",
+      "description": "A pudgy terran worker: mines resources and builds, repairs, or upgrades structures and gear, if slowly. Flees loudly at the first sign of trouble, which makes it an excellent alarm system.",
       "meta": [],
       "pos": [
         -1.242283,
@@ -27132,7 +27132,7 @@
       "rarity": 0.3,
       "source": "Halo",
       "tag": "both",
-      "description": "Naps through briefings and wakes screaming at nothing. Needs a nap schedule posted visibly.",
+      "description": "A squat, methane-breathing Unggoy in a respirator mask; not remotely human. Naps through briefings, wakes screaming at nothing, and needs a visible nap schedule (plus a methane feed to breathe).",
       "meta": [],
       "pos": [
         -0.679523,
@@ -41670,7 +41670,7 @@
       "rarity": 1.6,
       "source": "Palworld",
       "tag": "both",
-      "description": "The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
+      "description": "The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out. Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         -2.890053,
@@ -41687,7 +41687,7 @@
       "rarity": 2.4,
       "source": "Palworld",
       "tag": "both",
-      "description": "Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
+      "description": "Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts. Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         2.590086,
@@ -41704,7 +41704,7 @@
       "rarity": 3.2,
       "source": "Palworld",
       "tag": "both",
-      "description": "High-grade catching sphere that holds even sturdy catches that would shred lesser spheres Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
+      "description": "High-grade catching sphere that holds even sturdy catches that would shred lesser spheres. Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         -1.731562,
@@ -41721,7 +41721,7 @@
       "rarity": 4.0,
       "source": "Palworld",
       "tag": "both",
-      "description": "Advanced catching sphere for powerful catches; rarely fails on anything short of a boss Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
+      "description": "Advanced catching sphere for powerful catches; rarely fails on anything short of a boss. Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         2.952636,
@@ -41738,7 +41738,7 @@
       "rarity": 4.8,
       "source": "Palworld",
       "tag": "both",
-      "description": "Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
+      "description": "Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise. Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         -2.670838,
@@ -41755,7 +41755,7 @@
       "rarity": 5.8,
       "source": "Palworld",
       "tag": "both",
-      "description": "The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
+      "description": "The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside. Consumed on throw, hit or miss; a replacement condenses every 24 hours.",
       "meta": [],
       "pos": [
         4.243065,
@@ -42979,7 +42979,7 @@
       "rarity": 4.0,
       "source": "Tron 2.0",
       "tag": "both",
-      "description": "A program's everything on a glowing disc: memory, weapon, and backup, worn on the back.",
+      "description": "A glowing identity disc worn on the back: memory, weapon, and backup in one. Grants disc abilities — a returning energy throw, plus disc subroutines like Seeker or Firewall — and stores a backup that can restore you if you're derezzed. It doesn't make you a program, and the backup restores you rather than cloning an independent copy.",
       "meta": [],
       "pos": [
         0.83804,
@@ -50097,7 +50097,7 @@
       "rarity": 3.2,
       "source": "Generic",
       "tag": "both",
-      "description": "Curse opponents to block sight via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be blinded permanently.",
+      "description": "Curse opponents to block sight via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be blinded permanently.",
       "meta": [],
       "pos": [
         -2.777562,
@@ -50131,7 +50131,7 @@
       "rarity": 2.6,
       "source": "Generic",
       "tag": "both",
-      "description": "Curse opponents to block hearing via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be deafened permanently.",
+      "description": "Curse opponents to block hearing via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be deafened permanently.",
       "meta": [],
       "pos": [
         2.577167,
@@ -50148,7 +50148,7 @@
       "rarity": 3.6,
       "source": "Generic",
       "tag": "both",
-      "description": "Curse opponents to block touch via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be numbed permanently.",
+      "description": "Curse opponents to block touch via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be numbed permanently.",
       "meta": [],
       "pos": [
         3.259733,
@@ -50165,7 +50165,7 @@
       "rarity": 3.0,
       "source": "Generic",
       "tag": "both",
-      "description": "Curse opponents to block speech via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be muted permanently.",
+      "description": "Curse opponents to block speech via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be muted permanently.",
       "meta": [],
       "pos": [
         2.253877,

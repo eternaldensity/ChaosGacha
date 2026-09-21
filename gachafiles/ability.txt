@@ -505,15 +505,15 @@
 253. Shadow Chains, 3.9, Generic
 #Create and control chains woven from your shadow. Snared enemies rapidly lose energy.
 254. Blind, 3.2, Generic
-#Curse opponents to block sight via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be blinded permanently.
+#Curse opponents to block sight via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be blinded permanently.
 255. Grue, 4.0, Worm
 #Create a darkness cloud that blots out the senses of those inside, making perception extremely difficult. Strong targets partially resist.
 256. Deafness, 2.6, Generic
-#Curse opponents to block hearing via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be deafened permanently.
+#Curse opponents to block hearing via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be deafened permanently.
 257. Numbness, 3.6, Generic
-#Curse opponents to block touch via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be numbed permanently.
+#Curse opponents to block touch via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be numbed permanently.
 258. Mute, 3.0, Generic
-#Curse opponents to block speech via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be muted permanently.
+#Curse opponents to block speech via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be muted permanently.
 259. Conjure Shadowbeast, 3.8, Generic
 #Conjure a temporary autonomous shadow familiar. Its power scales with energy spent.
 260. Gate of Nightmares, 5.7, Generic

@@ -1083,7 +1083,7 @@
 542. Peon, 0.3, Warcraft
 #Gathers resources slowly and asks if something needs doing. Something always does.
 543. SCV (cowardly), 0.3, StarCraft
-#Builds slowly and flees loudly at the first sign of trouble. Excellent alarm system.
+#A pudgy terran worker: mines resources and builds, repairs, or upgrades structures and gear, if slowly. Flees loudly at the first sign of trouble, which makes it an excellent alarm system.
 544. Poro, 0.4, League of Legends
 #Round, friendly, and tongue-first. Loves snacks; fears nothing, understands less.
 545. Dodo, 0.3, Ark
@@ -1101,7 +1101,7 @@
 551. Shade, 0.5, Hades
 #A mewling dead soul, faintly green. Company, of a sort.
 552. Grunt (sleeping), 0.3, Halo
-#Naps through briefings and wakes screaming at nothing. Needs a nap schedule posted visibly.
+#A squat, methane-breathing Unggoy in a respirator mask; not remotely human. Naps through briefings, wakes screaming at nothing, and needs a visible nap schedule (plus a methane feed to breathe).
 553. Cylon Raider, 5.2, Battlestar Galactica
 #A biomechanical fighter craft with a rebellious streak, fast, evasive, and fond of its pilot. Resurrects with you if you can afford the facility.
 554. Tachikoma Unit, 5.6, Ghost in the Shell
