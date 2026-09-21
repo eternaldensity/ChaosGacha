@@ -597,6 +597,7 @@
   }
   async function refreshAll() {
     renderTrees();
+    applyInvVisibility();
     if (currentTab === "view3d") requestDraw();
     if (currentTab === "node") await renderNode();
     if (currentTab === "owned") await renderOwned();
@@ -702,7 +703,7 @@
       if (best && best[0] > 1e-6) { cam.yaw = best[1]; cam.pitch = best[2]; }
     }
   }
-  window.__treeDebug = { cam, getProjected: () => projected };
+  window.__treeDebug = { cam, getProjected: () => projected, stackTickets, ticketLabel };
   function fitCanvas() {
     const r = canvas.getBoundingClientRect();
     const dpr = Math.min(2, window.devicePixelRatio || 1);
@@ -1254,6 +1255,21 @@
     }
     return s;
   }
+  // Collapse runs of tickets that render the same into stacks. Only
+  // consecutive runs group; identical tickets either side of a different
+  // one stay separate so the display order still matches the inventory.
+  function stackTickets(inv) {
+    const out = [];
+    for (let i = 0; i < inv.length;) {
+      const t = inv[i];
+      const key = ticketLabel(t);
+      let j = i + 1;
+      while (j < inv.length && ticketLabel(inv[j]) === key) j++;
+      out.push({ t, count: j - i });
+      i = j;
+    }
+    return out;
+  }
   function nodeOptions(ids, rt, extra) {
     return ids.filter(id => visNode(rt.byId[id])).map(id => {
       const nd = rt.byId[id];
@@ -1294,16 +1310,21 @@
     if (m.gamble_twice) bits.push("second-roll");
     $("wMeta").textContent = bits.length ? bits.join(", ") : "none";
 
-    // inventory
+    // inventory — consecutive identical tickets render as one stacked row,
+    // but each action still spends a single ticket. Grouping is by label so
+    // only runs that look the same collapse.
     inv.innerHTML = "";
     if (!st.inventory.length) inv.innerHTML = "<li class='muted'>No tickets — award one above.</li>";
-    st.inventory.forEach((t, idx) => {
+    const renderTicketRow = (t, count) => {
       const li = document.createElement("li");
       // Wrap: the label takes the first line, the 100%-wide controls
       // their own line below, instead of squeezing the label to nothing.
       li.style.flexWrap = "wrap";
       const note = E.gambleNote(t);
-      li.innerHTML = `<div class="grow"><b${note ? ` title="${esc(note)}"` : ""}>${esc(ticketLabel(t))}</b>` +
+      const stack = count > 1
+        ? ` <span class="pill" title="Stack of ${count} identical tickets — each action spends one.">×${count}</span>`
+        : "";
+      li.innerHTML = `<div class="grow"><b${note ? ` title="${esc(note)}"` : ""}>${esc(ticketLabel(t))}${stack}</b>` +
         (note ? `<div class="small muted">🎲 ${esc(note)}</div>` : "") + `</div>`;
       const ctl = document.createElement("div");
       ctl.className = "row";
@@ -1382,7 +1403,8 @@
       wrap.appendChild(ctl);
       li.appendChild(wrap);
       inv.appendChild(li);
-    });
+    };
+    for (const { t, count } of stackTickets(st.inventory)) renderTicketRow(t, count);
 
     // meta abilities
     meta.innerHTML = "";
@@ -1595,6 +1617,17 @@
     }
     await renderUnlockable(c);
   }
+
+  // Inventory collapses to just its header, matching the unlock list toggle.
+  let invOpen = true;
+  function applyInvVisibility() {
+    $("invList").style.display = invOpen ? "" : "none";
+    $("invToggle").textContent = invOpen ? "Hide" : "Show";
+  }
+  $("invToggle").addEventListener("click", () => {
+    invOpen = !invOpen;
+    applyInvVisibility();
+  });
 
   $("btnAward").addEventListener("click", async () => {
     const tier = $("tkTier").value, kind = $("tkKind").value;
