@@ -1273,7 +1273,7 @@
 636. Prosperity +40%, 5.0, Generic
 #(Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.
 637. Root Pact, 4.0, Generic
-#(Tree)(Meta:root-pact) Nodes directly connected to the Origin root unlock at half points cost.
+#(Tree)(Meta:root-pact) Nodes within two connections of the Origin root unlock for no core, but cost ten times the points.
 638. Intelligent, 3.4, Stellaris
 #Your mind learns fast: research, engineering, and study all come noticeably easier.
 639. Rapid Breeders, 3.0, Stellaris

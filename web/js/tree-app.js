@@ -633,7 +633,7 @@
   function canUnlockNow(st, rt, nid, front) {
     if (nid === 0 || st.unlocked.includes(nid)) return false;
     if (!(front || E.frontier(rt, st.unlocked)).has(nid)) return false;
-    if ((st.cores || 0) < 1) return false;
+    if ((st.cores || 0) < E.coreCostFor(st, rt, nid)) return false;
     const cost = E.nodeCostFor(st, rt, nid);
     return st.points >= cost - E.couponCover(st, cost);
   }
@@ -1036,11 +1036,13 @@
       if (front) {
         const cost = E.nodeCostFor(c.st, c.rt, nd.id);
         const cover = E.couponCover(c.st, cost);
-        const ok = c.st.cores >= 1 && c.st.points >= cost - cover;
+        const cc = E.coreCostFor(c.st, c.rt, nd.id);
+        const coreTxt = cc ? ` + ${cc} core` : " · no core";
+        const ok = c.st.cores >= cc && c.st.points >= cost - cover;
         actions = `<div class="row" style="margin-top:8px"><button class="primary" data-act="unlock" ${ok ? "" : "disabled"}>` +
-          `Unlock (${E.fmt(cost - cover)} pts + 1 core${cover ? ` · coupon −${E.fmt(cover)}` : ""})</button></div>` +
+          `Unlock (${E.fmt(cost - cover)} pts${coreTxt}${cover ? ` · coupon −${E.fmt(cover)}` : ""})</button></div>` +
           `<div class="muted small" style="margin-top:4px">Wallet: ${E.fmt(c.st.points)} pts · ${c.st.cores} cores.</div>` +
-          (ok ? "" : `<div class="muted small" style="margin-top:4px">Needs 1 core + ${E.fmt(cost - cover)} pts (have ${c.st.cores} / ${E.fmt(c.st.points)}).</div>`);
+          (ok ? "" : `<div class="muted small" style="margin-top:4px">Needs ${cc ? cc + " core + " : ""}${E.fmt(cost - cover)} pts (have ${c.st.cores} / ${E.fmt(c.st.points)}).</div>`);
       } else {
         const { dist } = E.hopDistances(c.rt, c.st.unlocked);
         const skipOk = c.st.inventory.some(t => t.kind === "skip" &&
@@ -1571,16 +1573,17 @@
     for (const id of ids.slice(unlockPage * UNLOCK_PAGE, (unlockPage + 1) * UNLOCK_PAGE)) {
       const nd = rt.byId[id];
       const cost = E.nodeCostFor(st, rt, id);
-      const ok = st.cores >= 1 && st.points >= cost - E.couponCover(st, cost);
+      const cc = E.coreCostFor(st, rt, id);
+      const ok = st.cores >= cc && st.points >= cost - E.couponCover(st, cost);
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><b>${esc(nd.name)}</b> ` +
         `<span class="pill">${esc(nd.file)} ${fmtR(nd.rarity)}</span><br>` +
-        `<span class="muted small">${E.fmt(cost)} pts + 1 core</span></div>`;
+        `<span class="muted small">${E.fmt(cost)} pts${cc ? " + 1 core" : " · no core"}</span></div>`;
       const b = document.createElement("button");
       b.textContent = "Unlock";
       b.className = "primary";
       b.disabled = !ok;
-      b.title = ok ? `Unlock ${nd.name}` : (st.cores < 1 ? "Needs 1 core (award a ticket)" : `Needs ${E.fmt(cost)} pts`);
+      b.title = ok ? `Unlock ${nd.name}` : (st.cores < cc ? `Needs ${cc} core${cc === 1 ? "" : "s"} (award a ticket)` : `Needs ${E.fmt(cost)} pts`);
       b.addEventListener("click", async () => {
         const done = await mutate(({ st, rt }) => E.unlock(st, rt, id));
         if (done) toast(`Unlocked ${nd.name}.`);

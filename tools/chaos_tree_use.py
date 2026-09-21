@@ -76,7 +76,8 @@ and a (Meta:<key>:<value>) token in their description (stored in the JSON
                        no base core and half points)
     gamble-reroll:N    reroll gamble d20s of N and below (best die wins)
     gamble-twice       gambles get a second d20 unless the first is a 20
-    root-pact          nodes adjacent to the root unlock at half points
+    root-pact          nodes within two connections of the root cost no core
+                       but 10x points
 Unlocking is adjacency-based: sight/reveal only let you SEE further; the
 skip/jump/hop tickets are still how you travel.
 
@@ -388,18 +389,45 @@ def distance3(a, b):
     return math.dist(a["pos"], b["pos"])
 
 
+def _root_shell(tree, depth):
+    """Ids within `depth` connections of the Origin (the root included). Not
+    cached: the tree is sparse and Shuffle/Swap/Add-Link mutate adjacency."""
+    adj = tree["adj"]
+    seen = {ROOT_ID}
+    frontier = [ROOT_ID]
+    for _ in range(depth):
+        nxt = []
+        for a in frontier:
+            for b in adj[a]:
+                if b not in seen:
+                    seen.add(b)
+                    nxt.append(b)
+        frontier = nxt
+    return seen
+
+
 def _node_cost_for(state, tree, nid):
-    """Points cost to unlock nid now (halved for root-adjacent nodes when the
-    Root Pact is owned)."""
+    """Points cost to unlock nid now. Under Root Pact, nodes within two
+    connections of the root cost 10x points."""
     cost = node_cost(tree, nid)
     meta = derive_meta(tree, state["unlocked"])
-    if meta.get("root_pact") and nid in tree["adj"][ROOT_ID]:
-        cost /= 2.0
+    if meta.get("root_pact") and nid in _root_shell(tree, 2):
+        cost *= 10
     return cost
 
 
+def _core_cost_for(state, tree, nid):
+    """Cores needed to unlock nid now. Under Root Pact, nodes within two
+    connections of the root cost no core."""
+    meta = derive_meta(tree, state["unlocked"])
+    if meta.get("root_pact") and nid in _root_shell(tree, 2):
+        return 0
+    return 1
+
+
 def _pay(state, tree, nid):
-    if state["cores"] < 1:
+    core_cost = _core_cost_for(state, tree, nid)
+    if state["cores"] < core_cost:
         raise UsageError("not enough cores (award a ticket first)")
     cost = _node_cost_for(state, tree, nid)
     pick, cover = None, 0
@@ -413,7 +441,7 @@ def _pay(state, tree, nid):
             f"not enough points: need {fmt(cost - cover)}, have {fmt(state['points'])}")
     if pick is not None:
         state["inventory"].remove(pick)
-    state["cores"] -= 1
+    state["cores"] -= core_cost
     state["points"] -= cost - cover
 
 
@@ -941,9 +969,10 @@ def use_lock_refund(state, tree, nid):
     if nid not in state["unlocked"]:
         raise UsageError(f"node {nid} is not unlocked")
     refund = _node_cost_for(state, tree, nid)
+    refund_core = _core_cost_for(state, tree, nid)
     state["unlocked"].remove(nid)
     state["points"] += refund
-    state["cores"] += 1
+    state["cores"] += refund_core
     state["meta_used"]["lock_refund"] = _used(state, "lock_refund") + 1
     return refund
 
@@ -1021,9 +1050,11 @@ def use_recall(state, tree):
     nid = hist.pop()
     if nid not in state["unlocked"]:
         raise UsageError(f"node {nid} is already locked")
+    refund = _node_cost_for(state, tree, nid)
+    refund_core = _core_cost_for(state, tree, nid)
     state["unlocked"].remove(nid)
-    state["points"] += _node_cost_for(state, tree, nid)
-    state["cores"] += 1
+    state["points"] += refund
+    state["cores"] += refund_core
     state["meta_used"]["recall"] = _used(state, "recall") + 1
     return nid
 
@@ -1395,8 +1426,10 @@ def main(argv=None):
         if args.action == "lockrefund":
             if len(args.args) != 1:
                 raise UsageError("use lockrefund NODE")
+            refund_core = _core_cost_for(state, tree, args.args[0])
             refund = use_lock_refund(state, tree, args.args[0])
-            print(f"locked {args.args[0]} and refunded {fmt(refund)} pts + 1 core")
+            print(f"locked {args.args[0]} and refunded {fmt(refund)} pts "
+                  f"+ {refund_core} core(s)")
         elif args.action == "addlink":
             if len(args.args) != 2:
                 raise UsageError("use addlink A B")

@@ -64,8 +64,9 @@ unlock (`recall`), added edges (`add-link:N`), topology swaps
 (`shuffle`/`swap`/`reshuffle`), entry reshuffles that keep every node in
 place (`shake` for locked nodes, `chaosquake` for all non-root nodes), gambled tickets (`gamble:N` charges from Gambler's Dice, with `gamble-reroll:N`
 floors and a `gamble-twice` second roll on the best dice), random unlocks (`gacha:R` or `gacha:R-S`,
-plus a rarity-capped same-source `duplicate:R`), and half-price unlocks for
-root-adjacent nodes (`root-pact`). They never roll in the Gacha.
+plus a rarity-capped same-source `duplicate:R`), and core-free (but 10x
+points) unlocks for nodes within two connections of the root (`root-pact`).
+They never roll in the Gacha.
 
 ## Regenerating
 

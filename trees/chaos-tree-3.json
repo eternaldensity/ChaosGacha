@@ -2,7 +2,7 @@
   "format": "chaos-tree",
   "version": 1,
   "seed": 3,
-  "generated_at": "2026-09-21T01:57:49Z",
+  "generated_at": "2026-09-21T02:18:28Z",
   "params": {
     "files": [
       "skill",
@@ -16677,7 +16677,7 @@
       "rarity": 4.0,
       "source": "Generic",
       "tag": "tree",
-      "description": "Nodes directly connected to the Origin root unlock at half points cost.",
+      "description": "Nodes within two connections of the Origin root unlock for no core, but cost ten times the points.",
       "meta": [
         "Meta:root-pact"
       ],

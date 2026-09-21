@@ -1,7 +1,8 @@
 "use strict";
 /* Chaos Tree usage-engine port (tools/chaos_tree_use.py). Same rules:
- * synthetic root free; every node costs 1 core + 10^rarity points (halved
- * for root-adjacent nodes under Root Pact); tickets pool tier points into
+ * synthetic root free; every node costs 1 core + 10^rarity points (under
+ * Root Pact, nodes within two connections of the root cost no core but 10x
+ * points); tickets pool tier points into
  * a shared wallet; sight/reveal extend visibility; special tickets and
  * tree-meta abilities reach further. Operates on a runtime tree from
  * ChaosGen.buildRuntime(). */
@@ -215,11 +216,35 @@ window.ChaosEngine = (function () {
   // ---- costs / awards ---------------------------------------------------
   function nodeCost(tree, nid) { return Math.pow(10, tree.byId[nid].rarity); }
 
+  // Nodes within `depth` connections of the Origin. Not cached: the tree is
+  // sparse, so a 2-hop walk is tiny, and Shuffle/Swap/Add-Link mutate
+  // adjacency.
+  function rootShell(tree, depth) {
+    const seen = new Set([ROOT_ID]);
+    let frontier = [ROOT_ID];
+    for (let d = 0; d < depth; d++) {
+      const next = [];
+      for (const a of frontier) for (const b of (tree.adj[a] || [])) {
+        if (!seen.has(b)) { seen.add(b); next.push(b); }
+      }
+      frontier = next;
+    }
+    return seen;
+  }
+
+  function rootPactApplies(tree, state, nid) {
+    return deriveMeta(tree, state.unlocked).root_pact &&
+      rootShell(tree, 2).has(nid);
+  }
+
   function nodeCostFor(state, tree, nid) {
-    let cost = nodeCost(tree, nid);
-    const meta = deriveMeta(tree, state.unlocked);
-    if (meta.root_pact && (tree.adj[ROOT_ID] || new Set()).has(nid)) cost /= 2;
-    return cost;
+    const cost = nodeCost(tree, nid);
+    // Root Pact: no core, but the points price climbs tenfold.
+    return rootPactApplies(tree, state, nid) ? cost * 10 : cost;
+  }
+
+  function coreCostFor(state, tree, nid) {
+    return rootPactApplies(tree, state, nid) ? 0 : 1;
   }
 
   function couponCover(state, cost) {
@@ -228,7 +253,8 @@ window.ChaosEngine = (function () {
   }
 
   function pay(state, tree, nid) {
-    if (state.cores < 1) throw new ChaosError("not enough cores (award a ticket first)");
+    const coreCost = coreCostFor(state, tree, nid);
+    if (state.cores < coreCost) throw new ChaosError("not enough cores (award a ticket first)");
     const cost = nodeCostFor(state, tree, nid);
     const cover = cost > 0 ? couponCover(state, cost) : 0;
     const pick = cover > 0
@@ -237,7 +263,7 @@ window.ChaosEngine = (function () {
       throw new ChaosError(`not enough points: need ${fmt(cost - cover)}, have ${fmt(state.points)}`);
     }
     if (pick) state.inventory.splice(state.inventory.indexOf(pick), 1);
-    state.cores -= 1;
+    state.cores -= coreCost;
     state.points -= cost - cover;
   }
 
@@ -639,9 +665,10 @@ window.ChaosEngine = (function () {
     if (nid === ROOT_ID) throw new ChaosError("the root cannot be locked");
     if (!state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is not unlocked`);
     const refund = nodeCostFor(state, tree, nid);
+    const refundCore = coreCostFor(state, tree, nid);
     state.unlocked.splice(state.unlocked.indexOf(nid), 1);
     state.points += refund;
-    state.cores += 1;
+    state.cores += refundCore;
     consume(state, "lock_refund");
     return refund;
   }
@@ -698,9 +725,13 @@ window.ChaosEngine = (function () {
     if (!hist.length) throw new ChaosError("no unlocks to undo");
     const nid = hist.pop();
     if (!state.unlocked.includes(nid)) throw new ChaosError(`node ${nid} is already locked`);
+    // Refund what was actually paid, before removing the node (the discount
+    // may depend on the unlocked set).
+    const refund = nodeCostFor(state, tree, nid);
+    const refundCore = coreCostFor(state, tree, nid);
     state.unlocked.splice(state.unlocked.indexOf(nid), 1);
-    state.points += nodeCostFor(state, tree, nid);
-    state.cores += 1;
+    state.points += refund;
+    state.cores += refundCore;
     consume(state, "recall");
     return nid;
   }
@@ -825,7 +856,7 @@ window.ChaosEngine = (function () {
     ChaosError, fmt, newState,
     iterMeta, deriveMeta, viewState,
     dist3, frontier, hopDistances, visible, surveyNames,
-    nodeCost, nodeCostFor, parseTicket, award,
+    nodeCost, nodeCostFor, coreCostFor, rootShell, parseTicket, award,
     unlock, unlockSkip, jumpCandidates, unlockJump, unlockHop,
     useLockRefund, useAddLink, useReveal, useGacha, useLifeline,
     useRecall, useDuplicate, useShuffle, useSwap, useReshuffle,

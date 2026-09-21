@@ -417,13 +417,18 @@ def test_meta2():
     assert nid == 8 and 8 not in st["unlocked"]
     assert st["cores"] == 2 and abs(st["points"] - 1100) < 1e-9  # +10^3 refund
 
-    # root pact halves root-adjacent unlock cost
+    # root pact: no core, 10x points within two connections of the root
     st = cu.new_state("<synthetic>")
     st["unlocked"] = [0, 1, 9]
-    assert cu._node_cost_for(st, tree, 16) == 5.0
-    st["points"], st["cores"] = 100.0, 1
-    cu.unlock(st, tree, 16)
-    assert abs(st["points"] - 95.0) < 1e-9
+    assert cu._node_cost_for(st, tree, 16) == 100.0      # 10^1 * 10, 1 hop
+    assert cu._core_cost_for(st, tree, 16) == 0
+    assert cu._node_cost_for(st, tree, 2) == 10 ** 4     # 10^3 * 10, 2 hops
+    assert cu._core_cost_for(st, tree, 2) == 0
+    assert cu._node_cost_for(st, tree, 3) == 10 ** 3     # 3 hops: normal
+    assert cu._core_cost_for(st, tree, 3) == 1
+    st["points"], st["cores"] = 100.0, 0
+    cu.unlock(st, tree, 16)                              # no core needed
+    assert abs(st["points"] - 0.0) < 1e-9 and st["cores"] == 0
 
     # shuffle: swap with a not-visible similar-rarity node
     st = cu.new_state("<synthetic>")
