@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0e1016">
-<meta name="description" content="Documentation for the Chaos Gacha web apps: guide, tickets, categories, rolling, and the Chaos Tree.">
+<meta name="description" content="Documentation for the Chaos Gacha web apps: guide, tickets, categories, rolling, curses, and the Chaos Tree.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chaos Gacha">
 <meta property="og:title" content="📖 Chaos Gacha Documentation">
-<meta property="og:description" content="Guide, tickets, categories, rolling rules, and the Chaos Tree.">
+<meta property="og:description" content="Guide, tickets, categories, rolling rules, curses, and the Chaos Tree.">
 <meta property="og:url" content="https://eternaldensity.github.io/ChaosGacha/docs.html">
 <meta property="og:image" content="https://eternaldensity.github.io/ChaosGacha/social/social.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="📖 Chaos Gacha Documentation">
-<meta name="twitter:description" content="Guide, tickets, categories, rolling rules, and the Chaos Tree.">
+<meta name="twitter:description" content="Guide, tickets, categories, rolling rules, curses, and the Chaos Tree.">
 <meta name="twitter:image" content="https://eternaldensity.github.io/ChaosGacha/social/social.png">
 <title>Documentation — Chaos Gacha</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -50,6 +50,7 @@
     <button data-doc="tickets">Tickets &amp; Feats</button>
     <button data-doc="categories">Categories</button>
     <button data-doc="rolling">Rolling</button>
+    <button data-doc="curses">Curses</button>
     <button data-doc="tree">Chaos Tree</button>
   </nav>
 
@@ -156,6 +157,43 @@
       <p>Vehicles, locations, and other big entries arrive self-contained and at your disposal: you get the thing itself, functional, without its home setting, apocalypse, or cast unless its description explicitly includes them.</p>
       <h3>Filters &amp; tickets (this version)</h3>
       <p>Narrow the pool by text, source checkboxes, rarity band, NSFW/Tech toggles (NSFW hides by default), or skip already-rolled results. The <b>ticket wallet</b> holds tickets you spend one at a time; <b>×10</b> does ten quick rolls at once. History, stats, and exports live under their tabs.</p>
+    </div>
+  </section>
+
+  <section class="docpage" id="doc-curses">
+    <div class="card">
+      <h2>Curse Roulette</h2>
+      <p>Curses are rolled from the <b>Curse Roulette</b>, most often taken at the start of a gambler's journey when their tickets don't feel like enough for the challenge ahead, or whenever the Roulette is offered to them. A curse can add a status condition, warp the world they're in, or both — but a curse will <b>never directly put you in a certain-death position</b>.</p>
+      <p>Most curses — at least the ones that don't alter the world — come with a <b>Resolve Condition</b>. Meet it and the curse's effects end and it disappears from you for good. The rest are one-and-done deals with no way out but living with them.</p>
+      <h3>Spin &amp; severity</h3>
+      <p>One spin rolls a d20, which sets the curse's severity, then draws a random curse of that severity:</p>
+      <table>
+        <tr><th>d20</th><th>Severity</th></tr>
+        <tr><td>1–6</td><td>Minor</td></tr>
+        <tr><td>7–13</td><td>Medium</td></tr>
+        <tr><td>14–17</td><td>Major</td></tr>
+        <tr><td>18–19</td><td>Severe</td></tr>
+        <tr><td>20</td><td>Ultimate</td></tr>
+      </table>
+      <h3>Rewards</h3>
+      <p>By default, spinning pays out a gacha ticket for the trouble. Rewards follow the source table:</p>
+      <table>
+        <tr><th>Severity</th><th>Reward</th></tr>
+        <tr><td>Minor</td><td>1× Gold Random ticket</td></tr>
+        <tr><td>Medium</td><td>1× Advantage Gold Random ticket</td></tr>
+        <tr><td>Major</td><td>1× Gold Choice ticket (pick the category)</td></tr>
+        <tr><td>Severe</td><td>1× Platinum Random ticket</td></tr>
+        <tr><td>Ultimate</td><td>1× Platinum Choice ticket</td></tr>
+      </table>
+      <p class="muted small">This app's ticket wallet has no Advantage flag, so Medium's Advantage Gold Random is granted as two Gold Random tickets; Major and Ultimate let you choose the category before sending the reward.</p>
+      <h3>In this app</h3>
+      <ul>
+        <li>Rewards go to the same <b>ticket wallet</b> as the gacha roller — open the Gacha to spend them. Nothing is added until you press <b>Send reward to ticket wallet</b>.</li>
+        <li><b>Award tickets for spins</b> can be switched off if you want curses without the payout.</li>
+        <li><b>Hide NSFW curses</b> keeps mature entries out of the pool (on by default), and <b>Spin slowdown</b> controls the wheel — the result is decided before the spin, so the wheel is pure theatre.</li>
+        <li><b>Copy</b> grabs the curse, its resolve condition and its reward as text for your story. <b>History</b> keeps your recent curses with a ✓ button to track which ones you've resolved.</li>
+      </ul>
+      <p><a href="curse.html">Open the Curse Roulette →</a></p>
     </div>
   </section>
 
