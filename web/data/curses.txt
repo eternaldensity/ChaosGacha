@@ -340,3 +340,119 @@ There is a shadow staring back at you through the kaleidoscope. A chaotic reflec
 Hunter(20)
 There is a hunter in this world now, a hunter with every single Master rank skill in the gacha, and they will stop at nothing to kill you.
 |Resolve: Slay the Hunter|
+
+Companion Cube(1)
+An object you picked up one day—a crate, a lamp, a rock, it doesn't matter—has become precious to you beyond all reason. You carry it, protect it, and talk to it. It has no powers at all. It is just a friend, and losing it would genuinely break your heart.
+|Resolve: Let it go with a clear mind—destroy it, give it away, or leave it behind—or acquire a trait that dulls emotional attachment.|
+
+Door Stuck(1)
+Every door, gate, hatch and sealed passage you approach jams for a few infuriating seconds before grudgingly opening. It always opens eventually. It is never smooth, and it is never, ever when you are in a hurry.
+|Resolve: Acquire 3 Security, Mechanics or Interfacing abilities, or any power that opens or phase-warps you through locks.|
+
+Korok Escort(2)
+Little forest spirits keep finding you. They get lost, and somehow that becomes your problem. They are harmless, endless, and reliably lead you off your path; abandoning one leaves a nagging guilt that itches until you turn back.
+|Resolve: Help 50 of them find their way home, or acquire a trait that grants perfect navigation.|
+
+Evergreen(2)
+You stop aging. It sounds like a gift, but you are stuck at your current age and maturity forever. People never quite take you seriously, authorities treat you as a permanent child, and every attempt to physically grow up is gently, maddeningly undone.
+|Resolve: Acquire a temporal or biological-age ability, or a trait that forces your body to mature.|
+
+Phantom Insomnia(3)
+Skipping sleep summons the night's vengeance. After roughly three days without proper rest, pale flying things spawn overhead and dive at you shrieking, biting through armour and vanishing at dawn. They keep coming until you actually sleep.
+|Resolve: Sleep properly in a real bed for seven consecutive nights, or acquire a trait that removes the need for sleep.|
+
+Felyne Appetite(3)
+You must eat an enormous, hearty meal at least once a day or your stamina and energy recovery halve until you do. The meal has to be genuinely large and cooked—ration bars and raw scraps do not count. Three days without one leaves you nearly bedridden.
+|Resolve: Acquire a trait like Efficient Cells, or any ability that lets you ignore food and sleep.|
+
+Pyromaniac(4)
+Under stress—fear, rage, humiliation—something in you snaps and you black out. You come to somewhere nearby, hands sooty, watching something burn. You never remember lighting it. You are not the arsonist. You are, unfortunately, the alibi.
+|Resolve: Achieve Adept Discipline or higher, or acquire a trait that increases mental resilience.|
+
+Static Cling(5)
+Your body builds an absurd static charge. Metal surfaces shock you, electronics glitch or die in your hands, and dust, hair and lint cling to you constantly. Sensitive gear you carry has a habit of failing at exactly the wrong moment.
+|Resolve: Acquire an electrical- or energy-control trait, or 3 Tech abilities.|
+
+Creeper's Confidence(6)
+Explosive and ambush predators adore you. Anything that detonates, burrows or pounces is drawn straight to your position, and stealth no longer hides you from them; the moment you are near, they commit. You have become the bait whether you wanted to or not.
+|Resolve: Survive 10 such ambushes unharmed, or acquire 3 stealth or scouting abilities.|
+
+Factory Optimisation(7)
+You cannot abide inefficiency. Any process, layout or routine you notice that could be improved nags at you until you fix it—even mid-fight, even when it isn't yours to touch. Rest is impossible while a mess exists anywhere in sight.
+|Resolve: Achieve Expert Discipline or higher, or acquire a trait that grants perfect focus.|
+
+Conflict Drive(8)
+Something in you is always spoiling for a fight. Slights feel larger, provocations are harder to walk away from, and your own abilities seem to nudge you toward confrontation. You will win more fights. You will also start far more of them.
+|Resolve: Master your core ability well enough to silence its influence, or acquire a mind-anchoring trait.|
+
+System Fatigue(9)
+A glowing interface has attached itself to you and issues a daily regimen: training, reading, chores—a list that only grows. Complete it and you feel a small reward; fail, and a heavy weakness sets in until you make it up. It will not let you rest.
+|Resolve: Complete a full week without a single failure, or find and crash the system.|
+
+Sacred Gear Leak(10)
+Power bleeds off you in visible signatures—holy, infernal or something stranger—that announce exactly what you are to anyone with the senses to read it. Factions that hunt or recruit your kind can track you from a great distance.
+|Resolve: Acquire a concealment or aura-suppression ability, or a trait that masks your nature.|
+
+Case 53(11)
+Your body has been altered in a way you cannot hide: strange skin, horns, extra joints, a general wrongness. Clothes do not cover it, illusions slide off it, and ordinary people react with fear or fascination. Any memory of how it happened is gone.
+|Resolve: Acquire a shapeshifting or biokinetic ability to reclaim a normal form, or an Elite+ healing/transmutation effect.|
+
+Memetic Hazard(12)
+Knowledge of you is contagious and dangerous. People who learn your name in detail get migraines, then nosebleeds, then forget you. Records degrade—photos blur, files corrupt, testimony turns to static. You are very hard to remember and very hard to love.
+|Resolve: Acquire an antimemetic or psychic-shielding ability, or a trait that lets you control how you are perceived.|
+
+Walk Without Rhythm(12)
+The great burrowers of this world hunt by vibration. Heavy footsteps, running, fighting—even a heartbeat in the wrong place—draw something colossal toward you. Move carefully and it passes you by; move carelessly and the ground opens up.
+|Resolve: Acquire a trait for silent movement or perfect body control, or tame/befriend one of the burrowers.|
+
+Level Drain(13)
+Your hard-won strength is leaking. Skills dull, abilities weaken, and every so often a power drops a full step and must be earned back. It is slow, but it is relentless, and it never pauses to let you catch up.
+|Resolve: Acquire an ability or trait that prevents level drain, or gain power faster than it drains for one month.|
+
+Forced Vow(13)
+Your spoken word has become binding. Any promise, oath or deal you say aloud takes hold, and breaking it unleashes a backlash that cripples you for days. Quips, dares and figures of speech are not exempt. Choose your words very carefully. (A/N: reroll if you cannot speak.)
+|Resolve: Ascend beyond the vow with a Divine-rank binding ability, or fulfil 10 vows you wish you had never made.|
+
+Beast's Blood(14)
+The old blood is in you and it wants out. Anger comes easier, your body grows coarser by the week—hair, teeth, a wildness behind the eyes—and in a hard fight you stop feeling like yourself. Those who recognise the scourge will put you down on sight.
+|Resolve: Acquire a blood-cleansing or Great-One-tier insight effect, or an Elite+ healing that can purge the scourge.|
+
+Heavenly Restriction(14)
+A body of terrifying potential, and no energy to run through it. Every energy-based ability you hold sits inert; internal pools stay empty no matter how you train. In exchange, your physical senses, reflexes and raw strength are extraordinary.
+|Resolve: Acquire a binding-vow or conduit ability that restores your energy flow, or a trait that grants an external power source.|
+
+Scarlet Rot(15)
+A creeping crimson decay takes root inside you. It itches, then burns, then eats; wounds refuse to close and rest restores nothing. It spreads faster when you are upset, and it calls rot-blessed creatures to finish what it started.
+|Resolve: Acquire a Legendary+ purification or an unalloyed-gold-equivalent cure.|
+
+Infection(15)
+Orange dreams come when you sleep, and a warm voice tells you that surrender is peace. The infection makes you stronger and more willing, and each night the voice is harder to argue with. Eventually, you will stop arguing.
+|Resolve: Reject the source with a void/shade power or Divine+ purification, or be cured by a higher being.|
+
+Kharaa(16)
+A virulent green sickness invades every cell, weakening you day by day while it slowly rewrites your body. It is not fast, but it is thorough, and it does not stop. Those who know it will quarantine you on sight.
+|Resolve: Acquire a cure on the order of Enzyme 42, or a Legendary+ healing ability.|
+
+Whisper of the Warp(16)
+Something ancient has noticed you from the other side of reality and begun to whisper. The whispers are patient, flattering and endless. Every day they erode a little more of your resistance, and the powers they offer are real.
+|Resolve: Acquire a purity/faith-based ward or an Epic+ mind-shielding trait, or sever the connection with a Divine ritual.|
+
+Marker Dementia(17)
+You have seen the marker. It is not real, and it is everywhere. When you are alone it promises you things, and you feel a pull to hurt yourself before it can. Others cannot see it, and some begin to share your visions.
+|Resolve: Destroy the source of the signal, or acquire a Legendary+ mental shield or madness immunity.|
+
+Cellular Mimic(18)
+Something walked out of the dark wearing your face, and it has been replacing the people around you ever since. Tests cannot tell it apart. Everyone you trust could be it. Everyone you trust probably is.
+|Resolve: Acquire a perfect-senses or detection ability and destroy the mimic, or purge it with a Divine-rank effect.|
+
+X-Parasite(18)
+A parasitic lifeform has colonised you—copying your powers, your memories, your shape—while it feeds. You are still you. You are also, increasingly, the thing it is learning to replace.
+|Resolve: Acquire a Metroid-derived or Divine+ cellular-purge ability, or destroy the parasite's core.|
+
+Behelit(19)
+A small, egg-shaped pendant appears among your things and will not leave. It is warm. It is watching. Somewhere ahead lies a moment of utter despair, and when you reach it the pendant will make you an offer: everything you want, for everyone you love.
+|Resolve: Reject the offer and endure the eclipse unbroken, or destroy the behelit with a Divine-rank effect.|
+
+Narrative Doom(20)
+You can feel the shape of the story now, and it has a third act. Every omen points to your death at the climax—a death that saves the day and means something. Fate is gently, relentlessly arranging it, and plot armour is not on your side.
+|Resolve: Defy the script by surviving the climax through your own actions, or acquire a fate-breaking or Divine-rank ability.|
