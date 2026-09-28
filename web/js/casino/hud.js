@@ -26,6 +26,8 @@
     if (p.stable.length) bits.push("<span class='bchip pet'>+" + p.stable.length + " stabled (P)</span>");
     if (p.armorPct > 0) bits.push("<span class='bchip'>🛡 block " + Math.round(p.armorPct * 100) + "%</span>");
     if (p.cloakT > 0) bits.push("<span class='bchip'>👻 cloak " + p.cloakT.toFixed(0) + "s</span>");
+    if (p.mount) bits.push("<span class='bchip'>" + p.mount.glyph + " " + esc(p.mount.name) + " (" + p.mount.hp + ")</span>");
+    if (p.presence > 0) bits.push("<span class='bchip'>🎭 presence " + Math.round(p.presence * 100) + "%</span>");
     (C.G.curses || []).forEach(c => bits.push("<span class='bchip'>🎲 " +
       esc(c.label) + " (" + c.tier + (c.resolved ? ", ✓" : "") + ")</span>"));
     p.buildLog.forEach(b => bits.push("<span class='bchip " + b.cls + "'>" + esc(b.txt) + "</span>"));

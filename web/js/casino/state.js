@@ -46,7 +46,7 @@
         pullMul: b.pullMul, discount: 0, pets: [],
         slots: [], stash: [], abilitiesOwned: 0, facing: 0,
         dashDx: null, dashDy: null, dashSpd: 0, statuses: {},
-        buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null, stance: null,
+        buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null, stance: null, mount: null,
         cdr: 0, elemBonus: {}, resist: {}, luck: 0, regen: 0, regenT: 0,
         healBonus: 0, rollCdMax: 5, threatDecayT: 0, rangedBonus: 0, draft: null,
         parts: 0, survey: false, surveyT: 0,
@@ -254,22 +254,37 @@
     };
   };
 
-  // Debt Collector: the house collecting in person. Slow, huge, pays out.
-  C.makeBoss = function (room, danger, depth) {
+  // Bosses: the Collector (slow tank, threat waves) and the High Roller
+  // (fast skirmisher haunting deep vaults). Both pay out in loot showers.
+  C.makeBoss = function (room, danger, depth, kind) {
     const b = C.makeGuard(room, danger, true);
-    b.hp = 18 + depth * 3;
-    b.speed = 100;
     b.sight = 999;
     b.ranged = true;
-    b.affix = "shielded";
-    b.shield = 6;
-    b.type = "collector";
-    b.touchDmg = 2;
-    b.size = 1.6;
+    b.chase = true;
     b.x = C.WALL + 80;
     b.y = C.WALL + 100 + Math.random() * 80;
-    b.chase = true;
+    if (kind === "roller") {
+      b.hp = 14 + depth * 2;
+      b.speed = 175;
+      b.affix = "charger";
+      b.dashCd = 1.5;
+      b.type = "roller";
+      b.touchDmg = 1;
+      b.size = 1.4;
+    } else {
+      b.hp = 18 + depth * 3;
+      b.speed = 100;
+      b.affix = "shielded";
+      b.shield = 6;
+      b.type = "collector";
+      b.touchDmg = 2;
+      b.size = 1.6;
+    }
     return b;
+  };
+
+  C.hasAffix = function (gd, name) {
+    return gd.affix === name || gd.affix2 === name;
   };
 
   C.makeGuard = function (room, danger, forceElite) {
@@ -286,6 +301,14 @@
     } else if (th >= 2 && Math.random() < 0.3) {
       affix = "charger";
     }
+    // Threat 4+: elites double up.
+    let affix2 = null;
+    if (th >= 4 && affix && Math.random() < 0.3) {
+      const seconds = affix === "elemental" ? ["charger", "shielded"] : ["charger", "shielded", "elemental"];
+      affix2 = seconds[Math.floor(Math.random() * seconds.length)];
+      if (affix2 === "shielded") shield += 3;
+      if (affix2 === "elemental" && !element) element = Math.random() < 0.5 ? "fire" : "frost";
+    }
     return {
       x: C.WALL + 60 + Math.random() * (C.W - C.WALL * 2 - 120),
       y: C.WALL + 110 + Math.random() * (C.H - C.WALL * 2 - 220),
@@ -293,7 +316,7 @@
       speed: (fast ? 150 : 118) + danger * 6 + C.G.threat * 7,
       sight: 215 + danger * 12, atkCd: 0, chase: false, ranged: elite,
       type: elite ? "enforcer" : fast ? "pitboss" : "guard",
-      statuses: {}, affix, shield, element,
+      statuses: {}, affix, affix2, shield, element,
       teleT: 0, dashT: 0, dashCd: 2, dashDx: 0, dashDy: 0,
     };
   };
@@ -302,6 +325,14 @@
     const room = C.curRoom();
     C.projs.length = 0;
     C.floaters.length = 0;
+    if (room.vault && room.depth >= 6 && !room.bossSpawned) {
+      room.bossSpawned = true;
+      if (Math.random() < 0.35) {
+        room.guards.push(C.makeBoss(room, room.danger, room.depth, "roller"));
+        C.showCard("🎲 HIGH ROLLER",
+          "The vault's champion. Fast, rich, and rude — kill it for a shower.", "", 3000);
+      }
+    }
     if (!room._seen) {
       room._seen = true;
       const tiers = [...new Set(room.machines.map(m => m.tier))].join(", ");

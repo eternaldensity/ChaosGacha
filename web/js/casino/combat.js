@@ -299,6 +299,24 @@
     return { mult, stunned, died: false };
   };
 
+  C.updateRam = function (dt) {
+    const p = C.G.p;
+    if (!p.mount) return;
+    if (p.mount.ramCd > 0) { p.mount.ramCd -= dt; return; }
+    const room = C.curRoom();
+    for (const gd of [...room.guards]) {
+      if (Math.hypot(gd.x - p.x, gd.y - p.y) < 26) {
+        const a = Math.atan2(gd.y - p.y, gd.x - p.x) || 0;
+        const fx = C.collideCircle(gd.x + Math.cos(a) * 40, gd.y + Math.sin(a) * 40,
+          9, C.solids(room));
+        gd.x = fx[0]; gd.y = fx[1];
+        C.damageGuard(gd, p.mount.ram, null);
+        p.mount.ramCd = 0.5;
+        break;
+      }
+    }
+  };
+
   C.updateFx = function (dt) {
     for (const rg of C.rings) rg.age += dt;
     C.rings = C.rings.filter(rg => rg.age < rg.max);
@@ -403,6 +421,16 @@
     const room = C.curRoom();
     room.guards = room.guards.filter(g => g !== gd);
     C.G.kills++;
+    if (gd.type === "roller") {
+      const mk = (data) => room.pickups.push(Object.assign(
+        { x: gd.x, y: gd.y, bob: Math.random() * 6, age: 0 }, data));
+      mk({ kind: "coins", amount: 40 + room.depth * 8 });
+      mk({ kind: "ticket", tier: "gold" });
+      mk({ kind: "parts", amount: 2 + Math.floor(room.depth / 2) });
+      C.showCard("🎲 HIGH ROLLER DOWN",
+        "Chips everywhere: +" + (40 + room.depth * 8) + " coins, gold ticket, parts. Grab them.",
+        "", 4000);
+    }
     if (gd.type === "collector") {
       // The Collector drops what it was carrying: a payout on the floor.
       const mk = (data) => room.pickups.push(Object.assign(
@@ -436,6 +464,17 @@
   C.hurtPlayer = function (n, element) {
     const p = C.G.p;
     if (p.inv > 0 || p.rollT > 0 || C.G.over) return;
+    if (p.mount) {
+      p.mount.hp -= 1;
+      C.floater(p.x, p.y - 24, p.mount.name.slice(0, 14) + " -1", "#ffe066");
+      p.inv = Math.max(p.inv, 0.4);
+      if (p.mount.hp <= 0) {
+        C.floater(p.x, p.y - 30, p.mount.name.slice(0, 16) + " wrecked!", "#ff5555");
+        p.mount = null;
+      }
+      C.updateHud();
+      return;
+    }
     // Armor: flat chance to fully block a hit (carapace stacks, cap 65%).
     const block = Math.min(0.65, (p.armorPct || 0) +
       ((p.stance && p.stance.kind === "carapace") ? 0.25 : 0));
@@ -500,7 +539,7 @@
 
   function hurtTouch(gd, p, d) {
     if (d < 26 && gd.atkCd <= 0) {
-      C.hurtPlayer(gd.touchDmg || 1, gd.affix === "elemental" ? gd.element : null);
+      C.hurtPlayer(gd.touchDmg || 1, C.hasAffix(gd, "elemental") ? gd.element : null);
       if (p.stance && p.stance.kind === "carapace") C.damageGuard(gd, 2, null);
       if (gd.affix === "elemental" && gd.element) {
         const st = C.statusForElement(gd.element);
@@ -514,7 +553,7 @@
     C.projs.push({
       x: gd.x, y: gd.y, vx: Math.cos(a) * 300, vy: Math.sin(a) * 300,
       dmg: 1, foe: true, life: 1.6,
-      element: gd.affix === "elemental" ? gd.element : null,
+      element: C.hasAffix(gd, "elemental") ? gd.element : null,
     });
     gd.atkCd = 1.6;
   }
@@ -573,11 +612,12 @@
       // DoTs tick even on unaware guards; slow/stun matter once chasing.
       const st = C.tickGuardStatuses(gd, dt);
       if (st.died) continue;
-      if (!gd.pacified && !gd.chase && (d < gd.sight || room.alert > 0)) gd.chase = true;
+      if (!gd.pacified && !gd.chase &&
+          (d < gd.sight * (1 - (C.G.p.presence || 0)) || room.alert > 0)) gd.chase = true;
       if (!gd.chase) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
       const mult = (p.rollT > 0 ? 0.7 : 1) * st.mult;
       if (st.stunned) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
-      if (gd.affix === "charger") {
+      if (C.hasAffix(gd, "charger")) {
         gd.dashCd -= dt;
         if (gd.dashT > 0) {
           // Committed dash along the locked direction.

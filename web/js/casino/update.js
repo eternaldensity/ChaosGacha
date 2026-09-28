@@ -97,7 +97,7 @@
       p.hp -= ps.burn.power * dt;
       if (p.hp <= 0) { C.die(); C.updateHud(); return; }
     }
-    let spd = p.speed;
+    let spd = p.speed * (p.mount ? p.mount.speedMult : 1);
     if (ps.slow && ps.slow.t > 0) { spd *= ps.slow.power; ps.slow.t -= dt; }
     if (p.surge && p.surge.t > 0) {
       p.surge.t -= dt;
@@ -186,6 +186,7 @@
     if (C.keys["l"]) C.runActive(2);
 
     C.updateGuards(dt);
+    C.updateRam(dt);
     C.updatePets(dt);
     C.updateProjectiles(dt);
     C.updateFx(dt);

@@ -53,6 +53,37 @@
         C.noteBuild(res.name.slice(0, 18) + ": +" + Math.round(3 * bonus) + "% speed");
         return "Geared " + res.name + ": +" + Math.round(3 * bonus) + "% move speed.";
       }
+      const mountKind = /\bbike\b|motorcycle|scooter|skateboard|moped/i.test(nm) ? "bike"
+        : /\bcar\b|truck|tank(?! top)|van|\bbus\b|jeep|limousine/i.test(nm) ? "car"
+        : /horse|steed|\bmount\b|rhino|elephant|riding beast|dire wolf/i.test(nm) ? "mount"
+        : null;
+      if (mountKind) {
+        const spec = {
+          bike: { hp: 2, speedMult: 1.8, ram: 1, glyph: "🏍" },
+          car: { hp: 5, speedMult: 1.3, ram: 4, glyph: "\uD83D\uDE97" },
+          mount: { hp: 3, speedMult: 1.5, ram: 2, glyph: "\uD83D\uDC0E" },
+        }[mountKind];
+        p.mount = Object.assign({ name: res.name, kind: mountKind, ramCd: 0 }, spec);
+        C.noteBuild(res.name.slice(0, 18) + ": " + mountKind + " ride");
+        C.floater(p.x, p.y - 24, spec.glyph + " mounted!", "#ffe066");
+        return "Mounted " + res.name + ": +" + Math.round((spec.speedMult - 1) * 100) +
+          "% speed, tramples guards for " + spec.ram + ", tanks " + spec.hp + " hits.";
+      }
+      if (/suit|tuxedo|dress|gown|perfume|cologne|\bmask\b|costume|fashion|uniform|disguise|attire|\bcloak\b|invisibility/i.test(nm)) {
+        p.presence = Math.min(0.4, (p.presence || 0) + 0.1);
+        C.noteBuild(res.name.slice(0, 18) + ": presence " + Math.round(p.presence * 100) + "%");
+        return "Wearing " + res.name + ": presence — guards notice you " +
+          Math.round(p.presence * 100) + "% later (sight shrunk, cap 40%).";
+      }
+      if (/book|manual|tome|guide|textbook|handbook|grimoire|codex/i.test(nm)) {
+        const tiers = ["bronze", "bronze", "silver", "silver", "gold"];
+        const tk = tiers[Math.floor(Math.random() * tiers.length)];
+        p.tickets[tk]++;
+        p.pullMul = Math.max(0.6, p.pullMul * 0.97);
+        C.noteBuild(res.name.slice(0, 18) + ": manual +1 " + tk, "pass");
+        C.floater(p.x, p.y - 24, "+1 🎟 " + tk, "#aed1d1");
+        return "Read " + res.name + ": a " + tk + " ticket falls out as a bookmark, and you pull 3% faster.";
+      }
       if (/visor|helm|goggles|headset/i.test(nm)) {
         p.pullMul = Math.max(0.6, p.pullMul * 0.94);
         C.noteBuild(res.name.slice(0, 18) + ": pulls 6% faster");

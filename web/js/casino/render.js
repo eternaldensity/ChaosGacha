@@ -249,7 +249,7 @@
     const ctx = C.ctx;
     for (const gd of room.guards) {
       const sc = gd.size || 1; // the Collector is bigger than you
-      ctx.fillStyle = gd.type === "collector" ? "#3a0a0a"
+      ctx.fillStyle = gd.type === "collector" ? "#3a0a0a" : gd.type === "roller" ? "#3a2f0a"
         : gd.type === "enforcer" ? "#5a1a1a" : gd.type === "pitboss" ? "#3a2a5a" : "#111";
       ctx.fillRect(gd.x - 9 * sc, gd.y - 12 * sc, 18 * sc, 24 * sc);
       ctx.fillStyle = "#e8c39e"; ctx.fillRect(gd.x - 6 * sc, gd.y - 18 * sc, 12 * sc, 8 * sc); // head
@@ -257,6 +257,9 @@
       if (gd.type === "collector") {
         ctx.fillStyle = "#ffe066"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
         ctx.fillText("💀", gd.x, gd.y - 24 * sc);
+      } else if (gd.type === "roller") {
+        ctx.fillStyle = "#ffe066"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
+        ctx.fillText("🎲", gd.x, gd.y - 24 * sc);
       }
       if (gd.chase) {
         ctx.fillStyle = "#ff2222"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
@@ -286,6 +289,18 @@
         ctx.fillStyle = gd.teleT > 0 && Math.floor(C.G.t * 10) % 2 === 0 ? "#ff2222" : "#f7d40a";
         ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
         ctx.fillText("»", gd.x, gd.y - 32);
+      }
+      // Second affix (threat 4+ combos) rides below the first.
+      if (gd.affix2 === "shielded") {
+        ctx.fillStyle = "#8b93a3"; ctx.font = "bold 10px monospace"; ctx.textAlign = "center";
+        ctx.fillText("◈", gd.x, gd.y - 41);
+      } else if (gd.affix2 === "elemental") {
+        ctx.fillStyle = gd.element === "fire" ? "#ff8c00" : "#aed1d1";
+        ctx.font = "bold 10px monospace"; ctx.textAlign = "center";
+        ctx.fillText("✦", gd.x, gd.y - 41);
+      } else if (gd.affix2 === "charger") {
+        ctx.fillStyle = "#f7d40a"; ctx.font = "bold 10px monospace"; ctx.textAlign = "center";
+        ctx.fillText("»", gd.x, gd.y - 41);
       }
       // Charger telegraph: flashing outline while winding up.
       if (gd.teleT > 0 && Math.floor(C.G.t * 10) % 2 === 0) {
@@ -565,6 +580,15 @@
         ctx.fillText((pet.role || "?")[0].toUpperCase(), px, py + 3);
       }
     });
+    // Mount: ride box under the player.
+    if (p.mount) {
+      ctx.fillStyle = "#3a2f10";
+      ctx.fillRect(p.x - 13, p.y - 8, 26, 20);
+      ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 2;
+      ctx.strokeRect(p.x - 13, p.y - 8, 26, 20);
+      ctx.fillStyle = "#fff"; ctx.font = "bold 10px monospace"; ctx.textAlign = "center";
+      ctx.fillText(p.mount.glyph || "?", p.x, p.y + 7);
+    }
     // Player (blinks while invulnerable; soul glow dims with HP; cloaked = ghost).
     const cloakA = p.cloakT > 0 ? 0.45 : 1;
     if (p.surge && p.surge.t > 0) {
