@@ -47,6 +47,7 @@
 
   audio.click = () => audio.tone(660, 660, 0.06, "square", 0.05);
   audio.pullStart = () => audio.tone(220, 660, 0.18, "sawtooth", 0.05);
+  audio.dry = () => audio.tone(140, 90, 0.07, "square", 0.05);
   audio.lock = () => audio.tone(880, 880, 0.05, "square", 0.05);
   audio.jackpot = () => {
     [523, 659, 784, 1047].forEach((f, i) => audio.tone(f, f, 0.12, "square", 0.06, i * 0.09));

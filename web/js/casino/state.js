@@ -53,6 +53,8 @@
         sightMult: 1, cdrMult: 1, healMult: 1, dmgTakenMult: 1, dmgDealtMult: 1,
         regenOff: false, armorLock: false, pacifist: false,
         dmgTakenElementalOnly: false,
+        ammo: 12, ammoMax: 20,
+        satchel: { bomb: null, potion: null, decoy: null }, satSel: "bomb", restockT: 0,
       },
       cardT: 0, shake: 0,
     };

@@ -14,19 +14,21 @@
     const nm = (res.name + " " + res.description).toLowerCase(), r = res.rarity;
     const bonus = 1 + (r - 1) * 0.08;
     if (cat === "item") {
-      // Consumables trigger on touch.
+      // Consumables go to the satchel: Q uses the selected stack, C cycles.
+      // Bombs restock slowly while selected; potions and decoys do not.
       if (/medkit|potion|food|ration|elixir|bandage|snack|feast/i.test(nm)) {
-        const amt = (1 + Math.floor(r / 3) + (p.healBonus || 0)) * (p.healMult || 1);
-        p.hp = Math.min(p.maxHp, p.hp + amt);
-        C.noteBuild(res.name.slice(0, 18) + ": ate +" + amt + " HP");
-        C.floater(p.x, p.y - 24, "+" + amt + " HP", "#11d939");
-        return "Consumed " + res.name + ": +" + amt + " HP on the spot.";
+        const power = 1 + Math.floor(r / 3);
+        C.satAdd("potion", power);
+        C.noteBuild(res.name.slice(0, 18) + ": potion +" + power + " (Q)");
+        return "Stashed " + res.name + ": potion +" + power + " HP. Press Q to drink" +
+          " (+healing bonuses apply on use).";
       }
       if (/bomb|grenade|dynamite|explosive|volatile|mine/i.test(nm)) {
-        C.detonate(p.x, p.y, 135, C.playerDmg(2 + Math.floor(r / 2)), "fire");
-        C.noteBuild(res.name.slice(0, 18) + ": volatile boom");
-        return "Volatile " + res.name + ": it detonates on touch! Guards nearby eat " +
-          (2 + Math.floor(r / 2)) + " fire damage.";
+        const power = 2 + Math.floor(r / 2);
+        C.satAdd("bomb", power);
+        C.noteBuild(res.name.slice(0, 18) + ": bomb " + power + " (Q)");
+        return "Stashed " + res.name + ": throw it with Q (lands late, " + power +
+          " fire). Selected bombs restock +1 per 25s up to 3.";
       }
       if (/scrap|junk|spare parts|toolkit|wrench|gears|screwdriver|toolbox|duct tape/i.test(nm)) {
         const amt = 2 + Math.floor(r / 2);
@@ -36,10 +38,11 @@
         return "Scrapped " + res.name + ": +" + amt + " parts. Tinkers spend them on rigs.";
       }
       if (/decoy|bait|lure|smoke/i.test(nm)) {
-        p.cloakT = 5 + r * 0.3;
-        C.noteBuild(res.name.slice(0, 18) + ": cloak " + p.cloakT.toFixed(0) + "s");
-        return "Deployed " + res.name + ": guards lose your trail for " +
-          p.cloakT.toFixed(0) + "s (pulls stay quiet too).";
+        const power = 5 + r * 0.3;
+        C.satAdd("decoy", power);
+        C.noteBuild(res.name.slice(0, 18) + ": decoy " + power.toFixed(0) + "s (Q)");
+        return "Stashed " + res.name + ": press Q to vanish for " +
+          power.toFixed(0) + "s (pulls stay quiet too).";
       }
       // Gear: armor blocks hits, footwear speeds you up.
       if (/armor|plate|aegis|chainmail|barrier|suit/i.test(nm)) {

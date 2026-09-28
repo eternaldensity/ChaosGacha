@@ -14,6 +14,8 @@
   #hud .pill { background:#1f242e; border-radius: 999px; padding: 3px 10px; font-size: .9rem; }
   #tickets { display:flex; gap:6px; flex-wrap: wrap; }
   #build { display:flex; gap:6px; flex-wrap:wrap; margin:6px 0; font-size:.8rem; }
+  #satchel { display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:0 0 6px; font-size:.8rem; opacity:.95; }
+  #satchel .sel { border-color:var(--accent); background:#2a3342; }
   .bchip { background:#1a1410; border:1px solid #6b5518; border-radius:6px; padding:2px 7px; }
   .bchip.pass { border-color:#2a4a6b; background:#101820; }
   .bchip.pet { border-color:#1f5b52; background:#0e1a18; }
@@ -85,6 +87,7 @@
   </div>
   <div id="tickets"></div>
   <div id="build" title="Everything your prizes do, in one place"></div>
+  <div id="satchel" title="Consumables: Q uses the selected stack, C cycles"></div>
   <div id="stage">
     <canvas id="game" width="960" height="540"></canvas>
     <div id="title"><div class="tbox">
@@ -113,6 +116,7 @@
           <li><kbd>K</kbd> / <kbd>L</kbd> — fire slots 2–3 (unlock: +1 per 5 abilities)</li>
           <li><kbd>P</kbd> — rotate familiars (2 active, rest stabled)</li>
           <li><kbd>M</kbd> — mute / unmute bleeps</li>
+          <li><kbd>F</kbd> — fire weapon · <kbd>Q</kbd> — use consumable · <kbd>C</kbd> — cycle satchel</li>
           <li><kbd>B</kbd> — manage stashed powers (full slots open a draft pick)</li>
         </ul>
         <b>Survival tips</b>
@@ -147,7 +151,7 @@
       </div></div></div>
   </div>
   <p id="help"><kbd>WASD</kbd> move · <kbd>E</kbd> start pull (walk away, come back for loot) ·
-    <kbd>Space</kbd> dodge · <kbd>J</kbd>/<kbd>K</kbd>/<kbd>L</kbd> powers · <kbd>P</kbd> familiars · <kbd>M</kbd> mute · <kbd>R</kbd> respawn.
+    <kbd>Space</kbd> dodge · <kbd>J</kbd>/<kbd>K</kbd>/<kbd>L</kbd> powers · <kbd>F</kbd> weapon · <kbd>Q</kbd>/<kbd>C</kbd> satchel · <kbd>M</kbd> mute · <kbd>R</kbd> respawn.
     Platinum needs depth 4+, Diamond 6+, Legendary 8+, Mythical 11+, Divine 14+.</p>
 </div>
 <script src="data/entries.js"></script>

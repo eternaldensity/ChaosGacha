@@ -207,7 +207,14 @@
       ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 2;
       ctx.strokeRect(pk.x - 8 - rs / 2, bobY - 8 - rs / 2, 16 + rs, 16 + rs);
       ctx.globalAlpha = 1;
-      if (pk.kind === "parts") {
+      if (pk.kind === "ammo") {
+        ctx.fillStyle = "#3a3a3a";
+        ctx.fillRect(pk.x - 8, bobY - 8, 16, 16);
+        ctx.fillStyle = "#ffd166";
+        ctx.fillRect(pk.x - 3, bobY - 6, 6, 12);
+        ctx.fillStyle = "#fff"; ctx.font = "10px monospace";
+        ctx.fillText("+" + pk.amount, pk.x, bobY + 22);
+      } else if (pk.kind === "parts") {
         ctx.fillStyle = "#5a4a1a";
         ctx.fillRect(pk.x - 8, bobY - 8, 16, 16);
         ctx.fillStyle = "#ffe066"; ctx.font = "bold 11px monospace";

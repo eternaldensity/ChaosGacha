@@ -7,6 +7,13 @@
     if (!p.weapon || p.atkCd > 0 || C.G.over) return;
     p.atkCd = 0.45 * (p.weapon.rate || 1);
     if (p.weapon.ranged) {
+      if ((p.ammo || 0) <= 0) {
+        C.floater(p.x, p.y - 24, "out of ammo!", "#ff5555");
+        C.audio.dry();
+        p.atkCd = 0.3;
+        return;
+      }
+      p.ammo -= 1;
       const g = C.nearestGuard(420);
       const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : (p.facing || 0);
       const angs = p.weapon.pattern === "spread" ? [-0.16, 0, 0.16] : [0];
@@ -307,6 +314,75 @@
     return { mult, stunned, died: false };
   };
 
+  // Satchel: bombs / potions / decoys. Q uses the selected stack, C cycles.
+  // The selected stack restocks +1 per 25s up to 3 while equipped.
+  C.SAT_ORDER = ["bomb", "potion", "decoy"];
+  C.satAdd = function (kind, power) {
+    const p = C.G.p;
+    const st = p.satchel[kind];
+    if (st) {
+      st.qty = Math.min(5, st.qty + 1);
+      if (power > st.power) st.power = power;
+    } else {
+      p.satchel[kind] = { kind, qty: 1, power };
+    }
+    C.updateHud();
+  };
+  C.cycleSatchel = function () {
+    const p = C.G.p;
+    const have = C.SAT_ORDER.filter(k => p.satchel[k]);
+    if (!have.length) {
+      C.floater(p.x, p.y - 24, "satchel empty", "#8b93a3");
+      return;
+    }
+    const i = have.indexOf(p.satSel);
+    p.satSel = have[(i + 1) % have.length];
+    C.floater(p.x, p.y - 24, "selected: " + p.satSel, "#ffe066");
+    C.updateHud();
+  };
+  C.useConsumable = function () {
+    const p = C.G.p;
+    if (C.G.over || C.G.title || C.G.draft) return false;
+    let st = p.satchel[p.satSel];
+    if (!st) { C.cycleSatchel(); st = p.satchel[p.satSel]; }
+    if (!st) { C.floater(p.x, p.y - 24, "satchel empty", "#8b93a3"); return false; }
+    if (st.qty <= 0) { C.floater(p.x, p.y - 24, st.kind + " restocking…", "#8b93a3"); return false; }
+    if (st.kind === "bomb") {
+      const g = C.nearestGuard(520);
+      const tx = g ? g.x : p.x + Math.cos(p.facing) * 200;
+      const ty = g ? g.y : p.y + Math.sin(p.facing) * 200;
+      C.delayed.push({ x: tx, y: ty, t: 0.6, r: 95,
+        dmg: C.playerDmg(st.power, "fire"), element: "fire" });
+      C.floater(p.x, p.y - 30, "🧨 out!", "#ff8c00");
+    } else if (st.kind === "potion") {
+      if (p.hp >= p.maxHp) return false;
+      const amt = (st.power + (p.healBonus || 0)) * (p.healMult || 1);
+      p.hp = Math.min(p.maxHp, p.hp + amt);
+      C.floater(p.x, p.y - 24, "+" + amt + " HP", "#11d939");
+    } else if (st.kind === "decoy") {
+      p.cloakT = st.power;
+      C.floater(p.x, p.y - 24, "👻 " + st.power.toFixed(0) + "s", "#c77dff");
+    }
+    st.qty -= 1;
+    C.updateHud();
+    return true;
+  };
+  C.tickRestock = function (dt) {
+    const p = C.G.p;
+    const st = p.satchel[p.satSel];
+    if (st && st.qty < 3) {
+      p.restockT += dt;
+      if (p.restockT >= 25) {
+        p.restockT = 0;
+        st.qty += 1;
+        C.floater(p.x, p.y - 24, "+1 " + st.kind + " restocked", "#ffe066");
+        C.updateHud();
+      }
+    } else {
+      p.restockT = 0;
+    }
+  };
+
   C.updateRam = function (dt) {
     const p = C.G.p;
     if (!p.mount) return;
@@ -466,6 +542,14 @@
     if (Math.random() < C.ticketDropChance()) {
       const spont = ["bronze", "silver", "gold"][Math.floor(Math.random() * 3)];
       C.G.p.tickets[spont]++;
+    }
+    // Gunmen drop ammo instead of coins; everyone else pays bounties.
+    // (Bosses keep their showers.)
+    if (gd.ranged && gd.type !== "collector" && gd.type !== "roller") {
+      const amt = 2 + Math.floor(Math.random() * 3);
+      room.pickups.push({ kind: "ammo", amount: amt, x: gd.x, y: gd.y, bob: 0, age: 0 });
+      C.updateHud();
+      return;
     }
     // The house pays bounties: rank + danger scale the drop.
     const bounty = { guard: [2, 5], pitboss: [4, 8], enforcer: [6, 11] }[gd.type];

@@ -202,6 +202,18 @@
         p.tickets[pk.tier] = (p.tickets[pk.tier] || 0) + 1;
         const t = C.tierById(pk.tier);
         C.floater(p.x, p.y - 24, "+1 🎟 " + pk.tier, t.color);
+      } else if (pk.kind === "ammo") {
+        C.audio.coins();
+        const space = Math.max(0, (p.ammoMax || 20) - (p.ammo || 0));
+        const take = Math.min(space, pk.amount);
+        p.ammo = (p.ammo || 0) + take;
+        C.floater(p.x, p.y - 24, "+" + take + " ammo", "#ffd166");
+        if (take < pk.amount) {
+          pk.amount -= take; // leave the rest on the floor (spliced above)
+          room.pickups.push(pk);
+          C.updateHud();
+          continue;
+        }
       } else if (pk.kind === "parts") {
         C.audio.coins();
         p.parts += pk.amount;

@@ -10,9 +10,20 @@
     C.el("hDepth").textContent = "🚪 Depth " + room.depth + " · Danger " + room.danger.toFixed(1);
     C.el("hTime").textContent = "⏱ " + C.fmtTime(C.G.t) + " · ☠" + C.G.kills + " · 🎰" + C.G.pulls;
     const prim = p.slots[0] ? "[" + C.SLOT_KEYS[0] + "] " + p.slots[0].name : null;
+    const ammoTxt = (p.weapon && p.weapon.ranged) ? " [" + (p.ammo || 0) + "💥]" : "";
     C.el("hWeapon").textContent = prim || (p.weapon
-      ? "🔫 " + p.weapon.name.slice(0, 22)
+      ? "🔫 " + p.weapon.name.slice(0, 22) + ammoTxt
       : "🥊 Unarmed (J does nothing)");
+    const satBits = [];
+    for (const k of C.SAT_ORDER) {
+      const st = p.satchel[k];
+      if (!st) continue;
+      const sel = (p.satSel === k) ? "▶" : "";
+      satBits.push("<span class='bchip" + (p.satSel === k ? " sel" : "") + "'>" + sel +
+        (k === "bomb" ? "🧨" : k === "potion" ? "🧪" : "👻") + " " + k + "×" + st.qty +
+        (st.qty < 3 && p.satSel === k ? " (+)" : "") + "</span>");
+    }
+    C.el("satchel").innerHTML = "[Q] use · [C] cycle · " + (satBits.join("") || "empty — prizes stock it");
     C.el("tickets").innerHTML = C.TIERS.map(t =>
       "<span class='tick' style='border-color:" + t.color + "'>" +
       t.label.slice(0, 4) + "×" + (p.tickets[t.id] || 0) + "</span>").join("");
