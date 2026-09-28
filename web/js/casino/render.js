@@ -262,6 +262,13 @@
         ctx.fillStyle = "#ff2222"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
         ctx.fillText("!", gd.x, gd.y - 24);
       }
+      // Possessed guards answer to you now (purple ⁉).
+      if (gd.possessed && gd.possessed > 0) {
+        ctx.strokeStyle = "#c77dff"; ctx.lineWidth = 2;
+        ctx.strokeRect(gd.x - 12, gd.y - 21, 24, 30);
+        ctx.fillStyle = "#c77dff"; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
+        ctx.fillText("⁉", gd.x, gd.y - 32);
+      }
       // Elite affix glyph: shielded ◈, elemental ✦ (element color), charger ».
       if (gd.affix === "shielded") {
         ctx.fillStyle = "#8b93a3"; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
@@ -323,6 +330,12 @@
   // Gold EXIT doorways with pulsing outward chevrons.
   function drawDoors() {
     const ctx = C.ctx, cx = C.W / 2, cy = C.H / 2, W2 = C.WALL;
+    const surveyed = !!(C.G.p.survey || C.G.p.surveyT > 0);
+    const intel = surveyed ? {
+      N: C.neighborInfo(0, -1), S: C.neighborInfo(0, 1),
+      W: C.neighborInfo(-1, 0), E: C.neighborInfo(1, 0),
+    } : null;
+    const postColor = (k) => (intel && intel[k].best) ? intel[k].best.color : "#ffe066";
     const bob = (Math.sin(C.G.t * 4) + 1) / 2; // 0..1 pulse
     const gold = "rgba(255,224,102," + (0.55 + 0.45 * bob).toFixed(2) + ")";
     // Mats inside the wall gaps.
@@ -331,11 +344,14 @@
     ctx.fillRect(cx - 34, C.H - W2, 68, W2);
     ctx.fillRect(0, cy - 34, W2, 68);
     ctx.fillRect(C.W - W2, cy - 34, W2, 68);
-    // Gold side posts.
-    ctx.fillStyle = "#ffe066";
+    // Side posts: gold, or best-machine color when surveyed.
+    ctx.fillStyle = postColor("N");
     ctx.fillRect(cx - 36, 0, 3, W2); ctx.fillRect(cx + 33, 0, 3, W2);
+    ctx.fillStyle = postColor("S");
     ctx.fillRect(cx - 36, C.H - W2, 3, W2); ctx.fillRect(cx + 33, C.H - W2, 3, W2);
+    ctx.fillStyle = postColor("W");
     ctx.fillRect(0, cy - 36, W2, 3); ctx.fillRect(0, cy + 33, W2, 3);
+    ctx.fillStyle = postColor("E");
     ctx.fillRect(C.W - W2, cy - 36, W2, 3); ctx.fillRect(C.W - W2, cy + 33, W2, 3);
     // EXIT labels inside the mats, each tagged with the depth beyond:
     // red = deadlier, green = safer, gray = same. Walk in to go through.
@@ -361,9 +377,17 @@
     const tags = { N: [cx, W2 / 2 + 9], S: [cx, C.H - W2 / 2 + 9],
       W: [W2 / 2, cy + 9], E: [C.W - W2 / 2, cy + 9] };
     for (const k of ["N", "S", "W", "E"]) {
-      const tag = depthTag(depths[k]);
-      ctx.fillStyle = tag.col;
-      ctx.fillText(tag.txt, tags[k][0], tags[k][1]);
+      if (intel) {
+        // Surveyed: depth + guard count; posts already show best machine.
+        const inf = intel[k];
+        const arrow = inf.depth > here ? "▲" : inf.depth < here ? "▼" : "＝";
+        ctx.fillStyle = inf.depth > here ? "#ff8888" : inf.depth < here ? "#11d939" : "#c7ccd6";
+        ctx.fillText("D" + inf.depth + arrow + "·" + inf.guards + "g", tags[k][0], tags[k][1]);
+      } else {
+        const tag = depthTag(depths[k]);
+        ctx.fillStyle = tag.col;
+        ctx.fillText(tag.txt, tags[k][0], tags[k][1]);
+      }
     }
     // Outward chevrons just inside the room (door corridors stay clear).
     const off = 4 + bob * 7;

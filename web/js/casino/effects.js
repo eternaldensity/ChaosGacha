@@ -118,6 +118,13 @@
         blurb: "build rigs up to " + C.rigTierFor(r) + " from parts",
       };
     }
+    if (/survey|reveal|expose|clairvoy|farsight|scry|precog|foresight|danger sense|sixth sense|\bdetect\b|oversight|all-seeing/i.test(nm)) {
+      return {
+        name: res.name, rarity: r, op: "survey",
+        cd: C.slotCd(25, r), cdLeft: 0,
+        blurb: "reveal nearby rooms (" + Math.round(20 + r * 2) + "s intel)",
+      };
+    }
     if (/laser|disintegrat|annihilat|death.?ray|solar.?ray|lunar.?ray|heat.?vision|\bray\b|lightlance/i.test(nm)) {
       const power = 2 + Math.floor(r / 2);
       return {
@@ -132,6 +139,13 @@
         name: res.name, rarity: r, op: "lobbed", element: el, power,
         cd: C.slotCd(8, r), cdLeft: 0,
         blurb: "delayed blast (" + power + " dmg, lands late)",
+      };
+    }
+    if (/dominate|possess|mind control|betray|\bcharm\b|confuse|beguile|enthrall/i.test(nm)) {
+      return {
+        name: res.name, rarity: r, op: "betray",
+        cd: C.slotCd(18, r), cdLeft: 0,
+        blurb: "turn a guard for " + Math.round(8 + r * 0.5) + "s",
       };
     }
     if (/wave|tide|tsunami|kinesis|telekinesis|gravity|graviton|gust|vortex|maelstrom|\bwind\b|gale|tornado|repuls/i.test(nm)) {

@@ -49,7 +49,7 @@
         buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null,
         cdr: 0, elemBonus: {}, resist: {}, luck: 0, regen: 0, regenT: 0,
         healBonus: 0, rollCdMax: 5, threatDecayT: 0, rangedBonus: 0, draft: null,
-        parts: 0,
+        parts: 0, survey: false, surveyT: 0,
       },
       cardT: 0, shake: 0,
     };
@@ -238,6 +238,21 @@
   };
 
   C.curRoom = function () { return C.getRoom(C.G.roomX, C.G.roomY); };
+
+  // Neighbor intel for surveyed doors (generates + caches the neighbor room).
+  // Returns {depth, guards, best} where best is {label, color} of top machine.
+  C.neighborInfo = function (dx, dy) {
+    const room = C.getRoom(C.G.roomX + dx, C.G.roomY + dy);
+    let best = null;
+    for (const m of room.machines) {
+      if (!best || C.tierIdx(m.tier) > C.tierIdx(best.tier)) best = m;
+    }
+    const t = best ? C.tierById(best.tier) : null;
+    return {
+      depth: room.depth, guards: room.guards.length,
+      best: t ? { label: t.label.slice(0, 4), color: t.color } : null,
+    };
+  };
 
   // Debt Collector: the house collecting in person. Slow, huge, pays out.
   C.makeBoss = function (room, danger, depth) {

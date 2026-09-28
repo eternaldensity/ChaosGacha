@@ -153,6 +153,27 @@
     } else if (ab.op === "tinker") {
       C.openDraft({ kind: "build", ab });
       return true; // menu handles the cooldown on build, not on open
+    } else if (ab.op === "survey") {
+      p.surveyT = 20 + ab.rarity * 2;
+      const dirs = [["N", 0, -1], ["S", 0, 1], ["W", -1, 0], ["E", 1, 0]];
+      const lines = dirs.map(([k, dx, dy]) => {
+        const info = C.neighborInfo(dx, dy);
+        return k + ": depth " + info.depth + ", " + info.guards + " guards" +
+          (info.best ? ", best " + info.best.label : "");
+      });
+      C.showCard("🔭 " + ab.name + " (" + Math.round(p.surveyT) + "s intel)",
+        lines.join(" · "), "Doors now tag guards + best machine.", 5000);
+    } else if (ab.op === "betray") {
+      const room = C.curRoom();
+      let best = null, bd = 220;
+      for (const gd of room.guards) {
+        const d = Math.hypot(gd.x - p.x, gd.y - p.y);
+        if (d < bd) { bd = d; best = gd; }
+      }
+      if (!best) return false; // no mark in reach: don't burn the cooldown
+      best.possessed = 8 + ab.rarity * 0.5;
+      best.chase = true;
+      C.floater(best.x, best.y - 30, "⁉ turned!", "#c77dff");
     } else if (ab.op === "dash") {
       p.dashDx = Math.cos(p.facing); p.dashDy = Math.sin(p.facing);
       p.dashSpd = ab.power;
@@ -474,6 +495,29 @@
     const p = C.G.p, room = C.curRoom();
     for (const gd of [...room.guards]) {
       const d = Math.hypot(gd.x - p.x, gd.y - p.y);
+      // Possessed: it hunts its own coworkers for a while.
+      if (gd.possessed && gd.possessed > 0) {
+        gd.possessed -= dt;
+        let mark = null, md = 1e9;
+        for (const o of room.guards) {
+          if (o === gd || (o.possessed && o.possessed > 0)) continue;
+          const d = Math.hypot(o.x - gd.x, o.y - gd.y);
+          if (d < md) { md = d; mark = o; }
+        }
+        if (mark) {
+          const a = Math.atan2(mark.y - gd.y, mark.x - gd.x);
+          gd.x += Math.cos(a) * gd.speed * dt;
+          gd.y += Math.sin(a) * gd.speed * dt;
+          const fixed = C.collideCircle(gd.x, gd.y, 9, C.solids(room));
+          gd.x = fixed[0]; gd.y = fixed[1];
+          if (md < 22 && gd.atkCd <= 0) {
+            C.damageGuard(mark, 2, null);
+            gd.atkCd = 1.0;
+          }
+        }
+        if (gd.atkCd > 0) gd.atkCd -= dt;
+        continue;
+      }
       // Cloaked: the trail goes cold, chasers give up.
       if (C.G.p.cloakT > 0) {
         gd.chase = false;

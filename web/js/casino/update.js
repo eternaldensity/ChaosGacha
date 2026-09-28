@@ -81,6 +81,7 @@
     if (p.inv > 0) p.inv -= dt;
     if (p.rollCd > 0) p.rollCd -= dt;
     if (p.cloakT > 0) p.cloakT -= dt;
+    if (p.surveyT > 0) p.surveyT -= dt;
     if (p.rollT > 0) {
       p.rollT -= dt;
       if (p.rollT <= 0) { p.dashDx = null; p.dashDy = null; p.dashSpd = 0; }

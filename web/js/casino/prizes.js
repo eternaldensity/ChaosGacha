@@ -157,6 +157,12 @@
         C.noteBuild(res.name.slice(0, 18) + ": raw magic, cooldowns down", "pass");
         return "Trait: raw magic — power cooldowns tick faster.";
       }
+      if (/thinker|sense|detect|perceiv|predict|foresight|intuit|insight|sixth sense|danger sense|awareness|vigil/i.test(nm)) {
+        p.survey = true;
+        p.luck = (p.luck || 0) + 1;
+        C.noteBuild(res.name.slice(0, 18) + ": seer (door intel + luck)", "pass");
+        return "Trait: seer — doors show guards and best machines, +1 luck.";
+      }
       p.speed *= 1.02; p.pullMul = Math.max(0.6, p.pullMul * 0.98);
       C.noteBuild(res.name.slice(0, 18) + ": edge (speed/pull)", "pass");
       return "Trait: small all-round edge (rarity " + r.toFixed(1) + ").";
