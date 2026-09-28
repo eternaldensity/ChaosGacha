@@ -21,18 +21,67 @@
     }
   }
 
+  // Vertical fade so the tape reads as a wheel seen edge-on.
+  function reelFade(ctx, x, y, w, h) {
+    const gr = ctx.createLinearGradient(0, y, 0, y + h);
+    gr.addColorStop(0, "rgba(8,10,14,.7)");
+    gr.addColorStop(0.3, "rgba(8,10,14,0)");
+    gr.addColorStop(0.7, "rgba(8,10,14,0)");
+    gr.addColorStop(1, "rgba(8,10,14,.7)");
+    ctx.fillStyle = gr;
+    ctx.fillRect(x, y, w, h);
+  }
+
+  function symFont(s) {
+    return s.length > 1 ? "bold 10px monospace" : "bold 15px monospace";
+  }
+
+  // One spinning slot window: a wrapping symbol tape scrolling downward,
+  // easing onto the target symbol with the tier color on lock.
+  function drawSlotReelWindow(m, t, i) {
+    const ctx = C.ctx;
+    const reel = m.pull.reels[i];
+    const x = m.x - 39 + i * 27, y = m.y - 16, w = 25, h = 30;
+    const H = C.REEL_H, N = C.SYMS.length;
+    ctx.save();
+    ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
+    ctx.fillStyle = "#10131a";
+    ctx.fillRect(x, y, w, h);
+    const kMin = Math.floor(-reel.pos / H) - 1;
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    for (let j = 0; j <= 3; j++) {
+      const k = kMin + j;
+      const s = C.SYMS[C.pmod(k, N)];
+      const yc = k * H + reel.pos + H / 2;
+      const edge = Math.abs(yc - (y + h / 2)) / (h / 2); // 0 center, 1+ edge
+      ctx.globalAlpha = Math.max(0.3, 1 - edge * 0.55);
+      ctx.fillStyle = reel.state === "locked" ? t.color : "#c7ccd6";
+      ctx.font = symFont(s);
+      ctx.fillText(s.length > 3 ? s.slice(0, 3) : s, x + w / 2, yc);
+    }
+    ctx.globalAlpha = 1;
+    reelFade(ctx, x, y, w, h);
+    ctx.restore();
+    ctx.strokeStyle = reel.state === "locked" ? t.color : "#333a47";
+    ctx.lineWidth = reel.state === "locked" ? 2 : 1;
+    ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+  }
+
   function slotWindows(m, t) {
     const ctx = C.ctx;
-    const labels = m.pull ? m.pull.disp : ["◈", "◈", "◈"];
+    if (m.pull) {
+      for (let i = 0; i < 3; i++) drawSlotReelWindow(m, t, i);
+      return;
+    }
+    // Idle: show the last result dimmed.
+    const labels = m.idleSyms || ["◈", "◈", "◈"];
     for (let i = 0; i < 3; i++) {
       const x = m.x - 39 + i * 27, y = m.y - 16;
       ctx.fillStyle = "#1a1e28";
       ctx.fillRect(x, y, 25, 30);
-      const locked = m.pull && m.pull.locks[i];
-      ctx.strokeStyle = locked ? t.color : "#333a47";
-      ctx.lineWidth = locked ? 2 : 1;
+      ctx.strokeStyle = "#333a47"; ctx.lineWidth = 1;
       ctx.strokeRect(x + 0.5, y + 0.5, 24, 29);
-      ctx.fillStyle = locked ? t.color : "#8b93a3";
+      ctx.fillStyle = "#8b93a3";
       ctx.font = "bold 13px monospace"; ctx.textAlign = "center";
       const s = String(labels[i]);
       ctx.fillText(s.length > 3 ? s.slice(0, 3) : s, x + 12.5, y + 20);
@@ -42,25 +91,57 @@
   function gachaWindow(m, t) {
     const ctx = C.ctx;
     const x = m.x - 42, y = m.y - 15, w = 84, h = 28;
+    if (m.pull) {
+      // Spinning: decoy names scroll downward and slow; the winner fades in.
+      const pull = m.pull, reel = pull.reel;
+      const strip = pull.gacha.strip.length ? pull.gacha.strip
+        : [{ name: pull.gacha.res.name, rarity: pull.gacha.res.rarity }];
+      const H = C.GREEL_H, L = strip.length;
+      ctx.save();
+      ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
+      ctx.fillStyle = "#10131a";
+      ctx.fillRect(x, y, w, h);
+      const kMin = Math.floor(-reel.pos / H) - 1;
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      ctx.font = "bold 10px monospace";
+      for (let j = 0; j <= 3; j++) {
+        const k = kMin + j;
+        const e = strip[C.pmod(k, L)];
+        const yc = k * H + reel.pos + H / 2;
+        const edge = Math.abs(yc - (y + h / 2)) / (h / 2);
+        ctx.globalAlpha = Math.max(0.3, 1 - edge * 0.55);
+        ctx.fillStyle = C.rarityColor(e.rarity);
+        ctx.fillText(String(e.name).slice(0, 16), m.x, yc);
+      }
+      if (reel.state !== "spin") {
+        const a = reel.state === "locked" ? 1 : Math.min(1, reel.landT / 0.45);
+        ctx.globalAlpha = a;
+        ctx.fillStyle = "#10131a";
+        ctx.fillRect(x, y, w, h);
+        ctx.fillStyle = C.rarityColor(pull.gacha.res.rarity);
+        ctx.font = "bold 10px monospace";
+        ctx.fillText("▶ " + String(pull.gacha.res.name).slice(0, 12) + " ◀", m.x, y + h / 2);
+      }
+      ctx.globalAlpha = 1;
+      reelFade(ctx, x, y, w, h);
+      ctx.restore();
+      ctx.strokeStyle = reel.state === "locked"
+        ? C.rarityColor(pull.gacha.res.rarity) : t.color;
+      ctx.lineWidth = 2;
+      ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+      return;
+    }
     ctx.fillStyle = "#1a1e28";
     ctx.fillRect(x, y, w, h);
-    ctx.strokeStyle = m.pull ? t.color : "#333a47";
-    ctx.lineWidth = m.pull ? 2 : 1;
+    ctx.strokeStyle = "#333a47"; ctx.lineWidth = 1;
     ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
     ctx.textAlign = "center";
-    if (m.pull) {
-      const pull = m.pull;
-      const name = pull.fin != null || pull.t >= pull.dur
-        ? pull.gacha.res.name
-        : (pull.gacha.strip[pull.gIdx] || {}).name || "???";
-      const off = Math.floor(pull.t * 9) % Math.max(1, name.length);
-      const shown = (name + " ⋯ " + name).slice(off, off + 13);
-      ctx.fillStyle = C.rarityColor(pull.gacha.res.rarity);
-      ctx.font = "bold 10px monospace";
-      ctx.fillText(shown, m.x, y + 18);
+    ctx.font = "bold 10px monospace";
+    if (m.lastPrize) {
+      ctx.fillStyle = C.rarityColor(m.lastPrize.rarity);
+      ctx.fillText(String(m.lastPrize.name).slice(0, 13), m.x, y + 18);
     } else {
       ctx.fillStyle = "#8b93a3";
-      ctx.font = "bold 10px monospace";
       ctx.fillText((m.cat || "?").toUpperCase().slice(0, 8), m.x, y + 18);
     }
   }

@@ -174,6 +174,7 @@
       const t = pickTier();
       room.machines.push({
         id: i, kind, tier: t.id, color: t.color, pull: null,
+        idleSyms: ["◈", "◈", "◈"], lastPrize: null,
         cat: kind === "gacha"
           ? (Math.random() < 0.55 ? "random" : C.CATS[Math.floor(Math.random() * C.CATS.length)])
           : null,

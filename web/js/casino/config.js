@@ -8,6 +8,11 @@ window.Casino = window.Casino || {};
   C.MW = 96; C.MH = 72;
   C.INTERACT_R = 100;
   C.PICKUP_R = 26;
+  // Reel geometry: symbol row heights for the in-place spin animation.
+  C.REEL_H = 30;   // slot reel window row
+  C.GREEL_H = 28;  // gacha reel window row
+
+  C.pmod = function (n, m) { return ((n % m) + m) % m; };
 
   // Tiny seeded PRNG so room layouts are stable across revisits.
   C.rng = function (seed) {

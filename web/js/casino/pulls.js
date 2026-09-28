@@ -27,10 +27,16 @@
       }
       C.G.p.coins -= c;
       const pay = C.rollSlotPayout(t);
+      const syms = C.symbolsFor(pay);
+      const total = C.SYMS.length * C.REEL_H;
       m.pull = {
-        t: 0, dur: t.pull * C.G.p.pullMul, pay,
-        syms: C.symbolsFor(pay), locks: [false, false, false],
-        disp: ["7", "7", "7"], fin: null,
+        t: 0, dur: t.pull * C.G.p.pullMul, pay, syms, fin: null,
+        // Each reel scrolls a wrapping symbol tape, then lands on its target.
+        reels: syms.map((s, i) => ({
+          pos: Math.random() * total, vel: 560 + i * 60,
+          state: "spin", target: C.SYMS.indexOf(s),
+          landFrom: 0, landTo: 0, landT: 0,
+        })),
       };
     } else {
       if ((C.G.p.tickets[m.tier] || 0) < 1) {
@@ -39,7 +45,10 @@
         return;
       }
       C.G.p.tickets[m.tier]--;
-      m.pull = { t: 0, dur: 3.0 * C.G.p.pullMul, gacha: C.gachaRoll(m.tier, m.cat), gIdx: 0, fin: null };
+      m.pull = {
+        t: 0, dur: 3.0 * C.G.p.pullMul, gacha: C.gachaRoll(m.tier, m.cat), fin: null,
+        reel: { pos: Math.random() * 280, vel: 460, state: "spin", landT: 0 },
+      };
     }
     // Noise: alert nearby guards.
     const room = C.curRoom();
@@ -66,6 +75,8 @@
   function completePull(room, m) {
     const pull = m.pull, t = C.tierById(m.tier);
     m.pull = null;
+    if (m.kind === "slot") m.idleSyms = pull.syms.slice();
+    else m.lastPrize = { name: pull.gacha.res.name, rarity: pull.gacha.res.rarity };
     C.G.pulls++;
     if (m.kind === "slot") {
       const pay = pull.pay, at = { x: m.x, y: m.y };
@@ -93,7 +104,53 @@
     C.updateHud();
   }
 
-  // Animate one machine pull; returns true when it just finished.
+  var REEL_LOCKS = [0.55, 0.75, 0.95]; // reels land left-to-right
+  var LAND_DUR = 0.34;   // slot reel landing (ease + bounce)
+  var GREEL_LAND = 0.45; // gacha reel slow-down
+
+  function easeOutBack(p) {
+    var c1 = 1.70158, c3 = c1 + 1;
+    return 1 + c3 * Math.pow(p - 1, 3) + c1 * Math.pow(p - 1, 2);
+  }
+
+  // Scroll one slot reel; when lockNow, ease onto the target symbol.
+  function tickSlotReel(reel, dt, lockNow) {
+    var H = C.REEL_H, total = C.SYMS.length * H;
+    if (reel.state === "locked") return;
+    if (reel.state === "spin") {
+      reel.pos += reel.vel * dt;
+      if (!lockNow) return;
+      // Land on the next offset at/after pos+90px that centers the target.
+      var targetPos = C.pmod(-reel.target * H, total);
+      reel.landFrom = reel.pos;
+      reel.landTo = reel.pos + 90 + C.pmod(targetPos - (reel.pos + 90), total);
+      reel.landT = 0;
+      reel.state = "land";
+      return;
+    }
+    reel.landT += dt;
+    var p = Math.min(1, reel.landT / LAND_DUR);
+    reel.pos = reel.landFrom + (reel.landTo - reel.landFrom) * easeOutBack(p);
+    if (p >= 1) { reel.state = "locked"; reel.pos = reel.landTo; }
+  }
+
+  // Scroll the gacha reel; landing is a slow-down while the winner fades in.
+  function tickGachaReel(pull, dt, frac) {
+    var reel = pull.reel;
+    if (reel.state === "locked") return;
+    if (reel.state === "spin") {
+      reel.pos += reel.vel * dt;
+      if (frac >= 0.8) { reel.state = "land"; reel.landT = 0; }
+      return;
+    }
+    reel.landT += dt;
+    var p = Math.min(1, reel.landT / GREEL_LAND);
+    reel.vel = 460 * (1 - p) * (1 - p);
+    reel.pos += reel.vel * dt;
+    if (p >= 1) reel.state = "locked";
+  }
+
+  // Animate one machine pull; payout waits for locked reels, then holds briefly.
   function tickMachinePull(room, m, dt) {
     const pull = m.pull;
     if (!pull) return;
@@ -103,21 +160,17 @@
       return;
     }
     pull.t += dt;
+    const frac = Math.min(1, pull.t / pull.dur);
+    var settled;
     if (m.kind === "slot") {
-      const frac = Math.min(1, pull.t / pull.dur);
-      const locks = [0.55, 0.75, 0.95];
-      locks.forEach((edge, i) => {
-        if (frac >= edge) {
-          pull.locks[i] = true;
-          pull.disp[i] = pull.syms[i];
-        } else {
-          pull.disp[i] = C.SYMS[Math.floor(Math.random() * C.SYMS.length)];
-        }
-      });
-    } else if (pull.gacha.strip.length && Math.random() < 0.5) {
-      pull.gIdx = (pull.gIdx + 1) % pull.gacha.strip.length;
+      pull.reels.forEach((reel, i) => tickSlotReel(reel, dt, frac >= REEL_LOCKS[i]));
+      settled = pull.reels.every(r => r.state === "locked");
+    } else {
+      tickGachaReel(pull, dt, frac);
+      settled = pull.reel.state === "locked";
     }
-    if (pull.t >= pull.dur) pull.fin = 0.42; // hold the locked result briefly
+    // Pay out once the reels show the result (with a hard cap as fallback).
+    if ((pull.t >= pull.dur && settled) || pull.t >= pull.dur + 0.8) pull.fin = 0.42;
   }
 
   // Tick every known room's pulls so loot is waiting when you circle back.
