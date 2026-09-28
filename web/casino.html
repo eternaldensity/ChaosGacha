@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1016">
+<title>Chaos Casino</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/app.css">
+<style>
+  #wrap { max-width: 1020px; margin: 0 auto; padding: 10px; }
+  #hud { display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    background: #14171e; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; margin: 8px 0; }
+  #hud .pill { background:#1f242e; border-radius: 999px; padding: 3px 10px; font-size: .9rem; }
+  #tickets { display:flex; gap:6px; flex-wrap: wrap; }
+  .tick { font-size:.8rem; background:#20242e; border:1px solid #333a47; border-radius:6px; padding:2px 6px; }
+  #stage { position: relative; }
+  canvas#game { width: 100%; border-radius: 10px; background:#0b0d12; border:1px solid var(--line);
+    image-rendering: pixelated; display:block; }
+  #reelOverlay { position:absolute; left:50%; bottom:14px; transform:translateX(-50%);
+    display:none; background:rgba(8,10,14,.94); border:1px solid var(--accent); border-radius:12px;
+    padding:10px 14px; text-align:center; min-width:280px; max-width:92%; z-index:5; }
+  #reelOverlay.show { display:block; }
+  #reelTitle { font-weight:700; margin-bottom:6px; }
+  #slotReels { display:flex; gap:10px; justify-content:center; }
+  .sreel { width:64px; height:64px; font-size:40px; display:flex; align-items:center; justify-content:center;
+    background:#10131a; border:1px solid #333; border-radius:8px; }
+  .sreel.locked { border-color: var(--accent); box-shadow:0 0 0 2px var(--accent); }
+  #gachaReel { height:54px; overflow:hidden; background:#10131a; border:1px solid #333; border-radius:8px;
+    display:flex; align-items:center; justify-content:center; font-weight:700; padding:0 10px; }
+  #reelSub { font-size:.85rem; opacity:.85; margin-top:6px; }
+  #chanWrap { height:8px; background:#20242e; border-radius:99px; margin-top:8px; overflow:hidden; }
+  #chanBar { height:100%; width:0%; background:var(--accent); }
+  #card { position:absolute; left:50%; top:12px; transform:translateX(-50%); display:none; z-index:6;
+    background:#10131a; border:1px solid var(--accent); border-radius:10px; padding:10px 12px; max-width:92%; }
+  #card.show { display:block; }
+  #card h3 { margin:0 0 4px; font-size:1rem; }
+  #card p { margin:4px 0; font-size:.88rem; }
+  #death { display:none; position:absolute; inset:0; z-index:7; background:rgba(5,6,9,.9);
+    border-radius:10px; align-items:center; justify-content:center; text-align:center; padding:20px; }
+  #death.show { display:flex; }
+  #help { font-size:.85rem; opacity:.9; }
+  kbd { background:#222; border:1px solid #444; border-radius:4px; padding:0 5px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <header class="app"><h1>🎰 Chaos Casino</h1><a class="homelink" href="index.html">🏠 <span class="lbl">Home</span></a></header>
+  <div id="hud">
+    <span class="pill" id="hCoins">🪙 100</span>
+    <span class="pill" id="hHp">❤ 3/3</span>
+    <span class="pill" id="hThreat">★ Threat 0</span>
+    <span class="pill" id="hDepth">🚪 Depth 0 · Danger 1.0</span>
+    <span class="pill" id="hTime">⏱ 0:00</span>
+    <span class="pill" id="hWeapon">🥊 Unarmed</span>
+  </div>
+  <div id="tickets"></div>
+  <div id="stage">
+    <canvas id="game" width="960" height="540"></canvas>
+    <div id="reelOverlay">
+      <div id="reelTitle">Pulling…</div>
+      <div id="slotReels"><div class="sreel">7</div><div class="sreel">7</div><div class="sreel">7</div></div>
+      <div id="gachaReel" style="display:none">…</div>
+      <div id="chanWrap"><div id="chanBar"></div></div>
+      <div id="reelSub">Move to cancel · Hit cancels</div>
+    </div>
+    <div id="card"><h3 id="cardTitle"></h3><p id="cardBody"></p><p id="cardSub"></p></div>
+    <div id="death"><div><h2>Soul collected.</h2><p id="deathStats"></p><p id="deathLegacy"></p>
+      <button id="againBtn" class="pick">Respawn with legacy (R)</button></div></div>
+  </div>
+  <p id="help"><kbd>WASD</kbd> move · <kbd>E</kbd> hold near machine to pull · <kbd>Space</kbd> dodge ·
+    <kbd>J</kbd>/click attack when armed · <kbd>R</kbd> respawn after death. Slots = 3 reels, gacha = 1 reel.
+    Platinum needs depth 4+, Diamond 6+, Legendary 8+, Mythical 11+, Divine 14+.</p>
+</div>
+<script src="data/entries.js"></script>
+<script src="js/rng.js"></script>
+<script src="js/gacha.js"></script>
+<script src="js/casino.js" defer></script>
+</body>
+</html>
