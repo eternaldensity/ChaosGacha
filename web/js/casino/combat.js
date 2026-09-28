@@ -459,6 +459,13 @@
       const spont = ["bronze", "silver", "gold"][Math.floor(Math.random() * 3)];
       C.G.p.tickets[spont]++;
     }
+    // The house pays bounties: rank + danger scale the drop.
+    const bounty = { guard: [2, 5], pitboss: [4, 8], enforcer: [6, 11] }[gd.type];
+    if (bounty) {
+      const amt = bounty[0] + Math.floor(Math.random() * (bounty[1] - bounty[0] + 1)) +
+        Math.floor(room.danger / 3);
+      room.pickups.push({ kind: "coins", amount: amt, x: gd.x, y: gd.y, bob: 0, age: 0 });
+    }
     C.updateHud();
   };
 
@@ -495,6 +502,7 @@
   C.die = function () {
     C.G.over = true;
     C.audio.death();
+    C.ui.card.classList.remove("show");
     const dreRoom = C.curRoom();
     const best = C.saveBest(dreRoom.depth, C.G.t, C.G.kills);
     const bestTag = best ? " ★ NEW BEST" : "";

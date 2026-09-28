@@ -329,20 +329,6 @@
     const room = C.curRoom();
     C.projs.length = 0;
     C.floaters.length = 0;
-    // Pity chips: a broke, ticketless player gets comped so a run can
-    // never fully soft-lock (no coins, no tickets, no weapon).
-    let cheapest = Infinity;
-    for (const tier of C.TIERS) cheapest = Math.min(cheapest, C.slotCost(tier));
-    const broke = C.G.p.coins < cheapest &&
-      !Object.values(C.G.p.tickets).some(n => n > 0);
-    if (broke && !room._seen) {
-      C.G.p.coins += 10;
-      C.floater(C.G.p.x, C.G.p.y - 30, "+10 pity chips", "#ffe066");
-      if (!C.G.feats.pity) {
-        C.G.feats.pity = 1;
-        C.showCard("Pity chips (+10)", "Broke and ticketless? The house comps you. Don't spend it all in one place.", "", 2600);
-      }
-    }
     if (room.vault && room.depth >= 6 && !room.bossSpawned) {
       room.bossSpawned = true;
       if (Math.random() < 0.35) {
