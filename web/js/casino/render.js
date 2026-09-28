@@ -47,12 +47,14 @@
     ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
     ctx.fillStyle = "#10131a";
     ctx.fillRect(x, y, w, h);
-    const kMin = Math.floor(-reel.pos / H) - 1;
+    // Tape index q drifts with pos; rows tile around the window center and
+    // move downward as pos grows (screenY rises with q for fixed k).
+    const q = reel.pos / H, k0 = Math.floor(q);
     ctx.textAlign = "center"; ctx.textBaseline = "middle";
-    for (let j = 0; j <= 3; j++) {
-      const k = kMin + j;
+    for (let j = -1; j <= 2; j++) {
+      const k = k0 + j;
       const s = C.SYMS[C.pmod(k, N)];
-      const yc = k * H + reel.pos + H / 2;
+      const yc = y + h / 2 + (q - k) * H;
       const edge = Math.abs(yc - (y + h / 2)) / (h / 2); // 0 center, 1+ edge
       ctx.globalAlpha = Math.max(0.3, 1 - edge * 0.55);
       ctx.fillStyle = reel.state === "locked" ? t.color : "#c7ccd6";
@@ -101,13 +103,13 @@
       ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
       ctx.fillStyle = "#10131a";
       ctx.fillRect(x, y, w, h);
-      const kMin = Math.floor(-reel.pos / H) - 1;
+      const q = reel.pos / H, k0 = Math.floor(q);
       ctx.textAlign = "center"; ctx.textBaseline = "middle";
       ctx.font = "bold 10px monospace";
-      for (let j = 0; j <= 3; j++) {
-        const k = kMin + j;
+      for (let j = -1; j <= 2; j++) {
+        const k = k0 + j;
         const e = strip[C.pmod(k, L)];
-        const yc = k * H + reel.pos + H / 2;
+        const yc = y + h / 2 + (q - k) * H;
         const edge = Math.abs(yc - (y + h / 2)) / (h / 2);
         ctx.globalAlpha = Math.max(0.3, 1 - edge * 0.55);
         ctx.fillStyle = C.rarityColor(e.rarity);

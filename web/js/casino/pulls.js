@@ -123,7 +123,7 @@
       reel.pos += reel.vel * Math.min(1, 0.25 + pullT / 0.5) * dt;
       if (!lockNow) return;
       // Land on the next offset at/after pos+90px that centers the target.
-      var targetPos = C.pmod(-reel.target * H, total);
+      var targetPos = C.pmod(reel.target * H, total);
       reel.landFrom = reel.pos;
       reel.landTo = reel.pos + 90 + C.pmod(targetPos - (reel.pos + 90), total);
       reel.landT = 0;
