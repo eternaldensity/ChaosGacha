@@ -47,22 +47,17 @@
     ],
   };
 
+  // Rolls queued on the death screen for the NEXT run (title is gone then).
+  C.pendingCurses = [];
+
   function pool() {
     return (window.CHAOS_CURSES || []).filter(c => !c.nsfw);
   }
 
-  C.rollCurse = function () {
-    const G = C.G;
-    if (!G || !G.title) return;
-    if (G.curses.length >= 3) {
-      C.showCard("Enough curses", "Three is plenty. The house admires restraint.", "", 2000);
-      return;
-    }
+  // Shared d20 roll: tier + curse flavor + house-edge modifier, no side effects.
+  function pickCurse() {
     const list = pool();
-    if (!list.length) {
-      C.showCard("No curses", "Curse data missing.", "", 2000);
-      return;
-    }
+    if (!list.length) return null;
     const roll = 1 + Math.floor(Math.random() * 20);
     const tier = C.curseTier(roll);
     let cands = list.filter(c => c.sev === roll);
@@ -73,7 +68,12 @@
     }
     const curse = cands[Math.floor(Math.random() * cands.length)];
     const mod = MODS[tier][Math.floor(Math.random() * MODS[tier].length)];
-    const p = G.p, applied = {}, A = mod.apply;
+    return { curse, tier, roll, mod };
+  }
+
+  // Apply a picked curse to a live run state (fresh or title).
+  function applyPick(G, pick) {
+    const p = G.p, A = pick.mod.apply, applied = {};
     if (A.maxHp) { p.maxHp = Math.max(1, p.maxHp + A.maxHp); p.hp = Math.min(p.hp, p.maxHp); }
     if (A.pullMul) { p.pullMul *= A.pullMul; applied.pullMul = A.pullMul; }
     if (A.speedMult) { p.speed *= A.speedMult; applied.speedMult = A.speedMult; }
@@ -82,13 +82,57 @@
     if (A.threat0) G.threat = Math.max(G.threat, A.threat0);
     if (A.waveT) G.waveT = Math.min(G.waveT, A.waveT);
     if (A.guardBonus) G.guardBonus = (G.guardBonus || 0) + A.guardBonus;
-    for (const tk of C.curseRewards(tier)) p.tickets[tk] = (p.tickets[tk] || 0) + 1;
-    G.curses.push({ label: curse.label, tier, roll, desc: curse.desc, applied, resolved: false });
-    C.showCard("🎲 " + curse.label + " (" + tier + ", d20 " + roll + ")",
-      String(curse.desc).slice(0, 140) + " — House edge: " + mod.label + ". Reach depth 3 to resolve (+1 gold).",
-      "Reward: " + C.curseRewards(tier).join(" + ") + " tickets.", 5000);
+    for (const tk of C.curseRewards(pick.tier)) p.tickets[tk] = (p.tickets[tk] || 0) + 1;
+    G.curses.push({ label: pick.curse.label, tier: pick.tier, roll: pick.roll,
+      desc: pick.curse.desc, applied, resolved: false });
+  }
+
+  function curseCard(pick) {
+    C.showCard("🎲 " + pick.curse.label + " (" + pick.tier + ", d20 " + pick.roll + ")",
+      String(pick.curse.desc).slice(0, 140) + " — House edge: " + pick.mod.label +
+        ". Reach depth 3 to resolve (+1 gold).",
+      "Reward: " + C.curseRewards(pick.tier).join(" + ") + " tickets.", 5000);
+  }
+
+  // Title screen: applies to the run waiting behind it.
+  C.rollCurse = function () {
+    const G = C.G;
+    if (!G || !G.title) return;
+    if (G.curses.length >= 3) {
+      C.showCard("Enough curses", "Three is plenty. The house admires restraint.", "", 2000);
+      return;
+    }
+    const pick = pickCurse();
+    if (!pick) {
+      C.showCard("No curses", "Curse data missing.", "", 2000);
+      return;
+    }
+    applyPick(G, pick);
+    curseCard(pick);
     C.renderCurseList();
     C.updateHud();
+  };
+
+  // Death screen: queues for the NEXT run (applied on respawn).
+  C.rollCurseNext = function () {
+    const G = C.G;
+    if (!G || !G.over) return;
+    if (C.pendingCurses.length >= 3) return;
+    const pick = pickCurse();
+    if (!pick) return;
+    C.pendingCurses.push(pick);
+    C.renderPendingList();
+  };
+
+  C.renderPendingList = function () {
+    const box = C.el("deathCurses");
+    if (!box) return;
+    box.innerHTML = C.pendingCurses.length
+      ? "Next run: " + C.pendingCurses.map(c =>
+        "🎲 " + esc(c.curse.label) + " (" + c.tier + ")").join(" · ")
+      : "No curses queued — clean soul (coward).";
+    const btn = C.el("curseNextBtn");
+    if (btn) btn.disabled = C.pendingCurses.length >= 3;
   };
 
   C.resolveCurses = function () {

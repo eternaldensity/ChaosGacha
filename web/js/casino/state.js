@@ -59,6 +59,21 @@
     C.rings.length = 0;
     C.beams.length = 0;
     C.delayed.length = 0;
+    // Queued death-screen curses land on the fresh run.
+    for (const pick of C.pendingCurses.splice(0, C.pendingCurses.length)) {
+      const A = pick.mod.apply, applied = {}, P = C.G.p;
+      if (A.maxHp) { P.maxHp = Math.max(1, P.maxHp + A.maxHp); P.hp = Math.min(P.hp, P.maxHp); }
+      if (A.pullMul) { P.pullMul *= A.pullMul; applied.pullMul = A.pullMul; }
+      if (A.speedMult) { P.speed *= A.speedMult; applied.speedMult = A.speedMult; }
+      if (A.coins) P.coins = Math.max(0, P.coins + A.coins);
+      if (A.costMult) { C.G.costMult = (C.G.costMult || 1) * A.costMult; applied.costMult = A.costMult; }
+      if (A.threat0) C.G.threat = Math.max(C.G.threat, A.threat0);
+      if (A.waveT) C.G.waveT = Math.min(C.G.waveT, A.waveT);
+      if (A.guardBonus) C.G.guardBonus = (C.G.guardBonus || 0) + A.guardBonus;
+      for (const tk of C.curseRewards(pick.tier)) P.tickets[tk] = (P.tickets[tk] || 0) + 1;
+      C.G.curses.push({ label: pick.curse.label, tier: pick.tier, roll: pick.roll,
+        desc: pick.curse.desc, applied, resolved: false });
+    }
     // Heirloom: a weapon carried across death (earned by surviving 15+ min).
     const hw = C.legacyWeapon();
     if (hw) {

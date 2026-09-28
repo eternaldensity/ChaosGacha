@@ -13,6 +13,7 @@
   // Complete fresh start: forget all permanent bonuses.
   C.wipeLegacy = function () {
     C.legacy = [];
+    C.pendingCurses = [];
     try { localStorage.removeItem(KEY); } catch (e) {}
   };
 

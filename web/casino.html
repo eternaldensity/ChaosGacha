@@ -48,6 +48,10 @@
   #curseBtn:disabled { opacity:.4; cursor:default; }
   #curseList { display:flex; gap:6px; flex-wrap:wrap; margin:6px 0; }
   #bestLine { opacity:.8; font-size:.85rem; }
+  #deathCurseRow { margin-top:10px; }
+  #deathCurseRow .pick { font-size:.9rem; min-height:0; padding:6px 10px; }
+  #curseNextBtn:disabled { opacity:.4; cursor:default; }
+  #deathCurses { font-size:.85rem; opacity:.9; }
   #draft { position:absolute; inset:0; z-index:9; background:rgba(5,6,12,.88);
     border-radius:10px; display:flex; align-items:center; justify-content:center; padding:18px; }
   #draft.hide { display:none; }
@@ -135,7 +139,11 @@
     <div id="draft" class="hide"><div class="dbox"><h2 id="draftTitle">Draft</h2><div id="draftList"></div></div></div>
     <div id="death"><div><h2>Soul collected.</h2><p id="deathStats"></p><p id="deathLegacy"></p>
       <button id="againBtn" class="pick">Respawn with legacy (R)</button>
-      <button id="freshBtn" class="pick">Fresh soul: wipe legacy (T)</button></div></div>
+      <button id="freshBtn" class="pick">Fresh soul: wipe legacy (T)</button>
+      <div id="deathCurseRow">
+        <button id="curseNextBtn" class="pick">🎲 Curse for next run (max 3)</button>
+        <p id="deathCurses"></p>
+      </div></div></div>
   </div>
   <p id="help"><kbd>WASD</kbd> move · <kbd>E</kbd> start pull (walk away, come back for loot) ·
     <kbd>Space</kbd> dodge · <kbd>J</kbd>/<kbd>K</kbd>/<kbd>L</kbd> powers · <kbd>P</kbd> familiars · <kbd>R</kbd> respawn.

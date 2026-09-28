@@ -504,6 +504,7 @@
       C.ui.deathLegacy.textContent = "Gone in " + Math.floor(C.G.t) +
         "s — too fast for a legacy pull. Survive 10s+ to earn one.";
       C.ui.deathLegacy.style.color = "#878d96";
+      C.renderPendingList();
       C.ui.deathBox.classList.add("show");
       return;
     }
@@ -534,6 +535,7 @@
       (res.rarity >= 6 ? ", +1 max HP" : "") + "." +
       ((C.G.t >= 900 && C.G.p.weapon) ? " Heirloom kept: " + C.G.p.weapon.name + "." : "");
     C.ui.deathLegacy.style.color = C.rarityColor(res.rarity);
+    C.renderPendingList();
     C.ui.deathBox.classList.add("show");
   };
 
