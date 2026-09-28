@@ -40,17 +40,17 @@
     return t;
   }
 
-  C.newRun = function (showTitle) {
-    const b = C.legacyBonus();
+  C.newRun = function (showTitle, useBanked) {
     C.G = {
       over: false, title: showTitle !== false, t: 0, kills: 0, pulls: 0, threat: 0,
-      roomX: 0, roomY: 0, waveT: 50,
+      roomX: 0, roomY: 0, waveT: 50, maxDepth: 0,
       feats: {}, curses: [], costMult: 1, guardBonus: 0, alertMult: 1,
+      machine: null,
       p: {
-        x: C.W / 2, y: C.H / 2 + 60, r: 10, hp: 3 + b.maxHp, maxHp: 3 + b.maxHp,
-        speed: 165, coins: 100 + b.coins, tickets: blankTickets(),
+        x: C.W / 2, y: C.H / 2 + 60, r: 10, hp: 3, maxHp: 3,
+        speed: 165, coins: 100, tickets: blankTickets(),
         weapon: null, dmg: 1, range: 74, atkCd: 0, rollCd: 0, rollT: 0, inv: 0,
-        pullMul: b.pullMul, discount: 0, pets: [],
+        pullMul: 1, discount: 0, pets: [],
         slots: [], stash: [], abilitiesOwned: 0, facing: 0,
         dashDx: null, dashDy: null, dashSpd: 0, statuses: {},
         buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null, stance: null, mount: null,
@@ -75,13 +75,9 @@
     for (const pick of C.pendingCurses.splice(0, C.pendingCurses.length)) {
       C.applyPick(C.G, pick);
     }
-    // Heirloom: a weapon carried across death (earned by surviving 15+ min).
-    const hw = C.legacyWeapon();
-    if (hw) {
-      C.G.p.weapon = Object.assign({}, hw);
-      C.G.p.dmg = hw.dmg;
-      C.noteBuild("🔫 " + hw.name + " (heirloom)");
-    }
+    // Last run's slot-machine spoils (forfeited by fresh starts).
+    let spoils = "";
+    if (useBanked !== false && C.banked) spoils = C.applyBanked(C.G.p);
     C.getRoom(0, 0);
     C.hideDeath();
     C.updateHud();
@@ -91,8 +87,9 @@
       C.showTitle();
     } else {
       C.hideTitle();
-      C.showCard("Soul traded: +100 coins (+legacy " + b.coins + ")",
-        "Slots give coins/tickets. Feed tickets to gacha. Security wants your soul. Run.",
+      C.showCard(spoils ? "Last run's spoils: " + spoils : "Soul traded: +100 coins",
+        spoils ? "The dead man's machine provides. Spend it well."
+          : "Slots give coins/tickets. Feed tickets to gacha. Security wants your soul. Run.",
         "Press E at a machine, then move — come back for the loot.", 5200);
     }
   };
@@ -403,6 +400,7 @@
 
   C.onEnterRoom = function () {
     const room = C.curRoom();
+    C.G.maxDepth = Math.max(C.G.maxDepth || 0, room.depth);
     C.projs.length = 0;
     C.floaters.length = 0;
     if (room.vault && room.depth >= 6 && !room.bossSpawned) {

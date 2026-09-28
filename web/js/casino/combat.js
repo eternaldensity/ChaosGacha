@@ -623,33 +623,11 @@
       C.ui.deathBox.classList.add("show");
       return;
     }
-    const mins = C.G.t / 60;
-    const lt = C.legacyTierFor(mins);
-    const t = C.tierById(lt);
-    let res;
-    try {
-      const pool = C.entries();
-      res = window.ChaosGacha
-        ? window.ChaosGacha.roll(pool, null, "random", t.min, t.avg, t.max,
-          { hideNsfw: true, hideNoncon: true }, Math.random)
-        : { name: "Stub soul-boon", rarity: t.avg, category: "trait", description: "", source: "" };
-    } catch (e) {
-      res = { name: "Stub soul-boon", rarity: t.avg, category: "trait", description: "", source: "" };
-    }
-    C.legacy.push(Object.assign(
-      { name: res.name, rarity: res.rarity, category: res.category, at: Date.now() },
-      // Heirloom: 15+ minute runs carry their weapon across death.
-      (C.G.t >= 900 && C.G.p.weapon) ? { heirloom: Object.assign({}, C.G.p.weapon) } : {}));
-    C.saveLegacy();
+    C.armDeathMachine();
     const room = C.curRoom();
     C.ui.deathStats.textContent = "Survived " + C.fmtTime(C.G.t) + " · depth " + room.depth +
       " · " + C.G.kills + " kills · " + C.G.pulls + " pulls · Threat ★" + C.G.threat + "." + bestTag;
-    C.ui.deathLegacy.textContent = "Legacy pull (" + lt + "): [" + C.rarityName(res.rarity) + "] " +
-      res.name + " (" + Number(res.rarity).toFixed(1) + ") — permanent: +" +
-      Math.floor(res.rarity * 8) + " starting coins, pulls faster" +
-      (res.rarity >= 6 ? ", +1 max HP" : "") + "." +
-      ((C.G.t >= 900 && C.G.p.weapon) ? " Heirloom kept: " + C.G.p.weapon.name + "." : "");
-    C.ui.deathLegacy.style.color = C.rarityColor(res.rarity);
+    C.ui.deathLegacy.textContent = "";
     C.renderPendingList();
     C.ui.deathBox.classList.add("show");
   };
