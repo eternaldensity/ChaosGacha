@@ -13,7 +13,7 @@
       for (const off of angs) {
         C.projs.push({
           x: p.x, y: p.y, vx: Math.cos(a + off) * 520, vy: Math.sin(a + off) * 520,
-          dmg: C.playerDmg(p.dmg), foe: false, life: 0.8, element: p.weapon.element,
+          dmg: C.playerDmg(p.dmg, p.weapon.element) + (p.rangedBonus || 0), foe: false, life: 0.8, element: p.weapon.element,
         });
       }
     } else {
@@ -26,7 +26,7 @@
               gd.y + Math.sin(a) * p.weapon.knockback, 9, C.solids(room));
             gd.x = fx[0]; gd.y = fx[1];
           }
-          C.damageGuard(gd, C.playerDmg(p.dmg), p.weapon.element);
+          C.damageGuard(gd, C.playerDmg(p.dmg, p.weapon.element), p.weapon.element);
         }
       }
       C.G.shake = 0.12;
@@ -50,7 +50,7 @@
     if (ab.op === "bolt") {
       const g = C.nearestGuard(460);
       const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : p.facing;
-      const dmg = C.playerDmg(ab.power + armed);
+      const dmg = C.playerDmg(ab.power + armed, ab.element);
       const angs = ab.element === "venom" ? [-0.18, 0, 0.18] : [0];
       for (const off of angs) {
         C.projs.push({
@@ -59,12 +59,12 @@
         });
       }
     } else if (ab.op === "nova") {
-      C.detonate(p.x, p.y, 135, C.playerDmg(ab.power + armed), ab.element);
+      C.detonate(p.x, p.y, 135, C.playerDmg(ab.power + armed, ab.element), ab.element);
     } else if (ab.op === "wave") {
       // Cone shove: damage + radial knockback + element in front of you.
       const g = C.nearestGuard(460);
       const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : p.facing;
-      const dmg = C.playerDmg(ab.power + armed);
+      const dmg = C.playerDmg(ab.power + armed, ab.element);
       const room = C.curRoom();
       for (const gd of [...room.guards]) {
         const d = Math.hypot(gd.x - p.x, gd.y - p.y);
@@ -85,7 +85,7 @@
       const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : p.facing;
       const x2 = p.x + Math.cos(a) * 340, y2 = p.y + Math.sin(a) * 340;
       C.beams.push({ x1: p.x, y1: p.y, x2, y2, age: 0, max: 0.25 });
-      const dmg = C.playerDmg(ab.power + armed);
+      const dmg = C.playerDmg(ab.power + armed, ab.element);
       for (const gd of [...C.curRoom().guards]) {
         if (segDist(gd.x, gd.y, p.x, p.y, x2, y2) < 16) {
           C.damageGuard(gd, dmg, ab.element);
@@ -99,7 +99,7 @@
       const ty = g ? g.y : p.y + Math.sin(p.facing) * 200;
       C.delayed.push({
         x: tx, y: ty, t: 0.6, r: 95,
-        dmg: C.playerDmg(ab.power + armed), element: ab.element,
+        dmg: C.playerDmg(ab.power + armed, ab.element), element: ab.element,
       });
     } else if (ab.op === "wall") {
       // Conjured cover perpendicular to facing; blocks guards + foe shots.
@@ -140,12 +140,13 @@
       p.rollT = 0.3;
     } else if (ab.op === "heal") {
       if (p.hp >= p.maxHp) return false;
-      p.hp = Math.min(p.maxHp, p.hp + ab.power);
-      C.floater(p.x, p.y - 24, "+" + ab.power + " HP", "#11d939");
+      const amt = ab.power + (p.healBonus || 0);
+      p.hp = Math.min(p.maxHp, p.hp + amt);
+      C.floater(p.x, p.y - 24, "+" + amt + " HP", "#11d939");
     } else {
       return false;
     }
-    ab.cdLeft = ab.cd;
+    ab.cdLeft = ab.cd * (1 - (p.cdr || 0));
     C.updateHud();
     return true;
   };
@@ -167,10 +168,13 @@
     return null;
   };
 
-  // Surge-steroid for outgoing player damage.
-  C.playerDmg = function (base) {
-    const s = C.G.p.surge;
-    return base * ((s && s.t > 0) ? s.dmgMult : 1);
+  // Outgoing player damage: surge steroid x element affinity bonus.
+  C.playerDmg = function (base, element) {
+    const p = C.G.p;
+    const s = p.surge;
+    let m = (s && s.t > 0) ? s.dmgMult : 1;
+    if (element && p.elemBonus[element]) m *= 1 + p.elemBonus[element];
+    return base * m;
   };
 
   // Single choke point for guard damage: shields soak direct hits (dots seep
@@ -292,7 +296,7 @@
     C.updateHud();
   };
 
-  C.hurtPlayer = function (n) {
+  C.hurtPlayer = function (n, element) {
     const p = C.G.p;
     if (p.inv > 0 || p.rollT > 0 || C.G.over) return;
     // Armor: flat chance to fully block a hit (capped at 50%).
@@ -303,6 +307,7 @@
       C.updateHud();
       return;
     }
+    if (element && p.resist[element]) n *= 1 - Math.min(0.5, p.resist[element]);
     p.hp -= n; p.inv = 0.9; C.G.shake = 0.2;
     if (p.hp <= 0) C.die();
     C.updateHud();
@@ -349,7 +354,7 @@
 
   function hurtTouch(gd, p, d) {
     if (d < 26 && gd.atkCd <= 0) {
-      C.hurtPlayer(1);
+      C.hurtPlayer(1, gd.affix === "elemental" ? gd.element : null);
       if (gd.affix === "elemental" && gd.element) {
         const st = C.statusForElement(gd.element);
         if (st) C.applyStatus(p, st[0], st[1], st[2]);
@@ -515,8 +520,9 @@
         pet.cd -= dt;
         if (pet.cd <= 0) {
           if (p.hp < p.maxHp) {
-            p.hp += 1;
-            C.floater(p.x, p.y - 24, "+1 HP (" + pet.name.slice(0, 14) + ")", "#11d939");
+            const amt = 1 + (p.healBonus || 0);
+            p.hp = Math.min(p.maxHp, p.hp + amt);
+            C.floater(p.x, p.y - 24, "+" + amt + " HP (" + pet.name.slice(0, 14) + ")", "#11d939");
             C.updateHud();
             pet.cd = pet.cdMax || 18;
           } else {
@@ -539,7 +545,7 @@
       }
       if (pr.foe) {
         if (Math.hypot(pr.x - p.x, pr.y - p.y) < 12) {
-          C.hurtPlayer(pr.dmg);
+          C.hurtPlayer(pr.dmg, pr.element);
           if (pr.element) {
             const pst = C.statusForElement(pr.element);
             if (pst) C.applyStatus(p, pst[0], pst[1], pst[2]);

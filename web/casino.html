@@ -40,6 +40,18 @@
   #startBtn { display:block; width:100%; margin-top:12px; font-size:1.1rem; min-height:48px;
     background:#2a3342; color:#fff; border:2px solid var(--accent); border-radius:10px; cursor:pointer; }
   #startBtn:hover { background:#354052; }
+  #draft { position:absolute; inset:0; z-index:9; background:rgba(5,6,12,.88);
+    border-radius:10px; display:flex; align-items:center; justify-content:center; padding:18px; }
+  #draft.hide { display:none; }
+  #draft .dbox { max-width:560px; max-height:100%; overflow:auto; background:#10131a;
+    border:1px solid var(--accent); border-radius:12px; padding:16px 20px; }
+  #draft h2 { margin:0 0 8px; text-align:center; font-size:1.1rem; }
+  #draftList .small { font-size:.85rem; opacity:.85; }
+  .draftBtn { display:block; width:100%; margin:6px 0; padding:8px 10px; text-align:left;
+    background:#20242e; color:#fff; border:1px solid #444; border-radius:8px; cursor:pointer; }
+  .draftBtn:hover { border-color:var(--accent); }
+  .draftBtn.sel { border-color:var(--accent); background:#2a3342; }
+  .draftBtn.dim { opacity:.75; text-align:center; }
   #death { display:none; position:absolute; inset:0; z-index:7; background:rgba(5,6,9,.9);
     border-radius:10px; align-items:center; justify-content:center; text-align:center; padding:20px; }
   #death.show { display:flex; }
@@ -86,6 +98,7 @@
           <li><kbd>J</kbd> / click — fire slot-1 power (or swing weapon)</li>
           <li><kbd>K</kbd> / <kbd>L</kbd> — fire slots 2–3 (unlock: +1 per 5 abilities)</li>
           <li><kbd>P</kbd> — rotate familiars (2 active, rest stabled)</li>
+          <li><kbd>B</kbd> — manage stashed powers (full slots open a draft pick)</li>
         </ul>
         <b>Survival tips</b>
         <ul>
@@ -100,6 +113,7 @@
       <button id="startBtn">Take the coins (Enter)</button>
     </div></div>
     <div id="card"><h3 id="cardTitle"></h3><p id="cardBody"></p><p id="cardSub"></p></div>
+    <div id="draft" class="hide"><div class="dbox"><h2 id="draftTitle">Draft</h2><div id="draftList"></div></div></div>
     <div id="death"><div><h2>Soul collected.</h2><p id="deathStats"></p><p id="deathLegacy"></p>
       <button id="againBtn" class="pick">Respawn with legacy (R)</button>
       <button id="freshBtn" class="pick">Fresh soul: wipe legacy (T)</button></div></div>
@@ -121,6 +135,7 @@
 <script src="js/casino/prizes.js"></script>
 <script src="js/casino/pulls.js"></script>
 <script src="js/casino/combat.js"></script>
+<script src="js/casino/draft.js"></script>
 <script src="js/casino/update.js"></script>
 <script src="js/casino/render.js"></script>
 <script src="js/casino/main.js" defer></script>

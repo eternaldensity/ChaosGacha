@@ -16,7 +16,7 @@
     if (cat === "item") {
       // Consumables trigger on touch.
       if (/medkit|potion|food|ration|elixir|bandage|snack|feast/i.test(nm)) {
-        const amt = 1 + Math.floor(r / 3);
+        const amt = 1 + Math.floor(r / 3) + (p.healBonus || 0);
         p.hp = Math.min(p.maxHp, p.hp + amt);
         C.noteBuild(res.name.slice(0, 18) + ": ate +" + amt + " HP");
         C.floater(p.x, p.y - 24, "+" + amt + " HP", "#11d939");
@@ -77,19 +77,21 @@
       const opened = C.fillSlots();
       const slotNote = opened ? " (+" + opened + " slot opened!)" : "";
       if (ab) {
-        C.noteBuild("[" + (p.slots.length < C.maxSlots() ? C.SLOT_KEYS[p.slots.length] : "stash") + "] " + ab.name + " (" + ab.op + ")");
+        C.noteBuild("[" + (p.slots.length < C.maxSlots() ? C.SLOT_KEYS[p.slots.length] : "draft") + "] " + ab.name + " (" + ab.op + ")");
         const key = C.equipAbility(ab);
         if (key) {
           return "Slotted [" + key + "]: " + ab.name + " — " + ab.blurb + "." + slotNote +
             " (" + p.slots.length + "/" + C.maxSlots() + " slots; +1 per 5 abilities).";
         }
-        return "Stashed: " + ab.name + " (" + ab.blurb + "). Slots full" + slotNote + ".";
+        // Full: Advantage-style draft instead of a silent stash.
+        C.openDraft({ kind: "new", ab });
+        return "Slots full — draft opened! Pick a slot for " + ab.name + slotNote + ".";
       }
       // Unmatched abilities fall through to the essence fallback below.
       if (opened) C.floater(p.x, p.y - 40, "+" + opened + " ability slot!", "#ffe066");
     }
     if (cat === "familiar") {
-      const dmg = Math.max(1, Math.round(r / 3));
+      const dmg = Math.max(1, Math.round(r / 3)) + (p.petBonus || 0);
       const role = C.petRole(res.name);
       const pet = {
         name: res.name, dmg, cd: 0, role,
@@ -124,11 +126,64 @@
         C.noteBuild(res.name.slice(0, 18) + ": pulls 8% faster", "pass");
         return "Trait: pulls 8% faster.";
       }
+      if (/energ|mana|reserve|spirit|focus|meditat/i.test(nm)) {
+        p.cdr = Math.min(0.35, (p.cdr || 0) + 0.04 + r * 0.005);
+        C.noteBuild(res.name.slice(0, 18) + ": cooldowns -" + Math.round(p.cdr * 100) + "%", "pass");
+        return "Trait: deep reserves — power cooldowns -" + Math.round(p.cdr * 100) + "% total.";
+      }
+      if (/physical|might|brawn|bulk|mighty|strapping/i.test(nm)) {
+        p.dmg += 0.5;
+        C.noteBuild(res.name.slice(0, 18) + ": +" + p.dmg.toFixed(1) + " dmg", "pass");
+        return "Trait: physicality — +0.5 base damage (now " + p.dmg.toFixed(1) + ").";
+      }
+      if (/affin|attun|align|bloodline|blood of|sorcer|wizard|witch|mage|magic|arcane/i.test(nm)) {
+        const aff = C.elementOf(nm);
+        if (aff && aff !== "arcane") {
+          p.elemBonus[aff] = (p.elemBonus[aff] || 0) + 0.15 + r * 0.02;
+          p.resist[aff] = (p.resist[aff] || 0) + 0.1;
+          C.noteBuild(res.name.slice(0, 18) + ": " + aff + " +" +
+            Math.round(p.elemBonus[aff] * 100) + "%/resist", "pass");
+          return "Trait: " + aff + " affinity — +" +
+            Math.round(p.elemBonus[aff] * 100) + "% " + aff + " damage, 10% " + aff + " resist.";
+        }
+        p.cdr = Math.min(0.35, (p.cdr || 0) + 0.03);
+        C.noteBuild(res.name.slice(0, 18) + ": raw magic, cooldowns down", "pass");
+        return "Trait: raw magic — power cooldowns tick faster.";
+      }
       p.speed *= 1.02; p.pullMul = Math.max(0.6, p.pullMul * 0.98);
       C.noteBuild(res.name.slice(0, 18) + ": edge (speed/pull)", "pass");
       return "Trait: small all-round edge (rarity " + r.toFixed(1) + ").";
     }
+    // Profession skills (usually "Rank Profession"): the trade becomes a
+    // casino edge. Unlisted trades fall through to generic pull speed.
+    const PROF = [
+      [/cook|culinar|baking|brewing/i, "regen", "slow-heal 1 HP / 30s"],
+      [/shoot|archery|marksman|throwing|firearms/i, "ranged", "+1 ranged damage"],
+      [/mechan|engineer|craft|smith|repair|tinker/i, "pull", "pulls 10% faster"],
+      [/act|decept|persua|stealth|sneak|perform|disguise/i, "calm", "threat decays over time"],
+      [/medic|doctor|surgery|first aid|herbal/i, "healplus", "+1 healing received"],
+      [/gamb|luck|games|cheat|afi/i, "luck", "jackpots +0.5%, better tickets"],
+      [/athlet|acrobat|dodge|evasion|sprint/i, "roll", "dodge recharges faster"],
+      [/percept|scout|track|sense|investigat/i, "tickets", "+1 ticket right now"],
+      [/leader|command|tactics|strateg/i, "pets", "pets hit +1"],
+      [/farm|fish|mine|harvest|gather/i, "coins", "+25 coins right now"],
+    ];
     if (cat === "skill") {
+      const prof = nm.replace(/^(basic|intermediate|adept|expert|master|grandmaster|divine|trash)\s+/, "");
+      for (const [re, kind] of PROF) {
+        if (!re.test(prof) && !re.test(nm)) continue;
+        const nn = res.name.slice(0, 20);
+        if (kind === "regen") { p.regen = 1; C.noteBuild(nn + ": regen 1HP/30s", "pass"); return "Skill: " + res.name + " — you regenerate 1 HP every 30s."; }
+        if (kind === "ranged") { p.rangedBonus = (p.rangedBonus || 0) + 1; C.noteBuild(nn + ": +ranged dmg", "pass"); return "Skill: " + res.name + " — +1 damage on ranged attacks."; }
+        if (kind === "pull") { p.pullMul = Math.max(0.6, p.pullMul * 0.9); C.noteBuild(nn + ": pulls 10% faster", "pass"); return "Skill: " + res.name + " — pulls 10% faster."; }
+        if (kind === "calm") { p.threatDecayT = 1; C.noteBuild(nn + ": threat decays", "pass"); return "Skill: " + res.name + " — laying low lowers Threat over time."; }
+        if (kind === "healplus") { p.healBonus = (p.healBonus || 0) + 1; C.noteBuild(nn + ": +healing", "pass"); return "Skill: " + res.name + " — all healing +1."; }
+        if (kind === "luck") { p.luck = (p.luck || 0) + 1; C.noteBuild(nn + ": luck +1", "pass"); return "Skill: " + res.name + " — luck +1 (jackpots likelier, better tickets)."; }
+        if (kind === "roll") { p.rollCdMax = Math.max(2, (p.rollCdMax || 5) - 1); C.noteBuild(nn + ": dodge faster", "pass"); return "Skill: " + res.name + " — dodge recharges faster."; }
+        if (kind === "tickets") { p.tickets.silver++; C.noteBuild(nn + ": spotted +1 silver", "pass"); return "Skill: " + res.name + " — you spot a dropped Silver ticket. (+1)"; }
+        if (kind === "pets") { for (const pt of p.pets) pt.dmg += 1; p.petBonus = (p.petBonus || 0) + 1; C.noteBuild(nn + ": pets +1", "pass"); return "Skill: " + res.name + " — your familiars hit +1 (and future ones start stronger)."; }
+        if (kind === "coins") { p.coins += 25; C.noteBuild(nn + ": +25 coins", "pass"); return "Skill: " + res.name + " — you shake +25 coins out of the cushions."; }
+      }
       if (r >= 4 || /slot|machine|discount|coin|econom/i.test(nm)) {
         p.discount = Math.min(0.4, p.discount + 0.08);
         C.noteBuild(res.name.slice(0, 18) + ": slots -" + Math.round(p.discount * 100) + "%", "pass");

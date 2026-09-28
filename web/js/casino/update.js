@@ -5,6 +5,7 @@
   let last = 0;
   let prevE = false;
   let prevP = false;
+  let prevB = false;
 
   C.frame = function (ts) {
     requestAnimationFrame(C.frame);
@@ -60,6 +61,7 @@
 
   C.update = function (dt) {
     if (C.G.title) return; // title screen: frozen room behind the intro
+    if (C.G.draft) return; // draft modal pauses the sim
     const p = C.G.p, room = C.curRoom();
     if (C.G.cardT > 0) {
       C.G.cardT -= dt;
@@ -114,7 +116,22 @@
       p.y += my * spd * dt;
       p.facing = Math.atan2(my, mx);
     }
-    if (C.keys[" "] && p.rollCd <= 0 && (mx || my)) { p.rollT = 0.32; p.rollCd = 5; }
+    if (C.keys[" "] && p.rollCd <= 0 && (mx || my)) { p.rollT = 0.32; p.rollCd = p.rollCdMax || 5; }
+    if (p.regen && p.hp < p.maxHp) {
+      p.regenT += dt;
+      if (p.regenT >= 30) {
+        p.regenT = 0; p.hp += 1;
+        C.floater(p.x, p.y - 24, "+1 HP", "#11d939");
+        C.updateHud();
+      }
+    }
+    if (p.threatDecayT && C.G.threat > 0) {
+      p.threatDecayT += dt;
+      if (p.threatDecayT >= 60) {
+        p.threatDecayT = 0; C.G.threat -= 1;
+        C.showCard("Threat cools to ★" + C.G.threat, "You lay low. Security forgets... a little.", "", 2200);
+      }
+    }
     if (p.rollT > 0) {
       const dx = p.dashDx != null ? p.dashDx : mx;
       const dy = p.dashDy != null ? p.dashDy : my;
@@ -134,6 +151,9 @@
     const pDown = !!C.keys["p"];
     if (pDown && !prevP) C.rotatePets();
     prevP = pDown;
+    const bDown = !!C.keys["b"];
+    if (bDown && !prevB) C.openDraft({ kind: "manage" });
+    prevB = bDown;
     C.updatePulls(dt);
     C.updatePickups(dt);
 

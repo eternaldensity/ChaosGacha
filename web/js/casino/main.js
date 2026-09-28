@@ -2,6 +2,7 @@
 /* Boot: input wiring + title screen + first run. Depends on: all modules. */
 (function (C) {
   addEventListener("keydown", e => {
+    if (e.key === "Escape" && C.G && C.G.draft) { C.closeDraft(); return; }
     if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "].includes(e.key)) e.preventDefault();
     C.keys[e.key.toLowerCase()] = true;
     const k = e.key.toLowerCase();
