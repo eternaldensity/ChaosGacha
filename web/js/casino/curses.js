@@ -43,7 +43,7 @@
     [/wallet|coins|gold|poor|tax|tithe|greed|debt|bankrupt|toll|tariff|house cut/i, "bled dry", M => ({ coins: M.coins, costMult: M.cost })],
     [/wound|bleed|frail|sick|rot|decay|disease|infection|parasite|anemia|plague|illness|nausea/i, "afflicted", M => ({ maxHp: M.hp })],
     [/slow slots|cooldown|restock|process/i, "sluggish", M => ({ cdrMult: M.cdr })],
-    [/slow|sleep|tired|exhaust|fatigue|sloth|letharg|drowsy|insomnia/i, "leaden", M => ({ speedMult: M.speed })],
+    [/slow|sleep|tired|exhaust|fatigue|sloth|letharg|drowsy|insomnia|out of shape|unfit|obes|flabby|sedentary|overweight|couch potato/i, "leaden", M => ({ speedMult: M.speed })],
     [/hunt|wanted|marked|target|stalk|chas|pursu|enemy|enmity|nemesis|slayer/i, "hunted", M => ({ guardBonus: M.guards, threat0: M.threat })],
     [/loud|scream|shout|noise|honk|goose|shriek|alarm/i, "loud", M => ({ alertMult: M.alert })],
     [/doom|climax|apocalypse|narrative|destined|prophecy/i, "doomed", M => ({ maxHp: M.hp, threat0: M.threat })],
@@ -140,10 +140,11 @@
   C.applyPick = applyPick;
 
   function curseCard(pick) {
+    const flav = C.flavorShort(pick.curse.desc);
     C.showCard("🎲 " + pick.curse.label + " (" + pick.tier + ", d20 " + pick.roll + ")",
-      String(pick.curse.desc).slice(0, 140) + " — House edge: " + pick.mod.label +
-        ". Reach depth 3 to resolve (+1 gold).",
-      "Reward: " + C.curseRewards(pick.tier).join(" + ") + " tickets.", 5000);
+      "House edge: " + pick.mod.label + ". Reward: " +
+        C.curseRewards(pick.tier).join(" + ") + " tickets. Reach depth 3 to resolve (+1 gold).",
+      flav ? "“" + flav + "”" : "", 5000);
   }
 
   // Title screen: applies to the run waiting behind it.

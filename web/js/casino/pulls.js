@@ -226,10 +226,12 @@
         if (pk.src) pk.src.lastPrize = null; // window back to category
         const res = pk.res;
         const note = C.applyPrize(res);
+        const flav = C.flavorShort(res.description);
         C.showCard("[" + C.rarityName(res.rarity) + " " + res.category + "] " + res.name +
           " (" + res.rarity.toFixed(1) + ")",
-          (res.description || "").slice(0, 160) + " — " + note,
-          "Ticket: " + pk.tier + " · odds " + (res.odds || 0).toFixed(2) + "%", 6000);
+          note,
+          "Ticket: " + pk.tier + " · odds " + (res.odds || 0).toFixed(2) + "%" +
+            (flav ? " · “" + flav + "”" : ""), 6000);
       }
       C.updateHud();
     }

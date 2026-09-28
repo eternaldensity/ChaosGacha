@@ -44,4 +44,16 @@
   C.floater = function (x, y, txt, color) {
     C.floaters.push({ x, y, txt, color: color || "#fff", t: 1.5 });
   };
+
+  // Flavor snippet: first sentence (or clean word-cut) with ellipsis.
+  // Mechanics always lead; flavor follows quoted and short.
+  C.flavorShort = function (desc, max) {
+    const s = String(desc || "").replace(/\s+/g, " ").trim();
+    if (!s) return "";
+    max = max || 90;
+    if (s.length <= max) return s;
+    const cut = s.lastIndexOf(". ", max);
+    if (cut > 8) return s.slice(0, cut + 1) + " …";
+    return s.slice(0, max).replace(/\s+\S*$/, "") + " …";
+  };
 })(window.Casino);
