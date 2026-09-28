@@ -132,7 +132,8 @@
       box.appendChild(el("p", "Slots full! New pull: " + abLine(mode.ab)));
       box.appendChild(el("p", "Take it into a slot (old power stashes), or keep your loadout:", "small"));
       G.p.slots.forEach((s, i) => {
-        const b = el("button", "Take [" + C.SLOT_KEYS[i] + "], stash " + s.name, "draftBtn");
+        const b = el("button", "[" + C.SLOT_KEYS[i] + "] " + abLine(mode.ab) +
+          "  ⇄  " + abLine(s), "draftBtn");
         b.addEventListener("click", () => C.draftSwap(i));
         box.appendChild(b);
       });
@@ -153,7 +154,8 @@
         });
         if (mode.pick) {
           G.p.slots.forEach((s, i) => {
-            const b = el("button", "Into [" + C.SLOT_KEYS[i] + "] (stash " + s.name + ")", "draftBtn");
+            const b = el("button", "[" + C.SLOT_KEYS[i] + "] " + abLine(mode.pick) +
+              "  ⇄  " + abLine(s), "draftBtn");
             b.addEventListener("click", () => C.draftSwap(i));
             box.appendChild(b);
           });
