@@ -38,7 +38,7 @@
     C.G = {
       over: false, title: showTitle !== false, t: 0, kills: 0, pulls: 0, threat: 0,
       roomX: 0, roomY: 0, waveT: 50,
-      feats: {}, curses: [], costMult: 1, guardBonus: 0,
+      feats: {}, curses: [], costMult: 1, guardBonus: 0, alertMult: 1,
       p: {
         x: C.W / 2, y: C.H / 2 + 60, r: 10, hp: 3 + b.maxHp, maxHp: 3 + b.maxHp,
         speed: 165, coins: 100 + b.coins, tickets: blankTickets(),
@@ -50,6 +50,9 @@
         cdr: 0, elemBonus: {}, resist: {}, luck: 0, regen: 0, regenT: 0,
         healBonus: 0, rollCdMax: 5, threatDecayT: 0, rangedBonus: 0, draft: null,
         parts: 0, survey: false, surveyT: 0,
+        sightMult: 1, cdrMult: 1, healMult: 1, dmgTakenMult: 1, dmgDealtMult: 1,
+        regenOff: false, armorLock: false, pacifist: false,
+        dmgTakenElementalOnly: false,
       },
       cardT: 0, shake: 0,
     };

@@ -214,13 +214,13 @@
       p.rollT = 0.3;
     } else if (ab.op === "heal") {
       if (p.hp >= p.maxHp) return false;
-      const amt = ab.power + (p.healBonus || 0);
+      const amt = (ab.power + (p.healBonus || 0)) * (p.healMult || 1);
       p.hp = Math.min(p.maxHp, p.hp + amt);
       C.floater(p.x, p.y - 24, "+" + amt + " HP", "#11d939");
     } else {
       return false;
     }
-    ab.cdLeft = ab.cd * (1 - (p.cdr || 0));
+    ab.cdLeft = ab.cd * (1 - (p.cdr || 0)) * (p.cdrMult || 1);
     C.updateHud();
     return true;
   };
@@ -248,6 +248,7 @@
     const s = p.surge;
     let m = (s && s.t > 0) ? s.dmgMult : 1;
     if (element && p.elemBonus[element]) m *= 1 + p.elemBonus[element];
+    if (p.dmgDealtMult) m *= p.dmgDealtMult;
     return base * m;
   };
 
@@ -267,6 +268,13 @@
       amt -= (element === "light" || element === "holy") ? absorbed / 2 : absorbed;
       C.floater(gd.x, gd.y - 30, "🛡" + absorbed, "#8b93a3");
       if (amt <= 0) { C.updateHud(); return false; }
+    }
+    // The Merciful cannot kill: victims are spared at 1 HP instead.
+    if (C.G.p.pacifist && !isDot && gd.hp - amt <= 0 && gd.type !== "collector" && gd.type !== "roller") {
+      gd.hp = 1;
+      C.floater(gd.x, gd.y - 30, "spared", "#11d939");
+      C.updateHud();
+      return false;
     }
     gd.hp -= amt;
     if (!isDot) C.floater(gd.x, gd.y - 30, "-" + amt, element ? "#ffd166" : "#fff");
@@ -484,7 +492,7 @@
       return;
     }
     // Armor: flat chance to fully block a hit (carapace stacks, cap 65%).
-    const block = Math.min(0.65, (p.armorPct || 0) +
+    const block = p.armorLock ? 0 : Math.min(0.65, (p.armorPct || 0) +
       ((p.stance && p.stance.kind === "carapace") ? 0.25 : 0));
     if (block > 0 && Math.random() < block) {
       C.floater(p.x, p.y - 24, "blocked", "#7df9ff");
@@ -494,6 +502,8 @@
       return;
     }
     if (element && p.resist[element]) n *= 1 - Math.min(0.5, p.resist[element]);
+    if (p.dmgTakenMult && p.dmgTakenMult !== 1 &&
+        (!p.dmgTakenElementalOnly || element)) n *= p.dmgTakenMult;
     p.hp -= n; p.inv = 0.9; C.G.shake = 0.2; C.audio.hurt();
     if (p.hp <= 0) C.die();
     C.updateHud();
@@ -625,7 +635,7 @@
       const st = C.tickGuardStatuses(gd, dt);
       if (st.died) continue;
       if (!gd.pacified && !gd.chase &&
-          (d < gd.sight * (1 - (C.G.p.presence || 0)) || room.alert > 0)) gd.chase = true;
+          (d < gd.sight * (1 - (C.G.p.presence || 0)) * (C.G.p.sightMult || 1) || room.alert > 0)) gd.chase = true;
       if (!gd.chase) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
       const mult = (p.rollT > 0 ? 0.7 : 1) * st.mult;
       if (st.stunned) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
@@ -749,7 +759,7 @@
         pet.cd -= dt;
         if (pet.cd <= 0) {
           if (p.hp < p.maxHp) {
-            const amt = 1 + (p.healBonus || 0);
+            const amt = (1 + (p.healBonus || 0)) * (p.healMult || 1);
             p.hp = Math.min(p.maxHp, p.hp + amt);
             C.floater(p.x, p.y - 24, "+" + amt + " HP (" + pet.name.slice(0, 14) + ")", "#11d939");
             C.updateHud();

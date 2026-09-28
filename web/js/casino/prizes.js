@@ -16,7 +16,7 @@
     if (cat === "item") {
       // Consumables trigger on touch.
       if (/medkit|potion|food|ration|elixir|bandage|snack|feast/i.test(nm)) {
-        const amt = 1 + Math.floor(r / 3) + (p.healBonus || 0);
+        const amt = (1 + Math.floor(r / 3) + (p.healBonus || 0)) * (p.healMult || 1);
         p.hp = Math.min(p.maxHp, p.hp + amt);
         C.noteBuild(res.name.slice(0, 18) + ": ate +" + amt + " HP");
         C.floater(p.x, p.y - 24, "+" + amt + " HP", "#11d939");

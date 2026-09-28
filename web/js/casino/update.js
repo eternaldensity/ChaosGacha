@@ -135,7 +135,7 @@
       p.facing = Math.atan2(my, mx);
     }
     if (C.keys[" "] && p.rollCd <= 0 && (mx || my)) { p.rollT = 0.32; p.rollCd = p.rollCdMax || 5; }
-    if (p.regen && p.hp < p.maxHp) {
+    if (p.regen && !p.regenOff && p.hp < p.maxHp) {
       p.regenT += dt;
       if (p.regenT >= 30) {
         p.regenT = 0; p.hp += 1;
