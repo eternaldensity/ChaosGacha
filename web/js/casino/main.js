@@ -8,10 +8,12 @@
     if (k === "enter" && C.G && C.G.title) C.startGame();
     else if (k === "enter" && C.G && C.G.over) C.newRun(false);
     else if (k === "r" && C.G && C.G.over) C.newRun(false);
+    else if (k === "t" && C.G && C.G.over) { C.wipeLegacy(); C.newRun(false); }
   });
   addEventListener("keyup", e => { C.keys[e.key.toLowerCase()] = false; });
   C.ui.canvas.addEventListener("mousedown", () => { C.queueAttack(); });
   C.el("againBtn").addEventListener("click", () => C.newRun(false));
+  C.ui.freshBtn.addEventListener("click", () => { C.wipeLegacy(); C.newRun(false); });
   C.ui.startBtn.addEventListener("click", () => C.startGame());
 
   C.newRun(true);

@@ -33,7 +33,7 @@
         t: 0, dur: t.pull * C.G.p.pullMul, pay, syms, fin: null,
         // Each reel scrolls a wrapping symbol tape, then lands on its target.
         reels: syms.map((s, i) => ({
-          pos: Math.random() * total, vel: 560 + i * 60,
+          pos: Math.random() * total, vel: 300 + i * 40,
           state: "spin", target: C.SYMS.indexOf(s),
           landFrom: 0, landTo: 0, landT: 0,
         })),
@@ -47,7 +47,7 @@
       C.G.p.tickets[m.tier]--;
       m.pull = {
         t: 0, dur: 3.0 * C.G.p.pullMul, gacha: C.gachaRoll(m.tier, m.cat), fin: null,
-        reel: { pos: Math.random() * 280, vel: 460, state: "spin", landT: 0 },
+        reel: { pos: Math.random() * 280, vel: 300, state: "spin", landT: 0 },
       };
     }
     // Noise: alert nearby guards.
@@ -69,12 +69,13 @@
 
   function spawnPickup(room, m, data) {
     const s = dropSpot(room, m);
-    room.pickups.push(Object.assign({ x: s.x, y: s.y, bob: Math.random() * 6 }, data));
+    room.pickups.push(Object.assign({ x: s.x, y: s.y, bob: Math.random() * 6, age: 0 }, data));
   }
 
   function completePull(room, m) {
     const pull = m.pull, t = C.tierById(m.tier);
     m.pull = null;
+    C.floater(m.x, m.y - C.MH / 2 - 22, "✔ READY", "#ffe066");
     if (m.kind === "slot") m.idleSyms = pull.syms.slice();
     else m.lastPrize = { name: pull.gacha.res.name, rarity: pull.gacha.res.rarity };
     C.G.pulls++;
@@ -114,11 +115,12 @@
   }
 
   // Scroll one slot reel; when lockNow, ease onto the target symbol.
-  function tickSlotReel(reel, dt, lockNow) {
+  // pullT ramps the speed so the spin visibly accelerates like a real reel.
+  function tickSlotReel(reel, dt, lockNow, pullT) {
     var H = C.REEL_H, total = C.SYMS.length * H;
     if (reel.state === "locked") return;
     if (reel.state === "spin") {
-      reel.pos += reel.vel * dt;
+      reel.pos += reel.vel * Math.min(1, 0.25 + pullT / 0.5) * dt;
       if (!lockNow) return;
       // Land on the next offset at/after pos+90px that centers the target.
       var targetPos = C.pmod(-reel.target * H, total);
@@ -139,13 +141,13 @@
     var reel = pull.reel;
     if (reel.state === "locked") return;
     if (reel.state === "spin") {
-      reel.pos += reel.vel * dt;
+      reel.pos += reel.vel * Math.min(1, 0.25 + pull.t / 0.5) * dt;
       if (frac >= 0.8) { reel.state = "land"; reel.landT = 0; }
       return;
     }
     reel.landT += dt;
     var p = Math.min(1, reel.landT / GREEL_LAND);
-    reel.vel = 460 * (1 - p) * (1 - p);
+    reel.vel = 300 * (1 - p) * (1 - p);
     reel.pos += reel.vel * dt;
     if (p >= 1) reel.state = "locked";
   }
@@ -163,7 +165,7 @@
     const frac = Math.min(1, pull.t / pull.dur);
     var settled;
     if (m.kind === "slot") {
-      pull.reels.forEach((reel, i) => tickSlotReel(reel, dt, frac >= REEL_LOCKS[i]));
+      pull.reels.forEach((reel, i) => tickSlotReel(reel, dt, frac >= REEL_LOCKS[i], pull.t));
       settled = pull.reels.every(r => r.state === "locked");
     } else {
       tickGachaReel(pull, dt, frac);
@@ -182,7 +184,7 @@
 
   C.updatePickups = function (dt) {
     const p = C.G.p, room = C.curRoom();
-    for (const pk of room.pickups) pk.bob += dt;
+    for (const pk of room.pickups) { pk.bob += dt; pk.age += dt; }
     for (const pk of [...room.pickups]) {
       if (Math.hypot(pk.x - p.x, pk.y - p.y) > C.PICKUP_R) continue;
       room.pickups.splice(room.pickups.indexOf(pk), 1);

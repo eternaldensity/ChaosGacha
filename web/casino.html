@@ -13,6 +13,10 @@
     background: #14171e; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; margin: 8px 0; }
   #hud .pill { background:#1f242e; border-radius: 999px; padding: 3px 10px; font-size: .9rem; }
   #tickets { display:flex; gap:6px; flex-wrap: wrap; }
+  #build { display:flex; gap:6px; flex-wrap:wrap; margin:6px 0; font-size:.8rem; }
+  .bchip { background:#1a1410; border:1px solid #6b5518; border-radius:6px; padding:2px 7px; }
+  .bchip.pass { border-color:#2a4a6b; background:#101820; }
+  .bchip.pet { border-color:#1f5b52; background:#0e1a18; }
   .tick { font-size:.8rem; background:#20242e; border:1px solid #333a47; border-radius:6px; padding:2px 6px; }
   #stage { position: relative; }
   canvas#game { width: 100%; border-radius: 10px; background:#0b0d12; border:1px solid var(--line);
@@ -37,6 +41,7 @@
     <span class="pill" id="hWeapon">🥊 Unarmed</span>
   </div>
   <div id="tickets"></div>
+  <div id="build" title="Everything your prizes do, in one place"></div>
   <div id="stage">
     <canvas id="game" width="960" height="540"></canvas>
     <div id="title"><div class="tbox">
@@ -50,6 +55,8 @@
           <li>🎰 <b>Slots</b> cost coins, spit out coins + prize <b>tickets</b>.</li>
           <li>🎲 <b>Gacha</b> machines eat 1 ticket, spit out a <b>prize</b> (weapon, power, pet…).</li>
           <li>Press <kbd>E</kbd> at a machine to start a pull — then <b>walk away</b>. Come back for the loot.</li>
+          <li>Every prize lands in the <b>build bar</b> under the HUD: weapons, powers, passives, pets.</li>
+          <li>Doors are tagged <b>D3 ▲</b> (deadlier) / <b>D1 ▼</b> (safer) — walk into gold EXIT mats.</li>
           <li>Pulls are <b>slow and loud</b>: nearby guards come to investigate.</li>
         </ul>
       </div><div>
@@ -73,7 +80,8 @@
     </div></div>
     <div id="card"><h3 id="cardTitle"></h3><p id="cardBody"></p><p id="cardSub"></p></div>
     <div id="death"><div><h2>Soul collected.</h2><p id="deathStats"></p><p id="deathLegacy"></p>
-      <button id="againBtn" class="pick">Respawn with legacy (R)</button></div></div>
+      <button id="againBtn" class="pick">Respawn with legacy (R)</button>
+      <button id="freshBtn" class="pick">Fresh soul: wipe legacy (T)</button></div></div>
   </div>
   <p id="help"><kbd>WASD</kbd> move · <kbd>E</kbd> start pull (walk away, come back for loot) ·
     <kbd>Space</kbd> dodge · <kbd>J</kbd>/<kbd>K</kbd>/<kbd>L</kbd> powers · <kbd>R</kbd> respawn after death.

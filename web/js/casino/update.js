@@ -22,12 +22,14 @@
   }
 
   function updateDoors(p) {
+    // Thresholds sit just inside the clamp bounds so plain walking (no dash)
+    // reaches them: pressing into a doorway is enough to go through.
     const doorR = 34;
     let entered = null;
-    if (p.y < C.WALL - 6 && Math.abs(p.x - C.W / 2) < doorR) entered = "N";
-    else if (p.y > C.H - C.WALL + 6 && Math.abs(p.x - C.W / 2) < doorR) entered = "S";
-    else if (p.x < C.WALL - 6 && Math.abs(p.y - C.H / 2) < doorR) entered = "W";
-    else if (p.x > C.W - C.WALL + 6 && Math.abs(p.y - C.H / 2) < doorR) entered = "E";
+    if (p.y < C.WALL + 4 && Math.abs(p.x - C.W / 2) < doorR) entered = "N";
+    else if (p.y > C.H - C.WALL - 4 && Math.abs(p.x - C.W / 2) < doorR) entered = "S";
+    else if (p.x < C.WALL + 4 && Math.abs(p.y - C.H / 2) < doorR) entered = "W";
+    else if (p.x > C.W - C.WALL - 4 && Math.abs(p.y - C.H / 2) < doorR) entered = "E";
     if (entered) {
       if (entered === "N") { C.G.roomY--; p.y = C.H - C.WALL - 20; p.x = C.W / 2; }
       if (entered === "S") { C.G.roomY++; p.y = C.WALL + 20; p.x = C.W / 2; }

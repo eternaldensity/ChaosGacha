@@ -93,6 +93,17 @@
 
   C.die = function () {
     C.G.over = true;
+    // Too fast to impress the house: no legacy pull under 10 seconds.
+    if (C.G.t < 10) {
+      const room = C.curRoom();
+      C.ui.deathStats.textContent = "Survived " + C.fmtTime(C.G.t) + " · depth " + room.depth +
+        " · " + C.G.kills + " kills · " + C.G.pulls + " pulls.";
+      C.ui.deathLegacy.textContent = "Gone in " + Math.floor(C.G.t) +
+        "s — too fast for a legacy pull. Survive 10s+ to earn one.";
+      C.ui.deathLegacy.style.color = "#878d96";
+      C.ui.deathBox.classList.add("show");
+      return;
+    }
     const mins = C.G.t / 60;
     const lt = C.legacyTierFor(mins);
     const t = C.tierById(lt);

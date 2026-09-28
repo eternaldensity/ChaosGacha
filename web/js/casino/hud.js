@@ -15,5 +15,17 @@
     C.el("tickets").innerHTML = C.TIERS.map(t =>
       "<span class='tick' style='border-color:" + t.color + "'>" +
       t.label.slice(0, 4) + "×" + (p.tickets[t.id] || 0) + "</span>").join("");
+    const bits = [];
+    if (p.weapon) bits.push("<span class='bchip'>🔫 " + esc(p.weapon.name) + " " + p.dmg + "dmg</span>");
+    p.slots.forEach((s, i) => bits.push("<span class='bchip'>[" + C.SLOT_KEYS[i] + "] " +
+      esc(s.name) + " (" + s.op + (s.element ? "/" + s.element : "") + ")</span>"));
+    if (p.stash.length) bits.push("<span class='bchip'>+" + p.stash.length + " stashed</span>");
+    p.pets.forEach(pt => bits.push("<span class='bchip pet'>🐾 " + esc(pt.name) + "</span>"));
+    p.buildLog.forEach(b => bits.push("<span class='bchip " + b.cls + "'>" + esc(b.txt) + "</span>"));
+    C.el("build").innerHTML = bits.join("") || "<span class='bchip'>No prizes yet — pull a gacha.</span>";
+
+  function esc(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
   };
 })(window.Casino);

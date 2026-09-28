@@ -183,6 +183,12 @@
     ctx.textAlign = "center";
     for (const pk of room.pickups) {
       const bobY = pk.y + Math.sin(pk.bob * 4) * 3;
+      // Expanding gold ring so finished loot calls you back.
+      const rs = ((pk.age || 0) * 26) % 22;
+      ctx.globalAlpha = Math.max(0, 0.8 - rs / 22 * 0.8);
+      ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 2;
+      ctx.strokeRect(pk.x - 8 - rs / 2, bobY - 8 - rs / 2, 16 + rs, 16 + rs);
+      ctx.globalAlpha = 1;
       if (pk.kind === "coins") {
         ctx.fillStyle = "#8a6d1c";
         ctx.fillRect(pk.x - 8, bobY - 8, 16, 16);
@@ -272,13 +278,34 @@
     ctx.fillRect(cx - 36, C.H - W2, 3, W2); ctx.fillRect(cx + 33, C.H - W2, 3, W2);
     ctx.fillRect(0, cy - 36, W2, 3); ctx.fillRect(0, cy + 33, W2, 3);
     ctx.fillRect(C.W - W2, cy - 36, W2, 3); ctx.fillRect(C.W - W2, cy + 33, W2, 3);
-    // EXIT labels inside the mats.
-    ctx.fillStyle = "#ffe066"; ctx.font = "bold 11px monospace";
+    // EXIT labels inside the mats, each tagged with the depth beyond:
+    // red = deadlier, green = safer, gray = same. Walk in to go through.
+    const here = Math.abs(C.G.roomX) + Math.abs(C.G.roomY);
+    const depths = {
+      N: Math.abs(C.G.roomX) + Math.abs(C.G.roomY - 1),
+      S: Math.abs(C.G.roomX) + Math.abs(C.G.roomY + 1),
+      W: Math.abs(C.G.roomX - 1) + Math.abs(C.G.roomY),
+      E: Math.abs(C.G.roomX + 1) + Math.abs(C.G.roomY),
+    };
+    function depthTag(d) {
+      if (d > here) return { txt: "D" + d + " ▲", col: "#ff8888" };
+      if (d < here) return { txt: "D" + d + " ▼", col: "#11d939" };
+      return { txt: "D" + d + " ＝", col: "#c7ccd6" };
+    }
     ctx.textAlign = "center"; ctx.textBaseline = "middle";
-    ctx.fillText("EXIT", cx, W2 / 2);
-    ctx.fillText("EXIT", cx, C.H - W2 / 2);
-    ctx.fillText("EXIT", W2 / 2, cy);
-    ctx.fillText("EXIT", C.W - W2 / 2, cy);
+    ctx.fillStyle = "#ffe066"; ctx.font = "bold 11px monospace";
+    ctx.fillText("EXIT", cx, W2 / 2 - 8);
+    ctx.fillText("EXIT", cx, C.H - W2 / 2 - 8);
+    ctx.fillText("EXIT", W2 / 2, cy - 8);
+    ctx.fillText("EXIT", C.W - W2 / 2, cy - 8);
+    ctx.font = "bold 10px monospace";
+    const tags = { N: [cx, W2 / 2 + 9], S: [cx, C.H - W2 / 2 + 9],
+      W: [W2 / 2, cy + 9], E: [C.W - W2 / 2, cy + 9] };
+    for (const k of ["N", "S", "W", "E"]) {
+      const tag = depthTag(depths[k]);
+      ctx.fillStyle = tag.col;
+      ctx.fillText(tag.txt, tags[k][0], tags[k][1]);
+    }
     // Outward chevrons just inside the room (door corridors stay clear).
     const off = 4 + bob * 7;
     ctx.strokeStyle = gold; ctx.lineWidth = 3; ctx.lineCap = "round";

@@ -14,6 +14,7 @@
     deathLegacy: el("deathLegacy"),
     titleBox: el("title"),
     startBtn: el("startBtn"),
+    freshBtn: el("freshBtn"),
     canvas: el("game"),
   };
   C.ctx = C.ui.canvas.getContext("2d");

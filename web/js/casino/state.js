@@ -18,6 +18,12 @@
 
   C.roomKey = (x, y) => x + "," + y;
 
+  // Persistent one-liners describing what each prize does (see the build bar).
+  C.noteBuild = function (txt, cls) {
+    C.G.p.buildLog.push({ txt, cls: cls || "" });
+    if (C.G.p.buildLog.length > 10) C.G.p.buildLog.shift();
+  };
+
   function blankTickets() {
     const t = {};
     for (const tier of C.TIERS) t[tier.id] = 0;
@@ -36,7 +42,8 @@
         weapon: null, dmg: 1, range: 74, atkCd: 0, rollCd: 0, rollT: 0, inv: 0,
         pullMul: b.pullMul, discount: 0, pets: [],
         slots: [], stash: [], abilitiesOwned: 0, facing: 0,
-        dashDx: null, dashDy: null, dashSpd: 0,
+        dashDx: null, dashDy: null, dashSpd: 0, statuses: {},
+        buildLog: [],
       },
       cardT: 0, shake: 0,
     };

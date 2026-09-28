@@ -17,6 +17,7 @@
       const ranged = /gun|rifle|pistol|launcher|blaster|bow|cannon|card|chip/i.test(nm);
       p.weapon = { name: res.name, ranged, dmg: Math.max(1, Math.round(r / 2)) + (ranged ? 0 : 1) };
       p.dmg = p.weapon.dmg;
+      C.noteBuild("🔫 " + res.name + " (" + p.dmg + " dmg" + (ranged ? ", ranged" : ", melee") + ")");
       return "Weapon equipped: " + res.name + " (" + p.dmg + " dmg" +
         (ranged ? ", ranged" : ", melee") + "). J/click to fight back — Threat will rise.";
     }
@@ -26,6 +27,7 @@
       const opened = C.fillSlots();
       const slotNote = opened ? " (+" + opened + " slot opened!)" : "";
       if (ab) {
+        C.noteBuild("[" + (p.slots.length < C.maxSlots() ? C.SLOT_KEYS[p.slots.length] : "stash") + "] " + ab.name + " (" + ab.op + ")");
         const key = C.equipAbility(ab);
         if (key) {
           return "Slotted [" + key + "]: " + ab.name + " — " + ab.blurb + "." + slotNote +
@@ -39,30 +41,37 @@
     if (cat === "familiar") {
       const dmg = Math.max(1, Math.round(r / 3));
       p.pets.push({ name: res.name, dmg, cd: 0 });
+      C.noteBuild("🐾 " + res.name + " (" + dmg + " dmg auto)", "pet");
       return "Familiar joins: " + res.name + " (auto-attacks, " + dmg + " dmg).";
     }
     if (cat === "trait") {
       if (/speed|swift|quick|agil/i.test(nm)) {
         p.speed *= 1 + 0.04 * bonus;
+        C.noteBuild(res.name.slice(0, 18) + ": +" + Math.round(4 * bonus) + "% speed", "pass");
         return "Trait: +" + Math.round(4 * bonus) + "% move speed.";
       }
       if (/vital|health|tough|regen|heal/i.test(nm)) {
         p.maxHp += 1; p.hp = Math.min(p.maxHp, p.hp + 1);
+        C.noteBuild(res.name.slice(0, 18) + ": +1 max HP", "pass");
         return "Trait: +1 max HP.";
       }
       if (/pull|slot|machine|luck|gamb/i.test(nm)) {
         p.pullMul = Math.max(0.6, p.pullMul * 0.92);
+        C.noteBuild(res.name.slice(0, 18) + ": pulls 8% faster", "pass");
         return "Trait: pulls 8% faster.";
       }
       p.speed *= 1.02; p.pullMul = Math.max(0.6, p.pullMul * 0.98);
+      C.noteBuild(res.name.slice(0, 18) + ": edge (speed/pull)", "pass");
       return "Trait: small all-round edge (rarity " + r.toFixed(1) + ").";
     }
     if (cat === "skill") {
       if (r >= 4 || /slot|machine|discount|coin|econom/i.test(nm)) {
         p.discount = Math.min(0.4, p.discount + 0.08);
+        C.noteBuild(res.name.slice(0, 18) + ": slots -" + Math.round(p.discount * 100) + "%", "pass");
         return "Skill: slot costs -8% (total -" + Math.round(p.discount * 100) + "%).";
       }
       p.pullMul = Math.max(0.6, p.pullMul * 0.9);
+      C.noteBuild(res.name.slice(0, 18) + ": pulls 10% faster", "pass");
       return "Skill: pulls 10% faster.";
     }
     // Generic fallback scales with rarity so every pull is useful.
@@ -72,6 +81,7 @@
       return "Prize doubles as weapon: " + res.name + ". You can fight back now.";
     }
     p.dmg += 0.2 * bonus; p.speed += 2;
+    C.noteBuild(res.name.slice(0, 18) + ": +dmg/speed", "pass");
     return "Prize essence: +damage/speed (rarity " + r.toFixed(1) + " " + C.rarityName(r) + ").";
   };
 

@@ -10,6 +10,12 @@
     try { localStorage.setItem(KEY, JSON.stringify(C.legacy)); } catch (e) {}
   };
 
+  // Complete fresh start: forget all permanent bonuses.
+  C.wipeLegacy = function () {
+    C.legacy = [];
+    try { localStorage.removeItem(KEY); } catch (e) {}
+  };
+
   C.legacyBonus = function () {
     const b = { coins: 0, pullMul: 1, maxHp: 0 };
     for (const l of C.legacy) {
