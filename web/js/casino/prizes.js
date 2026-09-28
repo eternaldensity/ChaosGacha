@@ -140,8 +140,9 @@
       }
       if (/physical|might|brawn|bulk|mighty|strapping/i.test(nm)) {
         p.dmg += 0.5;
-        C.noteBuild(res.name.slice(0, 18) + ": +" + p.dmg.toFixed(1) + " dmg", "pass");
-        return "Trait: physicality — +0.5 base damage (now " + p.dmg.toFixed(1) + ").";
+        p.stanceBonus = (p.stanceBonus || 0) + 2;
+        C.noteBuild(res.name.slice(0, 18) + ": +dmg, +2s stances", "pass");
+        return "Trait: physicality — +0.5 base damage (now " + p.dmg.toFixed(1) + "), stances +2s.";
       }
       if (/affin|attun|align|bloodline|blood of|sorcer|wizard|witch|mage|magic|arcane/i.test(nm)) {
         const aff = C.elementOf(nm);

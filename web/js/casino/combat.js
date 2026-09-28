@@ -17,6 +17,9 @@
         });
       }
     } else {
+      const claws = p.stance && p.stance.kind === "claws";
+      const dmg = C.playerDmg(p.dmg + (claws ? 2 : 0), p.weapon.element);
+      let fed = false;
       for (const gd of [...C.curRoom().guards]) {
         if (Math.hypot(gd.x - p.x, gd.y - p.y) < p.range + 14) {
           if (p.weapon.knockback) {
@@ -26,7 +29,14 @@
               gd.y + Math.sin(a) * p.weapon.knockback, 9, C.solids(room));
             gd.x = fx[0]; gd.y = fx[1];
           }
-          C.damageGuard(gd, C.playerDmg(p.dmg, p.weapon.element), p.weapon.element);
+          if (C.damageGuard(gd, dmg, p.weapon.element)) fed = true;
+        }
+      }
+      if (claws) {
+        p.atkCd *= 0.5; // flurry rate
+        if (fed && p.hp < p.maxHp) {
+          p.hp += 1;
+          C.floater(p.x, p.y - 24, "+1 feed", "#ff9c41");
         }
       }
       C.G.shake = 0.12;
@@ -174,6 +184,30 @@
       best.possessed = 8 + ab.rarity * 0.5;
       best.chase = true;
       C.floater(best.x, best.y - 30, "⁉ turned!", "#c77dff");
+    } else if (ab.op === "stance") {
+      const dur = (ab.kind === "wings" ? 8 : 12) + (p.stanceBonus || 0);
+      p.stance = { kind: ab.kind, t: dur, dur };
+      C.floater(p.x, p.y - 30,
+        ab.kind === "claws" ? "CLAWS OUT" : ab.kind === "wings" ? "WINGS" : "CARAPACE", "#ff9c41");
+    } else if (ab.op === "taunt") {
+      const room = C.curRoom();
+      room.alert = 5;
+      for (const gd of room.guards) {
+        if (!gd.pacified && Math.hypot(gd.x - p.x, gd.y - p.y) < 420) gd.chase = true;
+      }
+      C.floater(p.x, p.y - 30, "COME AT ME", "#ff5555");
+    } else if (ab.op === "pacify") {
+      const room = C.curRoom();
+      let best = null, bd = 200;
+      for (const gd of room.guards) {
+        if (gd.pacified) continue;
+        const d = Math.hypot(gd.x - p.x, gd.y - p.y);
+        if (d < bd) { bd = d; best = gd; }
+      }
+      if (!best) return false; // no mark in reach: don't burn the cooldown
+      best.pacified = true;
+      best.chase = false;
+      C.floater(best.x, best.y - 30, "♪", "#11d939");
     } else if (ab.op === "dash") {
       p.dashDx = Math.cos(p.facing); p.dashDy = Math.sin(p.facing);
       p.dashSpd = ab.power;
@@ -402,8 +436,10 @@
   C.hurtPlayer = function (n, element) {
     const p = C.G.p;
     if (p.inv > 0 || p.rollT > 0 || C.G.over) return;
-    // Armor: flat chance to fully block a hit (capped at 50%).
-    if ((p.armorPct || 0) > 0 && Math.random() < p.armorPct) {
+    // Armor: flat chance to fully block a hit (carapace stacks, cap 65%).
+    const block = Math.min(0.65, (p.armorPct || 0) +
+      ((p.stance && p.stance.kind === "carapace") ? 0.25 : 0));
+    if (block > 0 && Math.random() < block) {
       C.floater(p.x, p.y - 24, "blocked", "#7df9ff");
       p.inv = Math.max(p.inv, 0.4);
       C.G.shake = 0.1;
@@ -465,6 +501,7 @@
   function hurtTouch(gd, p, d) {
     if (d < 26 && gd.atkCd <= 0) {
       C.hurtPlayer(gd.touchDmg || 1, gd.affix === "elemental" ? gd.element : null);
+      if (p.stance && p.stance.kind === "carapace") C.damageGuard(gd, 2, null);
       if (gd.affix === "elemental" && gd.element) {
         const st = C.statusForElement(gd.element);
         if (st) C.applyStatus(p, st[0], st[1], st[2]);
@@ -518,6 +555,13 @@
         if (gd.atkCd > 0) gd.atkCd -= dt;
         continue;
       }
+      // Pacified: a friend for life. Stands around, takes dots like anyone.
+      if (gd.pacified) {
+        const pc = C.tickGuardStatuses(gd, dt);
+        if (pc.died) continue;
+        if (gd.atkCd > 0) gd.atkCd -= dt;
+        continue;
+      }
       // Cloaked: the trail goes cold, chasers give up.
       if (C.G.p.cloakT > 0) {
         gd.chase = false;
@@ -529,7 +573,7 @@
       // DoTs tick even on unaware guards; slow/stun matter once chasing.
       const st = C.tickGuardStatuses(gd, dt);
       if (st.died) continue;
-      if (!gd.chase && (d < gd.sight || room.alert > 0)) gd.chase = true;
+      if (!gd.pacified && !gd.chase && (d < gd.sight || room.alert > 0)) gd.chase = true;
       if (!gd.chase) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
       const mult = (p.rollT > 0 ? 0.7 : 1) * st.mult;
       if (st.stunned) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }

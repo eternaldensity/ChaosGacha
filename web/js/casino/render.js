@@ -262,6 +262,11 @@
         ctx.fillStyle = "#ff2222"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
         ctx.fillText("!", gd.x, gd.y - 24);
       }
+      // Pacified guards are friends (dim ♪, never re-acquire).
+      if (gd.pacified) {
+        ctx.fillStyle = "#11d939"; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
+        ctx.fillText("♪", gd.x, gd.y - 32);
+      }
       // Possessed guards answer to you now (purple ⁉).
       if (gd.possessed && gd.possessed > 0) {
         ctx.strokeStyle = "#c77dff"; ctx.lineWidth = 2;
@@ -565,6 +570,12 @@
     if (p.surge && p.surge.t > 0) {
       ctx.strokeStyle = "#ff5555"; ctx.lineWidth = 2;
       ctx.strokeRect(p.x - 12, p.y - 21, 24, 30);
+    }
+    if (p.stance && p.stance.t > 0) {
+      ctx.strokeStyle = p.stance.kind === "claws" ? "#ff9c41"
+        : p.stance.kind === "wings" ? "#ffffff" : "#8b93a3";
+      ctx.lineWidth = 2;
+      ctx.strokeRect(p.x - 13, p.y - 22, 26, 32);
     }
     if (p.inv <= 0 || Math.floor(C.G.t * 12) % 2 === 0) {
       ctx.globalAlpha = cloakA;

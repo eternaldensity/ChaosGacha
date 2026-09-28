@@ -104,6 +104,13 @@
       spd *= p.surge.spdMult;
       if (p.surge.t <= 0) p.surge = null;
     }
+    const stance = (p.stance && p.stance.t > 0) ? p.stance.kind : null;
+    if (p.stance && p.stance.t > 0) {
+      p.stance.t -= dt;
+      if (p.stance.t <= 0) { p.stance = null; C.floater(p.x, p.y - 30, "stance fades", "#8b93a3"); }
+    }
+    if (stance === "carapace") spd *= 0.9;
+    if (stance === "wings") spd *= 1.3;
 
     // Timed feats.
     if (!C.G.feats.pacifist && C.G.t > 300 && C.G.kills === 0) {
@@ -149,8 +156,11 @@
       p.x += dx * sp * dt;
       p.y += dy * sp * dt;
     }
-    const fixed = C.collideCircle(p.x, p.y, p.r, C.solids(room));
-    p.x = fixed[0]; p.y = fixed[1];
+    // Wings fly over maze walls and machines (outer walls still hold).
+    if (stance !== "wings") {
+      const fixed = C.collideCircle(p.x, p.y, p.r, C.solids(room));
+      p.x = fixed[0]; p.y = fixed[1];
+    }
 
     updateDoors(p);
 

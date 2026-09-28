@@ -55,7 +55,7 @@
     if (!C.G.p.cloakT) {
       room.alert = 5;
       for (const gd of room.guards) {
-        if (Math.hypot(gd.x - C.G.p.x, gd.y - C.G.p.y) < 300) gd.chase = true;
+        if (!gd.pacified && Math.hypot(gd.x - C.G.p.x, gd.y - C.G.p.y) < 300) gd.chase = true;
       }
     }
     C.updateHud();
@@ -89,7 +89,7 @@
         C.floater(at.x, at.y - 50, "JACKPOT 7-7-7!", "#f7d40a");
         C.showCard("JACKPOT 7-7-7! +" + pay.coins + " coins + 1× " + pay.ticket,
           t.label + " slot screams. Every guard heard that. Grab the loot.", "", 3500);
-        for (const gd of room.guards) gd.chase = true;
+        for (const gd of room.guards) if (!gd.pacified) gd.chase = true;
       } else if (pay.kind === "ticket") {
         spawnPickup(room, m, { kind: "ticket", tier: pay.ticket });
         C.floater(at.x, at.y - 50, "🎟 " + pay.ticket, t.color);

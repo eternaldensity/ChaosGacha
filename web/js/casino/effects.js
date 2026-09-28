@@ -156,6 +156,33 @@
         blurb: "force wave (" + power + " dmg + shove)",
       };
     }
+    const stanceKind = (() => {
+      if (/claw|fang|talon|\brend\b|beast|feral|\bwere\b|werewolf|lycan|dragon|transform|shapeshift|alternate form/i.test(nm)) return "claws";
+      if (/wing|flight|\bfly\b|angel|harpy|glide/i.test(nm)) return "wings";
+      if (/carapace|shell|exoskeleton|\bskin\b|barkskin|diamond skin|armor skin|scales|scaled hide/i.test(nm)) return "carapace";
+      return null;
+    })();
+    if (stanceKind) {
+      return {
+        name: res.name, rarity: r, op: "stance", kind: stanceKind,
+        cd: C.slotCd(16, r), cdLeft: 0,
+        blurb: stanceKind + " stance (" +
+          (stanceKind === "claws" ? "fast +dmg melee, kills heal" :
+           stanceKind === "wings" ? "fly over walls, +speed" : "+block, thorns, slow") + ")",
+      };
+    }
+    if (/taunt|provoke|\bchallenge\b|mock|jeer|trash talk|come at me/i.test(nm)) {
+      return {
+        name: res.name, rarity: r, op: "taunt",
+        cd: C.slotCd(12, r), cdLeft: 0, blurb: "taunt: every guard comes to you",
+      };
+    }
+    if (/pacif|soothe|serene|befriend|lullaby|calm emotions|tranquil/i.test(nm)) {
+      return {
+        name: res.name, rarity: r, op: "pacify",
+        cd: C.slotCd(15, r), cdLeft: 0, blurb: "pacify a guard for good",
+      };
+    }
     if (/fire|flame|lightning|bolt|projectile|emit|blast|breath|plasma|frost|ice|freeze|shadow.?bolt|holy.?light|acid|poison.?spit|energy.?blast|bullet|spike|shard|lance|arrow|dart|missile|cannon|volley|javelin|spear/i.test(nm)) {
       const power = Math.max(1, Math.round(r / 2));
       const element = el;
@@ -173,7 +200,7 @@
         cd: C.slotCd(6, r), cdLeft: 0, blurb: "blink-dash, i-frames",
       };
     }
-    if (/strength|muscle|physique|durability|stamina|athletic|transform|shapeshift|beast form|dragon form|alternate form|enrage|\brage\b|frenzy|berserk|bloodlust|overdrive/i.test(nm)) {
+    if (/strength|muscle|physique|durability|stamina|athletic|enrage|\brage\b|frenzy|berserk|bloodlust|overdrive/i.test(nm)) {
       return {
         name: res.name, rarity: r, op: "surge",
         dur: 10, dmgMult: 1 + 0.1 * r, spdMult: 1 + 0.05 * r,
