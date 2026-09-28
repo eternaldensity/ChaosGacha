@@ -234,10 +234,16 @@
   function drawGuards(room) {
     const ctx = C.ctx;
     for (const gd of room.guards) {
-      ctx.fillStyle = gd.type === "enforcer" ? "#5a1a1a" : gd.type === "pitboss" ? "#3a2a5a" : "#111";
-      ctx.fillRect(gd.x - 9, gd.y - 12, 18, 24);
-      ctx.fillStyle = "#e8c39e"; ctx.fillRect(gd.x - 6, gd.y - 18, 12, 8); // head
-      ctx.fillStyle = "#000"; ctx.fillRect(gd.x - 6, gd.y - 16, 12, 3); // shades
+      const sc = gd.size || 1; // the Collector is bigger than you
+      ctx.fillStyle = gd.type === "collector" ? "#3a0a0a"
+        : gd.type === "enforcer" ? "#5a1a1a" : gd.type === "pitboss" ? "#3a2a5a" : "#111";
+      ctx.fillRect(gd.x - 9 * sc, gd.y - 12 * sc, 18 * sc, 24 * sc);
+      ctx.fillStyle = "#e8c39e"; ctx.fillRect(gd.x - 6 * sc, gd.y - 18 * sc, 12 * sc, 8 * sc); // head
+      ctx.fillStyle = "#000"; ctx.fillRect(gd.x - 6 * sc, gd.y - 16 * sc, 12 * sc, 3 * sc); // shades
+      if (gd.type === "collector") {
+        ctx.fillStyle = "#ffe066"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
+        ctx.fillText("💀", gd.x, gd.y - 24 * sc);
+      }
       if (gd.chase) {
         ctx.fillStyle = "#ff2222"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
         ctx.fillText("!", gd.x, gd.y - 24);
@@ -443,12 +449,17 @@
     const ctx = C.ctx, room = C.curRoom(), p = C.G.p;
     ctx.save();
     if (C.G.shake > 0) ctx.translate((Math.random() - 0.5) * 6, (Math.random() - 0.5) * 6);
-    // Floor carpet.
-    ctx.fillStyle = "#191423"; ctx.fillRect(0, 0, C.W, C.H);
-    ctx.fillStyle = "#1e1830";
+    // Floor carpet (vaults gild it).
+    ctx.fillStyle = room.vault ? "#221a10" : "#191423";
+    ctx.fillRect(0, 0, C.W, C.H);
+    ctx.fillStyle = room.vault ? "#2e2413" : "#1e1830";
     for (let y = 0; y < C.H; y += 24)
       for (let x = 0; x < C.W; x += 24)
         if ((x + y) % 48 === 0) ctx.fillRect(x, y, 12, 12);
+    if (room.vault) {
+      ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 3;
+      ctx.strokeRect(C.WALL + 6, C.WALL + 6, C.W - C.WALL * 2 - 12, C.H - C.WALL * 2 - 12);
+    }
     // Walls + door gaps.
     ctx.fillStyle = "#2b2137";
     ctx.fillRect(0, 0, C.W, C.WALL); ctx.fillRect(0, C.H - C.WALL, C.W, C.WALL);

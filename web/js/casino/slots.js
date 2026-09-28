@@ -3,7 +3,7 @@
  * Depends on: config, state (runtime G). */
 (function (C) {
   C.slotCost = function (t) {
-    return Math.max(1, Math.round(t.cost * (1 - C.G.p.discount)));
+    return Math.max(1, Math.round(t.cost * (1 - C.G.p.discount) * (C.G.costMult || 1)));
   };
 
   C.rollSlotPayout = function (t) {

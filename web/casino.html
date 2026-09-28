@@ -40,6 +40,14 @@
   #startBtn { display:block; width:100%; margin-top:12px; font-size:1.1rem; min-height:48px;
     background:#2a3342; color:#fff; border:2px solid var(--accent); border-radius:10px; cursor:pointer; }
   #startBtn:hover { background:#354052; }
+  #curseBox { margin-top:12px; font-size:.85rem; }
+  #curseBox .small { opacity:.8; }
+  #curseBtn { margin:6px 0; padding:8px 14px; background:#2a1a2a; color:#fff;
+    border:2px solid #a06; border-radius:10px; cursor:pointer; }
+  #curseBtn:hover:not(:disabled) { background:#3a2440; }
+  #curseBtn:disabled { opacity:.4; cursor:default; }
+  #curseList { display:flex; gap:6px; flex-wrap:wrap; margin:6px 0; }
+  #bestLine { opacity:.8; font-size:.85rem; }
   #draft { position:absolute; inset:0; z-index:9; background:rgba(5,6,12,.88);
     border-radius:10px; display:flex; align-items:center; justify-content:center; padding:18px; }
   #draft.hide { display:none; }
@@ -110,6 +118,12 @@
           <li>Death earns a free <b>legacy pull</b>: a permanent bonus for next run.</li>
         </ul>
       </div></div>
+      <div id="curseBox">
+        <b>🎲 Curse Roulette</b> <span class="small">— take up to 3 curses for upfront tickets. Reach depth 3 to resolve them.</span><br>
+        <button id="curseBtn">Roll d20 for a curse</button>
+        <div id="curseList"></div>
+        <p id="bestLine"></p>
+      </div>
       <button id="startBtn">Take the coins (Enter)</button>
     </div></div>
     <div id="card"><h3 id="cardTitle"></h3><p id="cardBody"></p><p id="cardSub"></p></div>
@@ -125,6 +139,7 @@
 <script src="data/entries.js"></script>
 <script src="js/rng.js"></script>
 <script src="js/gacha.js"></script>
+<script src="data/curses.js"></script>
 <script src="js/casino/config.js"></script>
 <script src="js/casino/dom.js"></script>
 <script src="js/casino/legacy.js"></script>
@@ -136,6 +151,7 @@
 <script src="js/casino/pulls.js"></script>
 <script src="js/casino/combat.js"></script>
 <script src="js/casino/draft.js"></script>
+<script src="js/casino/curses.js"></script>
 <script src="js/casino/update.js"></script>
 <script src="js/casino/render.js"></script>
 <script src="js/casino/main.js" defer></script>

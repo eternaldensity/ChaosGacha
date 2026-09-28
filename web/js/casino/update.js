@@ -47,9 +47,17 @@
     C.G.waveT -= dt;
     if (C.G.waveT > 0) return;
     C.G.waveT = Math.max(25, 60 - C.G.threat * 5 - room.danger * 2);
+    // Threat 4+: the Collector may come instead of a pack (one at a time).
+    if (C.G.threat >= 4 && !room.guards.some(g => g.type === "collector") && Math.random() < 0.3) {
+      room.guards.push(C.makeBoss(room, room.danger, room.depth));
+      C.showCard("💀 DEBT COLLECTOR", "It has come to collect. Kill it for a payout.", "", 3000);
+      C.updateHud();
+      return;
+    }
     const n = 1 + Math.floor(C.G.threat / 2) + (room.danger > 4 ? 1 : 0);
     for (let i = 0; i < n; i++) {
-      const gd = C.makeGuard(room, room.danger);
+      // Threat 3+: first responder is always an elite.
+      const gd = C.makeGuard(room, room.danger, i === 0 && C.G.threat >= 3);
       gd.x = C.WALL + 30;
       gd.y = C.WALL + 80 + Math.random() * 100;
       gd.chase = true;
@@ -106,6 +114,7 @@
       C.G.feats.deep = 1;
       p.tickets.gold++;
       C.showCard("Feat: High roller (depth 3)", "+1× Gold Random ticket.", "", 3000);
+      C.resolveCurses();
     }
 
     // Movement: free to roam mid-pull, maze walls block.

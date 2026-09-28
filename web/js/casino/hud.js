@@ -25,6 +25,8 @@
     if (p.stable.length) bits.push("<span class='bchip pet'>+" + p.stable.length + " stabled (P)</span>");
     if (p.armorPct > 0) bits.push("<span class='bchip'>🛡 block " + Math.round(p.armorPct * 100) + "%</span>");
     if (p.cloakT > 0) bits.push("<span class='bchip'>👻 cloak " + p.cloakT.toFixed(0) + "s</span>");
+    (C.G.curses || []).forEach(c => bits.push("<span class='bchip'>🎲 " +
+      esc(c.label) + " (" + c.tier + (c.resolved ? ", ✓" : "") + ")</span>"));
     p.buildLog.forEach(b => bits.push("<span class='bchip " + b.cls + "'>" + esc(b.txt) + "</span>"));
     C.el("build").innerHTML = bits.join("") || "<span class='bchip'>No prizes yet — pull a gacha.</span>";
 

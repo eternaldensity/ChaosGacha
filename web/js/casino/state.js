@@ -38,7 +38,7 @@
     C.G = {
       over: false, title: showTitle !== false, t: 0, kills: 0, pulls: 0, threat: 0,
       roomX: 0, roomY: 0, waveT: 50,
-      feats: {},
+      feats: {}, curses: [], costMult: 1, guardBonus: 0,
       p: {
         x: C.W / 2, y: C.H / 2 + 60, r: 10, hp: 3 + b.maxHp, maxHp: 3 + b.maxHp,
         speed: 165, coins: 100 + b.coins, tickets: blankTickets(),
@@ -58,9 +58,18 @@
     C.rings.length = 0;
     C.beams.length = 0;
     C.delayed.length = 0;
+    // Heirloom: a weapon carried across death (earned by surviving 15+ min).
+    const hw = C.legacyWeapon();
+    if (hw) {
+      C.G.p.weapon = Object.assign({}, hw);
+      C.G.p.dmg = hw.dmg;
+      C.noteBuild("🔫 " + hw.name + " (heirloom)");
+    }
     C.getRoom(0, 0);
     C.hideDeath();
     C.updateHud();
+    C.renderCurseList();
+    C.renderBest();
     if (C.G.title) {
       C.showTitle();
     } else {
@@ -173,18 +182,22 @@
     if (C.rooms.has(k)) return C.rooms.get(k);
     const depth = Math.abs(x) + Math.abs(y);
     const danger = 1 + depth * 0.6 + Math.random() * 0.5;
+    const vrnd = C.rng((x * 73471) ^ (y * 192837) ^ 0x51ab);
+    const vault = depth >= 3 && vrnd() < 0.15;
     const room = {
-      x, y, depth, danger, machines: [], guards: [],
+      x, y, depth, danger, machines: [], guards: [], vault,
       walls: C.genWalls(x, y, depth), tempWalls: [], pickups: [], alert: 0, _seen: false,
     };
-    // 12 machines: 8 slots + 4 gacha, tiers sampled from allowed(depth).
+    // 12 machines: 8 slots + 4 gacha. Vaults stock the top two tiers.
     const pool = C.allowedTiers(depth);
+    const tierPool = vault && pool.length > 2 ? pool.slice(-2) : pool;
     const pickTier = () => {
-      const ws = pool.map((t, i) => (i + 1) * (depth >= t.minDepth + 2 ? 2 : 1));
+      const P = tierPool;
+      const ws = P.map((t, i) => (i + 1) * (depth >= t.minDepth + 2 ? 2 : 1));
       let tot = 0; for (const w of ws) tot += w;
       let r = Math.random() * tot;
-      for (let i = 0; i < pool.length; i++) { r -= ws[i]; if (r <= 0) return pool[i]; }
-      return pool[pool.length - 1];
+      for (let i = 0; i < P.length; i++) { r -= ws[i]; if (r <= 0) return P[i]; }
+      return P[P.length - 1];
     };
     const spots = [];
     for (let i = 0; i < 6; i++) spots.push({ x: 120 + i * 144, y: C.WALL + 44 });
@@ -207,7 +220,10 @@
         x: spots[i].x, y: spots[i].y,
       });
     });
-    const nGuards = Math.min(6, 1 + Math.floor(danger / 1.6));
+    // Vaults run a skeleton crew (1 guard max); curses can add patrols.
+    const nGuards = vault
+      ? 1
+      : Math.min(6, 1 + Math.floor(danger / 1.6) + (C.G.guardBonus || 0));
     let placed = 0, guardTries = 0;
     while (placed < nGuards && guardTries++ < 40) {
       const gd = C.makeGuard(room, danger);
@@ -221,8 +237,26 @@
 
   C.curRoom = function () { return C.getRoom(C.G.roomX, C.G.roomY); };
 
-  C.makeGuard = function (room, danger) {
-    const elite = C.G.threat >= 3 && Math.random() < 0.35;
+  // Debt Collector: the house collecting in person. Slow, huge, pays out.
+  C.makeBoss = function (room, danger, depth) {
+    const b = C.makeGuard(room, danger, true);
+    b.hp = 18 + depth * 3;
+    b.speed = 100;
+    b.sight = 999;
+    b.ranged = true;
+    b.affix = "shielded";
+    b.shield = 6;
+    b.type = "collector";
+    b.touchDmg = 2;
+    b.size = 1.6;
+    b.x = C.WALL + 80;
+    b.y = C.WALL + 100 + Math.random() * 80;
+    b.chase = true;
+    return b;
+  };
+
+  C.makeGuard = function (room, danger, forceElite) {
+    const elite = !!forceElite || (C.G.threat >= 3 && Math.random() < 0.35);
     const fast = C.G.threat >= 2 && Math.random() < 0.4;
     // Threat-gated affixes: chargers run you down, elementals burn/frost
     // on touch, shieldeds soak damage first.
@@ -254,8 +288,10 @@
     if (!room._seen) {
       room._seen = true;
       const tiers = [...new Set(room.machines.map(m => m.tier))].join(", ");
-      C.showCard("Depth " + room.depth + " · Danger " + room.danger.toFixed(1),
-        "Machines: " + tiers + ". " + room.guards.length + " guards on floor.",
+      C.showCard(room.vault ? "★ VAULT ★ Depth " + room.depth : "Depth " + room.depth + " · Danger " + room.danger.toFixed(1),
+        room.vault
+          ? "Top-tier machines, skeleton crew. Grab it all — loudly."
+          : "Machines: " + tiers + ". " + room.guards.length + " guards on floor.",
         room.depth >= 4 ? "Platinum+ country. Watch the timer." : "", 2600);
     }
     C.updateHud();

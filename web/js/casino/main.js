@@ -14,6 +14,7 @@
   addEventListener("keyup", e => { C.keys[e.key.toLowerCase()] = false; });
   C.ui.canvas.addEventListener("mousedown", () => { C.queueAttack(); });
   C.el("againBtn").addEventListener("click", () => C.newRun(false));
+  C.el("curseBtn").addEventListener("click", () => C.rollCurse());
   C.ui.freshBtn.addEventListener("click", () => { C.wipeLegacy(); C.newRun(false); });
   C.ui.startBtn.addEventListener("click", () => C.startGame());
 

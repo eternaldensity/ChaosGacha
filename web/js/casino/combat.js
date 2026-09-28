@@ -277,6 +277,17 @@
     const room = C.curRoom();
     room.guards = room.guards.filter(g => g !== gd);
     C.G.kills++;
+    if (gd.type === "collector") {
+      // The Collector drops what it was carrying: a payout on the floor.
+      const mk = (data) => room.pickups.push(Object.assign(
+        { x: gd.x, y: gd.y, bob: Math.random() * 6, age: 0 }, data));
+      mk({ kind: "coins", amount: 60 + room.depth * 10 });
+      mk({ kind: "ticket", tier: "gold" });
+      mk({ kind: "ticket", tier: "silver" });
+      C.showCard("💀 DEBT COLLECTOR DOWN",
+        "It dropped +" + (60 + room.depth * 10) + " coins, gold + silver tickets. Grab them.",
+        "Threat remains ★" + C.G.threat + " — the house has more.", 4000);
+    }
     const nt = Math.min(5, Math.floor(C.G.kills / 2));
     if (nt > C.G.threat) {
       C.G.threat = nt;
@@ -315,11 +326,14 @@
 
   C.die = function () {
     C.G.over = true;
+    const dreRoom = C.curRoom();
+    const best = C.saveBest(dreRoom.depth, C.G.t, C.G.kills);
+    const bestTag = best ? " ★ NEW BEST" : "";
     // Too fast to impress the house: no legacy pull under 10 seconds.
     if (C.G.t < 10) {
       const room = C.curRoom();
       C.ui.deathStats.textContent = "Survived " + C.fmtTime(C.G.t) + " · depth " + room.depth +
-        " · " + C.G.kills + " kills · " + C.G.pulls + " pulls.";
+        " · " + C.G.kills + " kills · " + C.G.pulls + " pulls." + bestTag;
       C.ui.deathLegacy.textContent = "Gone in " + Math.floor(C.G.t) +
         "s — too fast for a legacy pull. Survive 10s+ to earn one.";
       C.ui.deathLegacy.style.color = "#878d96";
@@ -339,22 +353,26 @@
     } catch (e) {
       res = { name: "Stub soul-boon", rarity: t.avg, category: "trait", description: "", source: "" };
     }
-    C.legacy.push({ name: res.name, rarity: res.rarity, category: res.category, at: Date.now() });
+    C.legacy.push(Object.assign(
+      { name: res.name, rarity: res.rarity, category: res.category, at: Date.now() },
+      // Heirloom: 15+ minute runs carry their weapon across death.
+      (C.G.t >= 900 && C.G.p.weapon) ? { heirloom: Object.assign({}, C.G.p.weapon) } : {}));
     C.saveLegacy();
     const room = C.curRoom();
     C.ui.deathStats.textContent = "Survived " + C.fmtTime(C.G.t) + " · depth " + room.depth +
-      " · " + C.G.kills + " kills · " + C.G.pulls + " pulls · Threat ★" + C.G.threat + ".";
+      " · " + C.G.kills + " kills · " + C.G.pulls + " pulls · Threat ★" + C.G.threat + "." + bestTag;
     C.ui.deathLegacy.textContent = "Legacy pull (" + lt + "): [" + C.rarityName(res.rarity) + "] " +
       res.name + " (" + Number(res.rarity).toFixed(1) + ") — permanent: +" +
       Math.floor(res.rarity * 8) + " starting coins, pulls faster" +
-      (res.rarity >= 6 ? ", +1 max HP" : "") + ".";
+      (res.rarity >= 6 ? ", +1 max HP" : "") + "." +
+      ((C.G.t >= 900 && C.G.p.weapon) ? " Heirloom kept: " + C.G.p.weapon.name + "." : "");
     C.ui.deathLegacy.style.color = C.rarityColor(res.rarity);
     C.ui.deathBox.classList.add("show");
   };
 
   function hurtTouch(gd, p, d) {
     if (d < 26 && gd.atkCd <= 0) {
-      C.hurtPlayer(1, gd.affix === "elemental" ? gd.element : null);
+      C.hurtPlayer(gd.touchDmg || 1, gd.affix === "elemental" ? gd.element : null);
       if (gd.affix === "elemental" && gd.element) {
         const st = C.statusForElement(gd.element);
         if (st) C.applyStatus(p, st[0], st[1], st[2]);
