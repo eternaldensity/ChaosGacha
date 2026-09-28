@@ -88,6 +88,11 @@
     }
     let spd = p.speed;
     if (ps.slow && ps.slow.t > 0) { spd *= ps.slow.power; ps.slow.t -= dt; }
+    if (p.surge && p.surge.t > 0) {
+      p.surge.t -= dt;
+      spd *= p.surge.spdMult;
+      if (p.surge.t <= 0) p.surge = null;
+    }
 
     // Timed feats.
     if (!C.G.feats.pacifist && C.G.t > 300 && C.G.kills === 0) {
@@ -143,7 +148,8 @@
     C.updateGuards(dt);
     C.updatePets(dt);
     C.updateProjectiles(dt);
-    C.updateRings(dt);
+    C.updateFx(dt);
+    C.updateTempWalls(dt);
     updateWaves(dt, room);
     for (const f of C.floaters) f.t -= dt;
     C.floaters = C.floaters.filter(f => f.t > 0);

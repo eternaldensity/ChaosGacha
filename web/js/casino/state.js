@@ -6,6 +6,8 @@
   C.projs = [];
   C.floaters = [];
   C.rings = [];
+  C.beams = [];
+  C.delayed = [];
   C.keys = {};
   C.G = null;
   let attackQueued = false;
@@ -44,7 +46,7 @@
         pullMul: b.pullMul, discount: 0, pets: [],
         slots: [], stash: [], abilitiesOwned: 0, facing: 0,
         dashDx: null, dashDy: null, dashSpd: 0, statuses: {},
-        buildLog: [], stable: [], cloakT: 0, armorPct: 0,
+        buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null,
       },
       cardT: 0, shake: 0,
     };
@@ -52,6 +54,8 @@
     C.projs.length = 0;
     C.floaters.length = 0;
     C.rings.length = 0;
+    C.beams.length = 0;
+    C.delayed.length = 0;
     C.getRoom(0, 0);
     C.hideDeath();
     C.updateHud();
@@ -104,9 +108,10 @@
     return walls;
   };
 
-  // Solid rects for collision: walls + machine bodies.
+  // Solid rects for collision: walls + conjured walls + machine bodies.
   C.solids = function (room) {
     const out = room.walls.slice();
+    if (room.tempWalls) for (const w of room.tempWalls) out.push(w);
     for (const m of room.machines) {
       out.push({ x: m.x - C.MW / 2, y: m.y - C.MH / 2, w: C.MW, h: C.MH });
     }
@@ -144,6 +149,14 @@
     return false;
   };
 
+  // Conjured walls stop foe shots only (your magic, your rules).
+  C.pointBlockedTemp = function (room, x, y) {
+    for (const rc of (room.tempWalls || [])) {
+      if (x >= rc.x && x <= rc.x + rc.w && y >= rc.y && y <= rc.y + rc.h) return true;
+    }
+    return false;
+  };
+
   function clearOfSolids(room, x, y, r) {
     for (const s of C.solids(room)) {
       const cx = Math.max(s.x, Math.min(x, s.x + s.w));
@@ -160,7 +173,7 @@
     const danger = 1 + depth * 0.6 + Math.random() * 0.5;
     const room = {
       x, y, depth, danger, machines: [], guards: [],
-      walls: C.genWalls(x, y, depth), pickups: [], alert: 0, _seen: false,
+      walls: C.genWalls(x, y, depth), tempWalls: [], pickups: [], alert: 0, _seen: false,
     };
     // 12 machines: 8 slots + 4 gacha, tiers sampled from allowed(depth).
     const pool = C.allowedTiers(depth);

@@ -23,7 +23,7 @@
         return "Consumed " + res.name + ": +" + amt + " HP on the spot.";
       }
       if (/bomb|grenade|dynamite|explosive|volatile|mine/i.test(nm)) {
-        C.detonate(p.x, p.y, 135, 2 + Math.floor(r / 2), "fire");
+        C.detonate(p.x, p.y, 135, C.playerDmg(2 + Math.floor(r / 2)), "fire");
         C.noteBuild(res.name.slice(0, 18) + ": volatile boom");
         return "Volatile " + res.name + ": it detonates on touch! Guards nearby eat " +
           (2 + Math.floor(r / 2)) + " fire damage.";

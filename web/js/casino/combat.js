@@ -13,7 +13,7 @@
       for (const off of angs) {
         C.projs.push({
           x: p.x, y: p.y, vx: Math.cos(a + off) * 520, vy: Math.sin(a + off) * 520,
-          dmg: p.dmg, foe: false, life: 0.8, element: p.weapon.element,
+          dmg: C.playerDmg(p.dmg), foe: false, life: 0.8, element: p.weapon.element,
         });
       }
     } else {
@@ -26,7 +26,7 @@
               gd.y + Math.sin(a) * p.weapon.knockback, 9, C.solids(room));
             gd.x = fx[0]; gd.y = fx[1];
           }
-          C.damageGuard(gd, p.dmg, p.weapon.element);
+          C.damageGuard(gd, C.playerDmg(p.dmg), p.weapon.element);
         }
       }
       C.G.shake = 0.12;
@@ -34,13 +34,23 @@
   };
 
   // Fire a slotted active power. Cooldown-gated; heal won't waste on full HP.
+  // Point-segment distance for beam hits.
+  function segDist(px, py, x1, y1, x2, y2) {
+    const dx = x2 - x1, dy = y2 - y1;
+    const l2 = dx * dx + dy * dy;
+    let t = l2 ? ((px - x1) * dx + (py - y1) * dy) / l2 : 0;
+    t = Math.max(0, Math.min(1, t));
+    return Math.hypot(px - (x1 + t * dx), py - (y1 + t * dy));
+  }
+
   C.runActive = function (i) {
     const p = C.G.p, ab = p.slots[i];
     if (!ab || ab.cdLeft > 0 || C.G.over || C.G.title) return false;
+    const armed = p.weapon ? 1 : 0;
     if (ab.op === "bolt") {
       const g = C.nearestGuard(460);
       const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : p.facing;
-      const dmg = ab.power + (p.weapon ? 1 : 0);
+      const dmg = C.playerDmg(ab.power + armed);
       const angs = ab.element === "venom" ? [-0.18, 0, 0.18] : [0];
       for (const off of angs) {
         C.projs.push({
@@ -49,7 +59,81 @@
         });
       }
     } else if (ab.op === "nova") {
-      C.detonate(p.x, p.y, 135, ab.power + (p.weapon ? 1 : 0), ab.element);
+      C.detonate(p.x, p.y, 135, C.playerDmg(ab.power + armed), ab.element);
+    } else if (ab.op === "wave") {
+      // Cone shove: damage + radial knockback + element in front of you.
+      const g = C.nearestGuard(460);
+      const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : p.facing;
+      const dmg = C.playerDmg(ab.power + armed);
+      const room = C.curRoom();
+      for (const gd of [...room.guards]) {
+        const d = Math.hypot(gd.x - p.x, gd.y - p.y);
+        if (d > 175) continue;
+        let da = Math.atan2(gd.y - p.y, gd.x - p.x) - a;
+        while (da > Math.PI) da -= Math.PI * 2;
+        while (da < -Math.PI) da += Math.PI * 2;
+        if (Math.abs(da) > 0.5) continue;
+        const pa = Math.atan2(gd.y - p.y, gd.x - p.x) || 0;
+        const fx = C.collideCircle(gd.x + Math.cos(pa) * 70, gd.y + Math.sin(pa) * 70,
+          9, C.solids(room));
+        gd.x = fx[0]; gd.y = fx[1];
+        C.damageGuard(gd, dmg, ab.element);
+      }
+      C.rings.push({ x: p.x, y: p.y, age: 0, max: 0.25, r: 70 });
+    } else if (ab.op === "beam") {
+      const g = C.nearestGuard(460);
+      const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : p.facing;
+      const x2 = p.x + Math.cos(a) * 340, y2 = p.y + Math.sin(a) * 340;
+      C.beams.push({ x1: p.x, y1: p.y, x2, y2, age: 0, max: 0.25 });
+      const dmg = C.playerDmg(ab.power + armed);
+      for (const gd of [...C.curRoom().guards]) {
+        if (segDist(gd.x, gd.y, p.x, p.y, x2, y2) < 16) {
+          C.damageGuard(gd, dmg, ab.element);
+        }
+      }
+      C.G.shake = 0.1;
+    } else if (ab.op === "lobbed") {
+      // Shell lands late: red telegraph now, boom in 0.6s.
+      const g = C.nearestGuard(520);
+      const tx = g ? g.x : p.x + Math.cos(p.facing) * 200;
+      const ty = g ? g.y : p.y + Math.sin(p.facing) * 200;
+      C.delayed.push({
+        x: tx, y: ty, t: 0.6, r: 95,
+        dmg: C.playerDmg(ab.power + armed), element: ab.element,
+      });
+    } else if (ab.op === "wall") {
+      // Conjured cover perpendicular to facing; blocks guards + foe shots.
+      const horiz = Math.abs(Math.cos(p.facing)) > Math.abs(Math.sin(p.facing));
+      const w = horiz ? 16 : 110, h = horiz ? 110 : 16;
+      const room = C.curRoom();
+      room.tempWalls.push({
+        x: p.x + Math.cos(p.facing) * 52 - w / 2,
+        y: p.y + Math.sin(p.facing) * 52 - h / 2,
+        w, h, t: ab.power,
+      });
+      C.floater(p.x, p.y - 30, "wall up!", "#7df9ff");
+    } else if (ab.op === "summon") {
+      p.pets.push({
+        name: ab.name, role: ab.role, element: ab.element,
+        dmg: ab.power, cd: 0, cdMax: 1.1,
+        temp: true, dur: ab.dur, stationary: !!ab.stationary,
+        x: p.x, y: p.y,
+      });
+      C.floater(p.x, p.y - 30, "summoned!", "#c77dff");
+      C.updateHud();
+    } else if (ab.op === "surge") {
+      p.surge = { t: ab.dur, dmgMult: ab.dmgMult, spdMult: ab.spdMult };
+      C.floater(p.x, p.y - 30, "SURGING", "#ff5555");
+    } else if (ab.op === "chrono") {
+      // Time bubble: everything nearby slows to a crawl.
+      const room = C.curRoom();
+      for (const gd of [...room.guards]) {
+        if (Math.hypot(gd.x - p.x, gd.y - p.y) < 230) {
+          C.applyStatus(gd, "slow", ab.power, 0.35);
+        }
+      }
+      C.rings.push({ x: p.x, y: p.y, age: 0, max: 0.4, r: 230 });
+      C.G.shake = 0.12;
     } else if (ab.op === "dash") {
       p.dashDx = Math.cos(p.facing); p.dashDy = Math.sin(p.facing);
       p.dashSpd = ab.power;
@@ -74,21 +158,35 @@
 
   C.statusForElement = function (element) {
     if (element === "fire") return ["burn", 3, 0.9];
-    if (element === "frost") return ["slow", 2, 0.5];
+    if (element === "frost" || element === "water") return ["slow", 2, 0.5];
     if (element === "bolt") return ["stun", 0.45, 0];
-    if (element === "venom") return ["poison", 4, 0.6];
+    if (element === "earth") return ["stun", 0.6, 0];
+    if (element === "venom" || element === "nature") return ["poison", 4, 0.6];
+    if (element === "shadow") return ["weaken", 4, 1.25];
+    // wind shoves (wave op); light breaks shields (damageGuard). No status.
     return null;
+  };
+
+  // Surge-steroid for outgoing player damage.
+  C.playerDmg = function (base) {
+    const s = C.G.p.surge;
+    return base * ((s && s.t > 0) ? s.dmgMult : 1);
   };
 
   // Single choke point for guard damage: shields soak direct hits (dots seep
   // through), numbers pop, elements apply, death routes to killGuard.
   C.damageGuard = function (gd, amt, element, isDot) {
     if (gd.hp <= 0) return true;
+    gd.statuses = gd.statuses || {};
     // Round only display-facing hits: per-frame DoT slices are fractional.
     if (!isDot) amt = Math.round(amt * 10) / 10;
+    if (gd.statuses.weaken && gd.statuses.weaken.t > 0) amt *= 1.25;
     if (!isDot && gd.shield > 0) {
-      const absorbed = Math.min(gd.shield, amt);
-      gd.shield -= absorbed; amt -= absorbed;
+      // Holy/light is shieldbreaking: double soak rate.
+      const soak = element === "light" || element === "holy" ? amt * 2 : amt;
+      const absorbed = Math.min(gd.shield, soak);
+      gd.shield -= absorbed;
+      amt -= (element === "light" || element === "holy") ? absorbed / 2 : absorbed;
       C.floater(gd.x, gd.y - 30, "🛡" + absorbed, "#8b93a3");
       if (amt <= 0) { C.updateHud(); return false; }
     }
@@ -118,12 +216,33 @@
     if (slow && slow.t > 0) { mult = slow.power; slow.t -= dt; }
     const stun = gd.statuses.stun;
     if (stun && stun.t > 0) { stunned = true; stun.t -= dt; }
+    const weak = gd.statuses.weaken;
+    if (weak && weak.t > 0) weak.t -= dt;
     return { mult, stunned, died: false };
   };
 
-  C.updateRings = function (dt) {
+  C.updateFx = function (dt) {
     for (const rg of C.rings) rg.age += dt;
     C.rings = C.rings.filter(rg => rg.age < rg.max);
+    for (const b of C.beams) b.age += dt;
+    C.beams = C.beams.filter(b => b.age < b.max);
+    for (const d of C.delayed) {
+      d.t -= dt;
+      if (d.t <= 0) {
+        C.rings.push({ x: d.x, y: d.y, age: 0, max: 0.3, r: d.r, col: "#ff8c00" });
+        C.detonate(d.x, d.y, d.r, d.dmg, d.element);
+      }
+    }
+    C.delayed = C.delayed.filter(d => d.t > 0);
+  };
+  C.updateRings = C.updateFx;
+
+  C.updateTempWalls = function (dt) {
+    for (const room of C.rooms.values()) {
+      if (!room.tempWalls) continue;
+      for (const w of room.tempWalls) w.t -= dt;
+      room.tempWalls = room.tempWalls.filter(w => w.t > 0);
+    }
   };
 
   // Shared AoE: nova powers and volatile pickups both go through here.
@@ -312,18 +431,26 @@
   };
 
   // Familiar storage (Doc rule, run-scaled): 2 active, rest stabled. P rotates.
+  // Summoned temps stay pinned and are never stabled.
   C.rotatePets = function () {
     const p = C.G.p;
+    const act = () => p.pets.filter(q => !q.temp);
     if (!p.stable.length) {
-      if (p.pets.length > 1) {
-        p.pets.push(p.pets.shift());
+      const a = act();
+      if (a.length > 1) {
+        p.pets.splice(p.pets.indexOf(a[0]), 1);
+        p.pets.push(a[0]);
         C.showCard("Familiars reordered",
-          "Lead: " + p.pets[0].name + " (" + (p.pets[0].role || "gunner") + ").", "", 1800);
+          "Lead: " + act()[0].name + ".", "", 1800);
       }
       return;
     }
     const incoming = p.stable.shift();
-    if (p.pets.length >= 2) p.stable.push(p.pets.shift());
+    const a = act();
+    if (a.length >= 2) {
+      p.pets.splice(p.pets.indexOf(a[0]), 1);
+      p.stable.push(a[0]);
+    }
     p.pets.push(incoming);
     C.showCard("Familiars rotated",
       "Active: " + p.pets.map(q => q.name + " (" + (q.role || "gunner") + ")").join(", ") + ".",
@@ -335,13 +462,25 @@
     const p = C.G.p, room = C.curRoom();
     for (const pet of p.pets) {
       const i = p.pets.indexOf(pet);
+      if (pet.stationary) {
+        if (pet.x == null) { pet.x = p.x; pet.y = p.y; }
+        continue;
+      }
       const radius = (pet.role || "gunner") === "bully" ? 42 : 26;
       const spin = (pet.role || "gunner") === "bully" ? 3.2 : 2;
       const a = C.G.t * spin + i * 2.1;
       pet.x = p.x + Math.cos(a) * radius;
       pet.y = p.y + Math.sin(a) * radius;
     }
-    for (const pet of p.pets) {
+    for (const pet of [...p.pets]) {
+      if (pet.temp) {
+        pet.dur -= dt;
+        if (pet.dur <= 0) {
+          p.pets.splice(p.pets.indexOf(pet), 1);
+          C.floater(p.x, p.y - 30, pet.name.slice(0, 16) + " fades", "#8b93a3");
+          continue;
+        }
+      }
       const role = pet.role || "gunner";
       if (role === "gunner") {
         pet.cd -= dt;
@@ -349,8 +488,9 @@
         if (g && pet.cd <= 0) {
           const a = Math.atan2(g.y - p.y, g.x - p.x);
           C.projs.push({
-            x: p.x, y: p.y, vx: Math.cos(a) * 460, vy: Math.sin(a) * 460,
-            dmg: pet.dmg, foe: false, life: 0.7,
+            x: pet.stationary ? pet.x : p.x, y: pet.stationary ? pet.y : p.y,
+            vx: Math.cos(a) * 460, vy: Math.sin(a) * 460,
+            dmg: pet.dmg, foe: false, life: 0.7, element: pet.element || null,
           });
           pet.cd = pet.cdMax || 1.1;
         }
@@ -392,7 +532,8 @@
     const p = C.G.p, room = C.curRoom();
     for (const pr of [...C.projs]) {
       pr.x += pr.vx * dt; pr.y += pr.vy * dt; pr.life -= dt;
-      if (pr.life <= 0 || C.pointBlocked(room, pr.x, pr.y)) {
+      if (pr.life <= 0 || C.pointBlocked(room, pr.x, pr.y) ||
+          (pr.foe && C.pointBlockedTemp(room, pr.x, pr.y))) {
         C.projs.splice(C.projs.indexOf(pr), 1);
         continue;
       }

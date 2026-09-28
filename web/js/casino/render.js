@@ -11,6 +11,15 @@
 
   function drawWalls(room) {
     const ctx = C.ctx;
+    for (const wl of (room.tempWalls || [])) {
+      ctx.globalAlpha = Math.min(1, 0.35 + wl.t * 0.15);
+      ctx.fillStyle = "#2e6b5e";
+      ctx.fillRect(wl.x, wl.y, wl.w, wl.h);
+      ctx.fillStyle = "#7df9ff";
+      if (wl.h < wl.w) ctx.fillRect(wl.x, wl.y, wl.w, 3);
+      else ctx.fillRect(wl.x, wl.y, 3, wl.h);
+      ctx.globalAlpha = 1;
+    }
     for (const wl of room.walls) {
       ctx.fillStyle = "#241b33";
       ctx.fillRect(wl.x, wl.y, wl.w, wl.h);
@@ -395,16 +404,37 @@
     ctx.textBaseline = "alphabetic";
   }
 
-  // Expanding nova rings.
+  // Expanding nova rings (gold) and lobbed telegraphs (red, pending).
   function drawRings() {
     const ctx = C.ctx;
     for (const rg of C.rings) {
       const f = rg.age / rg.max;
       ctx.globalAlpha = Math.max(0, 0.8 - f * 0.8);
-      ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 3;
+      ctx.strokeStyle = rg.col || "#ffe066"; ctx.lineWidth = 3;
       ctx.beginPath();
       ctx.arc(rg.x, rg.y, Math.max(1, rg.r * f), 0, Math.PI * 2);
       ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+    for (const d of C.delayed) {
+      const pulse = 0.5 + 0.5 * Math.sin(C.G.t * 10);
+      ctx.globalAlpha = 0.4 + 0.4 * pulse;
+      ctx.strokeStyle = "#ff4444"; ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.fillStyle = "#ff4444";
+      ctx.font = "bold 12px monospace"; ctx.textAlign = "center";
+      ctx.fillText("!", d.x, d.y - d.r - 6);
+    }
+    ctx.globalAlpha = 1;
+    for (const b of C.beams) {
+      const f = 1 - b.age / b.max;
+      ctx.globalAlpha = Math.max(0, f);
+      ctx.strokeStyle = "#fff2b0"; ctx.lineWidth = 5;
+      ctx.beginPath(); ctx.moveTo(b.x1, b.y1); ctx.lineTo(b.x2, b.y2); ctx.stroke();
+      ctx.strokeStyle = "#ff8c00"; ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(b.x1, b.y1); ctx.lineTo(b.x2, b.y2); ctx.stroke();
     }
     ctx.globalAlpha = 1;
   }
@@ -454,6 +484,10 @@
     });
     // Player (blinks while invulnerable; soul glow dims with HP; cloaked = ghost).
     const cloakA = p.cloakT > 0 ? 0.45 : 1;
+    if (p.surge && p.surge.t > 0) {
+      ctx.strokeStyle = "#ff5555"; ctx.lineWidth = 2;
+      ctx.strokeRect(p.x - 12, p.y - 21, 24, 30);
+    }
     if (p.inv <= 0 || Math.floor(C.G.t * 12) % 2 === 0) {
       ctx.globalAlpha = cloakA;
       ctx.fillStyle = "#2ecc71"; ctx.fillRect(p.x - 9, p.y - 12, 18, 24);
