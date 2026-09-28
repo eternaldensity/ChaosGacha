@@ -5,7 +5,7 @@ window.Casino = window.Casino || {};
   C.W = 960; C.H = 540; C.WALL = 46;
 
   // Machine footprint + interaction/pickup radii.
-  C.MW = 96; C.MH = 72;
+  C.MW = 96; C.MH = 84;
   C.INTERACT_R = 100;
   C.PICKUP_R = 26;
   // Reel geometry: symbol row heights for the in-place spin animation.

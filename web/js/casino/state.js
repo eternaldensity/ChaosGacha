@@ -121,16 +121,25 @@
       { x: 0, y: C.H / 2 - 55, w: C.W, h: 110 },
     ];
     const target = depth === 0 ? 2 + Math.floor(rnd() * 2) : 4 + Math.floor(rnd() * 3);
-    let tries = 0;
-    while (walls.length < target && tries++ < 80) {
-      const horiz = rnd() < 0.5;
+    // Verticals stay short: only the strips above/below the E/W corridor
+    // clear it, so tall bars could never land (and rooms looked all-flat).
+    const tryBar = (horiz, pad) => {
       const w = horiz ? 110 + rnd() * 120 : 16;
-      const h = horiz ? 16 : 90 + rnd() * 80;
-      const r = { x: x0 + rnd() * (x1 - x0 - w), y: y0 + rnd() * (y1 - y0 - h), w, h };
-      if (corridors.some(c => rectsOverlap(r, c, 4))) continue;
-      if (walls.some(o => rectsOverlap(r, o, 30))) continue;
+      const h = horiz ? 16 : 36 + rnd() * 18;
+      const r = { x: x0 + rnd() * (x1 - x0 - w), y: y0 + rnd() * (y1 - y0 - h), w, h, horiz };
+      if (corridors.some(c => rectsOverlap(r, c, 4))) return false;
+      if (walls.some(o => rectsOverlap(r, o, pad == null ? 30 : pad))) return false;
       walls.push(r);
-    }
+      return true;
+    };
+    let tries = 0;
+    while (walls.length < target && tries++ < 80) tryBar(rnd() < 0.5);
+    // Guarantee maze feel: at least 2 verticals and 1 horizontal.
+    // Top-ups nestle closer (pad 12) so corners form L/T shapes.
+    tries = 0;
+    while (walls.filter(w => !w.horiz).length < 2 && tries++ < 300) tryBar(false, 12);
+    tries = 0;
+    while (!walls.some(w => w.horiz) && tries++ < 300) tryBar(true, 12);
     return walls;
   };
 
@@ -216,8 +225,8 @@
       return P[P.length - 1];
     };
     const spots = [];
-    for (let i = 0; i < 6; i++) spots.push({ x: 120 + i * 144, y: C.WALL + 44 });
-    for (let i = 0; i < 6; i++) spots.push({ x: 120 + i * 144, y: C.H - C.WALL - 44 });
+    for (let i = 0; i < 6; i++) spots.push({ x: 120 + i * 144, y: C.WALL + 46 });
+    for (let i = 0; i < 6; i++) spots.push({ x: 120 + i * 144, y: C.H - C.WALL - 46 });
     // Shuffle kinds so gacha isn't always the bottom row.
     const kinds = ["slot", "slot", "slot", "slot", "slot", "slot", "slot", "slot",
       "gacha", "gacha", "gacha", "gacha"];

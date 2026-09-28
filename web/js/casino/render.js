@@ -197,16 +197,16 @@
       ctx.fillRect(m.x + 22 + Math.cos(a) * 5 - 1, m.y - 2 + Math.sin(a) * 5 - 1, 3, 3);
     }
     ctx.fillStyle = "#fff"; ctx.font = "bold 10px monospace";
-    ctx.fillText((m.cat || "?").toUpperCase().slice(0, 8), m.x + 22, m.y + 12);
+    ctx.fillText((m.cat || "?").toUpperCase().slice(0, 8), m.x + 22, m.y + 8);
     ctx.fillStyle = m.pull ? "#ffe066" : t.color; ctx.font = "10px monospace";
-    ctx.fillText(m.pull ? "WORKING" : "1×" + t.label.slice(0, 5), m.x + 22, m.y + 24);
+    ctx.fillText(m.pull ? "WORKING" : "1×" + t.label.slice(0, 5), m.x + 22, m.y + 19);
     gachaStrip(m, t);
   }
 
   // Bottom name strip: scrolling decoys, winner on lock, category when idle.
   function gachaStrip(m, t) {
     const ctx = C.ctx;
-    const x = m.x - 42, y = m.y + 20, w = 84, h = 14;
+    const x = m.x - 42, y = m.y + 24, w = 84, h = 14;
     ctx.fillStyle = "#10131a";
     ctx.fillRect(x, y, w, h);
     ctx.strokeStyle = m.pull ? t.color : "#333a47"; ctx.lineWidth = 1;
