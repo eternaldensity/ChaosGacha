@@ -50,6 +50,7 @@
         reel: { pos: Math.random() * 280, vel: 300, state: "spin", landT: 0 },
       };
     }
+    C.audio.pullStart();
     // Noise: alert nearby guards (unless cloaked).
     const room = C.curRoom();
     if (!C.G.p.cloakT) {
@@ -84,6 +85,7 @@
     if (m.kind === "slot") {
       const pay = pull.pay, at = { x: m.x, y: m.y };
       if (pay.kind === "jackpot") {
+        C.audio.jackpot();
         spawnPickup(room, m, { kind: "coins", amount: pay.coins });
         spawnPickup(room, m, { kind: "ticket", tier: pay.ticket });
         C.floater(at.x, at.y - 50, "JACKPOT 7-7-7!", "#f7d40a");
@@ -100,7 +102,7 @@
         C.floater(at.x, at.y - 50, "house wins", "#878d96");
       }
     } else {
-      spawnPickup(room, m, { kind: "prize", res: pull.gacha.res, tier: m.tier });
+      spawnPickup(room, m, { kind: "prize", res: pull.gacha.res, tier: m.tier, src: m });
       C.floater(m.x, m.y - 50, "🎲 " + pull.gacha.res.name.slice(0, 24), C.rarityColor(pull.gacha.res.rarity));
     }
     C.checkFeats();
@@ -135,7 +137,7 @@
     reel.landT += dt;
     var p = Math.min(1, reel.landT / LAND_DUR);
     reel.pos = reel.landFrom + (reel.landTo - reel.landFrom) * easeOutBack(p);
-    if (p >= 1) { reel.state = "locked"; reel.pos = reel.landTo; }
+    if (p >= 1) { reel.state = "locked"; reel.pos = reel.landTo; C.audio.lock(); }
   }
 
   // Scroll the gacha reel; landing is a slow-down while the winner fades in.
@@ -151,7 +153,7 @@
     var p = Math.min(1, reel.landT / GREEL_LAND);
     reel.vel = 300 * (1 - p) * (1 - p);
     reel.pos += reel.vel * dt;
-    if (p >= 1) reel.state = "locked";
+    if (p >= 1) { reel.state = "locked"; C.audio.lock(); }
   }
 
   // Animate one machine pull; payout waits for locked reels, then holds briefly.
@@ -192,16 +194,21 @@
       if (Math.hypot(pk.x - p.x, pk.y - p.y) > magnet) continue;
       room.pickups.splice(room.pickups.indexOf(pk), 1);
       if (pk.kind === "coins") {
+        C.audio.coins();
         p.coins += pk.amount;
         C.floater(p.x, p.y - 24, "+" + pk.amount + " 🪙", "#ffe066");
       } else if (pk.kind === "ticket") {
+        C.audio.ticket();
         p.tickets[pk.tier] = (p.tickets[pk.tier] || 0) + 1;
         const t = C.tierById(pk.tier);
         C.floater(p.x, p.y - 24, "+1 🎟 " + pk.tier, t.color);
       } else if (pk.kind === "parts") {
+        C.audio.coins();
         p.parts += pk.amount;
         C.floater(p.x, p.y - 24, "+" + pk.amount + " 🧩 parts", "#ffe066");
       } else if (pk.kind === "prize") {
+        C.audio.build();
+        if (pk.src) pk.src.lastPrize = null; // window back to category
         const res = pk.res;
         const note = C.applyPrize(res);
         C.showCard("[" + C.rarityName(res.rarity) + " " + res.category + "] " + res.name +

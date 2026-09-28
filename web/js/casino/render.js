@@ -620,5 +620,39 @@
     }
     ctx.globalAlpha = 1;
     ctx.restore();
+    drawMinimap(room);
   };
+
+  // 7x7 visited-room grid: brightness by depth, gold = vault, white = you.
+  function drawMinimap(room) {
+    const ctx = C.ctx, cell = 11, R = 3;
+    const size = (R * 2 + 1) * cell;
+    const ox = C.W - size - 10, oy = 30;
+    ctx.fillStyle = "rgba(5,6,10,.8)";
+    ctx.fillRect(ox - 5, oy - 5, size + 10, size + 10);
+    ctx.strokeStyle = "#333a47"; ctx.lineWidth = 1;
+    ctx.strokeRect(ox - 5, oy - 5, size + 10, size + 10);
+    for (let dy = -R; dy <= R; dy++) {
+      for (let dx = -R; dx <= R; dx++) {
+        const r = C.rooms.get(C.roomKey(C.G.roomX + dx, C.G.roomY + dy));
+        if (!r) continue;
+        const x = ox + (dx + R) * cell, y = oy + (dy + R) * cell;
+        const d = Math.abs(C.G.roomX + dx) + Math.abs(C.G.roomY + dy);
+        ctx.globalAlpha = r._seen ? 1 : 0.35;
+        ctx.fillStyle = d >= 6 ? "#5a2a2a" : d >= 3 ? "#3a2a4d" : "#2a3342";
+        ctx.fillRect(x + 1, y + 1, cell - 2, cell - 2);
+        if (r.vault) {
+          ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 1;
+          ctx.strokeRect(x + 1.5, y + 1.5, cell - 3, cell - 3);
+        }
+        if (dx === 0 && dy === 0) {
+          ctx.strokeStyle = "#fff"; ctx.lineWidth = 2;
+          ctx.strokeRect(x + 0.5, y + 0.5, cell - 1, cell - 1);
+          ctx.fillStyle = "#fff";
+          ctx.fillRect(x + cell / 2 - 1, y + cell / 2 - 1, 2, 2);
+        }
+      }
+    }
+    ctx.globalAlpha = 1;
+  }
 })(window.Casino);

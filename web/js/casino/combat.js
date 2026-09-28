@@ -418,6 +418,7 @@
   };
 
   C.killGuard = function (gd) {
+    C.audio.kill();
     const room = C.curRoom();
     room.guards = room.guards.filter(g => g !== gd);
     C.G.kills++;
@@ -486,13 +487,14 @@
       return;
     }
     if (element && p.resist[element]) n *= 1 - Math.min(0.5, p.resist[element]);
-    p.hp -= n; p.inv = 0.9; C.G.shake = 0.2;
+    p.hp -= n; p.inv = 0.9; C.G.shake = 0.2; C.audio.hurt();
     if (p.hp <= 0) C.die();
     C.updateHud();
   };
 
   C.die = function () {
     C.G.over = true;
+    C.audio.death();
     const dreRoom = C.curRoom();
     const best = C.saveBest(dreRoom.depth, C.G.t, C.G.kills);
     const bestTag = best ? " ★ NEW BEST" : "";

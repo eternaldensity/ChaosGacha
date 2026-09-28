@@ -29,7 +29,7 @@
     if (p.mount) bits.push("<span class='bchip'>" + p.mount.glyph + " " + esc(p.mount.name) + " (" + p.mount.hp + ")</span>");
     if (p.presence > 0) bits.push("<span class='bchip'>🎭 presence " + Math.round(p.presence * 100) + "%</span>");
     (C.G.curses || []).forEach(c => bits.push("<span class='bchip'>🎲 " +
-      esc(c.label) + " (" + c.tier + (c.resolved ? ", ✓" : "") + ")</span>"));
+      esc(c.label) + " (" + c.tier + (c.edge ? ": " + esc(c.edge) : "") + (c.resolved ? ", ✓" : "") + ")</span>"));
     p.buildLog.forEach(b => bits.push("<span class='bchip " + b.cls + "'>" + esc(b.txt) + "</span>"));
     C.el("build").innerHTML = bits.join("") || "<span class='bchip'>No prizes yet — pull a gacha.</span>";
 

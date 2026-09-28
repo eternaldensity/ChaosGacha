@@ -63,6 +63,7 @@
       gd.chase = true;
       room.guards.push(gd);
     }
+    C.audio.wave();
     C.showCard("Security wave ★" + C.G.threat,
       n + " guard(s) converge. Pulls are loud — keep moving.", "", 2200);
   }

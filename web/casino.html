@@ -21,8 +21,8 @@
   #stage { position: relative; }
   canvas#game { width: 100%; border-radius: 10px; background:#0b0d12; border:1px solid var(--line);
     image-rendering: pixelated; display:block; }
-  #card { position:absolute; left:50%; top:12px; transform:translateX(-50%); display:none; z-index:6;
-    background:#10131a; border:1px solid var(--accent); border-radius:10px; padding:10px 12px; max-width:92%; }
+  #card { position:absolute; left:12px; bottom:12px; display:none; z-index:6;
+    background:#10131a; border:1px solid var(--accent); border-radius:10px; padding:8px 10px; max-width:320px; }
   #card.show { display:block; }
   #card h3 { margin:0 0 4px; font-size:1rem; }
   #card p { margin:4px 0; font-size:.88rem; }
@@ -112,6 +112,7 @@
           <li><kbd>J</kbd> / click — fire slot-1 power (or swing weapon)</li>
           <li><kbd>K</kbd> / <kbd>L</kbd> — fire slots 2–3 (unlock: +1 per 5 abilities)</li>
           <li><kbd>P</kbd> — rotate familiars (2 active, rest stabled)</li>
+          <li><kbd>M</kbd> — mute / unmute bleeps</li>
           <li><kbd>B</kbd> — manage stashed powers (full slots open a draft pick)</li>
         </ul>
         <b>Survival tips</b>
@@ -146,7 +147,7 @@
       </div></div></div>
   </div>
   <p id="help"><kbd>WASD</kbd> move · <kbd>E</kbd> start pull (walk away, come back for loot) ·
-    <kbd>Space</kbd> dodge · <kbd>J</kbd>/<kbd>K</kbd>/<kbd>L</kbd> powers · <kbd>P</kbd> familiars · <kbd>R</kbd> respawn.
+    <kbd>Space</kbd> dodge · <kbd>J</kbd>/<kbd>K</kbd>/<kbd>L</kbd> powers · <kbd>P</kbd> familiars · <kbd>M</kbd> mute · <kbd>R</kbd> respawn.
     Platinum needs depth 4+, Diamond 6+, Legendary 8+, Mythical 11+, Divine 14+.</p>
 </div>
 <script src="data/entries.js"></script>
@@ -163,6 +164,7 @@
 <script src="js/casino/prizes.js"></script>
 <script src="js/casino/pulls.js"></script>
 <script src="js/casino/combat.js"></script>
+<script src="js/casino/audio.js"></script>
 <script src="js/casino/draft.js"></script>
 <script src="js/casino/curses.js"></script>
 <script src="js/casino/update.js"></script>

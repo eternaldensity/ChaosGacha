@@ -61,18 +61,7 @@
     C.delayed.length = 0;
     // Queued death-screen curses land on the fresh run.
     for (const pick of C.pendingCurses.splice(0, C.pendingCurses.length)) {
-      const A = pick.mod.apply, applied = {}, P = C.G.p;
-      if (A.maxHp) { P.maxHp = Math.max(1, P.maxHp + A.maxHp); P.hp = Math.min(P.hp, P.maxHp); }
-      if (A.pullMul) { P.pullMul *= A.pullMul; applied.pullMul = A.pullMul; }
-      if (A.speedMult) { P.speed *= A.speedMult; applied.speedMult = A.speedMult; }
-      if (A.coins) P.coins = Math.max(0, P.coins + A.coins);
-      if (A.costMult) { C.G.costMult = (C.G.costMult || 1) * A.costMult; applied.costMult = A.costMult; }
-      if (A.threat0) C.G.threat = Math.max(C.G.threat, A.threat0);
-      if (A.waveT) C.G.waveT = Math.min(C.G.waveT, A.waveT);
-      if (A.guardBonus) C.G.guardBonus = (C.G.guardBonus || 0) + A.guardBonus;
-      for (const tk of C.curseRewards(pick.tier)) P.tickets[tk] = (P.tickets[tk] || 0) + 1;
-      C.G.curses.push({ label: pick.curse.label, tier: pick.tier, roll: pick.roll,
-        desc: pick.curse.desc, applied, resolved: false });
+      C.applyPick(C.G, pick);
     }
     // Heirloom: a weapon carried across death (earned by surviving 15+ min).
     const hw = C.legacyWeapon();
@@ -340,6 +329,20 @@
     const room = C.curRoom();
     C.projs.length = 0;
     C.floaters.length = 0;
+    // Pity chips: a broke, ticketless player gets comped so a run can
+    // never fully soft-lock (no coins, no tickets, no weapon).
+    let cheapest = Infinity;
+    for (const tier of C.TIERS) cheapest = Math.min(cheapest, C.slotCost(tier));
+    const broke = C.G.p.coins < cheapest &&
+      !Object.values(C.G.p.tickets).some(n => n > 0);
+    if (broke && !room._seen) {
+      C.G.p.coins += 10;
+      C.floater(C.G.p.x, C.G.p.y - 30, "+10 pity chips", "#ffe066");
+      if (!C.G.feats.pity) {
+        C.G.feats.pity = 1;
+        C.showCard("Pity chips (+10)", "Broke and ticketless? The house comps you. Don't spend it all in one place.", "", 2600);
+      }
+    }
     if (room.vault && room.depth >= 6 && !room.bossSpawned) {
       room.bossSpawned = true;
       if (Math.random() < 0.35) {
