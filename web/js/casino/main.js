@@ -19,7 +19,11 @@
     else if (k === "t" && C.G && C.G.over) { C.wipeLegacy(); C.newRun(false); }
   });
   addEventListener("keyup", e => { C.keys[e.key.toLowerCase()] = false; });
-  C.ui.canvas.addEventListener("mousedown", () => { C.queueAttack(); });
+  C.ui.canvas.addEventListener("mousedown", e => {
+    if (e.button === 2) C.queueWeapon();
+    else C.queueAttack();
+  });
+  C.ui.canvas.addEventListener("contextmenu", e => e.preventDefault());
   C.audio.ensure();
   C.el("againBtn").addEventListener("click", () => { C.audio.ensure(); C.audio.click(); C.newRun(false); });
   C.el("curseBtn").addEventListener("click", () => C.rollCurse());

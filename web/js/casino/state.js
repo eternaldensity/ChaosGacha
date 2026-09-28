@@ -11,12 +11,19 @@
   C.keys = {};
   C.G = null;
   let attackQueued = false;
+  let weaponQueued = false;
   C.queueAttack = function () { attackQueued = true; };
+  C.queueWeapon = function () { weaponQueued = true; };
   // Returns true once per queued click.
   C.takeAttack = function () {
     const a = attackQueued || !!C.keys["j"];
     attackQueued = false;
     return a;
+  };
+  C.takeWeapon = function () {
+    const w = weaponQueued || !!C.keys["f"];
+    weaponQueued = false;
+    return w;
   };
 
   C.roomKey = (x, y) => x + "," + y;

@@ -188,7 +188,7 @@
     if (C.keys["k"]) C.runActive(1);
     if (C.keys["l"]) C.runActive(2);
     // F always fires the weapon. Q uses satchel, C cycles it.
-    if (C.keys["f"] && p.weapon) C.tryAttack();
+    if (C.takeWeapon() && p.weapon) C.tryAttack();
     if (C.keys["q"] && !prevQ) C.useConsumable();
     prevQ = !!C.keys["q"];
     if (C.keys["c"] && !prevC) C.cycleSatchel();
