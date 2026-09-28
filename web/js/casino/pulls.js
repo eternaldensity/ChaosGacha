@@ -86,6 +86,8 @@
       const pay = pull.pay, at = { x: m.x, y: m.y };
       if (pay.kind === "jackpot") {
         C.audio.jackpot();
+        C.spawnP(m.x, m.y - 20, 50,
+          { col: ["#f7d40a", "#ffe066", "#ff8c00", "#ffffff"], spd: 260, life: 0.9, size: 3, grav: 300 });
         spawnPickup(room, m, { kind: "coins", amount: pay.coins });
         spawnPickup(room, m, { kind: "ticket", tier: pay.ticket });
         C.floater(at.x, at.y - 50, "JACKPOT 7-7-7!", "#f7d40a");
@@ -195,6 +197,7 @@
       room.pickups.splice(room.pickups.indexOf(pk), 1);
       if (pk.kind === "coins") {
         C.audio.coins();
+        C.spawnP(pk.x, pk.y, 3, { col: "#ffe066", spd: 80, life: 0.3, size: 2 });
         p.coins += pk.amount;
         C.floater(p.x, p.y - 24, "+" + pk.amount + " 🪙", "#ffe066");
       } else if (pk.kind === "ticket") {

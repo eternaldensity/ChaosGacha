@@ -284,7 +284,11 @@
       return false;
     }
     gd.hp -= amt;
-    if (!isDot) C.floater(gd.x, gd.y - 30, "-" + amt, element ? "#ffd166" : "#fff");
+    if (!isDot) {
+      C.floater(gd.x, gd.y - 30, "-" + amt, element ? "#ffd166" : "#fff");
+      gd.flashT = 0.09;
+      C.spawnP(gd.x, gd.y - 6, 4, { col: element ? "#ffd166" : "#ffffff", spd: 130, life: 0.25, size: 2 });
+    }
     if (element && !isDot) {
       const st = C.statusForElement(element);
       if (st) C.applyStatus(gd, st[0], st[1], st[2]);
@@ -401,6 +405,35 @@
     }
   };
 
+  // Juice: capped particle pool. {x,y,vx,vy,life,max,size,col,grav}
+  C.particles = [];
+  C.spawnP = function (x, y, n, o) {
+    o = o || {};
+    const cols = Array.isArray(o.col) ? o.col : [o.col || "#ffffff"];
+    for (let i = 0; i < n; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const sp = (o.spd ?? 120) * (0.4 + Math.random() * 0.8);
+      C.particles.push({
+        x, y,
+        vx: Math.cos(a) * sp + (o.vx || 0),
+        vy: Math.sin(a) * sp + (o.vy || 0),
+        life: (o.life || 0.4) * (0.7 + Math.random() * 0.6), max: o.life || 0.4,
+        size: o.size || 3, col: cols[Math.floor(Math.random() * cols.length)],
+        grav: o.grav || 0,
+      });
+    }
+    if (C.particles.length > 300) C.particles.splice(0, C.particles.length - 300);
+  };
+  C.updateParticles = function (dt) {
+    for (const q of C.particles) {
+      q.x += q.vx * dt; q.y += q.vy * dt;
+      q.vy += (q.grav || 0) * dt;
+      q.vx *= 1 - 1.8 * dt; q.vy *= 1 - 1.8 * dt;
+      q.life -= dt;
+    }
+    C.particles = C.particles.filter(q => q.life > 0);
+  };
+
   C.updateFx = function (dt) {
     for (const rg of C.rings) rg.age += dt;
     C.rings = C.rings.filter(rg => rg.age < rg.max);
@@ -411,6 +444,7 @@
     }
     for (const b of C.beams) b.age += dt;
     C.beams = C.beams.filter(b => b.age < b.max);
+    C.updateParticles(dt);
     for (const d of C.delayed) {
       d.t -= dt;
       if (d.t <= 0) {
@@ -477,6 +511,8 @@
   // Shared AoE: nova powers and volatile pickups both go through here.
   C.detonate = function (x, y, radius, dmg, element) {
     C.rings.push({ x, y, age: 0, max: 0.35, r: radius });
+    C.spawnP(x, y, 14, { col: ["#ff8c00", "#ffe066", "#ff5555"], spd: 220, life: 0.45, size: 3 });
+    C.spawnP(x, y, 6, { col: "#555566", spd: 60, life: 0.8, size: 4 });
     const room = C.curRoom();
     for (const m of [...room.machines]) {
       if (Math.hypot(m.x - x, m.y - y) < radius + 40) C.damageMachine(room, m, dmg);
@@ -503,6 +539,7 @@
 
   C.killGuard = function (gd) {
     C.audio.kill();
+    C.spawnP(gd.x, gd.y - 6, 10, { col: ["#8b93a3", "#555566", "#777788"], spd: 130, life: 0.4, size: 3 });
     const room = C.curRoom();
     room.guards = room.guards.filter(g => g !== gd);
     C.G.kills++;
@@ -599,7 +636,8 @@
     if (element && p.resist[element]) n *= 1 - Math.min(0.5, p.resist[element]);
     if (p.dmgTakenMult && p.dmgTakenMult !== 1 &&
         (!p.dmgTakenElementalOnly || element)) n *= p.dmgTakenMult;
-    p.hp -= n; p.inv = 0.9; C.G.shake = 0.2; C.audio.hurt();
+    p.hp -= n; p.inv = 0.9; p.flashT = 0.12; C.G.shake = 0.2; C.audio.hurt();
+    C.spawnP(p.x, p.y - 6, 6, { col: ["#ff5555", "#ff8888"], spd: 150, life: 0.3, size: 3 });
     if (p.hp <= 0) C.die();
     C.updateHud();
   };
@@ -607,6 +645,7 @@
   C.die = function () {
     C.G.over = true;
     C.audio.death();
+    C.spawnP(C.G.p.x, C.G.p.y - 6, 30, { col: ["#7CFC00", "#2ecc71", "#ffffff"], spd: 200, life: 0.7, size: 3 });
     C.ui.card.classList.remove("show");
     const dreRoom = C.curRoom();
     const best = C.saveBest(dreRoom.depth, C.G.t, C.G.kills);
@@ -655,6 +694,7 @@
 
   function chaseMove(gd, p, room, dt, mult) {
     const a = Math.atan2(p.y - gd.y, p.x - gd.x);
+    gd.facing = a;
     gd.x += Math.cos(a) * gd.speed * mult * dt;
     gd.y += Math.sin(a) * gd.speed * mult * dt;
     const fixed = C.collideCircle(gd.x, gd.y, 9, C.solids(room));
@@ -666,6 +706,7 @@
     const p = C.G.p, room = C.curRoom();
     for (const gd of [...room.guards]) {
       const d = Math.hypot(gd.x - p.x, gd.y - p.y);
+      if (gd.flashT > 0) gd.flashT -= dt;
       // Possessed: it hunts its own coworkers for a while.
       if (gd.possessed && gd.possessed > 0) {
         gd.possessed -= dt;
@@ -677,6 +718,7 @@
         }
         if (mark) {
           const a = Math.atan2(mark.y - gd.y, mark.x - gd.x);
+          gd.facing = a;
           gd.x += Math.cos(a) * gd.speed * dt;
           gd.y += Math.sin(a) * gd.speed * dt;
           const fixed = C.collideCircle(gd.x, gd.y, 9, C.solids(room));
@@ -724,6 +766,7 @@
       if (gd.type === "medic") {
         if (d < 170) {
           const ma = Math.atan2(gd.y - p.y, gd.x - p.x);
+          gd.facing = ma + Math.PI;
           gd.x += Math.cos(ma) * gd.speed * mult * dt;
           gd.y += Math.sin(ma) * gd.speed * mult * dt;
           const fixed = C.collideCircle(gd.x, gd.y, 9, C.solids(room));
@@ -750,6 +793,7 @@
         const ha = Math.atan2(gd.y - p.y, gd.x - p.x);
         if (d < 160 || d > 380) {
           const dir = d < 160 ? 1 : -0.6;
+          gd.facing = dir > 0 ? ha + Math.PI : ha;
           gd.x += Math.cos(ha) * gd.speed * dir * mult * dt;
           gd.y += Math.sin(ha) * gd.speed * dir * mult * dt;
           const fixed = C.collideCircle(gd.x, gd.y, 9, C.solids(room));
@@ -763,7 +807,7 @@
               sight: 240, atkCd: 0, chase: true, ranged: false, type: "hound",
               touchDmg: 1, size: 0.7, statuses: {}, affix: null, affix2: null,
               shield: 0, element: null, teleT: 0, dashT: 0, dashCd: 9, dashDx: 0, dashDy: 0,
-              healCd: 0, sumCd: 0, rallyCd: 0 });
+              healCd: 0, sumCd: 0, rallyCd: 0, phase: Math.random(), facing: 0 });
             C.floater(gd.x, gd.y - 30, "yelp!", "#ff9c41");
           }
           gd.sumCd = 8;
@@ -799,6 +843,7 @@
           gd.teleT -= dt;
           if (gd.teleT <= 0) {
             const a = Math.atan2(p.y - gd.y, p.x - gd.x);
+            gd.facing = a;
             gd.dashDx = Math.cos(a); gd.dashDy = Math.sin(a);
             gd.dashT = 0.28;
           }
@@ -926,6 +971,10 @@
           (pr.foe && C.pointBlockedTemp(room, pr.x, pr.y))) {
         C.projs.splice(C.projs.indexOf(pr), 1);
         continue;
+      }
+      if (!pr.muzzled) {
+        pr.muzzled = true;
+        C.spawnP(pr.x, pr.y, 3, { col: pr.foe ? "#ff5555" : "#ffe066", spd: 60, life: 0.12, size: 3 });
       }
       let hit = false;
       if (pr.foe) {

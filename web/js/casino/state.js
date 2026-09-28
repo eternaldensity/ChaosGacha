@@ -49,7 +49,7 @@
       p: {
         x: C.W / 2, y: C.H / 2 + 60, r: 10, hp: 3, maxHp: 3,
         speed: 165, coins: 100, tickets: blankTickets(),
-        weapon: null, dmg: 1, range: 74, atkCd: 0, rollCd: 0, rollT: 0, inv: 0,
+        weapon: null, dmg: 1, range: 74, atkCd: 0, rollCd: 0, rollT: 0, inv: 0, flashT: 0, moving: false,
         pullMul: 1, discount: 0, pets: [],
         slots: [], stash: [], abilitiesOwned: 0, facing: 0,
         dashDx: null, dashDy: null, dashSpd: 0, statuses: {},
@@ -71,6 +71,7 @@
     C.rings.length = 0;
     C.beams.length = 0;
     C.delayed.length = 0;
+    C.particles.length = 0;
     // Queued death-screen curses land on the fresh run.
     for (const pick of C.pendingCurses.splice(0, C.pendingCurses.length)) {
       C.applyPick(C.G, pick);
@@ -227,7 +228,7 @@
     kinds.forEach((kind, i) => {
       const t = pickTier();
       room.machines.push({
-        id: i, kind, tier: t.id, color: t.color, pull: null, hp: 3 + C.tierIdx(t.id),
+        id: i, kind, tier: t.id, color: t.color, pull: null, hp: 3 + C.tierIdx(t.id), maxHp: 3 + C.tierIdx(t.id),
         idleSyms: ["◈", "◈", "◈"], lastPrize: null,
         cat: kind === "gacha"
           ? (Math.random() < 0.55 ? "random" : C.CATS[Math.floor(Math.random() * C.CATS.length)])
@@ -394,7 +395,7 @@
       touchDmg: kit.touch, size: kit.size || 1,
       statuses: {}, affix, affix2, shield, element,
       teleT: 0, dashT: 0, dashCd: 2, dashDx: 0, dashDy: 0,
-      healCd: 0, sumCd: 3, rallyCd: 4,
+      healCd: 0, sumCd: 3, rallyCd: 4, phase: Math.random(), facing: 0,
     };
   };
 

@@ -82,6 +82,7 @@
     C.G.t += dt;
     if (p.atkCd > 0) p.atkCd -= dt;
     if (p.inv > 0) p.inv -= dt;
+    if (p.flashT > 0) p.flashT -= dt;
     if (p.rollCd > 0) p.rollCd -= dt;
     if (p.cloakT > 0) p.cloakT -= dt;
     if (p.surveyT > 0) p.surveyT -= dt;
@@ -130,6 +131,15 @@
 
     // Movement: free to roam mid-pull, maze walls block.
     let [mx, my] = moveInput();
+    p.moving = !!(mx || my);
+    if (p.moving) {
+      p.dustT = (p.dustT || 0) + dt;
+      if (p.dustT > 0.14) {
+        p.dustT = 0;
+        C.spawnP(p.x + (Math.random() * 10 - 5), p.y + 10, 1,
+          { col: "#3a3344", spd: 25, life: 0.35, size: 2 });
+      }
+    }
     if (mx || my) {
       const l = Math.hypot(mx, my); mx /= l; my /= l;
       p.x += mx * spd * dt;

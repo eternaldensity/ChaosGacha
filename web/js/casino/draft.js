@@ -79,7 +79,7 @@
       const t = C.tierById(opt.tier);
       room.machines.push({
         id: 900 + room.machines.length, kind: opt.kind, tier: t.id, color: t.color,
-        pull: null, hp: 3 + C.tierIdx(t.id), playerMade: true,
+        pull: null, hp: 3 + C.tierIdx(t.id), maxHp: 3 + C.tierIdx(t.id), playerMade: true,
         idleSyms: ["◈", "◈", "◈"], lastPrize: null,
         cat: opt.kind === "gacha" ? "random" : null,
         x: px, y: py,

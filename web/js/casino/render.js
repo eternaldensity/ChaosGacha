@@ -106,22 +106,121 @@
     }
   }
 
-  function gachaWindow(m, t) {
+
+
+  // Chasing marquee bulbs across a machine header.
+  function marquee(m, t, y, w) {
     const ctx = C.ctx;
-    const x = m.x - 42, y = m.y - 15, w = 84, h = 28;
+    const fast = !!m.pull;
+    const tick = Math.floor(C.G.t * (fast ? 10 : 2.5));
+    for (let i = 0; i < 8; i++) {
+      const on = ((i - tick) % 4 + 4) % 4 < 2;
+      ctx.fillStyle = on ? "#ffe066" : "#4a4430";
+      const bx = m.x - w / 2 + 6 + i * ((w - 12) / 7);
+      ctx.fillRect(bx - 2, y, 4, 4);
+    }
+  }
+
+  // Slot cabinet: marquee, reel glass, coin tray, side lever, damage cracks.
+  function drawSlotCabinet(m, t, near, hw, hh) {
+    const ctx = C.ctx;
+    // Marquee band with tier label.
+    ctx.fillStyle = "#1a1e28";
+    ctx.fillRect(m.x - hw + 4, m.y - hh + 4, C.MW - 8, 15);
+    marquee(m, t, m.y - hh + 6, C.MW - 8);
+    ctx.fillStyle = m.color; ctx.font = "bold 10px monospace"; ctx.textAlign = "center";
+    ctx.fillText(t.label.toUpperCase().slice(0, 9) + (m.playerMade ? " ★" : ""),
+      m.x, m.y - hh + 16);
+    slotWindows(m, t);
+    // Coin tray.
+    ctx.fillStyle = "#05060a";
+    ctx.fillRect(m.x - 30, m.y + hh - 13, 60, 8);
+    ctx.strokeStyle = m.color; ctx.lineWidth = 1;
+    ctx.strokeRect(m.x - 30, m.y + hh - 13, 60, 8);
+    ctx.fillStyle = m.pull ? "#ffe066" : "#c7ccd6";
+    ctx.font = "9px monospace";
+    const cost = C.slotCost(t) + "c";
+    ctx.fillText(m.pull ? "RUNNING…" : cost, m.x, m.y + hh - 17);
+    // Side lever follows pull progress.
+    const frac = m.pull ? Math.min(1, m.pull.t / m.pull.dur) : 0;
+    const px = m.x + hw + 5, py = m.y - 6;
+    ctx.strokeStyle = "#8b93a3"; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px + 4, py - 2); ctx.stroke();
+    ctx.fillStyle = "#ff4444";
+    const kx = px + 4 + 3, ky = py - 2 - 12 + frac * 22;
+    ctx.beginPath(); ctx.arc(kx, ky, 4, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = "#8b93a3"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(px + 4, py - 2); ctx.lineTo(kx, ky); ctx.stroke();
+    // Battle damage.
+    if (m.maxHp && m.hp <= m.maxHp / 2) {
+      ctx.strokeStyle = "rgba(0,0,0,.8)"; ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(m.x - hw + 8, m.y - hh + 22);
+      ctx.lineTo(m.x - hw + 22, m.y - 2);
+      ctx.lineTo(m.x - hw + 14, m.y + 12);
+      ctx.stroke();
+    }
+  }
+
+  // Gacha globe: glass ball with bouncing capsules + crank base + name strip.
+  function drawGachaCabinet(m, t, near, hw, hh) {
+    const ctx = C.ctx;
+    ctx.fillStyle = m.color; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
+    ctx.fillText("🎲 " + t.label.toUpperCase().slice(0, 9) + (m.playerMade ? " ★" : ""),
+      m.x, m.y - hh + 13);
+    // Globe.
+    const gx = m.x - 24, gy = m.y + 2, gr = 14;
+    ctx.fillStyle = "#101c30";
+    ctx.beginPath(); ctx.arc(gx, gy, gr, 0, Math.PI * 2); ctx.fill();
     if (m.pull) {
-      // Spinning: decoy names scroll downward and slow; the winner fades in.
+      for (let i = 0; i < 3; i++) {
+        const a = C.G.t * 5 + i * 2.1;
+        ctx.fillStyle = t.color;
+        ctx.fillRect(gx + Math.cos(a) * 7 - 2, gy + Math.sin(a) * 7 - 2, 4, 4);
+      }
+    } else {
+      ctx.fillStyle = t.color;
+      ctx.fillRect(gx - 8, gy + 2, 4, 4);
+      ctx.fillRect(gx - 1, gy - 6, 4, 4);
+      ctx.fillRect(gx + 4, gy + 4, 4, 4);
+    }
+    ctx.strokeStyle = m.color; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(gx, gy, gr, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = "rgba(255,255,255,.35)";
+    ctx.fillRect(gx - 9, gy - 11, 7, 3);
+    // Crank + category + cost, right column.
+    ctx.strokeStyle = "#8b93a3"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(m.x + 22, m.y - 2, 5, 0, Math.PI * 2); ctx.stroke();
+    if (m.pull) {
+      const a = C.G.t * 9;
+      ctx.fillStyle = "#ffe066";
+      ctx.fillRect(m.x + 22 + Math.cos(a) * 5 - 1, m.y - 2 + Math.sin(a) * 5 - 1, 3, 3);
+    }
+    ctx.fillStyle = "#fff"; ctx.font = "bold 10px monospace";
+    ctx.fillText((m.cat || "?").toUpperCase().slice(0, 8), m.x + 22, m.y + 12);
+    ctx.fillStyle = m.pull ? "#ffe066" : t.color; ctx.font = "10px monospace";
+    ctx.fillText(m.pull ? "WORKING" : "1×" + t.label.slice(0, 5), m.x + 22, m.y + 24);
+    gachaStrip(m, t);
+  }
+
+  // Bottom name strip: scrolling decoys, winner on lock, category when idle.
+  function gachaStrip(m, t) {
+    const ctx = C.ctx;
+    const x = m.x - 42, y = m.y + 20, w = 84, h = 14;
+    ctx.fillStyle = "#10131a";
+    ctx.fillRect(x, y, w, h);
+    ctx.strokeStyle = m.pull ? t.color : "#333a47"; ctx.lineWidth = 1;
+    ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.font = "9px monospace";
+    if (m.pull) {
       const pull = m.pull, reel = pull.reel;
       const strip = pull.gacha.strip.length ? pull.gacha.strip
         : [{ name: pull.gacha.res.name, rarity: pull.gacha.res.rarity }];
       const H = C.GREEL_H, L = strip.length;
       ctx.save();
       ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
-      ctx.fillStyle = "#10131a";
-      ctx.fillRect(x, y, w, h);
       const q = reel.pos / H, k0 = Math.floor(q);
-      ctx.textAlign = "center"; ctx.textBaseline = "middle";
-      ctx.font = "bold 10px monospace";
       for (let j = -1; j <= 2; j++) {
         const k = k0 + j;
         const e = strip[C.pmod(k, L)];
@@ -129,7 +228,7 @@
         const edge = Math.abs(yc - (y + h / 2)) / (h / 2);
         ctx.globalAlpha = Math.max(0.3, 1 - edge * 0.55);
         ctx.fillStyle = C.rarityColor(e.rarity);
-        ctx.fillText(String(e.name).slice(0, 16), m.x, yc);
+        ctx.fillText(String(e.name).slice(0, 20), m.x, yc);
       }
       if (reel.state !== "spin") {
         const a = reel.state === "locked" ? 1 : Math.min(1, reel.landT / 0.45);
@@ -137,31 +236,18 @@
         ctx.fillStyle = "#10131a";
         ctx.fillRect(x, y, w, h);
         ctx.fillStyle = C.rarityColor(pull.gacha.res.rarity);
-        ctx.font = "bold 10px monospace";
-        ctx.fillText("▶ " + String(pull.gacha.res.name).slice(0, 12) + " ◀", m.x, y + h / 2);
+        ctx.fillText("▶ " + String(pull.gacha.res.name).slice(0, 14) + " ◀", m.x, y + h / 2);
       }
       ctx.globalAlpha = 1;
-      reelFade(ctx, x, y, w, h);
       ctx.restore();
-      ctx.strokeStyle = reel.state === "locked"
-        ? C.rarityColor(pull.gacha.res.rarity) : t.color;
-      ctx.lineWidth = 2;
-      ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
-      return;
-    }
-    ctx.fillStyle = "#1a1e28";
-    ctx.fillRect(x, y, w, h);
-    ctx.strokeStyle = "#333a47"; ctx.lineWidth = 1;
-    ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
-    ctx.textAlign = "center";
-    ctx.font = "bold 10px monospace";
-    if (m.lastPrize) {
+    } else if (m.lastPrize) {
       ctx.fillStyle = C.rarityColor(m.lastPrize.rarity);
-      ctx.fillText(String(m.lastPrize.name).slice(0, 13), m.x, y + 18);
+      ctx.fillText(String(m.lastPrize.name).slice(0, 15), m.x, y + h / 2);
     } else {
       ctx.fillStyle = "#8b93a3";
-      ctx.fillText((m.cat || "?").toUpperCase().slice(0, 8), m.x, y + 18);
+      ctx.fillText("◈ TICKETS ◈", m.x, y + h / 2);
     }
+    ctx.textBaseline = "alphabetic";
   }
 
   function drawMachines(room, near) {
@@ -169,29 +255,26 @@
     const hw = C.MW / 2, hh = C.MH / 2;
     for (const m of room.machines) {
       const t = C.tierById(m.tier);
-      ctx.fillStyle = m.pull ? "#12141d" : "#0d0f15";
+      // Drop shadow + body + tier trim.
+      ctx.fillStyle = "rgba(0,0,0,.4)";
+      rr(m.x - hw + 3, m.y - hh + 5, C.MW, C.MH, 8); ctx.fill();
+      ctx.fillStyle = m.pull ? "#141824" : "#0d0f15";
       rr(m.x - hw, m.y - hh, C.MW, C.MH, 8); ctx.fill();
       ctx.lineWidth = near === m ? 3 : 2;
       ctx.strokeStyle = near === m ? "#fff" : m.color;
       ctx.stroke();
-      // Header: kind + tier (★ = your rig).
-      ctx.fillStyle = m.color; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
-      ctx.fillText((m.kind === "slot" ? "🎰" : "🎲") + " " + t.label.toUpperCase().slice(0, 9) +
-        (m.playerMade ? " ★" : ""), m.x, m.y - hh + 13);
-      if (m.kind === "slot") slotWindows(m, t);
-      else gachaWindow(m, t);
-      // Footer: price.
-      const cost = m.kind === "slot" ? C.slotCost(t) + "c" : "1×" + t.label.slice(0, 5);
-      ctx.fillStyle = m.pull ? "#ffe066" : "#c7ccd6";
-      ctx.font = "10px monospace";
-      ctx.fillText(m.pull ? "RUNNING…" : cost, m.x, m.y + hh - 7);
-      // Progress bar while running.
-      if (m.pull) {
-        const f = Math.min(1, m.pull.t / m.pull.dur);
-        ctx.fillStyle = "#000";
-        ctx.fillRect(m.x - hw + 6, m.y - hh - 11, C.MW - 12, 7);
-        ctx.fillStyle = m.pull.fin != null ? "#11d939" : t.color;
-        ctx.fillRect(m.x - hw + 7, m.y - hh - 10, (C.MW - 14) * f, 5);
+      if (m.kind === "slot") drawSlotCabinet(m, t, near, hw, hh);
+      else drawGachaCabinet(m, t, near, hw, hh);
+      if (near === m) {
+        ctx.strokeStyle = "#fff"; ctx.lineWidth = 1;
+        ctx.strokeRect(m.x - hw, m.y - hh, C.MW, C.MH);
+        // Channel bar above machine.
+        if (m.pull) {
+          const f = Math.min(1, m.pull.t / m.pull.dur);
+          ctx.fillStyle = "#000"; ctx.fillRect(m.x - hw + 6, m.y - hh - 11, C.MW - 12, 7);
+          ctx.fillStyle = m.pull.fin != null ? "#11d939" : t.color;
+          ctx.fillRect(m.x - hw + 7, m.y - hh - 10, (C.MW - 14) * f, 5);
+        }
       }
     }
   }
@@ -260,10 +343,18 @@
       warlord: "#4a0a0a", collector: "#3a0a0a", roller: "#3a2f0a" };
     for (const gd of room.guards) {
       const sc = gd.size || 1; // bosses (and hounds) break the mold
-      ctx.fillStyle = BODY[gd.type] || "#111";
-      ctx.fillRect(gd.x - 9 * sc, gd.y - 12 * sc, 18 * sc, 24 * sc);
-      ctx.fillStyle = "#e8c39e"; ctx.fillRect(gd.x - 6 * sc, gd.y - 18 * sc, 12 * sc, 8 * sc); // head
-      ctx.fillStyle = "#000"; ctx.fillRect(gd.x - 6 * sc, gd.y - 16 * sc, 12 * sc, 3 * sc); // shades
+      const flash = gd.flashT > 0;
+      if (gd.type === "hound") {
+        const hf = gd.chase ? Math.floor(C.G.t * 10) % 2 : 0;
+        C.drawSprite("hound_" + hf, gd.x, gd.y - 4, {
+          scale: 2 * sc, flip: Math.cos(gd.facing || 0) < 0, flash });
+      } else {
+        const gf = gd.chase ? Math.floor(C.G.t * 8 + ((gd.phase || 0) * 2)) % 2 : 0;
+        const gd2 = C.spriteDir(gd.facing);
+        C.drawSprite("guard_" + gf, gd.x, gd.y - 2, {
+          scale: 2 * sc, flip: gd2.flip,
+          palette: C.RANK_PAL[gd.type] || C.RANK_PAL.guard, flash });
+      }
       if (gd.type === "collector") {
         ctx.fillStyle = "#ffe066"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
         ctx.fillText("💀", gd.x, gd.y - 24 * sc);
@@ -547,9 +638,26 @@
     ctx.fillStyle = room.vault ? "#221a10" : "#191423";
     ctx.fillRect(0, 0, C.W, C.H);
     ctx.fillStyle = room.vault ? "#2e2413" : "#1e1830";
-    for (let y = 0; y < C.H; y += 24)
-      for (let x = 0; x < C.W; x += 24)
+    for (let y = 0; y < C.H; y += 24) {
+      for (let x = 0; x < C.W; x += 24) {
         if ((x + y) % 48 === 0) ctx.fillRect(x, y, 12, 12);
+        // Deterministic speckle (stable per tile, no flicker).
+        const h = ((x * 73856093) ^ (y * 19349663)) >>> 0;
+        if (h % 7 === 0) {
+          ctx.fillStyle = room.vault ? "#241b0e" : "#151020";
+          ctx.fillRect(x + 5, y + 15, 2, 2);
+          ctx.fillStyle = room.vault ? "#2e2413" : "#1e1830";
+        }
+      }
+    }
+    // Gold trim where carpet meets the walls + soft inner shadow.
+    ctx.strokeStyle = "rgba(255,224,102,.16)"; ctx.lineWidth = 2;
+    ctx.strokeRect(C.WALL + 2, C.WALL + 2, C.W - (C.WALL + 2) * 2, C.H - (C.WALL + 2) * 2);
+    ctx.fillStyle = "rgba(0,0,0,.3)";
+    ctx.fillRect(C.WALL, C.WALL, C.W - C.WALL * 2, 7);
+    ctx.fillRect(C.WALL, C.H - C.WALL - 7, C.W - C.WALL * 2, 7);
+    ctx.fillRect(C.WALL, C.WALL, 7, C.H - C.WALL * 2);
+    ctx.fillRect(C.W - C.WALL - 7, C.WALL, 7, C.H - C.WALL * 2);
     if (room.vault) {
       ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 3;
       ctx.strokeRect(C.WALL + 6, C.WALL + 6, C.W - C.WALL * 2 - 12, C.H - C.WALL * 2 - 12);
@@ -578,9 +686,23 @@
     drawRings();
 
     for (const pr of C.projs) {
-      ctx.fillStyle = pr.foe ? "#ff5555" : "#ffe066";
-      ctx.fillRect(pr.x - 3, pr.y - 3, 6, 6);
+      const col = pr.foe ? "#ff5555" : "#ffe066";
+      ctx.globalAlpha = 0.35;
+      ctx.fillStyle = col;
+      ctx.beginPath(); ctx.arc(pr.x, pr.y, 7, 0, Math.PI * 2); ctx.fill();
+      ctx.globalAlpha = 1;
+      ctx.fillStyle = col;
+      ctx.beginPath(); ctx.arc(pr.x, pr.y, 3, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "#fff";
+      ctx.beginPath(); ctx.arc(pr.x, pr.y, 1.5, 0, Math.PI * 2); ctx.fill();
     }
+    // Particles.
+    for (const q of C.particles) {
+      ctx.globalAlpha = Math.max(0, q.life / q.max);
+      ctx.fillStyle = q.col;
+      ctx.fillRect(q.x - q.size / 2, q.y - q.size / 2, q.size, q.size);
+    }
+    ctx.globalAlpha = 1;
     const PET_COLORS = { gunner: "#7df9ff", bully: "#ff9c41", medic: "#11d939",
       mule: "#ffe066", scout: "#c77dff" };
     C.G.p.pets.forEach((pet, i) => {
@@ -590,11 +712,12 @@
         const a = C.G.t * 2 + i * 2.1;
         px = p.x + Math.cos(a) * 26; py = p.y + Math.sin(a) * 26;
       }
-      ctx.fillStyle = PET_COLORS[pet.role || "gunner"] || "#7df9ff";
-      ctx.fillRect(px - 5, py - 5, 10, 10);
+      const bobY = py + Math.sin(C.G.t * 5 + i * 1.7) * 2;
+      C.drawSprite("wisp", px, bobY, { scale: 1.5,
+        palette: { w: PET_COLORS[pet.role || "gunner"] || "#7df9ff" } });
       if ((pet.role || "gunner") !== "gunner") {
         ctx.fillStyle = "#111"; ctx.font = "bold 8px monospace"; ctx.textAlign = "center";
-        ctx.fillText((pet.role || "?")[0].toUpperCase(), px, py + 3);
+        ctx.fillText((pet.role || "?")[0].toUpperCase(), px, bobY + 3);
       }
     });
     // Mount: ride box under the player.
@@ -618,10 +741,13 @@
       ctx.lineWidth = 2;
       ctx.strokeRect(p.x - 13, p.y - 22, 26, 32);
     }
+    // Player sprite (walk cycle when moving) + soul glow + status outlines.
+    const pdir = C.spriteDir(p.facing);
+    const pframe = p.moving ? Math.floor(C.G.t * 8) % 2 : 0;
     if (p.inv <= 0 || Math.floor(C.G.t * 12) % 2 === 0) {
       ctx.globalAlpha = cloakA;
-      ctx.fillStyle = "#2ecc71"; ctx.fillRect(p.x - 9, p.y - 12, 18, 24);
-      ctx.fillStyle = "#ffe0bd"; ctx.fillRect(p.x - 6, p.y - 18, 12, 8);
+      C.drawSprite("player_" + pdir.dir + pframe, p.x, p.y - 2,
+        { scale: 2, flip: pdir.flip, flash: p.flashT > 0 });
       ctx.fillStyle = "#7CFC00";
       ctx.globalAlpha = cloakA * (0.3 + 0.7 * (p.hp / p.maxHp));
       ctx.fillRect(p.x - 9, p.y + 12, 18, 3);
@@ -638,7 +764,27 @@
     ctx.globalAlpha = 1;
     ctx.restore();
     drawMinimap(room);
+    drawVignette();
   };
+
+  let vigCache = null;
+  function drawVignette() {
+    try {
+      if (vigCache === null) {
+        const c = document.createElement("canvas");
+        c.width = C.W; c.height = C.H;
+        const g = c.getContext("2d");
+        const gr = g.createRadialGradient(C.W / 2, C.H / 2, C.H * 0.35,
+          C.W / 2, C.H / 2, C.H * 0.75);
+        gr.addColorStop(0, "rgba(0,0,0,0)");
+        gr.addColorStop(1, "rgba(0,0,0,.38)");
+        g.fillStyle = gr;
+        g.fillRect(0, 0, C.W, C.H);
+        vigCache = c;
+      }
+      if (vigCache) C.ctx.drawImage(vigCache, 0, 0);
+    } catch (e) { vigCache = false; }
+  }
 
   // 7x7 visited-room grid: brightness by depth, gold = vault, white = you.
   function drawMinimap(room) {
