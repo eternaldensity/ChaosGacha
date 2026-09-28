@@ -114,9 +114,14 @@
   // Apply a picked curse to a live run state (fresh or title).
   function applyPick(G, pick) {
     const p = G.p, A = pick.mod.apply, applied = {};
-    if (A.maxHp) { p.maxHp = Math.max(1, p.maxHp + A.maxHp); p.hp = Math.min(p.hp, p.maxHp); }
+    if (A.maxHp) {
+      p.curseHp = (p.curseHp || 0) + A.maxHp;
+      p.maxHp = C.maxHp();
+      p.hp = Math.min(p.maxHp, Math.max(1, p.hp));
+      applied.maxHp = A.maxHp;
+    }
     if (A.pullMul) { p.pullMul *= A.pullMul; applied.pullMul = A.pullMul; }
-    if (A.speedMult) { p.speed *= A.speedMult; applied.speedMult = A.speedMult; }
+    if (A.speedMult) { p.moveMult *= A.speedMult; applied.speedMult = A.speedMult; }
     if (A.coins) p.coins = Math.max(0, p.coins + A.coins);
     if (A.costMult) { G.costMult = (G.costMult || 1) * A.costMult; applied.costMult = A.costMult; }
     if (A.threat0) G.threat = Math.max(G.threat, A.threat0);
@@ -199,7 +204,12 @@
       G.p.tickets.gold++;
       const a = c.applied || {};
       if (a.pullMul) G.p.pullMul /= a.pullMul;
-      if (a.speedMult) G.p.speed /= a.speedMult;
+      if (a.speedMult) G.p.moveMult /= a.speedMult;
+      if (a.maxHp) {
+        G.p.curseHp = (G.p.curseHp || 0) - a.maxHp;
+        G.p.maxHp = C.maxHp();
+        G.p.hp = Math.min(G.p.maxHp, Math.max(1, G.p.hp));
+      }
       if (a.costMult) G.costMult = (G.costMult || 1) / a.costMult;
       if (a.sightMult) G.p.sightMult /= a.sightMult;
       if (a.cdrMult) G.p.cdrMult /= a.cdrMult;

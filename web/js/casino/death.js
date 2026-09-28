@@ -183,9 +183,11 @@
       if (v > 0) p.tickets[k] = (p.tickets[k] || 0) + v;
     }
     p.coins += B.coins;
-    p.ammo = Math.min(p.ammoMax, p.ammo + B.ammo);
+    p.ammo = Math.min(C.ammoMax(), p.ammo + B.ammo);
     p.parts += B.parts;
-    if (B.maxHp > 0) { p.maxHp += B.maxHp; p.hp = p.maxHp; }
+    if (B.maxHp > 0) {
+      for (let i = 0; i < B.maxHp; i++) C.modStat("END", 2);
+    }
     C.banked = null;
     return bankedLine(B);
   };

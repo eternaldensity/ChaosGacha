@@ -63,6 +63,13 @@
   C.runActive = function (i) {
     const p = C.G.p, ab = p.slots[i];
     if (!ab || ab.cdLeft > 0 || C.G.over || C.G.title) return false;
+    const cost = C.MANA_COSTS[ab.op] || 0;
+    if (p.mana < cost) {
+      C.floater(p.x, p.y - 24, "drained!", "#7df9ff");
+      C.audio.dry();
+      return false;
+    }
+    p.mana -= cost;
     const armed = p.weapon ? 1 : 0;
     if (ab.op === "bolt") {
       const g = C.nearestGuard(460);
@@ -227,7 +234,7 @@
     } else {
       return false;
     }
-    ab.cdLeft = ab.cd * (1 - (p.cdr || 0)) * (p.cdrMult || 1);
+    ab.cdLeft = ab.cd * (1 - C.cdr()) * (p.cdrMult || 1);
     C.updateHud();
     return true;
   };
@@ -325,7 +332,7 @@
     const p = C.G.p;
     const st = p.satchel[kind];
     if (st) {
-      st.qty = Math.min(5, st.qty + 1);
+      st.qty = Math.min(C.satCap() + 2, st.qty + 1);
       if (power > st.power) st.power = power;
     } else {
       p.satchel[kind] = { kind, qty: 1, power };
@@ -374,7 +381,7 @@
   C.tickRestock = function (dt) {
     const p = C.G.p;
     const st = p.satchel[p.satSel];
-    if (st && st.qty < 3) {
+    if (st && st.qty < C.satCap()) {
       p.restockT += dt;
       if (p.restockT >= 25) {
         p.restockT = 0;

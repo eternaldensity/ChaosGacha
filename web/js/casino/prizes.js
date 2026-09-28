@@ -52,9 +52,9 @@
           "% chance to fully block a hit (cap 50%).";
       }
       if (/boots|greaves|gauntlets|treads/i.test(nm)) {
-        p.speed *= 1 + 0.03 * bonus;
-        C.noteBuild(res.name.slice(0, 18) + ": +" + Math.round(3 * bonus) + "% speed");
-        return "Geared " + res.name + ": +" + Math.round(3 * bonus) + "% move speed.";
+        C.modStat("SPD", 1);
+        C.noteBuild(res.name.slice(0, 18) + ": SPD " + p.stats.SPD);
+        return "Geared " + res.name + ": +1 SPD (move " + Math.round(C.moveSpeed()) + ").";
       }
       const mountKind = /\bbike\b|motorcycle|scooter|skateboard|moped/i.test(nm) ? "bike"
         : /\bcar\b|truck|tank(?! top)|van|\bbus\b|jeep|limousine/i.test(nm) ? "car"
@@ -82,14 +82,14 @@
         const tiers = ["bronze", "bronze", "silver", "silver", "gold"];
         const tk = tiers[Math.floor(Math.random() * tiers.length)];
         p.tickets[tk]++;
-        p.pullMul = Math.max(0.6, p.pullMul * 0.97);
-        C.noteBuild(res.name.slice(0, 18) + ": manual +1 " + tk, "pass");
+        C.modStat("DEX", 1);
+        C.noteBuild(res.name.slice(0, 18) + ": manual +1 " + tk + ", DEX " + p.stats.DEX, "pass");
         C.floater(p.x, p.y - 24, "+1 🎟 " + tk, "#aed1d1");
         return "Read " + res.name + ": a " + tk + " ticket falls out as a bookmark, and you pull 3% faster.";
       }
       if (/visor|helm|goggles|headset/i.test(nm)) {
-        p.pullMul = Math.max(0.6, p.pullMul * 0.94);
-        C.noteBuild(res.name.slice(0, 18) + ": pulls 6% faster");
+        C.modStat("DEX", 1);
+        C.noteBuild(res.name.slice(0, 18) + ": DEX " + p.stats.DEX);
         return "Wearing " + res.name + ": pulls 6% faster.";
       }
       if (/gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer/i.test(nm)) {
@@ -102,7 +102,7 @@
           rate: pattern === "rapid" ? 0.6 : 1,
           knockback: pattern === "heavy" ? 34 : 0,
         };
-        p.dmg = p.weapon.dmg;
+        C.syncDmg();
         C.noteBuild("🔫 " + res.name + " (" + p.dmg + " dmg" + (ranged ? ", ranged" : ", melee") +
           (p.weapon.element ? ", " + p.weapon.element : "") +
           (pattern !== "single" ? ", " + pattern : "") + ")");
@@ -153,30 +153,30 @@
     }
     if (cat === "trait") {
       if (/speed|swift|quick|agil/i.test(nm)) {
-        p.speed *= 1 + 0.04 * bonus;
-        C.noteBuild(res.name.slice(0, 18) + ": +" + Math.round(4 * bonus) + "% speed", "pass");
-        return "Trait: +" + Math.round(4 * bonus) + "% move speed.";
+        C.modStat("SPD", 1);
+        C.noteBuild(res.name.slice(0, 18) + ": SPD " + p.stats.SPD, "pass");
+        return "Trait: +1 SPD (move " + Math.round(C.moveSpeed()) + ").";
       }
       if (/vital|health|tough|regen|heal/i.test(nm)) {
-        p.maxHp += 1; p.hp = Math.min(p.maxHp, p.hp + 1);
-        C.noteBuild(res.name.slice(0, 18) + ": +1 max HP", "pass");
-        return "Trait: +1 max HP.";
+        C.modStat("END", 2);
+        C.noteBuild(res.name.slice(0, 18) + ": END " + p.stats.END + " (HP " + p.maxHp + ")", "pass");
+        return "Trait: +2 END (max HP " + p.maxHp + ").";
       }
       if (/pull|slot|machine|luck|gamb/i.test(nm)) {
-        p.pullMul = Math.max(0.6, p.pullMul * 0.92);
-        C.noteBuild(res.name.slice(0, 18) + ": pulls 8% faster", "pass");
-        return "Trait: pulls 8% faster.";
+        C.modStat("DEX", 1);
+        C.noteBuild(res.name.slice(0, 18) + ": DEX " + p.stats.DEX, "pass");
+        return "Trait: +1 DEX (pulls ×" + C.pullMul().toFixed(2) + ").";
       }
       if (/energ|mana|reserve|spirit|focus|meditat/i.test(nm)) {
-        p.cdr = Math.min(0.35, (p.cdr || 0) + 0.04 + r * 0.005);
-        C.noteBuild(res.name.slice(0, 18) + ": cooldowns -" + Math.round(p.cdr * 100) + "%", "pass");
-        return "Trait: deep reserves — power cooldowns -" + Math.round(p.cdr * 100) + "% total.";
+        C.modStat("FOC", 3);
+        C.noteBuild(res.name.slice(0, 18) + ": FOC " + p.stats.FOC, "pass");
+        return "Trait: +3 FOC (cooldowns -" + Math.round(C.cdr() * 100) + "%, mana " + C.manaMax() + ").";
       }
       if (/physical|might|brawn|bulk|mighty|strapping/i.test(nm)) {
-        p.dmg += 0.5;
+        C.modStat("PWR", 2);
         p.stanceBonus = (p.stanceBonus || 0) + 2;
-        C.noteBuild(res.name.slice(0, 18) + ": +dmg, +2s stances", "pass");
-        return "Trait: physicality — +0.5 base damage (now " + p.dmg.toFixed(1) + "), stances +2s.";
+        C.noteBuild(res.name.slice(0, 18) + ": PWR " + p.stats.PWR + ", +2s stances", "pass");
+        return "Trait: +2 PWR (damage " + p.dmg.toFixed(1) + "), stances +2s.";
       }
       if (/affin|attun|align|bloodline|blood of|sorcer|wizard|witch|mage|magic|arcane/i.test(nm)) {
         const aff = C.elementOf(nm);
@@ -188,18 +188,18 @@
           return "Trait: " + aff + " affinity — +" +
             Math.round(p.elemBonus[aff] * 100) + "% " + aff + " damage, 10% " + aff + " resist.";
         }
-        p.cdr = Math.min(0.35, (p.cdr || 0) + 0.03);
+        C.modStat("FOC", 2);
         C.noteBuild(res.name.slice(0, 18) + ": raw magic, cooldowns down", "pass");
         return "Trait: raw magic — power cooldowns tick faster.";
       }
       if (/thinker|sense|detect|perceiv|predict|foresight|intuit|insight|sixth sense|danger sense|awareness|vigil/i.test(nm)) {
         p.survey = true;
-        p.luck = (p.luck || 0) + 1;
+        C.modStat("LCK", 1);
         C.noteBuild(res.name.slice(0, 18) + ": seer (door intel + luck)", "pass");
-        return "Trait: seer — doors show guards and best machines, +1 luck.";
+        return "Trait: seer — doors show guards and best machines, +1 LCK.";
       }
-      p.speed *= 1.02; p.pullMul = Math.max(0.6, p.pullMul * 0.98);
-      C.noteBuild(res.name.slice(0, 18) + ": edge (speed/pull)", "pass");
+      C.modStat("SPD", 1);
+      C.noteBuild(res.name.slice(0, 18) + ": SPD " + p.stats.SPD, "pass");
       return "Trait: small all-round edge (rarity " + r.toFixed(1) + ").";
     }
     // Profession skills (usually "Rank Profession"): the trade becomes a
@@ -223,10 +223,10 @@
         const nn = res.name.slice(0, 20);
         if (kind === "regen") { p.regen = 1; C.noteBuild(nn + ": regen 1HP/30s", "pass"); return "Skill: " + res.name + " — you regenerate 1 HP every 30s."; }
         if (kind === "ranged") { p.rangedBonus = (p.rangedBonus || 0) + 1; C.noteBuild(nn + ": +ranged dmg", "pass"); return "Skill: " + res.name + " — +1 damage on ranged attacks."; }
-        if (kind === "pull") { p.pullMul = Math.max(0.6, p.pullMul * 0.9); C.noteBuild(nn + ": pulls 10% faster", "pass"); return "Skill: " + res.name + " — pulls 10% faster."; }
+        if (kind === "pull") { C.modStat("DEX", 1); C.noteBuild(nn + ": DEX " + p.stats.DEX, "pass"); return "Skill: " + res.name + " — +1 DEX (pulls ×" + C.pullMul().toFixed(2) + ")."; }
         if (kind === "calm") { p.threatDecayT = 1; C.noteBuild(nn + ": threat decays", "pass"); return "Skill: " + res.name + " — laying low lowers Threat over time."; }
         if (kind === "healplus") { p.healBonus = (p.healBonus || 0) + 1; C.noteBuild(nn + ": +healing", "pass"); return "Skill: " + res.name + " — all healing +1."; }
-        if (kind === "luck") { p.luck = (p.luck || 0) + 1; C.noteBuild(nn + ": luck +1", "pass"); return "Skill: " + res.name + " — luck +1 (jackpots likelier, better tickets)."; }
+        if (kind === "luck") { C.modStat("LCK", 1); C.noteBuild(nn + ": LCK " + p.stats.LCK, "pass"); return "Skill: " + res.name + " — +1 LCK (jackpots likelier, better tickets)."; }
         if (kind === "roll") { p.rollCdMax = Math.max(2, (p.rollCdMax || 5) - 1); C.noteBuild(nn + ": dodge faster", "pass"); return "Skill: " + res.name + " — dodge recharges faster."; }
         if (kind === "tickets") { p.tickets.silver++; C.noteBuild(nn + ": spotted +1 silver", "pass"); return "Skill: " + res.name + " — you spot a dropped Silver ticket. (+1)"; }
         if (kind === "pets") { for (const pt of p.pets) pt.dmg += 1; p.petBonus = (p.petBonus || 0) + 1; C.noteBuild(nn + ": pets +1", "pass"); return "Skill: " + res.name + " — your familiars hit +1 (and future ones start stronger)."; }
@@ -237,19 +237,19 @@
         C.noteBuild(res.name.slice(0, 18) + ": slots -" + Math.round(p.discount * 100) + "%", "pass");
         return "Skill: slot costs -8% (total -" + Math.round(p.discount * 100) + "%).";
       }
-      p.pullMul = Math.max(0.6, p.pullMul * 0.9);
-      C.noteBuild(res.name.slice(0, 18) + ": pulls 10% faster", "pass");
-      return "Skill: pulls 10% faster.";
+      C.modStat("DEX", 1);
+      C.noteBuild(res.name.slice(0, 18) + ": DEX " + p.stats.DEX, "pass");
+      return "Skill: pulls 10% faster (DEX " + p.stats.DEX + ").";
     }
     // Generic fallback scales with rarity so every pull is useful.
     if (!p.weapon && r >= 3) {
       p.weapon = { name: res.name + " (improv)", ranged: false, dmg: Math.max(1, Math.round(r / 2)) };
-      p.dmg = p.weapon.dmg;
+      C.syncDmg();
       return "Prize doubles as weapon: " + res.name + ". You can fight back now.";
     }
-    p.dmg += 0.2 * bonus; p.speed += 2;
-    C.noteBuild(res.name.slice(0, 18) + ": +dmg/speed", "pass");
-    return "Prize essence: +damage/speed (rarity " + r.toFixed(1) + " " + C.rarityName(r) + ").";
+    C.modStat("PWR", 1); C.modStat("SPD", 1);
+    C.noteBuild(res.name.slice(0, 18) + ": PWR/SPD +1", "pass");
+    return "Prize essence: +1 PWR/+1 SPD (rarity " + r.toFixed(1) + " " + C.rarityName(r) + ").";
   };
 
   C.checkFeats = function () {

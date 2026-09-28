@@ -24,6 +24,16 @@
         (st.qty < 3 && p.satSel === k ? " (+)" : "") + "</span>");
     }
     C.el("satchel").innerHTML = "[Q] use · [C] cycle · " + (satBits.join("") || "empty — prizes stock it");
+    const st = p.stats || {};
+    const statChip = k => "<span class='tick' title='" + (C.STAT_BLURB[k] || k) + "'>" +
+      k + " " + (st[k] || 10) + "</span>";
+    C.el("stats").innerHTML = C.STAT_NAMES.map(statChip).join("") +
+      "<span class='tick' title='mana pool'>⚡" + Math.floor(p.mana) + "/" + C.manaMax() + "</span>" +
+      "<span class='tick'>move " + Math.round(C.moveSpeed()) + " · pull ×" +
+      C.pullMul().toFixed(2) + " · sat " + C.satCap() + "</span>";
+    const mf = Math.max(0, Math.min(1, p.mana / C.manaMax()));
+    const mb = C.el("manabar").firstChild;
+    if (mb) mb.style.width = (mf * 100).toFixed(1) + "%";
     C.el("tickets").innerHTML = C.TIERS.map(t =>
       "<span class='tick' style='border-color:" + t.color + "'>" +
       t.label.slice(0, 4) + "×" + (p.tickets[t.id] || 0) + "</span>").join("");

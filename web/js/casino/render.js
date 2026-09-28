@@ -559,8 +559,11 @@
       ctx.fillText(ab ? ab.name.slice(0, 20) : "— empty —", x + 32, y + 10);
       if (ab) {
         const cooling = ab.cdLeft > 0;
-        ctx.fillStyle = cooling ? "#ff8888" : "#8b93a3";
-        ctx.fillText(cooling ? ab.cdLeft.toFixed(1) + "s" : ab.blurb.slice(0, 26), x + 32, y + 21);
+        const cost = C.MANA_COSTS[ab.op] || 0;
+        const broke = p.mana < cost;
+        ctx.fillStyle = cooling ? "#ff8888" : broke ? "#7df9ff" : "#8b93a3";
+        ctx.fillText(cooling ? ab.cdLeft.toFixed(1) + "s"
+          : (ab.blurb.slice(0, 20) + " · " + cost + "⚡"), x + 32, y + 21);
         if (cooling) { // draining sweep shows remaining cooldown
           ctx.fillStyle = "rgba(0,0,0,.55)";
           const f = Math.min(1, ab.cdLeft / ab.cd);

@@ -7,7 +7,7 @@
   };
 
   C.rollSlotPayout = function (t) {
-    const luck = (C.G && C.G.p.luck) || 0;
+    const luck = (C.G && C.luck()) || 0;
     const r = Math.random();
     const idx = C.TIERS.indexOf(t);
     const up = C.TIERS[Math.min(C.TIERS.length - 1, idx + 1)];

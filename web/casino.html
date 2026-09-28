@@ -13,6 +13,9 @@
     background: #14171e; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; margin: 8px 0; }
   #hud .pill { background:#1f242e; border-radius: 999px; padding: 3px 10px; font-size: .9rem; }
   #tickets { display:flex; gap:6px; flex-wrap: wrap; }
+  #stats { display:flex; gap:6px; flex-wrap:wrap; margin:6px 0 4px; font-size:.8rem; }
+  #manabar { height:6px; background:#20242e; border-radius:99px; margin:0 0 6px; overflow:hidden; }
+  #manabar div { height:100%; width:100%; background:linear-gradient(90deg,#7df9ff,#3aa7c9); }
   #build { display:flex; gap:6px; flex-wrap:wrap; margin:6px 0; font-size:.8rem; }
   #satchel { display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:0 0 6px; font-size:.8rem; opacity:.95; }
   #satchel .sel { border-color:var(--accent); background:#2a3342; }
@@ -98,6 +101,8 @@
     <span class="pill" id="hWeapon">🥊 Unarmed</span>
     <span class="pill" id="hParts">🧩 0</span>
   </div>
+  <div id="stats" title="Character stats: every prize hooks into these"></div>
+  <div id="manabar"><div></div></div>
   <div id="tickets"></div>
   <div id="build" title="Everything your prizes do, in one place"></div>
   <div id="satchel" title="Consumables: Q uses the selected stack, C cycles"></div>
@@ -152,6 +157,14 @@
         <div id="curseList"></div>
         <p id="bestLine"></p>
       </div>
+      <div class="cols"><div>
+        <b>Stats &amp; mana</b>
+        <ul>
+          <li><b>SPD</b> move · <b>DEX</b> pull speed · <b>STR</b> inventory size · <b>END</b> health</li>
+          <li><b>FOC</b> cooldowns + mana · <b>LCK</b> luck · <b>PWR</b> damage — every prize feeds these.</li>
+          <li>Powers burn <b>⚡ mana</b> (it regens). Watch the bar under the stats.</li>
+        </ul>
+      </div></div>
       <button id="startBtn" tabindex="-1">Take the coins (Enter)</button>
     </div></div>
     <div id="card"><h3 id="cardTitle"></h3><p id="cardBody"></p><p id="cardSub"></p></div>
@@ -184,6 +197,7 @@
 <script src="js/casino/legacy.js"></script>
 <script src="js/casino/state.js"></script>
 <script src="js/casino/hud.js"></script>
+<script src="js/casino/stats.js"></script>
 <script src="js/casino/slots.js"></script>
 <script src="js/casino/effects.js"></script>
 <script src="js/casino/prizes.js"></script>

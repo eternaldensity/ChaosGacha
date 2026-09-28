@@ -30,7 +30,7 @@
       const syms = C.symbolsFor(pay);
       const total = C.SYMS.length * C.REEL_H;
       m.pull = {
-        t: 0, dur: t.pull * C.G.p.pullMul, pay, syms, fin: null,
+        t: 0, dur: t.pull * C.pullMul() * (C.G.p.pullMul || 1), pay, syms, fin: null,
         // Each reel scrolls a wrapping symbol tape, then lands on its target.
         reels: syms.map((s, i) => ({
           pos: Math.random() * total, vel: 300 + i * 40,
@@ -46,7 +46,7 @@
       }
       C.G.p.tickets[m.tier]--;
       m.pull = {
-        t: 0, dur: 3.0 * C.G.p.pullMul, gacha: C.gachaRoll(m.tier, m.cat), fin: null,
+        t: 0, dur: 3.0 * C.pullMul() * (C.G.p.pullMul || 1), gacha: C.gachaRoll(m.tier, m.cat), fin: null,
         reel: { pos: Math.random() * 280, vel: 300, state: "spin", landT: 0 },
       };
     }
@@ -207,7 +207,7 @@
         C.floater(p.x, p.y - 24, "+1 🎟 " + pk.tier, t.color);
       } else if (pk.kind === "ammo") {
         C.audio.coins();
-        const space = Math.max(0, (p.ammoMax || 20) - (p.ammo || 0));
+        const space = Math.max(0, C.ammoMax() - (p.ammo || 0));
         const take = Math.min(space, pk.amount);
         p.ammo = (p.ammo || 0) + take;
         C.floater(p.x, p.y - 24, "+" + take + " ammo", "#ffd166");

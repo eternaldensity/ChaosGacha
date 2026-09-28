@@ -11,7 +11,8 @@
 
   function abLine(ab) {
     return ab.name + " — " + ab.op +
-      (ab.element ? "/" + ab.element : "") + " — " + ab.blurb;
+      (ab.element ? "/" + ab.element : "") + " — " + ab.blurb +
+      " (" + (C.MANA_COSTS[ab.op] || 0) + "⚡)";
   }
 
   C.openDraft = function (mode) {
