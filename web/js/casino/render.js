@@ -231,6 +231,75 @@
     }
   }
 
+  function dangerColor(d) {
+    if (d < 2.5) return "#11d939";
+    if (d < 4.5) return "#f7d40a";
+    return "#ff8c00";
+  }
+
+  // Dark pill so depth/danger always reads against the carpet.
+  function drawDepthPill(room) {
+    const ctx = C.ctx;
+    ctx.font = "bold 12px monospace";
+    const label = "DEPTH " + room.depth + " · DANGER " + room.danger.toFixed(1);
+    const w = ctx.measureText(label).width + 20;
+    const x = C.WALL + 8, y = 8;
+    ctx.fillStyle = "rgba(5,6,10,.88)";
+    rr(x, y, w, 24, 12); ctx.fill();
+    ctx.strokeStyle = dangerColor(room.danger); ctx.lineWidth = 2; ctx.stroke();
+    ctx.fillStyle = "#fff"; ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    ctx.fillText("DEPTH " + room.depth + " · ", x + 10, y + 13);
+    const pre = ctx.measureText("DEPTH " + room.depth + " · ").width;
+    ctx.fillStyle = dangerColor(room.danger);
+    ctx.fillText("DANGER " + room.danger.toFixed(1), x + 10 + pre, y + 13);
+    ctx.textBaseline = "alphabetic";
+  }
+
+  // Gold EXIT doorways with pulsing outward chevrons.
+  function drawDoors() {
+    const ctx = C.ctx, cx = C.W / 2, cy = C.H / 2, W2 = C.WALL;
+    const bob = (Math.sin(C.G.t * 4) + 1) / 2; // 0..1 pulse
+    const gold = "rgba(255,224,102," + (0.55 + 0.45 * bob).toFixed(2) + ")";
+    // Mats inside the wall gaps.
+    ctx.fillStyle = "#3a2f10";
+    ctx.fillRect(cx - 34, 0, 68, W2);
+    ctx.fillRect(cx - 34, C.H - W2, 68, W2);
+    ctx.fillRect(0, cy - 34, W2, 68);
+    ctx.fillRect(C.W - W2, cy - 34, W2, 68);
+    // Gold side posts.
+    ctx.fillStyle = "#ffe066";
+    ctx.fillRect(cx - 36, 0, 3, W2); ctx.fillRect(cx + 33, 0, 3, W2);
+    ctx.fillRect(cx - 36, C.H - W2, 3, W2); ctx.fillRect(cx + 33, C.H - W2, 3, W2);
+    ctx.fillRect(0, cy - 36, W2, 3); ctx.fillRect(0, cy + 33, W2, 3);
+    ctx.fillRect(C.W - W2, cy - 36, W2, 3); ctx.fillRect(C.W - W2, cy + 33, W2, 3);
+    // EXIT labels inside the mats.
+    ctx.fillStyle = "#ffe066"; ctx.font = "bold 11px monospace";
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText("EXIT", cx, W2 / 2);
+    ctx.fillText("EXIT", cx, C.H - W2 / 2);
+    ctx.fillText("EXIT", W2 / 2, cy);
+    ctx.fillText("EXIT", C.W - W2 / 2, cy);
+    // Outward chevrons just inside the room (door corridors stay clear).
+    const off = 4 + bob * 7;
+    ctx.strokeStyle = gold; ctx.lineWidth = 3; ctx.lineCap = "round";
+    function chev(x, y, dx, dy) {
+      // double chevron pointing along (dx, dy)
+      for (let k = 0; k < 2; k++) {
+        const bx = x + dx * k * 9, by = y + dy * k * 9;
+        ctx.beginPath();
+        ctx.moveTo(bx - dy * 8 - dx * 5, by - dx * 8 - dy * 5);
+        ctx.lineTo(bx, by);
+        ctx.lineTo(bx + dy * 8 - dx * 5, by + dx * 8 - dy * 5);
+        ctx.stroke();
+      }
+    }
+    chev(cx, W2 + 16 + off, 0, -1);
+    chev(cx, C.H - W2 - 16 - off, 0, 1);
+    chev(W2 + 16 + off, cy, -1, 0);
+    chev(C.W - W2 - 16 - off, cy, 1, 0);
+    ctx.textBaseline = "alphabetic";
+  }
+
   C.render = function () {
     const ctx = C.ctx, room = C.curRoom(), p = C.G.p;
     ctx.save();
@@ -245,14 +314,8 @@
     ctx.fillStyle = "#2b2137";
     ctx.fillRect(0, 0, C.W, C.WALL); ctx.fillRect(0, C.H - C.WALL, C.W, C.WALL);
     ctx.fillRect(0, 0, C.WALL, C.H); ctx.fillRect(C.W - C.WALL, 0, C.WALL, C.H);
-    ctx.fillStyle = "#0b0d12";
-    ctx.fillRect(C.W / 2 - 34, 0, 68, C.WALL);
-    ctx.fillRect(C.W / 2 - 34, C.H - C.WALL, 68, C.WALL);
-    ctx.fillRect(0, C.H / 2 - 34, C.WALL, 68);
-    ctx.fillRect(C.W - C.WALL, C.H / 2 - 34, C.WALL, 68);
-    ctx.fillStyle = "#3a2f4d";
-    ctx.font = "12px monospace"; ctx.textAlign = "center";
-    ctx.fillText("DEPTH " + room.depth + " · DANGER " + room.danger.toFixed(1), C.W / 2, 20);
+    drawDoors();
+    drawDepthPill(room);
 
     drawWalls(room);
     drawMachines(room, C.nearestMachine(false));
@@ -285,9 +348,6 @@
       ctx.fillText(f.txt, f.x, f.y - (1.5 - f.t) * 30);
     }
     ctx.globalAlpha = 1;
-    ctx.fillStyle = "rgba(255,255,255,.5)"; ctx.font = "11px monospace";
-    ctx.fillText("N", C.W / 2, C.WALL - 8); ctx.fillText("S", C.W / 2, C.H - 8);
-    ctx.fillText("W", 14, C.H / 2); ctx.fillText("E", C.W - 14, C.H / 2);
     ctx.restore();
   };
 })(window.Casino);
