@@ -4,6 +4,7 @@
   C.updateHud = function () {
     const p = C.G.p, room = C.curRoom();
     C.el("hCoins").textContent = "🪙 " + p.coins;
+    C.el("hParts").textContent = "🧩 " + (p.parts || 0);
     C.el("hHp").textContent = "❤ " + Math.max(0, p.hp) + "/" + p.maxHp;
     C.el("hThreat").textContent = "★ Threat " + C.G.threat;
     C.el("hDepth").textContent = "🚪 Depth " + room.depth + " · Danger " + room.danger.toFixed(1);

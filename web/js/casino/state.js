@@ -49,6 +49,7 @@
         buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null,
         cdr: 0, elemBonus: {}, resist: {}, luck: 0, regen: 0, regenT: 0,
         healBonus: 0, rollCdMax: 5, threatDecayT: 0, rangedBonus: 0, draft: null,
+        parts: 0,
       },
       cardT: 0, shake: 0,
     };
@@ -186,7 +187,8 @@
     const vault = depth >= 3 && vrnd() < 0.15;
     const room = {
       x, y, depth, danger, machines: [], guards: [], vault,
-      walls: C.genWalls(x, y, depth), tempWalls: [], pickups: [], alert: 0, _seen: false,
+      walls: C.genWalls(x, y, depth), tempWalls: [], pickups: [], placed: [], scorch: [],
+      alert: 0, _seen: false,
     };
     // 12 machines: 8 slots + 4 gacha. Vaults stock the top two tiers.
     const pool = C.allowedTiers(depth);
@@ -212,7 +214,7 @@
     kinds.forEach((kind, i) => {
       const t = pickTier();
       room.machines.push({
-        id: i, kind, tier: t.id, color: t.color, pull: null,
+        id: i, kind, tier: t.id, color: t.color, pull: null, hp: 3 + C.tierIdx(t.id),
         idleSyms: ["◈", "◈", "◈"], lastPrize: null,
         cat: kind === "gacha"
           ? (Math.random() < 0.55 ? "random" : C.CATS[Math.floor(Math.random() * C.CATS.length)])

@@ -40,6 +40,16 @@ window.Casino = window.Casino || {};
   C.SYMS = ["7", "BAR", "★", "♦", "♥", "🪙"];
 
   C.tierById = id => C.TIERS.find(t => t.id === id);
+  C.tierIdx = id => Math.max(0, C.TIERS.findIndex(t => t.id === id));
+  // Highest rig tier a tinker rarity can build (house doesn't sell mythic+).
+  C.rigTierFor = function (r) {
+    if (r < 2) return "bronze";
+    if (r < 3) return "silver";
+    if (r < 4) return "gold";
+    if (r < 5) return "platinum";
+    if (r < 6) return "diamond";
+    return "legendary";
+  };
   C.allowedTiers = depth => C.TIERS.filter(t => depth >= t.minDepth);
 
   // Rarity colors/names match the desktop app tiers.

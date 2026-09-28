@@ -134,6 +134,25 @@
       }
       C.rings.push({ x: p.x, y: p.y, age: 0, max: 0.4, r: 230 });
       C.G.shake = 0.12;
+    } else if (ab.op === "salvage") {
+      const room = C.curRoom();
+      let best = null, bd = 115;
+      for (const m of room.machines) {
+        const d = Math.hypot(m.x - p.x, m.y - p.y);
+        if (d < bd) { bd = d; best = m; }
+      }
+      if (!best) return false; // nothing in reach: don't burn the cooldown
+      const wasPull = !!best.pull;
+      const parts = (C.tierIdx(best.tier) + 1) + 2;
+      // Remove first so damageMachine's own drop doesn't double-pay.
+      room.machines.splice(room.machines.indexOf(best), 1);
+      room.pickups.push({ kind: "parts", amount: parts, x: best.x, y: best.y, bob: 0, age: 0 });
+      room.scorch.push({ x: best.x, y: best.y, age: 0 });
+      C.floater(best.x, best.y - 50, "🔧 +" + parts + "🧩" + (wasPull ? " (pull lost)" : ""), "#ffe066");
+      C.G.shake = Math.max(C.G.shake, 0.1);
+    } else if (ab.op === "tinker") {
+      C.openDraft({ kind: "build", ab });
+      return true; // menu handles the cooldown on build, not on open
     } else if (ab.op === "dash") {
       p.dashDx = Math.cos(p.facing); p.dashDy = Math.sin(p.facing);
       p.dashSpd = ab.power;
@@ -228,6 +247,11 @@
   C.updateFx = function (dt) {
     for (const rg of C.rings) rg.age += dt;
     C.rings = C.rings.filter(rg => rg.age < rg.max);
+    for (const rm of C.rooms.values()) {
+      if (!rm.scorch) continue;
+      for (const s of rm.scorch) s.age += dt;
+      rm.scorch = rm.scorch.filter(s => s.age < 20);
+    }
     for (const b of C.beams) b.age += dt;
     C.beams = C.beams.filter(b => b.age < b.max);
     for (const d of C.delayed) {
@@ -241,6 +265,31 @@
   };
   C.updateRings = C.updateFx;
 
+  // Player-placed constructs: turrets shoot, everything wears out.
+  C.updatePlaced = function (dt) {
+    const p = C.G.p, room = C.curRoom();
+    for (const pl of [...room.placed]) {
+      pl.t -= dt;
+      if (pl.t <= 0) {
+        room.placed.splice(room.placed.indexOf(pl), 1);
+        C.floater(pl.x, pl.y - 20, pl.kind + " wears out", "#8b93a3");
+        continue;
+      }
+      if (pl.kind === "turret") {
+        pl.cd -= dt;
+        const g = C.nearestGuard(380);
+        if (g && pl.cd <= 0) {
+          const a = Math.atan2(g.y - pl.y, g.x - pl.x);
+          C.projs.push({
+            x: pl.x, y: pl.y, vx: Math.cos(a) * 500, vy: Math.sin(a) * 500,
+            dmg: pl.dmg, foe: false, life: 0.8, element: null,
+          });
+          pl.cd = 0.8;
+        }
+      }
+    }
+  };
+
   C.updateTempWalls = function (dt) {
     for (const room of C.rooms.values()) {
       if (!room.tempWalls) continue;
@@ -249,10 +298,32 @@
     }
   };
 
+  // Machines have hull by tier. AoE and stray shots wreck them into parts.
+  C.damageMachine = function (room, m, amt) {
+    if (!room.machines.includes(m)) return;
+    m.hp -= amt;
+    if (m.hp > 0) {
+      C.floater(m.x, m.y - C.MH / 2 - 10, "crack", "#8b93a3");
+      return;
+    }
+    room.machines.splice(room.machines.indexOf(m), 1);
+    const parts = C.tierIdx(m.tier) + 1;
+    room.pickups.push({ kind: "parts", amount: parts,
+      x: m.x, y: m.y, bob: 0, age: 0 });
+    room.scorch.push({ x: m.x, y: m.y, age: 0 });
+    if (m.pull) C.floater(m.x, m.y - 50, "pull lost!", "#ff5555");
+    C.floater(m.x, m.y - 50, "💥 " + m.tier + " " + m.kind + " → +" + parts + "🧩", "#ffe066");
+    C.G.shake = Math.max(C.G.shake, 0.15);
+    C.updateHud();
+  };
+
   // Shared AoE: nova powers and volatile pickups both go through here.
   C.detonate = function (x, y, radius, dmg, element) {
     C.rings.push({ x, y, age: 0, max: 0.35, r: radius });
     const room = C.curRoom();
+    for (const m of [...room.machines]) {
+      if (Math.hypot(m.x - x, m.y - y) < radius + 40) C.damageMachine(room, m, dmg);
+    }
     for (const gd of [...room.guards]) {
       const d = Math.hypot(gd.x - x, gd.y - y);
       if (d > radius + 14) continue;
@@ -561,6 +632,7 @@
         C.projs.splice(C.projs.indexOf(pr), 1);
         continue;
       }
+      let hit = false;
       if (pr.foe) {
         if (Math.hypot(pr.x - p.x, pr.y - p.y) < 12) {
           C.hurtPlayer(pr.dmg, pr.element);
@@ -568,17 +640,28 @@
             const pst = C.statusForElement(pr.element);
             if (pst) C.applyStatus(p, pst[0], pst[1], pst[2]);
           }
-          C.projs.splice(C.projs.indexOf(pr), 1);
+          hit = true;
         }
       } else {
         for (const gd of [...room.guards]) {
           if (Math.hypot(pr.x - gd.x, pr.y - gd.y) < 14) {
             C.damageGuard(gd, pr.dmg, pr.element);
-            C.projs.splice(C.projs.indexOf(pr), 1);
+            hit = true;
             break;
           }
         }
       }
+      // Missed shots (both sides) slam into machines and wreck them.
+      if (!hit) {
+        for (const m of [...room.machines]) {
+          if (Math.abs(pr.x - m.x) < C.MW / 2 && Math.abs(pr.y - m.y) < C.MH / 2) {
+            C.damageMachine(room, m, pr.dmg);
+            hit = true;
+            break;
+          }
+        }
+      }
+      if (hit) C.projs.splice(C.projs.indexOf(pr), 1);
     }
   };
 })(window.Casino);

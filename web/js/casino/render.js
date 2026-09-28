@@ -12,6 +12,13 @@
   function drawWalls(room) {
     const ctx = C.ctx;
     for (const wl of (room.tempWalls || [])) {
+      if (wl.barricade) {
+        ctx.fillStyle = "#3a3a10";
+        ctx.fillRect(wl.x + wl.w / 2 - 8, wl.y + wl.h / 2 - 8, 16, 16);
+        ctx.fillStyle = "#ffe066"; ctx.font = "bold 10px monospace"; ctx.textAlign = "center";
+        ctx.fillText("🚧", wl.x + wl.w / 2, wl.y + wl.h / 2 + 4);
+        continue;
+      }
       ctx.globalAlpha = Math.min(1, 0.35 + wl.t * 0.15);
       ctx.fillStyle = "#2e6b5e";
       ctx.fillRect(wl.x, wl.y, wl.w, wl.h);
@@ -167,10 +174,10 @@
       ctx.lineWidth = near === m ? 3 : 2;
       ctx.strokeStyle = near === m ? "#fff" : m.color;
       ctx.stroke();
-      // Header: kind + tier.
+      // Header: kind + tier (★ = your rig).
       ctx.fillStyle = m.color; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
-      ctx.fillText((m.kind === "slot" ? "🎰" : "🎲") + " " + t.label.toUpperCase().slice(0, 9),
-        m.x, m.y - hh + 13);
+      ctx.fillText((m.kind === "slot" ? "🎰" : "🎲") + " " + t.label.toUpperCase().slice(0, 9) +
+        (m.playerMade ? " ★" : ""), m.x, m.y - hh + 13);
       if (m.kind === "slot") slotWindows(m, t);
       else gachaWindow(m, t);
       // Footer: price.
@@ -200,7 +207,14 @@
       ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 2;
       ctx.strokeRect(pk.x - 8 - rs / 2, bobY - 8 - rs / 2, 16 + rs, 16 + rs);
       ctx.globalAlpha = 1;
-      if (pk.kind === "coins") {
+      if (pk.kind === "parts") {
+        ctx.fillStyle = "#5a4a1a";
+        ctx.fillRect(pk.x - 8, bobY - 8, 16, 16);
+        ctx.fillStyle = "#ffe066"; ctx.font = "bold 11px monospace";
+        ctx.fillText("⚙", pk.x, bobY + 4);
+        ctx.fillStyle = "#ffe066"; ctx.font = "10px monospace";
+        ctx.fillText("+" + pk.amount, pk.x, bobY + 22);
+      } else if (pk.kind === "coins") {
         ctx.fillStyle = "#8a6d1c";
         ctx.fillRect(pk.x - 8, bobY - 8, 16, 16);
         ctx.fillStyle = "#ffe066";
@@ -410,6 +424,25 @@
     ctx.textBaseline = "alphabetic";
   }
 
+  // Player-built sentries (turrets aim at the nearest guard).
+  function drawPlaced(room) {
+    const ctx = C.ctx;
+    for (const pl of room.placed) {
+      if (pl.kind !== "turret") continue;
+      ctx.fillStyle = "#2a2f3a";
+      ctx.fillRect(pl.x - 11, pl.y - 11, 22, 22);
+      ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 2;
+      ctx.strokeRect(pl.x - 11, pl.y - 11, 22, 22);
+      const g = C.nearestGuard(9999);
+      const a = g ? Math.atan2(g.y - pl.y, g.x - pl.x) : 0;
+      ctx.strokeStyle = "#fff"; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.moveTo(pl.x, pl.y);
+      ctx.lineTo(pl.x + Math.cos(a) * 16, pl.y + Math.sin(a) * 16); ctx.stroke();
+      ctx.fillStyle = "#ffe066"; ctx.font = "9px monospace"; ctx.textAlign = "center";
+      ctx.fillText(Math.ceil(pl.t) + "s", pl.x, pl.y + 24);
+    }
+  }
+
   // Expanding nova rings (gold) and lobbed telegraphs (red, pending).
   function drawRings() {
     const ctx = C.ctx;
@@ -468,8 +501,18 @@
     drawDepthPill(room);
 
     drawWalls(room);
+    // Scorch marks where machines died.
+    for (const s of (room.scorch || [])) {
+      ctx.globalAlpha = Math.max(0, 0.5 - (s.age || 0) * 0.025);
+      ctx.fillStyle = "#050505";
+      ctx.beginPath();
+      ctx.ellipse(s.x, s.y, 34, 22, 0, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.globalAlpha = 1;
     drawMachines(room, C.nearestMachine(false));
     drawPickups(room);
+    drawPlaced(room);
     drawGuards(room);
     drawRings();
 

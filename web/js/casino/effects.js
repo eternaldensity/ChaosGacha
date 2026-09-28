@@ -104,6 +104,20 @@
         blurb: "summon " + (stationary ? "turret" : "ally") + " for " + Math.round(20 + r * 2) + "s",
       };
     }
+    if (/salvage|scrap|dismantle|recycle|strip for parts|chop shop/i.test(nm)) {
+      return {
+        name: res.name, rarity: r, op: "salvage",
+        cd: C.slotCd(6, r), cdLeft: 0,
+        blurb: "scrap nearest machine into bonus parts",
+      };
+    }
+    if (/tinker|engineer|\bbuild\b|craft|gadget|contraption|workshop|blueprint|repair|invention|\bdevice\b|machinist/i.test(nm)) {
+      return {
+        name: res.name, rarity: r, op: "tinker", power: C.rigTierFor(r),
+        cd: C.slotCd(3, r), cdLeft: 0,
+        blurb: "build rigs up to " + C.rigTierFor(r) + " from parts",
+      };
+    }
     if (/laser|disintegrat|annihilat|death.?ray|solar.?ray|lunar.?ray|heat.?vision|\bray\b|lightlance/i.test(nm)) {
       const power = 2 + Math.floor(r / 2);
       return {

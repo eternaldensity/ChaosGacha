@@ -179,6 +179,7 @@
     C.updateProjectiles(dt);
     C.updateFx(dt);
     C.updateTempWalls(dt);
+    C.updatePlaced(dt);
     updateWaves(dt, room);
     for (const f of C.floaters) f.t -= dt;
     C.floaters = C.floaters.filter(f => f.t > 0);

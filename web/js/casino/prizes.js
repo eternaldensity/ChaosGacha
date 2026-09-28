@@ -28,6 +28,13 @@
         return "Volatile " + res.name + ": it detonates on touch! Guards nearby eat " +
           (2 + Math.floor(r / 2)) + " fire damage.";
       }
+      if (/scrap|junk|spare parts|toolkit|wrench|gears|screwdriver|toolbox|duct tape/i.test(nm)) {
+        const amt = 2 + Math.floor(r / 2);
+        p.parts += amt;
+        C.noteBuild(res.name.slice(0, 18) + ": +" + amt + "🧩");
+        C.floater(p.x, p.y - 24, "+" + amt + " 🧩 parts", "#ffe066");
+        return "Scrapped " + res.name + ": +" + amt + " parts. Tinkers spend them on rigs.";
+      }
       if (/decoy|bait|lure|smoke/i.test(nm)) {
         p.cloakT = 5 + r * 0.3;
         C.noteBuild(res.name.slice(0, 18) + ": cloak " + p.cloakT.toFixed(0) + "s");

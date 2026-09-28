@@ -47,6 +47,57 @@
     C.updateHud();
   };
 
+  // Tinker build menu: spend parts on a rig placed in front of you.
+  C.buildOptions = function (ab) {
+    const p = C.G.p;
+    const maxTier = ab.power; // tier id, e.g. "gold"
+    const maxIdx = C.tierIdx(maxTier);
+    const opts = [];
+    for (let i = 0; i <= Math.min(maxIdx, 5); i++) {
+      const t = C.TIERS[i];
+      opts.push({ kind: "slot", tier: t.id, label: t.label + " Slot Rig",
+        cost: (i + 1) * 2, ok: p.parts >= (i + 1) * 2 });
+      opts.push({ kind: "gacha", tier: t.id, label: t.label + " Gacha Rig",
+        cost: (i + 1) * 2, ok: p.parts >= (i + 1) * 2 });
+    }
+    opts.push({ kind: "turret", label: "Sentry Turret (60s)", cost: 5, ok: p.parts >= 5 });
+    opts.push({ kind: "barricade", label: "Barricade (45s)", cost: 4, ok: p.parts >= 4 });
+    return opts;
+  };
+
+  C.buildPick = function (idx) {
+    const G = C.G, mode = G.draft;
+    if (!mode || mode.kind !== "build") return;
+    const opt = C.buildOptions(mode.ab)[idx];
+    if (!opt || !opt.ok) return;
+    const p = G.p;
+    p.parts -= opt.cost;
+    const room = C.curRoom();
+    const px = Math.max(70, Math.min(C.W - 70, p.x + Math.cos(p.facing) * 64));
+    const py = Math.max(70, Math.min(C.H - 70, p.y + Math.sin(p.facing) * 64));
+    if (opt.kind === "slot" || opt.kind === "gacha") {
+      const t = C.tierById(opt.tier);
+      room.machines.push({
+        id: 900 + room.machines.length, kind: opt.kind, tier: t.id, color: t.color,
+        pull: null, hp: 3 + C.tierIdx(t.id), playerMade: true,
+        idleSyms: ["◈", "◈", "◈"], lastPrize: null,
+        cat: opt.kind === "gacha" ? "random" : null,
+        x: px, y: py,
+      });
+    } else if (opt.kind === "turret") {
+      room.placed.push({ kind: "turret", x: px, y: py, t: 60, cd: 0,
+        dmg: Math.max(2, Math.round(mode.ab.rarity)) });
+    } else if (opt.kind === "barricade") {
+      const horiz = Math.abs(Math.cos(p.facing)) <= Math.abs(Math.sin(p.facing));
+      const w = horiz ? 110 : 16, h = horiz ? 16 : 110;
+      room.tempWalls.push({ x: px - w / 2, y: py - h / 2, w, h, t: 45, barricade: true });
+    }
+    mode.ab.cdLeft = mode.ab.cd;
+    C.floater(px, py - 44, "🔧 " + opt.label, "#ffe066");
+    C.closeDraft();
+    C.updateHud();
+  };
+
   // Manage mode: choose a stashed ability first, then a slot.
   C.draftPickStash = function (idx) {
     const G = C.G;
@@ -65,7 +116,19 @@
       if (cls) d.className = cls;
       return d;
     };
-    if (mode.kind === "new") {
+    if (mode.kind === "build") {
+      box.appendChild(el("p", "🔧 " + mode.ab.name + " — parts: " + C.G.p.parts +
+        "🧩. Builds up to " + mode.ab.power + ". Placed in front of you."));
+      C.buildOptions(mode.ab).forEach((o, i) => {
+        const b = el("button", (o.ok ? "Build " : "Need " + o.cost + "🧩: ") +
+          o.label + " (" + o.cost + "🧩)", "draftBtn" + (o.ok ? "" : " dim"));
+        if (o.ok) b.addEventListener("click", () => C.buildPick(i));
+        box.appendChild(b);
+      });
+      const done = el("button", "Done (Esc)", "draftBtn dim");
+      done.addEventListener("click", () => C.closeDraft());
+      box.appendChild(done);
+    } else if (mode.kind === "new") {
       box.appendChild(el("p", "Slots full! New pull: " + abLine(mode.ab)));
       box.appendChild(el("p", "Take it into a slot (old power stashes), or keep your loadout:", "small"));
       G.p.slots.forEach((s, i) => {
@@ -100,6 +163,7 @@
       done.addEventListener("click", () => C.closeDraft());
       box.appendChild(done);
     }
-    C.ui.draftTitle.textContent = mode.kind === "new" ? "🎰 Slots full — draft!" : "🎒 Stash manager";
+    C.ui.draftTitle.textContent = mode.kind === "build" ? "🔧 Tinker bench"
+      : mode.kind === "new" ? "🎰 Slots full — draft!" : "🎒 Stash manager";
   }
 })(window.Casino);

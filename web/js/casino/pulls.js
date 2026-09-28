@@ -198,6 +198,9 @@
         p.tickets[pk.tier] = (p.tickets[pk.tier] || 0) + 1;
         const t = C.tierById(pk.tier);
         C.floater(p.x, p.y - 24, "+1 🎟 " + pk.tier, t.color);
+      } else if (pk.kind === "parts") {
+        p.parts += pk.amount;
+        C.floater(p.x, p.y - 24, "+" + pk.amount + " 🧩 parts", "#ffe066");
       } else if (pk.kind === "prize") {
         const res = pk.res;
         const note = C.applyPrize(res);
