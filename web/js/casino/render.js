@@ -254,10 +254,13 @@
 
   function drawGuards(room) {
     const ctx = C.ctx;
+    const BODY = { guard: "#111", pitboss: "#3a2a5a", enforcer: "#5a1a1a",
+      bruiser: "#4a2a12", stalker: "#1a3a3a", hexer: "#2a1a4a", medic: "#1a3a1a",
+      captain: "#4a3a0a", handler: "#3a2a1a", hound: "#222",
+      warlord: "#4a0a0a", collector: "#3a0a0a", roller: "#3a2f0a" };
     for (const gd of room.guards) {
-      const sc = gd.size || 1; // the Collector is bigger than you
-      ctx.fillStyle = gd.type === "collector" ? "#3a0a0a" : gd.type === "roller" ? "#3a2f0a"
-        : gd.type === "enforcer" ? "#5a1a1a" : gd.type === "pitboss" ? "#3a2a5a" : "#111";
+      const sc = gd.size || 1; // bosses (and hounds) break the mold
+      ctx.fillStyle = BODY[gd.type] || "#111";
       ctx.fillRect(gd.x - 9 * sc, gd.y - 12 * sc, 18 * sc, 24 * sc);
       ctx.fillStyle = "#e8c39e"; ctx.fillRect(gd.x - 6 * sc, gd.y - 18 * sc, 12 * sc, 8 * sc); // head
       ctx.fillStyle = "#000"; ctx.fillRect(gd.x - 6 * sc, gd.y - 16 * sc, 12 * sc, 3 * sc); // shades
@@ -284,6 +287,13 @@
         ctx.fillStyle = "#c77dff"; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
         ctx.fillText("⁉", gd.x, gd.y - 32);
       }
+      // Rank glyphs: bruiser B, medic +, captain ★, handler ?, warlord ♛.
+      const GLYPH = { bruiser: ["B", "#c98a4a"], medic: ["+", "#11d939"],
+        captain: ["★", "#ffe066"], handler: ["?", "#ff9c41"], warlord: ["♛", "#ff5555"] }[gd.type];
+      if (GLYPH) {
+        ctx.fillStyle = GLYPH[1]; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
+        ctx.fillText(GLYPH[0], gd.x, gd.y - 32);
+      }
       // Elite affix glyph: shielded ◈, elemental ✦ (element color), charger ».
       if (gd.affix === "shielded") {
         ctx.fillStyle = "#8b93a3"; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
@@ -292,7 +302,7 @@
         ctx.fillStyle = gd.element === "fire" ? "#ff8c00" : "#aed1d1";
         ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
         ctx.fillText("✦", gd.x, gd.y - 32);
-      } else if (gd.affix === "charger") {
+      } else if (gd.affix === "charger" && gd.type !== "warlord") {
         ctx.fillStyle = gd.teleT > 0 && Math.floor(C.G.t * 10) % 2 === 0 ? "#ff2222" : "#f7d40a";
         ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
         ctx.fillText("»", gd.x, gd.y - 32);

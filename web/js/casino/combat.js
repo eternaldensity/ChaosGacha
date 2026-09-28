@@ -506,8 +506,17 @@
     const room = C.curRoom();
     room.guards = room.guards.filter(g => g !== gd);
     C.G.kills++;
-    if (gd.type === "roller") {
+    if (gd.type === "warlord") {
       const mk = (data) => room.pickups.push(Object.assign(
+        { x: gd.x, y: gd.y, bob: Math.random() * 6, age: 0 }, data));
+      mk({ kind: "coins", amount: 50 + room.depth * 8 });
+      mk({ kind: "ticket", tier: "gold" });
+      mk({ kind: "parts", amount: 3 });
+      C.showCard("♛ WARLORD DOWN",
+        "The pack scatters: +" + (50 + room.depth * 8) + " coins, gold ticket, parts.",
+        "", 4000);
+    }
+    if (gd.type === "roller") {      const mk = (data) => room.pickups.push(Object.assign(
         { x: gd.x, y: gd.y, bob: Math.random() * 6, age: 0 }, data));
       mk({ kind: "coins", amount: 40 + room.depth * 8 });
       mk({ kind: "ticket", tier: "gold" });
@@ -552,7 +561,9 @@
       return;
     }
     // The house pays bounties: rank + danger scale the drop.
-    const bounty = { guard: [2, 5], pitboss: [4, 8], enforcer: [6, 11] }[gd.type];
+    const bounty = { guard: [2, 5], pitboss: [4, 8], enforcer: [6, 11],
+      bruiser: [5, 9], stalker: [3, 6], hexer: [5, 9], medic: [4, 7],
+      captain: [8, 13], handler: [6, 10], hound: [1, 3] }[gd.type];
     if (bounty) {
       const amt = bounty[0] + Math.floor(Math.random() * (bounty[1] - bounty[0] + 1)) +
         Math.floor(room.danger / 3);
@@ -721,8 +732,80 @@
       if (!gd.pacified && !gd.chase &&
           (d < gd.sight * (1 - (C.G.p.presence || 0)) * (C.G.p.sightMult || 1) || room.alert > 0)) gd.chase = true;
       if (!gd.chase) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
-      const mult = (p.rollT > 0 ? 0.7 : 1) * st.mult;
+      // Captain's rally aura: nearby coworkers hustle (+25% speed).
+      let aura = 1;
+      if (gd.type !== "captain") {
+        for (const c of room.guards) {
+          if (c.type !== "captain" || (c.possessed && c.possessed > 0)) continue;
+          if (Math.hypot(c.x - gd.x, c.y - gd.y) < 220) { aura = 1.25; break; }
+        }
+      }
+      const mult = (p.rollT > 0 ? 0.7 : 1) * st.mult * aura;
       if (st.stunned) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
+      // Medics cower and mend: flee the player, patch up the pack.
+      if (gd.type === "medic") {
+        if (d < 170) {
+          const ma = Math.atan2(gd.y - p.y, gd.x - p.x);
+          gd.x += Math.cos(ma) * gd.speed * mult * dt;
+          gd.y += Math.sin(ma) * gd.speed * mult * dt;
+          const fixed = C.collideCircle(gd.x, gd.y, 9, C.solids(room));
+          gd.x = fixed[0]; gd.y = fixed[1];
+        }
+        gd.healCd -= dt;
+        if (gd.healCd <= 0) {
+          let healed = false;
+          for (const o of room.guards) {
+            if (o === gd || o.hp >= (o.maxHp || o.hp)) continue;
+            if (Math.hypot(o.x - gd.x, o.y - gd.y) > 220) continue;
+            o.hp = Math.min(o.maxHp || o.hp, o.hp + 2);
+            healed = true;
+          }
+          if (healed) C.floater(gd.x, gd.y - 30, "+2", "#11d939");
+          gd.healCd = 3;
+        }
+        hurtTouch(gd, p, d);
+        if (gd.atkCd > 0) gd.atkCd -= dt;
+        continue;
+      }
+      // Handlers skirmish at range and whistle up hounds (max 2 live).
+      if (gd.type === "handler") {
+        const ha = Math.atan2(gd.y - p.y, gd.x - p.x);
+        if (d < 160 || d > 380) {
+          const dir = d < 160 ? 1 : -0.6;
+          gd.x += Math.cos(ha) * gd.speed * dir * mult * dt;
+          gd.y += Math.sin(ha) * gd.speed * dir * mult * dt;
+          const fixed = C.collideCircle(gd.x, gd.y, 9, C.solids(room));
+          gd.x = fixed[0]; gd.y = fixed[1];
+        }
+        gd.sumCd -= dt;
+        if (gd.sumCd <= 0) {
+          const hounds = room.guards.filter(o => o.type === "hound").length;
+          if (hounds < 2) {
+            room.guards.push({ x: gd.x, y: gd.y, hp: 2, maxHp: 2, speed: 190,
+              sight: 240, atkCd: 0, chase: true, ranged: false, type: "hound",
+              touchDmg: 1, size: 0.7, statuses: {}, affix: null, affix2: null,
+              shield: 0, element: null, teleT: 0, dashT: 0, dashCd: 9, dashDx: 0, dashDy: 0,
+              healCd: 0, sumCd: 0, rallyCd: 0 });
+            C.floater(gd.x, gd.y - 30, "yelp!", "#ff9c41");
+          }
+          gd.sumCd = 8;
+        }
+        hurtTouch(gd, p, d);
+        if (gd.atkCd > 0) gd.atkCd -= dt;
+        continue;
+      }
+      // Warlords bellow rally: patch up the pack every few seconds.
+      if (gd.type === "warlord") {
+        gd.rallyCd -= dt;
+        if (gd.rallyCd <= 0) {
+          gd.rallyCd = 6;
+          for (const o of room.guards) {
+            if (o === gd || Math.hypot(o.x - gd.x, o.y - gd.y) > 230) continue;
+            if (o.hp < (o.maxHp || o.hp)) o.hp = Math.min(o.maxHp || o.hp, o.hp + 3);
+          }
+          C.floater(gd.x, gd.y - 36, "RALLY!", "#ff5555");
+        }
+      }
       if (C.hasAffix(gd, "charger")) {
         gd.dashCd -= dt;
         if (gd.dashT > 0) {

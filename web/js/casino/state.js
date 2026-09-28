@@ -274,6 +274,8 @@
   // (fast skirmisher haunting deep vaults). Both pay out in loot showers.
   C.makeBoss = function (room, danger, depth, kind) {
     const b = C.makeGuard(room, danger, true);
+    b.affix2 = null;
+    b.element = null;
     b.sight = 999;
     b.ranged = true;
     b.chase = true;
@@ -296,6 +298,7 @@
       b.touchDmg = 2;
       b.size = 1.6;
     }
+    b.maxHp = b.hp;
     return b;
   };
 
@@ -303,23 +306,82 @@
     return gd.affix === name || gd.affix2 === name;
   };
 
-  C.makeGuard = function (room, danger, forceElite) {
-    const elite = !!forceElite || (C.G.threat >= 3 && Math.random() < 0.35);
-    const fast = C.G.threat >= 2 && Math.random() < 0.4;
-    // Threat-gated affixes: chargers run you down, elementals burn/frost
-    // on touch, shieldeds soak damage first.
-    const th = C.G.threat;
-    let affix = null, shield = 0, element = null;
-    if (th >= 4 && Math.random() < 0.25) {
-      affix = "shielded"; shield = 3 + Math.floor(danger);
-    } else if (th >= 3 && Math.random() < 0.3) {
-      affix = "elemental"; element = Math.random() < 0.5 ? "fire" : "frost";
-    } else if (th >= 2 && Math.random() < 0.3) {
-      affix = "charger";
+  // Rank director: weighted type pool by threat/danger. Unique supports
+  // (medic/captain/handler) and the warlord are capped per room.
+  // Returned pool is [type, weight] pairs (exposed for tests).
+  C.guardPool = function (room, danger) {
+    const T = C.G.threat;
+    const has = t => room.guards.some(g => g.type === t);
+    const pool = [["guard", 10]];
+    if (danger >= 2 || T >= 1) pool.push(["pitboss", 4]);
+    if (T >= 1) pool.push(["bruiser", 3]);
+    if (T >= 2) { pool.push(["stalker", 3]); pool.push(["enforcer", 3]); }
+    if (T >= 3) {
+      pool.push(["hexer", 2]);
+      if (!has("medic")) pool.push(["medic", 1]);
     }
-    // Threat 4+: elites double up.
-    let affix2 = null;
-    if (th >= 4 && affix && Math.random() < 0.3) {
+    if (T >= 4) {
+      if (!has("captain")) pool.push(["captain", 1]);
+      if (!has("handler")) pool.push(["handler", 1]);
+    }
+    if (T >= 5 && !room.guards.some(g => g.type === "warlord" || g.type === "collector")) {
+      pool.push(["warlord", 1]);
+    }
+    return pool;
+  };
+
+  C.pickGuardType = function (room, danger) {
+    const pool = C.guardPool(room, danger);
+    let tot = 0;
+    for (const [, w] of pool) tot += w;
+    let r = Math.random() * tot;
+    for (const [t, w] of pool) {
+      r -= w;
+      if (r <= 0) return t;
+    }
+    return "guard";
+  };
+
+  // Kit table: each rank is a trait/ability/skill/item/familiar-style combo.
+  // bruiser = tough + heavy hands; stalker = swift + charge; hexer = ranged
+  // elemental caster; medic = cowardly healer; captain = aura buffer;
+  // handler = cowardly summoner; hound = fast pet; warlord = miniboss.
+  C.makeGuard = function (room, danger, forceElite) {
+    const th = C.G.threat;
+    const type = forceElite ? "enforcer" : C.pickGuardType(room, danger);
+    const KITS = {
+      guard:    { hp: 2, spd: 118, sight: 215, touch: 1 },
+      pitboss:  { hp: 3, spd: 150, sight: 230, touch: 1 },
+      bruiser:  { hp: 6, spd: 100, sight: 200, touch: 2 },
+      stalker:  { hp: 3, spd: 175, sight: 240, touch: 1, affix: "charger" },
+      enforcer: { hp: 4, spd: 118, sight: 260, touch: 1, ranged: true },
+      hexer:    { hp: 4, spd: 110, sight: 280, touch: 1, ranged: true, affix: "elemental" },
+      medic:    { hp: 4, spd: 105, sight: 200, touch: 1, support: true },
+      captain:  { hp: 10, spd: 115, sight: 240, touch: 1, support: true },
+      handler:  { hp: 6, spd: 120, sight: 240, touch: 1, support: true },
+      hound:    { hp: 2, spd: 190, sight: 240, touch: 1, size: 0.7 },
+      warlord:  { hp: 25, spd: 120, sight: 999, touch: 2, affix: "charger", ranged: false },
+    };
+    const kit = KITS[type] || KITS.guard;
+    const hp = kit.hp + (type === "bruiser" || type === "captain"
+      ? Math.floor(danger / 2) : type === "warlord" ? room.depth * 4 : Math.floor(danger / 3));
+    // Threat-gated affixes for combat ranks (fixed kits keep their own).
+    let affix = kit.affix || null, affix2 = null;
+    let shield = 0, element = null;
+    if (type === "hexer") element = ["fire", "frost", "venom"][Math.floor(Math.random() * 3)];
+    if (type === "warlord") shield = 8;
+    const affixable = ["guard", "pitboss", "bruiser", "stalker", "enforcer"].includes(type);
+    if (!affix && affixable) {
+      if (th >= 4 && Math.random() < 0.25) {
+        affix = "shielded"; shield = 3 + Math.floor(danger);
+      } else if (th >= 3 && Math.random() < 0.3) {
+        affix = "elemental"; element = Math.random() < 0.5 ? "fire" : "frost";
+      } else if (th >= 2 && Math.random() < 0.3) {
+        affix = "charger";
+      }
+    }
+    // Threat 4+: combat ranks double up.
+    if (th >= 4 && affix && (affixable || type === "hexer") && Math.random() < 0.3) {
       const seconds = affix === "elemental" ? ["charger", "shielded"] : ["charger", "shielded", "elemental"];
       affix2 = seconds[Math.floor(Math.random() * seconds.length)];
       if (affix2 === "shielded") shield += 3;
@@ -328,12 +390,14 @@
     return {
       x: C.WALL + 60 + Math.random() * (C.W - C.WALL * 2 - 120),
       y: C.WALL + 110 + Math.random() * (C.H - C.WALL * 2 - 220),
-      hp: (elite ? 5 : 2) + Math.floor(danger / 3) + (fast ? 1 : 0),
-      speed: (fast ? 150 : 118) + danger * 6 + C.G.threat * 7,
-      sight: 215 + danger * 12, atkCd: 0, chase: false, ranged: elite,
-      type: elite ? "enforcer" : fast ? "pitboss" : "guard",
+      hp, maxHp: hp,
+      speed: kit.spd + danger * 6 + th * 7,
+      sight: kit.sight + danger * 8, atkCd: 0, chase: false,
+      ranged: !!kit.ranged, type,
+      touchDmg: kit.touch, size: kit.size || 1,
       statuses: {}, affix, affix2, shield, element,
       teleT: 0, dashT: 0, dashCd: 2, dashDx: 0, dashDy: 0,
+      healCd: 0, sumCd: 3, rallyCd: 4,
     };
   };
 
