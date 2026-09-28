@@ -5,6 +5,7 @@
   C.rooms = new Map();
   C.projs = [];
   C.floaters = [];
+  C.rings = [];
   C.keys = {};
   C.G = null;
   let attackQueued = false;
@@ -50,6 +51,7 @@
     C.rooms.clear();
     C.projs.length = 0;
     C.floaters.length = 0;
+    C.rings.length = 0;
     C.getRoom(0, 0);
     C.hideDeath();
     C.updateHud();
@@ -207,6 +209,17 @@
   C.makeGuard = function (room, danger) {
     const elite = C.G.threat >= 3 && Math.random() < 0.35;
     const fast = C.G.threat >= 2 && Math.random() < 0.4;
+    // Threat-gated affixes: chargers run you down, elementals burn/frost
+    // on touch, shieldeds soak damage first.
+    const th = C.G.threat;
+    let affix = null, shield = 0, element = null;
+    if (th >= 4 && Math.random() < 0.25) {
+      affix = "shielded"; shield = 3 + Math.floor(danger);
+    } else if (th >= 3 && Math.random() < 0.3) {
+      affix = "elemental"; element = Math.random() < 0.5 ? "fire" : "frost";
+    } else if (th >= 2 && Math.random() < 0.3) {
+      affix = "charger";
+    }
     return {
       x: C.WALL + 60 + Math.random() * (C.W - C.WALL * 2 - 120),
       y: C.WALL + 110 + Math.random() * (C.H - C.WALL * 2 - 220),
@@ -214,6 +227,8 @@
       speed: (fast ? 150 : 118) + danger * 6 + C.G.threat * 7,
       sight: 215 + danger * 12, atkCd: 0, chase: false, ranged: elite,
       type: elite ? "enforcer" : fast ? "pitboss" : "guard",
+      statuses: {}, affix, shield, element,
+      teleT: 0, dashT: 0, dashCd: 2, dashDx: 0, dashDy: 0,
     };
   };
 

@@ -231,6 +231,34 @@
         ctx.fillStyle = "#ff2222"; ctx.font = "bold 14px monospace"; ctx.textAlign = "center";
         ctx.fillText("!", gd.x, gd.y - 24);
       }
+      // Elite affix glyph: shielded ◈, elemental ✦ (element color), charger ».
+      if (gd.affix === "shielded") {
+        ctx.fillStyle = "#8b93a3"; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
+        ctx.fillText("◈", gd.x, gd.y - 32);
+      } else if (gd.affix === "elemental") {
+        ctx.fillStyle = gd.element === "fire" ? "#ff8c00" : "#aed1d1";
+        ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
+        ctx.fillText("✦", gd.x, gd.y - 32);
+      } else if (gd.affix === "charger") {
+        ctx.fillStyle = gd.teleT > 0 && Math.floor(C.G.t * 10) % 2 === 0 ? "#ff2222" : "#f7d40a";
+        ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
+        ctx.fillText("»", gd.x, gd.y - 32);
+      }
+      // Charger telegraph: flashing outline while winding up.
+      if (gd.teleT > 0 && Math.floor(C.G.t * 10) % 2 === 0) {
+        ctx.strokeStyle = "#ff2222"; ctx.lineWidth = 2;
+        ctx.strokeRect(gd.x - 12, gd.y - 21, 24, 30);
+      }
+      // Burning guards flicker orange.
+      if (gd.statuses.burn && gd.statuses.burn.t > 0 && Math.floor(C.G.t * 8) % 2 === 0) {
+        ctx.fillStyle = "rgba(255,140,0,.45)";
+        ctx.fillRect(gd.x - 9, gd.y - 12, 18, 24);
+      }
+      if (gd.shield > 0) {
+        ctx.fillStyle = "#400"; ctx.fillRect(gd.x - 10, gd.y - 32, 20, 3);
+        ctx.fillStyle = "#7df9ff";
+        ctx.fillRect(gd.x - 10, gd.y - 32, 20 * Math.max(0, gd.shield) / 10, 3);
+      }
       ctx.fillStyle = "#400"; ctx.fillRect(gd.x - 10, gd.y - 28, 20, 3);
       ctx.fillStyle = "#f66";
       ctx.fillRect(gd.x - 10, gd.y - 28, 20 * Math.max(0, gd.hp) / 6, 3);
@@ -365,6 +393,20 @@
     ctx.textBaseline = "alphabetic";
   }
 
+  // Expanding nova rings.
+  function drawRings() {
+    const ctx = C.ctx;
+    for (const rg of C.rings) {
+      const f = rg.age / rg.max;
+      ctx.globalAlpha = Math.max(0, 0.8 - f * 0.8);
+      ctx.strokeStyle = "#ffe066"; ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(rg.x, rg.y, Math.max(1, rg.r * f), 0, Math.PI * 2);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+
   C.render = function () {
     const ctx = C.ctx, room = C.curRoom(), p = C.G.p;
     ctx.save();
@@ -386,6 +428,7 @@
     drawMachines(room, C.nearestMachine(false));
     drawPickups(room);
     drawGuards(room);
+    drawRings();
 
     for (const pr of C.projs) {
       ctx.fillStyle = pr.foe ? "#ff5555" : "#ffe066";

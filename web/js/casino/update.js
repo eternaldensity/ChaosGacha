@@ -77,6 +77,16 @@
     if (C.G.shake > 0) C.G.shake -= dt;
     room.alert = Math.max(0, room.alert - dt);
 
+    // Player statuses: burn seeps through invulnerability, slow drags movement.
+    const ps = p.statuses;
+    if (ps.burn && ps.burn.t > 0) {
+      ps.burn.t -= dt;
+      p.hp -= ps.burn.power * dt;
+      if (p.hp <= 0) { C.die(); C.updateHud(); return; }
+    }
+    let spd = p.speed;
+    if (ps.slow && ps.slow.t > 0) { spd *= ps.slow.power; ps.slow.t -= dt; }
+
     // Timed feats.
     if (!C.G.feats.pacifist && C.G.t > 300 && C.G.kills === 0) {
       C.G.feats.pacifist = 1;
@@ -93,8 +103,8 @@
     let [mx, my] = moveInput();
     if (mx || my) {
       const l = Math.hypot(mx, my); mx /= l; my /= l;
-      p.x += mx * p.speed * dt;
-      p.y += my * p.speed * dt;
+      p.x += mx * spd * dt;
+      p.y += my * spd * dt;
       p.facing = Math.atan2(my, mx);
     }
     if (C.keys[" "] && p.rollCd <= 0 && (mx || my)) { p.rollT = 0.32; p.rollCd = 5; }
@@ -128,6 +138,7 @@
     C.updateGuards(dt);
     C.updatePets(dt);
     C.updateProjectiles(dt);
+    C.updateRings(dt);
     updateWaves(dt, room);
     for (const f of C.floaters) f.t -= dt;
     C.floaters = C.floaters.filter(f => f.t > 0);

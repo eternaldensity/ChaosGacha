@@ -15,9 +15,9 @@
     const bonus = 1 + (r - 1) * 0.08;
     if (cat === "item" && /gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer/i.test(nm)) {
       const ranged = /gun|rifle|pistol|launcher|blaster|bow|cannon|card|chip/i.test(nm);
-      p.weapon = { name: res.name, ranged, dmg: Math.max(1, Math.round(r / 2)) + (ranged ? 0 : 1) };
+      p.weapon = { name: res.name, ranged, dmg: Math.max(1, Math.round(r / 2)) + (ranged ? 0 : 1), element: C.weaponElement(res.name) };
       p.dmg = p.weapon.dmg;
-      C.noteBuild("🔫 " + res.name + " (" + p.dmg + " dmg" + (ranged ? ", ranged" : ", melee") + ")");
+      C.noteBuild("🔫 " + res.name + " (" + p.dmg + " dmg" + (ranged ? ", ranged" : ", melee") + (p.weapon.element ? ", " + p.weapon.element : "") + ")");
       return "Weapon equipped: " + res.name + " (" + p.dmg + " dmg" +
         (ranged ? ", ranged" : ", melee") + "). J/click to fight back — Threat will rise.";
     }
