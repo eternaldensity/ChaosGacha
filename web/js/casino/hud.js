@@ -34,6 +34,22 @@
     const mf = Math.max(0, Math.min(1, p.mana / C.manaMax()));
     const mb = C.el("manabar").firstChild;
     if (mb) mb.style.width = (mf * 100).toFixed(1) + "%";
+    const n = C.maxSlots();
+    let abits = "";
+    for (let i = 0; i < n; i++) {
+      const ab = p.slots[i];
+      if (!ab) {
+        abits += "<span class='tick'>[" + C.SLOT_KEYS[i] + "] —</span>";
+        continue;
+      }
+      const cost = C.MANA_COSTS[ab.op] || 0;
+      const cooling = ab.cdLeft > 0;
+      const broke = p.mana < cost;
+      abits += "<span class='tick" + (cooling ? " cool" : "") + "'>[" + C.SLOT_KEYS[i] + "] " +
+        esc(ab.name) + " (" + ab.op + (ab.element ? "/" + ab.element : "") + ") " +
+        (cooling ? ab.cdLeft.toFixed(1) + "s · " : "") + (broke ? "drained" : cost + "⚡") + "</span>";
+    }
+    C.el("actives").innerHTML = abits;
     C.el("tickets").innerHTML = C.TIERS.map(t =>
       "<span class='tick' style='border-color:" + t.color + "'>" +
       t.label.slice(0, 4) + "×" + (p.tickets[t.id] || 0) + "</span>").join("");

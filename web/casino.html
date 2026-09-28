@@ -26,9 +26,11 @@
   #stage { position: relative; }
   canvas#game { width: 100%; border-radius: 10px; background:#0b0d12; border:1px solid var(--line);
     image-rendering: pixelated; display:block; }
-  #card { position:absolute; left:12px; bottom:12px; display:none; z-index:9;
-    background:#10131a; border:1px solid var(--accent); border-radius:10px; padding:8px 10px; max-width:320px; }
-  #card.show { display:block; }
+  #card { visibility:hidden; min-height:66px; margin:8px 0 0;
+    background:#10131a; border:1px solid var(--accent); border-radius:10px; padding:8px 12px; }
+  #card.show { visibility:visible; }
+  #actives { display:flex; gap:6px; flex-wrap:wrap; margin:0 0 6px; font-size:.8rem; }
+  #actives .cool { border-color:#f66; }
   #card h3 { margin:0 0 4px; font-size:1rem; }
   #card p { margin:4px 0; font-size:.88rem; }
   #title { position:absolute; inset:0; z-index:8; background:rgba(5,6,12,.88);
@@ -106,6 +108,7 @@
   <div id="tickets"></div>
   <div id="build" title="Everything your prizes do, in one place"></div>
   <div id="satchel" title="Consumables: Q uses the selected stack, C cycles"></div>
+  <div id="actives" title="Slotted powers: J/K/L (or left-click for J)"></div>
   <div id="stage">
     <canvas id="game" width="960" height="540"></canvas>
     <div id="title"><div class="tbox">
@@ -167,7 +170,6 @@
       </div></div>
       <button id="startBtn" tabindex="-1">Take the coins (Enter)</button>
     </div></div>
-    <div id="card"><h3 id="cardTitle"></h3><p id="cardBody"></p><p id="cardSub"></p></div>
     <div id="draft" class="hide"><div class="dbox"><h2 id="draftTitle">Draft</h2><div id="draftList"></div></div></div>
     <div id="death"><div class="deadbox"><h2>Soul collected.</h2><p id="deathStats"></p><p id="deathLegacy"></p>
       <div id="deathMachine" class="hide">
@@ -184,6 +186,7 @@
         <p id="deathCurses"></p>
       </div></div></div>
   </div>
+  <div id="card"><h3 id="cardTitle"></h3><p id="cardBody"></p><p id="cardSub"></p></div>
   <p id="help"><kbd>WASD</kbd> move · <kbd>E</kbd> start pull (walk away, come back for loot) ·
     <kbd>J</kbd>/LMB powers · <kbd>F</kbd>/RMB weapon · <kbd>Q</kbd>/<kbd>C</kbd> satchel · <kbd>M</kbd> mute · <kbd>R</kbd> respawn.
     Platinum needs depth 4+, Diamond 6+, Legendary 8+, Mythical 11+, Divine 14+.</p>
