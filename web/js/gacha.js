@@ -99,6 +99,7 @@ window.ChaosGacha = (function () {
       return {
         category: cat, name: e.name, rarity: e.r,
         source: e.s || "", description: cleanDesc(e.d),
+        meta: e.m || [],
         odds: 100 * hit.weight / weightsum, pull: Math.round(hit.pull * 10) / 10
       };
     }
@@ -130,7 +131,7 @@ window.ChaosGacha = (function () {
       pools.flatMap(p => p.pool.map(e => e.name))).size > 1;
     const items = [];
     const push = (e, c) => items.push(
-      { name: e.name, rarity: e.r, source: e.s || "", category: c });
+      { name: e.name, rarity: e.r, source: e.s || "", category: c, meta: e.m || [] });
     const prevName = () => items.length ? items[items.length - 1].name : null;
     // Uniform in-ticket-range pick, used when the weighted draw keeps
     // repeating: variety is mandatory for theater, exact odds are not.

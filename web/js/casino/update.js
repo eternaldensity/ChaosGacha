@@ -67,7 +67,11 @@
     if (p.atkCd > 0) p.atkCd -= dt;
     if (p.inv > 0) p.inv -= dt;
     if (p.rollCd > 0) p.rollCd -= dt;
-    if (p.rollT > 0) p.rollT -= dt;
+    if (p.rollT > 0) {
+      p.rollT -= dt;
+      if (p.rollT <= 0) { p.dashDx = null; p.dashDy = null; p.dashSpd = 0; }
+    }
+    for (const s of p.slots) if (s.cdLeft > 0) s.cdLeft -= dt;
     if (C.G.shake > 0) C.G.shake -= dt;
     room.alert = Math.max(0, room.alert - dt);
 
@@ -89,9 +93,16 @@
       const l = Math.hypot(mx, my); mx /= l; my /= l;
       p.x += mx * p.speed * dt;
       p.y += my * p.speed * dt;
+      p.facing = Math.atan2(my, mx);
     }
     if (C.keys[" "] && p.rollCd <= 0 && (mx || my)) { p.rollT = 0.32; p.rollCd = 5; }
-    if (p.rollT > 0) { p.x += mx * 260 * dt; p.y += my * 260 * dt; }
+    if (p.rollT > 0) {
+      const dx = p.dashDx != null ? p.dashDx : mx;
+      const dy = p.dashDy != null ? p.dashDy : my;
+      const sp = p.dashSpd || 260;
+      p.x += dx * sp * dt;
+      p.y += dy * sp * dt;
+    }
     const fixed = C.collideCircle(p.x, p.y, p.r, C.solids(room));
     p.x = fixed[0]; p.y = fixed[1];
 
@@ -104,7 +115,13 @@
     C.updatePulls(dt);
     C.updatePickups(dt);
 
-    if (C.takeAttack() && p.weapon) C.tryAttack();
+    // J/click: slot-1 power, else legacy weapon attack. K/L: slots 2-3.
+    if (C.takeAttack()) {
+      if (p.slots[0]) C.runActive(0);
+      else if (p.weapon) C.tryAttack();
+    }
+    if (C.keys["k"]) C.runActive(1);
+    if (C.keys["l"]) C.runActive(2);
 
     C.updateGuards(dt);
     C.updatePets(dt);

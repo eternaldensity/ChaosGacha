@@ -300,6 +300,44 @@
     ctx.textBaseline = "alphabetic";
   }
 
+  // Slotted powers bottom-center: key, name, cooldown or blurb.
+  function drawAbilityBar() {
+    const ctx = C.ctx, p = C.G.p;
+    const n = C.maxSlots();
+    const bw = 170, bh = 30, gap = 8;
+    const totalW = n * bw + (n - 1) * gap;
+    let x = C.W / 2 - totalW / 2;
+    const y = C.H - bh - 10;
+    ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    for (let i = 0; i < n; i++) {
+      const ab = p.slots[i];
+      ctx.fillStyle = "rgba(5,6,10,.85)";
+      rr(x, y, bw, bh, 6); ctx.fill();
+      ctx.strokeStyle = ab ? "#ffe066" : "#333a47"; ctx.lineWidth = 1; ctx.stroke();
+      ctx.fillStyle = "#ffe066"; ctx.font = "bold 11px monospace";
+      ctx.fillText("[" + C.SLOT_KEYS[i] + "]", x + 6, y + bh / 2);
+      ctx.font = "10px monospace";
+      ctx.fillStyle = ab ? "#fff" : "#555";
+      ctx.fillText(ab ? ab.name.slice(0, 20) : "— empty —", x + 32, y + 10);
+      if (ab) {
+        const cooling = ab.cdLeft > 0;
+        ctx.fillStyle = cooling ? "#ff8888" : "#8b93a3";
+        ctx.fillText(cooling ? ab.cdLeft.toFixed(1) + "s" : ab.blurb.slice(0, 26), x + 32, y + 21);
+        if (cooling) { // draining sweep shows remaining cooldown
+          ctx.fillStyle = "rgba(0,0,0,.55)";
+          const f = Math.min(1, ab.cdLeft / ab.cd);
+          rr(x, y, bw * f, bh, 6); ctx.fill();
+        }
+      }
+      x += bw + gap;
+    }
+    if (p.stash.length) {
+      ctx.fillStyle = "#8b93a3"; ctx.font = "10px monospace"; ctx.textAlign = "center";
+      ctx.fillText("+" + p.stash.length + " stashed", C.W / 2, y - 8);
+    }
+    ctx.textBaseline = "alphabetic";
+  }
+
   C.render = function () {
     const ctx = C.ctx, room = C.curRoom(), p = C.G.p;
     ctx.save();
@@ -340,6 +378,7 @@
       ctx.fillRect(p.x - 9, p.y + 12, 18, 3);
       ctx.globalAlpha = 1;
     }
+    drawAbilityBar();
     // Floaters (pickup feedback).
     ctx.textAlign = "center";
     for (const f of C.floaters) {

@@ -24,6 +24,33 @@
     }
   };
 
+  // Fire a slotted active power. Cooldown-gated; heal won't waste on full HP.
+  C.runActive = function (i) {
+    const p = C.G.p, ab = p.slots[i];
+    if (!ab || ab.cdLeft > 0 || C.G.over || C.G.title) return false;
+    if (ab.op === "bolt") {
+      const g = C.nearestGuard(460);
+      const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : p.facing;
+      C.projs.push({
+        x: p.x, y: p.y, vx: Math.cos(a) * 560, vy: Math.sin(a) * 560,
+        dmg: ab.power + (p.weapon ? 1 : 0), foe: false, life: 0.9, element: ab.element,
+      });
+    } else if (ab.op === "dash") {
+      p.dashDx = Math.cos(p.facing); p.dashDy = Math.sin(p.facing);
+      p.dashSpd = ab.power;
+      p.rollT = 0.3;
+    } else if (ab.op === "heal") {
+      if (p.hp >= p.maxHp) return false;
+      p.hp = Math.min(p.maxHp, p.hp + ab.power);
+      C.floater(p.x, p.y - 24, "+" + ab.power + " HP", "#11d939");
+    } else {
+      return false;
+    }
+    ab.cdLeft = ab.cd;
+    C.updateHud();
+    return true;
+  };
+
   C.nearestGuard = function (maxD) {
     let best = null, bd = maxD || 1e9;
     for (const gd of C.curRoom().guards) {

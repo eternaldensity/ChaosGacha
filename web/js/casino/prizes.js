@@ -4,6 +4,13 @@
 (function (C) {
   C.applyPrize = function (res) {
     const p = C.G.p, cat = res.category;
+    for (const mt of (res.meta || [])) {
+      const tm = /ticket-bonus:(\d+)/.exec(mt);
+      if (tm) {
+        p.discount = Math.min(0.4, p.discount + Number(tm[1]) / 500);
+        C.floater(p.x, p.y - 40, "meta: slot costs down!", "#ffe066");
+      }
+    }
     const nm = (res.name + " " + res.description).toLowerCase(), r = res.rarity;
     const bonus = 1 + (r - 1) * 0.08;
     if (cat === "item" && /gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer/i.test(nm)) {
@@ -13,10 +20,21 @@
       return "Weapon equipped: " + res.name + " (" + p.dmg + " dmg" +
         (ranged ? ", ranged" : ", melee") + "). J/click to fight back — Threat will rise.";
     }
-    if (cat === "ability" && /fire|flame|lightning|bolt|projectile|emit|kinesis|blast|beam/i.test(nm)) {
-      p.weapon = p.weapon || { name: res.name + " (zap)", ranged: true, dmg: Math.max(1, Math.round(r / 2)) };
-      p.dmg = Math.max(p.dmg, p.weapon.dmg);
-      return "Combat ability: " + res.name + ". You can now attack (J/click).";
+    if (cat === "ability") {
+      p.abilitiesOwned = (p.abilitiesOwned || 0) + 1;
+      const ab = C.compileAbility(res);
+      const opened = C.fillSlots();
+      const slotNote = opened ? " (+" + opened + " slot opened!)" : "";
+      if (ab) {
+        const key = C.equipAbility(ab);
+        if (key) {
+          return "Slotted [" + key + "]: " + ab.name + " — " + ab.blurb + "." + slotNote +
+            " (" + p.slots.length + "/" + C.maxSlots() + " slots; +1 per 5 abilities).";
+        }
+        return "Stashed: " + ab.name + " (" + ab.blurb + "). Slots full" + slotNote + ".";
+      }
+      // Unmatched abilities fall through to the essence fallback below.
+      if (opened) C.floater(p.x, p.y - 40, "+" + opened + " ability slot!", "#ffe066");
     }
     if (cat === "familiar") {
       const dmg = Math.max(1, Math.round(r / 3));

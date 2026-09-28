@@ -35,6 +35,8 @@
         speed: 165, coins: 100 + b.coins, tickets: blankTickets(),
         weapon: null, dmg: 1, range: 74, atkCd: 0, rollCd: 0, rollT: 0, inv: 0,
         pullMul: b.pullMul, discount: 0, pets: [],
+        slots: [], stash: [], abilitiesOwned: 0, facing: 0,
+        dashDx: null, dashDy: null, dashSpd: 0,
       },
       cardT: 0, shake: 0,
     };
