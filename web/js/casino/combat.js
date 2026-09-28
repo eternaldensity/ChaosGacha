@@ -20,7 +20,7 @@
       for (const off of angs) {
         C.projs.push({
           x: p.x, y: p.y, vx: Math.cos(a + off) * 520, vy: Math.sin(a + off) * 520,
-          dmg: C.playerDmg(p.dmg, p.weapon.element) + (p.rangedBonus || 0), foe: false, life: 0.8, element: p.weapon.element,
+          dmg: C.playerDmg(p.dmg, p.weapon.element) + (p.rangedBonus || 0), foe: false, life: 0.8, element: p.weapon.element, pierce: !!p.weapon.pierce,
         });
       }
     } else {
@@ -36,7 +36,7 @@
               gd.y + Math.sin(a) * p.weapon.knockback, 9, C.solids(room));
             gd.x = fx[0]; gd.y = fx[1];
           }
-          if (C.damageGuard(gd, dmg, p.weapon.element)) fed = true;
+          if (C.damageGuard(gd, dmg, p.weapon.element, false, p.weapon.pierce ? { pierce: true } : null)) fed = true;
         }
       }
       if (claws) {
@@ -268,13 +268,13 @@
 
   // Single choke point for guard damage: shields soak direct hits (dots seep
   // through), numbers pop, elements apply, death routes to killGuard.
-  C.damageGuard = function (gd, amt, element, isDot) {
+  C.damageGuard = function (gd, amt, element, isDot, opts) {
     if (gd.hp <= 0) return true;
     gd.statuses = gd.statuses || {};
     // Round only display-facing hits: per-frame DoT slices are fractional.
     if (!isDot) amt = Math.round(amt * 10) / 10;
     if (gd.statuses.weaken && gd.statuses.weaken.t > 0) amt *= 1.25;
-    if (!isDot && gd.shield > 0) {
+    if (!isDot && gd.shield > 0 && !(opts && opts.pierce)) {
       // Holy/light is shieldbreaking: double soak rate.
       const soak = element === "light" || element === "holy" ? amt * 2 : amt;
       const absorbed = Math.min(gd.shield, soak);
@@ -996,7 +996,7 @@
       } else {
         for (const gd of [...room.guards]) {
           if (Math.hypot(pr.x - gd.x, pr.y - gd.y) < 14) {
-            C.damageGuard(gd, pr.dmg, pr.element);
+            C.damageGuard(gd, pr.dmg, pr.element, false, pr.pierce ? { pierce: true } : null);
             hit = true;
             break;
           }

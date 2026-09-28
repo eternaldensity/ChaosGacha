@@ -2,6 +2,31 @@
 /* Prize -> gameplay effects (keyword mapping + rarity fallback).
  * Depends on: config, dom, state (runtime G). */
 (function (C) {
+// Shared: put a familiar prize into pets/stable. Used by prizes and taming.
+C.applyFamiliar = function (res) {
+  const p = C.G.p, r = res.rarity;
+  {
+    const dmg = Math.max(1, Math.round(r / 3)) + (p.petBonus || 0);
+    const role = C.petRole(res.name);
+    const pet = {
+      name: res.name, dmg, cd: 0, role,
+      cdMax: role === "medic" ? Math.max(8, 22 - r) : 1.1,
+    };
+    const roleBlurb = { bully: "brawls on contact", medic: "heals you",
+      mule: "loot magnet", scout: "ticket luck", gunner: "auto-attacks" }[role];
+    if (p.pets.length < 2) {
+      p.pets.push(pet);
+      C.noteBuild("🐾 " + res.name + " (" + role + ")", "pet");
+      return "Familiar joins (" + role + " — " + roleBlurb + "): " + res.name +
+        ". P rotates the stable.";
+    }
+    p.stable.push(pet);
+    C.noteBuild("🐾 " + res.name + " (" + role + ", stabled)", "pet");
+    return "Familiar stabled (" + role + " — " + roleBlurb + "): " + res.name +
+      ". Press P to rotate it in (2 active).";
+  }
+};
+
   C.applyPrize = function (res) {
     const p = C.G.p, cat = res.category;
     for (const mt of (res.meta || [])) {
@@ -45,6 +70,19 @@
           power.toFixed(0) + "s (pulls stay quiet too).";
       }
       // Gear: armor blocks hits, footwear speeds you up.
+      if (/pocket armor|armoury|arsenal|weapon rack/i.test(nm)) {
+        const res = C.rollArmoryWeapon(r);
+        p.weapon = {
+          name: res.name, ranged: false, dmg: Math.max(1, Math.round(res.rarity / 2)) + 1,
+          element: C.weaponElement(res.name), pattern: "single", rate: 1, knockback: 0,
+          armory: r,
+        };
+        C.syncDmg();
+        p.armoryT = 18;
+        C.noteBuild("🔫 " + res.name + " (armory, rotates)");
+        return "Shouldered " + res.name + ": the Pocket Armory draws a fresh melee weapon every " +
+          "18s (" + p.dmg + " dmg). Lose the bag, lose the rack.";
+      }
       if (/armor|plate|aegis|chainmail|barrier|suit/i.test(nm)) {
         p.armorPct = Math.min(0.5, (p.armorPct || 0) + 0.1 + r * 0.01);
         C.noteBuild(res.name.slice(0, 18) + ": block " + Math.round(p.armorPct * 100) + "%");
@@ -92,7 +130,7 @@
         C.noteBuild(res.name.slice(0, 18) + ": DEX " + p.stats.DEX);
         return "Wearing " + res.name + ": pulls 6% faster.";
       }
-      if (/gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer/i.test(nm)) {
+      if (/gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer|javelin|lance|spear|mace|scythe/i.test(nm)) {
         const ranged = /gun|rifle|pistol|launcher|blaster|bow|cannon|card|chip/i.test(nm);
         const pattern = C.weaponPattern(res.name);
         p.weapon = {
@@ -101,6 +139,7 @@
           element: C.weaponElement(res.name), pattern,
           rate: pattern === "rapid" ? 0.6 : 1,
           knockback: pattern === "heavy" ? 34 : 0,
+          pierce: C.weaponPierce(res.name, res.description),
         };
         C.syncDmg();
         C.noteBuild("🔫 " + res.name + " (" + p.dmg + " dmg" + (ranged ? ", ranged" : ", melee") +
@@ -132,24 +171,7 @@
       if (opened) C.floater(p.x, p.y - 40, "+" + opened + " ability slot!", "#ffe066");
     }
     if (cat === "familiar") {
-      const dmg = Math.max(1, Math.round(r / 3)) + (p.petBonus || 0);
-      const role = C.petRole(res.name);
-      const pet = {
-        name: res.name, dmg, cd: 0, role,
-        cdMax: role === "medic" ? Math.max(8, 22 - r) : 1.1,
-      };
-      const roleBlurb = { bully: "brawls on contact", medic: "heals you",
-        mule: "loot magnet", scout: "ticket luck", gunner: "auto-attacks" }[role];
-      if (p.pets.length < 2) {
-        p.pets.push(pet);
-        C.noteBuild("🐾 " + res.name + " (" + role + ")", "pet");
-        return "Familiar joins (" + role + " — " + roleBlurb + "): " + res.name +
-          ". P rotates the stable.";
-      }
-      p.stable.push(pet);
-      C.noteBuild("🐾 " + res.name + " (" + role + ", stabled)", "pet");
-      return "Familiar stabled (" + role + " — " + roleBlurb + "): " + res.name +
-        ". Press P to rotate it in (2 active).";
+      return C.applyFamiliar(res);
     }
     if (cat === "trait") {
       if (/speed|swift|quick|agil/i.test(nm)) {
@@ -202,6 +224,21 @@
       C.noteBuild(res.name.slice(0, 18) + ": SPD " + p.stats.SPD, "pass");
       return "Trait: small all-round edge (rarity " + r.toFixed(1) + ").";
     }
+    // Animal handling tames a live familiar at roughly the skill's rarity.
+    if (cat === "skill" && /animal|beast|fauna|taming|veterinary|zoolog|xenobiolog|biolog|ecolog|husbandry|wilderness|survival|ranger|beastmaster|wildlife/i.test(nm)) {
+      try {
+        const pool = C.entries();
+        if (!pool.length || !window.ChaosGacha) throw new Error("no data");
+        const res = window.ChaosGacha.roll(pool, null, "familiar",
+          Math.max(0.1, r - 1.5), r, r + 1.5, { hideNsfw: true, hideNoncon: true }, Math.random);
+        C.noteBuild(res.name.slice(0, 18) + " (tamed)", "pet");
+        return "Tamed with " + res.name + ": " + C.applyFamiliar(res);
+      } catch (e) {
+        p.petBonus = (p.petBonus || 0) + 1;
+        C.noteBuild(res.name.slice(0, 18) + ": pets +1", "pass");
+        return "Skill: " + res.name + " — no beasts about, but your handling sharpens (+1 pet damage).";
+      }
+    }
     // Profession skills (usually "Rank Profession"): the trade becomes a
     // casino edge. Unlisted trades fall through to generic pull speed.
     const PROF = [
@@ -244,6 +281,7 @@
     // Generic fallback scales with rarity so every pull is useful.
     if (!p.weapon && r >= 3) {
       p.weapon = { name: res.name + " (improv)", ranged: false, dmg: Math.max(1, Math.round(r / 2)) };
+      p.weapon.pierce = C.weaponPierce(res.name, res.description);
       C.syncDmg();
       return "Prize doubles as weapon: " + res.name + ". You can fight back now.";
     }

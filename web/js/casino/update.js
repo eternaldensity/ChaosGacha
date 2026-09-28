@@ -86,6 +86,21 @@
     if (p.rollCd > 0) p.rollCd -= dt;
     if (p.cloakT > 0) p.cloakT -= dt;
     if (p.surveyT > 0) p.surveyT -= dt;
+    // Pocket Armory: a fresh draw every 18s while it's in hand.
+    if (p.weapon && p.weapon.armory) {
+      p.armoryT = (p.armoryT == null ? 18 : p.armoryT) - dt;
+      if (p.armoryT <= 0) {
+        p.armoryT = 18;
+        const res = C.rollArmoryWeapon(p.weapon.armory);
+        p.weapon.name = res.name;
+        p.weapon.dmg = Math.max(1, Math.round(res.rarity / 2)) + 1;
+        p.weapon.element = C.weaponElement(res.name);
+        p.weapon.pierce = C.weaponPierce(res.name, res.description);
+        C.syncDmg();
+        C.floater(p.x, p.y - 30, "🔄 " + res.name.slice(0, 20), "#ffe066");
+        C.updateHud();
+      }
+    }
     if (p.rollT > 0) {
       p.rollT -= dt;
       if (p.rollT <= 0) { p.dashDx = null; p.dashDy = null; p.dashSpd = 0; }

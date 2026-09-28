@@ -43,6 +43,31 @@
     return "gunner";
   };
 
+  C.ARMORY_WORDS = ["sword", "blade", "knife", "axe", "hammer", "mace",
+    "dagger", "spear", "baton", "club", "scythe", "cleaver"];
+
+  // The Pocket Armory draws a fresh melee weapon: roll the item gacha through
+  // weapon-ish queries at roughly the bag's rarity. Standby blade on failure.
+  C.rollArmoryWeapon = function (r) {
+    const pool = C.entries();
+    const words = C.ARMORY_WORDS.slice();
+    for (let i = words.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const tmp = words[i]; words[i] = words[j]; words[j] = tmp;
+    }
+    if (pool.length && window.ChaosGacha) {
+      for (const w of words) {
+        try {
+          return window.ChaosGacha.roll(pool, null, "item",
+            Math.max(0.1, r - 1), r, r + 1,
+            { hideNsfw: true, hideNoncon: true, q: w }, Math.random);
+        } catch (e) { /* word matched nothing: try the next */ }
+      }
+    }
+    return { category: "item", name: "Armory Standby Blade", rarity: r,
+      source: "Casino", description: "A plain but honest blade.", odds: 0, meta: [] };
+  };
+
   // Weapon pattern from its name (phase 3).
   C.weaponPattern = function (name) {
     const nm = String(name).toLowerCase();
@@ -58,6 +83,11 @@
 
   C.ticketDropChance = function () {
     return C.activeRole("scout") ? 0.45 : 0.3;
+  };
+
+  // Piercing weapons ignore shields (armor-piercing rounds, phase edges...).
+  C.weaponPierce = function (name, desc) {
+    return /pierc|lance|phase|railgun|armor piercing/i.test(String(name) + " " + String(desc || ""));
   };
 
   // Weapon element from its name (phase 2: melee/ranged apply statuses).
