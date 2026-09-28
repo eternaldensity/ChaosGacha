@@ -8,7 +8,15 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="css/app.css">
 <style>
-  #wrap { max-width: 1020px; margin: 0 auto; padding: 10px; }
+  #wrap { max-width: 1290px; margin: 0 auto; padding: 10px; }
+  #layout { display: flex; gap: 12px; align-items: flex-start; }
+  #mainCol { flex: 1 1 auto; min-width: 0; }
+  #sideCol { flex: 0 0 270px; display: flex; flex-direction: column; }
+  #sideCol #hud { flex-direction: column; align-items: stretch; }
+  @media (max-width: 920px) {
+    #layout { flex-direction: column; }
+    #sideCol { flex-basis: auto; width: 100%; }
+  }
   #hud { display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
     background: #14171e; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; margin: 8px 0; }
   #hud .pill { background:#1f242e; border-radius: 999px; padding: 3px 10px; font-size: .9rem; }
@@ -55,6 +63,15 @@
   #curseBtn:disabled { opacity:.4; cursor:default; }
   #curseList { display:flex; gap:6px; flex-wrap:wrap; margin:6px 0; }
   #bestLine { opacity:.8; font-size:.85rem; }
+  #summaryBox { margin:10px auto; padding:10px 14px; max-width:560px; max-height:46vh; overflow:auto;
+    background:#10131a; border:1px solid var(--accent); border-radius:12px; text-align:left; }
+  #summaryBox.hide, #sumCard.hide { display:none; }
+  #sumStats { font-size:.85rem; }
+  #sumList { display:flex; flex-wrap:wrap; gap:6px; margin:8px 0; }
+  #sumList .sumEntry { font-size:.8rem; min-height:0; padding:4px 8px; }
+  #sumCard { border-top:1px solid var(--line); margin-top:8px; padding-top:8px; }
+  #sumCard h4 { margin:0 0 4px; }
+  #sumCard p { font-size:.85rem; margin:4px 0; }
   #deathCurseRow { margin-top:10px; }
   #deathCurseRow .pick { font-size:.9rem; min-height:0; padding:6px 10px; }
   #curseNextBtn:disabled { opacity:.4; cursor:default; }
@@ -94,21 +111,8 @@
 <body>
 <div id="wrap">
   <header class="app"><h1>🎰 Chaos Casino</h1><a class="homelink" href="index.html">🏠 <span class="lbl">Home</span></a></header>
-  <div id="hud">
-    <span class="pill" id="hCoins">🪙 100</span>
-    <span class="pill" id="hHp">❤ 3/3</span>
-    <span class="pill" id="hThreat">★ Threat 0</span>
-    <span class="pill" id="hDepth">🚪 Depth 0 · Danger 1.0</span>
-    <span class="pill" id="hTime">⏱ 0:00</span>
-    <span class="pill" id="hWeapon">🥊 Unarmed</span>
-    <span class="pill" id="hParts">🧩 0</span>
-  </div>
-  <div id="stats" title="Character stats: every prize hooks into these"></div>
-  <div id="manabar"><div></div></div>
-  <div id="tickets"></div>
-  <div id="build" title="Everything your prizes do, in one place"></div>
-  <div id="satchel" title="Consumables: Q uses the selected stack, C cycles"></div>
-  <div id="actives" title="Slotted powers: J/K/L (or left-click for J)"></div>
+  <div id="layout">
+  <div id="mainCol">
   <div id="stage">
     <canvas id="game" width="960" height="540"></canvas>
     <div id="title"><div class="tbox">
@@ -165,6 +169,7 @@
         <ul>
           <li><b>SPD</b> move · <b>DEX</b> pull speed · <b>STR</b> inventory size · <b>END</b> health</li>
           <li><b>FOC</b> cooldowns + mana · <b>LCK</b> luck · <b>PWR</b> damage — every prize feeds these.</li>
+          <li><b>CHA</b> charm — longer dominates, wider talks, friendlier pets. Death shows a full <b>summary (B)</b> with copyable cards.</li>
           <li>Powers burn <b>⚡ mana</b> (it regens). Watch the bar under the stats.</li>
         </ul>
       </div></div>
@@ -179,12 +184,45 @@
         <div id="dmResults"></div>
         <p id="dmBanked"></p>
       </div>
+      <button id="summaryBtn" class="pick" tabindex="-1">📋 Character summary (B)</button>
+      <div id="summaryBox" class="hide">
+        <h3 id="sumTitle">Run summary</h3>
+        <p id="sumStats"></p>
+        <div id="sumList"></div>
+        <div id="sumCard" class="hide">
+          <h4 id="sumCardTitle"></h4>
+          <p id="sumCardBody"></p>
+          <p id="sumCardSub"></p>
+          <button id="sumCopyOne" class="pick">Copy entry</button>
+        </div>
+        <button id="sumCopyAll" class="pick" tabindex="-1">Copy all entries</button>
+        <button id="sumClose" class="pick" tabindex="-1">Close (B)</button>
+      </div>
       <button id="againBtn" class="pick" tabindex="-1">Respawn with spoils (R)</button>
       <button id="freshBtn" class="pick" tabindex="-1">Fresh start: forfeit spoils (T)</button>
       <div id="deathCurseRow">
         <button id="curseNextBtn" class="pick" tabindex="-1">🎲 Curse for next run (max 3)</button>
         <p id="deathCurses"></p>
       </div></div></div>
+  </div>
+  </div>
+  <div id="sideCol">
+  <div id="hud">
+    <span class="pill" id="hCoins">🪙 100</span>
+    <span class="pill" id="hHp">❤ 3/3</span>
+    <span class="pill" id="hThreat">★ Threat 0</span>
+    <span class="pill" id="hDepth">🚪 Depth 0 · Danger 1.0</span>
+    <span class="pill" id="hTime">⏱ 0:00</span>
+    <span class="pill" id="hWeapon">🥊 Unarmed</span>
+    <span class="pill" id="hParts">🧩 0</span>
+  </div>
+  <div id="stats" title="Character stats: every prize hooks into these"></div>
+  <div id="manabar"><div></div></div>
+  <div id="tickets"></div>
+  <div id="build" title="Everything your prizes do, in one place"></div>
+  <div id="satchel" title="Consumables: Q uses the selected stack, C cycles"></div>
+  <div id="actives" title="Slotted powers: J/K/L (or left-click for J)"></div>
+  </div>
   </div>
   <div id="card"><h3 id="cardTitle"></h3><p id="cardBody"></p><p id="cardSub"></p></div>
   <p id="help"><kbd>WASD</kbd> move · <kbd>E</kbd> start pull (walk away, come back for loot) ·

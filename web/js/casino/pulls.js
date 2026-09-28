@@ -226,6 +226,8 @@
         C.audio.build();
         if (pk.src) pk.src.lastPrize = null; // window back to category
         const res = pk.res;
+        C.G.prizeLog.push({ name: res.name, rarity: res.rarity, category: res.category,
+          source: res.source || "", description: res.description || "", odds: res.odds || 0 });
         const note = C.applyPrize(res);
         const flav = C.flavorShort(res.description);
         C.showCard("[" + C.rarityName(res.rarity) + " " + res.category + "] " + res.name +

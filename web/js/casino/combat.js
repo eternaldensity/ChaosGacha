@@ -199,7 +199,7 @@
         if (d < bd) { bd = d; best = gd; }
       }
       if (!best) return false; // no mark in reach: don't burn the cooldown
-      best.possessed = 8 + ab.rarity * 0.5;
+      best.possessed = (8 + ab.rarity * 0.5) * C.chaMult();
       best.chase = true;
       C.floater(best.x, best.y - 30, "⁉ turned!", "#c77dff");
     } else if (ab.op === "stance") {
@@ -211,12 +211,12 @@
       const room = C.curRoom();
       room.alert = 5;
       for (const gd of room.guards) {
-        if (!gd.pacified && Math.hypot(gd.x - p.x, gd.y - p.y) < 420) gd.chase = true;
+        if (!gd.pacified && Math.hypot(gd.x - p.x, gd.y - p.y) < C.tauntRange()) gd.chase = true;
       }
       C.floater(p.x, p.y - 30, "COME AT ME", "#ff5555");
     } else if (ab.op === "pacify") {
       const room = C.curRoom();
-      let best = null, bd = 200;
+      let best = null, bd = C.pacifyRange();
       for (const gd of room.guards) {
         if (gd.pacified) continue;
         const d = Math.hypot(gd.x - p.x, gd.y - p.y);
@@ -768,22 +768,24 @@
       if (!gd.pacified && !gd.chase &&
           (d < gd.sight * (1 - (C.G.p.presence || 0)) * (C.G.p.sightMult || 1) * C.noticeMult() || room.alert > 0)) gd.chase = true;
       if (!gd.chase) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
-      // No body-stacking: guards shove out of the player and each other
-      // instead of piling onto one pixel (and one HP bar).
+      // No body-stacking, no standing inside the player: hard shove out to
+      // arm's length, and guard pairs slide around each other tangentially
+      // so piles flow apart instead of grinding one HP bar.
       {
         const px = p.x - gd.x, py = p.y - gd.y;
         const pd = Math.hypot(px, py);
-        if (pd > 0.01 && pd < 24) {
-          gd.x -= (px / pd) * (24 - pd) * 0.5;
-          gd.y -= (py / pd) * (24 - pd) * 0.5;
+        if (pd > 0.01 && pd < 26) {
+          gd.x -= (px / pd) * (26 - pd) * 0.85;
+          gd.y -= (py / pd) * (26 - pd) * 0.85;
         }
         for (const o of room.guards) {
           if (o === gd) continue;
           const ox = gd.x - o.x, oy = gd.y - o.y;
           const od = Math.hypot(ox, oy);
-          if (od > 0.01 && od < 22) {
-            gd.x += (ox / od) * (22 - od) * 0.3;
-            gd.y += (oy / od) * (22 - od) * 0.3;
+          if (od > 0.01 && od < 24) {
+            const push = (24 - od) * 0.5;
+            gd.x += (ox / od) * push + (-oy / od) * push * 0.4;
+            gd.y += (oy / od) * push + (ox / od) * push * 0.4;
           }
         }
       }
@@ -959,7 +961,7 @@
           C.projs.push({
             x: pet.stationary ? pet.x : p.x, y: pet.stationary ? pet.y : p.y,
             vx: Math.cos(a) * 460, vy: Math.sin(a) * 460,
-            dmg: pet.dmg, foe: false, life: 0.7, element: pet.element || null,
+            dmg: pet.dmg * C.petMult(), foe: false, life: 0.7, element: pet.element || null,
           });
           pet.cd = pet.cdMax || 1.1;
         }
@@ -974,7 +976,7 @@
               const fx = C.collideCircle(gd.x + Math.cos(a) * 30, gd.y + Math.sin(a) * 30,
                 9, C.solids(room));
               gd.x = fx[0]; gd.y = fx[1];
-              C.damageGuard(gd, pet.dmg, null);
+              C.damageGuard(gd, pet.dmg * C.petMult(), null);
               hit = true;
             }
           }

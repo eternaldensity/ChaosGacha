@@ -179,6 +179,87 @@
     C.banked = M.banked;
   };
 
+  // Entry text mirrors the Chaos Gacha card copy format.
+  C.entryText = function (e) {
+    const src = e.source ? " [" + e.source + "]" : "";
+    const cat = e.category.charAt(0).toUpperCase() + e.category.slice(1);
+    return "[" + e.name + "]\n|Rarity: " + C.rarityName(e.rarity) + " " + cat + src + "|\n" +
+      (e.description || "");
+  };
+  C.allEntriesText = function () {
+    return (C.G.prizeLog || []).map(C.entryText).join("\n\n");
+  };
+
+  C.copyText = function (txt, btn) {
+    const done = () => {
+      if (!btn) return;
+      const o = btn.textContent;
+      btn.textContent = "Copied ✓";
+      setTimeout(() => { btn.textContent = o; }, 1200);
+    };
+    const fallback = () => {
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = txt;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        done();
+      } catch (e) {}
+    };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(done, fallback);
+      } else fallback();
+    } catch (e) { fallback(); }
+  };
+
+  // Full character summary: final stats + clickable prize cards.
+  C.renderSummary = function () {
+    const G = C.G, p = G.p;
+    const lines = C.STAT_NAMES.map(k =>
+      k + " " + (p.stats[k] || 10) + " (" + C.STAT_BLURB[k] + ")");
+    C.ui.sumStats.textContent = "Final stats — " + lines.join(" · ") +
+      " | move " + Math.round(C.moveSpeed()) + " · pull ×" + C.pullMul().toFixed(2) +
+      " · threat ★" + G.threat + " · depth " + (G.maxDepth || 0) +
+      " · survived " + C.fmtTime(G.t);
+    const list = C.ui.sumList;
+    list.innerHTML = "";
+    (G.prizeLog || []).forEach((e, i) => {
+      const b = document.createElement("button");
+      b.className = "pick sumEntry";
+      b.textContent = "[" + C.rarityName(e.rarity) + " " + e.category + "] " + e.name;
+      b.style.borderColor = C.rarityColor(e.rarity);
+      b.addEventListener("click", () => C.showSummaryCard(i));
+      list.appendChild(b);
+    });
+    if (!G.prizeLog.length) {
+      const d = document.createElement("div");
+      d.textContent = "No prizes this run — the machines mourn.";
+      list.appendChild(d);
+    }
+    C.ui.sumCard.classList.add("hide");
+  };
+
+  C.showSummaryCard = function (i) {
+    const e = C.G.prizeLog[i];
+    if (!e) return;
+    C.ui.sumCardTitle.textContent = "[" + C.rarityName(e.rarity) + " " + e.category + "] " + e.name;
+    C.ui.sumCardBody.textContent = e.description || "(no description)";
+    C.ui.sumCardSub.textContent = "Rarity " + e.rarity.toFixed(1) +
+      (e.source ? " · " + e.source : "") + (e.odds ? " · " + e.odds.toFixed(2) + "% odds" : "");
+    C.ui.sumCard.classList.remove("hide");
+    C.ui.sumCopyOne.onclick = () => C.copyText(C.entryText(e), C.ui.sumCopyOne);
+  };
+
+  C.toggleSummary = function (show) {
+    const box = C.ui.summaryBox;
+    const open = show == null ? box.classList.contains("hide") : show;
+    if (open) C.renderSummary();
+    box.classList.toggle("hide", !open);
+  };
+
   // Respawn consumes the bank into starting resources; returns a summary.
   C.applyBanked = function (p) {
     const B = C.banked;

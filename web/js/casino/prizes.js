@@ -125,13 +125,18 @@ C.applyFamiliar = function (res) {
         C.floater(p.x, p.y - 24, "+1 🎟 " + tk, "#aed1d1");
         return "Read " + res.name + ": a " + tk + " ticket falls out as a bookmark, and you pull 3% faster.";
       }
+      if (/\bromance\b|love|valentine|bouquet|chocolate|teddy|promise ring/i.test(nm)) {
+        C.modStat("CHA", 2);
+        C.noteBuild(res.name.slice(0, 18) + ": CHA " + p.stats.CHA);
+        return "Kept " + res.name + ": +2 CHA. Looking this good should be illegal.";
+      }
       if (/visor|helm|goggles|headset/i.test(nm)) {
         C.modStat("DEX", 1);
         C.noteBuild(res.name.slice(0, 18) + ": DEX " + p.stats.DEX);
         return "Wearing " + res.name + ": pulls 6% faster.";
       }
-      if (/gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer|javelin|lance|spear|mace|scythe|crowbar|prybar|\bbat\b|cleaver|glaive|katana|shiv|\bstaff\b|nunchaku|rapier|cutlass|machete|shovel|sledge|morningstar|flail|halberd|tonfa/i.test(nm)) {
-        const ranged = /gun|rifle|pistol|launcher|blaster|bow|cannon|card|chip/i.test(nm);
+      if (/gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer|javelin|lance|spear|mace|scythe|crowbar|prybar|\bbat\b|cleaver|glaive|katana|shiv|\bstaff\b|nunchaku|rapier|cutlass|machete|shovel|sledge|morningstar|flail|halberd|tonfa|arrow|longbow|crossbow/i.test(nm)) {
+        const ranged = /gun|rifle|pistol|launcher|blaster|bow|cannon|card|chip|arrow|longbow|crossbow/i.test(nm);
         const pattern = C.weaponPattern(res.name);
         p.weapon = {
           name: res.name, ranged,
@@ -220,6 +225,11 @@ C.applyFamiliar = function (res) {
         C.noteBuild(res.name.slice(0, 18) + ": ghost ×" + p.ghost, "pass");
         return "Trait: ghost ×" + p.ghost + " — pulls run quieter, guards notice you later.";
       }
+      if (/relationship|friendship|\bfriend\b|charm|\bromance\b|social|\bbond\b|companion|\bally\b|trust|leadership|charisma|seduc|persua|empath|rapport/i.test(nm)) {
+        C.modStat("CHA", 2);
+        C.noteBuild(res.name.slice(0, 18) + ": CHA " + p.stats.CHA, "pass");
+        return "Trait: +2 CHA (dominates last longer, talks reach further, pets hit harder).";
+      }
       if (/thinker|sense|detect|perceiv|predict|foresight|intuit|insight|sixth sense|danger sense|awareness|vigil/i.test(nm)) {
         p.survey = true;
         C.modStat("LCK", 1);
@@ -244,6 +254,12 @@ C.applyFamiliar = function (res) {
         C.noteBuild(res.name.slice(0, 18) + ": pets +1", "pass");
         return "Skill: " + res.name + " — no beasts about, but your handling sharpens (+1 pet damage).";
       }
+    }
+    // Silver tongues charm the casino itself.
+    if (cat === "skill" && /relationship|friendship|diplomacy|charm|\bromance\b|seduction|etiquette|negotiat|oratory/i.test(nm)) {
+      C.modStat("CHA", 2);
+      C.noteBuild(res.name.slice(0, 18) + ": CHA " + p.stats.CHA, "pass");
+      return "Skill: " + res.name + " — +2 CHA (dominates last longer, talks reach further).";
     }
     // Martial skills: wreckers pry machines/shields, fighters hit harder
     // in melee, marksmen shoot straighter. Never pull speed.
@@ -302,6 +318,13 @@ C.applyFamiliar = function (res) {
       C.modStat("DEX", 1);
       C.noteBuild(res.name.slice(0, 18) + ": DEX " + p.stats.DEX, "pass");
       return "Skill: pulls 10% faster (DEX " + p.stats.DEX + ").";
+    }
+    // Pack leaders: items that feed your menagerie buff all pets.
+    if (cat === "item" && /guardian|companions?|\bpets?\b|familiars?|minions?|pack leader|beastmaster/i.test(nm)) {
+      p.petBonus = (p.petBonus || 0) + 1;
+      for (const pt of p.pets) pt.dmg += 1;
+      C.noteBuild(res.name.slice(0, 18) + ": pets +1");
+      return "Kept " + res.name + ": your familiars hit +1 (present and future).";
     }
     // Generic fallback scales with rarity so every pull is useful.
     if (!p.weapon && r >= 3) {

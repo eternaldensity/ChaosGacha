@@ -9,6 +9,7 @@
       C.showCard(muted ? "🔇 Muted (M)" : "🔊 Sound on (M)", "", "", 1200);
       return;
     }
+    if ((e.key === "b" || e.key === "B") && C.G && C.G.over) { C.toggleSummary(); return; }
     if (e.key === "Escape" && C.G && C.G.draft) { C.closeDraft(); return; }
     if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "].includes(e.key)) e.preventDefault();
     C.keys[e.key.toLowerCase()] = true;
@@ -32,6 +33,9 @@
   C.el("curseNextBtn").addEventListener("click", () => C.rollCurseNext());
   C.ui.freshBtn.addEventListener("click", () => { C.audio.ensure(); C.audio.click(); C.banked = null; C.pendingCurses = []; C.newRun(false, false); });
   C.ui.spinBtn.addEventListener("click", () => { C.audio.ensure(); C.spinDeath(); });
+  C.el("summaryBtn").addEventListener("click", () => C.toggleSummary());
+  C.ui.sumCopyAll.addEventListener("click", () => C.copyText(C.allEntriesText(), C.ui.sumCopyAll));
+  C.ui.sumClose.addEventListener("click", () => C.toggleSummary(false));
   C.ui.startBtn.addEventListener("click", () => { C.audio.ensure(); C.audio.click(); C.startGame(); });
 
   C.newRun(true);

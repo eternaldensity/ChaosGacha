@@ -6,12 +6,13 @@
 (function (C) {
   // Base 10 each. SPD move · DEX pull speed · STR inventory · END health ·
   // FOC cooldowns + mana · LCK luck · PWR damage.
-  C.BASE_STATS = { SPD: 10, DEX: 10, STR: 10, END: 10, FOC: 10, LCK: 10, PWR: 10 };
-  C.STAT_NAMES = ["SPD", "DEX", "STR", "END", "FOC", "LCK", "PWR"];
+  C.BASE_STATS = { SPD: 10, DEX: 10, STR: 10, END: 10, FOC: 10, LCK: 10, PWR: 10, CHA: 10 };
+  C.STAT_NAMES = ["SPD", "DEX", "STR", "END", "FOC", "LCK", "PWR", "CHA"];
 
   C.STAT_BLURB = {
     SPD: "move speed", DEX: "pull speed", STR: "inventory size",
     END: "extra health", FOC: "cooldowns + mana", LCK: "luck", PWR: "damage",
+    CHA: "charm: longer dominates, wider talks, friendlier pets",
   };
 
   const S = () => (C.G && C.G.p.stats) || C.BASE_STATS;
@@ -27,6 +28,11 @@
   C.ammoMax = () => 20 + 2 * (get("STR") - 10);
   C.manaMax = () => 60 + 5 * (get("FOC") - 10);
   C.manaRegen = () => 5 + 0.5 * (get("FOC") - 10);
+
+  C.chaMult = () => 1 + 0.06 * (((C.G && C.G.p.stats.CHA) || 10) - 10);
+  C.petMult = () => 1 + 0.03 * (((C.G && C.G.p.stats.CHA) || 10) - 10);
+  C.pacifyRange = () => 200 + 12 * (((C.G && C.G.p.stats.CHA) || 10) - 10);
+  C.tauntRange = () => 420 + 15 * (((C.G && C.G.p.stats.CHA) || 10) - 10);
 
   C.MANA_COSTS = {
     bolt: 6, dash: 8, heal: 14, wave: 12, beam: 14, nova: 20, lobbed: 18,

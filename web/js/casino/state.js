@@ -44,7 +44,7 @@
     C.G = {
       over: false, title: showTitle !== false, t: 0, kills: 0, pulls: 0, threat: 0,
       roomX: 0, roomY: 0, waveT: 50, maxDepth: 0,
-      feats: {}, curses: [], costMult: 1, guardBonus: 0, alertMult: 1,
+      feats: {}, curses: [], costMult: 1, guardBonus: 0, alertMult: 1, prizeLog: [],
       machine: null,
       p: {
         x: C.W / 2, y: C.H / 2 + 60, r: 10, hp: 3, maxHp: 3,
