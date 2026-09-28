@@ -20,12 +20,13 @@
       for (const off of angs) {
         C.projs.push({
           x: p.x, y: p.y, vx: Math.cos(a + off) * 520, vy: Math.sin(a + off) * 520,
-          dmg: C.playerDmg(p.dmg, p.weapon.element) + (p.rangedBonus || 0), foe: false, life: 0.8, element: p.weapon.element, pierce: !!p.weapon.pierce,
+          dmg: (C.playerDmg(p.dmg, p.weapon.element) + (p.rangedBonus || 0)) * (p.weapon.bane || 1), foe: false, life: 0.8, element: p.weapon.element, pierce: !!p.weapon.pierce,
         });
       }
     } else {
       const claws = p.stance && p.stance.kind === "claws";
-      const dmg = C.playerDmg(p.dmg + (claws ? 2 : 0), p.weapon.element);
+      const dmg = C.playerDmg(p.dmg + (claws ? 2 : 0), p.weapon.element) *
+        (p.weapon.bane || 1) + (p.meleeBonus || 0);
       let fed = false;
       for (const gd of [...C.curRoom().guards]) {
         if (Math.hypot(gd.x - p.x, gd.y - p.y) < p.range + 14) {
@@ -36,7 +37,10 @@
               gd.y + Math.sin(a) * p.weapon.knockback, 9, C.solids(room));
             gd.x = fx[0]; gd.y = fx[1];
           }
-          if (C.damageGuard(gd, dmg, p.weapon.element, false, p.weapon.pierce ? { pierce: true } : null)) fed = true;
+          const mopts = {};
+          if (p.weapon.pierce) mopts.pierce = true;
+          if (p.wrecker) mopts.wrecker = p.wrecker;
+          if (C.damageGuard(gd, dmg, p.weapon.element, false, mopts)) fed = true;
         }
       }
       if (claws) {
@@ -272,15 +276,17 @@
   // Single choke point for guard damage: shields soak direct hits (dots seep
   // through), numbers pop, elements apply, death routes to killGuard.
   C.damageGuard = function (gd, amt, element, isDot, opts) {
+    if (opts && opts.wrecker) amt += opts.wrecker;
     if (gd.hp <= 0) return true;
     gd.statuses = gd.statuses || {};
     // Round only display-facing hits: per-frame DoT slices are fractional.
     if (!isDot) amt = Math.round(amt * 10) / 10;
     if (gd.statuses.weaken && gd.statuses.weaken.t > 0) amt *= 1.25;
     if (!isDot && gd.shield > 0 && !(opts && opts.pierce)) {
-      // Holy/light is shieldbreaking: double soak rate.
+      // Holy/light is shieldbreaking: double soak rate. Wreckers chew it down.
       const soak = element === "light" || element === "holy" ? amt * 2 : amt;
-      const absorbed = Math.min(gd.shield, soak);
+      const effShield = Math.max(0, gd.shield - ((opts && opts.wrecker) || 0));
+      const absorbed = Math.min(effShield, soak);
       gd.shield -= absorbed;
       amt -= (element === "light" || element === "holy") ? absorbed / 2 : absorbed;
       C.floater(gd.x, gd.y - 30, "🛡" + absorbed, "#8b93a3");
@@ -502,7 +508,7 @@
   // Machines have hull by tier. AoE and stray shots wreck them into parts.
   C.damageMachine = function (room, m, amt) {
     if (!room.machines.includes(m)) return;
-    m.hp -= amt;
+    m.hp -= amt + (C.G.p.wrecker || 0);
     if (m.hp > 0) {
       C.floater(m.x, m.y - C.MH / 2 - 10, "crack", "#8b93a3");
       return;

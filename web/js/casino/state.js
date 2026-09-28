@@ -58,6 +58,7 @@
         buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null, stance: null, mount: null,
         elemBonus: {}, resist: {}, regen: 0, regenT: 0,
         healBonus: 0, rollCdMax: 5, threatDecayT: 0, rangedBonus: 0, draft: null,
+        meleeBonus: 0, wrecker: 0,
         parts: 0, survey: false, surveyT: 0,
         sightMult: 1, cdrMult: 1, healMult: 1, dmgTakenMult: 1, dmgDealtMult: 1, ghost: 0,
         regenOff: false, armorLock: false, pacifist: false,

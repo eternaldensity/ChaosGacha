@@ -130,7 +130,7 @@ C.applyFamiliar = function (res) {
         C.noteBuild(res.name.slice(0, 18) + ": DEX " + p.stats.DEX);
         return "Wearing " + res.name + ": pulls 6% faster.";
       }
-      if (/gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer|javelin|lance|spear|mace|scythe/i.test(nm)) {
+      if (/gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer|javelin|lance|spear|mace|scythe|crowbar|prybar|\bbat\b|cleaver|glaive|katana|shiv|\bstaff\b|nunchaku|rapier|cutlass|machete|shovel|sledge|morningstar|flail|halberd|tonfa/i.test(nm)) {
         const ranged = /gun|rifle|pistol|launcher|blaster|bow|cannon|card|chip/i.test(nm);
         const pattern = C.weaponPattern(res.name);
         p.weapon = {
@@ -140,6 +140,7 @@ C.applyFamiliar = function (res) {
           rate: pattern === "rapid" ? 0.6 : 1,
           knockback: pattern === "heavy" ? 34 : 0,
           pierce: C.weaponPierce(res.name, res.description),
+          bane: /inhuman|monster slay|demon slay|undead|alien|dragonslay|beast slay|conceptually more damage/i.test(nm) ? 1.5 : 0,
         };
         C.syncDmg();
         C.noteBuild("🔫 " + res.name + " (" + p.dmg + " dmg" + (ranged ? ", ranged" : ", melee") +
@@ -243,6 +244,25 @@ C.applyFamiliar = function (res) {
         C.noteBuild(res.name.slice(0, 18) + ": pets +1", "pass");
         return "Skill: " + res.name + " — no beasts about, but your handling sharpens (+1 pet damage).";
       }
+    }
+    // Martial skills: wreckers pry machines/shields, fighters hit harder
+    // in melee, marksmen shoot straighter. Never pull speed.
+    if (cat === "skill" && /crowbar|pry|jam|wedge|breach|wreck|sunder/i.test(nm)) {
+      const w = 2 + Math.floor(r / 2);
+      p.wrecker = (p.wrecker || 0) + w;
+      C.noteBuild(res.name.slice(0, 18) + ": wrecker +" + w);
+      C.floater(p.x, p.y - 24, "wrecker +" + w, "#ff9c41");
+      return "Skill: " + res.name + " — wrecker +" + w + ": melee, machines and shields take +" + w + ".";
+    }
+    if (cat === "skill" && /combat|martial|brawl|fighting|swordplay|fencing|boxing|wrestling|kung fu|karate|krav|muay|swordsmanship|hand-to-hand|iaijutsu|kendo|kenjutsu/i.test(nm)) {
+      p.meleeBonus = (p.meleeBonus || 0) + 1;
+      C.noteBuild(res.name.slice(0, 18) + ": melee +1");
+      return "Skill: " + res.name + " — melee +1 ( J/F swings hit harder).";
+    }
+    if (cat === "skill" && /marksmanship|sniper|gunslinger|quickdraw|trick shot|sharpshoot/i.test(nm)) {
+      p.rangedBonus = (p.rangedBonus || 0) + 1;
+      C.noteBuild(res.name.slice(0, 18) + ": +ranged dmg");
+      return "Skill: " + res.name + " — +1 damage on ranged attacks.";
     }
     // Profession skills (usually "Rank Profession"): the trade becomes a
     // casino edge. Unlisted trades fall through to generic pull speed.
