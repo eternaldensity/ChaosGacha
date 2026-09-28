@@ -4,6 +4,7 @@
 (function (C) {
   let last = 0;
   let prevE = false;
+  let prevP = false;
 
   C.frame = function (ts) {
     requestAnimationFrame(C.frame);
@@ -69,6 +70,7 @@
     if (p.atkCd > 0) p.atkCd -= dt;
     if (p.inv > 0) p.inv -= dt;
     if (p.rollCd > 0) p.rollCd -= dt;
+    if (p.cloakT > 0) p.cloakT -= dt;
     if (p.rollT > 0) {
       p.rollT -= dt;
       if (p.rollT <= 0) { p.dashDx = null; p.dashDy = null; p.dashSpd = 0; }
@@ -124,6 +126,9 @@
     const eDown = !!C.keys["e"];
     if (eDown && !prevE) C.tryStartPull();
     prevE = eDown;
+    const pDown = !!C.keys["p"];
+    if (pDown && !prevP) C.rotatePets();
+    prevP = pDown;
     C.updatePulls(dt);
     C.updatePickups(dt);
 

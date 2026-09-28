@@ -23,6 +23,33 @@
     return "arcane";
   };
 
+  // Familiar role from its name (phase 3).
+  C.petRole = function (name) {
+    const nm = String(name).toLowerCase();
+    if (/guard|bully|brawler|tank|defend|protector|bodyguard/i.test(nm)) return "bully";
+    if (/heal|medic|cleric|nurse|doctor|mend/i.test(nm)) return "medic";
+    if (/mule|pack|merchant|greed|luck|hoard|storage/i.test(nm)) return "mule";
+    if (/scout|eye|watcher|guide|spy|sensor/i.test(nm)) return "scout";
+    return "gunner";
+  };
+
+  // Weapon pattern from its name (phase 3).
+  C.weaponPattern = function (name) {
+    const nm = String(name).toLowerCase();
+    if (/shotgun|spread|blunderbuss|scatter/i.test(nm)) return "spread";
+    if (/rapid|chaingun|repeater|smg|auto/i.test(nm)) return "rapid";
+    if (/heavy|hammer|maul|great|massive|wreck/i.test(nm)) return "heavy";
+    return "single";
+  };
+
+  C.activeRole = function (role) {
+    return C.G.p.pets.some(q => (q.role || "gunner") === role);
+  };
+
+  C.ticketDropChance = function () {
+    return C.activeRole("scout") ? 0.45 : 0.3;
+  };
+
   // Weapon element from its name (phase 2: melee/ranged apply statuses).
   C.weaponElement = function (name) {
     const e = C.elementOf(String(name).toLowerCase());

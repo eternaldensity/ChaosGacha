@@ -50,11 +50,13 @@
         reel: { pos: Math.random() * 280, vel: 300, state: "spin", landT: 0 },
       };
     }
-    // Noise: alert nearby guards.
+    // Noise: alert nearby guards (unless cloaked).
     const room = C.curRoom();
-    room.alert = 5;
-    for (const gd of room.guards) {
-      if (Math.hypot(gd.x - C.G.p.x, gd.y - C.G.p.y) < 300) gd.chase = true;
+    if (!C.G.p.cloakT) {
+      room.alert = 5;
+      for (const gd of room.guards) {
+        if (Math.hypot(gd.x - C.G.p.x, gd.y - C.G.p.y) < 300) gd.chase = true;
+      }
     }
     C.updateHud();
   };
@@ -185,8 +187,9 @@
   C.updatePickups = function (dt) {
     const p = C.G.p, room = C.curRoom();
     for (const pk of room.pickups) { pk.bob += dt; pk.age += dt; }
+    const magnet = C.PICKUP_R + (C.activeRole("mule") ? 40 : 0);
     for (const pk of [...room.pickups]) {
-      if (Math.hypot(pk.x - p.x, pk.y - p.y) > C.PICKUP_R) continue;
+      if (Math.hypot(pk.x - p.x, pk.y - p.y) > magnet) continue;
       room.pickups.splice(room.pickups.indexOf(pk), 1);
       if (pk.kind === "coins") {
         p.coins += pk.amount;

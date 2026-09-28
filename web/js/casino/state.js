@@ -44,7 +44,7 @@
         pullMul: b.pullMul, discount: 0, pets: [],
         slots: [], stash: [], abilitiesOwned: 0, facing: 0,
         dashDx: null, dashDy: null, dashSpd: 0, statuses: {},
-        buildLog: [],
+        buildLog: [], stable: [], cloakT: 0, armorPct: 0,
       },
       cardT: 0, shake: 0,
     };

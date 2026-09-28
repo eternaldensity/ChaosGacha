@@ -13,13 +13,63 @@
     }
     const nm = (res.name + " " + res.description).toLowerCase(), r = res.rarity;
     const bonus = 1 + (r - 1) * 0.08;
-    if (cat === "item" && /gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer/i.test(nm)) {
-      const ranged = /gun|rifle|pistol|launcher|blaster|bow|cannon|card|chip/i.test(nm);
-      p.weapon = { name: res.name, ranged, dmg: Math.max(1, Math.round(r / 2)) + (ranged ? 0 : 1), element: C.weaponElement(res.name) };
-      p.dmg = p.weapon.dmg;
-      C.noteBuild("🔫 " + res.name + " (" + p.dmg + " dmg" + (ranged ? ", ranged" : ", melee") + (p.weapon.element ? ", " + p.weapon.element : "") + ")");
-      return "Weapon equipped: " + res.name + " (" + p.dmg + " dmg" +
-        (ranged ? ", ranged" : ", melee") + "). J/click to fight back — Threat will rise.";
+    if (cat === "item") {
+      // Consumables trigger on touch.
+      if (/medkit|potion|food|ration|elixir|bandage|snack|feast/i.test(nm)) {
+        const amt = 1 + Math.floor(r / 3);
+        p.hp = Math.min(p.maxHp, p.hp + amt);
+        C.noteBuild(res.name.slice(0, 18) + ": ate +" + amt + " HP");
+        C.floater(p.x, p.y - 24, "+" + amt + " HP", "#11d939");
+        return "Consumed " + res.name + ": +" + amt + " HP on the spot.";
+      }
+      if (/bomb|grenade|dynamite|explosive|volatile|mine/i.test(nm)) {
+        C.detonate(p.x, p.y, 135, 2 + Math.floor(r / 2), "fire");
+        C.noteBuild(res.name.slice(0, 18) + ": volatile boom");
+        return "Volatile " + res.name + ": it detonates on touch! Guards nearby eat " +
+          (2 + Math.floor(r / 2)) + " fire damage.";
+      }
+      if (/decoy|bait|lure|smoke/i.test(nm)) {
+        p.cloakT = 5 + r * 0.3;
+        C.noteBuild(res.name.slice(0, 18) + ": cloak " + p.cloakT.toFixed(0) + "s");
+        return "Deployed " + res.name + ": guards lose your trail for " +
+          p.cloakT.toFixed(0) + "s (pulls stay quiet too).";
+      }
+      // Gear: armor blocks hits, footwear speeds you up.
+      if (/armor|plate|aegis|chainmail|barrier|suit/i.test(nm)) {
+        p.armorPct = Math.min(0.5, (p.armorPct || 0) + 0.1 + r * 0.01);
+        C.noteBuild(res.name.slice(0, 18) + ": block " + Math.round(p.armorPct * 100) + "%");
+        return "Armored in " + res.name + ": " + Math.round(p.armorPct * 100) +
+          "% chance to fully block a hit (cap 50%).";
+      }
+      if (/boots|greaves|gauntlets|treads/i.test(nm)) {
+        p.speed *= 1 + 0.03 * bonus;
+        C.noteBuild(res.name.slice(0, 18) + ": +" + Math.round(3 * bonus) + "% speed");
+        return "Geared " + res.name + ": +" + Math.round(3 * bonus) + "% move speed.";
+      }
+      if (/visor|helm|goggles|headset/i.test(nm)) {
+        p.pullMul = Math.max(0.6, p.pullMul * 0.94);
+        C.noteBuild(res.name.slice(0, 18) + ": pulls 6% faster");
+        return "Wearing " + res.name + ": pulls 6% faster.";
+      }
+      if (/gun|rifle|pistol|launcher|blaster|bow|cannon|sword|blade|knife|baton|chair|card|chip|dagger|axe|hammer/i.test(nm)) {
+        const ranged = /gun|rifle|pistol|launcher|blaster|bow|cannon|card|chip/i.test(nm);
+        const pattern = C.weaponPattern(res.name);
+        p.weapon = {
+          name: res.name, ranged,
+          dmg: Math.max(1, Math.round(r / 2)) + (ranged ? 0 : 1),
+          element: C.weaponElement(res.name), pattern,
+          rate: pattern === "rapid" ? 0.6 : 1,
+          knockback: pattern === "heavy" ? 34 : 0,
+        };
+        p.dmg = p.weapon.dmg;
+        C.noteBuild("🔫 " + res.name + " (" + p.dmg + " dmg" + (ranged ? ", ranged" : ", melee") +
+          (p.weapon.element ? ", " + p.weapon.element : "") +
+          (pattern !== "single" ? ", " + pattern : "") + ")");
+        return "Weapon equipped: " + res.name + " (" + p.dmg + " dmg" +
+          (ranged ? ", ranged" : ", melee") +
+          (p.weapon.element ? ", " + p.weapon.element : "") +
+          (pattern !== "single" ? ", " + pattern : "") + "). J/click to fight back — Threat will rise.";
+      }
     }
     if (cat === "ability") {
       p.abilitiesOwned = (p.abilitiesOwned || 0) + 1;
@@ -40,9 +90,23 @@
     }
     if (cat === "familiar") {
       const dmg = Math.max(1, Math.round(r / 3));
-      p.pets.push({ name: res.name, dmg, cd: 0 });
-      C.noteBuild("🐾 " + res.name + " (" + dmg + " dmg auto)", "pet");
-      return "Familiar joins: " + res.name + " (auto-attacks, " + dmg + " dmg).";
+      const role = C.petRole(res.name);
+      const pet = {
+        name: res.name, dmg, cd: 0, role,
+        cdMax: role === "medic" ? Math.max(8, 22 - r) : 1.1,
+      };
+      const roleBlurb = { bully: "brawls on contact", medic: "heals you",
+        mule: "loot magnet", scout: "ticket luck", gunner: "auto-attacks" }[role];
+      if (p.pets.length < 2) {
+        p.pets.push(pet);
+        C.noteBuild("🐾 " + res.name + " (" + role + ")", "pet");
+        return "Familiar joins (" + role + " — " + roleBlurb + "): " + res.name +
+          ". P rotates the stable.";
+      }
+      p.stable.push(pet);
+      C.noteBuild("🐾 " + res.name + " (" + role + ", stabled)", "pet");
+      return "Familiar stabled (" + role + " — " + roleBlurb + "): " + res.name +
+        ". Press P to rotate it in (2 active).";
     }
     if (cat === "trait") {
       if (/speed|swift|quick|agil/i.test(nm)) {

@@ -5,17 +5,27 @@
   C.tryAttack = function () {
     const p = C.G.p;
     if (!p.weapon || p.atkCd > 0 || C.G.over) return;
-    p.atkCd = 0.45;
+    p.atkCd = 0.45 * (p.weapon.rate || 1);
     if (p.weapon.ranged) {
       const g = C.nearestGuard(420);
-      const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : 0;
-      C.projs.push({
-        x: p.x, y: p.y, vx: Math.cos(a) * 520, vy: Math.sin(a) * 520,
-        dmg: p.dmg, foe: false, life: 0.8, element: p.weapon.element,
-      });
+      const a = g ? Math.atan2(g.y - p.y, g.x - p.x) : (p.facing || 0);
+      const angs = p.weapon.pattern === "spread" ? [-0.16, 0, 0.16] : [0];
+      for (const off of angs) {
+        C.projs.push({
+          x: p.x, y: p.y, vx: Math.cos(a + off) * 520, vy: Math.sin(a + off) * 520,
+          dmg: p.dmg, foe: false, life: 0.8, element: p.weapon.element,
+        });
+      }
     } else {
       for (const gd of [...C.curRoom().guards]) {
         if (Math.hypot(gd.x - p.x, gd.y - p.y) < p.range + 14) {
+          if (p.weapon.knockback) {
+            const a = Math.atan2(gd.y - p.y, gd.x - p.x) || 0;
+            const room = C.curRoom();
+            const fx = C.collideCircle(gd.x + Math.cos(a) * p.weapon.knockback,
+              gd.y + Math.sin(a) * p.weapon.knockback, 9, C.solids(room));
+            gd.x = fx[0]; gd.y = fx[1];
+          }
           C.damageGuard(gd, p.dmg, p.weapon.element);
         }
       }
@@ -39,18 +49,7 @@
         });
       }
     } else if (ab.op === "nova") {
-      const R = 135;
-      C.rings.push({ x: p.x, y: p.y, age: 0, max: 0.35, r: R });
-      const room = C.curRoom();
-      for (const gd of [...room.guards]) {
-        const d = Math.hypot(gd.x - p.x, gd.y - p.y);
-        if (d > R + 14) continue;
-        const a = Math.atan2(gd.y - p.y, gd.x - p.x) || 0;
-        const fx = C.collideCircle(gd.x + Math.cos(a) * 52, gd.y + Math.sin(a) * 52, 9, C.solids(room));
-        gd.x = fx[0]; gd.y = fx[1];
-        C.damageGuard(gd, ab.power + (p.weapon ? 1 : 0), ab.element);
-      }
-      C.G.shake = 0.15;
+      C.detonate(p.x, p.y, 135, ab.power + (p.weapon ? 1 : 0), ab.element);
     } else if (ab.op === "dash") {
       p.dashDx = Math.cos(p.facing); p.dashDy = Math.sin(p.facing);
       p.dashSpd = ab.power;
@@ -127,6 +126,21 @@
     C.rings = C.rings.filter(rg => rg.age < rg.max);
   };
 
+  // Shared AoE: nova powers and volatile pickups both go through here.
+  C.detonate = function (x, y, radius, dmg, element) {
+    C.rings.push({ x, y, age: 0, max: 0.35, r: radius });
+    const room = C.curRoom();
+    for (const gd of [...room.guards]) {
+      const d = Math.hypot(gd.x - x, gd.y - y);
+      if (d > radius + 14) continue;
+      const a = Math.atan2(gd.y - y, gd.x - x) || 0;
+      const fx = C.collideCircle(gd.x + Math.cos(a) * 52, gd.y + Math.sin(a) * 52, 9, C.solids(room));
+      gd.x = fx[0]; gd.y = fx[1];
+      C.damageGuard(gd, dmg, element);
+    }
+    C.G.shake = 0.15;
+  };
+
   C.nearestGuard = function (maxD) {
     let best = null, bd = maxD || 1e9;
     for (const gd of C.curRoom().guards) {
@@ -152,7 +166,7 @@
       C.showCard("Feat: First blood",
         "+1× Silver Ability ticket. Threat ★" + C.G.threat + ".", "", 3000);
     }
-    if (Math.random() < 0.3) {
+    if (Math.random() < C.ticketDropChance()) {
       const spont = ["bronze", "silver", "gold"][Math.floor(Math.random() * 3)];
       C.G.p.tickets[spont]++;
     }
@@ -162,6 +176,14 @@
   C.hurtPlayer = function (n) {
     const p = C.G.p;
     if (p.inv > 0 || p.rollT > 0 || C.G.over) return;
+    // Armor: flat chance to fully block a hit (capped at 50%).
+    if ((p.armorPct || 0) > 0 && Math.random() < p.armorPct) {
+      C.floater(p.x, p.y - 24, "blocked", "#7df9ff");
+      p.inv = Math.max(p.inv, 0.4);
+      C.G.shake = 0.1;
+      C.updateHud();
+      return;
+    }
     p.hp -= n; p.inv = 0.9; C.G.shake = 0.2;
     if (p.hp <= 0) C.die();
     C.updateHud();
@@ -239,6 +261,14 @@
     const p = C.G.p, room = C.curRoom();
     for (const gd of [...room.guards]) {
       const d = Math.hypot(gd.x - p.x, gd.y - p.y);
+      // Cloaked: the trail goes cold, chasers give up.
+      if (C.G.p.cloakT > 0) {
+        gd.chase = false;
+        const cl = C.tickGuardStatuses(gd, dt);
+        if (cl.died) continue;
+        if (gd.atkCd > 0) gd.atkCd -= dt;
+        continue;
+      }
       // DoTs tick even on unaware guards; slow/stun matter once chasing.
       const st = C.tickGuardStatuses(gd, dt);
       if (st.died) continue;
@@ -281,19 +311,80 @@
     }
   };
 
-  C.updatePets = function (dt) {
+  // Familiar storage (Doc rule, run-scaled): 2 active, rest stabled. P rotates.
+  C.rotatePets = function () {
     const p = C.G.p;
-    for (const pet of p.pets) {
-      pet.cd -= dt;
-      const g = C.nearestGuard(360);
-      if (g && pet.cd <= 0) {
-        const a = Math.atan2(g.y - p.y, g.x - p.x);
-        C.projs.push({
-          x: p.x, y: p.y, vx: Math.cos(a) * 460, vy: Math.sin(a) * 460,
-          dmg: pet.dmg, foe: false, life: 0.7,
-        });
-        pet.cd = 1.1;
+    if (!p.stable.length) {
+      if (p.pets.length > 1) {
+        p.pets.push(p.pets.shift());
+        C.showCard("Familiars reordered",
+          "Lead: " + p.pets[0].name + " (" + (p.pets[0].role || "gunner") + ").", "", 1800);
       }
+      return;
+    }
+    const incoming = p.stable.shift();
+    if (p.pets.length >= 2) p.stable.push(p.pets.shift());
+    p.pets.push(incoming);
+    C.showCard("Familiars rotated",
+      "Active: " + p.pets.map(q => q.name + " (" + (q.role || "gunner") + ")").join(", ") + ".",
+      p.stable.length + " stabled.", 2200);
+    C.updateHud();
+  };
+
+  C.updatePets = function (dt) {
+    const p = C.G.p, room = C.curRoom();
+    for (const pet of p.pets) {
+      const i = p.pets.indexOf(pet);
+      const radius = (pet.role || "gunner") === "bully" ? 42 : 26;
+      const spin = (pet.role || "gunner") === "bully" ? 3.2 : 2;
+      const a = C.G.t * spin + i * 2.1;
+      pet.x = p.x + Math.cos(a) * radius;
+      pet.y = p.y + Math.sin(a) * radius;
+    }
+    for (const pet of p.pets) {
+      const role = pet.role || "gunner";
+      if (role === "gunner") {
+        pet.cd -= dt;
+        const g = C.nearestGuard(360);
+        if (g && pet.cd <= 0) {
+          const a = Math.atan2(g.y - p.y, g.x - p.x);
+          C.projs.push({
+            x: p.x, y: p.y, vx: Math.cos(a) * 460, vy: Math.sin(a) * 460,
+            dmg: pet.dmg, foe: false, life: 0.7,
+          });
+          pet.cd = pet.cdMax || 1.1;
+        }
+      } else if (role === "bully") {
+        // Brawling orbiter: body-slams guards it touches.
+        pet.cd -= dt;
+        if (pet.cd <= 0) {
+          let hit = false;
+          for (const gd of [...room.guards]) {
+            if (Math.hypot(gd.x - pet.x, gd.y - pet.y) < 20) {
+              const a = Math.atan2(gd.y - p.y, gd.x - p.x) || 0;
+              const fx = C.collideCircle(gd.x + Math.cos(a) * 30, gd.y + Math.sin(a) * 30,
+                9, C.solids(room));
+              gd.x = fx[0]; gd.y = fx[1];
+              C.damageGuard(gd, pet.dmg, null);
+              hit = true;
+            }
+          }
+          pet.cd = hit ? 0.5 : 0.1;
+        }
+      } else if (role === "medic") {
+        pet.cd -= dt;
+        if (pet.cd <= 0) {
+          if (p.hp < p.maxHp) {
+            p.hp += 1;
+            C.floater(p.x, p.y - 24, "+1 HP (" + pet.name.slice(0, 14) + ")", "#11d939");
+            C.updateHud();
+            pet.cd = pet.cdMax || 18;
+          } else {
+            pet.cd = 1;
+          }
+        }
+      }
+      // mule (loot magnet) and scout (ticket luck) are passive auras.
     }
   };
 

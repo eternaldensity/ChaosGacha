@@ -436,17 +436,30 @@
       ctx.fillStyle = pr.foe ? "#ff5555" : "#ffe066";
       ctx.fillRect(pr.x - 3, pr.y - 3, 6, 6);
     }
+    const PET_COLORS = { gunner: "#7df9ff", bully: "#ff9c41", medic: "#11d939",
+      mule: "#ffe066", scout: "#c77dff" };
     C.G.p.pets.forEach((pet, i) => {
-      const a = C.G.t * 2 + i * 2.1;
-      ctx.fillStyle = "#7df9ff";
-      ctx.fillRect(p.x + Math.cos(a) * 26 - 5, p.y + Math.sin(a) * 26 - 5, 10, 10);
+      // Positions come from updatePets; fall back to the orbit formula.
+      let px = pet.x, py = pet.y;
+      if (px == null) {
+        const a = C.G.t * 2 + i * 2.1;
+        px = p.x + Math.cos(a) * 26; py = p.y + Math.sin(a) * 26;
+      }
+      ctx.fillStyle = PET_COLORS[pet.role || "gunner"] || "#7df9ff";
+      ctx.fillRect(px - 5, py - 5, 10, 10);
+      if ((pet.role || "gunner") !== "gunner") {
+        ctx.fillStyle = "#111"; ctx.font = "bold 8px monospace"; ctx.textAlign = "center";
+        ctx.fillText((pet.role || "?")[0].toUpperCase(), px, py + 3);
+      }
     });
-    // Player (blinks while invulnerable; soul glow dims with HP).
+    // Player (blinks while invulnerable; soul glow dims with HP; cloaked = ghost).
+    const cloakA = p.cloakT > 0 ? 0.45 : 1;
     if (p.inv <= 0 || Math.floor(C.G.t * 12) % 2 === 0) {
+      ctx.globalAlpha = cloakA;
       ctx.fillStyle = "#2ecc71"; ctx.fillRect(p.x - 9, p.y - 12, 18, 24);
       ctx.fillStyle = "#ffe0bd"; ctx.fillRect(p.x - 6, p.y - 18, 12, 8);
       ctx.fillStyle = "#7CFC00";
-      ctx.globalAlpha = 0.3 + 0.7 * (p.hp / p.maxHp);
+      ctx.globalAlpha = cloakA * (0.3 + 0.7 * (p.hp / p.maxHp));
       ctx.fillRect(p.x - 9, p.y + 12, 18, 3);
       ctx.globalAlpha = 1;
     }
