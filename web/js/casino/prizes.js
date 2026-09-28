@@ -214,6 +214,11 @@ C.applyFamiliar = function (res) {
         C.noteBuild(res.name.slice(0, 18) + ": raw magic, cooldowns down", "pass");
         return "Trait: raw magic — power cooldowns tick faster.";
       }
+      if (/invisib|stealth|cloak|silent|unseen|sneak|skulk|prowl|ghost|phantom/i.test(nm)) {
+        p.ghost = (p.ghost || 0) + 1;
+        C.noteBuild(res.name.slice(0, 18) + ": ghost ×" + p.ghost, "pass");
+        return "Trait: ghost ×" + p.ghost + " — pulls run quieter, guards notice you later.";
+      }
       if (/thinker|sense|detect|perceiv|predict|foresight|intuit|insight|sixth sense|danger sense|awareness|vigil/i.test(nm)) {
         p.survey = true;
         C.modStat("LCK", 1);

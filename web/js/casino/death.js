@@ -20,7 +20,7 @@
   };
 
   C.deathPulls = function (secs) {
-    return Math.min(8, 1 + Math.floor(secs / 150));
+    return Math.min(10, 2 + Math.floor(secs / 60));
   };
 
   const REEL_SYMS = ["7", "BAR", "★", "♦", "♥", "🪙"];
@@ -161,18 +161,22 @@
     return true;
   };
 
-  // Instantly resolve unspun pulls (R respawns through them).
+  // Instantly resolve unspun pulls (R respawns through them), then hand
+  // the machine's bank to the respawn (spins bank per-machine, not per-run).
   C.resolveDeathRest = function () {
     const G = C.G;
     const M = G && G.machine;
-    if (!M || M.spinning) return;
-    while (M.pullsLeft > 0) {
-      M.pullsLeft -= 1;
-      const out = C.deathPayout(M.tier);
-      C.bankDeath(out);
-      addResult(out);
+    if (!M) return;
+    if (!M.spinning) {
+      while (M.pullsLeft > 0) {
+        M.pullsLeft -= 1;
+        const out = C.deathPayout(M.tier);
+        C.bankDeath(out);
+        addResult(out);
+      }
+      renderBanked();
     }
-    renderBanked();
+    C.banked = M.banked;
   };
 
   // Respawn consumes the bank into starting resources; returns a summary.

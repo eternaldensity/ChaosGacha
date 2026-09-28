@@ -51,12 +51,13 @@
       };
     }
     C.audio.pullStart();
-    // Noise: alert nearby guards (unless cloaked).
+    // Noise: alert nearby guards (unless cloaked). Ghosts run quiet.
     const room = C.curRoom();
     if (!C.G.p.cloakT) {
       room.alert = 5;
+      const noise = C.noiseRadius();
       for (const gd of room.guards) {
-        if (!gd.pacified && Math.hypot(gd.x - C.G.p.x, gd.y - C.G.p.y) < 300) gd.chase = true;
+        if (!gd.pacified && Math.hypot(gd.x - C.G.p.x, gd.y - C.G.p.y) < noise) gd.chase = true;
       }
     }
     C.updateHud();

@@ -222,6 +222,9 @@
       best.pacified = true;
       best.chase = false;
       C.floater(best.x, best.y - 30, "♪", "#11d939");
+    } else if (ab.op === "veil") {
+      p.cloakT = 3 + ab.rarity * 0.2;
+      C.floater(p.x, p.y - 30, "👻 veiled", "#c77dff");
     } else if (ab.op === "dash") {
       p.dashDx = Math.cos(p.facing); p.dashDy = Math.sin(p.facing);
       p.dashSpd = ab.power;
@@ -757,8 +760,27 @@
       const st = C.tickGuardStatuses(gd, dt);
       if (st.died) continue;
       if (!gd.pacified && !gd.chase &&
-          (d < gd.sight * (1 - (C.G.p.presence || 0)) * (C.G.p.sightMult || 1) || room.alert > 0)) gd.chase = true;
+          (d < gd.sight * (1 - (C.G.p.presence || 0)) * (C.G.p.sightMult || 1) * C.noticeMult() || room.alert > 0)) gd.chase = true;
       if (!gd.chase) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
+      // No body-stacking: guards shove out of the player and each other
+      // instead of piling onto one pixel (and one HP bar).
+      {
+        const px = p.x - gd.x, py = p.y - gd.y;
+        const pd = Math.hypot(px, py);
+        if (pd > 0.01 && pd < 24) {
+          gd.x -= (px / pd) * (24 - pd) * 0.5;
+          gd.y -= (py / pd) * (24 - pd) * 0.5;
+        }
+        for (const o of room.guards) {
+          if (o === gd) continue;
+          const ox = gd.x - o.x, oy = gd.y - o.y;
+          const od = Math.hypot(ox, oy);
+          if (od > 0.01 && od < 22) {
+            gd.x += (ox / od) * (22 - od) * 0.3;
+            gd.y += (oy / od) * (22 - od) * 0.3;
+          }
+        }
+      }
       // Captain's rally aura: nearby coworkers hustle (+25% speed).
       let aura = 1;
       if (gd.type !== "captain") {

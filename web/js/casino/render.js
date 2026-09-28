@@ -28,24 +28,48 @@
       ctx.globalAlpha = 1;
     }
     for (const wl of room.walls) {
-      ctx.fillStyle = "#241b33";
+      ctx.fillStyle = "#2e2342";
       ctx.fillRect(wl.x, wl.y, wl.w, wl.h);
-      ctx.fillStyle = "#3b2d55"; // lit top edge
+      ctx.fillStyle = "#4a3a6b"; // lit top edge
       ctx.fillRect(wl.x, wl.y, wl.w, 3);
+      ctx.strokeStyle = "#a58fe0"; ctx.lineWidth = 3; // outline lifts it off the carpet
+      ctx.strokeRect(wl.x - 1.5, wl.y - 1.5, wl.w + 3, wl.h + 3);
       ctx.strokeStyle = "#171021"; ctx.lineWidth = 1;
-      ctx.strokeRect(wl.x + 0.5, wl.y + 0.5, wl.w - 1, wl.h - 1);
+      ctx.strokeRect(wl.x + 3.5, wl.y + 3.5, wl.w - 7, wl.h - 7);
     }
   }
 
   // Vertical fade so the tape reads as a wheel seen edge-on.
-  function reelFade(ctx, x, y, w, h) {
+  // edge = "dark" (gacha strip) or "paper" (slot windows).
+  function reelFade(ctx, x, y, w, h, edge) {
+    const c = edge === "paper" ? "232,228,218" : "8,10,14";
     const gr = ctx.createLinearGradient(0, y, 0, y + h);
-    gr.addColorStop(0, "rgba(8,10,14,.7)");
-    gr.addColorStop(0.3, "rgba(8,10,14,0)");
-    gr.addColorStop(0.7, "rgba(8,10,14,0)");
-    gr.addColorStop(1, "rgba(8,10,14,.7)");
+    gr.addColorStop(0, "rgba(" + c + ",.8)");
+    gr.addColorStop(0.3, "rgba(" + c + ",0)");
+    gr.addColorStop(0.7, "rgba(" + c + ",0)");
+    gr.addColorStop(1, "rgba(" + c + ",.8)");
     ctx.fillStyle = gr;
     ctx.fillRect(x, y, w, h);
+  }
+
+  // Classic slot ink on paper. BAR gets its own plaque.
+  function reelSymbol(ctx, s, x, yc, locked, tierColor) {
+    if (s === "BAR") {
+      ctx.fillStyle = locked ? tierColor : "#1a1a22";
+      const w = 22;
+      ctx.fillRect(x - w / 2, yc - 9, w, 18);
+      ctx.fillStyle = "#f5f1e6";
+      ctx.font = "bold 9px monospace";
+      ctx.fillText("BAR", x, yc + 1);
+      return;
+    }
+    ctx.fillStyle = s === "7" ? "#c02020"
+      : s === "★" ? "#b8860b"
+      : s === "♦" || s === "♥" ? "#c02020"
+      : s === "🪙" ? "#8a6d1c"
+      : locked ? tierColor : "#555566";
+    ctx.font = symFont(s);
+    ctx.fillText(s.length > 3 ? s.slice(0, 3) : s, x, yc);
   }
 
   function symFont(s) {
@@ -61,7 +85,7 @@
     const H = C.REEL_H, N = C.SYMS.length;
     ctx.save();
     ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
-    ctx.fillStyle = "#10131a";
+    ctx.fillStyle = "#e8e4da";
     ctx.fillRect(x, y, w, h);
     // Tape index q drifts with pos; rows tile around the window center and
     // move downward as pos grows (screenY rises with q for fixed k).
@@ -72,13 +96,11 @@
       const s = C.SYMS[C.pmod(k, N)];
       const yc = y + h / 2 + (q - k) * H;
       const edge = Math.abs(yc - (y + h / 2)) / (h / 2); // 0 center, 1+ edge
-      ctx.globalAlpha = Math.max(0.3, 1 - edge * 0.55);
-      ctx.fillStyle = reel.state === "locked" ? t.color : "#c7ccd6";
-      ctx.font = symFont(s);
-      ctx.fillText(s.length > 3 ? s.slice(0, 3) : s, x + w / 2, yc);
+      ctx.globalAlpha = Math.max(0.35, 1 - edge * 0.5);
+      reelSymbol(ctx, s, x + w / 2, yc, reel.state === "locked", t.color);
     }
     ctx.globalAlpha = 1;
-    reelFade(ctx, x, y, w, h);
+    reelFade(ctx, x, y, w, h, "paper");
     ctx.restore();
     ctx.strokeStyle = reel.state === "locked" ? t.color : "#333a47";
     ctx.lineWidth = reel.state === "locked" ? 2 : 1;
@@ -91,18 +113,17 @@
       for (let i = 0; i < 3; i++) drawSlotReelWindow(m, t, i);
       return;
     }
-    // Idle: show the last result dimmed.
+    // Idle: show the last result dimmed on paper.
     const labels = m.idleSyms || ["◈", "◈", "◈"];
     for (let i = 0; i < 3; i++) {
       const x = m.x - 39 + i * 27, y = m.y - 16;
-      ctx.fillStyle = "#1a1e28";
+      ctx.fillStyle = "#e8e4da";
       ctx.fillRect(x, y, 25, 30);
       ctx.strokeStyle = "#333a47"; ctx.lineWidth = 1;
       ctx.strokeRect(x + 0.5, y + 0.5, 24, 29);
-      ctx.fillStyle = "#8b93a3";
-      ctx.font = "bold 13px monospace"; ctx.textAlign = "center";
-      const s = String(labels[i]);
-      ctx.fillText(s.length > 3 ? s.slice(0, 3) : s, x + 12.5, y + 20);
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      reelSymbol(ctx, String(labels[i]), x + 12.5, y + 15, false, m.color);
+      ctx.textBaseline = "alphabetic";
     }
   }
 

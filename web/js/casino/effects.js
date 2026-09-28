@@ -171,6 +171,13 @@
         blurb: "delayed blast (" + power + " dmg, lands late)",
       };
     }
+    if (/invisib|stealth|\bcloak\b|unseen|vanish|shadowmeld|blend|fade from sight|undetect/i.test(nm)) {
+      return {
+        name: res.name, rarity: r, op: "veil",
+        cd: C.slotCd(22, r), cdLeft: 0,
+        blurb: "veil " + Math.round(3 + r * 0.2) + "s: unseen + quiet pulls",
+      };
+    }
     if (/dominate|possess|mind control|betray|\bcharm\b|confuse|beguile|enthrall/i.test(nm)) {
       return {
         name: res.name, rarity: r, op: "betray",

@@ -59,7 +59,7 @@
         elemBonus: {}, resist: {}, regen: 0, regenT: 0,
         healBonus: 0, rollCdMax: 5, threatDecayT: 0, rangedBonus: 0, draft: null,
         parts: 0, survey: false, surveyT: 0,
-        sightMult: 1, cdrMult: 1, healMult: 1, dmgTakenMult: 1, dmgDealtMult: 1,
+        sightMult: 1, cdrMult: 1, healMult: 1, dmgTakenMult: 1, dmgDealtMult: 1, ghost: 0,
         regenOff: false, armorLock: false, pacifist: false,
         dmgTakenElementalOnly: false,
         ammo: 12, mana: 60,
@@ -311,6 +311,14 @@
     return b;
   };
 
+  // Ghost stacks (stealth traits): quieter pulls, later notice.
+  C.noiseRadius = function () {
+    return 300 * (C.G.alertMult || 1) * Math.max(0.4, 1 - 0.15 * (C.G.p.ghost || 0));
+  };
+  C.noticeMult = function () {
+    return Math.max(0.5, 1 - 0.1 * (C.G.p.ghost || 0));
+  };
+
   C.hasAffix = function (gd, name) {
     return gd.affix === name || gd.affix2 === name;
   };
@@ -413,6 +421,8 @@
   C.onEnterRoom = function () {
     const room = C.curRoom();
     C.G.maxDepth = Math.max(C.G.maxDepth || 0, room.depth);
+    // Arrival grace: a beat of invulnerability to read the room.
+    C.G.p.inv = Math.max(C.G.p.inv, 0.75);
     C.projs.length = 0;
     C.floaters.length = 0;
     if (room.vault && room.depth >= 6 && !room.bossSpawned) {
