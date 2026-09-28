@@ -1,0 +1,109 @@
+"use strict";
+/* Main loop: timers, movement, doors, pulls, waves.
+ * Depends on: everything above (runtime). */
+(function (C) {
+  let last = 0;
+
+  C.frame = function (ts) {
+    requestAnimationFrame(C.frame);
+    const dt = Math.min(0.05, (ts - last) / 1000 || 0.016);
+    last = ts;
+    if (!C.G) return;
+    C.update(dt);
+    C.render(dt);
+  };
+
+  function moveInput() {
+    const k = C.keys;
+    const mx = (k["d"] || k["arrowright"] ? 1 : 0) - (k["a"] || k["arrowleft"] ? 1 : 0);
+    const my = (k["s"] || k["arrowdown"] ? 1 : 0) - (k["w"] || k["arrowup"] ? 1 : 0);
+    return [mx, my];
+  }
+
+  function updateDoors(p) {
+    const doorR = 34;
+    let entered = null;
+    if (p.y < C.WALL - 6 && Math.abs(p.x - C.W / 2) < doorR) entered = "N";
+    else if (p.y > C.H - C.WALL + 6 && Math.abs(p.x - C.W / 2) < doorR) entered = "S";
+    else if (p.x < C.WALL - 6 && Math.abs(p.y - C.H / 2) < doorR) entered = "W";
+    else if (p.x > C.W - C.WALL + 6 && Math.abs(p.y - C.H / 2) < doorR) entered = "E";
+    if (entered) {
+      if (C.G.pull) C.cancelPull("You left the room");
+      if (entered === "N") { C.G.roomY--; p.y = C.H - C.WALL - 20; p.x = C.W / 2; }
+      if (entered === "S") { C.G.roomY++; p.y = C.WALL + 20; p.x = C.W / 2; }
+      if (entered === "W") { C.G.roomX--; p.x = C.W - C.WALL - 20; p.y = C.H / 2; }
+      if (entered === "E") { C.G.roomX++; p.x = C.WALL + 20; p.y = C.H / 2; }
+      C.onEnterRoom();
+    }
+    p.x = Math.max(C.WALL - 2, Math.min(C.W - C.WALL + 2, p.x));
+    p.y = Math.max(C.WALL - 2, Math.min(C.H - C.WALL + 2, p.y));
+  }
+
+  function updateWaves(dt, room) {
+    C.G.waveT -= dt;
+    if (C.G.waveT > 0) return;
+    C.G.waveT = Math.max(25, 60 - C.G.threat * 5 - room.danger * 2);
+    const n = 1 + Math.floor(C.G.threat / 2) + (room.danger > 4 ? 1 : 0);
+    for (let i = 0; i < n; i++) {
+      const gd = C.makeGuard(room, room.danger);
+      gd.x = C.WALL + 30;
+      gd.y = C.WALL + 80 + Math.random() * 100;
+      gd.chase = true;
+      room.guards.push(gd);
+    }
+    C.showCard("Security wave ★" + C.G.threat,
+      n + " guard(s) converge. Pulls are loud — keep moving.", "", 2200);
+  }
+
+  C.update = function (dt) {
+    const p = C.G.p, room = C.curRoom();
+    if (C.G.cardT > 0) {
+      C.G.cardT -= dt;
+      if (C.G.cardT <= 0) C.ui.card.classList.remove("show");
+    }
+    if (C.G.over) return;
+    C.G.t += dt;
+    if (p.atkCd > 0) p.atkCd -= dt;
+    if (p.inv > 0) p.inv -= dt;
+    if (p.rollCd > 0) p.rollCd -= dt;
+    if (p.rollT > 0) p.rollT -= dt;
+    if (C.G.shake > 0) C.G.shake -= dt;
+    room.alert = Math.max(0, room.alert - dt);
+
+    // Timed feats.
+    if (!C.G.feats.pacifist && C.G.t > 300 && C.G.kills === 0) {
+      C.G.feats.pacifist = 1;
+      p.tickets.gold++;
+      C.showCard("Feat: Ghost (5:00 pacifist)", "+1× Gold Trait ticket.", "", 3000);
+    }
+    if (!C.G.feats.deep && room.depth >= 3) {
+      C.G.feats.deep = 1;
+      p.tickets.gold++;
+      C.showCard("Feat: High roller (depth 3)", "+1× Gold Random ticket.", "", 3000);
+    }
+
+    // Movement cancels pulls — greed vs. exposure.
+    let [mx, my] = moveInput();
+    if (mx || my) {
+      if (C.G.pull) C.cancelPull("You moved");
+      const l = Math.hypot(mx, my); mx /= l; my /= l;
+      p.x += mx * p.speed * dt;
+      p.y += my * p.speed * dt;
+    }
+    if (C.keys[" "] && p.rollCd <= 0 && (mx || my)) { p.rollT = 0.32; p.rollCd = 5; }
+    if (p.rollT > 0) { p.x += mx * 260 * dt; p.y += my * 260 * dt; }
+
+    updateDoors(p);
+
+    if (C.keys["e"] && !C.G.pull) C.tryStartPull();
+    C.updatePull(dt);
+
+    if (C.takeAttack() && p.weapon) C.tryAttack();
+
+    C.updateGuards(dt);
+    C.updatePets(dt);
+    C.updateProjectiles(dt);
+    updateWaves(dt, room);
+    C.updateHud();
+  };
+})(window.Casino);
