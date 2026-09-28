@@ -1,11 +1,13 @@
 "use strict";
-/* Pull lifecycle: start/cancel/finish + reel animation.
+/* Pull lifecycle: E starts a machine pull, you walk away, loot drops on the
+ * floor when done. Pulls tick even while you kite guards or visit rooms.
  * Depends on: config, dom, state, slots, prizes, hud (all runtime). */
 (function (C) {
-  C.nearestMachine = function () {
+  C.nearestMachine = function (freeOnly) {
     const room = C.curRoom();
-    let best = null, bd = 78;
+    let best = null, bd = C.INTERACT_R;
     for (const m of room.machines) {
+      if (freeOnly && m.pull) continue;
       const d = Math.hypot(m.x - C.G.p.x, m.y - C.G.p.y);
       if (d < bd) { bd = d; best = m; }
     }
@@ -13,8 +15,8 @@
   };
 
   C.tryStartPull = function () {
-    if (C.G.pull || C.G.over) return;
-    const m = C.nearestMachine();
+    if (C.G.over || C.G.title) return;
+    const m = C.nearestMachine(true);
     if (!m) return;
     const t = C.tierById(m.tier);
     if (m.kind === "slot") {
@@ -24,11 +26,12 @@
         return;
       }
       C.G.p.coins -= c;
-      C.G.pull = {
-        m, t: 0, dur: t.pull * C.G.p.pullMul,
-        pay: C.rollSlotPayout(t), syms: null, locks: [false, false, false],
+      const pay = C.rollSlotPayout(t);
+      m.pull = {
+        t: 0, dur: t.pull * C.G.p.pullMul, pay,
+        syms: C.symbolsFor(pay), locks: [false, false, false],
+        disp: ["7", "7", "7"], fin: null,
       };
-      C.G.pull.syms = C.symbolsFor(C.G.pull.pay);
     } else {
       if ((C.G.p.tickets[m.tier] || 0) < 1) {
         C.showCard("Need 1× " + t.label + " ticket",
@@ -36,7 +39,7 @@
         return;
       }
       C.G.p.tickets[m.tier]--;
-      C.G.pull = { m, t: 0, dur: 3.0 * C.G.p.pullMul, gacha: C.gachaRoll(m.tier, m.cat), gIdx: 0 };
+      m.pull = { t: 0, dur: 3.0 * C.G.p.pullMul, gacha: C.gachaRoll(m.tier, m.cat), gIdx: 0, fin: null };
     }
     // Noise: alert nearby guards.
     const room = C.curRoom();
@@ -44,104 +47,108 @@
     for (const gd of room.guards) {
       if (Math.hypot(gd.x - C.G.p.x, gd.y - C.G.p.y) < 300) gd.chase = true;
     }
-    C.showPullOverlay(m, t);
     C.updateHud();
   };
 
-  C.cancelPull = function (msg) {
-    if (!C.G.pull) return;
-    C.G.pull = null;
-    C.hidePullOverlay();
-    if (msg) C.showCard("Pull interrupted", msg + " (no refund — the house thanks you).", "", 2000);
-  };
+  function dropSpot(room, m) {
+    const front = m.y < C.H / 2 ? 1 : -1;
+    return {
+      x: Math.max(60, Math.min(C.W - 60, m.x + (Math.random() * 30 - 15))),
+      y: m.y + front * (C.MH / 2 + 18),
+    };
+  }
 
-  C.finishPull = function () {
-    const pull = C.G.pull, m = pull.m, t = C.tierById(m.tier);
-    C.G.pull = null;
-    C.hidePullOverlay();
+  function spawnPickup(room, m, data) {
+    const s = dropSpot(room, m);
+    room.pickups.push(Object.assign({ x: s.x, y: s.y, bob: Math.random() * 6 }, data));
+  }
+
+  function completePull(room, m) {
+    const pull = m.pull, t = C.tierById(m.tier);
+    m.pull = null;
     C.G.pulls++;
     if (m.kind === "slot") {
-      const pay = pull.pay;
+      const pay = pull.pay, at = { x: m.x, y: m.y };
       if (pay.kind === "jackpot") {
-        C.G.p.coins += pay.coins;
-        C.G.p.tickets[pay.ticket] = (C.G.p.tickets[pay.ticket] || 0) + 1;
+        spawnPickup(room, m, { kind: "coins", amount: pay.coins });
+        spawnPickup(room, m, { kind: "ticket", tier: pay.ticket });
+        C.floater(at.x, at.y - 50, "JACKPOT 7-7-7!", "#f7d40a");
         C.showCard("JACKPOT 7-7-7! +" + pay.coins + " coins + 1× " + pay.ticket,
-          t.label + " slot screams. Every guard heard that.", "", 3500);
-        for (const gd of C.curRoom().guards) gd.chase = true;
+          t.label + " slot screams. Every guard heard that. Grab the loot.", "", 3500);
+        for (const gd of room.guards) gd.chase = true;
       } else if (pay.kind === "ticket") {
-        C.G.p.tickets[pay.ticket] = (C.G.p.tickets[pay.ticket] || 0) + 1;
-        C.showCard("🎟 +1× " + pay.ticket + " ticket",
-          "From a " + t.label + " slot (" + pull.syms.join(" ") + "). Feed it to a " +
-          pay.ticket + " gacha.", "", 3000);
+        spawnPickup(room, m, { kind: "ticket", tier: pay.ticket });
+        C.floater(at.x, at.y - 50, "🎟 " + pay.ticket, t.color);
       } else if (pay.kind === "coins") {
-        C.G.p.coins += pay.coins;
-        C.showCard("🪙 +" + pay.coins + " coins",
-          t.label + " slot (" + pull.syms.join(" ") + ").", "", 1800);
+        spawnPickup(room, m, { kind: "coins", amount: pay.coins });
+        C.floater(at.x, at.y - 50, "+" + pay.coins + " 🪙", "#ffe066");
       } else {
-        C.showCard("House wins",
-          t.label + " slot (" + pull.syms.join(" ") + "). Try again deeper for better EV.", "", 1800);
+        C.floater(at.x, at.y - 50, "house wins", "#878d96");
       }
     } else {
-      const res = pull.gacha.res;
-      const note = C.applyPrize(res);
-      C.showCard("[" + C.rarityName(res.rarity) + " " + res.category + "] " + res.name +
-        " (" + res.rarity.toFixed(1) + ")",
-        (res.description || "").slice(0, 160) + " — " + note,
-        "Ticket: " + t.label + " · odds " + (res.odds || 0).toFixed(2) + "%", 6000);
+      spawnPickup(room, m, { kind: "prize", res: pull.gacha.res, tier: m.tier });
+      C.floater(m.x, m.y - 50, "🎲 " + pull.gacha.res.name.slice(0, 24), C.rarityColor(pull.gacha.res.rarity));
     }
     C.checkFeats();
     C.updateHud();
-  };
+  }
 
-  // Advance the active pull one tick: reel theater, then a short
-  // resolution beat with the locked result before paying out.
-  C.updatePull = function (dt) {
-    const pull = C.G.pull;
+  // Animate one machine pull; returns true when it just finished.
+  function tickMachinePull(room, m, dt) {
+    const pull = m.pull;
     if (!pull) return;
-    if (pull._finIn != null) {
-      pull._finIn -= dt;
-      if (pull._finIn <= 0) C.finishPull();
+    if (pull.fin != null) {
+      pull.fin -= dt;
+      if (pull.fin <= 0) completePull(room, m);
       return;
     }
     pull.t += dt;
-    const frac = Math.min(1, pull.t / pull.dur);
-    C.ui.chanBar.style.width = (frac * 100).toFixed(1) + "%";
-    if (pull.m.kind === "slot") {
-      // 3 reels spin fast, lock left-to-right at 55/75/95%.
+    if (m.kind === "slot") {
+      const frac = Math.min(1, pull.t / pull.dur);
       const locks = [0.55, 0.75, 0.95];
-      C.ui.sreels.forEach((sn, i) => {
-        if (frac >= locks[i]) {
-          if (!pull.locks[i]) { pull.locks[i] = true; sn.classList.add("locked"); }
-          sn.textContent = pull.syms[i];
+      locks.forEach((edge, i) => {
+        if (frac >= edge) {
+          pull.locks[i] = true;
+          pull.disp[i] = pull.syms[i];
         } else {
-          sn.textContent = C.SYMS[Math.floor(Math.random() * C.SYMS.length)];
+          pull.disp[i] = C.SYMS[Math.floor(Math.random() * C.SYMS.length)];
         }
       });
-      C.ui.reelSub.textContent = "Reels… " + Math.round(frac * 100) + "% — hold still";
-    } else {
-      // Single gacha reel: cycle decoys, settle on the winner at the end.
-      const strip = pull.gacha.strip || [];
-      if (frac < 0.92 && strip.length) {
-        if (Math.random() < 0.5) {
-          pull.gIdx = (pull.gIdx + 1) % strip.length;
-          const d = strip[pull.gIdx];
-          C.ui.gachaReel.textContent = d.name;
-          C.ui.gachaReel.style.color = C.rarityColor(d.rarity);
-        }
-      } else {
-        C.ui.gachaReel.textContent = "▶ " + pull.gacha.res.name + " ◀";
-        C.ui.gachaReel.style.color = C.rarityColor(pull.gacha.res.rarity);
-      }
-      C.ui.reelSub.textContent = "Gacha reel… " + Math.round(frac * 100) + "% — hold still";
+    } else if (pull.gacha.strip.length && Math.random() < 0.5) {
+      pull.gIdx = (pull.gIdx + 1) % pull.gacha.strip.length;
     }
-    if (pull.t >= pull.dur && pull._finIn == null) {
-      if (pull.m.kind === "slot") {
-        C.ui.sreels.forEach((sn, i) => { sn.textContent = pull.syms[i]; sn.classList.add("locked"); });
-      } else {
-        C.ui.gachaReel.textContent = "▶ " + pull.gacha.res.name + " ◀";
-        C.ui.gachaReel.style.color = C.rarityColor(pull.gacha.res.rarity);
+    if (pull.t >= pull.dur) pull.fin = 0.42; // hold the locked result briefly
+  }
+
+  // Tick every known room's pulls so loot is waiting when you circle back.
+  C.updatePulls = function (dt) {
+    for (const room of C.rooms.values()) {
+      for (const m of room.machines) tickMachinePull(room, m, dt);
+    }
+  };
+
+  C.updatePickups = function (dt) {
+    const p = C.G.p, room = C.curRoom();
+    for (const pk of room.pickups) pk.bob += dt;
+    for (const pk of [...room.pickups]) {
+      if (Math.hypot(pk.x - p.x, pk.y - p.y) > C.PICKUP_R) continue;
+      room.pickups.splice(room.pickups.indexOf(pk), 1);
+      if (pk.kind === "coins") {
+        p.coins += pk.amount;
+        C.floater(p.x, p.y - 24, "+" + pk.amount + " 🪙", "#ffe066");
+      } else if (pk.kind === "ticket") {
+        p.tickets[pk.tier] = (p.tickets[pk.tier] || 0) + 1;
+        const t = C.tierById(pk.tier);
+        C.floater(p.x, p.y - 24, "+1 🎟 " + pk.tier, t.color);
+      } else if (pk.kind === "prize") {
+        const res = pk.res;
+        const note = C.applyPrize(res);
+        C.showCard("[" + C.rarityName(res.rarity) + " " + res.category + "] " + res.name +
+          " (" + res.rarity.toFixed(1) + ")",
+          (res.description || "").slice(0, 160) + " — " + note,
+          "Ticket: " + pk.tier + " · odds " + (res.odds || 0).toFixed(2) + "%", 6000);
       }
-      pull._finIn = 0.42;
+      C.updateHud();
     }
   };
 })(window.Casino);

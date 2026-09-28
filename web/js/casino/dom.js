@@ -1,18 +1,10 @@
 "use strict";
-/* DOM refs + card/overlay UI. Depends on: config (namespace only). */
+/* DOM refs + card/title UI. Depends on: config (namespace only). */
 (function (C) {
   function el(id) { return document.getElementById(id); }
   C.el = el;
 
-  const slotReels = el("slotReels");
   C.ui = {
-    overlay: el("reelOverlay"),
-    reelTitle: el("reelTitle"),
-    slotReels,
-    sreels: [...slotReels.querySelectorAll(".sreel")],
-    gachaReel: el("gachaReel"),
-    chanBar: el("chanBar"),
-    reelSub: el("reelSub"),
     card: el("card"),
     cardTitle: el("cardTitle"),
     cardBody: el("cardBody"),
@@ -20,6 +12,8 @@
     deathBox: el("death"),
     deathStats: el("deathStats"),
     deathLegacy: el("deathLegacy"),
+    titleBox: el("title"),
+    startBtn: el("startBtn"),
     canvas: el("game"),
   };
   C.ctx = C.ui.canvas.getContext("2d");
@@ -34,17 +28,10 @@
   };
 
   C.hideDeath = function () { C.ui.deathBox.classList.remove("show"); };
+  C.showTitle = function () { C.ui.titleBox.classList.remove("hide"); };
+  C.hideTitle = function () { C.ui.titleBox.classList.add("hide"); };
 
-  // Show the reel overlay for a pull: 3 boxes for slots, 1 bar for gacha.
-  C.showPullOverlay = function (machine, tier) {
-    const isSlot = machine.kind === "slot";
-    C.ui.overlay.classList.add("show");
-    C.ui.slotReels.style.display = isSlot ? "flex" : "none";
-    C.ui.gachaReel.style.display = isSlot ? "none" : "flex";
-    C.ui.sreels.forEach(s => s.classList.remove("locked"));
-    C.ui.chanBar.style.width = "0%";
-    C.ui.reelTitle.textContent = (isSlot ? "🎰 " : "🎲 ") + tier.label + " " + machine.kind + "…";
+  C.floater = function (x, y, txt, color) {
+    C.floaters.push({ x, y, txt, color: color || "#fff", t: 1.5 });
   };
-
-  C.hidePullOverlay = function () { C.ui.overlay.classList.remove("show"); };
 })(window.Casino);

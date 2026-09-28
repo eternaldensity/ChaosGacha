@@ -60,14 +60,12 @@
     const p = C.G.p;
     if (p.inv > 0 || p.rollT > 0 || C.G.over) return;
     p.hp -= n; p.inv = 0.9; C.G.shake = 0.2;
-    C.cancelPull("Tackled by security");
     if (p.hp <= 0) C.die();
     C.updateHud();
   };
 
   C.die = function () {
     C.G.over = true;
-    C.hidePullOverlay();
     const mins = C.G.t / 60;
     const lt = C.legacyTierFor(mins);
     const t = C.tierById(lt);
@@ -104,6 +102,8 @@
         const sp = gd.speed * (p.rollT > 0 ? 0.7 : 1);
         gd.x += Math.cos(a) * sp * dt;
         gd.y += Math.sin(a) * sp * dt;
+        const fixed = C.collideCircle(gd.x, gd.y, 9, C.solids(room));
+        gd.x = fixed[0]; gd.y = fixed[1];
         if (d < 26 && gd.atkCd <= 0) {
           C.hurtPlayer(1);
           gd.atkCd = 0.9;
@@ -140,7 +140,10 @@
     const p = C.G.p, room = C.curRoom();
     for (const pr of [...C.projs]) {
       pr.x += pr.vx * dt; pr.y += pr.vy * dt; pr.life -= dt;
-      if (pr.life <= 0) { C.projs.splice(C.projs.indexOf(pr), 1); continue; }
+      if (pr.life <= 0 || C.pointBlocked(room, pr.x, pr.y)) {
+        C.projs.splice(C.projs.indexOf(pr), 1);
+        continue;
+      }
       if (pr.foe) {
         if (Math.hypot(pr.x - p.x, pr.y - p.y) < 12) {
           C.hurtPlayer(pr.dmg);

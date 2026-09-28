@@ -3,6 +3,7 @@
  * Depends on: everything above (runtime). */
 (function (C) {
   let last = 0;
+  let prevE = false;
 
   C.frame = function (ts) {
     requestAnimationFrame(C.frame);
@@ -28,7 +29,6 @@
     else if (p.x < C.WALL - 6 && Math.abs(p.y - C.H / 2) < doorR) entered = "W";
     else if (p.x > C.W - C.WALL + 6 && Math.abs(p.y - C.H / 2) < doorR) entered = "E";
     if (entered) {
-      if (C.G.pull) C.cancelPull("You left the room");
       if (entered === "N") { C.G.roomY--; p.y = C.H - C.WALL - 20; p.x = C.W / 2; }
       if (entered === "S") { C.G.roomY++; p.y = C.WALL + 20; p.x = C.W / 2; }
       if (entered === "W") { C.G.roomX--; p.x = C.W - C.WALL - 20; p.y = C.H / 2; }
@@ -56,6 +56,7 @@
   }
 
   C.update = function (dt) {
+    if (C.G.title) return; // title screen: frozen room behind the intro
     const p = C.G.p, room = C.curRoom();
     if (C.G.cardT > 0) {
       C.G.cardT -= dt;
@@ -82,21 +83,26 @@
       C.showCard("Feat: High roller (depth 3)", "+1× Gold Random ticket.", "", 3000);
     }
 
-    // Movement cancels pulls — greed vs. exposure.
+    // Movement: free to roam mid-pull, maze walls block.
     let [mx, my] = moveInput();
     if (mx || my) {
-      if (C.G.pull) C.cancelPull("You moved");
       const l = Math.hypot(mx, my); mx /= l; my /= l;
       p.x += mx * p.speed * dt;
       p.y += my * p.speed * dt;
     }
     if (C.keys[" "] && p.rollCd <= 0 && (mx || my)) { p.rollT = 0.32; p.rollCd = 5; }
     if (p.rollT > 0) { p.x += mx * 260 * dt; p.y += my * 260 * dt; }
+    const fixed = C.collideCircle(p.x, p.y, p.r, C.solids(room));
+    p.x = fixed[0]; p.y = fixed[1];
 
     updateDoors(p);
 
-    if (C.keys["e"] && !C.G.pull) C.tryStartPull();
-    C.updatePull(dt);
+    // Edge-triggered E: one press starts one pull, then walk away.
+    const eDown = !!C.keys["e"];
+    if (eDown && !prevE) C.tryStartPull();
+    prevE = eDown;
+    C.updatePulls(dt);
+    C.updatePickups(dt);
 
     if (C.takeAttack() && p.weapon) C.tryAttack();
 
@@ -104,6 +110,8 @@
     C.updatePets(dt);
     C.updateProjectiles(dt);
     updateWaves(dt, room);
+    for (const f of C.floaters) f.t -= dt;
+    C.floaters = C.floaters.filter(f => f.t > 0);
     C.updateHud();
   };
 })(window.Casino);

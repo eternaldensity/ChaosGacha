@@ -1,5 +1,6 @@
 "use strict";
-/* Canvas renderer. Depends on: config, dom, state, slots (slotCost). */
+/* Canvas renderer: maze walls, big machines with in-place reels,
+ * floor pickups, floaters. Depends on: config, dom, state, slots. */
 (function (C) {
   function rr(x, y, w, h, r) {
     const ctx = C.ctx;
@@ -8,36 +9,126 @@
     else ctx.rect(x, y, w, h);
   }
 
+  function drawWalls(room) {
+    const ctx = C.ctx;
+    for (const wl of room.walls) {
+      ctx.fillStyle = "#241b33";
+      ctx.fillRect(wl.x, wl.y, wl.w, wl.h);
+      ctx.fillStyle = "#3b2d55"; // lit top edge
+      ctx.fillRect(wl.x, wl.y, wl.w, 3);
+      ctx.strokeStyle = "#171021"; ctx.lineWidth = 1;
+      ctx.strokeRect(wl.x + 0.5, wl.y + 0.5, wl.w - 1, wl.h - 1);
+    }
+  }
+
+  function slotWindows(m, t) {
+    const ctx = C.ctx;
+    const labels = m.pull ? m.pull.disp : ["◈", "◈", "◈"];
+    for (let i = 0; i < 3; i++) {
+      const x = m.x - 39 + i * 27, y = m.y - 16;
+      ctx.fillStyle = "#1a1e28";
+      ctx.fillRect(x, y, 25, 30);
+      const locked = m.pull && m.pull.locks[i];
+      ctx.strokeStyle = locked ? t.color : "#333a47";
+      ctx.lineWidth = locked ? 2 : 1;
+      ctx.strokeRect(x + 0.5, y + 0.5, 24, 29);
+      ctx.fillStyle = locked ? t.color : "#8b93a3";
+      ctx.font = "bold 13px monospace"; ctx.textAlign = "center";
+      const s = String(labels[i]);
+      ctx.fillText(s.length > 3 ? s.slice(0, 3) : s, x + 12.5, y + 20);
+    }
+  }
+
+  function gachaWindow(m, t) {
+    const ctx = C.ctx;
+    const x = m.x - 42, y = m.y - 15, w = 84, h = 28;
+    ctx.fillStyle = "#1a1e28";
+    ctx.fillRect(x, y, w, h);
+    ctx.strokeStyle = m.pull ? t.color : "#333a47";
+    ctx.lineWidth = m.pull ? 2 : 1;
+    ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+    ctx.textAlign = "center";
+    if (m.pull) {
+      const pull = m.pull;
+      const name = pull.fin != null || pull.t >= pull.dur
+        ? pull.gacha.res.name
+        : (pull.gacha.strip[pull.gIdx] || {}).name || "???";
+      const off = Math.floor(pull.t * 9) % Math.max(1, name.length);
+      const shown = (name + " ⋯ " + name).slice(off, off + 13);
+      ctx.fillStyle = C.rarityColor(pull.gacha.res.rarity);
+      ctx.font = "bold 10px monospace";
+      ctx.fillText(shown, m.x, y + 18);
+    } else {
+      ctx.fillStyle = "#8b93a3";
+      ctx.font = "bold 10px monospace";
+      ctx.fillText((m.cat || "?").toUpperCase().slice(0, 8), m.x, y + 18);
+    }
+  }
+
   function drawMachines(room, near) {
     const ctx = C.ctx;
+    const hw = C.MW / 2, hh = C.MH / 2;
     for (const m of room.machines) {
       const t = C.tierById(m.tier);
-      ctx.fillStyle = "#0d0f15";
-      rr(m.x - 34, m.y - 24, 68, 48, 6); ctx.fill();
+      ctx.fillStyle = m.pull ? "#12141d" : "#0d0f15";
+      rr(m.x - hw, m.y - hh, C.MW, C.MH, 8); ctx.fill();
       ctx.lineWidth = near === m ? 3 : 2;
-      ctx.strokeStyle = m.color; ctx.stroke();
-      // Mini reel window: 3 boxes for slots, 1 bar for gacha.
-      ctx.fillStyle = "#1a1e28";
-      if (m.kind === "slot") {
-        for (let i = 0; i < 3; i++) ctx.fillRect(m.x - 27 + i * 19, m.y - 14, 16, 20);
-        ctx.fillStyle = "#fff"; ctx.font = "9px monospace"; ctx.textAlign = "center";
-        ctx.fillText("◈", m.x - 19, m.y); ctx.fillText("◈", m.x, m.y); ctx.fillText("◈", m.x + 19, m.y);
-      } else {
-        ctx.fillRect(m.x - 27, m.y - 12, 54, 16);
-        ctx.fillStyle = "#fff"; ctx.font = "9px monospace"; ctx.textAlign = "center";
-        ctx.fillText("●", m.x, m.y + 1);
+      ctx.strokeStyle = near === m ? "#fff" : m.color;
+      ctx.stroke();
+      // Header: kind + tier.
+      ctx.fillStyle = m.color; ctx.font = "bold 11px monospace"; ctx.textAlign = "center";
+      ctx.fillText((m.kind === "slot" ? "🎰" : "🎲") + " " + t.label.toUpperCase().slice(0, 9),
+        m.x, m.y - hh + 13);
+      if (m.kind === "slot") slotWindows(m, t);
+      else gachaWindow(m, t);
+      // Footer: price.
+      const cost = m.kind === "slot" ? C.slotCost(t) + "c" : "1×" + t.label.slice(0, 5);
+      ctx.fillStyle = m.pull ? "#ffe066" : "#c7ccd6";
+      ctx.font = "10px monospace";
+      ctx.fillText(m.pull ? "RUNNING…" : cost, m.x, m.y + hh - 7);
+      // Progress bar while running.
+      if (m.pull) {
+        const f = Math.min(1, m.pull.t / m.pull.dur);
+        ctx.fillStyle = "#000";
+        ctx.fillRect(m.x - hw + 6, m.y - hh - 11, C.MW - 12, 7);
+        ctx.fillStyle = m.pull.fin != null ? "#11d939" : t.color;
+        ctx.fillRect(m.x - hw + 7, m.y - hh - 10, (C.MW - 14) * f, 5);
       }
-      ctx.fillStyle = m.color; ctx.font = "bold 10px monospace"; ctx.textAlign = "center";
-      const cost = m.kind === "slot" ? C.slotCost(t) + "c" : "1×" + t.label.slice(0, 4);
-      ctx.fillText((m.kind === "slot" ? "🎰 " : "🎲 ") + t.label.slice(0, 4) + " " + cost, m.x, m.y + 22);
-      if (near === m) {
-        ctx.strokeStyle = "#fff"; ctx.lineWidth = 1;
-        ctx.strokeRect(m.x - 34, m.y - 24, 68, 48);
-        if (C.G.pull) {
-          const f = Math.min(1, C.G.pull.t / C.G.pull.dur);
-          ctx.fillStyle = "#000"; ctx.fillRect(m.x - 32, m.y - 34, 64, 7);
-          ctx.fillStyle = m.color; ctx.fillRect(m.x - 31, m.y - 33, 62 * f, 5);
-        }
+    }
+  }
+
+  function drawPickups(room) {
+    const ctx = C.ctx;
+    ctx.textAlign = "center";
+    for (const pk of room.pickups) {
+      const bobY = pk.y + Math.sin(pk.bob * 4) * 3;
+      if (pk.kind === "coins") {
+        ctx.fillStyle = "#8a6d1c";
+        ctx.fillRect(pk.x - 8, bobY - 8, 16, 16);
+        ctx.fillStyle = "#ffe066";
+        ctx.fillRect(pk.x - 6, bobY - 6, 12, 12);
+        ctx.fillStyle = "#8a6d1c"; ctx.font = "bold 10px monospace";
+        ctx.fillText("c", pk.x, bobY + 4);
+        ctx.fillStyle = "#ffe066"; ctx.font = "10px monospace";
+        ctx.fillText("+" + pk.amount, pk.x, bobY + 22);
+      } else if (pk.kind === "ticket") {
+        const t = C.tierById(pk.tier);
+        ctx.fillStyle = "#e8e4da";
+        ctx.fillRect(pk.x - 10, bobY - 7, 20, 14);
+        ctx.strokeStyle = t.color; ctx.lineWidth = 2;
+        ctx.strokeRect(pk.x - 10, bobY - 7, 20, 14);
+        ctx.fillStyle = "#111"; ctx.font = "bold 10px monospace";
+        ctx.fillText("T", pk.x, bobY + 4);
+        ctx.fillStyle = t.color; ctx.font = "10px monospace";
+        ctx.fillText(pk.tier.slice(0, 5), pk.x, bobY + 22);
+      } else if (pk.kind === "prize") {
+        const col = C.rarityColor(pk.res.rarity);
+        ctx.fillStyle = col;
+        ctx.fillRect(pk.x - 9, bobY - 9, 18, 18);
+        ctx.fillStyle = "#fff"; ctx.font = "bold 12px monospace";
+        ctx.fillText("★", pk.x, bobY + 5);
+        ctx.fillStyle = col; ctx.font = "bold 10px monospace";
+        ctx.fillText(String(pk.res.name).slice(0, 22), pk.x, bobY + 24);
       }
     }
   }
@@ -82,7 +173,9 @@
     ctx.font = "12px monospace"; ctx.textAlign = "center";
     ctx.fillText("DEPTH " + room.depth + " · DANGER " + room.danger.toFixed(1), C.W / 2, 20);
 
-    drawMachines(room, C.G.pull ? C.G.pull.m : C.nearestMachine());
+    drawWalls(room);
+    drawMachines(room, C.nearestMachine(false));
+    drawPickups(room);
     drawGuards(room);
 
     for (const pr of C.projs) {
@@ -103,7 +196,15 @@
       ctx.fillRect(p.x - 9, p.y + 12, 18, 3);
       ctx.globalAlpha = 1;
     }
-    ctx.fillStyle = "rgba(255,255,255,.5)"; ctx.font = "11px monospace"; ctx.textAlign = "center";
+    // Floaters (pickup feedback).
+    ctx.textAlign = "center";
+    for (const f of C.floaters) {
+      ctx.globalAlpha = Math.min(1, f.t);
+      ctx.fillStyle = f.color; ctx.font = "bold 12px monospace";
+      ctx.fillText(f.txt, f.x, f.y - (1.5 - f.t) * 30);
+    }
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = "rgba(255,255,255,.5)"; ctx.font = "11px monospace";
     ctx.fillText("N", C.W / 2, C.WALL - 8); ctx.fillText("S", C.W / 2, C.H - 8);
     ctx.fillText("W", 14, C.H / 2); ctx.fillText("E", C.W - 14, C.H / 2);
     ctx.restore();

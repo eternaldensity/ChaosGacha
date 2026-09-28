@@ -4,6 +4,22 @@ window.Casino = window.Casino || {};
 (function (C) {
   C.W = 960; C.H = 540; C.WALL = 46;
 
+  // Machine footprint + interaction/pickup radii.
+  C.MW = 96; C.MH = 72;
+  C.INTERACT_R = 100;
+  C.PICKUP_R = 26;
+
+  // Tiny seeded PRNG so room layouts are stable across revisits.
+  C.rng = function (seed) {
+    let a = seed >>> 0;
+    return function () {
+      a |= 0; a = (a + 0x6D2B79F5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  };
+
   // Tiers mirror the desktop presets (Gacha.py min/avg/max).
   C.TIERS = [
     { id: "bronze",    label: "Bronze",    cost: 5,    pull: 2.5, color: "#9c7e5a", min: 0.1, avg: 1.3, max: 3.3,  minDepth: 0 },
