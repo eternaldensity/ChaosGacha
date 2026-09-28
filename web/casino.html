@@ -21,7 +21,25 @@
   #stage { position: relative; }
   canvas#game { width: 100%; border-radius: 10px; background:#0b0d12; border:1px solid var(--line);
     image-rendering: pixelated; display:block; }
-  #title { z-index: 8; }
+  #card { position:absolute; left:50%; top:12px; transform:translateX(-50%); display:none; z-index:6;
+    background:#10131a; border:1px solid var(--accent); border-radius:10px; padding:10px 12px; max-width:92%; }
+  #card.show { display:block; }
+  #card h3 { margin:0 0 4px; font-size:1rem; }
+  #card p { margin:4px 0; font-size:.88rem; }
+  #title { position:absolute; inset:0; z-index:8; background:rgba(5,6,12,.88);
+    border-radius:10px; display:flex; align-items:center; justify-content:center; padding:18px; }
+  #title.hide { display:none; }
+  #title .tbox { max-width:600px; max-height:100%; overflow:auto; background:#10131a;
+    border:1px solid var(--accent); border-radius:12px; padding:16px 20px; }
+  #title h2 { margin:0 0 8px; text-align:center; }
+  #title .story { font-size:.92rem; }
+  #title ul { margin:8px 0; padding-left:20px; font-size:.88rem; }
+  #title li { margin:3px 0; }
+  #title .cols { display:flex; gap:16px; flex-wrap:wrap; font-size:.85rem; }
+  #title .cols div { flex:1; min-width:220px; }
+  #startBtn { display:block; width:100%; margin-top:12px; font-size:1.1rem; min-height:48px;
+    background:#2a3342; color:#fff; border:2px solid var(--accent); border-radius:10px; cursor:pointer; }
+  #startBtn:hover { background:#354052; }
   #death { display:none; position:absolute; inset:0; z-index:7; background:rgba(5,6,9,.9);
     border-radius:10px; align-items:center; justify-content:center; text-align:center; padding:20px; }
   #death.show { display:flex; }
