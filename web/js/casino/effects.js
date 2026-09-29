@@ -171,13 +171,6 @@
         blurb: "delayed blast (" + power + " dmg, lands late)",
       };
     }
-    if (/invisib|stealth|\bcloak\b|unseen|vanish|shadowmeld|blend|fade from sight|undetect/i.test(nm)) {
-      return {
-        name: res.name, rarity: r, op: "veil",
-        cd: C.slotCd(22, r), cdLeft: 0,
-        blurb: "veil " + Math.round(3 + r * 0.2) + "s: unseen + quiet pulls",
-      };
-    }
     if (/dominate|possess|mind control|betray|\bcharm\b|confuse|beguile|enthrall/i.test(nm)) {
       return {
         name: res.name, rarity: r, op: "betray",
@@ -195,7 +188,7 @@
     }
     const stanceKind = (() => {
       if (/claw|fang|talon|\brend\b|beast|feral|\bwere\b|werewolf|lycan|dragon|transform|shapeshift|alternate form/i.test(nm)) return "claws";
-      if (/wing|flight|\bfly\b|angel|harpy|glide/i.test(nm)) return "wings";
+      if (/\bwing|angel|harpy|glide|to fly|can fly|fly at will|take flight|takes flight/i.test(nm)) return "wings";
       if (/carapace|shell|exoskeleton|\bskin\b|barkskin|diamond skin|armor skin|scales|scaled hide/i.test(nm)) return "carapace";
       return null;
     })();
@@ -229,6 +222,13 @@
         cd: C.slotCd(element === "venom" ? 0.8 : 0.55, r), cdLeft: 0,
         blurb: element + (element === "venom" ? " spread" : " bolt") +
           " (" + power + " dmg" + (C.G.p.weapon ? ", +1 armed" : "") + ")",
+      };
+    }
+    if (/invisib|stealth|unseen|vanish|shadowmeld|chameleon|thermoptic|camouflage|shadow cloak|shade cloak|invisibility cloak|cloak of|fade from sight|undetect/i.test(nm)) {
+      return {
+        name: res.name, rarity: r, op: "veil",
+        cd: C.slotCd(22, r), cdLeft: 0,
+        blurb: "veil " + Math.round(3 + r * 0.2) + "s: unseen + quiet pulls",
       };
     }
     if (/\bdash\b|flicker|afterimage/i.test(nm)) {
