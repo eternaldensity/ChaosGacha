@@ -1,5 +1,5 @@
 1. Water Stream Crushing Rock, 5.9, One Punch Man
-#You are an apprentice in the legendary martial art created by S-Rank Hero Silverfang. You flow like water to defend and redirect enemy attacks, then strike like a raging river, and with enough training you counter an enemy's blow with double their power.
+#(Tag:water)You are an apprentice in the legendary martial art created by S-Rank Hero Silverfang. You flow like water to defend and redirect enemy attacks, then strike like a raging river, and with enough training you counter an enemy's blow with double their power.
 2. Intermediate Cooking, 2.3, Generic
 #You are as skilled as a seasoned chef. You make complex dishes with little trouble, and most of your food tastes pretty good.
 3. Iaijutsu, 3.4, Generic
@@ -47,13 +47,13 @@
 24. Backflipping, 0.2, Generic
 #You know how to perform a gnarly backflip, though frontflips may be a bit challenging.
 25. Water Breathing, 3.1, Demon Slayer
-#You practice Water Breathing, a specialized swordsmanship style and breathing technique that mimics water's flow, flexibility, and adaptability through your movements, techniques, and abilities. Most, if not all, known techniques bend your body, arm, and weapon in fluid motion to match rushing or flowing water, and with magical power you manifest water to further augment the style.
+#(Tag:water)You practice Water Breathing, a specialized swordsmanship style and breathing technique that mimics water's flow, flexibility, and adaptability through your movements, techniques, and abilities. Most, if not all, known techniques bend your body, arm, and weapon in fluid motion to match rushing or flowing water, and with magical power you manifest water to further augment the style.
 26. Fire Breathing, 3.3, Demon Slayer
-#You practice Fire Breathing, a specialized swordsmanship style and breathing technique that mimics flames through your movements, techniques, and abilities. Most, if not all, known techniques and forms are extremely powerful singular strikes that 'burn' opponents from a high stance, and with magical power you manifest fire to further augment the style.
+#(Tag:fire)You practice Fire Breathing, a specialized swordsmanship style and breathing technique that mimics flames through your movements, techniques, and abilities. Most, if not all, known techniques and forms are extremely powerful singular strikes that 'burn' opponents from a high stance, and with magical power you manifest fire to further augment the style.
 27. Wind Breathing, 3.8, Demon Slayer
-#You practice Wind Breathing, a specialized swordsmanship style and breathing technique that mimics wind, specifically powerful torrents of air and whirlwinds, through your movements, techniques, and abilities. Most, if not all, known techniques and forms are purely offensive attacks using fast rotating movements to generate swift whirlwind-like slashes that greatly increase your striking range, as well as using the surrounding air to deliver sharp sickle-shaped flying slash attacks and gale force winds.
+#(Tag:wind)You practice Wind Breathing, a specialized swordsmanship style and breathing technique that mimics wind, specifically powerful torrents of air and whirlwinds, through your movements, techniques, and abilities. Most, if not all, known techniques and forms are purely offensive attacks using fast rotating movements to generate swift whirlwind-like slashes that greatly increase your striking range, as well as using the surrounding air to deliver sharp sickle-shaped flying slash attacks and gale force winds.
 28. Thunder Breathing, 4.0, Demon Slayer
-#You practice Thunder Breathing, a specialized swordsmanship style and breathing technique that mimics lightning, specifically swift strikes and movements akin to lightning ripping through the sky, through your movements, techniques, and abilities. Most, if not all, known techniques and forms use blinding speeds and immensely fast attacks to overwhelm the enemy in an instant, and with magical power you manifest thunder to further augment the style.
+#(Tag:lightning)You practice Thunder Breathing, a specialized swordsmanship style and breathing technique that mimics lightning, specifically swift strikes and movements akin to lightning ripping through the sky, through your movements, techniques, and abilities. Most, if not all, known techniques and forms use blinding speeds and immensely fast attacks to overwhelm the enemy in an instant, and with magical power you manifest thunder to further augment the style.
 29. Sun Breathing, 4.4, Demon Slayer
 #You practice Sun Breathing, the specialized swordsmanship style and breathing technique created by legendary swordsman Yoriichi Tsugikuni that mimics the sun through your movements, techniques, and abilities. All techniques and forms are extremely varied with no set pattern, making them the most versatile and effective against enemies, and with magical power you manifest solar flames effective against the unholy.
 30. Intermediate Kama Sutra, 2.2, Generic
@@ -75,7 +75,7 @@
 38. Throwing, 2.2, Generic
 #You are fairly skilled at throwing various objects with speed and accuracy. You land a stone on a target's head from across the street without trouble.
 39. Intermediate Medicine, 2.9, Generic
-#You are as skilled as a doctor. You possess varied medical knowledge for treating injuries, illnesses, and problems, plus familiarity with the body, medicine, and its applications.
+#(Tag:healing)You are as skilled as a doctor. You possess varied medical knowledge for treating injuries, illnesses, and problems, plus familiarity with the body, medicine, and its applications.
 40. Kung Fu, 2.5, Generic
 #You are an apprentice in Kung Fu, a Chinese martial art that refines the body through discipline, efficiency, and adaptability. You use strikes, guards, footwork, and grappling, and with sufficient mastery you enhance your strikes with your internal energy.
 41. Bajiquan, 3.5, Generic
@@ -141,7 +141,7 @@
 71. Novice Charisma, 1.9, Generic
 #You have an aura of charisma around you, less a skill than a change in your demeanour and how you hold yourself. People of note feel more attracted to your presence, paying more attention to you and taking you more seriously, though at this level it is not too noticeable.
 72. Novice Medicine, 1.5, Generic
-#You are about as skilled as a doctor in training. You perform first aid, apply medicine, know what most medicines do, and in a pinch improvise medical tools to perform basic surgery.
+#(Tag:healing)You are about as skilled as a doctor in training. You perform first aid, apply medicine, know what most medicines do, and in a pinch improvise medical tools to perform basic surgery.
 73. Adept Cooking, 3.3, Generic
 #You are great at cooking, at the level of a veteran chef. You cook most meals with great flavour that few find disappointing, and you easily get a job as a private chef.
 74. Literacy, 2.2, Generic
@@ -189,7 +189,7 @@
 95. Adept Charisma, 4.4, Generic
 #You have an aura of charisma that is less a skill and more something around you. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
 96. Adept Medicine, 4.1, Generic
-#You are very skilled in all areas of medicine at a veteran level, able to perform surgery, diagnose conditions, and create medicine. Given ingredients, you can make your own medicines, even magical ones such as potions depending on the world you are in.
+#(Tag:healing)You are very skilled in all areas of medicine at a veteran level, able to perform surgery, diagnose conditions, and create medicine. Given ingredients, you can make your own medicines, even magical ones such as potions depending on the world you are in.
 97. Expert Cooking, 4.4, Generic
 #You are an expert in the culinary arts, better than most chefs will ever be. Given ingredients, you can cook almost any meal to taste great, leaving no one at your table unsatisfied, though still just short of foodgasm levels.
 98. Grooming, 1.9, Generic
@@ -237,7 +237,7 @@
 119. Expert Charisma, 5.2, Generic
 #You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
 120. Expert Medicine, 4.9, Generic
-#You are an expert in all fields of medicine seldom matched by regular humans, performing surgery, making your own supernatural medicine, and diagnosing ailments with ease and finesse.
+#(Tag:healing)You are an expert in all fields of medicine seldom matched by regular humans, performing surgery, making your own supernatural medicine, and diagnosing ailments with ease and finesse.
 121. Master Cooking, 5.6, Generic
 #You are a true master of cooking, able to cook almost any dish to incredible taste that may even gain supernatural traits depending on your ingredients. You can induce actual foodgasms.
 122. Makeup, 1.2, Generic
@@ -277,7 +277,7 @@
 139. Master Taming, 5.1, Generic
 #You are a true master tamer, able to turn even the most ferocious, bloodthirsty, manic beast into a living room pet, and to masterfully train familiars for obedience and loyalty. This also applies to people to a lesser extent.
 140. Master Massage, 5.5, Generic
-#You are a master masseuse beyond any mortal, whose massages can heal injuries and ailments, bringing therapy, immense pleasure, and comfort. Even the bodies of gods are like putty in your hands.
+#(Tag:healing)You are a master masseuse beyond any mortal, whose massages can heal injuries and ailments, bringing therapy, immense pleasure, and comfort. Even the bodies of gods are like putty in your hands.
 141. Master Driving, 5.0, Generic
 #You are a true master at driving any vehicle or mount with steering, riding it as an extension of your body, ranging from rollerblades to star-sized spacecraft.
 142. Master Leadership, 5.8, Generic
@@ -285,7 +285,7 @@
 143. Master Charisma, 5.6, Generic
 #You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, your presence strikes fear when you want to intimidate, and your aura appears serene when you want to calm others.
 144. Master Medicine, 5.7, Generic
-#You are a true master in all fields of medicine seldom matched by regular humans, performing surgery, making your own medicine, and diagnosing ailments with extreme efficiency and precision. You can create and design your own medicines, and with practice, even superhuman medicines.
+#(Tag:healing)You are a true master in all fields of medicine seldom matched by regular humans, performing surgery, making your own medicine, and diagnosing ailments with extreme efficiency and precision. You can create and design your own medicines, and with practice, even superhuman medicines.
 145. Grandmaster Cooking, 6.6, Generic
 #You are a Grandmaster of Cooking, better than any mortal has any right to be, able to cook any meal from Elder Dragon steaks to Leviathan sushi. In addition to incredible taste, your foods gain special wondrous effects depending on what you cook.
 146. Grandmaster Shooting, 6.3, Generic
@@ -319,7 +319,7 @@
 160. Grandmaster Leadership, 6.4, Generic
 #Your leadership and ruling stand at the peak of what a person can achieve. You manage a kingdom and an army in your sleep as easily as playing a simulation game. People under your rule and command grow naturally more loyal and obedient, and they will not rebel unless you are just that bad.
 161. Grandmaster Medicine, 6.5, Generic
-#You stand beyond human but not quite divine in all fields of medicine and healing. You perform surgery, modify bodies, create legendary medicines, and identify and cure almost all illnesses and ailments. In a cultivation world you are titled the Medicine King.
+#(Tag:healing)You stand beyond human but not quite divine in all fields of medicine and healing. You perform surgery, modify bodies, create legendary medicines, and identify and cure almost all illnesses and ailments. In a cultivation world you are titled the Medicine King.
 162. Divine Cooking, 7.3, Generic
 #Your cooking talent is on the level of the gods. Your food gives someone an epiphany and changes their life. Gods queue outside your restaurant to taste your cooking.
 163. Divine Shooting, 7.4, Generic
@@ -355,7 +355,7 @@
 178. Divine Charisma, 7.9, Generic
 #You carry the presence and aura of a god. Your sheer charisma brings people to their knees, draws people of note to you, calms a raging beast, and inspires awe in the masses. You are the most popular being alive.
 179. Divine Medicine, 7.5, Generic
-#You are as skilled as a god of health and medicine. You modify and heal bodies to your liking as long as you have the tools, cure any ailment, and create divine medicines like panaceas and elixirs of immortality. But this knowledge is too much for a mortal vessel, so it manifests as instinctive comprehension of all matters of life; the stronger you get, the more access you gain to the divine knowledge.
+#(Tag:healing)You are as skilled as a god of health and medicine. You modify and heal bodies to your liking as long as you have the tools, cure any ailment, and create divine medicines like panaceas and elixirs of immortality. But this knowledge is too much for a mortal vessel, so it manifests as instinctive comprehension of all matters of life; the stronger you get, the more access you gain to the divine knowledge.
 180. Novice Interfacing, 1.4, Generic
 #You are nimble. You pick basic locks, pick pockets, find your way around mechanisms, and move with decent grace.
 181. Intermediate Interfacing, 2.3, Generic
@@ -539,7 +539,7 @@
 270. Mental Image Blocking, 1.9, Batman
 #You learned from the elusive Tibetan Monks to block mind readers and telepaths by masking your thoughts with conjured mental images.
 271. Mind Control Resistance, 3.1, Batman
-#Thanks to the Tibetan Monks' teachings, you resist mind control and mind reading. Your resistance scales with your mental strength and overall power level.
+#(Tag:psychic)Thanks to the Tibetan Monks' teachings, you resist mind control and mind reading. Your resistance scales with your mental strength and overall power level.
 272. Army Breaker, 4.1, Strike it Rich
 #Rikudou: Army Breaker is a specialized martial art based in Karate movements. You emphasize arm weight, shifting balance, and relaxation to strike fast as whips yet heavy as hammers; skilled enough, you cut to bone in one blow. With enough practice, you control your joints to elongate your arms and empower the attacks called Dawn.
 273. Kaiwan Style, 5.2, Kengan Ashura
@@ -577,7 +577,7 @@
 289. Pre-Initiative, 5.4, Kengan Ashura
 #Pre-Initiative is an advanced form of a fighter's foresight; you know an enemy's move before they use it and counter before they throw it. It comes from extensive martial arts familiarity and analyzing opponents' styles. It demands much training, sparring, and familiarity with many styles, but a master seems almost omniscient against a lesser opponent after only a few exchanged moves.
 290. Reduced Earth, 3.4, Fate
-#Reduced earth is a movement technique for covering a short distance in a single extremely fast movement through practiced breathing, footwork, and exertion. But it is quite exhausting to use.
+#(Tag:earth)Reduced earth is a movement technique for covering a short distance in a single extremely fast movement through practiced breathing, footwork, and exertion. But it is quite exhausting to use.
 291. Ryu's Shotokan, 5.7, Street Fighter
 #You practice Ryu's Shotokan, a special Karate school created by Ryu. It focuses on direct, powerful strikes with kicks and punches, mixing aggression and defense. With enough practice, you tap into the Kyoi no Hado and harness Ki to empower your blows, perform special techniques, and use the Hadoken.
 292. Akuma's Shotokan, 6.2, Street Fighter
@@ -609,7 +609,7 @@
 305. Bushcraft, 2.8, Tomb Raider
 #Forage, hunt, craft, and read the land in any hostile wild.
 306. Colony Medicine, 3.6, RimWorld
-#Triage, surgery, and glitterworld care with whatever counts as a hospital.
+#(Tag:healing)Triage, surgery, and glitterworld care with whatever counts as a hospital.
 307. Colony Construction, 3.0, RimWorld
 #Raise bases fast and sturdy, from wooden shacks to plasteel fortresses.
 308. Deep Space Survey, 3.4, Stellaris

@@ -61,9 +61,9 @@
 31. Grimoire of the White Mage, 4.1, Generic
 #(Tome) Teaches White Magic such as healing, curing, buffs, and warding.
 32. Grimoire of the Pyromancer, 4.3, Generic
-#(Tome) Teaches Fire Magic of fire and flame.
+#(Tag:fire)(Tome) Teaches Fire Magic of fire and flame.
 33. Grimoire of the Cryomancer, 4.2, Generic
-#(Tome) Teaches Ice Magic of ice and cold.
+#(Tag:ice)(Tome) Teaches Ice Magic of ice and cold.
 34. Grimoire of the Aeromancer, 4.4, Generic
 #(Tome) Teaches Air Magic of wind and lightning.
 35. Alchemilia, 3.6, Generic
@@ -131,9 +131,9 @@
 66. Evasion Scarf, 3.7, Calamity Mod
 #Scarf of a shadow-swift rogue. Activate to gain a large speed boost and intangibility while moving straight for 1 second, slipping through attacks or walls. 30 second cooldown.
 67. Grimoire of Hemomancy, 4.6, Black Clover
-#(Tome) Teaches Blood Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Blood_Magic
+#(Tag:blood)(Tome) Teaches Blood Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Blood_Magic
 68. Grimoire of Pyromancy, 4.8, Black Clover
-#(Tome) Teaches Fire Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Fire_Magic
+#(Tag:fire)(Tome) Teaches Fire Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Fire_Magic
 69. Tome of Vector Magic, 3.6, Soul Eater
 #(Tome) Medusa Gorgon's tome teaching her signature Vector Magic. Spell List: https://souleater.fandom.com/wiki/Vector_Magic
 70. Boar Vessel 600-500 BC Etruscan ceramic, 0.1, Generic
@@ -171,9 +171,9 @@
 86. Havel's Greatshield, 2.2, Dark Souls
 #Magical stone shield of Havel the Rock. Grants enhanced durability and can expend energy to coat the body in stone for further reinforcement.
 87. Sanctus - Dark souls, 2.9, Dark Souls
-#Legendary Way of White weapon once blessed with white-flame protection. Its power has faded, now granting only slight regeneration.
+#(Tag:shadow)Legendary Way of White weapon once blessed with white-flame protection. Its power has faded, now granting only slight regeneration.
 88. Altar of Earth, 3.9, Hota
-#Altar of fire collecting nature's mana to birth earth spirits naturally loyal to the altar's owner.
+#(Tag:earth)Altar of fire collecting nature's mana to birth earth spirits naturally loyal to the altar's owner.
 89. Ring of Favor and Protection, 3.6, Dark Souls
 #Ring of goddess Fina's favor and protection, famed for "fateful beauty". Boosts Health, Stamina, and Endurance, but breaks if removed.
 90. Covetous Gold Serpent Ring, 4.5, Dark Souls
@@ -227,7 +227,7 @@
 114. Monstergirls and You, 3.3, Generic
 #(Noncon) Monster-girl book turning any monster it touches into an attractive female version for the user. Strength and abilities unchanged; target sees the change as natural.
 115. Magic Scroll Blizzard, 1.7, Generic
-#Magical scroll invoking a fierce 1 km blizzard centered on the user, harmless to them, lasting 30 minutes. Restock Timer: 8 hours.
+#(Tag:ice)Magical scroll invoking a fierce 1 km blizzard centered on the user, harmless to them, lasting 30 minutes. Restock Timer: 8 hours.
 116. Exorcist's Gloves, 1.1, Generic
 #(Tag:holy)Magical white gloves letting you touch spiritual beings as if solid.
 117. Tome of Rennala, 4.0, Elden Ring
@@ -251,7 +251,7 @@
 126. Stimpack, 2.3, Fallout
 #(Tech) A syringe pack of modified stem cells and healing agents that drives the body's regeneration into overdrive. WARNING: Use without sufficient nutrients or minerals in the body can cause more harm than good. Restock Timer: 24 hours.
 127. Staff of the Phoenix, 5.9, Generic
-#An ornate pure-ruby staff with gold engravings. Using it as a focus increases fire abilities' and spells' power while reducing their cost.
+#(Tag:avian)An ornate pure-ruby staff with gold engravings. Using it as a focus increases fire abilities' and spells' power while reducing their cost.
 128. Moonlight Greatsword, 3.1, Dark Souls
 #A moonlight sword crafted from Seath the Scaleless's severed tail. Wielding it strengthens your spells and lets you unleash blasts of magical power from the blade.
 129. Super Crown - Mario, 2.3, Generic
@@ -263,19 +263,19 @@
 132. Enchanted Golden Apple, 3.4, Minecraft
 #An enchanted gold-skinned magical apple. Eating it grants rare level regeneration for one hour and bolsters vitality. Restock Timer: 210 hours.
 133. Grimoire of Wind Magic, 4.7, Black Clover
-#(Tome) A book of Wind Magic secrets from the Clover Kingdom for learning and using Aeromancy. Spell List: https://blackclover.fandom.com/wiki/Wind_Magic
+#(Tag:wind)(Tome) A book of Wind Magic secrets from the Clover Kingdom for learning and using Aeromancy. Spell List: https://blackclover.fandom.com/wiki/Wind_Magic
 134. Lightsaber, 3.1, Star Wars
 #(Tech) A classic Kyber Crystal lightsaber projecting an energy blade. No Force powers needed to use it.
 135. Wand of the Ice Fairy, 4.7, Generic
-#(Tag:fae)A wand of blue ice crystals that feels pleasantly cool to the touch. Using it as a focus increases cold and ice abilities' and spells' potency while reducing their cost.
+#(Tag:ice)(Tag:fae)A wand of blue ice crystals that feels pleasantly cool to the touch. Using it as a focus increases cold and ice abilities' and spells' potency while reducing their cost.
 136. Divine Shotgun, 3.5, Generic
-#(Tag:holy)"Faith in the form of bullets." An unremarkable two-barrel shotgun that consumes your energy/mana to condense holy light bullets per trigger pull. These bullets are lethal to all unholy beings, who cannot heal wounds inflicted by it.
+#(Tag:healing)(Tag:holy)"Faith in the form of bullets." An unremarkable two-barrel shotgun that consumes your energy/mana to condense holy light bullets per trigger pull. These bullets are lethal to all unholy beings, who cannot heal wounds inflicted by it.
 137. Druid's Living Wand, 3.8, Generic
-#A wand crafted from still-living wood. Channeling nature and healing abilities and spells through it increases their power and reduces their cost.
+#(Tag:nature)A wand crafted from still-living wood. Channeling nature and healing abilities and spells through it increases their power and reduces their cost.
 138. Movement Ring, 3.9, Generic
 #This ring holds 3 charges and recovers 1 charge every hour. Spend a charge for a 10-meter blink, 10 seconds of flight, or 10 seconds of Haste.
 139. Pitcher of Eternal water, 1.8, Hunter x Hunter
-#A water pitcher that pours endless refreshing clean water when tipped.
+#(Tag:water)A water pitcher that pours endless refreshing clean water when tipped.
 140. Skin Care Hot Springs, 3.4, Generic
 #Grants ownership of a fully functional hot spring onsen that magically maintains itself. When taken out of storage, it places itself appropriately in your current city with proper paperwork and history, so no one finds its appearance strange.
 141. Apartment in Between, 3.7, Generic
@@ -329,11 +329,11 @@
 165. Evil Eye Ring, 2.2, Black Souls
 #"Did the eye just move?" A gold ring with an eye-shaped ruby that grants minor regeneration when worn.
 166. Hydrogen Bomb, 3.8, Generic
-#(Tech) A hydrogen bomb with a remote detonator. Try not to end up in the blast zone.
+#(Tag:water)(Tech) A hydrogen bomb with a remote detonator. Try not to end up in the blast zone.
 167. Cheshire Cat's ring, 2.1, Black Souls
 #A gold ring engraved with a suspiciously smug cat. While worn, you are immune to falling damage even from 100,000 kilometers.
 168. Wind Gods Ring, 3.3, Black Souls
-#An ornate silver Wonderland ring blessed by an unnamed wind god. Wearing it boosts agility and reflexes to superhuman levels.
+#(Tag:wind)An ornate silver Wonderland ring blessed by an unnamed wind god. Wearing it boosts agility and reflexes to superhuman levels.
 169. Thief's Ring, 3.6, Generic
 #A magical ring of a famous whimsical, mischievous thief. Holds 3 charges and recovers 1 every hour. Spend a charge to steal a carried item to your hands (better items have lower success), muffle all your noises for a minute, or boost dexterity and agility for a minute.
 170. Windless Wrap, 4.8, Black Souls
@@ -357,7 +357,7 @@
 179. VIII - Strength, 3.6, Generic
 #Tarot Card - Boosts all physical abilities and dulls pain for 30 minutes. 120 hour cooldown.
 180. IX - The Hermit, 2.7, Generic
-#Tarot Card - Lets you read minds and thoughts for 1 hour. 120 hour cooldown.
+#(Tag:psychic)Tarot Card - Lets you read minds and thoughts for 1 hour. 120 hour cooldown.
 181. X - Wheel of Fortune, 2.5, Generic
 #Tarot Card - Temporarily swaps all active powers with random powers of the same rarity for 1 hour (For writing: done by rolling the gacha that corresponds with said rarity). 120 hour cooldown.
 182. XI - Justice, 3.0, Generic
@@ -389,7 +389,7 @@
 195. Ghastly Glaive, 3.8, Terraria
 #A foreign-world glaive that summons wraith projections using the wielder's life energy. Amplifies Soul-based abilities when used as a focus.
 196. North Pole, 4.1, Terraria
-#A crystalline spear forged from the shattered Ice Queen's remains. Lets the wielder fire frigid blasts with their own energy and amplifies Ice-based abilities when used as a focus.
+#(Tag:fire)A crystalline spear forged from the shattered Ice Queen's remains. Lets the wielder fire frigid blasts with their own energy and amplifies Ice-based abilities when used as a focus.
 197. Daybreak, 4.7, Terraria
 #A pure-energy spear from fallen-star shards. Lets the user hurl copy projections like javelins and amplifies Fire and Light-based abilities when used as a focus.
 198. Sunfury, 3.2, Terraria
@@ -397,7 +397,7 @@
 199. Blue Moon, 1.7, Terraria
 #A flail from the cursed dungeon made of incredibly durable material, with a chain stretching up to 50 meters.
 200. Ice Blade, 2.8, Terraria
-#A magically enchanted solid-ice saber that holds its sharpness. Releases frigid energy with your own energy and boosts ice abilities when used as a focus.
+#(Tag:ice)A magically enchanted solid-ice saber that holds its sharpness. Releases frigid energy with your own energy and boosts ice abilities when used as a focus.
 201. Space Dolphin Machine Gun, 3.8, Terraria
 #(Tech) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
 202. Onyx Blaster, 2.9, Terraria
@@ -405,11 +405,11 @@
 203. Death's Sickle, 4.2, Terraria
 #A sickle from the Reaper's cold dead hands. Releases necrotic projections with your own energy and boosts Dark and Necrotic abilities when used as a focus.
 204. Inferno Fork, 4.1, Terraria
-#A crimson trident from the cursed dungeon's depths. Fires flame blasts with your energy/mana and boosts Fire and Unholy abilities when used as a focus.
+#(Tag:fire)A crimson trident from the cursed dungeon's depths. Fires flame blasts with your energy/mana and boosts Fire and Unholy abilities when used as a focus.
 205. Last Prism, 5.4, Terraria
 #A moon prism. Infusing energy/mana releases incinerating light rays converging into one large laser, or greatly boosts light-based abilities when used as a focus.
 206. Holy Water, 3.2, Generic
-#(Tag:holy)A large glass vial of 500ml high-quality holy water for rituals or dealing with the unholy. Restock Timer: 4 hours.
+#(Tag:water)(Tag:holy)A large glass vial of 500ml high-quality holy water for rituals or dealing with the unholy. Restock Timer: 4 hours.
 207. Golden Cross, 2.6, Generic
 #A golden cross blessed by a powerful angel. Worn around the neck, it wards off evil and curses and burns nearby demonic entities.
 208. Super Absorbent Sponge, 1.4, Terraria
@@ -479,7 +479,7 @@
 240. Cloak of Levitation, 4.6, Marvel
 #A Sorcerer Supreme relic allowing free flight. Self-aware, it can pull its wearer from danger and hinder opponents on its own.
 241. Plague Canister, 5.7, Calamity Mod
-#(Tech) A canister of the Plague, a self-replicating nanomachine virus devouring biomass and turning living things into mindless biomechanically enhanced zombies for its hivemind. Releasing it without sufficient biokinetic or techno mastery dooms the world, though without a core they lack a hivemind command center.
+#(Tag:poison)(Tech) A canister of the Plague, a self-replicating nanomachine virus devouring biomass and turning living things into mindless biomechanically enhanced zombies for its hivemind. Releasing it without sufficient biokinetic or techno mastery dooms the world, though without a core they lack a hivemind command center.
 242. Mehrunes Razor, 7.1, Skyrim
 #Mehrunes Dagon's dagger. Capable of cutting anything the user can interact with — space, time, soul, connections, etc. The only limit is the user, not the dagger.
 243. Skeleton Key, 8.2, Skyrim
@@ -491,7 +491,7 @@
 246. Unknown Dictator, 5.8, Highschool DxD
 #Unknown Dictator, one of the modern Longinus, manipulates metal and technology on a massive scale and constructs advanced tech like ion cannons and aura engines at will without detailed input. Stronger users create stronger creations. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 247. Zenith Tempest, 7.6, Highschool DxD
-#Zenith Tempest, one of the mightiest Longinus, controls weather, atmosphere, and natural elements like fire, wind, lightning, and water to call down lightning, country-wiping storms, and more. A powerful enough user can shred the planet's surface with violent storms. When removed from inventory, it is a small marble that fuses with whoever swallows it.
+#(Tag:lightning)Zenith Tempest, one of the mightiest Longinus, controls weather, atmosphere, and natural elements like fire, wind, lightning, and water to call down lightning, country-wiping storms, and more. A powerful enough user can shred the planet's surface with violent storms. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 248. Star Buster Blaster, 7.0, Highschool DxD
 #A highest-order Longinus built for simplicity whose sword can cut gods and whose gun can annihilate islands even in basic form. It is incredibly difficult to control, and a misfire may destroy the landmass the user stands on. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 249. Canis Lycaon, 6.1, Highschool DxD
@@ -515,7 +515,7 @@
 258. Beginners Guide to Runecraft, 3.3, Fate
 #(Tome) A beginner's guide to basic Nordic/Scandinavian runecraft written personally by Allfather Odin. Studying it teaches the art of Runecraft.
 259. Grow Your Own Golem Kit, 3.2, Generic
-#A beginner-friendly golem-growing kit even a child can use, containing a person-sized pot, watering can, pack of cores, and notebook. Place a core, desired golem materials, and a specification note in the pot, bury it in any dirt in a sunny spot, and water twice morning and night for 7 days before digging up the finished golem. Energy-rich soil speeds the process.
+#(Tag:construct)A beginner-friendly golem-growing kit even a child can use, containing a person-sized pot, watering can, pack of cores, and notebook. Place a core, desired golem materials, and a specification note in the pot, bury it in any dirt in a sunny spot, and water twice morning and night for 7 days before digging up the finished golem. Energy-rich soil speeds the process.
 260. Cape of Rebellion, 4.2, Generic
 #A blood-red stained cape that proportionally augments the wearer's Physical Abilities and Regeneration for every negative status effect borne while wearing it, such as burning, poison, curse, freezing, bleeding, or blindness. (A/N: Gacha curses do not count).
 261. Halo of Light, 5.6, Generic
@@ -551,7 +551,7 @@
 276. Angellic Alliance, 6.0, Hota
 #(Tag:holy)A divine heavenly sword that greatly increases the wielder's physical and magical abilities, strengthens and inspires any army or allies under their command, and boosts holy and light abilities when used as a focus. The user can also expend energy to grant any blessing of Rare tier or below.
 277. Titans Thunder, 5.5, Hota
-#A thunder sword granting the power and might of giants, including extreme physical strength and the ability to rain down thunder by expending energy. It enhances lightning-based abilities when used as a focus.
+#(Tag:lightning)A thunder sword granting the power and might of giants, including extreme physical strength and the ability to rain down thunder by expending energy. It enhances lightning-based abilities when used as a focus.
 278. Armor of the Dammed, 5.8, Hota
 #Pitch-black armor with a demonic visage worn by the most wicked conquerors that augments physical abilities and amplifies darkness-based abilities when used as a focus. With training, it can unleash massive-scale curses like slow, misfortune, and weakness to debilitate entire armies.
 279. Power of the Dragon Father, 5.3, Hota
@@ -577,15 +577,15 @@
 289. Orb of Driving Rain, 3.8, Hota
 #An orb of raw ancient magical power that boosts water and ice-based abilities and magic for its holder.
 290. Orb of Tempestuous Fire, 3.6, Hota
-#An orb of raw ancient magical power that boosts fire-based abilities and magic for its holder.
+#(Tag:fire)An orb of raw ancient magical power that boosts fire-based abilities and magic for its holder.
 291. Tome of Air, 6.2, Hota
 #(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Air_Magic
 292. Tome of Earth, 5.8, Hota
-#(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Earth_Magic
+#(Tag:earth)(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Earth_Magic
 293. Tome of Water, 5.6, Hota
-#(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Water_Magic
+#(Tag:water)(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Water_Magic
 294. Tome of Fire, 4.9, Hota
-#(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Fire_Magic
+#(Tag:fire)(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Fire_Magic
 295. Sphere of Permanence, 3.9, Hota
 #A magical orb that prevents magic removal on a target, granting immunity to dispelling spells or abilities.
 296. Orb of Vulnerability, 5.2, Hota
@@ -603,11 +603,11 @@
 302. Archmages Robes, 4.4, Generic
 #Suspiciously comfortable archmage robes that let you learn magic much quicker and amplify spells you cast.
 303. Altar of Fire, 3.7, Hota
-#An altar of fire that collects natural mana to birth fire spirits loyal to you as its owner.
+#(Tag:fire)An altar of fire that collects natural mana to birth fire spirits loyal to you as its owner.
 304. Altar of Air, 4.1, Hota
 #An altar that collects natural mana to birth air and lightning spirits loyal to you as its owner.
 305. Altar of Water, 3.5, Hota
-#An altar that collects natural mana to birth water and ice spirits loyal to you as its owner.
+#(Tag:water)An altar that collects natural mana to birth water and ice spirits loyal to you as its owner.
 306. Elemental Conflux, 5.0, Hota
 #An altar converging natural elements and collecting natural mana to birth spirits of all elements loyal to you as its owner.
 307. Pyre, 5.3, Hota
@@ -623,7 +623,7 @@
 312. Maelstrom, 4.9, Hota
 #A large water whirlpool containing many dangerous seabound creatures, including the sea serpent Haspid, under your command.
 313. Magic Forest, 6.8, Hota
-#A large forest with high magical concentration and unique herbs, populated by ents, treants, and even legendary unicorns under your command. It slowly replenishes itself over time.
+#(Tag:nature)A large forest with high magical concentration and unique herbs, populated by ents, treants, and even legendary unicorns under your command. It slowly replenishes itself over time.
 314. Crystal Cave, 6.3, Hota
 #A large cavern of unique red crystals holding potent magical power and energy, with crystal dragons under your command. Crystals replenish over time.
 315. Frozen Cliffs, 7.2, Hota
@@ -633,7 +633,7 @@
 317. Experimental Shop, 6.2, Hota
 #A giant experimental workshop manned by talented loyal gremlin master artisans who craft items with provided resources. They can also build animated legendary stone giants and various golems to serve you.
 318. Portal of Glory, 5.7, Hota
-#A divine gate that produces angels to serve you over time when given enough energy and resources such as gold.
+#(Tag:teleport)A divine gate that produces angels to serve you over time when given enough energy and resources such as gold.
 319. Garden of Revelations, 3.1, Generic
 #A beautiful flower garden with a mystical aura where studying and learning magic is easier.
 320. Fountain of Youth, 3.2, Generic
@@ -679,7 +679,7 @@
 340. Droid Factory, 4.8, Star Wars
 #(Tech) An autonomous factory producing droids under your command when supplied with appropriate materials.
 341. Flowing Water Crushing Rock Fist Manual, 6.8, One Punch Man
-#Bang's manual with detailed training in Flowing Water Crushing Rock Fist. Those without it cannot replicate the art.
+#(Tag:water)Bang's manual with detailed training in Flowing Water Crushing Rock Fist. Those without it cannot replicate the art.
 342. Grimoire of Izalith, 4.6, Dark Souls
 #(Tome) A grimoire teaching the Pyromancies of the Great Swamp and Izalith. Spell List: https://darksouls.fandom.com/wiki/Pyromancy_(Dark_Souls)
 343. Tome of the Way of the White, 3.6, Dark Souls
@@ -697,13 +697,13 @@
 349. Grimoire of Spatial Magic, 6.8, Black Clover
 #(Tome) A book of Clover Kingdom Spatial Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Spatial_Magic
 350. Grimoire of Lightning Magic, 5.0, Black Clover
-#(Tome) A book of Clover Kingdom Lightning Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Lightning_Magic
+#(Tag:lightning)(Tome) A book of Clover Kingdom Lightning Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Lightning_Magic
 351. Grimoire of Water Magic, 4.7, Black Clover
-#(Tome) A book of Clover Kingdom Water Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Water_Magic
+#(Tag:water)(Tome) A book of Clover Kingdom Water Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Water_Magic
 352. Grimoire of Ice Magic, 4.5, Black Clover
-#(Tome) A book of Clover Kingdom Ice Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Ice_Magic
+#(Tag:ice)(Tome) A book of Clover Kingdom Ice Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Ice_Magic
 353. Grimoire of Darkness Magic, 6.5, Black Clover
-#(Tome) A book of Clover Kingdom Darkness Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Dark_Magic
+#(Tag:shadow)(Tome) A book of Clover Kingdom Darkness Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Dark_Magic
 354. Grimoire of Light Magic, 6.4, Black Clover
 #(Tome) A book of Clover Kingdom Light Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Light_Magic
 355. Familiar Contract, 3.3, Generic
@@ -737,7 +737,7 @@
 369. Holy Collider, 6.0, Calamity Mod
 #(Tag:holy)A sword carved from the profaned god's corpse that emits divine flame explosions on contact and releases holy flames by expending your energy. Holy and fire abilities are amplified when using it as a focus.
 370. Jackal & Casull, 3.7, Hellsing
-#An unwieldy pair of hand-cannon pistols wielded by a certain vampire: white Casull and black Jackal. Each holds 6 rounds of 13mm blessed silver exploding rounds and requires supernatural strength to wield and fire without tearing your arms off. You receive 2 magazines every 24 hours.
+#(Tag:fire)An unwieldy pair of hand-cannon pistols wielded by a certain vampire: white Casull and black Jackal. Each holds 6 rounds of 13mm blessed silver exploding rounds and requires supernatural strength to wield and fire without tearing your arms off. You receive 2 magazines every 24 hours.
 371. Dragon Slayer, 2.6, Berserk
 #(Tag:dragonic)A massive dull unwieldy sword larger than a man and supernaturally durable. Having bathed in the blood of countless spirits and astral beings, it can harm and kill the immaterial.
 372. Wastelanders Survival Kit, 2.5, Fallout
@@ -757,9 +757,9 @@
 379. Power Fist, 1.1, Fallout
 #(Tech) A pneumatic power fist that boosts punches to superhuman level. It offers little benefit to those already superhuman.
 380. Rasaka's Fang, 3.5, Solo Leveling
-#A dagger carved from Rasaka's venomous fang, perpetually imbued with venom that paralyzes those it cuts and makes their wounds harder to heal.
+#(Tag:poison)A dagger carved from Rasaka's venomous fang, perpetually imbued with venom that paralyzes those it cuts and makes their wounds harder to heal.
 381. Rasaka's Venom, 3.4, Solo Leveling
-#A pouch of refined Rasaka venom; ingesting it fully grants increased physical resistance at the cost of weakened muscles, which poison resistance can negate.
+#(Tag:poison)A pouch of refined Rasaka venom; ingesting it fully grants increased physical resistance at the cost of weakened muscles, which poison resistance can negate.
 382. Knight Killer, 2.7, Solo Leveling
 #A large dagger built for heavily armoured opponents, dealing more damage against stronger armour.
 383. Baruka's Dagger, 2.9, Solo Leveling
@@ -771,11 +771,11 @@
 386. Kamish's Wrath, 4.7, Solo Leveling
 #A pair of daggers made from the dragon Kamish, nigh unbreakable and sharper than any artificial blade. They synchronize with your mana to adjust strength, and you can increase their weight at will.
 387. Teleportation Amulet, 4.4, Generic
-#An ornate platinum amulet that teleports the wearer anywhere they can see, with a 1-minute cooldown.
+#(Tag:teleport)An ornate platinum amulet that teleports the wearer anywhere they can see, with a 1-minute cooldown.
 388. Divine Crucifix, 3.8, Generic
 #A holy crucifix blessed by a divine spirit whose presence immensely weakens unholy and dark beings and instantly kills weaker ones. Holy or light abilities channelled through it gain potency.
 389. Telepathic Implant, 3.6, Invincible
-#(Tech) A neural implant for two-way communication with one target at a time within your perception. It manifests as a ticket that automatically installs itself when torn.
+#(Tag:psychic)(Tech) A neural implant for two-way communication with one target at a time within your perception. It manifests as a ticket that automatically installs itself when torn.
 390. Ripperdoc Ticket, 4.2, Cyberpunk 2077
 #(Tech) A ticket that transfers you to a mechanical Ripperdoc's clinic to install Cyberpunk 2077 implants or ones you bring, for the right price. His top-quality wares are expensive and may require bartering. You return upon leaving, can spend only 24 hours inside, and Restock Timer: 15 Days.
 391. Clover Amulet, 4.6, Generic
@@ -791,15 +791,15 @@
 396. Character Card Wolverine, 5.0, Generic
 #A character card granting yourself or another Wolverine's full healing factor for 10 minutes. 3 uses.
 397. Bronze Heart Ticket, 1.5, Generic
-#(Noncon) Think of the person you want to affect and rip the ticket to make them like you slightly more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Tag:psychic)(Noncon) Think of the person you want to affect and rip the ticket to make them like you slightly more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 398. Silver Heart Ticket, 2.5, Generic
-#(Noncon) Think of the person you want to affect and rip the ticket to make them like you more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Tag:psychic)(Noncon) Think of the person you want to affect and rip the ticket to make them like you more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 399. Gold Heart Ticket, 3.5, Generic
-#(Noncon) Think of the person you want to affect and rip the ticket to make them like you a lot more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Tag:psychic)(Noncon) Think of the person you want to affect and rip the ticket to make them like you a lot more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 400. Royal Heart Ticket, 4.5, Generic
-#(Noncon) Think of the person you want to affect and rip the ticket to make them like you considerably more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Tag:psychic)(Noncon) Think of the person you want to affect and rip the ticket to make them like you considerably more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 401. Cupid's Ticket, 5.5, Generic
-#(Noncon) Think of the person you want to affect and rip the ticket to make them fall in love with you. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+#(Tag:psychic)(Noncon) Think of the person you want to affect and rip the ticket to make them fall in love with you. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 402. Auto Doc, 3.9, Fallout
 #(Tech) An autonomous advanced doctor station from Big MT. created by Doctor Mobius. This large capsule performs even the most complicated procedures with near-perfect expertise from simple instructions when hooked to sufficient power.
 403. Blight Spewer, 5.7, Calamity Mod
@@ -807,9 +807,9 @@
 404. Shadethrower, 3.6, Calamity Mod
 #(Tech) A modified flamethrower converting regular burnable fuel into corrupted flames that rapidly rot whatever they burn.
 405. Heavenly Gale, 7.8, Calamity Mod
-#A divine bow crafted from earth and cosmos essences that converts any nocked arrow into exotic resonance crystals. They summon resonant lightning where they strike, powerful enough to flay gods alive and rend the surface world.
+#(Tag:wind)A divine bow crafted from earth and cosmos essences that converts any nocked arrow into exotic resonance crystals. They summon resonant lightning where they strike, powerful enough to flay gods alive and rend the surface world.
 406. Telluric Gale, 6.2, Calamity Mod
-#(Tag:holy)A bow crafted from the profaned goddess's remains that converts any nocked arrow into powerful scorching bolts of divine holy flame powered by your energy.
+#(Tag:wind)(Tag:holy)A bow crafted from the profaned goddess's remains that converts any nocked arrow into powerful scorching bolts of divine holy flame powered by your energy.
 407. The Storm, 4.7, Calamity Mod
 #A bow carved from the storm weaver's remains that converts any nocked arrow into a lightning bolt scaling with its wielder's power.
 408. Hoarfrost Bow, 4.2, Calamity Mod
@@ -817,7 +817,7 @@
 409. Lunarian Bow, 3.6, Calamity Mod
 #A bow crafted from the natural world's elements that converts your energy into energy arrows to fire.
 410. Phoenix Feather, 6.6, Black Souls
-#Placing this feather on a corpse whose soul still exists and is not blocked by Legendary rank or higher resurrection prevention revives them, consuming the feather. Restock Timer: 720 hours.
+#(Tag:avian)Placing this feather on a corpse whose soul still exists and is not blocked by Legendary rank or higher resurrection prevention revives them, consuming the feather. Restock Timer: 720 hours.
 411. Grimm Pool, 4.7, RWBY
 #A large jar of evil black goop that summons loyal lesser Grimm once it lands on a stable surface.
 412. The Stand Arrow, 5.1, JoJo
@@ -833,15 +833,15 @@
 417. Rinnegan Jar, 7.2, Naruto
 #A pair of Rinnegan plucked from Nagato in preserving fluid, surgically implantable in yourself or others to gain their abilities. They require vast energy to handle.
 418. Fire Release Jutsu Scroll, 5.2, Naruto
-#(Tome) A large scroll recording all Fire Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+#(Tag:fire)(Tome) A large scroll recording all Fire Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 419. Water Release Jutsu Scroll, 5.6, Naruto
-#(Tome) A large scroll recording all Water Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+#(Tag:water)(Tome) A large scroll recording all Water Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 420. Wind Release Jutsu Scroll, 6.0, Naruto
-#(Tome) A large scroll recording all Wind Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+#(Tag:wind)(Tome) A large scroll recording all Wind Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 421. Earth Release Jutsu Scroll, 5.5, Naruto
-#(Tome) A large scroll recording all Earth Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+#(Tag:earth)(Tome) A large scroll recording all Earth Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 422. Lightning Release Jutsu Scroll, 5.7, Naruto
-#(Tome) A large scroll recording all Lightning Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+#(Tag:lightning)(Tome) A large scroll recording all Lightning Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 423. T-51b Power Armor, 2.6, Fallout
 #(Tech) Pre-Great War mass-produced power armour that shrugs off low-calibre bullets and lets an average man lift a car overhead. Powered by a fusion core replaced with a new one every 24 hours.
 424. Gene Seed Ticket, 4.2, Warhammer 40k
@@ -893,7 +893,7 @@
 447. ColorS, 1.2, Fairy Tail
 #A small book-like magic item that changes your clothing's color scheme by sliding your finger over it.
 448. Gale Force Reading Glasses, 2.7, Fairy Tail
-#Magical spectacles letting you read any held book 64x faster without losing comprehension.
+#(Tag:wind)Magical spectacles letting you read any held book 64x faster without losing comprehension.
 449. Music Player, 1.6, Generic
 #(Tech) An indestructible music player with excellent sound, built-in speakers and headphones. It plays any song the holder has heard and archives it.
 450. Archenemy, 5.7, Fairy Tail
@@ -927,13 +927,13 @@
 464. Stopwatch, 8.5, Generic
 #A stopwatch stopping the universe's time around the user, often employed by Ugly Bastards or people whose hair obscures their eyes.
 465. Rick's Portal Gun, 7.2, Rick and Morty
-#(Tech) A portal gun from one of the multiverse's smartest yet stupidest and drunkest inventors, opening portals to any non-spatial-blocked location including other universes if you know coordinates or specifications. Portal fluid refills every 24 hours.
+#(Tag:teleport)(Tech) A portal gun from one of the multiverse's smartest yet stupidest and drunkest inventors, opening portals to any non-spatial-blocked location including other universes if you know coordinates or specifications. Portal fluid refills every 24 hours.
 466. Ring of the Bull, 3.1, Generic
 #This golden ruby ring grants increased strength and endurance, half flat boost and half percentage boost.
 467. Riptide, 2.2, Percy Jackson
-#The Poseidon demigod's Celestial Bronze sword, exceptionally durable and sharp yet unable to harm the mundane. It switches between pen and sword at will and boosts water affinity as a focus.
+#(Tag:water)The Poseidon demigod's Celestial Bronze sword, exceptionally durable and sharp yet unable to harm the mundane. It switches between pen and sword at will and boosts water affinity as a focus.
 468. Helm of Darkness, 5.8, Percy Jackson
-#Hades' ornate helmet granting complete invisibility to all senses, wall-phasing, and shadow-melting, plus a primordial fear aura. Its abilities consume your energy.
+#(Tag:shadow)Hades' ornate helmet granting complete invisibility to all senses, wall-phasing, and shadow-melting, plus a primordial fear aura. Its abilities consume your energy.
 469. Hyperbolic Time Chamber, 5.8, Dragon Ball
 #A gravity-enhanced dimension for training or hideout with 3-to-1 time dilation: three days inside equal one outside. Access it from any door you place your hands on.
 470. Weapon Voucher, 1.3, Generic
@@ -953,7 +953,7 @@
 477. Mansion of the Boundary, 8.8, Generic
 #A taste-tailored mansion sitting in the middle of everything in its own impenetrable dimension even Outer Ones cannot breach. Enter through any door you touch and exit at any door in reality, even other multiverses or gardens.
 478. Plague Reaper Armor, 6.4, Calamity Mod
-#(Tech) High-tech plague doctor armour fused with Plague Nanovirus, greatly amplifying physical stats with aiming HUD. Immune to diseases and poison below Divine Level, it greatly amplifies your poison and bio abilities and can temporarily release Nanoviruses to rot enemies from within before dissolving safely.
+#(Tag:poison)(Tech) High-tech plague doctor armour fused with Plague Nanovirus, greatly amplifying physical stats with aiming HUD. Immune to diseases and poison below Divine Level, it greatly amplifies your poison and bio abilities and can temporarily release Nanoviruses to rot enemies from within before dissolving safely.
 479. Wulfrum Armor, 2.8, Calamity Mod
 #(Tech) Simple high-tech wulfrum armour with reasonable defense and comfort. An activated switch turns it into power armour with a supplied powerful machine gun; this mode has a 24-hour cooldown.
 480. Photon Ripper, 5.9, Calamity Mod
@@ -985,7 +985,7 @@
 493. Soul Stone, 8.1, Marvel
 #One of the Infinity Stones, among the most powerful artifacts in existence. It allows control of souls, bestowing life and resurrection, as long as the user can handle its power.
 494. Shadow Perfume, 1.5, Generic
-#A bottle of pitch-black cologne that erases the user's scent and partly muffles movement for 1 hour when applied.
+#(Tag:shadow)A bottle of pitch-black cologne that erases the user's scent and partly muffles movement for 1 hour when applied.
 495. Ring of Suppression, 2.5, Generic
 #A smooth black nondescript ring that completely erases your energy signatures unless you are actively using abilities or spells.
 496. Neuralyzer, 3.8, Men in Black
@@ -995,7 +995,7 @@
 498. 1 UP, 6.1, Mario
 #A green, odd-looking mushroom that grants an extra life when consumed, instantly reviving the user at maximum health upon death.
 499. Portal Gun, 3.4, Portal
-#(Tech) An Aperture Science Portal Gun firing blue and orange pulses that each open a person-sized portal where they land, linked to the opposite colour. Only one portal of each colour can exist at once.
+#(Tag:teleport)(Tech) An Aperture Science Portal Gun firing blue and orange pulses that each open a person-sized portal where they land, linked to the opposite colour. Only one portal of each colour can exist at once.
 500. Gordon's Crowbar, 1.4, Half-Life
 #Gordon Freeman's legendary crowbar, stained with innumerable aliens' blood. It deals conceptually more damage to all inhuman enemies.
 501. Stamin-Up, 1.8, Call of Duty
@@ -1021,13 +1021,13 @@
 511. Sling Ring, 7.0, Marvel
 #A mystical ring that opens interdimensional portals for travel even across the multiverse by visualizing the destination. Magical training is needed for full use.
 512. Psychic Paper, 1.6, Doctor Who
-#Psychic paper that makes viewers see what they expect, such as IDs, papers, or permits. It fails against exceptionally strong beings or geniuses who may notice the difference.
+#(Tag:psychic)Psychic paper that makes viewers see what they expect, such as IDs, papers, or permits. It fails against exceptionally strong beings or geniuses who may notice the difference.
 513. Holy Grail, 6.8, Fate
 #(Tag:holy)A chalice holding incredible raw magical power. It can serve as an immense mana source or grant wishes achievable through magic below Legendary Tier. Restock Timer: 720 hours.
 514. Warhammer 40k, 2.0, Generic
 #40,000 regular-quality standard iron warhammers, retrievable one at a time from system storage. What did you think it was?
 515. Demon Blood Blade, 2.0, Adventure Time
-#(Tag:demonic)(Tag:spectral)A tough, sharp unholy blade forged from the blood of the demon Kee-Oth. It deals increased damage to Angelic and Holy beings, can harm spiritual creatures, and offers further use to Hemokinetics.
+#(Tag:blood)(Tag:demonic)(Tag:spectral)A tough, sharp unholy blade forged from the blood of the demon Kee-Oth. It deals increased damage to Angelic and Holy beings, can harm spiritual creatures, and offers further use to Hemokinetics.
 516. Moondrip, 4.5, Fairy Tail
 #A powerful potion of long-condensed moon power. Emptying the bottle on a spell dispels it if Elite level or below; drinking it cleanses the user of magic effects of the same level. Restock Timer: 24 hours.
 517. God Emperor's Blade, 5.8, Warhammer 40k
@@ -1041,7 +1041,7 @@
 521. Blade of Olympus, 7.5, God of War
 #The Blade of Olympus, forged from the Heavens, Seas, Afterlife, and Earth, and strongest weapon of the Olympian Gods, able to shatter titans in a single swing. It holds divine might to create Divine Energy projections, amplify the user's Divine Attributes, and enhance all Divine-related items and abilities they hold.
 522. Leviathan Axe, 5.0, God of War
-#The Leviathan Axe, peer of Mjolnir, is an unbreakable sharp rune-imbued axe. It projects shapeable frost aura for attacks, greatly augments Ice/Frost attributes while held, and returns to the hand when thrown.
+#(Tag:aquatic)The Leviathan Axe, peer of Mjolnir, is an unbreakable sharp rune-imbued axe. It projects shapeable frost aura for attacks, greatly augments Ice/Frost attributes while held, and returns to the hand when thrown.
 523. Draupnir Spear, 4.6, God of War
 #A spear forged for Kratos and imbued with the winds of all realms, worn as a ring that manifests up to 8 spears at once. Held spears project energy as wind and boost wind attribute, and summoned spears can be detonated into wind explosions at any time.
 524. Canto, 3.3, Cyberpunk 2077
@@ -1097,7 +1097,7 @@
 549. Favour Cheque, 4.8, Generic
 #A blank cheque to cash in a favour, insufficient for acts strongly against the target's morals but enough for great inconvenience like rent-free housing. It burns upon use.
 550. A Doctor's Appointment, 1.6, Generic
-#A doctor's appointment ticket that instantly grants a detailed note on physical condition plus many possible treatments for any conditions. Restock Timer: 120 hours.
+#(Tag:healing)A doctor's appointment ticket that instantly grants a detailed note on physical condition plus many possible treatments for any conditions. Restock Timer: 120 hours.
 551. Tactical Trenchcoat, 1.5, Generic
 #A cool-looking, exceptionally durable yet comfortable trenchcoat. All pockets are 10x bigger inside for extra storage.
 552. Chaos Gacha Promotional Shirt, 1.0, Generic
@@ -1121,15 +1121,15 @@
 561. The Slaughterhouse, 5.0, Generic
 #This rusty old key opens a door to the Slaughterhouse, whose workers supply any amount of mundane Earth-native meat on demand, breed, raise, and butcher any two live breedable animals for you at 60x efficiency, and perfectly process, pack, and return any non-living meat sent in. You may enter the universe-sized complex of soulless butchers and workers, but do not get lost or wander. WARNING: Do not send anything you do not want harvested for meat, including yourself; the workers do not care for reason.
 562. Yukari Fumo, 4.8, Touhou
-#Shake this fumo violently to open a portal to any visited location in your current dimension. Only one portal open at a time.
+#(Tag:teleport)Shake this fumo violently to open a portal to any visited location in your current dimension. Only one portal open at a time.
 563. Blue Spider Lily, 6.3, Demon Slayer
-#An incredibly fragile rare flower in a special container. Properly refined into medicine, it turns the ingester into a Progenitor Demon (Legendary Trait).
+#(Tag:insect)An incredibly fragile rare flower in a special container. Properly refined into medicine, it turns the ingester into a Progenitor Demon (Legendary Trait).
 564. Volendrung, 4.2, Elder Scrolls
 #Volendrung, an enchanted nigh-unbreakable Daedric hammer that saps hit targets' strength, temporarily weakening them. Expending energy activates a paralysis enchantment whose duration depends on target strength.
 565. Reaper's Census, 4.6, Generic
 #A simple notebook tracking every sapient life lost in your current dimension, requiring rough face and name knowledge to jump to a target's page or manual paging otherwise. Each deceased page lists cause of death, time since death, corpse or largest-remains location, and soul location if in the same dimension. The book reforms somewhere accessible if destroyed.
 566. Venom Vial, 2.6, Batman
-#A sealed vial of Venom, a powerful fast-acting steroid enhancing physical strength for 12 hours before leaving weakness, with debilitating withdrawal and possible urge to break backs. Restock Timer: 24 hours.
+#(Tag:poison)A sealed vial of Venom, a powerful fast-acting steroid enhancing physical strength for 12 hours before leaving weakness, with debilitating withdrawal and possible urge to break backs. Restock Timer: 24 hours.
 567. Origin Rounds, 3.8, Fate
 #An otherwise ordinary .30-06 bullet made from the ground ribs and soul fragments of Kiritsugu Emiya, the Magus Killer. On direct hit it enforces Severing and Binding on the target's magic, temporarily disrupting magic and abilities. Restock Timer: 12 hours.
 568. Erza Fumo, 2.4, Fairy Tail
@@ -1153,7 +1153,7 @@
 577. Gun Cache, 3.5, Generic
 #A dark grey duffle bag producing copies of any mundane Basic Earth public-use firearm or bullet magazine with bullets, from revolvers to sniper rifles. Limited to 20 kg pulled per day.
 578. Rivers of Blood, 2.7, Elden Ring
-#Mohg champion's old katana, stained by countless blood yet incredibly durable and sharp. Flesh wounds from it haemorrhage unnaturally fast.
+#(Tag:blood)Mohg champion's old katana, stained by countless blood yet incredibly durable and sharp. Flesh wounds from it haemorrhage unnaturally fast.
 579. The Jar, 2.0, Elden Ring
 #A large wearable head jar once worn by a tarnished warrior who vanquished the rot goddess a thousandfold. It grants increased physical abilities, reflexes, and instincts against Gods or Divine entities. Despite appearances, it does not hinder vision and is supernaturally durable.
 580. Contract from Below, 5.5, Generic
@@ -1163,7 +1163,7 @@
 582. Dimensional Courier, 2.3, Generic
 #A phone with a single dialled number contacting the Dimensional Courier. The Courier buys anything civilian-purchasable with money from anywhere you have visited, even across realities and dimensions, delivering within 8 hours at most. They take 10% commission per purchase.
 583. Vial of Everflowing Blood, 2.5, Generic
-#An ornate red vial endlessly pouring fresh healthy O- blood when tipped, manifested rather than belonging to any person.
+#(Tag:blood)An ornate red vial endlessly pouring fresh healthy O- blood when tipped, manifested rather than belonging to any person.
 584. Ring of Sustenance, 3.2, Generic
 #A ring constantly providing full sustenance while worn, regardless of dietary needs.
 585. Morgue, 4.0, Generic
@@ -1195,7 +1195,7 @@
 598. Icon of Greed, 5.8, Generic
 #"They would do anything for it." A simple gold coin embodying greed, compelling viewers to possess it at any cost, from selling family to swearing fealty or killing kin, with stronger entities more resistant. Once willingly given, it becomes normal, yet trades stay yours with the giver satisfied and unseeking return.
 599. Heal Juice, 6.0, Generic
-#A green juice vial restoring the drinker to perfect health, resolving all complications and negative statuses. Requires full dose, as dilution ruins it; heals anything except death if consumable.
+#(Tag:healing)A green juice vial restoring the drinker to perfect health, resolving all complications and negative statuses. Requires full dose, as dilution ruins it; heals anything except death if consumable.
 600. Universal Rations, 2.3, Generic
 #A bottle of 100 flavorless small white pills, each equaling a regular meal that fully satiates for at least 8 hours with all nutrients for any race or peculiarity. Restock Timer: 120 hours.
 601. Pocket Universe, 6.1, Generic
@@ -1203,13 +1203,13 @@
 602. High Roller Suite, 4.3, Generic
 #Congratulations, gambler: a key temporarily turning any door into a gate to the High Roller Suite, a luxury hotel room with 3 beds, 2 bathrooms, running water, electricity, heat, local internet, and other amenities. It auto-cleans perfectly every 24 hours, exists in the middle of nowhere and requires the key to exit, returning users to their entry point. The key cannot be lost or destroyed.
 603. Fairy Boots, 4.6, Terraria
-#(Tag:fae)Living-material boots greatly enhancing running speed, growing stepped-on mundane plants instantly to maturity with lush flora in a 1-meter radius and flowers in their wake rather than creating plants. Standing in nature while worn increases energy regeneration and nature affinity.
+#(Tag:nature)(Tag:fae)Living-material boots greatly enhancing running speed, growing stepped-on mundane plants instantly to maturity with lush flora in a 1-meter radius and flowers in their wake rather than creating plants. Standing in nature while worn increases energy regeneration and nature affinity.
 604. Garden of Eden Seed, 3.9, Generic
 #Unassuming grass seeds that quickly grow in any soil or sand without nutrients into a lush garden enriching surrounding ground and air energy quality. The garden expands non-invasively until fenced, yielding much faster healthier crops and healthier vigorous cattle. Restock Timer: 720 hours.
 605. Uber Fertilizer, 3.8, Generic
 #Fertilizer from a mad scientist using eldritch waste, growing crops 30x faster for 24 hours with perfect nutrients regardless of needs. Each bag covers exactly 1 acre. Restock Timer: 240 hours.
 606. Staff of Regrowth, 3.5, Terraria
-#A staff of solidified flower suffused with nature energy. Expend energy to nourish and rapidly grow plants in range, even reviving half-dead seeds on arid land into lush fertile ground; stronger or demanding plants cost more energy. Amplifies nature-based abilities channeled through it.
+#(Tag:nature)A staff of solidified flower suffused with nature energy. Expend energy to nourish and rapidly grow plants in range, even reviving half-dead seeds on arid land into lush fertile ground; stronger or demanding plants cost more energy. Amplifies nature-based abilities channeled through it.
 607. Reroll Chip, 3.8, Generic
 #(Gacha) A golden poker chip that lets you reroll your latest gacha ticket, discarding its result for a different result on the same ticket. The chip vanishes upon use.
 608. Vibranium Weave Patch, 4.2, MCU
@@ -1221,7 +1221,7 @@
 611. Instant Death Soup, 2.7, Generic
 #A pot of very hot spicy soup that instantly kills anyone who willingly drinks it while knowing its effects, regardless of constitution or abilities. The whole soup must be consumed for it to take effect.
 612. Very Hot Soup, 3.1, Generic
-#(Tag:holy)A pot of incredibly hot spicy soup; consuming the entire pot covers the consumer's body in [(Rare)Cursed Flames], [(Elite)Blood Flames], [(Elite)Holy Flames], and [(Elite)Godslayer Apostle Flames].
+#(Tag:blood)(Tag:holy)A pot of incredibly hot spicy soup; consuming the entire pot covers the consumer's body in [(Rare)Cursed Flames], [(Elite)Blood Flames], [(Elite)Holy Flames], and [(Elite)Godslayer Apostle Flames].
 613. Morphing Blade, 1.4, Generic
 #A 3 kg iron sword with a pure iron blade that can change shape while conserving mass. Destroyed or separated parts lose this property, as does reforging or modifying the sword.
 614. Escape Ticket, 1.6, Generic
@@ -1275,7 +1275,7 @@
 638. Desert Key, 3.2, Generic
 #An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km desert pocket dimension with harsh sun, strong wind, and cold nights where few creatures survive. The exit gate stays open and leads to where the entrance was last opened.
 639. Forest Key, 4.2, Generic
-#An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km temperate forest pocket dimension full of life, resources, and Earth natives like wolves. The exit gate stays open and leads to where the entrance was last opened.
+#(Tag:nature)An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km temperate forest pocket dimension full of life, resources, and Earth natives like wolves. The exit gate stays open and leads to where the entrance was last opened.
 640. Beach Key, 4.4, Generic
 #An ornate key that when turned in a large space creates a portal to a 10 km x 10 km x 10 km beach and sea pocket dimension full of sea life, ideal for fishing or vacation. The exit gate stays open and leads to where the entrance was last opened.
 641. Tundra Key, 3.4, Generic
@@ -1397,7 +1397,7 @@
 699. Zahkriisos, 4.1, Skyrim
 #An enchanted Ebony dragon priest mask granting Lightning and Wind resistance while boosting Lightning affinity and Lightning abilities' potency.
 700. Dukaan, 4.0, Skyrim
-#An enchanted Ebony dragon priest mask granting Ice and Cold resistance while boosting Ice affinity and Ice abilities' potency.
+#(Tag:ice)An enchanted Ebony dragon priest mask granting Ice and Cold resistance while boosting Ice affinity and Ice abilities' potency.
 701. Otar, 4.1, Skyrim
 #An enchanted Malachite dragon priest mask granting considerable resistance to Ice, Cold, Heat, Fire, and Lightning.
 702. Stormbreaker, 7.2, MCU
@@ -1469,7 +1469,7 @@
 735. Bashonen, 4.7, Naruto
 #Bashonen is a large fan that releases large amounts of one of five elements (Fire, Wind, Earth, Lightning, Water) when swung with imbued energy and a verbal command. Output scales with energy expended.
 736. Sword of the Thundergod, 4.5, Naruto
-#A Vajra-shaped sword handle that forms a lightning energy blade when imbued with energy, scaling in power with energy imbued. Electricity-based abilities channeled through it are more potent.
+#(Tag:lightning)A Vajra-shaped sword handle that forms a lightning energy blade when imbued with energy, scaling in power with energy imbued. Electricity-based abilities channeled through it are more potent.
 737. Knuckleblaster, 3.8, Ultrakill
 #A ticket that, when torn, installs this strong close-combat mechanical arm onto the tearer. It generates shells from spare metal to expend for shockwaves.
 738. The Slave Waiver, 4.6, Generic
@@ -1551,7 +1551,7 @@
 776. Gaea Foundation, 3.8, Akame ga Kill
 #Dubbed "Phantasmagoria", Gaea Foundation is a large makeup-kit Teigu letting you disguise as any living being you have seen, with stamina drain rising as the form diverges from your body. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 777. Rongo Rongo, 5.3, Akame ga Kill
-#Dubbed "Complete Book of the World", Rongo Rongo is a book Teigu containing a detailed map and encyclopedia of your entire world with locations plus future natural disasters like earthquakes, tsunamis, storms, and rains. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+#(Tag:earth)Dubbed "Complete Book of the World", Rongo Rongo is a book Teigu containing a detailed map and encyclopedia of your entire world with locations plus future natural disasters like earthquakes, tsunamis, storms, and rains. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 778. Mastema, 3.9, Akame ga Kill
 #Dubbed "Thousand Mile Flight", Mastema is a disk Teigu forming wings for flight and volleys of sharp durable feather projectiles. Skilled users unlock the "Gods Wings" trump card, turning wings ethereal to reflect projectiles at large stamina cost. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 779. Adramelech, 5.4, Akame ga Kill
@@ -1569,13 +1569,13 @@
 785. Hekatonkheires, 4.0, Akame ga Kill
 #Dubbed "Magical Beast Transformation", Hekatonkheires is an ugly unlikeable dog-like Teigu that transforms into a larger form with great strength, blade-like teeth, and limb-regrowing regeneration unless its core breaks. Berserker mode further boosts it but leaves the Teigu unusable for a few days. As this item is a Teigu, it is difficult to master and can only be used by compatible people; this overgrown rat has terrible taste. (A/N: Stylish modifications not included).
 786. Horse Electrolytes, 0.5, Generic
-#A full container of powdered horse electrolytes. Drink it. Restock Timer: 1 hour.
+#(Tag:lightning)A full container of powdered horse electrolytes. Drink it. Restock Timer: 1 hour.
 787. Apple, 0.5, Generic
 #A regular juicy shiny red apple that repels registered practicing doctors within 25 meters while you eat it. Restock Timer: 24 hours.
 788. Blood Vial, 2.8, Bloodborne
-#A Healing Church Blood Vial of diluted Blood Saint blood curing many ailments. Used moderately it considerably heals wounds and disease, but it is addictive and abuse can turn the susceptible into beasts.
+#(Tag:blood)A Healing Church Blood Vial of diluted Blood Saint blood curing many ailments. Used moderately it considerably heals wounds and disease, but it is addictive and abuse can turn the susceptible into beasts.
 789. Saint Blood Vial, 3.5, Bloodborne
-#A Healing Church vial of pure Blood Saint blood with potent Old One traces, powerfully healing even severe injuries and illnesses. Yharnam blood is addictive, and overuse can turn the susceptible into beasts.
+#(Tag:blood)A Healing Church vial of pure Blood Saint blood with potent Old One traces, powerfully healing even severe injuries and illnesses. Yharnam blood is addictive, and overuse can turn the susceptible into beasts.
 790. Surströmming, 0.3, Generic
 #A can of fermented Baltic Sea Herring that smells and tastes foul. Only a disturbed mind enjoys it. Restock Timer: 30 minutes.
 791. Magician's Hat, 1.0, Generic
@@ -1593,7 +1593,7 @@
 797. Reimu Fumo, 4.1, Touhou
 #A Fumo of a certain destitute Shrine Maiden that, when shaken violently, erects a spiritual barrier against Unholy/Dark beings around a location. Only one barrier at a time.
 798. Cirno Fumo, 3.5, Touhou
-#A Fumo of a certain Genius Ice Fairy that freezes a target when smacked with it while imbued with your energy. Potency scales with energy expended and impact force.
+#(Tag:ice)A Fumo of a certain Genius Ice Fairy that freezes a target when smacked with it while imbued with your energy. Potency scales with energy expended and impact force.
 799. Remilia Fumo, 3.9, Touhou
 #A Fumo of the Scarlet Devil Mansion's mistress that, when shaken violently, grants you [Rabbit's Foot (Rare Trait)] luck for 24 hours, or inflicts [Jinx (Rare Ability)] for 24 hours when smacked on a target. Cooldown: 72 hours.
 800. Flandre Fumo, 5.4, Touhou
@@ -1647,7 +1647,7 @@
 824. Bottle of Milk, 1.4, The Legend of Zelda
 #A bottle of incredibly high-quality milk from Malon that restores some vitality and vigor when drunk. Restock Timer: 12 hours.
 825. Earth Key, 6.5, Generic
-#An ornate key that, turned in a sufficiently large space, opens a portal to a 20,000 km x 20,000 km x 20,000 km pocket dimension containing planet Earth. It holds a human-free version of Earth as untamed wilds. The exit gate stays open and leads to where the entrance was last opened.
+#(Tag:earth)An ornate key that, turned in a sufficiently large space, opens a portal to a 20,000 km x 20,000 km x 20,000 km pocket dimension containing planet Earth. It holds a human-free version of Earth as untamed wilds. The exit gate stays open and leads to where the entrance was last opened.
 826. Bathhouse Key, 3.5, Generic
 #An ornate key that, turned in a sufficiently large space, opens a portal to a 250x250x250m pocket dimension holding a luxurious opulent bathhouse. Homunculi attendants staff, maintain, and serve entrants, and its water excellently restores Health and Energy. The exit gate stays open and leads to where the entrance was last opened.
 827. A chocolate chip cookie but with the chips picked off for some reason, 0.1, Cookie Clicker
@@ -1755,13 +1755,13 @@
 878. Analysis Visor, 2.6, No Man's Sky
 #Tag flora, fauna, and minerals through your visor; uploads pay out in Nanites.
 879. Terrain Manipulator, 3.4, No Man's Sky
-#Reshape whole landscapes, mine underfoot, and flatten base sites with multitool modes.
+#(Tag:earth)Reshape whole landscapes, mine underfoot, and flatten base sites with multitool modes.
 880. Boltcaster, 2.8, No Man's Sky
 #The trusty starting multitool weapon; rapid plasma bolts with endless upgrades.
 881. Blaze Javelin, 3.6, No Man's Sky
 #A charged railbeam that pierces rock and sentinels alike.
 882. Hyperdrive, 4.6, No Man's Sky
-#Fold space between stars on warp cells; the whole galaxy opens up.
+#(Tag:teleport)Fold space between stars on warp cells; the whole galaxy opens up.
 883. Minotaur Exocraft, 5.2, No Man's Sky
 #A piloted mech suit with mining laser, stomp jets, and a cockpit with a view.
 884. Living Ship, 6.8, No Man's Sky
@@ -1799,7 +1799,7 @@
 900. Seaglide, 2.6, Subnautica
 #Handheld underwater scooter with light and sonar map; every diver's first love.
 901. Seamoth, 4.2, Subnautica
-#Nippy one-person sub with crush-depth upgrades and a perimeter defense zapper.
+#(Tag:insect)Nippy one-person sub with crush-depth upgrades and a perimeter defense zapper.
 902. Prawn Suit, 5.2, Subnautica
 #Powered exosuit with drill and grapple arms, for punching leviathans in the face.
 903. Cyclops, 6.4, Subnautica
@@ -1807,7 +1807,7 @@
 904. Habitat Builder, 3.6, Subnautica
 #Prints seabase modules from titanium anywhere with a flat-ish seabed.
 905. Stasis Rifle, 4.0, Subnautica
-#Freezes anything in a time bubble, up to and including Reapers. Briefly.
+#(Tag:ice)Freezes anything in a time bubble, up to and including Reapers. Briefly.
 906. Thermoblade, 3.0, Subnautica
 #Superheated survival knife that cooks fish as it cuts them.
 907. Ultra Glide Fins, 2.4, Subnautica
@@ -1859,7 +1859,7 @@
 930. Vacpack, 3.0, Slime Rancher
 #Vacuum, shoot, and store slimes, food, and plorts with four color-coded tanks.
 931. Slime Key, 3.4, Slime Rancher
-#A statue-shaped key that opens Slime Gates into new ranch zones.
+#(Tag:slime)A statue-shaped key that opens Slime Gates into new ranch zones.
 932. CCCC Ion Laser, 5.0, Genome Guardian
 #A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. A piercing hitscan laser with near-perfect accuracy and extreme range: devastating pinpoint damage with a slow fire rate.
 933. AAAA Minigun, 4.2, Genome Guardian
@@ -1917,7 +1917,7 @@
 959. Flare Gun, 2.4, Deep Rock Galactic
 #Fires a burning flare that sticks where it lands and lights up the whole cave.
 960. Terrain Tool, 2.8, Astroneer
-#A deformable-terrain multitool for digging, flattening, and analyzing alien soil.
+#(Tag:earth)A deformable-terrain multitool for digging, flattening, and analyzing alien soil.
 961. Shuttle, 3.8, Astroneer
 #A single-seat interplanetary shuttle; pack solid fuel and pick a landing zone.
 962. RTG, 4.4, Astroneer
@@ -1927,7 +1927,7 @@
 964. Sledgehammer, 2.8, Project Zomboid
 #Destroys walls, doors, and skulls with equal enthusiasm. Heavy, though.
 965. Generator, 3.0, Project Zomboid
-#A portable gas generator that keeps the lights and freezers on after the grid dies.
+#(Tag:ice)A portable gas generator that keeps the lights and freezers on after the grid dies.
 966. Galaxy Sword, 5.2, Stardew Valley
 #A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen.
 967. Junimo Hut, 3.8, Stardew Valley
@@ -1957,7 +1957,7 @@
 979. Photostatic Veil, 3.4, MCU
 #A Black Widow mesh mask that wears anyone's face well enough to fool scanners.
 980. CPH4, 5.2, Lucy
-#A packet of synthetic blue crystals that unlocks escalating brain capacity: perfect recall, telepathy, then matter and time itself. Unstable, leaks, and past a point there is no coming back.
+#(Tag:psychic)A packet of synthetic blue crystals that unlocks escalating brain capacity: perfect recall, telepathy, then matter and time itself. Unstable, leaks, and past a point there is no coming back.
 981. Time Loop Cave, 5.2, Palm Springs
 #A desert cave that traps whoever enters during a tremor in a repeating day. Rehearse anything forever; rumor says one explosion inside, mid-quake, gets you out.
 982. Electric Locomotive, 4.6, Satisfactory
@@ -2083,7 +2083,7 @@
 1042. Lambent Plume, 5.5, Hades
 #A feather that stacks dodge chance the longer you keep moving without stopping. Standing still resets it.
 1043. Harpy Feather Duster, 4.6, Hades
-#A duster that makes breakables and containers hide more valuables. Dust first, loot second.
+#(Tag:avian)A duster that makes breakables and containers hide more valuables. Dust first, loot second.
 1044. Cosmic Egg, 5.6, Hades
 #A cosmic egg that thins local reality: chaotic phenomena and strangers seek you out, and offerings made to Chaos, such as Chaos Gate sacrifices, run stronger.
 1045. Luckier Tooth, 5.3, Hades 2
@@ -2119,7 +2119,7 @@
 1060. Stillsuit Patch Kit, 0.4, Dune
 #Patches stillsuit leaks adequately. Does not patch the wearer's complaining.
 1061. Mud (thermal), 0.5, Predator
-#Special mud that hides body heat from thermal vision while wet. Dries fast; reapply under fire.
+#(Tag:earth)Special mud that hides body heat from thermal vision while wet. Dries fast; reapply under fire.
 1062. Endoskeleton Finger, 0.4, Terminator
 #One hyperalloy finger. Points accusingly. Cannot be bent, broken, or returned.
 1063. Sonic Screwdriver (dead), 0.6, Doctor Who
@@ -2151,7 +2151,7 @@
 1076. Shiv (dull), 0.4, Riddick
 #A dull shiv. Shanks poorly. Intimidates only the already intimidated.
 1077. Lethe Water (sip), 0.5, Hades
-#One sip erases roughly the last minute. Single use; the flask stays empty as a lesson.
+#(Tag:water)One sip erases roughly the last minute. Single use; the flask stays empty as a lesson.
 1078. Zat'nik'tel, 4.8, Stargate
 #Goa'uld sidearm with three settings per target: first shot stuns, second kills, third disintegrates. Resets are per target, so count your shots.
 1079. Sarcophagus, 5.8, Stargate
@@ -2169,7 +2169,7 @@
 1085. Combat Stim, 5.0, StarCraft
 #Military-grade combat stims: greatly quickened strikes and dulled pain for a few minutes, at the cost of a chunk of health. Side effects include confidence.
 1086. Plant in a Boot, 5.0, WALL-E
-#A living plant growing in an old boot: proof that life finds a way. Tends to inspire hope, directives, and mutiny in roughly that order.
+#(Tag:nature)A living plant growing in an old boot: proof that life finds a way. Tends to inspire hope, directives, and mutiny in roughly that order.
 1087. Nano Boost, 5.4, Overwatch
 #An injection granting one ally massive damage and resistance for a short push. Recipient hears heroic music; enemies hear footsteps. One dose; a new dose brews per week.
 1088. Battle-Car, 5.4, Rocket League

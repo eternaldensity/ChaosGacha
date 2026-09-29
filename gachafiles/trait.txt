@@ -77,17 +77,17 @@
 39. Tough Skin, 2.2, Generic
 #Your skin is abnormally tough, enhancing your durability beyond the norm.
 40. Fire Resistance, 3.5, Generic
-#You resist fire and fire-based effects and attacks. This resistance scales with your basic stats.
+#(Tag:fire)You resist fire and fire-based effects and attacks. This resistance scales with your basic stats.
 41. Water Resistance, 3.2, Generic
-#You resist water and water-based effects and attacks. This resistance scales with your basic stats.
+#(Tag:water)You resist water and water-based effects and attacks. This resistance scales with your basic stats.
 42. Air Resistance, 3.6, Generic
 #You resist air and weather-based effects and attacks. This resistance scales with your basic stats.
 43. Lightning Resistance, 3.5, Generic
-#You resist lightning and lightning-based effects and attacks. This resistance scales with your basic stats.
+#(Tag:lightning)You resist lightning and lightning-based effects and attacks. This resistance scales with your basic stats.
 44. Earth Resistance, 3.0, Generic
-#You resist Earth and earth-based attacks and effects, but metal does not count. This resistance scales with your basic stats.
+#(Tag:earth)You resist Earth and earth-based attacks and effects, but metal does not count. This resistance scales with your basic stats.
 45. Ice Resistance, 3.3, Generic
-#You resist ice and ice-based attacks and effects. This resistance scales with your basic stats.
+#(Tag:ice)You resist ice and ice-based attacks and effects. This resistance scales with your basic stats.
 46. Thermal Balance, 3.9, Generic
 #You maintain a comfortable, optimal body temperature as long as the environment is no hotter than 1000°C and no colder than -100°C.
 47. Disney Princess, 4.0, Generic
@@ -117,9 +117,9 @@
 59. Natural Scent, 2.4, Generic
 #Upgrade of Perfumer - You smell really good, even your sweat, with natural body odor like perfume most people like. You never smell bad.
 60. Poisonous, 0.2, Generic
-#You are poisonous, so anyone who eats your flesh has a mildly bad time.
+#(Tag:poison)You are poisonous, so anyone who eats your flesh has a mildly bad time.
 61. Venomous, 2.8, Generic
-#Your bite contains paralyzing venom that scales with your physical abilities.
+#(Tag:poison)Your bite contains paralyzing venom that scales with your physical abilities.
 62. Iron Man, 2.4, Generic
 #You tolerate horrible sleeping conditions, strain, wounds, and exhaustion far better, making you very hardy and enduring.
 63. Shiver, 3.4, Disco Elysium
@@ -133,7 +133,7 @@
 67. Raphael Ambrosius Costeau, 2.6, Disco Elysium
 #You listen to your inner detective with increased deductive reasoning and cue-reading, making you basically a detective without any real detective training.
 68. Blood Pack, 1.4, Generic
-#Your body holds approximately 5 times the average person's blood with no noticeable effect on you.
+#(Tag:blood)Your body holds approximately 5 times the average person's blood with no noticeable effect on you.
 69. Steady, 3.9, Generic
 #You are incredibly steady with no small shakes and no lost footing, so you can hold a gun like it is on a tripod even hopped up on adrenaline.
 70. Empathy, 2.7, Generic
@@ -167,7 +167,7 @@
 84. Pugilist, 4.4, Generic
 #You are a natural in martial arts, moving efficiently and powerfully by second nature while learning and developing them far faster with unique combat intuition.
 85. Esper, 4.3, Generic
-#You are a naturally born Esper who understands, develops, and masters abilities far faster with unique intuition for them. Ability cooldowns are halved.
+#(Tag:psychic)You are a naturally born Esper who understands, develops, and masters abilities far faster with unique intuition for them. Ability cooldowns are halved.
 86. Poseidon's Kiss, 2.1, Generic
 #You are blessed by Poseidon to move underwater as naturally as above water, and all mundane aquatic life is friendly to you.
 87. Tinker, 3.5, Generic
@@ -221,7 +221,7 @@
 111. Commander, 3.6, Generic
 #You exert authority and receive obedience from subordinates more effectively, and you organize, manage, command, and sustain their morale better.
 112. Healing... Fluids, 3.7, Generic
-#Your sweat, saliva, and cum heal others, scaling with your physical stats. The effect is mild but real — someone can lick sweat off your abs to heal.
+#(Tag:healing)Your sweat, saliva, and cum heal others, scaling with your physical stats. The effect is mild but real — someone can lick sweat off your abs to heal.
 113. Blessed Child, 3.5, Generic
 #Gods favor you, making it easier to garner favor and affection from divine beings, and your Blessing-type abilities are slightly stronger.
 114. Undeniable, 3.9, Generic
@@ -229,17 +229,17 @@
 115. Aware, 3.2, Generic
 #Your awareness far exceeds average; you easily detect problems in your body, resist surprise, and read your surroundings.
 116. Avian Ally, 2.5, Generic
-#You share great affinity with birds, avians, and aligned creatures, earning their affection, favor, and relationships more easily. All flight also feels more natural and costs less energy to maintain.
+#(Tag:avian)You share great affinity with birds, avians, and aligned creatures, earning their affection, favor, and relationships more easily. All flight also feels more natural and costs less energy to maintain.
 117. Thick Skin, 2.1, Generic
 #Your skin is far denser and tougher than average yet smooth and pleasant to touch, scaling with your physical stats to serve as natural armor at higher levels.
 118. Strong Legs, 2.4, Generic
 #Your legs are stronger and tougher than average, slightly increasing your speed and substantially boosting your kick power.
 119. Pyromaniac, 4.8, Generic
-#You are a natural pyromantic; your fire abilities cost less energy and your fire and heat resistance increase. You recover energy faster when hot and slower when cold.
+#(Tag:fire)You are a natural pyromantic; your fire abilities cost less energy and your fire and heat resistance increase. You recover energy faster when hot and slower when cold.
 120. Cryonist, 3.4, Generic
-#You are a natural with cold; your ice-based abilities cost less energy and your ice and cold resistance increase. You recover energy faster when cold and slower when hot.
+#(Tag:ice)You are a natural with cold; your ice-based abilities cost less energy and your ice and cold resistance increase. You recover energy faster when cold and slower when hot.
 121. Nature's Child, 3.2, Generic
-#Nature subtly favors you: you find fresh, healthy fruit on walks, grow gardens with minimal care, and earn favor from nature-aligned beings more easily. You also recover energy faster the closer you are to nature.
+#(Tag:nature)Nature subtly favors you: you find fresh, healthy fruit on walks, grow gardens with minimal care, and earn favor from nature-aligned beings more easily. You also recover energy faster the closer you are to nature.
 122. Mind Palace, 6.2, Generic
 #Your mind is a palace under your absolute control; you are immune to all mind abilities below Mythical level, with enhanced thought speed and perfect memory. You learn much faster than average and can freely reshape your mindscape.
 123. Polymath, 4.4, Generic
@@ -251,7 +251,7 @@
 126. Manager, 2.7, Generic
 #You excel at organizing and managing, distributing tasks and prioritizing effectively.
 127. Thinker, 4.8, Generic
-#All your Thinker abilities are more potent and cost less to use, and your Thinker headaches are mitigated.
+#(Tag:psychic)All your Thinker abilities are more potent and cost less to use, and your Thinker headaches are mitigated.
 128. Dramatic Tumbleweed, 0.3, Generic
 #During tense, dramatic moments like standoffs, a stray tumbleweed passes dramatically between you and your opponent. It fades from existence the moment it stops being observed.
 129. Herbalist, 2.1, Generic
@@ -315,29 +315,29 @@
 158. Gym Nut, 3.7, Generic
 #You are a gym nut; your body recovers from exercise far quicker and better, and your physical training efficiency is considerably increased. You can achieve peak human fitness in a few months of decent training.
 159. Fireborn, 6.7, Generic
-#You were born in flames and molded by them; you are completely immune to all fire-based attacks. The higher your body temperature, the faster you recover energy and health, up to 500%.
+#(Tag:fire)You were born in flames and molded by them; you are completely immune to all fire-based attacks. The higher your body temperature, the faster you recover energy and health, up to 500%.
 160. High Capacity, 5.3, Generic
 #You gain an extra ability slot.
 161. Immutable, 3.9, Generic
 #Your body refuses to change; you incredibly resist transformative abilities, forcing anyone changing you without consent to wrestle control first. Abilities like rot or wither inducement, sickness inducement, biokinesis, etc. are automatically resisted.
 162. Ice Monarch, 7.2, Generic
-#You are the Ice Monarch, ruler of all ice; you massively resist all elemental effects, and every element contacting you freezes. All your ice and frost-related abilities below Mythical Tier are increased by rank and cost less energy. All ice and frost-aligned beings instinctively recognize you as Monarch, and you are immune to ice and cold-based abilities.
+#(Tag:ice)You are the Ice Monarch, ruler of all ice; you massively resist all elemental effects, and every element contacting you freezes. All your ice and frost-related abilities below Mythical Tier are increased by rank and cost less energy. All ice and frost-aligned beings instinctively recognize you as Monarch, and you are immune to ice and cold-based abilities.
 163. Fire Monarch, 7.3, Generic
-#You are the Fire Monarch, ruler of all Fire and Plasma; your energy is massively enhanced, as your soul is an eternal reactor. All your Fire and Plasma-related abilities below Mythical Tier are increased by one rank and cost less energy. All fire and heat-aligned beings instinctively recognize you as Monarch, and you are immune to Fire and Plasma-based abilities.
+#(Tag:fire)You are the Fire Monarch, ruler of all Fire and Plasma; your energy is massively enhanced, as your soul is an eternal reactor. All your Fire and Plasma-related abilities below Mythical Tier are increased by one rank and cost less energy. All fire and heat-aligned beings instinctively recognize you as Monarch, and you are immune to Fire and Plasma-based abilities.
 164. Earth Monarch, 7.4, Generic
-#You are the Earth Monarch, ruler of all Earth; your durability is massively enhanced, as you are as immovable as earth. All your Earth and Metal-related abilities below Mythical Tier are increased by one rank and cost less energy. All earth-aligned beings instinctively recognize you as Monarch, and you are immune to earth and metal-based abilities.
+#(Tag:earth)You are the Earth Monarch, ruler of all Earth; your durability is massively enhanced, as you are as immovable as earth. All your Earth and Metal-related abilities below Mythical Tier are increased by one rank and cost less energy. All earth-aligned beings instinctively recognize you as Monarch, and you are immune to earth and metal-based abilities.
 165. Sea Monarch, 7.1, Generic
-#You are the Sea Monarch, ruler of all Water and the depths; your vitality is massively increased, as the sea is the mother of all life. All your water-related abilities below Mythical Tier are increased by one rank and cost less energy. All water and sea-aligned beings instinctively recognize you as Monarch, and you are immune to water and ice-based abilities.
+#(Tag:water)You are the Sea Monarch, ruler of all Water and the depths; your vitality is massively increased, as the sea is the mother of all life. All your water-related abilities below Mythical Tier are increased by one rank and cost less energy. All water and sea-aligned beings instinctively recognize you as Monarch, and you are immune to water and ice-based abilities.
 166. Sky Monarch, 7.9, Generic
-#You are the Sky Monarch, ruler of all Sky; your agility is massively enhanced, as you are as free as wind. All your wind and lightning-related abilities below Mythical Tier are increased by one rank and cost less energy. All sky-aligned beings instinctively recognize you as Monarch, and you are immune to wind and lightning-based abilities.
+#(Tag:wind)You are the Sky Monarch, ruler of all Sky; your agility is massively enhanced, as you are as free as wind. All your wind and lightning-related abilities below Mythical Tier are increased by one rank and cost less energy. All sky-aligned beings instinctively recognize you as Monarch, and you are immune to wind and lightning-based abilities.
 167. Hero, 4.5, Generic
 #You are a Hero, a child blessed by light and holy. All your Light and Holy-based abilities strengthen alongside your physical abilities. Divine/Clergy-aligned beings view you with greater favor, reverence, and affection, rewarding your merits and service, and all blessings are stronger and last longer on you.
 168. Free Bird, 3.6, Generic
-#You are a perfect flyer; flight comes as naturally as walking or breathing, and all your flight abilities are more precise, potent, and cost considerably less to maintain.
+#(Tag:avian)You are a perfect flyer; flight comes as naturally as walking or breathing, and all your flight abilities are more precise, potent, and cost considerably less to maintain.
 169. Relentless Stamina, 4.3, Generic
 #Your stamina is ridiculous; even as a regular human you can run a marathon unwearied. You recover from exhaustion very fast and are hard to exhaust.
 170. Cat's Feet, 2.0, Generic
-#You almost always land on your feet when falling and are immune to all fall damage; even falling from space to earth will not hurt your legs.
+#(Tag:earth)You almost always land on your feet when falling and are immune to all fall damage; even falling from space to earth will not hurt your legs.
 171. Cuddle King, 2.1, Generic
 #You are the king of cuddling; anyone you cuddle or share skinship with feels comfortable. You make the best cuddling partner for building relationships.
 172. Eagle Eyes, 2.2, Generic
@@ -417,7 +417,7 @@
 209. Necromancer, 4.0, Generic
 #(Tag:undead)Specialization - You are a natural-born necromancer dealing in death and souls. Any death or soul-related ability is easier to master and costs less energy.
 210. Plaguemaster, 4.2, Generic
-#Specialization - You are a natural-born contagion; spreading disease, poison, and decay is second nature. Any poison or disease-related ability is easier to master and costs less energy to use.
+#(Tag:poison)Specialization - You are a natural-born contagion; spreading disease, poison, and decay is second nature. Any poison or disease-related ability is easier to master and costs less energy to use.
 211. Shapesmith, 4.8, Generic
 #Specialization - You master all biological and body-alteration abilities faster and use them for less energy.
 212. Non-Binding Clause, 5.3, Generic
@@ -483,9 +483,9 @@
 242. Magic Circuits, 4.8, Fate/Tsukihime
 #You possess natural Magic Circuits that act as magic computers in your body, helping you regenerate energy and actualise magic and abilities. Their quantity and quality depend on your energy reserves and energy traits, or double if you already have Magic Circuits.
 243. Nature's Embrace, 4.2, Generic
-#Nature favors you: trees offer you fresh fruit, animals and nature-aligned beings are affectionate and aid you, and you maneuver forests with ease. You recover energy faster the closer you are to nature.
+#(Tag:nature)Nature favors you: trees offer you fresh fruit, animals and nature-aligned beings are affectionate and aid you, and you maneuver forests with ease. You recover energy faster the closer you are to nature.
 244. Nature's Chosen, 5.7, Generic
-#As Mother Nature's favored one, you receive her protection in forests and nature. Wild animals are friendly, understand your words, trees part to guide you, bounties offer fresh produce, and nature-aligned beings recognize her touch on you. You recover energy faster the closer you are to nature.
+#(Tag:nature)As Mother Nature's favored one, you receive her protection in forests and nature. Wild animals are friendly, understand your words, trees part to guide you, bounties offer fresh produce, and nature-aligned beings recognize her touch on you. You recover energy faster the closer you are to nature.
 245. Hamon, 4.3, JoJo
 #You instinctively use and master Hamon breathing to harness Life Magnetism and sunlight through your breath. Extended practice grants you a superhuman physique, vitality, longevity, and more, and you can grant others Hamon Breathing by punching their diaphragms.
 246. Gaia's Child, 6.8, Generic
@@ -647,7 +647,7 @@
 324. Hyuga, 5.1, Naruto
 #You carry Hyuga Clan blood, granting you increased Martial Talent, Energy Reserves, and Dexterity. You can potentially unlock a natural Byakugan (Elite Ability) that costs no ability slot. (Does not give Chakra or dormant alien god genes)
 325. Senju, 6.8, Naruto
-#You descend directly from Hashirama Senju, gaining greatly increased lifeforce, energy reserves, and martial prowess. You can potentially unlock natural Wood Release (Legendary Ability) and gain increased Nature Affinity. (Does not give Chakra)
+#(Tag:nature)You descend directly from Hashirama Senju, gaining greatly increased lifeforce, energy reserves, and martial prowess. You can potentially unlock natural Wood Release (Legendary Ability) and gain increased Nature Affinity. (Does not give Chakra)
 326. Hanma, 3.5, Baki
 #You are a Hanma with exceptional genetics, giving you increased poison resistance, far faster physical stat growth, and greatly increased martial talent. You carry overwhelming testosterone compared to other men, or equal genetic gifts without the testosterone if you are female.
 327. Lesser Undead, 2.5, Generic
@@ -655,7 +655,7 @@
 328. Greater Undead, 3.8, Generic
 #(Tag:undead)Race - You are a greater undead and transform into a Death Knight or Lich based on your stats. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your form.
 329. Fishman, 4.6, One Piece
-#Race - You are a Fishman of a random hybrid with naturally stronger physical stats than humans. You breathe underwater, hold great water affinity, communicate with sea-bound creatures, and can learn Fishman Karate.
+#(Tag:water)Race - You are a Fishman of a random hybrid with naturally stronger physical stats than humans. You breathe underwater, hold great water affinity, communicate with sea-bound creatures, and can learn Fishman Karate.
 330. Lunarian, 6.2, One Piece
 #Race - You are a Lunarian of a legendary race with massively increased physical stats, wings, and natural fire manipulation. While the fire on your back stays lit, your durability is massively increased.
 331. Nightkin, 4.9, Fate
@@ -667,7 +667,7 @@
 334. Dead Apostle Ancestor, 8.0, Tsukihime
 #(Tag:vampiric)Race - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
 335. Beastkin, 3.5, Generic
-#Race - You are a beastkin of a random animal such as bear, rabbit, cat, wolf, etc., with enhanced physical stats and night vision. You gain unique traits and biological features based on your hybrid.
+#(Tag:beastkin)Race - You are a beastkin of a random animal such as bear, rabbit, cat, wolf, etc., with enhanced physical stats and night vision. You gain unique traits and biological features based on your hybrid.
 336. Ghoul, 4.2, Tokyo Ghoul
 #Race - You are a flesh-eating ghoul with a chosen Kagune and formidable regeneration. You cannot digest anything but human flesh, and you slowly turn feral if you go longer than two weeks without dining.
 337. One-Eyed Ghoul, 5.3, Tokyo Ghoul
@@ -691,7 +691,7 @@
 346. Rodrigues, 2.7, Generic
 #You are a Brazilian descendant of the legendary Jetstream Sam. You can double jump and hold talent in swordsmanship and swordsmithing.
 347. Tepes, 3.8, Generic
-#(Tag:vampiric)You descend from the legendary Tepes bloodline of original vampires. Your Vampirism, Unholy, and Hemokinetic abilities are more potent, and all undead and vampires respect you more.
+#(Tag:blood)(Tag:vampiric)You descend from the legendary Tepes bloodline of original vampires. Your Vampirism, Unholy, and Hemokinetic abilities are more potent, and all undead and vampires respect you more.
 348. Mithril Skeleton, 4.1, Generic
 #Your skeleton is unusually durable, flexible, and better at conducting energy, taking far more punishment before damage. Note that your skeleton isn't real mithril and scales with your physical stats.
 349. Adamantium Skeleton, 5.7, Generic
@@ -713,7 +713,7 @@
 357. Meet Cute, 2.8, Generic
 #You are much more likely to encounter romantic interests in favourable positions during daily life.
 358. Blood Mana, 2.6, Generic
-#You can treat your vitality as a secondary mana bar at a 1-to-1 exchange rate. Expended vitality cannot be healed and only returns through rest.
+#(Tag:blood)You can treat your vitality as a secondary mana bar at a 1-to-1 exchange rate. Expended vitality cannot be healed and only returns through rest.
 359. Angel, 3.4, Generic
 #(Tag:holy)Race Change - You are an Angel created with holy power, with slightly increased physical stats and natural winged flight. Your Holy and Light-based abilities are more potent and include Holy Light (Rare Rank Ability), while your Darkness and Unholy abilities weaken and you stay vulnerable to Unholy attributes.
 360. Principality, 4.2, Generic
@@ -773,11 +773,11 @@
 387. Avaricious Greed, 7.2, Generic
 #More, more, more: you cannot get enough, as the restock timers and cooldown of all your items drop by 100x.
 388. Blood Demon, 5.4, Demon Slayer
-#(Tag:demonic)You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
+#(Tag:blood)(Tag:demonic)You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
 389. Progenitor Demon, 6.9, Demon Slayer
 #(Tag:demonic)You are a progenitor sharing all of Muzan Kibutsuji's powers with free shapeshifting, extremely powerful regeneration, and superhuman physical abilities. You turn others into demons with your blood, but sunlight is extremely lethal to you.
 390. Regenerative, 4.7, Generic
-#Your body receives all healing unusually well with 5x stronger natural regeneration and 2x more effective healing effects.
+#(Tag:healing)Your body receives all healing unusually well with 5x stronger natural regeneration and 2x more effective healing effects.
 391. Wardrobe, 3.5, Generic
 #You send any items you wear to your wardrobe while retaining their bonuses, letting you gain equipment benefits without wearing them. You cannot wear two magical items for the same body part and can only wear mundane items while active.
 392. Nothing, 0.1, Generic
@@ -811,15 +811,15 @@
 406. Psyker(Biomancy), 4.8, Warhammer 40k
 #You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Biomancy and trains to manipulate the flesh of friend and foe with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Biomancy_Discipline
 407. Psyker(Pyromancy), 4.2, Warhammer 40k
-#You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Pyromancy and trains to create fire from your mind and weave it into firestorms and attacks. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Pyromancy_Discipline
+#(Tag:fire)You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Pyromancy and trains to create fire from your mind and weave it into firestorms and attacks. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Pyromancy_Discipline
 408. Psyker(Telekinesis), 4.9, Warhammer 40k
 #You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telekinesis and trains to manipulate space and the material world with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telekinesis_Discipline
 409. Psyker(Telepathy), 5.1, Warhammer 40k
-#You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telepathy and trains to bind the wills and minds around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telepathy_Discipline
+#(Tag:psychic)You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telepathy and trains to bind the wills and minds around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telepathy_Discipline
 410. Psyker(Divination), 5.3, Warhammer 40k
 #You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Divination and trains to uncover the past, present, and future around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Divination_Discipline
 411. Old Blood, 6.3, Bloodborne
-#You carry Great One blood granting you greater vitality, energy, Esoteric resistance, and larger reserves that make Magic and Esoteric Arts easier to learn, understand, and train. Your blood heals in proportion to your vitality, but heavy drinkers risk your corruptive presence while you can exert greater influence over those who consume it. (You are not an actual Great One)
+#(Tag:blood)You carry Great One blood granting you greater vitality, energy, Esoteric resistance, and larger reserves that make Magic and Esoteric Arts easier to learn, understand, and train. Your blood heals in proportion to your vitality, but heavy drinkers risk your corruptive presence while you can exert greater influence over those who consume it. (You are not an actual Great One)
 412. Salty Tears, 0.1, Generic
 #Your tears are now twice as salty.
 413. Lucky Romantic, 2.5, Generic
@@ -835,7 +835,7 @@
 418. Immortality, 9.4, Generic
 #You are immortal in every way that matters with regeneration faster than sight. Even universal collapse, erasure by the One Above All, or absolute nothingness cannot stop you from regenerating back. You may even survive the Blind Idiot.
 419. Elemental Immunity, 8.1, Generic
-#You are absolutely immune to all damage from natural elements such as Fire, Water, Earth, Wind, Light, and Dark. Even a Supernova or Absolute Zero will not scuff your clothes, though physical attacks and unreal elements like Space, Time, and Raw Energy bypass your defences.
+#(Tag:earth)(Tag:fire)(Tag:shadow)(Tag:water)(Tag:wind)You are absolutely immune to all damage from natural elements such as Fire, Water, Earth, Wind, Light, and Dark. Even a Supernova or Absolute Zero will not scuff your clothes, though physical attacks and unreal elements like Space, Time, and Raw Energy bypass your defences.
 420. Absolute Absorber, 9.1, Generic
 #You absorb anything with your body and soul, especially Energy, surviving the sun by soaking heat into your energy reserves. Your absorption speed and degree scale with your stats, but even as a base human only a nuclear bomb or worse bypasses your basic absorption.
 421. Cosmetic Calibration, 1.8, Generic
@@ -869,7 +869,7 @@
 435. The Prime, 7.8, Generic
 #(Tech) Race Change - You are the Prime Unit, the highest tier of machine-flesh hybrid. You gain massively increased physical stats and energy reserves. You can absorb energy from machines and compatible sources. All Tinker abilities become incredibly more efficient, you can reconfigure your body to emulate tech from your Tinker abilities, and you decipher and learn other tech incredibly fast. All Technology and Virtuals below your rank bend to your will and cannot contest your authority as the Prime Unit. You can seamlessly absorb and integrate outside technology of your rank or below. You also gain 3 Gold-tier Tech item rolls as starting augments.
 436. Vital, 3.8, Generic
-#You gain greatly increased vitality. You heal wounds faster, resist poison and illness better, stay more virile, live longer, and remain unbelievably healthy. Your natural healing resembles a slight healing factor, but you must eat a lot to compensate.
+#(Tag:healing)You gain greatly increased vitality. You heal wounds faster, resist poison and illness better, stay more virile, live longer, and remain unbelievably healthy. Your natural healing resembles a slight healing factor, but you must eat a lot to compensate.
 437. Marathoner, 3.5, Generic
 #You gain greatly increased stamina. You perform strenuous activities longer and recover from their exhaustion far quicker.
 438. Racer, 3.7, Generic
@@ -881,7 +881,7 @@
 441. Surging Vitality, 4.8, Generic
 #You are inordinately vital. You are extremely healthy, immune to mundane sicknesses and poisons, and free of your body's usual genetic vulnerabilities. Your natural healing resembles a minor healing factor rather than regular recovery. You also gain an incredible lifespan and will live at least into your late hundreds.
 442. Like the Wind, 4.7, Generic
-#You move like the wind. You gain greatly augmented agility, becoming faster and nimbler with augmented reflexes and coordination.
+#(Tag:wind)You move like the wind. You gain greatly augmented agility, becoming faster and nimbler with augmented reflexes and coordination.
 443. Resistant, 4.5, Generic
 #You are incredibly tough. You gain greatly increased natural resilience, letting you endure far greater punishment than you otherwise could.
 444. Power Lifter, 4.4, Generic
@@ -909,21 +909,21 @@
 455. Speak of the Devil, 4.8, Generic
 #-And they shall appear. You instantly sense someone's location relative to you whenever they say your name while intending you. You sense their location like GPS for around 5 minutes and can use them as anchors for teleportation abilities, Curses, and similar effects.
 456. Wolfkin, 3.5, Generic
-#Race Change - You are a Wolfkin, a half-beast with wolf traits including wolf ears, tail, retractable claws, and sharp teeth. In some individuals, the wolf traits show more dominantly. You gain increased physical abilities, senses, and a fierce hunting instinct. You can also convey your intent to other animals, even if you cannot understand them back.
+#(Tag:beastkin)Race Change - You are a Wolfkin, a half-beast with wolf traits including wolf ears, tail, retractable claws, and sharp teeth. In some individuals, the wolf traits show more dominantly. You gain increased physical abilities, senses, and a fierce hunting instinct. You can also convey your intent to other animals, even if you cannot understand them back.
 457. Lycanthrope, 4.7, Generic
-#Race Change - You are a Lycanthrope, a half-wolf who can assume Werewolf form at will. The more you tap into your transformation, the more your physical stats and instincts, including animalistic ones, augment. As a regular Lycanthrope, you cannot spread lycanthropy. You also communicate better with Beasts and gain greater affinity for Changer powers, increasing their potency and efficiency.
+#(Tag:beastkin)Race Change - You are a Lycanthrope, a half-wolf who can assume Werewolf form at will. The more you tap into your transformation, the more your physical stats and instincts, including animalistic ones, augment. As a regular Lycanthrope, you cannot spread lycanthropy. You also communicate better with Beasts and gain greater affinity for Changer powers, increasing their potency and efficiency.
 458. Lycan Alpha, 5.8, Generic
-#Race Change - You are an Alpha Lycan, a ruler among werebeasts and half-wolf. You can tap into your bestial side at will to transform into a Werewolf or full wolf, greatly augmenting your physical stats, granting powerful claws and teeth, and massively amplifying your senses and instincts. As an Alpha, you can turn others into Lesser Lycans, werewolves under your command. All Beasts perceive greater authority and presence from you due to your potent blood.
+#(Tag:beastkin)Race Change - You are an Alpha Lycan, a ruler among werebeasts and half-wolf. You can tap into your bestial side at will to transform into a Werewolf or full wolf, greatly augmenting your physical stats, granting powerful claws and teeth, and massively amplifying your senses and instincts. As an Alpha, you can turn others into Lesser Lycans, werewolves under your command. All Beasts perceive greater authority and presence from you due to your potent blood.
 459. Lunar Lycan, 6.5, Generic
-#Race Change - You are a Lunar Lycan, a Royal Lycanthrope blessed by the moon. You can tap into your bestial side at will to transform into a Werewolf or full wolf, massively increasing your physical and magical stats and massively amplifying your senses. The moon's blessing increases your resistance to magic and esoteric effects and your affinity for all magic. As a Royal Lycanthrope, you can convert others into Lesser to Greater Lycanthropes sharing the same moon blessing and place them under your command as their alpha.
+#(Tag:beastkin)Race Change - You are a Lunar Lycan, a Royal Lycanthrope blessed by the moon. You can tap into your bestial side at will to transform into a Werewolf or full wolf, massively increasing your physical and magical stats and massively amplifying your senses. The moon's blessing increases your resistance to magic and esoteric effects and your affinity for all magic. As a Royal Lycanthrope, you can convert others into Lesser to Greater Lycanthropes sharing the same moon blessing and place them under your command as their alpha.
 460. Managarmr, 7.8, Generic
-#Race Change - You are the Child of the Moon Devouring Wolf, the pinnacle of Lycanthropy. As a divine lycanthrope, you can tap into your bestial side at will to transform into a hybrid or a titanic wolf whose size you control. You gain extremely increased physical stats, godlike instincts, and senses. You can devour anything; your jaws and claws rend even space and tear anything apart, including magic and divine flesh. Anything you eat is destroyed and converted to magical power. You can bless others into Lycanthropes. You also hold authority over all beasts and beastkin below Legendary rank, and even resistant beings recognize your royal authority.
+#(Tag:beastkin)Race Change - You are the Child of the Moon Devouring Wolf, the pinnacle of Lycanthropy. As a divine lycanthrope, you can tap into your bestial side at will to transform into a hybrid or a titanic wolf whose size you control. You gain extremely increased physical stats, godlike instincts, and senses. You can devour anything; your jaws and claws rend even space and tear anything apart, including magic and divine flesh. Anything you eat is destroyed and converted to magical power. You can bless others into Lycanthropes. You also hold authority over all beasts and beastkin below Legendary rank, and even resistant beings recognize your royal authority.
 461. Trainee Tinker, 3.0, Generic
 #You are a Tinker who just started your journey. All Tinker abilities gain slightly enhanced efficiency, and you build technological constructs faster and more resourcefully.
 462. Pugilist Apprentice, 3.1, Generic
 #You are a Pugilist who just embarked on your path. You learn and train martial skills faster, and your natural intuition for combat and martial arts is heightened.
 463. Nascent Esper, 3.2, Generic
-#You are an Esper just starting to bloom your latent talent. You train and master abilities slightly faster and gain better instinct for handling and using them. All ability cooldowns decrease by 20%.
+#(Tag:psychic)You are an Esper just starting to bloom your latent talent. You train and master abilities slightly faster and gain better instinct for handling and using them. All ability cooldowns decrease by 20%.
 464. Initiate Magician, 3.3, Generic
 #You are a Magician just embarking on your mystical journey. You learn, memorize, and master spells faster and cast them more efficiently. Penalties for learning a magical system not your own are mitigated.
 465. Incubus/Succubus, 4.0, Generic
@@ -939,11 +939,11 @@
 470. Sea Serpent, 5.9, Generic
 #You are a Sea Serpent or Hybrid, a true apex predator of the seas. You can unleash your Sea Serpent characteristics as a Hybrid form or full Sea Serpent size. You also gain greatly superhuman physical abilities and grow empowered when wet or underwater. All Water-based abilities cost less energy and gain potency, but drying out drastically reduces all your stats.
 471. Leviathan, 7.5, Generic
-#Race Change - You are the Leviathan, the creature lying in the deep and pinnacle of sea life. You can hide and unleash your nature as a full Leviathan or hybrid form. As the Leviathan, you gain tremendous physical abilities and incredible water affinity, but you cannot use Fire-based abilities or spells. Your water affinity raises any Water-based ability below Legendary level by 1 rank (Rare to Elite), and you can use any Water ability of Rare rank or below. All your physical and magical abilities massively amplify underwater, to the point where even a god would be foolish to challenge you there, but drying out massively reduces your abilities.
+#(Tag:aquatic)(Tag:water)Race Change - You are the Leviathan, the creature lying in the deep and pinnacle of sea life. You can hide and unleash your nature as a full Leviathan or hybrid form. As the Leviathan, you gain tremendous physical abilities and incredible water affinity, but you cannot use Fire-based abilities or spells. Your water affinity raises any Water-based ability below Legendary level by 1 rank (Rare to Elite), and you can use any Water ability of Rare rank or below. All your physical and magical abilities massively amplify underwater, to the point where even a god would be foolish to challenge you there, but drying out massively reduces your abilities.
 472. Jormungandr, 7.8, Generic
-#Race Change - You are kin of Jormungandr, the World Serpent. You can unleash your characteristics as a hybrid or full-sized World Serpent to access your full capabilities. As a Jormungandr, you gain extreme physical stats, especially strength and endurance. Your venom can bring even the strongest gods to their knees, and wounds you inflict cannot heal except through the strongest healing gods.
+#(Tag:poison)Race Change - You are kin of Jormungandr, the World Serpent. You can unleash your characteristics as a hybrid or full-sized World Serpent to access your full capabilities. As a Jormungandr, you gain extreme physical stats, especially strength and endurance. Your venom can bring even the strongest gods to their knees, and wounds you inflict cannot heal except through the strongest healing gods.
 473. Nekomata, 5.8, Generic
-#(Tag:undead)Race Change - You are a Nekomata, a powerful cat yokai with a forked tail. You can shapeshift into human and cat forms at will, and you gain enhanced energy reserves and regeneration. Your Nekomata nature grants great affinity for Necromancy, increasing the potency and efficiency of all Soul- and Necromancy-based abilities and spells. You can also naturally use Animate Undead (Elite Rank Ability) and conjure ghostflames.
+#(Tag:beastkin)(Tag:undead)Race Change - You are a Nekomata, a powerful cat yokai with a forked tail. You can shapeshift into human and cat forms at will, and you gain enhanced energy reserves and regeneration. Your Nekomata nature grants great affinity for Necromancy, increasing the potency and efficiency of all Soul- and Necromancy-based abilities and spells. You can also naturally use Animate Undead (Elite Rank Ability) and conjure ghostflames.
 474. Sköll, 7.7, Generic
 #Race Change - You are the child of Sköll, the Sun Devouring Wolf. You can manifest and hide your lycanthropic nature at will; unleashing it grants an extreme increase in physical and magical power. As the Sun Devourer, you gain immense Fire affinity, massively boosting the potency and efficiency of any Fire-based ability you use. In addition, you absorb sunlight into energy and grow passively stronger under the sun. You can bless others into Lycanthropes under your command. You can also devour "Energy", eating spells, magical constructs, or high-energy objects to temporarily add them to your reserves and increase your maximum energy capacity.
 475. Nemean, 7.8, Generic
@@ -959,11 +959,11 @@
 480. Total Overhaul, 3.3, Generic
 #You have received a body tune-up. Every aspect of your body upgrades, slightly increasing all physical stats and energy reserves and, most importantly, fixing all physical or genetic problems afflicting your body at the moment you roll this trait.
 481. Greater Beastkin, 4.4, Generic
-#Race Change - You are a Greater Beastkin, half beast and half whatever you are. You gain superhuman physical abilities and enhanced natural senses and instincts. You gain more affinity for nature-based abilities and spells, letting you use them more effectively. Your beast side is powerful too; even simple cat claws are tough as iron. (Chosen beast is decided by the writer, not an in-story choice)
+#(Tag:beastkin)Race Change - You are a Greater Beastkin, half beast and half whatever you are. You gain superhuman physical abilities and enhanced natural senses and instincts. You gain more affinity for nature-based abilities and spells, letting you use them more effectively. Your beast side is powerful too; even simple cat claws are tough as iron. (Chosen beast is decided by the writer, not an in-story choice)
 482. Noble Beastkin, 5.7, Generic
-#Race Change - You are a Noble Beastkin, a beast hybrid with mystical blood in your veins. You gain potent physical abilities and greatly enhanced senses depending on your race, plus very potent natural instincts. You gain greater affinity for Changer- and Nature-based abilities, letting you use them with greater effect and finesse. You also control your beast side, letting you fully suppress your traits or fully transform into your beast side. You command respect from beast-aligned beings more easily.
+#(Tag:beastkin)Race Change - You are a Noble Beastkin, a beast hybrid with mystical blood in your veins. You gain potent physical abilities and greatly enhanced senses depending on your race, plus very potent natural instincts. You gain greater affinity for Changer- and Nature-based abilities, letting you use them with greater effect and finesse. You also control your beast side, letting you fully suppress your traits or fully transform into your beast side. You command respect from beast-aligned beings more easily.
 483. Royal Beastkin, 6.1, Generic
-#Race Change - You are a Royal Beastkin, a powerful beast hybrid with potent royal blood in your veins. You gain great physical strength and incredibly honed senses varying slightly by beast-side race. Your natural fighting instincts can compete with trained fighters without prior training. You gain great affinity for Changer abilities, making them more efficient and easier to control. You gain incredible control over your beast side, letting you fully suppress it, fully transform into it, or take anything in between. Your royal blood also grants increased charisma and an authoritative presence, far more effective against beast-aligned beings.
+#(Tag:beastkin)Race Change - You are a Royal Beastkin, a powerful beast hybrid with potent royal blood in your veins. You gain great physical strength and incredibly honed senses varying slightly by beast-side race. Your natural fighting instincts can compete with trained fighters without prior training. You gain great affinity for Changer abilities, making them more efficient and easier to control. You gain incredible control over your beast side, letting you fully suppress it, fully transform into it, or take anything in between. Your royal blood also grants increased charisma and an authoritative presence, far more effective against beast-aligned beings.
 484. Nephalem, 8.7, Generic
 #(Tag:demonic)Race Change - You are a Nephalem, an impossible union of Daemon and Seraphim. You gain immense magical and physical power. All Holy, Light, Darkness, and Infernal abilities increase by one tier and cost significantly less energy. You can naturally convert your energy into Darkness or Holy mana bursts.
 485. Provocative, 2.6, Generic
@@ -991,7 +991,7 @@
 496. Insurance Policy, 4.7, Generic
 #It's a shame when beloved familiars die; you should always insure them. Whenever one of your familiars dies, it revives in your familiar space by using your energy reserves to heal, then remains temporarily weakened for several days afterward. If you have a familiar that automatically revives, it revives 50% faster and needs 50% less energy to revive.
 497. Psionic, 4.5, Generic
-#You are a psionic, a specialist in the Mind and Mental world. You gain greater control and finesse over mental abilities and use them more efficiently. You also train mental abilities faster and grasp them more naturally.
+#(Tag:psychic)You are a psionic, a specialist in the Mind and Mental world. You gain greater control and finesse over mental abilities and use them more efficiently. You also train mental abilities faster and grasp them more naturally.
 498. Netoranger, 2.8, Generic
 #(Nsfw) You are a Netoranger; no relationship is sacred to you. You more easily persuade people to betray their loved ones for you, and people in relationships find themselves more attracted to you.
 499. Natural Restoration, 5.3, Generic
@@ -1063,13 +1063,13 @@
 532. Light Resistance, 3.7, Generic
 #You naturally resist Light and Light-based effects, letting you stare straight at the sun, heavily reduce flashbangs, and resist Light arrows, purification rituals, searing beams of light, etc. This resistance scales with your base stats.
 533. Dark Resistance, 3.5, Generic
-#You naturally resist Darkness and Darkness-based effects such as shadow blasts, darkness chains, clouds of Darkness, shadow blades, etc. This resistance scales with your base stats.
+#(Tag:shadow)You naturally resist Darkness and Darkness-based effects such as shadow blasts, darkness chains, clouds of Darkness, shadow blades, etc. This resistance scales with your base stats.
 534. Tech Priest Diploma, 4.2, Generic
 #(Tech) Praise the Omnissiah! You pray and perform rituals that actually appease the machine spirit dwelling in machines. By burning incense, dancing, singing, drawing it, etc., you please it, and its pleasure increases the machine's power and efficiency. With enough worship you develop a relationship with the machine that endures through thick and thin.
 535. Blessing of the Omnissiah, 4.7, Generic
 #(Tech) You are blessed by the Omnissiah; they praise you. Any machine you handle or encounter eagerly favors you unless you lose that favor: charges deplete slower, cars go faster and handle better, slot machines give better odds, etc., because their machine spirit naturally likes you.
 536. Kitsune, 4.6, Generic
-#Race Change - You are a single-tailed Kitsune, a Fox Yokai semi-spiritual being attuned to nature and illusions. Your humanoid form is naturally incredibly attractive, and you possess slightly increased physical stats and increased energy reserves. You naturally weave and use [Foxfire], and all Stranger abilities, illusion spells, and nature-based abilities you use are more potent. You shift between fox and humanoid form at will and hide your fox features with illusions. As you age or increase energy reserves, you gain up to 9 tails, each slightly enhancing the above capabilities.
+#(Tag:beastkin)Race Change - You are a single-tailed Kitsune, a Fox Yokai semi-spiritual being attuned to nature and illusions. Your humanoid form is naturally incredibly attractive, and you possess slightly increased physical stats and increased energy reserves. You naturally weave and use [Foxfire], and all Stranger abilities, illusion spells, and nature-based abilities you use are more potent. You shift between fox and humanoid form at will and hide your fox features with illusions. As you age or increase energy reserves, you gain up to 9 tails, each slightly enhancing the above capabilities.
 537. Kyubi, 5.7, Generic
 #Race Change - You are a Kyubi, a nine-tailed Kitsune, a powerful fox yokai semi-spiritual being incredibly attuned to nature and illusions. You possess superhuman physical ability and greatly increased energy reserves. You swap between your nine-tailed form and a supernaturally good-looking human form at will. You naturally use [Nine-Tailed Foxfire] and possess great affinity for Stranger and Nature-based abilities and spells, making them more efficient to use and maintain.
 538. Demeter's Blessing, 3.7, Generic
@@ -1077,7 +1077,7 @@
 539. Comforting Presence, 3.7, Generic
 #Your presence is very comforting and trustworthy, feeling like coming home. People more likely confide in you, feel less threatened by you, and you naturally comfort those in distress. This does not work on people with a strong negative opinion of you.
 540. Poseidon's Child, 4.1, Generic
-#You are a child blessed by Poseidon, god of the seas. You breathe, move, and see underwater as naturally as on land. All mundane aquatic life is friendly and supernatural ones are friendlier toward you. You possess increased water affinity, making your water-based abilities and spells more potent and easier to master.
+#(Tag:water)You are a child blessed by Poseidon, god of the seas. You breathe, move, and see underwater as naturally as on land. All mundane aquatic life is friendly and supernatural ones are friendlier toward you. You possess increased water affinity, making your water-based abilities and spells more potent and easier to master.
 541. Deviant Fashion, 1.4, Generic
 #You may wear whatever you want without it being illegal or morally unacceptable, though people may still feel uncomfortable. You can even enter high society wearing what you were born with.
 542. Machine Spirit Mechanic, 5.4, Generic
@@ -1093,7 +1093,7 @@
 547. Perception Awareness, 4.2, Generic
 #You instinctively tell when someone looks at or observes you at all times, plus which direction they look from. Against clairvoyance, you know someone watches you but cannot pinpoint their direction.
 548. Scenic Wind, 0.5, Generic
-#The scenic wind favors you, making your clothes and hair flutter majestically whenever opportune, even indoors or in impossible weather.
+#(Tag:wind)The scenic wind favors you, making your clothes and hair flutter majestically whenever opportune, even indoors or in impossible weather.
 549. Lactation, 1.2, Generic
 #You can lactate, and the quality of milk you produce scales with your physical stats and gains unique qualities depending on your traits. This trait can be rerolled for free.
 550. Calcium Cultivation, 3.7, Generic
@@ -1115,15 +1115,15 @@
 558. Violence of Heaven, 5.4, Generic
 #(Tag:holy)You wield a body blessed by the Heavenly realm to carry out violence in its stead. Your physical abilities are augmented and further amplified on blessed ground. You possess increased resistance to curses, necromancy, and darkness-based attacks. Even an ordinary person with this could flip cars and break demons' bones.
 559. Harpy, 3.7, Generic
-#Race Change - You are a half-avian hawk hybrid mixed with your own race. You have slightly enhanced physical abilities, senses, and heightened predatory instincts. You have retractable talons and wings fused into your arms, shoulder blades, or back. With training you suppress your avian traits. You possess increased wind affinity but decreased water affinity.
+#(Tag:avian)(Tag:wind)Race Change - You are a half-avian hawk hybrid mixed with your own race. You have slightly enhanced physical abilities, senses, and heightened predatory instincts. You have retractable talons and wings fused into your arms, shoulder blades, or back. With training you suppress your avian traits. You possess increased wind affinity but decreased water affinity.
 560. Roc, 4.8, Generic
-#Race Change - You are a Roc hybrid, mixing a giant elephant-eating hawk with your own race. You possess increased strength and durability, incredible but sensitive eyesight and hearing, and fearsome predatory instincts. You possess large, powerful wings fused to your arms or back, at least as strong as your arms, letting you fly and dive with great speed, plus retractable talons tougher than steel. You possess increased wind affinity but decreased water affinity.
+#(Tag:wind)Race Change - You are a Roc hybrid, mixing a giant elephant-eating hawk with your own race. You possess increased strength and durability, incredible but sensitive eyesight and hearing, and fearsome predatory instincts. You possess large, powerful wings fused to your arms or back, at least as strong as your arms, letting you fly and dive with great speed, plus retractable talons tougher than steel. You possess increased wind affinity but decreased water affinity.
 561. Thunderbird, 5.8, Generic
-#Race Change - You are a Thunderbird hybrid, changer of the skies. You possess enhanced physical abilities with further enhanced agility and reflexes, plus greatly enhanced eyesight and hearing. Your wings easily fly at great speeds and flap to release electricity, and your tough, sharp talons crackle with lightning. You naturally change local weather — sunny, rain, hail, etc. — but it consumes a lot of energy. You possess increased wind and lightning affinity, but vulnerability to water and earth.
+#(Tag:avian)(Tag:lightning)Race Change - You are a Thunderbird hybrid, changer of the skies. You possess enhanced physical abilities with further enhanced agility and reflexes, plus greatly enhanced eyesight and hearing. Your wings easily fly at great speeds and flap to release electricity, and your tough, sharp talons crackle with lightning. You naturally change local weather — sunny, rain, hail, etc. — but it consumes a lot of energy. You possess increased wind and lightning affinity, but vulnerability to water and earth.
 562. Grand Thunderbird, 6.5, Generic
-#Race Change - You are descended from a Grand Thunderbird, an ancient legendary master of weather and lightning. You possess a great physique with incredibly enhanced agility and reflexes, plus unmatched eyesight and hearing. Your wings easily fly at supersonic speeds, and your tough, sharp talons are formidable. You cloak yourself in and discharge electricity from your body. You naturally manipulate local weather — rain, open sky, clouds, even raining lightning. You possess increased wind and lightning affinity, but vulnerability to water and earth.
+#(Tag:avian)(Tag:lightning)Race Change - You are descended from a Grand Thunderbird, an ancient legendary master of weather and lightning. You possess a great physique with incredibly enhanced agility and reflexes, plus unmatched eyesight and hearing. Your wings easily fly at supersonic speeds, and your tough, sharp talons are formidable. You cloak yourself in and discharge electricity from your body. You naturally manipulate local weather — rain, open sky, clouds, even raining lightning. You possess increased wind and lightning affinity, but vulnerability to water and earth.
 563. Ziz, 7.8, Generic
-#Race Change - You are a Child of Ziz, Primordial beast rival to Behemoth and Leviathan and ruler of the skies. You possess greatly enhanced physical and magical abilities, and you reveal and hide your true form at will, partially or fully becoming a titanic avian beast. You naturally manipulate weather at will — storms, blizzards, rain, hurricanes, tornadoes, etc. — plus greater lightning. All your weather-based abilities and spells are greatly enhanced. You greatly resist wind, ice, and electricity-based abilities. Your energy and health recovery are enhanced under open skies. You possess decreased water and earth affinity.
+#(Tag:earth)Race Change - You are a Child of Ziz, Primordial beast rival to Behemoth and Leviathan and ruler of the skies. You possess greatly enhanced physical and magical abilities, and you reveal and hide your true form at will, partially or fully becoming a titanic avian beast. You naturally manipulate weather at will — storms, blizzards, rain, hurricanes, tornadoes, etc. — plus greater lightning. All your weather-based abilities and spells are greatly enhanced. You greatly resist wind, ice, and electricity-based abilities. Your energy and health recovery are enhanced under open skies. You possess decreased water and earth affinity.
 564. Allowance, 2.2, Generic
 #You receive the equivalent of 2x the daily minimum wage for whatever city/country you currently live in, deposited into your account or wallet every single day.
 565. Kyoi no Hado, 5.7, Street Fighter
@@ -1157,11 +1157,11 @@
 578. Crushing Daunt, 5.6, Generic
 #"Fear grips your heart." The more fear someone feels toward you, the weaker they become and the lower their energy output drops. If someone feels completely helpless toward you and their will to fight is fully crushed, their abilities drop to negligible levels.
 579. Blood Fuel, 1.5, Generic
-#Your blood functions as high-quality fuel, substitutable for basically any fuel a machine takes, such as gasoline, diesel, electricity, etc.
+#(Tag:blood)Your blood functions as high-quality fuel, substitutable for basically any fuel a machine takes, such as gasoline, diesel, electricity, etc.
 580. Literary Devouring, 1.2, Generic
 #You eat books and written text, imprinting all knowledge they contain into your mind and perfectly memorizing it.
 581. Made of Fire, 4.1, Generic
-#"Not to be confused with a maid of fire." You temper your body with flames, increasing your physical abilities proportionally to the intensity and potency of the flames burning you. You must endure exposure for extended periods to temper properly. This grants no fire resistance or immunity, and the higher your flame resistance, the less effective it is.
+#(Tag:fire)"Not to be confused with a maid of fire." You temper your body with flames, increasing your physical abilities proportionally to the intensity and potency of the flames burning you. You must endure exposure for extended periods to temper properly. This grants no fire resistance or immunity, and the higher your flame resistance, the less effective it is.
 582. Vessel, 4.5, Generic
 #Your body and soul are incredible vessels, perfectly suited to sealing things inside and containing them. Whatever you seal inside or absorb finds it far harder to rebel and break out. You also fit much more into your vessel.
 583. Prime Soul, 7.6, Ultrakill
@@ -1171,7 +1171,7 @@
 585. Adamantine Fist, 5.5, Generic
 #Your fists are like Adamantine, unbreakable and incredibly powerful and durable. The power of all your unarmed strikes is greatly enhanced, and all fist-based abilities are easier to use and more powerful.
 586. Regenerator, 5.9, Hellsing
-#You are a Regenerator, an advanced bioengineered human with superhuman physical performance and incredible natural regeneration that heals bullet wounds in seconds without fundamentally changing your humanity. Lethal wounds are still lethal, so exercise caution.
+#(Tag:healing)You are a Regenerator, an advanced bioengineered human with superhuman physical performance and incredible natural regeneration that heals bullet wounds in seconds without fundamentally changing your humanity. Lethal wounds are still lethal, so exercise caution.
 587. The Santa Clause, 1.9, Generic
 #You fall under Santa's clause: people do not mind you entering places you should not be or lingering where you are not meant to be. They still get offended and angry if you cause a disturbance or do something offensive.
 588. Sexercise, 1.5, Generic
@@ -1191,7 +1191,7 @@
 595. Electrician, 1.8, Generic
 #You are a novice electrician-to-be, slightly more resistant to electricity-based effects, and your electricity-based abilities and spells are slightly more efficient.
 596. Lightning Catcher, 2.6, Generic
-#You catch lightning itself: you are somewhat more resistant to electricity-based effects, and your electricity-based abilities and spells are somewhat more efficient.
+#(Tag:lightning)You catch lightning itself: you are somewhat more resistant to electricity-based effects, and your electricity-based abilities and spells are somewhat more efficient.
 597. Thirsty, 3.4, Generic
 #You love water and cannot get enough of it. When water touches your skin, you slowly absorb it through osmosis, accelerating your energy recovery, even more so when the water is energy-rich.
 598. Heavyweight, 3.5, Generic
@@ -1225,15 +1225,15 @@
 612. Acid Reflux, 2.1, Generic
 #Whenever a target damages you, all your bodily fluids — blood, spit, sweat, etc. — act as acid toward them, with potency scaling with your physical stats.
 613. Sober, 1.8, Generic
-#You are immune to all addictive effects: you can use hard drugs, cigarettes, alcohol, venom, mentats, psycho, black lace, etc. every other day and drop them instantly without withdrawal or addiction symptoms.
+#(Tag:poison)You are immune to all addictive effects: you can use hard drugs, cigarettes, alcohol, venom, mentats, psycho, black lace, etc. every other day and drop them instantly without withdrawal or addiction symptoms.
 614. Variable Gene, 4.9, Generic
 #Your genetics are highly variable: you toggle racial traits at will, either returning to your original race or becoming 100% of another race trait you own, and back.
 615. Firebending, 5.1, Avatar
-#You have natural talent as a Firebender, naturally producing and bending fire. Its potency depends on your natural attunement, martial-arts skill, and energy levels. Skilled enough users generate and direct electricity. Potency follows the sun: weaker at night, stronger by day, unusable during an eclipse.
+#(Tag:lightning)You have natural talent as a Firebender, naturally producing and bending fire. Its potency depends on your natural attunement, martial-arts skill, and energy levels. Skilled enough users generate and direct electricity. Potency follows the sun: weaker at night, stronger by day, unusable during an eclipse.
 616. Earthbending, 5.2, Avatar
 #You have natural talent as an Earthbender, bending and controlling Earth. Its potency scales with your attunement to Earth, martial-arts skill, and energy levels. Skilled enough users sense Earth through tremors and manipulate impure metals and lava.
 617. Waterbending, 6.2, Avatar
-#You have natural talent as a Waterbender, bending and controlling Water. Its potency scales with your attunement to Water, martial-arts skill and finesse, and energy levels. Skilled enough Waterbenders transform water into ice and heal wounds with bending, and some bend the blood of those weaker than them. Potency follows the moon: strongest at night and full moon, weaker by day.
+#(Tag:healing)You have natural talent as a Waterbender, bending and controlling Water. Its potency scales with your attunement to Water, martial-arts skill and finesse, and energy levels. Skilled enough Waterbenders transform water into ice and heal wounds with bending, and some bend the blood of those weaker than them. Potency follows the moon: strongest at night and full moon, weaker by day.
 618. Airbending, 5.8, Avatar
 #You have natural talent as an Airbender, manipulating and bending Air. Its potency scales with your attunement to Air, martial-arts skill, mentality, and energy levels. Skilled enough Airbenders achieve flight, bend air from lungs, and sense vibrations through air.
 619. Hypertrophic Mechanic, 4.4, Generic
@@ -1245,7 +1245,7 @@
 622. Enhanced Lungs, 2.4, Generic
 #You possess an exceptional set of lungs: tougher, more flexible, and far better at processing air, delivering energy to your body and oxygen to your blood more easily.
 623. Nature Lungs, 3.5, Generic
-#Your lungs harmonize with the surrounding world with every breath. You take in environmental energy and process it in your body to enhance your energy and vitality recovery.
+#(Tag:nature)Your lungs harmonize with the surrounding world with every breath. You take in environmental energy and process it in your body to enhance your energy and vitality recovery.
 624. Fairy Lungs, 4.6, Generic
 #(Tag:fae)You possess Fairy lungs: every breath energizes you, especially in high-energy areas. Breathing imbues your blood with environmental energy, increasing your Vitality and Energy recovery speeds and physical performance based on energy density.
 625. Hard Heart, 2.1, Generic
@@ -1263,7 +1263,7 @@
 631. Six Eyes, 7.0, Jujutsu Kaisen
 #Your eyes are the fabled Six Eyes of the Gojo Clan, passively granting extreme visual prowess that sees through physical obstacles and detects all forms of energy extremely well. They act like a supercomputer for processing energy and information, granting incredible efficiency with abilities and letting you passively perform incredibly taxing calculations. They are taxing to use, so you may need to cover your eyes to rest them from the information they passively process.
 632. Garlic Infused Blood, 0.2, Generic
-#Your blood is infused with garlic, so the next vampire that bites you will really regret it.
+#(Tag:blood)Your blood is infused with garlic, so the next vampire that bites you will really regret it.
 633. Prosperity +10%, 2.0, Generic
 #(Tree)(Meta:ticket-bonus:10) Every ticket you are awarded grants 10% extra points. Stacks additively with other Prosperity traits.
 634. Prosperity +20%, 3.0, Generic
@@ -1343,7 +1343,7 @@
 671. Dhampir, 4.8, Generic
 #(Tag:vampiric)Race Change - You are half-vampire: manageable blood hunger, sunlight that itches rather than kills, and no power over thralls. You keep the fangs, the pallor, and the dramatic entrances.
 672. Kitsune, 5.4, Generic
-#Race Change - You are a nine-tailed fox spirit; tails mark power ranks, with foxfire and layered illusion growing stronger per tail.
+#(Tag:beastkin)Race Change - You are a nine-tailed fox spirit; tails mark power ranks, with foxfire and layered illusion growing stronger per tail.
 673. Dryad, 4.2, Generic
 #Race Change - You are a tree-bound fey rooted to a bonded tree: bloom, root, and seasonal moods, empowered near your tree and diminished far from it.
 674. Gargoyle, 5.0, Generic
@@ -1387,7 +1387,7 @@
 693. Cold Feet, 0.2, Generic
 #Your feet are always cold, regardless of socks, weather, or magic. Thick socks help slightly.
 694. Tok'ra Blending, 5.4, Stargate
-#Share your body with a Tok'ra symbiote: two minds, one body, rapid healing, and centuries of stolen Goa'uld secrets. Veto rights are mutual and absolute.
+#(Tag:healing)Share your body with a Tok'ra symbiote: two minds, one body, rapid healing, and centuries of stolen Goa'uld secrets. Veto rights are mutual and absolute.
 695. Cylon Resurrection, 5.8, Battlestar Galactica
 #Death downloads you into a fresh identical body, memories intact to the moment of death. Needs a resurrection facility in range; without one, you stay dead like everyone else.
 696. Trial of the Grasses, 5.6, The Witcher
@@ -1397,7 +1397,7 @@
 698. Infested, 5.4, StarCraft
 #Zerg infestation creeps through you: fast regeneration, creep affinity, and hive whispers at the edge of hearing. Fire still works on you, fans included.
 699. On Fire, 5.0, Overwatch
-#Perform well and you catch fire: burning bright, hitting harder, and announcing yourself to everyone. Slumps extinguish you; the flame remembers.
+#(Tag:fire)Perform well and you catch fire: burning bright, hitting harder, and announcing yourself to everyone. Slumps extinguish you; the flame remembers.
 700. What a Save!, 5.0, Rocket League
 #Reflexively celebrate every rescue, block, and near-miss with genuine joy. Allies find it inspiring; opponents find it personal.
 701. Power of the Bear, 4.6, Baby Cat

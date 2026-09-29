@@ -2,7 +2,10 @@
 """Auto-tag gacha entries with thematic (Tag:...) tokens.
 
 Curated starter taxonomy (free-form; any lowercase tag is valid):
-    dragonic, undead, holy, unholy, demonic, vampiric, spectral, fae, eldritch
+    dragonic, undead, holy, unholy, demonic, vampiric, spectral, fae,
+    eldritch, fire, water, ice, lightning, earth, wind, shadow, nature,
+    blood, poison, psychic, healing, beastkin, aquatic, avian, insect,
+    construct, slime, teleport
 
 Heuristics are conservative (high precision): name matches + positive
 description phrases. Mentions in "damage/effective against X" or
@@ -129,7 +132,7 @@ RULES = {
             r"infernal (engine|flames?|fire|power|energy)",
             r"abyssal one",
         ],
-        "excl": [r"one hell of a", r"\bhell of a\b", r"devil's advocate",
+        "excl": [r"devil's advocate",
                  r"speak of the devil", r"exorcis", r"anti-evil",
                  r"vaporizes.*infernal", r"sets Infernal.*alight"],
     },
@@ -162,7 +165,7 @@ RULES = {
             r"all things spirits",
             r"spiritual creatures",
         ],
-        "excl": [r"like a ghost", r"as a ghost", r"move like"],
+        "excl": [],
     },
     "fae": {
         "name": [
@@ -185,8 +188,226 @@ RULES = {
             r"shub-?niggurath", r"yog-?sothoth",
         ],
         "excl": [],
+    },    "fire": {
+        "name": [
+            r"\bfire\b", r"pyro", r"\bflames?\b", r"inferno",
+            r"\bmagma\b", r"\blava\b", r"fireball", r"fire breath",
+            r"fire slayer", r"fireborn", r"pyromaniac",
+        ],
+        "desc": [
+            r"wield.{0,30}fire", r"pyrokinesis",
+            r"fire breath", r"produce and control .*flames",
+            r"control .*flames", r"immune to .*fire", r"fire immunity",
+            r"fire absorption", r"fire resistance",
+        ],
+        "excl": [],
+    },
+    "water": {
+        "name": [
+            r"\bwater\b", r"hydro", r"\baqua\b", r"\btide\b",
+            r"water slayer", r"water breathing",
+        ],
+        "desc": [
+            r"wield.{0,30}water", r"hydrokinesis", r"control water",
+            r"water breath", r"breathe underwater", r"water affinity",
+            r"immune to .*water", r"water resistance",
+        ],
+        "excl": [r"decreased water affinity", r"reduced water"],
+    },
+    "ice": {
+        "name": [
+            r"\bice\b", r"cryo", r"\bfrost\b", r"blizzard",
+            r"\bglacier\b", r"ice monarch",
+        ],
+        "desc": [
+            r"wield.{0,30}ice", r"cryokinesis", r"control ice",
+            r"freeze", r"flash-freez", r"supercool", r"ice immunity",
+            r"cold resistance",
+        ],
+        "excl": [],
+    },
+    "lightning": {
+        "name": [
+            r"lightning", r"thunder", r"electro", r"\bvolt\b",
+            r"thunderbird", r"lightning slayer",
+        ],
+        "desc": [
+            r"wield.{0,30}lightning", r"electrokinesis",
+            r"call down lightning", r"lightning breath",
+            r"generate.*electricity", r"immune to .*electric",
+        ],
+        "excl": [],
+    },
+    "earth": {
+        "name": [
+            r"\bearth\b", r"terra", r"geomanc",
+            r"\bmud\b", r"earth monarch",
+        ],
+        "desc": [
+            r"control (earth|stone|rock)", r"earthquake",
+            r"manipulate earth", r"earth affinity",
+            r"control metal", r"magnetokinesis",
+            r"immune to .*earth", r"earth resistance",
+        ],
+        "excl": [],
+    },
+    "wind": {
+        "name": [
+            r"\bwind\b", r"\baero\b", r"\bgale\b",
+            r"tornado", r"hurricane", r"wind slayer",
+        ],
+        "desc": [
+            r"wield.{0,30}wind", r"aeromancy", r"control wind",
+            r"wind affinity", r"immune to .*wind",
+        ],
+        "excl": [],
+    },
+    "shadow": {
+        "name": [
+            r"\bshadow\b", r"umbra", r"\bdark\b", r"darkness",
+            r"shadow slayer",
+        ],
+        "desc": [
+            r"wield.{0,30}shadow", r"shadow manipulation",
+            r"turn into.{0,30}shadow", r"merge with.{0,30}shadow",
+            r"control darkness", r"shadow affinity",
+            r"immune to .*(shadow|dark|darkness)",
+        ],
+        "excl": [],
+    },
+    "nature": {
+        "name": [
+            r"\bnature\b", r"\bdruid\b", r"\bplant\b", r"\bflora\b",
+            r"\bvine\b", r"\bthorns?\b", r"wood release", r"\bforest\b", r"\bgrove\b",
+        ],
+        "desc": [
+            r"control plants", r"chlorokinesis", r"grow plants",
+            r"wood release", r"plant affinity", r"nature affinity",
+        ],
+        "excl": [],
+    },
+    "blood": {
+        "name": [
+            r"\bblood\b", r"hemo", r"sanguine",
+        ],
+        "desc": [
+            r"hemokinesis", r"blood magic",
+            r"consume.*blood", r"blood affinity", r"vampirism",
+        ],
+        "excl": [],
+    },
+    "poison": {
+        "name": [
+            r"poison", r"venom", r"\btoxic\b", r"plague",
+            r"poison slayer",
+        ],
+        "desc": [
+            r"wield.{0,30}poison", r"poison magic", r"venom",
+            r"poison affinity", r"toxic.*breath",
+        ],
+        "excl": [],
+    },
+    "psychic": {
+        "name": [
+            r"psychic", r"psion", r"telepath", r"thinker", r"esper",
+        ],
+        "desc": [
+            r"mind control", r"telepathy", r"read minds",
+            r"read micro-expressions", r"invade minds", r"psychic power",
+        ],
+        "excl": [],
+    },
+    "healing": {
+        "name": [
+            r"\bheal\b", r"medic", r"doctor", r"cleric", r"remedy",
+            r"\bcure\b", r"regen", r"recovery",
+        ],
+        "desc": [
+            r"heal (others|allies|wounds|injuries|targets)",
+            r"restore (health|limbs|injuries)", r"cure (all|any|almost|ailments)",
+            r"rapid healing", r"healing magic",
+            r"cured of all injuries",
+        ],
+        "excl": [],
+    },
+    "beastkin": {
+        "name": [
+            r"beastkin", r"werewolf", r"lycan", r"wolfkin", r"worgen",
+            r"kitsune", r"nekomata", r"lunar lycan",
+        ],
+        "desc": [
+            r"you are (a |an )?.{0,40}(beastkin|werewolf|wolfkin|lycan)",
+            r"transform into.{0,40}(wolf|beast)",
+        ],
+        "excl": [],
+    },
+    "aquatic": {
+        "name": [
+            r"fishman", r"mermaid", r"kraken", r"leviathan", r"shark",
+            r"octopus", r"\bsquid\b",
+        ],
+        "desc": [
+            r"breathe underwater", r"you are (a |an )?.{0,30}(fishman|mermaid|shark)",
+            r"summon.{0,30}(kraken|leviathan|tsunami)",
+            r"control water",
+        ],
+        "excl": [r"karate"],
+    },
+    "avian": {
+        "name": [
+            r"\bbird\b", r"avian", r"harpy", r"phoenix", r"griffin",
+            r"thunderbird", r"aerodactyl",
+        ],
+        "desc": [
+            r"you are (a |an )?.{0,30}bird", r"transform into.{0,30}bird",
+            r"bird of healing",
+        ],
+        "excl": [],
+    },
+    "insect": {
+        "name": [
+            r"insect", r"spider", r"\bant\b", r"\bbee\b", r"wasp",
+            r"moth", r"beetle", r"scorpion",
+        ],
+        "desc": [
+            r"transform into.{0,30}insect", r"summon.{0,30}(spider|insect|swarm)",
+            r"manifest features like",
+        ],
+        "excl": [],
+    },
+    "construct": {
+        "name": [
+            r"golem", r"automaton", r"homunculus", r"colossus",
+        ],
+        "desc": [
+            r"you are (a |an )?.{0,30}golem", r"summon.{0,30}golem",
+            r"iron golem", r"golem core", r"animate.*statue",
+        ],
+        "excl": [],
+    },
+    "slime": {
+        "name": [
+            r"\bslime\b", r"\booze\b", r"\bgoo\b",
+        ],
+        "desc": [
+            r"you are.{0,30}slime", r"turn (your body|yourself) into slime",
+            r"corrosive slime", r"slime form",
+        ],
+        "excl": [r"science"],
+    },
+    "teleport": {
+        "name": [
+            r"teleport", r"portal", r"\bblink\b", r"\bwarp\b",
+            r"\brift\b",
+        ],
+        "desc": [
+            r"teleport (yourself|a nearby|any)", r"open a (portal|gate|skipgate)",
+            r"fold space", r"blink.*distance",
+        ],
+        "excl": [r"gate of babylon"],
     },
 }
+
 
 COMPILED = {}
 for tag, rule in RULES.items():
