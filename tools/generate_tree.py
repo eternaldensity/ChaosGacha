@@ -76,9 +76,53 @@ ALL_FILES = ["skill", "trait", "familiar", "item", "ability"]
 HEADER_RE = re.compile(r"^(\d+)\.\s*(.*),\s*(\d+\.\d+)(?:,\s*(.*))?\s*$")
 TOKEN_RE = re.compile(r"^#(?:\s*\(([^)]*)\)\s*)+")
 
+# Thematic tags: (Tag:name) per tag, or (Tags: a, b) for several at once.
+# Stored lowercase; free-form but the curated set is documented in
+# tools/tag_entries.py (dragonic, undead, holy, ...). Aliases collapse to
+# their canonical form so (Tag:draconic) == (Tag:dragonic).
+TAG_ALIASES = {
+    "draconic": "dragonic",
+    "angelic": "holy",
+    "infernal": "demonic",
+    "vampire": "vampiric",
+    "dragons": "dragonic",
+    "dragon": "dragonic",
+}
+
+
+def normalize_tag(raw: str):
+    """Canonicalize one tag name; returns "" when invalid."""
+    s = str(raw or "").strip().lower().replace("_", "-").replace(" ", "-")
+    s = re.sub(r"[^a-z0-9-]+", "", s)
+    s = re.sub(r"-+", "-", s).strip("-")
+    if not s or len(s) > 32 or not re.match(r"^[a-z0-9][a-z0-9-]*$", s):
+        return ""
+    return TAG_ALIASES.get(s, s)
+
+
+def parse_tags(tokens) -> list:
+    """Extract thematic tags from a description's token set.
+
+    Accepts (Tag:name) repeated per tag and (Tags: a, b, ...) lists.
+    Prefix match is case-insensitive; names are normalized."""
+    out = set()
+    for tok in tokens or []:
+        low = tok.lower()
+        if low.startswith("tags:"):
+            rest = tok[5:]
+            for part in re.split(r"[,\s]+", rest):
+                n = normalize_tag(part)
+                if n:
+                    out.add(n)
+        elif low.startswith("tag:"):
+            n = normalize_tag(tok[4:])
+            if n:
+                out.add(n)
+    return sorted(out)
+
 
 def parse_description(desc: str):
-    """Split '#'-leading tokens (Nsfw/Tech/Character/Gacha/Tree/Tome/...)
+    """Split '#'-leading tokens (Nsfw/Tech/Character/Gacha/Tree/Tome/Tag/.../Meta:...)
     from the visible description text. Returns (token_set, visible_text)."""
     m = TOKEN_RE.match(desc)
     if not m:
@@ -94,8 +138,15 @@ def parse_description(desc: str):
 
 
 def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
-                 include_gacha_only, include_nsfw=False, include_noncon=False):
+                 include_gacha_only, include_nsfw=False, include_noncon=False,
+                 tags=None):
     entries = []
+    want = None
+    if tags:
+        if isinstance(tags, str):
+            tags = [tags]
+        want = {normalize_tag(t) for t in tags}
+        want.discard("")
     for file in files:
         path = os.path.join(GACHA_DIR, file + ".txt")
         if not os.path.exists(path):
@@ -110,7 +161,7 @@ def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
                 if cur is not None:
                     _finalize(file, cur, desc_lines, rarity_min, rarity_max,
                               sources, exclude_sources, include_gacha_only,
-                              include_nsfw, include_noncon, entries)
+                              include_nsfw, include_noncon, entries, want)
                 cur = {
                     "num": int(m.group(1)),
                     "name": m.group(2).strip(),
@@ -123,12 +174,13 @@ def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
         if cur is not None:
             _finalize(file, cur, desc_lines, rarity_min, rarity_max,
                       sources, exclude_sources, include_gacha_only,
-                      include_nsfw, include_noncon, entries)
+                      include_nsfw, include_noncon, entries, want)
     return entries
 
 
 def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
-              include_gacha_only, include_nsfw, include_noncon, entries):
+              include_gacha_only, include_nsfw, include_noncon, entries,
+              want_tags=None):
     desc = " ".join(l.strip() for l in desc_lines if l.strip())
     tokens, visible = parse_description(desc)
     if "Tree" in tokens:
@@ -151,6 +203,9 @@ def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
         return
     if "Noncon" in tokens and not include_noncon:
         return
+    entry_tags = parse_tags(tokens)
+    if want_tags and not want_tags.issubset(set(entry_tags)):
+        return
     entries.append({
         "file": file,
         "number": cur["num"],
@@ -160,6 +215,7 @@ def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
         "tag": tag,
         "description": visible,
         "meta": sorted(t for t in tokens if t.startswith("Meta:")),
+        "tags": entry_tags,
         **({"nsfw": True} if "Nsfw" in tokens else {}),
         **({"noncon": True} if "Noncon" in tokens else {}),
     })
@@ -484,6 +540,9 @@ def compute_stats(nodes, edges, targets):
                  for t in ("gacha", "tree", "both")},
         "sources": {s: sum(1 for nd in entries if nd["source"] == s)
                     for s in sorted({nd["source"] for nd in entries})},
+        "entry_tags": {t: sum(1 for nd in entries if t in (nd.get("tags") or []))
+                       for t in sorted({tg for nd in entries
+                                        for tg in (nd.get("tags") or [])})},
     }
     return stats
 
@@ -509,9 +568,20 @@ def list_sources():
     for file in ALL_FILES:
         srcs = set()
         for i in load_entries([file], None, None, set(), set(), True, True,
-                              True):
+                              True, None):
             srcs.add(i["source"])
         print(f"{file}: {', '.join(sorted(srcs))}")
+
+
+def list_tags():
+    from collections import Counter
+    c = Counter()
+    for i in load_entries(ALL_FILES, None, None, set(), set(), True, True,
+                          True, None):
+        for t in i.get("tags", []):
+            c[t] += 1
+    for t, n in c.most_common():
+        print(f"{t}: {n}")
 
 
 def main():
@@ -528,6 +598,8 @@ def main():
                     help="include (Nsfw)-tagged entries (excluded by default)")
     ap.add_argument("--include-noncon", action="store_true",
                     help="include (Noncon)-tagged entries (excluded by default)")
+    ap.add_argument("--tags", default="",
+                    help="comma-separated thematic tags to include (entry must have all of them)")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--radius", type=float, default=10.0)
     ap.add_argument("--distance-variance", type=float, default=0.05)
@@ -549,10 +621,15 @@ def main():
     ap.add_argument("--seed", type=int, default=12345)
     ap.add_argument("--list-sources", action="store_true",
                     help="print available sources and exit")
+    ap.add_argument("--list-tags", action="store_true",
+                    help="print thematic tags and counts and exit")
     args = ap.parse_args()
 
     if args.list_sources:
         list_sources()
+        return 0
+    if args.list_tags:
+        list_tags()
         return 0
 
     files = [f.strip() for f in args.files.split(",") if f.strip()]
@@ -560,10 +637,11 @@ def main():
         files = ALL_FILES
     sources = {s.strip() for s in args.sources.split(",") if s.strip()}
     excludes = {s.strip() for s in args.exclude_sources.split(",") if s.strip()}
+    tag_filter = [t.strip() for t in args.tags.split(",") if t.strip()] or None
 
     items = load_entries(files, args.rarity_min, args.rarity_max,
                          sources, excludes, args.include_gacha_only,
-                         args.include_nsfw, args.include_noncon)
+                         args.include_nsfw, args.include_noncon, tag_filter)
     if args.limit and args.limit < len(items):
         rng = random.Random(args.seed)
         items = rng.sample(items, args.limit)
@@ -580,6 +658,7 @@ def main():
         "include_gacha_only": args.include_gacha_only,
         "include_nsfw": args.include_nsfw,
         "include_noncon": args.include_noncon,
+        "tags": sorted(tag_filter) if tag_filter else [],
         "limit": args.limit,
         "radius": args.radius,
         "distance_variance": args.distance_variance,

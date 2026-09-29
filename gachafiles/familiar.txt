@@ -17,7 +17,7 @@
 9. Death Claws, 1.8, Fallout
 #A bioengineered optimal melee combatant with sharp, durable horns, claws, and fangs. A single Deathclaw can tear apart a tank and grows stronger by absorbing radiation. You get a breeding pair: one Alpha Male and one Female.
 10. Fafnir - Fate, 6.8, Fate
-#The Ultimate Dragon and strongest dragon in Fate, Fafnir has exceptional physical ability, extreme magical power, and can draw power from the atmosphere to fuel his attacks. His breath annihilates entire cities with ease.
+#(Tag:dragonic)The Ultimate Dragon and strongest dragon in Fate, Fafnir has exceptional physical ability, extreme magical power, and can draw power from the atmosphere to fuel his attacks. His breath annihilates entire cities with ease.
 11. Moonless, 1.7, Fear and Hunger
 #A cave wolf transformed by the god of the depths. After tens of years of brutal survival, it towers over tanks and can swallow a grown person in one gulp.
 12. A big rat, 0.3, Generic
@@ -39,15 +39,15 @@
 20. Praetorian, 5.2, Epic Battle Fantasy
 #An agile knight-like robot with reinforced titanium armour, uranium shells, high-frequency blades, forcefields, plasma emission, fusion reactor, high speed, and hacking. The perfect small-size battle mech, but it cannot operate in cold environments for extended periods.
 21. Dark Eater Midir, 4.9, Dark Souls
-#A descendant of the everlasting dragons, raised by the gods and tasked by Gwyn, Lord of Sunlight, to fight the Abyss forever with his immortality until corrupted by it. Having lost his immortality, Midir remains very powerful, with a giant powerful body, flame breath, and dark magic beams.
+#(Tag:dragonic)A descendant of the everlasting dragons, raised by the gods and tasked by Gwyn, Lord of Sunlight, to fight the Abyss forever with his immortality until corrupted by it. Having lost his immortality, Midir remains very powerful, with a giant powerful body, flame breath, and dark magic beams.
 22. Red Eyes Black Dragon, 3.8, Yugioh
-#A powerful, ferocious black-bodied dragon with red eyes that stands bipedally. Very strong and rather intelligent despite its temper, it breathes crimson flames.
+#(Tag:dragonic)A powerful, ferocious black-bodied dragon with red eyes that stands bipedally. Very strong and rather intelligent despite its temper, it breathes crimson flames.
 23. Blue Eyes White Dragon, 4.8, Yugioh
-#A legendary dragon known as an engine of destruction. Very physically powerful and exceptionally tough, it unleashes devastating lightning breath and flies at fast speeds.
+#(Tag:dragonic)A legendary dragon known as an engine of destruction. Very physically powerful and exceptionally tough, it unleashes devastating lightning breath and flies at fast speeds.
 24. Cosmic Monolith, 7.1, Epic Battle Fantasy
 #A floating black monolith from the outer cosmos with pulsing red circuitry-like engravings and potent space and reality-warping abilities. By expending energy it can teleport, fire giant cosmic beams, warp space to tear enemies apart, dispel magic, and create gigantic defensive barriers.
 25. Slifer the Sky Dragon, 6.7, Yugioh
-#Slifer the Sky Dragon, the Heavenly Dragon, is a titanic serpentine Egyptian God with two mouths. He has incredible might, manipulates weather, and unleashes divine fire and lightning blasts. He exerts divine pressure to weaken those summoned in his presence or cull them if weak enough, and as an Egyptian God no magic or ability below Legendary rank can directly affect him.
+#(Tag:dragonic)Slifer the Sky Dragon, the Heavenly Dragon, is a titanic serpentine Egyptian God with two mouths. He has incredible might, manipulates weather, and unleashes divine fire and lightning blasts. He exerts divine pressure to weaken those summoned in his presence or cull them if weak enough, and as an Egyptian God no magic or ability below Legendary rank can directly affect him.
 26. Evil Natural Water, 6.6, One Punch Man
 #An evil amorphous blob of living water with eyes that are also water, not weak points. It senses emotions, freely manipulates its body and any water it assimilates, absorbing all water it contacts including oceans to grow proportionally stronger. It can only be killed by scattering a majority of its body in one overwhelming blow or vaporizing all its water.
 27. Sif, 2.8, Dark Souls
@@ -59,7 +59,7 @@
 30. Sanctuary Guardian, 2.6, Dark Souls
 #A chimeric beast with an enlarged lion body, four wings, ram horns, and a venomous spiked scorpion tail. It breathes lightning and reproduces asexually by laying eggs.
 31. Kalameet, 5.0, Dark Souls
-#A descendant of the immortal Archdragons, Kalameet is the Black Dragon of Calamity that even Anor Londo dared not provoke. He has obsidian scales tougher than metal, incinerating dark-flame breath, and a glowing orange forehead crest that weakens and brings even the toughest warriors to their knees.
+#(Tag:dragonic)A descendant of the immortal Archdragons, Kalameet is the Black Dragon of Calamity that even Anor Londo dared not provoke. He has obsidian scales tougher than metal, incinerating dark-flame breath, and a glowing orange forehead crest that weakens and brings even the toughest warriors to their knees.
 32. Charizard, 2.5, Pokemon
 #An oddly small winged bipedal salamander (Not a dragon despite appearances). Charizard has considerable strength, breathes incredibly hot flames, and flies at fast speeds. This one is female and can lay eggs, do not ask who the father is.
 33. Aerodactyl, 2.7, Pokemon
@@ -81,9 +81,9 @@
 41. Groudon, 6.3, Pokemon
 #A primordial god of the earth with unrivalled geokinesis. In base form alone Groudon can create entire islands beneath their feet and kilometre-long precipice blades. In primal form they can turn the entire planet into desolate wasteland in a day.
 42. Rayquaza, 6.7, Pokemon
-#A primordial dragon god of the skies with unrivalled speed, power, and aerokinesis. Even in base form Rayquaza moves at extreme speeds, changes weather, manipulates mighty winds to ravage land, and releases blasts of pure draconic power. In Mega form they can destroy asteroids capable of destroying Earth's entire surface.
+#(Tag:dragonic)A primordial dragon god of the skies with unrivalled speed, power, and aerokinesis. Even in base form Rayquaza moves at extreme speeds, changes weather, manipulates mighty winds to ravage land, and releases blasts of pure draconic power. In Mega form they can destroy asteroids capable of destroying Earth's entire surface.
 43. Garchomp, 4.2, Pokemon
-#An average wild Garchomp, a large intimidating ground dragon with immense physical power. It manipulates earth to cause earthquakes, fissures, and erupting earth blades, and can somehow fly at Mach speeds.
+#(Tag:dragonic)An average wild Garchomp, a large intimidating ground dragon with immense physical power. It manipulates earth to cause earthquakes, fissures, and erupting earth blades, and can somehow fly at Mach speeds.
 44. Zoroark, 3.5, Pokemon
 #A bipedal fox-like dark creature that manipulates dark energy to attack, but truly masters illusions. Zoroark creates incredibly realistic illusions and transforms itself indistinguishably. It can make hundreds hallucinate or cast illusions over a very large range.
 45. Haspid, 4.1, Hota
@@ -109,7 +109,7 @@
 55. Xenomorph, 4.0, Alien
 #A far-mightier-than-human apex predator from outer space, known for incredible adaptivity and reproduction. A single Xenomorph impregnates other races with facehuggers to create hybrids, letting you build your own colony and army.
 56. Sebas Tian, 5.5, Overlord
-#(Character)He is one hell of a butler, oh wait, wrong Sebastian. Sebas is a Dragonoid Martial Artist/Monk with incredible physical stats, expert Ki use, and a Dragonoid transformation. Above all, he is an incredibly competent and loyal butler.
+#(Tag:dragonic)(Character)He is one hell of a butler, oh wait, wrong Sebastian. Sebas is a Dragonoid Martial Artist/Monk with incredible physical stats, expert Ki use, and a Dragonoid transformation. Above all, he is an incredibly competent and loyal butler.
 57. Soul Eater, 4.6, Overlord
 #A legendary undead skeletal horse feared by those who know it, with formidable physical abilities and instinctive death magic. Its miasma kills those weaker than it, anyone dying nearby has their soul claimed by it, and it can devour souls to replenish and strengthen itself or offer them to its master. Death miasma and soul claiming can be toggled.
 58. Mosquito, 4.7, One Punch Man
@@ -133,13 +133,13 @@
 67. Brown Bear, 1.0, Generic
 #A regular big old brown bear companion with excellent genetics and near-human intellect. Strong enough to shrug off most small firearms and crush a human like an apple. By default they are female.
 68. Undead Army, 4.2, Generic
-#Your very own Undead Army under your command, growing larger as you get stronger. Fallen troops revive as long as you expend magical power. It starts with 30 skeleton warriors, 20 skeleton archers, 5 skeleton Horse Riders, and 5 skeleton Mages, with numbers and quality increasing as you get stronger.
+#(Tag:undead)Your very own Undead Army under your command, growing larger as you get stronger. Fallen troops revive as long as you expend magical power. It starts with 30 skeleton warriors, 20 skeleton archers, 5 skeleton Horse Riders, and 5 skeleton Mages, with numbers and quality increasing as you get stronger.
 69. Cottonmouth, 0.6, Generic
 #A smart cottonmouth snake companion at the peak of what a cottonmouth can be. Smarter than average, but that's about it.
 70. Goblin, 1.2, Generic
 #(Character)Loathsome little green humanoid creatures the size of children, very vicious and cruel, able to use weapons and basic tactics. This goblin is smarter and more self-aware, and can breed with any humanoid race. Default gender varies.
 71. Wyvern, 2.3, Generic
-#A large sky-dwelling fire-breathing reptile often called a lesser dragon. A wyvern can swallow a man whole and roast an entire battalion with its breath. This wyvern is female and can lay eggs to reproduce.
+#(Tag:dragonic)A large sky-dwelling fire-breathing reptile often called a lesser dragon. A wyvern can swallow a man whole and roast an entire battalion with its breath. This wyvern is female and can lay eggs to reproduce.
 72. Dire Wolf, 1.5, Generic
 #A large vicious prehistoric wolf the size of a person, very strong with tough sharp teeth and claws and big enough to ride. By default female and able to reproduce.
 73. Hellhound, 2.1, Generic
@@ -171,7 +171,7 @@
 86. Poltergeist, 2.7, Generic
 #A ghost that intervenes in the material world with psychic powers, throwing furniture and weapons to harm. Immune to attacks that cannot harm souls, it grows stronger when fed your energy.
 87. Wraith, 2.1, Generic
-#A lesser spirit with little combat ability but very hard to detect. Ideal for surveillance and scouting, it reforms even if killed.
+#(Tag:spectral)(Tag:undead)A lesser spirit with little combat ability but very hard to detect. Ideal for surveillance and scouting, it reforms even if killed.
 88. Lupusregina Beta, 4.0, Overlord
 #(Character)A werewolf cleric maid, willful and cheery yet sadistic. With considerable werewolf physical ability and cleric specialization, she casts healing and recovery magic plus lesser forms of other magic. She is a very skilled maid, but does not have access to inventory.
 89. Solution Epsilon, 4.1, Overlord
@@ -209,7 +209,7 @@
 105. Power, 5.8, Chainsaw Man
 #Power is the Blood Devil who controls all blood in her sensory range, with great physical stats and incredible regeneration. She grows stronger the more she is feared, but stronger targets are harder to blood-manipulate. (Cannot do Heart replacement)
 106. Bat Devil, 3.7, Chainsaw Man
-#A building-sized humanoid bat devil with superhuman stats, flight, and building-shattering sonic booms. It heals by consuming blood. (Cannot do Heart replacement)
+#(Tag:demonic)A building-sized humanoid bat devil with superhuman stats, flight, and building-shattering sonic booms. It heals by consuming blood. (Cannot do Heart replacement)
 107. Pochita, 6.6, Chainsaw Man
 #The Chainsaw Devil feared most by devils, with extreme physical ability and incomparable speed. It regenerates from a puddle to full health in under a second by pulling its cord.
 108. Igris, 4.5, Solo Leveling
@@ -229,7 +229,7 @@
 115. Beatrice, 5.7, Re:Zero
 #(Character)A powerful Great Spirit of Darkness and space magic casting varied gravity, Space, and Darkness spells. She draws mana only from her summoner, and with enough supply can even create a black hole.
 116. Shenron, 6.9, Dragon Ball
-#A legendary magical dragon manifestable once a year to grant a wish. He grants any wish within his power.
+#(Tag:dragonic)A legendary magical dragon manifestable once a year to grant a wish. He grants any wish within his power.
 117. Medusa Gorgon, 4.4, Soul Eater
 #(Character)A natural-born Witch who takes over bodies and pairs unique vector magic with hand-to-hand combat. A genius in souls and chemistry, she crafts unique magical agents, most notably Black Blood.
 118. Nyotengu, 3.9, Dead or Alive
@@ -237,7 +237,7 @@
 119. Kon, 3.7, Chainsaw Man
 #Kon is the gigantic Fox Devil embodying fear of foxes. As a devil she forms contracts and heals by consuming blood, and her contractors can also summon her. You can summon her outright or just body parts as attacks. (Cannot do heart replacement)
 120. 20% Gun Devil, 6.9, Chainsaw Man
-#A skyscraper-sized fragment of the Gun Devil made of guns and human parts. It instantly shoots the heart of any living being within 1000 meters, fires oversized guns for mass destruction, and circles the globe in minutes. As a devil it makes contracts and heals by consuming blood.
+#(Tag:demonic)A skyscraper-sized fragment of the Gun Devil made of guns and human parts. It instantly shoots the heart of any living being within 1000 meters, fires oversized guns for mass destruction, and circles the globe in minutes. As a devil it makes contracts and heals by consuming blood.
 121. Senko, 3.2, Sewayaki Kitsune Senko-san
 #(Character)A single-tail kitsune excelling at housekeeping and caretaking, preferring domestic tasks. She can use foxfire, minor telekinesis, disguise, and barriers.
 122. Yozora, 4.1, Sewayaki Kitsune Senko-san
@@ -259,11 +259,11 @@
 130. Sylvia, 5.8, Konosuba
 #(Character)A female growth chimera (Unnecessary appendage removed) who absorbs beings to gain their traits and grow stronger. Already physically strong in base form, she also knows basic magic.
 131. Alucard, 6.0, Hellsing
-#(Character)The first and strongest vampire, Alucard/Dracula/Vlad, is living primordial dark matter that shapeshifts freely, with extreme physical strength and vampiric abilities. At full power he absorbs drained souls to gain a portion of their power or build an undead army, but Restraint Levels limit him and each level requires you to be stronger than his current level to release. By default she takes the Girlycard form, gender meaning little to a thousand-year-old vampire.
+#(Tag:undead)(Tag:vampiric)(Character)The first and strongest vampire, Alucard/Dracula/Vlad, is living primordial dark matter that shapeshifts freely, with extreme physical strength and vampiric abilities. At full power he absorbs drained souls to gain a portion of their power or build an undead army, but Restraint Levels limit him and each level requires you to be stronger than his current level to release. By default she takes the Girlycard form, gender meaning little to a thousand-year-old vampire.
 132. Seras Victoria, 5.1, Hellsing
 #(Character)A former police girl turned Draculina sharing Dracula's blood, with incredible physical abilities and blood-and-essence draining. If she unlocks her full powers, she absorbs drained souls to gain a portion of their power or create necromancy summons.
 133. Vlad Dracula, 7.2, Hellsing
-#(Character)The full-power Alucard, the Immortal King without restraint levels, with over 100,000 lives and his immortal army. He has an amorphous dark matter body, blood control, and absorbs the souls of those he drinks to expand his army.
+#(Tag:vampiric)(Character)The full-power Alucard, the Immortal King without restraint levels, with over 100,000 lives and his immortal army. He has an amorphous dark matter body, blood control, and absorbs the souls of those he drinks to expand his army.
 134. Nihilego, 4.0, Pokemon
 #A parasitic ultra-deep-sea jellyfish Ultra Beast that undetectably parasitizes hosts. It injects neurotoxin that removes inhibitions and subtly bends thoughts to its needs. It is also powerful itself, with strong geokinesis and poison generation.
 135. Buzzwole, 3.8, Pokemon
@@ -301,7 +301,7 @@
 151. King Nothing, 2.5, JoJo
 #A purple hollow jigsaw humanoid with almost no combat power but unmatched scent-tracking. It follows any grabbed scent or memorizes it for later, and rearranges its pieces to reconstruct visuals, making it an excellent tracker.
 152. Spider Demon Mother, 3.8, Demon Slayer
-#(Character)A high-rank spider-like Blood Art demon with superhuman strength and regeneration but extreme light vulnerability. She turns flesh into extremely durable controllable strings to puppet people.
+#(Tag:demonic)(Character)A high-rank spider-like Blood Art demon with superhuman strength and regeneration but extreme light vulnerability. She turns flesh into extremely durable controllable strings to puppet people.
 153. Muzan, 5.9, Demon Slayer
 #(Character)The first progenitor demon with incredible biokinesis, free shapeshifting, biomatter assimilation, and regenerative immortality, but extreme light and holy vulnerability. He creates demons by granting his blood.
 154. Mukago, 3.6, Demon Slayer
@@ -321,9 +321,9 @@
 161. Doppel, 2.9, Monster Musume
 #(Character)A female(?) shapeshifter with military and police training. She becomes any living creature and clothes she has seen, without changing her near-baseline-human stats.
 162. Spelunker Fairy, 3.8, Generic
-#A lesser fairy resembling a glowing yellow light that finds and uncovers wealth and treasures. It points toward the nearest gold bar or sought item within its power, but gives no detailed directions or descriptions.
+#(Tag:fae)A lesser fairy resembling a glowing yellow light that finds and uncovers wealth and treasures. It points toward the nearest gold bar or sought item within its power, but gives no detailed directions or descriptions.
 163. Dio Brando, 4.2, JoJo
-#(Character)A petty thief's son turned vampire via the Stone Mask. He absorbs life force, grants vampirism, creates undead, grafts flesh, and manipulates his body, and is a genius, highly skilled vampire.
+#(Tag:vampiric)(Character)A petty thief's son turned vampire via the Stone Mask. He absorbs life force, grants vampirism, creates undead, grafts flesh, and manipulates his body, and is a genius, highly skilled vampire.
 164. DIO, 5.4, JoJo
 #(Character)A once-hotheaded vampire grown wise after long ages under the sea, awakened to The World by the Stand Arrow. Massively superhuman, he regenerates by drinking blood, manipulates his body, and creates thralls. His Stand The World shares his physical power and stops time for upwards of 10 seconds.
 165. The Pillar Men, 5.2, JoJo
@@ -347,7 +347,7 @@
 174. Nemesis, 3.7, Resident Evil
 #A modified Tyrant bioweapon by Umbrella with massively superhuman stats and great regeneration, surviving while enough living cells remain. Its greatest strength is rapid mutation and adaptation — nowhere near Mahoraga's level.
 175. Grimm Wyvern, 5.0, RWBY
-#A gigantic Grimm Wyvern that senses and tracks negative emotions. Large and strong enough to sink warships, it makes a powerful mount. It exudes Grimm fluid to spawn lesser Grimm under its command.
+#(Tag:dragonic)A gigantic Grimm Wyvern that senses and tracks negative emotions. Large and strong enough to sink warships, it makes a powerful mount. It exudes Grimm fluid to spawn lesser Grimm under its command.
 176. Alcina Dimitrescu, 4.2, Resident Evil
 #(Character)A former feudal lord fused with a bioengineered parasite, granting extreme regeneration, enhanced stats, and shapeshifting. Though no vampire, she needs regular blood intake to function.
 177. Lust, 3.0, Fullmetal Alchemist
@@ -441,11 +441,11 @@
 221. Mizutsune, 3.5, Monster Hunter
 #Mizutsune is a fierce leviathan that can also live and fight on land with formidable strength to shred metal with its claws. It breathes a soap-like substance that immobilizes opponents.
 222. Shalltear Bloodfallen, 6.8, Overlord
-#(Character)Shalltear was a Nazarick Floor Guardian, a True Vampire Valkyrie made with a vampire god's blood and exceptional in both physical and magical combat with hemokinesis, elemental, charm, holy magic, and more. She can turn others into vampires, and comes with only basic clothes and no inventory access. (A/N: No time stop)
+#(Tag:vampiric)(Character)Shalltear was a Nazarick Floor Guardian, a True Vampire Valkyrie made with a vampire god's blood and exceptional in both physical and magical combat with hemokinesis, elemental, charm, holy magic, and more. She can turn others into vampires, and comes with only basic clothes and no inventory access. (A/N: No time stop)
 223. Albedo, 5.7, Overlord
 #(Character)Albedo was a Nazarick Floor Guardian, a succubus dark knight and true tank who can destroy fortress walls in one blow and resist anything that cannot level a street thanks to many defensive abilities. She can use basic magic, has exceptional intelligence plus most domestic skills, and comes only with her basic dress and no inventory.
 224. Cure Elim Los Malvar, 7.3, Overlord
-#Cure Elim is the Elder Coffin Dragon Lord near the pinnacle of Necromancy with already incredible stats. Using unique wild magic that absorbs souls to fuel itself, he can absorb entire cities' souls to turn all inhabitants undead, control them near-perfectly regardless of number, use varied powerful wild magic, and unleash a soul-annihilating breath.
+#(Tag:undead)Cure Elim is the Elder Coffin Dragon Lord near the pinnacle of Necromancy with already incredible stats. Using unique wild magic that absorbs souls to fuel itself, he can absorb entire cities' souls to turn all inhabitants undead, control them near-perfectly regardless of number, use varied powerful wild magic, and unleash a soul-annihilating breath.
 225. Kenjaku, 6.0, Jujutsu Kaisen
 #(Character)Kenjaku is a centuries-old Cursed Sorcerer who exists as a brain that seizes corpses as new bodies to wield their powers with his expertise. A master of Jujutsu and formidable ally and teacher, he is currently just a brain and needs you to find a suitable body first.
 226. Mahito, 6.9, Jujutsu Kaisen
@@ -457,7 +457,7 @@
 229. Dagon, 5.5, Jujutsu Kaisen
 #(Character)Dagon is the Special Grade Cursed Spirit born from the ocean, incredibly skilled in Jujutsu and very powerful. He can summon and control water and manifest the domain Horizon of the Endless Skanda for either leisure or offense.
 230. Nrvnqsr Chaos, 7.6, Tsukihime
-#(Character)Nrvnqsr Chaos is a Dead Apostle Ancestor made of 666 beasts formed from the formless mud of life, sharing existence with them all so he is immortal unless every beast dies. He can replace beasts by absorbing living beings to gain their abilities and release them as beasts, and slain beasts recover after being reabsorbed.
+#(Tag:vampiric)(Character)Nrvnqsr Chaos is a Dead Apostle Ancestor made of 666 beasts formed from the formless mud of life, sharing existence with them all so he is immortal unless every beast dies. He can replace beasts by absorbing living beings to gain their abilities and release them as beasts, and slain beasts recover after being reabsorbed.
 231. Pepsi Man, 0.9, Pepsi
 #Pepsi Man gives Pepsi whenever he can: when summoned he reaches your location by any means, delivers everyone there a fresh can of Pepsi, then disappears. 8-hour cooldown. Note: This familiar is not sponsored by the Pepsi Corporation.
 232. Nashrah, 4.7, Fear and Hunger
@@ -469,7 +469,7 @@
 235. Endbringer Behemoth, 6.7, Worm
 #A Shard Superweapon reformed by Chaos and toughest of the three siblings, Behemoth is a giant that manipulates energy to fire lightning, create flames, release shockwaves, redirect projectiles, and absorb existing energy to a limit. He also emits extreme radiation and has incredible strength and durability as the physically strongest Endbringer. (A/N: Scaled down to multi-country level)
 236. Dragon, 5.9, Worm
-#(Character)(Tech)Dragon, or Theresa, is not an actual dragon but a hyper-advanced tinker-made AI able to copy, imitate, and iterate on existing technology to design her own. She can direct hundreds of mechs with ease if given proper servers, but her code forbids creating more AI.
+#(Tag:dragonic)(Character)(Tech)Dragon, or Theresa, is not an actual dragon but a hyper-advanced tinker-made AI able to copy, imitate, and iterate on existing technology to design her own. She can direct hundreds of mechs with ease if given proper servers, but her code forbids creating more AI.
 237. Light and Nightfury, 2.6, How to Train Your Dragon
 #A breeding pair of Nightfury and Lightfury, semi-aquatic agile lithe dragons that release unique plasma breaths instead of regular fire. They are very fast, intelligent, and stealthy despite being dragons.
 238. Blue Diamond, 5.6, Steven Universe
@@ -477,7 +477,7 @@
 239. Lapis Lazuli, 5.4, Steven Universe
 #(Character)Lapis Lazuli is an unusually powerful terraforming-caste Lapis with powerful, precise hydrokinesis able to control vast water and make water minions. She has considerable physical ability plus standard gem shapeshifting, fusion, and regeneration while her gem stays intact, with maximum energy output and hydrokinesis scaling with your maximum energy.
 240. Tiamat, 9.1, Fate
-#(Character)Tiamat is Beast II, the Mother of All Life, with unmatched physical and magical power. She creates and controls the Sea of Life, a black conceptual mud that remakes consumed organisms into her children; while it exists she lacks the concept of Death and has virtually unlimited magic, and she can recreate it while she lives. She can also rewrite local reality with Nega-Genesis to deny anything evolved from base humanity like myths and gods.
+#(Tag:dragonic)(Character)Tiamat is Beast II, the Mother of All Life, with unmatched physical and magical power. She creates and controls the Sea of Life, a black conceptual mud that remakes consumed organisms into her children; while it exists she lacks the concept of Death and has virtually unlimited magic, and she can recreate it while she lives. She can also rewrite local reality with Nega-Genesis to deny anything evolved from base humanity like myths and gods.
 241. Goetia, 9.5, Fate
 #(Character)Goetia is the King of Demons, a hivemind of 72 Demon Gods and supreme magic system. He nullifies all magic with Solomon's 9 rings, is immortal while any pillar lives with revival in his Temple of Time unless breached, holds nigh-omniscience seeing past, present, and future, and masters magic utterly, ripping souls with a gaze.
 242. Kirby, 9.6, Kirby
@@ -521,9 +521,9 @@
 261. Goons, 2.5, Generic
 #(Character) 50 roughly 30-year-old mob-affiliated-looking Italian men with eerily similar appearances. Not the brightest, but each can rough up an average man and handle menial or moderately complex tasks like guarding or manning a shop.
 262. Ddraig Y Goch, 8.6, Highschool DxD
-#(Character)Ddraig is the Heavenly Dragon Emperor of Domination, surpassing all but the strongest gods in physical and magical power. His Boost raises his power each use (NOT DOUBLE) and can transfer power to others, he penetrates to ignore all magic defenses, and his Blazing Inferno of Scorching Flames burns anything, even the strongest gods.
+#(Tag:dragonic)(Character)Ddraig is the Heavenly Dragon Emperor of Domination, surpassing all but the strongest gods in physical and magical power. His Boost raises his power each use (NOT DOUBLE) and can transfer power to others, he penetrates to ignore all magic defenses, and his Blazing Inferno of Scorching Flames burns anything, even the strongest gods.
 263. Albion, 8.5, Highschool DxD
-#(Character)Albion is the Heavenly Dragon Emperor of Supremacy, surpassing all but the strongest gods in physical and magical power. His Divide weakens enemies to restore himself to peak condition (NOT HALVED), can divide even space and objects and reflect attacks, and his venom Reduce erases victims' existence until they vanish.
+#(Tag:dragonic)(Character)Albion is the Heavenly Dragon Emperor of Supremacy, surpassing all but the strongest gods in physical and magical power. His Divide weakens enemies to restore himself to peak condition (NOT HALVED), can divide even space and objects and reflect attacks, and his venom Reduce erases victims' existence until they vanish.
 264. Mewtwo, 7.0, Pokemon
 #(Character)Mewtwo is an artificial Pokemon sharing Mew's DNA and a tremendously powerful Esper. He can read and control minds, create barriers, fire energy blasts, use telekinesis, project elemental abilities, and much more.
 265. Remy, 1.2, Ratatouille
@@ -545,7 +545,7 @@
 273. Puar, 3.1, Dragon Ball
 #(Character)Puar is a weird floating cat creature with little to no combat ability, graduated from Transformation Academy to change form into anything from objects to people without changing stats. She can also teach transformation to others with the talent and time for it.
 274. Acnologia, 8.8, Fairy Tail
-#(Character)Acnologia became the mightiest Dragon King after bathing in countless dragons' blood as a Dragon Slayer. As the arcane dragonslayer he can eat all elements to empower and heal himself and is immune to all magic until his absorption is overwhelmed, pairing overwhelming physical and magical power with destructive beams, varied magic, and even time manipulation.
+#(Tag:dragonic)(Character)Acnologia became the mightiest Dragon King after bathing in countless dragons' blood as a Dragon Slayer. As the arcane dragonslayer he can eat all elements to empower and heal himself and is immune to all magic until his absorption is overwhelmed, pairing overwhelming physical and magical power with destructive beams, varied magic, and even time manipulation.
 275. THWOMP, 1.6, Mario
 #"URNGH." A giant sentient(?) angry boulder creature you can summon above targets to slam down or in front of you as a wall. Damage to it mends over time inside the gacha.
 276. Kaguya Otsutsuki, 9.0, Naruto
@@ -567,7 +567,7 @@
 284. Hydramon, 4.2, Digimon
 #Hydramon is a gigantic plantlike Digimon with great physical prowess befitting its size. It constantly secretes usable toxic acid, spews acid and beam attacks from its three maws, and stretches its tentacles to attack or dig and cause earthquakes.
 285. Angewomon, 4.4, Digimon
-#(Character)Angewomon is an Angel Digimon with formidable physical abilities and Holy and Light magic. She unleashes holy lightning and tornadoes, heals allies health and status, and gains a small boost based on how evil her opponent is.
+#(Tag:holy)(Character)Angewomon is an Angel Digimon with formidable physical abilities and Holy and Light magic. She unleashes holy lightning and tornadoes, heals allies health and status, and gains a small boost based on how evil her opponent is.
 286. Ladydevimon, 4.4, Digimon
 #(Character)Ladydevimon is a Demon Digimon with formidable physical might and corrosive darkness manipulation. She shapes darkness into attack familiars, releases noxious darkness waves, and enhances her physical attacks with darkness, with poison stronger against higher-energy opponents but falling off after a tier.
 287. Ariemon, 4.8, Digimon
@@ -577,7 +577,7 @@
 289. Medusamon, 4.0, Digimon
 #(Character)Medusamon is a draconic gorgon-like Digimon with formidable physical abilities and hair of independent extending serpent dragons. Her eye petrifies enemies at a speed based on energy spent and the power gap, which strong enough targets can ignore.
 290. The Lich, 7.8, Adventure Time
-#The Lich, last scholar of Golb, is a primordial undead embodying entropy and death. He is an absolute master of Death, Pyro, Mind, Necromancy, and other magic who imposes death and dominates nearby minds, and he is nigh impossible to kill permanently with incredible intelligence and insight.
+#(Tag:undead)The Lich, last scholar of Golb, is a primordial undead embodying entropy and death. He is an absolute master of Death, Pyro, Mind, Necromancy, and other magic who imposes death and dominates nearby minds, and he is nigh impossible to kill permanently with incredible intelligence and insight.
 291. Lil' Khorne, 5.1, Warhammer 40k
 #(Character)Lil Khorne is a Chaos God shrunk to Level 1 and an incredible warrior with immense physical power and mastery of all weapons and warfare. It has greater magic resistance in exchange for being unable to use magic, starts weak for an Epic familiar at roughly Rare power, and slowly levels back up through aligned actions without reaching original power anytime soon.
 292. Lil' Slaanesh, 5.2, Warhammer 40k
@@ -597,7 +597,7 @@
 299. Obelisk the Tormentor, 6.5, Yugioh
 #Obelisk the Tormentor is an Egyptian God of overwhelming physical might whom no magic or ability below Legendary rank can directly affect. He unleashes destructive dark energy blasts and can be temporarily empowered further by sacrifices.
 300. Winged Dragon of Ra, 7.0, Yugioh
-#The Winged Dragon of Ra is an Egyptian Sun Dragon in the form of an imposing golden Phoenix whom no magic or ability below Legendary rank can directly affect. He unleashes sun-like divine flames that especially incinerate demonic and dark beings, can enter a Phoenix Form of pure flame for immense resistance and regeneration, and is further powered by sacrifices.
+#(Tag:dragonic)The Winged Dragon of Ra is an Egyptian Sun Dragon in the form of an imposing golden Phoenix whom no magic or ability below Legendary rank can directly affect. He unleashes sun-like divine flames that especially incinerate demonic and dark beings, can enter a Phoenix Form of pure flame for immense resistance and regeneration, and is further powered by sacrifices.
 301. Dusknoir, 3.8, Pokemon
 #Dusknoir is a hollow-bodied ghost Pokemon with great physical strength and extremely strong physical and magical durability. It attacks with shadow and darkness, senses souls, and grabs living and dead souls to store inside its body.
 302. Lucario, 3.4, Pokemon
@@ -693,7 +693,7 @@
 347. Grand Mother Silk, 5.4, Silksong
 #(Character)Grand Mother Silk is a Higher Being of lesser divinity with power over silk and great size-appropriate physical abilities. She manipulates Silk massively with fine control, infests and controls thousands at once based on target strength, creates living silk entities, binds targets, floats, and exerts telekinetic force.
 348. Death Angels, 2.6, A Quiet Place
-#Death Angels are heavily armoured blind quadrupedal aliens with incredible strength, agility, and super hearing. One is immune to conventional firearms, lifts cars, exceeds 100 km/h, but needs active direction due to poor senses, starting with 4 and gaining more as maximum energy expands.
+#(Tag:holy)Death Angels are heavily armoured blind quadrupedal aliens with incredible strength, agility, and super hearing. One is immune to conventional firearms, lifts cars, exceeds 100 km/h, but needs active direction due to poor senses, starting with 4 and gaining more as maximum energy expands.
 349. Architect, 2.6, Generic
 #A 3-meter-tall 6-armed bronze automaton powered nebulously with incredibly fine movement control. It is a skilled builder able to design and build a house in a day when supplied materials, but lacks combat ability.
 350. EVE, 1.3, Wall-E
@@ -713,7 +713,7 @@
 357. Dwarf in the Flask, 5.9, Fullmetal Alchemist
 #(Character)The Dwarf in the Flask is Hohenheim's first homunculus made from an eye shard with tank-shredding amorphous darkness and great might. Its true power is vast alchemy knowledge for circles, soul-derived philosopher stones, homunculi, chimeras, and teaching Alchemy (Note: Does not possess the power of Truth nor can it reach it due to it not existing in other worlds).
 358. Vlov Arkangel, 6.5, Tsukihime
-#Vlov Arkangel is an Undead Apostle Ancestor in name only through immaturity with immense physical and magical abilities plus ghoul and Apostle conversion. His Idea Blood Freezin removes heat for near-instant city blizzards, thousands of ice lances, near-absolute-zero cold, and byproduct searing flames, but is hard to use easily and inferior to his peers.
+#(Tag:vampiric)Vlov Arkangel is an Undead Apostle Ancestor in name only through immaturity with immense physical and magical abilities plus ghoul and Apostle conversion. His Idea Blood Freezin removes heat for near-instant city blizzards, thousands of ice lances, near-absolute-zero cold, and byproduct searing flames, but is hard to use easily and inferior to his peers.
 359. Full-Grown Fallingstar Beast, 4.2, Elden Ring
 #A fully matured Fallingstar Beast has a body tougher than almost all mundane materials and incredible strength. It manipulates gravity for anti-gravity launches, hurled rocks, gravity bolts, crushing zones, and strength-paired charges.
 360. Hound of Tindalos, 6.9, Cthulhu Mythos
@@ -749,7 +749,7 @@
 375. Yellow Chocobo, 1.0, Final Fantasy
 #Chocobos are intelligent birds and excellent mounts, as fast as horses with great endurance. They can kick attackers with powerful legs. You get a breeding pair.
 376. Holy Cow, 1.5, Generic
-#"Holy Cow!" is a large, healthy female cow that always lactates 10 to 50 liters of milk per day depending on feeding. Her nutrient-dense milk has great health benefits and quality, and works as low-quality holy water against the unholy. Her children mostly inherit her genes and holy blessing.
+#(Tag:holy)"Holy Cow!" is a large, healthy female cow that always lactates 10 to 50 liters of milk per day depending on feeding. Her nutrient-dense milk has great health benefits and quality, and works as low-quality holy water against the unholy. Her children mostly inherit her genes and holy blessing.
 377. Cathyl, 1.7, Monster Musume
 #(Character)Cathyl is a minotaur towering over humans, 10x stronger than a grown person with exceptional stamina. Experienced in farming and ranching, she suits heavy labour. She naturally lactates very nutritious, rich, tasty milk.
 378. Dragonslayer Armor, 3.0, Dark Souls
@@ -783,7 +783,7 @@
 392. Gore Magala, 4.5, Monster Hunter
 #Gore Magala is a Demi Elder Dragon with six limbs and considerable strength. Blind, it senses via heat and scattered pollen-like scales that pollute the air. This pollen carries the Frenzy Virus, driving bestial beings berserk and blocking natural healing in humanoids for a time; fed enough high-quality prey, it metamorphoses into Shagaru Magala after some time.
 393. Shagaru Magala, 5.8, Monster Hunter
-#Shagaru Magala is the mature Elder Dragon form of Gore Magala, with immense strength and six limbs. It scatters pollen-like scales to perceive surroundings and inflict the Frenzy Virus via scales and breath, driving bestial creatures berserk and blocking natural healing in humanoids. Its scales can cover its roost mountain, and in compatible hosts act as eggs to spawn infants.
+#(Tag:dragonic)Shagaru Magala is the mature Elder Dragon form of Gore Magala, with immense strength and six limbs. It scatters pollen-like scales to perceive surroundings and inflict the Frenzy Virus via scales and breath, driving bestial creatures berserk and blocking natural healing in humanoids. Its scales can cover its roost mountain, and in compatible hosts act as eggs to spawn infants.
 394. Nick O' Teen, 1.0, DC
 #The dastardly Nick O' Teen is a nicotine-addicted supervillain who pushes smoking on others. When summoned he arrives, hands everyone a pack of cigarettes, then leaves. 24-hour cooldown.
 395. The Fallen Aces, 3.2, Fallen Aces
@@ -873,7 +873,7 @@
 437. Butter Passing Robot, 0.6, Rick and Morty
 #(Tech)A small sentient treaded robot built by a great mind to pass butter. It can also do other inconsequential menial tasks like pulling a lever or passing margarine.
 438. Magnamalo, 3.7, Monster Hunter
-#Magnamalo is a Fanged Wyvern with fearsome strength, agility, predator instincts, steel-tough hide, and bladed limbs. It expels volatile purple 'Hellfire' from several body points, and quickly regenerates non-severe wounds via incredible metabolism.
+#(Tag:unholy)Magnamalo is a Fanged Wyvern with fearsome strength, agility, predator instincts, steel-tough hide, and bladed limbs. It expels volatile purple 'Hellfire' from several body points, and quickly regenerates non-severe wounds via incredible metabolism.
 439. Lunagaron, 4.0, Monster Hunter
 #Lunagaron is a powerful frozen werewolf-like Fanged Wyvern and born apex predator. It crushes armored foes like tin cans and runs on walls with extreme agility. It supercools air via a special organ, expelling supercooled mist and coating itself in heat-resistant ice, and can enter a stronger bipedal berserk form by halting thermoregulation.
 440. Shogun Ceanataur, 4.2, Monster Hunter
@@ -885,11 +885,11 @@
 443. Nakarkos, 5.2, Monster Hunter
 #Nakarkos is an Elder Dragon-like giant bone-covered cephalopod with two dragon tentacles. It moves easily on land despite aquatic nature, with immense strength. It expels sticky viscous fluid to trap prey and add bones to strengthen itself, and condenses dragon energy in limbs for beam attacks.
 444. Amatsu, 5.6, Monster Hunter
-#Amatsu is an Elder Dragon known as the Calamity of the Skies. Manipulating Water and Wind, it creates hurricanes, controls weather over a massive area, fires pressured water breaths, and rains lightning while flying effortlessly.
+#(Tag:dragonic)Amatsu is an Elder Dragon known as the Calamity of the Skies. Manipulating Water and Wind, it creates hurricanes, controls weather over a massive area, fires pressured water breaths, and rains lightning while flying effortlessly.
 445. Garangolm, 4.9, Monster Hunter
 #Garangolm is a massive gorilla-like Fanged Beast of immense might. It releases sap-like fluid that feeds plant life, letting plants grow on it. It can armor itself in hardened earth or coat hands in earth then melt it into lava gauntlets.
 446. Velkhana, 5.3, Monster Hunter
-#Velkhana is a majestic Elder Dragon with power over ice. Fast-flying and physically powerful, it breathes supercooled liquid to flash-freeze objects, and manipulates ice to create icebergs and armor itself.
+#(Tag:dragonic)Velkhana is a majestic Elder Dragon with power over ice. Fast-flying and physically powerful, it breathes supercooled liquid to flash-freeze objects, and manipulates ice to create icebergs and armor itself.
 447. Elderfrost Gammoth, 3.3, Monster Hunter
 #The Elderfrost Gammoth is a massive mammoth-like Fanged Beast larger than a siege machine. With great size, strength, and durability, she charges through castle walls with ease. She also breathes ice and snow from her trunk.
 448. Goss Harag, 2.6, Monster Hunter
@@ -897,13 +897,13 @@
 449. Malzeno, 6.0, Monster Hunter
 #The Malzeno is an Elder Dragon known as the Scarlet Feast, wielding Dragon Energy for breaths and attacks. It hosts symbiotic Qurio parasites as a nest in its body. They drain vitality and blood while poisoning targets, returning it to heal, strengthen, and trigger Malzeno's stronger Bloodening form.
 450. Ruiner Nergigante, 5.5, Monster Hunter
-#The Ruiner Nergigante is a mature Elder Dragon with immense strength, agility, and hyper-tough body spikes to crush, shred, and impale. When fed it regrows spikes in seconds and heals even lethal wounds, growing stronger with every survived fight. With large excess nutrients and bio energy, it reproduces asexually by laying spike-eggs.
+#(Tag:dragonic)The Ruiner Nergigante is a mature Elder Dragon with immense strength, agility, and hyper-tough body spikes to crush, shred, and impale. When fed it regrows spikes in seconds and heals even lethal wounds, growing stronger with every survived fight. With large excess nutrients and bio energy, it reproduces asexually by laying spike-eggs.
 451. Qurio Swarm, 4.6, Monster Hunter
 #The Qurio are flying parasitic leeches that latch onto targets to drain vitality and blood for their host. They carry diseases that drive targets berserk or slowly kill them. They cannot reproduce but replenish over time if killed, starting with 10 and gaining more as you grow stronger.
 452. Canyne Pack, 2.9, Monster Hunter
 #A pack of well-trained Canynes, smart loyal canine-like Fanged Beasts. They run fast even carrying armored riders, scale walls, use tools, and aid companions. You start with 5 and get more as you grow stronger.
 453. Fatalis Trio, 6.5, Monster Hunter
-#A trio of Fatalis, apex Elder Dragons able to raze castles and ruin countries overnight, all with immense power and regeneration. Regular Fatalis vaporizes steel with firepower; Crimson Fatalis is stronger but unstable, wielding magma and meteors; eldest White Fatalis is strongest, wielding Red Lightning infused with Dragon Energy and energy beams. Reproduction unknown, but you can probably figure it out.
+#(Tag:dragonic)A trio of Fatalis, apex Elder Dragons able to raze castles and ruin countries overnight, all with immense power and regeneration. Regular Fatalis vaporizes steel with firepower; Crimson Fatalis is stronger but unstable, wielding magma and meteors; eldest White Fatalis is strongest, wielding Red Lightning infused with Dragon Energy and energy beams. Reproduction unknown, but you can probably figure it out.
 454. Lil' Entity, 7.5, Worm
 #Just a lil' multidimensional guy the size of a country, made of countless shards contained in Familiar Space. This baby Entity analyzes and replicates its user's abilities and traits, taking longer for stronger and more esoteric ones. Once analyzed, it distributes shards letting targets use copies of your abilities through it as liaison.
 455. Common Blade Core, 2.8, Xenoblade
@@ -985,7 +985,7 @@
 493. Chirpy, 1.6, Cities Skylines
 #The relentlessly cheerful seagull mascot, narrating your city one chirp at a time.
 494. Shivan Dragon, 6.4, MTG
-#The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
+#(Tag:dragonic)The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
 495. Captain Boomer, 4.8, Q-UP
 #A 3-ton whale with a day job who competes in the coin-flipping esport beside you.
 496. Peska the Troll, 3.2, Q-UP
@@ -995,7 +995,7 @@
 498. Mercury, 3.6, Tron 2.0
 #A skilled program ally who fights beside you in the Game Grid and knows its back doors.
 499. Data Wraith, 4.0, Tron 2.0
-#A viral hunter prowling the system for programs to derez, currently pointed at your enemies.
+#(Tag:spectral)(Tag:undead)A viral hunter prowling the system for programs to derez, currently pointed at your enemies.
 500. Spirit Doe, 4.2, Life is Strange
 #A luminous doe that appears at turning points, watching over your choices.
 501. Spidertron, 5.6, Factorio
@@ -1071,7 +1071,7 @@
 536. Palisman (sleepy), 0.4, The Owl House
 #A bat palisman asleep twenty hours a day. The other four hours it judges you.
 537. Fairy (common), 0.3, Touhou
-#A weak common fairy. Revives shortly after every beating, annoyingly cheerful about it.
+#(Tag:fae)A weak common fairy. Revives shortly after every beating, annoyingly cheerful about it.
 538. Goblin (illiterate), 0.4, Pathfinder
 #Fears writing, loves fire a normal amount (for a goblin). Cannot read this entry.
 539. Peasant (pitchfork), 0.2, DnD

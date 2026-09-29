@@ -35,11 +35,11 @@
 18. Pyromaster, 7.2, Generic
 #Control flames and ignition on the level of a Level 5 Esper from Toaru, with unmatched precision, range, and control.
 19. Unholy Flames, 5.7, Generic
-#Wield Hell flames so potent even you are not fully immune, suffering burns from overuse. They deal severe damage to Holy and Light-based beings.
+#(Tag:unholy)Wield Hell flames so potent even you are not fully immune, suffering burns from overuse. They deal severe damage to Holy and Light-based beings.
 20. Profaned Flames, 6.2, Calamity Mod
-#Channel and control Providence's Profaned Flames, which are incomparably hot, turn all to impartial ash, and ignore all fire resistance.
+#(Tag:unholy)Channel and control Providence's Profaned Flames, which are incomparably hot, turn all to impartial ash, and ignore all fire resistance.
 21. Profaned Guardian Transformation, 6.5, Calamity Mod
-#Temporarily take the form of one of Providence's guardians, massively boosting physical stats and granting flame wings and Profaned Flame manipulation. Maintaining it slowly burns you from the inside until released, mitigated only by fire resistance.
+#(Tag:unholy)Temporarily take the form of one of Providence's guardians, massively boosting physical stats and granting flame wings and Profaned Flame manipulation. Maintaining it slowly burns you from the inside until released, mitigated only by fire resistance.
 22. Shadowflames, 4.7, Terraria
 #Emit and control Shadowflame, soundless flames with no energy signature that burn away light, making them extremely hard to perceive. An experienced user can hide them from all senses.
 23. Fire Fist, 2.6, Generic
@@ -153,7 +153,7 @@
 77. Aquamaster, 7.5, Generic
 #Create and control Water (H2O) on the scale of a Level 5 Esper from Toaru, with incredible range, power, and unmatched precision.
 78. Holy Water Tap, 3.6, Generic
-#Create and control holy water, very effective against unholy beings. More energy creates more water or more potent holy water.
+#(Tag:holy)Create and control holy water, very effective against unholy beings. More energy creates more water or more potent holy water.
 79. Hydrofreeze, 5.9, Unordinary
 #Create, control, and turn into water and ice, allowing water-form escapes, dodges, icicles, freezing, and similar tricks. Water or ice form shares water's vulnerabilities.
 80. Water Bubbles, 0.7, Generic
@@ -529,11 +529,11 @@
 265. Cursecraft, 4.8, Generic
 #Create and apply curses based on your abilities. E.g. light becomes blinding, strength becomes weakness, etc.
 266. Darkness Devil, 7.8, Chainsaw Man
-#As the fear of darkness incarnate, hold authority over all darkness and shadows to control them at will.
+#(Tag:demonic)As the fear of darkness incarnate, hold authority over all darkness and shadows to control them at will.
 267. Black Hole, 5.0, Generic
 #Conjure and control weaker small-scale virtual black holes. With training, you can conjure real black holes.
 268. Void Dragon's Breath, 4.0, Generic
-#Charge and unleash erosive void breath that drains the energy of what it touches. Longer charge and more energy mean a stronger breath.
+#(Tag:dragonic)Charge and unleash erosive void breath that drains the energy of what it touches. Longer charge and more energy mean a stronger breath.
 269. Void Mirror Image, 1.5, Legendary Mechanic
 #Conjure controlled clones of yourself that cannot interact with the world and serve as distractions.
 270. Void Travel, 3.9, Legendary Mechanic
@@ -571,7 +571,7 @@
 286. Illumination, 1.7, Generic
 #Conjure telekinetically controlled points of bright light. Extra energy makes them semi-permanent.
 287. Exorcist's Light, 2.3, Generic
-#Conjure and emit exorcising light, useless against normal beings but highly effective against dark or unholy beings.
+#(Tag:holy)Conjure and emit exorcising light, useless against normal beings but highly effective against dark or unholy beings.
 288. Invisibility, 2.5, Generic
 #Bend light around yourself or a touched object to render it invisible.
 289. Flash Grenade, 1.8, Generic
@@ -583,11 +583,11 @@
 292. Beam, 3.4, Generic
 #Shoot a near-instant beam of concentrated light and heat from your fingers.
 293. Lesser Blessing, 2.6, Generic
-#Grant a minor blessing of Holy Energy that slightly augments one chosen physical stat: Vitality, Strength, Resilience, Agility, stamina. Lasts one hour; only one blessing per target.
+#(Tag:holy)Grant a minor blessing of Holy Energy that slightly augments one chosen physical stat: Vitality, Strength, Resilience, Agility, stamina. Lasts one hour; only one blessing per target.
 294. Blessing, 3.5, Generic
-#Grant a Holy Energy blessing: Augmentation (augments a chosen stat like strength, resilience, vitality, etc.), Might (slightly augments all attributes), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
+#(Tag:holy)Grant a Holy Energy blessing: Augmentation (augments a chosen stat like strength, resilience, vitality, etc.), Might (slightly augments all attributes), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
 295. Greater Blessing, 4.7, Generic
-#Grant a greater Holy Energy blessing: Augmentation (significantly augments a chosen stat like strength, resiliency, vitality, regeneration, etc.), Boost (augments all attributes for more energy), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
+#(Tag:holy)Grant a greater Holy Energy blessing: Augmentation (significantly augments a chosen stat like strength, resiliency, vitality, regeneration, etc.), Boost (augments all attributes for more energy), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
 296. Divine Blessing, 5.7, Generic
 #Bestow blessings once an hour for one hour: Recovery (Rare Rank Regeneration plus cure of all non-inborn ailments), Might (increases all attributes), or Warding (cleanses curses and raises resistances). Blessings can also mimic abilities, e.g. Ignite grants fire resistance and affinity.
 297. Law of Regression, 6.3, Elden Ring
@@ -609,7 +609,7 @@
 305. Greater Purification, 4.1, Generic
 #Bathe a target in powerful purifying light to cleanse negative effects and foreign substances. Potency scales with energy.
 306. Holy Weapon, 2.9, Generic
-#Coat your armament in holy light, enhancing its power and quality and dealing extra damage to dark-aligned beings.
+#(Tag:holy)Coat your armament in holy light, enhancing its power and quality and dealing extra damage to dark-aligned beings.
 307. Blessing of Arms, 3.6, Generic
 #Bless an armament to upgrade it by half a stage (+) and grant its wielder a matching bonus intermediate skill, e.g. an Uncommon sword becomes Uncommon+ and grants Intermediate Swordsmanship while held. Only one at a time.
 308. Smite, 3.1, Generic
@@ -617,7 +617,7 @@
 309. Golden Fist, 2.8, Generic
 #Cover your fists in deadly golden light that strengthens punches, punishes evil, and deals severe damage to unholy and spirit beings.
 310. Exorcism, 2.8, Generic
-#Bathe a target in golden light to exorcise negative effects, curses, and possessions. Against spirits or unholy beings, it burns like holy flame.
+#(Tag:holy)Bathe a target in golden light to exorcise negative effects, curses, and possessions. Against spirits or unholy beings, it burns like holy flame.
 311. Blade of Light, 3.9, Generic
 #Infuse your blade with reinforcing light mimicking its properties; e.g. swords launch light slashes, hammers emit golden shockwaves, etc.
 312. Resuscitation, 3.7, Generic
@@ -637,7 +637,7 @@
 319. Judgement Call, 4.8, Epic Battle Fantasy
 #Summon an erupting fountain of pure divine light dealing massive pillar-like destruction, lethal to Unholy beings, plus purification. Drains most energy; stronger than some Epic abilities but held back by cost and charge time.
 320. Genesis, 7.7, Epic Battle Fantasy
-#"May there be mercy on man and machine for their sins." Call a gigantic crucifix of absolute holy light dealing country-erasing judgment; no Unholy being survives, while allies caught are healed of all conditions. Spends all energy; 30-day cooldown.
+#(Tag:holy)"May there be mercy on man and machine for their sins." Call a gigantic crucifix of absolute holy light dealing country-erasing judgment; no Unholy being survives, while allies caught are healed of all conditions. Spends all energy; 30-day cooldown.
 321. Light Trick, 3.4, Generic
 #Bend light into sight-deceiving optical illusions. Light can be solidified for disguise, but touch reveals the trick.
 322. Light Speed, 4.7, Generic
@@ -665,7 +665,7 @@
 333. Scales, 2.7, Generic
 #Grow damage-resistant scales serving as flexible skin armor. Toughness scales with physical stats.
 334. Dragon Scales, 4.0, Generic
-#Grow incredibly tough dragon scales, more durable than any human material, also reducing elemental damage taken. Toughness scales with physical stats.
+#(Tag:dragonic)Grow incredibly tough dragon scales, more durable than any human material, also reducing elemental damage taken. Toughness scales with physical stats.
 335. Powerful Wings, 2.7, Generic
 #Grow powerful wings that lift you regardless of weight. Stronger than your base physicality, they can shatter bones as weapons.
 336. Immunity System, 3.9, Generic
@@ -691,7 +691,7 @@
 346. hybrid Ghoul Physiology, 5.5, Tokyo Ghoul
 #Transform into a hybrid ghoul, far stronger than average ghouls with none of their weaknesses. Massively amplifies physical attributes, grants powerful regeneration and a random Kagune, and removes the need to eat human flesh while retaining its benefits.
 347. Dragon Kakuja, 7.0, Tokyo Ghoul
-#"Become a true biological terror." Take the form of a Dragon Kakuja, an over 10km centipede-like dragon of RC cells stronger than any artificial material. Passively emit high-density RC clouds that turn nearby things into flesh-eating superhuman monsters under your telepathic control, and morph your body into tentacles or flesh monsters.
+#(Tag:dragonic)"Become a true biological terror." Take the form of a Dragon Kakuja, an over 10km centipede-like dragon of RC cells stronger than any artificial material. Passively emit high-density RC clouds that turn nearby things into flesh-eating superhuman monsters under your telepathic control, and morph your body into tentacles or flesh monsters.
 348. Keratin Manipulation, 3.9, Generic
 #Generate and control keratin to form constructs like horns, armour, and shields, or fire scales and needles.
 349. Fierce Wings, 4.9, MHA
@@ -727,7 +727,7 @@
 364. Biological Adaptation, 5.7, Worm
 #Your body constantly rebuilds itself to counter stimuli, such as fire-resistant skin against fire, plating against cuts, or sharper claws. Adaptations are strictly biological and fade over time or when dispelled.
 365. Vampire Physique, 3.7, Generic
-#Become a classic vampire with superhuman physical abilities, bat transformation, and bloodsucking. Retain all traditional weaknesses: crucifixes, garlic, wooden stakes, sunlight, and holy water.
+#(Tag:vampiric)Become a classic vampire with superhuman physical abilities, bat transformation, and bloodsucking. Retain all traditional weaknesses: crucifixes, garlic, wooden stakes, sunlight, and holy water.
 366. Animorph, 4.4, Generic
 #Freely morph into any mundane animal you know. Retain all your abilities while gaining the animal's physical traits.
 367. Gills, 1.0, Generic
@@ -753,9 +753,9 @@
 377. Blood Manipulation, 1.8, Generic
 #Telekinetically control your own blood. You cannot generate extra blood without regeneration, so spend it wisely.
 378. Hemokinesis, 3.8, Generic
-#Telekinetically control blood within your sensory range, but not in quantities smaller than you can perceive. Controlling blood inside someone requires being stronger than them.
+#(Tag:vampiric)Telekinetically control blood within your sensory range, but not in quantities smaller than you can perceive. Controlling blood inside someone requires being stronger than them.
 379. Greater Hemokinesis, 5.2, Generic
-#Sense and telekinetically control all blood within your sensory range, your own or an enemy's. Meaningful control of blood inside a target requires being stronger than them.
+#(Tag:vampiric)Sense and telekinetically control all blood within your sensory range, your own or an enemy's. Meaningful control of blood inside a target requires being stronger than them.
 380. Teleportation, 4.7, Generic
 #Teleport to any location you have visited or seen with your own eyes. Longer range increases energy consumption and cooldown.
 381. Blink, 3.4, Generic
@@ -841,7 +841,7 @@
 421. Sunshine, 7.2, Nanatsu no Taizai
 #Blessed by the sun: under sunlight, massively increase stats and energy and create intense flames. At noon for one minute, enter "The One" for even greater stats, flames, and near-invulnerability.
 422. Draconic Escalation, 4.0, Worm
-#Under danger or combat, assume a draconic form that strengthens with time and danger, and recedes without it. Higher escalation grants basic pyrokinesis, regeneration, and enhanced physical stats.
+#(Tag:dragonic)Under danger or combat, assume a draconic form that strengthens with time and danger, and recedes without it. Higher escalation grants basic pyrokinesis, regeneration, and enhanced physical stats.
 423. Revengence, 3.5, Generic
 #Build up energy as you are hurt, then charge any ability or spell with it for a devastating effect. Each 10% health lost adds 2x power, reaching 10x at 10% health remaining; 8-hour cooldown.
 424. Metallica, 4.8, Generic
@@ -1021,11 +1021,11 @@
 511. Unlock, 6.0, Generic
 #Conceptually unlocks entities, from locks to inner potential. More abstract or difficult targets cost more energy; imagination and energy are your limits.
 512. Dragon Form, 5.3, Generic
-#Transforms into a western dragon partially or fully, granting enhanced stats and energy plus the ability to use other abilities as breath attacks.
+#(Tag:dragonic)Transforms into a western dragon partially or fully, granting enhanced stats and energy plus the ability to use other abilities as breath attacks.
 513. Energization, 5.5, Generic
 #Converts flesh into energy to become an energy being. More flesh yields more energy but greater vulnerability to energy attacks.
 514. Everlasting Dragon Form, 6.5, Dark Souls
-#Transforms into a giant everlasting dragon partially or fully. With intact stone scales of immortality, needs no sustenance and gains regeneration, powerful breath, and extreme damage resistance, but loses immortality if scales break and stays vulnerable to lightning.
+#(Tag:dragonic)Transforms into a giant everlasting dragon partially or fully. With intact stone scales of immortality, needs no sustenance and gains regeneration, powerful breath, and extreme damage resistance, but loses immortality if scales break and stays vulnerable to lightning.
 515. Lunarian Form, 5.7, One Piece
 #"No, it doesn't give you the pass" Temporarily transforms into a Lunarian, an extinct sky-faring race, with free winged flight and bodily fire manipulation for attacks and more. Intact flame grants extreme durability; lost flame removes it but grants slight speed instead.
 516. Soul Window, 3.8, Generic
@@ -1137,7 +1137,7 @@
 569. Life Radar, 2.8, Generic
 #Detects all lifeforms and shapes within a 100-meter radius, expandable with training.
 570. Devil Control, 8.3, Generic
-#Completely and absolutely controls any lesser being, but you must first prove they are lesser.
+#(Tag:demonic)Completely and absolutely controls any lesser being, but you must first prove they are lesser.
 571. Arbor, 4.6, MHA
 #Creates and extends controllable, reinforceable wood constructs from your body.
 572. Contractual Recreation, 4.0, Jujutsu Kaisen
@@ -1149,7 +1149,7 @@
 575. Somnabulist, 4.2, MHA
 #Emits very powerful sleeping gas from your skin as purple mist.
 576. Phantom Touch, 2.3, Generic
-#(Noncon) Lets you touch a target at range, making them feel your hands or mouth on a spot of your choosing. These are phantom sensations only and cannot physically affect them.
+#(Tag:spectral)(Noncon) Lets you touch a target at range, making them feel your hands or mouth on a spot of your choosing. These are phantom sensations only and cannot physically affect them.
 577. Collaring, 3.8, Generic
 #Lets you collar a defeated or submitting target, preventing them from moving to harm you and forcing them to obey your orders. Manifests as a translucent, hideable collar and chain around their neck.
 578. Material Swim, 2.4, Generic
@@ -1191,7 +1191,7 @@
 596. Operation, 7.2, One Piece
 #Lets you create a circular zone where you control space like an operating table, swapping objects, amputating without harm, removing hearts, teleporting, and more with training. Maintaining the zone and using the power costs immense energy.
 597. Azure Dragon Form, 7.8, One Piece
-#Lets you transform into a giant Eastern Azure Dragon or hybrid at will, massively boosting physical abilities. Grants elemental breath attacks like fire, lightning, and air, plus fire clouds to lift things or fly.
+#(Tag:dragonic)Lets you transform into a giant Eastern Azure Dragon or hybrid at will, massively boosting physical abilities. Grants elemental breath attacks like fire, lightning, and air, plus fire clouds to lift things or fly.
 598. Buddha Form, 6.8, One Piece
 #Lets you transform into a giant golden Buddha statue, massively boosting physical abilities. Grants golden shockwaves and near-invulnerability to most damage in this form.
 599. Cow Form, 2.6, One Piece
@@ -1239,13 +1239,13 @@
 620. Strength Sap, 4.7, Generic
 #Lets you drain an opponent's strength through touch and temporarily add it to your own, with victims slowly recovering. Killing with it permanently grants 10% of their physical abilities. Stronger opponents drain slower.
 621. Devil Trigger, 5.6, Devil May Cry
-#Lets you tap inner demonic power to transform into a Devil form, greatly enhancing physical abilities and power. As a normal human you could tear tanks apart barehanded, scaling with your abilities.
+#(Tag:demonic)Lets you tap inner demonic power to transform into a Devil form, greatly enhancing physical abilities and power. As a normal human you could tear tanks apart barehanded, scaling with your abilities.
 622. Sin Devil Trigger, 7.3, Devil May Cry
-#Lets you ascend your Devil form to its apotheosis, massively boosting power and physical abilities and wielding pure demonic power to boost existing abilities. Burns stamina and health extremely quickly; a wall-breaking fireball could annihilate city blocks.
+#(Tag:demonic)Lets you ascend your Devil form to its apotheosis, massively boosting power and physical abilities and wielding pure demonic power to boost existing abilities. Burns stamina and health extremely quickly; a wall-breaking fireball could annihilate city blocks.
 623. Angel Form, 4.7, Generic
-#Lets you transform into an angel or angel hybrid, boosting physical stats and energy. Lets you infuse abilities and items with holy energy and fly with wings.
+#(Tag:holy)Lets you transform into an angel or angel hybrid, boosting physical stats and energy. Lets you infuse abilities and items with holy energy and fly with wings.
 624. Archangel Form, 7.4, Generic
-#Lets you transform into an archangel or archangel hybrid, massively boosting physical stats. Lets you infuse abilities and items with pure holy energy and intuitively use blessings, healing, protection, and all Holy Abilities below Elite Rank.
+#(Tag:holy)Lets you transform into an archangel or archangel hybrid, massively boosting physical stats. Lets you infuse abilities and items with pure holy energy and intuitively use blessings, healing, protection, and all Holy Abilities below Elite Rank.
 625. New Order, 7.4, MHA
 #Lets you place RULES on the world or objects, only as strong as you are. Examples include strengthening an object or granting yourself "Can grab lightning." Requires knowing a target's self-associated name, except for objects. Limited to 2 orders at once, increasable with training; stronger orders cost more energy.
 626. Word Magic, 6.4, Generic
@@ -1255,9 +1255,9 @@
 628. Life Fiber hybrid, 6.8, Generic
 #Your body is infused with Life Fibers, granting massively superhuman physical abilities, incredible healing, and immense vitality. Wounds pull back together, even rejoining halves split apart.
 629. Infernal Chains, 3.8, Generic
-#Lets you conjure infernal barbed chains to bind foes or wield as weapons.
+#(Tag:demonic)Lets you conjure infernal barbed chains to bind foes or wield as weapons.
 630. Angel Style, 2.7, Generic
-#One Punch Man, Puri Puri Prisoner - For each % of skin uncovered, energy output and physical abilities rise by the same %, reaching 2x when fully naked.
+#(Tag:holy)One Punch Man, Puri Puri Prisoner - For each % of skin uncovered, energy output and physical abilities rise by the same %, reaching 2x when fully naked.
 631. Heavenly Restriction, 5.2, Jujutsu Kaisen
 #While active, you cannot use energy or mana in any way. In exchange, physical abilities rise with your energy reserves, you are immune to spells cast directly on you, and you cannot be detected or directly targeted by magical means.
 632. White Tiger Form, 3.1, Generic
@@ -1453,9 +1453,9 @@
 727. Ranchor, 6.7, Calamity Mod
 #Wield Ranchor, ultimate brimstone flames of malice and revenge. Burns anything including souls, energy, and flesh, but also burns the user to a lesser extent with more use.
 728. Banishing Fire, 3.6, Generic
-#Holy fire gifted to clerics by angels as blessings, harmless to regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings and blocks their healing.
+#(Tag:holy)Holy fire gifted to clerics by angels as blessings, harmless to regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings and blocks their healing.
 729. Holy Flame, 4.6, Generic
-#Wield angels' holy flames, no stronger than normal fire against regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings, blocks healing, and can burn away afflictions if skilled.
+#(Tag:holy)Wield angels' holy flames, no stronger than normal fire against regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings, blocks healing, and can burn away afflictions if skilled.
 730. Star of Comprehension, 5.3, Generic
 #While in an active slot, massively boost comprehension: learn a book from one read and imitate martial arts from video or live exchange. Learn and master skills at supernatural rates.
 731. Divinity Fire, 8.5, Generic
@@ -1465,7 +1465,7 @@
 733. Ifrit, 5.2, Generic
 #Transform into an Ifrit, a fire-born spirit. Cannot use water or water-based abilities as one, but fire abilities are much stronger with natural flame generation.
 734. Ifrit Sultan, 6.6, Generic
-#Transform into an Ifrit Sultan, ancient flame spirit ruling fire spirits with ancient-dragon-level power. Strengthens all fire abilities, disables cryo/hydrokinesis, and grants natural pyrokinesis plus fire immunity.
+#(Tag:dragonic)Transform into an Ifrit Sultan, ancient flame spirit ruling fire spirits with ancient-dragon-level power. Strengthens all fire abilities, disables cryo/hydrokinesis, and grants natural pyrokinesis plus fire immunity.
 735. More Eyes, 1.0, Generic
 #Manifest eyes anywhere on your body without disorientation from multiple vision.
 736. Extension, 4.8, Generic
@@ -1527,7 +1527,7 @@
 764. Blood Burn, 3.8, Generic
 #Significantly enhance physical stats by burning blood, losing 1ml per second. Can raise to 10ml per second for up to 5x strength.
 765. Devil Regeneration, 5.9, Generic
-#Gain extreme regeneration regrowing limbs in seconds, fueled by others' blood rather than energy. More blood means more regeneration; a large cup restores near-death to peak.
+#(Tag:demonic)Gain extreme regeneration regrowing limbs in seconds, fueled by others' blood rather than energy. More blood means more regeneration; a large cup restores near-death to peak.
 766. Tower of Babel, 5.6, Generic
 #Scramble senses of everyone within 500 meters, causing extreme disorientation like falling sensation, nausea, vertigo, tinnitus, deafness, etc.
 767. Reactive Activation, 2.7, Generic
@@ -1541,7 +1541,7 @@
 771. Monarch's Indifference, 3.0, Generic
 #Author's PoV - Fully suppress emotions to act with complete indifference toward your goal. Also fully counters mind manipulation or telepathy aimed at you.
 772. Emotion Spectrum, 2.4, Generic
-#See emotions as colored auras, e.g. yellow happiness, green envy, black despair, red anger, etc.
+#(Tag:spectral)See emotions as colored auras, e.g. yellow happiness, green envy, black despair, red anger, etc.
 773. Sugar Rush, 2.8, MHA
 #Consume sugar for temporary super strength scaled to amount consumed, followed by a massive sugar crash.
 774. Scarlet Rot, 6.4, Elden Ring
@@ -1551,7 +1551,7 @@
 776. Path to Victory, 9.6, Worm
 #Create a path to any mechanically possible goal, even one-in-googol odds, with impossibly precise execution and nigh-omniscient calculation except blind spots. Can use paths as guidelines only.
 777. Spectral Claw, 3.7, Unordinary
-#Manifest a large demon-like clawed arm over your own with superhuman strength and grip to crush steel and lift cars, extendable and slightly growable. Damage to it reflects onto your real arm.
+#(Tag:spectral)Manifest a large demon-like clawed arm over your own with superhuman strength and grip to crush steel and lift cars, extendable and slightly growable. Damage to it reflects onto your real arm.
 778. Shield, 3.6, Generic
 #Create translucent dome or wall barriers acting as physical defenses.
 779. Absolute Barrier, 6.5, One Piece
@@ -1565,13 +1565,13 @@
 783. Sharpen, 3.2, Generic
 #Sharpen touched objects, from monomolecular blades to swung air forming razor winds.
 784. Dragon Projection, 4.3, Generic
-#Create translucent dragon-limb projections for varied uses: arms to cut, smash, or protect, head to bite or breathe flames, wings to fly or glide.
+#(Tag:dragonic)Create translucent dragon-limb projections for varied uses: arms to cut, smash, or protect, head to bite or breathe flames, wings to fly or glide.
 785. Hydra Projection, 4.7, MHA
 #Unleash hydra-head projections from body or back to crush, bite, smash, or constrict with the neck. A severed head needs time to resummon.
 786. Natural Armory, 3.9, Generic
 #Turn touched objects into stable cold weapons regardless of matter, like water scythe, stone spear, air sword, or fire whip. The world is your armory.
 787. Unlimited Bladeworks, 6.4, Fate
-#{Reality Marble} scan and understand any weapon encountered to store in a mental armory, then project it with identical attributes for energy. With practice, pull others into your sword-filled mental world. Excludes Alien, Fae, and Divine weapons by default.
+#(Tag:fae){Reality Marble} scan and understand any weapon encountered to store in a mental armory, then project it with identical attributes for energy. With practice, pull others into your sword-filled mental world. Excludes Alien, Fae, and Divine weapons by default.
 788. Reinforcement, 3.3, Fate
 #Reinforce structure and quality of touched objects or yourself. More energy means stronger but harder-to-maintain reinforcement.
 789. Alteration, 3.6, Fate
@@ -1581,7 +1581,7 @@
 791. Power to Reject Death, 6.5, Legendary Moonlight Sculptor
 #On death resurrect as undead scaled to slot count, then after 24 hours revive as original self. 1=Skeleton, 2=Skeleton Warrior/Mage, 3=Dullahan/Necromancer, 4=Death Knight/Lich, 5+=Dread Knight/Elder Lich. 10-day cooldown.
 792. Dead Apostle Ancestor Form, 7.6, Fate/Tsukihime
-#Temporarily become a Dead Apostle Ancestor, strongest Vampire rank, with incredible physical/magical prowess, mist transformation, and time-reversal regeneration consuming your blood while heart remains and blood exists. Forms a Legendary-ranked Idea Blood from your life/experiences and can create full undead apostles.
+#(Tag:vampiric)Temporarily become a Dead Apostle Ancestor, strongest Vampire rank, with incredible physical/magical prowess, mist transformation, and time-reversal regeneration consuming your blood while heart remains and blood exists. Forms a Legendary-ranked Idea Blood from your life/experiences and can create full undead apostles.
 793. Crush, 5.8, Generic
 #Remotely crush objects in line of sight, increasing pressure with energy output. Stronger targets are harder to crush.
 794. Schrodinger, 7.9, Hellsing
@@ -1653,7 +1653,7 @@
 827. Kingdom Soul, 7.7, Generic
 #Makes your soul a shapeable kingdom that absorbs souls of those you kill or wayward souls you find. You can house them, manifest them as physical soldiers, sacrifice them for power, or burn them to recover energy.
 828. Pixie Power, 2.7, Generic
-#Lets you transform into a pixie at will, gaining flight, energy reserves, and agility at the cost of size and physical power.
+#(Tag:fae)Lets you transform into a pixie at will, gaining flight, energy reserves, and agility at the cost of size and physical power.
 829. Ajin Form, 6.8, Ajin
 #Makes you an Ajin with biological immortality, resurrecting at peak condition from your largest remaining flesh via Invisible Black Matter at no energy cost. You can summon IBM shadows to fight, defend, or scout on your orders.
 830. Measure King, 1.3, Generic
@@ -1843,23 +1843,23 @@
 925. Karmic Enforcement, 6.6, Generic
 #"Tit for Tat" Allows you to enforce karma. Every exchange accrues karma, and if unfulfilled you can enforce it — if you saved someone's life and they have not repaid you, you can force them to perform any action or actions equal to the karmic value of their life.
 926. Fire Dragon Slayer, 6.9, Fairy Tail
-#Allows you to transform into and wield the powers of a fire dragon. You generate fire from your body, control it, alter its properties such as blunt or sharp, devour flames, and are immune to all fire below your level. Eating flames recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your flames.
+#(Tag:dragonic)Allows you to transform into and wield the powers of a fire dragon. You generate fire from your body, control it, alter its properties such as blunt or sharp, devour flames, and are immune to all fire below your level. Eating flames recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your flames.
 927. Water Dragon Slayer, 6.5, Fairy Tail
-#Allows you to transform into and wield the powers of a water dragon. You generate, control, alter its properties such as blunt or sharp, devour water, and are immune to water-based attacks below your level. Drinking water recovers vitality and energy, though polluted water can harm you, and consuming other magic lets you temporarily incorporate it into your water.
+#(Tag:dragonic)Allows you to transform into and wield the powers of a water dragon. You generate, control, alter its properties such as blunt or sharp, devour water, and are immune to water-based attacks below your level. Drinking water recovers vitality and energy, though polluted water can harm you, and consuming other magic lets you temporarily incorporate it into your water.
 928. Sky Dragon Slayer, 7.3, Fairy Tail
-#Allows you to transform into and wield the powers of a sky dragon. You generate, control, alter your winds such as blunt or sharp, devour wind, heal others with your winds, and are immune to wind-based attacks below your level. Breathing air recovers vitality and energy, though polluted air harms you, and consuming other magic lets you temporarily incorporate it into your wind attacks.
+#(Tag:dragonic)Allows you to transform into and wield the powers of a sky dragon. You generate, control, alter your winds such as blunt or sharp, devour wind, heal others with your winds, and are immune to wind-based attacks below your level. Breathing air recovers vitality and energy, though polluted air harms you, and consuming other magic lets you temporarily incorporate it into your wind attacks.
 929. Poison Dragon Slayer, 6.7, Fairy Tail
-#Allows you to transform into and wield the powers of a poison dragon. You generate, control, and alter potent poison such as corrosive, sickening, or boiling, devour poison, and are immune to all poison below your level. Consuming poison recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your poison.
+#(Tag:dragonic)Allows you to transform into and wield the powers of a poison dragon. You generate, control, and alter potent poison such as corrosive, sickening, or boiling, devour poison, and are immune to all poison below your level. Consuming poison recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your poison.
 930. Lightning Dragon Slayer, 6.8, Fairy Tail
-#Allows you to transform into and wield the powers of a lightning dragon. You generate lightning from your body, control it, alter its properties such as blunt or sharp, devour lightning, and are immune to all lightning below your level. Eating lightning recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your lightning.
+#(Tag:dragonic)Allows you to transform into and wield the powers of a lightning dragon. You generate lightning from your body, control it, alter its properties such as blunt or sharp, devour lightning, and are immune to all lightning below your level. Eating lightning recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your lightning.
 931. Shadow Dragon Slayer, 6.7, Fairy Tail
-#Allows you to transform into and wield the powers of a dark dragon. You generate shadows from your body, control them, turn into a shadow and merge with them, alter their properties such as blunt or sharp, and are immune to all dark attributes below your level. Eating shadows recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your shadows.
+#(Tag:dragonic)Allows you to transform into and wield the powers of a dark dragon. You generate shadows from your body, control them, turn into a shadow and merge with them, alter their properties such as blunt or sharp, and are immune to all dark attributes below your level. Eating shadows recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your shadows.
 932. White Dragon Slayer, 6.6, Fairy Tail
-#Allows you to transform into and wield the powers of a white dragon. You generate and control Holy Light from your body, alter its properties such as blunt or sharp, and are immune to all Light and Holy attributes below your level. Eating light energy and holy objects recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your light.
+#(Tag:dragonic)(Tag:holy)Allows you to transform into and wield the powers of a white dragon. You generate and control Holy Light from your body, alter its properties such as blunt or sharp, and are immune to all Light and Holy attributes below your level. Eating light energy and holy objects recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your light.
 933. Earth Dragon Slayer, 6.7, Fairy Tail
-#Allows you to transform into and wield the powers of an earth dragon. You generate, control, alter earth such as denser, tougher, and heavier, devour earth, and are immune to earth-based attacks below your level. Devouring earth and rocks recovers vitality and energy based on rock quality, and consuming other magic lets you temporarily incorporate it into your earth.
+#(Tag:dragonic)Allows you to transform into and wield the powers of an earth dragon. You generate, control, alter earth such as denser, tougher, and heavier, devour earth, and are immune to earth-based attacks below your level. Devouring earth and rocks recovers vitality and energy based on rock quality, and consuming other magic lets you temporarily incorporate it into your earth.
 934. Spirit Dragon Slayer, 6.6, Fairy Tail
-#Allows you to transform into and wield the powers of a spirit dragon. You emit and control spiritual energy, alter your soul constructs such as blunt or sharp, shift into spirit form, possess people, and persist as a spirit after death. Devouring souls strengthens and rejuvenates you.
+#(Tag:dragonic)(Tag:spectral)Allows you to transform into and wield the powers of a spirit dragon. You emit and control spiritual energy, alter your soul constructs such as blunt or sharp, shift into spirit form, possess people, and persist as a spirit after death. Devouring souls strengthens and rejuvenates you.
 935. Muscular, 4.2, MHA
 #You can freely increase the density and mass of your muscle fibers, massively increasing explosive power and durability. If fibers exceed what fits under your skin, they cover your body like a second set of muscles. More fibers burn stamina faster.
 936. Rejuvenation, 3.6, Generic
@@ -1895,7 +1895,7 @@
 951. Physical Therapy, 4.1, Generic
 #You convert physical force you exert into positive energy, healing people by hitting them with your body. Greater strength means greater healing. Health healed equals damage that attack would otherwise have inflicted.
 952. Tiamat's Gift, 6.8, Generic
-#"Mother of All Dragons" You can transform yourself and any biological structure you touch into a dragon, and spawn temporary dragon projections from your body. Dragon power and shape depend on skill and energy expended, with greater violations of mass conservation costing more energy. Sentient beings can resist conversion based on strength.
+#(Tag:dragonic)"Mother of All Dragons" You can transform yourself and any biological structure you touch into a dragon, and spawn temporary dragon projections from your body. Dragon power and shape depend on skill and energy expended, with greater violations of mass conservation costing more energy. Sentient beings can resist conversion based on strength.
 953. Hands of Time, 5.5, Generic
 #You can reverse or accelerate an object's time by touch, withering a tree or turning it into a sapling. Stronger targets have their time altered more slowly.
 954. Shadows of Time, 5.3, Generic
@@ -1903,7 +1903,7 @@
 955. Bloody Lust, 6.6, Generic
 #"You are enjoying this far too much" Your lust for violence is insatiable. When hurt, you recover energy proportional to damage taken, and recover health proportional to damage you deal. You are an eternal engine of battle.
 956. Infernal Engine, 4.6, Generic
-#Your heart is an Infernal Engine. When activated, regeneration increases and you can wield Hellflames. But it heats your body the longer it runs, and greater heat makes it more effective. Beware overheating and burning yourself with your own Hellflames.
+#(Tag:demonic)(Tag:unholy)Your heart is an Infernal Engine. When activated, regeneration increases and you can wield Hellflames. But it heats your body the longer it runs, and greater heat makes it more effective. Beware overheating and burning yourself with your own Hellflames.
 957. Blacklight, 7.4, Generic
 #Your body is entirely the Blacklight Virus. You can freely shapeshift down to the cellular level, absorb biological matter to grow stronger and analyze and replicate its composition, and gain all memories of targets whose brains you consume.
 958. Rule Breaker, 6.4, Generic
@@ -1943,7 +1943,7 @@
 975. Web Slinger, 2.1, Generic
 #You can shoot sticky, durable spider-web ropes from your body. They dissolve naturally after an hour.
 976. Drake Form, 3.2, Generic
-#You can take the form of a fire-breathing drake or hybrid at will. As a lesser dragon, it grants increased physical abilities, flight, and fire breath.
+#(Tag:dragonic)You can take the form of a fire-breathing drake or hybrid at will. As a lesser dragon, it grants increased physical abilities, flight, and fire breath.
 977. Klyntar Form, 6.0, Marvel
 #You can transform into a Klyntar, a symbiotic amorphous race that merges with biological matter and assumes their characteristics. Bonding with or taking over a host lets you share their powers while granting them your power and physical abilities. In this form you are highly vulnerable to loud noises and fire.
 978. Psychometry, 3.0, Saiki K.
@@ -1983,9 +1983,9 @@
 995. Time Accel, 4.0, Fate
 #You can speed up your own body's time in 2x, 3x, 4x increments. Greater acceleration puts more strain on body and mind.
 996. Divine Blade, 5.9, Generic
-#You can conjure a sword of Divine Light and alter its shape. It is lightweight yet unbelievably sharp and durable, and burns struck targets with purifying holy flames. At the wielder's will, it cannot hurt even a fly despite full-power swings.
+#(Tag:holy)You can conjure a sword of Divine Light and alter its shape. It is lightweight yet unbelievably sharp and durable, and burns struck targets with purifying holy flames. At the wielder's will, it cannot hurt even a fly despite full-power swings.
 997. Soul Bet, 3.0, JoJo
-#Inspired by the Fae. If you get people to wager their souls in a bet, you can claim the prize, extracting their souls and taking possession of them. It works only if the opponent internally acknowledges defeat.
+#(Tag:fae)Inspired by the Fae. If you get people to wager their souls in a bet, you can claim the prize, extracting their souls and taking possession of them. It works only if the opponent internally acknowledges defeat.
 998. Martyr, 3.9, Generic
 #You can take others' burdens onto yourself. By touching them, you transfer their injuries, exhaustion, curses, sicknesses, and other ailments to yourself.
 999. Reroll, 3.6, Generic
@@ -2045,7 +2045,7 @@
 1026. Apothecary Physique, 5.8, Generic
 #Apothecary Physique lets you manipulate your body's interior to reproduce any consumed chemical or digestible item's effects, like health, mana, iron-skin, or night-vision potions, as long as it was Epic rank or below. It also grants complete control over your biochemistry.
 1027. Seraph Tracers, 5.0, Calamity Mod
-#"At the speed of heaven" You can manifest Seraphic wings, amplifying speed and granting free high-speed flight. While manifest, you resist mundane environmental effects below Epic rank — swimming in lava, walking on water or through natural fire, ignoring fall damage, breathing in space, etc. The wings are superhumanly strong, easily bisecting people and scaling with physical stats.
+#(Tag:holy)"At the speed of heaven" You can manifest Seraphic wings, amplifying speed and granting free high-speed flight. While manifest, you resist mundane environmental effects below Epic rank — swimming in lava, walking on water or through natural fire, ignoring fall damage, breathing in space, etc. The wings are superhumanly strong, easily bisecting people and scaling with physical stats.
 1028. Nebula Mantle, 3.6, Calamity Mod
 #"The very stars guide your flight" You can manifest cosmic wings granting fast flight without existing in physical space. While active they resonate with cosmic energies, boosting all spell power and accelerating energy recovery closer to night.
 1029. Icarus' Folly, 3.5, Generic
@@ -2153,9 +2153,9 @@
 1080. Garm Physique, 6.7, God of War
 #You can transform into Garm or a Garm hybrid, gaining immense physical abilities and terrifying presence. Your teeth and claws tear even dimensional fabric, creating portals and breaking boundaries.
 1081. Ghost Ammunition, 2.7, Generic
-#(Tech) Allows you to conjure ghost ammunition for your weapons that mimics normal ammo but costs energy and disappears 1 second after hitting.
+#(Tag:spectral)(Tech) Allows you to conjure ghost ammunition for your weapons that mimics normal ammo but costs energy and disappears 1 second after hitting.
 1082. Spectre Ammo, 3.5, Generic
-#(Tech) Allows you to conjure spectre ammunition from energy for held weapons, mimicking normal ammo. You can imbue them for more power and combine them with other abilities for special properties.
+#(Tag:spectral)(Tech) Allows you to conjure spectre ammunition from energy for held weapons, mimicking normal ammo. You can imbue them for more power and combine them with other abilities for special properties.
 1083. Tinker - Gel, 5.7, Generic
 #(Tech) Allows you to build gel-related technology like super lubricant, impact absorption gel, hardening gel, restraint gel, fire retardant gel, and gel bombs.
 1084. Tinker - Crystals, 6.5, Generic
@@ -2297,13 +2297,13 @@
 1152. Hive Lord, 5.7, Generic
 #You can transform to take on and mix-match traits of any Earth insect. Manifest features like a scorpion's tail and venom, dragonfly wings, cockroach resilience, and more.
 1153. Hell Flame, 3.5, Generic
-#Conjure and shape infernal flames used by demons. They are especially strong against living beings, burning vitality with flesh while weakening them and hindering healing via their unholy attribute. Rather energy-intensive unless you are an Infernal.
+#(Tag:demonic)(Tag:unholy)Conjure and shape infernal flames used by demons. They are especially strong against living beings, burning vitality with flesh while weakening them and hindering healing via their unholy attribute. Rather energy-intensive unless you are an Infernal.
 1154. Greater Hell Flame, 4.5, Generic
-#Conjure and shape potent infernal flames used by high-ranking demons. Very hot and effective against living beings, they stick like glue and curse what they burn to hinder healing. Rather energy-intensive unless you are an Infernal.
+#(Tag:demonic)(Tag:unholy)Conjure and shape potent infernal flames used by high-ranking demons. Very hot and effective against living beings, they stick like glue and curse what they burn to hinder healing. Rather energy-intensive unless you are an Infernal.
 1155. Holy Light, 3.5, Generic
-#Conjure and shape Holy Light used by Angels as balls of light, energy blasts, or blades of light. It sets Infernal, Unholy, or Necrotic targets alight with holy flames, but deals significantly less damage otherwise. (A/N: Holy Light is NOT light speed despite the name).
+#(Tag:holy)Conjure and shape Holy Light used by Angels as balls of light, energy blasts, or blades of light. It sets Infernal, Unholy, or Necrotic targets alight with holy flames, but deals significantly less damage otherwise. (A/N: Holy Light is NOT light speed despite the name).
 1156. Greater Holy Light, 4.5, Generic
-#Conjure and shape searing Holy Light used by high-ranking Angels, or call it down from the sky. It sets Infernal, Unholy, or Necrotic opponents alight on contact, burns away same-attribute attacks and curses, and spares anything you do not wish to hurt. Significantly reduced potency otherwise. (A/N: Holy Light is NOT light speed despite the name).
+#(Tag:holy)Conjure and shape searing Holy Light used by high-ranking Angels, or call it down from the sky. It sets Infernal, Unholy, or Necrotic opponents alight on contact, burns away same-attribute attacks and curses, and spares anything you do not wish to hurt. Significantly reduced potency otherwise. (A/N: Holy Light is NOT light speed despite the name).
 1157. Star of Change, 4.8, Generic
 #Temporarily change your race to any Race Change trait in the gacha ranked Rare or below while active. You can only transform into one race at a time.
 1158. Argonaut, 5.5, Danmachi
@@ -2333,7 +2333,7 @@
 1170. Edict, 4.8, Generic
 #Impose rules by touching targets and expending energy; targets feel incredible mental compulsion to follow them, like forbidding milk, forcing travel at set times, or banning clothes in a room. Stronger targets are harder to affect, and edicts against self-preservation are exponentially harder.
 1171. Phantom Sensation, 3.3, Generic
-#(Noncon) Project sensations of actions onto someone in your line of sight without physically affecting them. You can project groping, licking, scratching, choking, burning, stabbing, hanging, etc., provided you could do those things without the ability.
+#(Tag:spectral)(Noncon) Project sensations of actions onto someone in your line of sight without physically affecting them. You can project groping, licking, scratching, choking, burning, stabbing, hanging, etc., provided you could do those things without the ability.
 1172. Mind Blast, 2.5, Generic
 #Send a wave of shimmering psionic energy through your eyes. On hitting a sentient target it causes mental damage, confusion, and painful headaches. Effectiveness depends on the target's mental and magical power.
 1173. Geass - Command, 5.4, Code Geass
@@ -2361,9 +2361,9 @@
 1184. Summon Greater Fire Elemental, 5.2, Generic
 #Conjure powerful Greater Fire Elementals from your energy and command them, such as Firebirds, Greater Efreets, Flame Devourers, etc., using fire-based magic and other abilities. Limited to Elite Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 1185. Summon Lesser Demon, 3.9, Generic
-#Summon Lesser Demons from the Underworld to serve and obey you, such as Imps, Capra Demons, Demon Eyes, etc., limited to Uncommon Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Uncommon Demon, sacrifice of an Uncommon target. Permanent demons no longer need your energy.
+#(Tag:demonic)Summon Lesser Demons from the Underworld to serve and obey you, such as Imps, Capra Demons, Demon Eyes, etc., limited to Uncommon Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Uncommon Demon, sacrifice of an Uncommon target. Permanent demons no longer need your energy.
 1186. Summon Demon, 4.9, Generic
-#Summon Demons from the Underworld to serve and obey you, such as Demons, Succubi/Incubi, Taurus Demons, etc., limited to Rare familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Elite Demon, sacrifice of an Elite Target. Permanent demons no longer need your energy.
+#(Tag:demonic)Summon Demons from the Underworld to serve and obey you, such as Demons, Succubi/Incubi, Taurus Demons, etc., limited to Rare familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Elite Demon, sacrifice of an Elite Target. Permanent demons no longer need your energy.
 1187. Summon Fiend, 5.9, Generic
 #Summon Fiends from the Underworld, a nobler variant of demons, to serve and obey you, such as Fiends, Greater Succubi/Incubi, Oni (Fate), Soul Eaters (Overlord), etc., limited to Elite Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Elite Demon, sacrifice of an Elite Target. Permanent demons no longer need your energy.
 1188. Summon Archfiend, 6.6, Generic
@@ -2377,15 +2377,15 @@
 1192. Call to Arms, 4.3, Generic
 #(Gacha) Call to Arms rolls the familiar gacha to temporarily grant you a familiar fighting by your side for 1 hour, then it disappears. At 1 Ability Slot you pull Bronze, 2 slots = Silver, 3 slots = Gold, 4 Slots = Platinum, capping at 5 slots = Diamond. 24 Hour cooldown.
 1193. Summon Angelic Guardian, 3.5, Generic
-#Temporarily summon a low-ranking Angel or Holy Spirit from the Heavenly Realm, such as Lesser Light Fairy, Angel Guardians, Archangel Flames (Overlord), 2 Winged Angels, etc., limited to Uncommon familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+#(Tag:fae)(Tag:holy)Temporarily summon a low-ranking Angel or Holy Spirit from the Heavenly Realm, such as Lesser Light Fairy, Angel Guardians, Archangel Flames (Overlord), 2 Winged Angels, etc., limited to Uncommon familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 1194. Summon Angel, 4.4, Generic
-#Temporarily summon a lower-ranking Angel or Holy Spirit from the Heavenly Realm, such as Light Fairies, Pixies, Unicorns, Principalities, 4 Winged Angels, etc., limited to Rare familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+#(Tag:fae)(Tag:holy)Temporarily summon a lower-ranking Angel or Holy Spirit from the Heavenly Realm, such as Light Fairies, Pixies, Unicorns, Principalities, 4 Winged Angels, etc., limited to Rare familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 1195. Summon Principality, 5.4, Generic
-#Temporarily summon a middle-ranked Angel or Holy Spirit from the Heavenly Realm, such as Noble Light Spirits, Principalities, Valkyries, 6 Winged Angels, etc., limited to Elite familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+#(Tag:holy)Temporarily summon a middle-ranked Angel or Holy Spirit from the Heavenly Realm, such as Noble Light Spirits, Principalities, Valkyries, 6 Winged Angels, etc., limited to Elite familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 1196. Summon Dominion, 6.7, Generic
-#Temporarily summon a very high-ranked Angel or Holy Spirit from the Heavenly Realm, such as Light Spirit Lords, Dominions, 8 Winged Angels, Archangels (Hota), Valkyrie Chiefs, etc., limited to Epic familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+#(Tag:holy)Temporarily summon a very high-ranked Angel or Holy Spirit from the Heavenly Realm, such as Light Spirit Lords, Dominions, 8 Winged Angels, Archangels (Hota), Valkyrie Chiefs, etc., limited to Epic familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 1197. Heavenly Gate, 7.7, Generic
-#Temporarily call forth Heavenly Realm armies, swarms of lower angels or great guardian angels and light spirits, such as Empresses of Light, Thrones, 10 Winged Angels, etc., limited to Legendary familiar power or less. Bound to your will, they need your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+#(Tag:holy)Temporarily call forth Heavenly Realm armies, swarms of lower angels or great guardian angels and light spirits, such as Empresses of Light, Thrones, 10 Winged Angels, etc., limited to Legendary familiar power or less. Bound to your will, they need your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 1198. Familiar Manifestation, 2.6, Generic
 #Temporarily call upon a limb or body part of a familiar you own to use as an attack. The familiar itself takes no damage.
 1199. Kill Process, 7.0, Generic
@@ -2395,7 +2395,7 @@
 1201. Corpus Weapon, 2.6, Generic
 #Imbue a held weapon or your limbs with necrotic energy. It amplifies attacks, hinders healing, and directly hurts vitality, dealing extra damage to living targets by exhausting vitality. You can also throw it as a projectile from weapon or fist.
 1202. Necrotic Weapon, 3.7, Generic
-#Imbue a held weapon or your limbs with withering necrotic energy. It amplifies attacks; wounds on living beings inflict spreading necrosis and rigor mortis if held long enough, while inanimate targets corrode and decay. You can also throw it as a projectile or temporarily extend the weapon beyond range.
+#(Tag:undead)Imbue a held weapon or your limbs with withering necrotic energy. It amplifies attacks; wounds on living beings inflict spreading necrosis and rigor mortis if held long enough, while inanimate targets corrode and decay. You can also throw it as a projectile or temporarily extend the weapon beyond range.
 1203. Dread Blade, 4.6, Generic
 #Suffuse weapons or limbs with potent Necrotic and Darkness energies, amplifying destruction based on energy expended. Living wounds are cursed to hinder healing and spread worsening necrosis and weakness per resistance, while inanimate objects corrode, wither, and degrade. You can also fire projectiles like flying slashes or temporarily extend the weapon.
 1204. Gravelords Blade, 5.4, Generic
@@ -2403,17 +2403,17 @@
 1205. Ruin Edge, 6.8, Generic
 #Suffuse any armament or your body with cursed ruinous energies. They massively amplify destruction and decay whatever they strike, whether magic, physical defences, space, or nebulous targets. Living wounds gain Ruin Curse, unhealable unless lifted, causing continuous weakening and pain that you can always track, with a chance to instantly kill weaker targets, costing energy to maintain. Inanimate targets are corroded to dust unless toughest. You can also fire projectiles, extend the weapon, or manifest a pure-energy weapon for extra cost.
 1206. Lesser Animate Undead, 3.4, Generic
-#Imbue a corpse with Necrotic energy to reanimate it as a lesser undead under your command, such as skeletons, zombies, wights, etc., at most as strong as an Uncommon familiar. Quality and power depend on corpse quality, corpse strength, and your power; stronger undead cost more energy. The number you can control scales with energy reserves.
+#(Tag:undead)Imbue a corpse with Necrotic energy to reanimate it as a lesser undead under your command, such as skeletons, zombies, wights, etc., at most as strong as an Uncommon familiar. Quality and power depend on corpse quality, corpse strength, and your power; stronger undead cost more energy. The number you can control scales with energy reserves.
 1207. Animate Undead, 4.3, Generic
-#Animate corpses into undead such as Death Knights, Death Warriors, Undead Mages, Lesser Vampires, Wraiths, Bone Wyverns, or an undead version of the corpse, limited to Rare Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 100 at once.
+#(Tag:undead)Animate corpses into undead such as Death Knights, Death Warriors, Undead Mages, Lesser Vampires, Wraiths, Bone Wyverns, or an undead version of the corpse, limited to Rare Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 100 at once.
 1208. Greater Animate Undead, 5.5, Generic
-#Animate corpses into undead such as Dread Knights, Liches, Vampires, Wraiths, Soul Eaters, Bone Dragons, or an undead version of the corpse, limited to Elite Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 500 at once.
+#(Tag:undead)Animate corpses into undead such as Dread Knights, Liches, Vampires, Wraiths, Soul Eaters, Bone Dragons, or an undead version of the corpse, limited to Elite Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 500 at once.
 1209. True Necromancy, 6.8, Generic
-#Enact true necromancy sanctioned by Death itself to raise corpses into undead such as Gravelords, Night Liches, Vampire Lords, Nightmare Kings, Undead Dragons, Corpse Titans, or an undead version of the corpse, limited to Epic Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 2500 at once.
+#(Tag:undead)Enact true necromancy sanctioned by Death itself to raise corpses into undead such as Gravelords, Night Liches, Vampire Lords, Nightmare Kings, Undead Dragons, Corpse Titans, or an undead version of the corpse, limited to Epic Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 2500 at once.
 1210. Exalted Necromancy, 7.8, Generic
-#Perform Exalted Necromancy beyond merely raising the Dead, raising corpses into undead such as Necro Kaisers, Overlords, Vampire Kings, Undead Dragon Lords, Reapers, etc., or an undead version of the corpse, limited to Legendary Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 10000 at once.
+#(Tag:undead)Perform Exalted Necromancy beyond merely raising the Dead, raising corpses into undead such as Necro Kaisers, Overlords, Vampire Kings, Undead Dragon Lords, Reapers, etc., or an undead version of the corpse, limited to Legendary Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 10000 at once.
 1211. Divinity Necromancy, 8.5, Generic
-#Wield divinity to use the dead as army and servants; you can turn even an average man's corpse into an Undead Dragon or Gravelord. You can animate any corpse into a True Undead keeping all abilities and memories from life and further empowered by your divinity, as long as it is dead. Power and number scale with your power, with up to 100000 controllable even as a base human.
+#(Tag:undead)Wield divinity to use the dead as army and servants; you can turn even an average man's corpse into an Undead Dragon or Gravelord. You can animate any corpse into a True Undead keeping all abilities and memories from life and further empowered by your divinity, as long as it is dead. Power and number scale with your power, with up to 100000 controllable even as a base human.
 1212. Authority of Death, 9.4, Generic
 #Wield the Authority of Death, the End. Merely point to claim lives; claiming lives and resurrecting the dead is easier than breathing. You can even kill unkillable targets by granting the concept of death. Stronger targets cost more energy.
 1213. Divinity Earth, 8.4, Generic
@@ -2611,11 +2611,11 @@
 1309. Pyronite Form, 6.1, Ben 10
 #Temporarily transform into a Pyronite or hybrid at will, gaining boosted physical stats, durability, and energy-scaling natural pyrokinesis. Greatly boosts Fire Affinities but disables Ice/Water abilities.
 1310. Ectonurite Form, 7.0, Ben 10
-#Temporarily transform into an Ectonurite or hybrid at will, manipulating body protoplasm to fly and turn incorporeal. While incorporeal can possess weaker-willed living beings, but deathly weak to sunlight and electricity.
+#(Tag:spectral)Temporarily transform into an Ectonurite or hybrid at will, manipulating body protoplasm to fly and turn incorporeal. While incorporeal can possess weaker-willed living beings, but deathly weak to sunlight and electricity.
 1311. Vulpimancer Form, 3.0, Ben 10
 #Temporarily transform into a Vulpimancer or hybrid at will, a large brutish canine with greater physicality, keen smell, and echolocation. Vulnerable to high-pitched noise, flames, and bestial instincts.
 1312. Necrofriggan Form, 6.5, Ben 10
-#Temporarily transform into a Necrofriggan or hybrid at will, a winged cryokinetic moth-like alien with superhuman physique and flight. Freeze on touch, exhale freezing wind, phase intangible while freezing, and resist extreme temperatures.
+#(Tag:undead)Temporarily transform into a Necrofriggan or hybrid at will, a winged cryokinetic moth-like alien with superhuman physique and flight. Freeze on touch, exhale freezing wind, phase intangible while freezing, and resist extreme temperatures.
 1313. Petrosapien Form, 6.2, Ben 10
 #Temporarily transform into a Petrosapien or hybrid at will, a living crystalline silicon alien with enhanced strength and extreme durability. Grow body crystals as weapons or from the ground, and with experience telekinetically control them for energy.
 1314. Volann Form, 3.1, Ben 10
@@ -2669,9 +2669,9 @@
 1338. Deep Dredge, 4.1, Generic
 #Summon deep abominations — tentacles, maws, spikes — from any nearby sufficiently large water body to maul enemies. Power scales with energy spent.
 1339. Abyssal Dredge, 6.2, Generic
-#Invoke Abyssal Ones to conjure tentacles, maws, spikes, and temporary deep minions from any nearby water body for energy. Their wounds injure mind and body.
+#(Tag:demonic)(Tag:eldritch)Invoke Abyssal Ones to conjure tentacles, maws, spikes, and temporary deep minions from any nearby water body for energy. Their wounds injure mind and body.
 1340. Ravage of Ryleh, 8.0, Generic
-#Invoke Ryleh's wrath, using any sufficiently large water body as a gateway to summon tentacles, maws, monstrosities, spikes, madness waves, and Deep Kingdom familiars per energy spent.
+#(Tag:eldritch)Invoke Ryleh's wrath, using any sufficiently large water body as a gateway to summon tentacles, maws, monstrosities, spikes, madness waves, and Deep Kingdom familiars per energy spent.
 1341. Acid Rain, 3.2, Generic
 #Summon black clouds raining harsh acid that burns flesh, tarnishes metals, and amplifies Poison abilities in range. Range and potency scale with energy spent.
 1342. Caustic Storm, 4.5, Generic
@@ -2707,11 +2707,11 @@
 1357. Astral Walk, 5.0, Generic
 #Freely project your soul from your body, leaving it comatose while you wander and still use abilities normally. Maintaining ghost form costs energy, more when using abilities.
 1358. Grave Buster, 3.3, Generic
-#Burst skeletal limbs and projections from ground near you — grabbing hands, skewering ribs, defending femurs. Size, quantity, and quality scale with energy spent.
+#(Tag:undead)Burst skeletal limbs and projections from ground near you — grabbing hands, skewering ribs, defending femurs. Size, quantity, and quality scale with energy spent.
 1359. Parthenogenesis, 4.3, Generic
 #"Originally named Babymaker" Create 'Eggs' from your familiars with much energy and time; incubated eggs hatch as their Familiar's child with weaker versions of its abilities that strengthen with growth.
 1360. Morbing, 3.0, Generic
-#Functionally the same as [Vampire Physique (Rare)], but you must shout "I'm beginning to Morb!" or "It's Morbing time!" to use it.
+#(Tag:vampiric)Functionally the same as [Vampire Physique (Rare)], but you must shout "I'm beginning to Morb!" or "It's Morbing time!" to use it.
 1361. Flame Bone of the Starving, 5.1, Kagurabachi
 #Expend energy to summon flaming giant-skeleton parts, e.g. ribs for defense, hands as gauntlets, underground impalers, and even detonatable parts.
 1362. Ganta Gun, 2.0, Deadman Wonderland
@@ -2733,13 +2733,13 @@
 1370. Lunagaron Form, 4.6, Monster Hunter
 #Transform into and maintain a Lunagaron or hybrid for energy: an agile werewolf-like Fanged Beast expelling supercooled mist and icing its body. Gain enhanced physicality, senses, and agility, plus energy-fueled freezing breath and cold armoring ice.
 1371. Velkhana Form, 6.1, Monster Hunter
-#Transform into and maintain a Velkhana or hybrid for energy: a powerful ice Elder Dragon with enhanced physicality, scaly defense, and flight. Breathe flash-freezing supercooled mist, manifest icebergs, and coat yourself in icy armor. Fire abilities unusable, cryokinetics stronger.
+#(Tag:dragonic)Transform into and maintain a Velkhana or hybrid for energy: a powerful ice Elder Dragon with enhanced physicality, scaly defense, and flight. Breathe flash-freezing supercooled mist, manifest icebergs, and coat yourself in icy armor. Fire abilities unusable, cryokinetics stronger.
 1372. Nergigante Form, 6.3, Monster Hunter
-#Transform into and maintain a Nergigante or hybrid for energy: a brute-force Elder Dragon with massively enhanced physicality, dulled pain, boosted Enhancer and Recovery potency, flight, weaponizable body spikes, and limb-regrowing basic regeneration.(No asexual reproduction included).
+#(Tag:dragonic)Transform into and maintain a Nergigante or hybrid for energy: a brute-force Elder Dragon with massively enhanced physicality, dulled pain, boosted Enhancer and Recovery potency, flight, weaponizable body spikes, and limb-regrowing basic regeneration.(No asexual reproduction included).
 1373. Amatsu Form, 6.5, Monster Hunter
-#Transform into and maintain an Amatsu or hybrid for energy: the Calamity of the Skies Elder Dragon. Gain considerable physicality, free flight, and weather control to unleash wind, lightning, water, and ice.
+#(Tag:dragonic)Transform into and maintain an Amatsu or hybrid for energy: the Calamity of the Skies Elder Dragon. Gain considerable physicality, free flight, and weather control to unleash wind, lightning, water, and ice.
 1374. Fatalis Form, 7.0, Monster Hunter
-#Transform into and maintain a Fatalis or hybrid at will: the apex Elder Dragon predator. Gain massively enhanced stats, dragon-element wielding, searing flame breaths (plus Fire and Thunder Dragon Element if strong enough), and enhanced recovery and resilience to survive most lethal wounds.
+#(Tag:dragonic)Transform into and maintain a Fatalis or hybrid at will: the apex Elder Dragon predator. Gain massively enhanced stats, dragon-element wielding, searing flame breaths (plus Fire and Thunder Dragon Element if strong enough), and enhanced recovery and resilience to survive most lethal wounds.
 1375. Ignis Boost, 3.2, Generic
 #While slotted, augment potency and efficiency of all Fire/Heat Based Abilities.
 1376. Hydro Boost, 3.3, Generic
@@ -2887,7 +2887,7 @@
 1447. Timeline Shift, 5.8, Life is Strange
 #Shift yourself between two parallel timelines, carrying objects and consequences across with you.
 1448. Eldritch Constructs, 4.6, MCU
-#Shape Eldritch magic into whips, shields, blades, and bindings that strike spirits as well as soldiers.
+#(Tag:eldritch)Shape Eldritch magic into whips, shields, blades, and bindings that strike spirits as well as soldiers.
 1449. Mirror Dimension, 5.4, MCU
 #Fold yourself and your enemies into the Mirror Dimension, where cities bend and no collateral escapes.
 1450. Chaos Magic, 6.6, MCU
@@ -2895,7 +2895,7 @@
 1451. Probability Hex, 5.0, MCU
 #Hex the odds themselves so the unlikely keeps happening to everyone but you.
 1452. Astral Projection, 3.8, MCU
-#Step out of your body as an astral form to scout unseen while your body sleeps on.
+#(Tag:spectral)Step out of your body as an astral form to scout unseen while your body sleeps on.
 1453. Dreamwalking, 5.8, MCU
 #Possess your own variants across the multiverse by dreamwalking into their bodies.
 1454. Asgardian Illusions, 4.2, MCU

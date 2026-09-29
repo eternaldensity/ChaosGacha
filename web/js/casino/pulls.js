@@ -226,12 +226,13 @@
         C.audio.build();
         if (pk.src) pk.src.lastPrize = null; // window back to category
         const res = pk.res;
+        const tags = (res.tags || []).slice();
         C.G.prizeLog.push({ name: res.name, rarity: res.rarity, category: res.category,
-          source: res.source || "", description: res.description || "", odds: res.odds || 0 });
+          source: res.source || "", description: res.description || "", odds: res.odds || 0, tags });
         const note = C.applyPrize(res);
         const flav = C.flavorShort(res.description);
         C.showCard("[" + C.rarityName(res.rarity) + " " + res.category + "] " + res.name +
-          " (" + res.rarity.toFixed(1) + ")",
+          " (" + res.rarity.toFixed(1) + ")" + (tags.length ? " #" + tags.join(" #") : ""),
           note,
           "Ticket: " + pk.tier + " · odds " + (res.odds || 0).toFixed(2) + "%" +
             (flav ? " · “" + flav + "”" : ""), 6000);

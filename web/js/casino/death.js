@@ -183,7 +183,8 @@
   C.entryText = function (e) {
     const src = e.source ? " [" + e.source + "]" : "";
     const cat = e.category.charAt(0).toUpperCase() + e.category.slice(1);
-    return "[" + e.name + "]\n|Rarity: " + C.rarityName(e.rarity) + " " + cat + src + "|\n" +
+    const tags = (e.tags && e.tags.length) ? " #" + e.tags.join(" #") : "";
+    return "[" + e.name + "]\n|Rarity: " + C.rarityName(e.rarity) + " " + cat + src + tags + "|\n" +
       (e.description || "");
   };
   C.allEntriesText = function () {
@@ -229,7 +230,8 @@
     (G.prizeLog || []).forEach((e, i) => {
       const b = document.createElement("button");
       b.className = "pick sumEntry";
-      b.textContent = "[" + C.rarityName(e.rarity) + " " + e.category + "] " + e.name;
+      b.textContent = "[" + C.rarityName(e.rarity) + " " + e.category + "] " + e.name +
+        ((e.tags && e.tags.length) ? " #" + e.tags.join(" #") : "");
       b.style.borderColor = C.rarityColor(e.rarity);
       b.addEventListener("click", () => C.showSummaryCard(i));
       list.appendChild(b);
@@ -245,10 +247,12 @@
   C.showSummaryCard = function (i) {
     const e = C.G.prizeLog[i];
     if (!e) return;
-    C.ui.sumCardTitle.textContent = "[" + C.rarityName(e.rarity) + " " + e.category + "] " + e.name;
+    C.ui.sumCardTitle.textContent = "[" + C.rarityName(e.rarity) + " " + e.category + "] " + e.name +
+      ((e.tags && e.tags.length) ? " #" + e.tags.join(" #") : "");
     C.ui.sumCardBody.textContent = e.description || "(no description)";
     C.ui.sumCardSub.textContent = "Rarity " + e.rarity.toFixed(1) +
-      (e.source ? " · " + e.source : "") + (e.odds ? " · " + e.odds.toFixed(2) + "% odds" : "");
+      (e.source ? " · " + e.source : "") + (e.odds ? " · " + e.odds.toFixed(2) + "% odds" : "") +
+      ((e.tags && e.tags.length) ? " · #" + e.tags.join(" #") : "");
     C.ui.sumCard.classList.remove("hide");
     C.ui.sumCopyOne.onclick = () => C.copyText(C.entryText(e), C.ui.sumCopyOne);
   };

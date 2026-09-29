@@ -41,17 +41,30 @@ window.ChaosGen = (function () {
     return Math.max(dmin, Math.min(dmax, d));
   }
 
+  function entryTags(e) {
+    return e.tags || e.tg || [];
+  }
+
   function filterEntries(entries, opts) {
     const files = opts.files && opts.files.length ? opts.files
       : ["skill", "trait", "familiar", "item", "ability"];
-    return entries.filter(e =>
-      files.includes(e.f) &&
-      (e.t !== "gacha" || opts.includeGachaOnly) &&
-      (opts.includeNsfw || !e.nsfw) &&
-      (opts.includeNoncon || !e.noncon) &&
-      (opts.rarityMin == null || e.r >= opts.rarityMin) &&
-      (opts.rarityMax == null || e.r <= opts.rarityMax) &&
-      (!opts.sources || !opts.sources.length || opts.sources.includes(e.s)));
+    const wantTags = opts.tag ? [opts.tag]
+      : Array.isArray(opts.tags) && opts.tags.length ? opts.tags : null;
+    const wantLow = wantTags ? wantTags.map(t => String(t).toLowerCase()) : null;
+    return entries.filter(e => {
+      if (!files.includes(e.f)) return false;
+      if (e.t === "gacha" && !opts.includeGachaOnly) return false;
+      if (!opts.includeNsfw && e.nsfw) return false;
+      if (!opts.includeNoncon && e.noncon) return false;
+      if (opts.rarityMin != null && e.r < opts.rarityMin) return false;
+      if (opts.rarityMax != null && e.r > opts.rarityMax) return false;
+      if (opts.sources && opts.sources.length && !opts.sources.includes(e.s)) return false;
+      if (wantLow) {
+        const et = entryTags(e).map(t => String(t).toLowerCase());
+        for (const w of wantLow) if (!et.includes(w)) return false;
+      }
+      return true;
+    });
   }
 
   // onStep(frac, label) is called periodically so the UI can show progress.
@@ -94,8 +107,10 @@ window.ChaosGen = (function () {
         id: idx, file: item.f, number: item.n, name: item.name,
         rarity: item.r, source: item.s, tag: item.t, description: item.d,
         meta: (item.m || []).slice(),
+        tags: entryTags(item).slice(),
         ...(item.nsfw ? { nsfw: true } : {}),
         ...(item.noncon ? { noncon: true } : {}),
+        ...(item.tech ? { tech: true } : {}),
         pos,
         r: Math.round(radial * 1e6) / 1e6
       });
@@ -248,7 +263,7 @@ window.ChaosGen = (function () {
     for (const nd of chosen) outEdges.push({ a: 0, b: nd.id, d: nd.r });
     const root = {
       id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0.0,
-      source: "System", tag: "both", meta: [],
+      source: "System", tag: "both", meta: [], tags: [],
       description: "The Chaos Tree's root. Free to unlock; every other node costs to unlock.",
       pos: [0, 0, 0], r: 0.0
     };

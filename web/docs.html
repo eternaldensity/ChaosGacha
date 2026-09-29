@@ -113,7 +113,7 @@
         <li><b>Wild</b> — off the scale entirely: doing something incomprehensibly random in an extreme situation and coming out on top against all odds anyway.</li>
       </ul>
       <h3>Ticket anatomy</h3>
-      <p>A ticket has a <b>rarity</b> (which pool it pulls from) and a <b>category</b> (ability, item, skill, trait, familiar — or random, which picks one). Some tickets carry a <b>prefix</b> such as Advantage: roll twice, keep the better. The tree app adds traversal tickets — skip, jump, choice-jump, hop — covered under the Chaos Tree tab.</p>
+      <p>A ticket has a <b>rarity</b> (which pool it pulls from) and a <b>category</b> (ability, item, skill, trait, familiar — or random, which picks one). Tickets can also carry an optional <b>theme tag</b> (e.g. <span class="pill">dragonic</span> <span class="pill">undead</span> <span class="pill">holy</span>): the roll then only picks entries carrying that tag. Some tickets carry a <b>prefix</b> such as Advantage: roll twice, keep the better. The tree app adds traversal tickets — skip, jump, choice-jump, hop — covered under the Chaos Tree tab.</p>
       <h3>Which feats earn which categories</h3>
       <ul>
         <li><b>Ability</b> — displays of power, defeating enemies.</li>
@@ -156,7 +156,9 @@
       <h3>What you get</h3>
       <p>Vehicles, locations, and other big entries arrive self-contained and at your disposal: you get the thing itself, functional, without its home setting, apocalypse, or cast unless its description explicitly includes them.</p>
       <h3>Filters &amp; tickets (this version)</h3>
-      <p>Narrow the pool by text, source checkboxes, rarity band, NSFW/Tech toggles (NSFW hides by default), or skip already-rolled results. The <b>ticket wallet</b> holds tickets you spend one at a time; <b>×10</b> does ten quick rolls at once. History, stats, and exports live under their tabs.</p>
+      <p>Narrow the pool by text, source checkboxes, rarity band, <b>theme tag</b> (entries tagged <span class="pill">dragonic</span> <span class="pill">undead</span> <span class="pill">holy</span> etc. — shown as pills on every card), NSFW/Tech toggles (NSFW hides by default), or skip already-rolled results. The <b>ticket wallet</b> holds tickets you spend one at a time (each ticket can also carry its own theme tag, combined with the filter); <b>×10</b> does ten quick rolls at once. History, stats, and exports live under their tabs.</p>
+      <h3>Theme tags (for authors)</h3>
+      <p>Tags live in the gacha definition files as leading tokens: <code>#(Tag:holy) Create and control holy water…</code> or several at once as <code>#(Tag:dragonic)(Tag:undead) …</code> / <code>#(Tags: dragonic, undead) …</code>. Names are lowercase letters/numbers/hyphens (<code>draconic</code> aliases to <code>dragonic</code>). Tagged entries show pills across the gacha, entries, tree, and casino views, and can be rolled/filtered by tag. See <code>tools/tag_entries.py</code> for the curated starter set and its keyword heuristics.</p>
     </div>
   </section>
 

@@ -46,6 +46,17 @@
   // Whole-number rarities display with .0 for consistency.
   const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
 
+  function nodeTags(nd) { return (nd && (nd.tags || nd.tg)) || []; }
+  function allTags() {
+    if (Array.isArray(DATA.tags) && DATA.tags.length) return DATA.tags.slice().sort();
+    const s = new Set();
+    for (const e of (DATA.entries || [])) for (const t of ((e.tags || e.tg) || [])) s.add(t);
+    return [...s].sort();
+  }
+  function tagPills(tags) {
+    return (tags || []).map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ");
+  }
+
   function toast(msg, isErr) {
     const t = $("toast");
     t.textContent = msg;
@@ -363,7 +374,7 @@
   // to the form defaults, mirroring readGenForm.
   function writeGenForm(t) {
     const P = t.params || {}, F = t.filters || {};
-    const set = (id, v) => { $(id).value = v; };
+    const set = (id, v) => { if ($(id)) $(id).value = v; };
     const check = (id, v) => { if ($(id)) $(id).checked = !!v; };
     const num = (v, def) => (v == null || isNaN(parseFloat(v))) ? def : v;
     $("newName").value = ((t.name || "Untitled tree") + " (tweak)").slice(0, 60);
@@ -387,6 +398,11 @@
     document.querySelectorAll(".fFile").forEach(c => { c.checked = files.includes(c.value); });
     set("newRmin", (F.rarityMin != null) ? F.rarityMin : "");
     set("newRmax", (F.rarityMax != null) ? F.rarityMax : "");
+    if ($("newTag")) {
+      const tag = F.tag || (Array.isArray(F.tags) && F.tags[0]) || "";
+      if ([...$("newTag").options].some(o => o.value === tag)) $("newTag").value = tag;
+      else $("newTag").value = "";
+    }
     const srcs = Array.isArray(F.sources) ? F.sources : null;
     document.querySelectorAll(".srcCheck").forEach(c => {
       if (srcs == null || !srcs.length) c.checked = true;
@@ -406,6 +422,7 @@
       .filter(c => c.checked).map(c => c.value);
     const srcs = [...document.querySelectorAll(".srcCheck")]
       .filter(c => c.checked).map(c => c.value);
+    const tag = ($("newTag") && $("newTag").value) || "";
     return {
       name: ($("newName").value.trim() || "Untitled tree").slice(0, 60),
       seed: parseInt($("newSeed").value, 10) || Math.floor(Math.random() * 1e9),
@@ -433,7 +450,8 @@
         sources: srcs,
         includeGachaOnly: !!$("newGachaOnly").checked,
         includeNsfw: !!$("newNsfw").checked,
-        includeNoncon: !!($("newNoncon") && $("newNoncon").checked)
+        includeNoncon: !!($("newNoncon") && $("newNoncon").checked),
+        ...(tag ? { tag } : {})
       }
     };
   }
@@ -962,7 +980,9 @@
       return;
     }
     const hits = c.rt.nodes
-      .filter(nd => nd.id !== 0 && visNode(nd) && nd.name.toLowerCase().includes(q))
+      .filter(nd => nd.id !== 0 && visNode(nd) &&
+        (nd.name.toLowerCase().includes(q) ||
+          nodeTags(nd).some(t => t.toLowerCase().includes(q))))
       .sort((a, b) => a.name.localeCompare(b.name))
       .slice(0, 15);
     if (!hits.length) {
@@ -971,8 +991,10 @@
     }
     for (const nd of hits) {
       const li = document.createElement("li");
+      const tags = nodeTags(nd);
       li.innerHTML = `<div class="grow"><b>#${nd.id} ${esc(nd.name)}</b> ` +
-        `<span class="pill">${esc(nd.file)} ${nd.rarity}</span><br>` +
+        `<span class="pill">${esc(nd.file)} ${nd.rarity}</span>` +
+        (tags.length ? " " + tagPills(tags) : "") + `<br>` +
         `<span class="muted small">${esc(nd.source || "—")}${c.st.unlocked.includes(nd.id) ? " · unlocked" : ""}</span></div>`;
       li.style.cursor = "pointer";
       li.addEventListener("click", () => { selectedId = nd.id; showTab("node"); });
@@ -998,9 +1020,11 @@
   }
   function nodeLine(nd, unl, extra) {
     const cls = classOf(nd.rarity);
+    const tags = nodeTags(nd);
     return `<div><span class="dot" style="background:${esc(cls.color)}"></span>` +
       `<b>#${nd.id} ${esc(nd.name)}</b> <span class="pill">${esc(nd.file)}</span> ` +
-      `<span class="pill">${esc(nd.source || "—")}</span></div>` +
+      `<span class="pill">${esc(nd.source || "—")}</span>` +
+      (tags.length ? " " + tagPills(tags) : "") + `</div>` +
       `<div class="small muted">${esc(cls.name)} · rarity ${nd.rarity} · cost ${unl ? "—" : E.fmt(Math.pow(10, nd.rarity))}` +
       (extra || "") + `</div>` +
       (nd.description ? `<p class="small">${linkify(nd.description)}</p>` : "");
@@ -1159,7 +1183,8 @@
     { key: "file", label: "Cat" },
     { key: "rarity", label: "Rarity" },
     { key: "cost", label: "Cost" },
-    { key: "source", label: "Source" }
+    { key: "source", label: "Source" },
+    { key: "tags", label: "Tags" }
   ];
   function ownedRows(rt, st) {
     const pos = new Map((st.history || []).map((id, i) => [id, i]));
@@ -1191,10 +1216,13 @@
     const q = ($("ownQ").value || "").trim().toLowerCase();
     if (typeof console !== "undefined" && console.log) console.log("DBG renderOwned q=" + JSON.stringify(q) + " unlocked=" + st.unlocked.length);
     const cat = $("ownCat").value || "";
+    const ownTag = ($("ownTag") && $("ownTag").value) || "";
     if (q) rows = rows.filter(r =>
       r.nd.name.toLowerCase().includes(q) ||
-      (r.nd.source || "").toLowerCase().includes(q));
+      (r.nd.source || "").toLowerCase().includes(q) ||
+      nodeTags(r.nd).some(t => t.toLowerCase().includes(q)));
     if (cat) rows = rows.filter(r => r.nd.file === cat);
+    if (ownTag) rows = rows.filter(r => nodeTags(r.nd).includes(ownTag));
     const val = (r) => {
       switch (ownedSort.key) {
         case "order": return r.order;
@@ -1203,6 +1231,7 @@
         case "rarity": return r.nd.rarity;
         case "cost": return r.id === 0 ? -1 : E.nodeCostFor(st, rt, r.id);
         case "source": return (r.nd.source || "").toLowerCase();
+        case "tags": return nodeTags(r.nd).join(",");
         default: return 0;
       }
     };
@@ -1217,19 +1246,21 @@
       tr.style.cssText = "border-top:1px solid var(--line);cursor:pointer";
       const cls = classOf(r.nd.rarity);
       const cost = r.id === 0 ? "—" : E.fmt(E.nodeCostFor(st, rt, r.id));
+      const tags = nodeTags(r.nd);
       tr.innerHTML =
         `<td style="padding:8px">${r.order < 0 ? "★" : r.order + 1}</td>` +
         `<td style="padding:8px"><span class="dot" style="background:${esc(cls.color)}"></span>${esc(r.nd.name)}</td>` +
         `<td style="padding:8px">${esc(r.nd.file)}</td>` +
         `<td style="padding:8px">${r.nd.rarity}</td>` +
         `<td style="padding:8px">${cost}</td>` +
-        `<td style="padding:8px">${esc(r.nd.source || "—")}</td>`;
+        `<td style="padding:8px">${esc(r.nd.source || "—")}</td>` +
+        `<td style="padding:8px">${tags.map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ")}</td>`;
       tr.addEventListener("click", () => { selectedId = r.id; showTab("node"); });
       body.appendChild(tr);
     }
     if (!rows.length) {
       const tr = document.createElement("tr");
-      tr.innerHTML = `<td colspan="6" class="muted" style="padding:8px">No owned nodes match.</td>`;
+      tr.innerHTML = `<td colspan="7" class="muted" style="padding:8px">No owned nodes match.</td>`;
       body.appendChild(tr);
     }
   }
@@ -1576,8 +1607,10 @@
       const cc = E.coreCostFor(st, rt, id);
       const ok = st.cores >= cc && st.points >= cost - E.couponCover(st, cost);
       const li = document.createElement("li");
+      const tags = nodeTags(nd);
       li.innerHTML = `<div class="grow"><b>${esc(nd.name)}</b> ` +
-        `<span class="pill">${esc(nd.file)} ${fmtR(nd.rarity)}</span><br>` +
+        `<span class="pill">${esc(nd.file)} ${fmtR(nd.rarity)}</span>` +
+        (tags.length ? " " + tagPills(tags) : "") + `<br>` +
         `<span class="muted small">${E.fmt(cost)} pts${cc ? " + 1 core" : " · no core"}</span></div>`;
       const b = document.createElement("button");
       b.textContent = "Unlock";
@@ -1687,8 +1720,10 @@
       if (!res.length) ul.innerHTML = "<li class='muted'>No matches.</li>";
       for (const r of res) {
         const li = document.createElement("li");
+        const tags = nodeTags(r.node);
         li.innerHTML = `<div class="grow"><b>#${r.node.id} ${esc(r.node.name)}</b> ` +
-          `<span class="pill">${r.dist} hop${r.dist === 1 ? "" : "s"}</span><br>` +
+          `<span class="pill">${r.dist} hop${r.dist === 1 ? "" : "s"}</span>` +
+          (tags.length ? " " + tagPills(tags) : "") + `<br>` +
           `<span class="muted small">${esc(r.path.map(p => c.rt.byId[p] ? c.rt.byId[p].name : "#" + p).join(" → "))}</span></div>`;
         const go = document.createElement("button");
         go.textContent = "View";
@@ -1849,8 +1884,14 @@
   $("classLegend").appendChild(key);
   $("ownCat").innerHTML = `<option value="">All</option>` +
     E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
+  const tagOpts = `<option value="">All tags</option>` +
+    allTags().map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join("");
+  if ($("ownTag")) $("ownTag").innerHTML = tagOpts;
+  if ($("newTag")) $("newTag").innerHTML = `<option value="">Any tag</option>` +
+    allTags().map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join("");
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });
   $("ownCat").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });
+  if ($("ownTag")) $("ownTag").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });
   try {
     const n = (DATA.entries || []).length;
     $("dataVer").textContent = `data v${DATA.dataVersion || "?"} · ${n} entries`;

@@ -410,6 +410,8 @@ You must also add a description under the item for it to be counted, if you do n
 
 Optional system tags: put `(Gacha)` at the start of a description to make that entry Gacha-only, or `(Tree)` to make it Tree-only. Entries with neither tag appear in both the Gacha and the Chaos Tree.
 
+Thematic tags: put `(Tag:name)` (repeat per tag) or `(Tags: a, b)` at the start of a description to mark what the entry IS — e.g. `#(Tag:dragonic) ...`, `#(Tag:undead)(Tag:holy) ...`. Names are lowercase (`draconic` aliases to `dragonic`). Tagged entries show pills across the site and can be rolled/filtered by tag (gacha filter + ticket theme tag, entries page chips, tree generation filter).
+
 **—Copy—**  
 The copy button copies the current ability or item you have on your screen alongside its rarity and description to your clipboard for you to be able to copy and paste it with ease.
 

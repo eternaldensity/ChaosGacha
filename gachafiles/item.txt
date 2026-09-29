@@ -1,7 +1,7 @@
 1. Gae Bolg, 5.3, Fate
 #Cu Chulainn - Cursed demonic spear crafted from a great beast's skull. Wounds it inflicts never heal except via Legendary rank healing. With Master rank Polearm mastery and practice, unlock its noble phantasms.
 2. Excalibur the Sword of Promised Victory, 7.0, Fate
-#Artoria - Sword of Promised Victory crafted by the fae as humanity's ultimate hope. One of the strongest weapons, bound by 12 restraints that limit its true power.
+#(Tag:fae)Artoria - Sword of Promised Victory crafted by the fae as humanity's ultimate hope. One of the strongest weapons, bound by 12 restraints that limit its true power.
 3. Laevatein, 7.8, Fate
 #Surtr - Sun-like sword of calamity that incinerates all things, prioritizing life above all else. Capable of wiping out all planetary life; even gods are reduced to ashes.
 4. Deep Sea Knight Anchor, 4.8, Black Souls
@@ -9,7 +9,7 @@
 5. Vorpal Blade, 4.0, Black Souls
 #Sword of the Evil Dragon Slaying Rabbit. Against dragons, enhances the wielder's physical stats and ignores a portion of their durability.
 6. Demon Catalyst, 4.8, Black Souls
-#Staff carved from a great demon's bones and soul. Amplifies all spells cast through it by 2x but also doubles their mana consumption.
+#(Tag:demonic)Staff carved from a great demon's bones and soul. Amplifies all spells cast through it by 2x but also doubles their mana consumption.
 7. Astral Injection, 3.5, Calamity Mod
 #Injection of starborn astral blight essence. Massively increases energy regeneration for 10 minutes while tearing and rotting your insides. Restock Timer: 120 hours.
 8. Yharim Stimulants, 4.1, Calamity Mod
@@ -29,9 +29,9 @@
 15. Gram, 6.0, Highschool DxD
 #Strongest Demonic Sword, on par with Durandal and nigh unbreakable. Can emit destructive aura by expending the user's energy and deals massively increased damage to all Dragons.
 16. Durandal, 5.3, Highschool DxD
-#One of the strongest Holy Swords, unbreakable and capable of severing anything. Can release destructive aura by expending the user's energy, but is extremely difficult for inexperienced users.
+#(Tag:holy)One of the strongest Holy Swords, unbreakable and capable of severing anything. Can release destructive aura by expending the user's energy, but is extremely difficult for inexperienced users.
 17. Sword Birth, 5.0, Highschool DxD
-#Sacred Gear created by God that conjures demonic sword constructs with properties based on the user's capability and skill. Cannot create a sword that does something the user cannot do.
+#(Tag:holy)Sacred Gear created by God that conjures demonic sword constructs with properties based on the user's capability and skill. Cannot create a sword that does something the user cannot do.
 18. A skeleton, 0.3, Generic
 #Ordinary human skeleton from a completely ordinary person.
 19. Auric Tesla Armor, 7.0, Calamity Mod
@@ -51,13 +51,13 @@
 26. Tricksters Book of Illusions, 4.3, Generic
 #(Tome) Teaches DnD illusion spells of tricks and illusions. https://dnd5e.wikidot.com/spells:illusion
 27. Dragon Ball, 2.3, Dragon Ball
-#Single Dragon Ball. Gather all 7 to summon Shenron for a wish within his power, or gain any ability below 6.9 rating.
+#(Tag:dragonic)Single Dragon Ball. Gather all 7 to summon Shenron for a wish within his power, or gain any ability below 6.9 rating.
 28. Stone Mask, 4.7, JoJo
 #Stone mask crafted by the Pillar Men. Wearing it while blood is dripped on it transforms the wearer into a vampire.
 29. Stone of Aja, 4.2, JoJo
 #Legendary jewel amplifying hamon and light to extreme levels; worn as a pendant, it strengthens light abilities. Combined with the Stone Mask, it can create a perfect lifeform.
 30. Grimoire of the Twice Dead Death Mage, 5.7, Death Mage
-#(Tome) Grimoire of a twice-died death magician. Teaches death-attribute magic. https://death-mage.fandom.com/wiki/Death-attribute_magic
+#(Tag:undead)(Tome) Grimoire of a twice-died death magician. Teaches death-attribute magic. https://death-mage.fandom.com/wiki/Death-attribute_magic
 31. Grimoire of the White Mage, 4.1, Generic
 #(Tome) Teaches White Magic such as healing, curing, buffs, and warding.
 32. Grimoire of the Pyromancer, 4.3, Generic
@@ -73,7 +73,7 @@
 37. Bar of Vibranium, 5.1, Marvel
 #Bar of pure refined Wakandan Vibranium, ready to process. Absorbs kinetic energy and vibrations, making it nigh unbreakable conventionally. Restock Timer: 168 hours.
 38. Angel Ring, 4.7, Minecraft
-#Ornate gold ring granting flight at the wearer's running speed.
+#(Tag:holy)Ornate gold ring granting flight at the wearer's running speed.
 39. Black Barrel, 7.4, Fate
 #Gun imposing limited life on anything it hits; even absolute immortals become mortal.
 40. Black Key Rites, 4.2, Fate
@@ -151,7 +151,7 @@
 76. Hypnos' Mask, 3.5, Generic
 #Sleeping mask blessed by Hypnos, god of sleep. Wearing it makes sleep perfectly restful, fully recovering energy after 8 uninterrupted hours.
 77. Blade Smith, 5.1, Highschool DxD
-#Sacred Gear created by God that creates holy blade constructs with attributes based on user ability and skill, such as flame-absorbing or poisoning swords.
+#(Tag:holy)Sacred Gear created by God that creates holy blade constructs with attributes based on user ability and skill, such as flame-absorbing or poisoning swords.
 78. Dimension Lost, 8.2, Highschool DxD
 #Longinus created by God, world-destroying with a skilled user. Creates mist serving as inviolable barriers or portals to self-made pocket dimensions, allowing free teleportation of self and others.
 79. Sephiroth Graal, 7.4, Highschool DxD
@@ -159,11 +159,11 @@
 80. Alchemist's Cauldron, 3.6, Generic
 #Large cauldron filling itself with a chosen basic potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, Healing, Minor Regeneration, Stone Skin, etc. Must know the potion (No Elixirs), Rare rank or below.
 81. Dragon Vessel Intermediate, 4.2, Generic
-#Large cauldron filling itself with a chosen intermediate potion once daily: Strength, Agility, Waterbreathing, Healing, Regeneration, Iron Skin, energy recovery, fertility, vitality, etc. Must know the potion (No Elixirs), Elite rank or below.
+#(Tag:dragonic)Large cauldron filling itself with a chosen intermediate potion once daily: Strength, Agility, Waterbreathing, Healing, Regeneration, Iron Skin, energy recovery, fertility, vitality, etc. Must know the potion (No Elixirs), Elite rank or below.
 82. Dragon Vessel Major, 5.3, Generic
-#Large cauldron filling itself with a chosen major potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, greater Healing, greater Regeneration, Iron Skin, dragon breath, etc. Must know the potion (No Elixirs), Epic rank or below.
+#(Tag:dragonic)Large cauldron filling itself with a chosen major potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, greater Healing, greater Regeneration, Iron Skin, dragon breath, etc. Must know the potion (No Elixirs), Epic rank or below.
 83. Absorption Line, 4.7, Highschool DxD
-#Sacred Gear created by God. It allows the user to conjure energy lines that attach to targets to siphon energy. Can also bind opponents or swing like Spider-Man.
+#(Tag:holy)Sacred Gear created by God. It allows the user to conjure energy lines that attach to targets to siphon energy. Can also bind opponents or swing like Spider-Man.
 84. Dreadon's Gaming Chair, 4.9, Calamity Mod
 #(Tech) Incredibly powerful floating chair with more compute than the strongest supercomputers. Flies at supersonic speeds with powerful protective forcefields. The ultimate gaming chair.
 85. Returner's Clock, 4.9, Generic
@@ -229,7 +229,7 @@
 115. Magic Scroll Blizzard, 1.7, Generic
 #Magical scroll invoking a fierce 1 km blizzard centered on the user, harmless to them, lasting 30 minutes. Restock Timer: 8 hours.
 116. Exorcist's Gloves, 1.1, Generic
-#Magical white gloves letting you touch spiritual beings as if solid.
+#(Tag:holy)Magical white gloves letting you touch spiritual beings as if solid.
 117. Tome of Rennala, 4.0, Elden Ring
 #(Tome) Contains Carian Royal family research, teaching Carian Sorceries. Spell List: https://eldenring.wiki.fextralife.com/Carian+Sorceries
 118. Tome of Deathblight, 4.1, Elden Ring
@@ -267,9 +267,9 @@
 134. Lightsaber, 3.1, Star Wars
 #(Tech) A classic Kyber Crystal lightsaber projecting an energy blade. No Force powers needed to use it.
 135. Wand of the Ice Fairy, 4.7, Generic
-#A wand of blue ice crystals that feels pleasantly cool to the touch. Using it as a focus increases cold and ice abilities' and spells' potency while reducing their cost.
+#(Tag:fae)A wand of blue ice crystals that feels pleasantly cool to the touch. Using it as a focus increases cold and ice abilities' and spells' potency while reducing their cost.
 136. Divine Shotgun, 3.5, Generic
-#"Faith in the form of bullets." An unremarkable two-barrel shotgun that consumes your energy/mana to condense holy light bullets per trigger pull. These bullets are lethal to all unholy beings, who cannot heal wounds inflicted by it.
+#(Tag:holy)"Faith in the form of bullets." An unremarkable two-barrel shotgun that consumes your energy/mana to condense holy light bullets per trigger pull. These bullets are lethal to all unholy beings, who cannot heal wounds inflicted by it.
 137. Druid's Living Wand, 3.8, Generic
 #A wand crafted from still-living wood. Channeling nature and healing abilities and spells through it increases their power and reduces their cost.
 138. Movement Ring, 3.9, Generic
@@ -287,9 +287,9 @@
 144. Golden Scales, 6.9, Hunter x Hunter
 #When faced with two choices, these scales tell the user which will be better for the future. Useful for tough decisions like whether to run or fight, take a job offer, or trust someone newly met.
 145. Angel's Breath, 4.8, Hunter x Hunter
-#A golden card that cures all injuries and illnesses below Mythical rank. Single use only.
+#(Tag:holy)A golden card that cures all injuries and illnesses below Mythical rank. Single use only.
 146. Poltergeist's Pillow, 2.5, Hunter x Hunter
-#Sleep on this card to send your spirit exploring at will, unseen and able to pass through solid objects. Ideal for spying or exploration, but you become a real ghost if you fail to return within 24 hours.
+#(Tag:spectral)Sleep on this card to send your spirit exploring at will, unseen and able to pass through solid objects. Ideal for spying or exploration, but you become a real ghost if you fail to return within 24 hours.
 147. X-ray Goggles, 1.9, Hunter x Hunter
 #X-ray goggles for seeing through any wall or object, with a dial to adjust vision depth.
 148. Book of VIP Passes, 3.5, Hunter x Hunter
@@ -317,7 +317,7 @@
 159. Hero's Bandages, 2.1, Generic
 #Sentient bandages that automatically wrap wounds, stopping bleeding and stabilizing broken bones. With training, you can manipulate them yourself.
 160. Fairy Powder, 1.8, Black Souls
-#A bag of Lost Empire fairy powder. Inhaled, it instantly puts victims into deep sleep until injury wakes them. Does not work on people over a tier stronger than you. Restock Timer: 48 hours.
+#(Tag:fae)A bag of Lost Empire fairy powder. Inhaled, it instantly puts victims into deep sleep until injury wakes them. Does not work on people over a tier stronger than you. Restock Timer: 48 hours.
 161. Scrap Iron Candy, 1.4, Black Souls
 #"Tastes like its name." Consuming it bolsters defense for 30 minutes. Restock Timer: 8 hours.
 162. Hlanith Wine, 3.7, Black Souls
@@ -325,7 +325,7 @@
 163. Star Fluid, 5.3, Black Souls
 #A refined drug harvested from star pests beyond the cosmos. Drinking it grants 30 seconds of death-avoiding immortality, but taking more than 2 in a week turns you into a Ghoul. Restock Timer: 480 hours.
 164. Phantom Thief's Mantle, 3.2, Black Souls
-#A crimson mantle of a famous death-defying thief executed by the tyrant. Wearing it grants basic danger sense and enhanced reflexes.
+#(Tag:spectral)A crimson mantle of a famous death-defying thief executed by the tyrant. Wearing it grants basic danger sense and enhanced reflexes.
 165. Evil Eye Ring, 2.2, Black Souls
 #"Did the eye just move?" A gold ring with an eye-shaped ruby that grants minor regeneration when worn.
 166. Hydrogen Bomb, 3.8, Generic
@@ -369,7 +369,7 @@
 185. XIV - Temperance, 1.9, Generic
 #Tarot Card - Grants complete mental clarity and focus, dispelling all negative mental conditions. 48 hour cooldown.
 186. XV - The Devil, 3.5, Generic
-#Tarot Card - Summons infernal chains that restrain and weaken a target, though strong enough targets can break free. 48 hour cooldown.
+#(Tag:demonic)Tarot Card - Summons infernal chains that restrain and weaken a target, though strong enough targets can break free. 48 hour cooldown.
 187. XVI - The Tower, 4.3, Generic
 #Tarot Card - Releases uncontrollable ruinous energy that can destroy entire city blocks, partially ignores durability, and disorients enemies. 120 hour cooldown.
 188. XVII - The Star, 4.3, Generic
@@ -409,7 +409,7 @@
 205. Last Prism, 5.4, Terraria
 #A moon prism. Infusing energy/mana releases incinerating light rays converging into one large laser, or greatly boosts light-based abilities when used as a focus.
 206. Holy Water, 3.2, Generic
-#A large glass vial of 500ml high-quality holy water for rituals or dealing with the unholy. Restock Timer: 4 hours.
+#(Tag:holy)A large glass vial of 500ml high-quality holy water for rituals or dealing with the unholy. Restock Timer: 4 hours.
 207. Golden Cross, 2.6, Generic
 #A golden cross blessed by a powerful angel. Worn around the neck, it wards off evil and curses and burns nearby demonic entities.
 208. Super Absorbent Sponge, 1.4, Terraria
@@ -497,7 +497,7 @@
 249. Canis Lycaon, 6.1, Highschool DxD
 #Canis Lycaon, one of the Longinus created by God, manifests an extremely powerful black wolf avatar wielding a cursed blade and lets the user sprout cursed blades from their body as weapons. With training, the user can wield cursed flames that prevent healing and sprout blades from any shadow in perception range. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 250. True Longinus, 7.4, Highschool DxD
-#The greatest holy spear, containing a piece of God, bears a tremendous holy aura that can utterly annihilate any demonic being weaker than a god. With training, the user can access its variety of forms.
+#(Tag:holy)The greatest holy spear, containing a piece of God, bears a tremendous holy aura that can utterly annihilate any demonic being weaker than a god. With training, the user can access its variety of forms.
 251. Telos Karma, 8.5, Highschool DxD
 #Telos Karma, God's treasure, twists causality and fate to affirm the effect the user wants by altering history. Larger effects and stronger targets consume more energy. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 252. Regulus Nemea, 6.2, Highschool DxD
@@ -521,13 +521,13 @@
 261. Halo of Light, 5.6, Generic
 #An angel's Halo worn like a hat that does not fall off unless removed. While worn, it grants resistance to all ailments, especially Dark and Infernal attacks and effects, greatly boosts Light and Holy abilities, and constantly applies slight healing to the wearer.
 262. Devil Horns, 3.2, Generic
-#A headband shaped as cartoonish devil horns that substantially boosts all Darkness and Infernal abilities and traits while worn.
+#(Tag:demonic)A headband shaped as cartoonish devil horns that substantially boosts all Darkness and Infernal abilities and traits while worn.
 263. Blade of Hatred, 4.0, Generic
 #An old, worn, rusty blade covered in dried blood that is only as strong as it looks unless brandished against a target that has inflicted suffering on the user. Against such targets, it powers up proportionally to all damage they have ever inflicted, reaching legendary strength against a mortal enemy but remaining trash against a first-time opponent.
 264. Brass Knuckles, 0.4, Generic
 #A pair of simple but sturdy brass knuckles.
 265. Ring of the Paladin, 4.2, Generic
-#An enchanted ring of a legendary paladin infused with his prayers that holds 3 charges and recovers 1 charge every hour. Spend a charge to cast a Rare tier Heal, grant one Uncommon tier blessing like strength or agility, or bless an object with holy energy to create holy water or a temporarily blessed weapon effective against the unholy.
+#(Tag:holy)An enchanted ring of a legendary paladin infused with his prayers that holds 3 charges and recovers 1 charge every hour. Spend a charge to cast a Rare tier Heal, grant one Uncommon tier blessing like strength or agility, or bless an object with holy energy to create holy water or a temporarily blessed weapon effective against the unholy.
 266. Earplugs, 1.0, Generic
 #A pair of simple earplugs that completely blocks the wearer's hearing while worn.
 267. Second Face, 2.4, Generic
@@ -545,17 +545,17 @@
 273. Sword of Judgement, 3.8, Hota
 #A divinely blessed sword that imbues great might and magical power and boosts holy and light abilities when used as a focus. It also fills the user with righteous rage, driving them berserk against unholy and undead beings unless tamed.
 274. The Armageddon Blade, 5.4, Hota
-#The mythical Blade of Armageddon that imbues great power but burns to touch and boosts fire and unholy abilities when used as a focus. The user can expend energy to call down Armageddon, raining hellfire from the skies onto the mortal world.
+#(Tag:unholy)The mythical Blade of Armageddon that imbues great power but burns to touch and boosts fire and unholy abilities when used as a focus. The user can expend energy to call down Armageddon, raining hellfire from the skies onto the mortal world.
 275. Sword of Hellfire, 3.3, Hota
-#A sword forged and bathed in hellfire whose blade can be wreathed in violent flames by expending energy. It boosts fire abilities when used as a focus.
+#(Tag:unholy)A sword forged and bathed in hellfire whose blade can be wreathed in violent flames by expending energy. It boosts fire abilities when used as a focus.
 276. Angellic Alliance, 6.0, Hota
-#A divine heavenly sword that greatly increases the wielder's physical and magical abilities, strengthens and inspires any army or allies under their command, and boosts holy and light abilities when used as a focus. The user can also expend energy to grant any blessing of Rare tier or below.
+#(Tag:holy)A divine heavenly sword that greatly increases the wielder's physical and magical abilities, strengthens and inspires any army or allies under their command, and boosts holy and light abilities when used as a focus. The user can also expend energy to grant any blessing of Rare tier or below.
 277. Titans Thunder, 5.5, Hota
 #A thunder sword granting the power and might of giants, including extreme physical strength and the ability to rain down thunder by expending energy. It enhances lightning-based abilities when used as a focus.
 278. Armor of the Dammed, 5.8, Hota
 #Pitch-black armor with a demonic visage worn by the most wicked conquerors that augments physical abilities and amplifies darkness-based abilities when used as a focus. With training, it can unleash massive-scale curses like slow, misfortune, and weakness to debilitate entire armies.
 279. Power of the Dragon Father, 5.3, Hota
-#Armor crafted from a mighty dragon's corpse that imbues great physical might and extreme magic resistance through its scales.
+#(Tag:dragonic)Armor crafted from a mighty dragon's corpse that imbues great physical might and extreme magic resistance through its scales.
 280. Spellbinders Hat, 5.7, Hota
 #A legendary archwizard's hat containing echoes of his spells that grants Dimensional Door (100 km portal), Fly (fly at land speed), Magic Mirror (reflect magic back), Implosion (severe explosive damage), and Summon Elemental (summon a chosen elemental roughly as strong as you for 30 minutes). This artifact holds 3 charges at a time and recovers 1 charge every 8 hours.
 281. Admirals Hat, 4.9, Hota
@@ -565,7 +565,7 @@
 283. Cape of Velocity, 3.8, Hota
 #A cape that makes the wearer faster while worn.
 284. Cloak of the Undead King, 5.3, Hota
-#The legendary undead king's cloak that boosts all necromancy and soul-based abilities and removes the limit on undead controlled at once while worn.
+#(Tag:undead)The legendary undead king's cloak that boosts all necromancy and soul-based abilities and removes the limit on undead controlled at once while worn.
 285. Charm of Eclipse, 3.4, Hota
 #A mystical charm emitting an aura that inflicts magical interference on those around the user, reducing their magical capabilities.
 286. Wizards Well, 4.9, Hota
@@ -591,7 +591,7 @@
 296. Orb of Vulnerability, 5.2, Hota
 #A magical orb that lets its holder bypass immunities and resistances, such as harming living fire or poisoning a hydra.
 297. Angel Feather Arrows, 3.4, Hota
-#A quiver of infinite angel-feather-fletched arrows that retain maximum speed in flight until hitting a target.
+#(Tag:holy)A quiver of infinite angel-feather-fletched arrows that retain maximum speed in flight until hitting a target.
 298. Vial of Lifeblood, 3.6, Hota
 #A vial of condensed vitality in blood form that grants enhanced vitality, minor healing, and increased lifespan when drunk.
 299. Elixir of Life, 6.2, Hota
@@ -613,9 +613,9 @@
 307. Pyre, 5.3, Hota
 #An ash altar that births firebirds and phoenixes loyal to you as its owner when given enough wealth and energy sacrifices.
 308. Dragon's Hoard, 5.9, Generic
-#- A cave with ideal dragon living conditions and plenty of treasure. Take its gold and gems for yourself or use it as storage for your valuables, which none can enter without your permission.
+#(Tag:dragonic)- A cave with ideal dragon living conditions and plenty of treasure. Take its gold and gems for yourself or use it as storage for your valuables, which none can enter without your permission.
 309. Dragon Utopia, 7.7, Hota
-#A gigantic castle with ideal living conditions for practically any dragon, housing a horde of various loyal dragons. You can admit other dragons in exchange for servitude.
+#(Tag:dragonic)A gigantic castle with ideal living conditions for practically any dragon, housing a horde of various loyal dragons. You can admit other dragons in exchange for servitude.
 310. Hydra Pond, 4.8, Hota
 #A large, incredibly poisonous swampy pond populated by Hydra loyal to you as its owner.
 311. Nymph Waterfall, 2.4, Hota
@@ -687,9 +687,9 @@
 344. Tome of Orbeck, 4.7, Dark Souls
 #(Tome) Orbeck of Vinheim's tome of research and anecdotes teaching all his spells. | Spell List: https://darksouls.fandom.com/wiki/Orbeck_of_Vinheim#Wares
 345. Rites of the Dragon Communion, 5.4, Elden Ring
-#(Tome) Church rites for communing with great dragons to borrow their powers for miracles. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Communion+Incantations
+#(Tag:dragonic)(Tome) Church rites for communing with great dragons to borrow their powers for miracles. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Communion+Incantations
 346. Rites of the Dragon Cult, 4.9, Elden Ring
-#(Tome) Dragon Cult rites teaching miracles that imitate the great dragons' power. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Cult+Incantations
+#(Tag:dragonic)(Tome) Dragon Cult rites teaching miracles that imitate the great dragons' power. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Cult+Incantations
 347. Capsule Case, 4.7, Dragon Ball
 #(Tech) A case of 20 Capsule Corp capsules holding a house, fridge, oven, large preserved food stores, boat, high-tech motorcycle, etc. Any slightly upgraded mundane appliance or vehicle counts as a capsule here. Restock Timer: 48 hours.
 348. Rites of the Erdtree, 5.2, Elden Ring
@@ -727,19 +727,19 @@
 364. Sahelanthropus, 5.1, Metal Gear
 #(Tech) A nuclear-armed bipedal tank modified for a human operator, armed with a high-power railgun, guided missile launchers, retractable flexible nanofiber HF blades, and independent sensory drones deploying explosives, flamethrowers, and high-caliber machine guns. Its depleted uranium armor can be enriched by its internal reactor and detonated as a nuclear explosion. Ammo and missiles restock every 24 hours, and it self-repairs via nanomachines.
 365. Twilight Healing, 4.8, Highschool DxD
-#A Sacred Gear created by God manifesting as ornate rings that convert your energy into neutral healing energy for yourself or others, with potency scaling to energy expended.
+#(Tag:holy)A Sacred Gear created by God manifesting as ornate rings that convert your energy into neutral healing energy for yourself or others, with potency scaling to energy expended.
 366. Gravity Jail, 3.8, Highschool DxD
-#A Sacred Gear created by God manifesting as glowing Magical Eyes that expend energy to increase gravity on any location or target in your line of sight. When taken from inventory, it appears as a marble that fuses with whoever swallows it.
+#(Tag:holy)A Sacred Gear created by God manifesting as glowing Magical Eyes that expend energy to increase gravity on any location or target in your line of sight. When taken from inventory, it appears as a marble that fuses with whoever swallows it.
 367. Boosted Gear, 7.9, Highschool DxD
-#One of the Longinus created by God housing Ddraig's soul, the Heavenly Dragon of Domination. This gauntlet amplifies your stats by expending stamina, with higher boosts costing more stamina.
+#(Tag:dragonic)One of the Longinus created by God housing Ddraig's soul, the Heavenly Dragon of Domination. This gauntlet amplifies your stats by expending stamina, with higher boosts costing more stamina.
 368. Divine Dividing, 7.8, Highschool DxD
-#One of the Longinus created by God housing Albion's soul, the Heavenly Dragon of Supremacy. These wings grant flight and divide enemies' magical power to replenish your own reserves, venting excess through the wings.
+#(Tag:dragonic)One of the Longinus created by God housing Albion's soul, the Heavenly Dragon of Supremacy. These wings grant flight and divide enemies' magical power to replenish your own reserves, venting excess through the wings.
 369. Holy Collider, 6.0, Calamity Mod
-#A sword carved from the profaned god's corpse that emits divine flame explosions on contact and releases holy flames by expending your energy. Holy and fire abilities are amplified when using it as a focus.
+#(Tag:holy)A sword carved from the profaned god's corpse that emits divine flame explosions on contact and releases holy flames by expending your energy. Holy and fire abilities are amplified when using it as a focus.
 370. Jackal & Casull, 3.7, Hellsing
 #An unwieldy pair of hand-cannon pistols wielded by a certain vampire: white Casull and black Jackal. Each holds 6 rounds of 13mm blessed silver exploding rounds and requires supernatural strength to wield and fire without tearing your arms off. You receive 2 magazines every 24 hours.
 371. Dragon Slayer, 2.6, Berserk
-#A massive dull unwieldy sword larger than a man and supernaturally durable. Having bathed in the blood of countless spirits and astral beings, it can harm and kill the immaterial.
+#(Tag:dragonic)A massive dull unwieldy sword larger than a man and supernaturally durable. Having bathed in the blood of countless spirits and astral beings, it can harm and kill the immaterial.
 372. Wastelanders Survival Kit, 2.5, Fallout
 #(Tech) A true courier's loadout containing Elite Riot Gear, a fully modified Anti-Material Sniper Rifle, Riot Shotgun, .44 Magnum revolver, bowie knife, 5 repair kits, 10 stim packs, 5 doctor's bags, and 200 ammo for each weapon.
 373. The Courier's Stash, 1.5, Fallout
@@ -765,9 +765,9 @@
 383. Baruka's Dagger, 2.9, Solo Leveling
 #An extremely durable, sharp large dagger wielded by a frost elf chieftain. It increases the potency of ice and cold abilities using it as a focus.
 384. Demon King's Daggers, 3.1, Solo Leveling
-#A pair of daggers forged from the demon king's corpse that synchronize with your strength, growing stronger proportionally. They increase the potency of unholy abilities using them as a focus.
+#(Tag:demonic)A pair of daggers forged from the demon king's corpse that synchronize with your strength, growing stronger proportionally. They increase the potency of unholy abilities using them as a focus.
 385. Demon King's Longsword, 4.2, Solo Leveling
-#A giant sword wielded by the demon king that summons devastating thunderstorms with each swing, growing stronger with its user.
+#(Tag:demonic)A giant sword wielded by the demon king that summons devastating thunderstorms with each swing, growing stronger with its user.
 386. Kamish's Wrath, 4.7, Solo Leveling
 #A pair of daggers made from the dragon Kamish, nigh unbreakable and sharper than any artificial blade. They synchronize with your mana to adjust strength, and you can increase their weight at will.
 387. Teleportation Amulet, 4.4, Generic
@@ -781,7 +781,7 @@
 391. Clover Amulet, 4.6, Generic
 #A golden amulet with jade engraved as a 4-leaf clover that grants good luck.
 392. Holy Antidote, 2.6, Generic
-#A vial of powerful holy antidote that cures all diseases and ailments below Legendary rank. Restock Timer: 7 Days.
+#(Tag:holy)A vial of powerful holy antidote that cures all diseases and ailments below Legendary rank. Restock Timer: 7 Days.
 393. Sandevistan, 4.6, Cyberpunk 2077
 #(Tech) A cybernetic spine replacement that massively heightens time perception, slowing time around you while taxing your brain; overuse may cause brain damage. It manifests as a ticket installed instantly on whoever rips it.
 394. Omni Phone, 3.3, Generic
@@ -809,7 +809,7 @@
 405. Heavenly Gale, 7.8, Calamity Mod
 #A divine bow crafted from earth and cosmos essences that converts any nocked arrow into exotic resonance crystals. They summon resonant lightning where they strike, powerful enough to flay gods alive and rend the surface world.
 406. Telluric Gale, 6.2, Calamity Mod
-#A bow crafted from the profaned goddess's remains that converts any nocked arrow into powerful scorching bolts of divine holy flame powered by your energy.
+#(Tag:holy)A bow crafted from the profaned goddess's remains that converts any nocked arrow into powerful scorching bolts of divine holy flame powered by your energy.
 407. The Storm, 4.7, Calamity Mod
 #A bow carved from the storm weaver's remains that converts any nocked arrow into a lightning bolt scaling with its wielder's power.
 408. Hoarfrost Bow, 4.2, Calamity Mod
@@ -865,7 +865,7 @@
 433. Chikage, 2.4, Bloodborne
 #An exceptional, incredibly durable katana wielded by Annalise's royal Vileblood guards. Its engraved runes let you sink the blade into your flesh to imbue it with vital essence and amplify its power. While wielding it, all Necromancy and Blood-based abilities are amplified.
 434. Holy Moonlight Sword, 4.0, Bloodborne
-#An ancient sword wielded by Ludwig that expends your energy to channel the abyssal cosmos and wreathe itself in moonlight for amplified power. You can expel the moonlight for stronger strikes, release energy bursts, or channel your own powers through it for boosted power.
+#(Tag:holy)An ancient sword wielded by Ludwig that expends your energy to channel the abyssal cosmos and wreathe itself in moonlight for amplified power. You can expel the moonlight for stronger strikes, release energy bursts, or channel your own powers through it for boosted power.
 435. Reiterpallasch, 2.0, Bloodborne
 #A refined Cainhurst knight weapon combining rapier and gun without compromise. It transforms into a bayonet to amplify the gun, and you can convert your blood into quicksilver bullets to feed it.
 436. Saw Cleaver, 1.6, Bloodborne
@@ -941,7 +941,7 @@
 471. Nail of Helena, 7.0, Hellsing
 #A true divine artifact used to nail the saint to the cross; nailed to someone's heart, it transforms them into a Monster of God (See trait: Monster of God).
 472. Dragon Dictionary, 6.1, Skyrim
-#(Tome) Parthuunax's dictionary teaching anyone Thu'um, containing all Tamriel Shouts for study. Learning speed depends on magical and vocal talent, with more powerful esoteric shouts and stages harder to learn. Spell List: https://elderscrolls.fandom.com/wiki/Dragon_Shouts
+#(Tag:dragonic)(Tome) Parthuunax's dictionary teaching anyone Thu'um, containing all Tamriel Shouts for study. Learning speed depends on magical and vocal talent, with more powerful esoteric shouts and stages harder to learn. Spell List: https://elderscrolls.fandom.com/wiki/Dragon_Shouts
 473. Cupid's Arrow, 6.8, Generic
 #(Noncon) An arrow making two pierced people fall in love; stab each target once, with the first stabbed falling for the second. Repeat reversed for reciprocity. Legendary rank or stronger targets can resist.
 474. Hand of Midas, 5.8, Generic
@@ -1023,11 +1023,11 @@
 512. Psychic Paper, 1.6, Doctor Who
 #Psychic paper that makes viewers see what they expect, such as IDs, papers, or permits. It fails against exceptionally strong beings or geniuses who may notice the difference.
 513. Holy Grail, 6.8, Fate
-#A chalice holding incredible raw magical power. It can serve as an immense mana source or grant wishes achievable through magic below Legendary Tier. Restock Timer: 720 hours.
+#(Tag:holy)A chalice holding incredible raw magical power. It can serve as an immense mana source or grant wishes achievable through magic below Legendary Tier. Restock Timer: 720 hours.
 514. Warhammer 40k, 2.0, Generic
 #40,000 regular-quality standard iron warhammers, retrievable one at a time from system storage. What did you think it was?
 515. Demon Blood Blade, 2.0, Adventure Time
-#A tough, sharp unholy blade forged from the blood of the demon Kee-Oth. It deals increased damage to Angelic and Holy beings, can harm spiritual creatures, and offers further use to Hemokinetics.
+#(Tag:demonic)(Tag:spectral)A tough, sharp unholy blade forged from the blood of the demon Kee-Oth. It deals increased damage to Angelic and Holy beings, can harm spiritual creatures, and offers further use to Hemokinetics.
 516. Moondrip, 4.5, Fairy Tail
 #A powerful potion of long-condensed moon power. Emptying the bottle on a spell dispels it if Elite level or below; drinking it cleanses the user of magic effects of the same level. Restock Timer: 24 hours.
 517. God Emperor's Blade, 5.8, Warhammer 40k
@@ -1107,7 +1107,7 @@
 554. Skeleton in Closet, 0.4, Generic
 #A completely ordinary skeleton from an ordinary person, complete with its own closet.
 555. Fairy Dust, 1.0, Peter Pan
-#Fairy Dust freshly shaken from Tinker Bell. This pouch floats 5 grown people for 1 hour or one grown person for 5 hours. Restock Timer: 24 hours.
+#(Tag:fae)Fairy Dust freshly shaken from Tinker Bell. This pouch floats 5 grown people for 1 hour or one grown person for 5 hours. Restock Timer: 24 hours.
 556. Skippy, 1.7, Cyberpunk 2077
 #(Tech) Skippy, a Smart Handgun firing homing bullets with onboard AI that aims on the fly and distinguishes ally from enemy, while judging your actions. You get 5 magazines every 24 hours.
 557. Herrera Outlaw, 1.0, Cyberpunk 2077
@@ -1117,7 +1117,7 @@
 559. Zero Point Energy Gloves, 4.2, Incredibles
 #(Tech) High-tech gloves firing energy beams on point that immobilize on hit while letting you move victims as desired. Strong targets can resist or break free; the gloves draw on your energy reserves.
 560. Demon-Slayer Blade, 5.7, Black Clover
-#A large black blade dispelling any contacted magical spell or effect of Legendary rank or below. Its anti-magic energy fires black energy slashes or levitates the sword back to the user.
+#(Tag:demonic)A large black blade dispelling any contacted magical spell or effect of Legendary rank or below. Its anti-magic energy fires black energy slashes or levitates the sword back to the user.
 561. The Slaughterhouse, 5.0, Generic
 #This rusty old key opens a door to the Slaughterhouse, whose workers supply any amount of mundane Earth-native meat on demand, breed, raise, and butcher any two live breedable animals for you at 60x efficiency, and perfectly process, pack, and return any non-living meat sent in. You may enter the universe-sized complex of soulless butchers and workers, but do not get lost or wander. WARNING: Do not send anything you do not want harvested for meat, including yourself; the workers do not care for reason.
 562. Yukari Fumo, 4.8, Touhou
@@ -1135,7 +1135,7 @@
 568. Erza Fumo, 2.4, Fairy Tail
 #An Erza Scarlet Fumo that instantly swaps your worn clothes with any owned clothing you picture when shaken violently, leaving the old clothes in their place.
 569. Lancelot Albion, 6.1, Code Geass
-#(Tech) The Lancelot Albion, among the strongest, most advanced Britannian Knightmares. It carries reinforced armour, super high-speed energy-wing flight, slash harkens, advanced Factsphere detection, wing energy projectiles, Blaze Luminous energy shields, Super V.A.R.I.S. Rifle blasts or Hadron Cannon mode, and Maser Vibration Sword. Its Yggdrasil Drive refills every 24 hours, and it is nigh impossible for regular people to operate.
+#(Tag:dragonic)(Tech) The Lancelot Albion, among the strongest, most advanced Britannian Knightmares. It carries reinforced armour, super high-speed energy-wing flight, slash harkens, advanced Factsphere detection, wing energy projectiles, Blaze Luminous energy shields, Super V.A.R.I.S. Rifle blasts or Hadron Cannon mode, and Maser Vibration Sword. Its Yggdrasil Drive refills every 24 hours, and it is nigh impossible for regular people to operate.
 570. Gurenn Seiken, 6.3, Code Geass
 #(Tech) Gurenn, the strongest, most advanced Knightmare Frame: an incredibly mobile marvel of destruction with advanced armour, super high-speed energy-wing flight, slash harkens, and Radiant Wave Technology for offense and defense. It creates barriers that disintegrate or destroy projectiles and objects while blocking physically, and focuses into devastating blasts and close-range bursts. Radiation Wave ammo and Ygdrassil Drive Sakuradite replenish every 24 hours.
 571. Gawainn, 5.8, Code Geass
@@ -1157,7 +1157,7 @@
 579. The Jar, 2.0, Elden Ring
 #A large wearable head jar once worn by a tarnished warrior who vanquished the rot goddess a thousandfold. It grants increased physical abilities, reflexes, and instincts against Gods or Divine entities. Despite appearances, it does not hinder vision and is supernaturally durable.
 580. Contract from Below, 5.5, Generic
-#"Is it worth the price?" A worn blood-stained paper granting equal-rank Summon Demon without using an ability slot when signed in blood after offering 3 equal-level sacrifices (Abilities, Items, Familiars etc.; Skills excluded), e.g. a Rare Ability plus 2 Rare Items for Summon Demon (Rare). Single use upon signing; refundable for free to reclaim its ticket.
+#(Tag:demonic)"Is it worth the price?" A worn blood-stained paper granting equal-rank Summon Demon without using an ability slot when signed in blood after offering 3 equal-level sacrifices (Abilities, Items, Familiars etc.; Skills excluded), e.g. a Rare Ability plus 2 Rare Items for Summon Demon (Rare). Single use upon signing; refundable for free to reclaim its ticket.
 581. Covenant from Above, 5.5, Generic
 #"Devotion at a price." A gold scroll trimmed in silver granting equal-rank Summon Angel without using an ability slot when signed in blood after offering 3 equal-level sacrifices (Abilities, Items, etc.; Skills and Familiars excluded), e.g. an Elite Ability plus 2 Elite Items for Summon Angel (Elite). Single use upon signing; refundable for free to reclaim its ticket.
 582. Dimensional Courier, 2.3, Generic
@@ -1203,7 +1203,7 @@
 602. High Roller Suite, 4.3, Generic
 #Congratulations, gambler: a key temporarily turning any door into a gate to the High Roller Suite, a luxury hotel room with 3 beds, 2 bathrooms, running water, electricity, heat, local internet, and other amenities. It auto-cleans perfectly every 24 hours, exists in the middle of nowhere and requires the key to exit, returning users to their entry point. The key cannot be lost or destroyed.
 603. Fairy Boots, 4.6, Terraria
-#Living-material boots greatly enhancing running speed, growing stepped-on mundane plants instantly to maturity with lush flora in a 1-meter radius and flowers in their wake rather than creating plants. Standing in nature while worn increases energy regeneration and nature affinity.
+#(Tag:fae)Living-material boots greatly enhancing running speed, growing stepped-on mundane plants instantly to maturity with lush flora in a 1-meter radius and flowers in their wake rather than creating plants. Standing in nature while worn increases energy regeneration and nature affinity.
 604. Garden of Eden Seed, 3.9, Generic
 #Unassuming grass seeds that quickly grow in any soil or sand without nutrients into a lush garden enriching surrounding ground and air energy quality. The garden expands non-invasively until fenced, yielding much faster healthier crops and healthier vigorous cattle. Restock Timer: 720 hours.
 605. Uber Fertilizer, 3.8, Generic
@@ -1221,7 +1221,7 @@
 611. Instant Death Soup, 2.7, Generic
 #A pot of very hot spicy soup that instantly kills anyone who willingly drinks it while knowing its effects, regardless of constitution or abilities. The whole soup must be consumed for it to take effect.
 612. Very Hot Soup, 3.1, Generic
-#A pot of incredibly hot spicy soup; consuming the entire pot covers the consumer's body in [(Rare)Cursed Flames], [(Elite)Blood Flames], [(Elite)Holy Flames], and [(Elite)Godslayer Apostle Flames].
+#(Tag:holy)A pot of incredibly hot spicy soup; consuming the entire pot covers the consumer's body in [(Rare)Cursed Flames], [(Elite)Blood Flames], [(Elite)Holy Flames], and [(Elite)Godslayer Apostle Flames].
 613. Morphing Blade, 1.4, Generic
 #A 3 kg iron sword with a pure iron blade that can change shape while conserving mass. Destroyed or separated parts lose this property, as does reforging or modifying the sword.
 614. Escape Ticket, 1.6, Generic
@@ -1237,7 +1237,7 @@
 619. Horseshoe Necklace, 1.9, Generic
 #A horseshoe necklace that grants the wearer the stamina and leg strength of a Mustang Horse.
 620. Ghost Blade, 1.2, Dark Souls
-#A sharp long dagger of the ghosts of New Londo whose curse lets it wound spiritual beings. It does not inflict soul damage on living beings.
+#(Tag:spectral)A sharp long dagger of the ghosts of New Londo whose curse lets it wound spiritual beings. It does not inflict soul damage on living beings.
 621. Black Knight Set, 1.4, Dark Souls
 #Armor and weapons of the Black Knights of Lordran, with armor that stays perfectly fitted unless your body shape changes drastically. Contains a Greatsword, Battle Axe, Halberd, Sword, and Shield.
 622. Perfume Pouch, 2.1, Elden Ring
@@ -1323,7 +1323,7 @@
 662. Dragonslayer Swordspear, 3.8, Dark Souls
 #The Nameless King's lightning-infused dragonslaying swordspear. Expending energy calls down a sky bolt and strengthens its lightning cloak. Boosts lightning abilities when used as a focus.
 663. Holy Hand Grenade of Antioch, 1.8, Monty Python
-#A saint-blessed grenade with 1 kiloton of power that deals extra damage to unholy enemies. Restock Timer: 24 hours.
+#(Tag:holy)A saint-blessed grenade with 1 kiloton of power that deals extra damage to unholy enemies. Restock Timer: 24 hours.
 664. Arc Reactor, 4.1, MCU
 #(Tech) Tony Stark's revolutionary Arc Reactor using a new element difficult even for tinkers to replicate. It runs indefinitely, providing over 5 gigajoules per second.
 665. Vorpan, 1.6, Dead Cells
@@ -1377,11 +1377,11 @@
 689. Asauchi, 2.8, Bleach
 #Asauchi, a dormant unnamed soul-bound weapon that fits and grows with the user, scaling with them. Unlocking Shikai grants a unique user-natured ability at or below Rare rank, upgraded to Epic rank upon unlocking Bankai.
 690. Hell Hammer, 4.1, Generic
-#An incredibly durable infernal hammer of hellflame-tempered steel that bursts into hellflame explosions on impact proportional to physical force.
+#(Tag:unholy)An incredibly durable infernal hammer of hellflame-tempered steel that bursts into hellflame explosions on impact proportional to physical force.
 691. Exorcists Mace, 3.4, Generic
-#A blessed sanctified-steel mace, incredibly durable and formidable, suffused with Holy Light. Exceptionally effective against Unholy entities.
+#(Tag:holy)A blessed sanctified-steel mace, incredibly durable and formidable, suffused with Holy Light. Exceptionally effective against Unholy entities.
 692. Clergy Ring, 2.5, Generic
-#An angel-blessed ring gaining 1 charge every 8 hours up to 3, each activating one effect: 1: Smite - charges fists or held weapon with holy energy for the next strike. 2: Blessing - boosts one chosen physical stat for 5 minutes. 3: Purify - cures afflictions with strength scaling with user energy.
+#(Tag:holy)An angel-blessed ring gaining 1 charge every 8 hours up to 3, each activating one effect: 1: Smite - charges fists or held weapon with holy energy for the next strike. 2: Blessing - boosts one chosen physical stat for 5 minutes. 3: Purify - cures afflictions with strength scaling with user energy.
 693. Thalasin, 2.0, Generic
 #Thalasin - A prescription box with packs of 8 pills each that chemically induce their emotion regardless of biology, including Anger, Sadness, Happiness, Fear, Relief, Hope, Frustration, Pride, Lust, etc. Restock Timer: 24 hours.
 694. Evil Ring, 0.2, Generic
@@ -1451,7 +1451,7 @@
 726. Clarent, 5.6, Fate
 #Clarent, Mordred's Brilliantly Shining Royal Sword that slew Artoria Pendragon, amplifies physical abilities, energy output, and charisma while the wielder rightfully holds the title of King. Killing a Monarch with it transforms it into Clarent Blood, lifting restrictions for free use; otherwise it is only a very durable blunt blade.
 727. Flesh Prison, 5.0, Ultrakill
-#A non-sentient angelic Prison of Flesh wielding Holy and Unholy energy to defend itself at all costs. It contains King Minos's Prime soul, released by slaying the prison; the occupant may not be friendly.
+#(Tag:holy)(Tag:unholy)A non-sentient angelic Prison of Flesh wielding Holy and Unholy energy to defend itself at all costs. It contains King Minos's Prime soul, released by slaying the prison; the occupant may not be friendly.
 728. Jason's Mask, 0.2, Friday the 13th
 #Jason Voorhees's iconic hockey mask, dirty and foul-smelling.
 729. Green Spandex, 1.8, Naruto
@@ -1459,7 +1459,7 @@
 730. The House of Leaves, 5.2, House of Leaves
 #A brass key that, turned in a sufficiently open space, opens a door to a pocket dimension containing a normal-looking suburban family home. Ignore its sometimes non-Euclidean geometry, shifting measurements, impossibly large labyrinthine structures, infohazards, and possibly murderous sentient house.
 731. The Dragon Balls, 6.4, Dragon Ball
-#The seven dragon balls are scattered randomly across your current planet. Once gathered, Shenron grants the gatherer one wish within his power, or any ability below a 6.9 rating.
+#(Tag:dragonic)The seven dragon balls are scattered randomly across your current planet. Once gathered, Shenron grants the gatherer one wish within his power, or any ability below a 6.9 rating.
 732. Pika Pika no Mi, 8.0, One Piece
 #The Pika Pika no Mi is an awful-tasting Devil Fruit granting the ability [Light Logia](Divine). The first to digest any part gains the ability and renders the rest inert, but gains the Curse of the Sea: unable to use energy when submerged in still water with rapidly draining stamina. Stacking two Curses of the Sea on one person kills them instantly.
 733. Magu Magu no Mi, 7.2, One Piece
@@ -1485,7 +1485,7 @@
 743. Hell Taxes, 2.6, Generic
 #Hell now owes you taxes, paid as 100 envelopes each containing a sinner's soul. Use or trade them as you like. Restock Timer: 336 hours.
 744. Heaven Taxes, 2.8, Generic
-#Even Heaven owes you taxes, paid as 100 envelopes each containing a dose of Holy Energy. Each dose works as an uncommon healing spell or an uncommon dispel, or 50 envelopes at once can invoke the Ability: Summon Angelic Guardian once. Restock Timer: 336 hours.
+#(Tag:holy)Even Heaven owes you taxes, paid as 100 envelopes each containing a dose of Holy Energy. Each dose works as an uncommon healing spell or an uncommon dispel, or 50 envelopes at once can invoke the Ability: Summon Angelic Guardian once. Restock Timer: 336 hours.
 745. Hircine's Ring, 3.4, Skyrim
 #Hircine's daedric artifact lets the wearer turn into a Werewolf at will and grants greater control over any transformation-based ability.
 746. Physician's Ring, 1.8, Generic
@@ -1531,9 +1531,9 @@
 766. Grand Chariot, 6.0, Akame ga Kill
 #Dubbed "Absolute Carnage", Grand Chariot is a short-sword Teigu that, when activated, dons you in incredibly resilient full armor boosting physical prowess and granting free flight, plus a built-in spear. It rapidly drains stamina and energy. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 767. Incursio, 7.2, Akame ga Kill
-#Dubbed "Demon Armor", Incursio is a shortsword "Key" Teigu that forms incredibly durable armor massively enhancing physical abilities, with camouflage invisibility and semi-living adaptation that evolves with user compatibility at massive stamina cost. A highly compatible user can further evolve and fuse with it into its original beast's full dragon form. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and may kill an incompatible activator outright.
+#(Tag:dragonic)Dubbed "Demon Armor", Incursio is a shortsword "Key" Teigu that forms incredibly durable armor massively enhancing physical abilities, with camouflage invisibility and semi-living adaptation that evolves with user compatibility at massive stamina cost. A highly compatible user can further evolve and fuse with it into its original beast's full dragon form. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and may kill an incompatible activator outright.
 768. Demon's Extract, 6.8, Akame ga Kill
-#Dubbed "Demon God Manifestation", Demon's Extract is a chalice Teigu of super-class Danger Beast lifeblood granting those who fully drink and survive it telekinetic ice creation and freezing, including independent ice soldiers and functional ice arms. Surviving the drink requires inhuman willpower and a monstrous mindset. (A/N: No time stop trump card).
+#(Tag:demonic)Dubbed "Demon God Manifestation", Demon's Extract is a chalice Teigu of super-class Danger Beast lifeblood granting those who fully drink and survive it telekinetic ice creation and freezing, including independent ice soldiers and functional ice arms. Surviving the drink requires inhuman willpower and a monstrous mindset. (A/N: No time stop trump card).
 769. Perfector, 3.6, Akame ga Kill
 #Dubbed "Glorious Hands of God", Perfector is a glove Teigu that, when donned, grants finger dexterity and precision beyond any machine or tool. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 770. Shitoukazer, 6.2, Akame ga Kill
@@ -1639,7 +1639,7 @@
 820. The Chair, 1.2, Devil May Cry
 #Vergil Sparda's iconic cheap plastic chair, rumored to greatly increase the motivation of anyone sitting in it.
 821. The Master Sword, 5.5, The Legend of Zelda
-#The Master Sword, Blade that Vanquishes Evil and former sword of Goddess Hylia bathed in Sacred Flames, is nigh unbreakable. It deals extreme damage ignoring resistances to ALL Unholy and Darkness targets, fires light slashes when imbued, and grows permanently stronger by absorbing Holy energy while housing blessings. Only a worthy Hero of proven Pure Heart, Courage, Wisdom, and Power can wield it.
+#(Tag:holy)The Master Sword, Blade that Vanquishes Evil and former sword of Goddess Hylia bathed in Sacred Flames, is nigh unbreakable. It deals extreme damage ignoring resistances to ALL Unholy and Darkness targets, fires light slashes when imbued, and grows permanently stronger by absorbing Holy energy while housing blessings. Only a worthy Hero of proven Pure Heart, Courage, Wisdom, and Power can wield it.
 822. Hylian Shield, 4.8, The Legend of Zelda
 #The Legendary Hero of Hyrule's shield, tempered many times for the Knights of Hyrule. Besides absurd durability, it has great magic resistance and extreme resiliency to all Unholy or Darkness attacks.
 823. Mirror Shield, 5.1, The Legend of Zelda
@@ -2067,7 +2067,7 @@
 1034. Arcana Deck, 5.5, Hades 2
 #A deck of major arcana you activate within your grasp: the Sorceress quickens casts, the Titan hardens skin, the Huntress sharpens strikes, and more. Deeper grasp holds more cards.
 1035. Ghost Onion, 5.2, Hades 2
-#A spectral onion that revives you once per battle at half strength with full energy, then needs a full rest to regrow. Smells faintly of the surface.
+#(Tag:spectral)A spectral onion that revives you once per battle at half strength with full energy, then needs a full rest to regrow. Smells faintly of the surface.
 1036. Descura, the Witch's Staff, 5.4, Hades 2
 #The witch's staff: forceful bolts, a charged omega blast that consumes magick, and a special that lobs your casting stone and recalls it. Never runs dry, only runs hot.
 1037. Arachne's Cocoon, 4.8, Hades 2

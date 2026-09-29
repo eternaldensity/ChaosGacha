@@ -27,42 +27,74 @@ window.ChaosGacha = (function () {
     // Strip leading # markers and (Tag) tokens only; interior characters
     // (including # inside URLs) are content and must survive.
     return String(d || "").replace(/^#+/, "")
-      .replace(/\((Nsfw|Tech|Character|Gacha|Noncon)\)/g, "").trim();
+      .replace(/\((Nsfw|Tech|Character|Gacha|Noncon)\)/g, "")
+      .replace(/\((Tags?:[^)]*)\)/g, "")
+      .replace(/\((Tome|Tree)\)/g, "")
+      .replace(/\(Meta:[^)]*\)/g, "").trim();
   }
 
-  // filters: {q, source|sources, rmin, rmax, hideNsfw, hideNoncon, hideTech, exclude[], flat}.
+  function entryTags(e) {
+    return e.tags || e.tg || [];
+  }
+
+  // filters: {q, source|sources, rmin, rmax, hideNsfw, hideNoncon, hideTech, exclude[], flat, tag|tags}.
   // flat=true flattens rarity weighting to uniform (wild tickets).
   // A plain string is treated as {q} (backwards compatible); a single
   // source string behaves like a one-element sources list.
+  // tag is a single thematic tag; tags is a list (entry must have all of them).
   function normFilt(f) {
     if (typeof f === "string") return { q: f };
     return f || {};
+  }
+
+  function wantedTags(F) {
+    if (Array.isArray(F.tags) && F.tags.length) return F.tags.map(t => String(t).toLowerCase());
+    if (F.tag) return [String(F.tag).toLowerCase()];
+    return [];
   }
 
   // category: one of the 5, or "random".
   function buildPool(entries, category, filt, rnd) {
     rnd = rnd || Math.random;
     const F = normFilt(filt);
-    let cat = category;
-    if (cat === "random") {
-      const cats = ["ability", "item", "skill", "trait", "familiar"];
-      cat = cats[Math.floor(rnd() * cats.length)];
-    }
     const ql = (F.q || "").trim().toLowerCase();
     const srcs = F.sources || (F.source ? [F.source] : null);
     const excl = F.exclude && F.exclude.length ? new Set(F.exclude) : null;
-    const pool = entries.filter(e =>
-      e.f === cat && e.t !== "tree" &&
-      (!srcs || !srcs.length || srcs.includes(e.s)) &&
-      (F.rmin == null || e.r >= F.rmin) &&
-      (F.rmax == null || e.r <= F.rmax) &&
-      (!F.hideNsfw || !e.nsfw) &&
-      (!F.hideNoncon || !e.noncon) &&
-      (!F.hideTech || !e.tech) &&
-      (!excl || !excl.has(e.name)) &&
-      (!ql || e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql)));
+    const wt = wantedTags(F);
+    const matchCat = cat => entries.filter(e => {
+      if (e.f !== cat || e.t === "tree") return false;
+      if (srcs && srcs.length && !srcs.includes(e.s)) return false;
+      if (F.rmin != null && e.r < F.rmin) return false;
+      if (F.rmax != null && e.r > F.rmax) return false;
+      if (F.hideNsfw && e.nsfw) return false;
+      if (F.hideNoncon && e.noncon) return false;
+      if (F.hideTech && e.tech) return false;
+      if (excl && excl.has(e.name)) return false;
+      if (wt.length) {
+        const et = entryTags(e).map(t => String(t).toLowerCase());
+        for (const w of wt) if (!et.includes(w)) return false;
+      }
+      if (ql && !(e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql))) return false;
+      return true;
+    });
+    if (category === "random") {
+      // Try categories in random order so sparse filters (e.g. a theme tag
+      // with entries in only one or two categories) still resolve instead
+      // of failing on an empty pick.
+      const cats = ["ability", "item", "skill", "trait", "familiar"];
+      for (let i = cats.length - 1; i > 0; i--) {
+        const j = Math.floor(rnd() * (i + 1));
+        [cats[i], cats[j]] = [cats[j], cats[i]];
+      }
+      for (const cat of cats) {
+        const pool = matchCat(cat);
+        if (pool.length) return { cat, pool };
+      }
+      throw new Error("no entries match (loosen the filters)");
+    }
+    const pool = matchCat(category);
     if (!pool.length) throw new Error("no entries match (loosen the filters)");
-    return { cat, pool };
+    return { cat: category, pool };
   }
 
   function drawOne(pool, min, max, avg, rnd, exp) {
@@ -99,7 +131,7 @@ window.ChaosGacha = (function () {
       return {
         category: cat, name: e.name, rarity: e.r,
         source: e.s || "", description: cleanDesc(e.d),
-        meta: e.m || [],
+        meta: e.m || [], tags: entryTags(e).slice(),
         odds: 100 * hit.weight / weightsum, pull: Math.round(hit.pull * 10) / 10
       };
     }
@@ -131,7 +163,7 @@ window.ChaosGacha = (function () {
       pools.flatMap(p => p.pool.map(e => e.name))).size > 1;
     const items = [];
     const push = (e, c) => items.push(
-      { name: e.name, rarity: e.r, source: e.s || "", category: c, meta: e.m || [] });
+      { name: e.name, rarity: e.r, source: e.s || "", category: c, meta: e.m || [], tags: entryTags(e).slice() });
     const prevName = () => items.length ? items[items.length - 1].name : null;
     // Uniform in-ticket-range pick, used when the weighted draw keeps
     // repeating: variety is mandatory for theater, exact odds are not.
@@ -233,6 +265,6 @@ window.ChaosGacha = (function () {
       nothing: "No change", rankDown: "Rank Down", destroyed: "Destroyed" }[g.effect];
   }
 
-  return { rarityPull, cleanDesc, roll, drawStrip, rarityClass,
+  return { rarityPull, cleanDesc, entryTags, roll, drawStrip, rarityClass,
     gamblerRoll, gamblerApply, gamblerLabel };
 })();

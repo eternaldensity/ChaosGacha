@@ -95,6 +95,8 @@ def read_file_with_weight(filename,avg,min,max): # Creates a list of the availab
                     line = line.replace(scifitext, "")
                 if gachatext in line: # Gacha-only marker is not content; hide it
                     line = line.replace(gachatext, "")
+                # Thematic (Tag:...) markers are metadata, not content; hide them
+                line = re.sub(r"\(Tags?:[^)]*\)", "", line)
                 tempdescription.append(line)
     if (tempdescription):
         descriptions.append(' '.join(tempdescription).strip())

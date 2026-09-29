@@ -150,9 +150,9 @@ def export_entries():
                               True, True)
     flags = flag_map()
     # Data version: hash over topology/behaviour-relevant fields (file,
-    # number, rarity, source, tag, meta tokens, nsfw/tech/noncon flags). Display
-    # text (names, descriptions) is excluded so prose edits don't
-    # invalidate trees. Trees record the version they were generated with;
+    # number, rarity, source, tag, meta tokens, thematic tags, nsfw/tech/noncon
+    # flags). Display text (names, descriptions) is excluded so prose edits
+    # don't invalidate trees. Trees record the version they were generated with;
     # a mismatch warns that regeneration may produce a different tree.
     h = hashlib.sha256()
     for e in entries:
@@ -160,6 +160,7 @@ def export_entries():
         h.update(("\x1f".join([e["file"], str(e["number"]), repr(e["rarity"]),
                                e["source"] or "", e["tag"],
                                ",".join(e.get("meta", [])),
+                               ",".join(e.get("tags", [])),
                                "nsfw" if "Nsfw" in toks else "",
                                "tech" if "Tech" in toks else "",
                                "noncon" if "Noncon" in toks else ""]) + "\n").encode("utf-8"))
@@ -170,6 +171,8 @@ def export_entries():
         item = {"f": e["file"], "n": e["number"], "name": e["name"],
                 "r": e["rarity"], "s": e["source"], "t": e["tag"],
                 "d": e["description"], "m": e.get("meta", [])}
+        if e.get("tags"):
+            item["tags"] = e["tags"]
         if "Nsfw" in toks:
             item["nsfw"] = True
         if "Tech" in toks:
@@ -177,6 +180,11 @@ def export_entries():
         if "Noncon" in toks:
             item["noncon"] = True
         compact.append(item)
+    from collections import Counter
+    tag_counts = Counter()
+    for e in compact:
+        for t in e.get("tags", []):
+            tag_counts[t] += 1
     payload = {"generated_at": datetime.datetime.now(datetime.timezone.utc)
                .isoformat(timespec="seconds"),
                "dataVersion": data_version,
@@ -185,6 +193,8 @@ def export_entries():
                "sources": {
                    c: sorted({e["s"] for e in compact if e["f"] == c})
                    for c in CATEGORIES},
+               "tags": sorted(tag_counts),
+               "tagCounts": dict(sorted(tag_counts.items())),
                "tiers": TIERS, "classes": CLASSES, "categories": CATEGORIES,
                "entries": compact}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

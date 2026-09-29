@@ -42,6 +42,39 @@
   // Whole-number rarities display with .0 so the wheel reads consistently.
   const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
 
+  function entryTags(e) {
+    if (G && typeof G.entryTags === "function") {
+      try { return G.entryTags(e) || []; } catch (err) { /* fall through */ }
+    }
+    return (e && (e.tags || e.tg)) || [];
+  }
+  function allTags() {
+    if (Array.isArray(DATA.tags) && DATA.tags.length) return DATA.tags.slice().sort();
+    const s = new Set();
+    for (const e of (DATA.entries || [])) for (const t of entryTags(e)) s.add(t);
+    return [...s].sort();
+  }
+  function tagPills(tags) {
+    return (tags || []).map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ");
+  }
+  function tagCount(tag) {
+    if (DATA.tagCounts && DATA.tagCounts[tag] != null) return DATA.tagCounts[tag];
+    let n = 0;
+    for (const e of (DATA.entries || [])) if (entryTags(e).includes(tag)) n++;
+    return n;
+  }
+  function fillTagSelects() {
+    for (const id of ["fTag", "tkTag"]) {
+      const sel = $(id);
+      if (!sel) continue;
+      const cur = sel.value;
+      const anyLabel = id === "tkTag" ? "Any tag" : "Any tag";
+      sel.innerHTML = `<option value="">${anyLabel}</option>` +
+        allTags().map(t => `<option value="${esc(t)}">${esc(t)} (${tagCount(t)})</option>`).join("");
+      if (cur && [...sel.options].some(o => o.value === cur)) sel.value = cur;
+    }
+  }
+
   function toast(msg, isErr) {
     const t = $("toast");
     t.textContent = msg;
@@ -74,7 +107,8 @@
 
   function resultText(r) {
     const cls = G.rarityClass(DATA.classes, r.rarity);
-    return `🎰 ${r.name} (${fmtR(r.rarity)}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""})` +
+    const tags = entryTags(r);
+    return `🎰 ${r.name} (${fmtR(r.rarity)}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""}${tags.length ? ", #" + tags.join(" #") : ""})` +
       (r.d20 != null ? ` 🎲${r.d20} ${G.gamblerLabel({ effect: r.geffect })}` : "") +
       (r.description ? `\n${r.description}` : "");
   }
@@ -156,6 +190,7 @@
   }
   function collectFilters() {
     const rmin = parseFloat($("fRmin").value), rmax = parseFloat($("fRmax").value);
+    const tag = $("fTag") ? $("fTag").value || "" : "";
     const F = {
       q: $("q").value,
       sources: checkedSources(),
@@ -166,10 +201,12 @@
       hideTech: !!$("fTech").checked,
       dedup: !!$("fDedup").checked
     };
+    if (tag) F.tag = tag;
     DB.settings.filters = {
       q: F.q, sources: F.sources,
       rmin: $("fRmin").value, rmax: $("fRmax").value,
-      hideNsfw: F.hideNsfw, hideNoncon: F.hideNoncon, hideTech: F.hideTech, dedup: F.dedup
+      hideNsfw: F.hideNsfw, hideNoncon: F.hideNoncon, hideTech: F.hideTech, dedup: F.dedup,
+      tag
     };
     save();
     return F;
@@ -183,6 +220,7 @@
     $("fNoncon").checked = F.hideNoncon !== false; // safe by default
     $("fTech").checked = !!F.hideTech;
     $("fDedup").checked = !!F.dedup;
+    if ($("fTag")) $("fTag").value = F.tag || "";
     updateNonconRow();
     refreshSources(false);
     // legacy single-source setting -> check just that one
@@ -199,21 +237,29 @@
         q: $("q").value, sources: checkedSources(),
         rmin: parseFloat($("fRmin").value) || null,
         rmax: parseFloat($("fRmax").value) || null,
-        hideNsfw: !!$("fNsfw").checked, hideNoncon: !!$("fNoncon").checked, hideTech: !!$("fTech").checked
+        hideNsfw: !!$("fNsfw").checked, hideNoncon: !!$("fNoncon").checked, hideTech: !!$("fTech").checked,
+        tag: $("fTag") ? $("fTag").value || "" : ""
       };
+      if (!F.tag) delete F.tag;
       const cats = category === "random" ? CATS.slice(1) : [category];
       let n = 0;
       for (const c of cats) {
         const ql = (F.q || "").trim().toLowerCase();
-        n += DATA.entries.filter(e =>
-          e.f === c && e.t !== "tree" &&
-          (!F.sources.length || F.sources.includes(e.s)) &&
-          (F.rmin == null || e.r >= F.rmin) &&
-          (F.rmax == null || e.r <= F.rmax) &&
-          (!F.hideNsfw || !e.nsfw) && (!F.hideNoncon || !e.noncon) && (!F.hideTech || !e.tech) &&
-          (!ql || e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql))).length;
+        n += DATA.entries.filter(e => {
+          if (e.f !== c || e.t === "tree") return false;
+          if (F.sources.length && !F.sources.includes(e.s)) return false;
+          if (F.rmin != null && e.r < F.rmin) return false;
+          if (F.rmax != null && e.r > F.rmax) return false;
+          if (F.hideNsfw && e.nsfw) return false;
+          if (F.hideNoncon && e.noncon) return false;
+          if (F.hideTech && e.tech) return false;
+          if (F.tag && !entryTags(e).includes(F.tag)) return false;
+          if (ql && !(e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql))) return false;
+          return true;
+        }).length;
       }
-      $("poolCount").textContent = `≈${n} entr${n === 1 ? "y" : "ies"} in pool.`;
+      const tagBit = F.tag ? ` · #${F.tag}` : "";
+      $("poolCount").textContent = `≈${n} entr${n === 1 ? "y" : "ies"} in pool${tagBit}.`;
     } catch (e) { /* controls not ready */ }
   }
   function renderPickers() {
@@ -242,17 +288,20 @@
     }
     $("tkTier").innerHTML = DATA.tiers.map(t => `<option>${t.name}</option>`).join("");
     $("tkCat").innerHTML = CATS.map(c => `<option>${c}</option>`).join("");
+    fillTagSelects();
   }
 
   function showResult(r, keepMulti) {
     lastResult = r;
     const cls = G.rarityClass(DATA.classes, r.rarity);
+    const tags = entryTags(r);
     $("resultCard").style.display = "block";
     $("resultCard").style.boxShadow = `0 0 32px ${cls.color}44, var(--shadow)`;
     if (!keepMulti) $("multiCard").style.display = "none";
     $("resultBody").innerHTML =
       `<div class="small" style="color:${esc(cls.color)}">— ${esc(cls.name)} ${esc(r.category)}${r.source ? " [" + esc(r.source) + "]" : ""} —</div>` +
       `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${fmtR(r.rarity)}</div>` +
+      (tags.length ? `<div style="margin:4px 0">${tagPills(tags)}</div>` : "") +
       `<div class="small muted">${r.odds.toFixed(2)}% odds</div>` +
       (r.d20 != null ? `<div class="small muted">🎲 Gambler d20 → ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</div>` : "") +
       (r.description ? `<p>${linkify(r.description)}</p>` : "");
@@ -278,10 +327,22 @@
     return t ? { min: t.min, avg: t.avg, max: t.max } : null;
   }
 
-  function doRoll(min, max, avg, cat, ticketId, tierName) {
+  function doRoll(min, max, avg, cat, ticketId, tierName, ticketTag) {
     if (spinning) return;
     $("filterBox").open = false;
     const F = collectFilters();
+    // Ticket theme tags combine with the filter-box tag (AND): a ticket for
+    // #holy rolled with the filter on #undead needs both (likely empty, and
+    // the error tells you to loosen filters).
+    if (ticketId && !ticketTag) {
+      const t = DB.tickets.find(x => x.id === ticketId);
+      if (t && t.tag) ticketTag = t.tag;
+    }
+    if (ticketTag) {
+      const both = [...new Set([F.tag, ticketTag].filter(Boolean))];
+      delete F.tag;
+      if (both.length) F.tags = both;
+    }
     const tp = DATA.tiers.find(t => t.name === (tierName || preset));
     F.flat = !!(tp && tp.flat);
     if (F.dedup) F.exclude = DB.history.map(h => h.name);
@@ -340,7 +401,7 @@
       items = G.drawStrip(DATA.entries, reqCat || r.category, min, max, avg, filt, opt.n + TRAIL_ROWS);
     } catch (e) { showResult(r); return; }
     const winIdx = opt.n;
-    items.splice(winIdx, 0, { name: r.name, rarity: r.rarity, source: r.source, category: r.category });
+    items.splice(winIdx, 0, { name: r.name, rarity: r.rarity, source: r.source, category: r.category, tags: entryTags(r).slice() });
     // The winner is predetermined; don't let a decoy double it up visually.
     for (const j of [winIdx - 1, winIdx + 1]) {
       if (j < 0 || j >= items.length || items[j].name !== r.name) continue;
@@ -364,8 +425,9 @@
       const cls = G.rarityClass(DATA.classes, it.rarity);
       const row = document.createElement("div");
       row.className = "rrow";
+      const itTags = entryTags(it);
       row.innerHTML = `<span class="dot" style="background:${esc(cls.color)}"></span>` +
-        `<span class="nm">${esc(it.name)}</span>` +
+        `<span class="nm">${esc(it.name)}${itTags.length ? ` <span class="muted small">#${itTags.map(esc).join(" #")}</span>` : ""}</span>` +
         `<span class="pill">${esc(it.category)} ${fmtR(it.rarity)}</span>`;
       inner.appendChild(row);
     }
@@ -474,6 +536,7 @@
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
         `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${fmtR(r.rarity)}</span>` +
+        (entryTags(r).length ? " " + tagPills(entryTags(r)) : "") +
         (r === best ? ` <span class="pill" style="border-color:var(--accent);color:var(--accent)">★ best</span>` : "") +
         `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
       const b = document.createElement("button");
@@ -504,7 +567,10 @@
   });
 
   $("btnAddTicket").addEventListener("click", () => {
-    DB.tickets.push({ id: uid(), tier: $("tkTier").value, cat: $("tkCat").value });
+    const tag = $("tkTag") ? $("tkTag").value || "" : "";
+    const t = { id: uid(), tier: $("tkTier").value, cat: $("tkCat").value };
+    if (tag) t.tag = tag;
+    DB.tickets.push(t);
     save(); renderTickets();
   });
 
@@ -517,12 +583,13 @@
     for (const t of DB.tickets) {
       const li = document.createElement("li");
       const tp = tierOf(t.tier);
-      li.innerHTML = `<div class="grow"><span class="pill" style="${esc(tierStyle(tp))}border:none">${esc(t.tier)}</span> <span class="pill">${esc(t.cat)}</span></div>`;
+      li.innerHTML = `<div class="grow"><span class="pill" style="${esc(tierStyle(tp))}border:none">${esc(t.tier)}</span> <span class="pill">${esc(t.cat)}</span>` +
+        (t.tag ? ` <span class="pill">🏷 ${esc(t.tag)}</span>` : "") + `</div>`;
       const b = document.createElement("button");
       b.textContent = "Roll 🎲"; b.className = "primary";
       b.addEventListener("click", () => {
         const p = tierOf(t.tier);
-        doRoll(p.min, p.max, p.avg, t.cat, t.id, t.tier);
+        doRoll(p.min, p.max, p.avg, t.cat, t.id, t.tier, t.tag || "");
       });
       li.appendChild(b);
       ul.appendChild(li);
@@ -559,6 +626,7 @@
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
         `<b>${esc(h.name)}</b> <span class="pill">${esc(h.category)} ${fmtR(h.rarity)}</span>` +
+        (entryTags(h).length ? " " + tagPills(entryTags(h)) : "") +
         (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }))}">🎲${h.d20}</span>` : "") + `<br>` +
         `<span class="muted small">${esc(h.source || "—")} · ${new Date(h.at).toLocaleString()} · ${h.odds.toFixed(2)}%</span></div>`;
       const b = document.createElement("button");
@@ -618,7 +686,14 @@
     DB.settings.spin = $("spinSpeed").value;
     save();
   });
+  fillTagSelects();
   restoreFilters();
+  if ($("fTag")) {
+    // restoreFilters repopulates the selects; re-apply the saved tag choice.
+    const savedTag = (DB.settings && DB.settings.filters && DB.settings.filters.tag) || "";
+    if (savedTag) $("fTag").value = savedTag;
+    updatePoolCount();
+  }
   $("gfAll").addEventListener("click", () => {
     document.querySelectorAll(".gfCheck").forEach(c => { c.checked = true; });
     refreshSrcCount(); updatePoolCount(); collectFilters();
@@ -657,7 +732,8 @@
     } catch (e) { toast(e.message || "Import failed.", true); }
     $("fileGfSrc").value = "";
   });
-  for (const id of ["q", "fRmin", "fRmax", "fNsfw", "fNoncon", "fTech", "fDedup"]) {
+  for (const id of ["q", "fRmin", "fRmax", "fNsfw", "fNoncon", "fTech", "fDedup", "fTag"]) {
+    if (!$(id)) continue;
     $(id).addEventListener("change", () => { collectFilters(); updatePoolCount(); });
     $(id).addEventListener("input", updatePoolCount);
   }

@@ -41,7 +41,7 @@
 21. Protection From Arrows, 4.2, Generic
 #You sense incoming projectiles and instinctively dodge them like a sixth sense.
 22. Blessing of Fae, 5.6, Generic
-#You gain increased energy capacity from the fae's blessing. Fairies start at least neutral to you, fae do not trick you, and spirits like you.
+#(Tag:fae)You gain increased energy capacity from the fae's blessing. Fairies start at least neutral to you, fae do not trick you, and spirits like you.
 23. Golden Rule, 3.7, Generic
 #You sense nearby wealth and treasure opportunities like a sixth sense and can spot treasure from a mile away.
 24. Hero's Reward, 3.8, Generic
@@ -267,7 +267,7 @@
 134. Hero Candidate, 3.3, Generic
 #You are a Hero in training, fit for the title or not; all your Holy and Light abilities are slightly enhanced, and your blessings gain strength and duration.
 135. Demon Scion, 3.6, Generic
-#You are a Demon Lord to be, fit for the title or not; all your Darkness and Unholy abilities are slightly enhanced, but you are more vulnerable to Holy and Light abilities.
+#(Tag:demonic)You are a Demon Lord to be, fit for the title or not; all your Darkness and Unholy abilities are slightly enhanced, but you are more vulnerable to Holy and Light abilities.
 136. Goth Magnet, 2.4, Generic
 #Goths, emos, and those with daddy issues are drawn to you, making their affection and favor easier to garner. People also overlook your less-favorable actions more easily.
 137. Background NPC, 2.6, Generic
@@ -305,7 +305,7 @@
 153. Master Rider, 4.2, Generic
 #You master riding any mount; when mounted, your senses link and you communicate your intentions to your mount instantly.
 154. Dragon Rider, 4.4, Generic
-#You are destined to ride dragons; all dragons view you more favorably and grant their affection far more easily.
+#(Tag:dragonic)You are destined to ride dragons; all dragons view you more favorably and grant their affection far more easily.
 155. My Master, 3.2, Generic
 #You are an excellent master; servants under you view you more favorably and grant affection more easily. This also applies to submissive people.
 156. Corrupting, 3.7, Generic
@@ -353,7 +353,7 @@
 177. Lucky Sukebe, 2.3, Generic
 #(Nsfw)(Noncon) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find someone changing.
 178. Spirit Affinity, 3.0, Generic
-#You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
+#(Tag:spectral)You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
 179. Immortal Soul, 4.9, Generic
 #Your soul is immortal; it can be wounded and shattered but never annihilated while you possess energy.
 180. Last Stand, 3.5, Generic
@@ -375,7 +375,7 @@
 188. Masochism, 4.5, Generic
 #"Hurt me more." Whenever you are hurt or damaged, you recover energy proportional to the damage received.
 189. Demon Lord, 4.4, Generic
-#You are a Demon Lord; all your Darkness and Unholy magic and abilities strengthen alongside your physical stats, increased further if your race is demonic or infernal. You greatly resist all Darkness and Unholy attributes. Demonic/Infernal beings serve you more readily and obey your authority more easily, and those under your service or command are easier to command and manage and gain minor buffs from you.
+#(Tag:demonic)You are a Demon Lord; all your Darkness and Unholy magic and abilities strengthen alongside your physical stats, increased further if your race is demonic or infernal. You greatly resist all Darkness and Unholy attributes. Demonic/Infernal beings serve you more readily and obey your authority more easily, and those under your service or command are easier to command and manage and gain minor buffs from you.
 190. Item Warranty, 3.5, Generic
 #Your gacha items carry a warranty; if equipment you own breaks beyond effective use, within 24 hours it and all its parts are replaced with a perfect replica, as long as it was not traded or given away. This applies only to breakage during intended use, not sacrifice, smelting, destruction during modification, etc., and not to consumables.
 191. Hero Time, 4.7, Generic
@@ -397,7 +397,7 @@
 199. Zenkai Boost, 5.6, Generic
 #Every time you return from near death, all your stats permanently increase.
 200. Black Heart, 6.3, Solo Leveling
-#You hold a second metaphysical heart that massively increases your mana capacity and regeneration while significantly boosting all necromancy abilities.
+#(Tag:undead)You hold a second metaphysical heart that massively increases your mana capacity and regeneration while significantly boosting all necromancy abilities.
 201. Energy Heart, 5.8, Generic
 #Your heart is replaced by a metaphysical alternative pumping raw energy through your veins, massively increasing your maximum energy reserves. Your natural regeneration speeds add to your energy regeneration alongside regular recovery.
 202. Mana Substitution, 4.0, Generic
@@ -405,7 +405,7 @@
 203. Iron Mind, 3.3, Generic
 #Your mind is iron and your body obeys; exhaustion and starvation minimally affect your performance, keeping it optimal regardless of suffering. This does not extend to physical limitations or wounds. You also gain increased resistance to all Negative Mental Ailments.
 204. Bloodless, 2.2, Generic
-#You hardly bleed; even drained of most blood, you feel no effect as long as a cupful remains. If you are a vampire, you no longer suffer the need for blood.
+#(Tag:vampiric)You hardly bleed; even drained of most blood, you feel no effect as long as a cupful remains. If you are a vampire, you no longer suffer the need for blood.
 205. Bloodbank, 2.7, Generic
 #Your body holds 10x the blood and regenerates blood 10x faster, without changing mass or size.
 206. Eternal Bleed, 4.2, Generic
@@ -415,7 +415,7 @@
 208. Lord of Fear, 6.6, Generic
 #You rule fear; if your opponent fears you, their energy drains into yours, and you can physically interact with and absorb fear into your energy.
 209. Necromancer, 4.0, Generic
-#Specialization - You are a natural-born necromancer dealing in death and souls. Any death or soul-related ability is easier to master and costs less energy.
+#(Tag:undead)Specialization - You are a natural-born necromancer dealing in death and souls. Any death or soul-related ability is easier to master and costs less energy.
 210. Plaguemaster, 4.2, Generic
 #Specialization - You are a natural-born contagion; spreading disease, poison, and decay is second nature. Any poison or disease-related ability is easier to master and costs less energy to use.
 211. Shapesmith, 4.8, Generic
@@ -437,7 +437,7 @@
 219. Big Battery, 3.5, Generic
 #Your energy reserves are noticeably above average, though not at genius level.
 220. Dragon Core, 7.0, Generic
-#You possess a dragon's energy core instead of ordinary reserves — a power plant where an average mage has a generator.
+#(Tag:dragonic)You possess a dragon's energy core instead of ordinary reserves — a power plant where an average mage has a generator.
 221. Energy Abyss, 7.6, Generic
 #Your energy storage is infinite, though your regeneration and output are unchanged. You can hold the energy equivalent of a billion supernovas, even if you can only conjure a measly fireball.
 222. Lord of Magic, 7.2, Generic
@@ -457,7 +457,7 @@
 229. Rivalry, 3.3, Generic
 #Swordsmen, martial artists, and competitive people seek you out to test themselves and grow fond of you more easily, especially if you defeat them. Your martial skills grow faster in combat.
 230. Demon God, 8.1, Generic
-#You are the reincarnation of a Demon God. Your Darkness and Unholy abilities and magic below Mythical level gain a tier and cost less energy, your basic physical stats are massively increased, and you can convert your energy directly into a darkness attribute like a Mana Burst. Demonic and infernal beings weaker than you recognize you as absolute authority, while stronger ones still recognize what you are.
+#(Tag:demonic)You are the reincarnation of a Demon God. Your Darkness and Unholy abilities and magic below Mythical level gain a tier and cost less energy, your basic physical stats are massively increased, and you can convert your energy directly into a darkness attribute like a Mana Burst. Demonic and infernal beings weaker than you recognize you as absolute authority, while stronger ones still recognize what you are.
 231. Wanted, 4.8, Generic
 #Organizations want you on their side and refuse to let you leave. You receive far better treatment and face far looser rules in any organization you join.
 232. Quest Marker, 4.5, Generic
@@ -505,7 +505,7 @@
 253. Flexible, 1.7, Generic
 #You are more flexible than an expert contortionist.
 254. Demon King, 5.6, Generic
-#You are the destined Demon King. Your Darkness and Unholy-related abilities and magic and your physical abilities are greatly enhanced, further increased if your race is demonic or infernal, and you greatly resist all Darkness and Unholy attributes. Demonic and infernal beings are servile and obedient toward you — weaker ones are compelled to serve — and you grow slightly stronger for each creature that submits to you, based on its power.
+#(Tag:demonic)You are the destined Demon King. Your Darkness and Unholy-related abilities and magic and your physical abilities are greatly enhanced, further increased if your race is demonic or infernal, and you greatly resist all Darkness and Unholy attributes. Demonic and infernal beings are servile and obedient toward you — weaker ones are compelled to serve — and you grow slightly stronger for each creature that submits to you, based on its power.
 255. True Hero, 5.8, Generic
 #You are the True Hero blessed by the divines. Your Light and Holy-based abilities and physical abilities are greatly enhanced, and all blessings on you are stronger and longer-lasting. Divine and Clergy-aligned beings regard you with reverence and reward your service, and you gain a temporary boost to all stats when fighting to save someone, scaled to your willpower and the stakes.
 256. Chosen Champion, 7.7, Generic
@@ -543,9 +543,9 @@
 272. Father Time, 7.2, Generic
 #You are Time's favourite: you are immune to all time-based abilities, time travel, and paradoxes, and time cannot be stopped in your world even by the mightiest gods. Your time-related abilities and magic cost massively less strain and energy, and you ignore the paradox and time resistance of targets below god level.
 273. Shub's Favor, 4.8, Generic
-#Thanks to her blessing, your vitality and virility are considerably increased. Those with maternal instincts find themselves more attracted to you, and you are assured to be a great father.
+#(Tag:eldritch)Thanks to her blessing, your vitality and virility are considerably increased. Those with maternal instincts find themselves more attracted to you, and you are assured to be a great father.
 274. Yog's Blessing, 4.6, Generic
-#Thanks to Yog's blessing, all drawbacks from your Space-related abilities are mitigated, they cost less energy, and their range is far higher. You also gain incredible resistance to Space attribute attacks.
+#(Tag:eldritch)Thanks to Yog's blessing, all drawbacks from your Space-related abilities are mitigated, they cost less energy, and their range is far higher. You also gain incredible resistance to Space attribute attacks.
 275. Carnal Engine, 2.7, Generic
 #(Nsfw) During sexual activity, your stamina recovery, endurance, and resilience are massively boosted, letting you continue for literal days without rest.
 276. Four Leaf Clover, 2.7, Generic
@@ -601,7 +601,7 @@
 301. Draw of Fate, 3.3, Generic
 #Your fate is strong and immoderate, curving toward you like a main protagonist. You draw plenty of luck, both good and bad.
 302. Dealmaker, 4.5, Generic
-#"A Deal's a Deal." People feel compelled to fulfil their end of any explicit deal they make with you (No clever wording or Fae deals). It is also far easier for you to goad people into outrageous bets.
+#(Tag:fae)"A Deal's a Deal." People feel compelled to fulfil their end of any explicit deal they make with you (No clever wording or Fae deals). It is also far easier for you to goad people into outrageous bets.
 303. Hentai Protagonist, 4.8, Generic
 #(Nsfw)(Noncon) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
 304. Ecchi Protagonist, 3.5, Generic
@@ -651,21 +651,21 @@
 326. Hanma, 3.5, Baki
 #You are a Hanma with exceptional genetics, giving you increased poison resistance, far faster physical stat growth, and greatly increased martial talent. You carry overwhelming testosterone compared to other men, or equal genetic gifts without the testosterone if you are female.
 327. Lesser Undead, 2.5, Generic
-#Race - You are a lesser undead and must choose between zombie or skeleton. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your choice, and this race toggle is permanent until contested.
+#(Tag:undead)Race - You are a lesser undead and must choose between zombie or skeleton. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your choice, and this race toggle is permanent until contested.
 328. Greater Undead, 3.8, Generic
-#Race - You are a greater undead and transform into a Death Knight or Lich based on your stats. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your form.
+#(Tag:undead)Race - You are a greater undead and transform into a Death Knight or Lich based on your stats. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your form.
 329. Fishman, 4.6, One Piece
 #Race - You are a Fishman of a random hybrid with naturally stronger physical stats than humans. You breathe underwater, hold great water affinity, communicate with sea-bound creatures, and can learn Fishman Karate.
 330. Lunarian, 6.2, One Piece
 #Race - You are a Lunarian of a legendary race with massively increased physical stats, wings, and natural fire manipulation. While the fire on your back stays lit, your durability is massively increased.
 331. Nightkin, 4.9, Fate
-#Race - You are a Nightkin vampire created from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding as long as you hold blood, and you grow stronger and can evolve to the next undeath stage by consuming enough blood.
+#(Tag:vampiric)Race - You are a Nightkin vampire created from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding as long as you hold blood, and you grow stronger and can evolve to the next undeath stage by consuming enough blood.
 332. Nightmare, 5.2, Tsukihime
-#Race - You are a Nightmare vampire born from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding while you hold blood and can turn people into ghouls. You wield your own unique Elite Rank Ability with no ability slot and evolve to the next undeath stage by consuming enough blood.
+#(Tag:vampiric)Race - You are a Nightmare vampire born from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding while you hold blood and can turn people into ghouls. You wield your own unique Elite Rank Ability with no ability slot and evolve to the next undeath stage by consuming enough blood.
 333. Dead Apostle, 6.7, Tsukihime
-#Race - You are a fully realized Dead Apostle with vastly superior physical stats and time-rewinding regenerative immortality while you hold blood. You gain your own Epic ranked ability that costs no ability slot, turn humans and animals into lower-ranking apostle thralls, and grow stronger and recover energy the more blood you consume.
+#(Tag:vampiric)Race - You are a fully realized Dead Apostle with vastly superior physical stats and time-rewinding regenerative immortality while you hold blood. You gain your own Epic ranked ability that costs no ability slot, turn humans and animals into lower-ranking apostle thralls, and grow stronger and recover energy the more blood you consume.
 334. Dead Apostle Ancestor, 8.0, Tsukihime
-#Race - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
+#(Tag:vampiric)Race - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
 335. Beastkin, 3.5, Generic
 #Race - You are a beastkin of a random animal such as bear, rabbit, cat, wolf, etc., with enhanced physical stats and night vision. You gain unique traits and biological features based on your hybrid.
 336. Ghoul, 4.2, Tokyo Ghoul
@@ -673,7 +673,7 @@
 337. One-Eyed Ghoul, 5.3, Tokyo Ghoul
 #Race - You are a One-Eyed Ghoul, stronger than an average ghoul, with superhuman stats and a chosen Kagune. You grow stronger by eating human flesh but can also eat normal human food.
 338. Vampire, 3.7, JoJo
-#Race - You are a vampire born of the Stone Mask created by Pillar Man Kars. You gain amped physical stats, ghoul and vampire creation, and flesh manipulation, but you are deathly vulnerable to sunlight.
+#(Tag:vampiric)Race - You are a vampire born of the Stone Mask created by Pillar Man Kars. You gain amped physical stats, ghoul and vampire creation, and flesh manipulation, but you are deathly vulnerable to sunlight.
 339. Pillar Men, 4.6, JoJo
 #Race - You are a pillar man unlocked by the Stone Mask with self-biokinesis, flesh absorption, thrall creation, and massively increased physical stats. You are vulnerable to sunlight.
 340. Perfect Lifeform, 5.8, JoJo
@@ -691,7 +691,7 @@
 346. Rodrigues, 2.7, Generic
 #You are a Brazilian descendant of the legendary Jetstream Sam. You can double jump and hold talent in swordsmanship and swordsmithing.
 347. Tepes, 3.8, Generic
-#You descend from the legendary Tepes bloodline of original vampires. Your Vampirism, Unholy, and Hemokinetic abilities are more potent, and all undead and vampires respect you more.
+#(Tag:vampiric)You descend from the legendary Tepes bloodline of original vampires. Your Vampirism, Unholy, and Hemokinetic abilities are more potent, and all undead and vampires respect you more.
 348. Mithril Skeleton, 4.1, Generic
 #Your skeleton is unusually durable, flexible, and better at conducting energy, taking far more punishment before damage. Note that your skeleton isn't real mithril and scales with your physical stats.
 349. Adamantium Skeleton, 5.7, Generic
@@ -715,15 +715,15 @@
 358. Blood Mana, 2.6, Generic
 #You can treat your vitality as a secondary mana bar at a 1-to-1 exchange rate. Expended vitality cannot be healed and only returns through rest.
 359. Angel, 3.4, Generic
-#Race Change - You are an Angel created with holy power, with slightly increased physical stats and natural winged flight. Your Holy and Light-based abilities are more potent and include Holy Light (Rare Rank Ability), while your Darkness and Unholy abilities weaken and you stay vulnerable to Unholy attributes.
+#(Tag:holy)Race Change - You are an Angel created with holy power, with slightly increased physical stats and natural winged flight. Your Holy and Light-based abilities are more potent and include Holy Light (Rare Rank Ability), while your Darkness and Unholy abilities weaken and you stay vulnerable to Unholy attributes.
 360. Principality, 4.2, Generic
-#Race Change - You are a Principality, a higher-tier angel with two pairs of wings and holy power. You gain increased physical stats, energy reserves, and natural winged flight, stronger Holy and Light-based abilities including Holy Light (Rare Rank Ability), weaker Darkness and Unholy abilities, and vulnerability to Unholy attributes.
+#(Tag:holy)Race Change - You are a Principality, a higher-tier angel with two pairs of wings and holy power. You gain increased physical stats, energy reserves, and natural winged flight, stronger Holy and Light-based abilities including Holy Light (Rare Rank Ability), weaker Darkness and Unholy abilities, and vulnerability to Unholy attributes.
 361. Dominion, 5.4, Generic
-#Race Change - You are a Dominion, a high-tier angel with three pairs of wings and increased magical and physical abilities. Your Holy and Light attributes are considerably boosted and cost less mana, you instinctively learn Holy and Light Magic and convert energy into greater Holy Light (Elite Rank Ability), while your Darkness and Unholy attributes are greatly weakened.
+#(Tag:holy)Race Change - You are a Dominion, a high-tier angel with three pairs of wings and increased magical and physical abilities. Your Holy and Light attributes are considerably boosted and cost less mana, you instinctively learn Holy and Light Magic and convert energy into greater Holy Light (Elite Rank Ability), while your Darkness and Unholy attributes are greatly weakened.
 362. Throne, 6.5, Generic
-#Race Change - You are a Throne, one of the highest-ranking angels with four pairs of wings and great physical and magical abilities. Your Holy and Light attributes are greatly boosted and cost less mana, you instinctively develop Holy and Light Magic and convert energy into searing Holy Light or pure holy energy, while your Darkness and Unholy attributes are greatly weakened and hurt you upon use.
+#(Tag:holy)Race Change - You are a Throne, one of the highest-ranking angels with four pairs of wings and great physical and magical abilities. Your Holy and Light attributes are greatly boosted and cost less mana, you instinctively develop Holy and Light Magic and convert energy into searing Holy Light or pure holy energy, while your Darkness and Unholy attributes are greatly weakened and hurt you upon use.
 363. Seraphim, 7.2, Generic
-#Race Change - You are a Seraphim, the strongest Angel kind with 5 pairs of wings and incredible magical and physical power. Your Holy and Light abilities and magic at Legendary rank or below gain a tier boost, you instinctively use and develop Holy and Light Magic and convert Mana into a Holy Mana Burst, but you cannot use any Darkness or Unholy abilities and magic.
+#(Tag:holy)Race Change - You are a Seraphim, the strongest Angel kind with 5 pairs of wings and incredible magical and physical power. Your Holy and Light abilities and magic at Legendary rank or below gain a tier boost, you instinctively use and develop Holy and Light Magic and convert Mana into a Holy Mana Burst, but you cannot use any Darkness or Unholy abilities and magic.
 364. Student, 2.4, Generic
 #You learn faster and easier when taught personally by someone more skilled than you in the subject.
 365. Disciple, 3.2, Generic
@@ -731,7 +731,7 @@
 366. Prodigious Pupil, 4.1, Generic
 #You are THE Pupil who learns much faster and far more easily when taught personally by someone more skilled than you. You also earn your teachers' favour more easily.
 367. The Taker, 4.0, Generic
-#You are the Taker whom Infernal, Holy, or Divine beings you find attractive find more attractive in return. You earn their affection more easily.
+#(Tag:demonic)You are the Taker whom Infernal, Holy, or Divine beings you find attractive find more attractive in return. You earn their affection more easily.
 368. Monstergirl Enthusiast, 2.5, Generic
 #(Nsfw) Hybrid girls and those of the opposite gender with monster or beast traits like you more and build relationships with you more easily. Some monsters you encounter seem oddly humanoid and compatible.
 369. Reaper's Presence, 4.4, Generic
@@ -751,7 +751,7 @@
 376. Spiral, 9.9, Gurren Lagann
 #If you hold the will, you find a way.
 377. Monster of God, 7.2, Hellsing
-#Race Change - You are a monster of god transformed by Helena's Nail through your heart, with monstrous physical stats and holy energy so potent your touch sets a true vampire ablaze. You conjure and freely control holy thorned vines like limbs that protect you on instinct and set anything unholy they touch ablaze with holy fire. You stay completely immortal while your heart remains intact as your vines rebuild your body without consuming energy or using an ability slot.
+#(Tag:holy)Race Change - You are a monster of god transformed by Helena's Nail through your heart, with monstrous physical stats and holy energy so potent your touch sets a true vampire ablaze. You conjure and freely control holy thorned vines like limbs that protect you on instinct and set anything unholy they touch ablaze with holy fire. You stay completely immortal while your heart remains intact as your vines rebuild your body without consuming energy or using an ability slot.
 378. Magical Girl Transformation, 0.3, Generic
 #You perform all transformations with overly dramatic Magical Girl Transformation flair.
 379. Hard to Kill, 7.5, Generic
@@ -773,9 +773,9 @@
 387. Avaricious Greed, 7.2, Generic
 #More, more, more: you cannot get enough, as the restock timers and cooldown of all your items drop by 100x.
 388. Blood Demon, 5.4, Demon Slayer
-#You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
+#(Tag:demonic)You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
 389. Progenitor Demon, 6.9, Demon Slayer
-#You are a progenitor sharing all of Muzan Kibutsuji's powers with free shapeshifting, extremely powerful regeneration, and superhuman physical abilities. You turn others into demons with your blood, but sunlight is extremely lethal to you.
+#(Tag:demonic)You are a progenitor sharing all of Muzan Kibutsuji's powers with free shapeshifting, extremely powerful regeneration, and superhuman physical abilities. You turn others into demons with your blood, but sunlight is extremely lethal to you.
 390. Regenerative, 4.7, Generic
 #Your body receives all healing unusually well with 5x stronger natural regeneration and 2x more effective healing effects.
 391. Wardrobe, 3.5, Generic
@@ -841,19 +841,19 @@
 421. Cosmetic Calibration, 1.8, Generic
 #While active, you prevent transformations, race changes, and similar shifts from altering your looks in ways you consider undesirable.
 422. Imp, 2.1, Generic
-#Race Change - You are an Imp, a low-rank Demon. You gain increased physical and magical stats and increased affinity for Unholy, Darkness, and Fire, but you gain vulnerability to Holy, Light, and exorcisms.
+#(Tag:unholy)Race Change - You are an Imp, a low-rank Demon. You gain increased physical and magical stats and increased affinity for Unholy, Darkness, and Fire, but you gain vulnerability to Holy, Light, and exorcisms.
 423. Demon, 3.7, Generic
-#Race Change - You are a Demon, a middle-rank infernal being. You gain augmented physical and magical stats and greater affinity for Unholy, Darkness, Infernal, and Fire, but you gain vulnerability to Holy, Light, Divine, and exorcisms. You can turn body parts into natural weapons such as sharp teeth and claws.
+#(Tag:unholy)Race Change - You are a Demon, a middle-rank infernal being. You gain augmented physical and magical stats and greater affinity for Unholy, Darkness, Infernal, and Fire, but you gain vulnerability to Holy, Light, Divine, and exorcisms. You can turn body parts into natural weapons such as sharp teeth and claws.
 424. Fiend, 4.9, Generic
-#Race Change - You are a Fiend, a high-rank infernal demon. You gain considerable physical and magical abilities and greater affinity for Unholy, Darkness, Infernal, and Fire, letting you master related abilities and spells much faster and naturally create Hell Flame (Rare Rank Ability), but you gain extreme vulnerability to Holy, Divine, Light, and exorcisms.
+#(Tag:unholy)Race Change - You are a Fiend, a high-rank infernal demon. You gain considerable physical and magical abilities and greater affinity for Unholy, Darkness, Infernal, and Fire, letting you master related abilities and spells much faster and naturally create Hell Flame (Rare Rank Ability), but you gain extreme vulnerability to Holy, Divine, Light, and exorcisms.
 425. Archfiend, 5.7, Generic
-#Race Change - You are an Archfiend, a Demon Noble. You gain greatly superhuman stats, potent magical abilities, and a presence that commands respect and fear from weaker Infernals. You gain incredible affinity for Unholy, Darkness, and Infernal, letting you use related abilities and spells to a greater degree and naturally create Hell Flame (Rare Rank Ability), but you cannot use Holy or Light under normal circumstances and you gain vulnerability to them. You can unleash your demonic power to assume a more demonic appearance, further augmenting your stats and imbuing your abilities with Darkness at the cost of faster energy drain.
+#(Tag:demonic)(Tag:unholy)Race Change - You are an Archfiend, a Demon Noble. You gain greatly superhuman stats, potent magical abilities, and a presence that commands respect and fear from weaker Infernals. You gain incredible affinity for Unholy, Darkness, and Infernal, letting you use related abilities and spells to a greater degree and naturally create Hell Flame (Rare Rank Ability), but you cannot use Holy or Light under normal circumstances and you gain vulnerability to them. You can unleash your demonic power to assume a more demonic appearance, further augmenting your stats and imbuing your abilities with Darkness at the cost of faster energy drain.
 426. True Demon, 6.8, Generic
-#Race Change - You are a True Demon, a Demon Royalty. You gain incredible physical and magical might. Your true blood lets you command lower-ranked Infernals, though strong wills can partly resist. You gain unmatched affinity for Darkness, Infernal, and Unholy, letting you convert your energy into Dark or Unholy attributes and naturally create Greater Hell Flame (Elite Rank Ability), but you cannot use Holy or Light under normal circumstances and you gain vulnerability to Holy. You can unleash your True Demon form to assume a more demonic appearance, augmenting your stats while considerably increasing energy drain.
+#(Tag:demonic)(Tag:unholy)Race Change - You are a True Demon, a Demon Royalty. You gain incredible physical and magical might. Your true blood lets you command lower-ranked Infernals, though strong wills can partly resist. You gain unmatched affinity for Darkness, Infernal, and Unholy, letting you convert your energy into Dark or Unholy attributes and naturally create Greater Hell Flame (Elite Rank Ability), but you cannot use Holy or Light under normal circumstances and you gain vulnerability to Holy. You can unleash your True Demon form to assume a more demonic appearance, augmenting your stats while considerably increasing energy drain.
 427. Daemon, 7.7, Generic
-#Race Change - You are a Daemon, more than a mere infernal being. You gain superhuman physical abilities, incredible magical power, energy reserves, and regeneration. You gain incredible affinity for Darkness, Infernal, and Unholy, letting you invent spells on the spot and massively amplify related abilities and spells. When you unleash your true spirit form, your maximum health and regeneration convert into magical power, you become incorporeal, massively amplify your energy output, and imbue your powers with Unholy and Darkness. Since energy replaces vitality, you cannot die while you have energy.
+#(Tag:demonic)Race Change - You are a Daemon, more than a mere infernal being. You gain superhuman physical abilities, incredible magical power, energy reserves, and regeneration. You gain incredible affinity for Darkness, Infernal, and Unholy, letting you invent spells on the spot and massively amplify related abilities and spells. When you unleash your true spirit form, your maximum health and regeneration convert into magical power, you become incorporeal, massively amplify your energy output, and imbue your powers with Unholy and Darkness. Since energy replaces vitality, you cannot die while you have energy.
 428. Demon Kaiser, 7.7, Generic
-#Race Change - You are a Demon Kaiser, a primordial Infernal. You gain increased magical ability, massively amplified physical abilities and regeneration, and can flatten hills with your fists at base. You can bend any weaker Infernal to your will. You gain incredible affinity for Infernal and Unholy, letting you augment related abilities below Legendary rank to a higher tier, but you gain vulnerability to Holy and Light. When you unleash your True Kaiser form, your physical stats massively amplify, you gain incredible magical resistance, and you lose your Holy and Light vulnerability, but your energy consumption amplifies and the form dispels once you run out of energy.
+#(Tag:demonic)Race Change - You are a Demon Kaiser, a primordial Infernal. You gain increased magical ability, massively amplified physical abilities and regeneration, and can flatten hills with your fists at base. You can bend any weaker Infernal to your will. You gain incredible affinity for Infernal and Unholy, letting you augment related abilities below Legendary rank to a higher tier, but you gain vulnerability to Holy and Light. When you unleash your True Kaiser form, your physical stats massively amplify, you gain incredible magical resistance, and you lose your Holy and Light vulnerability, but your energy consumption amplifies and the form dispels once you run out of energy.
 429. Augmented, 2.6, Generic
 #(Tech) Race Change - You are a convert, half flesh and half machine. You gain increased physical stats and energy reserves and increased affinity for Tinker abilities, technology, and interfacing, but you gain vulnerability to Electricity and Interfacing.
 430. Android, 3.7, Generic
@@ -927,7 +927,7 @@
 464. Initiate Magician, 3.3, Generic
 #You are a Magician just embarking on your mystical journey. You learn, memorize, and master spells faster and cast them more efficiently. Penalties for learning a magical system not your own are mitigated.
 465. Incubus/Succubus, 4.0, Generic
-#Race Change - You are a dream demon, an Incubus/Succubus who feeds on your victim's vitality. You are more attractive and alluring to your preferred partners. You also gain slightly superhuman stats and increased magical power. You can sense arousal, peek into dreams, subtly influence them, and shapeshift to your partner's preferences. All Lewd abilities and spells gain potency.
+#(Tag:demonic)Race Change - You are a dream demon, an Incubus/Succubus who feeds on your victim's vitality. You are more attractive and alluring to your preferred partners. You also gain slightly superhuman stats and increased magical power. You can sense arousal, peek into dreams, subtly influence them, and shapeshift to your partner's preferences. All Lewd abilities and spells gain potency.
 466. Long Live the King, 4.8, Generic
 #May his reign last a thousand years. People even slightly loyal to you become much more loyal, you earn loyalty more easily, and people viewing you favorably make sacrifices for you more willingly.
 467. Tickets Please, 3.3, Generic
@@ -943,7 +943,7 @@
 472. Jormungandr, 7.8, Generic
 #Race Change - You are kin of Jormungandr, the World Serpent. You can unleash your characteristics as a hybrid or full-sized World Serpent to access your full capabilities. As a Jormungandr, you gain extreme physical stats, especially strength and endurance. Your venom can bring even the strongest gods to their knees, and wounds you inflict cannot heal except through the strongest healing gods.
 473. Nekomata, 5.8, Generic
-#Race Change - You are a Nekomata, a powerful cat yokai with a forked tail. You can shapeshift into human and cat forms at will, and you gain enhanced energy reserves and regeneration. Your Nekomata nature grants great affinity for Necromancy, increasing the potency and efficiency of all Soul- and Necromancy-based abilities and spells. You can also naturally use Animate Undead (Elite Rank Ability) and conjure ghostflames.
+#(Tag:undead)Race Change - You are a Nekomata, a powerful cat yokai with a forked tail. You can shapeshift into human and cat forms at will, and you gain enhanced energy reserves and regeneration. Your Nekomata nature grants great affinity for Necromancy, increasing the potency and efficiency of all Soul- and Necromancy-based abilities and spells. You can also naturally use Animate Undead (Elite Rank Ability) and conjure ghostflames.
 474. Sköll, 7.7, Generic
 #Race Change - You are the child of Sköll, the Sun Devouring Wolf. You can manifest and hide your lycanthropic nature at will; unleashing it grants an extreme increase in physical and magical power. As the Sun Devourer, you gain immense Fire affinity, massively boosting the potency and efficiency of any Fire-based ability you use. In addition, you absorb sunlight into energy and grow passively stronger under the sun. You can bless others into Lycanthropes under your command. You can also devour "Energy", eating spells, magical constructs, or high-energy objects to temporarily add them to your reserves and increase your maximum energy capacity.
 475. Nemean, 7.8, Generic
@@ -965,7 +965,7 @@
 483. Royal Beastkin, 6.1, Generic
 #Race Change - You are a Royal Beastkin, a powerful beast hybrid with potent royal blood in your veins. You gain great physical strength and incredibly honed senses varying slightly by beast-side race. Your natural fighting instincts can compete with trained fighters without prior training. You gain great affinity for Changer abilities, making them more efficient and easier to control. You gain incredible control over your beast side, letting you fully suppress it, fully transform into it, or take anything in between. Your royal blood also grants increased charisma and an authoritative presence, far more effective against beast-aligned beings.
 484. Nephalem, 8.7, Generic
-#Race Change - You are a Nephalem, an impossible union of Daemon and Seraphim. You gain immense magical and physical power. All Holy, Light, Darkness, and Infernal abilities increase by one tier and cost significantly less energy. You can naturally convert your energy into Darkness or Holy mana bursts.
+#(Tag:demonic)Race Change - You are a Nephalem, an impossible union of Daemon and Seraphim. You gain immense magical and physical power. All Holy, Light, Darkness, and Infernal abilities increase by one tier and cost significantly less energy. You can naturally convert your energy into Darkness or Holy mana bursts.
 485. Provocative, 2.6, Generic
 #You are very good at getting under people's skin, whether angering them or breaking their stoic mask with a joke or flirty remark. Others find it harder to keep their composure around you.
 486. Steel Man, 4.1, Generic
@@ -973,11 +973,11 @@
 487. Blacklight Physique, 7.4, Prototype
 #Race Change - Your previous genetic material is completely assimilated, turning you into a living mass of Blacklight Virus. Even at base, you can smash apart tanks and outrun cars. You can also regenerate by assimilating biological matter. As long as even a fist-sized mass of Blacklight forming your core remains, you still live. You can analyze and replicate any biological part you consume. The stronger the assimilated target, the harder it is to assimilate them.
 488. Dragonlord, 7.0, Elden Ring
-#Race Change - You are the hatchling of Placidusax, the Dragonlord. As a Royal Ancient Dragon, albeit a child, you gain greatly superhuman physical abilities and greatly increased magical powers. You can shift between your 5-headed ancient dragon form and humanoid form at will; your dragon form's size depends on your power level and maturity. You possess gilded gravel scales granting incredible resilience, and as Placidusax's child, you can breathe incinerating golden flames and manifest crimson dragon lightning. Unique to your lineage, you possess immense time affinity, letting you learn time spells on your own through natural inclination. But even with talent, time is no trifling power and mastery will take a very, very long time.
+#(Tag:dragonic)Race Change - You are the hatchling of Placidusax, the Dragonlord. As a Royal Ancient Dragon, albeit a child, you gain greatly superhuman physical abilities and greatly increased magical powers. You can shift between your 5-headed ancient dragon form and humanoid form at will; your dragon form's size depends on your power level and maturity. You possess gilded gravel scales granting incredible resilience, and as Placidusax's child, you can breathe incinerating golden flames and manifest crimson dragon lightning. Unique to your lineage, you possess immense time affinity, letting you learn time spells on your own through natural inclination. But even with talent, time is no trifling power and mastery will take a very, very long time.
 489. Everlasting Dragon, 6.8, Dark Souls
-#Race Change - You are an Everlasting Dragon, a being from before time and light; well, at least a hatchling of one. As an Everlasting Dragon, you gain greatly superhuman stats and magical abilities. Most of all, you possess the Stone Scales of Immortality. While in dragon form with your scales on, you are incredibly resilient to any attack, as if armored in adamantium with similar magic resistance, plus great regenerative abilities. But lightning or a greatly powerful attack rends your scales from your flesh and removes your increased durability. You can shift between base and dragon forms at will.
+#(Tag:dragonic)Race Change - You are an Everlasting Dragon, a being from before time and light; well, at least a hatchling of one. As an Everlasting Dragon, you gain greatly superhuman stats and magical abilities. Most of all, you possess the Stone Scales of Immortality. While in dragon form with your scales on, you are incredibly resilient to any attack, as if armored in adamantium with similar magic resistance, plus great regenerative abilities. But lightning or a greatly powerful attack rends your scales from your flesh and removes your increased durability. You can shift between base and dragon forms at will.
 490. Nidhogg, 7.8, Generic
-#Race Change - You are a descendant of Nidhogg, the mythical dragon of Death and Decay. You can swap between base and Nidhogg forms at will; your degree of transformation dictates your accessible power. You gain tremendous physical abilities and incredibly potent, dense magical energy. You gain overwhelming affinity for necromancy, letting you naturally revive the dead as undead under your command and massively boosting the potency and efficiency of any necromancy-based abilities or spells you use. Your dragon breath distills the concept of decay, rotting whatever it touches down to flesh, soul, and existence. Effectiveness varies with target and power level.
+#(Tag:dragonic)Race Change - You are a descendant of Nidhogg, the mythical dragon of Death and Decay. You can swap between base and Nidhogg forms at will; your degree of transformation dictates your accessible power. You gain tremendous physical abilities and incredibly potent, dense magical energy. You gain overwhelming affinity for necromancy, letting you naturally revive the dead as undead under your command and massively boosting the potency and efficiency of any necromancy-based abilities or spells you use. Your dragon breath distills the concept of decay, rotting whatever it touches down to flesh, soul, and existence. Effectiveness varies with target and power level.
 491. Gift of Nyar, 4.9, Generic
 #You have received a gift from Nyarlathotep, the Crawling Ones. All Stranger abilities gain potency and cost less energy to use. You also grow more proficient in deception, obscurification, and acting.
 492. Hydra Heart, 7.8, Generic
@@ -1011,31 +1011,31 @@
 506. Elementalist, 3.8, Generic
 #You have great affinity with the elements. Elemental abilities and spells cost less energy, and elementals and spirits gain affinity for you and like you more easily.
 507. Exorcist, 3.4, Generic
-#You are an Exorcist, an agent of the Heavenly Realm specializing in destroying spiritual beings and demons with the Holy attribute. You gain increased affinity for Holy, Spiritual, and Light and for learning their magic. You can also sense nearby Unholy and Spiritual entities, whether to grant them peaceful passing or painful eviction from the material realm.
+#(Tag:holy)You are an Exorcist, an agent of the Heavenly Realm specializing in destroying spiritual beings and demons with the Holy attribute. You gain increased affinity for Holy, Spiritual, and Light and for learning their magic. You can also sense nearby Unholy and Spiritual entities, whether to grant them peaceful passing or painful eviction from the material realm.
 508. Warlock, 4.8, Generic
-#You are a Warlock, a practitioner of Dark and Demonic Arts. You gain increased affinity for Unholy- and Darkness-based abilities and spells. You are also immune to fae deals and can detect the true nature of magical bindings as a would-be demon-dealer. You also naturally know how to craft magically binding deals, though only ones where both parties explicitly know exactly what they gain.
+#(Tag:demonic)(Tag:unholy)You are a Warlock, a practitioner of Dark and Demonic Arts. You gain increased affinity for Unholy- and Darkness-based abilities and spells. You are also immune to fae deals and can detect the true nature of magical bindings as a would-be demon-dealer. You also naturally know how to craft magically binding deals, though only ones where both parties explicitly know exactly what they gain.
 509. Death Knight, 3.5, Generic
-#Race Change - You are a Death Knight, an Undead evolved into a far tougher, more physically capable caste. You gain greatly increased physical capabilities and need no rest or sustenance; your energy reserves power all functions. You can naturally use [Necrotic Weapon]. You gain increased Necromancy, Darkness, and Martial affinity, augmenting related abilities, skills, and magic, but you gain vulnerability to Holy- and Light-based abilities and magic. Your energy recovers faster in locations with more negative energy.
+#(Tag:undead)Race Change - You are a Death Knight, an Undead evolved into a far tougher, more physically capable caste. You gain greatly increased physical capabilities and need no rest or sustenance; your energy reserves power all functions. You can naturally use [Necrotic Weapon]. You gain increased Necromancy, Darkness, and Martial affinity, augmenting related abilities, skills, and magic, but you gain vulnerability to Holy- and Light-based abilities and magic. Your energy recovers faster in locations with more negative energy.
 510. Dread Knight, 4.8, Generic
-#Race Change - You are a Dread Knight, a higher Undead caste specializing in direct martial combat. You gain very potent physical abilities and virtually unlimited stamina, needing only Energy to sustain yourself. You can naturally use [Dread Blade] and gain great Necromancy, Darkness, and Martial affinity, augmenting related abilities, skills, and magic, but you gain vulnerability to Holy- and Light-based abilities and magic.
+#(Tag:undead)Race Change - You are a Dread Knight, a higher Undead caste specializing in direct martial combat. You gain very potent physical abilities and virtually unlimited stamina, needing only Energy to sustain yourself. You can naturally use [Dread Blade] and gain great Necromancy, Darkness, and Martial affinity, augmenting related abilities, skills, and magic, but you gain vulnerability to Holy- and Light-based abilities and magic.
 511. Gravelord, 5.5, Generic
-#Race Change - You are a Gravelord, a royal Undead caste evolved for direct combat. You gain mighty physical abilities and virtually unlimited stamina, needing only your own Energy reserves to sustain yourself. You can naturally use [Gravelord's Blade] and gain greatly increased Necrotic, Dark, and Martial affinity, augmenting related skills, magic, and abilities, but you gain vulnerability to Holy- and Light-based abilities and magic.
+#(Tag:undead)Race Change - You are a Gravelord, a royal Undead caste evolved for direct combat. You gain mighty physical abilities and virtually unlimited stamina, needing only your own Energy reserves to sustain yourself. You can naturally use [Gravelord's Blade] and gain greatly increased Necrotic, Dark, and Martial affinity, augmenting related skills, magic, and abilities, but you gain vulnerability to Holy- and Light-based abilities and magic.
 512. Necro Kaiser, 6.4, Generic
-#Race Change - You are a Necro Kaiser, an Undead Ruler evolved for devastation. You gain incredible physical abilities and virtually unlimited stamina, needing only your own Energy reserves to sustain yourself. You can naturally use [Gravelord's Blade] and [Animate Undead], and all undead under your command are naturally stronger and able to act independently. You gain immense affinity for Necromancy, Darkness, and Martial abilities, spells, and skills, greatly increasing their potency, but you gain vulnerability to Holy- and Light-based abilities and magic.
+#(Tag:undead)Race Change - You are a Necro Kaiser, an Undead Ruler evolved for devastation. You gain incredible physical abilities and virtually unlimited stamina, needing only your own Energy reserves to sustain yourself. You can naturally use [Gravelord's Blade] and [Animate Undead], and all undead under your command are naturally stronger and able to act independently. You gain immense affinity for Necromancy, Darkness, and Martial abilities, spells, and skills, greatly increasing their potency, but you gain vulnerability to Holy- and Light-based abilities and magic.
 513. Ruin Tyrant, 7.2, Generic
-#Race Change - You are a Ruin Tyrant, the highest undead caste, ruler of the dead and extinguisher of life. You gain unrivaled physical abilities and unlimited stamina; you do not even need energy to sustain yourself, you simply are, though you can still be destroyed. You can naturally use [Ruin Edge] and [Animate Undead], and all undead under your command are naturally stronger and able to act independently. You gain unrivaled Necrotic, Dark, and Martial affinity, augmenting related skills, magic, and abilities, but you gain vulnerability to Holy- and Light-based abilities and magic.
+#(Tag:undead)Race Change - You are a Ruin Tyrant, the highest undead caste, ruler of the dead and extinguisher of life. You gain unrivaled physical abilities and unlimited stamina; you do not even need energy to sustain yourself, you simply are, though you can still be destroyed. You can naturally use [Ruin Edge] and [Animate Undead], and all undead under your command are naturally stronger and able to act independently. You gain unrivaled Necrotic, Dark, and Martial affinity, augmenting related skills, magic, and abilities, but you gain vulnerability to Holy- and Light-based abilities and magic.
 514. Lich, 3.8, Generic
-#Race Change - You are a Lich, an Undead caste specializing in Necromancy and Dark Magic, not the phylactery kind. Though rather weak physically, you gain increased energy reserves and nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You study magic more easily and gain increased Darkness and Necromancy affinity. In addition, you can naturally use [Lesser Necromancy] to raise your own Undead Servants.
+#(Tag:undead)Race Change - You are a Lich, an Undead caste specializing in Necromancy and Dark Magic, not the phylactery kind. Though rather weak physically, you gain increased energy reserves and nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You study magic more easily and gain increased Darkness and Necromancy affinity. In addition, you can naturally use [Lesser Necromancy] to raise your own Undead Servants.
 515. Elder Lich, 4.7, Generic
-#Race Change - You are an Elder Lich, a higher Undead caste evolved from a regular Lich, specializing in raising undead armies and Necromancy. Though rather disappointing physically, you gain greater energy reserves and magical abilities plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You study magic with greater ease and gain increased Darkness and Necromancy affinity. In addition, you can naturally use [Lesser Necromancy] to raise your own Undead Servants, your commanded undead are naturally more powerful and intelligent, and you can command more undead at once than you otherwise could.
+#(Tag:undead)Race Change - You are an Elder Lich, a higher Undead caste evolved from a regular Lich, specializing in raising undead armies and Necromancy. Though rather disappointing physically, you gain greater energy reserves and magical abilities plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You study magic with greater ease and gain increased Darkness and Necromancy affinity. In addition, you can naturally use [Lesser Necromancy] to raise your own Undead Servants, your commanded undead are naturally more powerful and intelligent, and you can command more undead at once than you otherwise could.
 516. Night Lich, 5.8, Generic
-#Race Change - You are a Night Lich, an evolved undead with dark magic thrumming in their bones, specializing in raising undead armies, Dark Magic, and Necromancy. Though lacking physical might, you gain great energy reserves and magical ability plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You gain great capacity for learning, developing, and studying Necromancy and Dark Magic, and your Necromancy-based abilities work more efficiently. In addition, you can naturally use [Animate Undead] to raise your own Undead Servants, your commanded undead are naturally more powerful and intelligent, you can command more undead at once than you otherwise could, and you instinctively sense nearby dead like a sixth sense.
+#(Tag:undead)Race Change - You are a Night Lich, an evolved undead with dark magic thrumming in their bones, specializing in raising undead armies, Dark Magic, and Necromancy. Though lacking physical might, you gain great energy reserves and magical ability plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You gain great capacity for learning, developing, and studying Necromancy and Dark Magic, and your Necromancy-based abilities work more efficiently. In addition, you can naturally use [Animate Undead] to raise your own Undead Servants, your commanded undead are naturally more powerful and intelligent, you can command more undead at once than you otherwise could, and you instinctively sense nearby dead like a sixth sense.
 517. Overlord, 6.7, Generic
-#Race Change - You are an Overlord, the highest caste of regular undead, whose existence overturns the living into an undead army. While only superhuman physically, your magical prowess is mighty, granting increased energy reserves and potency plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. Your Necromancy affinity is incredibly potent, letting you learn, study, and create Necromancy spells with great ease and increasing the potency of any Necromancy-related ability you use. You can naturally use [Greater Animate Undead] to raise your own Undead Army, your commanded undead are naturally more powerful and intelligent, and you can command an unlimited number at once. You instinctively sense nearby dead like a sixth sense. You can also seize command of any undead you encounter as long as you overwhelmingly overpower them or defeat them yourself.
+#(Tag:undead)Race Change - You are an Overlord, the highest caste of regular undead, whose existence overturns the living into an undead army. While only superhuman physically, your magical prowess is mighty, granting increased energy reserves and potency plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. Your Necromancy affinity is incredibly potent, letting you learn, study, and create Necromancy spells with great ease and increasing the potency of any Necromancy-related ability you use. You can naturally use [Greater Animate Undead] to raise your own Undead Army, your commanded undead are naturally more powerful and intelligent, and you can command an unlimited number at once. You instinctively sense nearby dead like a sixth sense. You can also seize command of any undead you encounter as long as you overwhelmingly overpower them or defeat them yourself.
 518. Eclipse, 7.9, Generic
-#Race Change - You are the Eclipse, pure necromancy shaped as an undead, a living icon of death meant to extinguish life. Though only superhuman physically, your magical reserves are vast and incredibly potent with infinite stamina from undeath. As Necromancy embodied, your affinity for Necromancy spells and Abilities is unmatched, increasing all their potency beyond normal limits and letting you invent spells by instinct and learn existing ones by observation. You can also naturally use [True Necromancy] to raise an undead army, all undead under your command are naturally more powerful and cognizant, and you can command an unlimited number at once. Any undead outside your command naturally feels compelled to submit to you.
+#(Tag:undead)Race Change - You are the Eclipse, pure necromancy shaped as an undead, a living icon of death meant to extinguish life. Though only superhuman physically, your magical reserves are vast and incredibly potent with infinite stamina from undeath. As Necromancy embodied, your affinity for Necromancy spells and Abilities is unmatched, increasing all their potency beyond normal limits and letting you invent spells by instinct and learn existing ones by observation. You can also naturally use [True Necromancy] to raise an undead army, all undead under your command are naturally more powerful and cognizant, and you can command an unlimited number at once. Any undead outside your command naturally feels compelled to submit to you.
 519. Skeleton, 2.2, Generic
-#Race Change - You are an animated skeleton, the most basic undead. Your physical stats match your living state, but you need no sustenance or rest, needing only your own energy reserves to sustain yourself. You also gain increased Necro and Dark affinity but gain vulnerability to Light- and Holy-based abilities. (This can be rerolled for free)
+#(Tag:undead)Race Change - You are an animated skeleton, the most basic undead. Your physical stats match your living state, but you need no sustenance or rest, needing only your own energy reserves to sustain yourself. You also gain increased Necro and Dark affinity but gain vulnerability to Light- and Holy-based abilities. (This can be rerolled for free)
 520. Kure, 2.8, Kengan Ashura
 #You are a member of the Kure Clan, selectively bred as assassins and martial artists. Your genes grant increased physical abilities, greater physical growth, and better combat instincts. You can also use "Removal", removing the brain's natural limiters that prevent using 100% of your physical strength to avoid self-injury. You can increase your Removal percentage through training.
 521. Pretty Up, 1.9, Generic
@@ -1083,7 +1083,7 @@
 542. Machine Spirit Mechanic, 5.4, Generic
 #(Tech) You are a special mechanic: whatever sufficiently advanced technology you make contains a newborn Machine Spirit. It passively improves the machine's quality and performance over time. Depending on its mood, it works more efficiently or worse and can even deny access. More mature spirits can operate their tech autonomously and independently. All spirits you create naturally see you as their creator.
 543. Necromantic Heart, 4.3, Generic
-#Race Change - You possess the Necromantic Heart, turning you undead while granting you the capacity to evolve. You start as (Uncommon trait) Skeleton, and the more time you spend alive, the more you kill, and the more negative energy you immerse yourself in, the faster you evolve into the next undead tier. You retain a humanoid facade with human functions that falls apart when you use undead traits or get damaged.
+#(Tag:undead)Race Change - You possess the Necromantic Heart, turning you undead while granting you the capacity to evolve. You start as (Uncommon trait) Skeleton, and the more time you spend alive, the more you kill, and the more negative energy you immerse yourself in, the faster you evolve into the next undead tier. You retain a humanoid facade with human functions that falls apart when you use undead traits or get damaged.
 544. Oedipus Simple, 2.5, Generic
 #(Nsfw) There is nothing morally wrong with keeping it in the family, and society does not find you marrying your kin particularly wrong. All genetic problems from inbreeding are resolved. Any biological children you conceive inherit your traits far better and inherit at least two of your abilities. You more easily earn your family's affection, platonically or romantically. This trait can be rerolled for free.
 545. Full Coverage Insurance Plan, 5.2, Generic
@@ -1113,7 +1113,7 @@
 557. Hagmaxxing, 2.5, Generic
 #Your preferred partners at least twice your age find you more attractive, and you more easily earn their favor. Your romantic partners and your looks never age beyond their peak. This does not stop physical aging.
 558. Violence of Heaven, 5.4, Generic
-#You wield a body blessed by the Heavenly realm to carry out violence in its stead. Your physical abilities are augmented and further amplified on blessed ground. You possess increased resistance to curses, necromancy, and darkness-based attacks. Even an ordinary person with this could flip cars and break demons' bones.
+#(Tag:holy)You wield a body blessed by the Heavenly realm to carry out violence in its stead. Your physical abilities are augmented and further amplified on blessed ground. You possess increased resistance to curses, necromancy, and darkness-based attacks. Even an ordinary person with this could flip cars and break demons' bones.
 559. Harpy, 3.7, Generic
 #Race Change - You are a half-avian hawk hybrid mixed with your own race. You have slightly enhanced physical abilities, senses, and heightened predatory instincts. You have retractable talons and wings fused into your arms, shoulder blades, or back. With training you suppress your avian traits. You possess increased wind affinity but decreased water affinity.
 560. Roc, 4.8, Generic
@@ -1143,13 +1143,13 @@
 571. Darkwraith, 3.1, Dark Souls
 #You are a Darkwraith, seeking to wield darkness and end light. Your physical abilities are slightly enhanced in darkness. All your Dark-based abilities and spells are more potent and inflict additional damage against Light-aligned beings.
 572. Path of Dragon, 4.2, Dark Souls
-#You follow the Path of the Dragon, seeking to transcend life through Dragons' flesh. You offer Dragons' flesh to the Everlasting Dragons and imbue it into your own flesh, enhancing all physical stats relative to how strong its owner was compared to you and gaining minor draconic aspects. The more flesh you offer, the more draconic you become, potentially becoming an Everlasting Dragon (Legendary) yourself.
+#(Tag:dragonic)You follow the Path of the Dragon, seeking to transcend life through Dragons' flesh. You offer Dragons' flesh to the Everlasting Dragons and imbue it into your own flesh, enhancing all physical stats relative to how strong its owner was compared to you and gaining minor draconic aspects. The more flesh you offer, the more draconic you become, potentially becoming an Everlasting Dragon (Legendary) yourself.
 573. Covenant Leader, 5.4, Generic
 #You can establish your own covenant. Those pledging themselves to your service and joining it acquire boons from you based on their contribution. The boons you grant are lesser copies of your traits and abilities, fueled by accumulated karma. Rarity depends on contribution level but never reaches the original's rarity. If they break your covenant's laws, their boons are instantly revoked.
 574. Pendragon, 5.3, Generic
-#You are a child of Pendragon, the destined rightful King and Dragon. Sovereignty runs in your blood: you more strongly resist negative mental conditions and possess incredible talent for ruling-related matters such as litigation, management, military, economics, etc., plus increased natural charisma. As the child of one recognized as a Dragon, you have increased physical abilities, larger energy reserves, and faster energy recovery. You also have incredible talent with blades from Excalibur's wielder's blood, especially magical swords.
+#(Tag:dragonic)You are a child of Pendragon, the destined rightful King and Dragon. Sovereignty runs in your blood: you more strongly resist negative mental conditions and possess incredible talent for ruling-related matters such as litigation, management, military, economics, etc., plus increased natural charisma. As the child of one recognized as a Dragon, you have increased physical abilities, larger energy reserves, and faster energy recovery. You also have incredible talent with blades from Excalibur's wielder's blood, especially magical swords.
 575. Dullahan's Deception, 2.2, Generic
-#Your head freely detaches from your neck/torso while staying connected in a higher dimension, so you still eat, speak, and breathe. Decapitation is useless against you.
+#(Tag:undead)Your head freely detaches from your neck/torso while staying connected in a higher dimension, so you still eat, speak, and breathe. Decapitation is useless against you.
 576. Chaos Duplication, 4.8, Generic
 #(Gacha) You grant copies of your own abilities and traits to others by burning a ticket equal in value to what you grant: bronze grants common, silver grants uncommon, gold grants rare, etc. Higher tickets grant double the replicants of the previous rarity: silver = 2x common, gold = 4x common, etc.
 577. Fair Use, 5.2, Generic
@@ -1213,7 +1213,7 @@
 606. Touch of Death, 4.6, Generic
 #You possess uncanny intuition for linking blows and keeping momentum when attacking. Once you land your first attack, you keep up pressure and chain attacks far more easily, exploiting the opening it creates.
 607. No Life King, 7.6, Hellsing
-#You are a vampire of the original Vampire's lineage: Dracula, Nosferatu, the No Life King. Besides massively increased physical abilities, you convert your body into Shadow Matter at will and shapeshift with it. By feeding on others' blood, you fully heal yourself and absorb their souls to use as familiars.
+#(Tag:vampiric)You are a vampire of the original Vampire's lineage: Dracula, Nosferatu, the No Life King. Besides massively increased physical abilities, you convert your body into Shadow Matter at will and shapeshift with it. By feeding on others' blood, you fully heal yourself and absorb their souls to use as familiars.
 608. Bully, 2.5, Generic
 #Against opponents already greatly weaker than you, you possess increased physical stats and your abilities cost less energy.
 609. Luddite, 4.2, Generic
@@ -1247,7 +1247,7 @@
 623. Nature Lungs, 3.5, Generic
 #Your lungs harmonize with the surrounding world with every breath. You take in environmental energy and process it in your body to enhance your energy and vitality recovery.
 624. Fairy Lungs, 4.6, Generic
-#You possess Fairy lungs: every breath energizes you, especially in high-energy areas. Breathing imbues your blood with environmental energy, increasing your Vitality and Energy recovery speeds and physical performance based on energy density.
+#(Tag:fae)You possess Fairy lungs: every breath energizes you, especially in high-energy areas. Breathing imbues your blood with environmental energy, increasing your Vitality and Energy recovery speeds and physical performance based on energy density.
 625. Hard Heart, 2.1, Generic
 #Your heart is far tougher yet more efficient, beating far less while pumping far more effectively. Anyone stabbing your heart as a weak spot will fail, as it is as tough as your bones.
 626. Spine of Steel, 1.8, Generic
@@ -1341,7 +1341,7 @@
 670. Omega Moves, 5.6, Hades 2
 #Charge any attack or technique with your energy for an empowered omega version: wider, harder, and hungrier. Overcharging past your limits burns you instead.
 671. Dhampir, 4.8, Generic
-#Race Change - You are half-vampire: manageable blood hunger, sunlight that itches rather than kills, and no power over thralls. You keep the fangs, the pallor, and the dramatic entrances.
+#(Tag:vampiric)Race Change - You are half-vampire: manageable blood hunger, sunlight that itches rather than kills, and no power over thralls. You keep the fangs, the pallor, and the dramatic entrances.
 672. Kitsune, 5.4, Generic
 #Race Change - You are a nine-tailed fox spirit; tails mark power ranks, with foxfire and layered illusion growing stronger per tail.
 673. Dryad, 4.2, Generic

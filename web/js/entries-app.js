@@ -41,13 +41,21 @@
   const CATS = ["ability", "item", "skill", "trait", "familiar"];
   const PAGE = 200;
 
+  function entryTags(e) { return (e && (e.tags || e.tg)) || []; }
+  function allTags() {
+    if (Array.isArray(DATA.tags) && DATA.tags.length) return DATA.tags.slice().sort();
+    const s = new Set();
+    for (const e of (DATA.entries || [])) for (const t of entryTags(e)) s.add(t);
+    return [...s].sort();
+  }
+
   function checkedSources() {
     return [...document.querySelectorAll(".eqSrc")].filter(c => c.checked).map(c => c.value);
   }
 
   const state = {
     sort: { key: "name", dir: 1 },
-    q: "", cats: new Set(CATS),
+    q: "", cats: new Set(CATS), tags: new Set(),
     rmin: null, rmax: null,
     shown: PAGE
   };
@@ -65,20 +73,31 @@
     { key: "name", label: "Name" },
     { key: "f", label: "Cat" },
     { key: "r", label: "Rarity" },
-    { key: "s", label: "Source" }
+    { key: "s", label: "Source" },
+    { key: "tags", label: "Tags" }
   ];
 
   function filtered() {
     const q = state.q.trim().toLowerCase();
     const srcs = checkedSources();
-    return DATA.entries.filter(e =>
-      state.cats.has(e.f) &&
-      (!srcs.length || srcs.includes(e.s)) &&
-      (state.rmin == null || e.r >= state.rmin) &&
-      (state.rmax == null || e.r <= state.rmax) &&
-      (!q || e.name.toLowerCase().includes(q) ||
-        (e.s || "").toLowerCase().includes(q) ||
-        (e.d || "").toLowerCase().includes(q)));
+    return DATA.entries.filter(e => {
+      if (!state.cats.has(e.f)) return false;
+      if (srcs.length && !srcs.includes(e.s)) return false;
+      if (state.rmin != null && e.r < state.rmin) return false;
+      if (state.rmax != null && e.r > state.rmax) return false;
+      if (state.tags.size) {
+        const et = entryTags(e);
+        let hit = false;
+        for (const t of state.tags) if (et.includes(t)) { hit = true; break; }
+        if (!hit) return false;
+      }
+      if (!q) return true;
+      if (e.name.toLowerCase().includes(q)) return true;
+      if ((e.s || "").toLowerCase().includes(q)) return true;
+      if ((e.d || "").toLowerCase().includes(q)) return true;
+      if (entryTags(e).some(t => t.toLowerCase().includes(q))) return true;
+      return false;
+    });
   }
 
   function renderHead() {
@@ -108,6 +127,7 @@
       case "f": return e.f;
       case "r": return e.r;
       case "s": return (e.s || "").toLowerCase();
+      case "tags": return entryTags(e).join(",");
       default: return 0;
     }
   }
@@ -122,12 +142,14 @@
       const d = va < vb ? -1 : va > vb ? 1 : a.n - b.n;
       return d * state.sort.dir;
     });
-    $("eqCount").textContent = `${rows.length} of ${DATA.entries.length} entries (tap a row for its description)`;
+    const tagBit = state.tags.size ? ` · tags: ${[...state.tags].sort().join(", ")}` : "";
+    $("eqCount").textContent = `${rows.length} of ${DATA.entries.length} entries${tagBit} (tap a row for its description)`;
     const more = $("eqMore");
     more.style.display = rows.length > state.shown ? "" : "none";
     more.textContent = `Show more (${rows.length - state.shown} remaining)`;
     for (const e of rows.slice(0, state.shown)) {
       const cls = classOf(e.r);
+      const tags = entryTags(e);
       const tr = document.createElement("tr");
       tr.style.cssText = "border-top:1px solid var(--line);cursor:pointer";
       tr.innerHTML =
@@ -135,7 +157,8 @@
         `<td style="padding:8px"><span class="dot" style="background:${esc(cls.color)}"></span>${esc(e.name)}</td>` +
         `<td style="padding:8px">${esc(e.f)}</td>` +
         `<td style="padding:8px">${e.r}</td>` +
-        `<td style="padding:8px">${esc(e.s || "—")}</td>`;
+        `<td style="padding:8px">${esc(e.s || "—")}</td>` +
+        `<td style="padding:8px">${tags.map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ")}</td>`;
       tr.addEventListener("click", () => {
         const next = tr.nextSibling;
         if (next && next.classList && next.classList.contains("desc")) {
@@ -145,9 +168,10 @@
         const dr = document.createElement("tr");
         dr.className = "desc";
         const td = document.createElement("td");
-        td.setAttribute("colspan", "5");
+        td.setAttribute("colspan", "6");
         td.style.cssText = "padding:8px 8px 12px 26px";
-        td.innerHTML = linkify(e.d || "(no description)");
+        td.innerHTML = (tags.length ? tags.map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ") + "<br><br>" : "") +
+          linkify(e.d || "(no description)");
         dr.appendChild(td);
         tr.after(dr);
       });
@@ -161,7 +185,7 @@
     $("eqSrcCount").textContent = n === boxes.length ? "all" : `${n}/${boxes.length}`;
   }
 
-  // category chips + source checkboxes
+  // category chips + tag chips + source checkboxes
   (function bootFilters() {
     const cg = $("eqCats");
     for (const c of CATS) {
@@ -176,6 +200,25 @@
         render();
       });
       cg.appendChild(b);
+    }
+    const tg = $("eqTags");
+    if (tg) {
+      const tagCounts = {};
+      for (const e of (DATA.entries || [])) for (const t of entryTags(e)) tagCounts[t] = (tagCounts[t] || 0) + 1;
+      for (const t of allTags()) {
+        const b = document.createElement("button");
+        b.textContent = `${t} (${tagCounts[t] || 0})`;
+        b.title = `Show entries tagged ${t}`;
+        b.addEventListener("click", () => {
+          if (state.tags.has(t)) state.tags.delete(t);
+          else state.tags.add(t);
+          b.classList.toggle("sel", state.tags.has(t));
+          state.shown = PAGE;
+          render();
+        });
+        tg.appendChild(b);
+      }
+      if (!allTags().length) tg.innerHTML = "<span class='muted small'>No tagged entries yet.</span>";
     }
     const counts = {};
     for (const e of (DATA.entries || [])) {
