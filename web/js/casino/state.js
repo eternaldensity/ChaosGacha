@@ -56,7 +56,7 @@
         slots: [], stash: [], abilitiesOwned: 0, facing: 0,
         dashDx: null, dashDy: null, dashSpd: 0, statuses: {},
         buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null, stance: null, mount: null,
-        elemBonus: {}, resist: {}, regen: 0, regenT: 0,
+        elemBonus: {}, resist: {}, regen: 0, regenT: 0, tagSetsGranted: {},
         healBonus: 0, rollCdMax: 5, threatDecayT: 0, rangedBonus: 0, draft: null,
         meleeBonus: 0, wrecker: 0,
         parts: 0, survey: false, surveyT: 0,

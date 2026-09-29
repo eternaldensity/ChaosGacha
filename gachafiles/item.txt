@@ -547,7 +547,7 @@
 274. The Armageddon Blade, 5.4, Hota
 #(Tag:unholy)The mythical Blade of Armageddon that imbues great power but burns to touch and boosts fire and unholy abilities when used as a focus. The user can expend energy to call down Armageddon, raining hellfire from the skies onto the mortal world.
 275. Sword of Hellfire, 3.3, Hota
-#(Tag:unholy)A sword forged and bathed in hellfire whose blade can be wreathed in violent flames by expending energy. It boosts fire abilities when used as a focus.
+#(Tag:fire)(Tag:unholy)A sword forged and bathed in hellfire whose blade can be wreathed in violent flames by expending energy. It boosts fire abilities when used as a focus.
 276. Angellic Alliance, 6.0, Hota
 #(Tag:holy)A divine heavenly sword that greatly increases the wielder's physical and magical abilities, strengthens and inspires any army or allies under their command, and boosts holy and light abilities when used as a focus. The user can also expend energy to grant any blessing of Rare tier or below.
 277. Titans Thunder, 5.5, Hota
@@ -1377,7 +1377,7 @@
 689. Asauchi, 2.8, Bleach
 #Asauchi, a dormant unnamed soul-bound weapon that fits and grows with the user, scaling with them. Unlocking Shikai grants a unique user-natured ability at or below Rare rank, upgraded to Epic rank upon unlocking Bankai.
 690. Hell Hammer, 4.1, Generic
-#(Tag:unholy)An incredibly durable infernal hammer of hellflame-tempered steel that bursts into hellflame explosions on impact proportional to physical force.
+#(Tag:fire)(Tag:unholy)An incredibly durable infernal hammer of hellflame-tempered steel that bursts into hellflame explosions on impact proportional to physical force.
 691. Exorcists Mace, 3.4, Generic
 #(Tag:holy)A blessed sanctified-steel mace, incredibly durable and formidable, suffused with Holy Light. Exceptionally effective against Unholy entities.
 692. Clergy Ring, 2.5, Generic

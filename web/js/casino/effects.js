@@ -15,7 +15,19 @@
     return base / (1 + 0.06 * rarity);
   };
 
-  C.elementOf = function (nm) {
+  // Casino elements differ in name from gacha tags in three places:
+  // ice->frost, lightning->bolt, poison->venom (holy->light).
+  C.TAG_TO_ELEMENT = { fire: "fire", water: "water", ice: "frost",
+    lightning: "bolt", earth: "earth", wind: "wind", shadow: "shadow",
+    nature: "nature", poison: "venom", holy: "light" };
+
+  C.elementOf = function (nm, tags) {
+    const tg = (tags || []).map(t => String(t).toLowerCase());
+    // Explicit theme tags beat name-guessing (same priority as below).
+    for (const t of ["fire", "shadow", "holy", "lightning", "ice",
+                     "poison", "water", "earth", "wind", "nature"]) {
+      if (tg.includes(t) && C.TAG_TO_ELEMENT[t]) return C.TAG_TO_ELEMENT[t];
+    }
     const s = String(nm).toLowerCase();
     // Thematic elements (shadow/light) win over delivery words ("bolt").
     if (/fire|flame|blast|explos|plasma|inferno|cinder|magma|lava|scorch|pyre|\bash\b|smolder|\bmeteor\b|comet/i.test(s)) return "fire";
@@ -33,8 +45,10 @@
     return "arcane";
   };
 
-  // Familiar role from its name (phase 3).
-  C.petRole = function (name) {
+  // Familiar role from its name (phase 3); the healing tag catches
+  // themed medics whose names carry no heal-word (tags beat names).
+  C.petRole = function (name, tags) {
+    if ((tags || []).map(t => String(t).toLowerCase()).includes("healing")) return "medic";
     const nm = String(name).toLowerCase();
     if (/guard|bully|brawler|tank|defend|protector|bodyguard/i.test(nm)) return "bully";
     if (/heal|medic|cleric|nurse|doctor|mend/i.test(nm)) return "medic";
@@ -90,9 +104,11 @@
     return /pierc|lance|phase|railgun|armor piercing/i.test(String(name) + " " + String(desc || ""));
   };
 
-  // Weapon element from its name (phase 2: melee/ranged apply statuses).
-  C.weaponElement = function (name) {
-    const e = C.elementOf(String(name).toLowerCase());
+  // Weapon element from its name (phase 2: melee/ranged apply statuses);
+  // tags first so themed prizes (holy swords, hellflame hammers) type
+  // correctly even with plain names.
+  C.weaponElement = function (name, tags) {
+    const e = C.elementOf(String(name).toLowerCase(), tags);
     return e === "arcane" ? null : e;
   };
 
@@ -102,7 +118,9 @@
   // Returns {name, rarity, op, ...} or null (→ essence fallback, never dead).
   C.compileAbility = function (res) {
     const nm = (res.name + " " + (res.description || "")).toLowerCase(), r = res.rarity;
-    const el = C.elementOf(nm);
+    const tags = (res.tags || []).map(t => String(t).toLowerCase());
+    const has = t => tags.includes(t);
+    const el = C.elementOf(nm, tags);
     if (/teleport|blink|\bphase\b|portal|\brift\b/i.test(nm)) {
       return {
         name: res.name, rarity: r, op: "dash", power: 340,
@@ -128,7 +146,7 @@
       const stationary = /turret|deploy|sentry|\btrap\b|\bmine\b|construct/i.test(nm);
       return {
         name: res.name, rarity: r, op: "summon",
-        role: C.petRole(res.name), element: el === "arcane" ? null : el,
+        role: C.petRole(res.name, res.tags), element: el === "arcane" ? null : el,
         power: Math.max(1, Math.round(r / 2)), dur: 20 + r * 2, stationary,
         cd: C.slotCd(15, r), cdLeft: 0,
         blurb: "summon " + (stationary ? "turret" : "ally") + " for " + Math.round(20 + r * 2) + "s",
@@ -253,6 +271,39 @@
       };
     }
     if (/heal|regen|restor|purif|cure|second.?wind|mend|rejuvenat/i.test(nm)) {
+      const power = 1 + Math.floor(r / 3);
+      return {
+        name: res.name, rarity: r, op: "heal", power,
+        cd: C.slotCd(25, r), cdLeft: 0, blurb: "restore " + power + " HP",
+      };
+    }
+    // Tag fallbacks: name regex above wins; tags catch themed entries with
+    // non-obvious names (Velkhana Form has no "dragon" in its name, Seize
+    // has no "mind control", Grave Buster has no "skeleton").
+    if (has("teleport")) {
+      return {
+        name: res.name, rarity: r, op: "dash", power: 340,
+        cd: C.slotCd(6, r), cdLeft: 0, blurb: "blink-dash, i-frames",
+      };
+    }
+    if (has("undead") || has("construct")) {
+      const stationary = has("construct");
+      return {
+        name: res.name, rarity: r, op: "summon",
+        role: C.petRole(res.name, res.tags), element: el === "arcane" ? null : el,
+        power: Math.max(1, Math.round(r / 2)), dur: 20 + r * 2, stationary,
+        cd: C.slotCd(15, r), cdLeft: 0,
+        blurb: "summon " + (stationary ? "turret" : "ally") + " for " + Math.round(20 + r * 2) + "s",
+      };
+    }
+    if (has("psychic")) {
+      return {
+        name: res.name, rarity: r, op: "betray",
+        cd: C.slotCd(18, r), cdLeft: 0,
+        blurb: "turn a guard for " + Math.round(8 + r * 0.5) + "s",
+      };
+    }
+    if (has("healing")) {
       const power = 1 + Math.floor(r / 3);
       return {
         name: res.name, rarity: r, op: "heal", power,

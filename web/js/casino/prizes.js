@@ -7,7 +7,7 @@ C.applyFamiliar = function (res) {
   const p = C.G.p, r = res.rarity;
   {
     const dmg = Math.max(1, Math.round(r / 3)) + (p.petBonus || 0);
-    const role = C.petRole(res.name);
+    const role = C.petRole(res.name, res.tags);
     const pet = {
       name: res.name, dmg, cd: 0, role,
       cdMax: role === "medic" ? Math.max(8, 22 - r) : 1.1,
@@ -74,7 +74,7 @@ C.applyFamiliar = function (res) {
         const res = C.rollArmoryWeapon(r);
         p.weapon = {
           name: res.name, ranged: false, dmg: Math.max(1, Math.round(res.rarity / 2)) + 1,
-          element: C.weaponElement(res.name), pattern: "single", rate: 1, knockback: 0,
+          element: C.weaponElement(res.name, res.tags), pattern: "single", rate: 1, knockback: 0,
           armory: r,
         };
         C.syncDmg();
@@ -141,7 +141,7 @@ C.applyFamiliar = function (res) {
         p.weapon = {
           name: res.name, ranged,
           dmg: Math.max(1, Math.round(r / 2)) + (ranged ? 0 : 1),
-          element: C.weaponElement(res.name), pattern,
+          element: C.weaponElement(res.name, res.tags), pattern,
           rate: pattern === "rapid" ? 0.6 : 1,
           knockback: pattern === "heavy" ? 34 : 0,
           pierce: C.weaponPierce(res.name, res.description),
@@ -207,7 +207,9 @@ C.applyFamiliar = function (res) {
         return "Trait: +2 PWR (damage " + p.dmg.toFixed(1) + "), stances +2s.";
       }
       if (/affin|attun|align|bloodline|blood of|sorcer|wizard|witch|mage|magic|arcane/i.test(nm)) {
-        const aff = C.elementOf(nm);
+        // Tags first: holy-tagged angel traits have no holy-word in the
+        // name ("Angel", "Principality") and previously fell to raw magic.
+        const aff = C.elementOf(nm, res.tags);
         if (aff && aff !== "arcane") {
           p.elemBonus[aff] = (p.elemBonus[aff] || 0) + 0.15 + r * 0.02;
           p.resist[aff] = (p.resist[aff] || 0) + 0.1;
@@ -336,6 +338,42 @@ C.applyFamiliar = function (res) {
     C.modStat("PWR", 1); C.modStat("SPD", 1);
     C.noteBuild(res.name.slice(0, 18) + ": PWR/SPD +1", "pass");
     return "Prize essence: +1 PWR/+1 SPD (rarity " + r.toFixed(1) + " " + C.rarityName(r) + ").";
+  };
+
+  // Elemental set bonuses: 3+ prizes sharing an elemental tag grant +25%
+  // damage of that element (reuses the elemBonus machinery, so burn/poison
+  // ticks and shieldbreaking scale too). Healing 3+ grants slow regen.
+  // Counts come from prizeLog tags; each set is granted once per run.
+  C.TAG_SETS = [
+    ["fire", "fire", 3, 0.25], ["water", "water", 3, 0.25],
+    ["ice", "frost", 3, 0.25], ["lightning", "bolt", 3, 0.25],
+    ["earth", "earth", 3, 0.25], ["wind", "wind", 3, 0.25],
+    ["shadow", "shadow", 3, 0.25], ["nature", "nature", 3, 0.25],
+    ["poison", "venom", 3, 0.25], ["holy", "light", 3, 0.25],
+  ];
+  C.checkTagSets = function () {
+    const p = C.G.p;
+    p.tagSetsGranted = p.tagSetsGranted || {};
+    const counts = {};
+    for (const e of (C.G.prizeLog || [])) {
+      for (const t of (e.tags || [])) counts[t] = (counts[t] || 0) + 1;
+    }
+    for (const [tag, el, need, bonus] of C.TAG_SETS) {
+      if ((counts[tag] || 0) >= need && !p.tagSetsGranted[tag]) {
+        p.tagSetsGranted[tag] = true;
+        p.elemBonus[el] = (p.elemBonus[el] || 0) + bonus;
+        C.noteBuild("🏷 " + tag + " ×" + need + ": +" +
+          Math.round(bonus * 100) + "% " + el, "pass");
+        C.floater(p.x, p.y - 40, "set: " + tag + " +" +
+          Math.round(bonus * 100) + "% " + el + "!", "#ffe066");
+      }
+    }
+    if ((counts.healing || 0) >= 3 && !p.tagSetsGranted.healing && !p.regen) {
+      p.tagSetsGranted.healing = true;
+      p.regen = 1;
+      C.noteBuild("🏷 healing ×3: regen 1HP/30s", "pass");
+      C.floater(p.x, p.y - 40, "set: healing regen!", "#11d939");
+    }
   };
 
   C.checkFeats = function () {

@@ -230,6 +230,7 @@
         C.G.prizeLog.push({ name: res.name, rarity: res.rarity, category: res.category,
           source: res.source || "", description: res.description || "", odds: res.odds || 0, tags });
         const note = C.applyPrize(res);
+        C.checkTagSets();
         const flav = C.flavorShort(res.description);
         C.showCard("[" + C.rarityName(res.rarity) + " " + res.category + "] " + res.name +
           " (" + res.rarity.toFixed(1) + ")" + (tags.length ? " #" + tags.join(" #") : ""),

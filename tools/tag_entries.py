@@ -193,9 +193,11 @@ RULES = {
             r"\bfire\b", r"pyro", r"\bflames?\b", r"inferno",
             r"\bmagma\b", r"\blava\b", r"fireball", r"fire breath",
             r"fire slayer", r"fireborn", r"pyromaniac",
+            r"hellflame", r"hellfire",
         ],
         "desc": [
             r"wield.{0,30}fire", r"pyrokinesis",
+            r"hellflames?", r"infernal flames?",
             r"fire breath", r"produce and control .*flames",
             r"control .*flames", r"immune to .*fire", r"fire immunity",
             r"fire absorption", r"fire resistance",
@@ -314,6 +316,7 @@ RULES = {
         "desc": [
             r"mind control", r"telepathy", r"read minds",
             r"read micro-expressions", r"invade minds", r"psychic power",
+            r"seize.{0,20}mind", r"turn .* into .*ally",
         ],
         "excl": [],
     },

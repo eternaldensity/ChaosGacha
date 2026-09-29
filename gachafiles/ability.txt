@@ -1903,7 +1903,7 @@
 955. Bloody Lust, 6.6, Generic
 #"You are enjoying this far too much" Your lust for violence is insatiable. When hurt, you recover energy proportional to damage taken, and recover health proportional to damage you deal. You are an eternal engine of battle.
 956. Infernal Engine, 4.6, Generic
-#(Tag:demonic)(Tag:unholy)Your heart is an Infernal Engine. When activated, regeneration increases and you can wield Hellflames. But it heats your body the longer it runs, and greater heat makes it more effective. Beware overheating and burning yourself with your own Hellflames.
+#(Tag:fire)(Tag:demonic)(Tag:unholy)Your heart is an Infernal Engine. When activated, regeneration increases and you can wield Hellflames. But it heats your body the longer it runs, and greater heat makes it more effective. Beware overheating and burning yourself with your own Hellflames.
 957. Blacklight, 7.4, Generic
 #Your body is entirely the Blacklight Virus. You can freely shapeshift down to the cellular level, absorb biological matter to grow stronger and analyze and replicate its composition, and gain all memories of targets whose brains you consume.
 958. Rule Breaker, 6.4, Generic
@@ -2797,7 +2797,7 @@
 1402. Telekinetic Launch, 4.2, Control
 #Rip loose concrete, furniture, and machinery from the environment and hurl it as telekinetic artillery; charged throws stagger even the Hiss.
 1403. Seize, 4.6, Control
-#Weaken an enemy then seize their mind outright, turning them into a temporary ally that fights and dies for you.
+#(Tag:psychic)Weaken an enemy then seize their mind outright, turning them into a temporary ally that fights and dies for you.
 1404. Debris Shield, 3.8, Control
 #Tear rubble from the surroundings into a rotating barrier that eats gunfire, then launch the whole shield back at whoever shot you.
 1405. Evade, 3.0, Control
