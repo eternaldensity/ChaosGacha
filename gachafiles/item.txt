@@ -571,9 +571,9 @@
 286. Wizards Well, 4.9, Hota
 #A large cauldron filled to the brim with magical power equal to the user's maximum. It instantly refills to the brim at 8 am every morning.
 287. Orb of Silt, 3.5, Hota
-#An orb of raw ancient magical power that boosts earth-based abilities and magic for its holder.
+#(Tag:earth)An orb of raw ancient magical power that boosts earth-based abilities and magic for its holder.
 288. Orb of Firmament, 3.9, Hota
-#An orb of raw ancient magical power that boosts wind and lightning-based abilities and magic for its holder.
+#(Tag:lightning)An orb of raw ancient magical power that boosts wind and lightning-based abilities and magic for its holder.
 289. Orb of Driving Rain, 3.8, Hota
 #An orb of raw ancient magical power that boosts water and ice-based abilities and magic for its holder.
 290. Orb of Tempestuous Fire, 3.6, Hota
@@ -2189,7 +2189,7 @@
 1095. Echo Key, 5.2, Locke and Key
 #A key that summons an echo of a dead person: speak their name while turning it in any lock and they appear, knowing full well they are dead and mostly resenting it. They persist only while the key stays turned; remove it and they are gone.
 1096. Hextech Gauntlets, 5.5, League of Legends / Arcane
-#Enormous hextech brawling gauntlets: seismic punches, shockwave claps, and a shield mode that mostly protects other people from you. Fittings run large.
+#(Tag:earth)Enormous hextech brawling gauntlets: seismic punches, shockwave claps, and a shield mode that mostly protects other people from you. Fittings run large.
 1097. Shimmer, 5.3, League of Legends / Arcane
 #A vial of violet Shimmer granting monstrous strength and speed while it lasts, at the usual price: addiction, mutation, and purple eyes that never quite fade.
 1098. Jinx's Pow-Pow, 5.7, League of Legends / Arcane

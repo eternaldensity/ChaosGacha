@@ -329,7 +329,7 @@
 165. Sea Monarch, 7.1, Generic
 #(Tag:water)You are the Sea Monarch, ruler of all Water and the depths; your vitality is massively increased, as the sea is the mother of all life. All your water-related abilities below Mythical Tier are increased by one rank and cost less energy. All water and sea-aligned beings instinctively recognize you as Monarch, and you are immune to water and ice-based abilities.
 166. Sky Monarch, 7.9, Generic
-#(Tag:wind)You are the Sky Monarch, ruler of all Sky; your agility is massively enhanced, as you are as free as wind. All your wind and lightning-related abilities below Mythical Tier are increased by one rank and cost less energy. All sky-aligned beings instinctively recognize you as Monarch, and you are immune to wind and lightning-based abilities.
+#(Tag:lightning)(Tag:wind)You are the Sky Monarch, ruler of all Sky; your agility is massively enhanced, as you are as free as wind. All your wind and lightning-related abilities below Mythical Tier are increased by one rank and cost less energy. All sky-aligned beings instinctively recognize you as Monarch, and you are immune to wind and lightning-based abilities.
 167. Hero, 4.5, Generic
 #You are a Hero, a child blessed by light and holy. All your Light and Holy-based abilities strengthen alongside your physical abilities. Divine/Clergy-aligned beings view you with greater favor, reverence, and affection, rewarding your merits and service, and all blessings are stronger and last longer on you.
 168. Free Bird, 3.6, Generic
@@ -493,13 +493,13 @@
 247. Heavy Weapons Guy, 3.7, Generic
 #"I am Heavy Weapons Guy." The heavier the object you wield, the proportionally stronger you become, and you suffer no penalties for wielding oversized weapons.
 248. Superconductor, 4.6, Generic
-#Your body channels lightning, making all lightning-based abilities more potent, cheaper, and easier to master. You can also ground lightning and electricity to absorb a portion of their energy.
+#(Tag:lightning)Your body channels lightning, making all lightning-based abilities more potent, cheaper, and easier to master. You can also ground lightning and electricity to absorb a portion of their energy.
 249. Earthbound Ancient, 6.2, Generic
-#You are one with the primordial earth. All earth-based abilities are far more potent, cheaper, and easier to master, and you recover energy faster on the ground and even faster underground.
+#(Tag:earth)You are one with the primordial earth. All earth-based abilities are far more potent, cheaper, and easier to master, and you recover energy faster on the ground and even faster underground.
 250. Grounded, 4.4, Generic
-#You embody the immovable earth. All earth-based abilities are more potent, cheaper, and easier to master, and you recover energy faster underground.
+#(Tag:earth)You embody the immovable earth. All earth-based abilities are more potent, cheaper, and easier to master, and you recover energy faster underground.
 251. Skyward, 4.2, Generic
-#You belong to the skies. All wind-based abilities are more potent, cheaper, and easier to master, and you recover energy faster while in the sky.
+#(Tag:wind)You belong to the skies. All wind-based abilities are more potent, cheaper, and easier to master, and you recover energy faster while in the sky.
 252. Electric Sheep, 3.6, Generic
 #(Tech) All Tinker abilities are easier for you to use and innovate with, and you interface with any existing machine and network with greater ease. (A/N: Reroll if you don't have a tinker ability)
 253. Flexible, 1.7, Generic
@@ -827,7 +827,7 @@
 414. Cupid's Blessing, 3.8, Generic
 #You hold greatly increased luck in romance. Remember to thank Cupid.
 415. Blessing of Zeus, 3.7, Generic
-#(Nsfw) You are a child blessed by Zeus who can bed anyone, with increased charisma, fertility, and talent in the carnal arts. Your Changer abilities are easier and cheaper to use and maintain, and your lightning-based abilities are stronger too.
+#(Tag:lightning)(Nsfw) You are a child blessed by Zeus who can bed anyone, with increased charisma, fertility, and talent in the carnal arts. Your Changer abilities are easier and cheaper to use and maintain, and your lightning-based abilities are stronger too.
 416. Infinite, 9.1, Generic
 #You hold an infinite energy source for every use, from magical power to stamina to soul energy. Your energy output is massively increased, letting even a common rank fire ability dwarf nuclear bombs ten times over.
 417. Absolute Victory, 9.7, Generic
@@ -1231,7 +1231,7 @@
 615. Firebending, 5.1, Avatar
 #(Tag:lightning)You have natural talent as a Firebender, naturally producing and bending fire. Its potency depends on your natural attunement, martial-arts skill, and energy levels. Skilled enough users generate and direct electricity. Potency follows the sun: weaker at night, stronger by day, unusable during an eclipse.
 616. Earthbending, 5.2, Avatar
-#You have natural talent as an Earthbender, bending and controlling Earth. Its potency scales with your attunement to Earth, martial-arts skill, and energy levels. Skilled enough users sense Earth through tremors and manipulate impure metals and lava.
+#(Tag:earth)You have natural talent as an Earthbender, bending and controlling Earth. Its potency scales with your attunement to Earth, martial-arts skill, and energy levels. Skilled enough users sense Earth through tremors and manipulate impure metals and lava.
 617. Waterbending, 6.2, Avatar
 #(Tag:healing)You have natural talent as a Waterbender, bending and controlling Water. Its potency scales with your attunement to Water, martial-arts skill and finesse, and energy levels. Skilled enough Waterbenders transform water into ice and heal wounds with bending, and some bend the blood of those weaker than them. Potency follows the moon: strongest at night and full moon, weaker by day.
 618. Airbending, 5.8, Avatar
@@ -1281,7 +1281,7 @@
 640. Mind over Matter, 5.6, Stellaris
 #Your mind touches the Shroud; latent psychic potential hums beneath every thought.
 641. Lithoid, 4.2, Stellaris
-#You are living rock: silicon flesh that shrugs off hunger and laughs at vacuum.
+#(Tag:earth)You are living rock: silicon flesh that shrugs off hunger and laughs at vacuum.
 642. Hive-Minded, 4.8, Stellaris
 #You are a node in a greater gestalt, sharing senses and purpose with the whole.
 643. Ocean-Born, 3.2, Stellaris

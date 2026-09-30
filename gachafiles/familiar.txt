@@ -151,11 +151,11 @@
 76. Ditto, 3.8, Pokemon
 #An amorphous purple blob with a dopey face. Ditto can transform into any creature it sees, adopting its abilities scaled to its own level except durability, without gaining its memories or intelligence. It is genderless and can breed with any race.
 77. Desert Elemental, 3.6, Calamity Mod
-#(Tag:healing)A pair of sister elementals born from the desert's shifting sands. One creates and manipulates sand to attack and defend, while the other casts healing magic.
+#(Tag:earth)(Tag:healing)A pair of sister elementals born from the desert's shifting sands. One creates and manipulates sand to attack and defend, while the other casts healing magic.
 78. Storm Elemental, 3.3, Calamity Mod
 #A solitary elemental formed in the rainy skies. Born of the sky, she conjures and controls wind, clouds, and lightning.
 79. Cavern Elemental, 3.1, Calamity Mod
-#An elemental born in the harsh, desolate caverns, physically mighty with control over rock and ground. He can split the ground in two with his axe and excels at defence.
+#(Tag:earth)An elemental born in the harsh, desolate caverns, physically mighty with control over rock and ground. He can split the ground in two with his axe and excels at defence.
 80. Brimstone Elemental, 4.4, Calamity Mod
 #A solitary elemental of the Brimstone Crag made of burnt tortured souls. She conjures and controls Brimstone Flames that turn even souls to ash.
 81. Anahita, 4.1, Calamity Mod
@@ -245,13 +245,13 @@
 123. Kurama, 7.3, Naruto
 #The Nine-Tails, a giant demonic fox towering over buildings with immense physical and magical strength. It casually demolishes buildings, fires city-levelling Beast Bombs, and uses imprecise pyrokinetic and aerokinetic attacks. As a Tailed Beast it is immortal, revives after death, and can fuse with a person to grant its powers.
 124. Shukaku, 6.5, Naruto
-#The One-Tail, a massive beast made entirely of sand and resistant to physical blows. It creates and controls sand, wind, and magnetism, supplemented by sealing techniques. As a Tailed Beast it is immortal, revives after death, and can fuse with a person to grant its powers.
+#(Tag:earth)The One-Tail, a massive beast made entirely of sand and resistant to physical blows. It creates and controls sand, wind, and magnetism, supplemented by sealing techniques. As a Tailed Beast it is immortal, revives after death, and can fuse with a person to grant its powers.
 125. Matatabi, 6.2, Naruto
 #The Two-Tails, a giant nekomata wreathed in blue fire with strength matching its frame. It creates and controls fire for varied techniques. As a Tailed Beast it is immortal, revives after death, and can fuse with a person to grant its powers.
 126. Isobu, 6.4, Naruto
 #The Three-Tails, a giant red-and-white spiky-shelled turtle with great strength and surprising agility. It creates and controls water for varied techniques and opens gates to its pocket space at will. As a Tailed Beast it is immortal, revives after death, and can fuse with a person to grant its powers.
 127. Son Goku, 6.9, Naruto
-#The Four-Tails, a giant monkey with octopus tails and exceptional physical prowess. It creates and controls fire and earth together for volcanic eruptions and lava. As a Tailed Beast it is immortal, revives after death, and can fuse with a person to grant its powers.
+#(Tag:earth)The Four-Tails, a giant monkey with octopus tails and exceptional physical prowess. It creates and controls fire and earth together for volcanic eruptions and lava. As a Tailed Beast it is immortal, revives after death, and can fuse with a person to grant its powers.
 128. Ten-Tails, 8.0, Naruto
 #A primordial god of pure natural energy embodying all early life, indistinguishable from the environment to sensing. Mountain-dwarfing in size yet faster than sound, with immense physical prowess. It endlessly fires country-annihilating Bijuu Bombs and world-spanning disasters, and as a Tailed Beast it is immortal, revives after death, and can fuse with a person to grant its powers.
 129. Suu, 3.5, Monster Musume
@@ -651,7 +651,7 @@
 326. Horus, 4.6, JoJo
 #(Tag:ice)Horus is an autonomous soul-bound stand that can manifest as an ice bird. It spends your energy on cryokinesis like icicles, freezing, ice boulders, and constructs, acts without input, and scales in power with you as a stand.
 327. The Fool, 3.9, JoJo
-#The Fool is a sand-formed stand that freely manipulates and shapes sand including texture and colour changes. It forms an automatic protective barrier, convincingly imitates people, and scales in power with you as a stand.
+#(Tag:earth)The Fool is a sand-formed stand that freely manipulates and shapes sand including texture and colour changes. It forms an automatic protective barrier, convincingly imitates people, and scales in power with you as a stand.
 328. Cream, 6.4, JoJo
 #Cream is a large imposing stand that vanishes anything it eats into endless darkness and possesses considerable strength. It can harmlessly hide the user inside itself and eat itself to become a blind nothingness wrecking ball, but cannot leave a 5-meter range and spends your energy.
 329. Hanged Man, 4.8, JoJo

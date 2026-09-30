@@ -241,7 +241,7 @@
 121. Wind Edge, 2.4, Generic
 #(Tag:wind)Cloak a held item in razor-sharp winds to boost its cutting ability. You can launch the cloak as a projectile to extend the effect.
 122. Delta Stream, 3.0, Generic
-#Call forth winds that make the surrounding area very windy, enhancing the power and efficiency of all wind-based abilities.
+#(Tag:wind)Call forth winds that make the surrounding area very windy, enhancing the power and efficiency of all wind-based abilities.
 123. Floating, 2.4, Generic
 #Cloak yourself in winds that carry you, allowing you to fly.
 124. Wind Flight, 3.0, Generic
@@ -349,15 +349,15 @@
 175. Lightning Claws, 2.6, Generic
 #(Tag:lightning)Create claws of violent lightning over your hands to sever and electrocute enemies simultaneously.
 176. Pebble Sling, 0.3, Generic
-#Conjure pebbles and small rocks to sling at enemies, minorly inconveniencing them or hurting them if they hit eyes.
+#(Tag:earth)Conjure pebbles and small rocks to sling at enemies, minorly inconveniencing them or hurting them if they hit eyes.
 177. Rock Throw, 1.4, Generic
-#Conjure rocks and small stones to launch as projectiles. Not very powerful, but a rock to the head always hurts.
+#(Tag:earth)Conjure rocks and small stones to launch as projectiles. Not very powerful, but a rock to the head always hurts.
 178. Stone Bullet, 2.3, Generic
-#Conjure rocks and small stones to shoot like bullets with lethal power, making you a living stone gun.
+#(Tag:earth)Conjure rocks and small stones to shoot like bullets with lethal power, making you a living stone gun.
 179. Boulder Hurl, 2.8, Generic
-#Conjure and hurl a large boulder at enemies. Regardless of your strength, its weight does not affect your throwing, whether person-sized or house-sized.
+#(Tag:earth)Conjure and hurl a large boulder at enemies. Regardless of your strength, its weight does not affect your throwing, whether person-sized or house-sized.
 180. Rock Shotgun, 2.6, Generic
-#Conjure multiple small rocks and launch them at lethal speeds.
+#(Tag:earth)Conjure multiple small rocks and launch them at lethal speeds.
 181. Bullet, 3.3, Generic
 #Conjure lead or other metal bullets from small to high calibre and launch them at supersonic to hypersonic speeds. More energy means higher calibre and speed.
 182. Move Earth, 2.5, Generic
@@ -371,11 +371,11 @@
 186. Chain & Shackle, 3.7, Generic
 #Create metal chains and shackles that erupt from the earth to bind enemies. They track and chase opponents, making them very hard to dodge.
 187. Catapult, 3.4, Generic
-#Create and launch giant boulders at enemies. Regardless of your strength, their weight does not affect your throwing, whether person-sized or house-sized.
+#(Tag:earth)Create and launch giant boulders at enemies. Regardless of your strength, their weight does not affect your throwing, whether person-sized or house-sized.
 188. Stonesprout, 2.1, Generic
-#Sprout rock and stone constructs such as walls and pillars from surfaces for defense, terrain or smashing enemies.
+#(Tag:earth)Sprout rock and stone constructs such as walls and pillars from surfaces for defense, terrain or smashing enemies.
 189. Micro Ferrokinesis, 2.4, Generic
-#Manipulate metals on a small but extremely precise scale. You cannot hurl cars, but you could shape gold into an ornate ring with microscopic carvings.
+#(Tag:earth)Manipulate metals on a small but extremely precise scale. You cannot hurl cars, but you could shape gold into an ornate ring with microscopic carvings.
 190. Earth Armor, 2.0, Generic
 #(Tag:earth)Create earth armour around your body to absorb blows and attacks without impeding mobility or speed.
 191. Earthquake, 2.8, Generic
@@ -383,7 +383,7 @@
 192. Fissure, 2.2, Generic
 #Create fissures in objects to shatter or split them. Harder objects need more energy to fissure.
 193. Ferrokinesis, 4.9, Generic
-#Telekinetically control and shape metal in sensory range, such as ripping it from buildings into spears, flying on metal bands, or controlling iron-rich blood.
+#(Tag:earth)Telekinetically control and shape metal in sensory range, such as ripping it from buildings into spears, flying on metal bands, or controlling iron-rich blood.
 194. Terrakinesis, 4.5, Generic
 #(Tag:earth)Telekinetically control earth and rock in your sensory range.
 195. Armor, 3.1, Generic
@@ -395,15 +395,15 @@
 198. Extinction Meteors, 5.2, Generic
 #Bring down giant meteors for massive devastation and damage. Mass, power and speed depend on energy expended. Quite expensive to use.
 199. Pocket Sand, 0.4, Generic
-#Conjure and launch a handful of sand from your hands. Shouting "pocket sand!" while doing so might make it stronger.
+#(Tag:earth)Conjure and launch a handful of sand from your hands. Shouting "pocket sand!" while doing so might make it stronger.
 200. Sandshot, 1.1, Generic
-#Conjure and launch sand from your fingers at non-lethal but painful speeds.
+#(Tag:earth)Conjure and launch sand from your fingers at non-lethal but painful speeds.
 201. Sandstream, 2.2, Generic
 #Launch powerful sand streams from your body to hinder vision and injure enemies like sandblasting.
 202. Sandblast, 2.6, Generic
 #Launch blasts of high-velocity sand clouds that rend and shred metals and especially flesh.
 203. Death Valley Duster, 3.8, Generic
-#Conjure violent sand and dust clouds to launch in immensely powerful sandblast-like bursts that shred targets.
+#(Tag:earth)Conjure violent sand and dust clouds to launch in immensely powerful sandblast-like bursts that shred targets.
 204. Primordial Earth, 5.6, Generic
 #(Tag:earth)Control earth, dust and sand in sensory range to unleash giant sand blasts, launch jagged boulders and erupt stalagmites.
 205. Primordial Ancient, 6.3, Generic
@@ -449,9 +449,9 @@
 225. Sand Veil, 1.8, Generic
 #Create a small localized sandstorm on your location that hides your presence inside it while you see through it freely.
 226. Fool Sand, 4.9, JoJo
-#Conjure autonomous sand that shapeshifts, attacks and defends without input to protect you, eliminate enemies or provide utility.
+#(Tag:earth)Conjure autonomous sand that shapeshifts, attacks and defends without input to protect you, eliminate enemies or provide utility.
 227. Desert Weaponry, 3.5, Generic
-#Create sand-and-wind weapons and attacks such as giant sand blades, spears and hammers to unleash as projectiles.
+#(Tag:earth)Create sand-and-wind weapons and attacks such as giant sand blades, spears and hammers to unleash as projectiles.
 228. Sandstorm Body, 4.0, Generic
 #Turn your body into a living sand cloud and reform at will. Damage to the sand reflects onto you.
 229. Dig, 2.8, Generic
@@ -465,7 +465,7 @@
 233. Pika, 5.2, One Piece
 #Fuse with earth for complete terrain control: shape, move, and reform it, or form a giant golem around yourself.
 234. Desert Logia, 6.2, One Piece
-#Create, control, and turn into sand. You can also drain moisture to dry objects and turn stone into sand.
+#(Tag:earth)Create, control, and turn into sand. You can also drain moisture to dry objects and turn stone into sand.
 235. Blackout, 2.4, Generic
 #Banish all light from an area, making mundane sight nigh impossible. Larger areas cost more energy.
 236. Shadow Travel, 3.4, Generic
@@ -1263,7 +1263,7 @@
 632. White Tiger Form, 3.1, Generic
 #Lets you transform into a snow tiger or hybrid, gaining enhanced senses, predatory instincts, natural weapons, increased physical stats, and tiger traits.
 633. Swamp Logia, 6.2, One Piece
-#Lets you generate, control, create, and turn into mud or bottomless swamp. You can drag objects or people inside to store them in stasis.
+#(Tag:earth)Lets you generate, control, create, and turn into mud or bottomless swamp. You can drag objects or people inside to store them in stasis.
 634. Idle Death Gamble, 5.5, Jujutsu Kaisen
 #See https://jujutsu-kaisen.fandom.com/wiki/Idle_Death_Gamble
 635. Susanoo, 4.6, Naruto
@@ -1569,7 +1569,7 @@
 785. Hydra Projection, 4.7, MHA
 #Unleash hydra-head projections from body or back to crush, bite, smash, or constrict with the neck. A severed head needs time to resummon.
 786. Natural Armory, 3.9, Generic
-#Turn touched objects into stable cold weapons regardless of matter, like water scythe, stone spear, air sword, or fire whip. The world is your armory.
+#(Tag:earth)Turn touched objects into stable cold weapons regardless of matter, like water scythe, stone spear, air sword, or fire whip. The world is your armory.
 787. Unlimited Bladeworks, 6.4, Fate
 #(Tag:fae){Reality Marble} scan and understand any weapon encountered to store in a mental armory, then project it with identical attributes for energy. With practice, pull others into your sword-filled mental world. Excludes Alien, Fae, and Divine weapons by default.
 788. Reinforcement, 3.3, Fate
@@ -2147,7 +2147,7 @@
 1077. Frozen Dawn, 7.1, Generic
 #(Tag:ice)The Frozen Dawn allows you to conjure a Frozen Spear that massively amplifies Cryo attributes while held. It unleashes frigid energy that freezes even mana and kinetic energy, dooming stabbed targets to freeze faster if weaker, and can create additional boomerang spears as projectiles.
 1078. World Crusher, 7.0, Generic
-#The Hammer of Continental Destruction allows you to conjure an earthen hammer that massively enhances strength and Earth attributes. Strikes reshape terrain, unleash quaking shockwaves that tear hit beings inside out, and with enough power and energy can alter an entire planet in one swing.
+#(Tag:earth)The Hammer of Continental Destruction allows you to conjure an earthen hammer that massively enhances strength and Earth attributes. Strikes reshape terrain, unleash quaking shockwaves that tear hit beings inside out, and with enough power and energy can alter an entire planet in one swing.
 1079. Hulk Out, 7.6, Marvel
 #You can unleash a Gamma Mutate physique, growing large with godlike physical abilities. Physical strength grows with rage without discernible limit. (Note: Just the basic Hulk transformation, no connection shenanigans.).
 1080. Garm Physique, 6.7, God of War
@@ -2265,7 +2265,7 @@
 1136. Conjure Ice, 2.1, Generic
 #(Tag:ice)Allows you to create ice constructs from energy without controlling them afterward or freezing objects, such as ice walls, weapons, blocks, and boulders.
 1137. Conjure Rock, 2.4, Generic
-#Allows you to manifest rock constructs from energy without controlling them beyond creation and shaping, such as rock weapons, boulders, walls, and blocks.
+#(Tag:earth)Allows you to manifest rock constructs from energy without controlling them beyond creation and shaping, such as rock weapons, boulders, walls, and blocks.
 1138. Wallmaster, 3.7, Generic
 #You can make a wall from anything in your arsenal or any touched object or ground, from stone and ice to wind, sunlight, and raw energy. Size and durability scale with energy. Walls.
 1139. Swordmaster, 4.2, Generic
@@ -2699,7 +2699,7 @@
 1353. House of Memories, 6.5, Generic
 #Impart your memories to others, from simple information to traumatic experiences, ego-shattering foreign memory influx, or looping injury memories. Stronger, resilient targets and more memories cost more energy.
 1354. Arid Hell, 4.6, Generic
-#Conjure superheated sand from your body and telekinetically shape it into walls, weapons, or melting waves. Quantity and heat scale with energy spent.
+#(Tag:earth)Conjure superheated sand from your body and telekinetically shape it into walls, weapons, or melting waves. Quantity and heat scale with energy spent.
 1355. Ride on Time, 3.5, Generic
 #Conjure temporary familiar vehicles with working functions, from cars and balloons to planes and attack helicopters. Larger, more complex vehicles cost more to create and maintain.
 1356. Force, 3.7, Generic
