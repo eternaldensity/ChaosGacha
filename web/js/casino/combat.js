@@ -562,31 +562,34 @@
     if (gd.type === "warlord") {
       const mk = (data) => room.pickups.push(Object.assign(
         { x: gd.x, y: gd.y, bob: Math.random() * 6, age: 0 }, data));
-      mk({ kind: "coins", amount: 50 + room.depth * 8 });
+      const wamt = Math.round((50 + room.depth * 8) * (C.coinMult ? C.coinMult() : 1));
+      mk({ kind: "coins", amount: wamt });
       mk({ kind: "ticket", tier: "gold" });
       mk({ kind: "parts", amount: 3 });
       C.showCard("♛ WARLORD DOWN",
-        "The pack scatters: +" + (50 + room.depth * 8) + " coins, gold ticket, parts.",
+        "The pack scatters: +" + wamt + " coins, gold ticket, parts.",
         "", 4000);
     }
     if (gd.type === "roller") {      const mk = (data) => room.pickups.push(Object.assign(
         { x: gd.x, y: gd.y, bob: Math.random() * 6, age: 0 }, data));
-      mk({ kind: "coins", amount: 40 + room.depth * 8 });
+      const ramt = Math.round((40 + room.depth * 8) * (C.coinMult ? C.coinMult() : 1));
+      mk({ kind: "coins", amount: ramt });
       mk({ kind: "ticket", tier: "gold" });
       mk({ kind: "parts", amount: 2 + Math.floor(room.depth / 2) });
       C.showCard("🎲 HIGH ROLLER DOWN",
-        "Chips everywhere: +" + (40 + room.depth * 8) + " coins, gold ticket, parts. Grab them.",
+        "Chips everywhere: +" + ramt + " coins, gold ticket, parts. Grab them.",
         "", 4000);
     }
     if (gd.type === "collector") {
       // The Collector drops what it was carrying: a payout on the floor.
       const mk = (data) => room.pickups.push(Object.assign(
         { x: gd.x, y: gd.y, bob: Math.random() * 6, age: 0 }, data));
-      mk({ kind: "coins", amount: 60 + room.depth * 10 });
+      const camt = Math.round((60 + room.depth * 10) * (C.coinMult ? C.coinMult() : 1));
+      mk({ kind: "coins", amount: camt });
       mk({ kind: "ticket", tier: "gold" });
       mk({ kind: "ticket", tier: "silver" });
       C.showCard("💀 DEBT COLLECTOR DOWN",
-        "It dropped +" + (60 + room.depth * 10) + " coins, gold + silver tickets. Grab them.",
+        "It dropped +" + camt + " coins, gold + silver tickets. Grab them.",
         "Threat remains ★" + C.G.threat + " — the house has more.", 4000);
     }
     const nt = Math.min(5, Math.floor(C.G.kills / 2));
@@ -618,8 +621,9 @@
       bruiser: [5, 9], stalker: [3, 6], hexer: [5, 9], medic: [4, 7],
       captain: [8, 13], handler: [6, 10], hound: [1, 3] }[gd.type];
     if (bounty) {
-      const amt = bounty[0] + Math.floor(Math.random() * (bounty[1] - bounty[0] + 1)) +
+      const base = bounty[0] + Math.floor(Math.random() * (bounty[1] - bounty[0] + 1)) +
         Math.floor(room.danger / 3);
+      const amt = Math.max(1, Math.round(base * (C.coinMult ? C.coinMult() : 1)));
       room.pickups.push({ kind: "coins", amount: amt, x: gd.x, y: gd.y, bob: 0, age: 0 });
     }
     C.updateHud();

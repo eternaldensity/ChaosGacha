@@ -7,7 +7,8 @@
   };
 
   C.rollSlotPayout = function (t) {
-    const luck = (C.G && C.luck()) || 0;
+    const luck = (C.G && C.luck && C.luck()) || 0;
+    const cm = (C.coinMult && C.coinMult()) || 1;
     const r = Math.random();
     const idx = C.TIERS.indexOf(t);
     const up = C.TIERS[Math.min(C.TIERS.length - 1, idx + 1)];
@@ -16,7 +17,7 @@
       if (rr < 0.9 && idx > 0) return C.TIERS[idx - 1].id;
       return up.id;
     };
-    if (r < 0.01 + 0.005 * luck) return { kind: "jackpot", coins: t.cost * 10, ticket: t.id };
+    if (r < 0.01 + 0.005 * luck) return { kind: "jackpot", coins: Math.round(t.cost * 10 * cm), ticket: t.id };
     if (r < 0.31) {
       let tk = ticketFor(Math.random());
       // Luck can bump the ticket up one tier.
@@ -26,7 +27,7 @@
       }
       return { kind: "ticket", ticket: tk };
     }
-    if (r < 0.86) return { kind: "coins", coins: Math.round(t.cost * (0.6 + Math.random() * 1.6)) };
+    if (r < 0.86) return { kind: "coins", coins: Math.round(t.cost * (0.6 + Math.random() * 1.6) * cm) };
     return { kind: "nothing" };
   };
 

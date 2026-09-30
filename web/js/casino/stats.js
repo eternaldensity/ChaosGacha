@@ -24,6 +24,7 @@
     3 + Math.floor((get("END") - 10) / 2) + ((C.G && C.G.p.curseHp) || 0));
   C.cdr = () => Math.min(0.35, 0.02 * (get("FOC") - 10));
   C.luck = () => get("LCK") - 10;
+  C.coinMult = () => 1 + ((C.G && C.G.p.coinBonus) || 0);
   C.satCap = () => 3 + Math.floor((get("STR") - 10) / 2);
   C.ammoMax = () => 20 + 2 * (get("STR") - 10);
   C.manaMax = () => 60 + 5 * (get("FOC") - 10);

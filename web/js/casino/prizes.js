@@ -3,28 +3,48 @@
  * Depends on: config, dom, state (runtime G). */
 (function (C) {
 // Shared: put a familiar prize into pets/stable. Used by prizes and taming.
+// Money-sniffing familiars (gold slimes, treasure fairies...) join as mules
+// and boost all coin earnings on top of the loot-magnet aura.
 C.applyFamiliar = function (res) {
   const p = C.G.p, r = res.rarity;
   {
     const dmg = Math.max(1, Math.round(r / 3)) + (p.petBonus || 0);
-    const role = C.petRole(res.name, res.tags);
+    const role = C.petRole(res.name, res.tags, res.description);
     const pet = {
       name: res.name, dmg, cd: 0, role,
       cdMax: role === "medic" ? Math.max(8, 22 - r) : 1.1,
     };
+    const wealthy = C.wealthyFamiliar(res);
+    let suffix = "";
+    if (wealthy) {
+      const gain = 0.10 + r * 0.01;
+      p.coinBonus = Math.min(1.0, (p.coinBonus || 0) + gain);
+      C.noteBuild(res.name.slice(0, 18) + ": coins +" + Math.round(p.coinBonus * 100) + "%", "pass");
+      suffix = " Coin earnings +" + Math.round(gain * 100) +
+        "% (total +" + Math.round(p.coinBonus * 100) + "%).";
+    }
     const roleBlurb = { bully: "brawls on contact", medic: "heals you",
       mule: "loot magnet", scout: "ticket luck", gunner: "auto-attacks" }[role];
     if (p.pets.length < 2) {
       p.pets.push(pet);
       C.noteBuild("🐾 " + res.name + " (" + role + ")", "pet");
       return "Familiar joins (" + role + " — " + roleBlurb + "): " + res.name +
-        ". P rotates the stable.";
+        "." + suffix + " P rotates the stable.";
     }
     p.stable.push(pet);
     C.noteBuild("🐾 " + res.name + " (" + role + ", stabled)", "pet");
     return "Familiar stabled (" + role + " — " + roleBlurb + "): " + res.name +
-      ". Press P to rotate it in (2 active).";
+      "." + suffix + " Press P to rotate it in (2 active).";
   }
+};
+
+// True for familiars whose theme is money itself (not merely gold-colored).
+// Bare "gold"/"coin" excluded: golden retrievers and coin-sport whales stay
+// ordinary pets; ticket/gacha-flavored coins stay out too.
+C.wealthyFamiliar = function (res) {
+  const s = (String((res && res.name) || "") + " " + String((res && res.description) || "")).toLowerCase();
+  if (/\(gacha\)|reroll|ticket|advantage|coin-flipping esport|perfectly fair coin/i.test(s)) return false;
+  return /spelunker fairy|lucky slime|gold slime|wealth|treasures?|newbucks|plorts?.*gold|solid-gold egg|gold bars?|free market|stock speculation|\bgreed|hoard|fortune|money|payday|\bprofit\b/i.test(s);
 };
 
   C.applyPrize = function (res) {
@@ -156,6 +176,19 @@ C.applyFamiliar = function (res) {
           (p.weapon.element ? ", " + p.weapon.element : "") +
           (pattern !== "single" ? ", " + pattern : "") + "). J/click to fight back — Threat will rise.";
       }
+      // Wealth hoards pay out in the casino: gold/treasure prizes boost all
+      // coin earnings (slots + bounties). Gear checks above win, so golden
+      // weapons/armor stay gear; ticket/gacha chips stay tickets.
+      if (!/\(gacha\)|reroll|ticket.*advantage|discarding its result/i.test(nm) &&
+          !/fortune slip|fortune cookie/i.test(nm) &&
+          /relic gold|stack of gold bars|greedy ring|endless purse|bag of endless|dragon'?s hoard|hand of midas|icon of greed|attracts wealth|make money|find treasures|fills with.*gold coins|produces.*gold coins|take its gold|becomes solid gold|perceive.*valuable|trade it for.*artifact|solid-gold egg|gold bars?|gold coins?|wealth|treasure|\bgreed|hoard|bullion|ingot|doubloon|\bpurse\b|riches|\bprofit\b|payday/i.test(nm)) {
+        const gain = 0.15 + r * 0.02;
+        p.coinBonus = Math.min(1.0, (p.coinBonus || 0) + gain);
+        C.noteBuild(res.name.slice(0, 18) + ": coins +" + Math.round(p.coinBonus * 100) + "%", "pass");
+        C.floater(p.x, p.y - 24, "+" + Math.round(gain * 100) + "% 🪙 earnings", "#ffe066");
+        return "Kept " + res.name + ": coin earnings +" + Math.round(gain * 100) +
+          "% (total +" + Math.round(p.coinBonus * 100) + "% — slots and bounties pay more).";
+      }
     }
     if (cat === "ability") {
       p.abilitiesOwned = (p.abilitiesOwned || 0) + 1;
@@ -232,6 +265,17 @@ C.applyFamiliar = function (res) {
         C.noteBuild(res.name.slice(0, 18) + ": CHA " + p.stats.CHA, "pass");
         return "Trait: +2 CHA (dominates last longer, talks reach further, pets hit harder).";
       }
+      // Noses for money: wealth/treasure/reward traits boost coin earnings.
+      // Placed before the seer branch so Golden Rule ("sixth sense" for
+      // wealth) pays coins instead of granting door intel.
+      if (/golden rule|magpie|scavenger|wealth|treasure|\bgreed|hoard|bullion|ingot|doubloon|\bpurse\b|riches|\breward\b|payday|\bprofit\b|fortune(?! slip)|winner|hero'?s reward/i.test(nm)) {
+        const gain = 0.15 + r * 0.02;
+        p.coinBonus = Math.min(1.0, (p.coinBonus || 0) + gain);
+        C.noteBuild(res.name.slice(0, 18) + ": coins +" + Math.round(p.coinBonus * 100) + "%", "pass");
+        C.floater(p.x, p.y - 24, "+" + Math.round(gain * 100) + "% 🪙 earnings", "#ffe066");
+        return "Trait: nose for money — coin earnings +" + Math.round(gain * 100) +
+          "% (total +" + Math.round(p.coinBonus * 100) + "%).";
+      }
       if (/thinker|sense|detect|perceiv|predict|foresight|intuit|insight|sixth sense|danger sense|awareness|vigil/i.test(nm)) {
         p.survey = true;
         C.modStat("LCK", 1);
@@ -281,6 +325,17 @@ C.applyFamiliar = function (res) {
       p.rangedBonus = (p.rangedBonus || 0) + 1;
       C.noteBuild(res.name.slice(0, 18) + ": +ranged dmg");
       return "Skill: " + res.name + " — +1 damage on ranged attacks.";
+    }
+    // Money skills haggle the house itself: Commerce, Tax Evasion and kin
+    // boost all coin earnings. (Bare "trade(s)" excluded: profession-trade
+    // skills like Blacksmithing keep their PROF edge below.)
+    if (cat === "skill" && /commerce|haggl|monetary|tax evasion|money laundering|entrepreneur|merchant|bargain|good price|wealth|treasure|\bgreed|payday|\bprofit\b/i.test(nm)) {
+      const gain = 0.15 + r * 0.02;
+      p.coinBonus = Math.min(1.0, (p.coinBonus || 0) + gain);
+      C.noteBuild(res.name.slice(0, 18) + ": coins +" + Math.round(p.coinBonus * 100) + "%", "pass");
+      C.floater(p.x, p.y - 24, "+" + Math.round(gain * 100) + "% 🪙 earnings", "#ffe066");
+      return "Skill: " + res.name + " — you haggle the house: coin earnings +" +
+        Math.round(gain * 100) + "% (total +" + Math.round(p.coinBonus * 100) + "%).";
     }
     // Profession skills (usually "Rank Profession"): the trade becomes a
     // casino edge. Unlisted trades fall through to generic pull speed.
