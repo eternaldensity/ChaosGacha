@@ -25,6 +25,13 @@
   C.cdr = () => Math.min(0.35, 0.02 * (get("FOC") - 10));
   C.luck = () => get("LCK") - 10;
   C.coinMult = () => 1 + ((C.G && C.G.p.coinBonus) || 0);
+  // Loot-grab radius: base + mule aura (+40 while a mule is active) +
+  // stacking pickupBonus from magnet/fetch prizes (cap applied on grant).
+  C.pickupRadius = function () {
+    const base = C.PICKUP_R || 26;
+    const mule = (typeof C.activeRole === "function" && C.activeRole("mule")) ? 40 : 0;
+    return base + mule + (((C.G && C.G.p.pickupBonus) || 0));
+  };
   C.satCap = () => 3 + Math.floor((get("STR") - 10) / 2);
   C.ammoMax = () => 20 + 2 * (get("STR") - 10);
   C.manaMax = () => 60 + 5 * (get("FOC") - 10);

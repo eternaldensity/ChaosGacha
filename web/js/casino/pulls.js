@@ -192,7 +192,8 @@
   C.updatePickups = function (dt) {
     const p = C.G.p, room = C.curRoom();
     for (const pk of room.pickups) { pk.bob += dt; pk.age += dt; }
-    const magnet = C.PICKUP_R + (C.activeRole("mule") ? 40 : 0);
+    const magnet = C.pickupRadius ? C.pickupRadius()
+      : (C.PICKUP_R + (C.activeRole("mule") ? 40 : 0));
     for (const pk of [...room.pickups]) {
       if (Math.hypot(pk.x - p.x, pk.y - p.y) > magnet) continue;
       room.pickups.splice(room.pickups.indexOf(pk), 1);

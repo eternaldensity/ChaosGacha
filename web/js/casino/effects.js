@@ -55,8 +55,8 @@
     const nm = String(name).toLowerCase();
     if (/guard|bully|brawler|tank|defend|protector|bodyguard/i.test(nm)) return "bully";
     if (/heal|medic|cleric|nurse|doctor|mend/i.test(nm)) return "medic";
-    if (/mule|pack|merchant|greed|luck|hoard|storage/i.test(nm)) return "mule";
-    if (desc && /wealth|treasures?|newbucks|plorts?.*gold|solid-gold egg|gold bars?|free market|stock speculation|money|payday/i.test(String(desc).toLowerCase())) return "mule";
+    if (/mule|pack|merchant|greed|luck|hoard|storage|gathering swarm|lizard doggo|simulacrum|\bcrow\b|\bwisp\b|\bpeon\b|\bharvest\b/i.test(nm)) return "mule";
+    if (desc && /wealth|treasures?|newbucks|plorts?.*gold|solid-gold egg|gold bars?|free market|stock speculation|money|payday|gather(?! information)|fetch|lifted wallets|stripped corpses|digs up surprises/i.test(String(desc).toLowerCase())) return "mule";
     if (/scout|eye|watcher|guide|spy|sensor/i.test(nm)) return "scout";
     if (/spelunker fairy|gold slime/i.test(nm)) return "mule";
     return "gunner";

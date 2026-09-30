@@ -23,6 +23,14 @@ C.applyFamiliar = function (res) {
       suffix = " Coin earnings +" + Math.round(gain * 100) +
         "% (total +" + Math.round(p.coinBonus * 100) + "%).";
     }
+    // Fetch-pets (swarms, harvesters, fetch-crows) widen pickup radius on
+    // top of the mule loot-magnet aura most of them already carry.
+    if (C.fetchFamiliar(res)) {
+      const gain = Math.round(6 + r * 1.5);
+      p.pickupBonus = Math.min(80, (p.pickupBonus || 0) + gain);
+      C.noteBuild(res.name.slice(0, 18) + ": pickup +" + p.pickupBonus, "pass");
+      suffix += " Pickup radius +" + gain + " (total +" + p.pickupBonus + ").";
+    }
     const roleBlurb = { bully: "brawls on contact", medic: "heals you",
       mule: "loot magnet", scout: "ticket luck", gunner: "auto-attacks" }[role];
     if (p.pets.length < 2) {
@@ -38,6 +46,13 @@ C.applyFamiliar = function (res) {
   }
 };
 
+// True for fetch/gather familiars whose theme is hauling loot to you
+// (swarms, harvesters, fetch-crows, dig-up-surprise pups).
+C.fetchFamiliar = function (res) {
+  const s = (String((res && res.name) || "") + " " + String((res && res.description) || "")).toLowerCase();
+  if (/coin-flipping esport|perfectly fair coin/i.test(s)) return false;
+  return /gathering swarm|^harvest\b|lizard doggo|solemn simulacrum|\bcrow\b|\bwisp\b|\bpeon\b|\bharvest\b.*(gather|colon)|gather(?! information)|lifted wallets|stripped corpses|digs up surprises|fetches? .*resource|find and fetch/i.test(s);
+};
 // True for familiars whose theme is money itself (not merely gold-colored).
 // Bare "gold"/"coin" excluded: golden retrievers and coin-sport whales stay
 // ordinary pets; ticket/gacha-flavored coins stay out too.
@@ -59,6 +74,19 @@ C.wealthyFamiliar = function (res) {
     const nm = (res.name + " " + res.description).toLowerCase(), r = res.rarity;
     const bonus = 1 + (r - 1) * 0.08;
     if (cat === "item") {
+      // Loot magnets first: explicit pull-to-hand gear (Gravity Gloves,
+      // Vacpack, Thief's Ring, fishing rods) beats the generic keyword
+      // branches below — "gloves" contains "love" (romance) and the Vacpack
+      // description lists "food" (potion), so this must run before those.
+      if (!/\(gacha\)/i.test(nm) &&
+          /gravity gloves|vacpack|thief'?s ring|fishing rod|super rod|snatch distant|steal.*to your hands|vacuum.*stor|lures? compelled|into your hands|draw .*toward you|\btractor\b|\blodestone\b|\bmagnet\b/i.test(nm)) {
+        const gain = Math.round(10 + r * 2);
+        p.pickupBonus = Math.min(80, (p.pickupBonus || 0) + gain);
+        C.noteBuild(res.name.slice(0, 18) + ": pickup +" + p.pickupBonus, "pass");
+        C.floater(p.x, p.y - 24, "+" + gain + " 🧲 pickup", "#7df9ff");
+        return "Kept " + res.name + ": pickup radius +" + gain +
+          " (total +" + p.pickupBonus + " — grab loot from further away).";
+      }
       // Consumables go to the satchel: Q uses the selected stack, C cycles.
       // Bombs restock slowly while selected; potions and decoys do not.
       if (/medkit|potion|food|ration|elixir|bandage|snack|feast/i.test(nm)) {
@@ -205,6 +233,18 @@ C.wealthyFamiliar = function (res) {
         // Full: Advantage-style draft instead of a silent stash.
         C.openDraft({ kind: "new", ab });
         return "Slots full — draft opened! Pick a slot for " + ab.name + slotNote + ".";
+      }
+      // Unmatched pull-to-hand abilities become a passive loot magnet
+      // instead of bland essence. Matched ones (Telekinesis/Graviton → wave)
+      // stay combat powers above; this only runs when compileAbility is null.
+      if (!ab && /object attraction|universal pull|draw .*toward you|pull .*toward you|pull distant|pull things in|attractive force|\battraction\b|vacuum|snatch distant|\bfetch\b|gather materials/i.test(nm)) {
+        const gain = Math.round(8 + r * 2);
+        p.pickupBonus = Math.min(80, (p.pickupBonus || 0) + gain);
+        C.noteBuild(res.name.slice(0, 18) + ": pickup +" + p.pickupBonus, "pass");
+        C.floater(p.x, p.y - 24, "+" + gain + " 🧲 pickup", "#7df9ff");
+        if (opened) C.floater(p.x, p.y - 40, "+" + opened + " ability slot!", "#ffe066");
+        return "Technique: " + res.name + " — loot drifts to you: pickup radius +" +
+          gain + " (total +" + p.pickupBonus + ")." + slotNote;
       }
       // Unmatched abilities fall through to the essence fallback below.
       if (opened) C.floater(p.x, p.y - 40, "+" + opened + " ability slot!", "#ffe066");

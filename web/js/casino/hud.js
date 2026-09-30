@@ -63,6 +63,7 @@
     if (p.stable.length) bits.push("<span class='bchip pet'>+" + p.stable.length + " stabled (P)</span>");
     if (p.armorPct > 0) bits.push("<span class='bchip'>🛡 block " + Math.round(p.armorPct * 100) + "%</span>");
     if ((p.coinBonus || 0) > 0) bits.push("<span class='bchip'>🪙 coins +" + Math.round(p.coinBonus * 100) + "%</span>");
+    if ((p.pickupBonus || 0) > 0) bits.push("<span class='bchip'>🧲 pickup +" + p.pickupBonus + "</span>");
     if (p.cloakT > 0) bits.push("<span class='bchip'>👻 cloak " + p.cloakT.toFixed(0) + "s</span>");
     if (p.mount) bits.push("<span class='bchip'>" + p.mount.glyph + " " + esc(p.mount.name) + " (" + p.mount.hp + ")</span>");
     if (p.presence > 0) bits.push("<span class='bchip'>🎭 presence " + Math.round(p.presence * 100) + "%</span>");
