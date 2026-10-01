@@ -57,11 +57,12 @@
     return (tags || []).map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ");
   }
   // Copy format mirrors the gacha result text: one identity line plus the
-  // full description, so a pasted node reads the same everywhere.
+  // full description, so a pasted node reads the same everywhere. Cost is
+  // in tree points (more relevant than rarity here).
   function nodeText(nd) {
     const cls = classOf(nd.rarity);
     const tags = nodeTags(nd);
-    return `🌳 #${nd.id} ${nd.name} (${fmtR(nd.rarity)}, ${cls.name}, ${nd.file}` +
+    return `🌳 #${nd.id} ${nd.name} (${E.fmt(Math.pow(10, nd.rarity))} pts, ${cls.name}, ${nd.file}` +
       `${nd.source ? ", " + nd.source : ""}${tags.length ? ", #" + tags.join(" #") : ""})` +
       (nd.description ? `\n${nd.description}` : "");
   }
