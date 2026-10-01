@@ -56,6 +56,30 @@
   function tagPills(tags) {
     return (tags || []).map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ");
   }
+  // Copy format mirrors the gacha result text: one identity line plus the
+  // full description, so a pasted node reads the same everywhere.
+  function nodeText(nd) {
+    const cls = classOf(nd.rarity);
+    const tags = nodeTags(nd);
+    return `🌳 #${nd.id} ${nd.name} (${fmtR(nd.rarity)}, ${cls.name}, ${nd.file}` +
+      `${nd.source ? ", " + nd.source : ""}${tags.length ? ", #" + tags.join(" #") : ""})` +
+      (nd.description ? `\n${nd.description}` : "");
+  }
+  async function copyText(t, what) {
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(t);
+      } else {
+        const ta = document.createElement("textarea");
+        ta.value = t;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      toast(what ? `Copied ${what}!` : "Copied!");
+    } catch (e) { toast("Copy failed.", true); }
+  }
 
   function toast(msg, isErr) {
     const t = $("toast");
@@ -1084,7 +1108,10 @@
     } else if (unl) {
       actions = `<div class="muted small" style="margin-top:8px">Unlocked ✓</div>`;
     }
-    card.innerHTML = `<h2>Selected node</h2>` + nodeLine(nd, unl) + actions;
+    card.innerHTML = `<h2>Selected node</h2>` + nodeLine(nd, unl) + actions +
+      `<div class="row" style="margin-top:8px"><button data-act="copy" title="Copy this node's text">📋 Copy</button></div>`;
+    const cb = card.querySelector('[data-act="copy"]');
+    if (cb) cb.addEventListener("click", () => copyText(nodeText(nd), nd.name));
     const ub = card.querySelector('[data-act="unlock"]');
     if (ub) ub.addEventListener("click", async () => {
       const done = await mutate(({ st, rt }) => E.unlock(st, rt, nd.id));
@@ -1597,6 +1624,11 @@
     $("unlockPrev").disabled = unlockPage === 0;
     $("unlockNext").disabled = unlockPage >= pages - 1;
     applyUnlockVisibility();
+    $("unlockCopy").onclick = () => {
+      if (!ids.length) return toast("Nothing to copy.", true);
+      copyText(ids.map(id => nodeText(rt.byId[id])).join("\n\n"),
+        `${ids.length} unlockable node${ids.length === 1 ? "" : "s"}`);
+    };
     if (!ids.length) {
       box.innerHTML = "<li class='muted'>Nothing on the frontier — reach further with tickets.</li>";
       return;
