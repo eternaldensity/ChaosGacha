@@ -951,17 +951,17 @@
 476. Stalker, 4.6, Horizon Zero Dawn
 #An overridden stealth machine that cloaks beside you until it strikes.
 477. Pink Slime, 1.2, Slime Rancher
-#(Tag:slime)The friendliest slime: eats anything, loves everything, wiggles constantly.
+#(Tag:slime)The friendliest slime: eats anything, loves everything, wiggles constantly. It disposes of any organic waste you feed it and regularly produces valuable pink plorts — useless in a fight, priceless as a pet.
 478. Tabby Slime, 1.8, Slime Rancher
-#(Tag:slime)A catlike slime that steals food, knocks things over, and purrs about it.
+#(Tag:slime)A catlike slime that steals food, knocks things over, and purrs about it. It hunts vermin tirelessly, squeezes through tight spaces to fetch small objects, and keeps morale high — while remaining a menace to unattended snacks.
 479. Phosphor Slime, 2.2, Slime Rancher
-#(Tag:slime)A nocturnal glow slime, harmless by day and radiant by night.
+#(Tag:slime)A nocturnal glow slime, harmless by day and radiant by night. After dark it shines brightly enough to read and work by, marking you visibly from afar — welcome light for you, and for anything watching.
 480. Hunter Slime, 3.0, Slime Rancher
 #(Tag:slime)A feral-eyed predator slime that turns invisible before it pounces.
 481. Honey Slime, 2.4, Slime Rancher
 #(Tag:slime)A sweet slime oozing minty honey; nearby slimes agitate from the smell.
 482. Puddle Slime, 2.6, Slime Rancher
-#(Tag:slime)A shy water slime that only thrives in ponds and evaporates on dry land.
+#(Tag:slime)A shy water slime that purifies any water it bathes in and sheds valuable plorts — but it only thrives in ponds or a carried water tank, and slowly evaporates on dry land.
 483. Quantum Slime, 3.8, Slime Rancher
 #(Tag:slime)A paradox slime that exists in multiple places until observed.
 484. Lucky Slime, 4.6, Slime Rancher
@@ -969,9 +969,9 @@
 485. Gold Slime, 5.8, Slime Rancher
 #(Tag:slime)The rarest slime: appears anywhere, eats anything, and pops into plorts of pure gold.
 486. Tiyanki Matriarch, 5.2, Stellaris
-#An ancient space-whale matriarch leading her pod across the stars beside you.
+#An ancient space-whale matriarch leading her pod across the stars beside you. She and her pod serve as living starships and lookouts, carrying you between worlds and warning of danger — ponderous in a fight, but nigh-unstoppable once moving.
 487. Space Amoeba, 4.4, Stellaris
-#A docile void amoeba the size of a frigate, trailing your fleet like a puppy.
+#A docile void amoeba the size of a frigate, trailing you like a puppy. It serves as a living starship, carrying you and your cargo through space or the void inside its harmless bulk — slow, gentle, and utterly loyal.
 488. War Dog, 2.2, Dwarf Fortress
 #A trained wardog that hunts and holds the line beside its handler.
 489. Barn Cat, 1.4, Dwarf Fortress
@@ -979,25 +979,25 @@
 490. Grizzly Bear, 3.2, Dwarf Fortress
 #A war-trained grizzly that mauls sieges on command.
 491. Cuddlefish, 2.8, Subnautica
-#An endearing deep-sea pet that plays fetch and follows you home.
+#An endearing deep-sea pet that plays fetch and follows you home. It retrieves small objects from water or hard-to-reach spots and steadies your nerves in the dark depths — but it has no fighting ability whatsoever.
 492. Lizard Doggo, 2.4, Satisfactory
 #A loyal alien pup that follows you around and occasionally digs up surprises.
 493. Chirpy, 1.6, Cities Skylines
-#The relentlessly cheerful seagull mascot, narrating your city one chirp at a time.
+#The relentlessly cheerful seagull mascot, narrating your city one chirp at a time. Wherever you settle, his chatter alerts you to civic problems early — shortages, unrest, fires — though he never shuts up about it.
 494. Shivan Dragon, 6.4, MTG
 #(Tag:dragonic)The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
 495. Captain Boomer, 4.8, Q-UP
-#A 3-ton whale with a day job who competes in the coin-flipping esport beside you.
+#A 3-ton whale with a day job who competes in the coin-flipping esport beside you. He serves as tireless aquatic transport, and his professional fairness settles any game of chance beyond dispute — though he insists on a fair ruling every time.
 496. Peska the Troll, 3.2, Q-UP
-#A trash-talking troll hero whose jeers tilt opponents right off the ladder.
+#A trash-talking troll hero whose jeers tilt opponents right off the ladder. His taunts enrage enemies into reckless mistakes — wild swings, broken focus, fumbled plans — though friends aren't always spared the commentary.
 497. HyperQbe the Streamer, 3.4, Q-UP
-#An always-live streamer hero narrating your flips to an audience of thousands.
+#An always-live streamer hero narrating your flips to an audience of thousands. His hype keeps your nerve steady under pressure, and his audience sometimes digs up useful information — though your exploits are never private again.
 498. Mercury, 3.6, Tron 2.0
 #A skilled program ally who fights beside you in the Game Grid and knows its back doors.
 499. Data Wraith, 4.0, Tron 2.0
 #(Tag:spectral)(Tag:undead)A viral hunter prowling the system for programs to derez, currently pointed at your enemies.
 500. Spirit Doe, 4.2, Life is Strange
-#A luminous doe that appears at turning points, watching over your choices.
+#A luminous doe that appears at turning points in your life. She warns you when a choice leads toward disaster and guides you toward what matters — but she only ever shows the way, never carries you down it.
 501. Spidertron, 5.6, Factorio
 #(Tag:insect)A spider-legged combat mech with rocket launchers that follows your remote orders.
 502. Little Scout, 2.2, Outer Wilds

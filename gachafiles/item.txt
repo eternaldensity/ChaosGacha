@@ -1773,7 +1773,7 @@
 887. Proliferator, 3.8, Dyson Sphere Program
 #A spray that overclocks production lines and multiplies their output.
 888. Strange Matter, 5.2, Dyson Sphere Program
-#Exotic late-game material for the strangest recipes in the tech tree.
+#Exotic late-game material for the strangest recipes in the tech tree. A lump the size of a coin weighs as much as an anvil, holds staggering energy, and forges components no mundane material can match — if you have the tools and knowledge to work it safely.
 889. Antimatter Fuel Rod, 6.2, Dyson Sphere Program
 #Dense annihilation fuel that keeps Icarus flying between stars.
 890. EM Rail Ejector, 4.4, Dyson Sphere Program
@@ -1871,15 +1871,15 @@
 936. Resurrection Scroll, 3.0, Divinity Original Sin
 #Bring an ally back mid-fight; every tactician carries a stack.
 937. Q-Up Coin, 2.0, Q-UP
-#The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty. Totally fair.
+#The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty, totally fair — and immune to all luck, fate, and probability manipulation, so its verdict settles any dispute beyond argument.
 938. Identity Disc, 4.0, Tron 2.0
 #A glowing identity disc worn on the back: memory, weapon, and backup in one. Grants disc abilities — a returning energy throw, plus disc subroutines like Seeker or Firewall — and stores a backup that can restore you if you're derezzed. It doesn't make you a program, and the backup restores you rather than cloning an independent copy.
 939. Impossible Shard, 4.6, Q-UP
 #A shard of Impossible rarity; slotting it multiplies everything your build does.
 940. Passenger Blimp, 3.4, Cities Skylines
-#A lumbering passenger blimp that ferries citizens across your skyline in style.
+#A lumbering passenger blimp that ferries you and up to a dozen passengers or a hold of cargo through the skies in style — slow, comfortable, and landing anywhere flat, needing only time and clear weather.
 941. Space Elevator, 7.2, Cities Skylines
-#A unique-building space elevator that fires tourists and freight straight into orbit.
+#A unique-building space elevator you can raise wherever you settle: a tethered beanstalk that lifts you and freight straight into orbit and back, cheaply and endlessly — once anchored, it cannot be moved.
 942. Instant Camera, 1.8, Life is Strange
 #An instant camera for capturing the moments that matter, before you rewind them.
 943. Planetary Shield, 5.8, Dyson Sphere Program
@@ -1897,9 +1897,9 @@
 949. Signalscope, 2.6, Outer Wilds
 #A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
 950. Ash Twin Project, 7.8, Outer Wilds
-#The Nomai station at the heart of the 22-minute loop; knowing it exists changes everything.
+#The Nomai station at the heart of the 22-minute loop. You hold its secrets: you can detect time loops and anomalies, navigate them safely, and — most precious of all — retain your memories across resets while others forget.
 951. The Generator, 6.8, Frostpunk
-#A towering coal-fired Generator, the last source of heat on Earth; the city lives or dies with it.
+#A towering coal-fired Generator you can raise at any settlement: it burns coal — or wood, oil, and worse in a pinch — to radiate life-saving warmth across whole districts through even supernatural frost. The city lives or dies with it, so you must feed it fuel and hands around the clock.
 952. Steam Hub, 4.0, Frostpunk
 #A portable steam hub extending the Generator's warmth to distant districts.
 953. Atmo Suit, 3.2, Oxygen Not Included
@@ -1929,7 +1929,7 @@
 965. Generator, 3.0, Project Zomboid
 #(Tag:ice)A portable gas generator that keeps the lights and freezers on after the grid dies.
 966. Galaxy Sword, 5.2, Stardew Valley
-#A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen.
+#A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen. It never dulls or breaks, and cuts clean through armor, monsters, and magic-resistant hides far beyond mundane steel — though it grants no magic of its own.
 967. Junimo Hut, 3.8, Stardew Valley
 #A hut housing Junimos who emerge each morning to harvest your crops for you.
 968. SHIELD Flying Car, 4.0, Marvel

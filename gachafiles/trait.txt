@@ -1307,13 +1307,13 @@
 653. Backtalk, 2.4, Life is Strange
 #Weaponized sarcasm: talk your way past anyone by pushing exactly the right buttons.
 654. Glow-Touched, 4.0, I Was a Teenage Exocolonist
-#Bonded with Vertumna's alien Glow, a symbiotic light that shares its strange senses.
+#Bonded with Vertumna's alien Glow, a symbiotic light living in you that lets you see in darkness and sense the presence, health, and mood of living things nearby — and occasionally nudges you toward what it wants.
 655. Root Access, 4.2, Tron 2.0
 #System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
 656. Hexagonal Skill Grid, 3.8, Q-UP
 #Your abilities arrange on a hexagonal grid, triggering off coin flips in combo chains.
 657. The City Must Survive, 3.0, Frostpunk
-#No matter the frost or the cost, you will keep the last city alive through the storm.
+#No matter the frost or the cost, you will keep the last city alive through the storm. Your leadership stretches food, fuel, and medicine several times further through ruthless rationing, keeps followers warm and obedient through deadly cold with far less shelter, and holds morale under hardship that would break anyone else — but every harsh decree breeds lasting resentment.
 658. Rock and Stone, 1.6, Deep Rock Galactic
 #For Rock and Stone! Morale, teamwork, and mineral yields all improve when shouted properly.
 659. Keen Hearing, 2.2, Project Zomboid
@@ -1321,7 +1321,7 @@
 660. Handy, 2.0, Project Zomboid
 #You are handy: maintenance, repairs, and barricading all go faster in your hands.
 661. The Factory Must Grow, 2.4, Factorio
-#Production must expand to meet the needs of the ever-expanding production. The factory grows.
+#You think in production lines: you design, build, and automate workshops, machines, and supply chains faster and better than any sane person should, and every operation you run keeps expanding its output — along with its bottomless appetite for raw materials and space.
 662. MIT Graduate, 2.2, Half-Life
 #You hold a doctorate from MIT and solve physics problems the way other people breathe.
 663. Silent Protagonist, 1.8, Half-Life
