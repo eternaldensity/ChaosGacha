@@ -672,12 +672,13 @@
   let showRadial = true; // r = radial distance, occasionally useful for debugging
   // A locked node is unlockable right now when it sits on the frontier
   // (normal unlocks are adjacency-only) and the wallet covers it.
-  // Pass a precomputed frontier set when checking many nodes per frame.
-  function canUnlockNow(st, rt, nid, front) {
+  // Pass a precomputed frontier set when checking many nodes per frame,
+  // and a costContext (E.costContext) so costs stay O(1) per node.
+  function canUnlockNow(st, rt, nid, front, ccx) {
     if (nid === 0 || st.unlocked.includes(nid)) return false;
     if (!(front || E.frontier(rt, st.unlocked)).has(nid)) return false;
-    if ((st.cores || 0) < E.coreCostFor(st, rt, nid)) return false;
-    const cost = E.nodeCostFor(st, rt, nid);
+    if ((st.cores || 0) < E.coreCostFor(st, rt, nid, ccx)) return false;
+    const cost = E.nodeCostFor(st, rt, nid, ccx);
     return st.points >= cost - E.couponCover(st, cost);
   }
   function hexPath(c, x, y, r) {
@@ -861,11 +862,12 @@
     projected = [];
     const dotScale = Math.min(cam.zoom, 3.5);
     const front = E.frontier(d.rt, d.st.unlocked);
+    const ccx = E.costContext(d.st, d.rt);
     for (const it of items) {
       const unlocked = d.unl.has(it.nd.id);
       const col = classColor(it.nd.rarity);
       const rad = Math.max(1.2, Math.min(10, (unlocked ? 3.4 : 2.6) + it.nd.rarity * 0.55) * dotScale * (window.devicePixelRatio || 1) / 1.5);
-      const hex = !unlocked && canUnlockNow(d.st, d.rt, it.nd.id, front);
+      const hex = !unlocked && canUnlockNow(d.st, d.rt, it.nd.id, front, ccx);
       ctx.beginPath();
       if (hex) hexPath(ctx, it.x, it.y, rad);
       else ctx.arc(it.x, it.y, rad, 0, Math.PI * 2);
@@ -1039,6 +1041,10 @@
   }
 
   // ---- node tab (detail + 2D neighbours) --------------------------------------
+  // Neighbour dots page at 16 (two full rings); hubs here peak ~13, but
+  // power-law trees can exceed that.
+  const NBR_PAGE = 16;
+  let nbrPage = 0, lastNbrId = null;
   function shortName(s) {
     s = String(s == null ? "" : s);
     return s.length > 16 ? s.slice(0, 15) + "…" : s;
@@ -1079,13 +1085,15 @@
     const nd = c.rt.byId[selectedId];
     const meta = E.viewState(c.rt, c.st);
     const unl = c.st.unlocked.includes(nd.id);
-    const front = E.frontier(c.rt, c.st.unlocked).has(nd.id);
+    const frontSet = E.frontier(c.rt, c.st.unlocked);
+    const front = frontSet.has(nd.id);
+    const ccx = E.costContext(c.st, c.rt);
     let actions = "";
     if (!unl && nd.id !== 0) {
       if (front) {
-        const cost = E.nodeCostFor(c.st, c.rt, nd.id);
+        const cost = E.nodeCostFor(c.st, c.rt, nd.id, ccx);
         const cover = E.couponCover(c.st, cost);
-        const cc = E.coreCostFor(c.st, c.rt, nd.id);
+        const cc = E.coreCostFor(c.st, c.rt, nd.id, ccx);
         const coreTxt = cc ? ` + ${cc} core` : " · no core";
         const ok = c.st.cores >= cc && c.st.points >= cost - cover;
         actions = `<div class="row" style="margin-top:8px"><button class="primary" data-act="unlock" ${ok ? "" : "disabled"}>` +
@@ -1134,18 +1142,42 @@
       if (done) toast(`Unlocked ${nd.name} (jump).`);
     });
 
-    // 2D neighbour view: center + ring. Only neighbours you can actually
+    // 2D neighbour view: center + ring(s). Only neighbours you can actually
     // see (unlocked, frontier, or revealed by an ability) are shown; hidden
     // nodes stay hidden. Normal unlocks stay frontier-only (engine-enforced);
     // abilities (lifeline/gacha/duplicate/…) are the only other paths.
+    // One ring fits ~8; beyond that neighbours split across two rings so
+    // dots and labels keep breathing room (hubs here peak ~13; two rings
+    // hold ~16 with room to spare). The viewBox grows taller to fit.
     const NS = "http://www.w3.org/2000/svg";
-    const cx = 180, cyy = 150, R0 = 96;
+    const cx = 180, cyy = 150;
     const unlSet = new Set(c.st.unlocked);
     const vis = new Set(E.visible(c.rt, c.st.unlocked, meta));
     const nbs = [...(c.rt.adj[nd.id] || [])]
       .filter(b => (unlSet.has(b) || vis.has(b)) && visNode(c.rt.byId[b]))
       .sort((a, b) => a - b);
-    function circle(x, y, r, fill, stroke, id, label, hex) {
+    if (selectedId !== lastNbrId) { nbrPage = 0; lastNbrId = selectedId; }
+    const nbrPages = Math.max(1, Math.ceil(nbs.length / NBR_PAGE));
+    nbrPage = Math.max(0, Math.min(nbrPage, nbrPages - 1));
+    const pageIds = nbs.slice(nbrPage * NBR_PAGE, (nbrPage + 1) * NBR_PAGE);
+    $("nbrPrev").onclick = () => { if (nbrPage > 0) { nbrPage--; renderNode(); } };
+    $("nbrNext").onclick = () => { if (nbrPage < nbrPages - 1) { nbrPage++; renderNode(); } };
+    $("nbrPrev").disabled = nbrPage === 0;
+    $("nbrNext").disabled = nbrPage >= nbrPages - 1;
+    $("nbrPage").textContent = nbrPages > 1
+      ? `${nbrPage * NBR_PAGE + 1}–${Math.min(nbs.length, (nbrPage + 1) * NBR_PAGE)} of ${nbs.length}` : "";
+    const RINGS = pageIds.length <= 8 ? [{ r: 96, dot: 15, fs: 10, ids: pageIds }]
+      : (() => {
+        const inner = pageIds.slice(0, Math.min(7, Math.ceil(pageIds.length / 2)));
+        return [
+          { r: 80, dot: 13, fs: 9, ids: inner },
+          { r: 134, dot: 11, fs: 9, ids: pageIds.slice(inner.length) },
+        ];
+      })();
+    const maxR = RINGS[RINGS.length - 1].r;
+    const viewH = Math.max(300, 2 * (maxR + 34));
+    svg.setAttribute("viewBox", `0 0 360 ${viewH}`);
+    function circle(x, y, r, fill, stroke, id, label, hex, fs) {
       const g = document.createElementNS(NS, "g");
       g.style.cursor = "pointer";
       if (hex) {
@@ -1167,44 +1199,53 @@
       const t = document.createElementNS(NS, "text");
       t.setAttribute("x", x); t.setAttribute("y", y + r + 13);
       t.setAttribute("text-anchor", "middle");
-      t.setAttribute("fill", "#9aa0b0"); t.setAttribute("font-size", "10");
+      t.setAttribute("fill", "#9aa0b0"); t.setAttribute("font-size", fs || 10);
       t.textContent = label;
       g.appendChild(t);
       g.addEventListener("click", () => { selectedId = id; renderNode(); });
       svg.appendChild(g);
     }
-    for (const b of nbs) {
-      const i = nbs.indexOf(b), a = (2 * Math.PI * i) / Math.max(1, nbs.length) - Math.PI / 2;
-      const x = cx + R0 * Math.cos(a), y = cyy + R0 * Math.sin(a);
-      const l = document.createElementNS(NS, "line");
-      l.setAttribute("x1", cx); l.setAttribute("y1", cyy);
-      l.setAttribute("x2", x); l.setAttribute("y2", y);
-      l.setAttribute("stroke", "#333947");
-      svg.appendChild(l);
+    for (const [ri, ring] of RINGS.entries()) {
+      // Offset outer rings by half a step so their dots sit in the gaps.
+      const off = ri === 0 ? 0 : Math.PI / Math.max(1, ring.ids.length);
+      ring.ids.forEach((b, i) => {
+        const a = (2 * Math.PI * i) / Math.max(1, ring.ids.length) - Math.PI / 2 + off;
+        const x = cx + ring.r * Math.cos(a), y = cyy + ring.r * Math.sin(a);
+        const l = document.createElementNS(NS, "line");
+        l.setAttribute("x1", cx); l.setAttribute("y1", cyy);
+        l.setAttribute("x2", x); l.setAttribute("y2", y);
+        l.setAttribute("stroke", "#333947");
+        svg.appendChild(l);
+      });
     }
     circle(cx, cyy, 26, classColor(nd.rarity), "#fff", nd.id, shortName(nd.name),
-      !unl && canUnlockNow(c.st, c.rt, nd.id));
-    nbs.forEach((b, i) => {
-      const a = (2 * Math.PI * i) / Math.max(1, nbs.length) - Math.PI / 2;
-      const x = cx + R0 * Math.cos(a), y = cyy + R0 * Math.sin(a);
-      const bnd = c.rt.byId[b];
-      const isUnl = c.st.unlocked.includes(b);
-      const bcol = classColor(bnd.rarity);
-      circle(x, y, 15, isUnl ? bcol : "#20242e", bcol, b, shortName(bnd.name),
-        !isUnl && canUnlockNow(c.st, c.rt, b));
-    });
+      !unl && canUnlockNow(c.st, c.rt, nd.id, frontSet, ccx));
+    for (const [ri, ring] of RINGS.entries()) {
+      const off = ri === 0 ? 0 : Math.PI / Math.max(1, ring.ids.length);
+      ring.ids.forEach((b, i) => {
+        const a = (2 * Math.PI * i) / Math.max(1, ring.ids.length) - Math.PI / 2 + off;
+        const x = cx + ring.r * Math.cos(a), y = cyy + ring.r * Math.sin(a);
+        const bnd = c.rt.byId[b];
+        const isUnl = c.st.unlocked.includes(b);
+        const bcol = classColor(bnd.rarity);
+        circle(x, y, ring.dot, isUnl ? bcol : "#20242e", bcol, b, shortName(bnd.name),
+          !isUnl && canUnlockNow(c.st, c.rt, b, frontSet, ccx), ring.fs);
+      });
+    }
     const legend = document.createElementNS(NS, "text");
-    legend.setAttribute("x", 8); legend.setAttribute("y", 292);
+    legend.setAttribute("x", 8); legend.setAttribute("y", viewH - 8);
     legend.setAttribute("fill", "#9aa0b0"); legend.setAttribute("font-size", "10");
     const totalConns = new Set(c.rt.adj[nd.id] || []).size;
     const hidden = totalConns - nbs.length;
-    legend.textContent = `${nd.name} — ${nbs.length} shown` +
+    legend.textContent = `${nd.name} — ${nbrPages > 1 ? `${pageIds.length} of ` : ""}${nbs.length} shown` +
       (hidden ? ` · ${hidden} hidden` : "") + " (tap a dot to inspect)";
     svg.appendChild(legend);
   }
 
   // ---- owned tab (sortable/filterable table, unlock order by default) ------
   let ownedSort = { key: "order", dir: 1 };
+  // Unlock-planner state (module scope: init listeners mutate these).
+  let planPage = 0, planJumpTi = 0, planJumpFrom = null;
   const OWN_COLS = [
     { key: "order", label: "#" },
     { key: "name", label: "Name" },
@@ -1214,10 +1255,11 @@
     { key: "source", label: "Source" },
     { key: "tags", label: "Tags" }
   ];
-  function ownedRows(rt, st) {
+  function ownedRows(rt, st, ccx) {
     const pos = new Map((st.history || []).map((id, i) => [id, i]));
     return st.unlocked.map(id => ({
-      id, nd: rt.byId[id], order: pos.has(id) ? pos.get(id) : -1
+      id, nd: rt.byId[id], order: pos.has(id) ? pos.get(id) : -1,
+      cost: id === 0 ? -1 : E.nodeCostFor(st, rt, id, ccx)
     })).filter(r => r.nd && visNode(r.nd));
   }
   async function renderOwned() {
@@ -1226,6 +1268,7 @@
     const c = await current();
     if (!c) { $("ownedCount").textContent = ""; return; }
     const { st, rt } = c;
+    const ccx = E.costContext(st, rt);
     for (const col of OWN_COLS) {
       const th = document.createElement("th");
       th.style.cssText = "text-align:left;padding:4px;border-bottom:1px solid var(--line);white-space:nowrap";
@@ -1240,9 +1283,8 @@
       th.appendChild(b);
       head.appendChild(th);
     }
-    let rows = ownedRows(rt, st);
+    let rows = ownedRows(rt, st, ccx);
     const q = ($("ownQ").value || "").trim().toLowerCase();
-    if (typeof console !== "undefined" && console.log) console.log("DBG renderOwned q=" + JSON.stringify(q) + " unlocked=" + st.unlocked.length);
     const cat = $("ownCat").value || "";
     const ownTag = ($("ownTag") && $("ownTag").value) || "";
     if (q) rows = rows.filter(r =>
@@ -1257,7 +1299,7 @@
         case "name": return r.nd.name.toLowerCase();
         case "file": return r.nd.file;
         case "rarity": return r.nd.rarity;
-        case "cost": return r.id === 0 ? -1 : E.nodeCostFor(st, rt, r.id);
+        case "cost": return r.cost;
         case "source": return (r.nd.source || "").toLowerCase();
         case "tags": return nodeTags(r.nd).join(",");
         default: return 0;
@@ -1273,7 +1315,7 @@
       const tr = document.createElement("tr");
       tr.style.cssText = "border-top:1px solid var(--line);cursor:pointer";
       const cls = classOf(r.nd.rarity);
-      const cost = r.id === 0 ? "—" : E.fmt(E.nodeCostFor(st, rt, r.id));
+      const cost = r.id === 0 ? "—" : E.fmt(r.cost);
       const tags = nodeTags(r.nd);
       tr.innerHTML =
         `<td style="padding:8px">${r.order < 0 ? "★" : r.order + 1}</td>` +
@@ -1348,6 +1390,8 @@
     }
     const { st, rt } = c;
     const m = E.viewState(rt, st);
+    // One cost context per render: costs stay O(1) in sorts and rows.
+    const ccx = E.costContext(st, rt);
     $("wPoints").textContent = E.fmt(st.points);
     $("wCores").textContent = st.cores;
     $("wBonus").textContent = `+${m.ticket_bonus}%`;
@@ -1609,15 +1653,16 @@
   $("unlockNext").addEventListener("click", async () => {
     unlockPage++; if (lastUnlockCtx) await renderUnlockable(lastUnlockCtx);
   });
-  async function renderUnlockable(c) {
+  async function renderUnlockable(c, ccx) {
     lastUnlockCtx = c;
+    ccx = ccx || E.costContext(c.st, c.rt);
     const box = $("unlockList");
     box.innerHTML = "";
     const { st, rt } = c;
     $("unlockWallet").textContent = `Wallet: ${E.fmt(st.points)} pts · ${st.cores} cores.`;
     const ids = [...E.frontier(rt, st.unlocked)]
       .filter(id => id !== 0 && visNode(rt.byId[id]));
-    ids.sort((a, b) => E.nodeCostFor(st, rt, a) - E.nodeCostFor(st, rt, b));
+    ids.sort((a, b) => E.nodeCostFor(st, rt, a, ccx) - E.nodeCostFor(st, rt, b, ccx));
     const pages = Math.max(1, Math.ceil(ids.length / UNLOCK_PAGE));
     unlockPage = Math.max(0, Math.min(unlockPage, pages - 1));
     $("unlockPage").textContent = ids.length
@@ -1636,8 +1681,8 @@
     }
     for (const id of ids.slice(unlockPage * UNLOCK_PAGE, (unlockPage + 1) * UNLOCK_PAGE)) {
       const nd = rt.byId[id];
-      const cost = E.nodeCostFor(st, rt, id);
-      const cc = E.coreCostFor(st, rt, id);
+      const cost = E.nodeCostFor(st, rt, id, ccx);
+      const cc = E.coreCostFor(st, rt, id, ccx);
       const ok = st.cores >= cc && st.points >= cost - E.couponCover(st, cost);
       const li = document.createElement("li");
       const tags = nodeTags(nd);
@@ -1663,6 +1708,217 @@
       box.appendChild(li);
     }
   }
+  // ---- unlock planner: sortable/filterable over frontier, visible,
+  // skip- and jump-reachable nodes. Frontier duplicates Unlockable now
+  // with sorting + filters; visible covers everything sight reveals
+  // (the planning view for big view distances); skip/jump replace the
+  // cramped ticket dropdowns with a real list.
+  const PLAN_PAGE = 20;
+  function planAfford(st, rt, id, ccx) {
+    if (id === 0 || st.unlocked.includes(id)) return false;
+    if ((st.cores || 0) < E.coreCostFor(st, rt, id, ccx)) return false;
+    const cost = E.nodeCostFor(st, rt, id, ccx);
+    return st.points >= cost - E.couponCover(st, cost);
+  }
+  async function renderPlanner(c, ccx) {
+    const box = $("planList");
+    box.innerHTML = "";
+    const { st, rt } = c;
+    ccx = ccx || E.costContext(st, rt);
+    const scope = ($("planScope") && $("planScope").value) || "frontier";
+    const showJump = scope === "jump";
+    $("planJumpCtl").style.display = showJump ? "" : "none";
+    $("planJumpFromCtl").style.display = showJump ? "" : "none";
+    const m = E.viewState(rt, st);
+    const unl = new Set(st.unlocked);
+    const { dist } = E.hopDistances(rt, st.unlocked);
+    const skips = st.inventory.filter(t => t.kind === "skip");
+    const jumps = st.inventory.filter(t => t.kind === "jump" || t.kind === "choice");
+    const fromIds = st.unlocked.filter(u => u !== 0);
+    const hopTxt = h => h == null ? "isolated" : `${h} hop${h === 1 ? "" : "s"}`;
+    let rows = [];
+    if (scope === "frontier") {
+      for (const id of E.frontier(rt, st.unlocked)) {
+        if (id === 0 || !visNode(rt.byId[id])) continue;
+        rows.push({ id, hops: 1, via: "frontier", act: "unlock" });
+      }
+    } else if (scope === "visible") {
+      const front = E.frontier(rt, st.unlocked);
+      for (const id of E.visible(rt, st.unlocked, m)) {
+        if (unl.has(id) || !visNode(rt.byId[id])) continue;
+        let via = "beyond tickets", act = null;
+        if (front.has(id)) { via = "frontier"; act = "unlock"; }
+        else {
+          const best = skips
+            .filter(t => dist[id] != null && dist[id] <= 1 + t.n)
+            .sort((a, b) => a.n - b.n)[0];
+          if (best) { via = `skip ${best.n}`; act = "skip"; }
+          else if (dist[id] != null && dist[id] >= 2 &&
+              st.inventory.some(t => t.kind === "hop")) { via = "hop"; act = "hop"; }
+        }
+        rows.push({ id, hops: dist[id] == null ? null : dist[id], via, act });
+      }
+    } else if (scope === "skip") {
+      if (!skips.length) {
+        $("planCount").textContent = "";
+        box.innerHTML = "<li class='muted'>No skip tickets held — award one above.</li>";
+        $("planPage").textContent = "";
+        return;
+      }
+      const seen = new Set();
+      const front = E.frontier(rt, st.unlocked);
+      for (const id of Object.keys(dist).map(Number)) {
+        // Frontier nodes unlock normally — no sense spending a ticket.
+        if (id === 0 || unl.has(id) || seen.has(id) || front.has(id) || !visNode(rt.byId[id])) continue;
+        // Smallest sufficient ticket, mirroring the engine auto-pick.
+        const best = skips
+          .filter(t => dist[id] <= 1 + t.n)
+          .sort((a, b) => a.n - b.n)[0];
+        if (!best) continue;
+        seen.add(id);
+        rows.push({ id, hops: dist[id], via: `skip ${best.n}`, act: "skip" });
+      }
+    } else if (scope === "jump") {
+      if (!jumps.length || !fromIds.length) {
+        $("planCount").textContent = "";
+        box.innerHTML = "<li class='muted'>" +
+          (!jumps.length ? "No jump/choice tickets held — award one above."
+            : "Unlock a node first — jumps launch from unlocked nodes.") + "</li>";
+        $("planPage").textContent = "";
+        return;
+      }
+      const jtSel = $("planJumpTicket"), jfSel = $("planJumpFrom");
+      jtSel.innerHTML = jumps.map((t, i) => `<option value="${i}">${esc(ticketLabel(t))}</option>`).join("");
+      planJumpTi = Math.max(0, Math.min(planJumpTi, jumps.length - 1));
+      jtSel.value = String(planJumpTi);
+      const t = jumps[planJumpTi];
+      const defFrom = (selectedId != null && fromIds.includes(selectedId)) ? selectedId : fromIds[0];
+      jfSel.innerHTML = fromIds.map(u => {
+        const und = rt.byId[u];
+        return `<option value="${u}">#${u} ${esc(und ? und.name : "?")}</option>`;
+      }).join("");
+      if (!fromIds.includes(planJumpFrom)) planJumpFrom = defFrom;
+      jfSel.value = String(planJumpFrom);
+      const from = planJumpFrom;
+      const lim = t.kind === "choice" ? t.n : 1;
+      E.jumpCandidates(rt, t.category, from, st.unlocked).slice(0, 200)
+        .forEach(([dd, nd], idx) => {
+          if (!visNode(nd)) return;
+          rows.push({
+            id: nd.id, hops: dist[nd.id] == null ? null : dist[nd.id],
+            via: `${ticketLabel(t)} from #${from} · ${dd.toFixed(1)} away`,
+            act: idx < lim ? "jump" : null,
+            jump: { ticket: t, from },
+          });
+        });
+    }
+    // Filters.
+    const q = (($("planQ") && $("planQ").value) || "").trim().toLowerCase();
+    const cat = ($("planCat") && $("planCat").value) || "";
+    const tag = ($("planTag") && $("planTag").value) || "";
+    const affordOnly = $("planAfford") && $("planAfford").checked;
+    if (q) rows = rows.filter(r => {
+      const nd = rt.byId[r.id];
+      return nd.name.toLowerCase().includes(q) ||
+        (nd.source || "").toLowerCase().includes(q) ||
+        nodeTags(nd).some(t => t.toLowerCase().includes(q));
+    });
+    if (cat) rows = rows.filter(r => rt.byId[r.id].file === cat);
+    if (tag) rows = rows.filter(r => nodeTags(rt.byId[r.id]).includes(tag));
+    if (affordOnly) rows = rows.filter(r => planAfford(st, rt, r.id, ccx));
+    // Sort.
+    const sort = ($("planSort") && $("planSort").value) || "cost";
+    // Costs memoized per row: comparators must not call nodeCostFor.
+    for (const r of rows) {
+      r.cost = E.nodeCostFor(st, rt, r.id, ccx);
+      r.cc = E.coreCostFor(st, rt, r.id, ccx);
+    }
+    const costOf = r => r.cost;
+    const hopsOf = r => r.hops == null ? 1e9 : r.hops;
+    const cmp = {
+      cost: (a, b) => costOf(a) - costOf(b),
+      costDesc: (a, b) => costOf(b) - costOf(a),
+      rarity: (a, b) => rt.byId[b.id].rarity - rt.byId[a.id].rarity || costOf(a) - costOf(b),
+      hops: (a, b) => hopsOf(a) - hopsOf(b) || costOf(a) - costOf(b),
+      name: (a, b) => rt.byId[a.id].name.localeCompare(rt.byId[b.id].name),
+      id: (a, b) => a.id - b.id,
+    }[sort] || ((a, b) => costOf(a) - costOf(b));
+    rows.sort(cmp);
+    $("planCount").textContent = `(${rows.length} node${rows.length === 1 ? "" : "s"})`;
+    $("planCopy").onclick = () => {
+      if (!rows.length) return toast("Nothing to copy.", true);
+      copyText(rows.map(r => nodeText(rt.byId[r.id])).join("\n\n"),
+        `${rows.length} planned node${rows.length === 1 ? "" : "s"}`);
+    };
+    const pages = Math.max(1, Math.ceil(rows.length / PLAN_PAGE));
+    planPage = Math.max(0, Math.min(planPage, pages - 1));
+    $("planPage").textContent = rows.length
+      ? `${planPage * PLAN_PAGE + 1}–${Math.min(rows.length, (planPage + 1) * PLAN_PAGE)} of ${rows.length}` : "";
+    $("planPrev").disabled = planPage === 0;
+    $("planNext").disabled = planPage >= pages - 1;
+    if (!rows.length) {
+      box.innerHTML = "<li class='muted'>Nothing matches — loosen the filters.</li>";
+      return;
+    }
+    for (const r of rows.slice(planPage * PLAN_PAGE, (planPage + 1) * PLAN_PAGE)) {
+      const nd = rt.byId[r.id];
+      const cost = r.cost, cc = r.cc;
+      const ok = planAfford(st, rt, r.id, ccx);
+      const tags = nodeTags(nd);
+      const li = document.createElement("li");
+      li.innerHTML = `<div class="grow"><b>#${r.id} ${esc(nd.name)}</b> ` +
+        `<span class="pill">${esc(nd.file)} ${fmtR(nd.rarity)}</span>` +
+        (tags.length ? " " + tagPills(tags) : "") + `<br>` +
+        `<span class="muted small">${E.fmt(cost)} pts${cc ? " + 1 core" : " · no core"} · ${hopTxt(r.hops)} · ${esc(r.via)}</span></div>`;
+      const go = document.createElement("button");
+      go.textContent = "View";
+      go.title = `Open ${nd.name} in the node view`;
+      go.addEventListener("click", () => { selectedId = r.id; showTab("node"); });
+      li.appendChild(go);
+      const cp = document.createElement("button");
+      cp.textContent = "📋";
+      cp.title = `Copy ${nd.name} text`;
+      cp.addEventListener("click", () => copyText(nodeText(nd), nd.name));
+      li.appendChild(cp);
+      if (r.act === "unlock" || r.act === "skip" || r.act === "hop") {
+        const b = document.createElement("button");
+        const isSkip = r.act === "skip", isHop = r.act === "hop";
+        b.textContent = isSkip ? "Skip →" : isHop ? "Hop →" : "Unlock";
+        b.className = "primary";
+        b.disabled = !ok;
+        b.title = ok ? `${isSkip ? "Unlock with skip ticket: " : isHop ? "Unlock with hop ticket: " : "Unlock "}${nd.name}`
+          : (st.cores < cc ? `Needs ${cc} core${cc === 1 ? "" : "s"} (award a ticket)` : `Needs ${E.fmt(cost)} pts`);
+        b.addEventListener("click", async () => {
+          const done = await mutate(({ st, rt }) =>
+            isSkip ? E.unlockSkip(st, rt, r.id)
+            : isHop ? E.unlockHop(st, rt, r.id)
+            : E.unlock(st, rt, r.id));
+          if (done) toast(`Unlocked ${nd.name}${isSkip ? " (skip)" : isHop ? " (hop)" : ""}.`);
+        });
+        li.appendChild(b);
+      } else if (r.act === "jump" && r.jump) {
+        const { ticket, from } = r.jump;
+        const b = document.createElement("button");
+        b.textContent = "Jump →";
+        b.className = "primary";
+        b.disabled = !ok;
+        b.title = ok ? `Unlock with ${ticketLabel(ticket)} from #${from}`
+          : (st.cores < cc ? `Needs ${cc} core${cc === 1 ? "" : "s"} (award a ticket)` : `Needs ${E.fmt(cost)} pts`);
+        b.addEventListener("click", async () => {
+          const done = await mutate(({ st, rt }) => {
+            const lim = ticket.kind === "choice" ? ticket.n : 1;
+            const list = E.jumpCandidates(rt, ticket.category, from, st.unlocked).slice(0, lim);
+            const idx = list.findIndex(([, cand]) => cand.id === r.id);
+            if (idx < 0) throw new E.ChaosError("no longer in reach of that ticket");
+            return E.unlockJump(st, rt, ticket.category, from, idx);
+          });
+          if (done) toast(`Unlocked ${nd.name} (jump).`);
+        });
+        li.appendChild(b);
+      }
+      box.appendChild(li);
+    }
+  }
     const surveyed = E.surveyNames(rt, st.unlocked, m)
       .filter(([i]) => visNode(rt.byId[i]));
     if (surveyed.length) {
@@ -1684,7 +1940,8 @@
       d.appendChild(ul);
       meta.appendChild(d);
     }
-    await renderUnlockable(c);
+    await renderUnlockable(c, ccx);
+    await renderPlanner(c, ccx);
   }
 
   // Inventory collapses to just its header, matching the unlock list toggle.
@@ -1925,6 +2182,26 @@
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });
   $("ownCat").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });
   if ($("ownTag")) $("ownTag").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });
+  if ($("planCat")) $("planCat").innerHTML = `<option value="">All</option>` +
+    E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
+  if ($("planTag")) $("planTag").innerHTML = tagOpts;
+  const rerenderTickets = () => { if (currentTab === "tickets") renderTickets(); };
+  if ($("planScope")) $("planScope").addEventListener("change", () => { planPage = 0; rerenderTickets(); });
+  if ($("planQ")) $("planQ").addEventListener("input", rerenderTickets);
+  if ($("planCat")) $("planCat").addEventListener("change", rerenderTickets);
+  if ($("planTag")) $("planTag").addEventListener("change", rerenderTickets);
+  if ($("planSort")) $("planSort").addEventListener("change", rerenderTickets);
+  if ($("planAfford")) $("planAfford").addEventListener("change", rerenderTickets);
+  if ($("planJumpTicket")) $("planJumpTicket").addEventListener("change", ev => {
+    planJumpTi = parseInt(ev.target.value || "0", 10) || 0; planPage = 0; rerenderTickets();
+  });
+  if ($("planJumpFrom")) $("planJumpFrom").addEventListener("change", ev => {
+    planJumpFrom = parseInt(ev.target.value || "", 10) || null; planPage = 0; rerenderTickets();
+  });
+  if ($("planPrev")) $("planPrev").addEventListener("click", async () => {
+    if (planPage > 0) { planPage--; rerenderTickets(); }
+  });
+  if ($("planNext")) $("planNext").addEventListener("click", async () => { planPage++; rerenderTickets(); });
   try {
     const n = (DATA.entries || []).length;
     $("dataVer").textContent = `data v${DATA.dataVersion || "?"} · ${n} entries`;

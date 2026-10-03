@@ -149,8 +149,9 @@ window.ChaosEngine = (function () {
   function hopDistances(tree, unlocked) {
     const dist = {}, prev = {}, q = [];
     for (const u of unlocked) { dist[u] = 0; q.push(u); }
-    while (q.length) {
-      const a = q.shift();
+    // Index pointer, not shift(): shift() is O(n) per pop.
+    for (let h = 0; h < q.length; h++) {
+      const a = q[h];
       for (const b of (tree.adj[a] || [])) {
         if (!(b in dist)) { dist[b] = dist[a] + 1; prev[b] = a; q.push(b); }
       }
@@ -184,11 +185,12 @@ window.ChaosEngine = (function () {
       }
     }
     if (meta.see_far) {
-      for (const u of unlocked) {
-        const un = tree.byId[u];
-        for (const nd of tree.nodes) {
-          if (unlockedSet.has(nd.id) || vis.has(nd.id)) continue;
-          if (dist3(un.pos, nd.pos) <= SEE_FAR_DISTANCE) vis.add(nd.id);
+      // Node-major order with early exit: same union as before, but a
+      // node stops scanning launch points once one is in range.
+      for (const nd of tree.nodes) {
+        if (unlockedSet.has(nd.id) || vis.has(nd.id)) continue;
+        for (const u of unlocked) {
+          if (dist3(tree.byId[u].pos, nd.pos) <= SEE_FAR_DISTANCE) { vis.add(nd.id); break; }
         }
       }
     }
@@ -232,19 +234,28 @@ window.ChaosEngine = (function () {
     return seen;
   }
 
-  function rootPactApplies(tree, state, nid) {
-    return deriveMeta(tree, state.unlocked).root_pact &&
-      rootShell(tree, 2).has(nid);
+  function rootPactApplies(tree, state, nid, ctx) {
+    const pact = ctx ? !!ctx.pact : !!deriveMeta(tree, state.unlocked).root_pact;
+    if (!pact) return false;
+    return (ctx ? ctx.shell : rootShell(tree, 2)).has(nid);
   }
 
-  function nodeCostFor(state, tree, nid) {
+  // One deriveMeta (+ at most one rootShell) per render; thread the
+  // result through nodeCostFor/coreCostFor so per-node and per-comparison
+  // calls stay O(1) instead of re-deriving meta every time.
+  function costContext(state, tree) {
+    const pact = !!deriveMeta(tree, state.unlocked).root_pact;
+    return { pact, shell: pact ? rootShell(tree, 2) : new Set() };
+  }
+
+  function nodeCostFor(state, tree, nid, ctx) {
     const cost = nodeCost(tree, nid);
     // Root Pact: no core, but the points price climbs tenfold.
-    return rootPactApplies(tree, state, nid) ? cost * 10 : cost;
+    return rootPactApplies(tree, state, nid, ctx) ? cost * 10 : cost;
   }
 
-  function coreCostFor(state, tree, nid) {
-    return rootPactApplies(tree, state, nid) ? 0 : 1;
+  function coreCostFor(state, tree, nid, ctx) {
+    return rootPactApplies(tree, state, nid, ctx) ? 0 : 1;
   }
 
   function couponCover(state, cost) {
@@ -856,7 +867,7 @@ window.ChaosEngine = (function () {
     ChaosError, fmt, newState,
     iterMeta, deriveMeta, viewState,
     dist3, frontier, hopDistances, visible, surveyNames,
-    nodeCost, nodeCostFor, coreCostFor, rootShell, parseTicket, award,
+    nodeCost, nodeCostFor, coreCostFor, costContext, rootShell, parseTicket, award,
     unlock, unlockSkip, jumpCandidates, unlockJump, unlockHop,
     useLockRefund, useAddLink, useReveal, useGacha, useLifeline,
     useRecall, useDuplicate, useShuffle, useSwap, useReshuffle,

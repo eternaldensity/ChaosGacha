@@ -212,6 +212,11 @@
       <h2>Neighbours</h2>
       <div class="muted small">⬡ marks nodes you can unlock right now.</div>
       <svg class="nbr" id="nbrSvg" viewBox="0 0 360 300" role="img"></svg>
+      <div class="row" style="margin-top:6px">
+        <div><button id="nbrPrev" title="Previous page.">◀</button>
+        <button id="nbrNext" title="Next page.">▶</button></div>
+        <div><span id="nbrPage" class="muted small"></span></div>
+      </div>
     </div>
   </section>
 
@@ -285,6 +290,47 @@
         <div><span id="unlockPage" class="muted small"></span></div>
       </div>
       <ul class="list" id="unlockList"></ul>
+    </div>
+    <div class="card">
+      <h2>🔭 Plan unlocks</h2>
+      <div class="muted small">Sortable, filterable views over frontier, visible, and ticket-reachable nodes — for planning unlocks, especially with extended view distance. <span id="planCount"></span></div>
+      <div class="row" style="margin-top:6px">
+        <div><label for="planScope">Scope</label>
+          <select id="planScope">
+            <option value="frontier">Frontier (unlockable now)</option>
+            <option value="visible">Visible locked</option>
+            <option value="skip">Reachable by skip</option>
+            <option value="jump">Reachable by jump</option>
+          </select></div>
+        <div><label for="planQ">Search</label>
+          <input type="search" id="planQ" placeholder="name, source, or tag…"></div>
+        <div><label for="planCat">Category</label>
+          <select id="planCat"><option value="">All</option></select></div>
+        <div><label for="planTag">Theme tag</label>
+          <select id="planTag"><option value="">All tags</option></select></div>
+      </div>
+      <div class="row" style="margin-top:6px">
+        <div><label for="planSort">Sort</label>
+          <select id="planSort">
+            <option value="cost">Cost ↑</option>
+            <option value="costDesc">Cost ↓</option>
+            <option value="rarity">Rarity ↓</option>
+            <option value="hops">Hops ↑</option>
+            <option value="name">Name A–Z</option>
+            <option value="id">ID ↑</option>
+          </select></div>
+        <div id="planJumpCtl" style="display:none"><label for="planJumpTicket">Jump ticket</label>
+          <select id="planJumpTicket"></select></div>
+        <div id="planJumpFromCtl" style="display:none"><label for="planJumpFrom">Launch from</label>
+          <select id="planJumpFrom"></select></div>
+        <div><label for="planAfford" title="Only show nodes the wallet covers right now.">
+          <input type="checkbox" id="planAfford" style="width:22px;height:22px"> Affordable only</label></div>
+        <div><button id="planPrev" title="Previous page.">◀</button>
+        <button id="planNext" title="Next page.">▶</button></div>
+        <div><button id="planCopy" title="Copy the text of all listed nodes.">📋 Copy</button></div>
+        <div><span id="planPage" class="muted small"></span></div>
+      </div>
+      <ul class="list" id="planList"></ul>
     </div>
     <div class="card">
       <h2>Inventory &amp; actions</h2>
