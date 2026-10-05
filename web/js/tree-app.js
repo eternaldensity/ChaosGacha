@@ -1245,7 +1245,16 @@
   // ---- owned tab (sortable/filterable table, unlock order by default) ------
   let ownedSort = { key: "order", dir: 1 };
   // Unlock-planner state (module scope: init listeners mutate these).
-  let planPage = 0, planJumpTi = 0, planJumpFrom = null;
+  // Collapsed by default like a hidden list; the toggle mirrors the
+  // unlockable-now/inventory show/hide buttons.
+  let planPage = 0, planJumpTi = 0, planJumpFrom = null, planOpen = false;
+  function applyPlanVisibility() {
+    $("planList").style.display = planOpen ? "" : "none";
+    $("planPage").style.display = planOpen ? "" : "none";
+    $("planPrev").style.display = planOpen ? "" : "none";
+    $("planNext").style.display = planOpen ? "" : "none";
+    $("planToggle").textContent = planOpen ? "Hide" : "Show";
+  }
   const OWN_COLS = [
     { key: "order", label: "#" },
     { key: "name", label: "Name" },
@@ -1634,7 +1643,7 @@
     if (!any) meta.innerHTML = "<span class='muted small'>Unlock tree-meta nodes (Sight, Graft, Chaos Die…) to gain abilities.</span>";
 
   // Frontier nodes, cheapest first, with one-tap unlock.
-  const UNLOCK_PAGE = 30;
+  const UNLOCK_PAGE = 20;
   let unlockPage = 0, unlockOpen = true, lastUnlockCtx = null;
   function applyUnlockVisibility() {
     $("unlockList").style.display = unlockOpen ? "" : "none";
@@ -1856,6 +1865,7 @@
       ? `${planPage * PLAN_PAGE + 1}–${Math.min(rows.length, (planPage + 1) * PLAN_PAGE)} of ${rows.length}` : "";
     $("planPrev").disabled = planPage === 0;
     $("planNext").disabled = planPage >= pages - 1;
+    applyPlanVisibility();
     if (!rows.length) {
       box.innerHTML = "<li class='muted'>Nothing matches — loosen the filters.</li>";
       return;
@@ -2187,6 +2197,10 @@
   if ($("planTag")) $("planTag").innerHTML = tagOpts;
   const rerenderTickets = () => { if (currentTab === "tickets") renderTickets(); };
   if ($("planScope")) $("planScope").addEventListener("change", () => { planPage = 0; rerenderTickets(); });
+  if ($("planToggle")) $("planToggle").addEventListener("click", () => {
+    planOpen = !planOpen;
+    applyPlanVisibility();
+  });
   if ($("planQ")) $("planQ").addEventListener("input", rerenderTickets);
   if ($("planCat")) $("planCat").addEventListener("change", rerenderTickets);
   if ($("planTag")) $("planTag").addEventListener("change", rerenderTickets);
