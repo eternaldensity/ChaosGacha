@@ -801,7 +801,8 @@
           if (Math.hypot(c.x - gd.x, c.y - gd.y) < 220) { aura = 1.25; break; }
         }
       }
-      const mult = (p.rollT > 0 ? 0.7 : 1) * st.mult * aura;
+      const mult = (p.rollT > 0 ? 0.7 : 1) * st.mult * aura *
+        (C.enemySlowMult ? C.enemySlowMult() : 1);
       if (st.stunned) { if (gd.atkCd > 0) gd.atkCd -= dt; continue; }
       // Medics cower and mend: flee the player, patch up the pack.
       if (gd.type === "medic") {

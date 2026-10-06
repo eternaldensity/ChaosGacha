@@ -637,7 +637,7 @@
 319. Garden of Revelations, 3.1, Generic
 #A beautiful flower garden with a mystical aura where studying and learning magic is easier.
 320. Fountain of Youth, 3.2, Generic
-#A large ornate fountain whose waters reverse aging while bathing, rewinding one year of biological age per hour spent inside.
+#(Tag:time)A large ornate fountain whose waters reverse aging while bathing, rewinding one year of biological age per hour spent inside.
 321. Magic Spring, 3.9, Hota
 #A large spring of rapidly replenishing mana-rich water where bathing very quickly replenishes magical power.
 322. Marika's Hammer, 3.2, Elden Ring
@@ -935,7 +935,7 @@
 468. Helm of Darkness, 5.8, Percy Jackson
 #(Tag:shadow)Hades' ornate helmet granting complete invisibility to all senses, wall-phasing, and shadow-melting, plus a primordial fear aura. Its abilities consume your energy.
 469. Hyperbolic Time Chamber, 5.8, Dragon Ball
-#A gravity-enhanced dimension for training or hideout with 3-to-1 time dilation: three days inside equal one outside. Access it from any door you place your hands on.
+#(Tag:time)A gravity-enhanced dimension for training or hideout with 3-to-1 time dilation: three days inside equal one outside. Access it from any door you place your hands on.
 470. Weapon Voucher, 1.3, Generic
 #A ticket for any one mundane cold weapon; tear it and think of the weapon to receive it in your hands.
 471. Nail of Helena, 7.0, Hellsing
@@ -979,7 +979,7 @@
 490. Sukuna's Fingers, 5.1, Jujutsu Kaisen
 #All 20 fingers of Ryomen Sukuna, the King of Curses, each containing 1/20th of his power and radiating incredible cursed energy that attracts cursed lifeforms. A cursed being ingesting a finger gains a power boost, while a proper vessel will either incarnate as 1/20th Sukuna, share the vessel with him, or defeat his fragment and consume its power.
 491. Eye of Agamotto, 8.8, Marvel
-#The Eye of Agamotto containing the Time Stone, one of the 6 Infinity Stones. It allows time manipulation such as stopping time, time travel, and time loops as long as the user harnesses it correctly, with greater exertion causing backlash that can kill.
+#(Tag:time)The Eye of Agamotto containing the Time Stone, one of the 6 Infinity Stones. It allows time manipulation such as stopping time, time travel, and time loops as long as the user harnesses it correctly, with greater exertion causing backlash that can kill.
 492. Power Stone, 8.0, Marvel
 #The Power Stone, one of the 6 Infinity Stones and most powerful artifacts. It grants immense destructive power to empower the body or weapons or fire as blasts and projections, capable of shattering planets when used correctly, though few can withstand its full power.
 493. Soul Stone, 8.1, Marvel
@@ -1807,7 +1807,7 @@
 904. Habitat Builder, 3.6, Subnautica
 #Prints seabase modules from titanium anywhere with a flat-ish seabed.
 905. Stasis Rifle, 4.0, Subnautica
-#(Tag:ice)Freezes anything in a time bubble, up to and including Reapers. Briefly.
+#(Tag:time)(Tag:ice)Freezes anything in a time bubble, up to and including Reapers. Briefly.
 906. Thermoblade, 3.0, Subnautica
 #Superheated survival knife that cooks fish as it cuts them.
 907. Ultra Glide Fins, 2.4, Subnautica
@@ -1881,7 +1881,7 @@
 941. Space Elevator, 7.2, Cities Skylines
 #A unique-building space elevator you can raise wherever you settle: a tethered beanstalk that lifts you and freight straight into orbit and back, cheaply and endlessly — once anchored, it cannot be moved.
 942. Instant Camera, 1.8, Life is Strange
-#An instant camera for capturing the moments that matter, before you rewind them.
+#(Tag:time)An instant camera for capturing the moments that matter, before you rewind them.
 943. Planetary Shield, 5.8, Dyson Sphere Program
 #A planet-wide shield generator that shrugs off anything short of a star going out.
 944. Vertical Launching Silo, 5.0, Dyson Sphere Program
@@ -1897,7 +1897,7 @@
 949. Signalscope, 2.6, Outer Wilds
 #A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
 950. Ash Twin Project, 7.8, Outer Wilds
-#The Nomai station at the heart of the 22-minute loop. You hold its secrets: you can detect time loops and anomalies, navigate them safely, and — most precious of all — retain your memories across resets while others forget.
+#(Tag:time)The Nomai station at the heart of the 22-minute loop. You hold its secrets: you can detect time loops and anomalies, navigate them safely, and — most precious of all — retain your memories across resets while others forget.
 951. The Generator, 6.8, Frostpunk
 #A towering coal-fired Generator you can raise at any settlement: it burns coal — or wood, oil, and worse in a pinch — to radiate life-saving warmth across whole districts through even supernatural frost. The city lives or dies with it, so you must feed it fuel and hands around the clock.
 952. Steam Hub, 4.0, Frostpunk
@@ -1947,7 +1947,7 @@
 974. TemPad, 5.8, MCU
 #A TVA time-pad that opens Time Doors to anywhen; pruning charges not included.
 975. Time Stick, 4.6, MCU
-#A TVA Time Stick that alters a target's flow of time, or disintegrates organic and inorganic targets alike, sending them to the Void. Touch range only.
+#(Tag:time)A TVA Time Stick that alters a target's flow of time, or disintegrates organic and inorganic targets alike, sending them to the Void. Touch range only.
 976. Reset Charge, 5.2, MCU
 #A timeline-nuking charge that prunes a whole branched reality back to the Sacred Timeline.
 977. Yaka Arrow, 4.4, MCU
@@ -1959,7 +1959,7 @@
 980. CPH4, 5.2, Lucy
 #(Tag:psychic)A packet of synthetic blue crystals that unlocks escalating brain capacity: perfect recall, telepathy, then matter and time itself. Unstable, leaks, and past a point there is no coming back.
 981. Time Loop Cave, 5.2, Palm Springs
-#A desert cave that traps whoever enters during a tremor in a repeating day. Rehearse anything forever; rumor says one explosion inside, mid-quake, gets you out.
+#(Tag:time)A desert cave that traps whoever enters during a tremor in a repeating day. Rehearse anything forever; rumor says one explosion inside, mid-quake, gets you out.
 982. Electric Locomotive, 4.6, Satisfactory
 #A multi-wagon electric freight locomotive that hauls entire factories' output on your rail lines.
 983. Freight Wagon, 3.4, Satisfactory
@@ -2003,7 +2003,7 @@
 1002. Source Code, 5.4, Source Code
 #A program that drops your mind into a doomed train passenger's final eight minutes, looping with memories intact until you find the bomb. Your body waits safely outside.
 1003. Jules Verne Time Train, 7.2, Back to the Future
-#Doc's flying steam-locomotive time machine, running on steam and pure showmanship.
+#(Tag:time)Doc's flying steam-locomotive time machine, running on steam and pure showmanship.
 1004. Spatchcock, 4.0, Sunless Skies
 #A patchwork sky-locomotive held together by rivets, prayer, and Roger's excellent tea service.
 1005. War Rig, 4.8, Mad Max

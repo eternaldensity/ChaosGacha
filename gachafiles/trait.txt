@@ -379,9 +379,9 @@
 190. Item Warranty, 3.5, Generic
 #Your gacha items carry a warranty; if equipment you own breaks beyond effective use, within 24 hours it and all its parts are replaced with a perfect replica, as long as it was not traded or given away. This applies only to breakage during intended use, not sacrifice, smelting, destruction during modification, etc., and not to consumables.
 191. Hero Time, 4.7, Generic
-#You can activate this only once a week; when fighting to protect someone, all your enhancement abilities receive a full rank boost.
+#(Tag:time)You can activate this only once a week; when fighting to protect someone, all your enhancement abilities receive a full rank boost.
 192. In Time of Need, 4.0, Generic
-#-A Hero arises. Once every 120 hours, you restore your stamina and energy to full, but hours afterward you become extremely exhausted.
+#(Tag:time)-A Hero arises. Once every 120 hours, you restore your stamina and energy to full, but hours afterward you become extremely exhausted.
 193. Seamster, 2.3, Generic
 #You are naturally talented at sewing; you spot flaws in clothing and easily make or fix garments.
 194. Wrath Made Manifest, 6.6, Generic
@@ -475,7 +475,7 @@
 238. Exact, 4.5, Generic
 #You control your abilities and spells with incredible precision that others struggle to match.
 239. Chronolog, 1.7, Generic
-#You possess a perfect internal clock. You recall exactly when you last did something down to the millisecond and time things as perfectly as a stopwatch.
+#(Tag:time)You possess a perfect internal clock. You recall exactly when you last did something down to the millisecond and time things as perfectly as a stopwatch.
 240. Post Mortem, 4.5, Generic
 #When you die, you keep moving and using your abilities for up to 1 hour before death finally claims you.
 241. Infinite Money Glitch, 6.9, Generic
@@ -541,7 +541,7 @@
 271. Void Childe, 3.4, Generic
 #You are a child of the Void with enhanced spatial awareness. You sense portals opening a kilometre away, and all Space-based abilities are more potent and faster to master.
 272. Father Time, 7.2, Generic
-#You are Time's favourite: you are immune to all time-based abilities, time travel, and paradoxes, and time cannot be stopped in your world even by the mightiest gods. Your time-related abilities and magic cost massively less strain and energy, and you ignore the paradox and time resistance of targets below god level.
+#(Tag:time)You are Time's favourite: you are immune to all time-based abilities, time travel, and paradoxes, and time cannot be stopped in your world even by the mightiest gods. Your time-related abilities and magic cost massively less strain and energy, and you ignore the paradox and time resistance of targets below god level.
 273. Shub's Favor, 4.8, Generic
 #(Tag:eldritch)Thanks to her blessing, your vitality and virility are considerably increased. Those with maternal instincts find themselves more attracted to you, and you are assured to be a great father.
 274. Yog's Blessing, 4.6, Generic
@@ -659,13 +659,13 @@
 330. Lunarian, 6.2, One Piece
 #Race - You are a Lunarian of a legendary race with massively increased physical stats, wings, and natural fire manipulation. While the fire on your back stays lit, your durability is massively increased.
 331. Nightkin, 4.9, Fate
-#(Tag:vampiric)Race - You are a Nightkin vampire created from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding as long as you hold blood, and you grow stronger and can evolve to the next undeath stage by consuming enough blood.
+#(Tag:time)(Tag:vampiric)Race - You are a Nightkin vampire created from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding as long as you hold blood, and you grow stronger and can evolve to the next undeath stage by consuming enough blood.
 332. Nightmare, 5.2, Tsukihime
-#(Tag:vampiric)Race - You are a Nightmare vampire born from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding while you hold blood and can turn people into ghouls. You wield your own unique Elite Rank Ability with no ability slot and evolve to the next undeath stage by consuming enough blood.
+#(Tag:time)(Tag:vampiric)Race - You are a Nightmare vampire born from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding while you hold blood and can turn people into ghouls. You wield your own unique Elite Rank Ability with no ability slot and evolve to the next undeath stage by consuming enough blood.
 333. Dead Apostle, 6.7, Tsukihime
-#(Tag:vampiric)Race - You are a fully realized Dead Apostle with vastly superior physical stats and time-rewinding regenerative immortality while you hold blood. You gain your own Epic ranked ability that costs no ability slot, turn humans and animals into lower-ranking apostle thralls, and grow stronger and recover energy the more blood you consume.
+#(Tag:time)(Tag:vampiric)Race - You are a fully realized Dead Apostle with vastly superior physical stats and time-rewinding regenerative immortality while you hold blood. You gain your own Epic ranked ability that costs no ability slot, turn humans and animals into lower-ranking apostle thralls, and grow stronger and recover energy the more blood you consume.
 334. Dead Apostle Ancestor, 8.0, Tsukihime
-#(Tag:vampiric)Race - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
+#(Tag:time)(Tag:vampiric)Race - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
 335. Beastkin, 3.5, Generic
 #(Tag:beastkin)Race - You are a beastkin of a random animal such as bear, rabbit, cat, wolf, etc., with enhanced physical stats and night vision. You gain unique traits and biological features based on your hybrid.
 336. Ghoul, 4.2, Tokyo Ghoul
@@ -1349,7 +1349,7 @@
 674. Gargoyle, 5.0, Generic
 #Race Change - You are living stone by day and a winged hunter by night: near-invulnerable while perched motionless, ravenous once the sun sets.
 675. Time Lord, 6.8, Doctor Who
-#Race Change - You are a Time Lord with limited regenerations: death becomes a new body instead, with a new face and a reshuffled temperament. Regenerations spent do not return.
+#(Tag:time)Race Change - You are a Time Lord with limited regenerations: death becomes a new body instead, with a new face and a reshuffled temperament. Regenerations spent do not return.
 676. Yautja Hunter, 5.8, Predator
 #Race Change - You are a Yautja trophy hunter with thermal vision and cloaking affinity, bound by a hard honor code around worthy prey.
 677. Krogan Battlemaster, 5.4, Mass Effect

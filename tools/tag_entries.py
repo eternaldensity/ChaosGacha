@@ -5,7 +5,7 @@ Curated starter taxonomy (free-form; any lowercase tag is valid):
     dragonic, undead, holy, unholy, demonic, vampiric, spectral, fae,
     eldritch, fire, water, ice, lightning, earth, wind, shadow, nature,
     blood, poison, psychic, healing, beastkin, aquatic, avian, insect,
-    construct, slime, teleport
+    construct, slime, teleport, time
 
 Heuristics are conservative (high precision): name matches + positive
 description phrases. Mentions in "damage/effective against X" or
@@ -39,6 +39,24 @@ NEG_CTX = re.compile(
     r"resist|resistance|immune|immunity|protect against|ward against|repel|"
     r"banish|purge|exorcis[^ ]* (against|of)?)[^.]*?(holy|unholy|dragon|draconic|"
     r"undead|demon|angel|vampir|ghost|spirit|wraith|fae|fairy|eldritch)",
+    re.I)
+
+# Mundane time phrasing ("at the same time", "half the time", ...) is never
+# evidence of time powers. Stripped before matching like NEG_CTX, so only
+# genuine temporal language can tag.
+TIME_MUNDANE = re.compile(
+    r"sometimes|at the same time|\bsame time\b|each time|every (single )?time|"
+    r"first time|last time|next time|long time|short time|over time|"
+    r"at a time|at one time|from time to time|\bon time\b|in time to\b|"
+    r"period of time|amount of time|waste of time|spend\w* time|"
+    r"free time|leisure time|downtime|half the time|all the time|"
+    r"most of the time|at all times|(bad|good|hard|tough|great|difficult) time|"
+    r"full[- ]time|part[- ]time|any time|training time|casting time|"
+    r"(less|more) time|takes? \w+ time|take \w+ time|saves? (you |them |him |her )?time|"
+    r"save time|time limit|time-consum|one more time|real time|nick of time|"
+    r"pass the time|matter of time|only time will|limited-time|"
+    r"\w+ of the time|with time to spare|given time|of all time|ahead of time|"
+    r"o'clock",
     re.I)
 
 # Material-skeleton traits are about bones, not undeath.
@@ -443,6 +461,25 @@ RULES = {
         ],
         "excl": [r"gate of babylon"],
     },
+    "time": {
+        "name": [
+            r"\btime\b", r"temporal", r"chron\w*", r"rewind",
+            r"time loop", r"time stop", r"time travel", r"time warp",
+            r"time walk", r"time accel",
+        ],
+        "desc": [
+            r"temporal", r"rewind", r"rewound", r"rewinding",
+            r"time loop", r"time travel", r"time stop",
+            r"time manipulat", r"time magic",
+            r"chron\w*", r"frozen in time", r"time paradox",
+            r"time bubble", r"back in time", r"through time",
+            r"sands of time", r"hourglass", r"internal clock",
+            r"stops time", r"stop time",
+            r"slow the world", r"extra turn",
+        ],
+        "excl": [r"chronically early", r"o'clock", r"no time stop",
+                 r"synchroniz", r"synchro", r"chronic", r"ride on time"],
+    },
 }
 
 
@@ -463,7 +500,7 @@ def strip_neg_ctx(text: str) -> str:
 
 def suggest_tags(name: str, desc: str):
     found = []
-    clean = strip_neg_ctx(desc or "")
+    clean = TIME_MUNDANE.sub(" ", strip_neg_ctx(desc or ""))
     for tag, pats in COMPILED.items():
         if tag == "undead" and SKELETON_EXCL.search((name or "") + " " + (desc or "")):
             # Skeleton-material traits are not undeath; still allow if the

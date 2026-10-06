@@ -52,7 +52,7 @@
         curseHp: 0, moveMult: 1,
         coins: 100, tickets: blankTickets(),
         weapon: null, dmg: 1, range: 74, atkCd: 0, rollCd: 0, rollT: 0, inv: 0, flashT: 0, moving: false,
-        pullMul: 1, discount: 0, coinBonus: 0, pickupBonus: 0, pets: [],
+        pullMul: 1, discount: 0, coinBonus: 0, pickupBonus: 0, timeBonus: 0, pets: [],
         slots: [], stash: [], abilitiesOwned: 0, facing: 0,
         dashDx: null, dashDy: null, dashSpd: 0, statuses: {},
         buildLog: [], stable: [], cloakT: 0, armorPct: 0, surge: null, stance: null, mount: null,

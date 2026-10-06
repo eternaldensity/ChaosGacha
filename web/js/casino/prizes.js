@@ -31,6 +31,12 @@ C.applyFamiliar = function (res) {
       C.noteBuild(res.name.slice(0, 18) + ": pickup +" + p.pickupBonus, "pass");
       suffix += " Pickup radius +" + gain + " (total +" + p.pickupBonus + ").";
     }
+    // Time-touched pets drag enemies down with them.
+    if (C.timeThemed(res)) {
+      const gain = C.grantTimeBonus(p, r, res.name.slice(0, 18));
+      suffix += " Foes slowed +" + Math.round(gain * 100) +
+        "% (total +" + Math.round(p.timeBonus * 100) + "%).";
+    }
     const roleBlurb = { bully: "brawls on contact", medic: "heals you",
       mule: "loot magnet", scout: "ticket luck", gunner: "auto-attacks" }[role];
     if (p.pets.length < 2) {
@@ -44,6 +50,29 @@ C.applyFamiliar = function (res) {
     return "Familiar stabled (" + role + " — " + roleBlurb + "): " + res.name +
       "." + suffix + " Press P to rotate it in (2 active).";
   }
+};
+
+// True for time powers proper (not merely timely): Tag:time or explicit
+// temporal language. Mundane phrasing ("at the same time", "half the
+// time") is stripped first, mirroring the tagger; same exclusions.
+C.timeThemed = function (res) {
+  const tags = ((res && res.tags) || []).map(t => String(t).toLowerCase());
+  if (tags.includes("time")) return true;
+  let s = (String((res && res.name) || "") + " " + String((res && res.description) || "")).toLowerCase();
+  s = s.replace(/sometimes|at the same time|\bsame time\b|each time|every (single )?time|first time|last time|next time|long time|short time|over time|at a time|at one time|from time to time|\bon time\b|in time to\b|period of time|amount of time|waste of time|spend\w* time|free time|leisure time|downtime|half the time|all the time|most of the time|at all times|(bad|good|hard|tough|great|difficult) time|full[- ]time|part[- ]time|any time|training time|casting time|(less|more) time|takes? \w+ time|take \w+ time|saves? (you |them |him |her )?time|save time|time limit|time-consum|one more time|real time|nick of time|pass the time|matter of time|only time will|limited-time|\w+ of the time|with time to spare|given time|of all time|ahead of time|o'clock/g, " ");
+  if (/chronically early|no time stop|ride on time|synchroniz|synchro|chronic/.test(s)) return false;
+  return /\btime\b|temporal|chron\w*|rewind|time loop|time travel|time stop|time manipulat|time magic|frozen in time|time paradox|time bubble|back in time|through time|sands of time|hourglass|internal clock|stops time|stop time|slow the world|extra turn/.test(s);
+};
+
+// Per-prize temporal drag: +3% enemy slow, +0.5% per rarity, cap 30%.
+// Stacks multiplicatively with chrono/frost slows (diminishing, no
+// double-dip), and never touches player speed stats.
+C.grantTimeBonus = function (p, r, label) {
+  const gain = 0.03 + r * 0.005;
+  p.timeBonus = Math.min(0.30, (p.timeBonus || 0) + gain);
+  C.noteBuild(label + ": foe slow " + Math.round(p.timeBonus * 100) + "%", "pass");
+  C.floater(p.x, p.y - 24, "+" + Math.round(gain * 100) + "% ⏳ drag", "#7df9ff");
+  return gain;
 };
 
 // True for fetch/gather familiars whose theme is hauling loot to you
@@ -217,6 +246,13 @@ C.wealthyFamiliar = function (res) {
         return "Kept " + res.name + ": coin earnings +" + Math.round(gain * 100) +
           "% (total +" + Math.round(p.coinBonus * 100) + "% — slots and bounties pay more).";
       }
+      // Temporal drag: time powers slow the enemy instead of speeding you.
+      // Gear and coin checks above win, so time weapons stay weapons.
+      if (C.timeThemed(res)) {
+        const gain = C.grantTimeBonus(p, r, res.name.slice(0, 18));
+        return "Kept " + res.name + ": temporal drag — guards slowed +" + Math.round(gain * 100) +
+          "% (total +" + Math.round(p.timeBonus * 100) + "%, cap 30%).";
+      }
     }
     if (cat === "ability") {
       p.abilitiesOwned = (p.abilitiesOwned || 0) + 1;
@@ -245,6 +281,14 @@ C.wealthyFamiliar = function (res) {
         if (opened) C.floater(p.x, p.y - 40, "+" + opened + " ability slot!", "#ffe066");
         return "Technique: " + res.name + " — loot drifts to you: pickup radius +" +
           gain + " (total +" + p.pickupBonus + ")." + slotNote;
+      }
+      // Unmatched time powers become passive temporal drag. Matched ones
+      // (chrono attacks etc.) stay combat powers above.
+      if (!ab && C.timeThemed(res)) {
+        const gain = C.grantTimeBonus(p, r, res.name.slice(0, 18));
+        if (opened) C.floater(p.x, p.y - 40, "+" + opened + " ability slot!", "#ffe066");
+        return "Technique: " + res.name + " — time drags for your enemies: guards slowed +" +
+          Math.round(gain * 100) + "% (total +" + Math.round(p.timeBonus * 100) + "%)." + slotNote;
       }
       // Unmatched abilities fall through to the essence fallback below.
       if (opened) C.floater(p.x, p.y - 40, "+" + opened + " ability slot!", "#ffe066");
@@ -316,6 +360,14 @@ C.wealthyFamiliar = function (res) {
         return "Trait: nose for money — coin earnings +" + Math.round(gain * 100) +
           "% (total +" + Math.round(p.coinBonus * 100) + "%).";
       }
+      // Time affinity drags enemies down instead of speeding you up.
+      // Placed before the seer branch (Father Time mentions no sense words,
+      // but ordering here keeps all affinity-traits-turned-passives together).
+      if (C.timeThemed(res)) {
+        const gain = C.grantTimeBonus(p, r, res.name.slice(0, 18));
+        return "Trait: temporal drag — guards slowed +" + Math.round(gain * 100) +
+          "% (total +" + Math.round(p.timeBonus * 100) + "%).";
+      }
       if (/thinker|sense|detect|perceiv|predict|foresight|intuit|insight|sixth sense|danger sense|awareness|vigil/i.test(nm)) {
         p.survey = true;
         C.modStat("LCK", 1);
@@ -376,6 +428,12 @@ C.wealthyFamiliar = function (res) {
       C.floater(p.x, p.y - 24, "+" + Math.round(gain * 100) + "% 🪙 earnings", "#ffe066");
       return "Skill: " + res.name + " — you haggle the house: coin earnings +" +
         Math.round(gain * 100) + "% (total +" + Math.round(p.coinBonus * 100) + "%).";
+    }
+    // Time lore as technique: temporal drag instead of pull speed.
+    if (cat === "skill" && C.timeThemed(res)) {
+      const gain = C.grantTimeBonus(p, r, res.name.slice(0, 18));
+      return "Skill: " + res.name + " — drilled timing: guards slowed +" +
+        Math.round(gain * 100) + "% (total +" + Math.round(p.timeBonus * 100) + "%).";
     }
     // Profession skills (usually "Rank Profession"): the trade becomes a
     // casino edge. Unlisted trades fall through to generic pull speed.

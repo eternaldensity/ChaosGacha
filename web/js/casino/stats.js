@@ -25,6 +25,11 @@
   C.cdr = () => Math.min(0.35, 0.02 * (get("FOC") - 10));
   C.luck = () => get("LCK") - 10;
   C.coinMult = () => 1 + ((C.G && C.G.p.coinBonus) || 0);
+  // Temporal drag: time-affinity prizes slow all guards by a fraction.
+  // Unlike SPD/DEX/FOC/roll (which speed YOU up), this slows THEM down.
+  C.enemySlowMult = function () {
+    return 1 - Math.min(0.30, ((C.G && C.G.p.timeBonus) || 0));
+  };
   // Loot-grab radius: base + mule aura (+40 while a mule is active) +
   // stacking pickupBonus from magnet/fetch prizes (cap applied on grant).
   C.pickupRadius = function () {

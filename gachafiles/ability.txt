@@ -763,7 +763,7 @@
 382. Instant Transmission, 5.0, Generic
 #Instantly teleport to any sensed or previously visited location, bringing passengers along. Energy cost scales slightly with distance and passenger count; requires mental focus.
 383. Rewind, 4.3, MHA
-#While in an active slot, build an energy stockpile by diverting a portion of your natural regeneration, manifesting by default as a horn. Spend the stockpile to rewind time's effects on a target, costing more for stronger or resisting targets and less for weaker ones. Cannot affect immaterial things such as soul, energy, or mind.
+#(Tag:time)While in an active slot, build an energy stockpile by diverting a portion of your natural regeneration, manifesting by default as a horn. Spend the stockpile to rewind time's effects on a target, costing more for stronger or resisting targets and less for weaker ones. Cannot affect immaterial things such as soul, energy, or mind.
 384. Haste, 4.1, Generic
 #Accelerate your own time and that of anything you touch. Greater acceleration causes more strain and energy cost.
 385. Apport, 3.1, Generic
@@ -779,7 +779,7 @@
 390. Reality Slash, 5.7, Generic
 #Create and launch a flying slash that severs spacetime, ignoring all conventional durability and barriers.
 391. Dimensional Lock, 3.9, Generic
-#Dimensionally lock an area to block spacetime abilities like teleportation, portals, and time travel inside it. Larger areas cost more energy; strong enough targets can break the lock.
+#(Tag:time)Dimensionally lock an area to block spacetime abilities like teleportation, portals, and time travel inside it. Larger areas cost more energy; strong enough targets can break the lock.
 392. Stillness, 6.8, Re:Zero
 #(Tag:ice)Freeze an object's time, rendering it inviolable and locked to its current speed and state; even a thrown pebble becomes unstoppable and immovable. Can be used on yourself for invulnerability, but strains the heart immensely and lasts only a few seconds.
 393. Infinity, 5.0, Jujutsu Kaisen
@@ -793,7 +793,7 @@
 397. The Hand, 5.7, JoJo
 #Scrape away space with either hand, pulling the remaining space together to fill it. Ignores conventional durability but has short range and high energy cost.
 398. Time Manipulation, 6.9, Unordinary
-#Manipulate time in a select area or target by speeding up, slowing down, stopping, or reversing it. Sufficiently strong targets can resist.
+#(Tag:time)Manipulate time in a select area or target by speeding up, slowing down, stopping, or reversing it. Sufficiently strong targets can resist.
 399. Slow Down, 5.2, Generic
 #Slow down time for everything except yourself. More energy expended yields slower time.
 400. Superhot, 6.2, SUPER HOT
@@ -825,7 +825,7 @@
 413. Vermin Lord, 3.5, Generic
 #Sense and telepathically command vermin such as insects and mice within your sensory range.
 414. Mandom, 5.7, JoJo
-#Rewind time by 6 seconds in a localized 50-meter area. Those in range remain aware of the rewound 6 seconds.
+#(Tag:time)Rewind time by 6 seconds in a localized 50-meter area. Those in range remain aware of the rewound 6 seconds.
 415. Resurrection, 5.8, DnD
 #Revive an entity dead no longer than you have been alive. Requires sacrifices like money, valuables, or artefacts scaling with target strength, doubled for unwilling targets.
 416. Blast Mark, 4.8, Generic
@@ -1599,7 +1599,7 @@
 800. Move Mimicry, 4.0, Generic
 #Mimic any one displayed opponent move or ability into Mimic and unleash the identical effect. Cannot copy above Epic, single stored ability, single use, then resets. 8-hour cooldown.
 801. Clockwork, 6.8, Generic
-#Rewind time with 1-minute charges; spending one returns you 1 minute back. Gain a charge every 24 hours, hold up to 30.
+#(Tag:time)Rewind time with 1-minute charges; spending one returns you 1 minute back. Gain a charge every 24 hours, hold up to 30.
 802. Luck Aura, 7.7, Generic
 #Store and unleash luck, gaining a charge every 24 hours for extreme luck like surviving lethal attacks or finding exactly what is needed. Excludes gacha tickets; hold up to 7.
 803. Lucky Strike, 4.3, Generic
@@ -1613,7 +1613,7 @@
 807. Esper Silence, 5.4, Legendary Mechanic
 #(Tag:psychic)Lets you disable a target's ability by touching them. Duration scales with power difference, minimum 3 seconds. 5-minute cooldown.
 808. Flawed Return, 5.1, Generic
-#Lets you rewind time up to 5 minutes with a 10-minute cooldown. Your body rewinds too, so injuries and exhaustion carry over.
+#(Tag:time)Lets you rewind time up to 5 minutes with a 10-minute cooldown. Your body rewinds too, so injuries and exhaustion carry over.
 809. Save & Load, 9.0, Generic
 #Gives you 12 manual save files you can save and load at any time. No quicksaves or autosaves.
 810. Xavier, 7.7, Generic
@@ -1815,15 +1815,15 @@
 911. Atomic Manipulation, 8.9, Generic
 #Lets you manipulate atoms with great precision to transmute matter and control elements, up to transforming bodies or crafting superior matter. Requires extensive training to use well.
 912. Time Stop, 8.3, Generic
-#(Tag:ice)Lets you stop time at great energy cost. Far superior beings can resist the freeze.
+#(Tag:time)(Tag:ice)Lets you stop time at great energy cost. Far superior beings can resist the freeze.
 913. Time Calibration, 7.3, Generic
-#Lets you calibrate time on your body, slowing the world, hastening yourself or only your perception, stalling wounds, or slowing incoming objects. Larger effects cost more energy.
+#(Tag:time)Lets you calibrate time on your body, slowing the world, hastening yourself or only your perception, stalling wounds, or slowing incoming objects. Larger effects cost more energy.
 914. Space Manipulation, 8.8, Generic
 #Lets you manipulate space to move things telekinetically, teleport, tear space, create pocket dimensions, warp objects, harden targets, and with training invade other worlds.
 915. Adventure Awaits!, 6.8, Generic
 #Lets you leave to a random world on a mission, returning once completed, and revisit it later via spatial travel or vehicles. Cooldown: 1 Month.
 916. Time God, 9.3, Generic
-#Lets you freely rewind, fast-forward, travel through, and stop time while you have energy.
+#(Tag:time)Lets you freely rewind, fast-forward, travel through, and stop time while you have energy.
 917. Luck Manipulation, 9.7, Generic
 #Lets you raise or lower any target's luck, given enough energy.
 918. Wrath, 8.8, Generic
@@ -1897,9 +1897,9 @@
 952. Tiamat's Gift, 6.8, Generic
 #(Tag:dragonic)"Mother of All Dragons" You can transform yourself and any biological structure you touch into a dragon, and spawn temporary dragon projections from your body. Dragon power and shape depend on skill and energy expended, with greater violations of mass conservation costing more energy. Sentient beings can resist conversion based on strength.
 953. Hands of Time, 5.5, Generic
-#You can reverse or accelerate an object's time by touch, withering a tree or turning it into a sapling. Stronger targets have their time altered more slowly.
+#(Tag:time)You can reverse or accelerate an object's time by touch, withering a tree or turning it into a sapling. Stronger targets have their time altered more slowly.
 954. Shadows of Time, 5.3, Generic
-#Your shadow is a temporal anomaly. It can stretch, move independently, leave 2D space to physically interact and attack, and alter the time of whatever it touches — rapidly aging or rejuvenating it. Stronger targets have their time altered more slowly.
+#(Tag:time)Your shadow is a temporal anomaly. It can stretch, move independently, leave 2D space to physically interact and attack, and alter the time of whatever it touches — rapidly aging or rejuvenating it. Stronger targets have their time altered more slowly.
 955. Bloody Lust, 6.6, Generic
 #"You are enjoying this far too much" Your lust for violence is insatiable. When hurt, you recover energy proportional to damage taken, and recover health proportional to damage you deal. You are an eternal engine of battle.
 956. Infernal Engine, 4.6, Generic
@@ -1981,7 +1981,7 @@
 994. Madness Wavelength, 5.2, Generic
 #You emit a wavelength that alters the minds and perceptions of those it touches. You can drive a whole town to madness while passing by, and can tweak the madness exerted.
 995. Time Accel, 4.0, Fate
-#You can speed up your own body's time in 2x, 3x, 4x increments. Greater acceleration puts more strain on body and mind.
+#(Tag:time)You can speed up your own body's time in 2x, 3x, 4x increments. Greater acceleration puts more strain on body and mind.
 996. Divine Blade, 5.9, Generic
 #(Tag:holy)You can conjure a sword of Divine Light and alter its shape. It is lightweight yet unbelievably sharp and durable, and burns struck targets with purifying holy flames. At the wielder's will, it cannot hurt even a fly despite full-power swings.
 997. Soul Bet, 3.0, JoJo
@@ -2111,7 +2111,7 @@
 1059. Tinker - Mind, 6.8, Generic
 #(Tag:psychic)(Tech) Allows you to build mind-influencing and controlling contraptions like suggestion music, neuralyzers, mind control helmets, and mental reprogramming machines.
 1060. Tinker - Time, 7.9, Generic
-#(Tech) Allows you to build time-related contraptions like aging grenades, time-dilated training rooms, time-stoppers, stasis barriers, and time-dilation FTL drives. This speciality is very expensive.
+#(Tag:time)(Tech) Allows you to build time-related contraptions like aging grenades, time-dilated training rooms, time-stoppers, stasis barriers, and time-dilation FTL drives. This speciality is very expensive.
 1061. Aid, 1.3, Generic
 #You can heal yourself and others by expending energy, but only slightly, such as scratches, scrapes, and bruises. Effectiveness depends on your power difference to the target.
 1062. Minor Cure, 2.4, Generic
@@ -2827,7 +2827,7 @@
 1417. Word of Serenity, 3.4, RimWorld
 #Speak with irresistible calm that ends mental breaks on the spot and steadies volatile colonists.
 1418. Time Walk, 7.8, MTG
-#Take an extra turn after this one. Two mana, one extra turn, and a permanent seat on every banned list.
+#(Tag:time)Take an extra turn after this one. Two mana, one extra turn, and a permanent seat on every banned list.
 1419. Ancestral Recall, 7.4, MTG
 #Target player draws three cards. One blue mana for the most efficient draw spell ever printed.
 1420. Counterspell, 4.4, MTG
@@ -2855,15 +2855,15 @@
 1431. Flay Skin, 4.2, Divinity Original Sin
 #Strip all magic armour from enemies around you, leaving them open to every status effect.
 1432. Time Warp, 6.4, Divinity Original Sin
-#(Tag:teleport)Fane's special source skill: grant a character an entire extra turn after their current one ends.
+#(Tag:time)(Tag:teleport)Fane's special source skill: grant a character an entire extra turn after their current one ends.
 1433. Apotheosis, 6.8, Divinity Original Sin
 #Take the first step toward godhood: all Source skills cost 3 less and attributes surge for two turns.
 1434. Temporal Rewind, 5.2, Life is Strange
-#Rewind time by seconds or minutes while retaining full memory of the undone timeline, then choose better.
+#(Tag:time)Rewind time by seconds or minutes while retaining full memory of the undone timeline, then choose better.
 1435. Telekinetic Blast, 4.6, Life is Strange
 #Unleash concussive telekinetic force that hurls people, cars, and debris away from you.
 1436. Concentration, 2.8, Horizon Zero Dawn
-#Slow the world to a crawl while aiming, lining up machine weak-point shots with perfect calm.
+#(Tag:time)Slow the world to a crawl while aiming, lining up machine weak-point shots with perfect calm.
 1437. Silent Strike, 3.0, Horizon Zero Dawn
 #Takedown unaware machines and humans from stealth for massive damage.
 1438. Survivalist, 2.6, Tomb Raider
@@ -2945,7 +2945,7 @@
 1476. Untie, 0.3, Generic
 #Loosen any knot slightly. Fully untying anything takes all day.
 1477. Rewind (3 seconds), 0.9, Life is Strange
-#Rewind time by three seconds, once per day. Enough to catch a falling glass. Sometimes.
+#(Tag:time)Rewind time by three seconds, once per day. Enough to catch a falling glass. Sometimes.
 1478. Flavor, 0.4, Generic
 #Shift the flavor of food slightly: sweeter, saltier, or faintly of pennies.
 1479. Static Cling, 0.3, Generic

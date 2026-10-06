@@ -325,7 +325,7 @@
 163. Dio Brando, 4.2, JoJo
 #(Tag:blood)(Tag:vampiric)(Character)A petty thief's son turned vampire via the Stone Mask. He absorbs life force, grants vampirism, creates undead, grafts flesh, and manipulates his body, and is a genius, highly skilled vampire.
 164. DIO, 5.4, JoJo
-#(Character)A once-hotheaded vampire grown wise after long ages under the sea, awakened to The World by the Stand Arrow. Massively superhuman, he regenerates by drinking blood, manipulates his body, and creates thralls. His Stand The World shares his physical power and stops time for upwards of 10 seconds.
+#(Tag:time)(Character)A once-hotheaded vampire grown wise after long ages under the sea, awakened to The World by the Stand Arrow. Massively superhuman, he regenerates by drinking blood, manipulates his body, and creates thralls. His Stand The World shares his physical power and stops time for upwards of 10 seconds.
 165. The Pillar Men, 5.2, JoJo
 #(Character)You get all three Pillar Men: Whamuu, Esidisi, and Kars. Thousands-year-old super vampires, they absorb people, regenerate, and manipulate their bodies but are vulnerable to sunlight. Esidisi is a master strategist, Whamuu a genius warrior, and Kars a genius intellect.
 166. Kars, 4.9, JoJo
@@ -545,7 +545,7 @@
 273. Puar, 3.1, Dragon Ball
 #(Character)Puar is a weird floating cat creature with little to no combat ability, graduated from Transformation Academy to change form into anything from objects to people without changing stats. She can also teach transformation to others with the talent and time for it.
 274. Acnologia, 8.8, Fairy Tail
-#(Tag:dragonic)(Character)Acnologia became the mightiest Dragon King after bathing in countless dragons' blood as a Dragon Slayer. As the arcane dragonslayer he can eat all elements to empower and heal himself and is immune to all magic until his absorption is overwhelmed, pairing overwhelming physical and magical power with destructive beams, varied magic, and even time manipulation.
+#(Tag:time)(Tag:dragonic)(Character)Acnologia became the mightiest Dragon King after bathing in countless dragons' blood as a Dragon Slayer. As the arcane dragonslayer he can eat all elements to empower and heal himself and is immune to all magic until his absorption is overwhelmed, pairing overwhelming physical and magical power with destructive beams, varied magic, and even time manipulation.
 275. THWOMP, 1.6, Mario
 #"URNGH." A giant sentient(?) angry boulder creature you can summon above targets to slam down or in front of you as a wall. Damage to it mends over time inside the gacha.
 276. Kaguya Otsutsuki, 9.0, Naruto
