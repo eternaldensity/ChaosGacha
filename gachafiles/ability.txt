@@ -433,9 +433,9 @@
 217. Mud Manipulation, 3.4, Generic
 #(Tag:earth)Conjure and control mud to create swamps underfoot or bombard opponents.
 218. Crystal Shower, 2.6, Generic
-#Create crystals to shoot as projectiles. Larger, faster crystals expend more energy.
+#(Tag:earth)Create crystals to shoot as projectiles. Larger, faster crystals expend more energy.
 219. Crystal Spikes, 2.2, Generic
-#Create durable but brittle crystal spikes from the ground or any touched surface to impale opponents or serve as barriers.
+#(Tag:earth)Create durable but brittle crystal spikes from the ground or any touched surface to impale opponents or serve as barriers.
 220. Diamond Skin, 4.3, One Piece
 #Cover your body in diamond-like texture, massively boosting durability and mass against all damage. Even as a base human you shrug off high-calibre bullets, tank shells, car impacts and fire unfelt, and even a missile cannot kill you though it hurts.
 221. Crystal Creation, 3.7, Generic
@@ -1003,11 +1003,11 @@
 502. Basilisk Form, 4.1, Generic
 #Transforms into a basilisk at will, partially or fully. Your gaze petrifies and paralyzes, your scales grant natural armor, and you highly resist curses.
 503. Wendigo, 4.2, Generic
-#Transforms into a Wendigo partially or fully. Grants increased ice affinity, enhanced physical stats, blizzard summoning, and supernatural tracking, but may instill human-flesh appetite.
+#(Tag:ice)Transforms into a Wendigo partially or fully. Grants increased ice affinity, enhanced physical stats, blizzard summoning, and supernatural tracking, but may instill human-flesh appetite.
 504. Oni, 3.4, Generic
 #Transforms into an Oni partially or fully. Grants enhanced physical stats and minor healing, but vulnerability to holy.
 505. Phoenix Form, 6.7, Generic
-#(Tag:avian)Transforms into a Phoenix partially or fully. Grants enhanced physical stats, major fire affinity, incredible regeneration, and revival from death once every 30 days.
+#(Tag:fire)(Tag:avian)Transforms into a Phoenix partially or fully. Grants enhanced physical stats, major fire affinity, incredible regeneration, and revival from death once every 30 days.
 506. Tinker - Redundant, 1.2, Generic
 #(Tech) Modifies existing technology in purposeless ways granting no tangible benefit, like yellowing a phone screen, adding useless car wheels, or fitting a car with a propeller too weak to lift it.
 507. Mirror Force, 5.0, Yugioh
@@ -1463,7 +1463,7 @@
 732. Rabbit Form, 2.7, Generic
 #Partially or fully transform into a rabbit or hybrid, gaining enhanced physicality focused on leg jumping and kicking, plus a substantial libido boost.
 733. Ifrit, 5.2, Generic
-#Transform into an Ifrit, a fire-born spirit. Cannot use water or water-based abilities as one, but fire abilities are much stronger with natural flame generation.
+#(Tag:fire)Transform into an Ifrit, a fire-born spirit. Cannot use water or water-based abilities as one, but fire abilities are much stronger with natural flame generation.
 734. Ifrit Sultan, 6.6, Generic
 #(Tag:fire)(Tag:water)(Tag:dragonic)Transform into an Ifrit Sultan, ancient flame spirit ruling fire spirits with ancient-dragon-level power. Strengthens all fire abilities, disables cryo/hydrokinesis, and grants natural pyrokinesis plus fire immunity.
 735. More Eyes, 1.0, Generic
@@ -2021,7 +2021,7 @@
 1014. Inner Isles, 5.8, Generic
 #There is an island inside your being. You can create doors to a spatial dimension within your existence — a small vegetated island in a vast lifeless ocean. Creating larger doors and maintaining doors consumes energy.
 1015. Sea Serpent of the End, 7.2, Highschool DxD
-#You can transform into Leviathan, the Sea Serpent of the End. As this giant mythical sea snake, you control all water in range on a massive scale, tilting seas and drowning cities, creating more water serpents, and summoning flood-causing rains. All water-based abilities and effects are massively amplified in this form.
+#(Tag:water)You can transform into Leviathan, the Sea Serpent of the End. As this giant mythical sea snake, you control all water in range on a massive scale, tilting seas and drowning cities, creating more water serpents, and summoning flood-causing rains. All water-based abilities and effects are massively amplified in this form.
 1016. Gradual Transformation, 3.6, Generic
 #You can gradually transform your body into any shape, but the slowness demands care. Turning into a cat takes roughly 3 hours, and you cannot increase or decrease mass by more than 500%.
 1017. Meltdowner, 6.1, Toaru
