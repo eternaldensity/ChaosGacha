@@ -1119,7 +1119,7 @@
 560. Snowball, 5.2, Overwatch
 #(Tag:ice)A cryo-drone buddy firing freeze rays and blizzards on request. Loyal, round, and colder than your ex's heart.
 561. The Ball, 4.8, Rocket League
-#A giant soccar ball that follows you everywhere and bounces off everything. Explodes on a timer; the timer is a secret, even from the ball.
+#A giant soccer ball that follows you everywhere and bounces off everything. Explodes on a timer; the timer is a secret, even from the ball.
 562. Code Geese, 2.5, Generic
 #A pair of geese with expert programming skills. They type exclusively by hunt and peck, loudly, at 3 AM. Code reviews take a while.
 563. M3GAN Doll, 5.3, M3GAN
