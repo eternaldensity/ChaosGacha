@@ -222,6 +222,14 @@
     catch (e) { /* quota: regenerate next time, as today */ }
   }
 
+  // All known gacha sources, sorted. Snapshotted onto tree records as
+  // knownSources so upgrades can tell brand-new sources (default: include)
+  // apart from deliberately excluded ones (stay out unless asked).
+  function allSources() {
+    return [...new Set((DATA.entries || []).map(e => e.s).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b));
+  }
+
   // ---- tabs --------------------------------------------------------------
   let currentTab = "trees";
   document.querySelectorAll("#tabs button").forEach(b => {
@@ -321,7 +329,14 @@
           toast(`Fresh copy "${nt.name}" started.`);
         } catch (e) { err(e); }
       });
-      actions.append(open, ren, copy, fresh, del);
+      const up = document.createElement("button");
+      up.textContent = "⬆ Upgrade"; up.title = "Copy with progress: keep unlocked + visible entries, regenerate the unseen from current data (full trees also grow)";
+      up.addEventListener("click", async () => {
+        try {
+          await upgradeTree(t);
+        } catch (e) { err(e); }
+      });
+      actions.append(open, ren, copy, fresh, up, del);
       if (!t.static) {
         const use = document.createElement("button");
         use.textContent = "⚙ Use options";
@@ -374,6 +389,7 @@
       name: (t.name + (fresh ? " (fresh)" : " (copy)")).slice(0, 60),
       seed: t.seed, params: JSON.parse(JSON.stringify(t.params || {})),
       limit: t.limit || null, filters: JSON.parse(JSON.stringify(t.filters || {})),
+      knownSources: t.knownSources ? t.knownSources.slice() : undefined,
       static: !!t.static, createdAt: Date.now(),
       dataVersion: fresh && !t.static ? (DATA.dataVersion || null) : (t.dataVersion || null)
     };
@@ -392,6 +408,192 @@
     DB.activeId = nid;
     selectedId = 0;
     saveDB(); renderTrees(); refreshAll();
+    return nt;
+  }
+  // Upgrade: like Copy, but the copy's unseen nodes are resampled from the
+  // current data version while unlocked + visible entries — and the whole
+  // inventory, wallet, and history — carry over. Full (unlimited) trees
+  // also grow: pool entries missing from the tree are appended as new
+  // nodes. Positions and links bake in as displayed, so recorded
+  // swaps/links/entry-swaps are dropped from the copied state. The result
+  // is stored as a static (custom) tree stamped with the current data version.
+  async function upgradeTree(t) {
+    const rt = await getRuntime(t);
+    const st = DB.states[t.id] || E.newState();
+    // Source filters are an inclusion snapshot: anything absent is out,
+    // whether deliberately excluded or brand-new. New sources default to
+    // included (matching the New-Tree checkboxes), so ask about exactly
+    // those — knownSources distinguishes them from deliberate exclusions.
+    // Trees predating knownSources can't distinguish; ask about all absent.
+    const currentSources = allSources();
+    const stored = new Set(((t.filters || {}).sources || []));
+    const hasFilter = stored.size > 0;
+    const known = new Set(t.knownSources || []);
+    // With knownSources, only truly new sources are asked about; without
+    // it, every absent source is listed (one-time ambiguity).
+    const freshSources = hasFilter
+      ? currentSources.filter(s => !stored.has(s) && (!t.knownSources || !known.has(s)))
+      : [];
+    let filters = Object.assign({}, t.filters || {});
+    if (freshSources.length) {
+      const shown = freshSources.slice(0, 12).join(", ") +
+        (freshSources.length > 12 ? ` (+${freshSources.length - 12} more)` : "");
+      const include = confirm(
+        `${freshSources.length} source${freshSources.length === 1 ? " is" : "s are"} ` +
+        `not in this tree's filter: ${shown}.\n\nOK = include them in the upgrade.\n` +
+        `Cancel = keep the old filter.`);
+      if (include) filters.sources = [...stored, ...freshSources];
+    }
+    const m = E.viewState(rt, st);
+    const keep = new Set(st.unlocked || []);
+    for (const id of E.visible(rt, st.unlocked, m)) keep.add(id);
+    const pool = G.filterEntries(DATA.entries, filters);
+    if (!pool.length) throw new Error("no entries match this tree's filters in the current data");
+    const key = e => e.f + "#" + e.n;
+    const used = new Set();
+    for (const nd of rt.nodes) if (keep.has(nd.id)) used.add(nd.file + "#" + nd.number);
+    const byKey = new Map(), byFile = new Map();
+    for (const e of pool) {
+      const k = e.f + "|" + classOf(e.r).name;
+      if (!byKey.has(k)) byKey.set(k, []);
+      byKey.get(k).push(e);
+      if (!byFile.has(e.f)) byFile.set(e.f, []);
+      byFile.get(e.f).push(e);
+    }
+    const pickFor = nd => {
+      const lists = [byKey.get(nd.file + "|" + classOf(nd.rarity).name) || [],
+        byFile.get(nd.file) || []];
+      for (const list of lists) {
+        const cands = list.filter(e => !used.has(key(e)));
+        if (cands.length) return cands[Math.floor(Math.random() * cands.length)];
+      }
+      return null;
+    };
+    const stampFlags = (node, src) => {
+      delete node.nsfw; delete node.noncon; delete node.tech;
+      if (src.nsfw) node.nsfw = true;
+      if (src.noncon) node.noncon = true;
+      if (src.tech) node.tech = true;
+      return node;
+    };
+    let refreshed = 0;
+    const nodes = rt.nodes.map(nd => {
+      const base = {
+        id: nd.id, file: nd.file, number: nd.number, name: nd.name,
+        rarity: nd.rarity, source: nd.source, tag: nd.tag,
+        description: nd.description, meta: (nd.meta || []).slice(),
+        tags: (nd.tags || nd.tg || []).slice(),
+        pos: (nd.pos || [0, 0, 0]).slice(), r: nd.r
+      };
+      if (keep.has(nd.id)) return stampFlags(base, nd);
+      const e = pickFor(nd);
+      if (!e) return stampFlags(base, nd);
+      used.add(key(e));
+      refreshed++;
+      return stampFlags(Object.assign(base, {
+        file: e.f, number: e.n, name: e.name, rarity: e.r,
+        source: e.s, tag: e.t, description: e.d,
+        meta: (e.m || []).slice(), tags: (e.tags || e.tg || []).slice()
+      }), e);
+    });
+    const edges = [];
+    const byId = {};
+    for (const nd of nodes) byId[nd.id] = nd;
+    const distp = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+    for (const aStr of Object.keys(rt.adj)) {
+      const a = Number(aStr);
+      for (const b of rt.adj[aStr]) {
+        if (b > a && byId[a] && byId[b]) {
+          edges.push({ a, b, d: Math.round(distp(byId[a].pos, byId[b].pos) * 1e6) / 1e6 });
+        }
+      }
+    }
+    // Growth for full (unlimited) trees: the current pool may hold entries
+    // the old tree never sampled. Append one node per missing entry so the
+    // upgraded tree is complete again. Existing nodes and edges are never
+    // touched — unlocked connections, frontier included, stay exactly as
+    // displayed. New nodes take shell-appropriate positions (a few tries
+    // each, keeping the least crowded), then link to nearest neighbours.
+    let added = 0;
+    if (!t.limit) {
+      const P = Object.assign({}, G.DEFAULTS, rt.params || {});
+      const radius = P.radius || 10;
+      const inner = P.innerFraction != null ? P.innerFraction : 0.12;
+      const prs = pool.map(e => e.r);
+      const rmin = Math.min(...prs), span = (Math.max(...prs) - rmin) || 1.0;
+      const maxd = (P.maxLinkDistance || 0.6) * radius;
+      const kMax = Math.max(1, Math.round(P.meanDegree || 2.5));
+      let nextId = nodes.reduce((mm, nd) => Math.max(mm, nd.id), 0) + 1;
+      const place = radial => {
+        let best = null, bestD = -1;
+        for (let i = 0; i < 8; i++) {
+          const z = Math.random() * 2 - 1, th = Math.random() * 2 * Math.PI;
+          const rr = Math.sqrt(Math.max(0, 1 - z * z));
+          const p = [radial * rr * Math.cos(th), radial * rr * Math.sin(th), radial * z];
+          let md = Infinity;
+          for (const nd of nodes) { const d = distp(p, nd.pos); if (d < md) md = d; }
+          if (md > bestD) { bestD = md; best = p; }
+        }
+        return best.map(c => Math.round(c * 1e6) / 1e6);
+      };
+      const freshIds = [];
+      for (const e of pool) {
+        if (used.has(key(e))) continue;
+        used.add(key(e));
+        const t = (e.r - rmin) / span;
+        const radial = Math.max(radius * 0.05, Math.min(radius, radius * (inner + (1 - inner) * t)));
+        const nd = { id: nextId++, file: e.f, number: e.n, name: e.name,
+          rarity: e.r, source: e.s, tag: e.t, description: e.d,
+          meta: (e.m || []).slice(), tags: (e.tags || e.tg || []).slice(),
+          pos: place(radial), r: Math.round(radial * 1e6) / 1e6 };
+        if (e.nsfw) nd.nsfw = true;
+        if (e.noncon) nd.noncon = true;
+        if (e.tech) nd.tech = true;
+        nodes.push(nd);
+        byId[nd.id] = nd;
+        freshIds.push(nd.id);
+        added++;
+      }
+      for (const id of freshIds) {
+        const nd = byId[id];
+        const cands = nodes
+          .filter(o => o.id !== id)
+          .map(o => [distp(nd.pos, o.pos), o.id])
+          .sort((x, y) => x[0] - y[0]);
+        let linked = 0;
+        for (const [d, oid] of cands) {
+          if (linked >= kMax) break;
+          if (d > maxd && linked > 0) break;
+          edges.push({ a: Math.min(id, oid), b: Math.max(id, oid),
+            d: Math.round(d * 1e6) / 1e6 });
+          linked++;
+        }
+        if (!linked && cands.length) {
+          const [d, oid] = cands[0];
+          edges.push({ a: Math.min(id, oid), b: Math.max(id, oid),
+            d: Math.round(d * 1e6) / 1e6 });
+        }
+      }
+    }
+    const nid = uid();
+    saveStatic(nid, { nodes, edges });
+    const nst = JSON.parse(JSON.stringify(st));
+    delete nst.swaps; delete nst.added_links; delete nst.entry_swaps;
+    const nt = {
+      id: nid, name: (t.name + " (upgraded)").slice(0, 60),
+      seed: t.seed, params: JSON.parse(JSON.stringify(t.params || {})),
+      limit: t.limit || null, filters: JSON.parse(JSON.stringify(filters)),
+      knownSources: currentSources.slice(),
+      static: true, createdAt: Date.now(), dataVersion: DATA.dataVersion || null
+    };
+    DB.trees.push(nt);
+    DB.states[nid] = nst;
+    DB.activeId = nid;
+    selectedId = 0;
+    saveDB(); renderTrees(); refreshAll();
+    const hidden = nodes.length - keep.size - added;
+    toast(`Upgraded as "${nt.name}": kept ${keep.size}, refreshed ${refreshed} of ${hidden} unseen` +
+      (added ? `, +${added} new` : "") + ".");
     return nt;
   }
   // Inverse of readGenForm: load a saved (generated, non-static) tree's
@@ -477,7 +679,8 @@
         includeNsfw: !!$("newNsfw").checked,
         includeNoncon: !!($("newNoncon") && $("newNoncon").checked),
         ...(tag ? { tag } : {})
-      }
+      },
+      knownSources: allSources()
     };
   }
 
@@ -524,6 +727,7 @@
       const tree = {
         id: uid(), name: form.name, seed: form.seed, params: form.params,
         limit: form.limit, filters: form.filters,
+        knownSources: form.knownSources || allSources(),
         createdAt: Date.now(), dataVersion: DATA.dataVersion || null
       };
       DB.trees.push(tree);

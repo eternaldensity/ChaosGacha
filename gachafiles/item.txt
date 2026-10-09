@@ -2202,7 +2202,7 @@
 #(Gacha) A nice black leather left shoe that fits you. Drop it after a gacha roll to change the result to randomly the next or previous item on the wheel.
 1102. Chaos's Other Shoe, 5.7, Generic
 #(Gacha) A nice black leather right shoe that fits you. When rolled, it lands on your head: lose your previous roll to reroll the ticket that gave you the shoe. You get to keep the shoe.
-1089. Scent Hound Whistle, 3.5, Generic
+1125. Scent Hound Whistle, 3.5, Generic
 #(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.
 1103. Second Breakfast Box, 8.0, Generic
 #A lunchbox that produces any mundane meal or tool under 5 kg on demand, endlessly; items taken more than a mile away fade after 24 hours.
