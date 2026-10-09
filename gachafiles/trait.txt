@@ -1404,3 +1404,37 @@
 #While wearing a cheap costume you have supersoldier strength and toughness, but cannot make any visually impressive moves. You're not incompetent, just unimpressive as you walk up to your foes and knock them down.
 702. Mysterious Lover, 3.4, Baby Cat
 #On a weekly basis you receive an extravagant thoughtful gift or a singing telegram. It might be from your landlord.
+703. Polyglot of Babel, 8.0, Generic
+#You speak, read, and learn any language on first exposure, including dead, coded, magical, and machine tongues; you cannot forget one, and puns follow you everywhere.
+704. Econ of Scale, 8.1, Generic
+#Any project you lead costs half the materials, time, and labor it should; the savings must go somewhere, and the universe collects in mishaps.
+705. Mythic Resonance, 8.3, Generic
+#You rhyme with legend: stories told about you become slightly true (deeds exaggerated in your favor manifest as minor luck and skill), while slander withers unbelieved. You cannot start the stories yourself.
+706. Thunderhead Soul, 8.5, Generic
+#(Tag:wind)(Tag:lightning)Your emotions charge the air: anger calls targeted lightning, joy clears skies for miles, grief brings rain. You are immune to weather and electricity; strong winds may still carry you off mid-tantrum.
+707. Death's Secretary, 9.0, Generic
+#(Tag:spectral)You see, hear, and negotiate with the dead of any world as naturally as the living; the dead find you credible and trade favors for remembrance. You cannot compel them.
+708. Rootless, 9.2, Generic
+#No place, oath, curse, or summoning can bind, track, or hold you; teleportation and banishment slide off. This includes Gacha Curses — which are therefore never offered to you, tickets and all — as well as magical restraints, compulsions, and enchantments laid upon you. The price: no blessing, ward, or healing not of your own making can find you either.
+709. Jinchuriki, 8.9, Naruto
+#A tailed beast sealed within you: vast reserves, regeneration, and beast modes escalating with tails borrowed. Befriend it and it lends everything; fight it and you fight forever, inside and out.
+710. Quirk Singularity, 8.8, MHA
+#Every power you hold grows roughly one tier-equivalent per year of active use — while control frays in matching step: leakage, misfires, and effects that overshoot their mark. Rest does not pause it; only passing a power on resets its clock (and starts someone else's).
+711. God Ki, 8.6, Dragon Ball
+#Divine ki: undetectable by mortal senses, its pressure alone buckles weak wills, calm hands wield planet-breaking output. Rage spends it double; serenity spends it clean.
+712. But It Refused, 8.6, Undertale
+#Refuse one death per week: killing blows leave you standing at a single hit point instead. Fate notices repeat offenders.
+713. Voice of All Things, 8.5, One Piece
+#Hear the voices of all things: objects, beasts, seas, and islands speak, and addressed directly they answer truthfully from their own experience — a sword's history, the sea's mood, what passed this strait. They know only what they have witnessed: nothing of the future, nothing beyond their ken. In crowded seas the chorus never shuts up.
+714. Mantle-Bearer, 8.5, Halo
+#Forerunner geas of stewardship: absolute authority over Forerunner systems and instinct for galaxy-scale logistics, plus the crushing certainty that every extinction is your fault. The systems obey; the guilt is free.
+715. Untouchable, 8.6, Warhammer 40k
+#You are a Blank: warp, psychic phenomena, and daemonic presences gutter out around you, and psykers sicken in your company. Daemons fear you on sight. Everyone else finds you subtly, inexplicably repellent.
+716. Beloved of the Worm, 9.1, Stellaris
+#(Tag:time)The Worm loves you: time hiccups around you — once per day, reroll up to one minute just lived, keeping full memory of the undone version. And it WILL be fed: leave it living sacrifices at every landing, or it feeds on your crew and companions instead. What was, will be.
+717. Eywa Communion, 9.0, James Cameron's Avatar
+#(Tag:nature)Linked to the planetary consciousness: all Pandoran-analog life answers your call and shares its senses with you. Unplug, and the silence aches for weeks.
+718. Mentat, 8.7, Dune
+#A human computer: perfect computation, recall, and projection from available data, lips stained with sapho. You need the data first; garbage in, gospel out.
+719. Bene Gesserit Conditioning, 8.8, Dune
+#Prana-bindu body control, truth-sense, and the Voice: pitch-perfect vocal command that the unprepared cannot disobey. Strong minds, the deaf, and recording-equipment operators are immune.

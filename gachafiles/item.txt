@@ -2204,3 +2204,47 @@
 #(Gacha) A nice black leather right shoe that fits you. When rolled, it lands on your head: lose your previous roll to reroll the ticket that gave you the shoe. You get to keep the shoe.
 1089. Scent Hound Whistle, 3.5, Generic
 #(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.
+1103. Second Breakfast Box, 8.0, Generic
+#A lunchbox that produces any mundane meal or tool under 5 kg on demand, endlessly; items taken more than a mile away fade after 24 hours.
+1104. Wardrobe of Elsewhere, 8.2, Generic
+#Walk through it to exit from any door you have previously touched, anywhere; a round trip collapses the wardrobe for a week.
+1105. Penny of the Ferryman, 8.4, Generic
+#Pay it to cross any one boundary: locked doors, wards below Divine rank, even death itself (survive one killing blow, the penny spent). Single use; a replacement condenses every year.
+1106. The Unfinished Map, 8.6, Generic
+#A map that fills in wherever you haven't been, including secret doors, traps, and treasures within a mile; it never shows people. Its inks run dry for 30 days after mapping a Divine-tier secret.
+1107. Gavel of Adjournment, 8.8, Generic
+#Strike it to adjourn any conflict within earshot: all combatants must stop fighting for 10 minutes (Divine and below cannot resist; stronger can). Once per day.
+1108. Cradle of Embers, 9.0, Generic
+#(Tag:fire)A brazier holding the last fire of a dead universe; it never goes out, kindles any flame into sun-hot forge fire, and once per year can reignite a dead star — or a dead heart, if it consents.
+1109. Seed of Yggdrasil, 9.2, Generic
+#(Tag:nature)Plant it in any soil and it grows a world-tree anchor within days: a personal pocket realm that grows with age, perfect health within its roots, and one resurrection at its base per year. Fell the tree and all of it is undone.
+1110. The Honest Die, 9.4, Generic
+#A d20 that lands on exactly what the roller most needs (never what they want) in any game of chance they play for real stakes — dice, cards, coins, wagers, trials by lot. Staged or stakeless flips do nothing, and it reaches no further than the game: no meta-luck, no gacha pulls. Each roll also speaks one truth the roller most needs to hear, aloud, where everyone present can hear it.
+1111. The Triforce, 9.3, The Legend of Zelda
+#Three relics granting absolute expression of their bearer's dominant virtue: Power, Courage, Wisdom. United, one wish within the world's bounds. It arrives split across the world — you hold only what you can keep.
+1112. Command Block, 9.6, Minecraft
+#Executes one written sentence on the world per redstone pulse, parsed with total literality. Needs power; needs precision; typos are cataclysms.
+1113. Zenith Blade, 8.9, Terraria
+#The culmination of swords: every swing launches a cascade of flying sword-images striking everything in a wide arc. Lesser blades shatter in its presence.
+1114. Hogyoku, 8.7, Bleach
+#Manifests the desires of those around it at godlike speed: wounds close, limits break, evolutions trigger. It serves the strongest will present — not necessarily yours.
+1115. Mother Flame, 8.5, One Piece
+#(Tag:fire)A miniature sun in a flask: endless clean power for any machine or city, or one dawn-bright detonation if shattered.
+1116. Type-40 TARDIS, 9.0, Doctor Who
+#Bigger inside, traveling all of time and space; telepathic, temperamental, constantly breaking down. It refuses paradoxes at fixed points and likes you more than it admits.
+1117. Eye of the Universe, 9.7, Outer Wilds
+#You know where it is and how to reach it. Enter, and seed the next universe with laws of your choosing. Single use; everything ends first.
+1118. The Moment, 9.5, Doctor Who
+#The Time Lord weapon with a conscience: it can unmake anything short of a fixed point, but it judges the wielder first and shows them the cost in full. Fail its judgment and it drops you home, disarmed.
+1119. Genesis Device, 9.0, Star Trek
+#Terraform a dead world to lush life in hours — or unmake a living one just as fast. Protomatter instability means inhabited targets may come out wrong; Starfleet will have questions either way.
+1120. DeLorean Time Machine, 8.9, Back to the Future
+#(Tag:time)Eighty-eight mph time travel for you and your passengers; riders keep their memories across edits, but history pushes back — change too much and you start fading from the photograph. You provide the plutonium (or fusion upgrade), the maintenance, and roads.
+1121. Elder Scroll, 9.1, Elder Scrolls
+#Read a prophecy of anything, past or future. The Scroll bills in sight: temporary blindness for small questions, permanent for large ones. Knowledge first; eyesight negotiable.
+1122. Gravitational Beam Emitter, 9.1, Blame
+#A sidearm firing gravitational-collapse beams that pierce planets end to end. Recoil and charge time scale with output, and silence is mandatory: everything hears a GBE shot.
+1123. Berserker Body, 8.6, Alita: Battle Angel
+#An ancient URM nanotech combat body, offered as a full replacement: superhuman strength, speed, and durability, plasma discharge, and self-repair that knits wounds mid-fight. Attunement is agonizing and demands a compatible nervous system; overuse runs the furnace into berserk overload.
+1124. Damascus Blade, 8.2, Alita: Battle Angel
+#A bracelet unfolding into a blade that cuts armor, cyborgs, and monsters like paper and never dulls. It has no guard and no mercy: in unskilled hands it endangers the wielder as much as the foe (Panzer Kunst training recommended).

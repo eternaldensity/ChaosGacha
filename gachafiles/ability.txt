@@ -2982,3 +2982,33 @@
 #Open a black hole that drags all nearby foes to its center and holds them there. Devastating combined with literally anything else.
 1495. Supersonic, 5.2, Rocket League
 #Push past supersonic speed on foot or wheels; anything you touch at full speed explodes away from you. Steering is aspirational.
+1496. Veto of the Small Gods, 8.3, Generic
+#Once per day, refuse one effect, event, or attack targeting you of Divine rank or below; it simply does not happen to you. You cannot veto the same source twice in a row.
+1497. Stillpoint, 8.1, Generic
+#(Tag:ice)(Tag:time)Freeze everything within 100 meters for up to one minute while you move freely; frozen things are invulnerable and you cannot move them, only yourself and what you carry. Cooldown 24 hours.
+1498. Tithemaster's Ledger, 8.5, Generic
+#Name a price in anything you own (memories, years, strength); reality pays out an effect of equal value at a pitiless cosmic exchange rate. Overpay, and the change is lost.
+1499. Yesterday's City, 8.7, Generic
+#(Tag:time)Restore all unliving matter in a city block to its exact state 24 hours ago; creatures keep their minds, but wounds and objects reset. Costs nearly all your energy; 7-day cooldown.
+1500. Garden of Forking Paths, 9.1, Generic
+#(Tag:psychic)Live out the next 10 minutes in up to three parallel previews, then choose which one becomes real; the others fade, but you keep all three memories. Once per week.
+1501. Unwritten, 9.3, Generic
+#Erase yourself from one written record, memory, or contract across a whole world: every copy, every mind. It undoes nothing that happened, only all record and recall of it. One record-set per 30 days.
+1502. Erasure, 8.7, MHA
+#While you look unblinkingly at a target, their powers stop working: quirks, and by extension most supernatural abilities below Divine rank, simply switch off. Blink and it lapses; dry eye is the occupational hazard.
+1503. Domain Expansion: Unlimited Void, 9.1, Jujutsu Kaisen
+#Raise a barrier some 200 meters across around yourself for up to a few minutes at ruinous energy cost. Everyone inside but you is flooded with infinite information: they perceive everything and can do nothing — no movement, no powers, no resistance — while your strikes inside cannot miss. Mindless, formless, or incorporeal beings have nothing to flood and walk through it unaffected.
+1504. Instrumentality, 9.4, Evangelion
+#Dissolve the boundaries between all souls in range into one gestalt consciousness, held or released at your decision. Anyone with sufficient sense of self can reject it.
+1505. SAVE Point, 9.0, Undertale
+#(Tag:time)Anchor a SAVE; die and you reload there with full memory while the world resets around you. Each load frays something: someone always half-remembers.
+1506. Gold Experience Requiem, 9.2, JoJo
+#Your stand autonomously reverts any hostile action against you to zero — it never happened. Nothing outspeeds it, but it cannot strike first; only answer.
+1507. Force Storm, 9.0, Star Wars
+#Tear open hyperspace wormholes that devour fleets and fortresses. Each storm drinks your strength and answers your rage more than your aim; lose your temper and it picks its own targets.
+1508. Spice Prescience, 8.7, Dune
+#(Tag:psychic)See branching futures across months and parse the safe path through politics, war, and weather. The trap: the more you see, the more the vision locks you in — defying a seen future costs everything you built toward it.
+1509. Culture Displace, 8.8, Culture
+#(Tag:teleport)Teleport anything you can precisely locate to anywhere else in the same star system, instantly, via hyperspace. Living cargo arrives nauseated; imprecise coordinates arrive scattered.
+1510. Tinker - AWESOME, 8.2, Satisfactory
+#(Tech) Allows you to build the AWESOME Shop and AWESOME Sink wherever you settle, given materials and a 30-megawatt power feed for the Sink. The Sink recycles anything you feed it into FICSIT coupons — raw ores worth least, complex tech most, each further coupon costing progressively more feedstock. The Shop spends coupons on Satisfactory gacha entries (10 coupons per rarity level), building-part blueprints and customizations, and small shipments of consumables, equipment, and parts; pioneering awards and statues arrive with tickets attached. For more info: https://satisfactory.wiki.gg/wiki/AWESOME_Shop

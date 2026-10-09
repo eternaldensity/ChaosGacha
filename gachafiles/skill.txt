@@ -702,3 +702,41 @@
 #Conduct any negotiation from unassailable calm without raising your voice: read rooms, make offers that refuse themselves, and keep underlings loyal through fear dressed as respect.
 352. Madcap Gadgeteering, 5.3, League of Legends / Arcane
 #Build devastating weapons from scrap that work despite violating several design principles and most safety regulations. Brilliant, usually; explosive, occasionally, including the successes.
+353. Perfect Recall, 8.0, Generic
+#(Tag:psychic)Remember everything you have ever sensed with total fidelity and index it instantly; you may lend a memory to a willing mind by touch. You cannot delete one.
+354. Multiversal Etiquette, 8.1, Generic
+#Never commit a faux pas on any world: you intuitively know every custom, taboo, rank, and proper address on first encounter, and first impressions start one step warmer. Sincerity is still on you.
+355. Grandmaster Diplomacy, 8.2, Generic
+#Negotiate ceasefires, treaties, and trade deals between parties with every reason to kill each other; terms you broker hold for a year and a day short of flagrant betrayal. You cannot broker for yourself.
+356. Doomsday Prepping, 8.4, Generic
+#Given a week of warning, you have the skill to determine exactly what a stronghold needs to outlast any single named disaster (siege, winter, plague, flood) for a year — what to stock, how to obtain it, and how to store it — and the knack to get it done in the time available. It provides no means, funding, or storage space: all of that is on you. What you do stockpile never spoils, and your people never quite despair. You cannot prep for two dooms at once.
+357. Field Surgery of the Soul, 8.6, Generic
+#(Tag:healing)Operate on minds and souls with mundane tools: excise curses, trauma, and possessions below Divine rank in a single bloody session. The patient must consent, and will remember the operation fondly — which is the worst part.
+358. Apocalyptic Engineering, 8.8, Generic
+#Design and build world-scale works (walls that hold back seas, guns that shoot down moons) from mundane materials, given time, labor, and absurd but finite budgets. Maintenance is someone else's problem.
+359. Ultra Instinct, 9.1, Dragon Ball
+#The body reacts without thought: perfect defense and counterflow while calm and empty. Thinking, doubt, rage, or fatigue break it instantly; it cannot be taught, only glimpsed.
+360. Nen Contracting, 8.9, Hunter x Hunter
+#Set self-imposed vows (never use the left hand, never fight on Tuesdays) for multiplicative power scaling with the vow's cost. Break one, and the power — and proportionately you — unmake themselves.
+361. Ryou: Internal Destruction, 8.4, One Piece
+#Flow armament through a target to destroy it from within, ignoring external armor; at master grade, project it as emission barriers. Precision work; blunt users just punch harder.
+362. Kido Mastery, 8.4, Bleach
+#Numbered spells 1-99 in destruction and binding at full incantation power, spoken whole or shortened (and weaker). Above number 90, the spell risks the caster. Spell List: https://bleach.fandom.com/wiki/Kid%C5%8D
+363. Jedi Battle Meditation, 8.5, Star Wars
+#Turn the tide of whole battles: your side fights as one mind through the Force while the enemy fights as a crowd. You must meditate throughout; bring bodyguards.
+364. Spin Mastery, 8.6, JoJo
+#Hurl the perfect golden rotation: projectiles that never stop, barriers that turn attacks aside, and at full mastery, passage between dimensions. Perfect rotation demands perfect posture — and excellent horseback skills.
+365. ICEbreaker Dive, 8.5, Cyberpunk 2077
+#Dive hostile networks past military black ICE: read, rewrite, and rob systems from the inside while your body sits drooling somewhere safe. Trace programs that catch you fry synapses — wear protection.
+366. Psi Operative Training, 8.6, XCOM
+#(Tag:psychic)Full psionic warfare kit: mind control, stasis, void rifts, and battlefield inspiration. Graduate-grade control; sectoid interference gives you migraines.
+367. Spectre Authority, 8.4, Mass Effect
+#Carte-blanche authority recognized across allied states and stations: legal immunity, military requisition, and sealed orders that open closed doors. It holds only while your sponsors back you — and they will disavow you the moment it costs them.
+368. Weirding Way, 8.5, Dune
+#Prana-bindu mastery of muscle, nerve, and chemistry: move faster than eyes track, slow your heart to stillness, neutralize poisons mid-bloodstream. Requires the conditioning; caffeine doesn't count.
+369. Vulcan Mind Meld, 8.3, Star Trek
+#Telepathic memory-and-self merge by touch: share knowledge, heal fractured minds, or carry a katra past death. Deep melds blur who is who; bring a chaperone for the long ones.
+370. Hertza Haeon, 8.4, Alita: Battle Angel
+#The electromagnetic palm strike: discharge a point-blank shockwave from your palm that stuns flesh, stops weak hearts, and scrambles machines and cyborgs. It needs a conductive body or focus to channel, and each full-power strike numbs your own arm for minutes.
+371. Panzer Kunst, 8.5, Alita: Battle Angel
+#The cyborg martial art, mastered: anti-cyborg techniques that destroy stronger opponents by turning their own armor and momentum against them, fully effective in zero gravity. Demands constant practice to maintain; rust shows within weeks of idleness.

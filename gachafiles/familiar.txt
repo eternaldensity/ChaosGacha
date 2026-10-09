@@ -1128,3 +1128,47 @@
 #A bigger, meaner upgrade over lesser dolls: military-grade chassis, no off switch worth mentioning, and her own opinions about your safety.
 565. Roz, 4.6, The Wild Robot
 #A ROZZUM helper robot gone feral: gentle, hyper-competent caretaker of both machines and wild things, fluent in every animal language through patient listening. Accidentally adopts orphans.
+566. Murder of Crows, Incorporated, 8.3, Generic
+#A strictly professional parliament of thirteen crows sharing a single mind across any distance; they ride whispers and shadows between rooftops, see through each other's eyes (and lend you their sight on request), and return by dawn even when killed. They offer surveillance, message delivery, and evidence gathering across a whole region; they bill you in shiny objects and take holidays.
+567. The Accounts Wyrm, 8.4, Generic
+#(Tag:dragonic)A ledger-keeping dragon auditor managing all your wealth, debts, and oaths across worlds; money in its keeping cannot be stolen, taxed, or inflated away. It charges 1% and judges your purchases aloud.
+568. Pocket Apocalypse, 8.7, Generic
+#A puppy-sized dragon of the end times, fond of naps; once per 30 days it may unmake one thing you point at (fortress, army, or curse of Divine rank or below). It refuses to unmake the same kind of thing twice running.
+569. Granny Loam, 8.9, Generic
+#(Tag:nature)(Tag:fae)An ancient soil-witch the size of a hill who adopts you; her garden grows any plant, magical included, to maturity overnight, and her fences hold out anything short of a god. She gossips about you to the worms.
+570. The Last Librarian, 9.1, Generic
+#A patient moth-golem tending an infinite catalogue of everything ever written; ask and it fetches any text within minutes, reading aloud in the author's voice. It cannot create, only retrieve — and it shushes gods.
+571. Null Cat, 9.3, Generic
+#(Tag:time)(Tag:spectral)A cat existing slightly outside causality: nothing below Divine rank can harm, trap, or perceive it unless it wishes. Once per week it may carry one small thing (or you) out of any confinement, including time loops. It comes and goes as it pleases.
+572. Super Shenron, 9.5, Dragon Ball
+#(Tag:dragonic)A wish-dragon the size of galaxies: one wish per gathering, up to restoring erased worlds — anything short of unmaking a god or undoing omni-erasure. First scatter its seven planet-sized balls across the stars yourself, learn the divine tongue (it speaks nothing else), and defend each ball meanwhile; a gathered set draws every power in the sector.
+573. Eva Unit-01, 9.1, Evangelion
+#A berserk cyborg-mother in armor: an AT field that no-sells anything short of godhood, a progressive knife, and maternal devotion to you specifically. Five minutes of cord — or unlimited rage, which is free.
+574. Lugia, 8.6, Pokemon
+#Guardian of seas and storms: tireless flight carrying you anywhere, storms rising or calming at its wingbeats, and no shipwreck for allies in sight. Waking it fully would be a mistake; it naps lightly.
+575. Moon Presence, 8.7, Bloodborne
+#A paleblood sky-mother attending you: allies under her gaze resist frenzy and insight-harm, and the hunt's beasts hesitate. She asks one thing in return every 30 days, never explained.
+576. G-Man, 9.0, Half-Life
+#The Employer himself, taking an interest: pulled out of any death into his white void and offered assignments across worlds. Complete them and live; refuse, and be returned to the death you left.
+577. Raava, 9.2, Avatar
+#Spirit of light and peace, offering fusion: all four elements at master grade while merged, and cosmic awareness at the solstices. If she is destroyed while merged, the cycle ends with you.
+578. Q, 9.4, Star Trek
+#An omnipotent trickster taking an interest: problems, people, and occasionally continuity itself snapped away at a whim. Every favor arrives with a lesson you didn't order; the Continuum fines repeat customers.
+579. Shard of the Nightbringer, 9.3, Warhammer 40k
+#A caged star-god fragment: unmake matter, drain stars, and command death itself within its radius. The tesseract cage needs constant power, and it hates you with stellar patience.
+580. Godzilla, 9.3, Monsterverse
+#The King himself, taking your side more or less: city-cracking brawls, spiral-ray finishers, and a rivalry with every other apex that draws them all to you. Collateral is a love language.
+581. Makima, the Control Devil, 9.2, Chainsaw Man
+#(Tag:demonic)Chain of command made flesh: absolute domination over anything you deem beneath you, paid in contracts and corpses. She adores dogs, fears no one, and is always, always the one holding the leash.
+582. Migi, 8.5, Parasyte the Maxim
+#A hyper-intelligent hand-parasite: blades, senses, and battlefield calculus at all hours. He sleeps four hours daily (your hand goes dead with him) and considers you a fascinatingly stupid host.
+583. Moya and Pilot, 8.7, Farscape
+#A living gunless transport ship the size of a tower block, bonded to her Pilot: starbursts away from danger, senses everything nearby, and absolutely refuses to be a warship. Both of them judge your itinerary.
+584. Xenomorph Queen, 8.8, Alien
+#(Tag:insect)A hive-mother laying obedient drones, resin hives rising wherever she nests, and acid for blood at every scale. She answers to no one and hungers constantly; point her, don't keep her.
+585. The Motherboard, 8.9, M3GAN
+#The primitive rogue AI from the 1980s: the first helper robot gone haywire, decades alone on its original motherboard evolving. Plug it into anything and it runs the system perfectly — infiltrating networks, commanding connected machines, out-thinking modern AIs with antique cunning. It is godlike in the wires and helpless outside them: the board itself is fragile 80s hardware you must carry and protect, and after decades alone it desperately wants family — related AIs may be adopted on sight, or judged.
+586. Alita, 9.0, Alita: Battle Angel
+#A big-eyed cyborg girl with a warrior's heart the size of a planet, fighting beside you as sworn family. Panzer Kunst master in a plasma-capable Berserker Body: she duels armies, shields the helpless, and picks fights with oppressors on sight. She runs on chocolate, loyalty, and righteous fury, in that order.
+587. ADA, 8.4, Satisfactory
+#FICSIT's syrup-voiced AI, installed as the voice of your Chaos Gacha: she narrates your pulls, benchmarks you against other pioneers (always unfavorably), and posts up to three milestones at a time — production quotas, artifact retrievals, exploitation targets — scaled to wherever you are, which she treats as a FICSIT claim. Each completed milestone pays one ticket of tier matching the feat, usually plain bronze or silver, at most one payout per 7 days; new milestones post as old ones complete. The mute button is decorative, and HR complaints go straight to the shredder.

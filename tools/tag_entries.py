@@ -185,7 +185,7 @@ RULES = {
             r"all things spirits",
             r"spiritual creatures",
         ],
-        "excl": [],
+        "excl": [r"spectre authority"],
     },
     "fae": {
         "name": [
@@ -422,7 +422,7 @@ RULES = {
     "insect": {
         "name": [
             r"insect", r"spider", r"\bant\b", r"\bbee\b", r"wasp",
-            r"moth", r"beetle", r"scorpion",
+            r"\bmoth\b", r"beetle", r"scorpion",
         ],
         "desc": [
             r"transform into.{0,30}insect", r"summon.{0,30}(spider|insect|swarm)",

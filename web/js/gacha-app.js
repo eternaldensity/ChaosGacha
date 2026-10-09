@@ -11,7 +11,7 @@
   // Anything else stays inert text, so arbitrary sites never auto-link.
   const LINK_SUFFIXES = [".fandom.com", ".fextralife.com"];
   const LINK_HOSTS = ["dnd5e.wikidot.com", "heroes.thelazy.net",
-    "fallenaces.wiki.gg"];
+    "fallenaces.wiki.gg", "satisfactory.wiki.gg"];
   // Escape HTML, then linkify whitelisted http(s) URLs. Unbalanced
   // trailing ")" (MediaWiki titles contain balanced ones) and trailing
   // punctuation are left as plain text so links resolve.
