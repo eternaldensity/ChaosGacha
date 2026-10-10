@@ -330,10 +330,62 @@
         } catch (e) { err(e); }
       });
       const up = document.createElement("button");
-      up.textContent = "⬆ Upgrade"; up.title = "Copy with progress: keep unlocked + visible entries, regenerate the unseen from current data (full trees also grow)";
+      up.textContent = "⬆ Upgrade";
+      up.title = "Copy with progress: keep unlocked + visible entries, regenerate the unseen from current data (full trees also grow)";
       up.addEventListener("click", async () => {
         try {
-          await upgradeTree(t);
+          const { absent, precheck } = absentSources(t);
+          if (!absent.length) { await upgradeTree(t, []); return; }
+          const open = li.querySelector(".upPicker");
+          if (open) { open.remove(); return; }
+          document.querySelectorAll(".upPicker").forEach(el => el.remove());
+          const counts = {};
+          for (const e of (DATA.entries || [])) {
+            if (e.t === "tree" || !e.s) continue;
+            counts[e.s] = (counts[e.s] || 0) + 1;
+          }
+          const box = document.createElement("div");
+          box.className = "upPicker";
+          box.style.cssText = "width:100%;margin-top:6px;border-top:1px solid var(--line);padding-top:6px";
+          const head = document.createElement("div");
+          head.className = "muted small";
+          head.textContent = absent.length +
+            " sources aren't in this tree's filter — check the ones to include in the upgrade" +
+            (precheck.size ? " (new ones pre-checked with · new; old exclusions stay out unless checked)."
+              : " (nothing pre-checked: this tree can't tell new sources from old exclusions).");
+          const list = document.createElement("div");
+          list.style.cssText = "display:flex;flex-wrap:wrap;gap:6px;max-height:160px;overflow:auto;margin:6px 0";
+          const boxes = [];
+          for (const s of absent) {
+            const lab = document.createElement("label");
+            lab.style.cssText = "display:flex;gap:6px;align-items:center;min-height:36px;flex:1;min-width:44%";
+            const cb = document.createElement("input");
+            cb.type = "checkbox"; cb.value = s;
+            cb.checked = precheck.has(s);
+            cb.style.cssText = "width:20px;height:20px";
+            const nm = document.createElement("span");
+            nm.className = "small";
+            nm.textContent = `${s}${counts[s] ? ` [${counts[s]}]` : ""}${precheck.has(s) ? " · new" : ""}`;
+            lab.append(cb, nm);
+            list.appendChild(lab);
+            boxes.push(cb);
+          }
+          const row = document.createElement("div");
+          row.className = "row";
+          const go = document.createElement("button");
+          go.textContent = "⬆ Upgrade selected";
+          go.className = "primary";
+          go.addEventListener("click", async () => {
+            try {
+              await upgradeTree(t, boxes.filter(b => b.checked).map(b => b.value));
+            } catch (e) { err(e); }
+          });
+          const no = document.createElement("button");
+          no.textContent = "Cancel";
+          no.addEventListener("click", () => box.remove());
+          row.append(go, no);
+          box.append(head, list, row);
+          li.appendChild(box);
         } catch (e) { err(e); }
       });
       actions.append(open, ren, copy, fresh, up, del);
@@ -417,33 +469,30 @@
   // nodes. Positions and links bake in as displayed, so recorded
   // swaps/links/entry-swaps are dropped from the copied state. The result
   // is stored as a static (custom) tree stamped with the current data version.
-  async function upgradeTree(t) {
+  // Sources absent from a tree's filter, with the ones pre-checked that
+  // should be added on upgrade. New sources default to included (matching
+  // the New-Tree checkboxes); knownSources distinguishes them from
+  // deliberately excluded ones, which stay unchecked. Trees predating
+  // knownSources can't distinguish, so nothing is pre-checked.
+  function absentSources(t) {
+    const currentSources = allSources();
+    const stored = new Set(((t.filters || {}).sources || []));
+    if (!stored.size) return { absent: [], precheck: new Set() };
+    const known = new Set(t.knownSources || []);
+    const absent = currentSources.filter(s => !stored.has(s));
+    const precheck = new Set(
+      t.knownSources ? absent.filter(s => !known.has(s)) : []);
+    return { absent, precheck };
+  }
+  async function upgradeTree(t, extraSources) {
     const rt = await getRuntime(t);
     const st = DB.states[t.id] || E.newState();
-    // Source filters are an inclusion snapshot: anything absent is out,
-    // whether deliberately excluded or brand-new. New sources default to
-    // included (matching the New-Tree checkboxes), so ask about exactly
-    // those — knownSources distinguishes them from deliberate exclusions.
-    // Trees predating knownSources can't distinguish; ask about all absent.
     const currentSources = allSources();
     const stored = new Set(((t.filters || {}).sources || []));
     const hasFilter = stored.size > 0;
-    const known = new Set(t.knownSources || []);
-    // With knownSources, only truly new sources are asked about; without
-    // it, every absent source is listed (one-time ambiguity).
-    const freshSources = hasFilter
-      ? currentSources.filter(s => !stored.has(s) && (!t.knownSources || !known.has(s)))
-      : [];
     let filters = Object.assign({}, t.filters || {});
-    if (freshSources.length) {
-      const shown = freshSources.slice(0, 12).join(", ") +
-        (freshSources.length > 12 ? ` (+${freshSources.length - 12} more)` : "");
-      const include = confirm(
-        `${freshSources.length} source${freshSources.length === 1 ? " is" : "s are"} ` +
-        `not in this tree's filter: ${shown}.\n\nOK = include them in the upgrade.\n` +
-        `Cancel = keep the old filter.`);
-      if (include) filters.sources = [...stored, ...freshSources];
-    }
+    const extra = (extraSources || []).filter(s => !stored.has(s));
+    if (hasFilter && extra.length) filters.sources = [...stored, ...extra];
     const m = E.viewState(rt, st);
     const keep = new Set(st.unlocked || []);
     for (const id of E.visible(rt, st.unlocked, m)) keep.add(id);
