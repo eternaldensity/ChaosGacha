@@ -180,6 +180,21 @@
       const hit = key && loadGenerated(tree.id);
       let res = (hit && hit.key === key) ? hit.res : null;
       if (res) res = JSON.parse(JSON.stringify(res));
+      if (!res && hit && hit.res && hit.res.nodes && hit.res.nodes.length) {
+        // Same seed/config but new data: regenerating would silently
+        // reassign entries (and links) under saved progress, because node
+        // ids are positional into the sampled pool. Freeze the last good
+        // generation instead; Upgrade is the path to current data. Only
+        // when the mismatch is the data version alone — a config change
+        // still regenerates from scratch as before.
+        try {
+          const hk = JSON.parse(hit.key), nk = JSON.parse(key);
+          if (hk && nk && JSON.stringify(hk.slice(0, 4)) === JSON.stringify(nk.slice(0, 4))) {
+            res = JSON.parse(JSON.stringify(hit.res));
+            saveGenerated(tree.id, key, res);
+          }
+        } catch (e) { /* fall through to regenerate */ }
+      }
       if (!res) {
         res = await G.generate(DATA.entries, tree.seed, tree.params || {}, {
           limit: tree.limit || null, ...(tree.filters || {})
