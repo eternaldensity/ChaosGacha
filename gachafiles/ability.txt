@@ -285,13 +285,13 @@
 143. Air Whips, 2.5, Generic
 #Create and control whips of compressed air to lash out or grab with. Longer, stronger whips expend more energy.
 144. Spark, 0.4, Generic
-#Create small sparks of electricity from your body, too weak to work as a taser.
+#(Tag:lightning)Create small sparks of electricity from your body, too weak to work as a taser.
 145. Taser, 1.4, Generic
-#Channel electricity through your body and discharge it, strong enough to seriously hurt someone.
+#(Tag:lightning)Channel electricity through your body and discharge it, strong enough to seriously hurt someone.
 146. Arc, 2.2, Generic
-#Channel electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
+#(Tag:lightning)Channel electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
 147. Electric Discharge, 3.3, Generic
-#Channel potent electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
+#(Tag:lightning)Channel potent electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
 148. Lightning Channel, 3.0, Generic
 #(Tag:lightning)Channel lightning through a held object to reinforce and empower it. The lightning imitates the object, becoming sharp with a sword and heavy with a hammer.
 149. Lightning Absorption, 3.4, Generic
@@ -309,7 +309,7 @@
 155. Radio Waves, 3.1, MHA
 #(Tech) Emit electromagnetic waves that disable and cripple all technology with an interface. With training, you can fine-tune them to activate or control electronics instead.
 156. Impulse, 2.0, Generic
-#Quicken your body's electrical signals to proportionally increase reflexes and speed. Overuse may cause nerve damage.
+#(Tag:lightning)Quicken your body's electrical signals to proportionally increase reflexes and speed. Overuse may cause nerve damage.
 157. Godspeed, 4.2, Hunter x Hunter
 #Overhaul your nervous system with your own lightning for near-instant reflexes and extreme speed. It damages your body over time, so extended use is not recommended.
 158. Electrokinesis, 4.8, Generic
@@ -321,7 +321,7 @@
 161. Electromaster, 7.7, Toaru
 #(Tag:lightning)Hold complete control over Electromagnetism, a fundamental force of the universe, with unmatched range, power and precision.
 162. Stun Shock, 2.4, Generic
-#Disrupt someone's bioelectricity by touch to stun or paralyze them; with training you can manipulate their bodies further. Stronger opponents are harder to affect.
+#(Tag:lightning)Disrupt someone's bioelectricity by touch to stun or paralyze them; with training you can manipulate their bodies further. Stronger opponents are harder to affect.
 163. Lightning Breath, 3.0, Generic
 #(Tag:lightning)Charge and unleash a breath of devastating lightning waves. Longer charging and more energy mean a stronger breath.
 164. Railgun, 3.9, Generic
@@ -337,13 +337,13 @@
 169. Thunder Cloak, 3.8, Generic
 #(Tag:lightning)Cloak your body in thunder to increase speed, power and reflexes while imbuing electricity into your attacks.
 170. Chidori, 3.0, Naruto
-#Cloak your hands in violent sharp electricity that boosts piercing and cutting, turning them into lightning blades.
+#(Tag:lightning)Cloak your hands in violent sharp electricity that boosts piercing and cutting, turning them into lightning blades.
 171. Lightning Bolt, 3.1, Generic
 #(Tag:lightning)Release a bolt of lightning from your hands at a target that travels at the speed of lightning.
 172. Electromagnetic Sight, 2.2, Generic
 #(Tag:lightning)Shift your vision to see electromagnetism and electricity even through walls, instinctively distinguishing and understanding them.
 173. Electricity, 4.0, Unordinary
-#Create and control electricity (not kinesis) and use it to slightly enhance your stats. You can sense and see nearby currents even through walls, and ground opponents' lightning with your body.
+#(Tag:lightning)Create and control electricity (not kinesis) and use it to slightly enhance your stats. You can sense and see nearby currents even through walls, and ground opponents' lightning with your body.
 174. Attention, 1.5, Generic
 #Manifest a very eye-catching, distracting aura centered on yourself, making you incredibly noticeable in whatever you do.
 175. Lightning Claws, 2.6, Generic
