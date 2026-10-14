@@ -234,7 +234,7 @@
   });
 
   function resultText(r) {
-    return `🎡 ${r.label} (${r.tier}, d20 ${r.roll}, severity ${r.sev})` +
+    return `${r.label}\n(${r.tier}, d20 ${r.roll}, severity ${r.sev})` +
       (r.desc ? `\n${r.desc}` : "") +
       (r.resolve ? `\nResolve: ${r.resolve}` : "") +
       (r.reward && r.reward.length ? `\nReward: ${r.reward.map(t => `${t.tier} ${t.cat}`).join(" + ")}` : "");

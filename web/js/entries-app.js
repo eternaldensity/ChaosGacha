@@ -40,6 +40,41 @@
   }
   const CATS = ["ability", "item", "skill", "trait", "familiar"];
   const PAGE = 200;
+  // Whole-number rarities display with .0, matching the gacha/tree copy text.
+  const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
+
+  function toast(msg, isErr) {
+    const t = $("toast");
+    t.textContent = msg;
+    t.className = "toast" + (isErr ? " err" : "");
+    t.style.display = "block";
+    clearTimeout(t._h);
+    t._h = setTimeout(() => { t.style.display = "none"; }, 3200);
+  }
+  async function copyText(t, what) {
+    try {
+      if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(t);
+      } else {
+        const ta = document.createElement("textarea");
+        ta.value = t;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      toast(what ? `Copied ${what}!` : "Copied!");
+    } catch (e) { toast("Copy failed.", true); }
+  }
+  // Shared entry copy format used across the site: name on its own line,
+  // then the metadata in parentheses, then the full description.
+  function entryText(e) {
+    const cls = classOf(e.r);
+    const tags = entryTags(e);
+    return `${e.name}\n(${fmtR(e.r)}, ${cls.name}, ${e.f}` +
+      `${e.s ? ", " + e.s : ""}${tags.length ? ", #" + tags.join(" #") : ""})` +
+      (e.d ? `\n${e.d}` : "");
+  }
 
   function entryTags(e) { return (e && (e.tags || e.tg)) || []; }
   function allTags() {
@@ -159,6 +194,15 @@
         `<td style="padding:8px">${e.r}</td>` +
         `<td style="padding:8px">${esc(e.s || "—")}</td>` +
         `<td style="padding:8px">${tags.map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ")}</td>`;
+      const cp = document.createElement("button");
+      cp.textContent = "📋";
+      cp.title = `Copy ${e.name}`;
+      cp.style.cssText = "margin-left:6px";
+      cp.addEventListener("click", ev => {
+        ev.stopPropagation();
+        copyText(entryText(e), e.name);
+      });
+      tr.children[1].appendChild(cp);
       tr.addEventListener("click", () => {
         const next = tr.nextSibling;
         if (next && next.classList && next.classList.contains("desc")) {

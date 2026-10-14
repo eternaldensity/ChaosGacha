@@ -108,7 +108,7 @@
   function resultText(r) {
     const cls = G.rarityClass(DATA.classes, r.rarity);
     const tags = entryTags(r);
-    return `🎰 ${r.name} (${fmtR(r.rarity)}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""}${tags.length ? ", #" + tags.join(" #") : ""})` +
+    return `${r.name}\n(${fmtR(r.rarity)}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""}${tags.length ? ", #" + tags.join(" #") : ""})` +
       (r.d20 != null ? ` 🎲${r.d20} ${G.gamblerLabel({ effect: r.geffect })}` : "") +
       (r.description ? `\n${r.description}` : "");
   }
