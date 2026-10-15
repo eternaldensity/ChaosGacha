@@ -1,7 +1,7 @@
 "use strict";
 /* Docs helper: CYOA "start here" buttons seed the gacha ticket wallet
  * (localStorage key shared with gacha.html). A Triple-Advantage ticket is
- * one ticket that rolls three wheels and keeps the best (adv: 3). */
+ * one ticket that rolls three wheels — you keep whichever you pick. */
 (function () {
   var GLS = "chaosGacha.v1";
   function T(tier, cat, n) {

@@ -51,8 +51,8 @@
     return "Ultimate";
   }
   // Reward tickets per the reference table. Medium is one Advantage ticket
-  // (roll two wheels, keep the better); Major/Ultimate let the roller pick
-  // the category.
+  // (roll two wheels, keep whichever you prefer); Major/Ultimate let the
+  // roller pick the category.
   function rewardFor(tier, cat) {
     cat = cat || "random";
     if (tier === "Minor") return [{ tier: "gold", cat: "random" }];

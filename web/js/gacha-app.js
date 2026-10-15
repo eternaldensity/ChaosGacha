@@ -304,7 +304,7 @@
       (tags.length ? `<div style="margin:4px 0">${tagPills(tags)}</div>` : "") +
       `<div class="small muted">${r.odds.toFixed(2)}% odds</div>` +
       (r.d20 != null ? `<div class="small muted">🎲 Gambler d20 → ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</div>` : "") +
-      (r.advantage > 1 ? `<div class="small muted">⚡ Advantage ×${r.advantage} — kept the best of the batch</div>` : "") +
+      (r.advantage > 1 ? `<div class="small muted">⚡ Advantage ×${r.advantage} — your pick from ${r.advantage} wheels</div>` : "") +
       (r.description ? `<p>${linkify(r.description)}</p>` : "");
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
@@ -328,15 +328,10 @@
     return t ? { min: t.min, avg: t.avg, max: t.max } : null;
   }
 
-  // Advantage keeps the best of a batch: a ticket's Advantage prefix rolls
-  // that many wheels at once; the Gambler trait's "Advantage" d20 result
-  // adds one more. Everything else (odds, filters, category) is unchanged.
-  function bestOf(rolls) {
-    let best = rolls[0];
-    for (const r of rolls) if (r.rarity > best.rarity) best = r;
-    return best;
-  }
-
+  // Advantage rolls a batch at once and the roller picks which result to
+  // keep (rarity is no judge): a ticket's Advantage prefix rolls that many
+  // wheels; the Gambler trait's "Advantage" d20 result adds one more.
+  // Everything else (odds, filters, category) is unchanged.
   function doRoll(min, max, avg, cat, ticketId, tierName, ticketTag, advantage) {
     if (spinning) return;
     $("filterBox").open = false;
@@ -378,18 +373,30 @@
       results = [];
       for (let i = 0; i < rolls; i++) results.push(rollOnce());
     } catch (e) { toast(e.message, true); return; }
-    const r = bestOf(results);
-    if (rolls > 1) r.advantage = rolls;
-    if (g) { r.d20 = g.d20; r.geffect = g.effect; }
+    // The ticket is spent as soon as the wheels land, but nothing is
+    // recorded until the roller has chosen what to keep (advantage) — the
+    // kept result is whatever they pick, not simply the highest rarity.
     if (ticketId) DB.tickets = DB.tickets.filter(t => t.id !== ticketId);
-    DB.history.unshift(Object.assign({ id: uid(), at: Date.now(), min, max, avg }, r));
-    if (DB.history.length > 500) DB.history.length = 500;
     save(); renderTickets();
-    const list = () => { if (rolls > 1) renderResultList(results, r, `⚡ Advantage ×${rolls} — kept the best`); };
+    const keep = (chosen) => {
+      if (rolls > 1) chosen.advantage = rolls;
+      if (g) { chosen.d20 = g.d20; chosen.geffect = g.effect; }
+      DB.history.unshift(Object.assign({ id: uid(), at: Date.now(), min, max, avg }, chosen));
+      if (DB.history.length > 500) DB.history.length = 500;
+      save(); renderStats();
+      showResult(chosen, rolls > 1);
+      if (rolls > 1) renderResultList(results, chosen, `⚡ Advantage ×${rolls} — kept your pick`, "★ kept");
+    };
+    // How the batch is presented once the wheels settle.
+    const present = () => {
+      if (rolls <= 1) { keep(results[0]); return; }
+      showChoicePrompt(rolls);
+      renderChoiceList(results, keep);
+    };
     const speed = (DB.settings && DB.settings.spin) || "normal";
     const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (speed === "off" || reduced || !window.requestAnimationFrame) { showResult(r); list(); return; }
-    spinReels(results, min, max, avg, F, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal, cat);
+    if (speed === "off" || reduced || !window.requestAnimationFrame) { present(); return; }
+    spinReels(results, min, max, avg, F, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal, cat, present);
   }
 
   const SPIN_SPEEDS = {
@@ -401,32 +408,74 @@
   const TRAIL_ROWS = 8; // decoys past the winner so the list end never shows
   let spinning = false;
 
-  // Shared list of a batch's results (×10 multi-pull and advantage rolls),
-  // with the kept/best result starred and a 👁 button to view any of them.
-  function renderResultList(results, best, headText) {
+  // One row in the batch list: colour dot, name, category/rarity pill,
+  // tags, an optional trailing marker, source, and a 👁 button to read the
+  // full description.
+  function resultListItem(r, extra) {
+    const cls = G.rarityClass(DATA.classes, r.rarity);
+    const li = document.createElement("li");
+    li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
+      `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${fmtR(r.rarity)}</span>` +
+      (entryTags(r).length ? " " + tagPills(entryTags(r)) : "") +
+      (extra || "") +
+      `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
+    const b = document.createElement("button");
+    b.textContent = "👁";
+    b.title = `Read ${r.name}`;
+    b.addEventListener("click", () => showResult(r, true));
+    li.appendChild(b);
+    return li;
+  }
+
+  // Summary of a batch (×10 multi-pull, or an advantage roll once kept),
+  // with the kept/best result starred.
+  function renderResultList(results, best, headText, bestLabel) {
     $("multiHead").textContent = headText;
     const ul = $("multiList");
     ul.innerHTML = "";
     results.slice().sort((a, b) => b.rarity - a.rarity).forEach(r => {
-      const cls = G.rarityClass(DATA.classes, r.rarity);
-      const li = document.createElement("li");
-      li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
-        `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${fmtR(r.rarity)}</span>` +
-        (entryTags(r).length ? " " + tagPills(entryTags(r)) : "") +
-        (r === best ? ` <span class="pill" style="border-color:var(--accent);color:var(--accent)">★ best</span>` : "") +
-        `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
-      const b = document.createElement("button");
-      b.textContent = "👁";
-      b.addEventListener("click", () => showResult(r, true));
-      li.appendChild(b);
-      ul.appendChild(li);
+      const star = r === best
+        ? ` <span class="pill" style="border-color:var(--accent);color:var(--accent)">${esc(bestLabel || "★ best")}</span>`
+        : "";
+      ul.appendChild(resultListItem(r, star));
     });
     $("multiCard").style.display = "block";
   }
 
+  // Advantage batch before the roller has chosen: every result gets a
+  // Keep button (plus 👁 to read it), because the best one is their call.
+  function renderChoiceList(results, onKeep) {
+    $("multiHead").textContent = `⚡ Advantage ×${results.length} — read them, then keep one`;
+    const ul = $("multiList");
+    ul.innerHTML = "";
+    for (const r of results) {
+      const li = resultListItem(r);
+      const keep = document.createElement("button");
+      keep.textContent = "✓ Keep";
+      keep.className = "primary";
+      keep.title = `Keep ${r.name} and discard the rest`;
+      keep.addEventListener("click", () => onKeep(r));
+      li.appendChild(keep);
+      ul.appendChild(li);
+    }
+    $("multiCard").style.display = "block";
+  }
+
+  function showChoicePrompt(n) {
+    lastResult = null;
+    $("resultCard").style.display = "block";
+    $("resultCard").style.boxShadow = "";
+    $("multiCard").style.display = "block";
+    $("resultBody").innerHTML =
+      `<div class="result-name">⚡ Advantage ×${n}</div>` +
+      `<div class="small muted">${n} wheels landed — read the results below and keep the one you want.</div>`;
+    $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
   // Spin one reel per result simultaneously (advantage rolls several at
-  // once); all lanes share the same easing so they settle together.
-  function spinReels(rolls, min, max, avg, filt, opt, reqCat) {
+  // once); all lanes share the same easing so they settle together. onDone
+  // runs once every lane has stopped, to present the results.
+  function spinReels(rolls, min, max, avg, filt, opt, reqCat, onDone) {
     const host = $("reelRow");
     host.innerHTML = "";
     const lanes = [];
@@ -473,12 +522,7 @@
       host.appendChild(reel);
       lanes.push({ r, reel, inner, winIdx, rows: Array.from(inner.children) });
     }
-    if (!lanes.length) {
-      const best = bestOf(rolls);
-      showResult(best);
-      if (rolls.length > 1) renderResultList(rolls, best, `⚡ Advantage ×${rolls.length} — kept the best`);
-      return;
-    }
+    if (!lanes.length) { if (onDone) onDone(); return; }
     $("reelCard").style.display = "block";
     $("resultCard").style.display = "none";
     $("rollBtn").disabled = true;
@@ -508,7 +552,6 @@
         }
       }
       if (t >= 1) {
-        const best = bestOf(lanes.map(l => l.r));
         for (const lane of lanes) {
           const w = lane.rows[lane.winIdx];
           if (w) w.classList.add("winner");
@@ -516,8 +559,7 @@
         }
         spinning = false;
         $("rollBtn").disabled = false;
-        showResult(best);
-        if (rolls.length > 1) renderResultList(rolls, best, `⚡ Advantage ×${rolls.length} — kept the best`);
+        if (onDone) onDone();
         return;
       }
       window.requestAnimationFrame(frame);
@@ -631,7 +673,7 @@
         (t.tag ? ` <span class="pill">🏷 ${esc(t.tag)}</span>` : "") + `</div>`;
       const b = document.createElement("button");
       b.textContent = adv > 1 ? `Roll ${adv}⚡` : "Roll 🎲"; b.className = "primary";
-      b.title = adv > 1 ? `Roll ${adv} wheels at once and keep the best` : "Roll this ticket";
+      b.title = adv > 1 ? `Roll ${adv} wheels at once and pick which to keep` : "Roll this ticket";
       b.addEventListener("click", () => {
         const p = tierOf(t.tier);
         doRoll(p.min, p.max, p.avg, t.cat, t.id, t.tier, t.tag || "", adv);
