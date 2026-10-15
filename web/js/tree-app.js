@@ -2424,6 +2424,7 @@
   let shareUpload = null;
   function openShare() {
     if (isShared()) return;
+    if (!activeTree()) return toast("Create or open a tree first, then share its view.", true);
     $("shareModal").classList.add("open");
     if ($("shareModal").scrollIntoView) $("shareModal").scrollIntoView({ block: "nearest" });
   }
@@ -2464,6 +2465,7 @@
   }
 
   if ($("btnShare")) $("btnShare").addEventListener("click", openShare);
+  if ($("btnShareSetup")) $("btnShareSetup").addEventListener("click", openShare);
   if ($("shareGo")) $("shareGo").addEventListener("click", runShare);
   if ($("shareClose")) $("shareClose").addEventListener("click", closeShare);
   if ($("shareModal")) $("shareModal").addEventListener("click", ev => {
