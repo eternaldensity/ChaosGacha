@@ -22,6 +22,12 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="stylesheet" href="css/app.css">
+<style>
+#shareModal { position: fixed; inset: 0; background: rgba(0,0,0,.65); display: none; z-index: 60; padding: 16px; overflow: auto; }
+#shareModal.open { display: block; }
+#shareModal .modal { max-width: 720px; margin: 4vh auto; }
+#shareModal textarea { width: 100%; height: 160px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+</style>
 </head>
 <body>
 <header class="app">
@@ -33,6 +39,10 @@
   <section class="tabpage" id="tab-trees">
     <div class="card" id="verWarn" style="display:none;border-color:var(--bad)">
       <b>⚠ Data version mismatch.</b> <span id="verWarnText" class="small"></span>
+    </div>
+    <div class="card" id="shareBanner" style="display:none;border-color:var(--accent)">
+      <b>🔗 Shared tree view (read-only).</b>
+      <div class="small muted" id="shareBannerText" style="margin-top:4px"></div>
     </div>
     <div class="card" id="guideCard" style="display:none;border-color:var(--accent)">
       <h2>How to play</h2>
@@ -51,7 +61,7 @@
       <div class="progress"><div id="progBar"></div></div>
       <div class="small muted" id="progBody" style="margin-top:6px"></div>
     </div>
-    <div class="card">
+    <div class="card" id="treesCard">
       <h2>Your trees</h2>
       <div class="muted small" id="treeCount"></div>
       <ul class="list" id="treeList"></ul>
@@ -60,7 +70,7 @@
       <label id="showNonconRow" style="display:flex;gap:8px;align-items:center;min-height:44px" title="Show nodes flagged for primarily non-consensual sexual use. Off by default; only offered while NSFW nodes are shown.">
         <input type="checkbox" id="showNoncon" style="width:22px;height:22px"> Show Noncon nodes</label>
     </div>
-    <div class="card">
+    <div class="card" id="newTreeCard">
       <h2>New tree</h2>
       <label for="newName" title="Display name for this tree.">Name</label>
       <input type="text" id="newName" placeholder="My first tree" maxlength="60">
@@ -159,7 +169,7 @@
       <div class="progress" id="genProg" style="display:none"><div></div></div>
       <div class="muted small" id="genMsg" style="margin-top:6px"></div>
     </div>
-    <div class="card">
+    <div class="card" id="ioCard">
       <h2>Import / export</h2>
       <div class="row">
         <button id="btnExport">⬇ Export active tree</button>
@@ -184,6 +194,7 @@
       <div class="row">
         <div class="muted small" id="viewInfo">No tree selected.</div>
         <div style="flex:0 0 auto" class="row">
+          <button id="btnShare" title="Create a read-only link to everything you can currently see">🔗 Share view</button>
           <button id="btnOrigin" title="Select the Origin root node">◎ Origin</button>
           <button id="btnResetCam">Reset view</button>
           <label style="display:flex;gap:6px;align-items:center;min-height:44px" title="Show/hide connection lines.">
@@ -248,7 +259,7 @@
       <div class="kv"><span class="k">Ticket bonus</span><b id="wBonus">+0%</b></div>
       <div class="kv"><span class="k">Meta</span><span id="wMeta" class="small muted">none</span></div>
     </div>
-    <div class="card">
+    <div class="card" id="awardCard">
       <h2>Award tickets</h2>
       <div class="row">
         <div><label for="tkCount">Count</label>
@@ -340,7 +351,7 @@
       </div>
       <ul class="list" id="invList"></ul>
     </div>
-    <div class="card">
+    <div class="card" id="metaCard">
       <h2>Meta abilities</h2>
       <div id="metaBox" class="muted small">Unlock tree-meta nodes (Sight, Graft, Chaos Die…) to gain abilities.</div>
     </div>
@@ -363,6 +374,41 @@
   <button data-tab="owned"><span class="ico">📦</span>Owned</button>
   <button data-tab="tickets"><span class="ico">🎟</span>Tickets</button>
 </nav>
+<div id="shareModal">
+  <div class="card modal">
+    <h2>Share this tree view</h2>
+    <p class="muted small">Uploads a snapshot of only what you can currently see — your unlocked and visible nodes, wallet, inventory, and unlock methods. It <b>never</b> includes the seed, generation settings, or hidden nodes. The upload is public to anyone with the link; <b>delete it when you're done</b>.</p>
+    <div class="row">
+      <div><label for="shareExpiry">Keep the upload online for</label>
+        <select id="shareExpiry">
+          <option value="1d">1 day</option>
+          <option value="7d" selected>7 days</option>
+          <option value="30d">30 days</option>
+        </select></div>
+      <div style="flex:0 0 auto;align-self:flex-end"><span id="shareSize" class="muted small"></span></div>
+    </div>
+    <div class="row" style="margin-top:8px"><button class="primary" id="shareGo">Create share link</button></div>
+    <div id="shareStatus" class="muted small" style="margin-top:8px"></div>
+    <div id="shareResult" style="display:none;margin-top:8px">
+      <label for="shareLink">Share link</label>
+      <input type="text" id="shareLink" readonly onclick="this.select()">
+      <div class="row" style="margin-top:8px">
+        <button class="primary" id="shareCopy">📋 Copy link</button>
+        <button id="shareDelete">🗑 Delete upload</button>
+      </div>
+    </div>
+    <details id="shareFallback" style="margin-top:10px">
+      <summary>Upload failed? Save the data manually</summary>
+      <p class="muted small">Copy the JSON below into any paste service (a secret gist or pastebin works), then paste the <b>raw</b> URL back here.</p>
+      <textarea id="shareJson" readonly onclick="this.select()"></textarea>
+      <div class="row" style="margin-top:6px">
+        <input type="text" id="shareManualUrl" placeholder="https://…/raw/…">
+        <button id="shareUseUrl">Use this URL</button>
+      </div>
+    </details>
+    <div class="row" style="margin-top:10px"><button id="shareClose">Close</button></div>
+  </div>
+</div>
 <div id="toast" class="toast" style="display:none"></div>
 <script>if (typeof navigator !== "undefined" && "serviceWorker" in navigator) { addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); }); }</script>
 <footer class="sitefoot">
@@ -374,6 +420,8 @@
 <script src="js/rng.js"></script>
 <script src="js/generator.js"></script>
 <script src="js/engine.js"></script>
+<script src="js/share.js"></script>
+<script src="js/paste.js"></script>
 <script src="js/tree-app.js"></script>
 </body>
 </html>

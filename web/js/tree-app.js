@@ -6,6 +6,10 @@
   const DATA = window.CHAOS_DATA || { entries: [], tiers: [], classes: [] };
   const LS_KEY = "chaosTree.v1";
   const LS_STATIC = "chaosTree.static.v1";
+  // Set when a ?share= link is opened: a frozen, read-only snapshot of
+  // someone else's tree. Nothing is persisted while it is active.
+  let SHARED = null;
+  const isShared = () => !!SHARED;
 
   const $ = id => document.getElementById(id);
   const esc = s => String(s == null ? "" : s)
@@ -135,6 +139,7 @@
     return { trees: [], states: {}, activeId: null, guideSeen: false, settings: {} };
   }
   function saveDB() {
+    if (isShared()) return; // never persist a shared snapshot over local saves
     try { localStorage.setItem(LS_KEY, JSON.stringify(DB)); }
     catch (e) { toast("Storage full: export your trees to keep them safe.", true); }
   }
@@ -167,6 +172,17 @@
 
   async function getRuntime(tree) {
     if (runtimes.has(tree.id)) return runtimes.get(tree.id);
+    if (tree.shared) {
+      // The snapshot's nodes/edges are already the owner's final topology
+      // (swaps/added links baked in) and only span the shared set, so no
+      // engine mutation is applied and the view sets come precomputed.
+      const p = SHARED.payload;
+      const rt = G.buildRuntime({ nodes: p.nodes, edges: p.edges });
+      rt.frozen = { vis: new Set(p.view.visible), unl: new Set(p.state.unlocked) };
+      rt.sharedView = p.view;
+      runtimes.set(tree.id, rt);
+      return rt;
+    }
     let rt;
     if (tree.static) {
       const payload = loadStatic(tree.id);
@@ -274,6 +290,20 @@
   }
   function renderTrees() {
     const ul = $("treeList");
+    if (isShared()) {
+      $("verWarn").style.display = "none";
+      $("treeCount").textContent = "Shared view (read-only)";
+      ul.innerHTML = "";
+      const t = activeTree();
+      if (t) {
+        const st = DB.states[t.id];
+        const li = document.createElement("li");
+        li.innerHTML = `<div class="grow"><b>${esc(t.name)}</b><br>` +
+          `<span class="muted small">shared view${st ? ` · ${st.unlocked.length} unlocked · ${E.fmt(st.points)} pts · ${st.cores} cores` : ""}</span></div>`;
+        ul.appendChild(li);
+      }
+      return;
+    }
     const at = activeTree();
     $("treeCount").textContent = DB.trees.length
       ? `${DB.trees.length} tree${DB.trees.length > 1 ? "s" : ""} · active: ${at ? at.name : "none"}`
@@ -917,6 +947,7 @@
     updateViewInfo();
   }
   async function mutate(fn) {
+    if (isShared()) { toast("Shared views are read-only.", true); return null; }
     const c = await current();
     if (!c) return null;
     try {
@@ -1069,6 +1100,7 @@
     const c = await current();
     if (!c) return null;
     const meta = E.viewState(c.rt, c.st);
+    if (c.rt.frozen) return { ...c, meta, vis: c.rt.frozen.vis, unl: c.rt.frozen.unl };
     const vis = new Set(E.visible(c.rt, c.st.unlocked, meta));
     const unl = new Set(c.st.unlocked);
     return { ...c, meta, vis, unl };
@@ -1358,7 +1390,10 @@
     const front = frontSet.has(nd.id);
     const ccx = E.costContext(c.st, c.rt);
     let actions = "";
-    if (!unl && nd.id !== 0) {
+    if (isShared()) {
+      actions = `<div class="muted small" style="margin-top:8px">` +
+        (unl ? "Unlocked ✓" : "Shared view — read-only.") + `</div>`;
+    } else if (!unl && nd.id !== 0) {
       if (front) {
         const cost = E.nodeCostFor(c.st, c.rt, nd.id, ccx);
         const cover = E.couponCover(c.st, cost);
@@ -1421,7 +1456,7 @@
     const NS = "http://www.w3.org/2000/svg";
     const cx = 180, cyy = 150;
     const unlSet = new Set(c.st.unlocked);
-    const vis = new Set(E.visible(c.rt, c.st.unlocked, meta));
+    const vis = c.rt.frozen ? new Set(c.rt.frozen.vis) : new Set(E.visible(c.rt, c.st.unlocked, meta));
     const nbs = [...(c.rt.adj[nd.id] || [])]
       .filter(b => (unlSet.has(b) || vis.has(b)) && visNode(c.rt.byId[b]))
       .sort((a, b) => a - b);
@@ -1791,7 +1826,7 @@
 
     // meta abilities
     meta.innerHTML = "";
-    const vis = E.visible(rt, st.unlocked, m);
+    const vis = rt.frozen ? [...rt.frozen.vis] : E.visible(rt, st.unlocked, m);
     const unl = new Set(st.unlocked);
     const lockedVisIds = vis.filter(id => !unl.has(id));
     const used = k => (st.meta_used || {})[k] || 0;
@@ -1968,21 +2003,23 @@
         `<span class="pill">${esc(nd.file)} ${fmtR(nd.rarity)}</span>` +
         (tags.length ? " " + tagPills(tags) : "") + `<br>` +
         `<span class="muted small">${E.fmt(cost)} pts${cc ? " + 1 core" : " · no core"}</span></div>`;
-      const b = document.createElement("button");
-      b.textContent = "Unlock";
-      b.className = "primary";
-      b.disabled = !ok;
-      b.title = ok ? `Unlock ${nd.name}` : (st.cores < cc ? `Needs ${cc} core${cc === 1 ? "" : "s"} (award a ticket)` : `Needs ${E.fmt(cost)} pts`);
-      b.addEventListener("click", async () => {
-        const done = await mutate(({ st, rt }) => E.unlock(st, rt, id));
-        if (done) toast(`Unlocked ${nd.name}.`);
-      });
       const go = document.createElement("button");
       go.textContent = "View";
       go.title = `Open ${nd.name} in the node view`;
       go.addEventListener("click", () => { selectedId = id; showTab("node"); });
       li.appendChild(go);
-      li.appendChild(b);
+      if (!isShared()) {
+        const b = document.createElement("button");
+        b.textContent = "Unlock";
+        b.className = "primary";
+        b.disabled = !ok;
+        b.title = ok ? `Unlock ${nd.name}` : (st.cores < cc ? `Needs ${cc} core${cc === 1 ? "" : "s"} (award a ticket)` : `Needs ${E.fmt(cost)} pts`);
+        b.addEventListener("click", async () => {
+          const done = await mutate(({ st, rt }) => E.unlock(st, rt, id));
+          if (done) toast(`Unlocked ${nd.name}.`);
+        });
+        li.appendChild(b);
+      }
       box.appendChild(li);
     }
   }
@@ -2022,7 +2059,8 @@
       }
     } else if (scope === "visible") {
       const front = E.frontier(rt, st.unlocked);
-      for (const id of E.visible(rt, st.unlocked, m)) {
+      const visIds = rt.frozen ? rt.frozen.vis : E.visible(rt, st.unlocked, m);
+      for (const id of visIds) {
         if (unl.has(id) || !visNode(rt.byId[id])) continue;
         let via = "beyond tickets", act = null;
         if (front.has(id)) { via = "frontier"; act = "unlock"; }
@@ -2122,11 +2160,29 @@
       id: (a, b) => a.id - b.id,
     }[sort] || ((a, b) => costOf(a) - costOf(b));
     rows.sort(cmp);
+    // Shared view: append reachable-but-hidden targets (id + method only),
+    // unless a filter would need data we deliberately did not share.
+    if (isShared() && !q && !cat && !tag && !affordOnly) {
+      const hv = (rt.sharedView && rt.sharedView.hiddenReach) || {};
+      const hidden = [];
+      if (scope === "skip") {
+        for (const h of (hv.skip || [])) hidden.push({ hidden: true, id: h.id, hops: h.n });
+      } else if (scope === "hop") {
+        for (const h of (hv.hop || [])) hidden.push({ hidden: true, id: h.id, hops: null });
+      } else if (scope === "jump") {
+        for (const h of (hv.jump || [])) {
+          if (h.ticket === planJumpTi && h.from === planJumpFrom) hidden.push({ hidden: true, id: h.id, hops: null, from: h.from });
+        }
+      }
+      hidden.sort((a, b) => a.id - b.id);
+      rows = rows.concat(hidden);
+    }
+    const copyable = rows.filter(r => !r.hidden);
     $("planCount").textContent = `(${rows.length} node${rows.length === 1 ? "" : "s"})`;
     $("planCopy").onclick = () => {
-      if (!rows.length) return toast("Nothing to copy.", true);
-      copyText(rows.map(r => nodeText(rt.byId[r.id])).join("\n\n"),
-        `${rows.length} planned node${rows.length === 1 ? "" : "s"}`);
+      if (!copyable.length) return toast("Nothing to copy.", true);
+      copyText(copyable.map(r => nodeText(rt.byId[r.id])).join("\n\n"),
+        `${copyable.length} planned node${copyable.length === 1 ? "" : "s"}`);
     };
     const pages = Math.max(1, Math.ceil(rows.length / PLAN_PAGE));
     planPage = Math.max(0, Math.min(planPage, pages - 1));
@@ -2140,6 +2196,14 @@
       return;
     }
     for (const r of rows.slice(planPage * PLAN_PAGE, (planPage + 1) * PLAN_PAGE)) {
+      if (r.hidden) {
+        const li = document.createElement("li");
+        li.innerHTML = `<div class="grow"><b>Hidden node #${r.id}</b> <span class="pill">hidden</span><br>` +
+          `<span class="muted small">reachable by ${esc(scope)}${r.from != null ? ` from #${r.from}` : ""}` +
+          `${r.hops != null ? ` · ${hopTxt(r.hops)}` : ""} — not included in this shared view</span></div>`;
+        box.appendChild(li);
+        continue;
+      }
       const nd = rt.byId[r.id];
       const cost = r.cost, cc = r.cc;
       const ok = planAfford(st, rt, r.id, ccx);
@@ -2159,7 +2223,7 @@
       cp.title = `Copy ${nd.name} text`;
       cp.addEventListener("click", () => copyText(nodeText(nd), nd.name));
       li.appendChild(cp);
-      if (r.act === "unlock" || r.act === "skip" || r.act === "hop") {
+      if (!isShared() && (r.act === "unlock" || r.act === "skip" || r.act === "hop")) {
         const b = document.createElement("button");
         const isSkip = r.act === "skip", isHop = r.act === "hop";
         b.textContent = isSkip ? "Skip →" : isHop ? "Hop →" : "Unlock";
@@ -2175,7 +2239,7 @@
           if (done) toast(`Unlocked ${nd.name}${isSkip ? " (skip)" : isHop ? " (hop)" : ""}.`);
         });
         li.appendChild(b);
-      } else if (r.act === "jump" && r.jump) {
+      } else if (!isShared() && r.act === "jump" && r.jump) {
         const { ticket, from } = r.jump;
         const b = document.createElement("button");
         b.textContent = "Jump →";
@@ -2198,8 +2262,9 @@
       box.appendChild(li);
     }
   }
-    const surveyed = E.surveyNames(rt, st.unlocked, m)
-      .filter(([i]) => visNode(rt.byId[i]));
+    const surveyed = rt.frozen
+      ? ((rt.sharedView && rt.sharedView.surveyed) || [])
+      : E.surveyNames(rt, st.unlocked, m).filter(([i]) => visNode(rt.byId[i]));
     if (surveyed.length) {
       const d = document.createElement("details");
       const s = document.createElement("summary");
@@ -2209,11 +2274,14 @@
       ul.className = "list";
       for (const [id, name] of surveyed.slice(0, 60)) {
         const li = document.createElement("li");
-        li.innerHTML = `<div class="grow"><b>#${id} ${esc(name)}</b></div>`;
-        const go = document.createElement("button");
-        go.textContent = "View";
-        go.addEventListener("click", () => { selectedId = id; showTab("node"); });
-        li.appendChild(go);
+        li.innerHTML = `<div class="grow"><b>#${id} ${esc(name)}</b>` +
+          (rt.byId[id] ? "" : ` <span class="pill">hidden</span>`) + `</div>`;
+        if (rt.byId[id]) {
+          const go = document.createElement("button");
+          go.textContent = "View";
+          go.addEventListener("click", () => { selectedId = id; showTab("node"); });
+          li.appendChild(go);
+        }
         ul.appendChild(li);
       }
       d.appendChild(ul);
@@ -2302,6 +2370,127 @@
       }
     } catch (e) { err(e); }
   });
+
+  // ---- sharing (read-only snapshots) -------------------------------------
+  function applySharedMode() {
+    document.body.classList.add("shared-mode");
+    for (const id of ["newTreeCard", "ioCard", "awardCard", "metaCard", "guideCard"]) {
+      const el = $(id); if (el) el.style.display = "none";
+    }
+    const bs = $("btnShare"); if (bs) bs.style.display = "none";
+    const banner = $("shareBanner");
+    if (banner) {
+      $("shareBannerText").textContent =
+        "Only the owner's visible and unlocked nodes are included — never the seed, " +
+        "generation settings, or hidden nodes. Unlocking and awarding are disabled." +
+        (SHARED && SHARED.url ? " Data loaded from " + SHARED.url : "");
+      banner.style.display = "block";
+    }
+  }
+
+  async function loadSharedView(url) {
+    if (!window.ChaosShare) throw new Error("share support failed to load");
+    const res = await fetch(url, { redirect: "follow" });
+    if (!res.ok) throw new Error(`couldn't load the shared view (HTTP ${res.status})`);
+    let payload;
+    try { payload = await res.json(); }
+    catch (e) { throw new Error("the shared view isn't valid JSON"); }
+    window.ChaosShare.validate(payload);
+    const tree = { id: uid(), name: payload.name || "Shared tree", shared: true,
+      static: true, dataVersion: payload.dataVersion || null, createdAt: Date.now() };
+    SHARED = { url, payload, treeId: tree.id };
+    DB.trees = [tree];
+    DB.states = {};
+    DB.states[tree.id] = Object.assign(E.newState(), payload.state);
+    DB.activeId = tree.id;
+    selectedId = 0;
+    applySharedMode();
+    renderTrees();
+    await refreshAll();
+    showTab("view3d");
+    toast("Shared view loaded (read-only).");
+  }
+
+  // Share this view: snapshot -> paste host -> tree.html?share=<raw-url>.
+  function shareLinkFor(rawUrl) {
+    let base = "tree.html";
+    try {
+      const u = new URL("tree.html", location.href);
+      u.search = ""; u.hash = "";
+      base = u.href;
+    } catch (e) { /* keep relative */ }
+    return base + "?share=" + encodeURIComponent(rawUrl);
+  }
+  let shareUpload = null;
+  function openShare() {
+    if (isShared()) return;
+    $("shareModal").classList.add("open");
+    if ($("shareModal").scrollIntoView) $("shareModal").scrollIntoView({ block: "nearest" });
+  }
+  function closeShare() { $("shareModal").classList.remove("open"); }
+  async function runShare() {
+    const c = await current();
+    if (!c) { $("shareStatus").textContent = "No active tree to share."; return; }
+    let payload;
+    try {
+      payload = window.ChaosShare.collect(c.tree, c.rt, c.st, {
+        name: c.tree.name, dataVersion: DATA.dataVersion,
+        nodeVisible: nd => visNode(nd) && nodeShown(nd)
+      });
+    } catch (e) { err(e); return; }
+    const text = JSON.stringify(payload);
+    const whole = payload.nodes.length >= c.rt.nodes.length;
+    $("shareJson").value = text;
+    $("shareSize").textContent =
+      `${payload.nodes.length} node${payload.nodes.length === 1 ? "" : "s"} · ${(text.length / 1024).toFixed(1)} KB`;
+    $("shareFallback").open = false;
+    $("shareResult").style.display = "none";
+    $("shareStatus").textContent = "Uploading…";
+    try {
+      const out = await window.ChaosPaste.upload(text, {
+        title: (c.tree.name || "Chaos Tree") + " — shared view",
+        expiration: $("shareExpiry").value
+      });
+      shareUpload = out;
+      $("shareLink").value = shareLinkFor(out.rawUrl);
+      $("shareResult").style.display = "block";
+      $("shareStatus").textContent = "Uploaded via " + out.provider +
+        (out.expiresAt ? " · expires " + out.expiresAt : "") +
+        (whole ? " · notice: this view includes every node (a full reveal is active)." : "");
+    } catch (e) {
+      $("shareFallback").open = true;
+      $("shareStatus").textContent = e.message + " You can still share manually below.";
+    }
+  }
+
+  if ($("btnShare")) $("btnShare").addEventListener("click", openShare);
+  if ($("shareGo")) $("shareGo").addEventListener("click", runShare);
+  if ($("shareClose")) $("shareClose").addEventListener("click", closeShare);
+  if ($("shareModal")) $("shareModal").addEventListener("click", ev => {
+    if (ev.target === $("shareModal")) closeShare();
+  });
+  if ($("shareCopy")) $("shareCopy").addEventListener("click", () => {
+    if ($("shareLink").value) copyText($("shareLink").value, "link");
+  });
+  if ($("shareUseUrl")) $("shareUseUrl").addEventListener("click", () => {
+    const u = $("shareManualUrl").value.trim();
+    if (!/^https?:\/\//.test(u)) return toast("Enter the raw https:// URL of your paste.", true);
+    $("shareLink").value = shareLinkFor(u);
+    $("shareResult").style.display = "block";
+    $("shareStatus").textContent = "Link ready — copying it shares this view.";
+  });
+  if ($("shareDelete")) $("shareDelete").addEventListener("click", async () => {
+    if (!shareUpload) return;
+    try {
+      await window.ChaosPaste.remove(shareUpload);
+      shareUpload = null;
+      $("shareResult").style.display = "none";
+      $("shareStatus").textContent = "Upload deleted.";
+      toast("Upload deleted.");
+    } catch (e) { err(e); }
+  });
+  window.__treeDebug = Object.assign(window.__treeDebug || {},
+    { shareLinkFor, runShare, loadSharedView, openShare });
 
   // ---- boot ---------------------------------------------------------------
   fillTicketForm();
@@ -2493,4 +2682,12 @@
   if (DB.activeId && getTree(DB.activeId)) showTab("view3d");
   else showTab("trees");
   refreshAll();
+
+  // Opening a ?share= link loads a read-only snapshot instead of local trees.
+  (function () {
+    let url = null;
+    try { url = new URLSearchParams(location.search).get("share"); } catch (e) {}
+    if (!url) return;
+    loadSharedView(url).catch(e => { err(e); showTab("trees"); });
+  })();
 })();

@@ -19,6 +19,11 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   The Trees tab offers copy (with progress) and fresh-clone (same
   parameters, new progress). Each tree records the data version it was
   generated with; a mismatch warns that regeneration may differ.
+  A tree's current view can be shared as a read-only link (`tree.html?share=…`):
+  the snapshot uploads to an anonymous paste host and carries only what the
+  owner can currently see — never the seed, generation settings, or hidden
+  nodes. Loaded under `js/share.js` (snapshot/validation) and `js/paste.js`
+  (paste-host adapters).
 - `gacha.html` — Chaos Gacha roller with the same presets/odds as the
   desktop app, a ticket wallet (tickets may carry a theme tag or an
   Advantage count that rolls several wheels at once and lets you pick
