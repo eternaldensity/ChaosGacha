@@ -1,7 +1,7 @@
 "use strict";
 /* Docs helper: CYOA "start here" buttons seed the gacha ticket wallet
- * (localStorage key shared with gacha.html). Triple Advantage is three
- * platinum pulls of which the story keeps the best. */
+ * (localStorage key shared with gacha.html). A Triple-Advantage ticket is
+ * one ticket that rolls three wheels and keeps the best (adv: 3). */
 (function () {
   var GLS = "chaosGacha.v1";
   function T(tier, cat, n) {
@@ -15,7 +15,7 @@
     native2: T("silver", "random", 2),
     native3: T("bronze", "random", 3),
     changed1: T("platinum", "random", 1).concat(T("gold", "random", 2)),
-    changed2: T("platinum", "random", 3)
+    changed2: [{ tier: "platinum", cat: "random", adv: 3 }]
   };
   function uid() {
     return Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
@@ -30,7 +30,9 @@
     }
     db.tickets = db.tickets || [];
     for (var i = 0; i < list.length; i++) {
-      db.tickets.push({ id: uid(), tier: list[i].tier, cat: list[i].cat });
+      var ticket = { id: uid(), tier: list[i].tier, cat: list[i].cat };
+      if ((list[i].adv | 0) > 1) ticket.adv = list[i].adv;
+      db.tickets.push(ticket);
     }
     try { localStorage.setItem(GLS, JSON.stringify(db)); } catch (e) {}
     return list.length;

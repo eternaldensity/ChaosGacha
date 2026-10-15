@@ -47,6 +47,9 @@
   mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
 }
 .reel-inner { will-change: transform; }
+/* Advantage rolls spin several wheels at once, side by side. */
+.reel-row { display: flex; gap: 8px; overflow-x: auto; }
+.reel-row .reel { flex: 1 1 0; min-width: 132px; }
 .rrow {
   height: var(--rowh);
   display: flex; align-items: center; gap: 8px;
@@ -149,8 +152,8 @@
       <div class="muted small" id="poolCount" style="margin-top:8px"></div>
     </details>
     <div class="card" id="reelCard" style="display:none">
-      <div class="reel" id="reel" title="Tap to skip"><div class="reel-inner" id="reelInner"></div></div>
-      <div class="muted small" style="margin-top:4px">Tap the wheel to skip.</div>
+      <div class="reel-row" id="reelRow"></div>
+      <div class="muted small" style="margin-top:4px">Tap a wheel to skip.</div>
     </div>
     <div class="card" id="resultCard" style="display:none">
       <h2>Result</h2>
@@ -172,6 +175,15 @@
       <div class="row" style="margin-top:8px">
         <div><label for="tkTag" title="Optional theme tag for this ticket (e.g. holy). The roll only picks entries with this tag.">Theme tag (optional)</label>
           <select id="tkTag"><option value="">Any tag</option></select></div>
+        <div><label for="tkAdv" title="Advantage: roll N wheels at once and keep the best result. 3× is the usual 'triple advantage'.">Advantage</label>
+          <select id="tkAdv">
+            <option value="1">1× — none</option>
+            <option value="2">2× advantage</option>
+            <option value="3">3× advantage</option>
+            <option value="4">4× advantage</option>
+            <option value="5">5× advantage</option>
+            <option value="6">6× advantage</option>
+          </select></div>
       </div>
       <div style="margin-top:10px"><button id="btnAddTicket" style="width:100%">+ Add ticket</button></div>
       <ul class="list" id="ticketList"></ul>

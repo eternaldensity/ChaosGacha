@@ -304,6 +304,7 @@
       (tags.length ? `<div style="margin:4px 0">${tagPills(tags)}</div>` : "") +
       `<div class="small muted">${r.odds.toFixed(2)}% odds</div>` +
       (r.d20 != null ? `<div class="small muted">🎲 Gambler d20 → ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</div>` : "") +
+      (r.advantage > 1 ? `<div class="small muted">⚡ Advantage ×${r.advantage} — kept the best of the batch</div>` : "") +
       (r.description ? `<p>${linkify(r.description)}</p>` : "");
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
@@ -327,7 +328,16 @@
     return t ? { min: t.min, avg: t.avg, max: t.max } : null;
   }
 
-  function doRoll(min, max, avg, cat, ticketId, tierName, ticketTag) {
+  // Advantage keeps the best of a batch: a ticket's Advantage prefix rolls
+  // that many wheels at once; the Gambler trait's "Advantage" d20 result
+  // adds one more. Everything else (odds, filters, category) is unchanged.
+  function bestOf(rolls) {
+    let best = rolls[0];
+    for (const r of rolls) if (r.rarity > best.rarity) best = r;
+    return best;
+  }
+
+  function doRoll(min, max, avg, cat, ticketId, tierName, ticketTag, advantage) {
     if (spinning) return;
     $("filterBox").open = false;
     const F = collectFilters();
@@ -361,29 +371,25 @@
         return;
       }
     }
+    const rolls = Math.max(1, advantage | 0) + (g && g.effect === "advantage" ? 1 : 0);
     const rollOnce = () => G.roll(DATA.entries, DATA.tiers, cat, min, max, avg, F);
-    let r;
+    let results;
     try {
-      r = rollOnce();
-      if (g && g.effect === "advantage") {
-        const r2 = rollOnce();
-        if (r2.rarity >= r.rarity) {
-          r2.gambleNote = `kept ${fmtR(r2.rarity)} over ${fmtR(r.rarity)}`;
-          r = r2;
-        } else {
-          r.gambleNote = `kept ${fmtR(r.rarity)} over ${fmtR(r2.rarity)}`;
-        }
-      }
+      results = [];
+      for (let i = 0; i < rolls; i++) results.push(rollOnce());
     } catch (e) { toast(e.message, true); return; }
+    const r = bestOf(results);
+    if (rolls > 1) r.advantage = rolls;
     if (g) { r.d20 = g.d20; r.geffect = g.effect; }
     if (ticketId) DB.tickets = DB.tickets.filter(t => t.id !== ticketId);
     DB.history.unshift(Object.assign({ id: uid(), at: Date.now(), min, max, avg }, r));
     if (DB.history.length > 500) DB.history.length = 500;
     save(); renderTickets();
+    const list = () => { if (rolls > 1) renderResultList(results, r, `⚡ Advantage ×${rolls} — kept the best`); };
     const speed = (DB.settings && DB.settings.spin) || "normal";
     const reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (speed === "off" || reduced || !window.requestAnimationFrame) { showResult(r); return; }
-    spinReel(r, min, max, avg, F, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal, cat);
+    if (speed === "off" || reduced || !window.requestAnimationFrame) { showResult(r); list(); return; }
+    spinReels(results, min, max, avg, F, SPIN_SPEEDS[speed] || SPIN_SPEEDS.normal, cat);
   }
 
   const SPIN_SPEEDS = {
@@ -395,72 +401,123 @@
   const TRAIL_ROWS = 8; // decoys past the winner so the list end never shows
   let spinning = false;
 
-  function spinReel(r, min, max, avg, filt, opt, reqCat) {
-    let items;
-    try {
-      items = G.drawStrip(DATA.entries, reqCat || r.category, min, max, avg, filt, opt.n + TRAIL_ROWS);
-    } catch (e) { showResult(r); return; }
-    const winIdx = opt.n;
-    items.splice(winIdx, 0, { name: r.name, rarity: r.rarity, source: r.source, category: r.category, tags: entryTags(r).slice() });
-    // The winner is predetermined; don't let a decoy double it up visually.
-    for (const j of [winIdx - 1, winIdx + 1]) {
-      if (j < 0 || j >= items.length || items[j].name !== r.name) continue;
-      const other = j < winIdx ? items[j - 1] : items[j + 1];
-      for (let t = 0; t < 30; t++) {
-        const k = Math.floor(Math.random() * items.length);
-        if (Math.abs(k - winIdx) <= 1 || Math.abs(k - j) <= 1) continue;
-        const a = items[k];
-        if (a.name === r.name) continue;
-        if (other && a.name === other.name) continue;
-        if (k > 0 && items[k - 1].name === r.name) continue;
-        if (k < items.length - 1 && items[k + 1].name === r.name) continue;
-        items[k] = items[j];
-        items[j] = a;
-        break;
+  // Shared list of a batch's results (×10 multi-pull and advantage rolls),
+  // with the kept/best result starred and a 👁 button to view any of them.
+  function renderResultList(results, best, headText) {
+    $("multiHead").textContent = headText;
+    const ul = $("multiList");
+    ul.innerHTML = "";
+    results.slice().sort((a, b) => b.rarity - a.rarity).forEach(r => {
+      const cls = G.rarityClass(DATA.classes, r.rarity);
+      const li = document.createElement("li");
+      li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
+        `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${fmtR(r.rarity)}</span>` +
+        (entryTags(r).length ? " " + tagPills(entryTags(r)) : "") +
+        (r === best ? ` <span class="pill" style="border-color:var(--accent);color:var(--accent)">★ best</span>` : "") +
+        `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
+      const b = document.createElement("button");
+      b.textContent = "👁";
+      b.addEventListener("click", () => showResult(r, true));
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+    $("multiCard").style.display = "block";
+  }
+
+  // Spin one reel per result simultaneously (advantage rolls several at
+  // once); all lanes share the same easing so they settle together.
+  function spinReels(rolls, min, max, avg, filt, opt, reqCat) {
+    const host = $("reelRow");
+    host.innerHTML = "";
+    const lanes = [];
+    for (const r of rolls) {
+      let items;
+      try {
+        items = G.drawStrip(DATA.entries, reqCat || r.category, min, max, avg, filt, opt.n + TRAIL_ROWS);
+      } catch (e) { continue; }
+      const winIdx = opt.n;
+      items.splice(winIdx, 0, { name: r.name, rarity: r.rarity, source: r.source, category: r.category, tags: entryTags(r).slice() });
+      // The winner is predetermined; don't let a decoy double it up visually.
+      for (const j of [winIdx - 1, winIdx + 1]) {
+        if (j < 0 || j >= items.length || items[j].name !== r.name) continue;
+        const other = j < winIdx ? items[j - 1] : items[j + 1];
+        for (let t = 0; t < 30; t++) {
+          const k = Math.floor(Math.random() * items.length);
+          if (Math.abs(k - winIdx) <= 1 || Math.abs(k - j) <= 1) continue;
+          const a = items[k];
+          if (a.name === r.name) continue;
+          if (other && a.name === other.name) continue;
+          if (k > 0 && items[k - 1].name === r.name) continue;
+          if (k < items.length - 1 && items[k + 1].name === r.name) continue;
+          items[k] = items[j];
+          items[j] = a;
+          break;
+        }
       }
+      const reel = document.createElement("div");
+      reel.className = "reel";
+      reel.title = "Tap to skip";
+      const inner = document.createElement("div");
+      inner.className = "reel-inner";
+      for (const it of items) {
+        const cls = G.rarityClass(DATA.classes, it.rarity);
+        const row = document.createElement("div");
+        row.className = "rrow";
+        const itTags = entryTags(it);
+        row.innerHTML = `<span class="dot" style="background:${esc(cls.color)}"></span>` +
+          `<span class="nm">${esc(it.name)}${itTags.length ? ` <span class="muted small">#${itTags.map(esc).join(" #")}</span>` : ""}</span>` +
+          `<span class="pill">${esc(it.category)} ${fmtR(it.rarity)}</span>`;
+        inner.appendChild(row);
+      }
+      reel.appendChild(inner);
+      host.appendChild(reel);
+      lanes.push({ r, reel, inner, winIdx, rows: Array.from(inner.children) });
     }
-    const reel = $("reel"), inner = $("reelInner");
-    inner.innerHTML = "";
-    for (const it of items) {
-      const cls = G.rarityClass(DATA.classes, it.rarity);
-      const row = document.createElement("div");
-      row.className = "rrow";
-      const itTags = entryTags(it);
-      row.innerHTML = `<span class="dot" style="background:${esc(cls.color)}"></span>` +
-        `<span class="nm">${esc(it.name)}${itTags.length ? ` <span class="muted small">#${itTags.map(esc).join(" #")}</span>` : ""}</span>` +
-        `<span class="pill">${esc(it.category)} ${fmtR(it.rarity)}</span>`;
-      inner.appendChild(row);
+    if (!lanes.length) {
+      const best = bestOf(rolls);
+      showResult(best);
+      if (rolls.length > 1) renderResultList(rolls, best, `⚡ Advantage ×${rolls.length} — kept the best`);
+      return;
     }
     $("reelCard").style.display = "block";
     $("resultCard").style.display = "none";
     $("rollBtn").disabled = true;
     spinning = true;
-    const rows = Array.from(inner.children);
-    const rowh = rows.length ? rows[0].offsetHeight || 54 : 54;
-    const viewH = reel.clientHeight || rowh * 5;
-    const total = Math.max(0, winIdx * rowh + rowh / 2 - viewH / 2);
+    const first = lanes[0];
+    const rowh = first.rows.length ? first.rows[0].offsetHeight || 54 : 54;
+    const viewH = first.reel.clientHeight || rowh * 5;
+    for (const lane of lanes) {
+      lane.total = Math.max(0, lane.winIdx * rowh + rowh / 2 - viewH / 2);
+    }
     const t0 = performance.now();
     let done = false;
     const finish = () => { done = true; };
-    reel.onclick = finish;
+    for (const lane of lanes) lane.reel.onclick = finish;
     function frame(now) {
       if (done) now = t0 + opt.dur;
       const t = Math.min(1, (now - t0) / opt.dur);
       const p = 1 - Math.pow(1 - t, 4); // ease-out: fast whizz, gentle settle
-      const off = total * p;
-      inner.style.transform = `translateY(${-off}px)`;
-      for (let i = 0; i < rows.length; i++) {
-        const center = i * rowh + rowh / 2 - off;
-        const d = Math.min(1, Math.abs(center - viewH / 2) / (viewH / 2));
-        rows[i].style.transform = `scaleY(${(1 - 0.6 * Math.pow(d, 1.3)).toFixed(3)})`;
-        rows[i].style.opacity = (1 - 0.8 * Math.pow(d, 1.5)).toFixed(3);
+      for (const lane of lanes) {
+        const off = lane.total * p;
+        lane.inner.style.transform = `translateY(${-off}px)`;
+        for (let i = 0; i < lane.rows.length; i++) {
+          const center = i * rowh + rowh / 2 - off;
+          const d = Math.min(1, Math.abs(center - viewH / 2) / (viewH / 2));
+          lane.rows[i].style.transform = `scaleY(${(1 - 0.6 * Math.pow(d, 1.3)).toFixed(3)})`;
+          lane.rows[i].style.opacity = (1 - 0.8 * Math.pow(d, 1.5)).toFixed(3);
+        }
       }
       if (t >= 1) {
-        rows[winIdx].classList.add("winner");
-        reel.onclick = null;
+        const best = bestOf(lanes.map(l => l.r));
+        for (const lane of lanes) {
+          const w = lane.rows[lane.winIdx];
+          if (w) w.classList.add("winner");
+          lane.reel.onclick = null;
+        }
         spinning = false;
         $("rollBtn").disabled = false;
-        showResult(r);
+        showResult(best);
+        if (rolls.length > 1) renderResultList(rolls, best, `⚡ Advantage ×${rolls.length} — kept the best`);
         return;
       }
       window.requestAnimationFrame(frame);
@@ -527,25 +584,8 @@
     let best = results[0];
     for (const r of results) if (r.rarity > best.rarity) best = r;
     showResult(best);
-    $("multiHead").textContent = `best of ${results.length}` +
-      (destroyed ? ` (${destroyed} destroyed)` : "") + ` below`;
-    const ul = $("multiList");
-    ul.innerHTML = "";
-    results.slice().sort((a, b) => b.rarity - a.rarity).forEach(r => {
-      const cls = G.rarityClass(DATA.classes, r.rarity);
-      const li = document.createElement("li");
-      li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
-        `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${fmtR(r.rarity)}</span>` +
-        (entryTags(r).length ? " " + tagPills(entryTags(r)) : "") +
-        (r === best ? ` <span class="pill" style="border-color:var(--accent);color:var(--accent)">★ best</span>` : "") +
-        `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
-      const b = document.createElement("button");
-      b.textContent = "👁";
-      b.addEventListener("click", () => showResult(r, true));
-      li.appendChild(b);
-      ul.appendChild(li);
-    });
-    $("multiCard").style.display = "block";
+    renderResultList(results, best, `best of ${results.length}` +
+      (destroyed ? ` (${destroyed} destroyed)` : "") + ` below`);
   });
 
   $("btnCopy").addEventListener("click", async () => {
@@ -568,8 +608,10 @@
 
   $("btnAddTicket").addEventListener("click", () => {
     const tag = $("tkTag") ? $("tkTag").value || "" : "";
+    const adv = $("tkAdv") ? parseInt($("tkAdv").value, 10) || 1 : 1;
     const t = { id: uid(), tier: $("tkTier").value, cat: $("tkCat").value };
     if (tag) t.tag = tag;
+    if (adv > 1) t.adv = adv;
     DB.tickets.push(t);
     save(); renderTickets();
   });
@@ -583,13 +625,16 @@
     for (const t of DB.tickets) {
       const li = document.createElement("li");
       const tp = tierOf(t.tier);
+      const adv = t.adv | 0;
       li.innerHTML = `<div class="grow"><span class="pill" style="${esc(tierStyle(tp))}border:none">${esc(t.tier)}</span> <span class="pill">${esc(t.cat)}</span>` +
+        (adv > 1 ? ` <span class="pill" style="border-color:var(--accent);color:var(--accent)">⚡ Advantage ×${adv}</span>` : "") +
         (t.tag ? ` <span class="pill">🏷 ${esc(t.tag)}</span>` : "") + `</div>`;
       const b = document.createElement("button");
-      b.textContent = "Roll 🎲"; b.className = "primary";
+      b.textContent = adv > 1 ? `Roll ${adv}⚡` : "Roll 🎲"; b.className = "primary";
+      b.title = adv > 1 ? `Roll ${adv} wheels at once and keep the best` : "Roll this ticket";
       b.addEventListener("click", () => {
         const p = tierOf(t.tier);
-        doRoll(p.min, p.max, p.avg, t.cat, t.id, t.tier, t.tag || "");
+        doRoll(p.min, p.max, p.avg, t.cat, t.id, t.tier, t.tag || "", adv);
       });
       li.appendChild(b);
       ul.appendChild(li);
@@ -627,7 +672,8 @@
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
         `<b>${esc(h.name)}</b> <span class="pill">${esc(h.category)} ${fmtR(h.rarity)}</span>` +
         (entryTags(h).length ? " " + tagPills(entryTags(h)) : "") +
-        (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }))}">🎲${h.d20}</span>` : "") + `<br>` +
+        (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }))}">🎲${h.d20}</span>` : "") +
+        (h.advantage > 1 ? ` <span class="pill" title="Kept the best of ${h.advantage} wheels">⚡${h.advantage}</span>` : "") + `<br>` +
         `<span class="muted small">${esc(h.source || "—")} · ${new Date(h.at).toLocaleString()} · ${h.odds.toFixed(2)}%</span></div>`;
       const b = document.createElement("button");
       b.textContent = "👁";

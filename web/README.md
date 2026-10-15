@@ -20,9 +20,11 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   parameters, new progress). Each tree records the data version it was
   generated with; a mismatch warns that regeneration may differ.
 - `gacha.html` — Chaos Gacha roller with the same presets/odds as the
-  desktop app, a ticket wallet, roll history, spin-wheel animation with
-  adjustable slowdown, filters, ×10 multi-pull, result sharing, history
-  stats, and history import/export.
+  desktop app, a ticket wallet (tickets may carry a theme tag or an
+  Advantage count that rolls several wheels at once and keeps the best),
+  roll history, spin-wheel animation with adjustable slowdown, filters,
+  ×10 multi-pull, result sharing, history stats, and history
+  import/export.
 - `curse.html` — Curse Roulette port: d20 spin with the original severity
   bands, resolve conditions, per-tier ticket rewards paid into the shared
   wallet, and a resolvable curse history. List source: the original

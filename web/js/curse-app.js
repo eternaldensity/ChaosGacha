@@ -50,15 +50,20 @@
     if (roll <= 19) return "Severe";
     return "Ultimate";
   }
-  // Reward tickets per the reference table. Medium counts double for
-  // Advantage; Major/Ultimate let the roller pick the category.
+  // Reward tickets per the reference table. Medium is one Advantage ticket
+  // (roll two wheels, keep the better); Major/Ultimate let the roller pick
+  // the category.
   function rewardFor(tier, cat) {
     cat = cat || "random";
     if (tier === "Minor") return [{ tier: "gold", cat: "random" }];
-    if (tier === "Medium") return [{ tier: "gold", cat: "random" }, { tier: "gold", cat: "random" }];
+    if (tier === "Medium") return [{ tier: "gold", cat: "random", adv: 2 }];
     if (tier === "Major") return [{ tier: "gold", cat }];
     if (tier === "Severe") return [{ tier: "platinum", cat: "random" }];
     return [{ tier: "platinum", cat }];
+  }
+  // Human-readable reward line, e.g. "gold random (2× Advantage)".
+  function ticketLabel(t) {
+    return `${t.tier} ${t.cat}` + ((t.adv | 0) > 1 ? ` (${t.adv}× Advantage)` : "");
   }
 
   function nsfwHidden() { return DB.settings.nsfw !== false; }
@@ -115,7 +120,7 @@
       `<div class="result-name"><b>${esc(r.label)}</b> <span class="pill">severity ${r.sev}</span></div>` +
       (r.desc ? `<p>${esc(r.desc)}</p>` : "") +
       (r.resolve ? `<p class="small"><b>Resolve:</b> ${esc(r.resolve)}</p>` : "") +
-      `<p class="small muted">Reward: ${r.reward.map(t => `${t.tier} ${t.cat}`).join(" + ")}</p>`;
+      `<p class="small muted">Reward: ${r.reward.map(ticketLabel).join(" + ")}</p>`;
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
@@ -227,7 +232,9 @@
     }
     gdb.tickets = gdb.tickets || [];
     for (const t of lastResult.reward) {
-      gdb.tickets.push({ id: uid(), tier: t.tier, cat: t.cat });
+      const ticket = { id: uid(), tier: t.tier, cat: t.cat };
+      if ((t.adv | 0) > 1) ticket.adv = t.adv;
+      gdb.tickets.push(ticket);
     }
     try { localStorage.setItem(GLS, JSON.stringify(gdb)); } catch (e) {}
     toast(`Sent ${lastResult.reward.length} ticket${lastResult.reward.length === 1 ? "" : "s"} to your wallet.`);
@@ -237,7 +244,7 @@
     return `${r.label}\n(${r.tier}, d20 ${r.roll}, severity ${r.sev})` +
       (r.desc ? `\n${r.desc}` : "") +
       (r.resolve ? `\nResolve: ${r.resolve}` : "") +
-      (r.reward && r.reward.length ? `\nReward: ${r.reward.map(t => `${t.tier} ${t.cat}`).join(" + ")}` : "");
+      (r.reward && r.reward.length ? `\nReward: ${r.reward.map(ticketLabel).join(" + ")}` : "");
   }
 
   $("btnCopy").addEventListener("click", async () => {
