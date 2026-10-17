@@ -4,14 +4,14 @@
  * Depends on: config, dom, state, effects (runtime). */
 (function (C) {
   function slotLine(ab, i) {
-    return "[" + C.SLOT_KEYS[i] + "] " + ab.name + " — " + ab.op +
+    return "[" + C.SLOT_KEYS[i] + "] " + ab.name + ": " + ab.op +
       (ab.element ? "/" + ab.element : "") +
       (ab.cdLeft > 0 ? " (" + ab.cdLeft.toFixed(0) + "s cd)" : "");
   }
 
   function abLine(ab) {
-    return ab.name + " — " + ab.op +
-      (ab.element ? "/" + ab.element : "") + " — " + ab.blurb +
+    return ab.name + ": " + ab.op +
+      (ab.element ? "/" + ab.element : "") + ": " + ab.blurb +
       " (" + (C.MANA_COSTS[ab.op] || 0) + "⚡)";
   }
 
@@ -118,7 +118,7 @@
       return d;
     };
     if (mode.kind === "build") {
-      box.appendChild(el("p", "🔧 " + mode.ab.name + " — parts: " + C.G.p.parts +
+      box.appendChild(el("p", "🔧 " + mode.ab.name + ": parts: " + C.G.p.parts +
         "🧩. Builds up to " + mode.ab.power + ". Placed in front of you."));
       C.buildOptions(mode.ab).forEach((o, i) => {
         const b = el("button", (o.ok ? "Build " : "Need " + o.cost + "🧩: ") +
@@ -146,7 +146,7 @@
         box.appendChild(el("p", "Stash is empty. New powers land here when slots are full."));
       } else {
         box.appendChild(el("p", "1) pick a stashed power" +
-          (mode.pick ? ": " + mode.pick.name + " — 2) pick a slot:" : ""), "small"));
+          (mode.pick ? ": " + mode.pick.name + ": 2) pick a slot:" : ""), "small"));
         G.p.stash.forEach((s, i) => {
           const b = el("button", (mode.pick === s ? "▶ " : "") + abLine(s),
             "draftBtn" + (mode.pick === s ? " sel" : ""));
@@ -167,6 +167,6 @@
       box.appendChild(done);
     }
     C.ui.draftTitle.textContent = mode.kind === "build" ? "🔧 Tinker bench"
-      : mode.kind === "new" ? "🎰 Slots full — draft!" : "🎒 Stash manager";
+      : mode.kind === "new" ? "🎰 Slots full: draft!" : "🎒 Stash manager";
   }
 })(window.Casino);

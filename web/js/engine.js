@@ -506,7 +506,7 @@ window.ChaosEngine = (function () {
   }
 
   function jumpCandidates(tree, category, fromId, unlocked) {
-    if (!Number.isInteger(fromId)) throw new ChaosError("unlock a node first — jumps launch from unlocked nodes");
+    if (!Number.isInteger(fromId)) throw new ChaosError("unlock a node first: jumps launch from unlocked nodes");
     const unlockedSet = new Set(unlocked);
     if (!unlockedSet.has(fromId)) throw new ChaosError(`chosen node ${fromId} is not unlocked`);
     const from = tree.byId[fromId];

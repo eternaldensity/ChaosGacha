@@ -307,7 +307,7 @@
     const at = activeTree();
     $("treeCount").textContent = DB.trees.length
       ? `${DB.trees.length} tree${DB.trees.length > 1 ? "s" : ""} · active: ${at ? at.name : "none"}`
-      : "No trees yet — generate one below.";
+      : "No trees yet: generate one below.";
     const warn = $("verWarn");
     if (at && treeMismatch(at)) {
       warn.style.display = "block";
@@ -396,7 +396,7 @@
           const head = document.createElement("div");
           head.className = "muted small";
           head.textContent = absent.length +
-            " sources aren't in this tree's filter — check the ones to include in the upgrade" +
+            " sources aren't in this tree's filter, check the ones to include in the upgrade" +
             (precheck.size ? " (new ones pre-checked with · new; old exclusions stay out unless checked)."
               : " (nothing pre-checked: this tree can't tell new sources from old exclusions).");
           const list = document.createElement("div");
@@ -441,7 +441,7 @@
         use.title = "Load this tree's generator options into the form to tweak and regenerate";
         use.addEventListener("click", () => {
           writeGenForm(t);
-          toast(`Options from "${t.name}" loaded — tweak and Generate.`);
+          toast(`Options from "${t.name}" loaded: tweak and Generate.`);
         });
         actions.append(use);
       }
@@ -462,7 +462,7 @@
     const st = activeState();
     const total = rt.nodes.length, have = st.unlocked.length;
     const pct = Math.round(have / Math.max(1, total) * 100);
-    $("progHead").textContent = `${have}/${total} (${pct}%) — ${t.name}`;
+    $("progHead").textContent = `${have}/${total} (${pct}%): ${t.name}`;
     $("progBar").style.width = pct + "%";
     const byFile = {}, byClass = {};
     for (const id of st.unlocked) {
@@ -473,7 +473,7 @@
       byClass[cn] = (byClass[cn] || 0) + 1;
     }
     const escJoin = ent => ent.map(([k, v]) => `${k} ${v}`).join(" · ");
-    $("progBody").textContent = escJoin(Object.entries(byFile)) + " — " + escJoin(Object.entries(byClass));
+    $("progBody").textContent = escJoin(Object.entries(byFile)) + ", " + escJoin(Object.entries(byClass));
     box.style.display = "block";
   }
 
@@ -1110,7 +1110,7 @@
     if (!d) { $("viewInfo").textContent = "No tree selected."; return; }
     if (d.isPreview) {
       $("viewInfo").textContent =
-        `Preview · ${d.rt.nodes.length} nodes · not saved — tune the form and re-preview, or create the tree.`;
+        `Preview · ${d.rt.nodes.length} nodes · not saved: tune the form and re-preview, or create the tree.`;
       return;
     }
     $("viewInfo").textContent =
@@ -1392,7 +1392,7 @@
     let actions = "";
     if (isShared()) {
       actions = `<div class="muted small" style="margin-top:8px">` +
-        (unl ? "Unlocked ✓" : "Shared view — read-only.") + `</div>`;
+        (unl ? "Unlocked ✓" : "Shared view (read-only).") + `</div>`;
     } else if (!unl && nd.id !== 0) {
       if (front) {
         const cost = E.nodeCostFor(c.st, c.rt, nd.id, ccx);
@@ -1410,7 +1410,7 @@
           dist[nd.id] != null && dist[nd.id] <= 1 + t.n);
         const play = nodeJumpPlay(c.rt, c.st, nd.id);
         if (!skipOk && !play) {
-          actions = `<div class="muted small" style="margin-top:8px">Not adjacent — reach it with a skip / jump / hop ticket (Tickets tab).</div>`;
+          actions = `<div class="muted small" style="margin-top:8px">Not adjacent: reach it with a skip / jump / hop ticket (Tickets tab).</div>`;
         } else {
           actions = `<div class="row" style="margin-top:8px">` +
             (skipOk ? `<button class="primary" data-act="skip">Unlock with Skip →</button>` : "") +
@@ -1541,7 +1541,7 @@
     legend.setAttribute("fill", "#9aa0b0"); legend.setAttribute("font-size", "10");
     const totalConns = new Set(c.rt.adj[nd.id] || []).size;
     const hidden = totalConns - nbs.length;
-    legend.textContent = `${nd.name} — ${nbrPages > 1 ? `${pageIds.length} of ` : ""}${nbs.length} shown` +
+    legend.textContent = `${nd.name}: ${nbrPages > 1 ? `${pageIds.length} of ` : ""}${nbs.length} shown` +
       (hidden ? ` · ${hidden} hidden` : "") + " (tap a dot to inspect)";
     svg.appendChild(legend);
   }
@@ -1732,7 +1732,7 @@
     // but each action still spends a single ticket. Grouping is by label so
     // only runs that look the same collapse.
     inv.innerHTML = "";
-    if (!st.inventory.length) inv.innerHTML = "<li class='muted'>No tickets — award one above.</li>";
+    if (!st.inventory.length) inv.innerHTML = "<li class='muted'>No tickets: award one above.</li>";
     const renderTicketRow = (t, count) => {
       const li = document.createElement("li");
       // Wrap: the label takes the first line, the 100%-wide controls
@@ -1740,7 +1740,7 @@
       li.style.flexWrap = "wrap";
       const note = E.gambleNote(t);
       const stack = count > 1
-        ? ` <span class="pill" title="Stack of ${count} identical tickets — each action spends one.">×${count}</span>`
+        ? ` <span class="pill" title="Stack of ${count} identical tickets: each action spends one.">×${count}</span>`
         : "";
       li.innerHTML = `<div class="grow"><b${note ? ` title="${esc(note)}"` : ""}>${esc(ticketLabel(t))}${stack}</b>` +
         (note ? `<div class="small muted">🎲 ${esc(note)}</div>` : "") + `</div>`;
@@ -1778,7 +1778,7 @@
       } else if (t.kind === "jump" || t.kind === "choice") {
         const fromIds = st.unlocked.filter(u => u !== 0);
         if (!fromIds.length) {
-          ctl.appendChild(emptyNote("Unlock a node first — jumps launch from unlocked nodes."));
+          ctl.appendChild(emptyNote("Unlock a node first: jumps launch from unlocked nodes."));
         } else {
           const fromSel = document.createElement("select");
           fromSel.innerHTML = nodeOptions(fromIds, rt);
@@ -1989,7 +1989,7 @@
         `${ids.length} unlockable node${ids.length === 1 ? "" : "s"}`);
     };
     if (!ids.length) {
-      box.innerHTML = "<li class='muted'>Nothing on the frontier — reach further with tickets.</li>";
+      box.innerHTML = "<li class='muted'>Nothing on the frontier: reach further with tickets.</li>";
       return;
     }
     for (const id of ids.slice(unlockPage * UNLOCK_PAGE, (unlockPage + 1) * UNLOCK_PAGE)) {
@@ -2077,7 +2077,7 @@
     } else if (scope === "skip") {
       if (!skips.length) {
         $("planCount").textContent = "";
-        box.innerHTML = "<li class='muted'>No skip tickets held — award one above.</li>";
+        box.innerHTML = "<li class='muted'>No skip tickets held: award one above.</li>";
         $("planPage").textContent = "";
         return;
       }
@@ -2098,8 +2098,8 @@
       if (!jumps.length || !fromIds.length) {
         $("planCount").textContent = "";
         box.innerHTML = "<li class='muted'>" +
-          (!jumps.length ? "No jump/choice tickets held — award one above."
-            : "Unlock a node first — jumps launch from unlocked nodes.") + "</li>";
+          (!jumps.length ? "No jump/choice tickets held: award one above."
+            : "Unlock a node first: jumps launch from unlocked nodes.") + "</li>";
         $("planPage").textContent = "";
         return;
       }
@@ -2192,7 +2192,7 @@
     $("planNext").disabled = planPage >= pages - 1;
     applyPlanVisibility();
     if (!rows.length) {
-      box.innerHTML = "<li class='muted'>Nothing matches — loosen the filters.</li>";
+      box.innerHTML = "<li class='muted'>Nothing matches: loosen the filters.</li>";
       return;
     }
     for (const r of rows.slice(planPage * PLAN_PAGE, (planPage + 1) * PLAN_PAGE)) {
@@ -2200,7 +2200,7 @@
         const li = document.createElement("li");
         li.innerHTML = `<div class="grow"><b>Hidden node #${r.id}</b> <span class="pill">hidden</span><br>` +
           `<span class="muted small">reachable by ${esc(scope)}${r.from != null ? ` from #${r.from}` : ""}` +
-          `${r.hops != null ? ` · ${hopTxt(r.hops)}` : ""} — not included in this shared view</span></div>`;
+          `${r.hops != null ? ` · ${hopTxt(r.hops)}` : ""}: not included in this shared view</span></div>`;
         box.appendChild(li);
         continue;
       }
@@ -2381,7 +2381,7 @@
     const banner = $("shareBanner");
     if (banner) {
       $("shareBannerText").textContent =
-        "Only the owner's visible and unlocked nodes are included — never the seed, " +
+        "Only the owner's visible and unlocked nodes are included: never the seed, " +
         "generation settings, or hidden nodes. Unlocking and awarding are disabled." +
         (SHARED && SHARED.url ? " Data loaded from " + SHARED.url : "");
       banner.style.display = "block";
@@ -2449,7 +2449,7 @@
     $("shareStatus").textContent = "Uploading…";
     try {
       const out = await window.ChaosPaste.upload(text, {
-        title: (c.tree.name || "Chaos Tree") + " — shared view",
+        title: (c.tree.name || "Chaos Tree") + " (shared view)",
         expiration: $("shareExpiry").value
       });
       shareUpload = out;
@@ -2479,7 +2479,7 @@
     if (!/^https?:\/\//.test(u)) return toast("Enter the raw https:// URL of your paste.", true);
     $("shareLink").value = shareLinkFor(u);
     $("shareResult").style.display = "block";
-    $("shareStatus").textContent = "Link ready — copying it shares this view.";
+    $("shareStatus").textContent = "Link ready: copying it shares this view.";
   });
   if ($("shareDelete")) $("shareDelete").addEventListener("click", async () => {
     if (!shareUpload) return;
@@ -2626,7 +2626,7 @@
     b.className = "pill";
     b.style.cssText = "margin:2px;min-height:36px;";
     b.dataset.cls = cl.name;
-    b.title = `rarity < ${cl.max} — click to hide/show`;
+    b.title = `rarity < ${cl.max}: click to hide/show`;
     b.innerHTML = `<span class="dot" style="background:${esc(cl.color)}"></span>${esc(cl.name)}`;
     b.addEventListener("click", () => {
       if (hiddenClasses.has(cl.name)) hiddenClasses.delete(cl.name);

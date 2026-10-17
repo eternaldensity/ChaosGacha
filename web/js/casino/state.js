@@ -94,7 +94,7 @@
       C.showCard(spoils ? "Last run's spoils: " + spoils : "Soul traded: +100 coins",
         spoils ? "The dead man's machine provides. Spend it well."
           : "Slots give coins/tickets. Feed tickets to gacha. Security wants your soul. Run.",
-        "Press E at a machine, then move — come back for the loot.", 5200);
+        "Press E at a machine, then move, come back for the loot.", 5200);
     }
   };
 
@@ -103,7 +103,7 @@
     C.G.title = false;
     C.hideTitle();
     C.showCard("Find a machine, press E, keep moving",
-      "Pulls finish on their own and drop loot on the floor. Guards hear pulls — don't get cornered.",
+      "Pulls finish on their own and drop loot on the floor. Guards hear pulls, don't get cornered.",
       "Deeper doors, better machines. Good luck.", 5200);
   };
 
@@ -431,7 +431,7 @@
       if (Math.random() < 0.35) {
         room.guards.push(C.makeBoss(room, room.danger, room.depth, "roller"));
         C.showCard("🎲 HIGH ROLLER",
-          "The vault's champion. Fast, rich, and rude — kill it for a shower.", "", 3000);
+          "The vault's champion. Fast, rich, and rude: kill it for a shower.", "", 3000);
       }
     }
     if (!room._seen) {
@@ -439,7 +439,7 @@
       const tiers = [...new Set(room.machines.map(m => m.tier))].join(", ");
       C.showCard(room.vault ? "★ VAULT ★ Depth " + room.depth : "Depth " + room.depth + " · Danger " + room.danger.toFixed(1),
         room.vault
-          ? "Top-tier machines, skeleton crew. Grab it all — loudly."
+          ? "Top-tier machines, skeleton crew. Grab it all, loudly."
           : "Machines: " + tiers + ". " + room.guards.length + " guards on floor.",
         room.depth >= 4 ? "Platinum+ country. Watch the timer." : "", 2600);
     }

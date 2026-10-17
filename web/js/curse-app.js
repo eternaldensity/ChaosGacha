@@ -116,7 +116,7 @@
     $("resultCard").style.display = "block";
     updateRewardUI();
     $("resultBody").innerHTML =
-      `<div class="small muted">d20 = ${r.roll} — ${esc(r.tier)}</div>` +
+      `<div class="small muted">d20 = ${r.roll}: ${esc(r.tier)}</div>` +
       `<div class="result-name"><b>${esc(r.label)}</b> <span class="pill">severity ${r.sev}</span></div>` +
       (r.desc ? `<p>${esc(r.desc)}</p>` : "") +
       (r.resolve ? `<p class="small"><b>Resolve:</b> ${esc(r.resolve)}</p>` : "") +

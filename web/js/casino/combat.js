@@ -590,7 +590,7 @@
       mk({ kind: "ticket", tier: "silver" });
       C.showCard("💀 DEBT COLLECTOR DOWN",
         "It dropped +" + camt + " coins, gold + silver tickets. Grab them.",
-        "Threat remains ★" + C.G.threat + " — the house has more.", 4000);
+        "Threat remains ★" + C.G.threat + ", the house has more.", 4000);
     }
     const nt = Math.min(5, Math.floor(C.G.kills / 2));
     if (nt > C.G.threat) {
@@ -676,7 +676,7 @@
       C.ui.deathStats.textContent = "Survived " + C.fmtTime(C.G.t) + " · depth " + room.depth +
         " · " + C.G.kills + " kills · " + C.G.pulls + " pulls." + bestTag;
       C.ui.deathLegacy.textContent = "Gone in " + Math.floor(C.G.t) +
-        "s — too fast for a legacy pull. Survive 10s+ to earn one.";
+        "s: too fast for a legacy pull. Survive 10s+ to earn one.";
       C.ui.deathLegacy.style.color = "#878d96";
       C.renderPendingList();
       C.ui.deathBox.classList.add("show");

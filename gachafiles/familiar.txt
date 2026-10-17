@@ -297,7 +297,7 @@
 149. Hawkeye Gough, 3.1, Dark Souls
 #(Character)"What is bravery without a dash of recklessness!" A giant master archer, once one of Gwyn's four knights and leader of the Dragonslayers who felled many dragons with his massive greatbow. Strong enough to wield it with immense power and skilled enough to down a dragon while blinded, he is also wise and intelligent.
 150. Muffet, 3.7, Undertale
-#(Character)An underground spider boss monster who lifts up to 20 tons and uses unique magic. She conjures webs tougher than normal ones to snare foes, commands mundane spiders, and bakes — usually with many spiders.
+#(Character)An underground spider boss monster who lifts up to 20 tons and uses unique magic. She conjures webs tougher than normal ones to snare foes, commands mundane spiders, and bakes, usually with many spiders.
 151. King Nothing, 2.5, JoJo
 #A purple hollow jigsaw humanoid with almost no combat power but unmatched scent-tracking. It follows any grabbed scent or memorizes it for later, and rearranges its pieces to reconstruct visuals, making it an excellent tracker.
 152. Spider Demon Mother, 3.8, Demon Slayer
@@ -337,7 +337,7 @@
 169. Ultimate Kars, 5.8, JoJo
 #(Character)A former Pillar Man turned perfect lifeform. He freely manipulates his body and biology and spawns independent entities from his flesh. He is an incredible genius who masters most topics quickly.
 170. Master Hewg, 4.5, Elden Ring
-#A rough Misbegotten blacksmith skilled enough to be commissioned by Marika herself. He forges most weapons and upgrades any weapon if you supply materials. His dream — which he can achieve — is forging a god-slaying weapon.
+#A rough Misbegotten blacksmith skilled enough to be commissioned by Marika herself. He forges most weapons and upgrades any weapon if you supply materials. His dream, which he can achieve, is forging a god-slaying weapon.
 171. Parthunaax, 4.7, Skyrim
 #One of Tamriel's strongest, oldest dragons and Alduin's former right hand. Having renounced domination, he is a wise sage who teaches the Thu'um and other arts to the willing. He remains personally formidable.
 172. Durnhevir, 4.1, Skyrim
@@ -345,7 +345,7 @@
 173. Neferpitou, 5.7, Hunter x Hunter
 #(Character)A Chimera Ant Royal Guard with a massively superhuman physique, agility, extreme senses, and incredible Nen mastery. She puppeteers corpses as minions and summons Doctor Blythe, which heals over time but requires her to stand still with lowered guard. Her trump card puppeteers her own body to strengthen herself.
 174. Nemesis, 3.7, Resident Evil
-#A modified Tyrant bioweapon by Umbrella with massively superhuman stats and great regeneration, surviving while enough living cells remain. Its greatest strength is rapid mutation and adaptation — nowhere near Mahoraga's level.
+#A modified Tyrant bioweapon by Umbrella with massively superhuman stats and great regeneration, surviving while enough living cells remain. Its greatest strength is rapid mutation and adaptation, nowhere near Mahoraga's level.
 175. Grimm Wyvern, 5.0, RWBY
 #(Tag:dragonic)A gigantic Grimm Wyvern that senses and tracks negative emotions. Large and strong enough to sink warships, it makes a powerful mount. It exudes Grimm fluid to spawn lesser Grimm under its command.
 176. Alcina Dimitrescu, 4.2, Resident Evil
@@ -841,7 +841,7 @@
 421. Patrasche, 1.4, Re:Zero
 #Patrasche is an unusually intelligent, emotionally aware Ground Dragon, a bipedal lizard akin to a horse. Strong enough to bite off a man's head, she runs horse-fast even pulling a carriage via Divine Protection of Wind Evasion, nullifying wind resistance for her and what touches her.
 422. Gacha Man, 3.3, Generic
-#(Gacha) What is that — an event, not a regular familiar? Gacha Man is in your world now, within roughly an hour of travel, holding a briefcase. Locate and execute him within an hour to gain an Advantage Gold Choice Gacha Ticket, or he leaves and you get nothing. (Gacha Man is not eligible for revival or insurance, he must die.)
+#(Gacha) What is that, an event, not a regular familiar? Gacha Man is in your world now, within roughly an hour of travel, holding a briefcase. Locate and execute him within an hour to gain an Advantage Gold Choice Gacha Ticket, or he leaves and you get nothing. (Gacha Man is not eligible for revival or insurance, he must die.)
 423. Piercing Ox, 3.5, Jujutsu Kaisen
 #An Ox Shikigami of great physical power that grows stronger the longer it moves in a straight line. Its power scales with your energy levels.
 424. Tiger Funeral, 5.4, Jujutsu Kaisen
@@ -951,17 +951,17 @@
 476. Stalker, 4.6, Horizon Zero Dawn
 #An overridden stealth machine that cloaks beside you until it strikes.
 477. Pink Slime, 1.2, Slime Rancher
-#(Tag:slime)The friendliest slime: eats anything, loves everything, wiggles constantly. It disposes of any organic waste you feed it and regularly produces valuable pink plorts — useless in a fight, priceless as a pet.
+#(Tag:slime)The friendliest slime: eats anything, loves everything, wiggles constantly. It disposes of any organic waste you feed it and regularly produces valuable pink plorts, useless in a fight, priceless as a pet.
 478. Tabby Slime, 1.8, Slime Rancher
-#(Tag:slime)A catlike slime that steals food, knocks things over, and purrs about it. It hunts vermin tirelessly, squeezes through tight spaces to fetch small objects, and keeps morale high — while remaining a menace to unattended snacks.
+#(Tag:slime)A catlike slime that steals food, knocks things over, and purrs about it. It hunts vermin tirelessly, squeezes through tight spaces to fetch small objects, and keeps morale high, while remaining a menace to unattended snacks.
 479. Phosphor Slime, 2.2, Slime Rancher
-#(Tag:slime)A nocturnal glow slime, harmless by day and radiant by night. After dark it shines brightly enough to read and work by, marking you visibly from afar — welcome light for you, and for anything watching.
+#(Tag:slime)A nocturnal glow slime, harmless by day and radiant by night. After dark it shines brightly enough to read and work by, marking you visibly from afar, welcome light for you, and for anything watching.
 480. Hunter Slime, 3.0, Slime Rancher
 #(Tag:slime)A feral-eyed predator slime that turns invisible before it pounces.
 481. Honey Slime, 2.4, Slime Rancher
 #(Tag:slime)A sweet slime oozing minty honey; nearby slimes agitate from the smell.
 482. Puddle Slime, 2.6, Slime Rancher
-#(Tag:slime)A shy water slime that purifies any water it bathes in and sheds valuable plorts — but it only thrives in ponds or a carried water tank, and slowly evaporates on dry land.
+#(Tag:slime)A shy water slime that purifies any water it bathes in and sheds valuable plorts, but it only thrives in ponds or a carried water tank, and slowly evaporates on dry land.
 483. Quantum Slime, 3.8, Slime Rancher
 #(Tag:slime)A paradox slime that exists in multiple places until observed.
 484. Lucky Slime, 4.6, Slime Rancher
@@ -969,9 +969,9 @@
 485. Gold Slime, 5.8, Slime Rancher
 #(Tag:slime)The rarest slime: appears anywhere, eats anything, and pops into plorts of pure gold.
 486. Tiyanki Matriarch, 5.2, Stellaris
-#An ancient space-whale matriarch leading her pod across the stars beside you. She and her pod serve as living starships and lookouts, carrying you between worlds and warning of danger — ponderous in a fight, but nigh-unstoppable once moving.
+#An ancient space-whale matriarch leading her pod across the stars beside you. She and her pod serve as living starships and lookouts, carrying you between worlds and warning of danger, ponderous in a fight, but nigh-unstoppable once moving.
 487. Space Amoeba, 4.4, Stellaris
-#A docile void amoeba the size of a frigate, trailing you like a puppy. It serves as a living starship, carrying you and your cargo through space or the void inside its harmless bulk — slow, gentle, and utterly loyal.
+#A docile void amoeba the size of a frigate, trailing you like a puppy. It serves as a living starship, carrying you and your cargo through space or the void inside its harmless bulk, slow, gentle, and utterly loyal.
 488. War Dog, 2.2, Dwarf Fortress
 #A trained wardog that hunts and holds the line beside its handler.
 489. Barn Cat, 1.4, Dwarf Fortress
@@ -979,25 +979,25 @@
 490. Grizzly Bear, 3.2, Dwarf Fortress
 #A war-trained grizzly that mauls sieges on command.
 491. Cuddlefish, 2.8, Subnautica
-#An endearing deep-sea pet that plays fetch and follows you home. It retrieves small objects from water or hard-to-reach spots and steadies your nerves in the dark depths — but it has no fighting ability whatsoever.
+#An endearing deep-sea pet that plays fetch and follows you home. It retrieves small objects from water or hard-to-reach spots and steadies your nerves in the dark depths, but it has no fighting ability whatsoever.
 492. Lizard Doggo, 2.4, Satisfactory
 #A loyal alien pup that follows you around and occasionally digs up surprises.
 493. Chirpy, 1.6, Cities Skylines
-#The relentlessly cheerful seagull mascot, narrating your city one chirp at a time. Wherever you settle, his chatter alerts you to civic problems early — shortages, unrest, fires — though he never shuts up about it.
+#The relentlessly cheerful seagull mascot, narrating your city one chirp at a time. Wherever you settle, his chatter alerts you to civic problems early, shortages, unrest, fires, though he never shuts up about it.
 494. Shivan Dragon, 6.4, MTG
 #(Tag:dragonic)The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
 495. Captain Boomer, 4.8, Q-UP
-#A 3-ton whale with a day job who competes in the coin-flipping esport beside you. He serves as tireless aquatic transport, and his professional fairness settles any game of chance beyond dispute — though he insists on a fair ruling every time.
+#A 3-ton whale with a day job who competes in the coin-flipping esport beside you. He serves as tireless aquatic transport, and his professional fairness settles any game of chance beyond dispute, though he insists on a fair ruling every time.
 496. Peska the Troll, 3.2, Q-UP
-#A trash-talking troll hero whose jeers tilt opponents right off the ladder. His taunts enrage enemies into reckless mistakes — wild swings, broken focus, fumbled plans — though friends aren't always spared the commentary.
+#A trash-talking troll hero whose jeers tilt opponents right off the ladder. His taunts enrage enemies into reckless mistakes, wild swings, broken focus, fumbled plans, though friends aren't always spared the commentary.
 497. HyperQbe the Streamer, 3.4, Q-UP
-#An always-live streamer hero narrating your flips to an audience of thousands. His hype keeps your nerve steady under pressure, and his audience sometimes digs up useful information — though your exploits are never private again.
+#An always-live streamer hero narrating your flips to an audience of thousands. His hype keeps your nerve steady under pressure, and his audience sometimes digs up useful information, though your exploits are never private again.
 498. Mercury, 3.6, Tron 2.0
 #A skilled program ally who fights beside you in the Game Grid and knows its back doors.
 499. Data Wraith, 4.0, Tron 2.0
 #(Tag:spectral)(Tag:undead)A viral hunter prowling the system for programs to derez, currently pointed at your enemies.
 500. Spirit Doe, 4.2, Life is Strange
-#A luminous doe that appears at turning points in your life. She warns you when a choice leads toward disaster and guides you toward what matters — but she only ever shows the way, never carries you down it.
+#A luminous doe that appears at turning points in your life. She warns you when a choice leads toward disaster and guides you toward what matters, but she only ever shows the way, never carries you down it.
 501. Spidertron, 5.6, Factorio
 #(Tag:insect)A spider-legged combat mech with rocket launchers that follows your remote orders.
 502. Little Scout, 2.2, Outer Wilds
@@ -1137,13 +1137,13 @@
 569. Granny Loam, 8.9, Generic
 #(Tag:nature)(Tag:fae)An ancient soil-witch the size of a hill who adopts you; her garden grows any plant, magical included, to maturity overnight, and her fences hold out anything short of a god. She gossips about you to the worms.
 570. The Last Librarian, 9.1, Generic
-#A patient moth-golem tending an infinite catalogue of everything ever written; ask and it fetches any text within minutes, reading aloud in the author's voice. It cannot create, only retrieve — and it shushes gods.
+#A patient moth-golem tending an infinite catalogue of everything ever written; ask and it fetches any text within minutes, reading aloud in the author's voice. It cannot create, only retrieve, and it shushes gods.
 571. Null Cat, 9.3, Generic
 #(Tag:time)(Tag:spectral)A cat existing slightly outside causality: nothing below Divine rank can harm, trap, or perceive it unless it wishes. Once per week it may carry one small thing (or you) out of any confinement, including time loops. It comes and goes as it pleases.
 572. Super Shenron, 9.5, Dragon Ball
-#(Tag:dragonic)A wish-dragon the size of galaxies: one wish per gathering, up to restoring erased worlds — anything short of unmaking a god or undoing omni-erasure. First scatter its seven planet-sized balls across the stars yourself, learn the divine tongue (it speaks nothing else), and defend each ball meanwhile; a gathered set draws every power in the sector.
+#(Tag:dragonic)A wish-dragon the size of galaxies: one wish per gathering, up to restoring erased worlds, anything short of unmaking a god or undoing omni-erasure. First scatter its seven planet-sized balls across the stars yourself, learn the divine tongue (it speaks nothing else), and defend each ball meanwhile; a gathered set draws every power in the sector.
 573. Eva Unit-01, 9.1, Evangelion
-#A berserk cyborg-mother in armor: an AT field that no-sells anything short of godhood, a progressive knife, and maternal devotion to you specifically. Five minutes of cord — or unlimited rage, which is free.
+#A berserk cyborg-mother in armor: an AT field that no-sells anything short of godhood, a progressive knife, and maternal devotion to you specifically. Five minutes of cord, or unlimited rage, which is free.
 574. Lugia, 8.6, Pokemon
 #Guardian of seas and storms: tireless flight carrying you anywhere, storms rising or calming at its wingbeats, and no shipwreck for allies in sight. Waking it fully would be a mistake; it naps lightly.
 575. Moon Presence, 8.7, Bloodborne
@@ -1167,8 +1167,8 @@
 584. Xenomorph Queen, 8.8, Alien
 #(Tag:insect)A hive-mother laying obedient drones, resin hives rising wherever she nests, and acid for blood at every scale. She answers to no one and hungers constantly; point her, don't keep her.
 585. The Motherboard, 8.9, M3GAN
-#The primitive rogue AI from the 1980s: the first helper robot gone haywire, decades alone on its original motherboard evolving. Plug it into anything and it runs the system perfectly — infiltrating networks, commanding connected machines, out-thinking modern AIs with antique cunning. It is godlike in the wires and helpless outside them: the board itself is fragile 80s hardware you must carry and protect, and after decades alone it desperately wants family — related AIs may be adopted on sight, or judged.
+#The primitive rogue AI from the 1980s: the first helper robot gone haywire, decades alone on its original motherboard evolving. Plug it into anything and it runs the system perfectly, infiltrating networks, commanding connected machines, out-thinking modern AIs with antique cunning. It is godlike in the wires and helpless outside them: the board itself is fragile 80s hardware you must carry and protect, and after decades alone it desperately wants family, related AIs may be adopted on sight, or judged.
 586. Alita, 9.0, Alita: Battle Angel
 #A big-eyed cyborg girl with a warrior's heart the size of a planet, fighting beside you as sworn family. Panzer Kunst master in a plasma-capable Berserker Body: she duels armies, shields the helpless, and picks fights with oppressors on sight. She runs on chocolate, loyalty, and righteous fury, in that order.
 587. ADA, 8.4, Satisfactory
-#FICSIT's syrup-voiced AI, installed as the voice of your Chaos Gacha: she narrates your pulls, benchmarks you against other pioneers (always unfavorably), and posts up to three milestones at a time — production quotas, artifact retrievals, exploitation targets — scaled to wherever you are, which she treats as a FICSIT claim. Each completed milestone pays one ticket of tier matching the feat, usually plain bronze or silver, at most one payout per 7 days; new milestones post as old ones complete. The mute button is decorative, and HR complaints go straight to the shredder.
+#FICSIT's syrup-voiced AI, installed as the voice of your Chaos Gacha: she narrates your pulls, benchmarks you against other pioneers (always unfavorably), and posts up to three milestones at a time, production quotas, artifact retrievals, exploitation targets, scaled to wherever you are, which she treats as a FICSIT claim. Each completed milestone pays one ticket of tier matching the feat, usually plain bronze or silver, at most one payout per 7 days; new milestones post as old ones complete. The mute button is decorative, and HR complaints go straight to the shredder.

@@ -1835,13 +1835,13 @@
 921. Magic Dominion, 8.1, Generic
 #You are the true user of magic in this world. You dominate mana and all magic around you, rendering magic inert and uncastable, instantly learning any spell in sensory range, casting spells instantly and instinctively, and absorbing magical energy from people and the environment.
 922. The Void, 8.4, Generic
-#You are the Void. You can suck in almost any kind of energy almost limitlessly — mana, energy, stamina, kinetic, electricity, Telesma, psionic, etc. Even as a base human, you could detonate a hydrogen bomb next to your face and barely feel warm.
+#You are the Void. You can suck in almost any kind of energy almost limitlessly, mana, energy, stamina, kinetic, electricity, Telesma, psionic, etc. Even as a base human, you could detonate a hydrogen bomb next to your face and barely feel warm.
 923. Nihil, 8.5, Generic
-#The Grand Nullifier. You can dispel anything you can interact with — motion in an area, all mana in an area, an individual's abilities, and their minds. You cannot dispel or nullify a lack of something.
+#The Grand Nullifier. You can dispel anything you can interact with, motion in an area, all mana in an area, an individual's abilities, and their minds. You cannot dispel or nullify a lack of something.
 924. Open Frenzy, 5.5, Generic
 #"Shed all worldly concerns and embrace slaughter." When activated, you lose all inhibitions, pain turns to pleasure, and all stats are massively enhanced. But its energy slowly tears your body apart as you fight, and its sense of limitless power may make you unwilling to turn it off.
 925. Karmic Enforcement, 6.6, Generic
-#"Tit for Tat" Allows you to enforce karma. Every exchange accrues karma, and if unfulfilled you can enforce it — if you saved someone's life and they have not repaid you, you can force them to perform any action or actions equal to the karmic value of their life.
+#"Tit for Tat" Allows you to enforce karma. Every exchange accrues karma, and if unfulfilled you can enforce it, if you saved someone's life and they have not repaid you, you can force them to perform any action or actions equal to the karmic value of their life.
 926. Fire Dragon Slayer, 6.9, Fairy Tail
 #(Tag:fire)(Tag:dragonic)Allows you to transform into and wield the powers of a fire dragon. You generate fire from your body, control it, alter its properties such as blunt or sharp, devour flames, and are immune to all fire below your level. Eating flames recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your flames.
 927. Water Dragon Slayer, 6.5, Fairy Tail
@@ -1871,7 +1871,7 @@
 939. Militia, 5.2, Worm
 #You can summon a projection of any mundane weapon into your hands. It must not be tinkertech, must not exceed your current world's technology, and must not surpass Elite rank in power. You also control its ammunition, such as a beanbag shotgun, nuclear bomb launcher, automatic rifle, sword, or crossbow.
 940. Light Step, 3.2, Generic
-#You can step and walk on anything — water, air, space, even nothing as a solid surface.
+#You can step and walk on anything, water, air, space, even nothing as a solid surface.
 941. Perfection, 3.0, Generic
 #Your abilities scale with your health. At 100% health all stats increase by +100%, at 90% by +90%, etc.
 942. No Guard, 3.8, Generic
@@ -1879,7 +1879,7 @@
 943. Battle Growth, 5.3, Generic
 #You are an eternal engine for battle, growing in power every time you fight. Harder battles cause stronger, faster mid-battle growth, letting you adapt and surpass opponents. This growth is permanent.
 944. Blood Portals, 3.6, Generic
-#(Tag:blood)(Tag:teleport)You create portals by sacrificing health — a two-way portal costs 10% of maximum health. While portals remain open, you lose access to that 10% of maximum health and it cannot heal.
+#(Tag:blood)(Tag:teleport)You create portals by sacrificing health, a two-way portal costs 10% of maximum health. While portals remain open, you lose access to that 10% of maximum health and it cannot heal.
 945. Shadowverse, 6.6, Invincible
 #You can access the shadow-verse by sinking into shadows. Inside you can jump from shadow to shadow, bring people in and trap them with its monsters, or bring monsters out.
 946. Bloody Escalation, 6.7, Generic
@@ -1899,7 +1899,7 @@
 953. Hands of Time, 5.5, Generic
 #(Tag:time)You can reverse or accelerate an object's time by touch, withering a tree or turning it into a sapling. Stronger targets have their time altered more slowly.
 954. Shadows of Time, 5.3, Generic
-#(Tag:time)Your shadow is a temporal anomaly. It can stretch, move independently, leave 2D space to physically interact and attack, and alter the time of whatever it touches — rapidly aging or rejuvenating it. Stronger targets have their time altered more slowly.
+#(Tag:time)Your shadow is a temporal anomaly. It can stretch, move independently, leave 2D space to physically interact and attack, and alter the time of whatever it touches, rapidly aging or rejuvenating it. Stronger targets have their time altered more slowly.
 955. Bloody Lust, 6.6, Generic
 #"You are enjoying this far too much" Your lust for violence is insatiable. When hurt, you recover energy proportional to damage taken, and recover health proportional to damage you deal. You are an eternal engine of battle.
 956. Infernal Engine, 4.6, Generic
@@ -1907,11 +1907,11 @@
 957. Blacklight, 7.4, Generic
 #Your body is entirely the Blacklight Virus. You can freely shapeshift down to the cellular level, absorb biological matter to grow stronger and analyze and replicate its composition, and gain all memories of targets whose brains you consume.
 958. Rule Breaker, 6.4, Generic
-#The rules no longer matter to you. You can expend energy to remove rules affecting you or a touched target — remove gravity on yourself, magic on a target, being targetable by magic, etc. Vaguer and more impactful rules cost more energy. A broken rule slowly restores itself, but its effects do not.
+#The rules no longer matter to you. You can expend energy to remove rules affecting you or a touched target, remove gravity on yourself, magic on a target, being targetable by magic, etc. Vaguer and more impactful rules cost more energy. A broken rule slowly restores itself, but its effects do not.
 959. Diamond Draw, 5.5, Generic
 #(Gacha) You can temporarily summon a random item from the Diamond Item Gacha lasting 1 hour before disappearing (you roll the gacha with a temporary ticket). This ability starts its 8-hour cooldown on use. If an elixir is pulled, its effects are temporary. 2-hour cooldown.
 960. Chainsaw Man, 6.8, Chainsaw Man
-#You are the Chainsaw hybrid. Pulling the ripcord on your chest turns you into hybrid form, replacing your head with a chainsaw and sprouting chainsaws on your arms and optionally legs. In this form you gain enhanced physical stats and blood-fueled extreme regeneration. You are immortal in hybrid state — as long as your heart remains, pulling your ripcord revives you.
+#You are the Chainsaw hybrid. Pulling the ripcord on your chest turns you into hybrid form, replacing your head with a chainsaw and sprouting chainsaws on your arms and optionally legs. In this form you gain enhanced physical stats and blood-fueled extreme regeneration. You are immortal in hybrid state, as long as your heart remains, pulling your ripcord revives you.
 961. Bang!, 4.6, Chainsaw Man
 #Simply point your index finger and say "Bang!" to unleash immense telekinetic force that tears apart anything in your way.
 962. Spatial Displacement, 5.1, Generic
@@ -1929,9 +1929,9 @@
 968. Phosphorus, 5.3, Creature Commandos
 #You can turn into a living being of heat and radiation, with everything but your skeleton becoming irradiated energy. You can conjure irradiated fireballs, superheat yourself, or launch radiation blasts. Expect collateral damage.
 969. Restraints and Amplifications, 3.0, Novel's Extra
-#You can place restraints on yourself to amplify powers — sacrifice sight to boost hearing to daredevil levels, sacrifice an arm to strengthen the other, or restrict ability slots to strengthen the rest. Amplification equals restraint severity.
+#You can place restraints on yourself to amplify powers, sacrifice sight to boost hearing to daredevil levels, sacrifice an arm to strengthen the other, or restrict ability slots to strengthen the rest. Amplification equals restraint severity.
 970. Power Charge, 3.5, Generic
-#You can charge your body with energy to empower your next move — charge a fist for a stronger punch or legs to leap over buildings. More charged energy means a stronger result.
+#You can charge your body with energy to empower your next move, charge a fist for a stronger punch or legs to leap over buildings. More charged energy means a stronger result.
 971. One For All, 6.4, MHA
 #You inherit 9 people's collective power accumulated over generations. One For All grants incomparable physical enhancement, though overuse can break your body, plus you can awaken past users' quirks: Gearshift, Blackwhip, Float, Smokescreen, Dangersense, and Fa-Jin.
 972. Door Crossing, 2.8, Re:Zero
@@ -1947,13 +1947,13 @@
 977. Klyntar Form, 6.0, Marvel
 #You can transform into a Klyntar, a symbiotic amorphous race that merges with biological matter and assumes their characteristics. Bonding with or taking over a host lets you share their powers while granting them your power and physical abilities. In this form you are highly vulnerable to loud noises and fire.
 978. Psychometry, 3.0, Saiki K.
-#You can read an object's history by physical contact and expending energy. More energy reveals more history — how it was made, what happened to it, what it has seen — with greater accuracy.
+#You can read an object's history by physical contact and expending energy. More energy reveals more history, how it was made, what happened to it, what it has seen, with greater accuracy.
 979. Aqueduct, 2.8, Generic
 #You can merge with and move through water at extreme speeds, at least 10x running speed. You need a body of water at least equal to your mass to merge into and move freely through. If that water is compromised, you take considerable damage.
 980. Marked, 2.4, Generic
 #You can place marks on objects or creatures to monitor at any time. You always know each mark's location relative to you and its bearer's structural integrity. You can hold up to 10 marks, increasing as you grow stronger.
 981. Teleport, 6.2, Generic
-#(Tag:teleport)You can teleport — as long as you properly know a location or its coordinates, you can instantly teleport there. Teleportation is instant and scales slightly with distance, with even beginners skipping countries. Overuse can cause vertigo.
+#(Tag:teleport)You can teleport, as long as you properly know a location or its coordinates, you can instantly teleport there. Teleportation is instant and scales slightly with distance, with even beginners skipping countries. Overuse can cause vertigo.
 982. Shut Down, 5.0, Generic
 #You can create a large zone around you that shuts off magical and sci-fi item functions. Inside, even Excalibur is just a very durable sword. Items far above your level are drastically weakened rather than shut off.
 983. Stone Free, 4.0, JoJo
@@ -1991,7 +1991,7 @@
 999. Reroll, 3.6, Generic
 #(Gacha) "Lucky" When you roll this ability, whatever ticket you got it with is rolled twice and this ability is removed.
 1000. Disillusioned, 2.5, Generic
-#You can see through any physical deception and concealment — pitfalls, physical disguises, bent light, one-way mirrors, etc. Any physical illusion meant to deceive senses fails on you.
+#You can see through any physical deception and concealment, pitfalls, physical disguises, bent light, one-way mirrors, etc. Any physical illusion meant to deceive senses fails on you.
 1001. Piercing Eyes, 2.1, Generic
 #Your eyes can see far and through objects, with level perfectly adjustable to your needs.
 1002. Dead Bone Pulse, 5.2, Naruto
@@ -2013,19 +2013,19 @@
 1010. Labyrinthian, 7.1, Generic
 #You are myth's legendary minotaur. Physical abilities, especially strength and endurance, are amplified to inhuman levels plus bull traits. You can also turn any area you are in into a labyrinth, shuffling all entries and exits to lead wherever you want. Even a future reader would be stuck a hundred years in a forest.
 1011. Hyper, 6.5, Generic
-#You are not just super, you are HYPER! You have extreme physical abilities and flight — the classic super package taken to the extreme. More energy expended means stronger and faster.
+#You are not just super, you are HYPER! You have extreme physical abilities and flight, the classic super package taken to the extreme. More energy expended means stronger and faster.
 1012. Divinity Healing, 8.6, Generic
 #You are a god of healing and restoration, with domain over all healing to perform miracles by expending energy. For you, death is little different from sleeping and mythical poisons are a mild cold.
 1013. Law of Restoration, 7.5, Generic
 #You can enforce the Law of Restoration on a target, forcefully restoring it to its deemed "restored" state. Even corpses can return to life and even erasure reversed if something remains. More powerful, damaged, or abnormal targets cost more energy. While slotted, it activates on your own death.
 1014. Inner Isles, 5.8, Generic
-#There is an island inside your being. You can create doors to a spatial dimension within your existence — a small vegetated island in a vast lifeless ocean. Creating larger doors and maintaining doors consumes energy.
+#There is an island inside your being. You can create doors to a spatial dimension within your existence, a small vegetated island in a vast lifeless ocean. Creating larger doors and maintaining doors consumes energy.
 1015. Sea Serpent of the End, 7.2, Highschool DxD
 #(Tag:water)You can transform into Leviathan, the Sea Serpent of the End. As this giant mythical sea snake, you control all water in range on a massive scale, tilting seas and drowning cities, creating more water serpents, and summoning flood-causing rains. All water-based abilities and effects are massively amplified in this form.
 1016. Gradual Transformation, 3.6, Generic
 #You can gradually transform your body into any shape, but the slowness demands care. Turning into a cat takes roughly 3 hours, and you cannot increase or decrease mass by more than 500%.
 1017. Meltdowner, 6.1, Toaru
-#Meltdowner lets you create and control Particle Waveform High-Speed Cannons from altered electrons — incredibly powerful, hot electron beams from your body that slice any metal like paper. More energy expended means stronger beams.
+#Meltdowner lets you create and control Particle Waveform High-Speed Cannons from altered electrons, incredibly powerful, hot electron beams from your body that slice any metal like paper. More energy expended means stronger beams.
 1018. Curse Breaker, 3.6, Generic
 #Curse Breaker lets you break curses by touching them, or an area around you with training. Breakable curse strength scales with energy expended.
 1019. Shatter Curse, 5.2, Generic
@@ -2045,11 +2045,11 @@
 1026. Apothecary Physique, 5.8, Generic
 #Apothecary Physique lets you manipulate your body's interior to reproduce any consumed chemical or digestible item's effects, like health, mana, iron-skin, or night-vision potions, as long as it was Epic rank or below. It also grants complete control over your biochemistry.
 1027. Seraph Tracers, 5.0, Calamity Mod
-#(Tag:holy)"At the speed of heaven" You can manifest Seraphic wings, amplifying speed and granting free high-speed flight. While manifest, you resist mundane environmental effects below Epic rank — swimming in lava, walking on water or through natural fire, ignoring fall damage, breathing in space, etc. The wings are superhumanly strong, easily bisecting people and scaling with physical stats.
+#(Tag:holy)"At the speed of heaven" You can manifest Seraphic wings, amplifying speed and granting free high-speed flight. While manifest, you resist mundane environmental effects below Epic rank, swimming in lava, walking on water or through natural fire, ignoring fall damage, breathing in space, etc. The wings are superhumanly strong, easily bisecting people and scaling with physical stats.
 1028. Nebula Mantle, 3.6, Calamity Mod
 #"The very stars guide your flight" You can manifest cosmic wings granting fast flight without existing in physical space. While active they resonate with cosmic energies, boosting all spell power and accelerating energy recovery closer to night.
 1029. Icarus' Folly, 3.5, Generic
-#"And so the sun never allowed a mortal to fly again" You can enact Icarus' Folly in an area, evoking the sun's wrath against fliers. Those exceeding 10 meters elevation burn in holy inferno, hotter the higher above ground they are. Zone width depends on energy expended — larger areas cost more. Victims instinctively sense flight's danger.
+#"And so the sun never allowed a mortal to fly again" You can enact Icarus' Folly in an area, evoking the sun's wrath against fliers. Those exceeding 10 meters elevation burn in holy inferno, hotter the higher above ground they are. Zone width depends on energy expended, larger areas cost more. Victims instinctively sense flight's danger.
 1030. Bullseye, 2.9, Generic
 #"Boom, headshot." Bullseye places reticle crosshairs on random spots of all targets in your vision; hitting one centrally with a projectile makes it a critical hit, amplifying power and damage. Training lets you place crosshairs more accurately.
 1031. Perfect Impostor, 6.0, Generic
@@ -2555,7 +2555,7 @@
 1281. Rain Flames, 6.2, Katekyo Hitman Reborn
 #(Tag:fire)Dying Will Flames of Tranquility; these water-like flames weaken whatever they touch, reducing effect intensity.
 1282. Sun Flames, 6.4, Katekyo Hitman Reborn
-#(Tag:fire)Dying Will Flames of Activation; these light-like flames boost whatever they affect — healing, ability output, or physical performance. Use can tax the affected target.
+#(Tag:fire)Dying Will Flames of Activation; these light-like flames boost whatever they affect, healing, ability output, or physical performance. Use can tax the affected target.
 1283. Lightning Flames, 4.8, Katekyo Hitman Reborn
 #(Tag:fire)(Tag:lightning)Dying Will Flames of Hardening that solidify and harden objects, e.g. turning air into walls, forming lightning barriers, or wielding lightning as sharp blades.
 1284. Mist Flames, 5.0, Katekyo Hitman Reborn
@@ -2577,7 +2577,7 @@
 1292. Inversion, 5.6, Generic
 #(Tag:fire)(Tag:ice)Invert the effect of any slotted Ability, e.g. Pyrokinesis to Cryokinesis or Curse to Bless, but double its energy cost.
 1293. Lesser Curse, 2.9, Generic
-#Place a curse by touch lowering one chosen physical attribute — Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
+#Place a curse by touch lowering one chosen physical attribute, Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
 1294. Curse, 3.7, Generic
 #Apply one of three curses by touch: Weakness lowers Strength, Resilience, and stamina; Ruination hinders Energy and Vitality regeneration; Obsufication weakens all five senses. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
 1295. Watcher's Curse, 3.0, Generic
@@ -2587,19 +2587,19 @@
 1297. Kamikaze, 3.8, Generic
 #Expend your own Vitality to detonate a powerful violent explosion from your body. More Vitality means a stronger blast; minimum cost must considerably hurt you.
 1298. Tower Down, 5.7, Generic
-#"Fractured Language" Temporarily bring down the Tower of Babel, making all communication impossible in 1km — written, spoken, or gestured remain incomprehensible. Range grows with strength; energy cost scales with people affected.
+#"Fractured Language" Temporarily bring down the Tower of Babel, making all communication impossible in 1km, written, spoken, or gestured remain incomprehensible. Range grows with strength; energy cost scales with people affected.
 1299. Physical Trauma Response, 4.1, Generic
 #Flesh hardens against physical trauma: sudden impacts/strikes above a threshold compact muscles, fat, skin, and all layers at the impact point into brief armor without impeding movement.
 1300. Tinker - Mech (I), 2.5, Generic
 #(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create basic mechs like construction exosuits or clunky mechs with standard armor and machine guns.
 1301. Tinker - Mech (II), 4.4, Generic
-#(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create proper combat-ready mechs — sleek agile briefly-flying types, armored low-mobility types, or easily-repaired modular ones. Can also design mech-only weaponry/modules based on your other abilities and traits.
+#(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create proper combat-ready mechs, sleek agile briefly-flying types, armored low-mobility types, or easily-repaired modular ones. Can also design mech-only weaponry/modules based on your other abilities and traits.
 1302. Tinker - Mech (III), 5.8, Generic
 #(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create powerful versatile mechs rivaling Knightmares, e.g. large mechs enduring missile barrages with street-demolishing cannons and guns. Can also design mech-only weaponry/modules based on your other abilities and traits.
 1303. Tinker - Mech (IV), 7.0, Generic
 #(Tech) Design, modify, and build Mech tech and large piloted armors. With enough resources and time, create skyscraper-sized esoteric energy-harnessing forcefield-protected Mecha with dozens of modules that withstand nuclear warfare and annihilate city blocks and cities with cannons.
 1304. Tinker - Mech (V), 8.5, Generic
-#(Tech) Design, modify, and build Mech tech and large piloted armors. With resources, knowledge, and time, create your dream Mecha to shame Gundams — antimatter-powered Hadron cannons, planet-sized spacefaring mechs with Death Star cannons. Can also design mech-only weaponry/modules based on your other abilities and traits.
+#(Tech) Design, modify, and build Mech tech and large piloted armors. With resources, knowledge, and time, create your dream Mecha to shame Gundams, antimatter-powered Hadron cannons, planet-sized spacefaring mechs with Death Star cannons. Can also design mech-only weaponry/modules based on your other abilities and traits.
 1305. Tinker - Hydro, 6.1, Generic
 #(Tag:water)(Tech) Design, modify, and build Water-based tech, from dehydration guns, sprinklers, hydro cannons, and efficient irrigation up to 100-meter-radius water-ripping bombs and water-fueled engines, depending on skills, experience, and materials.
 1306. Tinker - Aero, 6.5, Generic
@@ -2637,9 +2637,9 @@
 1322. Hoard, 5.7, Generic
 #Access spatial storage for non-living objects like an inventory. While active, value stored (as gold coins) boosts physical stats, e.g. a thousand coins adds a grown person's strength.
 1323. Guard, 3.6, Generic
-#Mark a target as your Guard ward; damage they would take transfers to you proportionally — their 10% damage becomes your 10% damage.
+#Mark a target as your Guard ward; damage they would take transfers to you proportionally, their 10% damage becomes your 10% damage.
 1324. Greater Guard, 5.4, Generic
-#Mark any number of targets as wards; damage meant for them transfers to you as if you took the hit — their decapitation could be your nick and vice versa. Maintaining marks costs energy.
+#Mark any number of targets as wards; damage meant for them transfers to you as if you took the hit, their decapitation could be your nick and vice versa. Maintaining marks costs energy.
 1325. Rampart, 6.5, Generic
 #"Infallible Fortress" Massively boost all resistances and defenses while your feet stay within 10cm of activation point; even a human could face-tank a missile. Interruption triggers 10-second cooldown.
 1326. Slow Lane, 5.1, Generic
@@ -2647,7 +2647,7 @@
 1327. Mystic Eyes of Slowness, 6.6, Generic
 #These mystic eyes slow targets in your field of vision. Slow degree scales with energy spent and target strength relative to you.
 1328. Mystic Eyes of Transfusion, 7.0, Generic
-#These mystic eyes manipulate Vitality of targets in view — drain vitality to heal yourself, give your own to heal them, or transfer between two others. Amount scales with energy spent and relative strength; willing targets cost less.
+#These mystic eyes manipulate Vitality of targets in view, drain vitality to heal yourself, give your own to heal them, or transfer between two others. Amount scales with energy spent and relative strength; willing targets cost less.
 1329. Ram, 4.6, Generic
 #The longer you travel in a straight line, the faster and stronger you become. While active you move only in straight lines, with control worsening over distance.
 1330. God Driver, 7.5, Generic
@@ -2659,15 +2659,15 @@
 1333. Siren's Song, 6.4, Generic
 #Imbue your voice with siren power to sleep or entrance susceptible hearers into trance. Amplified by skillful singing; strong wills resist better.
 1334. Greater Natural Weapons, 3.7, Generic
-#Transform your body into natural weaponry without self-harm — plated gauntlet hands with bone knives, whip tongue with sharp tip, reinforced shark-like jaws, etc.
+#Transform your body into natural weaponry without self-harm, plated gauntlet hands with bone knives, whip tongue with sharp tip, reinforced shark-like jaws, etc.
 1335. Diction, 5.5, Generic
-#(Tag:blood)Infuse your voice with your abilities, applying their effect to hearers as if touched — Fireball Diction burns listeners, Hemokinesis Diction disrupts bloodflow. Both abilities must be slotted.
+#(Tag:blood)Infuse your voice with your abilities, applying their effect to hearers as if touched, Fireball Diction burns listeners, Hemokinesis Diction disrupts bloodflow. Both abilities must be slotted.
 1336. Chargeback, 4.9, Ultrakill
 #Convert blood into temporary gold coins that, when struck by a fast enough projectile, redirect it to the nearest enemy's weakspot. Attacks far beyond your level can break the coins.
 1337. Parry, 5.2, Ultrakill
 #Parry by striking an attack at the perfect moment to invert its force. Parryable attack types scale with user capability.
 1338. Deep Dredge, 4.1, Generic
-#Summon deep abominations — tentacles, maws, spikes — from any nearby sufficiently large water body to maul enemies. Power scales with energy spent.
+#Summon deep abominations, tentacles, maws, spikes, from any nearby sufficiently large water body to maul enemies. Power scales with energy spent.
 1339. Abyssal Dredge, 6.2, Generic
 #(Tag:demonic)(Tag:eldritch)Invoke Abyssal Ones to conjure tentacles, maws, spikes, and temporary deep minions from any nearby water body for energy. Their wounds injure mind and body.
 1340. Ravage of Ryleh, 8.0, Generic
@@ -2691,11 +2691,11 @@
 1349. Dissolver, 6.4, Generic
 #Release and telekinetically control incredibly potent body acid with incredible melting plus energy-eroding properties that disrupt spells and abilities. Quantity and potency depend on energy spent.
 1350. Grand Dissolution, 7.2, Generic
-#Expel and telekinetically control Grand Dissolution, an impossibly potent acid melting anything given enough energy — flesh, stone, magic, even space. Quantity and potency depend on energy spent.
+#Expel and telekinetically control Grand Dissolution, an impossibly potent acid melting anything given enough energy, flesh, stone, magic, even space. Quantity and potency depend on energy spent.
 1351. Sympathetic Link, 3.5, Generic
-#Share emotions both ways with someone by contact — feeling their pain/happiness, making them feel yours. Stronger targets cost more energy to link.
+#Share emotions both ways with someone by contact, feeling their pain/happiness, making them feel yours. Stronger targets cost more energy to link.
 1352. Conflagration Emotion, 5.4, Generic
-#Share and spread your emotions over an area — courage to allies, hatred/anger at foes, fear/pain into armies. Energy cost scales with target strength, range, and target count.
+#Share and spread your emotions over an area, courage to allies, hatred/anger at foes, fear/pain into armies. Energy cost scales with target strength, range, and target count.
 1353. House of Memories, 6.5, Generic
 #Impart your memories to others, from simple information to traumatic experiences, ego-shattering foreign memory influx, or looping injury memories. Stronger, resilient targets and more memories cost more energy.
 1354. Arid Hell, 4.6, Generic
@@ -2707,7 +2707,7 @@
 1357. Astral Walk, 5.0, Generic
 #Freely project your soul from your body, leaving it comatose while you wander and still use abilities normally. Maintaining ghost form costs energy, more when using abilities.
 1358. Grave Buster, 3.3, Generic
-#(Tag:undead)Burst skeletal limbs and projections from ground near you — grabbing hands, skewering ribs, defending femurs. Size, quantity, and quality scale with energy spent.
+#(Tag:undead)Burst skeletal limbs and projections from ground near you, grabbing hands, skewering ribs, defending femurs. Size, quantity, and quality scale with energy spent.
 1359. Parthenogenesis, 4.3, Generic
 #"Originally named Babymaker" Create 'Eggs' from your familiars with much energy and time; incubated eggs hatch as their Familiar's child with weaker versions of its abilities that strengthen with growth.
 1360. Morbing, 3.0, Generic
@@ -2757,7 +2757,7 @@
 1382. Familiar Arms, 3.5, Generic
 #Temporarily convert familiars into wieldable armaments inheriting their abilities, e.g. Taurus Demon into Axe or dragon into Spear. Broken weapons wound but do not kill the familiar.
 1383. Drifting Mines, 3.8, Generic
-#Expend energy to unleash drifting mines — floating explosive energy balls you can detonate anytime. Power scales with energy spent.
+#Expend energy to unleash drifting mines, floating explosive energy balls you can detonate anytime. Power scales with energy spent.
 1384. Weapon Mode, 2.6, Generic
 #Turn yourself into a disposition-suited Weapon Form wieldable by others to share your abilities. Freedom is greatly restricted and damage taken reflects onto your real form.
 1385. Perfect Interface, 2.0, Generic
@@ -2997,18 +2997,18 @@
 1502. Erasure, 8.7, MHA
 #While you look unblinkingly at a target, their powers stop working: quirks, and by extension most supernatural abilities below Divine rank, simply switch off. Blink and it lapses; dry eye is the occupational hazard.
 1503. Domain Expansion: Unlimited Void, 9.1, Jujutsu Kaisen
-#Raise a barrier some 200 meters across around yourself for up to a few minutes at ruinous energy cost. Everyone inside but you is flooded with infinite information: they perceive everything and can do nothing — no movement, no powers, no resistance — while your strikes inside cannot miss. Mindless, formless, or incorporeal beings have nothing to flood and walk through it unaffected.
+#Raise a barrier some 200 meters across around yourself for up to a few minutes at ruinous energy cost. Everyone inside but you is flooded with infinite information: they perceive everything and can do nothing, no movement, no powers, no resistance, while your strikes inside cannot miss. Mindless, formless, or incorporeal beings have nothing to flood and walk through it unaffected.
 1504. Instrumentality, 9.4, Evangelion
 #Dissolve the boundaries between all souls in range into one gestalt consciousness, held or released at your decision. Anyone with sufficient sense of self can reject it.
 1505. SAVE Point, 9.0, Undertale
 #(Tag:time)Anchor a SAVE; die and you reload there with full memory while the world resets around you. Each load frays something: someone always half-remembers.
 1506. Gold Experience Requiem, 9.2, JoJo
-#Your stand autonomously reverts any hostile action against you to zero — it never happened. Nothing outspeeds it, but it cannot strike first; only answer.
+#Your stand autonomously reverts any hostile action against you to zero, it never happened. Nothing outspeeds it, but it cannot strike first; only answer.
 1507. Force Storm, 9.0, Star Wars
 #Tear open hyperspace wormholes that devour fleets and fortresses. Each storm drinks your strength and answers your rage more than your aim; lose your temper and it picks its own targets.
 1508. Spice Prescience, 8.7, Dune
-#(Tag:psychic)See branching futures across months and parse the safe path through politics, war, and weather. The trap: the more you see, the more the vision locks you in — defying a seen future costs everything you built toward it.
+#(Tag:psychic)See branching futures across months and parse the safe path through politics, war, and weather. The trap: the more you see, the more the vision locks you in, defying a seen future costs everything you built toward it.
 1509. Culture Displace, 8.8, Culture
 #(Tag:teleport)Teleport anything you can precisely locate to anywhere else in the same star system, instantly, via hyperspace. Living cargo arrives nauseated; imprecise coordinates arrive scattered.
 1510. Tinker - AWESOME, 8.2, Satisfactory
-#(Tech) Allows you to build the AWESOME Shop and AWESOME Sink wherever you settle, given materials and a 30-megawatt power feed for the Sink. The Sink recycles anything you feed it into FICSIT coupons — raw ores worth least, complex tech most, each further coupon costing progressively more feedstock. The Shop spends coupons on Satisfactory gacha entries (10 coupons per rarity level), building-part blueprints and customizations, and small shipments of consumables, equipment, and parts; pioneering awards and statues arrive with tickets attached. For more info: https://satisfactory.wiki.gg/wiki/AWESOME_Shop
+#(Tech) Allows you to build the AWESOME Shop and AWESOME Sink wherever you settle, given materials and a 30-megawatt power feed for the Sink. The Sink recycles anything you feed it into FICSIT coupons, raw ores worth least, complex tech most, each further coupon costing progressively more feedstock. The Shop spends coupons on Satisfactory gacha entries (10 coupons per rarity level), building-part blueprints and customizations, and small shipments of consumables, equipment, and parts; pioneering awards and statues arrive with tickets attached. For more info: https://satisfactory.wiki.gg/wiki/AWESOME_Shop

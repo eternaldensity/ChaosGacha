@@ -67,7 +67,7 @@
     }
     C.audio.wave();
     C.showCard("Security wave ★" + C.G.threat,
-      n + " guard(s) converge. Pulls are loud — keep moving.", "", 2200);
+      n + " guard(s) converge. Pulls are loud, keep moving.", "", 2200);
   }
 
   C.update = function (dt) {

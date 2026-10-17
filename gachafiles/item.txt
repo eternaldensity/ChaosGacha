@@ -481,7 +481,7 @@
 241. Plague Canister, 5.7, Calamity Mod
 #(Tag:poison)(Tech) A canister of the Plague, a self-replicating nanomachine virus devouring biomass and turning living things into mindless biomechanically enhanced zombies for its hivemind. Releasing it without sufficient biokinetic or techno mastery dooms the world, though without a core they lack a hivemind command center.
 242. Mehrunes Razor, 7.1, Skyrim
-#Mehrunes Dagon's dagger. Capable of cutting anything the user can interact with — space, time, soul, connections, etc. The only limit is the user, not the dagger.
+#Mehrunes Dagon's dagger. Capable of cutting anything the user can interact with, space, time, soul, connections, etc. The only limit is the user, not the dagger.
 243. Skeleton Key, 8.2, Skyrim
 #Magical key of Nocturnal that can unlock anything the user perceives, from locks and walls to inner potential and portals to other worlds. Its only limit is the user, not the key.
 244. Cloak of Elvenkind, 2.4, DnD
@@ -1351,7 +1351,7 @@
 676. Second Skin, 2.1, Generic
 #A skintight ultra-light black bodysuit that stimulates body and muscles to unlock latent power and physical performance while amplifying sensation; less efficient over other clothing. Tougher than steel and slowly self-mending if torn.
 677. Bucket of Milk, 3.8, Minecraft
-#A bucket with 1 liter of milk that, if drunk in one motion, dispels all current unnatural afflictions — curses, sickness, magical effects, good or bad — but not wounds, lacking restorative properties, nor effects that have become part of the drinker.
+#A bucket with 1 liter of milk that, if drunk in one motion, dispels all current unnatural afflictions, curses, sickness, magical effects, good or bad, but not wounds, lacking restorative properties, nor effects that have become part of the drinker.
 678. Shikai - Ryujin Jakka, 4.7, Bleach
 #A soul-bound spiritual katana manifesting a raging inferno; output, control, and blade strength scale with the user, defaulting to boulder-shattering and house-burning. Amplifies the user's fire abilities. (A/N: Does not give spiritual energy, cannot be evolved).
 679. Bankai - Ryujin Jakka, 7.3, Bleach
@@ -1773,7 +1773,7 @@
 887. Proliferator, 3.8, Dyson Sphere Program
 #A spray that overclocks production lines and multiplies their output.
 888. Strange Matter, 5.2, Dyson Sphere Program
-#Exotic late-game material for the strangest recipes in the tech tree. A lump the size of a coin weighs as much as an anvil, holds staggering energy, and forges components no mundane material can match — if you have the tools and knowledge to work it safely.
+#Exotic late-game material for the strangest recipes in the tech tree. A lump the size of a coin weighs as much as an anvil, holds staggering energy, and forges components no mundane material can match, if you have the tools and knowledge to work it safely.
 889. Antimatter Fuel Rod, 6.2, Dyson Sphere Program
 #Dense annihilation fuel that keeps Icarus flying between stars.
 890. EM Rail Ejector, 4.4, Dyson Sphere Program
@@ -1871,15 +1871,15 @@
 936. Resurrection Scroll, 3.0, Divinity Original Sin
 #Bring an ally back mid-fight; every tactician carries a stack.
 937. Q-Up Coin, 2.0, Q-UP
-#The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty, totally fair — and immune to all luck, fate, and probability manipulation, so its verdict settles any dispute beyond argument.
+#The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty, totally fair, and immune to all luck, fate, and probability manipulation, so its verdict settles any dispute beyond argument.
 938. Identity Disc, 4.0, Tron 2.0
-#A glowing identity disc worn on the back: memory, weapon, and backup in one. Grants disc abilities — a returning energy throw, plus disc subroutines like Seeker or Firewall — and stores a backup that can restore you if you're derezzed. It doesn't make you a program, and the backup restores you rather than cloning an independent copy.
+#A glowing identity disc worn on the back: memory, weapon, and backup in one. Grants disc abilities, a returning energy throw, plus disc subroutines like Seeker or Firewall, and stores a backup that can restore you if you're derezzed. It doesn't make you a program, and the backup restores you rather than cloning an independent copy.
 939. Impossible Shard, 4.6, Q-UP
 #A shard of Impossible rarity; slotting it multiplies everything your build does.
 940. Passenger Blimp, 3.4, Cities Skylines
-#A lumbering passenger blimp that ferries you and up to a dozen passengers or a hold of cargo through the skies in style — slow, comfortable, and landing anywhere flat, needing only time and clear weather.
+#A lumbering passenger blimp that ferries you and up to a dozen passengers or a hold of cargo through the skies in style, slow, comfortable, and landing anywhere flat, needing only time and clear weather.
 941. Space Elevator, 7.2, Cities Skylines
-#A unique-building space elevator you can raise wherever you settle: a tethered beanstalk that lifts you and freight straight into orbit and back, cheaply and endlessly — once anchored, it cannot be moved.
+#A unique-building space elevator you can raise wherever you settle: a tethered beanstalk that lifts you and freight straight into orbit and back, cheaply and endlessly, once anchored, it cannot be moved.
 942. Instant Camera, 1.8, Life is Strange
 #(Tag:time)An instant camera for capturing the moments that matter, before you rewind them.
 943. Planetary Shield, 5.8, Dyson Sphere Program
@@ -1897,9 +1897,9 @@
 949. Signalscope, 2.6, Outer Wilds
 #A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
 950. Ash Twin Project, 7.8, Outer Wilds
-#(Tag:time)The Nomai station at the heart of the 22-minute loop. You hold its secrets: you can detect time loops and anomalies, navigate them safely, and — most precious of all — retain your memories across resets while others forget.
+#(Tag:time)The Nomai station at the heart of the 22-minute loop. You hold its secrets: you can detect time loops and anomalies, navigate them safely, and, most precious of all, retain your memories across resets while others forget.
 951. The Generator, 6.8, Frostpunk
-#A towering coal-fired Generator you can raise at any settlement: it burns coal — or wood, oil, and worse in a pinch — to radiate life-saving warmth across whole districts through even supernatural frost. The city lives or dies with it, so you must feed it fuel and hands around the clock.
+#A towering coal-fired Generator you can raise at any settlement: it burns coal, or wood, oil, and worse in a pinch, to radiate life-saving warmth across whole districts through even supernatural frost. The city lives or dies with it, so you must feed it fuel and hands around the clock.
 952. Steam Hub, 4.0, Frostpunk
 #A portable steam hub extending the Generator's warmth to distant districts.
 953. Atmo Suit, 3.2, Oxygen Not Included
@@ -1929,7 +1929,7 @@
 965. Generator, 3.0, Project Zomboid
 #(Tag:ice)A portable gas generator that keeps the lights and freezers on after the grid dies.
 966. Galaxy Sword, 5.2, Stardew Valley
-#A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen. It never dulls or breaks, and cuts clean through armor, monsters, and magic-resistant hides far beyond mundane steel — though it grants no magic of its own.
+#A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen. It never dulls or breaks, and cuts clean through armor, monsters, and magic-resistant hides far beyond mundane steel, though it grants no magic of its own.
 967. Junimo Hut, 3.8, Stardew Valley
 #A hut housing Junimos who emerge each morning to harvest your crops for you.
 968. SHIELD Flying Car, 4.0, Marvel
@@ -2215,19 +2215,19 @@
 1107. Gavel of Adjournment, 8.8, Generic
 #Strike it to adjourn any conflict within earshot: all combatants must stop fighting for 10 minutes (Divine and below cannot resist; stronger can). Once per day.
 1108. Cradle of Embers, 9.0, Generic
-#(Tag:fire)A brazier holding the last fire of a dead universe; it never goes out, kindles any flame into sun-hot forge fire, and once per year can reignite a dead star — or a dead heart, if it consents.
+#(Tag:fire)A brazier holding the last fire of a dead universe; it never goes out, kindles any flame into sun-hot forge fire, and once per year can reignite a dead star, or a dead heart, if it consents.
 1109. Seed of Yggdrasil, 9.2, Generic
 #(Tag:nature)Plant it in any soil and it grows a world-tree anchor within days: a personal pocket realm that grows with age, perfect health within its roots, and one resurrection at its base per year. Fell the tree and all of it is undone.
 1110. The Honest Die, 9.4, Generic
-#A d20 that lands on exactly what the roller most needs (never what they want) in any game of chance they play for real stakes — dice, cards, coins, wagers, trials by lot. Staged or stakeless flips do nothing, and it reaches no further than the game: no meta-luck, no gacha pulls. Each roll also speaks one truth the roller most needs to hear, aloud, where everyone present can hear it.
+#A d20 that lands on exactly what the roller most needs (never what they want) in any game of chance they play for real stakes, dice, cards, coins, wagers, trials by lot. Staged or stakeless flips do nothing, and it reaches no further than the game: no meta-luck, no gacha pulls. Each roll also speaks one truth the roller most needs to hear, aloud, where everyone present can hear it.
 1111. The Triforce, 9.3, The Legend of Zelda
-#Three relics granting absolute expression of their bearer's dominant virtue: Power, Courage, Wisdom. United, one wish within the world's bounds. It arrives split across the world — you hold only what you can keep.
+#Three relics granting absolute expression of their bearer's dominant virtue: Power, Courage, Wisdom. United, one wish within the world's bounds. It arrives split across the world, you hold only what you can keep.
 1112. Command Block, 9.6, Minecraft
 #Executes one written sentence on the world per redstone pulse, parsed with total literality. Needs power; needs precision; typos are cataclysms.
 1113. Zenith Blade, 8.9, Terraria
 #The culmination of swords: every swing launches a cascade of flying sword-images striking everything in a wide arc. Lesser blades shatter in its presence.
 1114. Hogyoku, 8.7, Bleach
-#Manifests the desires of those around it at godlike speed: wounds close, limits break, evolutions trigger. It serves the strongest will present — not necessarily yours.
+#Manifests the desires of those around it at godlike speed: wounds close, limits break, evolutions trigger. It serves the strongest will present, not necessarily yours.
 1115. Mother Flame, 8.5, One Piece
 #(Tag:fire)A miniature sun in a flask: endless clean power for any machine or city, or one dawn-bright detonation if shattered.
 1116. Type-40 TARDIS, 9.0, Doctor Who
@@ -2237,9 +2237,9 @@
 1118. The Moment, 9.5, Doctor Who
 #The Time Lord weapon with a conscience: it can unmake anything short of a fixed point, but it judges the wielder first and shows them the cost in full. Fail its judgment and it drops you home, disarmed.
 1119. Genesis Device, 9.0, Star Trek
-#Terraform a dead world to lush life in hours — or unmake a living one just as fast. Protomatter instability means inhabited targets may come out wrong; Starfleet will have questions either way.
+#Terraform a dead world to lush life in hours, or unmake a living one just as fast. Protomatter instability means inhabited targets may come out wrong; Starfleet will have questions either way.
 1120. DeLorean Time Machine, 8.9, Back to the Future
-#(Tag:time)Eighty-eight mph time travel for you and your passengers; riders keep their memories across edits, but history pushes back — change too much and you start fading from the photograph. You provide the plutonium (or fusion upgrade), the maintenance, and roads.
+#(Tag:time)Eighty-eight mph time travel for you and your passengers; riders keep their memories across edits, but history pushes back, change too much and you start fading from the photograph. You provide the plutonium (or fusion upgrade), the maintenance, and roads.
 1121. Elder Scroll, 9.1, Elder Scrolls
 #Read a prophecy of anything, past or future. The Scroll bills in sight: temporary blindness for small questions, permanent for large ones. Knowledge first; eyesight negotiable.
 1122. Gravitational Beam Emitter, 9.1, Blame

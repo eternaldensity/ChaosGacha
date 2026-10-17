@@ -79,7 +79,7 @@
     if (B.ammo) bits.push("+" + B.ammo + "💥");
     if (B.parts) bits.push("+" + B.parts + "🧩");
     if (B.maxHp) bits.push("+" + B.maxHp + "❤");
-    return bits.length ? bits.join(" · ") : "nothing yet — spin!";
+    return bits.length ? bits.join(" · ") : "nothing yet: spin!";
   }
 
   function renderBanked() {
@@ -107,7 +107,7 @@
     G.machine = {
       tier, pullsLeft: C.deathPulls(G.t), spinning: false, banked: blankBanked(),
     };
-    C.ui.dmTitle.textContent = "🎰 " + tier.label + " Soul Slot — " +
+    C.ui.dmTitle.textContent = "🎰 " + tier.label + " Soul Slot: " +
       G.machine.pullsLeft + " pulls (depth " + (G.maxDepth || 0) + ", " +
       C.fmtTime(G.t) + ")";
     C.ui.dmTitle.style.color = tier.color;
@@ -149,10 +149,10 @@
           M.spinning = false;
           if (M.pullsLeft > 0) {
             C.ui.spinBtn.disabled = false;
-            C.ui.dmTitle.textContent = "🎰 " + M.tier.label + " Soul Slot — " +
+            C.ui.dmTitle.textContent = "🎰 " + M.tier.label + " Soul Slot: " +
               M.pullsLeft + " pulls left";
           } else {
-            C.ui.spinBtn.textContent = "CASHED OUT — respawn! (R)";
+            C.ui.spinBtn.textContent = "CASHED OUT: respawn! (R)";
             C.ui.spinBtn.disabled = true;
           }
         }
@@ -221,7 +221,7 @@
     const G = C.G, p = G.p;
     const lines = C.STAT_NAMES.map(k =>
       k + " " + (p.stats[k] || 10) + " (" + C.STAT_BLURB[k] + ")");
-    C.ui.sumStats.textContent = "Final stats — " + lines.join(" · ") +
+    C.ui.sumStats.textContent = "Final stats: " + lines.join(" · ") +
       " | move " + Math.round(C.moveSpeed()) + " · pull ×" + C.pullMul().toFixed(2) +
       " · threat ★" + G.threat + " · depth " + (G.maxDepth || 0) +
       " · survived " + C.fmtTime(G.t);
@@ -238,7 +238,7 @@
     });
     if (!G.prizeLog.length) {
       const d = document.createElement("div");
-      d.textContent = "No prizes this run — the machines mourn.";
+      d.textContent = "No prizes this run: the machines mourn.";
       list.appendChild(d);
     }
     C.ui.sumCard.classList.add("hide");

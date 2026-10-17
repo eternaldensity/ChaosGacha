@@ -23,7 +23,7 @@
         (k === "bomb" ? "🧨" : k === "potion" ? "🧪" : "👻") + " " + k + "×" + st.qty +
         (st.qty < 3 && p.satSel === k ? " (+)" : "") + "</span>");
     }
-    C.el("satchel").innerHTML = "[Q] use · [C] cycle · " + (satBits.join("") || "empty — prizes stock it");
+    C.el("satchel").innerHTML = "[Q] use · [C] cycle · " + (satBits.join("") || "empty: prizes stock it");
     const st = p.stats || {};
     const statChip = k => "<span class='tick' title='" + (C.STAT_BLURB[k] || k) + "'>" +
       k + " " + (st[k] || 10) + "</span>";
@@ -39,7 +39,7 @@
     for (let i = 0; i < n; i++) {
       const ab = p.slots[i];
       if (!ab) {
-        abits += "<span class='tick'>[" + C.SLOT_KEYS[i] + "] —</span>";
+        abits += "<span class='tick'>[" + C.SLOT_KEYS[i] + "], </span>";
         continue;
       }
       const cost = C.MANA_COSTS[ab.op] || 0;
@@ -71,7 +71,7 @@
     (C.G.curses || []).forEach(c => bits.push("<span class='bchip'>🎲 " +
       esc(c.label) + " (" + c.tier + (c.edge ? ": " + esc(c.edge) : "") + (c.resolved ? ", ✓" : "") + ")</span>"));
     p.buildLog.forEach(b => bits.push("<span class='bchip " + b.cls + "'>" + esc(b.txt) + "</span>"));
-    C.el("build").innerHTML = bits.join("") || "<span class='bchip'>No prizes yet — pull a gacha.</span>";
+    C.el("build").innerHTML = bits.join("") || "<span class='bchip'>No prizes yet: pull a gacha.</span>";
 
   function esc(s) {
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

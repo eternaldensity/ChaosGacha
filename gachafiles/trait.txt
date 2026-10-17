@@ -213,7 +213,7 @@
 107. Iron Nerves, 2.8, Generic
 #Your nerves are iron; you never flinch or startle, without any loss to your reflexes.
 108. Smell the Magic, 3.4, Generic
-#You smell magic and mysticism, deciphering people through their magical scent — a necromancer reeks of death and decay, an ice magician smells like crisp winter air, etc.
+#You smell magic and mysticism, deciphering people through their magical scent, a necromancer reeks of death and decay, an ice magician smells like crisp winter air, etc.
 109. One Size Fits All, 1.0, Generic
 #(Nsfw) Your partners feel no discomfort from your physical features; your anatomy somehow fits them even at ludicrous sizes.
 110. Salt Detection, 0.1, Generic
@@ -221,11 +221,11 @@
 111. Commander, 3.6, Generic
 #You exert authority and receive obedience from subordinates more effectively, and you organize, manage, command, and sustain their morale better.
 112. Healing... Fluids, 3.7, Generic
-#(Tag:healing)Your sweat, saliva, and cum heal others, scaling with your physical stats. The effect is mild but real — someone can lick sweat off your abs to heal.
+#(Tag:healing)Your sweat, saliva, and cum heal others, scaling with your physical stats. The effect is mild but real, someone can lick sweat off your abs to heal.
 113. Blessed Child, 3.5, Generic
 #Gods favor you, making it easier to garner favor and affection from divine beings, and your Blessing-type abilities are slightly stronger.
 114. Undeniable, 3.9, Generic
-#Your senses cannot be hindered — sand in your eyes will not blind you, and sonic blasts will not deafen you. Only physically removing the organ impairs them.
+#Your senses cannot be hindered, sand in your eyes will not blind you, and sonic blasts will not deafen you. Only physically removing the organ impairs them.
 115. Aware, 3.2, Generic
 #Your awareness far exceeds average; you easily detect problems in your body, resist surprise, and read your surroundings.
 116. Avian Ally, 2.5, Generic
@@ -437,7 +437,7 @@
 219. Big Battery, 3.5, Generic
 #Your energy reserves are noticeably above average, though not at genius level.
 220. Dragon Core, 7.0, Generic
-#(Tag:dragonic)You possess a dragon's energy core instead of ordinary reserves — a power plant where an average mage has a generator.
+#(Tag:dragonic)You possess a dragon's energy core instead of ordinary reserves, a power plant where an average mage has a generator.
 221. Energy Abyss, 7.6, Generic
 #Your energy storage is infinite, though your regeneration and output are unchanged. You can hold the energy equivalent of a billion supernovas, even if you can only conjure a measly fireball.
 222. Lord of Magic, 7.2, Generic
@@ -469,7 +469,7 @@
 235. Lovers, 3.3, Generic
 #You understand others better and express your own feelings more clearly through speech and words. This is essentially talent in communication.
 236. Charming Eyes, 1.6, Generic
-#Your eyes do not hypnotize people like mystical charming eyes — they are simply very pretty.
+#Your eyes do not hypnotize people like mystical charming eyes, they are simply very pretty.
 237. Precise, 3.6, Generic
 #You wield your abilities and spells with exceptional precision and control, and your mastery over your own moves and body is beyond the norm.
 238. Exact, 4.5, Generic
@@ -505,7 +505,7 @@
 253. Flexible, 1.7, Generic
 #You are more flexible than an expert contortionist.
 254. Demon King, 5.6, Generic
-#(Tag:demonic)You are the destined Demon King. Your Darkness and Unholy-related abilities and magic and your physical abilities are greatly enhanced, further increased if your race is demonic or infernal, and you greatly resist all Darkness and Unholy attributes. Demonic and infernal beings are servile and obedient toward you — weaker ones are compelled to serve — and you grow slightly stronger for each creature that submits to you, based on its power.
+#(Tag:demonic)You are the destined Demon King. Your Darkness and Unholy-related abilities and magic and your physical abilities are greatly enhanced, further increased if your race is demonic or infernal, and you greatly resist all Darkness and Unholy attributes. Demonic and infernal beings are servile and obedient toward you, weaker ones are compelled to serve, and you grow slightly stronger for each creature that submits to you, based on its power.
 255. True Hero, 5.8, Generic
 #You are the True Hero blessed by the divines. Your Light and Holy-based abilities and physical abilities are greatly enhanced, and all blessings on you are stronger and longer-lasting. Divine and Clergy-aligned beings regard you with reverence and reward your service, and you gain a temporary boost to all stats when fighting to save someone, scaled to your willpower and the stakes.
 256. Chosen Champion, 7.7, Generic
@@ -527,7 +527,7 @@
 264. Large Pockets, 2.6, Generic
 #Any pocket, backpack, or similar container you own is 10x larger on the inside, without changing the object itself.
 265. Conflict Drive, 4.7, Generic
-#"I love a good challenge." Conflict and worthy opponents are drawn to you like a magnet, challenging your life — but conflict also brings rewards.
+#"I love a good challenge." Conflict and worthy opponents are drawn to you like a magnet, challenging your life, but conflict also brings rewards.
 266. Challenge DLC, 4.0, Generic
 #A challenge board is added to your gacha, offering 3 limited-time quests based on your location, state, and power level. You can take one challenge every 48 hours when the board resets, or every 168 hours after a failure.
 267. Relationship Tracker DLC, 2.5, Generic
@@ -553,7 +553,7 @@
 277. Rabbits Foot, 3.7, Generic
 #You are naturally very lucky and favored by Lady Fate. You can rob a casino blind, and matters without high impact on fate go in your favor. (Does not affect Gacha)
 278. 21 Leaf Clover, 4.7, Generic
-#You are incredibly lucky without seeming superhuman. You almost never lose games of chance unless you choose to — if it is up to chance, it lands in your favour. (Does not affect Gacha)
+#You are incredibly lucky without seeming superhuman. You almost never lose games of chance unless you choose to, if it is up to chance, it lands in your favour. (Does not affect Gacha)
 279. Fortune's Lover, 5.7, Generic
 #You are absurdly lucky, enough for luck alone to count as an ability. Chance falls in your favour and fate bends toward you, though not all luck is good. (Does not affect Gacha)
 280. Hellsing, 4.6, Generic
@@ -567,7 +567,7 @@
 284. Master of Arms, 5.3, Generic
 #You wield any weapon as if you have trained with it for 10 years and bypass any wielding requirements, such as being an angel or chosen hero. All sentient weapons adore you and yearn to be wielded by you.
 285. Qualified, 4.8, Generic
-#You qualify to wield any item or pass through any qualified door, even if the item deems you unworthy like Excalibur. You must be holding the weapon — unarmed combat does not count — and mastery vanishes when you let go.
+#You qualify to wield any item or pass through any qualified door, even if the item deems you unworthy like Excalibur. You must be holding the weapon, unarmed combat does not count, and mastery vanishes when you let go.
 286. Innocuous, 3.1, Generic
 #People are far more forgiving toward you and cannot stay angry at you for long, even in court.
 287. Sharing Is Caring, 4.2, Generic
@@ -617,11 +617,11 @@
 309. Library Mind, 2.9, Generic
 #Your mind is organized and efficient like a library, with slightly faster memory, clarity, and speed.
 310. Embrace, 3.8, Generic
-#Your embrace feels as soft as a mother's love — calming, comforting, and therapeutic. Even an evil man might break down crying in your arms.
+#Your embrace feels as soft as a mother's love, calming, comforting, and therapeutic. Even an evil man might break down crying in your arms.
 311. Transhuman, 3.4, Generic
 #You are transhuman, whatever your race. Genetic and mechanical augments work exceptionally well on you, and you suffer no penalty for changing race or installing cybernetics.
 312. All Trades, 3.9, Generic
-#You hold basic mastery over all mundane skills and mild talent in every field — cooking without burning eggs, basic mechanics, dancing without tripping, wielding a sword without cutting yourself.
+#You hold basic mastery over all mundane skills and mild talent in every field, cooking without burning eggs, basic mechanics, dancing without tripping, wielding a sword without cutting yourself.
 313. Paper Trail, 1.8, Generic
 #You and your familiars always carry the relevant papers. You can reach into your pocket and find whatever legal identification you need.
 314. No Strangers, 2.1, Generic
@@ -1059,7 +1059,7 @@
 530. Anathema, 6.4, Generic
 #You oppose the Gods and Divine, possessing massive resistance to all Divine influence and Authorities, and your physical and magical abilities massively increase against Divine opponents.
 531. Dominant, 4.1, Generic
-#You are naturally dominant and assert yourself on others more easily, while people — especially submissive people — receive your dominance and assertiveness more readily.
+#You are naturally dominant and assert yourself on others more easily, while people, especially submissive people, receive your dominance and assertiveness more readily.
 532. Light Resistance, 3.7, Generic
 #You naturally resist Light and Light-based effects, letting you stare straight at the sun, heavily reduce flashbangs, and resist Light arrows, purification rituals, searing beams of light, etc. This resistance scales with your base stats.
 533. Dark Resistance, 3.5, Generic
@@ -1119,11 +1119,11 @@
 560. Roc, 4.8, Generic
 #(Tag:wind)Race Change - You are a Roc hybrid, mixing a giant elephant-eating hawk with your own race. You possess increased strength and durability, incredible but sensitive eyesight and hearing, and fearsome predatory instincts. You possess large, powerful wings fused to your arms or back, at least as strong as your arms, letting you fly and dive with great speed, plus retractable talons tougher than steel. You possess increased wind affinity but decreased water affinity.
 561. Thunderbird, 5.8, Generic
-#(Tag:avian)(Tag:lightning)Race Change - You are a Thunderbird hybrid, changer of the skies. You possess enhanced physical abilities with further enhanced agility and reflexes, plus greatly enhanced eyesight and hearing. Your wings easily fly at great speeds and flap to release electricity, and your tough, sharp talons crackle with lightning. You naturally change local weather — sunny, rain, hail, etc. — but it consumes a lot of energy. You possess increased wind and lightning affinity, but vulnerability to water and earth.
+#(Tag:avian)(Tag:lightning)Race Change - You are a Thunderbird hybrid, changer of the skies. You possess enhanced physical abilities with further enhanced agility and reflexes, plus greatly enhanced eyesight and hearing. Your wings easily fly at great speeds and flap to release electricity, and your tough, sharp talons crackle with lightning. You naturally change local weather, sunny, rain, hail, etc., but it consumes a lot of energy. You possess increased wind and lightning affinity, but vulnerability to water and earth.
 562. Grand Thunderbird, 6.5, Generic
-#(Tag:avian)(Tag:lightning)Race Change - You are descended from a Grand Thunderbird, an ancient legendary master of weather and lightning. You possess a great physique with incredibly enhanced agility and reflexes, plus unmatched eyesight and hearing. Your wings easily fly at supersonic speeds, and your tough, sharp talons are formidable. You cloak yourself in and discharge electricity from your body. You naturally manipulate local weather — rain, open sky, clouds, even raining lightning. You possess increased wind and lightning affinity, but vulnerability to water and earth.
+#(Tag:avian)(Tag:lightning)Race Change - You are descended from a Grand Thunderbird, an ancient legendary master of weather and lightning. You possess a great physique with incredibly enhanced agility and reflexes, plus unmatched eyesight and hearing. Your wings easily fly at supersonic speeds, and your tough, sharp talons are formidable. You cloak yourself in and discharge electricity from your body. You naturally manipulate local weather, rain, open sky, clouds, even raining lightning. You possess increased wind and lightning affinity, but vulnerability to water and earth.
 563. Ziz, 7.8, Generic
-#(Tag:earth)Race Change - You are a Child of Ziz, Primordial beast rival to Behemoth and Leviathan and ruler of the skies. You possess greatly enhanced physical and magical abilities, and you reveal and hide your true form at will, partially or fully becoming a titanic avian beast. You naturally manipulate weather at will — storms, blizzards, rain, hurricanes, tornadoes, etc. — plus greater lightning. All your weather-based abilities and spells are greatly enhanced. You greatly resist wind, ice, and electricity-based abilities. Your energy and health recovery are enhanced under open skies. You possess decreased water and earth affinity.
+#(Tag:earth)Race Change - You are a Child of Ziz, Primordial beast rival to Behemoth and Leviathan and ruler of the skies. You possess greatly enhanced physical and magical abilities, and you reveal and hide your true form at will, partially or fully becoming a titanic avian beast. You naturally manipulate weather at will, storms, blizzards, rain, hurricanes, tornadoes, etc., plus greater lightning. All your weather-based abilities and spells are greatly enhanced. You greatly resist wind, ice, and electricity-based abilities. Your energy and health recovery are enhanced under open skies. You possess decreased water and earth affinity.
 564. Allowance, 2.2, Generic
 #You receive the equivalent of 2x the daily minimum wage for whatever city/country you currently live in, deposited into your account or wallet every single day.
 565. Kyoi no Hado, 5.7, Street Fighter
@@ -1223,7 +1223,7 @@
 611. Style, 4.2, Ultrakill
 #You have a style meter: the more stylishly you fight, the faster you regenerate Vitality and Energy, up to 3x faster atop all multipliers, provided you stay stylish enough during the fight.
 612. Acid Reflux, 2.1, Generic
-#Whenever a target damages you, all your bodily fluids — blood, spit, sweat, etc. — act as acid toward them, with potency scaling with your physical stats.
+#Whenever a target damages you, all your bodily fluids, blood, spit, sweat, etc., act as acid toward them, with potency scaling with your physical stats.
 613. Sober, 1.8, Generic
 #(Tag:poison)You are immune to all addictive effects: you can use hard drugs, cigarettes, alcohol, venom, mentats, psycho, black lace, etc. every other day and drop them instantly without withdrawal or addiction symptoms.
 614. Variable Gene, 4.9, Generic
@@ -1307,13 +1307,13 @@
 653. Backtalk, 2.4, Life is Strange
 #Weaponized sarcasm: talk your way past anyone by pushing exactly the right buttons.
 654. Glow-Touched, 4.0, I Was a Teenage Exocolonist
-#Bonded with Vertumna's alien Glow, a symbiotic light living in you that lets you see in darkness and sense the presence, health, and mood of living things nearby — and occasionally nudges you toward what it wants.
+#Bonded with Vertumna's alien Glow, a symbiotic light living in you that lets you see in darkness and sense the presence, health, and mood of living things nearby, and occasionally nudges you toward what it wants.
 655. Root Access, 4.2, Tron 2.0
 #System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
 656. Hexagonal Skill Grid, 3.8, Q-UP
 #Your abilities arrange on a hexagonal grid, triggering off coin flips in combo chains.
 657. The City Must Survive, 3.0, Frostpunk
-#No matter the frost or the cost, you will keep the last city alive through the storm. Your leadership stretches food, fuel, and medicine several times further through ruthless rationing, keeps followers warm and obedient through deadly cold with far less shelter, and holds morale under hardship that would break anyone else — but every harsh decree breeds lasting resentment.
+#No matter the frost or the cost, you will keep the last city alive through the storm. Your leadership stretches food, fuel, and medicine several times further through ruthless rationing, keeps followers warm and obedient through deadly cold with far less shelter, and holds morale under hardship that would break anyone else, but every harsh decree breeds lasting resentment.
 658. Rock and Stone, 1.6, Deep Rock Galactic
 #For Rock and Stone! Morale, teamwork, and mineral yields all improve when shouted properly.
 659. Keen Hearing, 2.2, Project Zomboid
@@ -1321,7 +1321,7 @@
 660. Handy, 2.0, Project Zomboid
 #You are handy: maintenance, repairs, and barricading all go faster in your hands.
 661. The Factory Must Grow, 2.4, Factorio
-#You think in production lines: you design, build, and automate workshops, machines, and supply chains faster and better than any sane person should, and every operation you run keeps expanding its output — along with its bottomless appetite for raw materials and space.
+#You think in production lines: you design, build, and automate workshops, machines, and supply chains faster and better than any sane person should, and every operation you run keeps expanding its output, along with its bottomless appetite for raw materials and space.
 662. MIT Graduate, 2.2, Half-Life
 #You hold a doctorate from MIT and solve physics problems the way other people breathe.
 663. Silent Protagonist, 1.8, Half-Life
@@ -1415,23 +1415,23 @@
 707. Death's Secretary, 9.0, Generic
 #(Tag:spectral)You see, hear, and negotiate with the dead of any world as naturally as the living; the dead find you credible and trade favors for remembrance. You cannot compel them.
 708. Rootless, 9.2, Generic
-#No place, oath, curse, or summoning can bind, track, or hold you; teleportation and banishment slide off. This includes Gacha Curses — which are therefore never offered to you, tickets and all — as well as magical restraints, compulsions, and enchantments laid upon you. The price: no blessing, ward, or healing not of your own making can find you either.
+#No place, oath, curse, or summoning can bind, track, or hold you; teleportation and banishment slide off. This includes Gacha Curses, which are therefore never offered to you, tickets and all, as well as magical restraints, compulsions, and enchantments laid upon you. The price: no blessing, ward, or healing not of your own making can find you either.
 709. Jinchuriki, 8.9, Naruto
 #A tailed beast sealed within you: vast reserves, regeneration, and beast modes escalating with tails borrowed. Befriend it and it lends everything; fight it and you fight forever, inside and out.
 710. Quirk Singularity, 8.8, MHA
-#Every power you hold grows roughly one tier-equivalent per year of active use — while control frays in matching step: leakage, misfires, and effects that overshoot their mark. Rest does not pause it; only passing a power on resets its clock (and starts someone else's).
+#Every power you hold grows roughly one tier-equivalent per year of active use, while control frays in matching step: leakage, misfires, and effects that overshoot their mark. Rest does not pause it; only passing a power on resets its clock (and starts someone else's).
 711. God Ki, 8.6, Dragon Ball
 #Divine ki: undetectable by mortal senses, its pressure alone buckles weak wills, calm hands wield planet-breaking output. Rage spends it double; serenity spends it clean.
 712. But It Refused, 8.6, Undertale
 #Refuse one death per week: killing blows leave you standing at a single hit point instead. Fate notices repeat offenders.
 713. Voice of All Things, 8.5, One Piece
-#Hear the voices of all things: objects, beasts, seas, and islands speak, and addressed directly they answer truthfully from their own experience — a sword's history, the sea's mood, what passed this strait. They know only what they have witnessed: nothing of the future, nothing beyond their ken. In crowded seas the chorus never shuts up.
+#Hear the voices of all things: objects, beasts, seas, and islands speak, and addressed directly they answer truthfully from their own experience, a sword's history, the sea's mood, what passed this strait. They know only what they have witnessed: nothing of the future, nothing beyond their ken. In crowded seas the chorus never shuts up.
 714. Mantle-Bearer, 8.5, Halo
 #Forerunner geas of stewardship: absolute authority over Forerunner systems and instinct for galaxy-scale logistics, plus the crushing certainty that every extinction is your fault. The systems obey; the guilt is free.
 715. Untouchable, 8.6, Warhammer 40k
 #You are a Blank: warp, psychic phenomena, and daemonic presences gutter out around you, and psykers sicken in your company. Daemons fear you on sight. Everyone else finds you subtly, inexplicably repellent.
 716. Beloved of the Worm, 9.1, Stellaris
-#(Tag:time)The Worm loves you: time hiccups around you — once per day, reroll up to one minute just lived, keeping full memory of the undone version. And it WILL be fed: leave it living sacrifices at every landing, or it feeds on your crew and companions instead. What was, will be.
+#(Tag:time)The Worm loves you: time hiccups around you, once per day, reroll up to one minute just lived, keeping full memory of the undone version. And it WILL be fed: leave it living sacrifices at every landing, or it feeds on your crew and companions instead. What was, will be.
 717. Eywa Communion, 9.0, James Cameron's Avatar
 #(Tag:nature)Linked to the planetary consciousness: all Pandoran-analog life answers your call and shares its senses with you. Unplug, and the silence aches for weeks.
 718. Mentat, 8.7, Dune

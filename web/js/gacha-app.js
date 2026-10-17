@@ -299,12 +299,12 @@
     $("resultCard").style.boxShadow = `0 0 32px ${cls.color}44, var(--shadow)`;
     if (!keepMulti) $("multiCard").style.display = "none";
     $("resultBody").innerHTML =
-      `<div class="small" style="color:${esc(cls.color)}">— ${esc(cls.name)} ${esc(r.category)}${r.source ? " [" + esc(r.source) + "]" : ""} —</div>` +
+      `<div class="small" style="color:${esc(cls.color)}">${esc(cls.name)} ${esc(r.category)}${r.source ? " [" + esc(r.source) + "]" : ""}</div>` +
       `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${fmtR(r.rarity)}</div>` +
       (tags.length ? `<div style="margin:4px 0">${tagPills(tags)}</div>` : "") +
       `<div class="small muted">${r.odds.toFixed(2)}% odds</div>` +
       (r.d20 != null ? `<div class="small muted">🎲 Gambler d20 → ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</div>` : "") +
-      (r.advantage > 1 ? `<div class="small muted">⚡ Advantage ×${r.advantage} — your pick from ${r.advantage} wheels</div>` : "") +
+      (r.advantage > 1 ? `<div class="small muted">⚡ Advantage ×${r.advantage}: your pick from ${r.advantage} wheels</div>` : "") +
       (r.description ? `<p>${linkify(r.description)}</p>` : "");
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
@@ -385,7 +385,7 @@
       if (DB.history.length > 500) DB.history.length = 500;
       save(); renderStats();
       showResult(chosen, rolls > 1);
-      if (rolls > 1) renderResultList(results, chosen, `⚡ Advantage ×${rolls} — kept your pick`, "★ kept");
+      if (rolls > 1) renderResultList(results, chosen, `⚡ Advantage ×${rolls}: kept your pick`, "★ kept");
     };
     // How the batch is presented once the wheels settle.
     const present = () => {
@@ -445,7 +445,7 @@
   // Advantage batch before the roller has chosen: every result gets a
   // Keep button (plus 👁 to read it), because the best one is their call.
   function renderChoiceList(results, onKeep) {
-    $("multiHead").textContent = `⚡ Advantage ×${results.length} — read them, then keep one`;
+    $("multiHead").textContent = `⚡ Advantage ×${results.length}: read them, then keep one`;
     const ul = $("multiList");
     ul.innerHTML = "";
     for (const r of results) {
@@ -468,7 +468,7 @@
     $("multiCard").style.display = "block";
     $("resultBody").innerHTML =
       `<div class="result-name">⚡ Advantage ×${n}</div>` +
-      `<div class="small muted">${n} wheels landed — read the results below and keep the one you want.</div>`;
+      `<div class="small muted">${n} wheels landed: read the results below and keep the one you want.</div>`;
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
@@ -663,7 +663,7 @@
   function renderTickets() {
     $("ticketCount").textContent = DB.tickets.length ? `(${DB.tickets.length})` : "";
     const ul = $("ticketList");
-    ul.innerHTML = DB.tickets.length ? "" : "<li class='muted'>No tickets — quick-roll above, or add tickets here and spend them.</li>";
+    ul.innerHTML = DB.tickets.length ? "" : "<li class='muted'>No tickets: quick-roll above, or add tickets here and spend them.</li>";
     for (const t of DB.tickets) {
       const li = document.createElement("li");
       const tp = tierOf(t.tier);

@@ -190,7 +190,7 @@
     box.innerHTML = C.pendingCurses.length
       ? "Next run: " + C.pendingCurses.map(c =>
         "🎲 " + esc(c.curse.label) + " (" + c.tier + ": " + esc(c.mod.label) + ")").join(" · ")
-      : "No curses queued — clean soul (coward).";
+      : "No curses queued: clean soul (coward).";
     const btn = C.el("curseNextBtn");
     if (btn) btn.disabled = C.pendingCurses.length >= 3;
   };
@@ -244,7 +244,7 @@
       box.innerHTML = cs.length
         ? cs.map(c => "<span class='tick'>" + (c.resolved ? "✓ " : "🎲 ") +
           esc(c.label) + " (" + c.tier + (c.edge ? ": " + esc(c.edge) : "") + ")</span>").join("")
-        : "<span class='tick'>No curses — clean soul (coward).</span>";
+        : "<span class='tick'>No curses: clean soul (coward).</span>";
     }
     const btn = C.el("curseBtn");
     if (btn) btn.disabled = (C.G ? C.G.curses.length : 0) >= 3;
