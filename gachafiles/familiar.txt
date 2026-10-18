@@ -987,11 +987,11 @@
 494. Shivan Dragon, 6.4, MTG
 #(Tag:draconic)The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
 495. Captain Boomer, 4.8, Q-UP
-#(Tag:tactician)A 3-ton whale with a day job who competes in the coin-flipping esport beside you. He serves as tireless aquatic transport, and his professional fairness settles any game of chance beyond dispute, though he insists on a fair ruling every time.
+#(Tag:aquatic)(Tag:tactician)(Tag:tech)A three-ton leviathan avatar and Q-Up esport champion, a program with a day job in the arena. He manifests as a tireless aquatic mount wherever the network reaches, and his professional fairness settles any game of chance beyond dispute, though he insists on a fair ruling every time.
 496. Peska the Troll, 3.2, Q-UP
-#(Tag:humanoid)A trash-talking troll hero whose jeers tilt opponents right off the ladder. His taunts enrage enemies into reckless mistakes, wild swings, broken focus, fumbled plans, though friends aren't always spared the commentary.
+#(Tag:humanoid)(Tag:tech)(Tag:trickster)A trash-talking troll hero running on Q-Up competition code, an avatar built to tilt opponents right off the ladder. His jeers enrage enemies into reckless mistakes, wild swings, broken focus, fumbled plans, though friends aren't always spared the commentary.
 497. HyperQbe the Streamer, 3.4, Q-UP
-#An always-live streamer hero narrating your flips to an audience of thousands. His hype keeps your nerve steady under pressure, and his audience sometimes digs up useful information, though your exploits are never private again.
+#(Tag:character)(Tag:informant)(Tag:tech)An always-live virtual streamer: a broadcast AI narrating your flips to an audience of thousands across the Q-Up network. His hype keeps your nerve steady under pressure, and his chat sometimes digs up useful information, though your exploits are never private again.
 498. Mercury, 3.6, Tron 2.0
 #A skilled program ally who fights beside you in the Game Grid and knows its back doors.
 499. Data Wraith, 4.0, Tron 2.0
@@ -1197,4 +1197,4 @@
 599. Blooded Yautja, 4.9, Predator
 #(Tag:alien)(Tag:anti-alien)(Tag:fighter)(Tag:stealth)A jungle hunter of a species that lives for the hunt, blooded against the deadliest game its worlds can offer, other aliens included. Cloaking field, thermal vision, plasma caster, wristblades, and a code that only respects prey that can fight back. It will not hunt what it judges helpless.
 600. Arcanaloth, 5.4, DnD
-#(Tag:infernal)(Tag:anti-infernal)(Tag:magician)(Tag:tactician)A jackal-headed fiend of the mercenary yugoloths, broker and enforcer for the lower planes. It turns its claws and its spellbook on demons and devils alike whenever the contract says so, and keeps meticulous ledgers of every soul it has traded. It serves you exactly as long as you keep paying.
+#(Tag:anti-infernal)(Tag:infernal)(Tag:magician)(Tag:tactician)A jackal-headed fiend of the mercenary yugoloths, broker and enforcer for the lower planes. It turns its claws and its spellbook on demons and devils alike whenever the contract says so, and keeps meticulous ledgers of every soul it has traded. It serves you exactly as long as you keep paying.
