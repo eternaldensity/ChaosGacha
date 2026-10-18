@@ -333,6 +333,43 @@ skill	331	Railway Engineering	3.0	Rare	Generic
 skill	332	Theoretical Physics	2.6	Uncommon	Half-Life					
 skill	333	Xenobiology	2.8	Uncommon	Half-Life					
 skill	334	Crowbar Combat	2.2	Uncommon	Half-Life					
+skill	335	Scry	5.1	Epic	MTG					
+skill	336	Barrel Roll	0.4	Trash	Star Fox					
+skill	337	Belter Creole	0.5	Trash	The Expanse					
+skill	338	Running Down Corridors	0.4	Trash	Doctor Who					
+skill	339	Small Talk	0.2	Trash	Generic					
+skill	340	Power Nap	0.3	Trash	Generic					
+skill	341	Microwave Timing	0.2	Trash	Generic					
+skill	342	Coin Spin	0.3	Trash	Generic					
+skill	343	Stone Skip	0.3	Trash	Generic					
+skill	344	Pen Spinning	0.2	Trash	Generic					
+skill	345	Speed Walking	0.3	Trash	Generic					
+skill	346	Cyber Warfare	5.3	Epic	Ghost in the Shell					
+skill	347	Overwatch	5.3	Epic	XCOM					
+skill	348	Micro	5.1	Epic	StarCraft					
+skill	349	Wall Ride	5.2	Epic	Overwatch					
+skill	350	Speed Flip	5.1	Epic	Rocket League					
+skill	351	Chem-Baron Negotiation	5.2	Epic	League of Legends / Arcane					
+skill	352	Madcap Gadgeteering	5.3	Epic	League of Legends / Arcane					
+skill	353	Perfect Recall	8.0	Divine	Generic					
+skill	354	Multiversal Etiquette	8.1	Divine	Generic					
+skill	355	Grandmaster Diplomacy	8.2	Divine	Generic					
+skill	356	Doomsday Prepping	8.4	Divine	Generic					
+skill	357	Field Surgery of the Soul	8.6	Divine	Generic					
+skill	358	Apocalyptic Engineering	8.8	Divine	Generic					
+skill	359	Ultra Instinct	9.1	Transcendent	Dragon Ball					
+skill	360	Nen Contracting	8.9	Divine	Hunter x Hunter					
+skill	361	Ryou: Internal Destruction	8.4	Divine	One Piece					
+skill	362	Kido Mastery	8.4	Divine	Bleach					
+skill	363	Jedi Battle Meditation	8.5	Divine	Star Wars					
+skill	364	Spin Mastery	8.6	Divine	JoJo					
+skill	365	ICEbreaker Dive	8.5	Divine	Cyberpunk 2077					
+skill	366	Psi Operative Training	8.6	Divine	XCOM					
+skill	367	Spectre Authority	8.4	Divine	Mass Effect					
+skill	368	Weirding Way	8.5	Divine	Dune					
+skill	369	Vulcan Mind Meld	8.3	Divine	Star Trek					
+skill	370	Hertza Haeon	8.4	Divine	Alita: Battle Angel					
+skill	371	Panzer Kunst	8.5	Divine	Alita: Battle Angel					
 trait	1	Nothing Wrong Here	4.1	Elite	Generic					
 trait	2	Efficient Physique	2.7	Uncommon	Generic					
 trait	3	Hygienic	1.9	Common	Generic					
@@ -427,7 +464,7 @@ trait	91	Master Pugilist	7.5	Mythical	Generic
 trait	92	Esgod	7.4	Mythical	Generic					
 trait	93	Tinker Supreme	7.9	Mythical	Generic					
 trait	94	Gambler	4.3	Elite	Generic					
-trait	95	Lady Killer	2.8	Uncommon	Generic					
+trait	95	Heartbreaker	2.8	Uncommon	Generic					
 trait	96	Charming Smile	1.3	Common	Generic					
 trait	97	Minty Breath	0.2	Trash	Generic					
 trait	98	Loveable Pervert	2.2	Uncommon	Generic	REF				
@@ -592,8 +629,8 @@ trait	256	Chosen Champion	7.7	Mythical	Generic
 trait	257	Alluring Whisper	2.8	Uncommon	Generic					
 trait	258	Charisma	2.5	Uncommon	Generic					
 trait	259	Sensual Presence	3.6	Rare	Generic	REF				
-trait	260	Harem Lord	2.7	Uncommon	Generic					
-trait	261	Harem King	3.3	Rare	Generic					
+trait	260	Harem Keeper	2.7	Uncommon	Generic					
+trait	261	Harem Sovereign	3.3	Rare	Generic					
 trait	262	Camaraderie	3.1	Rare	Generic					
 trait	263	Trustable Face	2.7	Uncommon	Generic					
 trait	264	Large Pockets	2.6	Uncommon	Generic					
@@ -900,7 +937,6 @@ trait	564	Allowance	2.2	Uncommon	Generic
 trait	565	Kyoi no Hado	5.7	Epic	Street Fighter					
 trait	566	Satsui no Hado	5.8	Epic	Street Fighter					
 trait	567	Reptilian Rapport	2.7	Uncommon	Generic					
-trait	567 (2)	Canis Companion	2.6	Uncommon	Generic					
 trait	568	Arthropod Affiliate	2.4	Uncommon	Generic					
 trait	569	Warrior of Sunlight	4.1	Elite	Dark Souls					
 trait	570	Gravelord Servant	3.4	Rare	Dark Souls					
@@ -948,7 +984,7 @@ trait	611	Style	4.2	Elite	Ultrakill
 trait	612	Acid Reflux	2.1	Uncommon	Generic					
 trait	613	Sober	1.8	Common	Generic					
 trait	614	Variable Gene	4.9	Elite	Generic	REF				
-trait	615	Firebender	5.1	Epic	Avatar					
+trait	615	Firebending	5.1	Epic	Avatar					
 trait	616	Earthbending	5.2	Epic	Avatar					
 trait	617	Waterbending	6.2	Legendary	Avatar					
 trait	618	Airbending	5.8	Epic	Avatar					
@@ -989,7 +1025,7 @@ trait	652	Planeswalker's Spark	7.6	Mythical	MTG
 trait	653	Backtalk	2.4	Uncommon	Life is Strange					
 trait	654	Glow-Touched	4.0	Elite	I Was a Teenage Exocolonist					
 trait	655	Root Access	4.2	Elite	Tron 2.0					
-trait	656	Hexagonal Skill Grid	3.8	Rare	Q-UP					
+trait	656	Hexagonal Slots	3.8	Rare	Q-UP					
 trait	657	The City Must Survive	3.0	Rare	Frostpunk					
 trait	658	Rock and Stone	1.6	Common	Deep Rock Galactic					
 trait	659	Keen Hearing	2.2	Uncommon	Project Zomboid					
@@ -998,6 +1034,62 @@ trait	661	The Factory Must Grow	2.4	Uncommon	Factorio
 trait	662	MIT Graduate	2.2	Uncommon	Half-Life					
 trait	663	Silent Protagonist	1.8	Common	Half-Life					
 trait	664	Employed by the G-Man	6.4	Legendary	Half-Life					
+trait	665	Miracle	5.3	Epic	MTG					
+trait	666	Death Defiance	5.8	Epic	Hades					
+trait	667	Pact of Punishment	5.6	Epic	Hades					
+trait	668	Fated Authority	5.2	Epic	Hades					
+trait	669	God Mode	5.0	Epic	Hades					
+trait	670	Omega Moves	5.6	Epic	Hades 2					
+trait	671	Dhampir	4.8	Elite	Generic					
+trait	672	Kitsune	5.4	Epic	Generic					
+trait	673	Dryad	4.2	Elite	Generic					
+trait	674	Gargoyle	5.0	Epic	Generic					
+trait	675	Time Lord	6.8	Legendary	Doctor Who					
+trait	676	Yautja Hunter	5.8	Epic	Predator					
+trait	677	Krogan Battlemaster	5.4	Epic	Mass Effect					
+trait	678	T-800	5.2	Epic	Terminator					
+trait	679	Fremen	4.2	Elite	Dune					
+trait	680	Furyan	5.0	Epic	Riddick					
+trait	681	Belter	3.8	Rare	The Expanse					
+trait	682	Na'vi	5.4	Epic	James Cameron's Avatar					
+trait	683	Redshirt	0.6	Trash	Star Trek					
+trait	684	I'll Be Back	0.5	Trash	Terminator					
+trait	685	They'll Remember That	0.4	Trash	Telltale					
+trait	686	Arrow to the Knee	0.5	Trash	Skyrim					
+trait	687	Mismatched Socks	0.1	Trash	Generic					
+trait	688	Umbrella Loser	0.2	Trash	Generic					
+trait	689	Password Forgetter	0.2	Trash	Generic					
+trait	690	Chronically Early	0.2	Trash	Generic					
+trait	691	Aisle Seat	0.1	Trash	Generic					
+trait	692	Bedhead	0.1	Trash	Generic					
+trait	693	Cold Feet	0.2	Trash	Generic					
+trait	694	Tok'ra Blending	5.4	Epic	Stargate					
+trait	695	Cylon Resurrection	5.8	Epic	Battlestar Galactica					
+trait	696	Trial of the Grasses	5.6	Epic	The Witcher					
+trait	697	Ebon Knight	5.8	Epic	Warcraft					
+trait	698	Infested	5.4	Epic	StarCraft					
+trait	699	On Fire	5.0	Epic	Overwatch					
+trait	700	What a Save!	5.0	Epic	Rocket League					
+trait	701	Power of the Bear	4.6	Elite	Baby Cat					
+trait	702	Mysterious Lover	3.4	Rare	Baby Cat					
+trait	703	Polyglot of Babel	8.0	Divine	Generic					
+trait	704	Econ of Scale	8.1	Divine	Generic					
+trait	705	Mythic Resonance	8.3	Divine	Generic					
+trait	706	Thunderhead Soul	8.5	Divine	Generic					
+trait	707	Death's Secretary	9.0	Transcendent	Generic					
+trait	708	Rootless	9.2	Transcendent	Generic					
+trait	709	Jinchuriki	8.9	Divine	Naruto					
+trait	710	Quirk Singularity	8.8	Divine	MHA					
+trait	711	God Ki	8.6	Divine	Dragon Ball					
+trait	712	But It Refused	8.6	Divine	Undertale					
+trait	713	Voice of All Things	8.5	Divine	One Piece					
+trait	714	Mantle-Bearer	8.5	Divine	Halo					
+trait	715	Untouchable	8.6	Divine	Warhammer 40k					
+trait	716	Beloved of the Worm	9.1	Transcendent	Stellaris					
+trait	717	Eywa Communion	9.0	Transcendent	James Cameron's Avatar					
+trait	718	Mentat	8.7	Divine	Dune					
+trait	719	Bene Gesserit Conditioning	8.8	Divine	Dune					
+trait	720	Canis Companion	2.6	Uncommon	Generic					
 familiar	1	ORT	9.8	Transcendent	Fate	REF				
 familiar	2	Blair	4.3	Elite	Soul Eater					
 familiar	3	Overgrown Rover	6.7	Legendary	One Punch Man					
@@ -1494,7 +1586,7 @@ familiar	493	Chirpy	1.6	Common	Cities Skylines
 familiar	494	Shivan Dragon	6.4	Legendary	MTG					
 familiar	495	Captain Boomer	4.8	Elite	Q-UP					
 familiar	496	Peska the Troll	3.2	Rare	Q-UP					
-familiar	497	HyperQbe the Streamer	3.4	Rare	Q-UP					
+familiar	497	Robert the Robot	4.7	Elite	Q-UP					
 familiar	498	Mercury	3.6	Rare	Tron 2.0					
 familiar	499	Data Wraith	4.0	Elite	Tron 2.0					
 familiar	500	Spirit Doe	4.2	Elite	Life is Strange					
@@ -1516,6 +1608,89 @@ familiar	515	DØG	5.2	Epic	Half-Life
 familiar	516	Snark	2.0	Uncommon	Half-Life					
 familiar	517	Chumtoad	1.6	Common	Half-Life					
 familiar	518	Vortigaunt Ally	4.0	Elite	Half-Life					
+familiar	519	Metroid	5.4	Epic	Metroid					
+familiar	520	Solemn Simulacrum	5.2	Epic	MTG					
+familiar	521	Atog	5.0	Epic	MTG					
+familiar	522	Scylla and the Sirens	5.7	Epic	Hades 2					
+familiar	523	Tribble	0.5	Trash	Star Trek					
+familiar	524	Adipose	0.4	Trash	Doctor Who					
+familiar	525	Woodsprite	0.3	Trash	James Cameron's Avatar					
+familiar	526	Desert Mouse	0.4	Trash	Dune					
+familiar	527	T-1	0.5	Trash	Terminator					
+familiar	528	ED-209 (stairs)	0.6	Trash	RoboCop					
+familiar	529	Tachikoma (nap mode)	0.5	Trash	Ghost in the Shell					
+familiar	530	Mimic (mug)	0.4	Trash	Prey					
+familiar	531	XCOM Rookie	0.4	Trash	XCOM					
+familiar	532	Roach (distant)	0.4	Trash	The Witcher					
+familiar	533	Nug (royal)	0.3	Trash	Dragon Age					
+familiar	534	Mockingjay (tone-deaf)	0.4	Trash	The Hunger Games					
+familiar	535	Direwolf Pup (runt)	0.5	Trash	Game of Thrones					
+familiar	536	Palisman (sleepy)	0.4	Trash	The Owl House					
+familiar	537	Fairy (common)	0.3	Trash	Touhou					
+familiar	538	Goblin (illiterate)	0.4	Trash	Pathfinder					
+familiar	539	Peasant (pitchfork)	0.2	Trash	DnD					
+familiar	540	Boo	0.3	Trash	Baldur's Gate					
+familiar	541	Morte	0.4	Trash	Planescape					
+familiar	542	Peon	0.3	Trash	Warcraft					
+familiar	543	SCV (cowardly)	0.3	Trash	StarCraft					
+familiar	544	Poro	0.4	Trash	League of Legends					
+familiar	545	Dodo	0.3	Trash	Ark					
+familiar	546	Peeper	0.3	Trash	Subnautica					
+familiar	547	Keeper	0.5	Trash	Mass Effect					
+familiar	548	Gonk Droid	0.4	Trash	Star Wars					
+familiar	549	Zoomer	0.4	Trash	Metroid					
+familiar	550	Storm Crow	0.5	Trash	MTG					
+familiar	551	Shade	0.5	Trash	Hades					
+familiar	552	Grunt (sleeping)	0.3	Trash	Halo					
+familiar	553	Cylon Raider	5.2	Epic	Battlestar Galactica					
+familiar	554	Tachikoma Unit	5.6	Epic	Ghost in the Shell					
+familiar	555	Gremlin	5.0	Epic	XCOM					
+familiar	556	Wisp	5.0	Epic	Warcraft					
+familiar	557	Zergling	5.2	Epic	StarCraft					
+familiar	558	WALL-E	5.2	Epic	WALL-E					
+familiar	559	EVE Probe	5.6	Epic	WALL-E					
+familiar	560	Snowball	5.2	Epic	Overwatch					
+familiar	561	The Ball	4.8	Elite	Rocket League					
+familiar	562	Code Geese	2.5	Uncommon	Generic					
+familiar	563	M3GAN Doll	5.3	Epic	M3GAN					
+familiar	564	Amelia	5.9	Epic	M3GAN					
+familiar	565	Roz	4.6	Elite	The Wild Robot					
+familiar	566	Murder of Crows, Incorporated	8.3	Divine	Generic					
+familiar	567	The Accounts Wyrm	8.4	Divine	Generic					
+familiar	568	Pocket Apocalypse	8.7	Divine	Generic					
+familiar	569	Granny Loam	8.9	Divine	Generic					
+familiar	570	The Last Librarian	9.1	Transcendent	Generic					
+familiar	571	Null Cat	9.3	Transcendent	Generic					
+familiar	572	Super Shenron	9.5	Transcendent	Dragon Ball					
+familiar	573	Eva Unit-01	9.1	Transcendent	Evangelion					
+familiar	574	Lugia	8.6	Divine	Pokemon					
+familiar	575	Moon Presence	8.7	Divine	Bloodborne					
+familiar	576	G-Man	9.0	Transcendent	Half-Life					
+familiar	577	Raava	9.2	Transcendent	Avatar					
+familiar	578	Q	9.4	Transcendent	Star Trek					
+familiar	579	Shard of the Nightbringer	9.3	Transcendent	Warhammer 40k					
+familiar	580	Godzilla	9.3	Transcendent	Monsterverse					
+familiar	581	Makima, the Control Devil	9.2	Transcendent	Chainsaw Man					
+familiar	582	Migi	8.5	Divine	Parasyte the Maxim					
+familiar	583	Moya and Pilot	8.7	Divine	Farscape					
+familiar	584	Xenomorph Queen	8.8	Divine	Alien					
+familiar	585	The Motherboard	8.9	Divine	M3GAN					
+familiar	586	Alita	9.0	Transcendent	Alita: Battle Angel					
+familiar	587	ADA	8.4	Divine	Satisfactory					
+familiar	588	Croajiro	2.4	Uncommon	Palworld					
+familiar	589	Elphidran Aqua	5.5	Epic	Palworld					
+familiar	590	Shaolong	7.7	Mythical	Palworld					
+familiar	591	Sanctified Sentinel	4.8	Elite	Generic					
+familiar	592	Makara	4.4	Elite	Hindu Myth					
+familiar	593	Drakestone Sentinel	5.2	Epic	Generic					
+familiar	594	Ooze Drake	4.1	Elite	Generic					
+familiar	595	Wyrm Changeling	5.5	Epic	Chinese Myth					
+familiar	596	Hellforged Sentry	5.3	Epic	Warhammer 40k					
+familiar	597	X Parasite	5.0	Epic	Metroid					
+familiar	598	Biotic Vanguard	4.6	Elite	Mass Effect					
+familiar	599	Blooded Yautja	4.9	Elite	Predator					
+familiar	600	Arcanaloth	5.4	Epic	DnD					
+familiar	601	Quetzalcoatl the Wizard	6.1	Legendary	Q-UP					
 item	1	Gae Bolg	5.3	Epic	Fate					
 item	2	Excalibur the Sword of Promised Victory	7.0	Mythical	Fate					
 item	3	Laevatein	7.8	Mythical	Fate					
@@ -1559,7 +1734,7 @@ item	40	Black Key Rites	4.2	Elite	Fate
 item	41	Shroud of Martin	4.5	Elite	Fate					
 item	42	Enkidu	8.4	Divine	Fate					
 item	43	A pair of very comfortable socks	0.1	Trash	Generic					
-item	44	Character Card Destiny's Child	5.6	Epic	Generic					
+item	44	Character Card Destiny's Child	5.6	Epic	Legendary Mechanic					
 item	45	HF Murasama	4.7	Elite	Metal Gear Rising Revengeance					
 item	46	Playful Cloud	4.1	Elite	Jujutsu Kaisen					
 item	47	Pokedex	3.3	Rare	Pokemon					
@@ -1741,7 +1916,7 @@ item	222	Goku Uniform 2star	3.8	Rare	Kill La Kill
 item	223	Goku Uniform 3star	5.5	Epic	Kill La Kill					
 item	224	Your Laptop	3.6	Rare	Generic					
 item	225	Infinite Bowl of Spaghetti	1.5	Common	Generic					
-item	226	Kanaedas Bike	1.3	Common	Akira					
+item	226	Kaneda's Bike	1.3	Common	Akira					
 item	227	Any Vehicle Voucher	3.1	Rare	Generic					
 item	228	Refined Heart-Shaped Herb	4.3	Elite	MCU					
 item	229	Senzu Bean	5.9	Epic	Dragon Ball					
@@ -2447,9 +2622,9 @@ item	928	Hotline	4.4	Elite	Control
 item	929	Hedron Resonance Amplifier	4.6	Elite	Control					
 item	930	Vacpack	3.0	Rare	Slime Rancher					
 item	931	Slime Key	3.4	Rare	Slime Rancher					
-item	932	Flak Cannon	5.0	Epic	Genome Guardian					
-item	933	Blast Shotgun	4.2	Elite	Genome Guardian					
-item	934	Dice Turret	3.8	Rare	Genome Guardian					
+item	932	CCCC Ion Laser	5.0	Epic	Genome Guardian					
+item	933	AAAA Minigun	4.2	Elite	Genome Guardian					
+item	934	GGG Wavequake	3.8	Rare	Genome Guardian					
 item	935	Idol of Rebirth	4.6	Elite	Divinity Original Sin					
 item	936	Resurrection Scroll	3.0	Rare	Divinity Original Sin					
 item	937	Q-Up Coin	2.0	Uncommon	Q-UP					
@@ -2490,7 +2665,7 @@ item	971	Ten Rings	6.4	Legendary	MCU
 item	972	Loki's Sceptre	7.0	Mythical	MCU					
 item	973	Staff of the Living Tribunal	4.6	Elite	MCU					
 item	974	TemPad	5.8	Epic	MCU					
-item	975	TVA Pruning Baton	4.6	Elite	MCU					
+item	975	Time Stick	4.6	Elite	MCU					
 item	976	Reset Charge	5.2	Epic	MCU					
 item	977	Yaka Arrow	4.4	Elite	MCU					
 item	978	Yondu's Fin	3.8	Rare	MCU					
@@ -2525,6 +2700,126 @@ item	1006	Armored Train	5.4	Epic	Battlefield
 item	1007	Aurora	5.0	Epic	Metro					
 item	1008	Sea Railway	3.8	Rare	Studio Ghibli					
 item	1009	LLM Workstation Laptop	3.6	Rare	Generic					
+item	1010	Shake the Tree	6.0	Legendary	Generic					
+item	1011	ChaosQuake	7.5	Mythical	Generic					
+item	1012	Gambler's Bronze Die	1.3	Common	Generic					
+item	1013	Gambler's Silver Die	2.3	Uncommon	Generic					
+item	1014	Gambler's Gold Die	3.3	Rare	Generic					
+item	1015	Gambler's Platinum Die	4.3	Elite	Generic					
+item	1016	Gambler's Diamond Die	5.3	Epic	Generic					
+item	1017	Gambler's Legendary Die	6.3	Legendary	Generic					
+item	1018	Gambler's Mythical Die	7.3	Mythical	Generic					
+item	1019	Gambler's Divine Die	8.3	Divine	Generic					
+item	1020	Gambler's Transcendent Die	9.3	Transcendent	Generic					
+item	1021	Morph Ball	4.6	Elite	Metroid					
+item	1022	Varia Suit	5.5	Epic	Metroid					
+item	1023	Gravity Suit	5.7	Epic	Metroid					
+item	1024	Birthing Pod	5.8	Epic	MTG					
+item	1025	Mimic Vat	5.5	Epic	MTG					
+item	1026	The Ozolith	5.6	Epic	MTG					
+item	1027	Pithing Needle	5.1	Epic	MTG					
+item	1028	Panharmonicon	5.3	Epic	MTG					
+item	1029	Mirror of Night	5.7	Epic	Hades					
+item	1030	Lucky Tooth	5.3	Epic	Hades					
+item	1031	Stygius, the Stygian Blade	5.9	Epic	Hades					
+item	1032	Pierced Butterfly	5.4	Epic	Hades					
+item	1033	Fishing Rod	3.8	Rare	Hades					
+item	1034	Arcana Deck	5.5	Epic	Hades 2					
+item	1035	Ghost Onion	5.2	Epic	Hades 2					
+item	1036	Descura, the Witch's Staff	5.4	Epic	Hades 2					
+item	1037	Arachne's Cocoon	4.8	Elite	Hades 2					
+item	1038	Old Spiked Collar	5.2	Epic	Hades					
+item	1039	Pom Blossom	5.5	Epic	Hades					
+item	1040	Skull Earring	5.3	Epic	Hades					
+item	1041	White Antler	5.4	Epic	Hades					
+item	1042	Lambent Plume	5.5	Epic	Hades					
+item	1043	Harpy Feather Duster	4.6	Elite	Hades					
+item	1044	Cosmic Egg	5.6	Epic	Hades					
+item	1045	Luckier Tooth	5.3	Epic	Hades 2					
+item	1046	Knuckle Bones	5.2	Epic	Hades 2					
+item	1047	Left Sock	0.1	Trash	Generic					
+item	1048	Dead Battery	0.2	Trash	Generic					
+item	1049	Allen Key	0.2	Trash	Generic					
+item	1050	Fortune Cookie (blank)	0.3	Trash	Generic					
+item	1051	Hotel Pen	0.1	Trash	Generic					
+item	1052	Traffic Cone (mini)	0.3	Trash	Generic					
+item	1053	Single Chopstick	0.2	Trash	Generic					
+item	1054	Deflated Balloon	0.2	Trash	Generic					
+item	1055	USB Cable (wrong end)	0.3	Trash	Generic					
+item	1056	Takeout Menu (closed)	0.2	Trash	Generic					
+item	1057	Empty Missile Tank	0.4	Trash	Metroid					
+item	1058	Oxygen Candle (half)	0.5	Trash	The Expanse					
+item	1059	Unobtanium Pebble	0.3	Trash	James Cameron's Avatar					
+item	1060	Stillsuit Patch Kit	0.4	Trash	Dune					
+item	1061	Mud (thermal)	0.5	Trash	Predator					
+item	1062	Endoskeleton Finger	0.4	Trash	Terminator					
+item	1063	Sonic Screwdriver (dead)	0.6	Trash	Doctor Who					
+item	1064	Talkie Toaster	0.5	Trash	Red Dwarf					
+item	1065	Towel	0.4	Trash	Hitchhiker					
+item	1066	Lawgiver (empty)	0.6	Trash	Judge Dredd					
+item	1067	MALP (stuck)	0.5	Trash	Stargate					
+item	1068	Cylon Toaster (quiet)	0.4	Trash	Battlestar Galactica					
+item	1069	Encyclopedia Galactica (abridged)	0.5	Trash	Foundation					
+item	1070	Knife Missile (blunt)	0.6	Trash	Culture					
+item	1071	DRD (lost)	0.4	Trash	Farscape					
+item	1072	Cardboard Box (soggy)	0.5	Trash	Metal Gear					
+item	1073	Companion Cube (inert)	0.6	Trash	Portal					
+item	1074	Joja Cola	0.2	Trash	Stardew Valley					
+item	1075	Bonesaw	0.5	Trash	MTG					
+item	1076	Shiv (dull)	0.4	Trash	Riddick					
+item	1077	Lethe Water (sip)	0.5	Trash	Hades					
+item	1078	Zat'nik'tel	4.8	Elite	Stargate					
+item	1079	Sarcophagus	5.8	Epic	Stargate					
+item	1080	Puddle Jumper	5.6	Epic	Stargate					
+item	1081	Viper Mk II	5.4	Epic	Battlestar Galactica					
+item	1082	Witcher Medallion	5.0	Epic	The Witcher					
+item	1083	Hearthstone	5.0	Epic	Warcraft					
+item	1084	Mimic Beacon	5.2	Epic	XCOM					
+item	1085	Combat Stim	5.0	Epic	StarCraft					
+item	1086	Plant in a Boot	5.0	Epic	WALL-E					
+item	1087	Nano Boost	5.4	Epic	Overwatch					
+item	1088	Battle-Car	5.4	Epic	Rocket League					
+item	1089	Facts Given	5.6	Epic	MTG					
+item	1090	Gift and Fiction	5.4	Epic	MTG					
+item	1091	Cat Costume	0.4	Trash	Baby Cat					
+item	1092	Purrpetual Petz	3.8	Rare	M3GAN					
+item	1093	Head Key	5.5	Epic	Locke and Key					
+item	1094	Anywhere Key	5.7	Epic	Locke and Key					
+item	1095	Echo Key	5.2	Epic	Locke and Key					
+item	1096	Hextech Gauntlets	5.5	Epic	League of Legends / Arcane					
+item	1097	Shimmer	5.3	Epic	League of Legends / Arcane					
+item	1098	Jinx's Pow-Pow	5.7	Epic	League of Legends / Arcane					
+item	1099	Hexcore	5.8	Epic	League of Legends / Arcane					
+item	1100	Ambessa's Charm	5.4	Epic	League of Legends / Arcane					
+item	1101	Chaos's Shoe	5.5	Epic	Generic					
+item	1102	Chaos's Other Shoe	5.7	Epic	Generic					
+item	1103	Second Breakfast Box	8.0	Divine	Generic					
+item	1104	Wardrobe of Elsewhere	8.2	Divine	Generic					
+item	1105	Penny of the Ferryman	8.4	Divine	Generic					
+item	1106	The Unfinished Map	8.6	Divine	Generic					
+item	1107	Gavel of Adjournment	8.8	Divine	Generic					
+item	1108	Cradle of Embers	9.0	Transcendent	Generic					
+item	1109	Seed of Yggdrasil	9.2	Transcendent	Generic					
+item	1110	The Honest Die	9.4	Transcendent	Generic					
+item	1111	The Triforce	9.3	Transcendent	The Legend of Zelda					
+item	1112	Command Block	9.6	Transcendent	Minecraft					
+item	1113	Zenith Blade	8.9	Divine	Terraria					
+item	1114	Hogyoku	8.7	Divine	Bleach					
+item	1115	Mother Flame	8.5	Divine	One Piece					
+item	1116	Type-40 TARDIS	9.0	Transcendent	Doctor Who					
+item	1117	Eye of the Universe	9.7	Transcendent	Outer Wilds					
+item	1118	The Moment	9.5	Transcendent	Doctor Who					
+item	1119	Genesis Device	9.0	Transcendent	Star Trek					
+item	1120	DeLorean Time Machine	8.9	Divine	Back to the Future					
+item	1121	Elder Scroll	9.1	Transcendent	Elder Scrolls					
+item	1122	Gravitational Beam Emitter	9.1	Transcendent	Blame					
+item	1123	Berserker Body	8.6	Divine	Alita: Battle Angel					
+item	1124	Damascus Blade	8.2	Divine	Alita: Battle Angel					
+item	1125	Scent Hound Whistle	3.5	Rare	Generic					
+item	1126	Monsterbane Blade	4.3	Elite	DnD					
+item	1127	Wyvernheart Bowgun	4.9	Elite	Monster Hunter					
+item	1128	Profaned Greatsword	5.6	Epic	Dark Souls					
+item	1129	Replicating Nanobot	1.8	Common	Q-UP					
 ability	1	Tinder	1.3	Common	Generic					
 ability	2	Ember	2.3	Uncommon	Generic					
 ability	3	Blaze	3.3	Rare	Generic					
@@ -2793,11 +3088,11 @@ ability	265	Cursecraft	4.8	Elite	Generic	REF
 ability	266	Darkness Devil	7.8	Mythical	Chainsaw Man					
 ability	267	Black Hole	5.0	Epic	Generic	REF				
 ability	268	Void Dragon's Breath	4.0	Elite	Generic					
-ability	269	Void Mirror Image	1.5	Common	Generic					
-ability	270	Void Travel	3.9	Rare	Generic					
-ability	271	Chaos Entity Release	5.1	Epic	Generic					
-ability	272	Void Path	6.4	Legendary	Generic					
-ability	273	Void Distorter Form	5.9	Epic	Generic					
+ability	269	Void Mirror Image	1.5	Common	Legendary Mechanic					
+ability	270	Void Travel	3.9	Rare	Legendary Mechanic					
+ability	271	Chaos Entity Release	5.1	Epic	Legendary Mechanic					
+ability	272	Void Path	6.4	Legendary	Legendary Mechanic					
+ability	273	Void Distorter Form	5.9	Epic	Legendary Mechanic					
 ability	274	Abyssal Jail	5.2	Epic	Generic					
 ability	275	Abyss Skin	3.8	Rare	Generic					
 ability	276	Yami	3.2	Rare	Yugioh					
@@ -2941,7 +3236,7 @@ ability	413	Vermin Lord	3.5	Rare	Generic
 ability	414	Mandom	5.7	Epic	JoJo					
 ability	415	Resurrection	5.8	Epic	DnD	REF				
 ability	416	Blast Mark	4.8	Elite	Generic					
-ability	417	Carbon Manipulation	6.8	Legendary	Generic					
+ability	417	Carbon Manipulation	6.8	Legendary	Legendary Mechanic					
 ability	418	Soul Read	2.9	Uncommon	JoJo					
 ability	419	Emergency Exit	2.5	Uncommon	Generic					
 ability	420	Protean	4.2	Elite	Generic					
@@ -3331,7 +3626,7 @@ ability	803	Lucky Strike	4.3	Elite	Generic
 ability	804	Eye of Discernment	5.0	Epic	Generic					
 ability	805	Enchanting	4.3	Elite	Generic					
 ability	806	Greater Enchanting	5.3	Epic	Generic					
-ability	807	Esper Silence	5.4	Epic	Generic					
+ability	807	Esper Silence	5.4	Epic	Legendary Mechanic					
 ability	808	Flawed Return	5.1	Epic	Generic					
 ability	809	Save & Load	9.0	Transcendent	Generic	REF				
 ability	810	Xavier	7.7	Mythical	Generic	REF				
@@ -3682,8 +3977,8 @@ ability	1157	Star of Change	4.8	Elite	Generic
 ability	1158	Argonaut	5.5	Epic	Danmachi					
 ability	1159	Tinker - Vehicles (III)	4.1	Elite	Generic					
 ability	1160	Fumofication	5.2	Epic	Generic	REF				
-ability	1161	Void Shadow	2.2	Uncommon	Generic					
-ability	1162	Void Distortion	5.9	Epic	Generic					
+ability	1161	Void Shadow	2.2	Uncommon	Legendary Mechanic					
+ability	1162	Void Distortion	5.9	Epic	Legendary Mechanic					
 ability	1163	Choices & Choices	4.3	Elite	Generic					
 ability	1164	Tinker - Resources	3.6	Rare	Generic					
 ability	1165	Fate Draw	3.3	Rare	Generic					
@@ -3962,10 +4257,10 @@ ability	1437	Silent Strike	3.0	Rare	Horizon Zero Dawn
 ability	1438	Survivalist	2.6	Uncommon	Tomb Raider					
 ability	1439	Loop Memory	5.0	Epic	I Was a Teenage Exocolonist					
 ability	1440	Seeker Subroutine	3.4	Rare	Tron 2.0					
-ability	1441	Adenine Volley	3.2	Rare	Genome Guardian					
-ability	1442	Cytosine Precision	3.4	Rare	Genome Guardian					
-ability	1443	Guanine Spread	3.6	Rare	Genome Guardian					
-ability	1444	Thymine Detonation	4.0	Elite	Genome Guardian					
+ability	1441	Bounce	3.2	Rare	Genome Guardian					
+ability	1442	Homing	3.4	Rare	Genome Guardian					
+ability	1443	Sticky	3.6	Rare	Genome Guardian					
+ability	1444	Flack	4.0	Elite	Genome Guardian					
 ability	1445	Summon Tsunami	5.4	Epic	Cities Skylines					
 ability	1446	Firewall	3.2	Rare	Tron 2.0					
 ability	1447	Timeline Shift	5.8	Epic	Life is Strange					
@@ -3982,3 +4277,53 @@ ability	1457	Rail Gauge Setting	3.2	Rare	Generic
 ability	1458	Vortessence	4.4	Elite	Half-Life					
 ability	1459	Xen Transit	5.6	Epic	Half-Life					
 ability	1460	Antlion Pheromones	3.0	Rare	Half-Life					
+ability	1461	Screw Attack	5.9	Epic	Metroid					
+ability	1462	Space Jump	5.2	Epic	Metroid					
+ability	1463	Shinespark	5.6	Epic	Metroid					
+ability	1464	Flash Shift	5.1	Epic	Metroid					
+ability	1465	Proliferate	5.5	Epic	MTG					
+ability	1466	Populate	5.2	Epic	MTG					
+ability	1467	Overload	5.8	Epic	MTG					
+ability	1468	Cipher	5.4	Epic	MTG					
+ability	1469	Chaos Gate	5.5	Epic	Hades					
+ability	1470	Moon Hex	5.8	Epic	Hades 2					
+ability	1471	Static Shock	0.2	Trash	Generic					
+ability	1472	Nightlight	0.3	Trash	Generic					
+ability	1473	Itch	0.2	Trash	Generic					
+ability	1474	Sneeze	0.3	Trash	Generic					
+ability	1475	Fizz	0.4	Trash	Generic					
+ability	1476	Untie	0.3	Trash	Generic					
+ability	1477	Rewind (3 seconds)	0.9	Trash	Life is Strange					
+ability	1478	Flavor	0.4	Trash	Generic					
+ability	1479	Static Cling	0.3	Trash	Generic					
+ability	1480	Earworm	0.4	Trash	Generic					
+ability	1481	Warm Hands	0.3	Trash	Generic					
+ability	1482	Hiccup	0.2	Trash	Generic					
+ability	1483	Squeak	0.2	Trash	Generic					
+ability	1484	Wrinkle	0.3	Trash	Generic					
+ability	1485	Asgard Beam	5.5	Epic	Stargate					
+ability	1486	FTL Jump	5.6	Epic	Battlestar Galactica					
+ability	1487	Thermoptic Camouflage	5.5	Epic	Ghost in the Shell					
+ability	1488	Witcher Signs	5.4	Epic	The Witcher					
+ability	1489	Heroism	5.5	Epic	Warcraft					
+ability	1490	Psionics	5.6	Epic	XCOM					
+ability	1491	Psionic Storm	5.8	Epic	StarCraft					
+ability	1492	Solar Charge	4.5	Elite	WALL-E					
+ability	1493	Transcendence	5.6	Epic	Overwatch					
+ability	1494	Graviton Surge	5.9	Epic	Overwatch					
+ability	1495	Supersonic	5.2	Epic	Rocket League					
+ability	1496	Veto of the Small Gods	8.3	Divine	Generic					
+ability	1497	Stillpoint	8.1	Divine	Generic					
+ability	1498	Tithemaster's Ledger	8.5	Divine	Generic					
+ability	1499	Yesterday's City	8.7	Divine	Generic					
+ability	1500	Garden of Forking Paths	9.1	Transcendent	Generic					
+ability	1501	Unwritten	9.3	Transcendent	Generic					
+ability	1502	Erasure	8.7	Divine	MHA					
+ability	1503	Domain Expansion: Unlimited Void	9.1	Transcendent	Jujutsu Kaisen					
+ability	1504	Instrumentality	9.4	Transcendent	Evangelion					
+ability	1505	SAVE Point	9.0	Transcendent	Undertale					
+ability	1506	Gold Experience Requiem	9.2	Transcendent	JoJo					
+ability	1507	Force Storm	9.0	Transcendent	Star Wars					
+ability	1508	Spice Prescience	8.7	Divine	Dune					
+ability	1509	Culture Displace	8.8	Divine	Culture					
+ability	1510	Tinker - AWESOME	8.2	Divine	Satisfactory					

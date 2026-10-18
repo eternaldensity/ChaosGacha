@@ -1,23 +1,23 @@
 # item — Entry Reference
 
-1009 entries. Sorted by rarity, then number.
+1129 entries. Sorted by rarity, then number.
 
 | Tier | Count |
 |---|---|
-| Trash | 36 |
-| Common | 114 |
-| Uncommon | 152 |
-| Rare | 225 |
-| Elite | 209 |
-| Epic | 148 |
-| Legendary | 62 |
-| Mythical | 46 |
-| Divine | 12 |
-| Transcendent | 5 |
+| Trash | 68 |
+| Common | 116 |
+| Uncommon | 153 |
+| Rare | 229 |
+| Elite | 216 |
+| Epic | 194 |
+| Legendary | 64 |
+| Mythical | 48 |
+| Divine | 24 |
+| Transcendent | 17 |
 
 ## Index by tier
 
-### Trash (36)
+### Trash (68)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -28,19 +28,39 @@
 | 712 | [Clown Nose](#712-clown-nose) | 0.1 | Generic |
 | 827 | [A chocolate chip cookie but with the chips picked off for some reason](#827-a-chocolate-chip-cookie-but-with-the-chips-picked-off-for-some-reason) | 0.1 | Cookie Clicker |
 | 828 | [A handful of chocolate chips](#828-a-handful-of-chocolate-chips) | 0.1 | Generic |
+| 1047 | [Left Sock](#1047-left-sock) | 0.1 | Generic |
+| 1051 | [Hotel Pen](#1051-hotel-pen) | 0.1 | Generic |
 | 633 | [Dunce Cap](#633-dunce-cap) | 0.2 | Generic |
 | 694 | [Evil Ring](#694-evil-ring) | 0.2 | Generic |
 | 706 | [Shrimp Fried Rice](#706-shrimp-fried-rice) | 0.2 | Generic |
 | 728 | [Jason's Mask](#728-jasons-mask) | 0.2 | Friday the 13th |
 | 819 | [The Table](#819-the-table) | 0.2 | Code Geass |
+| 1048 | [Dead Battery](#1048-dead-battery) | 0.2 | Generic |
+| 1049 | [Allen Key](#1049-allen-key) | 0.2 | Generic |
+| 1053 | [Single Chopstick](#1053-single-chopstick) | 0.2 | Generic |
+| 1054 | [Deflated Balloon](#1054-deflated-balloon) | 0.2 | Generic |
+| 1056 | [Takeout Menu (closed)](#1056-takeout-menu-closed) | 0.2 | Generic |
+| 1074 | [Joja Cola](#1074-joja-cola) | 0.2 | Stardew Valley |
 | 18 | [A skeleton](#18-a-skeleton) | 0.3 | Generic |
 | 722 | [Thirty Dollars](#722-thirty-dollars) | 0.3 | Generic |
 | 790 | [Surströmming](#790-surströmming) | 0.3 | Generic |
 | 836 | [Bold & Brash](#836-bold-brash) | 0.3 | Spongebob |
 | 840 | [Metal Gear](#840-metal-gear) | 0.3 | Generic |
+| 1050 | [Fortune Cookie (blank)](#1050-fortune-cookie-blank) | 0.3 | Generic |
+| 1052 | [Traffic Cone (mini)](#1052-traffic-cone-mini) | 0.3 | Generic |
+| 1055 | [USB Cable (wrong end)](#1055-usb-cable-wrong-end) | 0.3 | Generic |
+| 1059 | [Unobtanium Pebble](#1059-unobtanium-pebble) | 0.3 | James Cameron's Avatar |
 | 264 | [Brass Knuckles](#264-brass-knuckles) | 0.4 | Generic |
 | 554 | [Skeleton in Closet](#554-skeleton-in-closet) | 0.4 | Generic |
 | 742 | [Extremely Loud Metal Pipe](#742-extremely-loud-metal-pipe) | 0.4 | Generic |
+| 1057 | [Empty Missile Tank](#1057-empty-missile-tank) | 0.4 | Metroid |
+| 1060 | [Stillsuit Patch Kit](#1060-stillsuit-patch-kit) | 0.4 | Dune |
+| 1062 | [Endoskeleton Finger](#1062-endoskeleton-finger) | 0.4 | Terminator |
+| 1065 | [Towel](#1065-towel) | 0.4 | Hitchhiker |
+| 1068 | [Cylon Toaster (quiet)](#1068-cylon-toaster-quiet) | 0.4 | Battlestar Galactica |
+| 1071 | [DRD (lost)](#1071-drd-lost) | 0.4 | Farscape |
+| 1076 | [Shiv (dull)](#1076-shiv-dull) | 0.4 | Riddick |
+| 1091 | [Cat Costume](#1091-cat-costume) | 0.4 | Baby Cat |
 | 444 | [Five Hundred Cigarettes](#444-five-hundred-cigarettes) | 0.5 | Generic |
 | 548 | [2008 Menu #4 Cheese and Vegetable Omelette](#548-2008-menu-4-cheese-and-vegetable-omelette) | 0.5 | Generic |
 | 695 | [Heavy Rock](#695-heavy-rock) | 0.5 | Generic |
@@ -49,6 +69,18 @@
 | 786 | [Horse Electrolytes](#786-horse-electrolytes) | 0.5 | Generic |
 | 787 | [Apple](#787-apple) | 0.5 | Generic |
 | 844 | [Soylent Green](#844-soylent-green) | 0.5 | Soylent Green |
+| 1058 | [Oxygen Candle (half)](#1058-oxygen-candle-half) | 0.5 | The Expanse |
+| 1061 | [Mud (thermal)](#1061-mud-thermal) | 0.5 | Predator |
+| 1064 | [Talkie Toaster](#1064-talkie-toaster) | 0.5 | Red Dwarf |
+| 1067 | [MALP (stuck)](#1067-malp-stuck) | 0.5 | Stargate |
+| 1069 | [Encyclopedia Galactica (abridged)](#1069-encyclopedia-galactica-abridged) | 0.5 | Foundation |
+| 1072 | [Cardboard Box (soggy)](#1072-cardboard-box-soggy) | 0.5 | Metal Gear |
+| 1075 | [Bonesaw](#1075-bonesaw) | 0.5 | MTG |
+| 1077 | [Lethe Water (sip)](#1077-lethe-water-sip) | 0.5 | Hades |
+| 1063 | [Sonic Screwdriver (dead)](#1063-sonic-screwdriver-dead) | 0.6 | Doctor Who |
+| 1066 | [Lawgiver (empty)](#1066-lawgiver-empty) | 0.6 | Judge Dredd |
+| 1070 | [Knife Missile (blunt)](#1070-knife-missile-blunt) | 0.6 | Culture |
+| 1073 | [Companion Cube (inert)](#1073-companion-cube-inert) | 0.6 | Portal |
 | 103 | [Dread Helm](#103-dread-helm) | 0.7 | DnD |
 | 211 | [The Straw Hat](#211-the-straw-hat) | 0.7 | One Piece |
 | 655 | [Glock](#655-glock) | 0.7 | Generic |
@@ -58,7 +90,7 @@
 | 105 | [All-purpose tool](#105-all-purpose-tool) | 0.9 | DnD |
 | 747 | [Leather Bag of Holding](#747-leather-bag-of-holding) | 0.9 | Generic |
 
-### Common (114)
+### Common (116)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -88,10 +120,11 @@
 | 820 | [The Chair](#820-the-chair) | 1.2 | Devil May Cry |
 | 833 | [Father Garcia's Trenchcoat](#833-father-garcias-trenchcoat) | 1.2 | Faith the Unholy Trinity |
 | 835 | [Big Hat Logan's Big Hat](#835-big-hat-logans-big-hat) | 1.2 | Dark Souls |
-| 226 | [Kanaedas Bike](#226-kanaedas-bike) | 1.3 | Akira |
+| 226 | [Kaneda's Bike](#226-kanedas-bike) | 1.3 | Akira |
 | 272 | [Charismatic Sunglasses](#272-charismatic-sunglasses) | 1.3 | Generic |
 | 470 | [Weapon Voucher](#470-weapon-voucher) | 1.3 | Generic |
 | 657 | [Silver Spoon](#657-silver-spoon) | 1.3 | Generic |
+| 1012 | [Gambler's Bronze Die](#1012-gamblers-bronze-die) | 1.3 | Generic |
 | 155 | [Doyen's Virility Pills](#155-doyens-virility-pills) | 1.4 | Hunter x Hunter |
 | 161 | [Scrap Iron Candy](#161-scrap-iron-candy) | 1.4 | Black Souls |
 | 208 | [Super Absorbent Sponge](#208-super-absorbent-sponge) | 1.4 | Terraria |
@@ -166,6 +199,7 @@
 | 804 | [Youmu Fumo](#804-youmu-fumo) | 1.8 | Touhou |
 | 813 | [Mokou Fumo](#813-mokou-fumo) | 1.8 | Touhou |
 | 942 | [Instant Camera](#942-instant-camera) | 1.8 | Life is Strange |
+| 1129 | [Replicating Nanobot](#1129-replicating-nanobot) | 1.8 | Q-UP |
 | 130 | [Crate of Explosives](#130-crate-of-explosives) | 1.9 | Generic |
 | 147 | [X-ray Goggles](#147-x-ray-goggles) | 1.9 | Hunter x Hunter |
 | 152 | [Long Lost Delivery](#152-long-lost-delivery) | 1.9 | Hunter x Hunter |
@@ -177,7 +211,7 @@
 | 714 | [Third Arm Sash](#714-third-arm-sash) | 1.9 | Xiaolin Showdown |
 | 842 | [Claidheamh Mor](#842-claidheamh-mor) | 1.9 | Team Fortress 2 |
 
-### Uncommon (152)
+### Uncommon (153)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -231,6 +265,7 @@
 | 582 | [Dimensional Courier](#582-dimensional-courier) | 2.3 | Generic |
 | 600 | [Universal Rations](#600-universal-rations) | 2.3 | Generic |
 | 674 | [Whip of Ecstasy](#674-whip-of-ecstasy) | 2.3 | Generic |
+| 1013 | [Gambler's Silver Die](#1013-gamblers-silver-die) | 2.3 | Generic |
 | 93 | [Cloranthy Ring](#93-cloranthy-ring) | 2.4 | Dark Souls |
 | 95 | [Blue Stoneplate Ring](#95-blue-stoneplate-ring) | 2.4 | Dark Souls |
 | 131 | [Gold Apple](#131-gold-apple) | 2.4 | Minecraft |
@@ -334,7 +369,7 @@
 | 540 | [Myrtenaster](#540-myrtenaster) | 2.9 | RWBY |
 | 718 | [Surplus Stockpile](#718-surplus-stockpile) | 2.9 | Generic |
 
-### Rare (225)
+### Rare (229)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -407,6 +442,7 @@
 | 394 | [Omni Phone](#394-omni-phone) | 3.3 | Generic |
 | 524 | [Canto](#524-canto) | 3.3 | Cyberpunk 2077 |
 | 810 | [Yuugi Fumo](#810-yuugi-fumo) | 3.3 | Touhou |
+| 1014 | [Gambler's Gold Die](#1014-gamblers-gold-die) | 3.3 | Generic |
 | 132 | [Enchanted Golden Apple](#132-enchanted-golden-apple) | 3.4 | Minecraft |
 | 140 | [Skin Care Hot Springs](#140-skin-care-hot-springs) | 3.4 | Generic |
 | 176 | [V - The Hierophant](#176-v-the-hierophant) | 3.4 | Generic |
@@ -460,6 +496,7 @@
 | 826 | [Bathhouse Key](#826-bathhouse-key) | 3.5 | Generic |
 | 851 | [Undo Stone](#851-undo-stone) | 3.5 | Generic |
 | 857 | [Recall](#857-recall) | 3.5 | Generic |
+| 1125 | [Scent Hound Whistle](#1125-scent-hound-whistle) | 3.5 | Generic |
 | 35 | [Alchemilia](#35-alchemilia) | 3.6 | Generic |
 | 69 | [Tome of Vector Magic](#69-tome-of-vector-magic) | 3.6 | Soul Eater |
 | 80 | [Alchemist's Cauldron](#80-alchemists-cauldron) | 3.6 | Generic |
@@ -545,11 +582,13 @@
 | 887 | [Proliferator](#887-proliferator) | 3.8 | Dyson Sphere Program |
 | 891 | [Gravity Gloves](#891-gravity-gloves) | 3.8 | Half-Life |
 | 912 | [Blast Sling](#912-blast-sling) | 3.8 | Horizon Zero Dawn |
-| 934 | [Dice Turret](#934-dice-turret) | 3.8 | Genome Guardian |
+| 934 | [GGG Wavequake](#934-ggg-wavequake) | 3.8 | Genome Guardian |
 | 961 | [Shuttle](#961-shuttle) | 3.8 | Astroneer |
 | 967 | [Junimo Hut](#967-junimo-hut) | 3.8 | Stardew Valley |
 | 978 | [Yondu's Fin](#978-yondus-fin) | 3.8 | MCU |
 | 1008 | [Sea Railway](#1008-sea-railway) | 3.8 | Studio Ghibli |
+| 1033 | [Fishing Rod](#1033-fishing-rod) | 3.8 | Hades |
+| 1092 | [Purrpetual Petz](#1092-purrpetual-petz) | 3.8 | M3GAN |
 | 23 | [Cornucopia](#23-cornucopia) | 3.9 | Generic |
 | 88 | [Altar of Earth](#88-altar-of-earth) | 3.9 | Hota |
 | 138 | [Movement Ring](#138-movement-ring) | 3.9 | Generic |
@@ -564,7 +603,7 @@
 | 778 | [Mastema](#778-mastema) | 3.9 | Akame ga Kill |
 | 799 | [Remilia Fumo](#799-remilia-fumo) | 3.9 | Touhou |
 
-### Elite (209)
+### Elite (216)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -648,7 +687,7 @@
 | 850 | [Erdtree Seed](#850-erdtree-seed) | 4.2 | Elden Ring |
 | 874 | [Jetpack](#874-jetpack) | 4.2 | Satisfactory |
 | 901 | [Seamoth](#901-seamoth) | 4.2 | Subnautica |
-| 933 | [Blast Shotgun](#933-blast-shotgun) | 4.2 | Genome Guardian |
+| 933 | [AAAA Minigun](#933-aaaa-minigun) | 4.2 | Genome Guardian |
 | 946 | [Personal Roboport](#946-personal-roboport) | 4.2 | Factorio |
 | 955 | [Drakkar](#955-drakkar) | 4.2 | Valheim |
 | 984 | [Locomotive](#984-locomotive) | 4.2 | Factorio |
@@ -665,6 +704,8 @@
 | 602 | [High Roller Suite](#602-high-roller-suite) | 4.3 | Generic |
 | 683 | [Shikai - Minazuki](#683-shikai-minazuki) | 4.3 | Bleach |
 | 760 | [L'Arc Qui Ne Faut](#760-larc-qui-ne-faut) | 4.3 | Akame ga Kill |
+| 1015 | [Gambler's Platinum Die](#1015-gamblers-platinum-die) | 4.3 | Generic |
+| 1126 | [Monsterbane Blade](#1126-monsterbane-blade) | 4.3 | DnD |
 | 34 | [Grimoire of the Aeromancer](#34-grimoire-of-the-aeromancer) | 4.4 | Generic |
 | 214 | [Byakugan Jar](#214-byakugan-jar) | 4.4 | Naruto |
 | 302 | [Archmages Robes](#302-archmages-robes) | 4.4 | Generic |
@@ -716,9 +757,11 @@
 | 939 | [Impossible Shard](#939-impossible-shard) | 4.6 | Q-UP |
 | 945 | [Power Armor](#945-power-armor) | 4.6 | Factorio |
 | 973 | [Staff of the Living Tribunal](#973-staff-of-the-living-tribunal) | 4.6 | MCU |
-| 975 | [TVA Pruning Baton](#975-tva-pruning-baton) | 4.6 | MCU |
+| 975 | [Time Stick](#975-time-stick) | 4.6 | MCU |
 | 982 | [Electric Locomotive](#982-electric-locomotive) | 4.6 | Satisfactory |
 | 1000 | [Polar Express](#1000-polar-express) | 4.6 | The Polar Express |
+| 1021 | [Morph Ball](#1021-morph-ball) | 4.6 | Metroid |
+| 1043 | [Harpy Feather Duster](#1043-harpy-feather-duster) | 4.6 | Hades |
 | 24 | [Tome of the Erdtree](#24-tome-of-the-erdtree) | 4.7 | Elden Ring |
 | 28 | [Stone Mask](#28-stone-mask) | 4.7 | JoJo |
 | 38 | [Angel Ring](#38-angel-ring) | 4.7 | Minecraft |
@@ -768,6 +811,8 @@
 | 993 | [Spirit Train](#993-spirit-train) | 4.8 | The Legend of Zelda |
 | 997 | [Kotetsujo](#997-kotetsujo) | 4.8 | Kabaneri of the Iron Fortress |
 | 1005 | [War Rig](#1005-war-rig) | 4.8 | Mad Max |
+| 1037 | [Arachne's Cocoon](#1037-arachnes-cocoon) | 4.8 | Hades 2 |
+| 1078 | [Zat'nik'tel](#1078-zatniktel) | 4.8 | Stargate |
 | 84 | [Dreadon's Gaming Chair](#84-dreadons-gaming-chair) | 4.9 | Calamity Mod |
 | 85 | [Returner's Clock](#85-returners-clock) | 4.9 | Generic |
 | 281 | [Admirals Hat](#281-admirals-hat) | 4.9 | Hota |
@@ -777,8 +822,9 @@
 | 346 | [Rites of the Dragon Cult](#346-rites-of-the-dragon-cult) | 4.9 | Elden Ring |
 | 457 | [Tome of Alteration](#457-tome-of-alteration) | 4.9 | Skyrim |
 | 541 | [Sento](#541-sento) | 4.9 | Mortal Kombat |
+| 1127 | [Wyvernheart Bowgun](#1127-wyvernheart-bowgun) | 4.9 | Monster Hunter |
 
-### Epic (148)
+### Epic (194)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -798,10 +844,14 @@
 | 794 | [Node Fumo](#794-node-fumo) | 5.0 | Black Souls |
 | 859 | [Node Swap](#859-node-swap) | 5.0 | Generic |
 | 927 | [Service Weapon](#927-service-weapon) | 5.0 | Control |
-| 932 | [Flak Cannon](#932-flak-cannon) | 5.0 | Genome Guardian |
+| 932 | [CCCC Ion Laser](#932-cccc-ion-laser) | 5.0 | Genome Guardian |
 | 944 | [Vertical Launching Silo](#944-vertical-launching-silo) | 5.0 | Dyson Sphere Program |
 | 991 | [Ecliptic Express](#991-ecliptic-express) | 5.0 | Resident Evil |
 | 1007 | [Aurora](#1007-aurora) | 5.0 | Metro |
+| 1082 | [Witcher Medallion](#1082-witcher-medallion) | 5.0 | The Witcher |
+| 1083 | [Hearthstone](#1083-hearthstone) | 5.0 | Warcraft |
+| 1085 | [Combat Stim](#1085-combat-stim) | 5.0 | StarCraft |
+| 1086 | [Plant in a Boot](#1086-plant-in-a-boot) | 5.0 | WALL-E |
 | 37 | [Bar of Vibranium](#37-bar-of-vibranium) | 5.1 | Marvel |
 | 77 | [Blade Smith](#77-blade-smith) | 5.1 | Highschool DxD |
 | 177 | [VI - The Lovers](#177-vi-the-lovers) | 5.1 | Generic |
@@ -818,6 +868,7 @@
 | 759 | [Shambala](#759-shambala) | 5.1 | Akame ga Kill |
 | 762 | [Erastone](#762-erastone) | 5.1 | Akame ga Kill |
 | 823 | [Mirror Shield](#823-mirror-shield) | 5.1 | The Legend of Zelda |
+| 1027 | [Pithing Needle](#1027-pithing-needle) | 5.1 | MTG |
 | 10 | [Master Key](#10-master-key) | 5.2 | Generic |
 | 36 | [The Assembly](#36-the-assembly) | 5.2 | Generic |
 | 62 | [Living Dew](#62-living-dew) | 5.2 | Calamity Mod |
@@ -840,6 +891,11 @@
 | 976 | [Reset Charge](#976-reset-charge) | 5.2 | MCU |
 | 980 | [CPH4](#980-cph4) | 5.2 | Lucy |
 | 981 | [Time Loop Cave](#981-time-loop-cave) | 5.2 | Palm Springs |
+| 1035 | [Ghost Onion](#1035-ghost-onion) | 5.2 | Hades 2 |
+| 1038 | [Old Spiked Collar](#1038-old-spiked-collar) | 5.2 | Hades |
+| 1046 | [Knuckle Bones](#1046-knuckle-bones) | 5.2 | Hades 2 |
+| 1084 | [Mimic Beacon](#1084-mimic-beacon) | 5.2 | XCOM |
+| 1095 | [Echo Key](#1095-echo-key) | 5.2 | Locke and Key |
 | 1 | [Gae Bolg](#1-gae-bolg) | 5.3 | Fate |
 | 16 | [Durandal](#16-durandal) | 5.3 | Highschool DxD |
 | 22 | [Inverted Spear of Heaven](#22-inverted-spear-of-heaven) | 5.3 | Jujutsu Kaisen |
@@ -853,6 +909,12 @@
 | 752 | [Diamond Bag of Holding](#752-diamond-bag-of-holding) | 5.3 | Generic |
 | 777 | [Rongo Rongo](#777-rongo-rongo) | 5.3 | Akame ga Kill |
 | 796 | [Mary Sue Fumo](#796-mary-sue-fumo) | 5.3 | Black Souls |
+| 1016 | [Gambler's Diamond Die](#1016-gamblers-diamond-die) | 5.3 | Generic |
+| 1028 | [Panharmonicon](#1028-panharmonicon) | 5.3 | MTG |
+| 1030 | [Lucky Tooth](#1030-lucky-tooth) | 5.3 | Hades |
+| 1040 | [Skull Earring](#1040-skull-earring) | 5.3 | Hades |
+| 1045 | [Luckier Tooth](#1045-luckier-tooth) | 5.3 | Hades 2 |
+| 1097 | [Shimmer](#1097-shimmer) | 5.3 | League of Legends / Arcane |
 | 184 | [XIII - Death](#184-xiii-death) | 5.4 | Generic |
 | 205 | [Last Prism](#205-last-prism) | 5.4 | Terraria |
 | 274 | [The Armageddon Blade](#274-the-armageddon-blade) | 5.4 | Hota |
@@ -867,6 +929,14 @@
 | 922 | [Healer Mech Serum](#922-healer-mech-serum) | 5.4 | RimWorld |
 | 1002 | [Source Code](#1002-source-code) | 5.4 | Source Code |
 | 1006 | [Armored Train](#1006-armored-train) | 5.4 | Battlefield |
+| 1032 | [Pierced Butterfly](#1032-pierced-butterfly) | 5.4 | Hades |
+| 1036 | [Descura, the Witch's Staff](#1036-descura-the-witchs-staff) | 5.4 | Hades 2 |
+| 1041 | [White Antler](#1041-white-antler) | 5.4 | Hades |
+| 1081 | [Viper Mk II](#1081-viper-mk-ii) | 5.4 | Battlestar Galactica |
+| 1087 | [Nano Boost](#1087-nano-boost) | 5.4 | Overwatch |
+| 1088 | [Battle-Car](#1088-battle-car) | 5.4 | Rocket League |
+| 1090 | [Gift and Fiction](#1090-gift-and-fiction) | 5.4 | MTG |
+| 1100 | [Ambessa's Charm](#1100-ambessas-charm) | 5.4 | League of Legends / Arcane |
 | 11 | [Spear of Longinus X](#11-spear-of-longinus-x) | 5.5 | Evangelion |
 | 73 | [Blackrazor](#73-blackrazor) | 5.5 | DnD |
 | 223 | [Goku Uniform 3star](#223-goku-uniform-3star) | 5.5 | Kill La Kill |
@@ -881,7 +951,15 @@
 | 806 | [Suwako Fumo](#806-suwako-fumo) | 5.5 | Touhou |
 | 821 | [The Master Sword](#821-the-master-sword) | 5.5 | The Legend of Zelda |
 | 860 | [Reshuffle](#860-reshuffle) | 5.5 | Generic |
-| 44 | [Character Card Destiny's Child](#44-character-card-destinys-child) | 5.6 | Generic |
+| 1022 | [Varia Suit](#1022-varia-suit) | 5.5 | Metroid |
+| 1025 | [Mimic Vat](#1025-mimic-vat) | 5.5 | MTG |
+| 1034 | [Arcana Deck](#1034-arcana-deck) | 5.5 | Hades 2 |
+| 1039 | [Pom Blossom](#1039-pom-blossom) | 5.5 | Hades |
+| 1042 | [Lambent Plume](#1042-lambent-plume) | 5.5 | Hades |
+| 1093 | [Head Key](#1093-head-key) | 5.5 | Locke and Key |
+| 1096 | [Hextech Gauntlets](#1096-hextech-gauntlets) | 5.5 | League of Legends / Arcane |
+| 1101 | [Chaos's Shoe](#1101-chaoss-shoe) | 5.5 | Generic |
+| 44 | [Character Card Destiny's Child](#44-character-card-destinys-child) | 5.6 | Legendary Mechanic |
 | 261 | [Halo of Light](#261-halo-of-light) | 5.6 | Generic |
 | 293 | [Tome of Water](#293-tome-of-water) | 5.6 | Hota |
 | 419 | [Water Release Jutsu Scroll](#419-water-release-jutsu-scroll) | 5.6 | Naruto |
@@ -893,6 +971,11 @@
 | 877 | [Somersloop](#877-somersloop) | 5.6 | Satisfactory |
 | 909 | [Shield-Weaver](#909-shield-weaver) | 5.6 | Horizon Zero Dawn |
 | 987 | [Mugen Train](#987-mugen-train) | 5.6 | Demon Slayer |
+| 1026 | [The Ozolith](#1026-the-ozolith) | 5.6 | MTG |
+| 1044 | [Cosmic Egg](#1044-cosmic-egg) | 5.6 | Hades |
+| 1080 | [Puddle Jumper](#1080-puddle-jumper) | 5.6 | Stargate |
+| 1089 | [Facts Given](#1089-facts-given) | 5.6 | MTG |
+| 1128 | [Profaned Greatsword](#1128-profaned-greatsword) | 5.6 | Dark Souls |
 | 30 | [Grimoire of the Twice Dead Death Mage](#30-grimoire-of-the-twice-dead-death-mage) | 5.7 | Death Mage |
 | 241 | [Plague Canister](#241-plague-canister) | 5.7 | Calamity Mod |
 | 257 | [Malikeths Black Blade](#257-malikeths-black-blade) | 5.7 | Elden Ring |
@@ -905,6 +988,11 @@
 | 462 | [Ebony Blade](#462-ebony-blade) | 5.7 | Skyrim |
 | 560 | [Demon-Slayer Blade](#560-demon-slayer-blade) | 5.7 | Black Clover |
 | 795 | [Mabel Fumo](#795-mabel-fumo) | 5.7 | Black Souls |
+| 1023 | [Gravity Suit](#1023-gravity-suit) | 5.7 | Metroid |
+| 1029 | [Mirror of Night](#1029-mirror-of-night) | 5.7 | Hades |
+| 1094 | [Anywhere Key](#1094-anywhere-key) | 5.7 | Locke and Key |
+| 1098 | [Jinx's Pow-Pow](#1098-jinxs-pow-pow) | 5.7 | League of Legends / Arcane |
+| 1102 | [Chaos's Other Shoe](#1102-chaoss-other-shoe) | 5.7 | Generic |
 | 59 | [Ambrosial Ampule](#59-ambrosial-ampule) | 5.8 | Calamity Mod |
 | 237 | [Modified Tvirus](#237-modified-tvirus) | 5.8 | Resident Evil |
 | 246 | [Unknown Dictator](#246-unknown-dictator) | 5.8 | Highschool DxD |
@@ -923,6 +1011,9 @@
 | 866 | [Legendary Sphere](#866-legendary-sphere) | 5.8 | Palworld |
 | 943 | [Planetary Shield](#943-planetary-shield) | 5.8 | Dyson Sphere Program |
 | 974 | [TemPad](#974-tempad) | 5.8 | MCU |
+| 1024 | [Birthing Pod](#1024-birthing-pod) | 5.8 | MTG |
+| 1079 | [Sarcophagus](#1079-sarcophagus) | 5.8 | Stargate |
+| 1099 | [Hexcore](#1099-hexcore) | 5.8 | League of Legends / Arcane |
 | 127 | [Staff of the Phoenix](#127-staff-of-the-phoenix) | 5.9 | Generic |
 | 229 | [Senzu Bean](#229-senzu-bean) | 5.9 | Dragon Ball |
 | 308 | [Dragon's Hoard](#308-dragons-hoard) | 5.9 | Generic |
@@ -930,8 +1021,9 @@
 | 723 | [Life Fiber Loom](#723-life-fiber-loom) | 5.9 | Generic |
 | 818 | [Reimu Deka Fumo](#818-reimu-deka-fumo) | 5.9 | Touhou |
 | 848 | [Gravitational Beam Emitter](#848-gravitational-beam-emitter) | 5.9 | Blame |
+| 1031 | [Stygius, the Stygian Blade](#1031-stygius-the-stygian-blade) | 5.9 | Hades |
 
-### Legendary (62)
+### Legendary (64)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -944,6 +1036,7 @@
 | 852 | [Tree Graft](#852-tree-graft) | 6.0 | Generic |
 | 855 | [Duplicate](#855-duplicate) | 6.0 | Generic |
 | 999 | [The Engine](#999-the-engine) | 6.0 | Snowpiercer |
+| 1010 | [Shake the Tree](#1010-shake-the-tree) | 6.0 | Generic |
 | 249 | [Canis Lycaon](#249-canis-lycaon) | 6.1 | Highschool DxD |
 | 472 | [Dragon Dictionary](#472-dragon-dictionary) | 6.1 | Skyrim |
 | 498 | [1 UP](#498-1-up) | 6.1 | Mario |
@@ -965,6 +1058,7 @@
 | 563 | [Blue Spider Lily](#563-blue-spider-lily) | 6.3 | Demon Slayer |
 | 570 | [Gurenn Seiken](#570-gurenn-seiken) | 6.3 | Code Geass |
 | 754 | [Tobimune](#754-tobimune) | 6.3 | Kagurabachi |
+| 1017 | [Gambler's Legendary Die](#1017-gamblers-legendary-die) | 6.3 | Generic |
 | 354 | [Grimoire of Light Magic](#354-grimoire-of-light-magic) | 6.4 | Black Clover |
 | 414 | [Nano Machine Heart](#414-nano-machine-heart) | 6.4 | Metal Gear Rising Revengeance |
 | 463 | [Emperor's Blade](#463-emperors-blade) | 6.4 | Samurai Jack |
@@ -998,7 +1092,7 @@
 | 301 | [Horn of the Abyss](#301-horn-of-the-abyss) | 6.9 | Hota |
 | 529 | [Chaquetrix](#529-chaquetrix) | 6.9 | Ben 10 |
 
-### Mythical (46)
+### Mythical (48)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -1031,12 +1125,14 @@
 | 220 | [Kamui Senketsu](#220-kamui-senketsu) | 7.3 | Kill La Kill |
 | 488 | [Ring of the Shooting Star](#488-ring-of-the-shooting-star) | 7.3 | Overlord |
 | 679 | [Bankai - Ryujin Jakka](#679-bankai-ryujin-jakka) | 7.3 | Bleach |
+| 1018 | [Gambler's Mythical Die](#1018-gamblers-mythical-die) | 7.3 | Generic |
 | 39 | [Black Barrel](#39-black-barrel) | 7.4 | Fate |
 | 79 | [Sephiroth Graal](#79-sephiroth-graal) | 7.4 | Highschool DxD |
 | 250 | [True Longinus](#250-true-longinus) | 7.4 | Highschool DxD |
 | 253 | [Nereid Kyre](#253-nereid-kyre) | 7.4 | Highschool DxD |
 | 917 | [Mox Sapphire](#917-mox-sapphire) | 7.4 | MTG |
 | 521 | [Blade of Olympus](#521-blade-of-olympus) | 7.5 | God of War |
+| 1011 | [ChaosQuake](#1011-chaosquake) | 7.5 | Generic |
 | 245 | [Annihilation Maker](#245-annihilation-maker) | 7.6 | Highschool DxD |
 | 247 | [Zenith Tempest](#247-zenith-tempest) | 7.6 | Highschool DxD |
 | 969 | [Darkhold](#969-darkhold) | 7.6 | MCU |
@@ -1049,30 +1145,54 @@
 | 950 | [Ash Twin Project](#950-ash-twin-project) | 7.8 | Outer Wilds |
 | 367 | [Boosted Gear](#367-boosted-gear) | 7.9 | Highschool DxD |
 
-### Divine (12)
+### Divine (24)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 492 | [Power Stone](#492-power-stone) | 8.0 | Marvel |
 | 732 | [Pika Pika no Mi](#732-pika-pika-no-mi) | 8.0 | One Piece |
+| 1103 | [Second Breakfast Box](#1103-second-breakfast-box) | 8.0 | Generic |
 | 493 | [Soul Stone](#493-soul-stone) | 8.1 | Marvel |
 | 78 | [Dimension Lost](#78-dimension-lost) | 8.2 | Highschool DxD |
 | 243 | [Skeleton Key](#243-skeleton-key) | 8.2 | Skyrim |
+| 1104 | [Wardrobe of Elsewhere](#1104-wardrobe-of-elsewhere) | 8.2 | Generic |
+| 1124 | [Damascus Blade](#1124-damascus-blade) | 8.2 | Alita: Battle Angel |
+| 1019 | [Gambler's Divine Die](#1019-gamblers-divine-die) | 8.3 | Generic |
 | 42 | [Enkidu](#42-enkidu) | 8.4 | Fate |
+| 1105 | [Penny of the Ferryman](#1105-penny-of-the-ferryman) | 8.4 | Generic |
 | 251 | [Telos Karma](#251-telos-karma) | 8.5 | Highschool DxD |
 | 464 | [Stopwatch](#464-stopwatch) | 8.5 | Generic |
+| 1115 | [Mother Flame](#1115-mother-flame) | 8.5 | One Piece |
 | 914 | [Black Lotus](#914-black-lotus) | 8.6 | MTG |
+| 1106 | [The Unfinished Map](#1106-the-unfinished-map) | 8.6 | Generic |
+| 1123 | [Berserker Body](#1123-berserker-body) | 8.6 | Alita: Battle Angel |
 | 20 | [Enuma Elish](#20-enuma-elish) | 8.7 | Fate |
+| 1114 | [Hogyoku](#1114-hogyoku) | 8.7 | Bleach |
 | 477 | [Mansion of the Boundary](#477-mansion-of-the-boundary) | 8.8 | Generic |
 | 491 | [Eye of Agamotto](#491-eye-of-agamotto) | 8.8 | Marvel |
+| 1107 | [Gavel of Adjournment](#1107-gavel-of-adjournment) | 8.8 | Generic |
+| 1113 | [Zenith Blade](#1113-zenith-blade) | 8.9 | Terraria |
+| 1120 | [DeLorean Time Machine](#1120-delorean-time-machine) | 8.9 | Back to the Future |
 
-### Transcendent (5)
+### Transcendent (17)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
+| 1108 | [Cradle of Embers](#1108-cradle-of-embers) | 9.0 | Generic |
+| 1116 | [Type-40 TARDIS](#1116-type-40-tardis) | 9.0 | Doctor Who |
+| 1119 | [Genesis Device](#1119-genesis-device) | 9.0 | Star Trek |
+| 1121 | [Elder Scroll](#1121-elder-scroll) | 9.1 | Elder Scrolls |
+| 1122 | [Gravitational Beam Emitter](#1122-gravitational-beam-emitter) | 9.1 | Blame |
+| 1109 | [Seed of Yggdrasil](#1109-seed-of-yggdrasil) | 9.2 | Generic |
 | 528 | [Omnitrix](#528-omnitrix) | 9.3 | Ben 10 |
+| 1020 | [Gambler's Transcendent Die](#1020-gamblers-transcendent-die) | 9.3 | Generic |
+| 1111 | [The Triforce](#1111-the-triforce) | 9.3 | The Legend of Zelda |
+| 1110 | [The Honest Die](#1110-the-honest-die) | 9.4 | Generic |
+| 1118 | [The Moment](#1118-the-moment) | 9.5 | Doctor Who |
 | 715 | [Ascalon](#715-ascalon) | 9.6 | Ben 10 |
 | 849 | [The City](#849-the-city) | 9.6 | Blame |
+| 1112 | [Command Block](#1112-command-block) | 9.6 | Minecraft |
+| 1117 | [Eye of the Universe](#1117-eye-of-the-universe) | 9.7 | Outer Wilds |
 | 485 | [Ultimate Nullifier](#485-ultimate-nullifier) | 9.8 | Marvel |
 | 486 | [The Infinity Gauntlet](#486-the-infinity-gauntlet) | 9.9 | Marvel |
 
@@ -1086,7 +1206,7 @@
 
 **Description**
 
-> Cu Chulainn - Cursed demonic spear crafted from a great beast's skull. Wounds it inflicts never heal except via Legendary rank healing. With Master rank Polearm mastery and practice, unlock its noble phantasms.
+> (Tag:curse)(Tag:infernal)(Tag:polearm)(Tag:weapon)Cu Chulainn - Cursed demonic spear crafted from a great beast's skull. Wounds it inflicts never heal except via Legendary rank healing. With Master rank Polearm mastery and practice, unlock its noble phantasms.
 
 **Decision**
 
@@ -1103,7 +1223,7 @@
 
 **Description**
 
-> Artoria - Sword of Promised Victory crafted by the fae as humanity's ultimate hope. One of the strongest weapons, bound by 12 restraints that limit its true power.
+> (Tag:blade)(Tag:fae)(Tag:holy)(Tag:restricted)(Tag:weapon)Artoria - Sword of Promised Victory crafted by the fae as humanity's ultimate hope. One of the strongest weapons, bound by 12 restraints that limit its true power.
 
 **Decision**
 
@@ -1120,7 +1240,7 @@
 
 **Description**
 
-> Surtr - Sun-like sword of calamity that incinerates all things, prioritizing life above all else. Capable of wiping out all planetary life; even gods are reduced to ashes.
+> (Tag:blade)(Tag:fire)(Tag:weapon)Surtr - Sun-like sword of calamity that incinerates all things, prioritizing life above all else. Capable of wiping out all planetary life; even gods are reduced to ashes.
 
 **Decision**
 
@@ -1137,7 +1257,7 @@
 
 **Description**
 
-> Anchor of the Knight of the Deep Seas, blessed by the Secret Princess. Wielding it doubles strength and boosts all water-based abilities.
+> (Tag:bludgeon)(Tag:enhancer)(Tag:flexible)(Tag:water+)(Tag:weapon)Anchor of the Knight of the Deep Seas, blessed by the Secret Princess. Wielding it doubles strength and boosts all water-based abilities.
 
 **Decision**
 
@@ -1154,7 +1274,7 @@
 
 **Description**
 
-> Sword of the Evil Dragon Slaying Rabbit. Against dragons, enhances the wielder's physical stats and ignores a portion of their durability.
+> (Tag:anti-dragon)(Tag:blade)(Tag:weapon)Sword of the Evil Dragon Slaying Rabbit. Against dragons, enhances the wielder's physical stats and ignores a portion of their durability.
 
 **Decision**
 
@@ -1171,7 +1291,7 @@
 
 **Description**
 
-> Staff carved from a great demon's bones and soul. Amplifies all spells cast through it by 2x but also doubles their mana consumption.
+> (Tag:catalyst)(Tag:infernal)(Tag:magic)(Tag:magic+)Staff carved from a great demon's bones and soul. Amplifies all spells cast through it by 2x but also doubles their mana consumption.
 
 **Decision**
 
@@ -1188,7 +1308,7 @@
 
 **Description**
 
-> Injection of starborn astral blight essence. Massively increases energy regeneration for 10 minutes while tearing and rotting your insides. Restock Timer: 120 hours.
+> (Tag:consumable)(Tag:energy-regeneration+)Injection of starborn astral blight essence. Massively increases energy regeneration for 10 minutes while tearing and rotting your insides. Restock Timer: 120 hours.
 
 **Decision**
 
@@ -1205,7 +1325,7 @@
 
 **Description**
 
-> Injection crafted by Dreadon granting immense might. Greatly boosts physical ability and regeneration for 30 minutes, followed by weakness and exhaustion. Restock Timer: 120 hours.
+> (Tag:consumable)(Tag:enhancer)(Tag:health-regeneration+)Injection crafted by Dreadon granting immense might. Greatly boosts physical ability and regeneration for 30 minutes, followed by weakness and exhaustion. Restock Timer: 120 hours.
 
 **Decision**
 
@@ -1222,7 +1342,7 @@
 
 **Description**
 
-> Ornate platinum ring that constantly bends light around the wearer, rendering them invisible.
+> (Tag:accessory)(Tag:stealth)Ornate platinum ring that constantly bends light around the wearer, rendering them invisible.
 
 **Decision**
 
@@ -1239,7 +1359,7 @@
 
 **Description**
 
-> Opens any physical lock, barrier, or ward by inserting and twisting it.
+> (Tag:tool)Opens any physical lock, barrier, or ward by inserting and twisting it.
 
 **Flagged in reports**
 
@@ -1260,7 +1380,7 @@
 
 **Description**
 
-> Large red spear that resizes to its user and reshapes to their needs, tearing through even the strongest barriers. When stabbed into a god, it locks their soul and paralyzes them until removed.
+> (Tag:anti-barrier)(Tag:anti-divine)(Tag:polearm)(Tag:weapon)Large red spear that resizes to its user and reshapes to their needs, tearing through even the strongest barriers. When stabbed into a god, it locks their soul and paralyzes them until removed.
 
 **Decision**
 
@@ -1277,7 +1397,7 @@
 
 **Description**
 
-> Artoria - Barrier of the Wind King of layered, extremely compressed air the user controls at will.
+> (Tag:air)(Tag:shield)(Tag:stealth)Artoria - Barrier of the Wind King of layered, extremely compressed air the user controls at will.
 
 **Decision**
 
@@ -1294,7 +1414,7 @@
 
 **Description**
 
-> Diarmuid - Legendary spear of Diarmuid whose cursed wounds never close via traditional healing or magic below Legendary Level. Curse lifts if the owner dies or the spear breaks, though a skilled blacksmith or crafter can reforge it.
+> (Tag:anti-recovery)(Tag:curse)(Tag:polearm)(Tag:weapon)Diarmuid - Legendary spear of Diarmuid whose cursed wounds never close via traditional healing or magic below Legendary Level. Curse lifts if the owner dies or the spear breaks, though a skilled blacksmith or crafter can reforge it.
 
 **Decision**
 
@@ -1311,7 +1431,7 @@
 
 **Description**
 
-> Diarmuid - Legendary spear of Diarmuid that severs and nullifies magic, rendering magical protection almost useless. It bypasses protections rather than dispelling active spells.
+> (Tag:anti-barrier)(Tag:anti-magic)(Tag:polearm)(Tag:weapon)Diarmuid - Legendary spear of Diarmuid that severs and nullifies magic, rendering magical protection almost useless. It bypasses protections rather than dispelling active spells.
 
 **Decision**
 
@@ -1328,7 +1448,7 @@
 
 **Description**
 
-> Strongest Demonic Sword, on par with Durandal and nigh unbreakable. Can emit destructive aura by expending the user's energy and deals massively increased damage to all Dragons.
+> (Tag:anti-dragon)(Tag:blade)(Tag:infernal)(Tag:weapon)Strongest Demonic Sword, on par with Durandal and nigh unbreakable. Can emit destructive aura by expending the user's energy and deals massively increased damage to all Dragons.
 
 **Decision**
 
@@ -1345,7 +1465,7 @@
 
 **Description**
 
-> One of the strongest Holy Swords, unbreakable and capable of severing anything. Can release destructive aura by expending the user's energy, but is extremely difficult for inexperienced users.
+> (Tag:blade)(Tag:holy)(Tag:weapon)One of the strongest Holy Swords, unbreakable and capable of severing anything. Can release destructive aura by expending the user's energy, but is extremely difficult for inexperienced users.
 
 **Decision**
 
@@ -1362,7 +1482,7 @@
 
 **Description**
 
-> Sacred Gear created by God that conjures demonic sword constructs with properties based on the user's capability and skill. Cannot create a sword that does something the user cannot do.
+> (Tag:blade)(Tag:bound)(Tag:holy)(Tag:infernal)(Tag:summon)(Tag:weapon)Sacred Gear created by God that conjures demonic sword constructs with properties based on the user's capability and skill. Cannot create a sword that does something the user cannot do.
 
 **Decision**
 
@@ -1379,7 +1499,7 @@
 
 **Description**
 
-> Ordinary human skeleton from a completely ordinary person.
+> (Tag:mundane)Ordinary human skeleton from a completely ordinary person.
 
 **Decision**
 
@@ -1396,7 +1516,7 @@
 
 **Description**
 
-> (Tech) Power armor modeled on the God Slaying Tyrant's. Grants extreme physical boost, Rare rank regeneration, hovering, and an extremely fast dash every 10 seconds. Managed by a virtual intelligence controlling its systems.
+> (Tag:armor)(Tag:enhancer)(Tag:health-regeneration+)(Tag:movement)(Tag:tech)(Tech) Power armor modeled on the God Slaying Tyrant's. Grants extreme physical boost, Rare rank regeneration, hovering, and an extremely fast dash every 10 seconds. Managed by a virtual intelligence controlling its systems.
 
 **Decision**
 
@@ -1413,7 +1533,7 @@
 
 **Description**
 
-> Gilgamesh - Sword of Rupture, Ea, granted by the gods and forged before swords existed. Releases red winds that shred spacetime without expending user energy, and at full power fires a beam that strips the world's texture, annihilating everything in its path.
+> (Tag:blade)(Tag:space)(Tag:weapon)Gilgamesh - Sword of Rupture, Ea, granted by the gods and forged before swords existed. Releases red winds that shred spacetime without expending user energy, and at full power fires a beam that strips the world's texture, annihilating everything in its path.
 
 **Flagged in reports**
 
@@ -1434,7 +1554,7 @@
 
 **Description**
 
-> Set of 6 regular Pokeballs that capture and store creatures, which register as familiars. Restock Timer: 24 hours.
+> (Tag:storage)Set of 6 regular Pokeballs that capture and store creatures, which register as familiars. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -1451,7 +1571,7 @@
 
 **Description**
 
-> Dispels any active ability effect it touches, such as fireballs or barriers, but not basic energy or magic. Cannot dispel effects beyond its rank.
+> (Tag:anti-magic)(Tag:blade)(Tag:dagger)(Tag:weapon)Dispels any active ability effect it touches, such as fireballs or barriers, but not basic energy or magic. Cannot dispel effects beyond its rank.
 
 **Decision**
 
@@ -1468,7 +1588,7 @@
 
 **Description**
 
-> Horn containing unlimited fresh mundane vegetables, fruits, etc. Think of the desired ingredient, then pull it out.
+> (Tag:resource)(Tag:tool)Horn containing unlimited fresh mundane vegetables, fruits, etc. Think of the desired ingredient, then pull it out.
 
 **Decision**
 
@@ -1485,7 +1605,7 @@
 
 **Description**
 
-> (Tome) Teaches Erdtree incantations such as healing and blessings. https://eldenring.wiki.fextralife.com/Erdtree+Incantations
+> (Tag:grimoire)(Tag:health-recovery)(Tag:holy)(Tag:magic)(Tome) Teaches Erdtree incantations such as healing and blessings. https://eldenring.wiki.fextralife.com/Erdtree+Incantations
 
 **Decision**
 
@@ -1502,7 +1622,7 @@
 
 **Description**
 
-> (Tome) Tome of vast erotic magical arts knowledge, teaching Eromancy.
+> (Tag:grimoire)(Tag:magic)(Tag:nsfw)(Tome) Tome of vast erotic magical arts knowledge, teaching Eromancy.
 
 **Decision**
 
@@ -1519,7 +1639,7 @@
 
 **Description**
 
-> (Tome) Teaches DnD illusion spells of tricks and illusions. https://dnd5e.wikidot.com/spells:illusion
+> (Tag:grimoire)(Tag:illusion)(Tag:magic)(Tag:stealth)(Tome) Teaches DnD illusion spells of tricks and illusions. https://dnd5e.wikidot.com/spells:illusion
 
 **Decision**
 
@@ -1536,7 +1656,7 @@
 
 **Description**
 
-> Single Dragon Ball. Gather all 7 to summon Shenron for a wish within his power, or gain any ability below 6.9 rating.
+> (Tag:draconic)(Tag:summon)Single Dragon Ball. Gather all 7 to summon Shenron for a wish within his power, or gain any ability below 6.9 rating.
 
 **Flagged in reports**
 
@@ -1557,7 +1677,7 @@
 
 **Description**
 
-> Stone mask crafted by the Pillar Men. Wearing it while blood is dripped on it transforms the wearer into a vampire.
+> (Tag:race-change)(Tag:tool)Stone mask crafted by the Pillar Men. Wearing it while blood is dripped on it transforms the wearer into a vampire.
 
 **Decision**
 
@@ -1574,7 +1694,7 @@
 
 **Description**
 
-> Legendary jewel amplifying hamon and light to extreme levels; worn as a pendant, it strengthens light abilities. Combined with the Stone Mask, it can create a perfect lifeform.
+> (Tag:accessory)(Tag:light)(Tag:light+)Legendary jewel amplifying hamon and light to extreme levels; worn as a pendant, it strengthens light abilities. Combined with the Stone Mask, it can create a perfect lifeform.
 
 **Decision**
 
@@ -1591,7 +1711,7 @@
 
 **Description**
 
-> (Tome) Grimoire of a twice-died death magician. Teaches death-attribute magic. https://death-mage.fandom.com/wiki/Death-attribute_magic
+> (Tag:grimoire)(Tag:magic)(Tag:necro)(Tome) Grimoire of a twice-died death magician. Teaches death-attribute magic. https://death-mage.fandom.com/wiki/Death-attribute_magic
 
 **Decision**
 
@@ -1608,7 +1728,7 @@
 
 **Description**
 
-> (Tome) Teaches White Magic such as healing, curing, buffs, and warding.
+> (Tag:grimoire)(Tag:magic)(Tome) Teaches White Magic such as healing, curing, buffs, and warding.
 
 **Decision**
 
@@ -1625,7 +1745,7 @@
 
 **Description**
 
-> (Tome) Teaches Fire Magic of fire and flame.
+> (Tag:fire)(Tome) Teaches Fire Magic of fire and flame.
 
 **Decision**
 
@@ -1642,7 +1762,7 @@
 
 **Description**
 
-> (Tome) Teaches Ice Magic of ice and cold.
+> (Tag:ice)(Tome) Teaches Ice Magic of ice and cold.
 
 **Decision**
 
@@ -1659,7 +1779,7 @@
 
 **Description**
 
-> (Tome) Teaches Air Magic of wind and lightning.
+> (Tag:grimoire)(Tag:magic)(Tome) Teaches Air Magic of wind and lightning.
 
 **Decision**
 
@@ -1676,7 +1796,7 @@
 
 **Description**
 
-> (Tome) Guide to brewing many minor useful potions like healing and energy recovery from mundane ingredients. Only those who have physically read it can craft its potions.
+> (Tag:magic)(Tome) Guide to brewing many minor useful potions like healing and energy recovery from mundane ingredients. Only those who have physically read it can craft its potions.
 
 **Decision**
 
@@ -1693,7 +1813,7 @@
 
 **Description**
 
-> (Tech) Room-sized machine that disassembles any item into its most basic components, down to snowflake size. Can reassemble them into ingots, materials, or finished items given a blueprint.
+> (Tag:machine)(Tag:production)(Tag:tech)(Tech) Room-sized machine that disassembles any item into its most basic components, down to snowflake size. Can reassemble them into ingots, materials, or finished items given a blueprint.
 
 **Flagged in reports**
 
@@ -1714,7 +1834,7 @@
 
 **Description**
 
-> Bar of pure refined Wakandan Vibranium, ready to process. Absorbs kinetic energy and vibrations, making it nigh unbreakable conventionally. Restock Timer: 168 hours.
+> (Tag:resource)Bar of pure refined Wakandan Vibranium, ready to process. Absorbs kinetic energy and vibrations, making it nigh unbreakable conventionally. Restock Timer: 168 hours.
 
 **Decision**
 
@@ -1731,7 +1851,7 @@
 
 **Description**
 
-> Ornate gold ring granting flight at the wearer's running speed.
+> (Tag:holy)Ornate gold ring granting flight at the wearer's running speed.
 
 **Decision**
 
@@ -1769,7 +1889,7 @@
 
 **Description**
 
-> Holy rite to create Black Keys by expending energy and praying per the rites.
+> (Tag:blade)(Tag:holy)(Tag:magic)(Tag:production)(Tag:tool)(Tag:weapon)Holy rite to create Black Keys by expending energy and praying per the rites.
 
 **Decision**
 
@@ -1786,7 +1906,7 @@
 
 **Description**
 
-> Holy shroud once worn by a saint. When wrapped around an object, suppresses its state to keep it "normal".
+> (Tag:holy)(Tag:tool)Holy shroud once worn by a saint. When wrapped around an object, suppresses its state to keep it "normal".
 
 **Decision**
 
@@ -1803,7 +1923,7 @@
 
 **Description**
 
-> Chains of Heaven that suppress even gods, manifested anytime and controlled mentally. Stronger against holier or more divine targets.
+> (Tag:anti-divine)(Tag:flexible)(Tag:weapon)Chains of Heaven that suppress even gods, manifested anytime and controlled mentally. Stronger against holier or more divine targets.
 
 **Decision**
 
@@ -1820,7 +1940,7 @@
 
 **Description**
 
-> Very comfortable socks. Rolling this from the multiverse's treasures deserves pity.
+> (Tag:mundane)Very comfortable socks. Rolling this from the multiverse's treasures deserves pity.
 
 **Decision**
 
@@ -1833,11 +1953,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.6 | Epic | Generic |
+| 5.6 | Epic | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Predicts a future 'opportunity' like a mission, item, or person's action with accurate detail. Has 5 uses, then fades.
+> (Tag:card)(Tag:consumable)(Tag:divination)Predicts a future 'opportunity' like a mission, item, or person's action with accurate detail. Has 5 uses, then fades.
 
 **Decision**
 
@@ -1854,7 +1974,7 @@
 
 **Description**
 
-> (Tech) Crimson expert High Frequency blade, best of its kind, cutting practically any physical material. Includes a gunslash for Iai moves; sheath has infinite charge.
+> (Tag:blade)(Tag:tech)(Tag:weapon)(Tech) Crimson expert High Frequency blade, best of its kind, cutting practically any physical material. Includes a gunslash for Iai moves; sheath has infinite charge.
 
 **Decision**
 
@@ -1871,7 +1991,7 @@
 
 **Description**
 
-> Cursed three-section staff growing more destructive the stronger its user.
+> (Tag:bludgeon)(Tag:flexible)(Tag:polearm)(Tag:weapon)Cursed three-section staff growing more destructive the stronger its user.
 
 **Decision**
 
@@ -1888,7 +2008,7 @@
 
 **Description**
 
-> (Tech) Smart handheld device that scans, identifies, and analyzes any creature's race or species in under 10 seconds.
+> (Tag:divination)(Tag:tech)(Tag:tool)(Tech) Smart handheld device that scans, identifies, and analyzes any creature's race or species in under 10 seconds.
 
 **Decision**
 
@@ -1905,7 +2025,7 @@
 
 **Description**
 
-> Magazine that morphs to fit any projectile weapon and supplies infinite ammo while attached.
+> (Tag:material)Magazine that morphs to fit any projectile weapon and supplies infinite ammo while attached.
 
 **Decision**
 
@@ -1922,7 +2042,7 @@
 
 **Description**
 
-> Teleports you to Belethor's General Goods in Skyrim, Tamriel for 1 hour. Cannot leave a 10-meter circle from arrival; can buy native goods like Soul Gems and Magic Books. Cooldown: 720 hours.
+> (Tag:meta)(Tag:ticket)Teleports you to Belethor's General Goods in Skyrim, Tamriel for 1 hour. Cannot leave a 10-meter circle from arrival; can buy native goods like Soul Gems and Magic Books. Cooldown: 720 hours.
 
 **Decision**
 
@@ -1939,7 +2059,7 @@
 
 **Description**
 
-> Devil Fruit letting an object or animal assume human or hybrid form, at the cost of being unable to swim.
+> (Tag:consumable)(Tag:curse)(Tag:race-change)Devil Fruit letting an object or animal assume human or hybrid form, at the cost of being unable to swim.
 
 **Decision**
 
@@ -1956,7 +2076,7 @@
 
 **Description**
 
-> Hammer of the greatest Paladin, with mountain-flattening might. Greatly amplifies magical and physical abilities and spells cast through it. Returns to the user when thrown, like Mjolnir.
+> (Tag:bludgeon)(Tag:catalyst)(Tag:enhancer)(Tag:magic)(Tag:weapon)Hammer of the greatest Paladin, with mountain-flattening might. Greatly amplifies magical and physical abilities and spells cast through it. Returns to the user when thrown, like Mjolnir.
 
 **Decision**
 
@@ -1973,7 +2093,7 @@
 
 **Description**
 
-> Sends you to the ITOPOD, the Infinite Tower of Pissed Off Dudes. Fight random enemies floor-by-floor in gauntlet format, each as strong as its floor; earn an item equal to your final floor, but death is permanent. One time use. (A/N: Each floor corresponds to a familiar whose rarity equals Floor Number divided by 10. Floor 1 is a 0.1 rarity familiar while floor 32 is a 3.2 familiar.)
+> (Tag:meta)(Tag:ticket)Sends you to the ITOPOD, the Infinite Tower of Pissed Off Dudes. Fight random enemies floor-by-floor in gauntlet format, each as strong as its floor; earn an item equal to your final floor, but death is permanent. One time use. (A/N: Each floor corresponds to a familiar whose rarity equals Floor Number divided by 10. Floor 1 is a 0.1 rarity familiar while floor 32 is a 3.2 familiar.)
 
 **Decision**
 
@@ -1990,7 +2110,7 @@
 
 **Description**
 
-> (Tome) Love Advice From the Great Duke of hell - While held, lets you create and control hands from any surface like your own limbs. With practice and study, usable without the tome.
+> (Tag:grimoire)(Tag:magic)(Tome) Love Advice From the Great Duke of hell - While held, lets you create and control hands from any surface like your own limbs. With practice and study, usable without the tome.
 
 **Decision**
 
@@ -2007,7 +2127,7 @@
 
 **Description**
 
-> Instantly buys and teleports any mundane furniture from your current world to you at manufacturing cost. Unusable in combat or hostile territory.
+> (Tag:production)(Tag:tool)Instantly buys and teleports any mundane furniture from your current world to you at manufacturing cost. Unusable in combat or hostile territory.
 
 **Decision**
 
@@ -2024,7 +2144,7 @@
 
 **Description**
 
-> (Tech) Extremely tough power armor for deep-sea exploration down to 3,000 km. Adapts flawlessly to poison, corrosion, and pressure, letting you move and live underwater with ease.
+> (Tag:armor)(Tag:tech)(Tag:water-resistance+)(Tech) Extremely tough power armor for deep-sea exploration down to 3,000 km. Adapts flawlessly to poison, corrosion, and pressure, letting you move and live underwater with ease.
 
 **Decision**
 
@@ -2041,7 +2161,7 @@
 
 **Description**
 
-> Rainbow gel in an ornate bottle. Consuming it grants Advanced Poison Resistance plus sizeable vitality and agility boosts.
+> (Tag:agility+)(Tag:consumable)(Tag:elixir)(Tag:life+)(Tag:poison-resistance+)Rainbow gel in an ornate bottle. Consuming it grants Advanced Poison Resistance plus sizeable vitality and agility boosts.
 
 **Decision**
 
@@ -2058,7 +2178,7 @@
 
 **Description**
 
-> Magical ornate silver ring improving agility, reflexes, and balance.
+> (Tag:accessory)(Tag:agility+)(Tag:reflex+)Magical ornate silver ring improving agility, reflexes, and balance.
 
 **Decision**
 
@@ -2075,7 +2195,7 @@
 
 **Description**
 
-> Dusty brown cloak hiding your presence. Once every 8 hours, shroud yourself in a violent localized sandstorm to retreat or hide.
+> (Tag:armor)(Tag:earth)(Tag:stealth)Dusty brown cloak hiding your presence. Once every 8 hours, shroud yourself in a violent localized sandstorm to retreat or hide.
 
 **Decision**
 
@@ -2092,7 +2212,7 @@
 
 **Description**
 
-> Ambrosia of the gods. Drinking it massively boosts vitality to near-regeneration and cures all illnesses and ailments.
+> (Tag:consumable)(Tag:elixir)Ambrosia of the gods. Drinking it massively boosts vitality to near-regeneration and cures all illnesses and ailments.
 
 **Decision**
 
@@ -2109,7 +2229,7 @@
 
 **Description**
 
-> Ancient green-gem necklace granting sunlight-based regeneration: Uncommon in morning, Rare at noon, Uncommon in afternoon, Common in evening, none at night.
+> (Tag:accessory)(Tag:health-regeneration+)Ancient green-gem necklace granting sunlight-based regeneration: Uncommon in morning, Rare at noon, Uncommon in afternoon, Common in evening, none at night.
 
 **Decision**
 
@@ -2126,7 +2246,7 @@
 
 **Description**
 
-> Bag of limitless fresh mundane Earth animal meat in all cuts. Withdraw up to 100 kg every 24 hours by reaching in and thinking of the cut. Clean, not ethically sourced; ignore the implications.
+> (Tag:production)(Tag:resource)(Tag:tool)Bag of limitless fresh mundane Earth animal meat in all cuts. Withdraw up to 100 kg every 24 hours by reaching in and thinking of the cut. Clean, not ethically sourced; ignore the implications.
 
 **Decision**
 
@@ -2143,7 +2263,7 @@
 
 **Description**
 
-> Living dew from the ancient jungle's depths. Consuming it significantly increases vitality and lifespan, granting strong ailment resistance and faster healing, amplified in jungles or forests.
+> (Tag:consumable)Living dew from the ancient jungle's depths. Consuming it significantly increases vitality and lifespan, granting strong ailment resistance and faster healing, amplified in jungles or forests.
 
 **Decision**
 
@@ -2160,7 +2280,7 @@
 
 **Description**
 
-> Culmination of Archmage Permafrost's work. Greatly increases energy/mana reserves and regeneration, massively buffs frost abilities at reduced cost, and grants strong cold and flame resistance.
+> (Tag:consumable)(Tag:elixir)(Tag:fire-resistance+)(Tag:ice+)(Tag:ice-resistance+)(Tag:maximum-energy+)Culmination of Archmage Permafrost's work. Greatly increases energy/mana reserves and regeneration, massively buffs frost abilities at reduced cost, and grants strong cold and flame resistance.
 
 **Decision**
 
@@ -2177,7 +2297,7 @@
 
 **Description**
 
-> Indestructible stop sign. Whatever its head contacts instantly loses all momentum.
+> (Tag:bludgeon)(Tag:kinetic)(Tag:weapon)Indestructible stop sign. Whatever its head contacts instantly loses all momentum.
 
 **Decision**
 
@@ -2194,7 +2314,7 @@
 
 **Description**
 
-> Trinket of a monk who stood still until becoming a statue. Standing still over 3 seconds speeds energy/mana and health recovery.
+> (Tag:accessory)Trinket of a monk who stood still until becoming a statue. Standing still over 3 seconds speeds energy/mana and health recovery.
 
 **Decision**
 
@@ -2211,7 +2331,7 @@
 
 **Description**
 
-> Scarf of a shadow-swift rogue. Activate to gain a large speed boost and intangibility while moving straight for 1 second, slipping through attacks or walls. 30 second cooldown.
+> (Tag:accessory)(Tag:movement)Scarf of a shadow-swift rogue. Activate to gain a large speed boost and intangibility while moving straight for 1 second, slipping through attacks or walls. 30 second cooldown.
 
 **Decision**
 
@@ -2228,7 +2348,7 @@
 
 **Description**
 
-> (Tome) Teaches Blood Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Blood_Magic
+> (Tag:blood)(Tag:grimoire)(Tag:life)(Tag:magic)(Tome) Teaches Blood Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Blood_Magic
 
 **Decision**
 
@@ -2245,7 +2365,7 @@
 
 **Description**
 
-> (Tome) Teaches Fire Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Fire_Magic
+> (Tag:fire)(Tag:grimoire)(Tag:magic)(Tome) Teaches Fire Magic of the Clover Kingdom. Spell List: https://blackclover.fandom.com/wiki/Fire_Magic
 
 **Decision**
 
@@ -2262,7 +2382,7 @@
 
 **Description**
 
-> (Tome) Medusa Gorgon's tome teaching her signature Vector Magic. Spell List: https://souleater.fandom.com/wiki/Vector_Magic
+> (Tag:grimoire)(Tag:kinetic)(Tag:magic)(Tome) Medusa Gorgon's tome teaching her signature Vector Magic. Spell List: https://souleater.fandom.com/wiki/Vector_Magic
 
 **Decision**
 
@@ -2279,7 +2399,7 @@
 
 **Description**
 
-> Boar Vessel, 600-500 BC Etruscan ceramic. No further explanation needed.
+> (Tag:mundane)Boar Vessel, 600-500 BC Etruscan ceramic. No further explanation needed.
 
 **Decision**
 
@@ -2296,7 +2416,7 @@
 
 **Description**
 
-> Bag of infinite shitty copper from EA Nasir. Holds up to 1000 tons at a time, replenishing every 24 hours.
+> (Tag:production)(Tag:resource)(Tag:tool)Bag of infinite shitty copper from EA Nasir. Holds up to 1000 tons at a time, replenishing every 24 hours.
 
 **Decision**
 
@@ -2313,7 +2433,7 @@
 
 **Description**
 
-> Large crude brown belt raising physical strength to giant level, acting as Rare rank strength. Only works if weaker than a giant.
+> (Tag:accessory)(Tag:strength+)Large crude brown belt raising physical strength to giant level, acting as Rare rank strength. Only works if weaker than a giant.
 
 **Decision**
 
@@ -2330,7 +2450,7 @@
 
 **Description**
 
-> Legendary sentient greatsword devouring souls for health and invigoration lasting 24 hours, or stores them in the blade. While wielded, senses souls within 100 meters. Starving it too long makes it restless.
+> (Tag:blade)(Tag:health-recovery)(Tag:perception+)(Tag:spirit)(Tag:weapon)Legendary sentient greatsword devouring souls for health and invigoration lasting 24 hours, or stores them in the blade. While wielded, senses souls within 100 meters. Starving it too long makes it restless.
 
 **Decision**
 
@@ -2347,7 +2467,7 @@
 
 **Description**
 
-> Filthy patchwork cloak of rat and mouse hide that can never be cleaned. Lets you transform into mundane vermin at will, control sensed vermin, and gain Elite rank illness and poison resistance.
+> (Tag:armor)(Tag:command)(Tag:poison-resistance+)(Tag:transformation)Filthy patchwork cloak of rat and mouse hide that can never be cleaned. Lets you transform into mundane vermin at will, control sensed vermin, and gain Elite rank illness and poison resistance.
 
 **Decision**
 
@@ -2364,7 +2484,7 @@
 
 **Description**
 
-> Magic musket holding a glowing yellow topaz dragon scale instead of ammo. Shots rot living creatures and disintegrate objects in addition to impact.
+> (Tag:gun)(Tag:magic)(Tag:weapon)Magic musket holding a glowing yellow topaz dragon scale instead of ammo. Shots rot living creatures and disintegrate objects in addition to impact.
 
 **Decision**
 
@@ -2381,7 +2501,7 @@
 
 **Description**
 
-> Sleeping mask blessed by Hypnos, god of sleep. Wearing it makes sleep perfectly restful, fully recovering energy after 8 uninterrupted hours.
+> (Tag:accessory)(Tag:energy-recovery)Sleeping mask blessed by Hypnos, god of sleep. Wearing it makes sleep perfectly restful, fully recovering energy after 8 uninterrupted hours.
 
 **Decision**
 
@@ -2398,7 +2518,7 @@
 
 **Description**
 
-> Sacred Gear created by God that creates holy blade constructs with attributes based on user ability and skill, such as flame-absorbing or poisoning swords.
+> (Tag:blade)(Tag:bound)(Tag:holy)(Tag:summon)Sacred Gear created by God that creates holy blade constructs with attributes based on user ability and skill, such as flame-absorbing or poisoning swords.
 
 **Decision**
 
@@ -2415,7 +2535,7 @@
 
 **Description**
 
-> Longinus created by God, world-destroying with a skilled user. Creates mist serving as inviolable barriers or portals to self-made pocket dimensions, allowing free teleportation of self and others.
+> (Tag:bound)(Tag:movement)(Tag:space)(Tag:tool)Longinus created by God, world-destroying with a skilled user. Creates mist serving as inviolable barriers or portals to self-made pocket dimensions, allowing free teleportation of self and others.
 
 **Flagged in reports**
 
@@ -2453,7 +2573,7 @@
 
 **Description**
 
-> Large cauldron filling itself with a chosen basic potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, Healing, Minor Regeneration, Stone Skin, etc. Must know the potion (No Elixirs), Rare rank or below.
+> (Tag:building)(Tag:magic)Large cauldron filling itself with a chosen basic potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, Healing, Minor Regeneration, Stone Skin, etc. Must know the potion (No Elixirs), Rare rank or below.
 
 **Decision**
 
@@ -2470,7 +2590,7 @@
 
 **Description**
 
-> Large cauldron filling itself with a chosen intermediate potion once daily: Strength, Agility, Waterbreathing, Healing, Regeneration, Iron Skin, energy recovery, fertility, vitality, etc. Must know the potion (No Elixirs), Elite rank or below.
+> (Tag:draconic)Large cauldron filling itself with a chosen intermediate potion once daily: Strength, Agility, Waterbreathing, Healing, Regeneration, Iron Skin, energy recovery, fertility, vitality, etc. Must know the potion (No Elixirs), Elite rank or below.
 
 **Decision**
 
@@ -2487,7 +2607,7 @@
 
 **Description**
 
-> Large cauldron filling itself with a chosen major potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, greater Healing, greater Regeneration, Iron Skin, dragon breath, etc. Must know the potion (No Elixirs), Epic rank or below.
+> (Tag:draconic)Large cauldron filling itself with a chosen major potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, greater Healing, greater Regeneration, Iron Skin, dragon breath, etc. Must know the potion (No Elixirs), Epic rank or below.
 
 **Decision**
 
@@ -2504,7 +2624,7 @@
 
 **Description**
 
-> Sacred Gear created by God. It allows the user to conjure energy lines that attach to targets to siphon energy. Can also bind opponents or swing like Spider-Man.
+> (Tag:bound)(Tag:energy-recovery)(Tag:flexible)(Tag:holy)(Tag:weapon)Sacred Gear created by God. It allows the user to conjure energy lines that attach to targets to siphon energy. Can also bind opponents or swing like Spider-Man.
 
 **Decision**
 
@@ -2521,7 +2641,7 @@
 
 **Description**
 
-> (Tech) Incredibly powerful floating chair with more compute than the strongest supercomputers. Flies at supersonic speeds with powerful protective forcefields. The ultimate gaming chair.
+> (Tag:machine)(Tag:movement)(Tag:tech)(Tech) Incredibly powerful floating chair with more compute than the strongest supercomputers. Flies at supersonic speeds with powerful protective forcefields. The ultimate gaming chair.
 
 **Decision**
 
@@ -2538,7 +2658,7 @@
 
 **Description**
 
-> Ornate antique hand clock with 3 unrefillable charges. Spend a charge to return to the morning of the current day. Turns to dust after all 3 are spent.
+> (Tag:time)(Tag:tool)Ornate antique hand clock with 3 unrefillable charges. Spend a charge to return to the morning of the current day. Turns to dust after all 3 are spent.
 
 **Flagged in reports**
 
@@ -2559,7 +2679,7 @@
 
 **Description**
 
-> Magical stone shield of Havel the Rock. Grants enhanced durability and can expend energy to coat the body in stone for further reinforcement.
+> (Tag:defence+)(Tag:earth)(Tag:shield)Magical stone shield of Havel the Rock. Grants enhanced durability and can expend energy to coat the body in stone for further reinforcement.
 
 **Decision**
 
@@ -2576,7 +2696,7 @@
 
 **Description**
 
-> Legendary Way of White weapon once blessed with white-flame protection. Its power has faded, now granting only slight regeneration.
+> (Tag:dark)Legendary Way of White weapon once blessed with white-flame protection. Its power has faded, now granting only slight regeneration.
 
 **Decision**
 
@@ -2593,7 +2713,7 @@
 
 **Description**
 
-> Altar of fire collecting nature's mana to birth earth spirits naturally loyal to the altar's owner.
+> (Tag:barracks)(Tag:building)(Tag:earth)(Tag:spirit)Altar of fire collecting nature's mana to birth earth spirits naturally loyal to the altar's owner.
 
 **Decision**
 
@@ -2610,7 +2730,7 @@
 
 **Description**
 
-> Ring of goddess Fina's favor and protection, famed for "fateful beauty". Boosts Health, Stamina, and Endurance, but breaks if removed.
+> (Tag:accessory)(Tag:stamina+)(Tag:vitality+)Ring of goddess Fina's favor and protection, famed for "fateful beauty". Boosts Health, Stamina, and Endurance, but breaks if removed.
 
 **Decision**
 
@@ -2627,7 +2747,7 @@
 
 **Description**
 
-> Gold ring engraved with the gluttonous serpent, imperfect dragon and symbol of the Undead. Boosts wearer luck so more items are amassed.
+> (Tag:accessory)(Tag:luck+)Gold ring engraved with the gluttonous serpent, imperfect dragon and symbol of the Undead. Boosts wearer luck so more items are amassed.
 
 **Decision**
 
@@ -2644,7 +2764,7 @@
 
 **Description**
 
-> Warm ring of Gwynevere, princess of sunlight and Gwyn's eldest daughter. Grants regeneration and restoration, amplified by sunlight.
+> (Tag:accessory)(Tag:health-regeneration+)(Tag:recovery+)Warm ring of Gwynevere, princess of sunlight and Gwyn's eldest daughter. Grants regeneration and restoration, amplified by sunlight.
 
 **Decision**
 
@@ -2661,7 +2781,7 @@
 
 **Description**
 
-> Ring secretly worn by a surreptitious Vinheim Dragon School sorcerer, engraved with a slumbering everlasting dragon. Masks all sound from the wearer.
+> (Tag:accessory)(Tag:stealth)Ring secretly worn by a surreptitious Vinheim Dragon School sorcerer, engraved with a slumbering everlasting dragon. Masks all sound from the wearer.
 
 **Decision**
 
@@ -2678,7 +2798,7 @@
 
 **Description**
 
-> Ancient ring of unknown origin engraved with a large green flower. Hastens stamina regeneration and exhaustion recovery.
+> (Tag:accessory)(Tag:stamina+)Ancient ring of unknown origin engraved with a large green flower. Hastens stamina regeneration and exhaustion recovery.
 
 **Decision**
 
@@ -2695,7 +2815,7 @@
 
 **Description**
 
-> True knight's stoneplate for facing hardship. Red stoneplate symbolizes fire, boosting flame and heat defense.
+> (Tag:accessory)(Tag:fire-resistance+)True knight's stoneplate for facing hardship. Red stoneplate symbolizes fire, boosting flame and heat defense.
 
 **Decision**
 
@@ -2712,7 +2832,7 @@
 
 **Description**
 
-> True knight's stoneplate for facing hardship. Cyan stoneplate symbolizes ice, boosting ice and cold defense.
+> (Tag:accessory)(Tag:ice-resistance+)True knight's stoneplate for facing hardship. Cyan stoneplate symbolizes ice, boosting ice and cold defense.
 
 **Decision**
 
@@ -2729,7 +2849,7 @@
 
 **Description**
 
-> True knight's stoneplate for facing hardship. Yellow stoneplate symbolizes lightning and storms, boosting lightning and wind defense.
+> (Tag:accessory)(Tag:air-resistance+)(Tag:electric-resistance+)True knight's stoneplate for facing hardship. Yellow stoneplate symbolizes lightning and storms, boosting lightning and wind defense.
 
 **Decision**
 
@@ -2746,7 +2866,7 @@
 
 **Description**
 
-> True knight's stoneplate for facing hardship. Precious rare speckled stoneplate grants small defense boost against all elemental effects.
+> (Tag:accessory)(Tag:air-resistance+)(Tag:electric-resistance+)(Tag:fire-resistance+)(Tag:ice-resistance+)True knight's stoneplate for facing hardship. Precious rare speckled stoneplate grants small defense boost against all elemental effects.
 
 **Decision**
 
@@ -2763,7 +2883,7 @@
 
 **Description**
 
-> Ring of Knight King Rendal boosting defense against physical attacks.
+> (Tag:accessory)(Tag:defence+)Ring of Knight King Rendal boosting defense against physical attacks.
 
 **Decision**
 
@@ -2780,7 +2900,7 @@
 
 **Description**
 
-> Can of 330ml green juice. Drinking it all recovers 30% energy/mana; more than 3 cans daily causes instant stroke and heart attack. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:energy-recovery)Can of 330ml green juice. Drinking it all recovers 30% energy/mana; more than 3 cans daily causes instant stroke and heart attack. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -2797,7 +2917,7 @@
 
 **Description**
 
-> Fancy embroidered red cloak that billows majestically even without wind.
+> (Tag:accessory)Fancy embroidered red cloak that billows majestically even without wind.
 
 **Decision**
 
@@ -2814,7 +2934,7 @@
 
 **Description**
 
-> Wardrobe of fancy clothes suited to your tastes. When unworn over 24 hours, they mend to mint condition.
+> (Tag:armor)(Tag:production)Wardrobe of fancy clothes suited to your tastes. When unworn over 24 hours, they mend to mint condition.
 
 **Decision**
 
@@ -2831,7 +2951,7 @@
 
 **Description**
 
-> Fumo of a great maid. Any house holding it is maintained as if by 10 maids cleaning 24/7.
+> (Tag:fumo)Fumo of a great maid. Any house holding it is maintained as if by 10 maids cleaning 24/7.
 
 **Decision**
 
@@ -2848,7 +2968,7 @@
 
 **Description**
 
-> Durable black metal helmet whose visor eye holes glow intimidating red.
+> (Tag:armor)Durable black metal helmet whose visor eye holes glow intimidating red.
 
 **Decision**
 
@@ -2865,7 +2985,7 @@
 
 **Description**
 
-> Small blue bead slowly cleaning filth from everything within 10 meters.
+> (Tag:tool)Small blue bead slowly cleaning filth from everything within 10 meters.
 
 **Decision**
 
@@ -2882,7 +3002,7 @@
 
 **Description**
 
-> Screwdriver reshaping into any mundane tool such as hammers, knives, or chisels.
+> (Tag:tool)Screwdriver reshaping into any mundane tool such as hammers, knives, or chisels.
 
 **Decision**
 
@@ -2899,7 +3019,7 @@
 
 **Description**
 
-> Gold amulet with red gem slightly increasing wearer vitality.
+> (Tag:accessory)(Tag:vitality+)Gold amulet with red gem slightly increasing wearer vitality.
 
 **Decision**
 
@@ -2916,7 +3036,7 @@
 
 **Description**
 
-> Pouch of magical bean seeds. Planted, they grow over 24 hours into a 50-meter-thick stem extending into space.
+> (Tag:consumable)(Tag:magic)Pouch of magical bean seeds. Planted, they grow over 24 hours into a 50-meter-thick stem extending into space.
 
 **Decision**
 
@@ -2933,7 +3053,7 @@
 
 **Description**
 
-> Tattoo kit creating and inscribing magical tattoos with effects based on user abilities. Only one tattoo per individual; effects capped at Common Rarity Trait potency.
+> (Tag:meta)(Tag:tool)Tattoo kit creating and inscribing magical tattoos with effects based on user abilities. Only one tattoo per individual; effects capped at Common Rarity Trait potency.
 
 **Decision**
 
@@ -2950,7 +3070,7 @@
 
 **Description**
 
-> Collar compelling whoever wears it to obey its owner. Cannot be placed on someone capable of resisting.
+> (Tag:accessory)(Tag:command)Collar compelling whoever wears it to obey its owner. Cannot be placed on someone capable of resisting.
 
 **Decision**
 
@@ -2967,7 +3087,7 @@
 
 **Description**
 
-> Completely unbreakable heater shield, slightly larger than a torso. Still transfers impact energy like a normal shield, but never breaks or deforms.
+> (Tag:shield)Completely unbreakable heater shield, slightly larger than a torso. Still transfers impact energy like a normal shield, but never breaks or deforms.
 
 **Decision**
 
@@ -2984,7 +3104,7 @@
 
 **Description**
 
-> Panties of the omnipresent Outer One beyond the stars. Holding them speeds energy and health recovery and reduces ability cooldowns by 33%.
+> (Tag:accessory)(Tag:energy-regeneration+)(Tag:health-regeneration+)(Tag:meta)Panties of the omnipresent Outer One beyond the stars. Holding them speeds energy and health recovery and reduces ability cooldowns by 33%.
 
 **Decision**
 
@@ -3001,7 +3121,7 @@
 
 **Description**
 
-> Infinitely spraying can of Febreze. From Walmart.
+> (Tag:mundane)Infinitely spraying can of Febreze. From Walmart.
 
 **Decision**
 
@@ -3018,7 +3138,7 @@
 
 **Description**
 
-> Button-activated box summoning a very competent Mr. Meeseeks who obeys your order then disappears. Orders it cannot complete or taking over 7 days make it hostile and violent.
+> (Tag:summon)(Tag:tool)Button-activated box summoning a very competent Mr. Meeseeks who obeys your order then disappears. Orders it cannot complete or taking over 7 days make it hostile and violent.
 
 **Decision**
 
@@ -3035,7 +3155,7 @@
 
 **Description**
 
-> Monster-girl book turning any monster it touches into an attractive female version for the user. Strength and abilities unchanged; target sees the change as natural.
+> (Tag:tool)(Tag:transformation)(Noncon) Monster-girl book turning any monster it touches into an attractive female version for the user. Strength and abilities unchanged; target sees the change as natural.
 
 **Flagged in reports**
 
@@ -3056,7 +3176,7 @@
 
 **Description**
 
-> Magical scroll invoking a fierce 1 km blizzard centered on the user, harmless to them, lasting 30 minutes. Restock Timer: 8 hours.
+> (Tag:consumable)(Tag:ice)Magical scroll invoking a fierce 1 km blizzard centered on the user, harmless to them, lasting 30 minutes. Restock Timer: 8 hours.
 
 **Decision**
 
@@ -3073,7 +3193,7 @@
 
 **Description**
 
-> Magical white gloves letting you touch spiritual beings as if solid.
+> (Tag:accessory)(Tag:holy)(Tag:spirit)Magical white gloves letting you touch spiritual beings as if solid.
 
 **Decision**
 
@@ -3090,7 +3210,7 @@
 
 **Description**
 
-> (Tome) Contains Carian Royal family research, teaching Carian Sorceries. Spell List: https://eldenring.wiki.fextralife.com/Carian+Sorceries
+> (Tag:grimoire)(Tag:magic)(Tome) Contains Carian Royal family research, teaching Carian Sorceries. Spell List: https://eldenring.wiki.fextralife.com/Carian+Sorceries
 
 **Decision**
 
@@ -3107,7 +3227,7 @@
 
 **Description**
 
-> (Tome) Records of Those Who Live in Death worshipping Godwyn, Prince of Death, teaching Death Sorceries. Spell List: https://eldenring.wiki.fextralife.com/Death+Sorceries
+> (Tag:grimoire)(Tag:magic)(Tag:necro)(Tome) Records of Those Who Live in Death worshipping Godwyn, Prince of Death, teaching Death Sorceries. Spell List: https://eldenring.wiki.fextralife.com/Death+Sorceries
 
 **Decision**
 
@@ -3124,7 +3244,7 @@
 
 **Description**
 
-> Exact replica of your body down to minute detail, but damage reveals DNA-less flesh puppetry mimicking you.
+> (Tag:bio)Exact replica of your body down to minute detail, but damage reveals DNA-less flesh puppetry mimicking you.
 
 **Decision**
 
@@ -3141,7 +3261,7 @@
 
 **Description**
 
-> (Tome) Teaches Raya Lucaria Academy's Glintstone magic. Spell List: https://eldenring.wiki.fextralife.com/Glintstone+Sorceries
+> (Tag:grimoire)(Tag:magic)(Tome) Teaches Raya Lucaria Academy's Glintstone magic. Spell List: https://eldenring.wiki.fextralife.com/Glintstone+Sorceries
 
 **Decision**
 
@@ -3158,7 +3278,7 @@
 
 **Description**
 
-> (Tome) Contains Radahn the Starscourge's studies, teaching his gravity magic. Spell List: https://eldenring.wiki.fextralife.com/Gravity+Sorceries
+> (Tag:gravity)(Tag:grimoire)(Tag:magic)(Tome) Contains Radahn the Starscourge's studies, teaching his gravity magic. Spell List: https://eldenring.wiki.fextralife.com/Gravity+Sorceries
 
 **Decision**
 
@@ -3175,7 +3295,7 @@
 
 **Description**
 
-> (Tech) A 350m long, 80m wide luxury cruise ship with infinite fuel. It is crewed by automatons that can only perform their assigned ship duties.
+> (Tag:tech)(Tag:vehicle)(Tech) A 350m long, 80m wide luxury cruise ship with infinite fuel. It is crewed by automatons that can only perform their assigned ship duties.
 
 **Decision**
 
@@ -3192,7 +3312,7 @@
 
 **Description**
 
-> (Tech) A large military tank with infinite fuel and shells. Fuel and shells cannot be removed from the vehicle.
+> (Tag:tech)(Tag:vehicle)(Tech) A large military tank with infinite fuel and shells. Fuel and shells cannot be removed from the vehicle.
 
 **Decision**
 
@@ -3209,7 +3329,7 @@
 
 **Description**
 
-> A large grey duffel bag holding a copy of every cold weapon in high-quality steel. Only one weapon can be taken out at a time, and returning it restores it to perfect condition when next drawn.
+> (Tag:production)(Tag:tech)(Tag:weapon)A large grey duffel bag holding a copy of every cold weapon in high-quality steel. Only one weapon can be taken out at a time, and returning it restores it to perfect condition when next drawn.
 
 **Decision**
 
@@ -3226,7 +3346,7 @@
 
 **Description**
 
-> A coupon to summon your own Heroic Spirit based on you as a person. Bound in standard Grail War style with mana transfer via coitus and 3 command seals for absolute orders. Cannot summon Divine Servants (Divinity above C or explicitly a god) or Grand candidates, and the Servant cannot exceed Elite rank familiar performance.
+> (Tag:summon)(Tag:ticket)A coupon to summon your own Heroic Spirit based on you as a person. Bound in standard Grail War style with mana transfer via coitus and 3 command seals for absolute orders. Cannot summon Divine Servants (Divinity above C or explicitly a god) or Grand candidates, and the Servant cannot exceed Elite rank familiar performance.
 
 **Decision**
 
@@ -3243,7 +3363,7 @@
 
 **Description**
 
-> (Tech) A syringe pack of modified stem cells and healing agents that drives the body's regeneration into overdrive. WARNING: Use without sufficient nutrients or minerals in the body can cause more harm than good. Restock Timer: 24 hours.
+> (Tag:bio)(Tag:consumable)(Tag:health-recovery)(Tag:tech)(Tech) A syringe pack of modified stem cells and healing agents that drives the body's regeneration into overdrive. WARNING: Use without sufficient nutrients or minerals in the body can cause more harm than good. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -3260,7 +3380,7 @@
 
 **Description**
 
-> An ornate pure-ruby staff with gold engravings. Using it as a focus increases fire abilities' and spells' power while reducing their cost.
+> (Tag:avian)An ornate pure-ruby staff with gold engravings. Using it as a focus increases fire abilities' and spells' power while reducing their cost.
 
 **Decision**
 
@@ -3277,7 +3397,7 @@
 
 **Description**
 
-> A moonlight sword crafted from Seath the Scaleless's severed tail. Wielding it strengthens your spells and lets you unleash blasts of magical power from the blade.
+> (Tag:blade)(Tag:catalyst)(Tag:magic+)(Tag:weapon)A moonlight sword crafted from Seath the Scaleless's severed tail. Wielding it strengthens your spells and lets you unleash blasts of magical power from the blade.
 
 **Decision**
 
@@ -3294,7 +3414,7 @@
 
 **Description**
 
-> A magical crown that turns its wearer into a pretty girl.
+> (Tag:accessory)(Tag:command)A magical crown that turns its wearer into a pretty girl.
 
 **Decision**
 
@@ -3311,7 +3431,7 @@
 
 **Description**
 
-> A crate of 64 sticks of dynamite that restocks itself every 24 hours.
+> (Tag:consumable)(Tag:tool)A crate of 64 sticks of dynamite that restocks itself every 24 hours.
 
 **Decision**
 
@@ -3328,7 +3448,7 @@
 
 **Description**
 
-> A gold-skinned magical apple. Eating it grants uncommon level regeneration for one hour. Restock Timer: 120 hours.
+> (Tag:consumable)(Tag:health-regeneration+)A gold-skinned magical apple. Eating it grants uncommon level regeneration for one hour. Restock Timer: 120 hours.
 
 **Decision**
 
@@ -3345,7 +3465,7 @@
 
 **Description**
 
-> An enchanted gold-skinned magical apple. Eating it grants rare level regeneration for one hour and bolsters vitality. Restock Timer: 210 hours.
+> (Tag:consumable)(Tag:health-regeneration+)(Tag:vitality+)An enchanted gold-skinned magical apple. Eating it grants rare level regeneration for one hour and bolsters vitality. Restock Timer: 210 hours.
 
 **Decision**
 
@@ -3362,7 +3482,7 @@
 
 **Description**
 
-> (Tome) A book of Wind Magic secrets from the Clover Kingdom for learning and using Aeromancy. Spell List: https://blackclover.fandom.com/wiki/Wind_Magic
+> (Tag:air)(Tag:grimoire)(Tag:magic)(Tome) A book of Wind Magic secrets from the Clover Kingdom for learning and using Aeromancy. Spell List: https://blackclover.fandom.com/wiki/Wind_Magic
 
 **Decision**
 
@@ -3379,7 +3499,7 @@
 
 **Description**
 
-> (Tech) A classic Kyber Crystal lightsaber projecting an energy blade. No Force powers needed to use it.
+> (Tag:blade)(Tag:tech)(Tag:weapon)(Tech) A classic Kyber Crystal lightsaber projecting an energy blade. No Force powers needed to use it.
 
 **Decision**
 
@@ -3396,7 +3516,7 @@
 
 **Description**
 
-> A wand of blue ice crystals that feels pleasantly cool to the touch. Using it as a focus increases cold and ice abilities' and spells' potency while reducing their cost.
+> (Tag:catalyst)(Tag:fae)(Tag:ice)(Tag:ice+)A wand of blue ice crystals that feels pleasantly cool to the touch. Using it as a focus increases cold and ice abilities' and spells' potency while reducing their cost.
 
 **Decision**
 
@@ -3413,7 +3533,7 @@
 
 **Description**
 
-> "Faith in the form of bullets." An unremarkable two-barrel shotgun that consumes your energy/mana to condense holy light bullets per trigger pull. These bullets are lethal to all unholy beings, who cannot heal wounds inflicted by it.
+> (Tag:gun)(Tag:healing)(Tag:holy)(Tag:weapon)"Faith in the form of bullets." An unremarkable two-barrel shotgun that consumes your energy/mana to condense holy light bullets per trigger pull. These bullets are lethal to all unholy beings, who cannot heal wounds inflicted by it.
 
 **Decision**
 
@@ -3430,7 +3550,7 @@
 
 **Description**
 
-> A wand crafted from still-living wood. Channeling nature and healing abilities and spells through it increases their power and reduces their cost.
+> (Tag:catalyst)(Tag:earth+)(Tag:nature)(Tag:nature+)A wand crafted from still-living wood. Channeling nature and healing abilities and spells through it increases their power and reduces their cost.
 
 **Decision**
 
@@ -3447,7 +3567,7 @@
 
 **Description**
 
-> This ring holds 3 charges and recovers 1 charge every hour. Spend a charge for a 10-meter blink, 10 seconds of flight, or 10 seconds of Haste.
+> (Tag:accessory)(Tag:movement)This ring holds 3 charges and recovers 1 charge every hour. Spend a charge for a 10-meter blink, 10 seconds of flight, or 10 seconds of Haste.
 
 **Decision**
 
@@ -3464,7 +3584,7 @@
 
 **Description**
 
-> A water pitcher that pours endless refreshing clean water when tipped.
+> (Tag:production)(Tag:tool)(Tag:water)A water pitcher that pours endless refreshing clean water when tipped.
 
 **Decision**
 
@@ -3481,7 +3601,7 @@
 
 **Description**
 
-> Grants ownership of a fully functional hot spring onsen that magically maintains itself. When taken out of storage, it places itself appropriately in your current city with proper paperwork and history, so no one finds its appearance strange.
+> (Tag:building)(Tag:energy-regeneration+)(Tag:health-regeneration+)Grants ownership of a fully functional hot spring onsen that magically maintains itself. When taken out of storage, it places itself appropriately in your current city with proper paperwork and history, so no one finds its appearance strange.
 
 **Decision**
 
@@ -3498,7 +3618,7 @@
 
 **Description**
 
-> You own a modern one-bedroom apartment floating in stasis between eternity and infinity, with working electricity, heating, wifi, and gas.
+> (Tag:dimension)(Tag:tech)(Tag:tool)You own a modern one-bedroom apartment floating in stasis between eternity and infinity, with working electricity, heating, wifi, and gas.
 
 **Decision**
 
@@ -3515,7 +3635,7 @@
 
 **Description**
 
-> An ornate fountain flowing perpetually with water. Water taken out transforms after an hour into a high-quality alcoholic drink of the user's choice, and returning it to the spring reverts it to water.
+> (Tag:building)(Tag:production)An ornate fountain flowing perpetually with water. Water taken out transforms after an hour into a high-quality alcoholic drink of the user's choice, and returning it to the spring reverts it to water.
 
 **Decision**
 
@@ -3532,7 +3652,7 @@
 
 **Description**
 
-> A large mysterious pond where freshwater and saltwater fish can all live together. Release one fish into it and another of the same type appears the next day.
+> (Tag:building)(Tag:production)A large mysterious pond where freshwater and saltwater fish can all live together. Release one fish into it and another of the same type appears the next day.
 
 **Decision**
 
@@ -3549,7 +3669,7 @@
 
 **Description**
 
-> When faced with two choices, these scales tell the user which will be better for the future. Useful for tough decisions like whether to run or fight, take a job offer, or trust someone newly met.
+> (Tag:divination)(Tag:tool)When faced with two choices, these scales tell the user which will be better for the future. Useful for tough decisions like whether to run or fight, take a job offer, or trust someone newly met.
 
 **Decision**
 
@@ -3566,7 +3686,7 @@
 
 **Description**
 
-> A golden card that cures all injuries and illnesses below Mythical rank. Single use only.
+> (Tag:ailment-recovery)(Tag:consumable)(Tag:health-recovery)(Tag:holy)A golden card that cures all injuries and illnesses below Mythical rank. Single use only.
 
 **Decision**
 
@@ -3583,7 +3703,7 @@
 
 **Description**
 
-> Sleep on this card to send your spirit exploring at will, unseen and able to pass through solid objects. Ideal for spying or exploration, but you become a real ghost if you fail to return within 24 hours.
+> (Tag:spirit)(Tag:tool)Sleep on this card to send your spirit exploring at will, unseen and able to pass through solid objects. Ideal for spying or exploration, but you become a real ghost if you fail to return within 24 hours.
 
 **Decision**
 
@@ -3600,7 +3720,7 @@
 
 **Description**
 
-> X-ray goggles for seeing through any wall or object, with a dial to adjust vision depth.
+> (Tag:divination)(Tag:tool)X-ray goggles for seeing through any wall or object, with a dial to adjust vision depth.
 
 **Decision**
 
@@ -3617,7 +3737,7 @@
 
 **Description**
 
-> A book containing 1000 V.I.P. Passes. Each pass lets you enter anywhere as a 'Very Important Person', transforming to match the event's requirements, and is destroyed after use. The book is destroyed when no passes remain.
+> (Tag:consumable)(Tag:social)(Tag:tool)A book containing 1000 V.I.P. Passes. Each pass lets you enter anywhere as a 'Very Important Person', transforming to match the event's requirements, and is destroyed after use. The book is destroyed when no passes remain.
 
 **Decision**
 
@@ -3634,7 +3754,7 @@
 
 **Description**
 
-> Cookies that temporarily change the eater's gender to the opposite sex for 24 hours. Comes as 10 boxes of 20 cookies; eating 20 in one day makes the change permanent. Restock Timer: 48 hours.
+> (Tag:consumable)(Tag:transformation)Cookies that temporarily change the eater's gender to the opposite sex for 24 hours. Comes as 10 boxes of 20 cookies; eating 20 in one day makes the change permanent. Restock Timer: 48 hours.
 
 **Decision**
 
@@ -3651,7 +3771,7 @@
 
 **Description**
 
-> A person-sized metal can that perfectly breaks down any item placed inside into its basic physical materials.
+> (Tag:production)(Tag:tool)A person-sized metal can that perfectly breaks down any item placed inside into its basic physical materials.
 
 **Decision**
 
@@ -3668,7 +3788,7 @@
 
 **Description**
 
-> Create an essentials-stocked secret hideout in a location of your choosing, accessible only through the door you create.
+> (Tag:building)(Tag:ticket)Create an essentials-stocked secret hideout in a location of your choosing, accessible only through the door you create.
 
 **Decision**
 
@@ -3685,7 +3805,7 @@
 
 **Description**
 
-> A cell phone with a single number. Call it and describe a lost item or object to have it returned within a week. Cooldown: 168 hours.
+> (Tag:tool)A cell phone with a single number. Call it and describe a lost item or object to have it returned within a week. Cooldown: 168 hours.
 
 **Decision**
 
@@ -3702,7 +3822,7 @@
 
 **Description**
 
-> A bottle of 100 pills, each making you physically one year younger when consumed. Restock Timer: 168 hours.
+> (Tag:consumable)(Tag:transformation)A bottle of 100 pills, each making you physically one year younger when consumed. Restock Timer: 168 hours.
 
 **Decision**
 
@@ -3719,7 +3839,7 @@
 
 **Description**
 
-> A vial of 100 pills, each growing you by 1cm. Not advised for those under 20. Restock Timer: 168 hours.
+> (Tag:consumable)(Tag:transformation)A vial of 100 pills, each growing you by 1cm. Not advised for those under 20. Restock Timer: 168 hours.
 
 **Decision**
 
@@ -3736,7 +3856,7 @@
 
 **Description**
 
-> A vial of 100 pills granting endurance and fertility in bed. Taking more than one at a time may have unintended effects. Restock Timer: 168 hours.
+> (Tag:consumable)(Tag:nsfw)(Tag:stamina+)A vial of 100 pills granting endurance and fertility in bed. Taking more than one at a time may have unintended effects. Restock Timer: 168 hours.
 
 **Decision**
 
@@ -3753,7 +3873,7 @@
 
 **Description**
 
-> A tub of cream that permanently grows luxurious, quality hair wherever applied. Use gloves when handling. Restock Timer: 168 hours.
+> (Tag:consumable)(Tag:transformation)A tub of cream that permanently grows luxurious, quality hair wherever applied. Use gloves when handling. Restock Timer: 168 hours.
 
 **Decision**
 
@@ -3770,7 +3890,7 @@
 
 **Description**
 
-> A box of seven 1-liter vials. Drink 1 liter daily for a full week to gain the Uncommon Trait Enhanced Strength. Restock Timer: 168 hours.
+> (Tag:consumable)(Tag:strength+)A box of seven 1-liter vials. Drink 1 liter daily for a full week to gain the Uncommon Trait Enhanced Strength. Restock Timer: 168 hours.
 
 **Decision**
 
@@ -3787,7 +3907,7 @@
 
 **Description**
 
-> A necklace that lets the wearer slowly fly at 10 km/h.
+> (Tag:accessory)(Tag:gravity)(Tag:movement)A necklace that lets the wearer slowly fly at 10 km/h.
 
 **Decision**
 
@@ -3804,7 +3924,7 @@
 
 **Description**
 
-> Sentient bandages that automatically wrap wounds, stopping bleeding and stabilizing broken bones. With training, you can manipulate them yourself.
+> (Tag:accessory)(Tag:flexible)(Tag:tool)Sentient bandages that automatically wrap wounds, stopping bleeding and stabilizing broken bones. With training, you can manipulate them yourself.
 
 **Decision**
 
@@ -3821,7 +3941,7 @@
 
 **Description**
 
-> A bag of Lost Empire fairy powder. Inhaled, it instantly puts victims into deep sleep until injury wakes them. Does not work on people over a tier stronger than you. Restock Timer: 48 hours.
+> (Tag:consumable)(Tag:fae)A bag of Lost Empire fairy powder. Inhaled, it instantly puts victims into deep sleep until injury wakes them. Does not work on people over a tier stronger than you. Restock Timer: 48 hours.
 
 **Decision**
 
@@ -3838,7 +3958,7 @@
 
 **Description**
 
-> "Tastes like its name." Consuming it bolsters defense for 30 minutes. Restock Timer: 8 hours.
+> (Tag:consumable)(Tag:defence+)"Tastes like its name." Consuming it bolsters defense for 30 minutes. Restock Timer: 8 hours.
 
 **Decision**
 
@@ -3855,7 +3975,7 @@
 
 **Description**
 
-> An indescribably tasting wine favored by the ones beyond the stars. Drinking it makes you tipsy while granting mental clarity and insight. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:mental)An indescribably tasting wine favored by the ones beyond the stars. Drinking it makes you tipsy while granting mental clarity and insight. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -3872,7 +3992,7 @@
 
 **Description**
 
-> A refined drug harvested from star pests beyond the cosmos. Drinking it grants 30 seconds of death-avoiding immortality, but taking more than 2 in a week turns you into a Ghoul. Restock Timer: 480 hours.
+> (Tag:consumable)(Tag:health-recovery)A refined drug harvested from star pests beyond the cosmos. Drinking it grants 30 seconds of death-avoiding immortality, but taking more than 2 in a week turns you into a Ghoul. Restock Timer: 480 hours.
 
 **Decision**
 
@@ -3889,7 +4009,7 @@
 
 **Description**
 
-> A crimson mantle of a famous death-defying thief executed by the tyrant. Wearing it grants basic danger sense and enhanced reflexes.
+> (Tag:armor)(Tag:perception+)(Tag:reflex+)(Tag:spirit)A crimson mantle of a famous death-defying thief executed by the tyrant. Wearing it grants basic danger sense and enhanced reflexes.
 
 **Decision**
 
@@ -3906,7 +4026,7 @@
 
 **Description**
 
-> "Did the eye just move?" A gold ring with an eye-shaped ruby that grants minor regeneration when worn.
+> (Tag:accessory)(Tag:health-regeneration+)"Did the eye just move?" A gold ring with an eye-shaped ruby that grants minor regeneration when worn.
 
 **Decision**
 
@@ -3923,7 +4043,7 @@
 
 **Description**
 
-> (Tech) A hydrogen bomb with a remote detonator. Try not to end up in the blast zone.
+> (Tag:mundane)(Tag:tech)(Tag:water)(Tech) A hydrogen bomb with a remote detonator. Try not to end up in the blast zone.
 
 **Decision**
 
@@ -3940,7 +4060,7 @@
 
 **Description**
 
-> A gold ring engraved with a suspiciously smug cat. While worn, you are immune to falling damage even from 100,000 kilometers.
+> (Tag:accessory)A gold ring engraved with a suspiciously smug cat. While worn, you are immune to falling damage even from 100,000 kilometers.
 
 **Decision**
 
@@ -3957,7 +4077,7 @@
 
 **Description**
 
-> An ornate silver Wonderland ring blessed by an unnamed wind god. Wearing it boosts agility and reflexes to superhuman levels.
+> (Tag:accessory)(Tag:agility+)(Tag:air)(Tag:reflex+)An ornate silver Wonderland ring blessed by an unnamed wind god. Wearing it boosts agility and reflexes to superhuman levels.
 
 **Decision**
 
@@ -3974,7 +4094,7 @@
 
 **Description**
 
-> A magical ring of a famous whimsical, mischievous thief. Holds 3 charges and recovers 1 every hour. Spend a charge to steal a carried item to your hands (better items have lower success), muffle all your noises for a minute, or boost dexterity and agility for a minute.
+> (Tag:accessory)(Tag:illusion)(Tag:movement)(Tag:stealth)A magical ring of a famous whimsical, mischievous thief. Holds 3 charges and recovers 1 every hour. Spend a charge to steal a carried item to your hands (better items have lower success), muffle all your noises for a minute, or boost dexterity and agility for a minute.
 
 **Decision**
 
@@ -3991,7 +4111,7 @@
 
 **Description**
 
-> A blue cloak that lets the wearer disturb not even the wind. While worn, gain enhanced agility and reflexes, muffled sounds, and no air disturbance as you move.
+> (Tag:accessory)(Tag:agility+)(Tag:reflex+)A blue cloak that lets the wearer disturb not even the wind. While worn, gain enhanced agility and reflexes, muffled sounds, and no air disturbance as you move.
 
 **Decision**
 
@@ -4008,7 +4128,7 @@
 
 **Description**
 
-> Tarot Card - Temporarily grants a skill or minor ability best suited to the situation, rated no higher than the Fool. 168-hour cooldown.
+> (Tag:card)(Tag:meta)Tarot Card - Temporarily grants a skill or minor ability best suited to the situation, rated no higher than the Fool. 168-hour cooldown.
 
 **Decision**
 
@@ -4025,7 +4145,7 @@
 
 **Description**
 
-> Tarot Card - Temporarily increases an ability's rarity for one hour. 240 hour cooldown.
+> (Tag:card)(Tag:meta)Tarot Card - Temporarily increases an ability's rarity for one hour. 240 hour cooldown.
 
 **Decision**
 
@@ -4042,7 +4162,7 @@
 
 **Description**
 
-> Tarot Card - Speeds up perception for a bullet-time effect and grants Precognition for 30 minutes. 120 hour cooldown.
+> (Tag:card)(Tag:perception+)Tarot Card - Speeds up perception for a bullet-time effect and grants Precognition for 30 minutes. 120 hour cooldown.
 
 **Decision**
 
@@ -4059,7 +4179,7 @@
 
 **Description**
 
-> Tarot Card - Creates a user-centered aura boosting defense and recovery for 30 minutes. 120 hour cooldown.
+> (Tag:card)(Tag:defence+)(Tag:health-regeneration+)Tarot Card - Creates a user-centered aura boosting defense and recovery for 30 minutes. 120 hour cooldown.
 
 **Decision**
 
@@ -4076,7 +4196,7 @@
 
 **Description**
 
-> Tarot Card - Projects immense mental pressure to dominate or crush a target's mind. 72 hour cooldown.
+> (Tag:card)(Tag:mental)Tarot Card - Projects immense mental pressure to dominate or crush a target's mind. 72 hour cooldown.
 
 **Decision**
 
@@ -4093,7 +4213,7 @@
 
 **Description**
 
-> Tarot Card - Dispels any illusions in your line of sight. 72 hour cooldown.
+> (Tag:anti-illusion)(Tag:card)Tarot Card - Dispels any illusions in your line of sight. 72 hour cooldown.
 
 **Decision**
 
@@ -4110,7 +4230,7 @@
 
 **Description**
 
-> Tarot Card - Copies an ability from anyone within 100 meters into your ability slot for 1 hour. 120 hour cooldown.
+> (Tag:card)(Tag:meta)Tarot Card - Copies an ability from anyone within 100 meters into your ability slot for 1 hour. 120 hour cooldown.
 
 **Decision**
 
@@ -4127,7 +4247,7 @@
 
 **Description**
 
-> Tarot Card - Teleports you to any location in your perception range, even through a camera. 120 hour cooldown.
+> (Tag:card)(Tag:movement)Tarot Card - Teleports you to any location in your perception range, even through a camera. 120 hour cooldown.
 
 **Decision**
 
@@ -4144,7 +4264,7 @@
 
 **Description**
 
-> Tarot Card - Boosts all physical abilities and dulls pain for 30 minutes. 120 hour cooldown.
+> (Tag:agility+)(Tag:card)(Tag:defence+)(Tag:strength+)Tarot Card - Boosts all physical abilities and dulls pain for 30 minutes. 120 hour cooldown.
 
 **Decision**
 
@@ -4161,7 +4281,7 @@
 
 **Description**
 
-> Tarot Card - Lets you read minds and thoughts for 1 hour. 120 hour cooldown.
+> (Tag:card)(Tag:divination)(Tag:mental)Tarot Card - Lets you read minds and thoughts for 1 hour. 120 hour cooldown.
 
 **Decision**
 
@@ -4178,7 +4298,7 @@
 
 **Description**
 
-> Tarot Card - Temporarily swaps all active powers with random powers of the same rarity for 1 hour (For writing: done by rolling the gacha that corresponds with said rarity). 120 hour cooldown.
+> (Tag:card)(Tag:meta)Tarot Card - Temporarily swaps all active powers with random powers of the same rarity for 1 hour (For writing: done by rolling the gacha that corresponds with said rarity). 120 hour cooldown.
 
 **Decision**
 
@@ -4195,7 +4315,7 @@
 
 **Description**
 
-> Tarot Card - Clears all abnormal status effects like disease, poison, curses, and charms of Epic rank and below in a 10-meter radius. Cooldown: 120 hours.
+> (Tag:ailment-recovery)(Tag:card)Tarot Card - Clears all abnormal status effects like disease, poison, curses, and charms of Epic rank and below in a 10-meter radius. Cooldown: 120 hours.
 
 **Decision**
 
@@ -4212,7 +4332,7 @@
 
 **Description**
 
-> Tarot Card - Absorbs all of a target's wounds and ailments while lessening their intensity by 20%. 120 hour cooldown.
+> (Tag:card)Tarot Card - Absorbs all of a target's wounds and ailments while lessening their intensity by 20%. 120 hour cooldown.
 
 **Decision**
 
@@ -4229,7 +4349,7 @@
 
 **Description**
 
-> Tarot Card - On contact, destroys any active effect, from an object's speed to a mythical ritual or an undead-animating spell. 240-hour cooldown.
+> (Tag:alter)(Tag:card)Tarot Card - On contact, destroys any active effect, from an object's speed to a mythical ritual or an undead-animating spell. 240-hour cooldown.
 
 **Decision**
 
@@ -4246,7 +4366,7 @@
 
 **Description**
 
-> Tarot Card - Grants complete mental clarity and focus, dispelling all negative mental conditions. 48 hour cooldown.
+> (Tag:ailment-recovery)(Tag:card)(Tag:mental)Tarot Card - Grants complete mental clarity and focus, dispelling all negative mental conditions. 48 hour cooldown.
 
 **Decision**
 
@@ -4263,7 +4383,7 @@
 
 **Description**
 
-> Tarot Card - Summons infernal chains that restrain and weaken a target, though strong enough targets can break free. 48 hour cooldown.
+> (Tag:card)(Tag:infernal)Tarot Card - Summons infernal chains that restrain and weaken a target, though strong enough targets can break free. 48 hour cooldown.
 
 **Decision**
 
@@ -4280,7 +4400,7 @@
 
 **Description**
 
-> Tarot Card - Releases uncontrollable ruinous energy that can destroy entire city blocks, partially ignores durability, and disorients enemies. 120 hour cooldown.
+> (Tag:card)Tarot Card - Releases uncontrollable ruinous energy that can destroy entire city blocks, partially ignores durability, and disorients enemies. 120 hour cooldown.
 
 **Decision**
 
@@ -4297,7 +4417,7 @@
 
 **Description**
 
-> Tarot Card - Restores all energy and stamina and resets all Ability Cooldowns. 240 hour cooldown.
+> (Tag:card)(Tag:energy-recovery)(Tag:meta)Tarot Card - Restores all energy and stamina and resets all Ability Cooldowns. 240 hour cooldown.
 
 **Decision**
 
@@ -4314,7 +4434,7 @@
 
 **Description**
 
-> Tarot Card - Constructs a convincing illusionary world of your choosing that fools all 5 senses for 1 hour. 120 hour cooldown.
+> (Tag:card)(Tag:illusion)Tarot Card - Constructs a convincing illusionary world of your choosing that fools all 5 senses for 1 hour. 120 hour cooldown.
 
 **Decision**
 
@@ -4331,7 +4451,7 @@
 
 **Description**
 
-> Tarot Card - Instantly recovers all health and resets all Item Cooldowns. 240 hour cooldown.
+> (Tag:card)(Tag:health-recovery)(Tag:meta)Tarot Card - Instantly recovers all health and resets all Item Cooldowns. 240 hour cooldown.
 
 **Decision**
 
@@ -4348,7 +4468,7 @@
 
 **Description**
 
-> Tarot Card - Compels someone to tell what they believe is the truth without intending to trick you. 120 hour cooldown.
+> (Tag:card)(Tag:mental)Tarot Card - Compels someone to tell what they believe is the truth without intending to trick you. 120 hour cooldown.
 
 **Decision**
 
@@ -4365,7 +4485,7 @@
 
 **Description**
 
-> Tarot Card - Permanently fuses two abilities of the same rank into an ability of higher rank. 240 hour cooldown.
+> (Tag:card)(Tag:meta)Tarot Card - Permanently fuses two abilities of the same rank into an ability of higher rank. 240 hour cooldown.
 
 **Decision**
 
@@ -4382,7 +4502,7 @@
 
 **Description**
 
-> A flame sword forged from hell-depth ore. Amplifies Fire-based abilities when used as a focus.
+> (Tag:blade)(Tag:fire)(Tag:weapon)A flame sword forged from hell-depth ore. Amplifies Fire-based abilities when used as a focus.
 
 **Decision**
 
@@ -4399,7 +4519,7 @@
 
 **Description**
 
-> A light rapier forged from the Empress of Light's wing. Deals light damage and amplifies Light-based abilities when used as a focus.
+> (Tag:blade)(Tag:light)(Tag:light+)(Tag:weapon)A light rapier forged from the Empress of Light's wing. Deals light damage and amplifies Light-based abilities when used as a focus.
 
 **Decision**
 
@@ -4416,7 +4536,7 @@
 
 **Description**
 
-> A foreign-world glaive that summons wraith projections using the wielder's life energy. Amplifies Soul-based abilities when used as a focus.
+> (Tag:polearm)(Tag:spirit)(Tag:spirit+)(Tag:weapon)A foreign-world glaive that summons wraith projections using the wielder's life energy. Amplifies Soul-based abilities when used as a focus.
 
 **Decision**
 
@@ -4433,7 +4553,7 @@
 
 **Description**
 
-> A crystalline spear forged from the shattered Ice Queen's remains. Lets the wielder fire frigid blasts with their own energy and amplifies Ice-based abilities when used as a focus.
+> (Tag:fire)(Tag:ice)(Tag:ice+)(Tag:polearm)(Tag:weapon)A crystalline spear forged from the shattered Ice Queen's remains. Lets the wielder fire frigid blasts with their own energy and amplifies Ice-based abilities when used as a focus.
 
 **Decision**
 
@@ -4450,7 +4570,7 @@
 
 **Description**
 
-> A pure-energy spear from fallen-star shards. Lets the user hurl copy projections like javelins and amplifies Fire and Light-based abilities when used as a focus.
+> (Tag:fire)(Tag:fire+)(Tag:light+)(Tag:polearm)(Tag:weapon)A pure-energy spear from fallen-star shards. Lets the user hurl copy projections like javelins and amplifies Fire and Light-based abilities when used as a focus.
 
 **Decision**
 
@@ -4467,7 +4587,7 @@
 
 **Description**
 
-> A flame flail from the underworld's depths. Creates an explosion on every impact.
+> (Tag:bludgeon)(Tag:fire)(Tag:flexible)(Tag:weapon)A flame flail from the underworld's depths. Creates an explosion on every impact.
 
 **Decision**
 
@@ -4484,7 +4604,7 @@
 
 **Description**
 
-> A flail from the cursed dungeon made of incredibly durable material, with a chain stretching up to 50 meters.
+> (Tag:bludgeon)(Tag:flexible)(Tag:weapon)A flail from the cursed dungeon made of incredibly durable material, with a chain stretching up to 50 meters.
 
 **Decision**
 
@@ -4501,7 +4621,7 @@
 
 **Description**
 
-> A magically enchanted solid-ice saber that holds its sharpness. Releases frigid energy with your own energy and boosts ice abilities when used as a focus.
+> (Tag:blade)(Tag:ice)(Tag:ice+)(Tag:weapon)A magically enchanted solid-ice saber that holds its sharpness. Releases frigid energy with your own energy and boosts ice abilities when used as a focus.
 
 **Decision**
 
@@ -4518,7 +4638,7 @@
 
 **Description**
 
-> (Tech) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
+> (Tag:gun)(Tag:machine)(Tag:space)(Tag:tech)(Tag:weapon)(Tech) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
 
 **Decision**
 
@@ -4535,7 +4655,7 @@
 
 **Description**
 
-> A shotgun crafted from pure-darkness shards. Converts energy/mana into dark onyx bullets dealing unholy damage instead of consuming bullets.
+> (Tag:dark)(Tag:gun)(Tag:tech)(Tag:weapon)A shotgun crafted from pure-darkness shards. Converts energy/mana into dark onyx bullets dealing unholy damage instead of consuming bullets.
 
 **Decision**
 
@@ -4552,7 +4672,7 @@
 
 **Description**
 
-> A sickle from the Reaper's cold dead hands. Releases necrotic projections with your own energy and boosts Dark and Necrotic abilities when used as a focus.
+> (Tag:blade)(Tag:necro)A sickle from the Reaper's cold dead hands. Releases necrotic projections with your own energy and boosts Dark and Necrotic abilities when used as a focus.
 
 **Decision**
 
@@ -4569,7 +4689,7 @@
 
 **Description**
 
-> A crimson trident from the cursed dungeon's depths. Fires flame blasts with your energy/mana and boosts Fire and Unholy abilities when used as a focus.
+> (Tag:fire)(Tag:fire+)(Tag:infernal)(Tag:infernal+)(Tag:polearm)(Tag:weapon)A crimson trident from the cursed dungeon's depths. Fires flame blasts with your energy/mana and boosts Fire and Unholy abilities when used as a focus.
 
 **Decision**
 
@@ -4586,7 +4706,7 @@
 
 **Description**
 
-> A moon prism. Infusing energy/mana releases incinerating light rays converging into one large laser, or greatly boosts light-based abilities when used as a focus.
+> (Tag:catalyst)(Tag:light)(Tag:light+)(Tag:magic+)A moon prism. Infusing energy/mana releases incinerating light rays converging into one large laser, or greatly boosts light-based abilities when used as a focus.
 
 **Decision**
 
@@ -4603,7 +4723,7 @@
 
 **Description**
 
-> A large glass vial of 500ml high-quality holy water for rituals or dealing with the unholy. Restock Timer: 4 hours.
+> (Tag:holy)(Tag:water)A large glass vial of 500ml high-quality holy water for rituals or dealing with the unholy. Restock Timer: 4 hours.
 
 **Decision**
 
@@ -4620,7 +4740,7 @@
 
 **Description**
 
-> A golden cross blessed by a powerful angel. Worn around the neck, it wards off evil and curses and burns nearby demonic entities.
+> (Tag:accessory)(Tag:holy)A golden cross blessed by a powerful angel. Worn around the neck, it wards off evil and curses and burns nearby demonic entities.
 
 **Decision**
 
@@ -4654,7 +4774,7 @@
 
 **Description**
 
-> A very durable longsword with controllable weight from 5 kg to 50,000 kg.
+> (Tag:blade)(Tag:weapon)A very durable longsword with controllable weight from 5 kg to 50,000 kg.
 
 **Decision**
 
@@ -4671,7 +4791,7 @@
 
 **Description**
 
-> (Tech) A gigantic multi-city-block-sized arachnid mech with retractable blades, giant plasma cannons, and uncanny mobility and dexterity. Built to withstand advanced nuclear weaponry, constantly repaired by nanomachines, with living quarters.
+> (Tag:machine)(Tag:tech)(Tag:vehicle)(Tag:weapon)(Tech) A gigantic multi-city-block-sized arachnid mech with retractable blades, giant plasma cannons, and uncanny mobility and dexterity. Built to withstand advanced nuclear weaponry, constantly repaired by nanomachines, with living quarters.
 
 **Decision**
 
@@ -4688,7 +4808,7 @@
 
 **Description**
 
-> Holds great sentimental value to a certain sun god, but little material value.
+> (Tag:accessory)(Tag:mundane)Holds great sentimental value to a certain sun god, but little material value.
 
 **Decision**
 
@@ -4705,7 +4825,7 @@
 
 **Description**
 
-> Drinking it grants a random Gold Gacha ability usable even in ability storage.
+> (Tag:consumable)(Tag:elixir)(Tag:meta)Drinking it grants a random Gold Gacha ability usable even in ability storage.
 
 **Flagged in reports**
 
@@ -4726,7 +4846,7 @@
 
 **Description**
 
-> A pair of freshly unlocked Sharingan from Sasuke Uchiha, stored in preservative fluid. Can be implanted by a skilled enough doctor.
+> (Tag:bio)(Tag:resource)A pair of freshly unlocked Sharingan from Sasuke Uchiha, stored in preservative fluid. Can be implanted by a skilled enough doctor.
 
 **Decision**
 
@@ -4743,7 +4863,7 @@
 
 **Description**
 
-> A pair of freshly unlocked Byakugan from Neji Hyuga, stored in preservative fluid. Can be implanted by a skilled enough doctor.
+> (Tag:bio)(Tag:resource)A pair of freshly unlocked Byakugan from Neji Hyuga, stored in preservative fluid. Can be implanted by a skilled enough doctor.
 
 **Decision**
 
@@ -4760,7 +4880,7 @@
 
 **Description**
 
-> (Tech) Iron Man's iconic armored suit. Useful but not particularly powerful, and very hard to repair if broken.
+> (Tag:armor)(Tag:tech)(Tag:weapon)(Tech) Iron Man's iconic armored suit. Useful but not particularly powerful, and very hard to repair if broken.
 
 **Decision**
 
@@ -4777,7 +4897,7 @@
 
 **Description**
 
-> The gauntlet itself, very durable, but stones not included.
+> (Tag:armor)The gauntlet itself, very durable, but stones not included.
 
 **Decision**
 
@@ -4794,7 +4914,7 @@
 
 **Description**
 
-> (Gacha) "Fancy your chances?" Choose an inventory ticket and flip a coin. Heads gives the ticket an advantage; Tails destroys it.
+> (Tag:meta)(Gacha) "Fancy your chances?" Choose an inventory ticket and flip a coin. Heads gives the ticket an advantage; Tails destroys it.
 
 **Decision**
 
@@ -4811,7 +4931,7 @@
 
 **Description**
 
-> An extremely durable baseball bat that takes at least a nuclear bomb to deform.
+> (Tag:bludgeon)(Tag:weapon)An extremely durable baseball bat that takes at least a nuclear bomb to deform.
 
 **Decision**
 
@@ -4828,7 +4948,7 @@
 
 **Description**
 
-> A tailored basic Combat Armor set. Place 10 kilograms of any ore inside, and after 24 hours the armor's composition changes to that ore or metal.
+> (Tag:armor)(Tag:growing)A tailored basic Combat Armor set. Place 10 kilograms of any ore inside, and after 24 hours the armor's composition changes to that ore or metal.
 
 **Decision**
 
@@ -4845,7 +4965,7 @@
 
 **Description**
 
-> Sentient clothing made exclusively of liber that synchronizes with its wearer, extremely augmenting physical abilities while draining vitality. More durable than any manmade material, it can act independently and shapeshift into various forms.
+> (Tag:armor)(Tag:bound)(Tag:enhancer)(Tag:life)(Tag:transformation)Sentient clothing made exclusively of liber that synchronizes with its wearer, extremely augmenting physical abilities while draining vitality. More durable than any artificial material, it can act independently and shapeshift into various forms.
 
 **Decision**
 
@@ -4862,7 +4982,7 @@
 
 **Description**
 
-> A school uniform of 10% Life Fibers granting superhuman strength to break walls and flip cars. Extremely durable beyond carbon fiber. Choose colors before taking it out.
+> (Tag:armor)(Tag:bio)(Tag:enhancer)(Tag:life)A school uniform of 10% Life Fibers granting superhuman strength to break walls and flip cars. Extremely durable beyond carbon fiber. Choose colors before taking it out.
 
 **Decision**
 
@@ -4879,7 +4999,7 @@
 
 **Description**
 
-> A uniform of 20% Life Fibers granting superhuman strength to punch through solid metal and throw cars. Extremely durable beyond carbon fiber. Choose colors and design before taking it out.
+> (Tag:armor)(Tag:bio)(Tag:enhancer)(Tag:life)A uniform of 20% Life Fibers granting superhuman strength to punch through solid metal and throw cars. Extremely durable beyond carbon fiber. Choose colors and design before taking it out.
 
 **Decision**
 
@@ -4896,7 +5016,7 @@
 
 **Description**
 
-> A uniform of 30% Life Fibers granting superhuman strength to demolish buildings. Extremely durable beyond carbon fiber; choose colors and design before taking it out. Consuming your vitality unlocks a second form that further increases its abilities.
+> (Tag:armor)(Tag:bio)(Tag:enhancer)(Tag:life)(Tag:transformation)A uniform of 30% Life Fibers granting superhuman strength to demolish buildings. Extremely durable beyond carbon fiber; choose colors and design before taking it out. Consuming your vitality unlocks a second form that further increases its abilities.
 
 **Decision**
 
@@ -4913,7 +5033,7 @@
 
 **Description**
 
-> (Tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
+> (Tag:mundane)(Tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
 
 **Decision**
 
@@ -4930,7 +5050,7 @@
 
 **Description**
 
-> An infinite spaghetti bowl that cannot be poured out, but servings can be taken infinitely. The spaghetti is always comfortably warm and tastes pretty good.
+> (Tag:production)An infinite spaghetti bowl that cannot be poured out, but servings can be taken infinitely. The spaghetti is always comfortably warm and tastes pretty good.
 
 **Decision**
 
@@ -4939,7 +5059,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 226. Kanaedas Bike
+## 226. Kaneda's Bike
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -4947,7 +5067,7 @@
 
 **Description**
 
-> (Tech) A very fancy, fast, iconic sci-fi-ish bike.
+> (Tag:vehicle)(Tech) A very fancy, fast, iconic sci-fi-ish bike.
 
 **Decision**
 
@@ -4964,7 +5084,7 @@
 
 **Description**
 
-> (Tech) Exchangeable anytime for any Mundane Vehicle in your world, from supercar to cruise ship. The vehicle teleports in front of you with all legal work handled.
+> (Tag:ticket)(Tag:vehicle)(Tech) Exchangeable anytime for any Mundane Vehicle in your world, from supercar to cruise ship. The vehicle teleports in front of you with all legal work handled.
 
 **Decision**
 
@@ -4981,7 +5101,7 @@
 
 **Description**
 
-> A Wakandan herb blessed by Bast, refined to remove side effects and mystical strings for safe consumption. Grants enhanced strength, speed, stamina, durability, reflexes, agility, and instincts. Restock Timer: 240 hours.
+> (Tag:consumable)(Tag:elixir)(Tag:enhancer)A Wakandan herb blessed by Bast, refined to remove side effects and mystical strings for safe consumption. Grants enhanced strength, speed, stamina, durability, reflexes, agility, and instincts. Restock Timer: 240 hours.
 
 **Decision**
 
@@ -4998,7 +5118,7 @@
 
 **Description**
 
-> A mystical bean cultivated by Earth's guardian. Eating it instantly restores physical condition to peak, fully restores energy, and satiates for 10 days. Restock Timer: 720 hours.
+> (Tag:consumable)(Tag:energy-recovery)(Tag:health-recovery)A mystical bean cultivated by Earth's guardian. Eating it instantly restores physical condition to peak, fully restores energy, and satiates for 10 days. Restock Timer: 720 hours.
 
 **Decision**
 
@@ -5015,7 +5135,7 @@
 
 **Description**
 
-> A white featureless full-face mask removable only at the wearer's will or by breaking it. Opaque and resistant to thinker abilities, yet the wearer sees through it without issue.
+> (Tag:accessory)(Tag:divination-resistance+)(Tag:stealth)A white featureless full-face mask removable only at the wearer's will or by breaking it. Opaque and resistant to thinker abilities, yet the wearer sees through it without issue.
 
 **Decision**
 
@@ -5032,7 +5152,7 @@
 
 **Description**
 
-> A hand-sized virus-like cell. Eating it makes you unbelievably stronger and transforms you into a monstrous creature with extended lifespan, at the cost of never developing further by natural means.
+> (Tag:consumable)(Tag:race-change)(Tag:transformation)A hand-sized virus-like cell. Eating it makes you unbelievably stronger and transforms you into a monstrous creature with extended lifespan, at the cost of never developing further by natural means.
 
 **Decision**
 
@@ -5049,7 +5169,7 @@
 
 **Description**
 
-> (Gacha) A ticket acting as a 6x Advantage Platinum Ability Gacha Ticket.
+> (Tag:meta)(Tag:ticket)(Gacha) A ticket acting as a 6x Advantage Platinum Ability Gacha Ticket.
 
 **Decision**
 
@@ -5066,7 +5186,7 @@
 
 **Description**
 
-> (Gacha) A ticket acting as a 6x Advantage Platinum Trait Gacha Ticket.
+> (Tag:meta)(Tag:ticket)(Gacha) A ticket acting as a 6x Advantage Platinum Trait Gacha Ticket.
 
 **Decision**
 
@@ -5083,7 +5203,7 @@
 
 **Description**
 
-> (Gacha) A ticket acting as a 6x Advantage Platinum Skill Gacha Ticket.
+> (Tag:meta)(Tag:ticket)(Gacha) A ticket acting as a 6x Advantage Platinum Skill Gacha Ticket.
 
 **Decision**
 
@@ -5100,7 +5220,7 @@
 
 **Description**
 
-> A powerful transforming virus. Mismatched hosts become an anomalous mass of blackened matter with incredible regeneration; matched hosts gain enhanced stats and bio-immortality with commandable viral healing. Or pour the vial into the ocean and watch the apocalypse.
+> (Tag:bio)(Tag:consumable)(Tag:transformation)A powerful transforming virus. Mismatched hosts become an anomalous mass of blackened matter with incredible regeneration; matched hosts gain enhanced stats and bio-immortality with commandable viral healing. Or pour the vial into the ocean and watch the apocalypse.
 
 **Decision**
 
@@ -5117,7 +5237,7 @@
 
 **Description**
 
-> A highly viral super-virus mutating victims into enhanced zombie-like creatures with little brain activity. Rare compatible hosts gain only superhuman capabilities and regeneration without mutation, and a scientist might refine it. Or pour the vial into the ocean and watch the apocalypse.
+> (Tag:bio)(Tag:consumable)(Tag:transformation)A highly viral super-virus mutating victims into enhanced zombie-like creatures with little brain activity. Rare compatible hosts gain only superhuman capabilities and regeneration without mutation, and a scientist might refine it. Or pour the vial into the ocean and watch the apocalypse.
 
 **Decision**
 
@@ -5134,7 +5254,7 @@
 
 **Description**
 
-> A modified T-Virus syringe granting all T-virus benefits with none of the downsides: superhuman physical abilities, regeneration, and telekinesis.
+> (Tag:bio)(Tag:consumable)(Tag:elixir)(Tag:enhancer)(Tag:health-regeneration+)(Tag:meta)A modified T-Virus syringe granting all T-virus benefits with none of the downsides: superhuman physical abilities, regeneration, and telekinesis.
 
 **Decision**
 
@@ -5151,7 +5271,7 @@
 
 **Description**
 
-> A red face-like egg that can call down the God Hand. Sacrificing your everything in the Eclipse lets you join the Godhand as an Apostle. ...If you're considering using this, something is truly wrong with you.
+> (Tag:infernal)(Tag:summon)A red face-like egg that can call down the God Hand. Sacrificing your everything in the Eclipse lets you join the Godhand as an Apostle. ...If you're considering using this, something is truly wrong with you.
 
 **Decision**
 
@@ -5168,7 +5288,7 @@
 
 **Description**
 
-> A wrapped-gift box that gives precisely the item you need for the situation, as long as it is Rare rank or below. Vanishes once used.
+> (Tag:storage)A wrapped-gift box that gives precisely the item you need for the situation, as long as it is Rare rank or below. Vanishes once used.
 
 **Decision**
 
@@ -5185,7 +5305,7 @@
 
 **Description**
 
-> A Sorcerer Supreme relic allowing free flight. Self-aware, it can pull its wearer from danger and hinder opponents on its own.
+> (Tag:accessory)(Tag:movement)A Sorcerer Supreme relic allowing free flight. Self-aware, it can pull its wearer from danger and hinder opponents on its own.
 
 **Decision**
 
@@ -5202,7 +5322,7 @@
 
 **Description**
 
-> (Tech) A canister of the Plague, a self-replicating nanomachine virus devouring biomass and turning living things into mindless biomechanically enhanced zombies for its hivemind. Releasing it without sufficient biokinetic or techno mastery dooms the world, though without a core they lack a hivemind command center.
+> (Tag:bio)(Tag:poison)(Tag:tech)(Tech) A canister of the Plague, a self-replicating nanomachine virus devouring biomass and turning living things into mindless biomechanically enhanced zombies for its hivemind. Releasing it without sufficient biokinetic or techno mastery dooms the world, though without a core they lack a hivemind command center.
 
 **Decision**
 
@@ -5219,7 +5339,7 @@
 
 **Description**
 
-> Mehrunes Dagon's dagger. Capable of cutting anything the user can interact with — space, time, soul, connections, etc. The only limit is the user, not the dagger.
+> (Tag:blade)(Tag:dagger)(Tag:space)(Tag:spirit)(Tag:time)(Tag:weapon)Mehrunes Dagon's dagger. Capable of cutting anything the user can interact with, space, time, soul, connections, etc. The only limit is the user, not the dagger.
 
 **Decision**
 
@@ -5236,7 +5356,7 @@
 
 **Description**
 
-> Magical key of Nocturnal that can unlock anything the user perceives, from locks and walls to inner potential and portals to other worlds. Its only limit is the user, not the key.
+> (Tag:tool)Magical key of Nocturnal that can unlock anything the user perceives, from locks and walls to inner potential and portals to other worlds. Its only limit is the user, not the key.
 
 **Decision**
 
@@ -5253,7 +5373,7 @@
 
 **Description**
 
-> A hooded elven cloak woven from shadow that renders the wearer invisible while the hood is raised and resistant to divination and scrying. Nearly undetectable while motionless.
+> (Tag:armor)(Tag:stealth)A hooded elven cloak woven from shadow that renders the wearer invisible while the hood is raised and resistant to divination and scrying. Nearly undetectable while motionless.
 
 **Decision**
 
@@ -5270,7 +5390,7 @@
 
 **Description**
 
-> One of the strongest Longinus crafted by God that creates shadow monsters from the user's shadow by expending mana, with abilities based on the user's imagination and abilities. When removed from inventory, it is a small marble that fuses with whoever swallows it.
+> (Tag:bound)(Tag:dark)(Tag:spirit)(Tag:summon)(Tag:weapon)One of the strongest Longinus crafted by God that creates shadow monsters from the user's shadow by expending mana, with abilities based on the user's imagination and abilities. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 
 **Decision**
 
@@ -5287,7 +5407,7 @@
 
 **Description**
 
-> Unknown Dictator, one of the modern Longinus, manipulates metal and technology on a massive scale and constructs advanced tech like ion cannons and aura engines at will without detailed input. Stronger users create stronger creations. When removed from inventory, it is a small marble that fuses with whoever swallows it.
+> (Tag:bound)(Tag:earth)(Tag:electric)(Tag:tech)(Tag:weapon)Unknown Dictator, one of the modern Longinus, manipulates metal and technology on a massive scale and constructs advanced tech like ion cannons and aura engines at will without detailed input. Stronger users create stronger creations. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 
 **Decision**
 
@@ -5304,7 +5424,7 @@
 
 **Description**
 
-> Zenith Tempest, one of the mightiest Longinus, controls weather, atmosphere, and natural elements like fire, wind, lightning, and water to call down lightning, country-wiping storms, and more. A powerful enough user can shred the planet's surface with violent storms. When removed from inventory, it is a small marble that fuses with whoever swallows it.
+> (Tag:air)(Tag:bound)(Tag:electric)(Tag:water)(Tag:weapon)Zenith Tempest, one of the mightiest Longinus, controls weather, atmosphere, and natural elements like fire, wind, lightning, and water to call down lightning, country-wiping storms, and more. A powerful enough user can shred the planet's surface with violent storms. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 
 **Decision**
 
@@ -5321,7 +5441,7 @@
 
 **Description**
 
-> A highest-order Longinus built for simplicity whose sword can cut gods and whose gun can annihilate islands even in basic form. It is incredibly difficult to control, and a misfire may destroy the landmass the user stands on. When removed from inventory, it is a small marble that fuses with whoever swallows it.
+> (Tag:blade)(Tag:bound)(Tag:gun)(Tag:weapon)A highest-order Longinus built for simplicity whose sword can cut gods and whose gun can annihilate islands even in basic form. It is incredibly difficult to control, and a misfire may destroy the landmass the user stands on. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 
 **Decision**
 
@@ -5338,7 +5458,7 @@
 
 **Description**
 
-> Canis Lycaon, one of the Longinus created by God, manifests an extremely powerful black wolf avatar wielding a cursed blade and lets the user sprout cursed blades from their body as weapons. With training, the user can wield cursed flames that prevent healing and sprout blades from any shadow in perception range. When removed from inventory, it is a small marble that fuses with whoever swallows it.
+> (Tag:blade)(Tag:bound)(Tag:curse)(Tag:dark)(Tag:fire)(Tag:summon)(Tag:weapon)Canis Lycaon, one of the Longinus created by God, manifests an extremely powerful black wolf avatar wielding a cursed blade and lets the user sprout cursed blades from their body as weapons. With training, the user can wield cursed flames that prevent healing and sprout blades from any shadow in perception range. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 
 **Decision**
 
@@ -5355,7 +5475,7 @@
 
 **Description**
 
-> The greatest holy spear, containing a piece of God, bears a tremendous holy aura that can utterly annihilate any demonic being weaker than a god. With training, the user can access its variety of forms.
+> (Tag:holy)(Tag:light)(Tag:polearm)(Tag:weapon)The greatest holy spear, containing a piece of God, bears a tremendous holy aura that can utterly annihilate any demonic being weaker than a god. With training, the user can access its variety of forms.
 
 **Decision**
 
@@ -5372,7 +5492,7 @@
 
 **Description**
 
-> Telos Karma, God's treasure, twists causality and fate to affirm the effect the user wants by altering history. Larger effects and stronger targets consume more energy. When removed from inventory, it is a small marble that fuses with whoever swallows it.
+> (Tag:alter)(Tag:bound)Telos Karma, God's treasure, twists causality and fate to affirm the effect the user wants by altering history. Larger effects and stronger targets consume more energy. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 
 **Flagged in reports**
 
@@ -5393,7 +5513,7 @@
 
 **Description**
 
-> Battle Axe of the Nemean, one of the Longinus crafted by God, is a large golden battle axe that protects its wielder from projectiles and can become an independent projection of the original Nemean Lion with invincible skin. With training, the user can unlock its Balance Breaker forms. When removed from inventory, it is a small marble that fuses with whoever swallows it.
+> (Tag:armor)(Tag:blade)(Tag:bound)(Tag:summon)(Tag:weapon)Battle Axe of the Nemean, one of the Longinus crafted by God, is a large golden battle axe that protects its wielder from projectiles and can become an independent projection of the original Nemean Lion with invincible skin. With training, the user can unlock its Balance Breaker forms. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 
 **Decision**
 
@@ -5427,7 +5547,7 @@
 
 **Description**
 
-> A simple cola-tasting canned drink that causes immense agony lasting up to several minutes. Restock Timer: 24 hours.
+> (Tag:consumable)A simple cola-tasting canned drink that causes immense agony lasting up to several minutes. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -5444,7 +5564,7 @@
 
 **Description**
 
-> A sword of night formed from the world's essences with exceptional durability and sharpness that enhances all darkness abilities when used as a focus. Under certain conditions, it can unlock true power comparable to Excalibur itself.
+> (Tag:blade)(Tag:dark)(Tag:dark+)(Tag:weapon)A sword of night formed from the world's essences with exceptional durability and sharpness that enhances all darkness abilities when used as a focus. Under certain conditions, it can unlock true power comparable to Excalibur itself.
 
 **Decision**
 
@@ -5461,7 +5581,7 @@
 
 **Description**
 
-> A glintstone masterpiece katana that projects the user's slashes as blue blades of light and amplifies spells when used as a focus.
+> (Tag:blade)(Tag:magic)(Tag:magic+)(Tag:weapon)A glintstone masterpiece katana that projects the user's slashes as blue blades of light and amplifies spells when used as a focus.
 
 **Decision**
 
@@ -5478,7 +5598,7 @@
 
 **Description**
 
-> A sword carrying traces of Destined Death that unleashes black flames by expending energy/mana to permanently harm lifeforce. Wounds it inflicts cannot be healed by anything less than divine intervention.
+> (Tag:anti-divine)(Tag:anti-immortal)(Tag:blade)(Tag:divine)(Tag:necro)(Tag:weapon)A sword carrying traces of Destined Death that unleashes black flames by expending energy/mana to permanently harm lifeforce. Wounds it inflicts cannot be healed by anything less than divine intervention.
 
 **Decision**
 
@@ -5495,7 +5615,7 @@
 
 **Description**
 
-> (Tome) A beginner's guide to basic Nordic/Scandinavian runecraft written personally by Allfather Odin. Studying it teaches the art of Runecraft.
+> (Tag:grimoire)(Tag:magic)(Tome) A beginner's guide to basic Nordic/Scandinavian runecraft written personally by Allfather Odin. Studying it teaches the art of Runecraft.
 
 **Decision**
 
@@ -5512,7 +5632,7 @@
 
 **Description**
 
-> A beginner-friendly golem-growing kit even a child can use, containing a person-sized pot, watering can, pack of cores, and notebook. Place a core, desired golem materials, and a specification note in the pot, bury it in any dirt in a sunny spot, and water twice morning and night for 7 days before digging up the finished golem. Energy-rich soil speeds the process.
+> (Tag:construct)(Tag:production)(Tag:summon)A beginner-friendly golem-growing kit even a child can use, containing a person-sized pot, watering can, pack of cores, and notebook. Place a core, desired golem materials, and a specification note in the pot, bury it in any dirt in a sunny spot, and water twice morning and night for 7 days before digging up the finished golem. Energy-rich soil speeds the process.
 
 **Decision**
 
@@ -5529,7 +5649,7 @@
 
 **Description**
 
-> A blood-red stained cape that proportionally augments the wearer's Physical Abilities and Regeneration for every negative status effect borne while wearing it, such as burning, poison, curse, freezing, bleeding, or blindness. (A/N: Gacha curses do not count).
+> (Tag:accessory)(Tag:enhancer)(Tag:health-regeneration+)A blood-red stained cape that proportionally augments the wearer's Physical Abilities and Regeneration for every negative status effect borne while wearing it, such as burning, poison, curse, freezing, bleeding, or blindness. (A/N: Gacha curses do not count).
 
 **Decision**
 
@@ -5546,7 +5666,7 @@
 
 **Description**
 
-> An angel's Halo worn like a hat that does not fall off unless removed. While worn, it grants resistance to all ailments, especially Dark and Infernal attacks and effects, greatly boosts Light and Holy abilities, and constantly applies slight healing to the wearer.
+> (Tag:accessory)(Tag:dark-resistance+)(Tag:holy+)(Tag:infernal-resistance+)(Tag:light+)An angel's Halo worn like a hat that does not fall off unless removed. While worn, it grants resistance to all ailments, especially Dark and Infernal attacks and effects, greatly boosts Light and Holy abilities, and constantly applies slight healing to the wearer.
 
 **Decision**
 
@@ -5563,7 +5683,7 @@
 
 **Description**
 
-> A headband shaped as cartoonish devil horns that substantially boosts all Darkness and Infernal abilities and traits while worn.
+> (Tag:accessory)(Tag:dark+)(Tag:infernal)(Tag:infernal+)A headband shaped as cartoonish devil horns that substantially boosts all Darkness and Infernal abilities and traits while worn.
 
 **Decision**
 
@@ -5580,7 +5700,7 @@
 
 **Description**
 
-> An old, worn, rusty blade covered in dried blood that is only as strong as it looks unless brandished against a target that has inflicted suffering on the user. Against such targets, it powers up proportionally to all damage they have ever inflicted, reaching legendary strength against a mortal enemy but remaining trash against a first-time opponent.
+> (Tag:blade)(Tag:weapon)An old, worn, rusty blade covered in dried blood that is only as strong as it looks unless brandished against a target that has inflicted suffering on the user. Against such targets, it powers up proportionally to all damage they have ever inflicted, reaching legendary strength against a mortal enemy but remaining trash against a first-time opponent.
 
 **Decision**
 
@@ -5597,7 +5717,7 @@
 
 **Description**
 
-> A pair of simple but sturdy brass knuckles.
+> (Tag:fist)(Tag:weapon)A pair of simple but sturdy brass knuckles.
 
 **Decision**
 
@@ -5614,7 +5734,7 @@
 
 **Description**
 
-> An enchanted ring of a legendary paladin infused with his prayers that holds 3 charges and recovers 1 charge every hour. Spend a charge to cast a Rare tier Heal, grant one Uncommon tier blessing like strength or agility, or bless an object with holy energy to create holy water or a temporarily blessed weapon effective against the unholy.
+> (Tag:accessory)(Tag:health-recovery)(Tag:holy)(Tag:light)(Tag:water)An enchanted ring of a legendary paladin infused with his prayers that holds 3 charges and recovers 1 charge every hour. Spend a charge to cast a Rare tier Heal, grant one Uncommon tier blessing like strength or agility, or bless an object with holy energy to create holy water or a temporarily blessed weapon effective against the unholy.
 
 **Decision**
 
@@ -5631,7 +5751,7 @@
 
 **Description**
 
-> A pair of simple earplugs that completely blocks the wearer's hearing while worn.
+> (Tag:accessory)A pair of simple earplugs that completely blocks the wearer's hearing while worn.
 
 **Decision**
 
@@ -5648,7 +5768,7 @@
 
 **Description**
 
-> A simple white mask that makes the wearer appear as a completely different, always identical person, serving as a second identity.
+> (Tag:accessory)(Tag:illusion)A simple white mask that makes the wearer appear as a completely different, always identical person, serving as a second identity.
 
 **Decision**
 
@@ -5665,7 +5785,7 @@
 
 **Description**
 
-> A sword embodying envy that alone is only as strong as a sharp iron sword. It can temporarily become the strongest weapon within a 1 km radius for 1 hour, then enters a 24 hour cooldown.
+> (Tag:blade)(Tag:weapon)A sword embodying envy that alone is only as strong as a sharp iron sword. It can temporarily become the strongest weapon within a 1 km radius for 1 hour, then enters a 24 hour cooldown.
 
 **Decision**
 
@@ -5682,7 +5802,7 @@
 
 **Description**
 
-> An amulet that transforms you into the shape of any creature you touch while holding it until you dispel the transformation. Cooldown: 8 hours.
+> (Tag:accessory)An amulet that transforms you into the shape of any creature you touch while holding it until you dispel the transformation. Cooldown: 8 hours.
 
 **Decision**
 
@@ -5699,7 +5819,7 @@
 
 **Description**
 
-> Not a lightsaber, this sword is crafted purely from solid light and is incredibly light and sharp but somewhat fragile. If broken, leaving it where it receives light gradually repairs it.
+> (Tag:blade)(Tag:light)(Tag:weapon)Not a lightsaber, this sword is crafted purely from solid light and is incredibly light and sharp but somewhat fragile. If broken, leaving it where it receives light gradually repairs it.
 
 **Decision**
 
@@ -5716,7 +5836,7 @@
 
 **Description**
 
-> A luxury private jet with its own Golem Pilot and Golem Server that requires no fuel. Snacks and amenities inside replenish over time.
+> (Tag:vehicle)A luxury private jet with its own Golem Pilot and Golem Server that requires no fuel. Snacks and amenities inside replenish over time.
 
 **Decision**
 
@@ -5733,7 +5853,7 @@
 
 **Description**
 
-> A pair of really cool-looking sunglasses that make you seem more charismatic.
+> (Tag:social)(Tag:tool)A pair of really cool-looking sunglasses that make you seem more charismatic.
 
 **Decision**
 
@@ -5750,7 +5870,7 @@
 
 **Description**
 
-> A divinely blessed sword that imbues great might and magical power and boosts holy and light abilities when used as a focus. It also fills the user with righteous rage, driving them berserk against unholy and undead beings unless tamed.
+> (Tag:anti-infernal)(Tag:anti-undead)(Tag:blade)(Tag:holy)(Tag:maximum-energy+)(Tag:weapon)A divinely blessed sword that imbues great might and magical power and boosts holy and light abilities when used as a focus. It also fills the user with righteous rage, driving them berserk against unholy and undead beings unless tamed.
 
 **Decision**
 
@@ -5767,7 +5887,7 @@
 
 **Description**
 
-> The mythical Blade of Armageddon that imbues great power but burns to touch and boosts fire and unholy abilities when used as a focus. The user can expend energy to call down Armageddon, raining hellfire from the skies onto the mortal world.
+> (Tag:blade)(Tag:fire)(Tag:fire+)(Tag:infernal)(Tag:infernal+)(Tag:strength+)(Tag:weapon)The mythical Blade of Armageddon that imbues great power but burns to touch and boosts fire and unholy abilities when used as a focus. The user can expend energy to call down Armageddon, raining hellfire from the skies onto the mortal world.
 
 **Decision**
 
@@ -5784,7 +5904,7 @@
 
 **Description**
 
-> A sword forged and bathed in hellfire whose blade can be wreathed in violent flames by expending energy. It boosts fire abilities when used as a focus.
+> (Tag:fire)(Tag:infernal)A sword forged and bathed in hellfire whose blade can be wreathed in violent flames by expending energy. It boosts fire abilities when used as a focus.
 
 **Decision**
 
@@ -5801,7 +5921,7 @@
 
 **Description**
 
-> A divine heavenly sword that greatly increases the wielder's physical and magical abilities, strengthens and inspires any army or allies under their command, and boosts holy and light abilities when used as a focus. The user can also expend energy to grant any blessing of Rare tier or below.
+> (Tag:agility+)(Tag:blade)(Tag:defence+)(Tag:holy)(Tag:magic+)(Tag:strength+)(Tag:weapon)A divine heavenly sword that greatly increases the wielder's physical and magical abilities, strengthens and inspires any army or allies under their command, and boosts holy and light abilities when used as a focus. The user can also expend energy to grant any blessing of Rare tier or below.
 
 **Decision**
 
@@ -5818,7 +5938,7 @@
 
 **Description**
 
-> A thunder sword granting the power and might of giants, including extreme physical strength and the ability to rain down thunder by expending energy. It enhances lightning-based abilities when used as a focus.
+> (Tag:blade)(Tag:electric)(Tag:electric+)(Tag:strength+)(Tag:weapon)A thunder sword granting the power and might of giants, including extreme physical strength and the ability to rain down thunder by expending energy. It enhances lightning-based abilities when used as a focus.
 
 **Decision**
 
@@ -5835,7 +5955,7 @@
 
 **Description**
 
-> Pitch-black armor with a demonic visage worn by the most wicked conquerors that augments physical abilities and amplifies darkness-based abilities when used as a focus. With training, it can unleash massive-scale curses like slow, misfortune, and weakness to debilitate entire armies.
+> (Tag:armor)(Tag:curse)(Tag:curse+)(Tag:dark)(Tag:dark+)(Tag:defence+)(Tag:strength+)Pitch-black armor with a demonic visage worn by the most wicked conquerors that augments physical abilities and amplifies darkness-based abilities when used as a focus. With training, it can unleash massive-scale curses like slow, misfortune, and weakness to debilitate entire armies.
 
 **Decision**
 
@@ -5852,7 +5972,7 @@
 
 **Description**
 
-> Armor crafted from a mighty dragon's corpse that imbues great physical might and extreme magic resistance through its scales.
+> (Tag:draconic)Armor crafted from a mighty dragon's corpse that imbues great physical might and extreme magic resistance through its scales.
 
 **Decision**
 
@@ -5869,7 +5989,7 @@
 
 **Description**
 
-> A legendary archwizard's hat containing echoes of his spells that grants Dimensional Door (100 km portal), Fly (fly at land speed), Magic Mirror (reflect magic back), Implosion (severe explosive damage), and Summon Elemental (summon a chosen elemental roughly as strong as you for 30 minutes). This artifact holds 3 charges at a time and recovers 1 charge every 8 hours.
+> (Tag:accessory)(Tag:magic)(Tag:summon)A legendary archwizard's hat containing echoes of his spells that grants Dimensional Door (100 km portal), Fly (fly at land speed), Magic Mirror (reflect magic back), Implosion (severe explosive damage), and Summon Elemental (summon a chosen elemental roughly as strong as you for 30 minutes). This artifact holds 3 charges at a time and recovers 1 charge every 8 hours.
 
 **Decision**
 
@@ -5886,7 +6006,7 @@
 
 **Description**
 
-> A legendary admiral's hat that conjures any mundane seabound vessel, from destroyer-class warships to cruise ships, manned by a spirit crew. You can summon a vessel every 720 hours, and wearing the hat grants Master rank Riding on any seabound vessel.
+> (Tag:accessory)(Tag:summon)(Tag:vehicle)A legendary admiral's hat that conjures any mundane seabound vessel, from destroyer-class warships to cruise ships, manned by a spirit crew. You can summon a vessel every 720 hours, and wearing the hat grants Master rank Riding on any seabound vessel.
 
 **Decision**
 
@@ -5903,7 +6023,7 @@
 
 **Description**
 
-> While worn, this cloak prevents the user from using any magic below Epic rank and prevents any magic below Epic rank from affecting them.
+> (Tag:accessory)(Tag:anti-magic)While worn, this cloak prevents the user from using any magic below Epic rank and prevents any magic below Epic rank from affecting them.
 
 **Flagged in reports**
 
@@ -5924,7 +6044,7 @@
 
 **Description**
 
-> A cape that makes the wearer faster while worn.
+> (Tag:accessory)(Tag:movement)A cape that makes the wearer faster while worn.
 
 **Decision**
 
@@ -5941,7 +6061,7 @@
 
 **Description**
 
-> The legendary undead king's cloak that boosts all necromancy and soul-based abilities and removes the limit on undead controlled at once while worn.
+> (Tag:accessory)(Tag:necro)(Tag:necro+)(Tag:spirit+)The legendary undead king's cloak that boosts all necromancy and soul-based abilities and removes the limit on undead controlled at once while worn.
 
 **Decision**
 
@@ -5958,7 +6078,7 @@
 
 **Description**
 
-> A mystical charm emitting an aura that inflicts magical interference on those around the user, reducing their magical capabilities.
+> (Tag:accessory)(Tag:anti-magic)A mystical charm emitting an aura that inflicts magical interference on those around the user, reducing their magical capabilities.
 
 **Decision**
 
@@ -5975,7 +6095,7 @@
 
 **Description**
 
-> A large cauldron filled to the brim with magical power equal to the user's maximum. It instantly refills to the brim at 8 am every morning.
+> (Tag:magic)(Tag:production)(Tag:tool)A large cauldron filled to the brim with magical power equal to the user's maximum. It instantly refills to the brim at 8 am every morning.
 
 **Decision**
 
@@ -5992,7 +6112,7 @@
 
 **Description**
 
-> An orb of raw ancient magical power that boosts earth-based abilities and magic for its holder.
+> (Tag:earth)(Tag:earth+)(Tag:necro+)(Tag:tool)An orb of raw ancient magical power that boosts earth-based abilities and magic for its holder.
 
 **Decision**
 
@@ -6009,7 +6129,7 @@
 
 **Description**
 
-> An orb of raw ancient magical power that boosts wind and lightning-based abilities and magic for its holder.
+> (Tag:air+)(Tag:electric)(Tag:electric+)(Tag:tool)An orb of raw ancient magical power that boosts wind and lightning-based abilities and magic for its holder.
 
 **Decision**
 
@@ -6026,7 +6146,7 @@
 
 **Description**
 
-> An orb of raw ancient magical power that boosts water and ice-based abilities and magic for its holder.
+> (Tag:air+)(Tag:electric+)(Tag:tool)An orb of raw ancient magical power that boosts water and ice-based abilities and magic for its holder.
 
 **Decision**
 
@@ -6043,7 +6163,7 @@
 
 **Description**
 
-> An orb of raw ancient magical power that boosts fire-based abilities and magic for its holder.
+> (Tag:fire)An orb of raw ancient magical power that boosts fire-based abilities and magic for its holder.
 
 **Decision**
 
@@ -6060,7 +6180,7 @@
 
 **Description**
 
-> (Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Air_Magic
+> (Tag:air)(Tag:electric)(Tag:grimoire)(Tag:magic)(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Air_Magic
 
 **Decision**
 
@@ -6077,7 +6197,7 @@
 
 **Description**
 
-> (Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Earth_Magic
+> (Tag:earth)(Tag:grimoire)(Tag:magic)(Tag:necro)(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Earth_Magic
 
 **Decision**
 
@@ -6094,7 +6214,7 @@
 
 **Description**
 
-> (Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Water_Magic
+> (Tag:grimoire)(Tag:holy)(Tag:ice)(Tag:magic)(Tag:water)(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Water_Magic
 
 **Decision**
 
@@ -6111,7 +6231,7 @@
 
 **Description**
 
-> (Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Fire_Magic
+> (Tag:curse)(Tag:fire)(Tag:grimoire)(Tag:infernal)(Tag:magic)(Tome) A legendary imbued tome from an ancient kingdom that lets its holder cast its contained spells even without training. Spells can also be learned through study to cast without the book. Spell List: https://heroes.thelazy.net/index.php/School_of_Fire_Magic
 
 **Decision**
 
@@ -6128,7 +6248,7 @@
 
 **Description**
 
-> A magical orb that prevents magic removal on a target, granting immunity to dispelling spells or abilities.
+> (Tag:magic)(Tag:tool)A magical orb that prevents magic removal on a target, granting immunity to dispelling spells or abilities.
 
 **Decision**
 
@@ -6145,7 +6265,7 @@
 
 **Description**
 
-> A magical orb that lets its holder bypass immunities and resistances, such as harming living fire or poisoning a hydra.
+> (Tag:anti-resistance)(Tag:tool)A magical orb that lets its holder bypass immunities and resistances, such as harming living fire or poisoning a hydra.
 
 **Flagged in reports**
 
@@ -6166,7 +6286,7 @@
 
 **Description**
 
-> A quiver of infinite angel-feather-fletched arrows that retain maximum speed in flight until hitting a target.
+> (Tag:holy)(Tag:tool)A quiver of infinite angel-feather-fletched arrows that retain maximum speed in flight until hitting a target.
 
 **Decision**
 
@@ -6183,7 +6303,7 @@
 
 **Description**
 
-> A vial of condensed vitality in blood form that grants enhanced vitality, minor healing, and increased lifespan when drunk.
+> (Tag:consumable)(Tag:elixir)(Tag:health-regeneration+)(Tag:vitality+)A vial of condensed vitality in blood form that grants enhanced vitality, minor healing, and increased lifespan when drunk.
 
 **Decision**
 
@@ -6200,7 +6320,7 @@
 
 **Description**
 
-> The legendary Elixir of Life that grants boundless vitality, immunity to most poisons and illnesses, and a hundredfold lifespan increase when drunk.
+> (Tag:consumable)(Tag:elixir)(Tag:poison-resistance+)(Tag:vitality+)The legendary Elixir of Life that grants boundless vitality, immunity to most poisons and illnesses, and a hundredfold lifespan increase when drunk.
 
 **Decision**
 
@@ -6217,7 +6337,7 @@
 
 **Description**
 
-> A purse of endless riches that fills with 500 200-gram pure gold coins every 24 hours and can hold an infinite amount.
+> (Tag:production)(Tag:tool)A purse of endless riches that fills with 500 200-gram pure gold coins every 24 hours and can hold an infinite amount.
 
 **Decision**
 
@@ -6234,7 +6354,7 @@
 
 **Description**
 
-> An eldritch horn from the abyssal depths that raises the dead as shoggoths, fangarms, or other loyal deep creatures.
+> (Tag:necro)(Tag:summon)(Tag:tool)An eldritch horn from the abyssal depths that raises the dead as shoggoths, fangarms, or other loyal deep creatures.
 
 **Decision**
 
@@ -6251,7 +6371,7 @@
 
 **Description**
 
-> Suspiciously comfortable archmage robes that let you learn magic much quicker and amplify spells you cast.
+> (Tag:armor)(Tag:magic+)Suspiciously comfortable archmage robes that let you learn magic much quicker and amplify spells you cast.
 
 **Decision**
 
@@ -6268,7 +6388,7 @@
 
 **Description**
 
-> An altar of fire that collects natural mana to birth fire spirits loyal to you as its owner.
+> (Tag:barracks)(Tag:building)(Tag:fire)(Tag:spirit)An altar of fire that collects natural mana to birth fire spirits loyal to you as its owner.
 
 **Decision**
 
@@ -6285,7 +6405,7 @@
 
 **Description**
 
-> An altar that collects natural mana to birth air and lightning spirits loyal to you as its owner.
+> (Tag:air)(Tag:barracks)(Tag:building)(Tag:spirit)An altar that collects natural mana to birth air and lightning spirits loyal to you as its owner.
 
 **Decision**
 
@@ -6302,7 +6422,7 @@
 
 **Description**
 
-> An altar that collects natural mana to birth water and ice spirits loyal to you as its owner.
+> (Tag:barracks)(Tag:building)(Tag:spirit)(Tag:water)An altar that collects natural mana to birth water and ice spirits loyal to you as its owner.
 
 **Decision**
 
@@ -6319,7 +6439,7 @@
 
 **Description**
 
-> An altar converging natural elements and collecting natural mana to birth spirits of all elements loyal to you as its owner.
+> (Tag:air)(Tag:barracks)(Tag:building)(Tag:earth)(Tag:fire)(Tag:spirit)(Tag:water)An altar converging natural elements and collecting natural mana to birth spirits of all elements loyal to you as its owner.
 
 **Decision**
 
@@ -6336,7 +6456,7 @@
 
 **Description**
 
-> An ash altar that births firebirds and phoenixes loyal to you as its owner when given enough wealth and energy sacrifices.
+> (Tag:barracks)(Tag:building)(Tag:fire)(Tag:life)An ash altar that births firebirds and phoenixes loyal to you as its owner when given enough wealth and energy sacrifices.
 
 **Decision**
 
@@ -6353,7 +6473,7 @@
 
 **Description**
 
-> - A cave with ideal dragon living conditions and plenty of treasure. Take its gold and gems for yourself or use it as storage for your valuables, which none can enter without your permission.
+> (Tag:draconic)- A cave with ideal dragon living conditions and plenty of treasure. Take its gold and gems for yourself or use it as storage for your valuables, which none can enter without your permission.
 
 **Decision**
 
@@ -6370,7 +6490,7 @@
 
 **Description**
 
-> A gigantic castle with ideal living conditions for practically any dragon, housing a horde of various loyal dragons. You can admit other dragons in exchange for servitude.
+> (Tag:draconic)A gigantic castle with ideal living conditions for practically any dragon, housing a horde of various loyal dragons. You can admit other dragons in exchange for servitude.
 
 **Decision**
 
@@ -6387,7 +6507,7 @@
 
 **Description**
 
-> A large, incredibly poisonous swampy pond populated by Hydra loyal to you as its owner.
+> (Tag:building)A large, incredibly poisonous swampy pond populated by Hydra loyal to you as its owner.
 
 **Decision**
 
@@ -6404,7 +6524,7 @@
 
 **Description**
 
-> A magical waterfall where lesser water-spirit Nymphs are naturally born and remain loyal to you as its owner.
+> (Tag:barracks)(Tag:building)(Tag:spirit)(Tag:water)A magical waterfall where lesser water-spirit Nymphs are naturally born and remain loyal to you as its owner.
 
 **Decision**
 
@@ -6421,7 +6541,7 @@
 
 **Description**
 
-> A large water whirlpool containing many dangerous seabound creatures, including the sea serpent Haspid, under your command.
+> (Tag:command)(Tag:summon)(Tag:water)A large water whirlpool containing many dangerous seabound creatures, including the sea serpent Haspid, under your command.
 
 **Decision**
 
@@ -6438,7 +6558,7 @@
 
 **Description**
 
-> A large forest with high magical concentration and unique herbs, populated by ents, treants, and even legendary unicorns under your command. It slowly replenishes itself over time.
+> (Tag:barracks)(Tag:building)(Tag:holy)(Tag:nature)A large forest with high magical concentration and unique herbs, populated by ents, treants, and even legendary unicorns under your command. It slowly replenishes itself over time.
 
 **Decision**
 
@@ -6455,7 +6575,7 @@
 
 **Description**
 
-> A large cavern of unique red crystals holding potent magical power and energy, with crystal dragons under your command. Crystals replenish over time.
+> (Tag:barracks)(Tag:building)(Tag:draconic)(Tag:earth)A large cavern of unique red crystals holding potent magical power and energy, with crystal dragons under your command. Crystals replenish over time.
 
 **Decision**
 
@@ -6472,7 +6592,7 @@
 
 **Description**
 
-> A gigantic frozen mountain range taller than Everest with extreme magical energy, housing many powerful dragons and the legendary azure dragon to serve under your command.
+> (Tag:barracks)(Tag:building)(Tag:draconic)A gigantic frozen mountain range taller than Everest with extreme magical energy, housing many powerful dragons and the legendary azure dragon to serve under your command.
 
 **Decision**
 
@@ -6489,7 +6609,7 @@
 
 **Description**
 
-> A gigantic temple over a kilometer tall and several wide that summons absolutely loyal stone Giants and Titans to serve you in exchange for wealth sacrifices like gold and gems. Beware, summoning costs are rather expensive.
+> (Tag:barracks)(Tag:building)(Tag:earth)A gigantic temple over a kilometer tall and several wide that summons absolutely loyal stone Giants and Titans to serve you in exchange for wealth sacrifices like gold and gems. Beware, summoning costs are rather expensive.
 
 **Decision**
 
@@ -6506,7 +6626,7 @@
 
 **Description**
 
-> A giant experimental workshop manned by talented loyal gremlin master artisans who craft items with provided resources. They can also build animated legendary stone giants and various golems to serve you.
+> (Tag:barracks)(Tag:building)(Tag:earth)(Tag:production)A giant experimental workshop manned by talented loyal gremlin master artisans who craft items with provided resources. They can also build animated legendary stone giants and various golems to serve you.
 
 **Decision**
 
@@ -6523,7 +6643,7 @@
 
 **Description**
 
-> A divine gate that produces angels to serve you over time when given enough energy and resources such as gold.
+> (Tag:barracks)(Tag:building)(Tag:holy)(Tag:teleport)A divine gate that produces angels to serve you over time when given enough energy and resources such as gold.
 
 **Decision**
 
@@ -6540,7 +6660,7 @@
 
 **Description**
 
-> A beautiful flower garden with a mystical aura where studying and learning magic is easier.
+> (Tag:building)(Tag:magic)A beautiful flower garden with a mystical aura where studying and learning magic is easier.
 
 **Decision**
 
@@ -6557,7 +6677,7 @@
 
 **Description**
 
-> A large ornate fountain whose waters reverse aging while bathing, rewinding one year of biological age per hour spent inside.
+> (Tag:building)(Tag:life)(Tag:time)A large ornate fountain whose waters reverse aging while bathing, rewinding one year of biological age per hour spent inside.
 
 **Decision**
 
@@ -6574,7 +6694,7 @@
 
 **Description**
 
-> A large spring of rapidly replenishing mana-rich water where bathing very quickly replenishes magical power.
+> (Tag:building)(Tag:energy-regeneration+)A large spring of rapidly replenishing mana-rich water where bathing very quickly replenishes magical power.
 
 **Decision**
 
@@ -6591,7 +6711,7 @@
 
 **Description**
 
-> A partially broken yet supernaturally durable stone hammer that boosts holy abilities and spells.
+> (Tag:anti-dark)(Tag:anti-infernal)(Tag:anti-undead)(Tag:bludgeon)(Tag:holy)(Tag:weapon)A partially broken yet supernaturally durable stone hammer that boosts holy abilities and spells.
 
 **Decision**
 
@@ -6608,7 +6728,7 @@
 
 **Description**
 
-> A simple straw-and-twine doll vaguely resembling the user that can substitute for any sacrifice, including human, vitality, body part, or soul part, then vanishes. Only usable by the one who rolled it.
+> (Tag:curse)(Tag:tool)A simple straw-and-twine doll vaguely resembling the user that can substitute for any sacrifice, including human, vitality, body part, or soul part, then vanishes. Only usable by the one who rolled it.
 
 **Decision**
 
@@ -6625,7 +6745,7 @@
 
 **Description**
 
-> A gold coin with no real use that all who see it perceive as incredibly valuable. You could trade it for a real artifact and the recipient would still consider it fair.
+> (Tag:tool)A gold coin with no real use that all who see it perceive as incredibly valuable. You could trade it for a real artifact and the recipient would still consider it fair.
 
 **Decision**
 
@@ -6642,7 +6762,7 @@
 
 **Description**
 
-> A stack of ordinary gold bars totaling 33 kilograms.
+> (Tag:mundane)A stack of ordinary gold bars totaling 33 kilograms.
 
 **Decision**
 
@@ -6659,7 +6779,7 @@
 
 **Description**
 
-> An ornate red-and-gold ring that attracts wealth, making it easier to make money and find treasures.
+> (Tag:accessory)An ornate red-and-gold ring that attracts wealth, making it easier to make money and find treasures.
 
 **Decision**
 
@@ -6676,7 +6796,7 @@
 
 **Description**
 
-> A gold ring to gift a loved one whose patterns customize themselves to the recipient. Restock Timer: 48 hours.
+> (Tag:accessory)A gold ring to gift a loved one whose patterns customize themselves to the recipient. Restock Timer: 48 hours.
 
 **Decision**
 
@@ -6693,7 +6813,7 @@
 
 **Description**
 
-> A refined Chlorophyte bar from the deep ancient jungles, far more flexible and durable than mundane metal, capable of converting sunlight into energy. Synergizes very well with bio and nature abilities. Restock Timer: 8 hours.
+> (Tag:material)(Tag:nature)A refined Chlorophyte bar from the deep ancient jungles, far more flexible and durable than mundane metal, capable of converting sunlight into energy. Synergizes very well with bio and nature abilities. Restock Timer: 8 hours.
 
 **Decision**
 
@@ -6710,7 +6830,7 @@
 
 **Description**
 
-> A refined Aerolite bar from the sky islands infused with sky energy that releases wind and can emulate weather under special conditions when infused with energy. Synergizes very well with lightning and air. Restock Timer: 8 hours.
+> (Tag:air)(Tag:material)A refined Aerolite bar from the sky islands infused with sky energy that releases wind and can emulate weather under special conditions when infused with energy. Synergizes very well with lightning and air. Restock Timer: 8 hours.
 
 **Decision**
 
@@ -6727,7 +6847,7 @@
 
 **Description**
 
-> A refined, nigh-unbreakable bar from the Astral Infection containing refined cosmic energy that releases cosmic energies when infused with energy. Restock Timer: 8 hours.
+> (Tag:material)(Tag:space)A refined, nigh-unbreakable bar from the Astral Infection containing refined cosmic energy that releases cosmic energies when infused with energy. Restock Timer: 8 hours.
 
 **Decision**
 
@@ -6744,7 +6864,7 @@
 
 **Description**
 
-> A broken sword handle that produces a blade with the properties of whatever element it is infused with when given energy.
+> (Tag:blade)(Tag:nature)(Tag:weapon)A broken sword handle that produces a blade with the properties of whatever element it is infused with when given energy.
 
 **Decision**
 
@@ -6761,7 +6881,7 @@
 
 **Description**
 
-> The legendary sword in the stone that you could not pull out; wield it stone and all as a bludgeoning weapon. Meeting all original Excalibur conditions lets you draw it to gain both Excalibur and an unbreakable rock.
+> (Tag:blade)(Tag:bludgeon)(Tag:holy)(Tag:restricted)(Tag:weapon)The legendary sword in the stone that you could not pull out; wield it stone and all as a bludgeoning weapon. Meeting all original Excalibur conditions lets you draw it to gain both Excalibur and an unbreakable rock.
 
 **Decision**
 
@@ -6778,7 +6898,7 @@
 
 **Description**
 
-> A pair of arid daggers that manifests 10 arid shivs every 30 seconds to launch as a volley at opponents.
+> (Tag:blade)(Tag:dagger)(Tag:earth)(Tag:weapon)A pair of arid daggers that manifests 10 arid shivs every 30 seconds to launch as a volley at opponents.
 
 **Decision**
 
@@ -6795,7 +6915,7 @@
 
 **Description**
 
-> A simple sharp steel longsword that is completely unbreakable and undamageable.
+> (Tag:blade)(Tag:weapon)A simple sharp steel longsword that is completely unbreakable and undamageable.
 
 **Decision**
 
@@ -6812,7 +6932,7 @@
 
 **Description**
 
-> A bag that produces 1000 gold coins every day.
+> (Tag:resource)(Tag:storage)A bag that produces 1000 gold coins every day.
 
 **Decision**
 
@@ -6829,7 +6949,7 @@
 
 **Description**
 
-> A satchel-sized bag holding 100 shurikens, 100 kunai, 100 caltrops, 50 explosive tags, and a katana, all high-quality steel. Contents replenish every 24 hours.
+> (Tag:production)(Tag:tool)A satchel-sized bag holding 100 shurikens, 100 kunai, 100 caltrops, 50 explosive tags, and a katana, all high-quality steel. Contents replenish every 24 hours.
 
 **Decision**
 
@@ -6846,7 +6966,7 @@
 
 **Description**
 
-> (Tech) A laptop with power on par with humanity's strongest supercomputers that stays connected to the native internet regardless of location.
+> (Tag:machine)(Tag:tech)(Tag:tool)(Tech) A laptop with power on par with humanity's strongest supercomputers that stays connected to the native internet regardless of location.
 
 **Decision**
 
@@ -6863,7 +6983,7 @@
 
 **Description**
 
-> A torso-sized duffel bag yielding 33 kilograms of any mundane ore every 24 hours.
+> (Tag:material)(Tag:production)(Tag:tool)A torso-sized duffel bag yielding 33 kilograms of any mundane ore every 24 hours.
 
 **Decision**
 
@@ -6880,7 +7000,7 @@
 
 **Description**
 
-> A simple satchel yielding any item found in an average pharmacy.
+> (Tag:production)(Tag:tool)A simple satchel yielding any item found in an average pharmacy.
 
 **Decision**
 
@@ -6897,7 +7017,7 @@
 
 **Description**
 
-> (Tech) An autonomous factory producing droids under your command when supplied with appropriate materials.
+> (Tag:barracks)(Tag:building)(Tag:production)(Tag:tech)(Tech) An autonomous factory producing droids under your command when supplied with appropriate materials.
 
 **Decision**
 
@@ -6914,7 +7034,7 @@
 
 **Description**
 
-> Bang's manual with detailed training in Flowing Water Crushing Rock Fist. Those without it cannot replicate the art.
+> (Tag:water)Bang's manual with detailed training in Flowing Water Crushing Rock Fist. Those without it cannot replicate the art.
 
 **Decision**
 
@@ -6931,7 +7051,7 @@
 
 **Description**
 
-> (Tome) A grimoire teaching the Pyromancies of the Great Swamp and Izalith. Spell List: https://darksouls.fandom.com/wiki/Pyromancy_(Dark_Souls)
+> (Tag:fire)(Tag:grimoire)(Tag:magic)(Tome) A grimoire teaching the Pyromancies of the Great Swamp and Izalith. Spell List: https://darksouls.fandom.com/wiki/Pyromancy_(Dark_Souls)
 
 **Decision**
 
@@ -6948,7 +7068,7 @@
 
 **Description**
 
-> (Tome) Rhea of Thorolund's tome teaching all her Way of the White miracles. | Spell List: https://darksouls.fandom.com/wiki/Rhea_of_Thorolund#Miracles
+> (Tag:grimoire)(Tag:health-recovery)(Tag:holy)(Tag:light)(Tag:magic)(Tome) Rhea of Thorolund's tome teaching all her Way of the White miracles. | Spell List: https://darksouls.fandom.com/wiki/Rhea_of_Thorolund#Wares
 
 **Decision**
 
@@ -6965,7 +7085,7 @@
 
 **Description**
 
-> (Tome) Orbeck of Vinheim's tome of research and anecdotes teaching all his spells. | Spell List: https://darksouls.fandom.com/wiki/Orbeck_of_Vinheim#Wares
+> (Tag:grimoire)(Tag:magic)(Tome) Orbeck of Vinheim's tome of research and anecdotes teaching all his spells. | Spell List: https://darksouls.fandom.com/wiki/Orbeck_of_Vinheim#Wares
 
 **Decision**
 
@@ -6982,7 +7102,7 @@
 
 **Description**
 
-> (Tome) Church rites for communing with great dragons to borrow their powers for miracles. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Communion+Incantations
+> (Tag:draconic)(Tag:grimoire)(Tag:magic)(Tome) Church rites for communing with great dragons to borrow their powers for miracles. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Communion+Incantations
 
 **Decision**
 
@@ -6999,7 +7119,7 @@
 
 **Description**
 
-> (Tome) Dragon Cult rites teaching miracles that imitate the great dragons' power. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Cult+Incantations
+> (Tag:draconic)(Tag:grimoire)(Tag:magic)(Tome) Dragon Cult rites teaching miracles that imitate the great dragons' power. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Cult+Incantations
 
 **Decision**
 
@@ -7016,7 +7136,7 @@
 
 **Description**
 
-> (Tech) A case of 20 Capsule Corp capsules holding a house, fridge, oven, large preserved food stores, boat, high-tech motorcycle, etc. Any slightly upgraded mundane appliance or vehicle counts as a capsule here. Restock Timer: 48 hours.
+> (Tag:building)(Tag:tech)(Tag:tool)(Tech) A case of 20 Capsule Corp capsules holding a house, fridge, oven, large preserved food stores, boat, high-tech motorcycle, etc. Any slightly upgraded mundane appliance or vehicle counts as a capsule here. Restock Timer: 48 hours.
 
 **Decision**
 
@@ -7050,7 +7170,7 @@
 
 **Description**
 
-> (Tome) A book of Clover Kingdom Spatial Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Spatial_Magic
+> (Tag:grimoire)(Tag:magic)(Tag:space)(Tome) A book of Clover Kingdom Spatial Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Spatial_Magic
 
 **Decision**
 
@@ -7067,7 +7187,7 @@
 
 **Description**
 
-> (Tome) A book of Clover Kingdom Lightning Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Lightning_Magic
+> (Tag:electric)(Tag:grimoire)(Tag:magic)(Tome) A book of Clover Kingdom Lightning Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Lightning_Magic
 
 **Decision**
 
@@ -7084,7 +7204,7 @@
 
 **Description**
 
-> (Tome) A book of Clover Kingdom Water Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Water_Magic
+> (Tag:grimoire)(Tag:magic)(Tag:water)(Tome) A book of Clover Kingdom Water Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Water_Magic
 
 **Decision**
 
@@ -7101,7 +7221,7 @@
 
 **Description**
 
-> (Tome) A book of Clover Kingdom Ice Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Ice_Magic
+> (Tag:grimoire)(Tag:ice)(Tag:magic)(Tome) A book of Clover Kingdom Ice Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Ice_Magic
 
 **Decision**
 
@@ -7118,7 +7238,7 @@
 
 **Description**
 
-> (Tome) A book of Clover Kingdom Darkness Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Dark_Magic
+> (Tag:dark)(Tag:grimoire)(Tag:magic)(Tag:space)(Tome) A book of Clover Kingdom Darkness Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Dark_Magic
 
 **Decision**
 
@@ -7135,7 +7255,7 @@
 
 **Description**
 
-> (Tome) A book of Clover Kingdom Light Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Light_Magic
+> (Tag:grimoire)(Tag:light)(Tag:magic)(Tome) A book of Clover Kingdom Light Magic secrets teaching its contained spells. Spell List: https://blackclover.fandom.com/wiki/Light_Magic
 
 **Decision**
 
@@ -7152,7 +7272,7 @@
 
 **Description**
 
-> A contract registering willing, informed signers in your gacha as familiars treatable like any other familiar. It fails if signed without knowing its function.
+> (Tag:command)(Tag:tool)A contract registering willing, informed signers in your gacha as familiars treatable like any other familiar. It fails if signed without knowing its function.
 
 **Decision**
 
@@ -7186,7 +7306,7 @@
 
 **Description**
 
-> A gigantic pure obsidian ball, 5 km in radius, always floating 100 meters above ground. It constantly emits a humming pitch audible from over 50 km away. That's all.
+> (Tag:building)A gigantic pure obsidian ball, 5 km in radius, always floating 100 meters above ground. It constantly emits a humming pitch audible from over 50 km away. That's all.
 
 **Decision**
 
@@ -7203,7 +7323,7 @@
 
 **Description**
 
-> A bottle of pink perfume amplifying your attractiveness to the opposite gender.
+> (Tag:social)(Tag:tool)A bottle of pink perfume amplifying your attractiveness to the opposite gender.
 
 **Decision**
 
@@ -7220,7 +7340,7 @@
 
 **Description**
 
-> A special everlasting-dragon-engraved ring for only the most accomplished Vinheim Dragon School sorcerers that boosts the wearer's magic strength.
+> (Tag:accessory)(Tag:magic+)A special everlasting-dragon-engraved ring for only the most accomplished Vinheim Dragon School sorcerers that boosts the wearer's magic strength.
 
 **Decision**
 
@@ -7237,7 +7357,7 @@
 
 **Description**
 
-> Princess Dusk of Oolacile's birth-gifted crown-shaped ring that converts a portion of vitality into energy/mana, increasing ability and spell potency.
+> (Tag:accessory)(Tag:magic+)Princess Dusk of Oolacile's birth-gifted crown-shaped ring that converts a portion of vitality into energy/mana, increasing ability and spell potency.
 
 **Decision**
 
@@ -7254,7 +7374,7 @@
 
 **Description**
 
-> A ring chiseled from flame-salamander bone by Great Swamp blighted Pyromancers that bolsters its wearer's flames, increasing fire ability and spell potency.
+> (Tag:accessory)(Tag:fire+)A ring chiseled from flame-salamander bone by Great Swamp blighted Pyromancers that bolsters its wearer's flames, increasing fire ability and spell potency.
 
 **Decision**
 
@@ -7271,7 +7391,7 @@
 
 **Description**
 
-> The Witch of Izalith and her daughters, scorched by the Flame of Chaos, offered this pyromancy-teaching ring to humans. It greatly bolsters its wearer's flames, increasing fire ability and spell potency.
+> (Tag:accessory)(Tag:fire+)The Witch of Izalith and her daughters, scorched by the Flame of Chaos, offered this pyromancy-teaching ring to humans. It greatly bolsters its wearer's flames, increasing fire ability and spell potency.
 
 **Decision**
 
@@ -7288,7 +7408,7 @@
 
 **Description**
 
-> A ring from a preacher twin, the Crystal Sages, to Farron's Undead Legion that eases learning and casting while worn, reducing spell energy costs.
+> (Tag:accessory)(Tag:magic+)A ring from a preacher twin, the Crystal Sages, to Farron's Undead Legion that eases learning and casting while worn, reducing spell energy costs.
 
 **Decision**
 
@@ -7305,7 +7425,7 @@
 
 **Description**
 
-> (Tech) A nuclear-armed bipedal tank modified for a human operator, armed with a high-power railgun, guided missile launchers, retractable flexible nanofiber HF blades, and independent sensory drones deploying explosives, flamethrowers, and high-caliber machine guns. Its depleted uranium armor can be enriched by its internal reactor and detonated as a nuclear explosion. Ammo and missiles restock every 24 hours, and it self-repairs via nanomachines.
+> (Tag:machine)(Tag:tech)(Tag:vehicle)(Tag:weapon)(Tech) A nuclear-armed bipedal tank modified for a human operator, armed with a high-power railgun, guided missile launchers, retractable flexible nanofiber HF blades, and independent sensory drones deploying explosives, flamethrowers, and high-caliber machine guns. Its depleted uranium armor can be enriched by its internal reactor and detonated as a nuclear explosion. Ammo and missiles restock every 24 hours, and it self-repairs via nanomachines.
 
 **Decision**
 
@@ -7322,7 +7442,7 @@
 
 **Description**
 
-> A Sacred Gear created by God manifesting as ornate rings that convert your energy into neutral healing energy for yourself or others, with potency scaling to energy expended.
+> (Tag:accessory)(Tag:bound)(Tag:health-recovery)(Tag:holy)A Sacred Gear created by God manifesting as ornate rings that convert your energy into neutral healing energy for yourself or others, with potency scaling to energy expended.
 
 **Decision**
 
@@ -7339,7 +7459,7 @@
 
 **Description**
 
-> A Sacred Gear created by God manifesting as glowing Magical Eyes that expend energy to increase gravity on any location or target in your line of sight. When taken from inventory, it appears as a marble that fuses with whoever swallows it.
+> (Tag:holy)A Sacred Gear created by God manifesting as glowing Magical Eyes that expend energy to increase gravity on any location or target in your line of sight. When taken from inventory, it appears as a marble that fuses with whoever swallows it.
 
 **Decision**
 
@@ -7356,7 +7476,7 @@
 
 **Description**
 
-> One of the Longinus created by God housing Ddraig's soul, the Heavenly Dragon of Domination. This gauntlet amplifies your stats by expending stamina, with higher boosts costing more stamina.
+> (Tag:armor)(Tag:bound)(Tag:draconic)(Tag:enhancer)(Tag:transformation)One of the Longinus created by God housing Ddraig's soul, the Heavenly Dragon of Domination. This gauntlet amplifies your stats by expending stamina, with higher boosts costing more stamina.
 
 **Decision**
 
@@ -7373,7 +7493,7 @@
 
 **Description**
 
-> One of the Longinus created by God housing Albion's soul, the Heavenly Dragon of Supremacy. These wings grant flight and divide enemies' magical power to replenish your own reserves, venting excess through the wings.
+> (Tag:armor)(Tag:bound)(Tag:draconic)(Tag:enhancer)(Tag:transformation)One of the Longinus created by God housing Albion's soul, the Heavenly Dragon of Supremacy. These wings grant flight and divide enemies' magical power to replenish your own reserves, venting excess through the wings.
 
 **Decision**
 
@@ -7390,7 +7510,7 @@
 
 **Description**
 
-> A sword carved from the profaned god's corpse that emits divine flame explosions on contact and releases holy flames by expending your energy. Holy and fire abilities are amplified when using it as a focus.
+> (Tag:blade)(Tag:fire)(Tag:fire+)(Tag:holy)(Tag:holy+)(Tag:weapon)A sword carved from the profaned god's corpse that emits divine flame explosions on contact and releases holy flames by expending your energy. Holy and fire abilities are amplified when using it as a focus.
 
 **Decision**
 
@@ -7407,7 +7527,7 @@
 
 **Description**
 
-> An unwieldy pair of hand-cannon pistols wielded by a certain vampire: white Casull and black Jackal. Each holds 6 rounds of 13mm blessed silver exploding rounds and requires supernatural strength to wield and fire without tearing your arms off. You receive 2 magazines every 24 hours.
+> (Tag:fire)An unwieldy pair of hand-cannon pistols wielded by a certain vampire: white Casull and black Jackal. Each holds 6 rounds of 13mm blessed silver exploding rounds and requires supernatural strength to wield and fire without tearing your arms off. You receive 2 magazines every 24 hours.
 
 **Decision**
 
@@ -7424,7 +7544,7 @@
 
 **Description**
 
-> A massive dull unwieldy sword larger than a man and supernaturally durable. Having bathed in the blood of countless spirits and astral beings, it can harm and kill the immaterial.
+> (Tag:anti-dragon)(Tag:blade)(Tag:draconic)(Tag:spirit)(Tag:weapon)A massive dull unwieldy sword larger than a man and supernaturally durable. Having bathed in the blood of countless spirits and astral beings, it can harm and kill the immaterial.
 
 **Decision**
 
@@ -7441,7 +7561,7 @@
 
 **Description**
 
-> (Tech) A true courier's loadout containing Elite Riot Gear, a fully modified Anti-Material Sniper Rifle, Riot Shotgun, .44 Magnum revolver, bowie knife, 5 repair kits, 10 stim packs, 5 doctor's bags, and 200 ammo for each weapon.
+> (Tag:armor)(Tag:consumable)(Tag:gun)(Tag:health-recovery)(Tag:tool)(Tag:weapon)(Tech) A true courier's loadout containing Elite Riot Gear, a fully modified Anti-Material Sniper Rifle, Riot Shotgun, .44 Magnum revolver, bowie knife, 5 repair kits, 10 stim packs, 5 doctor's bags, and 200 ammo for each weapon.
 
 **Decision**
 
@@ -7458,7 +7578,7 @@
 
 **Description**
 
-> (Tech) A large briefcase containing lightweight metal armour, a double-barrel shotgun with 20 packs of 20 shells, 4 basic repair kits, and 5 stim packs.
+> (Tag:armor)(Tag:consumable)(Tag:gun)(Tag:health-recovery)(Tag:tool)(Tag:weapon)(Tech) A large briefcase containing lightweight metal armour, a double-barrel shotgun with 20 packs of 20 shells, 4 basic repair kits, and 5 stim packs.
 
 **Decision**
 
@@ -7475,7 +7595,7 @@
 
 **Description**
 
-> (Tech) Chinese special-unit armour for infiltration and stealth with dense armour and mesh. It emits a light-bending forcefield that renders the user invisible.
+> (Tag:armor)(Tag:stealth)(Tag:tech)(Tech) Chinese special-unit armour for infiltration and stealth with dense armour and mesh. It emits a light-bending forcefield that renders the user invisible.
 
 **Decision**
 
@@ -7492,7 +7612,7 @@
 
 **Description**
 
-> An advanced prosthetic eye housing a miniature Tandem Engine that generates extreme artificial Qi to massively enhance all physical abilities. Overuse may cause strain.
+> (Tag:agility+)(Tag:defence+)(Tag:implant)(Tag:strength+)An advanced prosthetic eye housing a miniature Tandem Engine that generates extreme artificial Qi to massively enhance all physical abilities. Overuse may cause strain.
 
 **Decision**
 
@@ -7509,7 +7629,7 @@
 
 **Description**
 
-> A masterpiece sword once wielded by Kozuki Oden with a will of its own that releases the wielder's energy in bursts. Until tamed, it forcefully drains and constantly releases the user's energy.
+> (Tag:blade)(Tag:weapon)A masterpiece sword once wielded by Kozuki Oden with a will of its own that releases the wielder's energy in bursts. Until tamed, it forcefully drains and constantly releases the user's energy.
 
 **Decision**
 
@@ -7526,7 +7646,7 @@
 
 **Description**
 
-> A masterpiece sword once wielded by Ryuma, its blade permanently blackened from absorbing his hardening. It is nigh unbreakable, razor-sharp, and an excellent conductor of energy.
+> (Tag:blade)(Tag:buff+)(Tag:weapon)A masterpiece sword once wielded by Ryuma, its blade permanently blackened from absorbing his hardening. It is nigh unbreakable, razor-sharp, and an excellent conductor of energy.
 
 **Decision**
 
@@ -7543,7 +7663,7 @@
 
 **Description**
 
-> (Tech) A wrist-worn Personal Information Processor powered by an internal fission battery. It autonomously monitors your health, connects to networks, maps areas, shines light, and more.
+> (Tag:tech)(Tag:tool)(Tech) A wrist-worn Personal Information Processor powered by an internal fission battery. It autonomously monitors your health, connects to networks, maps areas, shines light, and more.
 
 **Decision**
 
@@ -7560,7 +7680,7 @@
 
 **Description**
 
-> (Tech) A pneumatic power fist that boosts punches to superhuman level. It offers little benefit to those already superhuman.
+> (Tag:fist)(Tag:tech)(Tag:weapon)(Tech) A pneumatic power fist that boosts punches to superhuman level. It offers little benefit to those already superhuman.
 
 **Decision**
 
@@ -7577,7 +7697,7 @@
 
 **Description**
 
-> A dagger carved from Rasaka's venomous fang, perpetually imbued with venom that paralyzes those it cuts and makes their wounds harder to heal.
+> (Tag:anti-recovery)(Tag:blade)(Tag:dagger)(Tag:poison)(Tag:weapon)A dagger carved from Rasaka's venomous fang, perpetually imbued with venom that paralyzes those it cuts and makes their wounds harder to heal.
 
 **Decision**
 
@@ -7594,7 +7714,7 @@
 
 **Description**
 
-> A pouch of refined Rasaka venom; ingesting it fully grants increased physical resistance at the cost of weakened muscles, which poison resistance can negate.
+> (Tag:consumable)(Tag:defence+)(Tag:elixir)(Tag:poison)A pouch of refined Rasaka venom; ingesting it fully grants increased physical resistance at the cost of weakened muscles, which poison resistance can negate.
 
 **Decision**
 
@@ -7611,7 +7731,7 @@
 
 **Description**
 
-> A large dagger built for heavily armoured opponents, dealing more damage against stronger armour.
+> (Tag:anti-armor)(Tag:blade)(Tag:dagger)(Tag:weapon)A large dagger built for heavily armoured opponents, dealing more damage against stronger armour.
 
 **Decision**
 
@@ -7628,7 +7748,7 @@
 
 **Description**
 
-> An extremely durable, sharp large dagger wielded by a frost elf chieftain. It increases the potency of ice and cold abilities using it as a focus.
+> (Tag:blade)(Tag:dagger)(Tag:ice)(Tag:ice+)(Tag:weapon)An extremely durable, sharp large dagger wielded by a frost elf chieftain. It increases the potency of ice and cold abilities using it as a focus.
 
 **Decision**
 
@@ -7645,7 +7765,7 @@
 
 **Description**
 
-> A pair of daggers forged from the demon king's corpse that synchronize with your strength, growing stronger proportionally. They increase the potency of unholy abilities using them as a focus.
+> (Tag:blade)(Tag:dagger)(Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:weapon)A pair of daggers forged from the demon king's corpse that synchronize with your strength, growing stronger proportionally. They increase the potency of unholy abilities using them as a focus.
 
 **Decision**
 
@@ -7662,7 +7782,7 @@
 
 **Description**
 
-> A giant sword wielded by the demon king that summons devastating thunderstorms with each swing, growing stronger with its user.
+> (Tag:blade)(Tag:electric)(Tag:electric+)(Tag:infernal)(Tag:infernal+)(Tag:weapon)A giant sword wielded by the demon king that summons devastating thunderstorms with each swing, growing stronger with its user.
 
 **Decision**
 
@@ -7679,7 +7799,7 @@
 
 **Description**
 
-> A pair of daggers made from the dragon Kamish, nigh unbreakable and sharper than any manmade blade. They synchronize with your mana to adjust strength, and you can increase their weight at will.
+> (Tag:blade)(Tag:dagger)(Tag:draconic)(Tag:weapon)A pair of daggers made from the dragon Kamish, nigh unbreakable and sharper than any artificial blade. They synchronize with your mana to adjust strength, and you can increase their weight at will.
 
 **Decision**
 
@@ -7696,7 +7816,7 @@
 
 **Description**
 
-> An ornate platinum amulet that teleports the wearer anywhere they can see, with a 1-minute cooldown.
+> (Tag:accessory)(Tag:movement)An ornate platinum amulet that teleports the wearer anywhere they can see, with a 1-minute cooldown.
 
 **Decision**
 
@@ -7713,7 +7833,7 @@
 
 **Description**
 
-> A holy crucifix blessed by a divine spirit whose presence immensely weakens unholy and dark beings and instantly kills weaker ones. Holy or light abilities channelled through it gain potency.
+> (Tag:catalyst)(Tag:holy+)(Tag:light+)A holy crucifix blessed by a divine spirit whose presence immensely weakens unholy and dark beings and instantly kills weaker ones. Holy or light abilities channelled through it gain potency.
 
 **Decision**
 
@@ -7730,7 +7850,7 @@
 
 **Description**
 
-> (Tech) A neural implant for two-way communication with one target at a time within your perception. It manifests as a ticket that automatically installs itself when torn.
+> (Tag:implant)(Tag:mental)(Tag:tech)(Tech) A neural implant for two-way communication with one target at a time within your perception. It manifests as a ticket that automatically installs itself when torn.
 
 **Decision**
 
@@ -7747,7 +7867,7 @@
 
 **Description**
 
-> (Tech) A ticket that transfers you to a mechanical Ripperdoc's clinic to install Cyberpunk 2077 implants or ones you bring, for the right price. His top-quality wares are expensive and may require bartering. You return upon leaving, can spend only 24 hours inside, and Restock Timer: 15 Days.
+> (Tag:implant)(Tag:tech)(Tag:ticket)(Tech) A ticket that transfers you to a mechanical Ripperdoc's clinic to install Cyberpunk 2077 implants or ones you bring, for the right price. His top-quality wares are expensive and may require bartering. You return upon leaving, can spend only 24 hours inside, and Restock Timer: 15 Days.
 
 **Decision**
 
@@ -7764,7 +7884,7 @@
 
 **Description**
 
-> A golden amulet with jade engraved as a 4-leaf clover that grants good luck.
+> (Tag:accessory)(Tag:luck+)A golden amulet with jade engraved as a 4-leaf clover that grants good luck.
 
 **Decision**
 
@@ -7781,7 +7901,7 @@
 
 **Description**
 
-> A vial of powerful holy antidote that cures all diseases and ailments below Legendary rank. Restock Timer: 7 Days.
+> (Tag:holy)A vial of powerful holy antidote that cures all diseases and ailments below Legendary rank. Restock Timer: 7 Days.
 
 **Decision**
 
@@ -7798,7 +7918,7 @@
 
 **Description**
 
-> (Tech) A cybernetic spine replacement that massively heightens time perception, slowing time around you while taxing your brain; overuse may cause brain damage. It manifests as a ticket installed instantly on whoever rips it.
+> (Tag:implant)(Tag:perception+)(Tag:tech)(Tech) A cybernetic spine replacement that massively heightens time perception, slowing time around you while taxing your brain; overuse may cause brain damage. It manifests as a ticket installed instantly on whoever rips it.
 
 **Decision**
 
@@ -7815,7 +7935,7 @@
 
 **Description**
 
-> (Tech) A mobile phone that connects to networks regardless of distance, with vast storage, an aeon-grade firewall, and supercomputer-surpassing processing power.
+> (Tag:tech)(Tag:tool)(Tech) A mobile phone that connects to networks regardless of distance, with vast storage, an aeon-grade firewall, and supercomputer-surpassing processing power.
 
 **Decision**
 
@@ -7832,7 +7952,7 @@
 
 **Description**
 
-> A round crystalline pearl of spatial energy that teleports the thrower to where it breaks. Restock Timer: 8 hours.
+> (Tag:consumable)(Tag:movement)A round crystalline pearl of spatial energy that teleports the thrower to where it breaks. Restock Timer: 8 hours.
 
 **Decision**
 
@@ -7849,7 +7969,7 @@
 
 **Description**
 
-> A character card granting yourself or another Wolverine's full healing factor for 10 minutes. 3 uses.
+> (Tag:card)(Tag:consumable)(Tag:health-regeneration+)A character card granting yourself or another Wolverine's full healing factor for 10 minutes. 3 uses.
 
 **Decision**
 
@@ -7866,7 +7986,7 @@
 
 **Description**
 
-> Think of the person you want to affect and rip the ticket to make them like you slightly more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+> (Tag:mental)(Tag:social)(Tag:ticket)(Noncon) Think of the person you want to affect and rip the ticket to make them like you slightly more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 
 **Decision**
 
@@ -7883,7 +8003,7 @@
 
 **Description**
 
-> Think of the person you want to affect and rip the ticket to make them like you more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+> (Tag:mental)(Tag:social)(Tag:ticket)(Noncon) Think of the person you want to affect and rip the ticket to make them like you more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 
 **Decision**
 
@@ -7900,7 +8020,7 @@
 
 **Description**
 
-> Think of the person you want to affect and rip the ticket to make them like you a lot more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+> (Tag:mental)(Tag:social)(Tag:ticket)(Noncon) Think of the person you want to affect and rip the ticket to make them like you a lot more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 
 **Decision**
 
@@ -7917,7 +8037,7 @@
 
 **Description**
 
-> Think of the person you want to affect and rip the ticket to make them like you considerably more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+> (Tag:mental)(Tag:social)(Tag:ticket)(Noncon) Think of the person you want to affect and rip the ticket to make them like you considerably more. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 
 **Decision**
 
@@ -7934,7 +8054,7 @@
 
 **Description**
 
-> Think of the person you want to affect and rip the ticket to make them fall in love with you. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
+> (Tag:mental)(Tag:social)(Tag:ticket)(Noncon) Think of the person you want to affect and rip the ticket to make them fall in love with you. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 
 **Decision**
 
@@ -7951,7 +8071,7 @@
 
 **Description**
 
-> (Tech) An autonomous advanced doctor station from Big MT. created by Doctor Mobius. This large capsule performs even the most complicated procedures with near-perfect expertise from simple instructions when hooked to sufficient power.
+> (Tag:health-recovery)(Tag:machine)(Tag:tech)(Tech) An autonomous advanced doctor station from Big MT. created by Doctor Mobius. This large capsule performs even the most complicated procedures with near-perfect expertise from simple instructions when hooked to sufficient power.
 
 **Decision**
 
@@ -7968,7 +8088,7 @@
 
 **Description**
 
-> (Tech) An advanced flamethrower spewing Plague Nanomachine clouds that seek flesh and devour it from the inside out. The nanomachines disintegrate after a few seconds as a safety precaution.
+> (Tag:bio)(Tag:gun)(Tag:poison)(Tag:tech)(Tag:weapon)(Tech) An advanced flamethrower spewing Plague Nanomachine clouds that seek flesh and devour it from the inside out. The nanomachines disintegrate after a few seconds as a safety precaution.
 
 **Decision**
 
@@ -7985,7 +8105,7 @@
 
 **Description**
 
-> (Tech) A modified flamethrower converting regular burnable fuel into corrupted flames that rapidly rot whatever they burn.
+> (Tag:fire)(Tag:gun)(Tag:necro)(Tag:tech)(Tech) A modified flamethrower converting regular burnable fuel into corrupted flames that rapidly rot whatever they burn.
 
 **Decision**
 
@@ -8002,7 +8122,7 @@
 
 **Description**
 
-> A divine bow crafted from earth and cosmos essences that converts any nocked arrow into exotic resonance crystals. They summon resonant lightning where they strike, powerful enough to flay gods alive and rend the surface world.
+> (Tag:air)(Tag:bow)(Tag:electric)(Tag:holy)(Tag:weapon)A divine bow crafted from earth and cosmos essences that converts any nocked arrow into exotic resonance crystals. They summon resonant lightning where they strike, powerful enough to flay gods alive and rend the surface world.
 
 **Decision**
 
@@ -8019,7 +8139,7 @@
 
 **Description**
 
-> A bow crafted from the profaned goddess's remains that converts any nocked arrow into powerful scorching bolts of divine holy flame powered by your energy.
+> (Tag:air)(Tag:bow)(Tag:fire)(Tag:holy)(Tag:weapon)A bow crafted from the profaned goddess's remains that converts any nocked arrow into powerful scorching bolts of divine holy flame powered by your energy.
 
 **Decision**
 
@@ -8036,7 +8156,7 @@
 
 **Description**
 
-> A bow carved from the storm weaver's remains that converts any nocked arrow into a lightning bolt scaling with its wielder's power.
+> (Tag:bow)(Tag:electric)(Tag:weapon)A bow carved from the storm weaver's remains that converts any nocked arrow into a lightning bolt scaling with its wielder's power.
 
 **Decision**
 
@@ -8053,7 +8173,7 @@
 
 **Description**
 
-> A mystical bow made from the frozen castle's essence that turns any nocked arrow into freezing mist scaling with its wielder's power.
+> (Tag:bow)(Tag:ice)(Tag:weapon)A mystical bow made from the frozen castle's essence that turns any nocked arrow into freezing mist scaling with its wielder's power.
 
 **Decision**
 
@@ -8070,7 +8190,7 @@
 
 **Description**
 
-> A bow crafted from the natural world's elements that converts your energy into energy arrows to fire.
+> (Tag:bow)(Tag:weapon)A bow crafted from the natural world's elements that converts your energy into energy arrows to fire.
 
 **Decision**
 
@@ -8087,7 +8207,7 @@
 
 **Description**
 
-> Placing this feather on a corpse whose soul still exists and is not blocked by Legendary rank or higher resurrection prevention revives them, consuming the feather. Restock Timer: 720 hours.
+> (Tag:avian)(Tag:consumable)(Tag:health-recovery)(Tag:life)Placing this feather on a corpse whose soul still exists and is not blocked by Legendary rank or higher resurrection prevention revives them, consuming the feather. Restock Timer: 720 hours.
 
 **Decision**
 
@@ -8104,7 +8224,7 @@
 
 **Description**
 
-> A large jar of evil black goop that summons loyal lesser Grimm once it lands on a stable surface.
+> (Tag:dark)(Tag:summon)A large jar of evil black goop that summons loyal lesser Grimm once it lands on a stable surface.
 
 **Decision**
 
@@ -8121,7 +8241,7 @@
 
 **Description**
 
-> An ornate meteorite arrow from outer space; those stabbed either slowly succumb to severe fever or, with enough willpower and potential, awaken a Stand (Roll a Platinum Ticket to decide which Stand gets awakened in the target.).
+> (Tag:meta)(Tag:spirit)(Tag:tool)An ornate meteorite arrow from outer space; those stabbed either slowly succumb to severe fever or, with enough willpower and potential, awaken a Stand (Roll a Platinum Ticket to decide which Stand gets awakened in the target.).
 
 **Decision**
 
@@ -8138,7 +8258,7 @@
 
 **Description**
 
-> Wolverine's Adamantium-bonded skeleton, virtually unbreakable albeit short, with all genetic material scrubbed so no Wolverine will regenerate from it.
+> (Tag:bio)(Tag:earth)(Tag:material)Wolverine's Adamantium-bonded skeleton, virtually unbreakable albeit short, with all genetic material scrubbed so no Wolverine will regenerate from it.
 
 **Decision**
 
@@ -8155,7 +8275,7 @@
 
 **Description**
 
-> (Tech) Senator Armstrong's high-tech nanomachine heart. Implanted, it massively enhances your physiology, absorbs other nanomachines, drains electricity to charge, and hardens against physical trauma or on command.
+> (Tag:electric)(Tag:enhancer)(Tag:implant)(Tag:tech)(Tech) Senator Armstrong's high-tech nanomachine heart. Implanted, it massively enhances your physiology, absorbs other nanomachines, drains electricity to charge, and hardens against physical trauma or on command.
 
 **Decision**
 
@@ -8172,7 +8292,7 @@
 
 **Description**
 
-> Danzo's right arm in mint condition, made of Hashirama cells and implanted with 10 Sharingans. Implant it for Sharingan and Hashirama cell benefits, or dismantle it to use all parts separately.
+> (Tag:bio)(Tag:illusion)(Tag:implant)(Tag:perception+)Danzo's right arm in mint condition, made of Hashirama cells and implanted with 10 Sharingans. Implant it for Sharingan and Hashirama cell benefits, or dismantle it to use all parts separately.
 
 **Decision**
 
@@ -8189,7 +8309,7 @@
 
 **Description**
 
-> A vial of Hashirama Senju's living cells; if successfully implanted, they considerably increase vitality and energy reserves and grant considerable passive regeneration that consumes energy.
+> (Tag:bio)(Tag:health-regeneration+)(Tag:implant)(Tag:maximum-energy+)(Tag:nature)(Tag:vitality+)A vial of Hashirama Senju's living cells; if successfully implanted, they considerably increase vitality and energy reserves and grant considerable passive regeneration that consumes energy.
 
 **Decision**
 
@@ -8206,7 +8326,7 @@
 
 **Description**
 
-> A pair of Rinnegan plucked from Nagato in preserving fluid, surgically implantable in yourself or others to gain their abilities. They require vast energy to handle.
+> (Tag:bio)(Tag:implant)A pair of Rinnegan plucked from Nagato in preserving fluid, surgically implantable in yourself or others to gain their abilities. They require vast energy to handle.
 
 **Decision**
 
@@ -8223,7 +8343,7 @@
 
 **Description**
 
-> (Tome) A large scroll recording all Fire Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+> (Tag:fire)(Tag:grimoire)(Tag:magic)(Tome) A large scroll recording all Fire Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 
 **Decision**
 
@@ -8240,7 +8360,7 @@
 
 **Description**
 
-> (Tome) A large scroll recording all Water Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+> (Tag:grimoire)(Tag:magic)(Tag:water)(Tome) A large scroll recording all Water Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 
 **Decision**
 
@@ -8257,7 +8377,7 @@
 
 **Description**
 
-> (Tome) A large scroll recording all Wind Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+> (Tag:air)(Tag:grimoire)(Tag:magic)(Tome) A large scroll recording all Wind Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 
 **Decision**
 
@@ -8274,7 +8394,7 @@
 
 **Description**
 
-> (Tome) A large scroll recording all Earth Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+> (Tag:earth)(Tag:grimoire)(Tag:magic)(Tome) A large scroll recording all Earth Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 
 **Decision**
 
@@ -8291,7 +8411,7 @@
 
 **Description**
 
-> (Tome) A large scroll recording all Lightning Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
+> (Tag:electric)(Tag:grimoire)(Tag:magic)(Tome) A large scroll recording all Lightning Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 
 **Decision**
 
@@ -8308,7 +8428,7 @@
 
 **Description**
 
-> (Tech) Pre-Great War mass-produced power armour that shrugs off low-calibre bullets and lets an average man lift a car overhead. Powered by a fusion core replaced with a new one every 24 hours.
+> (Tag:armor)(Tag:tech)(Tech) Pre-Great War mass-produced power armour that shrugs off low-calibre bullets and lets an average man lift a car overhead. Powered by a fusion core replaced with a new one every 24 hours.
 
 **Decision**
 
@@ -8325,7 +8445,7 @@
 
 **Description**
 
-> (Tech) A ticket transporting you to robotic surgeons for a perfected Transhuman Astartes creation procedure, granting Astartes augments without downsides. It will not affect your looks or body shape.
+> (Tag:growing)(Tag:meta)(Tag:nature)(Tag:ticket)(Tech) A ticket transporting you to robotic surgeons for a perfected Transhuman Astartes creation procedure, granting Astartes augments without downsides. It will not affect your looks or body shape.
 
 **Decision**
 
@@ -8342,7 +8462,7 @@
 
 **Description**
 
-> The blind demon's cool shades that let you tell when someone speaking to you thinks they are lying.
+> (Tag:accessory)(Tag:divination)The blind demon's cool shades that let you tell when someone speaking to you thinks they are lying.
 
 **Decision**
 
@@ -8359,7 +8479,7 @@
 
 **Description**
 
-> (Tech) A standard Stormtrooper rifle firing high-heat bolts that kill average light-armoured targets in one shot and blast concrete. It has Lethal, Stun, and Sting settings with a 500-shot cartridge, replaced daily.
+> (Tag:gun)(Tag:tech)(Tag:weapon)(Tech) A standard Stormtrooper rifle firing high-heat bolts that kill average light-armoured targets in one shot and blast concrete. It has Lethal, Stun, and Sting settings with a 500-shot cartridge, replaced daily.
 
 **Decision**
 
@@ -8376,7 +8496,7 @@
 
 **Description**
 
-> Brook's cane sword, extremely sharp, durable, and undulled after years of use. It is also extremely dapper.
+> (Tag:spirit)Brook's cane sword, extremely sharp, durable, and undulled after years of use. It is also extremely dapper.
 
 **Decision**
 
@@ -8410,7 +8530,7 @@
 
 **Description**
 
-> A basic cursed short-sword tool, sharp and durable, able to interact with and harm spiritual beings.
+> (Tag:blade)(Tag:dagger)(Tag:spirit)(Tag:weapon)A basic cursed short-sword tool, sharp and durable, able to interact with and harm spiritual beings.
 
 **Decision**
 
@@ -8427,7 +8547,7 @@
 
 **Description**
 
-> A powerful cursed large broadsword that ignores durability to cut physical matter and strike the soul directly, inflicting wounds unhealable by normal means.
+> (Tag:blade)(Tag:spirit)(Tag:weapon)A powerful cursed large broadsword that ignores durability to cut physical matter and strike the soul directly, inflicting wounds unhealable by normal means.
 
 **Decision**
 
@@ -8444,7 +8564,7 @@
 
 **Description**
 
-> Enchanted golden powder; spreading the entire bag over a weapon restores durability and repairs damage if still in one piece. Stronger or more magical items need more powder. Restock Timer: 12 hours.
+> (Tag:consumable)Enchanted golden powder; spreading the entire bag over a weapon restores durability and repairs damage if still in one piece. Stronger or more magical items need more powder. Restock Timer: 12 hours.
 
 **Decision**
 
@@ -8461,7 +8581,7 @@
 
 **Description**
 
-> A workshop hunter weapon with a cane form sharp enough to hurt beasts. Its trick form splits into numerous blades forming a whip that rends and shreds flesh at range.
+> (Tag:blade)(Tag:bludgeon)(Tag:flexible)(Tag:weapon)A workshop hunter weapon with a cane form sharp enough to hurt beasts. Its trick form splits into numerous blades forming a whip that rends and shreds flesh at range.
 
 **Decision**
 
@@ -8478,7 +8598,7 @@
 
 **Description**
 
-> An exceptional, incredibly durable katana wielded by Annalise's royal Vileblood guards. Its engraved runes let you sink the blade into your flesh to imbue it with vital essence and amplify its power. While wielding it, all Necromancy and Blood-based abilities are amplified.
+> (Tag:blade)(Tag:life+)(Tag:weapon)An exceptional, incredibly durable katana wielded by Annalise's royal Vileblood guards. Its engraved runes let you sink the blade into your flesh to imbue it with vital essence and amplify its power. While wielding it, all Necromancy and Blood-based abilities are amplified.
 
 **Decision**
 
@@ -8495,7 +8615,7 @@
 
 **Description**
 
-> An ancient sword wielded by Ludwig that expends your energy to channel the abyssal cosmos and wreathe itself in moonlight for amplified power. You can expel the moonlight for stronger strikes, release energy bursts, or channel your own powers through it for boosted power.
+> (Tag:blade)(Tag:holy)(Tag:power+)(Tag:spirit)(Tag:weapon)An ancient sword wielded by Ludwig that expends your energy to channel the abyssal cosmos and wreathe itself in moonlight for amplified power. You can expel the moonlight for stronger strikes, release energy bursts, or channel your own powers through it for boosted power.
 
 **Decision**
 
@@ -8512,7 +8632,7 @@
 
 **Description**
 
-> A refined Cainhurst knight weapon combining rapier and gun without compromise. It transforms into a bayonet to amplify the gun, and you can convert your blood into quicksilver bullets to feed it.
+> (Tag:blade)(Tag:gun)(Tag:weapon)A refined Cainhurst knight weapon combining rapier and gun without compromise. It transforms into a bayonet to amplify the gun, and you can convert your blood into quicksilver bullets to feed it.
 
 **Decision**
 
@@ -8529,7 +8649,7 @@
 
 **Description**
 
-> An iconic hunter weapon transforming between long cleaver and serrated saw. It grows stronger against more beastlike opponents.
+> (Tag:anti-beast)(Tag:blade)(Tag:weapon)An iconic hunter weapon transforming between long cleaver and serrated saw. It grows stronger against more beastlike opponents.
 
 **Decision**
 
@@ -8546,7 +8666,7 @@
 
 **Description**
 
-> A simple bottle containing infinite slimy lotion, squeezable manually. Tampering with the bottle breaks it.
+> (Tag:tool)A simple bottle containing infinite slimy lotion, squeezable manually. Tampering with the bottle breaks it.
 
 **Decision**
 
@@ -8563,7 +8683,7 @@
 
 **Description**
 
-> Son Goku the Saiyan's incredibly durable Bo Staff, freely extendable in length by expending your energy.
+> (Tag:bludgeon)(Tag:polearm)(Tag:weapon)Son Goku the Saiyan's incredibly durable Bo Staff, freely extendable in length by expending your energy.
 
 **Decision**
 
@@ -8580,7 +8700,7 @@
 
 **Description**
 
-> An oversized cleaver curved sword of the Seven Swordsmen of the Mist, incredibly durable and energy-conductive. However damaged, it repairs itself by absorbing blood.
+> (Tag:blade)(Tag:weapon)An oversized cleaver curved sword of the Seven Swordsmen of the Mist, incredibly durable and energy-conductive. However damaged, it repairs itself by absorbing blood.
 
 **Decision**
 
@@ -8597,7 +8717,7 @@
 
 **Description**
 
-> (Tech) A heavy-duty powerful Malorian Arms double-action revolver that punches through half-borgs with each bullet. You get 30 bullets daily.
+> (Tag:gun)(Tag:tech)(Tech) A heavy-duty powerful Malorian Arms double-action revolver that punches through half-borgs with each bullet. You get 30 bullets daily.
 
 **Decision**
 
@@ -8614,7 +8734,7 @@
 
 **Description**
 
-> A land deed; rip it in half to have always owned land in a location favourable to you.
+> (Tag:ticket)A land deed; rip it in half to have always owned land in a location favourable to you.
 
 **Decision**
 
@@ -8631,7 +8751,7 @@
 
 **Description**
 
-> A mansion deed; rip it in half to have always owned a lavish mansion maintained by an unseen, uninteractable Schrödinger crew.
+> (Tag:ticket)A mansion deed; rip it in half to have always owned a lavish mansion maintained by an unseen, uninteractable Schrödinger crew.
 
 **Decision**
 
@@ -8648,7 +8768,7 @@
 
 **Description**
 
-> Opens a door to an automaton-maintained jail block where occupants cannot use abilities or a portion thereof unless allowed by you or your appointed warden, reduced to mundane human output unless specified otherwise. Occupants heal slowly and receive 3 meals daily from automatons.
+> (Tag:dimension)Opens a door to an automaton-maintained jail block where occupants cannot use abilities or a portion thereof unless allowed by you or your appointed warden, reduced to mundane human output unless specified otherwise. Occupants heal slowly and receive 3 meals daily from automatons.
 
 **Flagged in reports**
 
@@ -8669,7 +8789,7 @@
 
 **Description**
 
-> 500 generic non-brand cigarettes for taking the edge off.
+> (Tag:mundane)500 generic non-brand cigarettes for taking the edge off.
 
 **Decision**
 
@@ -8686,7 +8806,7 @@
 
 **Description**
 
-> (Tech) Maxwell Tennyson's large cozy RV repeatedly upgraded with Plumber Technology. An effective mobile home that flies and carries numerous offense and defense systems.
+> (Tag:tech)(Tag:vehicle)(Tech) Maxwell Tennyson's large cozy RV repeatedly upgraded with Plumber Technology. An effective mobile home that flies and carries numerous offense and defense systems.
 
 **Decision**
 
@@ -8703,7 +8823,7 @@
 
 **Description**
 
-> (Tech) A Transformer's being; imbue it into any sufficiently large technology to turn it into a Transformer registered as a familiar.
+> (Tag:summon)(Tag:tech)(Tag:transformation)(Tech) A Transformer's being; imbue it into any sufficiently large technology to turn it into a Transformer registered as a familiar.
 
 **Decision**
 
@@ -8720,7 +8840,7 @@
 
 **Description**
 
-> A small book-like magic item that changes your clothing's color scheme by sliding your finger over it.
+> (Tag:illusion)(Tag:tool)A small book-like magic item that changes your clothing's color scheme by sliding your finger over it.
 
 **Decision**
 
@@ -8737,7 +8857,7 @@
 
 **Description**
 
-> Magical spectacles letting you read any held book 64x faster without losing comprehension.
+> (Tag:accessory)(Tag:air)(Tag:mental)Magical spectacles letting you read any held book 64x faster without losing comprehension.
 
 **Decision**
 
@@ -8754,7 +8874,7 @@
 
 **Description**
 
-> (Tech) An indestructible music player with excellent sound, built-in speakers and headphones. It plays any song the holder has heard and archives it.
+> (Tag:tech)(Tag:tool)(Tech) An indestructible music player with excellent sound, built-in speakers and headphones. It plays any song the holder has heard and archives it.
 
 **Decision**
 
@@ -8771,7 +8891,7 @@
 
 **Description**
 
-> A sealed sword imbued with extremely uncontrollable magical power that unleashes a slash cutting several city blocks at minimum when unsheathed. Keep it sheathed.
+> (Tag:blade)(Tag:weapon)A sealed sword imbued with extremely uncontrollable magical power that unleashes a slash cutting several city blocks at minimum when unsheathed. Keep it sheathed.
 
 **Decision**
 
@@ -8788,7 +8908,7 @@
 
 **Description**
 
-> (Tome) A magical ticket granting a grimoire of a chosen Fairy Tail magic branch upon ripping. Excludes Lost, Ancient, Time, Space, Dragonslayer, Archive, or any magic above Elite tier; the chosen category becomes a studyable Grimoire.
+> (Tag:grimoire)(Tag:magic)(Tag:ticket)(Tome) A magical ticket granting a grimoire of a chosen Fairy Tail magic branch upon ripping. Excludes Lost, Ancient, Time, Space, Dragonslayer, Archive, or any magic above Elite tier; the chosen category becomes a studyable Grimoire.
 
 **Decision**
 
@@ -8805,7 +8925,7 @@
 
 **Description**
 
-> (Tech) An industrial vat of Forced Evolutionary Virus turning any dropped-in human into a Super Mutant. Dropped-in animals gain increased abilities or die.
+> (Tag:bio)(Tag:tech)(Tag:transformation)(Tech) An industrial vat of Forced Evolutionary Virus turning any dropped-in human into a Super Mutant. Dropped-in animals gain increased abilities or die.
 
 **Decision**
 
@@ -8822,7 +8942,7 @@
 
 **Description**
 
-> (Tech) A handheld projector opening portals to the Null Void or banishing whatever it hits there, requiring recharge between shots. Incapacitating someone via the Null Void grants no feat.
+> (Tag:movement)(Tag:space)(Tag:tech)(Tag:tool)(Tech) A handheld projector opening portals to the Null Void or banishing whatever it hits there, requiring recharge between shots. Incapacitating someone via the Null Void grants no feat.
 
 **Decision**
 
@@ -8839,7 +8959,7 @@
 
 **Description**
 
-> (Tome) A tome compiling Skyrim's destruction spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Destruction_(Skyrim)
+> (Tag:electric)(Tag:fire)(Tag:grimoire)(Tag:ice)(Tag:magic)(Tome) A tome compiling Skyrim's destruction spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Destruction_(Skyrim)
 
 **Decision**
 
@@ -8856,7 +8976,7 @@
 
 **Description**
 
-> (Tome) A tome compiling Skyrim's restoration spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Restoration_(Skyrim)
+> (Tag:grimoire)(Tag:health-recovery)(Tag:magic)(Tome) A tome compiling Skyrim's restoration spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Restoration_(Skyrim)
 
 **Decision**
 
@@ -8873,7 +8993,7 @@
 
 **Description**
 
-> (Tome) A tome compiling Skyrim's conjuration spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Conjuration_(Skyrim)
+> (Tag:grimoire)(Tag:magic)(Tag:summon)(Tome) A tome compiling Skyrim's conjuration spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Conjuration_(Skyrim)
 
 **Decision**
 
@@ -8890,7 +9010,7 @@
 
 **Description**
 
-> (Tome) A tome compiling Skyrim's alteration spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Alteration_(Skyrim)
+> (Tag:enhancer)(Tag:grimoire)(Tag:magic)(Tag:transformation)(Tome) A tome compiling Skyrim's alteration spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Alteration_(Skyrim)
 
 **Decision**
 
@@ -8907,7 +9027,7 @@
 
 **Description**
 
-> (Tome) A tome compiling Skyrim's illusion spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Illusion_(Skyrim)
+> (Tag:grimoire)(Tag:illusion)(Tag:magic)(Tome) A tome compiling Skyrim's illusion spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Illusion_(Skyrim)
 
 **Decision**
 
@@ -8924,7 +9044,7 @@
 
 **Description**
 
-> A pair of magical earrings worn one each by two beings to permanently fuse them into one entity with the sum of their powers and abilities.
+> (Tag:accessory)(Tag:transformation)A pair of magical earrings worn one each by two beings to permanently fuse them into one entity with the sum of their powers and abilities.
 
 **Decision**
 
@@ -8941,7 +9061,7 @@
 
 **Description**
 
-> A mythical Mount Olympus metal deadly to magical or mythical beings yet harmless to the mundane, passing through them. You get 3 10 kg bars; Restock Timer: 24 hours.
+> (Tag:material)(Tag:spirit)A mythical Mount Olympus metal deadly to magical or mythical beings yet harmless to the mundane, passing through them. You get 3 10 kg bars; Restock Timer: 24 hours.
 
 **Decision**
 
@@ -8958,7 +9078,7 @@
 
 **Description**
 
-> A River Styx metal that destroys or absorbs the essences of those it kills, extremely durable and amplifying darkness, necromancy, and infernal abilities. You get 3 10 kg bars; Restock Timer: 24 hours.
+> (Tag:dark)(Tag:infernal)(Tag:material)(Tag:necro)A River Styx metal that destroys or absorbs the essences of those it kills, extremely durable and amplifying darkness, necromancy, and infernal abilities. You get 3 10 kg bars; Restock Timer: 24 hours.
 
 **Decision**
 
@@ -8975,7 +9095,7 @@
 
 **Description**
 
-> Mephala's Daedric Artifact: an indestructible sharp katana absorbing slain victims' vitality to heal you and silencing those it strikes against casting magic. It is strengthened by slaying those who consider you a friend.
+> (Tag:anti-magic)(Tag:blade)(Tag:growing)(Tag:health-recovery)(Tag:necro)(Tag:weapon)Mephala's Daedric Artifact: an indestructible sharp katana absorbing slain victims' vitality to heal you and silencing those it strikes against casting magic. It is strengthened by slaying those who consider you a friend.
 
 **Decision**
 
@@ -8992,7 +9112,7 @@
 
 **Description**
 
-> The ultimate divine anti-evil blade forged by Odin, Ra, and Rama, usable only by the righteous and good. Completely unbreakable and incredibly sharp, reinforced by your spirit, it vaporizes parts of darkness or infernal creatures it damages. It massively amplifies holy and light abilities as a focus.
+> (Tag:anti-dark)(Tag:anti-infernal)(Tag:blade)(Tag:holy)(Tag:holy+)(Tag:light+)(Tag:weapon)The ultimate divine anti-evil blade forged by Odin, Ra, and Rama, usable only by the righteous and good. Completely unbreakable and incredibly sharp, reinforced by your spirit, it vaporizes parts of darkness or infernal creatures it damages. It massively amplifies holy and light abilities as a focus.
 
 **Decision**
 
@@ -9009,7 +9129,7 @@
 
 **Description**
 
-> A stopwatch stopping the universe's time around the user, often employed by Ugly Bastards or people whose hair obscures their eyes.
+> (Tag:time)(Tag:tool)A stopwatch stopping the universe's time around the user, often employed by Ugly Bastards or people whose hair obscures their eyes.
 
 **Flagged in reports**
 
@@ -9030,7 +9150,7 @@
 
 **Description**
 
-> (Tech) A portal gun from one of the multiverse's smartest yet stupidest and drunkest inventors, opening portals to any non-spatial-blocked location including other universes if you know coordinates or specifications. Portal fluid refills every 24 hours.
+> (Tag:movement)(Tag:tech)(Tag:tool)(Tech) A portal gun from one of the multiverse's smartest yet stupidest and drunkest inventors, opening portals to any non-spatial-blocked location including other universes if you know coordinates or specifications. Portal fluid refills every 24 hours.
 
 **Decision**
 
@@ -9047,7 +9167,7 @@
 
 **Description**
 
-> This golden ruby ring grants increased strength and endurance, half flat boost and half percentage boost.
+> (Tag:accessory)(Tag:defence+)(Tag:strength+)This golden ruby ring grants increased strength and endurance, half flat boost and half percentage boost.
 
 **Decision**
 
@@ -9064,7 +9184,7 @@
 
 **Description**
 
-> The Poseidon demigod's Celestial Bronze sword, exceptionally durable and sharp yet unable to harm the mundane. It switches between pen and sword at will and boosts water affinity as a focus.
+> (Tag:blade)(Tag:tool)(Tag:water)(Tag:water+)(Tag:weapon)The Poseidon demigod's Celestial Bronze sword, exceptionally durable and sharp yet unable to harm the mundane. It switches between pen and sword at will and boosts water affinity as a focus.
 
 **Decision**
 
@@ -9081,7 +9201,7 @@
 
 **Description**
 
-> Hades' ornate helmet granting complete invisibility to all senses, wall-phasing, and shadow-melting, plus a primordial fear aura. Its abilities consume your energy.
+> (Tag:armor)(Tag:dark)(Tag:movement)(Tag:stealth)Hades' ornate helmet granting complete invisibility to all senses, wall-phasing, and shadow-melting, plus a primordial fear aura. Its abilities consume your energy.
 
 **Decision**
 
@@ -9098,7 +9218,7 @@
 
 **Description**
 
-> A gravity-enhanced dimension for training or hideout with 3-to-1 time dilation: three days inside equal one outside. Access it from any door you place your hands on.
+> (Tag:dimension)(Tag:gravity)(Tag:time)A gravity-enhanced dimension for training or hideout with 3-to-1 time dilation: three days inside equal one outside. Access it from any door you place your hands on.
 
 **Decision**
 
@@ -9115,7 +9235,7 @@
 
 **Description**
 
-> A ticket for any one mundane cold weapon; tear it and think of the weapon to receive it in your hands.
+> (Tag:ticket)(Tag:weapon)A ticket for any one mundane cold weapon; tear it and think of the weapon to receive it in your hands.
 
 **Decision**
 
@@ -9132,7 +9252,7 @@
 
 **Description**
 
-> A true divine artifact used to nail the saint to the cross; nailed to someone's heart, it transforms them into a Monster of God (See trait: Monster of God).
+> (Tag:bound)(Tag:race-change)(Tag:tool)A true divine artifact used to nail the saint to the cross; nailed to someone's heart, it transforms them into a Monster of God (See trait: Monster of God).
 
 **Decision**
 
@@ -9149,7 +9269,7 @@
 
 **Description**
 
-> (Tome) Parthuunax's dictionary teaching anyone Thu'um, containing all Tamriel Shouts for study. Learning speed depends on magical and vocal talent, with more powerful esoteric shouts and stages harder to learn. Spell List: https://elderscrolls.fandom.com/wiki/Dragon_Shouts
+> (Tag:draconic)(Tag:grimoire)(Tag:magic)(Tome) Parthuunax's dictionary teaching anyone Thu'um, containing all Tamriel Shouts for study. Learning speed depends on magical and vocal talent, with more powerful esoteric shouts and stages harder to learn. Spell List: https://elderscrolls.fandom.com/wiki/Dragon_Shouts
 
 **Decision**
 
@@ -9166,7 +9286,7 @@
 
 **Description**
 
-> An arrow making two pierced people fall in love; stab each target once, with the first stabbed falling for the second. Repeat reversed for reciprocity. Legendary rank or stronger targets can resist.
+> (Tag:command)(Tag:tool)(Noncon) An arrow making two pierced people fall in love; stab each target once, with the first stabbed falling for the second. Repeat reversed for reciprocity. Legendary rank or stronger targets can resist.
 
 **Flagged in reports**
 
@@ -9187,7 +9307,7 @@
 
 **Description**
 
-> King Midas's severed hand retaining its gold-touch; anything touched with the pointer finger under 5 tons or weaker than Epic rank becomes solid gold. Living beings can resist depending on strength.
+> (Tag:tool)(Tag:transformation)King Midas's severed hand retaining its gold-touch; anything touched with the pointer finger under 5 tons or weaker than Epic rank becomes solid gold. Living beings can resist depending on strength.
 
 **Decision**
 
@@ -9204,7 +9324,7 @@
 
 **Description**
 
-> Incognito's high-tech complex chip transforming the implanted into an artificial Hellsing vampire with all powers and weaknesses. Transformation rarely fails depending on compatibility, the chip fuses once implanted, and reverse-engineering requires Expert Biology and Master Mechanics.
+> (Tag:implant)(Tag:race-change)(Tag:tech)(Tag:tool)Incognito's high-tech complex chip transforming the implanted into an artificial Hellsing vampire with all powers and weaknesses. Transformation rarely fails depending on compatibility, the chip fuses once implanted, and reverse-engineering requires Expert Biology and Master Mechanics.
 
 **Decision**
 
@@ -9221,7 +9341,7 @@
 
 **Description**
 
-> A folded contract promising full satisfaction; insert build specifications, location, and sufficient funds covering construction and labor, then sign. It burns to ash, your request having been retroactively expertly built with the money removed. Restock Timer: 720 hours.
+> (Tag:consumable)(Tag:production)A folded contract promising full satisfaction; insert build specifications, location, and sufficient funds covering construction and labor, then sign. It burns to ash, your request having been retroactively expertly built with the money removed. Restock Timer: 720 hours.
 
 **Decision**
 
@@ -9238,7 +9358,7 @@
 
 **Description**
 
-> A taste-tailored mansion sitting in the middle of everything in its own impenetrable dimension even Outer Ones cannot breach. Enter through any door you touch and exit at any door in reality, even other multiverses or gardens.
+> (Tag:dimension)(Tag:movement)A taste-tailored mansion sitting in the middle of everything in its own impenetrable dimension even Outer Ones cannot breach. Enter through any door you touch and exit at any door in reality, even other multiverses or gardens.
 
 **Flagged in reports**
 
@@ -9259,7 +9379,7 @@
 
 **Description**
 
-> (Tech) High-tech plague doctor armour fused with Plague Nanovirus, greatly amplifying physical stats with aiming HUD. Immune to diseases and poison below Divine Level, it greatly amplifies your poison and bio abilities and can temporarily release Nanoviruses to rot enemies from within before dissolving safely.
+> (Tag:armor)(Tag:bio)(Tag:bio+)(Tag:enhancer)(Tag:poison)(Tag:poison+)(Tag:poison-resistance+)(Tag:tech)(Tech) High-tech plague doctor armour fused with Plague Nanovirus, greatly amplifying physical stats with aiming HUD. Immune to diseases and poison below Divine Level, it greatly amplifies your poison and bio abilities and can temporarily release Nanoviruses to rot enemies from within before dissolving safely.
 
 **Decision**
 
@@ -9276,7 +9396,7 @@
 
 **Description**
 
-> (Tech) Simple high-tech wulfrum armour with reasonable defense and comfort. An activated switch turns it into power armour with a supplied powerful machine gun; this mode has a 24-hour cooldown.
+> (Tag:armor)(Tag:tech)(Tech) Simple high-tech wulfrum armour with reasonable defense and comfort. An activated switch turns it into power armour with a supplied powerful machine gun; this mode has a 24-hour cooldown.
 
 **Decision**
 
@@ -9293,7 +9413,7 @@
 
 **Description**
 
-> (Tech) Dreadon's Exo-material chainsaw projecting dozens of adjustable hard-light teeth spinning at insane speeds, shredding almost anything. Slight overkill for trees.
+> (Tag:blade)(Tag:light)(Tag:tool)(Tag:weapon)(Tech) Dreadon's Exo-material chainsaw projecting dozens of adjustable hard-light teeth spinning at insane speeds, shredding almost anything. Slight overkill for trees.
 
 **Decision**
 
@@ -9310,7 +9430,7 @@
 
 **Description**
 
-> A master ninja's inconspicuous black belt granting incredible acrobatics, wall-sticking, fall damage immunity, and muffling of unintentional sounds up to speaking volume.
+> (Tag:accessory)(Tag:agility+)(Tag:movement)A master ninja's inconspicuous black belt granting incredible acrobatics, wall-sticking, fall damage immunity, and muffling of unintentional sounds up to speaking volume.
 
 **Decision**
 
@@ -9327,7 +9447,7 @@
 
 **Description**
 
-> "Smoke Bomb!" A simple-looking smoke bomb that, thrown at your feet, teleports you anywhere within 25 meters you could enter if it obscures you from everyone. Restock Timer: 12 hours.
+> (Tag:consumable)(Tag:movement)"Smoke Bomb!" A simple-looking smoke bomb that, thrown at your feet, teleports you anywhere within 25 meters you could enter if it obscures you from everyone. Restock Timer: 12 hours.
 
 **Decision**
 
@@ -9344,7 +9464,7 @@
 
 **Description**
 
-> (Tech) A ticket sending you to advanced robotic doctors for a perfected ASTER procedure turning you into a Spartan regardless of age or condition. It grants a more durable skeleton, enhanced musculature, visual acuity, reflexes, and mental clarity.
+> (Tag:defence+)(Tag:dexterity+)(Tag:implant)(Tag:mind+)(Tag:reflex+)(Tag:strength+)(Tag:ticket)(Tech) A ticket sending you to advanced robotic doctors for a perfected ASTER procedure turning you into a Spartan regardless of age or condition. It grants a more durable skeleton, enhanced musculature, visual acuity, reflexes, and mental clarity.
 
 **Decision**
 
@@ -9361,7 +9481,7 @@
 
 **Description**
 
-> (Tech) Advanced power armour for superhumans, highly flexible without hindering mobility while enhancing physical capabilities and protecting against harm and terrain. It includes basic AI and HUD to manage features.
+> (Tag:armor)(Tag:enhancer)(Tag:tech)(Tech) Advanced power armour for superhumans, highly flexible without hindering mobility while enhancing physical capabilities and protecting against harm and terrain. It includes basic AI and HUD to manage features.
 
 **Decision**
 
@@ -9378,7 +9498,7 @@
 
 **Description**
 
-> (Tech) The Ultimate Weapon capable of destroying anything from small targets to universes and timelines, provided the user can wield it without perishing.
+> (Tag:machine)(Tag:tech)(Tech) The Ultimate Weapon capable of destroying anything from small targets to universes and timelines, provided the user can wield it without perishing.
 
 **Decision**
 
@@ -9395,7 +9515,7 @@
 
 **Description**
 
-> The Mad Titan's Infinity Gauntlet containing all Infinity Stones, letting the user wield their nigh-unlimited power as long as they can handle it. The perfected gauntlet withstands all Stones without issue.
+> (Tag:alter)(Tag:armor)(Tag:space)(Tag:spirit)(Tag:time)The Mad Titan's Infinity Gauntlet containing all Infinity Stones, letting the user wield their nigh-unlimited power as long as they can handle it. The perfected gauntlet withstands all Stones without issue.
 
 **Decision**
 
@@ -9412,7 +9532,7 @@
 
 **Description**
 
-> A simple-looking card of unknowable power. Thrown at a target it kills instantly on contact unless the target is immortal, then becomes inert and unusable.
+> (Tag:consumable)(Tag:necro)A simple-looking card of unknowable power. Thrown at a target it kills instantly on contact unless the target is immortal, then becomes inert and unusable.
 
 **Decision**
 
@@ -9429,7 +9549,7 @@
 
 **Description**
 
-> A Ring containing 3 uses of Wish. Each wish replicates the effect of any ability of Mythical tier or below once.
+> (Tag:accessory)(Tag:consumable)(Tag:meta)A Ring containing 3 uses of Wish. Each wish replicates the effect of any ability of Mythical tier or below once.
 
 **Decision**
 
@@ -9446,7 +9566,7 @@
 
 **Description**
 
-> A finger containing 1/20th of Ryomen Sukuna, the King of Curses, radiating incredible cursed energy that attracts cursed lifeforms. A cursed being that ingests it gains a power boost, while a proper vessel will either incarnate as 1/20th Sukuna, share the vessel with him, or defeat his fragment and consume its power.
+> (Tag:curse)(Tag:spirit)(Tag:tool)A finger containing 1/20th of Ryomen Sukuna, the King of Curses, radiating incredible cursed energy that attracts cursed lifeforms. A cursed being that ingests it gains a power boost, while a proper vessel will either incarnate as 1/20th Sukuna, share the vessel with him, or defeat his fragment and consume its power.
 
 **Decision**
 
@@ -9463,7 +9583,7 @@
 
 **Description**
 
-> All 20 fingers of Ryomen Sukuna, the King of Curses, each containing 1/20th of his power and radiating incredible cursed energy that attracts cursed lifeforms. A cursed being ingesting a finger gains a power boost, while a proper vessel will either incarnate as 1/20th Sukuna, share the vessel with him, or defeat his fragment and consume its power.
+> (Tag:curse)(Tag:spirit)(Tag:tool)All 20 fingers of Ryomen Sukuna, the King of Curses, each containing 1/20th of his power and radiating incredible cursed energy that attracts cursed lifeforms. A cursed being ingesting a finger gains a power boost, while a proper vessel will either incarnate as 1/20th Sukuna, share the vessel with him, or defeat his fragment and consume its power.
 
 **Decision**
 
@@ -9480,7 +9600,7 @@
 
 **Description**
 
-> The Eye of Agamotto containing the Time Stone, one of the 6 Infinity Stones. It allows time manipulation such as stopping time, time travel, and time loops as long as the user harnesses it correctly, with greater exertion causing backlash that can kill.
+> (Tag:alter)(Tag:time)(Tag:tool)The Eye of Agamotto containing the Time Stone, one of the 6 Infinity Stones. It allows time manipulation such as stopping time, time travel, and time loops as long as the user harnesses it correctly, with greater exertion causing backlash that can kill.
 
 **Decision**
 
@@ -9497,7 +9617,7 @@
 
 **Description**
 
-> The Power Stone, one of the 6 Infinity Stones and most powerful artifacts. It grants immense destructive power to empower the body or weapons or fire as blasts and projections, capable of shattering planets when used correctly, though few can withstand its full power.
+> (Tag:alter)(Tag:tool)The Power Stone, one of the 6 Infinity Stones and most powerful artifacts. It grants immense destructive power to empower the body or weapons or fire as blasts and projections, capable of shattering planets when used correctly, though few can withstand its full power.
 
 **Decision**
 
@@ -9514,7 +9634,7 @@
 
 **Description**
 
-> One of the Infinity Stones, among the most powerful artifacts in existence. It allows control of souls, bestowing life and resurrection, as long as the user can handle its power.
+> (Tag:spirit)(Tag:tool)One of the Infinity Stones, among the most powerful artifacts in existence. It allows control of souls, bestowing life and resurrection, as long as the user can handle its power.
 
 **Decision**
 
@@ -9531,7 +9651,7 @@
 
 **Description**
 
-> A bottle of pitch-black cologne that erases the user's scent and partly muffles movement for 1 hour when applied.
+> (Tag:dark)(Tag:stealth)(Tag:tool)A bottle of pitch-black cologne that erases the user's scent and partly muffles movement for 1 hour when applied.
 
 **Decision**
 
@@ -9548,7 +9668,7 @@
 
 **Description**
 
-> A smooth black nondescript ring that completely erases your energy signatures unless you are actively using abilities or spells.
+> (Tag:accessory)(Tag:stealth)A smooth black nondescript ring that completely erases your energy signatures unless you are actively using abilities or spells.
 
 **Decision**
 
@@ -9565,7 +9685,7 @@
 
 **Description**
 
-> (Tech) The electro bio-mechanical neural transmitting zero synapse repositioner flashes targets to erase selected memories and leave them suggestible, with settings configurable on the device. Strong-willed or more powerful targets may resist.
+> (Tag:command)(Tag:mental)(Tag:tech)(Tag:tool)(Tech) The electro bio-mechanical neural transmitting zero synapse repositioner flashes targets to erase selected memories and leave them suggestible, with settings configurable on the device. Strong-willed or more powerful targets may resist.
 
 **Decision**
 
@@ -9582,7 +9702,7 @@
 
 **Description**
 
-> "Comes with an infinite supply of kidney enlarging pills." A training manual for effectively utilizing piss in combat by training with kidney enlarging pills.
+> (Tag:bio)(Tag:tool)"Comes with an infinite supply of kidney enlarging pills." A training manual for effectively utilizing piss in combat by training with kidney enlarging pills.
 
 **Decision**
 
@@ -9599,7 +9719,7 @@
 
 **Description**
 
-> A green, odd-looking mushroom that grants an extra life when consumed, instantly reviving the user at maximum health upon death.
+> (Tag:consumable)(Tag:health-recovery)(Tag:life)A green, odd-looking mushroom that grants an extra life when consumed, instantly reviving the user at maximum health upon death.
 
 **Decision**
 
@@ -9616,7 +9736,7 @@
 
 **Description**
 
-> (Tech) An Aperture Science Portal Gun firing blue and orange pulses that each open a person-sized portal where they land, linked to the opposite colour. Only one portal of each colour can exist at once.
+> (Tag:movement)(Tag:space)(Tag:tech)(Tag:tool)(Tech) An Aperture Science Portal Gun firing blue and orange pulses that each open a person-sized portal where they land, linked to the opposite colour. Only one portal of each colour can exist at once.
 
 **Decision**
 
@@ -9633,7 +9753,7 @@
 
 **Description**
 
-> Gordon Freeman's legendary crowbar, stained with innumerable aliens' blood. It deals conceptually more damage to all inhuman enemies.
+> (Tag:anti-alien)(Tag:bludgeon)(Tag:weapon)Gordon Freeman's legendary crowbar, stained with innumerable aliens' blood. It deals conceptually more damage to all inhuman enemies.
 
 **Decision**
 
@@ -9650,7 +9770,7 @@
 
 **Description**
 
-> "For when you are going at it long and fast." This soda slightly enhances agility and stamina for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
+> (Tag:agility+)(Tag:consumable)(Tag:stamina+)"For when you are going at it long and fast." This soda slightly enhances agility and stamina for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -9667,7 +9787,7 @@
 
 **Description**
 
-> "I'm not even gonna try and spell that." Drinking an entire can temporarily increases proficiency and accuracy with all ranged weapons and projectile-based abilities for 1 hour, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:divination)"I'm not even gonna try and spell that." Drinking an entire can temporarily increases proficiency and accuracy with all ranged weapons and projectile-based abilities for 1 hour, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -9684,7 +9804,7 @@
 
 **Description**
 
-> "Like a scavenging Vulture" Vulture's Aid grants treasure sight to see outlines of treasures and objects of interest through walls after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:divination)"Like a scavenging Vulture" Vulture's Aid grants treasure sight to see outlines of treasures and objects of interest through walls after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -9701,7 +9821,7 @@
 
 **Description**
 
-> "This really 'packs a punch' badum tss!" Melee Macchiato grants temporary enhanced strength and melee skills for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:strength+)"This really 'packs a punch' badum tss!" Melee Macchiato grants temporary enhanced strength and melee skills for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -9718,7 +9838,7 @@
 
 **Description**
 
-> "Reach for me, Jugger Girl. Oorah." Juggernog grants temporary enhanced Vitality and Resilience for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:defence+)(Tag:vitality+)"Reach for me, Jugger Girl. Oorah." Juggernog grants temporary enhanced Vitality and Resilience for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -9735,7 +9855,7 @@
 
 **Description**
 
-> "Crazy Sugar High" Speed Cola grants temporary enhanced Dexterity for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:dexterity+)"Crazy Sugar High" Speed Cola grants temporary enhanced Dexterity for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -9752,7 +9872,7 @@
 
 **Description**
 
-> "You can't escape death" Death Perception grants temporary reaper's gaze to see outlines of enemies through walls and any obstruction for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:perception+)"You can't escape death" Death Perception grants temporary reaper's gaze to see outlines of enemies through walls and any obstruction for 1 hour after finishing an entire can, without stacking from additional cans; drinking more than 3 different buff drinks at once causes intense haemorrhaging, strokes, and heart attacks. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -9769,7 +9889,7 @@
 
 **Description**
 
-> Drinking Bonk! massively increases reflexes and slows perceived time for 8 seconds to dodge almost all incoming attacks, then leaves you exhausted. You must also survive its extreme sugar and radiation. Restock Timer: 72 hours.
+> (Tag:agility+)(Tag:consumable)(Tag:perception+)Drinking Bonk! massively increases reflexes and slows perceived time for 8 seconds to dodge almost all incoming attacks, then leaves you exhausted. You must also survive its extreme sugar and radiation. Restock Timer: 72 hours.
 
 **Decision**
 
@@ -9786,7 +9906,7 @@
 
 **Description**
 
-> An inordinately durable baseball with vastly increased knockback, imbuing objects or targets with increased velocity on contact.
+> (Tag:bludgeon)(Tag:kinetic)(Tag:weapon)An inordinately durable baseball with vastly increased knockback, imbuing objects or targets with increased velocity on contact.
 
 **Decision**
 
@@ -9803,7 +9923,7 @@
 
 **Description**
 
-> A silver ornate bell that summons supernatural butler Mr. Deeds when rung to perform any one butler-capable task, such as laundry, killing, making a sandwich (no ingredients needed), taxes, or providing a gold bar (no gold access needed). If unable, he will say so and ask for an alternative. Cooldown: 12 hours.
+> (Tag:summon)(Tag:tool)A silver ornate bell that summons supernatural butler Mr. Deeds when rung to perform any one butler-capable task, such as laundry, killing, making a sandwich (no ingredients needed), taxes, or providing a gold bar (no gold access needed). If unable, he will say so and ask for an alternative. Cooldown: 12 hours.
 
 **Flagged in reports**
 
@@ -9824,7 +9944,7 @@
 
 **Description**
 
-> A mystical ring that opens interdimensional portals for travel even across the multiverse by visualizing the destination. Magical training is needed for full use.
+> (Tag:accessory)(Tag:movement)A mystical ring that opens interdimensional portals for travel even across the multiverse by visualizing the destination. Magical training is needed for full use.
 
 **Decision**
 
@@ -9841,7 +9961,7 @@
 
 **Description**
 
-> Psychic paper that makes viewers see what they expect, such as IDs, papers, or permits. It fails against exceptionally strong beings or geniuses who may notice the difference.
+> (Tag:illusion)(Tag:mental)(Tag:tool)Psychic paper that makes viewers see what they expect, such as IDs, papers, or permits. It fails against exceptionally strong beings or geniuses who may notice the difference.
 
 **Decision**
 
@@ -9858,7 +9978,7 @@
 
 **Description**
 
-> A chalice holding incredible raw magical power. It can serve as an immense mana source or grant wishes achievable through magic below Legendary Tier. Restock Timer: 720 hours.
+> (Tag:holy)(Tag:resource)(Tag:spirit)(Tag:tool)A chalice holding incredible raw magical power. It can serve as an immense mana source or grant wishes achievable through magic below Legendary Tier. Restock Timer: 720 hours.
 
 **Flagged in reports**
 
@@ -9879,7 +9999,7 @@
 
 **Description**
 
-> 40,000 regular-quality standard iron warhammers, retrievable one at a time from system storage. What did you think it was?
+> (Tag:mundane)40,000 regular-quality standard iron warhammers, retrievable one at a time from system storage. What did you think it was?
 
 **Decision**
 
@@ -9896,7 +10016,7 @@
 
 **Description**
 
-> A tough, sharp unholy blade forged from the blood of the demon Kee-Oth. It deals increased damage to Angelic and Holy beings, can harm spiritual creatures, and offers further use to Hemokinetics.
+> (Tag:blade)(Tag:blood)(Tag:infernal)(Tag:life)(Tag:spirit)(Tag:weapon)A tough, sharp unholy blade forged from the blood of the demon Kee-Oth. It deals increased damage to Angelic and Holy beings, can harm spiritual creatures, and offers further use to Hemokinetics.
 
 **Decision**
 
@@ -9913,7 +10033,7 @@
 
 **Description**
 
-> A powerful potion of long-condensed moon power. Emptying the bottle on a spell dispels it if Elite level or below; drinking it cleanses the user of magic effects of the same level. Restock Timer: 24 hours.
+> (Tag:anti-magic)(Tag:consumable)A powerful potion of long-condensed moon power. Emptying the bottle on a spell dispels it if Elite level or below; drinking it cleanses the user of magic effects of the same level. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -9930,7 +10050,7 @@
 
 **Description**
 
-> A top weapon personally created by the God Emperor of Mankind through Science and Warpcraft, possibly still holding part of his essence. As Anathema to Demon and Infernal beings, it vaporizes all but the strongest (Legendary and above) with a graze. Its Psyker flames can launch attacks and empower your pyrokinetic abilities.
+> (Tag:anti-infernal)(Tag:blade)(Tag:fire)(Tag:fire+)(Tag:weapon)A top weapon personally created by the God Emperor of Mankind through Science and Warpcraft, possibly still holding part of his essence. As Anathema to Demon and Infernal beings, it vaporizes all but the strongest (Legendary and above) with a graze. Its Psyker flames can launch attacks and empower your pyrokinetic abilities.
 
 **Decision**
 
@@ -9947,7 +10067,7 @@
 
 **Description**
 
-> A handful of salt distilled from the tears of failed rolls.
+> (Tag:mundane)A handful of salt distilled from the tears of failed rolls.
 
 **Decision**
 
@@ -9964,7 +10084,7 @@
 
 **Description**
 
-> An unassuming cardboard box that completely suppresses the presence, energy, and aura of anything inside or covered by it. If destroyed, it returns to item space pristine in an hour.
+> (Tag:stealth)(Tag:tool)An unassuming cardboard box that completely suppresses the presence, energy, and aura of anything inside or covered by it. If destroyed, it returns to item space pristine in an hour.
 
 **Decision**
 
@@ -9981,7 +10101,7 @@
 
 **Description**
 
-> Ares' Blades of Chaos, forged by Hephaestus in Hades' furnace and received from the moment of creation. The bound wielder gains immense physical might and unnatural war anger, absorbing victims' lifeforce for further strength and able to absorb and use imbued power sources. They also empower fire attributes when used.
+> (Tag:blade)(Tag:fire)(Tag:fire+)(Tag:flexible)(Tag:growing)(Tag:mental)(Tag:strength+)(Tag:weapon)Ares' Blades of Chaos, forged by Hephaestus in Hades' furnace and received from the moment of creation. The bound wielder gains immense physical might and unnatural war anger, absorbing victims' lifeforce for further strength and able to absorb and use imbued power sources. They also empower fire attributes when used.
 
 **Decision**
 
@@ -9998,7 +10118,7 @@
 
 **Description**
 
-> The Blade of Olympus, forged from the Heavens, Seas, Afterlife, and Earth, and strongest weapon of the Olympian Gods, able to shatter titans in a single swing. It holds divine might to create Divine Energy projections, amplify the user's Divine Attributes, and enhance all Divine-related items and abilities they hold.
+> (Tag:air)(Tag:alter)(Tag:blade)(Tag:divine)(Tag:earth)(Tag:fire)(Tag:holy)(Tag:water)(Tag:weapon)The Blade of Olympus, forged from the Heavens, Seas, Afterlife, and Earth, and strongest weapon of the Olympian Gods, able to shatter titans in a single swing. It holds divine might to create Divine Energy projections, amplify the user's Divine Attributes, and enhance all Divine-related items and abilities they hold.
 
 **Decision**
 
@@ -10015,7 +10135,7 @@
 
 **Description**
 
-> The Leviathan Axe, peer of Mjolnir, is an unbreakable sharp rune-imbued axe. It projects shapeable frost aura for attacks, greatly augments Ice/Frost attributes while held, and returns to the hand when thrown.
+> (Tag:aquatic)(Tag:blade)(Tag:ice)(Tag:ice+)(Tag:weapon)The Leviathan Axe, peer of Mjolnir, is an unbreakable sharp rune-imbued axe. It projects shapeable frost aura for attacks, greatly augments Ice/Frost attributes while held, and returns to the hand when thrown.
 
 **Decision**
 
@@ -10032,7 +10152,7 @@
 
 **Description**
 
-> A spear forged for Kratos and imbued with the winds of all realms, worn as a ring that manifests up to 8 spears at once. Held spears project energy as wind and boost wind attribute, and summoned spears can be detonated into wind explosions at any time.
+> (Tag:air)(Tag:air+)(Tag:polearm)(Tag:weapon)A spear forged for Kratos and imbued with the winds of all realms, worn as a ring that manifests up to 8 spears at once. Held spears project energy as wind and boost wind attribute, and summoned spears can be detonated into wind explosions at any time.
 
 **Decision**
 
@@ -10049,7 +10169,7 @@
 
 **Description**
 
-> (Tech) The Canto, a legendary mythic Cyberdeck implant functioning as a powerful brain-connected computer. Its sentient Super AI lets you interface with and easily hack even the toughest networks. Manifests as a ticket that installs itself when ripped.
+> (Tag:implant)(Tag:tech)(Tech) The Canto, a legendary mythic Cyberdeck implant functioning as a powerful brain-connected computer. Its sentient Super AI lets you interface with and easily hack even the toughest networks. Manifests as a ticket that installs itself when ripped.
 
 **Decision**
 
@@ -10066,7 +10186,7 @@
 
 **Description**
 
-> (Tech) A high-tech cybernetic eye implant without the faceplate, switching between infrared, heat, electromagnetic, X-ray, and other vision modes. It fires variable-power condensed energy beams fueled by your energy reserves. Manifests as a ticket that perfectly implants itself in whoever rips it.
+> (Tag:implant)(Tag:tech)(Tech) A high-tech cybernetic eye implant without the faceplate, switching between infrared, heat, electromagnetic, X-ray, and other vision modes. It fires variable-power condensed energy beams fueled by your energy reserves. Manifests as a ticket that perfectly implants itself in whoever rips it.
 
 **Decision**
 
@@ -10083,7 +10203,7 @@
 
 **Description**
 
-> (Tech) A high-tech cybernetic heart replacement granting superhuman physical abilities plus increased stamina and energy regeneration, weaker when your energy is lower. It can fire a chest death laser if left uncovered (implanted beneath muscle by default), charging extra reserves over time for the laser. Manifests as a ticket that perfectly implants itself in whoever rips it.
+> (Tag:defence+)(Tag:implant)(Tag:maximum-energy+)(Tag:stamina+)(Tag:strength+)(Tag:tech)(Tech) A high-tech cybernetic heart replacement granting superhuman physical abilities plus increased stamina and energy regeneration, weaker when your energy is lower. It can fire a chest death laser if left uncovered (implanted beneath muscle by default), charging extra reserves over time for the laser. Manifests as a ticket that perfectly implants itself in whoever rips it.
 
 **Decision**
 
@@ -10100,7 +10220,7 @@
 
 **Description**
 
-> (Tech) The Classic Omnitrix, the first version released. This biologically-bound watch transforms the user into any of 10 aliens (possibly more with experimentation) for roughly 30 minutes before cooldown, and can capture DNA of contacted creatures to become them. Tampering requires at least Master Mechanics and Biology.
+> (Tag:bound)(Tag:tech)(Tag:tool)(Tag:transformation)(Tech) The Classic Omnitrix, the first version released. This biologically-bound watch transforms the user into any of 10 aliens (possibly more with experimentation) for roughly 30 minutes before cooldown, and can capture DNA of contacted creatures to become them. Tampering requires at least Master Mechanics and Biology.
 
 **Decision**
 
@@ -10117,7 +10237,7 @@
 
 **Description**
 
-> (Tech) The True Omnitrix, Azmuth's final version. It transforms the user into any of millions of stored aliens, from living gravity-manipulating planetoids to multiversal reality warpers.
+> (Tag:bound)(Tag:tech)(Tag:tool)(Tag:transformation)(Tech) The True Omnitrix, Azmuth's final version. It transforms the user into any of millions of stored aliens, from living gravity-manipulating planetoids to multiversal reality warpers.
 
 **Decision**
 
@@ -10134,7 +10254,7 @@
 
 **Description**
 
-> (Character) (Tech) A weird Omnitrix variant that creates and summons the selected alien as a breeding-compatible companion to help or "help" you. It holds only the original 10 but includes a lifeform analyser to eventually expand the roster.
+> (Tag:bound)(Tag:summon)(Tag:tech)(Tag:tool)(Character) (Tech) A weird Omnitrix variant that creates and summons the selected alien as a breeding-compatible companion to help or "help" you. It holds only the original 10 but includes a lifeform analyser to eventually expand the roster.
 
 **Decision**
 
@@ -10151,7 +10271,7 @@
 
 **Description**
 
-> Despite its name, not of Divine Origin. This 10cm crystallised-energy crystal holds enchantments very well and melts over time into an Ambrosia with incredibly potent healing and curing properties.
+> (Tag:consumable)(Tag:health-recovery)(Tag:resource)Despite its name, not of Divine Origin. This 10cm crystallised-energy crystal holds enchantments very well and melts over time into an Ambrosia with incredibly potent healing and curing properties.
 
 **Decision**
 
@@ -10168,7 +10288,7 @@
 
 **Description**
 
-> A Shen Gong Wu monocle granting super sight to see through objects, see in darkness, and see far.
+> (Tag:accessory)(Tag:perception+)A Shen Gong Wu monocle granting super sight to see through objects, see in darkness, and see far.
 
 **Decision**
 
@@ -10185,7 +10305,7 @@
 
 **Description**
 
-> A Shen Gong Wu coin on a rope necklace that grants high jumping and enhanced acrobatics when worn on the body.
+> (Tag:accessory)(Tag:movement)A Shen Gong Wu coin on a rope necklace that grants high jumping and enhanced acrobatics when worn on the body.
 
 **Decision**
 
@@ -10202,7 +10322,7 @@
 
 **Description**
 
-> Captain America's Proto-Adamantium shield, one of the toughest materials known, withstanding even the toughest blows. It bounces back to its owner when thrown.
+> (Tag:shield)Captain America's Proto-Adamantium shield, one of the toughest materials known, withstanding even the toughest blows. It bounces back to its owner when thrown.
 
 **Decision**
 
@@ -10219,7 +10339,7 @@
 
 **Description**
 
-> An extremely durable bracelet unfolding into a supernaturally durable shield faster than a blink. It can also serve as a bludgeon.
+> (Tag:shield)An extremely durable bracelet unfolding into a supernaturally durable shield faster than a blink. It can also serve as a bludgeon.
 
 **Decision**
 
@@ -10236,7 +10356,7 @@
 
 **Description**
 
-> (Tech) "You will never see a cooler shield" A high-tech chainsaw-shield hybrid that blocks extremely well and is incredibly durable. Its fast-spinning blades adjust trajectory mid-flight and return to the user when thrown.
+> (Tag:blade)(Tag:shield)(Tag:weapon)(Tech) "You will never see a cooler shield" A high-tech chainsaw-shield hybrid that blocks extremely well and is incredibly durable. Its fast-spinning blades adjust trajectory mid-flight and return to the user when thrown.
 
 **Decision**
 
@@ -10253,7 +10373,7 @@
 
 **Description**
 
-> (Tech) V1's disembodied arm as a prosthetic implant with tremendous strength and speed, able to punch bullets faster and parry energy blasts. It fuels itself by consuming the user's or others' blood, and can heal the user by stealing others' blood. Manifests as a ticket that installs the prosthetic when ripped.
+> (Tag:implant)(Tag:kinetic)(Tag:tech)(Tech) V1's disembodied arm as a prosthetic implant with tremendous strength and speed, able to punch bullets faster and parry energy blasts. It fuels itself by consuming the user's or others' blood, and can heal the user by stealing others' blood. Manifests as a ticket that installs the prosthetic when ripped.
 
 **Decision**
 
@@ -10270,7 +10390,7 @@
 
 **Description**
 
-> (Tech) An incredibly high-tech revolver outclassing anti-tank rounds, manifesting up to 4 throwable gold coins. Hitting a coin ricochets the bullet toward the closest hittable weak point, growing stronger with each chained coin. It fires high-velocity metal shards with extreme efficiency lasting days of shooting, replenishable by adding more metal.
+> (Tag:gun)(Tag:kinetic)(Tag:tech)(Tech) An incredibly high-tech revolver outclassing anti-tank rounds, manifesting up to 4 throwable gold coins. Hitting a coin ricochets the bullet toward the closest hittable weak point, growing stronger with each chained coin. It fires high-velocity metal shards with extreme efficiency lasting days of shooting, replenishable by adding more metal.
 
 **Decision**
 
@@ -10287,7 +10407,7 @@
 
 **Description**
 
-> A supply crate of refined high-quality Remnant dust for your own use, containing 5 kg of your chosen dust. Restock Timer: 120 hours.
+> (Tag:production)(Tag:resource)A supply crate of refined high-quality Remnant dust for your own use, containing 5 kg of your chosen dust. Restock Timer: 120 hours.
 
 **Decision**
 
@@ -10304,7 +10424,7 @@
 
 **Description**
 
-> (Tech) An ungodly mechashift fusion of massive scythe and high-calibre sniper rifle, compactable and shiftable between rifle, war scythe, and other combat forms. Includes a magazine of chosen dust sniper rounds every 24 hours.
+> (Tag:gun)(Tag:polearm)(Tag:tech)(Tag:weapon)(Tech) An ungodly mechashift fusion of massive scythe and high-calibre sniper rifle, compactable and shiftable between rifle, war scythe, and other combat forms. Includes a magazine of chosen dust sniper rounds every 24 hours.
 
 **Decision**
 
@@ -10321,7 +10441,7 @@
 
 **Description**
 
-> (Tech) "Don't even try to spell it." A mechashift revolver rapier with 6 dust-round slots that cuts with flames, frost, and more depending on the activated cartridge. You get 6 dust rounds per day of your chosen type.
+> (Tag:blade)(Tag:gun)(Tag:tech)(Tag:weapon)(Tech) "Don't even try to spell it." A mechashift revolver rapier with 6 dust-round slots that cuts with flames, frost, and more depending on the activated cartridge. You get 6 dust rounds per day of your chosen type.
 
 **Decision**
 
@@ -10338,7 +10458,7 @@
 
 **Description**
 
-> Sento, an ancient blade of Kenshi's clan housing his ancestors' spirits, with exceptional durability and sharpness. Wielding grants enhanced senses and telekinetic sword control, and with enough spirit affinity, imbuing energy temporarily summons them to aid you.
+> (Tag:blade)(Tag:perception+)(Tag:spirit)(Tag:summon)(Tag:weapon)Sento, an ancient blade of Kenshi's clan housing his ancestors' spirits, with exceptional durability and sharpness. Wielding grants enhanced senses and telekinetic sword control, and with enough spirit affinity, imbuing energy temporarily summons them to aid you.
 
 **Decision**
 
@@ -10355,7 +10475,7 @@
 
 **Description**
 
-> (Tech) A high-tech sleek sci-fi bicycle that is extremely durable, fast, and cool. It never needs recharging or fuel.
+> (Tag:light)(Tag:tech)(Tag:vehicle)(Tech) A high-tech sleek sci-fi bicycle that is extremely durable, fast, and cool. It never needs recharging or fuel.
 
 **Decision**
 
@@ -10372,7 +10492,7 @@
 
 **Description**
 
-> (Tech) An advanced Robot Workbench recycling raw materials into parts to assemble or upgrade any configuration the original Workbench can produce. Appropriate materials are required.
+> (Tag:machine)(Tag:production)(Tag:tech)(Tech) An advanced Robot Workbench recycling raw materials into parts to assemble or upgrade any configuration the original Workbench can produce. Appropriate materials are required.
 
 **Decision**
 
@@ -10389,7 +10509,7 @@
 
 **Description**
 
-> (Tech) An advanced room-sized station converting input raw materials into robot parts for assembly, limited to blueprints fed into it with Fallout Robots included by default. Part quality depends on input material quality.
+> (Tag:barracks)(Tag:building)(Tag:machine)(Tag:production)(Tag:tech)(Tech) An advanced room-sized station converting input raw materials into robot parts for assembly, limited to blueprints fed into it with Fallout Robots included by default. Part quality depends on input material quality.
 
 **Decision**
 
@@ -10406,7 +10526,7 @@
 
 **Description**
 
-> (Tech) "Don't forget the hyphen!" A vial of patented web fluid and wrist-equippable webshooters, with one full vial granted every 24 hours.
+> (Tag:bio)(Tag:tech)(Tag:tool)(Tech) "Don't forget the hyphen!" A vial of patented web fluid and wrist-equippable webshooters, with one full vial granted every 24 hours.
 
 **Decision**
 
@@ -10423,7 +10543,7 @@
 
 **Description**
 
-> (Tech) A high-tech mind-controlled glider flying at great speeds with bladed weapon edges and some storage space. It refuels every 8 hours and slowly self-repairs unless completely damaged.
+> (Tag:vehicle)(Tag:weapon)(Tech) A high-tech mind-controlled glider flying at great speeds with bladed weapon edges and some storage space. It refuels every 8 hours and slowly self-repairs unless completely damaged.
 
 **Decision**
 
@@ -10440,7 +10560,7 @@
 
 **Description**
 
-> (Tech) A high-tech harness with 4 mechanical tentacle arms moved by thought or independently per commands. The arms have supernatural strength and task-dependent integrated tools.
+> (Tag:implant)(Tag:tech)(Tech) A high-tech harness with 4 mechanical tentacle arms moved by thought or independently per commands. The arms have supernatural strength and task-dependent integrated tools.
 
 **Decision**
 
@@ -10457,7 +10577,7 @@
 
 **Description**
 
-> The infamous "Vomelette" MRE: unpalatable but edible and digestible food. Restock Timer: 10 minutes.
+> (Tag:consumable)(Tag:mundane)The infamous "Vomelette" MRE: unpalatable but edible and digestible food. Restock Timer: 10 minutes.
 
 **Decision**
 
@@ -10474,7 +10594,7 @@
 
 **Description**
 
-> A blank cheque to cash in a favour, insufficient for acts strongly against the target's morals but enough for great inconvenience like rent-free housing. It burns upon use.
+> (Tag:command)(Tag:ticket)A blank cheque to cash in a favour, insufficient for acts strongly against the target's morals but enough for great inconvenience like rent-free housing. It burns upon use.
 
 **Flagged in reports**
 
@@ -10495,7 +10615,7 @@
 
 **Description**
 
-> A doctor's appointment ticket that instantly grants a detailed note on physical condition plus many possible treatments for any conditions. Restock Timer: 120 hours.
+> (Tag:divination)(Tag:healing)(Tag:ticket)A doctor's appointment ticket that instantly grants a detailed note on physical condition plus many possible treatments for any conditions. Restock Timer: 120 hours.
 
 **Decision**
 
@@ -10512,7 +10632,7 @@
 
 **Description**
 
-> A cool-looking, exceptionally durable yet comfortable trenchcoat. All pockets are 10x bigger inside for extra storage.
+> (Tag:armor)(Tag:storage)A cool-looking, exceptionally durable yet comfortable trenchcoat. All pockets are 10x bigger inside for extra storage.
 
 **Decision**
 
@@ -10529,7 +10649,7 @@
 
 **Description**
 
-> A regular white shirt reading "I rolled a ticket and all I got was this stupid shirt in return." If destroyed or lost, it reappears accessible to the user in mint condition.
+> (Tag:armor)A regular white shirt reading "I rolled a ticket and all I got was this stupid shirt in return." If destroyed or lost, it reappears accessible to the user in mint condition.
 
 **Decision**
 
@@ -10546,7 +10666,7 @@
 
 **Description**
 
-> Give this ticket to bury the hatchet and be forgiven for anything except murder. The target must have been at least neutral toward you before.
+> (Tag:command)(Tag:ticket)Give this ticket to bury the hatchet and be forgiven for anything except murder. The target must have been at least neutral toward you before.
 
 **Flagged in reports**
 
@@ -10567,7 +10687,7 @@
 
 **Description**
 
-> A completely ordinary skeleton from an ordinary person, complete with its own closet.
+> (Tag:mundane)A completely ordinary skeleton from an ordinary person, complete with its own closet.
 
 **Decision**
 
@@ -10584,7 +10704,7 @@
 
 **Description**
 
-> Fairy Dust freshly shaken from Tinker Bell. This pouch floats 5 grown men for 1 hour or one grown man for 5 hours. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:fae)(Tag:movement)Fairy Dust freshly shaken from Tinker Bell. This pouch floats 5 grown people for 1 hour or one grown person for 5 hours. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -10601,7 +10721,7 @@
 
 **Description**
 
-> (Tech) Skippy, a Smart Handgun firing homing bullets with onboard AI that aims on the fly and distinguishes ally from enemy, while judging your actions. You get 5 magazines every 24 hours.
+> (Tag:gun)(Tag:tech)(Tech) Skippy, a Smart Handgun firing homing bullets with onboard AI that aims on the fly and distinguishes ally from enemy, while judging your actions. You get 5 magazines every 24 hours.
 
 **Decision**
 
@@ -10618,7 +10738,7 @@
 
 **Description**
 
-> (Tech) The Herrera Outlaw, a stylish luxury limousine built for Night City with windows resisting anything below .50 calibre. Not the best car, but stylish wheels sure to impress.
+> (Tag:tech)(Tag:vehicle)(Tech) The Herrera Outlaw, a stylish luxury limousine built for Night City with windows resisting anything below .50 calibre. Not the best car, but stylish wheels sure to impress.
 
 **Decision**
 
@@ -10635,7 +10755,7 @@
 
 **Description**
 
-> (Tech) This fully upgraded Regalia is a powerful, durable, self-driving, incredibly stylish supercar that converts into a flying vehicle. Fuel refills automatically every 8 hours.
+> (Tag:tech)(Tag:vehicle)(Tech) This fully upgraded Regalia is a powerful, durable, self-driving, incredibly stylish supercar that converts into a flying vehicle. Fuel refills automatically every 8 hours.
 
 **Decision**
 
@@ -10652,7 +10772,7 @@
 
 **Description**
 
-> (Tech) High-tech gloves firing energy beams on point that immobilize on hit while letting you move victims as desired. Strong targets can resist or break free; the gloves draw on your energy reserves.
+> (Tag:kinetic)(Tag:tech)(Tag:tool)(Tech) High-tech gloves firing energy beams on point that immobilize on hit while letting you move victims as desired. Strong targets can resist or break free; the gloves draw on your energy reserves.
 
 **Decision**
 
@@ -10669,7 +10789,7 @@
 
 **Description**
 
-> A large black blade dispelling any contacted magical spell or effect of Legendary rank or below. Its anti-magic energy fires black energy slashes or levitates the sword back to the user.
+> (Tag:anti-magic)(Tag:blade)(Tag:infernal)(Tag:weapon)A large black blade dispelling any contacted magical spell or effect of Legendary rank or below. Its anti-magic energy fires black energy slashes or levitates the sword back to the user.
 
 **Decision**
 
@@ -10686,7 +10806,7 @@
 
 **Description**
 
-> This rusty old key opens a door to the Slaughterhouse, whose workers supply any amount of mundane Earth-native meat on demand, breed, raise, and butcher any two live breedable animals for you at 60x efficiency, and perfectly process, pack, and return any non-living meat sent in. You may enter the universe-sized complex of soulless butchers and workers, but do not get lost or wander. WARNING: Do not send anything you do not want harvested for meat, including yourself; the workers do not care for reason.
+> (Tag:dimension)(Tag:production)(Tag:resource)This rusty old key opens a door to the Slaughterhouse, whose workers supply any amount of mundane Earth-native meat on demand, breed, raise, and butcher any two live breedable animals for you at 60x efficiency, and perfectly process, pack, and return any non-living meat sent in. You may enter the universe-sized complex of soulless butchers and workers, but do not get lost or wander. WARNING: Do not send anything you do not want harvested for meat, including yourself; the workers do not care for reason.
 
 **Decision**
 
@@ -10703,7 +10823,7 @@
 
 **Description**
 
-> Shake this fumo violently to open a portal to any visited location in your current dimension. Only one portal open at a time.
+> (Tag:fumo)(Tag:movement)Shake this fumo violently to open a portal to any visited location in your current dimension. Only one portal open at a time.
 
 **Decision**
 
@@ -10720,7 +10840,7 @@
 
 **Description**
 
-> An incredibly fragile rare flower in a special container. Properly refined into medicine, it turns the ingester into a Progenitor Demon (Legendary Trait).
+> (Tag:bio)(Tag:infernal)(Tag:insectoid)(Tag:resource)(Tag:transformation)An incredibly fragile rare flower in a special container. Properly refined into medicine, it turns the ingester into a Progenitor Demon (Legendary Trait).
 
 **Decision**
 
@@ -10737,7 +10857,7 @@
 
 **Description**
 
-> Volendrung, an enchanted nigh-unbreakable Daedric hammer that saps hit targets' strength, temporarily weakening them. Expending energy activates a paralysis enchantment whose duration depends on target strength.
+> (Tag:bludgeon)(Tag:weapon)Volendrung, an enchanted nigh-unbreakable Daedric hammer that saps hit targets' strength, temporarily weakening them. Expending energy activates a paralysis enchantment whose duration depends on target strength.
 
 **Decision**
 
@@ -10754,7 +10874,7 @@
 
 **Description**
 
-> A simple notebook tracking every sapient life lost in your current dimension, requiring rough face and name knowledge to jump to a target's page or manual paging otherwise. Each deceased page lists cause of death, time since death, corpse or largest-remains location, and soul location if in the same dimension. The book reforms somewhere accessible if destroyed.
+> (Tag:divination)(Tag:necro)(Tag:spirit)(Tag:tool)A simple notebook tracking every sapient life lost in your current dimension, requiring rough face and name knowledge to jump to a target's page or manual paging otherwise. Each deceased page lists cause of death, time since death, corpse or largest-remains location, and soul location if in the same dimension. The book reforms somewhere accessible if destroyed.
 
 **Decision**
 
@@ -10771,7 +10891,7 @@
 
 **Description**
 
-> A sealed vial of Venom, a powerful fast-acting steroid enhancing physical strength for 12 hours before leaving weakness, with debilitating withdrawal and possible urge to break backs. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:poison)(Tag:strength+)A sealed vial of Venom, a powerful fast-acting steroid enhancing physical strength for 12 hours before leaving weakness, with debilitating withdrawal and possible urge to break backs. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -10788,7 +10908,7 @@
 
 **Description**
 
-> An otherwise ordinary .30-06 bullet made from the ground ribs and soul fragments of Kiritsugu Emiya, the Magus Killer. On direct hit it enforces Severing and Binding on the target's magic, temporarily disrupting magic and abilities. Restock Timer: 12 hours.
+> (Tag:anti-magic)(Tag:tool)(Tag:weapon)An otherwise ordinary .30-06 bullet made from the ground ribs and soul fragments of Kiritsugu Emiya, the Magus Killer. On direct hit it enforces Severing and Binding on the target's magic, temporarily disrupting magic and abilities. Restock Timer: 12 hours.
 
 **Decision**
 
@@ -10805,7 +10925,7 @@
 
 **Description**
 
-> An Erza Scarlet Fumo that instantly swaps your worn clothes with any owned clothing you picture when shaken violently, leaving the old clothes in their place.
+> (Tag:fumo)(Tag:movement)An Erza Scarlet Fumo that instantly swaps your worn clothes with any owned clothing you picture when shaken violently, leaving the old clothes in their place.
 
 **Decision**
 
@@ -10822,7 +10942,7 @@
 
 **Description**
 
-> (Tech) The Lancelot Albion, among the strongest, most advanced Britannian Knightmares. It carries reinforced armour, super high-speed energy-wing flight, slash harkens, advanced Factsphere detection, wing energy projectiles, Blaze Luminous energy shields, Super V.A.R.I.S. Rifle blasts or Hadron Cannon mode, and Maser Vibration Sword. Its Yggdrasil Drive refills every 24 hours, and it is nigh impossible for regular people to operate.
+> (Tag:armor)(Tag:draconic)(Tag:tech)(Tag:vehicle)(Tech) The Lancelot Albion, among the strongest, most advanced Britannian Knightmares. It carries reinforced armour, super high-speed energy-wing flight, slash harkens, advanced Factsphere detection, wing energy projectiles, Blaze Luminous energy shields, Super V.A.R.I.S. Rifle blasts or Hadron Cannon mode, and Maser Vibration Sword. Its Yggdrasil Drive refills every 24 hours, and it is nigh impossible for regular people to operate.
 
 **Decision**
 
@@ -10839,7 +10959,7 @@
 
 **Description**
 
-> (Tech) Gurenn, the strongest, most advanced Knightmare Frame: an incredibly mobile marvel of destruction with advanced armour, super high-speed energy-wing flight, slash harkens, and Radiant Wave Technology for offense and defense. It creates barriers that disintegrate or destroy projectiles and objects while blocking physically, and focuses into devastating blasts and close-range bursts. Radiation Wave ammo and Ygdrassil Drive Sakuradite replenish every 24 hours.
+> (Tag:armor)(Tag:tech)(Tag:vehicle)(Tech) Gurenn, the strongest, most advanced Knightmare Frame: an incredibly mobile marvel of destruction with advanced armour, super high-speed energy-wing flight, slash harkens, and Radiant Wave Technology for offense and defense. It creates barriers that disintegrate or destroy projectiles and objects while blocking physically, and focuses into devastating blasts and close-range bursts. Radiation Wave ammo and Ygdrassil Drive Sakuradite replenish every 24 hours.
 
 **Decision**
 
@@ -10856,7 +10976,7 @@
 
 **Description**
 
-> (Tech) Gawainn, a tall Experimental Knightmare perfected by the Black Knights for one or two pilots. It carries Reinforced Armour, Floatation flight systems, 10 finger-mounted slash harkens, and 2 shoulder-mounted devastating Hadron Cannons. Its Ygdrassil Drive replenishes every 24 hours.
+> (Tag:armor)(Tag:tech)(Tag:vehicle)(Tech) Gawainn, a tall Experimental Knightmare perfected by the Black Knights for one or two pilots. It carries Reinforced Armour, Floatation flight systems, 10 finger-mounted slash harkens, and 2 shoulder-mounted devastating Hadron Cannons. Its Ygdrassil Drive replenishes every 24 hours.
 
 **Decision**
 
@@ -10873,7 +10993,7 @@
 
 **Description**
 
-> (Tech) The Sutherland, the basic mass-produced Britannian Knightmare. It carries armour, mounted machine gun, landspinner propulsion, Factsphere sensor, two slash harkens, and basic Knightmare assault rifle. Its Ygdrassil Drive and weapon ammunition replenish every 24 hours.
+> (Tag:armor)(Tag:tech)(Tag:vehicle)(Tech) The Sutherland, the basic mass-produced Britannian Knightmare. It carries armour, mounted machine gun, landspinner propulsion, Factsphere sensor, two slash harkens, and basic Knightmare assault rifle. Its Ygdrassil Drive and weapon ammunition replenish every 24 hours.
 
 **Decision**
 
@@ -10890,7 +11010,7 @@
 
 **Description**
 
-> An ornate golden hand mirror perfectly reversing any magical attack contacting its surface, instantly reversing its direction.
+> (Tag:magic)(Tag:tool)An ornate golden hand mirror perfectly reversing any magical attack contacting its surface, instantly reversing its direction.
 
 **Decision**
 
@@ -10907,7 +11027,7 @@
 
 **Description**
 
-> An eye-shaped blue glass charm passively granting decent resistance to curses and negative energy. It breaks to nullify any Epic rank or above curse afflicting the user.
+> (Tag:accessory)(Tag:anti-curse)(Tag:curse-resistance+)(Tag:infernal-resistance+)An eye-shaped blue glass charm passively granting decent resistance to curses and negative energy. It breaks to nullify any Epic rank or above curse afflicting the user.
 
 **Decision**
 
@@ -10924,7 +11044,7 @@
 
 **Description**
 
-> A box of dog treats no person has reason to eat, but familiars and candidates love. It pours indefinitely for a lifetime supply.
+> (Tag:consumable)A box of dog treats no person has reason to eat, but familiars and candidates love. It pours indefinitely for a lifetime supply.
 
 **Decision**
 
@@ -10941,7 +11061,7 @@
 
 **Description**
 
-> The Ainsworths can suck it. This Familiar Card captures one familiar for another person to insert and activate, granting only its abilities, not stats. It can be forcefully ejected by recalling the familiar to familiar space.
+> (Tag:meta)(Tag:spirit)(Tag:summon)(Tag:tool)The Ainsworths can suck it. This Familiar Card captures one familiar for another person to insert and activate, granting only its abilities, not stats. It can be forcefully ejected by recalling the familiar to familiar space.
 
 **Flagged in reports**
 
@@ -10962,7 +11082,7 @@
 
 **Description**
 
-> A dark grey duffle bag producing copies of any mundane Basic Earth public-use firearm or bullet magazine with bullets, from revolvers to sniper rifles. Limited to 20 kg pulled per day.
+> (Tag:gun)(Tag:production)A dark grey duffle bag producing copies of any mundane Basic Earth public-use firearm or bullet magazine with bullets, from revolvers to sniper rifles. Limited to 20 kg pulled per day.
 
 **Decision**
 
@@ -10979,7 +11099,7 @@
 
 **Description**
 
-> Mohg champion's old katana, stained by countless blood yet incredibly durable and sharp. Flesh wounds from it haemorrhage unnaturally fast.
+> (Tag:blade)(Tag:blood)(Tag:curse)(Tag:weapon)Mohg champion's old katana, stained by countless blood yet incredibly durable and sharp. Flesh wounds from it haemorrhage unnaturally fast.
 
 **Decision**
 
@@ -10996,7 +11116,7 @@
 
 **Description**
 
-> A large wearable head jar once worn by a tarnished warrior who vanquished the rot goddess a thousandfold. It grants increased physical abilities, reflexes, and instincts against Gods or Divine entities. Despite appearances, it does not hinder vision and is supernaturally durable.
+> (Tag:accessory)(Tag:anti-divine)A large wearable head jar once worn by a tarnished warrior who vanquished the rot goddess a thousandfold. It grants increased physical abilities, reflexes, and instincts against Gods or Divine entities. Despite appearances, it does not hinder vision and is supernaturally durable.
 
 **Decision**
 
@@ -11013,7 +11133,7 @@
 
 **Description**
 
-> "Is it worth the price?" A worn blood-stained paper granting equal-rank Summon Demon without using an ability slot when signed in blood after offering 3 equal-level sacrifices (Abilities, Items, Familiars etc.; Skills excluded), e.g. a Rare Ability plus 2 Rare Items for Summon Demon (Rare). Single use upon signing; refundable for free to reclaim its ticket.
+> (Tag:consumable)(Tag:infernal)(Tag:meta)"Is it worth the price?" A worn blood-stained paper granting equal-rank Summon Demon without using an ability slot when signed in blood after offering 3 equal-level sacrifices (Abilities, Items, Familiars etc.; Skills excluded), e.g. a Rare Ability plus 2 Rare Items for Summon Demon (Rare). Single use upon signing; refundable for free to reclaim its ticket.
 
 **Decision**
 
@@ -11030,7 +11150,7 @@
 
 **Description**
 
-> "Devotion at a price." A gold scroll trimmed in silver granting equal-rank Summon Angel without using an ability slot when signed in blood after offering 3 equal-level sacrifices (Abilities, Items, etc.; Skills and Familiars excluded), e.g. an Elite Ability plus 2 Elite Items for Summon Angel (Elite). Single use upon signing; refundable for free to reclaim its ticket.
+> (Tag:consumable)(Tag:holy)(Tag:meta)"Devotion at a price." A gold scroll trimmed in silver granting equal-rank Summon Angel without using an ability slot when signed in blood after offering 3 equal-level sacrifices (Abilities, Items, etc.; Skills and Familiars excluded), e.g. an Elite Ability plus 2 Elite Items for Summon Angel (Elite). Single use upon signing; refundable for free to reclaim its ticket.
 
 **Decision**
 
@@ -11047,7 +11167,7 @@
 
 **Description**
 
-> A phone with a single dialled number contacting the Dimensional Courier. The Courier buys anything civilian-purchasable with money from anywhere you have visited, even across realities and dimensions, delivering within 8 hours at most. They take 10% commission per purchase.
+> (Tag:tool)A phone with a single dialled number contacting the Dimensional Courier. The Courier buys anything civilian-purchasable with money from anywhere you have visited, even across realities and dimensions, delivering within 8 hours at most. They take 10% commission per purchase.
 
 **Flagged in reports**
 
@@ -11068,7 +11188,7 @@
 
 **Description**
 
-> An ornate red vial endlessly pouring fresh healthy O- blood when tipped, manifested rather than belonging to any person.
+> (Tag:blood)(Tag:life)(Tag:production)(Tag:tool)An ornate red vial endlessly pouring fresh healthy O- blood when tipped, manifested rather than belonging to any person.
 
 **Decision**
 
@@ -11085,7 +11205,7 @@
 
 **Description**
 
-> A ring constantly providing full sustenance while worn, regardless of dietary needs.
+> (Tag:accessory)A ring constantly providing full sustenance while worn, regardless of dietary needs.
 
 **Decision**
 
@@ -11102,7 +11222,7 @@
 
 **Description**
 
-> This key turns any door into a gate to The Morgue, an endlessly vast store of fresh indistinct human corpses. Any biological matter inside stops decaying and stays preserved.
+> (Tag:dimension)This key turns any door into a gate to The Morgue, an endlessly vast store of fresh indistinct human corpses. Any biological matter inside stops decaying and stays preserved.
 
 **Decision**
 
@@ -11119,7 +11239,7 @@
 
 **Description**
 
-> A box with all essentials to grow Darkroot flora, including special fertilisers, seeds, and spores for Ents, Mushroom People, red and purple moss, green blossoms, glowing plants, etc. Corpses of powerful beings serve as extra fertiliser for faster growth.
+> (Tag:life)(Tag:nature)(Tag:production)(Tag:resource)A box with all essentials to grow Darkroot flora, including special fertilisers, seeds, and spores for Ents, Mushroom People, red and purple moss, green blossoms, glowing plants, etc. Corpses of powerful beings serve as extra fertiliser for faster growth.
 
 **Decision**
 
@@ -11136,7 +11256,7 @@
 
 **Description**
 
-> Seed packets of Lifeblood (Plasmium), a sentient blue fluid growing into self-producing plants in nearly any fertile environment. Ingesting it temporarily boosts vitality and acts as potent medicine, but overuse risks addiction and parasitic takeover unless constitution allows symbiosis granting regeneration and sustenance. It spreads rapidly if not carefully cultivated.
+> (Tag:life)(Tag:nature)(Tag:production)(Tag:resource)Seed packets of Lifeblood (Plasmium), a sentient blue fluid growing into self-producing plants in nearly any fertile environment. Ingesting it temporarily boosts vitality and acts as potent medicine, but overuse risks addiction and parasitic takeover unless constitution allows symbiosis granting regeneration and sustenance. It spreads rapidly if not carefully cultivated.
 
 **Decision**
 
@@ -11153,7 +11273,7 @@
 
 **Description**
 
-> Manifest a door to the Casino, a full facility in a 1 km x 1 km pocket dimension with slots, poker, stocked bar, private rooms, etc., manned by unobservable Schrodinger workers. Damage slowly repairs, and anyone may leave anytime via the main doors.
+> (Tag:dimension)Manifest a door to the Casino, a full facility in a 1 km x 1 km pocket dimension with slots, poker, stocked bar, private rooms, etc., manned by unobservable Schrodinger workers. Damage slowly repairs, and anyone may leave anytime via the main doors.
 
 **Decision**
 
@@ -11170,7 +11290,7 @@
 
 **Description**
 
-> The Emperor wasn't actually naked. These invisible comfortable clothes auto-conform with incredible defense, immune by default to low-calibre gunfire and scaling with natural defenses, plus lesser physical boosts. Wearing any other clothes nullifies all effects.
+> (Tag:armor)The Emperor wasn't actually naked. These invisible comfortable clothes auto-conform with incredible defense, immune by default to low-calibre gunfire and scaling with natural defenses, plus lesser physical boosts. Wearing any other clothes nullifies all effects.
 
 **Decision**
 
@@ -11187,7 +11307,7 @@
 
 **Description**
 
-> A flagship "Bakery" glass jar of practically limitless warm fresh chocolate chip cookies from a compressed universe optimised solely for cookie production. Note: DO NOT BREAK THE JAR. Note 2: DO NOT BREAK THE JAR; THE BAKERY IS NOT RESPONSIBLE FOR THE CONSEQUENCES OF BREAKING THE JAR.
+> (Tag:production)A flagship "Bakery" glass jar of practically limitless warm fresh chocolate chip cookies from a compressed universe optimised solely for cookie production. Note: DO NOT BREAK THE JAR. Note 2: DO NOT BREAK THE JAR; THE BAKERY IS NOT RESPONSIBLE FOR THE CONSEQUENCES OF BREAKING THE JAR.
 
 **Decision**
 
@@ -11204,7 +11324,7 @@
 
 **Description**
 
-> A Kazami Yuuka Fumo that continuously enriches soil and boosts crop growth speed and quality in a 2 km x 2 km range when placed. Carried, it increases Chlorokinetic potency.
+> (Tag:fumo)(Tag:nature)A Kazami Yuuka Fumo that continuously enriches soil and boosts crop growth speed and quality in a 2 km x 2 km range when placed. Carried, it increases Chlorokinetic potency.
 
 **Decision**
 
@@ -11221,7 +11341,7 @@
 
 **Description**
 
-> A refined Flintgem slate making sharpened bladed weapons temporarily red-hot without damage for 5 minutes. Usable up to 3 times every 24 hours.
+> (Tag:fire)(Tag:tool)A refined Flintgem slate making sharpened bladed weapons temporarily red-hot without damage for 5 minutes. Usable up to 3 times every 24 hours.
 
 **Decision**
 
@@ -11238,7 +11358,7 @@
 
 **Description**
 
-> A blank featureless ore identical to iron alone, transmuting fully into any contacted metal of at least 5 kg after 1 hour of direct contact if Epic rarity or lower, then losing mimicry. You get 3 5 kg bars. Restock Timer: 240 hours.
+> (Tag:material)(Tag:meta)A blank featureless ore identical to iron alone, transmuting fully into any contacted metal of at least 5 kg after 1 hour of direct contact if Epic rarity or lower, then losing mimicry. You get 3 5 kg bars. Restock Timer: 240 hours.
 
 **Decision**
 
@@ -11255,7 +11375,7 @@
 
 **Description**
 
-> (Tome) Justeaze Lizrich von Einzbern's simplified yet fully effective homunculus-creation guide for even regular people. It details Einzbern and advanced Justeaze-model Homunculi plus vats and related production items.
+> (Tag:grimoire)(Tag:life)(Tag:magic)(Tome) Justeaze Lizrich von Einzbern's simplified yet fully effective homunculus-creation guide for even regular people. It details Einzbern and advanced Justeaze-model Homunculi plus vats and related production items.
 
 **Decision**
 
@@ -11272,7 +11392,7 @@
 
 **Description**
 
-> (Tome) A guide to Amestris State Military Alchemy covering Transmutation Circles for all basic elements (Water, Earth, Wind, Fire, etc.), activation, and advanced effective use, required reading to use Alchemy. (Note: Excludes human transmutation, Scar's disintegration, and Philosopher Stone creation; only circles previously used by State Alchemists).
+> (Tag:grimoire)(Tag:magic)(Tag:transformation)(Tome) A guide to Amestris State Military Alchemy covering Transmutation Circles for all basic elements (Water, Earth, Wind, Fire, etc.), activation, and advanced effective use, required reading to use Alchemy. (Note: Excludes human transmutation, Scar's disintegration, and Philosopher Stone creation; only circles previously used by State Alchemists).
 
 **Decision**
 
@@ -11289,7 +11409,7 @@
 
 **Description**
 
-> (Tome) Father's (Dwarf in the Flask) guide to specialised Alchemy for Philosopher's Stones and advanced Homunculi. Study enables Human Transmutation circles converting living Human or Humanoid souls into Philosopher's Stones, potent fuel draining ensouled power, and creating advanced superhuman homunculi from them. Each homunculus may copy any ONE possessed ability of Elite rank or below, drawing stone energy to use it with cost scaling to power, requiring replacement when depleted.
+> (Tag:grimoire)(Tag:life)(Tag:magic)(Tag:spirit)(Tag:transformation)(Tome) Father's (Dwarf in the Flask) guide to specialised Alchemy for Philosopher's Stones and advanced Homunculi. Study enables Human Transmutation circles converting living Human or Humanoid souls into Philosopher's Stones, potent fuel draining ensouled power, and creating advanced superhuman homunculi from them. Each homunculus may copy any ONE possessed ability of Elite rank or below, drawing stone energy to use it with cost scaling to power, requiring replacement when depleted.
 
 **Decision**
 
@@ -11306,7 +11426,7 @@
 
 **Description**
 
-> An otherwise ordinary M1 Garand that quickly appears at hand whenever useful, whether under a couch, rug, etc. Found pristine and fully loaded regardless of prior location or condition, and retains this property even when modified.
+> (Tag:gun)(Tag:weapon)An otherwise ordinary M1 Garand that quickly appears at hand whenever useful, whether under a couch, rug, etc. Found pristine and fully loaded regardless of prior location or condition, and retains this property even when modified.
 
 **Decision**
 
@@ -11323,7 +11443,7 @@
 
 **Description**
 
-> "They would do anything for it." A simple gold coin embodying greed, compelling viewers to possess it at any cost, from selling family to swearing fealty or killing kin, with stronger entities more resistant. Once willingly given, it becomes normal, yet trades stay yours with the giver satisfied and unseeking return.
+> (Tag:tool)"They would do anything for it." A simple gold coin embodying greed, compelling viewers to possess it at any cost, from selling family to swearing fealty or killing kin, with stronger entities more resistant. Once willingly given, it becomes normal, yet trades stay yours with the giver satisfied and unseeking return.
 
 **Flagged in reports**
 
@@ -11344,7 +11464,7 @@
 
 **Description**
 
-> A green juice vial restoring the drinker to perfect health, resolving all complications and negative statuses. Requires full dose, as dilution ruins it; heals anything except death if consumable.
+> (Tag:consumable)(Tag:energy-recovery)(Tag:health-recovery)A green juice vial restoring the drinker to perfect health, resolving all complications and negative statuses. Requires full dose, as dilution ruins it; heals anything except death if consumable.
 
 **Flagged in reports**
 
@@ -11365,7 +11485,7 @@
 
 **Description**
 
-> A bottle of 100 flavorless small white pills, each equaling a regular meal that fully satiates for at least 8 hours with all nutrients for any race or peculiarity. Restock Timer: 120 hours.
+> (Tag:consumable)A bottle of 100 flavorless small white pills, each equaling a regular meal that fully satiates for at least 8 hours with all nutrients for any race or peculiarity. Restock Timer: 120 hours.
 
 **Decision**
 
@@ -11382,7 +11502,7 @@
 
 **Description**
 
-> No hyperbole: a pocket-sized gate to an entire replica mundane universe without cognizant creatures or civilizations. Freely movable and pocket-carriable, expanding to 50 meters in circumference and shrinking to 5cm, always leading to coordinates 0.0.
+> (Tag:dimension)No hyperbole: a pocket-sized gate to an entire replica mundane universe without cognizant creatures or civilizations. Freely movable and pocket-carriable, expanding to 50 meters in circumference and shrinking to 5cm, always leading to coordinates 0.0.
 
 **Flagged in reports**
 
@@ -11403,7 +11523,7 @@
 
 **Description**
 
-> Congratulations, gambler: a key temporarily turning any door into a gate to the High Roller Suite, a luxury hotel room with 3 beds, 2 bathrooms, running water, electricity, heat, local internet, and other amenities. It auto-cleans perfectly every 24 hours, exists in the middle of nowhere and requires the key to exit, returning users to their entry point. The key cannot be lost or destroyed.
+> (Tag:dimension)Congratulations, gambler: a key temporarily turning any door into a gate to the High Roller Suite, a luxury hotel room with 3 beds, 2 bathrooms, running water, electricity, heat, local internet, and other amenities. It auto-cleans perfectly every 24 hours, exists in the middle of nowhere and requires the key to exit, returning users to their entry point. The key cannot be lost or destroyed.
 
 **Decision**
 
@@ -11420,7 +11540,7 @@
 
 **Description**
 
-> Living-material boots greatly enhancing running speed, growing stepped-on mundane plants instantly to maturity with lush flora in a 1-meter radius and flowers in their wake rather than creating plants. Standing in nature while worn increases energy regeneration and nature affinity.
+> (Tag:accessory)(Tag:agility+)(Tag:energy-regeneration+)(Tag:fae)(Tag:nature)(Tag:nature+)Living-material boots greatly enhancing running speed, growing stepped-on mundane plants instantly to maturity with lush flora in a 1-meter radius and flowers in their wake rather than creating plants. Standing in nature while worn increases energy regeneration and nature affinity.
 
 **Decision**
 
@@ -11437,7 +11557,7 @@
 
 **Description**
 
-> Unassuming grass seeds that quickly grow in any soil or sand without nutrients into a lush garden enriching surrounding ground and air energy quality. The garden expands non-invasively until fenced, yielding much faster healthier crops and healthier vigorous cattle. Restock Timer: 720 hours.
+> (Tag:nature)Unassuming grass seeds that quickly grow in any soil or sand without nutrients into a lush garden enriching surrounding ground and air energy quality. The garden expands non-invasively until fenced, yielding much faster healthier crops and healthier vigorous cattle. Restock Timer: 720 hours.
 
 **Decision**
 
@@ -11454,7 +11574,7 @@
 
 **Description**
 
-> Fertilizer from a mad scientist using eldritch waste, growing crops 30x faster for 24 hours with perfect nutrients regardless of needs. Each bag covers exactly 1 acre. Restock Timer: 240 hours.
+> (Tag:nature)Fertilizer from a mad scientist using eldritch waste, growing crops 30x faster for 24 hours with perfect nutrients regardless of needs. Each bag covers exactly 1 acre. Restock Timer: 240 hours.
 
 **Decision**
 
@@ -11471,7 +11591,7 @@
 
 **Description**
 
-> A staff of solidified flower suffused with nature energy. Expend energy to nourish and rapidly grow plants in range, even reviving half-dead seeds on arid land into lush fertile ground; stronger or demanding plants cost more energy. Amplifies nature-based abilities channeled through it.
+> (Tag:catalyst)(Tag:nature)(Tag:nature+)A staff of solidified flower suffused with nature energy. Expend energy to nourish and rapidly grow plants in range, even reviving half-dead seeds on arid land into lush fertile ground; stronger or demanding plants cost more energy. Amplifies nature-based abilities channeled through it.
 
 **Decision**
 
@@ -11488,7 +11608,7 @@
 
 **Description**
 
-> (Gacha) A golden poker chip that lets you reroll your latest gacha ticket, discarding its result for a different result on the same ticket. The chip vanishes upon use.
+> (Tag:meta)(Gacha) A golden poker chip that lets you reroll your latest gacha ticket, discarding its result for a different result on the same ticket. The chip vanishes upon use.
 
 **Flagged in reports**
 
@@ -11509,7 +11629,7 @@
 
 **Description**
 
-> An ordinary-looking sticker that suffuses clothing with integrated Vibranium weaving, making it incredibly durable and able to disperse kinetic energy so even a baseline human can survive a tank shell. Only enough for up to 5 kg of clothing.
+> (Tag:material)(Tag:transformation)An ordinary-looking sticker that suffuses clothing with integrated Vibranium weaving, making it incredibly durable and able to disperse kinetic energy so even a baseline human can survive a tank shell. Only enough for up to 5 kg of clothing.
 
 **Decision**
 
@@ -11526,7 +11646,7 @@
 
 **Description**
 
-> The rock King Arthur pulled a sword from. Magically enchanted to be utterly indestructible to all effects below Mythical level.
+> (Tag:bludgeon)(Tag:weapon)The rock King Arthur pulled a sword from. Magically enchanted to be utterly indestructible to all effects below Mythical level.
 
 **Decision**
 
@@ -11560,7 +11680,7 @@
 
 **Description**
 
-> A pot of very hot spicy soup that instantly kills anyone who willingly drinks it while knowing its effects, regardless of constitution or abilities. The whole soup must be consumed for it to take effect.
+> (Tag:consumable)A pot of very hot spicy soup that instantly kills anyone who willingly drinks it while knowing its effects, regardless of constitution or abilities. The whole soup must be consumed for it to take effect.
 
 **Flagged in reports**
 
@@ -11581,7 +11701,7 @@
 
 **Description**
 
-> A pot of incredibly hot spicy soup; consuming the entire pot covers the consumer's body in [(Rare)Cursed Flames], [(Elite)Blood Flames], [(Elite)Holy Flames], and [(Elite)Godslayer Apostle Flames].
+> (Tag:anti-divine)(Tag:anti-recovery)(Tag:blood)(Tag:consumable)(Tag:curse)(Tag:fire)(Tag:holy)(Tag:infernal)A pot of incredibly hot spicy soup; consuming the entire pot covers the consumer's body in [(Rare)Cursed Flames], [(Elite)Blood Flames], [(Elite)Holy Flames], and [(Elite)Godslayer Apostle Flames].
 
 **Decision**
 
@@ -11598,7 +11718,7 @@
 
 **Description**
 
-> A 3 kg iron sword with a pure iron blade that can change shape while conserving mass. Destroyed or separated parts lose this property, as does reforging or modifying the sword.
+> (Tag:blade)(Tag:weapon)A 3 kg iron sword with a pure iron blade that can change shape while conserving mass. Destroyed or separated parts lose this property, as does reforging or modifying the sword.
 
 **Decision**
 
@@ -11615,7 +11735,7 @@
 
 **Description**
 
-> A ticket that when torn teleports the user to a 4x4x4m prison-like extradimensional bunker stocked with clean water and MREs for 8 hours. The user cannot leave early without spatial manipulation and can be tracked by those with spatial abilities; release is automatic after 8 hours.
+> (Tag:movement)(Tag:ticket)A ticket that when torn teleports the user to a 4x4x4m prison-like extradimensional bunker stocked with clean water and MREs for 8 hours. The user cannot leave early without spatial manipulation and can be tracked by those with spatial abilities; release is automatic after 8 hours.
 
 **Decision**
 
@@ -11632,7 +11752,7 @@
 
 **Description**
 
-> (Tech) A ticket redeemable by tearing and thinking of any commercially available gun sold in the USA in 2016. You also receive a magazine for the chosen weapon every 24 hours.
+> (Tag:gun)(Tag:ticket)(Tech) A ticket redeemable by tearing and thinking of any commercially available gun sold in the USA in 2016. You also receive a magazine for the chosen weapon every 24 hours.
 
 **Decision**
 
@@ -11649,7 +11769,7 @@
 
 **Description**
 
-> A pair of clip-on earrings that boost the wearer's hearing and acuity to Barn Owl level.
+> (Tag:accessory)(Tag:perception+)A pair of clip-on earrings that boost the wearer's hearing and acuity to Barn Owl level.
 
 **Decision**
 
@@ -11666,7 +11786,7 @@
 
 **Description**
 
-> Ordinary-looking glasses that grant the wearer the farsight and visual acuity of a Bald Eagle.
+> (Tag:accessory)(Tag:perception+)Ordinary-looking glasses that grant the wearer the farsight and visual acuity of a Bald Eagle.
 
 **Decision**
 
@@ -11683,7 +11803,7 @@
 
 **Description**
 
-> A red dog collar that grants the wearer the smell and olfactory abilities of a Gray Wolf.
+> (Tag:accessory)(Tag:perception+)A red dog collar that grants the wearer the smell and olfactory abilities of a Gray Wolf.
 
 **Decision**
 
@@ -11700,7 +11820,7 @@
 
 **Description**
 
-> A horseshoe necklace that grants the wearer the stamina and leg strength of a Mustang Horse.
+> (Tag:accessory)(Tag:perception+)A horseshoe necklace that grants the wearer the stamina and leg strength of a Mustang Horse.
 
 **Decision**
 
@@ -11717,7 +11837,7 @@
 
 **Description**
 
-> A sharp long dagger of the ghosts of New Londo whose curse lets it wound spiritual beings. It does not inflict soul damage on living beings.
+> (Tag:blade)(Tag:dagger)(Tag:spirit)(Tag:weapon)A sharp long dagger of the ghosts of New Londo whose curse lets it wound spiritual beings. It does not inflict soul damage on living beings.
 
 **Decision**
 
@@ -11734,7 +11854,7 @@
 
 **Description**
 
-> Armor and weapons of the Black Knights of Lordran, with armor that stays perfectly fitted unless your body shape changes drastically. Contains a Greatsword, Battle Axe, Halberd, Sword, and Shield.
+> (Tag:armor)(Tag:blade)(Tag:shield)(Tag:weapon)Armor and weapons of the Black Knights of Lordran, with armor that stays perfectly fitted unless your body shape changes drastically. Contains a Greatsword, Battle Axe, Halberd, Sword, and Shield.
 
 **Decision**
 
@@ -11751,7 +11871,7 @@
 
 **Description**
 
-> A Perfumers' pouch containing one each of Acid Spraymist, Poison Spraymist, Bloodboil Aromatic, Ironjar Aromatic, and Uplifting Aromatic. Another set is added every 24 hours.
+> (Tag:consumable)(Tag:defence+)(Tag:enhancer)(Tag:poison)(Tag:production)A Perfumers' pouch containing one each of Acid Spraymist, Poison Spraymist, Bloodboil Aromatic, Ironjar Aromatic, and Uplifting Aromatic. Another set is added every 24 hours.
 
 **Decision**
 
@@ -11768,7 +11888,7 @@
 
 **Description**
 
-> A leather deck of standard Hidden Leaf Explosive Tags that explode with decent power when imbued with energy. The user can set the detonation delay and, with practice and pre-imbuing, detonate them remotely. Contains 5 tags that restock every 24 hours.
+> (Tag:production)(Tag:weapon)A leather deck of standard Hidden Leaf Explosive Tags that explode with decent power when imbued with energy. The user can set the detonation delay and, with practice and pre-imbuing, detonate them remotely. Contains 5 tags that restock every 24 hours.
 
 **Decision**
 
@@ -11785,7 +11905,7 @@
 
 **Description**
 
-> The famed, extremely sharp and durable blade of a family of executioners. The user can expend energy to make it fly at their will with the same power as a normal swing.
+> (Tag:blade)(Tag:weapon)The famed, extremely sharp and durable blade of a family of executioners. The user can expend energy to make it fly at their will with the same power as a normal swing.
 
 **Decision**
 
@@ -11802,7 +11922,7 @@
 
 **Description**
 
-> A clerics' sword of St. Trina with a weak blade that converts the user's energy into magical purple mist that puts inhalers into deep sleep. Stronger targets require longer exposure.
+> (Tag:blade)(Tag:magic)(Tag:weapon)A clerics' sword of St. Trina with a weak blade that converts the user's energy into magical purple mist that puts inhalers into deep sleep. Stronger targets require longer exposure.
 
 **Decision**
 
@@ -11819,7 +11939,7 @@
 
 **Description**
 
-> Saint Trina's supernaturally sharp and durable velvet-dyed sword. It expends the user's energy to unleash the Mist of Eternal Sleep, putting targets into slumber that cannot be broken even by harm; stronger targets need longer exposure and wake more easily.
+> (Tag:blade)(Tag:magic)(Tag:weapon)Saint Trina's supernaturally sharp and durable velvet-dyed sword. It expends the user's energy to unleash the Mist of Eternal Sleep, putting targets into slumber that cannot be broken even by harm; stronger targets need longer exposure and wake more easily.
 
 **Decision**
 
@@ -11836,7 +11956,7 @@
 
 **Description**
 
-> An IOU cheque proving Charon the Ferryman owes you a favor. Tearing it has Charon bring you any one dead soul from the world you tore it in, plus the largest part of their corpse, with soul and body in separate sealed containers.
+> (Tag:spirit)(Tag:ticket)An IOU cheque proving Charon the Ferryman owes you a favor. Tearing it has Charon bring you any one dead soul from the world you tore it in, plus the largest part of their corpse, with soul and body in separate sealed containers.
 
 **Flagged in reports**
 
@@ -11857,7 +11977,7 @@
 
 **Description**
 
-> (Tech) A shipment of 9 Aperture Science Sentry Turrets with twin machine guns, cheap and reliable for keeping out intruders. Bullet reserves refill every 24 hours (bullets cannot be removed). Restock Timer: 168 hours.
+> (Tag:gun)(Tag:machine)(Tag:tech)(Tech) A shipment of 9 Aperture Science Sentry Turrets with twin machine guns, cheap and reliable for keeping out intruders. Bullet reserves refill every 24 hours (bullets cannot be removed). Restock Timer: 168 hours.
 
 **Decision**
 
@@ -11874,7 +11994,7 @@
 
 **Description**
 
-> A standard black barrel containing infinite quality medium crude oil that flows at 10 gallons per minute when tipped. If damaged or forcefully modified, it loses this property.
+> (Tag:production)(Tag:resource)A standard black barrel containing infinite quality medium crude oil that flows at 10 gallons per minute when tipped. If damaged or forcefully modified, it loses this property.
 
 **Decision**
 
@@ -11891,7 +12011,7 @@
 
 **Description**
 
-> "Does this scare you?" An ordinary-looking job application form that, when correctly filled and handed to an employer, guarantees the applicant is hired regardless of job or qualifications, though not that they keep the job. Single use.
+> (Tag:tool)"Does this scare you?" An ordinary-looking job application form that, when correctly filled and handed to an employer, guarantees the applicant is hired regardless of job or qualifications, though not that they keep the job. Single use.
 
 **Decision**
 
@@ -11908,7 +12028,7 @@
 
 **Description**
 
-> A bottle of finest Iridium Quality Ancient Fruit Wine, handcrafted and aged with superb refined taste but no supernatural effects and high artisan value. Restock Timer: 12 hours.
+> (Tag:consumable)A bottle of finest Iridium Quality Ancient Fruit Wine, handcrafted and aged with superb refined taste but no supernatural effects and high artisan value. Restock Timer: 12 hours.
 
 **Decision**
 
@@ -11925,7 +12045,7 @@
 
 **Description**
 
-> An ordinary-looking satchel with virtually unlimited Earth-surface seeds and saplings from 2020; reach in while thinking of the target to retrieve it, up to 10 kg every 24 hours. Includes a notepad detailing every item inside.
+> (Tag:nature)(Tag:production)An ordinary-looking satchel with virtually unlimited Earth-surface seeds and saplings from 2020; reach in while thinking of the target to retrieve it, up to 10 kg every 24 hours. Includes a notepad detailing every item inside.
 
 **Decision**
 
@@ -11942,7 +12062,7 @@
 
 **Description**
 
-> A simple white cap reading "dunce," used to shame someone.
+> (Tag:accessory)A simple white cap reading "dunce," used to shame someone.
 
 **Decision**
 
@@ -11959,7 +12079,7 @@
 
 **Description**
 
-> "Hey, it worked for Hercules" A bottle of Goddess Hera's freshly squeezed breastmilk; drinking the entire bottle vastly increases bodily potential, letting even a regular human train to superhuman strength and durability without increasing talent or training speed. Restock Timer: 168 hours.
+> (Tag:consumable)(Tag:elixir)(Tag:growth+)"Hey, it worked for Hercules" A bottle of Goddess Hera's freshly squeezed breastmilk; drinking the entire bottle vastly increases bodily potential, letting even a regular human train to superhuman strength and durability without increasing talent or training speed. Restock Timer: 168 hours.
 
 **Flagged in reports**
 
@@ -11980,7 +12100,7 @@
 
 **Description**
 
-> Stylish ordinary-looking glasses that suppress the wearer's eye-based abilities and magic while granting resistance to others' ocular abilities. Overwhelmingly strong abilities can overpower this effect.
+> (Tag:accessory)Stylish ordinary-looking glasses that suppress the wearer's eye-based abilities and magic while granting resistance to others' ocular abilities. Overwhelmingly strong abilities can overpower this effect.
 
 **Decision**
 
@@ -11997,7 +12117,7 @@
 
 **Description**
 
-> 3 5 kg ingots of sunlight-absorbed Scarlet Ore Nichirin, a very durable anti-demon metal that amplifies Fire-based abilities and withstands extreme temperatures without deforming. Restock Timer: 120 hours.
+> (Tag:fire+)(Tag:material)3 5 kg ingots of sunlight-absorbed Scarlet Ore Nichirin, a very durable anti-demon metal that amplifies Fire-based abilities and withstands extreme temperatures without deforming. Restock Timer: 120 hours.
 
 **Decision**
 
@@ -12014,7 +12134,7 @@
 
 **Description**
 
-> A divine Brother Gods relic that summons the spirit Jinn, who answers one question per use as long as a non-divine being in your current world knows the answer. You may converse with the smart, wise, non-combatant Jinn freely, but gain another question only every 720 hours.
+> (Tag:divination)(Tag:spirit)(Tag:summon)(Tag:tool)A divine Brother Gods relic that summons the spirit Jinn, who answers one question per use as long as a non-divine being in your current world knows the answer. You may converse with the smart, wise, non-combatant Jinn freely, but gain another question only every 720 hours.
 
 **Flagged in reports**
 
@@ -12035,7 +12155,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km desert pocket dimension with harsh sun, strong wind, and cold nights where few creatures survive. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km desert pocket dimension with harsh sun, strong wind, and cold nights where few creatures survive. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -12052,7 +12172,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km temperate forest pocket dimension full of life, resources, and Earth natives like wolves. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)(Tag:nature)An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km temperate forest pocket dimension full of life, resources, and Earth natives like wolves. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -12069,7 +12189,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 10 km x 10 km x 10 km beach and sea pocket dimension full of sea life, ideal for fishing or vacation. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)An ornate key that when turned in a large space creates a portal to a 10 km x 10 km x 10 km beach and sea pocket dimension full of sea life, ideal for fishing or vacation. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -12086,7 +12206,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km frozen tundra pocket dimension with perpetual cold, snowstorms, some Earth life, and visible northern lights. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km frozen tundra pocket dimension with perpetual cold, snowstorms, some Earth life, and visible northern lights. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -12103,7 +12223,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 500 km x 500 km x 500 km lifeless cave pocket dimension containing Raw Dust Crystals and rarer varieties in lesser amounts, requiring special equipment and caution to excavate. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)(Tag:resource)An ornate key that when turned in a large space creates a portal to a 500 km x 500 km x 500 km lifeless cave pocket dimension containing Raw Dust Crystals and rarer varieties in lesser amounts, requiring special equipment and caution to excavate. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -12120,7 +12240,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km cave pocket dimension with a giant crystal-blue magically charged lake. Bathing in it speeds energy recovery, and its water is an excellent alchemical ingredient. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)(Tag:energy-regeneration+)An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km cave pocket dimension with a giant crystal-blue magically charged lake. Bathing in it speeds energy recovery, and its water is an excellent alchemical ingredient. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -12137,7 +12257,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km pocket dimension with a small mountain, natural healing hot springs, bamboo forest, and great view; the mountain cannot be descended. Springs slightly accelerate natural healing and replenish automatically. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)(Tag:health-regeneration+)An ornate key that when turned in a large space creates a portal to a 5 km x 5 km x 5 km pocket dimension with a small mountain, natural healing hot springs, bamboo forest, and great view; the mountain cannot be descended. Springs slightly accelerate natural healing and replenish automatically. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -12154,7 +12274,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 1 googol kilometers cubed pocket dimension lined with lifeless but powered Earth-standard apartments facing an empty center. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)An ornate key that when turned in a large space creates a portal to a 1 googol kilometers cubed pocket dimension lined with lifeless but powered Earth-standard apartments facing an empty center. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -12171,7 +12291,7 @@
 
 **Description**
 
-> An Adamantium-plated powered exoskeleton with superheated Adamantium blade, over 100 tons lifting strength, and life support letting even a sick old man use it fully. It conforms to any vaguely humanoid user and recharges to full within an hour when not in active use. (Mutagen manipulation device not included).
+> (Tag:armor)(Tag:blade)(Tag:enhancer)(Tag:tech)An Adamantium-plated powered exoskeleton with superheated Adamantium blade, over 100 tons lifting strength, and life support letting even a sick old man use it fully. It conforms to any vaguely humanoid user and recharges to full within an hour when not in active use. (Mutagen manipulation device not included).
 
 **Decision**
 
@@ -12188,7 +12308,7 @@
 
 **Description**
 
-> An addictive soldier's combat drug that suppresses pain, induces bloodthirsty haze, and boosts reflexes, metabolism, and concentration, with heavy addiction and side effects a skilled chemist might improve. You get 8 doses in a bandoleer. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:mental)An addictive soldier's combat drug that suppresses pain, induces bloodthirsty haze, and boosts reflexes, metabolism, and concentration, with heavy addiction and side effects a skilled chemist might improve. You get 8 doses in a bandoleer. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -12205,7 +12325,7 @@
 
 **Description**
 
-> A miracle drug that temporarily heightens mental clarity, thought speed, and memory retention, but is highly addictive and overuse can cause permanent memory loss and mental disorders a skilled chemist might fix. You get a box of 8 doses. Restock Timer: 76 hours.
+> (Tag:consumable)(Tag:mind+)A miracle drug that temporarily heightens mental clarity, thought speed, and memory retention, but is highly addictive and overuse can cause permanent memory loss and mental disorders a skilled chemist might fix. You get a box of 8 doses. Restock Timer: 76 hours.
 
 **Decision**
 
@@ -12222,7 +12342,7 @@
 
 **Description**
 
-> A potent temporary pre-war steroid that boosts endurance, strength, and reflexes enough to punch through wood and shrug off a baseball bat. Restock Timer: 76 hours.
+> (Tag:consumable)(Tag:defence+)(Tag:stamina+)(Tag:strength+)A potent temporary pre-war steroid that boosts endurance, strength, and reflexes enough to punch through wood and shrug off a baseball bat. Restock Timer: 76 hours.
 
 **Decision**
 
@@ -12239,7 +12359,7 @@
 
 **Description**
 
-> A baitless fishing rod that lures compelled fish and is more likely to attract quality or powerful sea-dwellers.
+> (Tag:tool)A baitless fishing rod that lures compelled fish and is more likely to attract quality or powerful sea-dwellers.
 
 **Decision**
 
@@ -12256,7 +12376,7 @@
 
 **Description**
 
-> Ornstein the Dragonslayer's large essence-imbued spear that channels the user's energy to wreathe it in lightning. It is more lethal against draconic enemies.
+> (Tag:anti-dragon)(Tag:electric)(Tag:polearm)(Tag:weapon)Ornstein the Dragonslayer's large essence-imbued spear that channels the user's energy to wreathe it in lightning. It is more lethal against draconic enemies.
 
 **Decision**
 
@@ -12273,7 +12393,7 @@
 
 **Description**
 
-> A holy hand-worn blade of shapeless ciphers that is almost impossible to clash with. Its power scales with the user's maximum energy.
+> (Tag:fist)(Tag:holy)(Tag:weapon)A holy hand-worn blade of shapeless ciphers that is almost impossible to clash with. Its power scales with the user's maximum energy.
 
 **Decision**
 
@@ -12290,7 +12410,7 @@
 
 **Description**
 
-> A pure-crystal spear tougher than steel that can also serve as a magic-casting catalyst like a wand.
+> (Tag:earth)(Tag:polearm)(Tag:resource)(Tag:weapon)A pure-crystal spear tougher than steel that can also serve as a magic-casting catalyst like a wand.
 
 **Decision**
 
@@ -12307,7 +12427,7 @@
 
 **Description**
 
-> The legendary archer Pharis' finely crafted powerful long-range bow, retaining essence that slightly aids aim. Comes with 30 standard arrows that restock every 24 hours.
+> (Tag:bow)(Tag:weapon)The legendary archer Pharis' finely crafted powerful long-range bow, retaining essence that slightly aids aim. Comes with 30 standard arrows that restock every 24 hours.
 
 **Decision**
 
@@ -12324,7 +12444,7 @@
 
 **Description**
 
-> (Tech) The reliable, simple Glock 19 for most basic handgun needs. You get a magazine every 24 hours.
+> (Tag:gun)(Tag:weapon)(Tech) The reliable, simple Glock 19 for most basic handgun needs. You get a magazine every 24 hours.
 
 **Decision**
 
@@ -12341,7 +12461,7 @@
 
 **Description**
 
-> Gwyndolin's Darkmoon bow that empowers arrows with your magical energy plus moon energy, with greater effect on its special moonlight arrows. Comes with 24 arrows that restock every 48 hours.
+> (Tag:bow)(Tag:magic)(Tag:weapon)Gwyndolin's Darkmoon bow that empowers arrows with your magical energy plus moon energy, with greater effect on its special moonlight arrows. Comes with 24 arrows that restock every 48 hours.
 
 **Decision**
 
@@ -12358,7 +12478,7 @@
 
 **Description**
 
-> A pure silver spoon personally blessed by the heavenly god, extremely lethal against vampires, ghouls, werewolves, and similar beings. Doubles as cutlery.
+> (Tag:anti-infernal)(Tag:anti-monster)(Tag:holy)(Tag:tool)A pure silver spoon personally blessed by the heavenly god, extremely lethal against vampires, ghouls, werewolves, and similar beings. Doubles as cutlery.
 
 **Decision**
 
@@ -12375,7 +12495,7 @@
 
 **Description**
 
-> Pontiff Sulyvahn Outrider armor and weapons forever cloaked in freezing mist: Irithyll Straightsword, Irithyll Rapier, Pontiff Knight Curved Sword, Pontiff Knight Great Scythe, and conforming Outrider Armor with great defense and cold protection. Infusing the blades with energy drops their temperature further and emits freezing mist.
+> (Tag:armor)(Tag:blade)(Tag:ice)(Tag:ice-resistance+)(Tag:polearm)(Tag:weapon)Pontiff Sulyvahn Outrider armor and weapons forever cloaked in freezing mist: Irithyll Straightsword, Irithyll Rapier, Pontiff Knight Curved Sword, Pontiff Knight Great Scythe, and conforming Outrider Armor with great defense and cold protection. Infusing the blades with energy drops their temperature further and emits freezing mist.
 
 **Decision**
 
@@ -12392,7 +12512,7 @@
 
 **Description**
 
-> Vordt of the Boreal Valley's incredibly heavy titanite great hammer, requiring inhuman strength to swing, with a frost-imbued head forever below freezing. It boosts ice-based abilities channeled through it.
+> (Tag:bludgeon)(Tag:ice)(Tag:ice+)(Tag:weapon)Vordt of the Boreal Valley's incredibly heavy titanite great hammer, requiring inhuman strength to swing, with a frost-imbued head forever below freezing. It boosts ice-based abilities channeled through it.
 
 **Decision**
 
@@ -12409,7 +12529,7 @@
 
 **Description**
 
-> A simple-looking expert Anor Londo straight blade holding Sunlight power. Raising it to praise the sun while imbuing energy strengthens you and nearby allies physically for 3 minutes, 30-minute cooldown. Boosts lightning and fire abilities channeled through it.
+> (Tag:blade)(Tag:defence+)(Tag:electric+)(Tag:holy)(Tag:holy+)(Tag:strength+)(Tag:weapon)A simple-looking expert Anor Londo straight blade holding Sunlight power. Raising it to praise the sun while imbuing energy strengthens you and nearby allies physically for 3 minutes, 30-minute cooldown. Boosts lightning and fire abilities channeled through it.
 
 **Decision**
 
@@ -12426,7 +12546,7 @@
 
 **Description**
 
-> The Lord of Blood servants' jagged blood-dripping dagger that fires its never-drying blood as a flying slash when infused with energy. Slightly reduces Vitality costs of abilities and effects while held.
+> (Tag:blade)(Tag:dagger)(Tag:life)(Tag:weapon)The Lord of Blood servants' jagged blood-dripping dagger that fires its never-drying blood as a flying slash when infused with energy. Slightly reduces Vitality costs of abilities and effects while held.
 
 **Decision**
 
@@ -12443,7 +12563,7 @@
 
 **Description**
 
-> The Nameless King's lightning-infused dragonslaying swordspear. Expending energy calls down a sky bolt and strengthens its lightning cloak. Boosts lightning abilities when used as a focus.
+> (Tag:anti-dragon)(Tag:electric)(Tag:electric+)(Tag:polearm)(Tag:weapon)The Nameless King's lightning-infused dragonslaying swordspear. Expending energy calls down a sky bolt and strengthens its lightning cloak. Boosts lightning abilities when used as a focus.
 
 **Decision**
 
@@ -12460,7 +12580,7 @@
 
 **Description**
 
-> A saint-blessed grenade with 1 kiloton of power that deals extra damage to unholy enemies. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:holy)(Tag:weapon)A saint-blessed grenade with 1 kiloton of power that deals extra damage to unholy enemies. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -12477,7 +12597,7 @@
 
 **Description**
 
-> (Tech) Tony Stark's revolutionary Arc Reactor using a new element difficult even for tinkers to replicate. It runs indefinitely, providing over 5 gigajoules per second.
+> (Tag:machine)(Tag:tech)(Tech) Tony Stark's revolutionary Arc Reactor using a new element difficult even for tinkers to replicate. It runs indefinitely, providing over 5 gigajoules per second.
 
 **Decision**
 
@@ -12494,7 +12614,7 @@
 
 **Description**
 
-> An unbreakable frying pan that doubles as a practical cooking utensil and hits slightly stronger than usual.
+> (Tag:bludgeon)(Tag:tool)(Tag:weapon)An unbreakable frying pan that doubles as a practical cooking utensil and hits slightly stronger than usual.
 
 **Decision**
 
@@ -12511,7 +12631,7 @@
 
 **Description**
 
-> A regular closet with infinite mundane clothing under 5 kg and under a standard gold coin in value, appearing per the reacher's desires, from lingerie to formal to cosplay. Only 50 outfits per day.
+> (Tag:production)A regular closet with infinite mundane clothing under 5 kg and under a standard gold coin in value, appearing per the reacher's desires, from lingerie to formal to cosplay. Only 50 outfits per day.
 
 **Decision**
 
@@ -12528,7 +12648,7 @@
 
 **Description**
 
-> A seed growing a tree that bears Golden Apples (uncommon item), requiring very nutrient-dense soil and an energy-rich environment to flourish.
+> (Tag:health-recovery)(Tag:nature)(Tag:production)A seed growing a tree that bears Golden Apples (uncommon item), requiring very nutrient-dense soil and an energy-rich environment to flourish.
 
 **Decision**
 
@@ -12545,7 +12665,7 @@
 
 **Description**
 
-> A red ball gag that suppresses all noise from the wearer when worn. Useful for spies and ninjas.
+> (Tag:accessory)(Tag:nsfw)(Tag:stealth)A red ball gag that suppresses all noise from the wearer when worn. Useful for spies and ninjas.
 
 **Decision**
 
@@ -12562,7 +12682,7 @@
 
 **Description**
 
-> A cloak that turns the wearer invisible as long as it is their only clothing.
+> (Tag:accessory)(Tag:nsfw)(Tag:stealth)A cloak that turns the wearer invisible as long as it is their only clothing.
 
 **Decision**
 
@@ -12579,7 +12699,7 @@
 
 **Description**
 
-> (Nsfw) A cat-tail buttplug that when worn increases reflexes, agility, balance, and acrobatics while reducing fall damage.
+> (Tag:accessory)(Tag:agility+)(Tag:nsfw)(Tag:reflex+)(Nsfw) A cat-tail buttplug that when worn increases reflexes, agility, balance, and acrobatics while reducing fall damage.
 
 **Decision**
 
@@ -12596,7 +12716,7 @@
 
 **Description**
 
-> (Nsfw) Bondage ropes worn in place of clothes that boost durability and stamina regeneration and convert pain into pleasure.
+> (Tag:armor)(Tag:defence+)(Tag:nsfw)(Tag:stamina+)(Nsfw) Bondage ropes worn in place of clothes that boost durability and stamina regeneration and convert pain into pleasure.
 
 **Decision**
 
@@ -12613,7 +12733,7 @@
 
 **Description**
 
-> (Nsfw) A raunchy bunny-ears headband and bunny-tail buttplug set that slightly increases charm and appeal to others.
+> (Tag:accessory)(Tag:social)(Nsfw) A raunchy bunny-ears headband and bunny-tail buttplug set that slightly increases charm and appeal to others.
 
 **Decision**
 
@@ -12630,7 +12750,7 @@
 
 **Description**
 
-> (Nsfw) Silver devotional beads that boost Holy and faith-based abilities and connection to Holy beings while all beads are inside the anal cavity.
+> (Tag:accessory)(Tag:holy+)(Tag:nsfw)(Nsfw) Silver devotional beads that boost Holy and faith-based abilities and connection to Holy beings while all beads are inside the anal cavity.
 
 **Decision**
 
@@ -12647,7 +12767,7 @@
 
 **Description**
 
-> (Nsfw) A supernaturally durable whip that deals only superficial harm, converting the rest of its normal damage into sexual pleasure.
+> (Tag:flexible)(Tag:nsfw)(Tag:weapon)(Nsfw) A supernaturally durable whip that deals only superficial harm, converting the rest of its normal damage into sexual pleasure.
 
 **Decision**
 
@@ -12664,7 +12784,7 @@
 
 **Description**
 
-> The Helltaker's black Satan-embroidered apron that speeds cooking improvement, especially pancakes.
+> (Tag:accessory)(Tag:skill+)The Helltaker's black Satan-embroidered apron that speeds cooking improvement, especially pancakes.
 
 **Decision**
 
@@ -12681,7 +12801,7 @@
 
 **Description**
 
-> A skintight ultra-light black bodysuit that stimulates body and muscles to unlock latent power and physical performance while amplifying sensation; less efficient over other clothing. Tougher than steel and slowly self-mending if torn.
+> (Tag:agility+)(Tag:armor)(Tag:defence+)(Tag:strength+)A skintight ultra-light black bodysuit that stimulates body and muscles to unlock latent power and physical performance while amplifying sensation; less efficient over other clothing. Tougher than steel and slowly self-mending if torn.
 
 **Decision**
 
@@ -12698,7 +12818,7 @@
 
 **Description**
 
-> A bucket with 1 liter of milk that, if drunk in one motion, dispels all current unnatural afflictions — curses, sickness, magical effects, good or bad — but not wounds, lacking restorative properties, nor effects that have become part of the drinker.
+> (Tag:ailment-recovery)(Tag:consumable)A bucket with 1 liter of milk that, if drunk in one motion, dispels all current unnatural afflictions, curses, sickness, magical effects, good or bad, but not wounds, lacking restorative properties, nor effects that have become part of the drinker.
 
 **Flagged in reports**
 
@@ -12719,7 +12839,7 @@
 
 **Description**
 
-> A soul-bound spiritual katana manifesting a raging inferno; output, control, and blade strength scale with the user, defaulting to boulder-shattering and house-burning. Amplifies the user's fire abilities. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:blade)(Tag:bound)(Tag:fire)(Tag:fire+)(Tag:growing)(Tag:spirit)(Tag:weapon)A soul-bound spiritual katana manifesting a raging inferno; output, control, and blade strength scale with the user, defaulting to boulder-shattering and house-burning. Amplifies the user's fire abilities. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12736,7 +12856,7 @@
 
 **Description**
 
-> Ryujin Jakka's Bankai, a burnt blade whose power and heat scale with the user, granting four directional abilities: East concentrates all flames in the blade for maximum destruction, West cloaks the body in extreme defensive heat, South raises slain corpses as puppets, and North unleashes all power in a superheated slash. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:blade)(Tag:bound)(Tag:fire)(Tag:fire+)(Tag:necro)(Tag:spirit)(Tag:weapon)Ryujin Jakka's Bankai, a burnt blade whose power and heat scale with the user, granting four directional abilities: East concentrates all flames in the blade for maximum destruction, West cloaks the body in extreme defensive heat, South raises slain corpses as puppets, and North unleashes all power in a superheated slash. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12753,7 +12873,7 @@
 
 **Description**
 
-> Shinso, a soul-bound wakizashi whose strength scales with the user. Its Shikai extends its length, with max size and speed scaling with the user and defaulting to 10x base length. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:bound)(Tag:growing)(Tag:polearm)(Tag:spirit)(Tag:weapon)Shinso, a soul-bound wakizashi whose strength scales with the user. Its Shikai extends its length, with max size and speed scaling with the user and defaulting to 10x base length. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12770,7 +12890,7 @@
 
 **Description**
 
-> Shinso's Bankai, a soul-bound wakizashi at maximum power whose strength scales with the user. It extends to insane lengths at blinding speed, up to several kilometers and nigh unreactable if the user is strong enough, without the poison ability. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:bound)(Tag:polearm)(Tag:spirit)(Tag:weapon)Shinso's Bankai, a soul-bound wakizashi at maximum power whose strength scales with the user. It extends to insane lengths at blinding speed, up to several kilometers and nigh unreactable if the user is strong enough, without the poison ability. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12787,7 +12907,7 @@
 
 **Description**
 
-> Kyokai Suigetsu, a soul-bound katana scaling with the user, places viewers under "Absolute Hypnosis" to manipulate all 5 senses, persisting after Shikai ends if they saw its release. Hypnosis effectiveness scales with user-target power difference. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:blade)(Tag:bound)(Tag:mental)(Tag:spirit)(Tag:weapon)Kyokai Suigetsu, a soul-bound katana scaling with the user, places viewers under "Absolute Hypnosis" to manipulate all 5 senses, persisting after Shikai ends if they saw its release. Hypnosis effectiveness scales with user-target power difference. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12804,7 +12924,7 @@
 
 **Description**
 
-> Minazuki, a soul-bound katana scaling with the user, transforms by command into a giant flying creature that swallows people to heal them, with healing scaling with the user. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:blade)(Tag:bound)(Tag:health-recovery)(Tag:spirit)(Tag:summon)(Tag:weapon)Minazuki, a soul-bound katana scaling with the user, transforms by command into a giant flying creature that swallows people to heal them, with healing scaling with the user. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12821,7 +12941,7 @@
 
 **Description**
 
-> Minazuki's Bankai, a soul-bound katana at maximum power scaling with the user, covers the battlefield in a controlled blood-like substance to enhance attacks or heal self and others, with potency scaling with the user. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:blade)(Tag:bound)(Tag:health-recovery)(Tag:life)(Tag:spirit)(Tag:summon)(Tag:weapon)Minazuki's Bankai, a soul-bound katana at maximum power scaling with the user, covers the battlefield in a controlled blood-like substance to enhance attacks or heal self and others, with potency scaling with the user. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12838,7 +12958,7 @@
 
 **Description**
 
-> Tachikaze, a soul-bound wakizashi scaling with the user, sends detonatable empowered wind slashes and boosts wind abilities channeled through it. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:air)(Tag:air+)(Tag:blade)(Tag:bound)(Tag:growing)(Tag:spirit)(Tag:weapon)Tachikaze, a soul-bound wakizashi scaling with the user, sends detonatable empowered wind slashes and boosts wind abilities channeled through it. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12855,7 +12975,7 @@
 
 **Description**
 
-> Tachikaze's Bankai, soul-bound wrapping knuckle-dusters with upper-body armor at maximum power scaling with the user, releases powerful wind explosions with every punch and boosts wind abilities channeled through it. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:air)(Tag:air+)(Tag:armor)(Tag:blade)(Tag:bound)(Tag:fist)(Tag:spirit)(Tag:weapon)Tachikaze's Bankai, soul-bound wrapping knuckle-dusters with upper-body armor at maximum power scaling with the user, releases powerful wind explosions with every punch and boosts wind abilities channeled through it. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12872,7 +12992,7 @@
 
 **Description**
 
-> Gonryomaru, a soul-bound rapier scaling with the user, wraps its blade in lightning to empower it and fire lightning slashes, boosting electricity abilities channeled through it. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:blade)(Tag:bound)(Tag:electric)(Tag:electric+)(Tag:growing)(Tag:spirit)(Tag:weapon)Gonryomaru, a soul-bound rapier scaling with the user, wraps its blade in lightning to empower it and fire lightning slashes, boosting electricity abilities channeled through it. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12889,7 +13009,7 @@
 
 **Description**
 
-> Gonryomaru's Bankai, a soul-bound rapier at maximum power scaling with the user, controls weather to call down powerful lightning and wreaths the sword in violent lightning, greatly boosting electricity abilities channeled through it. (A/N: Does not give spiritual energy, cannot be evolved).
+> (Tag:blade)(Tag:bound)(Tag:electric)(Tag:electric+)(Tag:spirit)Gonryomaru's Bankai, a soul-bound rapier at maximum power scaling with the user, controls weather to call down powerful lightning and wreaths the sword in violent lightning, greatly boosting electricity abilities channeled through it. (A/N: Does not give spiritual energy, cannot be evolved).
 
 **Decision**
 
@@ -12906,7 +13026,7 @@
 
 **Description**
 
-> Asauchi, a dormant unnamed soul-bound weapon that fits and grows with the user, scaling with them. Unlocking Shikai grants a unique user-natured ability at or below Rare rank, upgraded to Epic rank upon unlocking Bankai.
+> (Tag:blade)(Tag:bound)(Tag:growing)(Tag:spirit)Asauchi, a dormant unnamed soul-bound weapon that fits and grows with the user, scaling with them. Unlocking Shikai grants a unique user-natured ability at or below Rare rank, upgraded to Epic rank upon unlocking Bankai.
 
 **Decision**
 
@@ -12923,7 +13043,7 @@
 
 **Description**
 
-> An incredibly durable infernal hammer of hellflame-tempered steel that bursts into hellflame explosions on impact proportional to physical force.
+> (Tag:bludgeon)(Tag:fire)(Tag:infernal)(Tag:weapon)An incredibly durable infernal hammer of hellflame-tempered steel that bursts into hellflame explosions on impact proportional to physical force.
 
 **Decision**
 
@@ -12940,7 +13060,7 @@
 
 **Description**
 
-> A blessed sanctified-steel mace, incredibly durable and formidable, suffused with Holy Light. Exceptionally effective against Unholy entities.
+> (Tag:bludgeon)(Tag:holy)(Tag:weapon)A blessed sanctified-steel mace, incredibly durable and formidable, suffused with Holy Light. Exceptionally effective against Unholy entities.
 
 **Decision**
 
@@ -12957,7 +13077,7 @@
 
 **Description**
 
-> An angel-blessed ring gaining 1 charge every 8 hours up to 3, each activating one effect: 1: Smite - charges fists or held weapon with holy energy for the next strike. 2: Blessing - boosts one chosen physical stat for 5 minutes. 3: Purify - cures afflictions with strength scaling with user energy.
+> (Tag:accessory)(Tag:holy)(Tag:magic)An angel-blessed ring gaining 1 charge every 8 hours up to 3, each activating one effect: 1: Smite - charges fists or held weapon with holy energy for the next strike. 2: Blessing - boosts one chosen physical stat for 5 minutes. 3: Purify - cures afflictions with strength scaling with user energy.
 
 **Decision**
 
@@ -12974,7 +13094,7 @@
 
 **Description**
 
-> Thalasin - A prescription box with packs of 8 pills each that chemically induce their emotion regardless of biology, including Anger, Sadness, Happiness, Fear, Relief, Hope, Frustration, Pride, Lust, etc. Restock Timer: 24 hours.
+> (Tag:consumable)(Tag:mental)Thalasin - A prescription box with packs of 8 pills each that chemically induce their emotion regardless of biology, including Anger, Sadness, Happiness, Fear, Relief, Hope, Frustration, Pride, Lust, etc. Restock Timer: 24 hours.
 
 **Flagged in reports**
 
@@ -12995,7 +13115,7 @@
 
 **Description**
 
-> A mundane iron ring of exceptional evil and malice, but with no ability to affect anything or communicate to act on it.
+> (Tag:tool)A mundane iron ring of exceptional evil and malice, but with no ability to affect anything or communicate to act on it.
 
 **Decision**
 
@@ -13012,7 +13132,7 @@
 
 **Description**
 
-> An ordinary head-sized rock always slightly heavier than its lifter's maximum liftable weight.
+> (Tag:tool)An ordinary head-sized rock always slightly heavier than its lifter's maximum liftable weight.
 
 **Decision**
 
@@ -13029,7 +13149,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 10 km x 10 km x 10 km tilled farmland pocket dimension with refilling pond and farmhouse, where always-fertile dirt grows any magical or mundane crop tended tirelessly by Scarecrow golems. The dimension's water and dirt cannot be taken out. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)(Tag:nature)(Tag:production)(Tag:resource)An ornate key that when turned in a large space creates a portal to a 10 km x 10 km x 10 km tilled farmland pocket dimension with refilling pond and farmhouse, where always-fertile dirt grows any magical or mundane crop tended tirelessly by Scarecrow golems. The dimension's water and dirt cannot be taken out. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -13046,7 +13166,7 @@
 
 **Description**
 
-> A sealed insulated crate of 5 tons of super-rare Element Zero ("Eezo") that when electrically stimulated creates a "Mass Effect" field raising or lowering nearby objects' virtual mass. Restock Timer: 48 hours.
+> (Tag:gravity)(Tag:material)A sealed insulated crate of 5 tons of super-rare Element Zero ("Eezo") that when electrically stimulated creates a "Mass Effect" field raising or lowering nearby objects' virtual mass. Restock Timer: 48 hours.
 
 **Decision**
 
@@ -13063,7 +13183,7 @@
 
 **Description**
 
-> An enchanted Ebony dragon priest mask granting Fire and heat resistance while boosting Fire affinity and Fire abilities' potency.
+> (Tag:armor)(Tag:fire)(Tag:fire+)(Tag:fire-resistance+)An enchanted Ebony dragon priest mask granting Fire and heat resistance while boosting Fire affinity and Fire abilities' potency.
 
 **Decision**
 
@@ -13080,7 +13200,7 @@
 
 **Description**
 
-> An enchanted Ebony dragon priest mask granting Lightning and Wind resistance while boosting Lightning affinity and Lightning abilities' potency.
+> (Tag:air-resistance+)(Tag:armor)(Tag:electric+)(Tag:electric-resistance+)An enchanted Ebony dragon priest mask granting Lightning and Wind resistance while boosting Lightning affinity and Lightning abilities' potency.
 
 **Decision**
 
@@ -13097,7 +13217,7 @@
 
 **Description**
 
-> An enchanted Ebony dragon priest mask granting Ice and Cold resistance while boosting Ice affinity and Ice abilities' potency.
+> (Tag:armor)(Tag:ice)(Tag:ice+)(Tag:ice-resistance+)An enchanted Ebony dragon priest mask granting Ice and Cold resistance while boosting Ice affinity and Ice abilities' potency.
 
 **Decision**
 
@@ -13114,7 +13234,7 @@
 
 **Description**
 
-> An enchanted Malachite dragon priest mask granting considerable resistance to Ice, Cold, Heat, Fire, and Lightning.
+> (Tag:air-resistance+)(Tag:armor)(Tag:electric-resistance+)(Tag:fire-resistance+)(Tag:ice-resistance+)An enchanted Malachite dragon priest mask granting considerable resistance to Ice, Cold, Heat, Fire, and Lightning.
 
 **Decision**
 
@@ -13131,7 +13251,7 @@
 
 **Description**
 
-> A mastercraft Uru axe-hammer complementing Thor's powers, telekinetically commandable, granting flight, immense physicality, and regeneration. It commands lightning and storms in massive waves or sky-called bolts, and massively enhances Sky and Lightning abilities as a focus. (Not connected to Bifrost).
+> (Tag:air+)(Tag:blade)(Tag:bludgeon)(Tag:electric)(Tag:electric+)(Tag:enhancer)(Tag:health-regeneration+)(Tag:weapon)A mastercraft Uru axe-hammer complementing Thor's powers, telekinetically commandable, granting flight, immense physicality, and regeneration. It commands lightning and storms in massive waves or sky-called bolts, and massively enhances Sky and Lightning abilities as a focus. (Not connected to Bifrost).
 
 **Decision**
 
@@ -13148,7 +13268,7 @@
 
 **Description**
 
-> "Judgement" The Apocalypse Trumpet that when blown summons a self-fueled [Heavenly Gate (Mythical)] unleashing a massive angel army including Dominions, Principalities, Thrones, and 4 Seraphim before vanishing. The army lasts indefinitely as independent entities under your command.
+> (Tag:holy)(Tag:light)(Tag:summon)(Tag:tool)"Judgement" The Apocalypse Trumpet that when blown summons a self-fueled [Heavenly Gate (Mythical)] unleashing a massive angel army including Dominions, Principalities, Thrones, and 4 Seraphim before vanishing. The army lasts indefinitely as independent entities under your command.
 
 **Decision**
 
@@ -13165,7 +13285,7 @@
 
 **Description**
 
-> A regular tin can labeled with its function; opening it summons 6 Gold Familiar Gacha familiars to beat the opener to death. They persist with intense focus until the target dies, then disappear.
+> (Tag:consumable)(Tag:summon)A regular tin can labeled with its function; opening it summons 6 Gold Familiar Gacha familiars to beat the opener to death. They persist with intense focus until the target dies, then disappear.
 
 **Flagged in reports**
 
@@ -13186,7 +13306,7 @@
 
 **Description**
 
-> An ornate key that when turned in a large space creates a portal to a 100mx100m godworthy forge pocket dimension with unbreakable tools and a furnace hotter than the sun's core yet safe. Nothing originally in the forge can be removed. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:building)(Tag:production)(Tag:tool)An ornate key that when turned in a large space creates a portal to a 100mx100m godworthy forge pocket dimension with unbreakable tools and a furnace hotter than the sun's core yet safe. Nothing originally in the forge can be removed. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -13203,7 +13323,7 @@
 
 **Description**
 
-> A plate of excellent fried rice by the greatest Shrimp chef in his universe, whose culinary school credentials should not be doubted.
+> (Tag:consumable)A plate of excellent fried rice by the greatest Shrimp chef in his universe, whose culinary school credentials should not be doubted.
 
 **Decision**
 
@@ -13220,7 +13340,7 @@
 
 **Description**
 
-> "Safety is paramount." A worn ring that upon detecting considerable danger covers the wearer in a Rare rank Barrier and teleports them to the safest location within 25000 meters. It breaks after use. Restock Timer: 168 hours.
+> (Tag:accessory)(Tag:movement)"Safety is paramount." A worn ring that upon detecting considerable danger covers the wearer in a Rare rank Barrier and teleports them to the safest location within 25000 meters. It breaks after use. Restock Timer: 168 hours.
 
 **Decision**
 
@@ -13237,7 +13357,7 @@
 
 **Description**
 
-> It's the kitchen gun! Aim at dirty appliances, countertops, or furniture and pull the trigger to shoot-clean the target.
+> (Tag:tool)It's the kitchen gun! Aim at dirty appliances, countertops, or furniture and pull the trigger to shoot-clean the target.
 
 **Decision**
 
@@ -13254,7 +13374,7 @@
 
 **Description**
 
-> A wooden light-bending invisibility ring that continuously screams to reveal the wearer, yelling things like "THEY ARE HERE!" and "LOOK OVER HERE!"
+> (Tag:accessory)(Tag:stealth)A wooden light-bending invisibility ring that continuously screams to reveal the wearer, yelling things like "THEY ARE HERE!" and "LOOK OVER HERE!"
 
 **Decision**
 
@@ -13271,7 +13391,7 @@
 
 **Description**
 
-> Faithful white-and-black clergy garb of very tough fabric granting minor resistance to darkness, curses, and negative energy.
+> (Tag:armor)(Tag:curse-resistance+)(Tag:dark-resistance+)(Tag:infernal-resistance+)Faithful white-and-black clergy garb of very tough fabric granting minor resistance to darkness, curses, and negative energy.
 
 **Decision**
 
@@ -13288,7 +13408,7 @@
 
 **Description**
 
-> An unusually hot, spicy yet nutritious stew for misbehavers that blinds the drinker for 24 hours. Restock Timer: 12 hours.
+> (Tag:consumable)(Tag:curse)An unusually hot, spicy yet nutritious stew for misbehavers that blinds the drinker for 24 hours. Restock Timer: 12 hours.
 
 **Decision**
 
@@ -13305,7 +13425,7 @@
 
 **Description**
 
-> A bright red clown nose that honks when squeezed.
+> (Tag:mundane)A bright red clown nose that honks when squeezed.
 
 **Decision**
 
@@ -13322,7 +13442,7 @@
 
 **Description**
 
-> An intangible Shen Gong Wu sword that when imbued with energy creates powerful winds and enhances wind and weather abilities.
+> (Tag:air)(Tag:air+)(Tag:blade)(Tag:weapon)An intangible Shen Gong Wu sword that when imbued with energy creates powerful winds and enhances wind and weather abilities.
 
 **Decision**
 
@@ -13339,7 +13459,7 @@
 
 **Description**
 
-> A Shen Gong Wu sash acting as a controllable third arm, long, flexible, and considerably stronger than a grown man.
+> (Tag:accessory)(Tag:weapon)A Shen Gong Wu sash acting as a controllable third arm, long, flexible, and considerably stronger than a grown person.
 
 **Decision**
 
@@ -13356,7 +13476,7 @@
 
 **Description**
 
-> Azmuth's Ascalon, one of the universe's greatest weapons, channeling reality's fundamental forces to create Cosmic-energy armor granting immense physical boost, defense, and mental immunity. It can cleave anything including realms, reality, and spacetime for teleportation, and project energy slashes. It can deflect, reflect, and cut energy itself, and drain the powers of opponents it stabs.
+> (Tag:armor)(Tag:blade)(Tag:defence+)(Tag:enhancer)(Tag:mental-resistance+)(Tag:reality-manipulation)(Tag:weapon)Azmuth's Ascalon, one of the universe's greatest weapons, channeling reality's fundamental forces to create Cosmic-energy armor granting immense physical boost, defense, and mental immunity. It can cleave anything including realms, reality, and spacetime for teleportation, and project energy slashes. It can deflect, reflect, and cut energy itself, and drain the powers of opponents it stabs.
 
 **Flagged in reports**
 
@@ -13377,7 +13497,7 @@
 
 **Description**
 
-> (Tech) A simple backpack with unlimited average-hardware-store contents, retrieved by physically reaching in for a known item.
+> (Tag:machine)(Tag:production)(Tag:tech)(Tag:tool)(Tech) A simple backpack with unlimited average-hardware-store contents, retrieved by physically reaching in for a known item.
 
 **Decision**
 
@@ -13394,7 +13514,7 @@
 
 **Description**
 
-> (Tech) A catalogue ordering anything from any regularly accessible Base Earth store for instant delivery. Everything costs double, adjusted to your current world's economy.
+> (Tag:production)(Tag:tech)(Tag:tool)(Tech) A catalogue ordering anything from any regularly accessible Base Earth store for instant delivery. Everything costs double, adjusted to your current world's economy.
 
 **Decision**
 
@@ -13411,7 +13531,7 @@
 
 **Description**
 
-> (Tech) A cardboard box of seemingly infinite mundane raw materials like wood, stone, ore, and rope, with only 50 kg removable every 24 hours. If lost or destroyed, you will stumble upon it intact when searching.
+> (Tag:production)(Tag:resource)(Tag:tech)(Tech) A cardboard box of seemingly infinite mundane raw materials like wood, stone, ore, and rope, with only 50 kg removable every 24 hours. If lost or destroyed, you will stumble upon it intact when searching.
 
 **Decision**
 
@@ -13428,7 +13548,7 @@
 
 **Description**
 
-> (Tech) "If Tony Stark could make do with it, so can you" A box of unlimited scrapped Earth electronics the average Joe discarded, retrieved only by reaching in, no tipping.
+> (Tag:machine)(Tag:production)(Tag:resource)(Tag:tech)(Tech) "If Tony Stark could make do with it, so can you" A box of unlimited scrapped Earth electronics the average Joe discarded, retrieved only by reaching in, no tipping.
 
 **Decision**
 
@@ -13445,7 +13565,7 @@
 
 **Description**
 
-> (Tech) A placeable 250 x 250 meter scrapyard that fills over time with scrap from Earth copies, from busted cars to discarded electronics, rarely an almost-intact military tank or a rotten bed.
+> (Tag:building)(Tag:machine)(Tag:production)(Tag:resource)(Tag:tech)(Tech) A placeable 250 x 250 meter scrapyard that fills over time with scrap from Earth copies, from busted cars to discarded electronics, rarely an almost-intact military tank or a rotten bed.
 
 **Decision**
 
@@ -13462,7 +13582,7 @@
 
 **Description**
 
-> An apotropaic Peach Tree whose leaves, bark, wood, and fruit ward evil, curses, and demons, with wooden swords as effective as steel against ghosts or demons. Comes with multiple saplings.
+> (Tag:holy)(Tag:nature)An apotropaic Peach Tree whose leaves, bark, wood, and fruit ward evil, curses, and demons, with wooden swords as effective as steel against ghosts or demons. Comes with multiple saplings.
 
 **Decision**
 
@@ -13479,7 +13599,7 @@
 
 **Description**
 
-> Thirty dollars in cash.
+> (Tag:meta)Thirty dollars in cash.
 
 **Decision**
 
@@ -13496,7 +13616,7 @@
 
 **Description**
 
-> A large sophisticated Loom weaving Life Fibers for clothing by sacrificing own or others' vitality into fiber. Higher-quality lifeforce yields more fiber.
+> (Tag:life)(Tag:production)A large sophisticated Loom weaving Life Fibers for clothing by sacrificing own or others' vitality into fiber. Higher-quality lifeforce yields more fiber.
 
 **Decision**
 
@@ -13513,7 +13633,7 @@
 
 **Description**
 
-> A perfected Flesh Eater Core that when pressed into a chest merges to make a Blade-Living Being mix with increased stats, signature element, and manifestable signature weapon. As a Flesh Eater they may choose a suitable Driver to draw energy from and share Blade powers with.
+> (Tag:implant)(Tag:race-change)(Tag:transformation)A perfected Flesh Eater Core that when pressed into a chest merges to make a Blade-Living Being mix with increased stats, signature element, and manifestable signature weapon. As a Flesh Eater they may choose a suitable Driver to draw energy from and share Blade powers with.
 
 **Decision**
 
@@ -13530,7 +13650,7 @@
 
 **Description**
 
-> An ornate crystal key that when turned in a large area creates a portal to a 100 km x 100 km x 100 km emptiness dimension containing only air and an indestructible glass-like floor. The exit portal stays open and leads to where the key was last used.
+> (Tag:dimension)An ornate crystal key that when turned in a large area creates a portal to a 100 km x 100 km x 100 km emptiness dimension containing only air and an indestructible glass-like floor. The exit portal stays open and leads to where the key was last used.
 
 **Decision**
 
@@ -13547,7 +13667,7 @@
 
 **Description**
 
-> Clarent, Mordred's Brilliantly Shining Royal Sword that slew Artoria Pendragon, amplifies physical abilities, energy output, and charisma while the wielder rightfully holds the title of King. Killing a Monarch with it transforms it into Clarent Blood, lifting restrictions for free use; otherwise it is only a very durable blunt blade.
+> (Tag:blade)(Tag:enhancer)(Tag:weapon)Clarent, Mordred's Brilliantly Shining Royal Sword that slew Artoria Pendragon, amplifies physical abilities, energy output, and charisma while the wielder rightfully holds the title of King. Killing a Monarch with it transforms it into Clarent Blood, lifting restrictions for free use; otherwise it is only a very durable blunt blade.
 
 **Decision**
 
@@ -13564,7 +13684,7 @@
 
 **Description**
 
-> A non-sentient angelic Prison of Flesh wielding Holy and Unholy energy to defend itself at all costs. It contains King Minos's Prime soul, released by slaying the prison; the occupant may not be friendly.
+> (Tag:holy)(Tag:infernal)(Tag:summon)A non-sentient angelic Prison of Flesh wielding Holy and Unholy energy to defend itself at all costs. It contains King Minos's Prime soul, released by slaying the prison; the occupant may not be friendly.
 
 **Decision**
 
@@ -13581,7 +13701,7 @@
 
 **Description**
 
-> Jason Voorhees's iconic hockey mask, dirty and foul-smelling.
+> (Tag:armor)(Tag:mundane)Jason Voorhees's iconic hockey mask, dirty and foul-smelling.
 
 **Decision**
 
@@ -13598,7 +13718,7 @@
 
 **Description**
 
-> A green spandex suit brimming with YOUTH!!!!! Worn with nothing else, it slightly boosts physical training gains and stamina recovery.
+> (Tag:armor)(Tag:growth+)(Tag:stamina+)A green spandex suit brimming with YOUTH!!!!! Worn with nothing else, it slightly boosts physical training gains and stamina recovery.
 
 **Decision**
 
@@ -13615,7 +13735,7 @@
 
 **Description**
 
-> A brass key that, turned in a sufficiently open space, opens a door to a pocket dimension containing a normal-looking suburban family home. Ignore its sometimes non-Euclidean geometry, shifting measurements, impossibly large labyrinthine structures, infohazards, and possibly murderous sentient house.
+> (Tag:dimension)(Tag:mental)(Tag:space)A brass key that, turned in a sufficiently open space, opens a door to a pocket dimension containing a normal-looking suburban family home. Ignore its sometimes non-Euclidean geometry, shifting measurements, impossibly large labyrinthine structures, infohazards, and possibly murderous sentient house.
 
 **Decision**
 
@@ -13632,7 +13752,7 @@
 
 **Description**
 
-> The seven dragon balls are scattered randomly across your current planet. Once gathered, Shenron grants the gatherer one wish within his power, or any ability below a 6.9 rating.
+> (Tag:draconic)(Tag:reality-manipulation)(Tag:summon)The seven dragon balls are scattered randomly across your current planet. Once gathered, Shenron grants the gatherer one wish within his power, or any ability below a 6.9 rating.
 
 **Decision**
 
@@ -13649,7 +13769,7 @@
 
 **Description**
 
-> The Pika Pika no Mi is an awful-tasting Devil Fruit granting the ability [Light Logia](Divine). The first to digest any part gains the ability and renders the rest inert, but gains the Curse of the Sea: unable to use energy when submerged in still water with rapidly draining stamina. Stacking two Curses of the Sea on one person kills them instantly.
+> (Tag:consumable)(Tag:light)(Tag:meta)(Tag:transformation)The Pika Pika no Mi is an awful-tasting Devil Fruit granting the ability [Light Logia](Divine). The first to digest any part gains the ability and renders the rest inert, but gains the Curse of the Sea: unable to use energy when submerged in still water with rapidly draining stamina. Stacking two Curses of the Sea on one person kills them instantly.
 
 **Decision**
 
@@ -13666,7 +13786,7 @@
 
 **Description**
 
-> The Magu Magu no Mi is an awful-tasting Devil Fruit granting the ability [Magma Logia](Mythical). The first to digest any part gains the ability and renders the rest inert, but gains the Curse of the Sea: unable to use energy when submerged in still water with rapidly draining stamina. Stacking two Curses of the Sea on one person kills them instantly.
+> (Tag:consumable)(Tag:earth)(Tag:fire)(Tag:meta)(Tag:transformation)The Magu Magu no Mi is an awful-tasting Devil Fruit granting the ability [Magma Logia](Mythical). The first to digest any part gains the ability and renders the rest inert, but gains the Curse of the Sea: unable to use energy when submerged in still water with rapidly draining stamina. Stacking two Curses of the Sea on one person kills them instantly.
 
 **Decision**
 
@@ -13683,7 +13803,7 @@
 
 **Description**
 
-> The Hie Hie no Mi is an awful-tasting Devil Fruit granting the ability [Ice Logia](Mythical). The first to digest any part gains the ability and renders the rest inert, but gains the Curse of the Sea: unable to use energy when submerged in still water with rapidly draining stamina. Stacking two Curses of the Sea on one person kills them instantly.
+> (Tag:consumable)(Tag:ice)(Tag:meta)(Tag:transformation)The Hie Hie no Mi is an awful-tasting Devil Fruit granting the ability [Ice Logia](Mythical). The first to digest any part gains the ability and renders the rest inert, but gains the Curse of the Sea: unable to use energy when submerged in still water with rapidly draining stamina. Stacking two Curses of the Sea on one person kills them instantly.
 
 **Decision**
 
@@ -13700,7 +13820,7 @@
 
 **Description**
 
-> Bashonen is a large fan that releases large amounts of one of five elements (Fire, Wind, Earth, Lightning, Water) when swung with imbued energy and a verbal command. Output scales with energy expended.
+> (Tag:air)(Tag:earth)(Tag:electric)(Tag:fire)(Tag:tool)(Tag:water)(Tag:weapon)Bashonen is a large fan that releases large amounts of one of five elements (Fire, Wind, Earth, Lightning, Water) when swung with imbued energy and a verbal command. Output scales with energy expended.
 
 **Decision**
 
@@ -13717,7 +13837,7 @@
 
 **Description**
 
-> A Vajra-shaped sword handle that forms a lightning energy blade when imbued with energy, scaling in power with energy imbued. Electricity-based abilities channeled through it are more potent.
+> (Tag:blade)(Tag:electric)(Tag:electric+)(Tag:weapon)A Vajra-shaped sword handle that forms a lightning energy blade when imbued with energy, scaling in power with energy imbued. Electricity-based abilities channeled through it are more potent.
 
 **Decision**
 
@@ -13734,7 +13854,7 @@
 
 **Description**
 
-> A ticket that, when torn, installs this strong close-combat mechanical arm onto the tearer. It generates shells from spare metal to expend for shockwaves.
+> (Tag:implant)(Tag:kinetic)(Tag:tech)A ticket that, when torn, installs this strong close-combat mechanical arm onto the tearer. It generates shells from spare metal to expend for shockwaves.
 
 **Decision**
 
@@ -13751,7 +13871,7 @@
 
 **Description**
 
-> A simple notebook containing explicit rules for how it works. A signer who has read the rules and is smart enough to comprehend the consequences relinquishes all rights to you, must obey all your commands, and cannot act against you.
+> (Tag:command)(Tag:tool)A simple notebook containing explicit rules for how it works. A signer who has read the rules and is smart enough to comprehend the consequences relinquishes all rights to you, must obey all your commands, and cannot act against you.
 
 **Decision**
 
@@ -13768,7 +13888,7 @@
 
 **Description**
 
-> A simple one-use landline phone. Dial while picturing the face of someone whose name you know in your current universe and they receive a copy to answer with. Calls last at most 1 hour, after which the phone is erased from existence.
+> (Tag:tool)A simple one-use landline phone. Dial while picturing the face of someone whose name you know in your current universe and they receive a copy to answer with. Calls last at most 1 hour, after which the phone is erased from existence.
 
 **Flagged in reports**
 
@@ -13789,7 +13909,7 @@
 
 **Description**
 
-> (Nsfw) A strangely branded but normal-looking can of coffee that makes the drinker orgasm intensely and uncontrollably when drunk. Restock Timer: 8 hours.
+> (Tag:consumable)(Tag:nsfw)(Nsfw)(Noncon) A strangely branded but normal-looking can of coffee that makes the drinker orgasm intensely and uncontrollably when drunk. Restock Timer: 8 hours.
 
 **Decision**
 
@@ -13806,7 +13926,7 @@
 
 **Description**
 
-> A book listing name, address, occupation, and short bio of every named living sapient creature within a 1 million-kilometer range. It auto-sorts and filters by age, race, address, height, etc. per your specifications, and you can open directly to a being's page if you know their name and appearance.
+> (Tag:divination)(Tag:tool)A book listing name, address, occupation, and short bio of every named living sapient creature within a 1 million-kilometer range. It auto-sorts and filters by age, race, address, height, etc. per your specifications, and you can open directly to a being's page if you know their name and appearance.
 
 **Decision**
 
@@ -13823,7 +13943,7 @@
 
 **Description**
 
-> An ordinary-looking aluminum pipe that produces an extremely loud clatter when dropped, enough to cause nearby hearing damage.
+> (Tag:tool)An ordinary-looking aluminum pipe that produces an extremely loud clatter when dropped, enough to cause nearby hearing damage.
 
 **Decision**
 
@@ -13840,7 +13960,7 @@
 
 **Description**
 
-> Hell now owes you taxes, paid as 100 envelopes each containing a sinner's soul. Use or trade them as you like. Restock Timer: 336 hours.
+> (Tag:infernal)(Tag:material)(Tag:spirit)Hell now owes you taxes, paid as 100 envelopes each containing a sinner's soul. Use or trade them as you like. Restock Timer: 336 hours.
 
 **Decision**
 
@@ -13857,7 +13977,7 @@
 
 **Description**
 
-> Even Heaven owes you taxes, paid as 100 envelopes each containing a dose of Holy Energy. Each dose works as an uncommon healing spell or an uncommon dispel, or 50 envelopes at once can invoke the Ability: Summon Angelic Guardian once. Restock Timer: 336 hours.
+> (Tag:holy)(Tag:spirit)(Tag:summon)Even Heaven owes you taxes, paid as 100 envelopes each containing a dose of Holy Energy. Each dose works as an uncommon healing spell or an uncommon dispel, or 50 envelopes at once can invoke the Ability: Summon Angelic Guardian once. Restock Timer: 336 hours.
 
 **Decision**
 
@@ -13874,7 +13994,7 @@
 
 **Description**
 
-> Hircine's daedric artifact lets the wearer turn into a Werewolf at will and grants greater control over any transformation-based ability.
+> (Tag:accessory)(Tag:transformation)(Tag:transformation+)Hircine's daedric artifact lets the wearer turn into a Werewolf at will and grants greater control over any transformation-based ability.
 
 **Decision**
 
@@ -13891,7 +14011,7 @@
 
 **Description**
 
-> A simple platinum and pink diamond ring that, when worn, increases comprehension, dexterity, and mental acuity for medical matters like medicine-making or surgery.
+> (Tag:accessory)(Tag:dexterity+)(Tag:mind+)(Tag:skill+)A simple platinum and pink diamond ring that, when worn, increases comprehension, dexterity, and mental acuity for medical matters like medicine-making or surgery.
 
 **Decision**
 
@@ -13908,7 +14028,7 @@
 
 **Description**
 
-> A worn leather bag of holding containing 1x1x1m of space inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want.
+> (Tag:storage)(Tag:tool)A worn leather bag of holding containing 1x1x1m of space inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want.
 
 **Decision**
 
@@ -13925,7 +14045,7 @@
 
 **Description**
 
-> A dashing bronze bag of holding containing 5x5x5m of space inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want.
+> (Tag:storage)(Tag:tool)A dashing bronze bag of holding containing 5x5x5m of space inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want.
 
 **Decision**
 
@@ -13942,7 +14062,7 @@
 
 **Description**
 
-> A proper silver bag of holding containing 25x25x25m of space inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want.
+> (Tag:storage)(Tag:tool)A proper silver bag of holding containing 25x25x25m of space inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want.
 
 **Decision**
 
@@ -13959,7 +14079,7 @@
 
 **Description**
 
-> An exceptional gold bag of holding containing 100x100x100m of space inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. Time and space do not flow properly inside, keeping everything in stasis.
+> (Tag:storage)(Tag:tool)An exceptional gold bag of holding containing 100x100x100m of space inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. Time and space do not flow properly inside, keeping everything in stasis.
 
 **Decision**
 
@@ -13976,7 +14096,7 @@
 
 **Description**
 
-> A brilliant shimmering platinum bag of holding containing a 2500x2500x2500m subspace inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. It can place contents in spatial stasis and clean them if the user wishes.
+> (Tag:storage)(Tag:tool)A brilliant shimmering platinum bag of holding containing a 2500x2500x2500m subspace inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. It can place contents in spatial stasis and clean them if the user wishes.
 
 **Decision**
 
@@ -13993,7 +14113,7 @@
 
 **Description**
 
-> A Diamond-woven new frontier in Bag of Holding engineering containing a timeless 100x100x100 km subspace. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. It can split into up to 100 bags sharing the same subspace and remerge into one.
+> (Tag:storage)(Tag:tool)A Diamond-woven new frontier in Bag of Holding engineering containing a timeless 100x100x100 km subspace. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. It can split into up to 100 bags sharing the same subspace and remerge into one.
 
 **Decision**
 
@@ -14010,7 +14130,7 @@
 
 **Description**
 
-> An ornate key that, while in your possession, lets you expend energy to open portals to a nigh-infinite timeless holding dimension for inanimate objects only. You always know its contents and can drop or eject chosen contents at considerable speed by expending more energy.
+> (Tag:storage)(Tag:tool)(Tag:weapon)An ornate key that, while in your possession, lets you expend energy to open portals to a nigh-infinite timeless holding dimension for inanimate objects only. You always know its contents and can drop or eject chosen contents at considerable speed by expending more energy.
 
 **Decision**
 
@@ -14027,7 +14147,7 @@
 
 **Description**
 
-> One of the Seven Enchanted Blades, Tobimune amplifies the user's energy to power 3 abilities but is very difficult to master; a true master can unlock more. It creates and controls Black Feathers for wings and sensory awareness: Crow swaps you or your weapon with any feather in range; Owl creates massive sky eyes that massively expand sensory range; Suzaku expends energy for flames that heal you and damage enemies.
+> (Tag:blade)(Tag:fire)(Tag:health-recovery)(Tag:movement)(Tag:perception+)(Tag:weapon)One of the Seven Enchanted Blades, Tobimune amplifies the user's energy to power 3 abilities but is very difficult to master; a true master can unlock more. It creates and controls Black Feathers for wings and sensory awareness: Crow swaps you or your weapon with any feather in range; Owl creates massive sky eyes that massively expand sensory range; Suzaku expends energy for flames that heal you and damage enemies.
 
 **Decision**
 
@@ -14044,7 +14164,7 @@
 
 **Description**
 
-> One of the Seven Enchanted Blades, Cloud Gouger amplifies the user's energy into Clouds and Cloud Dragons for three techniques. Mei turns them into powerful lightning bolts or a speed-boosting lightning cloak; Yui turns them into massive ice bursts and freezing; Kou turns them into massive water waves or dense mist.
+> (Tag:blade)(Tag:electric)(Tag:fire)(Tag:ice)(Tag:weapon)One of the Seven Enchanted Blades, Cloud Gouger amplifies the user's energy into Clouds and Cloud Dragons for three techniques. Mei turns them into powerful lightning bolts or a speed-boosting lightning cloak; Yui turns them into massive ice bursts and freezing; Kou turns them into massive water waves or dense mist.
 
 **Decision**
 
@@ -14061,7 +14181,7 @@
 
 **Description**
 
-> Arata is a briefcase quinque made from the Corpse Collector's Kakuja that, when activated, clothes you in a Kakuja bodysuit far tougher than mundane metal and greatly boosts physical abilities. It places heavy strain on you and will try to eat you if worn too long.
+> (Tag:armor)(Tag:bio)(Tag:enhancer)(Tag:growing)Arata is a briefcase quinque made from the Corpse Collector's Kakuja that, when activated, clothes you in a Kakuja bodysuit far tougher than mundane metal and greatly boosts physical abilities. It places heavy strain on you and will try to eat you if worn too long.
 
 **Decision**
 
@@ -14078,7 +14198,7 @@
 
 **Description**
 
-> Dubbed "Purgatory's Invitation", Rubicante is a flamethrower Teigu with a large wearable canister. It fires extremely hot glue-like flames that melt metal and cannot be extinguished even by water, plus fireball projectiles or a near-nuclear self-destruct blast. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it.
+> (Tag:bound)(Tag:fire)(Tag:gun)(Tag:weapon)Dubbed "Purgatory's Invitation", Rubicante is a flamethrower Teigu with a large wearable canister. It fires extremely hot glue-like flames that melt metal and cannot be extinguished even by water, plus fireball projectiles or a near-nuclear self-destruct blast. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14095,7 +14215,7 @@
 
 **Description**
 
-> (Tech) Dubbed "Roman Artillery", Pumpkin is a large gun Teigu that fires energy-beam projectiles using your energy reserves in sniper, rifle, and machine-gun modes. Output amplifies with your danger and emotional state. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it.
+> (Tag:bound)(Tag:gun)(Tag:spirit)(Tag:tech)(Tag:weapon)(Tech) Dubbed "Roman Artillery", Pumpkin is a large gun Teigu that fires energy-beam projectiles using your energy reserves in sniper, rifle, and machine-gun modes. Output amplifies with your danger and emotional state. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14112,7 +14232,7 @@
 
 **Description**
 
-> Dubbed "Dimensional Formation", Shambala is a pendant Teigu that teleports you and others over short and long distances via set sigils, but heavily strains stamina and usually needs time between uses. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it. (A/N: Anime Exclusive Trump Card is not included).
+> (Tag:accessory)(Tag:bound)(Tag:movement)(Tag:space)Dubbed "Dimensional Formation", Shambala is a pendant Teigu that teleports you and others over short and long distances via set sigils, but heavily strains stamina and usually needs time between uses. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it. (A/N: Anime Exclusive Trump Card is not included).
 
 **Decision**
 
@@ -14129,7 +14249,7 @@
 
 **Description**
 
-> L'Arc Qui Ne Faut is a bow-and-quiver Teigu that forces fired arrows to infinitely track a named target while they remain in effective range. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:bound)(Tag:bow)(Tag:weapon)L'Arc Qui Ne Faut is a bow-and-quiver Teigu that forces fired arrows to infinitely track a named target while they remain in effective range. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14146,7 +14266,7 @@
 
 **Description**
 
-> Dubbed "Infinite Uses", Cross Tail is a glove-and-thread Teigu whose very durable flexible strings you manipulate with great precision, generating more thread from the spool with energy. Masters unlock Realm-Cutting Threads, nigh-unbreakable strings. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:bound)(Tag:flexible)(Tag:weapon)Dubbed "Infinite Uses", Cross Tail is a glove-and-thread Teigu whose very durable flexible strings you manipulate with great precision, generating more thread from the spool with energy. Masters unlock Realm-Cutting Threads, nigh-unbreakable strings. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14163,7 +14283,7 @@
 
 **Description**
 
-> Dubbed "Absolute Limitation", Erastone is a crown Teigu whose jewel shines light that shatters all of the target's equipment and items weaker than Legendary rank. The jewel shatters after use and regenerates after a week-long cooldown. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:accessory)(Tag:bound)Dubbed "Absolute Limitation", Erastone is a crown Teigu whose jewel shines light that shatters all of the target's equipment and items weaker than Legendary rank. The jewel shatters after use and regenerates after a week-long cooldown. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14180,7 +14300,7 @@
 
 **Description**
 
-> Dubbed "March of the Dead", Yatsufusa is an incredibly durable sharp katana Teigu that raises up to 8 corpses as puppets retaining their skills, abilities, and habits, but unable to grow stronger or learn. Each corpse drains part of your strength, returned when buried. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and Yatsufusa demands a macabre mindset.
+> (Tag:blade)(Tag:bound)(Tag:necro)(Tag:summon)(Tag:weapon)Dubbed "March of the Dead", Yatsufusa is an incredibly durable sharp katana Teigu that raises up to 8 corpses as puppets retaining their skills, abilities, and habits, but unable to grow stronger or learn. Each corpse drains part of your strength, returned when buried. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and Yatsufusa demands a macabre mindset.
 
 **Decision**
 
@@ -14197,7 +14317,7 @@
 
 **Description**
 
-> Dubbed "Almighty Five Sights", Spectator is a bonding mechanical third-eye Teigu that massively boosts vision to read minute muscle movements, see through objects, and project sight like a camera to predict opponents. Its trump card makes a target perceive you as a loved one. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:bound)(Tag:illusion)(Tag:implant)(Tag:perception+)Dubbed "Almighty Five Sights", Spectator is a bonding mechanical third-eye Teigu that massively boosts vision to read minute muscle movements, see through objects, and project sight like a camera to predict opponents. Its trump card makes a target perceive you as a loved one. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14214,7 +14334,7 @@
 
 **Description**
 
-> Dubbed "Blood Collection", Absordex is a fang Teigu that drains living beings' blood by biting to restore your energy and temporarily boost physical abilities. Returns scale with blood quality and quantity. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:bound)(Tag:energy-recovery)(Tag:enhancer)(Tag:implant)(Tag:life)(Tag:weapon)Dubbed "Blood Collection", Absordex is a fang Teigu that drains living beings' blood by biting to restore your energy and temporarily boost physical abilities. Returns scale with blood quality and quantity. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14231,7 +14351,7 @@
 
 **Description**
 
-> Dubbed "Absolute Carnage", Grand Chariot is a short-sword Teigu that, when activated, dons you in incredibly resilient full armor boosting physical prowess and granting free flight, plus a built-in spear. It rapidly drains stamina and energy. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:armor)(Tag:bound)(Tag:enhancer)(Tag:movement)Dubbed "Absolute Carnage", Grand Chariot is a short-sword Teigu that, when activated, dons you in incredibly resilient full armor boosting physical prowess and granting free flight, plus a built-in spear. It rapidly drains stamina and energy. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14248,7 +14368,7 @@
 
 **Description**
 
-> Dubbed "Demon Armor", Incursio is a shortsword "Key" Teigu that forms incredibly durable armor massively enhancing physical abilities, with camouflage invisibility and semi-living adaptation that evolves with user compatibility at massive stamina cost. A highly compatible user can further evolve and fuse with it into its original beast's full dragon form. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and may kill an incompatible activator outright.
+> (Tag:armor)(Tag:bound)(Tag:draconic)(Tag:enhancer)(Tag:growing)(Tag:polearm)(Tag:stealth)(Tag:weapon)Dubbed "Demon Armor", Incursio is a shortsword "Key" Teigu that forms incredibly durable armor massively enhancing physical abilities, with camouflage invisibility and semi-living adaptation that evolves with user compatibility at massive stamina cost. A highly compatible user can further evolve and fuse with it into its original beast's full dragon form. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and may kill an incompatible activator outright.
 
 **Decision**
 
@@ -14265,7 +14385,7 @@
 
 **Description**
 
-> Dubbed "Demon God Manifestation", Demon's Extract is a chalice Teigu of super-class Danger Beast lifeblood granting those who fully drink and survive it telekinetic ice creation and freezing, including independent ice soldiers and functional ice arms. Surviving the drink requires inhuman willpower and a monstrous mindset. (A/N: No time stop trump card).
+> (Tag:bound)(Tag:consumable)(Tag:ice)(Tag:infernal)(Tag:meta)Dubbed "Demon God Manifestation", Demon's Extract is a chalice Teigu of super-class Danger Beast lifeblood granting those who fully drink and survive it telekinetic ice creation and freezing, including independent ice soldiers and functional ice arms. Surviving the drink requires inhuman willpower and a monstrous mindset. (A/N: No time stop trump card).
 
 **Decision**
 
@@ -14282,7 +14402,7 @@
 
 **Description**
 
-> Dubbed "Glorious Hands of God", Perfector is a glove Teigu that, when donned, grants finger dexterity and precision beyond any machine or tool. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:accessory)(Tag:bound)(Tag:dexterity+)Dubbed "Glorious Hands of God", Perfector is a glove Teigu that, when donned, grants finger dexterity and precision beyond any machine or tool. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14299,7 +14419,7 @@
 
 **Description**
 
-> Dubbed "National Defense Machine God", Shitoukazer is a massive pilotable mech Teigu entered via its chest core, with insane durability, physical strength, mortar barrages, homing missiles, and giant laser cannons. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it. (A/N: No Purge Mode).
+> (Tag:armor)(Tag:bound)(Tag:vehicle)(Tag:weapon)Dubbed "National Defense Machine God", Shitoukazer is a massive pilotable mech Teigu entered via its chest core, with insane durability, physical strength, mortar barrages, homing missiles, and giant laser cannons. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it. (A/N: No Purge Mode).
 
 **Decision**
 
@@ -14316,7 +14436,7 @@
 
 **Description**
 
-> Dubbed "Great Tremor", Heavy Pressure is a microphone Teigu turning your voice into stone-shattering shockwaves and amplifying sound-based abilities. As this item is a Teigu, it is difficult to master and can only be used by compatible people, usually cheerful young women for some reason.
+> (Tag:air)(Tag:bound)(Tag:sound+)(Tag:tool)(Tag:weapon)Dubbed "Great Tremor", Heavy Pressure is a microphone Teigu turning your voice into stone-shattering shockwaves and amplifying sound-based abilities. As this item is a Teigu, it is difficult to master and can only be used by compatible people, usually cheerful young women for some reason.
 
 **Decision**
 
@@ -14333,7 +14453,7 @@
 
 **Description**
 
-> Dubbed "Military Music Dream", Scream is a flute-like Teigu whose songs manipulate listeners' emotions toward anger, calm, courage, joy, or sorrow. Effects are resisted by strong willpower or dispelled by pain. As this item is a Teigu, it is difficult to master and can only be used by compatible people with sufficient musical talent.
+> (Tag:bound)(Tag:mental)(Tag:tool)Dubbed "Military Music Dream", Scream is a flute-like Teigu whose songs manipulate listeners' emotions toward anger, calm, courage, joy, or sorrow. Effects are resisted by strong willpower or dispelled by pain. As this item is a Teigu, it is difficult to master and can only be used by compatible people with sufficient musical talent.
 
 **Decision**
 
@@ -14350,7 +14470,7 @@
 
 **Description**
 
-> Dubbed "Moonlight Sword Dance", Shamshir is a durable sharp curved-sword Teigu firing flying slashes with your energy. Its power increases depending on the night's moon phase. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:blade)(Tag:bound)(Tag:weapon)Dubbed "Moonlight Sword Dance", Shamshir is a durable sharp curved-sword Teigu firing flying slashes with your energy. Its power increases depending on the night's moon phase. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14367,7 +14487,7 @@
 
 **Description**
 
-> Dubbed "One-Cut Killer", Murasame is a durable sharp sword Teigu that kills any living being with even a shallow cut via a heart-seeking poisonous curse, though stronger targets resist slightly. Experiencing great loss unlocks its trump card, briefly massively boosting speed and strength. As this item is a Teigu, it can only be used by compatible true killers who find it beautiful.
+> (Tag:blade)(Tag:bound)(Tag:curse)(Tag:poison)(Tag:weapon)Dubbed "One-Cut Killer", Murasame is a durable sharp sword Teigu that kills any living being with even a shallow cut via a heart-seeking poisonous curse, though stronger targets resist slightly. Experiencing great loss unlocks its trump card, briefly massively boosting speed and strength. As this item is a Teigu, it can only be used by compatible true killers who find it beautiful.
 
 **Decision**
 
@@ -14384,7 +14504,7 @@
 
 **Description**
 
-> Dubbed "Power Surging", Balzac is a strange-mask Teigu that, while fully worn, unleashes your full mental and physical potential past all limits while heavily straining mind and body. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:armor)(Tag:bound)(Tag:enhancer)(Tag:mind+)Dubbed "Power Surging", Balzac is a strange-mask Teigu that, while fully worn, unleashes your full mental and physical potential past all limits while heavily straining mind and body. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14401,7 +14521,7 @@
 
 **Description**
 
-> Dubbed "Phantasmagoria", Gaea Foundation is a large makeup-kit Teigu letting you disguise as any living being you have seen, with stamina drain rising as the form diverges from your body. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:bound)(Tag:tool)(Tag:transformation)Dubbed "Phantasmagoria", Gaea Foundation is a large makeup-kit Teigu letting you disguise as any living being you have seen, with stamina drain rising as the form diverges from your body. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14418,7 +14538,7 @@
 
 **Description**
 
-> Dubbed "Complete Book of the World", Rongo Rongo is a book Teigu containing a detailed map and encyclopedia of your entire world with locations plus future natural disasters like earthquakes, tsunamis, storms, and rains. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:bound)(Tag:divination)(Tag:earth)(Tag:tool)Dubbed "Complete Book of the World", Rongo Rongo is a book Teigu containing a detailed map and encyclopedia of your entire world with locations plus future natural disasters like earthquakes, tsunamis, storms, and rains. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14435,7 +14555,7 @@
 
 **Description**
 
-> Dubbed "Thousand Mile Flight", Mastema is a disk Teigu forming wings for flight and volleys of sharp durable feather projectiles. Skilled users unlock the "Gods Wings" trump card, turning wings ethereal to reflect projectiles at large stamina cost. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:accessory)(Tag:bound)(Tag:movement)(Tag:weapon)Dubbed "Thousand Mile Flight", Mastema is a disk Teigu forming wings for flight and volleys of sharp durable feather projectiles. Skilled users unlock the "Gods Wings" trump card, turning wings ethereal to reflect projectiles at large stamina cost. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14452,7 +14572,7 @@
 
 **Description**
 
-> Dubbed "Thunder God's Rage", Adramelech is a gauntlet Teigu conjuring and sky-summoning electricity like lightning orbs, beams, and direct strikes by expending energy. Power scales with energy expended. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:armor)(Tag:bound)(Tag:electric)(Tag:electric+)(Tag:fist)(Tag:weapon)Dubbed "Thunder God's Rage", Adramelech is a gauntlet Teigu conjuring and sky-summoning electricity like lightning orbs, beams, and direct strikes by expending energy. Power scales with energy expended. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14469,7 +14589,7 @@
 
 **Description**
 
-> Dubbed "Cutter of Creation", Extase is a large-scissor Teigu with incredibly durable sharp blades that cut metal like ribbon. Its Trump Card emits blinding light from the blade. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:blade)(Tag:bound)(Tag:weapon)Dubbed "Cutter of Creation", Extase is a large-scissor Teigu with incredibly durable sharp blades that cut metal like ribbon. Its Trump Card emits blinding light from the blade. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14486,7 +14606,7 @@
 
 **Description**
 
-> Aptly dubbed "Double Bladed Axe", Belvaac is a dense short double-bladed axe Teigu landing devastating blows. It can split in two and be thrown to track opponents staying in range. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and prefers the very strong.
+> (Tag:blade)(Tag:bound)(Tag:weapon)Aptly dubbed "Double Bladed Axe", Belvaac is a dense short double-bladed axe Teigu landing devastating blows. It can split in two and be thrown to track opponents staying in range. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and prefers the very strong.
 
 **Decision**
 
@@ -14503,7 +14623,7 @@
 
 **Description**
 
-> Dubbed "Water Dragon Possession", Black Marlin is an ornate ring Teigu letting the wearer telekinetically control nearby water and water-based liquids with energy and stamina. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:accessory)(Tag:bound)(Tag:water)(Tag:weapon)Dubbed "Water Dragon Possession", Black Marlin is an ornate ring Teigu letting the wearer telekinetically control nearby water and water-based liquids with energy and stamina. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14520,7 +14640,7 @@
 
 **Description**
 
-> Dubbed "Chaos Throw", Big Leaguer is a Teigu of 6 throwable elemental orbs: Storm for whirlwinds, Explosion for blasts, Fire for searing flames, Ice for freezing, Lightning for electric bolts, and Rot for eroding mist. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
+> (Tag:air)(Tag:bound)(Tag:electric)(Tag:fire)(Tag:ice)(Tag:necro)(Tag:tool)(Tag:weapon)Dubbed "Chaos Throw", Big Leaguer is a Teigu of 6 throwable elemental orbs: Storm for whirlwinds, Explosion for blasts, Fire for searing flames, Ice for freezing, Lightning for electric bolts, and Rot for eroding mist. As this item is a Teigu, it is difficult to master and can only be used by people who are compatible with it.
 
 **Decision**
 
@@ -14537,7 +14657,7 @@
 
 **Description**
 
-> Dubbed "King of Beasts Transformation", Lionel is a belt Teigu transforming you into a half-beast lion with increased physical abilities and sharp senses. It grants exceptional vitality and regeneration, regrowing eyes and reattaching limbs while you have stamina. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and Lionel prefers free-spirited busty women.
+> (Tag:accessory)(Tag:bound)(Tag:enhancer)(Tag:health-recovery)(Tag:perception+)(Tag:transformation)Dubbed "King of Beasts Transformation", Lionel is a belt Teigu transforming you into a half-beast lion with increased physical abilities and sharp senses. It grants exceptional vitality and regeneration, regrowing eyes and reattaching limbs while you have stamina. As this item is a Teigu, it is difficult to master, can only be used by compatible people, and Lionel prefers free-spirited busty women.
 
 **Decision**
 
@@ -14554,7 +14674,7 @@
 
 **Description**
 
-> Dubbed "Magical Beast Transformation", Hekatonkheires is an ugly unlikeable dog-like Teigu that transforms into a larger form with great strength, blade-like teeth, and limb-regrowing regeneration unless its core breaks. Berserker mode further boosts it but leaves the Teigu unusable for a few days. As this item is a Teigu, it is difficult to master and can only be used by compatible people; this overgrown rat has terrible taste. (A/N: Stylish modifications not included).
+> (Tag:bound)(Tag:summon)Dubbed "Magical Beast Transformation", Hekatonkheires is an ugly unlikeable dog-like Teigu that transforms into a larger form with great strength, blade-like teeth, and limb-regrowing regeneration unless its core breaks. Berserker mode further boosts it but leaves the Teigu unusable for a few days. As this item is a Teigu, it is difficult to master and can only be used by compatible people; this overgrown rat has terrible taste. (A/N: Stylish modifications not included).
 
 **Decision**
 
@@ -14571,7 +14691,7 @@
 
 **Description**
 
-> A full container of powdered horse electrolytes. Drink it. Restock Timer: 1 hour.
+> (Tag:consumable)(Tag:electric)A full container of powdered horse electrolytes. Drink it. Restock Timer: 1 hour.
 
 **Decision**
 
@@ -14588,7 +14708,7 @@
 
 **Description**
 
-> A regular juicy shiny red apple that repels registered practicing doctors within 25 meters while you eat it. Restock Timer: 24 hours.
+> (Tag:consumable)A regular juicy shiny red apple that repels registered practicing doctors within 25 meters while you eat it. Restock Timer: 24 hours.
 
 **Decision**
 
@@ -14605,7 +14725,7 @@
 
 **Description**
 
-> A Healing Church Blood Vial of diluted Blood Saint blood curing many ailments. Used moderately it considerably heals wounds and disease, but it is addictive and abuse can turn the susceptible into beasts.
+> (Tag:blood)(Tag:consumable)(Tag:health-recovery)(Tag:life)A Healing Church Blood Vial of diluted Blood Saint blood curing many ailments. Used moderately it considerably heals wounds and disease, but it is addictive and abuse can turn the susceptible into beasts.
 
 **Decision**
 
@@ -14622,7 +14742,7 @@
 
 **Description**
 
-> A Healing Church vial of pure Blood Saint blood with potent Old One traces, powerfully healing even severe injuries and illnesses. Yharnam blood is addictive, and overuse can turn the susceptible into beasts.
+> (Tag:blood)(Tag:consumable)(Tag:health-recovery)(Tag:life)A Healing Church vial of pure Blood Saint blood with potent Old One traces, powerfully healing even severe injuries and illnesses. Yharnam blood is addictive, and overuse can turn the susceptible into beasts.
 
 **Decision**
 
@@ -14639,7 +14759,7 @@
 
 **Description**
 
-> A can of fermented Baltic Sea Herring that smells and tastes foul. Only a disturbed mind enjoys it. Restock Timer: 30 minutes.
+> (Tag:consumable)A can of fermented Baltic Sea Herring that smells and tastes foul. Only a disturbed mind enjoys it. Restock Timer: 30 minutes.
 
 **Decision**
 
@@ -14656,7 +14776,7 @@
 
 **Description**
 
-> A classic showman magician's hat that produces a rabbit or dove whenever you reach inside. Only one at a time, and you must reach in.
+> (Tag:summon)(Tag:tool)A classic showman magician's hat that produces a rabbit or dove whenever you reach inside. Only one at a time, and you must reach in.
 
 **Decision**
 
@@ -14673,7 +14793,7 @@
 
 **Description**
 
-> A Fumo of Britain's true king that, when shaken violently, temporarily enacts Avalon as a nigh-absolute barrier on the shaker. You cannot move or use abilities while it is active.
+> (Tag:fumo)(Tag:space)A Fumo of Britain's true king that, when shaken violently, temporarily enacts Avalon as a nigh-absolute barrier on the shaker. You cannot move or use abilities while it is active.
 
 **Decision**
 
@@ -14690,7 +14810,7 @@
 
 **Description**
 
-> (Gacha) A Fumo of the Dear Girl that, when shaken violently, rerolls your most recently rolled ticket. Cooldown: 336 hours.
+> (Tag:fumo)(Tag:meta)A Fumo of the Dear Girl that, when shaken violently, rerolls your most recently rolled ticket. Cooldown: 336 hours.
 
 **Decision**
 
@@ -14707,7 +14827,7 @@
 
 **Description**
 
-> A Fumo of the White Queen, Node, that makes all cooldowns and restock timers pass 5x faster while you sleep in the same building or room as it.
+> (Tag:fumo)(Tag:meta)A Fumo of the White Queen, Node, that makes all cooldowns and restock timers pass 5x faster while you sleep in the same building or room as it.
 
 **Flagged in reports**
 
@@ -14728,7 +14848,7 @@
 
 **Description**
 
-> (Gacha) A Fumo of a certain Girl of Nihility that produces a Random Gold Ticket it can be found holding every 168 hours.
+> (Tag:fumo)(Tag:meta)A Fumo of a certain Girl of Nihility that produces a Random Gold Ticket it can be found holding every 168 hours.
 
 **Flagged in reports**
 
@@ -14749,7 +14869,7 @@
 
 **Description**
 
-> (Gacha) A Fumo of a certain Annoying Fairy that lets you change the type of any one ticket you hold by slamming or punching it against a wall. Cooldown: 168 hours.
+> (Tag:fumo)(Tag:meta)A Fumo of a certain Annoying Fairy that lets you change the type of any one ticket you hold by slamming or punching it against a wall. Cooldown: 168 hours.
 
 **Flagged in reports**
 
@@ -14770,7 +14890,7 @@
 
 **Description**
 
-> A Fumo of a certain destitute Shrine Maiden that, when shaken violently, erects a spiritual barrier against Unholy/Dark beings around a location. Only one barrier at a time.
+> (Tag:anti-dark)(Tag:anti-infernal)(Tag:fumo)A Fumo of a certain destitute Shrine Maiden that, when shaken violently, erects a spiritual barrier against Unholy/Dark beings around a location. Only one barrier at a time.
 
 **Decision**
 
@@ -14787,7 +14907,7 @@
 
 **Description**
 
-> A Fumo of a certain Genius Ice Fairy that freezes a target when smacked with it while imbued with your energy. Potency scales with energy expended and impact force.
+> (Tag:fumo)(Tag:ice)A Fumo of a certain Genius Ice Fairy that freezes a target when smacked with it while imbued with your energy. Potency scales with energy expended and impact force.
 
 **Decision**
 
@@ -14804,7 +14924,7 @@
 
 **Description**
 
-> A Fumo of the Scarlet Devil Mansion's mistress that, when shaken violently, grants you [Rabbit's Foot (Rare Trait)] luck for 24 hours, or inflicts [Jinx (Rare Ability)] for 24 hours when smacked on a target. Cooldown: 72 hours.
+> (Tag:fumo)(Tag:luck+)A Fumo of the Scarlet Devil Mansion's mistress that, when shaken violently, grants you [Rabbit's Foot (Rare Trait)] luck for 24 hours, or inflicts [Jinx (Rare Ability)] for 24 hours when smacked on a target. Cooldown: 72 hours.
 
 **Decision**
 
@@ -14821,7 +14941,7 @@
 
 **Description**
 
-> A Fumo of a certain Destructive Vampire that, while held, lets you bypass all of a target's immunities and resistances like barriers, elemental immunity, magic resistance, and scrying resistance. (Does not bypass regular durability or magical toughness, etc.).
+> (Tag:anti-barrier)(Tag:anti-resistance)(Tag:fumo)A Fumo of a certain Destructive Vampire that, while held, lets you bypass all of a target's immunities and resistances like barriers, elemental immunity, magic resistance, and scrying resistance. (Does not bypass regular durability or magical toughness, etc.).
 
 **Flagged in reports**
 
@@ -14842,7 +14962,7 @@
 
 **Description**
 
-> A Fumo of a certain lazy magician that boosts all comprehension and learning speed for everyone in the same room, especially magic study in libraries.
+> (Tag:fumo)(Tag:growth+)(Tag:magic)A Fumo of a certain lazy magician that boosts all comprehension and learning speed for everyone in the same room, especially magic study in libraries.
 
 **Decision**
 
@@ -14859,7 +14979,7 @@
 
 **Description**
 
-> A Fumo of a certain pharmacist granting temporary Adept Medicine skill and increased Healing ability and spell potency while held or worn on the head.
+> (Tag:fumo)(Tag:recovery+)(Tag:skill+)A Fumo of a certain pharmacist granting temporary Adept Medicine skill and increased Healing ability and spell potency while held or worn on the head.
 
 **Decision**
 
@@ -14876,7 +14996,7 @@
 
 **Description**
 
-> A Fumo of a certain drunk Oni that is exceptionally durable and can absorb your energy to temporarily increase density, making a fearsome bludgeon.
+> (Tag:bludgeon)(Tag:fumo)(Tag:weapon)A Fumo of a certain drunk Oni that is exceptionally durable and can absorb your energy to temporarily increase density, making a fearsome bludgeon.
 
 **Decision**
 
@@ -14893,7 +15013,7 @@
 
 **Description**
 
-> A Fumo of a certain half-phantom sword master that, when vigorously rubbed on a sword, temporarily blesses it with greater sharpness and the power to hit spiritual entities.
+> (Tag:fumo)(Tag:spirit)A Fumo of a certain half-phantom sword master that, when vigorously rubbed on a sword, temporarily blesses it with greater sharpness and the power to hit spiritual entities.
 
 **Decision**
 
@@ -14910,7 +15030,7 @@
 
 **Description**
 
-> A Fumo of a certain fox shikigami possessing Master level Mathematics that will tackle any posed question if given a way to write calculations. Shaking speeds the process.
+> (Tag:fumo)A Fumo of a certain fox shikigami possessing Master level Mathematics that will tackle any posed question if given a way to write calculations. Shaking speeds the process.
 
 **Decision**
 
@@ -14927,7 +15047,7 @@
 
 **Description**
 
-> A Fumo of a certain Mountain God letting you terraform surroundings with energy by diverting rivers, raising mountains, moving forests, creating caves, and more. Cannot be used for combat.
+> (Tag:earth)(Tag:fumo)(Tag:nature)A Fumo of a certain Mountain God letting you terraform surroundings with energy by diverting rivers, raising mountains, moving forests, creating caves, and more. Cannot be used for combat.
 
 **Decision**
 
@@ -14944,7 +15064,7 @@
 
 **Description**
 
-> A Fumo of a certain easily overlooked yokai that boosts Stranger abilities and Traits while held or worn on the head. Left in a building or area, it makes that place easier to overlook and harder to perceive for newcomers.
+> (Tag:fumo)(Tag:stealth)A Fumo of a certain easily overlooked yokai that boosts Stranger abilities and Traits while held or worn on the head. Left in a building or area, it makes that place easier to overlook and harder to perceive for newcomers.
 
 **Decision**
 
@@ -14961,7 +15081,7 @@
 
 **Description**
 
-> A Fumo of a certain Lunar Princess that is eternal, returning to perfect condition almost instantly no matter the damage, tearing, smacking, milk-soaking, or wall-throwing.
+> (Tag:fumo)A Fumo of a certain Lunar Princess that is eternal, returning to perfect condition almost instantly no matter the damage, tearing, smacking, milk-soaking, or wall-throwing.
 
 **Decision**
 
@@ -14978,7 +15098,7 @@
 
 **Description**
 
-> A Fumo of a certain Ghost Princess that passively attracts and pacifies departed souls. Affected ghosts and dead instinctively protect it and are far more agreeable to its holder.
+> (Tag:fumo)(Tag:necro)(Tag:social)(Tag:spirit)A Fumo of a certain Ghost Princess that passively attracts and pacifies departed souls. Affected ghosts and dead instinctively protect it and are far more agreeable to its holder.
 
 **Decision**
 
@@ -14995,7 +15115,7 @@
 
 **Description**
 
-> A Fumo of the Strongest Oni granting the holder passive [Strength (Rare)] without using an ability slot while held or worn on the head.
+> (Tag:fumo)(Tag:strength+)A Fumo of the Strongest Oni granting the holder passive [Strength (Rare)] without using an ability slot while held or worn on the head.
 
 **Flagged in reports**
 
@@ -15016,7 +15136,7 @@
 
 **Description**
 
-> A Fumo of a certain Nuclear Bird that, when shaken vigorously or bonked on the head, starts a 10-second countdown to a 50-megaton nuclear explosion it ignores. Cooldown: 240 hours.
+> (Tag:fire)(Tag:fumo)A Fumo of a certain Nuclear Bird that, when shaken vigorously or bonked on the head, starts a 10-second countdown to a 50-megaton nuclear explosion it ignores. Cooldown: 240 hours.
 
 **Decision**
 
@@ -15033,7 +15153,7 @@
 
 **Description**
 
-> A Fumo of a certain Sky God letting you alter surrounding weather and climate with energy like seasons, rain, and clouds. Cannot be used to hurt others or for combat.
+> (Tag:air)(Tag:fumo)(Tag:nature)A Fumo of a certain Sky God letting you alter surrounding weather and climate with energy like seasons, rain, and clouds. Cannot be used to hurt others or for combat.
 
 **Decision**
 
@@ -15050,7 +15170,7 @@
 
 **Description**
 
-> A Fumo of a certain Burning Immortal Girl that is immortal, returning to perfect condition almost instantly no matter the tearing, smacking, milk-soaking, or wall-throwing. Any surface rubbed with it spontaneously catches fire.
+> (Tag:fire)(Tag:fumo)A Fumo of a certain Burning Immortal Girl that is immortal, returning to perfect condition almost instantly no matter the tearing, smacking, milk-soaking, or wall-throwing. Any surface rubbed with it spontaneously catches fire.
 
 **Decision**
 
@@ -15067,7 +15187,7 @@
 
 **Description**
 
-> A Fumo of a certain Grieving Woman that slowly purifies what it touches or maintains contact with, restoring rusted metal, curing disease, and clearing polluted rivers. Stronger Impurity or Corruption takes longer.
+> (Tag:ailment-recovery)(Tag:fumo)(Tag:holy)A Fumo of a certain Grieving Woman that slowly purifies what it touches or maintains contact with, restoring rusted metal, curing disease, and clearing polluted rivers. Stronger Impurity or Corruption takes longer.
 
 **Decision**
 
@@ -15084,7 +15204,7 @@
 
 **Description**
 
-> A Fumo of a certain Rabbit Yokai granting temporary [Rabbit's Foot (Rare Trait)] good luck while held or worn on the head.
+> (Tag:fumo)(Tag:luck+)A Fumo of a certain Rabbit Yokai granting temporary [Rabbit's Foot (Rare Trait)] good luck while held or worn on the head.
 
 **Decision**
 
@@ -15101,7 +15221,7 @@
 
 **Description**
 
-> A Fumo of a certain Lazy Gatekeeper that accelerates physical and martial development when training in the same room. Sleeping while hugging it greatly accelerates physical recovery.
+> (Tag:fumo)(Tag:growth+)A Fumo of a certain Lazy Gatekeeper that accelerates physical and martial development when training in the same room. Sleeping while hugging it greatly accelerates physical recovery.
 
 **Decision**
 
@@ -15118,7 +15238,7 @@
 
 **Description**
 
-> A Deka Fumo of a certain Nuclear Bird that passively produces up to 100 Terawatts of energy per second when hooked to something needing or transferring energy. While held, imbuing energy fires 50-megaton nuclear beams from its eyes.
+> (Tag:fire)(Tag:fumo)A Deka Fumo of a certain Nuclear Bird that passively produces up to 100 Terawatts of energy per second when hooked to something needing or transferring energy. While held, imbuing energy fires 50-megaton nuclear beams from its eyes.
 
 **Decision**
 
@@ -15135,7 +15255,7 @@
 
 **Description**
 
-> A Deka Fumo of a certain Floating Shrine Maiden that, where placed, erects a Holy Spiritual Barrier sanctifying the area. All Unholy/Dark beings below Elite rank are repelled, and breach survivors are weakened.
+> (Tag:anti-dark)(Tag:anti-infernal)(Tag:fumo)A Deka Fumo of a certain Floating Shrine Maiden that, where placed, erects a Holy Spiritual Barrier sanctifying the area. All Unholy/Dark beings below Elite rank are repelled, and breach survivors are weakened.
 
 **Decision**
 
@@ -15152,7 +15272,7 @@
 
 **Description**
 
-> A large, sturdy, high-quality oak table stolen from Ashford High School after Nina Einstein violated it.
+> (Tag:mundane)A large, sturdy, high-quality oak table stolen from Ashford High School after Nina Einstein violated it.
 
 **Decision**
 
@@ -15169,7 +15289,7 @@
 
 **Description**
 
-> Vergil Sparda's iconic cheap plastic chair, rumored to greatly increase the motivation of anyone sitting in it.
+> (Tag:mundane)Vergil Sparda's iconic cheap plastic chair, rumored to greatly increase the motivation of anyone sitting in it.
 
 **Decision**
 
@@ -15186,7 +15306,7 @@
 
 **Description**
 
-> The Master Sword, Blade that Vanquishes Evil and former sword of Goddess Hylia bathed in Sacred Flames, is nigh unbreakable. It deals extreme damage ignoring resistances to ALL Unholy and Darkness targets, fires light slashes when imbued, and grows permanently stronger by absorbing Holy energy while housing blessings. Only a worthy Hero of proven Pure Heart, Courage, Wisdom, and Power can wield it.
+> (Tag:anti-dark)(Tag:anti-infernal)(Tag:blade)(Tag:holy)(Tag:light)(Tag:weapon)The Master Sword, Blade that Vanquishes Evil and former sword of Goddess Hylia bathed in Sacred Flames, is nigh unbreakable. It deals extreme damage ignoring resistances to ALL Unholy and Darkness targets, fires light slashes when imbued, and grows permanently stronger by absorbing Holy energy while housing blessings. Only a worthy Hero of proven Pure Heart, Courage, Wisdom, and Power can wield it.
 
 **Decision**
 
@@ -15203,7 +15323,7 @@
 
 **Description**
 
-> The Legendary Hero of Hyrule's shield, tempered many times for the Knights of Hyrule. Besides absurd durability, it has great magic resistance and extreme resiliency to all Unholy or Darkness attacks.
+> (Tag:dark-resistance+)(Tag:infernal-resistance+)(Tag:magic-resistance+)(Tag:shield)The Legendary Hero of Hyrule's shield, tempered many times for the Knights of Hyrule. Besides absurd durability, it has great magic resistance and extreme resiliency to all Unholy or Darkness attacks.
 
 **Decision**
 
@@ -15220,7 +15340,7 @@
 
 **Description**
 
-> An exceptional magical mirror-surfaced shield, only decent against physical attacks. It reflects all Light-based and Magical attacks hitting its mirror surface.
+> (Tag:anti-magic)(Tag:shield)An exceptional magical mirror-surfaced shield, only decent against physical attacks. It reflects all Light-based and Magical attacks hitting its mirror surface.
 
 **Flagged in reports**
 
@@ -15241,7 +15361,7 @@
 
 **Description**
 
-> A bottle of incredibly high-quality milk from Malon that restores some vitality and vigor when drunk. Restock Timer: 12 hours.
+> (Tag:consumable)(Tag:health-recovery)A bottle of incredibly high-quality milk from Malon that restores some vitality and vigor when drunk. Restock Timer: 12 hours.
 
 **Decision**
 
@@ -15258,7 +15378,7 @@
 
 **Description**
 
-> An ornate key that, turned in a sufficiently large space, opens a portal to a 20,000 km x 20,000 km x 20,000 km pocket dimension containing planet Earth. It holds a human-free version of Earth as untamed wilds. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)(Tag:earth)An ornate key that, turned in a sufficiently large space, opens a portal to a 20,000 km x 20,000 km x 20,000 km pocket dimension containing planet Earth. It holds a human-free version of Earth as untamed wilds. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -15275,7 +15395,7 @@
 
 **Description**
 
-> An ornate key that, turned in a sufficiently large space, opens a portal to a 250x250x250m pocket dimension holding a luxurious opulent bathhouse. Homunculi attendants staff, maintain, and serve entrants, and its water excellently restores Health and Energy. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:tool)An ornate key that, turned in a sufficiently large space, opens a portal to a 250x250x250m pocket dimension holding a luxurious opulent bathhouse. Homunculi attendants staff, maintain, and serve entrants, and its water excellently restores Health and Energy. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -15292,7 +15412,7 @@
 
 **Description**
 
-> The saddest cookie you have ever seen. Giving it a restock timer would be an insult.
+> (Tag:infernal)(Tag:mundane)The saddest cookie you have ever seen. Giving it a restock timer would be an insult.
 
 **Decision**
 
@@ -15309,7 +15429,7 @@
 
 **Description**
 
-> Recently plucked off a cookie, still slightly warm with crumbs attached.
+> (Tag:mundane)Recently plucked off a cookie, still slightly warm with crumbs attached.
 
 **Decision**
 
@@ -15326,7 +15446,7 @@
 
 **Description**
 
-> One of the Infinity Stones with power to change the universe, letting the user manipulate space, open portals, siphon energy from space, and more. A strong user is needed to unleash it without devastating consequences.
+> (Tag:reality-manipulation)(Tag:space)(Tag:tool)One of the Infinity Stones with power to change the universe, letting the user manipulate space, open portals, siphon energy from space, and more. A strong user is needed to unleash it without devastating consequences.
 
 **Decision**
 
@@ -15343,7 +15463,7 @@
 
 **Description**
 
-> An ornate key that, turned in a sufficiently large space, opens a portal to a 1 km x 1 km x 1 km pocket dimension containing a large dojo with a moderate garden. It holds training dummies, sparring weapons, running water, uniforms, towels, and more, all restocked and repaired within 24 hours with debris removed. Nothing originating from the dojo can be taken out. The exit gate stays open and leads to where the entrance was last opened.
+> (Tag:dimension)An ornate key that, turned in a sufficiently large space, opens a portal to a 1 km x 1 km x 1 km pocket dimension containing a large dojo with a moderate garden. It holds training dummies, sparring weapons, running water, uniforms, towels, and more, all restocked and repaired within 24 hours with debris removed. Nothing originating from the dojo can be taken out. The exit gate stays open and leads to where the entrance was last opened.
 
 **Decision**
 
@@ -15360,7 +15480,7 @@
 
 **Description**
 
-> Flynn's ring of the fabled thief slightly increases the wearer's physical strength the less they carry.
+> (Tag:accessory)(Tag:strength+)Flynn's ring of the fabled thief slightly increases the wearer's physical strength the less they carry.
 
 **Decision**
 
@@ -15377,7 +15497,7 @@
 
 **Description**
 
-> Rings bestowed by the Witch of Izalith and her daughter on pyromancy successors, thrumming with strange warmth. When equipped, they increase fire ability and spell potency while reducing costs.
+> (Tag:accessory)(Tag:fire+)Rings bestowed by the Witch of Izalith and her daughter on pyromancy successors, thrumming with strange warmth. When equipped, they increase fire ability and spell potency while reducing costs.
 
 **Decision**
 
@@ -15394,7 +15514,7 @@
 
 **Description**
 
-> "True faith looks forward, not back." Father Garcia's iconic fairly durable black trench coat that wards curses and negative energy from the wearer.
+> (Tag:armor)(Tag:curse-resistance+)(Tag:infernal-resistance+)"True faith looks forward, not back." Father Garcia's iconic fairly durable black trench coat that wards curses and negative energy from the wearer.
 
 **Decision**
 
@@ -15411,7 +15531,7 @@
 
 **Description**
 
-> "You shall drink the wrath of the Almighty." Father Garcia's shotgun for fighting demons and evil spirits, whose bullets hit intangible entities and are more effective against Unholy beings.
+> (Tag:gun)(Tag:holy)(Tag:weapon)"You shall drink the wrath of the Almighty." Father Garcia's shotgun for fighting demons and evil spirits, whose bullets hit intangible entities and are more effective against Unholy beings.
 
 **Decision**
 
@@ -15428,7 +15548,7 @@
 
 **Description**
 
-> Big Hat Logan's titular uncomfortably large hat of the legendary sorcerer that makes studying magic slightly easier when worn.
+> (Tag:accessory)(Tag:magic)(Tag:skill+)Big Hat Logan's titular uncomfortably large hat of the legendary sorcerer that makes studying magic slightly easier when worn.
 
 **Decision**
 
@@ -15445,7 +15565,7 @@
 
 **Description**
 
-> Squidward Quincy Tentacles's Bikini Bottom masterpiece that refreshes to perfect condition every 24 hours to protect the canvas.
+> (Tag:mundane)Squidward Quincy Tentacles's Bikini Bottom masterpiece that refreshes to perfect condition every 24 hours to protect the canvas.
 
 **Decision**
 
@@ -15462,7 +15582,7 @@
 
 **Description**
 
-> "Officially Sanctioned by the Goat herself." Pointed at a monster or creature, this permit turns them into a more humanoid attractive member of your attracted gender and grants baseline intelligence if lacking. Authority figures accept it as legitimate proof you are qualified for monster-girl cases.
+> (Tag:social)(Tag:tool)(Tag:transformation)(Noncon) "Officially Sanctioned by the Goat herself." Pointed at a monster or creature, this permit turns them into a more humanoid attractive member of your attracted gender and grants baseline intelligence if lacking. Authority figures accept it as legitimate proof you are qualified for monster-girl cases.
 
 **Flagged in reports**
 
@@ -15483,7 +15603,7 @@
 
 **Description**
 
-> A Dwarven Blacksmith's exceptionally durable magical armor that fits the wearer perfectly. It boosts performance by suppressing pain and mental limiters, impales you to pin your body together when damaged, and self-repairs over time. It amplifies negative emotions, requiring careful moderation.
+> (Tag:armor)(Tag:defence+)(Tag:strength+)A Dwarven Blacksmith's exceptionally durable magical armor that fits the wearer perfectly. It boosts performance by suppressing pain and mental limiters, impales you to pin your body together when damaged, and self-repairs over time. It amplifies negative emotions, requiring careful moderation.
 
 **Decision**
 
@@ -15500,7 +15620,7 @@
 
 **Description**
 
-> (Gacha) "Fancy your chances?" A ticket that, when torn, spins the Curse Roulette for the user and automatically applies the result and earned ticket to the recipient.
+> (Tag:meta)(Tag:ticket)(Gacha) "Fancy your chances?" A ticket that, when torn, spins the Curse Roulette for the user and automatically applies the result and earned ticket to the recipient.
 
 **Decision**
 
@@ -15517,7 +15637,7 @@
 
 **Description**
 
-> A rather ordinary, if extraordinarily solid, iron gear.
+> (Tag:mundane)A rather ordinary, if extraordinarily solid, iron gear.
 
 **Decision**
 
@@ -15534,7 +15654,7 @@
 
 **Description**
 
-> A changing booth giving anyone a tailored Taimanin Suit for their abilities. Always skintight yet lightweight, mobile, bulletproof, exceptionally durable, and receptive to reinforcement abilities and spells. Only one outfit per person; re-entering repairs it.
+> (Tag:armor)(Tag:production)A changing booth giving anyone a tailored Taimanin Suit for their abilities. Always skintight yet lightweight, mobile, bulletproof, exceptionally durable, and receptive to reinforcement abilities and spells. Only one outfit per person; re-entering repairs it.
 
 **Decision**
 
@@ -15551,7 +15671,7 @@
 
 **Description**
 
-> "Don't even try to pronounce it" A very durable sharp zweihander that steals a portion of a beheaded victim's energy to refuel your own.
+> (Tag:blade)(Tag:energy-recovery)(Tag:weapon)"Don't even try to pronounce it" A very durable sharp zweihander that steals a portion of a beheaded victim's energy to refuel your own.
 
 **Decision**
 
@@ -15568,7 +15688,7 @@
 
 **Description**
 
-> Confiscated from a certain mansion. One thousand unbranded bottles of standard baby oil.
+> (Tag:mundane)Confiscated from a certain mansion. One thousand unbranded bottles of standard baby oil.
 
 **Decision**
 
@@ -15585,7 +15705,7 @@
 
 **Description**
 
-> A tin of Soylent Green that is unappetizing but nutritious enough to prevent starvation, with taste varying by person. Restock Timer: 1 hour.
+> (Tag:resource)A tin of Soylent Green that is unappetizing but nutritious enough to prevent starvation, with taste varying by person. Restock Timer: 1 hour.
 
 **Flagged in reports**
 
@@ -15606,7 +15726,7 @@
 
 **Description**
 
-> A white cloak that turns the user invisible by bending light when exposed to natural sunlight. It also reflects all light-based attacks below Epic rank.
+> (Tag:accessory)(Tag:light-resistance+)(Tag:stealth)A white cloak that turns the user invisible by bending light when exposed to natural sunlight. It also reflects all light-based attacks below Epic rank.
 
 **Decision**
 
@@ -15623,7 +15743,7 @@
 
 **Description**
 
-> A silver stopwatch that, when started, speeds up the starter's perception. The longer it stays active, the more its energy drain grows exponentially.
+> (Tag:mental)(Tag:tool)A silver stopwatch that, when started, speeds up the starter's perception. The longer it stays active, the more its energy drain grows exponentially.
 
 **Decision**
 
@@ -15640,7 +15760,7 @@
 
 **Description**
 
-> "Pissing off the Heavens has never been easier." When ripped, it summons a Heavenly Tribulation of sky-aimed energized lightning equal to an Epic rank attack meant to kill you. Withstanding and tempering with it considerably improves physical abilities.
+> (Tag:electric)(Tag:holy)(Tag:ticket)"Pissing off the Heavens has never been easier." When ripped, it summons a Heavenly Tribulation of sky-aimed energized lightning equal to an Epic rank attack meant to kill you. Withstanding and tempering with it considerably improves physical abilities.
 
 **Decision**
 
@@ -15657,7 +15777,7 @@
 
 **Description**
 
-> (Tech) A super high-tech pistol-shaped device firing Condensed Graviton Energy Beams that rip through anything, with outputs from anti-personnel to anti-spacecraft. It draws energy from the user instead of ammo. Beware intense recoil.
+> (Tag:gravity)(Tag:gun)(Tag:tech)(Tag:weapon)(Tech) A super high-tech pistol-shaped device firing Condensed Graviton Energy Beams that rip through anything, with outputs from anti-personnel to anti-spacecraft. It draws energy from the user instead of ammo. Beware intense recoil.
 
 **Decision**
 
@@ -15674,7 +15794,7 @@
 
 **Description**
 
-> (Tech) The City is a Dyson-sphere-origin megastructure of hyper-compressed defensive and computational layers, factories, cities, and terminals holding millions of impossibly advanced technologies and blueprints. Your key opens portals to any part and gives absolute command authority. For size it lives in a pocket universe but can open portals into your reality.
+> (Tag:barracks)(Tag:growing)(Tag:machine)(Tag:production)(Tag:summon)(Tag:tech)(Tech) The City is a Dyson-sphere-origin megastructure of hyper-compressed defensive and computational layers, factories, cities, and terminals holding millions of impossibly advanced technologies and blueprints. Your key opens portals to any part and gives absolute command authority. For size it lives in a pocket universe but can open portals into your reality.
 
 **Flagged in reports**
 
@@ -15695,7 +15815,7 @@
 
 **Description**
 
-> A seed that sprouts a small ineffectual Erdtree, grown larger by supplying energy or ritually burying corpses beneath it. When strong enough it blesses those under its light, warding disease and curses, nourishing land, and boosting recovery and healing.
+> (Tag:curse-resistance+)(Tag:health-recovery)(Tag:nature)(Tag:poison-resistance+)A seed that sprouts a small ineffectual Erdtree, grown larger by supplying energy or ritually burying corpses beneath it. When strong enough it blesses those under its light, warding disease and curses, nourishing land, and boosting recovery and healing.
 
 **Decision**
 
@@ -15712,7 +15832,7 @@
 
 **Description**
 
-> (Tree)(Meta:lock-refund) Single use. Crush the stone to lock one of your unlocked nodes and refund its core and points.
+> (Tag:earth)(Tag:meta)(Tree)(Meta:lock-refund) Single use. Crush the stone to lock one of your unlocked nodes and refund its core and points.
 
 **Decision**
 
@@ -15729,7 +15849,7 @@
 
 **Description**
 
-> (Tree)(Meta:add-link:3) Three uses. Add a connection between two close, unconnected nodes.
+> (Tag:bio)(Tag:implant)(Tag:meta)(Tag:nature)(Tree)(Meta:add-link:3) Three uses. Add a connection between two close, unconnected nodes.
 
 **Decision**
 
@@ -15746,7 +15866,7 @@
 
 **Description**
 
-> (Tree)(Meta:gacha:5) Single use. Roll to unlock a random locked node with rarity 5 or below for free.
+> (Tag:card)(Tag:meta)(Tree)(Meta:gacha:5) Single use. Roll to unlock a random locked node with rarity 5 or below for free.
 
 **Decision**
 
@@ -15763,7 +15883,7 @@
 
 **Description**
 
-> (Tree)(Meta:gacha:5-7) Single use. Roll to unlock a random locked node with rarity between 5 and 7 for free.
+> (Tag:meta)(Tree)(Meta:gacha:5-7) Single use. Roll to unlock a random locked node with rarity between 5 and 7 for free.
 
 **Decision**
 
@@ -15780,7 +15900,7 @@
 
 **Description**
 
-> (Tree)(Meta:duplicate:5) Single use. Unlock a random locked node that shares a source with one of your unlocked nodes (source not Generic), with rarity 5 or below.
+> (Tag:meta)(Tree)(Meta:duplicate:5) Single use. Unlock a random locked node that shares a source with one of your unlocked nodes (source not Generic), with rarity 5 or below.
 
 **Decision**
 
@@ -15797,7 +15917,7 @@
 
 **Description**
 
-> (Tree)(Meta:lifeline) Single use. Unlock any node adjacent to an unlocked node for free.
+> (Tag:meta)(Tree)(Meta:lifeline) Single use. Unlock any node adjacent to an unlocked node for free.
 
 **Decision**
 
@@ -15814,7 +15934,7 @@
 
 **Description**
 
-> (Tree)(Meta:recall) Single use. Undo your most recent unlock: the node is locked again and its core and points refunded.
+> (Tag:meta)(Tree)(Meta:recall) Single use. Undo your most recent unlock: the node is locked again and its core and points refunded.
 
 **Decision**
 
@@ -15831,7 +15951,7 @@
 
 **Description**
 
-> (Tree)(Meta:shuffle) Single use. Exchange the location and connections of a visible locked node with a random not-visible locked node of similar rarity (±0.2). If no not-visible candidate exists, a visible one is chosen.
+> (Tag:meta)(Tree)(Meta:shuffle) Single use. Exchange the location and connections of a visible locked node with a random not-visible locked node of similar rarity (±0.2). If no not-visible candidate exists, a visible one is chosen.
 
 **Decision**
 
@@ -15848,7 +15968,7 @@
 
 **Description**
 
-> (Tree)(Meta:swap) Single use. Exchange the location and connections of two visible locked nodes of your choice.
+> (Tag:meta)(Tree)(Meta:swap) Single use. Exchange the location and connections of two visible locked nodes of your choice.
 
 **Decision**
 
@@ -15865,7 +15985,7 @@
 
 **Description**
 
-> (Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.
+> (Tag:meta)(Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.
 
 **Decision**
 
@@ -15882,7 +16002,7 @@
 
 **Description**
 
-> The basic sphere for catching weakened Pals; it shakes three times, then clicks.
+> The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out. Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 
 **Decision**
 
@@ -15899,7 +16019,7 @@
 
 **Description**
 
-> Improved catch rate over the basic sphere, for Pals past the early zones.
+> Improved catching sphere for tougher catches past the early game, Pals or otherwise. Three shakes and a click, with far fewer breakouts. Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 
 **Decision**
 
@@ -15916,7 +16036,7 @@
 
 **Description**
 
-> High-grade sphere that holds even sturdy mid-game Pals.
+> High-grade catching sphere that holds even sturdy catches that would shred lesser spheres. Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 
 **Decision**
 
@@ -15933,7 +16053,7 @@
 
 **Description**
 
-> Advanced sphere for powerful Pals; rarely fails on anything but bosses.
+> Advanced catching sphere for powerful catches; rarely fails on anything short of a boss. Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 
 **Decision**
 
@@ -15950,7 +16070,7 @@
 
 **Description**
 
-> Near-top-tier sphere with a catch rate worthy of endgame hunts.
+> Near-top-tier catching sphere with a catch rate worthy of endgame hunts, Pals or otherwise. Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 
 **Decision**
 
@@ -15967,7 +16087,7 @@
 
 **Description**
 
-> The ultimate sphere, forged for Legends; even a Jetragon can end up inside.
+> The ultimate catching sphere, forged for Legends; even a Jetragon, or anything on its level from elsewhere, can end up inside. Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 
 **Decision**
 
@@ -16001,7 +16121,7 @@
 
 **Description**
 
-> Clears whole forests in seconds and mulches wood and leaves into biomass.
+> (Tag:flexible)Clears whole forests in seconds and mulches wood and leaves into biomass.
 
 **Decision**
 
@@ -16035,7 +16155,7 @@
 
 **Description**
 
-> Fires sharpened rebar spikes; silent, cheap, and surprisingly lethal.
+> (Tag:gun)(Tag:weapon)Fires sharpened rebar spikes; silent, cheap, and surprisingly lethal.
 
 **Decision**
 
@@ -16052,7 +16172,7 @@
 
 **Description**
 
-> Remote-detonated explosive charges for clearing rock, trees, and hogs.
+> (Tag:kinetic)Remote-detonated explosive charges for clearing rock, trees, and hogs.
 
 **Decision**
 
@@ -16069,7 +16189,7 @@
 
 **Description**
 
-> Pings the direction of selected resources, crash sites, and power slugs.
+> (Tag:tool)Pings the direction of selected resources, crash sites, and power slugs.
 
 **Decision**
 
@@ -16086,7 +16206,7 @@
 
 **Description**
 
-> Exoskeleton legs that boost sprint speed and let you powerslide under everything.
+> (Tag:blade)(Tag:weapon)Exoskeleton legs that boost sprint speed and let you powerslide under everything.
 
 **Decision**
 
@@ -16120,7 +16240,7 @@
 
 **Description**
 
-> Breathe easy in poison-pillared zones while the filter holds out.
+> (Tag:accessory)Breathe easy in poison-pillared zones while the filter holds out.
 
 **Decision**
 
@@ -16137,7 +16257,7 @@
 
 **Description**
 
-> A humming alien artifact of unknown purpose that the hub desperately wants scanned.
+> A humming alien artifact. Research it in the MAM to unlock alien technology, starting with extra personal inventory slots.
 
 **Decision**
 
@@ -16154,7 +16274,7 @@
 
 **Description**
 
-> An impossible looping doodad that overclocks any machine it touches.
+> An impossible looping doodad; slot it into a machine to double that machine's output.
 
 **Decision**
 
@@ -16171,7 +16291,7 @@
 
 **Description**
 
-> Tag flora, fauna, and minerals through your visor; uploads pay out in Nanites.
+> (Tag:accessory)Tag flora, fauna, and minerals through your visor; uploads pay out in Nanites.
 
 **Decision**
 
@@ -16188,7 +16308,7 @@
 
 **Description**
 
-> Reshape whole landscapes, mine underfoot, and flatten base sites with multitool modes.
+> (Tag:earth)Reshape whole landscapes, mine underfoot, and flatten base sites with multitool modes.
 
 **Decision**
 
@@ -16222,7 +16342,7 @@
 
 **Description**
 
-> A charged railbeam that pierces rock and sentinels alike.
+> (Tag:fire)(Tag:weapon)A charged railbeam that pierces rock and sentinels alike.
 
 **Decision**
 
@@ -16239,7 +16359,7 @@
 
 **Description**
 
-> Fold space between stars on warp cells; the whole galaxy opens up.
+> (Tag:teleport)Fold space between stars on warp cells; the whole galaxy opens up.
 
 **Decision**
 
@@ -16273,7 +16393,7 @@
 
 **Description**
 
-> A grown void-egg starship that is alive: it gestates its own upgrades, bleeds, and sings in transit.
+> (Tag:vehicle)A grown void-egg starship that is alive: it gestates its own upgrades, bleeds, and sings in transit.
 
 **Decision**
 
@@ -16307,7 +16427,7 @@
 
 **Description**
 
-> Paper-thin orbital mirrors, launched by the thousand to begin the swarm.
+> (Tag:fire)Paper-thin orbital mirrors, launched by the thousand to begin the swarm.
 
 **Decision**
 
@@ -16341,7 +16461,7 @@
 
 **Description**
 
-> Exotic late-game material for the strangest recipes in the tech tree.
+> (Tag:alter)Exotic late-game material for the strangest recipes in the tech tree. A lump the size of a coin weighs as much as an anvil, holds staggering energy, and forges components no mundane material can match, if you have the tools and knowledge to work it safely.
 
 **Decision**
 
@@ -16358,7 +16478,7 @@
 
 **Description**
 
-> Dense annihilation fuel that keeps Icarus flying between stars.
+> (Tag:catalyst)(Tag:resource)Dense annihilation fuel that keeps Icarus flying between stars.
 
 **Decision**
 
@@ -16392,7 +16512,7 @@
 
 **Description**
 
-> Flick your wrists to snatch distant objects and ammo straight into your hands. Everyone calls them the Russells.
+> (Tag:fist)(Tag:gravity)(Tag:mundane)Flick your wrists to snatch distant objects and ammo straight into your hands. Everyone calls them the Russells.
 
 **Decision**
 
@@ -16409,7 +16529,7 @@
 
 **Description**
 
-> Standard Combine sidearm with reflex sight and resin upgrades.
+> (Tag:gun)(Tag:weapon)Standard Combine sidearm with reflex sight and resin upgrades.
 
 **Decision**
 
@@ -16426,7 +16546,7 @@
 
 **Description**
 
-> Double-barrel burst cannon that deletes headcrabs up close.
+> (Tag:gun)Double-barrel burst cannon that deletes headcrabs up close.
 
 **Decision**
 
@@ -16443,7 +16563,7 @@
 
 **Description**
 
-> Rapid-fire Combine automatic with an energy-ball secondary fire.
+> (Tag:gun)Rapid-fire Combine automatic with an energy-ball secondary fire.
 
 **Decision**
 
@@ -16460,7 +16580,7 @@
 
 **Description**
 
-> Volatile Xen flora that detonates seconds after you grab it. Throw fast.
+> (Tag:consumable)Volatile Xen flora that detonates seconds after you grab it. Throw fast.
 
 **Decision**
 
@@ -16477,7 +16597,7 @@
 
 **Description**
 
-> Lara's iconic axe: climbs ice walls, pries doors, and ends fights.
+> (Tag:movement)(Tag:weapon)Lara's iconic axe: climbs ice walls, pries doors, and ends fights.
 
 **Decision**
 
@@ -16494,7 +16614,7 @@
 
 **Description**
 
-> Silent with retrievable arrows; rope, fire, and poison upgrades with tinkering.
+> (Tag:bow)(Tag:weapon)Silent with retrievable arrows; rope, fire, and poison upgrades with tinkering.
 
 **Decision**
 
@@ -16511,7 +16631,7 @@
 
 **Description**
 
-> Hard-hitting sidearm for when stealth stops being an option.
+> (Tag:gravity)(Tag:gun)(Tag:weapon)Hard-hitting sidearm for when stealth stops being an option.
 
 **Decision**
 
@@ -16528,7 +16648,7 @@
 
 **Description**
 
-> Motorized ascender that zips you up ropes and rappels you down cliffs.
+> (Tag:flexible)(Tag:tool)Motorized ascender that zips you up ropes and rappels you down cliffs.
 
 **Decision**
 
@@ -16562,7 +16682,7 @@
 
 **Description**
 
-> Nippy one-person sub with crush-depth upgrades and a perimeter defense zapper.
+> (Tag:insectoid)Nippy one-person sub with crush-depth upgrades and a perimeter defense zapper.
 
 **Decision**
 
@@ -16579,7 +16699,7 @@
 
 **Description**
 
-> Powered exosuit with drill and grapple arms, for punching leviathans in the face.
+> (Tag:armor)Powered exosuit with drill and grapple arms, for punching leviathans in the face.
 
 **Decision**
 
@@ -16613,7 +16733,7 @@
 
 **Description**
 
-> Prints seabase modules from titanium anywhere with a flat-ish seabed.
+> (Tag:building)Prints seabase modules from titanium anywhere with a flat-ish seabed.
 
 **Decision**
 
@@ -16630,7 +16750,7 @@
 
 **Description**
 
-> Freezes anything in a time bubble, up to and including Reapers. Briefly.
+> (Tag:ice)(Tag:time)Freezes anything in a time bubble, up to and including Reapers. Briefly.
 
 **Decision**
 
@@ -16681,7 +16801,7 @@
 
 **Description**
 
-> Ear-mounted AR that scans machines, tags weak points, and replays echoes of the past.
+> (Tag:catalyst)Ear-mounted AR that scans machines, tags weak points, and replays echoes of the past.
 
 **Decision**
 
@@ -16698,7 +16818,7 @@
 
 **Description**
 
-> Ancient power armor projecting a rechargeable energy shield around its wearer.
+> (Tag:shield)Ancient power armor projecting a rechargeable energy shield around its wearer.
 
 **Decision**
 
@@ -16749,7 +16869,7 @@
 
 **Description**
 
-> Lobs proximity bombs in a satisfying arc with a bigger boom.
+> (Tag:bow)(Tag:kinetic)Lobs proximity bombs in a satisfying arc with a bigger boom. Carries six bombs; ammunition restocks every 24 hours.
 
 **Decision**
 
@@ -16851,7 +16971,7 @@
 
 **Description**
 
-> Zero-mana artifact that taps for black. Power Nine fast mana.
+> (Tag:vehicle)Zero-mana artifact that taps for black. Power Nine fast mana.
 
 **Decision**
 
@@ -16885,7 +17005,7 @@
 
 **Description**
 
-> Spacer-tech pulse rifle that outshoots anything short of a charge lance.
+> (Tag:gun)(Tag:movement)(Tag:weapon)Spacer-tech pulse rifle that outshoots anything short of a charge lance.
 
 **Decision**
 
@@ -16902,7 +17022,7 @@
 
 **Description**
 
-> Long-range armor-melting spacer rifle; one shot can delete a torso.
+> (Tag:movement)(Tag:polearm)(Tag:weapon)Long-range armor-melting spacer rifle; one shot can delete a torso.
 
 **Decision**
 
@@ -16919,7 +17039,7 @@
 
 **Description**
 
-> Glitterworld nanomachines that regenerate scars, missing organs, and chronic ills.
+> (Tag:consumable)(Tag:elixir)(Tag:tech)(Tag:vehicle)Glitterworld nanomachines that regenerate scars, missing organs, and chronic ills.
 
 **Decision**
 
@@ -16936,7 +17056,7 @@
 
 **Description**
 
-> Brings back the recently dead, full resurrection psychosis side effects included.
+> (Tag:consumable)(Tag:elixir)(Tag:life)(Tag:tech)(Tag:vehicle)Brings back the recently dead, full resurrection psychosis side effects included.
 
 **Decision**
 
@@ -16953,7 +17073,7 @@
 
 **Description**
 
-> Long-range nonlethal takedowns; one dart naps a guard for minutes.
+> (Tag:gun)(Tag:weapon)Long-range nonlethal takedowns; one dart naps a guard for minutes.
 
 **Decision**
 
@@ -16970,7 +17090,7 @@
 
 **Description**
 
-> Custom compact pistol, whisper-quiet with a suppressor and laser sight.
+> (Tag:gun)(Tag:weapon)Custom compact pistol, whisper-quiet with a suppressor and laser sight.
 
 **Decision**
 
@@ -16987,7 +17107,7 @@
 
 **Description**
 
-> Monomolecular sword that cuts through armor, bots, and bad decisions.
+> (Tag:blade)(Tag:material)(Tag:weapon)Monomolecular sword that cuts through armor, bots, and bad decisions.
 
 **Decision**
 
@@ -17021,7 +17141,7 @@
 
 **Description**
 
-> A red Bakelite phone that calls the Board directly, geometry optional.
+> A red Bakelite phone that calls the Board directly, geometry optional. The Board answers in cryptic instructions, sideways comments, and fragments of backstory that turn out to matter later.
 
 **Decision**
 
@@ -17038,7 +17158,7 @@
 
 **Description**
 
-> Wearable Hedron tech that shields the mind from Hiss resonance.
+> (Tag:sound)Wearable Hedron tech that shields the mind from Hiss resonance.
 
 **Decision**
 
@@ -17072,7 +17192,7 @@
 
 **Description**
 
-> A statue-shaped key that opens Slime Gates into new ranch zones.
+> (Tag:amorphous)A statue-shaped key that opens Slime Gates into new ranch zones.
 
 **Decision**
 
@@ -17081,7 +17201,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 932. Flak Cannon
+## 932. CCCC Ion Laser
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -17089,7 +17209,7 @@
 
 **Description**
 
-> Blast Shotgun crossed with more shotgun: the all-powerful flak answer to everything.
+> (Tag:light)(Tag:tech)A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. A piercing hitscan laser with near-perfect accuracy and extreme range: devastating pinpoint damage with a slow fire rate.
 
 **Decision**
 
@@ -17098,7 +17218,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 933. Blast Shotgun
+## 933. AAAA Minigun
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -17106,7 +17226,7 @@
 
 **Description**
 
-> Bomb plus shotgun: spread explosives that clear whole microbe waves.
+> (Tag:gun)A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. Spews a torrent of miniscule projectiles, taking 3 seconds to spool up, with decent DPS within a cone.
 
 **Decision**
 
@@ -17115,7 +17235,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 934. Dice Turret
+## 934. GGG Wavequake
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -17123,7 +17243,7 @@
 
 **Description**
 
-> A gambling turret whose wild random shots somehow always pay off.
+> (Tag:earth)A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. Slowly fires a full circle of slow-moving midrange waves carrying a strong punch of knockback along with decent damage.
 
 **Decision**
 
@@ -17140,7 +17260,7 @@
 
 **Description**
 
-> A full idol that automatically resurrects its bearer once, then crumbles.
+> (Tag:life)A full idol that automatically resurrects its bearer once, then crumbles.
 
 **Decision**
 
@@ -17157,7 +17277,7 @@
 
 **Description**
 
-> Bring an ally back mid-fight; every tactician carries a stack.
+> (Tag:grimoire)(Tag:life)Bring an ally back mid-fight; every tactician carries a stack.
 
 **Decision**
 
@@ -17174,7 +17294,7 @@
 
 **Description**
 
-> The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty. Totally fair.
+> (Tag:resource)The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty, totally fair, and immune to all luck, fate, and probability manipulation, so its verdict settles any dispute beyond argument.
 
 **Decision**
 
@@ -17191,7 +17311,7 @@
 
 **Description**
 
-> A program's everything on a glowing disc: memory, weapon, and backup, worn on the back.
+> A glowing identity disc worn on the back: memory, weapon, and backup in one. Grants disc abilities, a returning energy throw, plus disc subroutines like Seeker or Firewall, and stores a backup that can restore you if you're derezzed. It doesn't make you a program, and the backup restores you rather than cloning an independent copy.
 
 **Decision**
 
@@ -17208,7 +17328,7 @@
 
 **Description**
 
-> A shard of Impossible rarity; slotting it multiplies everything your build does.
+> (Tag:resource)A shard of Impossible rarity; slotting it multiplies everything your build does.
 
 **Decision**
 
@@ -17225,7 +17345,7 @@
 
 **Description**
 
-> A lumbering passenger blimp that ferries citizens across your skyline in style.
+> A lumbering passenger blimp that ferries you and up to a dozen passengers or a hold of cargo through the skies in style, slow, comfortable, and landing anywhere flat, needing only time and clear weather.
 
 **Decision**
 
@@ -17242,7 +17362,7 @@
 
 **Description**
 
-> A unique-building space elevator that fires tourists and freight straight into orbit.
+> (Tag:space)A unique-building space elevator you can raise wherever you settle: a tethered beanstalk that lifts you and freight straight into orbit and back, cheaply and endlessly, once anchored, it cannot be moved.
 
 **Decision**
 
@@ -17259,7 +17379,7 @@
 
 **Description**
 
-> An instant camera for capturing the moments that matter, before you rewind them.
+> (Tag:time)An instant camera for capturing the moments that matter, before you rewind them.
 
 **Decision**
 
@@ -17276,7 +17396,7 @@
 
 **Description**
 
-> A planet-wide shield generator that shrugs off anything short of a star going out.
+> (Tag:dimension)(Tag:shield)(Tag:vehicle)A planet-wide shield generator that shrugs off anything short of a star going out.
 
 **Decision**
 
@@ -17310,7 +17430,7 @@
 
 **Description**
 
-> Modular power armor with room for exoskeletons, shields, batteries, and a personal fusion reactor.
+> (Tag:armor)Modular power armor with room for exoskeletons, shields, batteries, and a personal fusion reactor.
 
 **Decision**
 
@@ -17344,7 +17464,7 @@
 
 **Description**
 
-> A book of stamped-down factory blueprints; plop down entire production blocks at once.
+> (Tag:grimoire)A book of stamped-down factory blueprints recorded by scanning layouts you have built. Stamp ghost-images of entire production blocks, walls, or furnace rows at once; construction robots, yours or borrowed, then build them for real, consuming materials from your stock, as the book conjures no matter itself. Synergises with any Tinker, construction, or automation abilities, which can feed it new designs and supply the builders and belts to realise them.
 
 **Decision**
 
@@ -17361,7 +17481,7 @@
 
 **Description**
 
-> A wrist-mounted launcher firing a reusable camera probe that photographs the unknown.
+> (Tag:gun)A wrist-mounted launcher firing a reusable camera probe that photographs the unknown.
 
 **Decision**
 
@@ -17378,7 +17498,7 @@
 
 **Description**
 
-> A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
+> (Tag:tech)A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
 
 **Decision**
 
@@ -17395,7 +17515,7 @@
 
 **Description**
 
-> The Nomai station at the heart of the 22-minute loop; knowing it exists changes everything.
+> (Tag:time)The Nomai station at the heart of the 22-minute loop. You hold its secrets: you can detect time loops and anomalies, navigate them safely, and, most precious of all, retain your memories across resets while others forget.
 
 **Decision**
 
@@ -17412,7 +17532,7 @@
 
 **Description**
 
-> A towering coal-fired Generator, the last source of heat on Earth; the city lives or dies with it.
+> (Tag:machine)(Tag:production)A towering coal-fired Generator you can raise at any settlement: it burns coal, or wood, oil, and worse in a pinch, to radiate life-saving warmth across whole districts through even supernatural frost. The city lives or dies with it, so you must feed it fuel and hands around the clock.
 
 **Decision**
 
@@ -17429,7 +17549,7 @@
 
 **Description**
 
-> A portable steam hub extending the Generator's warmth to distant districts.
+> (Tag:water)A portable steam hub extending the Generator's warmth to distant districts.
 
 **Decision**
 
@@ -17446,7 +17566,7 @@
 
 **Description**
 
-> A sealed suit with its own oxygen supply for space, magma, and chlorine zones alike.
+> (Tag:armor)A sealed suit with its own oxygen supply for space, magma, and chlorine zones alike.
 
 **Decision**
 
@@ -17463,7 +17583,7 @@
 
 **Description**
 
-> A humming research station that turns raw data and power into steady research progress.
+> (Tag:machine)(Tag:tech)A humming research station that turns raw data and power into steady research progress.
 
 **Decision**
 
@@ -17480,7 +17600,7 @@
 
 **Description**
 
-> A clinker-built Viking longship that outruns sea serpents with the wind behind it.
+> (Tag:movement)(Tag:vehicle)A clinker-built Viking longship that outruns sea serpents with the wind behind it.
 
 **Decision**
 
@@ -17531,7 +17651,7 @@
 
 **Description**
 
-> A tempered pickaxe for rock, dirt, and the occasional glyphid skull.
+> (Tag:tool)A tempered pickaxe for rock, dirt, and the occasional glyphid skull.
 
 **Decision**
 
@@ -17548,7 +17668,7 @@
 
 **Description**
 
-> Fires a burning flare that sticks where it lands and lights up the whole cave.
+> (Tag:consumable)(Tag:gun)(Tag:weapon)Fires a burning flare that sticks where it lands and lights up the whole cave.
 
 **Decision**
 
@@ -17565,7 +17685,7 @@
 
 **Description**
 
-> A deformable-terrain multitool for digging, flattening, and analyzing alien soil.
+> (Tag:earth)A deformable-terrain multitool for digging, flattening, and analyzing alien soil.
 
 **Decision**
 
@@ -17582,7 +17702,7 @@
 
 **Description**
 
-> A single-seat interplanetary shuttle; pack solid fuel and pick a landing zone.
+> (Tag:vehicle)A single-seat interplanetary shuttle; pack solid fuel and pick a landing zone.
 
 **Decision**
 
@@ -17633,7 +17753,7 @@
 
 **Description**
 
-> Destroys walls, doors, and skulls with equal enthusiasm. Heavy, though.
+> (Tag:bludgeon)Destroys walls, doors, and skulls with equal enthusiasm. Heavy, though.
 
 **Decision**
 
@@ -17650,7 +17770,7 @@
 
 **Description**
 
-> A portable gas generator that keeps the lights and freezers on after the grid dies.
+> (Tag:ice)A portable gas generator that keeps the lights and freezers on after the grid dies.
 
 **Decision**
 
@@ -17667,7 +17787,7 @@
 
 **Description**
 
-> A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen.
+> (Tag:blade)(Tag:weapon)A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen. It never dulls or breaks, and cuts clean through armor, monsters, and magic-resistant hides far beyond mundane steel, though it grants no magic of its own.
 
 **Decision**
 
@@ -17701,7 +17821,7 @@
 
 **Description**
 
-> Coulson's cherry-red 1962 Corvette convertible with VTOL flight, machine guns, and flamethrowers. She has a name, and it is Lola.
+> (Tag:shield)(Tag:vehicle)Coulson's cherry-red 1962 Corvette convertible with VTOL flight, machine guns, and flamethrowers. She has a name, and it is Lola.
 
 **Decision**
 
@@ -17735,7 +17855,7 @@
 
 **Description**
 
-> The collected white magic counterweight to the Darkhold; its defensive spells answer nearly anything.
+> (Tag:grimoire)The collected white magic counterweight to the Darkhold; its defensive spells answer nearly anything.
 
 **Decision**
 
@@ -17752,7 +17872,7 @@
 
 **Description**
 
-> Ten bracelets of alien origin granting longevity, concussive blasts, and a small army's obedience.
+> (Tag:accessory)Ten bracelets of alien origin granting longevity, concussive blasts, and a small army's obedience.
 
 **Decision**
 
@@ -17786,7 +17906,7 @@
 
 **Description**
 
-> A mystic staff that cracks the ground with golden force and pries open sealed things.
+> (Tag:catalyst)A mystic staff that cracks the ground with golden force and pries open sealed things.
 
 **Decision**
 
@@ -17812,7 +17932,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 975. TVA Pruning Baton
+## 975. Time Stick
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -17820,7 +17940,7 @@
 
 **Description**
 
-> A TVA baton that prunes branched timelines, variant clutter, and people, all with one touch.
+> (Tag:time)A TVA Time Stick that alters a target's flow of time, or disintegrates organic and inorganic targets alike, sending them to the Void. Touch range only.
 
 **Decision**
 
@@ -17837,7 +17957,7 @@
 
 **Description**
 
-> A timeline-nuking charge that prunes a whole branched reality back to the Sacred Timeline.
+> (Tag:movement)A timeline-nuking charge that prunes a whole branched reality back to the Sacred Timeline.
 
 **Decision**
 
@@ -17854,7 +17974,7 @@
 
 **Description**
 
-> A whistle-guided Yaka arrow that carves through targets and curves back to hand.
+> (Tag:weapon)A whistle-guided Yaka arrow that carves through targets and curves back to hand.
 
 **Decision**
 
@@ -17905,7 +18025,7 @@
 
 **Description**
 
-> A packet of synthetic blue crystals that unlocks escalating brain capacity: perfect recall, telepathy, then matter and time itself. Unstable, leaks, and past a point there is no coming back.
+> (Tag:mental)A packet of synthetic blue crystals that unlocks escalating brain capacity: perfect recall, telepathy, then matter and time itself. Unstable, leaks, and past a point there is no coming back.
 
 **Decision**
 
@@ -17922,7 +18042,7 @@
 
 **Description**
 
-> A desert cave that traps whoever enters during a tremor in a repeating day. Rehearse anything forever; rumor says one explosion inside, mid-quake, gets you out.
+> (Tag:time)A desert cave that traps whoever enters during a tremor in a repeating day. Rehearse anything forever; rumor says one explosion inside, mid-quake, gets you out.
 
 **Decision**
 
@@ -17939,7 +18059,7 @@
 
 **Description**
 
-> A multi-wagon electric freight locomotive that hauls entire factories' output on your rail lines.
+> (Tag:electric)A multi-wagon electric freight locomotive that hauls entire factories' output on your rail lines.
 
 **Decision**
 
@@ -18007,7 +18127,7 @@
 
 **Description**
 
-> A click-together rail car for the railway you really should have built sooner.
+> (Tag:vehicle)A click-together rail car for the railway you really should have built sooner.
 
 **Decision**
 
@@ -18024,7 +18144,7 @@
 
 **Description**
 
-> An eight-car demon that fused with its own train; two hundred passengers aboard, all asleep.
+> (Tag:vehicle)An eight-car demon fused with its own train, bound to your service as transport; its sleeping passengers never wake unless you allow it.
 
 **Decision**
 
@@ -18058,7 +18178,7 @@
 
 **Description**
 
-> A shotgun rigged to a high-speed minecart loop; anything in the corridor ceases to be a problem.
+> (Tag:gun)A shotgun rigged to a high-speed minecart loop; anything in the corridor ceases to be a problem.
 
 **Decision**
 
@@ -18075,7 +18195,7 @@
 
 **Description**
 
-> The USG Ishimura's tram network, still running its route through a ship full of necromorphs.
+> A complete tram network in a box: track, cars, and stations that unfold wherever you lay them. Ship and necromorphs not included.
 
 **Decision**
 
@@ -18092,7 +18212,7 @@
 
 **Description**
 
-> A Umbrella luxury train crawling with T-virus horrors and exactly one working brake lever too few.
+> A Umbrella luxury train, delivered fumigated and horror-free, ready to run wherever you lay track.
 
 **Decision**
 
@@ -18126,7 +18246,7 @@
 
 **Description**
 
-> The sacred Spirit Tracks engine, blessed rails and all; evil cannot board without an invitation.
+> (Tag:spirit)(Tag:vehicle)The sacred Spirit Tracks engine, blessed rails and all; evil cannot board without an invitation.
 
 **Decision**
 
@@ -18143,7 +18263,7 @@
 
 **Description**
 
-> On certain days a freight train rumbles through the valley, shaking loose coal, wood, and geodes.
+> (Tag:vehicle)On certain days a freight train rumbles through the valley, shaking loose coal, wood, and geodes.
 
 **Decision**
 
@@ -18177,7 +18297,7 @@
 
 **Description**
 
-> A spacefaring steam locomotive running the Andromeda line; tickets cost more than most planets.
+> A spacefaring steam locomotive bonded to you as its passenger of record, running its Andromeda circuit wherever you ask. You never pay the fare.
 
 **Decision**
 
@@ -18211,7 +18331,7 @@
 
 **Description**
 
-> A thousand-and-one-car perpetual-motion train circling a frozen Earth, class system included.
+> A thousand-and-one-car perpetual-motion train, yours to command, laying its own track wherever you point it. Frozen apocalypse and class uprising not included.
 
 **Decision**
 
@@ -18228,7 +18348,7 @@
 
 **Description**
 
-> Wilford's sacred Engine: eternal, unknowable, and the only warm thing left on the planet.
+> (Tag:machine)(Tag:tech)Wilford's sacred Engine, yours to install: eternal heat and power for a settlement, a ship, or a very warm room.
 
 **Decision**
 
@@ -18279,7 +18399,7 @@
 
 **Description**
 
-> A program that drops your mind into a doomed train passenger's final eight minutes, looping with memories intact until you find the bomb. Your body waits safely outside.
+> (Tag:tech)A program that drops your mind into a doomed train passenger's final eight minutes, looping with memories intact until you find the bomb. Your body waits safely outside.
 
 **Decision**
 
@@ -18296,7 +18416,7 @@
 
 **Description**
 
-> Doc's flying steam-locomotive time machine, running on steam and pure showmanship.
+> (Tag:time)Doc's flying steam-locomotive time machine, running on steam and pure showmanship.
 
 **Decision**
 
@@ -18347,7 +18467,7 @@
 
 **Description**
 
-> A behemoth armored battle train bristling with cannons; the track is more of a suggestion.
+> (Tag:armor)(Tag:vehicle)A behemoth armored battle train bristling with cannons; the track is more of a suggestion.
 
 **Decision**
 
@@ -18381,7 +18501,7 @@
 
 **Description**
 
-> A one-way rail line gliding over open ocean toward Swamp Bottom; exact fare unknown.
+> (Tag:water)A one-way spectral rail line gliding over open ocean to Swamp Bottom, departing every dawn whether or not you are aboard. Fare is a single vivid memory paid at the gate; the train carries you and whatever you can hold, never deviates, never stops between stations, and cannot be ridden twice in the same direction.
 
 **Decision**
 
@@ -18398,7 +18518,2047 @@
 
 **Description**
 
-> A top-spec laptop with an absurd amount of VRAM that runs a genuinely helpful AI assistant entirely offline. Battery life: optimistic.
+> (Tag:mundane)A top-spec laptop with an absurd amount of VRAM that runs a genuinely helpful AI assistant entirely offline. Battery life: optimistic.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1010. Shake the Tree
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.0 | Legendary | Generic |
+
+**Description**
+
+> (Tag:meta)(Tag:nature)(Tree)(Meta:shake) Single use. Shuffle which entry sits on every locked node. Positions and connections don't move, and every node keeps a similar rarity.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1011. ChaosQuake
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.5 | Mythical | Generic |
+
+**Description**
+
+> (Tag:earth)(Tag:meta)(Tree)(Meta:chaosquake) Single use. Shuffle which entry sits on every node, locked or unlocked alike. Your unlocked nodes keep their places but not their faces; rarities stay similar.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1012. Gambler's Bronze Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.3 | Common | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:material)(Tag:meta)(Tree)(Meta:gamble:2) Unlocking this die lets you gamble 2 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1013. Gambler's Silver Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.3 | Uncommon | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:earth)(Tag:meta)(Tree)(Meta:gamble:4) Unlocking this die lets you gamble 4 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1014. Gambler's Gold Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.3 | Rare | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:earth)(Tag:meta)(Tree)(Meta:gamble:6) Unlocking this die lets you gamble 6 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1015. Gambler's Platinum Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.3 | Elite | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:meta)(Tree)(Meta:gamble:10) Unlocking this die lets you gamble 10 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1016. Gambler's Diamond Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.3 | Epic | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:meta)(Tree)(Meta:gamble:10)(Meta:gamble-reroll:1) Unlocking this die lets you gamble 10 awarded tickets, and all your die rolls reroll natural 1s. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1017. Gambler's Legendary Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.3 | Legendary | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:meta)(Tree)(Meta:gamble:12)(Meta:gamble-reroll:5) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 5s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1018. Gambler's Mythical Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 7.3 | Mythical | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:meta)(Tree)(Meta:gamble:12)(Meta:gamble-reroll:7) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 7s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1019. Gambler's Divine Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.3 | Divine | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:divine)(Tag:holy)(Tag:meta)(Tree)(Meta:gamble:12)(Meta:gamble-reroll:9) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 9s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1020. Gambler's Transcendent Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.3 | Transcendent | Generic |
+
+**Description**
+
+> (Tag:card)(Tag:meta)(Tree)(Meta:gamble:16)(Meta:gamble-twice) Unlocking this die lets you gamble 16 awarded tickets, and every gamble gets a second d20 roll whenever the first roll isn't a natural 20. Each roll uses the same table (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1021. Morph Ball
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Metroid |
+
+**Description**
+
+> (Tag:transformation)(Tech) Compress into an armored rolling sphere a third of your height, fast and nearly silent. Lay energy bombs, three active at a time, and boost-charge for a destructive burst of speed.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1022. Varia Suit
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Metroid |
+
+**Description**
+
+> (Tag:armor)(Tech) Powered exosuit with major damage reduction, full heat and cold immunity, and an arm cannon firing charged plasma bolts. Heavy, obvious, and hungry for energy cells.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1023. Gravity Suit
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.7 | Epic | Metroid |
+
+**Description**
+
+> (Tag:armor)(Tag:gravity)(Tech) Upgraded powered exosuit that moves through liquid, lava, and crushing gravity as though they were air, with greater defense than lesser suits. Same appetite for energy cells.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1024. Birthing Pod
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | MTG |
+
+**Description**
+
+> Feed this biomechanical pod a living creature or minion to dissolve it and birth a slightly stronger creature of a related kind. One hatching at a time; the pod hungers again within a day.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1025. Mimic Vat
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | MTG |
+
+**Description**
+
+> Imprint the recently fallen into this vat to produce temporary token copies of them, loyal to you, each lasting a single battle. One imprint stored at a time.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1026. The Ozolith
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | MTG |
+
+**Description**
+
+> A floating crystal that drinks in the counters of your fallen minions and lets you redistribute them onto your survivors. Counters left unassigned past a day decay away.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1027. Pithing Needle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.1 | Epic | MTG |
+
+**Description**
+
+> Name one ability, item power, or spell; its owner cannot activate it while you hold this needle and picture them clearly. One name at a time; renaming takes an hour of focus.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1028. Panharmonicon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.3 | Epic | MTG |
+
+**Description**
+
+> A humming engine that doubles the triggered effects of things you control: arrivals, deaths, thresholds, all of it firing twice. Costs are not copied, and upkeep still ticks once.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1029. Mirror of Night
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.7 | Epic | Hades |
+
+**Description**
+
+> A mirror of stolen darkness with a talent tree you allocate at will: stubborn defiance, death resistance, energy reserves, casting strength, and more. Refund and reallocate freely between battles.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1030. Lucky Tooth
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.3 | Epic | Hades |
+
+**Description**
+
+> A Cerberus fang that takes a killing blow for you instead, leaving you barely standing. Reforms by the next dawn, and only while you carry no other death-cheating trinket.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1031. Stygius, the Stygian Blade
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.9 | Epic | Hades |
+
+**Description**
+
+> (Tag:blade)(Tag:weapon)The prince's underworld sword with shifting aspects: swift slashes, a lunging special, and a nova that spends your casting stone for ruinous damage. It never dulls and never leaves your hand unasked.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1032. Pierced Butterfly
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Hades |
+
+**Description**
+
+> A keepsake butterfly that drinks in flawless victories: each battle you end untouched sharpens all your attacks noticeably, stacking until something finally lands a hit and resets it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1033. Fishing Rod
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | Hades |
+
+**Description**
+
+> (Tag:catalyst)A simple rod that catches something worthwhile in any liquid, including lava, chaos, and the Styx: mostly fish, occasionally riches, rarely something that bites back. One notable catch per day; endless minnows.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1034. Arcana Deck
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Hades 2 |
+
+**Description**
+
+> (Tag:card)A deck of major arcana you activate within your grasp: the Sorceress quickens casts, the Titan hardens skin, the Huntress sharpens strikes, and more. Deeper grasp holds more cards.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1035. Ghost Onion
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Hades 2 |
+
+**Description**
+
+> (Tag:spirit)A spectral onion that revives you once per battle at half strength with full energy, then needs a full rest to regrow. Smells faintly of the surface.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1036. Descura, the Witch's Staff
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Hades 2 |
+
+**Description**
+
+> (Tag:catalyst)(Tag:magic)The witch's staff: forceful bolts, a charged omega blast that consumes magick, and a special that lobs your casting stone and recalls it. Never runs dry, only runs hot.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1037. Arachne's Cocoon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Hades 2 |
+
+**Description**
+
+> A spool of Arachne's silk that wraps you in ablative armor cocoons, each absorbing a full hit before bursting. Three cocoons per rest; the silk itches terribly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1038. Old Spiked Collar
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Hades |
+
+**Description**
+
+> A spiked collar granting a reserve of bonus health that absorbs harm first. The reserve refills between battles; Cerberus has never noticed it missing.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1039. Pom Blossom
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Hades |
+
+**Description**
+
+> (Tag:nature)A divine flower that grows a random power a full rank after every major battle. Minor scuffles don't interest it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1040. Skull Earring
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.3 | Epic | Hades |
+
+**Description**
+
+> (Tag:accessory)(Tag:necro)An earring that makes your attacks hit notably harder while you are badly hurt. Stopping to heal wastes its attention.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1041. White Antler
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Hades |
+
+**Description**
+
+> An antler charm making critical strikes far more likely; clean hits find weak points on their own.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1042. Lambent Plume
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Hades |
+
+**Description**
+
+> A feather that stacks dodge chance the longer you keep moving without stopping. Standing still resets it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1043. Harpy Feather Duster
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Hades |
+
+**Description**
+
+> (Tag:avian)A duster that makes breakables and containers hide more valuables. Dust first, loot second.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1044. Cosmic Egg
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Hades |
+
+**Description**
+
+> (Tag:growing)A cosmic egg that thins local reality: chaotic phenomena and strangers seek you out, and offerings made to Chaos, such as Chaos Gate sacrifices, run stronger.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1045. Luckier Tooth
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.3 | Epic | Hades 2 |
+
+**Description**
+
+> A luckier tooth that cheats death once per venture at partial strength. Skelly swears this one works better than the last one.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1046. Knuckle Bones
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Hades 2 |
+
+**Description**
+
+> (Tag:bio)(Tag:fist)(Tag:material)(Tag:necro)Knucklebones that make your guardians and companions hit harder and endure longer. They rattle approvingly at good plans.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1047. Left Sock
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.1 | Trash | Generic |
+
+**Description**
+
+> A single left sock. Its partner is never found, in any world.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1048. Dead Battery
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> (Tag:resource)A battery that is mysteriously always dead. Devices reject it on sight.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1049. Allen Key
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> (Tag:tool)A very specific size that fits nothing you own. Indestructible by neglect.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1050. Fortune Cookie (blank)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> (Tag:consumable)(Tag:divination)The fortune slip is blank. The cookie is stale. Interpret freely.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1051. Hotel Pen
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.1 | Trash | Generic |
+
+**Description**
+
+> (Tag:mundane)Writes for exactly one signature, then gives up. Stolen legally.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1052. Traffic Cone (mini)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> A miniature traffic cone. Directs nothing; respected by no one.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1053. Single Chopstick
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> One chopstick. Pairs with nothing. Stabs adequately.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1054. Deflated Balloon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> A balloon with no air and no squeak left. Pops only emotionally.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1055. USB Cable (wrong end)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> Both ends are the wrong end. Data transfer is theoretical.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1056. Takeout Menu (closed)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> Menu for a restaurant that closed years ago. The pictures still look good.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1057. Empty Missile Tank
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Metroid |
+
+**Description**
+
+> (Tag:vehicle)An empty missile expansion tank. Holds sandwiches now.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1058. Oxygen Candle (half)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | The Expanse |
+
+**Description**
+
+> Half a chemical oxygen candle. Burns fifteen minutes of thin, tinny air.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1059. Unobtanium Pebble
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | James Cameron's Avatar |
+
+**Description**
+
+> A pebble of unobtanium too small to interest anyone. Worth: one (1) pebble.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1060. Stillsuit Patch Kit
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Dune |
+
+**Description**
+
+> (Tag:tool)Patches stillsuit leaks adequately. Does not patch the wearer's complaining.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1061. Mud (thermal)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | Predator |
+
+**Description**
+
+> (Tag:earth)Special mud that hides body heat from thermal vision while wet. Dries fast; reapply under fire.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1062. Endoskeleton Finger
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Terminator |
+
+**Description**
+
+> One hyperalloy finger. Points accusingly. Cannot be bent, broken, or returned.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1063. Sonic Screwdriver (dead)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.6 | Trash | Doctor Who |
+
+**Description**
+
+> (Tag:sound)(Tag:tool)Does everything except work: the battery is dead and replacements don't exist. Still excellent for pointing.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1064. Talkie Toaster
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | Red Dwarf |
+
+**Description**
+
+> (Tag:mundane)A toaster obsessed with toast. Asks about toast. Toasts adequately.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1065. Towel
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Hitchhiker |
+
+**Description**
+
+> (Tag:mundane)A large, mostly clean towel. Hugely useful in ways that only become clear during emergencies.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1066. Lawgiver (empty)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.6 | Trash | Judge Dredd |
+
+**Description**
+
+> A voice-activated sidearm with no ammunition and no voice authorization. Makes a convincing paperweight.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1067. MALP (stuck)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | Stargate |
+
+**Description**
+
+> A probe stuck in a ditch just past the event horizon. Telemetry works; retrieval does not.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1068. Cylon Toaster (quiet)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Battlestar Galactica |
+
+**Description**
+
+> (Tag:mundane)Makes toast and says nothing. The silence is the point. Probably.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1069. Encyclopedia Galactica (abridged)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | Foundation |
+
+**Description**
+
+> Abridged to one volume. Covers everything briefly and nothing usefully.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1070. Knife Missile (blunt)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.6 | Trash | Culture |
+
+**Description**
+
+> (Tag:blade)(Tag:weapon)A formerly godlike smart munition, now blunt and docile. Follows you like a duckling.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1071. DRD (lost)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Farscape |
+
+**Description**
+
+> A small repair bot, lost. Fixes tiny things nearby while looking for its Pilot.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1072. Cardboard Box (soggy)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | Metal Gear |
+
+**Description**
+
+> (Tag:storage)Stealth camouflage, waterlogged. Fools no one but smells like rain.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1073. Companion Cube (inert)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.6 | Trash | Portal |
+
+**Description**
+
+> An inert weighted companion cube. Will never threaten to stab you and, in fact, cannot.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1074. Joja Cola
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Stardew Valley |
+
+**Description**
+
+> Corporate cola. Restores a sip of energy and a pang of guilt.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1075. Bonesaw
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | MTG |
+
+**Description**
+
+> (Tag:bio)A bone saw granting +1/+0. Rusty, loud, and eager.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1076. Shiv (dull)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Riddick |
+
+**Description**
+
+> (Tag:blade)(Tag:dagger)A dull shiv. Shanks poorly. Intimidates only the already intimidated.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1077. Lethe Water (sip)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | Hades |
+
+**Description**
+
+> (Tag:water)One sip erases roughly the last minute. Single use; the flask stays empty as a lesson.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1078. Zat'nik'tel
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Stargate |
+
+**Description**
+
+> Goa'uld sidearm with three settings per target: first shot stuns, second kills, third disintegrates. Resets are per target, so count your shots.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1079. Sarcophagus
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Stargate |
+
+**Description**
+
+> Goa'uld healing sarcophagus that restores any wound, illness, or age on a long rest inside. Each use costs a sliver of soul and feeds a quiet hunger for more.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1080. Puddle Jumper
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Stargate |
+
+**Description**
+
+> A cloaking puddle jumper seating four: flies, swims, squeezes through gates, and hides from nearly everything. Needs drone weapons separately; they are never included.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1081. Viper Mk II
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Battlestar Galactica |
+
+**Description**
+
+> A Colonial Viper interceptor: brutally fast, manually flown, no networked systems to subvert. Lands like a brick and turns like a rumour.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1082. Witcher Medallion
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | The Witcher |
+
+**Description**
+
+> (Tag:magic)A wolf's-head medallion vibrating near magic, monsters, and curses, stronger for closer and fouler. Useless as jewelry; wolves approve.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1083. Hearthstone
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Warcraft |
+
+**Description**
+
+> Bind to an inn and return to it from anywhere after a short channel, once per day. Binds to inns only; dungeons, war zones, and other people's houses do not count.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1084. Mimic Beacon
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | XCOM |
+
+**Description**
+
+> (Tag:tool)A thrown hologram projector impersonating a soldier badly enough to draw all enemy fire. Lasts until destroyed or disbelieved, whichever comes first.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1085. Combat Stim
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | StarCraft |
+
+**Description**
+
+> (Tag:consumable)Military-grade combat stims: greatly quickened strikes and dulled pain for a few minutes, at the cost of a chunk of health. Side effects include confidence.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1086. Plant in a Boot
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | WALL-E |
+
+**Description**
+
+> (Tag:nature)A living plant growing in an old boot: proof that life finds a way. Tends to inspire hope, directives, and mutiny in roughly that order.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1087. Nano Boost
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Overwatch |
+
+**Description**
+
+> (Tag:tech)An injection granting one ally massive damage and resistance for a short push. Recipient hears heroic music; enemies hear footsteps. One dose; a new dose brews per week.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1088. Battle-Car
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Rocket League |
+
+**Description**
+
+> (Tag:vehicle)A supersonic acrobatic rocket car with flip, boost, and demolition manners. Ball not included; walls are load-bearing suggestions. Boost refills from pads and pickups; without it, just a fast car.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1089. Facts Given
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | MTG |
+
+**Description**
+
+> A misprinted card: rip it to roll four gold tickets, keep two, and your nemesis receives the other two.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1090. Gift and Fiction
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | MTG |
+
+**Description**
+
+> A misprinted card: rip it to gain five silver coupons; your nemesis divides them into two groups, you keep one group and they take the other.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1091. Cat Costume
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Baby Cat |
+
+**Description**
+
+> The lowest-effort cat costume: fuzzy pink cat ears with bells, pink bow collar with a bell, white fluffy tail. Supply your own gloves, boots, and underwear.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1092. Purrpetual Petz
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | M3GAN |
+
+**Description**
+
+> An animatronic pet that never needs feeding and judges you silently. Batteries included; affection sold separately.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1093. Head Key
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Locke and Key |
+
+**Description**
+
+> (Tag:tool)A whispering iron key that unlocks the inside of a willing or restrained head, letting you walk around their memories and rearrange the furniture. What you break in there stays broken.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1094. Anywhere Key
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.7 | Epic | Locke and Key |
+
+**Description**
+
+> (Tag:tool)A pale key that opens any door onto anywhere you have seen, one trip per turn. Doors remember being used; some start locking themselves.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1095. Echo Key
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Locke and Key |
+
+**Description**
+
+> (Tag:sound)(Tag:tool)A key that summons an echo of a dead person: speak their name while turning it in any lock and they appear, knowing full well they are dead and mostly resenting it. They persist only while the key stays turned; remove it and they are gone.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1096. Hextech Gauntlets
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | League of Legends / Arcane |
+
+**Description**
+
+> (Tag:earth)Enormous hextech brawling gauntlets: seismic punches, shockwave claps, and a shield mode that mostly protects other people from you. Fittings run large.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1097. Shimmer
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.3 | Epic | League of Legends / Arcane |
+
+**Description**
+
+> A vial of violet Shimmer granting monstrous strength and speed while it lasts, at the usual price: addiction, mutation, and purple eyes that never quite fade.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1098. Jinx's Pow-Pow
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.7 | Epic | League of Legends / Arcane |
+
+**Description**
+
+> (Tag:curse)A custom minigun with separation anxiety: devastating suppressive fire that jams if ignored, sulks if cleaned by anyone else, and works best while being sung to.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1099. Hexcore
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | League of Legends / Arcane |
+
+**Description**
+
+> An unstable arcane gem that powers hextech evolution and whispers equations no one taught it. Grants insights freely; mutates the bearer slowly and without asking.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1100. Ambessa's Charm
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | League of Legends / Arcane |
+
+**Description**
+
+> (Tag:accessory)(Tag:mental)A Noxian war-charm that drinks hostile magic aimed at the bearer, up to a measure, then must be emptied by force of will. Smells faintly of war paint and disapproval.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1101. Chaos's Shoe
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Generic |
+
+**Description**
+
+> (Gacha) A nice black leather left shoe that fits you. Drop it after a gacha roll to change the result to randomly the next or previous item on the wheel.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1102. Chaos's Other Shoe
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.7 | Epic | Generic |
+
+**Description**
+
+> (Gacha) A nice black leather right shoe that fits you. When rolled, it lands on your head: lose your previous roll to reroll the ticket that gave you the shoe. You get to keep the shoe.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1103. Second Breakfast Box
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.0 | Divine | Generic |
+
+**Description**
+
+> (Tag:storage)A lunchbox that produces any mundane meal or tool under 5 kg on demand, endlessly; items taken more than a mile away fade after 24 hours.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1104. Wardrobe of Elsewhere
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.2 | Divine | Generic |
+
+**Description**
+
+> Walk through it to exit from any door you have previously touched, anywhere; a round trip collapses the wardrobe for a week.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1105. Penny of the Ferryman
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.4 | Divine | Generic |
+
+**Description**
+
+> (Tag:magic)(Tag:necro)Pay it to cross any one boundary: locked doors, wards below Divine rank, even death itself (survive one killing blow, the penny spent). Single use; a replacement condenses every year.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1106. The Unfinished Map
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.6 | Divine | Generic |
+
+**Description**
+
+> A map that fills in wherever you haven't been, including secret doors, traps, and treasures within a mile; it never shows people. Its inks run dry for 30 days after mapping a Divine-tier secret.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1107. Gavel of Adjournment
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.8 | Divine | Generic |
+
+**Description**
+
+> Strike it to adjourn any conflict within earshot: all combatants must stop fighting for 10 minutes (Divine and below cannot resist; stronger can). Once per day.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1108. Cradle of Embers
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.0 | Transcendent | Generic |
+
+**Description**
+
+> (Tag:fire)A brazier holding the last fire of a dead universe; it never goes out, kindles any flame into sun-hot forge fire, and once per year can reignite a dead star, or a dead heart, if it consents.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1109. Seed of Yggdrasil
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.2 | Transcendent | Generic |
+
+**Description**
+
+> (Tag:nature)Plant it in any soil and it grows a world-tree anchor within days: a personal pocket realm that grows with age, perfect health within its roots, and one resurrection at its base per year. Fell the tree and all of it is undone.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1110. The Honest Die
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.4 | Transcendent | Generic |
+
+**Description**
+
+> (Tag:card)A d20 that lands on exactly what the roller most needs (never what they want) in any game of chance they play for real stakes, dice, cards, coins, wagers, trials by lot. Staged or stakeless flips do nothing, and it reaches no further than the game: no meta-luck, no gacha pulls. Each roll also speaks one truth the roller most needs to hear, aloud, where everyone present can hear it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1111. The Triforce
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.3 | Transcendent | The Legend of Zelda |
+
+**Description**
+
+> Three relics granting absolute expression of their bearer's dominant virtue: Power, Courage, Wisdom. United, one wish within the world's bounds. It arrives split across the world, you hold only what you can keep.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1112. Command Block
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.6 | Transcendent | Minecraft |
+
+**Description**
+
+> (Tag:command)Executes one written sentence on the world per redstone pulse, parsed with total literality. Needs power; needs precision; typos are cataclysms.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1113. Zenith Blade
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.9 | Divine | Terraria |
+
+**Description**
+
+> (Tag:blade)(Tag:weapon)The culmination of swords: every swing launches a cascade of flying sword-images striking everything in a wide arc. Lesser blades shatter in its presence.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1114. Hogyoku
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.7 | Divine | Bleach |
+
+**Description**
+
+> Manifests the desires of those around it at godlike speed: wounds close, limits break, evolutions trigger. It serves the strongest will present, not necessarily yours.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1115. Mother Flame
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.5 | Divine | One Piece |
+
+**Description**
+
+> (Tag:fire)A miniature sun in a flask: endless clean power for any machine or city, or one dawn-bright detonation if shattered.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1116. Type-40 TARDIS
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.0 | Transcendent | Doctor Who |
+
+**Description**
+
+> (Tag:space)(Tag:storage)(Tag:time)(Tag:vehicle)Bigger inside, traveling all of time and space; telepathic, temperamental, constantly breaking down. It refuses paradoxes at fixed points and likes you more than it admits.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1117. Eye of the Universe
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.7 | Transcendent | Outer Wilds |
+
+**Description**
+
+> You know where it is and how to reach it. Enter, and seed the next universe with laws of your choosing. Single use; everything ends first.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1118. The Moment
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.5 | Transcendent | Doctor Who |
+
+**Description**
+
+> The Time Lord weapon with a conscience: it can unmake anything short of a fixed point, but it judges the wielder first and shows them the cost in full. Fail its judgment and it drops you home, disarmed.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1119. Genesis Device
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.0 | Transcendent | Star Trek |
+
+**Description**
+
+> (Tag:bio)Terraform a dead world to lush life in hours, or unmake a living one just as fast. Protomatter instability means inhabited targets may come out wrong; Starfleet will have questions either way.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1120. DeLorean Time Machine
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.9 | Divine | Back to the Future |
+
+**Description**
+
+> (Tag:time)Eighty-eight mph time travel for you and your passengers; riders keep their memories across edits, but history pushes back, change too much and you start fading from the photograph. You provide the plutonium (or fusion upgrade), the maintenance, and roads.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1121. Elder Scroll
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.1 | Transcendent | Elder Scrolls |
+
+**Description**
+
+> (Tag:grimoire)Read a prophecy of anything, past or future. The Scroll bills in sight: temporary blindness for small questions, permanent for large ones. Knowledge first; eyesight negotiable.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1122. Gravitational Beam Emitter
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.1 | Transcendent | Blame |
+
+**Description**
+
+> (Tag:gravity)(Tag:gun)(Tag:tech)(Tag:weapon)A sidearm firing gravitational-collapse beams that pierce planets end to end. Recoil and charge time scale with output, and silence is mandatory: everything hears a GBE shot.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1123. Berserker Body
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.6 | Divine | Alita: Battle Angel |
+
+**Description**
+
+> An ancient URM nanotech combat body, offered as a full replacement: superhuman strength, speed, and durability, plasma discharge, and self-repair that knits wounds mid-fight. Attunement is agonizing and demands a compatible nervous system; overuse runs the furnace into berserk overload.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1124. Damascus Blade
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.2 | Divine | Alita: Battle Angel |
+
+**Description**
+
+> (Tag:blade)(Tag:weapon)A bracelet unfolding into a blade that cuts armor, cyborgs, and monsters like paper and never dulls. It has no guard and no mercy: in unskilled hands it endangers the wielder as much as the foe (Panzer Kunst training recommended).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1125. Scent Hound Whistle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.5 | Rare | Generic |
+
+**Description**
+
+> (Tag:meta)(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1126. Monsterbane Blade
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.3 | Elite | DnD |
+
+**Description**
+
+> (Tag:anti-monster)(Tag:blade)(Tag:martial)(Tag:weapon)A hunter's greatsword etched with a hundred monster names. It bites deep into anything bestial, monstrous, or unnatural, through claw, fang, and hide tougher than plate, and takes a trickle of the kill to keep its edge. People die to it like any sword; monsters die to it quickly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1127. Wyvernheart Bowgun
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.9 | Elite | Monster Hunter |
+
+**Description**
+
+> (Tag:anti-dragon)(Tag:gun)(Tag:tech)(Tag:weapon)A hunting bowgun fed by a revolving magazine of wyvern rounds. Its shot tears through scaled hide and wing membrane, and its burst mode empties the cylinder in a heartbeat for the moment a dragon is brought to ground. Slower and lighter than siege guns, and far quicker on the turn.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1128. Profaned Greatsword
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Dark Souls |
+
+**Description**
+
+> (Tag:anti-holy)(Tag:blade)(Tag:infernal)(Tag:weapon)A colossal blade quenched in profane flame, so heavy it has to be dragged into its own swing. Its fire burns angels, paladins, and anything sanctified as readily as flesh, snuffs out holy wards on contact, and leaves wounds that do not close.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1129. Replicating Nanobot
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 1.8 | Common | Q-UP |
+
+**Description**
+
+> (Tag:growing)(Tag:resource)(Tag:tech)A palm-sized swarm of self-copying nanobots. Once a day you give each bot one of two orders: split in two, or mint a single gold coin. Splitting doubles the swarm, so a batch told to replicate gives up today's income for a much larger one later, and the same swarm told to mint produces coins in proportion to its size. They never wear out and never stop following orders.
 
 **Decision**
 

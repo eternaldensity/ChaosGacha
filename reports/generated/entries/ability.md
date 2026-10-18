@@ -1,23 +1,23 @@
 # ability — Entry Reference
 
-1457 entries. Sorted by rarity, then number.
+1507 entries. Sorted by rarity, then number.
 
 | Tier | Count |
 |---|---|
-| Trash | 25 |
+| Trash | 39 |
 | Common | 80 |
 | Uncommon | 207 |
 | Rare | 329 |
-| Elite | 294 |
-| Epic | 214 |
+| Elite | 295 |
+| Epic | 234 |
 | Legendary | 163 |
 | Mythical | 85 |
-| Divine | 41 |
-| Transcendent | 19 |
+| Divine | 49 |
+| Transcendent | 26 |
 
 ## Index by tier
 
-### Trash (25)
+### Trash (39)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -26,13 +26,26 @@
 | 1190 | [Roentgenium Manipulation](#1190-roentgenium-manipulation) | 0.1 | Generic |
 | 991 | [Compass](#991-compass) | 0.2 | Generic |
 | 1127 | [Mystic Eyes of Depth Perception](#1127-mystic-eyes-of-depth-perception) | 0.2 | Generic |
+| 1471 | [Static Shock](#1471-static-shock) | 0.2 | Generic |
+| 1473 | [Itch](#1473-itch) | 0.2 | Generic |
+| 1482 | [Hiccup](#1482-hiccup) | 0.2 | Generic |
+| 1483 | [Squeak](#1483-squeak) | 0.2 | Generic |
 | 54 | [Droplet](#54-droplet) | 0.3 | Generic |
 | 176 | [Pebble Sling](#176-pebble-sling) | 0.3 | Generic |
+| 1472 | [Nightlight](#1472-nightlight) | 0.3 | Generic |
+| 1474 | [Sneeze](#1474-sneeze) | 0.3 | Generic |
+| 1476 | [Untie](#1476-untie) | 0.3 | Generic |
+| 1479 | [Static Cling](#1479-static-cling) | 0.3 | Generic |
+| 1481 | [Warm Hands](#1481-warm-hands) | 0.3 | Generic |
+| 1484 | [Wrinkle](#1484-wrinkle) | 0.3 | Generic |
 | 113 | [Breeze](#113-breeze) | 0.4 | Generic |
 | 144 | [Spark](#144-spark) | 0.4 | Generic |
 | 199 | [Pocket Sand](#199-pocket-sand) | 0.4 | Generic |
 | 284 | [Flashlight](#284-flashlight) | 0.4 | Generic |
 | 1032 | [Sticky Icky](#1032-sticky-icky) | 0.4 | Generic |
+| 1475 | [Fizz](#1475-fizz) | 0.4 | Generic |
+| 1478 | [Flavor](#1478-flavor) | 0.4 | Generic |
+| 1480 | [Earworm](#1480-earworm) | 0.4 | Generic |
 | 53 | [Match](#53-match) | 0.5 | Generic |
 | 1240 | [Sweat](#1240-sweat) | 0.5 | Generic |
 | 85 | [Cool](#85-cool) | 0.6 | Generic |
@@ -46,6 +59,7 @@
 | 129 | [Louden](#129-louden) | 0.9 | Generic |
 | 657 | [Weather](#657-weather) | 0.9 | Generic |
 | 752 | [Bear Manipulation](#752-bear-manipulation) | 0.9 | Generic |
+| 1477 | [Rewind (3 seconds)](#1477-rewind-3-seconds) | 0.9 | Life is Strange |
 
 ### Common (80)
 
@@ -88,7 +102,7 @@
 | 1236 | [Light Waltz](#1236-light-waltz) | 1.4 | Generic |
 | 1238 | [Project Image](#1238-project-image) | 1.4 | Generic |
 | 174 | [Attention](#174-attention) | 1.5 | Generic |
-| 269 | [Void Mirror Image](#269-void-mirror-image) | 1.5 | Generic |
+| 269 | [Void Mirror Image](#269-void-mirror-image) | 1.5 | Legendary Mechanic |
 | 476 | [Double Jump](#476-double-jump) | 1.5 | Generic |
 | 1113 | [Tinker - Ranged Weapon (I)](#1113-tinker-ranged-weapon-i) | 1.5 | Generic |
 | 1250 | [Induce Lactation](#1250-induce-lactation) | 1.5 | Generic |
@@ -178,7 +192,7 @@
 | 371 | [Venom Injection](#371-venom-injection) | 2.2 | Generic |
 | 407 | [Zero Gravity](#407-zero-gravity) | 2.2 | Generic |
 | 434 | [Gearbox](#434-gearbox) | 2.2 | Generic |
-| 1161 | [Void Shadow](#1161-void-shadow) | 2.2 | Generic |
+| 1161 | [Void Shadow](#1161-void-shadow) | 2.2 | Legendary Mechanic |
 | 1258 | [Rebake](#1258-rebake) | 2.2 | Generic |
 | 2 | [Ember](#2-ember) | 2.3 | Generic |
 | 57 | [Create Water](#57-create-water) | 2.3 | Konosuba |
@@ -435,7 +449,7 @@
 | 1407 | [Icarus Landing System](#1407-icarus-landing-system) | 3.2 | Deus Ex |
 | 1425 | [Adrenaline](#1425-adrenaline) | 3.2 | Divinity Original Sin |
 | 1430 | [Infect](#1430-infect) | 3.2 | Divinity Original Sin |
-| 1441 | [Adenine Volley](#1441-adenine-volley) | 3.2 | Genome Guardian |
+| 1441 | [Bounce](#1441-bounce) | 3.2 | Genome Guardian |
 | 1446 | [Firewall](#1446-firewall) | 3.2 | Tron 2.0 |
 | 1457 | [Rail Gauge Setting](#1457-rail-gauge-setting) | 3.2 | Generic |
 | 3 | [Blaze](#3-blaze) | 3.3 | Generic |
@@ -490,7 +504,7 @@
 | 1417 | [Word of Serenity](#1417-word-of-serenity) | 3.4 | RimWorld |
 | 1428 | [Tentacle Lash](#1428-tentacle-lash) | 3.4 | Divinity Original Sin |
 | 1440 | [Seeker Subroutine](#1440-seeker-subroutine) | 3.4 | Tron 2.0 |
-| 1442 | [Cytosine Precision](#1442-cytosine-precision) | 3.4 | Genome Guardian |
+| 1442 | [Homing](#1442-homing) | 3.4 | Genome Guardian |
 | 10 | [Ignite](#10-ignite) | 3.5 | Generic |
 | 29 | [Heatwave](#29-heatwave) | 3.5 | Generic |
 | 68 | [Water Manipulation](#68-water-manipulation) | 3.5 | Generic |
@@ -573,7 +587,7 @@
 | 1323 | [Guard](#1323-guard) | 3.6 | Generic |
 | 1412 | [CASIE](#1412-casie) | 3.6 | Deus Ex |
 | 1426 | [Chameleon Cloak](#1426-chameleon-cloak) | 3.6 | Divinity Original Sin |
-| 1443 | [Guanine Spread](#1443-guanine-spread) | 3.6 | Genome Guardian |
+| 1443 | [Sticky](#1443-sticky) | 3.6 | Genome Guardian |
 | 1456 | [Rail Laying](#1456-rail-laying) | 3.6 | Generic |
 | 73 | [Torrent](#73-torrent) | 3.7 | Generic |
 | 102 | [Blizzard](#102-blizzard) | 3.7 | Generic |
@@ -659,7 +673,7 @@
 | 32 | [Kamino](#32-kamino) | 3.9 | Jujutsu Kaisen |
 | 164 | [Railgun](#164-railgun) | 3.9 | Generic |
 | 253 | [Shadow Chains](#253-shadow-chains) | 3.9 | Generic |
-| 270 | [Void Travel](#270-void-travel) | 3.9 | Generic |
+| 270 | [Void Travel](#270-void-travel) | 3.9 | Legendary Mechanic |
 | 311 | [Blade of Light](#311-blade-of-light) | 3.9 | Generic |
 | 336 | [Immunity System](#336-immunity-system) | 3.9 | Generic |
 | 348 | [Keratin Manipulation](#348-keratin-manipulation) | 3.9 | Generic |
@@ -678,7 +692,7 @@
 | 1275 | [Liaison](#1275-liaison) | 3.9 | Generic |
 | 1332 | [Sing](#1332-sing) | 3.9 | Generic |
 
-### Elite (294)
+### Elite (295)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -708,7 +722,7 @@
 | 1406 | [Levitate](#1406-levitate) | 4.0 | Control |
 | 1411 | [Remote Hacking](#1411-remote-hacking) | 4.0 | Deus Ex |
 | 1424 | [Nether Swap](#1424-nether-swap) | 4.0 | Divinity Original Sin |
-| 1444 | [Thymine Detonation](#1444-thymine-detonation) | 4.0 | Genome Guardian |
+| 1444 | [Flack](#1444-flack) | 4.0 | Genome Guardian |
 | 142 | [Atmospheric Pressure Manipulation](#142-atmospheric-pressure-manipulation) | 4.1 | Generic |
 | 185 | [Meteor Strike](#185-meteor-strike) | 4.1 | Generic |
 | 305 | [Greater Purification](#305-greater-purification) | 4.1 | Generic |
@@ -840,6 +854,7 @@
 | 1217 | [Summon nature Spirit](#1217-summon-nature-spirit) | 4.5 | Generic |
 | 1342 | [Caustic Storm](#1342-caustic-storm) | 4.5 | Generic |
 | 1390 | [Trace Name](#1390-trace-name) | 4.5 | Generic |
+| 1492 | [Solar Charge](#1492-solar-charge) | 4.5 | WALL-E |
 | 52 | [Lava](#52-lava) | 4.6 | Generic |
 | 69 | [Hydrokinesis](#69-hydrokinesis) | 4.6 | Generic |
 | 238 | [Sethan](#238-sethan) | 4.6 | JoJo |
@@ -977,7 +992,7 @@
 | 1186 | [Summon Demon](#1186-summon-demon) | 4.9 | Generic |
 | 1336 | [Chargeback](#1336-chargeback) | 4.9 | Ultrakill |
 
-### Epic (214)
+### Epic (234)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -1003,7 +1018,7 @@
 | 1439 | [Loop Memory](#1439-loop-memory) | 5.0 | I Was a Teenage Exocolonist |
 | 1451 | [Probability Hex](#1451-probability-hex) | 5.0 | MCU |
 | 140 | [Oxidiser](#140-oxidiser) | 5.1 | Generic |
-| 271 | [Chaos Entity Release](#271-chaos-entity-release) | 5.1 | Generic |
+| 271 | [Chaos Entity Release](#271-chaos-entity-release) | 5.1 | Legendary Mechanic |
 | 282 | [Abyss Barrier](#282-abyss-barrier) | 5.1 | Generic |
 | 808 | [Flawed Return](#808-flawed-return) | 5.1 | Generic |
 | 962 | [Spatial Displacement](#962-spatial-displacement) | 5.1 | Generic |
@@ -1015,6 +1030,7 @@
 | 1326 | [Slow Lane](#1326-slow-lane) | 5.1 | Generic |
 | 1361 | [Flame Bone of the Starving](#1361-flame-bone-of-the-starving) | 5.1 | Kagurabachi |
 | 1368 | [Voljang Form](#1368-voljang-form) | 5.1 | Monster Hunter |
+| 1464 | [Flash Shift](#1464-flash-shift) | 5.1 | Metroid |
 | 31 | [Desolate Land](#31-desolate-land) | 5.2 | Generic |
 | 74 | [Primordial Sea](#74-primordial-sea) | 5.2 | Generic |
 | 198 | [Extinction Meteors](#198-extinction-meteors) | 5.2 | Generic |
@@ -1047,6 +1063,9 @@
 | 1279 | [Sky Flames](#1279-sky-flames) | 5.2 | Katekyo Hitman Reborn |
 | 1337 | [Parry](#1337-parry) | 5.2 | Ultrakill |
 | 1434 | [Temporal Rewind](#1434-temporal-rewind) | 5.2 | Life is Strange |
+| 1462 | [Space Jump](#1462-space-jump) | 5.2 | Metroid |
+| 1466 | [Populate](#1466-populate) | 5.2 | MTG |
+| 1495 | [Supersonic](#1495-supersonic) | 5.2 | Rocket League |
 | 118 | [Tempest](#118-tempest) | 5.3 | Generic |
 | 409 | [Burden Breaker](#409-burden-breaker) | 5.3 | Calamity Mod |
 | 495 | [Grand Theft](#495-grand-theft) | 5.3 | Generic |
@@ -1070,7 +1089,7 @@
 | 550 | [Wither](#550-wither) | 5.4 | Generic |
 | 565 | [Pocket Dimension](#565-pocket-dimension) | 5.4 | Generic |
 | 687 | [Tinker - Cyberpunk 2077](#687-tinker-cyberpunk-2077) | 5.4 | Cyberpunk 2077 |
-| 807 | [Esper Silence](#807-esper-silence) | 5.4 | Generic |
+| 807 | [Esper Silence](#807-esper-silence) | 5.4 | Legendary Mechanic |
 | 860 | [Hou Yi's Bow](#860-hou-yis-bow) | 5.4 | Generic |
 | 1173 | [Geass - Command](#1173-geass-command) | 5.4 | Code Geass |
 | 1195 | [Summon Principality](#1195-summon-principality) | 5.4 | Generic |
@@ -1080,6 +1099,8 @@
 | 1352 | [Conflagration Emotion](#1352-conflagration-emotion) | 5.4 | Generic |
 | 1445 | [Summon Tsunami](#1445-summon-tsunami) | 5.4 | Cities Skylines |
 | 1449 | [Mirror Dimension](#1449-mirror-dimension) | 5.4 | MCU |
+| 1468 | [Cipher](#1468-cipher) | 5.4 | MTG |
+| 1488 | [Witcher Signs](#1488-witcher-signs) | 5.4 | The Witcher |
 | 137 | [Heavy Wind](#137-heavy-wind) | 5.5 | Generic |
 | 317 | [Divine Healing Light](#317-divine-healing-light) | 5.5 | Generic |
 | 346 | [hybrid Ghoul Physiology](#346-hybrid-ghoul-physiology) | 5.5 | Tokyo Ghoul |
@@ -1108,6 +1129,11 @@
 | 1335 | [Diction](#1335-diction) | 5.5 | Generic |
 | 1348 | [Melter](#1348-melter) | 5.5 | Generic |
 | 1391 | [Trace Description](#1391-trace-description) | 5.5 | Generic |
+| 1465 | [Proliferate](#1465-proliferate) | 5.5 | MTG |
+| 1469 | [Chaos Gate](#1469-chaos-gate) | 5.5 | Hades |
+| 1485 | [Asgard Beam](#1485-asgard-beam) | 5.5 | Stargate |
+| 1487 | [Thermoptic Camouflage](#1487-thermoptic-camouflage) | 5.5 | Ghost in the Shell |
+| 1489 | [Heroism](#1489-heroism) | 5.5 | Warcraft |
 | 94 | [Half Hot Half Cold](#94-half-hot-half-cold) | 5.6 | MHA |
 | 204 | [Primordial Earth](#204-primordial-earth) | 5.6 | Generic |
 | 430 | [String Manipulation](#430-string-manipulation) | 5.6 | Generic |
@@ -1126,6 +1152,10 @@
 | 1292 | [Inversion](#1292-inversion) | 5.6 | Generic |
 | 1414 | [Psycast Farskip](#1414-psycast-farskip) | 5.6 | RimWorld |
 | 1459 | [Xen Transit](#1459-xen-transit) | 5.6 | Half-Life |
+| 1463 | [Shinespark](#1463-shinespark) | 5.6 | Metroid |
+| 1486 | [FTL Jump](#1486-ftl-jump) | 5.6 | Battlestar Galactica |
+| 1490 | [Psionics](#1490-psionics) | 5.6 | XCOM |
+| 1493 | [Transcendence](#1493-transcendence) | 5.6 | Overwatch |
 | 19 | [Unholy Flames](#19-unholy-flames) | 5.7 | Generic |
 | 91 | [Ice Age](#91-ice-age) | 5.7 | Generic |
 | 260 | [Gate of Nightmares](#260-gate-of-nightmares) | 5.7 | Generic |
@@ -1182,8 +1212,11 @@
 | 1308 | [Tinker - Ultrakill](#1308-tinker-ultrakill) | 5.8 | Ultrakill |
 | 1447 | [Timeline Shift](#1447-timeline-shift) | 5.8 | Life is Strange |
 | 1453 | [Dreamwalking](#1453-dreamwalking) | 5.8 | MCU |
+| 1467 | [Overload](#1467-overload) | 5.8 | MTG |
+| 1470 | [Moon Hex](#1470-moon-hex) | 5.8 | Hades 2 |
+| 1491 | [Psionic Storm](#1491-psionic-storm) | 5.8 | StarCraft |
 | 79 | [Hydrofreeze](#79-hydrofreeze) | 5.9 | Unordinary |
-| 273 | [Void Distorter Form](#273-void-distorter-form) | 5.9 | Generic |
+| 273 | [Void Distorter Form](#273-void-distorter-form) | 5.9 | Legendary Mechanic |
 | 524 | [Atlas](#524-atlas) | 5.9 | Generic |
 | 553 | [Future Sight](#553-future-sight) | 5.9 | One Piece |
 | 639 | [Spider Man](#639-spider-man) | 5.9 | Marvel |
@@ -1192,9 +1225,11 @@
 | 896 | [Overdraw](#896-overdraw) | 5.9 | Generic |
 | 903 | [Greater Material Absorption](#903-greater-material-absorption) | 5.9 | Ben 10/Marvel |
 | 996 | [Divine Blade](#996-divine-blade) | 5.9 | Generic |
-| 1162 | [Void Distortion](#1162-void-distortion) | 5.9 | Generic |
+| 1162 | [Void Distortion](#1162-void-distortion) | 5.9 | Legendary Mechanic |
 | 1187 | [Summon Fiend](#1187-summon-fiend) | 5.9 | Generic |
 | 1307 | [Tinker - Henshin](#1307-tinker-henshin) | 5.9 | Generic |
+| 1461 | [Screw Attack](#1461-screw-attack) | 5.9 | Metroid |
+| 1494 | [Graviton Surge](#1494-graviton-surge) | 5.9 | Overwatch |
 
 ### Legendary (163)
 
@@ -1250,7 +1285,7 @@
 | 440 | [Haki](#440-haki) | 6.3 | One Piece |
 | 1245 | [Ice Conduit Physiology](#1245-ice-conduit-physiology) | 6.3 | Infamous |
 | 1372 | [Nergigante Form](#1372-nergigante-form) | 6.3 | Monster Hunter |
-| 272 | [Void Path](#272-void-path) | 6.4 | Generic |
+| 272 | [Void Path](#272-void-path) | 6.4 | Legendary Mechanic |
 | 626 | [Word Magic](#626-word-magic) | 6.4 | Generic |
 | 774 | [Scarlet Rot](#774-scarlet-rot) | 6.4 | Elden Ring |
 | 787 | [Unlimited Bladeworks](#787-unlimited-bladeworks) | 6.4 | Fate |
@@ -1331,7 +1366,7 @@
 | 1343 | [World Melter](#1343-world-melter) | 6.7 | Generic |
 | 8 | [Amaterasu](#8-amaterasu) | 6.8 | Naruto |
 | 392 | [Stillness](#392-stillness) | 6.8 | Re:Zero |
-| 417 | [Carbon Manipulation](#417-carbon-manipulation) | 6.8 | Generic |
+| 417 | [Carbon Manipulation](#417-carbon-manipulation) | 6.8 | Legendary Mechanic |
 | 465 | [Adamantine Skin](#465-adamantine-skin) | 6.8 | Generic |
 | 480 | [Power of Destruction](#480-power-of-destruction) | 6.8 | Highschool DxD |
 | 501 | [Crimson Fucker](#501-crimson-fucker) | 6.8 | Hellsing |
@@ -1454,7 +1489,7 @@
 | 794 | [Schrodinger](#794-schrodinger) | 7.9 | Hellsing |
 | 1060 | [Tinker - Time](#1060-tinker-time) | 7.9 | Generic |
 
-### Divine (41)
+### Divine (49)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -1467,11 +1502,13 @@
 | 482 | [Destruction Incarnate](#482-destruction-incarnate) | 8.1 | Generic |
 | 758 | [Number Man](#758-number-man) | 8.1 | Worm |
 | 921 | [Magic Dominion](#921-magic-dominion) | 8.1 | Generic |
+| 1497 | [Stillpoint](#1497-stillpoint) | 8.1 | Generic |
 | 485 | [Stinger](#485-stinger) | 8.2 | Generic |
 | 548 | [Wheel of Mahoraga](#548-wheel-of-mahoraga) | 8.2 | Jujutsu Kaisen |
 | 686 | [Tinker - Mecha](#686-tinker-mecha) | 8.2 | Generic |
 | 1056 | [Tinker - Dimensions](#1056-tinker-dimensions) | 8.2 | Generic |
 | 1107 | [Tinker - Augments (V)](#1107-tinker-augments-v) | 8.2 | Generic |
+| 1510 | [Tinker - AWESOME](#1510-tinker-awesome) | 8.2 | Satisfactory |
 | 527 | [Godlike Speed](#527-godlike-speed) | 8.3 | Generic |
 | 570 | [Devil Control](#570-devil-control) | 8.3 | Generic |
 | 694 | [Tinker - Dreadon](#694-tinker-dreadon) | 8.3 | Calamity Mod |
@@ -1479,6 +1516,7 @@
 | 912 | [Time Stop](#912-time-stop) | 8.3 | Generic |
 | 1092 | [Tinker Vehicles (V)](#1092-tinker-vehicles-v) | 8.3 | Generic |
 | 1097 | [Tinker - Bio (V)](#1097-tinker-bio-v) | 8.3 | Generic |
+| 1496 | [Veto of the Small Gods](#1496-veto-of-the-small-gods) | 8.3 | Generic |
 | 922 | [The Void](#922-the-void) | 8.4 | Generic |
 | 1213 | [Divinity Earth](#1213-divinity-earth) | 8.4 | Generic |
 | 484 | [Phoenix Force](#484-phoenix-force) | 8.5 | Marvel |
@@ -1488,9 +1526,13 @@
 | 1117 | [Tinker - Ranged Weapon (V)](#1117-tinker-ranged-weapon-v) | 8.5 | Generic |
 | 1211 | [Divinity Necromancy](#1211-divinity-necromancy) | 8.5 | Generic |
 | 1304 | [Tinker - Mech (V)](#1304-tinker-mech-v) | 8.5 | Generic |
+| 1498 | [Tithemaster's Ledger](#1498-tithemasters-ledger) | 8.5 | Generic |
 | 1012 | [Divinity Healing](#1012-divinity-healing) | 8.6 | Generic |
 | 1112 | [Tinker - Defence (V)](#1112-tinker-defence-v) | 8.6 | Generic |
 | 1214 | [Divinity Sky](#1214-divinity-sky) | 8.6 | Generic |
+| 1499 | [Yesterday's City](#1499-yesterdays-city) | 8.7 | Generic |
+| 1502 | [Erasure](#1502-erasure) | 8.7 | MHA |
+| 1508 | [Spice Prescience](#1508-spice-prescience) | 8.7 | Dune |
 | 456 | [Vector Manipulation](#456-vector-manipulation) | 8.8 | Toaru |
 | 614 | [True Telekinesis](#614-true-telekinesis) | 8.8 | Generic |
 | 654 | [Rinnegan](#654-rinnegan) | 8.8 | Naruto |
@@ -1498,9 +1540,10 @@
 | 914 | [Space Manipulation](#914-space-manipulation) | 8.8 | Generic |
 | 918 | [Wrath](#918-wrath) | 8.8 | Generic |
 | 947 | [D4C](#947-d4c) | 8.8 | JoJo |
+| 1509 | [Culture Displace](#1509-culture-displace) | 8.8 | Culture |
 | 911 | [Atomic Manipulation](#911-atomic-manipulation) | 8.9 | Generic |
 
-### Transcendent (19)
+### Transcendent (26)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -1508,13 +1551,20 @@
 | 809 | [Save & Load](#809-save-load) | 9.0 | Generic |
 | 1135 | [Return By Death](#1135-return-by-death) | 9.0 | Re:Zero |
 | 1393 | [Omnisight](#1393-omnisight) | 9.0 | Generic |
+| 1505 | [SAVE Point](#1505-save-point) | 9.0 | Undertale |
+| 1507 | [Force Storm](#1507-force-storm) | 9.0 | Star Wars |
 | 579 | [Kaleidoscope](#579-kaleidoscope) | 9.1 | Fate |
+| 1500 | [Garden of Forking Paths](#1500-garden-of-forking-paths) | 9.1 | Generic |
+| 1503 | [Domain Expansion: Unlimited Void](#1503-domain-expansion-unlimited-void) | 9.1 | Jujutsu Kaisen |
 | 483 | [Ice Man](#483-ice-man) | 9.2 | Marvel |
 | 581 | [Denial of Nothingness](#581-denial-of-nothingness) | 9.2 | Fate |
+| 1506 | [Gold Experience Requiem](#1506-gold-experience-requiem) | 9.2 | JoJo |
 | 916 | [Time God](#916-time-god) | 9.3 | Generic |
+| 1501 | [Unwritten](#1501-unwritten) | 9.3 | Generic |
 | 718 | [Wonder of U](#718-wonder-of-u) | 9.4 | JoJo |
 | 1071 | [The Tinkerer](#1071-the-tinkerer) | 9.4 | Worm |
 | 1212 | [Authority of Death](#1212-authority-of-death) | 9.4 | Generic |
+| 1504 | [Instrumentality](#1504-instrumentality) | 9.4 | Evangelion |
 | 715 | [Dark Matter](#715-dark-matter) | 9.5 | Toaru |
 | 776 | [Path to Victory](#776-path-to-victory) | 9.6 | Worm |
 | 879 | [Immortal](#879-immortal) | 9.7 | Generic |
@@ -1534,7 +1584,7 @@
 
 **Description**
 
-> Produce and control weak flames about as strong as matchsticks or bonfires.
+> (Tag:fire)Produce and control weak little flames, never stronger than matchsticks and candle flames.
 
 **Decision**
 
@@ -1551,7 +1601,7 @@
 
 **Description**
 
-> Produce and control moderate flames that can be shaped into attacks like fireballs and fire arrows.
+> (Tag:fire)Produce and control moderate flames that can be shaped into attacks like fireballs and fire arrows.
 
 **Decision**
 
@@ -1568,7 +1618,7 @@
 
 **Description**
 
-> Produce and control flames to unleash streams, arrows, whips, walls of fire, and similar attacks.
+> (Tag:fire)Produce and control flames to unleash streams, arrows, whips, walls of fire, and similar attacks.
 
 **Decision**
 
@@ -1585,7 +1635,7 @@
 
 **Description**
 
-> Produce and control your own or natural flames with fine control, shaping them into arrows, blades, walls, projectiles, and similar forms.
+> (Tag:fire)(Tag:kinesis)Produce and control your own or natural flames with fine control, shaping them into arrows, blades, walls, projectiles, and similar forms.
 
 **Decision**
 
@@ -1602,7 +1652,7 @@
 
 **Description**
 
-> Emit and control powerful flames on a large scale, unleashing giant flamethrowers or compressing flames into laser-like points, with extreme flame resistance. Overuse causes overheating, lowering your maximum energy output.
+> (Tag:fire)Emit and control powerful flames on a large scale, unleashing giant flamethrowers or compressing flames into laser-like points, with extreme flame resistance. Overuse causes overheating, lowering your maximum energy output.
 
 **Decision**
 
@@ -1619,7 +1669,7 @@
 
 **Description**
 
-> Control heat and flames on a small scale with atomic precision, though weak in power and temperature.
+> (Tag:fire)(Tag:kinesis)Control heat and flames on a small scale with atomic precision, though weak in power and temperature.
 
 **Decision**
 
@@ -1636,7 +1686,7 @@
 
 **Description**
 
-> Embody humanity's fear of wildfires, eruptions, and flames, granting very potent pyrokinesis plus lava generation and manipulation. Your conceptual flames are far less restrained by ordinary limitations.
+> (Tag:earth)(Tag:fire)Embody humanity's fear of wildfires, eruptions, and flames, granting very potent pyrokinesis plus lava generation and manipulation. Your conceptual flames are far less restrained by ordinary limitations.
 
 **Decision**
 
@@ -1653,7 +1703,7 @@
 
 **Description**
 
-> Ignite an object in your line of sight with Amaterasu flames that can burn anything and cannot be extinguished by normal means. Repeated use strains your eye, causing bleeding or blindness.
+> (Tag:fire)(Tag:infernal)(Tag:ocular)Ignite an object in your line of sight with Amaterasu flames that can burn anything and cannot be extinguished by normal means. Repeated use strains your eye, causing bleeding or blindness.
 
 **Flagged in reports**
 
@@ -1674,7 +1724,7 @@
 
 **Description**
 
-> Wield and manipulate the Frenzied Flame, a cosmic fire that can burn minds, souls, and space. Increased use causes mental instability and obsession with destruction.
+> (Tag:fire)Wield and manipulate the Frenzied Flame, a cosmic fire that can burn minds, souls, and space. Increased use causes mental instability and obsession with destruction.
 
 **Decision**
 
@@ -1691,7 +1741,7 @@
 
 **Description**
 
-> Instantly set any object you touch aflame; stronger targets are harder to ignite. With training, you can ignite adjacent objects.
+> (Tag:fire)Instantly set any object you touch aflame; stronger targets are harder to ignite. With training, you can ignite adjacent objects.
 
 **Decision**
 
@@ -1708,7 +1758,7 @@
 
 **Description**
 
-> Instantly set any target or area you touch aflame; stronger targets are harder to ignite. One touch can burn entire buildings, and with training, entire cities.
+> (Tag:fire)Instantly set any target or area you touch aflame; stronger targets are harder to ignite. One touch can burn entire buildings, and with training, entire cities.
 
 **Flagged in reports**
 
@@ -1729,7 +1779,7 @@
 
 **Description**
 
-> Raise the temperature of and spontaneously combust any target in your line of sight; stronger targets cost more energy. While active, your eye turns red with three overlapping triangles.
+> (Tag:fire)(Tag:ocular)Raise the temperature of and spontaneously combust any target in your line of sight; stronger targets cost more energy. While active, your eye turns red with three overlapping triangles.
 
 **Decision**
 
@@ -1746,7 +1796,7 @@
 
 **Description**
 
-> Cloak yourself and your surroundings in flame that ignites nearby non-friendly targets, though it may fail on stronger opponents. While active, all fire-based abilities are slightly more potent.
+> (Tag:buff)(Tag:fire)Cloak yourself and your surroundings in flame that ignites nearby non-friendly targets, though it may fail on stronger opponents. While active, all fire-based abilities are slightly more potent.
 
 **Decision**
 
@@ -1763,7 +1813,7 @@
 
 **Description**
 
-> Form and launch fireballs from your hands or other appendages; size and potency depend on energy expended.
+> (Tag:fire)Form and launch fireballs from your hands or other appendages; size and potency depend on energy expended.
 
 **Decision**
 
@@ -1780,7 +1830,7 @@
 
 **Description**
 
-> Emit fire shaped into any cold weaponry such as swords, axes, hammers, bows, and crossbows. The flames mimic the weapon's properties, staying sharp as a sword or heavy as a hammer.
+> (Tag:fire)(Tag:martial)Emit fire shaped into any cold weaponry such as swords, axes, hammers, bows, and crossbows. The flames mimic the weapon's properties, staying sharp as a sword or heavy as a hammer.
 
 **Decision**
 
@@ -1797,7 +1847,7 @@
 
 **Description**
 
-> Emit and control incredibly powerful Frostflare, flames that freeze instead of burning. While using it, you gain incredible ice and cold resistance in exchange for vulnerability to flame.
+> (Tag:fire)(Tag:ice)Emit and control incredibly powerful Frostflare, flames that freeze instead of burning. While using it, you gain incredible ice and cold resistance in exchange for vulnerability to flame.
 
 **Decision**
 
@@ -1814,7 +1864,7 @@
 
 **Description**
 
-> Absorb fire into your body to release later as your own flames or convert into energy. Strong flames may be impossible or painful to absorb, and absorbing too much without releasing causes internal burning.
+> (Tag:fire)Absorb fire into your body to release later as your own flames or convert into energy. Strong flames may be impossible or painful to absorb, and absorbing too much without releasing causes internal burning.
 
 **Decision**
 
@@ -1831,7 +1881,7 @@
 
 **Description**
 
-> Control flames and ignition on the level of a Level 5 Esper from Toaru, with unmatched precision, range, and control.
+> (Tag:fire)Control flames and ignition on the level of a Level 5 Esper from Toaru, with unmatched precision, range, and control.
 
 **Decision**
 
@@ -1848,7 +1898,7 @@
 
 **Description**
 
-> Wield Hell flames so potent even you are not fully immune, suffering burns from overuse. They deal severe damage to Holy and Light-based beings.
+> (Tag:fire)(Tag:infernal)Wield Hell flames so potent even you are not fully immune, suffering burns from overuse. They deal severe damage to Holy and Light-based beings.
 
 **Decision**
 
@@ -1865,7 +1915,7 @@
 
 **Description**
 
-> Channel and control Providence's Profaned Flames, which are incomparably hot, turn all to impartial ash, and ignore all fire resistance.
+> (Tag:fire)(Tag:holy)(Tag:infernal)Channel and control Providence's Profaned Flames, which are incomparably hot, turn all to impartial ash, and ignore all fire resistance.
 
 **Flagged in reports**
 
@@ -1886,7 +1936,7 @@
 
 **Description**
 
-> Temporarily take the form of one of Providence's guardians, massively boosting physical stats and granting flame wings and Profaned Flame manipulation. Maintaining it slowly burns you from the inside until released, mitigated only by fire resistance.
+> (Tag:fire)(Tag:holy)(Tag:infernal)(Tag:transformation)Temporarily take the form of one of Providence's guardians, massively boosting physical stats and granting flame wings and Profaned Flame manipulation. Maintaining it slowly burns you from the inside until released, mitigated only by fire resistance.
 
 **Decision**
 
@@ -1903,7 +1953,7 @@
 
 **Description**
 
-> Emit and control Shadowflame, soundless flames with no energy signature that burn away light, making them extremely hard to perceive. An experienced user can hide them from all senses.
+> (Tag:fire)Emit and control Shadowflame, soundless flames with no energy signature that burn away light, making them extremely hard to perceive. An experienced user can hide them from all senses.
 
 **Decision**
 
@@ -1920,7 +1970,7 @@
 
 **Description**
 
-> Coat your fists in flames that enhance strike power while burning the target. You can release the fire while punching to launch a burning fist projectile.
+> (Tag:fire)(Tag:martial)Coat your fists in flames that enhance strike power while burning the target. You can release the fire while punching to launch a burning fist projectile.
 
 **Decision**
 
@@ -1937,7 +1987,7 @@
 
 **Description**
 
-> Emit, create, shape, control, and turn into fire and flame at will, becoming living fire.
+> (Tag:fire)(Tag:transformation)Emit, create, shape, control, and turn into fire and flame at will, becoming living fire.
 
 **Decision**
 
@@ -1954,7 +2004,7 @@
 
 **Description**
 
-> Coat any object you touch in a layer of flames that does not harm the object's integrity.
+> (Tag:buff)(Tag:fire)Coat any object you touch in a layer of flames that does not harm the object's integrity.
 
 **Decision**
 
@@ -1971,7 +2021,7 @@
 
 **Description**
 
-> Coat a held object or your own body in flames that reinforce it and mimic its properties. Coated fists gain blunt force, while coated blades gain cutting ability plus flames.
+> (Tag:buff)(Tag:fire)(Tag:martial)Coat a held object or your own body in flames that reinforce it and mimic its properties. Coated fists gain blunt force, while coated blades gain cutting ability plus flames.
 
 **Decision**
 
@@ -1988,7 +2038,7 @@
 
 **Description**
 
-> Heat any object by touching it; more energy makes it hotter and faster.
+> (Tag:alter)(Tag:fire)Heat any object by touching it; more energy makes it hotter and faster.
 
 **Decision**
 
@@ -2005,7 +2055,7 @@
 
 **Description**
 
-> Raise the temperature of any metal in sensory range; more energy makes it hotter and faster.
+> (Tag:alter)(Tag:fire)Raise the temperature of any metal in sensory range; more energy makes it hotter and faster.
 
 **Decision**
 
@@ -2022,7 +2072,7 @@
 
 **Description**
 
-> Unleash waves of pure heat from your body as directed waves or omnidirectional heat.
+> (Tag:fire)Unleash waves of pure heat from your body as directed waves or omnidirectional heat.
 
 **Decision**
 
@@ -2039,7 +2089,7 @@
 
 **Description**
 
-> Change the weather to harsh sunlight, weakening nearby water-based abilities while boosting fire-based abilities.
+> (Tag:alter)(Tag:buff)(Tag:debuff)(Tag:fire)Change the weather to harsh sunlight, weakening nearby water-based abilities while boosting fire-based abilities.
 
 **Decision**
 
@@ -2056,7 +2106,7 @@
 
 **Description**
 
-> Transform weather and land into Desolate Land, with burning sunlight, scorched land, lava rivers, raised temperature, and no moisture. It largely amplifies Fire and Earth abilities, nullifies Water abilities below Epic rank, and weakens those above.
+> (Tag:alter)(Tag:buff)(Tag:debuff)(Tag:earth)(Tag:fire)Transform weather and land into Desolate Land, with burning sunlight, scorched land, lava rivers, raised temperature, and no moisture. It largely amplifies Fire and Earth abilities, nullifies Water abilities below Epic rank, and weakens those above.
 
 **Decision**
 
@@ -2107,7 +2157,7 @@
 
 **Description**
 
-> Emit and control humanity's Black Flames, which do not burn or emit heat but have mass greater than most metals, shredding what they touch instead of burning it.
+> (Tag:dark)(Tag:fire)Emit and control humanity's Black Flames, which do not burn or emit heat but have mass greater than most metals, shredding what they touch instead of burning it.
 
 **Decision**
 
@@ -2124,7 +2174,7 @@
 
 **Description**
 
-> Remotely extinguish any fire or flame in sensory range; stronger flames cost more energy.
+> (Tag:alter)(Tag:fire)Remotely extinguish any fire or flame in sensory range; stronger flames cost more energy.
 
 **Decision**
 
@@ -2141,7 +2191,7 @@
 
 **Description**
 
-> Wield and control the Godskin Apostles' Godslayer Flames, already strong but significantly hotter and more potent against the divine. The more divine the enemy, the more potent the flames.
+> (Tag:anti-divine)(Tag:fire)Wield and control the Godskin Apostles' Godslayer Flames, already strong but significantly hotter and more potent against the divine. The more divine the enemy, the more potent the flames.
 
 **Decision**
 
@@ -2158,7 +2208,7 @@
 
 **Description**
 
-> Wield and control Blood Flames, which cost vitality and health instead of energy. They are much more potent than regular flames, lacerate on contact, and are extremely hard to heal.
+> (Tag:blood)(Tag:fire)Wield and control Blood Flames, which cost vitality and health instead of energy. They are much more potent than regular flames, lacerate on contact, and are extremely hard to heal.
 
 **Decision**
 
@@ -2175,7 +2225,7 @@
 
 **Description**
 
-> Conjure talons of bloodflame that burn and lacerate. They cost health and vitality instead of energy, with more vitality producing stronger claws.
+> (Tag:fire)(Tag:life)Conjure talons of bloodflame that burn and lacerate. They cost health and vitality instead of energy, with more vitality producing stronger claws.
 
 **Decision**
 
@@ -2192,7 +2242,7 @@
 
 **Description**
 
-> Emit laser beams of extreme heat from your eyes, concentrating them for more power over less area or spreading them for less power over more area. Beams weaken over distance.
+> (Tag:fire)(Tag:ocular)Emit laser beams of extreme heat from your eyes, concentrating them for more power over less area or spreading them for less power over more area. Beams weaken over distance.
 
 **Decision**
 
@@ -2209,7 +2259,7 @@
 
 **Description**
 
-> Unleash a concentrated burst of flame like a beam from your hands, or a continuous but less powerful beam of fire.
+> (Tag:fire)Unleash a concentrated burst of flame like a beam from your hands, or a continuous but less powerful beam of fire.
 
 **Decision**
 
@@ -2226,7 +2276,7 @@
 
 **Description**
 
-> Grow very durable, sharp fingernail claws that can be covered in very hot flames. They can carve apart and melt metal.
+> (Tag:bio)(Tag:fire)Grow very durable, sharp fingernail claws that can be covered in very hot flames. They can carve apart and melt metal.
 
 **Decision**
 
@@ -2243,7 +2293,7 @@
 
 **Description**
 
-> Unleash a constant stream of fire from anywhere on your body; more energy makes it hotter and more potent.
+> (Tag:fire)Unleash a constant stream of fire from anywhere on your body; more energy makes it hotter and more potent.
 
 **Decision**
 
@@ -2260,7 +2310,7 @@
 
 **Description**
 
-> Create explosions of flame from anywhere on your body.
+> (Tag:fire)Create explosions of flame from anywhere on your body.
 
 **Decision**
 
@@ -2277,7 +2327,7 @@
 
 **Description**
 
-> Unleash a dragon-like breath attack of very powerful flame; charging longer and expending more energy increases power.
+> (Tag:fire)Unleash a dragon-like breath attack of very powerful flame; charging longer and expending more energy increases power.
 
 **Decision**
 
@@ -2294,7 +2344,7 @@
 
 **Description**
 
-> Sweat a highly explosive compound on demand and detonate it at any time to unleash powerful explosions.
+> (Tag:bio)(Tag:fire)Sweat a highly explosive compound on demand and detonate it at any time to unleash powerful explosions.
 
 **Decision**
 
@@ -2311,7 +2361,7 @@
 
 **Description**
 
-> Create and project flame explosions at will as condensed glowing-bullet projectiles that explode on contact. With mastery, you can send streams of explosive energy from fingers and palms.
+> (Tag:fire)Create and project flame explosions at will as condensed glowing-bullet projectiles that explode on contact. With mastery, you can send streams of explosive energy from fingers and palms.
 
 **Decision**
 
@@ -2328,7 +2378,7 @@
 
 **Description**
 
-> Charge any held item with explosive energy to detonate at any time like a time bomb; the energy fades over time. More energy means a stronger explosion.
+> (Tag:alter)(Tag:fire)Charge any held item with explosive energy to detonate at any time like a time bomb; the energy fades over time. More energy means a stronger explosion.
 
 **Decision**
 
@@ -2345,7 +2395,7 @@
 
 **Description**
 
-> Call down an incredibly powerful sky explosion like divine wrath or a thermonuclear warhead. Longer charging and more energy make it stronger.
+> (Tag:fire)Call down an incredibly powerful sky explosion like divine wrath or a thermonuclear warhead. Longer charging and more energy make it stronger.
 
 **Decision**
 
@@ -2362,7 +2412,7 @@
 
 **Description**
 
-> Heat your palms to red-hot levels, palms only.
+> (Tag:fire)Heat your palms to red-hot levels, palms only.
 
 **Decision**
 
@@ -2379,7 +2429,7 @@
 
 **Description**
 
-> Create, control, and transform into lava and magma at will, becoming a living eruption.
+> (Tag:earth)(Tag:fire)(Tag:transformation)Create, control, and transform into lava and magma at will, becoming a living eruption.
 
 **Decision**
 
@@ -2396,7 +2446,7 @@
 
 **Description**
 
-> Slam the ground to make magma/lava erupt like a volcano. With training, you can unleash it from any sufficiently large surface.
+> (Tag:earth)(Tag:fire)Slam the ground to make magma/lava erupt like a volcano. With training, you can unleash it from any sufficiently large surface.
 
 **Decision**
 
@@ -2413,7 +2463,7 @@
 
 **Description**
 
-> Create and control magma/lava at will, such as volcanic rocks, lava whips, lava lakes, magma bullets, and similar forms.
+> (Tag:earth)(Tag:fire)Create and control magma/lava at will, such as volcanic rocks, lava whips, lava lakes, magma bullets, and similar forms.
 
 **Decision**
 
@@ -2430,7 +2480,7 @@
 
 **Description**
 
-> Light a small flame on your fingers, barely qualifying as a lighter.
+> (Tag:fire)Light a small flame on your fingers, barely qualifying as a lighter.
 
 **Decision**
 
@@ -2447,7 +2497,7 @@
 
 **Description**
 
-> Conjure small streams of water dripping from your fingers, barely enough to wash your hands.
+> (Tag:water)Conjure small streams of water dripping from your fingers, barely enough to wash your hands.
 
 **Decision**
 
@@ -2464,7 +2514,7 @@
 
 **Description**
 
-> Unleash a spray of water from your hands like a showerhead or hose, useful for dousing people and putting out fires.
+> (Tag:water)Unleash a spray of water from your hands like a showerhead or hose, useful for dousing people and putting out fires.
 
 **Decision**
 
@@ -2481,7 +2531,7 @@
 
 **Description**
 
-> Telekinetically control water to a minor degree, too weak to injure but able to douse targets or remove moisture from inanimate objects.
+> (Tag:aquatic)(Tag:water)Telekinetically control water to a minor degree, too weak to injure but able to douse targets or remove moisture from inanimate objects.
 
 **Decision**
 
@@ -2498,7 +2548,7 @@
 
 **Description**
 
-> Create large volumes of fresh water from your hands without controlling it; the stream is strong enough to seriously hurt someone.
+> (Tag:water)Create large volumes of fresh water from your hands without controlling it; the stream is strong enough to seriously hurt someone.
 
 **Decision**
 
@@ -2515,7 +2565,7 @@
 
 **Description**
 
-> Create and release extreme volumes of water from your body without controlling it, enough to flood a building at base level and streets or towns with training.
+> (Tag:water)Create and release extreme volumes of water from your body without controlling it, enough to flood a building at base level and streets or towns with training.
 
 **Decision**
 
@@ -2532,7 +2582,7 @@
 
 **Description**
 
-> Create geysers of water erupting from the ground around you; more energy makes them more powerful.
+> (Tag:water)Create geysers of water erupting from the ground around you; more energy makes them more powerful.
 
 **Decision**
 
@@ -2549,7 +2599,7 @@
 
 **Description**
 
-> Create and control mist to obscure, hinder, and smother flames. With training, you can make freezing ice mist or condense mist into physical obstacles and attacks.
+> (Tag:fire)(Tag:ice)(Tag:water)Create and control mist to obscure, hinder, and smother flames. With training, you can make freezing ice mist or condense mist into physical obstacles and attacks.
 
 **Decision**
 
@@ -2566,7 +2616,7 @@
 
 **Description**
 
-> Telekinetically create and control water around yourself; not particularly powerful but versatile and precise.
+> (Tag:aquatic)(Tag:kinesis)(Tag:water)Telekinetically create and control water around yourself; not particularly powerful but versatile and precise.
 
 **Decision**
 
@@ -2583,7 +2633,7 @@
 
 **Description**
 
-> Control and shape any water you physically touch, with no control once untouched. While maintaining contact you can freely morph and move it; more energy controls larger quantities with more power.
+> (Tag:water)Control and shape any water you physically touch, with no control once untouched. While maintaining contact you can freely morph and move it; more energy controls larger quantities with more power.
 
 **Decision**
 
@@ -2600,7 +2650,7 @@
 
 **Description**
 
-> Control water on a small scale with atomic precision, though power and range are negligible.
+> (Tag:aquatic)(Tag:kinesis)(Tag:water)Control water on a small scale with atomic precision, though power and range are negligible.
 
 **Decision**
 
@@ -2617,7 +2667,7 @@
 
 **Description**
 
-> Create and emit high-volume, high-pressure water streams from your body strong enough to tear through concrete like paper.
+> (Tag:water)Create and emit high-volume, high-pressure water streams from your body strong enough to tear through concrete like paper.
 
 **Decision**
 
@@ -2634,7 +2684,7 @@
 
 **Description**
 
-> Absorb and store vast quantities of water in your body by touch, releasing it at any time.
+> (Tag:water)Absorb and store vast quantities of water in your body by touch, releasing it at any time.
 
 **Decision**
 
@@ -2651,7 +2701,7 @@
 
 **Description**
 
-> Evaporate moisture inside an object or target through contact, turning trees to dust and crumbling most rocks. Living targets resist more strongly and are much harder to affect.
+> (Tag:water)Evaporate moisture inside an object or target through contact, turning trees to dust and crumbling most rocks. Living targets resist more strongly and are much harder to affect.
 
 **Decision**
 
@@ -2668,7 +2718,7 @@
 
 **Description**
 
-> Remotely evaporate water in sensory range by expending energy; larger quantities cost more. With training, you can evaporate water inside objects in range, though magical waters and water in more powerful objects cost more energy.
+> (Tag:alter)(Tag:water)Remotely evaporate water in sensory range by expending energy; larger quantities cost more. With training, you can evaporate water inside objects in range, though magical waters and water in more powerful objects cost more energy.
 
 **Decision**
 
@@ -2685,7 +2735,7 @@
 
 **Description**
 
-> Create and control water; more energy controls larger quantities with more force.
+> (Tag:aquatic)(Tag:water)Create and control water; more energy controls larger quantities with more force.
 
 **Decision**
 
@@ -2702,7 +2752,7 @@
 
 **Description**
 
-> Telekinetically control Water (H2O), freely controlling, moving, shaping it and other water-based targets.
+> (Tag:aquatic)(Tag:kinesis)(Tag:water)Telekinetically control Water (H2O), freely controlling, moving, shaping it and other water-based targets.
 
 **Decision**
 
@@ -2719,7 +2769,7 @@
 
 **Description**
 
-> Create miniature typhoons like disks of whirling water razor-saw blades to deal devastating damage. They can lock onto and home in on targets.
+> (Tag:air)(Tag:water)Create miniature typhoons like disks of whirling water razor-saw blades to deal devastating damage. They can lock onto and home in on targets.
 
 **Decision**
 
@@ -2736,7 +2786,7 @@
 
 **Description**
 
-> Create and control water whirlpools for use as barriers, projectiles, or hindrances.
+> (Tag:aquatic)(Tag:water)Create and control water whirlpools for use as barriers, projectiles, or hindrances.
 
 **Decision**
 
@@ -2753,7 +2803,7 @@
 
 **Description**
 
-> Make it rain from the sky; more energy increases scale. It slightly boosts water-based abilities and slightly weakens fire-based ones.
+> (Tag:alter)(Tag:buff)(Tag:debuff)(Tag:water)Make it rain from the sky; more energy increases scale. It slightly boosts water-based abilities and slightly weakens fire-based ones.
 
 **Decision**
 
@@ -2770,7 +2820,7 @@
 
 **Description**
 
-> Change local weather to heavy rain, boosting water-based abilities while weakening fire-based abilities.
+> (Tag:alter)(Tag:buff)(Tag:debuff)(Tag:water)Change local weather to heavy rain, boosting water-based abilities while weakening fire-based abilities.
 
 **Decision**
 
@@ -2787,7 +2837,7 @@
 
 **Description**
 
-> Call down the primordial sea as torrential downpour and mighty land-swallowing waves. It greatly boosts water-based abilities, snuffs out fire-based abilities below Epic rank, and greatly weakens those above.
+> (Tag:alter)(Tag:buff)(Tag:debuff)(Tag:water)Call down the primordial sea as torrential downpour and mighty land-swallowing waves. It greatly boosts water-based abilities, snuffs out fire-based abilities below Epic rank, and greatly weakens those above.
 
 **Decision**
 
@@ -2804,7 +2854,7 @@
 
 **Description**
 
-> Dampen any touched object by making it more moist.
+> (Tag:alter)(Tag:water)Dampen any touched object by making it more moist.
 
 **Decision**
 
@@ -2821,7 +2871,7 @@
 
 **Description**
 
-> Dry any touched object, removing only abnormal moisture rather than all internal water particles.
+> (Tag:alter)(Tag:water)Dry any touched object, removing only abnormal moisture rather than all internal water particles.
 
 **Decision**
 
@@ -2838,7 +2888,7 @@
 
 **Description**
 
-> Create and control Water (H2O) on the scale of a Level 5 Esper from Toaru, with incredible range, power, and unmatched precision.
+> (Tag:aquatic)(Tag:water)Create and control Water (H2O) on the scale of a Level 5 Esper from Toaru, with incredible range, power, and unmatched precision.
 
 **Decision**
 
@@ -2855,7 +2905,7 @@
 
 **Description**
 
-> Create and control holy water, very effective against unholy beings. More energy creates more water or more potent holy water.
+> (Tag:holy)(Tag:water)Create and control holy water, very effective against unholy beings. More energy creates more water or more potent holy water.
 
 **Decision**
 
@@ -2872,7 +2922,7 @@
 
 **Description**
 
-> Create, control, and turn into water and ice, allowing water-form escapes, dodges, icicles, freezing, and similar tricks. Water or ice form shares water's vulnerabilities.
+> (Tag:ice)(Tag:transformation)(Tag:water)Create, control, and turn into water and ice, allowing water-form escapes, dodges, icicles, freezing, and similar tricks. Water or ice form shares water's vulnerabilities.
 
 **Decision**
 
@@ -2889,7 +2939,7 @@
 
 **Description**
 
-> Blow harmless water bubbles from your body.
+> (Tag:water)Blow harmless water bubbles from your body.
 
 **Decision**
 
@@ -2906,7 +2956,7 @@
 
 **Description**
 
-> Turn your body into water at will to slip away, ignore physical attacks, and gain mobility. Water form shares water's vulnerabilities.
+> (Tag:transformation)(Tag:water)Turn your body into water at will to slip away, ignore physical attacks, and gain mobility. Water form shares water's vulnerabilities.
 
 **Decision**
 
@@ -2923,7 +2973,7 @@
 
 **Description**
 
-> Breathe underwater as on land and move through water as on land.
+> (Tag:aquatic)(Tag:movement)(Tag:water)Breathe underwater as on land and move through water as on land.
 
 **Decision**
 
@@ -2940,7 +2990,7 @@
 
 **Description**
 
-> Conjure, control, and emit blasts of hot steam from your body.
+> (Tag:fire)(Tag:water)Conjure, control, and emit blasts of hot steam from your body.
 
 **Decision**
 
@@ -2957,7 +3007,7 @@
 
 **Description**
 
-> Create and telekinetically control ink. With training, you can condense ink into hardened constructs.
+> (Tag:summon)(Tag:water)Create and telekinetically control ink. With training, you can condense ink into hardened constructs.
 
 **Decision**
 
@@ -2974,7 +3024,7 @@
 
 **Description**
 
-> Lower an object's temperature through touch, slowly and insufficiently to freeze. It can keep drinks or ice cream cool.
+> (Tag:ice)Lower an object's temperature through touch, slowly and insufficiently to freeze. It can keep drinks or ice cream cool.
 
 **Decision**
 
@@ -2991,7 +3041,7 @@
 
 **Description**
 
-> Create and control ice to a minor degree, better for ice cubes or ice knives than icicle attacks.
+> (Tag:ice)Create and control ice to a minor degree, better for ice cubes or ice knives than icicle attacks.
 
 **Decision**
 
@@ -3008,7 +3058,7 @@
 
 **Description**
 
-> Rapidly freeze touched targets, expanding with training to freeze a whole body from a hand grab or an entire street floor.
+> (Tag:ice)Rapidly freeze touched targets, expanding with training to freeze a whole body from a hand grab or an entire street floor.
 
 **Decision**
 
@@ -3025,7 +3075,7 @@
 
 **Description**
 
-> Conjure and launch ice spikes or erupt them from the ground. More energy makes larger, stronger icicles.
+> (Tag:ice)Conjure and launch ice spikes or erupt them from the ground. More energy makes larger, stronger icicles.
 
 **Decision**
 
@@ -3042,7 +3092,7 @@
 
 **Description**
 
-> Create but not control ice, still able to conjure walls, spikes, weapons, and similar forms without telekinetic control afterward.
+> (Tag:ice)Create but not control ice, still able to conjure walls, spikes, weapons, and similar forms without telekinetic control afterward.
 
 **Decision**
 
@@ -3059,7 +3109,7 @@
 
 **Description**
 
-> Freeze objects and create massive ice volumes, freezing streets, encasing buildings, and with training turning city blocks into icebergs.
+> (Tag:ice)Freeze objects and create massive ice volumes, freezing streets, encasing buildings, and with training turning city blocks into icebergs.
 
 **Decision**
 
@@ -3076,7 +3126,7 @@
 
 **Description**
 
-> Freeze objects and create incredible ice volumes at will, freezing cities and buildings, launching thousand-ton ice boulders, and impaling with ice pillars. With training, entire cities can become mountains of ice.
+> (Tag:ice)Freeze objects and create incredible ice volumes at will, freezing cities and buildings, launching thousand-ton ice boulders, and impaling with ice pillars. With training, entire cities can become mountains of ice.
 
 **Decision**
 
@@ -3093,7 +3143,7 @@
 
 **Description**
 
-> Create and control ice you created, with no control over ice you did not create.
+> (Tag:ice)Create and control ice you created, with no control over ice you did not create.
 
 **Decision**
 
@@ -3110,7 +3160,7 @@
 
 **Description**
 
-> Sense and telekinetically control all ice in range with very potent control, but without creating ice yourself.
+> (Tag:ice)Sense and telekinetically control all ice in range with very potent control, but without creating ice yourself.
 
 **Decision**
 
@@ -3127,7 +3177,7 @@
 
 **Description**
 
-> Create and emit both ice and fire from either side of your body, with resistance to both elements. With training, both aspects can combine to unleash Frostflare.
+> (Tag:fire)(Tag:ice)Create and emit both ice and fire from either side of your body, with resistance to both elements. With training, both aspects can combine to unleash Frostflare.
 
 **Decision**
 
@@ -3144,7 +3194,7 @@
 
 **Description**
 
-> Heavily boost ice-ability power while keeping your mind calm, sharp, and resistant to mental influences. You are also immune to all frost effects below Epic rank.
+> (Tag:buff)(Tag:ice)(Tag:mental)Heavily boost ice-ability power while keeping your mind calm, sharp, and resistant to mental influences. You are also immune to all frost effects below Epic rank.
 
 **Flagged in reports**
 
@@ -3165,7 +3215,7 @@
 
 **Description**
 
-> Telekinetically create and control ice and cold, making ice constructs, remotely freezing objects, and similar effects.
+> (Tag:ice)(Tag:kinesis)Telekinetically create and control ice and cold, making ice constructs, remotely freezing objects, and similar effects.
 
 **Decision**
 
@@ -3182,7 +3232,7 @@
 
 **Description**
 
-> Freeze objects with extreme temperatures and form a dispellable cold-ice armor around yourself. With training, you can plunge objects to near sub-zero temperatures.
+> (Tag:ice)Freeze objects with extreme temperatures and form a dispellable cold-ice armor around yourself. With training, you can plunge objects to near sub-zero temperatures.
 
 **Decision**
 
@@ -3199,7 +3249,7 @@
 
 **Description**
 
-> Unleash debilitating cold waves from your body that boost Ice-based abilities and spells while active. Those exposed slowly lose stamina in the harsh cold.
+> (Tag:buff)(Tag:debuff)(Tag:ice)Unleash debilitating cold waves from your body that boost Ice-based abilities and spells while active. Those exposed slowly lose stamina in the harsh cold.
 
 **Decision**
 
@@ -3216,7 +3266,7 @@
 
 **Description**
 
-> Create and control icy winds for freezing wind blades, ice tornadoes, and other wind-manipulation effects with an icy twist.
+> (Tag:air)(Tag:ice)Create and control icy winds for freezing wind blades, ice tornadoes, and other wind-manipulation effects with an icy twist.
 
 **Decision**
 
@@ -3233,7 +3283,7 @@
 
 **Description**
 
-> Control cold and ice on the level of a Level 5 Esper from Toaru, with unmatched range, power, and control.
+> (Tag:ice)Control cold and ice on the level of a Level 5 Esper from Toaru, with unmatched range, power, and control.
 
 **Decision**
 
@@ -3250,7 +3300,7 @@
 
 **Description**
 
-> Summon a snowstorm on your location that slightly boosts ice-based abilities.
+> (Tag:alter)(Tag:buff)(Tag:debuff)(Tag:ice)Summon a snowstorm on your location that slightly boosts ice-based abilities.
 
 **Decision**
 
@@ -3267,7 +3317,7 @@
 
 **Description**
 
-> Summon a fierce blizzard that boosts ice-based ability power.
+> (Tag:alter)(Tag:buff)(Tag:debuff)(Tag:ice)Summon a fierce blizzard that boosts ice-based ability power.
 
 **Decision**
 
@@ -3284,7 +3334,7 @@
 
 **Description**
 
-> Create and control snow, with amount and power equal to energy expended.
+> (Tag:ice)Create and control snow, with amount and power equal to energy expended.
 
 **Decision**
 
@@ -3301,7 +3351,7 @@
 
 **Description**
 
-> Create, control, and turn into snow, becoming a living entity of snow.
+> (Tag:ice)(Tag:transformation)Create, control, and turn into snow, becoming a living entity of snow.
 
 **Decision**
 
@@ -3318,7 +3368,7 @@
 
 **Description**
 
-> Create, control, and turn into ice, becoming a living entity of ice.
+> (Tag:ice)(Tag:transformation)Create, control, and turn into ice, becoming a living entity of ice.
 
 **Decision**
 
@@ -3335,7 +3385,7 @@
 
 **Description**
 
-> Charge and unleash a freezing breath of frigid winds that freezes what it hits. Longer charging and more energy increase power.
+> (Tag:ice)Charge and unleash a freezing breath of frigid winds that freezes what it hits. Longer charging and more energy increase power.
 
 **Decision**
 
@@ -3352,7 +3402,7 @@
 
 **Description**
 
-> Sprout ice constructs like walls and pillars from the ground and other surfaces to barrier, hinder, crush, or block enemies.
+> (Tag:ice)Sprout ice constructs like walls and pillars from the ground and other surfaces to barrier, hinder, crush, or block enemies.
 
 **Decision**
 
@@ -3369,7 +3419,7 @@
 
 **Description**
 
-> Create and control black ice, an incredibly durable ice highly resistant to heat and fire.
+> (Tag:ice)Create and control black ice, an incredibly durable ice highly resistant to heat and fire.
 
 **Decision**
 
@@ -3386,7 +3436,7 @@
 
 **Description**
 
-> Manifest extreme cold and ice at will under telekinetic control.
+> (Tag:ice)Manifest extreme cold and ice at will under telekinetic control.
 
 **Decision**
 
@@ -3403,7 +3453,7 @@
 
 **Description**
 
-> Drop temperatures to absolute zero on a touched target or in an area, though not instantly. More energy reaches Absolute Zero faster.
+> (Tag:alter)(Tag:ice)Drop temperatures to absolute zero on a touched target or in an area, though not instantly. More energy reaches Absolute Zero faster.
 
 **Flagged in reports**
 
@@ -3424,7 +3474,7 @@
 
 **Description**
 
-> You are a god of water and ice, holding domain over both with all that entails.
+> (Tag:ice)(Tag:water)You are a god of water and ice, holding domain over both with all that entails.
 
 **Decision**
 
@@ -3441,7 +3491,7 @@
 
 **Description**
 
-> Manifest and control typhoons at will, from miniature direct attacks to area-wide devastation.
+> (Tag:air)Manifest and control typhoons at will, from miniature direct attacks to area-wide devastation.
 
 **Decision**
 
@@ -3458,7 +3508,7 @@
 
 **Description**
 
-> Conjure a light breeze from your body, far too weak to knock a grown man down.
+> (Tag:air)Conjure a light breeze from your body, far too weak to knock a grown person down.
 
 **Decision**
 
@@ -3475,7 +3525,7 @@
 
 **Description**
 
-> Conjure and control winds strong enough to injure people and knock grown men off their feet.
+> (Tag:air)Conjure and control winds strong enough to injure people and knock grown people off their feet.
 
 **Decision**
 
@@ -3492,7 +3542,7 @@
 
 **Description**
 
-> Conjure and control winds and air with decent power and precision, strong enough to kill with wind lashes or throw people with gusts.
+> (Tag:air)Conjure and control winds and air with decent power and precision, strong enough to kill with wind lashes or throw people with gusts.
 
 **Decision**
 
@@ -3509,7 +3559,7 @@
 
 **Description**
 
-> Conjure, shape and control powerful gales of wind and air.
+> (Tag:air)Conjure, shape and control powerful gales of wind and air.
 
 **Decision**
 
@@ -3526,7 +3576,7 @@
 
 **Description**
 
-> Conjure and command mighty winds and hurricanes with great power. With training, you can devastate several cities with hurricanes and storms.
+> (Tag:air)Conjure and command mighty winds and hurricanes with great power. With training, you can devastate several cities with hurricanes and storms.
 
 **Decision**
 
@@ -3543,7 +3593,7 @@
 
 **Description**
 
-> Upgrade of Hurricane. Create mighty storms and hurricanes for massive devastation. With training, you can unleash grand tempests that devastate cities.
+> (Tag:air)Upgrade of Hurricane. Create mighty storms and hurricanes for massive devastation. With training, you can unleash grand tempests that devastate cities.
 
 **Decision**
 
@@ -3560,7 +3610,7 @@
 
 **Description**
 
-> Sense and telekinetically control wind, granting precise and powerful control over surrounding air.
+> (Tag:air)(Tag:kinesis)Sense and telekinetically control wind, granting precise and powerful control over surrounding air.
 
 **Decision**
 
@@ -3577,7 +3627,7 @@
 
 **Description**
 
-> Conjure and launch razor-sharp crescent-shaped slashes of wind.
+> (Tag:air)Conjure and launch razor-sharp crescent-shaped slashes of wind.
 
 **Decision**
 
@@ -3594,7 +3644,7 @@
 
 **Description**
 
-> Cloak a held item in razor-sharp winds to boost its cutting ability. You can launch the cloak as a projectile to extend the effect.
+> (Tag:air)(Tag:buff)(Tag:martial)Cloak a held item in razor-sharp winds to boost its cutting ability. You can launch the cloak as a projectile to extend the effect.
 
 **Decision**
 
@@ -3611,7 +3661,7 @@
 
 **Description**
 
-> Call forth winds that make the surrounding area very windy, enhancing the power and efficiency of all wind-based abilities.
+> (Tag:air)(Tag:alter)(Tag:buff)Call forth winds that make the surrounding area very windy, enhancing the power and efficiency of all wind-based abilities.
 
 **Decision**
 
@@ -3628,7 +3678,7 @@
 
 **Description**
 
-> Cloak yourself in winds that carry you, allowing you to fly.
+> (Tag:gravity)Cloak yourself in winds that carry you, allowing you to fly.
 
 **Decision**
 
@@ -3645,7 +3695,7 @@
 
 **Description**
 
-> Push off the surrounding air to fly with precision and power.
+> (Tag:air)(Tag:movement)Push off the surrounding air to fly with precision and power.
 
 **Decision**
 
@@ -3662,7 +3712,7 @@
 
 **Description**
 
-> Create air jets of powerful air currents.
+> (Tag:air)Create air jets of powerful air currents.
 
 **Decision**
 
@@ -3679,7 +3729,7 @@
 
 **Description**
 
-> Cloak yourself in powerful winds that assist movement, letting you move faster, dash and float.
+> (Tag:air)(Tag:buff)(Tag:movement)Cloak yourself in powerful winds that assist movement, letting you move faster, dash and float.
 
 **Decision**
 
@@ -3696,7 +3746,7 @@
 
 **Description**
 
-> Create and control powerful whirlwinds and air currents, though control is imprecise.
+> (Tag:air)Create and control powerful whirlwinds and air currents, though control is imprecise.
 
 **Decision**
 
@@ -3713,7 +3763,7 @@
 
 **Description**
 
-> Create and control vacuums in your sensory range to pull things in and cause implosions. Stronger vacuums expend more energy.
+> (Tag:air)Create and control vacuums in your sensory range to pull things in and cause implosions. Stronger vacuums expend more energy.
 
 **Decision**
 
@@ -3730,7 +3780,7 @@
 
 **Description**
 
-> Increase noises to obnoxiously loud but non-destructive levels that cause no damage.
+> (Tag:sound)Increase noises to obnoxiously loud but non-destructive levels that cause no damage.
 
 **Decision**
 
@@ -3747,7 +3797,7 @@
 
 **Description**
 
-> Amplify noises you create loudly enough to disorient and temporarily deafen opponents.
+> (Tag:sound)Amplify noises you create loudly enough to disorient and temporarily deafen opponents.
 
 **Decision**
 
@@ -3764,7 +3814,7 @@
 
 **Description**
 
-> Amplify noises you create loudly enough to crack objects, rupture eardrums and deafen opponents.
+> (Tag:sound)Amplify noises you create loudly enough to crack objects, rupture eardrums and deafen opponents.
 
 **Decision**
 
@@ -3781,7 +3831,7 @@
 
 **Description**
 
-> Share your senses with surrounding air to map the world through wind. Base range is 1km, improvable with training and base stats.
+> (Tag:air)(Tag:divination)(Tag:sense)Share your senses with surrounding air to map the world through wind. Base range is 1km, improvable with training and base stats.
 
 **Decision**
 
@@ -3798,7 +3848,7 @@
 
 **Description**
 
-> Amplify noises you create to cause physical destruction, internal damage and deafness.
+> (Tag:sound)Amplify noises you create to cause physical destruction, internal damage and deafness.
 
 **Decision**
 
@@ -3815,7 +3865,7 @@
 
 **Description**
 
-> Increase air resistance in an area to feel like wading through mud and make flight near impossible. With training, you can increase it until movement causes things to burst into flame from friction.
+> (Tag:air)(Tag:alter)Increase air resistance in an area to feel like wading through mud and make flight near impossible. With training, you can increase it until movement causes things to burst into flame from friction.
 
 **Decision**
 
@@ -3832,7 +3882,7 @@
 
 **Description**
 
-> Conjure a blade of compressed air, most commonly a sword, whose size and shape you can manipulate. You can release wind slash projectiles from it.
+> (Tag:air)(Tag:martial)Conjure a blade of compressed air, most commonly a sword, whose size and shape you can manipulate. You can release wind slash projectiles from it.
 
 **Decision**
 
@@ -3849,7 +3899,7 @@
 
 **Description**
 
-> Conjure a barrier of violent air streams around yourself that excels at deflecting projectiles and elements, but less so physical force.
+> (Tag:air)Conjure a barrier of violent air streams around yourself that excels at deflecting projectiles and elements, but less so physical force.
 
 **Decision**
 
@@ -3866,7 +3916,7 @@
 
 **Description**
 
-> Create and control winds whose virtual density you can manipulate, affecting how they impact the world without changing how they move. You can unleash tungsten-dense wind blades, iron-weight storms, mountain-weight wind whips and more. Denser winds exhaust more energy.
+> (Tag:air)Create and control winds whose virtual density you can manipulate, affecting how they impact the world without changing how they move. You can unleash tungsten-dense wind blades, iron-weight storms, mountain-weight wind whips and more. Denser winds exhaust more energy.
 
 **Flagged in reports**
 
@@ -3887,7 +3937,7 @@
 
 **Description**
 
-> Manipulate weather conditions over an area. Despite massive range it consumes very little energy, but is weak offensively.
+> (Tag:alter)Manipulate weather conditions over an area. Despite massive range it consumes very little energy, but is weak offensively.
 
 **Decision**
 
@@ -3904,7 +3954,7 @@
 
 **Description**
 
-> Alter air's chemical composition and properties, such as raising oxygen concentration to make it more flammable and poisonous, or making it dense enough to feel like steel.
+> (Tag:air)(Tag:alter)Alter air's chemical composition and properties, such as raising oxygen concentration to make it more flammable and poisonous, or making it dense enough to feel like steel.
 
 **Decision**
 
@@ -3921,7 +3971,7 @@
 
 **Description**
 
-> Create and control clouds of pure oxygen to intensify flames, trigger detonations with slight sparks, suffocate or poison targets, or use them as compressed wind attacks.
+> (Tag:air)(Tag:fire)Create and control clouds of pure oxygen to intensify flames, trigger detonations with slight sparks, suffocate or poison targets, or use them as compressed wind attacks.
 
 **Decision**
 
@@ -3938,7 +3988,7 @@
 
 **Description**
 
-> Control wind, air and its composition at the level of a Level 5 Esper from Toaru, with unmatched range, power and control.
+> (Tag:air)Control wind, air and its composition at the level of a Level 5 Esper from Toaru, with unmatched range, power and control.
 
 **Decision**
 
@@ -3955,7 +4005,7 @@
 
 **Description**
 
-> Control atmospheric pressure in zones you can raise or lower.
+> (Tag:air)(Tag:alter)Control atmospheric pressure in zones you can raise or lower.
 
 **Decision**
 
@@ -3972,7 +4022,7 @@
 
 **Description**
 
-> Create and control whips of compressed air to lash out or grab with. Longer, stronger whips expend more energy.
+> (Tag:air)Create and control whips of compressed air to lash out or grab with. Longer, stronger whips expend more energy.
 
 **Decision**
 
@@ -3989,7 +4039,7 @@
 
 **Description**
 
-> Create small sparks of electricity from your body, too weak to work as a taser.
+> (Tag:electric)Create small sparks of electricity from your body, too weak to work as a taser.
 
 **Decision**
 
@@ -4006,7 +4056,7 @@
 
 **Description**
 
-> Channel electricity through your body and discharge it, strong enough to seriously hurt someone.
+> (Tag:electric)Channel electricity through your body and discharge it, strong enough to seriously hurt someone.
 
 **Decision**
 
@@ -4023,7 +4073,7 @@
 
 **Description**
 
-> Channel electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
+> (Tag:electric)Channel electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
 
 **Decision**
 
@@ -4040,7 +4090,7 @@
 
 **Description**
 
-> Channel potent electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
+> (Tag:electric)Channel potent electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
 
 **Decision**
 
@@ -4057,7 +4107,7 @@
 
 **Description**
 
-> Channel lightning through a held object to reinforce and empower it. The lightning imitates the object, becoming sharp with a sword and heavy with a hammer.
+> (Tag:electric)Channel lightning through a held object to reinforce and empower it. The lightning imitates the object, becoming sharp with a sword and heavy with a hammer.
 
 **Decision**
 
@@ -4074,7 +4124,7 @@
 
 **Description**
 
-> Absorb electricity and lightning into your body for storage. You can convert it into energy to refill reserves, boost your power, or fire it as an attack.
+> (Tag:alter)(Tag:electric)Absorb electricity and lightning into your body for storage. You can convert it into energy to refill reserves, boost your power, or fire it as an attack.
 
 **Decision**
 
@@ -4091,7 +4141,7 @@
 
 **Description**
 
-> Call down lightning from the sky onto any location in sensory range. Not very effective indoors.
+> (Tag:electric)Call down lightning from the sky onto any location in sensory range. Not very effective indoors.
 
 **Decision**
 
@@ -4108,7 +4158,7 @@
 
 **Description**
 
-> Call down powerful thunder from the sky onto any location in sensory range. Not very effective indoors.
+> (Tag:electric)Call down powerful thunder from the sky onto any location in sensory range. Not very effective indoors.
 
 **Decision**
 
@@ -4125,7 +4175,7 @@
 
 **Description**
 
-> Call down very powerful thunder from the sky onto any location in sensory range. Not very effective indoors. With training, you can call multiple at once or charge it into a concentrated spear of thunder.
+> (Tag:electric)Call down very powerful thunder from the sky onto any location in sensory range. Not very effective indoors. With training, you can call multiple at once or charge it into a concentrated spear of thunder.
 
 **Decision**
 
@@ -4142,7 +4192,7 @@
 
 **Description**
 
-> Freely call thunder and lightning from the skies to strike the ground with little energy consumption. You can charge it to smite with concentrated lightning.
+> (Tag:electric)Freely call thunder and lightning from the skies to strike the ground with little energy consumption. You can charge it to smite with concentrated lightning.
 
 **Decision**
 
@@ -4159,7 +4209,7 @@
 
 **Description**
 
-> Turn into a living bolt of lightning to travel extremely quickly while ignoring most conventional attacks. You are extremely vulnerable to grounding, which ejects and injures you.
+> (Tag:electric)(Tag:movement)(Tag:transformation)Turn into a living bolt of lightning to travel extremely quickly while ignoring most conventional attacks. You are extremely vulnerable to grounding, which ejects and injures you.
 
 **Decision**
 
@@ -4176,7 +4226,7 @@
 
 **Description**
 
-> (Tech) Emit electromagnetic waves that disable and cripple all technology with an interface. With training, you can fine-tune them to activate or control electronics instead.
+> (Tag:sound)(Tech) Emit electromagnetic waves that disable and cripple all technology with an interface. With training, you can fine-tune them to activate or control electronics instead.
 
 **Decision**
 
@@ -4193,7 +4243,7 @@
 
 **Description**
 
-> Quicken your body's electrical signals to proportionally increase reflexes and speed. Overuse may cause nerve damage.
+> (Tag:electric)(Tag:sense)Quicken your body's electrical signals to proportionally increase reflexes and speed. Overuse may cause nerve damage.
 
 **Decision**
 
@@ -4210,7 +4260,7 @@
 
 **Description**
 
-> Overhaul your nervous system with your own lightning for near-instant reflexes and extreme speed. It damages your body over time, so extended use is not recommended.
+> (Tag:electric)(Tag:movement)(Tag:sense)Overhaul your nervous system with your own lightning for near-instant reflexes and extreme speed. It damages your body over time, so extended use is not recommended.
 
 **Decision**
 
@@ -4227,7 +4277,7 @@
 
 **Description**
 
-> Create and control electricity at will, from shooting lightning bolts to tweaking your own bioelectricity. You cannot control electromagnetic waves.
+> (Tag:electric)Create and control electricity at will, from shooting lightning bolts to tweaking your own bioelectricity. You cannot control electromagnetic waves.
 
 **Decision**
 
@@ -4244,7 +4294,7 @@
 
 **Description**
 
-> Sense, interact with and control electromagnetism, a fundamental force of the universe, letting you control magnetic objects, create railguns, shoot lightning, tweak bioelectricity and more.
+> (Tag:electric)Sense, interact with and control electromagnetism, a fundamental force of the universe, letting you control magnetic objects, create railguns, shoot lightning, tweak bioelectricity and more.
 
 **Decision**
 
@@ -4261,7 +4311,7 @@
 
 **Description**
 
-> Assign polarity to objects by touch so they attract or repel each other. More energy expended means stronger polarity.
+> (Tag:alter)(Tag:electric)Assign polarity to objects by touch so they attract or repel each other. More energy expended means stronger polarity.
 
 **Decision**
 
@@ -4278,7 +4328,7 @@
 
 **Description**
 
-> Hold complete control over Electromagnetism, a fundamental force of the universe, with unmatched range, power and precision.
+> (Tag:electric)Hold complete control over Electromagnetism, a fundamental force of the universe, with unmatched range, power and precision.
 
 **Decision**
 
@@ -4295,7 +4345,7 @@
 
 **Description**
 
-> Disrupt someone's bioelectricity by touch to stun or paralyze them; with training you can manipulate their bodies further. Stronger opponents are harder to affect.
+> (Tag:electric)Disrupt someone's bioelectricity by touch to stun or paralyze them; with training you can manipulate their bodies further. Stronger opponents are harder to affect.
 
 **Decision**
 
@@ -4312,7 +4362,7 @@
 
 **Description**
 
-> Charge and unleash a breath of devastating lightning waves. Longer charging and more energy mean a stronger breath.
+> (Tag:electric)Charge and unleash a breath of devastating lightning waves. Longer charging and more energy mean a stronger breath.
 
 **Decision**
 
@@ -4329,7 +4379,7 @@
 
 **Description**
 
-> Turn any magnetic object in your grasp into a railgun projectile. Higher mass costs more, and you must aim it.
+> (Tag:electric)Turn any magnetic object in your grasp into a railgun projectile. Higher mass costs more, and you must aim it.
 
 **Decision**
 
@@ -4346,7 +4396,7 @@
 
 **Description**
 
-> Wield and control frozen lightning. Unlike incredibly hot regular lightning, it is proportionally colder, freezing whatever it electrocutes or passes through.
+> (Tag:electric)Wield and control frozen lightning. Unlike incredibly hot regular lightning, it is proportionally colder, freezing whatever it electrocutes or passes through.
 
 **Decision**
 
@@ -4363,7 +4413,7 @@
 
 **Description**
 
-> Conjure a throwable spear of lightning (does not travel at lightning speed) with penetrative power that deals increased damage against draconic entities.
+> (Tag:anti-draconic)(Tag:electric)Conjure a throwable spear of lightning (does not travel at lightning speed) with penetrative power that deals increased damage against draconic entities.
 
 **Decision**
 
@@ -4380,7 +4430,7 @@
 
 **Description**
 
-> Conjure a throwable spear of lightning (does not travel at lightning speed) with penetrative power that deals increased damage against draconic entities, rending their scales and hides and nulling their defence.
+> (Tag:anti-draconic)(Tag:electric)Conjure a throwable spear of lightning (does not travel at lightning speed) with penetrative power that deals increased damage against draconic entities, rending their scales and hides and nulling their defence.
 
 **Decision**
 
@@ -4397,7 +4447,7 @@
 
 **Description**
 
-> Conjure a throwable spear of sun-imbued lightning with penetrative power that deals increased damage against draconic entities and unholy beings.
+> (Tag:anti-draconic)(Tag:electric)(Tag:fire)(Tag:light)Conjure a throwable spear of sun-imbued lightning with penetrative power that deals increased damage against draconic entities and unholy beings.
 
 **Decision**
 
@@ -4414,7 +4464,7 @@
 
 **Description**
 
-> Cloak your body in thunder to increase speed, power and reflexes while imbuing electricity into your attacks.
+> (Tag:buff)(Tag:electric)Cloak your body in thunder to increase speed, power and reflexes while imbuing electricity into your attacks.
 
 **Decision**
 
@@ -4431,7 +4481,7 @@
 
 **Description**
 
-> Cloak your hands in violent sharp electricity that boosts piercing and cutting, turning them into lightning blades.
+> (Tag:buff)(Tag:electric)Cloak your hands in violent sharp electricity that boosts piercing and cutting, turning them into lightning blades.
 
 **Decision**
 
@@ -4448,7 +4498,7 @@
 
 **Description**
 
-> Release a bolt of lightning from your hands at a target that travels at the speed of lightning.
+> (Tag:electric)Release a bolt of lightning from your hands at a target that travels at the speed of lightning.
 
 **Decision**
 
@@ -4465,7 +4515,7 @@
 
 **Description**
 
-> Shift your vision to see electromagnetism and electricity even through walls, instinctively distinguishing and understanding them.
+> (Tag:electric)(Tag:sense)Shift your vision to see electromagnetism and electricity even through walls, instinctively distinguishing and understanding them.
 
 **Decision**
 
@@ -4482,7 +4532,7 @@
 
 **Description**
 
-> Create and control electricity (not kinesis) and use it to slightly enhance your stats. You can sense and see nearby currents even through walls, and ground opponents' lightning with your body.
+> (Tag:electric)(Tag:enhancer)Create and control electricity (not kinesis) and use it to slightly enhance your stats. You can sense and see nearby currents even through walls, and ground opponents' lightning with your body.
 
 **Decision**
 
@@ -4499,7 +4549,7 @@
 
 **Description**
 
-> Manifest a very eye-catching, distracting aura centered on yourself, making you incredibly noticeable in whatever you do.
+> (Tag:alter)Manifest a very eye-catching, distracting aura centered on yourself, making you incredibly noticeable in whatever you do.
 
 **Decision**
 
@@ -4516,7 +4566,7 @@
 
 **Description**
 
-> Create claws of violent lightning over your hands to sever and electrocute enemies simultaneously.
+> (Tag:electric)Create claws of violent lightning over your hands to sever and electrocute enemies simultaneously.
 
 **Decision**
 
@@ -4533,7 +4583,7 @@
 
 **Description**
 
-> Conjure pebbles and small rocks to sling at enemies, minorly inconveniencing them or hurting them if they hit eyes.
+> (Tag:earth)Conjure pebbles and small rocks to sling at enemies, minorly inconveniencing them or hurting them if they hit eyes.
 
 **Decision**
 
@@ -4550,7 +4600,7 @@
 
 **Description**
 
-> Conjure rocks and small stones to launch as projectiles. Not very powerful, but a rock to the head always hurts.
+> (Tag:earth)Conjure rocks and small stones to launch as projectiles. Not very powerful, but a rock to the head always hurts.
 
 **Decision**
 
@@ -4567,7 +4617,7 @@
 
 **Description**
 
-> Conjure rocks and small stones to shoot like bullets with lethal power, making you a living stone gun.
+> (Tag:earth)Conjure rocks and small stones to shoot like bullets with lethal power, making you a living stone gun.
 
 **Decision**
 
@@ -4584,7 +4634,7 @@
 
 **Description**
 
-> Conjure and hurl a large boulder at enemies. Regardless of your strength, its weight does not affect your throwing, whether person-sized or house-sized.
+> (Tag:earth)Conjure and hurl a large boulder at enemies. Regardless of your strength, its weight does not affect your throwing, whether person-sized or house-sized.
 
 **Decision**
 
@@ -4601,7 +4651,7 @@
 
 **Description**
 
-> Conjure multiple small rocks and launch them at lethal speeds.
+> (Tag:earth)Conjure multiple small rocks and launch them at lethal speeds.
 
 **Decision**
 
@@ -4618,7 +4668,7 @@
 
 **Description**
 
-> Conjure lead or other metal bullets from small to high calibre and launch them at supersonic to hypersonic speeds. More energy means higher calibre and speed.
+> (Tag:earth)Conjure lead or other metal bullets from small to high calibre and launch them at supersonic to hypersonic speeds. More energy means higher calibre and speed.
 
 **Decision**
 
@@ -4635,7 +4685,7 @@
 
 **Description**
 
-> Telekinetically move earth in your sensory range. It has little lethal power.
+> (Tag:earth)Telekinetically move earth in your sensory range. It has little lethal power.
 
 **Decision**
 
@@ -4652,7 +4702,7 @@
 
 **Description**
 
-> Turn ground into quicksand that grabs and pulls anyone who steps on it.
+> (Tag:alter)(Tag:earth)Turn ground into quicksand that grabs and pulls anyone who steps on it.
 
 **Decision**
 
@@ -4669,7 +4719,7 @@
 
 **Description**
 
-> Create, control and launch spikes of earth and rock, including erupting them from the ground in sensory range.
+> (Tag:earth)Create, control and launch spikes of earth and rock, including erupting them from the ground in sensory range.
 
 **Decision**
 
@@ -4686,7 +4736,7 @@
 
 **Description**
 
-> Call down meteors from the sky. Size and speed depend on energy expended.
+> (Tag:earth)Call down meteors from the sky. Size and speed depend on energy expended.
 
 **Decision**
 
@@ -4703,7 +4753,7 @@
 
 **Description**
 
-> Create metal chains and shackles that erupt from the earth to bind enemies. They track and chase opponents, making them very hard to dodge.
+> (Tag:earth)Create metal chains and shackles that erupt from the earth to bind enemies. They track and chase opponents, making them very hard to dodge.
 
 **Decision**
 
@@ -4720,7 +4770,7 @@
 
 **Description**
 
-> Create and launch giant boulders at enemies. Regardless of your strength, their weight does not affect your throwing, whether person-sized or house-sized.
+> (Tag:earth)Create and launch giant boulders at enemies. Regardless of your strength, their weight does not affect your throwing, whether person-sized or house-sized.
 
 **Decision**
 
@@ -4737,7 +4787,7 @@
 
 **Description**
 
-> Sprout rock and stone constructs such as walls and pillars from surfaces for defense, terrain or smashing enemies.
+> (Tag:earth)Sprout rock and stone constructs such as walls and pillars from surfaces for defense, terrain or smashing enemies.
 
 **Decision**
 
@@ -4754,7 +4804,7 @@
 
 **Description**
 
-> Manipulate metals on a small but extremely precise scale. You cannot hurl cars, but you could shape gold into an ornate ring with microscopic carvings.
+> (Tag:earth)(Tag:kinesis)Manipulate metals on a small but extremely precise scale. You cannot hurl cars, but you could shape gold into an ornate ring with microscopic carvings.
 
 **Decision**
 
@@ -4771,7 +4821,7 @@
 
 **Description**
 
-> Create earth armour around your body to absorb blows and attacks without impeding mobility or speed.
+> (Tag:earth)Create earth armour around your body to absorb blows and attacks without impeding mobility or speed.
 
 **Decision**
 
@@ -4788,7 +4838,7 @@
 
 **Description**
 
-> Create earthquakes causing massive environmental destruction.
+> (Tag:earth)Create earthquakes causing massive environmental destruction.
 
 **Flagged in reports**
 
@@ -4809,7 +4859,7 @@
 
 **Description**
 
-> Create fissures in objects to shatter or split them. Harder objects need more energy to fissure.
+> (Tag:earth)Create fissures in objects to shatter or split them. Harder objects need more energy to fissure.
 
 **Decision**
 
@@ -4826,7 +4876,7 @@
 
 **Description**
 
-> Telekinetically control and shape metal in sensory range, such as ripping it from buildings into spears, flying on metal bands, or controlling iron-rich blood.
+> (Tag:earth)(Tag:kinesis)Telekinetically control and shape metal in sensory range, such as ripping it from buildings into spears, flying on metal bands, or controlling iron-rich blood.
 
 **Flagged in reports**
 
@@ -4847,7 +4897,7 @@
 
 **Description**
 
-> Telekinetically control earth and rock in your sensory range.
+> (Tag:earth)(Tag:kinesis)Telekinetically control earth and rock in your sensory range.
 
 **Decision**
 
@@ -4864,7 +4914,7 @@
 
 **Description**
 
-> Create very durable reinforced metal armour on your body that enhances endurance. Stronger users form stronger metal, and you can reshape it with concentration.
+> (Tag:enhancer)Create very durable reinforced metal armour on your body that enhances endurance. Stronger users form stronger metal, and you can reshape it with concentration.
 
 **Decision**
 
@@ -4881,7 +4931,7 @@
 
 **Description**
 
-> Create metal such as giant blades, walls and pillars from any non-organic surface. More energy creates more metal.
+> (Tag:earth)Create metal such as giant blades, walls and pillars from any non-organic surface. More energy creates more metal.
 
 **Decision**
 
@@ -4898,7 +4948,7 @@
 
 **Description**
 
-> Telekinetically control iron and iron-based objects in your perception. Control and strength depend on focus and mana spent.
+> (Tag:earth)Telekinetically control iron and iron-based objects in your perception. Control and strength depend on focus and mana spent.
 
 **Decision**
 
@@ -4915,7 +4965,7 @@
 
 **Description**
 
-> Bring down giant meteors for massive devastation and damage. Mass, power and speed depend on energy expended. Quite expensive to use.
+> (Tag:earth)Bring down giant meteors for massive devastation and damage. Mass, power and speed depend on energy expended. Quite expensive to use.
 
 **Decision**
 
@@ -4932,7 +4982,7 @@
 
 **Description**
 
-> Conjure and launch a handful of sand from your hands. Shouting "pocket sand!" while doing so might make it stronger.
+> (Tag:earth)Conjure and launch a handful of sand from your hands. Shouting "pocket sand!" while doing so might make it stronger.
 
 **Decision**
 
@@ -4949,7 +4999,7 @@
 
 **Description**
 
-> Conjure and launch sand from your fingers at non-lethal but painful speeds.
+> (Tag:earth)Conjure and launch sand from your fingers at non-lethal but painful speeds.
 
 **Decision**
 
@@ -4983,7 +5033,7 @@
 
 **Description**
 
-> Launch blasts of high-velocity sand clouds that rend and shred metals and especially flesh.
+> (Tag:earth)Launch blasts of high-velocity sand clouds that rend and shred metals and especially flesh.
 
 **Decision**
 
@@ -5000,7 +5050,7 @@
 
 **Description**
 
-> Conjure violent sand and dust clouds to launch in immensely powerful sandblast-like bursts that shred targets.
+> (Tag:earth)Conjure violent sand and dust clouds to launch in immensely powerful sandblast-like bursts that shred targets.
 
 **Decision**
 
@@ -5017,7 +5067,7 @@
 
 **Description**
 
-> Control earth, dust and sand in sensory range to unleash giant sand blasts, launch jagged boulders and erupt stalagmites.
+> (Tag:earth)Control earth, dust and sand in sensory range to unleash giant sand blasts, launch jagged boulders and erupt stalagmites.
 
 **Decision**
 
@@ -5034,7 +5084,7 @@
 
 **Description**
 
-> Control earth, dust and sand to extreme levels. It lacks precision but holds unbelievable destructive power.
+> (Tag:earth)Control earth, dust and sand to extreme levels. It lacks precision but holds unbelievable destructive power.
 
 **Decision**
 
@@ -5051,7 +5101,7 @@
 
 **Description**
 
-> Karura's blessing is an autonomous sand shield that protects from danger automatically without consuming mana.
+> (Tag:earth)(Tag:passive)Karura's blessing is an autonomous sand shield that protects from danger automatically without consuming mana.
 
 **Decision**
 
@@ -5068,7 +5118,7 @@
 
 **Description**
 
-> Instantly bury any ground-touching target underground, suffocating and crushing them. Burying a corpse prevents necromancy and revival on them.
+> (Tag:alter)(Tag:anti-immortal)(Tag:earth)Instantly bury any ground-touching target underground, suffocating and crushing them. Burying a corpse prevents necromancy and revival on them.
 
 **Decision**
 
@@ -5085,7 +5135,7 @@
 
 **Description**
 
-> Conjure and command Lesser Earth Elementals from your energy, such as Mudmen, Stone Golems, Sand and Claymen, for earth-based magic and similar effects. You can only conjure elementals at or below Uncommon familiar power, with power, shape and ability set by your expertise and level. They drain your energy to persist and act and vanish if supply stops, though sufficient time, energy and skills can make them permanent; elementals do not count as Familiars.
+> (Tag:earth)(Tag:summon)Conjure and command Lesser Earth Elementals from your energy, such as Mudmen, Stone Golems, Sand and Claymen, for earth-based magic and similar effects. You can only conjure elementals at or below Uncommon familiar power, with power, shape and ability set by your expertise and level. They drain your energy to persist and act and vanish if supply stops, though sufficient time, energy and skills can make them permanent; elementals do not count as Familiars.
 
 **Decision**
 
@@ -5102,7 +5152,7 @@
 
 **Description**
 
-> Conjure and command Earth Elementals from your energy, such as Earth Sprites, Iron Golems and Stone Atronachs, for earth-based magic and similar effects. You can only conjure elementals at or below Rare Familiar power, with power, shape and ability set by your expertise and level. They drain your energy to persist and act and vanish if supply stops, though sufficient time, energy and skills can make them permanent; elementals do not count as Familiars.
+> (Tag:construct)(Tag:earth)(Tag:summon)Conjure and command Earth Elementals from your energy, such as Earth Sprites, Iron Golems and Stone Atronachs, for earth-based magic and similar effects. You can only conjure elementals at or below Rare Familiar power, with power, shape and ability set by your expertise and level. They drain your energy to persist and act and vanish if supply stops, though sufficient time, energy and skills can make them permanent; elementals do not count as Familiars.
 
 **Decision**
 
@@ -5119,7 +5169,7 @@
 
 **Description**
 
-> Conjure and command powerful Greater Earth Elementals from your energy, such as Diamond Golems, Regirocks and Elder Magma Elementals (DnD), for earth-based magic and other abilities. You can only conjure elementals at or below Elite Familiar power, with power, shape and ability set by your expertise and level. They drain your energy to persist and act and vanish if supply stops, though sufficient time, energy and skills can make them permanent; elementals do not count as Familiars.
+> (Tag:earth)(Tag:summon)Conjure and command powerful Greater Earth Elementals from your energy, such as Diamond Golems, Regirocks and Elder Magma Elementals (DnD), for earth-based magic and other abilities. You can only conjure elementals at or below Elite Familiar power, with power, shape and ability set by your expertise and level. They drain your energy to persist and act and vanish if supply stops, though sufficient time, energy and skills can make them permanent; elementals do not count as Familiars.
 
 **Decision**
 
@@ -5136,7 +5186,7 @@
 
 **Description**
 
-> Animate and command golems of earth, mud, sand or metal. More durable, powerful golems cost more. Make them temporary for less energy or permanent for very high cost.
+> (Tag:construct)(Tag:earth)(Tag:summon)Animate and command golems of earth, mud, sand or metal. More durable, powerful golems cost more. Make them temporary for less energy or permanent for very high cost.
 
 **Decision**
 
@@ -5153,7 +5203,7 @@
 
 **Description**
 
-> Fuse with earth to form gigantic kaiju-proportioned armour around yourself. Bigger armour expends more energy.
+> (Tag:earth)Fuse with earth to form gigantic kaiju-proportioned armour around yourself. Bigger armour expends more energy.
 
 **Decision**
 
@@ -5170,7 +5220,7 @@
 
 **Description**
 
-> Create a golem around yourself from ground beneath your feet or materials you touch, acting as armour that enhances physical stats.
+> (Tag:construct)(Tag:earth)(Tag:enhancer)Create a golem around yourself from ground beneath your feet or materials you touch, acting as armour that enhances physical stats.
 
 **Decision**
 
@@ -5187,7 +5237,7 @@
 
 **Description**
 
-> Unleash stalagmite blades that erupt from the ground to impale enemies.
+> (Tag:earth)Unleash stalagmite blades that erupt from the ground to impale enemies.
 
 **Decision**
 
@@ -5221,7 +5271,7 @@
 
 **Description**
 
-> Control the shape and form of all metals you touch.
+> (Tag:earth)(Tag:kinesis)Control the shape and form of all metals you touch.
 
 **Decision**
 
@@ -5238,7 +5288,7 @@
 
 **Description**
 
-> Conjure and control mud to create swamps underfoot or bombard opponents.
+> (Tag:earth)(Tag:water)Conjure and control mud to create swamps underfoot or bombard opponents.
 
 **Decision**
 
@@ -5255,7 +5305,7 @@
 
 **Description**
 
-> Create crystals to shoot as projectiles. Larger, faster crystals expend more energy.
+> (Tag:earth)Create crystals to shoot as projectiles. Larger, faster crystals expend more energy.
 
 **Decision**
 
@@ -5272,7 +5322,7 @@
 
 **Description**
 
-> Create durable but brittle crystal spikes from the ground or any touched surface to impale opponents or serve as barriers.
+> (Tag:earth)Create durable but brittle crystal spikes from the ground or any touched surface to impale opponents or serve as barriers.
 
 **Decision**
 
@@ -5289,7 +5339,7 @@
 
 **Description**
 
-> Cover your body in diamond-like texture, massively boosting durability and mass against all damage. Even as a base human you shrug off high-calibre bullets, tank shells, car impacts and fire unfelt, and even a missile cannot kill you though it hurts.
+> (Tag:enhancer)Cover your body in diamond-like texture, massively boosting durability and mass against all damage. Even as a base human you shrug off high-calibre bullets, tank shells, car impacts and fire unfelt, and even a missile cannot kill you though it hurts.
 
 **Decision**
 
@@ -5306,7 +5356,7 @@
 
 **Description**
 
-> Create crystals on your body or touched surfaces, controlling shape and size during creation but unable to alter them afterward.
+> (Tag:earth)Create crystals on your body or touched surfaces, controlling shape and size during creation but unable to alter them afterward.
 
 **Decision**
 
@@ -5323,7 +5373,7 @@
 
 **Description**
 
-> Create and sprout crystals from your body as spikes, skin armour, or cash to sell. (AUTHOR NOTE: Crystal refers to a nebulous crystalline structure that is durable, not allowing you to make ANY type of crystalline structure.)
+> (Tag:earth)Create and sprout crystals from your body as spikes, skin armour, or cash to sell. (AUTHOR NOTE: Crystal refers to a nebulous crystalline structure that is durable, not allowing you to make ANY type of crystalline structure.)
 
 **Decision**
 
@@ -5340,7 +5390,7 @@
 
 **Description**
 
-> Create precious gems that hold much energy or mana. Larger, more valuable gems cost more energy.
+> (Tag:earth)Create precious gems that hold much energy or mana. Larger, more valuable gems cost more energy.
 
 **Decision**
 
@@ -5357,7 +5407,7 @@
 
 **Description**
 
-> Create pure precious gems that hold immense energy and serve as vessels. Purer, more potent gems cost more energy.
+> (Tag:earth)Create pure precious gems that hold immense energy and serve as vessels. Purer, more potent gems cost more energy.
 
 **Decision**
 
@@ -5374,7 +5424,7 @@
 
 **Description**
 
-> Create a small localized sandstorm on your location that hides your presence inside it while you see through it freely.
+> (Tag:earth)Create a small localized sandstorm on your location that hides your presence inside it while you see through it freely.
 
 **Decision**
 
@@ -5391,7 +5441,7 @@
 
 **Description**
 
-> Conjure autonomous sand that shapeshifts, attacks and defends without input to protect you, eliminate enemies or provide utility.
+> (Tag:earth)Conjure autonomous sand that shapeshifts, attacks and defends without input to protect you, eliminate enemies or provide utility.
 
 **Decision**
 
@@ -5408,7 +5458,7 @@
 
 **Description**
 
-> Create sand-and-wind weapons and attacks such as giant sand blades, spears and hammers to unleash as projectiles.
+> (Tag:earth)Create sand-and-wind weapons and attacks such as giant sand blades, spears and hammers to unleash as projectiles.
 
 **Decision**
 
@@ -5425,7 +5475,7 @@
 
 **Description**
 
-> Turn your body into a living sand cloud and reform at will. Damage to the sand reflects onto you.
+> (Tag:earth)(Tag:transformation)Turn your body into a living sand cloud and reform at will. Damage to the sand reflects onto you.
 
 **Decision**
 
@@ -5442,7 +5492,7 @@
 
 **Description**
 
-> Dig and move underground incredibly fast like a mole, breathing underground too. You dig faster than you sprint.
+> (Tag:earth)(Tag:movement)Dig and move underground incredibly fast like a mole, breathing underground too. You dig faster than you sprint.
 
 **Decision**
 
@@ -5459,7 +5509,7 @@
 
 **Description**
 
-> Detect metals around you like mental radar. More valuable metals register more distinctly.
+> (Tag:divination)(Tag:earth)Detect metals around you like mental radar. More valuable metals register more distinctly.
 
 **Decision**
 
@@ -5476,7 +5526,7 @@
 
 **Description**
 
-> Share vision with earth to feel it and locate everything inside it. Default range 5km, increasable with training.
+> (Tag:earth)(Tag:sense)Share vision with earth to feel it and locate everything inside it. Default range 5km, increasable with training.
 
 **Flagged in reports**
 
@@ -5497,7 +5547,7 @@
 
 **Description**
 
-> Create and control metal wires; control ends once a wire separates from your body. You can reinforce wires with energy for extra durability.
+> (Tag:earth)Create and control metal wires; control ends once a wire separates from your body. You can reinforce wires with energy for extra durability.
 
 **Decision**
 
@@ -5514,7 +5564,7 @@
 
 **Description**
 
-> Fuse with earth for complete terrain control: shape, move, and reform it, or form a giant golem around yourself.
+> (Tag:earth)(Tag:transformation)Fuse with earth for complete terrain control: shape, move, and reform it, or form a giant golem around yourself.
 
 **Decision**
 
@@ -5531,7 +5581,7 @@
 
 **Description**
 
-> Create, control, and turn into sand. You can also drain moisture to dry objects and turn stone into sand.
+> (Tag:earth)(Tag:transformation)Create, control, and turn into sand. You can also drain moisture to dry objects and turn stone into sand.
 
 **Decision**
 
@@ -5548,7 +5598,7 @@
 
 **Description**
 
-> Banish all light from an area, making mundane sight nigh impossible. Larger areas cost more energy.
+> (Tag:dark)(Tag:illusion)Banish all light from an area, making mundane sight nigh impossible. Larger areas cost more energy.
 
 **Decision**
 
@@ -5565,7 +5615,7 @@
 
 **Description**
 
-> Sink into shadows and travel within them like Black Sabbath from JoJo. Sunlight while inside burns you and deals damage.
+> (Tag:dark)(Tag:movement)Sink into shadows and travel within them like Black Sabbath from JoJo. Sunlight while inside burns you and deals damage.
 
 **Decision**
 
@@ -5582,7 +5632,7 @@
 
 **Description**
 
-> Manifest controllable floating hands of shadow. They can grip, crush, slash, and combine into larger, stronger forms.
+> (Tag:dark)Manifest controllable floating hands of shadow. They can grip, crush, slash, and combine into larger, stronger forms.
 
 **Decision**
 
@@ -5599,7 +5649,7 @@
 
 **Description**
 
-> Move your shadow as a living, attacking creature. Those who step on it rapidly de-age until you are unconscious or deactivate it; stronger opponents de-age slower.
+> (Tag:alter)(Tag:dark)(Tag:time)Move your shadow as a living, attacking creature. Those who step on it rapidly de-age until you are unconscious or deactivate it; stronger opponents de-age slower.
 
 **Flagged in reports**
 
@@ -5620,7 +5670,7 @@
 
 **Description**
 
-> Extend your shadow; when it touches a target's shadow, their movements mimic yours until dispelled.
+> (Tag:dark)Extend your shadow; when it touches a target's shadow, their movements mimic yours until dispelled.
 
 **Flagged in reports**
 
@@ -5641,7 +5691,7 @@
 
 **Description**
 
-> Treat people's shadows as tangible; step on or pin them to stop escape, or grab and pull targets toward you.
+> (Tag:dark)Treat people's shadows as tangible; step on or pin them to stop escape, or grab and pull targets toward you.
 
 **Decision**
 
@@ -5658,7 +5708,7 @@
 
 **Description**
 
-> Conjure and launch silent shadow darts made of energy.
+> (Tag:dark)Conjure and launch silent shadow darts made of energy.
 
 **Decision**
 
@@ -5675,7 +5725,7 @@
 
 **Description**
 
-> Cloak yourself in shadows to blur perception and muffle sound, enhancing stealth.
+> (Tag:dark)(Tag:stealth)Cloak yourself in shadows to blur perception and muffle sound, enhancing stealth.
 
 **Decision**
 
@@ -5692,7 +5742,7 @@
 
 **Description**
 
-> Enter a shadow state with your equipment to phase through solid matter. With training, unphase bolts inside targets to bypass durability. Shadow form is highly vulnerable to electricity and aerosols.
+> (Tag:dark)(Tag:movement)(Tag:transformation)Enter a shadow state with your equipment to phase through solid matter. With training, unphase bolts inside targets to bypass durability. Shadow form is highly vulnerable to electricity and aerosols.
 
 **Decision**
 
@@ -5709,7 +5759,7 @@
 
 **Description**
 
-> Conjure and launch a fast, destructive shadow orb that deals extra damage to spirits.
+> (Tag:dark)Conjure and launch a fast, destructive shadow orb that deals extra damage to spirits.
 
 **Decision**
 
@@ -5726,7 +5776,7 @@
 
 **Description**
 
-> Conjure a lightweight, very sharp shadow blade with adjustable size and shape. It ignores around 10% of target durability, always dealing some damage.
+> (Tag:dark)(Tag:martial)Conjure a lightweight, very sharp shadow blade with adjustable size and shape. It ignores around 10% of target durability, always dealing some damage.
 
 **Decision**
 
@@ -5743,7 +5793,7 @@
 
 **Description**
 
-> Conjure a shadow scythe with adjustable size and shape. It cuts only what you will it to and ignores a portion of target durability.
+> (Tag:dark)(Tag:martial)Conjure a shadow scythe with adjustable size and shape. It cuts only what you will it to and ignores a portion of target durability.
 
 **Decision**
 
@@ -5760,7 +5810,7 @@
 
 **Description**
 
-> Conjure a pure-darkness scythe with adjustable size and shape. It fully ignores physical objects and barriers and blocks regeneration and resurrection from its wounds, but drains your energy in proportion to what you cut.
+> (Tag:anti-recovery)(Tag:dark)(Tag:martial)Conjure a pure-darkness scythe with adjustable size and shape. It fully ignores physical objects and barriers and blocks regeneration and resurrection from its wounds, but drains your energy in proportion to what you cut.
 
 **Decision**
 
@@ -5777,7 +5827,7 @@
 
 **Description**
 
-> Call forth death's instrument, a pitch-black scythe ignoring all physical and magical durability. Its wounds strike body and soul and cannot be healed by mundane means.
+> (Tag:anti-recovery)(Tag:dark)(Tag:martial)Call forth death's instrument, a pitch-black scythe ignoring all physical and magical durability. Its wounds strike body and soul and cannot be healed by mundane means.
 
 **Decision**
 
@@ -5794,7 +5844,7 @@
 
 **Description**
 
-> Turn surrounding ground into a bottomless swamp that traps and sinks steppers. Fully submerged targets are incapacitated in a stasis-like state.
+> (Tag:alter)(Tag:dark)Turn surrounding ground into a bottomless swamp that traps and sinks steppers. Fully submerged targets are incapacitated in a stasis-like state.
 
 **Decision**
 
@@ -5811,7 +5861,7 @@
 
 **Description**
 
-> Conjure and launch dark-energy spears that deal extra damage to holy and divine beings.
+> (Tag:anti-holy)(Tag:dark)Conjure and launch dark-energy spears that deal extra damage to holy and divine beings.
 
 **Decision**
 
@@ -5828,7 +5878,7 @@
 
 **Description**
 
-> Extend your shadow across 2D surfaces to sink objects into stasis storage. No weight limit; stored objects can be ejected anytime.
+> (Tag:dark)(Tag:space)Extend your shadow across 2D surfaces to sink objects into stasis storage. No weight limit; stored objects can be ejected anytime.
 
 **Decision**
 
@@ -5845,7 +5895,7 @@
 
 **Description**
 
-> Conjure sharp, lightweight Shadow Claws over your hands for slashing. Training extends their length and sharpness.
+> (Tag:dark)(Tag:martial)Conjure sharp, lightweight Shadow Claws over your hands for slashing. Training extends their length and sharpness.
 
 **Decision**
 
@@ -5862,7 +5912,7 @@
 
 **Description**
 
-> Create and control chains woven from your shadow. Snared enemies rapidly lose energy.
+> (Tag:anti-recovery)(Tag:dark)Create and control chains woven from your shadow. Snared enemies rapidly lose energy.
 
 **Decision**
 
@@ -5879,7 +5929,7 @@
 
 **Description**
 
-> Curse opponents to block sight via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be blinded permanently.
+> (Tag:curse)(Tag:debuff)Curse opponents to block sight via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be blinded permanently.
 
 **Decision**
 
@@ -5896,7 +5946,7 @@
 
 **Description**
 
-> Create a darkness cloud that blots out the senses of those inside, making perception extremely difficult. Strong targets partially resist.
+> (Tag:dark)(Tag:illusion)Create a darkness cloud that blots out the senses of those inside, making perception extremely difficult. Strong targets partially resist.
 
 **Decision**
 
@@ -5913,7 +5963,7 @@
 
 **Description**
 
-> Curse opponents to block hearing via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be deafened permanently.
+> (Tag:curse)(Tag:debuff)Curse opponents to block hearing via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be deafened permanently.
 
 **Decision**
 
@@ -5930,7 +5980,7 @@
 
 **Description**
 
-> Curse opponents to block touch via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be numbed permanently.
+> (Tag:curse)(Tag:debuff)Curse opponents to block touch via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be numbed permanently.
 
 **Decision**
 
@@ -5947,7 +5997,7 @@
 
 **Description**
 
-> Curse opponents to block speech via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; irresistible targets can be muted permanently.
+> (Tag:curse)(Tag:debuff)Curse opponents to block speech via touch or a thrown rune-like hex, a moderately fast projectile. Duration depends on magic resistance; targets that cannot resist it can be muted permanently.
 
 **Decision**
 
@@ -5964,7 +6014,7 @@
 
 **Description**
 
-> Conjure a temporary autonomous shadow familiar. Its power scales with energy spent.
+> (Tag:dark)(Tag:summon)Conjure a temporary autonomous shadow familiar. Its power scales with energy spent.
 
 **Decision**
 
@@ -5981,7 +6031,7 @@
 
 **Description**
 
-> Summon a gigantic 10-meter darkness gate to unleash a controlled horde of shadow beasts. More energy yields more beasts.
+> (Tag:dark)(Tag:summon)Summon a gigantic 10-meter darkness gate to unleash a controlled horde of shadow beasts. More energy yields more beasts.
 
 **Decision**
 
@@ -5998,7 +6048,7 @@
 
 **Description**
 
-> Conjure and unleash dark-energy lances, exceptionally lethal to holy beings. Their wounds are difficult to heal.
+> (Tag:anti-holy)(Tag:anti-recovery)(Tag:dark)Conjure and unleash dark-energy lances, exceptionally lethal to holy beings. Their wounds are difficult to heal.
 
 **Decision**
 
@@ -6015,7 +6065,7 @@
 
 **Description**
 
-> Reality Marble - Pull targets into the Abyss, which rapidly drains their energy and vitality. All dark abilities are boosted inside.
+> (Tag:alter)(Tag:buff)(Tag:dark)(Tag:debuff)Reality Marble - Pull targets into the Abyss, which rapidly drains their energy and vitality. All dark abilities are boosted inside.
 
 **Decision**
 
@@ -6032,7 +6082,7 @@
 
 **Description**
 
-> Conjure and control void tendrils to grapple, crush, whip, and pierce. You can share sensation with them.
+> (Tag:dark)Conjure and control void tendrils to grapple, crush, whip, and pierce. You can share sensation with them.
 
 **Decision**
 
@@ -6049,7 +6099,7 @@
 
 **Description**
 
-> Briefly shift into shadow to phase through attacks and magic. Weak only to light and holy magic; limited to 1 second at a time with a 3-second cooldown.
+> (Tag:dark)(Tag:movement)(Tag:transformation)Briefly shift into shadow to phase through attacks and magic. Weak only to light and holy magic; limited to 1 second at a time with a 3-second cooldown.
 
 **Decision**
 
@@ -6066,7 +6116,7 @@
 
 **Description**
 
-> Create and apply curses based on your abilities. E.g. light becomes blinding, strength becomes weakness, etc.
+> (Tag:curse)(Tag:debuff)Create and apply curses based on your abilities. E.g. light becomes blinding, strength becomes weakness, etc.
 
 **Flagged in reports**
 
@@ -6087,7 +6137,7 @@
 
 **Description**
 
-> As the fear of darkness incarnate, hold authority over all darkness and shadows to control them at will.
+> (Tag:dark)(Tag:infernal)As the fear of darkness incarnate, hold authority over all darkness and shadows to control them at will.
 
 **Decision**
 
@@ -6104,7 +6154,7 @@
 
 **Description**
 
-> Conjure and control weaker small-scale virtual black holes. With training, you can conjure real black holes.
+> (Tag:dark)(Tag:gravity)Conjure and control weaker small-scale virtual black holes. With training, you can conjure real black holes.
 
 **Flagged in reports**
 
@@ -6125,7 +6175,7 @@
 
 **Description**
 
-> Charge and unleash erosive void breath that drains the energy of what it touches. Longer charge and more energy mean a stronger breath.
+> (Tag:dark)(Tag:draconic)(Tag:space)Charge and unleash erosive void breath that drains the energy of what it touches. Longer charge and more energy mean a stronger breath.
 
 **Decision**
 
@@ -6138,11 +6188,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 1.5 | Common | Generic |
+| 1.5 | Common | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Conjure controlled clones of yourself that cannot interact with the world and serve as distractions.
+> (Tag:dark)(Tag:illusion)(Tag:summon)Conjure controlled clones of yourself that cannot interact with the world and serve as distractions.
 
 **Decision**
 
@@ -6155,11 +6205,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 3.9 | Rare | Generic |
+| 3.9 | Rare | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Slip into the void dimension to traverse space without interacting with the real world; time flows slower there. Distance covered equals real distance for short-range teleportation. 30-second stay, increasable with training. 5 Minute cooldown.
+> (Tag:dark)(Tag:movement)(Tag:space)Slip into the void dimension to traverse space without interacting with the real world; time flows slower there. Distance covered equals real distance for short-range teleportation. 30-second stay, increasable with training. 5 Minute cooldown.
 
 **Decision**
 
@@ -6172,11 +6222,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.1 | Epic | Generic |
+| 5.1 | Epic | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Release physical form to become a Void Observer, a sentient grey energy cloud that slips into the void at will, intangible yet able to observe reality. Staying inside slowly drains energy and grants near-immunity to physical force, but damage taken reflects onto your real body.
+> (Tag:dark)(Tag:movement)(Tag:space)(Tag:transformation)Release physical form to become a Void Observer, a sentient grey energy cloud that slips into the void at will, intangible yet able to observe reality. Staying inside slowly drains energy and grants near-immunity to physical force, but damage taken reflects onto your real body.
 
 **Decision**
 
@@ -6189,11 +6239,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.4 | Legendary | Generic |
+| 6.4 | Legendary | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Open gates to the Void Dimension to traverse it, banish entities inside, or bring entities out. Use with caution.
+> (Tag:dark)Open gates to the Void Dimension to traverse it, banish entities inside, or bring entities out. Use with caution.
 
 **Decision**
 
@@ -6206,11 +6256,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.9 | Epic | Generic |
+| 5.9 | Epic | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Transform into a Void Distorter, a Void-native being that distorts and shapes void to ravage the natural world with spatial distortions. Can also use Void Travel.
+> (Tag:alter)(Tag:dark)(Tag:transformation)Transform into a Void Distorter, a Void-native being that distorts and shapes void to ravage the natural world with spatial distortions. Can also use Void Travel.
 
 **Decision**
 
@@ -6227,7 +6277,7 @@
 
 **Description**
 
-> Manifest Abyss in the natural world to trap entities in a localized Abyss that isolates and drains their energy and vitality. Breaking out by force is possible but incredibly difficult.
+> (Tag:dark)Manifest Abyss in the natural world to trap entities in a localized Abyss that isolates and drains their energy and vitality. Breaking out by force is possible but incredibly difficult.
 
 **Decision**
 
@@ -6244,7 +6294,7 @@
 
 **Description**
 
-> Cover your skin in Abyss for potent defense with no offensive benefit. It dissipates contacted energy, including kinetic and heat, but sudden powerful attacks can bypass absorption.
+> (Tag:dark)(Tag:enhancer)(Tag:space)Cover your skin in Abyss for potent defense with no offensive benefit. It dissipates contacted energy, including kinetic and heat, but sudden powerful attacks can bypass absorption.
 
 **Decision**
 
@@ -6261,7 +6311,7 @@
 
 **Description**
 
-> Shroud surroundings in ominous darkness with rouge clouds, boosting dark abilities and infernal beings while weakening all Holy beings and abilities.
+> (Tag:alter)(Tag:buff)(Tag:dark)(Tag:debuff)Shroud surroundings in ominous darkness with rouge clouds, boosting dark abilities and infernal beings while weakening all Holy beings and abilities.
 
 **Decision**
 
@@ -6278,7 +6328,7 @@
 
 **Description**
 
-> Create, control, and turn into Darkness at will. It can absorb and store anything but amplifies your sense of pain.
+> (Tag:dark)Create, control, and turn into Darkness at will. It can absorb and store anything but amplifies your sense of pain.
 
 **Decision**
 
@@ -6295,7 +6345,7 @@
 
 **Description**
 
-> Conjure small eye-shaped shadow familiars that autonomously observe and relay information. They have no combat ability but hide potently.
+> (Tag:dark)(Tag:summon)Conjure small eye-shaped shadow familiars that autonomously observe and relay information. They have no combat ability but hide potently.
 
 **Decision**
 
@@ -6312,7 +6362,7 @@
 
 **Description**
 
-> Turn into a giant amorphous shadow monster like Dark Shadow from MHA. Greatly vulnerable to holy and light effects.
+> (Tag:dark)Turn into a giant amorphous shadow monster like Dark Shadow from MHA. Greatly vulnerable to holy and light effects.
 
 **Decision**
 
@@ -6329,7 +6379,7 @@
 
 **Description**
 
-> Create lightweight, very durable shadow armor with freely alterable shape. While active, it boosts physical abilities and darkness abilities.
+> (Tag:dark)(Tag:enhancer)Create lightweight, very durable shadow armor with freely alterable shape. While active, it boosts physical abilities and darkness abilities.
 
 **Decision**
 
@@ -6346,7 +6396,7 @@
 
 **Description**
 
-> Weave shadow and darkness into physical form and control it, such as shadow chains, spikes from a target's shadow, or darkness lances.
+> (Tag:dark)(Tag:kinesis)Weave shadow and darkness into physical form and control it, such as shadow chains, spikes from a target's shadow, or darkness lances.
 
 **Decision**
 
@@ -6363,7 +6413,7 @@
 
 **Description**
 
-> Weave Abyss into a physical barrier that absorbs and dissipates energy. Nigh unbreakable without overwhelming force, except against holy attacks.
+> (Tag:dark)(Tag:space)Weave Abyss into a physical barrier that absorbs and dissipates energy. Nigh unbreakable without overwhelming force, except against holy attacks.
 
 **Decision**
 
@@ -6380,7 +6430,7 @@
 
 **Description**
 
-> Extract shadows from corpses as commanded minions, immortal while restored by your mana. Raisable level and stored count depend on your energy.
+> (Tag:dark)Extract shadows from corpses as commanded minions, immortal while restored by your mana. Raisable level and stored count depend on your energy.
 
 **Flagged in reports**
 
@@ -6401,7 +6451,7 @@
 
 **Description**
 
-> Emit a moderate-intensity light beam from your hands. A handy flashlight replacement with little other use.
+> (Tag:light)Emit a moderate-intensity light beam from your hands. A handy flashlight replacement with little other use.
 
 **Decision**
 
@@ -6418,7 +6468,7 @@
 
 **Description**
 
-> Emit bright blinding light from your hands, or dimmer light for utility. Ineffective beyond close range.
+> (Tag:light)Emit bright blinding light from your hands, or dimmer light for utility. Ineffective beyond close range.
 
 **Decision**
 
@@ -6435,7 +6485,7 @@
 
 **Description**
 
-> Conjure telekinetically controlled points of bright light. Extra energy makes them semi-permanent.
+> (Tag:light)Conjure telekinetically controlled points of bright light. Extra energy makes them semi-permanent.
 
 **Decision**
 
@@ -6452,7 +6502,7 @@
 
 **Description**
 
-> Conjure and emit exorcising light, useless against normal beings but highly effective against dark or unholy beings.
+> (Tag:holy)(Tag:light)Conjure and emit exorcising light, useless against normal beings but highly effective against dark or unholy beings.
 
 **Decision**
 
@@ -6469,7 +6519,7 @@
 
 **Description**
 
-> Bend light around yourself or a touched object to render it invisible.
+> (Tag:light)(Tag:stealth)Bend light around yourself or a touched object to render it invisible.
 
 **Decision**
 
@@ -6486,7 +6536,7 @@
 
 **Description**
 
-> Conjure a light ball that bursts into blinding flash and noise, disorienting enemies and heavily harming dark enemies.
+> (Tag:light)Conjure a light ball that bursts into blinding flash and noise, disorienting enemies and heavily harming dark enemies.
 
 **Decision**
 
@@ -6503,7 +6553,7 @@
 
 **Description**
 
-> Call victorious light from the heavens to bolster allies. Those touched gain slightly increased physical stats, mental resistance, vigor, and courage.
+> (Tag:buff)(Tag:light)(Tag:martial)(Tag:mental)Call victorious light from the heavens to bolster allies. Those touched gain slightly increased physical stats, mental resistance, vigor, and courage.
 
 **Decision**
 
@@ -6520,7 +6570,7 @@
 
 **Description**
 
-> Conjure and launch a fast, powerful grenade of exploding light energy.
+> (Tag:light)Conjure and launch a fast, powerful grenade of exploding light energy.
 
 **Decision**
 
@@ -6537,7 +6587,7 @@
 
 **Description**
 
-> Shoot a near-instant beam of concentrated light and heat from your fingers.
+> (Tag:light)Shoot a near-instant beam of concentrated light and heat from your fingers.
 
 **Decision**
 
@@ -6554,7 +6604,7 @@
 
 **Description**
 
-> Grant a minor blessing of Holy Energy that slightly augments one chosen physical stat: Vitality, Strength, Resilience, Agility, stamina. Lasts one hour; only one blessing per target.
+> (Tag:buff)(Tag:holy)Grant a minor blessing of Holy Energy that slightly augments one chosen physical stat: Vitality, Strength, Resilience, Agility, stamina. Lasts one hour; only one blessing per target.
 
 **Decision**
 
@@ -6571,7 +6621,7 @@
 
 **Description**
 
-> Grant a Holy Energy blessing: Augmentation (augments a chosen stat like strength, resilience, vitality, etc.), Might (slightly augments all attributes), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
+> (Tag:buff)(Tag:holy)Grant a Holy Energy blessing: Augmentation (augments a chosen stat like strength, resilience, vitality, etc.), Might (slightly augments all attributes), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
 
 **Decision**
 
@@ -6588,7 +6638,7 @@
 
 **Description**
 
-> Grant a greater Holy Energy blessing: Augmentation (significantly augments a chosen stat like strength, resiliency, vitality, regeneration, etc.), Boost (augments all attributes for more energy), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
+> (Tag:buff)(Tag:holy)Grant a greater Holy Energy blessing: Augmentation (significantly augments a chosen stat like strength, resiliency, vitality, regeneration, etc.), Boost (augments all attributes for more energy), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
 
 **Decision**
 
@@ -6605,7 +6655,7 @@
 
 **Description**
 
-> Bestow blessings once an hour for one hour: Recovery (Rare Rank Regeneration plus cure of all non-inborn ailments), Might (increases all attributes), or Warding (cleanses curses and raises resistances). Blessings can also mimic abilities, e.g. Ignite grants fire resistance and affinity.
+> (Tag:buff)(Tag:fire)(Tag:holy)Bestow blessings once an hour for one hour: Recovery (Rare Rank Regeneration plus cure of all non-inborn ailments), Might (increases all attributes), or Warding (cleanses curses and raises resistances). Blessings can also mimic abilities, e.g. Ignite grants fire resistance and affinity.
 
 **Decision**
 
@@ -6622,7 +6672,7 @@
 
 **Description**
 
-> Regress causality to return something to its original or intended form while dispelling all negative status. Greater regression costs more energy.
+> (Tag:alter)(Tag:holy)(Tag:recovery)Regress causality to return something to its original or intended form while dispelling all negative status. Greater regression costs more energy.
 
 **Decision**
 
@@ -6639,7 +6689,7 @@
 
 **Description**
 
-> Conjure and launch a sharp searing light disc that returns in an arc.
+> (Tag:light)Conjure and launch a sharp searing light disc that returns in an arc.
 
 **Decision**
 
@@ -6656,7 +6706,7 @@
 
 **Description**
 
-> Grace light creates a visible-only-to-you path toward your objective or something aiding it.
+> (Tag:divination)(Tag:holy)Grace light creates a visible-only-to-you path toward your objective or something aiding it.
 
 **Decision**
 
@@ -6673,7 +6723,7 @@
 
 **Description**
 
-> Create an easily deployed light-magic barrier. Less sturdy, but strong against curses, spirits, and negative status.
+> (Tag:light)Create an easily deployed light-magic barrier. Less sturdy, but strong against curses, spirits, and negative status.
 
 **Decision**
 
@@ -6690,7 +6740,7 @@
 
 **Description**
 
-> Create strong, lightweight hard-light weapons that deal extra damage to dark-aligned foes. They lack durability and fade when damaged.
+> (Tag:light)(Tag:martial)Create strong, lightweight hard-light weapons that deal extra damage to dark-aligned foes. They lack durability and fade when damaged.
 
 **Decision**
 
@@ -6707,7 +6757,7 @@
 
 **Description**
 
-> Rain holy-light weapons from the sky, from swords and glaives to skyscraper-sized lances, scaling with energy spent.
+> (Tag:holy)(Tag:light)Rain holy-light weapons from the sky, from swords and glaives to skyscraper-sized lances, scaling with energy spent.
 
 **Decision**
 
@@ -6724,7 +6774,7 @@
 
 **Description**
 
-> Create a sky spotlight compelling anyone caught to truthfully answer questions asked. You are immune.
+> (Tag:command)(Tag:light)Create a sky spotlight compelling anyone caught to truthfully answer questions asked. You are immune.
 
 **Flagged in reports**
 
@@ -6745,7 +6795,7 @@
 
 **Description**
 
-> Bathe a target in purifying light to cleanse negative effects and foreign substances. Potency scales with energy.
+> (Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in purifying light to cleanse negative effects and foreign substances. Potency scales with energy.
 
 **Decision**
 
@@ -6762,7 +6812,7 @@
 
 **Description**
 
-> Bathe a target in powerful purifying light to cleanse negative effects and foreign substances. Potency scales with energy.
+> (Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in powerful purifying light to cleanse negative effects and foreign substances. Potency scales with energy.
 
 **Decision**
 
@@ -6779,7 +6829,7 @@
 
 **Description**
 
-> Coat your armament in holy light, enhancing its power and quality and dealing extra damage to dark-aligned beings.
+> (Tag:buff)(Tag:holy)(Tag:light)Coat your armament in holy light, enhancing its power and quality and dealing extra damage to dark-aligned beings.
 
 **Decision**
 
@@ -6796,7 +6846,7 @@
 
 **Description**
 
-> Bless an armament to upgrade it by half a stage (+) and grant its wielder a matching bonus intermediate skill, e.g. an Uncommon sword becomes Uncommon+ and grants Intermediate Swordsmanship while held. Only one at a time.
+> (Tag:buff)(Tag:holy)(Tag:martial)Bless an armament to upgrade it by half a stage (+) and grant its wielder a matching bonus intermediate skill, e.g. an Uncommon sword becomes Uncommon+ and grants Intermediate Swordsmanship while held. Only one at a time.
 
 **Flagged in reports**
 
@@ -6817,7 +6867,7 @@
 
 **Description**
 
-> Suffuse your next attack with divine power, amplifying it and dealing severe damage to unholy beings.
+> (Tag:buff)(Tag:holy)(Tag:martial)Suffuse your next attack with divine power, amplifying it and dealing severe damage to unholy beings.
 
 **Decision**
 
@@ -6834,7 +6884,7 @@
 
 **Description**
 
-> Cover your fists in deadly golden light that strengthens punches, punishes evil, and deals severe damage to unholy and spirit beings.
+> (Tag:buff)(Tag:holy)(Tag:light)(Tag:martial)Cover your fists in deadly golden light that strengthens punches, punishes evil, and deals severe damage to unholy and spirit beings.
 
 **Decision**
 
@@ -6851,7 +6901,7 @@
 
 **Description**
 
-> Bathe a target in golden light to exorcise negative effects, curses, and possessions. Against spirits or unholy beings, it burns like holy flame.
+> (Tag:holy)(Tag:spirit)Bathe a target in golden light to exorcise negative effects, curses, and possessions. Against spirits or unholy beings, it burns like holy flame.
 
 **Decision**
 
@@ -6868,7 +6918,7 @@
 
 **Description**
 
-> Infuse your blade with reinforcing light mimicking its properties; e.g. swords launch light slashes, hammers emit golden shockwaves, etc.
+> (Tag:buff)(Tag:light)(Tag:martial)Infuse your blade with reinforcing light mimicking its properties; e.g. swords launch light slashes, hammers emit golden shockwaves, etc.
 
 **Decision**
 
@@ -6885,7 +6935,7 @@
 
 **Description**
 
-> Revive the dead within 10 minutes or restore vitality to fighting condition. Training extends the timeframe.
+> (Tag:life)(Tag:recovery)Revive the dead within 10 minutes or restore vitality to fighting condition. Training extends the timeframe.
 
 **Flagged in reports**
 
@@ -6906,7 +6956,7 @@
 
 **Description**
 
-> Create and control light swords that seal a target's energy when impaled. Stronger targets can resist.
+> (Tag:debuff)(Tag:light)Create and control light swords that seal a target's energy when impaled. Stronger targets can resist.
 
 **Decision**
 
@@ -6923,7 +6973,7 @@
 
 **Description**
 
-> Bathe a target in healing light to restore some health and vigour. Scales with power; stronger targets cost more.
+> (Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in healing light to restore some health and vigour. Scales with power; stronger targets cost more.
 
 **Decision**
 
@@ -6940,7 +6990,7 @@
 
 **Description**
 
-> Bathe a target in healing light to heal even severe wounds. Scales with power; stronger targets cost more.
+> (Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in healing light to heal even severe wounds. Scales with power; stronger targets cost more.
 
 **Decision**
 
@@ -6957,7 +7007,7 @@
 
 **Description**
 
-> Bathe a target in healing light to heal even grievous wounds and lethal damage. Scales with power; stronger targets cost more.
+> (Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in healing light to heal even grievous wounds and lethal damage. Scales with power; stronger targets cost more.
 
 **Decision**
 
@@ -6974,7 +7024,7 @@
 
 **Description**
 
-> Bathe a target in healing light to restore them from even lethal damage; any wound short of death can be healed. Scales with power; stronger targets cost more.
+> (Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in healing light to restore them from even lethal damage; any wound short of death can be healed. Scales with power; stronger targets cost more.
 
 **Decision**
 
@@ -6991,7 +7041,7 @@
 
 **Description**
 
-> Call down a pillar of searing light anywhere in sensory range. Deals extra damage to unholy beings.
+> (Tag:light)Call down a pillar of searing light anywhere in sensory range. Deals extra damage to unholy beings.
 
 **Decision**
 
@@ -7008,7 +7058,7 @@
 
 **Description**
 
-> Summon an erupting fountain of pure divine light dealing massive pillar-like destruction, lethal to Unholy beings, plus purification. Drains most energy; stronger than some Epic abilities but held back by cost and charge time.
+> (Tag:holy)(Tag:light)Summon an erupting fountain of pure divine light dealing massive pillar-like destruction, lethal to Unholy beings, plus purification. Drains most energy; stronger than some Epic abilities but held back by cost and charge time.
 
 **Decision**
 
@@ -7025,7 +7075,7 @@
 
 **Description**
 
-> "May there be mercy on man and machine for their sins." Call a gigantic crucifix of absolute holy light dealing country-erasing judgment; no Unholy being survives, while allies caught are healed of all conditions. Spends all energy; 30-day cooldown.
+> (Tag:holy)(Tag:light)"May there be mercy on man and machine for their sins." Call a gigantic crucifix of absolute holy light dealing country-erasing judgment; no Unholy being survives, while allies caught are healed of all conditions. Spends all energy; 30-day cooldown.
 
 **Flagged in reports**
 
@@ -7046,7 +7096,7 @@
 
 **Description**
 
-> Bend light into sight-deceiving optical illusions. Light can be solidified for disguise, but touch reveals the trick.
+> (Tag:illusion)(Tag:light)Bend light into sight-deceiving optical illusions. Light can be solidified for disguise, but touch reveals the trick.
 
 **Decision**
 
@@ -7063,7 +7113,7 @@
 
 **Description**
 
-> Briefly become a ray of light to travel at lightspeed in a straight line before reforming.
+> (Tag:light)(Tag:movement)(Tag:transformation)Briefly become a ray of light to travel at lightspeed in a straight line before reforming.
 
 **Decision**
 
@@ -7080,7 +7130,7 @@
 
 **Description**
 
-> Create a large overhead light beam granting allies healing, regeneration, and cleansing. Maintenance costs energy.
+> (Tag:holy)(Tag:recovery)Create a large overhead light beam granting allies healing, regeneration, and cleansing. Maintenance costs energy.
 
 **Decision**
 
@@ -7097,7 +7147,7 @@
 
 **Description**
 
-> Create, manipulate, and transform into light energy at will.
+> (Tag:light)(Tag:transformation)Create, manipulate, and transform into light energy at will.
 
 **Decision**
 
@@ -7114,7 +7164,7 @@
 
 **Description**
 
-> Grow durable, sharp claws on your fingertips.
+> (Tag:bio)Grow durable, sharp claws on your fingertips.
 
 **Decision**
 
@@ -7131,7 +7181,7 @@
 
 **Description**
 
-> Grow sturdy, pointy horns on your head.
+> (Tag:bio)Grow sturdy, pointy horns on your head.
 
 **Decision**
 
@@ -7148,7 +7198,7 @@
 
 **Description**
 
-> Grow a strong, dexterously controlled tail.
+> (Tag:bio)Grow a strong, dexterously controlled tail.
 
 **Decision**
 
@@ -7165,7 +7215,7 @@
 
 **Description**
 
-> Turn your teeth into very sharp, durable fangs.
+> (Tag:bio)Turn your teeth into very sharp, durable fangs.
 
 **Decision**
 
@@ -7182,7 +7232,7 @@
 
 **Description**
 
-> Weaponize attached biological body parts, e.g. nails into claws, teeth into fangs.
+> (Tag:bio)Weaponize attached biological body parts, e.g. nails into claws, teeth into fangs.
 
 **Decision**
 
@@ -7199,7 +7249,7 @@
 
 **Description**
 
-> Turn nails into non-dulling razor claws that tear flesh and metal with ease.
+> (Tag:bio)Turn nails into non-dulling razor claws that tear flesh and metal with ease.
 
 **Decision**
 
@@ -7216,7 +7266,7 @@
 
 **Description**
 
-> Grow tough armor-like carapace over flesh for defense. Toughness scales with physical stats.
+> (Tag:bio)Grow tough armor-like carapace over flesh for defense. Toughness scales with physical stats.
 
 **Decision**
 
@@ -7233,7 +7283,7 @@
 
 **Description**
 
-> Grow very sturdy exoskeleton armor granting endurance and protection. Power and durability scale with physical stats.
+> (Tag:bio)Grow very sturdy exoskeleton armor granting endurance and protection. Power and durability scale with physical stats.
 
 **Decision**
 
@@ -7250,7 +7300,7 @@
 
 **Description**
 
-> Grow damage-resistant scales serving as flexible skin armor. Toughness scales with physical stats.
+> (Tag:bio)Grow damage-resistant scales serving as flexible skin armor. Toughness scales with physical stats.
 
 **Decision**
 
@@ -7267,7 +7317,7 @@
 
 **Description**
 
-> Grow incredibly tough dragon scales, more durable than any human material, also reducing elemental damage taken. Toughness scales with physical stats.
+> (Tag:bio)(Tag:draconic)Grow incredibly tough dragon scales, more durable than any human material, also reducing elemental damage taken. Toughness scales with physical stats.
 
 **Decision**
 
@@ -7284,7 +7334,7 @@
 
 **Description**
 
-> Grow powerful wings that lift you regardless of weight. Stronger than your base physicality, they can shatter bones as weapons.
+> (Tag:bio)(Tag:movement)Grow powerful wings that lift you regardless of weight. Stronger than your base physicality, they can shatter bones as weapons.
 
 **Decision**
 
@@ -7322,7 +7372,7 @@
 
 **Description**
 
-> Transform nails into sleek black claws with molecule-thin edges and undiminished durability. Adjustable up to 1 meter long.
+> (Tag:bio)Transform nails into sleek black claws with molecule-thin edges and undiminished durability. Adjustable up to 1 meter long.
 
 **Decision**
 
@@ -7339,7 +7389,7 @@
 
 **Description**
 
-> Freely manipulate your bones and any bones in sensory range; reshape and alter your own bones' size, shape, and properties. Bones regenerate quickly while active.
+> (Tag:bio)Freely manipulate your bones and any bones in sensory range; reshape and alter your own bones' size, shape, and properties. Bones regenerate quickly while active.
 
 **Flagged in reports**
 
@@ -7360,7 +7410,7 @@
 
 **Description**
 
-> Sprout biological-matter spikes from anywhere on your body without pain in creation or use.
+> (Tag:bio)Sprout biological-matter spikes from anywhere on your body without pain in creation or use.
 
 **Decision**
 
@@ -7377,7 +7427,7 @@
 
 **Description**
 
-> Manifest wing-like RC-Cell appendages shifting from fluid-like to steel-tough. Release precise high-speed armor-piercing feather barrages or slash like a steel whip.
+> (Tag:bio)Manifest wing-like RC-Cell appendages shifting from fluid-like to steel-tough. Release precise high-speed armor-piercing feather barrages or slash like a steel whip.
 
 **Decision**
 
@@ -7394,7 +7444,7 @@
 
 **Description**
 
-> Manifest a morphing arm-like RC-Cell appendage from the shoulder blade, tougher and denser than steel. Shape it into spears, claws, shields, etc.
+> (Tag:bio)Manifest a morphing arm-like RC-Cell appendage from the shoulder blade, tougher and denser than steel. Shape it into spears, claws, shields, etc.
 
 **Decision**
 
@@ -7411,7 +7461,7 @@
 
 **Description**
 
-> Manifest multiple flexible Rinkaku tentacles of RC Cells from the lower back, shifting from fluid-like to steel-tough. Use them to pierce, whip, grab, or maneuver.
+> (Tag:bio)Manifest multiple flexible Rinkaku tentacles of RC Cells from the lower back, shifting from fluid-like to steel-tough. Use them to pierce, whip, grab, or maneuver.
 
 **Decision**
 
@@ -7428,7 +7478,7 @@
 
 **Description**
 
-> Manifest a tail-like Bikaku RC-Cell appendage at the tailbone, shifting from fluid-like to steel-tough. Defend, whip, and pierce like a giant flesh tail.
+> (Tag:bio)Manifest a tail-like Bikaku RC-Cell appendage at the tailbone, shifting from fluid-like to steel-tough. Defend, whip, and pierce like a giant flesh tail.
 
 **Decision**
 
@@ -7445,7 +7495,7 @@
 
 **Description**
 
-> Manifest armor-like Kakuja RC Cells shifting from fluid-like to steel-tough, massively boosting stats. Form depends on the user, from building-sized wings to 16 pillar-thick tentacles tougher than titanium and faster than bullets.
+> (Tag:bio)Manifest armor-like Kakuja RC Cells shifting from fluid-like to steel-tough, massively boosting stats. Form depends on the user, from building-sized wings to 16 pillar-thick tentacles tougher than titanium and faster than bullets.
 
 **Decision**
 
@@ -7462,7 +7512,7 @@
 
 **Description**
 
-> Transform into a flesh-eating ghoul superhuman with a Special RC-Cell limb, gaining a random Kagune of the 4 types and near-immunity to conventional weapons below 9mm. You suffer ravenous hunger for human flesh and cannot eat other food; lingering hunger persists after deactivation until fed, but feeding slightly strengthens you.
+> (Tag:necro)(Tag:transformation)Transform into a flesh-eating ghoul superhuman with a Special RC-Cell limb, gaining a random Kagune of the 4 types and near-immunity to conventional weapons below 9mm. You suffer ravenous hunger for human flesh and cannot eat other food; lingering hunger persists after deactivation until fed, but feeding slightly strengthens you.
 
 **Decision**
 
@@ -7479,7 +7529,7 @@
 
 **Description**
 
-> Transform into a hybrid ghoul, far stronger than average ghouls with none of their weaknesses. Massively amplifies physical attributes, grants powerful regeneration and a random Kagune, and removes the need to eat human flesh while retaining its benefits.
+> (Tag:necro)(Tag:transformation)Transform into a hybrid ghoul, far stronger than average ghouls with none of their weaknesses. Massively amplifies physical attributes, grants powerful regeneration and a random Kagune, and removes the need to eat human flesh while retaining its benefits.
 
 **Decision**
 
@@ -7496,7 +7546,7 @@
 
 **Description**
 
-> "Become a true biological terror." Take the form of a Dragon Kakuja, an over 10km centipede-like dragon of RC cells stronger than any man-made material. Passively emit high-density RC clouds that turn nearby things into flesh-eating superhuman monsters under your telepathic control, and morph your body into tentacles or flesh monsters.
+> (Tag:bio)(Tag:draconic)(Tag:transformation)"Become a true biological terror." Take the form of a Dragon Kakuja, an over 10km centipede-like dragon of RC cells stronger than any artificial material. Passively emit high-density RC clouds that turn nearby things into flesh-eating superhuman monsters under your telepathic control, and morph your body into tentacles or flesh monsters.
 
 **Decision**
 
@@ -7513,7 +7563,7 @@
 
 **Description**
 
-> Generate and control keratin to form constructs like horns, armour, and shields, or fire scales and needles.
+> (Tag:bio)Generate and control keratin to form constructs like horns, armour, and shields, or fire scales and needles.
 
 **Decision**
 
@@ -7530,7 +7580,7 @@
 
 **Description**
 
-> Grow wings whose feathers you telekinetically control as projectiles, extra limbs, or weapon enhancements. Feather power scales with your physical stats.
+> (Tag:bio)Grow wings whose feathers you telekinetically control as projectiles, extra limbs, or weapon enhancements. Feather power scales with your physical stats.
 
 **Decision**
 
@@ -7547,7 +7597,7 @@
 
 **Description**
 
-> Flood your body with natural stem cells to rebuild it, at high stamina and resource cost. Requires available nutrients to work or it harms you instead; can be transferred to others via fluid exchange.
+> (Tag:bio)(Tag:recovery)Flood your body with natural stem cells to rebuild it, at high stamina and resource cost. Requires available nutrients to work or it harms you instead; can be transferred to others via fluid exchange.
 
 **Decision**
 
@@ -7564,7 +7614,7 @@
 
 **Description**
 
-> While in an active slot, your body continuously conditions itself as if working out and recovering simultaneously. Slowly approach your biological peak over time and gain increased workout efficiency.
+> (Tag:bio)(Tag:growth)While in an active slot, your body continuously conditions itself as if working out and recovering simultaneously. Slowly approach your biological peak over time and gain increased workout efficiency.
 
 **Decision**
 
@@ -7581,7 +7631,7 @@
 
 **Description**
 
-> Manifest and wear bio armour that shapeshifts and autonomously adapts to your body. Can form blades, spikes, shields, and similar structures.
+> (Tag:bio)Manifest and wear bio armour that shapeshifts and autonomously adapts to your body. Can form blades, spikes, shields, and similar structures.
 
 **Decision**
 
@@ -7598,7 +7648,7 @@
 
 **Description**
 
-> Refine bodies into a more ideal state: build muscle, remove impurities, and adjust size. Cannot alter genetics; stronger targets cost more energy.
+> (Tag:bio)(Tag:growth)Refine bodies into a more ideal state: build muscle, remove impurities, and adjust size. Cannot alter genetics; stronger targets cost more energy.
 
 **Decision**
 
@@ -7615,7 +7665,7 @@
 
 **Description**
 
-> Gain complete instinctual control over your body and brain, down to hormones and blood flow. Operates on intent and prevents accidental self-harm.
+> (Tag:bio)Gain complete instinctual control over your body and brain, down to hormones and blood flow. Operates on intent and prevents accidental self-harm.
 
 **Decision**
 
@@ -7632,7 +7682,7 @@
 
 **Description**
 
-> Alter your body's shape, but cannot create biological impossibilities like turning your head into tentacle whips. Larger alterations cost more energy.
+> (Tag:alter)Alter your body's shape, but cannot create biological impossibilities like turning your head into tentacle whips. Larger alterations cost more energy.
 
 **Decision**
 
@@ -7649,7 +7699,7 @@
 
 **Description**
 
-> Freely morph your body without breaking conservation of mass or altering genetics. You are protected from harm caused by your own shapeshifting.
+> (Tag:bio)(Tag:transformation)Freely morph your body without breaking conservation of mass or altering genetics. You are protected from harm caused by your own shapeshifting.
 
 **Decision**
 
@@ -7683,7 +7733,7 @@
 
 **Description**
 
-> Gain a minor healing factor that closes lacerations and stabs during a fight, but won't fully recover you mid-fight. Expend energy to heal faster.
+> (Tag:bio)(Tag:recovery)Gain a minor healing factor that closes lacerations and stabs during a fight, but won't fully recover you mid-fight. Expend energy to heal faster.
 
 **Decision**
 
@@ -7700,7 +7750,7 @@
 
 **Description**
 
-> Gain a healing factor that closes wounds at speeds visible to the naked eye, often by the fight's end. Survive non-lethal wounds while you have energy; expend energy to heal faster.
+> (Tag:bio)(Tag:recovery)Gain a healing factor that closes wounds at speeds visible to the naked eye, often by the fight's end. Survive non-lethal wounds while you have energy; expend energy to heal faster.
 
 **Decision**
 
@@ -7717,7 +7767,7 @@
 
 **Description**
 
-> Gain rapid healing that closes bullet holes and stabs in seconds. Expend energy to heal even faster.
+> (Tag:healing)Gain rapid healing that closes bullet holes and stabs in seconds. Expend energy to heal even faster.
 
 **Decision**
 
@@ -7734,7 +7784,7 @@
 
 **Description**
 
-> Gain a Wolverine-level healing factor without immortality; survive anything that doesn't instantly kill you while you have energy. Expend energy to heal even faster.
+> (Tag:bio)(Tag:recovery)Gain a Wolverine-level healing factor without immortality; survive anything that doesn't instantly kill you while you have energy. Expend energy to heal even faster.
 
 **Decision**
 
@@ -7751,7 +7801,7 @@
 
 **Description**
 
-> Gain regenerative immortality against mundane wounds; regenerate from the largest remaining living piece, even if split vertically. You can still be incapacitated, and fully running out of energy causes true death.
+> (Tag:bio)(Tag:recovery)Gain regenerative immortality against mundane wounds; regenerate from the largest remaining living piece, even if split vertically. You can still be incapacitated, and fully running out of energy causes true death.
 
 **Decision**
 
@@ -7768,7 +7818,7 @@
 
 **Description**
 
-> Survive like a cockroach: when wounded, your body adapts to keep you alive without blood, lungs, or even a heart by repurposing other parts as substitutes.
+> (Tag:bio)(Tag:recovery)Survive like a cockroach: when wounded, your body adapts to keep you alive without blood, lungs, or even a heart by repurposing other parts as substitutes.
 
 **Decision**
 
@@ -7785,7 +7835,7 @@
 
 **Description**
 
-> Your body constantly rebuilds itself to counter stimuli, such as fire-resistant skin against fire, plating against cuts, or sharper claws. Adaptations are strictly biological and fade over time or when dispelled.
+> (Tag:bio)(Tag:recovery)(Tag:transformation)Your body constantly rebuilds itself to counter stimuli, such as fire-resistant skin against fire, plating against cuts, or sharper claws. Adaptations are strictly biological and fade over time or when dispelled.
 
 **Decision**
 
@@ -7802,7 +7852,7 @@
 
 **Description**
 
-> Become a classic vampire with superhuman physical abilities, bat transformation, and bloodsucking. Retain all traditional weaknesses: crucifixes, garlic, wooden stakes, sunlight, and holy water.
+> (Tag:vampiric)Become a classic vampire with superhuman physical abilities, bat transformation, and bloodsucking. Retain all traditional weaknesses: crucifixes, garlic, wooden stakes, sunlight, and holy water.
 
 **Decision**
 
@@ -7819,7 +7869,7 @@
 
 **Description**
 
-> Freely morph into any mundane animal you know. Retain all your abilities while gaining the animal's physical traits.
+> (Tag:bio)(Tag:transformation)Freely morph into any mundane animal you know. Retain all your abilities while gaining the animal's physical traits.
 
 **Decision**
 
@@ -7836,7 +7886,7 @@
 
 **Description**
 
-> You have gills for breathing underwater, though they are inconvenient.
+> (Tag:bio)You have gills for breathing underwater, though they are inconvenient.
 
 **Decision**
 
@@ -7853,7 +7903,7 @@
 
 **Description**
 
-> Freely create, control, and design custom hormones. Inject them into others via bloodstream exposure or fluid exchange.
+> (Tag:bio)Freely create, control, and design custom hormones. Inject them into others via bloodstream exposure or fluid exchange.
 
 **Decision**
 
@@ -7870,7 +7920,7 @@
 
 **Description**
 
-> Manifest controllable biological tentacles that act as extra limbs to smash, grab, whip, molest, and manipulate.
+> (Tag:bio)Manifest controllable biological tentacles that act as extra limbs to smash, grab, whip, and manipulate.
 
 **Flagged in reports**
 
@@ -7891,7 +7941,7 @@
 
 **Description**
 
-> Manifest an extra set of arms that are as easy to control as your first pair.
+> (Tag:bio)Manifest an extra set of arms that are as easy to control as your first pair.
 
 **Decision**
 
@@ -7908,7 +7958,7 @@
 
 **Description**
 
-> Become venomous, injecting venom through bites or claws, or spraying it orally or via powers. Venom potency scales with your physical stats.
+> (Tag:poison)Become venomous, injecting venom through bites or claws, or spraying it orally or via powers. Venom potency scales with your physical stats.
 
 **Decision**
 
@@ -7925,7 +7975,7 @@
 
 **Description**
 
-> Turn your flesh and blood into potent poison by expending energy; potency scales with energy spent and vitality. Poison becomes inert once the ability is cancelled or swapped out.
+> (Tag:bio)(Tag:poison)Turn your flesh and blood into potent poison by expending energy; potency scales with energy spent and vitality. Poison becomes inert once the ability is cancelled or swapped out.
 
 **Decision**
 
@@ -7942,7 +7992,7 @@
 
 **Description**
 
-> Design, concoct, and expel any poison from your body while gaining poison resistance. Can combine with other abilities for esoteric poisons; overuse causes nausea and sickness.
+> (Tag:meta)(Tag:poison)Design, concoct, and expel any poison from your body while gaining poison resistance. Can combine with other abilities for esoteric poisons; overuse causes nausea and sickness.
 
 **Decision**
 
@@ -7959,7 +8009,7 @@
 
 **Description**
 
-> Exhale a cloud of poisonous gas that also erodes physical matter.
+> (Tag:poison)Exhale a cloud of poisonous gas that also erodes physical matter.
 
 **Decision**
 
@@ -7976,7 +8026,7 @@
 
 **Description**
 
-> Freely create and manipulate poisonous substances, with potency scaling with energy expended.
+> (Tag:poison)Freely create and manipulate poisonous substances, with potency scaling with energy expended.
 
 **Decision**
 
@@ -7993,7 +8043,7 @@
 
 **Description**
 
-> Create a paralytic agent in your body to expel through pores or spray orally as gas.
+> (Tag:poison)Create a paralytic agent in your body to expel through pores or spray orally as gas.
 
 **Decision**
 
@@ -8010,7 +8060,7 @@
 
 **Description**
 
-> Telekinetically control your own blood. You cannot generate extra blood without regeneration, so spend it wisely.
+> (Tag:blood)Telekinetically control your own blood. You cannot generate extra blood without regeneration, so spend it wisely.
 
 **Decision**
 
@@ -8027,7 +8077,7 @@
 
 **Description**
 
-> Telekinetically control blood within your sensory range, but not in quantities smaller than you can perceive. Controlling blood inside someone requires being stronger than them.
+> (Tag:bio)(Tag:kinesis)(Tag:life)(Tag:vampiric)Telekinetically control blood within your sensory range, but not in quantities smaller than you can perceive. Controlling blood inside someone requires being stronger than them.
 
 **Decision**
 
@@ -8044,7 +8094,7 @@
 
 **Description**
 
-> Sense and telekinetically control all blood within your sensory range, your own or an enemy's. Meaningful control of blood inside a target requires being stronger than them.
+> (Tag:bio)(Tag:kinesis)(Tag:life)(Tag:vampiric)Sense and telekinetically control all blood within your sensory range, your own or an enemy's. Meaningful control of blood inside a target requires being stronger than them.
 
 **Decision**
 
@@ -8061,7 +8111,7 @@
 
 **Description**
 
-> Teleport to any location you have visited or seen with your own eyes. Longer range increases energy consumption and cooldown.
+> (Tag:movement)(Tag:space)Teleport to any location you have visited or seen with your own eyes. Longer range increases energy consumption and cooldown.
 
 **Decision**
 
@@ -8078,7 +8128,7 @@
 
 **Description**
 
-> Instantly teleport up to 10 meters to a normally accessible spot in line of sight, excluding through glass; range improves with training. Has a slight cooldown, and overuse causes intense vertigo.
+> (Tag:movement)(Tag:space)Instantly teleport up to 10 meters to a normally accessible spot in line of sight, excluding through glass; range improves with training. Has a slight cooldown, and overuse causes intense vertigo.
 
 **Decision**
 
@@ -8095,7 +8145,7 @@
 
 **Description**
 
-> Instantly teleport to any sensed or previously visited location, bringing passengers along. Energy cost scales slightly with distance and passenger count; requires mental focus.
+> (Tag:movement)(Tag:space)Instantly teleport to any sensed or previously visited location, bringing passengers along. Energy cost scales slightly with distance and passenger count; requires mental focus.
 
 **Decision**
 
@@ -8112,7 +8162,7 @@
 
 **Description**
 
-> While in an active slot, build an energy stockpile by diverting a portion of your natural regeneration, manifesting by default as a horn. Spend the stockpile to rewind time's effects on a target, costing more for stronger or resisting targets and less for weaker ones. Cannot affect immaterial things such as soul, energy, or mind.
+> (Tag:recovery)(Tag:time)While in an active slot, build an energy stockpile by diverting a portion of your natural regeneration, manifesting by default as a horn. Spend the stockpile to rewind time's effects on a target, costing more for stronger or resisting targets and less for weaker ones. Cannot affect immaterial things such as soul, energy, or mind.
 
 **Decision**
 
@@ -8129,7 +8179,7 @@
 
 **Description**
 
-> Accelerate your own time and that of anything you touch. Greater acceleration causes more strain and energy cost.
+> (Tag:alter)(Tag:buff)(Tag:time)Accelerate your own time and that of anything you touch. Greater acceleration causes more strain and energy cost.
 
 **Decision**
 
@@ -8146,7 +8196,7 @@
 
 **Description**
 
-> Swap the locations of two items of approximately equal worth, within 10% price variation. You must touch at least one object, with both in your sensory range.
+> (Tag:movement)(Tag:space)Swap the locations of two items of approximately equal worth, within 10% price variation. You must touch at least one object, with both in your sensory range.
 
 **Flagged in reports**
 
@@ -8167,7 +8217,7 @@
 
 **Description**
 
-> Instantly swap the locations of any targets in your line of sight. More powerful targets cost more energy and strong enough ones can resist.
+> (Tag:movement)(Tag:space)Instantly swap the locations of any targets in your line of sight. More powerful targets cost more energy and strong enough ones can resist.
 
 **Decision**
 
@@ -8184,7 +8234,7 @@
 
 **Description**
 
-> Swap the locations of two energy-possessing targets within your sensory range by clapping. Clapping is required to activate.
+> (Tag:movement)(Tag:space)Swap the locations of two energy-possessing targets within your sensory range by clapping. Clapping is required to activate.
 
 **Decision**
 
@@ -8201,7 +8251,7 @@
 
 **Description**
 
-> Send invisible slashes directed by hand motions. Stronger slashes cost more energy.
+> (Tag:kinetic)Send invisible slashes directed by hand motions. Stronger slashes cost more energy.
 
 **Decision**
 
@@ -8218,7 +8268,7 @@
 
 **Description**
 
-> Instantly cut any object you touch with no cues. Energy cost scales with durability; high enough magic resistance grants immunity.
+> (Tag:kinetic)Instantly cut any object you touch with no cues. Energy cost scales with durability; high enough magic resistance grants immunity.
 
 **Decision**
 
@@ -8235,7 +8285,7 @@
 
 **Description**
 
-> Create and launch a flying slash that severs spacetime, ignoring all conventional durability and barriers.
+> (Tag:space)Create and launch a flying slash that severs spacetime, ignoring all conventional durability and barriers.
 
 **Flagged in reports**
 
@@ -8256,7 +8306,7 @@
 
 **Description**
 
-> Dimensionally lock an area to block spacetime abilities like teleportation, portals, and time travel inside it. Larger areas cost more energy; strong enough targets can break the lock.
+> (Tag:debuff)(Tag:space)(Tag:time)Dimensionally lock an area to block spacetime abilities like teleportation, portals, and time travel inside it. Larger areas cost more energy; strong enough targets can break the lock.
 
 **Decision**
 
@@ -8273,7 +8323,7 @@
 
 **Description**
 
-> Freeze an object's time, rendering it inviolable and locked to its current speed and state; even a thrown pebble becomes unstoppable and immovable. Can be used on yourself for invulnerability, but strains the heart immensely and lasts only a few seconds.
+> (Tag:alter)(Tag:ice)(Tag:space)Freeze an object's time, rendering it inviolable and locked to its current speed and state; even a thrown pebble becomes unstoppable and immovable. Can be used on yourself for invulnerability, but strains the heart immensely and lasts only a few seconds.
 
 **Flagged in reports**
 
@@ -8294,7 +8344,7 @@
 
 **Description**
 
-> Infinitely divide the space between you and a target, making it impossible for them to reach you. Requires constant mental calculation, strains the brain immensely, and can liquify it with overuse.
+> (Tag:space)Infinitely divide the space between you and a target, making it impossible for them to reach you. Requires constant mental calculation, strains the brain immensely, and can liquify it with overuse.
 
 **Decision**
 
@@ -8311,7 +8361,7 @@
 
 **Description**
 
-> Distort space via three applications: Blue creates a powerful attracting force, Red a powerful repelling force, and Neutral infinitely divides space to prevent approach. These can be combined and expanded with experience, but cost much energy with effectiveness scaling with calculation ability.
+> (Tag:space)Distort space via three applications: Blue creates a powerful attracting force, Red a powerful repelling force, and Neutral infinitely divides space to prevent approach. These can be combined and expanded with experience, but cost much energy with effectiveness scaling with calculation ability.
 
 **Decision**
 
@@ -8328,7 +8378,7 @@
 
 **Description**
 
-> Distort and warp space to deal massive damage.
+> (Tag:space)Distort and warp space to deal massive damage.
 
 **Decision**
 
@@ -8345,7 +8395,7 @@
 
 **Description**
 
-> Freeze an object in spacetime, rendering it completely inviolable and invulnerable. Duration and cost scale with energy spent and target strength; strong enough targets are immune.
+> (Tag:alter)(Tag:ice)(Tag:time)Freeze an object in spacetime, rendering it completely inviolable and invulnerable. Duration and cost scale with energy spent and target strength; strong enough targets are immune.
 
 **Decision**
 
@@ -8362,7 +8412,7 @@
 
 **Description**
 
-> Scrape away space with either hand, pulling the remaining space together to fill it. Ignores conventional durability but has short range and high energy cost.
+> (Tag:space)Scrape away space with either hand, pulling the remaining space together to fill it. Ignores conventional durability but has short range and high energy cost.
 
 **Decision**
 
@@ -8379,7 +8429,7 @@
 
 **Description**
 
-> Manipulate time in a select area or target by speeding up, slowing down, stopping, or reversing it. Sufficiently strong targets can resist.
+> (Tag:time)Manipulate time in a select area or target by speeding up, slowing down, stopping, or reversing it. Sufficiently strong targets can resist.
 
 **Decision**
 
@@ -8396,7 +8446,7 @@
 
 **Description**
 
-> Slow down time for everything except yourself. More energy expended yields slower time.
+> (Tag:time)Slow down time for everything except yourself. More energy expended yields slower time.
 
 **Decision**
 
@@ -8413,7 +8463,7 @@
 
 **Description**
 
-> Time moves relative to you: it slows as you slow and speeds as you speed, stopping if you stand still. Strong enough targets may resist or ignore it.
+> (Tag:time)Time moves relative to you: it slows as you slow and speeds as you speed, stopping if you stand still. Strong enough targets may resist or ignore it.
 
 **Decision**
 
@@ -8430,7 +8480,7 @@
 
 **Description**
 
-> Produce a seamless doppelganger you control mentally, though it has none of your abilities. You may maintain a number equal to your ability slot count.
+> (Tag:summon)Produce a seamless doppelganger you control mentally, though it has none of your abilities. You may maintain a number equal to your ability slot count.
 
 **Decision**
 
@@ -8447,7 +8497,7 @@
 
 **Description**
 
-> Split into several bodies, halving your stats per clone. Each clone needs one of your ability slots to use abilities, excluding Clone Split; if a clone dies, its stats return over 8 hours.
+> (Tag:summon)Split into several bodies, halving your stats per clone. Each clone needs one of your ability slots to use abilities, excluding Clone Split; if a clone dies, its stats return over 8 hours.
 
 **Decision**
 
@@ -8464,7 +8514,7 @@
 
 **Description**
 
-> Split into multiple directly-controlled bodies, freely distributing ability slots and energy among them. Each avatar needs at least 5% of your stats; a dead avatar's stats return after 24 hours.
+> (Tag:summon)Split into multiple directly-controlled bodies, freely distributing ability slots and energy among them. Each avatar needs at least 5% of your stats; a dead avatar's stats return after 24 hours.
 
 **Decision**
 
@@ -8481,7 +8531,7 @@
 
 **Description**
 
-> Skip time, becoming absolutely intangible by separating from causality; actions against you during the skip are negated while yours persist. For example, after a 10-second skip trading blows, you return unharmed while your opponent keeps their wounds; can also phase through objects and reposition.
+> (Tag:space)(Tag:time)Skip time, becoming absolutely intangible by separating from causality; actions against you during the skip are negated while yours persist. For example, after a 10-second skip trading blows, you return unharmed while your opponent keeps their wounds; can also phase through objects and reposition.
 
 **Flagged in reports**
 
@@ -8502,7 +8552,7 @@
 
 **Description**
 
-> Imbue objects with life energy to turn them into autonomous living beings or constructs of your choice. Creations must be of roughly similar mass.
+> (Tag:life)(Tag:summon)(Tag:transformation)Imbue objects with life energy to turn them into autonomous living beings or constructs of your choice. Creations must be of roughly similar mass.
 
 **Decision**
 
@@ -8519,7 +8569,7 @@
 
 **Description**
 
-> Remove gravity's influence from a target or area in your vision, creating zero-gravity, or invert and amplify gravity to hurl targets skyward.
+> (Tag:gravity)Remove gravity's influence from a target or area in your vision, creating zero-gravity, or invert and amplify gravity to hurl targets skyward.
 
 **Decision**
 
@@ -8536,7 +8586,7 @@
 
 **Description**
 
-> Your body moves as if in zero gravity, letting you float freely though with little control.
+> (Tag:gravity)Your body moves as if in zero gravity, letting you float freely though with little control.
 
 **Decision**
 
@@ -8553,7 +8603,7 @@
 
 **Description**
 
-> Create low-gravity zones in your line of sight, reducing the weight and falling speed of objects inside.
+> (Tag:gravity)Create low-gravity zones in your line of sight, reducing the weight and falling speed of objects inside.
 
 **Decision**
 
@@ -8570,7 +8620,7 @@
 
 **Description**
 
-> "More speed" While active, your speed ignores physics including air resistance, gravity, and friction. You gain momentum indefinitely until deactivated, making it incredibly uncontrollable and potentially stranding you at the universe's edge.
+> (Tag:movement)"More speed" While active, your speed ignores physics including air resistance, gravity, and friction. You gain momentum indefinitely until deactivated, making it incredibly uncontrollable and potentially stranding you at the universe's edge.
 
 **Decision**
 
@@ -8587,7 +8637,7 @@
 
 **Description**
 
-> Create and control localized nuclear reactions with your energy, becoming a living nuclear weapon platform. Increased use causes radiation poisoning that fades over time.
+> (Tag:fire)(Tag:poison)Create and control localized nuclear reactions with your energy, becoming a living nuclear weapon platform. Increased use causes radiation poisoning that fades over time.
 
 **Decision**
 
@@ -8604,7 +8654,7 @@
 
 **Description**
 
-> Absorb radiation to convert into energy, permanently increasing your reserves by absorbing large amounts over time.
+> (Tag:growth)(Tag:poison)(Tag:recovery)Absorb radiation to convert into energy, permanently increasing your reserves by absorbing large amounts over time.
 
 **Decision**
 
@@ -8621,7 +8671,7 @@
 
 **Description**
 
-> Shrug off ailments and negative status effects like blindness, bleeding, or curses as a cure scaling with physical stats.
+> (Tag:recovery)Shrug off ailments and negative status effects like blindness, bleeding, or curses as a cure scaling with physical stats.
 
 **Decision**
 
@@ -8638,7 +8688,7 @@
 
 **Description**
 
-> Sense and telepathically command vermin such as insects and mice within your sensory range.
+> (Tag:summon)Sense and telepathically command vermin such as insects and mice within your sensory range.
 
 **Decision**
 
@@ -8655,7 +8705,7 @@
 
 **Description**
 
-> Rewind time by 6 seconds in a localized 50-meter area. Those in range remain aware of the rewound 6 seconds.
+> (Tag:time)Rewind time by 6 seconds in a localized 50-meter area. Those in range remain aware of the rewound 6 seconds.
 
 **Decision**
 
@@ -8672,7 +8722,7 @@
 
 **Description**
 
-> Revive an entity dead no longer than you have been alive. Requires sacrifices like money, valuables, or artefacts scaling with target strength, doubled for unwilling targets.
+> (Tag:life)(Tag:recovery)(Tag:spirit)Revive an entity dead no longer than you have been alive. Requires sacrifices like money, valuables, or artefacts scaling with target strength, doubled for unwilling targets.
 
 **Flagged in reports**
 
@@ -8693,7 +8743,7 @@
 
 **Description**
 
-> Mark objects with a rune you can charge with energy to detonate at any time. Explosion power scales with energy spent; stored energy fades over time.
+> (Tag:fire)Mark objects with a rune you can charge with energy to detonate at any time. Explosion power scales with energy spent; stored energy fades over time.
 
 **Decision**
 
@@ -8706,11 +8756,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 6.8 | Legendary | Generic |
+| 6.8 | Legendary | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Telekinetically sense and control carbon down to a molecular level. Controlling carbon inside living creatures is harder based on their power relative to yours.
+> (Tag:kinesis)Telekinetically sense and control carbon down to a molecular level. Controlling carbon inside living creatures is harder based on their power relative to yours.
 
 **Decision**
 
@@ -8727,7 +8777,7 @@
 
 **Description**
 
-> Ask a soul yes-or-no questions it must answer truthfully. Cannot be used on targets stronger than you.
+> (Tag:spirit)Ask a soul yes-or-no questions it must answer truthfully. Cannot be used on targets stronger than you.
 
 **Decision**
 
@@ -8744,7 +8794,7 @@
 
 **Description**
 
-> Passive: when lethally injured, automatically teleport to the safest area within a 1000-meter radius. Has a 30-minute cooldown.
+> (Tag:movement)(Tag:passive)Passive: when lethally injured, automatically teleport to the safest area within a 1000-meter radius. Has a 30-minute cooldown.
 
 **Decision**
 
@@ -8761,7 +8811,7 @@
 
 **Description**
 
-> Your body adapts to make your abilities more efficient and stronger, fading when disabled. For example, claws boost overall strength while fire manipulation grants heat tolerance.
+> (Tag:bio)(Tag:passive)(Tag:transformation)Your body adapts to make your abilities more efficient and stronger, fading when disabled. For example, claws boost overall strength while fire manipulation grants heat tolerance.
 
 **Decision**
 
@@ -8778,7 +8828,7 @@
 
 **Description**
 
-> Blessed by the sun: under sunlight, massively increase stats and energy and create intense flames. At noon for one minute, enter "The One" for even greater stats, flames, and near-invulnerability.
+> (Tag:enhancer)(Tag:fire)(Tag:holy)Blessed by the sun: under sunlight, massively increase stats and energy and create intense flames. At noon for one minute, enter "The One" for even greater stats, flames, and near-invulnerability.
 
 **Decision**
 
@@ -8795,7 +8845,7 @@
 
 **Description**
 
-> Under danger or combat, assume a draconic form that strengthens with time and danger, and recedes without it. Higher escalation grants basic pyrokinesis, regeneration, and enhanced physical stats.
+> (Tag:bio)(Tag:draconic)(Tag:fire)(Tag:transformation)Under danger or combat, assume a draconic form that strengthens with time and danger, and recedes without it. Higher escalation grants basic pyrokinesis, regeneration, and enhanced physical stats.
 
 **Decision**
 
@@ -8812,7 +8862,7 @@
 
 **Description**
 
-> Build up energy as you are hurt, then charge any ability or spell with it for a devastating effect. Each 10% health lost adds 2x power, reaching 10x at 10% health remaining; 8-hour cooldown.
+> (Tag:alter)(Tag:enhancer)(Tag:meta)Build up energy as you are hurt, then charge any ability or spell with it for a devastating effect. Each 10% health lost adds 2x power, reaching 10x at 10% health remaining; 8-hour cooldown.
 
 **Decision**
 
@@ -8829,7 +8879,7 @@
 
 **Description**
 
-> Precisely manipulate and sense all iron in a 10-meter radius, forming elaborate constructs or blades from a target's blood. Can control blood inside living beings.
+> (Tag:bio)(Tag:earth)(Tag:kinesis)Precisely manipulate and sense all iron in a 10-meter radius, forming elaborate constructs or blades from a target's blood. Can control blood inside living beings.
 
 **Flagged in reports**
 
@@ -8850,7 +8900,7 @@
 
 **Description**
 
-> Telekinetically control glass and glass-based objects within your sensory range.
+> (Tag:kinesis)Telekinetically control glass and glass-based objects within your sensory range.
 
 **Decision**
 
@@ -8867,7 +8917,7 @@
 
 **Description**
 
-> Telekinetically control oil and oil-based substances such as petrol, fuel, asphalt, crude oil, and plastic within your sensory range.
+> (Tag:kinesis)Telekinetically control oil and oil-based substances such as petrol, fuel, asphalt, crude oil, and plastic within your sensory range.
 
 **Decision**
 
@@ -8884,7 +8934,7 @@
 
 **Description**
 
-> Telekinetically shape and control silicon down to an atomic level, including glass, sand, quartz, silicone, and most electronics within your sensory range.
+> (Tag:kinesis)Telekinetically shape and control silicon down to an atomic level, including glass, sand, quartz, silicone, and most electronics within your sensory range.
 
 **Decision**
 
@@ -8901,7 +8951,7 @@
 
 **Description**
 
-> Telekinetically control plastic and plastic-based substances and objects within your sensory range.
+> (Tag:kinesis)Telekinetically control plastic and plastic-based substances and objects within your sensory range.
 
 **Decision**
 
@@ -8918,7 +8968,7 @@
 
 **Description**
 
-> Telekinetically control fabric within your sensory range, including cotton, silk, wool, and kevlar. Can create your own clothes or turn enemies' clothes against them.
+> (Tag:kinesis)(Tag:nature)Telekinetically control fabric within your sensory range, including cotton, silk, wool, and kevlar. Can create your own clothes or turn enemies' clothes against them.
 
 **Flagged in reports**
 
@@ -8939,7 +8989,7 @@
 
 **Description**
 
-> Generate and manipulate supernaturally durable strings with supernatural precision. You lose control if they lose contact with your body.
+> (Tag:kinesis)Generate and manipulate supernaturally durable strings with supernatural precision. You lose control if they lose contact with your body.
 
 **Decision**
 
@@ -8956,7 +9006,7 @@
 
 **Description**
 
-> Telekinetically control copper and copper-based constructs within your sensory range.
+> (Tag:earth)(Tag:kinesis)Telekinetically control copper and copper-based constructs within your sensory range.
 
 **Decision**
 
@@ -8973,7 +9023,7 @@
 
 **Description**
 
-> Induce rust in metals through physical contact.
+> (Tag:alter)(Tag:necro)Induce rust in metals through physical contact.
 
 **Decision**
 
@@ -8990,7 +9040,7 @@
 
 **Description**
 
-> Telekinetically control gold and gold-based constructs within your sensory range.
+> (Tag:earth)(Tag:kinesis)Telekinetically control gold and gold-based constructs within your sensory range.
 
 **Decision**
 
@@ -9007,7 +9057,7 @@
 
 **Description**
 
-> (Tech) Manipulate the output of machines you own, lowering output to preserve durability or pushing them to their very limits even without the means to do so.
+> (Tag:tech)(Tech) Manipulate the output of machines you own, lowering output to preserve durability or pushing them to their very limits even without the means to do so.
 
 **Decision**
 
@@ -9024,7 +9074,7 @@
 
 **Description**
 
-> Hypnotise and mind-control those who make eye contact with you. High-willpower or stronger targets can break out.
+> (Tag:command)(Tag:mental)(Tag:ocular)Hypnotise and mind-control those who make eye contact with you. High-willpower or stronger targets can break out.
 
 **Decision**
 
@@ -9041,7 +9091,7 @@
 
 **Description**
 
-> Conjure energy-construct vines you control. Once they leave your body you lose control and they fade over time.
+> (Tag:neutral)Conjure energy-construct vines you control. Once they leave your body you lose control and they fade over time.
 
 **Decision**
 
@@ -9058,7 +9108,7 @@
 
 **Description**
 
-> Assume the form of a large shifting mass of metal needles, hooks, and blades, altering shape and size at energy cost. Damage to the metal doesn't harm you, but your body inside remains vulnerable.
+> (Tag:earth)(Tag:transformation)Assume the form of a large shifting mass of metal needles, hooks, and blades, altering shape and size at energy cost. Damage to the metal doesn't harm you, but your body inside remains vulnerable.
 
 **Decision**
 
@@ -9075,7 +9125,7 @@
 
 **Description**
 
-> See lines of death as cracks along objects or people; destroying a line instantly and absolutely kills or destroys the target. Only works where the concept of death applies; overuse causes severe brain damage.
+> (Tag:alter)(Tag:ocular)See lines of death as cracks along objects or people; destroying a line instantly and absolutely kills or destroys the target. Only works where the concept of death applies; overuse causes severe brain damage.
 
 **Decision**
 
@@ -9092,7 +9142,7 @@
 
 **Description**
 
-> Gain superhuman power: run faster than a train, punch harder than a missile, and shrug off tank shells, all scaling with physical stats. Training results are considerably enhanced.
+> (Tag:enhancer)Gain superhuman power: run faster than a train, punch harder than a missile, and shrug off tank shells, all scaling with physical stats. Training results are considerably enhanced.
 
 **Decision**
 
@@ -9109,7 +9159,7 @@
 
 **Description**
 
-> Harness willpower physically to reinforce things, gain extrasensory perception, and exert spiritual pressure. Can train in all Haki types.
+> (Tag:enhancer)(Tag:mental)(Tag:sense)(Tag:spirit)Harness willpower physically to reinforce things, gain extrasensory perception, and exert spiritual pressure. Can train in all Haki types.
 
 **Decision**
 
@@ -9126,7 +9176,7 @@
 
 **Description**
 
-> Exert your willpower as a wave of power that knocks unconscious those with weaker willpower.
+> (Tag:enhancer)(Tag:mental)(Tag:spirit)Exert your willpower as a wave of power that knocks unconscious those with weaker willpower.
 
 **Decision**
 
@@ -9143,7 +9193,7 @@
 
 **Description**
 
-> Reinforce your body or a held object with an invisible hardening forcefield that can touch the intangible. At higher mastery it can be projected.
+> (Tag:enhancer)(Tag:spirit)Reinforce your body or a held object with an invisible hardening forcefield that can touch the intangible. At higher mastery it can be projected.
 
 **Decision**
 
@@ -9160,7 +9210,7 @@
 
 **Description**
 
-> Expand a sensory field to detect movements and objects inside. At higher mastery, distinguish targets, energy, and even emotions.
+> (Tag:divination)(Tag:sense)(Tag:spirit)Expand a sensory field to detect movements and objects inside. At higher mastery, distinguish targets, energy, and even emotions.
 
 **Decision**
 
@@ -9177,7 +9227,7 @@
 
 **Description**
 
-> Charge your lungs with any elemental energy to unleash breath attacks such as acid, darkness, fire, ice, and light.
+> (Tag:air)(Tag:dark)(Tag:electric)(Tag:fire)(Tag:ice)(Tag:light)(Tag:poison)(Tag:water)Charge your lungs with any elemental energy to unleash breath attacks such as acid, darkness, fire, ice, and light.
 
 **Decision**
 
@@ -9194,7 +9244,7 @@
 
 **Description**
 
-> Drain a target's vitality on touch to heal yourself. Stronger targets yield less drain.
+> (Tag:life)(Tag:recovery)Drain a target's vitality on touch to heal yourself. Stronger targets yield less drain.
 
 **Decision**
 
@@ -9211,7 +9261,7 @@
 
 **Description**
 
-> Whenever someone injures you, they lose a portion of energy or stamina to you, letting you recover even while damaged.
+> (Tag:blood)(Tag:passive)(Tag:recovery)Whenever someone injures you, they lose a portion of energy or stamina to you, letting you recover even while damaged.
 
 **Decision**
 
@@ -9245,7 +9295,7 @@
 
 **Description**
 
-> Conjure a grid pattern along terrain and detonate sections of it through the grid.
+> (Tag:neutral)Conjure a grid pattern along terrain and detonate sections of it through the grid.
 
 **Decision**
 
@@ -9262,7 +9312,7 @@
 
 **Description**
 
-> Increase or decrease your own density or that of wielded objects. Greater changes cost more energy to maintain.
+> (Tag:gravity)Increase or decrease your own density or that of wielded objects. Greater changes cost more energy to maintain.
 
 **Decision**
 
@@ -9279,7 +9329,7 @@
 
 **Description**
 
-> Increase your mass without penalties to speed or stature, making physical attacks unimaginably stronger and potentially collapsing into a black hole. Higher mass costs more energy to maintain.
+> (Tag:gravity)Increase your mass without penalties to speed or stature, making physical attacks unimaginably stronger and potentially collapsing into a black hole. Higher mass costs more energy to maintain.
 
 **Decision**
 
@@ -9296,7 +9346,7 @@
 
 **Description**
 
-> Lock onto targets so thrown projectiles home in and become nigh impossible to dodge unless they leave range.
+> (Tag:martial)Lock onto targets so thrown projectiles home in and become nigh impossible to dodge unless they leave range.
 
 **Decision**
 
@@ -9313,7 +9363,7 @@
 
 **Description**
 
-> Any projectile you throw will hit if physically possible, such as threading a human hair through a 1mm hole 10 kilometres away.
+> (Tag:martial)Any projectile you throw will hit if physically possible, such as threading a human hair through a 1mm hole 10 kilometres away.
 
 **Flagged in reports**
 
@@ -9334,7 +9384,7 @@
 
 **Description**
 
-> Emit energy as beams or pulses using your own energy. More energy spent and longer charging yield stronger emissions.
+> (Tag:neutral)Emit energy as beams or pulses using your own energy. More energy spent and longer charging yield stronger emissions.
 
 **Decision**
 
@@ -9351,7 +9401,7 @@
 
 **Description**
 
-> Absorb and store kinetic energy in your body to enhance your blows when released. Stored energy fades if unused.
+> (Tag:kinetic)Absorb and store kinetic energy in your body to enhance your blows when released. Stored energy fades if unused.
 
 **Decision**
 
@@ -9368,7 +9418,7 @@
 
 **Description**
 
-> Manipulate kinetic energy in your sensory range by negating, applying, changing, or redirecting it. Cannot control more than your body can exert.
+> (Tag:kinetic)Manipulate kinetic energy in your sensory range by negating, applying, changing, or redirecting it. Cannot control more than your body can exert.
 
 **Decision**
 
@@ -9385,7 +9435,7 @@
 
 **Description**
 
-> Create and control vectors at Level 5 Esper level, controlling the movement of basically anything: teleporting, stopping, accelerating, and more.
+> (Tag:kinetic)Create and control vectors at Level 5 Esper level, controlling the movement of basically anything: teleporting, stopping, accelerating, and more.
 
 **Flagged in reports**
 
@@ -9406,7 +9456,7 @@
 
 **Description**
 
-> Stop all kinetic energy of a target, even a meteor. Larger forces cost more energy; has a 1-second cooldown.
+> (Tag:kinetic)Stop all kinetic energy of a target, even a meteor. Larger forces cost more energy; has a 1-second cooldown.
 
 **Decision**
 
@@ -9423,7 +9473,7 @@
 
 **Description**
 
-> Lock down an area centred on you so nobody can enter or leave and spacetime abilities are disabled. Absolute enough that even a god cannot breach it; requires energy and cannot be maintained indefinitely.
+> (Tag:alter)(Tag:space)Lock down an area centred on you so nobody can enter or leave and spacetime abilities are disabled. Absolute enough that even a god cannot breach it; requires energy and cannot be maintained indefinitely.
 
 **Flagged in reports**
 
@@ -9444,7 +9494,7 @@
 
 **Description**
 
-> Stick to objects like super glue.
+> (Tag:alter)Stick to objects like super glue.
 
 **Decision**
 
@@ -9461,7 +9511,7 @@
 
 **Description**
 
-> Gaze into someone's eyes to make them recall their greatest fear. Stronger targets cost more energy, and strong-willed ones are less affected.
+> (Tag:command)(Tag:mental)Gaze into someone's eyes to make them recall their greatest fear. Stronger targets cost more energy, and strong-willed ones are less affected.
 
 **Decision**
 
@@ -9478,7 +9528,7 @@
 
 **Description**
 
-> Lets you glide 1cm above the ground without friction, moving as if skating.
+> (Tag:movement)Lets you glide 1cm above the ground without friction, moving as if skating.
 
 **Decision**
 
@@ -9495,7 +9545,7 @@
 
 **Description**
 
-> Creates a door that breaches any barrier or defense it is placed on, letting you bypass it without teleporting.
+> (Tag:alter)Creates a door that breaches any barrier or defense it is placed on, letting you bypass it without teleporting.
 
 **Flagged in reports**
 
@@ -9516,7 +9566,7 @@
 
 **Description**
 
-> Erects a domain centered on yourself where no one, including you, can commit violence.
+> (Tag:alter)Erects a domain centered on yourself where no one, including you, can commit violence.
 
 **Decision**
 
@@ -9533,7 +9583,7 @@
 
 **Description**
 
-> Conjures massive vibrations, tremors, and quakes through any medium like air, water, or ground, strong enough to devastate landmasses. Can shatter objects like glass and partially bypass durability.
+> (Tag:kinetic)Conjures massive vibrations, tremors, and quakes through any medium like air, water, or ground, strong enough to devastate landmasses. Can shatter objects like glass and partially bypass durability.
 
 **Decision**
 
@@ -9550,7 +9600,7 @@
 
 **Description**
 
-> Your skin is nigh-invulnerable to all harm without durability negation at similar power. You also resist durability negation, reducing its efficiency so it cannot fully pierce you.
+> (Tag:enhancer)Your skin is nigh-invulnerable to all harm without durability negation at similar power. You also resist durability negation, reducing its efficiency so it cannot fully pierce you.
 
 **Flagged in reports**
 
@@ -9571,7 +9621,7 @@
 
 **Description**
 
-> Lets you transform into a Blue Phoenix or hybrid at will. Grants increased physical abilities, flight, extreme regeneration, and healing flames.
+> (Tag:avian)Lets you transform into a Blue Phoenix or hybrid at will. Grants increased physical abilities, flight, extreme regeneration, and healing flames.
 
 **Decision**
 
@@ -9588,7 +9638,7 @@
 
 **Description**
 
-> Lets you transform into a Hydra or hybrid at will. Grants massively increased physical abilities, high-tier poison immunity, poison breath, extreme limb-regrowing regeneration, and survival of up to 9 beheadings.
+> (Tag:draconic)(Tag:enhancer)(Tag:poison)(Tag:recovery)(Tag:transformation)Lets you transform into a Hydra or hybrid at will. Grants massively increased physical abilities, high-tier poison immunity, poison breath, extreme limb-regrowing regeneration, and survival of up to 9 beheadings.
 
 **Decision**
 
@@ -9605,7 +9655,7 @@
 
 **Description**
 
-> Lets you transform into a thunderbird or hybrid at will. Grants increased physical abilities, flight, lightning emission, and weather manipulation.
+> (Tag:air)(Tag:avian)(Tag:electric)(Tag:enhancer)(Tag:transformation)Lets you transform into a thunderbird or hybrid at will. Grants increased physical abilities, flight, lightning emission, and weather manipulation.
 
 **Decision**
 
@@ -9622,7 +9672,7 @@
 
 **Description**
 
-> Creates resizable portals to anywhere in sensory range or anywhere you have visited. A portal cannot close while something is inside it.
+> (Tag:movement)(Tag:space)Creates resizable portals to anywhere in sensory range or anywhere you have visited. A portal cannot close while something is inside it.
 
 **Decision**
 
@@ -9639,7 +9689,7 @@
 
 **Description**
 
-> Creates portals that can cross even dimensions, placed anywhere you can perceive or have visited.
+> (Tag:movement)(Tag:space)Creates portals that can cross even dimensions, placed anywhere you can perceive or have visited.
 
 **Decision**
 
@@ -9656,7 +9706,7 @@
 
 **Description**
 
-> Extends your sight beyond your eyes, controllable like a free spectator camera.
+> (Tag:divination)(Tag:sense)Extends your sight beyond your eyes, controllable like a free spectator camera.
 
 **Decision**
 
@@ -9673,7 +9723,7 @@
 
 **Description**
 
-> Lets you leap great distances, such as over a building for a regular person. Also grants immunity to falling damage.
+> (Tag:movement)Lets you leap great distances, such as over a building for a regular person. Also grants immunity to falling damage.
 
 **Decision**
 
@@ -9690,7 +9740,7 @@
 
 **Description**
 
-> Freely manipulates flesh and biomaterials by contact with perfect cellular precision. Larger power gaps let targets resist your changes more.
+> (Tag:bio)Freely manipulates flesh and biomaterials by contact with perfect cellular precision. Larger power gaps let targets resist your changes more.
 
 **Decision**
 
@@ -9707,7 +9757,7 @@
 
 **Description**
 
-> Assigns an object under your lifting strength as a target to telekinetically control with extreme limb-like precision.
+> (Tag:kinesis)Assigns an object under your lifting strength as a target to telekinetically control with extreme limb-like precision.
 
 **Decision**
 
@@ -9724,7 +9774,7 @@
 
 **Description**
 
-> Drains energy from living targets via contact. Larger power gaps reduce how much you can drain at once.
+> (Tag:alter)(Tag:recovery)Drains energy from living targets via contact. Larger power gaps reduce how much you can drain at once.
 
 **Decision**
 
@@ -9741,7 +9791,7 @@
 
 **Description**
 
-> Lets you jump once off thin air as if it were solid.
+> (Tag:movement)Lets you jump once off thin air as if it were solid.
 
 **Decision**
 
@@ -9758,7 +9808,7 @@
 
 **Description**
 
-> Lets you treat air as jumpable platforms anytime, but you cannot stand on it for more than a second without falling.
+> (Tag:air)(Tag:movement)Lets you treat air as jumpable platforms anytime, but you cannot stand on it for more than a second without falling.
 
 **Decision**
 
@@ -9775,7 +9825,7 @@
 
 **Description**
 
-> Fires a laser beam that dresses anyone in any mundane clothing of your choice.
+> (Tag:alter)Fires a laser beam that dresses anyone in any mundane clothing of your choice.
 
 **Decision**
 
@@ -9792,7 +9842,7 @@
 
 **Description**
 
-> Channels and uses as your own the energy of anyone willing to share it, regardless of distance.
+> (Tag:spirit)Channels and uses as your own the energy of anyone willing to share it, regardless of distance.
 
 **Decision**
 
@@ -9809,7 +9859,7 @@
 
 **Description**
 
-> Conjures and controls pure destructive energy that can annihilate anything with enough magical power.
+> (Tag:dark)(Tag:infernal)Conjures and controls pure destructive energy that can annihilate anything with enough magical power.
 
 **Decision**
 
@@ -9826,7 +9876,7 @@
 
 **Description**
 
-> With precise timing, counters any attack thrown at you and returns it with double power.
+> (Tag:alter)With precise timing, counters any attack thrown at you and returns it with double power.
 
 **Decision**
 
@@ -9843,7 +9893,7 @@
 
 **Description**
 
-> You are Destruction Incarnate, turning your body into a vessel for nigh-endless destructive energy that can wipe almost anything from existence.
+> (Tag:dark)(Tag:infernal)(Tag:transformation)You are Destruction Incarnate, turning your body into a vessel for nigh-endless destructive energy that can wipe almost anything from existence.
 
 **Decision**
 
@@ -9860,7 +9910,7 @@
 
 **Description**
 
-> You are everything ice: plunge worlds into an ice age, rebuild your body from ice, or unleash absolute-zero temperatures at will.
+> (Tag:ice)(Tag:kinesis)(Tag:recovery)(Tag:transformation)You are everything ice: plunge worlds into an ice age, rebuild your body from ice, or unleash absolute-zero temperatures at will.
 
 **Decision**
 
@@ -9877,7 +9927,7 @@
 
 **Description**
 
-> Hosts the Phoenix Force, source of all life and fire in the universe, but it exerts no control or influence over you; you simply channel its abilities.
+> (Tag:avian)Hosts the Phoenix Force, source of all life and fire in the universe, but it exerts no control or influence over you; you simply channel its abilities.
 
 **Decision**
 
@@ -9915,7 +9965,7 @@
 
 **Description**
 
-> Emits a rousing cry that bolsters allies with lion-like courage and endless motivation, turning even a chef into a warrior able to fell a soldier.
+> (Tag:buff)(Tag:mental)Emits a rousing cry that bolsters allies with lion-like courage and endless motivation, turning even a chef into a warrior able to fell a soldier.
 
 **Decision**
 
@@ -9932,7 +9982,7 @@
 
 **Description**
 
-> Medusa - Your unimaginably beautiful eyes petrify anything in your gaze or anything that meets your eyes. Larger power gaps slow the petrification.
+> (Tag:alter)(Tag:earth)(Tag:ocular)Medusa - Your unimaginably beautiful eyes petrify anything in your gaze or anything that meets your eyes. Larger power gaps slow the petrification.
 
 **Decision**
 
@@ -9949,7 +9999,7 @@
 
 **Description**
 
-> Shifts your perspective from first-person to an orbiting third-person camera around you, as in Dark Souls.
+> (Tag:sense)Shifts your perspective from first-person to an orbiting third-person camera around you, as in Dark Souls.
 
 **Decision**
 
@@ -9966,7 +10016,7 @@
 
 **Description**
 
-> While active, shows commentary from those who were, could have been, or would have been, helpful or deceitful. Includes trapped-treasure warnings, hidden-wall locations, or trap prompts, like messages in Eldensoulsborne Games.
+> (Tag:divination)While active, shows commentary from those who were, could have been, or would have been, helpful or deceitful. Includes trapped-treasure warnings, hidden-wall locations, or trap prompts, like messages in Eldensoulsborne Games.
 
 **Decision**
 
@@ -9983,7 +10033,7 @@
 
 **Description**
 
-> While in an active slot, grants immunity to poison, illness, curses, debuffs, and all negative status effects.
+> (Tag:alter)(Tag:passive)While in an active slot, grants immunity to poison, illness, curses, debuffs, and all negative status effects.
 
 **Flagged in reports**
 
@@ -10004,7 +10054,7 @@
 
 **Description**
 
-> Conjures and telekinetically manipulates gunpowder, shaping constructs or detonating it on command. Larger volumes cost more energy.
+> (Tag:earth)(Tag:fire)Conjures and telekinetically manipulates gunpowder, shaping constructs or detonating it on command. Larger volumes cost more energy.
 
 **Decision**
 
@@ -10021,7 +10071,7 @@
 
 **Description**
 
-> Converts your life into supernaturally durable weapons of solidified blood emerging from an open wound. Greater vitality or sacrificed lifespan makes them stronger, with lifespan sacrifice also granting powerful effects based on your abilities and traits. Created weapons fade in power over time until returning to normal blood.
+> (Tag:life)Converts your life into supernaturally durable weapons of solidified blood emerging from an open wound. Greater vitality or sacrificed lifespan makes them stronger, with lifespan sacrifice also granting powerful effects based on your abilities and traits. Created weapons fade in power over time until returning to normal blood.
 
 **Decision**
 
@@ -10038,7 +10088,7 @@
 
 **Description**
 
-> When activated, everyone who can see you treats you as an object of affection, platonic or romantic, with stronger effect at larger power gaps in your favor. Mundanes may surrender life savings or spouse, while equals may only treat you as an ordinary friend.
+> (Tag:command)(Tag:mental)(Tag:passive)(Noncon) When activated, everyone who can see you treats you as an object of affection, platonic or romantic, with stronger effect at larger power gaps in your favor. Mundanes may surrender life savings or spouse, while equals may only treat you as an ordinary friend.
 
 **Flagged in reports**
 
@@ -10059,7 +10109,7 @@
 
 **Description**
 
-> Remotely steals an unbound target's possession within 10 meters without them noticing. More valuable objects cost more energy.
+> (Tag:movement)Remotely steals an unbound target's possession within 10 meters without them noticing. More valuable objects cost more energy.
 
 **Decision**
 
@@ -10076,7 +10126,7 @@
 
 **Description**
 
-> Steals ALL unbound possessions from a target within 5 meters into your subspace inventory. You can narrow the range to steal specific targets more easily.
+> (Tag:movement)Steals ALL unbound possessions from a target within 5 meters into your subspace inventory. You can narrow the range to steal specific targets more easily.
 
 **Decision**
 
@@ -10093,7 +10143,7 @@
 
 **Description**
 
-> Trash Count - Records your sight into memory in perfect detail, recallable anytime as if constantly in mind, surpassing photographic memory.
+> (Tag:mental)Trash Count - Records your sight into memory in perfect detail, recallable anytime as if constantly in mind, surpassing photographic memory.
 
 **Decision**
 
@@ -10110,7 +10160,7 @@
 
 **Description**
 
-> (Nsfw) Makes targets in your vision aroused, or climax with enough arousal. Stronger targets cost more energy, and far stronger ones notice your attempts.
+> (Tag:alter)(Tag:nsfw)(Nsfw)(Noncon) Makes targets in your vision aroused, or climax with enough arousal. Stronger targets cost more energy, and far stronger ones notice your attempts.
 
 **Flagged in reports**
 
@@ -10131,7 +10181,7 @@
 
 **Description**
 
-> Lets you go unnoticed as people ignore you to their utmost, allowing theft, break-ins, or kills without comment. Stronger targets resist more, noticing drastic acts; upkeep costs energy and stamina.
+> (Tag:mental)(Tag:stealth)Lets you go unnoticed as people ignore you to their utmost, allowing theft, break-ins, or kills without comment. Stronger targets resist more, noticing drastic acts; upkeep costs energy and stamina.
 
 **Decision**
 
@@ -10148,7 +10198,7 @@
 
 **Description**
 
-> Reads a focused target's surface thoughts, emotions, or deeper thoughts and opinions. Stronger targets drain more energy.
+> (Tag:divination)(Tag:mental)Reads a focused target's surface thoughts, emotions, or deeper thoughts and opinions. Stronger targets drain more energy.
 
 **Decision**
 
@@ -10165,7 +10215,7 @@
 
 **Description**
 
-> Exchanges thoughts with others within energy-dependent range, reading surface thoughts or communicating one- or two-way. Multiple targets heavily strain your mind.
+> (Tag:mental)Exchanges thoughts with others within energy-dependent range, reading surface thoughts or communicating one- or two-way. Multiple targets heavily strain your mind.
 
 **Decision**
 
@@ -10199,7 +10249,7 @@
 
 **Description**
 
-> Transforms into a basilisk at will, partially or fully. Your gaze petrifies and paralyzes, your scales grant natural armor, and you highly resist curses.
+> (Tag:transformation)Transforms into a basilisk at will, partially or fully. Your gaze petrifies and paralyzes, your scales grant natural armor, and you highly resist curses.
 
 **Decision**
 
@@ -10216,7 +10266,7 @@
 
 **Description**
 
-> Transforms into a Wendigo partially or fully. Grants increased ice affinity, enhanced physical stats, blizzard summoning, and supernatural tracking, but may instill human-flesh appetite.
+> (Tag:ice)Transforms into a Wendigo partially or fully. Grants increased ice affinity, enhanced physical stats, blizzard summoning, and supernatural tracking, but may instill human-flesh appetite.
 
 **Decision**
 
@@ -10233,7 +10283,7 @@
 
 **Description**
 
-> Transforms into an Oni partially or fully. Grants enhanced physical stats and minor healing, but vulnerability to holy.
+> (Tag:infernal)Transforms into an Oni partially or fully. Grants enhanced physical stats and minor healing, but vulnerability to holy.
 
 **Decision**
 
@@ -10250,7 +10300,7 @@
 
 **Description**
 
-> Transforms into a Phoenix partially or fully. Grants enhanced physical stats, major fire affinity, incredible regeneration, and revival from death once every 30 days.
+> (Tag:air)(Tag:avian)(Tag:fire)(Tag:life)(Tag:recovery)(Tag:transformation)Transforms into a Phoenix partially or fully. Grants enhanced physical stats, major fire affinity, incredible regeneration, and revival from death once every 30 days.
 
 **Decision**
 
@@ -10267,7 +10317,7 @@
 
 **Description**
 
-> (Tech) Modifies existing technology in purposeless ways granting no tangible benefit, like yellowing a phone screen, adding useless car wheels, or fitting a car with a propeller too weak to lift it.
+> (Tag:tech)(Tag:tinker)(Tech) Modifies existing technology in purposeless ways granting no tangible benefit, like yellowing a phone screen, adding useless car wheels, or fitting a car with a propeller too weak to lift it.
 
 **Decision**
 
@@ -10284,7 +10334,7 @@
 
 **Description**
 
-> Reflects magical attacks back with a large forcefield.
+> (Tag:alter)(Tag:neutral)Reflects magical attacks back with a large forcefield.
 
 **Decision**
 
@@ -10301,7 +10351,7 @@
 
 **Description**
 
-> Alters an object's color and texture by touch until its structural integrity is compromised.
+> (Tag:illusion)Alters an object's color and texture by touch until its structural integrity is compromised.
 
 **Decision**
 
@@ -10318,7 +10368,7 @@
 
 **Description**
 
-> Transforms into a fishman, an amphibious humanoid-fish race. Grants greatly increased physical abilities over humans, further empowered when submerged.
+> (Tag:aquatic)(Tag:enhancer)(Tag:transformation)(Tag:water)Transforms into a fishman, an amphibious humanoid-fish race. Grants greatly increased physical abilities over humans, further empowered when submerged.
 
 **Decision**
 
@@ -10335,7 +10385,7 @@
 
 **Description**
 
-> Places locks on entities that block interaction until unlocked by condition, key, or brute force. Cannot lock resisting living beings.
+> (Tag:alter)Places locks on entities that block interaction until unlocked by condition, key, or brute force. Cannot lock resisting living beings.
 
 **Decision**
 
@@ -10352,7 +10402,7 @@
 
 **Description**
 
-> Conceptually unlocks entities, from locks to inner potential. More abstract or difficult targets cost more energy; imagination and energy are your limits.
+> (Tag:alter)Conceptually unlocks entities, from locks to inner potential. More abstract or difficult targets cost more energy; imagination and energy are your limits.
 
 **Flagged in reports**
 
@@ -10374,7 +10424,7 @@
 
 **Description**
 
-> Transforms into a western dragon partially or fully, granting enhanced stats and energy plus the ability to use other abilities as breath attacks.
+> (Tag:draconic)(Tag:transformation)Transforms into a western dragon partially or fully, granting enhanced stats and energy plus the ability to use other abilities as breath attacks.
 
 **Decision**
 
@@ -10391,7 +10441,7 @@
 
 **Description**
 
-> Converts flesh into energy to become an energy being. More flesh yields more energy but greater vulnerability to energy attacks.
+> (Tag:transformation)Converts flesh into energy to become an energy being. More flesh yields more energy but greater vulnerability to energy attacks.
 
 **Decision**
 
@@ -10408,7 +10458,7 @@
 
 **Description**
 
-> Transforms into a giant everlasting dragon partially or fully. With intact stone scales of immortality, needs no sustenance and gains regeneration, powerful breath, and extreme damage resistance, but loses immortality if scales break and stays vulnerable to lightning.
+> (Tag:draconic)(Tag:earth)(Tag:recovery)(Tag:transformation)Transforms into a giant everlasting dragon partially or fully. With intact stone scales of immortality, needs no sustenance and gains regeneration, powerful breath, and extreme damage resistance, but loses immortality if scales break and stays vulnerable to lightning.
 
 **Decision**
 
@@ -10425,7 +10475,7 @@
 
 **Description**
 
-> "No, it doesn't give you the pass" Temporarily transforms into a Lunarian, an extinct sky-faring race, with free winged flight and bodily fire manipulation for attacks and more. Intact flame grants extreme durability; lost flame removes it but grants slight speed instead.
+> (Tag:air)(Tag:fire)(Tag:transformation)"No, it doesn't give you the pass" Temporarily transforms into a Lunarian, an extinct sky-faring race, with free winged flight and bodily fire manipulation for attacks and more. Intact flame grants extreme durability; lost flame removes it but grants slight speed instead.
 
 **Decision**
 
@@ -10442,7 +10492,7 @@
 
 **Description**
 
-> When activated, lets you see and interact with souls and spirits, and grasp general intent by looking into eyes.
+> (Tag:divination)(Tag:ocular)(Tag:spirit)When activated, lets you see and interact with souls and spirits, and grasp general intent by looking into eyes.
 
 **Decision**
 
@@ -10459,7 +10509,7 @@
 
 **Description**
 
-> Transforms your eyes into the one-tomoe Sharingan of the Uchiha Clan, evolvable through training and severe mental trauma. Grants greatly enhanced vision, memorization of seen Martial Moves and Spells you can replicate, and hypnosis scaling with power gap, breakable by strong shock.
+> (Tag:illusion)(Tag:mental)(Tag:ocular)(Tag:sense)Transforms your eyes into the one-tomoe Sharingan of the Uchiha Clan, evolvable through training and severe mental trauma. Grants greatly enhanced vision, memorization of seen Martial Moves and Spells you can replicate, and hypnosis scaling with power gap, breakable by strong shock.
 
 **Decision**
 
@@ -10476,7 +10526,7 @@
 
 **Description**
 
-> Transforms your eyes into the Hyuga Clan's Byakugan. Grants massively enhanced, near-omnidirectional vision that pierces obstacles and clearly sees and tracks energy.
+> (Tag:mental)(Tag:ocular)(Tag:sense)Transforms your eyes into the Hyuga Clan's Byakugan. Grants massively enhanced, near-omnidirectional vision that pierces obstacles and clearly sees and tracks energy.
 
 **Decision**
 
@@ -10493,7 +10543,7 @@
 
 **Description**
 
-> When activated, differentiates objects into nine titular colors with distinct meanings, such as threat levels and glimpses of fate and destiny. Ununlocked colors appear colorless, and divinely empowered objects or people cannot be perceived. For more info: https://the-second-coming-of-gluttony.fandom.com/wiki/Nine_Eyes
+> (Tag:divination)(Tag:ocular)When activated, differentiates objects into nine titular colors with distinct meanings, such as threat levels and glimpses of fate and destiny. Ununlocked colors appear colorless, and divinely empowered objects or people cannot be perceived. For more info: https://the-second-coming-of-gluttony.fandom.com/wiki/Nine_Eyes
 
 **Decision**
 
@@ -10510,7 +10560,7 @@
 
 **Description**
 
-> Grants super strength to lift cars, punch through reinforced concrete, and bend metal like rubber. Scales with base strength, costs energy to maintain, and can be further augmented with more energy.
+> (Tag:enhancer)Grants super strength to lift cars, punch through reinforced concrete, and bend metal like rubber. Scales with base strength, costs energy to maintain, and can be further augmented with more energy.
 
 **Decision**
 
@@ -10527,7 +10577,7 @@
 
 **Description**
 
-> Grants supernatural speed to outrun cars and outpace dragonflies. Scales with base speed, costs energy to maintain, and can be further augmented with more energy.
+> (Tag:enhancer)Grants supernatural speed to outrun cars and outpace dragonflies. Scales with base speed, costs energy to maintain, and can be further augmented with more energy.
 
 **Decision**
 
@@ -10544,7 +10594,7 @@
 
 **Description**
 
-> Grants supernatural durability, ignoring low-caliber bullets and damaging cars that hit you. Scales with base durability, costs energy to maintain, and can be further augmented with more energy.
+> (Tag:enhancer)Grants supernatural durability, ignoring low-caliber bullets and damaging cars that hit you. Scales with base durability, costs energy to maintain, and can be further augmented with more energy.
 
 **Decision**
 
@@ -10561,7 +10611,7 @@
 
 **Description**
 
-> While active, instinctively reveals any held weapon's full capabilities and grants temporary Adept Rank Mastery in its category.
+> (Tag:martial)While active, instinctively reveals any held weapon's full capabilities and grants temporary Adept Rank Mastery in its category.
 
 **Decision**
 
@@ -10578,7 +10628,7 @@
 
 **Description**
 
-> "The Giant held up the very skies" Grants immense strength to carve mountains and move cities with bare hands given enough energy, plus shockwave release. Consumes energy when active.
+> (Tag:enhancer)"The Giant held up the very skies" Grants immense strength to carve mountains and move cities with bare hands given enough energy, plus shockwave release. Consumes energy when active.
 
 **Decision**
 
@@ -10595,7 +10645,7 @@
 
 **Description**
 
-> Grants ultimate strength to pluck stars and shatter planets. Immeasurably strong and augmentable without limits.
+> (Tag:enhancer)Grants ultimate strength to pluck stars and shatter planets. Immeasurably strong and augmentable without limits.
 
 **Decision**
 
@@ -10612,7 +10662,7 @@
 
 **Description**
 
-> Lets you move at extreme, hard-to-control speeds. Further augmentation is possible, but greater speed burns more energy.
+> (Tag:movement)Lets you move at extreme, hard-to-control speeds. Further augmentation is possible, but greater speed burns more energy.
 
 **Decision**
 
@@ -10629,7 +10679,7 @@
 
 **Description**
 
-> Grants ultimate speed where sound is a statue and light a turtle. Augmentable without limits with enough energy.
+> (Tag:movement)Grants ultimate speed where sound is a statue and light a turtle. Augmentable without limits with enough energy.
 
 **Decision**
 
@@ -10646,7 +10696,7 @@
 
 **Description**
 
-> Makes you "Title Card" extremely durable, with nuclear weapons barely causing a first-degree burn. Augmentable to extreme levels.
+> (Tag:enhancer)Makes you "Title Card" extremely durable, with nuclear weapons barely causing a first-degree burn. Augmentable to extreme levels.
 
 **Decision**
 
@@ -10663,7 +10713,7 @@
 
 **Description**
 
-> Eliminates friction of a target you are touching.
+> (Tag:alter)Eliminates friction of a target you are touching.
 
 **Decision**
 
@@ -10680,7 +10730,7 @@
 
 **Description**
 
-> Switches between offensive form with enhanced speed and strength, and defensive form with enhanced durability and resistance.
+> (Tag:enhancer)Switches between offensive form with enhanced speed and strength, and defensive form with enhanced durability and resistance.
 
 **Decision**
 
@@ -10697,7 +10747,7 @@
 
 **Description**
 
-> Greatly augments physical stats, especially hearing and focus to lock onto a heartbeat a street away. Scales with basic stats.
+> (Tag:enhancer)(Tag:sense)Greatly augments physical stats, especially hearing and focus to lock onto a heartbeat a street away. Scales with basic stats.
 
 **Decision**
 
@@ -10714,7 +10764,7 @@
 
 **Description**
 
-> Creates a zone silencing all sound inside or blocking its escape, or mutes specific targets by touch. Can silence your abilities at increased energy cost.
+> (Tag:sound)Creates a zone silencing all sound inside or blocking its escape, or mutes specific targets by touch. Can silence your abilities at increased energy cost.
 
 **Decision**
 
@@ -10731,7 +10781,7 @@
 
 **Description**
 
-> Extends an ability's area of effect without reducing power, such as doubling or tripling it, at higher energy cost.
+> (Tag:meta)Extends an ability's area of effect without reducing power, such as doubling or tripling it, at higher energy cost.
 
 **Decision**
 
@@ -10748,7 +10798,7 @@
 
 **Description**
 
-> Augments abilities with penetration to better ignore resistances and bypass immunities, letting even a lich be cursed or a fire dragon burnt.
+> (Tag:meta)Augments abilities with penetration to better ignore resistances and bypass immunities, letting even a lich be cursed or a fire dragon burnt.
 
 **Flagged in reports**
 
@@ -10770,7 +10820,7 @@
 
 **Description**
 
-> Raises a targeted ability below Legendary by a full stage.
+> (Tag:meta)Raises a targeted ability below Legendary by a full stage.
 
 **Decision**
 
@@ -10787,7 +10837,7 @@
 
 **Description**
 
-> Casts an ability with delayed effect, such as a fireball firing 1 minute later in place, or healing held until needed.
+> (Tag:meta)Casts an ability with delayed effect, such as a fireball firing 1 minute later in place, or healing held until needed.
 
 **Decision**
 
@@ -10804,7 +10854,7 @@
 
 **Description**
 
-> Phases through objects and attacks non-selectively, so you can fall through ground and go blind phasing your head. Disabling inside solid matter ejects you headfirst at high speed.
+> (Tag:alter)(Tag:transformation)Phases through objects and attacks non-selectively, so you can fall through ground and go blind phasing your head. Disabling inside solid matter ejects you headfirst at high speed.
 
 **Decision**
 
@@ -10821,7 +10871,7 @@
 
 **Description**
 
-> Destroys a touched target's clothing or armor by touch, delayable up to an hour.
+> (Tag:alter)Destroys a touched target's clothing or armor by touch, delayable up to an hour.
 
 **Decision**
 
@@ -10838,7 +10888,7 @@
 
 **Description**
 
-> Uses multiple instances of an ability at once, like triple fireball or tenfold lightning strike, each costing appropriate energy.
+> (Tag:meta)Uses multiple instances of an ability at once, like triple fireball or tenfold lightning strike, each costing appropriate energy.
 
 **Decision**
 
@@ -10855,7 +10905,7 @@
 
 **Description**
 
-> Deduces information from targets via enhanced observation, matching a genius detective like Sherlock Holmes given detailed observation.
+> (Tag:divination)(Tag:mental)Deduces information from targets via enhanced observation, matching a genius detective like Sherlock Holmes given detailed observation.
 
 **Decision**
 
@@ -10872,7 +10922,7 @@
 
 **Description**
 
-> "Let there be judgment." Casts judgment based on target karma; against irredeemable evil by a positive-karma user, victim power drops 10x while your power rises 10x against them. 8-hour cooldown.
+> (Tag:buff)(Tag:debuff)(Tag:holy)"Let there be judgment." Casts judgment based on target karma; against irredeemable evil by a positive-karma user, victim power drops 10x while your power rises 10x against them. 8-hour cooldown.
 
 **Flagged in reports**
 
@@ -10893,7 +10943,7 @@
 
 **Description**
 
-> Turns you into the Salt King, creating, controlling, and transmuting targets into supernaturally powerful salt within eyesight range. Targets need at least your parity to resist transmutation.
+> (Tag:earth)(Tag:transformation)Turns you into the Salt King, creating, controlling, and transmuting targets into supernaturally powerful salt within eyesight range. Targets need at least your parity to resist transmutation.
 
 **Decision**
 
@@ -10910,7 +10960,7 @@
 
 **Description**
 
-> Creates and controls gravitational fields.
+> (Tag:gravity)Creates and controls gravitational fields.
 
 **Decision**
 
@@ -10927,7 +10977,7 @@
 
 **Description**
 
-> Accurately controls gravity on a massive scale: invert gravity to hurl islands skyward, craft imitation black holes, or crush with extreme gravity. Limited by imagination and gravity's power, with training able to remove a planet's gravity.
+> (Tag:gravity)Accurately controls gravity on a massive scale: invert gravity to hurl islands skyward, craft imitation black holes, or crush with extreme gravity. Limited by imagination and gravity's power, with training able to remove a planet's gravity.
 
 **Decision**
 
@@ -10944,7 +10994,7 @@
 
 **Description**
 
-> Optimizes targets, cutting electronics' energy use or maximizing your spells' and abilities' efficiency.
+> (Tag:meta)Optimizes targets, cutting electronics' energy use or maximizing your spells' and abilities' efficiency.
 
 **Decision**
 
@@ -10961,7 +11011,7 @@
 
 **Description**
 
-> Temporarily erases all evidence of existence: no energy signature, scent, sight, sound, or perception until you attack.
+> (Tag:stealth)Temporarily erases all evidence of existence: no energy signature, scent, sight, sound, or perception until you attack.
 
 **Decision**
 
@@ -10978,7 +11028,7 @@
 
 **Description**
 
-> Shares your life force to heal others via touch, remotely with further mastery.
+> (Tag:life)(Tag:recovery)Shares your life force to heal others via touch, remotely with further mastery.
 
 **Decision**
 
@@ -10995,7 +11045,7 @@
 
 **Description**
 
-> Manifests a wheel behind you that spins upon encountering an insurmountable phenomenon, adapting you to resist damage or harm previously unhittable foes. Adaptation fades when canceled, but gained knowledge and techniques remain.
+> (Tag:alter)Manifests a wheel behind you that spins upon encountering an insurmountable phenomenon, adapting you to resist damage or harm previously unhittable foes. Adaptation fades when canceled, but gained knowledge and techniques remain.
 
 **Decision**
 
@@ -11012,7 +11062,7 @@
 
 **Description**
 
-> Destroys touched objects by spreading decay to dust, expandable with training. Strong targets partially resist.
+> (Tag:necro)Destroys touched objects by spreading decay to dust, expandable with training. Strong targets partially resist.
 
 **Decision**
 
@@ -11029,7 +11079,7 @@
 
 **Description**
 
-> Emits a withering aura that drains vitality, breaks targets down internally, and disables regeneration, lingering like poison. With training, grows more potent and usable as a tangible attack.
+> (Tag:necro)(Tag:poison)Emits a withering aura that drains vitality, breaks targets down internally, and disables regeneration, lingering like poison. With training, grows more potent and usable as a tangible attack.
 
 **Decision**
 
@@ -11063,7 +11113,7 @@
 
 **Description**
 
-> Marks targets by touch, keeping perfect awareness of their location and distance while active.
+> (Tag:divination)Marks targets by touch, keeping perfect awareness of their location and distance while active.
 
 **Decision**
 
@@ -11080,7 +11130,7 @@
 
 **Description**
 
-> Sees several seconds into the future that would occur without intervention. Extendable with training.
+> (Tag:divination)Sees several seconds into the future that would occur without intervention. Extendable with training.
 
 **Decision**
 
@@ -11097,7 +11147,7 @@
 
 **Description**
 
-> Peers into the near future for energy, from moments when inexperienced to several seconds when skilled. May trigger automatically before a lethal blow.
+> (Tag:divination)Peers into the near future for energy, from moments when inexperienced to several seconds when skilled. May trigger automatically before a lethal blow.
 
 **Decision**
 
@@ -11114,7 +11164,7 @@
 
 **Description**
 
-> Touching a target reveals a detailed diagnosis of their health.
+> (Tag:bio)(Tag:divination)Touching a target reveals a detailed diagnosis of their health.
 
 **Decision**
 
@@ -11131,7 +11181,7 @@
 
 **Description**
 
-> Brings up a target's status page showing likes, dislikes, and kinks.
+> (Tag:divination)Brings up a target's status page showing likes, dislikes, and kinks.
 
 **Flagged in reports**
 
@@ -11152,7 +11202,7 @@
 
 **Description**
 
-> Creates a 100-meter zone ranking up all abilities by one stage and boosting physical abilities, while barring others' authority inside. You cannot leave while active, and upkeep costs large energy.
+> (Tag:buff)(Tag:meta)Creates a 100-meter zone ranking up all abilities by one stage and boosting physical abilities, while barring others' authority inside. You cannot leave while active, and upkeep costs large energy.
 
 **Decision**
 
@@ -11169,7 +11219,7 @@
 
 **Description**
 
-> Brands unresisting targets as yours, revealing their location and condition. Lets you summon yourself to them or them to you with a 24-hour cooldown.
+> (Tag:divination)(Tag:movement)Brands unresisting targets as yours, revealing their location and condition. Lets you summon yourself to them or them to you with a 24-hour cooldown.
 
 **Decision**
 
@@ -11186,7 +11236,7 @@
 
 **Description**
 
-> Soul-marries a willing target with a kiss, granting a soul ring. Share energy freely, teleport to each other with an 8-hour cooldown, track state and location, and bestow or reclaim your abilities without penalty.
+> (Tag:alter)(Tag:divination)(Tag:meta)(Tag:movement)Soul-marries a willing target with a kiss, granting a soul ring. Share energy freely, teleport to each other with an 8-hour cooldown, track state and location, and bestow or reclaim your abilities without penalty.
 
 **Decision**
 
@@ -11203,7 +11253,7 @@
 
 **Description**
 
-> Copies a touched Legendary-or-below power for 1 hour in place of this ability, replaceable anytime with no cooldown. 2-hour cooldown.
+> (Tag:meta)Copies a touched Legendary-or-below power for 1 hour in place of this ability, replaceable anytime with no cooldown. 2-hour cooldown.
 
 **Decision**
 
@@ -11220,7 +11270,7 @@
 
 **Description**
 
-> Adds a touched target's ability to storage by touch. Can switch to any stored power at any time, but mimics only one ability at once.
+> (Tag:meta)Adds a touched target's ability to storage by touch. Can switch to any stored power at any time, but mimics only one ability at once.
 
 **Decision**
 
@@ -11237,7 +11287,7 @@
 
 **Description**
 
-> Forcefully absorbs a touched target's biology-based ability. Fails on blessings, curses, authorities, and similar.
+> (Tag:alter)(Tag:bio)(Tag:meta)Forcefully absorbs a touched target's biology-based ability. Fails on blessings, curses, authorities, and similar.
 
 **Decision**
 
@@ -11254,7 +11304,7 @@
 
 **Description**
 
-> Mimics or manifests aspects of any beast consumed within 24 hours, like crab-shell armor or hydra regeneration.
+> (Tag:bio)(Tag:transformation)Mimics or manifests aspects of any beast consumed within 24 hours, like crab-shell armor or hydra regeneration.
 
 **Decision**
 
@@ -11271,7 +11321,7 @@
 
 **Description**
 
-> Deconstructs and reconstructs matter at will, down to molecular levels with training.
+> (Tag:kinesis)Deconstructs and reconstructs matter at will, down to molecular levels with training.
 
 **Flagged in reports**
 
@@ -11292,7 +11342,7 @@
 
 **Description**
 
-> Grants a 1km x 1km pocket dimension for storing almost anything, expanding as you grow stronger. Access requires physical portals, so beware.
+> (Tag:space)Grants a 1km x 1km pocket dimension for storing almost anything, expanding as you grow stronger. Access requires physical portals, so beware.
 
 **Decision**
 
@@ -11309,7 +11359,7 @@
 
 **Description**
 
-> Grants an inventory subspace preserving inanimate targets in stasis, holding 100 tons by default and scaling with physical stats. Stores by willing touch and withdraws within 1 meter of your body.
+> (Tag:space)Grants an inventory subspace preserving inanimate targets in stasis, holding 100 tons by default and scaling with physical stats. Stores by willing touch and withdraws within 1 meter of your body.
 
 **Decision**
 
@@ -11326,7 +11376,7 @@
 
 **Description**
 
-> Combines two objects into one with their desired traits, such as merging pebbles toward adamantite or iron swords into an unbreakable sword.
+> (Tag:alter)Combines two objects into one with their desired traits, such as merging pebbles toward adamantite or iron swords into an unbreakable sword.
 
 **Decision**
 
@@ -11343,7 +11393,7 @@
 
 **Description**
 
-> Provides a sonar to detect your surroundings.
+> (Tag:sense)(Tag:sound)Provides a sonar to detect your surroundings.
 
 **Decision**
 
@@ -11360,7 +11410,7 @@
 
 **Description**
 
-> Detects all lifeforms and shapes within a 100-meter radius, expandable with training.
+> (Tag:life)(Tag:sense)Detects all lifeforms and shapes within a 100-meter radius, expandable with training.
 
 **Decision**
 
@@ -11377,7 +11427,7 @@
 
 **Description**
 
-> Completely and absolutely controls any lesser being, but you must first prove they are lesser.
+> (Tag:infernal)Completely and absolutely controls any lesser being, but you must first prove they are lesser.
 
 **Flagged in reports**
 
@@ -11398,7 +11448,7 @@
 
 **Description**
 
-> Creates and extends controllable, reinforceable wood constructs from your body.
+> (Tag:nature)Creates and extends controllable, reinforceable wood constructs from your body.
 
 **Decision**
 
@@ -11432,7 +11482,7 @@
 
 **Description**
 
-> Manipulates trajectories of perceived projectiles: curve bullets around you, sharply turn thrown spears without losing momentum, or reverse fireballs. Stronger projectiles resist more.
+> (Tag:kinesis)Manipulates trajectories of perceived projectiles: curve bullets around you, sharply turn thrown spears without losing momentum, or reverse fireballs. Stronger projectiles resist more.
 
 **Decision**
 
@@ -11449,7 +11499,7 @@
 
 **Description**
 
-> Summons Hermit Purple as manipulable translucent purple vines that divine the future, with accuracy improvable through training.
+> (Tag:divination)(Tag:spirit)Summons Hermit Purple as manipulable translucent purple vines that divine the future, with accuracy improvable through training.
 
 **Decision**
 
@@ -11466,7 +11516,7 @@
 
 **Description**
 
-> Emits very powerful sleeping gas from your skin as purple mist.
+> (Tag:bio)Emits very powerful sleeping gas from your skin as purple mist.
 
 **Decision**
 
@@ -11483,7 +11533,7 @@
 
 **Description**
 
-> Lets you touch a target at range, making them feel your hands or mouth on a spot of your choosing. These are phantom sensations only and cannot physically affect them.
+> (Tag:mental)(Tag:spirit)(Noncon) Lets you touch a target at range, making them feel your hands or mouth on a spot of your choosing. These are phantom sensations only and cannot physically affect them.
 
 **Flagged in reports**
 
@@ -11504,7 +11554,7 @@
 
 **Description**
 
-> Lets you collar a defeated or submitting target, preventing them from moving to harm you and forcing them to obey your orders. Manifests as a translucent, hideable collar and chain around their neck.
+> (Tag:command)Lets you collar a defeated or submitting target, preventing them from moving to harm you and forcing them to obey your orders. Manifests as a translucent, hideable collar and chain around their neck.
 
 **Flagged in reports**
 
@@ -11525,7 +11575,7 @@
 
 **Description**
 
-> Lets you pass through physical objects as if they were water, without affecting their state or structural integrity.
+> (Tag:alter)Lets you pass through physical objects as if they were water, without affecting their state or structural integrity.
 
 **Decision**
 
@@ -11542,7 +11592,7 @@
 
 **Description**
 
-> A True Magic that lets you manipulate parallel worlds.
+> (Tag:space)(Tag:time)A True Magic that lets you manipulate parallel worlds.
 
 **Decision**
 
@@ -11559,7 +11609,7 @@
 
 **Description**
 
-> A True Magic that turns your soul into an immortal, high-dimensional entity generating infinite energy.
+> (Tag:recovery)(Tag:spirit)A True Magic that turns your soul into an immortal, high-dimensional entity generating infinite energy.
 
 **Decision**
 
@@ -11593,7 +11643,7 @@
 
 **Description**
 
-> Lets you transform into a werewolf with enhanced physical abilities and common werewolf traits. You can spread it to turn others into werewolves.
+> (Tag:beastkin)(Tag:enhancer)(Tag:recovery)(Tag:sense)(Tag:transformation)Lets you transform into a werewolf with enhanced physical abilities and common werewolf traits. You can spread it to turn others into werewolves.
 
 **Decision**
 
@@ -11610,7 +11660,7 @@
 
 **Description**
 
-> Lets you emit an aura of despair that makes people uneasy and weaker targets fearful.
+> (Tag:mental)(Tag:necro)Lets you emit an aura of despair that makes people uneasy and weaker targets fearful.
 
 **Decision**
 
@@ -11627,7 +11677,7 @@
 
 **Description**
 
-> Lets you emit an aura of despair that causes unease and fear toward you, overwhelming weaker-willed targets with unbearable fear and panic.
+> (Tag:mental)(Tag:necro)Lets you emit an aura of despair that causes unease and fear toward you, overwhelming weaker-willed targets with unbearable fear and panic.
 
 **Decision**
 
@@ -11644,7 +11694,7 @@
 
 **Description**
 
-> Lets you emit an aura of despair causing deep unease and fear, crushing weaker targets' morale and leaving them in despair, unable to retaliate.
+> (Tag:mental)(Tag:necro)Lets you emit an aura of despair causing deep unease and fear, crushing weaker targets' morale and leaving them in despair, unable to retaliate.
 
 **Decision**
 
@@ -11661,7 +11711,7 @@
 
 **Description**
 
-> Lets you emit an aura of despair causing unease, fear, and terror. You can drive weaker targets to insanity by focusing on them, and make armies of weaker foes kneel in hopelessness.
+> (Tag:mental)(Tag:necro)Lets you emit an aura of despair causing unease, fear, and terror. You can drive weaker targets to insanity by focusing on them, and make armies of weaker foes kneel in hopelessness.
 
 **Decision**
 
@@ -11678,7 +11728,7 @@
 
 **Description**
 
-> Lets you emit an aura of death and despair commanding fear, terror, and hopelessness. It can physically crush opponents to their knees, affects weaker opponents more, and can kill significantly weaker targets outright.
+> (Tag:mental)(Tag:necro)Lets you emit an aura of death and despair commanding fear, terror, and hopelessness. It can physically crush opponents to their knees, affects weaker opponents more, and can kill significantly weaker targets outright.
 
 **Decision**
 
@@ -11695,7 +11745,7 @@
 
 **Description**
 
-> Your body stretches and compresses like rubber, scaling with your physical stats.
+> (Tag:transformation)Your body stretches and compresses like rubber, scaling with your physical stats.
 
 **Decision**
 
@@ -11712,7 +11762,7 @@
 
 **Description**
 
-> Lets you destroy or disable magical constructs, costing more energy against stronger constructs.
+> (Tag:magic)Lets you destroy or disable magical constructs, costing more energy against stronger constructs.
 
 **Decision**
 
@@ -11729,7 +11779,7 @@
 
 **Description**
 
-> Lets you enforce the clauses and conditions of any contract you make. Conditions must be set while enforcement is active, and enforcement binds both you and your target.
+> (Tag:alter)Lets you enforce the clauses and conditions of any contract you make. Conditions must be set while enforcement is active, and enforcement binds both you and your target.
 
 **Decision**
 
@@ -11746,7 +11796,7 @@
 
 **Description**
 
-> Lets you create binding vows, promises with reality itself. Breaking a vow between parties inflicts the penalty regardless of strength. You can also make self-vows, sacrificing something to boost energy output, such as being weaker at night to be stronger by day.
+> (Tag:meta)Lets you create binding vows, promises with reality itself. Breaking a vow between parties inflicts the penalty regardless of strength. You can also make self-vows, sacrificing something to boost energy output, such as being weaker at night to be stronger by day.
 
 **Decision**
 
@@ -11763,7 +11813,7 @@
 
 **Description**
 
-> Lets you split your body apart and telekinetically float the parts around with your feet as the anchor. You are immune to slashing attacks while active, but limbs too far from your feet go inactive.
+> (Tag:transformation)Lets you split your body apart and telekinetically float the parts around with your feet as the anchor. You are immune to slashing attacks while active, but limbs too far from your feet go inactive.
 
 **Decision**
 
@@ -11780,7 +11830,7 @@
 
 **Description**
 
-> You are the embodiment of the Void, a vast devouring abyssal fluid that seeks to consume. You can shape it into tendrils, barbs, blades, fangs, mouths and more, defaulting to barbed tendrils; you can turn into void, shapeshift, corrupt living creatures to strengthen and control them though it can be resisted, and subsume beings to store them or drain their energy without gaining it.
+> (Tag:dark)(Tag:spirit)(Tag:transformation)You are the embodiment of the Void, a vast devouring abyssal fluid that seeks to consume. You can shape it into tendrils, barbs, blades, fangs, mouths and more, defaulting to barbed tendrils; you can turn into void, shapeshift, corrupt living creatures to strengthen and control them though it can be resisted, and subsume beings to store them or drain their energy without gaining it.
 
 **Decision**
 
@@ -11797,7 +11847,7 @@
 
 **Description**
 
-> Lets you exert incredible repulsive force, enough to wipe out entire streets as a normal human. Has a 5-second cooldown.
+> (Tag:kinetic)Lets you exert incredible repulsive force, enough to wipe out entire streets as a normal human. Has a 5-second cooldown.
 
 **Decision**
 
@@ -11814,7 +11864,7 @@
 
 **Description**
 
-> Lets you exert incredible attractive force to pull distant targets or bury a target under surrounding objects. Has a 5-second cooldown.
+> (Tag:kinetic)Lets you exert incredible attractive force to pull distant targets or bury a target under surrounding objects. Has a 5-second cooldown.
 
 **Decision**
 
@@ -11831,7 +11881,7 @@
 
 **Description**
 
-> Lets you create a circular zone where you control space like an operating table, swapping objects, amputating without harm, removing hearts, teleporting, and more with training. Maintaining the zone and using the power costs immense energy.
+> (Tag:alter)(Tag:space)Lets you create a circular zone where you control space like an operating table, swapping objects, amputating without harm, removing hearts, teleporting, and more with training. Maintaining the zone and using the power costs immense energy.
 
 **Decision**
 
@@ -11848,7 +11898,7 @@
 
 **Description**
 
-> Lets you transform into a giant Eastern Azure Dragon or hybrid at will, massively boosting physical abilities. Grants elemental breath attacks like fire, lightning, and air, plus fire clouds to lift things or fly.
+> (Tag:air)(Tag:draconic)(Tag:electric)(Tag:fire)(Tag:transformation)Lets you transform into a giant Eastern Azure Dragon or hybrid at will, massively boosting physical abilities. Grants elemental breath attacks like fire, lightning, and air, plus fire clouds to lift things or fly.
 
 **Decision**
 
@@ -11865,7 +11915,7 @@
 
 **Description**
 
-> Lets you transform into a giant golden Buddha statue, massively boosting physical abilities. Grants golden shockwaves and near-invulnerability to most damage in this form.
+> (Tag:transformation)Lets you transform into a giant golden Buddha statue, massively boosting physical abilities. Grants golden shockwaves and near-invulnerability to most damage in this form.
 
 **Decision**
 
@@ -11882,7 +11932,7 @@
 
 **Description**
 
-> Lets you transform into a cow or cow hybrid at will, boosting physical abilities, vitality, and stamina. Grants bovine traits while transformed.
+> (Tag:transformation)Lets you transform into a cow or cow hybrid at will, boosting physical abilities, vitality, and stamina. Grants bovine traits while transformed.
 
 **Decision**
 
@@ -11899,7 +11949,7 @@
 
 **Description**
 
-> Lets you transform into a sea snake or sea snake hybrid at will, greatly boosting physical abilities. Grants minor regeneration, water breathing and mobility, plus lethal poison breath.
+> (Tag:poison)(Tag:transformation)(Tag:water)Lets you transform into a sea snake or sea snake hybrid at will, greatly boosting physical abilities. Grants minor regeneration, water breathing and mobility, plus lethal poison breath.
 
 **Decision**
 
@@ -11916,7 +11966,7 @@
 
 **Description**
 
-> (Nsfw) Lets you heal ailments and negative status effects through sexual intimacy, including scars, old wounds, diseases, and mitigated curses. Greater intimacy and release increases effectiveness.
+> (Tag:nsfw)(Tag:recovery)(Nsfw) Lets you heal ailments and negative status effects through sexual intimacy, including scars, old wounds, diseases, and mitigated curses. Greater intimacy and release increases effectiveness.
 
 **Flagged in reports**
 
@@ -11937,7 +11987,7 @@
 
 **Description**
 
-> Lets you automatically assemble accessible parts into any item you have built before or know how to make. Subpar materials produce lesser versions.
+> (Tag:alter)Lets you automatically assemble accessible parts into any item you have built before or know how to make. Subpar materials produce lesser versions.
 
 **Decision**
 
@@ -11954,7 +12004,7 @@
 
 **Description**
 
-> Lets you imbue Pearl Jam into your cooking to drastically improve it. Based on food quality, ingredients, and your power, it gains effects like healing and curing illness.
+> (Tag:alter)(Tag:recovery)Lets you imbue Pearl Jam into your cooking to drastically improve it. Based on food quality, ingredients, and your power, it gains effects like healing and curing illness.
 
 **Decision**
 
@@ -11988,7 +12038,7 @@
 
 **Description**
 
-> Lets you run energy through an object or construct to build a detailed mental blueprint, revealing weaknesses and flaws.
+> (Tag:sense)Lets you run energy through an object or construct to build a detailed mental blueprint, revealing weaknesses and flaws.
 
 **Decision**
 
@@ -12005,7 +12055,7 @@
 
 **Description**
 
-> Passively boosts your smell to supernatural levels, letting you pick out one scent in a hundred and track week-old scents across a city. Can be further augmented with energy.
+> (Tag:passive)(Tag:sense)Passively boosts your smell to supernatural levels, letting you pick out one scent in a hundred and track week-old scents across a city. Can be further augmented with energy.
 
 **Decision**
 
@@ -12022,7 +12072,7 @@
 
 **Description**
 
-> Passively boosts your sight to supernatural levels, letting you see accurately from a hundred kilometers away. Can be further augmented with energy.
+> (Tag:passive)(Tag:sense)Passively boosts your sight to supernatural levels, letting you see accurately from a hundred kilometers away. Can be further augmented with energy.
 
 **Decision**
 
@@ -12039,7 +12089,7 @@
 
 **Description**
 
-> Passively boosts your hearing to supernatural levels, letting you hear from kilometers away and pick out a coin drop in a busy mall. Can be further augmented with energy.
+> (Tag:passive)(Tag:sense)Passively boosts your hearing to supernatural levels, letting you hear from kilometers away and pick out a coin drop in a busy mall. Can be further augmented with energy.
 
 **Decision**
 
@@ -12056,7 +12106,7 @@
 
 **Description**
 
-> "Complete Victory" If you make an opponent recognize their complete and utter defeat to you, you permanently take one of their abilities. Works only once per target.
+> (Tag:alter)(Tag:meta)"Complete Victory" If you make an opponent recognize their complete and utter defeat to you, you permanently take one of their abilities. Works only once per target.
 
 **Decision**
 
@@ -12073,7 +12123,7 @@
 
 **Description**
 
-> Lets you swap one of your powers with another person's power with their consent, as long as both abilities share the same rank.
+> (Tag:meta)Lets you swap one of your powers with another person's power with their consent, as long as both abilities share the same rank.
 
 **Decision**
 
@@ -12090,7 +12140,7 @@
 
 **Description**
 
-> "Bang" Lets you point your index finger, say bang, and blast the target with telekinetic energy.
+> (Tag:kinetic)"Bang" Lets you point your index finger, say bang, and blast the target with telekinetic energy.
 
 **Decision**
 
@@ -12107,7 +12157,7 @@
 
 **Description**
 
-> Lets you grab and manipulate objects in sensory range with energy, shaping telekinesis like an invisible forcefield. Greater applied force costs more energy.
+> (Tag:kinetic)Lets you grab and manipulate objects in sensory range with energy, shaping telekinesis like an invisible forcefield. Greater applied force costs more energy.
 
 **Decision**
 
@@ -12124,7 +12174,7 @@
 
 **Description**
 
-> Lets you manipulate objects directly with willpower rather than outside force. Strong enough to throw skyscrapers and tear up streets at base level, improvable with training.
+> (Tag:kinesis)(Tag:kinetic)Lets you manipulate objects directly with willpower rather than outside force. Strong enough to throw skyscrapers and tear up streets at base level, improvable with training.
 
 **Decision**
 
@@ -12141,7 +12191,7 @@
 
 **Description**
 
-> Your telekinesis is second to none, usable as forcefield, invisible force, or direct object manipulation, limited only by training. Rivals or exceeds Tatsumaki from One Punch Man.
+> (Tag:kinesis)(Tag:kinetic)Your telekinesis is second to none, usable as forcefield, invisible force, or direct object manipulation, limited only by training. Rivals or exceeds Tatsumaki from One Punch Man.
 
 **Decision**
 
@@ -12158,7 +12208,7 @@
 
 **Description**
 
-> Once this ability has spent 24 total hours in an active slot, permanently add a regular grown man's strength and endurance to your stats. Repeatable.
+> (Tag:growth)(Tag:passive)Once this ability has spent 24 total hours in an active slot, permanently add a regular grown person's strength and endurance to your stats. Repeatable.
 
 **Decision**
 
@@ -12175,7 +12225,7 @@
 
 **Description**
 
-> While active, all training is twice as effective, doubling for each empty ability slot: 1 empty slot = 2x, 2 = 4x, 3 = 8x, etc.
+> (Tag:growth)(Tag:meta)(Tag:passive)While active, all training is twice as effective, doubling for each empty ability slot: 1 empty slot = 2x, 2 = 4x, 3 = 8x, etc.
 
 **Decision**
 
@@ -12192,7 +12242,7 @@
 
 **Description**
 
-> Lets you accurately gauge an opponent's abilities and power level even if they try to hide them.
+> (Tag:divination)Lets you accurately gauge an opponent's abilities and power level even if they try to hide them.
 
 **Decision**
 
@@ -12209,7 +12259,7 @@
 
 **Description**
 
-> Lets you view a target's danger to you as safe, moderate, dangerous, lethal, or certain death.
+> (Tag:divination)Lets you view a target's danger to you as safe, moderate, dangerous, lethal, or certain death.
 
 **Decision**
 
@@ -12226,7 +12276,7 @@
 
 **Description**
 
-> Lets you imbue your blood with vitality so drinkers are healed, with more vitality giving more healing. Moderate imbuing is harmless but leaves you weakened and exhausted.
+> (Tag:life)(Tag:recovery)Lets you imbue your blood with vitality so drinkers are healed, with more vitality giving more healing. Moderate imbuing is harmless but leaves you weakened and exhausted.
 
 **Decision**
 
@@ -12243,7 +12293,7 @@
 
 **Description**
 
-> Lets you drain an opponent's strength through touch and temporarily add it to your own, with victims slowly recovering. Killing with it permanently grants 10% of their physical abilities. Stronger opponents drain slower.
+> (Tag:life)Lets you drain an opponent's strength through touch and temporarily add it to your own, with victims slowly recovering. Killing with it permanently grants 10% of their physical abilities. Stronger opponents drain slower.
 
 **Decision**
 
@@ -12260,7 +12310,7 @@
 
 **Description**
 
-> Lets you tap inner demonic power to transform into a Devil form, greatly enhancing physical abilities and power. As a normal human you could tear tanks apart barehanded, scaling with your abilities.
+> (Tag:enhancer)(Tag:infernal)(Tag:transformation)Lets you tap inner demonic power to transform into a Devil form, greatly enhancing physical abilities and power. As a normal human you could tear tanks apart barehanded, scaling with your abilities.
 
 **Decision**
 
@@ -12277,7 +12327,7 @@
 
 **Description**
 
-> Lets you ascend your Devil form to its apotheosis, massively boosting power and physical abilities and wielding pure demonic power to boost existing abilities. Burns stamina and health extremely quickly; a wall-breaking fireball could annihilate city blocks.
+> (Tag:enhancer)(Tag:infernal)(Tag:transformation)Lets you ascend your Devil form to its apotheosis, massively boosting power and physical abilities and wielding pure demonic power to boost existing abilities. Burns stamina and health extremely quickly; a wall-breaking fireball could annihilate city blocks.
 
 **Decision**
 
@@ -12294,7 +12344,7 @@
 
 **Description**
 
-> Lets you transform into an angel or angel hybrid, boosting physical stats and energy. Lets you infuse abilities and items with holy energy and fly with wings.
+> (Tag:holy)Lets you transform into an angel or angel hybrid, boosting physical stats and energy. Lets you infuse abilities and items with holy energy and fly with wings.
 
 **Decision**
 
@@ -12311,7 +12361,7 @@
 
 **Description**
 
-> Lets you transform into an archangel or archangel hybrid, massively boosting physical stats. Lets you infuse abilities and items with pure holy energy and intuitively use blessings, healing, protection, and all Holy Abilities below Elite Rank.
+> (Tag:holy)Lets you transform into an archangel or archangel hybrid, massively boosting physical stats. Lets you infuse abilities and items with pure holy energy and intuitively use blessings, healing, protection, and all Holy Abilities below Elite Rank.
 
 **Decision**
 
@@ -12328,7 +12378,7 @@
 
 **Description**
 
-> Lets you place RULES on the world or objects, only as strong as you are. Examples include strengthening an object or granting yourself "Can grab lightning." Requires knowing a target's self-associated name, except for objects. Limited to 2 orders at once, increasable with training; stronger orders cost more energy.
+> (Tag:alter)Lets you place RULES on the world or objects, only as strong as you are. Examples include strengthening an object or granting yourself "Can grab lightning." Requires knowing a target's self-associated name, except for objects. Limited to 2 orders at once, increasable with training; stronger orders cost more energy.
 
 **Decision**
 
@@ -12345,7 +12395,7 @@
 
 **Description**
 
-> Lets you actualize words written in the air, such as FREEZE to freeze, IMMOVABLE to pin mid-air, and BURN to ignite. Words too strong for your level fail.
+> (Tag:alter)(Tag:ice)Lets you actualize words written in the air, such as FREEZE to freeze, IMMOVABLE to pin mid-air, and BURN to ignite. Words too strong for your level fail.
 
 **Decision**
 
@@ -12362,7 +12412,7 @@
 
 **Description**
 
-> Lets you convert lifeforce into Life Fibers, stronger than any manmade material yet more elastic than silk. You can freely control them and surround yourself to significantly boost physical abilities.
+> (Tag:life)Lets you convert lifeforce into Life Fibers, stronger than any artificial material yet more elastic than silk. You can freely control them and surround yourself to significantly boost physical abilities.
 
 **Decision**
 
@@ -12379,7 +12429,7 @@
 
 **Description**
 
-> Your body is infused with Life Fibers, granting massively superhuman physical abilities, incredible healing, and immense vitality. Wounds pull back together, even rejoining halves split apart.
+> (Tag:life)(Tag:transformation)Your body is infused with Life Fibers, granting massively superhuman physical abilities, incredible healing, and immense vitality. Wounds pull back together, even rejoining halves split apart.
 
 **Decision**
 
@@ -12396,7 +12446,7 @@
 
 **Description**
 
-> Lets you conjure infernal barbed chains to bind foes or wield as weapons.
+> (Tag:infernal)Lets you conjure infernal barbed chains to bind foes or wield as weapons.
 
 **Decision**
 
@@ -12413,7 +12463,7 @@
 
 **Description**
 
-> One Punch Man, Puri Puri Prisoner - For each % of skin uncovered, energy output and physical abilities rise by the same %, reaching 2x when fully naked.
+> (Tag:enhancer)(Tag:holy)(Tag:passive)One Punch Man, Puri Puri Prisoner - For each % of skin uncovered, energy output and physical abilities rise by the same %, reaching 2x when fully naked.
 
 **Flagged in reports**
 
@@ -12434,7 +12484,7 @@
 
 **Description**
 
-> While active, you cannot use energy or mana in any way. In exchange, physical abilities rise with your energy reserves, you are immune to spells cast directly on you, and you cannot be detected or directly targeted by magical means.
+> (Tag:enhancer)(Tag:meta)While active, you cannot use energy or mana in any way. In exchange, physical abilities rise with your energy reserves, you are immune to spells cast directly on you, and you cannot be detected or directly targeted by magical means.
 
 **Decision**
 
@@ -12451,7 +12501,7 @@
 
 **Description**
 
-> Lets you transform into a snow tiger or hybrid, gaining enhanced senses, predatory instincts, natural weapons, increased physical stats, and tiger traits.
+> (Tag:transformation)Lets you transform into a snow tiger or hybrid, gaining enhanced senses, predatory instincts, natural weapons, increased physical stats, and tiger traits.
 
 **Decision**
 
@@ -12468,7 +12518,7 @@
 
 **Description**
 
-> Lets you generate, control, create, and turn into mud or bottomless swamp. You can drag objects or people inside to store them in stasis.
+> (Tag:earth)(Tag:transformation)(Tag:water)Lets you generate, control, create, and turn into mud or bottomless swamp. You can drag objects or people inside to store them in stasis.
 
 **Decision**
 
@@ -12485,7 +12535,7 @@
 
 **Description**
 
-> See https://jujutsu-kaisen.fandom.com/wiki/Idle_Death_Gamble
+> (Tag:alter)(Tag:spirit)(Tag:transformation)See https://jujutsu-kaisen.fandom.com/wiki/Idle_Death_Gamble
 
 **Decision**
 
@@ -12502,7 +12552,7 @@
 
 **Description**
 
-> Lets you form a humanoid energy construct around your body with exceptional defense for attack and defense, while retaining selective intangibility to act from inside. Starts skeletal, growing stronger and more complete with training.
+> (Tag:spirit)Lets you form a humanoid energy construct around your body with exceptional defense for attack and defense, while retaining selective intangibility to act from inside. Starts skeletal, growing stronger and more complete with training.
 
 **Decision**
 
@@ -12536,7 +12586,7 @@
 
 **Description**
 
-> Lets you form Susanoo's ribs from your energy as durable, selectively intangible defense you can attack from inside.
+> (Tag:spirit)Lets you form Susanoo's ribs from your energy as durable, selectively intangible defense you can attack from inside.
 
 **Decision**
 
@@ -12553,7 +12603,7 @@
 
 **Description**
 
-> Lets you form an adjustable, incredibly durable circular or dome barrier. Damaging it reflects lacerations onto attackers, but cracking it causes internal damage and coughing blood, with breaking causing worse backlash. Training can alter shape, size, and number.
+> (Tag:neutral)Lets you form an adjustable, incredibly durable circular or dome barrier. Damaging it reflects lacerations onto attackers, but cracking it causes internal damage and coughing blood, with breaking causing worse backlash. Training can alter shape, size, and number.
 
 **Decision**
 
@@ -12570,7 +12620,7 @@
 
 **Description**
 
-> "Don't forget the hyphen!" Bitten by a radioactive spider, you gain enhanced physical abilities, wall-climbing, natural web production, and precognition, without spider-totem hassle.
+> (Tag:bio)(Tag:divination)(Tag:enhancer)(Tag:insectoid)"Don't forget the hyphen!" Bitten by a radioactive spider, you gain enhanced physical abilities, wall-climbing, natural web production, and precognition, without spider-totem hassle.
 
 **Decision**
 
@@ -12587,7 +12637,7 @@
 
 **Description**
 
-> Cloaks you in a killer's aura, boosting instincts into a sixth sense for striking, weak spots, and anticipating movements. Grants the senses of a veteran killer.
+> (Tag:martial)(Tag:mental)Cloaks you in a killer's aura, boosting instincts into a sixth sense for striking, weak spots, and anticipating movements. Grants the senses of a veteran killer.
 
 **Decision**
 
@@ -12604,7 +12654,7 @@
 
 **Description**
 
-> Lets you phase through objects and let objects phase through others. Unphasing inside another object causes massive damage ignoring conventional durability.
+> (Tag:movement)(Tag:space)Lets you phase through objects and let objects phase through others. Unphasing inside another object causes massive damage ignoring conventional durability.
 
 **Flagged in reports**
 
@@ -12625,7 +12675,7 @@
 
 **Description**
 
-> Lets you absorb contacting energy of all kinds - kinetic, thermal, radiation, etc. - and convert it to your own. Absorbing strains the body and overuse causes damage.
+> (Tag:neutral)Lets you absorb contacting energy of all kinds - kinetic, thermal, radiation, etc. - and convert it to your own. Absorbing strains the body and overuse causes damage.
 
 **Decision**
 
@@ -12642,7 +12692,7 @@
 
 **Description**
 
-> Conjures a simple attributeless energy arrow projectile whose direction you can curve.
+> (Tag:neutral)Conjures a simple attributeless energy arrow projectile whose direction you can curve.
 
 **Decision**
 
@@ -12659,7 +12709,7 @@
 
 **Description**
 
-> The longer you keep moving, the faster you go, up to 500%. Limit expandable with training.
+> (Tag:movement)The longer you keep moving, the faster you go, up to 500%. Limit expandable with training.
 
 **Decision**
 
@@ -12676,7 +12726,7 @@
 
 **Description**
 
-> Lets you build kinetic energy in limbs through repeated movement, then release it for bursts of power and speed. Stockpiled energy slowly fades if unused.
+> (Tag:enhancer)(Tag:kinetic)Lets you build kinetic energy in limbs through repeated movement, then release it for bursts of power and speed. Stockpiled energy slowly fades if unused.
 
 **Decision**
 
@@ -12693,7 +12743,7 @@
 
 **Description**
 
-> Your eyes can glow. Provides no tangible advantage but looks cool.
+> (Tag:light)(Tag:ocular)Your eyes can glow. Provides no tangible advantage but looks cool.
 
 **Decision**
 
@@ -12710,7 +12760,7 @@
 
 **Description**
 
-> Your skin is slippery like oiled ice, making grappling you extremely annoying.
+> (Tag:alter)Your skin is slippery like oiled ice, making grappling you extremely annoying.
 
 **Decision**
 
@@ -12727,7 +12777,7 @@
 
 **Description**
 
-> Lets you leave waypoints to warp to at any time. Setting or traveling takes 10 seconds. Max waypoints equal ability slot count x 3.
+> (Tag:movement)Lets you leave waypoints to warp to at any time. Setting or traveling takes 10 seconds. Max waypoints equal ability slot count x 3.
 
 **Decision**
 
@@ -12744,7 +12794,7 @@
 
 **Description**
 
-> Wood Release lets you create, shape, and control wood and plant life. Roots you create can absorb and suppress energy/mana.
+> (Tag:nature)Wood Release lets you create, shape, and control wood and plant life. Roots you create can absorb and suppress energy/mana.
 
 **Decision**
 
@@ -12761,7 +12811,7 @@
 
 **Description**
 
-> Lets you form three-dimensional translucent constructs like spheres and cubes that, once launched, reduce anything passing through to dust on a molecular level.
+> (Tag:space)Lets you form three-dimensional translucent constructs like spheres and cubes that, once launched, reduce anything passing through to dust on a molecular level.
 
 **Flagged in reports**
 
@@ -12782,7 +12832,7 @@
 
 **Description**
 
-> Lets you drain others' skills through touch to worsen theirs and improve yours, e.g. swordsmanship. Cannot exceed the victim's level, so draining 1000 novices will not make you a sword god.
+> (Tag:growth)(Tag:mental)Lets you drain others' skills through touch to worsen theirs and improve yours, e.g. swordsmanship. Cannot exceed the victim's level, so draining 1000 novices will not make you a sword god.
 
 **Decision**
 
@@ -12799,7 +12849,7 @@
 
 **Description**
 
-> You move 10x faster but influence the world 10x less. Punches hit 10x weaker and air resistance hits 10x stronger, etc.
+> (Tag:movement)You move 10x faster but influence the world 10x less. Punches hit 10x weaker and air resistance hits 10x stronger, etc.
 
 **Decision**
 
@@ -12816,7 +12866,7 @@
 
 **Description**
 
-> While standing still, you turn invisible by bending light around yourself.
+> (Tag:stealth)While standing still, you turn invisible by bending light around yourself.
 
 **Decision**
 
@@ -12833,7 +12883,7 @@
 
 **Description**
 
-> Grants the Six Paths Technique: Deva for attraction and repulsion, Asura for body alteration, Human for soul extraction, Animal for summons, Preta for chakra absorption, and Naraka via the King of Hell, plus the Outer Path over life and death to revive the dead. Also grants energy-flow sight and unparalleled sensory abilities.
+> (Tag:kinetic)(Tag:necro)(Tag:ocular)(Tag:recovery)(Tag:spirit)(Tag:summon)(Tag:transformation)Grants the Six Paths Technique: Deva for attraction and repulsion, Asura for body alteration, Human for soul extraction, Animal for summons, Preta for chakra absorption, and Naraka via the King of Hell, plus the Outer Path over life and death to revive the dead. Also grants energy-flow sight and unparalleled sensory abilities.
 
 **Flagged in reports**
 
@@ -12854,7 +12904,7 @@
 
 **Description**
 
-> Lets you slowly draw small objects toward you, handy for grabbing the remote without leaving bed.
+> (Tag:kinetic)Lets you slowly draw small objects toward you, handy for grabbing the remote without leaving bed.
 
 **Decision**
 
@@ -12871,7 +12921,7 @@
 
 **Description**
 
-> Lets you absorb radiation for regeneration and boosted physical abilities while irradiated. Absorbed radiation can permanently improve physical abilities and energy reserves.
+> (Tag:enhancer)(Tag:poison)(Tag:recovery)Lets you absorb radiation for regeneration and boosted physical abilities while irradiated. Absorbed radiation can permanently improve physical abilities and energy reserves.
 
 **Decision**
 
@@ -12888,7 +12938,7 @@
 
 **Description**
 
-> Lets you accurately predict a given area's weather for a week.
+> (Tag:divination)Lets you accurately predict a given area's weather for a week.
 
 **Decision**
 
@@ -12905,7 +12955,7 @@
 
 **Description**
 
-> Lets you control weather and atmosphere passively or actively, including lightning, water conjuring, past phenomena, storms, air composition, and wind. Can act autonomously to defend you or follow intent.
+> (Tag:air)(Tag:alter)(Tag:electric)(Tag:water)Lets you control weather and atmosphere passively or actively, including lightning, water conjuring, past phenomena, storms, air composition, and wind. Can act autonomously to defend you or follow intent.
 
 **Decision**
 
@@ -12922,7 +12972,7 @@
 
 **Description**
 
-> Lets you directly damage a target by pointing, causing lacerations.
+> (Tag:infernal)Lets you directly damage a target by pointing, causing lacerations.
 
 **Decision**
 
@@ -12939,7 +12989,7 @@
 
 **Description**
 
-> Lets you conjure a dark-energy orb to hurl as a projectile.
+> (Tag:dark)Lets you conjure a dark-energy orb to hurl as a projectile.
 
 **Decision**
 
@@ -12973,7 +13023,7 @@
 
 **Description**
 
-> Lets you see a viewed target's full inventory, clothing, carried items, and a quick summary.
+> (Tag:divination)Lets you see a viewed target's full inventory, clothing, carried items, and a quick summary.
 
 **Decision**
 
@@ -12990,7 +13040,7 @@
 
 **Description**
 
-> Lets you ripen and mature organic objects that cannot resist.
+> (Tag:necro)Lets you ripen and mature organic objects that cannot resist.
 
 **Decision**
 
@@ -13007,7 +13057,7 @@
 
 **Description**
 
-> Lets you forcefully activate and use a touched target's ability while they are willing or unable to resist.
+> (Tag:alter)Lets you forcefully activate and use a touched target's ability while they are willing or unable to resist.
 
 **Decision**
 
@@ -13024,7 +13074,7 @@
 
 **Description**
 
-> Lets you telekinetically manipulate objects you touch, such as crumpling a car. Less effective on stronger targets.
+> (Tag:kinesis)(Tag:kinetic)Lets you telekinetically manipulate objects you touch, such as crumpling a car. Less effective on stronger targets.
 
 **Decision**
 
@@ -13041,7 +13091,7 @@
 
 **Description**
 
-> (Tech) Lets you build explosion-related technology and operate it, from simple explosives to time-freezing, glass-transmuting, or teleporting bombs, drawing on your abilities for inspiration.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build explosion-related technology and operate it, from simple explosives to time-freezing, glass-transmuting, or teleporting bombs, drawing on your abilities for inspiration.
 
 **Decision**
 
@@ -13058,7 +13108,7 @@
 
 **Description**
 
-> (Tech) Lets you build efficiency-related technology and streamlined versions of existing tech.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build efficiency-related technology and streamlined versions of existing tech.
 
 **Decision**
 
@@ -13075,7 +13125,7 @@
 
 **Description**
 
-> (Tech) Lets you build drone-related technology, such as surveillance, turret, or building drones.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build drone-related technology, such as surveillance, turret, or building drones.
 
 **Decision**
 
@@ -13092,7 +13142,7 @@
 
 **Description**
 
-> (Tech) Lets you build biology and minion-creation tech, including custom plants, drugs, clones, and homunculi from available materials. Can draw inspiration from your abilities and traits.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Lets you build biology and minion-creation tech, including custom plants, drugs, clones, and homunculi from available materials. Can draw inspiration from your abilities and traits.
 
 **Decision**
 
@@ -13109,7 +13159,7 @@
 
 **Description**
 
-> (Tech) Lets you build prosthetic and limb-replacement tech like bionic arms, mecha legs, and weaponized arms with hidden guns and blades. Can draw inspiration from your abilities and traits.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build prosthetic and limb-replacement tech like bionic arms, mecha legs, and weaponized arms with hidden guns and blades. Can draw inspiration from your abilities and traits.
 
 **Decision**
 
@@ -13126,7 +13176,7 @@
 
 **Description**
 
-> (Tech) Lets you build cryonics-related tech like stasis chambers, frost grenades, ice guns, and fridges. You'd make Doctor Freeze proud.
+> (Tag:ice)(Tag:tech)(Tag:tinker)(Tech) Lets you build cryonics-related tech like stasis chambers, frost grenades, ice guns, and fridges. You'd make Doctor Freeze proud.
 
 **Decision**
 
@@ -13143,7 +13193,7 @@
 
 **Description**
 
-> (Tech) Lets you build pyrotechnics-related tech like flamethrowers, super napalm, and missiles. You'd make Firefly proud.
+> (Tag:fire)(Tag:tech)(Tag:tinker)(Tech) Lets you build pyrotechnics-related tech like flamethrowers, super napalm, and missiles. You'd make Firefly proud.
 
 **Decision**
 
@@ -13160,7 +13210,7 @@
 
 **Description**
 
-> (Tech) Lets you build hacking-related tech for hijacking and interfacing with other technology.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build hacking-related tech for hijacking and interfacing with other technology.
 
 **Decision**
 
@@ -13177,7 +13227,7 @@
 
 **Description**
 
-> (Tech) Lets you build AI-related tech, from smart assistants and sentient companions to full Ultron.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build AI-related tech, from smart assistants and sentient companions to full Ultron.
 
 **Decision**
 
@@ -13194,7 +13244,7 @@
 
 **Description**
 
-> (Tech) Lets you build biology-related tech for living organisms, including diseases, elixirs, clones, healing pods, and custom races.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Lets you build biology-related tech for living organisms, including diseases, elixirs, clones, healing pods, and custom races.
 
 **Decision**
 
@@ -13211,7 +13261,7 @@
 
 **Description**
 
-> (Tech) Lets you build vehicle and transportation tech, like laser-cannon cloaked cars or supersonic wave-immune ships. If it is a vehicle, you can build it.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build vehicle and transportation tech, like laser-cannon cloaked cars or supersonic wave-immune ships. If it is a vehicle, you can build it.
 
 **Decision**
 
@@ -13228,7 +13278,7 @@
 
 **Description**
 
-> (Tech) Lets you build maintenance and repair tech. You can also spot flaws and fix almost any technology.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build maintenance and repair tech. You can also spot flaws and fix almost any technology.
 
 **Decision**
 
@@ -13245,7 +13295,7 @@
 
 **Description**
 
-> (Tech) Lets you build transportation and travel tech like teleportation pods, hypersonic cars, and wingsuits. If it gets you from A to B, you can probably build it.
+> (Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Lets you build transportation and travel tech like teleportation pods, hypersonic cars, and wingsuits. If it gets you from A to B, you can probably build it.
 
 **Decision**
 
@@ -13262,7 +13312,7 @@
 
 **Description**
 
-> (Tech) Lets you build teleportation tech like telepads and teleportation pods.
+> (Tag:movement)(Tag:space)(Tag:tech)(Tag:tinker)(Tech) Lets you build teleportation tech like telepads and teleportation pods.
 
 **Decision**
 
@@ -13279,7 +13329,7 @@
 
 **Description**
 
-> (Tech) Lets you build melee-weapon tech like fire swords, vibration blades, and grenade hammers. If it is a non-magical melee weapon, you can probably build it.
+> (Tag:martial)(Tag:tech)(Tag:tinker)(Tech) Lets you build melee-weapon tech like fire swords, vibration blades, and grenade hammers. If it is a non-magical melee weapon, you can probably build it.
 
 **Decision**
 
@@ -13296,7 +13346,7 @@
 
 **Description**
 
-> (Tech) Lets you build ranged-weapon tech like laser cannons, revolvers, and missile batteries.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build ranged-weapon tech like laser cannons, revolvers, and missile batteries.
 
 **Decision**
 
@@ -13313,7 +13363,7 @@
 
 **Description**
 
-> (Tech) Lets you build capture and restraint tech such as power-suppressing cuffs, containment foam, and durable cells.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build capture and restraint tech such as power-suppressing cuffs, containment foam, and durable cells.
 
 **Decision**
 
@@ -13330,7 +13380,7 @@
 
 **Description**
 
-> (Tech) Lets you build construction tech such as super cement, reinforced steel, and highly efficient schematics.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build construction tech such as super cement, reinforced steel, and highly efficient schematics.
 
 **Decision**
 
@@ -13347,7 +13397,7 @@
 
 **Description**
 
-> (Tech) Lets you build cloaking tech like invisibility fields, anti-radars, and sound suppression.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build cloaking tech like invisibility fields, anti-radars, and sound suppression.
 
 **Decision**
 
@@ -13364,7 +13414,7 @@
 
 **Description**
 
-> (Tech) Lets you build data-analysis tech like scouters, observation drones, and predictive programs.
+> (Tag:divination)(Tag:tinker)(Tech) Lets you build data-analysis tech like scouters, observation drones, and predictive programs.
 
 **Decision**
 
@@ -13381,7 +13431,7 @@
 
 **Description**
 
-> (Tech) Lets you build giant mechs like Evangelion, Code Geass, or Gundam.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build giant mechs like Evangelion, Code Geass, or Gundam.
 
 **Decision**
 
@@ -13398,7 +13448,7 @@
 
 **Description**
 
-> (Tech) Lets you build technology from the Cyberpunk 2077 universe.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build technology from the Cyberpunk 2077 universe.
 
 **Decision**
 
@@ -13415,7 +13465,7 @@
 
 **Description**
 
-> (Tech) Lets you build technology from the Metal Gear universe.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build technology from the Metal Gear universe.
 
 **Decision**
 
@@ -13432,7 +13482,7 @@
 
 **Description**
 
-> (Tech) Lets you build android and artificial-lifeform construction tech.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build android and artificial-lifeform construction tech.
 
 **Decision**
 
@@ -13449,7 +13499,7 @@
 
 **Description**
 
-> (Tech) Lets you build technology from the RWBY Universe, including Dust synthesis.
+> (Tag:tech)(Tag:tinker)(Tech) Lets you build technology from the RWBY Universe, including Dust synthesis.
 
 **Decision**
 
@@ -13466,7 +13516,7 @@
 
 **Description**
 
-> (Tech) Build technological constructs or contraptions from the Code Geass universe.
+> (Tag:tech)(Tag:tinker)(Tech) Build technological constructs or contraptions from the Code Geass universe.
 
 **Decision**
 
@@ -13483,7 +13533,7 @@
 
 **Description**
 
-> (Tech) Build tech related to personal computers, such as small supercomputers, etc.
+> (Tag:tech)(Tag:tinker)(Tech) Build tech related to personal computers, such as small supercomputers, etc.
 
 **Decision**
 
@@ -13500,7 +13550,7 @@
 
 **Description**
 
-> (Tech) Build tech related to games or entertainment programs. You are over 100x more efficient than an average experienced full dev team at making them.
+> (Tag:tech)(Tag:tinker)(Tech) Build tech related to games or entertainment programs. You are over 100x more efficient than an average experienced full dev team at making them.
 
 **Decision**
 
@@ -13517,7 +13567,7 @@
 
 **Description**
 
-> (Tech) Build tech emulating Dreadon from Calamity Mod, harnessing practically any energy. Includes hyper light chainsaws, black hole bombs, cosmic-energy godslaying mechs, a godslaying sword of damned souls, and an instant universe-range sniper; limits are creativity, resources, and time.
+> (Tag:tech)(Tag:tinker)(Tech) Build tech emulating Dreadon from Calamity Mod, harnessing practically any energy. Includes hyper light chainsaws, black hole bombs, cosmic-energy godslaying mechs, a godslaying sword of damned souls, and an instant universe-range sniper; limits are creativity, resources, and time.
 
 **Decision**
 
@@ -13534,7 +13584,7 @@
 
 **Description**
 
-> (Tech) Build tech related to sensors, sensing, and tracking like radars, sonars, magic sensors, trackers, etc.
+> (Tag:sense)(Tag:tech)(Tag:tinker)(Tech) Build tech related to sensors, sensing, and tracking like radars, sonars, magic sensors, trackers, etc.
 
 **Decision**
 
@@ -13551,7 +13601,7 @@
 
 **Description**
 
-> (Tech) Build technological constructs or contraptions from the Star Wars universe, including Kyber Crystal synthesis.
+> (Tag:tech)(Tag:tinker)(Tech) Build technological constructs or contraptions from the Star Wars universe, including Kyber Crystal synthesis.
 
 **Decision**
 
@@ -13568,7 +13618,7 @@
 
 **Description**
 
-> (Tech) Build tech related to defense or securement, like barrier projectors, reinforced chassis, turrets, etc.
+> (Tag:tech)(Tag:tinker)(Tech) Build tech related to defense or securement, like barrier projectors, reinforced chassis, turrets, etc.
 
 **Decision**
 
@@ -13585,7 +13635,7 @@
 
 **Description**
 
-> (Tech) Build armored suits or power armor such as Iron Man Suit or Fallout Power Armor. Any powered suit up to 5x your size; larger counts as a mech.
+> (Tag:tech)(Tag:tinker)(Tech) Build armored suits or power armor such as Iron Man Suit or Fallout Power Armor. Any powered suit up to 5x your size; larger counts as a mech.
 
 **Decision**
 
@@ -13602,7 +13652,7 @@
 
 **Description**
 
-> (Tech) Build constructs from the Fallout universe, such as Fusion Batteries, Chems, Power Armor, Stealth Boys, etc. Excludes Big MT Technology.
+> (Tag:tech)(Tag:tinker)(Tech) Build constructs from the Fallout universe, such as Fusion Batteries, Chems, Power Armor, Stealth Boys, etc. Excludes Big MT Technology.
 
 **Decision**
 
@@ -13619,7 +13669,7 @@
 
 **Description**
 
-> Toggle objects or targets on and off; does not work on living beings. Applies to radios and even your own abilities.
+> (Tag:alter)(Tag:meta)Toggle objects or targets on and off; does not work on living beings. Applies to radios and even your own abilities.
 
 **Flagged in reports**
 
@@ -13640,7 +13690,7 @@
 
 **Description**
 
-> (Tech) "Talk to the power" to communicate with and command machines with code or interfaces. Resistance equals firewall strength.
+> (Tag:mental)(Tag:tech)(Tech) "Talk to the power" to communicate with and command machines with code or interfaces. Resistance equals firewall strength.
 
 **Decision**
 
@@ -13657,7 +13707,7 @@
 
 **Description**
 
-> Drain lifeforce from grabbed people into yourself if they cannot resist. You can also coat your hand for extra damage or spread it as a medium-sized shield.
+> (Tag:dark)(Tag:infernal)(Tag:martial)(Tag:recovery)(Tag:spirit)Drain lifeforce from grabbed people into yourself if they cannot resist. You can also coat your hand for extra damage or spread it as a medium-sized shield.
 
 **Decision**
 
@@ -13674,7 +13724,7 @@
 
 **Description**
 
-> Temporarily fuse your familiars together or with yourself. Stronger fusions cost more energy, and maintaining fusion drains energy over time.
+> (Tag:spirit)(Tag:summon)Temporarily fuse your familiars together or with yourself. Stronger fusions cost more energy, and maintaining fusion drains energy over time.
 
 **Decision**
 
@@ -13691,7 +13741,7 @@
 
 **Description**
 
-> You are a pure-blooded Viltrumite with insane durability, space flight, incredible physical and sensory abilities, and a highly adaptable body.
+> (Tag:transformation)You are a pure-blooded Viltrumite with insane durability, space flight, incredible physical and sensory abilities, and a highly adaptable body.
 
 **Decision**
 
@@ -13708,7 +13758,7 @@
 
 **Description**
 
-> You are a pure-blood Kryptonian; yellow sun supercharges your cells, granting heat vision, ice breath, tactile telekinesis, flight, super physique, and all other Kryptonian abilities. Longer sunlight soak strengthens these abilities and permanently improves energy reserves.
+> (Tag:transformation)You are a pure-blood Kryptonian; yellow sun supercharges your cells, granting heat vision, ice breath, tactile telekinesis, flight, super physique, and all other Kryptonian abilities. Longer sunlight soak strengthens these abilities and permanently improves energy reserves.
 
 **Decision**
 
@@ -13725,7 +13775,7 @@
 
 **Description**
 
-> You are a pure-blooded Saiyan with superhuman physique, rapid improvement, and abnormal energy. Your tail paralyzes you when grabbed, full moon turns you into a mindless Oozaru with massively enhanced stats, and near-death recovery makes you significantly stronger.
+> (Tag:transformation)You are a pure-blooded Saiyan with superhuman physique, rapid improvement, and abnormal energy. Your tail paralyzes you when grabbed, full moon turns you into a mindless Oozaru with massively enhanced stats, and near-death recovery makes you significantly stronger.
 
 **Decision**
 
@@ -13763,7 +13813,7 @@
 
 **Description**
 
-> Soften touched objects while retaining other properties; steel becomes dough-like but stays as heavy and durable. Shapes stay changed while hardness slowly returns after release.
+> (Tag:alter)Soften touched objects while retaining other properties; steel becomes dough-like but stays as heavy and durable. Shapes stay changed while hardness slowly returns after release.
 
 **Decision**
 
@@ -13780,7 +13830,7 @@
 
 **Description**
 
-> Harden touched objects while retaining properties, like fire into a hot barrier or water into a platform. Consistency slowly returns after release.
+> (Tag:alter)Harden touched objects while retaining properties, like fire into a hot barrier or water into a platform. Consistency slowly returns after release.
 
 **Decision**
 
@@ -13797,7 +13847,7 @@
 
 **Description**
 
-> Clone yourself with a hive mind; you can use abilities through any body. Creating and maintaining clones costs energy rising exponentially per clone, and a portion of a clone's death damage reflects onto you.
+> (Tag:summon)Clone yourself with a hive mind; you can use abilities through any body. Creating and maintaining clones costs energy rising exponentially per clone, and a portion of a clone's death damage reflects onto you.
 
 **Decision**
 
@@ -13814,7 +13864,7 @@
 
 **Description**
 
-> Create physical-body clones that cannot use abilities but carry your physical traits at formation; forming during active abilities is more taxing. You share one hive mind, clones need no upkeep, and you can hold 10 at a time, increasable with training.
+> (Tag:summon)Create physical-body clones that cannot use abilities but carry your physical traits at formation; forming during active abilities is more taxing. You share one hive mind, clones need no upkeep, and you can hold 10 at a time, increasable with training.
 
 **Decision**
 
@@ -13831,7 +13881,7 @@
 
 **Description**
 
-> Turn abilities into avatars by giving each at least 10% of max energy storage. Avatars can act independently or under your control, use only the given ability plus your basic stats, and return energy and ability on dispel or after 1 hour if destroyed.
+> (Tag:meta)(Tag:summon)Turn abilities into avatars by giving each at least 10% of max energy storage. Avatars can act independently or under your control, use only the given ability plus your basic stats, and return energy and ability on dispel or after 1 hour if destroyed.
 
 **Decision**
 
@@ -13848,7 +13898,7 @@
 
 **Description**
 
-> Clone yourself and others, but clones have independent minds and massively reduced durability. You can clone only two targets at a time, clones can clone with even lower durability, and after 10 iterations clones cannot retain form.
+> (Tag:summon)Clone yourself and others, but clones have independent minds and massively reduced durability. You can clone only two targets at a time, clones can clone with even lower durability, and after 10 iterations clones cannot retain form.
 
 **Decision**
 
@@ -13865,7 +13915,7 @@
 
 **Description**
 
-> Form clay constructs that move independently and explode on command. More infused energy means stronger explosions.
+> (Tag:earth)(Tag:fire)(Tag:summon)Form clay constructs that move independently and explode on command. More infused energy means stronger explosions.
 
 **Decision**
 
@@ -13882,7 +13932,7 @@
 
 **Description**
 
-> Generate and control nonexistent Dark Matter, which can take any property: combustible, ashifying organics, new matter states, elements, life, clones, powers, etc. Only limit is computational power.
+> (Tag:alter)(Tag:dark)Generate and control nonexistent Dark Matter, which can take any property: combustible, ashifying organics, new matter states, elements, life, clones, powers, etc. Only limit is computational power.
 
 **Flagged in reports**
 
@@ -13903,7 +13953,7 @@
 
 **Description**
 
-> Recycle biomass into customized self-aware minions; required biomass must equal result biomass. Minions can take any biologically possible form, like fire-breathing horses with graphene scales with practice, and are unconditionally loyal.
+> (Tag:bio)(Tag:life)(Tag:summon)Recycle biomass into customized self-aware minions; required biomass must equal result biomass. Minions can take any biologically possible form, like fire-breathing horses with graphene scales with practice, and are unconditionally loyal.
 
 **Decision**
 
@@ -13920,7 +13970,7 @@
 
 **Description**
 
-> Bring paintings to life as enterable pocket dimensions or worlds depending on power; even minimally, a small forest with inhabitants. With training, create your own mini-world.
+> (Tag:alter)(Tag:space)Bring paintings to life as enterable pocket dimensions or worlds depending on power; even minimally, a small forest with inhabitants. With training, create your own mini-world.
 
 **Decision**
 
@@ -13937,7 +13987,7 @@
 
 **Description**
 
-> Protected by Calamity itself: pursuers or those aware of you suffer escalating calamities until they stop or die. Closer proximity escalates from falling trees up to their own abilities killing them; calamity kills grant no tickets.
+> (Tag:alter)Protected by Calamity itself: pursuers or those aware of you suffer escalating calamities until they stop or die. Closer proximity escalates from falling trees up to their own abilities killing them; calamity kills grant no tickets.
 
 **Decision**
 
@@ -13954,7 +14004,7 @@
 
 **Description**
 
-> Transform appearance to match someone whose blood you consumed, down to minute details. Disguise duration equals ml consumed x 1 minute.
+> (Tag:life)(Tag:transformation)Transform appearance to match someone whose blood you consumed, down to minute details. Disguise duration equals ml consumed x 1 minute.
 
 **Decision**
 
@@ -13971,7 +14021,7 @@
 
 **Description**
 
-> Transform into someone by consuming their blood, exactly copying physical abilities, their ability and usage, plus basic info. Duration equals ml consumed x 1 minute.
+> (Tag:life)(Tag:transformation)Transform into someone by consuming their blood, exactly copying physical abilities, their ability and usage, plus basic info. Duration equals ml consumed x 1 minute.
 
 **Decision**
 
@@ -13988,7 +14038,7 @@
 
 **Description**
 
-> Take Tetramand or Tetramand-hybrid form, among the galaxy's mightiest warriors with durable red skin, four eyes, four arms, and second-to-none strength.
+> (Tag:enhancer)(Tag:transformation)Take Tetramand or Tetramand-hybrid form, among the galaxy's mightiest warriors with durable red skin, four eyes, four arms, and second-to-none strength.
 
 **Decision**
 
@@ -14005,7 +14055,7 @@
 
 **Description**
 
-> Conjure and manipulate cement into constructs, walls, weapons, and back into less solid form.
+> (Tag:kinesis)Conjure and manipulate cement into constructs, walls, weapons, and back into less solid form.
 
 **Decision**
 
@@ -14022,7 +14072,7 @@
 
 **Description**
 
-> Transform fully or partially into slime, mostly negating physical damage and exploiting a slimy physique.
+> (Tag:amorphous)Transform fully or partially into slime, mostly negating physical damage and exploiting a slimy physique.
 
 **Decision**
 
@@ -14039,7 +14089,7 @@
 
 **Description**
 
-> Throw green fireballs that cannot burn inanimates, bouncing off them like rubber, but devour living flesh and stick like glue.
+> (Tag:curse)(Tag:fire)Throw green fireballs that cannot burn inanimates, bouncing off them like rubber, but devour living flesh and stick like glue.
 
 **Decision**
 
@@ -14056,7 +14106,7 @@
 
 **Description**
 
-> Throw crimson flame balls strengthened by water; dousing with water is like throwing crude oil on fire.
+> (Tag:curse)(Tag:fire)(Tag:infernal)Throw crimson flame balls strengthened by water; dousing with water is like throwing crude oil on fire.
 
 **Decision**
 
@@ -14073,7 +14123,7 @@
 
 **Description**
 
-> Conjure and wield Brimstone Crag flames tempered by tortured souls' agony. Incomparably hot, incinerating everything and burning intangibles like souls.
+> (Tag:infernal)Conjure and wield Brimstone Crag flames tempered by tortured souls' agony. Incomparably hot, incinerating everything and burning intangibles like souls.
 
 **Decision**
 
@@ -14090,7 +14140,7 @@
 
 **Description**
 
-> Wield Ranchor, ultimate brimstone flames of malice and revenge. Burns anything including souls, energy, and flesh, but also burns the user to a lesser extent with more use.
+> (Tag:fire)(Tag:infernal)(Tag:space)(Tag:spirit)Wield Ranchor, ultimate brimstone flames of malice and revenge. Burns anything including souls, energy, and flesh, but also burns the user to a lesser extent with more use.
 
 **Decision**
 
@@ -14107,7 +14157,7 @@
 
 **Description**
 
-> Holy fire gifted to clerics by angels as blessings, harmless to regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings and blocks their healing.
+> (Tag:fire)(Tag:holy)Holy fire gifted to clerics by angels as blessings, harmless to regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings and blocks their healing.
 
 **Decision**
 
@@ -14124,7 +14174,7 @@
 
 **Description**
 
-> Wield angels' holy flames, no stronger than normal fire against regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings, blocks healing, and can burn away afflictions if skilled.
+> (Tag:fire)(Tag:holy)Wield angels' holy flames, no stronger than normal fire against regular living creatures like humans and animals. Deals extreme damage to unholy or darkness beings, blocks healing, and can burn away afflictions if skilled.
 
 **Decision**
 
@@ -14141,7 +14191,7 @@
 
 **Description**
 
-> While in an active slot, massively boost comprehension: learn a book from one read and imitate martial arts from video or live exchange. Learn and master skills at supernatural rates.
+> (Tag:growth)(Tag:mental)(Tag:passive)While in an active slot, massively boost comprehension: learn a book from one read and imitate martial arts from video or live exchange. Learn and master skills at supernatural rates.
 
 **Decision**
 
@@ -14158,7 +14208,7 @@
 
 **Description**
 
-> You are a God of Fire with domain over all fire, creating and controlling any type and shaping its temperature and effect.
+> (Tag:fire)You are a God of Fire with domain over all fire, creating and controlling any type and shaping its temperature and effect.
 
 **Flagged in reports**
 
@@ -14179,7 +14229,7 @@
 
 **Description**
 
-> Partially or fully transform into a rabbit or hybrid, gaining enhanced physicality focused on leg jumping and kicking, plus a substantial libido boost.
+> (Tag:enhancer)(Tag:sense)(Tag:transformation)Partially or fully transform into a rabbit or hybrid, gaining enhanced physicality focused on leg jumping and kicking, plus a substantial libido boost.
 
 **Decision**
 
@@ -14196,7 +14246,7 @@
 
 **Description**
 
-> Transform into an Ifrit, a fire-born spirit. Cannot use water or water-based abilities as one, but fire abilities are much stronger with natural flame generation.
+> (Tag:fire)Transform into an Ifrit, a fire-born spirit. Cannot use water or water-based abilities as one, but fire abilities are much stronger with natural flame generation.
 
 **Decision**
 
@@ -14213,7 +14263,7 @@
 
 **Description**
 
-> Transform into an Ifrit Sultan, ancient flame spirit ruling fire spirits with ancient-dragon-level power. Strengthens all fire abilities, disables cryo/hydrokinesis, and grants natural pyrokinesis plus fire immunity.
+> (Tag:draconic)(Tag:fire)(Tag:water)Transform into an Ifrit Sultan, ancient flame spirit ruling fire spirits with ancient-dragon-level power. Strengthens all fire abilities, disables cryo/hydrokinesis, and grants natural pyrokinesis plus fire immunity.
 
 **Decision**
 
@@ -14230,7 +14280,7 @@
 
 **Description**
 
-> Manifest eyes anywhere on your body without disorientation from multiple vision.
+> (Tag:bio)(Tag:ocular)Manifest eyes anywhere on your body without disorientation from multiple vision.
 
 **Decision**
 
@@ -14247,7 +14297,7 @@
 
 **Description**
 
-> Extend durations beyond norm by consuming energy, such as blessings, lifespans, expiry dates, or burning flames. Must interact with the target.
+> (Tag:alter)(Tag:meta)Extend durations beyond norm by consuming energy, such as blessings, lifespans, expiry dates, or burning flames. Must interact with the target.
 
 **Decision**
 
@@ -14264,7 +14314,7 @@
 
 **Description**
 
-> Manipulate size and mass of a touched target; each doubling or halving doubles the cost. Changes revert after a set time.
+> (Tag:alter)Manipulate size and mass of a touched target; each doubling or halving doubles the cost. Changes revert after a set time.
 
 **Decision**
 
@@ -14281,7 +14331,7 @@
 
 **Description**
 
-> Shrink yourself to 20x smaller with proportionally reduced power; unshrink anytime. Limit increasable with training.
+> (Tag:transformation)Shrink yourself to 20x smaller with proportionally reduced power; unshrink anytime. Limit increasable with training.
 
 **Decision**
 
@@ -14298,7 +14348,7 @@
 
 **Description**
 
-> Shrink yourself up to 20x smaller without losing power; hits equally hard at 180cm or 18cm. Limit increasable with training.
+> (Tag:transformation)Shrink yourself up to 20x smaller without losing power; hits equally hard at 180cm or 18cm. Limit increasable with training.
 
 **Decision**
 
@@ -14315,7 +14365,7 @@
 
 **Description**
 
-> Increase size and mass up to 10x; holding it drains stamina and burns energy faster. Can grow larger with training.
+> (Tag:transformation)Increase size and mass up to 10x; holding it drains stamina and burns energy faster. Can grow larger with training.
 
 **Decision**
 
@@ -14332,7 +14382,7 @@
 
 **Description**
 
-> Increase size and mass up to 100x; holding it drains stamina and burns energy faster. Can grow larger with training.
+> (Tag:transformation)Increase size and mass up to 100x; holding it drains stamina and burns energy faster. Can grow larger with training.
 
 **Decision**
 
@@ -14349,7 +14399,7 @@
 
 **Description**
 
-> Enlarge touched targets permanently or temporarily, with permanence costing far more. More energetic objects are harder and costlier to enhance.
+> (Tag:alter)Enlarge touched targets permanently or temporarily, with permanence costing far more. More energetic objects are harder and costlier to enhance.
 
 **Decision**
 
@@ -14366,7 +14416,7 @@
 
 **Description**
 
-> Send one-way telepathic messages to anyone in sensory range.
+> (Tag:mental)Send one-way telepathic messages to anyone in sensory range.
 
 **Decision**
 
@@ -14383,7 +14433,7 @@
 
 **Description**
 
-> "A power so cruel" induces baldness on contact, gradually or instantly removing all hair. May make you the mortal enemy of most.
+> (Tag:curse)"A power so cruel" induces baldness on contact, gradually or instantly removing all hair. May make you the mortal enemy of most.
 
 **Decision**
 
@@ -14400,7 +14450,7 @@
 
 **Description**
 
-> View dreams of anyone in sensory range like a livestream. Can likely influence dreams by whispering in their ears.
+> (Tag:divination)(Tag:mental)View dreams of anyone in sensory range like a livestream. Can likely influence dreams by whispering in their ears.
 
 **Decision**
 
@@ -14417,7 +14467,7 @@
 
 **Description**
 
-> Link senses with willing others via touch, seeing from each other's perspective. Too many links cause disorientation.
+> (Tag:mental)(Tag:sense)Link senses with willing others via touch, seeing from each other's perspective. Too many links cause disorientation.
 
 **Decision**
 
@@ -14434,7 +14484,7 @@
 
 **Description**
 
-> Talk to sleepers to influence them, shaping dreams or opinions like hypnosis.
+> (Tag:command)Talk to sleepers to influence them, shaping dreams or opinions like hypnosis.
 
 **Decision**
 
@@ -14451,7 +14501,7 @@
 
 **Description**
 
-> View probabilities of any questioned outcome, like dying tomorrow or finding something somewhere. Always accurate except around blind spots.
+> (Tag:divination)View probabilities of any questioned outcome, like dying tomorrow or finding something somewhere. Always accurate except around blind spots.
 
 **Decision**
 
@@ -14468,7 +14518,7 @@
 
 **Description**
 
-> Turn skin incredibly sticky to cling to walls or hold ordinary people. You feel no difference and control which parts stick.
+> (Tag:alter)Turn skin incredibly sticky to cling to walls or hold ordinary people. You feel no difference and control which parts stick.
 
 **Decision**
 
@@ -14485,7 +14535,7 @@
 
 **Description**
 
-> Turn into a proud lion or hybrid at will, gaining enhanced physicality, paralyzing roar, and natural weapons. Mundane animals defer to you as king unless you harm them.
+> (Tag:enhancer)(Tag:transformation)Turn into a proud lion or hybrid at will, gaining enhanced physicality, paralyzing roar, and natural weapons. Mundane animals defer to you as king unless you harm them.
 
 **Decision**
 
@@ -14502,7 +14552,7 @@
 
 **Description**
 
-> Create illusionary weapons in hands for intimidation.
+> (Tag:illusion)Create illusionary weapons in hands for intimidation.
 
 **Decision**
 
@@ -14519,7 +14569,7 @@
 
 **Description**
 
-> Take control of all bears within 50 meters. Good luck finding that many bears.
+> (Tag:command)Take control of all bears within 50 meters. Good luck finding that many bears.
 
 **Decision**
 
@@ -14536,7 +14586,7 @@
 
 **Description**
 
-> Heal by kissing, supercharging the target's natural regeneration with your energy.
+> (Tag:recovery)Heal by kissing, supercharging the target's natural regeneration with your energy.
 
 **Flagged in reports**
 
@@ -14557,7 +14607,7 @@
 
 **Description**
 
-> "Vault-Tec Assisted Targeting System" puts your body on autopilot to aim attacks or aids melee as a helpful Intermediate-level combat AI.
+> (Tag:martial)(Tag:mental)"Vault-Tec Assisted Targeting System" puts your body on autopilot to aim attacks or aids melee as a helpful Intermediate-level combat AI.
 
 **Decision**
 
@@ -14574,7 +14624,7 @@
 
 **Description**
 
-> Create and control portal-like dark mists shapable to your liking, reaching anywhere visited or seen. With training, use coordinates and images for unvisited places plus more mist.
+> (Tag:movement)(Tag:space)Create and control portal-like dark mists shapable to your liking, reaching anywhere visited or seen. With training, use coordinates and images for unvisited places plus more mist.
 
 **Decision**
 
@@ -14591,7 +14641,7 @@
 
 **Description**
 
-> You are the Phenex, immortal through flames that near-instantly regenerate you from a single shred. Also wield powerful flames and winds with ease.
+> (Tag:air)(Tag:fire)(Tag:infernal)(Tag:recovery)You are the Phenex, immortal through flames that near-instantly regenerate you from a single shred. Also wield powerful flames and winds with ease.
 
 **Decision**
 
@@ -14608,7 +14658,7 @@
 
 **Description**
 
-> Create tears in things in range, neutralizing attacks or directly ravaging targets for massive damage. Tears resist healing, taking hours even for Epic-ranked healing.
+> (Tag:anti-recovery)(Tag:space)Create tears in things in range, neutralizing attacks or directly ravaging targets for massive damage. Tears resist healing, taking hours even for Epic-ranked healing.
 
 **Decision**
 
@@ -14625,7 +14675,7 @@
 
 **Description**
 
-> You possess nigh-infinite computational power for numbers and calculations, shaming even the strongest sci-fi supercomputers in math.
+> (Tag:mental)You possess nigh-infinite computational power for numbers and calculations, shaming even the strongest sci-fi supercomputers in math.
 
 **Decision**
 
@@ -14642,7 +14692,7 @@
 
 **Description**
 
-> See a guiding line to any location you precisely know.
+> (Tag:divination)See a guiding line to any location you precisely know.
 
 **Decision**
 
@@ -14659,7 +14709,7 @@
 
 **Description**
 
-> Stockpile energy while in an active slot, holding up to 3x your storage but taking 24 hours to fill completely.
+> (Tag:meta)Stockpile energy while in an active slot, holding up to 3x your storage but taking 24 hours to fill completely.
 
 **Decision**
 
@@ -14676,7 +14726,7 @@
 
 **Description**
 
-> Turn into a humanoid cockroach or hybrid at will, gaining extreme resilience, increased physicality, and mundane cockroach traits.
+> (Tag:enhancer)(Tag:recovery)(Tag:transformation)Turn into a humanoid cockroach or hybrid at will, gaining extreme resilience, increased physicality, and mundane cockroach traits.
 
 **Decision**
 
@@ -14693,7 +14743,7 @@
 
 **Description**
 
-> Create and control candy as viscous syrup that hardens under your control; control ends after separation. With training, make it steel-hard and manipulate it off-body.
+> (Tag:nature)Create and control candy as viscous syrup that hardens under your control; control ends after separation. With training, make it steel-hard and manipulate it off-body.
 
 **Decision**
 
@@ -14710,7 +14760,7 @@
 
 **Description**
 
-> Create and shape bronze, the superior metal and alloy, into weapons, armor, or constructs. Can reinforce it with your energy.
+> (Tag:earth)Create and shape bronze, the superior metal and alloy, into weapons, armor, or constructs. Can reinforce it with your energy.
 
 **Decision**
 
@@ -14727,7 +14777,7 @@
 
 **Description**
 
-> Significantly enhance physical stats by burning blood, losing 1ml per second. Can raise to 10ml per second for up to 5x strength.
+> (Tag:blood)(Tag:enhancer)(Tag:life)Significantly enhance physical stats by burning blood, losing 1ml per second. Can raise to 10ml per second for up to 5x strength.
 
 **Decision**
 
@@ -14744,7 +14794,7 @@
 
 **Description**
 
-> Gain extreme regeneration regrowing limbs in seconds, fueled by others' blood rather than energy. More blood means more regeneration; a large cup restores near-death to peak.
+> (Tag:healing)(Tag:infernal)Gain extreme regeneration regrowing limbs in seconds, fueled by others' blood rather than energy. More blood means more regeneration; a large cup restores near-death to peak.
 
 **Decision**
 
@@ -14761,7 +14811,7 @@
 
 **Description**
 
-> Scramble senses of everyone within 500 meters, causing extreme disorientation like falling sensation, nausea, vertigo, tinnitus, deafness, etc.
+> (Tag:mental)Scramble senses of everyone within 500 meters, causing extreme disorientation like falling sensation, nausea, vertigo, tinnitus, deafness, etc.
 
 **Decision**
 
@@ -14778,7 +14828,7 @@
 
 **Description**
 
-> Set conditions on abilities for auto-activation, e.g. barrier on high-speed projectile or healing on foreign substance entry.
+> (Tag:meta)Set conditions on abilities for auto-activation, e.g. barrier on high-speed projectile or healing on foreign substance entry.
 
 **Decision**
 
@@ -14795,7 +14845,7 @@
 
 **Description**
 
-> "I can stay here all day" - Standing still over 10 seconds boosts energy, stamina, and health regen plus durability and resistance. Moving feet over 10cm from start ends it.
+> (Tag:enhancer)(Tag:passive)(Tag:recovery)"I can stay here all day" - Standing still over 10 seconds boosts energy, stamina, and health regen plus durability and resistance. Moving feet over 10cm from start ends it.
 
 **Decision**
 
@@ -14812,7 +14862,7 @@
 
 **Description**
 
-> Regenerate energy/mana by consuming stamina instead.
+> (Tag:recovery)Regenerate energy/mana by consuming stamina instead.
 
 **Decision**
 
@@ -14829,7 +14879,7 @@
 
 **Description**
 
-> Sacrifice health to instantly recover energy; more energy recovered means more damage taken.
+> (Tag:life)(Tag:recovery)Sacrifice health to instantly recover energy; more energy recovered means more damage taken.
 
 **Decision**
 
@@ -14846,7 +14896,7 @@
 
 **Description**
 
-> Author's PoV - Fully suppress emotions to act with complete indifference toward your goal. Also fully counters mind manipulation or telepathy aimed at you.
+> (Tag:mental)Author's PoV - Fully suppress emotions to act with complete indifference toward your goal. Also fully counters mind manipulation or telepathy aimed at you.
 
 **Decision**
 
@@ -14863,7 +14913,7 @@
 
 **Description**
 
-> See emotions as colored auras, e.g. yellow happiness, green envy, black despair, red anger, etc.
+> (Tag:divination)(Tag:spirit)See emotions as colored auras, e.g. yellow happiness, green envy, black despair, red anger, etc.
 
 **Decision**
 
@@ -14880,7 +14930,7 @@
 
 **Description**
 
-> Consume sugar for temporary super strength scaled to amount consumed, followed by a massive sugar crash.
+> (Tag:enhancer)Consume sugar for temporary super strength scaled to amount consumed, followed by a massive sugar crash.
 
 **Decision**
 
@@ -14897,7 +14947,7 @@
 
 **Description**
 
-> Create, control, and inflict Scarlet Rot, a deadly foreign-god infection eroding mind and body into mindless savagery.
+> (Tag:life)(Tag:poison)Create, control, and inflict Scarlet Rot, a deadly foreign-god infection eroding mind and body into mindless savagery.
 
 **Decision**
 
@@ -14914,7 +14964,7 @@
 
 **Description**
 
-> View how to romance people and unlock their romance questlines. If you still fail with this, there is probably no path to love for you.
+> (Tag:divination)View how to romance people and unlock their romance questlines. If you still fail with this, there is probably no path to love for you.
 
 **Flagged in reports**
 
@@ -14935,7 +14985,7 @@
 
 **Description**
 
-> Create a path to any mechanically possible goal, even one-in-googol odds, with impossibly precise execution and nigh-omniscient calculation except blind spots. Can use paths as guidelines only.
+> (Tag:divination)Create a path to any mechanically possible goal, even one-in-googol odds, with impossibly precise execution and nigh-omniscient calculation except blind spots. Can use paths as guidelines only.
 
 **Decision**
 
@@ -14952,7 +15002,7 @@
 
 **Description**
 
-> Manifest a large demon-like clawed arm over your own with superhuman strength and grip to crush steel and lift cars, extendable and slightly growable. Damage to it reflects onto your real arm.
+> (Tag:enhancer)(Tag:infernal)(Tag:spirit)Manifest a large demon-like clawed arm over your own with superhuman strength and grip to crush steel and lift cars, extendable and slightly growable. Damage to it reflects onto your real arm.
 
 **Decision**
 
@@ -14969,7 +15019,7 @@
 
 **Description**
 
-> Create translucent dome or wall barriers acting as physical defenses.
+> (Tag:neutral)Create translucent dome or wall barriers acting as physical defenses.
 
 **Decision**
 
@@ -14986,7 +15036,7 @@
 
 **Description**
 
-> Cross fingers to create one transparent barrier with controllable shape and size. Completely invulnerable to mundane damage like physical force, thermal, lightning, etc.
+> (Tag:neutral)Cross fingers to create one transparent barrier with controllable shape and size. Completely invulnerable to mundane damage like physical force, thermal, lightning, etc.
 
 **Decision**
 
@@ -15003,7 +15053,7 @@
 
 **Description**
 
-> Body absorbs kinetic energy like a sponge, reducing physical attack effectiveness.
+> (Tag:kinetic)Body absorbs kinetic energy like a sponge, reducing physical attack effectiveness.
 
 **Decision**
 
@@ -15020,7 +15070,7 @@
 
 **Description**
 
-> Sense and telekinetically control hydrogen with perfect precision, the universe's most abundant element. Use it to manipulate air and water, create explosions, or freeze with liquid hydrogen.
+> (Tag:ice)(Tag:water)Sense and telekinetically control hydrogen with perfect precision, the universe's most abundant element. Use it to manipulate air and water, create explosions, or freeze with liquid hydrogen.
 
 **Decision**
 
@@ -15037,7 +15087,7 @@
 
 **Description**
 
-> Sense and telekinetically control oxygen atoms with perfect precision to control air, drive combustion, corrode via oxidation, rip oxygen from objects, or poison with pure oxygen clouds.
+> (Tag:air)Sense and telekinetically control oxygen atoms with perfect precision to control air, drive combustion, corrode via oxidation, rip oxygen from objects, or poison with pure oxygen clouds.
 
 **Decision**
 
@@ -15054,7 +15104,7 @@
 
 **Description**
 
-> Sharpen touched objects, from monomolecular blades to swung air forming razor winds.
+> (Tag:buff)Sharpen touched objects, from monomolecular blades to swung air forming razor winds.
 
 **Decision**
 
@@ -15071,7 +15121,7 @@
 
 **Description**
 
-> Create translucent dragon-limb projections for varied uses: arms to cut, smash, or protect, head to bite or breathe flames, wings to fly or glide.
+> (Tag:draconic)(Tag:summon)Create translucent dragon-limb projections for varied uses: arms to cut, smash, or protect, head to bite or breathe flames, wings to fly or glide.
 
 **Decision**
 
@@ -15088,7 +15138,7 @@
 
 **Description**
 
-> Unleash hydra-head projections from body or back to crush, bite, smash, or constrict with the neck. A severed head needs time to resummon.
+> (Tag:draconic)Unleash hydra-head projections from body or back to crush, bite, smash, or constrict with the neck. A severed head needs time to resummon.
 
 **Decision**
 
@@ -15105,7 +15155,7 @@
 
 **Description**
 
-> Turn touched objects into stable cold weapons regardless of matter, like water scythe, stone spear, air sword, or fire whip. The world is your armory.
+> (Tag:alter)(Tag:earth)Turn touched objects into stable cold weapons regardless of matter, like water scythe, stone spear, air sword, or fire whip. The world is your armory.
 
 **Decision**
 
@@ -15122,7 +15172,7 @@
 
 **Description**
 
-> {Reality Marble} scan and understand any weapon encountered to store in a mental armory, then project it with identical attributes for energy. With practice, pull others into your sword-filled mental world. Excludes Alien, Fae, and Divine weapons by default.
+> (Tag:divination)(Tag:fae)(Tag:martial)(Tag:summon){Reality Marble} scan and understand any weapon encountered to store in a mental armory, then project it with identical attributes for energy. With practice, pull others into your sword-filled mental world. Excludes Alien, Fae, and Divine weapons by default.
 
 **Decision**
 
@@ -15139,7 +15189,7 @@
 
 **Description**
 
-> Reinforce structure and quality of touched objects or yourself. More energy means stronger but harder-to-maintain reinforcement.
+> (Tag:buff)(Tag:enhancer)Reinforce structure and quality of touched objects or yourself. More energy means stronger but harder-to-maintain reinforcement.
 
 **Decision**
 
@@ -15156,7 +15206,7 @@
 
 **Description**
 
-> Alter shape and structure of touched objects, e.g. sharper, blunter, longer. Can turn a sword into a polearm while retaining abilities.
+> (Tag:transformation)Alter shape and structure of touched objects, e.g. sharper, blunter, longer. Can turn a sword into a polearm while retaining abilities.
 
 **Decision**
 
@@ -15173,7 +15223,7 @@
 
 **Description**
 
-> Change anything purely cosmetic about yourself, like ability color, hair color, pupil shape, skin color, etc.
+> (Tag:bio)(Tag:illusion)(Tag:transformation)Change anything purely cosmetic about yourself, like ability color, hair color, pupil shape, skin color, etc.
 
 **Decision**
 
@@ -15190,7 +15240,7 @@
 
 **Description**
 
-> On death resurrect as undead scaled to slot count, then after 24 hours revive as original self. 1=Skeleton, 2=Skeleton Warrior/Mage, 3=Dullahan/Necromancer, 4=Death Knight/Lich, 5+=Dread Knight/Elder Lich. 10-day cooldown.
+> (Tag:necro)(Tag:recovery)(Tag:spirit)On death resurrect as undead scaled to slot count, then after 24 hours revive as original self. 1=Skeleton, 2=Skeleton Warrior/Mage, 3=Dullahan/Necromancer, 4=Death Knight/Lich, 5+=Dread Knight/Elder Lich. 10-day cooldown.
 
 **Decision**
 
@@ -15207,7 +15257,7 @@
 
 **Description**
 
-> Temporarily become a Dead Apostle Ancestor, strongest Vampire rank, with incredible physical/magical prowess, mist transformation, and time-reversal regeneration consuming your blood while heart remains and blood exists. Forms a Legendary-ranked Idea Blood from your life/experiences and can create full undead apostles.
+> (Tag:infernal)(Tag:life)(Tag:necro)(Tag:time)(Tag:transformation)(Tag:vampiric)Temporarily become a Dead Apostle Ancestor, strongest Vampire rank, with incredible physical/magical prowess, mist transformation, and time-reversal regeneration consuming your blood while heart remains and blood exists. Forms a Legendary-ranked Idea Blood from your life/experiences and can create full undead apostles.
 
 **Decision**
 
@@ -15224,7 +15274,7 @@
 
 **Description**
 
-> Remotely crush objects in line of sight, increasing pressure with energy output. Stronger targets are harder to crush.
+> (Tag:kinetic)Remotely crush objects in line of sight, increasing pressure with energy output. Stronger targets are harder to crush.
 
 **Decision**
 
@@ -15241,7 +15291,7 @@
 
 **Description**
 
-> You are everywhere and nowhere at once; close eyes to appear anywhere you know. Costs no energy/mana and may not be true teleportation.
+> (Tag:movement)(Tag:recovery)(Tag:space)(Tag:time)You are everywhere and nowhere at once; close eyes to appear anywhere you know. Costs no energy/mana and may not be true teleportation.
 
 **Flagged in reports**
 
@@ -15262,7 +15312,7 @@
 
 **Description**
 
-> Under rainfall, stand on raindrops, teleport through them, or wield them as knives. Works only in actual rain, not falling water.
+> (Tag:movement)(Tag:water)Under rainfall, stand on raindrops, teleport through them, or wield them as knives. Works only in actual rain, not falling water.
 
 **Decision**
 
@@ -15279,7 +15329,7 @@
 
 **Description**
 
-> Split targets into imaginary lines creating a weak spot at the seven-to-three ratio point. Hitting it deals critical damage.
+> (Tag:neutral)Split targets into imaginary lines creating a weak spot at the seven-to-three ratio point. Hitting it deals critical damage.
 
 **Decision**
 
@@ -15296,7 +15346,7 @@
 
 **Description**
 
-> Turn touched things into bombs detonable anytime, either catching the object or leaving it unscathed; contact-spread bypasses durability. Can also weak-explode via Killer Queen to disintegrate; strong targets partly resist.
+> (Tag:alter)(Tag:fire)(Tag:spirit)Turn touched things into bombs detonable anytime, either catching the object or leaving it unscathed; contact-spread bypasses durability. Can also weak-explode via Killer Queen to disintegrate; strong targets partly resist.
 
 **Decision**
 
@@ -15313,7 +15363,7 @@
 
 **Description**
 
-> Dive into objects to restructure from inside, healing innards or fusing objects. Can also hide inside people or objects.
+> (Tag:alter)Dive into objects to restructure from inside, healing innards or fusing objects. Can also hide inside people or objects.
 
 **Decision**
 
@@ -15330,7 +15380,7 @@
 
 **Description**
 
-> "Power at what cost?" Gain extreme strength, endurance, and near pain immunity for lost inhibitions and trance. Even ordinary men can throw trucks, tear tanks, and eat missiles.
+> (Tag:enhancer)(Tag:martial)(Tag:mental)"Power at what cost?" Gain extreme strength, endurance, and near pain immunity for lost inhibitions and trance. Even ordinary men can throw trucks, tear tanks, and eat missiles.
 
 **Decision**
 
@@ -15347,7 +15397,7 @@
 
 **Description**
 
-> Mimic any one displayed opponent move or ability into Mimic and unleash the identical effect. Cannot copy above Epic, single stored ability, single use, then resets. 8-hour cooldown.
+> (Tag:meta)Mimic any one displayed opponent move or ability into Mimic and unleash the identical effect. Cannot copy above Epic, single stored ability, single use, then resets. 8-hour cooldown.
 
 **Decision**
 
@@ -15364,7 +15414,7 @@
 
 **Description**
 
-> Rewind time with 1-minute charges; spending one returns you 1 minute back. Gain a charge every 24 hours, hold up to 30.
+> (Tag:time)Rewind time with 1-minute charges; spending one returns you 1 minute back. Gain a charge every 24 hours, hold up to 30.
 
 **Decision**
 
@@ -15381,7 +15431,7 @@
 
 **Description**
 
-> Store and unleash luck, gaining a charge every 24 hours for extreme luck like surviving lethal attacks or finding exactly what is needed. Excludes gacha tickets; hold up to 7.
+> (Tag:alter)Store and unleash luck, gaining a charge every 24 hours for extreme luck like surviving lethal attacks or finding exactly what is needed. Excludes gacha tickets; hold up to 7.
 
 **Decision**
 
@@ -15398,7 +15448,7 @@
 
 **Description**
 
-> Turn luck your way for 1 hour of extraordinary fortune of all kinds. Cooldown: 7 days 7 hours 7 minutes.
+> (Tag:alter)Turn luck your way for 1 hour of extraordinary fortune of all kinds. Cooldown: 7 days 7 hours 7 minutes.
 
 **Decision**
 
@@ -15415,7 +15465,7 @@
 
 **Description**
 
-> {Mystic Eyes} See through all illusions and deceit; illusions reveal true forms and you sense deceptive intent and which words are true.
+> (Tag:divination)(Tag:ocular)(Tag:sense){Mystic Eyes} See through all illusions and deceit; illusions reveal true forms and you sense deceptive intent and which words are true.
 
 **Decision**
 
@@ -15432,7 +15482,7 @@
 
 **Description**
 
-> Enchant items from your abilities and traits, e.g. pyrokinesis grants fire enchantments, or imbue the power itself as limited-use consumables. Strength depends on item and power level.
+> (Tag:alter)(Tag:fire)(Tag:meta)Enchant items from your abilities and traits, e.g. pyrokinesis grants fire enchantments, or imbue the power itself as limited-use consumables. Strength depends on item and power level.
 
 **Decision**
 
@@ -15449,7 +15499,7 @@
 
 **Description**
 
-> Lets you enchant items based on your abilities and traits, granting related effects or imbuing the ability itself as limited uses. Enchantment strength scales with the item and your power level.
+> (Tag:alter)(Tag:meta)Lets you enchant items based on your abilities and traits, granting related effects or imbuing the ability itself as limited uses. Enchantment strength scales with the item and your power level.
 
 **Decision**
 
@@ -15462,11 +15512,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.4 | Epic | Generic |
+| 5.4 | Epic | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Lets you disable a target's ability by touching them. Duration scales with power difference, minimum 3 seconds. 5-minute cooldown.
+> (Tag:mental)(Tag:meta)Lets you disable a target's ability by touching them. Duration scales with power difference, minimum 3 seconds. 5-minute cooldown.
 
 **Decision**
 
@@ -15483,7 +15533,7 @@
 
 **Description**
 
-> Lets you rewind time up to 5 minutes with a 10-minute cooldown. Your body rewinds too, so injuries and exhaustion carry over.
+> (Tag:time)Lets you rewind time up to 5 minutes with a 10-minute cooldown. Your body rewinds too, so injuries and exhaustion carry over.
 
 **Decision**
 
@@ -15500,7 +15550,7 @@
 
 **Description**
 
-> Gives you 12 manual save files you can save and load at any time. No quicksaves or autosaves.
+> (Tag:time)Gives you 12 manual save files you can save and load at any time. No quicksaves or autosaves.
 
 **Flagged in reports**
 
@@ -15521,7 +15571,7 @@
 
 **Description**
 
-> Makes you an extremely powerful telepath able to communicate tens of kilometers away and mold human minds like clay.
+> (Tag:command)(Tag:mental)Makes you an extremely powerful telepath able to communicate tens of kilometers away and mold human minds like clay.
 
 **Flagged in reports**
 
@@ -15542,7 +15592,7 @@
 
 **Description**
 
-> Lets you borrow processing power from objects by touch, slowing them while massively speeding yourself up. Overuse can cause brain damage to both parties.
+> (Tag:mental)Lets you borrow processing power from objects by touch, slowing them while massively speeding yourself up. Overuse can cause brain damage to both parties.
 
 **Decision**
 
@@ -15559,7 +15609,7 @@
 
 **Description**
 
-> Lets you sense emotions and fire projectiles that deal no damage but temporarily alter the target's emotions, such as euphoria or depression.
+> (Tag:command)(Tag:mental)Lets you sense emotions and fire projectiles that deal no damage but temporarily alter the target's emotions, such as euphoria or depression.
 
 **Decision**
 
@@ -15576,7 +15626,7 @@
 
 **Description**
 
-> Lets you sense people's emotions, with training discerning their causes and finer details.
+> (Tag:sense)Lets you sense people's emotions, with training discerning their causes and finer details.
 
 **Decision**
 
@@ -15593,7 +15643,7 @@
 
 **Description**
 
-> Lets you manipulate emotions of people within 50 meters, subtly tweaking or overwhelming them with anything from adoration to suicidal urges. Effectiveness scales with power difference.
+> (Tag:command)(Tag:mental)Lets you manipulate emotions of people within 50 meters, subtly tweaking or overwhelming them with anything from adoration to suicidal urges. Effectiveness scales with power difference.
 
 **Decision**
 
@@ -15610,7 +15660,7 @@
 
 **Description**
 
-> Lets you pilot people's bodies by eye contact, suppressing their minds or with their permission. Your body falls unconscious while piloting; stronger will or power can resist. Training can let you pilot multiple people.
+> (Tag:command)(Tag:mental)(Tag:spirit)Lets you pilot people's bodies by eye contact, suppressing their minds or with their permission. Your body falls unconscious while piloting; stronger will or power can resist. Training can let you pilot multiple people.
 
 **Decision**
 
@@ -15627,7 +15677,7 @@
 
 **Description**
 
-> Lets you clear negative mental conditions like fear, panic, or mind control with a firm slap. Effectiveness scales with your physical stats.
+> (Tag:mental)(Tag:recovery)Lets you clear negative mental conditions like fear, panic, or mind control with a firm slap. Effectiveness scales with your physical stats.
 
 **Decision**
 
@@ -15644,7 +15694,7 @@
 
 **Description**
 
-> While active, makes you immune to status effects like fear, panic, sadness, and despair, leaving you highly motivated and determined.
+> (Tag:mental)While active, makes you immune to status effects like fear, panic, sadness, and despair, leaving you highly motivated and determined.
 
 **Decision**
 
@@ -15678,7 +15728,7 @@
 
 **Description**
 
-> Lets you snap your fingers to entrance anyone focused on you, letting you subtly influence them until harm snaps them out. Fails on the strongly strong-willed or stronger than you.
+> (Tag:command)(Tag:mental)Lets you snap your fingers to entrance anyone focused on you, letting you subtly influence them until harm snaps them out. Fails on the strongly strong-willed or stronger than you.
 
 **Decision**
 
@@ -15695,7 +15745,7 @@
 
 **Description**
 
-> Lets you plant mental suggestions that targets mistake for their own ideas, steering or conditioning them.
+> (Tag:command)(Tag:mental)Lets you plant mental suggestions that targets mistake for their own ideas, steering or conditioning them.
 
 **Decision**
 
@@ -15712,7 +15762,7 @@
 
 **Description**
 
-> Lets you hypnotize off-guard targets to subtly or directly influence them. Higher willpower resists more strongly.
+> (Tag:command)(Tag:mental)Lets you hypnotize off-guard targets to subtly or directly influence them. Higher willpower resists more strongly.
 
 **Decision**
 
@@ -15729,7 +15779,7 @@
 
 **Description**
 
-> Lets you transmute the ground into a castle shaped by your mental state, plus soldiers and beasts made from it. You can reshape it at will, including weaponry like cannons or guns. Constructs deactivate if you leave the castle.
+> (Tag:earth)(Tag:summon)Lets you transmute the ground into a castle shaped by your mental state, plus soldiers and beasts made from it. You can reshape it at will, including weaponry like cannons or guns. Constructs deactivate if you leave the castle.
 
 **Decision**
 
@@ -15746,7 +15796,7 @@
 
 **Description**
 
-> Lets you read the memories of an unresisting target by placing your palm on their forehead. Stronger resistance makes reading harder.
+> (Tag:divination)(Tag:mental)Lets you read the memories of an unresisting target by placing your palm on their forehead. Stronger resistance makes reading harder.
 
 **Decision**
 
@@ -15763,7 +15813,7 @@
 
 **Description**
 
-> Lets you manipulate gravity on a massive scale with immense power but little precision. Minimum 100-meter area at 50x gravity; you can rip up city blocks, but cannot handle small or delicate targets without crushing them.
+> (Tag:gravity)Lets you manipulate gravity on a massive scale with immense power but little precision. Minimum 100-meter area at 50x gravity; you can rip up city blocks, but cannot handle small or delicate targets without crushing them.
 
 **Decision**
 
@@ -15780,7 +15830,7 @@
 
 **Description**
 
-> Lets you instantly travel to anywhere you have been while out of danger. Cost scales with distance.
+> (Tag:movement)Lets you instantly travel to anywhere you have been while out of danger. Cost scales with distance.
 
 **Decision**
 
@@ -15797,7 +15847,7 @@
 
 **Description**
 
-> Lets you conjure floating dragon-skull projections that fire energy lasers or bite, and can carry you or block attacks.
+> (Tag:summon)Lets you conjure floating dragon-skull projections that fire energy lasers or bite, and can carry you or block attacks.
 
 **Decision**
 
@@ -15814,7 +15864,7 @@
 
 **Description**
 
-> Makes your soul a shapeable kingdom that absorbs souls of those you kill or wayward souls you find. You can house them, manifest them as physical soldiers, sacrifice them for power, or burn them to recover energy.
+> (Tag:meta)(Tag:necro)(Tag:space)(Tag:spirit)(Tag:summon)Makes your soul a shapeable kingdom that absorbs souls of those you kill or wayward souls you find. You can house them, manifest them as physical soldiers, sacrifice them for power, or burn them to recover energy.
 
 **Decision**
 
@@ -15831,7 +15881,7 @@
 
 **Description**
 
-> Lets you transform into a pixie at will, gaining flight, energy reserves, and agility at the cost of size and physical power.
+> (Tag:fae)Lets you transform into a pixie at will, gaining flight, energy reserves, and agility at the cost of size and physical power.
 
 **Decision**
 
@@ -15848,7 +15898,7 @@
 
 **Description**
 
-> Makes you an Ajin with biological immortality, resurrecting at peak condition from your largest remaining flesh via Invisible Black Matter at no energy cost. You can summon IBM shadows to fight, defend, or scout on your orders.
+> (Tag:recovery)(Tag:transformation)Makes you an Ajin with biological immortality, resurrecting at peak condition from your largest remaining flesh via Invisible Black Matter at no energy cost. You can summon IBM shadows to fight, defend, or scout on your orders.
 
 **Decision**
 
@@ -15865,7 +15915,7 @@
 
 **Description**
 
-> Lets you know the exact dimensions and measurements of anything at a glance.
+> (Tag:divination)Lets you know the exact dimensions and measurements of anything at a glance.
 
 **Decision**
 
@@ -15882,7 +15932,7 @@
 
 **Description**
 
-> Lets you squeeze your body through any opening wider than 5 centimeters.
+> (Tag:movement)Lets you squeeze your body through any opening wider than 5 centimeters.
 
 **Decision**
 
@@ -15899,7 +15949,7 @@
 
 **Description**
 
-> Lets you erect a field around yourself where no supernatural effects function except your dismissal of the field, leaving even gods to their physical bodies.
+> (Tag:alter)Lets you erect a field around yourself where no supernatural effects function except your dismissal of the field, leaving even gods to their physical bodies.
 
 **Decision**
 
@@ -15916,7 +15966,7 @@
 
 **Description**
 
-> Makes people incapable of perceiving you as a threat, even while harming them, granting immunity to hostility. Fails against far superior mental abilities or divine-level beings stronger than you.
+> (Tag:alter)(Tag:illusion)(Tag:mental)(Tag:stealth)Makes people incapable of perceiving you as a threat, even while harming them, granting immunity to hostility. Fails against far superior mental abilities or divine-level beings stronger than you.
 
 **Flagged in reports**
 
@@ -15937,7 +15987,7 @@
 
 **Description**
 
-> Makes you unperceivable while active, wiping you from minds and recordings the moment you are noticed. People can still deduce your existence and counter you without remembering you.
+> (Tag:mental)(Tag:stealth)Makes you unperceivable while active, wiping you from minds and recordings the moment you are noticed. People can still deduce your existence and counter you without remembering you.
 
 **Decision**
 
@@ -15954,7 +16004,7 @@
 
 **Description**
 
-> Gives you a boneless, organless Majin body that freely morphs and regenerates from any piece larger than a walnut while you have energy. You gain greatly enhanced stats and can absorb others for a portion of their strength.
+> (Tag:enhancer)Gives you a boneless, organless Majin body that freely morphs and regenerates from any piece larger than a walnut while you have energy. You gain greatly enhanced stats and can absorb others for a portion of their strength.
 
 **Decision**
 
@@ -15971,7 +16021,7 @@
 
 **Description**
 
-> Grants Hanami-level plant control, creating energy plants, binding roots, and energy-draining cursed buds. You can draw energy from existing nature to recharge.
+> (Tag:nature)(Tag:spirit)Grants Hanami-level plant control, creating energy plants, binding roots, and energy-draining cursed buds. You can draw energy from existing nature to recharge.
 
 **Decision**
 
@@ -15988,7 +16038,7 @@
 
 **Description**
 
-> Lets you turn into a shark or shark hybrid at will, gaining enhanced stats boosted further underwater, razor teeth able to tear metal, water affinity, and other shark traits.
+> (Tag:aquatic)(Tag:enhancer)(Tag:transformation)(Tag:water)Lets you turn into a shark or shark hybrid at will, gaining enhanced stats boosted further underwater, razor teeth able to tear metal, water affinity, and other shark traits.
 
 **Decision**
 
@@ -16005,7 +16055,7 @@
 
 **Description**
 
-> Lets you transform into an octopus or octopus hybrid at will, gaining enhanced stats boosted underwater, independent body control, slow limb and organ regeneration, and other octopus traits.
+> (Tag:aquatic)(Tag:enhancer)(Tag:transformation)(Tag:water)Lets you transform into an octopus or octopus hybrid at will, gaining enhanced stats boosted underwater, independent body control, slow limb and organ regeneration, and other octopus traits.
 
 **Decision**
 
@@ -16039,7 +16089,7 @@
 
 **Description**
 
-> Lets you transmute touched material into any known gun plus bullets. Gun power scales with material quality.
+> (Tag:tech)(Tag:transformation)Lets you transmute touched material into any known gun plus bullets. Gun power scales with material quality.
 
 **Decision**
 
@@ -16056,7 +16106,7 @@
 
 **Description**
 
-> Lets you seal anything you defeat into 5x5 capture tokens where they cannot escape or use abilities, or instantly capture instead of killing. Targets must be unable to resist. Tokens can also transport people.
+> (Tag:alter)(Tag:summon)Lets you seal anything you defeat into 5x5 capture tokens where they cannot escape or use abilities, or instantly capture instead of killing. Targets must be unable to resist. Tokens can also transport people.
 
 **Flagged in reports**
 
@@ -16077,7 +16127,7 @@
 
 **Description**
 
-> Lets you create and telekinetically control gem-like crystals, with durability scaling with energy spent. You can spread them over touched surfaces.
+> (Tag:earth)Lets you create and telekinetically control gem-like crystals, with durability scaling with energy spent. You can spread them over touched surfaces.
 
 **Decision**
 
@@ -16094,7 +16144,7 @@
 
 **Description**
 
-> Lets you create and finely control gem-like crystals, even as powder. You can make semi-autonomous crystal golems that crumble when disabled and slowly drain energy.
+> (Tag:earth)(Tag:summon)Lets you create and finely control gem-like crystals, even as powder. You can make semi-autonomous crystal golems that crumble when disabled and slowly drain energy.
 
 **Decision**
 
@@ -16128,7 +16178,7 @@
 
 **Description**
 
-> Lets you transform into a Kirin or Kirin hybrid, gaining enhanced stats, speed, and lightning affinity, plus the ability to call down powerful lightning bolts.
+> (Tag:enhancer)Lets you transform into a Kirin or Kirin hybrid, gaining enhanced stats, speed, and lightning affinity, plus the ability to call down powerful lightning bolts.
 
 **Decision**
 
@@ -16145,7 +16195,7 @@
 
 **Description**
 
-> While active, makes everyone who knows you temporarily forget you and prevents anyone met from recalling your features.
+> (Tag:illusion)(Tag:stealth)While active, makes everyone who knows you temporarily forget you and prevents anyone met from recalling your features.
 
 **Decision**
 
@@ -16162,7 +16212,7 @@
 
 **Description**
 
-> Lets you minorly communicate with and control nearby plants, accelerating their growth, further boosting it with energy, and slightly altering their shape.
+> (Tag:nature)Lets you minorly communicate with and control nearby plants, accelerating their growth, further boosting it with energy, and slightly altering their shape.
 
 **Decision**
 
@@ -16179,7 +16229,7 @@
 
 **Description**
 
-> Lets you create, communicate with, and control nearby plants, growing grass, ripening crops, shaping them slightly, driving roots through concrete, and raising trees into barriers.
+> (Tag:kinesis)(Tag:nature)Lets you create, communicate with, and control nearby plants, growing grass, ripening crops, shaping them slightly, driving roots through concrete, and raising trees into barriers.
 
 **Decision**
 
@@ -16196,7 +16246,7 @@
 
 **Description**
 
-> Makes you a chlorokinetic able to create and control plants in sensory range, snaring foes with branches, breaking concrete with trees, wielding vines as whips, or growing fruit on demand.
+> (Tag:kinesis)(Tag:nature)Makes you a chlorokinetic able to create and control plants in sensory range, snaring foes with branches, breaking concrete with trees, wielding vines as whips, or growing fruit on demand.
 
 **Decision**
 
@@ -16213,7 +16263,7 @@
 
 **Description**
 
-> Gives you formidable chlorokinesis over plants in sensory range, growing them from soil and boosting them supernaturally, such as steel-hard wood and razor leaves. Requires a plant in range or growing one first.
+> (Tag:kinesis)(Tag:nature)Gives you formidable chlorokinesis over plants in sensory range, growing them from soil and boosting them supernaturally, such as steel-hard wood and razor leaves. Requires a plant in range or growing one first.
 
 **Decision**
 
@@ -16230,7 +16280,7 @@
 
 **Description**
 
-> Makes you a powerful chlorokinetic able to create, reinforce, and control plants in sensory range, raising forests, swallowing foes with roots, and hardening branches to cut titanium. Requires a plant in range or growing one first.
+> (Tag:kinesis)(Tag:nature)Makes you a powerful chlorokinetic able to create, reinforce, and control plants in sensory range, raising forests, swallowing foes with roots, and hardening branches to cut titanium. Requires a plant in range or growing one first.
 
 **Decision**
 
@@ -16247,7 +16297,7 @@
 
 **Description**
 
-> Makes you a master of plants able to create, reinforce, and control all plant life in sensory range, erupting forests, growing metal-strong trees, and fusing trees into treant golems, limited only by energy.
+> (Tag:kinesis)(Tag:nature)Makes you a master of plants able to create, reinforce, and control all plant life in sensory range, erupting forests, growing metal-strong trees, and fusing trees into treant golems, limited only by energy.
 
 **Decision**
 
@@ -16264,7 +16314,7 @@
 
 **Description**
 
-> Makes you one with nature able to create, reinforce, and control all plant life, erupting world-swallowing jungles, treant armies, and kilometer-long root spears, limited only by energy.
+> (Tag:nature)Makes you one with nature able to create, reinforce, and control all plant life, erupting world-swallowing jungles, treant armies, and kilometer-long root spears, limited only by energy.
 
 **Decision**
 
@@ -16281,7 +16331,7 @@
 
 **Description**
 
-> Lets you and your abilities interact with the spiritual world, extending your perception to souls and spirits.
+> (Tag:passive)(Tag:spirit)Lets you and your abilities interact with the spiritual world, extending your perception to souls and spirits.
 
 **Decision**
 
@@ -16298,7 +16348,7 @@
 
 **Description**
 
-> Lets you conjure an energy bow and arrow, with arrow strength scaling with energy invested.
+> (Tag:martial)(Tag:neutral)Lets you conjure an energy bow and arrow, with arrow strength scaling with energy invested.
 
 **Decision**
 
@@ -16315,7 +16365,7 @@
 
 **Description**
 
-> Lets you conjure an energy bow and arrow with boosted marksmanship and sharpened senses while aiming. Arrow strength scales with energy, and you can alter its shape and size.
+> (Tag:martial)(Tag:neutral)(Tag:sense)Lets you conjure an energy bow and arrow with boosted marksmanship and sharpened senses while aiming. Arrow strength scales with energy, and you can alter its shape and size.
 
 **Decision**
 
@@ -16349,7 +16399,7 @@
 
 **Description**
 
-> Lets you conjure an imitation of Hou Yi's bow firing destructive arrows that strengthen with energy invested. Aiming boosts marksmanship and senses, and you can alter arrow shape and size.
+> (Tag:martial)(Tag:neutral)(Tag:sense)Lets you conjure an imitation of Hou Yi's bow firing destructive arrows that strengthen with energy invested. Aiming boosts marksmanship and senses, and you can alter arrow shape and size.
 
 **Decision**
 
@@ -16366,7 +16416,7 @@
 
 **Description**
 
-> Lets you conjure an energy bow blessed by Artemis, firing arrows that pierce the toughest foes and strengthen with energy invested. Aiming boosts marksmanship, sharpens senses, and guides your shot, and you can alter arrow shape and size.
+> (Tag:martial)(Tag:neutral)(Tag:sense)Lets you conjure an energy bow blessed by Artemis, firing arrows that pierce the toughest foes and strengthen with energy invested. Aiming boosts marksmanship, sharpens senses, and guides your shot, and you can alter arrow shape and size.
 
 **Decision**
 
@@ -16383,7 +16433,7 @@
 
 **Description**
 
-> Lets you create ripe, tasty fruits and vegetables with your own energy.
+> (Tag:nature)Lets you create ripe, tasty fruits and vegetables with your own energy.
 
 **Decision**
 
@@ -16400,7 +16450,7 @@
 
 **Description**
 
-> Lets you create extremely refreshing fruits and vegetables from energy, which can gain unique properties from your abilities.
+> (Tag:nature)Lets you create extremely refreshing fruits and vegetables from energy, which can gain unique properties from your abilities.
 
 **Decision**
 
@@ -16417,7 +16467,7 @@
 
 **Description**
 
-> Lets you create and control bones, erupting them from surfaces in sight and raising semi-autonomous skeleton soldiers. Soldiers vanish if cancelled or swapped, and more soldiers drain more energy.
+> (Tag:necro)(Tag:summon)Lets you create and control bones, erupting them from surfaces in sight and raising semi-autonomous skeleton soldiers. Soldiers vanish if cancelled or swapped, and more soldiers drain more energy.
 
 **Decision**
 
@@ -16434,7 +16484,7 @@
 
 **Description**
 
-> Lets you mark up to 10 items within your lifting strength to summon to you at will and return to where you summoned them from.
+> (Tag:movement)Lets you mark up to 10 items within your lifting strength to summon to you at will and return to where you summoned them from.
 
 **Decision**
 
@@ -16451,7 +16501,7 @@
 
 **Description**
 
-> Lets you produce and control body-spun silk for grappling, restraining, and fastening. Output and durability scale with physical stats.
+> (Tag:bio)Lets you produce and control body-spun silk for grappling, restraining, and fastening. Output and durability scale with physical stats.
 
 **Decision**
 
@@ -16468,7 +16518,7 @@
 
 **Description**
 
-> Lets you modestly boost all physical capabilities equally with energy. Boost scales with base stats and energy spent.
+> (Tag:enhancer)Lets you modestly boost all physical capabilities equally with energy. Boost scales with base stats and energy spent.
 
 **Decision**
 
@@ -16485,7 +16535,7 @@
 
 **Description**
 
-> Lets you boost all physical capabilities equally with energy. Boost scales with base stats and energy spent.
+> (Tag:enhancer)Lets you boost all physical capabilities equally with energy. Boost scales with base stats and energy spent.
 
 **Decision**
 
@@ -16502,7 +16552,7 @@
 
 **Description**
 
-> Reinforces your skin to metal-like toughness and mass, letting even a base human shrug off bats, small-caliber bullets, and survive car crashes. It can slow your movement.
+> (Tag:earth)Reinforces your skin to metal-like toughness and mass, letting even a base human shrug off bats, small-caliber bullets, and survive car crashes. It can slow your movement.
 
 **Decision**
 
@@ -16519,7 +16569,7 @@
 
 **Description**
 
-> Covers you in a soul barrier that boosts physical capabilities and absorbs attacks, letting you survive at least one hit before breaking.
+> (Tag:enhancer)(Tag:spirit)Covers you in a soul barrier that boosts physical capabilities and absorbs attacks, letting you survive at least one hit before breaking.
 
 **Decision**
 
@@ -16536,7 +16586,7 @@
 
 **Description**
 
-> Grants super strength able to lift millions of tons, high-speed flight, enhanced intellect, and a time-locked body immune to all non-spacetime effects. You can still suffocate.
+> (Tag:enhancer)(Tag:movement)(Tag:space)Grants super strength able to lift millions of tons, high-speed flight, enhanced intellect, and a time-locked body immune to all non-spacetime effects. You can still suffocate.
 
 **Decision**
 
@@ -16553,7 +16603,7 @@
 
 **Description**
 
-> Grants average super speed, strength, durability, and flight, excelling in none but above average in all.
+> (Tag:enhancer)(Tag:movement)Grants average super speed, strength, durability, and flight, excelling in none but above average in all.
 
 **Decision**
 
@@ -16570,7 +16620,7 @@
 
 **Description**
 
-> Lets you cover your skin in a stone-like layer that boosts durability and mass.
+> (Tag:enhancer)(Tag:transformation)Lets you cover your skin in a stone-like layer that boosts durability and mass.
 
 **Decision**
 
@@ -16587,7 +16637,7 @@
 
 **Description**
 
-> Lets you burn energy to greatly boost attack power, speed, and fire abilities at the cost of defense and recovery. Longer burning means more heat and power, until your organs begin to melt.
+> (Tag:enhancer)(Tag:fire)Lets you burn energy to greatly boost attack power, speed, and fire abilities at the cost of defense and recovery. Longer burning means more heat and power, until your organs begin to melt.
 
 **Decision**
 
@@ -16604,7 +16654,7 @@
 
 **Description**
 
-> Freezes your soul, dulling emotions while boosting defense and cryokinetic potency at the cost of speed and offense. The colder you grow, the tougher and more frigid you become.
+> (Tag:enhancer)(Tag:ice)(Tag:mental)(Tag:spirit)Freezes your soul, dulling emotions while boosting defense and cryokinetic potency at the cost of speed and offense. The colder you grow, the tougher and more frigid you become.
 
 **Decision**
 
@@ -16621,7 +16671,7 @@
 
 **Description**
 
-> (Tech) Lets you transform your body into any technology you understand, such as nanofiber muscles, weaponized prosthetics, or scanner eyes. Training can negate mass differences.
+> (Tag:bio)(Tag:tech)(Tag:transformation)(Tech) Lets you transform your body into any technology you understand, such as nanofiber muscles, weaponized prosthetics, or scanner eyes. Training can negate mass differences.
 
 **Decision**
 
@@ -16638,7 +16688,7 @@
 
 **Description**
 
-> Makes you invulnerable to anything below reality manipulation while you wish to be unharmed, even surviving multiverse collapse unscathed.
+> (Tag:alter)Makes you invulnerable to anything below reality manipulation while you wish to be unharmed, even surviving multiverse collapse unscathed.
 
 **Decision**
 
@@ -16655,7 +16705,7 @@
 
 **Description**
 
-> Makes you truly immortal, with reality restoring you moments after death even from total erasure, plus regeneration fast enough to reform mid-step. Each death permanently increases all your stats.
+> (Tag:alter)Makes you truly immortal, with reality restoring you moments after death even from total erasure, plus regeneration fast enough to reform mid-step. Each death permanently increases all your stats.
 
 **Decision**
 
@@ -16672,7 +16722,7 @@
 
 **Description**
 
-> Lets you exclude yourself from anything that can interact with you, such as time, physics, harm, targeting, or perception.
+> (Tag:alter)Lets you exclude yourself from anything that can interact with you, such as time, physics, harm, targeting, or perception.
 
 **Decision**
 
@@ -16689,7 +16739,7 @@
 
 **Description**
 
-> Lets you deny the existence of anything to reality, which obeys, treating reality like clay.
+> (Tag:alter)Lets you deny the existence of anything to reality, which obeys, treating reality like clay.
 
 **Decision**
 
@@ -16706,7 +16756,7 @@
 
 **Description**
 
-> Boosts all physical stats based on danger at no energy cost: none when safe, scaling from Common when mildly endangered up to Epic when facing certain death.
+> (Tag:enhancer)(Tag:mental)(Tag:passive)Boosts all physical stats based on danger at no energy cost: none when safe, scaling from Common when mildly endangered up to Epic when facing certain death.
 
 **Decision**
 
@@ -16723,7 +16773,7 @@
 
 **Description**
 
-> The more negative effects you suffer, the faster you regenerate health and energy. Curses, poison, illness, and bleeding only fuel you.
+> (Tag:passive)(Tag:recovery)The more negative effects you suffer, the faster you regenerate health and energy. Curses, poison, illness, and bleeding only fuel you.
 
 **Decision**
 
@@ -16740,7 +16790,7 @@
 
 **Description**
 
-> Refunds a portion of attack energy proportional to damage dealt, but doubles the cost of attacks that deal no damage.
+> (Tag:recovery)(Tag:spirit)Refunds a portion of attack energy proportional to damage dealt, but doubles the cost of attacks that deal no damage.
 
 **Decision**
 
@@ -16757,7 +16807,7 @@
 
 **Description**
 
-> Permanently absorbs 10% of anything you kill's stats into your own.
+> (Tag:enhancer)(Tag:growth)(Tag:meta)Permanently absorbs 10% of anything you kill's stats into your own.
 
 **Decision**
 
@@ -16774,7 +16824,7 @@
 
 **Description**
 
-> Lets you turn into an ogre or ogre hybrid at will, gaining increased stats, regeneration, and other ogre traits.
+> (Tag:enhancer)(Tag:recovery)(Tag:transformation)Lets you turn into an ogre or ogre hybrid at will, gaining increased stats, regeneration, and other ogre traits.
 
 **Decision**
 
@@ -16791,7 +16841,7 @@
 
 **Description**
 
-> Lets you turn into a bear or bear hybrid at will, gaining enhanced stats, fangs, claws, thick hide, and other bear traits.
+> (Tag:enhancer)(Tag:transformation)Lets you turn into a bear or bear hybrid at will, gaining enhanced stats, fangs, claws, thick hide, and other bear traits.
 
 **Decision**
 
@@ -16808,7 +16858,7 @@
 
 **Description**
 
-> Caps damage taken at 25% of total health per 5 seconds, regardless of attacker or attack strength.
+> (Tag:alter)Caps damage taken at 25% of total health per 5 seconds, regardless of attacker or attack strength.
 
 **Decision**
 
@@ -16825,7 +16875,7 @@
 
 **Description**
 
-> Lets you sacrifice 33% of your health to gain 10 seconds of invincibility. The sacrificed health cannot be healed, recovering over 1 hour.
+> (Tag:alter)Lets you sacrifice 33% of your health to gain 10 seconds of invincibility. The sacrificed health cannot be healed, recovering over 1 hour.
 
 **Decision**
 
@@ -16842,7 +16892,7 @@
 
 **Description**
 
-> Lets you turn into a cat or cat hybrid at will, gaining enhanced agility, senses, reflexes, claws, teeth, and other cat traits.
+> (Tag:enhancer)(Tag:sense)(Tag:transformation)Lets you turn into a cat or cat hybrid at will, gaining enhanced agility, senses, reflexes, claws, teeth, and other cat traits.
 
 **Decision**
 
@@ -16859,7 +16909,7 @@
 
 **Description**
 
-> Lets you turn into a bat or bat hybrid at will, gaining agility, senses, sonar, flight, claws, teeth, and other bat traits.
+> (Tag:sense)(Tag:transformation)Lets you turn into a bat or bat hybrid at will, gaining agility, senses, sonar, flight, claws, teeth, and other bat traits.
 
 **Decision**
 
@@ -16876,7 +16926,7 @@
 
 **Description**
 
-> Lets you turn into a wolf or wolf hybrid at will, gaining enhanced stats, claws, fangs, night vision, senses, and other wolf traits.
+> (Tag:enhancer)(Tag:sense)(Tag:transformation)Lets you turn into a wolf or wolf hybrid at will, gaining enhanced stats, claws, fangs, night vision, senses, and other wolf traits.
 
 **Decision**
 
@@ -16893,7 +16943,7 @@
 
 **Description**
 
-> Lets you shape souls by touch, reshaping bodies through them, with cost scaling against stronger targets. You can shapeshift yourself, but larger mass changes reduce energy output.
+> (Tag:alter)(Tag:recovery)(Tag:spirit)Lets you shape souls by touch, reshaping bodies through them, with cost scaling against stronger targets. You can shapeshift yourself, but larger mass changes reduce energy output.
 
 **Flagged in reports**
 
@@ -16914,7 +16964,7 @@
 
 **Description**
 
-> Lets you launch fist projections by punching, with size and power scaling with energy spent. Base power equals your physical strength, usable to boost melee or strike at range.
+> (Tag:kinetic)(Tag:martial)Lets you launch fist projections by punching, with size and power scaling with energy spent. Base power equals your physical strength, usable to boost melee or strike at range.
 
 **Decision**
 
@@ -16931,7 +16981,7 @@
 
 **Description**
 
-> Boosts each physical hit by 10% more if landed within 3 seconds of the last, stacking up to 999%. Missing the window resets the combo.
+> (Tag:enhancer)(Tag:martial)Boosts each physical hit by 10% more if landed within 3 seconds of the last, stacking up to 999%. Missing the window resets the combo.
 
 **Decision**
 
@@ -16948,7 +16998,7 @@
 
 **Description**
 
-> Lets you equip abilities beyond your slots, doubling total energy consumption for each extra ability.
+> (Tag:meta)Lets you equip abilities beyond your slots, doubling total energy consumption for each extra ability.
 
 **Decision**
 
@@ -16965,7 +17015,7 @@
 
 **Description**
 
-> {Mystic Eyes} Lets you see weaknesses in objects and creatures highlighted in red, and with training understand them and strike break points to cripple creatures, collapse structures, or dispel spells.
+> (Tag:divination){Mystic Eyes} Lets you see weaknesses in objects and creatures highlighted in red, and with training understand them and strike break points to cripple creatures, collapse structures, or dispel spells.
 
 **Decision**
 
@@ -16982,7 +17032,7 @@
 
 **Description**
 
-> Lets you enhance all five senses with energy, such as cross-country sight, months-old scent tracking, or city-wide hearing.
+> (Tag:sense)Lets you enhance all five senses with energy, such as cross-country sight, months-old scent tracking, or city-wide hearing.
 
 **Decision**
 
@@ -16999,7 +17049,7 @@
 
 **Description**
 
-> Lets you sense hostile or killing intent directed at you and its source, though trained killers are harder to read.
+> (Tag:divination)(Tag:sense)Lets you sense hostile or killing intent directed at you and its source, though trained killers are harder to read.
 
 **Decision**
 
@@ -17016,7 +17066,7 @@
 
 **Description**
 
-> Lets you sense incoming danger, with stronger threats producing stronger sensations.
+> (Tag:divination)(Tag:sense)Lets you sense incoming danger, with stronger threats producing stronger sensations.
 
 **Decision**
 
@@ -17033,7 +17083,7 @@
 
 **Description**
 
-> Lets you conjure and manipulate Bungee Gum, a substance with the properties of both rubber and gum.
+> (Tag:neutral)Lets you conjure and manipulate Bungee Gum, a substance with the properties of both rubber and gum.
 
 **Decision**
 
@@ -17050,7 +17100,7 @@
 
 **Description**
 
-> Lets you absorb a touched material to coat or transform your body and gain its properties, including esoteric ones like vibranium. Steel grants resilience and conductivity, uranium radioactivity, glass brittleness.
+> (Tag:transformation)Lets you absorb a touched material to coat or transform your body and gain its properties, including esoteric ones like vibranium. Steel grants resilience and conductivity, uranium radioactivity, glass brittleness.
 
 **Decision**
 
@@ -17067,7 +17117,7 @@
 
 **Description**
 
-> Lets you absorb a touched material to coat or transform your body and gain its properties, including esoteric ones like vibranium. You can also shape your body into weapons and create more of the material with energy.
+> (Tag:transformation)Lets you absorb a touched material to coat or transform your body and gain its properties, including esoteric ones like vibranium. You can also shape your body into weapons and create more of the material with energy.
 
 **Decision**
 
@@ -17084,7 +17134,7 @@
 
 **Description**
 
-> (Tech) Lets you transform into a Galvanic Mechamorph that fuses with and upgrades technology proportional to your power.
+> (Tag:tech)(Tag:transformation)(Tech) Lets you transform into a Galvanic Mechamorph that fuses with and upgrades technology proportional to your power.
 
 **Decision**
 
@@ -17101,7 +17151,7 @@
 
 **Description**
 
-> Lets you imbue thrown objects with speed proportional to energy spent, reaching Mach speeds with enough energy.
+> (Tag:kinetic)(Tag:martial)Lets you imbue thrown objects with speed proportional to energy spent, reaching Mach speeds with enough energy.
 
 **Decision**
 
@@ -17118,7 +17168,7 @@
 
 **Description**
 
-> Lets you launch touched objects with speed scaling with energy spent, sending cars to a hundred times the speed of sound with enough energy. Larger masses cost more, and living beings can resist.
+> (Tag:kinetic)Lets you launch touched objects with speed scaling with energy spent, sending cars to a hundred times the speed of sound with enough energy. Larger masses cost more, and living beings can resist.
 
 **Decision**
 
@@ -17135,7 +17185,7 @@
 
 **Description**
 
-> Lets you create invisible forcefields that reflect kinetic attacks back at double strength, up to your power limit. Maintaining and reflecting costs energy; training improves size and shaping.
+> (Tag:kinetic)Lets you create invisible forcefields that reflect kinetic attacks back at double strength, up to your power limit. Maintaining and reflecting costs energy; training improves size and shaping.
 
 **Decision**
 
@@ -17152,7 +17202,7 @@
 
 **Description**
 
-> Lets you create varied energy blades, from throwing knives to greatswords, while gaining a minor strength boost.
+> (Tag:martial)(Tag:neutral)Lets you create varied energy blades, from throwing knives to greatswords, while gaining a minor strength boost.
 
 **Decision**
 
@@ -17169,7 +17219,7 @@
 
 **Description**
 
-> Lets you summon energy spears you telekinetically control, conjuring them from any solid surface.
+> (Tag:martial)(Tag:neutral)Lets you summon energy spears you telekinetically control, conjuring them from any solid surface.
 
 **Decision**
 
@@ -17186,7 +17236,7 @@
 
 **Description**
 
-> Lets you enter a battle trance unleashing all rage, drastically slowing your perception and unlocking 100% power regardless of bodily harm. It drains energy and overuse damages you.
+> (Tag:enhancer)(Tag:martial)(Tag:sense)Lets you enter a battle trance unleashing all rage, drastically slowing your perception and unlocking 100% power regardless of bodily harm. It drains energy and overuse damages you.
 
 **Decision**
 
@@ -17203,7 +17253,7 @@
 
 **Description**
 
-> Lets you manipulate atoms with great precision to transmute matter and control elements, up to transforming bodies or crafting superior matter. Requires extensive training to use well.
+> (Tag:neutral)Lets you manipulate atoms with great precision to transmute matter and control elements, up to transforming bodies or crafting superior matter. Requires extensive training to use well.
 
 **Decision**
 
@@ -17220,7 +17270,7 @@
 
 **Description**
 
-> Lets you stop time at great energy cost. Far superior beings can resist the freeze.
+> (Tag:ice)(Tag:time)Lets you stop time at great energy cost. Far superior beings can resist the freeze.
 
 **Decision**
 
@@ -17237,7 +17287,7 @@
 
 **Description**
 
-> Lets you calibrate time on your body, slowing the world, hastening yourself or only your perception, stalling wounds, or slowing incoming objects. Larger effects cost more energy.
+> (Tag:time)Lets you calibrate time on your body, slowing the world, hastening yourself or only your perception, stalling wounds, or slowing incoming objects. Larger effects cost more energy.
 
 **Decision**
 
@@ -17254,7 +17304,7 @@
 
 **Description**
 
-> Lets you manipulate space to move things telekinetically, teleport, tear space, create pocket dimensions, warp objects, harden targets, and with training invade other worlds.
+> (Tag:kinesis)(Tag:space)Lets you manipulate space to move things telekinetically, teleport, tear space, create pocket dimensions, warp objects, harden targets, and with training invade other worlds.
 
 **Decision**
 
@@ -17271,7 +17321,7 @@
 
 **Description**
 
-> Lets you leave to a random world on a mission, returning once completed, and revisit it later via spatial travel or vehicles. Cooldown: 1 Month.
+> (Tag:movement)Lets you leave to a random world on a mission, returning once completed, and revisit it later via spatial travel or vehicles. Cooldown: 1 Month.
 
 **Decision**
 
@@ -17288,7 +17338,7 @@
 
 **Description**
 
-> Lets you freely rewind, fast-forward, travel through, and stop time while you have energy.
+> (Tag:time)Lets you freely rewind, fast-forward, travel through, and stop time while you have energy.
 
 **Decision**
 
@@ -17305,7 +17355,7 @@
 
 **Description**
 
-> Lets you raise or lower any target's luck, given enough energy.
+> (Tag:alter)Lets you raise or lower any target's luck, given enough energy.
 
 **Decision**
 
@@ -17322,7 +17372,7 @@
 
 **Description**
 
-> Makes you grow stronger with anger and conflict without limit, potentially reaching universe-ending power. Escalating too far destroys your reason, leaving a mindless beast until death or extinction.
+> (Tag:enhancer)Makes you grow stronger with anger and conflict without limit, potentially reaching universe-ending power. Escalating too far destroys your reason, leaving a mindless beast until death or extinction.
 
 **Flagged in reports**
 
@@ -17343,7 +17393,7 @@
 
 **Description**
 
-> Massively boosts thought speed, comprehension, and reasoning beyond computer level.
+> (Tag:mental)Massively boosts thought speed, comprehension, and reasoning beyond computer level.
 
 **Decision**
 
@@ -17360,7 +17410,7 @@
 
 **Description**
 
-> Lets you accelerate thoughts, instantly analyze objects, and gather detailed target information from basic knowledge. It acts automatically and helps manage your abilities.
+> (Tag:divination)(Tag:mental)Lets you accelerate thoughts, instantly analyze objects, and gather detailed target information from basic knowledge. It acts automatically and helps manage your abilities.
 
 **Decision**
 
@@ -17377,7 +17427,7 @@
 
 **Description**
 
-> You are the true user of magic in this world. You dominate mana and all magic around you, rendering magic inert and uncastable, instantly learning any spell in sensory range, casting spells instantly and instinctively, and absorbing magical energy from people and the environment.
+> (Tag:magic)You are the true user of magic in this world. You dominate mana and all magic around you, rendering magic inert and uncastable, instantly learning any spell in sensory range, casting spells instantly and instinctively, and absorbing magical energy from people and the environment.
 
 **Decision**
 
@@ -17394,7 +17444,7 @@
 
 **Description**
 
-> You are the Void. You can suck in almost any kind of energy almost limitlessly — mana, energy, stamina, kinetic, electricity, Telesma, psionic, etc. Even as a base human, you could detonate a hydrogen bomb next to your face and barely feel warm.
+> (Tag:alter)You are the Void. You can suck in almost any kind of energy almost limitlessly, mana, energy, stamina, kinetic, electricity, Telesma, psionic, etc. Even as a base human, you could detonate a hydrogen bomb next to your face and barely feel warm.
 
 **Decision**
 
@@ -17411,7 +17461,7 @@
 
 **Description**
 
-> The Grand Nullifier. You can dispel anything you can interact with — motion in an area, all mana in an area, an individual's abilities, and their minds. You cannot dispel or nullify a lack of something.
+> (Tag:alter)The Grand Nullifier. You can dispel anything you can interact with, motion in an area, all mana in an area, an individual's abilities, and their minds. You cannot dispel or nullify a lack of something.
 
 **Decision**
 
@@ -17428,7 +17478,7 @@
 
 **Description**
 
-> "Shed all worldly concerns and embrace slaughter." When activated, you lose all inhibitions, pain turns to pleasure, and all stats are massively enhanced. But its energy slowly tears your body apart as you fight, and its sense of limitless power may make you unwilling to turn it off.
+> (Tag:enhancer)(Tag:martial)(Tag:recovery)"Shed all worldly concerns and embrace slaughter." When activated, you lose all inhibitions, pain turns to pleasure, and all stats are massively enhanced. But its energy slowly tears your body apart as you fight, and its sense of limitless power may make you unwilling to turn it off.
 
 **Decision**
 
@@ -17445,7 +17495,7 @@
 
 **Description**
 
-> "Tit for Tat" Allows you to enforce karma. Every exchange accrues karma, and if unfulfilled you can enforce it — if you saved someone's life and they have not repaid you, you can force them to perform any action or actions equal to the karmic value of their life.
+> (Tag:command)"Tit for Tat" Allows you to enforce karma. Every exchange accrues karma, and if unfulfilled you can enforce it, if you saved someone's life and they have not repaid you, you can force them to perform any action or actions equal to the karmic value of their life.
 
 **Flagged in reports**
 
@@ -17466,7 +17516,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of a fire dragon. You generate fire from your body, control it, alter its properties such as blunt or sharp, devour flames, and are immune to all fire below your level. Eating flames recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your flames.
+> (Tag:draconic)(Tag:fire)(Tag:transformation)Allows you to transform into and wield the powers of a fire dragon. You generate fire from your body, control it, alter its properties such as blunt or sharp, devour flames, and are immune to all fire below your level. Eating flames recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your flames.
 
 **Decision**
 
@@ -17483,7 +17533,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of a water dragon. You generate, control, alter its properties such as blunt or sharp, devour water, and are immune to water-based attacks below your level. Drinking water recovers vitality and energy, though polluted water can harm you, and consuming other magic lets you temporarily incorporate it into your water.
+> (Tag:draconic)(Tag:transformation)(Tag:water)Allows you to transform into and wield the powers of a water dragon. You generate, control, alter its properties such as blunt or sharp, devour water, and are immune to water-based attacks below your level. Drinking water recovers vitality and energy, though polluted water can harm you, and consuming other magic lets you temporarily incorporate it into your water.
 
 **Decision**
 
@@ -17500,7 +17550,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of a sky dragon. You generate, control, alter your winds such as blunt or sharp, devour wind, heal others with your winds, and are immune to wind-based attacks below your level. Breathing air recovers vitality and energy, though polluted air harms you, and consuming other magic lets you temporarily incorporate it into your wind attacks.
+> (Tag:air)(Tag:draconic)(Tag:healing)(Tag:transformation)Allows you to transform into and wield the powers of a sky dragon. You generate, control, alter your winds such as blunt or sharp, devour wind, heal others with your winds, and are immune to wind-based attacks below your level. Breathing air recovers vitality and energy, though polluted air harms you, and consuming other magic lets you temporarily incorporate it into your wind attacks.
 
 **Decision**
 
@@ -17517,7 +17567,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of a poison dragon. You generate, control, and alter potent poison such as corrosive, sickening, or boiling, devour poison, and are immune to all poison below your level. Consuming poison recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your poison.
+> (Tag:draconic)(Tag:poison)(Tag:transformation)Allows you to transform into and wield the powers of a poison dragon. You generate, control, and alter potent poison such as corrosive, sickening, or boiling, devour poison, and are immune to all poison below your level. Consuming poison recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your poison.
 
 **Decision**
 
@@ -17534,7 +17584,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of a lightning dragon. You generate lightning from your body, control it, alter its properties such as blunt or sharp, devour lightning, and are immune to all lightning below your level. Eating lightning recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your lightning.
+> (Tag:draconic)(Tag:electric)(Tag:transformation)Allows you to transform into and wield the powers of a lightning dragon. You generate lightning from your body, control it, alter its properties such as blunt or sharp, devour lightning, and are immune to all lightning below your level. Eating lightning recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your lightning.
 
 **Decision**
 
@@ -17551,7 +17601,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of a dark dragon. You generate shadows from your body, control them, turn into a shadow and merge with them, alter their properties such as blunt or sharp, and are immune to all dark attributes below your level. Eating shadows recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your shadows.
+> (Tag:dark)(Tag:draconic)(Tag:transformation)Allows you to transform into and wield the powers of a dark dragon. You generate shadows from your body, control them, turn into a shadow and merge with them, alter their properties such as blunt or sharp, and are immune to all dark attributes below your level. Eating shadows recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your shadows.
 
 **Decision**
 
@@ -17568,7 +17618,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of a white dragon. You generate and control Holy Light from your body, alter its properties such as blunt or sharp, and are immune to all Light and Holy attributes below your level. Eating light energy and holy objects recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your light.
+> (Tag:draconic)(Tag:holy)(Tag:light)(Tag:transformation)Allows you to transform into and wield the powers of a white dragon. You generate and control Holy Light from your body, alter its properties such as blunt or sharp, and are immune to all Light and Holy attributes below your level. Eating light energy and holy objects recovers vitality and energy, and consuming other magic lets you temporarily incorporate it into your light.
 
 **Decision**
 
@@ -17585,7 +17635,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of an earth dragon. You generate, control, alter earth such as denser, tougher, and heavier, devour earth, and are immune to earth-based attacks below your level. Devouring earth and rocks recovers vitality and energy based on rock quality, and consuming other magic lets you temporarily incorporate it into your earth.
+> (Tag:draconic)(Tag:earth)(Tag:transformation)Allows you to transform into and wield the powers of an earth dragon. You generate, control, alter earth such as denser, tougher, and heavier, devour earth, and are immune to earth-based attacks below your level. Devouring earth and rocks recovers vitality and energy based on rock quality, and consuming other magic lets you temporarily incorporate it into your earth.
 
 **Decision**
 
@@ -17602,7 +17652,7 @@
 
 **Description**
 
-> Allows you to transform into and wield the powers of a spirit dragon. You emit and control spiritual energy, alter your soul constructs such as blunt or sharp, shift into spirit form, possess people, and persist as a spirit after death. Devouring souls strengthens and rejuvenates you.
+> (Tag:draconic)(Tag:spirit)(Tag:transformation)Allows you to transform into and wield the powers of a spirit dragon. You emit and control spiritual energy, alter your soul constructs such as blunt or sharp, shift into spirit form, possess people, and persist as a spirit after death. Devouring souls strengthens and rejuvenates you.
 
 **Decision**
 
@@ -17619,7 +17669,7 @@
 
 **Description**
 
-> You can freely increase the density and mass of your muscle fibers, massively increasing explosive power and durability. If fibers exceed what fits under your skin, they cover your body like a second set of muscles. More fibers burn stamina faster.
+> (Tag:bio)(Tag:enhancer)You can freely increase the density and mass of your muscle fibers, massively increasing explosive power and durability. If fibers exceed what fits under your skin, they cover your body like a second set of muscles. More fibers burn stamina faster.
 
 **Decision**
 
@@ -17636,7 +17686,7 @@
 
 **Description**
 
-> You can rejuvenate yourself and targets, restoring virility and health. It does not heal injuries, but cures illnesses and ailments, reverses aging, restores sacrificed lifespan, and restores rotten or ill vegetation. Stronger targets cost more energy.
+> (Tag:life)(Tag:recovery)You can rejuvenate yourself and targets, restoring virility and health. It does not heal injuries, but cures illnesses and ailments, reverses aging, restores sacrificed lifespan, and restores rotten or ill vegetation. Stronger targets cost more energy.
 
 **Decision**
 
@@ -17653,7 +17703,7 @@
 
 **Description**
 
-> Nothing keeps you down. While in your active slot, at the moment of death you revive 10 seconds later with health and energy restored to 50%. 7 day cooldown.
+> (Tag:necro)(Tag:passive)(Tag:recovery)Nothing keeps you down. While in your active slot, at the moment of death you revive 10 seconds later with health and energy restored to 50%. 7 day cooldown.
 
 **Decision**
 
@@ -17670,7 +17720,7 @@
 
 **Description**
 
-> (Tech) You can build the technology of THE BAKERY. With enough time and resources, you can make assembly lines that compress universes into little balls for bowling, then turn every atom inside them into cookies for shipment across the multiverse.
+> (Tag:tech)(Tag:tinker)(Tech) You can build the technology of THE BAKERY. With enough time and resources, you can make assembly lines that compress universes into little balls for bowling, then turn every atom inside them into cookies for shipment across the multiverse.
 
 **Decision**
 
@@ -17687,7 +17737,7 @@
 
 **Description**
 
-> You can summon a projection of any mundane weapon into your hands. It must not be tinkertech, must not exceed your current world's technology, and must not surpass Elite rank in power. You also control its ammunition, such as a beanbag shotgun, nuclear bomb launcher, automatic rifle, sword, or crossbow.
+> (Tag:martial)(Tag:summon)(Tag:tech)You can summon a projection of any mundane weapon into your hands. It must not be tinkertech, must not exceed your current world's technology, and must not surpass Elite rank in power. You also control its ammunition, such as a beanbag shotgun, nuclear bomb launcher, automatic rifle, sword, or crossbow.
 
 **Decision**
 
@@ -17704,7 +17754,7 @@
 
 **Description**
 
-> You can step and walk on anything — water, air, space, even nothing as a solid surface.
+> (Tag:movement)You can step and walk on anything, water, air, space, even nothing as a solid surface.
 
 **Decision**
 
@@ -17721,7 +17771,7 @@
 
 **Description**
 
-> Your abilities scale with your health. At 100% health all stats increase by +100%, at 90% by +90%, etc.
+> (Tag:enhancer)(Tag:meta)Your abilities scale with your health. At 100% health all stats increase by +100%, at 90% by +90%, etc.
 
 **Decision**
 
@@ -17738,7 +17788,7 @@
 
 **Description**
 
-> "Offence is the best defence" All physical stats except durability rise proportionally as you lower your defence. You can drop durability to -500% to raise strength to +500%.
+> (Tag:enhancer)"Offence is the best defence" All physical stats except durability rise proportionally as you lower your defence. You can drop durability to -500% to raise strength to +500%.
 
 **Decision**
 
@@ -17755,7 +17805,7 @@
 
 **Description**
 
-> You are an eternal engine for battle, growing in power every time you fight. Harder battles cause stronger, faster mid-battle growth, letting you adapt and surpass opponents. This growth is permanent.
+> (Tag:growth)(Tag:martial)You are an eternal engine for battle, growing in power every time you fight. Harder battles cause stronger, faster mid-battle growth, letting you adapt and surpass opponents. This growth is permanent.
 
 **Decision**
 
@@ -17772,7 +17822,7 @@
 
 **Description**
 
-> You create portals by sacrificing health — a two-way portal costs 10% of maximum health. While portals remain open, you lose access to that 10% of maximum health and it cannot heal.
+> (Tag:blood)(Tag:life)(Tag:movement)You create portals by sacrificing health, a two-way portal costs 10% of maximum health. While portals remain open, you lose access to that 10% of maximum health and it cannot heal.
 
 **Decision**
 
@@ -17789,7 +17839,7 @@
 
 **Description**
 
-> You can access the shadow-verse by sinking into shadows. Inside you can jump from shadow to shadow, bring people in and trap them with its monsters, or bring monsters out.
+> (Tag:dark)(Tag:stealth)You can access the shadow-verse by sinking into shadows. Inside you can jump from shadow to shadow, bring people in and trap them with its monsters, or bring monsters out.
 
 **Decision**
 
@@ -17806,7 +17856,7 @@
 
 **Description**
 
-> "Power for Pain" With Blood Escalation active, every 1% of health lost increases all stats by 1%. The increase resets when you leave combat.
+> (Tag:enhancer)(Tag:life)"Power for Pain" With Blood Escalation active, every 1% of health lost increases all stats by 1%. The increase resets when you leave combat.
 
 **Decision**
 
@@ -17823,7 +17873,7 @@
 
 **Description**
 
-> You can open doors to parallel worlds by trapping yourself between two objects to travel infinite parallel worlds. You can pull people and selves from parallel worlds into your own, including selves who know you are the original and accept it. If you die, all abilities and the gacha transfer to a random you across the multiverse.
+> (Tag:movement)You can open doors to parallel worlds by trapping yourself between two objects to travel infinite parallel worlds. You can pull people and selves from parallel worlds into your own, including selves who know you are the original and accept it. If you die, all abilities and the gacha transfer to a random you across the multiverse.
 
 **Flagged in reports**
 
@@ -17844,7 +17894,7 @@
 
 **Description**
 
-> You possess Obito Uchiha's right eye, granting half of Kamui plus full Sharingan benefits such as incredible visual prowess and instant memorization. With the left eye, you access a short-range Kamui to an endless pocket dimension in your left eye. You can fully enter Kamui to reposition in the real world, semi-enter to turn intangible at stamina cost, or send touched objects into Kamui.
+> (Tag:command)(Tag:illusion)(Tag:mental)(Tag:movement)(Tag:ocular)(Tag:sense)(Tag:space)You possess Obito Uchiha's right eye, granting half of Kamui plus full Sharingan benefits such as incredible visual prowess and instant memorization. With the left eye, you access a short-range Kamui to an endless pocket dimension in your left eye. You can fully enter Kamui to reposition in the real world, semi-enter to turn intangible at stamina cost, or send touched objects into Kamui.
 
 **Decision**
 
@@ -17861,7 +17911,7 @@
 
 **Description**
 
-> You possess Obito Uchiha's left eye, granting half of Kamui plus full Sharingan benefits such as incredible visual prowess and instant memorization. With the right eye, you access long-range Kamui to an endless pocket dimension in your left eye. You can create ranged barrier spaces to suck objects and people into Kamui or close the door halfway to kill them, including around yourself. Larger barriers cost more energy.
+> (Tag:command)(Tag:illusion)(Tag:mental)(Tag:movement)(Tag:ocular)(Tag:sense)(Tag:space)You possess Obito Uchiha's left eye, granting half of Kamui plus full Sharingan benefits such as incredible visual prowess and instant memorization. With the right eye, you access long-range Kamui to an endless pocket dimension in your left eye. You can create ranged barrier spaces to suck objects and people into Kamui or close the door halfway to kill them, including around yourself. Larger barriers cost more energy.
 
 **Decision**
 
@@ -17878,7 +17928,7 @@
 
 **Description**
 
-> You possess Obito Uchiha's Eternal Mangekyo Sharingan plus all regular Sharingan benefits, with full access to Kamui. You access an endless pocket dimension called Kamui, letting you create barriers that pull people in, freely teleport within it, teleport by exiting elsewhere, turn temporarily intangible, and open portals in space to breach other dimensions.
+> (Tag:command)(Tag:illusion)(Tag:mental)(Tag:movement)(Tag:ocular)(Tag:sense)(Tag:space)You possess Obito Uchiha's Eternal Mangekyo Sharingan plus all regular Sharingan benefits, with full access to Kamui. You access an endless pocket dimension called Kamui, letting you create barriers that pull people in, freely teleport within it, teleport by exiting elsewhere, turn temporarily intangible, and open portals in space to breach other dimensions.
 
 **Decision**
 
@@ -17895,7 +17945,7 @@
 
 **Description**
 
-> You convert physical force you exert into positive energy, healing people by hitting them with your body. Greater strength means greater healing. Health healed equals damage that attack would otherwise have inflicted.
+> (Tag:martial)(Tag:recovery)You convert physical force you exert into positive energy, healing people by hitting them with your body. Greater strength means greater healing. Health healed equals damage that attack would otherwise have inflicted.
 
 **Decision**
 
@@ -17912,7 +17962,7 @@
 
 **Description**
 
-> "Mother of All Dragons" You can transform yourself and any biological structure you touch into a dragon, and spawn temporary dragon projections from your body. Dragon power and shape depend on skill and energy expended, with greater violations of mass conservation costing more energy. Sentient beings can resist conversion based on strength.
+> (Tag:draconic)(Tag:enhancer)(Tag:summon)(Tag:transformation)"Mother of All Dragons" You can transform yourself and any biological structure you touch into a dragon, and spawn temporary dragon projections from your body. Dragon power and shape depend on skill and energy expended, with greater violations of mass conservation costing more energy. Sentient beings can resist conversion based on strength.
 
 **Flagged in reports**
 
@@ -17933,7 +17983,7 @@
 
 **Description**
 
-> You can reverse or accelerate an object's time by touch, withering a tree or turning it into a sapling. Stronger targets have their time altered more slowly.
+> (Tag:time)You can reverse or accelerate an object's time by touch, withering a tree or turning it into a sapling. Stronger targets have their time altered more slowly.
 
 **Decision**
 
@@ -17950,7 +18000,7 @@
 
 **Description**
 
-> Your shadow is a temporal anomaly. It can stretch, move independently, leave 2D space to physically interact and attack, and alter the time of whatever it touches — rapidly aging or rejuvenating it. Stronger targets have their time altered more slowly.
+> (Tag:dark)(Tag:time)Your shadow is a temporal anomaly. It can stretch, move independently, leave 2D space to physically interact and attack, and alter the time of whatever it touches, rapidly aging or rejuvenating it. Stronger targets have their time altered more slowly.
 
 **Decision**
 
@@ -17967,7 +18017,7 @@
 
 **Description**
 
-> "You are enjoying this far too much" Your lust for violence is insatiable. When hurt, you recover energy proportional to damage taken, and recover health proportional to damage you deal. You are an eternal engine of battle.
+> (Tag:recovery)"You are enjoying this far too much" Your lust for violence is insatiable. When hurt, you recover energy proportional to damage taken, and recover health proportional to damage you deal. You are an eternal engine of battle.
 
 **Decision**
 
@@ -17984,7 +18034,7 @@
 
 **Description**
 
-> Your heart is an Infernal Engine. When activated, regeneration increases and you can wield Hellflames. But it heats your body the longer it runs, and greater heat makes it more effective. Beware overheating and burning yourself with your own Hellflames.
+> (Tag:enhancer)(Tag:fire)(Tag:infernal)(Tag:recovery)Your heart is an Infernal Engine. When activated, regeneration increases and you can wield Hellflames. But it heats your body the longer it runs, and greater heat makes it more effective. Beware overheating and burning yourself with your own Hellflames.
 
 **Decision**
 
@@ -18001,7 +18051,7 @@
 
 **Description**
 
-> Your body is entirely the Blacklight Virus. You can freely shapeshift down to the cellular level, absorb biological matter to grow stronger and analyze and replicate its composition, and gain all memories of targets whose brains you consume.
+> (Tag:bio)(Tag:growth)(Tag:recovery)(Tag:transformation)Your body is entirely the Blacklight Virus. You can freely shapeshift down to the cellular level, absorb biological matter to grow stronger and analyze and replicate its composition, and gain all memories of targets whose brains you consume.
 
 **Decision**
 
@@ -18018,7 +18068,7 @@
 
 **Description**
 
-> The rules no longer matter to you. You can expend energy to remove rules affecting you or a touched target — remove gravity on yourself, magic on a target, being targetable by magic, etc. Vaguer and more impactful rules cost more energy. A broken rule slowly restores itself, but its effects do not.
+> (Tag:alter)The rules no longer matter to you. You can expend energy to remove rules affecting you or a touched target, remove gravity on yourself, magic on a target, being targetable by magic, etc. Vaguer and more impactful rules cost more energy. A broken rule slowly restores itself, but its effects do not.
 
 **Flagged in reports**
 
@@ -18039,7 +18089,7 @@
 
 **Description**
 
-> (Gacha) You can temporarily summon a random item from the Diamond Item Gacha lasting 1 hour before disappearing (you roll the gacha with a temporary ticket). This ability starts its 8-hour cooldown on use. If an elixir is pulled, its effects are temporary. 2-hour cooldown.
+> (Tag:meta)(Tag:summon)(Gacha) You can temporarily summon a random item from the Diamond Item Gacha lasting 1 hour before disappearing (you roll the gacha with a temporary ticket). This ability starts its 8-hour cooldown on use. If an elixir is pulled, its effects are temporary. 2-hour cooldown.
 
 **Decision**
 
@@ -18056,7 +18106,7 @@
 
 **Description**
 
-> You are the Chainsaw hybrid. Pulling the ripcord on your chest turns you into hybrid form, replacing your head with a chainsaw and sprouting chainsaws on your arms and optionally legs. In this form you gain enhanced physical stats and blood-fueled extreme regeneration. You are immortal in hybrid state — as long as your heart remains, pulling your ripcord revives you.
+> (Tag:enhancer)(Tag:recovery)(Tag:transformation)You are the Chainsaw hybrid. Pulling the ripcord on your chest turns you into hybrid form, replacing your head with a chainsaw and sprouting chainsaws on your arms and optionally legs. In this form you gain enhanced physical stats and blood-fueled extreme regeneration. You are immortal in hybrid state, as long as your heart remains, pulling your ripcord revives you.
 
 **Decision**
 
@@ -18073,7 +18123,7 @@
 
 **Description**
 
-> Simply point your index finger and say "Bang!" to unleash immense telekinetic force that tears apart anything in your way.
+> (Tag:kinetic)Simply point your index finger and say "Bang!" to unleash immense telekinetic force that tears apart anything in your way.
 
 **Decision**
 
@@ -18090,7 +18140,7 @@
 
 **Description**
 
-> You can freely teleport within a 50-meter range around yourself with complete spatial awareness of it. Teleportation there is instant, but repeated teleports cause increasing vertigo.
+> (Tag:movement)(Tag:sense)(Tag:space)You can freely teleport within a 50-meter range around yourself with complete spatial awareness of it. Teleportation there is instant, but repeated teleports cause increasing vertigo.
 
 **Decision**
 
@@ -18107,7 +18157,7 @@
 
 **Description**
 
-> You can warp space around yourself to move at absurd speeds. Warping accelerates you more and faster than otherwise possible, reaching extreme speeds but making precise movement difficult.
+> (Tag:movement)(Tag:space)You can warp space around yourself to move at absurd speeds. Warping accelerates you more and faster than otherwise possible, reaching extreme speeds but making precise movement difficult.
 
 **Decision**
 
@@ -18124,7 +18174,7 @@
 
 **Description**
 
-> You can freely change attributes through forms. Offensive Form trades defence for energy output and speed, Defensive Form raises defense and resilience while lowering speed, Recovery Form trades strength for regeneration and recovery, and Speed Form drastically raises speed while sacrificing attack and defence. You can also create your own forms.
+> (Tag:enhancer)(Tag:meta)You can freely change attributes through forms. Offensive Form trades defence for energy output and speed, Defensive Form raises defense and resilience while lowering speed, Recovery Form trades strength for regeneration and recovery, and Speed Form drastically raises speed while sacrificing attack and defence. You can also create your own forms.
 
 **Decision**
 
@@ -18141,7 +18191,7 @@
 
 **Description**
 
-> You can transform into a murder of 100 crows at will. You perfectly control each crow and are equally each crow, take 1% damage per crow killed, can partially transform to send messages or spy, and return to 100 crows once fully healed even after losing 30.
+> (Tag:transformation)You can transform into a murder of 100 crows at will. You perfectly control each crow and are equally each crow, take 1% damage per crow killed, can partially transform to send messages or spy, and return to 100 crows once fully healed even after losing 30.
 
 **Decision**
 
@@ -18158,7 +18208,7 @@
 
 **Description**
 
-> "Go beyond you" For 10 minutes all parameters are greatly increased and all regenerations amplified. Afterwards, all parameters and regenerations are greatly decreased for 24 hours. 5 day cooldown.
+> (Tag:blood)"Go beyond you" For 10 minutes all parameters are greatly increased and all regenerations amplified. Afterwards, all parameters and regenerations are greatly decreased for 24 hours. 5 day cooldown.
 
 **Decision**
 
@@ -18175,7 +18225,7 @@
 
 **Description**
 
-> "Time to go all out" Upon activation, for 4 minutes and 11 seconds all parameters and energy regeneration increase, plus ability slots are removed so you can use all abilities at once. This places immense strain on your body and can kill you. 7 day cooldown.
+> (Tag:enhancer)(Tag:recovery)"Time to go all out" Upon activation, for 4 minutes and 11 seconds all parameters and energy regeneration increase, plus ability slots are removed so you can use all abilities at once. This places immense strain on your body and can kill you. 7 day cooldown.
 
 **Decision**
 
@@ -18192,7 +18242,7 @@
 
 **Description**
 
-> You can turn into a living being of heat and radiation, with everything but your skeleton becoming irradiated energy. You can conjure irradiated fireballs, superheat yourself, or launch radiation blasts. Expect collateral damage.
+> (Tag:fire)(Tag:poison)(Tag:transformation)You can turn into a living being of heat and radiation, with everything but your skeleton becoming irradiated energy. You can conjure irradiated fireballs, superheat yourself, or launch radiation blasts. Expect collateral damage.
 
 **Decision**
 
@@ -18209,7 +18259,7 @@
 
 **Description**
 
-> You can place restraints on yourself to amplify powers — sacrifice sight to boost hearing to daredevil levels, sacrifice an arm to strengthen the other, or restrict ability slots to strengthen the rest. Amplification equals restraint severity.
+> (Tag:buff)(Tag:debuff)(Tag:meta)You can place restraints on yourself to amplify powers, sacrifice sight to boost hearing to daredevil levels, sacrifice an arm to strengthen the other, or restrict ability slots to strengthen the rest. Amplification equals restraint severity.
 
 **Decision**
 
@@ -18226,7 +18276,7 @@
 
 **Description**
 
-> You can charge your body with energy to empower your next move — charge a fist for a stronger punch or legs to leap over buildings. More charged energy means a stronger result.
+> (Tag:enhancer)You can charge your body with energy to empower your next move, charge a fist for a stronger punch or legs to leap over buildings. More charged energy means a stronger result.
 
 **Decision**
 
@@ -18243,7 +18293,7 @@
 
 **Description**
 
-> You inherit 9 people's collective power accumulated over generations. One For All grants incomparable physical enhancement, though overuse can break your body, plus you can awaken past users' quirks: Gearshift, Blackwhip, Float, Smokescreen, Dangersense, and Fa-Jin.
+> (Tag:enhancer)(Tag:growth)(Tag:meta)You inherit 9 people's collective power accumulated over generations. One For All grants incomparable physical enhancement, though overuse can break your body, plus you can awaken past users' quirks: Gearshift, Blackwhip, Float, Smokescreen, Dangersense, and Fa-Jin.
 
 **Decision**
 
@@ -18260,7 +18310,7 @@
 
 **Description**
 
-> You can create indoor portals from doors and entrances inside a building. This lets you teleport yourself and others door-to-door to traverse quickly or block others from leaving.
+> (Tag:movement)(Tag:space)You can create indoor portals from doors and entrances inside a building. This lets you teleport yourself and others door-to-door to traverse quickly or block others from leaving.
 
 **Decision**
 
@@ -18277,7 +18327,7 @@
 
 **Description**
 
-> You can affix objects to other objects or locations, making them completely inviolable and immovable without spacetime interference. All kinetic energy applied while affixed releases the moment it is released. Larger mass and energy cost more energy to affix, and maintaining affixation consumes energy.
+> (Tag:space)You can affix objects to other objects or locations, making them completely inviolable and immovable without spacetime interference. All kinetic energy applied while affixed releases the moment it is released. Larger mass and energy cost more energy to affix, and maintaining affixation consumes energy.
 
 **Decision**
 
@@ -18294,7 +18344,7 @@
 
 **Description**
 
-> You can create semi-permanent gates to teleport through. To create one, you must be incredibly familiar with the location or have visited it, and focus for 1 minute to set it. You can maintain up to 10 gates at once, improvable as you grow stronger.
+> (Tag:movement)(Tag:space)You can create semi-permanent gates to teleport through. To create one, you must be incredibly familiar with the location or have visited it, and focus for 1 minute to set it. You can maintain up to 10 gates at once, improvable as you grow stronger.
 
 **Decision**
 
@@ -18311,7 +18361,7 @@
 
 **Description**
 
-> You can shoot sticky, durable spider-web ropes from your body. They dissolve naturally after an hour.
+> (Tag:bio)You can shoot sticky, durable spider-web ropes from your body. They dissolve naturally after an hour.
 
 **Decision**
 
@@ -18328,7 +18378,7 @@
 
 **Description**
 
-> You can take the form of a fire-breathing drake or hybrid at will. As a lesser dragon, it grants increased physical abilities, flight, and fire breath.
+> (Tag:draconic)(Tag:fire)(Tag:transformation)You can take the form of a fire-breathing drake or hybrid at will. As a lesser dragon, it grants increased physical abilities, flight, and fire breath.
 
 **Decision**
 
@@ -18345,7 +18395,7 @@
 
 **Description**
 
-> You can transform into a Klyntar, a symbiotic amorphous race that merges with biological matter and assumes their characteristics. Bonding with or taking over a host lets you share their powers while granting them your power and physical abilities. In this form you are highly vulnerable to loud noises and fire.
+> (Tag:bio)(Tag:transformation)You can transform into a Klyntar, a symbiotic amorphous race that merges with biological matter and assumes their characteristics. Bonding with or taking over a host lets you share their powers while granting them your power and physical abilities. In this form you are highly vulnerable to loud noises and fire.
 
 **Decision**
 
@@ -18362,7 +18412,7 @@
 
 **Description**
 
-> You can read an object's history by physical contact and expending energy. More energy reveals more history — how it was made, what happened to it, what it has seen — with greater accuracy.
+> (Tag:divination)You can read an object's history by physical contact and expending energy. More energy reveals more history, how it was made, what happened to it, what it has seen, with greater accuracy.
 
 **Decision**
 
@@ -18379,7 +18429,7 @@
 
 **Description**
 
-> You can merge with and move through water at extreme speeds, at least 10x running speed. You need a body of water at least equal to your mass to merge into and move freely through. If that water is compromised, you take considerable damage.
+> (Tag:movement)(Tag:water)You can merge with and move through water at extreme speeds, at least 10x running speed. You need a body of water at least equal to your mass to merge into and move freely through. If that water is compromised, you take considerable damage.
 
 **Decision**
 
@@ -18396,7 +18446,7 @@
 
 **Description**
 
-> You can place marks on objects or creatures to monitor at any time. You always know each mark's location relative to you and its bearer's structural integrity. You can hold up to 10 marks, increasing as you grow stronger.
+> (Tag:divination)You can place marks on objects or creatures to monitor at any time. You always know each mark's location relative to you and its bearer's structural integrity. You can hold up to 10 marks, increasing as you grow stronger.
 
 **Decision**
 
@@ -18413,7 +18463,7 @@
 
 **Description**
 
-> You can teleport — as long as you properly know a location or its coordinates, you can instantly teleport there. Teleportation is instant and scales slightly with distance, with even beginners skipping countries. Overuse can cause vertigo.
+> (Tag:movement)(Tag:space)You can teleport, as long as you properly know a location or its coordinates, you can instantly teleport there. Teleportation is instant and scales slightly with distance, with even beginners skipping countries. Overuse can cause vertigo.
 
 **Decision**
 
@@ -18430,7 +18480,7 @@
 
 **Description**
 
-> You can create a large zone around you that shuts off magical and sci-fi item functions. Inside, even Excalibur is just a very durable sword. Items far above your level are drastically weakened rather than shut off.
+> (Tag:anti-magic)(Tag:anti-tech)You can create a large zone around you that shuts off magical and sci-fi item functions. Inside, even Excalibur is just a very durable sword. Items far above your level are drastically weakened rather than shut off.
 
 **Decision**
 
@@ -18447,7 +18497,7 @@
 
 **Description**
 
-> Stone Free lets you convert any body part into translucent string you control and move at will. The string shares your exact physical abilities and can be instinctively woven into complex patterns, etc.
+> (Tag:transformation)Stone Free lets you convert any body part into translucent string you control and move at will. The string shares your exact physical abilities and can be instinctively woven into complex patterns, etc.
 
 **Decision**
 
@@ -18464,7 +18514,7 @@
 
 **Description**
 
-> You can temporarily shift into a mass of rose petals to move at superspeed for a short duration. In rose form you resist physical attacks better, but larger mass costs more energy, and directional control is reduced.
+> (Tag:movement)(Tag:nature)(Tag:transformation)You can temporarily shift into a mass of rose petals to move at superspeed for a short duration. In rose form you resist physical attacks better, but larger mass costs more energy, and directional control is reduced.
 
 **Decision**
 
@@ -18481,7 +18531,7 @@
 
 **Description**
 
-> You can grant people lesser versions of your abilities. Elite rank or below drops by one rank, while Epic and Legendary drop by two ranks. Only one ability can be granted per person at a time.
+> (Tag:meta)You can grant people lesser versions of your abilities. Elite rank or below drops by one rank, while Epic and Legendary drop by two ranks. Only one ability can be granted per person at a time.
 
 **Decision**
 
@@ -18498,7 +18548,7 @@
 
 **Description**
 
-> You can enter any mirror as a portal to access the mirror dimension, a replica of the real world with nothing living inside. Aside from spacetime abilities, the only entry and exit is you dragging people in or out.
+> (Tag:space)You can enter any mirror as a portal to access the mirror dimension, a replica of the real world with nothing living inside. Aside from spacetime abilities, the only entry and exit is you dragging people in or out.
 
 **Flagged in reports**
 
@@ -18519,7 +18569,7 @@
 
 **Description**
 
-> Metallurgy lets you create metal at will and control it telekinetically. You can create any mundane metal you know, and telekinetically control metals you created. Stronger or more complex metals cost more energy.
+> (Tag:earth)Metallurgy lets you create metal at will and control it telekinetically. You can create any mundane metal you know, and telekinetically control metals you created. Stronger or more complex metals cost more energy.
 
 **Decision**
 
@@ -18536,7 +18586,7 @@
 
 **Description**
 
-> You can conjure and control any metal whose composition you know, even legendary metals like Uru, Adamantium, or Vibranium. Higher-rank metals cost more energy, and you cannot permanently create metals stronger than your rank.
+> (Tag:earth)(Tag:meta)You can conjure and control any metal whose composition you know, even legendary metals like Uru, Adamantium, or Vibranium. Higher-rank metals cost more energy, and you cannot permanently create metals stronger than your rank.
 
 **Decision**
 
@@ -18570,7 +18620,7 @@
 
 **Description**
 
-> You can perform transmutation on a macro scale. You cannot build complex constructs or small applications, but can turn the ground into a proper building in under an hour. It moves slowly, so combat use is limited.
+> (Tag:alter)You can perform transmutation on a macro scale. You cannot build complex constructs or small applications, but can turn the ground into a proper building in under an hour. It moves slowly, so combat use is limited.
 
 **Decision**
 
@@ -18587,7 +18637,7 @@
 
 **Description**
 
-> You can conjure a mental compass that acts like a regular compass.
+> (Tag:divination)You can conjure a mental compass that acts like a regular compass.
 
 **Decision**
 
@@ -18604,7 +18654,7 @@
 
 **Description**
 
-> You can conjure a phantasmal compass in your hands that points toward your target. As long as you know the target and carry something related to it, you can track it down.
+> (Tag:divination)You can conjure a phantasmal compass in your hands that points toward your target. As long as you know the target and carry something related to it, you can track it down.
 
 **Decision**
 
@@ -18621,7 +18671,7 @@
 
 **Description**
 
-> You can turn into a hentai tentacle creature or manifest its tentacles at will. You resemble a ball with numerous tentacles that act as both limbs and reproductive organs.
+> (Tag:bio)(Tag:nsfw)(Tag:transformation)(Noncon) You can turn into a hentai tentacle creature or manifest its tentacles at will. You resemble a ball with numerous tentacles that act as both limbs and reproductive organs.
 
 **Flagged in reports**
 
@@ -18642,7 +18692,7 @@
 
 **Description**
 
-> You emit a wavelength that alters the minds and perceptions of those it touches. You can drive a whole town to madness while passing by, and can tweak the madness exerted.
+> (Tag:command)(Tag:mental)(Tag:spirit)You emit a wavelength that alters the minds and perceptions of those it touches. You can drive a whole town to madness while passing by, and can tweak the madness exerted.
 
 **Flagged in reports**
 
@@ -18663,7 +18713,7 @@
 
 **Description**
 
-> You can speed up your own body's time in 2x, 3x, 4x increments. Greater acceleration puts more strain on body and mind.
+> (Tag:time)You can speed up your own body's time in 2x, 3x, 4x increments. Greater acceleration puts more strain on body and mind.
 
 **Decision**
 
@@ -18680,7 +18730,7 @@
 
 **Description**
 
-> You can conjure a sword of Divine Light and alter its shape. It is lightweight yet unbelievably sharp and durable, and burns struck targets with purifying holy flames. At the wielder's will, it cannot hurt even a fly despite full-power swings.
+> (Tag:holy)(Tag:light)(Tag:martial)You can conjure a sword of Divine Light and alter its shape. It is lightweight yet unbelievably sharp and durable, and burns struck targets with purifying holy flames. At the wielder's will, it cannot hurt even a fly despite full-power swings.
 
 **Decision**
 
@@ -18697,7 +18747,7 @@
 
 **Description**
 
-> Inspired by the Fae. If you get people to wager their souls in a bet, you can claim the prize, extracting their souls and taking possession of them. It works only if the opponent internally acknowledges defeat.
+> (Tag:command)(Tag:fae)(Tag:spirit)Inspired by the Fae. If you get people to wager their souls in a bet, you can claim the prize, extracting their souls and taking possession of them. It works only if the opponent internally acknowledges defeat.
 
 **Flagged in reports**
 
@@ -18718,7 +18768,7 @@
 
 **Description**
 
-> You can take others' burdens onto yourself. By touching them, you transfer their injuries, exhaustion, curses, sicknesses, and other ailments to yourself.
+> (Tag:alter)(Tag:recovery)You can take others' burdens onto yourself. By touching them, you transfer their injuries, exhaustion, curses, sicknesses, and other ailments to yourself.
 
 **Decision**
 
@@ -18735,7 +18785,7 @@
 
 **Description**
 
-> (Gacha) "Lucky" When you roll this ability, whatever ticket you got it with is rolled twice and this ability is removed.
+> (Tag:meta)(Gacha) "Lucky" When you roll this ability, whatever ticket you got it with is rolled twice and this ability is removed.
 
 **Decision**
 
@@ -18752,7 +18802,7 @@
 
 **Description**
 
-> You can see through any physical deception and concealment — pitfalls, physical disguises, bent light, one-way mirrors, etc. Any physical illusion meant to deceive senses fails on you.
+> (Tag:divination)(Tag:sense)You can see through any physical deception and concealment, pitfalls, physical disguises, bent light, one-way mirrors, etc. Any physical illusion meant to deceive senses fails on you.
 
 **Decision**
 
@@ -18769,7 +18819,7 @@
 
 **Description**
 
-> Your eyes can see far and through objects, with level perfectly adjustable to your needs.
+> (Tag:ocular)(Tag:sense)Your eyes can see far and through objects, with level perfectly adjustable to your needs.
 
 **Decision**
 
@@ -18786,7 +18836,7 @@
 
 **Description**
 
-> A Kekkei Genkai letting you grow bones and bone constructs on and out of your body. You can reshape bones, reinforce them by increasing density, and manipulate your skeleton for defence. You can regrow bones, but still take damage from removing or growing them.
+> (Tag:bio)(Tag:necro)A Kekkei Genkai letting you grow bones and bone constructs on and out of your body. You can reshape bones, reinforce them by increasing density, and manipulate your skeleton for defence. You can regrow bones, but still take damage from removing or growing them.
 
 **Decision**
 
@@ -18803,7 +18853,7 @@
 
 **Description**
 
-> All Killing Ash Bones lets you control your skeleton and grow bone constructs from your body. You can reinforce these bones, and piercing a living being makes them deteriorate to the molecular level until death. Sure-kill potency depends on the power gap between user and target.
+> (Tag:bio)(Tag:necro)All Killing Ash Bones lets you control your skeleton and grow bone constructs from your body. You can reinforce these bones, and piercing a living being makes them deteriorate to the molecular level until death. Sure-kill potency depends on the power gap between user and target.
 
 **Decision**
 
@@ -18820,7 +18870,7 @@
 
 **Description**
 
-> You can tell the future across a large timeframe as prophecies. Though not very accurate, they can point to crucial information or important things. Vaguer prophecies cost less energy.
+> (Tag:divination)You can tell the future across a large timeframe as prophecies. Though not very accurate, they can point to crucial information or important things. Vaguer prophecies cost less energy.
 
 **Decision**
 
@@ -18837,7 +18887,7 @@
 
 **Description**
 
-> You can tell the future across a short or longer span. More seconds viewed costs more energy. You see the future that would have happened had you not used Future Sight. Overuse can cause temporary brain bleeding.
+> (Tag:divination)You can tell the future across a short or longer span. More seconds viewed costs more energy. You see the future that would have happened had you not used Future Sight. Overuse can cause temporary brain bleeding.
 
 **Decision**
 
@@ -18854,7 +18904,7 @@
 
 **Description**
 
-> You can read the near future over a small, trainable timeframe. The future read is not absolute but highly probable, and more situational knowledge improves accuracy.
+> (Tag:divination)(Tag:mental)You can read the near future over a small, trainable timeframe. The future read is not absolute but highly probable, and more situational knowledge improves accuracy.
 
 **Decision**
 
@@ -18871,7 +18921,7 @@
 
 **Description**
 
-> You can predict the future by calculating a target's future. You can predict a dice rolling a 6, a slot machine result, an opponent's opening move, or rising and falling stocks. More information and better sensory abilities improve predictions.
+> (Tag:divination)(Tag:sense)You can predict the future by calculating a target's future. You can predict a dice rolling a 6, a slot machine result, an opponent's opening move, or rising and falling stocks. More information and better sensory abilities improve predictions.
 
 **Decision**
 
@@ -18888,7 +18938,7 @@
 
 **Description**
 
-> Yomi Hustle - You can place a foresight, an afterimage of yourself, anywhere in perception range. At any moment you can teleport to it, but it vanishes if you move over 100 meters away, leave it over 1 hour, or it takes damage. You can create only one, increasable through training.
+> (Tag:movement)Yomi Hustle - You can place a foresight, an afterimage of yourself, anywhere in perception range. At any moment you can teleport to it, but it vanishes if you move over 100 meters away, leave it over 1 hour, or it takes damage. You can create only one, increasable through training.
 
 **Decision**
 
@@ -18905,7 +18955,7 @@
 
 **Description**
 
-> You can genetically engineer Plants vs Zombies plants, such as flowers that turn sunlight into energy, ones that punch people, or breathe fire. More powerful and esoteric plants need more resources.
+> (Tag:nature)(Tag:tech)(Tag:tinker)You can genetically engineer Plants vs Zombies plants, such as flowers that turn sunlight into energy, ones that punch people, or breathe fire. More powerful and esoteric plants need more resources.
 
 **Decision**
 
@@ -18922,7 +18972,7 @@
 
 **Description**
 
-> You are myth's legendary minotaur. Physical abilities, especially strength and endurance, are amplified to inhuman levels plus bull traits. You can also turn any area you are in into a labyrinth, shuffling all entries and exits to lead wherever you want. Even a future reader would be stuck a hundred years in a forest.
+> (Tag:enhancer)(Tag:space)(Tag:transformation)You are myth's legendary minotaur. Physical abilities, especially strength and endurance, are amplified to inhuman levels plus bull traits. You can also turn any area you are in into a labyrinth, shuffling all entries and exits to lead wherever you want. Even a future reader would be stuck a hundred years in a forest.
 
 **Decision**
 
@@ -18939,7 +18989,7 @@
 
 **Description**
 
-> You are not just super, you are HYPER! You have extreme physical abilities and flight — the classic super package taken to the extreme. More energy expended means stronger and faster.
+> (Tag:enhancer)(Tag:movement)You are not just super, you are HYPER! You have extreme physical abilities and flight, the classic super package taken to the extreme. More energy expended means stronger and faster.
 
 **Decision**
 
@@ -18956,7 +19006,7 @@
 
 **Description**
 
-> You are a god of healing and restoration, with domain over all healing to perform miracles by expending energy. For you, death is little different from sleeping and mythical poisons are a mild cold.
+> (Tag:recovery)You are a god of healing and restoration, with domain over all healing to perform miracles by expending energy. For you, death is little different from sleeping and mythical poisons are a mild cold.
 
 **Decision**
 
@@ -18973,7 +19023,7 @@
 
 **Description**
 
-> You can enforce the Law of Restoration on a target, forcefully restoring it to its deemed "restored" state. Even corpses can return to life and even erasure reversed if something remains. More powerful, damaged, or abnormal targets cost more energy. While slotted, it activates on your own death.
+> (Tag:alter)(Tag:recovery)You can enforce the Law of Restoration on a target, forcefully restoring it to its deemed "restored" state. Even corpses can return to life and even erasure reversed if something remains. More powerful, damaged, or abnormal targets cost more energy. While slotted, it activates on your own death.
 
 **Decision**
 
@@ -18990,7 +19040,7 @@
 
 **Description**
 
-> There is an island inside your being. You can create doors to a spatial dimension within your existence — a small vegetated island in a vast lifeless ocean. Creating larger doors and maintaining doors consumes energy.
+> (Tag:space)There is an island inside your being. You can create doors to a spatial dimension within your existence, a small vegetated island in a vast lifeless ocean. Creating larger doors and maintaining doors consumes energy.
 
 **Decision**
 
@@ -19007,7 +19057,7 @@
 
 **Description**
 
-> You can transform into Leviathan, the Sea Serpent of the End. As this giant mythical sea snake, you control all water in range on a massive scale, tilting seas and drowning cities, creating more water serpents, and summoning flood-causing rains. All water-based abilities and effects are massively amplified in this form.
+> (Tag:draconic)(Tag:infernal)(Tag:transformation)(Tag:water)You can transform into Leviathan, the Sea Serpent of the End. As this giant mythical sea snake, you control all water in range on a massive scale, tilting seas and drowning cities, creating more water serpents, and summoning flood-causing rains. All water-based abilities and effects are massively amplified in this form.
 
 **Decision**
 
@@ -19024,7 +19074,7 @@
 
 **Description**
 
-> You can gradually transform your body into any shape, but the slowness demands care. Turning into a cat takes roughly 3 hours, and you cannot increase or decrease mass by more than 500%.
+> (Tag:bio)(Tag:transformation)You can gradually transform your body into any shape, but the slowness demands care. Turning into a cat takes roughly 3 hours, and you cannot increase or decrease mass by more than 500%.
 
 **Decision**
 
@@ -19041,7 +19091,7 @@
 
 **Description**
 
-> Meltdowner lets you create and control Particle Waveform High-Speed Cannons from altered electrons — incredibly powerful, hot electron beams from your body that slice any metal like paper. More energy expended means stronger beams.
+> (Tag:electric)Meltdowner lets you create and control Particle Waveform High-Speed Cannons from altered electrons, incredibly powerful, hot electron beams from your body that slice any metal like paper. More energy expended means stronger beams.
 
 **Decision**
 
@@ -19058,7 +19108,7 @@
 
 **Description**
 
-> Curse Breaker lets you break curses by touching them, or an area around you with training. Breakable curse strength scales with energy expended.
+> (Tag:anti-curse)(Tag:curse)(Tag:magic)Curse Breaker lets you break curses by touching them, or an area around you with training. Breakable curse strength scales with energy expended.
 
 **Decision**
 
@@ -19075,7 +19125,7 @@
 
 **Description**
 
-> Upgrade to Curse Breaker - No curse is safe around you. You can dispel and break all curses you touch, with breakable strength equal to energy expended. With enough energy you can break gods' curses.
+> (Tag:curse)(Tag:magic)Upgrade to Curse Breaker - No curse is safe around you. You can dispel and break all curses you touch, with breakable strength equal to energy expended. With enough energy you can break gods' curses.
 
 **Decision**
 
@@ -19092,7 +19142,7 @@
 
 **Description**
 
-> Mystical Eyes of the Pure World let you cleanse any sight-locked target, breaking curses, cleansing disease and poison, dispelling charms, and removing any status effect against the target's natural state. More powerful afflictions cost more energy and strain your eyes more.
+> (Tag:ocular)(Tag:recovery)Mystical Eyes of the Pure World let you cleanse any sight-locked target, breaking curses, cleansing disease and poison, dispelling charms, and removing any status effect against the target's natural state. More powerful afflictions cost more energy and strain your eyes more.
 
 **Decision**
 
@@ -19109,7 +19159,7 @@
 
 **Description**
 
-> You can adjust your viewpoint across three settings: 1st person is regular perception, 2nd person sees through the eyes of anyone you look at, and 3rd person views yourself like a rotatable surrounding camera.
+> (Tag:sense)You can adjust your viewpoint across three settings: 1st person is regular perception, 2nd person sees through the eyes of anyone you look at, and 3rd person views yourself like a rotatable surrounding camera.
 
 **Decision**
 
@@ -19126,7 +19176,7 @@
 
 **Description**
 
-> You have a minimap in your vision's corner that auto-maps where you go and reveals enemies in seen places as long as you know they are hostile. You can enlarge and zoom it freely.
+> (Tag:divination)You have a minimap in your vision's corner that auto-maps where you go and reveals enemies in seen places as long as you know they are hostile. You can enlarge and zoom it freely.
 
 **Decision**
 
@@ -19143,7 +19193,7 @@
 
 **Description**
 
-> You have a megamap in your vision's corner, the cooler minimap. It maps everything within 2.5km wherever you step and tracks all living beings in real time, marking them red or blue for hostile or not. It doubles as satellite viewing.
+> (Tag:divination)You have a megamap in your vision's corner, the cooler minimap. It maps everything within 2.5km wherever you step and tracks all living beings in real time, marking them red or blue for hostile or not. It doubles as satellite viewing.
 
 **Decision**
 
@@ -19160,7 +19210,7 @@
 
 **Description**
 
-> You can transform into a Loboan or Loboan hybrid at will. Loboans are alien werewolves with formidable physical abilities, sharp teeth and claws, and bloodhound-like tracking senses. Most notably, they unleash direct sonic howls powerful enough to cause severe damage.
+> (Tag:enhancer)(Tag:sense)(Tag:sound)(Tag:transformation)You can transform into a Loboan or Loboan hybrid at will. Loboans are alien werewolves with formidable physical abilities, sharp teeth and claws, and bloodhound-like tracking senses. Most notably, they unleash direct sonic howls powerful enough to cause severe damage.
 
 **Decision**
 
@@ -19177,7 +19227,7 @@
 
 **Description**
 
-> You can shed blood to form a ground puddle from which to summon one or several Blood Golems. Summoned strength or number scales with physical stats and blood shed (minimum 100ml).
+> (Tag:blood)(Tag:construct)(Tag:life)(Tag:summon)You can shed blood to form a ground puddle from which to summon one or several Blood Golems. Summoned strength or number scales with physical stats and blood shed (minimum 100ml).
 
 **Decision**
 
@@ -19194,7 +19244,7 @@
 
 **Description**
 
-> Apothecary Physique lets you manipulate your body's interior to reproduce any consumed chemical or digestible item's effects, like health, mana, iron-skin, or night-vision potions, as long as it was Epic rank or below. It also grants complete control over your biochemistry.
+> (Tag:bio)(Tag:poison)Apothecary Physique lets you manipulate your body's interior to reproduce any consumed chemical or digestible item's effects, like health, mana, iron-skin, or night-vision potions, as long as it was Epic rank or below. It also grants complete control over your biochemistry.
 
 **Decision**
 
@@ -19211,7 +19261,7 @@
 
 **Description**
 
-> "At the speed of heaven" You can manifest Seraphic wings, amplifying speed and granting free high-speed flight. While manifest, you resist mundane environmental effects below Epic rank — swimming in lava, walking on water or through natural fire, ignoring fall damage, breathing in space, etc. The wings are superhumanly strong, easily bisecting people and scaling with physical stats.
+> (Tag:enhancer)(Tag:holy)(Tag:movement)"At the speed of heaven" You can manifest Seraphic wings, amplifying speed and granting free high-speed flight. While manifest, you resist mundane environmental effects below Epic rank, swimming in lava, walking on water or through natural fire, ignoring fall damage, breathing in space, etc. The wings are superhumanly strong, easily bisecting people and scaling with physical stats.
 
 **Decision**
 
@@ -19228,7 +19278,7 @@
 
 **Description**
 
-> "The very stars guide your flight" You can manifest cosmic wings granting fast flight without existing in physical space. While active they resonate with cosmic energies, boosting all spell power and accelerating energy recovery closer to night.
+> (Tag:magic)(Tag:movement)"The very stars guide your flight" You can manifest cosmic wings granting fast flight without existing in physical space. While active they resonate with cosmic energies, boosting all spell power and accelerating energy recovery closer to night.
 
 **Decision**
 
@@ -19245,7 +19295,7 @@
 
 **Description**
 
-> "And so the sun never allowed a mortal to fly again" You can enact Icarus' Folly in an area, evoking the sun's wrath against fliers. Those exceeding 10 meters elevation burn in holy inferno, hotter the higher above ground they are. Zone width depends on energy expended — larger areas cost more. Victims instinctively sense flight's danger.
+> (Tag:alter)(Tag:fire)"And so the sun never allowed a mortal to fly again" You can enact Icarus' Folly in an area, evoking the sun's wrath against fliers. Those exceeding 10 meters elevation burn in holy inferno, hotter the higher above ground they are. Zone width depends on energy expended, larger areas cost more. Victims instinctively sense flight's danger.
 
 **Decision**
 
@@ -19262,7 +19312,7 @@
 
 **Description**
 
-> "Boom, headshot." Bullseye places reticle crosshairs on random spots of all targets in your vision; hitting one centrally with a projectile makes it a critical hit, amplifying power and damage. Training lets you place crosshairs more accurately.
+> (Tag:martial)"Boom, headshot." Bullseye places reticle crosshairs on random spots of all targets in your vision; hitting one centrally with a projectile makes it a critical hit, amplifying power and damage. Training lets you place crosshairs more accurately.
 
 **Decision**
 
@@ -19279,7 +19329,7 @@
 
 **Description**
 
-> You can disguise yourself as others with an applied normality effect that convinces observers you are that person even when acting out of character. More out-of-character behavior costs more energy, and the effect fades if the target is absolutely stronger than you or you act in directly identity-compromising ways.
+> (Tag:illusion)(Tag:mental)(Tag:stealth)You can disguise yourself as others with an applied normality effect that convinces observers you are that person even when acting out of character. More out-of-character behavior costs more energy, and the effect fades if the target is absolutely stronger than you or you act in directly identity-compromising ways.
 
 **Decision**
 
@@ -19296,7 +19346,7 @@
 
 **Description**
 
-> Your skin is uncomfortably sticky to others, as if soaked in glue or soda, though you feel no difference.
+> (Tag:alter)Your skin is uncomfortably sticky to others, as if soaked in glue or soda, though you feel no difference.
 
 **Decision**
 
@@ -19313,7 +19363,7 @@
 
 **Description**
 
-> (Tech) Tinker - Allows you to build technological constructs or items related to sexual events, such as aphrodisiacs, sexual instruments, contraceptives, etc.
+> (Tag:nsfw)(Tag:tech)(Tag:tinker)(Tech)(Noncon) Tinker - Allows you to build technological constructs or items related to sexual events, such as aphrodisiacs, sexual instruments, contraceptives, etc.
 
 **Decision**
 
@@ -19330,7 +19380,7 @@
 
 **Description**
 
-> The Cursed Technique of the King of Curses. Shrine grants Cleave, Dismantle, and Furnace. Dismantle sends flying invisible slashes of varying power, Cleave creates stronger instant slashes on touched targets, and Furnace manifests a powerful fire arrow. With enough mastery or enlightenment, you may unleash the Malevolent Shrine.
+> (Tag:fire)(Tag:kinetic)The Cursed Technique of the King of Curses. Shrine grants Cleave, Dismantle, and Furnace. Dismantle sends flying invisible slashes of varying power, Cleave creates stronger instant slashes on touched targets, and Furnace manifests a powerful fire arrow. With enough mastery or enlightenment, you may unleash the Malevolent Shrine.
 
 **Decision**
 
@@ -19347,7 +19397,7 @@
 
 **Description**
 
-> The Illusion Killer, Imagine Breaker is the ultimate negation tool. It can negate anything supernatural that could not exist on base Earth. It dwells in your right hand, but also negates your own supernatural capabilities like abilities and magic while active (Note: This is only the base Imagine Breaker and does not contain the beings sealed inside).
+> (Tag:alter)The Illusion Killer, Imagine Breaker is the ultimate negation tool. It can negate anything supernatural that could not exist on base Earth. It dwells in your right hand, but also negates your own supernatural capabilities like abilities and magic while active (Note: This is only the base Imagine Breaker and does not contain the beings sealed inside).
 
 **Decision**
 
@@ -19364,7 +19414,7 @@
 
 **Description**
 
-> (Nsfw) Allows you to alter your genitals to your liking as long as the changes aren't absurd.
+> (Tag:nsfw)(Tag:transformation)(Nsfw) Allows you to alter your genitals to your liking as long as the changes aren't absurd.
 
 **Decision**
 
@@ -19381,7 +19431,7 @@
 
 **Description**
 
-> Allows you to swap your gender and the genders of those who can't resist. Swapped forms usually take a shape you find attractive, and partial swaps are possible.
+> (Tag:transformation)Allows you to swap your gender and the genders of those who don't or can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
 
 **Flagged in reports**
 
@@ -19402,7 +19452,7 @@
 
 **Description**
 
-> Your words are imbued with lies, making them sound more convincing and believable. Stronger targets and more unbelievable lies reduce effectiveness and consume more energy.
+> (Tag:command)(Tag:illusion)Your words are imbued with lies, making them sound more convincing and believable. Stronger targets and more unbelievable lies reduce effectiveness and consume more energy.
 
 **Decision**
 
@@ -19419,7 +19469,7 @@
 
 **Description**
 
-> You can assert a false truth by expending energy, convincing others of even far-fetched claims. Larger power gaps and harder-to-believe lies lower efficiency and raise energy cost.
+> (Tag:command)(Tag:illusion)You can assert a false truth by expending energy, convincing others of even far-fetched claims. Larger power gaps and harder-to-believe lies lower efficiency and raise energy cost.
 
 **Decision**
 
@@ -19436,7 +19486,7 @@
 
 **Description**
 
-> Golemancy allows you to animate inanimate objects into golems under your control. Golem power depends on material quality and your power; stronger materials cost more energy, and max golems depends on max energy (minimum 10), with stronger golems taking more slots.
+> (Tag:construct)(Tag:summon)Golemancy allows you to animate inanimate objects into golems under your control. Golem power depends on material quality and your power; stronger materials cost more energy, and max golems depends on max energy (minimum 10), with stronger golems taking more slots.
 
 **Decision**
 
@@ -19453,7 +19503,7 @@
 
 **Description**
 
-> Allows you to turn your body into any basic element while retaining control, such as fire to burn, lightning to travel cables, or wind to fly. Damage to destroyed mass in elemental form reflects back to you.
+> (Tag:air)(Tag:earth)(Tag:electric)(Tag:fire)(Tag:ice)(Tag:movement)(Tag:transformation)(Tag:water)Allows you to turn your body into any basic element while retaining control, such as fire to burn, lightning to travel cables, or wind to fly. Damage to destroyed mass in elemental form reflects back to you.
 
 **Decision**
 
@@ -19470,7 +19520,7 @@
 
 **Description**
 
-> (Tech) Video Travel allows you to slip into device screens and travel to other screened devices on the same network or wired together.
+> (Tag:movement)(Tag:tech)(Tech) Video Travel allows you to slip into device screens and travel to other screened devices on the same network or wired together.
 
 **Decision**
 
@@ -19487,7 +19537,7 @@
 
 **Description**
 
-> Allows you to drain others' luck by touch and add it to your own temporarily. More energy and longer contact steals more luck with exponentially scaling cost, and stolen luck fades over time, returning to its target.
+> (Tag:alter)Allows you to drain others' luck by touch and add it to your own temporarily. More energy and longer contact steals more luck with exponentially scaling cost, and stolen luck fades over time, returning to its target.
 
 **Decision**
 
@@ -19504,7 +19554,7 @@
 
 **Description**
 
-> Jinx allows you to curse targets by touch to reduce their luck enough to disadvantage but not harm them. The effect grows with extra energy and power advantage, and can also be fired as a moderate-speed Hex projectile.
+> (Tag:curse)Jinx allows you to curse targets by touch to reduce their luck enough to disadvantage but not harm them. The effect grows with extra energy and power advantage, and can also be fired as a moderate-speed Hex projectile.
 
 **Decision**
 
@@ -19521,7 +19571,7 @@
 
 **Description**
 
-> You can unleash an aura of misfortune that reduces the luck of those nearby, or narrow it to reach distant targets. More energy increases the reduction, and your power difference to the target dictates the effect.
+> (Tag:curse)You can unleash an aura of misfortune that reduces the luck of those nearby, or narrow it to reach distant targets. More energy increases the reduction, and your power difference to the target dictates the effect.
 
 **Decision**
 
@@ -19538,7 +19588,7 @@
 
 **Description**
 
-> "Directing the hatred of fate" You can mark a target in sight with Malus, then expend energy to reduce the outcomes of their actions. Stronger maluses cost more energy and exhaust you, and overreaching against too strong a target can backfire.
+> (Tag:curse)"Directing the hatred of fate" You can mark a target in sight with Malus, then expend energy to reduce the outcomes of their actions. Stronger maluses cost more energy and exhaust you, and overreaching against too strong a target can backfire.
 
 **Decision**
 
@@ -19555,7 +19605,7 @@
 
 **Description**
 
-> You can see numerous possible futures excluding precognition and enforce your chosen future by expending energy. More powerful targets and more improbable futures cost more energy and incur larger backlash, though with enough energy even absolutely improbable futures can be enforced.
+> (Tag:divination)You can see numerous possible futures excluding precognition and enforce your chosen future by expending energy. More powerful targets and more improbable futures cost more energy and incur larger backlash, though with enough energy even absolutely improbable futures can be enforced.
 
 **Flagged in reports**
 
@@ -19576,7 +19626,7 @@
 
 **Description**
 
-> While United We Stand is active, you can select a familiar and add all its physical stats to your own. For each unused ability slot, you can draw strength from another familiar.
+> (Tag:enhancer)(Tag:meta)While United We Stand is active, you can select a familiar and add all its physical stats to your own. For each unused ability slot, you can draw strength from another familiar.
 
 **Decision**
 
@@ -19593,7 +19643,7 @@
 
 **Description**
 
-> (Tech) Allows you to build miniaturized versions of existing technology without losing quality and with reduced energy use, provided you already know how to build it.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build miniaturized versions of existing technology without losing quality and with reduced energy use, provided you already know how to build it.
 
 **Decision**
 
@@ -19610,7 +19660,7 @@
 
 **Description**
 
-> (Tech) Allows you to build scaled-up versions of existing technologies, such as hundred-meter warplanes, human-sized-shell cannons, or giant microwave death chambers.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build scaled-up versions of existing technologies, such as hundred-meter warplanes, human-sized-shell cannons, or giant microwave death chambers.
 
 **Decision**
 
@@ -19627,7 +19677,7 @@
 
 **Description**
 
-> (Tech) Allows you to build nature-related contraptions that utilize, help, and benefit from it, such as Bio-Domes, efficient fertilizers, animal lures, solar panels, geothermal reactors, and terraforming equipment.
+> (Tag:nature)(Tag:tech)(Tag:tinker)(Tech) Allows you to build nature-related contraptions that utilize, help, and benefit from it, such as Bio-Domes, efficient fertilizers, animal lures, solar panels, geothermal reactors, and terraforming equipment.
 
 **Decision**
 
@@ -19644,7 +19694,7 @@
 
 **Description**
 
-> (Tech) Allows you to build energy production and use contraptions, such as hyper-efficient solar panels and wind farms, microfusion, bio, hydro, and arc reactors.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build energy production and use contraptions, such as hyper-efficient solar panels and wind farms, microfusion, bio, hydro, and arc reactors.
 
 **Decision**
 
@@ -19661,7 +19711,7 @@
 
 **Description**
 
-> (Tech) Allows you to build industrialisation contraptions like factories, efficient production lines, autonomous drone workers, and assembly lines to build things for you at larger scale.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build industrialisation contraptions like factories, efficient production lines, autonomous drone workers, and assembly lines to build things for you at larger scale.
 
 **Decision**
 
@@ -19678,7 +19728,7 @@
 
 **Description**
 
-> (Tech) Allows you to build biology-augmenting contraptions like subdermal armour, biomonitors, hormone regulators, metal-bonded bone, and reinforced tendons and muscles.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-augmenting contraptions like subdermal armour, biomonitors, hormone regulators, metal-bonded bone, and reinforced tendons and muscles.
 
 **Decision**
 
@@ -19695,7 +19745,7 @@
 
 **Description**
 
-> (Tech) Allows you to build nanotechnology contraptions like cell-altering nanobots, trauma-hardening nanomachines, machine-disrupting nanobots, nanocameras, and nanomachine clothes.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build nanotechnology contraptions like cell-altering nanobots, trauma-hardening nanomachines, machine-disrupting nanobots, nanocameras, and nanomachine clothes.
 
 **Decision**
 
@@ -19712,7 +19762,7 @@
 
 **Description**
 
-> (Tech) Allows you to build dimension-manipulating contraptions like pocket dimension generators, teleportation sealers, dimensional rams, interdimensional portals, unbreakable spatial barriers, and drawing energy from parallel dimensions.
+> (Tag:movement)(Tag:space)(Tag:tech)(Tag:tinker)(Tech) Allows you to build dimension-manipulating contraptions like pocket dimension generators, teleportation sealers, dimensional rams, interdimensional portals, unbreakable spatial barriers, and drawing energy from parallel dimensions.
 
 **Decision**
 
@@ -19729,7 +19779,7 @@
 
 **Description**
 
-> (Tech) Allows you to build medicine-related contraptions and production, such as poison-curing, health-bolstering, and other medicinal cures.
+> (Tag:bio)(Tag:healing)(Tag:poison)(Tag:tech)(Tag:tinker)(Tech) Allows you to build medicine-related contraptions and production, such as poison-curing, health-bolstering, and other medicinal cures.
 
 **Decision**
 
@@ -19746,7 +19796,7 @@
 
 **Description**
 
-> (Tech) Allows you to build destruction-related contraptions like Unstable Matter Rockets, Disintegration Cannons, Black Hole Generators, and general Doomsday Devices, generally inspired by your abilities and traits.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build destruction-related contraptions like Unstable Matter Rockets, Disintegration Cannons, Black Hole Generators, and general Doomsday Devices, generally inspired by your abilities and traits.
 
 **Decision**
 
@@ -19763,7 +19813,7 @@
 
 **Description**
 
-> (Tech) Allows you to build mind-influencing and controlling contraptions like suggestion music, neuralyzers, mind control helmets, and mental reprogramming machines.
+> (Tag:command)(Tag:mental)(Tag:tech)(Tag:tinker)(Tech) Allows you to build mind-influencing and controlling contraptions like suggestion music, neuralyzers, mind control helmets, and mental reprogramming machines.
 
 **Decision**
 
@@ -19780,7 +19830,7 @@
 
 **Description**
 
-> (Tech) Allows you to build time-related contraptions like aging grenades, time-dilated training rooms, time-stoppers, stasis barriers, and time-dilation FTL drives. This speciality is very expensive.
+> (Tag:tech)(Tag:time)(Tag:tinker)(Tech) Allows you to build time-related contraptions like aging grenades, time-dilated training rooms, time-stoppers, stasis barriers, and time-dilation FTL drives. This speciality is very expensive.
 
 **Decision**
 
@@ -19797,7 +19847,7 @@
 
 **Description**
 
-> You can heal yourself and others by expending energy, but only slightly, such as scratches, scrapes, and bruises. Effectiveness depends on your power difference to the target.
+> (Tag:recovery)You can heal yourself and others by expending energy, but only slightly, such as scratches, scrapes, and bruises. Effectiveness depends on your power difference to the target.
 
 **Decision**
 
@@ -19814,7 +19864,7 @@
 
 **Description**
 
-> You can heal others by expending energy, mending stabs, slashes, and broken bones, with more severe wounds costing far more. Effectiveness depends on your power difference to the target.
+> (Tag:recovery)You can heal others by expending energy, mending stabs, slashes, and broken bones, with more severe wounds costing far more. Effectiveness depends on your power difference to the target.
 
 **Decision**
 
@@ -19831,7 +19881,7 @@
 
 **Description**
 
-> You can heal yourself and others by expending energy, with healing scale tied to energy spent and more lethal wounds needing more energy. Effectiveness depends on your power difference to the target.
+> (Tag:recovery)You can heal yourself and others by expending energy, with healing scale tied to energy spent and more lethal wounds needing more energy. Effectiveness depends on your power difference to the target.
 
 **Decision**
 
@@ -19848,7 +19898,7 @@
 
 **Description**
 
-> You can greatly heal yourself and others by expending energy, with stronger effects for more energy, even healing lethal wounds at higher cost. Effectiveness depends on your power difference to the target.
+> (Tag:recovery)You can greatly heal yourself and others by expending energy, with stronger effects for more energy, even healing lethal wounds at higher cost. Effectiveness depends on your power difference to the target.
 
 **Decision**
 
@@ -19865,7 +19915,7 @@
 
 **Description**
 
-> You can heal yourself and others by expending energy to imbue potent healing energies. More energy yields more potent healing, with effectiveness depending on your power difference to the target.
+> (Tag:recovery)You can heal yourself and others by expending energy to imbue potent healing energies. More energy yields more potent healing, with effectiveness depending on your power difference to the target.
 
 **Decision**
 
@@ -19882,7 +19932,7 @@
 
 **Description**
 
-> "Reaper of Minds" You wield offensive mind manipulation: mind blasts, gaze-driven mind damage, crushing weaker minds, body hijacking, and living nightmares. Less destructive uses cost more energy, and effectiveness depends on the opponent's mental strength and relative power.
+> (Tag:mental)"Reaper of Minds" You wield offensive mind manipulation: mind blasts, gaze-driven mind damage, crushing weaker minds, body hijacking, and living nightmares. Less destructive uses cost more energy, and effectiveness depends on the opponent's mental strength and relative power.
 
 **Decision**
 
@@ -19899,7 +19949,7 @@
 
 **Description**
 
-> You can shed very salty tears at will.
+> (Tag:meta)You can shed very salty tears at will.
 
 **Decision**
 
@@ -19916,7 +19966,7 @@
 
 **Description**
 
-> Allows you to temporarily fuse two living beings into a new entity with both abilities. Unwilling targets resist by power, stronger fusions cost more energy, and maintaining fusion drains energy over time.
+> (Tag:summon)(Tag:transformation)Allows you to temporarily fuse two living beings into a new entity with both abilities. Unwilling targets resist by power, stronger fusions cost more energy, and maintaining fusion drains energy over time.
 
 **Decision**
 
@@ -19933,7 +19983,7 @@
 
 **Description**
 
-> "Restoration, but at what cost?" Greedy Healing consumes wealth you own instead of mana, with more wealth yielding more potent restoration. A dollar barely recovers a chipped nail, while enough wealth can restore limbs or possibly a life; stronger targets and larger effects need more sacrifice of coins, artefacts, items, or even people (Infinite Money Glitch invalid).
+> (Tag:recovery)"Restoration, but at what cost?" Greedy Healing consumes wealth you own instead of mana, with more wealth yielding more potent restoration. A dollar barely recovers a chipped nail, while enough wealth can restore limbs or possibly a life; stronger targets and larger effects need more sacrifice of coins, artefacts, items, or even people (Infinite Money Glitch invalid).
 
 **Flagged in reports**
 
@@ -19954,7 +20004,7 @@
 
 **Description**
 
-> (Tech) Allows you to build gravity-manipulation technology like anti-gravity thrusters, Zero-G fields, gravity anchors, and weight training rooms. At this low rank, don't expect black hole projectors or gravitron crushers.
+> (Tag:gravity)(Tag:tech)(Tag:tinker)(Tech) Allows you to build gravity-manipulation technology like anti-gravity thrusters, Zero-G fields, gravity anchors, and weight training rooms. At this low rank, don't expect black hole projectors or gravitron crushers.
 
 **Decision**
 
@@ -19971,7 +20021,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Entity technology such as Doomsday Drivers, Multiversal Travel, Time Bombs, and any Tinker specialisation from their universe.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build Entity technology such as Doomsday Drivers, Multiversal Travel, Time Bombs, and any Tinker specialisation from their universe.
 
 **Decision**
 
@@ -19988,7 +20038,7 @@
 
 **Description**
 
-> (Tech) Allows you to build and replicate Metal Knight's technology like mass-produced weapons, Drone Bodies, giant mechs, and large-scale drones, including Dragon Class Mechs with enough time.
+> (Tag:kinetic)(Tech) Allows you to build and replicate Metal Knight's technology like mass-produced weapons, Drone Bodies, giant mechs, and large-scale drones, including Dragon Class Mechs with enough time.
 
 **Decision**
 
@@ -20005,7 +20055,7 @@
 
 **Description**
 
-> (Tech) - Allows you to build far more functional technology from scraps and easily jury-rig existing tech from subpar materials.
+> (Tag:tech)(Tag:tinker)(Tech) - Allows you to build far more functional technology from scraps and easily jury-rig existing tech from subpar materials.
 
 **Decision**
 
@@ -20022,7 +20072,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Big Mountain Think Tank technologies including teleporters, modified monsters, pacification fields, sonic weaponry, and lobotomites.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build Big Mountain Think Tank technologies including teleporters, modified monsters, pacification fields, sonic weaponry, and lobotomites.
 
 **Decision**
 
@@ -20039,7 +20089,7 @@
 
 **Description**
 
-> (Tech) Allows you to build from Dr. Kuseno's knowledge base, including immensely powerful cyborg bodies scaling from city-block to continent-buster with enough time, testing, and resources.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build from Dr. Kuseno's knowledge base, including immensely powerful cyborg bodies scaling from city-block to continent-buster with enough time, testing, and resources.
 
 **Decision**
 
@@ -20056,7 +20106,7 @@
 
 **Description**
 
-> The All Incinerating Armageddon Blade allows you to conjure a blade of destructive flame and heat that massively amplifies Pyro effects and cuts almost anything. Its Flames of Armageddon embody oblivion, erasing existence instead of leaving ash, growing stronger with you, and unleashable as a sword beam for enough energy.
+> (Tag:fire)(Tag:martial)The All Incinerating Armageddon Blade allows you to conjure a blade of destructive flame and heat that massively amplifies Pyro effects and cuts almost anything. Its Flames of Armageddon embody oblivion, erasing existence instead of leaving ash, growing stronger with you, and unleashable as a sword beam for enough energy.
 
 **Decision**
 
@@ -20073,7 +20123,7 @@
 
 **Description**
 
-> The Frozen Dawn allows you to conjure a Frozen Spear that massively amplifies Cryo attributes while held. It unleashes frigid energy that freezes even mana and kinetic energy, dooming stabbed targets to freeze faster if weaker, and can create additional boomerang spears as projectiles.
+> (Tag:ice)(Tag:martial)The Frozen Dawn allows you to conjure a Frozen Spear that massively amplifies Cryo attributes while held. It unleashes frigid energy that freezes even mana and kinetic energy, dooming stabbed targets to freeze faster if weaker, and can create additional boomerang spears as projectiles.
 
 **Decision**
 
@@ -20090,7 +20140,7 @@
 
 **Description**
 
-> The Hammer of Continental Destruction allows you to conjure an earthen hammer that massively enhances strength and Earth attributes. Strikes reshape terrain, unleash quaking shockwaves that tear hit beings inside out, and with enough power and energy can alter an entire planet in one swing.
+> (Tag:earth)(Tag:martial)The Hammer of Continental Destruction allows you to conjure an earthen hammer that massively enhances strength and Earth attributes. Strikes reshape terrain, unleash quaking shockwaves that tear hit beings inside out, and with enough power and energy can alter an entire planet in one swing.
 
 **Decision**
 
@@ -20107,7 +20157,7 @@
 
 **Description**
 
-> You can unleash a Gamma Mutate physique, growing large with godlike physical abilities. Physical strength grows with rage without discernible limit. (Note: Just the basic Hulk transformation, no connection shenanigans.).
+> (Tag:enhancer)(Tag:transformation)You can unleash a Gamma Mutate physique, growing large with godlike physical abilities. Physical strength grows with rage without discernible limit. (Note: Just the basic Hulk transformation, no connection shenanigans.).
 
 **Flagged in reports**
 
@@ -20128,7 +20178,7 @@
 
 **Description**
 
-> You can transform into Garm or a Garm hybrid, gaining immense physical abilities and terrifying presence. Your teeth and claws tear even dimensional fabric, creating portals and breaking boundaries.
+> (Tag:enhancer)You can transform into Garm or a Garm hybrid, gaining immense physical abilities and terrifying presence. Your teeth and claws tear even dimensional fabric, creating portals and breaking boundaries.
 
 **Decision**
 
@@ -20145,7 +20195,7 @@
 
 **Description**
 
-> (Tech) Allows you to conjure ghost ammunition for your weapons that mimics normal ammo but costs energy and disappears 1 second after hitting.
+> (Tag:spirit)(Tag:tech)(Tech) Allows you to conjure ghost ammunition for your weapons that mimics normal ammo but costs energy and disappears 1 second after hitting.
 
 **Decision**
 
@@ -20162,7 +20212,7 @@
 
 **Description**
 
-> (Tech) Allows you to conjure spectre ammunition from energy for held weapons, mimicking normal ammo. You can imbue them for more power and combine them with other abilities for special properties.
+> (Tag:spirit)(Tag:tech)(Tech) Allows you to conjure spectre ammunition from energy for held weapons, mimicking normal ammo. You can imbue them for more power and combine them with other abilities for special properties.
 
 **Decision**
 
@@ -20179,7 +20229,7 @@
 
 **Description**
 
-> (Tech) Allows you to build gel-related technology like super lubricant, impact absorption gel, hardening gel, restraint gel, fire retardant gel, and gel bombs.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build gel-related technology like super lubricant, impact absorption gel, hardening gel, restraint gel, fire retardant gel, and gel bombs.
 
 **Decision**
 
@@ -20196,7 +20246,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Crystal-related technology like preservation crystals, self-repairing plates, high-capacity energy storage, and eventually crystal transmutation.
+> (Tag:earth)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Crystal-related technology like preservation crystals, self-repairing plates, high-capacity energy storage, and eventually crystal transmutation.
 
 **Decision**
 
@@ -20213,7 +20263,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Metal and Alloy-related technology like metal fabricators, wondrous alloys from mundane metals, superconductors, impossible-property metals, and metal arms and armour.
+> (Tag:earth)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Metal and Alloy-related technology like metal fabricators, wondrous alloys from mundane metals, superconductors, impossible-property metals, and metal arms and armour.
 
 **Decision**
 
@@ -20230,7 +20280,7 @@
 
 **Description**
 
-> You can weaken effects and abilities by contact. Weaker abilities and longer contact increase weakening until fully disabled.
+> (Tag:alter)(Tag:meta)You can weaken effects and abilities by contact. Weaker abilities and longer contact increase weakening until fully disabled.
 
 **Decision**
 
@@ -20247,7 +20297,7 @@
 
 **Description**
 
-> You can shut off others' powers by physical contact, with energy cost set by your power difference to the target. Strong enough targets may only be partially affected.
+> (Tag:alter)(Tag:meta)You can shut off others' powers by physical contact, with energy cost set by your power difference to the target. Strong enough targets may only be partially affected.
 
 **Decision**
 
@@ -20264,7 +20314,7 @@
 
 **Description**
 
-> You can release a power-dampening aura around yourself. Effectiveness depends on your power difference to the target; weak targets are fully suppressed while strong targets resist.
+> (Tag:enhancer)You can release a power-dampening aura around yourself. Effectiveness depends on your power difference to the target; weak targets are fully suppressed while strong targets resist.
 
 **Decision**
 
@@ -20281,7 +20331,7 @@
 
 **Description**
 
-> (Tech) Makes you supernaturally good at designing, modifying, and building Vehicles, producing engineering marvels that cannot exceed your current world's level.
+> (Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Makes you supernaturally good at designing, modifying, and building Vehicles, producing engineering marvels that cannot exceed your current world's level.
 
 **Decision**
 
@@ -20298,7 +20348,7 @@
 
 **Description**
 
-> (Tech) Allows you to build vehicle-related technology like a tank-armoured sports car, all-terrain including air motorcycle, or hard-light-track train. But no Killdozers yet.
+> (Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Allows you to build vehicle-related technology like a tank-armoured sports car, all-terrain including air motorcycle, or hard-light-track train. But no Killdozers yet.
 
 **Decision**
 
@@ -20315,7 +20365,7 @@
 
 **Description**
 
-> (Tech) Allows you to build vehicle-related technology like space vessels, supersonic flying cars, weapons, hard-light shields, and borrowing ideas from weak minor tinker abilities.
+> (Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Allows you to build vehicle-related technology like space vessels, supersonic flying cars, weapons, hard-light shields, and borrowing ideas from weak minor tinker abilities.
 
 **Decision**
 
@@ -20332,7 +20382,7 @@
 
 **Description**
 
-> (Tech) No vehicle overkill enough. Allows you to build any vehicle, from FTL starships and warp-drive motorcycles to goliath doomships, star-landing craft, or a dapper car.
+> (Tag:movement)(Tag:tech)(Tag:tinker)(Tech) No vehicle overkill enough. Allows you to build any vehicle, from FTL starships and warp-drive motorcycles to goliath doomships, star-landing craft, or a dapper car.
 
 **Decision**
 
@@ -20349,7 +20399,7 @@
 
 **Description**
 
-> (Tech) Makes you supernaturally good at designing, modifying, and building biological constructs. At this level, you can crossbreed and modify plants and create simple biology items like biomonitors.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Makes you supernaturally good at designing, modifying, and building biological constructs. At this level, you can crossbreed and modify plants and create simple biology items like biomonitors.
 
 **Decision**
 
@@ -20366,7 +20416,7 @@
 
 **Description**
 
-> (Tech) Allows you to build biology-altering technology like operating tables, shock-absorbent dense bones, regeneration-granting artificial hearts, seamless replacement limbs, and homunculi.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-altering technology like operating tables, shock-absorbent dense bones, regeneration-granting artificial hearts, seamless replacement limbs, and homunculi.
 
 **Decision**
 
@@ -20383,7 +20433,7 @@
 
 **Description**
 
-> (Tech) Allows you to build biology-related constructs like homunculi vats, full biological overhauls, genetic alteration, scratch-built beings, and potent viruses.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-related constructs like homunculi vats, full biological overhauls, genetic alteration, scratch-built beings, and potent viruses.
 
 **Decision**
 
@@ -20400,7 +20450,7 @@
 
 **Description**
 
-> (Tech) Allows you to build biology-related constructs like Cloning Vats, biological powers, cracking inherited-power genetics, full genetic overhauls, and sentient assimilating viruses.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-related constructs like Cloning Vats, biological powers, cracking inherited-power genetics, full genetic overhauls, and sentient assimilating viruses.
 
 **Decision**
 
@@ -20417,7 +20467,7 @@
 
 **Description**
 
-> (Tech) Allows you to build biology-related constructs like decoding and granting scanned genetics-based abilities, scratch-building powerful creatures, and fabricating and assimilating Legendary rank and below biology abilities.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-related constructs like decoding and granting scanned genetics-based abilities, scratch-building powerful creatures, and fabricating and assimilating Legendary rank and below biology abilities.
 
 **Decision**
 
@@ -20434,7 +20484,7 @@
 
 **Description**
 
-> (Tech) Allows you to build alchemy-related technology for reagents and potions like minor healing, stamina, toughening, or combat acids.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related technology for reagents and potions like minor healing, stamina, toughening, or combat acids.
 
 **Decision**
 
@@ -20451,7 +20501,7 @@
 
 **Description**
 
-> (Tech) Allows you to build alchemy-related technology like healing, stamina, energy, disease-curing, minor permanent-buff, explosive gas, and incendiary acid potions. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related technology like healing, stamina, energy, disease-curing, minor permanent-buff, explosive gas, and incendiary acid potions. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
 
 **Decision**
 
@@ -20468,7 +20518,7 @@
 
 **Description**
 
-> (Tech) Allows you to build alchemy-related technology like body-altering, gunpowder, flesh-eating acid, Healing, mana, and Ironskin potions with notable potency. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related technology like body-altering, gunpowder, flesh-eating acid, Healing, mana, and Ironskin potions with notable potency. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
 
 **Decision**
 
@@ -20485,7 +20535,7 @@
 
 **Description**
 
-> (Tech) Allows you to build alchemy-related technology like limb-restoring healing, mana-boosting, ultra-steroid, and Epic Tier physical-trait permanent-buff potions plus many reagents.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related technology like limb-restoring healing, mana-boosting, ultra-steroid, and Epic Tier physical-trait permanent-buff potions plus many reagents.
 
 **Decision**
 
@@ -20502,7 +20552,7 @@
 
 **Description**
 
-> (Tech) Allows you to build alchemy-related miracles with enough resources, from Panaceas, Elixirs, and Ichor to Elixirs granting Legendary rank physical traits.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related miracles with enough resources, from Panaceas, Elixirs, and Ichor to Elixirs granting Legendary rank physical traits.
 
 **Decision**
 
@@ -20519,7 +20569,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Augment and Implant technology limited at this level to replacement limbs, metal bone plating, camera eyes, and metal teeth. You can surgically install them.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology limited at this level to replacement limbs, metal bone plating, camera eyes, and metal teeth. You can surgically install them.
 
 **Decision**
 
@@ -20536,7 +20586,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Augment and Implant technology like enhanced camera eyes, subdermal armour, reinforced tendons, hormone regulators, and hidden blades and guns. You can surgically install them.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology like enhanced camera eyes, subdermal armour, reinforced tendons, hormone regulators, and hidden blades and guns. You can surgically install them.
 
 **Decision**
 
@@ -20553,7 +20603,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Augment and Implant technology like mechanical bones, full-body augments enough for Augmented (trait), combat augments, transforming robotic arms, and metabolism regulators. You could make Robocops or Astartes-lites.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology like mechanical bones, full-body augments enough for Augmented (trait), combat augments, transforming robotic arms, and metabolism regulators. You could make Robocops or Astartes-lites.
 
 **Decision**
 
@@ -20570,7 +20620,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Augment and Implant technology for full-body conversions into tank-flipping, bullet-dodging Cyborgs, fitting impossibly many implants into one body. Go build your Adam Smashers.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology for full-body conversions into tank-flipping, bullet-dodging Cyborgs, fitting impossibly many implants into one body. Go build your Adam Smashers.
 
 **Decision**
 
@@ -20587,7 +20637,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Augment and Implant technology to raise regular people to near-demigods, from brain supercomputers and time-dilating spines to million-ton-suplexing skeletons and laser eyes. Go build a Genos or Raiden.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology to raise regular people to near-demigods, from brain supercomputers and time-dilating spines to million-ton-suplexing skeletons and laser eyes. Go build a Genos or Raiden.
 
 **Decision**
 
@@ -20604,7 +20654,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Defence-related technology, at this level limited to reinforcing existing things plus basic shields and bulletproof glass.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology, at this level limited to reinforcing existing things plus basic shields and bulletproof glass.
 
 **Decision**
 
@@ -20621,7 +20671,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Defence-related technology like sturdier protection constructs, limited fireproof coating, impact suits, EMP threading, and bulletproof fabric.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology like sturdier protection constructs, limited fireproof coating, impact suits, EMP threading, and bulletproof fabric.
 
 **Decision**
 
@@ -20638,7 +20688,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Defence-related technology like shield projectors, reinforced chassis, bullet-ignoring skintight suits, elemental coatings, and highly durable machines.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology like shield projectors, reinforced chassis, bullet-ignoring skintight suits, elemental coatings, and highly durable machines.
 
 **Decision**
 
@@ -20655,7 +20705,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Defence-related technology like city-covering forcefields, trauma-hardening cloth outfits, anti-teleport Spatial Locks, and elemental hyper-paint. With effort you could make a bicycle survive ocean depths, space, and volcanoes, or a phone survive nuclear war.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology like city-covering forcefields, trauma-hardening cloth outfits, anti-teleport Spatial Locks, and elemental hyper-paint. With effort you could make a bicycle survive ocean depths, space, and volcanoes, or a phone survive nuclear war.
 
 **Decision**
 
@@ -20672,7 +20722,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Defence-related technology like nigh-unbreakable space-time-bending forcefields, sun-resistant alloys, and nuclear-surviving suits. With time, resources, and experience, even gods cannot dent them.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology like nigh-unbreakable space-time-bending forcefields, sun-resistant alloys, and nuclear-surviving suits. With time, resources, and experience, even gods cannot dent them.
 
 **Decision**
 
@@ -20689,7 +20739,7 @@
 
 **Description**
 
-> (Tech) Allows you to build ranged-weapon technology, at this level mostly mundane but supernaturally well-made pistols, snipers, bows, and slingshots.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build ranged-weapon technology, at this level mostly mundane but supernaturally well-made pistols, snipers, bows, and slingshots.
 
 **Decision**
 
@@ -20706,7 +20756,7 @@
 
 **Description**
 
-> (Tech) Allows you to build supernaturally efficient ranged weapons and ammo like steel-piercing revolvers and rudimentary railguns.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build supernaturally efficient ranged weapons and ammo like steel-piercing revolvers and rudimentary railguns.
 
 **Decision**
 
@@ -20723,7 +20773,7 @@
 
 **Description**
 
-> (Tech) Allows you to build supernaturally powerful gunpowder, electromagnetic, and laser weapons and ammo, each with tradeoffs, such as bolter-rivaling thermite pistols or Gustav-dwarfing cannons.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build supernaturally powerful gunpowder, electromagnetic, and laser weapons and ammo, each with tradeoffs, such as bolter-rivaling thermite pistols or Gustav-dwarfing cannons.
 
 **Decision**
 
@@ -20740,7 +20790,7 @@
 
 **Description**
 
-> (Tech) Allows you to build supernaturally powerful gunpowder, laser, plasma, and electromagnetic guns and ammo, from army-mowing machine guns and block-wiping blasters to city-busting cannons and tank-ripping scrap guns.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build supernaturally powerful gunpowder, laser, plasma, and electromagnetic guns and ammo, from army-mowing machine guns and block-wiping blasters to city-busting cannons and tank-ripping scrap guns.
 
 **Decision**
 
@@ -20757,7 +20807,7 @@
 
 **Description**
 
-> (Tech) Allows you to build god-rivaling ranged weapons limited only by resources and time, like space-ripping sniper rifles, nuclear-pistols, and Death Star-dwarfing cannons.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build god-rivaling ranged weapons limited only by resources and time, like space-ripping sniper rifles, nuclear-pistols, and Death Star-dwarfing cannons.
 
 **Decision**
 
@@ -20774,7 +20824,7 @@
 
 **Description**
 
-> (Tech) Allows you to build fortification technology like self-repairing walls, hidden turrets, proximity sensors, missile batteries, laser traps, and spatial locks. Tech only works attached to a large enough building or area.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build fortification technology like self-repairing walls, hidden turrets, proximity sensors, missile batteries, laser traps, and spatial locks. Tech only works attached to a large enough building or area.
 
 **Decision**
 
@@ -20791,7 +20841,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Resident Evil technology, specifically cultivating viruses like Tyrant, Uroboros, Progenitor, and parasites. It is time-intensive and can eventually remove side effects with much trial and error.
+> (Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Resident Evil technology, specifically cultivating viruses like Tyrant, Uroboros, Progenitor, and parasites. It is time-intensive and can eventually remove side effects with much trial and error.
 
 **Decision**
 
@@ -20808,7 +20858,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Aperture Science technology including turrets, portal guns, speed and jump gel, anti-fall boots, basic non-combat robots, and strong AI. Breadth over raw power.
+> (Tag:space)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Aperture Science technology including turrets, portal guns, speed and jump gel, anti-fall boots, basic non-combat robots, and strong AI. Breadth over raw power.
 
 **Decision**
 
@@ -20825,7 +20875,7 @@
 
 **Description**
 
-> You can grant others abilities as buds of your own that manifest as sidegrades capped at Elite rank, with max level set by their innate talent. Your budded ability weakens until they assimilate it, when you can retrieve the bud to restore strength, though you can retrieve anytime.
+> (Tag:growth)(Tag:meta)You can grant others abilities as buds of your own that manifest as sidegrades capped at Elite rank, with max level set by their innate talent. Your budded ability weakens until they assimilate it, when you can retrieve the bud to restore strength, though you can retrieve anytime.
 
 **Decision**
 
@@ -20842,7 +20892,7 @@
 
 **Description**
 
-> (Tech) (Nsfw) Allows you to research and build Taimanin technology like advanced prosthetics, genetic modification, basic cloning, augments, brainwashing, demonization, and lewd tech plus the basic sci-fi package.
+> (Tag:nsfw)(Tag:tech)(Tag:tinker)(Tech) (Nsfw) Allows you to research and build Taimanin technology like advanced prosthetics, genetic modification, basic cloning, augments, brainwashing, demonization, and lewd tech plus the basic sci-fi package.
 
 **Decision**
 
@@ -20859,7 +20909,7 @@
 
 **Description**
 
-> (Tech) Allows you to build cosmetics-related technology like hyper-realistic masks, machine beautification, holograms, beauty cream, and perfumes.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build cosmetics-related technology like hyper-realistic masks, machine beautification, holograms, beauty cream, and perfumes.
 
 **Decision**
 
@@ -20876,7 +20926,7 @@
 
 **Description**
 
-> (Tech) Allows you to build electricity-related technology like Ultra Tesla coils and thunder-harnessing constructs, separate from magnetism.
+> (Tag:electric)(Tag:tech)(Tag:tinker)(Tech) Allows you to build electricity-related technology like Ultra Tesla coils and thunder-harnessing constructs, separate from magnetism.
 
 **Decision**
 
@@ -20893,7 +20943,7 @@
 
 **Description**
 
-> (Tech) Allows you to build dungeon-creation constructs, magical or technological, like bigger-inside rooms, indescrutable walls, dungeon-only traps, and utility rooms. Your dungeon needs an accessible entrance and plausible path to the core, tech only works inside, and inside tech is boosted.
+> (Tag:tech)(Tag:tinker)(Tech) Allows you to build dungeon-creation constructs, magical or technological, like bigger-inside rooms, indescrutable walls, dungeon-only traps, and utility rooms. Your dungeon needs an accessible entrance and plausible path to the core, tech only works inside, and inside tech is boosted.
 
 **Decision**
 
@@ -20910,7 +20960,7 @@
 
 **Description**
 
-> (Tech) Allows you to build sustenance-related constructs like efficient farms, water purifiers and condensers, vampire blood alternatives, food bars, consumable life-force alternatives, and plant light projectors. More encountered sustenance needs unlock more varied tech.
+> (Tag:nature)(Tag:tech)(Tag:tinker)(Tech) Allows you to build sustenance-related constructs like efficient farms, water purifiers and condensers, vampire blood alternatives, food bars, consumable life-force alternatives, and plant light projectors. More encountered sustenance needs unlock more varied tech.
 
 **Decision**
 
@@ -20927,7 +20977,7 @@
 
 **Description**
 
-> These mystical eyes supernaturally reveal the depth of an object or location relative to something else.
+> (Tag:ocular)(Tag:sense)These mystical eyes supernaturally reveal the depth of an object or location relative to something else.
 
 **Decision**
 
@@ -20944,7 +20994,7 @@
 
 **Description**
 
-> You can amplify movement with energy to move faster, without affecting agility or senses. Faster speeds cost disproportionately more energy.
+> (Tag:movement)You can amplify movement with energy to move faster, without affecting agility or senses. Faster speeds cost disproportionately more energy.
 
 **Decision**
 
@@ -20961,7 +21011,7 @@
 
 **Description**
 
-> You can amplify physical impact by expending energy, making strikes deal more damage without amplifying stats.
+> (Tag:kinetic)(Tag:martial)You can amplify physical impact by expending energy, making strikes deal more damage without amplifying stats.
 
 **Decision**
 
@@ -20978,7 +21028,7 @@
 
 **Description**
 
-> You can falsify your statistics and abilities to show scrying and analysing abilities what you want instead of the truth.
+> (Tag:stealth)You can falsify your statistics and abilities to show scrying and analysing abilities what you want instead of the truth.
 
 **Decision**
 
@@ -20995,7 +21045,7 @@
 
 **Description**
 
-> Allows you to duplicate limbs and organs, like extra arms, eyes, or a second fittable heart. Extra parts cause strain.
+> (Tag:bio)Allows you to duplicate limbs and organs, like extra arms, eyes, or a second fittable heart. Extra parts cause strain.
 
 **Decision**
 
@@ -21012,7 +21062,7 @@
 
 **Description**
 
-> You can temporarily enforce quantum tunnelling on yourself to let attacks pass through harmlessly or phase through objects. It is draining, with exponentially rising cost the longer it lasts.
+> (Tag:alter)You can temporarily enforce quantum tunnelling on yourself to let attacks pass through harmlessly or phase through objects. It is draining, with exponentially rising cost the longer it lasts.
 
 **Decision**
 
@@ -21029,7 +21079,7 @@
 
 **Description**
 
-> Allows you to summon numerous invisible hand-like appendages you freely extend and control. They are superhumanly strong and can merge into a slower, larger, stronger hand, with power and max count set by max energy.
+> (Tag:spirit)Allows you to summon numerous invisible hand-like appendages you freely extend and control. They are superhumanly strong and can merge into a slower, larger, stronger hand, with power and max count set by max energy.
 
 **Decision**
 
@@ -21046,7 +21096,7 @@
 
 **Description**
 
-> Cor Leonis lets you sense allies as light spots and take their physical and mental conditions like exhaustion onto yourself. You can also transfer conditions to willing allies.
+> (Tag:recovery)(Tag:spirit)Cor Leonis lets you sense allies as light spots and take their physical and mental conditions like exhaustion onto yourself. You can also transfer conditions to willing allies.
 
 **Decision**
 
@@ -21063,7 +21113,7 @@
 
 **Description**
 
-> "You return by dea-" Each death returns you in time to a set spawn point. Spawn points are random but reset after sleeping over 6 hours. Does not activate with soul or existence erasure.
+> (Tag:time)"You return by dea-" Each death returns you in time to a set spawn point. Spawn points are random but reset after sleeping over 6 hours. Does not activate with soul or existence erasure.
 
 **Decision**
 
@@ -21080,7 +21130,7 @@
 
 **Description**
 
-> Allows you to create ice constructs from energy without controlling them afterward or freezing objects, such as ice walls, weapons, blocks, and boulders.
+> (Tag:ice)Allows you to create ice constructs from energy without controlling them afterward or freezing objects, such as ice walls, weapons, blocks, and boulders.
 
 **Decision**
 
@@ -21097,7 +21147,7 @@
 
 **Description**
 
-> Allows you to manifest rock constructs from energy without controlling them beyond creation and shaping, such as rock weapons, boulders, walls, and blocks.
+> (Tag:earth)Allows you to manifest rock constructs from energy without controlling them beyond creation and shaping, such as rock weapons, boulders, walls, and blocks.
 
 **Decision**
 
@@ -21114,7 +21164,7 @@
 
 **Description**
 
-> You can make a wall from anything in your arsenal or any touched object or ground, from stone and ice to wind, sunlight, and raw energy. Size and durability scale with energy. Walls.
+> (Tag:alter)You can make a wall from anything in your arsenal or any touched object or ground, from stone and ice to wind, sunlight, and raw energy. Size and durability scale with energy. Walls.
 
 **Decision**
 
@@ -21131,7 +21181,7 @@
 
 **Description**
 
-> You can make a sword from anything in your arsenal, held objects, or touched unoccupied material, from fire and ice to light, wind, energy, and swords. Power and duration scale with energy. Swords.
+> (Tag:martial)You can make a sword from anything in your arsenal, held objects, or touched unoccupied material, from fire and ice to light, wind, energy, and swords. Power and duration scale with energy. Swords.
 
 **Decision**
 
@@ -21148,7 +21198,7 @@
 
 **Description**
 
-> You can convert one of your abilities into an armament bestowed on a willing recipient, with weapon powers based on that ability. Knights cannot refuse your orders, lose status permanently if reclaimed, must know the burden, and can be teleported to you every 24 hours.
+> (Tag:command)(Tag:martial)(Tag:meta)(Tag:summon)You can convert one of your abilities into an armament bestowed on a willing recipient, with weapon powers based on that ability. Knights cannot refuse your orders, lose status permanently if reclaimed, must know the burden, and can be teleported to you every 24 hours.
 
 **Decision**
 
@@ -21165,7 +21215,7 @@
 
 **Description**
 
-> "Servitude at a price" Allows you to collar a target in exchange for a portion of your abilities or traits. Collared targets cannot disobey and can be summoned anytime. Stronger targets demand more granted abilities, grants are permanently lost even if killed, and too-strong targets are immune.
+> (Tag:command)(Tag:meta)"Servitude at a price" Allows you to collar a target in exchange for a portion of your abilities or traits. Collared targets cannot disobey and can be summoned anytime. Stronger targets demand more granted abilities, grants are permanently lost even if killed, and too-strong targets are immune.
 
 **Decision**
 
@@ -21182,7 +21232,7 @@
 
 **Description**
 
-> "Everything and everyone has a price." You can buy anything from anyone if you pay enough, from items to devotion or murder. Price depends on relative power and willingness; weak souls go for a dollar, strong ones may need epic items. Payment in gold or valuables burns out of existence.
+> (Tag:command)"Everything and everyone has a price." You can buy anything from anyone if you pay enough, from items to devotion or murder. Price depends on relative power and willingness; weak souls go for a dollar, strong ones may need epic items. Payment in gold or valuables burns out of existence.
 
 **Decision**
 
@@ -21199,7 +21249,7 @@
 
 **Description**
 
-> "Deal with their baser instincts, not their logic" You can command through fear, with greater fear and intimidation granting greater command, even for children, kingdoms, or lives. Obeyed commands cannot be opposed after, as the fear returns when resisted.
+> (Tag:command)(Tag:mental)"Deal with their baser instincts, not their logic" You can command through fear, with greater fear and intimidation granting greater command, even for children, kingdoms, or lives. Obeyed commands cannot be opposed after, as the fear returns when resisted.
 
 **Decision**
 
@@ -21216,7 +21266,7 @@
 
 **Description**
 
-> Who needs dub? You get subtitles for relevant attended sounds, transcribing speech in any language with tone like "Good for you to finally join us (Sarcastically)" and effects like [Assassin's Footsteps] or [Fireball Chant].
+> (Tag:divination)Who needs dub? You get subtitles for relevant attended sounds, transcribing speech in any language with tone like "Good for you to finally join us (Sarcastically)" and effects like [Assassin's Footsteps] or [Fireball Chant].
 
 **Decision**
 
@@ -21233,7 +21283,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Robotics technology, at this level only simple and mostly mundane robots like autonomous claw arms or butter-robots.
+> (Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Robotics technology, at this level only simple and mostly mundane robots like autonomous claw arms or butter-robots.
 
 **Decision**
 
@@ -21250,7 +21300,7 @@
 
 **Description**
 
-> (Tech) Allows you to build Robotics technology like simple average-man-capable robots, gun-bots, up to B-1 Droids or B-2s with training.
+> (Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Robotics technology like simple average-man-capable robots, gun-bots, up to B-1 Droids or B-2s with training.
 
 **Decision**
 
@@ -21267,7 +21317,7 @@
 
 **Description**
 
-> (Tech) Allows you to build complex capable robots like combat, maid, or worker bots, up to Sentry Bots, Executor Droids, or GLaDOS with mind and resources.
+> (Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build complex capable robots like combat, maid, or worker bots, up to Sentry Bots, Executor Droids, or GLaDOS with mind and resources.
 
 **Decision**
 
@@ -21284,7 +21334,7 @@
 
 **Description**
 
-> (Tech) Allows you to build powerful useful robots like army-wasting giants, moving castles, and dust-sized repair bots. Go build your Metal Gears.
+> (Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build powerful useful robots like army-wasting giants, moving castles, and dust-sized repair bots. Go build your Metal Gears.
 
 **Decision**
 
@@ -21301,7 +21351,7 @@
 
 **Description**
 
-> (Tech) Allows you to build nearly any autonomous mechanical unit, from Metal Gear armies and ninja clans to human-like 100x-strong biorobots and nuke-proof superintelligent machines. Integrated other-branch Tinker tech is significantly boosted.
+> (Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build nearly any autonomous mechanical unit, from Metal Gear armies and ninja clans to human-like 100x-strong biorobots and nuke-proof superintelligent machines. Integrated other-branch Tinker tech is significantly boosted.
 
 **Decision**
 
@@ -21318,7 +21368,7 @@
 
 **Description**
 
-> Kudoku lets you expel very weak poison via pores, nails, or mouth. While active-slotted, surviving ingested or inflicted poisons raises Kudoku's potency proportionally with more imbueable effects, from mild paralytic to godslaying venom. Starting rating is Trash, and it grants poison resistance scaling with potency when slotted.
+> (Tag:growth)(Tag:meta)(Tag:poison)Kudoku lets you expel very weak poison via pores, nails, or mouth. While active-slotted, surviving ingested or inflicted poisons raises Kudoku's potency proportionally with more imbueable effects, from mild paralytic to godslaying venom. Starting rating is Trash, and it grants poison resistance scaling with potency when slotted.
 
 **Decision**
 
@@ -21335,7 +21385,7 @@
 
 **Description**
 
-> Your soul assimilates curses afflicted on you over time, then lets you replicate and use them by expending energy. Stronger curses take longer to assimilate and strong enough ones can ignore the effect. (Does not affect Gacha Curses).
+> (Tag:curse)(Tag:growth)(Tag:magic)Your soul assimilates curses afflicted on you over time, then lets you replicate and use them by expending energy. Stronger curses take longer to assimilate and strong enough ones can ignore the effect. (Does not affect Gacha Curses).
 
 **Decision**
 
@@ -21352,7 +21402,7 @@
 
 **Description**
 
-> You can transform to take on and mix-match traits of any Earth insect. Manifest features like a scorpion's tail and venom, dragonfly wings, cockroach resilience, and more.
+> (Tag:bio)(Tag:insectoid)(Tag:poison)(Tag:transformation)You can transform to take on and mix-match traits of any Earth insect. Manifest features like a scorpion's tail and venom, dragonfly wings, cockroach resilience, and more.
 
 **Decision**
 
@@ -21369,7 +21419,7 @@
 
 **Description**
 
-> Conjure and shape infernal flames used by demons. They are especially strong against living beings, burning vitality with flesh while weakening them and hindering healing via their unholy attribute. Rather energy-intensive unless you are an Infernal.
+> (Tag:fire)(Tag:infernal)Conjure and shape infernal flames used by demons. They are especially strong against living beings, burning vitality with flesh while weakening them and hindering healing via their unholy attribute. Rather energy-intensive unless you are an Infernal.
 
 **Decision**
 
@@ -21386,7 +21436,7 @@
 
 **Description**
 
-> Conjure and shape potent infernal flames used by high-ranking demons. Very hot and effective against living beings, they stick like glue and curse what they burn to hinder healing. Rather energy-intensive unless you are an Infernal.
+> (Tag:fire)(Tag:infernal)Conjure and shape potent infernal flames used by high-ranking demons. Very hot and effective against living beings, they stick like glue and curse what they burn to hinder healing. Rather energy-intensive unless you are an Infernal.
 
 **Decision**
 
@@ -21403,7 +21453,7 @@
 
 **Description**
 
-> Conjure and shape Holy Light used by Angels as balls of light, energy blasts, or blades of light. It sets Infernal, Unholy, or Necrotic targets alight with holy flames, but deals significantly less damage otherwise. (A/N: Holy Light is NOT light speed despite the name).
+> (Tag:holy)(Tag:light)Conjure and shape Holy Light used by Angels as balls of light, energy blasts, or blades of light. It sets Infernal, Unholy, or Necrotic targets alight with holy flames, but deals significantly less damage otherwise. (A/N: Holy Light is NOT light speed despite the name).
 
 **Decision**
 
@@ -21420,7 +21470,7 @@
 
 **Description**
 
-> Conjure and shape searing Holy Light used by high-ranking Angels, or call it down from the sky. It sets Infernal, Unholy, or Necrotic opponents alight on contact, burns away same-attribute attacks and curses, and spares anything you do not wish to hurt. Significantly reduced potency otherwise. (A/N: Holy Light is NOT light speed despite the name).
+> (Tag:holy)(Tag:light)Conjure and shape searing Holy Light used by high-ranking Angels, or call it down from the sky. It sets Infernal, Unholy, or Necrotic opponents alight on contact, burns away same-attribute attacks and curses, and spares anything you do not wish to hurt. Significantly reduced potency otherwise. (A/N: Holy Light is NOT light speed despite the name).
 
 **Decision**
 
@@ -21437,7 +21487,7 @@
 
 **Description**
 
-> Temporarily change your race to any Race Change trait in the gacha ranked Rare or below while active. You can only transform into one race at a time.
+> (Tag:transformation)Temporarily change your race to any Race Change trait in the gacha ranked Rare or below while active. You can only transform into one race at a time.
 
 **Decision**
 
@@ -21454,7 +21504,7 @@
 
 **Description**
 
-> Charge any attack to temporarily bypass your maximum energy output; longer charge yields more power. 10x power costs 10x energy. You can charge only one action at a time, and interruption wastes the energy without unleashing the effect.
+> (Tag:enhancer)Charge any attack to temporarily bypass your maximum energy output; longer charge yields more power. 10x power costs 10x energy. You can charge only one action at a time, and interruption wastes the energy without unleashing the effect.
 
 **Decision**
 
@@ -21471,7 +21521,7 @@
 
 **Description**
 
-> This tinker ability lets you design and build technology related to vehicles, including impossible supernatural ones. Examples include a sound-speed ship that does not shake, an air-riding motorcycle via hard light, a sports car 10x better armored than a tank with a year of fuel efficiency, or a killdozer rivaling the Batmobile.
+> (Tag:movement)(Tag:tech)(Tag:tinker)This tinker ability lets you design and build technology related to vehicles, including impossible supernatural ones. Examples include a sound-speed ship that does not shake, an air-riding motorcycle via hard light, a sports car 10x better armored than a tank with a year of fuel efficiency, or a killdozer rivaling the Batmobile.
 
 **Decision**
 
@@ -21488,7 +21538,7 @@
 
 **Description**
 
-> Touch a target to turn them into a fumo immune to all damage, though they still feel everything done to them. Stronger targets can resist, and duration scales with energy expended and power difference. You cannot Fumo someone for 1 hour after they awaken from the effect.
+> (Tag:transformation)Touch a target to turn them into a fumo immune to all damage, though they still feel everything done to them. Stronger targets can resist, and duration scales with energy expended and power difference. You cannot Fumo someone for 1 hour after they awaken from the effect.
 
 **Flagged in reports**
 
@@ -21505,11 +21555,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 2.2 | Uncommon | Generic |
+| 2.2 | Uncommon | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Conjure an invulnerable shadow copy of yourself that cannot interact with the world. It moves extremely fast, can disrupt others' vision, and lets you see through its eyes. Lasts 30 minutes at base, one at a time; duration can be increased by training.
+> (Tag:dark)(Tag:sense)(Tag:space)(Tag:summon)Conjure an invulnerable shadow copy of yourself that cannot interact with the world. It moves extremely fast, can disrupt others' vision, and lets you see through its eyes. Lasts 30 minutes at base, one at a time; duration can be increased by training.
 
 **Decision**
 
@@ -21522,11 +21572,11 @@
 
 | Rarity | Tier | Source |
 |---|---|---|
-| 5.9 | Epic | Generic |
+| 5.9 | Epic | Legendary Mechanic |
 
 **Description**
 
-> Legendary Mechanic - Pull on the Void Dimension to cause spatial disruptions in the material world. It inflicts massive devastation and damage in exchange for incredibly taxing energy expenditure.
+> (Tag:alter)(Tag:dark)Pull on the Void Dimension to cause spatial disruptions in the material world. It inflicts massive devastation and damage in exchange for incredibly taxing energy expenditure.
 
 **Decision**
 
@@ -21543,7 +21593,7 @@
 
 **Description**
 
-> When you need to make a choice, activate to view up to 3 relevant choices and their vague outcomes. For example, [We shouldn't go +reputation with X --Reputation with Y, Z Dies].
+> (Tag:divination)When you need to make a choice, activate to view up to 3 relevant choices and their vague outcomes. For example, [We shouldn't go +reputation with X --Reputation with Y, Z Dies].
 
 **Decision**
 
@@ -21560,7 +21610,7 @@
 
 **Description**
 
-> (Tech) This Tinker speciality lets you design, modify, and build technology related to acquiring materials.
+> (Tag:tech)(Tag:tinker)(Tech) This Tinker speciality lets you design, modify, and build technology related to acquiring materials.
 
 **Decision**
 
@@ -21577,7 +21627,7 @@
 
 **Description**
 
-> Roll a random number out of 22 to invoke the effect of that Major Arcana Tarot Card. Cooldown: 120 Hours.
+> (Tag:meta)Roll a random number out of 22 to invoke the effect of that Major Arcana Tarot Card. Cooldown: 120 Hours.
 
 **Decision**
 
@@ -21594,7 +21644,7 @@
 
 **Description**
 
-> "Interrogate" inanimate objects for information, such as asking a wall who entered in 24 hours, a weapon how to use it, or a building how to infiltrate it. Objects must tell the truth based only on what they have seen, heard, or know about themselves. Forcing more recall costs more energy.
+> (Tag:divination)"Interrogate" inanimate objects for information, such as asking a wall who entered in 24 hours, a weapon how to use it, or a building how to infiltrate it. Objects must tell the truth based only on what they have seen, heard, or know about themselves. Forcing more recall costs more energy.
 
 **Decision**
 
@@ -21611,7 +21661,7 @@
 
 **Description**
 
-> Yomi Hustle - "It may be your only move" lets you "Hustle" by performing a gesture lasting at least half a second, like snapping fingers with a taunt or lounging mid-fight. On completion you regain energy and stamina, more the longer and more stylish and aggravating the hustle. Can only be used in active combat against an enemy meaning you genuine harm.
+> (Tag:recovery)Yomi Hustle - "It may be your only move" lets you "Hustle" by performing a gesture lasting at least half a second, like snapping fingers with a taunt or lounging mid-fight. On completion you regain energy and stamina, more the longer and more stylish and aggravating the hustle. Can only be used in active combat against an enemy meaning you genuine harm.
 
 **Decision**
 
@@ -21628,7 +21678,7 @@
 
 **Description**
 
-> Place "Restraint Levels" on willing or unable-to-resist targets, including yourself. They can seal abilities and forms or block certain power levels. They can only be lifted by you or a designated target speaking the unlock phrase.
+> (Tag:alter)(Tag:meta)Place "Restraint Levels" on willing or unable-to-resist targets, including yourself. They can seal abilities and forms or block certain power levels. They can only be lifted by you or a designated target speaking the unlock phrase.
 
 **Decision**
 
@@ -21645,7 +21695,7 @@
 
 **Description**
 
-> Take control of a target's physical body in your line of sight, moving them against their will. Stronger targets cost more energy to control and maintain. You can share senses, control additional targets at greater mental and energy cost, or narrow control to parts like fingers to save energy.
+> (Tag:command)(Tag:sense)Take control of a target's physical body in your line of sight, moving them against their will. Stronger targets cost more energy to control and maintain. You can share senses, control additional targets at greater mental and energy cost, or narrow control to parts like fingers to save energy.
 
 **Decision**
 
@@ -21662,7 +21712,7 @@
 
 **Description**
 
-> Impose rules by touching targets and expending energy; targets feel incredible mental compulsion to follow them, like forbidding milk, forcing travel at set times, or banning clothes in a room. Stronger targets are harder to affect, and edicts against self-preservation are exponentially harder.
+> (Tag:command)(Tag:mental)Impose rules by touching targets and expending energy; targets feel incredible mental compulsion to follow them, like forbidding milk, forcing travel at set times, or banning clothes in a room. Stronger targets are harder to affect, and edicts against self-preservation are exponentially harder.
 
 **Flagged in reports**
 
@@ -21683,7 +21733,7 @@
 
 **Description**
 
-> Project sensations of actions onto someone in your line of sight without physically affecting them. You can project groping, licking, scratching, choking, burning, stabbing, hanging, etc., provided you could do those things without the ability.
+> (Tag:illusion)(Tag:spirit)(Noncon) Project sensations of actions onto someone in your line of sight without physically affecting them. You can project groping, licking, scratching, choking, burning, stabbing, hanging, etc., provided you could do those things without the ability.
 
 **Flagged in reports**
 
@@ -21704,7 +21754,7 @@
 
 **Description**
 
-> Send a wave of shimmering psionic energy through your eyes. On hitting a sentient target it causes mental damage, confusion, and painful headaches. Effectiveness depends on the target's mental and magical power.
+> (Tag:mental)Send a wave of shimmering psionic energy through your eyes. On hitting a sentient target it causes mental damage, confusion, and painful headaches. Effectiveness depends on the target's mental and magical power.
 
 **Decision**
 
@@ -21721,7 +21771,7 @@
 
 **Description**
 
-> Give an absolute command to anyone you make eye contact with; they must obey if physically capable. Usable only once per person, and targets comparable to or stronger than you can resist or ignore it. Does not cost energy to use.
+> (Tag:command)(Tag:mental)Give an absolute command to anyone you make eye contact with; they must obey if physically capable. Usable only once per person, and targets comparable to or stronger than you can resist or ignore it. Does not cost energy to use.
 
 **Decision**
 
@@ -21738,7 +21788,7 @@
 
 **Description**
 
-> Rewrite a target's memories through direct eye contact. Greater detail and volume cost more energy and time, scaling with power difference and willpower, and rewritten memories can be broken through. Training improves speed, efficiency, detail, and accuracy.
+> (Tag:command)(Tag:mental)Rewrite a target's memories through direct eye contact. Greater detail and volume cost more energy and time, scaling with power difference and willpower, and rewritten memories can be broken through. Training improves speed, efficiency, detail, and accuracy.
 
 **Decision**
 
@@ -21755,7 +21805,7 @@
 
 **Description**
 
-> Suspend the time perception of sentient beings in a dome around you, freezing them in place. Maintaining it greatly drains vitality and energy based on range size, target count, and target power. It affects all targets in range indiscriminately.
+> (Tag:command)(Tag:mental)(Tag:time)Suspend the time perception of sentient beings in a dome around you, freezing them in place. Maintaining it greatly drains vitality and energy based on range size, target count, and target power. It affects all targets in range indiscriminately.
 
 **Decision**
 
@@ -21772,7 +21822,7 @@
 
 **Description**
 
-> Conjure or summon Lesser Water and Ice Elementals from your energy and command them, such as Nymphs, Water Fairies, etc., or similar beings from other worlds using water-based magic. Limited to Uncommon familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:ice)(Tag:spirit)(Tag:summon)(Tag:water)Conjure or summon Lesser Water and Ice Elementals from your energy and command them, such as Nymphs, Water Fairies, etc., or similar beings from other worlds using water-based magic. Limited to Uncommon familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21789,7 +21839,7 @@
 
 **Description**
 
-> Conjure or summon Water and Ice Elementals from your energy and command them, such as Nereids, High Water Fairies, Undines, etc., or similar beings using water-based magic. Limited to Rare Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:ice)(Tag:spirit)(Tag:summon)(Tag:water)Conjure or summon Water and Ice Elementals from your energy and command them, such as Nereids, High Water Fairies, Undines, etc., or similar beings using water-based magic. Limited to Rare Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21806,7 +21856,7 @@
 
 **Description**
 
-> Conjure powerful Greater Water and Ice Elementals from your energy and command them, such as Sirens, Oceanids, Noble Water Fairies, Regice, etc., using water-based magic and other abilities. Limited to Elite Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:ice)(Tag:spirit)(Tag:summon)(Tag:water)Conjure powerful Greater Water and Ice Elementals from your energy and command them, such as Sirens, Oceanids, Noble Water Fairies, Regice, etc., using water-based magic and other abilities. Limited to Elite Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21823,7 +21873,7 @@
 
 **Description**
 
-> Conjure or summon Lesser Air and Sky Elementals from your energy and command them, such as Wind Sprites, Living Clouds, Wind Elementals, etc., using air and sky-based magic. Limited to Uncommon familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:air)(Tag:spirit)(Tag:summon)Conjure or summon Lesser Air and Sky Elementals from your energy and command them, such as Wind Sprites, Living Clouds, Wind Elementals, etc., using air and sky-based magic. Limited to Uncommon familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21840,7 +21890,7 @@
 
 **Description**
 
-> Conjure or summon Air and Sky Elementals from your energy and command them, such as Storm Elementals, Wind Fairies, Nimbus Clouds, Cloud Elementals, etc., using wind-based magic. Limited to Rare Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:air)(Tag:spirit)(Tag:summon)Conjure or summon Air and Sky Elementals from your energy and command them, such as Storm Elementals, Wind Fairies, Nimbus Clouds, Cloud Elementals, etc., using wind-based magic. Limited to Rare Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21857,7 +21907,7 @@
 
 **Description**
 
-> Conjure powerful Greater Air Elementals from your energy and command them, such as Hurricane Elementals, Greater Wind Spirits, Greater Storm Elementals, Thunderbirds, etc., using air-based magic and other abilities. Limited to Elite Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:air)(Tag:spirit)(Tag:summon)Conjure powerful Greater Air Elementals from your energy and command them, such as Hurricane Elementals, Greater Wind Spirits, Greater Storm Elementals, Thunderbirds, etc., using air-based magic and other abilities. Limited to Elite Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21874,7 +21924,7 @@
 
 **Description**
 
-> Conjure or summon Lesser Fire Elementals from your energy and command them, such as Fire Spirits, Living Candlelight, Fire Eaters, etc., using fire-based magic. Limited to Uncommon familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:fire)(Tag:spirit)(Tag:summon)Conjure or summon Lesser Fire Elementals from your energy and command them, such as Fire Spirits, Living Candlelight, Fire Eaters, etc., using fire-based magic. Limited to Uncommon familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21891,7 +21941,7 @@
 
 **Description**
 
-> Conjure or summon Fire Elementals from your energy and command them, such as Fire Fairies, Fire Elementals, Fire Atronachs, Efreets, etc., or similar beings using fire-based magic. Limited to Rare Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:fire)(Tag:spirit)(Tag:summon)Conjure or summon Fire Elementals from your energy and command them, such as Fire Fairies, Fire Elementals, Fire Atronachs, Efreets, etc., or similar beings using fire-based magic. Limited to Rare Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21908,7 +21958,7 @@
 
 **Description**
 
-> Conjure powerful Greater Fire Elementals from your energy and command them, such as Firebirds, Greater Efreets, Flame Devourers, etc., using fire-based magic and other abilities. Limited to Elite Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
+> (Tag:fire)(Tag:spirit)(Tag:summon)Conjure powerful Greater Fire Elementals from your energy and command them, such as Firebirds, Greater Efreets, Flame Devourers, etc., using fire-based magic and other abilities. Limited to Elite Familiar power or less; power and form scale with your expertise and level. They draw on your energy to persist and act, vanishing if supply stops, but with enough time, energy, and skill you can make them permanent. Elementals are not counted as Familiars by the system.
 
 **Decision**
 
@@ -21925,7 +21975,7 @@
 
 **Description**
 
-> Summon Lesser Demons from the Underworld to serve and obey you, such as Imps, Capra Demons, Demon Eyes, etc., limited to Uncommon Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Uncommon Demon, sacrifice of an Uncommon target. Permanent demons no longer need your energy.
+> (Tag:infernal)(Tag:summon)Summon Lesser Demons from the Underworld to serve and obey you, such as Imps, Capra Demons, Demon Eyes, etc., limited to Uncommon Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Uncommon Demon, sacrifice of an Uncommon target. Permanent demons no longer need your energy.
 
 **Decision**
 
@@ -21942,7 +21992,7 @@
 
 **Description**
 
-> Summon Demons from the Underworld to serve and obey you, such as Demons, Succubi/Incubi, Taurus Demons, etc., limited to Rare familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Elite Demon, sacrifice of an Elite Target. Permanent demons no longer need your energy.
+> (Tag:infernal)(Tag:summon)Summon Demons from the Underworld to serve and obey you, such as Demons, Succubi/Incubi, Taurus Demons, etc., limited to Rare familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Elite Demon, sacrifice of an Elite Target. Permanent demons no longer need your energy.
 
 **Decision**
 
@@ -21959,7 +22009,7 @@
 
 **Description**
 
-> Summon Fiends from the Underworld, a nobler variant of demons, to serve and obey you, such as Fiends, Greater Succubi/Incubi, Oni (Fate), Soul Eaters (Overlord), etc., limited to Elite Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Elite Demon, sacrifice of an Elite Target. Permanent demons no longer need your energy.
+> (Tag:infernal)(Tag:summon)Summon Fiends from the Underworld, a nobler variant of demons, to serve and obey you, such as Fiends, Greater Succubi/Incubi, Oni (Fate), Soul Eaters (Overlord), etc., limited to Elite Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Elite Demon, sacrifice of an Elite Target. Permanent demons no longer need your energy.
 
 **Decision**
 
@@ -21976,7 +22026,7 @@
 
 **Description**
 
-> Summon Archfiends from the Underworld, a royal variant of demons, to serve and obey you, such as Archfiends, Succubi/Incubi Kings/Queens, Oni Rulers (Fate), Arch Devils (Overlord), Devils (Chainsaw Man), etc., limited to Epic Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Epic Demon, sacrifice of an Epic Target. Permanent demons no longer need your energy.
+> (Tag:infernal)(Tag:summon)Summon Archfiends from the Underworld, a royal variant of demons, to serve and obey you, such as Archfiends, Succubi/Incubi Kings/Queens, Oni Rulers (Fate), Arch Devils (Overlord), Devils (Chainsaw Man), etc., limited to Epic Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for an Epic Demon, sacrifice of an Epic Target. Permanent demons no longer need your energy.
 
 **Decision**
 
@@ -21993,7 +22043,7 @@
 
 **Description**
 
-> Summon all but the strongest infernals from the Underworld to serve and obey you, such as True Demons, Devils (Chainsaw Man), Efreet Sultans, Greater Daemons (Warhammer), etc., limited to Legendary Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for a Legendary Demon, sacrifice of a Legendary Target. Permanent demons no longer need your energy.
+> (Tag:infernal)(Tag:summon)Summon all but the strongest infernals from the Underworld to serve and obey you, such as True Demons, Devils (Chainsaw Man), Efreet Sultans, Greater Daemons (Warhammer), etc., limited to Legendary Familiar power or less. They are bound to your will while manifested and need your constant energy to stay summoned and use abilities; slain servants reform in the Underworld and can be resummoned, and you can strengthen them with more magic. You can make them permanent with a sufficient blood sacrifice by tier; for a Legendary Demon, sacrifice of a Legendary Target. Permanent demons no longer need your energy.
 
 **Decision**
 
@@ -22010,7 +22060,7 @@
 
 **Description**
 
-> Sense and telekinetically control Roentgenium in a radius around you. Range and power can be increased by training, scaling with your energy reserves.
+> (Tag:neutral)Sense and telekinetically control Roentgenium in a radius around you. Range and power can be increased by training, scaling with your energy reserves.
 
 **Decision**
 
@@ -22027,7 +22077,7 @@
 
 **Description**
 
-> Ring the Ferryman's bell to call the souls of the dead to you, by default all souls in range, or a specific soul instantly if you hold something relevant like corpse parts or mementos, as long as their soul is in your dimension. Powerful unwilling targets can resist. Called spirits are not commanded but can be interacted with, and you can store 100 souls by default, equal to a grown man, increasing with energy reserves.
+> (Tag:necro)(Tag:spirit)Ring the Ferryman's bell to call the souls of the dead to you, by default all souls in range, or a specific soul instantly if you hold something relevant like corpse parts or mementos, as long as their soul is in your dimension. Powerful unwilling targets can resist. Called spirits are not commanded but can be interacted with, and you can store 100 souls by default, equal to a grown person, increasing with energy reserves.
 
 **Decision**
 
@@ -22044,7 +22094,7 @@
 
 **Description**
 
-> (Gacha) Call to Arms rolls the familiar gacha to temporarily grant you a familiar fighting by your side for 1 hour, then it disappears. At 1 Ability Slot you pull Bronze, 2 slots = Silver, 3 slots = Gold, 4 Slots = Platinum, capping at 5 slots = Diamond. 24 Hour cooldown.
+> (Tag:meta)(Tag:summon)(Gacha) Call to Arms rolls the familiar gacha to temporarily grant you a familiar fighting by your side for 1 hour, then it disappears. At 1 Ability Slot you pull Bronze, 2 slots = Silver, 3 slots = Gold, 4 Slots = Platinum, capping at 5 slots = Diamond. 24 Hour cooldown.
 
 **Decision**
 
@@ -22061,7 +22111,7 @@
 
 **Description**
 
-> Temporarily summon a low-ranking Angel or Holy Spirit from the Heavenly Realm, such as Lesser Light Fairy, Angel Guardians, Archangel Flames (Overlord), 2 Winged Angels, etc., limited to Uncommon familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+> (Tag:fae)(Tag:holy)(Tag:summon)Temporarily summon a low-ranking Angel or Holy Spirit from the Heavenly Realm, such as Lesser Light Fairy, Angel Guardians, Archangel Flames (Overlord), 2 Winged Angels, etc., limited to Uncommon familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 
 **Decision**
 
@@ -22078,7 +22128,7 @@
 
 **Description**
 
-> Temporarily summon a lower-ranking Angel or Holy Spirit from the Heavenly Realm, such as Light Fairies, Pixies, Unicorns, Principalities, 4 Winged Angels, etc., limited to Rare familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+> (Tag:fae)(Tag:holy)(Tag:summon)Temporarily summon a lower-ranking Angel or Holy Spirit from the Heavenly Realm, such as Light Fairies, Pixies, Unicorns, Principalities, 4 Winged Angels, etc., limited to Rare familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 
 **Decision**
 
@@ -22095,7 +22145,7 @@
 
 **Description**
 
-> Temporarily summon a middle-ranked Angel or Holy Spirit from the Heavenly Realm, such as Noble Light Spirits, Principalities, Valkyries, 6 Winged Angels, etc., limited to Elite familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+> (Tag:holy)(Tag:summon)Temporarily summon a middle-ranked Angel or Holy Spirit from the Heavenly Realm, such as Noble Light Spirits, Principalities, Valkyries, 6 Winged Angels, etc., limited to Elite familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 
 **Decision**
 
@@ -22112,7 +22162,7 @@
 
 **Description**
 
-> Temporarily summon a very high-ranked Angel or Holy Spirit from the Heavenly Realm, such as Light Spirit Lords, Dominions, 8 Winged Angels, Archangels (Hota), Valkyrie Chiefs, etc., limited to Epic familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+> (Tag:holy)(Tag:summon)Temporarily summon a very high-ranked Angel or Holy Spirit from the Heavenly Realm, such as Light Spirit Lords, Dominions, 8 Winged Angels, Archangels (Hota), Valkyrie Chiefs, etc., limited to Epic familiar power or less. Bound to your will, it needs your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 
 **Decision**
 
@@ -22129,7 +22179,7 @@
 
 **Description**
 
-> Temporarily call forth Heavenly Realm armies, swarms of lower angels or great guardian angels and light spirits, such as Empresses of Light, Thrones, 10 Winged Angels, etc., limited to Legendary familiar power or less. Bound to your will, they need your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
+> (Tag:holy)(Tag:summon)Temporarily call forth Heavenly Realm armies, swarms of lower angels or great guardian angels and light spirits, such as Empresses of Light, Thrones, 10 Winged Angels, etc., limited to Legendary familiar power or less. Bound to your will, they need your constant energy to stay and use magic; slain angels restore in the Heavenly Realm and can be resummoned, and more energy lets them exert more power. You can permanently bind one via a long prayer ceremony sacrificing appropriate valuables and energy.
 
 **Decision**
 
@@ -22146,7 +22196,7 @@
 
 **Description**
 
-> Temporarily call upon a limb or body part of a familiar you own to use as an attack. The familiar itself takes no damage.
+> (Tag:summon)Temporarily call upon a limb or body part of a familiar you own to use as an attack. The familiar itself takes no damage.
 
 **Decision**
 
@@ -22163,7 +22213,7 @@
 
 **Description**
 
-> (Tech) "The End of Machine" enforces "Kill Process" on any technology eclipsing Mundane Earth, forcing ruin upon it: chips torn apart, processors melted, chassis shredded, code mangled, and non-souls sent to oblivion. Potency scales with divergence from Mundane Earth tech and your power difference to the target, but even a normal person could down a spaceship with a glare. Can only affect technology and tech-based targets.
+> (Tag:tech)(Tech) "The End of Machine" enforces "Kill Process" on any technology eclipsing Mundane Earth, forcing ruin upon it: chips torn apart, processors melted, chassis shredded, code mangled, and non-souls sent to oblivion. Potency scales with divergence from Mundane Earth tech and your power difference to the target, but even a normal person could down a spaceship with a glare. Can only affect technology and tech-based targets.
 
 **Flagged in reports**
 
@@ -22184,7 +22234,7 @@
 
 **Description**
 
-> Attune to Elemental Forces and energy: feel air, see heat, hear lightning, taste earth. See all Fire, Water, Air, and Earth in line of sight through everything else, including brain electricity, blood water, and cable electricity. Magically charged elements appear more vibrant.
+> (Tag:air)(Tag:earth)(Tag:fire)(Tag:sense)(Tag:water)Attune to Elemental Forces and energy: feel air, see heat, hear lightning, taste earth. See all Fire, Water, Air, and Earth in line of sight through everything else, including brain electricity, blood water, and cable electricity. Magically charged elements appear more vibrant.
 
 **Decision**
 
@@ -22201,7 +22251,7 @@
 
 **Description**
 
-> Imbue a held weapon or your limbs with necrotic energy. It amplifies attacks, hinders healing, and directly hurts vitality, dealing extra damage to living targets by exhausting vitality. You can also throw it as a projectile from weapon or fist.
+> (Tag:buff)(Tag:martial)(Tag:necro)Imbue a held weapon or your limbs with necrotic energy. It amplifies attacks, hinders healing, and directly hurts vitality, dealing extra damage to living targets by exhausting vitality. You can also throw it as a projectile from weapon or fist.
 
 **Decision**
 
@@ -22218,7 +22268,7 @@
 
 **Description**
 
-> Imbue a held weapon or your limbs with withering necrotic energy. It amplifies attacks; wounds on living beings inflict spreading necrosis and rigor mortis if held long enough, while inanimate targets corrode and decay. You can also throw it as a projectile or temporarily extend the weapon beyond range.
+> (Tag:buff)(Tag:martial)(Tag:necro)Imbue a held weapon or your limbs with withering necrotic energy. It amplifies attacks; wounds on living beings inflict spreading necrosis and rigor mortis if held long enough, while inanimate targets corrode and decay. You can also throw it as a projectile or temporarily extend the weapon beyond range.
 
 **Decision**
 
@@ -22235,7 +22285,7 @@
 
 **Description**
 
-> Suffuse weapons or limbs with potent Necrotic and Darkness energies, amplifying destruction based on energy expended. Living wounds are cursed to hinder healing and spread worsening necrosis and weakness per resistance, while inanimate objects corrode, wither, and degrade. You can also fire projectiles like flying slashes or temporarily extend the weapon.
+> (Tag:buff)(Tag:martial)(Tag:necro)Suffuse weapons or limbs with potent Necrotic and Darkness energies, amplifying destruction based on energy expended. Living wounds are cursed to hinder healing and spread worsening necrosis and weakness per resistance, while inanimate objects corrode, wither, and degrade. You can also fire projectiles like flying slashes or temporarily extend the weapon.
 
 **Decision**
 
@@ -22252,7 +22302,7 @@
 
 **Description**
 
-> Channel the Gravelords' Blade into any weapon or your body, suffusing it with Death and Curses. It greatly amplifies destruction per energy expended; living wounds gain Gravelord's Curse, nearly unhealable, spreading death essence for damage over time and weakness, with a chance to instantly kill weaker targets, costing energy to maintain. Inanimate objects corrode and degrade. You can also fire projectiles, extend the weapon, or manifest a pure-energy weapon for extra cost.
+> (Tag:buff)(Tag:curse)(Tag:martial)(Tag:necro)Channel the Gravelords' Blade into any weapon or your body, suffusing it with Death and Curses. It greatly amplifies destruction per energy expended; living wounds gain Gravelord's Curse, nearly unhealable, spreading death essence for damage over time and weakness, with a chance to instantly kill weaker targets, costing energy to maintain. Inanimate objects corrode and degrade. You can also fire projectiles, extend the weapon, or manifest a pure-energy weapon for extra cost.
 
 **Decision**
 
@@ -22269,7 +22319,7 @@
 
 **Description**
 
-> Suffuse any armament or your body with cursed ruinous energies. They massively amplify destruction and decay whatever they strike, whether magic, physical defences, space, or nebulous targets. Living wounds gain Ruin Curse, unhealable unless lifted, causing continuous weakening and pain that you can always track, with a chance to instantly kill weaker targets, costing energy to maintain. Inanimate targets are corroded to dust unless toughest. You can also fire projectiles, extend the weapon, or manifest a pure-energy weapon for extra cost.
+> (Tag:buff)(Tag:curse)(Tag:martial)(Tag:necro)Suffuse any armament or your body with cursed ruinous energies. They massively amplify destruction and decay whatever they strike, whether magic, physical defences, space, or nebulous targets. Living wounds gain Ruin Curse, unhealable unless lifted, causing continuous weakening and pain that you can always track, with a chance to instantly kill weaker targets, costing energy to maintain. Inanimate targets are corroded to dust unless toughest. You can also fire projectiles, extend the weapon, or manifest a pure-energy weapon for extra cost.
 
 **Decision**
 
@@ -22286,7 +22336,7 @@
 
 **Description**
 
-> Imbue a corpse with Necrotic energy to reanimate it as a lesser undead under your command, such as skeletons, zombies, wights, etc., at most as strong as an Uncommon familiar. Quality and power depend on corpse quality, corpse strength, and your power; stronger undead cost more energy. The number you can control scales with energy reserves.
+> (Tag:necro)(Tag:summon)Imbue a corpse with Necrotic energy to reanimate it as a lesser undead under your command, such as skeletons, zombies, wights, etc., at most as strong as an Uncommon familiar. Quality and power depend on corpse quality, corpse strength, and your power; stronger undead cost more energy. The number you can control scales with energy reserves.
 
 **Decision**
 
@@ -22303,7 +22353,7 @@
 
 **Description**
 
-> Animate corpses into undead such as Death Knights, Death Warriors, Undead Mages, Lesser Vampires, Wraiths, Bone Wyverns, or an undead version of the corpse, limited to Rare Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 100 at once.
+> (Tag:necro)(Tag:summon)Animate corpses into undead such as Death Knights, Death Warriors, Undead Mages, Lesser Vampires, Wraiths, Bone Wyverns, or an undead version of the corpse, limited to Rare Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 100 at once.
 
 **Decision**
 
@@ -22320,7 +22370,7 @@
 
 **Description**
 
-> Animate corpses into undead such as Dread Knights, Liches, Vampires, Wraiths, Soul Eaters, Bone Dragons, or an undead version of the corpse, limited to Elite Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 500 at once.
+> (Tag:necro)(Tag:summon)Animate corpses into undead such as Dread Knights, Liches, Vampires, Wraiths, Soul Eaters, Bone Dragons, or an undead version of the corpse, limited to Elite Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 500 at once.
 
 **Decision**
 
@@ -22337,7 +22387,7 @@
 
 **Description**
 
-> Enact true necromancy sanctioned by Death itself to raise corpses into undead such as Gravelords, Night Liches, Vampire Lords, Nightmare Kings, Undead Dragons, Corpse Titans, or an undead version of the corpse, limited to Epic Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 2500 at once.
+> (Tag:necro)(Tag:summon)Enact true necromancy sanctioned by Death itself to raise corpses into undead such as Gravelords, Night Liches, Vampire Lords, Nightmare Kings, Undead Dragons, Corpse Titans, or an undead version of the corpse, limited to Epic Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 2500 at once.
 
 **Decision**
 
@@ -22354,7 +22404,7 @@
 
 **Description**
 
-> Perform Exalted Necromancy beyond merely raising the Dead, raising corpses into undead such as Necro Kaisers, Overlords, Vampire Kings, Undead Dragon Lords, Reapers, etc., or an undead version of the corpse, limited to Legendary Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 10000 at once.
+> (Tag:necro)(Tag:summon)Perform Exalted Necromancy beyond merely raising the Dead, raising corpses into undead such as Necro Kaisers, Overlords, Vampire Kings, Undead Dragon Lords, Reapers, etc., or an undead version of the corpse, limited to Legendary Familiar power or less. Tier depends on corpse quality and your power; stronger undead cost more energy. The number you command scales with energy, minimum 10000 at once.
 
 **Decision**
 
@@ -22371,7 +22421,7 @@
 
 **Description**
 
-> Wield divinity to use the dead as army and servants; you can turn even an average man's corpse into an Undead Dragon or Gravelord. You can animate any corpse into a True Undead keeping all abilities and memories from life and further empowered by your divinity, as long as it is dead. Power and number scale with your power, with up to 100000 controllable even as a base human.
+> (Tag:necro)(Tag:summon)Wield divinity to use the dead as army and servants; you can turn even an average man's corpse into an Undead Dragon or Gravelord. You can animate any corpse into a True Undead keeping all abilities and memories from life and further empowered by your divinity, as long as it is dead. Power and number scale with your power, with up to 100000 controllable even as a base human.
 
 **Decision**
 
@@ -22388,7 +22438,7 @@
 
 **Description**
 
-> Wield the Authority of Death, the End. Merely point to claim lives; claiming lives and resurrecting the dead is easier than breathing. You can even kill unkillable targets by granting the concept of death. Stronger targets cost more energy.
+> (Tag:life)(Tag:necro)(Tag:summon)Wield the Authority of Death, the End. Merely point to claim lives; claiming lives and resurrecting the dead is easier than breathing. You can even kill unkillable targets by granting the concept of death. Stronger targets cost more energy.
 
 **Decision**
 
@@ -22405,7 +22455,7 @@
 
 **Description**
 
-> As a god of earth, wave a hand to move continents, snap fingers to call life-wiping meteors, raise an arm to raise mountains, or glare to send civilization-devastating sandstorms. As long as it is Earth and you have enough energy, you can do it.
+> (Tag:earth)As a god of earth, wave a hand to move continents, snap fingers to call life-wiping meteors, raise an arm to raise mountains, or glare to send civilization-devastating sandstorms. As long as it is Earth and you have enough energy, you can do it.
 
 **Decision**
 
@@ -22422,7 +22472,7 @@
 
 **Description**
 
-> Possess divinity over the Sky. Bring down kilometer-wide lightning pillars, alter atmospheric composition at will, create city-flinging tornadoes, create a planet's atmosphere, and make adamantite-tough clouds to float on. As long as it is the sky and you have enough energy, you can do it.
+> (Tag:air)(Tag:electric)Possess divinity over the Sky. Bring down kilometer-wide lightning pillars, alter atmospheric composition at will, create city-flinging tornadoes, create a planet's atmosphere, and make adamantite-tough clouds to float on. As long as it is the sky and you have enough energy, you can do it.
 
 **Decision**
 
@@ -22439,7 +22489,7 @@
 
 **Description**
 
-> (Tech) Design, build, modify, and construct technology for creating and maintaining Arcologies, self-sufficient megastructures housing people as self-contained cities. Includes construction drones, self-recycling soil, maintenance robots, surveillance, farming, recyclers, and all else needed for function. Such technology only works when creating or inside an Arcology.
+> (Tag:nature)(Tag:tech)(Tag:tinker)(Tech) Design, build, modify, and construct technology for creating and maintaining Arcologies, self-sufficient megastructures housing people as self-contained cities. Includes construction drones, self-recycling soil, maintenance robots, surveillance, farming, recyclers, and all else needed for function. Such technology only works when creating or inside an Arcology.
 
 **Decision**
 
@@ -22456,7 +22506,7 @@
 
 **Description**
 
-> Summon a lesser nature spirit, requiring sufficient fertile ground nearby, such as Junimo, Lesser Dryads, maneater plants, Ents, etc. Limited to Uncommon familiar power or less; strength depends on your power. It draws on your energy to stay manifested and use abilities, unsummoning if unfueled, but with proper skills, time, and energy you can make it permanent.
+> (Tag:nature)(Tag:spirit)(Tag:summon)Summon a lesser nature spirit, requiring sufficient fertile ground nearby, such as Junimo, Lesser Dryads, maneater plants, Ents, etc. Limited to Uncommon familiar power or less; strength depends on your power. It draws on your energy to stay manifested and use abilities, unsummoning if unfueled, but with proper skills, time, and energy you can make it permanent.
 
 **Decision**
 
@@ -22473,7 +22523,7 @@
 
 **Description**
 
-> Summon a nature spirit, requiring sufficient fertile ground nearby, such as nature Spirits, Dryads, Giant Animated Plants, Treants, Dendroid Soldiers, etc. Limited to Rare familiar power or less; strength depends on your power. It draws on your energy to stay manifested and use abilities, unsummoning if unfueled, but with proper skills, time, and energy you can make it permanent.
+> (Tag:nature)(Tag:spirit)(Tag:summon)Summon a nature spirit, requiring sufficient fertile ground nearby, such as nature Spirits, Dryads, Giant Animated Plants, Treants, Dendroid Soldiers, etc. Limited to Rare familiar power or less; strength depends on your power. It draws on your energy to stay manifested and use abilities, unsummoning if unfueled, but with proper skills, time, and energy you can make it permanent.
 
 **Decision**
 
@@ -22490,7 +22540,7 @@
 
 **Description**
 
-> Summon a greater nature spirit, requiring sufficient fertile ground nearby, such as Noble Dryads, Haunted Trees, Treant Lords, Dendroid Warriors, etc. Limited to Elite familiar power or less; strength depends on your power. It draws on your energy to stay manifested and use abilities, unsummoning if unfueled, but with proper skills, time, and energy you can make it permanent.
+> (Tag:nature)(Tag:spirit)(Tag:summon)Summon a greater nature spirit, requiring sufficient fertile ground nearby, such as Noble Dryads, Haunted Trees, Treant Lords, Dendroid Warriors, etc. Limited to Elite familiar power or less; strength depends on your power. It draws on your energy to stay manifested and use abilities, unsummoning if unfueled, but with proper skills, time, and energy you can make it permanent.
 
 **Decision**
 
@@ -22507,7 +22557,7 @@
 
 **Description**
 
-> Access a Mirror Dimension at will by turning any sufficiently reflective surface into a portal. Inside there are no living beings, only an empty reflection of the real world, and native objects cannot be removed, hold no energy, and provide no sustenance. You can throw objects and people inside, and entry and exit is only via your mirror portals.
+> (Tag:movement)(Tag:space)Access a Mirror Dimension at will by turning any sufficiently reflective surface into a portal. Inside there are no living beings, only an empty reflection of the real world, and native objects cannot be removed, hold no energy, and provide no sustenance. You can throw objects and people inside, and entry and exit is only via your mirror portals.
 
 **Decision**
 
@@ -22524,7 +22574,7 @@
 
 **Description**
 
-> Wield Foxfire, the Kitsune signature. Though weaker than same-tier flames, it lasts long and can change shape and texture to create disguises, illusions, and deceptions.
+> (Tag:fire)(Tag:illusion)Wield Foxfire, the Kitsune signature. Though weaker than same-tier flames, it lasts long and can change shape and texture to create disguises, illusions, and deceptions.
 
 **Decision**
 
@@ -22541,7 +22591,7 @@
 
 **Description**
 
-> Wield Nine-Tailed pale blue flames. Though less potent than same-tier flames, they cost less energy to create and maintain. You can freely shape them in form, texture, color, and sound, even convincingly mimicking a person.
+> (Tag:fire)(Tag:illusion)Wield Nine-Tailed pale blue flames. Though less potent than same-tier flames, they cost less energy to create and maintain. You can freely shape them in form, texture, color, and sound, even convincingly mimicking a person.
 
 **Decision**
 
@@ -22558,7 +22608,7 @@
 
 **Description**
 
-> Conjure a ball of pure sunlight that hovers and moves at will. It perfectly mimics the regular sun and costs little energy to maintain. You can preload spheres with energy to make semi-permanent sunlight they slowly deplete.
+> (Tag:light)(Tag:nature)Conjure a ball of pure sunlight that hovers and moves at will. It perfectly mimics the regular sun and costs little energy to maintain. You can preload spheres with energy to make semi-permanent sunlight they slowly deplete.
 
 **Decision**
 
@@ -22575,7 +22625,7 @@
 
 **Description**
 
-> Sprout supernaturally durable energy-imbued culms anywhere in vision, optionally sharpened. Use them for walls, spikes, or impalement. Created bamboo is permanent but loses supernatural durability over time, returning to normal.
+> (Tag:nature)Sprout supernaturally durable energy-imbued culms anywhere in vision, optionally sharpened. Use them for walls, spikes, or impalement. Created bamboo is permanent but loses supernatural durability over time, returning to normal.
 
 **Decision**
 
@@ -22592,7 +22642,7 @@
 
 **Description**
 
-> Create supernaturally strong vines from your body under your control. Durability, strength, and size scale with energy; wield them like extra limbs as whips, grapples, or binds, and sprout thorns for extra energy. They vanish once unfueled.
+> (Tag:nature)Create supernaturally strong vines from your body under your control. Durability, strength, and size scale with energy; wield them like extra limbs as whips, grapples, or binds, and sprout thorns for extra energy. They vanish once unfueled.
 
 **Decision**
 
@@ -22609,7 +22659,7 @@
 
 **Description**
 
-> Conjure a long leaf blade with supernatural durability and great sharpness, though still not very durable. You can also conjure smaller leaves as throwing projectiles. Created leaves are permanent but lose supernatural properties over time.
+> (Tag:martial)(Tag:nature)Conjure a long leaf blade with supernatural durability and great sharpness, though still not very durable. You can also conjure smaller leaves as throwing projectiles. Created leaves are permanent but lose supernatural properties over time.
 
 **Decision**
 
@@ -22626,7 +22676,7 @@
 
 **Description**
 
-> Conjure and telekinetically control supernaturally durable, sharp leaves. Launch sweeping knife-storms, pin targets, conjure larger weapon-leaves, or make razor whirlwinds. More energy yields sharper, tougher leaves in greater numbers.
+> (Tag:nature)Conjure and telekinetically control supernaturally durable, sharp leaves. Launch sweeping knife-storms, pin targets, conjure larger weapon-leaves, or make razor whirlwinds. More energy yields sharper, tougher leaves in greater numbers.
 
 **Decision**
 
@@ -22643,7 +22693,7 @@
 
 **Description**
 
-> Conjure pale-green spore clouds that paralyze and immobilize when breathed in. Stronger opponents are less affected, ranging from day-long knockout to mild limb stiffness. Uningested clouds dissipate in 5 minutes.
+> (Tag:nature)(Tag:poison)Conjure pale-green spore clouds that paralyze and immobilize when breathed in. Stronger opponents are less affected, ranging from day-long knockout to mild limb stiffness. Uningested clouds dissipate in 5 minutes.
 
 **Decision**
 
@@ -22660,7 +22710,7 @@
 
 **Description**
 
-> (Tech) Overclock technology with your own energy to push it beyond limits. It performs better but burns durability faster and risks damage. More energy means greater boost and greater potential damage.
+> (Tag:enhancer)(Tag:tech)(Tech) Overclock technology with your own energy to push it beyond limits. It performs better but burns durability faster and risks damage. More energy means greater boost and greater potential damage.
 
 **Decision**
 
@@ -22677,7 +22727,7 @@
 
 **Description**
 
-> (Tech) Give technology you create or modify heavy redundancies, making it frustratingly hard to disable. You can make a fragile phone work flawlessly with shattered screen, exposed wires, water immersion, and half-melted chassis.
+> (Tag:tech)(Tag:tinker)(Tech) Give technology you create or modify heavy redundancies, making it frustratingly hard to disable. You can make a fragile phone work flawlessly with shattered screen, exposed wires, water immersion, and half-melted chassis.
 
 **Decision**
 
@@ -22694,7 +22744,7 @@
 
 **Description**
 
-> Temporarily vanish utterly from reality, erasing your existence so nothing can track, hit, affect, or predict you. While vanished you rest bodiless in white nothingness, able only to think until you end it and reappear in place. It consumes energy and ends automatically when depleted.
+> (Tag:stealth)Temporarily vanish utterly from reality, erasing your existence so nothing can track, hit, affect, or predict you. While vanished you rest bodiless in white nothingness, able only to think until you end it and reappear in place. It consumes energy and ends automatically when depleted.
 
 **Flagged in reports**
 
@@ -22715,7 +22765,7 @@
 
 **Description**
 
-> Switch your vision to perfectly accurate thermal vision, seeing heat signatures without impairing regular vision.
+> (Tag:fire)(Tag:ice)(Tag:ocular)(Tag:sense)Switch your vision to perfectly accurate thermal vision, seeing heat signatures without impairing regular vision.
 
 **Decision**
 
@@ -22732,7 +22782,7 @@
 
 **Description**
 
-> Switch between Thermal, Infrared, and Night vision at will without impairing regular vision.
+> (Tag:ocular)(Tag:sense)Switch between Thermal, Infrared, and Night vision at will without impairing regular vision.
 
 **Decision**
 
@@ -22749,7 +22799,7 @@
 
 **Description**
 
-> Encase targets in bubbles about as durable as 1cm of glass, scaling with power, that slowly float or hover midair and pop when damaged. You can encase yourself and slowly steer the float.
+> (Tag:neutral)Encase targets in bubbles about as durable as 1cm of glass, scaling with power, that slowly float or hover midair and pop when damaged. You can encase yourself and slowly steer the float.
 
 **Decision**
 
@@ -22783,7 +22833,7 @@
 
 **Description**
 
-> Slightly augment fists with energy, letting an average man shatter bricks. More energy means greater augmentation, but it is inefficient.
+> (Tag:enhancer)Slightly augment fists with energy, letting an average man shatter bricks. More energy means greater augmentation, but it is inefficient.
 
 **Decision**
 
@@ -22800,7 +22850,7 @@
 
 **Description**
 
-> Cover body parts in a light-like aura reducing pressure on surfaces to almost nothing, letting you walk on cobwebs or water. It does not reduce damage taken; falls still hurt you but not where you land.
+> (Tag:movement)Cover body parts in a light-like aura reducing pressure on surfaces to almost nothing, letting you walk on cobwebs or water. It does not reduce damage taken; falls still hurt you but not where you land.
 
 **Decision**
 
@@ -22817,7 +22867,7 @@
 
 **Description**
 
-> Place glowing red runes on stable surfaces acting as cameras you can view mentally anytime. The count depends on maximum energy, minimum 5.
+> (Tag:divination)(Tag:sense)Place glowing red runes on stable surfaces acting as cameras you can view mentally anytime. The count depends on maximum energy, minimum 5.
 
 **Decision**
 
@@ -22834,7 +22884,7 @@
 
 **Description**
 
-> Conjure stationary 2D planes showing images or video you accurately remember or imagine. They are as durable as 1cm of untempered glass.
+> (Tag:illusion)Conjure stationary 2D planes showing images or video you accurately remember or imagine. They are as durable as 1cm of untempered glass.
 
 **Decision**
 
@@ -22851,7 +22901,7 @@
 
 **Description**
 
-> Make others believe the truth of your words, but while active you cannot speak or communicate with intent to deceive. A glowing white choker appears around your neck while active.
+> (Tag:command)Make others believe the truth of your words, but while active you cannot speak or communicate with intent to deceive. A glowing white choker appears around your neck while active.
 
 **Decision**
 
@@ -22868,7 +22918,7 @@
 
 **Description**
 
-> Sweat on command, either stopping sweating or sweating at supernatural levels to cool down.
+> (Tag:bio)(Tag:water)Sweat on command, either stopping sweating or sweating at supernatural levels to cool down.
 
 **Decision**
 
@@ -22885,7 +22935,7 @@
 
 **Description**
 
-> Wield the Black Trial hunting sinned blackened souls. See souls by color: whiter is purer, blacker is more sinful. After observing a Black Soul you can mark it, track it anywhere, and teleport to it anytime.
+> (Tag:divination)(Tag:movement)(Tag:sense)Wield the Black Trial hunting sinned blackened souls. See souls by color: whiter is purer, blacker is more sinful. After observing a Black Soul you can mark it, track it anywhere, and teleport to it anytime.
 
 **Decision**
 
@@ -22902,7 +22952,7 @@
 
 **Description**
 
-> Wield Smoke Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Smoke, and absorb smoke to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques.
+> (Tag:air)(Tag:enhancer)(Tag:fire)(Tag:recovery)(Tag:transformation)Wield Smoke Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Smoke, and absorb smoke to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques.
 
 **Decision**
 
@@ -22919,7 +22969,7 @@
 
 **Description**
 
-> (Tech) Wield Neon Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Neon, greatly augmenting speed, and absorb Neon Light to augment regeneration. Conduit abilities use absorbed element, not your energy. Note: You do not move at or near light speed. You start with basics and must train for complex techniques.
+> (Tag:light)(Tag:movement)(Tag:recovery)(Tag:transformation)(Tech) Wield Neon Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Neon, greatly augmenting speed, and absorb Neon Light to augment regeneration. Conduit abilities use absorbed element, not your energy. Note: You do not move at or near light speed. You start with basics and must train for complex techniques.
 
 **Decision**
 
@@ -22936,7 +22986,7 @@
 
 **Description**
 
-> Wield Oil/Napalm Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Napalm/Oil to fire blasts, douse foes, or restrain them, and absorb it to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. (Lowered rating due to scarcity of element).
+> (Tag:enhancer)(Tag:fire)(Tag:recovery)(Tag:transformation)Wield Oil/Napalm Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Napalm/Oil to fire blasts, douse foes, or restrain them, and absorb it to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. (Lowered rating due to scarcity of element).
 
 **Decision**
 
@@ -22953,7 +23003,7 @@
 
 **Description**
 
-> Wield Ice Conduit powers with a mild physical boost. Absorb, generate, manipulate, and emit Ice, briefly become Icy Vapor, and use cryokinesis for vapor blasts, icicles, erupting ice constructs, and more, absorbing Ice to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques.
+> (Tag:enhancer)(Tag:ice)(Tag:recovery)(Tag:transformation)Wield Ice Conduit powers with a mild physical boost. Absorb, generate, manipulate, and emit Ice, briefly become Icy Vapor, and use cryokinesis for vapor blasts, icicles, erupting ice constructs, and more, absorbing Ice to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques.
 
 **Decision**
 
@@ -22970,7 +23020,7 @@
 
 **Description**
 
-> Wield Concrete Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and encase yourself in concrete armor boosting physicals or fire concrete spikes, absorbing Concrete to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. (In the absence of concrete, Sedimentary rocks can be used as a substitute).
+> (Tag:earth)(Tag:enhancer)(Tag:recovery)(Tag:transformation)Wield Concrete Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and encase yourself in concrete armor boosting physicals or fire concrete spikes, absorbing Concrete to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. (In the absence of concrete, Sedimentary rocks can be used as a substitute).
 
 **Decision**
 
@@ -22987,7 +23037,7 @@
 
 **Description**
 
-> Wield Lightning Conduit powers with a mild physical boost. Absorb and manipulate Electricity and Magnetism to launch lightning bolts, EMPs, polarity fields, electromagnetic walls, etc., absorbing electricity to augment regeneration and with intensive training overdrive others' regeneration via bioelectricity. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. Note: No, you cannot time-travel or travel at lightning speed.
+> (Tag:electric)(Tag:enhancer)(Tag:recovery)(Tag:transformation)Wield Lightning Conduit powers with a mild physical boost. Absorb and manipulate Electricity and Magnetism to launch lightning bolts, EMPs, polarity fields, electromagnetic walls, etc., absorbing electricity to augment regeneration and with intensive training overdrive others' regeneration via bioelectricity. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. Note: No, you cannot time-travel or travel at lightning speed.
 
 **Decision**
 
@@ -23004,7 +23054,7 @@
 
 **Description**
 
-> (Tech) Wield Video Conduit powers with a mild physical boost. Absorb artificial light from video displays to fuel Hard Light Constructs like weapons, armor, and temporary minions, angels, and demons, and with practice bend light for invisibility, absorbing Video to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. Note: You can't pull people into Video worlds.
+> (Tag:enhancer)(Tag:light)(Tag:recovery)(Tag:summon)(Tag:transformation)(Tech) Wield Video Conduit powers with a mild physical boost. Absorb artificial light from video displays to fuel Hard Light Constructs like weapons, armor, and temporary minions, angels, and demons, and with practice bend light for invisibility, absorbing Video to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. Note: You can't pull people into Video worlds.
 
 **Decision**
 
@@ -23021,7 +23071,7 @@
 
 **Description**
 
-> Fill your body with adrenaline, norepinephrine, cortisol, endorphins, testosterone, and dopamine to enter an enhanced fight mode. Get your head in the game without suffering overdose consequences.
+> (Tag:bio)(Tag:martial)Fill your body with adrenaline, norepinephrine, cortisol, endorphins, testosterone, and dopamine to enter an enhanced fight mode. Get your head in the game without suffering overdose consequences.
 
 **Decision**
 
@@ -23038,7 +23088,7 @@
 
 **Description**
 
-> (Nsfw) Induce lactation on targets in your line of sight, provided they are biologically capable.
+> (Tag:bio)(Tag:nsfw)(Nsfw)(Noncon) Induce lactation on targets in your line of sight, provided they are biologically capable.
 
 **Decision**
 
@@ -23055,7 +23105,7 @@
 
 **Description**
 
-> Place a mark where you stand; while active you can teleport back to it. Greater distance costs more energy. Only one mark at a time.
+> (Tag:movement)Place a mark where you stand; while active you can teleport back to it. Greater distance costs more energy. Only one mark at a time.
 
 **Decision**
 
@@ -23072,7 +23122,7 @@
 
 **Description**
 
-> Manifest a yellow ground line leading to an adventure if followed. By adventure, an interesting reachable event, good or dangerous, like an undiscovered eatery or a lethal murderer on spree. Whatever you meet is guaranteed interesting.
+> (Tag:divination)Manifest a yellow ground line leading to an adventure if followed. By adventure, an interesting reachable event, good or dangerous, like an undiscovered eatery or a lethal murderer on spree. Whatever you meet is guaranteed interesting.
 
 **Decision**
 
@@ -23089,7 +23139,7 @@
 
 **Description**
 
-> Control your body's hormones, secreting more, lowering levels, or shifting concentrations for effects like forced concentration or depression. Exercise caution to avoid harming your body or biochemistry.
+> (Tag:bio)Control your body's hormones, secreting more, lowering levels, or shifting concentrations for effects like forced concentration or depression. Exercise caution to avoid harming your body or biochemistry.
 
 **Decision**
 
@@ -23106,7 +23156,7 @@
 
 **Description**
 
-> Wield Tanuki Yokai leaves, conjuring leaves that shapeshift into any desired object with altered size and texture. Durability and longevity scale with supplied energy, reverting when depleted. You can also leaf-disguise people while you keep supplying energy.
+> (Tag:illusion)(Tag:transformation)Wield Tanuki Yokai leaves, conjuring leaves that shapeshift into any desired object with altered size and texture. Durability and longevity scale with supplied energy, reverting when depleted. You can also leaf-disguise people while you keep supplying energy.
 
 **Decision**
 
@@ -23123,7 +23173,7 @@
 
 **Description**
 
-> Reinforce and elongate your tongue from several to dozens of meters. Use it as a whip, extra limb, or the other obvious uses.
+> (Tag:bio)Reinforce and elongate your tongue from several to dozens of meters. Use it as a whip, extra limb, or the other obvious uses.
 
 **Decision**
 
@@ -23140,7 +23190,7 @@
 
 **Description**
 
-> Enhance food you cook to be more nutritious, amplifying existing ingredient properties. Taste improves proportionally to cooking quality.
+> (Tag:alter)Enhance food you cook to be more nutritious, amplifying existing ingredient properties. Taste improves proportionally to cooking quality.
 
 **Decision**
 
@@ -23157,7 +23207,7 @@
 
 **Description**
 
-> Mental Out controls human and human-adjacent minds with incredible precision, controlling, altering personalities, or subtly manipulating them, but marks the target's eye. It works via hyper-specialized ultra-micro hydrokinesis, requiring extensive study to adapt to non-human biology. Effectiveness scales with power difference.
+> (Tag:bio)(Tag:command)(Tag:water)Mental Out controls human and human-adjacent minds with incredible precision, controlling, altering personalities, or subtly manipulating them, but marks the target's eye. It works via hyper-specialized ultra-micro hydrokinesis, requiring extensive study to adapt to non-human biology. Effectiveness scales with power difference.
 
 **Decision**
 
@@ -23174,7 +23224,7 @@
 
 **Description**
 
-> Expend energy to recreate any food you cooked with your own hands as an exact permanent replica. Cost depends on complexity, ingredient expense, and volume. Cannot create food with supernatural effects.
+> (Tag:alter)Expend energy to recreate any food you cooked with your own hands as an exact permanent replica. Cost depends on complexity, ingredient expense, and volume. Cannot create food with supernatural effects.
 
 **Decision**
 
@@ -23191,7 +23241,7 @@
 
 **Description**
 
-> Weave energy into a multi-rotating sphere inflicting incredible damage on hit. It needs time and concentration to build properly. With training you can enlarge it, throw it, or combine it with elemental abilities for variants.
+> (Tag:neutral)Weave energy into a multi-rotating sphere inflicting incredible damage on hit. It needs time and concentration to build properly. With training you can enlarge it, throw it, or combine it with elemental abilities for variants.
 
 **Decision**
 
@@ -23208,7 +23258,7 @@
 
 **Description**
 
-> Concentrate to accelerate brain processing to think faster in less time. With practice and combat skill it can be used in combat. Overuse has negative consequences.
+> (Tag:mental)Concentrate to accelerate brain processing to think faster in less time. With practice and combat skill it can be used in combat. Overuse has negative consequences.
 
 **Decision**
 
@@ -23225,7 +23275,7 @@
 
 **Description**
 
-> (Nsfw) Erect an aura around yourself and your partner making actions inside not perceived as sexual or indecent. You could have sex in public and no one would bat an eye.
+> (Tag:nsfw)(Tag:stealth)(Nsfw) Erect an aura around yourself and your partner making actions inside not perceived as sexual or indecent. You could have sex in public and no one would bat an eye.
 
 **Decision**
 
@@ -23242,7 +23292,7 @@
 
 **Description**
 
-> Turn into or hybridize the Caladrious, white bird of healing. You gain slightly enhanced physicals, can see sickness, and absorb ailments by touching diseased or cursed targets. You gain great curse and illness resistance, purging them by bathing in sunlight at a rate scaling with reserves. Unholy and dark abilities are blocked, while holy and recovery are enhanced.
+> (Tag:avian)(Tag:enhancer)(Tag:movement)(Tag:recovery)(Tag:transformation)Turn into or hybridize the Caladrious, white bird of healing. You gain slightly enhanced physicals, can see sickness, and absorb ailments by touching diseased or cursed targets. You gain great curse and illness resistance, purging them by bathing in sunlight at a rate scaling with reserves. Unholy and dark abilities are blocked, while holy and recovery are enhanced.
 
 **Decision**
 
@@ -23259,7 +23309,7 @@
 
 **Description**
 
-> Imbibe poison to boost performance, greatly increasing physicals, awareness, alertness, and pain resistance. It damages your body with poison.
+> (Tag:enhancer)(Tag:poison)Imbibe poison to boost performance, greatly increasing physicals, awareness, alertness, and pain resistance. It damages your body with poison.
 
 **Decision**
 
@@ -23276,7 +23326,7 @@
 
 **Description**
 
-> When activated, create red lines connecting to everyone who can visually sense you, highlighting them through lines.
+> (Tag:divination)When activated, create red lines connecting to everyone who can visually sense you, highlighting them through lines.
 
 **Decision**
 
@@ -23293,7 +23343,7 @@
 
 **Description**
 
-> Draw energy from life and soul to shape a simple curving arrow projectile. Its power scales with soul might plus energy levels.
+> (Tag:spirit)Draw energy from life and soul to shape a simple curving arrow projectile. Its power scales with soul might plus energy levels.
 
 **Decision**
 
@@ -23310,7 +23360,7 @@
 
 **Description**
 
-> Shape life and soul energy into a refined, potent Soul Arrow that curves mid-flight toward targets. Its power scales with soul might plus energy levels.
+> (Tag:spirit)Shape life and soul energy into a refined, potent Soul Arrow that curves mid-flight toward targets. Its power scales with soul might plus energy levels.
 
 **Decision**
 
@@ -23327,7 +23377,7 @@
 
 **Description**
 
-> Condense refined soul energy into a powerful piercing spear that curves mid-air to home in and pierce defenses. Its power scales with soul might plus energy levels.
+> (Tag:spirit)Condense refined soul energy into a powerful piercing spear that curves mid-air to home in and pierce defenses. Its power scales with soul might plus energy levels.
 
 **Decision**
 
@@ -23344,7 +23394,7 @@
 
 **Description**
 
-> Condense refined soul energy further empowered by crystallization into a crystalline spear that curves mid-air with incredible piercing power. Its power scales with soul might plus energy levels.
+> (Tag:spirit)Condense refined soul energy further empowered by crystallization into a crystalline spear that curves mid-air with incredible piercing power. Its power scales with soul might plus energy levels.
 
 **Decision**
 
@@ -23361,7 +23411,7 @@
 
 **Description**
 
-> Bulk up to reinforce all muscles to superhuman strength, letting even a base human tear apart and throw cars. Overuse causes extreme soreness and muscle tears.
+> (Tag:bio)(Tag:enhancer)Bulk up to reinforce all muscles to superhuman strength, letting even a base human tear apart and throw cars. Overuse causes extreme soreness and muscle tears.
 
 **Decision**
 
@@ -23378,7 +23428,7 @@
 
 **Description**
 
-> Create objects and matter with magical energy if you remember exactly how to make them, from phones to gold bars to magical swords. Higher mass and more magical objects cost more energy.
+> (Tag:neutral)Create objects and matter with magical energy if you remember exactly how to make them, from phones to gold bars to magical swords. Higher mass and more magical objects cost more energy.
 
 **Decision**
 
@@ -23395,7 +23445,7 @@
 
 **Description**
 
-> You hold an inner gate converting energy into elemental mana for varied elemental magic depending on aptitude.
+> (Tag:space)You hold an inner gate converting energy into elemental mana for varied elemental magic depending on aptitude.
 
 **Decision**
 
@@ -23412,7 +23462,7 @@
 
 **Description**
 
-> Mark a target by touch with a Highlight, giving them a colored outline you can see within eyesight range. Visible even if vision-impaired or blocked by obstacles.
+> (Tag:divination)Mark a target by touch with a Highlight, giving them a colored outline you can see within eyesight range. Visible even if vision-impaired or blocked by obstacles.
 
 **Decision**
 
@@ -23446,7 +23496,7 @@
 
 **Description**
 
-> Reallocate your physical stats as percentage shares, defaulting to 500.0% split 100.0% each among Vitality, Strength, Toughness, Agility, and stamina. While active, freely redistribute as long as you keep enough to survive, e.g. 10.0% Agility and 190.0% Toughness.
+> (Tag:enhancer)(Tag:meta)Reallocate your physical stats as percentage shares, defaulting to 500.0% split 100.0% each among Vitality, Strength, Toughness, Agility, and stamina. While active, freely redistribute as long as you keep enough to survive, e.g. 10.0% Agility and 190.0% Toughness.
 
 **Decision**
 
@@ -23480,7 +23530,7 @@
 
 **Description**
 
-> Harness your own AT Field, an invisible soul barrier centered on you visible only on sufficient impact. Reshape it with mastery; power scales with energy reserves and soul strength.
+> (Tag:spirit)Harness your own AT Field, an invisible soul barrier centered on you visible only on sufficient impact. Reshape it with mastery; power scales with energy reserves and soul strength.
 
 **Decision**
 
@@ -23497,7 +23547,7 @@
 
 **Description**
 
-> "Come at me!" Designate targets in line of sight to feel an immense, hard-to-resist urge to maim or kill you. Targets must be in your sensory range and vice versa.
+> (Tag:command)"Come at me!" Designate targets in line of sight to feel an immense, hard-to-resist urge to maim or kill you. Targets must be in your sensory range and vice versa.
 
 **Decision**
 
@@ -23514,7 +23564,7 @@
 
 **Description**
 
-> Automatically gain a Sky Dying Will Flame matching your temperament.
+> (Tag:fire)(Tag:meta)Automatically gain a Sky Dying Will Flame matching your temperament.
 
 **Decision**
 
@@ -23531,7 +23581,7 @@
 
 **Description**
 
-> Dying Will Flames of Harmonization that also let you temporarily fuse with another ability to create a greater flame-based ability.
+> (Tag:enhancer)(Tag:fire)(Tag:meta)Dying Will Flames of Harmonization that also let you temporarily fuse with another ability to create a greater flame-based ability.
 
 **Decision**
 
@@ -23548,7 +23598,7 @@
 
 **Description**
 
-> Dying Will Flames of Disintegration that tear apart targets violently instead of burning.
+> (Tag:fire)Dying Will Flames of Disintegration that tear apart targets violently instead of burning.
 
 **Decision**
 
@@ -23565,7 +23615,7 @@
 
 **Description**
 
-> Dying Will Flames of Tranquility; these water-like flames weaken whatever they touch, reducing effect intensity.
+> (Tag:debuff)(Tag:fire)(Tag:water)Dying Will Flames of Tranquility; these water-like flames weaken whatever they touch, reducing effect intensity.
 
 **Decision**
 
@@ -23582,7 +23632,7 @@
 
 **Description**
 
-> Dying Will Flames of Activation; these light-like flames boost whatever they affect — healing, ability output, or physical performance. Use can tax the affected target.
+> (Tag:buff)(Tag:fire)(Tag:light)Dying Will Flames of Activation; these light-like flames boost whatever they affect, healing, ability output, or physical performance. Use can tax the affected target.
 
 **Decision**
 
@@ -23599,7 +23649,7 @@
 
 **Description**
 
-> Dying Will Flames of Hardening that solidify and harden objects, e.g. turning air into walls, forming lightning barriers, or wielding lightning as sharp blades.
+> (Tag:electric)(Tag:fire)Dying Will Flames of Hardening that solidify and harden objects, e.g. turning air into walls, forming lightning barriers, or wielding lightning as sharp blades.
 
 **Decision**
 
@@ -23616,7 +23666,7 @@
 
 **Description**
 
-> Dying Will Flames of Construction that alter looks, texture, smell, etc. to fool the five senses and can condense enough to pass as real objects, but with comparatively weak firepower.
+> (Tag:fire)(Tag:illusion)(Tag:stealth)Dying Will Flames of Construction that alter looks, texture, smell, etc. to fool the five senses and can condense enough to pass as real objects, but with comparatively weak firepower.
 
 **Decision**
 
@@ -23633,7 +23683,7 @@
 
 **Description**
 
-> Dying Will Flames of Propagation that increase, replicate, and duplicate targets, e.g. copying a sword, boosting muscle mass, or making mirror images; stronger effects cost more energy. Excellent for large-scale effects despite weak firepower.
+> (Tag:buff)(Tag:fire)(Tag:summon)Dying Will Flames of Propagation that increase, replicate, and duplicate targets, e.g. copying a sword, boosting muscle mass, or making mirror images; stronger effects cost more energy. Excellent for large-scale effects despite weak firepower.
 
 **Decision**
 
@@ -23650,7 +23700,7 @@
 
 **Description**
 
-> Make, not break. Create energy drills you telekinetically control as projectiles or wielded weapons. Strength and rotation scale with energy expended.
+> (Tag:neutral)Make, not break. Create energy drills you telekinetically control as projectiles or wielded weapons. Strength and rotation scale with energy expended.
 
 **Decision**
 
@@ -23667,7 +23717,7 @@
 
 **Description**
 
-> "Future for the Present." Freely recover energy, but when you stop siphoning you suffer damage proportional to energy gained, from mild cuts to nigh-unhealable wounds to death.
+> (Tag:life)(Tag:recovery)"Future for the Present." Freely recover energy, but when you stop siphoning you suffer damage proportional to energy gained, from mild cuts to nigh-unhealable wounds to death.
 
 **Decision**
 
@@ -23684,7 +23734,7 @@
 
 **Description**
 
-> "Present for the Future." Expend health and energy to store at a 5 to 1 ratio, reclaimable anytime while this stays in the active slot.
+> (Tag:life)(Tag:meta)(Tag:recovery)"Present for the Future." Expend health and energy to store at a 5 to 1 ratio, reclaimable anytime while this stays in the active slot.
 
 **Decision**
 
@@ -23701,7 +23751,7 @@
 
 **Description**
 
-> While active, strikes and blunt attacks cost more energy but act as if covered in razor/barbed wire, leaving lacerations proportional to attack power.
+> (Tag:martial)While active, strikes and blunt attacks cost more energy but act as if covered in razor/barbed wire, leaving lacerations proportional to attack power.
 
 **Decision**
 
@@ -23718,7 +23768,7 @@
 
 **Description**
 
-> "This will hurt both of us." Increases damage targets take from your attacks, but you take a portion of the damage you inflict.
+> (Tag:blood)(Tag:enhancer)"This will hurt both of us." Increases damage targets take from your attacks, but you take a portion of the damage you inflict.
 
 **Decision**
 
@@ -23735,7 +23785,7 @@
 
 **Description**
 
-> See people in grayscale by your sense of morality; the more immoral by your morals, the darker they appear.
+> (Tag:divination)See people in grayscale by your sense of morality; the more immoral by your morals, the darker they appear.
 
 **Decision**
 
@@ -23752,7 +23802,7 @@
 
 **Description**
 
-> Invert the effect of any slotted Ability, e.g. Pyrokinesis to Cryokinesis or Curse to Bless, but double its energy cost.
+> (Tag:fire)(Tag:ice)(Tag:meta)Invert the effect of any slotted Ability, e.g. Pyrokinesis to Cryokinesis or Curse to Bless, but double its energy cost.
 
 **Decision**
 
@@ -23769,7 +23819,7 @@
 
 **Description**
 
-> Place a curse by touch lowering one chosen physical attribute — Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
+> (Tag:curse)(Tag:magic)Place a curse by touch lowering one chosen physical attribute, Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
 
 **Decision**
 
@@ -23786,7 +23836,7 @@
 
 **Description**
 
-> Apply one of three curses by touch: Weakness lowers Strength, Resilience, and stamina; Ruination hinders Energy and Vitality regeneration; Obsufication weakens all five senses. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
+> (Tag:curse)(Tag:magic)Apply one of three curses by touch: Weakness lowers Strength, Resilience, and stamina; Ruination hinders Energy and Vitality regeneration; Obsufication weakens all five senses. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
 
 **Decision**
 
@@ -23803,7 +23853,7 @@
 
 **Description**
 
-> Apply the Watcher's Curse, placing a floating ethereal eye over the target that transmits its location and sight to you. Can also anchor abilities and spells cast through it.
+> (Tag:curse)(Tag:magic)Apply the Watcher's Curse, placing a floating ethereal eye over the target that transmits its location and sight to you. Can also anchor abilities and spells cast through it.
 
 **Decision**
 
@@ -23820,7 +23870,7 @@
 
 **Description**
 
-> Grow ethereal roots into the ground, rooting you in place to drain energy and nutrients and accelerate vitality and energy regeneration.
+> (Tag:nature)(Tag:recovery)Grow ethereal roots into the ground, rooting you in place to drain energy and nutrients and accelerate vitality and energy regeneration.
 
 **Decision**
 
@@ -23837,7 +23887,7 @@
 
 **Description**
 
-> Expend your own Vitality to detonate a powerful violent explosion from your body. More Vitality means a stronger blast; minimum cost must considerably hurt you.
+> (Tag:life)Expend your own Vitality to detonate a powerful violent explosion from your body. More Vitality means a stronger blast; minimum cost must considerably hurt you.
 
 **Decision**
 
@@ -23854,7 +23904,7 @@
 
 **Description**
 
-> "Fractured Language" Temporarily bring down the Tower of Babel, making all communication impossible in 1km — written, spoken, or gestured remain incomprehensible. Range grows with strength; energy cost scales with people affected.
+> (Tag:mental)"Fractured Language" Temporarily bring down the Tower of Babel, making all communication impossible in 1km, written, spoken, or gestured remain incomprehensible. Range grows with strength; energy cost scales with people affected.
 
 **Flagged in reports**
 
@@ -23875,7 +23925,7 @@
 
 **Description**
 
-> Flesh hardens against physical trauma: sudden impacts/strikes above a threshold compact muscles, fat, skin, and all layers at the impact point into brief armor without impeding movement.
+> (Tag:bio)(Tag:enhancer)Flesh hardens against physical trauma: sudden impacts/strikes above a threshold compact muscles, fat, skin, and all layers at the impact point into brief armor without impeding movement.
 
 **Decision**
 
@@ -23892,7 +23942,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create basic mechs like construction exosuits or clunky mechs with standard armor and machine guns.
+> (Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create basic mechs like construction exosuits or clunky mechs with standard armor and machine guns.
 
 **Decision**
 
@@ -23909,7 +23959,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create proper combat-ready mechs — sleek agile briefly-flying types, armored low-mobility types, or easily-repaired modular ones. Can also design mech-only weaponry/modules based on your other abilities and traits.
+> (Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create proper combat-ready mechs, sleek agile briefly-flying types, armored low-mobility types, or easily-repaired modular ones. Can also design mech-only weaponry/modules based on your other abilities and traits.
 
 **Decision**
 
@@ -23926,7 +23976,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create powerful versatile mechs rivaling Knightmares, e.g. large mechs enduring missile barrages with street-demolishing cannons and guns. Can also design mech-only weaponry/modules based on your other abilities and traits.
+> (Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create powerful versatile mechs rivaling Knightmares, e.g. large mechs enduring missile barrages with street-demolishing cannons and guns. Can also design mech-only weaponry/modules based on your other abilities and traits.
 
 **Decision**
 
@@ -23943,7 +23993,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build Mech tech and large piloted armors. With enough resources and time, create skyscraper-sized esoteric energy-harnessing forcefield-protected Mecha with dozens of modules that withstand nuclear warfare and annihilate city blocks and cities with cannons.
+> (Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. With enough resources and time, create skyscraper-sized esoteric energy-harnessing forcefield-protected Mecha with dozens of modules that withstand nuclear warfare and annihilate city blocks and cities with cannons.
 
 **Decision**
 
@@ -23960,7 +24010,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build Mech tech and large piloted armors. With resources, knowledge, and time, create your dream Mecha to shame Gundams — antimatter-powered Hadron cannons, planet-sized spacefaring mechs with Death Star cannons. Can also design mech-only weaponry/modules based on your other abilities and traits.
+> (Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. With resources, knowledge, and time, create your dream Mecha to shame Gundams, antimatter-powered Hadron cannons, planet-sized spacefaring mechs with Death Star cannons. Can also design mech-only weaponry/modules based on your other abilities and traits.
 
 **Decision**
 
@@ -23977,7 +24027,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build Water-based tech, from dehydration guns, sprinklers, hydro cannons, and efficient irrigation up to 100-meter-radius water-ripping bombs and water-fueled engines, depending on skills, experience, and materials.
+> (Tag:tech)(Tag:tinker)(Tag:water)(Tech) Design, modify, and build Water-based tech, from dehydration guns, sprinklers, hydro cannons, and efficient irrigation up to 100-meter-radius water-ripping bombs and water-fueled engines, depending on skills, experience, and materials.
 
 **Decision**
 
@@ -23994,7 +24044,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build Air/atmosphere tech, from blow dryers, efficient turbines, wind bombs, flying machines, and blimps up to weather devices, tornado grenades, and vacuum bombs, depending on skills, experience, and materials.
+> (Tag:air)(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Air/atmosphere tech, from blow dryers, efficient turbines, wind bombs, flying machines, and blimps up to weather devices, tornado grenades, and vacuum bombs, depending on skills, experience, and materials.
 
 **Decision**
 
@@ -24011,7 +24061,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build transformation tech, e.g. armor-donning belts, car-to-jet transformers, combining jets forming a mech, lion-pen, anti-transformation bands, and stylish mandatory themed armors harnessing exotic materials, depending on skills, experience, and materials.
+> (Tag:tech)(Tag:tinker)(Tag:transformation)(Tech) Design, modify, and build transformation tech, e.g. armor-donning belts, car-to-jet transformers, combining jets forming a mech, lion-pen, anti-transformation bands, and stylish mandatory themed armors harnessing exotic materials, depending on skills, experience, and materials.
 
 **Decision**
 
@@ -24028,7 +24078,7 @@
 
 **Description**
 
-> (Tech) Design, modify, and build Ultrakill tech, specializing in robots from hyper-mobile units to mobile artillery to skyscraper-sized ones with overwhelming weapons and defenses. Built tech must be fueled primarily by Blood.
+> (Tag:bio)(Tag:life)(Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Ultrakill tech, specializing in robots from hyper-mobile units to mobile artillery to skyscraper-sized ones with overwhelming weapons and defenses. Built tech must be fueled primarily by Blood.
 
 **Decision**
 
@@ -24045,7 +24095,7 @@
 
 **Description**
 
-> Temporarily transform into a Pyronite or hybrid at will, gaining boosted physical stats, durability, and energy-scaling natural pyrokinesis. Greatly boosts Fire Affinities but disables Ice/Water abilities.
+> (Tag:enhancer)(Tag:fire)(Tag:transformation)Temporarily transform into a Pyronite or hybrid at will, gaining boosted physical stats, durability, and energy-scaling natural pyrokinesis. Greatly boosts Fire Affinities but disables Ice/Water abilities.
 
 **Decision**
 
@@ -24062,7 +24112,7 @@
 
 **Description**
 
-> Temporarily transform into an Ectonurite or hybrid at will, manipulating body protoplasm to fly and turn incorporeal. While incorporeal can possess weaker-willed living beings, but deathly weak to sunlight and electricity.
+> (Tag:command)(Tag:spirit)(Tag:stealth)(Tag:transformation)Temporarily transform into an Ectonurite or hybrid at will, manipulating body protoplasm to fly and turn incorporeal. While incorporeal can possess weaker-willed living beings, but deathly weak to sunlight and electricity.
 
 **Decision**
 
@@ -24079,7 +24129,7 @@
 
 **Description**
 
-> Temporarily transform into a Vulpimancer or hybrid at will, a large brutish canine with greater physicality, keen smell, and echolocation. Vulnerable to high-pitched noise, flames, and bestial instincts.
+> (Tag:enhancer)(Tag:sense)(Tag:transformation)Temporarily transform into a Vulpimancer or hybrid at will, a large brutish canine with greater physicality, keen smell, and echolocation. Vulnerable to high-pitched noise, flames, and bestial instincts.
 
 **Decision**
 
@@ -24096,7 +24146,7 @@
 
 **Description**
 
-> Temporarily transform into a Necrofriggan or hybrid at will, a winged cryokinetic moth-like alien with superhuman physique and flight. Freeze on touch, exhale freezing wind, phase intangible while freezing, and resist extreme temperatures.
+> (Tag:enhancer)(Tag:ice)(Tag:movement)(Tag:spirit)(Tag:transformation)(Tag:undead)Temporarily transform into a Necrofriggan or hybrid at will, a winged cryokinetic moth-like alien with superhuman physique and flight. Freeze on touch, exhale freezing wind, phase intangible while freezing, and resist extreme temperatures.
 
 **Decision**
 
@@ -24113,7 +24163,7 @@
 
 **Description**
 
-> Temporarily transform into a Petrosapien or hybrid at will, a living crystalline silicon alien with enhanced strength and extreme durability. Grow body crystals as weapons or from the ground, and with experience telekinetically control them for energy.
+> (Tag:earth)(Tag:enhancer)(Tag:transformation)Temporarily transform into a Petrosapien or hybrid at will, a living crystalline silicon alien with enhanced strength and extreme durability. Grow body crystals as weapons or from the ground, and with experience telekinetically control them for energy.
 
 **Decision**
 
@@ -24130,7 +24180,7 @@
 
 **Description**
 
-> Temporarily transform into a Piscciss Volann or hybrid at will, a large shark/anglerfish humanoid with superhuman physicality and steel-tearing claws and jaws. Traverse water and breathe in it freely, but vulnerable to dehydration.
+> (Tag:enhancer)(Tag:transformation)(Tag:water)Temporarily transform into a Piscciss Volann or hybrid at will, a large shark/anglerfish humanoid with superhuman physicality and steel-tearing claws and jaws. Traverse water and breathe in it freely, but vulnerable to dehydration.
 
 **Decision**
 
@@ -24147,7 +24197,7 @@
 
 **Description**
 
-> Temporarily transform into a Vaxasaurian or hybrid at will, a giant dinosaur-like alien with massively enhanced strength, durability, and frame. Expend energy to grow several times larger.
+> (Tag:enhancer)(Tag:transformation)Temporarily transform into a Vaxasaurian or hybrid at will, a giant dinosaur-like alien with massively enhanced strength, durability, and frame. Expend energy to grow several times larger.
 
 **Decision**
 
@@ -24164,7 +24214,7 @@
 
 **Description**
 
-> Temporarily transform into an Aerophibian or hybrid at will, a mantaray-like alien with slightly superhuman stats, extreme-speed flight, and Neuroshock blasts from eyes and tail. Highly resistant to fire, heat, and electricity; can traverse water and space freely.(Cannot Enter Hyperspace).
+> (Tag:enhancer)(Tag:movement)(Tag:transformation)Temporarily transform into an Aerophibian or hybrid at will, a mantaray-like alien with slightly superhuman stats, extreme-speed flight, and Neuroshock blasts from eyes and tail. Highly resistant to fire, heat, and electricity; can traverse water and space freely.(Cannot Enter Hyperspace).
 
 **Decision**
 
@@ -24181,7 +24231,7 @@
 
 **Description**
 
-> Temporarily transform into an Orishan or hybrid at will, a hydrokinetic crustacean alien with increased strength and durable exoskeleton. Use energy-scaling Hydrokinesis and blast/drain high-pressure water from hands.
+> (Tag:enhancer)(Tag:transformation)(Tag:water)Temporarily transform into an Orishan or hybrid at will, a hydrokinetic crustacean alien with increased strength and durable exoskeleton. Use energy-scaling Hydrokinesis and blast/drain high-pressure water from hands.
 
 **Decision**
 
@@ -24198,7 +24248,7 @@
 
 **Description**
 
-> Temporarily transform into an Amperi or hybrid at will, a ghost-like amphibious electrokinetic jellyfish with stretchable tentacles and free air/water float. Wield Electrokinesis to generate, absorb, and redirect electricity; can phase intangible while still shocking, or become pure electricity to travel conductors or possess technology.
+> (Tag:command)(Tag:electric)(Tag:spirit)(Tag:transformation)(Tag:water)Temporarily transform into an Amperi or hybrid at will, a ghost-like amphibious electrokinetic jellyfish with stretchable tentacles and free air/water float. Wield Electrokinesis to generate, absorb, and redirect electricity; can phase intangible while still shocking, or become pure electricity to travel conductors or possess technology.
 
 **Decision**
 
@@ -24215,7 +24265,7 @@
 
 **Description**
 
-> Temporarily transform into a Florauna or hybrid at will, a sentient plant alien with malleable exotic-plant body. Wield Chlorokinesis to control and fuse with plants, regenerate, and grow plants from your body, but extremely vulnerable to extreme temperatures.
+> (Tag:bio)(Tag:nature)(Tag:recovery)(Tag:transformation)Temporarily transform into a Florauna or hybrid at will, a sentient plant alien with malleable exotic-plant body. Wield Chlorokinesis to control and fuse with plants, regenerate, and grow plants from your body, but extremely vulnerable to extreme temperatures.
 
 **Decision**
 
@@ -24232,7 +24282,7 @@
 
 **Description**
 
-> "Force, Balance, Push" Convert your voice into a concussive kinetic Shout that unbalances or launches targets. Power scales with energy levels.
+> (Tag:kinetic)(Tag:sound)"Force, Balance, Push" Convert your voice into a concussive kinetic Shout that unbalances or launches targets. Power scales with energy levels.
 
 **Decision**
 
@@ -24249,7 +24299,7 @@
 
 **Description**
 
-> While Recovery stays slotted, every 24 hours slotted you are fully cured of all injuries, afflictions, curses, illnesses, and other health issues below Divine Rank. Removing it resets the timer.
+> (Tag:passive)(Tag:recovery)While Recovery stays slotted, every 24 hours slotted you are fully cured of all injuries, afflictions, curses, illnesses, and other health issues below Divine Rank. Removing it resets the timer.
 
 **Decision**
 
@@ -24266,7 +24316,7 @@
 
 **Description**
 
-> Access spatial storage for non-living objects like an inventory. While active, value stored (as gold coins) boosts physical stats, e.g. a thousand coins adds a grown man's strength.
+> (Tag:enhancer)(Tag:space)Access spatial storage for non-living objects like an inventory. While active, value stored (as gold coins) boosts physical stats, e.g. a thousand coins adds a grown person's strength.
 
 **Decision**
 
@@ -24283,7 +24333,7 @@
 
 **Description**
 
-> Mark a target as your Guard ward; damage they would take transfers to you proportionally — their 10% damage becomes your 10% damage.
+> (Tag:alter)Mark a target as your Guard ward; damage they would take transfers to you proportionally, their 10% damage becomes your 10% damage.
 
 **Decision**
 
@@ -24300,7 +24350,7 @@
 
 **Description**
 
-> Mark any number of targets as wards; damage meant for them transfers to you as if you took the hit — their decapitation could be your nick and vice versa. Maintaining marks costs energy.
+> (Tag:alter)Mark any number of targets as wards; damage meant for them transfers to you as if you took the hit, their decapitation could be your nick and vice versa. Maintaining marks costs energy.
 
 **Flagged in reports**
 
@@ -24321,7 +24371,7 @@
 
 **Description**
 
-> "Infallible Fortress" Massively boost all resistances and defenses while your feet stay within 10cm of activation point; even a human could face-tank a missile. Interruption triggers 10-second cooldown.
+> (Tag:enhancer)"Infallible Fortress" Massively boost all resistances and defenses while your feet stay within 10cm of activation point; even a human could face-tank a missile. Interruption triggers 10-second cooldown.
 
 **Decision**
 
@@ -24338,7 +24388,7 @@
 
 **Description**
 
-> Conjure shapeable, sizeable force fields usable as projectiles that stop and settle on hit. Movement inside is slowed proportionally to target strength and energy spent. Maintenance costs energy.
+> (Tag:debuff)(Tag:time)Conjure shapeable, sizeable force fields usable as projectiles that stop and settle on hit. Movement inside is slowed proportionally to target strength and energy spent. Maintenance costs energy.
 
 **Decision**
 
@@ -24355,7 +24405,7 @@
 
 **Description**
 
-> These mystic eyes slow targets in your field of vision. Slow degree scales with energy spent and target strength relative to you.
+> (Tag:debuff)(Tag:ocular)(Tag:time)These mystic eyes slow targets in your field of vision. Slow degree scales with energy spent and target strength relative to you.
 
 **Decision**
 
@@ -24372,7 +24422,7 @@
 
 **Description**
 
-> These mystic eyes manipulate Vitality of targets in view — drain vitality to heal yourself, give your own to heal them, or transfer between two others. Amount scales with energy spent and relative strength; willing targets cost less.
+> (Tag:life)(Tag:ocular)(Tag:recovery)These mystic eyes manipulate Vitality of targets in view, drain vitality to heal yourself, give your own to heal them, or transfer between two others. Amount scales with energy spent and relative strength; willing targets cost less.
 
 **Decision**
 
@@ -24389,7 +24439,7 @@
 
 **Description**
 
-> The longer you travel in a straight line, the faster and stronger you become. While active you move only in straight lines, with control worsening over distance.
+> (Tag:enhancer)(Tag:movement)The longer you travel in a straight line, the faster and stronger you become. While active you move only in straight lines, with control worsening over distance.
 
 **Decision**
 
@@ -24406,7 +24456,7 @@
 
 **Description**
 
-> As long as you keep moving straight, you grow stronger, faster, and tougher until a spear that can pierce gods. You move only in straight lines, losing control the longer you go.
+> (Tag:enhancer)(Tag:movement)As long as you keep moving straight, you grow stronger, faster, and tougher until a spear that can pierce gods. You move only in straight lines, losing control the longer you go.
 
 **Decision**
 
@@ -24423,7 +24473,7 @@
 
 **Description**
 
-> "Cloak yourself in the Light of the Heavenly God". While active, a light aura massively amplifies all Resistances and Defenses, further amplified against Dark, Infernal, and Curse effects.
+> (Tag:buff)(Tag:holy)(Tag:light)"Cloak yourself in the Light of the Heavenly God". While active, a light aura massively amplifies all Resistances and Defenses, further amplified against Dark, Infernal, and Curse effects.
 
 **Decision**
 
@@ -24440,7 +24490,7 @@
 
 **Description**
 
-> Imbue voice with emotion and intent to resonate with listeners. Amplified when singing, further when singing skillfully.
+> (Tag:command)(Tag:mental)(Tag:sound)Imbue voice with emotion and intent to resonate with listeners. Amplified when singing, further when singing skillfully.
 
 **Decision**
 
@@ -24457,7 +24507,7 @@
 
 **Description**
 
-> Imbue your voice with siren power to sleep or entrance susceptible hearers into trance. Amplified by skillful singing; strong wills resist better.
+> (Tag:command)(Tag:mental)(Tag:sound)Imbue your voice with siren power to sleep or entrance susceptible hearers into trance. Amplified by skillful singing; strong wills resist better.
 
 **Decision**
 
@@ -24474,7 +24524,7 @@
 
 **Description**
 
-> Transform your body into natural weaponry without self-harm — plated gauntlet hands with bone knives, whip tongue with sharp tip, reinforced shark-like jaws, etc.
+> (Tag:bio)(Tag:martial)Transform your body into natural weaponry without self-harm, plated gauntlet hands with bone knives, whip tongue with sharp tip, reinforced shark-like jaws, etc.
 
 **Decision**
 
@@ -24491,7 +24541,7 @@
 
 **Description**
 
-> Infuse your voice with your abilities, applying their effect to hearers as if touched — Fireball Diction burns listeners, Hemokinesis Diction disrupts bloodflow. Both abilities must be slotted.
+> (Tag:blood)(Tag:meta)(Tag:sound)Infuse your voice with your abilities, applying their effect to hearers as if touched, Fireball Diction burns listeners, Hemokinesis Diction disrupts bloodflow. Both abilities must be slotted.
 
 **Decision**
 
@@ -24508,7 +24558,7 @@
 
 **Description**
 
-> Convert blood into temporary gold coins that, when struck by a fast enough projectile, redirect it to the nearest enemy's weakspot. Attacks far beyond your level can break the coins.
+> (Tag:alter)Convert blood into temporary gold coins that, when struck by a fast enough projectile, redirect it to the nearest enemy's weakspot. Attacks far beyond your level can break the coins.
 
 **Decision**
 
@@ -24525,7 +24575,7 @@
 
 **Description**
 
-> Parry by striking an attack at the perfect moment to invert its force. Parryable attack types scale with user capability.
+> (Tag:kinetic)Parry by striking an attack at the perfect moment to invert its force. Parryable attack types scale with user capability.
 
 **Decision**
 
@@ -24542,7 +24592,7 @@
 
 **Description**
 
-> Summon deep abominations — tentacles, maws, spikes — from any nearby sufficiently large water body to maul enemies. Power scales with energy spent.
+> (Tag:dark)(Tag:summon)(Tag:water)Summon deep abominations, tentacles, maws, spikes, from any nearby sufficiently large water body to maul enemies. Power scales with energy spent.
 
 **Decision**
 
@@ -24559,7 +24609,7 @@
 
 **Description**
 
-> Invoke Abyssal Ones to conjure tentacles, maws, spikes, and temporary deep minions from any nearby water body for energy. Their wounds injure mind and body.
+> (Tag:dark)(Tag:eldritch)(Tag:infernal)(Tag:summon)(Tag:water)Invoke Abyssal Ones to conjure tentacles, maws, spikes, and temporary deep minions from any nearby water body for energy. Their wounds injure mind and body.
 
 **Decision**
 
@@ -24576,7 +24626,7 @@
 
 **Description**
 
-> Invoke Ryleh's wrath, using any sufficiently large water body as a gateway to summon tentacles, maws, monstrosities, spikes, madness waves, and Deep Kingdom familiars per energy spent.
+> (Tag:dark)(Tag:eldritch)(Tag:summon)(Tag:water)Invoke Ryleh's wrath, using any sufficiently large water body as a gateway to summon tentacles, maws, monstrosities, spikes, madness waves, and Deep Kingdom familiars per energy spent.
 
 **Decision**
 
@@ -24593,7 +24643,7 @@
 
 **Description**
 
-> Summon black clouds raining harsh acid that burns flesh, tarnishes metals, and amplifies Poison abilities in range. Range and potency scale with energy spent.
+> (Tag:alter)(Tag:poison)(Tag:water)Summon black clouds raining harsh acid that burns flesh, tarnishes metals, and amplifies Poison abilities in range. Range and potency scale with energy spent.
 
 **Decision**
 
@@ -24610,7 +24660,7 @@
 
 **Description**
 
-> Summon a storm of flesh-and-metal-melting caustic rain and harsh winds. Potency and range scale with energy spent, from a single-cloud shower to eroding multiple city blocks.
+> (Tag:alter)(Tag:poison)(Tag:water)Summon a storm of flesh-and-metal-melting caustic rain and harsh winds. Potency and range scale with energy spent, from a single-cloud shower to eroding multiple city blocks.
 
 **Decision**
 
@@ -24627,7 +24677,7 @@
 
 **Description**
 
-> Summon a ravaging acidic storm of flesh-stripping acid and life-ruining radioactive winds that pollute land. Inside its radius, all regeneration and healing are disabled.
+> (Tag:alter)(Tag:poison)(Tag:water)Summon a ravaging acidic storm of flesh-stripping acid and life-ruining radioactive winds that pollute land. Inside its radius, all regeneration and healing are disabled.
 
 **Decision**
 
@@ -24644,7 +24694,7 @@
 
 **Description**
 
-> Cloak your body in corrosive acidic energy that dissolves and burns on contact. Corrosion scales with energy spent.
+> (Tag:poison)(Tag:water)Cloak your body in corrosive acidic energy that dissolves and burns on contact. Corrosion scales with energy spent.
 
 **Decision**
 
@@ -24661,7 +24711,7 @@
 
 **Description**
 
-> Freely turn your body into hyper-acidic corrosive slime that melts on contact while letting you morph freely. Potency scales with energy spent.
+> (Tag:amorphous)(Tag:poison)(Tag:transformation)(Tag:water)Freely turn your body into hyper-acidic corrosive slime that melts on contact while letting you morph freely. Potency scales with energy spent.
 
 **Decision**
 
@@ -24678,7 +24728,7 @@
 
 **Description**
 
-> Expel and control body acid harming organic and inorganic materials. Quantity and potency depend on energy spent.
+> (Tag:poison)(Tag:water)Expel and control body acid harming organic and inorganic materials. Quantity and potency depend on energy spent.
 
 **Decision**
 
@@ -24695,7 +24745,7 @@
 
 **Description**
 
-> Expel and control powerful body acid harming organic and inorganic materials; wounds are harder to heal. Quantity and potency depend on energy spent.
+> (Tag:poison)(Tag:water)Expel and control powerful body acid harming organic and inorganic materials; wounds are harder to heal. Quantity and potency depend on energy spent.
 
 **Decision**
 
@@ -24712,7 +24762,7 @@
 
 **Description**
 
-> Release and telekinetically control powerful body acid melting organic and inorganic materials; wounds are harder to heal. Quantity and potency depend on energy spent.
+> (Tag:poison)(Tag:water)Release and telekinetically control powerful body acid melting organic and inorganic materials; wounds are harder to heal. Quantity and potency depend on energy spent.
 
 **Decision**
 
@@ -24729,7 +24779,7 @@
 
 **Description**
 
-> Release and telekinetically control incredibly potent body acid with incredible melting plus energy-eroding properties that disrupt spells and abilities. Quantity and potency depend on energy spent.
+> (Tag:poison)(Tag:water)Release and telekinetically control incredibly potent body acid with incredible melting plus energy-eroding properties that disrupt spells and abilities. Quantity and potency depend on energy spent.
 
 **Decision**
 
@@ -24746,7 +24796,7 @@
 
 **Description**
 
-> Expel and telekinetically control Grand Dissolution, an impossibly potent acid melting anything given enough energy — flesh, stone, magic, even space. Quantity and potency depend on energy spent.
+> (Tag:poison)(Tag:water)Expel and telekinetically control Grand Dissolution, an impossibly potent acid melting anything given enough energy, flesh, stone, magic, even space. Quantity and potency depend on energy spent.
 
 **Flagged in reports**
 
@@ -24767,7 +24817,7 @@
 
 **Description**
 
-> Share emotions both ways with someone by contact — feeling their pain/happiness, making them feel yours. Stronger targets cost more energy to link.
+> (Tag:command)(Tag:mental)Share emotions both ways with someone by contact, feeling their pain/happiness, making them feel yours. Stronger targets cost more energy to link.
 
 **Decision**
 
@@ -24784,7 +24834,7 @@
 
 **Description**
 
-> Share and spread your emotions over an area — courage to allies, hatred/anger at foes, fear/pain into armies. Energy cost scales with target strength, range, and target count.
+> (Tag:command)(Tag:mental)Share and spread your emotions over an area, courage to allies, hatred/anger at foes, fear/pain into armies. Energy cost scales with target strength, range, and target count.
 
 **Decision**
 
@@ -24801,7 +24851,7 @@
 
 **Description**
 
-> Impart your memories to others, from simple information to traumatic experiences, ego-shattering foreign memory influx, or looping injury memories. Stronger, resilient targets and more memories cost more energy.
+> (Tag:mental)Impart your memories to others, from simple information to traumatic experiences, ego-shattering foreign memory influx, or looping injury memories. Stronger, resilient targets and more memories cost more energy.
 
 **Decision**
 
@@ -24818,7 +24868,7 @@
 
 **Description**
 
-> Conjure superheated sand from your body and telekinetically shape it into walls, weapons, or melting waves. Quantity and heat scale with energy spent.
+> (Tag:earth)(Tag:fire)Conjure superheated sand from your body and telekinetically shape it into walls, weapons, or melting waves. Quantity and heat scale with energy spent.
 
 **Decision**
 
@@ -24835,7 +24885,7 @@
 
 **Description**
 
-> Conjure temporary familiar vehicles with working functions, from cars and balloons to planes and attack helicopters. Larger, more complex vehicles cost more to create and maintain.
+> (Tag:summon)(Tag:tech)Conjure temporary familiar vehicles with working functions, from cars and balloons to planes and attack helicopters. Larger, more complex vehicles cost more to create and maintain.
 
 **Decision**
 
@@ -24852,7 +24902,7 @@
 
 **Description**
 
-> Conjure and emit blasts of raw kinetic force. Power and scale with energy spent.
+> (Tag:kinetic)Conjure and emit blasts of raw kinetic force. Power and scale with energy spent.
 
 **Decision**
 
@@ -24869,7 +24919,7 @@
 
 **Description**
 
-> Freely project your soul from your body, leaving it comatose while you wander and still use abilities normally. Maintaining ghost form costs energy, more when using abilities.
+> (Tag:movement)(Tag:spirit)Freely project your soul from your body, leaving it comatose while you wander and still use abilities normally. Maintaining ghost form costs energy, more when using abilities.
 
 **Decision**
 
@@ -24886,7 +24936,7 @@
 
 **Description**
 
-> Burst skeletal limbs and projections from ground near you — grabbing hands, skewering ribs, defending femurs. Size, quantity, and quality scale with energy spent.
+> (Tag:necro)Burst skeletal limbs and projections from ground near you, grabbing hands, skewering ribs, defending femurs. Size, quantity, and quality scale with energy spent.
 
 **Decision**
 
@@ -24920,7 +24970,7 @@
 
 **Description**
 
-> Functionally the same as [Vampire Physique (Rare)], but you must shout "I'm beginning to Morb!" or "It's Morbing time!" to use it.
+> (Tag:bio)(Tag:dark)(Tag:life)(Tag:necro)(Tag:transformation)(Tag:vampiric)Functionally the same as [Vampire Physique (Rare)], but you must shout "I'm beginning to Morb!" or "It's Morbing time!" to use it.
 
 **Decision**
 
@@ -24937,7 +24987,7 @@
 
 **Description**
 
-> Expend energy to summon flaming giant-skeleton parts, e.g. ribs for defense, hands as gauntlets, underground impalers, and even detonatable parts.
+> (Tag:fire)(Tag:necro)(Tag:summon)Expend energy to summon flaming giant-skeleton parts, e.g. ribs for defense, hands as gauntlets, underground impalers, and even detonatable parts.
 
 **Decision**
 
@@ -24954,7 +25004,7 @@
 
 **Description**
 
-> A Branch of Sin expending vitality to condense blood into a fired bullet projectile; more vitality and blood means stronger bullets.
+> (Tag:bio)(Tag:life)A Branch of Sin expending vitality to condense blood into a fired bullet projectile; more vitality and blood means stronger bullets.
 
 **Decision**
 
@@ -24971,7 +25021,7 @@
 
 **Description**
 
-> The Crow Claw is a Branch of Sin expending vitality to condense blood into sickle-like blades on your body. Power depends on vitality and blood used.
+> (Tag:bio)(Tag:life)The Crow Claw is a Branch of Sin expending vitality to condense blood into sickle-like blades on your body. Power depends on vitality and blood used.
 
 **Decision**
 
@@ -24988,7 +25038,7 @@
 
 **Description**
 
-> The Whip Wing is a Branch of Sin expending vitality to condense blood into body-emerging whips controlled like limbs. Power scales with vitality and blood used.
+> (Tag:bio)(Tag:life)The Whip Wing is a Branch of Sin expending vitality to condense blood into body-emerging whips controlled like limbs. Power scales with vitality and blood used.
 
 **Decision**
 
@@ -25005,7 +25055,7 @@
 
 **Description**
 
-> The Blood Fist is a Branch of Sin expending vitality to condense blood into solid armoring layers that protect and empower strikes. Power scales with vitality and blood used.
+> (Tag:bio)(Tag:life)The Blood Fist is a Branch of Sin expending vitality to condense blood into solid armoring layers that protect and empower strikes. Power scales with vitality and blood used.
 
 **Decision**
 
@@ -25022,7 +25072,7 @@
 
 **Description**
 
-> Condor Candle is a Branch of Sin expending vitality to remotely combust your blood into fire. Fire and combustion power scale with vitality.
+> (Tag:bio)(Tag:fire)(Tag:life)Condor Candle is a Branch of Sin expending vitality to remotely combust your blood into fire. Fire and combustion power scale with vitality.
 
 **Decision**
 
@@ -25039,7 +25089,7 @@
 
 **Description**
 
-> Owl's Eyeball is a Branch of Sin expending vitality to form blood orbs you telekinetically control and detonate. Power scales with vitality and blood used.
+> (Tag:bio)(Tag:life)Owl's Eyeball is a Branch of Sin expending vitality to form blood orbs you telekinetically control and detonate. Power scales with vitality and blood used.
 
 **Decision**
 
@@ -25056,7 +25106,7 @@
 
 **Description**
 
-> Transform into and maintain a Voljang or hybrid for energy: a towering fire-breathing gorilla with immense strength and volatile temper. Gain enhanced physicality, instincts, rage, fire breath, and body flames; surrendering to rage unlocks a stronger Berserk form.
+> (Tag:enhancer)(Tag:fire)(Tag:transformation)Transform into and maintain a Voljang or hybrid for energy: a towering fire-breathing gorilla with immense strength and volatile temper. Gain enhanced physicality, instincts, rage, fire breath, and body flames; surrendering to rage unlocks a stronger Berserk form.
 
 **Decision**
 
@@ -25073,7 +25123,7 @@
 
 **Description**
 
-> Transform into and maintain a Shogun Ceanatour or hybrid for energy: a massive bladed crustacean beast. Gain tough exoskeleton, large bladed arm-limbs, and underwater breathing/movement, but vulnerable when dry.
+> (Tag:water)Transform into and maintain a Shogun Ceanatour or hybrid for energy: a massive bladed crustacean beast. Gain tough exoskeleton, large bladed arm-limbs, and underwater breathing/movement, but vulnerable when dry.
 
 **Decision**
 
@@ -25090,7 +25140,7 @@
 
 **Description**
 
-> Transform into and maintain a Lunagaron or hybrid for energy: an agile werewolf-like Fanged Beast expelling supercooled mist and icing its body. Gain enhanced physicality, senses, and agility, plus energy-fueled freezing breath and cold armoring ice.
+> (Tag:enhancer)(Tag:ice)(Tag:transformation)Transform into and maintain a Lunagaron or hybrid for energy: an agile werewolf-like Fanged Beast expelling supercooled mist and icing its body. Gain enhanced physicality, senses, and agility, plus energy-fueled freezing breath and cold armoring ice.
 
 **Decision**
 
@@ -25107,7 +25157,7 @@
 
 **Description**
 
-> Transform into and maintain a Velkhana or hybrid for energy: a powerful ice Elder Dragon with enhanced physicality, scaly defense, and flight. Breathe flash-freezing supercooled mist, manifest icebergs, and coat yourself in icy armor. Fire abilities unusable, cryokinetics stronger.
+> (Tag:draconic)(Tag:enhancer)(Tag:ice)(Tag:transformation)Transform into and maintain a Velkhana or hybrid for energy: a powerful ice Elder Dragon with enhanced physicality, scaly defense, and flight. Breathe flash-freezing supercooled mist, manifest icebergs, and coat yourself in icy armor. Fire abilities unusable, cryokinetics stronger.
 
 **Decision**
 
@@ -25124,7 +25174,7 @@
 
 **Description**
 
-> Transform into and maintain a Nergigante or hybrid for energy: a brute-force Elder Dragon with massively enhanced physicality, dulled pain, boosted Enhancer and Recovery potency, flight, weaponizable body spikes, and limb-regrowing basic regeneration.(No asexual reproduction included).
+> (Tag:draconic)(Tag:enhancer)(Tag:recovery)(Tag:transformation)Transform into and maintain a Nergigante or hybrid for energy: a brute-force Elder Dragon with massively enhanced physicality, dulled pain, boosted Enhancer and Recovery potency, flight, weaponizable body spikes, and limb-regrowing basic regeneration.(No asexual reproduction included).
 
 **Decision**
 
@@ -25141,7 +25191,7 @@
 
 **Description**
 
-> Transform into and maintain an Amatsu or hybrid for energy: the Calamity of the Skies Elder Dragon. Gain considerable physicality, free flight, and weather control to unleash wind, lightning, water, and ice.
+> (Tag:air)(Tag:draconic)(Tag:electric)(Tag:transformation)(Tag:water)Transform into and maintain an Amatsu or hybrid for energy: the Calamity of the Skies Elder Dragon. Gain considerable physicality, free flight, and weather control to unleash wind, lightning, water, and ice.
 
 **Decision**
 
@@ -25158,7 +25208,7 @@
 
 **Description**
 
-> Transform into and maintain a Fatalis or hybrid at will: the apex Elder Dragon predator. Gain massively enhanced stats, dragon-element wielding, searing flame breaths (plus Fire and Thunder Dragon Element if strong enough), and enhanced recovery and resilience to survive most lethal wounds.
+> (Tag:draconic)(Tag:fire)(Tag:recovery)(Tag:transformation)Transform into and maintain a Fatalis or hybrid at will: the apex Elder Dragon predator. Gain massively enhanced stats, dragon-element wielding, searing flame breaths (plus Fire and Thunder Dragon Element if strong enough), and enhanced recovery and resilience to survive most lethal wounds.
 
 **Decision**
 
@@ -25175,7 +25225,7 @@
 
 **Description**
 
-> While slotted, augment potency and efficiency of all Fire/Heat Based Abilities.
+> (Tag:buff)(Tag:fire)(Tag:meta)While slotted, augment potency and efficiency of all Fire/Heat Based Abilities.
 
 **Decision**
 
@@ -25192,7 +25242,7 @@
 
 **Description**
 
-> While slotted, augment potency and efficiency of all Water/Ice Based Abilities.
+> (Tag:buff)(Tag:ice)(Tag:meta)(Tag:water)While slotted, augment potency and efficiency of all Water/Ice Based Abilities.
 
 **Decision**
 
@@ -25209,7 +25259,7 @@
 
 **Description**
 
-> While slotted, augment potency and efficiency of all Air/Wind Based Abilities.
+> (Tag:air)(Tag:buff)(Tag:meta)While slotted, augment potency and efficiency of all Air/Wind Based Abilities.
 
 **Decision**
 
@@ -25226,7 +25276,7 @@
 
 **Description**
 
-> While slotted, augment potency and efficiency of all Earth/Metal Based Abilities.
+> (Tag:buff)(Tag:earth)(Tag:meta)While slotted, augment potency and efficiency of all Earth/Metal Based Abilities.
 
 **Decision**
 
@@ -25243,7 +25293,7 @@
 
 **Description**
 
-> Ten Shadows lets you summon 10 engraved Shikigami, each requiring a defeating ritual first to bind it. If a Shikigami (or any familiar) dies, transfer its power to a surviving Ten Shadows Shikigami. With skill, distort shikigami forms and wield their powers via limited manifestation.
+> (Tag:dark)(Tag:summon)Ten Shadows lets you summon 10 engraved Shikigami, each requiring a defeating ritual first to bind it. If a Shikigami (or any familiar) dies, transfer its power to a surviving Ten Shadows Shikigami. With skill, distort shikigami forms and wield their powers via limited manifestation.
 
 **Decision**
 
@@ -25260,7 +25310,7 @@
 
 **Description**
 
-> Perform a momentary burst dash in any direction in a 360 angle around you.(Cannot dash above or below.).
+> (Tag:movement)Perform a momentary burst dash in any direction in a 360 angle around you.(Cannot dash above or below.).
 
 **Decision**
 
@@ -25277,7 +25327,7 @@
 
 **Description**
 
-> Mark a line-of-sight target as your Target; while active you cannot harm anyone but that target, your attacks on others simply fail.
+> (Tag:alter)Mark a line-of-sight target as your Target; while active you cannot harm anyone but that target, your attacks on others simply fail.
 
 **Decision**
 
@@ -25294,7 +25344,7 @@
 
 **Description**
 
-> Temporarily convert familiars into wieldable armaments inheriting their abilities, e.g. Taurus Demon into Axe or dragon into Spear. Broken weapons wound but do not kill the familiar.
+> (Tag:martial)(Tag:summon)Temporarily convert familiars into wieldable armaments inheriting their abilities, e.g. Taurus Demon into Axe or dragon into Spear. Broken weapons wound but do not kill the familiar.
 
 **Decision**
 
@@ -25311,7 +25361,7 @@
 
 **Description**
 
-> Expend energy to unleash drifting mines — floating explosive energy balls you can detonate anytime. Power scales with energy spent.
+> (Tag:fire)Expend energy to unleash drifting mines, floating explosive energy balls you can detonate anytime. Power scales with energy spent.
 
 **Decision**
 
@@ -25328,7 +25378,7 @@
 
 **Description**
 
-> Turn yourself into a disposition-suited Weapon Form wieldable by others to share your abilities. Freedom is greatly restricted and damage taken reflects onto your real form.
+> (Tag:transformation)Turn yourself into a disposition-suited Weapon Form wieldable by others to share your abilities. Freedom is greatly restricted and damage taken reflects onto your real form.
 
 **Decision**
 
@@ -25345,7 +25395,7 @@
 
 **Description**
 
-> (Tech) Manipulate any machine interface as if wired to your nerves and brain via physical contact.
+> (Tag:mental)(Tag:tech)(Tech) Manipulate any machine interface as if wired to your nerves and brain via physical contact.
 
 **Decision**
 
@@ -25362,7 +25412,7 @@
 
 **Description**
 
-> Manifest and control Uzumaki Adamantine Sealing Chains as incredibly durable chains that suppress and seal bound targets' energy. Suppression scales with energy spent and your power advantage; chain power and count scale with energy used.
+> (Tag:debuff)(Tag:earth)(Tag:spirit)Manifest and control Uzumaki Adamantine Sealing Chains as incredibly durable chains that suppress and seal bound targets' energy. Suppression scales with energy spent and your power advantage; chain power and count scale with energy used.
 
 **Decision**
 
@@ -25379,7 +25429,7 @@
 
 **Description**
 
-> (Tree)(Meta:sight:1) You can view locked nodes one extra connection away from unlocked nodes.
+> (Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight:1) You can view locked nodes one extra connection away from unlocked nodes.
 
 **Decision**
 
@@ -25396,7 +25446,7 @@
 
 **Description**
 
-> (Tree)(Meta:sight:2) You can view locked nodes two extra connections away from unlocked nodes. Overrides Sight +1.
+> (Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight:2) You can view locked nodes two extra connections away from unlocked nodes. Overrides Sight +1.
 
 **Decision**
 
@@ -25413,7 +25463,7 @@
 
 **Description**
 
-> (Tree)(Meta:see-far) You can view locked nodes within a set distance of unlocked nodes, even if unconnected to them.
+> (Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:see-far) You can view locked nodes within a set distance of unlocked nodes, even if unconnected to them.
 
 **Decision**
 
@@ -25430,7 +25480,7 @@
 
 **Description**
 
-> (Tree)(Meta:trace-name) You can trace a route to the closest locked nodes whose name contains a chosen word or phrase.
+> (Tag:meta)(Tree)(Meta:trace-name) You can trace a route to the closest locked nodes whose name contains a chosen word or phrase.
 
 **Decision**
 
@@ -25447,7 +25497,7 @@
 
 **Description**
 
-> (Tree)(Meta:trace-desc) You can trace a route to the closest locked nodes whose description contains a chosen word or phrase.
+> (Tag:meta)(Tree)(Meta:trace-desc) You can trace a route to the closest locked nodes whose description contains a chosen word or phrase.
 
 **Decision**
 
@@ -25464,7 +25514,7 @@
 
 **Description**
 
-> (Tree)(Meta:reveal-temp) Single use. Reveal the full tree for 10 seconds.
+> (Tag:meta)(Tree)(Meta:reveal-temp) Single use. Reveal the full tree for 10 seconds.
 
 **Decision**
 
@@ -25481,7 +25531,7 @@
 
 **Description**
 
-> (Tree)(Meta:reveal-full) Permanently reveal the entire tree.
+> (Tag:meta)(Tree)(Meta:reveal-full) Permanently reveal the entire tree.
 
 **Decision**
 
@@ -25498,7 +25548,7 @@
 
 **Description**
 
-> (Tree)(Meta:echo) Single use. The next ticket you are awarded pays double points.
+> (Tag:meta)(Tag:sound)(Tree)(Meta:echo) Single use. The next ticket you are awarded pays double points.
 
 **Decision**
 
@@ -25515,7 +25565,7 @@
 
 **Description**
 
-> (Tree)(Meta:survey:1) You can see the names of locked nodes one extra connection away from unlocked nodes.
+> (Tag:meta)(Tree)(Meta:survey:1) You can see the names of locked nodes one extra connection away from unlocked nodes.
 
 **Decision**
 
@@ -25532,7 +25582,7 @@
 
 **Description**
 
-> (Tree)(Meta:compass) You can trace a route to the closest locked node of any chosen source.
+> (Tag:meta)(Tree)(Meta:compass) You can trace a route to the closest locked node of any chosen source.
 
 **Decision**
 
@@ -25549,7 +25599,7 @@
 
 **Description**
 
-> (Tree)(Meta:sight-cat:ability:1) You can view ability nodes one extra connection away from unlocked nodes.
+> (Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight-cat:ability:1) You can view ability nodes one extra connection away from unlocked nodes.
 
 **Decision**
 
@@ -25566,7 +25616,7 @@
 
 **Description**
 
-> (Tree)(Meta:sight-cat:item:1) You can view item nodes one extra connection away from unlocked nodes.
+> (Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight-cat:item:1) You can view item nodes one extra connection away from unlocked nodes.
 
 **Decision**
 
@@ -25583,7 +25633,7 @@
 
 **Description**
 
-> (Tree)(Meta:sight-cat:skill:1) You can view skill nodes one extra connection away from unlocked nodes.
+> (Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight-cat:skill:1) You can view skill nodes one extra connection away from unlocked nodes.
 
 **Decision**
 
@@ -25600,7 +25650,7 @@
 
 **Description**
 
-> (Tree)(Meta:sight-cat:trait:1) You can view trait nodes one extra connection away from unlocked nodes.
+> (Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight-cat:trait:1) You can view trait nodes one extra connection away from unlocked nodes.
 
 **Decision**
 
@@ -25617,7 +25667,7 @@
 
 **Description**
 
-> (Tree)(Meta:sight-cat:familiar:1) You can view familiar nodes one extra connection away from unlocked nodes.
+> (Tag:meta)(Tag:ocular)(Tag:sense)(Tag:summon)(Tree)(Meta:sight-cat:familiar:1) You can view familiar nodes one extra connection away from unlocked nodes.
 
 **Decision**
 
@@ -25634,7 +25684,7 @@
 
 **Description**
 
-> Rip loose concrete, furniture, and machinery from the environment and hurl it as telekinetic artillery; charged throws stagger even the Hiss.
+> (Tag:kinesis)Rip loose concrete, furniture, and machinery from the environment and hurl it as telekinetic artillery; charged throws stagger even the Hiss.
 
 **Decision**
 
@@ -25651,7 +25701,7 @@
 
 **Description**
 
-> Weaken an enemy then seize their mind outright, turning them into a temporary ally that fights and dies for you.
+> (Tag:mental)Weaken an enemy then seize their mind outright, turning them into a temporary ally that fights and dies for you.
 
 **Decision**
 
@@ -25685,7 +25735,7 @@
 
 **Description**
 
-> A short telekinetic dash that phases through incoming fire; upgraded chains link multiple dashes together.
+> (Tag:movement)A short telekinetic dash that phases through incoming fire; upgraded chains link multiple dashes together.
 
 **Decision**
 
@@ -25702,7 +25752,7 @@
 
 **Description**
 
-> Rise and drift on telekinetic lift while raining debris from above; full upgrades allow true flight and meteor ground slams.
+> (Tag:movement)Rise and drift on telekinetic lift while raining debris from above; full upgrades allow true flight and meteor ground slams.
 
 **Decision**
 
@@ -25736,7 +25786,7 @@
 
 **Description**
 
-> See living targets and machines through walls, with threats, cameras, and robots highlighted and assessed.
+> (Tag:ocular)(Tag:sense)See living targets and machines through walls, with threats, cameras, and robots highlighted and assessed.
 
 **Decision**
 
@@ -25753,7 +25803,7 @@
 
 **Description**
 
-> Bend light around yourself to turn nearly invisible while moving slowly; it drinks energy fast so keep moving with purpose.
+> (Tag:stealth)Bend light around yourself to turn nearly invisible while moving slowly; it drinks energy fast so keep moving with purpose.
 
 **Decision**
 
@@ -25804,7 +25854,7 @@
 
 **Description**
 
-> Read micro-expressions and pheromones to profile anyone mid-conversation, then nudge them toward the answer you wanted.
+> (Tag:mental)Read micro-expressions and pheromones to profile anyone mid-conversation, then nudge them toward the answer you wanted.
 
 **Decision**
 
@@ -25821,7 +25871,7 @@
 
 **Description**
 
-> Teleport yourself or a nearby pawn a short distance, blinking through walls and out of danger at the cost of neural heat.
+> (Tag:teleport)Teleport yourself or a nearby pawn a short distance, blinking through walls and out of danger at the cost of neural heat.
 
 **Decision**
 
@@ -25838,7 +25888,7 @@
 
 **Description**
 
-> Open a skipgate that relocates your whole caravan across the world map, or dumps an enemy raid somewhere far away.
+> (Tag:teleport)Open a skipgate that relocates your whole caravan across the world map, or dumps an enemy raid somewhere far away.
 
 **Decision**
 
@@ -25855,7 +25905,7 @@
 
 **Description**
 
-> Drive every humanlike in an area into a murderous berserk rage, friend and foe alike. Do not stand in the pulse.
+> (Tag:enhancer)Drive every humanlike in an area into a murderous berserk rage, friend and foe alike. Do not stand in the pulse.
 
 **Decision**
 
@@ -25872,7 +25922,7 @@
 
 **Description**
 
-> Vanish from enemy perception entirely and walk through a raid unseen; attacking breaks the effect.
+> (Tag:stealth)Vanish from enemy perception entirely and walk through a raid unseen; attacking breaks the effect.
 
 **Decision**
 
@@ -25906,7 +25956,7 @@
 
 **Description**
 
-> Take an extra turn after this one. Two mana, one extra turn, and a permanent seat on every banned list.
+> (Tag:time)Take an extra turn after this one. Two mana, one extra turn, and a permanent seat on every banned list.
 
 **Decision**
 
@@ -25940,7 +25990,7 @@
 
 **Description**
 
-> Counter target spell. Two blue mana that simply says no to anything.
+> (Tag:anti-magic)(Tag:magic)Counter target spell. Two blue mana that simply says no to anything.
 
 **Decision**
 
@@ -25957,7 +26007,7 @@
 
 **Description**
 
-> Exile target creature; its controller gains life equal to its power. One mana of unconditional removal.
+> (Tag:martial)Exile target creature; its controller gains life equal to its power. One mana of unconditional removal.
 
 **Decision**
 
@@ -25974,7 +26024,7 @@
 
 **Description**
 
-> Add three black mana in a burst. The turn-one kill enabler since Alpha.
+> (Tag:dark)Add three black mana in a burst. The turn-one kill enabler since Alpha.
 
 **Decision**
 
@@ -25991,7 +26041,7 @@
 
 **Description**
 
-> Target creature gets +3/+3 until end of turn. One green mana of timeless combat math.
+> (Tag:growth)Target creature gets +3/+3 until end of turn. One green mana of timeless combat math.
 
 **Decision**
 
@@ -26008,7 +26058,7 @@
 
 **Description**
 
-> Swap the positions of any two characters or objects in range, teleporting both at once.
+> (Tag:dark)(Tag:infernal)Swap the positions of any two characters or objects in range, teleporting both at once.
 
 **Decision**
 
@@ -26042,7 +26092,7 @@
 
 **Description**
 
-> Blend perfectly into the surroundings, turning invisible for two turns unless you attack or cast.
+> (Tag:stealth)Blend perfectly into the surroundings, turning invisible for two turns unless you attack or cast.
 
 **Decision**
 
@@ -26144,7 +26194,7 @@
 
 **Description**
 
-> Fane's special source skill: grant a character an entire extra turn after their current one ends.
+> (Tag:teleport)(Tag:time)Fane's special source skill: grant a character an entire extra turn after their current one ends.
 
 **Decision**
 
@@ -26178,7 +26228,7 @@
 
 **Description**
 
-> Rewind time by seconds or minutes while retaining full memory of the undone timeline, then choose better.
+> (Tag:time)Rewind time by seconds or minutes while retaining full memory of the undone timeline, then choose better.
 
 **Decision**
 
@@ -26195,7 +26245,7 @@
 
 **Description**
 
-> Unleash concussive telekinetic force that hurls people, cars, and debris away from you.
+> (Tag:kinesis)(Tag:kinetic)Unleash concussive telekinetic force that hurls people, cars, and debris away from you.
 
 **Decision**
 
@@ -26212,7 +26262,7 @@
 
 **Description**
 
-> Slow the world to a crawl while aiming, lining up machine weak-point shots with perfect calm.
+> (Tag:time)Slow the world to a crawl while aiming, lining up machine weak-point shots with perfect calm.
 
 **Decision**
 
@@ -26229,7 +26279,7 @@
 
 **Description**
 
-> Takedown unaware machines and humans from stealth for massive damage.
+> (Tag:kinetic)(Tag:stealth)Takedown unaware machines and humans from stealth for massive damage.
 
 **Decision**
 
@@ -26263,7 +26313,7 @@
 
 **Description**
 
-> Retain skills, relationships, and knowledge across loops of your life on Vertumna, redoing years better each time.
+> (Tag:mental)(Tag:time)Retain skills, relationships, and knowledge across loops of your life on Vertumna, redoing years better each time.
 
 **Decision**
 
@@ -26289,7 +26339,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 1441. Adenine Volley
+## 1441. Bounce
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -26297,7 +26347,7 @@
 
 **Description**
 
-> Spray rapidfire nucleotide shots; pair it with another weapon to discover hybrid bioweapons.
+> Spend your bioenergy to increase the chance of projectiles you fire bouncing off walls and enemies.
 
 **Decision**
 
@@ -26306,7 +26356,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 1442. Cytosine Precision
+## 1442. Homing
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -26314,7 +26364,7 @@
 
 **Description**
 
-> Fire precise nucleotide shots that strike weak points; pair it to discover hybrid bioweapons.
+> Spend your bioenergy to increase the homing speed of your projectiles towards the closest enemy.
 
 **Decision**
 
@@ -26323,7 +26373,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 1443. Guanine Spread
+## 1443. Sticky
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -26331,7 +26381,7 @@
 
 **Description**
 
-> Unleash wide-spread nucleotide shots that blanket microbe waves; pair it to discover hybrid bioweapons.
+> Spend your bioenergy to increase the time your projectiles remain at their maximum range before detonating.
 
 **Decision**
 
@@ -26340,7 +26390,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 1444. Thymine Detonation
+## 1444. Flack
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -26348,7 +26398,7 @@
 
 **Description**
 
-> Detonate explosive nucleotide shots that clear clustered microbes; pair it to discover hybrid bioweapons.
+> Spend your bioenergy to increase the number of smaller pellets your projectiles break into on a hit.
 
 **Decision**
 
@@ -26365,7 +26415,7 @@
 
 **Description**
 
-> Call down a city-devouring tsunami wave, then watch the flooded districts from your disaster overview.
+> (Tag:summon)Call down a city-devouring tsunami wave, then watch the flooded districts from your disaster overview.
 
 **Decision**
 
@@ -26416,7 +26466,7 @@
 
 **Description**
 
-> Shape Eldritch magic into whips, shields, blades, and bindings that strike spirits as well as soldiers.
+> (Tag:eldritch)Shape Eldritch magic into whips, shields, blades, and bindings that strike spirits as well as soldiers.
 
 **Decision**
 
@@ -26433,7 +26483,7 @@
 
 **Description**
 
-> Fold yourself and your enemies into the Mirror Dimension, where cities bend and no collateral escapes.
+> (Tag:space)Fold yourself and your enemies into the Mirror Dimension, where cities bend and no collateral escapes.
 
 **Decision**
 
@@ -26450,7 +26500,7 @@
 
 **Description**
 
-> Wield raw Chaos Magic that rewrites probability and reality on contact; it always takes something back.
+> (Tag:magic)Wield raw Chaos Magic that rewrites probability and reality on contact; it always takes something back.
 
 **Decision**
 
@@ -26467,7 +26517,7 @@
 
 **Description**
 
-> Hex the odds themselves so the unlikely keeps happening to everyone but you.
+> (Tag:curse)(Tag:debuff)(Tag:magic)Hex the odds themselves so the unlikely keeps happening to everyone but you.
 
 **Decision**
 
@@ -26484,7 +26534,7 @@
 
 **Description**
 
-> Step out of your body as an astral form to scout unseen while your body sleeps on.
+> (Tag:spirit)Step out of your body as an astral form to scout unseen while your body sleeps on.
 
 **Decision**
 
@@ -26501,7 +26551,7 @@
 
 **Description**
 
-> Possess your own variants across the multiverse by dreamwalking into their bodies.
+> (Tag:mental)Possess your own variants across the multiverse by dreamwalking into their bodies.
 
 **Decision**
 
@@ -26518,7 +26568,7 @@
 
 **Description**
 
-> Weave lifelike illusions, duplicates, and shapeshifts the way Loki does: constantly and without permission.
+> (Tag:mental)Weave lifelike illusions, duplicates, and shapeshifts the way Loki does: constantly and without permission.
 
 **Decision**
 
@@ -26535,7 +26585,7 @@
 
 **Description**
 
-> Inscribe witch runes that steal any spell cast inside them and turn rival magic against its caster.
+> (Tag:magic)Inscribe witch runes that steal any spell cast inside them and turn rival magic against its caster.
 
 **Decision**
 
@@ -26621,6 +26671,856 @@
 **Description**
 
 > Exude the scent-command that turns nearby antlions into your obedient swarm.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1461. Screw Attack
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.9 | Epic | Metroid |
+
+**Description**
+
+> Launch into a spinning somersault charge that shreds through anything it touches while you stay invincible throughout. You cannot steer mid-spin, and landing somewhere awkward is your own problem.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1462. Space Jump
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Metroid |
+
+**Description**
+
+> (Tag:movement)(Tag:space)Jump again in midair as often as you like while spinning, each leap matching a grounded jump. Works only while moving; stall and you fall.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1463. Shinespark
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Metroid |
+
+**Description**
+
+> Store a full sprint's momentum, then launch yourself as an invincible supersonic projectile in a chosen direction until something very solid stops you. Charging takes a few seconds of uninterrupted running.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1464. Flash Shift
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.1 | Epic | Metroid |
+
+**Description**
+
+> (Tag:teleport)Blink a short distance instantly, up to three times before touching ground resets the count. Each shift preserves your momentum and can aim any direction including straight up.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1465. Proliferate
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | MTG |
+
+**Description**
+
+> Add one more counter of each kind already present on anything you choose: charges, poison, energy reserves, fading timers, all of it. Cannot create a counter type that isn't already there.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1466. Populate
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | MTG |
+
+**Description**
+
+> Create a copy of a token, summon, or other expendable minion you own, identical down to its remaining duration. One copy per use.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1467. Overload
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | MTG |
+
+**Description**
+
+> Scale any single-target effect you produce to strike every valid target instead, at triple the energy cost. Friend and foe alike, no exceptions.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1468. Cipher
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | MTG |
+
+**Description**
+
+> Encode one of your effects onto a melee strike; whenever that strike lands, the encoded effect triggers again for free. One encoded effect at a time; encoding a new one overwrites the old.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1469. Chaos Gate
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Hades |
+
+**Description**
+
+> (Tag:space)Tear open a way to Chaos at the cost of a measure of your vitality, and choose one of three offered boons. Stronger offerings draw stronger boons, and Chaos does not give refunds.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1470. Moon Hex
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Hades 2 |
+
+**Description**
+
+> (Tag:ice)Your hex charges as you fight; unleash it as a devastating moon blast that freezes lesser foes solid and sunders barriers. Fully spent, it begins charging again immediately.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1471. Static Shock
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> (Tag:electric)Deliver a mild static shock on touch. Startles; harms nothing but composure.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1472. Nightlight
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> (Tag:light)Glow faintly in the dark, about as bright as a nightlight. Cannot be switched off while you sleep.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1473. Itch
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> Inflict a mild itch on a target once per day. Somehow they always know it was you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1474. Sneeze
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> Induce a single sneeze in someone nearby. Useless in combat, devastating in libraries.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1475. Fizz
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Generic |
+
+**Description**
+
+> Carbonate any drink on touch. Flat drinks fear you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1476. Untie
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> Loosen any knot slightly. Fully untying anything takes all day.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1477. Rewind (3 seconds)
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.9 | Trash | Life is Strange |
+
+**Description**
+
+> (Tag:time)Rewind time by three seconds, once per day. Enough to catch a falling glass. Sometimes.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1478. Flavor
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Generic |
+
+**Description**
+
+> Shift the flavor of food slightly: sweeter, saltier, or faintly of pennies.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1479. Static Cling
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> (Tag:electric)Your clothes cling statically at dramatic moments. Dryer sheets help for an hour.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1480. Earworm
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Generic |
+
+**Description**
+
+> Plant a jingle in someone's head for about an hour. They will hum it. Everyone will know why.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1481. Warm Hands
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> Your hands are always warm. Comforting in winter; melts chocolate in summer.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1482. Hiccup
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> Give someone the hiccups for about a minute. No cure assists.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1483. Squeak
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> Your shoes squeak on command. Stealth is not an option while shod.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1484. Wrinkle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.3 | Trash | Generic |
+
+**Description**
+
+> Smooth wrinkles from clothing by touch. Does not work on skin, no matter how often asked.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1485. Asgard Beam
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Stargate |
+
+**Description**
+
+> (Tag:light)Snatch targets with teleport beams at line of sight: relocate allies to safety or scatter foes. Living cargo arrives nauseated; rapid repeat beams compound the nausea.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1486. FTL Jump
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Battlestar Galactica |
+
+**Description**
+
+> (Tag:teleport)Fold space to jump yourself and nearby allies across star systems near-instantly. Each jump needs plotted coordinates and a spool-up; blind jumps land you somewhere exciting.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1487. Thermoptic Camouflage
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Ghost in the Shell |
+
+**Description**
+
+> (Tag:stealth)Bend light around yourself into near-total invisibility while moving slowly. Sprinting, rain, and smoke betray you; thermal optics see straight through it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1488. Witcher Signs
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | The Witcher |
+
+**Description**
+
+> (Tag:magic)Cast the five witcher signs with a gesture: stunning Aard, burning Igni, trapping Yrden, shielding Quen, and charming Axii. Simple, fast, and weaker than true sorcery.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1489. Heroism
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.5 | Epic | Warcraft |
+
+**Description**
+
+> Drive allies into a mass battle frenzy: greatly quickened strikes and movement for under a minute, then exhaustion. One chorus per battle; the drums remember.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1490. Psionics
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | XCOM |
+
+**Description**
+
+> (Tag:mental)Break minds at range: panic rookies, dominate the weak-willed, and detonate Rift anomalies. Each intrusion risks feedback that stuns you instead.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1491. Psionic Storm
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | StarCraft |
+
+**Description**
+
+> (Tag:mental)Call down a raging psionic storm that shreds shields, flesh, and circuitry alike across a wide area. Allies inside fare exactly as badly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1492. Solar Charge
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.5 | Elite | WALL-E |
+
+**Description**
+
+> (Tag:fire)(Tag:movement)Drink direct sunlight to recharge energy, stamina, and small devices. Overcast skies provide faucet-level trickle; true night provides nothing.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1493. Transcendence
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Overwatch |
+
+**Description**
+
+> Become an invulnerable beacon of harmony, healing allies around you massively while drifting slowly forward. You cannot attack, and snipers wait patiently.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1494. Graviton Surge
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.9 | Epic | Overwatch |
+
+**Description**
+
+> (Tag:enhancer)(Tag:gravity)Open a black hole that drags all nearby foes to its center and holds them there. Devastating combined with literally anything else.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1495. Supersonic
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Rocket League |
+
+**Description**
+
+> (Tag:sound)Push past supersonic speed on foot or wheels; anything you touch at full speed explodes away from you. Steering is aspirational.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1496. Veto of the Small Gods
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.3 | Divine | Generic |
+
+**Description**
+
+> Once per day, refuse one effect, event, or attack targeting you of Divine rank or below; it simply does not happen to you. You cannot veto the same source twice in a row.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1497. Stillpoint
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.1 | Divine | Generic |
+
+**Description**
+
+> (Tag:ice)(Tag:time)Freeze everything within 100 meters for up to one minute while you move freely; frozen things are invulnerable and you cannot move them, only yourself and what you carry. Cooldown 24 hours.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1498. Tithemaster's Ledger
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.5 | Divine | Generic |
+
+**Description**
+
+> Name a price in anything you own (memories, years, strength); reality pays out an effect of equal value at a pitiless cosmic exchange rate. Overpay, and the change is lost.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1499. Yesterday's City
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.7 | Divine | Generic |
+
+**Description**
+
+> (Tag:time)Restore all unliving matter in a city block to its exact state 24 hours ago; creatures keep their minds, but wounds and objects reset. Costs nearly all your energy; 7-day cooldown.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1500. Garden of Forking Paths
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.1 | Transcendent | Generic |
+
+**Description**
+
+> (Tag:mental)Live out the next 10 minutes in up to three parallel previews, then choose which one becomes real; the others fade, but you keep all three memories. Once per week.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1501. Unwritten
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.3 | Transcendent | Generic |
+
+**Description**
+
+> Erase yourself from one written record, memory, or contract across a whole world: every copy, every mind. It undoes nothing that happened, only all record and recall of it. One record-set per 30 days.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1502. Erasure
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.7 | Divine | MHA |
+
+**Description**
+
+> While you look unblinkingly at a target, their powers stop working: quirks, and by extension most supernatural abilities below Divine rank, simply switch off. Blink and it lapses; dry eye is the occupational hazard.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1503. Domain Expansion: Unlimited Void
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.1 | Transcendent | Jujutsu Kaisen |
+
+**Description**
+
+> (Tag:dark)Raise a barrier some 200 meters across around yourself for up to a few minutes at ruinous energy cost. Everyone inside but you is flooded with infinite information: they perceive everything and can do nothing, no movement, no powers, no resistance, while your strikes inside cannot miss. Mindless, formless, or incorporeal beings have nothing to flood and walk through it unaffected.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1504. Instrumentality
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.4 | Transcendent | Evangelion |
+
+**Description**
+
+> Dissolve the boundaries between all souls in range into one gestalt consciousness, held or released at your decision. Anyone with sufficient sense of self can reject it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1505. SAVE Point
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.0 | Transcendent | Undertale |
+
+**Description**
+
+> (Tag:time)Anchor a SAVE; die and you reload there with full memory while the world resets around you. Each load frays something: someone always half-remembers.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1506. Gold Experience Requiem
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.2 | Transcendent | JoJo |
+
+**Description**
+
+> (Tag:earth)(Tag:growth)Your stand autonomously reverts any hostile action against you to zero, it never happened. Nothing outspeeds it, but it cannot strike first; only answer.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1507. Force Storm
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.0 | Transcendent | Star Wars |
+
+**Description**
+
+> (Tag:electric)Tear open hyperspace wormholes that devour fleets and fortresses. Each storm drinks your strength and answers your rage more than your aim; lose your temper and it picks its own targets.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1508. Spice Prescience
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.7 | Divine | Dune |
+
+**Description**
+
+> (Tag:mental)See branching futures across months and parse the safe path through politics, war, and weather. The trap: the more you see, the more the vision locks you in, defying a seen future costs everything you built toward it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1509. Culture Displace
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.8 | Divine | Culture |
+
+**Description**
+
+> (Tag:teleport)Teleport anything you can precisely locate to anywhere else in the same star system, instantly, via hyperspace. Living cargo arrives nauseated; imprecise coordinates arrive scattered.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 1510. Tinker - AWESOME
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.2 | Divine | Satisfactory |
+
+**Description**
+
+> (Tech) Allows you to build the AWESOME Shop and AWESOME Sink wherever you settle, given materials and a 30-megawatt power feed for the Sink. The Sink recycles anything you feed it into FICSIT coupons, raw ores worth least, complex tech most, each further coupon costing progressively more feedstock. The Shop spends coupons on Satisfactory gacha entries (10 coupons per rarity level), building-part blueprints and customizations, and small shipments of consumables, equipment, and parts; pioneering awards and statues arrive with tickets attached. For more info: https://satisfactory.wiki.gg/wiki/AWESOME_Shop
 
 **Decision**
 

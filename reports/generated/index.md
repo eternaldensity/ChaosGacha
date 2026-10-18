@@ -6,11 +6,11 @@ Navigable view of the gacha data and the review reports.
 
 | File | Entries | Page |
 |---|---|---|
-| skill | 334 | [entries/skill.md](entries/skill.md) |
-| trait | 665 | [entries/trait.md](entries/trait.md) |
-| familiar | 518 | [entries/familiar.md](entries/familiar.md) |
-| item | 1009 | [entries/item.md](entries/item.md) |
-| ability | 1457 | [entries/ability.md](entries/ability.md) |
+| skill | 371 | [entries/skill.md](entries/skill.md) |
+| trait | 720 | [entries/trait.md](entries/trait.md) |
+| familiar | 601 | [entries/familiar.md](entries/familiar.md) |
+| item | 1129 | [entries/item.md](entries/item.md) |
+| ability | 1507 | [entries/ability.md](entries/ability.md) |
 
 ## Reports
 

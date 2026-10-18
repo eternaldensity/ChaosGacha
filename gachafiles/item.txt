@@ -2255,4 +2255,4 @@
 1128. Profaned Greatsword, 5.6, Dark Souls
 #(Tag:anti-holy)(Tag:blade)(Tag:infernal)(Tag:weapon)A colossal blade quenched in profane flame, so heavy it has to be dragged into its own swing. Its fire burns angels, paladins, and anything sanctified as readily as flesh, snuffs out holy wards on contact, and leaves wounds that do not close.
 1129. Replicating Nanobot, 1.8, Q-UP
-#(Tag:production)(Tag:resource)(Tag:tech)A shard-shaped swarm of self-copying nanomachines that harvests loose wealth wherever you are. Each payout cycle the swarm mints 50 gold, and every nanobot mints for every other one in the stack: one pays 50, two pay 200, three pay 450, four pay 800. Copies stack in a single slot and never stop working.
+#(Tag:growing)(Tag:resource)(Tag:tech)A palm-sized swarm of self-copying nanobots. Once a day you give each bot one of two orders: split in two, or mint a single gold coin. Splitting doubles the swarm, so a batch told to replicate gives up today's income for a much larger one later, and the same swarm told to mint produces coins in proportion to its size. They never wear out and never stop following orders.

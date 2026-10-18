@@ -1,37 +1,48 @@
 # trait — Entry Reference
 
-665 entries. Sorted by rarity, then number.
+720 entries. Sorted by rarity, then number.
 
 | Tier | Count |
 |---|---|
-| Trash | 15 |
+| Trash | 26 |
 | Common | 44 |
 | Uncommon | 133 |
-| Rare | 147 |
-| Elite | 144 |
-| Epic | 75 |
-| Legendary | 41 |
+| Rare | 149 |
+| Elite | 148 |
+| Epic | 95 |
+| Legendary | 42 |
 | Mythical | 46 |
-| Divine | 12 |
-| Transcendent | 8 |
+| Divine | 25 |
+| Transcendent | 12 |
 
 ## Index by tier
 
-### Trash (15)
+### Trash (26)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 110 | [Salt Detection](#110-salt-detection) | 0.1 | Generic |
 | 392 | [Nothing](#392-nothing) | 0.1 | Generic |
 | 412 | [Salty Tears](#412-salty-tears) | 0.1 | Generic |
+| 687 | [Mismatched Socks](#687-mismatched-socks) | 0.1 | Generic |
+| 691 | [Aisle Seat](#691-aisle-seat) | 0.1 | Generic |
+| 692 | [Bedhead](#692-bedhead) | 0.1 | Generic |
 | 60 | [Poisonous](#60-poisonous) | 0.2 | Generic |
 | 97 | [Minty Breath](#97-minty-breath) | 0.2 | Generic |
 | 632 | [Garlic Infused Blood](#632-garlic-infused-blood) | 0.2 | Generic |
+| 688 | [Umbrella Loser](#688-umbrella-loser) | 0.2 | Generic |
+| 689 | [Password Forgetter](#689-password-forgetter) | 0.2 | Generic |
+| 690 | [Chronically Early](#690-chronically-early) | 0.2 | Generic |
+| 693 | [Cold Feet](#693-cold-feet) | 0.2 | Generic |
 | 128 | [Dramatic Tumbleweed](#128-dramatic-tumbleweed) | 0.3 | Generic |
 | 378 | [Magical Girl Transformation](#378-magical-girl-transformation) | 0.3 | Generic |
 | 556 | [Throat](#556-throat) | 0.4 | Generic |
+| 685 | [They'll Remember That](#685-theyll-remember-that) | 0.4 | Telltale |
 | 4 | [Digestive Expulsion Independence](#4-digestive-expulsion-independence) | 0.5 | Generic |
 | 548 | [Scenic Wind](#548-scenic-wind) | 0.5 | Generic |
+| 684 | [I'll Be Back](#684-ill-be-back) | 0.5 | Terminator |
+| 686 | [Arrow to the Knee](#686-arrow-to-the-knee) | 0.5 | Skyrim |
+| 683 | [Redshirt](#683-redshirt) | 0.6 | Star Trek |
 | 450 | [Deus Eggs Machina](#450-deus-eggs-machina) | 0.8 | Generic |
 | 552 | [Comfortable](#552-comfortable) | 0.8 | Generic |
 | 451 | [Drunk Driver](#451-drunk-driver) | 0.9 | Generic |
@@ -183,16 +194,16 @@
 | 429 | [Augmented](#429-augmented) | 2.6 | Generic |
 | 468 | [Swiper no Swiping!](#468-swiper-no-swiping) | 2.6 | Generic |
 | 485 | [Provocative](#485-provocative) | 2.6 | Generic |
-| 567 | [Canis Companion](#567-2-canis-companion) | 2.6 | Generic |
 | 596 | [Lightning Catcher](#596-lightning-catcher) | 2.6 | Generic |
 | 628 | [Thermal Adaptor](#628-thermal-adaptor) | 2.6 | Generic |
 | 645 | [Kind](#645-kind) | 2.6 | RimWorld |
+| 720 | [Canis Companion](#720-canis-companion) | 2.6 | Generic |
 | 2 | [Efficient Physique](#2-efficient-physique) | 2.7 | Generic |
 | 7 | [Antibody](#7-antibody) | 2.7 | Generic |
 | 70 | [Empathy](#70-empathy) | 2.7 | Generic |
 | 126 | [Manager](#126-manager) | 2.7 | Generic |
 | 205 | [Bloodbank](#205-bloodbank) | 2.7 | Generic |
-| 260 | [Harem Lord](#260-harem-lord) | 2.7 | Generic |
+| 260 | [Harem Keeper](#260-harem-keeper) | 2.7 | Generic |
 | 263 | [Trustable Face](#263-trustable-face) | 2.7 | Generic |
 | 275 | [Carnal Engine](#275-carnal-engine) | 2.7 | Generic |
 | 276 | [Four Leaf Clover](#276-four-leaf-clover) | 2.7 | Generic |
@@ -206,7 +217,7 @@
 | 61 | [Venomous](#61-venomous) | 2.8 | Generic |
 | 71 | [Receptive Body](#71-receptive-body) | 2.8 | Generic |
 | 79 | [Reservoir](#79-reservoir) | 2.8 | Generic |
-| 95 | [Lady Killer](#95-lady-killer) | 2.8 | Generic |
+| 95 | [Heartbreaker](#95-heartbreaker) | 2.8 | Generic |
 | 107 | [Iron Nerves](#107-iron-nerves) | 2.8 | Generic |
 | 173 | [Bloodhound](#173-bloodhound) | 2.8 | Generic |
 | 183 | [Enhanced Agility](#183-enhanced-agility) | 2.8 | Generic |
@@ -224,7 +235,7 @@
 | 352 | [Sensor](#352-sensor) | 2.9 | Generic |
 | 529 | [Nakiri](#529-nakiri) | 2.9 | Shokugeki no Souma |
 
-### Rare (147)
+### Rare (149)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -267,7 +278,7 @@
 | 216 | [Chutzpah](#216-chutzpah) | 3.3 | Generic |
 | 229 | [Rivalry](#229-rivalry) | 3.3 | Generic |
 | 235 | [Lovers](#235-lovers) | 3.3 | Generic |
-| 261 | [Harem King](#261-harem-king) | 3.3 | Generic |
+| 261 | [Harem Sovereign](#261-harem-sovereign) | 3.3 | Generic |
 | 290 | [Common Sense](#290-common-sense) | 3.3 | Generic |
 | 301 | [Draw of Fate](#301-draw-of-fate) | 3.3 | Generic |
 | 317 | [Rule 63](#317-rule-63) | 3.3 | Generic |
@@ -293,6 +304,7 @@
 | 597 | [Thirsty](#597-thirsty) | 3.4 | Generic |
 | 638 | [Intelligent](#638-intelligent) | 3.4 | Stellaris |
 | 647 | [Cannibal](#647-cannibal) | 3.4 | RimWorld |
+| 702 | [Mysterious Lover](#702-mysterious-lover) | 3.4 | Baby Cat |
 | 11 | [Photosynthesis](#11-photosynthesis) | 3.5 | Generic |
 | 19 | [Greater Headpat](#19-greater-headpat) | 3.5 | Generic |
 | 40 | [Fire Resistance](#40-fire-resistance) | 3.5 | Generic |
@@ -367,7 +379,8 @@
 | 514 | [Lich](#514-lich) | 3.8 | Generic |
 | 525 | [Beelzebub's Blessing](#525-beelzebubs-blessing) | 3.8 | Generic |
 | 646 | [Psychopath](#646-psychopath) | 3.8 | RimWorld |
-| 656 | [Hexagonal Skill Grid](#656-hexagonal-skill-grid) | 3.8 | Q-UP |
+| 656 | [Hexagonal Slots](#656-hexagonal-slots) | 3.8 | Q-UP |
+| 681 | [Belter](#681-belter) | 3.8 | The Expanse |
 | 20 | [Efficient Cells](#20-efficient-cells) | 3.9 | Generic |
 | 46 | [Thermal Balance](#46-thermal-balance) | 3.9 | Generic |
 | 69 | [Steady](#69-steady) | 3.9 | Generic |
@@ -376,7 +389,7 @@
 | 308 | [Vault](#308-vault) | 3.9 | Generic |
 | 312 | [All Trades](#312-all-trades) | 3.9 | Generic |
 
-### Elite (144)
+### Elite (148)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -428,6 +441,8 @@
 | 611 | [Style](#611-style) | 4.2 | Ultrakill |
 | 641 | [Lithoid](#641-lithoid) | 4.2 | Stellaris |
 | 655 | [Root Access](#655-root-access) | 4.2 | Tron 2.0 |
+| 673 | [Dryad](#673-dryad) | 4.2 | Generic |
+| 679 | [Fremen](#679-fremen) | 4.2 | Dune |
 | 85 | [Esper](#85-esper) | 4.3 | Generic |
 | 94 | [Gambler](#94-gambler) | 4.3 | Generic |
 | 103 | [Reactive Precognition](#103-reactive-precognition) | 4.3 | Generic |
@@ -479,6 +494,7 @@
 | 555 | [Tanuki](#555-tanuki) | 4.6 | Generic |
 | 606 | [Touch of Death](#606-touch-of-death) | 4.6 | Generic |
 | 624 | [Fairy Lungs](#624-fairy-lungs) | 4.6 | Generic |
+| 701 | [Power of the Bear](#701-power-of-the-bear) | 4.6 | Baby Cat |
 | 191 | [Hero Time](#191-hero-time) | 4.7 | Generic |
 | 215 | [Ancestry](#215-ancestry) | 4.7 | Generic |
 | 265 | [Conflict Drive](#265-conflict-drive) | 4.7 | Generic |
@@ -516,6 +532,7 @@
 | 576 | [Chaos Duplication](#576-chaos-duplication) | 4.8 | Generic |
 | 584 | [Mythril Fist](#584-mythril-fist) | 4.8 | Generic |
 | 642 | [Hive-Minded](#642-hive-minded) | 4.8 | Stellaris |
+| 671 | [Dhampir](#671-dhampir) | 4.8 | Generic |
 | 133 | [Ygdar Orus Li Ox](#133-ygdar-orus-li-ox) | 4.9 | Generic |
 | 148 | [Surging Magic Power](#148-surging-magic-power) | 4.9 | Generic |
 | 179 | [Immortal Soul](#179-immortal-soul) | 4.9 | Generic |
@@ -525,7 +542,7 @@
 | 491 | [Gift of Nyar](#491-gift-of-nyar) | 4.9 | Generic |
 | 614 | [Variable Gene](#614-variable-gene) | 4.9 | Generic |
 
-### Epic (75)
+### Epic (95)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -535,17 +552,24 @@
 | 432 | [Biodroid](#432-biodroid) | 5.0 | Generic |
 | 477 | [Glowing One](#477-glowing-one) | 5.0 | Generic |
 | 636 | [Prosperity +40%](#636-prosperity-40) | 5.0 | Generic |
+| 669 | [God Mode](#669-god-mode) | 5.0 | Hades |
+| 674 | [Gargoyle](#674-gargoyle) | 5.0 | Generic |
+| 680 | [Furyan](#680-furyan) | 5.0 | Riddick |
+| 699 | [On Fire](#699-on-fire) | 5.0 | Overwatch |
+| 700 | [What a Save!](#700-what-a-save) | 5.0 | Rocket League |
 | 227 | [Recoilless](#227-recoilless) | 5.1 | Generic |
 | 315 | [No Peeking](#315-no-peeking) | 5.1 | Generic |
 | 324 | [Hyuga](#324-hyuga) | 5.1 | Naruto |
 | 409 | [Psyker(Telepathy)](#409-psykertelepathy) | 5.1 | Warhammer 40k |
 | 546 | [The Real Familiars](#546-the-real-familiars) | 5.1 | Generic |
-| 615 | [Firebender](#615-firebender) | 5.1 | Avatar |
+| 615 | [Firebending](#615-firebending) | 5.1 | Avatar |
 | 332 | [Nightmare](#332-nightmare) | 5.2 | Tsukihime |
 | 503 | [Silkheart](#503-silkheart) | 5.2 | Silksong |
 | 545 | [Full Coverage Insurance Plan](#545-full-coverage-insurance-plan) | 5.2 | Generic |
 | 577 | [Fair Use](#577-fair-use) | 5.2 | Generic |
 | 616 | [Earthbending](#616-earthbending) | 5.2 | Avatar |
+| 668 | [Fated Authority](#668-fated-authority) | 5.2 | Hades |
+| 678 | [T-800](#678-t-800) | 5.2 | Terminator |
 | 152 | [Constant](#152-constant) | 5.3 | Generic |
 | 160 | [High Capacity](#160-high-capacity) | 5.3 | Generic |
 | 212 | [Non-Binding Clause](#212-non-binding-clause) | 5.3 | Generic |
@@ -556,6 +580,7 @@
 | 499 | [Natural Restoration](#499-natural-restoration) | 5.3 | Generic |
 | 574 | [Pendragon](#574-pendragon) | 5.3 | Generic |
 | 620 | [Item Hypertrophy](#620-item-hypertrophy) | 5.3 | Generic |
+| 665 | [Miracle](#665-miracle) | 5.3 | MTG |
 | 214 | [Peak Specimen](#214-peak-specimen) | 5.4 | Generic |
 | 361 | [Dominion](#361-dominion) | 5.4 | Generic |
 | 375 | [Brand of Nurgle](#375-brand-of-nurgle) | 5.4 | Warhammer 40k |
@@ -565,6 +590,11 @@
 | 558 | [Violence of Heaven](#558-violence-of-heaven) | 5.4 | Generic |
 | 573 | [Covenant Leader](#573-covenant-leader) | 5.4 | Generic |
 | 621 | [Super Sniffer](#621-super-sniffer) | 5.4 | Demon Slayer |
+| 672 | [Kitsune](#672-kitsune) | 5.4 | Generic |
+| 677 | [Krogan Battlemaster](#677-krogan-battlemaster) | 5.4 | Mass Effect |
+| 682 | [Na'vi](#682-navi) | 5.4 | James Cameron's Avatar |
+| 694 | [Tok'ra Blending](#694-tokra-blending) | 5.4 | Stargate |
+| 698 | [Infested](#698-infested) | 5.4 | StarCraft |
 | 213 | [Lil' Hercules](#213-lil-hercules) | 5.5 | Generic |
 | 321 | [My Friend Now](#321-my-friend-now) | 5.5 | Generic |
 | 404 | [Psyker](#404-psyker) | 5.5 | Warhammer 40k |
@@ -578,6 +608,9 @@
 | 254 | [Demon King](#254-demon-king) | 5.6 | Generic |
 | 578 | [Crushing Daunt](#578-crushing-daunt) | 5.6 | Generic |
 | 640 | [Mind over Matter](#640-mind-over-matter) | 5.6 | Stellaris |
+| 667 | [Pact of Punishment](#667-pact-of-punishment) | 5.6 | Hades |
+| 670 | [Omega Moves](#670-omega-moves) | 5.6 | Hades 2 |
+| 696 | [Trial of the Grasses](#696-trial-of-the-grasses) | 5.6 | The Witcher |
 | 139 | [The Favorite](#139-the-favorite) | 5.7 | Generic |
 | 207 | [Living Nightmare](#207-living-nightmare) | 5.7 | Generic |
 | 244 | [Nature's Chosen](#244-natures-chosen) | 5.7 | Generic |
@@ -601,11 +634,15 @@
 | 561 | [Thunderbird](#561-thunderbird) | 5.8 | Generic |
 | 566 | [Satsui no Hado](#566-satsui-no-hado) | 5.8 | Street Fighter |
 | 618 | [Airbending](#618-airbending) | 5.8 | Avatar |
+| 666 | [Death Defiance](#666-death-defiance) | 5.8 | Hades |
+| 676 | [Yautja Hunter](#676-yautja-hunter) | 5.8 | Predator |
+| 695 | [Cylon Resurrection](#695-cylon-resurrection) | 5.8 | Battlestar Galactica |
+| 697 | [Ebon Knight](#697-ebon-knight) | 5.8 | Warcraft |
 | 447 | [Ichor](#447-ichor) | 5.9 | Generic |
 | 470 | [Sea Serpent](#470-sea-serpent) | 5.9 | Generic |
 | 586 | [Regenerator](#586-regenerator) | 5.9 | Hellsing |
 
-### Legendary (41)
+### Legendary (42)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
@@ -648,6 +685,7 @@
 | 325 | [Senju](#325-senju) | 6.8 | Naruto |
 | 426 | [True Demon](#426-true-demon) | 6.8 | Generic |
 | 489 | [Everlasting Dragon](#489-everlasting-dragon) | 6.8 | Dark Souls |
+| 675 | [Time Lord](#675-time-lord) | 6.8 | Doctor Who |
 | 241 | [Infinite Money Glitch](#241-infinite-money-glitch) | 6.9 | Generic |
 | 389 | [Progenitor Demon](#389-progenitor-demon) | 6.9 | Demon Slayer |
 
@@ -702,30 +740,47 @@
 | 345 | [Majin](#345-majin) | 7.9 | Dragon Ball |
 | 518 | [Eclipse](#518-eclipse) | 7.9 | Generic |
 
-### Divine (12)
+### Divine (25)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 334 | [Dead Apostle Ancestor](#334-dead-apostle-ancestor) | 8.0 | Tsukihime |
 | 381 | [True User](#381-true-user) | 8.0 | Generic |
+| 703 | [Polyglot of Babel](#703-polyglot-of-babel) | 8.0 | Generic |
 | 230 | [Demon God](#230-demon-god) | 8.1 | Generic |
 | 419 | [Elemental Immunity](#419-elemental-immunity) | 8.1 | Generic |
+| 704 | [Econ of Scale](#704-econ-of-scale) | 8.1 | Generic |
 | 403 | [King Engine](#403-king-engine) | 8.2 | One Punch Man |
 | 73 | [Endbringer Physiology](#73-endbringer-physiology) | 8.3 | Worm |
+| 705 | [Mythic Resonance](#705-mythic-resonance) | 8.3 | Generic |
 | 344 | [Child of Man](#344-child-of-man) | 8.4 | Warhammer 40k |
 | 292 | [Titan Crusher](#292-titan-crusher) | 8.5 | Generic |
 | 591 | [Starman](#591-starman) | 8.5 | Generic |
+| 706 | [Thunderhead Soul](#706-thunderhead-soul) | 8.5 | Generic |
+| 713 | [Voice of All Things](#713-voice-of-all-things) | 8.5 | One Piece |
+| 714 | [Mantle-Bearer](#714-mantle-bearer) | 8.5 | Halo |
 | 382 | [All Devouring Physique](#382-all-devouring-physique) | 8.6 | Generic |
+| 711 | [God Ki](#711-god-ki) | 8.6 | Dragon Ball |
+| 712 | [But It Refused](#712-but-it-refused) | 8.6 | Undertale |
+| 715 | [Untouchable](#715-untouchable) | 8.6 | Warhammer 40k |
 | 484 | [Nephalem](#484-nephalem) | 8.7 | Generic |
+| 718 | [Mentat](#718-mentat) | 8.7 | Dune |
 | 342 | [Kryptonian](#342-kryptonian) | 8.8 | DC |
+| 710 | [Quirk Singularity](#710-quirk-singularity) | 8.8 | MHA |
+| 719 | [Bene Gesserit Conditioning](#719-bene-gesserit-conditioning) | 8.8 | Dune |
+| 709 | [Jinchuriki](#709-jinchuriki) | 8.9 | Naruto |
 
-### Transcendent (8)
+### Transcendent (12)
 
 | # | Name | Rarity | Source |
 |---|---|---|---|
 | 380 | [Deathless](#380-deathless) | 9.0 | Generic |
+| 707 | [Death's Secretary](#707-deaths-secretary) | 9.0 | Generic |
+| 717 | [Eywa Communion](#717-eywa-communion) | 9.0 | James Cameron's Avatar |
 | 416 | [Infinite](#416-infinite) | 9.1 | Generic |
 | 420 | [Absolute Absorber](#420-absolute-absorber) | 9.1 | Generic |
+| 716 | [Beloved of the Worm](#716-beloved-of-the-worm) | 9.1 | Stellaris |
+| 708 | [Rootless](#708-rootless) | 9.2 | Generic |
 | 418 | [Immortality](#418-immortality) | 9.4 | Generic |
 | 394 | [Beast](#394-beast) | 9.5 | Fate |
 | 505 | [Broken Limiter](#505-broken-limiter) | 9.5 | One Punch Man |
@@ -742,7 +797,7 @@
 
 **Description**
 
-> People instinctively rationalize your actions and accept you more readily.
+> (Tag:social)People instinctively rationalize your actions and accept you more readily.
 
 **Decision**
 
@@ -759,7 +814,7 @@
 
 **Description**
 
-> You gain more energy from breathing, eating, and sleeping through incredible bodily efficiency, and your abilities consume slightly less energy to use.
+> (Tag:energy-regeneration+)You gain more energy from breathing, eating, and sleeping through incredible bodily efficiency, and your abilities consume slightly less energy to use.
 
 **Decision**
 
@@ -776,7 +831,7 @@
 
 **Description**
 
-> You stay hygienic with no bad breath or germs.
+> (Tag:lifestyle)You stay hygienic with no bad breath or germs.
 
 **Decision**
 
@@ -793,7 +848,7 @@
 
 **Description**
 
-> You never need to piss or shit.
+> (Tag:lifestyle)You never need to piss or shit.
 
 **Decision**
 
@@ -810,7 +865,7 @@
 
 **Description**
 
-> You disappear in a crowd and go unnoticed as long as you should not stand out.
+> (Tag:stealth+)You disappear in a crowd and go unnoticed as long as you should not stand out.
 
 **Decision**
 
@@ -827,7 +882,7 @@
 
 **Description**
 
-> Your potential partners accept your harem without questioning the logistics or logic of multiple lovers.
+> (Tag:social)(Noncon) Your potential partners accept your harem without questioning the logistics or logic of multiple lovers.
 
 **Flagged in reports**
 
@@ -848,7 +903,7 @@
 
 **Description**
 
-> You strongly resist most diseases.
+> (Tag:poison-resistance+)You strongly resist most diseases.
 
 **Decision**
 
@@ -865,7 +920,7 @@
 
 **Description**
 
-> You live 100 times longer and regenerate your own lifespan even if it is drained or destroyed.
+> (Tag:body)(Tag:vitality+)You live 100 times longer and regenerate your own lifespan even if it is drained or destroyed.
 
 **Decision**
 
@@ -882,7 +937,7 @@
 
 **Description**
 
-> People instinctively justify your actions and give you the benefit of the doubt even when you act against their morals.
+> (Tag:social)People instinctively justify your actions and give you the benefit of the doubt even when you act against their morals.
 
 **Decision**
 
@@ -899,7 +954,7 @@
 
 **Description**
 
-> You perfectly control your exerted strength, so you can spare a foam brick even with planet-shattering power.
+> (Tag:lifestyle)You perfectly control your exerted strength, so you can spare a foam brick even with planet-shattering power.
 
 **Decision**
 
@@ -916,7 +971,7 @@
 
 **Description**
 
-> You subsist on sunlight alone for food and breathing and regenerate energy faster under sunlight. You still need water.
+> (Tag:energy-regeneration+)(Tag:lifestyle)You subsist on sunlight alone for food and breathing and regenerate energy faster under sunlight. You still need water.
 
 **Decision**
 
@@ -933,7 +988,7 @@
 
 **Description**
 
-> You have inordinate stamina relative to your current form, so it persists if you change species.
+> (Tag:stamina+)You have inordinate stamina relative to your current form, so it persists if you change species.
 
 **Decision**
 
@@ -950,7 +1005,7 @@
 
 **Description**
 
-> You terrify others at will, making children cry and grown men piss themselves as you seem more a sadistic force of nature than a man.
+> (Tag:social)You terrify others at will, making children cry and grown people piss themselves as you seem more a sadistic force of nature than a person.
 
 **Decision**
 
@@ -967,7 +1022,7 @@
 
 **Description**
 
-> You fight through wounds, exhaustion, and injuries without dulling pain, and you recover fine as long as the wound is not lethal and you can still stand.
+> (Tag:martial)(Tag:mind)(Tag:survival)You fight through wounds, exhaustion, and injuries without dulling pain, and you recover fine as long as the wound is not lethal and you can still stand.
 
 **Decision**
 
@@ -1001,7 +1056,7 @@
 
 **Description**
 
-> You naturally resist magic and all magical effects, scaling with your energy level.
+> (Tag:magic)(Tag:magic-resistance+)You naturally resist magic and all magical effects, scaling with your energy level.
 
 **Decision**
 
@@ -1018,7 +1073,7 @@
 
 **Description**
 
-> Your energy moves far faster, making all your abilities and spells far faster.
+> (Tag:meta)(Tag:power+)Your energy moves far faster, making all your abilities and spells far faster.
 
 **Decision**
 
@@ -1035,7 +1090,7 @@
 
 **Description**
 
-> Your headpats bring targets comfort, pleasure, and affection while helping dispel negative mental effects.
+> (Tag:social)Your headpats bring targets comfort, pleasure, and affection while helping dispel negative mental effects.
 
 **Decision**
 
@@ -1052,7 +1107,7 @@
 
 **Description**
 
-> Your headpats bring targets comfort, pleasure, and affection, possibly arousal if they are kinky, while helping dispel negative mental effects. Even the most frigid emo cannot resist your palms.
+> (Tag:social)Your headpats bring targets comfort, pleasure, and affection, possibly arousal if they are kinky, while helping dispel negative mental effects. Even the most frigid emo cannot resist your palms.
 
 **Decision**
 
@@ -1069,7 +1124,7 @@
 
 **Description**
 
-> Your cells convert sustenance to energy supernaturally efficiently, so you regain energy significantly faster.
+> (Tag:energy-regeneration+)Your cells convert sustenance to energy supernaturally efficiently, so you regain energy significantly faster.
 
 **Decision**
 
@@ -1086,7 +1141,7 @@
 
 **Description**
 
-> You sense incoming projectiles and instinctively dodge them like a sixth sense.
+> (Tag:martial)(Tag:mind)You sense incoming projectiles and instinctively dodge them like a sixth sense.
 
 **Decision**
 
@@ -1103,7 +1158,7 @@
 
 **Description**
 
-> You gain increased energy capacity from the fae's blessing. Fairies start at least neutral to you, fae do not trick you, and spirits like you.
+> (Tag:energy-regeneration+)(Tag:fae)(Tag:magic)(Tag:maximum-energy+)(Tag:nature)(Tag:social)You gain increased energy capacity from the fae's blessing. Fairies start at least neutral to you, fae do not trick you, and spirits like you.
 
 **Decision**
 
@@ -1120,7 +1175,7 @@
 
 **Description**
 
-> You sense nearby wealth and treasure opportunities like a sixth sense and can spot treasure from a mile away.
+> (Tag:lifestyle)(Tag:rule)You sense nearby wealth and treasure opportunities like a sixth sense and can spot treasure from a mile away.
 
 **Decision**
 
@@ -1158,7 +1213,7 @@
 
 **Description**
 
-> Whenever you complete agreed work for someone, from quests to chores, they feel compelled to deliver your due reward.
+> (Tag:rule)(Tag:social)Whenever you complete agreed work for someone, from quests to chores, they feel compelled to deliver your due reward.
 
 **Decision**
 
@@ -1175,7 +1230,7 @@
 
 **Description**
 
-> Whenever you save a damsel in distress, they are almost guaranteed to develop romantic feelings for you.
+> (Tag:social)Whenever you save a damsel in distress, they are almost guaranteed to develop romantic feelings for you.
 
 **Flagged in reports**
 
@@ -1196,7 +1251,7 @@
 
 **Description**
 
-> Whenever you win a competition or bet, you dictate your reward terms and the other party cannot refuse as long as your demand is directly proportional to the bet won.
+> (Tag:rule)(Tag:social)Whenever you win a competition or bet, you dictate your reward terms and the other party cannot refuse as long as your demand is directly proportional to the bet won.
 
 **Decision**
 
@@ -1213,7 +1268,7 @@
 
 **Description**
 
-> Married women and MILFs find you more attractive and consider you a potential romantic interest more easily.
+> (Tag:social)Married women and MILFs find you more attractive and consider you a potential romantic interest more easily.
 
 **Decision**
 
@@ -1230,7 +1285,7 @@
 
 **Description**
 
-> You are the best dancer around, with enhanced body control, finesse, balance, rhythm, and nimbleness.
+> (Tag:dexterity+)(Tag:talent)You are the best dancer around, with enhanced body control, finesse, balance, rhythm, and nimbleness.
 
 **Decision**
 
@@ -1247,7 +1302,7 @@
 
 **Description**
 
-> Drinking milk replenishes your Energy.
+> (Tag:energy-recovery)Drinking milk replenishes your Energy.
 
 **Decision**
 
@@ -1264,7 +1319,7 @@
 
 **Description**
 
-> Mundane animals like you, and non-mundane ones warm to you more easily.
+> (Tag:nature)(Tag:social)Mundane animals like you, and non-mundane ones warm to you more easily.
 
 **Decision**
 
@@ -1298,7 +1353,7 @@
 
 **Description**
 
-> (Nsfw) You expertly correct bad attitudes through sex.
+> (Tag:nsfw)(Tag:social)(Nsfw) You expertly correct bad attitudes through sex.
 
 **Flagged in reports**
 
@@ -1319,7 +1374,7 @@
 
 **Description**
 
-> You exude goodness and purity, so good-aligned beings like you more and you more easily convince others you are doing good.
+> (Tag:social)You exude goodness and purity, so good-aligned beings like you more and you more easily convince others you are doing good.
 
 **Decision**
 
@@ -1336,7 +1391,7 @@
 
 **Description**
 
-> You carry a raw bad boy/girl edge that attracts emos and edgy people, and your rudeness more often comes across as cool.
+> (Tag:mental)(Tag:social)You carry a raw bad boy/girl edge that attracts emos and edgy people, and your rudeness more often comes across as cool.
 
 **Decision**
 
@@ -1370,7 +1425,7 @@
 
 **Description**
 
-> You project a noticeable aura of refinement and grace that calms those around you.
+> (Tag:mind)(Tag:social)You project a noticeable aura of refinement and grace that calms those around you.
 
 **Decision**
 
@@ -1387,7 +1442,7 @@
 
 **Description**
 
-> You have a powerful, versatile voice that can be loud, quiet, smooth, rugged, feminine, masculine, and more. It boosts the power of voice-based abilities.
+> (Tag:sound+)(Tag:talent)You have a powerful, versatile voice that can be loud, quiet, smooth, rugged, feminine, masculine, and more. It boosts the power of voice-based abilities.
 
 **Decision**
 
@@ -1404,7 +1459,7 @@
 
 **Description**
 
-> Your skin is abnormally tough, enhancing your durability beyond the norm.
+> (Tag:body)(Tag:defence+)Your skin is abnormally tough, enhancing your durability beyond the norm.
 
 **Decision**
 
@@ -1421,7 +1476,7 @@
 
 **Description**
 
-> You resist fire and fire-based effects and attacks. This resistance scales with your basic stats.
+> (Tag:fire)(Tag:fire-resistance+)You resist fire and fire-based effects and attacks. This resistance scales with your basic stats.
 
 **Decision**
 
@@ -1438,7 +1493,7 @@
 
 **Description**
 
-> You resist water and water-based effects and attacks. This resistance scales with your basic stats.
+> (Tag:water)(Tag:water-resistance+)You resist water and water-based effects and attacks. This resistance scales with your basic stats.
 
 **Decision**
 
@@ -1455,7 +1510,7 @@
 
 **Description**
 
-> You resist air and weather-based effects and attacks. This resistance scales with your basic stats.
+> (Tag:air-resistance+)You resist air and weather-based effects and attacks. This resistance scales with your basic stats.
 
 **Decision**
 
@@ -1472,7 +1527,7 @@
 
 **Description**
 
-> You resist lightning and lightning-based effects and attacks. This resistance scales with your basic stats.
+> (Tag:electric)(Tag:electric-resistance+)You resist lightning and lightning-based effects and attacks. This resistance scales with your basic stats.
 
 **Decision**
 
@@ -1489,7 +1544,7 @@
 
 **Description**
 
-> You resist Earth and earth-based attacks and effects, but metal does not count. This resistance scales with your basic stats.
+> (Tag:earth)(Tag:earth-resistance+)You resist Earth and earth-based attacks and effects, but metal does not count. This resistance scales with your basic stats.
 
 **Decision**
 
@@ -1506,7 +1561,7 @@
 
 **Description**
 
-> You resist ice and ice-based attacks and effects. This resistance scales with your basic stats.
+> (Tag:ice)(Tag:ice-resistance+)You resist ice and ice-based attacks and effects. This resistance scales with your basic stats.
 
 **Decision**
 
@@ -1523,7 +1578,7 @@
 
 **Description**
 
-> You maintain a comfortable, optimal body temperature as long as the environment is no hotter than 1000°C and no colder than -100°C.
+> (Tag:fire-resistance+)(Tag:ice-resistance+)(Tag:lifestyle)You maintain a comfortable, optimal body temperature as long as the environment is no hotter than 1000°C and no colder than -100°C.
 
 **Decision**
 
@@ -1540,7 +1595,7 @@
 
 **Description**
 
-> All animals adore you and stay friendly toward you, and animal-aligned entities like you more easily so you earn their affection and bond faster. You also sing incredibly well even without training.
+> (Tag:social)(Tag:talent)All animals adore you and stay friendly toward you, and animal-aligned entities like you more easily so you earn their affection and bond faster. You also sing incredibly well even without training.
 
 **Decision**
 
@@ -1557,7 +1612,7 @@
 
 **Description**
 
-> Your clothes and wardrobe stay clean and tidy, and small damage mends itself.
+> (Tag:lifestyle)Your clothes and wardrobe stay clean and tidy, and small damage mends itself.
 
 **Decision**
 
@@ -1574,7 +1629,7 @@
 
 **Description**
 
-> You are an anomaly who somehow untangles yourself whenever you are bound or restrained.
+> (Tag:rule)You are an anomaly who somehow untangles yourself whenever you are bound or restrained.
 
 **Decision**
 
@@ -1591,7 +1646,7 @@
 
 **Description**
 
-> You understand all mundane languages and learn non-mundane ones very easily.
+> (Tag:lifestyle)(Tag:talent)You understand all mundane languages and learn non-mundane ones very easily.
 
 **Decision**
 
@@ -1608,7 +1663,7 @@
 
 **Description**
 
-> You naturally walk silently and softly like an assassin or cat.
+> (Tag:stealth+)You naturally walk silently and softly like an assassin or cat.
 
 **Decision**
 
@@ -1625,7 +1680,7 @@
 
 **Description**
 
-> Whenever someone tries to curse you, the curse is nullified or reflected back depending on the power difference between you and them.
+> (Tag:curse-resistance+)(Tag:magic)Whenever someone tries to curse you, the curse is nullified or reflected back depending on the power difference between you and them.
 
 **Decision**
 
@@ -1642,7 +1697,7 @@
 
 **Description**
 
-> When you stand still you blend into your surroundings, and after 10 minutes people neither detect your breathing nor acknowledge you. This effect ends when you make any major movement like attacking or fleeing.
+> (Tag:stealth+)When you stand still you blend into your surroundings, and after 10 minutes people neither detect your breathing nor acknowledge you. This effect ends when you make any major movement like attacking or fleeing.
 
 **Decision**
 
@@ -1659,7 +1714,7 @@
 
 **Description**
 
-> You have no distinct scent and smell like whatever the person smelling you likes.
+> (Tag:lifestyle)You have no distinct scent and smell like whatever the person smelling you likes.
 
 **Decision**
 
@@ -1676,7 +1731,7 @@
 
 **Description**
 
-> You spot treasure and valuables very easily, with treasures in sight highlighted.
+> (Tag:ocular)(Tag:sense)You spot treasure and valuables very easily, with treasures in sight highlighted.
 
 **Decision**
 
@@ -1693,7 +1748,7 @@
 
 **Description**
 
-> You can eat and digest just about anything that is not lethal poison to you.
+> (Tag:poison-resistance+)You can eat and digest just about anything that is not lethal poison to you.
 
 **Decision**
 
@@ -1710,7 +1765,7 @@
 
 **Description**
 
-> You see the future in your dreams, with or without your consent.
+> (Tag:divination)(Tag:time)You see the future in your dreams, with or without your consent.
 
 **Decision**
 
@@ -1727,7 +1782,7 @@
 
 **Description**
 
-> When you win against someone, you can force them to grant you a reward proportional to your victory. Minor victories yield minor rewards, while a fight to the death yields a reward equal in value to their life. The reward must be something they are capable of granting.
+> (Tag:rule)When you win against someone, you can force them to grant you a reward proportional to your victory. Minor victories yield minor rewards, while a fight to the death yields a reward equal in value to their life. The reward must be something they are capable of granting.
 
 **Decision**
 
@@ -1744,7 +1799,7 @@
 
 **Description**
 
-> Upgrade of Perfumer - You smell really good, even your sweat, with natural body odor like perfume most people like. You never smell bad.
+> (Tag:lifestyle)Upgrade of Perfumer - You smell really good, even your sweat, with natural body odor like perfume most people like. You never smell bad.
 
 **Decision**
 
@@ -1761,7 +1816,7 @@
 
 **Description**
 
-> You are poisonous, so anyone who eats your flesh has a mildly bad time.
+> (Tag:body)(Tag:poison)You are poisonous, so anyone who eats your flesh has a mildly bad time.
 
 **Decision**
 
@@ -1778,7 +1833,7 @@
 
 **Description**
 
-> Your bite contains paralyzing venom that scales with your physical abilities.
+> (Tag:body)(Tag:poison)Your bite contains paralyzing venom that scales with your physical abilities.
 
 **Decision**
 
@@ -1795,7 +1850,7 @@
 
 **Description**
 
-> You tolerate horrible sleeping conditions, strain, wounds, and exhaustion far better, making you very hardy and enduring.
+> (Tag:mind+)You tolerate horrible sleeping conditions, strain, wounds, and exhaustion far better, making you very hardy and enduring.
 
 **Decision**
 
@@ -1812,7 +1867,7 @@
 
 **Description**
 
-> You are supernaturally attuned to the world around you, hearing its voice in whispers of wind and city.
+> (Tag:divination)(Tag:mind)You are supernaturally attuned to the world around you, hearing its voice in whispers of wind and city.
 
 **Decision**
 
@@ -1829,7 +1884,7 @@
 
 **Description**
 
-> You are unusually attuned to supernatural instincts, randomly hearing insights and flashes of the future you must decipher. Honing this sense grants otherwise-unobtainable insights, but without control you cannot distinguish reality from intuition like a schizophrenic.
+> (Tag:divination)(Tag:mind)You are unusually attuned to supernatural instincts, randomly hearing insights and flashes of the future you must decipher. Honing this sense grants otherwise-unobtainable insights, but without control you cannot distinguish reality from intuition like a schizophrenic.
 
 **Decision**
 
@@ -1846,7 +1901,7 @@
 
 **Description**
 
-> You are unnaturally attuned to your baser fight, flight, and fuck instincts, almost hearing them speak to you. Honing this sense helps you gauge others, fight, and know when to run, but without control you become a paranoid savage.
+> (Tag:martial)(Tag:mind)You are unnaturally attuned to your baser fight, flight, and fuck instincts, almost hearing them speak to you. Honing this sense helps you gauge others, fight, and know when to run, but without control you become a paranoid savage.
 
 **Decision**
 
@@ -1863,7 +1918,7 @@
 
 **Description**
 
-> You are unnaturally connected to your inner morale, determination, and will to keep going. Honing this sense lets you hold your will against extreme adversity and perform feats of willpower with ease, but losing control leads to overconfidence.
+> (Tag:mental-resistance+)(Tag:mind)You are unnaturally connected to your inner morale, determination, and will to keep going. Honing this sense lets you hold your will against extreme adversity and perform feats of willpower with ease, but losing control leads to overconfidence.
 
 **Decision**
 
@@ -1880,7 +1935,7 @@
 
 **Description**
 
-> You listen to your inner detective with increased deductive reasoning and cue-reading, making you basically a detective without any real detective training.
+> (Tag:mind)(Tag:talent)You listen to your inner detective with increased deductive reasoning and cue-reading, making you basically a detective without any real detective training.
 
 **Decision**
 
@@ -1897,7 +1952,7 @@
 
 **Description**
 
-> Your body holds approximately 5 times the average person's blood with no noticeable effect on you.
+> (Tag:blood)(Tag:body)Your body holds approximately 5 times the average person's blood with no noticeable effect on you.
 
 **Decision**
 
@@ -1914,7 +1969,7 @@
 
 **Description**
 
-> You are incredibly steady with no small shakes and no lost footing, so you can hold a gun like it is on a tripod even hopped up on adrenaline.
+> (Tag:martial)You are incredibly steady with no small shakes and no lost footing, so you can hold a gun like it is on a tripod even hopped up on adrenaline.
 
 **Decision**
 
@@ -1931,7 +1986,7 @@
 
 **Description**
 
-> You empathize with and understand others' emotions to a savant degree.
+> (Tag:social)(Tag:talent)You empathize with and understand others' emotions to a savant degree.
 
 **Decision**
 
@@ -1948,7 +2003,7 @@
 
 **Description**
 
-> Your body accepts change without damage and curbs negative side effects, so healing works better on you and changes like super soldier serum or unstable abilities harm you less.
+> (Tag:body)Your body accepts change without damage and curbs negative side effects, so healing works better on you and changes like super soldier serum or unstable abilities harm you less.
 
 **Decision**
 
@@ -1965,7 +2020,7 @@
 
 **Description**
 
-> Your recovery abilities are more potent and cost less energy, and people feel more grateful for your healing.
+> (Tag:recovery+)(Tag:social)Your recovery abilities are more potent and cost less energy, and people feel more grateful for your healing.
 
 **Decision**
 
@@ -1982,7 +2037,7 @@
 
 **Description**
 
-> Race Change - You look unchanged but your physiology is overhauled into an Endbringer's, granting extreme physical stats and complete immunity to all Biological and mental abilities. Your body has hundreds of layers that grow exponentially more durable toward your core through warped spacetime, though outer layers are not much more durable, and you eventually regenerate as long as your core survives. Reaching your core requires destroying at least a planet-sized mass even at minimum durability, you resist unwilling Spacetime effects, your durability and stats scale with base stats, and you retain all prior bodily functions.
+> (Tag:bio-resistance+)(Tag:defence+)(Tag:mental-resistance+)(Tag:race-change)Race Change - You look unchanged but your physiology is overhauled into an Endbringer's, granting extreme physical stats and complete immunity to all Biological and mental abilities. Your body has hundreds of layers that grow exponentially more durable toward your core through warped spacetime, though outer layers are not much more durable, and you eventually regenerate as long as your core survives. Reaching your core requires destroying at least a planet-sized mass even at minimum durability, you resist unwilling Spacetime effects, your durability and stats scale with base stats, and you retain all prior bodily functions.
 
 **Decision**
 
@@ -1999,7 +2054,7 @@
 
 **Description**
 
-> You are very healthy with slightly increased vitality and virility, and any prior natural health complications are fixed.
+> (Tag:vitality+)You are very healthy with slightly increased vitality and virility, and any prior natural health complications are fixed.
 
 **Decision**
 
@@ -2016,7 +2071,7 @@
 
 **Description**
 
-> You have great cardio with slightly increased stamina and exhaustion recovery from a good heart and lungs.
+> (Tag:stamina+)You have great cardio with slightly increased stamina and exhaustion recovery from a good heart and lungs.
 
 **Decision**
 
@@ -2033,7 +2088,7 @@
 
 **Description**
 
-> You are pretty nimble with slightly faster reflexes and speed.
+> (Tag:agility+)You are pretty nimble with slightly faster reflexes and speed.
 
 **Decision**
 
@@ -2050,7 +2105,7 @@
 
 **Description**
 
-> You are fairly tough with slightly increased defense to take more punishment.
+> (Tag:defence+)You are fairly tough with slightly increased defense to take more punishment.
 
 **Decision**
 
@@ -2067,7 +2122,7 @@
 
 **Description**
 
-> You are naturally strong with slightly increased strength to exert more force.
+> (Tag:strength+)You are naturally strong with slightly increased strength to exert more force.
 
 **Decision**
 
@@ -2084,7 +2139,7 @@
 
 **Description**
 
-> Your energy reserves and recovery speed are greater than average.
+> (Tag:energy-regeneration+)(Tag:maximum-energy+)Your energy reserves and recovery speed are greater than average.
 
 **Decision**
 
@@ -2101,7 +2156,7 @@
 
 **Description**
 
-> Your body does not need to breathe but still gains all breathing benefits even in airless environments. You can also speak without air.
+> (Tag:body)Your body does not need to breathe but still gains all breathing benefits even in airless environments. You can also speak without air.
 
 **Decision**
 
@@ -2152,7 +2207,7 @@
 
 **Description**
 
-> You are a natural-born Magician who learns, understands, and develops magic far faster with unique intuition for it.
+> (Tag:magic)(Tag:talent)You are a natural-born Magician who learns, understands, and develops magic far faster with unique intuition for it.
 
 **Decision**
 
@@ -2169,7 +2224,7 @@
 
 **Description**
 
-> You are a natural in martial arts, moving efficiently and powerfully by second nature while learning and developing them far faster with unique combat intuition.
+> (Tag:martial)(Tag:talent)You are a natural in martial arts, moving efficiently and powerfully by second nature while learning and developing them far faster with unique combat intuition.
 
 **Decision**
 
@@ -2186,7 +2241,7 @@
 
 **Description**
 
-> You are a naturally born Esper who understands, develops, and masters abilities far faster with unique intuition for them. Ability cooldowns are halved.
+> (Tag:mental)(Tag:meta)(Tag:talent)You are a naturally born Esper who understands, develops, and masters abilities far faster with unique intuition for them. Ability cooldowns are halved.
 
 **Decision**
 
@@ -2203,7 +2258,7 @@
 
 **Description**
 
-> You are blessed by Poseidon to move underwater as naturally as above water, and all mundane aquatic life is friendly to you.
+> (Tag:social)(Tag:water)You are blessed by Poseidon to move underwater as naturally as above water, and all mundane aquatic life is friendly to you.
 
 **Decision**
 
@@ -2220,7 +2275,7 @@
 
 **Description**
 
-> (Tech) You are a natural at building technology with more potent Tinker abilities, easier innovation and building, and further-pushed specializations. (A/N: If you pulled this perk without having a Tinker ability, reroll the ticket) 4/28288.
+> (Tag:talent)(Tag:tech+)(Tech) You are a natural at building technology with more potent Tinker abilities, easier innovation and building, and further-pushed specializations. (A/N: If you pulled this perk without having a Tinker ability, reroll the ticket) 4/28288.
 
 **Decision**
 
@@ -2237,7 +2292,7 @@
 
 **Description**
 
-> (Tech) You have heightened intuition for interfacing with technology, bypassing code and technological defenses, infiltrating networks, and exploiting faults.
+> (Tag:talent)(Tag:tech)(Tech) You have heightened intuition for interfacing with technology, bypassing code and technological defenses, infiltrating networks, and exploiting faults.
 
 **Decision**
 
@@ -2254,7 +2309,7 @@
 
 **Description**
 
-> You easily sense what people feel, understand emotions better, and control your own emotions far better.
+> (Tag:social)(Tag:talent)You easily sense what people feel, understand emotions better, and control your own emotions far better.
 
 **Decision**
 
@@ -2271,7 +2326,7 @@
 
 **Description**
 
-> Your unsurpassed one-in-3000-years talent makes learning, understanding, and developing magic as natural as breathing. What takes an average mage a hundred years, you learn in one.
+> (Tag:magic)(Tag:talent)Your unsurpassed one-in-3000-years talent makes learning, understanding, and developing magic as natural as breathing. What takes an average mage a hundred years, you learn in one.
 
 **Decision**
 
@@ -2288,7 +2343,7 @@
 
 **Description**
 
-> Your inhuman martial arts talent makes learning and developing as natural as breathing, grasping styles from simple glances. What takes 100 years to master takes you barely a year.
+> (Tag:martial)(Tag:talent)Your inhuman martial arts talent makes learning and developing as natural as breathing, grasping styles from simple glances. What takes 100 years to master takes you barely a year.
 
 **Decision**
 
@@ -2305,7 +2360,7 @@
 
 **Description**
 
-> You are an esper beyond espers whose monstrous potency makes using, developing, and mastering abilities as natural as breathing at much less energy cost. You can even train out hardcoded effects like cooldowns and limits.
+> (Tag:meta)(Tag:talent)You are an esper beyond espers whose monstrous potency makes using, developing, and mastering abilities as natural as breathing at much less energy cost. You can even train out hardcoded effects like cooldowns and limits.
 
 **Decision**
 
@@ -2322,7 +2377,7 @@
 
 **Description**
 
-> (Tech) You are the supreme Tinker who innovates wondrous constructs on your own merits without needing specializations, which now only boost your natural prowess. You cannot utilize Tinker abilities that are not from your native world.
+> (Tag:talent)(Tag:tech)(Tech) You are the supreme Tinker who innovates wondrous constructs on your own merits without needing specializations, which now only boost your natural prowess. You cannot utilize Tinker abilities that are not from your native world.
 
 **Decision**
 
@@ -2339,7 +2394,7 @@
 
 **Description**
 
-> (Gacha) Every time you would roll the ticket, you first roll a D20: {20}= Ticket Rank Up, {19 - 17}= Advantage, {16 - 13}= Change Ticket Type, {12 - 8}= Nothing happens, {7 - 2}= Ticket Rank Down, {1}= Ticket is destroyed. This trait can be rerolled or toggled.
+> (Tag:meta)(Gacha) Every time you would roll the ticket, you first roll a D20: {20}= Ticket Rank Up, {19 - 17}= Advantage, {16 - 13}= Change Ticket Type, {12 - 8}= Nothing happens, {7 - 2}= Ticket Rank Down, {1}= Ticket is destroyed. This trait can be rerolled or toggled.
 
 **Decision**
 
@@ -2348,7 +2403,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 95. Lady Killer
+## 95. Heartbreaker
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -2356,7 +2411,7 @@
 
 **Description**
 
-> Women always find you at least a little attractive regardless of preferences, and many consider you handsome.
+> People always find you at least a little attractive regardless of preferences, and many consider you strikingly attractive.
 
 **Decision**
 
@@ -2373,7 +2428,7 @@
 
 **Description**
 
-> Your smile charms others, putting people at ease and making you more attractive to preferred partners.
+> (Tag:social)Your smile charms others, putting people at ease and making you more attractive to preferred partners.
 
 **Decision**
 
@@ -2390,7 +2445,7 @@
 
 **Description**
 
-> Your breath always smells fresh and minty regardless of what you ate.
+> (Tag:lifestyle)Your breath always smells fresh and minty regardless of what you ate.
 
 **Decision**
 
@@ -2407,7 +2462,7 @@
 
 **Description**
 
-> When you act perverted it comes across as charming or at most exasperating, so people do not mind as long as you do not cross the line.
+> (Tag:nsfw)(Tag:social)When you act perverted it comes across as charming or at most exasperating, so people do not mind as long as you do not cross the line.
 
 **Flagged in reports**
 
@@ -2428,7 +2483,7 @@
 
 **Description**
 
-> Your iron-like fists enhance the power of your unarmed strikes and fist-type abilities.
+> (Tag:martial)Your iron-like fists enhance the power of your unarmed strikes and fist-type abilities.
 
 **Decision**
 
@@ -2445,7 +2500,7 @@
 
 **Description**
 
-> You learn, process, and utilize knowledge far faster than anyone of your caliber should, outpacing most computers.
+> (Tag:mind)(Tag:talent)You learn, process, and utilize knowledge far faster than anyone of your caliber should, outpacing most computers.
 
 **Decision**
 
@@ -2462,7 +2517,7 @@
 
 **Description**
 
-> You can activate a filter that censors your privates, removes gore, and otherwise makes you presentable to a younger audience.
+> (Tag:rule)(Tag:social)You can activate a filter that censors your privates, removes gore, and otherwise makes you presentable to a younger audience.
 
 **Decision**
 
@@ -2479,7 +2534,7 @@
 
 **Description**
 
-> Your reflexes are beyond the norm, letting even a base human weave around punches and aim-dodge guns with training. This scales with your stats.
+> (Tag:reflex+)Your reflexes are beyond the norm, letting even a base human weave around punches and aim-dodge guns with training. This scales with your stats.
 
 **Decision**
 
@@ -2496,7 +2551,7 @@
 
 **Description**
 
-> You sometimes receive short precognitive visions before stumbling into danger, like stepping on a trap or being shot. This does not always trigger but grows more likely the greater the danger to your life.
+> (Tag:divination)(Tag:survival)You sometimes receive short precognitive visions before stumbling into danger, like stepping on a trap or being shot. This does not always trigger but grows more likely the greater the danger to your life.
 
 **Decision**
 
@@ -2513,7 +2568,7 @@
 
 **Description**
 
-> In moments of need, a stranger with a revolver and fedora briefly assists you, like crippling an enemy or disabling a trap. (Once a skilled man with a gun becomes useless to you, he drops by one last time to give you a gold rarity trait ticket as a refund before this trait disappears.)
+> (Tag:meta)(Tag:summon)In moments of need, a stranger with a revolver and fedora briefly assists you, like crippling an enemy or disabling a trap. (Once a skilled man with a gun becomes useless to you, he drops by one last time to give you a gold rarity trait ticket as a refund before this trait disappears.)
 
 **Flagged in reports**
 
@@ -2534,7 +2589,7 @@
 
 **Description**
 
-> Your skeleton is exceptionally durable, with bones that break far less easily and absorb shock far better.
+> (Tag:body)(Tag:defence+)Your skeleton is exceptionally durable, with bones that break far less easily and absorb shock far better.
 
 **Decision**
 
@@ -2551,7 +2606,7 @@
 
 **Description**
 
-> Your claws are exceptionally sharp and durable, strengthening all claw-based attacks and abilities, and you can turn your nails into simple claws at will.
+> (Tag:body)(Tag:transformation)Your claws are exceptionally sharp and durable, strengthening all claw-based attacks and abilities, and you can turn your nails into simple claws at will.
 
 **Decision**
 
@@ -2568,7 +2623,7 @@
 
 **Description**
 
-> Your nerves are iron; you never flinch or startle, without any loss to your reflexes.
+> (Tag:mind)Your nerves are iron; you never flinch or startle, without any loss to your reflexes.
 
 **Decision**
 
@@ -2585,7 +2640,7 @@
 
 **Description**
 
-> You smell magic and mysticism, deciphering people through their magical scent — a necromancer reeks of death and decay, an ice magician smells like crisp winter air, etc.
+> (Tag:magic)(Tag:perception+)You smell magic and mysticism, deciphering people through their magical scent, a necromancer reeks of death and decay, an ice magician smells like crisp winter air, etc.
 
 **Decision**
 
@@ -2602,7 +2657,7 @@
 
 **Description**
 
-> (Nsfw) Your partners feel no discomfort from your physical features; your phallus somehow fits inside them even at ludicrous sizes.
+> (Tag:nsfw)(Tag:rule)(Nsfw) Your partners feel no discomfort from your physical features; your anatomy somehow fits them even at ludicrous sizes.
 
 **Flagged in reports**
 
@@ -2623,7 +2678,7 @@
 
 **Description**
 
-> You sense the location of salt, but only salt ready for human consumption.
+> (Tag:perception+)You sense the location of salt, but only salt ready for human consumption.
 
 **Decision**
 
@@ -2640,7 +2695,7 @@
 
 **Description**
 
-> You exert authority and receive obedience from subordinates more effectively, and you organize, manage, command, and sustain their morale better.
+> (Tag:command)You exert authority and receive obedience from subordinates more effectively, and you organize, manage, command, and sustain their morale better.
 
 **Decision**
 
@@ -2657,7 +2712,7 @@
 
 **Description**
 
-> Your sweat, saliva, and cum heal others, scaling with your physical stats. The effect is mild but real — someone can lick sweat off your abs to heal.
+> (Tag:body)(Tag:health-recovery)Your sweat, saliva, and cum heal others, scaling with your physical stats. The effect is mild but real, someone can lick sweat off your abs to heal.
 
 **Flagged in reports**
 
@@ -2678,7 +2733,7 @@
 
 **Description**
 
-> Gods favor you, making it easier to garner favor and affection from divine beings, and your Blessing-type abilities are slightly stronger.
+> (Tag:holy+)(Tag:social)Gods favor you, making it easier to garner favor and affection from divine beings, and your Blessing-type abilities are slightly stronger.
 
 **Decision**
 
@@ -2695,7 +2750,7 @@
 
 **Description**
 
-> Your senses cannot be hindered — sand in your eyes will not blind you, and sonic blasts will not deafen you. Only physically removing the organ impairs them.
+> (Tag:perception+)Your senses cannot be hindered, sand in your eyes will not blind you, and sonic blasts will not deafen you. Only physically removing the organ impairs them.
 
 **Decision**
 
@@ -2712,7 +2767,7 @@
 
 **Description**
 
-> Your awareness far exceeds average; you easily detect problems in your body, resist surprise, and read your surroundings.
+> (Tag:perception+)Your awareness far exceeds average; you easily detect problems in your body, resist surprise, and read your surroundings.
 
 **Decision**
 
@@ -2729,7 +2784,7 @@
 
 **Description**
 
-> You share great affinity with birds, avians, and aligned creatures, earning their affection, favor, and relationships more easily. All flight also feels more natural and costs less energy to maintain.
+> (Tag:avian)(Tag:social)(Tag:talent)You share great affinity with birds, avians, and aligned creatures, earning their affection, favor, and relationships more easily. All flight also feels more natural and costs less energy to maintain.
 
 **Decision**
 
@@ -2746,7 +2801,7 @@
 
 **Description**
 
-> Your skin is far denser and tougher than average yet smooth and pleasant to touch, scaling with your physical stats to serve as natural armor at higher levels.
+> (Tag:body)Your skin is far denser and tougher than average yet smooth and pleasant to touch, scaling with your physical stats to serve as natural armor at higher levels.
 
 **Decision**
 
@@ -2763,7 +2818,7 @@
 
 **Description**
 
-> Your legs are stronger and tougher than average, slightly increasing your speed and substantially boosting your kick power.
+> (Tag:body)(Tag:strength+)Your legs are stronger and tougher than average, slightly increasing your speed and substantially boosting your kick power.
 
 **Decision**
 
@@ -2780,7 +2835,7 @@
 
 **Description**
 
-> You are a natural pyromantic; your fire abilities cost less energy and your fire and heat resistance increase. You recover energy faster when hot and slower when cold.
+> (Tag:energy-regeneration+)(Tag:fire)(Tag:fire+)(Tag:fire-resistance+)You are a natural pyromantic; your fire abilities cost less energy and your fire and heat resistance increase. You recover energy faster when hot and slower when cold.
 
 **Decision**
 
@@ -2797,7 +2852,7 @@
 
 **Description**
 
-> You are a natural with cold; your ice-based abilities cost less energy and your ice and cold resistance increase. You recover energy faster when cold and slower when hot.
+> (Tag:energy-regeneration+)(Tag:ice)(Tag:ice+)(Tag:ice-resistance+)You are a natural with cold; your ice-based abilities cost less energy and your ice and cold resistance increase. You recover energy faster when cold and slower when hot.
 
 **Decision**
 
@@ -2814,7 +2869,7 @@
 
 **Description**
 
-> Nature subtly favors you: you find fresh, healthy fruit on walks, grow gardens with minimal care, and earn favor from nature-aligned beings more easily. You also recover energy faster the closer you are to nature.
+> (Tag:energy-regeneration+)(Tag:nature)(Tag:nature+)Nature subtly favors you: you find fresh, healthy fruit on walks, grow gardens with minimal care, and earn favor from nature-aligned beings more easily. You also recover energy faster the closer you are to nature.
 
 **Decision**
 
@@ -2831,7 +2886,7 @@
 
 **Description**
 
-> Your mind is a palace under your absolute control; you are immune to all mind abilities below Mythical level, with enhanced thought speed and perfect memory. You learn much faster than average and can freely reshape your mindscape.
+> (Tag:mental-resistance+)(Tag:mind)(Tag:mind+)(Tag:talent)Your mind is a palace under your absolute control; you are immune to all mind abilities below Mythical level, with enhanced thought speed and perfect memory. You learn much faster than average and can freely reshape your mindscape.
 
 **Decision**
 
@@ -2848,7 +2903,7 @@
 
 **Description**
 
-> You are a once-in-a-generation polymath in all areas, improving in every field vastly faster than average.
+> (Tag:talent)You are a once-in-a-generation polymath in all areas, improving in every field vastly faster than average.
 
 **Decision**
 
@@ -2865,7 +2920,7 @@
 
 **Description**
 
-> You are talented in every field, picking up and improving any skill considerably faster than average.
+> (Tag:talent)You are talented in every field, picking up and improving any skill considerably faster than average.
 
 **Decision**
 
@@ -2882,7 +2937,7 @@
 
 **Description**
 
-> You are very persuasive, bringing people to your perspective and agreement more easily.
+> (Tag:social)(Tag:talent)You are very persuasive, bringing people to your perspective and agreement more easily.
 
 **Decision**
 
@@ -2899,7 +2954,7 @@
 
 **Description**
 
-> You excel at organizing and managing, distributing tasks and prioritizing effectively.
+> (Tag:talent)You excel at organizing and managing, distributing tasks and prioritizing effectively.
 
 **Decision**
 
@@ -2916,7 +2971,7 @@
 
 **Description**
 
-> All your Thinker abilities are more potent and cost less to use, and your Thinker headaches are mitigated.
+> (Tag:divination+)(Tag:mental)(Tag:sense+)All your Thinker abilities are more potent and cost less to use, and your Thinker headaches are mitigated.
 
 **Decision**
 
@@ -2933,7 +2988,7 @@
 
 **Description**
 
-> During tense, dramatic moments like standoffs, a stray tumbleweed passes dramatically between you and your opponent. It fades from existence the moment it stops being observed.
+> (Tag:lifestyle)During tense, dramatic moments like standoffs, a stray tumbleweed passes dramatically between you and your opponent. It fades from existence the moment it stops being observed.
 
 **Decision**
 
@@ -2967,7 +3022,7 @@
 
 **Description**
 
-> You share great affinity with cats, tigers, felines, and aligned creatures, earning their affection, favor, and relationships more easily. Your feline affinity also grants unusual flexibility, heightened balance, and slightly improved reflexes.
+> (Tag:agility+)(Tag:social)You share great affinity with cats, tigers, felines, and aligned creatures, earning their affection, favor, and relationships more easily. Your feline affinity also grants unusual flexibility, heightened balance, and slightly improved reflexes.
 
 **Decision**
 
@@ -2984,7 +3039,7 @@
 
 **Description**
 
-> (Nsfw) You eliminate sex's minor inconveniences, adjusting how STDs, hygiene, and unwanted pregnancy affect you. You are also very talented in the tantric arts.
+> (Tag:nsfw)(Tag:rule)(Tag:talent)(Nsfw) You eliminate sex's minor inconveniences, adjusting how STDs, hygiene, and unwanted pregnancy affect you. You are also very talented in the tantric arts.
 
 **Decision**
 
@@ -3001,7 +3056,7 @@
 
 **Description**
 
-> Your swimmers are the strongest in the world; any woman you cum inside WILL get pregnant, even if she is more barren than arid deserts. (If you didn't have the right equipment before, you will now if you choose to. If not, reroll this trait.)
+> (Tag:nsfw)(Tag:rule)(Noncon) Your swimmers are the strongest in the world; anyone you cum inside WILL get pregnant, even if they are more barren than arid deserts. (If you lack the right equipment, you gain it should you choose to. If not, reroll this trait.)
 
 **Decision**
 
@@ -3018,7 +3073,7 @@
 
 **Description**
 
-> "You only live once." At the moment of your death, you resuscitate with all lethal wounds healed and some energy restored, then this trait is deleted from your status.
+> (Tag:energy-recovery)(Tag:health-recovery)(Tag:survival)"You only live once." At the moment of your death, you resuscitate with all lethal wounds healed and some energy restored, then this trait is deleted from your status.
 
 **Decision**
 
@@ -3035,7 +3090,7 @@
 
 **Description**
 
-> You are a Hero in training, fit for the title or not; all your Holy and Light abilities are slightly enhanced, and your blessings gain strength and duration.
+> (Tag:holy+)(Tag:light+)(Tag:social)(Tag:talent)You are a Hero in training, fit for the title or not; all your Holy and Light abilities are slightly enhanced, and your blessings gain strength and duration.
 
 **Decision**
 
@@ -3052,7 +3107,7 @@
 
 **Description**
 
-> You are a Demon Lord to be, fit for the title or not; all your Darkness and Unholy abilities are slightly enhanced, but you are more vulnerable to Holy and Light abilities.
+> (Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:talent)You are a Demon Lord to be, fit for the title or not; all your Darkness and Unholy abilities are slightly enhanced, but you are more vulnerable to Holy and Light abilities.
 
 **Decision**
 
@@ -3069,7 +3124,7 @@
 
 **Description**
 
-> Goths, emos, and those with daddy issues are drawn to you, making their affection and favor easier to garner. People also overlook your less-favorable actions more easily.
+> (Tag:social)Goths, emos, and those with daddy issues are drawn to you, making their affection and favor easier to garner. People also overlook your less-favorable actions more easily.
 
 **Decision**
 
@@ -3086,7 +3141,7 @@
 
 **Description**
 
-> You fade into the background easily; unless you draw attention, people often overlook you and find you hard to notice. This fails against those looking for you or aware you are there. Your Stranger-class abilities are slightly more potent.
+> (Tag:stealth+)You fade into the background easily; unless you draw attention, people often overlook you and find you hard to notice. This fails against those looking for you or aware you are there. Your Stranger-class abilities are slightly more potent.
 
 **Decision**
 
@@ -3103,7 +3158,7 @@
 
 **Description**
 
-> You are very hard to track: cameras stop recording when you enter frame, the elements cover your footprints, and witnesses cannot recall which way you went.
+> (Tag:divination-resistance+)You are very hard to track: cameras stop recording when you enter frame, the elements cover your footprints, and witnesses cannot recall which way you went.
 
 **Decision**
 
@@ -3120,7 +3175,7 @@
 
 **Description**
 
-> People want you on their side and dote on you to prevent your defection; higher-ups in your organization like and accommodate you more easily. Kings and queens who meet you will likely take a liking to you as well.
+> (Tag:social)People want you on their side and dote on you to prevent your defection; higher-ups in your organization like and accommodate you more easily. Kings and queens who meet you will likely take a liking to you as well.
 
 **Decision**
 
@@ -3137,7 +3192,7 @@
 
 **Description**
 
-> All your abilities that create constructs or new matter cost significantly less energy to produce and maintain.
+> (Tag:meta)All your abilities that create constructs or new matter cost significantly less energy to produce and maintain.
 
 **Decision**
 
@@ -3154,7 +3209,7 @@
 
 **Description**
 
-> You are peerless in bed, quickly adapting to partners' preferences and learning their weak spots, and you improve in the tantric arts much faster. None leave your bed unsatisfied.
+> (Tag:nsfw)(Tag:talent)You are peerless in bed, quickly adapting to partners' preferences and learning their weak spots, and you improve in the tantric arts much faster. None leave your bed unsatisfied.
 
 **Flagged in reports**
 
@@ -3175,7 +3230,7 @@
 
 **Description**
 
-> "You wake up, dreaming of a harem of demon girls." Infernally aligned/Demonic beings find you more attractive and grant their affection more easily.
+> (Tag:infernal)(Tag:social)"You wake up, dreaming of a harem of demons." Infernally aligned/Demonic beings find you more attractive and grant their affection more easily.
 
 **Decision**
 
@@ -3192,7 +3247,7 @@
 
 **Description**
 
-> "You wake up, dreaming of a harem of... angel girls? That doesn't sound right-" Holy aligned/Angelic beings find you more attractive and grant their affection more easily.
+> (Tag:holy)(Tag:social)"You wake up, dreaming of a harem of... angels? That doesn't sound right-" Holy aligned/Angelic beings find you more attractive and grant their affection more easily.
 
 **Decision**
 
@@ -3209,7 +3264,7 @@
 
 **Description**
 
-> Hell's gates are closed to you and heaven kicked down the ladder, leaving you stuck here. You remain in the mortal world as a soul after death.
+> (Tag:spirit)(Tag:survival)Hell's gates are closed to you and heaven kicked down the ladder, leaving you stuck here. You remain in the mortal world as a soul after death.
 
 **Decision**
 
@@ -3226,7 +3281,7 @@
 
 **Description**
 
-> Your unique physique devours curses like a hungry animal, fighting and slowly eating any curse placed on you, scaling with your maximum energy. Fully devouring a curse slightly increases your maximum energy, with diminished returns for repeats of the same curse. You also recover energy faster in places with more negativity.
+> (Tag:curse-resistance+)(Tag:energy-regeneration+)(Tag:maximum-energy+)Your unique physique devours curses like a hungry animal, fighting and slowly eating any curse placed on you, scaling with your maximum energy. Fully devouring a curse slightly increases your maximum energy, with diminished returns for repeats of the same curse. You also recover energy faster in places with more negativity.
 
 **Decision**
 
@@ -3243,7 +3298,7 @@
 
 **Description**
 
-> Your energy reserves and recovery speeds exceed the norm, letting you use abilities and spells longer.
+> (Tag:energy-regeneration+)(Tag:maximum-energy+)Your energy reserves and recovery speeds exceed the norm, letting you use abilities and spells longer.
 
 **Decision**
 
@@ -3260,7 +3315,7 @@
 
 **Description**
 
-> Your nervous system is overhauled, making your reflexes so fast they almost seem like precognition.
+> (Tag:reflex+)Your nervous system is overhauled, making your reflexes so fast they almost seem like precognition.
 
 **Decision**
 
@@ -3277,7 +3332,7 @@
 
 **Description**
 
-> Your mystical connection is far more potent; any magic you use is far stronger, and you can overload spells without breaking them.
+> (Tag:magic)(Tag:magic+)Your mystical connection is far more potent; any magic you use is far stronger, and you can overload spells without breaking them.
 
 **Decision**
 
@@ -3294,7 +3349,7 @@
 
 **Description**
 
-> You have nine lives; each time you die, you expend one life and return to full health.
+> (Tag:health-recovery)(Tag:survival)You have nine lives; each time you die, you expend one life and return to full health.
 
 **Decision**
 
@@ -3311,7 +3366,7 @@
 
 **Description**
 
-> You excel at reading, learning, and retaining information; you can read 50 books in a day and retain all their information.
+> (Tag:mind)(Tag:talent)You excel at reading, learning, and retaining information; you can read 50 books in a day and retain all their information.
 
 **Decision**
 
@@ -3328,7 +3383,7 @@
 
 **Description**
 
-> You were born in harsh winter winds; you resist cold and ice-based abilities better, and your ice-based abilities cost less energy.
+> (Tag:ice)(Tag:ice+)(Tag:ice-resistance+)You were born in harsh winter winds; you resist cold and ice-based abilities better, and your ice-based abilities cost less energy.
 
 **Decision**
 
@@ -3345,7 +3400,7 @@
 
 **Description**
 
-> You are a constant; your body cannot be changed by outside influences without your consent (such as soul manipulation or biomancy, not regular attacks). You are immune to paradoxes, and only one of you exists since you cannot be cloned or replicated.
+> (Tag:meta-resistance+)You are a constant; your body cannot be changed by outside influences without your consent (such as soul manipulation or biomancy, not regular attacks). You are immune to paradoxes, and only one of you exists since you cannot be cloned or replicated.
 
 **Decision**
 
@@ -3379,7 +3434,7 @@
 
 **Description**
 
-> You are destined to ride dragons; all dragons view you more favorably and grant their affection far more easily.
+> (Tag:draconic)(Tag:social)(Tag:summon+)(Tag:talent)You are destined to ride dragons; all dragons view you more favorably and grant their affection far more easily.
 
 **Decision**
 
@@ -3396,7 +3451,7 @@
 
 **Description**
 
-> You are an excellent master; servants under you view you more favorably and grant affection more easily. This also applies to submissive people.
+> (Tag:social)You are an excellent master; servants under you view you more favorably and grant affection more easily. This also applies to submissive people.
 
 **Decision**
 
@@ -3413,7 +3468,7 @@
 
 **Description**
 
-> Your presence is very corrupting; the longer you influence people, the more willing they become to betray their morals for you and ignore your actions' morality.
+> (Tag:social)Your presence is very corrupting; the longer you influence people, the more willing they become to betray their morals for you and ignore your actions' morality.
 
 **Decision**
 
@@ -3430,7 +3485,7 @@
 
 **Description**
 
-> You can turn off your killing potential; even if you hit a medieval serf with a final flash, he survives, albeit barely.
+> (Tag:rule)You can turn off your killing potential; even if you hit a medieval serf with a final flash, he survives, albeit barely.
 
 **Decision**
 
@@ -3447,7 +3502,7 @@
 
 **Description**
 
-> You are a gym nut; your body recovers from exercise far quicker and better, and your physical training efficiency is considerably increased. You can achieve peak human fitness in a few months of decent training.
+> (Tag:growth+)(Tag:talent)You are a gym nut; your body recovers from exercise far quicker and better, and your physical training efficiency is considerably increased. You can achieve peak human fitness in a few months of decent training.
 
 **Decision**
 
@@ -3464,7 +3519,7 @@
 
 **Description**
 
-> You were born in flames and molded by them; you are completely immune to all fire-based attacks. The higher your body temperature, the faster you recover energy and health, up to 500%.
+> (Tag:energy-regeneration+)(Tag:fire)(Tag:fire-resistance+)(Tag:health-regeneration+)You were born in flames and molded by them; you are completely immune to all fire-based attacks. The higher your body temperature, the faster you recover energy and health, up to 500%.
 
 **Decision**
 
@@ -3481,7 +3536,7 @@
 
 **Description**
 
-> You gain an extra ability slot.
+> (Tag:meta)You gain an extra ability slot.
 
 **Decision**
 
@@ -3498,7 +3553,7 @@
 
 **Description**
 
-> Your body refuses to change; you incredibly resist transformative abilities, forcing anyone changing you without consent to wrestle control first. Abilities like rot or wither inducement, sickness inducement, biokinesis, etc. are automatically resisted.
+> (Tag:meta-resistance+)Your body refuses to change; you incredibly resist transformative abilities, forcing anyone changing you without consent to wrestle control first. Abilities like rot or wither inducement, sickness inducement, biokinesis, etc. are automatically resisted.
 
 **Decision**
 
@@ -3515,7 +3570,7 @@
 
 **Description**
 
-> You are the Ice Monarch, ruler of all ice; you massively resist all elemental effects, and every element contacting you freezes. All your ice and frost-related abilities below Mythical Tier are increased by rank and cost less energy. All ice and frost-aligned beings instinctively recognize you as Monarch, and you are immune to ice and cold-based abilities.
+> (Tag:elemental-resistance+)(Tag:ice)(Tag:ice+)You are the Ice Monarch, ruler of all ice; you massively resist all elemental effects, and every element contacting you freezes. All your ice and frost-related abilities below Mythical Tier are increased by rank and cost less energy. All ice and frost-aligned beings instinctively recognize you as Monarch, and you are immune to ice and cold-based abilities.
 
 **Decision**
 
@@ -3532,7 +3587,7 @@
 
 **Description**
 
-> You are the Fire Monarch, ruler of all Fire and Plasma; your energy is massively enhanced, as your soul is an eternal reactor. All your Fire and Plasma-related abilities below Mythical Tier are increased by one rank and cost less energy. All fire and heat-aligned beings instinctively recognize you as Monarch, and you are immune to Fire and Plasma-based abilities.
+> (Tag:energy-regeneration+)(Tag:fire)(Tag:fire+)(Tag:fire-resistance+)(Tag:maximum-energy+)You are the Fire Monarch, ruler of all Fire and Plasma; your energy is massively enhanced, as your soul is an eternal reactor. All your Fire and Plasma-related abilities below Mythical Tier are increased by one rank and cost less energy. All fire and heat-aligned beings instinctively recognize you as Monarch, and you are immune to Fire and Plasma-based abilities.
 
 **Decision**
 
@@ -3549,7 +3604,7 @@
 
 **Description**
 
-> You are the Earth Monarch, ruler of all Earth; your durability is massively enhanced, as you are as immovable as earth. All your Earth and Metal-related abilities below Mythical Tier are increased by one rank and cost less energy. All earth-aligned beings instinctively recognize you as Monarch, and you are immune to earth and metal-based abilities.
+> (Tag:defence+)(Tag:earth)(Tag:earth-resistance+)You are the Earth Monarch, ruler of all Earth; your durability is massively enhanced, as you are as immovable as earth. All your Earth and Metal-related abilities below Mythical Tier are increased by one rank and cost less energy. All earth-aligned beings instinctively recognize you as Monarch, and you are immune to earth and metal-based abilities.
 
 **Decision**
 
@@ -3566,7 +3621,7 @@
 
 **Description**
 
-> You are the Sea Monarch, ruler of all Water and the depths; your vitality is massively increased, as the sea is the mother of all life. All your water-related abilities below Mythical Tier are increased by one rank and cost less energy. All water and sea-aligned beings instinctively recognize you as Monarch, and you are immune to water and ice-based abilities.
+> (Tag:ice-resistance+)(Tag:vitality+)(Tag:water)(Tag:water+)(Tag:water-resistance+)You are the Sea Monarch, ruler of all Water and the depths; your vitality is massively increased, as the sea is the mother of all life. All your water-related abilities below Mythical Tier are increased by one rank and cost less energy. All water and sea-aligned beings instinctively recognize you as Monarch, and you are immune to water and ice-based abilities.
 
 **Decision**
 
@@ -3583,7 +3638,7 @@
 
 **Description**
 
-> You are the Sky Monarch, ruler of all Sky; your agility is massively enhanced, as you are as free as wind. All your wind and lightning-related abilities below Mythical Tier are increased by one rank and cost less energy. All sky-aligned beings instinctively recognize you as Monarch, and you are immune to wind and lightning-based abilities.
+> (Tag:agility+)(Tag:air)(Tag:air+)(Tag:air-resistance+)(Tag:electric)(Tag:electric+)(Tag:electric-resistance+)You are the Sky Monarch, ruler of all Sky; your agility is massively enhanced, as you are as free as wind. All your wind and lightning-related abilities below Mythical Tier are increased by one rank and cost less energy. All sky-aligned beings instinctively recognize you as Monarch, and you are immune to wind and lightning-based abilities.
 
 **Decision**
 
@@ -3600,7 +3655,7 @@
 
 **Description**
 
-> You are a Hero, a child blessed by light and holy. All your Light and Holy-based abilities strengthen alongside your physical abilities. Divine/Clergy-aligned beings view you with greater favor, reverence, and affection, rewarding your merits and service, and all blessings are stronger and last longer on you.
+> (Tag:holy+)(Tag:holy-resistance+)(Tag:light+)(Tag:light-resistance+)(Tag:physical+)You are a Hero, a child blessed by light and holy. All your Light and Holy-based abilities strengthen alongside your physical abilities. Divine/Clergy-aligned beings view you with greater favor, reverence, and affection, rewarding your merits and service, and all blessings are stronger and last longer on you.
 
 **Decision**
 
@@ -3617,7 +3672,7 @@
 
 **Description**
 
-> You are a perfect flyer; flight comes as naturally as walking or breathing, and all your flight abilities are more precise, potent, and cost considerably less to maintain.
+> (Tag:avian)(Tag:talent)You are a perfect flyer; flight comes as naturally as walking or breathing, and all your flight abilities are more precise, potent, and cost considerably less to maintain.
 
 **Decision**
 
@@ -3634,7 +3689,7 @@
 
 **Description**
 
-> Your stamina is ridiculous; even as a regular human you can run a marathon unwearied. You recover from exhaustion very fast and are hard to exhaust.
+> (Tag:stamina+)Your stamina is ridiculous; even as a regular human you can run a marathon unwearied. You recover from exhaustion very fast and are hard to exhaust.
 
 **Decision**
 
@@ -3651,7 +3706,7 @@
 
 **Description**
 
-> You almost always land on your feet when falling and are immune to all fall damage; even falling from space to earth will not hurt your legs.
+> (Tag:earth)(Tag:rule)You almost always land on your feet when falling and are immune to all fall damage; even falling from space to earth will not hurt your legs.
 
 **Decision**
 
@@ -3668,7 +3723,7 @@
 
 **Description**
 
-> You are the king of cuddling; anyone you cuddle or share skinship with feels comfortable. You make the best cuddling partner for building relationships.
+> (Tag:social)You are the king of cuddling; anyone you cuddle or share skinship with feels comfortable. You make the best cuddling partner for building relationships.
 
 **Decision**
 
@@ -3685,7 +3740,7 @@
 
 **Description**
 
-> Your sight and visual acuity far exceed the norm; you see much farther and clearer than average.
+> (Tag:perception+)Your sight and visual acuity far exceed the norm; you see much farther and clearer than average.
 
 **Decision**
 
@@ -3702,7 +3757,7 @@
 
 **Description**
 
-> Your smell far exceeds the norm, rivaling canines, and you differentiate smells with great accuracy.
+> (Tag:perception+)Your smell far exceeds the norm, rivaling canines, and you differentiate smells with great accuracy.
 
 **Decision**
 
@@ -3719,7 +3774,7 @@
 
 **Description**
 
-> Your hearing far exceeds the norm; you distinguish quieter sounds easily, differentiate between sounds, and automatically adjust to noise levels.
+> (Tag:perception+)Your hearing far exceeds the norm; you distinguish quieter sounds easily, differentiate between sounds, and automatically adjust to noise levels.
 
 **Decision**
 
@@ -3736,7 +3791,7 @@
 
 **Description**
 
-> Your hugs feel deeply comforting and therapeutic, helping dispel negative emotional states.
+> (Tag:social)Your hugs feel deeply comforting and therapeutic, helping dispel negative emotional states.
 
 **Decision**
 
@@ -3753,7 +3808,7 @@
 
 **Description**
 
-> Your stamina is boundless; even as a regular person you can run a marathon with ease and need only a minute's rest afterward. Your stamina recovers incredibly quickly and exhaustion fades much faster.
+> (Tag:stamina+)Your stamina is boundless; even as a regular person you can run a marathon with ease and need only a minute's rest afterward. Your stamina recovers incredibly quickly and exhaustion fades much faster.
 
 **Decision**
 
@@ -3770,7 +3825,7 @@
 
 **Description**
 
-> (Nsfw) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find a girl changing.
+> (Tag:luck+)(Tag:nsfw)(Nsfw)(Noncon) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find someone changing.
 
 **Decision**
 
@@ -3787,7 +3842,7 @@
 
 **Description**
 
-> You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
+> (Tag:spirit)(Tag:spirit+)You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
 
 **Decision**
 
@@ -3804,7 +3859,7 @@
 
 **Description**
 
-> Your soul is immortal; it can be wounded and shattered but never annihilated while you possess energy.
+> (Tag:spirit)Your soul is immortal; it can be wounded and shattered but never annihilated while you possess energy.
 
 **Decision**
 
@@ -3821,7 +3876,7 @@
 
 **Description**
 
-> When your health drops to 10% or you stand on the brink of death, your physical stats increase by a stage.
+> (Tag:physical+)When your health drops to 10% or you stand on the brink of death, your physical stats increase by a stage.
 
 **Decision**
 
@@ -3838,7 +3893,7 @@
 
 **Description**
 
-> Your killing mindset is a marvel of nature; you instinctively know how to land lethal blows and find weak points through sheer animal instinct.
+> (Tag:martial)(Tag:talent)Your killing mindset is a marvel of nature; you instinctively know how to land lethal blows and find weak points through sheer animal instinct.
 
 **Decision**
 
@@ -3855,7 +3910,7 @@
 
 **Description**
 
-> Your existing strength is enhanced, increasing the physical force you exert in proportion to your strength.
+> (Tag:strength+)Your existing strength is enhanced, increasing the physical force you exert in proportion to your strength.
 
 **Decision**
 
@@ -3872,7 +3927,7 @@
 
 **Description**
 
-> Your existing agility is enhanced, augmenting your speed and reflexes.
+> (Tag:agility+)Your existing agility is enhanced, augmenting your speed and reflexes.
 
 **Decision**
 
@@ -3889,7 +3944,7 @@
 
 **Description**
 
-> Your existing vitality is enhanced, letting you recover from wounds and afflictions quicker and stay healthier overall.
+> (Tag:vitality+)Your existing vitality is enhanced, letting you recover from wounds and afflictions quicker and stay healthier overall.
 
 **Decision**
 
@@ -3906,7 +3961,7 @@
 
 **Description**
 
-> Your existing endurance is enhanced, letting you function longer before tiring and endure more punishment.
+> (Tag:defence+)Your existing endurance is enhanced, letting you function longer before tiring and endure more punishment.
 
 **Decision**
 
@@ -3923,7 +3978,7 @@
 
 **Description**
 
-> You are unusually dexterous, with impeccable hand-to-eye coordination, motor skills, and bodily control.
+> (Tag:dexterity+)You are unusually dexterous, with impeccable hand-to-eye coordination, motor skills, and bodily control.
 
 **Decision**
 
@@ -3940,7 +3995,7 @@
 
 **Description**
 
-> When fighting any target you have lost to before, all your abilities and traits increase by a stage (+), so Uncommon becomes Uncommon+.
+> (Tag:physical+)(Tag:power+)When fighting any target you have lost to before, all your abilities and traits increase by a stage (+), so Uncommon becomes Uncommon+.
 
 **Decision**
 
@@ -3957,7 +4012,7 @@
 
 **Description**
 
-> "Hurt me more." Whenever you are hurt or damaged, you recover energy proportional to the damage received.
+> (Tag:energy-recovery)"Hurt me more." Whenever you are hurt or damaged, you recover energy proportional to the damage received.
 
 **Decision**
 
@@ -3974,7 +4029,7 @@
 
 **Description**
 
-> You are a Demon Lord; all your Darkness and Unholy magic and abilities strengthen alongside your physical stats, increased further if your race is demonic or infernal. You greatly resist all Darkness and Unholy attributes. Demonic/Infernal beings serve you more readily and obey your authority more easily, and those under your service or command are easier to command and manage and gain minor buffs from you.
+> (Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:physical+)(Tag:social)(Tag:summon+)You are a Demon Lord; all your Darkness and Unholy magic and abilities strengthen alongside your physical stats, increased further if your race is demonic or infernal. You greatly resist all Darkness and Unholy attributes. Demonic/Infernal beings serve you more readily and obey your authority more easily, and those under your service or command are easier to command and manage and gain minor buffs from you.
 
 **Decision**
 
@@ -3991,7 +4046,7 @@
 
 **Description**
 
-> Your gacha items carry a warranty; if equipment you own breaks beyond effective use, within 24 hours it and all its parts are replaced with a perfect replica, as long as it was not traded or given away. This applies only to breakage during intended use, not sacrifice, smelting, destruction during modification, etc., and not to consumables.
+> (Tag:meta)Your gacha items carry a warranty; if equipment you own breaks beyond effective use, within 24 hours it and all its parts are replaced with a perfect replica, as long as it was not traded or given away. This applies only to breakage during intended use, not sacrifice, smelting, destruction during modification, etc., and not to consumables.
 
 **Decision**
 
@@ -4008,7 +4063,7 @@
 
 **Description**
 
-> You can activate this only once a week; when fighting to protect someone, all your enhancement abilities receive a full rank boost.
+> (Tag:time)You can activate this only once a week; when fighting to protect someone, all your enhancement abilities receive a full rank boost.
 
 **Decision**
 
@@ -4025,7 +4080,7 @@
 
 **Description**
 
-> -A Hero arises. Once every 120 hours, you restore your stamina and energy to full, but hours afterward you become extremely exhausted.
+> (Tag:time)-A Hero arises. Once every 120 hours, you restore your stamina and energy to full, but hours afterward you become extremely exhausted.
 
 **Decision**
 
@@ -4076,7 +4131,7 @@
 
 **Description**
 
-> Your existence is oppression; in your presence, any creature below Epic rank has all energy lowered by one rank, and anyone more than two ranks below you cannot breathe without your permission.
+> (Tag:rule)Your existence is oppression; in your presence, any creature below Epic rank has all energy lowered by one rank, and anyone more than two ranks below you cannot breathe without your permission.
 
 **Decision**
 
@@ -4093,7 +4148,7 @@
 
 **Description**
 
-> You extract energy from any object you eat to permanently increase your own energy reserves.
+> (Tag:energy-recovery)(Tag:growth+)(Tag:maximum-energy+)You extract energy from any object you eat to permanently increase your own energy reserves.
 
 **Decision**
 
@@ -4127,7 +4182,7 @@
 
 **Description**
 
-> You never lose your balance short of your legs being sheared off.
+> (Tag:perception+)(Tag:talent)You never lose your balance short of your legs being sheared off.
 
 **Decision**
 
@@ -4144,7 +4199,7 @@
 
 **Description**
 
-> Every time you return from near death, all your stats permanently increase.
+> (Tag:growth+)(Tag:maximum-energy+)(Tag:physical+)Every time you return from near death, all your stats permanently increase.
 
 **Decision**
 
@@ -4161,7 +4216,7 @@
 
 **Description**
 
-> You hold a second metaphysical heart that massively increases your mana capacity and regeneration while significantly boosting all necromancy abilities.
+> (Tag:dark+)(Tag:energy-regeneration+)(Tag:maximum-energy+)(Tag:necro+)(Tag:summon+)(Tag:undead)You hold a second metaphysical heart that massively increases your mana capacity and regeneration while significantly boosting all necromancy abilities.
 
 **Decision**
 
@@ -4178,7 +4233,7 @@
 
 **Description**
 
-> Your heart is replaced by a metaphysical alternative pumping raw energy through your veins, massively increasing your maximum energy reserves. Your natural regeneration speeds add to your energy regeneration alongside regular recovery.
+> (Tag:energy-regeneration+)(Tag:maximum-energy+)Your heart is replaced by a metaphysical alternative pumping raw energy through your veins, massively increasing your maximum energy reserves. Your natural regeneration speeds add to your energy regeneration alongside regular recovery.
 
 **Decision**
 
@@ -4195,7 +4250,7 @@
 
 **Description**
 
-> You can substitute blood, food, water, or air with your own mana, but do not depend on it too long or you may instantly die when you run out of mana.
+> (Tag:survival)You can substitute blood, food, water, or air with your own mana, but do not depend on it too long or you may instantly die when you run out of mana.
 
 **Decision**
 
@@ -4212,7 +4267,7 @@
 
 **Description**
 
-> Your mind is iron and your body obeys; exhaustion and starvation minimally affect your performance, keeping it optimal regardless of suffering. This does not extend to physical limitations or wounds. You also gain increased resistance to all Negative Mental Ailments.
+> (Tag:mental-resistance+)(Tag:mind)Your mind is iron and your body obeys; exhaustion and starvation minimally affect your performance, keeping it optimal regardless of suffering. This does not extend to physical limitations or wounds. You also gain increased resistance to all Negative Mental Ailments.
 
 **Decision**
 
@@ -4229,7 +4284,7 @@
 
 **Description**
 
-> You hardly bleed; even drained of most blood, you feel no effect as long as a cupful remains. If you are a vampire, you no longer suffer the need for blood.
+> (Tag:survival)(Tag:vampiric)You hardly bleed; even drained of most blood, you feel no effect as long as a cupful remains. If you are a vampire, you no longer suffer the need for blood.
 
 **Decision**
 
@@ -4246,7 +4301,7 @@
 
 **Description**
 
-> Your body holds 10x the blood and regenerates blood 10x faster, without changing mass or size.
+> (Tag:body)Your body holds 10x the blood and regenerates blood 10x faster, without changing mass or size.
 
 **Decision**
 
@@ -4263,7 +4318,7 @@
 
 **Description**
 
-> Your body holds virtually limitless blood and regenerates it 100 times faster; you can feed a whole vampire clan for life or serve as the ultimate bank for a Hemokinetic.
+> (Tag:body)Your body holds virtually limitless blood and regenerates it 100 times faster; you can feed a whole vampire clan for life or serve as the ultimate bank for a Hemokinetic.
 
 **Decision**
 
@@ -4280,7 +4335,7 @@
 
 **Description**
 
-> You recover energy by converting others' fear of you into energy; if enough people fear you, you may even gain permanent stat increases.
+> (Tag:energy-recovery)(Tag:maximum-energy+)You recover energy by converting others' fear of you into energy; if enough people fear you, you may even gain permanent stat increases.
 
 **Decision**
 
@@ -4297,7 +4352,7 @@
 
 **Description**
 
-> You rule fear; if your opponent fears you, their energy drains into yours, and you can physically interact with and absorb fear into your energy.
+> (Tag:curse)(Tag:energy-regeneration+)(Tag:health-regeneration+)You rule fear; if your opponent fears you, their energy drains into yours, and you can physically interact with and absorb fear into your energy.
 
 **Decision**
 
@@ -4314,7 +4369,7 @@
 
 **Description**
 
-> Specialization - You are a natural-born necromancer dealing in death and souls. Any death or soul-related ability is easier to master and costs less energy.
+> (Tag:energy-recovery+)(Tag:necro+)(Tag:talent)(Tag:undead)Specialization - You are a natural-born necromancer dealing in death and souls. Any death or soul-related ability is easier to master and costs less energy.
 
 **Decision**
 
@@ -4331,7 +4386,7 @@
 
 **Description**
 
-> Specialization - You are a natural-born contagion; spreading disease, poison, and decay is second nature. Any poison or disease-related ability is easier to master and costs less energy to use.
+> (Tag:poison)Specialization - You are a natural-born contagion; spreading disease, poison, and decay is second nature. Any poison or disease-related ability is easier to master and costs less energy to use.
 
 **Decision**
 
@@ -4348,7 +4403,7 @@
 
 **Description**
 
-> Specialization - You master all biological and body-alteration abilities faster and use them for less energy.
+> (Tag:bio+)(Tag:talent)(Tag:transformation+)Specialization - You master all biological and body-alteration abilities faster and use them for less energy.
 
 **Decision**
 
@@ -4365,7 +4420,7 @@
 
 **Description**
 
-> You can destroy at will any contract or clause bound to you that you agreed to, including soul bindings and magical enforcement.
+> (Tag:magic)(Tag:rule)You can destroy at will any contract or clause bound to you that you agreed to, including soul bindings and magical enforcement.
 
 **Flagged in reports**
 
@@ -4386,7 +4441,7 @@
 
 **Description**
 
-> You are far stronger and more durable than you should be, able to rip a man in two bare-handed as a regular human and withstand your own punches. This bonus strength scales with your current physical abilities.
+> (Tag:defence+)(Tag:strength+)You are far stronger and more durable than you should be, able to rip a man in two bare-handed as a regular human and withstand your own punches. This bonus strength scales with your current physical abilities.
 
 **Decision**
 
@@ -4403,7 +4458,7 @@
 
 **Description**
 
-> You are the genetic peak of your race, immune to its impurities and genetic defects.
+> (Tag:body)(Tag:growth+)You are the genetic peak of your race, immune to its impurities and genetic defects.
 
 **Decision**
 
@@ -4420,7 +4475,7 @@
 
 **Description**
 
-> You are the secret child of a great figure, such as a legendary swordsman or magician, rather than of mundane parentage. Once you unlock your lineage ability or talent, this trait is replaced by it.
+> (Tag:bloodline)(Tag:meta)You are the secret child of a great figure, such as a legendary swordsman or magician, rather than of mundane parentage. Once you unlock your lineage ability or talent, this trait is replaced by it.
 
 **Decision**
 
@@ -4437,7 +4492,7 @@
 
 **Description**
 
-> You can shrug off panic and fear at will and act with audacity even before a god.
+> (Tag:mind)You can shrug off panic and fear at will and act with audacity even before a god.
 
 **Decision**
 
@@ -4454,7 +4509,7 @@
 
 **Description**
 
-> "A lifetime defined by futile struggle." Your mind may bend but never breaks, even under centuries of boredom, torture, or futile labor. You are MASSIVELY resistant to all external mental interference.
+> (Tag:mental-resistance+)(Tag:mind)"A lifetime defined by futile struggle." Your mind may bend but never breaks, even under centuries of boredom, torture, or futile labor. You are MASSIVELY resistant to all external mental interference.
 
 **Decision**
 
@@ -4471,7 +4526,7 @@
 
 **Description**
 
-> You possess an abnormally large energy pool, letting you use abilities and spells for far longer.
+> (Tag:maximum-energy+)You possess an abnormally large energy pool, letting you use abilities and spells for far longer.
 
 **Decision**
 
@@ -4488,7 +4543,7 @@
 
 **Description**
 
-> Your energy reserves are noticeably above average, though not at genius level.
+> (Tag:maximum-energy+)Your energy reserves are noticeably above average, though not at genius level.
 
 **Decision**
 
@@ -4505,7 +4560,7 @@
 
 **Description**
 
-> You possess a dragon's energy core instead of ordinary reserves — a power plant where an average mage has a generator.
+> (Tag:draconic)(Tag:energy-regeneration+)(Tag:maximum-energy+)You possess a dragon's energy core instead of ordinary reserves, a power plant where an average mage has a generator.
 
 **Decision**
 
@@ -4522,7 +4577,7 @@
 
 **Description**
 
-> Your energy storage is infinite, though your regeneration and output are unchanged. You can hold the energy equivalent of a billion supernovas, even if you can only conjure a measly fireball.
+> (Tag:maximum-energy+)Your energy storage is infinite, though your regeneration and output are unchanged. You can hold the energy equivalent of a billion supernovas, even if you can only conjure a measly fireball.
 
 **Flagged in reports**
 
@@ -4543,7 +4598,7 @@
 
 **Description**
 
-> Your magical talent is one in a trillion. You learn even the most complex spells in a hundredth of the time an average "genius" needs and can invent spells on the fly.
+> (Tag:magic)(Tag:talent)Your magical talent is one in a trillion. You learn even the most complex spells in a hundredth of the time an average "genius" needs and can invent spells on the fly.
 
 **Decision**
 
@@ -4560,7 +4615,7 @@
 
 **Description**
 
-> Your talent in weaponry and warfare is one in a trillion. You master almost any martial art and weapon in a hundredth of the time an average "genius" needs. You are basically Garou.
+> (Tag:martial)(Tag:talent)Your talent in weaponry and warfare is one in a trillion. You master almost any martial art and weapon in a hundredth of the time an average "genius" needs. You are basically Garou.
 
 **Decision**
 
@@ -4577,7 +4632,7 @@
 
 **Description**
 
-> You are the child of an unknown god who may dote on you or turn on you once they learn of you. After you discover your lineage and awaken your ability, this trait is replaced by it.
+> (Tag:bloodline)(Tag:meta)You are the child of an unknown god who may dote on you or turn on you once they learn of you. After you discover your lineage and awaken your ability, this trait is replaced by it.
 
 **Decision**
 
@@ -4594,7 +4649,7 @@
 
 **Description**
 
-> "I can do this all day." You never feel tired or exhausted, even when your energy is nearly gone or you have run for days, though your body still suffers the negative effects of overwork.
+> (Tag:mind)"I can do this all day." You never feel tired or exhausted, even when your energy is nearly gone or you have run for days, though your body still suffers the negative effects of overwork.
 
 **Decision**
 
@@ -4611,7 +4666,7 @@
 
 **Description**
 
-> "I can do this forever." You never run out of bodily stamina and never get out of breath, though you can still strain your body. This does not affect mana/energy.
+> (Tag:stamina+)"I can do this forever." You never run out of bodily stamina and never get out of breath, though you can still strain your body. This does not affect mana/energy.
 
 **Decision**
 
@@ -4628,7 +4683,7 @@
 
 **Description**
 
-> Your ability drawbacks are severely reduced. You can draw upon more power than your body should handle and barely feel it.
+> (Tag:meta)(Tag:rule)Your ability drawbacks are severely reduced. You can draw upon more power than your body should handle and barely feel it.
 
 **Decision**
 
@@ -4645,7 +4700,7 @@
 
 **Description**
 
-> You carry royal blood and project above-average charisma, making others readily accept you as an authority figure. Those you are responsible for view you with greater respect and authority.
+> (Tag:social)You carry royal blood and project above-average charisma, making others readily accept you as an authority figure. Those you are responsible for view you with greater respect and authority.
 
 **Decision**
 
@@ -4662,7 +4717,7 @@
 
 **Description**
 
-> Swordsmen, martial artists, and competitive people seek you out to test themselves and grow fond of you more easily, especially if you defeat them. Your martial skills grow faster in combat.
+> (Tag:martial)(Tag:social)(Tag:talent)Swordsmen, martial artists, and competitive people seek you out to test themselves and grow fond of you more easily, especially if you defeat them. Your martial skills grow faster in combat.
 
 **Decision**
 
@@ -4679,7 +4734,7 @@
 
 **Description**
 
-> You are the reincarnation of a Demon God. Your Darkness and Unholy abilities and magic below Mythical level gain a tier and cost less energy, your basic physical stats are massively increased, and you can convert your energy directly into a darkness attribute like a Mana Burst. Demonic and infernal beings weaker than you recognize you as absolute authority, while stronger ones still recognize what you are.
+> (Tag:dark)(Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:physical+)(Tag:social)(Tag:talent)You are the reincarnation of a Demon God. Your Darkness and Unholy abilities and magic below Mythical level gain a tier and cost less energy, your basic physical stats are massively increased, and you can convert your energy directly into a darkness attribute like a Mana Burst. Demonic and infernal beings weaker than you recognize you as absolute authority, while stronger ones still recognize what you are.
 
 **Decision**
 
@@ -4696,7 +4751,7 @@
 
 **Description**
 
-> Organizations want you on their side and refuse to let you leave. You receive far better treatment and face far looser rules in any organization you join.
+> (Tag:social)Organizations want you on their side and refuse to let you leave. You receive far better treatment and face far looser rules in any organization you join.
 
 **Decision**
 
@@ -4713,7 +4768,7 @@
 
 **Description**
 
-> "Another settlement needs our help, I'll mark it on the map for you." Whenever you receive a quest or request, you can summon an arrow pointing toward your objective.
+> (Tag:divination)"Another settlement needs our help, I'll mark it on the map for you." Whenever you receive a quest or request, you can summon an arrow pointing toward your objective.
 
 **Decision**
 
@@ -4730,7 +4785,7 @@
 
 **Description**
 
-> You are not physically more attractive, but others find your face and figure more appealing to their tastes. A 5/10 in their eyes becomes a solid 7/10.
+> (Tag:social)You are not physically more attractive, but others find your face and figure more appealing to their tastes. A 5/10 in their eyes becomes a solid 7/10.
 
 **Decision**
 
@@ -4747,7 +4802,7 @@
 
 **Description**
 
-> People in power, such as nobles, bosses, and royalty, perceive your boldness as charming rather than disrespectful. They also find themselves more attracted to you.
+> (Tag:social)People in power, such as nobles, bosses, and royalty, perceive your boldness as charming rather than disrespectful. They also find themselves more attracted to you.
 
 **Decision**
 
@@ -4764,7 +4819,7 @@
 
 **Description**
 
-> You understand others better and express your own feelings more clearly through speech and words. This is essentially talent in communication.
+> (Tag:social)(Tag:talent)You understand others better and express your own feelings more clearly through speech and words. This is essentially talent in communication.
 
 **Decision**
 
@@ -4781,7 +4836,7 @@
 
 **Description**
 
-> Your eyes do not hypnotize people like mystical charming eyes — they are simply very pretty.
+> (Tag:body)(Tag:social)Your eyes do not hypnotize people like mystical charming eyes, they are simply very pretty.
 
 **Decision**
 
@@ -4798,7 +4853,7 @@
 
 **Description**
 
-> You wield your abilities and spells with exceptional precision and control, and your mastery over your own moves and body is beyond the norm.
+> (Tag:dexterity+)You wield your abilities and spells with exceptional precision and control, and your mastery over your own moves and body is beyond the norm.
 
 **Decision**
 
@@ -4815,7 +4870,7 @@
 
 **Description**
 
-> You control your abilities and spells with incredible precision that others struggle to match.
+> (Tag:dexterity+)You control your abilities and spells with incredible precision that others struggle to match.
 
 **Decision**
 
@@ -4832,7 +4887,7 @@
 
 **Description**
 
-> You possess a perfect internal clock. You recall exactly when you last did something down to the millisecond and time things as perfectly as a stopwatch.
+> (Tag:mind)(Tag:time)You possess a perfect internal clock. You recall exactly when you last did something down to the millisecond and time things as perfectly as a stopwatch.
 
 **Decision**
 
@@ -4849,7 +4904,7 @@
 
 **Description**
 
-> When you die, you keep moving and using your abilities for up to 1 hour before death finally claims you.
+> (Tag:survival)When you die, you keep moving and using your abilities for up to 1 hour before death finally claims you.
 
 **Decision**
 
@@ -4866,7 +4921,7 @@
 
 **Description**
 
-> You can always pull exactly what you need to pay from your pocket as perfect legal tender that causes no inflation. You somehow find enough money whenever you need it.
+> (Tag:rule)You can always pull exactly what you need to pay from your pocket as perfect legal tender that causes no inflation. You somehow find enough money whenever you need it.
 
 **Flagged in reports**
 
@@ -4887,7 +4942,7 @@
 
 **Description**
 
-> You possess natural Magic Circuits that act as magic computers in your body, helping you regenerate energy and actualise magic and abilities. Their quantity and quality depend on your energy reserves and energy traits, or double if you already have Magic Circuits.
+> (Tag:magic)(Tag:power)You possess natural Magic Circuits that act as magic computers in your body, helping you regenerate energy and actualise magic and abilities. Their quantity and quality depend on your energy reserves and energy traits, or double if you already have Magic Circuits.
 
 **Decision**
 
@@ -4904,7 +4959,7 @@
 
 **Description**
 
-> Nature favors you: trees offer you fresh fruit, animals and nature-aligned beings are affectionate and aid you, and you maneuver forests with ease. You recover energy faster the closer you are to nature.
+> (Tag:energy-regeneration+)(Tag:nature)(Tag:nature+)(Tag:social)Nature favors you: trees offer you fresh fruit, animals and nature-aligned beings are affectionate and aid you, and you maneuver forests with ease. You recover energy faster the closer you are to nature.
 
 **Decision**
 
@@ -4921,7 +4976,7 @@
 
 **Description**
 
-> As Mother Nature's favored one, you receive her protection in forests and nature. Wild animals are friendly, understand your words, trees part to guide you, bounties offer fresh produce, and nature-aligned beings recognize her touch on you. You recover energy faster the closer you are to nature.
+> (Tag:energy-regeneration+)(Tag:nature)(Tag:nature+)(Tag:social)As Mother Nature's favored one, you receive her protection in forests and nature. Wild animals are friendly, understand your words, trees part to guide you, bounties offer fresh produce, and nature-aligned beings recognize her touch on you. You recover energy faster the closer you are to nature.
 
 **Decision**
 
@@ -4938,7 +4993,7 @@
 
 **Description**
 
-> You instinctively use and master Hamon breathing to harness Life Magnetism and sunlight through your breath. Extended practice grants you a superhuman physique, vitality, longevity, and more, and you can grant others Hamon Breathing by punching their diaphragms.
+> (Tag:power)(Tag:vitality+)You instinctively use and master Hamon breathing to harness Life Magnetism and sunlight through your breath. Extended practice grants you a superhuman physique, vitality, longevity, and more, and you can grant others Hamon Breathing by punching their diaphragms.
 
 **Decision**
 
@@ -4955,7 +5010,7 @@
 
 **Description**
 
-> You are Gaia's child, and Mother Nature actively defends you in forests with spear-hard branches, rising trunks, and shielding roots. Animals and nature-aligned beings favor you affectionately, and some recognize her touch on you.
+> (Tag:energy-regeneration+)(Tag:nature)(Tag:nature+)(Tag:social)You are Gaia's child, and Mother Nature actively defends you in forests with spear-hard branches, rising trunks, and shielding roots. Animals and nature-aligned beings favor you affectionately, and some recognize her touch on you.
 
 **Decision**
 
@@ -4972,7 +5027,7 @@
 
 **Description**
 
-> "I am Heavy Weapons Guy." The heavier the object you wield, the proportionally stronger you become, and you suffer no penalties for wielding oversized weapons.
+> (Tag:rule)(Tag:strength+)"I am Heavy Weapons Guy." The heavier the object you wield, the proportionally stronger you become, and you suffer no penalties for wielding oversized weapons.
 
 **Flagged in reports**
 
@@ -4993,7 +5048,7 @@
 
 **Description**
 
-> Your body channels lightning, making all lightning-based abilities more potent, cheaper, and easier to master. You can also ground lightning and electricity to absorb a portion of their energy.
+> (Tag:electric)(Tag:electric+)(Tag:electric-resistance+)(Tag:energy-recovery)(Tag:talent)Your body channels lightning, making all lightning-based abilities more potent, cheaper, and easier to master. You can also ground lightning and electricity to absorb a portion of their energy.
 
 **Decision**
 
@@ -5010,7 +5065,7 @@
 
 **Description**
 
-> You are one with the primordial earth. All earth-based abilities are far more potent, cheaper, and easier to master, and you recover energy faster on the ground and even faster underground.
+> (Tag:earth)(Tag:earth+)(Tag:earth-resistance+)(Tag:energy-regeneration+)(Tag:talent)You are one with the primordial earth. All earth-based abilities are far more potent, cheaper, and easier to master, and you recover energy faster on the ground and even faster underground.
 
 **Decision**
 
@@ -5027,7 +5082,7 @@
 
 **Description**
 
-> You embody the immovable earth. All earth-based abilities are more potent, cheaper, and easier to master, and you recover energy faster underground.
+> (Tag:earth)(Tag:earth+)(Tag:earth-resistance+)(Tag:energy-regeneration+)(Tag:talent)You embody the immovable earth. All earth-based abilities are more potent, cheaper, and easier to master, and you recover energy faster underground.
 
 **Decision**
 
@@ -5044,7 +5099,7 @@
 
 **Description**
 
-> You belong to the skies. All wind-based abilities are more potent, cheaper, and easier to master, and you recover energy faster while in the sky.
+> (Tag:air)(Tag:air+)(Tag:air-resistance+)(Tag:energy-regeneration+)(Tag:talent)You belong to the skies. All wind-based abilities are more potent, cheaper, and easier to master, and you recover energy faster while in the sky.
 
 **Decision**
 
@@ -5061,7 +5116,7 @@
 
 **Description**
 
-> (Tech) All Tinker abilities are easier for you to use and innovate with, and you interface with any existing machine and network with greater ease. (A/N: Reroll if you don't have a tinker ability)
+> (Tag:talent)(Tag:tech)(Tech) All Tinker abilities are easier for you to use and innovate with, and you interface with any existing machine and network with greater ease. (A/N: Reroll if you don't have a tinker ability)
 
 **Decision**
 
@@ -5078,7 +5133,7 @@
 
 **Description**
 
-> You are more flexible than an expert contortionist.
+> (Tag:dexterity+)You are more flexible than an expert contortionist.
 
 **Decision**
 
@@ -5095,7 +5150,7 @@
 
 **Description**
 
-> You are the destined Demon King. Your Darkness and Unholy-related abilities and magic and your physical abilities are greatly enhanced, further increased if your race is demonic or infernal, and you greatly resist all Darkness and Unholy attributes. Demonic and infernal beings are servile and obedient toward you — weaker ones are compelled to serve — and you grow slightly stronger for each creature that submits to you, based on its power.
+> (Tag:dark)(Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:physical+)(Tag:social)(Tag:summon+)(Tag:talent)You are the destined Demon King. Your Darkness and Unholy-related abilities and magic and your physical abilities are greatly enhanced, further increased if your race is demonic or infernal, and you greatly resist all Darkness and Unholy attributes. Demonic and infernal beings are servile and obedient toward you, weaker ones are compelled to serve, and you grow slightly stronger for each creature that submits to you, based on its power.
 
 **Decision**
 
@@ -5112,7 +5167,7 @@
 
 **Description**
 
-> You are the True Hero blessed by the divines. Your Light and Holy-based abilities and physical abilities are greatly enhanced, and all blessings on you are stronger and longer-lasting. Divine and Clergy-aligned beings regard you with reverence and reward your service, and you gain a temporary boost to all stats when fighting to save someone, scaled to your willpower and the stakes.
+> (Tag:holy+)(Tag:light+)(Tag:physical+)(Tag:social)(Tag:talent)You are the True Hero blessed by the divines. Your Light and Holy-based abilities and physical abilities are greatly enhanced, and all blessings on you are stronger and longer-lasting. Divine and Clergy-aligned beings regard you with reverence and reward your service, and you gain a temporary boost to all stats when fighting to save someone, scaled to your willpower and the stakes.
 
 **Decision**
 
@@ -5129,7 +5184,7 @@
 
 **Description**
 
-> You are the chosen Hero of Humanity. Your Light and Holy-based abilities below Mythical rank gain a rank, your base physical abilities are massively enhanced, and all blessings on you are permanent. Divine and Clergy-aligned beings revere you and reward your service, and you gain a temporary boost to all stats when fighting to save someone, scaled to your willpower and the stakes.
+> (Tag:holy+)(Tag:light+)(Tag:physical+)(Tag:social)(Tag:talent)You are the chosen Hero of Humanity. Your Light and Holy-based abilities below Mythical rank gain a rank, your base physical abilities are massively enhanced, and all blessings on you are permanent. Divine and Clergy-aligned beings revere you and reward your service, and you gain a temporary boost to all stats when fighting to save someone, scaled to your willpower and the stakes.
 
 **Decision**
 
@@ -5146,7 +5201,7 @@
 
 **Description**
 
-> (Nsfw) You possess a smooth, alluring top-tier singing voice that impresses even the pickiest listeners and sounds more convincing. It enhances your voice-based abilities.
+> (Tag:nsfw)(Tag:talent)(Nsfw) You possess a smooth, alluring top-tier singing voice that impresses even the pickiest listeners and sounds more convincing. It enhances your voice-based abilities.
 
 **Decision**
 
@@ -5163,7 +5218,7 @@
 
 **Description**
 
-> You project a charismatic aura that draws people in and elevates you in their eyes.
+> (Tag:social)You project a charismatic aura that draws people in and elevates you in their eyes.
 
 **Decision**
 
@@ -5193,7 +5248,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 260. Harem Lord
+## 260. Harem Keeper
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -5201,7 +5256,7 @@
 
 **Description**
 
-> You face far less resistance from potential partners and society when building a harem, though it remains challenging.
+> (Tag:social)You face far less resistance from potential partners and society when building a harem, though it remains challenging.
 
 **Decision**
 
@@ -5210,7 +5265,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 261. Harem King
+## 261. Harem Sovereign
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -5218,7 +5273,7 @@
 
 **Description**
 
-> Your preferred partners are more attracted to you, and neither society nor your partners object to your harem itself, though other relationship issues may remain.
+> (Tag:social)Your preferred partners are more attracted to you, and neither society nor your partners object to your harem itself, though other relationship issues may remain.
 
 **Decision**
 
@@ -5235,7 +5290,7 @@
 
 **Description**
 
-> You build affection, trust, and respect with teammates and allies much faster, especially by fighting alongside them. You also cooperate with others far more effectively.
+> (Tag:social)You build affection, trust, and respect with teammates and allies much faster, especially by fighting alongside them. You also cooperate with others far more effectively.
 
 **Decision**
 
@@ -5252,7 +5307,7 @@
 
 **Description**
 
-> You strike strangers as dependable and trustworthy, making their trust and respect easier to earn. This does not work on people with a negative opinion of you.
+> (Tag:social)You strike strangers as dependable and trustworthy, making their trust and respect easier to earn. This does not work on people with a negative opinion of you.
 
 **Decision**
 
@@ -5269,7 +5324,7 @@
 
 **Description**
 
-> Any pocket, backpack, or similar container you own is 10x larger on the inside, without changing the object itself.
+> (Tag:rule)Any pocket, backpack, or similar container you own is 10x larger on the inside, without changing the object itself.
 
 **Decision**
 
@@ -5286,7 +5341,7 @@
 
 **Description**
 
-> "I love a good challenge." Conflict and worthy opponents are drawn to you like a magnet, challenging your life — but conflict also brings rewards.
+> (Tag:rule)"I love a good challenge." Conflict and worthy opponents are drawn to you like a magnet, challenging your life, but conflict also brings rewards.
 
 **Decision**
 
@@ -5303,7 +5358,7 @@
 
 **Description**
 
-> A challenge board is added to your gacha, offering 3 limited-time quests based on your location, state, and power level. You can take one challenge every 48 hours when the board resets, or every 168 hours after a failure.
+> (Tag:meta)A challenge board is added to your gacha, offering 3 limited-time quests based on your location, state, and power level. You can take one challenge every 48 hours when the board resets, or every 168 hours after a failure.
 
 **Decision**
 
@@ -5320,7 +5375,7 @@
 
 **Description**
 
-> A relationship tracker is added to your gacha page, showing your standing with people of interest and what they think of you, plus their interests, likes, and dislikes.
+> (Tag:meta)(Tag:social)A relationship tracker is added to your gacha page, showing your standing with people of interest and what they think of you, plus their interests, likes, and dislikes.
 
 **Decision**
 
@@ -5337,7 +5392,7 @@
 
 **Description**
 
-> Your fists are your only true weapon. Your physical stats are augmented proportionally to the strongest weapon you own, but this bonus is negated the moment you wield any weapon.
+> (Tag:meta)(Tag:physical+)Your fists are your only true weapon. Your physical stats are augmented proportionally to the strongest weapon you own, but this bonus is negated the moment you wield any weapon.
 
 **Decision**
 
@@ -5354,7 +5409,7 @@
 
 **Description**
 
-> You are one with your weapon: whatever item you wield gains your physical stats added to its own. A copper coin in your hands can out-toughen diamond if you are strong enough.
+> (Tag:rule)You are one with your weapon: whatever item you wield gains your physical stats added to its own. A copper coin in your hands can out-toughen diamond if you are strong enough.
 
 **Decision**
 
@@ -5371,7 +5426,7 @@
 
 **Description**
 
-> Unga Bunga. You possess a caveman's enhanced strength and endurance, skill with blunt instruments, and ability to tough it out in the wild.
+> (Tag:defence+)(Tag:strength+)(Tag:talent)Unga Bunga. You possess a caveman's enhanced strength and endurance, skill with blunt instruments, and ability to tough it out in the wild.
 
 **Decision**
 
@@ -5388,7 +5443,7 @@
 
 **Description**
 
-> You are a child of the Void with enhanced spatial awareness. You sense portals opening a kilometre away, and all Space-based abilities are more potent and faster to master.
+> (Tag:perception+)(Tag:space+)You are a child of the Void with enhanced spatial awareness. You sense portals opening a kilometre away, and all Space-based abilities are more potent and faster to master.
 
 **Decision**
 
@@ -5405,7 +5460,7 @@
 
 **Description**
 
-> You are Time's favourite: you are immune to all time-based abilities, time travel, and paradoxes, and time cannot be stopped in your world even by the mightiest gods. Your time-related abilities and magic cost massively less strain and energy, and you ignore the paradox and time resistance of targets below god level.
+> (Tag:time)(Tag:time+)(Tag:time-resistance+)You are Time's favourite: you are immune to all time-based abilities, time travel, and paradoxes, and time cannot be stopped in your world even by the mightiest gods. Your time-related abilities and magic cost massively less strain and energy, and you ignore the paradox and time resistance of targets below god level.
 
 **Decision**
 
@@ -5422,7 +5477,7 @@
 
 **Description**
 
-> Thanks to her blessing, your vitality and virility are considerably increased. Those with maternal instincts find themselves more attracted to you, and you are assured to be a great father.
+> (Tag:eldritch)(Tag:nsfw)(Tag:social)(Tag:vitality+)Thanks to her blessing, your vitality and virility are considerably increased. Those with maternal instincts find themselves more attracted to you, and you are assured to be a great father.
 
 **Decision**
 
@@ -5439,7 +5494,7 @@
 
 **Description**
 
-> Thanks to Yog's blessing, all drawbacks from your Space-related abilities are mitigated, they cost less energy, and their range is far higher. You also gain incredible resistance to Space attribute attacks.
+> (Tag:eldritch)(Tag:space+)(Tag:space-resistance+)Thanks to Yog's blessing, all drawbacks from your Space-related abilities are mitigated, they cost less energy, and their range is far higher. You also gain incredible resistance to Space attribute attacks.
 
 **Decision**
 
@@ -5456,7 +5511,7 @@
 
 **Description**
 
-> (Nsfw) During sexual activity, your stamina recovery, endurance, and resilience are massively boosted, letting you continue for literal days without rest.
+> (Tag:nsfw)(Tag:stamina+)(Nsfw) During sexual activity, your stamina recovery, endurance, and resilience are massively boosted, letting you continue for literal days without rest.
 
 **Decision**
 
@@ -5473,7 +5528,7 @@
 
 **Description**
 
-> You are modestly lucky, with fate's scales skewed toward you without reaching blatantly supernatural levels. (Does not affect Gacha)
+> (Tag:luck+)You are modestly lucky, with fate's scales skewed toward you without reaching blatantly supernatural levels. (Does not affect Gacha)
 
 **Decision**
 
@@ -5490,7 +5545,7 @@
 
 **Description**
 
-> You are naturally very lucky and favored by Lady Fate. You can rob a casino blind, and matters without high impact on fate go in your favor. (Does not affect Gacha)
+> (Tag:luck+)You are naturally very lucky and favored by Lady Fate. You can rob a casino blind, and matters without high impact on fate go in your favor. (Does not affect Gacha)
 
 **Decision**
 
@@ -5507,7 +5562,7 @@
 
 **Description**
 
-> You are incredibly lucky without seeming superhuman. You almost never lose games of chance unless you choose to — if it is up to chance, it lands in your favour. (Does not affect Gacha)
+> (Tag:luck+)You are incredibly lucky without seeming superhuman. You almost never lose games of chance unless you choose to, if it is up to chance, it lands in your favour. (Does not affect Gacha)
 
 **Decision**
 
@@ -5524,7 +5579,7 @@
 
 **Description**
 
-> You are absurdly lucky, enough for luck alone to count as an ability. Chance falls in your favour and fate bends toward you, though not all luck is good. (Does not affect Gacha)
+> (Tag:luck+)You are absurdly lucky, enough for luck alone to count as an ability. Chance falls in your favour and fate bends toward you, though not all luck is good. (Does not affect Gacha)
 
 **Decision**
 
@@ -5541,7 +5596,7 @@
 
 **Description**
 
-> You are the true hunter of inhumans such as Ghouls, Ghosts, Cryptids, and Demons. Against them, your reflexes and skills are enhanced, you enter a focused state, and your intuition is heightened.
+> (Tag:anti-monster)(Tag:martial)(Tag:perception+)(Tag:reflex+)(Tag:talent)You are the true hunter of inhumans such as Ghouls, Ghosts, Cryptids, and Demons. Against them, your reflexes and skills are enhanced, you enter a focused state, and your intuition is heightened.
 
 **Decision**
 
@@ -5558,7 +5613,7 @@
 
 **Description**
 
-> You are a natural marksman with exceptional aim and accuracy with most projectiles, especially bows and ranged weaponry.
+> (Tag:martial)(Tag:talent)You are a natural marksman with exceptional aim and accuracy with most projectiles, especially bows and ranged weaponry.
 
 **Decision**
 
@@ -5575,7 +5630,7 @@
 
 **Description**
 
-> Whenever you suffer a debuff or binding, your physical stats and magical resistance increase. The more penalties you incur, the stronger this boost becomes.
+> (Tag:agility+)(Tag:defence+)(Tag:magic-resistance+)(Tag:strength+)Whenever you suffer a debuff or binding, your physical stats and magical resistance increase. The more penalties you incur, the stronger this boost becomes.
 
 **Decision**
 
@@ -5592,7 +5647,7 @@
 
 **Description**
 
-> As a child blessed by Artemis, goddess of the hunt, your proficiency and talent with all ranged weapons are greatly increased. Your tracking and wayfinding are supernaturally enhanced, letting you trail prey across a country and never lose your way in the deepest woods.
+> (Tag:martial)(Tag:talent)As a child blessed by Artemis, goddess of the hunt, your proficiency and talent with all ranged weapons are greatly increased. Your tracking and wayfinding are supernaturally enhanced, letting you trail prey across a country and never lose your way in the deepest woods.
 
 **Decision**
 
@@ -5609,7 +5664,7 @@
 
 **Description**
 
-> You wield any weapon as if you have trained with it for 10 years and bypass any wielding requirements, such as being an angel or chosen hero. All sentient weapons adore you and yearn to be wielded by you.
+> (Tag:martial)(Tag:rule)(Tag:social)You wield any weapon as if you have trained with it for 10 years and bypass any wielding requirements, such as being an angel or chosen hero. All sentient weapons adore you and yearn to be wielded by you.
 
 **Decision**
 
@@ -5626,7 +5681,7 @@
 
 **Description**
 
-> You qualify to wield any item or pass through any qualified door, even if the item deems you unworthy like Excalibur. You must be holding the weapon — unarmed combat does not count — and mastery vanishes when you let go.
+> (Tag:rule)You qualify to wield any item or pass through any qualified door, even if the item deems you unworthy like Excalibur. You must be holding the weapon, unarmed combat does not count, and mastery vanishes when you let go.
 
 **Decision**
 
@@ -5643,7 +5698,7 @@
 
 **Description**
 
-> People are far more forgiving toward you and cannot stay angry at you for long, even in court.
+> (Tag:social)People are far more forgiving toward you and cannot stay angry at you for long, even in court.
 
 **Decision**
 
@@ -5660,7 +5715,7 @@
 
 **Description**
 
-> People are far more generous toward you, pay you handsomely, and rarely keep secrets from you.
+> (Tag:social)People are far more generous toward you, pay you handsomely, and rarely keep secrets from you.
 
 **Decision**
 
@@ -5677,7 +5732,7 @@
 
 **Description**
 
-> The child of evil rebels against the heavens. All your stats are significantly increased against Holy- or Light-aligned enemies, but you cannot receive Holy or Light blessings or healing.
+> (Tag:anti-holy)(Tag:anti-light)The child of evil rebels against the heavens. All your stats are significantly increased against Holy- or Light-aligned enemies, but you cannot receive Holy or Light blessings or healing.
 
 **Decision**
 
@@ -5694,7 +5749,7 @@
 
 **Description**
 
-> People automatically normalize your weirdness and oddities, from skipping class to speaking strangely.
+> (Tag:social)People automatically normalize your weirdness and oddities, from skipping class to speaking strangely.
 
 **Decision**
 
@@ -5711,7 +5766,7 @@
 
 **Description**
 
-> People rationalize and accept your unusual or alarming actions, though this effect weakens the more drastic and inexcusable your actions become.
+> (Tag:social)People rationalize and accept your unusual or alarming actions, though this effect weakens the more drastic and inexcusable your actions become.
 
 **Decision**
 
@@ -5728,7 +5783,7 @@
 
 **Description**
 
-> "This could get problematic." The more evil someone is, the more easily you win their favor and affection.
+> (Tag:social)"This could get problematic." The more evil someone is, the more easily you win their favor and affection.
 
 **Decision**
 
@@ -5745,7 +5800,7 @@
 
 **Description**
 
-> Your body is unnaturally powerful. Even as a basic human, you are at least a hundred times stronger than you should be and can demolish the entire world military with ease.
+> (Tag:strength+)Your body is unnaturally powerful. Even as a basic human, you are at least a hundred times stronger than you should be and can demolish the entire world military with ease.
 
 **Decision**
 
@@ -5762,7 +5817,7 @@
 
 **Description**
 
-> "Dattebayo!" You are an excellent motivational speaker whose corny words strike hearts instead of sounding cringey. You easily get through to even stubborn listeners.
+> (Tag:social)"Dattebayo!" You are an excellent motivational speaker whose corny words strike hearts instead of sounding cringey. You easily get through to even stubborn listeners.
 
 **Decision**
 
@@ -5779,7 +5834,7 @@
 
 **Description**
 
-> As a child blessed by Isis, goddess of magic, you learn and comprehend magic with ease regardless of affinity or race restrictions.
+> (Tag:magic)(Tag:talent)As a child blessed by Isis, goddess of magic, you learn and comprehend magic with ease regardless of affinity or race restrictions.
 
 **Decision**
 
@@ -5796,7 +5851,7 @@
 
 **Description**
 
-> As a child blessed by Durga, goddess of righteous fury, you are immune to corruption, negative effects, and mental statuses during combat. The more evil your enemy, the greater your advantage against them.
+> (Tag:anti-evil)(Tag:mental-resistance+)As a child blessed by Durga, goddess of righteous fury, you are immune to corruption, negative effects, and mental statuses during combat. The more evil your enemy, the greater your advantage against them.
 
 **Decision**
 
@@ -5813,7 +5868,7 @@
 
 **Description**
 
-> As a child blessed by Amaterasu, goddess of the Sun, you greatly resist curses and darkness-based attacks while your light-based abilities are much stronger.
+> (Tag:curse-resistance+)(Tag:dark-resistance+)(Tag:fire+)(Tag:holy)(Tag:light+)As a child blessed by Amaterasu, goddess of the Sun, you greatly resist curses and darkness-based attacks while your light-based abilities are much stronger.
 
 **Decision**
 
@@ -5830,7 +5885,7 @@
 
 **Description**
 
-> As a child blessed by Izanami, goddess of the Underworld and Death, you greatly resist all curses and necrotic effects. Your affinity for all Spirit and Death abilities, spells, and items is increased, and the dead favour you more.
+> (Tag:curse-resistance+)(Tag:necro+)(Tag:necro-resistance+)(Tag:spirit+)As a child blessed by Izanami, goddess of the Underworld and Death, you greatly resist all curses and necrotic effects. Your affinity for all Spirit and Death abilities, spells, and items is increased, and the dead favour you more.
 
 **Decision**
 
@@ -5847,7 +5902,7 @@
 
 **Description**
 
-> As a child blessed by Hestia, goddess of hearth, you resist all mental effects and negative ailments. Your body is far healthier, and your natural aura puts people at ease.
+> (Tag:mental-resistance+)(Tag:social)(Tag:vitality+)As a child blessed by Hestia, goddess of hearth, you resist all mental effects and negative ailments. Your body is far healthier, and your natural aura puts people at ease.
 
 **Decision**
 
@@ -5864,7 +5919,7 @@
 
 **Description**
 
-> Blessed by Bast, goddess of cats and grace, you gain cat-like reflexes, agility, and night vision. Felines adore you.
+> (Tag:agility+)(Tag:reflex+)(Tag:social)Blessed by Bast, goddess of cats and grace, you gain cat-like reflexes, agility, and night vision. Felines adore you.
 
 **Decision**
 
@@ -5881,7 +5936,7 @@
 
 **Description**
 
-> You freely adjust your own fertility from absolute sterility to extreme potency. You can impregnate even the completely infertile, or match the Goat of a Thousand Young.
+> (Tag:nsfw)(Tag:rule)(Noncon) You freely adjust your own fertility from absolute sterility to extreme potency. You can impregnate even the completely infertile, or match the Goat of a Thousand Young.
 
 **Decision**
 
@@ -5898,7 +5953,7 @@
 
 **Description**
 
-> Your fate is strong and immoderate, curving toward you like a main protagonist. You draw plenty of luck, both good and bad.
+> (Tag:luck+)Your fate is strong and immoderate, curving toward you like a main protagonist. You draw plenty of luck, both good and bad.
 
 **Decision**
 
@@ -5915,7 +5970,7 @@
 
 **Description**
 
-> "A Deal's a Deal." People feel compelled to fulfil their end of any explicit deal they make with you (No clever wording or Fae deals). It is also far easier for you to goad people into outrageous bets.
+> (Tag:fae)(Tag:rule)(Tag:social)"A Deal's a Deal." People feel compelled to fulfil their end of any explicit deal they make with you (No clever wording or Fae deals). It is also far easier for you to goad people into outrageous bets.
 
 **Decision**
 
@@ -5932,7 +5987,7 @@
 
 **Description**
 
-> (Nsfw) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
+> (Tag:nsfw)(Tag:rule)(Nsfw)(Noncon) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
 
 **Decision**
 
@@ -5949,7 +6004,7 @@
 
 **Description**
 
-> (Nsfw) Your path is shaped by the Ecchi genre, drawing you into situations like walking in on someone changing, joining a dorm of attractive people, or getting locked in a closet with someone hot.
+> (Tag:nsfw)(Tag:rule)(Nsfw)(Noncon) Your path is shaped by the Ecchi genre, drawing you into situations like walking in on someone changing, joining a dorm of attractive people, or getting locked in a closet with someone hot.
 
 **Decision**
 
@@ -5966,7 +6021,7 @@
 
 **Description**
 
-> You project an aura that draws honesty from others. People lie worse around you and feel greater remorse for deceiving you.
+> (Tag:social)You project an aura that draws honesty from others. People lie worse around you and feel greater remorse for deceiving you.
 
 **Decision**
 
@@ -5983,7 +6038,7 @@
 
 **Description**
 
-> Whenever you speak what you believe to be true, people believe your words, however you choose to word them.
+> (Tag:social)Whenever you speak what you believe to be true, people believe your words, however you choose to word them.
 
 **Decision**
 
@@ -6000,7 +6055,7 @@
 
 **Description**
 
-> People are naturally more loyal to you, more willing to risk themselves for you and less inclined to betray you.
+> (Tag:social)People are naturally more loyal to you, more willing to risk themselves for you and less inclined to betray you.
 
 **Decision**
 
@@ -6017,7 +6072,7 @@
 
 **Description**
 
-> Information-gathering abilities and technologies malfunction when targeting you.
+> (Tag:divination-resistance+)Information-gathering abilities and technologies malfunction when targeting you.
 
 **Decision**
 
@@ -6034,7 +6089,7 @@
 
 **Description**
 
-> Your mind is organized and efficient like a library, with slightly faster memory, clarity, and speed.
+> (Tag:mind)Your mind is organized and efficient like a library, with slightly faster memory, clarity, and speed.
 
 **Decision**
 
@@ -6051,7 +6106,7 @@
 
 **Description**
 
-> Your embrace feels as soft as a mother's love — calming, comforting, and therapeutic. Even an evil man might break down crying in your arms.
+> (Tag:social)Your embrace feels as soft as a mother's love, calming, comforting, and therapeutic. Even an evil man might break down crying in your arms.
 
 **Decision**
 
@@ -6068,7 +6123,7 @@
 
 **Description**
 
-> You are transhuman, whatever your race. Genetic and mechanical augments work exceptionally well on you, and you suffer no penalty for changing race or installing cybernetics.
+> (Tag:body)(Tag:talent)You are transhuman, whatever your race. Genetic and mechanical augments work exceptionally well on you, and you suffer no penalty for changing race or installing cybernetics.
 
 **Decision**
 
@@ -6085,7 +6140,7 @@
 
 **Description**
 
-> You hold basic mastery over all mundane skills and mild talent in every field — cooking without burning eggs, basic mechanics, dancing without tripping, wielding a sword without cutting yourself.
+> You hold basic mastery over all mundane skills and mild talent in every field, cooking without burning eggs, basic mechanics, dancing without tripping, wielding a sword without cutting yourself.
 
 **Decision**
 
@@ -6102,7 +6157,7 @@
 
 **Description**
 
-> You and your familiars always carry the relevant papers. You can reach into your pocket and find whatever legal identification you need.
+> (Tag:rule)(Tag:social)You and your familiars always carry the relevant papers. You can reach into your pocket and find whatever legal identification you need.
 
 **Decision**
 
@@ -6119,7 +6174,7 @@
 
 **Description**
 
-> (Nsfw) People do not mind your open displays of affection, so long as you are not too overt.
+> (Tag:nsfw)(Tag:social)(Nsfw) People do not mind your open displays of affection, so long as you are not too overt.
 
 **Decision**
 
@@ -6136,7 +6191,7 @@
 
 **Description**
 
-> Information gathering fails against you: scrying spells collapse, precognition fails, and cameras stop recording.
+> (Tag:divination-resistance+)(Tag:meta-resistance+)Information gathering fails against you: scrying spells collapse, precognition fails, and cameras stop recording.
 
 **Decision**
 
@@ -6153,7 +6208,7 @@
 
 **Description**
 
-> You spend less energy on your other abilities for each ability slot you leave unused. If you use only one of 3 slots, that ability costs 3x less.
+> (Tag:meta)You spend less energy on your other abilities for each ability slot you leave unused. If you use only one of 3 slots, that ability costs 3x less.
 
 **Decision**
 
@@ -6170,7 +6225,7 @@
 
 **Description**
 
-> You live in a reality retconned across all existence where some men are now women and some women are now men.
+> (Tag:nsfw)(Tag:rule)You live in a reality retconned across all existence where some men are now women and some women are now men.
 
 **Decision**
 
@@ -6204,7 +6259,7 @@
 
 **Description**
 
-> (Nsfw) Your scent smells very good and slightly arousing.
+> (Tag:nsfw)(Tag:social)(Nsfw) Your scent smells very good and slightly arousing.
 
 **Decision**
 
@@ -6255,7 +6310,7 @@
 
 **Description**
 
-> You carry Uchiha Clan blood, granting you increased Martial Talent, Energy Reserves, and Fire Affinity. You can potentially unlock a Natural Sharingan (Epic Ability) that costs no ability slot. (Does not give Chakra)
+> (Tag:bloodline)(Tag:fire)(Tag:fire+)(Tag:martial)(Tag:maximum-energy+)(Tag:power)(Tag:talent)You carry Uchiha Clan blood, granting you increased Martial Talent, Energy Reserves, and Fire Affinity. You can potentially unlock a Natural Sharingan (Epic Ability) that costs no ability slot. (Does not give Chakra)
 
 **Decision**
 
@@ -6272,7 +6327,7 @@
 
 **Description**
 
-> You carry Uzumaki Clan blood, granting you greatly increased Vitality and Energy Reserves. You heal yourself and others by imbuing your blood with energy and life force, and you can potentially unlock Adamantine Sealing Chains (Epic Ability) that costs no ability slot. (Does not give Chakra)
+> (Tag:bloodline)(Tag:health-recovery)(Tag:maximum-energy+)(Tag:power)(Tag:vitality+)You carry Uzumaki Clan blood, granting you greatly increased Vitality and Energy Reserves. You heal yourself and others by imbuing your blood with energy and life force, and you can potentially unlock Adamantine Sealing Chains (Epic Ability) that costs no ability slot. (Does not give Chakra)
 
 **Decision**
 
@@ -6289,7 +6344,7 @@
 
 **Description**
 
-> You carry Hyuga Clan blood, granting you increased Martial Talent, Energy Reserves, and Dexterity. You can potentially unlock a natural Byakugan (Elite Ability) that costs no ability slot. (Does not give Chakra or dormant alien god genes)
+> (Tag:bloodline)(Tag:dexterity+)(Tag:martial)(Tag:maximum-energy+)(Tag:power)(Tag:talent)You carry Hyuga Clan blood, granting you increased Martial Talent, Energy Reserves, and Dexterity. You can potentially unlock a natural Byakugan (Elite Ability) that costs no ability slot. (Does not give Chakra or dormant alien god genes)
 
 **Decision**
 
@@ -6306,7 +6361,7 @@
 
 **Description**
 
-> You descend directly from Hashirama Senju, gaining greatly increased lifeforce, energy reserves, and martial prowess. You can potentially unlock natural Wood Release (Legendary Ability) and gain increased Nature Affinity. (Does not give Chakra)
+> (Tag:bloodline)(Tag:martial)(Tag:maximum-energy+)(Tag:nature)(Tag:power)(Tag:talent)(Tag:vitality+)You descend directly from Hashirama Senju, gaining greatly increased lifeforce, energy reserves, and martial prowess. You can potentially unlock natural Wood Release (Legendary Ability) and gain increased Nature Affinity. (Does not give Chakra)
 
 **Decision**
 
@@ -6323,7 +6378,7 @@
 
 **Description**
 
-> You are a Hanma with exceptional genetics, giving you increased poison resistance, far faster physical stat growth, and greatly increased martial talent. You carry overwhelming testosterone compared to other men, or equal genetic gifts without the testosterone if you are female.
+> (Tag:bloodline)(Tag:martial)(Tag:talent)You are a Hanma with exceptional genetics, giving you increased poison resistance, far faster physical stat growth, and greatly increased martial talent. You carry overwhelming testosterone compared to other men, or equal genetic gifts without the testosterone if you are female.
 
 **Decision**
 
@@ -6340,7 +6395,7 @@
 
 **Description**
 
-> Race - You are a lesser undead and must choose between zombie or skeleton. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your choice, and this race toggle is permanent until contested.
+> (Tag:necro)(Tag:race-change)Race - You are a lesser undead and must choose between zombie or skeleton. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your choice, and this race toggle is permanent until contested.
 
 **Decision**
 
@@ -6357,7 +6412,7 @@
 
 **Description**
 
-> Race - You are a greater undead and transform into a Death Knight or Lich based on your stats. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your form.
+> (Tag:necro)(Tag:race-change)Race - You are a greater undead and transform into a Death Knight or Lich based on your stats. You have no stamina and spend energy for everything, gaining unique bonuses and demerits based on your form.
 
 **Decision**
 
@@ -6374,7 +6429,7 @@
 
 **Description**
 
-> Race - You are a Fishman of a random hybrid with naturally stronger physical stats than humans. You breathe underwater, hold great water affinity, communicate with sea-bound creatures, and can learn Fishman Karate.
+> (Tag:martial)(Tag:physical+)(Tag:race-change)(Tag:talent)(Tag:water)(Tag:water+)Race - You are a Fishman of a random hybrid with naturally stronger physical stats than humans. You breathe underwater, hold great water affinity, communicate with sea-bound creatures, and can learn Fishman Karate.
 
 **Decision**
 
@@ -6391,7 +6446,7 @@
 
 **Description**
 
-> Race - You are a Lunarian of a legendary race with massively increased physical stats, wings, and natural fire manipulation. While the fire on your back stays lit, your durability is massively increased.
+> (Tag:defence+)(Tag:fire)(Tag:fire+)(Tag:physical+)(Tag:race-change)Race - You are a Lunarian of a legendary race with massively increased physical stats, wings, and natural fire manipulation. While the fire on your back stays lit, your durability is massively increased.
 
 **Decision**
 
@@ -6408,7 +6463,7 @@
 
 **Description**
 
-> Race - You are a Nightkin vampire created from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding as long as you hold blood, and you grow stronger and can evolve to the next undeath stage by consuming enough blood.
+> (Tag:health-recovery)(Tag:maximum-energy+)(Tag:necro)(Tag:physical+)(Tag:race-change)(Tag:time)(Tag:vampiric)Race - You are a Nightkin vampire created from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding as long as you hold blood, and you grow stronger and can evolve to the next undeath stage by consuming enough blood.
 
 **Decision**
 
@@ -6425,7 +6480,7 @@
 
 **Description**
 
-> Race - You are a Nightmare vampire born from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding while you hold blood and can turn people into ghouls. You wield your own unique Elite Rank Ability with no ability slot and evolve to the next undeath stage by consuming enough blood.
+> (Tag:health-recovery)(Tag:maximum-energy+)(Tag:necro)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:time)(Tag:vampiric)Race - You are a Nightmare vampire born from Dead Apostle blood with superhuman physical and magical abilities. You regenerate by rewinding while you hold blood and can turn people into ghouls. You wield your own unique Elite Rank Ability with no ability slot and evolve to the next undeath stage by consuming enough blood.
 
 **Decision**
 
@@ -6442,7 +6497,7 @@
 
 **Description**
 
-> Race - You are a fully realized Dead Apostle with vastly superior physical stats and time-rewinding regenerative immortality while you hold blood. You gain your own Epic ranked ability that costs no ability slot, turn humans and animals into lower-ranking apostle thralls, and grow stronger and recover energy the more blood you consume.
+> (Tag:health-recovery)(Tag:maximum-energy+)(Tag:necro)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:time)(Tag:vampiric)Race - You are a fully realized Dead Apostle with vastly superior physical stats and time-rewinding regenerative immortality while you hold blood. You gain your own Epic ranked ability that costs no ability slot, turn humans and animals into lower-ranking apostle thralls, and grow stronger and recover energy the more blood you consume.
 
 **Decision**
 
@@ -6459,7 +6514,7 @@
 
 **Description**
 
-> Race - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
+> (Tag:health-recovery)(Tag:maximum-energy+)(Tag:necro)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:time)(Tag:vampiric)Race - You are a true Dead Apostle Ancestor with immense physical and magical power, rewinding your own time to heal whenever you are injured while you hold blood. You wield your own Idea Blood, a Legendary Ability costing no ability slot, turn anyone who ingests your blood into a powerful vampire instantly, and all vampires and undead acknowledge you as the ultimate vampire class.
 
 **Decision**
 
@@ -6476,7 +6531,7 @@
 
 **Description**
 
-> Race - You are a beastkin of a random animal such as bear, rabbit, cat, wolf, etc., with enhanced physical stats and night vision. You gain unique traits and biological features based on your hybrid.
+> (Tag:agility+)(Tag:beastkin)(Tag:perception+)(Tag:race-change)(Tag:strength+)(Tag:vitality+)Race - You are a beastkin of a random animal such as bear, rabbit, cat, wolf, etc., with enhanced physical stats and night vision. You gain unique traits and biological features based on your hybrid.
 
 **Decision**
 
@@ -6493,7 +6548,7 @@
 
 **Description**
 
-> Race - You are a flesh-eating ghoul with a chosen Kagune and formidable regeneration. You cannot digest anything but human flesh, and you slowly turn feral if you go longer than two weeks without dining.
+> (Tag:agility+)(Tag:defence+)(Tag:health-regeneration+)(Tag:race-change)(Tag:strength+)Race - You are a flesh-eating ghoul with a chosen Kagune and formidable regeneration. You cannot digest anything but human flesh, and you slowly turn feral if you go longer than two weeks without dining.
 
 **Decision**
 
@@ -6510,7 +6565,7 @@
 
 **Description**
 
-> Race - You are a One-Eyed Ghoul, stronger than an average ghoul, with superhuman stats and a chosen Kagune. You grow stronger by eating human flesh but can also eat normal human food.
+> (Tag:agility+)(Tag:defence+)(Tag:health-regeneration+)(Tag:race-change)(Tag:strength+)Race - You are a One-Eyed Ghoul, stronger than an average ghoul, with superhuman stats and a chosen Kagune. You grow stronger by eating human flesh but can also eat normal human food.
 
 **Decision**
 
@@ -6527,7 +6582,7 @@
 
 **Description**
 
-> Race - You are a vampire born of the Stone Mask created by Pillar Man Kars. You gain amped physical stats, ghoul and vampire creation, and flesh manipulation, but you are deathly vulnerable to sunlight.
+> (Tag:agility+)(Tag:defence+)(Tag:health-recovery)(Tag:race-change)(Tag:strength+)(Tag:vampiric)Race - You are a vampire born of the Stone Mask created by Pillar Man Kars. You gain amped physical stats, ghoul and vampire creation, and flesh manipulation, but you are deathly vulnerable to sunlight.
 
 **Decision**
 
@@ -6544,7 +6599,7 @@
 
 **Description**
 
-> Race - You are a pillar man unlocked by the Stone Mask with self-biokinesis, flesh absorption, thrall creation, and massively increased physical stats. You are vulnerable to sunlight.
+> (Tag:bio)(Tag:health-regeneration+)(Tag:physical+)(Tag:race-change)(Tag:transformation)Race - You are a pillar man unlocked by the Stone Mask with self-biokinesis, flesh absorption, thrall creation, and massively increased physical stats. You are vulnerable to sunlight.
 
 **Decision**
 
@@ -6561,7 +6616,7 @@
 
 **Description**
 
-> Race - You are a perfect lifeform unlocked as a pillar man by the Stone Mask with the super Aja. You gain enhanced physical and magical stats and freely manipulate your own biology and body shape.
+> (Tag:bio)(Tag:health-regeneration+)(Tag:mind+)(Tag:physical+)(Tag:race-change)(Tag:talent)(Tag:transformation)Race - You are a perfect lifeform unlocked as a pillar man by the Stone Mask with the super Aja. You gain enhanced physical and magical stats and freely manipulate your own biology and body shape.
 
 **Decision**
 
@@ -6578,7 +6633,7 @@
 
 **Description**
 
-> Race - You are a Viltrumite of one of the galaxy's fiercest warrior races with an incredibly powerful body and free flight. You are almost invulnerable except to a specific sound frequency.
+> (Tag:defence+)(Tag:physical+)(Tag:power)(Tag:race-change)Race - You are a Viltrumite of one of the galaxy's fiercest warrior races with an incredibly powerful body and free flight. You are almost invulnerable except to a specific sound frequency.
 
 **Decision**
 
@@ -6595,7 +6650,7 @@
 
 **Description**
 
-> Race - You are a Kryptonian whose physical and energy reserves grow with sunlight exposure. You gain heat vision, ice breath, high-speed flight, no need to breathe, tactile telekinesis, X-ray vision, and more, becoming basically a living god under a yellow sun.
+> (Tag:growth+)(Tag:physical+)(Tag:power)(Tag:race-change)Race - You are a Kryptonian whose physical and energy reserves grow with sunlight exposure. You gain heat vision, ice breath, high-speed flight, no need to breathe, tactile telekinesis, X-ray vision, and more, becoming basically a living god under a yellow sun.
 
 **Decision**
 
@@ -6612,7 +6667,7 @@
 
 **Description**
 
-> Race - You are a Saiyan warrior with a great natural physique and a monkey tail weakness. Under a full moon you turn into a rampaging giant monkey with massively increased stats, but you still need decades of training to grow truly strong.
+> (Tag:growth+)(Tag:physical+)(Tag:power)(Tag:race-change)Race - You are a Saiyan warrior with a great natural physique and a monkey tail weakness. Under a full moon you turn into a rampaging giant monkey with massively increased stats, but you still need decades of training to grow truly strong.
 
 **Decision**
 
@@ -6629,7 +6684,7 @@
 
 **Description**
 
-> You are the child of the God Emperor of Mankind, sharing his gifted physique, charisma, martial prowess, scientific gift, and potential as the strongest Psyker. You can master all non-Chaos Psyker Disciplines and eventually tear apart a planet with Psyker power alone through training, as your power emulates the Warp without connecting to it.
+> (Tag:bloodline)(Tag:martial)(Tag:mental)(Tag:physical+)(Tag:power)(Tag:talent)You are the child of the God Emperor of Mankind, sharing his gifted physique, charisma, martial prowess, scientific gift, and potential as the strongest Psyker. You can master all non-Chaos Psyker Disciplines and eventually tear apart a planet with Psyker power alone through training, as your power emulates the Warp without connecting to it.
 
 **Flagged in reports**
 
@@ -6650,7 +6705,7 @@
 
 **Description**
 
-> Race - You are a Majin descendant of Majin Buu with a malleable gum-like physique and massively enhanced physical and magical stats. You survive and regenerate from even a handful of your body and absorb people and objects to strengthen yourself, though you start with only greatly superhuman abilities and increased energy.
+> (Tag:growth+)(Tag:health-regeneration+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power+)(Tag:race-change)Race - You are a Majin descendant of Majin Buu with a malleable gum-like physique and massively enhanced physical and magical stats. You survive and regenerate from even a handful of your body and absorb people and objects to strengthen yourself, though you start with only greatly superhuman abilities and increased energy.
 
 **Decision**
 
@@ -6667,7 +6722,7 @@
 
 **Description**
 
-> You are a Brazilian descendant of the legendary Jetstream Sam. You can double jump and hold talent in swordsmanship and swordsmithing.
+> (Tag:bloodline)(Tag:martial)(Tag:power)(Tag:talent)You are a Brazilian descendant of the legendary Jetstream Sam. You can double jump and hold talent in swordsmanship and swordsmithing.
 
 **Decision**
 
@@ -6684,7 +6739,7 @@
 
 **Description**
 
-> You descend from the legendary Tepes bloodline of original vampires. Your Vampirism, Unholy, and Hemokinetic abilities are more potent, and all undead and vampires respect you more.
+> (Tag:blood)(Tag:bloodline)(Tag:infernal+)(Tag:necro+)(Tag:social)(Tag:vampiric)You descend from the legendary Tepes bloodline of original vampires. Your Vampirism, Unholy, and Hemokinetic abilities are more potent, and all undead and vampires respect you more.
 
 **Decision**
 
@@ -6701,7 +6756,7 @@
 
 **Description**
 
-> Your skeleton is unusually durable, flexible, and better at conducting energy, taking far more punishment before damage. Note that your skeleton isn't real mithril and scales with your physical stats.
+> (Tag:body)(Tag:defence+)Your skeleton is unusually durable, flexible, and better at conducting energy, taking far more punishment before damage. Note that your skeleton isn't real mithril and scales with your physical stats.
 
 **Decision**
 
@@ -6718,7 +6773,7 @@
 
 **Description**
 
-> Your skeleton is incredibly durable and dense, seeming nigh unbreakable without poisoning you. Note that your skeleton isn't real adamantium and scales with your physical stats.
+> (Tag:body)(Tag:defence+)Your skeleton is incredibly durable and dense, seeming nigh unbreakable without poisoning you. Note that your skeleton isn't real adamantium and scales with your physical stats.
 
 **Decision**
 
@@ -6735,7 +6790,7 @@
 
 **Description**
 
-> Your skeleton resembles Vibranium more than bone, seeming nigh unbreakable while absorbing and storing kinetic energy. You spend that stored energy to temporarily enhance your physical strength. Note that your skeleton isn't real Vibranium and scales with your physical stats.
+> (Tag:body)(Tag:defence+)(Tag:physical+)Your skeleton resembles Vibranium more than bone, seeming nigh unbreakable while absorbing and storing kinetic energy. You spend that stored energy to temporarily enhance your physical strength. Note that your skeleton isn't real Vibranium and scales with your physical stats.
 
 **Decision**
 
@@ -6752,7 +6807,7 @@
 
 **Description**
 
-> Your skeleton is bonded with Adamantium, making it borderline unbreakable but severely poisoning you. You should wait to activate this trait unless you have countermeasures lined up.
+> (Tag:body)(Tag:defence+)Your skeleton is bonded with Adamantium, making it borderline unbreakable but severely poisoning you. You should wait to activate this trait unless you have countermeasures lined up.
 
 **Decision**
 
@@ -6769,7 +6824,7 @@
 
 **Description**
 
-> You hold a knack for sensing and locating energy/mana/chakra, etc. Your energy-sensing and Thinker abilities are enhanced.
+> (Tag:sense+)(Tag:talent)You hold a knack for sensing and locating energy/mana/chakra, etc. Your energy-sensing and Thinker abilities are enhanced.
 
 **Decision**
 
@@ -6786,7 +6841,7 @@
 
 **Description**
 
-> You grow stronger the more you are outnumbered in a fight, with enemies counting only if they will inflict grievous harm on you. This caps at 1 vs 1000 and halves for each ally fighting the outnumbering enemies alongside you.
+> (Tag:defence+)(Tag:energy-regeneration+)(Tag:stamina+)(Tag:strength+)You grow stronger the more you are outnumbered in a fight, with enemies counting only if they will inflict grievous harm on you. This caps at 1 vs 1000 and halves for each ally fighting the outnumbering enemies alongside you.
 
 **Decision**
 
@@ -6803,7 +6858,7 @@
 
 **Description**
 
-> Your stats increase during a one vs one fight, and this effect ends if any other combatant intervenes. People are also less likely to interrupt your duels.
+> (Tag:physical+)(Tag:rule)Your stats increase during a one vs one fight, and this effect ends if any other combatant intervenes. People are also less likely to interrupt your duels.
 
 **Decision**
 
@@ -6820,7 +6875,7 @@
 
 **Description**
 
-> You divide your attention across multiple tasks without losing efficiency. Your efficiency may still decline if you take on too many tasks at once.
+> (Tag:mind)You divide your attention across multiple tasks without losing efficiency. Your efficiency may still decline if you take on too many tasks at once.
 
 **Decision**
 
@@ -6837,7 +6892,7 @@
 
 **Description**
 
-> You hold a better chance of finding something useful whenever you scavenge for treasure, lost parts, artefacts, etc.
+> (Tag:luck+)(Tag:rule)You hold a better chance of finding something useful whenever you scavenge for treasure, lost parts, artefacts, etc.
 
 **Decision**
 
@@ -6854,7 +6909,7 @@
 
 **Description**
 
-> You are much more likely to encounter romantic interests in favourable positions during daily life.
+> (Tag:luck+)(Tag:rule)You are much more likely to encounter romantic interests in favourable positions during daily life.
 
 **Decision**
 
@@ -6871,7 +6926,7 @@
 
 **Description**
 
-> You can treat your vitality as a secondary mana bar at a 1-to-1 exchange rate. Expended vitality cannot be healed and only returns through rest.
+> (Tag:blood)(Tag:energy-recovery)(Tag:life)You can treat your vitality as a secondary mana bar at a 1-to-1 exchange rate. Expended vitality cannot be healed and only returns through rest.
 
 **Decision**
 
@@ -6888,7 +6943,7 @@
 
 **Description**
 
-> Race Change - You are an Angel created with holy power, with slightly increased physical stats and natural winged flight. Your Holy and Light-based abilities are more potent and include Holy Light (Rare Rank Ability), while your Darkness and Unholy abilities weaken and you stay vulnerable to Unholy attributes.
+> (Tag:holy)(Tag:holy+)(Tag:light+)(Tag:physical+)(Tag:race-change)Race Change - You are an Angel created with holy power, with slightly increased physical stats and natural winged flight. Your Holy and Light-based abilities are more potent and include Holy Light (Rare Rank Ability), while your Darkness and Unholy abilities weaken and you stay vulnerable to Unholy attributes.
 
 **Decision**
 
@@ -6905,7 +6960,7 @@
 
 **Description**
 
-> Race Change - You are a Principality, a higher-tier angel with two pairs of wings and holy power. You gain increased physical stats, energy reserves, and natural winged flight, stronger Holy and Light-based abilities including Holy Light (Rare Rank Ability), weaker Darkness and Unholy abilities, and vulnerability to Unholy attributes.
+> (Tag:holy)(Tag:holy+)(Tag:light+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)Race Change - You are a Principality, a higher-tier angel with two pairs of wings and holy power. You gain increased physical stats, energy reserves, and natural winged flight, stronger Holy and Light-based abilities including Holy Light (Rare Rank Ability), weaker Darkness and Unholy abilities, and vulnerability to Unholy attributes.
 
 **Decision**
 
@@ -6922,7 +6977,7 @@
 
 **Description**
 
-> Race Change - You are a Dominion, a high-tier angel with three pairs of wings and increased magical and physical abilities. Your Holy and Light attributes are considerably boosted and cost less mana, you instinctively learn Holy and Light Magic and convert energy into greater Holy Light (Elite Rank Ability), while your Darkness and Unholy attributes are greatly weakened.
+> (Tag:holy)(Tag:holy+)(Tag:light+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:power+)(Tag:race-change)(Tag:talent)Race Change - You are a Dominion, a high-tier angel with three pairs of wings and increased magical and physical abilities. Your Holy and Light attributes are considerably boosted and cost less mana, you instinctively learn Holy and Light Magic and convert energy into greater Holy Light (Elite Rank Ability), while your Darkness and Unholy attributes are greatly weakened.
 
 **Decision**
 
@@ -6939,7 +6994,7 @@
 
 **Description**
 
-> Race Change - You are a Throne, one of the highest-ranking angels with four pairs of wings and great physical and magical abilities. Your Holy and Light attributes are greatly boosted and cost less mana, you instinctively develop Holy and Light Magic and convert energy into searing Holy Light or pure holy energy, while your Darkness and Unholy attributes are greatly weakened and hurt you upon use.
+> (Tag:holy)(Tag:holy+)(Tag:light+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:power+)(Tag:race-change)(Tag:talent)Race Change - You are a Throne, one of the highest-ranking angels with four pairs of wings and great physical and magical abilities. Your Holy and Light attributes are greatly boosted and cost less mana, you instinctively develop Holy and Light Magic and convert energy into searing Holy Light or pure holy energy, while your Darkness and Unholy attributes are greatly weakened and hurt you upon use.
 
 **Decision**
 
@@ -6956,7 +7011,7 @@
 
 **Description**
 
-> Race Change - You are a Seraphim, the strongest Angel kind with 5 pairs of wings and incredible magical and physical power. Your Holy and Light abilities and magic at Legendary rank or below gain a tier boost, you instinctively use and develop Holy and Light Magic and convert Mana into a Holy Mana Burst, but you cannot use any Darkness or Unholy abilities and magic.
+> (Tag:holy)(Tag:holy+)(Tag:light+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:power+)(Tag:race-change)(Tag:talent)Race Change - You are a Seraphim, the strongest Angel kind with 5 pairs of wings and incredible magical and physical power. Your Holy and Light abilities and magic at Legendary rank or below gain a tier boost, you instinctively use and develop Holy and Light Magic and convert Mana into a Holy Mana Burst, but you cannot use any Darkness or Unholy abilities and magic.
 
 **Decision**
 
@@ -6973,7 +7028,7 @@
 
 **Description**
 
-> You learn faster and easier when taught personally by someone more skilled than you in the subject.
+> (Tag:talent)You learn faster and easier when taught personally by someone more skilled than you in the subject.
 
 **Decision**
 
@@ -6990,7 +7045,7 @@
 
 **Description**
 
-> You learn faster and easier when taught personally by someone more skilled than you in the subject. You also earn your teachers' favour more easily.
+> (Tag:social)(Tag:talent)You learn faster and easier when taught personally by someone more skilled than you in the subject. You also earn your teachers' favour more easily.
 
 **Decision**
 
@@ -7007,7 +7062,7 @@
 
 **Description**
 
-> You are THE Pupil who learns much faster and far more easily when taught personally by someone more skilled than you. You also earn your teachers' favour more easily.
+> (Tag:social)(Tag:talent)You are THE Pupil who learns much faster and far more easily when taught personally by someone more skilled than you. You also earn your teachers' favour more easily.
 
 **Decision**
 
@@ -7024,7 +7079,7 @@
 
 **Description**
 
-> You are the Taker whom Infernal, Holy, or Divine beings you find attractive find more attractive in return. You earn their affection more easily.
+> (Tag:holy)(Tag:infernal)(Tag:social)You are the Taker whom Infernal, Holy, or Divine beings you find attractive find more attractive in return. You earn their affection more easily.
 
 **Decision**
 
@@ -7041,7 +7096,7 @@
 
 **Description**
 
-> (Nsfw) Hybrid girls and those of the opposite gender with monster or beast traits like you more and build relationships with you more easily. Some monsters you encounter seem oddly humanoid and compatible.
+> (Tag:nsfw)(Tag:rule)(Nsfw) Hybrid girls and those of the opposite gender with monster or beast traits like you more and build relationships with you more easily. Some monsters you encounter seem oddly humanoid and compatible.
 
 **Decision**
 
@@ -7058,7 +7113,7 @@
 
 **Description**
 
-> Upgrade to Terrifying Presence - You project a nightmarish presence that can make a grown man soil himself without a word. Every gesture you make can feel like a death threat when you want it to.
+> (Tag:social)Upgrade to Terrifying Presence - You project a nightmarish presence that can make a grown person soil themselves without a word. Every gesture you make can feel like a death threat when you want it to.
 
 **Decision**
 
@@ -7075,7 +7130,7 @@
 
 **Description**
 
-> All magic is completely nullified against you, so even a god of magic dropping the Big Bang on you would not scratch you. You cannot use magic to any extent while this trait stays active.
+> (Tag:magic-resistance+)(Tag:rule)All magic is completely nullified against you, so even a god of magic dropping the Big Bang on you would not scratch you. You cannot use magic to any extent while this trait stays active.
 
 **Decision**
 
@@ -7092,7 +7147,7 @@
 
 **Description**
 
-> You summon and command creatures, familiars, spirits, and summons naturally. Your familiars gain enhanced stats for less energy, your projection-type abilities and spells grow more potent, and you build affection and loyalty with summons and contracted entities more easily.
+> (Tag:summon+)You summon and command creatures, familiars, spirits, and summons naturally. Your familiars gain enhanced stats for less energy, your projection-type abilities and spells grow more potent, and you build affection and loyalty with summons and contracted entities more easily.
 
 **Decision**
 
@@ -7109,7 +7164,7 @@
 
 **Description**
 
-> You wear the brand of Tzeentch, the Changer of Ways, greatly speeding your comprehension and learning. You improve skill and magic far faster and can learn spells normally barred to you by restrictions like race. Note: Brands do not connect you to the Chaos Gods or Warp.
+> (Tag:magic)(Tag:magic+)(Tag:talent)You wear the brand of Tzeentch, the Changer of Ways, greatly speeding your comprehension and learning. You improve skill and magic far faster and can learn spells normally barred to you by restrictions like race. Note: Brands do not connect you to the Chaos Gods or Warp.
 
 **Decision**
 
@@ -7126,7 +7181,7 @@
 
 **Description**
 
-> You wear the brand of Slaanesh, the Lord of Pleasure, greatly increasing your understanding of others and letting you vaguely feel their emotions. Your presence grows naturally more charismatic and alluring. Note: Brands do not connect you to the Chaos Gods or Warp.
+> (Tag:social)(Tag:talent)You wear the brand of Slaanesh, the Lord of Pleasure, greatly increasing your understanding of others and letting you vaguely feel their emotions. Your presence grows naturally more charismatic and alluring. Note: Brands do not connect you to the Chaos Gods or Warp.
 
 **Decision**
 
@@ -7143,7 +7198,7 @@
 
 **Description**
 
-> You wear the brand of Khorne, the Blood God, greatly increasing your combat propensity with heightened instincts and intuition for any weapon or skill. You track blood and sense killing intent instinctively as a natural killing machine. Note: Brands do not connect you to the Chaos Gods or Warp.
+> (Tag:martial)(Tag:talent)You wear the brand of Khorne, the Blood God, greatly increasing your combat propensity with heightened instincts and intuition for any weapon or skill. You track blood and sense killing intent instinctively as a natural killing machine. Note: Brands do not connect you to the Chaos Gods or Warp.
 
 **Decision**
 
@@ -7160,7 +7215,7 @@
 
 **Description**
 
-> You wear the brand of Nurgle, the Plague Father, making you immune to poisons, toxins, and diseases below Legendary rank and greatly resistant above it. You understand poisons, toxins, and diseases better, increasing related ability potency and your power to cure them. Note: Brands do not connect you to the Chaos Gods or Warp.
+> (Tag:poison)(Tag:poison+)(Tag:poison-resistance+)(Tag:talent)You wear the brand of Nurgle, the Plague Father, making you immune to poisons, toxins, and diseases below Legendary rank and greatly resistant above it. You understand poisons, toxins, and diseases better, increasing related ability potency and your power to cure them. Note: Brands do not connect you to the Chaos Gods or Warp.
 
 **Decision**
 
@@ -7177,7 +7232,7 @@
 
 **Description**
 
-> If you hold the will, you find a way.
+> (Tag:meta)If you hold the will, you find a way.
 
 **Decision**
 
@@ -7194,7 +7249,7 @@
 
 **Description**
 
-> Race Change - You are a monster of god transformed by Helena's Nail through your heart, with monstrous physical stats and holy energy so potent your touch sets a true vampire ablaze. You conjure and freely control holy thorned vines like limbs that protect you on instinct and set anything unholy they touch ablaze with holy fire. You stay completely immortal while your heart remains intact as your vines rebuild your body without consuming energy or using an ability slot.
+> (Tag:fire)(Tag:health-regeneration+)(Tag:holy)(Tag:holy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:survival)Race Change - You are a monster of god transformed by Helena's Nail through your heart, with monstrous physical stats and holy energy so potent your touch sets a true vampire ablaze. You conjure and freely control holy thorned vines like limbs that protect you on instinct and set anything unholy they touch ablaze with holy fire. You stay completely immortal while your heart remains intact as your vines rebuild your body without consuming energy or using an ability slot.
 
 **Decision**
 
@@ -7211,7 +7266,7 @@
 
 **Description**
 
-> You perform all transformations with overly dramatic Magical Girl Transformation flair.
+> (Tag:lifestyle)You perform all transformations with overly dramatic Magical Girl Transformation flair.
 
 **Decision**
 
@@ -7228,7 +7283,7 @@
 
 **Description**
 
-> You are ordinarily hard to kill as your existence constantly preserves itself by swapping ability slots to instantly heal you or rearranging your insides. Your abilities grow more effective and cost-efficient the closer you are to death. Even at death, this trait can use your abilities and items for up to 10 minutes to revive or preserve you.
+> (Tag:survival)You are ordinarily hard to kill as your existence constantly preserves itself by swapping ability slots to instantly heal you or rearranging your insides. Your abilities grow more effective and cost-efficient the closer you are to death. Even at death, this trait can use your abilities and items for up to 10 minutes to revive or preserve you.
 
 **Decision**
 
@@ -7245,7 +7300,7 @@
 
 **Description**
 
-> You lack the concept of death rather than holding immortality, so no afterlife claims you and immortal-killing weapons cannot put you down forever. Even if every quark in your body is annihilated, you eventually reform.
+> (Tag:rule)(Tag:survival)You lack the concept of death rather than holding immortality, so no afterlife claims you and immortal-killing weapons cannot put you down forever. Even if every quark in your body is annihilated, you eventually reform.
 
 **Decision**
 
@@ -7262,7 +7317,7 @@
 
 **Description**
 
-> You use any item, ability, or spell without suffering drawbacks and instantly meet all qualifications. You can wield Excalibur, Rhongomyniad, hijack the Gate of Babylon, or use an item with a 99.999% kill chance.
+> (Tag:rule)You use any item, ability, or spell without suffering drawbacks and instantly meet all qualifications. You can wield Excalibur, Rhongomyniad, hijack the Gate of Babylon, or use an item with a 99.999% kill chance.
 
 **Decision**
 
@@ -7279,7 +7334,7 @@
 
 **Description**
 
-> You carry something primordial inside you that devours any infiltrator or transgressor in your mind, soul, body, or existence. You shred even a possessing god into ether and tear telepathic connections into pure nourishing energy.
+> (Tag:growth+)(Tag:rule)You carry something primordial inside you that devours any infiltrator or transgressor in your mind, soul, body, or existence. You shred even a possessing god into ether and tear telepathic connections into pure nourishing energy.
 
 **Decision**
 
@@ -7296,7 +7351,7 @@
 
 **Description**
 
-> You are quite well known as news of your exploits and accomplishments travels fast with slightly increased reputation effect. If you save a village, even the king may learn of it and reward you.
+> (Tag:social)You are quite well known as news of your exploits and accomplishments travels fast with slightly increased reputation effect. If you save a village, even the king may learn of it and reward you.
 
 **Decision**
 
@@ -7313,7 +7368,7 @@
 
 **Description**
 
-> You hold a bureaucrat's eye for easily understanding legal jargon, contract loopholes, and quickly briefing documents. This saves you time in any world with an established government. (If not, the ticket this trait came from can be rerolled)
+> (Tag:lifestyle)You hold a bureaucrat's eye for easily understanding legal jargon, contract loopholes, and quickly briefing documents. This saves you time in any world with an established government. (If not, the ticket this trait came from can be rerolled)
 
 **Decision**
 
@@ -7330,7 +7385,7 @@
 
 **Description**
 
-> You pay no taxes or rent as the government or collectors waive them. Officials and authority figures may even overlook and pardon your minor crimes or mischief.
+> (Tag:lifestyle)You pay no taxes or rent as the government or collectors waive them. Officials and authority figures may even overlook and pardon your minor crimes or mischief.
 
 **Decision**
 
@@ -7347,7 +7402,7 @@
 
 **Description**
 
-> You halve the restock timer and cooldown of all your items.
+> (Tag:meta)You halve the restock timer and cooldown of all your items.
 
 **Decision**
 
@@ -7364,7 +7419,7 @@
 
 **Description**
 
-> More, more, more: you cannot get enough, as the restock timers and cooldown of all your items drop by 100x.
+> (Tag:meta)More, more, more: you cannot get enough, as the restock timers and cooldown of all your items drop by 100x.
 
 **Decision**
 
@@ -7381,7 +7436,7 @@
 
 **Description**
 
-> You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
+> (Tag:blood)(Tag:infernal)You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
 
 **Decision**
 
@@ -7398,7 +7453,7 @@
 
 **Description**
 
-> You are a progenitor sharing all of Muzan Kibutsuji's powers with free shapeshifting, extremely powerful regeneration, and superhuman physical abilities. You turn others into demons with your blood, but sunlight is extremely lethal to you.
+> (Tag:health-regeneration+)(Tag:infernal)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:survival)You are a progenitor sharing all of Muzan Kibutsuji's powers with free shapeshifting, extremely powerful regeneration, and superhuman physical abilities. You turn others into demons with your blood, but sunlight is extremely lethal to you.
 
 **Decision**
 
@@ -7415,7 +7470,7 @@
 
 **Description**
 
-> Your body receives all healing unusually well with 5x stronger natural regeneration and 2x more effective healing effects.
+> (Tag:healing)(Tag:health-recovery+)(Tag:health-regeneration+)Your body receives all healing unusually well with 5x stronger natural regeneration and 2x more effective healing effects.
 
 **Decision**
 
@@ -7432,7 +7487,7 @@
 
 **Description**
 
-> You send any items you wear to your wardrobe while retaining their bonuses, letting you gain equipment benefits without wearing them. You cannot wear two magical items for the same body part and can only wear mundane items while active.
+> (Tag:rule)You send any items you wear to your wardrobe while retaining their bonuses, letting you gain equipment benefits without wearing them. You cannot wear two magical items for the same body part and can only wear mundane items while active.
 
 **Decision**
 
@@ -7449,7 +7504,7 @@
 
 **Description**
 
-> You gain literally nothing, which makes your unluckiness simply impressive.
+> (Tag:meta)You gain literally nothing, which makes your unluckiness simply impressive.
 
 **Decision**
 
@@ -7466,7 +7521,7 @@
 
 **Description**
 
-> You set any negative resistance you hold to zero, turning even an 8x fire weakness to neutral and leaving even a shadow demon unharmed by light.
+> (Tag:rule)You set any negative resistance you hold to zero, turning even an 8x fire weakness to neutral and leaving even a shadow demon unharmed by light.
 
 **Decision**
 
@@ -7483,7 +7538,7 @@
 
 **Description**
 
-> You are a Beast of Humanity formed from humanity's evil who loves Humanity. You hold nigh unlimited magical power and mystery with your own Logos or Law and your own Nega ability, a Divine-level authority costing no slot. You also hold Independent Manifestation and any other powers a beast holds.
+> (Tag:maximum-energy+)(Tag:power)(Tag:power+)(Tag:spirit)You are a Beast of Humanity formed from humanity's evil who loves Humanity. You hold nigh unlimited magical power and mystery with your own Logos or Law and your own Nega ability, a Divine-level authority costing no slot. You also hold Independent Manifestation and any other powers a beast holds.
 
 **Decision**
 
@@ -7500,7 +7555,7 @@
 
 **Description**
 
-> You control your unnaturally variable metabolism at will. You slow it to a near stop or speed it to unnaturally fast levels.
+> (Tag:body)You control your unnaturally variable metabolism at will. You slow it to a near stop or speed it to unnaturally fast levels.
 
 **Decision**
 
@@ -7517,7 +7572,7 @@
 
 **Description**
 
-> You recover energy and health slightly faster by eating food. The more nutritious your food, the better your recovery.
+> (Tag:energy-recovery)(Tag:health-recovery)You recover energy and health slightly faster by eating food. The more nutritious your food, the better your recovery.
 
 **Decision**
 
@@ -7534,7 +7589,7 @@
 
 **Description**
 
-> You digest everything with extreme efficiency to draw more nutrients and energy and recover energy and health faster. Your stomach is 50x bigger inside than outside, and you never suffer digestive issues.
+> (Tag:energy-regeneration+)(Tag:health-regeneration+)You digest everything with extreme efficiency to draw more nutrients and energy and recover energy and health faster. Your stomach is 50x bigger inside than outside, and you never suffer digestive issues.
 
 **Decision**
 
@@ -7551,7 +7606,7 @@
 
 **Description**
 
-> You recover energy and health faster while you sleep.
+> (Tag:energy-regeneration+)(Tag:health-regeneration+)You recover energy and health faster while you sleep.
 
 **Decision**
 
@@ -7568,7 +7623,7 @@
 
 **Description**
 
-> You are blessed by Hypnos, the God of Sleep, drastically increasing your health and energy recovery while you sleep. You fall asleep anywhere into uninterrupted restful sleep, but the blessing needs at least 10 minutes of constant sleep to start.
+> (Tag:energy-regeneration+)(Tag:health-regeneration+)(Tag:lifestyle)You are blessed by Hypnos, the God of Sleep, drastically increasing your health and energy recovery while you sleep. You fall asleep anywhere into uninterrupted restful sleep, but the blessing needs at least 10 minutes of constant sleep to start.
 
 **Decision**
 
@@ -7585,7 +7640,7 @@
 
 **Description**
 
-> You gain your own Inventory Page that stores objects as long as their weight stays within what you carry under optimal conditions. Items from the gacha store without issue and ignore this limit.
+> (Tag:meta)You gain your own Inventory Page that stores objects as long as their weight stays within what you carry under optimal conditions. Items from the gacha store without issue and ignore this limit.
 
 **Decision**
 
@@ -7602,7 +7657,7 @@
 
 **Description**
 
-> You increase your fame and gain recognition and rewards for achievements more easily. You also assert your achievements and make people believe you more easily.
+> (Tag:social)You increase your fame and gain recognition and rewards for achievements more easily. You also assert your achievements and make people believe you more easily.
 
 **Decision**
 
@@ -7619,7 +7674,7 @@
 
 **Description**
 
-> You are a Gloryhound with a sixth sense for opportunities that increase your fame and reputation. You make people perceive you as you want more easily by shifting your vibe to feel dangerous, comforting, or imposing.
+> (Tag:social)You are a Gloryhound with a sixth sense for opportunities that increase your fame and reputation. You make people perceive you as you want more easily by shifting your vibe to feel dangerous, comforting, or imposing.
 
 **Decision**
 
@@ -7636,7 +7691,7 @@
 
 **Description**
 
-> You hold the King Engine in your heart that beats loudly at just the right moments. You master bluffing so fully that others delude themselves about you without your claims, making you almost invincible with enough luck to back it up.
+> (Tag:social)You hold the King Engine in your heart that beats loudly at just the right moments. You master bluffing so fully that others delude themselves about you without your claims, making you almost invincible with enough luck to back it up.
 
 **Decision**
 
@@ -7653,7 +7708,7 @@
 
 **Description**
 
-> You are a Psyker who emulates Immaterium power through infinite Chaos instead of drawing from it. You choose one of the 5 common disciplines to specialise in and wield. (Only one may be chosen, another can be chosen if the trait is rolled again)
+> (Tag:meta)(Tag:power)You are a Psyker who emulates Immaterium power through infinite Chaos instead of drawing from it. You choose one of the 5 common disciplines to specialise in and wield. (Only one may be chosen, another can be chosen if the trait is rolled again)
 
 **Decision**
 
@@ -7670,7 +7725,7 @@
 
 **Description**
 
-> You are a Greater Psyker who emulates Immaterium power through infinite Chaos instead of drawing from it. You master disciplines far quicker and master all 5 common disciplines without penalty.
+> (Tag:meta)(Tag:power)You are a Greater Psyker who emulates Immaterium power through infinite Chaos instead of drawing from it. You master disciplines far quicker and master all 5 common disciplines without penalty.
 
 **Decision**
 
@@ -7687,7 +7742,7 @@
 
 **Description**
 
-> You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Biomancy and trains to manipulate the flesh of friend and foe with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Biomancy_Discipline
+> (Tag:bio)(Tag:power)You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Biomancy and trains to manipulate the flesh of friend and foe with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Biomancy_Discipline
 
 **Decision**
 
@@ -7704,7 +7759,7 @@
 
 **Description**
 
-> You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Pyromancy and trains to create fire from your mind and weave it into firestorms and attacks. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Pyromancy_Discipline
+> (Tag:fire)(Tag:power)You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Pyromancy and trains to create fire from your mind and weave it into firestorms and attacks. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Pyromancy_Discipline
 
 **Decision**
 
@@ -7721,7 +7776,7 @@
 
 **Description**
 
-> You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telekinesis and trains to manipulate space and the material world with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telekinesis_Discipline
+> (Tag:kinetic)(Tag:power)You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telekinesis and trains to manipulate space and the material world with your mind. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telekinesis_Discipline
 
 **Decision**
 
@@ -7738,7 +7793,7 @@
 
 **Description**
 
-> You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telepathy and trains to bind the wills and minds around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telepathy_Discipline
+> (Tag:mental)(Tag:power)You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Telepathy and trains to bind the wills and minds around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Telepathy_Discipline
 
 **Decision**
 
@@ -7755,7 +7810,7 @@
 
 **Description**
 
-> You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Divination and trains to uncover the past, present, and future around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Divination_Discipline
+> (Tag:divination)(Tag:power)You are a Psyker emulating Immaterium power through infinite Chaos who specialises in Divination and trains to uncover the past, present, and future around you. (You can only train in the specialised discipline capabilities). Spell List: https://warhammer40k.fandom.com/wiki/Psyker#Divination_Discipline
 
 **Decision**
 
@@ -7772,7 +7827,7 @@
 
 **Description**
 
-> You carry Great One blood granting you greater vitality, energy, Esoteric resistance, and larger reserves that make Magic and Esoteric Arts easier to learn, understand, and train. Your blood heals in proportion to your vitality, but heavy drinkers risk your corruptive presence while you can exert greater influence over those who consume it. (You are not an actual Great One)
+> (Tag:blood)(Tag:bloodline)(Tag:magic)(Tag:maximum-energy+)(Tag:meta-resistance+)(Tag:talent)(Tag:vitality+)You carry Great One blood granting you greater vitality, energy, Esoteric resistance, and larger reserves that make Magic and Esoteric Arts easier to learn, understand, and train. Your blood heals in proportion to your vitality, but heavy drinkers risk your corruptive presence while you can exert greater influence over those who consume it. (You are not an actual Great One)
 
 **Decision**
 
@@ -7789,7 +7844,7 @@
 
 **Description**
 
-> Your tears are now twice as salty.
+> (Tag:body)Your tears are now twice as salty.
 
 **Decision**
 
@@ -7806,7 +7861,7 @@
 
 **Description**
 
-> You hold substantially increased luck in romance.
+> (Tag:luck+)(Tag:rule)You hold substantially increased luck in romance.
 
 **Decision**
 
@@ -7823,7 +7878,7 @@
 
 **Description**
 
-> You hold greatly increased luck in romance. Remember to thank Cupid.
+> (Tag:luck+)(Tag:rule)You hold greatly increased luck in romance. Remember to thank Cupid.
 
 **Decision**
 
@@ -7840,7 +7895,7 @@
 
 **Description**
 
-> (Nsfw) You are a child blessed by Zeus who can bed anyone, with increased charisma, fertility, and talent in the carnal arts. Your Changer abilities are easier and cheaper to use and maintain, and your lightning-based abilities are stronger too.
+> (Tag:electric)(Tag:electric+)(Tag:nsfw)(Tag:social)(Tag:talent)(Tag:transformation+)(Nsfw) You are a child blessed by Zeus who can bed anyone, with increased charisma, fertility, and talent in the carnal arts. Your Changer abilities are easier and cheaper to use and maintain, and your lightning-based abilities are stronger too.
 
 **Decision**
 
@@ -7857,7 +7912,7 @@
 
 **Description**
 
-> You hold an infinite energy source for every use, from magical power to stamina to soul energy. Your energy output is massively increased, letting even a common rank fire ability dwarf nuclear bombs ten times over.
+> (Tag:maximum-energy+)(Tag:power+)You hold an infinite energy source for every use, from magical power to stamina to soul energy. Your energy output is massively increased, letting even a common rank fire ability dwarf nuclear bombs ten times over.
 
 **Decision**
 
@@ -7874,7 +7929,7 @@
 
 **Description**
 
-> You always win because reality passively eliminates outcomes where you fail your actively pursued objective. Your degree of success may still depend on your own abilities.
+> (Tag:rule)You always win because reality passively eliminates outcomes where you fail your actively pursued objective. Your degree of success may still depend on your own abilities.
 
 **Decision**
 
@@ -7891,7 +7946,7 @@
 
 **Description**
 
-> You are immortal in every way that matters with regeneration faster than sight. Even universal collapse, erasure by the One Above All, or absolute nothingness cannot stop you from regenerating back. You may even survive the Blind Idiot.
+> (Tag:rule)(Tag:survival)You are immortal in every way that matters with regeneration faster than sight. Even universal collapse, erasure by the One Above All, or absolute nothingness cannot stop you from regenerating back. You may even survive the Blind Idiot.
 
 **Decision**
 
@@ -7908,7 +7963,7 @@
 
 **Description**
 
-> You are absolutely immune to all damage from natural elements such as Fire, Water, Earth, Wind, Light, and Dark. Even a Supernova or Absolute Zero will not scuff your clothes, though physical attacks and unreal elements like Space, Time, and Raw Energy bypass your defences.
+> (Tag:air)(Tag:dark)(Tag:dark-resistance+)(Tag:earth)(Tag:earth-resistance+)(Tag:fire)(Tag:fire-resistance+)(Tag:ice-resistance+)(Tag:light-resistance+)(Tag:water)(Tag:water-resistance+)You are absolutely immune to all damage from natural elements such as Fire, Water, Earth, Wind, Light, and Dark. Even a Supernova or Absolute Zero will not scuff your clothes, though physical attacks and unreal elements like Space, Time, and Raw Energy bypass your defences.
 
 **Decision**
 
@@ -7925,7 +7980,7 @@
 
 **Description**
 
-> You absorb anything with your body and soul, especially Energy, surviving the sun by soaking heat into your energy reserves. Your absorption speed and degree scale with your stats, but even as a base human only a nuclear bomb or worse bypasses your basic absorption.
+> (Tag:energy-recovery)You absorb anything with your body and soul, especially Energy, surviving the sun by soaking heat into your energy reserves. Your absorption speed and degree scale with your stats, but even as a base human only a nuclear bomb or worse bypasses your basic absorption.
 
 **Decision**
 
@@ -7942,7 +7997,7 @@
 
 **Description**
 
-> While active, you prevent transformations, race changes, and similar shifts from altering your looks in ways you consider undesirable.
+> (Tag:lifestyle)While active, you prevent transformations, race changes, and similar shifts from altering your looks in ways you consider undesirable.
 
 **Decision**
 
@@ -7959,7 +8014,7 @@
 
 **Description**
 
-> Race Change - You are an Imp, a low-rank Demon. You gain increased physical and magical stats and increased affinity for Unholy, Darkness, and Fire, but you gain vulnerability to Holy, Light, and exorcisms.
+> (Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:race-change)Race Change - You are an Imp, a low-rank Demon. You gain increased physical and magical stats and increased affinity for Unholy, Darkness, and Fire, but you gain vulnerability to Holy, Light, and exorcisms.
 
 **Decision**
 
@@ -7976,7 +8031,7 @@
 
 **Description**
 
-> Race Change - You are a Demon, a middle-rank infernal being. You gain augmented physical and magical stats and greater affinity for Unholy, Darkness, Infernal, and Fire, but you gain vulnerability to Holy, Light, Divine, and exorcisms. You can turn body parts into natural weapons such as sharp teeth and claws.
+> (Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:maximum-energy+)(Tag:physical+)(Tag:race-change)Race Change - You are a Demon, a middle-rank infernal being. You gain augmented physical and magical stats and greater affinity for Unholy, Darkness, Infernal, and Fire, but you gain vulnerability to Holy, Light, Divine, and exorcisms. You can turn body parts into natural weapons such as sharp teeth and claws.
 
 **Decision**
 
@@ -7993,7 +8048,7 @@
 
 **Description**
 
-> Race Change - You are a Fiend, a high-rank infernal demon. You gain considerable physical and magical abilities and greater affinity for Unholy, Darkness, Infernal, and Fire, letting you master related abilities and spells much faster and naturally create Hell Flame (Rare Rank Ability), but you gain extreme vulnerability to Holy, Divine, Light, and exorcisms.
+> (Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)Race Change - You are a Fiend, a high-rank infernal demon. You gain considerable physical and magical abilities and greater affinity for Unholy, Darkness, Infernal, and Fire, letting you master related abilities and spells much faster and naturally create Hell Flame (Rare Rank Ability), but you gain extreme vulnerability to Holy, Divine, Light, and exorcisms.
 
 **Decision**
 
@@ -8010,7 +8065,7 @@
 
 **Description**
 
-> Race Change - You are an Archfiend, a Demon Noble. You gain greatly superhuman stats, potent magical abilities, and a presence that commands respect and fear from weaker Infernals. You gain incredible affinity for Unholy, Darkness, and Infernal, letting you use related abilities and spells to a greater degree and naturally create Hell Flame (Rare Rank Ability), but you cannot use Holy or Light under normal circumstances and you gain vulnerability to them. You can unleash your demonic power to assume a more demonic appearance, further augmenting your stats and imbuing your abilities with Darkness at the cost of faster energy drain.
+> (Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:social)Race Change - You are an Archfiend, a Demon Noble. You gain greatly superhuman stats, potent magical abilities, and a presence that commands respect and fear from weaker Infernals. You gain incredible affinity for Unholy, Darkness, and Infernal, letting you use related abilities and spells to a greater degree and naturally create Hell Flame (Rare Rank Ability), but you cannot use Holy or Light under normal circumstances and you gain vulnerability to them. You can unleash your demonic power to assume a more demonic appearance, further augmenting your stats and imbuing your abilities with Darkness at the cost of faster energy drain.
 
 **Decision**
 
@@ -8027,7 +8082,7 @@
 
 **Description**
 
-> Race Change - You are a True Demon, a Demon Royalty. You gain incredible physical and magical might. Your true blood lets you command lower-ranked Infernals, though strong wills can partly resist. You gain unmatched affinity for Darkness, Infernal, and Unholy, letting you convert your energy into Dark or Unholy attributes and naturally create Greater Hell Flame (Elite Rank Ability), but you cannot use Holy or Light under normal circumstances and you gain vulnerability to Holy. You can unleash your True Demon form to assume a more demonic appearance, augmenting your stats while considerably increasing energy drain.
+> (Tag:dark)(Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:social)Race Change - You are a True Demon, a Demon Royalty. You gain incredible physical and magical might. Your true blood lets you command lower-ranked Infernals, though strong wills can partly resist. You gain unmatched affinity for Darkness, Infernal, and Unholy, letting you convert your energy into Dark or Unholy attributes and naturally create Greater Hell Flame (Elite Rank Ability), but you cannot use Holy or Light under normal circumstances and you gain vulnerability to Holy. You can unleash your True Demon form to assume a more demonic appearance, augmenting your stats while considerably increasing energy drain.
 
 **Decision**
 
@@ -8044,7 +8099,7 @@
 
 **Description**
 
-> Race Change - You are a Daemon, more than a mere infernal being. You gain superhuman physical abilities, incredible magical power, energy reserves, and regeneration. You gain incredible affinity for Darkness, Infernal, and Unholy, letting you invent spells on the spot and massively amplify related abilities and spells. When you unleash your true spirit form, your maximum health and regeneration convert into magical power, you become incorporeal, massively amplify your energy output, and imbue your powers with Unholy and Darkness. Since energy replaces vitality, you cannot die while you have energy.
+> (Tag:dark)(Tag:dark+)(Tag:energy-regeneration+)(Tag:infernal)(Tag:infernal+)(Tag:magic+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:power+)(Tag:race-change)(Tag:social)Race Change - You are a Daemon, more than a mere infernal being. You gain superhuman physical abilities, incredible magical power, energy reserves, and regeneration. You gain incredible affinity for Darkness, Infernal, and Unholy, letting you invent spells on the spot and massively amplify related abilities and spells. When you unleash your true spirit form, your maximum health and regeneration convert into magical power, you become incorporeal, massively amplify your energy output, and imbue your powers with Unholy and Darkness. Since energy replaces vitality, you cannot die while you have energy.
 
 **Decision**
 
@@ -8061,7 +8116,7 @@
 
 **Description**
 
-> Race Change - You are a Demon Kaiser, a primordial Infernal. You gain increased magical ability, massively amplified physical abilities and regeneration, and can flatten hills with your fists at base. You can bend any weaker Infernal to your will. You gain incredible affinity for Infernal and Unholy, letting you augment related abilities below Legendary rank to a higher tier, but you gain vulnerability to Holy and Light. When you unleash your True Kaiser form, your physical stats massively amplify, you gain incredible magical resistance, and you lose your Holy and Light vulnerability, but your energy consumption amplifies and the form dispels once you run out of energy.
+> (Tag:dark+)(Tag:health-regeneration+)(Tag:infernal)(Tag:magic-resistance+)(Tag:martial+)(Tag:physical+)(Tag:race-change)(Tag:social)(Tag:transformation)Race Change - You are a Demon Kaiser, a primordial Infernal. You gain increased magical ability, massively amplified physical abilities and regeneration, and can flatten hills with your fists at base. You can bend any weaker Infernal to your will. You gain incredible affinity for Infernal and Unholy, letting you augment related abilities below Legendary rank to a higher tier, but you gain vulnerability to Holy and Light. When you unleash your True Kaiser form, your physical stats massively amplify, you gain incredible magical resistance, and you lose your Holy and Light vulnerability, but your energy consumption amplifies and the form dispels once you run out of energy.
 
 **Decision**
 
@@ -8078,7 +8133,7 @@
 
 **Description**
 
-> (Tech) Race Change - You are a convert, half flesh and half machine. You gain increased physical stats and energy reserves and increased affinity for Tinker abilities, technology, and interfacing, but you gain vulnerability to Electricity and Interfacing.
+> (Tag:maximum-energy+)(Tag:physical+)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tech) Race Change - You are a convert, half flesh and half machine. You gain increased physical stats and energy reserves and increased affinity for Tinker abilities, technology, and interfacing, but you gain vulnerability to Electricity and Interfacing.
 
 **Decision**
 
@@ -8095,7 +8150,7 @@
 
 **Description**
 
-> (Tech) Race Change - You are an Android, a higher-class machine-flesh hybrid. You gain increased physical abilities and energy reserves, but your natural energy regeneration lessens and you can charge yourself like a machine. You gain increased effectiveness with Tinker abilities and technology, but you gain vulnerability to Electricity and Interfacing. You possess basic augments such as a head computer and retractable mantis blades in your arms and legs (Cyberpunk). You can tinker with yourself to alter your body to an extent (You still have fleshy bits).
+> (Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are an Android, a higher-class machine-flesh hybrid. You gain increased physical abilities and energy reserves, but your natural energy regeneration lessens and you can charge yourself like a machine. You gain increased effectiveness with Tinker abilities and technology, but you gain vulnerability to Electricity and Interfacing. You possess basic augments such as a head computer and retractable mantis blades in your arms and legs (Cyberpunk). You can tinker with yourself to alter your body to an extent (You still have fleshy bits).
 
 **Decision**
 
@@ -8112,7 +8167,7 @@
 
 **Description**
 
-> (Tech) Race Change - You are an Advanced Model Android. You gain superhuman physical abilities and increased energy reserves, but your natural energy regeneration lessens and you can charge yourself like a machine. Your Tinker abilities progress faster and work more efficiently, and your capacity to handle technology greatly increases, but you gain vulnerability to Electricity and Interfacing. You possess a powerful integrated computer and combat implants such as Projectile Launcher System, Gorilla Arms, and Mantis Blades from Cyberpunk. You can tinker with yourself to alter your body to an extent (You still have fleshy bits).
+> (Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are an Advanced Model Android. You gain superhuman physical abilities and increased energy reserves, but your natural energy regeneration lessens and you can charge yourself like a machine. Your Tinker abilities progress faster and work more efficiently, and your capacity to handle technology greatly increases, but you gain vulnerability to Electricity and Interfacing. You possess a powerful integrated computer and combat implants such as Projectile Launcher System, Gorilla Arms, and Mantis Blades from Cyberpunk. You can tinker with yourself to alter your body to an extent (You still have fleshy bits).
 
 **Decision**
 
@@ -8129,7 +8184,7 @@
 
 **Description**
 
-> (Tech) Race Change - You are a Biodroid, a seamless merging of technology and flesh. You gain increased physical abilities, increased energy reserves, and a natural healing factor. You gain increased affinity for Tinker abilities and machines, and you can converse and interface with machines.
+> (Tag:energy-regeneration+)(Tag:maximum-energy+)(Tag:physical+)(Tag:race-change)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are a Biodroid, a seamless merging of technology and flesh. You gain increased physical abilities, increased energy reserves, and a natural healing factor. You gain increased affinity for Tinker abilities and machines, and you can converse and interface with machines.
 
 **Decision**
 
@@ -8146,7 +8201,7 @@
 
 **Description**
 
-> (Tech) Race Change - You are a fully converted Cyborg with minimal flesh. You do not regenerate energy naturally, and instead absorb compatible outside energy sources to recharge. Your Tinker abilities become far more efficient, and you seamlessly interface with technology. You possess multiple augments such as a basic supercomputer and VI, can integrate compatible technology into your body, and carry basic combat implants such as hidden machine guns and a pair of mantis blades in each limb. You can tinker with yourself to alter your body to an extent (You still have fleshy bits), but you cannot benefit from biology-based abilities.
+> (Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are a fully converted Cyborg with minimal flesh. You do not regenerate energy naturally, and instead absorb compatible outside energy sources to recharge. Your Tinker abilities become far more efficient, and you seamlessly interface with technology. You possess multiple augments such as a basic supercomputer and VI, can integrate compatible technology into your body, and carry basic combat implants such as hidden machine guns and a pair of mantis blades in each limb. You can tinker with yourself to alter your body to an extent (You still have fleshy bits), but you cannot benefit from biology-based abilities.
 
 **Decision**
 
@@ -8163,7 +8218,7 @@
 
 **Description**
 
-> (Tech) Race Change - You are a Mechlord, a higher-class machine-flesh hybrid. You gain superhuman stats and incredible energy storage. Your natural energy regeneration is lacking, but you can absorb energy reserves from nearby machines. Your Tinker efficiency is incredible, and any machine or technology you wield gains performance scaling with your capabilities. You can convert and command technology and AI below your rank, with effectiveness depending on the power difference. You can integrate outside technology into your body as augments. You also gain 3 Silver-tier Tech item rolls as starting augments.
+> (Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are a Mechlord, a higher-class machine-flesh hybrid. You gain superhuman stats and incredible energy storage. Your natural energy regeneration is lacking, but you can absorb energy reserves from nearby machines. Your Tinker efficiency is incredible, and any machine or technology you wield gains performance scaling with your capabilities. You can convert and command technology and AI below your rank, with effectiveness depending on the power difference. You can integrate outside technology into your body as augments. You also gain 3 Silver-tier Tech item rolls as starting augments.
 
 **Decision**
 
@@ -8180,7 +8235,7 @@
 
 **Description**
 
-> (Tech) Race Change - You are the Prime Unit, the highest tier of machine-flesh hybrid. You gain massively increased physical stats and energy reserves. You can absorb energy from machines and compatible sources. All Tinker abilities become incredibly more efficient, you can reconfigure your body to emulate tech from your Tinker abilities, and you decipher and learn other tech incredibly fast. All Technology and Virtuals below your rank bend to your will and cannot contest your authority as the Prime Unit. You can seamlessly absorb and integrate outside technology of your rank or below. You also gain 3 Gold-tier Tech item rolls as starting augments.
+> (Tag:energy-recovery)(Tag:growth+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:social)(Tag:talent)(Tag:tinker+)(Tech) Race Change - You are the Prime Unit, the highest tier of machine-flesh hybrid. You gain massively increased physical stats and energy reserves. You can absorb energy from machines and compatible sources. All Tinker abilities become incredibly more efficient, you can reconfigure your body to emulate tech from your Tinker abilities, and you decipher and learn other tech incredibly fast. All Technology and Virtuals below your rank bend to your will and cannot contest your authority as the Prime Unit. You can seamlessly absorb and integrate outside technology of your rank or below. You also gain 3 Gold-tier Tech item rolls as starting augments.
 
 **Decision**
 
@@ -8197,7 +8252,7 @@
 
 **Description**
 
-> You gain greatly increased vitality. You heal wounds faster, resist poison and illness better, stay more virile, live longer, and remain unbelievably healthy. Your natural healing resembles a slight healing factor, but you must eat a lot to compensate.
+> (Tag:healing)(Tag:health-regeneration+)(Tag:vitality+)You gain greatly increased vitality. You heal wounds faster, resist poison and illness better, stay more virile, live longer, and remain unbelievably healthy. Your natural healing resembles a slight healing factor, but you must eat a lot to compensate.
 
 **Decision**
 
@@ -8214,7 +8269,7 @@
 
 **Description**
 
-> You gain greatly increased stamina. You perform strenuous activities longer and recover from their exhaustion far quicker.
+> (Tag:stamina+)You gain greatly increased stamina. You perform strenuous activities longer and recover from their exhaustion far quicker.
 
 **Decision**
 
@@ -8231,7 +8286,7 @@
 
 **Description**
 
-> "It was originally going to be -ist". You gain greatly increased agility. You move considerably faster and gain matching reflexes and coordination.
+> (Tag:agility+)(Tag:reflex+)"It was originally going to be -ist". You gain greatly increased agility. You move considerably faster and gain matching reflexes and coordination.
 
 **Decision**
 
@@ -8248,7 +8303,7 @@
 
 **Description**
 
-> You are tough as nails. You gain significantly increased durability and endurance, letting you resist stronger blows with less damage, recover from injuries faster without healing, and power through attacks more effectively.
+> (Tag:defence+)You are tough as nails. You gain significantly increased durability and endurance, letting you resist stronger blows with less damage, recover from injuries faster without healing, and power through attacks more effectively.
 
 **Decision**
 
@@ -8265,7 +8320,7 @@
 
 **Description**
 
-> You gain greatly increased physical strength. You exert more force with your body than you otherwise could and punch far harder than you should.
+> (Tag:strength+)You gain greatly increased physical strength. You exert more force with your body than you otherwise could and punch far harder than you should.
 
 **Decision**
 
@@ -8282,7 +8337,7 @@
 
 **Description**
 
-> You are inordinately vital. You are extremely healthy, immune to mundane sicknesses and poisons, and free of your body's usual genetic vulnerabilities. Your natural healing resembles a minor healing factor rather than regular recovery. You also gain an incredible lifespan and will live at least into your late hundreds.
+> (Tag:health-regeneration+)(Tag:vitality+)You are inordinately vital. You are extremely healthy, immune to mundane sicknesses and poisons, and free of your body's usual genetic vulnerabilities. Your natural healing resembles a minor healing factor rather than regular recovery. You also gain an incredible lifespan and will live at least into your late hundreds.
 
 **Decision**
 
@@ -8299,7 +8354,7 @@
 
 **Description**
 
-> You move like the wind. You gain greatly augmented agility, becoming faster and nimbler with augmented reflexes and coordination.
+> (Tag:agility+)(Tag:air)(Tag:reflex+)You move like the wind. You gain greatly augmented agility, becoming faster and nimbler with augmented reflexes and coordination.
 
 **Decision**
 
@@ -8316,7 +8371,7 @@
 
 **Description**
 
-> You are incredibly tough. You gain greatly increased natural resilience, letting you endure far greater punishment than you otherwise could.
+> (Tag:defence+)You are incredibly tough. You gain greatly increased natural resilience, letting you endure far greater punishment than you otherwise could.
 
 **Decision**
 
@@ -8333,7 +8388,7 @@
 
 **Description**
 
-> You are a natural-born strongman. You gain greatly enhanced physical strength, letting you exert far more physical force with your body than you otherwise could.
+> (Tag:strength+)You are a natural-born strongman. You gain greatly enhanced physical strength, letting you exert far more physical force with your body than you otherwise could.
 
 **Decision**
 
@@ -8350,7 +8405,7 @@
 
 **Description**
 
-> You are an aspiring divine messenger apparently (Flavor Text). Your natural agility is greatly enhanced, making you faster with appropriately increased reaction speed. In addition, all Mover abilities are slightly more potent and cost less energy to use.
+> (Tag:agility+)(Tag:movement+)(Tag:reflex+)You are an aspiring divine messenger apparently (Flavor Text). Your natural agility is greatly enhanced, making you faster with appropriately increased reaction speed. In addition, all Mover abilities are slightly more potent and cost less energy to use.
 
 **Decision**
 
@@ -8367,7 +8422,7 @@
 
 **Description**
 
-> "You can't go through it, and you can't knock it down!" You are the Wall. You gain extreme natural resiliency; even as a base human, bullets bounce off your chest and knives break against your skin. You also gain natural magical resistance scaling with your physical stats, though it does not match your endurance.
+> (Tag:defence+)(Tag:magic-resistance+)"You can't go through it, and you can't knock it down!" You are the Wall. You gain extreme natural resiliency; even as a base human, bullets bounce off your chest and knives break against your skin. You also gain natural magical resistance scaling with your physical stats, though it does not match your endurance.
 
 **Decision**
 
@@ -8384,7 +8439,7 @@
 
 **Description**
 
-> Ichor flows through your veins. You gain extreme vitality, a natural healing factor, and incredible poison and disease resistance. Even as a regular human, you will live into your late thousands. Your blood also has healing properties and serves as an excellent potion ingredient.
+> (Tag:health-regeneration+)(Tag:poison-resistance+)(Tag:vitality+)Ichor flows through your veins. You gain extreme vitality, a natural healing factor, and incredible poison and disease resistance. Even as a regular human, you will live into your late thousands. Your blood also has healing properties and serves as an excellent potion ingredient.
 
 **Decision**
 
@@ -8401,7 +8456,7 @@
 
 **Description**
 
-> Your bodily fluids such as sweat, saliva, blood, and ejaculate are nutritionally and calorically dense, very healthy, and surprisingly good-tasting. Consuming your own fluids does nothing for you.
+> (Tag:lifestyle)Your bodily fluids such as sweat, saliva, blood, and ejaculate are nutritionally and calorically dense, very healthy, and surprisingly good-tasting. Consuming your own fluids does nothing for you.
 
 **Decision**
 
@@ -8418,7 +8473,7 @@
 
 **Description**
 
-> Your biology contains special microscopic lifeforms attuned to the Force. You can train in the ways of the Force, with your midichlorian count depending on your stats and traits. The higher your count, the more potent your Force connection and the faster you master Force-related abilities.
+> (Tag:power)Your biology contains special microscopic lifeforms attuned to the Force. You can train in the ways of the Force, with your midichlorian count depending on your stats and traits. The higher your count, the more potent your Force connection and the faster you master Force-related abilities.
 
 **Decision**
 
@@ -8435,7 +8490,7 @@
 
 **Description**
 
-> You can find a regular chicken egg anywhere at opportune moments.
+> (Tag:rule)You can find a regular chicken egg anywhere at opportune moments.
 
 **Decision**
 
@@ -8452,7 +8507,7 @@
 
 **Description**
 
-> "It's the drunk crashers that give drunk drivers a bad name." The more inebriated you are, the more skilled you become at driving and operating vehicles.
+> (Tag:talent)"It's the drunk crashers that give drunk drivers a bad name." The more inebriated you are, the more skilled you become at driving and operating vehicles.
 
 **Decision**
 
@@ -8469,7 +8524,7 @@
 
 **Description**
 
-> (Nsfw) "Not the one you are thinking of" Your cum refills almost instantly, and your ejaculation volume substantially increases.
+> (Tag:body)(Tag:nsfw)(Nsfw) "Not the one you are thinking of" Your cum refills almost instantly, and your ejaculation volume substantially increases.
 
 **Decision**
 
@@ -8486,7 +8541,7 @@
 
 **Description**
 
-> The scarier you act, the more the potential partners you consider find you arousing as well as terrifying. The mind works in mysterious ways.
+> (Tag:social)The scarier you act, the more the potential partners you consider find you arousing as well as terrifying. The mind works in mysterious ways.
 
 **Decision**
 
@@ -8503,7 +8558,7 @@
 
 **Description**
 
-> Your presence feels larger than it should be. Even if you stand a head shorter, you still feel as though you tower over others.
+> (Tag:social)Your presence feels larger than it should be. Even if you stand a head shorter, you still feel as though you tower over others.
 
 **Decision**
 
@@ -8520,7 +8575,7 @@
 
 **Description**
 
-> -And they shall appear. You instantly sense someone's location relative to you whenever they say your name while intending you. You sense their location like GPS for around 5 minutes and can use them as anchors for teleportation abilities, Curses, and similar effects.
+> (Tag:divination)(Tag:rule)-And they shall appear. You instantly sense someone's location relative to you whenever they say your name while intending you. You sense their location like GPS for around 5 minutes and can use them as anchors for teleportation abilities, Curses, and similar effects.
 
 **Decision**
 
@@ -8537,7 +8592,7 @@
 
 **Description**
 
-> Race Change - You are a Wolfkin, a half-beast with wolf traits including wolf ears, tail, retractable claws, and sharp teeth. In some individuals, the wolf traits show more dominantly. You gain increased physical abilities, senses, and a fierce hunting instinct. You can also convey your intent to other animals, even if you cannot understand them back.
+> (Tag:beastkin)(Tag:perception+)(Tag:physical+)(Tag:race-change)(Tag:social)Race Change - You are a Wolfkin, a half-beast with wolf traits including wolf ears, tail, retractable claws, and sharp teeth. In some individuals, the wolf traits show more dominantly. You gain increased physical abilities, senses, and a fierce hunting instinct. You can also convey your intent to other animals, even if you cannot understand them back.
 
 **Decision**
 
@@ -8554,7 +8609,7 @@
 
 **Description**
 
-> Race Change - You are a Lycanthrope, a half-wolf who can assume Werewolf form at will. The more you tap into your transformation, the more your physical stats and instincts, including animalistic ones, augment. As a regular Lycanthrope, you cannot spread lycanthropy. You also communicate better with Beasts and gain greater affinity for Changer powers, increasing their potency and efficiency.
+> (Tag:beastkin)Race Change - You are a Lycanthrope, a half-wolf who can assume Werewolf form at will. The more you tap into your transformation, the more your physical stats and instincts, including animalistic ones, augment. As a regular Lycanthrope, you cannot spread lycanthropy. You also communicate better with Beasts and gain greater affinity for Changer powers, increasing their potency and efficiency.
 
 **Decision**
 
@@ -8571,7 +8626,7 @@
 
 **Description**
 
-> Race Change - You are an Alpha Lycan, a ruler among werebeasts and half-wolf. You can tap into your bestial side at will to transform into a Werewolf or full wolf, greatly augmenting your physical stats, granting powerful claws and teeth, and massively amplifying your senses and instincts. As an Alpha, you can turn others into Lesser Lycans, werewolves under your command. All Beasts perceive greater authority and presence from you due to your potent blood.
+> (Tag:beastkin)(Tag:perception+)(Tag:physical+)(Tag:race-change)(Tag:social)(Tag:transformation)Race Change - You are an Alpha Lycan, a ruler among werebeasts and half-wolf. You can tap into your bestial side at will to transform into a Werewolf or full wolf, greatly augmenting your physical stats, granting powerful claws and teeth, and massively amplifying your senses and instincts. As an Alpha, you can turn others into Lesser Lycans, werewolves under your command. All Beasts perceive greater authority and presence from you due to your potent blood.
 
 **Decision**
 
@@ -8588,7 +8643,7 @@
 
 **Description**
 
-> Race Change - You are a Lunar Lycan, a Royal Lycanthrope blessed by the moon. You can tap into your bestial side at will to transform into a Werewolf or full wolf, massively increasing your physical and magical stats and massively amplifying your senses. The moon's blessing increases your resistance to magic and esoteric effects and your affinity for all magic. As a Royal Lycanthrope, you can convert others into Lesser to Greater Lycanthropes sharing the same moon blessing and place them under your command as their alpha.
+> (Tag:beastkin)(Tag:magic+)(Tag:magic-resistance+)(Tag:perception+)(Tag:physical+)(Tag:race-change)(Tag:social)(Tag:talent)(Tag:transformation)Race Change - You are a Lunar Lycan, a Royal Lycanthrope blessed by the moon. You can tap into your bestial side at will to transform into a Werewolf or full wolf, massively increasing your physical and magical stats and massively amplifying your senses. The moon's blessing increases your resistance to magic and esoteric effects and your affinity for all magic. As a Royal Lycanthrope, you can convert others into Lesser to Greater Lycanthropes sharing the same moon blessing and place them under your command as their alpha.
 
 **Decision**
 
@@ -8605,7 +8660,7 @@
 
 **Description**
 
-> Race Change - You are the Child of the Moon Devouring Wolf, the pinnacle of Lycanthropy. As a divine lycanthrope, you can tap into your bestial side at will to transform into a hybrid or a titanic wolf whose size you control. You gain extremely increased physical stats, godlike instincts, and senses. You can devour anything; your jaws and claws rend even space and tear anything apart, including magic and divine flesh. Anything you eat is destroyed and converted to magical power. You can bless others into Lycanthropes. You also hold authority over all beasts and beastkin below Legendary rank, and even resistant beings recognize your royal authority.
+> (Tag:beastkin)(Tag:divine)(Tag:energy-recovery)(Tag:perception+)(Tag:physical+)(Tag:race-change)(Tag:social)(Tag:transformation)Race Change - You are the Child of the Moon Devouring Wolf, the pinnacle of Lycanthropy. As a divine lycanthrope, you can tap into your bestial side at will to transform into a hybrid or a titanic wolf whose size you control. You gain extremely increased physical stats, godlike instincts, and senses. You can devour anything; your jaws and claws rend even space and tear anything apart, including magic and divine flesh. Anything you eat is destroyed and converted to magical power. You can bless others into Lycanthropes. You also hold authority over all beasts and beastkin below Legendary rank, and even resistant beings recognize your royal authority.
 
 **Decision**
 
@@ -8622,7 +8677,7 @@
 
 **Description**
 
-> You are a Tinker who just started your journey. All Tinker abilities gain slightly enhanced efficiency, and you build technological constructs faster and more resourcefully.
+> (Tag:talent)(Tag:tech)(Tag:tinker+)You are a Tinker who just started your journey. All Tinker abilities gain slightly enhanced efficiency, and you build technological constructs faster and more resourcefully.
 
 **Decision**
 
@@ -8639,7 +8694,7 @@
 
 **Description**
 
-> You are a Pugilist who just embarked on your path. You learn and train martial skills faster, and your natural intuition for combat and martial arts is heightened.
+> (Tag:martial)(Tag:talent)You are a Pugilist who just embarked on your path. You learn and train martial skills faster, and your natural intuition for combat and martial arts is heightened.
 
 **Decision**
 
@@ -8656,7 +8711,7 @@
 
 **Description**
 
-> You are an Esper just starting to bloom your latent talent. You train and master abilities slightly faster and gain better instinct for handling and using them. All ability cooldowns decrease by 20%.
+> (Tag:mental)(Tag:meta)(Tag:talent)You are an Esper just starting to bloom your latent talent. You train and master abilities slightly faster and gain better instinct for handling and using them. All ability cooldowns decrease by 20%.
 
 **Decision**
 
@@ -8673,7 +8728,7 @@
 
 **Description**
 
-> You are a Magician just embarking on your mystical journey. You learn, memorize, and master spells faster and cast them more efficiently. Penalties for learning a magical system not your own are mitigated.
+> (Tag:magic)(Tag:magic+)(Tag:talent)You are a Magician just embarking on your mystical journey. You learn, memorize, and master spells faster and cast them more efficiently. Penalties for learning a magical system not your own are mitigated.
 
 **Decision**
 
@@ -8690,7 +8745,7 @@
 
 **Description**
 
-> Race Change - You are a dream demon, an Incubus/Succubus who feeds on your victim's vitality. You are more attractive and alluring to your preferred partners. You also gain slightly superhuman stats and increased magical power. You can sense arousal, peek into dreams, subtly influence them, and shapeshift to your partner's preferences. All Lewd abilities and spells gain potency.
+> (Tag:infernal)(Tag:maximum-energy+)(Tag:nsfw)(Tag:physical+)(Tag:race-change)(Tag:talent)(Tag:transformation)Race Change - You are a dream demon, an Incubus/Succubus who feeds on your victim's vitality. You are more attractive and alluring to your preferred partners. You also gain slightly superhuman stats and increased magical power. You can sense arousal, peek into dreams, subtly influence them, and shapeshift to your partner's preferences. All Lewd abilities and spells gain potency.
 
 **Decision**
 
@@ -8707,7 +8762,7 @@
 
 **Description**
 
-> May his reign last a thousand years. People even slightly loyal to you become much more loyal, you earn loyalty more easily, and people viewing you favorably make sacrifices for you more willingly.
+> (Tag:social)May his reign last a thousand years. People even slightly loyal to you become much more loyal, you earn loyalty more easily, and people viewing you favorably make sacrifices for you more willingly.
 
 **Decision**
 
@@ -8724,7 +8779,7 @@
 
 **Description**
 
-> (Gacha) You can withdraw your tickets as physical, tangible tickets to hand to others. If someone else rips the ticket, they receive the roll result instead, subject to the same rules as you.
+> (Tag:meta)(Gacha) You can withdraw your tickets as physical, tangible tickets to hand to others. If someone else rips the ticket, they receive the roll result instead, subject to the same rules as you.
 
 **Decision**
 
@@ -8741,7 +8796,7 @@
 
 **Description**
 
-> You cannot be stolen from. Any owned item taken without your consent returns to your possession in a convenient location.
+> (Tag:meta)You cannot be stolen from. Any owned item taken without your consent returns to your possession in a convenient location.
 
 **Decision**
 
@@ -8758,7 +8813,7 @@
 
 **Description**
 
-> (Gacha) When you roll a ticket, you can reroll it with its rarity lowered by one stage (Platinum to Gold, Gold to Silver, etc.), but do not blame the gacha if it does not work out.
+> (Tag:meta)(Gacha) When you roll a ticket, you can reroll it with its rarity lowered by one stage (Platinum to Gold, Gold to Silver, etc.), but do not blame the gacha if it does not work out.
 
 **Decision**
 
@@ -8775,7 +8830,7 @@
 
 **Description**
 
-> You are a Sea Serpent or Hybrid, a true apex predator of the seas. You can unleash your Sea Serpent characteristics as a Hybrid form or full Sea Serpent size. You also gain greatly superhuman physical abilities and grow empowered when wet or underwater. All Water-based abilities cost less energy and gain potency, but drying out drastically reduces all your stats.
+> (Tag:draconic)(Tag:physical+)(Tag:race-change)(Tag:water)(Tag:water+)You are a Sea Serpent or Hybrid, a true apex predator of the seas. You can unleash your Sea Serpent characteristics as a Hybrid form or full Sea Serpent size. You also gain greatly superhuman physical abilities and grow empowered when wet or underwater. All Water-based abilities cost less energy and gain potency, but drying out drastically reduces all your stats.
 
 **Decision**
 
@@ -8792,7 +8847,7 @@
 
 **Description**
 
-> Race Change - You are the Leviathan, the creature lying in the deep and pinnacle of sea life. You can hide and unleash your nature as a full Leviathan or hybrid form. As the Leviathan, you gain tremendous physical abilities and incredible water affinity, but you cannot use Fire-based abilities or spells. Your water affinity raises any Water-based ability below Legendary level by 1 rank (Rare to Elite), and you can use any Water ability of Rare rank or below. All your physical and magical abilities massively amplify underwater, to the point where even a god would be foolish to challenge you there, but drying out massively reduces your abilities.
+> (Tag:aquatic)(Tag:meta)(Tag:physical+)(Tag:power+)(Tag:race-change)(Tag:water)(Tag:water+)Race Change - You are the Leviathan, the creature lying in the deep and pinnacle of sea life. You can hide and unleash your nature as a full Leviathan or hybrid form. As the Leviathan, you gain tremendous physical abilities and incredible water affinity, but you cannot use Fire-based abilities or spells. Your water affinity raises any Water-based ability below Legendary level by 1 rank (Rare to Elite), and you can use any Water ability of Rare rank or below. All your physical and magical abilities massively amplify underwater, to the point where even a god would be foolish to challenge you there, but drying out massively reduces your abilities.
 
 **Decision**
 
@@ -8809,7 +8864,7 @@
 
 **Description**
 
-> Race Change - You are kin of Jormungandr, the World Serpent. You can unleash your characteristics as a hybrid or full-sized World Serpent to access your full capabilities. As a Jormungandr, you gain extreme physical stats, especially strength and endurance. Your venom can bring even the strongest gods to their knees, and wounds you inflict cannot heal except through the strongest healing gods.
+> (Tag:defence+)(Tag:physical+)(Tag:poison)(Tag:poison+)(Tag:race-change)(Tag:strength+)Race Change - You are kin of Jormungandr, the World Serpent. You can unleash your characteristics as a hybrid or full-sized World Serpent to access your full capabilities. As a Jormungandr, you gain extreme physical stats, especially strength and endurance. Your venom can bring even the strongest gods to their knees, and wounds you inflict cannot heal except through the strongest healing gods.
 
 **Decision**
 
@@ -8826,7 +8881,7 @@
 
 **Description**
 
-> Race Change - You are a Nekomata, a powerful cat yokai with a forked tail. You can shapeshift into human and cat forms at will, and you gain enhanced energy reserves and regeneration. Your Nekomata nature grants great affinity for Necromancy, increasing the potency and efficiency of all Soul- and Necromancy-based abilities and spells. You can also naturally use Animate Undead (Elite Rank Ability) and conjure ghostflames.
+> (Tag:beastkin)(Tag:energy-regeneration+)(Tag:maximum-energy+)(Tag:necro+)(Tag:power)(Tag:race-change)(Tag:spirit+)(Tag:undead)Race Change - You are a Nekomata, a powerful cat yokai with a forked tail. You can shapeshift into human and cat forms at will, and you gain enhanced energy reserves and regeneration. Your Nekomata nature grants great affinity for Necromancy, increasing the potency and efficiency of all Soul- and Necromancy-based abilities and spells. You can also naturally use Animate Undead (Elite Rank Ability) and conjure ghostflames.
 
 **Decision**
 
@@ -8843,7 +8898,7 @@
 
 **Description**
 
-> Race Change - You are the child of Sköll, the Sun Devouring Wolf. You can manifest and hide your lycanthropic nature at will; unleashing it grants an extreme increase in physical and magical power. As the Sun Devourer, you gain immense Fire affinity, massively boosting the potency and efficiency of any Fire-based ability you use. In addition, you absorb sunlight into energy and grow passively stronger under the sun. You can bless others into Lycanthropes under your command. You can also devour "Energy", eating spells, magical constructs, or high-energy objects to temporarily add them to your reserves and increase your maximum energy capacity.
+> (Tag:energy-recovery)(Tag:fire)(Tag:fire+)(Tag:growth+)(Tag:maximum-energy+)(Tag:perception+)(Tag:physical+)(Tag:power+)(Tag:race-change)Race Change - You are the child of Sköll, the Sun Devouring Wolf. You can manifest and hide your lycanthropic nature at will; unleashing it grants an extreme increase in physical and magical power. As the Sun Devourer, you gain immense Fire affinity, massively boosting the potency and efficiency of any Fire-based ability you use. In addition, you absorb sunlight into energy and grow passively stronger under the sun. You can bless others into Lycanthropes under your command. You can also devour "Energy", eating spells, magical constructs, or high-energy objects to temporarily add them to your reserves and increase your maximum energy capacity.
 
 **Decision**
 
@@ -8860,7 +8915,7 @@
 
 **Description**
 
-> Race Change - You are the Nemean Lion. You can switch between your base form, Lion Form, and anything in between. You gain indomitable physical stats and nigh-invulnerable skin even gods envy. Your skin defends against everything, and I mean everything, scaling with your physical stats. Even space-cutting, soul-burning, cursing, or existence-erasing attacks must contend with your resilience and have their effects reduced if not outright negated, depending on the attack's power relative to your defence.
+> (Tag:defence+)(Tag:magic-resistance+)(Tag:physical+)(Tag:race-change)Race Change - You are the Nemean Lion. You can switch between your base form, Lion Form, and anything in between. You gain indomitable physical stats and nigh-invulnerable skin even gods envy. Your skin defends against everything, and I mean everything, scaling with your physical stats. Even space-cutting, soul-burning, cursing, or existence-erasing attacks must contend with your resilience and have their effects reduced if not outright negated, depending on the attack's power relative to your defence.
 
 **Decision**
 
@@ -8877,7 +8932,7 @@
 
 **Description**
 
-> Your body is tempered by the Vile. When diseases or poisons afflict you, your body uses them as fuel to grow stronger and develop a stronger immune system. The stronger and more exotic the affliction, the faster your body increases its physical stats and develops immunity.
+> (Tag:growth+)(Tag:poison-resistance+)Your body is tempered by the Vile. When diseases or poisons afflict you, your body uses them as fuel to grow stronger and develop a stronger immune system. The stronger and more exotic the affliction, the faster your body increases its physical stats and develops immunity.
 
 **Decision**
 
@@ -8894,7 +8949,7 @@
 
 **Description**
 
-> You passively absorb radiation like a sponge, consuming it to fuel your body and energy. Absorbing enough radiation, such as Gamma Radiation, X-rays, and even ultraviolet radiation, permanently increases your physical stats and energy reserves proportionally to the amount absorbed. You are also immune to radiation's negative effects and recover stamina and energy faster when exposed to it. While sunlight has negligible effect, eating radium chips would likely act like cultivation pills for you.
+> (Tag:energy-regeneration+)(Tag:growth+)(Tag:poison-resistance+)(Tag:stamina+)You passively absorb radiation like a sponge, consuming it to fuel your body and energy. Absorbing enough radiation, such as Gamma Radiation, X-rays, and even ultraviolet radiation, permanently increases your physical stats and energy reserves proportionally to the amount absorbed. You are also immune to radiation's negative effects and recover stamina and energy faster when exposed to it. While sunlight has negligible effect, eating radium chips would likely act like cultivation pills for you.
 
 **Decision**
 
@@ -8911,7 +8966,7 @@
 
 **Description**
 
-> You are a vessel. You can absorb and channel "soul" to heal yourself by focusing or train to use it in Shaman spells such as Howling Wraiths, Soul Nails, short-range teleportation, and similar spells. You gain soul by injuring living beings, and your maximum storage scales with your maximum energy while remaining distinctly separate.
+> (Tag:power)(Tag:spirit)You are a vessel. You can absorb and channel "soul" to heal yourself by focusing or train to use it in Shaman spells such as Howling Wraiths, Soul Nails, short-range teleportation, and similar spells. You gain soul by injuring living beings, and your maximum storage scales with your maximum energy while remaining distinctly separate.
 
 **Decision**
 
@@ -8962,7 +9017,7 @@
 
 **Description**
 
-> Race Change - You are a Greater Beastkin, half beast and half whatever you are. You gain superhuman physical abilities and enhanced natural senses and instincts. You gain more affinity for nature-based abilities and spells, letting you use them more effectively. Your beast side is powerful too; even simple cat claws are tough as iron. (Chosen beast is decided by the writer, not an in-story choice)
+> (Tag:beastkin)(Tag:nature)(Tag:nature+)(Tag:perception+)(Tag:physical+)(Tag:race-change)Race Change - You are a Greater Beastkin, half beast and half whatever you are. You gain superhuman physical abilities and enhanced natural senses and instincts. You gain more affinity for nature-based abilities and spells, letting you use them more effectively. Your beast side is powerful too; even simple cat claws are tough as iron. (Chosen beast is decided by the writer, not an in-story choice)
 
 **Decision**
 
@@ -8979,7 +9034,7 @@
 
 **Description**
 
-> Race Change - You are a Noble Beastkin, a beast hybrid with mystical blood in your veins. You gain potent physical abilities and greatly enhanced senses depending on your race, plus very potent natural instincts. You gain greater affinity for Changer- and Nature-based abilities, letting you use them with greater effect and finesse. You also control your beast side, letting you fully suppress your traits or fully transform into your beast side. You command respect from beast-aligned beings more easily.
+> (Tag:beastkin)(Tag:nature)(Tag:nature+)(Tag:perception+)(Tag:physical+)(Tag:race-change)Race Change - You are a Noble Beastkin, a beast hybrid with mystical blood in your veins. You gain potent physical abilities and greatly enhanced senses depending on your race, plus very potent natural instincts. You gain greater affinity for Changer- and Nature-based abilities, letting you use them with greater effect and finesse. You also control your beast side, letting you fully suppress your traits or fully transform into your beast side. You command respect from beast-aligned beings more easily.
 
 **Decision**
 
@@ -8996,7 +9051,7 @@
 
 **Description**
 
-> Race Change - You are a Royal Beastkin, a powerful beast hybrid with potent royal blood in your veins. You gain great physical strength and incredibly honed senses varying slightly by beast-side race. Your natural fighting instincts can compete with trained fighters without prior training. You gain great affinity for Changer abilities, making them more efficient and easier to control. You gain incredible control over your beast side, letting you fully suppress it, fully transform into it, or take anything in between. Your royal blood also grants increased charisma and an authoritative presence, far more effective against beast-aligned beings.
+> (Tag:beastkin)(Tag:nature+)(Tag:perception+)(Tag:physical+)(Tag:race-change)(Tag:social)(Tag:transformation+)Race Change - You are a Royal Beastkin, a powerful beast hybrid with potent royal blood in your veins. You gain great physical strength and incredibly honed senses varying slightly by beast-side race. Your natural fighting instincts can compete with trained fighters without prior training. You gain great affinity for Changer abilities, making them more efficient and easier to control. You gain incredible control over your beast side, letting you fully suppress it, fully transform into it, or take anything in between. Your royal blood also grants increased charisma and an authoritative presence, far more effective against beast-aligned beings.
 
 **Decision**
 
@@ -9013,7 +9068,7 @@
 
 **Description**
 
-> Race Change - You are a Nephalem, an impossible union of Daemon and Seraphim. You gain immense magical and physical power. All Holy, Light, Darkness, and Infernal abilities increase by one tier and cost significantly less energy. You can naturally convert your energy into Darkness or Holy mana bursts.
+> (Tag:dark)(Tag:dark+)(Tag:energy-regeneration+)(Tag:holy)(Tag:holy+)(Tag:infernal)(Tag:infernal+)(Tag:light)(Tag:light+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power+)(Tag:race-change)Race Change - You are a Nephalem, an impossible union of Daemon and Seraphim. You gain immense magical and physical power. All Holy, Light, Darkness, and Infernal abilities increase by one tier and cost significantly less energy. You can naturally convert your energy into Darkness or Holy mana bursts.
 
 **Decision**
 
@@ -9030,7 +9085,7 @@
 
 **Description**
 
-> You are very good at getting under people's skin, whether angering them or breaking their stoic mask with a joke or flirty remark. Others find it harder to keep their composure around you.
+> (Tag:social)You are very good at getting under people's skin, whether angering them or breaking their stoic mask with a joke or flirty remark. Others find it harder to keep their composure around you.
 
 **Decision**
 
@@ -9047,7 +9102,7 @@
 
 **Description**
 
-> You have a heart of steel that endures any hardship; your body needs less than even the bare minimum. You need only 1/100th of your normal sustenance; you can go entire years without eating, months without drinking a drop of water, and need only 1/100th of your usual sleep, sleeping every few months or so even as a regular human.
+> (Tag:lifestyle)(Tag:survival)You have a heart of steel that endures any hardship; your body needs less than even the bare minimum. You need only 1/100th of your normal sustenance; you can go entire years without eating, months without drinking a drop of water, and need only 1/100th of your usual sleep, sleeping every few months or so even as a regular human.
 
 **Decision**
 
@@ -9064,7 +9119,7 @@
 
 **Description**
 
-> Race Change - Your previous genetic material is completely assimilated, turning you into a living mass of Blacklight Virus. Even at base, you can smash apart tanks and outrun cars. You can also regenerate by assimilating biological matter. As long as even a fist-sized mass of Blacklight forming your core remains, you still live. You can analyze and replicate any biological part you consume. The stronger the assimilated target, the harder it is to assimilate them.
+> (Tag:growth+)(Tag:health-recovery)(Tag:health-regeneration+)(Tag:physical+)(Tag:race-change)(Tag:transformation)Race Change - Your previous genetic material is completely assimilated, turning you into a living mass of Blacklight Virus. Even at base, you can smash apart tanks and outrun cars. You can also regenerate by assimilating biological matter. As long as even a fist-sized mass of Blacklight forming your core remains, you still live. You can analyze and replicate any biological part you consume. The stronger the assimilated target, the harder it is to assimilate them.
 
 **Decision**
 
@@ -9081,7 +9136,7 @@
 
 **Description**
 
-> Race Change - You are the hatchling of Placidusax, the Dragonlord. As a Royal Ancient Dragon, albeit a child, you gain greatly superhuman physical abilities and greatly increased magical powers. You can shift between your 5-headed ancient dragon form and humanoid form at will; your dragon form's size depends on your power level and maturity. You possess gilded gravel scales granting incredible resilience, and as Placidusax's child, you can breathe incinerating golden flames and manifest crimson dragon lightning. Unique to your lineage, you possess immense time affinity, letting you learn time spells on your own through natural inclination. But even with talent, time is no trifling power and mastery will take a very, very long time.
+> (Tag:draconic)(Tag:maximum-energy+)(Tag:physical+)(Tag:power+)(Tag:race-change)(Tag:talent)(Tag:time+)Race Change - You are the hatchling of Placidusax, the Dragonlord. As a Royal Ancient Dragon, albeit a child, you gain greatly superhuman physical abilities and greatly increased magical powers. You can shift between your 5-headed ancient dragon form and humanoid form at will; your dragon form's size depends on your power level and maturity. You possess gilded gravel scales granting incredible resilience, and as Placidusax's child, you can breathe incinerating golden flames and manifest crimson dragon lightning. Unique to your lineage, you possess immense time affinity, letting you learn time spells on your own through natural inclination. But even with talent, time is no trifling power and mastery will take a very, very long time.
 
 **Decision**
 
@@ -9098,7 +9153,7 @@
 
 **Description**
 
-> Race Change - You are an Everlasting Dragon, a being from before time and light; well, at least a hatchling of one. As an Everlasting Dragon, you gain greatly superhuman stats and magical abilities. Most of all, you possess the Stone Scales of Immortality. While in dragon form with your scales on, you are incredibly resilient to any attack, as if armored in adamantium with similar magic resistance, plus great regenerative abilities. But lightning or a greatly powerful attack rends your scales from your flesh and removes your increased durability. You can shift between base and dragon forms at will.
+> (Tag:defence+)(Tag:draconic)(Tag:physical+)(Tag:power+)(Tag:race-change)(Tag:transformation)Race Change - You are an Everlasting Dragon, a being from before time and light; well, at least a hatchling of one. As an Everlasting Dragon, you gain greatly superhuman stats and magical abilities. Most of all, you possess the Stone Scales of Immortality. While in dragon form with your scales on, you are incredibly resilient to any attack, as if armored in adamantium with similar magic resistance, plus great regenerative abilities. But lightning or a greatly powerful attack rends your scales from your flesh and removes your increased durability. You can shift between base and dragon forms at will.
 
 **Decision**
 
@@ -9115,7 +9170,7 @@
 
 **Description**
 
-> Race Change - You are a descendant of Nidhogg, the mythical dragon of Death and Decay. You can swap between base and Nidhogg forms at will; your degree of transformation dictates your accessible power. You gain tremendous physical abilities and incredibly potent, dense magical energy. You gain overwhelming affinity for necromancy, letting you naturally revive the dead as undead under your command and massively boosting the potency and efficiency of any necromancy-based abilities or spells you use. Your dragon breath distills the concept of decay, rotting whatever it touches down to flesh, soul, and existence. Effectiveness varies with target and power level.
+> (Tag:draconic)(Tag:maximum-energy+)(Tag:necro)(Tag:necro+)(Tag:physical+)(Tag:power)(Tag:power+)(Tag:race-change)Race Change - You are a descendant of Nidhogg, the mythical dragon of Death and Decay. You can swap between base and Nidhogg forms at will; your degree of transformation dictates your accessible power. You gain tremendous physical abilities and incredibly potent, dense magical energy. You gain overwhelming affinity for necromancy, letting you naturally revive the dead as undead under your command and massively boosting the potency and efficiency of any necromancy-based abilities or spells you use. Your dragon breath distills the concept of decay, rotting whatever it touches down to flesh, soul, and existence. Effectiveness varies with target and power level.
 
 **Decision**
 
@@ -9132,7 +9187,7 @@
 
 **Description**
 
-> You have received a gift from Nyarlathotep, the Crawling Ones. All Stranger abilities gain potency and cost less energy to use. You also grow more proficient in deception, obscurification, and acting.
+> (Tag:illusion+)(Tag:stealth+)(Tag:talent)You have received a gift from Nyarlathotep, the Crawling Ones. All Stranger abilities gain potency and cost less energy to use. You also grow more proficient in deception, obscurification, and acting.
 
 **Decision**
 
@@ -9149,7 +9204,7 @@
 
 **Description**
 
-> Your heart is that of a Mythical Hydra, granting Epic-level regeneration that expends stamina and energy. In addition, you possess 9 lives. Whenever your heart or head is destroyed, you almost instantly restore to peak health with all negative conditions cleansed. Any resurrection effect of Legendary rank or above can restore a life.
+> (Tag:health-recovery)(Tag:survival)Your heart is that of a Mythical Hydra, granting Epic-level regeneration that expends stamina and energy. In addition, you possess 9 lives. Whenever your heart or head is destroyed, you almost instantly restore to peak health with all negative conditions cleansed. Any resurrection effect of Legendary rank or above can restore a life.
 
 **Decision**
 
@@ -9166,7 +9221,7 @@
 
 **Description**
 
-> You hold a PhD in Ork Colour Theory. You can paint things to gain the benefits Orks gain. RED IZ FASTA, BLACK IZ TOUGHA, YELLOW IZ BIG BOOM, PURPLE IS SNEAKYY, BLUE IZ LUCKER AND GREEN IZ DA BEST. For a target to benefit, you must paint it yourself.
+> (Tag:rule)You hold a PhD in Ork Colour Theory. You can paint things to gain the benefits Orks gain. RED IZ FASTA, BLACK IZ TOUGHA, YELLOW IZ BIG BOOM, PURPLE IS SNEAKYY, BLUE IZ LUCKER AND GREEN IZ DA BEST. For a target to benefit, you must paint it yourself.
 
 **Decision**
 
@@ -9183,7 +9238,7 @@
 
 **Description**
 
-> Death itself permits you to kill anything, and reality obeys. Against an Immortal target, you can nullify their immortality. Any lethal blow you land that would kill them without immortality enacts absolute death and prevents resurrection unless you declare they may live. Even a god, avatar, or spirit loses immortality before you.
+> (Tag:anti-immortal)(Tag:rule)Death itself permits you to kill anything, and reality obeys. Against an Immortal target, you can nullify their immortality. Any lethal blow you land that would kill them without immortality enacts absolute death and prevents resurrection unless you declare they may live. Even a god, avatar, or spirit loses immortality before you.
 
 **Flagged in reports**
 
@@ -9204,7 +9259,7 @@
 
 **Description**
 
-> You are very self-aware. You know what effects affect you, when you are poisoned, and when you feel ill or uncomfortable. Nothing about you escapes your attention.
+> (Tag:mind)You are very self-aware. You know what effects affect you, when you are poisoned, and when you feel ill or uncomfortable. Nothing about you escapes your attention.
 
 **Decision**
 
@@ -9221,7 +9276,7 @@
 
 **Description**
 
-> It's a shame when beloved familiars die; you should always insure them. Whenever one of your familiars dies, it revives in your familiar space by using your energy reserves to heal, then remains temporarily weakened for several days afterward. If you have a familiar that automatically revives, it revives 50% faster and needs 50% less energy to revive.
+> (Tag:meta)(Tag:summon)It's a shame when beloved familiars die; you should always insure them. Whenever one of your familiars dies, it revives in your familiar space by using your energy reserves to heal, then remains temporarily weakened for several days afterward. If you have a familiar that automatically revives, it revives 50% faster and needs 50% less energy to revive.
 
 **Decision**
 
@@ -9238,7 +9293,7 @@
 
 **Description**
 
-> You are a psionic, a specialist in the Mind and Mental world. You gain greater control and finesse over mental abilities and use them more efficiently. You also train mental abilities faster and grasp them more naturally.
+> (Tag:mental)(Tag:mental+)(Tag:talent)You are a psionic, a specialist in the Mind and Mental world. You gain greater control and finesse over mental abilities and use them more efficiently. You also train mental abilities faster and grasp them more naturally.
 
 **Decision**
 
@@ -9255,7 +9310,7 @@
 
 **Description**
 
-> (Nsfw) You are a Netoranger; no relationship is sacred to you. You more easily persuade people to betray their loved ones for you, and people in relationships find themselves more attracted to you.
+> (Tag:nsfw)(Tag:social)(Nsfw) You are a Netoranger; no relationship is sacred to you. You more easily persuade people to betray their loved ones for you, and people in relationships find themselves more attracted to you.
 
 **Decision**
 
@@ -9272,7 +9327,7 @@
 
 **Description**
 
-> Your natural healing works differently; instead of regenerating, your body constantly restores itself to its healthiest state at your normal regeneration speed, affecting even curses, diseases, and afflictions. Of course, the more severe the effect, the longer and harder your restoration to full condition becomes.
+> (Tag:health-recovery)(Tag:meta)Your natural healing works differently; instead of regenerating, your body constantly restores itself to its healthiest state at your normal regeneration speed, affecting even curses, diseases, and afflictions. Of course, the more severe the effect, the longer and harder your restoration to full condition becomes.
 
 **Flagged in reports**
 
@@ -9293,7 +9348,7 @@
 
 **Description**
 
-> Your body has received a Tune Up. All previous health complications are erased, and your body improves to increase your latent genetic potential and give you a fit, incredibly healthy body.
+> (Tag:body)(Tag:growth+)(Tag:maximum-energy+)(Tag:physical+)Your body has received a Tune Up. All previous health complications are erased, and your body improves to increase your latent genetic potential and give you a fit, incredibly healthy body.
 
 **Decision**
 
@@ -9310,7 +9365,7 @@
 
 **Description**
 
-> You bear the Code of Immortality from an imitation of C's World. Whenever you suffer fatal wounds, sickness, or otherwise cannot function, a pocket dimension constantly producing replacement parts for your existence instantly replaces parts of you, keeping you healthy, ageless, and alive. This includes your mind and soul. You can only stay dead if separated from your dimension, your lives are exhausted faster than they reproduce, or you are killed by a spatial attack. In addition, you can grant individuals Geass, an eye-manifested power whose exact function and strength depend on their potential. You can always sense anyone you give Geass to and those they deem closest to them.
+> (Tag:meta)(Tag:power)(Tag:survival)You bear the Code of Immortality from an imitation of C's World. Whenever you suffer fatal wounds, sickness, or otherwise cannot function, a pocket dimension constantly producing replacement parts for your existence instantly replaces parts of you, keeping you healthy, ageless, and alive. This includes your mind and soul. You can only stay dead if separated from your dimension, your lives are exhausted faster than they reproduce, or you are killed by a spatial attack. In addition, you can grant individuals Geass, an eye-manifested power whose exact function and strength depend on their potential. You can always sense anyone you give Geass to and those they deem closest to them.
 
 **Flagged in reports**
 
@@ -9331,7 +9386,7 @@
 
 **Description**
 
-> "Bop!" Your skull is unusually durable, and your headbutts and skull-based attacks are more potent.
+> (Tag:body)"Bop!" Your skull is unusually durable, and your headbutts and skull-based attacks are more potent.
 
 **Decision**
 
@@ -9348,7 +9403,7 @@
 
 **Description**
 
-> You can naturally turn your energy reserves into silk. You can manipulate this silk as part of your body and dissolve it at will. You can control it to perform a wide variety of Silk Arts, such as shooting silk needles, whipping it around, binding your own wounds, and similar uses.
+> (Tag:power)You can naturally turn your energy reserves into silk. You can manipulate this silk as part of your body and dissolve it at will. You can control it to perform a wide variety of Silk Arts, such as shooting silk needles, whipping it around, binding your own wounds, and similar uses.
 
 **Decision**
 
@@ -9365,7 +9420,7 @@
 
 **Description**
 
-> Your existence is chaos as defined by the chaos gacha, automatically feeding back into whatever tries to examine you. Future sight becomes scrambled and incoherent, abilities reading you malfunction, and mind-reading causes at least a severe headache.
+> (Tag:mental-resistance+)(Tag:meta-resistance+)Your existence is chaos as defined by the chaos gacha, automatically feeding back into whatever tries to examine you. Future sight becomes scrambled and incoherent, abilities reading you malfunction, and mind-reading causes at least a severe headache.
 
 **Decision**
 
@@ -9382,7 +9437,7 @@
 
 **Description**
 
-> You possess a broken limiter, making your physical abilities practically boundless. Whenever you are pushed, your physical abilities grow exponentially, scaling with how challenged you are.
+> (Tag:growth+)You possess a broken limiter, making your physical abilities practically boundless. Whenever you are pushed, your physical abilities grow exponentially, scaling with how challenged you are.
 
 **Decision**
 
@@ -9399,7 +9454,7 @@
 
 **Description**
 
-> You have great affinity with the elements. Elemental abilities and spells cost less energy, and elementals and spirits gain affinity for you and like you more easily.
+> (Tag:air+)(Tag:earth+)(Tag:electric+)(Tag:fire+)(Tag:ice+)(Tag:social)(Tag:spirit)(Tag:water+)You have great affinity with the elements. Elemental abilities and spells cost less energy, and elementals and spirits gain affinity for you and like you more easily.
 
 **Decision**
 
@@ -9416,7 +9471,7 @@
 
 **Description**
 
-> You are an Exorcist, an agent of the Heavenly Realm specializing in destroying spiritual beings and demons with the Holy attribute. You gain increased affinity for Holy, Spiritual, and Light and for learning their magic. You can also sense nearby Unholy and Spiritual entities, whether to grant them peaceful passing or painful eviction from the material realm.
+> (Tag:holy)(Tag:holy+)(Tag:light+)(Tag:perception+)(Tag:spirit+)You are an Exorcist, an agent of the Heavenly Realm specializing in destroying spiritual beings and demons with the Holy attribute. You gain increased affinity for Holy, Spiritual, and Light and for learning their magic. You can also sense nearby Unholy and Spiritual entities, whether to grant them peaceful passing or painful eviction from the material realm.
 
 **Decision**
 
@@ -9433,7 +9488,7 @@
 
 **Description**
 
-> You are a Warlock, a practitioner of Dark and Demonic Arts. You gain increased affinity for Unholy- and Darkness-based abilities and spells. You are also immune to fae deals and can detect the true nature of magical bindings as a would-be demon-dealer. You also naturally know how to craft magically binding deals, though only ones where both parties explicitly know exactly what they gain.
+> (Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:rule)(Tag:spirit+)You are a Warlock, a practitioner of Dark and Demonic Arts. You gain increased affinity for Unholy- and Darkness-based abilities and spells. You are also immune to fae deals and can detect the true nature of magical bindings as a would-be demon-dealer. You also naturally know how to craft magically binding deals, though only ones where both parties explicitly know exactly what they gain.
 
 **Decision**
 
@@ -9450,7 +9505,7 @@
 
 **Description**
 
-> Race Change - You are a Death Knight, an Undead evolved into a far tougher, more physically capable caste. You gain greatly increased physical capabilities and need no rest or sustenance; your energy reserves power all functions. You can naturally use [Necrotic Weapon]. You gain increased Necromancy, Darkness, and Martial affinity, augmenting related abilities, skills, and magic, but you gain vulnerability to Holy- and Light-based abilities and magic. Your energy recovers faster in locations with more negative energy.
+> (Tag:dark)(Tag:dark+)(Tag:martial+)(Tag:necro)(Tag:necro+)(Tag:physical+)(Tag:power)(Tag:race-change)Race Change - You are a Death Knight, an Undead evolved into a far tougher, more physically capable caste. You gain greatly increased physical capabilities and need no rest or sustenance; your energy reserves power all functions. You can naturally use [Necrotic Weapon]. You gain increased Necromancy, Darkness, and Martial affinity, augmenting related abilities, skills, and magic, but you gain vulnerability to Holy- and Light-based abilities and magic. Your energy recovers faster in locations with more negative energy.
 
 **Decision**
 
@@ -9467,7 +9522,7 @@
 
 **Description**
 
-> Race Change - You are a Dread Knight, a higher Undead caste specializing in direct martial combat. You gain very potent physical abilities and virtually unlimited stamina, needing only Energy to sustain yourself. You can naturally use [Dread Blade] and gain great Necromancy, Darkness, and Martial affinity, augmenting related abilities, skills, and magic, but you gain vulnerability to Holy- and Light-based abilities and magic.
+> (Tag:dark)(Tag:dark+)(Tag:martial+)(Tag:necro)(Tag:necro+)(Tag:physical+)(Tag:power)(Tag:race-change)Race Change - You are a Dread Knight, a higher Undead caste specializing in direct martial combat. You gain very potent physical abilities and virtually unlimited stamina, needing only Energy to sustain yourself. You can naturally use [Dread Blade] and gain great Necromancy, Darkness, and Martial affinity, augmenting related abilities, skills, and magic, but you gain vulnerability to Holy- and Light-based abilities and magic.
 
 **Decision**
 
@@ -9484,7 +9539,7 @@
 
 **Description**
 
-> Race Change - You are a Gravelord, a royal Undead caste evolved for direct combat. You gain mighty physical abilities and virtually unlimited stamina, needing only your own Energy reserves to sustain yourself. You can naturally use [Gravelord's Blade] and gain greatly increased Necrotic, Dark, and Martial affinity, augmenting related skills, magic, and abilities, but you gain vulnerability to Holy- and Light-based abilities and magic.
+> (Tag:dark+)(Tag:martial+)(Tag:necro)(Tag:necro+)(Tag:physical+)(Tag:power)(Tag:race-change)Race Change - You are a Gravelord, a royal Undead caste evolved for direct combat. You gain mighty physical abilities and virtually unlimited stamina, needing only your own Energy reserves to sustain yourself. You can naturally use [Gravelord's Blade] and gain greatly increased Necrotic, Dark, and Martial affinity, augmenting related skills, magic, and abilities, but you gain vulnerability to Holy- and Light-based abilities and magic.
 
 **Decision**
 
@@ -9501,7 +9556,7 @@
 
 **Description**
 
-> Race Change - You are a Necro Kaiser, an Undead Ruler evolved for devastation. You gain incredible physical abilities and virtually unlimited stamina, needing only your own Energy reserves to sustain yourself. You can naturally use [Gravelord's Blade] and [Animate Undead], and all undead under your command are naturally stronger and able to act independently. You gain immense affinity for Necromancy, Darkness, and Martial abilities, spells, and skills, greatly increasing their potency, but you gain vulnerability to Holy- and Light-based abilities and magic.
+> (Tag:dark+)(Tag:martial+)(Tag:necro)(Tag:necro+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:social)Race Change - You are a Necro Kaiser, an Undead Ruler evolved for devastation. You gain incredible physical abilities and virtually unlimited stamina, needing only your own Energy reserves to sustain yourself. You can naturally use [Gravelord's Blade] and [Animate Undead], and all undead under your command are naturally stronger and able to act independently. You gain immense affinity for Necromancy, Darkness, and Martial abilities, spells, and skills, greatly increasing their potency, but you gain vulnerability to Holy- and Light-based abilities and magic.
 
 **Decision**
 
@@ -9518,7 +9573,7 @@
 
 **Description**
 
-> Race Change - You are a Ruin Tyrant, the highest undead caste, ruler of the dead and extinguisher of life. You gain unrivaled physical abilities and unlimited stamina; you do not even need energy to sustain yourself, you simply are, though you can still be destroyed. You can naturally use [Ruin Edge] and [Animate Undead], and all undead under your command are naturally stronger and able to act independently. You gain unrivaled Necrotic, Dark, and Martial affinity, augmenting related skills, magic, and abilities, but you gain vulnerability to Holy- and Light-based abilities and magic.
+> (Tag:dark+)(Tag:martial+)(Tag:necro)(Tag:necro+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:social)Race Change - You are a Ruin Tyrant, the highest undead caste, ruler of the dead and extinguisher of life. You gain unrivaled physical abilities and unlimited stamina; you do not even need energy to sustain yourself, you simply are, though you can still be destroyed. You can naturally use [Ruin Edge] and [Animate Undead], and all undead under your command are naturally stronger and able to act independently. You gain unrivaled Necrotic, Dark, and Martial affinity, augmenting related skills, magic, and abilities, but you gain vulnerability to Holy- and Light-based abilities and magic.
 
 **Decision**
 
@@ -9535,7 +9590,7 @@
 
 **Description**
 
-> Race Change - You are a Lich, an Undead caste specializing in Necromancy and Dark Magic, not the phylactery kind. Though rather weak physically, you gain increased energy reserves and nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You study magic more easily and gain increased Darkness and Necromancy affinity. In addition, you can naturally use [Lesser Necromancy] to raise your own Undead Servants.
+> (Tag:dark)(Tag:dark+)(Tag:magic+)(Tag:maximum-energy+)(Tag:necro)(Tag:necro+)(Tag:power)(Tag:race-change)Race Change - You are a Lich, an Undead caste specializing in Necromancy and Dark Magic, not the phylactery kind. Though rather weak physically, you gain increased energy reserves and nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You study magic more easily and gain increased Darkness and Necromancy affinity. In addition, you can naturally use [Lesser Necromancy] to raise your own Undead Servants.
 
 **Decision**
 
@@ -9552,7 +9607,7 @@
 
 **Description**
 
-> Race Change - You are an Elder Lich, a higher Undead caste evolved from a regular Lich, specializing in raising undead armies and Necromancy. Though rather disappointing physically, you gain greater energy reserves and magical abilities plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You study magic with greater ease and gain increased Darkness and Necromancy affinity. In addition, you can naturally use [Lesser Necromancy] to raise your own Undead Servants, your commanded undead are naturally more powerful and intelligent, and you can command more undead at once than you otherwise could.
+> (Tag:dark)(Tag:dark+)(Tag:magic+)(Tag:maximum-energy+)(Tag:necro)(Tag:necro+)(Tag:power)(Tag:race-change)(Tag:summon+)Race Change - You are an Elder Lich, a higher Undead caste evolved from a regular Lich, specializing in raising undead armies and Necromancy. Though rather disappointing physically, you gain greater energy reserves and magical abilities plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You study magic with greater ease and gain increased Darkness and Necromancy affinity. In addition, you can naturally use [Lesser Necromancy] to raise your own Undead Servants, your commanded undead are naturally more powerful and intelligent, and you can command more undead at once than you otherwise could.
 
 **Decision**
 
@@ -9569,7 +9624,7 @@
 
 **Description**
 
-> Race Change - You are a Night Lich, an evolved undead with dark magic thrumming in their bones, specializing in raising undead armies, Dark Magic, and Necromancy. Though lacking physical might, you gain great energy reserves and magical ability plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You gain great capacity for learning, developing, and studying Necromancy and Dark Magic, and your Necromancy-based abilities work more efficiently. In addition, you can naturally use [Animate Undead] to raise your own Undead Servants, your commanded undead are naturally more powerful and intelligent, you can command more undead at once than you otherwise could, and you instinctively sense nearby dead like a sixth sense.
+> (Tag:dark+)(Tag:magic+)(Tag:maximum-energy+)(Tag:necro)(Tag:necro+)(Tag:power)(Tag:power+)(Tag:race-change)(Tag:summon+)Race Change - You are a Night Lich, an evolved undead with dark magic thrumming in their bones, specializing in raising undead armies, Dark Magic, and Necromancy. Though lacking physical might, you gain great energy reserves and magical ability plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. You gain great capacity for learning, developing, and studying Necromancy and Dark Magic, and your Necromancy-based abilities work more efficiently. In addition, you can naturally use [Animate Undead] to raise your own Undead Servants, your commanded undead are naturally more powerful and intelligent, you can command more undead at once than you otherwise could, and you instinctively sense nearby dead like a sixth sense.
 
 **Decision**
 
@@ -9586,7 +9641,7 @@
 
 **Description**
 
-> Race Change - You are an Overlord, the highest caste of regular undead, whose existence overturns the living into an undead army. While only superhuman physically, your magical prowess is mighty, granting increased energy reserves and potency plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. Your Necromancy affinity is incredibly potent, letting you learn, study, and create Necromancy spells with great ease and increasing the potency of any Necromancy-related ability you use. You can naturally use [Greater Animate Undead] to raise your own Undead Army, your commanded undead are naturally more powerful and intelligent, and you can command an unlimited number at once. You instinctively sense nearby dead like a sixth sense. You can also seize command of any undead you encounter as long as you overwhelmingly overpower them or defeat them yourself.
+> (Tag:dark+)(Tag:magic+)(Tag:maximum-energy+)(Tag:necro)(Tag:necro+)(Tag:power)(Tag:power+)(Tag:race-change)(Tag:summon+)Race Change - You are an Overlord, the highest caste of regular undead, whose existence overturns the living into an undead army. While only superhuman physically, your magical prowess is mighty, granting increased energy reserves and potency plus nigh-unlimited stamina, needing only your own Energy reserves to sustain yourself. Your Necromancy affinity is incredibly potent, letting you learn, study, and create Necromancy spells with great ease and increasing the potency of any Necromancy-related ability you use. You can naturally use [Greater Animate Undead] to raise your own Undead Army, your commanded undead are naturally more powerful and intelligent, and you can command an unlimited number at once. You instinctively sense nearby dead like a sixth sense. You can also seize command of any undead you encounter as long as you overwhelmingly overpower them or defeat them yourself.
 
 **Decision**
 
@@ -9603,7 +9658,7 @@
 
 **Description**
 
-> Race Change - You are the Eclipse, pure necromancy shaped as an undead, a living icon of death meant to extinguish life. Though only superhuman physically, your magical reserves are vast and incredibly potent with infinite stamina from undeath. As Necromancy embodied, your affinity for Necromancy spells and Abilities is unmatched, increasing all their potency beyond normal limits and letting you invent spells by instinct and learn existing ones by observation. You can also naturally use [True Necromancy] to raise an undead army, all undead under your command are naturally more powerful and cognizant, and you can command an unlimited number at once. Any undead outside your command naturally feels compelled to submit to you.
+> (Tag:dark+)(Tag:magic+)(Tag:maximum-energy+)(Tag:necro)(Tag:necro+)(Tag:power)(Tag:power+)(Tag:race-change)(Tag:summon+)Race Change - You are the Eclipse, pure necromancy shaped as an undead, a living icon of death meant to extinguish life. Though only superhuman physically, your magical reserves are vast and incredibly potent with infinite stamina from undeath. As Necromancy embodied, your affinity for Necromancy spells and Abilities is unmatched, increasing all their potency beyond normal limits and letting you invent spells by instinct and learn existing ones by observation. You can also naturally use [True Necromancy] to raise an undead army, all undead under your command are naturally more powerful and cognizant, and you can command an unlimited number at once. Any undead outside your command naturally feels compelled to submit to you.
 
 **Decision**
 
@@ -9620,7 +9675,7 @@
 
 **Description**
 
-> Race Change - You are an animated skeleton, the most basic undead. Your physical stats match your living state, but you need no sustenance or rest, needing only your own energy reserves to sustain yourself. You also gain increased Necro and Dark affinity but gain vulnerability to Light- and Holy-based abilities. (This can be rerolled for free)
+> (Tag:dark+)(Tag:necro+)(Tag:race-change)(Tag:undead)Race Change - You are an animated skeleton, the most basic undead. Your physical stats match your living state, but you need no sustenance or rest, needing only your own energy reserves to sustain yourself. You also gain increased Necro and Dark affinity but gain vulnerability to Light- and Holy-based abilities. (This can be rerolled for free)
 
 **Decision**
 
@@ -9637,7 +9692,7 @@
 
 **Description**
 
-> You are a member of the Kure Clan, selectively bred as assassins and martial artists. Your genes grant increased physical abilities, greater physical growth, and better combat instincts. You can also use "Removal", removing the brain's natural limiters that prevent using 100% of your physical strength to avoid self-injury. You can increase your Removal percentage through training.
+> (Tag:bloodline)(Tag:martial)(Tag:talent)You are a member of the Kure Clan, selectively bred as assassins and martial artists. Your genes grant increased physical abilities, greater physical growth, and better combat instincts. You can also use "Removal", removing the brain's natural limiters that prevent using 100% of your physical strength to avoid self-injury. You can increase your Removal percentage through training.
 
 **Decision**
 
@@ -9654,7 +9709,7 @@
 
 **Description**
 
-> You gain a cosmetic alteration to your physique and form, making you more attractive by your own standards. You may gain longer, prettier hair, a few inches of height, different eye color, and similar changes. You cannot completely change your looks, only enhance what exists; an ordinary person becomes fairly attractive, but anyone who knows you can still recognize you.
+> (Tag:body)You gain a cosmetic alteration to your physique and form, making you more attractive by your own standards. You may gain longer, prettier hair, a few inches of height, different eye color, and similar changes. You cannot completely change your looks, only enhance what exists; an ordinary person becomes fairly attractive, but anyone who knows you can still recognize you.
 
 **Decision**
 
@@ -9671,7 +9726,7 @@
 
 **Description**
 
-> You are a Newtype, an evolved human adapted to space. Other than a slightly stronger body, you gain greatly increased spatial awareness and mental focus, boosting all Thinker abilities. You can also naturally sense malintent directed at you. With enough training and meditation, you may even unlock communication with others' minds.
+> (Tag:divination+)(Tag:mental+)(Tag:mind)(Tag:power)(Tag:race-change)(Tag:sense+)You are a Newtype, an evolved human adapted to space. Other than a slightly stronger body, you gain greatly increased spatial awareness and mental focus, boosting all Thinker abilities. You can also naturally sense malintent directed at you. With enough training and meditation, you may even unlock communication with others' minds.
 
 **Decision**
 
@@ -9688,7 +9743,7 @@
 
 **Description**
 
-> You hold the Rule of Cool. Physics bends slightly around you to let you do things the "cool" way despite impossibility, Style AND Substance baby. You can snatch a bullet from the air and send it back, walk away from an explosion unfazed, perform mid-fight tricks without disadvantage, and similar feats; doing things the cool way comes naturally to you. (Does not affect your stats or level of skills.)
+> (Tag:rule)You hold the Rule of Cool. Physics bends slightly around you to let you do things the "cool" way despite impossibility, Style AND Substance baby. You can snatch a bullet from the air and send it back, walk away from an explosion unfazed, perform mid-fight tricks without disadvantage, and similar feats; doing things the cool way comes naturally to you. (Does not affect your stats or level of skills.)
 
 **Decision**
 
@@ -9705,7 +9760,7 @@
 
 **Description**
 
-> Crazy, mentally unstable, or otherwise insane people find themselves more attracted to you, and you gain their affection and favor more easily. You can also reason with them more easily.
+> (Tag:social)Crazy, mentally unstable, or otherwise insane people find themselves more attracted to you, and you gain their affection and favor more easily. You can also reason with them more easily.
 
 **Decision**
 
@@ -9722,7 +9777,7 @@
 
 **Description**
 
-> You are blessed by Beelzebub, Lord of vermin and insects. You gain affinity with all vermin, insects, and arachnids, making them friendlier and easier to earn affection from. All Vermin- and Poison-based abilities gain potency and cost less energy to use.
+> (Tag:poison+)(Tag:social)You are blessed by Beelzebub, Lord of vermin and insects. You gain affinity with all vermin, insects, and arachnids, making them friendlier and easier to earn affection from. All Vermin- and Poison-based abilities gain potency and cost less energy to use.
 
 **Decision**
 
@@ -9739,7 +9794,7 @@
 
 **Description**
 
-> You have a great-looking, great-feeling ass that cushions you so you can sit on practically any surface without discomfort.
+> (Tag:body)You have a great-looking, great-feeling ass that cushions you so you can sit on practically any surface without discomfort.
 
 **Decision**
 
@@ -9756,7 +9811,7 @@
 
 **Description**
 
-> Your hugs and snuggles comfort even broken souls, feeling like the softest, warmest blanket while therapeutically stabilizing and comforting your target.
+> (Tag:social)Your hugs and snuggles comfort even broken souls, feeling like the softest, warmest blanket while therapeutically stabilizing and comforting your target.
 
 **Decision**
 
@@ -9773,7 +9828,7 @@
 
 **Description**
 
-> Your teeth are spectacularly strong and durable, letting you bite and chew rock without damage. You never worry about dental health, and any broken teeth regrow like fingernails.
+> (Tag:body)Your teeth are spectacularly strong and durable, letting you bite and chew rock without damage. You never worry about dental health, and any broken teeth regrow like fingernails.
 
 **Decision**
 
@@ -9790,7 +9845,7 @@
 
 **Description**
 
-> You are a child of the Nakiri Clan, a born gourmet and chef with natural cooking affinity who improves skills and recipes far faster than ordinary people. You possess the God Tongue, discerning taste unimaginably well and identifying specific ingredients and their amounts from a single bite.
+> (Tag:bloodline)(Tag:talent)You are a child of the Nakiri Clan, a born gourmet and chef with natural cooking affinity who improves skills and recipes far faster than ordinary people. You possess the God Tongue, discerning taste unimaginably well and identifying specific ingredients and their amounts from a single bite.
 
 **Decision**
 
@@ -9807,7 +9862,7 @@
 
 **Description**
 
-> You oppose the Gods and Divine, possessing massive resistance to all Divine influence and Authorities, and your physical and magical abilities massively increase against Divine opponents.
+> (Tag:anti-divine)You oppose the Gods and Divine, possessing massive resistance to all Divine influence and Authorities, and your physical and magical abilities massively increase against Divine opponents.
 
 **Decision**
 
@@ -9824,7 +9879,7 @@
 
 **Description**
 
-> You are naturally dominant and assert yourself on others more easily, while people — especially submissive people — receive your dominance and assertiveness more readily.
+> (Tag:social)You are naturally dominant and assert yourself on others more easily, while people, especially submissive people, receive your dominance and assertiveness more readily.
 
 **Decision**
 
@@ -9841,7 +9896,7 @@
 
 **Description**
 
-> You naturally resist Light and Light-based effects, letting you stare straight at the sun, heavily reduce flashbangs, and resist Light arrows, purification rituals, searing beams of light, etc. This resistance scales with your base stats.
+> (Tag:light-resistance+)You naturally resist Light and Light-based effects, letting you stare straight at the sun, heavily reduce flashbangs, and resist Light arrows, purification rituals, searing beams of light, etc. This resistance scales with your base stats.
 
 **Decision**
 
@@ -9858,7 +9913,7 @@
 
 **Description**
 
-> You naturally resist Darkness and Darkness-based effects such as shadow blasts, darkness chains, clouds of Darkness, shadow blades, etc. This resistance scales with your base stats.
+> (Tag:dark)(Tag:dark-resistance+)You naturally resist Darkness and Darkness-based effects such as shadow blasts, darkness chains, clouds of Darkness, shadow blades, etc. This resistance scales with your base stats.
 
 **Decision**
 
@@ -9875,7 +9930,7 @@
 
 **Description**
 
-> (Tech) Praise the Omnissiah! You pray and perform rituals that actually appease the machine spirit dwelling in machines. By burning incense, dancing, singing, drawing it, etc., you please it, and its pleasure increases the machine's power and efficiency. With enough worship you develop a relationship with the machine that endures through thick and thin.
+> (Tag:growth+)(Tag:social)(Tag:tech)(Tech) Praise the Omnissiah! You pray and perform rituals that actually appease the machine spirit dwelling in machines. By burning incense, dancing, singing, drawing it, etc., you please it, and its pleasure increases the machine's power and efficiency. With enough worship you develop a relationship with the machine that endures through thick and thin.
 
 **Decision**
 
@@ -9892,7 +9947,7 @@
 
 **Description**
 
-> (Tech) You are blessed by the Omnissiah; they praise you. Any machine you handle or encounter eagerly favors you unless you lose that favor: charges deplete slower, cars go faster and handle better, slot machines give better odds, etc., because their machine spirit naturally likes you.
+> (Tag:buff)(Tech) You are blessed by the Omnissiah; they praise you. Any machine you handle or encounter eagerly favors you unless you lose that favor: charges deplete slower, cars go faster and handle better, slot machines give better odds, etc., because their machine spirit naturally likes you.
 
 **Decision**
 
@@ -9909,7 +9964,7 @@
 
 **Description**
 
-> Race Change - You are a single-tailed Kitsune, a Fox Yokai semi-spiritual being attuned to nature and illusions. Your humanoid form is naturally incredibly attractive, and you possess slightly increased physical stats and increased energy reserves. You naturally weave and use [Foxfire], and all Stranger abilities, illusion spells, and nature-based abilities you use are more potent. You shift between fox and humanoid form at will and hide your fox features with illusions. As you age or increase energy reserves, you gain up to 9 tails, each slightly enhancing the above capabilities.
+> (Tag:beastkin)(Tag:illusion)(Tag:illusion+)(Tag:maximum-energy+)(Tag:nature)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:spirit)Race Change - You are a single-tailed Kitsune, a Fox Yokai semi-spiritual being attuned to nature and illusions. Your humanoid form is naturally incredibly attractive, and you possess slightly increased physical stats and increased energy reserves. You naturally weave and use [Foxfire], and all Stranger abilities, illusion spells, and nature-based abilities you use are more potent. You shift between fox and humanoid form at will and hide your fox features with illusions. As you age or increase energy reserves, you gain up to 9 tails, each slightly enhancing the above capabilities.
 
 **Decision**
 
@@ -9926,7 +9981,7 @@
 
 **Description**
 
-> Race Change - You are a Kyubi, a nine-tailed Kitsune, a powerful fox yokai semi-spiritual being incredibly attuned to nature and illusions. You possess superhuman physical ability and greatly increased energy reserves. You swap between your nine-tailed form and a supernaturally good-looking human form at will. You naturally use [Nine-Tailed Foxfire] and possess great affinity for Stranger and Nature-based abilities and spells, making them more efficient to use and maintain.
+> (Tag:illusion)(Tag:illusion+)(Tag:maximum-energy+)(Tag:nature)(Tag:nature+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:spirit)Race Change - You are a Kyubi, a nine-tailed Kitsune, a powerful fox yokai semi-spiritual being incredibly attuned to nature and illusions. You possess superhuman physical ability and greatly increased energy reserves. You swap between your nine-tailed form and a supernaturally good-looking human form at will. You naturally use [Nine-Tailed Foxfire] and possess great affinity for Stranger and Nature-based abilities and spells, making them more efficient to use and maintain.
 
 **Decision**
 
@@ -9943,7 +9998,7 @@
 
 **Description**
 
-> You are a child blessed by Demeter, goddess of nature and harvest, with increased affinity for nature-based abilities and magic that makes them easier to master and more potent. In any territory you own, soil is enriched and fertile, and crops are protected from disease and vermin.
+> (Tag:nature)(Tag:nature+)(Tag:rule)You are a child blessed by Demeter, goddess of nature and harvest, with increased affinity for nature-based abilities and magic that makes them easier to master and more potent. In any territory you own, soil is enriched and fertile, and crops are protected from disease and vermin.
 
 **Decision**
 
@@ -9960,7 +10015,7 @@
 
 **Description**
 
-> Your presence is very comforting and trustworthy, feeling like coming home. People more likely confide in you, feel less threatened by you, and you naturally comfort those in distress. This does not work on people with a strong negative opinion of you.
+> (Tag:social)Your presence is very comforting and trustworthy, feeling like coming home. People more likely confide in you, feel less threatened by you, and you naturally comfort those in distress. This does not work on people with a strong negative opinion of you.
 
 **Decision**
 
@@ -9977,7 +10032,7 @@
 
 **Description**
 
-> You are a child blessed by Poseidon, god of the seas. You breathe, move, and see underwater as naturally as on land. All mundane aquatic life is friendly and supernatural ones are friendlier toward you. You possess increased water affinity, making your water-based abilities and spells more potent and easier to master.
+> (Tag:social)(Tag:talent)(Tag:water)(Tag:water+)You are a child blessed by Poseidon, god of the seas. You breathe, move, and see underwater as naturally as on land. All mundane aquatic life is friendly and supernatural ones are friendlier toward you. You possess increased water affinity, making your water-based abilities and spells more potent and easier to master.
 
 **Decision**
 
@@ -9994,7 +10049,7 @@
 
 **Description**
 
-> You may wear whatever you want without it being illegal or morally unacceptable, though people may still feel uncomfortable. You can even enter high society wearing what you were born with.
+> (Tag:rule)(Tag:social)You may wear whatever you want without it being illegal or morally unacceptable, though people may still feel uncomfortable. You can even enter high society wearing what you were born with.
 
 **Decision**
 
@@ -10011,7 +10066,7 @@
 
 **Description**
 
-> (Tech) You are a special mechanic: whatever sufficiently advanced technology you make contains a newborn Machine Spirit. It passively improves the machine's quality and performance over time. Depending on its mood, it works more efficiently or worse and can even deny access. More mature spirits can operate their tech autonomously and independently. All spirits you create naturally see you as their creator.
+> (Tag:growth+)(Tag:rule)(Tag:tech)(Tech) You are a special mechanic: whatever sufficiently advanced technology you make contains a newborn Machine Spirit. It passively improves the machine's quality and performance over time. Depending on its mood, it works more efficiently or worse and can even deny access. More mature spirits can operate their tech autonomously and independently. All spirits you create naturally see you as their creator.
 
 **Decision**
 
@@ -10028,7 +10083,7 @@
 
 **Description**
 
-> Race Change - You possess the Necromantic Heart, turning you undead while granting you the capacity to evolve. You start as (Uncommon trait) Skeleton, and the more time you spend alive, the more you kill, and the more negative energy you immerse yourself in, the faster you evolve into the next undead tier. You retain a humanoid facade with human functions that falls apart when you use undead traits or get damaged.
+> (Tag:growth+)(Tag:necro)(Tag:race-change)Race Change - You possess the Necromantic Heart, turning you undead while granting you the capacity to evolve. You start as (Uncommon trait) Skeleton, and the more time you spend alive, the more you kill, and the more negative energy you immerse yourself in, the faster you evolve into the next undead tier. You retain a humanoid facade with human functions that falls apart when you use undead traits or get damaged.
 
 **Decision**
 
@@ -10045,7 +10100,7 @@
 
 **Description**
 
-> (Nsfw) There is nothing morally wrong with keeping it in the family, and society does not find you marrying your kin particularly wrong. All genetic problems from inbreeding are resolved. Any biological children you conceive inherit your traits far better and inherit at least two of your abilities. You more easily earn your family's affection, platonically or romantically. This trait can be rerolled for free.
+> (Tag:nsfw)(Tag:social)(Nsfw) There is nothing morally wrong with keeping it in the family, and society does not find you marrying your kin particularly wrong. All genetic problems from inbreeding are resolved. Any biological children you conceive inherit your traits far better and inherit at least two of your abilities. You more easily earn your family's affection, platonically or romantically. This trait can be rerolled for free.
 
 **Flagged in reports**
 
@@ -10066,7 +10121,7 @@
 
 **Description**
 
-> Your familiars carry full coverage insurance: as long as a familiar stays in familiar space for 24 hours straight uninterrupted, they return to perfect health. If a familiar dies, they resurrect in familiar space after 48 hours in perfect health.
+> (Tag:meta)(Tag:summon)Your familiars carry full coverage insurance: as long as a familiar stays in familiar space for 24 hours straight uninterrupted, they return to perfect health. If a familiar dies, they resurrect in familiar space after 48 hours in perfect health.
 
 **Decision**
 
@@ -10083,7 +10138,7 @@
 
 **Description**
 
-> You can register any cognizant living being as a familiar as long as they completely submit to you and are tamed.
+> (Tag:meta)(Tag:summon)You can register any cognizant living being as a familiar as long as they completely submit to you and are tamed.
 
 **Flagged in reports**
 
@@ -10104,7 +10159,7 @@
 
 **Description**
 
-> You instinctively tell when someone looks at or observes you at all times, plus which direction they look from. Against clairvoyance, you know someone watches you but cannot pinpoint their direction.
+> (Tag:perception+)You instinctively tell when someone looks at or observes you at all times, plus which direction they look from. Against clairvoyance, you know someone watches you but cannot pinpoint their direction.
 
 **Decision**
 
@@ -10121,7 +10176,7 @@
 
 **Description**
 
-> The scenic wind favors you, making your clothes and hair flutter majestically whenever opportune, even indoors or in impossible weather.
+> (Tag:air)(Tag:lifestyle)The scenic wind favors you, making your clothes and hair flutter majestically whenever opportune, even indoors or in impossible weather.
 
 **Decision**
 
@@ -10138,7 +10193,7 @@
 
 **Description**
 
-> You can lactate, and the quality of milk you produce scales with your physical stats and gains unique qualities depending on your traits. This trait can be rerolled for free.
+> (Tag:body)You can lactate, and the quality of milk you produce scales with your physical stats and gains unique qualities depending on your traits. This trait can be rerolled for free.
 
 **Decision**
 
@@ -10155,7 +10210,7 @@
 
 **Description**
 
-> Your bones demand milk: every time you consume milk, they gain a permanent boost to durability and quality. Higher-quality milk gives a greater boost. Repeating the same kind of milk decreases its effects exponentially after the first drink, and the boost is relative to the milk's quality versus your bones.
+> (Tag:growth+)Your bones demand milk: every time you consume milk, they gain a permanent boost to durability and quality. Higher-quality milk gives a greater boost. Repeating the same kind of milk decreases its effects exponentially after the first drink, and the boost is relative to the milk's quality versus your bones.
 
 **Decision**
 
@@ -10172,7 +10227,7 @@
 
 **Description**
 
-> Your skin is perfectly moist, supple, and smooth, never scarring or marring unless you want it to. Skin and superficial injuries heal slightly faster and more seamlessly.
+> (Tag:health-regeneration+)(Tag:lifestyle)Your skin is perfectly moist, supple, and smooth, never scarring or marring unless you want it to. Skin and superficial injuries heal slightly faster and more seamlessly.
 
 **Decision**
 
@@ -10189,7 +10244,7 @@
 
 **Description**
 
-> You are always comfortable in your own skin: your physical features never hamper your mobility or comfort of life, whether distorted or oversized.
+> (Tag:body)(Tag:lifestyle)You are always comfortable in your own skin: your physical features never hamper your mobility or comfort of life, whether distorted or oversized.
 
 **Decision**
 
@@ -10206,7 +10261,7 @@
 
 **Description**
 
-> Whatever clothing or equipment you wear or equip automatically adjusts to your size perfectly as long as the change is not too drastic. The changes revert when unequipped.
+> (Tag:lifestyle)(Tag:rule)Whatever clothing or equipment you wear or equip automatically adjusts to your size perfectly as long as the change is not too drastic. The changes revert when unequipped.
 
 **Decision**
 
@@ -10223,7 +10278,7 @@
 
 **Description**
 
-> Your stomach is 1000x larger inside than outside. You keep eating and digest food on a need-to basis without discomfort, letting you eat months of food and water ahead of time, while producing only 1/1000th of the waste.
+> (Tag:body)Your stomach is 1000x larger inside than outside. You keep eating and digest food on a need-to basis without discomfort, letting you eat months of food and water ahead of time, while producing only 1/1000th of the waste.
 
 **Decision**
 
@@ -10240,7 +10295,7 @@
 
 **Description**
 
-> Race Change - You are a Tanuki, a raccoon-dog yokai semi-spiritual being excelling in trickery. You shift between Tanuki, humanoid, and in-between forms. You possess increased energy reserves and increased affinity toward Stranger abilities and traits, letting you use and master them more easily and efficiently. You naturally use [Tanuki's Leaves (Rare)] without needing an ability slot.
+> (Tag:illusion+)(Tag:maximum-energy+)(Tag:power)(Tag:race-change)Race Change - You are a Tanuki, a raccoon-dog yokai semi-spiritual being excelling in trickery. You shift between Tanuki, humanoid, and in-between forms. You possess increased energy reserves and increased affinity toward Stranger abilities and traits, letting you use and master them more easily and efficiently. You naturally use [Tanuki's Leaves (Rare)] without needing an ability slot.
 
 **Decision**
 
@@ -10257,7 +10312,7 @@
 
 **Description**
 
-> You no longer have a gag reflex, and your throat stays perfectly moist and lubricated. You never get a sore throat.
+> (Tag:body)You no longer have a gag reflex, and your throat stays perfectly moist and lubricated. You never get a sore throat.
 
 **Decision**
 
@@ -10274,7 +10329,7 @@
 
 **Description**
 
-> Your preferred partners at least twice your age find you more attractive, and you more easily earn their favor. Your romantic partners and your looks never age beyond their peak. This does not stop physical aging.
+> (Tag:social)Your preferred partners at least twice your age find you more attractive, and you more easily earn their favor. Your romantic partners and your looks never age beyond their peak. This does not stop physical aging.
 
 **Decision**
 
@@ -10291,7 +10346,7 @@
 
 **Description**
 
-> You wield a body blessed by the Heavenly realm to carry out violence in its stead. Your physical abilities are augmented and further amplified on blessed ground. You possess increased resistance to curses, necromancy, and darkness-based attacks. Even an ordinary person with this could flip cars and break demons' bones.
+> (Tag:anti-dark)(Tag:anti-infernal)(Tag:curse-resistance+)(Tag:dark-resistance+)(Tag:holy)(Tag:necro-resistance+)(Tag:physical+)You wield a body blessed by the Heavenly realm to carry out violence in its stead. Your physical abilities are augmented and further amplified on blessed ground. You possess increased resistance to curses, necromancy, and darkness-based attacks. Even an ordinary person with this could flip cars and break demons' bones.
 
 **Decision**
 
@@ -10308,7 +10363,7 @@
 
 **Description**
 
-> Race Change - You are a half-avian hawk hybrid mixed with your own race. You have slightly enhanced physical abilities, senses, and heightened predatory instincts. You have retractable talons and wings fused into your arms, shoulder blades, or back. With training you suppress your avian traits. You possess increased wind affinity but decreased water affinity.
+> (Tag:air)(Tag:air+)(Tag:avian)(Tag:perception+)(Tag:physical+)(Tag:race-change)Race Change - You are a half-avian hawk hybrid mixed with your own race. You have slightly enhanced physical abilities, senses, and heightened predatory instincts. You have retractable talons and wings fused into your arms, shoulder blades, or back. With training you suppress your avian traits. You possess increased wind affinity but decreased water affinity.
 
 **Decision**
 
@@ -10325,7 +10380,7 @@
 
 **Description**
 
-> Race Change - You are a Roc hybrid, mixing a giant elephant-eating hawk with your own race. You possess increased strength and durability, incredible but sensitive eyesight and hearing, and fearsome predatory instincts. You possess large, powerful wings fused to your arms or back, at least as strong as your arms, letting you fly and dive with great speed, plus retractable talons tougher than steel. You possess increased wind affinity but decreased water affinity.
+> (Tag:air)(Tag:air+)(Tag:defence+)(Tag:perception+)(Tag:race-change)(Tag:strength+)Race Change - You are a Roc hybrid, mixing a giant elephant-eating hawk with your own race. You possess increased strength and durability, incredible but sensitive eyesight and hearing, and fearsome predatory instincts. You possess large, powerful wings fused to your arms or back, at least as strong as your arms, letting you fly and dive with great speed, plus retractable talons tougher than steel. You possess increased wind affinity but decreased water affinity.
 
 **Decision**
 
@@ -10342,7 +10397,7 @@
 
 **Description**
 
-> Race Change - You are a Thunderbird hybrid, changer of the skies. You possess enhanced physical abilities with further enhanced agility and reflexes, plus greatly enhanced eyesight and hearing. Your wings easily fly at great speeds and flap to release electricity, and your tough, sharp talons crackle with lightning. You naturally change local weather — sunny, rain, hail, etc. — but it consumes a lot of energy. You possess increased wind and lightning affinity, but vulnerability to water and earth.
+> (Tag:agility+)(Tag:air)(Tag:air+)(Tag:avian)(Tag:electric)(Tag:electric+)(Tag:perception+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:reflex+)Race Change - You are a Thunderbird hybrid, changer of the skies. You possess enhanced physical abilities with further enhanced agility and reflexes, plus greatly enhanced eyesight and hearing. Your wings easily fly at great speeds and flap to release electricity, and your tough, sharp talons crackle with lightning. You naturally change local weather, sunny, rain, hail, etc., but it consumes a lot of energy. You possess increased wind and lightning affinity, but vulnerability to water and earth.
 
 **Decision**
 
@@ -10359,7 +10414,7 @@
 
 **Description**
 
-> Race Change - You are descended from a Grand Thunderbird, an ancient legendary master of weather and lightning. You possess a great physique with incredibly enhanced agility and reflexes, plus unmatched eyesight and hearing. Your wings easily fly at supersonic speeds, and your tough, sharp talons are formidable. You cloak yourself in and discharge electricity from your body. You naturally manipulate local weather — rain, open sky, clouds, even raining lightning. You possess increased wind and lightning affinity, but vulnerability to water and earth.
+> (Tag:agility+)(Tag:air)(Tag:air+)(Tag:avian)(Tag:electric)(Tag:electric+)(Tag:perception+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:reflex+)Race Change - You are descended from a Grand Thunderbird, an ancient legendary master of weather and lightning. You possess a great physique with incredibly enhanced agility and reflexes, plus unmatched eyesight and hearing. Your wings easily fly at supersonic speeds, and your tough, sharp talons are formidable. You cloak yourself in and discharge electricity from your body. You naturally manipulate local weather, rain, open sky, clouds, even raining lightning. You possess increased wind and lightning affinity, but vulnerability to water and earth.
 
 **Decision**
 
@@ -10376,7 +10431,7 @@
 
 **Description**
 
-> Race Change - You are a Child of Ziz, Primordial beast rival to Behemoth and Leviathan and ruler of the skies. You possess greatly enhanced physical and magical abilities, and you reveal and hide your true form at will, partially or fully becoming a titanic avian beast. You naturally manipulate weather at will — storms, blizzards, rain, hurricanes, tornadoes, etc. — plus greater lightning. All your weather-based abilities and spells are greatly enhanced. You greatly resist wind, ice, and electricity-based abilities. Your energy and health recovery are enhanced under open skies. You possess decreased water and earth affinity.
+> (Tag:air)(Tag:air+)(Tag:earth)(Tag:electric)(Tag:electric+)(Tag:energy-regeneration+)(Tag:health-regeneration+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)Race Change - You are a Child of Ziz, Primordial beast rival to Behemoth and Leviathan and ruler of the skies. You possess greatly enhanced physical and magical abilities, and you reveal and hide your true form at will, partially or fully becoming a titanic avian beast. You naturally manipulate weather at will, storms, blizzards, rain, hurricanes, tornadoes, etc., plus greater lightning. All your weather-based abilities and spells are greatly enhanced. You greatly resist wind, ice, and electricity-based abilities. Your energy and health recovery are enhanced under open skies. You possess decreased water and earth affinity.
 
 **Decision**
 
@@ -10393,7 +10448,7 @@
 
 **Description**
 
-> You receive the equivalent of 2x the daily minimum wage for whatever city/country you currently live in, deposited into your account or wallet every single day.
+> (Tag:rule)You receive the equivalent of 2x the daily minimum wage for whatever city/country you currently live in, deposited into your account or wallet every single day.
 
 **Decision**
 
@@ -10410,7 +10465,7 @@
 
 **Description**
 
-> You have awakened the Kyoi no Hado, the Surge of Mindless Intent, also called the Sacred Hado, letting you tap your own Ki reserves. It requires calmness, balance, resoluteness, and focus to draw power from your inner energy and soul. You reinforce strikes with it, protect your body from foreign influences, and shape it into wave-like surges offensively and defensively. Skilled enough users interact with souls. Practicing it increases your mental and spiritual defenses.
+> (Tag:martial)(Tag:power)(Tag:spirit)You have awakened the Kyoi no Hado, the Surge of Mindless Intent, also called the Sacred Hado, letting you tap your own Ki reserves. It requires calmness, balance, resoluteness, and focus to draw power from your inner energy and soul. You reinforce strikes with it, protect your body from foreign influences, and shape it into wave-like surges offensively and defensively. Skilled enough users interact with souls. Practicing it increases your mental and spiritual defenses.
 
 **Decision**
 
@@ -10427,7 +10482,7 @@
 
 **Description**
 
-> You have awakened the Satsui no Hado, the Surge of Killing Intent, also called the Dark Hado, letting you tap your inner Ki reserves. It requires tapping your animalistic bloodlust, rage, and murderous intent to manifest killing intent and draw inner energy through it. It slightly transforms you, enhancing physical strength, letting you imbue strikes with energy, and turning Ki into dark flame-like energy. Skilled enough users telekinetically control objects. The more you practice it, the stronger you grow, and the stronger your desire for conflict and conquest grows. Without control you may transform into an Oni, but you can tame it no matter how difficult.
+> (Tag:martial)(Tag:power)(Tag:spirit)You have awakened the Satsui no Hado, the Surge of Killing Intent, also called the Dark Hado, letting you tap your inner Ki reserves. It requires tapping your animalistic bloodlust, rage, and murderous intent to manifest killing intent and draw inner energy through it. It slightly transforms you, enhancing physical strength, letting you imbue strikes with energy, and turning Ki into dark flame-like energy. Skilled enough users telekinetically control objects. The more you practice it, the stronger you grow, and the stronger your desire for conflict and conquest grows. Without control you may transform into an Oni, but you can tame it no matter how difficult.
 
 **Decision**
 
@@ -10444,24 +10499,7 @@
 
 **Description**
 
-> You have great affinity with lizards, reptiles, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your reptilian affinity, regeneration-based effects, abilities, and spells applied to you are more potent.
-
-**Decision**
-
-- [ ] No change
-- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
-- [ ] Set source     (see **Proposed source** in responses.tsv)
-- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
-
-## 567. Canis Companion
-
-| Rarity | Tier | Source |
-|---|---|---|
-| 2.6 | Uncommon | Generic |
-
-**Description**
-
-> You have great affinity with dogs, canines, wolves, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your Canis affinity, your sense-based abilities and traits are more potent, and you control your own senses more easily.
+> (Tag:health-regeneration+)(Tag:social)You have great affinity with lizards, reptiles, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your reptilian affinity, regeneration-based effects, abilities, and spells applied to you are more potent.
 
 **Decision**
 
@@ -10478,7 +10516,7 @@
 
 **Description**
 
-> You have great affinity with insects, arachnids, crustaceans, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your arthropod affinity, you possess slightly increased durability, and your armor-based abilities and effects cost slightly less energy to use.
+> (Tag:defence+)(Tag:social)You have great affinity with insects, arachnids, crustaceans, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your arthropod affinity, you possess slightly increased durability, and your armor-based abilities and effects cost slightly less energy to use.
 
 **Decision**
 
@@ -10495,7 +10533,7 @@
 
 **Description**
 
-> You are a Warrior of Sunlight, praising the sun and devoting faith to it to receive power in return. You possess increased vitality. All your Lightning and Fire-based abilities are slightly more potent and carry traces of sunlight, further increasing potency against Undead and Dragons. Beings aligned with Sun and Light may favor you more.
+> (Tag:anti-dragon)(Tag:anti-undead)(Tag:electric+)(Tag:fire+)(Tag:vitality+)You are a Warrior of Sunlight, praising the sun and devoting faith to it to receive power in return. You possess increased vitality. All your Lightning and Fire-based abilities are slightly more potent and carry traces of sunlight, further increasing potency against Undead and Dragons. Beings aligned with Sun and Light may favor you more.
 
 **Decision**
 
@@ -10512,7 +10550,7 @@
 
 **Description**
 
-> You are a Gravelord Servant, servant of Nito, the first of the dead. You possess increased energy reserves, and your Necromancy and Soul-based abilities are more powerful. You possess greater affinity toward undead, and mindless wild undead do not treat you as an enemy unless provoked.
+> (Tag:necro+)(Tag:social)(Tag:spirit+)You are a Gravelord Servant, servant of Nito, the first of the dead. You possess increased energy reserves, and your Necromancy and Soul-based abilities are more powerful. You possess greater affinity toward undead, and mindless wild undead do not treat you as an enemy unless provoked.
 
 **Decision**
 
@@ -10529,7 +10567,7 @@
 
 **Description**
 
-> You are a Darkwraith, seeking to wield darkness and end light. Your physical abilities are slightly enhanced in darkness. All your Dark-based abilities and spells are more potent and inflict additional damage against Light-aligned beings.
+> (Tag:anti-light)(Tag:dark+)(Tag:physical+)You are a Darkwraith, seeking to wield darkness and end light. Your physical abilities are slightly enhanced in darkness. All your Dark-based abilities and spells are more potent and inflict additional damage against Light-aligned beings.
 
 **Decision**
 
@@ -10546,7 +10584,7 @@
 
 **Description**
 
-> You follow the Path of the Dragon, seeking to transcend life through Dragons' flesh. You offer Dragons' flesh to the Everlasting Dragons and imbue it into your own flesh, enhancing all physical stats relative to how strong its owner was compared to you and gaining minor draconic aspects. The more flesh you offer, the more draconic you become, potentially becoming an Everlasting Dragon (Legendary) yourself.
+> (Tag:draconic)(Tag:growth+)You follow the Path of the Dragon, seeking to transcend life through Dragons' flesh. You offer Dragons' flesh to the Everlasting Dragons and imbue it into your own flesh, enhancing all physical stats relative to how strong its owner was compared to you and gaining minor draconic aspects. The more flesh you offer, the more draconic you become, potentially becoming an Everlasting Dragon (Legendary) yourself.
 
 **Decision**
 
@@ -10563,7 +10601,7 @@
 
 **Description**
 
-> You can establish your own covenant. Those pledging themselves to your service and joining it acquire boons from you based on their contribution. The boons you grant are lesser copies of your traits and abilities, fueled by accumulated karma. Rarity depends on contribution level but never reaches the original's rarity. If they break your covenant's laws, their boons are instantly revoked.
+> (Tag:meta)You can establish your own covenant. Those pledging themselves to your service and joining it acquire boons from you based on their contribution. The boons you grant are lesser copies of your traits and abilities, fueled by accumulated karma. Rarity depends on contribution level but never reaches the original's rarity. If they break your covenant's laws, their boons are instantly revoked.
 
 **Decision**
 
@@ -10580,7 +10618,7 @@
 
 **Description**
 
-> You are a child of Pendragon, the destined rightful King and Dragon. Sovereignty runs in your blood: you more strongly resist negative mental conditions and possess incredible talent for ruling-related matters such as litigation, management, military, economics, etc., plus increased natural charisma. As the child of one recognized as a Dragon, you have increased physical abilities, larger energy reserves, and faster energy recovery. You also have incredible talent with blades from Excalibur's wielder's blood, especially magical swords.
+> (Tag:bloodline)(Tag:draconic)(Tag:energy-regeneration+)(Tag:martial)(Tag:maximum-energy+)(Tag:physical+)(Tag:social)(Tag:talent)You are a child of Pendragon, the destined rightful King and Dragon. Sovereignty runs in your blood: you more strongly resist negative mental conditions and possess incredible talent for ruling-related matters such as litigation, management, military, economics, etc., plus increased natural charisma. As the child of one recognized as a Dragon, you have increased physical abilities, larger energy reserves, and faster energy recovery. You also have incredible talent with blades from Excalibur's wielder's blood, especially magical swords.
 
 **Decision**
 
@@ -10597,7 +10635,7 @@
 
 **Description**
 
-> Your head freely detaches from your neck/torso while staying connected in a higher dimension, so you still eat, speak, and breathe. Decapitation is useless against you.
+> (Tag:body)(Tag:survival)(Tag:undead)Your head freely detaches from your neck/torso while staying connected in a higher dimension, so you still eat, speak, and breathe. Decapitation is useless against you.
 
 **Decision**
 
@@ -10614,7 +10652,7 @@
 
 **Description**
 
-> (Gacha) You grant copies of your own abilities and traits to others by burning a ticket equal in value to what you grant: bronze grants common, silver grants uncommon, gold grants rare, etc. Higher tickets grant double the replicants of the previous rarity: silver = 2x common, gold = 4x common, etc.
+> (Tag:meta)(Gacha) You grant copies of your own abilities and traits to others by burning a ticket equal in value to what you grant: bronze grants common, silver grants uncommon, gold grants rare, etc. Higher tickets grant double the replicants of the previous rarity: silver = 2x common, gold = 4x common, etc.
 
 **Decision**
 
@@ -10631,7 +10669,7 @@
 
 **Description**
 
-> Anything you create cannot be used without your permission, acting as a blacklist and whitelist. Even if you leave your spaceship with keys in, no one can pilot it. Potions you leave act like water for anyone else using them.
+> (Tag:meta)(Tag:rule)Anything you create cannot be used without your permission, acting as a blacklist and whitelist. Even if you leave your spaceship with keys in, no one can pilot it. Potions you leave act like water for anyone else using them.
 
 **Decision**
 
@@ -10648,7 +10686,7 @@
 
 **Description**
 
-> "Fear grips your heart." The more fear someone feels toward you, the weaker they become and the lower their energy output drops. If someone feels completely helpless toward you and their will to fight is fully crushed, their abilities drop to negligible levels.
+> (Tag:social)"Fear grips your heart." The more fear someone feels toward you, the weaker they become and the lower their energy output drops. If someone feels completely helpless toward you and their will to fight is fully crushed, their abilities drop to negligible levels.
 
 **Decision**
 
@@ -10665,7 +10703,7 @@
 
 **Description**
 
-> Your blood functions as high-quality fuel, substitutable for basically any fuel a machine takes, such as gasoline, diesel, electricity, etc.
+> (Tag:blood)(Tag:body)(Tag:tech)Your blood functions as high-quality fuel, substitutable for basically any fuel a machine takes, such as gasoline, diesel, electricity, etc.
 
 **Decision**
 
@@ -10682,7 +10720,7 @@
 
 **Description**
 
-> You eat books and written text, imprinting all knowledge they contain into your mind and perfectly memorizing it.
+> (Tag:mind)You eat books and written text, imprinting all knowledge they contain into your mind and perfectly memorizing it.
 
 **Decision**
 
@@ -10699,7 +10737,7 @@
 
 **Description**
 
-> "Not to be confused with a maid of fire." You temper your body with flames, increasing your physical abilities proportionally to the intensity and potency of the flames burning you. You must endure exposure for extended periods to temper properly. This grants no fire resistance or immunity, and the higher your flame resistance, the less effective it is.
+> (Tag:fire)(Tag:growth+)"Not to be confused with a maid of fire." You temper your body with flames, increasing your physical abilities proportionally to the intensity and potency of the flames burning you. You must endure exposure for extended periods to temper properly. This grants no fire resistance or immunity, and the higher your flame resistance, the less effective it is.
 
 **Decision**
 
@@ -10716,7 +10754,7 @@
 
 **Description**
 
-> Your body and soul are incredible vessels, perfectly suited to sealing things inside and containing them. Whatever you seal inside or absorb finds it far harder to rebel and break out. You also fit much more into your vessel.
+> (Tag:body)(Tag:spirit)Your body and soul are incredible vessels, perfectly suited to sealing things inside and containing them. Whatever you seal inside or absorb finds it far harder to rebel and break out. You also fit much more into your vessel.
 
 **Decision**
 
@@ -10733,7 +10771,7 @@
 
 **Description**
 
-> Your soul has ascended to a Prime Soul, grown so powerful it needs no body to exist. Your soul affinity is massively enhanced, and you massively resist all soul, mind, and existence-targeting abilities. If you die, you shed your Husk and continue existing in Prime Soul form.
+> (Tag:mental-resistance+)(Tag:meta-resistance+)(Tag:spirit)(Tag:spirit+)(Tag:spirit-resistance+)(Tag:survival)Your soul has ascended to a Prime Soul, grown so powerful it needs no body to exist. Your soul affinity is massively enhanced, and you massively resist all soul, mind, and existence-targeting abilities. If you die, you shed your Husk and continue existing in Prime Soul form.
 
 **Decision**
 
@@ -10750,7 +10788,7 @@
 
 **Description**
 
-> Your fists are like Mythril, considerably augmenting the power of all your unarmed strikes and enhancing all fist-based abilities.
+> (Tag:martial)(Tag:martial+)Your fists are like Mythril, considerably augmenting the power of all your unarmed strikes and enhancing all fist-based abilities.
 
 **Decision**
 
@@ -10767,7 +10805,7 @@
 
 **Description**
 
-> Your fists are like Adamantine, unbreakable and incredibly powerful and durable. The power of all your unarmed strikes is greatly enhanced, and all fist-based abilities are easier to use and more powerful.
+> (Tag:martial)(Tag:martial+)Your fists are like Adamantine, unbreakable and incredibly powerful and durable. The power of all your unarmed strikes is greatly enhanced, and all fist-based abilities are easier to use and more powerful.
 
 **Decision**
 
@@ -10784,7 +10822,7 @@
 
 **Description**
 
-> You are a Regenerator, an advanced bioengineered human with superhuman physical performance and incredible natural regeneration that heals bullet wounds in seconds without fundamentally changing your humanity. Lethal wounds are still lethal, so exercise caution.
+> (Tag:healing)(Tag:health-regeneration+)(Tag:physical+)(Tag:race-change)(Tag:survival)You are a Regenerator, an advanced bioengineered human with superhuman physical performance and incredible natural regeneration that heals bullet wounds in seconds without fundamentally changing your humanity. Lethal wounds are still lethal, so exercise caution.
 
 **Decision**
 
@@ -10801,7 +10839,7 @@
 
 **Description**
 
-> You fall under Santa's clause: people do not mind you entering places you should not be or lingering where you are not meant to be. They still get offended and angry if you cause a disturbance or do something offensive.
+> (Tag:rule)You fall under Santa's clause: people do not mind you entering places you should not be or lingering where you are not meant to be. They still get offended and angry if you cause a disturbance or do something offensive.
 
 **Decision**
 
@@ -10818,7 +10856,7 @@
 
 **Description**
 
-> (Nsfw) Sexual activity functions as a very efficient, comprehensive full-body workout for you. Its effects apply only after the activity ends and scale with its effectiveness.
+> (Tag:growth+)(Tag:nsfw)(Nsfw) Sexual activity functions as a very efficient, comprehensive full-body workout for you. Its effects apply only after the activity ends and scale with its effectiveness.
 
 **Decision**
 
@@ -10835,7 +10873,7 @@
 
 **Description**
 
-> You are blessed by Atlas, bearer of the world on his shoulders. You are extremely resilient toward all hardship: even under extreme agony, poison, bleeding out, or incomprehensible exhaustion, you still perform at your maximum.
+> (Tag:mental-resistance+)(Tag:mind)You are blessed by Atlas, bearer of the world on his shoulders. You are extremely resilient toward all hardship: even under extreme agony, poison, bleeding out, or incomprehensible exhaustion, you still perform at your maximum.
 
 **Decision**
 
@@ -10852,7 +10890,7 @@
 
 **Description**
 
-> You are a sadist who enjoys others' pain and suffering. Whenever you inflict damage on a target, your Health and Energy recovery speeds increase for a short time.
+> (Tag:energy-recovery)(Tag:health-recovery)You are a sadist who enjoys others' pain and suffering. Whenever you inflict damage on a target, your Health and Energy recovery speeds increase for a short time.
 
 **Decision**
 
@@ -10869,7 +10907,7 @@
 
 **Description**
 
-> Your hope literally fuels you: the more hope and determination you hold, the faster your energy and vitality regenerate, and as long as you hold hope, you cannot be killed. Whenever someone places their hopes in you, that hope converts into energy and vitality to fuel you.
+> (Tag:energy-recovery)(Tag:energy-regeneration+)(Tag:health-recovery)(Tag:health-regeneration+)(Tag:survival)Your hope literally fuels you: the more hope and determination you hold, the faster your energy and vitality regenerate, and as long as you hold hope, you cannot be killed. Whenever someone places their hopes in you, that hope converts into energy and vitality to fuel you.
 
 **Decision**
 
@@ -10886,7 +10924,7 @@
 
 **Description**
 
-> (Nsfw) You are the CEO of Sex, chosen by sex. It is conceptually impossible for you to be an unsatisfying partner, no matter who you face. You tell someone's kinks and preferred partners at a glance, and all your sexual actions are greatly enhanced. You finger the earth to spurt a geyser and thrust into the ocean to let the waves carry you where you need to be.
+> (Tag:nsfw)(Tag:power)(Tag:rule)(Nsfw) You are the CEO of Sex, chosen by sex. It is conceptually impossible for you to be an unsatisfying partner, no matter who you face. You tell someone's kinks and preferred partners at a glance, and all your sexual actions are greatly enhanced. You finger the earth to spurt a geyser and thrust into the ocean to let the waves carry you where you need to be.
 
 **Flagged in reports**
 
@@ -10907,7 +10945,7 @@
 
 **Description**
 
-> You are a novice firestarter, slightly more resistant to heat and fire-based effects, and your fire-based abilities and spells are slightly more efficient.
+> (Tag:fire)(Tag:fire+)You are a novice firestarter, slightly more resistant to heat and fire-based effects, and your fire-based abilities and spells are slightly more efficient.
 
 **Decision**
 
@@ -10924,7 +10962,7 @@
 
 **Description**
 
-> You burn with will: you are more resistant to heat and fire-based effects, while your fire-based abilities and spells are somewhat more efficient.
+> (Tag:fire)(Tag:fire+)You burn with will: you are more resistant to heat and fire-based effects, while your fire-based abilities and spells are somewhat more efficient.
 
 **Decision**
 
@@ -10941,7 +10979,7 @@
 
 **Description**
 
-> You are a novice electrician-to-be, slightly more resistant to electricity-based effects, and your electricity-based abilities and spells are slightly more efficient.
+> (Tag:electric+)You are a novice electrician-to-be, slightly more resistant to electricity-based effects, and your electricity-based abilities and spells are slightly more efficient.
 
 **Decision**
 
@@ -10958,7 +10996,7 @@
 
 **Description**
 
-> You catch lightning itself: you are somewhat more resistant to electricity-based effects, and your electricity-based abilities and spells are somewhat more efficient.
+> (Tag:electric)(Tag:electric+)You catch lightning itself: you are somewhat more resistant to electricity-based effects, and your electricity-based abilities and spells are somewhat more efficient.
 
 **Decision**
 
@@ -10975,7 +11013,7 @@
 
 **Description**
 
-> You love water and cannot get enough of it. When water touches your skin, you slowly absorb it through osmosis, accelerating your energy recovery, even more so when the water is energy-rich.
+> (Tag:energy-regeneration+)You love water and cannot get enough of it. When water touches your skin, you slowly absorb it through osmosis, accelerating your energy recovery, even more so when the water is energy-rich.
 
 **Decision**
 
@@ -10992,7 +11030,7 @@
 
 **Description**
 
-> Your body carries far more virtual mass in combat than it appears to, so hits push you back far less and your physical attacks hit harder without affecting your mobility.
+> (Tag:martial)Your body carries far more virtual mass in combat than it appears to, so hits push you back far less and your physical attacks hit harder without affecting your mobility.
 
 **Decision**
 
@@ -11009,7 +11047,7 @@
 
 **Description**
 
-> Your body carries far more virtual mass in combat than it appears to, making you incredibly hard to move and putting great power behind every move without affecting your mobility.
+> (Tag:martial)Your body carries far more virtual mass in combat than it appears to, making you incredibly hard to move and putting great power behind every move without affecting your mobility.
 
 **Decision**
 
@@ -11026,7 +11064,7 @@
 
 **Description**
 
-> Your body carries far more virtual mass in combat than it appears to, like a giant's stature in a man's body, making you incredibly difficult to move while putting immense power behind your strikes.
+> (Tag:martial)Your body carries far more virtual mass in combat than it appears to, like a giant's stature in a man's body, making you incredibly difficult to move while putting immense power behind your strikes.
 
 **Decision**
 
@@ -11043,7 +11081,7 @@
 
 **Description**
 
-> The potency of the weakest ability you have slotted in is enhanced proportionally to its rarity difference with the strongest ability you have slotted in.
+> (Tag:meta)The potency of the weakest ability you have slotted in is enhanced proportionally to its rarity difference with the strongest ability you have slotted in.
 
 **Decision**
 
@@ -11060,7 +11098,7 @@
 
 **Description**
 
-> The more injured or closer to death you are, the more powerful your healing abilities and spells become. If you have no healing abilities or spells, you temporarily gain Novice Medicine up to Expert Medicine depending on how injured you are.
+> (Tag:recovery+)The more injured or closer to death you are, the more powerful your healing abilities and spells become. If you have no healing abilities or spells, you temporarily gain Novice Medicine up to Expert Medicine depending on how injured you are.
 
 **Decision**
 
@@ -11077,7 +11115,7 @@
 
 **Description**
 
-> You are a natural swimmer, slightly more resistant to water and sea-based effects, and your water-based abilities and spells are slightly more efficient.
+> (Tag:water)(Tag:water+)(Tag:water-resistance+)You are a natural swimmer, slightly more resistant to water and sea-based effects, and your water-based abilities and spells are slightly more efficient.
 
 **Decision**
 
@@ -11094,7 +11132,7 @@
 
 **Description**
 
-> You are a friend to all mice, rats, and mouse-kind, with greatly increased affinity for them. Lesser rodents are automatically friendly toward you: mice may clean your floors, or rats may bring you shiny finds.
+> (Tag:social)You are a friend to all mice, rats, and mouse-kind, with greatly increased affinity for them. Lesser rodents are automatically friendly toward you: mice may clean your floors, or rats may bring you shiny finds.
 
 **Decision**
 
@@ -11111,7 +11149,7 @@
 
 **Description**
 
-> Your health is insured: whenever you are wounded, you are granted the exact money needed to pay a professional to treat your injuries or illnesses. Attempting insurance fraud may revoke this trait.
+> (Tag:rule)Your health is insured: whenever you are wounded, you are granted the exact money needed to pay a professional to treat your injuries or illnesses. Attempting insurance fraud may revoke this trait.
 
 **Decision**
 
@@ -11128,7 +11166,7 @@
 
 **Description**
 
-> You possess uncanny intuition for linking blows and keeping momentum when attacking. Once you land your first attack, you keep up pressure and chain attacks far more easily, exploiting the opening it creates.
+> (Tag:martial)(Tag:talent)You possess uncanny intuition for linking blows and keeping momentum when attacking. Once you land your first attack, you keep up pressure and chain attacks far more easily, exploiting the opening it creates.
 
 **Decision**
 
@@ -11145,7 +11183,7 @@
 
 **Description**
 
-> You are a vampire of the original Vampire's lineage: Dracula, Nosferatu, the No Life King. Besides massively increased physical abilities, you convert your body into Shadow Matter at will and shapeshift with it. By feeding on others' blood, you fully heal yourself and absorb their souls to use as familiars.
+> (Tag:dark)(Tag:health-recovery)(Tag:infernal)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:spirit)(Tag:vampiric)You are a vampire of the original Vampire's lineage: Dracula, Nosferatu, the No Life King. Besides massively increased physical abilities, you convert your body into Shadow Matter at will and shapeshift with it. By feeding on others' blood, you fully heal yourself and absorb their souls to use as familiars.
 
 **Decision**
 
@@ -11162,7 +11200,7 @@
 
 **Description**
 
-> Against opponents already greatly weaker than you, you possess increased physical stats and your abilities cost less energy.
+> (Tag:physical+)(Tag:power+)Against opponents already greatly weaker than you, you possess increased physical stats and your abilities cost less energy.
 
 **Decision**
 
@@ -11179,7 +11217,7 @@
 
 **Description**
 
-> (Tech) No machine takes your job or life. Whenever you face an opponent relying on high-level technology, you gain augmented reflexes, comprehension, and combat instincts against them, and attacks from high-technology constructs are less effective against you.
+> (Tag:anti-tech)(Tag:tech)(Tech) No machine takes your job or life. Whenever you face an opponent relying on high-level technology, you gain augmented reflexes, comprehension, and combat instincts against them, and attacks from high-technology constructs are less effective against you.
 
 **Decision**
 
@@ -11196,7 +11234,7 @@
 
 **Description**
 
-> (Tech) You are the bane of Man and Machine. Against a high-technology target, all your abilities are greatly augmented and you gain massively increased combat instincts. You massively resist any effect from high technology, to the point a railgun hits like a slingshot. These effects amplify further if your opponent is an artificial high-tech lifeform.
+> (Tag:anti-tech)(Tag:tech)(Tech) You are the bane of Man and Machine. Against a high-technology target, all your abilities are greatly augmented and you gain massively increased combat instincts. You massively resist any effect from high technology, to the point a railgun hits like a slingshot. These effects amplify further if your opponent is an artificial high-tech lifeform.
 
 **Decision**
 
@@ -11213,7 +11251,7 @@
 
 **Description**
 
-> You have a style meter: the more stylishly you fight, the faster you regenerate Vitality and Energy, up to 3x faster atop all multipliers, provided you stay stylish enough during the fight.
+> (Tag:energy-regeneration+)(Tag:health-regeneration+)You have a style meter: the more stylishly you fight, the faster you regenerate Vitality and Energy, up to 3x faster atop all multipliers, provided you stay stylish enough during the fight.
 
 **Decision**
 
@@ -11230,7 +11268,7 @@
 
 **Description**
 
-> Whenever a target damages you, all your bodily fluids — blood, spit, sweat, etc. — act as acid toward them, with potency scaling with your physical stats.
+> (Tag:poison)Whenever a target damages you, all your bodily fluids, blood, spit, sweat, etc., act as acid toward them, with potency scaling with your physical stats.
 
 **Decision**
 
@@ -11247,7 +11285,7 @@
 
 **Description**
 
-> You are immune to all addictive effects: you can use hard drugs, cigarettes, alcohol, venom, mentats, psycho, black lace, etc. every other day and drop them instantly without withdrawal or addiction symptoms.
+> (Tag:poison)(Tag:poison-resistance+)You are immune to all addictive effects: you can use hard drugs, cigarettes, alcohol, venom, mentats, psycho, black lace, etc. every other day and drop them instantly without withdrawal or addiction symptoms.
 
 **Decision**
 
@@ -11264,7 +11302,7 @@
 
 **Description**
 
-> Your genetics are highly variable: you toggle racial traits at will, either returning to your original race or becoming 100% of another race trait you own, and back.
+> (Tag:meta)Your genetics are highly variable: you toggle racial traits at will, either returning to your original race or becoming 100% of another race trait you own, and back.
 
 **Flagged in reports**
 
@@ -11277,7 +11315,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 615. Firebender
+## 615. Firebending
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -11285,7 +11323,7 @@
 
 **Description**
 
-> You have natural talent as a Firebender, naturally producing and bending fire. Its potency depends on your natural attunement, martial-arts skill, and energy levels. Skilled enough users generate and direct electricity. Potency follows the sun: weaker at night, stronger by day, unusable during an eclipse.
+> (Tag:electric)You have natural talent as a Firebender, naturally producing and bending fire. Its potency depends on your natural attunement, martial-arts skill, and energy levels. Skilled enough users generate and direct electricity. Potency follows the sun: weaker at night, stronger by day, unusable during an eclipse.
 
 **Decision**
 
@@ -11302,7 +11340,7 @@
 
 **Description**
 
-> You have natural talent as an Earthbender, bending and controlling Earth. Its potency scales with your attunement to Earth, martial-arts skill, and energy levels. Skilled enough users sense Earth through tremors and manipulate impure metals and lava.
+> (Tag:earth)You have natural talent as an Earthbender, bending and controlling Earth. Its potency scales with your attunement to Earth, martial-arts skill, and energy levels. Skilled enough users sense Earth through tremors and manipulate impure metals and lava.
 
 **Decision**
 
@@ -11319,7 +11357,7 @@
 
 **Description**
 
-> You have natural talent as a Waterbender, bending and controlling Water. Its potency scales with your attunement to Water, martial-arts skill and finesse, and energy levels. Skilled enough Waterbenders transform water into ice and heal wounds with bending, and some bend the blood of those weaker than them. Potency follows the moon: strongest at night and full moon, weaker by day.
+> (Tag:healing)You have natural talent as a Waterbender, bending and controlling Water. Its potency scales with your attunement to Water, martial-arts skill and finesse, and energy levels. Skilled enough Waterbenders transform water into ice and heal wounds with bending, and some bend the blood of those weaker than them. Potency follows the moon: strongest at night and full moon, weaker by day.
 
 **Decision**
 
@@ -11353,7 +11391,7 @@
 
 **Description**
 
-> (Tech) Whenever you use machinery or sufficiently complex technology, it develops hypertrophy. After use, letting it rest or repairing it makes it slightly more robust and powerful. Slow and steady wins the race.
+> (Tag:growth+)(Tag:tech)(Tech) Whenever you use machinery or sufficiently complex technology, it develops hypertrophy. After use, letting it rest or repairing it makes it slightly more robust and powerful. Slow and steady wins the race.
 
 **Decision**
 
@@ -11370,7 +11408,7 @@
 
 **Description**
 
-> All items you use grow stronger over time through rigorous use and wear: letting an item rest or repairing it after great use makes it slightly more robust and powerful. Slow and steady wins the race.
+> (Tag:growth+)(Tag:tech)All items you use grow stronger over time through rigorous use and wear: letting an item rest or repairing it after great use makes it slightly more robust and powerful. Slow and steady wins the race.
 
 **Decision**
 
@@ -11387,7 +11425,7 @@
 
 **Description**
 
-> Your nose is scarily good, impossibly accurate and precise. You discern people by smell and sniff out emotions, intent, and just about anything smell can sense.
+> (Tag:perception+)Your nose is scarily good, impossibly accurate and precise. You discern people by smell and sniff out emotions, intent, and just about anything smell can sense.
 
 **Decision**
 
@@ -11404,7 +11442,7 @@
 
 **Description**
 
-> You possess an exceptional set of lungs: tougher, more flexible, and far better at processing air, delivering energy to your body and oxygen to your blood more easily.
+> (Tag:body)(Tag:energy-regeneration+)You possess an exceptional set of lungs: tougher, more flexible, and far better at processing air, delivering energy to your body and oxygen to your blood more easily.
 
 **Decision**
 
@@ -11421,7 +11459,7 @@
 
 **Description**
 
-> Your lungs harmonize with the surrounding world with every breath. You take in environmental energy and process it in your body to enhance your energy and vitality recovery.
+> (Tag:body)(Tag:energy-regeneration+)(Tag:health-regeneration+)(Tag:nature)Your lungs harmonize with the surrounding world with every breath. You take in environmental energy and process it in your body to enhance your energy and vitality recovery.
 
 **Decision**
 
@@ -11438,7 +11476,7 @@
 
 **Description**
 
-> You possess Fairy lungs: every breath energizes you, especially in high-energy areas. Breathing imbues your blood with environmental energy, increasing your Vitality and Energy recovery speeds and physical performance based on energy density.
+> (Tag:body)(Tag:energy-regeneration+)(Tag:fae)(Tag:health-regeneration+)(Tag:physical+)You possess Fairy lungs: every breath energizes you, especially in high-energy areas. Breathing imbues your blood with environmental energy, increasing your Vitality and Energy recovery speeds and physical performance based on energy density.
 
 **Decision**
 
@@ -11455,7 +11493,7 @@
 
 **Description**
 
-> Your heart is far tougher yet more efficient, beating far less while pumping far more effectively. Anyone stabbing your heart as a weak spot will fail, as it is as tough as your bones.
+> (Tag:body)(Tag:survival)Your heart is far tougher yet more efficient, beating far less while pumping far more effectively. Anyone stabbing your heart as a weak spot will fail, as it is as tough as your bones.
 
 **Decision**
 
@@ -11472,7 +11510,7 @@
 
 **Description**
 
-> Your spine is incredibly durable and well-built, far harder to break or injure than your other bones, letting you exert more strength without fearing a weak spine. Even if utterly shattered, it heals properly and far faster.
+> (Tag:body)(Tag:survival)Your spine is incredibly durable and well-built, far harder to break or injure than your other bones, letting you exert more strength without fearing a weak spine. Even if utterly shattered, it heals properly and far faster.
 
 **Decision**
 
@@ -11489,7 +11527,7 @@
 
 **Description**
 
-> You have 2 extra ability slots.
+> (Tag:meta)You have 2 extra ability slots.
 
 **Decision**
 
@@ -11506,7 +11544,7 @@
 
 **Description**
 
-> Your Ice and Fire-based abilities gain output based on environmental temperature: the colder it is, the easier Ice-based abilities are to use and resist, while the hotter it is, the easier Fire-based abilities are to use and resist.
+> (Tag:fire+)(Tag:ice+)Your Ice and Fire-based abilities gain output based on environmental temperature: the colder it is, the easier Ice-based abilities are to use and resist, while the hotter it is, the easier Fire-based abilities are to use and resist.
 
 **Decision**
 
@@ -11523,7 +11561,7 @@
 
 **Description**
 
-> You possess the eye of the Tiger: the willingness to push forward, break your body training, and shed no tears. You train exceptionally well, pushing your limits more easily and recovering from training far faster.
+> (Tag:growth+)You possess the eye of the Tiger: the willingness to push forward, break your body training, and shed no tears. You train exceptionally well, pushing your limits more easily and recovering from training far faster.
 
 **Decision**
 
@@ -11540,7 +11578,7 @@
 
 **Description**
 
-> Whenever you fight as the defender in an area you own, all your physical stats are enhanced and your abilities cost less energy to use. This extends to all your allies in the same area.
+> (Tag:physical+)(Tag:power+)(Tag:rule)Whenever you fight as the defender in an area you own, all your physical stats are enhanced and your abilities cost less energy to use. This extends to all your allies in the same area.
 
 **Decision**
 
@@ -11557,7 +11595,7 @@
 
 **Description**
 
-> Your eyes are the fabled Six Eyes of the Gojo Clan, passively granting extreme visual prowess that sees through physical obstacles and detects all forms of energy extremely well. They act like a supercomputer for processing energy and information, granting incredible efficiency with abilities and letting you passively perform incredibly taxing calculations. They are taxing to use, so you may need to cover your eyes to rest them from the information they passively process.
+> (Tag:mind+)(Tag:perception+)(Tag:power+)Your eyes are the fabled Six Eyes of the Gojo Clan, passively granting extreme visual prowess that sees through physical obstacles and detects all forms of energy extremely well. They act like a supercomputer for processing energy and information, granting incredible efficiency with abilities and letting you passively perform incredibly taxing calculations. They are taxing to use, so you may need to cover your eyes to rest them from the information they passively process.
 
 **Decision**
 
@@ -11574,7 +11612,7 @@
 
 **Description**
 
-> Your blood is infused with garlic, so the next vampire that bites you will really regret it.
+> (Tag:blood)Your blood is infused with garlic, so the next vampire that bites you will really regret it.
 
 **Decision**
 
@@ -11591,7 +11629,7 @@
 
 **Description**
 
-> (Tree)(Meta:ticket-bonus:10) Every ticket you are awarded grants 10% extra points. Stacks additively with other Prosperity traits.
+> (Tag:meta)(Tree)(Meta:ticket-bonus:10) Every ticket you are awarded grants 10% extra points. Stacks additively with other Prosperity traits.
 
 **Decision**
 
@@ -11608,7 +11646,7 @@
 
 **Description**
 
-> (Tree)(Meta:ticket-bonus:20) Every ticket you are awarded grants 20% extra points. Stacks additively with other Prosperity traits.
+> (Tag:meta)(Tree)(Meta:ticket-bonus:20) Every ticket you are awarded grants 20% extra points. Stacks additively with other Prosperity traits.
 
 **Decision**
 
@@ -11625,7 +11663,7 @@
 
 **Description**
 
-> (Tree)(Meta:ticket-bonus:30) Every ticket you are awarded grants 30% extra points. Stacks additively with other Prosperity traits.
+> (Tag:meta)(Tree)(Meta:ticket-bonus:30) Every ticket you are awarded grants 30% extra points. Stacks additively with other Prosperity traits.
 
 **Decision**
 
@@ -11642,7 +11680,7 @@
 
 **Description**
 
-> (Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.
+> (Tag:meta)(Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.
 
 **Decision**
 
@@ -11659,7 +11697,7 @@
 
 **Description**
 
-> (Tree)(Meta:root-pact) Nodes directly connected to the Origin root unlock at half points cost.
+> (Tag:meta)(Tag:nature)(Tree)(Meta:root-pact) Nodes within two connections of the Origin root unlock for no core, but cost ten times the points.
 
 **Decision**
 
@@ -11710,7 +11748,7 @@
 
 **Description**
 
-> Your mind touches the Shroud; latent psychic potential hums beneath every thought.
+> (Tag:alter)(Tag:mental)(Tag:mind)Your mind touches the Shroud; latent psychic potential hums beneath every thought.
 
 **Decision**
 
@@ -11727,7 +11765,7 @@
 
 **Description**
 
-> You are living rock: silicon flesh that shrugs off hunger and laughs at vacuum.
+> (Tag:earth)You are living rock: silicon flesh that shrugs off hunger and laughs at vacuum.
 
 **Decision**
 
@@ -11761,7 +11799,7 @@
 
 **Description**
 
-> Born to water worlds; you swim, dive, and work the seas better than any landwalker.
+> (Tag:water)Born to water worlds; you swim, dive, and work the seas better than any landwalker.
 
 **Decision**
 
@@ -11778,7 +11816,7 @@
 
 **Description**
 
-> Your mood barely moves; break risks, pain, and horror slide off a steady mind.
+> (Tag:earth)Your mood barely moves; break risks, pain, and horror slide off a steady mind.
 
 **Decision**
 
@@ -11880,7 +11918,7 @@
 
 **Description**
 
-> Intuitively read any road network and know exactly which interchange untangles it.
+> (Tag:tech)Intuitively read any road network and know exactly which interchange untangles it.
 
 **Decision**
 
@@ -11914,7 +11952,7 @@
 
 **Description**
 
-> The rare spark that lets a mage planeswalk between worlds; it ignites in moments of crisis.
+> (Tag:electric)The rare spark that lets a mage planeswalk between worlds; it ignites in moments of crisis.
 
 **Decision**
 
@@ -11948,7 +11986,7 @@
 
 **Description**
 
-> Bonded with Vertumna's alien Glow, a symbiotic light that shares its strange senses.
+> (Tag:light)Bonded with Vertumna's alien Glow, a symbiotic light living in you that lets you see in darkness and sense the presence, health, and mood of living things nearby, and occasionally nudges you toward what it wants.
 
 **Decision**
 
@@ -11965,7 +12003,7 @@
 
 **Description**
 
-> System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
+> (Tag:nature)System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
 
 **Decision**
 
@@ -11974,7 +12012,7 @@
 - [ ] Set source     (see **Proposed source** in responses.tsv)
 - [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
 
-## 656. Hexagonal Skill Grid
+## 656. Hexagonal Slots
 
 | Rarity | Tier | Source |
 |---|---|---|
@@ -11982,7 +12020,7 @@
 
 **Description**
 
-> Your abilities arrange on a hexagonal grid, triggering off coin flips in combo chains.
+> (Tag:magic)(Tag:meta)Your abilities no longer compete for a handful of slots: every ability you own becomes a node on a hexagonal grid that replaces your ability slots entirely. Four fixed nodes sit on the grid, one for each way a fight can turn, winning a flip, losing a flip, taking damage and dealing damage, and whenever one of them fires it also activates every node sharing an edge with it. You may flip a coin at any moment to set the flip nodes off yourself, though every flip costs you energy. Your abilities take the free nodes: each may activate once per battle per point of its rarity, rounded up, and cannot be moved again while a battle is running. For every five abilities you own you may mark one ability node so that it too activates its neighbours when it activates. A battle begins the moment you take or deal damage or flip a coin, and ends when fifteen minutes pass without any of those things.
 
 **Decision**
 
@@ -11999,7 +12037,7 @@
 
 **Description**
 
-> No matter the frost or the cost, you will keep the last city alive through the storm.
+> (Tag:survival)No matter the frost or the cost, you will keep the last city alive through the storm. Your leadership stretches food, fuel, and medicine several times further through ruthless rationing, keeps followers warm and obedient through deadly cold with far less shelter, and holds morale under hardship that would break anyone else, but every harsh decree breeds lasting resentment.
 
 **Decision**
 
@@ -12016,7 +12054,7 @@
 
 **Description**
 
-> For Rock and Stone! Morale, teamwork, and mineral yields all improve when shouted properly.
+> (Tag:earth)For Rock and Stone! Morale, teamwork, and mineral yields all improve when shouted properly.
 
 **Decision**
 
@@ -12033,7 +12071,7 @@
 
 **Description**
 
-> You hear zombies, alarms, and breaking windows from much further away.
+> (Tag:sense)You hear zombies, alarms, and breaking windows from much further away.
 
 **Decision**
 
@@ -12067,7 +12105,7 @@
 
 **Description**
 
-> Production must expand to meet the needs of the ever-expanding production. The factory grows.
+> You think in production lines: you design, build, and automate workshops, machines, and supply chains faster and better than any sane person should, and every operation you run keeps expanding its output, along with its bottomless appetite for raw materials and space.
 
 **Decision**
 
@@ -12101,7 +12139,7 @@
 
 **Description**
 
-> You simply never speak, and somehow this only makes everyone trust you more.
+> (Tag:stealth)You simply never speak, and somehow this only makes everyone trust you more.
 
 **Decision**
 
@@ -12119,6 +12157,958 @@
 **Description**
 
 > You have a vague arrangement with a reality-adjusting bureaucrat in a blue suit. Rise and shine.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 665. Miracle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.3 | Epic | MTG |
+
+**Description**
+
+> Once per day, your first activation of any ability is empowered and costs no energy.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 666. Death Defiance
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Hades |
+
+**Description**
+
+> (Tag:necro)A killing blow against you instead restores you to half strength, once per day. Death keeps count, and it does not appreciate repeat performances.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 667. Pact of Punishment
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Hades |
+
+**Description**
+
+> Voluntarily shackle yourself with underworld conditions, harder foes, fewer boons, tighter timers, and fate pays out proportionally greater rewards. Lift conditions freely; rewards scale with what you currently bear.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 668. Fated Authority
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Hades |
+
+**Description**
+
+> (Tag:command)Once per day, force a reroll of any random outcome rolled for you and take the new result, for better or worse. Fate will not be moved twice on the same matter.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 669. God Mode
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Hades |
+
+**Description**
+
+> Every defeat tempers you against its cause, stacking resistance up to a firm cap. Dying deliberately still counts; the gods find it hilarious.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 670. Omega Moves
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | Hades 2 |
+
+**Description**
+
+> Charge any attack or technique with your energy for an empowered omega version: wider, harder, and hungrier. Overcharging past your limits burns you instead.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 671. Dhampir
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.8 | Elite | Generic |
+
+**Description**
+
+> (Tag:vampiric)Race Change - You are half-vampire: manageable blood hunger, sunlight that itches rather than kills, and no power over thralls. You keep the fangs, the pallor, and the dramatic entrances.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 672. Kitsune
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Generic |
+
+**Description**
+
+> (Tag:beastkin)(Tag:illusion)(Tag:illusion+)(Tag:maximum-energy+)(Tag:nature)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:spirit)Race Change - You are a nine-tailed fox spirit; tails mark power ranks, with foxfire and layered illusion growing stronger per tail.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 673. Dryad
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Generic |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are a tree-bound fey rooted to a bonded tree: bloom, root, and seasonal moods, empowered near your tree and diminished far from it.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 674. Gargoyle
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Generic |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are living stone by day and a winged hunter by night: near-invulnerable while perched motionless, ravenous once the sun sets.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 675. Time Lord
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 6.8 | Legendary | Doctor Who |
+
+**Description**
+
+> (Tag:time)Race Change - You are a Time Lord with limited regenerations: death becomes a new body instead, with a new face and a reshuffled temperament. Regenerations spent do not return.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 676. Yautja Hunter
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Predator |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are a Yautja trophy hunter with thermal vision and cloaking affinity, bound by a hard honor code around worthy prey.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 677. Krogan Battlemaster
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Mass Effect |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are a krogan battlemaster with redundant organs and blood rage, famously hard to kill and, thanks to the genophage, famously hard to make more of.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 678. T-800
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.2 | Epic | Terminator |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are living tissue over a hyperalloy endoskeleton: no pain, no fear, no stopping, plus a power cell with opinions.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 679. Fremen
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.2 | Elite | Dune |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are Fremen of the deep desert: moisture discipline, stillsuit synergy, and the art of walking without rhythm.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 680. Furyan
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Riddick |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are Furyan: eyeshine that turns darkness transparent, rage-fueled resilience, and an affinity with animals.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 681. Belter
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.8 | Rare | The Expanse |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are a Belter with elongated low-g physiology and stellar navigation intuition, and bones that go brittle the moment real gravity shows up.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 682. Na'vi
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | James Cameron's Avatar |
+
+**Description**
+
+> (Tag:race-change)Race Change - You are Na'vi: nine feet of blue muscle and bone with a neural queue that bonds with beasts and the world-mind alike.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 683. Redshirt
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.6 | Trash | Star Trek |
+
+**Description**
+
+> Trouble finds you first on away missions. Senior officers keep forgetting your name.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 684. I'll Be Back
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | Terminator |
+
+**Description**
+
+> You always announce your return, and you always do. Eventually.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 685. They'll Remember That
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.4 | Trash | Telltale |
+
+**Description**
+
+> Non-player characters insist they will remember your choices. They won't.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 686. Arrow to the Knee
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.5 | Trash | Skyrim |
+
+**Description**
+
+> An old arrow wound aches in cold or damp weather. It is never plot-relevant.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 687. Mismatched Socks
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.1 | Trash | Generic |
+
+**Description**
+
+> Your socks never match, no matter how carefully you pair them. The dryer denies everything.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 688. Umbrella Loser
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> Every umbrella you own is lost within a month. Rain finds this hilarious.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 689. Password Forgetter
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> You forget every password except old expired ones.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 690. Chronically Early
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> You arrive exactly five minutes early to everything, and wait where everyone can see you.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 691. Aisle Seat
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.1 | Trash | Generic |
+
+**Description**
+
+> You always end up in the aisle seat, wanted or not. Climbing over you is everyone's cardio.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 692. Bedhead
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.1 | Trash | Generic |
+
+**Description**
+
+> Your hair wakes up styled by a storm. Combs have filed complaints.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 693. Cold Feet
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 0.2 | Trash | Generic |
+
+**Description**
+
+> Your feet are always cold, regardless of socks, weather, or magic. Thick socks help slightly.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 694. Tok'ra Blending
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | Stargate |
+
+**Description**
+
+> (Tag:healing)Share your body with a Tok'ra symbiote: two minds, one body, rapid healing, and centuries of stolen Goa'uld secrets. Veto rights are mutual and absolute.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 695. Cylon Resurrection
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Battlestar Galactica |
+
+**Description**
+
+> (Tag:life)(Tag:recovery)Death downloads you into a fresh identical body, memories intact to the moment of death. Needs a resurrection facility in range; without one, you stay dead like everyone else.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 696. Trial of the Grasses
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.6 | Epic | The Witcher |
+
+**Description**
+
+> (Tag:nature)Survive the mutagenic Trial: lightning reflexes, immunity to most poisons and diseases, decades of extended life, and sterility. Most subjects do not survive it; you did.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 697. Ebon Knight
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.8 | Epic | Warcraft |
+
+**Description**
+
+> Rise as a knight of the Ebon Blade: runeblade hunger, frost and unholy command, no need for rest or breath. Holy ground itches; paladins itch more.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 698. Infested
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.4 | Epic | StarCraft |
+
+**Description**
+
+> Zerg infestation creeps through you: fast regeneration, creep affinity, and hive whispers at the edge of hearing. Fire still works on you, fans included.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 699. On Fire
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Overwatch |
+
+**Description**
+
+> (Tag:fire)Perform well and you catch fire: burning bright, hitting harder, and announcing yourself to everyone. Slumps extinguish you; the flame remembers.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 700. What a Save!
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 5.0 | Epic | Rocket League |
+
+**Description**
+
+> Reflexively celebrate every rescue, block, and near-miss with genuine joy. Allies find it inspiring; opponents find it personal.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 701. Power of the Bear
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 4.6 | Elite | Baby Cat |
+
+**Description**
+
+> (Tag:enhancer)(Tag:power)While wearing a cheap costume you have supersoldier strength and toughness, but cannot make any visually impressive moves. You're not incompetent, just unimpressive as you walk up to your foes and knock them down.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 702. Mysterious Lover
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 3.4 | Rare | Baby Cat |
+
+**Description**
+
+> On a weekly basis you receive an extravagant thoughtful gift or a singing telegram. It might be from your landlord.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 703. Polyglot of Babel
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.0 | Divine | Generic |
+
+**Description**
+
+> You speak, read, and learn any language on first exposure, including dead, coded, magical, and machine tongues; you cannot forget one, and puns follow you everywhere.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 704. Econ of Scale
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.1 | Divine | Generic |
+
+**Description**
+
+> Any project you lead costs half the materials, time, and labor it should; the savings must go somewhere, and the universe collects in mishaps.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 705. Mythic Resonance
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.3 | Divine | Generic |
+
+**Description**
+
+> (Tag:sound)You rhyme with legend: stories told about you become slightly true (deeds exaggerated in your favor manifest as minor luck and skill), while slander withers unbelieved. You cannot start the stories yourself.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 706. Thunderhead Soul
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.5 | Divine | Generic |
+
+**Description**
+
+> (Tag:air)(Tag:electric)Your emotions charge the air: anger calls targeted lightning, joy clears skies for miles, grief brings rain. You are immune to weather and electricity; strong winds may still carry you off mid-tantrum.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 707. Death's Secretary
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.0 | Transcendent | Generic |
+
+**Description**
+
+> (Tag:spirit)You see, hear, and negotiate with the dead of any world as naturally as the living; the dead find you credible and trade favors for remembrance. You cannot compel them.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 708. Rootless
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.2 | Transcendent | Generic |
+
+**Description**
+
+> No place, oath, curse, or summoning can bind, track, or hold you; teleportation and banishment slide off. This includes Gacha Curses, which are therefore never offered to you, tickets and all, as well as magical restraints, compulsions, and enchantments laid upon you. The price: no blessing, ward, or healing not of your own making can find you either.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 709. Jinchuriki
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.9 | Divine | Naruto |
+
+**Description**
+
+> A tailed beast sealed within you: vast reserves, regeneration, and beast modes escalating with tails borrowed. Befriend it and it lends everything; fight it and you fight forever, inside and out.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 710. Quirk Singularity
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.8 | Divine | MHA |
+
+**Description**
+
+> (Tag:gravity)(Tag:space)Every power you hold grows roughly one tier-equivalent per year of active use, while control frays in matching step: leakage, misfires, and effects that overshoot their mark. Rest does not pause it; only passing a power on resets its clock (and starts someone else's).
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 711. God Ki
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.6 | Divine | Dragon Ball |
+
+**Description**
+
+> Divine ki: undetectable by mortal senses, its pressure alone buckles weak wills, calm hands wield planet-breaking output. Rage spends it double; serenity spends it clean.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 712. But It Refused
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.6 | Divine | Undertale |
+
+**Description**
+
+> Refuse one death per week: killing blows leave you standing at a single hit point instead. Fate notices repeat offenders.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 713. Voice of All Things
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.5 | Divine | One Piece |
+
+**Description**
+
+> (Tag:sound)Hear the voices of all things: objects, beasts, seas, and islands speak, and addressed directly they answer truthfully from their own experience, a sword's history, the sea's mood, what passed this strait. They know only what they have witnessed: nothing of the future, nothing beyond their ken. In crowded seas the chorus never shuts up.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 714. Mantle-Bearer
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.5 | Divine | Halo |
+
+**Description**
+
+> Forerunner geas of stewardship: absolute authority over Forerunner systems and instinct for galaxy-scale logistics, plus the crushing certainty that every extinction is your fault. The systems obey; the guilt is free.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 715. Untouchable
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.6 | Divine | Warhammer 40k |
+
+**Description**
+
+> You are a Blank: warp, psychic phenomena, and daemonic presences gutter out around you, and psykers sicken in your company. Daemons fear you on sight. Everyone else finds you subtly, inexplicably repellent.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 716. Beloved of the Worm
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.1 | Transcendent | Stellaris |
+
+**Description**
+
+> (Tag:time)The Worm loves you: time hiccups around you, once per day, reroll up to one minute just lived, keeping full memory of the undone version. And it WILL be fed: leave it living sacrifices at every landing, or it feeds on your crew and companions instead. What was, will be.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 717. Eywa Communion
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 9.0 | Transcendent | James Cameron's Avatar |
+
+**Description**
+
+> (Tag:nature)Linked to the planetary consciousness: all Pandoran-analog life answers your call and shares its senses with you. Unplug, and the silence aches for weeks.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 718. Mentat
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.7 | Divine | Dune |
+
+**Description**
+
+> A human computer: perfect computation, recall, and projection from available data, lips stained with sapho. You need the data first; garbage in, gospel out.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 719. Bene Gesserit Conditioning
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 8.8 | Divine | Dune |
+
+**Description**
+
+> Prana-bindu body control, truth-sense, and the Voice: pitch-perfect vocal command that the unprepared cannot disobey. Strong minds, the deaf, and recording-equipment operators are immune.
+
+**Decision**
+
+- [ ] No change
+- [ ] Adjust rarity  (see **Proposed value** in responses.tsv)
+- [ ] Set source     (see **Proposed source** in responses.tsv)
+- [ ] Reword / Remove / Other (see **Notes** in responses.tsv)
+
+## 720. Canis Companion
+
+| Rarity | Tier | Source |
+|---|---|---|
+| 2.6 | Uncommon | Generic |
+
+**Description**
+
+> (Tag:sense+)(Tag:social)You have great affinity with dogs, canines, wolves, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your Canis affinity, your sense-based abilities and traits are more potent, and you control your own senses more easily.
 
 **Decision**
 
