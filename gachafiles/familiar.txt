@@ -1172,3 +1172,25 @@
 #A big-eyed cyborg girl with a warrior's heart the size of a planet, fighting beside you as sworn family. Panzer Kunst master in a plasma-capable Berserker Body: she duels armies, shields the helpless, and picks fights with oppressors on sight. She runs on chocolate, loyalty, and righteous fury, in that order.
 587. ADA, 8.4, Satisfactory
 #FICSIT's syrup-voiced AI, installed as the voice of your Chaos Gacha: she narrates your pulls, benchmarks you against other pioneers (always unfavorably), and posts up to three milestones at a time, production quotas, artifact retrievals, exploitation targets, scaled to wherever you are, which she treats as a FICSIT claim. Each completed milestone pays one ticket of tier matching the feat, usually plain bronze or silver, at most one payout per 7 days; new milestones post as old ones complete. The mute button is decorative, and HR complaints go straight to the shredder.
+588. Croajiro, 2.4, Palworld
+#(Tag:aquatic)(Tag:small-size)(Tag:water)A small frog-like Pal with a windbag abdomen. It stores a charge, then launches whoever sits on it high into the air, and it can squeeze out a blast of water hard enough to knock a man down. Cheerful, loyal, and braver than it has any right to be.
+589. Elphidran Aqua, 5.5, Palworld
+#(Tag:aquatic)(Tag:draconic)(Tag:flying)(Tag:water)A pale water dragon, gentle by nature and dreadful when roused, that swims as easily as it flies and can be ridden as a flying mount. Its breath soaks armour in clinging brine, it strengthens water magic used near it, and where its kin breathe fire it calls down healing rain instead.
+590. Shaolong, 7.7, Palworld
+#(Tag:aquatic)(Tag:divine)(Tag:draconic)(Tag:flying)(Tag:water)Known as the Water God: a serpentine dragon of white and blue scales, golden horns, and a mane of living water. It commands every river, sea, and storm it crosses, parting floods, raising standing waves to swallow armies, and calling typhoons down on a coast. It needs no saddle to be ridden and never tires in water or in flight.
+591. Sanctified Sentinel, 4.8, Generic
+#(Tag:golem)(Tag:holy)(Tag:large-size)A headless guardian of temple masonry, raised by the god whose shrine it kept and blessed for it. It fights with enormous stone fists, purges curses and unclean things with the light in its chest, and settles back into prayer to repair itself. It obeys you with a temple guardian's patience: absolutely, and without a word.
+592. Makara, 4.4, Hindu Myth
+#(Tag:aquatic)(Tag:beast)(Tag:holy)(Tag:water)A sacred river-beast with a crocodile's jaws and a fish's tail, bearing the banner of the gods. It outswims the current, and the water it passes through turns holy, so wounds washed in it close and the undead caught in it burn. It will carry a rider and never drown, even in a flood.
+593. Drakestone Sentinel, 5.2, Generic
+#(Tag:draconic)(Tag:earth)(Tag:golem)(Tag:large-size)A construct of dragon bone and standing stone, built by a dead kingdom to hold its gates. Its claws and tail are blades, its breath is a grinding gale of rock dust, and the bones inside it still remember the shape of the dragon they came from. Break it apart and the pieces crawl back to the nearest stone.
+594. Ooze Drake, 4.1, Generic
+#(Tag:amorphous)(Tag:draconic)(Tag:medium-size)(Tag:poison)A dragon-shaped mass of corrosive ooze that keeps the silhouette of the drake it once dissolved. Its bite eats steel and flesh, it pours through any gap it can fit a claw through, and any piece cut from it crawls back to the body. Feed it corpses and it grows.
+595. Wyrm Changeling, 5.5, Chinese Myth
+#(Tag:draconic)(Tag:humanoid)(Tag:magic)(Tag:shapeshifter)An eastern dragon that long ago learned to walk on two legs. It keeps a human shape, a scholar's manners, and the strength of a river dragon, and turns between forms in a breath: serpent for war, person for courts, cloud for travel. It serves with the patience of something that expects to outlive your grandchildren.
+596. Hellforged Sentry, 5.3, Warhammer 40k
+#(Tag:fighter)(Tag:fire)(Tag:golem)(Tag:infernal)An iron construct forged on a hell-war world, its core a bound daemon caged in brass. Its axe head is molten, its hide shrugs off small arms, and it knows exactly how much damage a body can take before it stops. Loyal, obedient, and permanently furious.
+597. X Parasite, 5.0, Metroid
+#(Tag:bio)(Tag:linked)(Tag:parasitic)(Tag:shapeshifter)A parasite that bonds with a living host, absorbs everything it is, body and memory and powers, then wears that shape as its own. As your ally the bond runs both ways: you feel its state and it feels yours, and it can copy the last creature you let it feed on.
+598. Biotic Vanguard, 4.6, Mass Effect
+#(Tag:fighter)(Tag:humanoid)(Tag:martial-artist)(Tag:mental)A soldier who fights with a mind as much as a body: a shove of force to scatter a squad, a small singularity to gather them, then a charge that puts their heads into a wall. Reads a battlefield like a chessboard and stands in the front rank personally.

@@ -2248,3 +2248,9 @@
 #An ancient URM nanotech combat body, offered as a full replacement: superhuman strength, speed, and durability, plasma discharge, and self-repair that knits wounds mid-fight. Attunement is agonizing and demands a compatible nervous system; overuse runs the furnace into berserk overload.
 1124. Damascus Blade, 8.2, Alita: Battle Angel
 #(Tag:blade)(Tag:weapon)A bracelet unfolding into a blade that cuts armor, cyborgs, and monsters like paper and never dulls. It has no guard and no mercy: in unskilled hands it endangers the wielder as much as the foe (Panzer Kunst training recommended).
+1126. Monsterbane Blade, 4.3, DnD
+#(Tag:anti-monster)(Tag:blade)(Tag:martial)(Tag:weapon)A hunter's greatsword etched with a hundred monster names. It bites deep into anything bestial, monstrous, or unnatural, through claw, fang, and hide tougher than plate, and takes a trickle of the kill to keep its edge. People die to it like any sword; monsters die to it quickly.
+1127. Wyvernheart Bowgun, 4.9, Monster Hunter
+#(Tag:anti-dragon)(Tag:gun)(Tag:tech)(Tag:weapon)A hunting bowgun fed by a revolving magazine of wyvern rounds. Its shot tears through scaled hide and wing membrane, and its burst mode empties the cylinder in a heartbeat for the moment a dragon is brought to ground. Slower and lighter than siege guns, and far quicker on the turn.
+1128. Profaned Greatsword, 5.6, Dark Souls
+#(Tag:anti-holy)(Tag:blade)(Tag:infernal)(Tag:weapon)A colossal blade quenched in profane flame, so heavy it has to be dragged into its own swing. Its fire burns angels, paladins, and anything sanctified as readily as flesh, snuffs out holy wards on contact, and leaves wounds that do not close.
