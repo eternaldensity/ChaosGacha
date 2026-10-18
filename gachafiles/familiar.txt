@@ -1194,3 +1194,7 @@
 #(Tag:bio)(Tag:linked)(Tag:parasitic)(Tag:shapeshifter)A parasite that bonds with a living host, absorbs everything it is, body and memory and powers, then wears that shape as its own. As your ally the bond runs both ways: you feel its state and it feels yours, and it can copy the last creature you let it feed on.
 598. Biotic Vanguard, 4.6, Mass Effect
 #(Tag:fighter)(Tag:humanoid)(Tag:martial-artist)(Tag:mental)A soldier who fights with a mind as much as a body: a shove of force to scatter a squad, a small singularity to gather them, then a charge that puts their heads into a wall. Reads a battlefield like a chessboard and stands in the front rank personally.
+599. Blooded Yautja, 4.9, Predator
+#(Tag:alien)(Tag:anti-alien)(Tag:fighter)(Tag:stealth)A jungle hunter of a species that lives for the hunt, blooded against the deadliest game its worlds can offer, other aliens included. Cloaking field, thermal vision, plasma caster, wristblades, and a code that only respects prey that can fight back. It will not hunt what it judges helpless.
+600. Arcanaloth, 5.4, DnD
+#(Tag:infernal)(Tag:anti-infernal)(Tag:magician)(Tag:tactician)A jackal-headed fiend of the mercenary yugoloths, broker and enforcer for the lower planes. It turns its claws and its spellbook on demons and devils alike whenever the contract says so, and keeps meticulous ledgers of every soul it has traded. It serves you exactly as long as you keep paying.

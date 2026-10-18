@@ -115,10 +115,10 @@ def main():
     for a, b in PAIRS:
         if count[a] < args.min or count[b] < args.min:
             continue
-        shared = valid_cats(a) & valid_cats(b)
-        if not shared:
-            continue
         n = co(a, b)
+        shared = valid_cats(a) & valid_cats(b)
+        if not shared and not n:
+            continue          # structurally impossible and nobody carries it
         def clean(e):
             raw = e["description"] or ""
             keep = [c for c in re.split(r"[.;]", raw) if not NEG_CLAUSE.search(c)]

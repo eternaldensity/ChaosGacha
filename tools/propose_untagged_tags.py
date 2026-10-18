@@ -496,6 +496,10 @@ def proposals_for(e):
         if t in valid:
             tags.add(t); why[t] = "manual"
     raw = e["description"] or ""
+    # "Race Change - ..." / "Race - ..." is our structural prefix for race
+    # traits, so it counts as a name-level signal rather than prose.
+    if "race-change" in valid and re.match(r"\s*Race(\s+Change)?\s*[-:]", raw):
+        tags.add("race-change"); why["race-change"] = "structural"
     keep = [c for c in re.split(r"[.;]", raw) if not NEG_CLAUSE.search(c)]
     desc = NEG_STRIP.sub(" ", " . ".join(keep))
     for tag, cats, rx_name, rx_desc in COMPILED:
@@ -531,11 +535,11 @@ def main():
             none.append(e)
 
     tier_a = {k: v for k, v in out.items()
-              if any(x in ("name", "tree", "manual") for x in v["why"].values())}
+              if any(x in ("name", "tree", "manual", "structural") for x in v["why"].values())}
     tier_b = {k: v for k, v in out.items()
               if v["tags"] and k not in tier_a}
     def name_tags(v):
-        return [t for t in v["tags"] if v["why"].get(t) in ("name", "tree", "manual")]
+        return [t for t in v["tags"] if v["why"].get(t) in ("name", "tree", "manual", "structural")]
     print(f"untagged entries: {len(untagged)}")
     print(f"  A · name-driven proposals: {len(tier_a)} "
           f"({100 * len(tier_a) // max(1, len(untagged))}%)")
@@ -580,7 +584,7 @@ def main():
         for e in untagged:
             tags, why = proposals_for(e)
             if not args.with_desc:
-                tags = {t for t in tags if why.get(t) in ("name", "tree", "manual")}
+                tags = {t for t in tags if why.get(t) in ("name", "tree", "manual", "structural")}
             if tags:
                 by_file[e["file"]].append((e["number"], sorted(tags)))
         total = 0
