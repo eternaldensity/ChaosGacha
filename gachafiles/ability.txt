@@ -221,7 +221,7 @@
 111. Divinity Water & Ice, 8.0, Generic
 #(Tag:ice)(Tag:water)You are a god of water and ice, holding domain over both with all that entails.
 112. Typhoon, 4.2, Generic
-#Manifest and control typhoons at will, from miniature direct attacks to area-wide devastation.
+#(Tag:air)Manifest and control typhoons at will, from miniature direct attacks to area-wide devastation.
 113. Breeze, 0.4, Generic
 #(Tag:air)Conjure a light breeze from your body, far too weak to knock a grown person down.
 114. Gust, 1.6, Generic
@@ -243,7 +243,7 @@
 122. Delta Stream, 3.0, Generic
 #(Tag:air)(Tag:alter)(Tag:buff)Call forth winds that make the surrounding area very windy, enhancing the power and efficiency of all wind-based abilities.
 123. Floating, 2.4, Generic
-#Cloak yourself in winds that carry you, allowing you to fly.
+#(Tag:gravity)Cloak yourself in winds that carry you, allowing you to fly.
 124. Wind Flight, 3.0, Generic
 #(Tag:air)(Tag:movement)Push off the surrounding air to fly with precision and power.
 125. Air Jet, 3.3, Generic
@@ -251,7 +251,7 @@
 126. Wind Cloak, 3.2, Generic
 #(Tag:air)(Tag:buff)(Tag:movement)Cloak yourself in powerful winds that assist movement, letting you move faster, dash and float.
 127. Whirlwind, 4.0, MHA
-#Create and control powerful whirlwinds and air currents, though control is imprecise.
+#(Tag:air)Create and control powerful whirlwinds and air currents, though control is imprecise.
 128. Vacuum, 4.3, Generic
 #(Tag:air)Create and control vacuums in your sensory range to pull things in and cause implosions. Stronger vacuums expend more energy.
 129. Louden, 0.9, Generic
@@ -307,7 +307,7 @@
 154. Lightning Form, 4.4, Generic
 #(Tag:electric)(Tag:movement)(Tag:transformation)Turn into a living bolt of lightning to travel extremely quickly while ignoring most conventional attacks. You are extremely vulnerable to grounding, which ejects and injures you.
 155. Radio Waves, 3.1, MHA
-#(Tech) Emit electromagnetic waves that disable and cripple all technology with an interface. With training, you can fine-tune them to activate or control electronics instead.
+#(Tag:sound)(Tech) Emit electromagnetic waves that disable and cripple all technology with an interface. With training, you can fine-tune them to activate or control electronics instead.
 156. Impulse, 2.0, Generic
 #(Tag:electric)(Tag:sense)Quicken your body's electrical signals to proportionally increase reflexes and speed. Overuse may cause nerve damage.
 157. Godspeed, 4.2, Hunter x Hunter
@@ -387,7 +387,7 @@
 194. Terrakinesis, 4.5, Generic
 #(Tag:earth)(Tag:kinesis)Telekinetically control earth and rock in your sensory range.
 195. Armor, 3.1, Generic
-#Create very durable reinforced metal armour on your body that enhances endurance. Stronger users form stronger metal, and you can reshape it with concentration.
+#(Tag:enhancer)Create very durable reinforced metal armour on your body that enhances endurance. Stronger users form stronger metal, and you can reshape it with concentration.
 196. Metal Kaiser, 4.0, Worm
 #(Tag:earth)Create metal such as giant blades, walls and pillars from any non-organic surface. More energy creates more metal.
 197. Iron Manipulation, 3.6, Generic
@@ -425,11 +425,11 @@
 213. Golem Armor, 3.6, Generic
 #(Tag:construct)(Tag:earth)(Tag:enhancer)Create a golem around yourself from ground beneath your feet or materials you touch, acting as armour that enhances physical stats.
 214. Stalagmite Burst, 2.6, Generic
-#Unleash stalagmite blades that erupt from the ground to impale enemies.
+#(Tag:earth)Unleash stalagmite blades that erupt from the ground to impale enemies.
 215. Thousand Arrows, 4.2, Pokemon
 #Create and launch spears or arrows of surrounding ground as artillery, traps or projectile bombardment.
 216. Metal Manipulation, 4.2, MHA
-#Control the shape and form of all metals you touch.
+#(Tag:earth)(Tag:kinesis)Control the shape and form of all metals you touch.
 217. Mud Manipulation, 3.4, Generic
 #(Tag:earth)(Tag:water)Conjure and control mud to create swamps underfoot or bombard opponents.
 218. Crystal Shower, 2.6, Generic
@@ -447,7 +447,7 @@
 224. Pure Gem Creation, 4.9, Generic
 #(Tag:earth)Create pure precious gems that hold immense energy and serve as vessels. Purer, more potent gems cost more energy.
 225. Sand Veil, 1.8, Generic
-#Create a small localized sandstorm on your location that hides your presence inside it while you see through it freely.
+#(Tag:earth)Create a small localized sandstorm on your location that hides your presence inside it while you see through it freely.
 226. Fool Sand, 4.9, JoJo
 #(Tag:earth)Conjure autonomous sand that shapeshifts, attacks and defends without input to protect you, eliminate enemies or provide utility.
 227. Desert Weaponry, 3.5, Generic
@@ -523,7 +523,7 @@
 262. Abyss, 6.0, Generic
 #(Tag:alter)(Tag:buff)(Tag:dark)(Tag:debuff)Reality Marble - Pull targets into the Abyss, which rapidly drains their energy and vitality. All dark abilities are boosted inside.
 263. Void Tendril, 3.4, Generic
-#Conjure and control void tendrils to grapple, crush, whip, and pierce. You can share sensation with them.
+#(Tag:dark)Conjure and control void tendrils to grapple, crush, whip, and pierce. You can share sensation with them.
 264. Shade Cloak, 3.7, Generic
 #(Tag:dark)(Tag:movement)(Tag:transformation)Briefly shift into shadow to phase through attacks and magic. Weak only to light and holy magic; limited to 1 second at a time with a 3-second cooldown.
 265. Cursecraft, 4.8, Generic
@@ -541,11 +541,11 @@
 271. Chaos Entity Release, 5.1, Legendary Mechanic
 #(Tag:dark)(Tag:movement)(Tag:space)(Tag:transformation)Release physical form to become a Void Observer, a sentient grey energy cloud that slips into the void at will, intangible yet able to observe reality. Staying inside slowly drains energy and grants near-immunity to physical force, but damage taken reflects onto your real body.
 272. Void Path, 6.4, Legendary Mechanic
-#Open gates to the Void Dimension to traverse it, banish entities inside, or bring entities out. Use with caution.
+#(Tag:dark)Open gates to the Void Dimension to traverse it, banish entities inside, or bring entities out. Use with caution.
 273. Void Distorter Form, 5.9, Legendary Mechanic
-#Transform into a Void Distorter, a Void-native being that distorts and shapes void to ravage the natural world with spatial distortions. Can also use Void Travel.
+#(Tag:alter)(Tag:dark)(Tag:transformation)Transform into a Void Distorter, a Void-native being that distorts and shapes void to ravage the natural world with spatial distortions. Can also use Void Travel.
 274. Abyssal Jail, 5.2, Generic
-#Manifest Abyss in the natural world to trap entities in a localized Abyss that isolates and drains their energy and vitality. Breaking out by force is possible but incredibly difficult.
+#(Tag:dark)Manifest Abyss in the natural world to trap entities in a localized Abyss that isolates and drains their energy and vitality. Breaking out by force is possible but incredibly difficult.
 275. Abyss Skin, 3.8, Generic
 #(Tag:dark)(Tag:enhancer)(Tag:space)Cover your skin in Abyss for potent defense with no offensive benefit. It dissipates contacted energy, including kinetic and heat, but sudden powerful attacks can bypass absorption.
 276. Yami, 3.2, Yugioh
@@ -579,7 +579,7 @@
 290. Light of Glory, 3.3, Generic
 #(Tag:buff)(Tag:light)(Tag:martial)(Tag:mental)Call victorious light from the heavens to bolster allies. Those touched gain slightly increased physical stats, mental resistance, vigor, and courage.
 291. Light Grenade, 2.8, Dragon Ball
-#Conjure and launch a fast, powerful grenade of exploding light energy.
+#(Tag:light)Conjure and launch a fast, powerful grenade of exploding light energy.
 292. Beam, 3.4, Generic
 #(Tag:light)Shoot a near-instant beam of concentrated light and heat from your fingers.
 293. Lesser Blessing, 2.6, Generic
@@ -687,9 +687,9 @@
 344. Kakuja, 5.0, Tokyo Ghoul
 #(Tag:bio)Manifest armor-like Kakuja RC Cells shifting from fluid-like to steel-tough, massively boosting stats. Form depends on the user, from building-sized wings to 16 pillar-thick tentacles tougher than titanium and faster than bullets.
 345. Ghoul Physiology, 4.7, Tokyo Ghoul
-#Transform into a flesh-eating ghoul superhuman with a Special RC-Cell limb, gaining a random Kagune of the 4 types and near-immunity to conventional weapons below 9mm. You suffer ravenous hunger for human flesh and cannot eat other food; lingering hunger persists after deactivation until fed, but feeding slightly strengthens you.
+#(Tag:necro)(Tag:transformation)Transform into a flesh-eating ghoul superhuman with a Special RC-Cell limb, gaining a random Kagune of the 4 types and near-immunity to conventional weapons below 9mm. You suffer ravenous hunger for human flesh and cannot eat other food; lingering hunger persists after deactivation until fed, but feeding slightly strengthens you.
 346. hybrid Ghoul Physiology, 5.5, Tokyo Ghoul
-#Transform into a hybrid ghoul, far stronger than average ghouls with none of their weaknesses. Massively amplifies physical attributes, grants powerful regeneration and a random Kagune, and removes the need to eat human flesh while retaining its benefits.
+#(Tag:necro)(Tag:transformation)Transform into a hybrid ghoul, far stronger than average ghouls with none of their weaknesses. Massively amplifies physical attributes, grants powerful regeneration and a random Kagune, and removes the need to eat human flesh while retaining its benefits.
 347. Dragon Kakuja, 7.0, Tokyo Ghoul
 #(Tag:bio)(Tag:draconic)(Tag:transformation)"Become a true biological terror." Take the form of a Dragon Kakuja, an over 10km centipede-like dragon of RC cells stronger than any artificial material. Passively emit high-density RC clouds that turn nearby things into flesh-eating superhuman monsters under your telepathic control, and morph your body into tentacles or flesh monsters.
 348. Keratin Manipulation, 3.9, Generic
@@ -707,7 +707,7 @@
 354. Absolute Control, 4.4, Generic
 #(Tag:bio)Gain complete instinctual control over your body and brain, down to hormones and blood flow. Operates on intent and prevents accidental self-harm.
 355. Shape Altering, 3.1, Generic
-#Alter your body's shape, but cannot create biological impossibilities like turning your head into tentacle whips. Larger alterations cost more energy.
+#(Tag:alter)Alter your body's shape, but cannot create biological impossibilities like turning your head into tentacle whips. Larger alterations cost more energy.
 356. Shapeshifting, 4.7, Generic
 #(Tag:bio)(Tag:transformation)Freely morph your body without breaking conservation of mass or altering genetics. You are protected from harm caused by your own shapeshifting.
 357. Gene Refinement, 5.5, Generic
@@ -847,19 +847,19 @@
 424. Metallica, 4.8, Generic
 #(Tag:bio)(Tag:earth)(Tag:kinesis)Precisely manipulate and sense all iron in a 10-meter radius, forming elaborate constructs or blades from a target's blood. Can control blood inside living beings.
 425. Glass Manipulation, 3.1, Generic
-#Telekinetically control glass and glass-based objects within your sensory range.
+#(Tag:kinesis)Telekinetically control glass and glass-based objects within your sensory range.
 426. Oil Manipulation, 4.8, Generic
-#Telekinetically control oil and oil-based substances such as petrol, fuel, asphalt, crude oil, and plastic within your sensory range.
+#(Tag:kinesis)Telekinetically control oil and oil-based substances such as petrol, fuel, asphalt, crude oil, and plastic within your sensory range.
 427. Silicon Manipulation, 5.7, Generic
 #(Tag:kinesis)Telekinetically shape and control silicon down to an atomic level, including glass, sand, quartz, silicone, and most electronics within your sensory range.
 428. Plastic Manipulation, 3.8, Generic
-#Telekinetically control plastic and plastic-based substances and objects within your sensory range.
+#(Tag:kinesis)Telekinetically control plastic and plastic-based substances and objects within your sensory range.
 429. Fabric Manipulation, 4.2, MHA
 #(Tag:kinesis)(Tag:nature)Telekinetically control fabric within your sensory range, including cotton, silk, wool, and kevlar. Can create your own clothes or turn enemies' clothes against them.
 430. String Manipulation, 5.6, Generic
-#Generate and manipulate supernaturally durable strings with supernatural precision. You lose control if they lose contact with your body.
+#(Tag:kinesis)Generate and manipulate supernaturally durable strings with supernatural precision. You lose control if they lose contact with your body.
 431. Copper Manipulation, 3.7, Generic
-#Telekinetically control copper and copper-based constructs within your sensory range.
+#(Tag:earth)(Tag:kinesis)Telekinetically control copper and copper-based constructs within your sensory range.
 432. Rust Inducement, 1.4, Generic
 #(Tag:alter)(Tag:necro)Induce rust in metals through physical contact.
 433. Gold Manipulation, 3.2, Generic
@@ -1001,11 +1001,11 @@
 501. Crimson Fucker, 6.8, Hellsing
 #You are a descendant of Alucard, the Crimson Fucker himself, sharing all his natural abilities.
 502. Basilisk Form, 4.1, Generic
-#Transforms into a basilisk at will, partially or fully. Your gaze petrifies and paralyzes, your scales grant natural armor, and you highly resist curses.
+#(Tag:transformation)Transforms into a basilisk at will, partially or fully. Your gaze petrifies and paralyzes, your scales grant natural armor, and you highly resist curses.
 503. Wendigo, 4.2, Generic
 #(Tag:ice)Transforms into a Wendigo partially or fully. Grants increased ice affinity, enhanced physical stats, blizzard summoning, and supernatural tracking, but may instill human-flesh appetite.
 504. Oni, 3.4, Generic
-#Transforms into an Oni partially or fully. Grants enhanced physical stats and minor healing, but vulnerability to holy.
+#(Tag:infernal)Transforms into an Oni partially or fully. Grants enhanced physical stats and minor healing, but vulnerability to holy.
 505. Phoenix Form, 6.7, Generic
 #(Tag:air)(Tag:avian)(Tag:fire)(Tag:life)(Tag:recovery)(Tag:transformation)Transforms into a Phoenix partially or fully. Grants enhanced physical stats, major fire affinity, incredible regeneration, and revival from death once every 30 days.
 506. Tinker - Redundant, 1.2, Generic
@@ -1083,7 +1083,7 @@
 542. Salt King, 6.7, Generic
 #(Tag:earth)(Tag:transformation)Turns you into the Salt King, creating, controlling, and transmuting targets into supernaturally powerful salt within eyesight range. Targets need at least your parity to resist transmutation.
 543. Gravity, 5.5, Generic
-#Creates and controls gravitational fields.
+#(Tag:gravity)Creates and controls gravitational fields.
 544. Gravity Manipulation, 7.7, Generic
 #(Tag:gravity)Accurately controls gravity on a massive scale: invert gravity to hurl islands skyward, craft imitation black holes, or crush with extreme gravity. Limited by imagination and gravity's power, with training able to remove a planet's gravity.
 545. Optimization, 5.2, Generic
@@ -1193,7 +1193,7 @@
 597. Azure Dragon Form, 7.8, One Piece
 #(Tag:air)(Tag:draconic)(Tag:electric)(Tag:fire)(Tag:transformation)Lets you transform into a giant Eastern Azure Dragon or hybrid at will, massively boosting physical abilities. Grants elemental breath attacks like fire, lightning, and air, plus fire clouds to lift things or fly.
 598. Buddha Form, 6.8, One Piece
-#Lets you transform into a giant golden Buddha statue, massively boosting physical abilities. Grants golden shockwaves and near-invulnerability to most damage in this form.
+#(Tag:transformation)Lets you transform into a giant golden Buddha statue, massively boosting physical abilities. Grants golden shockwaves and near-invulnerability to most damage in this form.
 599. Cow Form, 2.6, One Piece
 #(Tag:transformation)Lets you transform into a cow or cow hybrid at will, boosting physical abilities, vitality, and stamina. Grants bovine traits while transformed.
 600. Sea Snake Form, 5.8, Generic
@@ -1207,7 +1207,7 @@
 604. Trace On, 3.8, Generic
 #Lets you create weapons from magical energy as long as you know their construction. Stronger weapons cost more energy.
 605. Structural Analysis, 3.1, Fate
-#Lets you run energy through an object or construct to build a detailed mental blueprint, revealing weaknesses and flaws.
+#(Tag:sense)Lets you run energy through an object or construct to build a detailed mental blueprint, revealing weaknesses and flaws.
 606. Hound Nose, 2.6, Generic
 #(Tag:passive)(Tag:sense)Passively boosts your smell to supernatural levels, letting you pick out one scent in a hundred and track week-old scents across a city. Can be further augmented with energy.
 607. Hawk Eyes, 2.8, Generic
@@ -1253,7 +1253,7 @@
 627. Life Fiber Creation, 5.8, Kill La Kill
 #(Tag:life)Lets you convert lifeforce into Life Fibers, stronger than any artificial material yet more elastic than silk. You can freely control them and surround yourself to significantly boost physical abilities.
 628. Life Fiber hybrid, 6.8, Generic
-#Your body is infused with Life Fibers, granting massively superhuman physical abilities, incredible healing, and immense vitality. Wounds pull back together, even rejoining halves split apart.
+#(Tag:life)(Tag:transformation)Your body is infused with Life Fibers, granting massively superhuman physical abilities, incredible healing, and immense vitality. Wounds pull back together, even rejoining halves split apart.
 629. Infernal Chains, 3.8, Generic
 #(Tag:infernal)Lets you conjure infernal barbed chains to bind foes or wield as weapons.
 630. Angel Style, 2.7, Generic
@@ -1261,7 +1261,7 @@
 631. Heavenly Restriction, 5.2, Jujutsu Kaisen
 #(Tag:enhancer)(Tag:meta)While active, you cannot use energy or mana in any way. In exchange, physical abilities rise with your energy reserves, you are immune to spells cast directly on you, and you cannot be detected or directly targeted by magical means.
 632. White Tiger Form, 3.1, Generic
-#Lets you transform into a snow tiger or hybrid, gaining enhanced senses, predatory instincts, natural weapons, increased physical stats, and tiger traits.
+#(Tag:transformation)Lets you transform into a snow tiger or hybrid, gaining enhanced senses, predatory instincts, natural weapons, increased physical stats, and tiger traits.
 633. Swamp Logia, 6.2, One Piece
 #(Tag:earth)(Tag:transformation)(Tag:water)Lets you generate, control, create, and turn into mud or bottomless swamp. You can drag objects or people inside to store them in stasis.
 634. Idle Death Gamble, 5.5, Jujutsu Kaisen
@@ -1405,11 +1405,11 @@
 703. Polymerization, 4.3, Generic
 #(Tag:spirit)(Tag:summon)Temporarily fuse your familiars together or with yourself. Stronger fusions cost more energy, and maintaining fusion drains energy over time.
 704. Viltrumite Physiology, 7.1, Invincible
-#You are a pure-blooded Viltrumite with insane durability, space flight, incredible physical and sensory abilities, and a highly adaptable body.
+#(Tag:transformation)You are a pure-blooded Viltrumite with insane durability, space flight, incredible physical and sensory abilities, and a highly adaptable body.
 705. Kryptonian Physiology, 8.8, DC
-#You are a pure-blood Kryptonian; yellow sun supercharges your cells, granting heat vision, ice breath, tactile telekinesis, flight, super physique, and all other Kryptonian abilities. Longer sunlight soak strengthens these abilities and permanently improves energy reserves.
+#(Tag:transformation)You are a pure-blood Kryptonian; yellow sun supercharges your cells, granting heat vision, ice breath, tactile telekinesis, flight, super physique, and all other Kryptonian abilities. Longer sunlight soak strengthens these abilities and permanently improves energy reserves.
 706. Saiyan Physiology, 6.8, Dragon Ball
-#You are a pure-blooded Saiyan with superhuman physique, rapid improvement, and abnormal energy. Your tail paralyzes you when grabbed, full moon turns you into a mindless Oozaru with massively enhanced stats, and near-death recovery makes you significantly stronger.
+#(Tag:transformation)You are a pure-blooded Saiyan with superhuman physique, rapid improvement, and abnormal energy. Your tail paralyzes you when grabbed, full moon turns you into a mindless Oozaru with massively enhanced stats, and near-death recovery makes you significantly stronger.
 707. Soft & Wet, 5.8, JoJo
 #Release soap bubbles that plunder a property from touched targets, like floor friction to make it slippery or hydration to cause thirst.
 708. Soften, 3.4, Generic
@@ -1441,7 +1441,7 @@
 721. Tetramand Transformation, 5.5, Ben 10
 #(Tag:enhancer)(Tag:transformation)Take Tetramand or Tetramand-hybrid form, among the galaxy's mightiest warriors with durable red skin, four eyes, four arms, and second-to-none strength.
 722. Cement Manipulation, 3.9, MHA
-#Conjure and manipulate cement into constructs, walls, weapons, and back into less solid form.
+#(Tag:kinesis)Conjure and manipulate cement into constructs, walls, weapons, and back into less solid form.
 723. Slime Physique, 3.1, Generic
 #(Tag:amorphous)Transform fully or partially into slime, mostly negating physical damage and exploiting a slimy physique.
 724. Cursed Flames, 3.4, Terraria
@@ -1449,7 +1449,7 @@
 725. Burning Sea, 4.3, Calamity Mod
 #(Tag:curse)(Tag:fire)(Tag:infernal)Throw crimson flame balls strengthened by water; dousing with water is like throwing crude oil on fire.
 726. Brimstone, 4.7, Calamity Mod
-#Conjure and wield Brimstone Crag flames tempered by tortured souls' agony. Incomparably hot, incinerating everything and burning intangibles like souls.
+#(Tag:infernal)Conjure and wield Brimstone Crag flames tempered by tortured souls' agony. Incomparably hot, incinerating everything and burning intangibles like souls.
 727. Ranchor, 6.7, Calamity Mod
 #(Tag:fire)(Tag:infernal)(Tag:space)(Tag:spirit)Wield Ranchor, ultimate brimstone flames of malice and revenge. Burns anything including souls, energy, and flesh, but also burns the user to a lesser extent with more use.
 728. Banishing Fire, 3.6, Generic
@@ -1623,7 +1623,7 @@
 812. Gallant, 4.6, Worm
 #(Tag:command)(Tag:mental)Lets you sense emotions and fire projectiles that deal no damage but temporarily alter the target's emotions, such as euphoria or depression.
 813. Emotion Sense, 2.8, Generic
-#Lets you sense people's emotions, with training discerning their causes and finer details.
+#(Tag:sense)Lets you sense people's emotions, with training discerning their causes and finer details.
 814. Heartbreaker, 5.8, Worm
 #(Tag:command)(Tag:mental)Lets you manipulate emotions of people within 50 meters, subtly tweaking or overwhelming them with anything from adoration to suicidal urges. Effectiveness scales with power difference.
 815. Piloting, 5.0, Generic
@@ -1667,7 +1667,7 @@
 834. The Imp, 7.1, Worm
 #(Tag:mental)(Tag:stealth)Makes you unperceivable while active, wiping you from minds and recordings the moment you are noticed. People can still deduce your existence and counter you without remembering you.
 835. Majin Physique, 7.6, Dragon Ball
-#Gives you a boneless, organless Majin body that freely morphs and regenerates from any piece larger than a walnut while you have energy. You gain greatly enhanced stats and can absorb others for a portion of their strength.
+#(Tag:enhancer)Gives you a boneless, organless Majin body that freely morphs and regenerates from any piece larger than a walnut while you have energy. You gain greatly enhanced stats and can absorb others for a portion of their strength.
 836. Disaster nature, 7.3, Jujutsu Kaisen
 #(Tag:nature)(Tag:spirit)Grants Hanami-level plant control, creating energy plants, binding roots, and energy-draining cursed buds. You can draw energy from existing nature to recharge.
 837. Shark Physique, 2.8, Generic
@@ -1687,7 +1687,7 @@
 846. Weaver, 3.0, Generic
 #Lets you conjure energy threads you control like limbs, with strength and number scaling with energy spent. Threads dissipate once detached from you.
 847. Kirin Physique, 4.9, Monster Hunter
-#Lets you transform into a Kirin or Kirin hybrid, gaining enhanced stats, speed, and lightning affinity, plus the ability to call down powerful lightning bolts.
+#(Tag:enhancer)Lets you transform into a Kirin or Kirin hybrid, gaining enhanced stats, speed, and lightning affinity, plus the ability to call down powerful lightning bolts.
 848. Remember Me?, 4.1, Generic
 #(Tag:illusion)(Tag:stealth)While active, makes everyone who knows you temporarily forget you and prevents anyone met from recalling your features.
 849. Sprout, 1.2, Generic
@@ -1731,7 +1731,7 @@
 868. Physical Enhancement, 3.5, Generic
 #(Tag:enhancer)Lets you boost all physical capabilities equally with energy. Boost scales with base stats and energy spent.
 869. Iron Skin, 2.4, Generic
-#Reinforces your skin to metal-like toughness and mass, letting even a base human shrug off bats, small-caliber bullets, and survive car crashes. It can slow your movement.
+#(Tag:earth)Reinforces your skin to metal-like toughness and mass, letting even a base human shrug off bats, small-caliber bullets, and survive car crashes. It can slow your movement.
 870. Aura, 5.9, RWBY
 #(Tag:enhancer)(Tag:spirit)Covers you in a soul barrier that boosts physical capabilities and absorbs attacks, letting you survive at least one hit before breaking.
 871. Alexandria, 7.5, Worm
@@ -1881,7 +1881,7 @@
 944. Blood Portals, 3.6, Generic
 #(Tag:blood)(Tag:life)(Tag:movement)You create portals by sacrificing health, a two-way portal costs 10% of maximum health. While portals remain open, you lose access to that 10% of maximum health and it cannot heal.
 945. Shadowverse, 6.6, Invincible
-#You can access the shadow-verse by sinking into shadows. Inside you can jump from shadow to shadow, bring people in and trap them with its monsters, or bring monsters out.
+#(Tag:dark)(Tag:stealth)You can access the shadow-verse by sinking into shadows. Inside you can jump from shadow to shadow, bring people in and trap them with its monsters, or bring monsters out.
 946. Bloody Escalation, 6.7, Generic
 #(Tag:enhancer)(Tag:life)"Power for Pain" With Blood Escalation active, every 1% of health lost increases all stats by 1%. The increase resets when you leave combat.
 947. D4C, 8.8, JoJo
@@ -2027,7 +2027,7 @@
 1017. Meltdowner, 6.1, Toaru
 #(Tag:electric)Meltdowner lets you create and control Particle Waveform High-Speed Cannons from altered electrons, incredibly powerful, hot electron beams from your body that slice any metal like paper. More energy expended means stronger beams.
 1018. Curse Breaker, 3.6, Generic
-#(Tag:curse)(Tag:magic)Curse Breaker lets you break curses by touching them, or an area around you with training. Breakable curse strength scales with energy expended.
+#(Tag:anti-curse)(Tag:curse)(Tag:magic)Curse Breaker lets you break curses by touching them, or an area around you with training. Breakable curse strength scales with energy expended.
 1019. Shatter Curse, 5.2, Generic
 #(Tag:curse)(Tag:magic)Upgrade to Curse Breaker - No curse is safe around you. You can dispel and break all curses you touch, with breakable strength equal to energy expended. With enough energy you can break gods' curses.
 1020. Mystical Eyes of Purity, 6.4, Generic
@@ -2135,7 +2135,7 @@
 1071. The Tinkerer, 9.4, Worm
 #(Tag:tech)(Tag:tinker)(Tech) Allows you to build Entity technology such as Doomsday Drivers, Multiversal Travel, Time Bombs, and any Tinker specialisation from their universe.
 1072. Tinker - One Punch Man, 7.7, One Punch Man
-#(Tech) Allows you to build and replicate Metal Knight's technology like mass-produced weapons, Drone Bodies, giant mechs, and large-scale drones, including Dragon Class Mechs with enough time.
+#(Tag:kinetic)(Tech) Allows you to build and replicate Metal Knight's technology like mass-produced weapons, Drone Bodies, giant mechs, and large-scale drones, including Dragon Class Mechs with enough time.
 1073. Tinker - Scraps, 3.0, Generic
 #(Tag:tech)(Tag:tinker)(Tech) - Allows you to build far more functional technology from scraps and easily jury-rig existing tech from subpar materials.
 1074. Tinker - Big MT, 6.7, Fallout
@@ -2151,7 +2151,7 @@
 1079. Hulk Out, 7.6, Marvel
 #(Tag:enhancer)(Tag:transformation)You can unleash a Gamma Mutate physique, growing large with godlike physical abilities. Physical strength grows with rage without discernible limit. (Note: Just the basic Hulk transformation, no connection shenanigans.).
 1080. Garm Physique, 6.7, God of War
-#You can transform into Garm or a Garm hybrid, gaining immense physical abilities and terrifying presence. Your teeth and claws tear even dimensional fabric, creating portals and breaking boundaries.
+#(Tag:enhancer)You can transform into Garm or a Garm hybrid, gaining immense physical abilities and terrifying presence. Your teeth and claws tear even dimensional fabric, creating portals and breaking boundaries.
 1081. Ghost Ammunition, 2.7, Generic
 #(Tag:spirit)(Tag:tech)(Tech) Allows you to conjure ghost ammunition for your weapons that mimics normal ammo but costs energy and disappears 1 second after hitting.
 1082. Spectre Ammo, 3.5, Generic
@@ -2167,7 +2167,7 @@
 1087. Shut Off, 4.7, Generic
 #(Tag:alter)(Tag:meta)You can shut off others' powers by physical contact, with energy cost set by your power difference to the target. Strong enough targets may only be partially affected.
 1088. Power Oppression, 5.2, Generic
-#You can release a power-dampening aura around yourself. Effectiveness depends on your power difference to the target; weak targets are fully suppressed while strong targets resist.
+#(Tag:enhancer)You can release a power-dampening aura around yourself. Effectiveness depends on your power difference to the target; weak targets are fully suppressed while strong targets resist.
 1089. Tinker - Vehicles (I), 1.7, Generic
 #(Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Makes you supernaturally good at designing, modifying, and building Vehicles, producing engineering marvels that cannot exceed your current world's level.
 1090. Tinker - Vehicles (II), 2.6, Generic
@@ -2315,7 +2315,7 @@
 1161. Void Shadow, 2.2, Legendary Mechanic
 #(Tag:dark)(Tag:sense)(Tag:space)(Tag:summon)Conjure an invulnerable shadow copy of yourself that cannot interact with the world. It moves extremely fast, can disrupt others' vision, and lets you see through its eyes. Lasts 30 minutes at base, one at a time; duration can be increased by training.
 1162. Void Distortion, 5.9, Legendary Mechanic
-#Pull on the Void Dimension to cause spatial disruptions in the material world. It inflicts massive devastation and damage in exchange for incredibly taxing energy expenditure.
+#(Tag:alter)(Tag:dark)Pull on the Void Dimension to cause spatial disruptions in the material world. It inflicts massive devastation and damage in exchange for incredibly taxing energy expenditure.
 1163. Choices & Choices, 4.3, Generic
 #(Tag:divination)When you need to make a choice, activate to view up to 3 relevant choices and their vague outcomes. For example, [We shouldn't go +reputation with X --Reputation with Y, Z Dies].
 1164. Tinker - Resources, 3.6, Generic
@@ -2533,7 +2533,7 @@
 1270. Creation, 6.2, Generic
 #(Tag:neutral)Create objects and matter with magical energy if you remember exactly how to make them, from phones to gold bars to magical swords. Higher mass and more magical objects cost more energy.
 1271. Inner Gate, 5.3, Re:Zero
-#You hold an inner gate converting energy into elemental mana for varied elemental magic depending on aptitude.
+#(Tag:space)You hold an inner gate converting energy into elemental mana for varied elemental magic depending on aptitude.
 1272. Highlight, 1.9, Generic
 #(Tag:divination)Mark a target by touch with a Highlight, giving them a colored outline you can see within eyesight range. Visible even if vision-impaired or blocked by obstacles.
 1273. Bequeath, 4.8, Generic
@@ -2765,51 +2765,51 @@
 1386. Adamantine Sealing Chains, 5.7, Naruto
 #(Tag:debuff)(Tag:earth)(Tag:spirit)Manifest and control Uzumaki Adamantine Sealing Chains as incredibly durable chains that suppress and seal bound targets' energy. Suppression scales with energy spent and your power advantage; chain power and count scale with energy used.
 1387. Sight +1, 2.0, Generic
-#(Tree)(Meta:sight:1) You can view locked nodes one extra connection away from unlocked nodes.
+#(Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight:1) You can view locked nodes one extra connection away from unlocked nodes.
 1388. Sight +2, 3.0, Generic
-#(Tree)(Meta:sight:2) You can view locked nodes two extra connections away from unlocked nodes. Overrides Sight +1.
+#(Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight:2) You can view locked nodes two extra connections away from unlocked nodes. Overrides Sight +1.
 1389. Far Sight, 4.0, Generic
-#(Tree)(Meta:see-far) You can view locked nodes within a set distance of unlocked nodes, even if unconnected to them.
+#(Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:see-far) You can view locked nodes within a set distance of unlocked nodes, even if unconnected to them.
 1390. Trace Name, 4.5, Generic
-#(Tree)(Meta:trace-name) You can trace a route to the closest locked nodes whose name contains a chosen word or phrase.
+#(Tag:meta)(Tree)(Meta:trace-name) You can trace a route to the closest locked nodes whose name contains a chosen word or phrase.
 1391. Trace Description, 5.5, Generic
-#(Tree)(Meta:trace-desc) You can trace a route to the closest locked nodes whose description contains a chosen word or phrase.
+#(Tag:meta)(Tree)(Meta:trace-desc) You can trace a route to the closest locked nodes whose description contains a chosen word or phrase.
 1392. Glimpse, 5.0, Generic
-#(Tree)(Meta:reveal-temp) Single use. Reveal the full tree for 10 seconds.
+#(Tag:meta)(Tree)(Meta:reveal-temp) Single use. Reveal the full tree for 10 seconds.
 1393. Omnisight, 9.0, Generic
-#(Tree)(Meta:reveal-full) Permanently reveal the entire tree.
+#(Tag:meta)(Tree)(Meta:reveal-full) Permanently reveal the entire tree.
 1394. Echo, 4.0, Generic
-#(Tree)(Meta:echo) Single use. The next ticket you are awarded pays double points.
+#(Tag:meta)(Tag:sound)(Tree)(Meta:echo) Single use. The next ticket you are awarded pays double points.
 1395. Survey, 3.0, Generic
-#(Tree)(Meta:survey:1) You can see the names of locked nodes one extra connection away from unlocked nodes.
+#(Tag:meta)(Tree)(Meta:survey:1) You can see the names of locked nodes one extra connection away from unlocked nodes.
 1396. Source Compass, 5.0, Generic
-#(Tree)(Meta:compass) You can trace a route to the closest locked node of any chosen source.
+#(Tag:meta)(Tree)(Meta:compass) You can trace a route to the closest locked node of any chosen source.
 1397. Sight: Ability, 2.5, Generic
-#(Tree)(Meta:sight-cat:ability:1) You can view ability nodes one extra connection away from unlocked nodes.
+#(Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight-cat:ability:1) You can view ability nodes one extra connection away from unlocked nodes.
 1398. Sight: Item, 2.5, Generic
-#(Tree)(Meta:sight-cat:item:1) You can view item nodes one extra connection away from unlocked nodes.
+#(Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight-cat:item:1) You can view item nodes one extra connection away from unlocked nodes.
 1399. Sight: Skill, 2.5, Generic
-#(Tree)(Meta:sight-cat:skill:1) You can view skill nodes one extra connection away from unlocked nodes.
+#(Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight-cat:skill:1) You can view skill nodes one extra connection away from unlocked nodes.
 1400. Sight: Trait, 2.5, Generic
-#(Tree)(Meta:sight-cat:trait:1) You can view trait nodes one extra connection away from unlocked nodes.
+#(Tag:meta)(Tag:ocular)(Tag:sense)(Tree)(Meta:sight-cat:trait:1) You can view trait nodes one extra connection away from unlocked nodes.
 1401. Sight: Familiar, 2.5, Generic
-#(Tree)(Meta:sight-cat:familiar:1) You can view familiar nodes one extra connection away from unlocked nodes.
+#(Tag:meta)(Tag:ocular)(Tag:sense)(Tag:summon)(Tree)(Meta:sight-cat:familiar:1) You can view familiar nodes one extra connection away from unlocked nodes.
 1402. Telekinetic Launch, 4.2, Control
-#Rip loose concrete, furniture, and machinery from the environment and hurl it as telekinetic artillery; charged throws stagger even the Hiss.
+#(Tag:kinesis)Rip loose concrete, furniture, and machinery from the environment and hurl it as telekinetic artillery; charged throws stagger even the Hiss.
 1403. Seize, 4.6, Control
 #(Tag:mental)Weaken an enemy then seize their mind outright, turning them into a temporary ally that fights and dies for you.
 1404. Debris Shield, 3.8, Control
 #Tear rubble from the surroundings into a rotating barrier that eats gunfire, then launch the whole shield back at whoever shot you.
 1405. Evade, 3.0, Control
-#A short telekinetic dash that phases through incoming fire; upgraded chains link multiple dashes together.
+#(Tag:movement)A short telekinetic dash that phases through incoming fire; upgraded chains link multiple dashes together.
 1406. Levitate, 4.0, Control
-#Rise and drift on telekinetic lift while raining debris from above; full upgrades allow true flight and meteor ground slams.
+#(Tag:movement)Rise and drift on telekinetic lift while raining debris from above; full upgrades allow true flight and meteor ground slams.
 1407. Icarus Landing System, 3.2, Deus Ex
 #Fall from any height wrapped in an electromagnetic glare shield that disperses on impact, landing unharmed every time.
 1408. Smart Vision, 3.4, Deus Ex
-#See living targets and machines through walls, with threats, cameras, and robots highlighted and assessed.
+#(Tag:ocular)(Tag:sense)See living targets and machines through walls, with threats, cameras, and robots highlighted and assessed.
 1409. Glass-Shield Cloaking, 4.4, Deus Ex
-#Bend light around yourself to turn nearly invisible while moving slowly; it drinks energy fast so keep moving with purpose.
+#(Tag:stealth)Bend light around yourself to turn nearly invisible while moving slowly; it drinks energy fast so keep moving with purpose.
 1410. Titan Shield, 4.8, Deus Ex
 #Project hardened dermal armor that shrugs off bullets and explosions while active, at a heavy energy cost.
 1411. Remote Hacking, 4.0, Deus Ex
@@ -2821,9 +2821,9 @@
 1414. Psycast Farskip, 5.6, RimWorld
 #(Tag:teleport)Open a skipgate that relocates your whole caravan across the world map, or dumps an enemy raid somewhere far away.
 1415. Psycast Berserk Pulse, 4.6, RimWorld
-#Drive every humanlike in an area into a murderous berserk rage, friend and foe alike. Do not stand in the pulse.
+#(Tag:enhancer)Drive every humanlike in an area into a murderous berserk rage, friend and foe alike. Do not stand in the pulse.
 1416. Psycast Invisibility, 4.2, RimWorld
-#Vanish from enemy perception entirely and walk through a raid unseen; attacking breaks the effect.
+#(Tag:stealth)Vanish from enemy perception entirely and walk through a raid unseen; attacking breaks the effect.
 1417. Word of Serenity, 3.4, RimWorld
 #Speak with irresistible calm that ends mental breaks on the spot and steadies volatile colonists.
 1418. Time Walk, 7.8, MTG
@@ -2833,17 +2833,17 @@
 1420. Counterspell, 4.4, MTG
 #Counter target spell. Two blue mana that simply says no to anything.
 1421. Swords to Plowshares, 4.2, MTG
-#Exile target creature; its controller gains life equal to its power. One mana of unconditional removal.
+#(Tag:martial)Exile target creature; its controller gains life equal to its power. One mana of unconditional removal.
 1422. Dark Ritual, 3.8, MTG
 #(Tag:dark)Add three black mana in a burst. The turn-one kill enabler since Alpha.
 1423. Giant Growth, 2.4, MTG
-#Target creature gets +3/+3 until end of turn. One green mana of timeless combat math.
+#(Tag:growth)Target creature gets +3/+3 until end of turn. One green mana of timeless combat math.
 1424. Nether Swap, 4.0, Divinity Original Sin
-#Swap the positions of any two characters or objects in range, teleporting both at once.
+#(Tag:dark)(Tag:infernal)Swap the positions of any two characters or objects in range, teleporting both at once.
 1425. Adrenaline, 3.2, Divinity Original Sin
 #Gain 2 action points now at the cost of 2 next turn; the classic opening-move rush.
 1426. Chameleon Cloak, 3.6, Divinity Original Sin
-#Blend perfectly into the surroundings, turning invisible for two turns unless you attack or cast.
+#(Tag:stealth)Blend perfectly into the surroundings, turning invisible for two turns unless you attack or cast.
 1427. Chicken Claw, 3.0, Divinity Original Sin
 #Polymorph an enemy into a clucking chicken that wanders helplessly for its turn.
 1428. Tentacle Lash, 3.4, Divinity Original Sin
@@ -2861,15 +2861,15 @@
 1434. Temporal Rewind, 5.2, Life is Strange
 #(Tag:time)Rewind time by seconds or minutes while retaining full memory of the undone timeline, then choose better.
 1435. Telekinetic Blast, 4.6, Life is Strange
-#Unleash concussive telekinetic force that hurls people, cars, and debris away from you.
+#(Tag:kinesis)(Tag:kinetic)Unleash concussive telekinetic force that hurls people, cars, and debris away from you.
 1436. Concentration, 2.8, Horizon Zero Dawn
 #(Tag:time)Slow the world to a crawl while aiming, lining up machine weak-point shots with perfect calm.
 1437. Silent Strike, 3.0, Horizon Zero Dawn
-#Takedown unaware machines and humans from stealth for massive damage.
+#(Tag:kinetic)(Tag:stealth)Takedown unaware machines and humans from stealth for massive damage.
 1438. Survivalist, 2.6, Tomb Raider
 #Hunter vision that highlights enemies, animals, traps, and salvage through the environment.
 1439. Loop Memory, 5.0, I Was a Teenage Exocolonist
-#Retain skills, relationships, and knowledge across loops of your life on Vertumna, redoing years better each time.
+#(Tag:mental)(Tag:time)Retain skills, relationships, and knowledge across loops of your life on Vertumna, redoing years better each time.
 1440. Seeker Subroutine, 3.4, Tron 2.0
 #Launch homing energy seekers from your identity disc that hunt targets around corners.
 1441. Bounce, 3.2, Genome Guardian
@@ -2881,7 +2881,7 @@
 1444. Flack, 4.0, Genome Guardian
 #Spend your bioenergy to increase the number of smaller pellets your projectiles break into on a hit.
 1445. Summon Tsunami, 5.4, Cities Skylines
-#Call down a city-devouring tsunami wave, then watch the flooded districts from your disaster overview.
+#(Tag:summon)Call down a city-devouring tsunami wave, then watch the flooded districts from your disaster overview.
 1446. Firewall, 3.2, Tron 2.0
 #Equip a defensive subroutine that hardens your disc against hostile code and viral attacks.
 1447. Timeline Shift, 5.8, Life is Strange
@@ -2889,19 +2889,19 @@
 1448. Eldritch Constructs, 4.6, MCU
 #(Tag:eldritch)Shape Eldritch magic into whips, shields, blades, and bindings that strike spirits as well as soldiers.
 1449. Mirror Dimension, 5.4, MCU
-#Fold yourself and your enemies into the Mirror Dimension, where cities bend and no collateral escapes.
+#(Tag:space)Fold yourself and your enemies into the Mirror Dimension, where cities bend and no collateral escapes.
 1450. Chaos Magic, 6.6, MCU
-#Wield raw Chaos Magic that rewrites probability and reality on contact; it always takes something back.
+#(Tag:magic)Wield raw Chaos Magic that rewrites probability and reality on contact; it always takes something back.
 1451. Probability Hex, 5.0, MCU
-#Hex the odds themselves so the unlikely keeps happening to everyone but you.
+#(Tag:curse)(Tag:debuff)(Tag:magic)Hex the odds themselves so the unlikely keeps happening to everyone but you.
 1452. Astral Projection, 3.8, MCU
 #(Tag:spirit)Step out of your body as an astral form to scout unseen while your body sleeps on.
 1453. Dreamwalking, 5.8, MCU
-#Possess your own variants across the multiverse by dreamwalking into their bodies.
+#(Tag:mental)Possess your own variants across the multiverse by dreamwalking into their bodies.
 1454. Asgardian Illusions, 4.2, MCU
-#Weave lifelike illusions, duplicates, and shapeshifts the way Loki does: constantly and without permission.
+#(Tag:mental)Weave lifelike illusions, duplicates, and shapeshifts the way Loki does: constantly and without permission.
 1455. Rune Magic, 4.8, MCU
-#Inscribe witch runes that steal any spell cast inside them and turn rival magic against its caster.
+#(Tag:magic)Inscribe witch runes that steal any spell cast inside them and turn rival magic against its caster.
 1456. Rail Laying, 3.6, Generic
 #Lay finished railway track behind you as you walk, sleepers ballast and all, on any terrain that holds still.
 1457. Rail Gauge Setting, 3.2, Generic
@@ -2915,7 +2915,7 @@
 1461. Screw Attack, 5.9, Metroid
 #Launch into a spinning somersault charge that shreds through anything it touches while you stay invincible throughout. You cannot steer mid-spin, and landing somewhere awkward is your own problem.
 1462. Space Jump, 5.2, Metroid
-#Jump again in midair as often as you like while spinning, each leap matching a grounded jump. Works only while moving; stall and you fall.
+#(Tag:movement)(Tag:space)Jump again in midair as often as you like while spinning, each leap matching a grounded jump. Works only while moving; stall and you fall.
 1463. Shinespark, 5.6, Metroid
 #Store a full sprint's momentum, then launch yourself as an invincible supersonic projectile in a chosen direction until something very solid stops you. Charging takes a few seconds of uninterrupted running.
 1464. Flash Shift, 5.1, Metroid
@@ -2929,13 +2929,13 @@
 1468. Cipher, 5.4, MTG
 #Encode one of your effects onto a melee strike; whenever that strike lands, the encoded effect triggers again for free. One encoded effect at a time; encoding a new one overwrites the old.
 1469. Chaos Gate, 5.5, Hades
-#Tear open a way to Chaos at the cost of a measure of your vitality, and choose one of three offered boons. Stronger offerings draw stronger boons, and Chaos does not give refunds.
+#(Tag:space)Tear open a way to Chaos at the cost of a measure of your vitality, and choose one of three offered boons. Stronger offerings draw stronger boons, and Chaos does not give refunds.
 1470. Moon Hex, 5.8, Hades 2
 #(Tag:ice)Your hex charges as you fight; unleash it as a devastating moon blast that freezes lesser foes solid and sunders barriers. Fully spent, it begins charging again immediately.
 1471. Static Shock, 0.2, Generic
-#Deliver a mild static shock on touch. Startles; harms nothing but composure.
+#(Tag:electric)Deliver a mild static shock on touch. Startles; harms nothing but composure.
 1472. Nightlight, 0.3, Generic
-#Glow faintly in the dark, about as bright as a nightlight. Cannot be switched off while you sleep.
+#(Tag:light)Glow faintly in the dark, about as bright as a nightlight. Cannot be switched off while you sleep.
 1473. Itch, 0.2, Generic
 #Inflict a mild itch on a target once per day. Somehow they always know it was you.
 1474. Sneeze, 0.3, Generic
@@ -2949,7 +2949,7 @@
 1478. Flavor, 0.4, Generic
 #Shift the flavor of food slightly: sweeter, saltier, or faintly of pennies.
 1479. Static Cling, 0.3, Generic
-#Your clothes cling statically at dramatic moments. Dryer sheets help for an hour.
+#(Tag:electric)Your clothes cling statically at dramatic moments. Dryer sheets help for an hour.
 1480. Earworm, 0.4, Generic
 #Plant a jingle in someone's head for about an hour. They will hum it. Everyone will know why.
 1481. Warm Hands, 0.3, Generic
@@ -2961,13 +2961,13 @@
 1484. Wrinkle, 0.3, Generic
 #Smooth wrinkles from clothing by touch. Does not work on skin, no matter how often asked.
 1485. Asgard Beam, 5.5, Stargate
-#Snatch targets with teleport beams at line of sight: relocate allies to safety or scatter foes. Living cargo arrives nauseated; rapid repeat beams compound the nausea.
+#(Tag:light)Snatch targets with teleport beams at line of sight: relocate allies to safety or scatter foes. Living cargo arrives nauseated; rapid repeat beams compound the nausea.
 1486. FTL Jump, 5.6, Battlestar Galactica
 #(Tag:teleport)Fold space to jump yourself and nearby allies across star systems near-instantly. Each jump needs plotted coordinates and a spool-up; blind jumps land you somewhere exciting.
 1487. Thermoptic Camouflage, 5.5, Ghost in the Shell
-#Bend light around yourself into near-total invisibility while moving slowly. Sprinting, rain, and smoke betray you; thermal optics see straight through it.
+#(Tag:stealth)Bend light around yourself into near-total invisibility while moving slowly. Sprinting, rain, and smoke betray you; thermal optics see straight through it.
 1488. Witcher Signs, 5.4, The Witcher
-#Cast the five witcher signs with a gesture: stunning Aard, burning Igni, trapping Yrden, shielding Quen, and charming Axii. Simple, fast, and weaker than true sorcery.
+#(Tag:magic)Cast the five witcher signs with a gesture: stunning Aard, burning Igni, trapping Yrden, shielding Quen, and charming Axii. Simple, fast, and weaker than true sorcery.
 1489. Heroism, 5.5, Warcraft
 #Drive allies into a mass battle frenzy: greatly quickened strikes and movement for under a minute, then exhaustion. One chorus per battle; the drums remember.
 1490. Psionics, 5.6, XCOM
@@ -2975,13 +2975,13 @@
 1491. Psionic Storm, 5.8, StarCraft
 #(Tag:mental)Call down a raging psionic storm that shreds shields, flesh, and circuitry alike across a wide area. Allies inside fare exactly as badly.
 1492. Solar Charge, 4.5, WALL-E
-#Drink direct sunlight to recharge energy, stamina, and small devices. Overcast skies provide faucet-level trickle; true night provides nothing.
+#(Tag:fire)(Tag:movement)Drink direct sunlight to recharge energy, stamina, and small devices. Overcast skies provide faucet-level trickle; true night provides nothing.
 1493. Transcendence, 5.6, Overwatch
 #Become an invulnerable beacon of harmony, healing allies around you massively while drifting slowly forward. You cannot attack, and snipers wait patiently.
 1494. Graviton Surge, 5.9, Overwatch
-#Open a black hole that drags all nearby foes to its center and holds them there. Devastating combined with literally anything else.
+#(Tag:enhancer)(Tag:gravity)Open a black hole that drags all nearby foes to its center and holds them there. Devastating combined with literally anything else.
 1495. Supersonic, 5.2, Rocket League
-#Push past supersonic speed on foot or wheels; anything you touch at full speed explodes away from you. Steering is aspirational.
+#(Tag:sound)Push past supersonic speed on foot or wheels; anything you touch at full speed explodes away from you. Steering is aspirational.
 1496. Veto of the Small Gods, 8.3, Generic
 #Once per day, refuse one effect, event, or attack targeting you of Divine rank or below; it simply does not happen to you. You cannot veto the same source twice in a row.
 1497. Stillpoint, 8.1, Generic
@@ -2997,15 +2997,15 @@
 1502. Erasure, 8.7, MHA
 #While you look unblinkingly at a target, their powers stop working: quirks, and by extension most supernatural abilities below Divine rank, simply switch off. Blink and it lapses; dry eye is the occupational hazard.
 1503. Domain Expansion: Unlimited Void, 9.1, Jujutsu Kaisen
-#Raise a barrier some 200 meters across around yourself for up to a few minutes at ruinous energy cost. Everyone inside but you is flooded with infinite information: they perceive everything and can do nothing, no movement, no powers, no resistance, while your strikes inside cannot miss. Mindless, formless, or incorporeal beings have nothing to flood and walk through it unaffected.
+#(Tag:dark)Raise a barrier some 200 meters across around yourself for up to a few minutes at ruinous energy cost. Everyone inside but you is flooded with infinite information: they perceive everything and can do nothing, no movement, no powers, no resistance, while your strikes inside cannot miss. Mindless, formless, or incorporeal beings have nothing to flood and walk through it unaffected.
 1504. Instrumentality, 9.4, Evangelion
 #Dissolve the boundaries between all souls in range into one gestalt consciousness, held or released at your decision. Anyone with sufficient sense of self can reject it.
 1505. SAVE Point, 9.0, Undertale
 #(Tag:time)Anchor a SAVE; die and you reload there with full memory while the world resets around you. Each load frays something: someone always half-remembers.
 1506. Gold Experience Requiem, 9.2, JoJo
-#Your stand autonomously reverts any hostile action against you to zero, it never happened. Nothing outspeeds it, but it cannot strike first; only answer.
+#(Tag:earth)(Tag:growth)Your stand autonomously reverts any hostile action against you to zero, it never happened. Nothing outspeeds it, but it cannot strike first; only answer.
 1507. Force Storm, 9.0, Star Wars
-#Tear open hyperspace wormholes that devour fleets and fortresses. Each storm drinks your strength and answers your rage more than your aim; lose your temper and it picks its own targets.
+#(Tag:electric)Tear open hyperspace wormholes that devour fleets and fortresses. Each storm drinks your strength and answers your rage more than your aim; lose your temper and it picks its own targets.
 1508. Spice Prescience, 8.7, Dune
 #(Tag:mental)See branching futures across months and parse the safe path through politics, war, and weather. The trap: the more you see, the more the vision locks you in, defying a seen future costs everything you built toward it.
 1509. Culture Displace, 8.8, Culture

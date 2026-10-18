@@ -59,15 +59,15 @@
 30. Grimoire of the Twice Dead Death Mage, 5.7, Death Mage
 #(Tag:grimoire)(Tag:magic)(Tag:necro)(Tome) Grimoire of a twice-died death magician. Teaches death-attribute magic. https://death-mage.fandom.com/wiki/Death-attribute_magic
 31. Grimoire of the White Mage, 4.1, Generic
-#(Tome) Teaches White Magic such as healing, curing, buffs, and warding.
+#(Tag:grimoire)(Tag:magic)(Tome) Teaches White Magic such as healing, curing, buffs, and warding.
 32. Grimoire of the Pyromancer, 4.3, Generic
 #(Tag:fire)(Tome) Teaches Fire Magic of fire and flame.
 33. Grimoire of the Cryomancer, 4.2, Generic
 #(Tag:ice)(Tome) Teaches Ice Magic of ice and cold.
 34. Grimoire of the Aeromancer, 4.4, Generic
-#(Tome) Teaches Air Magic of wind and lightning.
+#(Tag:grimoire)(Tag:magic)(Tome) Teaches Air Magic of wind and lightning.
 35. Alchemilia, 3.6, Generic
-#(Tome) Guide to brewing many minor useful potions like healing and energy recovery from mundane ingredients. Only those who have physically read it can craft its potions.
+#(Tag:magic)(Tome) Guide to brewing many minor useful potions like healing and energy recovery from mundane ingredients. Only those who have physically read it can craft its potions.
 36. The Assembly, 5.2, Generic
 #(Tag:machine)(Tag:production)(Tag:tech)(Tech) Room-sized machine that disassembles any item into its most basic components, down to snowflake size. Can reassemble them into ingots, materials, or finished items given a blueprint.
 37. Bar of Vibranium, 5.1, Marvel
@@ -95,7 +95,7 @@
 48. The Infinite Magazine, 4.0, Generic
 #(Tag:material)Magazine that morphs to fit any projectile weapon and supplies infinite ammo while attached.
 49. Ticket to Belethor's General Goods, 4.2, Skyrim
-#Teleports you to Belethor's General Goods in Skyrim, Tamriel for 1 hour. Cannot leave a 10-meter circle from arrival; can buy native goods like Soul Gems and Magic Books. Cooldown: 720 hours.
+#(Tag:meta)(Tag:ticket)Teleports you to Belethor's General Goods in Skyrim, Tamriel for 1 hour. Cannot leave a 10-meter circle from arrival; can buy native goods like Soul Gems and Magic Books. Cooldown: 720 hours.
 50. Hito Hito no Mi, 4.0, One Piece
 #(Tag:consumable)(Tag:curse)(Tag:race-change)Devil Fruit letting an object or animal assume human or hybrid form, at the cost of being unable to swim.
 51. Triactis True Paladinian Mage-Hammer of Might, 7.1, Calamity Mod
@@ -113,21 +113,21 @@
 57. Ring of Swiftness, 2.1, Generic
 #(Tag:accessory)(Tag:agility+)(Tag:reflex+)Magical ornate silver ring improving agility, reflexes, and balance.
 58. Sand Cloak, 2.8, Generic
-#Dusty brown cloak hiding your presence. Once every 8 hours, shroud yourself in a violent localized sandstorm to retreat or hide.
+#(Tag:armor)(Tag:earth)(Tag:stealth)Dusty brown cloak hiding your presence. Once every 8 hours, shroud yourself in a violent localized sandstorm to retreat or hide.
 59. Ambrosial Ampule, 5.8, Calamity Mod
-#Ambrosia of the gods. Drinking it massively boosts vitality to near-regeneration and cures all illnesses and ailments.
+#(Tag:consumable)(Tag:elixir)Ambrosia of the gods. Drinking it massively boosts vitality to near-regeneration and cures all illnesses and ailments.
 60. Bloom Stone, 3.2, Calamity Mod
 #(Tag:accessory)(Tag:health-regeneration+)Ancient green-gem necklace granting sunlight-based regeneration: Uncommon in morning, Rare at noon, Uncommon in afternoon, Common in evening, none at night.
 61. Butcher's Bag of Infinite Meat, 1.7, Generic
 #(Tag:production)(Tag:resource)(Tag:tool)Bag of limitless fresh mundane Earth animal meat in all cuts. Withdraw up to 100 kg every 24 hours by reaching in and thinking of the cut. Clean, not ethically sourced; ignore the implications.
 62. Living Dew, 5.2, Calamity Mod
-#Living dew from the ancient jungle's depths. Consuming it significantly increases vitality and lifespan, granting strong ailment resistance and faster healing, amplified in jungles or forests.
+#(Tag:consumable)Living dew from the ancient jungle's depths. Consuming it significantly increases vitality and lifespan, granting strong ailment resistance and faster healing, amplified in jungles or forests.
 63. Permafrost's Concoction, 6.2, Calamity Mod
 #(Tag:consumable)(Tag:elixir)(Tag:fire-resistance+)(Tag:ice+)(Tag:ice-resistance+)(Tag:maximum-energy+)Culmination of Archmage Permafrost's work. Greatly increases energy/mana reserves and regeneration, massively buffs frost abilities at reduced cost, and grants strong cold and flame resistance.
 64. THE Stop Sign, 4.5, Generic
 #(Tag:bludgeon)(Tag:kinetic)(Tag:weapon)Indestructible stop sign. Whatever its head contacts instantly loses all momentum.
 65. Trinket of Chi, 2.3, Calamity Mod
-#Trinket of a monk who stood still until becoming a statue. Standing still over 3 seconds speeds energy/mana and health recovery.
+#(Tag:accessory)Trinket of a monk who stood still until becoming a statue. Standing still over 3 seconds speeds energy/mana and health recovery.
 66. Evasion Scarf, 3.7, Calamity Mod
 #(Tag:accessory)(Tag:movement)Scarf of a shadow-swift rogue. Activate to gain a large speed boost and intangibility while moving straight for 1 second, slipping through attacks or walls. 30 second cooldown.
 67. Grimoire of Hemomancy, 4.6, Black Clover
@@ -157,7 +157,7 @@
 79. Sephiroth Graal, 7.4, Highschool DxD
 #Longinus created by God granting god-level knowledge of Soul, Death, and Life, allowing manipulation of souls and life if the user withstands its mind-crushing information.
 80. Alchemist's Cauldron, 3.6, Generic
-#Large cauldron filling itself with a chosen basic potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, Healing, Minor Regeneration, Stone Skin, etc. Must know the potion (No Elixirs), Rare rank or below.
+#(Tag:building)(Tag:magic)Large cauldron filling itself with a chosen basic potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, Healing, Minor Regeneration, Stone Skin, etc. Must know the potion (No Elixirs), Rare rank or below.
 81. Dragon Vessel Intermediate, 4.2, Generic
 #(Tag:draconic)Large cauldron filling itself with a chosen intermediate potion once daily: Strength, Agility, Waterbreathing, Healing, Regeneration, Iron Skin, energy recovery, fertility, vitality, etc. Must know the potion (No Elixirs), Elite rank or below.
 82. Dragon Vessel Major, 5.3, Generic
@@ -211,7 +211,7 @@
 106. Amulet of Health, 1.5, Generic
 #(Tag:accessory)(Tag:vitality+)Gold amulet with red gem slightly increasing wearer vitality.
 107. Magical Beans, 3.5, Generic
-#Pouch of magical bean seeds. Planted, they grow over 24 hours into a 50-meter-thick stem extending into space.
+#(Tag:consumable)(Tag:magic)Pouch of magical bean seeds. Planted, they grow over 24 hours into a 50-meter-thick stem extending into space.
 108. Special Tattoo Kit, 3.5, Generic
 #(Tag:meta)(Tag:tool)Tattoo kit creating and inscribing magical tattoos with effects based on user abilities. Only one tattoo per individual; effects capped at Common Rarity Trait potency.
 109. The Collar of Obedience, 2.7, Generic
@@ -221,7 +221,7 @@
 111. Mystery of the Night Sky, 5.3, Black Souls
 #(Tag:accessory)(Tag:energy-regeneration+)(Tag:health-regeneration+)(Tag:meta)Panties of the omnipresent Outer One beyond the stars. Holding them speeds energy and health recovery and reduces ability cooldowns by 33%.
 112. Can of Febreze, 0.1, Generic
-#Infinitely spraying can of Febreze. From Walmart.
+#(Tag:mundane)Infinitely spraying can of Febreze. From Walmart.
 113. Meeseeks Box, 4.5, Rick and Morty
 #(Tag:summon)(Tag:tool)Button-activated box summoning a very competent Mr. Meeseeks who obeys your order then disappears. Orders it cannot complete or taking over 7 days make it hostile and violent.
 114. Monstergirls and You, 3.3, Generic
@@ -255,7 +255,7 @@
 128. Moonlight Greatsword, 3.1, Dark Souls
 #(Tag:blade)(Tag:catalyst)(Tag:magic+)(Tag:weapon)A moonlight sword crafted from Seath the Scaleless's severed tail. Wielding it strengthens your spells and lets you unleash blasts of magical power from the blade.
 129. Super Crown - Mario, 2.3, Generic
-#A magical crown that turns its wearer into a pretty girl.
+#(Tag:accessory)(Tag:command)A magical crown that turns its wearer into a pretty girl.
 130. Crate of Explosives, 1.9, Generic
 #(Tag:consumable)(Tag:tool)A crate of 64 sticks of dynamite that restocks itself every 24 hours.
 131. Gold Apple, 2.4, Minecraft
@@ -313,7 +313,7 @@
 157. Mad Scientist's Steroids, 3.7, Hunter x Hunter
 #(Tag:consumable)(Tag:strength+)A box of seven 1-liter vials. Drink 1 liter daily for a full week to gain the Uncommon Trait Enhanced Strength. Restock Timer: 168 hours.
 158. Levitation Necklace, 2.4, Generic
-#A necklace that lets the wearer slowly fly at 10 km/h.
+#(Tag:accessory)(Tag:gravity)(Tag:movement)A necklace that lets the wearer slowly fly at 10 km/h.
 159. Hero's Bandages, 2.1, Generic
 #(Tag:accessory)(Tag:flexible)(Tag:tool)Sentient bandages that automatically wrap wounds, stopping bleeding and stabilizing broken bones. With training, you can manipulate them yourself.
 160. Fairy Powder, 1.8, Black Souls
@@ -399,11 +399,11 @@
 200. Ice Blade, 2.8, Terraria
 #(Tag:blade)(Tag:ice)(Tag:ice+)(Tag:weapon)A magically enchanted solid-ice saber that holds its sharpness. Releases frigid energy with your own energy and boosts ice abilities when used as a focus.
 201. Space Dolphin Machine Gun, 3.8, Terraria
-#(Tech) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
+#(Tag:gun)(Tag:machine)(Tag:space)(Tag:tech)(Tag:weapon)(Tech) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
 202. Onyx Blaster, 2.9, Terraria
 #(Tag:dark)(Tag:gun)(Tag:tech)(Tag:weapon)A shotgun crafted from pure-darkness shards. Converts energy/mana into dark onyx bullets dealing unholy damage instead of consuming bullets.
 203. Death's Sickle, 4.2, Terraria
-#A sickle from the Reaper's cold dead hands. Releases necrotic projections with your own energy and boosts Dark and Necrotic abilities when used as a focus.
+#(Tag:blade)(Tag:necro)A sickle from the Reaper's cold dead hands. Releases necrotic projections with your own energy and boosts Dark and Necrotic abilities when used as a focus.
 204. Inferno Fork, 4.1, Terraria
 #(Tag:fire)(Tag:fire+)(Tag:infernal)(Tag:infernal+)(Tag:polearm)(Tag:weapon)A crimson trident from the cursed dungeon's depths. Fires flame blasts with your energy/mana and boosts Fire and Unholy abilities when used as a focus.
 205. Last Prism, 5.4, Terraria
@@ -445,11 +445,11 @@
 223. Goku Uniform 3star, 5.5, Kill La Kill
 #(Tag:armor)(Tag:bio)(Tag:enhancer)(Tag:life)(Tag:transformation)A uniform of 30% Life Fibers granting superhuman strength to demolish buildings. Extremely durable beyond carbon fiber; choose colors and design before taking it out. Consuming your vitality unlocks a second form that further increases its abilities.
 224. Your Laptop, 3.6, Generic
-#(Tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
+#(Tag:mundane)(Tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
 225. Infinite Bowl of Spaghetti, 1.5, Generic
 #(Tag:production)An infinite spaghetti bowl that cannot be poured out, but servings can be taken infinitely. The spaghetti is always comfortably warm and tastes pretty good.
 226. Kaneda's Bike, 1.3, Akira
-#(Tech) A very fancy, fast, iconic sci-fi-ish bike.
+#(Tag:vehicle)(Tech) A very fancy, fast, iconic sci-fi-ish bike.
 227. Any Vehicle Voucher, 3.1, Generic
 #(Tag:ticket)(Tag:vehicle)(Tech) Exchangeable anytime for any Mundane Vehicle in your world, from supercar to cruise ship. The vehicle teleports in front of you with all legal work handled.
 228. Refined Heart-Shaped Herb, 4.3, MCU
@@ -475,7 +475,7 @@
 238. The Beherit, 2.5, Berserk
 #(Tag:infernal)(Tag:summon)A red face-like egg that can call down the God Hand. Sacrificing your everything in the Eclipse lets you join the Godhand as an Apostle. ...If you're considering using this, something is truly wrong with you.
 239. Chekhov's Box, 3.9, Generic
-#A wrapped-gift box that gives precisely the item you need for the situation, as long as it is Rare rank or below. Vanishes once used.
+#(Tag:storage)A wrapped-gift box that gives precisely the item you need for the situation, as long as it is Rare rank or below. Vanishes once used.
 240. Cloak of Levitation, 4.6, Marvel
 #(Tag:accessory)(Tag:movement)A Sorcerer Supreme relic allowing free flight. Self-aware, it can pull its wearer from danger and hinder opponents on its own.
 241. Plague Canister, 5.7, Calamity Mod
@@ -485,7 +485,7 @@
 243. Skeleton Key, 8.2, Skyrim
 #(Tag:tool)Magical key of Nocturnal that can unlock anything the user perceives, from locks and walls to inner potential and portals to other worlds. Its only limit is the user, not the key.
 244. Cloak of Elvenkind, 2.4, DnD
-#A hooded elven cloak woven from shadow that renders the wearer invisible while the hood is raised and resistant to divination and scrying. Nearly undetectable while motionless.
+#(Tag:armor)(Tag:stealth)A hooded elven cloak woven from shadow that renders the wearer invisible while the hood is raised and resistant to divination and scrying. Nearly undetectable while motionless.
 245. Annihilation Maker, 7.6, Highschool DxD
 #(Tag:bound)(Tag:dark)(Tag:spirit)(Tag:summon)(Tag:weapon)One of the strongest Longinus crafted by God that creates shadow monsters from the user's shadow by expending mana, with abilities based on the user's imagination and abilities. When removed from inventory, it is a small marble that fuses with whoever swallows it.
 246. Unknown Dictator, 5.8, Highschool DxD
@@ -533,9 +533,9 @@
 267. Second Face, 2.4, Generic
 #(Tag:accessory)(Tag:illusion)A simple white mask that makes the wearer appear as a completely different, always identical person, serving as a second identity.
 268. Mirror Blade, 4.2, Generic
-#A sword embodying envy that alone is only as strong as a sharp iron sword. It can temporarily become the strongest weapon within a 1 km radius for 1 hour, then enters a 24 hour cooldown.
+#(Tag:blade)(Tag:weapon)A sword embodying envy that alone is only as strong as a sharp iron sword. It can temporarily become the strongest weapon within a 1 km radius for 1 hour, then enters a 24 hour cooldown.
 269. Amulet of Imitation, 3.7, Generic
-#An amulet that transforms you into the shape of any creature you touch while holding it until you dispel the transformation. Cooldown: 8 hours.
+#(Tag:accessory)An amulet that transforms you into the shape of any creature you touch while holding it until you dispel the transformation. Cooldown: 8 hours.
 270. Light Sword, 1.6, Generic
 #(Tag:blade)(Tag:light)(Tag:weapon)Not a lightsaber, this sword is crafted purely from solid light and is incredibly light and sharp but somewhat fragile. If broken, leaving it where it receives light gradually repairs it.
 271. Private Jet, 3.7, Generic
@@ -617,7 +617,7 @@
 309. Dragon Utopia, 7.7, Hota
 #(Tag:draconic)A gigantic castle with ideal living conditions for practically any dragon, housing a horde of various loyal dragons. You can admit other dragons in exchange for servitude.
 310. Hydra Pond, 4.8, Hota
-#A large, incredibly poisonous swampy pond populated by Hydra loyal to you as its owner.
+#(Tag:building)A large, incredibly poisonous swampy pond populated by Hydra loyal to you as its owner.
 311. Nymph Waterfall, 2.4, Hota
 #(Tag:barracks)(Tag:building)(Tag:spirit)(Tag:water)A magical waterfall where lesser water-spirit Nymphs are naturally born and remain loyal to you as its owner.
 312. Maelstrom, 4.9, Hota
@@ -649,7 +649,7 @@
 325. Stack of Gold Bars, 1.5, Generic
 #(Tag:mundane)A stack of ordinary gold bars totaling 33 kilograms.
 326. Greedy Ring, 3.5, Generic
-#An ornate red-and-gold ring that attracts wealth, making it easier to make money and find treasures.
+#(Tag:accessory)An ornate red-and-gold ring that attracts wealth, making it easier to make money and find treasures.
 327. Gold Ring Gift, 1.0, Generic
 #(Tag:accessory)A gold ring to gift a loved one whose patterns customize themselves to the recipient. Restock Timer: 48 hours.
 328. Chlorophyte Bar, 3.9, Calamity Mod
@@ -667,7 +667,7 @@
 334. Unbreakable Blade, 3.0, Generic
 #(Tag:blade)(Tag:weapon)A simple sharp steel longsword that is completely unbreakable and undamageable.
 335. Bag of Endless Coins, 3.4, Generic
-#A bag that produces 1000 gold coins every day.
+#(Tag:resource)(Tag:storage)A bag that produces 1000 gold coins every day.
 336. Endless Bag of Ninja Supplies, 3.6, Generic
 #(Tag:production)(Tag:tool)A satchel-sized bag holding 100 shurikens, 100 kunai, 100 caltrops, 50 explosive tags, and a katana, all high-quality steel. Contents replenish every 24 hours.
 337. Portable Supercomputer, 4.8, Generic
@@ -739,7 +739,7 @@
 370. Jackal & Casull, 3.7, Hellsing
 #(Tag:fire)An unwieldy pair of hand-cannon pistols wielded by a certain vampire: white Casull and black Jackal. Each holds 6 rounds of 13mm blessed silver exploding rounds and requires supernatural strength to wield and fire without tearing your arms off. You receive 2 magazines every 24 hours.
 371. Dragon Slayer, 2.6, Berserk
-#(Tag:blade)(Tag:draconic)(Tag:spirit)(Tag:weapon)A massive dull unwieldy sword larger than a man and supernaturally durable. Having bathed in the blood of countless spirits and astral beings, it can harm and kill the immaterial.
+#(Tag:anti-dragon)(Tag:blade)(Tag:draconic)(Tag:spirit)(Tag:weapon)A massive dull unwieldy sword larger than a man and supernaturally durable. Having bathed in the blood of countless spirits and astral beings, it can harm and kill the immaterial.
 372. Wastelanders Survival Kit, 2.5, Fallout
 #(Tag:armor)(Tag:consumable)(Tag:gun)(Tag:health-recovery)(Tag:tool)(Tag:weapon)(Tech) A true courier's loadout containing Elite Riot Gear, a fully modified Anti-Material Sniper Rifle, Riot Shotgun, .44 Magnum revolver, bowie knife, 5 repair kits, 10 stim packs, 5 doctor's bags, and 200 ammo for each weapon.
 373. The Courier's Stash, 1.5, Fallout
@@ -845,13 +845,13 @@
 423. T-51b Power Armor, 2.6, Fallout
 #(Tag:armor)(Tag:tech)(Tech) Pre-Great War mass-produced power armour that shrugs off low-calibre bullets and lets an average man lift a car overhead. Powered by a fusion core replaced with a new one every 24 hours.
 424. Gene Seed Ticket, 4.2, Warhammer 40k
-#(Tech) A ticket transporting you to robotic surgeons for a perfected Transhuman Astartes creation procedure, granting Astartes augments without downsides. It will not affect your looks or body shape.
+#(Tag:growing)(Tag:meta)(Tag:nature)(Tag:ticket)(Tech) A ticket transporting you to robotic surgeons for a perfected Transhuman Astartes creation procedure, granting Astartes augments without downsides. It will not affect your looks or body shape.
 425. Justice's Shades, 1.8, Helltaker
 #(Tag:accessory)(Tag:divination)The blind demon's cool shades that let you tell when someone speaking to you thinks they are lying.
 426. E-11 medium blaster rifle, 2.7, Star Wars
 #(Tag:gun)(Tag:tech)(Tag:weapon)(Tech) A standard Stormtrooper rifle firing high-heat bolts that kill average light-armoured targets in one shot and blast concrete. It has Lethal, Stun, and Sting settings with a 500-shot cartridge, replaced daily.
 427. Soul Solid, 2.4, One Piece
-#Brook's cane sword, extremely sharp, durable, and undulled after years of use. It is also extremely dapper.
+#(Tag:spirit)Brook's cane sword, extremely sharp, durable, and undulled after years of use. It is also extremely dapper.
 428. Wado Ichimonji, 3.4, One Piece
 #A Wano master-crafted great-grade katana, extremely sharp and absurdly durable. Excellent at channelling energy, making abilities channelled through it cost slightly less.
 429. Tozama, 1.7, Jujutsu Kaisen
@@ -1191,7 +1191,7 @@
 596. Idiot's Guide to Father's Philosophy, 5.2, Fullmetal Alchemist
 #(Tag:grimoire)(Tag:life)(Tag:magic)(Tag:spirit)(Tag:transformation)(Tome) Father's (Dwarf in the Flask) guide to specialised Alchemy for Philosopher's Stones and advanced Homunculi. Study enables Human Transmutation circles converting living Human or Humanoid souls into Philosopher's Stones, potent fuel draining ensouled power, and creating advanced superhuman homunculi from them. Each homunculus may copy any ONE possessed ability of Elite rank or below, drawing stone energy to use it with cost scaling to power, requiring replacement when depleted.
 597. Chekhov's Gun, 1.8, Generic
-#An otherwise ordinary M1 Garand that quickly appears at hand whenever useful, whether under a couch, rug, etc. Found pristine and fully loaded regardless of prior location or condition, and retains this property even when modified.
+#(Tag:gun)(Tag:weapon)An otherwise ordinary M1 Garand that quickly appears at hand whenever useful, whether under a couch, rug, etc. Found pristine and fully loaded regardless of prior location or condition, and retains this property even when modified.
 598. Icon of Greed, 5.8, Generic
 #(Tag:tool)"They would do anything for it." A simple gold coin embodying greed, compelling viewers to possess it at any cost, from selling family to swearing fealty or killing kin, with stronger entities more resistant. Once willingly given, it becomes normal, yet trades stay yours with the giver satisfied and unseeking return.
 599. Heal Juice, 6.0, Generic
@@ -1303,7 +1303,7 @@
 652. Cipher Pata, 1.7, Elden Ring
 #(Tag:fist)(Tag:holy)(Tag:weapon)A holy hand-worn blade of shapeless ciphers that is almost impossible to clash with. Its power scales with the user's maximum energy.
 653. Crystal Spear, 1.5, Elden Ring
-#A pure-crystal spear tougher than steel that can also serve as a magic-casting catalyst like a wand.
+#(Tag:earth)(Tag:polearm)(Tag:resource)(Tag:weapon)A pure-crystal spear tougher than steel that can also serve as a magic-casting catalyst like a wand.
 654. Pharis' Bow, 1.8, Dark Souls
 #(Tag:bow)(Tag:weapon)The legendary archer Pharis' finely crafted powerful long-range bow, retaining essence that slightly aids aim. Comes with 30 standard arrows that restock every 24 hours.
 655. Glock, 0.7, Generic
@@ -1321,7 +1321,7 @@
 661. Reduvia, 2.0, Elden Ring
 #(Tag:blade)(Tag:dagger)(Tag:life)(Tag:weapon)The Lord of Blood servants' jagged blood-dripping dagger that fires its never-drying blood as a flying slash when infused with energy. Slightly reduces Vitality costs of abilities and effects while held.
 662. Dragonslayer Swordspear, 3.8, Dark Souls
-#(Tag:electric)(Tag:electric+)(Tag:polearm)(Tag:weapon)The Nameless King's lightning-infused dragonslaying swordspear. Expending energy calls down a sky bolt and strengthens its lightning cloak. Boosts lightning abilities when used as a focus.
+#(Tag:anti-dragon)(Tag:electric)(Tag:electric+)(Tag:polearm)(Tag:weapon)The Nameless King's lightning-infused dragonslaying swordspear. Expending energy calls down a sky bolt and strengthens its lightning cloak. Boosts lightning abilities when used as a focus.
 663. Holy Hand Grenade of Antioch, 1.8, Monty Python
 #(Tag:consumable)(Tag:holy)(Tag:weapon)A saint-blessed grenade with 1 kiloton of power that deals extra damage to unholy enemies. Restock Timer: 24 hours.
 664. Arc Reactor, 4.1, MCU
@@ -1407,7 +1407,7 @@
 704. Can of Whoopass, 3.0, Generic
 #(Tag:consumable)(Tag:summon)A regular tin can labeled with its function; opening it summons 6 Gold Familiar Gacha familiars to beat the opener to death. They persist with intense focus until the target dies, then disappear.
 705. Hephaestus' Forge Key, 4.7, Generic
-#An ornate key that when turned in a large space creates a portal to a 100mx100m godworthy forge pocket dimension with unbreakable tools and a furnace hotter than the sun's core yet safe. Nothing originally in the forge can be removed. The exit gate stays open and leads to where the entrance was last opened.
+#(Tag:building)(Tag:production)(Tag:tool)An ornate key that when turned in a large space creates a portal to a 100mx100m godworthy forge pocket dimension with unbreakable tools and a furnace hotter than the sun's core yet safe. Nothing originally in the forge can be removed. The exit gate stays open and leads to where the entrance was last opened.
 706. Shrimp Fried Rice, 0.2, Generic
 #(Tag:consumable)A plate of excellent fried rice by the greatest Shrimp chef in his universe, whose culinary school credentials should not be doubted.
 707. Safeguard Ring, 3.6, Generic
@@ -1649,7 +1649,7 @@
 825. Earth Key, 6.5, Generic
 #(Tag:dimension)(Tag:earth)An ornate key that, turned in a sufficiently large space, opens a portal to a 20,000 km x 20,000 km x 20,000 km pocket dimension containing planet Earth. It holds a human-free version of Earth as untamed wilds. The exit gate stays open and leads to where the entrance was last opened.
 826. Bathhouse Key, 3.5, Generic
-#An ornate key that, turned in a sufficiently large space, opens a portal to a 250x250x250m pocket dimension holding a luxurious opulent bathhouse. Homunculi attendants staff, maintain, and serve entrants, and its water excellently restores Health and Energy. The exit gate stays open and leads to where the entrance was last opened.
+#(Tag:tool)An ornate key that, turned in a sufficiently large space, opens a portal to a 250x250x250m pocket dimension holding a luxurious opulent bathhouse. Homunculi attendants staff, maintain, and serve entrants, and its water excellently restores Health and Energy. The exit gate stays open and leads to where the entrance was last opened.
 827. A chocolate chip cookie but with the chips picked off for some reason, 0.1, Cookie Clicker
 #(Tag:infernal)(Tag:mundane)The saddest cookie you have ever seen. Giving it a restock timer would be an insult.
 828. A handful of chocolate chips, 0.1, Generic
@@ -1699,25 +1699,25 @@
 850. Erdtree Seed, 4.2, Elden Ring
 #(Tag:curse-resistance+)(Tag:health-recovery)(Tag:nature)(Tag:poison-resistance+)A seed that sprouts a small ineffectual Erdtree, grown larger by supplying energy or ritually burying corpses beneath it. When strong enough it blesses those under its light, warding disease and curses, nourishing land, and boosting recovery and healing.
 851. Undo Stone, 3.5, Generic
-#(Tree)(Meta:lock-refund) Single use. Crush the stone to lock one of your unlocked nodes and refund its core and points.
+#(Tag:earth)(Tag:meta)(Tree)(Meta:lock-refund) Single use. Crush the stone to lock one of your unlocked nodes and refund its core and points.
 852. Tree Graft, 6.0, Generic
-#(Tree)(Meta:add-link:3) Three uses. Add a connection between two close, unconnected nodes.
+#(Tag:bio)(Tag:implant)(Tag:meta)(Tag:nature)(Tree)(Meta:add-link:3) Three uses. Add a connection between two close, unconnected nodes.
 853. Chaos Die, 6.5, Generic
-#(Tree)(Meta:gacha:5) Single use. Roll to unlock a random locked node with rarity 5 or below for free.
+#(Tag:card)(Tag:meta)(Tree)(Meta:gacha:5) Single use. Roll to unlock a random locked node with rarity 5 or below for free.
 854. Greater Wild Roll, 7.0, Generic
-#(Tree)(Meta:gacha:5-7) Single use. Roll to unlock a random locked node with rarity between 5 and 7 for free.
+#(Tag:meta)(Tree)(Meta:gacha:5-7) Single use. Roll to unlock a random locked node with rarity between 5 and 7 for free.
 855. Duplicate, 6.0, Generic
-#(Tree)(Meta:duplicate:5) Single use. Unlock a random locked node that shares a source with one of your unlocked nodes (source not Generic), with rarity 5 or below.
+#(Tag:meta)(Tree)(Meta:duplicate:5) Single use. Unlock a random locked node that shares a source with one of your unlocked nodes (source not Generic), with rarity 5 or below.
 856. Lifeline, 3.0, Generic
-#(Tree)(Meta:lifeline) Single use. Unlock any node adjacent to an unlocked node for free.
+#(Tag:meta)(Tree)(Meta:lifeline) Single use. Unlock any node adjacent to an unlocked node for free.
 857. Recall, 3.5, Generic
-#(Tree)(Meta:recall) Single use. Undo your most recent unlock: the node is locked again and its core and points refunded.
+#(Tag:meta)(Tree)(Meta:recall) Single use. Undo your most recent unlock: the node is locked again and its core and points refunded.
 858. Shuffle, 4.0, Generic
-#(Tree)(Meta:shuffle) Single use. Exchange the location and connections of a visible locked node with a random not-visible locked node of similar rarity (±0.2). If no not-visible candidate exists, a visible one is chosen.
+#(Tag:meta)(Tree)(Meta:shuffle) Single use. Exchange the location and connections of a visible locked node with a random not-visible locked node of similar rarity (±0.2). If no not-visible candidate exists, a visible one is chosen.
 859. Node Swap, 5.0, Generic
-#(Tree)(Meta:swap) Single use. Exchange the location and connections of two visible locked nodes of your choice.
+#(Tag:meta)(Tree)(Meta:swap) Single use. Exchange the location and connections of two visible locked nodes of your choice.
 860. Reshuffle, 5.5, Generic
-#(Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.
+#(Tag:meta)(Tree)(Meta:reshuffle) Unlimited use. Like Shuffle, but costs a quarter of the chosen node's points cost each time.
 861. Pal Sphere, 1.6, Palworld
 #The basic catching sphere: weaken a creature, throw, three shakes and a click. Holds weak catches, Pals or otherwise; anything sturdy breaks out. Consumed on throw, hit or miss; a replacement condenses every 24 hours.
 862. Mega Sphere, 2.4, Palworld
@@ -1733,79 +1733,79 @@
 867. Portable Miner, 2.2, Satisfactory
 #Plop it on any resource node and it mines hands-free into its own little inventory.
 868. Chainsaw, 2.4, Satisfactory
-#Clears whole forests in seconds and mulches wood and leaves into biomass.
+#(Tag:flexible)Clears whole forests in seconds and mulches wood and leaves into biomass.
 869. Xeno-Zapper, 2.0, Satisfactory
 #Standard-issue electric prod; stings alien wildlife and gets stingers moving.
 870. Rebar Gun, 2.6, Satisfactory
-#Fires sharpened rebar spikes; silent, cheap, and surprisingly lethal.
+#(Tag:gun)(Tag:weapon)Fires sharpened rebar spikes; silent, cheap, and surprisingly lethal.
 871. Nobelisk Detonator, 3.0, Satisfactory
-#Remote-detonated explosive charges for clearing rock, trees, and hogs.
+#(Tag:kinetic)Remote-detonated explosive charges for clearing rock, trees, and hogs.
 872. Object Scanner, 2.8, Satisfactory
-#Pings the direction of selected resources, crash sites, and power slugs.
+#(Tag:tool)Pings the direction of selected resources, crash sites, and power slugs.
 873. Blade Runners, 3.2, Satisfactory
-#Exoskeleton legs that boost sprint speed and let you powerslide under everything.
+#(Tag:blade)(Tag:weapon)Exoskeleton legs that boost sprint speed and let you powerslide under everything.
 874. Jetpack, 4.2, Satisfactory
 #Packaged-fuel flight with a satisfying roar; keep an eye on the fuel gauge.
 875. Gas Mask, 2.2, Satisfactory
-#Breathe easy in poison-pillared zones while the filter holds out.
+#(Tag:accessory)Breathe easy in poison-pillared zones while the filter holds out.
 876. Mercer Sphere, 5.4, Satisfactory
 #A humming alien artifact. Research it in the MAM to unlock alien technology, starting with extra personal inventory slots.
 877. Somersloop, 5.6, Satisfactory
 #An impossible looping doodad; slot it into a machine to double that machine's output.
 878. Analysis Visor, 2.6, No Man's Sky
-#Tag flora, fauna, and minerals through your visor; uploads pay out in Nanites.
+#(Tag:accessory)Tag flora, fauna, and minerals through your visor; uploads pay out in Nanites.
 879. Terrain Manipulator, 3.4, No Man's Sky
 #(Tag:earth)Reshape whole landscapes, mine underfoot, and flatten base sites with multitool modes.
 880. Boltcaster, 2.8, No Man's Sky
 #The trusty starting multitool weapon; rapid plasma bolts with endless upgrades.
 881. Blaze Javelin, 3.6, No Man's Sky
-#A charged railbeam that pierces rock and sentinels alike.
+#(Tag:fire)(Tag:weapon)A charged railbeam that pierces rock and sentinels alike.
 882. Hyperdrive, 4.6, No Man's Sky
 #(Tag:teleport)Fold space between stars on warp cells; the whole galaxy opens up.
 883. Minotaur Exocraft, 5.2, No Man's Sky
 #A piloted mech suit with mining laser, stomp jets, and a cockpit with a view.
 884. Living Ship, 6.8, No Man's Sky
-#A grown void-egg starship that is alive: it gestates its own upgrades, bleeds, and sings in transit.
+#(Tag:vehicle)A grown void-egg starship that is alive: it gestates its own upgrades, bleeds, and sings in transit.
 885. Foundation, 2.4, Dyson Sphere Program
 #Pave any terrain flat for building; the entire factory stands on these.
 886. Solar Sail, 3.0, Dyson Sphere Program
-#Paper-thin orbital mirrors, launched by the thousand to begin the swarm.
+#(Tag:fire)Paper-thin orbital mirrors, launched by the thousand to begin the swarm.
 887. Proliferator, 3.8, Dyson Sphere Program
 #A spray that overclocks production lines and multiplies their output.
 888. Strange Matter, 5.2, Dyson Sphere Program
-#Exotic late-game material for the strangest recipes in the tech tree. A lump the size of a coin weighs as much as an anvil, holds staggering energy, and forges components no mundane material can match, if you have the tools and knowledge to work it safely.
+#(Tag:alter)Exotic late-game material for the strangest recipes in the tech tree. A lump the size of a coin weighs as much as an anvil, holds staggering energy, and forges components no mundane material can match, if you have the tools and knowledge to work it safely.
 889. Antimatter Fuel Rod, 6.2, Dyson Sphere Program
-#Dense annihilation fuel that keeps Icarus flying between stars.
+#(Tag:catalyst)(Tag:resource)Dense annihilation fuel that keeps Icarus flying between stars.
 890. EM Rail Ejector, 4.4, Dyson Sphere Program
 #A mass driver that hurls solar sails and small carriers into orbit.
 891. Gravity Gloves, 3.8, Half-Life
-#Flick your wrists to snatch distant objects and ammo straight into your hands. Everyone calls them the Russells.
+#(Tag:fist)(Tag:gravity)(Tag:mundane)Flick your wrists to snatch distant objects and ammo straight into your hands. Everyone calls them the Russells.
 892. Combine Pistol, 3.0, Half-Life
-#Standard Combine sidearm with reflex sight and resin upgrades.
+#(Tag:gun)(Tag:weapon)Standard Combine sidearm with reflex sight and resin upgrades.
 893. Combine Shotgun, 3.6, Half-Life
-#Double-barrel burst cannon that deletes headcrabs up close.
+#(Tag:gun)Double-barrel burst cannon that deletes headcrabs up close.
 894. Combine SMG, 3.4, Half-Life
-#Rapid-fire Combine automatic with an energy-ball secondary fire.
+#(Tag:gun)Rapid-fire Combine automatic with an energy-ball secondary fire.
 895. Xen Grenade, 2.8, Half-Life
-#Volatile Xen flora that detonates seconds after you grab it. Throw fast.
+#(Tag:consumable)Volatile Xen flora that detonates seconds after you grab it. Throw fast.
 896. Climbing Axe, 2.4, Tomb Raider
-#Lara's iconic axe: climbs ice walls, pries doors, and ends fights.
+#(Tag:movement)(Tag:weapon)Lara's iconic axe: climbs ice walls, pries doors, and ends fights.
 897. Recurve Bow, 2.8, Tomb Raider
-#Silent with retrievable arrows; rope, fire, and poison upgrades with tinkering.
+#(Tag:bow)(Tag:weapon)Silent with retrievable arrows; rope, fire, and poison upgrades with tinkering.
 898. Heavy Pistol, 2.6, Tomb Raider
-#Hard-hitting sidearm for when stealth stops being an option.
+#(Tag:gravity)(Tag:gun)(Tag:weapon)Hard-hitting sidearm for when stealth stops being an option.
 899. Rope Ascender, 3.4, Tomb Raider
-#Motorized ascender that zips you up ropes and rappels you down cliffs.
+#(Tag:flexible)(Tag:tool)Motorized ascender that zips you up ropes and rappels you down cliffs.
 900. Seaglide, 2.6, Subnautica
 #Handheld underwater scooter with light and sonar map; every diver's first love.
 901. Seamoth, 4.2, Subnautica
 #(Tag:insectoid)Nippy one-person sub with crush-depth upgrades and a perimeter defense zapper.
 902. Prawn Suit, 5.2, Subnautica
-#Powered exosuit with drill and grapple arms, for punching leviathans in the face.
+#(Tag:armor)Powered exosuit with drill and grapple arms, for punching leviathans in the face.
 903. Cyclops, 6.4, Subnautica
 #A full submarine base with silent running, decoys, and room for a Seamoth in the belly.
 904. Habitat Builder, 3.6, Subnautica
-#Prints seabase modules from titanium anywhere with a flat-ish seabed.
+#(Tag:building)Prints seabase modules from titanium anywhere with a flat-ish seabed.
 905. Stasis Rifle, 4.0, Subnautica
 #(Tag:ice)(Tag:time)Freezes anything in a time bubble, up to and including Reapers. Briefly.
 906. Thermoblade, 3.0, Subnautica
@@ -1813,15 +1813,15 @@
 907. Ultra Glide Fins, 2.4, Subnautica
 #Slick fins that make you properly fast underwater.
 908. Focus, 3.2, Horizon Zero Dawn
-#Ear-mounted AR that scans machines, tags weak points, and replays echoes of the past.
+#(Tag:catalyst)Ear-mounted AR that scans machines, tags weak points, and replays echoes of the past.
 909. Shield-Weaver, 5.6, Horizon Zero Dawn
-#Ancient power armor projecting a rechargeable energy shield around its wearer.
+#(Tag:shield)Ancient power armor projecting a rechargeable energy shield around its wearer.
 910. Ropecaster, 3.4, Horizon Zero Dawn
 #Pins machines down with tethers; enough ropes will tie down a Thunderjaw.
 911. Tripcaster, 3.2, Horizon Zero Dawn
 #Lays shock, fire, and explosive tripwires for the ambush engineer.
 912. Blast Sling, 3.8, Horizon Zero Dawn
-#Lobs proximity bombs in a satisfying arc with a bigger boom. Carries six bombs; ammunition restocks every 24 hours.
+#(Tag:bow)(Tag:kinetic)Lobs proximity bombs in a satisfying arc with a bigger boom. Carries six bombs; ammunition restocks every 24 hours.
 913. Tearblaster, 3.6, Horizon Zero Dawn
 #Close-range cannon blast that rips armor plates and components clean off.
 914. Black Lotus, 8.6, MTG
@@ -1833,79 +1833,79 @@
 917. Mox Sapphire, 7.4, MTG
 #Zero-mana artifact that taps for blue; the priciest of the five Moxen.
 918. Mox Jet, 7.2, MTG
-#Zero-mana artifact that taps for black. Power Nine fast mana.
+#(Tag:vehicle)Zero-mana artifact that taps for black. Power Nine fast mana.
 919. Mox Emerald, 7.2, MTG
 #Zero-mana artifact that taps for green. Power Nine fast mana.
 920. Charge Rifle, 4.4, RimWorld
-#Spacer-tech pulse rifle that outshoots anything short of a charge lance.
+#(Tag:gun)(Tag:movement)(Tag:weapon)Spacer-tech pulse rifle that outshoots anything short of a charge lance.
 921. Charge Lance, 4.8, RimWorld
-#Long-range armor-melting spacer rifle; one shot can delete a torso.
+#(Tag:movement)(Tag:polearm)(Tag:weapon)Long-range armor-melting spacer rifle; one shot can delete a torso.
 922. Healer Mech Serum, 5.4, RimWorld
-#Glitterworld nanomachines that regenerate scars, missing organs, and chronic ills.
+#(Tag:consumable)(Tag:elixir)(Tag:tech)(Tag:vehicle)Glitterworld nanomachines that regenerate scars, missing organs, and chronic ills.
 923. Resurrector Mech Serum, 6.2, RimWorld
-#Brings back the recently dead, full resurrection psychosis side effects included.
+#(Tag:consumable)(Tag:elixir)(Tag:life)(Tag:tech)(Tag:vehicle)Brings back the recently dead, full resurrection psychosis side effects included.
 924. Tranquilizer Rifle, 3.2, Deus Ex
-#Long-range nonlethal takedowns; one dart naps a guard for minutes.
+#(Tag:gun)(Tag:weapon)Long-range nonlethal takedowns; one dart naps a guard for minutes.
 925. Zenith 10mm Pistol, 2.8, Deus Ex
-#Custom compact pistol, whisper-quiet with a suppressor and laser sight.
+#(Tag:gun)(Tag:weapon)Custom compact pistol, whisper-quiet with a suppressor and laser sight.
 926. Nanoceramic Blade, 3.6, Deus Ex
-#Monomolecular sword that cuts through armor, bots, and bad decisions.
+#(Tag:blade)(Tag:material)(Tag:weapon)Monomolecular sword that cuts through armor, bots, and bad decisions.
 927. Service Weapon, 5.0, Control
 #The Director's shapeshifting gun: Spin, Grip, Shatter, Pierce, and Charge forms in one impossible object.
 928. Hotline, 4.4, Control
 #A red Bakelite phone that calls the Board directly, geometry optional. The Board answers in cryptic instructions, sideways comments, and fragments of backstory that turn out to matter later.
 929. Hedron Resonance Amplifier, 4.6, Control
-#Wearable Hedron tech that shields the mind from Hiss resonance.
+#(Tag:sound)Wearable Hedron tech that shields the mind from Hiss resonance.
 930. Vacpack, 3.0, Slime Rancher
 #Vacuum, shoot, and store slimes, food, and plorts with four color-coded tanks.
 931. Slime Key, 3.4, Slime Rancher
 #(Tag:amorphous)A statue-shaped key that opens Slime Gates into new ranch zones.
 932. CCCC Ion Laser, 5.0, Genome Guardian
-#A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. A piercing hitscan laser with near-perfect accuracy and extreme range: devastating pinpoint damage with a slow fire rate.
+#(Tag:light)(Tag:tech)A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. A piercing hitscan laser with near-perfect accuracy and extreme range: devastating pinpoint damage with a slow fire rate.
 933. AAAA Minigun, 4.2, Genome Guardian
-#A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. Spews a torrent of miniscule projectiles, taking 3 seconds to spool up, with decent DPS within a cone.
+#(Tag:gun)A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. Spews a torrent of miniscule projectiles, taking 3 seconds to spool up, with decent DPS within a cone.
 934. GGG Wavequake, 3.8, Genome Guardian
-#A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. Slowly fires a full circle of slow-moving midrange waves carrying a strong punch of knockback along with decent damage.
+#(Tag:earth)A handheld weapon that looks and feels like part of a microbe. Instead of ammunition, it recharges from your bio-energy, and it tends to overheat when overused. Slowly fires a full circle of slow-moving midrange waves carrying a strong punch of knockback along with decent damage.
 935. Idol of Rebirth, 4.6, Divinity Original Sin
-#A full idol that automatically resurrects its bearer once, then crumbles.
+#(Tag:life)A full idol that automatically resurrects its bearer once, then crumbles.
 936. Resurrection Scroll, 3.0, Divinity Original Sin
-#Bring an ally back mid-fight; every tactician carries a stack.
+#(Tag:grimoire)(Tag:life)Bring an ally back mid-fight; every tactician carries a stack.
 937. Q-Up Coin, 2.0, Q-UP
-#The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty, totally fair, and immune to all luck, fate, and probability manipulation, so its verdict settles any dispute beyond argument.
+#(Tag:resource)The perfectly fair coin at the heart of the coin-flipping esport. Fifty-fifty, totally fair, and immune to all luck, fate, and probability manipulation, so its verdict settles any dispute beyond argument.
 938. Identity Disc, 4.0, Tron 2.0
 #A glowing identity disc worn on the back: memory, weapon, and backup in one. Grants disc abilities, a returning energy throw, plus disc subroutines like Seeker or Firewall, and stores a backup that can restore you if you're derezzed. It doesn't make you a program, and the backup restores you rather than cloning an independent copy.
 939. Impossible Shard, 4.6, Q-UP
-#A shard of Impossible rarity; slotting it multiplies everything your build does.
+#(Tag:resource)A shard of Impossible rarity; slotting it multiplies everything your build does.
 940. Passenger Blimp, 3.4, Cities Skylines
 #A lumbering passenger blimp that ferries you and up to a dozen passengers or a hold of cargo through the skies in style, slow, comfortable, and landing anywhere flat, needing only time and clear weather.
 941. Space Elevator, 7.2, Cities Skylines
-#A unique-building space elevator you can raise wherever you settle: a tethered beanstalk that lifts you and freight straight into orbit and back, cheaply and endlessly, once anchored, it cannot be moved.
+#(Tag:space)A unique-building space elevator you can raise wherever you settle: a tethered beanstalk that lifts you and freight straight into orbit and back, cheaply and endlessly, once anchored, it cannot be moved.
 942. Instant Camera, 1.8, Life is Strange
 #(Tag:time)An instant camera for capturing the moments that matter, before you rewind them.
 943. Planetary Shield, 5.8, Dyson Sphere Program
-#A planet-wide shield generator that shrugs off anything short of a star going out.
+#(Tag:dimension)(Tag:shield)(Tag:vehicle)A planet-wide shield generator that shrugs off anything short of a star going out.
 944. Vertical Launching Silo, 5.0, Dyson Sphere Program
 #A silo that launches rockets, warpers, and sphere components straight into orbit.
 945. Power Armor, 4.6, Factorio
-#Modular power armor with room for exoskeletons, shields, batteries, and a personal fusion reactor.
+#(Tag:armor)Modular power armor with room for exoskeletons, shields, batteries, and a personal fusion reactor.
 946. Personal Roboport, 4.2, Factorio
 #A wearable roboport that deploys your own construction robots wherever you stand.
 947. Blueprint Book, 3.6, Factorio
-#A book of stamped-down factory blueprints recorded by scanning layouts you have built. Stamp ghost-images of entire production blocks, walls, or furnace rows at once; construction robots, yours or borrowed, then build them for real, consuming materials from your stock, as the book conjures no matter itself. Synergises with any Tinker, construction, or automation abilities, which can feed it new designs and supply the builders and belts to realise them.
+#(Tag:grimoire)A book of stamped-down factory blueprints recorded by scanning layouts you have built. Stamp ghost-images of entire production blocks, walls, or furnace rows at once; construction robots, yours or borrowed, then build them for real, consuming materials from your stock, as the book conjures no matter itself. Synergises with any Tinker, construction, or automation abilities, which can feed it new designs and supply the builders and belts to realise them.
 948. Scout Launcher, 2.8, Outer Wilds
-#A wrist-mounted launcher firing a reusable camera probe that photographs the unknown.
+#(Tag:gun)A wrist-mounted launcher firing a reusable camera probe that photographs the unknown.
 949. Signalscope, 2.6, Outer Wilds
-#A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
+#(Tag:tech)A zoomable signal-finder that tunes into quantum fluctuations, distress calls, and music.
 950. Ash Twin Project, 7.8, Outer Wilds
 #(Tag:time)The Nomai station at the heart of the 22-minute loop. You hold its secrets: you can detect time loops and anomalies, navigate them safely, and, most precious of all, retain your memories across resets while others forget.
 951. The Generator, 6.8, Frostpunk
-#A towering coal-fired Generator you can raise at any settlement: it burns coal, or wood, oil, and worse in a pinch, to radiate life-saving warmth across whole districts through even supernatural frost. The city lives or dies with it, so you must feed it fuel and hands around the clock.
+#(Tag:machine)(Tag:production)A towering coal-fired Generator you can raise at any settlement: it burns coal, or wood, oil, and worse in a pinch, to radiate life-saving warmth across whole districts through even supernatural frost. The city lives or dies with it, so you must feed it fuel and hands around the clock.
 952. Steam Hub, 4.0, Frostpunk
-#A portable steam hub extending the Generator's warmth to distant districts.
+#(Tag:water)A portable steam hub extending the Generator's warmth to distant districts.
 953. Atmo Suit, 3.2, Oxygen Not Included
-#A sealed suit with its own oxygen supply for space, magma, and chlorine zones alike.
+#(Tag:armor)A sealed suit with its own oxygen supply for space, magma, and chlorine zones alike.
 954. Super Computer, 2.8, Oxygen Not Included
-#A humming research station that turns raw data and power into steady research progress.
+#(Tag:machine)(Tag:tech)A humming research station that turns raw data and power into steady research progress.
 955. Drakkar, 4.2, Valheim
 #A clinker-built Viking longship that outruns sea serpents with the wind behind it.
 956. Megingjord, 4.8, Valheim
@@ -1913,45 +1913,45 @@
 957. Wishbone, 3.6, Valheim
 #A dowsing wishbone that tugs toward buried silver and hidden treasure.
 958. Pickaxe, 2.2, Deep Rock Galactic
-#A tempered pickaxe for rock, dirt, and the occasional glyphid skull.
+#(Tag:tool)A tempered pickaxe for rock, dirt, and the occasional glyphid skull.
 959. Flare Gun, 2.4, Deep Rock Galactic
-#Fires a burning flare that sticks where it lands and lights up the whole cave.
+#(Tag:consumable)(Tag:gun)(Tag:weapon)Fires a burning flare that sticks where it lands and lights up the whole cave.
 960. Terrain Tool, 2.8, Astroneer
 #(Tag:earth)A deformable-terrain multitool for digging, flattening, and analyzing alien soil.
 961. Shuttle, 3.8, Astroneer
-#A single-seat interplanetary shuttle; pack solid fuel and pick a landing zone.
+#(Tag:vehicle)A single-seat interplanetary shuttle; pack solid fuel and pick a landing zone.
 962. RTG, 4.4, Astroneer
 #A radioisotope thermoelectric generator delivering endless quiet power.
 963. Spiked Baseball Bat, 2.4, Project Zomboid
 #A Louisville classic wrapped in nails; quiet, reliable, and permanently bloody.
 964. Sledgehammer, 2.8, Project Zomboid
-#Destroys walls, doors, and skulls with equal enthusiasm. Heavy, though.
+#(Tag:bludgeon)Destroys walls, doors, and skulls with equal enthusiasm. Heavy, though.
 965. Generator, 3.0, Project Zomboid
 #(Tag:ice)A portable gas generator that keeps the lights and freezers on after the grid dies.
 966. Galaxy Sword, 5.2, Stardew Valley
-#A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen. It never dulls or breaks, and cuts clean through armor, monsters, and magic-resistant hides far beyond mundane steel, though it grants no magic of its own.
+#(Tag:blade)(Tag:weapon)A sword forged from a galaxy soul; the finest blade the Adventurer's Guild has ever seen. It never dulls or breaks, and cuts clean through armor, monsters, and magic-resistant hides far beyond mundane steel, though it grants no magic of its own.
 967. Junimo Hut, 3.8, Stardew Valley
 #A hut housing Junimos who emerge each morning to harvest your crops for you.
 968. SHIELD Flying Car, 4.0, Marvel
-#Coulson's cherry-red 1962 Corvette convertible with VTOL flight, machine guns, and flamethrowers. She has a name, and it is Lola.
+#(Tag:shield)(Tag:vehicle)Coulson's cherry-red 1962 Corvette convertible with VTOL flight, machine guns, and flamethrowers. She has a name, and it is Lola.
 969. Darkhold, 7.6, MCU
 #The Book of the Damned, transcribed from Wundagore's dark dimension; every spell in it corrupts its reader.
 970. Book of Vishanti, 7.2, MCU
-#The collected white magic counterweight to the Darkhold; its defensive spells answer nearly anything.
+#(Tag:grimoire)The collected white magic counterweight to the Darkhold; its defensive spells answer nearly anything.
 971. Ten Rings, 6.4, MCU
-#Ten bracelets of alien origin granting longevity, concussive blasts, and a small army's obedience.
+#(Tag:accessory)Ten bracelets of alien origin granting longevity, concussive blasts, and a small army's obedience.
 972. Loki's Sceptre, 7.0, MCU
 #The Chitauri sceptre housing the Mind Stone, bending minds and firing energy alike.
 973. Staff of the Living Tribunal, 4.6, MCU
-#A mystic staff that cracks the ground with golden force and pries open sealed things.
+#(Tag:catalyst)A mystic staff that cracks the ground with golden force and pries open sealed things.
 974. TemPad, 5.8, MCU
 #A TVA time-pad that opens Time Doors to anywhen; pruning charges not included.
 975. Time Stick, 4.6, MCU
 #(Tag:time)A TVA Time Stick that alters a target's flow of time, or disintegrates organic and inorganic targets alike, sending them to the Void. Touch range only.
 976. Reset Charge, 5.2, MCU
-#A timeline-nuking charge that prunes a whole branched reality back to the Sacred Timeline.
+#(Tag:movement)A timeline-nuking charge that prunes a whole branched reality back to the Sacred Timeline.
 977. Yaka Arrow, 4.4, MCU
-#A whistle-guided Yaka arrow that carves through targets and curves back to hand.
+#(Tag:weapon)A whistle-guided Yaka arrow that carves through targets and curves back to hand.
 978. Yondu's Fin, 3.8, MCU
 #The head-mounted Centaurian fin that conducts the Yaka arrow by whistle alone.
 979. Photostatic Veil, 3.4, MCU
@@ -1961,7 +1961,7 @@
 981. Time Loop Cave, 5.2, Palm Springs
 #(Tag:time)A desert cave that traps whoever enters during a tremor in a repeating day. Rehearse anything forever; rumor says one explosion inside, mid-quake, gets you out.
 982. Electric Locomotive, 4.6, Satisfactory
-#A multi-wagon electric freight locomotive that hauls entire factories' output on your rail lines.
+#(Tag:electric)A multi-wagon electric freight locomotive that hauls entire factories' output on your rail lines.
 983. Freight Wagon, 3.4, Satisfactory
 #A cavernous freight car that follows your locomotive anywhere rails go.
 984. Locomotive, 4.2, Factorio
@@ -1969,13 +1969,13 @@
 985. Cargo Wagon, 3.2, Factorio
 #A steel cargo wagon that loads and unloads itself at smart stations.
 986. Rail Car, 3.0, Astroneer
-#A click-together rail car for the railway you really should have built sooner.
+#(Tag:vehicle)A click-together rail car for the railway you really should have built sooner.
 987. Mugen Train, 5.6, Demon Slayer
-#An eight-car demon fused with its own train, bound to your service as transport; its sleeping passengers never wake unless you allow it.
+#(Tag:vehicle)An eight-car demon fused with its own train, bound to your service as transport; its sleeping passengers never wake unless you allow it.
 988. Puffing Tom, 4.4, One Piece
 #The Sea Train that runs on water rails between Water 7 and its neighbors, rocketing through Aqua Laguna.
 989. Minecart Shotgun, 4.0, Dwarf Fortress
-#A shotgun rigged to a high-speed minecart loop; anything in the corridor ceases to be a problem.
+#(Tag:gun)A shotgun rigged to a high-speed minecart loop; anything in the corridor ceases to be a problem.
 990. Ishimura Tram, 3.2, Dead Space
 #A complete tram network in a box: track, cars, and stations that unfold wherever you lay them. Ship and necromorphs not included.
 991. Ecliptic Express, 5.0, Resident Evil
@@ -1983,9 +1983,9 @@
 992. Powered Rail, 2.2, Minecraft
 #Golden rails that boost any passing minecart, with or without redstone attached.
 993. Spirit Train, 4.8, The Legend of Zelda
-#The sacred Spirit Tracks engine, blessed rails and all; evil cannot board without an invitation.
+#(Tag:spirit)(Tag:vehicle)The sacred Spirit Tracks engine, blessed rails and all; evil cannot board without an invitation.
 994. Passing Train, 2.0, Stardew Valley
-#On certain days a freight train rumbles through the valley, shaking loose coal, wood, and geodes.
+#(Tag:vehicle)On certain days a freight train rumbles through the valley, shaking loose coal, wood, and geodes.
 995. Molentary Express, 4.2, Professor Layton
 #A luxury puzzle-box express where every passenger is lying and the dining car hides a secret.
 996. Galaxy Express 999, 6.8, Galaxy Express 999
@@ -1995,13 +1995,13 @@
 998. Snowpiercer, 6.6, Snowpiercer
 #A thousand-and-one-car perpetual-motion train, yours to command, laying its own track wherever you point it. Frozen apocalypse and class uprising not included.
 999. The Engine, 6.0, Snowpiercer
-#Wilford's sacred Engine, yours to install: eternal heat and power for a settlement, a ship, or a very warm room.
+#(Tag:machine)(Tag:tech)Wilford's sacred Engine, yours to install: eternal heat and power for a settlement, a ship, or a very warm room.
 1000. Polar Express, 4.6, The Polar Express
 #A Christmas Eve steam train to the North Pole for children who still believe loudly enough.
 1001. Orient Express, 3.6, Agatha Christie
 #The Simplon-Orient luxury express, first class only, murderer probably included.
 1002. Source Code, 5.4, Source Code
-#A program that drops your mind into a doomed train passenger's final eight minutes, looping with memories intact until you find the bomb. Your body waits safely outside.
+#(Tag:tech)A program that drops your mind into a doomed train passenger's final eight minutes, looping with memories intact until you find the bomb. Your body waits safely outside.
 1003. Jules Verne Time Train, 7.2, Back to the Future
 #(Tag:time)Doc's flying steam-locomotive time machine, running on steam and pure showmanship.
 1004. Spatchcock, 4.0, Sunless Skies
@@ -2009,41 +2009,41 @@
 1005. War Rig, 4.8, Mad Max
 #The armored tanker rig: guzzoline, mothers' milk, and one very shiny steering wheel.
 1006. Armored Train, 5.4, Battlefield
-#A behemoth armored battle train bristling with cannons; the track is more of a suggestion.
+#(Tag:armor)(Tag:vehicle)A behemoth armored battle train bristling with cannons; the track is more of a suggestion.
 1007. Aurora, 5.0, Metro
 #A working steam locomotive hauling the last livable train yards east through the radiation.
 1008. Sea Railway, 3.8, Studio Ghibli
-#A one-way spectral rail line gliding over open ocean to Swamp Bottom, departing every dawn whether or not you are aboard. Fare is a single vivid memory paid at the gate; the train carries you and whatever you can hold, never deviates, never stops between stations, and cannot be ridden twice in the same direction.
+#(Tag:water)A one-way spectral rail line gliding over open ocean to Swamp Bottom, departing every dawn whether or not you are aboard. Fare is a single vivid memory paid at the gate; the train carries you and whatever you can hold, never deviates, never stops between stations, and cannot be ridden twice in the same direction.
 1009. LLM Workstation Laptop, 3.6, Generic
-#A top-spec laptop with an absurd amount of VRAM that runs a genuinely helpful AI assistant entirely offline. Battery life: optimistic.
+#(Tag:mundane)A top-spec laptop with an absurd amount of VRAM that runs a genuinely helpful AI assistant entirely offline. Battery life: optimistic.
 1010. Shake the Tree, 6.0, Generic
-#(Tree)(Meta:shake) Single use. Shuffle which entry sits on every locked node. Positions and connections don't move, and every node keeps a similar rarity.
+#(Tag:meta)(Tag:nature)(Tree)(Meta:shake) Single use. Shuffle which entry sits on every locked node. Positions and connections don't move, and every node keeps a similar rarity.
 1011. ChaosQuake, 7.5, Generic
-#(Tree)(Meta:chaosquake) Single use. Shuffle which entry sits on every node, locked or unlocked alike. Your unlocked nodes keep their places but not their faces; rarities stay similar.
+#(Tag:earth)(Tag:meta)(Tree)(Meta:chaosquake) Single use. Shuffle which entry sits on every node, locked or unlocked alike. Your unlocked nodes keep their places but not their faces; rarities stay similar.
 1012. Gambler's Bronze Die, 1.3, Generic
-#(Tree)(Meta:gamble:2) Unlocking this die lets you gamble 2 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:material)(Tag:meta)(Tree)(Meta:gamble:2) Unlocking this die lets you gamble 2 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1013. Gambler's Silver Die, 2.3, Generic
-#(Tree)(Meta:gamble:4) Unlocking this die lets you gamble 4 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:earth)(Tag:meta)(Tree)(Meta:gamble:4) Unlocking this die lets you gamble 4 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1014. Gambler's Gold Die, 3.3, Generic
-#(Tree)(Meta:gamble:6) Unlocking this die lets you gamble 6 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:earth)(Tag:meta)(Tree)(Meta:gamble:6) Unlocking this die lets you gamble 6 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1015. Gambler's Platinum Die, 4.3, Generic
-#(Tree)(Meta:gamble:10) Unlocking this die lets you gamble 10 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:meta)(Tree)(Meta:gamble:10) Unlocking this die lets you gamble 10 awarded tickets: roll a d20 for each (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1016. Gambler's Diamond Die, 5.3, Generic
-#(Tree)(Meta:gamble:10)(Meta:gamble-reroll:1) Unlocking this die lets you gamble 10 awarded tickets, and all your die rolls reroll natural 1s. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:meta)(Tree)(Meta:gamble:10)(Meta:gamble-reroll:1) Unlocking this die lets you gamble 10 awarded tickets, and all your die rolls reroll natural 1s. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1017. Gambler's Legendary Die, 6.3, Generic
-#(Tree)(Meta:gamble:12)(Meta:gamble-reroll:5) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 5s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:meta)(Tree)(Meta:gamble:12)(Meta:gamble-reroll:5) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 5s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1018. Gambler's Mythical Die, 7.3, Generic
-#(Tree)(Meta:gamble:12)(Meta:gamble-reroll:7) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 7s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:meta)(Tree)(Meta:gamble:12)(Meta:gamble-reroll:7) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 7s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1019. Gambler's Divine Die, 8.3, Generic
-#(Tree)(Meta:gamble:12)(Meta:gamble-reroll:9) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 9s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:divine)(Tag:holy)(Tag:meta)(Tree)(Meta:gamble:12)(Meta:gamble-reroll:9) Unlocking this die lets you gamble 12 awarded tickets, and all your die rolls reroll 9s and below. Each gamble rolls a d20 (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1020. Gambler's Transcendent Die, 9.3, Generic
-#(Tree)(Meta:gamble:16)(Meta:gamble-twice) Unlocking this die lets you gamble 16 awarded tickets, and every gamble gets a second d20 roll whenever the first roll isn't a natural 20. Each roll uses the same table (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
+#(Tag:card)(Tag:meta)(Tree)(Meta:gamble:16)(Meta:gamble-twice) Unlocking this die lets you gamble 16 awarded tickets, and every gamble gets a second d20 roll whenever the first roll isn't a natural 20. Each roll uses the same table (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1021. Morph Ball, 4.6, Metroid
-#(Tech) Compress into an armored rolling sphere a third of your height, fast and nearly silent. Lay energy bombs, three active at a time, and boost-charge for a destructive burst of speed.
+#(Tag:transformation)(Tech) Compress into an armored rolling sphere a third of your height, fast and nearly silent. Lay energy bombs, three active at a time, and boost-charge for a destructive burst of speed.
 1022. Varia Suit, 5.5, Metroid
-#(Tech) Powered exosuit with major damage reduction, full heat and cold immunity, and an arm cannon firing charged plasma bolts. Heavy, obvious, and hungry for energy cells.
+#(Tag:armor)(Tech) Powered exosuit with major damage reduction, full heat and cold immunity, and an arm cannon firing charged plasma bolts. Heavy, obvious, and hungry for energy cells.
 1023. Gravity Suit, 5.7, Metroid
-#(Tech) Upgraded powered exosuit that moves through liquid, lava, and crushing gravity as though they were air, with greater defense than lesser suits. Same appetite for energy cells.
+#(Tag:armor)(Tag:gravity)(Tech) Upgraded powered exosuit that moves through liquid, lava, and crushing gravity as though they were air, with greater defense than lesser suits. Same appetite for energy cells.
 1024. Birthing Pod, 5.8, MTG
 #Feed this biomechanical pod a living creature or minion to dissolve it and birth a slightly stronger creature of a related kind. One hatching at a time; the pod hungers again within a day.
 1025. Mimic Vat, 5.5, MTG
@@ -2059,25 +2059,25 @@
 1030. Lucky Tooth, 5.3, Hades
 #A Cerberus fang that takes a killing blow for you instead, leaving you barely standing. Reforms by the next dawn, and only while you carry no other death-cheating trinket.
 1031. Stygius, the Stygian Blade, 5.9, Hades
-#The prince's underworld sword with shifting aspects: swift slashes, a lunging special, and a nova that spends your casting stone for ruinous damage. It never dulls and never leaves your hand unasked.
+#(Tag:blade)(Tag:weapon)The prince's underworld sword with shifting aspects: swift slashes, a lunging special, and a nova that spends your casting stone for ruinous damage. It never dulls and never leaves your hand unasked.
 1032. Pierced Butterfly, 5.4, Hades
 #A keepsake butterfly that drinks in flawless victories: each battle you end untouched sharpens all your attacks noticeably, stacking until something finally lands a hit and resets it.
 1033. Fishing Rod, 3.8, Hades
-#A simple rod that catches something worthwhile in any liquid, including lava, chaos, and the Styx: mostly fish, occasionally riches, rarely something that bites back. One notable catch per day; endless minnows.
+#(Tag:catalyst)A simple rod that catches something worthwhile in any liquid, including lava, chaos, and the Styx: mostly fish, occasionally riches, rarely something that bites back. One notable catch per day; endless minnows.
 1034. Arcana Deck, 5.5, Hades 2
-#A deck of major arcana you activate within your grasp: the Sorceress quickens casts, the Titan hardens skin, the Huntress sharpens strikes, and more. Deeper grasp holds more cards.
+#(Tag:card)A deck of major arcana you activate within your grasp: the Sorceress quickens casts, the Titan hardens skin, the Huntress sharpens strikes, and more. Deeper grasp holds more cards.
 1035. Ghost Onion, 5.2, Hades 2
 #(Tag:spirit)A spectral onion that revives you once per battle at half strength with full energy, then needs a full rest to regrow. Smells faintly of the surface.
 1036. Descura, the Witch's Staff, 5.4, Hades 2
-#The witch's staff: forceful bolts, a charged omega blast that consumes magick, and a special that lobs your casting stone and recalls it. Never runs dry, only runs hot.
+#(Tag:catalyst)(Tag:magic)The witch's staff: forceful bolts, a charged omega blast that consumes magick, and a special that lobs your casting stone and recalls it. Never runs dry, only runs hot.
 1037. Arachne's Cocoon, 4.8, Hades 2
 #A spool of Arachne's silk that wraps you in ablative armor cocoons, each absorbing a full hit before bursting. Three cocoons per rest; the silk itches terribly.
 1038. Old Spiked Collar, 5.2, Hades
 #A spiked collar granting a reserve of bonus health that absorbs harm first. The reserve refills between battles; Cerberus has never noticed it missing.
 1039. Pom Blossom, 5.5, Hades
-#A divine flower that grows a random power a full rank after every major battle. Minor scuffles don't interest it.
+#(Tag:nature)A divine flower that grows a random power a full rank after every major battle. Minor scuffles don't interest it.
 1040. Skull Earring, 5.3, Hades
-#An earring that makes your attacks hit notably harder while you are badly hurt. Stopping to heal wastes its attention.
+#(Tag:accessory)(Tag:necro)An earring that makes your attacks hit notably harder while you are badly hurt. Stopping to heal wastes its attention.
 1041. White Antler, 5.4, Hades
 #An antler charm making critical strikes far more likely; clean hits find weak points on their own.
 1042. Lambent Plume, 5.5, Hades
@@ -2085,21 +2085,21 @@
 1043. Harpy Feather Duster, 4.6, Hades
 #(Tag:avian)A duster that makes breakables and containers hide more valuables. Dust first, loot second.
 1044. Cosmic Egg, 5.6, Hades
-#A cosmic egg that thins local reality: chaotic phenomena and strangers seek you out, and offerings made to Chaos, such as Chaos Gate sacrifices, run stronger.
+#(Tag:growing)A cosmic egg that thins local reality: chaotic phenomena and strangers seek you out, and offerings made to Chaos, such as Chaos Gate sacrifices, run stronger.
 1045. Luckier Tooth, 5.3, Hades 2
 #A luckier tooth that cheats death once per venture at partial strength. Skelly swears this one works better than the last one.
 1046. Knuckle Bones, 5.2, Hades 2
-#Knucklebones that make your guardians and companions hit harder and endure longer. They rattle approvingly at good plans.
+#(Tag:bio)(Tag:fist)(Tag:material)(Tag:necro)Knucklebones that make your guardians and companions hit harder and endure longer. They rattle approvingly at good plans.
 1047. Left Sock, 0.1, Generic
 #A single left sock. Its partner is never found, in any world.
 1048. Dead Battery, 0.2, Generic
-#A battery that is mysteriously always dead. Devices reject it on sight.
+#(Tag:resource)A battery that is mysteriously always dead. Devices reject it on sight.
 1049. Allen Key, 0.2, Generic
-#A very specific size that fits nothing you own. Indestructible by neglect.
+#(Tag:tool)A very specific size that fits nothing you own. Indestructible by neglect.
 1050. Fortune Cookie (blank), 0.3, Generic
-#The fortune slip is blank. The cookie is stale. Interpret freely.
+#(Tag:consumable)(Tag:divination)The fortune slip is blank. The cookie is stale. Interpret freely.
 1051. Hotel Pen, 0.1, Generic
-#Writes for exactly one signature, then gives up. Stolen legally.
+#(Tag:mundane)Writes for exactly one signature, then gives up. Stolen legally.
 1052. Traffic Cone (mini), 0.3, Generic
 #A miniature traffic cone. Directs nothing; respected by no one.
 1053. Single Chopstick, 0.2, Generic
@@ -2111,45 +2111,45 @@
 1056. Takeout Menu (closed), 0.2, Generic
 #Menu for a restaurant that closed years ago. The pictures still look good.
 1057. Empty Missile Tank, 0.4, Metroid
-#An empty missile expansion tank. Holds sandwiches now.
+#(Tag:vehicle)An empty missile expansion tank. Holds sandwiches now.
 1058. Oxygen Candle (half), 0.5, The Expanse
 #Half a chemical oxygen candle. Burns fifteen minutes of thin, tinny air.
 1059. Unobtanium Pebble, 0.3, James Cameron's Avatar
 #A pebble of unobtanium too small to interest anyone. Worth: one (1) pebble.
 1060. Stillsuit Patch Kit, 0.4, Dune
-#Patches stillsuit leaks adequately. Does not patch the wearer's complaining.
+#(Tag:tool)Patches stillsuit leaks adequately. Does not patch the wearer's complaining.
 1061. Mud (thermal), 0.5, Predator
 #(Tag:earth)Special mud that hides body heat from thermal vision while wet. Dries fast; reapply under fire.
 1062. Endoskeleton Finger, 0.4, Terminator
 #One hyperalloy finger. Points accusingly. Cannot be bent, broken, or returned.
 1063. Sonic Screwdriver (dead), 0.6, Doctor Who
-#Does everything except work: the battery is dead and replacements don't exist. Still excellent for pointing.
+#(Tag:sound)(Tag:tool)Does everything except work: the battery is dead and replacements don't exist. Still excellent for pointing.
 1064. Talkie Toaster, 0.5, Red Dwarf
-#A toaster obsessed with toast. Asks about toast. Toasts adequately.
+#(Tag:mundane)A toaster obsessed with toast. Asks about toast. Toasts adequately.
 1065. Towel, 0.4, Hitchhiker
-#A large, mostly clean towel. Hugely useful in ways that only become clear during emergencies.
+#(Tag:mundane)A large, mostly clean towel. Hugely useful in ways that only become clear during emergencies.
 1066. Lawgiver (empty), 0.6, Judge Dredd
 #A voice-activated sidearm with no ammunition and no voice authorization. Makes a convincing paperweight.
 1067. MALP (stuck), 0.5, Stargate
 #A probe stuck in a ditch just past the event horizon. Telemetry works; retrieval does not.
 1068. Cylon Toaster (quiet), 0.4, Battlestar Galactica
-#Makes toast and says nothing. The silence is the point. Probably.
+#(Tag:mundane)Makes toast and says nothing. The silence is the point. Probably.
 1069. Encyclopedia Galactica (abridged), 0.5, Foundation
 #Abridged to one volume. Covers everything briefly and nothing usefully.
 1070. Knife Missile (blunt), 0.6, Culture
-#A formerly godlike smart munition, now blunt and docile. Follows you like a duckling.
+#(Tag:blade)(Tag:weapon)A formerly godlike smart munition, now blunt and docile. Follows you like a duckling.
 1071. DRD (lost), 0.4, Farscape
 #A small repair bot, lost. Fixes tiny things nearby while looking for its Pilot.
 1072. Cardboard Box (soggy), 0.5, Metal Gear
-#Stealth camouflage, waterlogged. Fools no one but smells like rain.
+#(Tag:storage)Stealth camouflage, waterlogged. Fools no one but smells like rain.
 1073. Companion Cube (inert), 0.6, Portal
 #An inert weighted companion cube. Will never threaten to stab you and, in fact, cannot.
 1074. Joja Cola, 0.2, Stardew Valley
 #Corporate cola. Restores a sip of energy and a pang of guilt.
 1075. Bonesaw, 0.5, MTG
-#A bone saw granting +1/+0. Rusty, loud, and eager.
+#(Tag:bio)A bone saw granting +1/+0. Rusty, loud, and eager.
 1076. Shiv (dull), 0.4, Riddick
-#A dull shiv. Shanks poorly. Intimidates only the already intimidated.
+#(Tag:blade)(Tag:dagger)A dull shiv. Shanks poorly. Intimidates only the already intimidated.
 1077. Lethe Water (sip), 0.5, Hades
 #(Tag:water)One sip erases roughly the last minute. Single use; the flask stays empty as a lesson.
 1078. Zat'nik'tel, 4.8, Stargate
@@ -2161,19 +2161,19 @@
 1081. Viper Mk II, 5.4, Battlestar Galactica
 #A Colonial Viper interceptor: brutally fast, manually flown, no networked systems to subvert. Lands like a brick and turns like a rumour.
 1082. Witcher Medallion, 5.0, The Witcher
-#A wolf's-head medallion vibrating near magic, monsters, and curses, stronger for closer and fouler. Useless as jewelry; wolves approve.
+#(Tag:magic)A wolf's-head medallion vibrating near magic, monsters, and curses, stronger for closer and fouler. Useless as jewelry; wolves approve.
 1083. Hearthstone, 5.0, Warcraft
 #Bind to an inn and return to it from anywhere after a short channel, once per day. Binds to inns only; dungeons, war zones, and other people's houses do not count.
 1084. Mimic Beacon, 5.2, XCOM
-#A thrown hologram projector impersonating a soldier badly enough to draw all enemy fire. Lasts until destroyed or disbelieved, whichever comes first.
+#(Tag:tool)A thrown hologram projector impersonating a soldier badly enough to draw all enemy fire. Lasts until destroyed or disbelieved, whichever comes first.
 1085. Combat Stim, 5.0, StarCraft
-#Military-grade combat stims: greatly quickened strikes and dulled pain for a few minutes, at the cost of a chunk of health. Side effects include confidence.
+#(Tag:consumable)Military-grade combat stims: greatly quickened strikes and dulled pain for a few minutes, at the cost of a chunk of health. Side effects include confidence.
 1086. Plant in a Boot, 5.0, WALL-E
 #(Tag:nature)A living plant growing in an old boot: proof that life finds a way. Tends to inspire hope, directives, and mutiny in roughly that order.
 1087. Nano Boost, 5.4, Overwatch
-#An injection granting one ally massive damage and resistance for a short push. Recipient hears heroic music; enemies hear footsteps. One dose; a new dose brews per week.
+#(Tag:tech)An injection granting one ally massive damage and resistance for a short push. Recipient hears heroic music; enemies hear footsteps. One dose; a new dose brews per week.
 1088. Battle-Car, 5.4, Rocket League
-#A supersonic acrobatic rocket car with flip, boost, and demolition manners. Ball not included; walls are load-bearing suggestions. Boost refills from pads and pickups; without it, just a fast car.
+#(Tag:vehicle)A supersonic acrobatic rocket car with flip, boost, and demolition manners. Ball not included; walls are load-bearing suggestions. Boost refills from pads and pickups; without it, just a fast car.
 1089. Facts Given, 5.6, MTG
 #A misprinted card: rip it to roll four gold tickets, keep two, and your nemesis receives the other two.
 1090. Gift and Fiction, 5.4, MTG
@@ -2183,29 +2183,29 @@
 1092. Purrpetual Petz, 3.8, M3GAN
 #An animatronic pet that never needs feeding and judges you silently. Batteries included; affection sold separately.
 1093. Head Key, 5.5, Locke and Key
-#A whispering iron key that unlocks the inside of a willing or restrained head, letting you walk around their memories and rearrange the furniture. What you break in there stays broken.
+#(Tag:tool)A whispering iron key that unlocks the inside of a willing or restrained head, letting you walk around their memories and rearrange the furniture. What you break in there stays broken.
 1094. Anywhere Key, 5.7, Locke and Key
-#A pale key that opens any door onto anywhere you have seen, one trip per turn. Doors remember being used; some start locking themselves.
+#(Tag:tool)A pale key that opens any door onto anywhere you have seen, one trip per turn. Doors remember being used; some start locking themselves.
 1095. Echo Key, 5.2, Locke and Key
-#A key that summons an echo of a dead person: speak their name while turning it in any lock and they appear, knowing full well they are dead and mostly resenting it. They persist only while the key stays turned; remove it and they are gone.
+#(Tag:sound)(Tag:tool)A key that summons an echo of a dead person: speak their name while turning it in any lock and they appear, knowing full well they are dead and mostly resenting it. They persist only while the key stays turned; remove it and they are gone.
 1096. Hextech Gauntlets, 5.5, League of Legends / Arcane
 #(Tag:earth)Enormous hextech brawling gauntlets: seismic punches, shockwave claps, and a shield mode that mostly protects other people from you. Fittings run large.
 1097. Shimmer, 5.3, League of Legends / Arcane
 #A vial of violet Shimmer granting monstrous strength and speed while it lasts, at the usual price: addiction, mutation, and purple eyes that never quite fade.
 1098. Jinx's Pow-Pow, 5.7, League of Legends / Arcane
-#A custom minigun with separation anxiety: devastating suppressive fire that jams if ignored, sulks if cleaned by anyone else, and works best while being sung to.
+#(Tag:curse)A custom minigun with separation anxiety: devastating suppressive fire that jams if ignored, sulks if cleaned by anyone else, and works best while being sung to.
 1099. Hexcore, 5.8, League of Legends / Arcane
 #An unstable arcane gem that powers hextech evolution and whispers equations no one taught it. Grants insights freely; mutates the bearer slowly and without asking.
 1100. Ambessa's Charm, 5.4, League of Legends / Arcane
-#A Noxian war-charm that drinks hostile magic aimed at the bearer, up to a measure, then must be emptied by force of will. Smells faintly of war paint and disapproval.
+#(Tag:accessory)(Tag:mental)A Noxian war-charm that drinks hostile magic aimed at the bearer, up to a measure, then must be emptied by force of will. Smells faintly of war paint and disapproval.
 1101. Chaos's Shoe, 5.5, Generic
 #(Gacha) A nice black leather left shoe that fits you. Drop it after a gacha roll to change the result to randomly the next or previous item on the wheel.
 1102. Chaos's Other Shoe, 5.7, Generic
 #(Gacha) A nice black leather right shoe that fits you. When rolled, it lands on your head: lose your previous roll to reroll the ticket that gave you the shoe. You get to keep the shoe.
 1125. Scent Hound Whistle, 3.5, Generic
-#(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.
+#(Tag:meta)(Tree)(Meta:trace-name-use) A carved wooden hound whistle. One blow summons a tireless phantom scent hound that traces the route to the closest node matching a name, then fades; the whistle cracks after a single use.
 1103. Second Breakfast Box, 8.0, Generic
-#A lunchbox that produces any mundane meal or tool under 5 kg on demand, endlessly; items taken more than a mile away fade after 24 hours.
+#(Tag:storage)A lunchbox that produces any mundane meal or tool under 5 kg on demand, endlessly; items taken more than a mile away fade after 24 hours.
 1104. Wardrobe of Elsewhere, 8.2, Generic
 #Walk through it to exit from any door you have previously touched, anywhere; a round trip collapses the wardrobe for a week.
 1105. Penny of the Ferryman, 8.4, Generic
@@ -2219,13 +2219,13 @@
 1109. Seed of Yggdrasil, 9.2, Generic
 #(Tag:nature)Plant it in any soil and it grows a world-tree anchor within days: a personal pocket realm that grows with age, perfect health within its roots, and one resurrection at its base per year. Fell the tree and all of it is undone.
 1110. The Honest Die, 9.4, Generic
-#A d20 that lands on exactly what the roller most needs (never what they want) in any game of chance they play for real stakes, dice, cards, coins, wagers, trials by lot. Staged or stakeless flips do nothing, and it reaches no further than the game: no meta-luck, no gacha pulls. Each roll also speaks one truth the roller most needs to hear, aloud, where everyone present can hear it.
+#(Tag:card)A d20 that lands on exactly what the roller most needs (never what they want) in any game of chance they play for real stakes, dice, cards, coins, wagers, trials by lot. Staged or stakeless flips do nothing, and it reaches no further than the game: no meta-luck, no gacha pulls. Each roll also speaks one truth the roller most needs to hear, aloud, where everyone present can hear it.
 1111. The Triforce, 9.3, The Legend of Zelda
 #Three relics granting absolute expression of their bearer's dominant virtue: Power, Courage, Wisdom. United, one wish within the world's bounds. It arrives split across the world, you hold only what you can keep.
 1112. Command Block, 9.6, Minecraft
-#Executes one written sentence on the world per redstone pulse, parsed with total literality. Needs power; needs precision; typos are cataclysms.
+#(Tag:command)Executes one written sentence on the world per redstone pulse, parsed with total literality. Needs power; needs precision; typos are cataclysms.
 1113. Zenith Blade, 8.9, Terraria
-#The culmination of swords: every swing launches a cascade of flying sword-images striking everything in a wide arc. Lesser blades shatter in its presence.
+#(Tag:blade)(Tag:weapon)The culmination of swords: every swing launches a cascade of flying sword-images striking everything in a wide arc. Lesser blades shatter in its presence.
 1114. Hogyoku, 8.7, Bleach
 #Manifests the desires of those around it at godlike speed: wounds close, limits break, evolutions trigger. It serves the strongest will present, not necessarily yours.
 1115. Mother Flame, 8.5, One Piece
@@ -2237,14 +2237,14 @@
 1118. The Moment, 9.5, Doctor Who
 #The Time Lord weapon with a conscience: it can unmake anything short of a fixed point, but it judges the wielder first and shows them the cost in full. Fail its judgment and it drops you home, disarmed.
 1119. Genesis Device, 9.0, Star Trek
-#Terraform a dead world to lush life in hours, or unmake a living one just as fast. Protomatter instability means inhabited targets may come out wrong; Starfleet will have questions either way.
+#(Tag:bio)Terraform a dead world to lush life in hours, or unmake a living one just as fast. Protomatter instability means inhabited targets may come out wrong; Starfleet will have questions either way.
 1120. DeLorean Time Machine, 8.9, Back to the Future
 #(Tag:time)Eighty-eight mph time travel for you and your passengers; riders keep their memories across edits, but history pushes back, change too much and you start fading from the photograph. You provide the plutonium (or fusion upgrade), the maintenance, and roads.
 1121. Elder Scroll, 9.1, Elder Scrolls
-#Read a prophecy of anything, past or future. The Scroll bills in sight: temporary blindness for small questions, permanent for large ones. Knowledge first; eyesight negotiable.
+#(Tag:grimoire)Read a prophecy of anything, past or future. The Scroll bills in sight: temporary blindness for small questions, permanent for large ones. Knowledge first; eyesight negotiable.
 1122. Gravitational Beam Emitter, 9.1, Blame
 #(Tag:gravity)(Tag:gun)(Tag:tech)(Tag:weapon)A sidearm firing gravitational-collapse beams that pierce planets end to end. Recoil and charge time scale with output, and silence is mandatory: everything hears a GBE shot.
 1123. Berserker Body, 8.6, Alita: Battle Angel
 #An ancient URM nanotech combat body, offered as a full replacement: superhuman strength, speed, and durability, plasma discharge, and self-repair that knits wounds mid-fight. Attunement is agonizing and demands a compatible nervous system; overuse runs the furnace into berserk overload.
 1124. Damascus Blade, 8.2, Alita: Battle Angel
-#A bracelet unfolding into a blade that cuts armor, cyborgs, and monsters like paper and never dulls. It has no guard and no mercy: in unskilled hands it endangers the wielder as much as the foe (Panzer Kunst training recommended).
+#(Tag:blade)(Tag:weapon)A bracelet unfolding into a blade that cuts armor, cyborgs, and monsters like paper and never dulls. It has no guard and no mercy: in unskilled hands it endangers the wielder as much as the foe (Panzer Kunst training recommended).

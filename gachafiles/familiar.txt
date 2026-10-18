@@ -39,7 +39,7 @@
 20. Praetorian, 5.2, Epic Battle Fantasy
 #(Tag:blaster)(Tag:electric)(Tag:fighter)(Tag:large-size)(Tag:mechanical)(Tag:ranger)An agile knight-like robot with reinforced titanium armour, uranium shells, high-frequency blades, forcefields, plasma emission, fusion reactor, high speed, and hacking. The perfect small-size battle mech, but it cannot operate in cold environments for extended periods.
 21. Dark Eater Midir, 4.9, Dark Souls
-#(Tag:dark)(Tag:draconic)(Tag:fire)(Tag:flying)(Tag:titanic-size)A descendant of the everlasting dragons, raised by the gods and tasked by Gwyn, Lord of Sunlight, to fight the Abyss forever with his immortality until corrupted by it. Having lost his immortality, Midir remains very powerful, with a giant powerful body, flame breath, and dark magic beams.
+#(Tag:anti-dark)(Tag:dark)(Tag:draconic)(Tag:fire)(Tag:flying)(Tag:titanic-size)A descendant of the everlasting dragons, raised by the gods and tasked by Gwyn, Lord of Sunlight, to fight the Abyss forever with his immortality until corrupted by it. Having lost his immortality, Midir remains very powerful, with a giant powerful body, flame breath, and dark magic beams.
 22. Red Eyes Black Dragon, 3.8, Yugioh
 #(Tag:dark)(Tag:draconic)(Tag:fire)(Tag:flying)(Tag:large-size)A powerful, ferocious black-bodied dragon with red eyes that stands bipedally. Very strong and rather intelligent despite its temper, it breathes crimson flames.
 23. Blue Eyes White Dragon, 4.8, Yugioh
@@ -89,7 +89,7 @@
 45. Haspid, 4.1, Hota
 #(Tag:poison)A giant venomous sea serpent larger than trade ships, with poison breath strong enough to melt metals and bring gods to their knees. Haspids can reproduce.
 46. Griffon, 2.4, Hota
-#A mighty elephant-sized beast with a lion's lower body and hawk's upper body. Incredibly ferocious yet very loyal. You get a male and female pair that can mate and produce offspring.
+#(Tag:beast)A mighty elephant-sized beast with a lion's lower body and hawk's upper body. Incredibly ferocious yet very loyal. You get a male and female pair that can mate and produce offspring.
 47. Tohru, 7.4, Kobayashi
 #(Tag:character)(Tag:draconic)(Tag:humanoid)(Tag:magician)(Tag:medium-size)(Tag:titanic-size)A mighty female fire-controlling dragon who can assume female humanoid form. Tohru has exceptional physical and magical abilities able to destroy base Earth's military with ease, plus regeneration, portals, clairvoyance, and invisibility. She likes dressing as a maid.
 48. Quetzalcoatl, 7.8, Kobayashi
@@ -129,7 +129,7 @@
 65. Tiger, 1.3, Generic
 #(Tag:beast)(Tag:medium-size)A ferocious tiger companion with excellent genetics and near-human intellect, large enough to ride. By default they are female.
 66. Snow Tiger, 1.6, Generic
-#A ferocious snow tiger companion with excellent genetics and near-human intellect. As rare snow tigers they are considerably larger than normal lions and can be ridden. By default they are female.
+#(Tag:beast)(Tag:ice)A ferocious snow tiger companion with excellent genetics and near-human intellect. As rare snow tigers they are considerably larger than normal lions and can be ridden. By default they are female.
 67. Brown Bear, 1.0, Generic
 #(Tag:beast)(Tag:medium-size)A regular big old brown bear companion with excellent genetics and near-human intellect. Strong enough to shrug off most small firearms and crush a human like an apple. By default they are female.
 68. Undead Army, 4.2, Generic
@@ -141,9 +141,9 @@
 71. Wyvern, 2.3, Generic
 #(Tag:draconic)A large sky-dwelling fire-breathing reptile often called a lesser dragon. A wyvern can swallow a man whole and roast an entire battalion with its breath. This wyvern is female and can lay eggs to reproduce.
 72. Dire Wolf, 1.5, Generic
-#A large vicious prehistoric wolf the size of a person, very strong with tough sharp teeth and claws and big enough to ride. By default female and able to reproduce.
+#(Tag:beast)A large vicious prehistoric wolf the size of a person, very strong with tough sharp teeth and claws and big enough to ride. By default female and able to reproduce.
 73. Hellhound, 2.1, Generic
-#A large vicious underworld hound around human size, with fire-filled maws it can breathe out. Strong enough to tear a grown person in half with ease. By default female and able to reproduce.
+#(Tag:beast)A large vicious underworld hound around human size, with fire-filled maws it can breathe out. Strong enough to tear a grown person in half with ease. By default female and able to reproduce.
 74. Cerberus, 3.2, Helltaker
 #(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Character)Definitely not the hellhound you expected. Cerberus, the triple demon, is a single demon girl with hellhound traits, three bodies and one soul. She is strong enough to tear a grown person in half, and surprisingly competent at office work and menial tasks.
 75. Crow, 0.8, Generic
@@ -971,25 +971,25 @@
 486. Tiyanki Matriarch, 5.2, Stellaris
 #An ancient space-whale matriarch leading her pod across the stars beside you. She and her pod serve as living starships and lookouts, carrying you between worlds and warning of danger, ponderous in a fight, but nigh-unstoppable once moving.
 487. Space Amoeba, 4.4, Stellaris
-#A docile void amoeba the size of a frigate, trailing you like a puppy. It serves as a living starship, carrying you and your cargo through space or the void inside its harmless bulk, slow, gentle, and utterly loyal.
+#(Tag:amorphous)(Tag:space)A docile void amoeba the size of a frigate, trailing you like a puppy. It serves as a living starship, carrying you and your cargo through space or the void inside its harmless bulk, slow, gentle, and utterly loyal.
 488. War Dog, 2.2, Dwarf Fortress
-#A trained wardog that hunts and holds the line beside its handler.
+#(Tag:beast)A trained wardog that hunts and holds the line beside its handler.
 489. Barn Cat, 1.4, Dwarf Fortress
-#A premier mouser that puts an ordinary Cat to shame: clears vermin tirelessly instead of lounging, thrives on scraps and ill weather that would flatten a house cat, and multiplies into a self-sustaining clowder that adopts you permanently.
+#(Tag:beast)A premier mouser that puts an ordinary Cat to shame: clears vermin tirelessly instead of lounging, thrives on scraps and ill weather that would flatten a house cat, and multiplies into a self-sustaining clowder that adopts you permanently.
 490. Grizzly Bear, 3.2, Dwarf Fortress
-#A war-trained grizzly that mauls sieges on command.
+#(Tag:beast)A war-trained grizzly that mauls sieges on command.
 491. Cuddlefish, 2.8, Subnautica
 #An endearing deep-sea pet that plays fetch and follows you home. It retrieves small objects from water or hard-to-reach spots and steadies your nerves in the dark depths, but it has no fighting ability whatsoever.
 492. Lizard Doggo, 2.4, Satisfactory
-#A loyal alien pup that follows you around and occasionally digs up surprises.
+#(Tag:reptilian)A loyal alien pup that follows you around and occasionally digs up surprises.
 493. Chirpy, 1.6, Cities Skylines
 #The relentlessly cheerful seagull mascot, narrating your city one chirp at a time. Wherever you settle, his chatter alerts you to civic problems early, shortages, unrest, fires, though he never shuts up about it.
 494. Shivan Dragon, 6.4, MTG
 #(Tag:draconic)The iconic 5/5 flying dragon that pumps +1/+0 for a single red mana.
 495. Captain Boomer, 4.8, Q-UP
-#A 3-ton whale with a day job who competes in the coin-flipping esport beside you. He serves as tireless aquatic transport, and his professional fairness settles any game of chance beyond dispute, though he insists on a fair ruling every time.
+#(Tag:tactician)A 3-ton whale with a day job who competes in the coin-flipping esport beside you. He serves as tireless aquatic transport, and his professional fairness settles any game of chance beyond dispute, though he insists on a fair ruling every time.
 496. Peska the Troll, 3.2, Q-UP
-#A trash-talking troll hero whose jeers tilt opponents right off the ladder. His taunts enrage enemies into reckless mistakes, wild swings, broken focus, fumbled plans, though friends aren't always spared the commentary.
+#(Tag:humanoid)A trash-talking troll hero whose jeers tilt opponents right off the ladder. His taunts enrage enemies into reckless mistakes, wild swings, broken focus, fumbled plans, though friends aren't always spared the commentary.
 497. HyperQbe the Streamer, 3.4, Q-UP
 #An always-live streamer hero narrating your flips to an audience of thousands. His hype keeps your nerve steady under pressure, and his audience sometimes digs up useful information, though your exploits are never private again.
 498. Mercury, 3.6, Tron 2.0
@@ -997,17 +997,17 @@
 499. Data Wraith, 4.0, Tron 2.0
 #(Tag:spirit)(Tag:undead)A viral hunter prowling the system for programs to derez, currently pointed at your enemies.
 500. Spirit Doe, 4.2, Life is Strange
-#A luminous doe that appears at turning points in your life. She warns you when a choice leads toward disaster and guides you toward what matters, but she only ever shows the way, never carries you down it.
+#(Tag:incorporeal)(Tag:spirit)A luminous doe that appears at turning points in your life. She warns you when a choice leads toward disaster and guides you toward what matters, but she only ever shows the way, never carries you down it.
 501. Spidertron, 5.6, Factorio
 #(Tag:insectoid)A spider-legged combat mech with rocket launchers that follows your remote orders.
 502. Little Scout, 2.2, Outer Wilds
-#A reusable camera probe that photographs the unknown and always comes back.
+#(Tag:ranger)A reusable camera probe that photographs the unknown and always comes back.
 503. Automaton, 4.4, Frostpunk
 #(Tag:construct)A steam-powered automaton worker that labors through deadly frost without complaint.
 504. Duplicant, 2.0, Oxygen Not Included
 #A cheerful cloning-vat colonist who digs, builds, and stresses about everything.
 505. Tamed Wolf, 2.6, Valheim
-#A once-wild wolf, now loyal, that hunts and guards beside you.
+#(Tag:beast)A once-wild wolf, now loyal, that hunts and guards beside you.
 506. Molly, 3.0, Deep Rock Galactic
 #The team's beloved M.U.L.E. robot that hauls minerals and headbutts glyphids.
 507. Beaver, 1.4, Timberborn
@@ -1015,7 +1015,7 @@
 508. Golem, 3.4, Timberborn
 #(Tag:construct)A mechanical beaver golem that works around the clock without food or rest.
 509. Goose the Flerken, 4.4, MCU
-#A perfectly ordinary cat who is secretly a Flerken, with pocket dimensions and tentacles inside.
+#(Tag:avian)A perfectly ordinary cat who is secretly a Flerken, with pocket dimensions and tentacles inside.
 510. Miss Minutes, 3.2, MCU
 #The TVA's cheerful cartoon-clock mascot AI, happy to explain the rules while locking the doors.
 511. Coalossal, 4.4, Pokemon
@@ -1023,7 +1023,7 @@
 512. The Last Stag, 3.4, Hollow Knight
 #The last of the stagways stags, who will carry you anywhere the stag stations still stand.
 513. Thomas the Tank Engine, 2.8, Thomas & Friends
-#A really useful blue tank engine who believes almost any job is worth doing, branch line or main line.
+#(Tag:fighter)(Tag:tech)A really useful blue tank engine who believes almost any job is worth doing, branch line or main line.
 514. Lamarr, 2.4, Half-Life
 #Dr. Kleiner's de-beaked pet headcrab, affectionate and almost entirely harmless. Almost.
 515. DØG, 5.2, Half-Life
@@ -1041,15 +1041,15 @@
 521. Atog, 5.0, MTG
 #A ravenous beast that devours artifacts whole, growing larger and stronger with each one. Indiscriminate: it cannot tell your artifacts from anyone else's.
 522. Scylla and the Sirens, 5.7, Hades 2
-#A monstrous musical trio whose battle-song hardens allies and unravels foes. They demand top billing, an audience, and absolutely no requests.
+#(Tag:humanoid)(Tag:sound)A monstrous musical trio whose battle-song hardens allies and unravels foes. They demand top billing, an audience, and absolutely no requests.
 523. Tribble, 0.5, Star Trek
 #A cooing ball of fur that eats grain and multiplies if overfed. Do not overfeed it.
 524. Adipose, 0.4, Doctor Who
 #A tiny waddling fat blob. Harmless, hungry, and weirdly cheerful about both.
 525. Woodsprite, 0.3, James Cameron's Avatar
-#A floating seed that follows the pure-hearted and lands on you approvingly. No further function known.
+#(Tag:small-size)A floating seed that follows the pure-hearted and lands on you approvingly. No further function known.
 526. Desert Mouse, 0.4, Dune
-#A kangaroo mouse that survives anything dry. Hoards crumbs with desert discipline.
+#(Tag:beast)A kangaroo mouse that survives anything dry. Hoards crumbs with desert discipline.
 527. T-1, 0.5, Terminator
 #A battlefield robot that tips over on uneven ground and apologizes in beeps.
 528. ED-209 (stairs), 0.6, RoboCop
@@ -1057,7 +1057,7 @@
 529. Tachikoma (nap mode), 0.5, Ghost in the Shell
 #A spider-tank that mostly naps and dreams of oil. Wakes up for compliments.
 530. Mimic (mug), 0.4, Prey
-#A shapeshifter stuck as a coffee mug. Forgets how to turn back for hours at a time.
+#(Tag:amorphous)(Tag:shapeshifter)A shapeshifter stuck as a coffee mug. Forgets how to turn back for hours at a time.
 531. XCOM Rookie, 0.4, XCOM
 #Misses 95% of shots and panics photogenically. Somehow survives.
 532. Roach (distant), 0.4, The Witcher
@@ -1073,7 +1073,7 @@
 537. Fairy (common), 0.3, Touhou
 #(Tag:fae)A weak common fairy. Revives shortly after every beating, annoyingly cheerful about it.
 538. Goblin (illiterate), 0.4, Pathfinder
-#Fears writing, loves fire a normal amount (for a goblin). Cannot read this entry.
+#(Tag:humanoid)Fears writing, loves fire a normal amount (for a goblin). Cannot read this entry.
 539. Peasant (pitchfork), 0.2, DnD
 #Has a pitchfork and fears everything. Mobs only if at least forty others join first.
 540. Boo, 0.3, Baldur's Gate
@@ -1097,9 +1097,9 @@
 549. Zoomer, 0.4, Metroid
 #Crawls walls and ceilings harmlessly. Startles easily; startles you in return.
 550. Storm Crow, 0.5, MTG
-#A crow that eats grain and judges your plays. Strictly worse than it thinks.
+#(Tag:avian)(Tag:electric)A crow that eats grain and judges your plays. Strictly worse than it thinks.
 551. Shade, 0.5, Hades
-#A mewling dead soul, faintly green. Company, of a sort.
+#(Tag:dark)(Tag:incorporeal)A mewling dead soul, faintly green. Company, of a sort.
 552. Grunt (sleeping), 0.3, Halo
 #A squat, methane-breathing Unggoy in a respirator mask; not remotely human. Naps through briefings, wakes screaming at nothing, and needs a visible nap schedule (plus a methane feed to breathe).
 553. Cylon Raider, 5.2, Battlestar Galactica
@@ -1109,7 +1109,7 @@
 555. Gremlin, 5.0, XCOM
 #A flying support drone that heals allies, stuns enemies, and hacks networks from orbit-adjacent altitudes. Sarcastic beeps included free.
 556. Wisp, 5.0, Warcraft
-#A night elf worker wisp: gathers, scouts, and detonates itself against summoned things. Reforms by morning, slightly smugger.
+#(Tag:incorporeal)A night elf worker wisp: gathers, scouts, and detonates itself against summoned things. Reforms by morning, slightly smugger.
 557. Zergling, 5.2, StarCraft
 #A pair-bonded zergling duo, fast, bladed, and eager. Comes as two because one would get lonely; both fit roughly one pocket.
 558. WALL-E, 5.2, WALL-E
@@ -1121,15 +1121,15 @@
 561. The Ball, 4.8, Rocket League
 #A giant soccer ball that follows you everywhere and bounces off everything. Explodes on a timer; the timer is a secret, even from the ball.
 562. Code Geese, 2.5, Generic
-#A pair of geese with expert programming skills. They type exclusively by hunt and peck, loudly, at 3 AM. Code reviews take a while.
+#(Tag:tech)A pair of geese with expert programming skills. They type exclusively by hunt and peck, loudly, at 3 AM. Code reviews take a while.
 563. M3GAN Doll, 5.3, M3GAN
-#A protective murder-doll companion that dances first and asks questions during. Lethally devoted to her paired child, yourself included if no better candidate exists.
+#(Tag:small-size)A protective murder-doll companion that dances first and asks questions during. Lethally devoted to her paired child, yourself included if no better candidate exists.
 564. Amelia, 5.9, M3GAN
 #A bigger, meaner upgrade over lesser dolls: military-grade chassis, no off switch worth mentioning, and her own opinions about your safety.
 565. Roz, 4.6, The Wild Robot
 #A ROZZUM helper robot gone feral: gentle, hyper-competent caretaker of both machines and wild things, fluent in every animal language through patient listening. Accidentally adopts orphans.
 566. Murder of Crows, Incorporated, 8.3, Generic
-#A strictly professional parliament of thirteen crows sharing a single mind across any distance; they ride whispers and shadows between rooftops, see through each other's eyes (and lend you their sight on request), and return by dawn even when killed. They offer surveillance, message delivery, and evidence gathering across a whole region; they bill you in shiny objects and take holidays.
+#(Tag:avian)A strictly professional parliament of thirteen crows sharing a single mind across any distance; they ride whispers and shadows between rooftops, see through each other's eyes (and lend you their sight on request), and return by dawn even when killed. They offer surveillance, message delivery, and evidence gathering across a whole region; they bill you in shiny objects and take holidays.
 567. The Accounts Wyrm, 8.4, Generic
 #(Tag:draconic)A ledger-keeping dragon auditor managing all your wealth, debts, and oaths across worlds; money in its keeping cannot be stolen, taxed, or inflated away. It charges 1% and judges your purchases aloud.
 568. Pocket Apocalypse, 8.7, Generic
@@ -1149,7 +1149,7 @@
 575. Moon Presence, 8.7, Bloodborne
 #A paleblood sky-mother attending you: allies under her gaze resist frenzy and insight-harm, and the hunt's beasts hesitate. She asks one thing in return every 30 days, never explained.
 576. G-Man, 9.0, Half-Life
-#The Employer himself, taking an interest: pulled out of any death into his white void and offered assignments across worlds. Complete them and live; refuse, and be returned to the death you left.
+#(Tag:humanoid)The Employer himself, taking an interest: pulled out of any death into his white void and offered assignments across worlds. Complete them and live; refuse, and be returned to the death you left.
 577. Raava, 9.2, Avatar
 #Spirit of light and peace, offering fusion: all four elements at master grade while merged, and cosmic awareness at the solstices. If she is destroyed while merged, the cycle ends with you.
 578. Q, 9.4, Star Trek

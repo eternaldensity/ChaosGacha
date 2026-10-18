@@ -67,7 +67,7 @@
 34. Sunshine Charm, 2.4, Generic
 #(Tag:social)You exude goodness and purity, so good-aligned beings like you more and you more easily convince others you are doing good.
 35. Bad Boy/Girl Charm, 2.4, Generic
-#You carry a raw bad boy/girl edge that attracts emos and edgy people, and your rudeness more often comes across as cool.
+#(Tag:mental)(Tag:social)You carry a raw bad boy/girl edge that attracts emos and edgy people, and your rudeness more often comes across as cool.
 36. I Know a Guy, 5.0, Generic
 #Once every 30 days, you retroactively rewrite reality to know someone who can help with your current situation. That person must already exist and not be a full tier above you in power. You do not choose who they are, only that you learn you know someone who can help.
 37. Serene Grace, 3.4, Generic
@@ -107,11 +107,11 @@
 54. Perfumer, 1.2, Generic
 #(Tag:lifestyle)You have no distinct scent and smell like whatever the person smelling you likes.
 55. Magpie's Eye, 2.4, Generic
-#You spot treasure and valuables very easily, with treasures in sight highlighted.
+#(Tag:ocular)(Tag:sense)You spot treasure and valuables very easily, with treasures in sight highlighted.
 56. Iron Palate, 3.1, Generic
 #(Tag:poison-resistance+)You can eat and digest just about anything that is not lethal poison to you.
 57. Prophecy, 6.7, Generic
-#You see the future in your dreams, with or without your consent.
+#(Tag:divination)(Tag:time)You see the future in your dreams, with or without your consent.
 58. Winner Takes All, 5.0, Generic
 #(Tag:rule)When you win against someone, you can force them to grant you a reward proportional to your victory. Minor victories yield minor rewards, while a fight to the death yields a reward equal in value to their life. The reward must be something they are capable of granting.
 59. Natural Scent, 2.4, Generic
@@ -219,7 +219,7 @@
 110. Salt Detection, 0.1, Generic
 #(Tag:perception+)You sense the location of salt, but only salt ready for human consumption.
 111. Commander, 3.6, Generic
-#You exert authority and receive obedience from subordinates more effectively, and you organize, manage, command, and sustain their morale better.
+#(Tag:command)You exert authority and receive obedience from subordinates more effectively, and you organize, manage, command, and sustain their morale better.
 112. Healing... Fluids, 3.7, Generic
 #(Tag:body)(Tag:health-recovery)Your sweat, saliva, and cum heal others, scaling with your physical stats. The effect is mild but real, someone can lick sweat off your abs to heal.
 113. Blessed Child, 3.5, Generic
@@ -231,7 +231,7 @@
 116. Avian Ally, 2.5, Generic
 #(Tag:avian)(Tag:social)(Tag:talent)You share great affinity with birds, avians, and aligned creatures, earning their affection, favor, and relationships more easily. All flight also feels more natural and costs less energy to maintain.
 117. Thick Skin, 2.1, Generic
-#Your skin is far denser and tougher than average yet smooth and pleasant to touch, scaling with your physical stats to serve as natural armor at higher levels.
+#(Tag:body)Your skin is far denser and tougher than average yet smooth and pleasant to touch, scaling with your physical stats to serve as natural armor at higher levels.
 118. Strong Legs, 2.4, Generic
 #(Tag:body)(Tag:strength+)Your legs are stronger and tougher than average, slightly increasing your speed and substantially boosting your kick power.
 119. Pyromaniac, 4.8, Generic
@@ -355,7 +355,7 @@
 178. Spirit Affinity, 3.0, Generic
 #(Tag:spirit)(Tag:spirit+)You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
 179. Immortal Soul, 4.9, Generic
-#Your soul is immortal; it can be wounded and shattered but never annihilated while you possess energy.
+#(Tag:spirit)Your soul is immortal; it can be wounded and shattered but never annihilated while you possess energy.
 180. Last Stand, 3.5, Generic
 #(Tag:physical+)When your health drops to 10% or you stand on the brink of death, your physical stats increase by a stage.
 181. Lord Death of Murder Mountain, 4.5, Generic
@@ -513,13 +513,13 @@
 257. Alluring Whisper, 2.8, Generic
 #(Tag:nsfw)(Tag:talent)(Nsfw) You possess a smooth, alluring top-tier singing voice that impresses even the pickiest listeners and sounds more convincing. It enhances your voice-based abilities.
 258. Charisma, 2.5, Generic
-#You project a charismatic aura that draws people in and elevates you in their eyes.
+#(Tag:social)You project a charismatic aura that draws people in and elevates you in their eyes.
 259. Sensual Presence, 3.6, Generic
 #(Nsfw) You project a subtle sensual presence that increasingly attracts and arouses those exposed to it. It only affects people friendly to you.
 260. Harem Keeper, 2.7, Generic
-#You face far less resistance from potential partners and society when building a harem, though it remains challenging.
+#(Tag:social)You face far less resistance from potential partners and society when building a harem, though it remains challenging.
 261. Harem Sovereign, 3.3, Generic
-#Your preferred partners are more attracted to you, and neither society nor your partners object to your harem itself, though other relationship issues may remain.
+#(Tag:social)Your preferred partners are more attracted to you, and neither society nor your partners object to your harem itself, though other relationship issues may remain.
 262. Camaraderie, 3.1, Generic
 #(Tag:social)You build affection, trust, and respect with teammates and allies much faster, especially by fighting alongside them. You also cooperate with others far more effectively.
 263. Trustable Face, 2.7, Generic
@@ -1067,7 +1067,7 @@
 534. Tech Priest Diploma, 4.2, Generic
 #(Tag:growth+)(Tag:social)(Tag:tech)(Tech) Praise the Omnissiah! You pray and perform rituals that actually appease the machine spirit dwelling in machines. By burning incense, dancing, singing, drawing it, etc., you please it, and its pleasure increases the machine's power and efficiency. With enough worship you develop a relationship with the machine that endures through thick and thin.
 535. Blessing of the Omnissiah, 4.7, Generic
-#(Tech) You are blessed by the Omnissiah; they praise you. Any machine you handle or encounter eagerly favors you unless you lose that favor: charges deplete slower, cars go faster and handle better, slot machines give better odds, etc., because their machine spirit naturally likes you.
+#(Tag:buff)(Tech) You are blessed by the Omnissiah; they praise you. Any machine you handle or encounter eagerly favors you unless you lose that favor: charges deplete slower, cars go faster and handle better, slot machines give better odds, etc., because their machine spirit naturally likes you.
 536. Kitsune, 4.6, Generic
 #(Tag:beastkin)(Tag:illusion)(Tag:illusion+)(Tag:maximum-energy+)(Tag:nature)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:spirit)Race Change - You are a single-tailed Kitsune, a Fox Yokai semi-spiritual being attuned to nature and illusions. Your humanoid form is naturally incredibly attractive, and you possess slightly increased physical stats and increased energy reserves. You naturally weave and use [Foxfire], and all Stranger abilities, illusion spells, and nature-based abilities you use are more potent. You shift between fox and humanoid form at will and hide your fox features with illusions. As you age or increase energy reserves, you gain up to 9 tails, each slightly enhancing the above capabilities.
 537. Kyubi, 5.7, Generic
@@ -1265,29 +1265,29 @@
 632. Garlic Infused Blood, 0.2, Generic
 #(Tag:blood)Your blood is infused with garlic, so the next vampire that bites you will really regret it.
 633. Prosperity +10%, 2.0, Generic
-#(Tree)(Meta:ticket-bonus:10) Every ticket you are awarded grants 10% extra points. Stacks additively with other Prosperity traits.
+#(Tag:meta)(Tree)(Meta:ticket-bonus:10) Every ticket you are awarded grants 10% extra points. Stacks additively with other Prosperity traits.
 634. Prosperity +20%, 3.0, Generic
-#(Tree)(Meta:ticket-bonus:20) Every ticket you are awarded grants 20% extra points. Stacks additively with other Prosperity traits.
+#(Tag:meta)(Tree)(Meta:ticket-bonus:20) Every ticket you are awarded grants 20% extra points. Stacks additively with other Prosperity traits.
 635. Prosperity +30%, 4.0, Generic
-#(Tree)(Meta:ticket-bonus:30) Every ticket you are awarded grants 30% extra points. Stacks additively with other Prosperity traits.
+#(Tag:meta)(Tree)(Meta:ticket-bonus:30) Every ticket you are awarded grants 30% extra points. Stacks additively with other Prosperity traits.
 636. Prosperity +40%, 5.0, Generic
-#(Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.
+#(Tag:meta)(Tree)(Meta:ticket-bonus:40) Every ticket you are awarded grants 40% extra points. Stacks additively with other Prosperity traits.
 637. Root Pact, 4.0, Generic
-#(Tree)(Meta:root-pact) Nodes within two connections of the Origin root unlock for no core, but cost ten times the points.
+#(Tag:meta)(Tag:nature)(Tree)(Meta:root-pact) Nodes within two connections of the Origin root unlock for no core, but cost ten times the points.
 638. Intelligent, 3.4, Stellaris
 #Your mind learns fast: research, engineering, and study all come noticeably easier.
 639. Rapid Breeders, 3.0, Stellaris
 #Your kind multiplies quickly; growth, recovery, and repopulation outpace everyone.
 640. Mind over Matter, 5.6, Stellaris
-#Your mind touches the Shroud; latent psychic potential hums beneath every thought.
+#(Tag:alter)(Tag:mental)(Tag:mind)Your mind touches the Shroud; latent psychic potential hums beneath every thought.
 641. Lithoid, 4.2, Stellaris
 #(Tag:earth)You are living rock: silicon flesh that shrugs off hunger and laughs at vacuum.
 642. Hive-Minded, 4.8, Stellaris
 #You are a node in a greater gestalt, sharing senses and purpose with the whole.
 643. Ocean-Born, 3.2, Stellaris
-#Born to water worlds; you swim, dive, and work the seas better than any landwalker.
+#(Tag:water)Born to water worlds; you swim, dive, and work the seas better than any landwalker.
 644. Iron-Willed, 3.0, RimWorld
-#Your mood barely moves; break risks, pain, and horror slide off a steady mind.
+#(Tag:earth)Your mood barely moves; break risks, pain, and horror slide off a steady mind.
 645. Kind, 2.6, RimWorld
 #You lift everyone around you and never start social fights; even raiders hesitate.
 646. Psychopath, 3.8, RimWorld
@@ -1299,25 +1299,25 @@
 649. Strange Mood, 4.4, Dwarf Fortress
 #Fall into a fey trance, claim a workshop, and produce a priceless artifact from whatever is at hand.
 650. Traffic Engineer, 3.2, Cities Skylines
-#Intuitively read any road network and know exactly which interchange untangles it.
+#(Tag:tech)Intuitively read any road network and know exactly which interchange untangles it.
 651. Zoning Intuition, 2.8, Cities Skylines
 #Always know the right mix of residential, commercial, and industrial before demand spikes.
 652. Planeswalker's Spark, 7.6, MTG
-#The rare spark that lets a mage planeswalk between worlds; it ignites in moments of crisis.
+#(Tag:electric)The rare spark that lets a mage planeswalk between worlds; it ignites in moments of crisis.
 653. Backtalk, 2.4, Life is Strange
 #Weaponized sarcasm: talk your way past anyone by pushing exactly the right buttons.
 654. Glow-Touched, 4.0, I Was a Teenage Exocolonist
-#Bonded with Vertumna's alien Glow, a symbiotic light living in you that lets you see in darkness and sense the presence, health, and mood of living things nearby, and occasionally nudges you toward what it wants.
+#(Tag:light)Bonded with Vertumna's alien Glow, a symbiotic light living in you that lets you see in darkness and sense the presence, health, and mood of living things nearby, and occasionally nudges you toward what it wants.
 655. Root Access, 4.2, Tron 2.0
-#System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
+#(Tag:nature)System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
 656. Hexagonal Skill Grid, 3.8, Q-UP
 #Your abilities arrange on a hexagonal grid, triggering off coin flips in combo chains.
 657. The City Must Survive, 3.0, Frostpunk
-#No matter the frost or the cost, you will keep the last city alive through the storm. Your leadership stretches food, fuel, and medicine several times further through ruthless rationing, keeps followers warm and obedient through deadly cold with far less shelter, and holds morale under hardship that would break anyone else, but every harsh decree breeds lasting resentment.
+#(Tag:survival)No matter the frost or the cost, you will keep the last city alive through the storm. Your leadership stretches food, fuel, and medicine several times further through ruthless rationing, keeps followers warm and obedient through deadly cold with far less shelter, and holds morale under hardship that would break anyone else, but every harsh decree breeds lasting resentment.
 658. Rock and Stone, 1.6, Deep Rock Galactic
-#For Rock and Stone! Morale, teamwork, and mineral yields all improve when shouted properly.
+#(Tag:earth)For Rock and Stone! Morale, teamwork, and mineral yields all improve when shouted properly.
 659. Keen Hearing, 2.2, Project Zomboid
-#You hear zombies, alarms, and breaking windows from much further away.
+#(Tag:sense)You hear zombies, alarms, and breaking windows from much further away.
 660. Handy, 2.0, Project Zomboid
 #You are handy: maintenance, repairs, and barricading all go faster in your hands.
 661. The Factory Must Grow, 2.4, Factorio
@@ -1325,17 +1325,17 @@
 662. MIT Graduate, 2.2, Half-Life
 #You hold a doctorate from MIT and solve physics problems the way other people breathe.
 663. Silent Protagonist, 1.8, Half-Life
-#You simply never speak, and somehow this only makes everyone trust you more.
+#(Tag:stealth)You simply never speak, and somehow this only makes everyone trust you more.
 664. Employed by the G-Man, 6.4, Half-Life
 #You have a vague arrangement with a reality-adjusting bureaucrat in a blue suit. Rise and shine.
 665. Miracle, 5.3, MTG
 #Once per day, your first activation of any ability is empowered and costs no energy.
 666. Death Defiance, 5.8, Hades
-#A killing blow against you instead restores you to half strength, once per day. Death keeps count, and it does not appreciate repeat performances.
+#(Tag:necro)A killing blow against you instead restores you to half strength, once per day. Death keeps count, and it does not appreciate repeat performances.
 667. Pact of Punishment, 5.6, Hades
 #Voluntarily shackle yourself with underworld conditions, harder foes, fewer boons, tighter timers, and fate pays out proportionally greater rewards. Lift conditions freely; rewards scale with what you currently bear.
 668. Fated Authority, 5.2, Hades
-#Once per day, force a reroll of any random outcome rolled for you and take the new result, for better or worse. Fate will not be moved twice on the same matter.
+#(Tag:command)Once per day, force a reroll of any random outcome rolled for you and take the new result, for better or worse. Fate will not be moved twice on the same matter.
 669. God Mode, 5.0, Hades
 #Every defeat tempers you against its cause, stacking resistance up to a firm cap. Dying deliberately still counts; the gods find it hilarious.
 670. Omega Moves, 5.6, Hades 2
@@ -1389,9 +1389,9 @@
 694. Tok'ra Blending, 5.4, Stargate
 #(Tag:healing)Share your body with a Tok'ra symbiote: two minds, one body, rapid healing, and centuries of stolen Goa'uld secrets. Veto rights are mutual and absolute.
 695. Cylon Resurrection, 5.8, Battlestar Galactica
-#Death downloads you into a fresh identical body, memories intact to the moment of death. Needs a resurrection facility in range; without one, you stay dead like everyone else.
+#(Tag:life)(Tag:recovery)Death downloads you into a fresh identical body, memories intact to the moment of death. Needs a resurrection facility in range; without one, you stay dead like everyone else.
 696. Trial of the Grasses, 5.6, The Witcher
-#Survive the mutagenic Trial: lightning reflexes, immunity to most poisons and diseases, decades of extended life, and sterility. Most subjects do not survive it; you did.
+#(Tag:nature)Survive the mutagenic Trial: lightning reflexes, immunity to most poisons and diseases, decades of extended life, and sterility. Most subjects do not survive it; you did.
 697. Ebon Knight, 5.8, Warcraft
 #Rise as a knight of the Ebon Blade: runeblade hunger, frost and unholy command, no need for rest or breath. Holy ground itches; paladins itch more.
 698. Infested, 5.4, StarCraft
@@ -1401,7 +1401,7 @@
 700. What a Save!, 5.0, Rocket League
 #Reflexively celebrate every rescue, block, and near-miss with genuine joy. Allies find it inspiring; opponents find it personal.
 701. Power of the Bear, 4.6, Baby Cat
-#While wearing a cheap costume you have supersoldier strength and toughness, but cannot make any visually impressive moves. You're not incompetent, just unimpressive as you walk up to your foes and knock them down.
+#(Tag:enhancer)(Tag:power)While wearing a cheap costume you have supersoldier strength and toughness, but cannot make any visually impressive moves. You're not incompetent, just unimpressive as you walk up to your foes and knock them down.
 702. Mysterious Lover, 3.4, Baby Cat
 #On a weekly basis you receive an extravagant thoughtful gift or a singing telegram. It might be from your landlord.
 703. Polyglot of Babel, 8.0, Generic
@@ -1409,7 +1409,7 @@
 704. Econ of Scale, 8.1, Generic
 #Any project you lead costs half the materials, time, and labor it should; the savings must go somewhere, and the universe collects in mishaps.
 705. Mythic Resonance, 8.3, Generic
-#You rhyme with legend: stories told about you become slightly true (deeds exaggerated in your favor manifest as minor luck and skill), while slander withers unbelieved. You cannot start the stories yourself.
+#(Tag:sound)You rhyme with legend: stories told about you become slightly true (deeds exaggerated in your favor manifest as minor luck and skill), while slander withers unbelieved. You cannot start the stories yourself.
 706. Thunderhead Soul, 8.5, Generic
 #(Tag:air)(Tag:electric)Your emotions charge the air: anger calls targeted lightning, joy clears skies for miles, grief brings rain. You are immune to weather and electricity; strong winds may still carry you off mid-tantrum.
 707. Death's Secretary, 9.0, Generic
@@ -1419,13 +1419,13 @@
 709. Jinchuriki, 8.9, Naruto
 #A tailed beast sealed within you: vast reserves, regeneration, and beast modes escalating with tails borrowed. Befriend it and it lends everything; fight it and you fight forever, inside and out.
 710. Quirk Singularity, 8.8, MHA
-#Every power you hold grows roughly one tier-equivalent per year of active use, while control frays in matching step: leakage, misfires, and effects that overshoot their mark. Rest does not pause it; only passing a power on resets its clock (and starts someone else's).
+#(Tag:gravity)(Tag:space)Every power you hold grows roughly one tier-equivalent per year of active use, while control frays in matching step: leakage, misfires, and effects that overshoot their mark. Rest does not pause it; only passing a power on resets its clock (and starts someone else's).
 711. God Ki, 8.6, Dragon Ball
 #Divine ki: undetectable by mortal senses, its pressure alone buckles weak wills, calm hands wield planet-breaking output. Rage spends it double; serenity spends it clean.
 712. But It Refused, 8.6, Undertale
 #Refuse one death per week: killing blows leave you standing at a single hit point instead. Fate notices repeat offenders.
 713. Voice of All Things, 8.5, One Piece
-#Hear the voices of all things: objects, beasts, seas, and islands speak, and addressed directly they answer truthfully from their own experience, a sword's history, the sea's mood, what passed this strait. They know only what they have witnessed: nothing of the future, nothing beyond their ken. In crowded seas the chorus never shuts up.
+#(Tag:sound)Hear the voices of all things: objects, beasts, seas, and islands speak, and addressed directly they answer truthfully from their own experience, a sword's history, the sea's mood, what passed this strait. They know only what they have witnessed: nothing of the future, nothing beyond their ken. In crowded seas the chorus never shuts up.
 714. Mantle-Bearer, 8.5, Halo
 #Forerunner geas of stewardship: absolute authority over Forerunner systems and instinct for galaxy-scale logistics, plus the crushing certainty that every extinction is your fault. The systems obey; the guilt is free.
 715. Untouchable, 8.6, Warhammer 40k

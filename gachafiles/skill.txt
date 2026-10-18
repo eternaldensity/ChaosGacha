@@ -7,7 +7,7 @@
 4. Intermediate Acting, 2.4, Generic
 #(Tag:social)You are a skilled actor. You portray yourself as you want to be seen and conceal your real emotions, but people familiar with you or with good intuition like detectives can probably see through your acting.
 5. Intermediate Shooting, 2.2, Generic
-#You are a pretty decent shot. You handle most firearms and projectiles with familiarity, but you do not land headshot after headshot.
+#(Tag:ranged)You are a pretty decent shot. You handle most firearms and projectiles with familiarity, but you do not land headshot after headshot.
 6. Intermediate Hand-to-Hand Combat, 2.5, Generic
 #(Tag:martial)(Tag:unarmed)You are a seasoned fighter who knows how to move your body to hurt people. You pick up most martial arts far faster than others and completely thrash the average man in a fight.
 7. Intermediate Programming, 2.1, Generic
@@ -35,13 +35,13 @@
 18. Intermediate Item Construction, 3.3, Generic
 #(Tag:craft)(Tag:magic)You know how to make decent magical and enchanted items. If you know fire magic, you turn a regular sword into a sword that lights itself on fire on command, and if you have the ability Invisibility, you probably make a cloak that suppresses your presence.
 19. Polar Channel Flow - Cellular Overdrive, 3.5, Generic
-#You have mastered the Pugilist skill of pushing every cell in your body to its absolute limits. You draw up every ounce of their energy to augment all your stats to their limits, but this places immense strain on your body and repeated use may cause permanent damage.
+#(Tag:technique)You have mastered the Pugilist skill of pushing every cell in your body to its absolute limits. You draw up every ounce of their energy to augment all your stats to their limits, but this places immense strain on your body and repeated use may cause permanent damage.
 20. All Life Eradication Fist, 8.4, One Punch Man
 #(Tag:martial)(Tag:unarmed)(Tag:unique)You know the pinnacle of all martial arts, fusing mastery of dozens of supernatural martial arts with knowledge granted by god. You manipulate the flow of cosmic and all forms of energy with your martial arts to replicate almost any known phenomenon, but you must be sufficiently physically strong to utilize this skill in any meaningful capacity.
 21. Spear of Untraceable Trajectory, 6.7, Everyone Else is a Returnee
 #(Tag:martial)(Tag:unique)(Tag:weapon)Your spear mastery reaches such a degree that you disobey even physics. When you attack with the spear, you hit multiple locations at once with the number rising with your mastery, similar to Tsubame Gaeshi from Fate.
 22. Nanaya Assassination Arts, 4.7, Tsukihime
-#You are trained in the unique assassination arts of the Nanaya Family, a clan of selectively bred demon hunters. You focus on extremely quick movements and mobility rather than stealth, moving unpredictably and using ceilings and walls as footholds, and you are especially strong against non-humans.
+#(Tag:stealth)(Tag:technique)You are trained in the unique assassination arts of the Nanaya Family, a clan of selectively bred demon hunters. You focus on extremely quick movements and mobility rather than stealth, moving unpredictably and using ceilings and walls as footholds, and you are especially strong against non-humans.
 23. Whirlwind Iron Cutting Fist, 5.6, One Punch Man
 #(Tag:martial)(Tag:unarmed)(Tag:unique)You are an apprentice in the supernatural martial art developed by the legendary martial artist Bomb after decades of self-training. Your style resembles kung fu, and you move your body to produce razor-sharp currents of wind that you send like whirlwinds to decimate any target.
 24. Backflipping, 0.2, Generic
@@ -67,11 +67,11 @@
 34. Divine Gaming, 7.0, Generic
 #(Tag:tech)You are godlike at all kinds of games, including chess, video games, gambling, bottle toss, and anything of the sort. You are nigh unbeatable at any game unless against another godlike being of a similar domain.
 35. Intermediate Driving, 1.8, Generic
-#You are a seasoned driver. You handle a variety of vehicles ranging from bikes and cars to aircraft with familiarity.
+#(Tag:motor)(Tag:movement)You are a seasoned driver. You handle a variety of vehicles ranging from bikes and cars to aircraft with familiarity.
 36. Intermediate Leadership, 2.7, Generic
 #(Tag:social)You are an effective leader. You motivate, take charge of, and lead people with decent effectiveness, instilling confidence in them and making them do what you want.
 37. Intermediate Charisma, 3.8, Generic
-#You have an aura of charisma around you, less a skill than something just around you. People of note feel more attracted to your presence, paying more attention to you, taking you more seriously, and similar subtle effects.
+#(Tag:social)You have an aura of charisma around you, less a skill than something just around you. People of note feel more attracted to your presence, paying more attention to you, taking you more seriously, and similar subtle effects.
 38. Throwing, 2.2, Generic
 #(Tag:ranged)You are fairly skilled at throwing various objects with speed and accuracy. You land a stone on a target's head from across the street without trouble.
 39. Intermediate Medicine, 2.9, Generic
@@ -101,7 +101,7 @@
 51. Novice Acting, 1.4, Generic
 #(Tag:social)You are a novice actor. You portray yourself as you want to be seen and hide your real emotions, but experienced people easily see through your acting, though you improve much faster than others if you train yourself.
 52. Novice Shooting, 1.6, Generic
-#You know how to handle firearms. You are no marksman but aim and shoot projectiles as well as the average soldier, though you improve much faster than others if you train yourself.
+#(Tag:ranged)You know how to handle firearms. You are no marksman but aim and shoot projectiles as well as the average soldier, though you improve much faster than others if you train yourself.
 53. Novice Hand-to-Hand Combat, 1.5, Generic
 #(Tag:martial)(Tag:unarmed)You are reasonably talented in hand-to-hand combat. You know how and where to punch, enough for most people, and while you do not beat professionals, you confidently beat the average person and improve much faster than others if you train yourself.
 54. Novice Programming, 1.4, Generic
@@ -135,11 +135,11 @@
 68. Novice Massage, 1.2, Generic
 #(Tag:craft)You are as skilled as an apprentice masseuse. You give massages that feel good and relieve pressure but not much beyond that.
 69. Novice Driving, 1.1, Generic
-#You know how to drive most vehicles. You are no expert, but you do not fall off your bike or drive into pedestrians.
+#(Tag:motor)(Tag:movement)You know how to drive most vehicles. You are no expert, but you do not fall off your bike or drive into pedestrians.
 70. Novice Leadership, 2.4, Generic
 #(Tag:social)You know a bit about leading and motivating people. You do not lead armies anytime soon, but your team probably finds you agreeable and you decently resolve member conflicts and motivate your team.
 71. Novice Charisma, 1.9, Generic
-#You have an aura of charisma around you, less a skill than a change in your demeanour and how you hold yourself. People of note feel more attracted to your presence, paying more attention to you and taking you more seriously, though at this level it is not too noticeable.
+#(Tag:social)You have an aura of charisma around you, less a skill than a change in your demeanour and how you hold yourself. People of note feel more attracted to your presence, paying more attention to you and taking you more seriously, though at this level it is not too noticeable.
 72. Novice Medicine, 1.5, Generic
 #(Tag:medical)You are about as skilled as a doctor in training. You perform first aid, apply medicine, know what most medicines do, and in a pinch improvise medical tools to perform basic surgery.
 73. Adept Cooking, 3.3, Generic
@@ -149,7 +149,7 @@
 75. Adept Acting, 3.4, Generic
 #(Tag:social)You are as skilled as a veteran actor. You effectively present yourself as you want to be seen to invoke the emotions you want while hiding your real thoughts and feelings, and it takes a seasoned detective to suss you out.
 76. Adept Shooting, 3.5, Generic
-#You are a natural crack shot, wielding most projectile weaponry with great accuracy and rarely missing except against opponents of similar skill.
+#(Tag:ranged)You are a natural crack shot, wielding most projectile weaponry with great accuracy and rarely missing except against opponents of similar skill.
 77. Adept Hand-to-Hand Combat, 3.6, Generic
 #(Tag:martial)(Tag:unarmed)You fight at the level of a veteran martial artist, moving your body to unleash powerful blows with arms and legs that are lethal weapons.
 78. Adept Programming, 3.1, Generic
@@ -183,11 +183,11 @@
 92. Adept Massage, 3.6, Generic
 #(Tag:craft)You are as skilled as a seasoned masseuse, giving massages that relieve exhaustion, recover stamina, revitalize body and mind, and even invoke sexual pleasure. Few would leave your massage bed unsatisfied.
 93. Adept Driving, 3.0, Generic
-#You are as skilled as a veteran driver, handling any vehicle with ease. In a race, you would likely embarrass the competition.
+#(Tag:motor)(Tag:movement)You are as skilled as a veteran driver, handling any vehicle with ease. In a race, you would likely embarrass the competition.
 94. Adept Leadership, 4.2, Generic
 #(Tag:social)You are a skilled leader of small teams or even companies, able to earn loyalty, boost morale, manage, and lead. If you led a military into war, you would be known as a great commander.
 95. Adept Charisma, 4.4, Generic
-#You have an aura of charisma that is less a skill and more something around you. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
+#(Tag:social)You have an aura of charisma that is less a skill and more something around you. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
 96. Adept Medicine, 4.1, Generic
 #(Tag:medical)You are very skilled in all areas of medicine at a veteran level, able to perform surgery, diagnose conditions, and create medicine. Given ingredients, you can make your own medicines, even magical ones such as potions depending on the world you are in.
 97. Expert Cooking, 4.4, Generic
@@ -197,7 +197,7 @@
 99. Expert Acting, 4.4, Generic
 #(Tag:social)You are an expert actor, skillfully portraying yourself as you want to be perceived to invoke or hide emotions at will. It would take a real expert to see through your mask.
 100. Expert Shooting, 4.6, Generic
-#You are an expert marksman, handling all firearms and projectiles with such skill and finesse that others might wonder if you have a special power. You can curve shots, utilize ricochets, and better predict the trajectory of enemy projectiles.
+#(Tag:ranged)You are an expert marksman, handling all firearms and projectiles with such skill and finesse that others might wonder if you have a special power. You can curve shots, utilize ricochets, and better predict the trajectory of enemy projectiles.
 101. Expert Hand-to-Hand Combat, 4.5, Generic
 #(Tag:martial)(Tag:unarmed)You are an expert martial artist, moving your body like a lethal weapon and knowing where and how to strike. You learn and master other unarmed martial arts much faster.
 102. Expert Programming, 4.1, Generic
@@ -231,11 +231,11 @@
 116. Expert Massage, 4.0, Generic
 #(Tag:craft)You are an expert masseuse on the level of a grandpa who spent his life refining his craft, giving massages that melt away exhaustion, revitalize the body, relieve tension, and give unmatched sexual pleasure.
 117. Expert Driving, 4.0, Generic
-#You are an expert driver of all vehicles from scooters to spaceships, able to outrace a motorcycle while riding a tricycle. If it has steering controls, you can make it purr as others can only hope to imitate.
+#(Tag:motor)(Tag:movement)You are an expert driver of all vehicles from scooters to spaceships, able to outrace a motorcycle while riding a tricycle. If it has steering controls, you can make it purr as others can only hope to imitate.
 118. Expert Leadership, 5.3, Generic
 #(Tag:social)You are an expert leader on par with famous leaders like Iskandar or King Arthur, motivating, leading, and managing your people with finesse and efficiency. You could probably run your own country with some effort.
 119. Expert Charisma, 5.2, Generic
-#You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
+#(Tag:social)You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
 120. Expert Medicine, 4.9, Generic
 #(Tag:medical)You are an expert in all fields of medicine seldom matched by regular humans, performing surgery, making your own supernatural medicine, and diagnosing ailments with ease and finesse.
 121. Master Cooking, 5.6, Generic
@@ -245,7 +245,7 @@
 123. Master Acting, 5.2, Generic
 #(Tag:social)You are a master actor, perhaps no longer able to tell where the mask ends and you begin. You can present yourself any way you want and perfectly mask your emotions when needed. It would take nothing less than the eyes of a truth seer to see beyond your mask.
 124. Master Shooting, 5.3, Generic
-#You have marksmanship on the level of legends like Orion or Arash, or you could with enough training. Few mortals can dodge your projectiles, and in old times you would have been hailed as a legendary archer.
+#(Tag:ranged)You have marksmanship on the level of legends like Orion or Arash, or you could with enough training. Few mortals can dodge your projectiles, and in old times you would have been hailed as a legendary archer.
 125. Master Hand-to-Hand Combat, 5.5, Generic
 #(Tag:martial)(Tag:unarmed)You have martial skill and talent on the level of legends, a true prodigy. You quickly master most martial arts, comprehend unarmed combat incredibly well, and your hands and feet are weapons that would not lose to swords and spears.
 126. Master Programming, 5.7, Generic
@@ -279,17 +279,17 @@
 140. Master Massage, 5.5, Generic
 #(Tag:craft)(Tag:healing)You are a master masseuse beyond any mortal, whose massages can heal injuries and ailments, bringing therapy, immense pleasure, and comfort. Even the bodies of gods are like putty in your hands.
 141. Master Driving, 5.0, Generic
-#You are a true master at driving any vehicle or mount with steering, riding it as an extension of your body, ranging from rollerblades to star-sized spacecraft.
+#(Tag:motor)(Tag:movement)You are a true master at driving any vehicle or mount with steering, riding it as an extension of your body, ranging from rollerblades to star-sized spacecraft.
 142. Master Leadership, 5.8, Generic
 #(Tag:social)You are a master leader, excellent at managing, leading, motivating, and earning the loyalty of all under you. You could easily run your own country, and in old times you would be hailed as a legendary general.
 143. Master Charisma, 5.6, Generic
-#You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, your presence strikes fear when you want to intimidate, and your aura appears serene when you want to calm others.
+#(Tag:social)You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, your presence strikes fear when you want to intimidate, and your aura appears serene when you want to calm others.
 144. Master Medicine, 5.7, Generic
 #(Tag:medical)You are a true master in all fields of medicine seldom matched by regular humans, performing surgery, making your own medicine, and diagnosing ailments with extreme efficiency and precision. You can create and design your own medicines, and with practice, even superhuman medicines.
 145. Grandmaster Cooking, 6.6, Generic
 #(Tag:craft)You are a Grandmaster of Cooking, better than any mortal has any right to be, able to cook any meal from Elder Dragon steaks to Leviathan sushi. In addition to incredible taste, your foods gain special wondrous effects depending on what you cook.
 146. Grandmaster Shooting, 6.3, Generic
-#You are a Grandmaster Marksman, better than any mortal has any right to be, in the vein of Bullseye. Your accuracy with any ranged weapon and projectile is almost absolute, and their lethality in your hands is unmatched. You could kill a man two streets away by flicking a toothpick through his eyesocket into his brain.
+#(Tag:ranged)You are a Grandmaster Marksman, better than any mortal has any right to be, in the vein of Bullseye. Your accuracy with any ranged weapon and projectile is almost absolute, and their lethality in your hands is unmatched. You could kill a man two streets away by flicking a toothpick through his eyesocket into his brain.
 147. Grandmaster Hand-to-Hand Combat, 6.5, Generic
 #(Tag:martial)(Tag:unarmed)You have reached the Saint level in martial arts. Even without abilities or energy, your arms and legs can strike the intangible, kicking so hard you shatter souls or slapping magic from hands.
 148. Grandmaster Programming, 6.9, Generic
@@ -323,7 +323,7 @@
 162. Divine Cooking, 7.3, Generic
 #(Tag:craft)Your cooking talent is on the level of the gods. Your food gives someone an epiphany and changes their life. Gods queue outside your restaurant to taste your cooking.
 163. Divine Shooting, 7.4, Generic
-#Your skill with bow and arrow is on the level of the gods. With training, you take Artemis, Apollo, and Arjuna's lunch money.
+#(Tag:ranged)Your skill with bow and arrow is on the level of the gods. With training, you take Artemis, Apollo, and Arjuna's lunch money.
 164. Divine Hand-to-Hand Combat, 7.7, Generic
 #(Tag:martial)(Tag:unarmed)Your martial arts talent is godly. You learn someone's martial art just by exchanging blows with them, and you invent new martial arts on the spot that would normally take masters tens of years to create.
 165. Divine Programming, 7.6, Generic
@@ -353,7 +353,7 @@
 177. Divine Leadership, 7.4, Generic
 #(Tag:social)Your leadership and ruling skills are divine. You maintain a galaxy-spanning empire and handle all its bureaucracy yourself. Any army you lead fights with unstoppable morale and might, and any empire you lead prospers.
 178. Divine Charisma, 7.9, Generic
-#You carry the presence and aura of a god. Your sheer charisma brings people to their knees, draws people of note to you, calms a raging beast, and inspires awe in the masses. You are the most popular being alive.
+#(Tag:social)You carry the presence and aura of a god. Your sheer charisma brings people to their knees, draws people of note to you, calms a raging beast, and inspires awe in the masses. You are the most popular being alive.
 179. Divine Medicine, 7.5, Generic
 #(Tag:medical)You are as skilled as a god of health and medicine. You modify and heal bodies to your liking as long as you have the tools, cure any ailment, and create divine medicines like panaceas and elixirs of immortality. But this knowledge is too much for a mortal vessel, so it manifests as instinctive comprehension of all matters of life; the stronger you get, the more access you gain to the divine knowledge.
 180. Novice Interfacing, 1.4, Generic
@@ -603,35 +603,35 @@
 302. Kidnapping, 1.8, Generic
 #(Tag:expertise)You are very skilled at kidnapping targets, planning such operations with great skill and finesse and executing them with practiced moves.
 303. Factory Planning, 3.2, Satisfactory
-#Lay out production lines, manifolds, and bus feeds that scale up without dissolving into spaghetti.
+#(Tag:craft)Lay out production lines, manifolds, and bus feeds that scale up without dissolving into spaghetti.
 304. Machine Override, 3.4, Horizon Zero Dawn
-#Hack overridden machines to fight for you or serve as mounts.
+#(Tag:tech)Hack overridden machines to fight for you or serve as mounts.
 305. Bushcraft, 2.8, Tomb Raider
 #Forage, hunt, craft, and read the land in any hostile wild.
 306. Colony Medicine, 3.6, RimWorld
 #(Tag:healing)Triage, surgery, and glitterworld care with whatever counts as a hospital.
 307. Colony Construction, 3.0, RimWorld
-#Raise bases fast and sturdy, from wooden shacks to plasteel fortresses.
+#(Tag:craft)Raise bases fast and sturdy, from wooden shacks to plasteel fortresses.
 308. Deep Space Survey, 3.4, Stellaris
-#Chart stars, anomalies, and habitable worlds with professional thoroughness.
+#(Tag:science)Chart stars, anomalies, and habitable worlds with professional thoroughness.
 309. Galactic Diplomacy, 3.8, Stellaris
-#Federations, vassals, and first contact without starting an extermination war. Usually.
+#(Tag:social)Federations, vassals, and first contact without starting an extermination war. Usually.
 310. Sneaking, 2.6, Divinity Original Sin
-#Move unseen, pick pockets, and backstab with professional discretion.
+#(Tag:stealth)Move unseen, pick pockets, and backstab with professional discretion.
 311. Persuasion, 3.0, Divinity Original Sin
-#Talk down fights, talk up prices, and talk your way into restricted areas.
+#(Tag:social)Talk down fights, talk up prices, and talk your way into restricted areas.
 312. Masonry, 2.4, Dwarf Fortress
-#Cut stone blocks and raise fortresses that outlast civilizations.
+#(Tag:craft)Cut stone blocks and raise fortresses that outlast civilizations.
 313. Brewing, 2.2, Dwarf Fortress
 #Turn pig tails and plump helmets into life-giving dwarven ale.
 314. Deckbuilding, 3.0, MTG
-#Build sixty-card engines where every draw does exactly what the plan needs.
+#(Tag:craft)Build sixty-card engines where every draw does exactly what the plan needs.
 315. Slime Science, 3.6, Slime Rancher
-#Gadgets, pumps, and teleporters powered by slime science and questionable ethics.
+#(Tag:science)Gadgets, pumps, and teleporters powered by slime science and questionable ethics.
 316. Computer Hacking, 3.4, Deus Ex
-#Breach security ratings, ATMs, and robots with time to spare and no alarms.
+#(Tag:tech)Breach security ratings, ATMs, and robots with time to spare and no alarms.
 317. Exocraft Piloting, 3.2, No Man's Sky
-#Handle Nomads, Pilgrims, and Minotaurs across every biome without scratching the paint.
+#(Tag:motor)(Tag:movement)Handle Nomads, Pilgrims, and Minotaurs across every biome without scratching the paint.
 318. Pal Training, 2.8, Palworld
 #Raise, breed, and work Pals to peak performance without anyone getting eaten.
 319. Animals, 1.8, I Was a Teenage Exocolonist
@@ -639,33 +639,33 @@
 320. Combat, 2.2, I Was a Teenage Exocolonist
 #Defend the colony with blades, bows, and level-headed aim when the planet pushes back.
 321. Creativity, 2.0, I Was a Teenage Exocolonist
-#Art, music, and writing that lift the whole colony's spirits through hard years.
+#(Tag:mental)Art, music, and writing that lift the whole colony's spirits through hard years.
 322. Engineering, 2.4, I Was a Teenage Exocolonist
-#Keep the colony's generators, walls, and weird alien-tech hybrids running.
+#(Tag:craft)(Tag:tech)Keep the colony's generators, walls, and weird alien-tech hybrids running.
 323. Leadership, 2.2, I Was a Teenage Exocolonist
-#Organize expeditions and councils so the colony actually follows the plan.
+#(Tag:social)Organize expeditions and councils so the colony actually follows the plan.
 324. Logic, 2.0, I Was a Teenage Exocolonist
-#Solve colony problems with clear reasoning, from supply math to alien puzzles.
+#(Tag:mental)(Tag:science)Solve colony problems with clear reasoning, from supply math to alien puzzles.
 325. Organization, 1.8, I Was a Teenage Exocolonist
 #Keep stockpiles, chores, and expeditions sorted no matter how chaotic the season.
 326. Reasoning, 2.2, I Was a Teenage Exocolonist
-#Argue, deduce, and mediate with a cool head when colonists disagree.
+#(Tag:science)Argue, deduce, and mediate with a cool head when colonists disagree.
 327. Mystic Arts, 4.0, MCU
-#Kamar-Taj training in spellcraft, relics, and dimensional etiquette, from mandalas to the Mirror Dimension.
+#(Tag:technique)Kamar-Taj training in spellcraft, relics, and dimensional etiquette, from mandalas to the Mirror Dimension.
 328. Train Hopping, 2.2, Divergent
-#Board and ride moving trains Dauntless-style: sprint, grab, swing up, and do not look down.
+#(Tag:movement)Board and ride moving trains Dauntless-style: sprint, grab, swing up, and do not look down.
 329. Model Railroad Building, 1.6, Generic
 #Design and build detailed model railroads, from benchwork and wiring to weathered tiny trees.
 330. Train Driving, 2.4, Generic
-#Operate locomotives properly: signals, timetables, braking curves, and all.
+#(Tag:motor)(Tag:movement)Operate locomotives properly: signals, timetables, braking curves, and all.
 331. Railway Engineering, 3.0, Generic
-#Survey grades, lay out yards, and engineer full-size railways that stay up and on time.
+#(Tag:craft)(Tag:tech)Survey grades, lay out yards, and engineer full-size railways that stay up and on time.
 332. Theoretical Physics, 2.6, Half-Life
-#Relativistic math, quantum field doodles, and resonance-cascade risk assessment from first principles.
+#(Tag:science)Relativistic math, quantum field doodles, and resonance-cascade risk assessment from first principles.
 333. Xenobiology, 2.8, Half-Life
-#Study, catalogue, and handle border-world fauna without dying.
+#(Tag:science)Study, catalogue, and handle border-world fauna without dying.
 334. Crowbar Combat, 2.2, Half-Life
-#The free-man's martial art: swings, pries, jams, and one quiet hallway at a time.
+#(Tag:weapon)The free-man's martial art: swings, pries, jams, and one quiet hallway at a time.
 335. Scry, 5.1, MTG
 #Glimpse the immediate future and quietly rearrange it: look at the next few outcomes, keep the order or bury the worst of them. Stronger minds see further and bury deeper.
 336. Barrel Roll, 0.4, Star Fox
@@ -673,7 +673,7 @@
 337. Belter Creole, 0.5, The Expanse
 #Basic Belter phrases for docking, haggling, and swearing. Your accent outs you instantly.
 338. Running Down Corridors, 0.4, Doctor Who
-#Run down corridors with purpose while shouting explanations. Slightly faster when pursued.
+#(Tag:movement)Run down corridors with purpose while shouting explanations. Slightly faster when pursued.
 339. Small Talk, 0.2, Generic
 #Sustain conversations about the weather indefinitely. Any other topic ends them.
 340. Power Nap, 0.3, Generic
@@ -689,7 +689,7 @@
 345. Speed Walking, 0.3, Generic
 #Walk just below a jog without technically running. Race walkers nod respectfully.
 346. Cyber Warfare, 5.3, Ghost in the Shell
-#Hack cyberbrains, drones, and networks mid-combat: spoof senses, hijack limbs, and ghost-dive opposition hackers. Air-gapped targets just laugh.
+#(Tag:tech)Hack cyberbrains, drones, and networks mid-combat: spoof senses, hijack limbs, and ghost-dive opposition hackers. Air-gapped targets just laugh.
 347. Overwatch, 5.3, XCOM
 #Hold a reaction shot on a lane: the first hostile to move through it eats an aimed attack. Moving yourself cancels it; reloading cancels everything.
 348. Micro, 5.1, StarCraft
@@ -699,21 +699,21 @@
 350. Speed Flip, 5.1, Rocket League
 #The fastest possible kickoff launch: flip-cancel into supersonic speed off the line. Beats everyone slower; ties everyone else doing it.
 351. Chem-Baron Negotiation, 5.2, League of Legends / Arcane
-#Conduct any negotiation from unassailable calm without raising your voice: read rooms, make offers that refuse themselves, and keep underlings loyal through fear dressed as respect.
+#(Tag:social)Conduct any negotiation from unassailable calm without raising your voice: read rooms, make offers that refuse themselves, and keep underlings loyal through fear dressed as respect.
 352. Madcap Gadgeteering, 5.3, League of Legends / Arcane
 #Build devastating weapons from scrap that work despite violating several design principles and most safety regulations. Brilliant, usually; explosive, occasionally, including the successes.
 353. Perfect Recall, 8.0, Generic
 #(Tag:mental)Remember everything you have ever sensed with total fidelity and index it instantly; you may lend a memory to a willing mind by touch. You cannot delete one.
 354. Multiversal Etiquette, 8.1, Generic
-#Never commit a faux pas on any world: you intuitively know every custom, taboo, rank, and proper address on first encounter, and first impressions start one step warmer. Sincerity is still on you.
+#(Tag:social)Never commit a faux pas on any world: you intuitively know every custom, taboo, rank, and proper address on first encounter, and first impressions start one step warmer. Sincerity is still on you.
 355. Grandmaster Diplomacy, 8.2, Generic
-#Negotiate ceasefires, treaties, and trade deals between parties with every reason to kill each other; terms you broker hold for a year and a day short of flagrant betrayal. You cannot broker for yourself.
+#(Tag:social)Negotiate ceasefires, treaties, and trade deals between parties with every reason to kill each other; terms you broker hold for a year and a day short of flagrant betrayal. You cannot broker for yourself.
 356. Doomsday Prepping, 8.4, Generic
 #Given a week of warning, you have the skill to determine exactly what a stronghold needs to outlast any single named disaster (siege, winter, plague, flood) for a year, what to stock, how to obtain it, and how to store it, and the knack to get it done in the time available. It provides no means, funding, or storage space: all of that is on you. What you do stockpile never spoils, and your people never quite despair. You cannot prep for two dooms at once.
 357. Field Surgery of the Soul, 8.6, Generic
 #(Tag:healing)Operate on minds and souls with mundane tools: excise curses, trauma, and possessions below Divine rank in a single bloody session. The patient must consent, and will remember the operation fondly, which is the worst part.
 358. Apocalyptic Engineering, 8.8, Generic
-#Design and build world-scale works (walls that hold back seas, guns that shoot down moons) from mundane materials, given time, labor, and absurd but finite budgets. Maintenance is someone else's problem.
+#(Tag:craft)(Tag:tech)Design and build world-scale works (walls that hold back seas, guns that shoot down moons) from mundane materials, given time, labor, and absurd but finite budgets. Maintenance is someone else's problem.
 359. Ultra Instinct, 9.1, Dragon Ball
 #The body reacts without thought: perfect defense and counterflow while calm and empty. Thinking, doubt, rage, or fatigue break it instantly; it cannot be taught, only glimpsed.
 360. Nen Contracting, 8.9, Hunter x Hunter
@@ -723,7 +723,7 @@
 362. Kido Mastery, 8.4, Bleach
 #Numbered spells 1-99 in destruction and binding at full incantation power, spoken whole or shortened (and weaker). Above number 90, the spell risks the caster. Spell List: https://bleach.fandom.com/wiki/Kid%C5%8D
 363. Jedi Battle Meditation, 8.5, Star Wars
-#Turn the tide of whole battles: your side fights as one mind through the Force while the enemy fights as a crowd. You must meditate throughout; bring bodyguards.
+#(Tag:mental)Turn the tide of whole battles: your side fights as one mind through the Force while the enemy fights as a crowd. You must meditate throughout; bring bodyguards.
 364. Spin Mastery, 8.6, JoJo
 #Hurl the perfect golden rotation: projectiles that never stop, barriers that turn attacks aside, and at full mastery, passage between dimensions. Perfect rotation demands perfect posture, and excellent horseback skills.
 365. ICEbreaker Dive, 8.5, Cyberpunk 2077
@@ -735,7 +735,7 @@
 368. Weirding Way, 8.5, Dune
 #Prana-bindu mastery of muscle, nerve, and chemistry: move faster than eyes track, slow your heart to stillness, neutralize poisons mid-bloodstream. Requires the conditioning; caffeine doesn't count.
 369. Vulcan Mind Meld, 8.3, Star Trek
-#Telepathic memory-and-self merge by touch: share knowledge, heal fractured minds, or carry a katra past death. Deep melds blur who is who; bring a chaperone for the long ones.
+#(Tag:mental)Telepathic memory-and-self merge by touch: share knowledge, heal fractured minds, or carry a katra past death. Deep melds blur who is who; bring a chaperone for the long ones.
 370. Hertza Haeon, 8.4, Alita: Battle Angel
 #The electromagnetic palm strike: discharge a point-blank shockwave from your palm that stuns flesh, stops weak hearts, and scrambles machines and cyborgs. It needs a conductive body or focus to channel, and each full-power strike numbs your own arm for minutes.
 371. Panzer Kunst, 8.5, Alita: Battle Angel

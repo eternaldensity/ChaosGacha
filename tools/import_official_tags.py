@@ -32,6 +32,16 @@ GACHA_DIR = os.path.join(ROOT, "gachafiles")
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tagdata")
 TAG_TOKEN_RE = re.compile(r"\((Tags?:[^)]*)\)")
 
+# Corrections to the vendored official tags, applied after the merge above.
+# Each is a case where the site's own tagging misses an explicit property of
+# the entry (verified against the entry text). Keyed (category, name).
+FIXES = {
+    ("item", "Dragonslayer Swordspear"): ["anti-dragon"],
+    ("item", "Dragon Slayer"): ["anti-dragon"],
+    ("ability", "Curse Breaker"): ["anti-curse"],
+    ("familiar", "Dark Eater Midir"): ["anti-dark"],
+}
+
 # Curated tags that duplicate a concept the official taxonomy already names on
 # the same entry. When any of the listed official tags is present ours is
 # dropped, so filters see the official name only (the user's "replace our
@@ -138,6 +148,8 @@ def main():
             o for o in ours
             if not (SUBSUME.get(o, set()) & official_norm)
         }
+        for extra in FIXES.get((fname, cur["name"]), ()):
+            union.add(gt.normalize_tag(extra))
         if not union:
             continue
         stats["tagged"] += 1
