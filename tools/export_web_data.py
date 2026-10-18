@@ -101,6 +101,32 @@ def flag_map():
 def main():
     export_entries()
     export_curses()
+    export_tags()
+
+
+def export_tags():
+    """Mirror the original site's per-category tag dictionaries for the web UI
+    (tooltips on tag pills, filter descriptions). Source snapshot:
+    tools/tagdata/dicts.json; see tools/tagdata/README.md for provenance."""
+    src = os.path.join(ROOT, "tools", "tagdata", "dicts.json")
+    with open(src, encoding="utf-8") as fh:
+        dicts = json.load(fh)
+    payload = {}
+    for cat in CATEGORIES:
+        items = []
+        for t in dicts.get(cat, []):
+            tag = gt.normalize_tag(t["name"])
+            if not tag:
+                continue
+            items.append({"name": t["name"], "tag": tag, "desc": t["desc"]})
+        payload[cat] = items
+    dest = os.path.join(ROOT, "web", "data", "tags.js")
+    with open(dest, "w", encoding="utf-8") as fh:
+        fh.write("window.CHAOS_TAGS = ")
+        fh.write(json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
+        fh.write(";\n")
+    n = sum(len(v) for v in payload.values())
+    print(f"wrote {dest} ({os.path.getsize(dest)} bytes, {n} tag docs)")
 
 
 def export_curses():

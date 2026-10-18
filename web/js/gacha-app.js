@@ -48,14 +48,22 @@
     }
     return (e && (e.tags || e.tg)) || [];
   }
-  function allTags() {
-    if (Array.isArray(DATA.tags) && DATA.tags.length) return DATA.tags.slice().sort();
-    const s = new Set();
-    for (const e of (DATA.entries || [])) for (const t of entryTags(e)) s.add(t);
-    return [...s].sort();
+  function tagPills(tags, cat) {
+    return (tags || []).map(t => {
+      const d = tagDesc(t, cat);
+      return `<span class="pill"${d ? ` title="${esc(d)}"` : ""}>🏷 ${esc(t)}</span>`;
+    }).join(" ");
   }
-  function tagPills(tags) {
-    return (tags || []).map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ");
+  // Tag descriptions from the original site's dictionaries (data/tags.js).
+  const TAGDOCS = window.CHAOS_TAGS || {};
+  function tagDesc(tag, cat) {
+    const hit = (cat && (TAGDOCS[cat] || [])).find(t => t.tag === tag);
+    if (hit) return hit.desc;
+    for (const c of Object.keys(TAGDOCS)) {
+      const h = TAGDOCS[c].find(t => t.tag === tag);
+      if (h) return h.desc;
+    }
+    return "";
   }
   function tagCount(tag) {
     if (DATA.tagCounts && DATA.tagCounts[tag] != null) return DATA.tagCounts[tag];
@@ -63,15 +71,30 @@
     for (const e of (DATA.entries || [])) if (entryTags(e).includes(tag)) n++;
     return n;
   }
+  // Tags offered in the pickers follow the selected category (the original
+  // taxonomy is per-category), so "random" lists everything.
+  function tagsForCategory(cat) {
+    const s = new Set();
+    for (const e of (DATA.entries || [])) {
+      if (e.t === "tree") continue;
+      if (cat && cat !== "random" && e.f !== cat) continue;
+      for (const t of entryTags(e)) s.add(t);
+    }
+    return [...s].sort((a, b) => tagCount(b) - tagCount(a) || a.localeCompare(b));
+  }
   function fillTagSelects() {
     for (const id of ["fTag", "tkTag"]) {
       const sel = $(id);
       if (!sel) continue;
       const cur = sel.value;
-      const anyLabel = id === "tkTag" ? "Any tag" : "Any tag";
-      sel.innerHTML = `<option value="">${anyLabel}</option>` +
-        allTags().map(t => `<option value="${esc(t)}">${esc(t)} (${tagCount(t)})</option>`).join("");
+      const list = tagsForCategory(category);
+      sel.innerHTML = `<option value="">Any tag</option>` +
+        list.map(t => `<option value="${esc(t)}">${esc(t)} (${tagCount(t)})</option>`).join("");
       if (cur && [...sel.options].some(o => o.value === cur)) sel.value = cur;
+    }
+    if ($("fTag")) {
+      $("fTag").title = "Original-site tags for the selected category. " +
+        "Hover an entry's pill to see what a tag means.";
     }
   }
 
@@ -301,7 +324,7 @@
     $("resultBody").innerHTML =
       `<div class="small" style="color:${esc(cls.color)}">${esc(cls.name)} ${esc(r.category)}${r.source ? " [" + esc(r.source) + "]" : ""}</div>` +
       `<div class="result-name"><span class="dot" style="background:${esc(cls.color)}"></span><b>${esc(r.name)}</b> · ${fmtR(r.rarity)}</div>` +
-      (tags.length ? `<div style="margin:4px 0">${tagPills(tags)}</div>` : "") +
+      (tags.length ? `<div style="margin:4px 0">${tagPills(tags, r.category)}</div>` : "") +
       `<div class="small muted">${r.odds.toFixed(2)}% odds</div>` +
       (r.d20 != null ? `<div class="small muted">🎲 Gambler d20 → ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</div>` : "") +
       (r.advantage > 1 ? `<div class="small muted">⚡ Advantage ×${r.advantage}: your pick from ${r.advantage} wheels</div>` : "") +
@@ -416,7 +439,7 @@
     const li = document.createElement("li");
     li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
       `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${fmtR(r.rarity)}</span>` +
-      (entryTags(r).length ? " " + tagPills(entryTags(r)) : "") +
+      (entryTags(r).length ? " " + tagPills(entryTags(r), r.category) : "") +
       (extra || "") +
       `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
     const b = document.createElement("button");
@@ -713,7 +736,7 @@
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
         `<b>${esc(h.name)}</b> <span class="pill">${esc(h.category)} ${fmtR(h.rarity)}</span>` +
-        (entryTags(h).length ? " " + tagPills(entryTags(h)) : "") +
+        (entryTags(h).length ? " " + tagPills(entryTags(h), h.category) : "") +
         (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }))}">🎲${h.d20}</span>` : "") +
         (h.advantage > 1 ? ` <span class="pill" title="Kept the best of ${h.advantage} wheels">⚡${h.advantage}</span>` : "") + `<br>` +
         `<span class="muted small">${esc(h.source || "—")} · ${new Date(h.at).toLocaleString()} · ${h.odds.toFixed(2)}%</span></div>`;

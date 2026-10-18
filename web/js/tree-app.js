@@ -51,14 +51,38 @@
   const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
 
   function nodeTags(nd) { return (nd && (nd.tags || nd.tg)) || []; }
-  function allTags() {
-    if (Array.isArray(DATA.tags) && DATA.tags.length) return DATA.tags.slice().sort();
-    const s = new Set();
-    for (const e of (DATA.entries || [])) for (const t of ((e.tags || e.tg) || [])) s.add(t);
-    return [...s].sort();
+  // Tags ordered by how many entries carry them (the official taxonomy is
+  // large, so the pickers lead with the common ones).
+  function tagCounts() {
+    const c = (DATA.tagCounts) || null;
+    if (c) return c;
+    const out = {};
+    for (const e of (DATA.entries || [])) {
+      for (const t of ((e.tags || e.tg) || [])) out[t] = (out[t] || 0) + 1;
+    }
+    return out;
   }
-  function tagPills(tags) {
-    return (tags || []).map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ");
+  function allTags() {
+    const counts = tagCounts();
+    return [...new Set(Object.keys(counts))].sort(
+      (a, b) => (counts[b] || 0) - (counts[a] || 0) || a.localeCompare(b));
+  }
+  // Tag descriptions come from the original site's dictionaries (data/tags.js).
+  const TAGDOCS = window.CHAOS_TAGS || {};
+  function tagDesc(tag, cat) {
+    const hit = (cat && (TAGDOCS[cat] || [])).find(t => t.tag === tag);
+    if (hit) return hit.desc;
+    for (const c of Object.keys(TAGDOCS)) {
+      const h = TAGDOCS[c].find(t => t.tag === tag);
+      if (h) return h.desc;
+    }
+    return "";
+  }
+  function tagPills(tags, cat) {
+    return (tags || []).map(t => {
+      const d = tagDesc(t, cat);
+      return `<span class="pill"${d ? ` title="${esc(d)}"` : ""}>🏷 ${esc(t)}</span>`;
+    }).join(" ");
   }
   // Copy format mirrors the gacha result text: name on one line, metadata in
   // parentheses on the next, then the full description, so a pasted node
@@ -1322,7 +1346,7 @@
       const tags = nodeTags(nd);
       li.innerHTML = `<div class="grow"><b>#${nd.id} ${esc(nd.name)}</b> ` +
         `<span class="pill">${esc(nd.file)} ${nd.rarity}</span>` +
-        (tags.length ? " " + tagPills(tags) : "") + `<br>` +
+        (tags.length ? " " + tagPills(tags, nd.file) : "") + `<br>` +
         `<span class="muted small">${esc(nd.source || "—")}${c.st.unlocked.includes(nd.id) ? " · unlocked" : ""}</span></div>`;
       li.style.cursor = "pointer";
       li.addEventListener("click", () => { selectedId = nd.id; showTab("node"); });
@@ -1356,7 +1380,7 @@
     return `<div><span class="dot" style="background:${esc(cls.color)}"></span>` +
       `<b>#${nd.id} ${esc(nd.name)}</b> <span class="pill">${esc(nd.file)}</span> ` +
       `<span class="pill">${esc(nd.source || "—")}</span>` +
-      (tags.length ? " " + tagPills(tags) : "") + `</div>` +
+      (tags.length ? " " + tagPills(tags, nd.file) : "") + `</div>` +
       `<div class="small muted">${esc(cls.name)} · rarity ${nd.rarity} · cost ${unl ? "—" : E.fmt(Math.pow(10, nd.rarity))}` +
       (extra || "") + `</div>` +
       (nd.description ? `<p class="small">${linkify(nd.description)}</p>` : "");
@@ -1637,7 +1661,7 @@
         `<td style="padding:8px">${r.nd.rarity}</td>` +
         `<td style="padding:8px">${cost}</td>` +
         `<td style="padding:8px">${esc(r.nd.source || "—")}</td>` +
-        `<td style="padding:8px">${tags.map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ")}</td>`;
+        `<td style="padding:8px">${tags.map(t => tagPills([t], r.nd.file)).join(" ")}</td>`;
       tr.addEventListener("click", () => { selectedId = r.id; showTab("node"); });
       body.appendChild(tr);
     }
@@ -2001,7 +2025,7 @@
       const tags = nodeTags(nd);
       li.innerHTML = `<div class="grow"><b>${esc(nd.name)}</b> ` +
         `<span class="pill">${esc(nd.file)} ${fmtR(nd.rarity)}</span>` +
-        (tags.length ? " " + tagPills(tags) : "") + `<br>` +
+        (tags.length ? " " + tagPills(tags, nd.file) : "") + `<br>` +
         `<span class="muted small">${E.fmt(cost)} pts${cc ? " + 1 core" : " · no core"}</span></div>`;
       const go = document.createElement("button");
       go.textContent = "View";
@@ -2211,7 +2235,7 @@
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><b>#${r.id} ${esc(nd.name)}</b> ` +
         `<span class="pill">${esc(nd.file)} ${fmtR(nd.rarity)}</span>` +
-        (tags.length ? " " + tagPills(tags) : "") + `<br>` +
+        (tags.length ? " " + tagPills(tags, nd.file) : "") + `<br>` +
         `<span class="muted small">${E.fmt(cost)} pts${cc ? " + 1 core" : " · no core"} · ${hopTxt(r.hops)} · ${esc(r.via)}</span></div>`;
       const go = document.createElement("button");
       go.textContent = "View";
@@ -2360,7 +2384,7 @@
         const tags = nodeTags(r.node);
         li.innerHTML = `<div class="grow"><b>#${r.node.id} ${esc(r.node.name)}</b> ` +
           `<span class="pill">${r.dist} hop${r.dist === 1 ? "" : "s"}</span>` +
-          (tags.length ? " " + tagPills(tags) : "") + `<br>` +
+          (tags.length ? " " + tagPills(tags, r.node.file) : "") + `<br>` +
           `<span class="muted small">${esc(r.path.map(p => c.rt.byId[p] ? c.rt.byId[p].name : "#" + p).join(" → "))}</span></div>`;
         const go = document.createElement("button");
         go.textContent = "View";
@@ -2645,10 +2669,10 @@
   $("ownCat").innerHTML = `<option value="">All</option>` +
     E.CATEGORIES.map(c => `<option>${c}</option>`).join("");
   const tagOpts = `<option value="">All tags</option>` +
-    allTags().map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join("");
+    allTags().map(t => `<option value="${esc(t)}">${esc(t)} (${tagCounts()[t] || 0})</option>`).join("");
   if ($("ownTag")) $("ownTag").innerHTML = tagOpts;
   if ($("newTag")) $("newTag").innerHTML = `<option value="">Any tag</option>` +
-    allTags().map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join("");
+    allTags().map(t => `<option value="${esc(t)}">${esc(t)} (${tagCounts()[t] || 0})</option>`).join("");
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });
   $("ownCat").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });
   if ($("ownTag")) $("ownTag").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });

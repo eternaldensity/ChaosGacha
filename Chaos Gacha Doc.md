@@ -410,7 +410,7 @@ You must also add a description under the item for it to be counted, if you do n
 
 Optional system tags: put `(Gacha)` at the start of a description to make that entry Gacha-only, or `(Tree)` to make it Tree-only. Entries with neither tag appear in both the Gacha and the Chaos Tree.
 
-Thematic tags: put `(Tag:name)` (repeat per tag) or `(Tags: a, b)` at the start of a description to mark what the entry IS — e.g. `#(Tag:dragonic) ...`, `#(Tag:undead)(Tag:holy) ...`. Names are lowercase (`draconic` aliases to `dragonic`). Tagged entries show pills across the site and can be rolled/filtered by tag (gacha filter + ticket theme tag, entries page chips, tree generation filter).
+Thematic tags: entries carry the tag taxonomy from the original Chaos Gacha index (BronzDeck's site), imported into these files as leading `(Tag:name)` tokens — e.g. `#(Tag:fire)(Tag:kinesis) ...` — or several at once as `(Tags: a, b)`. Names are lowercase, and `+` is significant (`fire` = fire-themed, `fire+` = amplifies fire). Tags are per category (the site ships a dictionary per category; see `tools/tagdata/`). Tagged entries show pills across the site (hover for the dictionary description) and can be rolled/filtered by tag (gacha filter + ticket theme tag, entries page chips, tree generation filter). Refresh with `python3 tools/import_official_tags.py`; fork-only entries can be filled in with `python3 tools/tag_entries.py --only-untagged`.
 
 **—Copy—**  
 The copy button copies the current ability or item you have on your screen alongside its rarity and description to your clipboard for you to be able to copy and paste it with ease.

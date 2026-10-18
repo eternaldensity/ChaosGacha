@@ -77,11 +77,22 @@
   }
 
   function entryTags(e) { return (e && (e.tags || e.tg)) || []; }
-  function allTags() {
-    if (Array.isArray(DATA.tags) && DATA.tags.length) return DATA.tags.slice().sort();
-    const s = new Set();
-    for (const e of (DATA.entries || [])) for (const t of entryTags(e)) s.add(t);
-    return [...s].sort();
+  // Tag descriptions come from the original site's per-category dictionaries
+  // (web/data/tags.js, generated from tools/tagdata/).
+  const TAGDOCS = window.CHAOS_TAGS || {};
+  function tagDesc(tag, cat) {
+    const list = (cat && TAGDOCS[cat]) || [];
+    const hit = list.find(t => t.tag === tag);
+    if (hit) return hit.desc;
+    for (const c of Object.keys(TAGDOCS)) {
+      const h = TAGDOCS[c].find(t => t.tag === tag);
+      if (h) return h.desc;
+    }
+    return "";
+  }
+  function tagPill(tag, cat) {
+    const d = tagDesc(tag, cat);
+    return `<span class="pill"${d ? ` title="${esc(d)}"` : ""}>🏷 ${esc(tag)}</span>`;
   }
 
   function checkedSources() {
@@ -193,7 +204,7 @@
         `<td style="padding:8px">${esc(e.f)}</td>` +
         `<td style="padding:8px">${e.r}</td>` +
         `<td style="padding:8px">${esc(e.s || "—")}</td>` +
-        `<td style="padding:8px">${tags.map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ")}</td>`;
+        `<td style="padding:8px">${tags.map(t => tagPill(t, e.f)).join(" ")}</td>`;
       const cp = document.createElement("button");
       cp.textContent = "📋";
       cp.title = `Copy ${e.name}`;
@@ -214,12 +225,74 @@
         const td = document.createElement("td");
         td.setAttribute("colspan", "6");
         td.style.cssText = "padding:8px 8px 12px 26px";
-        td.innerHTML = (tags.length ? tags.map(t => `<span class="pill">🏷 ${esc(t)}</span>`).join(" ") + "<br><br>" : "") +
+        td.innerHTML = (tags.length ? tags.map(t => tagPill(t, e.f)).join(" ") + "<br><br>" : "") +
           linkify(e.d || "(no description)");
         dr.appendChild(td);
         tr.after(dr);
       });
       body.appendChild(tr);
+    }
+  }
+
+  // Tag chips: only tags used by the selected categories, sorted by how many
+  // entries carry them, with a text filter (the official taxonomy has 260).
+  function renderTagChips() {
+    const tg = $("eqTags");
+    if (!tg) return;
+    const q = ($("eqTagQ") && $("eqTagQ").value || "").trim().toLowerCase();
+    const tagCounts = {};
+    for (const e of (DATA.entries || [])) {
+      if (!state.cats.has(e.f)) continue;
+      for (const t of entryTags(e)) tagCounts[t] = (tagCounts[t] || 0) + 1;
+    }
+    const tags = Object.keys(tagCounts)
+      .filter(t => !q || t.includes(q) || tagDesc(t).toLowerCase().includes(q))
+      .sort((a, b) => tagCounts[b] - tagCounts[a] || a.localeCompare(b));
+    tg.innerHTML = "";
+    const shown = q ? tags : tags.slice(0, 60);
+    for (const t of shown) {
+      const b = document.createElement("button");
+      b.textContent = `${t} (${tagCounts[t]})`;
+      const d = tagDesc(t);
+      b.title = d ? `${t} — ${d}` : `Show entries tagged ${t}`;
+      if (state.tags.has(t)) b.classList.add("sel");
+      b.addEventListener("click", () => {
+        if (state.tags.has(t)) state.tags.delete(t);
+        else state.tags.add(t);
+        b.classList.toggle("sel", state.tags.has(t));
+        state.shown = PAGE;
+        render();
+      });
+      tg.appendChild(b);
+    }
+    if (!shown.length) {
+      tg.innerHTML = "<span class='muted small'>No tags match.</span>";
+    } else if (!q && tags.length > shown.length) {
+      const more = document.createElement("button");
+      more.textContent = `+${tags.length - shown.length} more (search above)`;
+      more.addEventListener("click", () => {
+        for (const t of tags.slice(shown.length)) {
+          const b = document.createElement("button");
+          b.textContent = `${t} (${tagCounts[t]})`;
+          const d = tagDesc(t);
+          b.title = d ? `${t} — ${d}` : `Show entries tagged ${t}`;
+          if (state.tags.has(t)) b.classList.add("sel");
+          b.addEventListener("click", () => {
+            if (state.tags.has(t)) state.tags.delete(t);
+            else state.tags.add(t);
+            b.classList.toggle("sel", state.tags.has(t));
+            state.shown = PAGE;
+            render();
+          });
+          tg.insertBefore(b, more);
+        }
+        more.remove();
+      });
+      tg.appendChild(more);
+    }
+    if ($("eqTagCount")) {
+      $("eqTagCount").textContent = state.tags.size
+        ? `· ${state.tags.size} selected` : `· ${tags.length} available`;
     }
   }
 
@@ -241,29 +314,12 @@
         else state.cats.add(c);
         b.classList.toggle("sel", state.cats.has(c));
         state.shown = PAGE;
+        renderTagChips();
         render();
       });
       cg.appendChild(b);
     }
-    const tg = $("eqTags");
-    if (tg) {
-      const tagCounts = {};
-      for (const e of (DATA.entries || [])) for (const t of entryTags(e)) tagCounts[t] = (tagCounts[t] || 0) + 1;
-      for (const t of allTags()) {
-        const b = document.createElement("button");
-        b.textContent = `${t} (${tagCounts[t] || 0})`;
-        b.title = `Show entries tagged ${t}`;
-        b.addEventListener("click", () => {
-          if (state.tags.has(t)) state.tags.delete(t);
-          else state.tags.add(t);
-          b.classList.toggle("sel", state.tags.has(t));
-          state.shown = PAGE;
-          render();
-        });
-        tg.appendChild(b);
-      }
-      if (!allTags().length) tg.innerHTML = "<span class='muted small'>No tagged entries yet.</span>";
-    }
+    renderTagChips();
     const counts = {};
     for (const e of (DATA.entries || [])) {
       if (!e.s) continue;
@@ -305,6 +361,7 @@
     refreshSrcCount(); state.shown = PAGE; render();
   });
   $("eqMore").addEventListener("click", () => { state.shown += PAGE; render(); });
+  if ($("eqTagQ")) $("eqTagQ").addEventListener("input", renderTagChips);
 
   try {
     const n = (DATA.entries || []).length;

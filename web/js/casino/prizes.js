@@ -499,9 +499,9 @@ C.wealthyFamiliar = function (res) {
   // Counts come from prizeLog tags; each set is granted once per run.
   C.TAG_SETS = [
     ["fire", "fire", 3, 0.25], ["water", "water", 3, 0.25],
-    ["ice", "frost", 3, 0.25], ["lightning", "bolt", 3, 0.25],
-    ["earth", "earth", 3, 0.25], ["wind", "wind", 3, 0.25],
-    ["shadow", "shadow", 3, 0.25], ["nature", "nature", 3, 0.25],
+    ["ice", "frost", 3, 0.25], ["electric", "bolt", 3, 0.25],
+    ["earth", "earth", 3, 0.25], ["air", "wind", 3, 0.25],
+    ["dark", "shadow", 3, 0.25], ["nature", "nature", 3, 0.25],
     ["poison", "venom", 3, 0.25], ["holy", "light", 3, 0.25],
   ];
   C.checkTagSets = function () {

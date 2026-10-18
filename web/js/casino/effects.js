@@ -15,17 +15,17 @@
     return base / (1 + 0.06 * rarity);
   };
 
-  // Casino elements differ in name from gacha tags in three places:
-  // ice->frost, lightning->bolt, poison->venom (holy->light).
+  // Casino elements differ in name from gacha tags in four places:
+  // ice->frost, electric->bolt, poison->venom, holy->light, air->wind.
   C.TAG_TO_ELEMENT = { fire: "fire", water: "water", ice: "frost",
-    lightning: "bolt", earth: "earth", wind: "wind", shadow: "shadow",
+    electric: "bolt", earth: "earth", air: "wind", dark: "shadow",
     nature: "nature", poison: "venom", holy: "light" };
 
   C.elementOf = function (nm, tags) {
     const tg = (tags || []).map(t => String(t).toLowerCase());
     // Explicit theme tags beat name-guessing (same priority as below).
-    for (const t of ["fire", "shadow", "holy", "lightning", "ice",
-                     "poison", "water", "earth", "wind", "nature"]) {
+    for (const t of ["fire", "dark", "holy", "electric", "ice",
+                     "poison", "water", "earth", "air", "nature"]) {
       if (tg.includes(t) && C.TAG_TO_ELEMENT[t]) return C.TAG_TO_ELEMENT[t];
     }
     const s = String(nm).toLowerCase();

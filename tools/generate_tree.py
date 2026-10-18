@@ -77,27 +77,40 @@ HEADER_RE = re.compile(r"^(\d+)\.\s*(.*),\s*(\d+\.\d+)(?:,\s*(.*))?\s*$")
 TOKEN_RE = re.compile(r"^#(?:\s*\(([^)]*)\)\s*)+")
 
 # Thematic tags: (Tag:name) per tag, or (Tags: a, b) for several at once.
-# Stored lowercase; free-form but the curated set is documented in
-# tools/tag_entries.py (dragonic, undead, holy, ...). Aliases collapse to
-# their canonical form so (Tag:draconic) == (Tag:dragonic).
+# Names follow the original site's taxonomy (see tools/tagdata/); stored
+# lowercase, with "+" significant (fire+ = fire amplification, fire = fire).
+# Aliases keep older/hand-written spellings resolving to the canonical name.
 TAG_ALIASES = {
-    "draconic": "dragonic",
+    "dragons": "draconic",
+    "dragon": "draconic",
+    "dragonic": "draconic",
     "angelic": "holy",
-    "infernal": "demonic",
+    "demonic": "infernal",
+    "unholy": "infernal",
     "vampire": "vampiric",
-    "dragons": "dragonic",
-    "dragon": "dragonic",
+    "lightning": "electric",
+    "wind": "air",
+    "shadow": "dark",
+    "spectral": "spirit",
+    "psychic": "mental",
+    "insect": "insectoid",
+    "slime": "amorphous",
 }
 
 
 def normalize_tag(raw: str):
     """Canonicalize one tag name; returns "" when invalid."""
-    s = str(raw or "").strip().lower().replace("_", "-").replace(" ", "-")
-    s = re.sub(r"[^a-z0-9-]+", "", s)
+    s = str(raw or "").strip().lower().replace("_", "-")
+    s = re.sub(r"[^a-z0-9+]+", "-", s)
     s = re.sub(r"-+", "-", s).strip("-")
-    if not s or len(s) > 32 or not re.match(r"^[a-z0-9][a-z0-9-]*$", s):
+    if not s or len(s) > 40 or not re.match(r"^[a-z0-9][a-z0-9+-]*$", s):
         return ""
-    return TAG_ALIASES.get(s, s)
+    for _ in range(5):  # resolve alias chains
+        nxt = TAG_ALIASES.get(s)
+        if not nxt or nxt == s:
+            break
+        s = nxt
+    return s
 
 
 def parse_tags(tokens) -> list:
@@ -110,7 +123,8 @@ def parse_tags(tokens) -> list:
         low = tok.lower()
         if low.startswith("tags:"):
             rest = tok[5:]
-            for part in re.split(r"[,\s]+", rest):
+            parts = rest.split(",") if "," in rest else rest.split()
+            for part in parts:
                 n = normalize_tag(part)
                 if n:
                     out.add(n)

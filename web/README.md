@@ -41,6 +41,16 @@ Serve the `web/` directory over HTTP (e.g. `python3 -m http.server` inside
 `web/`) and open `tree.html` / `gacha.html`. `entries.js` is loaded with a
 plain `<script>` tag so the pages also work from `file://`.
 
+## Tags
+
+Entries carry the tag taxonomy of the original Chaos Gacha index
+(`chaosgacha.com`, by BronzDeck), vendored under `tools/tagdata/` and written
+into `gachafiles/*.txt` as `(Tag:…)` tokens by
+`tools/import_official_tags.py` (`tools/fetch_official_tags.py` refreshes the
+snapshot). The per-category dictionaries are exported to `data/tags.js` so tag
+pills can explain themselves on hover. Tag names are lowercase with `+` kept
+significant (`fire` vs `fire+`).
+
 ## Refreshing the data bundle
 
 After editing `gachafiles/*.txt`:
@@ -52,5 +62,11 @@ After editing `gachafiles/*.txt`:
 - `node tools/web_parity.cjs` — checks the JS engine against the Python
   engine (visibility, costs, meta derive, jump order, echo) and that the
   JS generator is deterministic and connected.
+- `node tools/web_tags_test.cjs` — boots the real pages in jsdom (needs
+  `npm install --no-save jsdom`) and drives the tag UI: entries chips,
+  tag search, pill tooltips, the gacha tag filter, tagged tickets, the
+  no-match error path, and the tree tag pickers.
+- `python3 tools/test_chaos_tree.py` — generator/engine self-test, plus tag
+  parsing/normalization invariants (`test_tags`).
 - The app shells boot headlessly under the DOM stub used during
   development (not committed); rerun `node --check web/js/*.js` after edits.

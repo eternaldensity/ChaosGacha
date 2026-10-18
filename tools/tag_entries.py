@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Auto-tag gacha entries with thematic (Tag:...) tokens.
 
-Curated starter taxonomy (free-form; any lowercase tag is valid):
-    dragonic, undead, holy, unholy, demonic, vampiric, spectral, fae,
-    eldritch, fire, water, ice, lightning, earth, wind, shadow, nature,
-    blood, poison, psychic, healing, beastkin, aquatic, avian, insect,
-    construct, slime, teleport, time
+Curated starter taxonomy (free-form; any lowercase tag is valid).
+Names follow the original site's taxonomy (tools/tagdata/); the official
+importer covers most entries, so this heuristics pass mainly serves new or
+fork-only entries:
+    draconic, undead, holy, infernal, vampiric, spirit, fae, eldritch,
+    fire, water, ice, electric, earth, air, dark, nature, time, blood,
+    poison, mental, healing, beastkin, aquatic, avian, insectoid,
+    construct, amorphous, teleport, time
 
 Heuristics are conservative (high precision): name matches + positive
 description phrases. Mentions in "damage/effective against X" or
@@ -65,7 +68,7 @@ SKELETON_EXCL = re.compile(
     r"your skeleton (is|resembles|is bonded))", re.I)
 
 RULES = {
-    "dragonic": {
+    "draconic": {
         "name": [
             r"\bdragons?\b", r"draconic", r"dragonic", r"\bwyverns?\b",
             r"\bdrakes?\b", r"\bwyrms?\b", r"\bdragonoid\b",
@@ -125,29 +128,21 @@ RULES = {
         ],
         "excl": [r"vulnerability to.{0,40}\bholy\b", r"vulnerable to.{0,40}\bholy\b", r"weak.{0,40}\bholy\b"],
     },
-    "unholy": {
+    "infernal": {
         "name": [
-            r"\bunholy\b", r"profane",
+            r"\bunholy\b", r"profane", r"\bdemon\b", r"demonic",
+            r"\bdevil\b", r"infernal", r"archdemon", r"pit fiend", r"balrog",
         ],
         "desc": [
-            r"affinity for Unholy",
+            r"affinity for Unholy", r"affinity for Infernal",
             r"wield.{0,30}unholy", r"conjure.{0,30}unholy",
             r"you are.{0,30}unholy",
             r"unholy (power|energy|flames?|fire)",
             r"hell ?flames?", r"hell ?fire",
             r"profaned flames?", r"wield hell", r"infernal flames?",
-        ],
-        "excl": [],
-    },
-    "demonic": {
-        "name": [
-            r"\bdemon\b", r"demonic", r"\bdevil\b", r"infernal",
-            r"archdemon", r"pit fiend", r"balrog",
-        ],
-        "desc": [
             r"you are (a |an )?.{0,40}demon",
             r"transform into.{0,40}demon", r"summon.{0,40}demon",
-            r"affinity for Infernal", r"wield.*infernal",
+            r"wield.*infernal",
             r"you are.*infernal", r"transform.*infernal",
             r"infernal (engine|flames?|fire|power|energy)",
             r"abyssal one",
@@ -168,7 +163,7 @@ RULES = {
         ],
         "excl": [r"sets?.*vampire ablaze", r"damage.*vampire"],
     },
-    "spectral": {
+    "spirit": {
         "name": [
             r"\bghost\b", r"spectr", r"\bwraith\b",
             r"\bphantom\b", r"\bhaunt\b", r"ectonurite",
@@ -254,7 +249,7 @@ RULES = {
         ],
         "excl": [],
     },
-    "lightning": {
+    "electric": {
         "name": [
             r"lightning", r"thunder", r"electro", r"\bvolt\b",
             r"thunderbird", r"lightning slayer",
@@ -302,7 +297,7 @@ RULES = {
                  r"flowing water crushing rock", r"sword in the stone",
                  r"philosopher'?s stone", r"rocket", r"shamrock"],
     },
-    "wind": {
+    "air": {
         "name": [
             r"\bwind\b", r"\baero\b", r"\bgale\b",
             r"tornado", r"hurricane", r"wind slayer",
@@ -314,7 +309,7 @@ RULES = {
         ],
         "excl": [],
     },
-    "shadow": {
+    "dark": {
         "name": [
             r"\bshadow\b", r"umbra", r"\bdark\b", r"darkness",
             r"shadow slayer",
@@ -364,7 +359,7 @@ RULES = {
         ],
         "excl": [],
     },
-    "psychic": {
+    "mental": {
         "name": [
             r"psychic", r"psion", r"telepath", r"thinker", r"esper",
         ],
@@ -422,7 +417,7 @@ RULES = {
         ],
         "excl": [],
     },
-    "insect": {
+    "insectoid": {
         "name": [
             r"insect", r"spider", r"\bant\b", r"\bbee\b", r"wasp",
             r"\bmoth\b", r"beetle", r"scorpion",
@@ -443,7 +438,7 @@ RULES = {
         ],
         "excl": [],
     },
-    "slime": {
+    "amorphous": {
         "name": [
             r"\bslime\b", r"\booze\b", r"\bgoo\b",
         ],
@@ -570,6 +565,9 @@ def main():
     ap.add_argument("--tags", default="",
                     help="comma-separated subset to tag (default: all)")
     ap.add_argument("--list-tags", action="store_true")
+    ap.add_argument("--only-untagged", action="store_true",
+                    help="skip entries that already carry tags (e.g. from the "
+                         "official import), so heuristics only fill the gaps")
     args = ap.parse_args()
 
     only = {t.strip().lower() for t in args.tags.split(",") if t.strip()} or None
@@ -594,6 +592,8 @@ def main():
         if not sugg:
             continue
         have = existing_tags(full_desc)
+        if args.only_untagged and have:
+            continue
         new = sorted(set(sugg) - have)
         if not new:
             continue

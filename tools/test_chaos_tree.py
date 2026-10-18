@@ -911,6 +911,57 @@ def test_coupon():
     print("coupon tests passed")
 
 
+def test_tags():
+    """Tag parsing/normalization + the official import invariants."""
+    # (Tag:name) / (Tags: a, b) parsing, lowercase, '+' significant
+    toks, _ = gt.parse_description("#(Tag:Fire)(Tag:Anti-Dragon) text")
+    assert gt.parse_tags(toks) == ["anti-dragon", "fire"], gt.parse_tags(toks)
+    toks, _ = gt.parse_description("#(Tags: fire, health-recovery+) text")
+    assert gt.parse_tags(toks) == ["fire", "health-recovery+"], gt.parse_tags(toks)
+    # single-token Tags: lists still split on whitespace
+    toks, _ = gt.parse_description("#(Tags: fire ice) text")
+    assert gt.parse_tags(toks) == ["fire", "ice"]
+    # '+' is part of the name, not punctuation
+    assert gt.normalize_tag("Fire+") == "fire+"
+    assert gt.normalize_tag("Fire") == "fire"
+    assert gt.normalize_tag("Maximum Energy+") == "maximum-energy+"
+    assert gt.normalize_tag("Anti-Dragon") == "anti-dragon"
+    # legacy spellings alias to the official names
+    for old, new in [("dragonic", "draconic"), ("lightning", "electric"),
+                     ("wind", "air"), ("shadow", "dark"),
+                     ("demonic", "infernal"), ("unholy", "infernal"),
+                     ("spectral", "spirit"), ("psychic", "mental"),
+                     ("insect", "insectoid"), ("slime", "amorphous")]:
+        assert gt.normalize_tag(old) == new, (old, gt.normalize_tag(old))
+    assert gt.normalize_tag("  ") == ""
+    assert gt.normalize_tag("bad!tag") == "bad-tag"
+
+    # official snapshot: every entry tagged, tags all normalize cleanly
+    import json
+    data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tagdata")
+    with open(os.path.join(data_dir, "entry_tags.json"), encoding="utf-8") as fh:
+        rows = json.load(fh)
+    assert rows and all(r[2] for r in rows), "official entries must carry tags"
+    bad = [t for r in rows for t in r[2] if not gt.normalize_tag(t)]
+    assert not bad, bad[:5]
+
+    # loaded entries: tags present, normalized, and no stale aliases
+    entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True, True, True)
+    tagged = [e for e in entries if e["tags"]]
+    assert len(tagged) > 3000, len(tagged)
+    stale = {"dragonic", "lightning", "wind", "shadow", "demonic", "unholy",
+             "spectral", "psychic", "insect", "slime"}
+    seen = {t for e in entries for t in e["tags"]}
+    assert not (seen & stale), sorted(seen & stale)
+    # the 'X' and 'X+' families must stay distinct
+    assert ("fire" in seen) and ("fire+" in seen)
+    assert gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True, True,
+                           True, ["fire+"])
+    assert gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True, True,
+                           True, ["fire+", "physical+"])
+    print("tag tests passed")
+
+
 if __name__ == "__main__":
     main()
     test_meta()
@@ -919,4 +970,5 @@ if __name__ == "__main__":
     test_meta4()
     test_wild()
     test_trace_use()
+    test_tags()
     test_coupon()

@@ -45,7 +45,8 @@
       </div>
       <label>Categories</label>
       <div class="catpick" id="eqCats"></div>
-      <label style="margin-top:8px" title="Thematic tags from the gacha files (e.g. dragonic, undead, holy). Select any to show entries carrying at least one of them.">Theme tags</label>
+      <label style="margin-top:8px" title="Tags from the original Chaos Gacha index (per-category taxonomy). Select any to show entries carrying at least one of them.">Theme tags <span class="muted small" id="eqTagCount"></span></label>
+      <input type="search" id="eqTagQ" placeholder="filter tags (e.g. fire, anti-dragon, size)" style="margin-bottom:6px">
       <div class="catpick" id="eqTags"></div>
       <div class="row">
         <div><label for="eqMin">Rarity from</label>
@@ -80,6 +81,7 @@
 </footer>
 <script>if (typeof navigator !== "undefined" && "serviceWorker" in navigator) { addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); }); }</script>
 <script src="data/entries.js"></script>
+<script src="data/tags.js"></script>
 <script src="js/entries-app.js"></script>
 </body>
 </html>
