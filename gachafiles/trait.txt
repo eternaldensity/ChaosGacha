@@ -1311,7 +1311,7 @@
 655. Root Access, 4.2, Tron 2.0
 #(Tag:nature)System-level permissions: locked doors open, restricted subroutines run, and ICPs look the other way.
 656. Hexagonal Skill Grid, 3.8, Q-UP
-#Your abilities arrange on a hexagonal grid, triggering off coin flips in combo chains.
+#(Tag:magic)(Tag:meta)Your abilities leave their slots and become nodes on a 217-node hexagonal lattice, eight rings wide with six neighbours per node to the north, north-east, south-east, south, south-west and north-west. Every node carries a trigger condition (on a coin flip, on a win, on a loss, or only when another node fires it) and an activation stock: the number of times it may fire before it is spent for that battle. Nodes chain into their neighbours, in a direction, or out to distance two, fixed nodes stay rooted while flex nodes can be re-placed freely, and the whole board can be rebuilt between battles to aim a chain. Triggers bank Q, which pays out as gold, gems and experience when you cross a rank; a spent node must wait for the next battle to refill.
 657. The City Must Survive, 3.0, Frostpunk
 #(Tag:survival)No matter the frost or the cost, you will keep the last city alive through the storm. Your leadership stretches food, fuel, and medicine several times further through ruthless rationing, keeps followers warm and obedient through deadly cold with far less shelter, and holds morale under hardship that would break anyone else, but every harsh decree breeds lasting resentment.
 658. Rock and Stone, 1.6, Deep Rock Galactic

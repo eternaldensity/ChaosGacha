@@ -991,7 +991,7 @@
 496. Peska the Troll, 3.2, Q-UP
 #(Tag:humanoid)(Tag:trickster)A trash-talking troll hero whose jeers tilt opponents right off the ladder. His taunts enrage enemies into reckless mistakes, wild swings, broken focus, fumbled plans, though friends aren't always spared the commentary.
 497. Robert the Robot, 4.7, Q-UP
-#(Tag:character)(Tag:mechanical)(Tag:tech)A patchwork robot competitor running on code copied from the other seven, chaining those stolen skills into one long cascade of triggers that fires whether he wins or loses. He chains harder than anyone in the league and has no idea when to stop, so he regularly beats his own score to death. Leave out the right nodes and H4LT cuts the chain short.
+#(Tag:character)(Tag:mechanical)(Tag:tech)A patchwork robot built out of stolen code: he copies one technique from every other fighter present and wires them into a single cascade that fires link after link. Each link adds to his Busy Beaver tally, and most of his kit scales off it, so a long chain turns into a huge damage bonus, a flood of gold, or a full refresh of his own abilities. His finisher, HALT, cashes the whole cascade out in one blow and ends his turn. He has no say in when the cascade stops: it fires on a win or a loss alike, so he ramps straight into fights he cannot survive.
 498. Mercury, 3.6, Tron 2.0
 #A skilled program ally who fights beside you in the Game Grid and knows its back doors.
 499. Data Wraith, 4.0, Tron 2.0
@@ -1199,4 +1199,4 @@
 600. Arcanaloth, 5.4, DnD
 #(Tag:anti-infernal)(Tag:infernal)(Tag:magician)(Tag:tactician)A jackal-headed fiend of the mercenary yugoloths, broker and enforcer for the lower planes. It turns its claws and its spellbook on demons and devils alike whenever the contract says so, and keeps meticulous ledgers of every soul it has traded. It serves you exactly as long as you keep paying.
 601. Quetzalcoatl the Wizard, 6.1, Q-UP
-#(Tag:character)(Tag:magician)(Tag:reality-bender)The league's final unlock and its rawest power: a wizard whose signature magic, Non-Locality, makes one random node of his tree pay double whenever it triggers. The same long combo rolls out every flip, win or lose, and cannot be aimed, so he is the fastest to Anomaly and a liability the moment the tree decides to play badly.
+#(Tag:character)(Tag:magician)(Tag:reality-bender)A wizard whose spell lattice runs on mathematics instead of mana: a single seed spell opens his turn, and every other spell must be force-chained to it by condition, odd or even charges, prime counts, identical charges, or whichever charge is most common on the board. His signature is Non-Locality: one randomly chosen node of the lattice doubles the power of everything the cascade does when it fires, and it is re-rolled every battle, so where it lands decides his ceiling. Nobody matches his raw output and nobody has less control over it.

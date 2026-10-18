@@ -2254,3 +2254,5 @@
 #(Tag:anti-dragon)(Tag:gun)(Tag:tech)(Tag:weapon)A hunting bowgun fed by a revolving magazine of wyvern rounds. Its shot tears through scaled hide and wing membrane, and its burst mode empties the cylinder in a heartbeat for the moment a dragon is brought to ground. Slower and lighter than siege guns, and far quicker on the turn.
 1128. Profaned Greatsword, 5.6, Dark Souls
 #(Tag:anti-holy)(Tag:blade)(Tag:infernal)(Tag:weapon)A colossal blade quenched in profane flame, so heavy it has to be dragged into its own swing. Its fire burns angels, paladins, and anything sanctified as readily as flesh, snuffs out holy wards on contact, and leaves wounds that do not close.
+1129. Replicating Nanobot, 1.8, Q-UP
+#(Tag:production)(Tag:resource)(Tag:tech)A shard-shaped swarm of self-copying nanomachines that harvests loose wealth wherever you are. Each payout cycle the swarm mints 50 gold, and every nanobot mints for every other one in the stack: one pays 50, two pay 200, three pay 450, four pay 800. Copies stack in a single slot and never stop working.
