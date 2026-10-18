@@ -633,7 +633,7 @@
 317. Exocraft Piloting, 3.2, No Man's Sky
 #(Tag:motor)(Tag:movement)Handle Nomads, Pilgrims, and Minotaurs across every biome without scratching the paint.
 318. Pal Training, 2.8, Palworld
-#Raise, breed, and work Pals to peak performance without anyone getting eaten.
+#(Tag:craft)Raise, breed, and work Pals to peak performance without anyone getting eaten.
 319. Animals, 1.8, I Was a Teenage Exocolonist
 #Handle Vertumna's alien fauna calmly, from fur-antlered grazers to things with too many legs.
 320. Combat, 2.2, I Was a Teenage Exocolonist

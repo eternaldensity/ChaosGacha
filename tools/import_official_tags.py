@@ -51,6 +51,14 @@ FIXES = {
     ("familiar", "Hans"): ["infernal"],
     ("familiar", "Alcina Dimitrescu"): ["bio", "parasitic"],
     ("familiar", "Metroid"): ["aquatic"],          # "a floating ... jellyfish"
+    # Consistency: the site tags the vampire Alucard "Undead" but not the other
+    # undead vampires; traits use Necro for the same idea. Dio also grafts
+    # flesh, so he gets Bio.
+    ("familiar", "Vlad Dracula"): ["undead"],
+    ("familiar", "Dio Brando"): ["bio", "undead"],
+    ("familiar", "Shalltear Bloodfallen"): ["undead"],
+    ("familiar", "Vlov Arkangel"): ["undead"],
+    ("familiar", "Nrvnqsr Chaos"): ["undead"],
 }
 
 # Curated tags that duplicate a concept the official taxonomy already names on

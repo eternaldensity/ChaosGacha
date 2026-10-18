@@ -468,6 +468,20 @@ MANUAL = {
     ("item", "Drakkar"): ["vehicle", "movement"],
     ("item", "Penny of the Ferryman"): ["necro", "magic"],
     ("ability", "Counterspell"): ["anti-magic", "magic"],
+    # Palworld batch (fork-only): each from its own blurb.
+    ("familiar", "Lamball"): ["beast", "resource", "medium-size"],
+    ("familiar", "Chikipi"): ["avian", "breeding", "resource", "small-size"],
+    ("familiar", "Lifmunk"): ["beast", "flying", "ranger"],
+    ("familiar", "Foxparks"): ["beast", "fire", "shapeshifter"],
+    ("familiar", "Pengullet"): ["avian"],
+    ("familiar", "Tocotoco"): ["avian", "breeding", "resource", "kinetic"],
+    ("familiar", "Tanzee"): ["beast", "ranger"],
+    ("familiar", "Leezpunk"): ["reptilian", "stealth", "sense"],
+    ("familiar", "Lunaris"): ["beast", "gravity"],
+    ("familiar", "Bushi"): ["humanoid", "fighter", "martial-artist"],
+    ("familiar", "Grizzbolt"): ["beast", "electric", "fighter", "blaster"],
+    ("familiar", "Palworld Anubis"): ["beast", "fighter", "martial-artist"],
+    ("skill", "Pal Training"): ["craft"],
 }
 
 

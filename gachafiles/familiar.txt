@@ -263,7 +263,7 @@
 132. Seras Victoria, 5.1, Hellsing
 #(Tag:character)(Tag:dark)(Tag:evolving)(Tag:fighter)(Tag:infernal)(Tag:medium-size)(Tag:shapeshifter)(Tag:summoner)(Character)A former police girl turned Draculina sharing Dracula's blood, with incredible physical abilities and blood-and-essence draining. If she unlocks her full powers, she absorbs drained souls to gain a portion of their power or create necromancy summons.
 133. Vlad Dracula, 7.2, Hellsing
-#(Tag:character)(Tag:dark)(Tag:evolving)(Tag:fighter)(Tag:infernal)(Tag:medium-size)(Tag:shapeshifter)(Tag:summoner)(Tag:vampiric)(Character)The full-power Alucard, the Immortal King without restraint levels, with over 100,000 lives and his immortal army. He has an amorphous dark matter body, blood control, and absorbs the souls of those he drinks to expand his army.
+#(Tag:character)(Tag:dark)(Tag:evolving)(Tag:fighter)(Tag:infernal)(Tag:medium-size)(Tag:shapeshifter)(Tag:summoner)(Tag:undead)(Tag:vampiric)(Character)The full-power Alucard, the Immortal King without restraint levels, with over 100,000 lives and his immortal army. He has an amorphous dark matter body, blood control, and absorbs the souls of those he drinks to expand his army.
 134. Nihilego, 4.0, Pokemon
 #(Tag:aquatic)(Tag:earth)(Tag:medium-size)(Tag:parasitic)(Tag:poison)A parasitic ultra-deep-sea jellyfish Ultra Beast that undetectably parasitizes hosts. It injects neurotoxin that removes inhibitions and subtly bends thoughts to its needs. It is also powerful itself, with strong geokinesis and poison generation.
 135. Buzzwole, 3.8, Pokemon
@@ -323,7 +323,7 @@
 162. Spelunker Fairy, 3.8, Generic
 #(Tag:fae)A lesser fairy resembling a glowing yellow light that finds and uncovers wealth and treasures. It points toward the nearest gold bar or sought item within its power, but gives no detailed directions or descriptions.
 163. Dio Brando, 4.2, JoJo
-#(Tag:biokinetic)(Tag:character)(Tag:fighter)(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Tag:regenerator)(Tag:tactician)(Tag:vampiric)(Character)A petty thief's son turned vampire via the Stone Mask. He absorbs life force, grants vampirism, creates undead, grafts flesh, and manipulates his body, and is a genius, highly skilled vampire.
+#(Tag:bio)(Tag:biokinetic)(Tag:character)(Tag:fighter)(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Tag:regenerator)(Tag:tactician)(Tag:undead)(Tag:vampiric)(Character)A petty thief's son turned vampire via the Stone Mask. He absorbs life force, grants vampirism, creates undead, grafts flesh, and manipulates his body, and is a genius, highly skilled vampire.
 164. DIO, 5.4, JoJo
 #(Tag:biokinetic)(Tag:character)(Tag:fighter)(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Tag:regenerator)(Tag:tactician)(Tag:time)(Character)A once-hotheaded vampire grown wise after long ages under the sea, awakened to The World by the Stand Arrow. Massively superhuman, he regenerates by drinking blood, manipulates his body, and creates thralls. His Stand The World shares his physical power and stops time for upwards of 10 seconds.
 165. The Pillar Men, 5.2, JoJo
@@ -441,7 +441,7 @@
 221. Mizutsune, 3.5, Monster Hunter
 #(Tag:aquatic)(Tag:draconic)(Tag:massive-size)(Tag:water)Mizutsune is a fierce leviathan that can also live and fight on land with formidable strength to shred metal with its claws. It breathes a soap-like substance that immobilizes opponents.
 222. Shalltear Bloodfallen, 6.8, Overlord
-#(Tag:blood)(Tag:character)(Tag:fighter)(Tag:holy)(Tag:humanoid)(Tag:infernal)(Tag:magician)(Tag:medium-size)(Tag:regenerator)(Tag:summoner)(Tag:vampiric)(Character)Shalltear was a Nazarick Floor Guardian, a True Vampire Valkyrie made with a vampire god's blood and exceptional in both physical and magical combat with hemokinesis, elemental, charm, holy magic, and more. She can turn others into vampires, and comes with only basic clothes and no inventory access. (A/N: No time stop)
+#(Tag:blood)(Tag:character)(Tag:fighter)(Tag:holy)(Tag:humanoid)(Tag:infernal)(Tag:magician)(Tag:medium-size)(Tag:regenerator)(Tag:summoner)(Tag:undead)(Tag:vampiric)(Character)Shalltear was a Nazarick Floor Guardian, a True Vampire Valkyrie made with a vampire god's blood and exceptional in both physical and magical combat with hemokinesis, elemental, charm, holy magic, and more. She can turn others into vampires, and comes with only basic clothes and no inventory access. (A/N: No time stop)
 223. Albedo, 5.7, Overlord
 #(Tag:character)(Tag:fighter)(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Tag:tactician)(Character)Albedo was a Nazarick Floor Guardian, a succubus dark knight and true tank who can destroy fortress walls in one blow and resist anything that cannot level a street thanks to many defensive abilities. She can use basic magic, has exceptional intelligence plus most domestic skills, and comes only with her basic dress and no inventory.
 224. Cure Elim Los Malvar, 7.3, Overlord
@@ -457,7 +457,7 @@
 229. Dagon, 5.5, Jujutsu Kaisen
 #(Tag:aquatic)(Tag:character)(Tag:medium-size)(Tag:spirit)(Tag:summoner)(Tag:water)(Character)Dagon is the Special Grade Cursed Spirit born from the ocean, incredibly skilled in Jujutsu and very powerful. He can summon and control water and manifest the domain Horizon of the Endless Skanda for either leisure or offense.
 230. Nrvnqsr Chaos, 7.6, Tsukihime
-#(Tag:beast)(Tag:character)(Tag:dark)(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Tag:shapeshifter)(Tag:summoner)(Tag:vampiric)(Character)Nrvnqsr Chaos is a Dead Apostle Ancestor made of 666 beasts formed from the formless mud of life, sharing existence with them all so he is immortal unless every beast dies. He can replace beasts by absorbing living beings to gain their abilities and release them as beasts, and slain beasts recover after being reabsorbed.
+#(Tag:beast)(Tag:character)(Tag:dark)(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Tag:shapeshifter)(Tag:summoner)(Tag:undead)(Tag:vampiric)(Character)Nrvnqsr Chaos is a Dead Apostle Ancestor made of 666 beasts formed from the formless mud of life, sharing existence with them all so he is immortal unless every beast dies. He can replace beasts by absorbing living beings to gain their abilities and release them as beasts, and slain beasts recover after being reabsorbed.
 231. Pepsi Man, 0.9, Pepsi
 #(Tag:instance-familiar)(Tag:medium-size)(Tag:non-combatant)(Tag:resource)Pepsi Man gives Pepsi whenever he can: when summoned he reaches your location by any means, delivers everyone there a fresh can of Pepsi, then disappears. 8-hour cooldown. Note: This familiar is not sponsored by the Pepsi Corporation.
 232. Nashrah, 4.7, Fear and Hunger
@@ -713,7 +713,7 @@
 357. Dwarf in the Flask, 5.9, Fullmetal Alchemist
 #(Tag:artisan)(Tag:character)(Tag:dark)(Tag:magician)(Tag:small-size)(Tag:spirit)(Character)The Dwarf in the Flask is Hohenheim's first homunculus made from an eye shard with tank-shredding amorphous darkness and great might. Its true power is vast alchemy knowledge for circles, soul-derived philosopher stones, homunculi, chimeras, and teaching Alchemy (Note: Does not possess the power of Truth nor can it reach it due to it not existing in other worlds).
 358. Vlov Arkangel, 6.5, Tsukihime
-#(Tag:character)(Tag:fighter)(Tag:fire)(Tag:ice)(Tag:infernal)(Tag:medium-size)(Tag:regenerator)(Tag:vampiric)Vlov Arkangel is an Undead Apostle Ancestor in name only through immaturity with immense physical and magical abilities plus ghoul and Apostle conversion. His Idea Blood Freezin removes heat for near-instant city blizzards, thousands of ice lances, near-absolute-zero cold, and byproduct searing flames, but is hard to use easily and inferior to his peers.
+#(Tag:character)(Tag:fighter)(Tag:fire)(Tag:ice)(Tag:infernal)(Tag:medium-size)(Tag:regenerator)(Tag:undead)(Tag:vampiric)Vlov Arkangel is an Undead Apostle Ancestor in name only through immaturity with immense physical and magical abilities plus ghoul and Apostle conversion. His Idea Blood Freezin removes heat for near-instant city blizzards, thousands of ice lances, near-absolute-zero cold, and byproduct searing flames, but is hard to use easily and inferior to his peers.
 359. Full-Grown Fallingstar Beast, 4.2, Elden Ring
 #(Tag:alien)(Tag:gravity)(Tag:large-size)A fully matured Fallingstar Beast has a body tougher than almost all mundane materials and incredible strength. It manipulates gravity for anti-gravity launches, hurled rocks, gravity bolts, crushing zones, and strength-paired charges.
 360. Hound of Tindalos, 6.9, Cthulhu Mythos
@@ -919,29 +919,29 @@
 460. Lopunny, 2.3, Pokemon
 #(Tag:beast)(Tag:fighter)(Tag:medium-size)"There are no laws against the Pokemon Batman!" Lopunny is a bunny-like Pokemon with great agility and leg strength, delivering devastating kicks and moving rapidly.
 461. Lamball, 1.2, Palworld
-#A round woolly starter Pal whose fluffy body makes a perfect shield and pillow.
+#(Tag:beast)(Tag:medium-size)(Tag:resource)A round woolly starter Pal whose fluffy body makes a perfect shield and pillow.
 462. Chikipi, 1.0, Palworld
-#A cheerful chicken Pal that lays eggs wherever it wanders.
+#(Tag:avian)(Tag:breeding)(Tag:resource)(Tag:small-size)A cheerful chicken Pal that lays eggs wherever it wanders.
 463. Lifmunk, 2.2, Palworld
-#A gliding squirrel Pal that mans a submachine gun from your shoulder.
+#(Tag:beast)(Tag:flying)(Tag:ranger)A gliding squirrel Pal that mans a submachine gun from your shoulder.
 464. Foxparks, 2.4, Palworld
-#A fox Pal that transforms into a living flamethrower when you hug it. Huggy Fire.
+#(Tag:beast)(Tag:fire)(Tag:shapeshifter)A fox Pal that transforms into a living flamethrower when you hug it. Huggy Fire.
 465. Pengullet, 2.0, Palworld
-#A penguin Pal that loads itself into a launcher as living ammunition.
+#(Tag:avian)A penguin Pal that loads itself into a launcher as living ammunition.
 466. Tocotoco, 2.2, Palworld
-#A dapper bird Pal that fires explosive eggs from its Eggbomb Launcher.
+#(Tag:avian)(Tag:breeding)(Tag:kinetic)(Tag:resource)A dapper bird Pal that fires explosive eggs from its Eggbomb Launcher.
 467. Tanzee, 2.6, Palworld
-#A monkey Pal wielding an assault rifle with its Cheery Rifle partner skill.
+#(Tag:beast)(Tag:ranger)A monkey Pal wielding an assault rifle with its Cheery Rifle partner skill.
 468. Leezpunk, 2.8, Palworld
-#A sneaky lizard Pal whose Sixth Sense sniffs out nearby dungeons.
+#(Tag:reptilian)A sneaky lizard Pal whose Sixth Sense sniffs out nearby dungeons.
 469. Lunaris, 3.4, Palworld
-#An antlered Pal whose Antigravity lets you carry far more than you should.
+#(Tag:beast)(Tag:gravity)An antlered Pal whose Antigravity lets you carry far more than you should.
 470. Bushi, 4.2, Palworld
-#A ronin Pal that answers threats with its Brandish Blade iaido draw.
+#(Tag:fighter)(Tag:humanoid)(Tag:martial-artist)A ronin Pal that answers threats with its Brandish Blade iaido draw.
 471. Grizzbolt, 4.6, Palworld
-#An electric bear Pal that shoulders a minigun as its Yellow Tank partner skill.
+#(Tag:beast)(Tag:blaster)(Tag:electric)(Tag:fighter)An electric bear Pal that shoulders a minigun as its Yellow Tank partner skill.
 472. Palworld Anubis, 5.4, Palworld
-#A jackal martial-artist Pal, Guardian of the Desert, who empowers your strikes.
+#(Tag:beast)(Tag:fighter)(Tag:martial-artist)A jackal martial-artist Pal, Guardian of the Desert, who empowers your strikes.
 473. Strider, 2.8, Horizon Zero Dawn
 #An overridden horse-like machine that serves as a fast, loyal mount.
 474. Broadhead, 3.0, Horizon Zero Dawn
