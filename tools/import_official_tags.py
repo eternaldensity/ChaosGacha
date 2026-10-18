@@ -40,6 +40,17 @@ FIXES = {
     ("item", "Dragon Slayer"): ["anti-dragon"],
     ("ability", "Curse Breaker"): ["anti-curse"],
     ("familiar", "Dark Eater Midir"): ["anti-dark"],
+    # draconic/creature-kind omissions the site's taggers left out, per the
+    # entry text ("transform into a Hydra", "a Sea Serpent or Hybrid",
+    # "winged ... in the form of an imposing golden Phoenix", "general of the
+    # Demon King", "fused with a bioengineered parasite")
+    ("ability", "Hydra Form"): ["draconic"],
+    ("trait", "Sea Serpent"): ["draconic"],
+    ("familiar", "Haspid"): ["draconic", "aquatic"],
+    ("familiar", "Winged Dragon of Ra"): ["avian"],
+    ("familiar", "Hans"): ["infernal"],
+    ("familiar", "Alcina Dimitrescu"): ["bio", "parasitic"],
+    ("familiar", "Metroid"): ["aquatic"],          # "a floating ... jellyfish"
 }
 
 # Curated tags that duplicate a concept the official taxonomy already names on

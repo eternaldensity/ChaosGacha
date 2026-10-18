@@ -931,7 +931,7 @@
 466. Phoenix Zoan, 7.3, Generic
 #(Tag:avian)Lets you transform into a Blue Phoenix or hybrid at will. Grants increased physical abilities, flight, extreme regeneration, and healing flames.
 467. Hydra Form, 6.1, Generic
-#(Tag:enhancer)(Tag:poison)(Tag:recovery)(Tag:transformation)Lets you transform into a Hydra or hybrid at will. Grants massively increased physical abilities, high-tier poison immunity, poison breath, extreme limb-regrowing regeneration, and survival of up to 9 beheadings.
+#(Tag:draconic)(Tag:enhancer)(Tag:poison)(Tag:recovery)(Tag:transformation)Lets you transform into a Hydra or hybrid at will. Grants massively increased physical abilities, high-tier poison immunity, poison breath, extreme limb-regrowing regeneration, and survival of up to 9 beheadings.
 468. Thunderbird Form, 5.7, Generic
 #(Tag:air)(Tag:avian)(Tag:electric)(Tag:enhancer)(Tag:transformation)Lets you transform into a thunderbird or hybrid at will. Grants increased physical abilities, flight, lightning emission, and weather manipulation.
 469. Portal Creation, 5.5, Generic
@@ -2831,7 +2831,7 @@
 1419. Ancestral Recall, 7.4, MTG
 #Target player draws three cards. One blue mana for the most efficient draw spell ever printed.
 1420. Counterspell, 4.4, MTG
-#Counter target spell. Two blue mana that simply says no to anything.
+#(Tag:anti-magic)(Tag:magic)Counter target spell. Two blue mana that simply says no to anything.
 1421. Swords to Plowshares, 4.2, MTG
 #(Tag:martial)Exile target creature; its controller gains life equal to its power. One mana of unconditional removal.
 1422. Dark Ritual, 3.8, MTG

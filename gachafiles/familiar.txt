@@ -87,7 +87,7 @@
 44. Zoroark, 3.5, Pokemon
 #(Tag:beast)(Tag:dark)(Tag:illusion)(Tag:medium-size)A bipedal fox-like dark creature that manipulates dark energy to attack, but truly masters illusions. Zoroark creates incredibly realistic illusions and transforms itself indistinguishably. It can make hundreds hallucinate or cast illusions over a very large range.
 45. Haspid, 4.1, Hota
-#(Tag:poison)A giant venomous sea serpent larger than trade ships, with poison breath strong enough to melt metals and bring gods to their knees. Haspids can reproduce.
+#(Tag:aquatic)(Tag:draconic)(Tag:poison)A giant venomous sea serpent larger than trade ships, with poison breath strong enough to melt metals and bring gods to their knees. Haspids can reproduce.
 46. Griffon, 2.4, Hota
 #(Tag:beast)A mighty elephant-sized beast with a lion's lower body and hawk's upper body. Incredibly ferocious yet very loyal. You get a male and female pair that can mate and produce offspring.
 47. Tohru, 7.4, Kobayashi
@@ -349,7 +349,7 @@
 175. Grimm Wyvern, 5.0, RWBY
 #(Tag:dark)(Tag:draconic)(Tag:flying)(Tag:massive-size)(Tag:summoner)A gigantic Grimm Wyvern that senses and tracks negative emotions. Large and strong enough to sink warships, it makes a powerful mount. It exudes Grimm fluid to spawn lesser Grimm under its command.
 176. Alcina Dimitrescu, 4.2, Resident Evil
-#(Tag:character)(Tag:fighter)(Tag:large-size)(Tag:regenerator)(Tag:shapeshifter)(Character)A former feudal lord fused with a bioengineered parasite, granting extreme regeneration, enhanced stats, and shapeshifting. Though no vampire, she needs regular blood intake to function.
+#(Tag:bio)(Tag:character)(Tag:fighter)(Tag:large-size)(Tag:parasitic)(Tag:regenerator)(Tag:shapeshifter)(Character)A former feudal lord fused with a bioengineered parasite, granting extreme regeneration, enhanced stats, and shapeshifting. Though no vampire, she needs regular blood intake to function.
 177. Lust, 3.0, Fullmetal Alchemist
 #(Tag:character)(Tag:fighter)(Tag:humanoid)(Tag:medium-size)(Tag:regenerator)(Character)A homunculus of lust created by Father with enhanced human stats. Her implanted Philosopher's Stone grants immortality, regenerating each death by consuming a stored soul. She expertly wields long, flexible, near-monomolecular fingertip claws.
 178. Darkbeast Paarl, 2.4, Bloodborne
@@ -597,7 +597,7 @@
 299. Obelisk the Tormentor, 6.5, Yugioh
 #(Tag:blaster)(Tag:dark)(Tag:divine)(Tag:fighter)(Tag:infernal)(Tag:titanic-size)Obelisk the Tormentor is an Egyptian God of overwhelming physical might whom no magic or ability below Legendary rank can directly affect. He unleashes destructive dark energy blasts and can be temporarily empowered further by sacrifices.
 300. Winged Dragon of Ra, 7.0, Yugioh
-#(Tag:divine)(Tag:draconic)(Tag:fire)(Tag:holy)(Tag:regenerator)(Tag:titanic-size)The Winged Dragon of Ra is an Egyptian Sun Dragon in the form of an imposing golden Phoenix whom no magic or ability below Legendary rank can directly affect. He unleashes sun-like divine flames that especially incinerate demonic and dark beings, can enter a Phoenix Form of pure flame for immense resistance and regeneration, and is further powered by sacrifices.
+#(Tag:avian)(Tag:divine)(Tag:draconic)(Tag:fire)(Tag:holy)(Tag:regenerator)(Tag:titanic-size)The Winged Dragon of Ra is an Egyptian Sun Dragon in the form of an imposing golden Phoenix whom no magic or ability below Legendary rank can directly affect. He unleashes sun-like divine flames that especially incinerate demonic and dark beings, can enter a Phoenix Form of pure flame for immense resistance and regeneration, and is further powered by sacrifices.
 301. Dusknoir, 3.8, Pokemon
 #(Tag:medium-size)(Tag:necro)(Tag:spirit)Dusknoir is a hollow-bodied ghost Pokemon with great physical strength and extremely strong physical and magical durability. It attacks with shadow and darkness, senses souls, and grabs living and dead souls to store inside its body.
 302. Lucario, 3.4, Pokemon
@@ -849,7 +849,7 @@
 425. Beldia, 4.8, Konosuba
 #(Tag:character)(Tag:curse)(Tag:fighter)(Tag:medium-size)(Tag:undead)(Character)Beldia is a Dullahan and former general of the Demon King. Despite flippancy, he is a powerful skilled knight with incredible strength and nigh unlimited, paired with swordsmanship. He can cast powerful curses and summon Death Knights.
 426. Hans, 5.1, Konosuba
-#(Tag:amorphous)(Tag:character)(Tag:massive-size)(Tag:poison)(Character)Hans is a massive Dead Poison Slime and former general of the Demon King. His body is deadly poison that melts regular humans on contact, and he can detach parts to poison things. He is nigh immune to physical attacks and resistant to magical attacks.
+#(Tag:amorphous)(Tag:character)(Tag:infernal)(Tag:massive-size)(Tag:poison)(Character)Hans is a massive Dead Poison Slime and former general of the Demon King. His body is deadly poison that melts regular humans on contact, and he can detach parts to poison things. He is nigh immune to physical attacks and resistant to magical attacks.
 427. Echidna, 0.2, Generic
 #(Tag:beast)(Tag:small-size)A small, spiny, cute mammal. Utterly useless as a familiar, but pretty cute.
 428. Krombopulous Michael, 3.2, Rick and Morty
@@ -1035,9 +1035,9 @@
 518. Vortigaunt Ally, 4.0, Half-Life
 #A shackled vortigaunt no longer; it heals your wounds and hurls lightning at your enemies.
 519. Metroid, 5.4, Metroid
-#(Tag:ice)A floating energy-draining jellyfish that latches onto victims and drains them dry in seconds, growing larger as it feeds. Lethally vulnerable to cold, which freezes it solid.
+#(Tag:aquatic)(Tag:ice)A floating energy-draining jellyfish that latches onto victims and drains them dry in seconds, growing larger as it feeds. Lethally vulnerable to cold, which freezes it solid.
 520. Solemn Simulacrum, 5.2, MTG
-#A melancholy golem butler, the saddest robot. It fetches you a useful resource on arrival and another when it dies, apologizing the entire time.
+#(Tag:golem)(Tag:worker)A melancholy golem butler, the saddest robot. It fetches you a useful resource on arrival and another when it dies, apologizing the entire time.
 521. Atog, 5.0, MTG
 #A ravenous beast that devours artifacts whole, growing larger and stronger with each one. Indiscriminate: it cannot tell your artifacts from anyone else's.
 522. Scylla and the Sirens, 5.7, Hades 2
@@ -1133,7 +1133,7 @@
 567. The Accounts Wyrm, 8.4, Generic
 #(Tag:draconic)A ledger-keeping dragon auditor managing all your wealth, debts, and oaths across worlds; money in its keeping cannot be stolen, taxed, or inflated away. It charges 1% and judges your purchases aloud.
 568. Pocket Apocalypse, 8.7, Generic
-#A puppy-sized dragon of the end times, fond of naps; once per 30 days it may unmake one thing you point at (fortress, army, or curse of Divine rank or below). It refuses to unmake the same kind of thing twice running.
+#(Tag:curse)(Tag:draconic)(Tag:small-size)(Tag:time)A puppy-sized dragon of the end times, fond of naps; once per 30 days it may unmake one thing you point at (fortress, army, or curse of Divine rank or below). It refuses to unmake the same kind of thing twice running.
 569. Granny Loam, 8.9, Generic
 #(Tag:fae)(Tag:nature)An ancient soil-witch the size of a hill who adopts you; her garden grows any plant, magical included, to maturity overnight, and her fences hold out anything short of a god. She gossips about you to the worms.
 570. The Last Librarian, 9.1, Generic

@@ -621,7 +621,7 @@
 311. Nymph Waterfall, 2.4, Hota
 #(Tag:barracks)(Tag:building)(Tag:spirit)(Tag:water)A magical waterfall where lesser water-spirit Nymphs are naturally born and remain loyal to you as its owner.
 312. Maelstrom, 4.9, Hota
-#A large water whirlpool containing many dangerous seabound creatures, including the sea serpent Haspid, under your command.
+#(Tag:command)(Tag:summon)(Tag:water)A large water whirlpool containing many dangerous seabound creatures, including the sea serpent Haspid, under your command.
 313. Magic Forest, 6.8, Hota
 #(Tag:barracks)(Tag:building)(Tag:holy)(Tag:nature)A large forest with high magical concentration and unique herbs, populated by ents, treants, and even legendary unicorns under your command. It slowly replenishes itself over time.
 314. Crystal Cave, 6.3, Hota
@@ -1907,7 +1907,7 @@
 954. Super Computer, 2.8, Oxygen Not Included
 #(Tag:machine)(Tag:tech)A humming research station that turns raw data and power into steady research progress.
 955. Drakkar, 4.2, Valheim
-#A clinker-built Viking longship that outruns sea serpents with the wind behind it.
+#(Tag:movement)(Tag:vehicle)A clinker-built Viking longship that outruns sea serpents with the wind behind it.
 956. Megingjord, 4.8, Valheim
 #Thor's strength belt, granting the bearer the carrying might of a giant.
 957. Wishbone, 3.6, Valheim
@@ -2209,7 +2209,7 @@
 1104. Wardrobe of Elsewhere, 8.2, Generic
 #Walk through it to exit from any door you have previously touched, anywhere; a round trip collapses the wardrobe for a week.
 1105. Penny of the Ferryman, 8.4, Generic
-#Pay it to cross any one boundary: locked doors, wards below Divine rank, even death itself (survive one killing blow, the penny spent). Single use; a replacement condenses every year.
+#(Tag:magic)(Tag:necro)Pay it to cross any one boundary: locked doors, wards below Divine rank, even death itself (survive one killing blow, the penny spent). Single use; a replacement condenses every year.
 1106. The Unfinished Map, 8.6, Generic
 #A map that fills in wherever you haven't been, including secret doors, traps, and treasures within a mile; it never shows people. Its inks run dry for 30 days after mapping a Divine-tier secret.
 1107. Gavel of Adjournment, 8.8, Generic
@@ -2231,7 +2231,7 @@
 1115. Mother Flame, 8.5, One Piece
 #(Tag:fire)A miniature sun in a flask: endless clean power for any machine or city, or one dawn-bright detonation if shattered.
 1116. Type-40 TARDIS, 9.0, Doctor Who
-#Bigger inside, traveling all of time and space; telepathic, temperamental, constantly breaking down. It refuses paradoxes at fixed points and likes you more than it admits.
+#(Tag:space)(Tag:storage)(Tag:time)(Tag:vehicle)Bigger inside, traveling all of time and space; telepathic, temperamental, constantly breaking down. It refuses paradoxes at fixed points and likes you more than it admits.
 1117. Eye of the Universe, 9.7, Outer Wilds
 #You know where it is and how to reach it. Enter, and seed the next universe with laws of your choosing. Single use; everything ends first.
 1118. The Moment, 9.5, Doctor Who

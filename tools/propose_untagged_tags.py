@@ -271,7 +271,10 @@ RULES = [
     R("recovery+", ["trait"], None, r"\b(augment|amplif|increase|boost)\b[^.]{0,30}\b(healing|recovery|regeneration)\b"),
     R("luck+", ["trait"], None, r"\b(augment|amplif|increase|boost)\b[^.]{0,30}\b(luck|fortune)\b"),
     # ---------------- familiars: kind, size, role ----------------
-    R("draconic", ["familiar"], N("dragon","drake","wyvern","wurm","wyrm","dragonoid","draconic","leviathan","serpent","hydra","basilisk","naga","bahamut","lindworm","wyrmling"),
+    # Draconic is the only creature-kind tag the official dictionaries also use
+    # for abilities, items and traits (a "dragon form" ability, a dragon-scale
+    # item); the rest are familiar-only.
+    R("draconic", ELEM, N("dragon","drake","wyvern","wurm","wyrm","dragonoid","draconic","leviathan","serpent","hydra","basilisk","naga","bahamut","lindworm","wyrmling"),
       r"\b(dragons?|draconic|serpents?|wyverns?|drake)\w*\b"),
     R("reptilian", ["familiar"], N("lizard","reptile","snake","serpent","turtle","tortoise","crocodile","gecko","salamander","basilisk","skink","iguana","komodo","viper","cobra","python"),
       r"\b(lizard|reptile|serpent|snake|turtle|crocodile|gecko|salamander)\w*\b"),
@@ -455,6 +458,19 @@ def valid_tags():
     return _VALID
 
 
+# Hand-tagged untagged entries: rules missed them (prose-heavy text) or the
+# right tag is not derivable from a keyword. Verified against each entry's text.
+MANUAL = {
+    ("familiar", "Solemn Simulacrum"): ["golem", "worker"],
+    ("familiar", "Pocket Apocalypse"): ["draconic", "time", "small-size", "curse"],
+    ("item", "Type-40 TARDIS"): ["time", "space", "vehicle", "storage"],
+    ("item", "Maelstrom"): ["water", "summon", "command"],
+    ("item", "Drakkar"): ["vehicle", "movement"],
+    ("item", "Penny of the Ferryman"): ["necro", "magic"],
+    ("ability", "Counterspell"): ["anti-magic", "magic"],
+}
+
+
 def proposals_for(e):
     valid = valid_tags()[e["file"]]
     tags, why = set(), {}
@@ -462,6 +478,9 @@ def proposals_for(e):
     # (Meta:...) tokens; they are gacha/system mechanics by construction.
     if "meta" in valid and (e.get("meta") or e.get("tag") == "tree"):
         tags.add("meta"); why["meta"] = "tree"
+    for t in MANUAL.get((e["file"], e["name"]), ()):
+        if t in valid:
+            tags.add(t); why[t] = "manual"
     raw = e["description"] or ""
     keep = [c for c in re.split(r"[.;]", raw) if not NEG_CLAUSE.search(c)]
     desc = NEG_STRIP.sub(" ", " . ".join(keep))
@@ -498,11 +517,11 @@ def main():
             none.append(e)
 
     tier_a = {k: v for k, v in out.items()
-              if any(x in ("name", "tree") for x in v["why"].values())}
+              if any(x in ("name", "tree", "manual") for x in v["why"].values())}
     tier_b = {k: v for k, v in out.items()
               if v["tags"] and k not in tier_a}
     def name_tags(v):
-        return [t for t in v["tags"] if v["why"].get(t) in ("name", "tree")]
+        return [t for t in v["tags"] if v["why"].get(t) in ("name", "tree", "manual")]
     print(f"untagged entries: {len(untagged)}")
     print(f"  A · name-driven proposals: {len(tier_a)} "
           f"({100 * len(tier_a) // max(1, len(untagged))}%)")
@@ -547,7 +566,7 @@ def main():
         for e in untagged:
             tags, why = proposals_for(e)
             if not args.with_desc:
-                tags = {t for t in tags if why.get(t) in ("name", "tree")}
+                tags = {t for t in tags if why.get(t) in ("name", "tree", "manual")}
             if tags:
                 by_file[e["file"]].append((e["number"], sorted(tags)))
         total = 0
