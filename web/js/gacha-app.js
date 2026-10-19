@@ -169,12 +169,21 @@
   let preset = "gold", category = "random";
   const CATS = ["random", "ability", "item", "skill", "trait", "familiar"];
 
-  function checkedSources() {
-    return [...document.querySelectorAll(".gfCheck")]
-      .filter(c => c.checked).map(c => c.value);
+  // The source selection is global and independent of which category is on
+  // screen: switching category only changes which sources are shown, never
+  // which are allowed. Exclusions are tracked explicitly so a partial view
+  // can never silently shrink the allowed set (the old DOM-read did).
+  function allSourceNames() {
+    const set = new Set();
+    for (const e of DATA.entries) if (e.t !== "tree" && e.s) set.add(e.s);
+    return [...set].sort((a, b) => a.localeCompare(b));
   }
-  function refreshSources(keep) {
-    const prev = keep ? checkedSources() : null;
+  let excludedSources = new Set();
+  const sourceAllowed = s => !excludedSources.has(s);
+  function allowedSourceList() {
+    return allSourceNames().filter(sourceAllowed);
+  }
+  function refreshSources() {
     const host = $("gfSources");
     host.innerHTML = "";
     const FILES = ["ability", "item", "skill", "trait", "familiar"];
@@ -194,9 +203,12 @@
       lab.title = `${s}: ${breakdown(s)}`;
       const cb = document.createElement("input");
       cb.type = "checkbox"; cb.className = "gfCheck"; cb.value = s;
-      cb.checked = !prev || prev.includes(s);
+      cb.checked = sourceAllowed(s);
       cb.style.cssText = "width:22px;height:22px";
-      cb.addEventListener("change", () => { refreshSrcCount(); updatePoolCount(); collectFilters(); });
+      cb.addEventListener("change", () => {
+        if (cb.checked) excludedSources.delete(s); else excludedSources.add(s);
+        refreshSrcCount(); updatePoolCount(); collectFilters();
+      });
       const nm = document.createElement("span");
       nm.className = "srcbreak";
       nm.textContent = `${s} [${breakdown(s)}]`;
@@ -207,16 +219,16 @@
     updatePoolCount();
   }
   function refreshSrcCount() {
-    const boxes = [...document.querySelectorAll(".gfCheck")];
-    const n = boxes.filter(c => c.checked).length;
-    $("gfCount").textContent = n === boxes.length ? "all" : `${n}/${boxes.length}`;
+    const total = allSourceNames().length;
+    const allowed = allowedSourceList().length;
+    $("gfCount").textContent = allowed === total ? "all" : `${allowed}/${total}`;
   }
   function collectFilters() {
     const rmin = parseFloat($("fRmin").value), rmax = parseFloat($("fRmax").value);
     const tag = $("fTag") ? $("fTag").value || "" : "";
     const F = {
       q: $("q").value,
-      sources: checkedSources(),
+      sources: allowedSourceList(),
       rmin: isNaN(rmin) ? null : rmin,
       rmax: isNaN(rmax) ? null : rmax,
       hideNsfw: !!$("fNsfw").checked,
@@ -226,7 +238,7 @@
     };
     if (tag) F.tag = tag;
     DB.settings.filters = {
-      q: F.q, sources: F.sources,
+      q: F.q, sources: F.sources, sourcesExcluded: [...excludedSources],
       rmin: $("fRmin").value, rmax: $("fRmax").value,
       hideNsfw: F.hideNsfw, hideNoncon: F.hideNoncon, hideTech: F.hideTech, dedup: F.dedup,
       tag
@@ -245,19 +257,23 @@
     $("fDedup").checked = !!F.dedup;
     if ($("fTag")) $("fTag").value = F.tag || "";
     updateNonconRow();
-    refreshSources(false);
-    // legacy single-source setting -> check just that one
-    const legacy = F.sources || (F.source ? [F.source] : null);
-    if (legacy) {
-      document.querySelectorAll(".gfCheck").forEach(c => { c.checked = legacy.includes(c.value); });
-      refreshSrcCount();
+    // Exclusions are authoritative; migrate the older "allowed list" format
+    // (and the even older single-source setting) once, then keep exclusions.
+    const known = new Set(allSourceNames());
+    if (Array.isArray(F.sourcesExcluded)) {
+      excludedSources = new Set(F.sourcesExcluded.filter(s => known.has(s)));
+    } else if ((Array.isArray(F.sources) && F.sources.length) || F.source) {
+      const allowed = new Set(F.sources || [F.source]);
+      excludedSources = new Set([...known].filter(s => !allowed.has(s)));
+    } else {
+      excludedSources = new Set();
     }
-    updatePoolCount();
+    refreshSources();
   }
   function updatePoolCount() {
     try {
       const F = {
-        q: $("q").value, sources: checkedSources(),
+        q: $("q").value, sources: allowedSourceList(),
         rmin: parseFloat($("fRmin").value) || null,
         rmax: parseFloat($("fRmax").value) || null,
         hideNsfw: !!$("fNsfw").checked, hideNoncon: !!$("fNoncon").checked, hideTech: !!$("fTech").checked,
@@ -306,7 +322,7 @@
       const b = document.createElement("button");
       b.className = "pick" + (category === c ? " sel" : "");
       b.textContent = c === "random" ? "🎲 random" : c;
-      b.addEventListener("click", () => { category = c; renderPickers(); refreshSources(true); });
+      b.addEventListener("click", () => { category = c; renderPickers(); refreshSources(); });
       cg.appendChild(b);
     }
     $("tkTier").innerHTML = DATA.tiers.map(t => `<option>${t.name}</option>`).join("");
@@ -806,17 +822,15 @@
     updatePoolCount();
   }
   $("gfAll").addEventListener("click", () => {
-    document.querySelectorAll(".gfCheck").forEach(c => { c.checked = true; });
-    refreshSrcCount(); updatePoolCount(); collectFilters();
+    excludedSources = new Set();
+    refreshSources(); collectFilters();
   });
   $("gfNone").addEventListener("click", () => {
-    document.querySelectorAll(".gfCheck").forEach(c => { c.checked = false; });
-    refreshSrcCount(); updatePoolCount(); collectFilters();
+    excludedSources = new Set(allSourceNames());
+    refreshSources(); collectFilters();
   });
   $("gfExport").addEventListener("click", () => {
-    const checked = new Set(checkedSources());
-    const excluded = [...document.querySelectorAll(".gfCheck")]
-      .map(c => c.value).filter(v => !checked.has(v)).sort();
+    const excluded = [...excludedSources].sort();
     const blob = new Blob([JSON.stringify({
       app: "chaos-gacha", kind: "source-exclusions", version: 1, excluded
     })], { type: "application/json" });
@@ -834,10 +848,10 @@
       const p = JSON.parse(await f.text());
       const listed = Array.isArray(p.excluded) ? p.excluded : null;
       if (!listed) throw new Error("not a source-exclusions file");
-      const known = new Set([...document.querySelectorAll(".gfCheck")].map(c => c.value));
+      const known = new Set(allSourceNames());
       const valid = listed.filter(s => known.has(s));
-      document.querySelectorAll(".gfCheck").forEach(c => { c.checked = !valid.includes(c.value); });
-      refreshSrcCount(); updatePoolCount(); collectFilters();
+      excludedSources = new Set(valid);
+      refreshSources(); collectFilters();
       toast(`Excluded ${valid.length} source${valid.length === 1 ? "" : "s"}` +
         (listed.length > valid.length ? ` (${listed.length - valid.length} unknown ignored)` : "") + ".");
     } catch (e) { toast(e.message || "Import failed.", true); }
