@@ -36,7 +36,7 @@ function startServer() {
   });
 }
 
-function boot(page) {
+function boot(page, seed) {
   const vc = new VirtualConsole();
   const errors = [];
   // jsdom has no canvas backend; the tree 3D view logs that on boot.
@@ -47,6 +47,20 @@ function boot(page) {
   const dom = new JSDOM(fs.readFileSync(path.join(REPO, "web", page), "utf8"), {
     url: BASE + page, runScripts: "dangerously", resources: "usable",
     pretendToBeVisual: true, virtualConsole: vc,
+    beforeParse(w) {
+      if (seed) for (const [k, v] of Object.entries(seed)) w.localStorage.setItem(k, v);
+      // jsdom has no canvas backend: give the 3D view a no-op 2D context so
+      // an active tree can boot and draw without throwing.
+      const noop = () => {};
+      const ctx = new Proxy({}, {
+        get: (t, k) => (k in t ? t[k] : noop),
+        set: (t, k, v) => { t[k] = v; return true; },
+      });
+      w.HTMLCanvasElement.prototype.getContext = () => ctx;
+      if (!w.Path2D) {
+        w.Path2D = class { constructor() {} moveTo() {} lineTo() {} arc() {} closePath() {} };
+      }
+    },
   });
   return new Promise(resolve => {
     dom.window.addEventListener("load", () => resolve({ dom, errors }));
@@ -187,6 +201,66 @@ function boot(page) {
     ok("tree: owned-tag filter populated", ownOpts.length > 20, String(ownOpts.length));
     ok("tree: generation tag filter populated", newOpts.length > 20, String(newOpts.length));
     ok("tree: options carry counts", /\(\d+\)/.test(d.querySelector("#newTag option:nth-child(2)").textContent));
+    dom.window.close();
+  }
+
+  // ---------- tree page: data-version mismatch offers Upgrade ----------
+  {
+    const stale = JSON.stringify({
+      trees: [{ id: "t1", name: "Stale tree", seed: 7, params: {}, limit: 60,
+                filters: {}, dataVersion: "oldversion", static: false, createdAt: 1 }],
+      states: { t1: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
+      activeId: "t1", guideSeen: true, settings: {},
+    });
+    const { dom, errors } = await boot("tree.html", { "chaosTree.v1": stale });
+    const w = dom.window, d = w.document;
+    ok("tree: no page errors on a stale tree", errors.length === 0, errors[0]);
+    ok("tree: mismatch banner is shown", d.getElementById("verWarn").style.display !== "none");
+    const banner = d.getElementById("btnUpgradeActive");
+    ok("tree: banner offers Upgrade", !!banner);
+    const rowBtn = d.querySelector('#treeList button[data-tree-id="t1"]');
+    ok("tree: tree row carries an Upgrade button keyed by id", !!rowBtn);
+    banner.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 150));
+    const picked = !!d.querySelector("#treeList .upPicker") ||
+      [...d.querySelectorAll("#treeList b")].some(b => /upgraded/i.test(b.textContent));
+    ok("tree: banner Upgrade opens the upgrade flow", picked,
+      d.getElementById("treeList").textContent.slice(0, 120));
+    dom.window.close();
+  }
+
+  // ---------- frozen content with no recorded version still warns ----------
+  {
+    // The silent case: the tree record has no dataVersion at all and its
+    // snapshot was silently re-keyed to the current data. Content provenance
+    // is the only thing that can flag it.
+    const tree = JSON.stringify({
+      trees: [{ id: "t2", name: "Unversioned tree", seed: 7, params: {}, limit: 60,
+                filters: {}, static: false, createdAt: 1 }],
+      states: { t2: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
+      activeId: "t2", guideSeen: true, settings: {},
+    });
+    const nodes = [{ id: 0, file: "__root__", name: "Origin", rarity: 0, pos: [0, 0, 0], r: 0 },
+                   { id: 1, file: "ability", name: "HyperQbe the Streamer", rarity: 3.4,
+                     source: "Q-UP", tag: "both", description: "old entry", meta: [], pos: [1, 0, 0], r: 1 }];
+    const gen = JSON.stringify({ key: JSON.stringify([7, {}, {}, 60, "oldversion"]),
+                                 res: { nodes, edges: [{ a: 0, b: 1, d: 1 }] } });
+    const { dom, errors } = await boot("tree.html",
+      { "chaosTree.v1": tree, "chaosTree.gen.v1.t2": gen });
+    const w = dom.window, d = w.document;
+    ok("tree: frozen tree boots", errors.length === 0, errors[0]);
+    ok("tree: unversioned frozen content still warns",
+      d.getElementById("verWarn").style.display !== "none",
+      d.getElementById("verWarnText").textContent.slice(0, 120));
+    const saved = JSON.parse(w.localStorage.getItem("chaosTree.gen.v1.t2") || "{}");
+    const savedKey = JSON.parse(saved.key || "[]");
+    ok("tree: frozen run kept its old entries under the current key",
+      saved.res && saved.res.nodes && saved.res.nodes.some(nd => nd.name === "HyperQbe the Streamer") &&
+      savedKey[4] === w.CHAOS_DATA.dataVersion,
+      JSON.stringify(savedKey));
+    ok("tree: row pill names the stale version",
+      /data voldversion/.test(d.getElementById("treeList").textContent),
+      d.getElementById("treeList").textContent.slice(0, 140));
     dom.window.close();
   }
 

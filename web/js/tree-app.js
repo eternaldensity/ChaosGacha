@@ -233,6 +233,15 @@
           if (hk && nk && JSON.stringify(hk.slice(0, 4)) === JSON.stringify(nk.slice(0, 4))) {
             res = JSON.parse(JSON.stringify(hit.res));
             saveGenerated(tree.id, key, res);
+            // Record where the frozen content came from: the snapshot now
+            // answers to the current key, so nothing else can tell that the
+            // entries inside it are older than the loaded data.
+            const from = hk[4] || "unknown";
+            if (tree.contentDataVersion !== from) {
+              tree.contentDataVersion = from;
+              if (!tree.dataVersion) tree.dataVersion = from === "unknown" ? null : from;
+              saveDB();
+            }
           }
         } catch (e) { /* fall through to regenerate */ }
       }
@@ -241,6 +250,12 @@
           limit: tree.limit || null, ...(tree.filters || {})
         }, () => {});
         if (key) saveGenerated(tree.id, key, res);
+        // Freshly generated content: the record is current again.
+        if (tree.contentDataVersion || tree.dataVersion !== DATA.dataVersion) {
+          delete tree.contentDataVersion;
+          tree.dataVersion = DATA.dataVersion || null;
+          saveDB();
+        }
       }
       rt = G.buildRuntime(res);
       rt.params = Object.assign({}, G.DEFAULTS, tree.params || {});
@@ -308,9 +323,19 @@
   function uid() {
     return Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
   }
+  // Staleness is about the content, not just the recorded version: a tree can
+  // be frozen from older data while its record still answers to the current
+  // key (contentDataVersion), or predate versioning entirely (no dataVersion).
   function treeMismatch(t) {
-    return !t.static && !!t.dataVersion && !!DATA.dataVersion &&
-      t.dataVersion !== DATA.dataVersion;
+    if (t.static || !DATA.dataVersion) return false;
+    const content = t.contentDataVersion || null;
+    if (content) return content !== DATA.dataVersion;
+    if (t.dataVersion) return t.dataVersion !== DATA.dataVersion;
+    return true;                     // no provenance recorded: assume old
+  }
+  function staleLabel(t) {
+    const from = t.contentDataVersion || t.dataVersion || "unknown";
+    return `data v${from}≠v${DATA.dataVersion}`;
   }
   function renderTrees() {
     const ul = $("treeList");
@@ -336,8 +361,11 @@
     if (at && treeMismatch(at)) {
       warn.style.display = "block";
       $("verWarnText").textContent =
-        `"${at.name}" was generated with data v${at.dataVersion}, current data is v${DATA.dataVersion}. ` +
-        `Regenerating now may produce a different tree (entry counts or rarities changed). Export a backup first if its progress matters.`;
+        `"${at.name}" was built from data v${at.contentDataVersion || at.dataVersion || "an older version"}, current data is ` +
+        `v${DATA.dataVersion}, so it keeps the entries it was built from (regenerating would silently reassign entries and links ` +
+        `under your progress). ` +
+        `Use Upgrade to keep your unlocked and visible nodes and resample the unseen ones from the current data, ` +
+        `or generate a fresh tree below. Export a backup first if its progress matters.`;
     } else warn.style.display = "none";
     ul.innerHTML = "";
     for (const t of DB.trees) {
@@ -347,7 +375,7 @@
       const mis = treeMismatch(t);
       li.innerHTML =
         `<div class="grow"><b>${esc(t.name)}</b>` +
-        (mis ? ` <span class="pill" style="border-color:var(--bad);color:var(--bad)">⚠ data v${esc(t.dataVersion)}≠v${esc(DATA.dataVersion)}</span>` : "") +
+        (mis ? ` <span class="pill" style="border-color:var(--bad);color:var(--bad)">⚠ ${esc(staleLabel(t))}</span>` : "") +
         `<br>` +
         `<span class="muted small">${t.static ? "imported file" : "seed " + esc(String(t.seed)) + (t.limit ? " · " + t.limit + " entries" : " · full")}` +
         (t.dataVersion ? " · data v" + esc(t.dataVersion) : "") +
@@ -401,6 +429,7 @@
       });
       const up = document.createElement("button");
       up.textContent = "⬆ Upgrade";
+      up.dataset.treeId = t.id;
       up.title = "Copy with progress: keep unlocked + visible entries, regenerate the unseen from current data (full trees also grow)";
       up.addEventListener("click", async () => {
         try {
@@ -2542,6 +2571,16 @@
     DB.guideSeen = true;
     saveDB();
     $("guideCard").style.display = "none";
+  });
+  // The mismatch banner is the moment a player notices their tree is on old
+  // data, so offer the Upgrade flow right there instead of only in the rows.
+  $("btnUpgradeActive").addEventListener("click", () => {
+    const at = activeTree();
+    if (!at) return;
+    const row = document.querySelector(`#treeList button[data-tree-id="${at.id}"]`);
+    if (!row) { toast("Couldn't find that tree's Upgrade button.", true); return; }
+    if (row.scrollIntoView) row.scrollIntoView({ block: "nearest" });
+    row.click();
   });
   $("findQ").addEventListener("input", () => { if (currentTab === "node") renderFinder(); });
   $("fileChecks").innerHTML = "";
