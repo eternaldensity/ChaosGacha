@@ -326,8 +326,12 @@
   // Staleness is about the content, not just the recorded version: a tree can
   // be frozen from older data while its record still answers to the current
   // key (contentDataVersion), or predate versioning entirely (no dataVersion).
+  // Static (imported/exported) trees carry their entries baked in, so they are
+  // judged by the version recorded at export time — an external snapshot with
+  // no version at all is left alone.
   function treeMismatch(t) {
-    if (t.static || !DATA.dataVersion) return false;
+    if (!DATA.dataVersion) return false;
+    if (t.static) return !!t.dataVersion && t.dataVersion !== DATA.dataVersion;
     const content = t.contentDataVersion || null;
     if (content) return content !== DATA.dataVersion;
     if (t.dataVersion) return t.dataVersion !== DATA.dataVersion;
@@ -336,6 +340,19 @@
   function staleLabel(t) {
     const from = t.contentDataVersion || t.dataVersion || "unknown";
     return `data v${from}≠v${DATA.dataVersion}`;
+  }
+  // Entries a static snapshot references that the current data no longer has:
+  // the most direct evidence that a snapshot predates the loaded data, and it
+  // works even when the file carries no version at all.
+  function staticMissing(t) {
+    if (!t.static) return 0;
+    const p = loadStatic(t.id);
+    if (!p || !p.nodes || !p.nodes.length) return 0;
+    const key = nd => nd.file + "\u0000" + nd.name;
+    if (!DATA._entryKeys) DATA._entryKeys = new Set((DATA.entries || []).map(key));
+    let n = 0;
+    for (const nd of p.nodes) if (nd.id !== 0 && !DATA._entryKeys.has(key(nd))) n++;
+    return n;
   }
   function renderTrees() {
     const ul = $("treeList");
@@ -358,24 +375,29 @@
       ? `${DB.trees.length} tree${DB.trees.length > 1 ? "s" : ""} · active: ${at ? at.name : "none"}`
       : "No trees yet: generate one below.";
     const warn = $("verWarn");
-    if (at && treeMismatch(at)) {
+    const missCount = at ? staticMissing(at) : 0;
+    if (at && (treeMismatch(at) || missCount)) {
       warn.style.display = "block";
       $("verWarnText").textContent =
         `"${at.name}" was built from data v${at.contentDataVersion || at.dataVersion || "an older version"}, current data is ` +
         `v${DATA.dataVersion}, so it keeps the entries it was built from (regenerating would silently reassign entries and links ` +
         `under your progress). ` +
-        `Use Upgrade to keep your unlocked and visible nodes and resample the unseen ones from the current data, ` +
-        `or generate a fresh tree below. Export a backup first if its progress matters.`;
+        `Use Upgrade to keep your unlocked and visible nodes and resample the unseen ones from the current data` +
+        (at.static ? `; this tree is an imported snapshot, so new entries and tags only enter it that way.`
+                   : `, or generate a fresh tree below.`) +
+        (missCount ? ` ${missCount} of its entries no longer exist in the current data.` : "") +
+        ` Export a backup first if its progress matters.`;
     } else warn.style.display = "none";
     ul.innerHTML = "";
     for (const t of DB.trees) {
       const st = DB.states[t.id];
       const li = document.createElement("li");
       li.style.flexWrap = "wrap";
-      const mis = treeMismatch(t);
+      const missing = staticMissing(t);
+      const mis = treeMismatch(t) || !!missing;
       li.innerHTML =
         `<div class="grow"><b>${esc(t.name)}</b>` +
-        (mis ? ` <span class="pill" style="border-color:var(--bad);color:var(--bad)">⚠ ${esc(staleLabel(t))}</span>` : "") +
+        (mis ? ` <span class="pill" style="border-color:var(--bad);color:var(--bad)">⚠ ${esc(t.dataVersion && treeMismatch(t) ? staleLabel(t) : `${missing} stale entr${missing === 1 ? "y" : "ies"}`)}</span>` : "") +
         `<br>` +
         `<span class="muted small">${t.static ? "imported file" : "seed " + esc(String(t.seed)) + (t.limit ? " · " + t.limit + " entries" : " · full")}` +
         (t.dataVersion ? " · data v" + esc(t.dataVersion) : "") +

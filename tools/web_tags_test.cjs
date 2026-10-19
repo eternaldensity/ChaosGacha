@@ -264,6 +264,61 @@ function boot(page, seed) {
     dom.window.close();
   }
 
+  // ---------- static (imported) snapshot on old data warns too ----------
+  {
+    const tree = JSON.stringify({
+      trees: [{ id: "t3", name: "Imported primary", seed: 5, params: {}, limit: null,
+                filters: {}, dataVersion: "ee5d89ed5c", static: true, createdAt: 1 }],
+      states: { t3: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
+      activeId: "t3", guideSeen: true, settings: {},
+    });
+    const topo = JSON.stringify({
+      params: {},
+      nodes: [{ id: 0, file: "__root__", name: "Origin", rarity: 0, pos: [0, 0, 0], r: 0 },
+              { id: 1, file: "ability", name: "HyperQbe the Streamer", rarity: 3.4, source: "Q-UP",
+                tag: "both", description: "baked entry", meta: [], pos: [1, 0, 0], r: 1 }],
+      edges: [{ a: 0, b: 1, d: 1 }],
+    });
+    const { dom, errors } = await boot("tree.html",
+      { "chaosTree.v1": tree, "chaosTree.static.v1.t3": topo });
+    const w = dom.window, d = w.document;
+    ok("tree: static snapshot boots", errors.length === 0, errors[0]);
+    ok("tree: imported snapshot on old data warns",
+      d.getElementById("verWarn").style.display !== "none",
+      d.getElementById("verWarnText").textContent.slice(0, 140));
+    ok("tree: warning says it is an imported snapshot",
+      /imported snapshot/.test(d.getElementById("verWarnText").textContent));
+    ok("tree: row pill names the exported version",
+      /data vee5d89ed5c/.test(d.getElementById("treeList").textContent),
+      d.getElementById("treeList").textContent.slice(0, 140));
+    ok("tree: warning counts vanished entries for a versioned snapshot too",
+      /1 of its entries no longer exist/.test(d.getElementById("verWarnText").textContent),
+      d.getElementById("verWarnText").textContent.slice(-90));
+    // an external snapshot with no recorded version stays quiet
+    const anon = JSON.stringify({
+      trees: [{ id: "t4", name: "External file", seed: 5, params: {}, limit: null,
+                filters: {}, dataVersion: null, static: true, createdAt: 1 }],
+      states: { t4: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
+      activeId: "t4", guideSeen: true, settings: {},
+    });
+    // A version-less file still warns if it references entries that no longer
+    // exist in the data ("HyperQbe the Streamer" in the stub topology).
+    const b2 = await boot("tree.html",
+      { "chaosTree.v1": anon, "chaosTree.static.v1.t4": topo });
+    const b2d = b2.dom.window.document;
+    ok("tree: version-less file with vanished entries warns",
+      b2d.getElementById("verWarn").style.display !== "none",
+      b2d.getElementById("verWarnText").textContent.slice(0, 120));
+    ok("tree: warning counts the vanished entries",
+      /1 of its entries no longer exist/.test(b2d.getElementById("verWarnText").textContent),
+      b2d.getElementById("verWarnText").textContent.slice(-90));
+    ok("tree: row pill flags stale entries",
+      /1 stale entry/.test(b2d.getElementById("treeList").textContent),
+      b2d.getElementById("treeList").textContent.slice(0, 120));
+    b2.dom.window.close();
+    dom.window.close();
+  }
+
   console.log(failures ? `${failures} FAILURES` : "ALL PASS");
   } finally {
     server.kill();
