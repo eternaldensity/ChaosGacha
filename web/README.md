@@ -57,6 +57,14 @@ After editing `gachafiles/*.txt`:
 
     python3 tools/export_web_data.py
 
+## Deploys and caching
+
+`sw.js` precaches the app shell and serves it cache-first, but serves
+generated data (`data/*.js`) **network-first** — so a fresh export is picked up
+on the next reload without touching the worker. Bump the `CACHE` version in
+`sw.js` whenever shell files (html/css/js/icons) change, otherwise returning
+players keep the old shell.
+
 ## Tests
 
 - `node tools/web_parity.cjs` — checks the JS engine against the Python
@@ -68,5 +76,8 @@ After editing `gachafiles/*.txt`:
   no-match error path, and the tree tag pickers.
 - `python3 tools/test_chaos_tree.py` — generator/engine self-test, plus tag
   parsing/normalization invariants (`test_tags`).
+- `node tools/sw_behavior_test.cjs` — checks the service worker's caching
+  rules: data bundles are revalidated against the network (with an offline
+  fallback), the shell stays cache-first, and `data/tags.js` is precached.
 - The app shells boot headlessly under the DOM stub used during
   development (not committed); rerun `node --check web/js/*.js` after edits.
