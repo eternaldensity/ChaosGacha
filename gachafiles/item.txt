@@ -1018,8 +1018,8 @@
 #(Tag:bludgeon)(Tag:kinetic)(Tag:weapon)An inordinately durable baseball with vastly increased knockback, imbuing objects or targets with increased velocity on contact.
 510. Deeds' Bell, 2.8, SCP-662
 #(Tag:summon)(Tag:tool)A silver ornate bell that summons supernatural butler Mr. Deeds when rung to perform any one butler-capable task, such as laundry, killing, making a sandwich (no ingredients needed), taxes, or providing a gold bar (no gold access needed). If unable, he will say so and ask for an alternative. Cooldown: 12 hours.
-511. Sling Ring, 7.0, Marvel
-#(Tag:accessory)(Tag:movement)A mystical ring that opens interdimensional portals for travel even across the multiverse by visualizing the destination. Magical training is needed for full use.
+511. Cassandra Nova's Sling Ring, 7.0, Marvel
+#(Tag:accessory)(Tag:movement)(Tag:space)(Tag:time)A sling ring from the Void, its band set with a Time Stone and a Reality Stone. Unlike a common sling ring, it can open a door out of the Void and into other realities, not merely between known dimensions; picture the destination and step through. The stones are socketed, not wielded: they won't answer to you as Infinity Stones while set, and prying them free is the kind of project that destroys the ring, the stones, or you.
 512. Psychic Paper, 1.6, Doctor Who
 #(Tag:illusion)(Tag:mental)(Tag:tool)Psychic paper that makes viewers see what they expect, such as IDs, papers, or permits. It fails against exceptionally strong beings or geniuses who may notice the difference.
 513. Holy Grail, 6.8, Fate
