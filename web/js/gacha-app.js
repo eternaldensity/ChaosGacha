@@ -93,7 +93,7 @@
       if (cur && [...sel.options].some(o => o.value === cur)) sel.value = cur;
     }
     if ($("fTag")) {
-      $("fTag").title = "Original-site tags for the selected category. " +
+      $("fTag").title = "Tags for the selected category. " +
         "Hover an entry's pill to see what a tag means.";
     }
   }
@@ -370,7 +370,8 @@
   // Advantage rolls a batch at once and the roller picks which result to
   // keep (rarity is no judge): a ticket's Advantage prefix rolls that many
   // wheels; the Gambler trait's "Advantage" d20 result adds one more.
-  // Everything else (odds, filters, category) is unchanged.
+  // G.rollBatch avoids duplicate prizes when the filtered pool has enough
+  // distinct options; everything else (odds, filters, category) is unchanged.
   function doRoll(min, max, avg, cat, ticketId, tierName, ticketTag, advantage) {
     if (spinning) return;
     $("filterBox").open = false;
@@ -406,11 +407,12 @@
       }
     }
     const rolls = Math.max(1, advantage | 0) + (g && g.effect === "advantage" ? 1 : 0);
-    const rollOnce = () => G.roll(DATA.entries, DATA.tiers, cat, min, max, avg, F);
     let results;
     try {
-      results = [];
-      for (let i = 0; i < rolls; i++) results.push(rollOnce());
+      // One batch: advantage wheels avoid repeating a prize while the pool
+      // has enough distinct options; otherwise they behave like independent
+      // rolls (see G.rollBatch).
+      results = G.rollBatch(DATA.entries, DATA.tiers, cat, min, max, avg, F, rolls);
     } catch (e) { toast(e.message, true); return; }
     // The ticket is spent as soon as the wheels land, but nothing is
     // recorded until the roller has chosen what to keep (advantage) — the

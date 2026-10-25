@@ -116,6 +116,33 @@ window.ChaosGacha = (function () {
     return { entry: filt[idx], weight: fw[idx], pull };
   }
 
+  // Entries a roll could award under the current filters and rarity band.
+  // "random" unions every category; a specific category uses just its pool.
+  // Used to decide whether advantage wheels can avoid repeating a prize.
+  function candidates(entries, category, min, max, filt) {
+    const F = normFilt(filt);
+    const cats = category === "random"
+      ? ["ability", "item", "skill", "trait", "familiar"] : [category];
+    const out = [];
+    for (const cat of cats) {
+      let built;
+      try { built = buildPool(entries, cat, F); } catch (e) { continue; }
+      for (const e of built.pool) {
+        if (e.r > min && e.r <= max) out.push({ cat, entry: e });
+      }
+    }
+    return out;
+  }
+
+  function resultOf(cat, e, weight, weightsum, pull) {
+    return {
+      category: cat, name: e.name, rarity: e.r,
+      source: e.s || "", description: cleanDesc(e.d),
+      meta: e.m || [], tags: entryTags(e).slice(),
+      odds: 100 * weight / weightsum, pull: Math.round(pull * 10) / 10
+    };
+  }
+
   function roll(entries, tiers, category, min, max, avg, filt, rnd) {
     rnd = rnd || Math.random;
     const exp = normFilt(filt).flat ? 1 : 4;
@@ -127,15 +154,74 @@ window.ChaosGacha = (function () {
     for (let attempt = 0; attempt < 200; attempt++) {
       const hit = drawOne(pool, min, max, avg, rnd, exp);
       if (!hit) continue;
-      const e = hit.entry;
-      return {
-        category: cat, name: e.name, rarity: e.r,
-        source: e.s || "", description: cleanDesc(e.d),
-        meta: e.m || [], tags: entryTags(e).slice(),
-        odds: 100 * hit.weight / weightsum, pull: Math.round(hit.pull * 10) / 10
-      };
+      return resultOf(cat, hit.entry, hit.weight, weightsum, hit.pull);
     }
     throw new Error("could not find a match (try widening the range)");
+  }
+
+  // Weighted pick from {cat, entry} candidates. This is the fallback for a
+  // distinct advantage wheel when the normal two-stage draw cannot land a
+  // remaining candidate; it keeps the same rarity weighting.
+  function pickCandidate(cands, avg, exp, rnd) {
+    const k = exp || 4;
+    const weights = cands.map(c => 1 / Math.pow(k, Math.abs(avg - c.entry.r)));
+    let total = 0;
+    for (const w of weights) total += w;
+    let pick = (rnd || Math.random)() * total, acc = 0, idx = weights.length - 1;
+    for (let i = 0; i < weights.length; i++) {
+      acc += weights[i];
+      if (acc >= pick) { idx = i; break; }
+    }
+    const c = cands[idx];
+    return resultOf(c.cat, c.entry, weights[idx], total, c.entry.r);
+  }
+
+  // Draw `count` wheels for an advantage roll. When the filtered pool has at
+  // least `count` distinct names, repeats are rejected and redrawn, so the
+  // roller gets distinct prizes to choose between. Each wheel still uses
+  // roll()'s normal rarity weighting; only duplicate outcomes change. With
+  // fewer candidates than wheels, repeats are unavoidable and the normal
+  // independent-wheel behavior is kept.
+  function rollBatch(entries, tiers, category, min, max, avg, filt, count, rnd) {
+    rnd = rnd || Math.random;
+    count = Math.max(1, count | 0);
+    if (count === 1) return [roll(entries, tiers, category, min, max, avg, filt, rnd)];
+    const F = normFilt(filt);
+    const exp = F.flat ? 1 : 4;
+    const baseExclude = F.exclude ? [].concat(F.exclude) : [];
+    const all = candidates(entries, category, min, max, F);
+    const distinct = new Set(all.map(c => c.entry.name)).size;
+    if (distinct < count) {
+      const out = [];
+      for (let i = 0; i < count; i++) {
+        out.push(roll(entries, tiers, category, min, max, avg, filt, rnd));
+      }
+      return out;
+    }
+    const used = new Set();
+    const out = [];
+    for (let i = 0; i < count; i++) {
+      let r = null, lastErr = null;
+      for (let attempt = 0; attempt < 40; attempt++) {
+        const f = used.size
+          ? Object.assign({}, F, { exclude: baseExclude.concat([...used]) })
+          : F;
+        try { r = roll(entries, tiers, category, min, max, avg, f, rnd); }
+        catch (e) { lastErr = e; r = null; }
+        if (r && !used.has(r.name)) break;
+        r = null;
+      }
+      if (!r) {
+        const remaining = all.filter(c => !used.has(c.entry.name));
+        if (!remaining.length) {
+          throw lastErr || new Error("no entries match (loosen the filters)");
+        }
+        r = pickCandidate(remaining, avg, exp, rnd);
+      }
+      used.add(r.name);
+      out.push(r);
+    }
+    return out;
   }
 
   // Candidate strip for the spin animation: plausible results drawn through
@@ -265,6 +351,6 @@ window.ChaosGacha = (function () {
       nothing: "No change", rankDown: "Rank Down", destroyed: "Destroyed" }[g.effect];
   }
 
-  return { rarityPull, cleanDesc, entryTags, roll, drawStrip, rarityClass,
-    gamblerRoll, gamblerApply, gamblerLabel };
+  return { rarityPull, cleanDesc, entryTags, candidates, roll, rollBatch,
+    drawStrip, rarityClass, gamblerRoll, gamblerApply, gamblerLabel };
 })();
