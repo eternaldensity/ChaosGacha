@@ -107,17 +107,32 @@ def main():
 def export_tags():
     """Mirror the original site's per-category tag dictionaries for the web UI
     (tooltips on tag pills, filter descriptions). Source snapshot:
-    tools/tagdata/dicts.json; see tools/tagdata/README.md for provenance."""
+    tools/tagdata/dicts.json; fork-only additions (e.g. railway) live in
+    tools/tagdata/custom_dicts.json so refreshing the snapshot cannot erase
+    them. See tools/tagdata/README.md for provenance."""
     src = os.path.join(ROOT, "tools", "tagdata", "dicts.json")
     with open(src, encoding="utf-8") as fh:
         dicts = json.load(fh)
+    custom_src = os.path.join(ROOT, "tools", "tagdata", "custom_dicts.json")
+    custom = {}
+    if os.path.exists(custom_src):
+        with open(custom_src, encoding="utf-8") as fh:
+            custom = json.load(fh)
     payload = {}
     for cat in CATEGORIES:
         items = []
+        seen = set()
         for t in dicts.get(cat, []):
             tag = gt.normalize_tag(t["name"])
             if not tag:
                 continue
+            seen.add(tag)
+            items.append({"name": t["name"], "tag": tag, "desc": t["desc"]})
+        for t in custom.get(cat, []):
+            tag = gt.normalize_tag(t["name"])
+            if not tag or tag in seen:
+                continue
+            seen.add(tag)
             items.append({"name": t["name"], "tag": tag, "desc": t["desc"]})
         payload[cat] = items
     dest = os.path.join(ROOT, "web", "data", "tags.js")

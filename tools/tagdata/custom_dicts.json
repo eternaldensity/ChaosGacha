@@ -1,0 +1,20 @@
+{
+  "ability": [
+    {
+      "name": "Railway",
+      "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
+    }
+  ],
+  "item": [
+    {
+      "name": "Railway",
+      "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
+    }
+  ],
+  "skill": [
+    {
+      "name": "Railway",
+      "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
+    }
+  ]
+}

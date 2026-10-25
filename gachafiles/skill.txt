@@ -653,13 +653,13 @@
 327. Mystic Arts, 4.0, MCU
 #(Tag:technique)Kamar-Taj training in spellcraft, relics, and dimensional etiquette, from mandalas to the Mirror Dimension. You can craft and enchant your own sling ring (the ring itself isn't included; it takes materials and the ritual), which opens portals to places you can visualize. Reaching other realities takes more than a standard ring.
 328. Train Hopping, 2.2, Divergent
-#(Tag:movement)Board and ride moving trains Dauntless-style: sprint, grab, swing up, and do not look down.
+#(Tag:railway)(Tag:movement)Board and ride moving trains Dauntless-style: sprint, grab, swing up, and do not look down.
 329. Model Railroad Building, 1.6, Generic
-#Design and build detailed model railroads, from benchwork and wiring to weathered tiny trees.
+#(Tag:railway)Design and build detailed model railroads, from benchwork and wiring to weathered tiny trees.
 330. Train Driving, 2.4, Generic
-#(Tag:motor)(Tag:movement)Operate locomotives properly: signals, timetables, braking curves, and all.
+#(Tag:railway)(Tag:motor)(Tag:movement)Operate locomotives properly: signals, timetables, braking curves, and all.
 331. Railway Engineering, 3.0, Generic
-#(Tag:craft)(Tag:tech)Survey grades, lay out yards, and engineer full-size railways that stay up and on time.
+#(Tag:railway)(Tag:craft)(Tag:tech)Survey grades, lay out yards, and engineer full-size railways that stay up and on time.
 332. Theoretical Physics, 2.6, Half-Life
 #(Tag:science)Relativistic math, quantum field doodles, and resonance-cascade risk assessment from first principles.
 333. Xenobiology, 2.8, Half-Life

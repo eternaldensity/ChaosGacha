@@ -77,6 +77,10 @@ function boot(page, seed) {
     ok("entries: no page errors", errors.length === 0, errors[0]);
     ok("entries: data loaded", (w.CHAOS_DATA && w.CHAOS_DATA.entries || []).length > 4000);
     ok("entries: tag docs loaded", w.CHAOS_TAGS && Object.keys(w.CHAOS_TAGS).length === 5);
+    ok("entries: railway tag doc loaded",
+      (w.CHAOS_TAGS.item || []).some(t => t.tag === "railway" && t.desc));
+    ok("entries: railway tag has the curated 32 entries",
+      w.CHAOS_DATA.tagCounts.railway === 32, String(w.CHAOS_DATA.tagCounts.railway));
 
     const chips = [...d.querySelectorAll("#eqTags button")];
     ok("entries: chips rendered", chips.length > 20, String(chips.length));
@@ -112,6 +116,20 @@ function boot(page, seed) {
     ok("entries: tooltip text is a real description", titleOk,
       pills[0] && pills[0].title);
 
+    // The fork-only railway tag has a custom dictionary entry and 32 entries.
+    const railQ = d.getElementById("eqTagQ");
+    railQ.value = "railway";
+    railQ.dispatchEvent(new w.Event("input", { bubbles: true }));
+    const railChip = [...d.querySelectorAll("#eqTags button")]
+      .find(b => b.textContent.startsWith("railway "));
+    ok("entries: railway chip found by search", !!railChip,
+      [...d.querySelectorAll("#eqTags button")].map(b => b.textContent).join(","));
+    if (railChip) railChip.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const railPill = [...d.querySelectorAll("#eqBody td .pill[title]")]
+      .find(p => /railway/i.test(p.title));
+    ok("entries: railway pill carries its doc", !!railPill,
+      railPill && railPill.title);
+
     // tag search narrows the chip list
     const chipQ = d.getElementById("eqTagQ");
     chipQ.value = "anti-";
@@ -132,6 +150,7 @@ function boot(page, seed) {
     ok("gacha: tag filter lists tags", opts.length > 50, String(opts.length));
     ok("gacha: filter includes official names",
       opts.includes("fire") && opts.includes("fire+") && opts.includes("anti-dragon"));
+    ok("gacha: filter includes railway", opts.includes("railway"));
 
     // roll with a tag selected -> result must carry that tag (spin off so the
     // result renders immediately instead of after the wheel animation)
