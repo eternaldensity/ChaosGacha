@@ -22,12 +22,15 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   A tree's current view can be shared as a read-only link (`tree.html?share=…`):
   the snapshot uploads to an anonymous paste host and carries only what the
   owner can currently see — never the seed, generation settings, or hidden
-  nodes. Loaded under `js/share.js` (snapshot/validation) and `js/paste.js`
-  (paste-host adapters).
+  nodes. Uploads expire after the chosen lifetime (1/7/30 days); the viewer
+  reports expired or deleted pastes specifically. Loaded under `js/share.js`
+  (snapshot/validation/load diagnostics) and `js/paste.js` (paste-host
+  adapters).
 - `gacha.html` — Chaos Gacha roller with the same presets/odds as the
   desktop app, a ticket wallet (tickets may carry a theme tag or an
   Advantage count that rolls several wheels at once and lets you pick
-  which to keep), roll history, spin-wheel animation with adjustable
+  which to keep, avoiding duplicate prizes while the pool allows), roll
+  history, spin-wheel animation with adjustable
   slowdown, filters, ×10 multi-pull, result sharing, history stats, and
   history import/export.
 - `curse.html` — Curse Roulette port: d20 spin with the original severity
