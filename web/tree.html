@@ -381,7 +381,7 @@
 <div id="shareModal">
   <div class="card modal">
     <h2>Share this tree view</h2>
-    <p class="muted small">Uploads a snapshot of only what you can currently see: your unlocked and visible nodes, wallet, inventory, and unlock methods. It <b>never</b> includes the seed, generation settings, or hidden nodes. The upload is public to anyone with the link; <b>delete it when you're done</b>.</p>
+    <p class="muted small">Uploads a snapshot of only what you can currently see: your unlocked and visible nodes, wallet, inventory, and unlock methods. It <b>never</b> includes the seed, generation settings, or hidden nodes. The upload is public to anyone with the link and the host deletes it automatically when the chosen time runs out; some hosts also allow deleting it early.</p>
     <div class="row">
       <div><label for="shareExpiry">Keep the upload online for</label>
         <select id="shareExpiry">
@@ -398,15 +398,15 @@
       <input type="text" id="shareLink" readonly onclick="this.select()">
       <div class="row" style="margin-top:8px">
         <button class="primary" id="shareCopy">📋 Copy link</button>
-        <button id="shareDelete">🗑 Delete upload</button>
+        <button id="shareDelete" style="display:none">🗑 Delete upload</button>
       </div>
     </div>
     <details id="shareFallback" style="margin-top:10px">
       <summary>Upload failed? Save the data manually</summary>
-      <p class="muted small">Copy the JSON below into any paste service (a secret gist or pastebin works), then paste the <b>raw</b> URL back here.</p>
+      <p class="muted small">Copy the JSON below into any paste service that offers a raw-text URL (dpaste.com works well), then paste that URL back here.</p>
       <textarea id="shareJson" readonly onclick="this.select()"></textarea>
       <div class="row" style="margin-top:6px">
-        <input type="text" id="shareManualUrl" placeholder="https://…/raw/…">
+        <input type="text" id="shareManualUrl" placeholder="https://…/raw-text-url">
         <button id="shareUseUrl">Use this URL</button>
       </div>
     </details>

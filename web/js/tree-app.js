@@ -2465,11 +2465,34 @@
 
   async function loadSharedView(url) {
     if (!window.ChaosShare) throw new Error("share support failed to load");
-    const res = await fetch(url, { redirect: "follow" });
-    if (!res.ok) throw new Error(`couldn't load the shared view (HTTP ${res.status})`);
+    let res;
+    try {
+      res = await fetch(url, { redirect: "follow" });
+    } catch (e) {
+      if (e && e.name === "AbortError") throw e;
+      throw new Error(window.ChaosShare.loadError(url, null));
+    }
+    if (!res.ok) throw new Error(window.ChaosShare.loadError(url, res));
+    const ct = res.headers && typeof res.headers.get === "function"
+      ? (res.headers.get("content-type") || "") : "";
+    let text;
+    try {
+      // Prefer text() so an HTML paste page can be told apart from corrupt
+      // JSON; fall back to json() for simple fetch stubs/tests.
+      text = typeof res.text === "function"
+        ? await res.text() : JSON.stringify(await res.json());
+    } catch (e) {
+      throw new Error("couldn't read the shared view from " +
+        window.ChaosShare.hostOf(url) + ".");
+    }
+    if (/text\/html/i.test(ct) || /^\s*</.test(text)) {
+      throw new Error(window.ChaosShare.pageError(url));
+    }
     let payload;
-    try { payload = await res.json(); }
-    catch (e) { throw new Error("the shared view isn't valid JSON"); }
+    try { payload = JSON.parse(text); }
+    catch (e) {
+      throw new Error("the shared view isn't valid JSON (the paste may have been edited or replaced).");
+    }
     window.ChaosShare.validate(payload);
     const tree = { id: uid(), name: payload.name || "Shared tree", shared: true,
       static: true, dataVersion: payload.dataVersion || null, createdAt: Date.now() };
@@ -2504,6 +2527,12 @@
     if ($("shareModal").scrollIntoView) $("shareModal").scrollIntoView({ block: "nearest" });
   }
   function closeShare() { $("shareModal").classList.remove("open"); }
+  function fmtExpiry(iso) {
+    if (!iso) return "";
+    const d = new Date(iso);
+    if (isNaN(d.getTime())) return String(iso);
+    try { return d.toLocaleString(); } catch (e) { return d.toISOString(); }
+  }
   async function runShare() {
     const c = await current();
     if (!c) { $("shareStatus").textContent = "No active tree to share."; return; }
@@ -2530,8 +2559,13 @@
       shareUpload = out;
       $("shareLink").value = shareLinkFor(out.rawUrl);
       $("shareResult").style.display = "block";
+      const deletable = out.canDelete != null ? !!out.canDelete : !!out.deleteToken;
+      const del = $("shareDelete");
+      if (del) del.style.display = deletable ? "" : "none";
       $("shareStatus").textContent = "Uploaded via " + out.provider +
-        (out.expiresAt ? " · expires " + out.expiresAt : "") +
+        (out.expiresAt ? " · expires " + fmtExpiry(out.expiresAt) : "") +
+        (deletable ? " · you can delete it below"
+                   : " · this host cannot delete uploads early") +
         (whole ? " · notice: this view includes every node (a full reveal is active)." : "");
     } catch (e) {
       $("shareFallback").open = true;
@@ -2552,16 +2586,21 @@
   if ($("shareUseUrl")) $("shareUseUrl").addEventListener("click", () => {
     const u = $("shareManualUrl").value.trim();
     if (!/^https?:\/\//.test(u)) return toast("Enter the raw https:// URL of your paste.", true);
+    shareUpload = null;
+    const del = $("shareDelete"); if (del) del.style.display = "none";
     $("shareLink").value = shareLinkFor(u);
     $("shareResult").style.display = "block";
     $("shareStatus").textContent = "Link ready: copying it shares this view.";
   });
   if ($("shareDelete")) $("shareDelete").addEventListener("click", async () => {
     if (!shareUpload) return;
+    const deletable = shareUpload.canDelete != null ? !!shareUpload.canDelete : !!shareUpload.deleteToken;
+    if (!deletable) return;
     try {
       await window.ChaosPaste.remove(shareUpload);
       shareUpload = null;
       $("shareResult").style.display = "none";
+      $("shareDelete").style.display = "none";
       $("shareStatus").textContent = "Upload deleted.";
       toast("Upload deleted.");
     } catch (e) { err(e); }

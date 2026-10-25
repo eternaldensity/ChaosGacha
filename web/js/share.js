@@ -167,5 +167,78 @@ window.ChaosShare = (function () {
     return p;
   }
 
-  return { collect, validate, MAX_NODES };
+  // ---- loading diagnostics ------------------------------------------------
+  // A share link can fail in ways the viewer should be able to tell apart:
+  // the paste expired or was deleted, the host is unreachable/CORS-blocked,
+  // the URL points at a paste page instead of its raw text, or the JSON is
+  // corrupt. These helpers keep that wording in one place.
+
+  function hostOf(url) {
+    try {
+      const u = new URL(String(url || ""), typeof location !== "undefined" ? location.href : undefined);
+      return u.hostname.replace(/^www\./, "") || "the paste host";
+    } catch (e) {
+      return "the paste host";
+    }
+  }
+
+  // Best-effort conversion of a paste page URL to its raw-text URL. Returns
+  // null when the host is unknown or the URL is already raw.
+  function rawUrlFor(url) {
+    let u;
+    try {
+      u = new URL(String(url || ""), typeof location !== "undefined" ? location.href : undefined);
+    } catch (e) { return null; }
+    const host = u.hostname.replace(/^www\./, "").toLowerCase();
+    if (host === "dpaste.com" || host === "dpaste.org") {
+      if (/\.(txt|raw)$/i.test(u.pathname)) return null;
+      u.pathname = u.pathname.replace(/\/+$/, "") + ".txt";
+      return u.href;
+    }
+    if (host === "pastebin.ai") {
+      const m = u.pathname.match(/^\/p\/([^/]+)\/?$/);
+      return m ? u.origin + "/raw/" + m[1] : null;
+    }
+    if (host === "pastebin.com") {
+      const m = u.pathname.match(/^\/([^/]+)\/?$/);
+      return m && m[1] !== "raw" ? u.origin + "/raw/" + m[1] : null;
+    }
+    return null;
+  }
+
+  // Human-readable cause for a failed fetch. `res` is the fetch Response
+  // when the host answered, or null when the request itself failed.
+  function loadError(url, res) {
+    const host = hostOf(url);
+    if (!res) {
+      return "couldn't reach " + host + ": it may be offline, blocked by the " +
+        "network, or not allow cross-origin reads (CORS).";
+    }
+    const status = res.status | 0;
+    if (status === 404 || status === 410) {
+      return "this share link has expired or was deleted: " + host +
+        " no longer has the paste (HTTP " + status + ").";
+    }
+    if (status === 401 || status === 403) {
+      return host + " refused access to this share (HTTP " + status + "): " +
+        "the paste may be private, password-protected, or the link may be wrong.";
+    }
+    if (status === 429) {
+      return host + " is rate-limiting requests (HTTP 429). Try again in a moment.";
+    }
+    if (status >= 500) {
+      return host + " had a server error (HTTP " + status + "). Try again later.";
+    }
+    return "couldn't load the shared view (" + host + " returned HTTP " + status + ").";
+  }
+
+  // Cause for a 200 that is a web page rather than the snapshot itself.
+  function pageError(url) {
+    const raw = rawUrlFor(url);
+    return "this share link points to a paste page, not its raw text" +
+      (raw ? ". Use the raw URL instead: " + raw
+           : ". Use the paste host's raw-text URL.");
+  }
+
+  return { collect, validate, hostOf, rawUrlFor, loadError, pageError, MAX_NODES };
 })();
