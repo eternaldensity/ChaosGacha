@@ -163,6 +163,16 @@
       });
       th.appendChild(b);
       head.appendChild(th);
+      if (col.key === "name") {
+        // Dedicated copy column: the button stays in one vertical line
+        // instead of drifting with each entry name's length.
+        const cp = document.createElement("th");
+        cp.textContent = "📋";
+        cp.title = "Copy entry";
+        cp.setAttribute("aria-label", "Copy entry");
+        cp.style.cssText = "text-align:center;padding:4px;border-bottom:1px solid var(--line);white-space:nowrap;width:1%";
+        head.appendChild(cp);
+      }
     }
   }
 
@@ -201,6 +211,7 @@
       tr.innerHTML =
         `<td style="padding:8px">${e.n}</td>` +
         `<td style="padding:8px"><span class="dot" style="background:${esc(cls.color)}"></span>${esc(e.name)}</td>` +
+        `<td style="padding:4px;text-align:center;white-space:nowrap"></td>` +
         `<td style="padding:8px">${esc(e.f)}</td>` +
         `<td style="padding:8px">${e.r}</td>` +
         `<td style="padding:8px">${esc(e.s || "—")}</td>` +
@@ -208,12 +219,13 @@
       const cp = document.createElement("button");
       cp.textContent = "📋";
       cp.title = `Copy ${e.name}`;
-      cp.style.cssText = "margin-left:6px";
+      cp.setAttribute("aria-label", `Copy ${e.name}`);
+      cp.style.cssText = "width:44px;min-height:44px;padding:0;font-size:1.05rem;vertical-align:middle";
       cp.addEventListener("click", ev => {
         ev.stopPropagation();
         copyText(entryText(e), e.name);
       });
-      tr.children[1].appendChild(cp);
+      tr.children[2].appendChild(cp);
       tr.addEventListener("click", () => {
         const next = tr.nextSibling;
         if (next && next.classList && next.classList.contains("desc")) {
@@ -223,7 +235,7 @@
         const dr = document.createElement("tr");
         dr.className = "desc";
         const td = document.createElement("td");
-        td.setAttribute("colspan", "6");
+        td.setAttribute("colspan", "7");
         td.style.cssText = "padding:8px 8px 12px 26px";
         td.innerHTML = (tags.length ? tags.map(t => tagPill(t, e.f)).join(" ") + "<br><br>" : "") +
           linkify(e.d || "(no description)");
