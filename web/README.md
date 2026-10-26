@@ -18,7 +18,10 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   identical to the Python generator's output for the same seed).
   The Trees tab offers copy (with progress) and fresh-clone (same
   parameters, new progress). Each tree records the data version it was
-  generated with; a mismatch warns that regeneration may differ.
+  generated with; a mismatch warns that regeneration may differ. Theme-tag
+  additions are excluded from that version, so tagging entries does not
+  invalidate saved trees; frozen snapshots can also be kept as-is without
+  resampling.
   A tree's current view can be shared as a read-only link (`tree.html?share=…`):
   the snapshot uploads to an anonymous paste host and carries only what the
   owner can currently see — never the seed, generation settings, or hidden

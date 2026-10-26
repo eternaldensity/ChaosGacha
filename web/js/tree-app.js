@@ -331,7 +331,13 @@
   // no version at all is left alone.
   function treeMismatch(t) {
     if (!DATA.dataVersion) return false;
-    if (t.static) return !!t.dataVersion && t.dataVersion !== DATA.dataVersion;
+    if (t.static) {
+      // A static snapshot is deliberately frozen. Once the player chooses to
+      // keep it, stop flagging its version; vanished entries still warn via
+      // staticMissing(), so real breakage is never hidden.
+      if (t.snapshotKept) return false;
+      return !!t.dataVersion && t.dataVersion !== DATA.dataVersion;
+    }
     const content = t.contentDataVersion || null;
     if (content) return content !== DATA.dataVersion;
     if (t.dataVersion) return t.dataVersion !== DATA.dataVersion;
@@ -344,14 +350,39 @@
   // Entries a static snapshot references that the current data no longer has:
   // the most direct evidence that a snapshot predates the loaded data, and it
   // works even when the file carries no version at all.
+  //
+  // Nodes and data entries use different short/long field names (`file`/
+  // `number` in a snapshot, `f`/`n` in entries.js), so normalize both. Match
+  // by category + entry number first: renames and description edits keep the
+  // same slot and must not count as vanished. Older/Python snapshots without
+  // a number fall back to category + name.
+  function staticEntryKeys() {
+    if (DATA._entryKeys) return DATA._entryKeys;
+    const numbers = new Set(), names = new Set();
+    for (const e of (DATA.entries || [])) {
+      const file = e.file != null ? e.file : e.f;
+      const num = e.number != null ? e.number : e.n;
+      if (file == null) continue;
+      if (num != null) numbers.add(file + "#" + num);
+      if (e.name != null) names.add(file + "\u0000" + e.name);
+    }
+    DATA._entryKeys = { numbers, names };
+    return DATA._entryKeys;
+  }
   function staticMissing(t) {
     if (!t.static) return 0;
     const p = loadStatic(t.id);
     if (!p || !p.nodes || !p.nodes.length) return 0;
-    const key = nd => nd.file + "\u0000" + nd.name;
-    if (!DATA._entryKeys) DATA._entryKeys = new Set((DATA.entries || []).map(key));
+    const keys = staticEntryKeys();
     let n = 0;
-    for (const nd of p.nodes) if (nd.id !== 0 && !DATA._entryKeys.has(key(nd))) n++;
+    for (const nd of p.nodes) {
+      if (nd.id === 0 || nd.file === "__root__") continue;
+      const file = nd.file != null ? nd.file : nd.f;
+      const num = nd.number != null ? nd.number : nd.n;
+      const byNumber = file != null && num != null && keys.numbers.has(file + "#" + num);
+      const byName = file != null && nd.name != null && keys.names.has(file + "\u0000" + nd.name);
+      if (!byNumber && !byName) n++;
+    }
     return n;
   }
   function renderTrees() {
@@ -376,16 +407,21 @@
       : "No trees yet: generate one below.";
     const warn = $("verWarn");
     const missCount = at ? staticMissing(at) : 0;
+    const keepBtn = $("btnKeepSnapshot");
+    const offerKeep = !!(at && at.static && treeMismatch(at) && !missCount);
+    if (keepBtn) keepBtn.style.display = offerKeep ? "" : "none";
     if (at && (treeMismatch(at) || missCount)) {
       warn.style.display = "block";
       $("verWarnText").textContent =
         `"${at.name}" was built from data v${at.contentDataVersion || at.dataVersion || "an older version"}, current data is ` +
-        `v${DATA.dataVersion}, so it keeps the entries it was built from (regenerating would silently reassign entries and links ` +
-        `under your progress). ` +
+        `v${DATA.dataVersion}. ` +
+        (at.static
+          ? `It is a frozen snapshot, so it keeps the entries it was built from; new entries and tags only enter it through Upgrade. `
+          : `It keeps the entries it was built from (regenerating would silently reassign entries and links under your progress). `) +
         `Use Upgrade to keep your unlocked and visible nodes and resample the unseen ones from the current data` +
-        (at.static ? `; this tree is an imported snapshot, so new entries and tags only enter it that way.`
-                   : `, or generate a fresh tree below.`) +
+        (at.static ? `.` : `, or generate a fresh tree below.`) +
         (missCount ? ` ${missCount} of its entries no longer exist in the current data.` : "") +
+        (offerKeep ? ` Keep this snapshot to stop this notice without resampling.` : "") +
         ` Export a backup first if its progress matters.`;
     } else warn.style.display = "none";
     ul.innerHTML = "";
@@ -401,6 +437,7 @@
         `<br>` +
         `<span class="muted small">${t.static ? "imported file" : "seed " + esc(String(t.seed)) + (t.limit ? " · " + t.limit + " entries" : " · full")}` +
         (t.dataVersion ? " · data v" + esc(t.dataVersion) : "") +
+        (t.static && t.snapshotKept ? " · snapshot kept" : "") +
         `${st ? " · " + st.unlocked.length + " unlocked · " + E.fmt(st.points) + " pts · " + st.cores + " cores" : ""}</span></div>`;
       const actions = document.createElement("div");
       actions.className = "row";
@@ -564,7 +601,8 @@
       limit: t.limit || null, filters: JSON.parse(JSON.stringify(t.filters || {})),
       knownSources: t.knownSources ? t.knownSources.slice() : undefined,
       static: !!t.static, createdAt: Date.now(),
-      dataVersion: fresh && !t.static ? (DATA.dataVersion || null) : (t.dataVersion || null)
+      dataVersion: fresh && !t.static ? (DATA.dataVersion || null) : (t.dataVersion || null),
+      snapshotKept: t.snapshotKept ? true : undefined
     };
     if (t.static) {
       const p = loadStatic(t.id);
@@ -958,6 +996,7 @@
       app: "chaos-tree", v: 1, exportedAt: new Date().toISOString(),
       tree: { name: t.name, seed: t.seed, params: t.params || {}, limit: t.limit || null,
               filters: t.filters || {}, dataVersion: t.dataVersion || null,
+              snapshotKept: !!t.snapshotKept,
               static: !!t.static, topology: t.static ? loadStatic(t.id) : null },
       state: DB.states[t.id] || E.newState()
     };
@@ -980,6 +1019,7 @@
           seed: td.seed != null ? td.seed : Math.floor(Math.random() * 1e9),
           params: td.params || {}, limit: td.limit || null,
           filters: td.filters || {}, dataVersion: td.dataVersion || null,
+          snapshotKept: !!td.snapshotKept,
           static: !!td.static, createdAt: Date.now() };
         if (td.static && td.topology) saveStatic(tree.id, td.topology);
         DB.trees.push(tree);
@@ -2642,6 +2682,13 @@
     if (!row) { toast("Couldn't find that tree's Upgrade button.", true); return; }
     if (row.scrollIntoView) row.scrollIntoView({ block: "nearest" });
     row.click();
+  });
+  if ($("btnKeepSnapshot")) $("btnKeepSnapshot").addEventListener("click", () => {
+    const at = activeTree();
+    if (!at || !at.static) return;
+    at.snapshotKept = true;
+    saveDB(); renderTrees();
+    toast("Snapshot kept as-is. It will not warn about data versions; vanished entries still will.");
   });
   $("findQ").addEventListener("input", () => { if (currentTab === "node") renderFinder(); });
   $("fileChecks").innerHTML = "";

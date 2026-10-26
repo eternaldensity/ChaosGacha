@@ -116,6 +116,27 @@ function boot(page, seed) {
     ok("entries: tooltip text is a real description", titleOk,
       pills[0] && pills[0].title);
 
+    // Copy buttons live in their own table column so they line up vertically
+    // instead of sitting after each (different-length) entry name.
+    const headCells = [...d.querySelectorAll("#eqHead th")];
+    ok("entries: copy column has a header",
+      headCells.length === 7 && /📋/.test(headCells[2].textContent),
+      headCells.map(th => th.textContent).join("|"));
+    const dataRows = [...d.querySelectorAll("#eqBody tr:not(.desc)")].slice(0, 20);
+    ok("entries: every row has the copy column",
+      dataRows.length > 0 && dataRows.every(tr => tr.children.length === 7));
+    ok("entries: copy buttons share one column",
+      dataRows.every(tr => tr.children[2].querySelector("button") &&
+        /📋/.test(tr.children[2].textContent)));
+    ok("entries: name cell no longer holds the copy button",
+      dataRows.every(tr => !tr.children[1].querySelector("button")));
+    dataRows[0].dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const desc = dataRows[0].nextElementSibling;
+    ok("entries: expanded description spans the copy column",
+      desc && desc.classList.contains("desc") &&
+      desc.querySelector("td").getAttribute("colspan") === "7",
+      desc && desc.querySelector("td") && desc.querySelector("td").getAttribute("colspan"));
+
     // The fork-only railway tag has a custom dictionary entry and 32 entries.
     const railQ = d.getElementById("eqTagQ");
     railQ.value = "railway";
@@ -305,8 +326,8 @@ function boot(page, seed) {
     ok("tree: imported snapshot on old data warns",
       d.getElementById("verWarn").style.display !== "none",
       d.getElementById("verWarnText").textContent.slice(0, 140));
-    ok("tree: warning says it is an imported snapshot",
-      /imported snapshot/.test(d.getElementById("verWarnText").textContent));
+    ok("tree: warning says it is a frozen snapshot",
+      /frozen snapshot/.test(d.getElementById("verWarnText").textContent));
     ok("tree: row pill names the exported version",
       /data vee5d89ed5c/.test(d.getElementById("treeList").textContent),
       d.getElementById("treeList").textContent.slice(0, 140));
@@ -335,6 +356,69 @@ function boot(page, seed) {
       /1 stale entry/.test(b2d.getElementById("treeList").textContent),
       b2d.getElementById("treeList").textContent.slice(0, 120));
     b2.dom.window.close();
+    dom.window.close();
+  }
+
+  // ---------- real current entries in a static snapshot are not "vanished" ---
+  {
+    const realNodes = [
+      { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
+        pos: [0, 0, 0], r: 0 },
+      { id: 1, file: "skill", number: 1, name: "Water Stream Crushing Rock",
+        rarity: 5.9, source: "One Punch Man", tag: "both", description: "x",
+        meta: [], tags: [], pos: [1, 0, 0], r: 1 },
+      { id: 2, file: "ability", number: 1456, name: "Rail Laying",
+        rarity: 3.6, source: "Generic", tag: "both", description: "x",
+        meta: [], tags: ["railway"], pos: [0, 1, 0], r: 1 },
+    ];
+    const realTopo = JSON.stringify({
+      params: {}, nodes: realNodes,
+      edges: [{ a: 0, b: 1, d: 1 }, { a: 0, b: 2, d: 1 }],
+    });
+    const tree = JSON.stringify({
+      trees: [{ id: "t5", name: "Real static", seed: 5, params: {}, limit: null,
+                filters: {}, dataVersion: "ancient", static: true, createdAt: 1 }],
+      states: { t5: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
+      activeId: "t5", guideSeen: true, settings: {},
+    });
+    const { dom } = await boot("tree.html",
+      { "chaosTree.v1": tree, "chaosTree.static.v1.t5": realTopo });
+    const w = dom.window, d = w.document;
+    const txt = d.getElementById("verWarnText").textContent;
+    ok("tree: real entries are not counted as vanished",
+      !/no longer exist/.test(txt), txt);
+    ok("tree: real-entry snapshot only reports its old version",
+      /frozen snapshot/.test(txt) && /data vancient/.test(txt), txt);
+    ok("tree: row pill names the version, not a bogus stale count",
+      /data vancient/.test(d.getElementById("treeList").textContent) &&
+      !/stale entr/.test(d.getElementById("treeList").textContent),
+      d.getElementById("treeList").textContent.slice(0, 140));
+
+    const keep = d.getElementById("btnKeepSnapshot");
+    ok("tree: keep-snapshot button is offered", keep && keep.style.display !== "none");
+    keep.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    ok("tree: keep-snapshot dismisses the version warning",
+      d.getElementById("verWarn").style.display === "none");
+    const saved = JSON.parse(w.localStorage.getItem("chaosTree.v1") || "{}");
+    ok("tree: kept snapshot is persisted",
+      !!(saved.trees || []).find(t => t.id === "t5" && t.snapshotKept));
+    ok("tree: kept snapshot is labelled",
+      /snapshot kept/.test(d.getElementById("treeList").textContent),
+      d.getElementById("treeList").textContent.slice(0, 160));
+
+    // A version-less snapshot made of real entries needs no warning at all.
+    const anonTree = JSON.stringify({
+      trees: [{ id: "t6", name: "External current file", seed: 5, params: {}, limit: null,
+                filters: {}, dataVersion: null, static: true, createdAt: 1 }],
+      states: { t6: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
+      activeId: "t6", guideSeen: true, settings: {},
+    });
+    const b3 = await boot("tree.html",
+      { "chaosTree.v1": anonTree, "chaosTree.static.v1.t6": realTopo });
+    ok("tree: version-less snapshot of current entries is quiet",
+      b3.dom.window.document.getElementById("verWarn").style.display === "none",
+      b3.dom.window.document.getElementById("verWarnText").textContent);
+    b3.dom.window.close();
     dom.window.close();
   }
 

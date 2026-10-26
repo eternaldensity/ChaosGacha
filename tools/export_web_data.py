@@ -191,17 +191,18 @@ def export_entries():
                               True, True)
     flags = flag_map()
     # Data version: hash over topology/behaviour-relevant fields (file,
-    # number, rarity, source, tag, meta tokens, thematic tags, nsfw/tech/noncon
-    # flags). Display text (names, descriptions) is excluded so prose edits
-    # don't invalidate trees. Trees record the version they were generated with;
-    # a mismatch warns that regeneration may produce a different tree.
+    # number, rarity, source, tag, meta tokens, nsfw/tech/noncon flags).
+    # Display text (names, descriptions) and thematic tags are excluded:
+    # prose edits and adding a tag do not change an existing tree's nodes or
+    # links, so they must not invalidate saved trees. Trees record the version
+    # they were generated with; a mismatch warns that regenerating could
+    # produce a different tree.
     h = hashlib.sha256()
     for e in entries:
         toks = flags.get((e["file"], e["number"]), set())
         h.update(("\x1f".join([e["file"], str(e["number"]), repr(e["rarity"]),
                                e["source"] or "", e["tag"],
                                ",".join(e.get("meta", [])),
-                               ",".join(e.get("tags", [])),
                                "nsfw" if "Nsfw" in toks else "",
                                "tech" if "Tech" in toks else "",
                                "noncon" if "Noncon" in toks else ""]) + "\n").encode("utf-8"))
