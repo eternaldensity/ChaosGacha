@@ -422,6 +422,67 @@ function boot(page, seed) {
     dom.window.close();
   }
 
+  // ---------- jump planner lists only actually pickable candidates ----------
+  {
+    const jumpNodes = [
+      { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
+        pos: [0, 0, 0], r: 0 },
+      { id: 1, file: "ability", number: 1, name: "Super Jump",
+        rarity: 0, source: "Generic", tag: "both", description: "x",
+        meta: [], tags: [], pos: [5, 0, 0], r: 5 },
+      { id: 2, file: "item", number: 2, name: "Gae Bolg",
+        rarity: 5.3, source: "Fate", tag: "both", description: "x",
+        meta: [], tags: [], pos: [6, 0, 0], r: 6 },
+      { id: 3, file: "item", number: 3,
+        name: "Excalibur the Sword of Promised Victory",
+        rarity: 7, source: "Fate", tag: "both", description: "x",
+        meta: [], tags: [], pos: [7, 0, 0], r: 7 },
+      { id: 4, file: "item", number: 4, name: "Laevatein",
+        rarity: 7.8, source: "Fate", tag: "both", description: "x",
+        meta: [], tags: [], pos: [8, 0, 0], r: 8 },
+    ];
+    const jumpTopo = JSON.stringify({
+      params: {}, nodes: jumpNodes,
+      edges: jumpNodes.slice(1).map(nd => ({ a: 0, b: nd.id, d: nd.r })),
+    });
+    const bootJump = async (inventory) => {
+      const db = JSON.stringify({
+        trees: [{ id: "tj", name: "Jump planner", seed: 5, params: {}, limit: null,
+                  filters: {}, dataVersion: null, static: true, createdAt: 1 }],
+        states: { tj: { points: 1e9, cores: 50, inventory, unlocked: [0, 1] } },
+        activeId: "tj", guideSeen: true, settings: {},
+      });
+      const { dom } = await boot("tree.html",
+        { "chaosTree.v1": db, "chaosTree.static.v1.tj": jumpTopo });
+      const w = dom.window, d = w.document;
+      d.querySelector('#tabs button[data-tab="tickets"]').dispatchEvent(
+        new w.MouseEvent("click", { bubbles: true }));
+      d.getElementById("planToggle").dispatchEvent(
+        new w.MouseEvent("click", { bubbles: true }));
+      d.getElementById("planScope").value = "jump";
+      d.getElementById("planScope").dispatchEvent(new w.Event("change", { bubbles: true }));
+      await new Promise(r => setTimeout(r, 250));
+      return { dom, rows: [...d.querySelectorAll("#planList > li")] };
+    };
+
+    const one = await bootJump([{ kind: "jump", tier: null, category: "item" }]);
+    ok("tree planner: a jump ticket lists only the closest item",
+      one.rows.length === 1 && /Gae Bolg/.test(one.rows[0].textContent),
+      one.rows.map(li => li.textContent).join(" | "));
+    ok("tree planner: that row is actionable",
+      one.rows.length === 1 && /Jump →/.test(one.rows[0].textContent));
+    one.dom.window.close();
+
+    const three = await bootJump([{ kind: "choice", tier: null, n: 3, category: "item" }]);
+    ok("tree planner: a choice-3 ticket lists the three closest items",
+      three.rows.length === 3 &&
+      /Gae Bolg/.test(three.rows.find(li => /Gae Bolg/.test(li.textContent)).textContent) &&
+      /Excalibur/.test(three.rows.find(li => /Excalibur/.test(li.textContent)).textContent) &&
+      /Laevatein/.test(three.rows.find(li => /Laevatein/.test(li.textContent)).textContent),
+      three.rows.map(li => li.textContent).join(" | "));
+    three.dom.window.close();
+  }
+
   console.log(failures ? `${failures} FAILURES` : "ALL PASS");
   } finally {
     server.kill();

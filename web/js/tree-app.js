@@ -2232,13 +2232,15 @@
       jfSel.value = String(planJumpFrom);
       const from = planJumpFrom;
       const lim = t.kind === "choice" ? t.n : 1;
-      E.jumpCandidates(rt, t.category, from, st.unlocked).slice(0, 200)
-        .forEach(([dd, nd], idx) => {
+      // Only the closest candidate(s) are actually pickable; every further
+      // node in the category is out of reach for this ticket.
+      E.jumpCandidates(rt, t.category, from, st.unlocked).slice(0, lim)
+        .forEach(([dd, nd]) => {
           if (!visNode(nd)) return;
           rows.push({
             id: nd.id, hops: dist[nd.id] == null ? null : dist[nd.id],
             via: `${ticketLabel(t)} from #${from} · ${dd.toFixed(1)} away`,
-            act: idx < lim ? "jump" : null,
+            act: "jump",
             jump: { ticket: t, from },
           });
         });
