@@ -15,6 +15,7 @@ window.ChaosShare = (function () {
   const ROOT_ID = 0;
   const MAX_NODES = 30000;
   const MAX_HIDDEN_JUMP = 500;
+  const MAX_JUMP_REACH = 2000;
 
   const isNum = v => typeof v === "number" && isFinite(v);
 
@@ -95,19 +96,31 @@ window.ChaosShare = (function () {
       if (d >= 2 && hops.length) hiddenReach.hop.push({ id, via: prev[id] != null ? prev[id] : null });
     }
     const jumps = st.inventory.filter(t => t.kind === "jump" || t.kind === "choice");
-    for (let ti = 0; ti < jumps.length && hiddenReach.jump.length < MAX_HIDDEN_JUMP; ti++) {
+    // The viewer cannot recompute jump targets from a partial topology: a
+    // hidden node may be the real closest pick, or the only one. Retain the
+    // owner's actual picks (visible and hidden) so the shared planner lists
+    // the same targets. Hidden picks still carry no node data.
+    const jumpReach = [];
+    for (let ti = 0; ti < jumps.length; ti++) {
       const t = jumps[ti];
       const lim = t.kind === "choice" ? t.n : 1;
+      const best = new Map();
       for (const from of st.unlocked) {
+        if (from === ROOT_ID) continue;  // the planner never launches from root
         let cands;
         try { cands = E.jumpCandidates(rt, t.category, from, st.unlocked); }
         catch (e) { continue; }
-        cands.forEach(([, nd], rank) => {
-          if (rank >= lim) return;                       // only the actual pick(s)
+        cands.slice(0, lim).forEach(([d, nd], rank) => {
+          const prev = best.get(nd.id);
+          if (!prev || d < prev.d) best.set(nd.id, { id: nd.id, from, ticket: ti, rank });
           if (unl.has(nd.id) || shareIds.has(nd.id)) return;
           if (hiddenReach.jump.length >= MAX_HIDDEN_JUMP) return;
           hiddenReach.jump.push({ id: nd.id, from, ticket: ti, rank });
         });
+      }
+      for (const hit of best.values()) {
+        if (jumpReach.length >= MAX_JUMP_REACH) break;
+        jumpReach.push(hit);
       }
     }
 
@@ -127,7 +140,7 @@ window.ChaosShare = (function () {
         meta_used: JSON.parse(JSON.stringify(st.meta_used || {}))
       },
       nodes, edges,
-      view: { visible, frontier, afford, hiddenReach, surveyed }
+      view: { visible, frontier, afford, hiddenReach, jumpReach, surveyed }
     };
   }
 
@@ -164,6 +177,9 @@ window.ChaosShare = (function () {
     p.view.hiddenReach.skip = Array.isArray(p.view.hiddenReach.skip) ? p.view.hiddenReach.skip : [];
     p.view.hiddenReach.hop = Array.isArray(p.view.hiddenReach.hop) ? p.view.hiddenReach.hop : [];
     p.view.hiddenReach.jump = Array.isArray(p.view.hiddenReach.jump) ? p.view.hiddenReach.jump : [];
+    // Older snapshots predate jumpReach: leave it null so the viewer falls
+    // back to recomputing visible picks from the shared topology.
+    p.view.jumpReach = Array.isArray(p.view.jumpReach) ? p.view.jumpReach : null;
     return p;
   }
 

@@ -36,7 +36,7 @@ function startServer() {
   });
 }
 
-function boot(page, seed) {
+function boot(page, seed, fetchPayload) {
   const vc = new VirtualConsole();
   const errors = [];
   // jsdom has no canvas backend; the tree 3D view logs that on boot.
@@ -44,11 +44,18 @@ function boot(page, seed) {
     if (!/getContext/.test(e.message)) errors.push(e.message);
   });
   vc.on("error", e => errors.push(String(e)));
-  const dom = new JSDOM(fs.readFileSync(path.join(REPO, "web", page), "utf8"), {
+  const file = page.split("?")[0];
+  const dom = new JSDOM(fs.readFileSync(path.join(REPO, "web", file), "utf8"), {
     url: BASE + page, runScripts: "dangerously", resources: "usable",
     pretendToBeVisual: true, virtualConsole: vc,
     beforeParse(w) {
       if (seed) for (const [k, v] of Object.entries(seed)) w.localStorage.setItem(k, v);
+      if (fetchPayload) {
+        w.fetch = async () => ({
+          ok: true, headers: { get: () => "application/json" },
+          text: async () => JSON.stringify(fetchPayload),
+        });
+      }
       // jsdom has no canvas backend: give the 3D view a no-op 2D context so
       // an active tree can boot and draw without throwing.
       const noop = () => {};
@@ -519,6 +526,92 @@ function boot(page, seed) {
       /Laevatein/.test(threeText) && /Vorpal Blade/.test(threeText),
       threeText);
     three.dom.window.close();
+  }
+
+  // ---------- shared views keep the owner's actual jump picks ----------
+  {
+    const { dom: src } = await boot("tree.html");
+    const w = src.window;
+    const N = (id, file, name, x, rarity) => ({
+      id, file, number: id, name, rarity, source: "Test", tag: "both",
+      description: "x", meta: [], tags: [], pos: [x, 0, 0], r: x,
+    });
+    const payloadFor = (nodes, edges) => {
+      const rt = w.ChaosGen.buildRuntime({ nodes, edges });
+      const st = Object.assign(w.ChaosEngine.newState(), {
+        points: 1e9, cores: 10,
+        inventory: [{ kind: "jump", tier: null, category: "item" }],
+        unlocked: [0, 1],
+      });
+      const payload = w.ChaosShare.collect(null, rt, st, { name: "Shared jump" });
+      w.ChaosShare.validate(payload);
+      return payload;
+    };
+    const wait = ms => new Promise(r => setTimeout(r, ms));
+    const openJumpPlanner = async payload => {
+      const { dom, errors } = await boot(
+        "tree.html?share=https%3A%2F%2Fexample.com%2Fraw", null, payload);
+      await wait(500);
+      const vw = dom.window, vd = vw.document;
+      vd.querySelector('#tabs button[data-tab="tickets"]').dispatchEvent(
+        new vw.MouseEvent("click", { bubbles: true }));
+      vd.getElementById("planToggle").dispatchEvent(
+        new vw.MouseEvent("click", { bubbles: true }));
+      vd.getElementById("planScope").value = "jump";
+      vd.getElementById("planScope").dispatchEvent(
+        new vw.Event("change", { bubbles: true }));
+      await wait(250);
+      return {
+        dom, errors,
+        rows: [...vd.querySelectorAll("#planList > li")],
+        count: vd.getElementById("planCount").textContent,
+      };
+    };
+
+    // A hidden node is the real closest pick; the visible item is farther.
+    const hiddenPayload = payloadFor([
+      N(0, "__root__", "Origin", 0, 0),
+      N(1, "ability", "Launch", 5, 1),
+      N(2, "item", "Distant Visible Item", 20, 3),
+      N(4, "item", "Hidden Jump Item", 6, 4),
+      N(5, "ability", "Stepping Stone", 6.5, 2),
+    ], [
+      { a: 0, b: 1, d: 5 }, { a: 0, b: 2, d: 20 },
+      { a: 0, b: 5, d: 6.5 }, { a: 4, b: 5, d: 0.5 },
+    ]);
+    ok("share: jumpReach records the owner's hidden pick",
+      Array.isArray(hiddenPayload.view.jumpReach) &&
+      hiddenPayload.view.jumpReach.some(h => h.id === 4 && h.from === 1),
+      JSON.stringify(hiddenPayload.view.jumpReach));
+    ok("share: a farther visible node is not recorded as the jump pick",
+      !hiddenPayload.view.jumpReach.some(h => h.id === 2));
+    const hidden = await openJumpPlanner(hiddenPayload);
+    const hiddenText = hidden.rows.map(li => li.textContent).join(" | ");
+    ok("share: shared planner shows the hidden jump target",
+      hidden.rows.length === 1 && /Hidden node #4/.test(hiddenText) &&
+      /from #1/.test(hiddenText), hiddenText);
+    ok("share: shared planner does not invent a visible jump target",
+      !/Distant Visible Item/.test(hiddenText), hiddenText);
+    ok("share: shared planner has no page errors", hidden.errors.length === 0,
+      hidden.errors[0]);
+    hidden.dom.window.close();
+
+    // A visible jump target keeps its full node data.
+    const visiblePayload = payloadFor([
+      N(0, "__root__", "Origin", 0, 0),
+      N(1, "ability", "Launch", 5, 1),
+      N(2, "item", "Near Item", 6, 3),
+      N(3, "item", "Far Item", 7, 4),
+    ], [
+      { a: 0, b: 1, d: 5 }, { a: 0, b: 2, d: 6 }, { a: 0, b: 3, d: 7 },
+    ]);
+    const visible = await openJumpPlanner(visiblePayload);
+    const visibleText = visible.rows.map(li => li.textContent).join(" | ");
+    ok("share: shared planner keeps a visible jump target and its name",
+      visible.rows.length === 1 && /#2 Near Item/.test(visibleText) &&
+      !/Hidden node/.test(visibleText), visibleText);
+    visible.dom.window.close();
+    src.window.close();
   }
 
   console.log(failures ? `${failures} FAILURES` : "ALL PASS");
