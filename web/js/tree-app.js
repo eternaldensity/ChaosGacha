@@ -2195,6 +2195,7 @@
     const fromIds = st.unlocked.filter(u => u !== 0);
     const hopTxt = h => h == null ? "isolated" : `${h} hop${h === 1 ? "" : "s"}`;
     let rows = [];
+    let legacyJumpHidden = null;  // hidden picks reconstructed from older shares
     if (scope === "frontier") {
       for (const id of E.frontier(rt, st.unlocked)) {
         if (id === 0 || !visNode(rt.byId[id])) continue;
@@ -2274,6 +2275,63 @@
             jump: { ticket: t, from: hit.from },
           });
         }
+      } else if (isShared()) {
+        // Older snapshots lack jumpReach. Reconstruct the owner's picks from
+        // hiddenReach: hidden picks record their rank, so reinserting them
+        // into the visible-only candidate list restores the true top-N. A
+        // visible node ranked after a hidden pick was never actually in reach.
+        const hiddenByFrom = new Map();
+        const hiddenOld = (rt.sharedView && rt.sharedView.hiddenReach &&
+          rt.sharedView.hiddenReach.jump) || [];
+        for (const h of hiddenOld) {
+          if (h.ticket !== planJumpTi) continue;
+          let byRank = hiddenByFrom.get(h.from);
+          if (!byRank) hiddenByFrom.set(h.from, byRank = new Map());
+          let hits = byRank.get(h.rank);
+          if (!hits) byRank.set(h.rank, hits = []);
+          hits.push(h);
+        }
+        const picks = new Map();
+        for (const from of fromIds) {
+          const hiddenRanks = hiddenByFrom.get(from) || new Map();
+          const visible = E.jumpCandidates(rt, t.category, from, st.unlocked);
+          let vi = 0, rank = 0;
+          while (rank < lim) {
+            const hits = hiddenRanks.get(rank);
+            if (hits) {
+              for (const h of hits) {
+                if (!rt.byId[h.id] && !picks.has(h.id)) {
+                  picks.set(h.id, { id: h.id, from, dd: null, hidden: true });
+                }
+              }
+              rank++;
+              continue;
+            }
+            if (vi >= visible.length) break;
+            const [dd, nd] = visible[vi++];
+            if (visNode(nd)) {
+              const prev = picks.get(nd.id);
+              if (!prev || dd < prev.dd) {
+                picks.set(nd.id, { id: nd.id, from, dd, hidden: false });
+              }
+            }
+            rank++;
+          }
+        }
+        legacyJumpHidden = [];
+        for (const pick of picks.values()) {
+          if (pick.hidden) {
+            legacyJumpHidden.push({ hidden: true, id: pick.id,
+              hops: null, from: pick.from });
+          } else {
+            rows.push({
+              id: pick.id, hops: dist[pick.id] == null ? null : dist[pick.id],
+              via: `${ticketLabel(t)} from #${pick.from} · ${pick.dd.toFixed(1)} away`,
+              act: "jump",
+              jump: { ticket: t, from: pick.from },
+            });
+          }
+        }
       } else {
         // A jump only reaches the closest candidate(s) from each launch node.
         // Union those across every unlocked launch so one list shows all of
@@ -2345,14 +2403,18 @@
       } else if (scope === "hop") {
         for (const h of (hv.hop || [])) hidden.push({ hidden: true, id: h.id, hops: null });
       } else if (scope === "jump") {
-        const sharedReach = rt.sharedView &&
-          Array.isArray(rt.sharedView.jumpReach) ? rt.sharedView.jumpReach : null;
-        const seenHidden = new Set();
-        for (const h of (sharedReach || hv.jump || [])) {
-          if (h.ticket !== planJumpTi || seenHidden.has(h.id)) continue;
-          seenHidden.add(h.id);
-          if (rt.byId[h.id]) continue;  // visible pick, already listed above
-          hidden.push({ hidden: true, id: h.id, hops: null, from: h.from });
+        if (legacyJumpHidden) {
+          hidden.push(...legacyJumpHidden);
+        } else {
+          const sharedReach = rt.sharedView &&
+            Array.isArray(rt.sharedView.jumpReach) ? rt.sharedView.jumpReach : null;
+          const seenHidden = new Set();
+          for (const h of (sharedReach || hv.jump || [])) {
+            if (h.ticket !== planJumpTi || seenHidden.has(h.id)) continue;
+            seenHidden.add(h.id);
+            if (rt.byId[h.id]) continue;  // visible pick, already listed above
+            hidden.push({ hidden: true, id: h.id, hops: null, from: h.from });
+          }
         }
       }
       hidden.sort((a, b) => a.id - b.id);

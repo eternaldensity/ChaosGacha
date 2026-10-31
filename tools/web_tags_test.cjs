@@ -596,6 +596,22 @@ function boot(page, seed, fetchPayload) {
       hidden.errors[0]);
     hidden.dom.window.close();
 
+    // Snapshots made before jumpReach only recorded hidden picks. Their
+    // ranks still let the viewer reconstruct the real jumps and drop a
+    // visible node that was never actually in reach.
+    const legacyPayload = JSON.parse(JSON.stringify(hiddenPayload));
+    delete legacyPayload.view.jumpReach;
+    legacyPayload.view.hiddenReach.jump.push({ id: 4, from: 0, ticket: 0, rank: 0 });
+    w.ChaosShare.validate(legacyPayload);
+    const legacy = await openJumpPlanner(legacyPayload);
+    const legacyText = legacy.rows.map(li => li.textContent).join(" | ");
+    ok("share: legacy snapshot reconstructs the hidden jump target",
+      legacy.rows.length === 1 && /Hidden node #4/.test(legacyText) &&
+      /from #1/.test(legacyText) && !/from #0/.test(legacyText), legacyText);
+    ok("share: legacy snapshot drops the fake visible jump target",
+      !/Distant Visible Item/.test(legacyText), legacyText);
+    legacy.dom.window.close();
+
     // A visible jump target keeps its full node data.
     const visiblePayload = payloadFor([
       N(0, "__root__", "Origin", 0, 0),
