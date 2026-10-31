@@ -422,7 +422,7 @@ function boot(page, seed) {
     dom.window.close();
   }
 
-  // ---------- jump planner lists only actually pickable candidates ----------
+  // ---------- jump planner aggregates actual picks across launch nodes ------
   {
     const jumpNodes = [
       { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
@@ -440,6 +440,12 @@ function boot(page, seed) {
       { id: 4, file: "item", number: 4, name: "Laevatein",
         rarity: 7.8, source: "Fate", tag: "both", description: "x",
         meta: [], tags: [], pos: [8, 0, 0], r: 8 },
+      { id: 5, file: "ability", number: 5, name: "Double Jump",
+        rarity: 0, source: "Generic", tag: "both", description: "x",
+        meta: [], tags: [], pos: [10, 0, 0], r: 10 },
+      { id: 6, file: "item", number: 6, name: "Vorpal Blade",
+        rarity: 4, source: "Black Souls", tag: "both", description: "x",
+        meta: [], tags: [], pos: [11, 0, 0], r: 11 },
     ];
     const jumpTopo = JSON.stringify({
       params: {}, nodes: jumpNodes,
@@ -449,7 +455,8 @@ function boot(page, seed) {
       const db = JSON.stringify({
         trees: [{ id: "tj", name: "Jump planner", seed: 5, params: {}, limit: null,
                   filters: {}, dataVersion: null, static: true, createdAt: 1 }],
-        states: { tj: { points: 1e9, cores: 50, inventory, unlocked: [0, 1] } },
+        states: { tj: { points: 1e9, cores: 50, inventory,
+                        unlocked: [0, 1, 5] } },
         activeId: "tj", guideSeen: true, settings: {},
       });
       const { dom } = await boot("tree.html",
@@ -466,20 +473,51 @@ function boot(page, seed) {
     };
 
     const one = await bootJump([{ kind: "jump", tier: null, category: "item" }]);
-    ok("tree planner: a jump ticket lists only the closest item",
-      one.rows.length === 1 && /Gae Bolg/.test(one.rows[0].textContent),
-      one.rows.map(li => li.textContent).join(" | "));
-    ok("tree planner: that row is actionable",
-      one.rows.length === 1 && /Jump →/.test(one.rows[0].textContent));
+    const oneText = one.rows.map(li => li.textContent).join(" | ");
+    ok("tree planner: a jump ticket lists the closest item from every launch",
+      one.rows.length === 2 && /Gae Bolg/.test(oneText) && /Vorpal Blade/.test(oneText),
+      oneText);
+    ok("tree planner: every row is actionable",
+      one.rows.length === 2 && one.rows.every(li => /Jump →/.test(li.textContent)));
+    const od = one.dom.window.document;
+    ok("tree planner: no launch-from dropdown remains", !od.getElementById("planJumpFrom"));
+
+    // Hiding Unlockable now must survive a planner rerender.
+    od.getElementById("unlockToggle").dispatchEvent(
+      new one.dom.window.MouseEvent("click", { bubbles: true }));
+    const hiddenBefore = od.getElementById("unlockList").style.display;
+    od.getElementById("planScope").value = "visible";
+    od.getElementById("planScope").dispatchEvent(
+      new one.dom.window.Event("change", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 250));
+    od.getElementById("planScope").value = "jump";
+    od.getElementById("planScope").dispatchEvent(
+      new one.dom.window.Event("change", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 250));
+    ok("tree planner: a hidden Unlockable now list stays hidden on rerender",
+      hiddenBefore === "none" &&
+      od.getElementById("unlockList").style.display === "none" &&
+      od.getElementById("unlockToggle").textContent === "Show",
+      `${hiddenBefore} -> ${od.getElementById("unlockList").style.display}`);
+
+    // The shown row is the action the engine accepts: click one.
+    const row = od.querySelector("#planList > li");
+    const id = parseInt(row.textContent.match(/#(\d+)/)[1], 10);
+    row.querySelector("button.primary").dispatchEvent(
+      new one.dom.window.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 300));
+    const saved = JSON.parse(one.dom.window.localStorage.getItem("chaosTree.v1"));
+    ok("tree planner: a jump row unlocks its displayed node",
+      saved.states.tj.unlocked.includes(id), `id=${id}`);
     one.dom.window.close();
 
     const three = await bootJump([{ kind: "choice", tier: null, n: 3, category: "item" }]);
-    ok("tree planner: a choice-3 ticket lists the three closest items",
-      three.rows.length === 3 &&
-      /Gae Bolg/.test(three.rows.find(li => /Gae Bolg/.test(li.textContent)).textContent) &&
-      /Excalibur/.test(three.rows.find(li => /Excalibur/.test(li.textContent)).textContent) &&
-      /Laevatein/.test(three.rows.find(li => /Laevatein/.test(li.textContent)).textContent),
-      three.rows.map(li => li.textContent).join(" | "));
+    const threeText = three.rows.map(li => li.textContent).join(" | ");
+    ok("tree planner: a choice-3 ticket unions each launch's three closest",
+      three.rows.length === 4 &&
+      /Gae Bolg/.test(threeText) && /Excalibur/.test(threeText) &&
+      /Laevatein/.test(threeText) && /Vorpal Blade/.test(threeText),
+      threeText);
     three.dom.window.close();
   }
 

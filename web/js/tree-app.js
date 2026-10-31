@@ -1666,7 +1666,7 @@
   // Unlock-planner state (module scope: init listeners mutate these).
   // Collapsed by default like a hidden list; the toggle mirrors the
   // unlockable-now/inventory show/hide buttons.
-  let planPage = 0, planJumpTi = 0, planJumpFrom = null, planOpen = false;
+  let planPage = 0, planJumpTi = 0, planOpen = false;
   function applyPlanVisibility() {
     $("planList").style.display = planOpen ? "" : "none";
     $("planPage").style.display = planOpen ? "" : "none";
@@ -2061,6 +2061,35 @@
     }
     if (!any) meta.innerHTML = "<span class='muted small'>Unlock tree-meta nodes (Sight, Graft, Chaos Die…) to gain abilities.</span>";
 
+    const surveyed = rt.frozen
+      ? ((rt.sharedView && rt.sharedView.surveyed) || [])
+      : E.surveyNames(rt, st.unlocked, m).filter(([i]) => visNode(rt.byId[i]));
+    if (surveyed.length) {
+      const d = document.createElement("details");
+      const s = document.createElement("summary");
+      s.textContent = `Surveyed names (${surveyed.length})`;
+      d.appendChild(s);
+      const ul = document.createElement("ul");
+      ul.className = "list";
+      for (const [id, name] of surveyed.slice(0, 60)) {
+        const li = document.createElement("li");
+        li.innerHTML = `<div class="grow"><b>#${id} ${esc(name)}</b>` +
+          (rt.byId[id] ? "" : ` <span class="pill">hidden</span>`) + `</div>`;
+        if (rt.byId[id]) {
+          const go = document.createElement("button");
+          go.textContent = "View";
+          go.addEventListener("click", () => { selectedId = id; showTab("node"); });
+          li.appendChild(go);
+        }
+        ul.appendChild(li);
+      }
+      d.appendChild(ul);
+      meta.appendChild(d);
+    }
+    await renderUnlockable(c, ccx);
+    await renderPlanner(c, ccx);
+  }
+
   // Frontier nodes, cheapest first, with one-tap unlock.
   const UNLOCK_PAGE = 20;
   let unlockPage = 0, unlockOpen = true, lastUnlockCtx = null;
@@ -2158,7 +2187,6 @@
     const scope = ($("planScope") && $("planScope").value) || "frontier";
     const showJump = scope === "jump";
     $("planJumpCtl").style.display = showJump ? "" : "none";
-    $("planJumpFromCtl").style.display = showJump ? "" : "none";
     const m = E.viewState(rt, st);
     const unl = new Set(st.unlocked);
     const { dist } = E.hopDistances(rt, st.unlocked);
@@ -2218,32 +2246,38 @@
         $("planPage").textContent = "";
         return;
       }
-      const jtSel = $("planJumpTicket"), jfSel = $("planJumpFrom");
+      const jtSel = $("planJumpTicket");
       jtSel.innerHTML = jumps.map((t, i) => `<option value="${i}">${esc(ticketLabel(t))}</option>`).join("");
       planJumpTi = Math.max(0, Math.min(planJumpTi, jumps.length - 1));
       jtSel.value = String(planJumpTi);
       const t = jumps[planJumpTi];
-      const defFrom = (selectedId != null && fromIds.includes(selectedId)) ? selectedId : fromIds[0];
-      jfSel.innerHTML = fromIds.map(u => {
-        const und = rt.byId[u];
-        return `<option value="${u}">#${u} ${esc(und ? und.name : "?")}</option>`;
-      }).join("");
-      if (!fromIds.includes(planJumpFrom)) planJumpFrom = defFrom;
-      jfSel.value = String(planJumpFrom);
-      const from = planJumpFrom;
       const lim = t.kind === "choice" ? t.n : 1;
-      // Only the closest candidate(s) are actually pickable; every further
-      // node in the category is out of reach for this ticket.
-      E.jumpCandidates(rt, t.category, from, st.unlocked).slice(0, lim)
-        .forEach(([dd, nd]) => {
-          if (!visNode(nd)) return;
-          rows.push({
-            id: nd.id, hops: dist[nd.id] == null ? null : dist[nd.id],
-            via: `${ticketLabel(t)} from #${from} · ${dd.toFixed(1)} away`,
-            act: "jump",
-            jump: { ticket: t, from },
+      // A jump only reaches the closest candidate(s) from each launch node.
+      // Union those across every unlocked launch so one list shows all of
+      // the ticket's actual targets, not just one launch point's.
+      const reachable = new Map();
+      for (const from of fromIds) {
+        E.jumpCandidates(rt, t.category, from, st.unlocked).slice(0, lim)
+          .forEach(([dd, nd]) => {
+            if (!visNode(nd)) return;
+            const prev = reachable.get(nd.id);
+            if (!prev || dd < prev.dd) reachable.set(nd.id, { dd, nd, from });
           });
+      }
+      if (!reachable.size) {
+        $("planCount").textContent = "";
+        box.innerHTML = "<li class='muted'>No node in reach of this ticket.</li>";
+        $("planPage").textContent = "";
+        return;
+      }
+      for (const { dd, nd, from } of reachable.values()) {
+        rows.push({
+          id: nd.id, hops: dist[nd.id] == null ? null : dist[nd.id],
+          via: `${ticketLabel(t)} from #${from} · ${dd.toFixed(1)} away`,
+          act: "jump",
+          jump: { ticket: t, from },
         });
+      }
     }
     // Filters.
     const q = (($("planQ") && $("planQ").value) || "").trim().toLowerCase();
@@ -2287,8 +2321,11 @@
       } else if (scope === "hop") {
         for (const h of (hv.hop || [])) hidden.push({ hidden: true, id: h.id, hops: null });
       } else if (scope === "jump") {
+        const seenHidden = new Set();
         for (const h of (hv.jump || [])) {
-          if (h.ticket === planJumpTi && h.from === planJumpFrom) hidden.push({ hidden: true, id: h.id, hops: null, from: h.from });
+          if (h.ticket !== planJumpTi || seenHidden.has(h.id)) continue;
+          seenHidden.add(h.id);
+          hidden.push({ hidden: true, id: h.id, hops: null, from: h.from });
         }
       }
       hidden.sort((a, b) => a.id - b.id);
@@ -2378,34 +2415,6 @@
       }
       box.appendChild(li);
     }
-  }
-    const surveyed = rt.frozen
-      ? ((rt.sharedView && rt.sharedView.surveyed) || [])
-      : E.surveyNames(rt, st.unlocked, m).filter(([i]) => visNode(rt.byId[i]));
-    if (surveyed.length) {
-      const d = document.createElement("details");
-      const s = document.createElement("summary");
-      s.textContent = `Surveyed names (${surveyed.length})`;
-      d.appendChild(s);
-      const ul = document.createElement("ul");
-      ul.className = "list";
-      for (const [id, name] of surveyed.slice(0, 60)) {
-        const li = document.createElement("li");
-        li.innerHTML = `<div class="grow"><b>#${id} ${esc(name)}</b>` +
-          (rt.byId[id] ? "" : ` <span class="pill">hidden</span>`) + `</div>`;
-        if (rt.byId[id]) {
-          const go = document.createElement("button");
-          go.textContent = "View";
-          go.addEventListener("click", () => { selectedId = id; showTab("node"); });
-          li.appendChild(go);
-        }
-        ul.appendChild(li);
-      }
-      d.appendChild(ul);
-      meta.appendChild(d);
-    }
-    await renderUnlockable(c, ccx);
-    await renderPlanner(c, ccx);
   }
 
   // Inventory collapses to just its header, matching the unlock list toggle.
@@ -2841,9 +2850,6 @@
   if ($("planAfford")) $("planAfford").addEventListener("change", rerenderTickets);
   if ($("planJumpTicket")) $("planJumpTicket").addEventListener("change", ev => {
     planJumpTi = parseInt(ev.target.value || "0", 10) || 0; planPage = 0; rerenderTickets();
-  });
-  if ($("planJumpFrom")) $("planJumpFrom").addEventListener("change", ev => {
-    planJumpFrom = parseInt(ev.target.value || "", 10) || null; planPage = 0; rerenderTickets();
   });
   if ($("planPrev")) $("planPrev").addEventListener("click", async () => {
     if (planPage > 0) { planPage--; rerenderTickets(); }
