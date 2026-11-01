@@ -1,11 +1,14 @@
 "use strict";
 /* Curse Roulette web app: d20 spin -> severity -> random curse of that
- * severity, with resolve conditions and ticket rewards spendable in the
- * gacha ticket wallet. Mechanics mirror the original site's curse page. */
+ * severity, with resolve conditions and ticket rewards spendable in either
+ * the gacha ticket wallet or the active Chaos Tree. Mechanics mirror the
+ * original site's curse page; the tree mapping is a fork addition. */
 (function () {
   const CURSES = window.CHAOS_CURSES || [];
+  const E = window.ChaosEngine;
   const LS = "chaosCurse.v1";
   const GLS = "chaosGacha.v1";
+  const TLS = "chaosTree.v1";
   const $ = id => document.getElementById(id);
   const esc = s => String(s == null ? "" : s)
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -37,6 +40,7 @@
   }
   let DB = load();
   if (DB.settings.reward === undefined) DB.settings.reward = true;
+  if (DB.settings.target === undefined) DB.settings.target = "gacha";
   if (DB.settings.spin === undefined) DB.settings.spin = "normal";
   if (DB.settings.nsfw === undefined) DB.settings.nsfw = true; // safe by default
   const uid = () => Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
@@ -50,10 +54,14 @@
     if (roll <= 19) return "Severe";
     return "Ultimate";
   }
-  // Reward tickets per the reference table. Medium is one Advantage ticket
+  function rewardTarget() {
+    return DB.settings.target === "tree" ? "tree" : "gacha";
+  }
+
+  // Gacha tickets per the reference table. Medium is one Advantage ticket
   // (roll two wheels, keep whichever you prefer); Major/Ultimate let the
   // roller pick the category.
-  function rewardFor(tier, cat) {
+  function gachaRewardFor(tier, cat) {
     cat = cat || "random";
     if (tier === "Minor") return [{ tier: "gold", cat: "random" }];
     if (tier === "Medium") return [{ tier: "gold", cat: "random", adv: 2 }];
@@ -61,9 +69,108 @@
     if (tier === "Severe") return [{ tier: "platinum", cat: "random" }];
     return [{ tier: "platinum", cat }];
   }
-  // Human-readable reward line, e.g. "gold random (2× Advantage)".
+
+  // Tree tickets. These are the tree-engine's own movement tickets, not
+  // gacha reward tickets: each also pays the tier's points and 1 core when
+  // awarded to the active tree. Major/Ultimate use Choice N Jump so the
+  // player can pick among the nearest nodes; skip N covers the lower tiers.
+  function treeRewardFor(tier) {
+    if (tier === "Minor") return [{ kind: "skip", tier: "gold", n: 2 }];
+    if (tier === "Medium") return [{ kind: "skip", tier: "gold", n: 3 }];
+    if (tier === "Major") return [{ kind: "choice", tier: "gold", n: 3 }];
+    if (tier === "Severe") return [{ kind: "skip", tier: "platinum", n: 4 }];
+    return [{ kind: "choice", tier: "platinum", n: 4 }];
+  }
+
+  function rewardFor(tier, cat, target) {
+    return (target || "gacha") === "tree"
+      ? treeRewardFor(tier)
+      : gachaRewardFor(tier, cat);
+  }
+
+  // Human-readable gacha reward line, e.g. "gold random (2× Advantage)".
   function ticketLabel(t) {
     return `${t.tier} ${t.cat}` + ((t.adv | 0) > 1 ? ` (${t.adv}× Advantage)` : "");
+  }
+  function treeActionLabel(t) {
+    let action = `${t.tier} ${t.kind}`;
+    if (t.kind === "skip" || t.kind === "choice") action += ` ${t.n}`;
+    if (t.kind === "choice") action += " jump";
+    return action;
+  }
+  // Tree reward line, including the wallet payout that E.award attaches.
+  function treeTicketLabel(t) {
+    const pts = E ? (E.TIER_POINTS[t.tier] || 0) : 0;
+    return `${treeActionLabel(t)} (tree: +${E ? E.fmt(pts) : pts} pts, +1 core)`;
+  }
+  function rewardLabel(t, target) {
+    return target === "tree" ? treeTicketLabel(t) : ticketLabel(t);
+  }
+  function treeSpec(t) {
+    if (t.kind === "skip") return `${t.tier} skip${t.n}`;
+    if (t.kind === "choice") return `${t.tier} choice ${t.n} jump`;
+    return `${t.tier} ${t.kind}`;
+  }
+
+  // The tree app stores all of its trees and progress in one localStorage
+  // record. Read it fresh on every send so a tree created/opened in another
+  // tab is picked up without a reload.
+  function activeTreeInfo() {
+    let db;
+    try {
+      db = JSON.parse(localStorage.getItem(TLS) || "null");
+    } catch (e) {
+      return { error: "The Chaos Tree save is unreadable; open the tree app and export a backup." };
+    }
+    if (!db || !Array.isArray(db.trees) || !db.trees.length) {
+      return { error: "No Chaos Tree found. Open the tree app and create or import a tree first." };
+    }
+    const tree = db.trees.find(t => t.id === db.activeId) || db.trees[0];
+    if (!tree) return { error: "No active Chaos Tree found." };
+    return { db, tree };
+  }
+  function updateTargetNote() {
+    const note = $("rewardTargetNote");
+    if (!note) return;
+    if (rewardTarget() !== "tree") {
+      note.textContent = "Tickets go to the gacha wallet.";
+      return;
+    }
+    const info = activeTreeInfo();
+    note.textContent = info.error || `Active tree: ${info.tree.name}`;
+  }
+  // Award tree tickets through the real tree engine, so the same tier
+  // points/cores/inventory rules apply as awarding them in the tree app.
+  function sendTreeReward(r) {
+    if (!E) throw new Error("The Chaos Tree engine failed to load; reload the page.");
+    const info = activeTreeInfo();
+    if (info.error) throw new Error(info.error);
+    const db = info.db, tree = info.tree;
+    db.states = db.states || {};
+    const state = db.states[tree.id] || E.newState();
+    state.points = Number(state.points) || 0;
+    state.cores = Number(state.cores) || 0;
+    state.inventory = Array.isArray(state.inventory) ? state.inventory : [];
+    let pts = 0, cores = 0;
+    for (const t of (r.reward || [])) {
+      const out = E.award(state, treeSpec(t), 0, false, false, null);
+      pts += out.pts;
+      cores += out.cores;
+    }
+    db.states[tree.id] = state;
+    if (db.activeId !== tree.id) db.activeId = tree.id;
+    localStorage.setItem(TLS, JSON.stringify(db));
+    return { tree, pts, cores };
+  }
+  function refreshReward() {
+    if (!lastResult || lastResult.sent) return;
+    const target = rewardTarget();
+    lastResult.target = target;
+    lastResult.reward = rewardFor(lastResult.tier, $("rewardCat").value, target);
+    const line = $("rewardLine");
+    if (line) line.textContent = lastResult.reward.map(t => rewardLabel(t, target)).join(" + ");
+    save();
+    updateRewardUI();
   }
 
   function nsfwHidden() { return DB.settings.nsfw !== false; }
@@ -106,21 +213,31 @@
   function rewardsOn() { return DB.settings.reward !== false; }
   function updateRewardUI() {
     if (!lastResult) return;
-    const choice = (lastResult.tier === "Major" || lastResult.tier === "Ultimate");
+    const target = rewardTarget();
+    const choice = target === "gacha" &&
+      (lastResult.tier === "Major" || lastResult.tier === "Ultimate");
     $("rewardRow").style.display = (rewardsOn() && choice) ? "flex" : "none";
     $("rewardBtn").style.display = rewardsOn() ? "" : "none";
+    $("rewardBtn").disabled = !!lastResult.sent;
+    $("rewardBtn").textContent = lastResult.sent
+      ? "Reward sent ✓"
+      : (target === "tree" ? "Send reward to active tree" : "Send reward to ticket wallet");
+    updateTargetNote();
   }
 
   function showResult(r) {
     lastResult = r;
+    r.target = rewardTarget();
+    r.reward = rewardFor(r.tier, $("rewardCat").value, r.target);
+    save(); // showResult may re-target a result stored before the wheel stopped
     $("resultCard").style.display = "block";
-    updateRewardUI();
     $("resultBody").innerHTML =
       `<div class="small muted">d20 = ${r.roll}: ${esc(r.tier)}</div>` +
       `<div class="result-name"><b>${esc(r.label)}</b> <span class="pill">severity ${r.sev}</span></div>` +
       (r.desc ? `<p>${esc(r.desc)}</p>` : "") +
       (r.resolve ? `<p class="small"><b>Resolve:</b> ${esc(r.resolve)}</p>` : "") +
-      `<p class="small muted">Reward: ${r.reward.map(ticketLabel).join(" + ")}</p>`;
+      `<p class="small muted">Reward: <span id="rewardLine">${r.reward.map(t => rewardLabel(t, r.target)).join(" + ")}</span></p>`;
+    updateRewardUI();
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
@@ -144,7 +261,8 @@
     const r = {
       id: uid(), at: Date.now(), roll, tier,
       label: winner.label, sev: winner.sev, desc: winner.desc, resolve: winner.resolve,
-      reward: rewardFor(tier, $("rewardCat").value), resolved: false
+      target: rewardTarget(),
+      reward: rewardFor(tier, $("rewardCat").value, rewardTarget()), resolved: false
     };
     DB.history.unshift(r);
     if (DB.history.length > 200) DB.history.length = 200;
@@ -209,6 +327,18 @@
     updateRewardUI();
   });
 
+  $("rewardTarget").value = rewardTarget();
+  $("rewardTarget").addEventListener("change", () => {
+    DB.settings.target = $("rewardTarget").value === "tree" ? "tree" : "gacha";
+    save();
+    updateTargetNote();
+    refreshReward();
+    updateRewardUI();
+  });
+  $("rewardCat").addEventListener("change", refreshReward);
+  window.addEventListener("focus", updateTargetNote);
+  updateTargetNote();
+
   $("spinSpeed").value = DB.settings.spin || "normal";
   $("spinSpeed").addEventListener("change", () => {
     DB.settings.spin = $("spinSpeed").value;
@@ -222,7 +352,21 @@
   });
 
   $("rewardBtn").addEventListener("click", () => {
-    if (!lastResult) return;
+    if (!lastResult || lastResult.sent) return;
+    const target = lastResult.target || rewardTarget();
+    if (target === "tree") {
+      try {
+        const res = sendTreeReward(lastResult);
+        lastResult.sent = true;
+        save();
+        updateRewardUI();
+        const labels = lastResult.reward.map(treeActionLabel).join(" + ");
+        toast(`Sent ${labels} to "${res.tree.name}": +${res.cores} core${res.cores === 1 ? "" : "s"}, +${E.fmt(res.pts)} pts.`);
+      } catch (e) {
+        toast(e && e.message ? e.message : "Couldn't send the reward to the tree.", true);
+      }
+      return;
+    }
     let gdb;
     try {
       gdb = JSON.parse(localStorage.getItem(GLS) || "null") ||
@@ -236,15 +380,27 @@
       if ((t.adv | 0) > 1) ticket.adv = t.adv;
       gdb.tickets.push(ticket);
     }
-    try { localStorage.setItem(GLS, JSON.stringify(gdb)); } catch (e) {}
+    try {
+      localStorage.setItem(GLS, JSON.stringify(gdb));
+    } catch (e) {
+      toast("Couldn't save the tickets (storage full).", true);
+      return;
+    }
+    lastResult.sent = true;
+    save();
+    updateRewardUI();
     toast(`Sent ${lastResult.reward.length} ticket${lastResult.reward.length === 1 ? "" : "s"} to your wallet.`);
   });
 
   function resultText(r) {
+    const target = r.target || "gacha";
     return `${r.label}\n(${r.tier}, d20 ${r.roll}, severity ${r.sev})` +
       (r.desc ? `\n${r.desc}` : "") +
       (r.resolve ? `\nResolve: ${r.resolve}` : "") +
-      (r.reward && r.reward.length ? `\nReward: ${r.reward.map(ticketLabel).join(" + ")}` : "");
+      (r.reward && r.reward.length
+        ? `\nReward: ${r.reward.map(t => rewardLabel(t, target)).join(" + ")}` +
+          (target === "tree" ? " → active tree" : "")
+        : "");
   }
 
   $("btnCopy").addEventListener("click", async () => {
@@ -292,8 +448,8 @@
   });
 
   window.__curse = {
-    tierOf, pickCurse, rewardFor, resultText,
-    nsfwHidden, cursePool
+    tierOf, pickCurse, rewardFor, treeRewardFor, treeSpec, treeActionLabel,
+    rewardTarget, activeTreeInfo, resultText, nsfwHidden, cursePool
   };
   renderHistory();
 })();

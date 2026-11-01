@@ -183,7 +183,7 @@
       <h3>Rewards</h3>
       <p>By default, spinning pays out a gacha ticket for the trouble. Rewards follow the source table:</p>
       <table>
-        <tr><th>Severity</th><th>Reward</th></tr>
+        <tr><th>Severity</th><th>Gacha reward</th></tr>
         <tr><td>Minor</td><td>1× Gold Random ticket</td></tr>
         <tr><td>Medium</td><td>1× Advantage Gold Random ticket</td></tr>
         <tr><td>Major</td><td>1× Gold Choice ticket (pick the category)</td></tr>
@@ -191,9 +191,19 @@
         <tr><td>Ultimate</td><td>1× Platinum Choice ticket</td></tr>
       </table>
       <p class="muted small">Medium's Advantage Gold Random arrives as one ticket flagged <b>Advantage ×2</b>: it rolls two wheels and you keep whichever you prefer; Major and Ultimate let you choose the category before sending the reward.</p>
+      <p>Switch <b>Reward destination</b> to <b>Chaos Tree (active tree)</b> to send tree tickets instead. The active tree receives the ticket plus the tier's points and 1 core, exactly as if you had awarded it in the Tree app:</p>
+      <table>
+        <tr><th>Severity</th><th>Chaos Tree reward</th></tr>
+        <tr><td>Minor</td><td>1× Gold Skip 2 ticket</td></tr>
+        <tr><td>Medium</td><td>1× Gold Skip 3 ticket</td></tr>
+        <tr><td>Major</td><td>1× Gold Choice 3 Jump ticket</td></tr>
+        <tr><td>Severe</td><td>1× Platinum Skip 4 ticket</td></tr>
+        <tr><td>Ultimate</td><td>1× Platinum Choice 4 Jump ticket</td></tr>
+      </table>
+      <p class="muted small">Tree Choice tickets use the tree's existing Choice N Jump: pick from the N nearest nodes to an unlocked node. Tree rewards need a saved tree; if none is active the send button reports that instead of dropping the reward.</p>
       <h3>In this app</h3>
       <ul>
-        <li>Rewards go to the same <b>ticket wallet</b> as the gacha roller: open the Gacha to spend them. Nothing is added until you press <b>Send reward to ticket wallet</b>.</li>
+        <li>Rewards go to the same <b>ticket wallet</b> as the gacha roller by default: open the Gacha to spend them. Switch <b>Reward destination</b> to the active Chaos Tree to award tree tickets instead. Nothing is added until you press the send button.</li>
         <li><b>Award tickets for spins</b> can be switched off if you want curses without the payout.</li>
         <li><b>Hide NSFW curses</b> keeps mature entries out of the pool (on by default), and <b>Spin slowdown</b> controls the wheel: the result is decided before the spin, so the wheel is pure theatre.</li>
         <li><b>Copy</b> grabs the curse, its resolve condition and its reward as text for your story. <b>History</b> keeps your recent curses with a ✓ button to track which ones you've resolved.</li>
