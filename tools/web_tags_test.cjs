@@ -472,11 +472,13 @@ function boot(page, seed, fetchPayload) {
     const stored = staticKey ? w.localStorage.getItem(staticKey) : null;
     const topo = stored ? JSON.parse(stored) : null;
     ok("tree: upgrade stores a compact snapshot",
-      topo && topo.v === 2 && topo.nodes.some(Array.isArray),
+      topo && topo.v === 2 && topo.nodes.some(n => n && n._c === 1),
       topo && JSON.stringify(topo).slice(0, 80));
     const pengRow = topo && topo.nodes.find(n =>
-      Array.isArray(n) && n[1] === "familiar" && n[2] === 465);
-    ok("tree: compact snapshot identifies the upgraded entry", !!pengRow,
+      n && n._c === 1 && n.file === "familiar" && n.number === 465);
+    ok("tree: compact snapshot keeps the entry identity and current tags",
+      pengRow && pengRow.name === "Pengullet" &&
+      JSON.stringify(pengRow.tags) === JSON.stringify(["avian", "ice", "water"]),
       JSON.stringify(pengRow));
 
     // Reload from storage: no missing-topology error, and the compact node

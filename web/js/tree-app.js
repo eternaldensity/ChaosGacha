@@ -210,8 +210,15 @@
         JSON.stringify(e.m || []) === JSON.stringify(nd.meta || []);
       if (!same) { out.push(nd); continue; }
       const flags = (nd.nsfw ? 1 : 0) | (nd.noncon ? 2 : 0) | (nd.tech ? 4 : 0);
-      out.push([nd.id, nd.file, nd.number, nd.rarity,
-        (nd.pos || [0, 0, 0]).slice(), nd.r, flags]);
+      // Keep the identifying/display fields an older tree-app build needs
+      // (file/number/name) so a tab running pre-compact code does not count
+      // every row as a vanished entry. Only the bulky description is omitted;
+      // this build hydrates it from entries.js.
+      out.push({
+        _c: 1, id: nd.id, file: nd.file, number: nd.number, name: nd.name,
+        rarity: nd.rarity, tags: (nd.tags || nd.tg || []).slice(),
+        pos: (nd.pos || [0, 0, 0]).slice(), r: nd.r, flags
+      });
     }
     return {
       v: 2,
@@ -222,17 +229,25 @@
   function expandStatic(p) {
     if (!p || p.v !== 2 || !Array.isArray(p.nodes)) return p;
     const nodes = p.nodes.map(row => {
-      if (!Array.isArray(row)) return row;
-      const [id, file, number, rarity, pos, r, flags] = row;
+      let id, file, number, rarity, pos, r, flags;
+      let oldName, oldTags;
+      if (Array.isArray(row)) {
+        [id, file, number, rarity, pos, r, flags] = row;
+      } else if (row && row._c) {
+        ({ id, file, number, rarity, pos, r, flags } = row);
+        oldName = row.name; oldTags = row.tags;
+      } else {
+        return row;                 // full node, including an old/stale entry
+      }
       const e = ENTRY_MAP.get(file + "#" + number);
       const nd = {
         id, file, number, rarity,
-        name: e ? e.name : "#" + number,
+        name: e ? e.name : (oldName != null ? oldName : "#" + number),
         source: e ? e.s : "",
         tag: e ? e.t : "both",
         description: e ? e.d : "",
         meta: e ? (e.m || []).slice() : [],
-        tags: e ? (e.tags || e.tg || []).slice() : [],
+        tags: e ? (e.tags || e.tg || []).slice() : (oldTags || []).slice(),
         pos: (pos || [0, 0, 0]).slice(), r
       };
       const f = flags | 0;
