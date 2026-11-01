@@ -689,6 +689,16 @@
       if (src.tech) node.tech = true;
       return node;
     };
+    // Tags are display/filter metadata, not part of entry identity. Kept
+    // (unlocked/visible) nodes must still pick up tag edits from the current
+    // data; otherwise an upgraded tree keeps showing old tags forever.
+    const byEntry = new Map();
+    for (const e of (DATA.entries || [])) byEntry.set(key(e), e);
+    const refreshTags = (node) => {
+      const e = byEntry.get(node.file + "#" + node.number);
+      if (e) node.tags = (e.tags || e.tg || []).slice();
+      return node;
+    };
     let refreshed = 0;
     const nodes = rt.nodes.map(nd => {
       const base = {
@@ -698,9 +708,9 @@
         tags: (nd.tags || nd.tg || []).slice(),
         pos: (nd.pos || [0, 0, 0]).slice(), r: nd.r
       };
-      if (keep.has(nd.id)) return stampFlags(base, nd);
+      if (keep.has(nd.id)) return stampFlags(refreshTags(base), nd);
       const e = pickFor(nd);
-      if (!e) return stampFlags(base, nd);
+      if (!e) return stampFlags(refreshTags(base), nd);
       used.add(key(e));
       refreshed++;
       return stampFlags(Object.assign(base, {
@@ -723,10 +733,11 @@
     }
     // Growth for full (unlimited) trees: the current pool may hold entries
     // the old tree never sampled. Append one node per missing entry so the
-    // upgraded tree is complete again. Existing nodes and edges are never
+    // upgraded tree is complete again. Existing positions and edges are never
     // touched — unlocked connections, frontier included, stay exactly as
-    // displayed. New nodes take shell-appropriate positions (a few tries
-    // each, keeping the least crowded), then link to nearest neighbours.
+    // displayed; only display metadata such as tags may be refreshed above.
+    // New nodes take shell-appropriate positions (a few tries each, keeping
+    // the least crowded), then link to nearest neighbours.
     let added = 0;
     if (!t.limit) {
       const P = Object.assign({}, G.DEFAULTS, rt.params || {});

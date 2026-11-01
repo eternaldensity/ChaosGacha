@@ -429,6 +429,44 @@ function boot(page, seed, fetchPayload) {
     dom.window.close();
   }
 
+  // ---------- upgrade refreshes tags on kept (visible) entries --------------
+  {
+    const oldTree = JSON.stringify({
+      trees: [{ id: "tu", name: "Upgrade tags", seed: 7, params: {}, limit: 20,
+                filters: {}, dataVersion: "old", static: true, createdAt: 1 }],
+      states: { tu: { points: 0, cores: 0, inventory: [], unlocked: [0, 1] } },
+      activeId: "tu", guideSeen: true, settings: {},
+    });
+    const oldTopo = JSON.stringify({
+      params: {},
+      nodes: [
+        { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
+          source: "System", tag: "both", description: "", meta: [], tags: [],
+          pos: [0, 0, 0], r: 0 },
+        { id: 1, file: "familiar", number: 465, name: "Pengullet", rarity: 2.0,
+          source: "Palworld", tag: "both", description: "old entry", meta: [],
+          tags: ["avian"], pos: [1, 0, 0], r: 1 },
+      ],
+      edges: [{ a: 0, b: 1, d: 1 }],
+    });
+    const { dom } = await boot("tree.html", {
+      "chaosTree.v1": oldTree, "chaosTree.static.v1.tu": oldTopo,
+    });
+    const w = dom.window, d = w.document;
+    d.getElementById("btnUpgradeActive")
+      .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 800));
+    const saved = JSON.parse(w.localStorage.getItem("chaosTree.v1") || "{}");
+    const up = (saved.trees || []).find(t => /upgraded/.test(t.name));
+    ok("tree: upgrade creates the new tree", !!up, JSON.stringify(saved.trees));
+    const topo = up ? JSON.parse(w.localStorage.getItem("chaosTree.static.v1." + up.id) || "null") : null;
+    const peng = topo && (topo.nodes || []).find(n => n.file === "familiar" && n.number === 465);
+    ok("tree: upgraded visible entry gets the current tags",
+      peng && JSON.stringify(peng.tags) === JSON.stringify(["avian", "ice", "water"]),
+      peng && JSON.stringify(peng.tags));
+    dom.window.close();
+  }
+
   // ---------- jump planner aggregates actual picks across launch nodes ------
   {
     const jumpNodes = [
