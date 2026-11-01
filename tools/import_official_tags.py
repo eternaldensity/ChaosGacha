@@ -61,6 +61,15 @@ FIXES = {
     ("familiar", "Nrvnqsr Chaos"): ["undead"],
 }
 
+# Official tags that are simply wrong for an entry. Applied after the merge
+# and FIXES pass, so re-running this importer does not restore them. Keyed
+# (category, name).
+DROPS = {
+    # Thirty dollars in cash is a mundane item, not a tree/gacha meta effect
+    # (unlike the actual Meta-tagged tickets, tarots, and rule-bending items).
+    ("item", "Thirty Dollars"): ["meta"],
+}
+
 # Curated tags that duplicate a concept the official taxonomy already names on
 # the same entry. When any of the listed official tags is present ours is
 # dropped, so filters see the official name only (the user's "replace our
@@ -169,7 +178,11 @@ def main():
         }
         for extra in FIXES.get((fname, cur["name"]), ()):
             union.add(gt.normalize_tag(extra))
-        if not union:
+        for drop in DROPS.get((fname, cur["name"]), ()):
+            union.discard(gt.normalize_tag(drop))
+        # A line with tags still needs rewriting when DROPS emptied the union
+        # (otherwise a dropped tag would survive the next import).
+        if not union and not TAG_TOKEN_RE.search(line):
             continue
         stats["tagged"] += 1
         counts.update(union)

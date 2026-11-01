@@ -1441,7 +1441,7 @@
 721. Peach Tree, 1.6, Chinese Myth
 #(Tag:holy)(Tag:nature)An apotropaic Peach Tree whose leaves, bark, wood, and fruit ward evil, curses, and demons, with wooden swords as effective as steel against ghosts or demons. Comes with multiple saplings.
 722. Thirty Dollars, 0.3, Generic
-#(Tag:meta)Thirty dollars in cash.
+#Thirty dollars in cash.
 723. Life Fiber Loom, 5.9, Generic
 #(Tag:life)(Tag:production)A large sophisticated Loom weaving Life Fibers for clothing by sacrificing own or others' vitality into fiber. Higher-quality lifeforce yields more fiber.
 724. Flesh Eater Core, 5.2, Xenoblade
