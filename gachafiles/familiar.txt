@@ -921,13 +921,13 @@
 461. Lamball, 1.2, Palworld
 #(Tag:beast)(Tag:medium-size)(Tag:resource)A round woolly starter Pal whose fluffy body makes a perfect shield and pillow.
 462. Chikipi, 1.0, Palworld
-#(Tag:avian)(Tag:breeding)(Tag:resource)(Tag:small-size)A cheerful chicken Pal that lays eggs wherever it wanders.
+#(Tag:avian)(Tag:breeding)(Tag:medium-size)(Tag:resource)A cheerful chicken Pal that lays eggs wherever it wanders.
 463. Lifmunk, 2.2, Palworld
 #(Tag:beast)(Tag:flying)(Tag:ranger)A gliding squirrel Pal that mans a submachine gun from your shoulder.
 464. Foxparks, 2.4, Palworld
-#(Tag:beast)(Tag:fire)(Tag:shapeshifter)A fox Pal that transforms into a living flamethrower when you hug it. Huggy Fire.
+#(Tag:beast)(Tag:fire)A fox Pal that transforms into a living flamethrower when you hug it. Huggy Fire.
 465. Pengullet, 2.0, Palworld
-#(Tag:avian)A penguin Pal that loads itself into a launcher as living ammunition.
+#(Tag:avian)(Tag:ice)(Tag:water)A penguin Pal that loads itself into a launcher as living ammunition.
 466. Tocotoco, 2.2, Palworld
 #(Tag:avian)(Tag:breeding)(Tag:kinetic)(Tag:resource)A dapper bird Pal that fires explosive eggs from its Eggbomb Launcher.
 467. Tanzee, 2.6, Palworld
@@ -1173,7 +1173,7 @@
 587. ADA, 8.4, Satisfactory
 #FICSIT's syrup-voiced AI, installed as the voice of your Chaos Gacha: she narrates your pulls, benchmarks you against other pioneers (always unfavorably), and posts up to three milestones at a time, production quotas, artifact retrievals, exploitation targets, scaled to wherever you are, which she treats as a FICSIT claim. Each completed milestone pays one ticket of tier matching the feat, usually plain bronze or silver, at most one payout per 7 days; new milestones post as old ones complete. The mute button is decorative, and HR complaints go straight to the shredder.
 588. Croajiro, 2.4, Palworld
-#(Tag:aquatic)(Tag:small-size)(Tag:water)A small frog-like Pal with a windbag abdomen. It stores a charge, then launches whoever sits on it high into the air, and it can squeeze out a blast of water hard enough to knock a man down. Cheerful, loyal, and braver than it has any right to be.
+#(Tag:aquatic)(Tag:medium-size)(Tag:water)A small frog-like Pal with a windbag abdomen. It stores a charge, then launches whoever sits on it high into the air, and it can squeeze out a blast of water hard enough to knock a man down. Cheerful, loyal, and braver than it has any right to be.
 589. Elphidran Aqua, 5.5, Palworld
 #(Tag:aquatic)(Tag:draconic)(Tag:flying)(Tag:water)A pale water dragon, gentle by nature and dreadful when roused, that swims as easily as it flies and can be ridden as a flying mount. Its breath soaks armour in clinging brine, it strengthens water magic used near it, and where its kin breathe fire it calls down healing rain instead.
 590. Shaolong, 7.7, Palworld
