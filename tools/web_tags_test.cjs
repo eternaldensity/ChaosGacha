@@ -444,8 +444,9 @@ function boot(page, seed, fetchPayload) {
           source: "System", tag: "both", description: "", meta: [], tags: [],
           pos: [0, 0, 0], r: 0 },
         { id: 1, file: "familiar", number: 465, name: "Pengullet", rarity: 2.0,
-          source: "Palworld", tag: "both", description: "old entry", meta: [],
-          tags: ["avian"], pos: [1, 0, 0], r: 1 },
+          source: "Palworld", tag: "both",
+          description: "A penguin Pal that loads itself into a launcher as living ammunition.",
+          meta: [], tags: ["avian"], pos: [1, 0, 0], r: 1 },
       ],
       edges: [{ a: 0, b: 1, d: 1 }],
     });
@@ -467,11 +468,57 @@ function boot(page, seed, fetchPayload) {
     const saved = JSON.parse(w.localStorage.getItem("chaosTree.v1") || "{}");
     const up = (saved.trees || []).find(t => /upgraded/.test(t.name));
     ok("tree: upgrade creates the new tree", !!up, JSON.stringify(saved.trees));
-    const topo = up ? JSON.parse(w.localStorage.getItem("chaosTree.static.v1." + up.id) || "null") : null;
-    const peng = topo && (topo.nodes || []).find(n => n.file === "familiar" && n.number === 465);
-    ok("tree: upgraded visible entry gets the current tags",
-      peng && JSON.stringify(peng.tags) === JSON.stringify(["avian", "ice", "water"]),
-      peng && JSON.stringify(peng.tags));
+    const staticKey = up ? "chaosTree.static.v1." + up.id : null;
+    const stored = staticKey ? w.localStorage.getItem(staticKey) : null;
+    const topo = stored ? JSON.parse(stored) : null;
+    ok("tree: upgrade stores a compact snapshot",
+      topo && topo.v === 2 && topo.nodes.some(Array.isArray),
+      topo && JSON.stringify(topo).slice(0, 80));
+    const pengRow = topo && topo.nodes.find(n =>
+      Array.isArray(n) && n[1] === "familiar" && n[2] === 465);
+    ok("tree: compact snapshot identifies the upgraded entry", !!pengRow,
+      JSON.stringify(pengRow));
+
+    // Reload from storage: no missing-topology error, and the compact node
+    // hydrates its display fields/tags from the current entries bundle.
+    const seed = { "chaosTree.v1": JSON.stringify(saved) };
+    if (staticKey) seed[staticKey] = stored;
+    const reloaded = await boot("tree.html", seed);
+    const rw = reloaded.dom.window, rd = rw.document;
+    const owned2 = [...rd.querySelectorAll("#tabs button")]
+      .find(b => b.dataset.tab === "owned");
+    owned2.dispatchEvent(new rw.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 150));
+    ok("tree: compact upgraded tree reloads without a missing-data error",
+      !/tree data is missing/.test(rd.getElementById("toast").textContent),
+      rd.getElementById("toast").textContent);
+    const reloadedText = rd.getElementById("ownedBody").textContent;
+    ok("tree: reloaded upgraded tree shows current tags",
+      /🏷 ice/.test(reloadedText) && /🏷 water/.test(reloadedText),
+      reloadedText.slice(0, 200));
+
+    // A Fresh copy of an upgraded (compact) tree must stay compact too; this
+    // is the path that used to duplicate the full ~1.7 MB payload.
+    const treesTab = [...rd.querySelectorAll("#tabs button")]
+      .find(b => b.dataset.tab === "trees");
+    treesTab.dispatchEvent(new rw.MouseEvent("click", { bubbles: true }));
+    const upRow = [...rd.querySelectorAll("#treeList li")]
+      .find(li => /upgraded/i.test(li.textContent));
+    const freshBtn = upRow && [...upRow.querySelectorAll("button")]
+      .find(b => /Fresh/.test(b.textContent));
+    ok("tree: upgraded row offers Fresh", !!freshBtn);
+    if (freshBtn) {
+      freshBtn.dispatchEvent(new rw.MouseEvent("click", { bubbles: true }));
+      await new Promise(r => setTimeout(r, 300));
+      const db2 = JSON.parse(rw.localStorage.getItem("chaosTree.v1") || "{}");
+      const fresh = (db2.trees || []).find(t => /\(fresh\)/.test(t.name));
+      const freshRaw = fresh && rw.localStorage.getItem("chaosTree.static.v1." + fresh.id);
+      const freshPayload = freshRaw && JSON.parse(freshRaw);
+      ok("tree: fresh copy of an upgraded tree stays compact",
+        freshPayload && freshPayload.v === 2,
+        freshPayload && JSON.stringify(freshPayload).slice(0, 80));
+    }
+    reloaded.dom.window.close();
     dom.window.close();
   }
 

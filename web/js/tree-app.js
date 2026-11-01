@@ -59,8 +59,11 @@
   // Current tags by entry identity. Tags are display/filter metadata, not
   // part of a tree's topology, so local trees can follow tag edits without
   // resampling or changing node costs.
-  const ENTRY_TAGS = new Map();
-  for (const e of (DATA.entries || [])) ENTRY_TAGS.set(entryKey(e), e.tags || e.tg || []);
+  const ENTRY_TAGS = new Map(), ENTRY_MAP = new Map();
+  for (const e of (DATA.entries || [])) {
+    ENTRY_TAGS.set(entryKey(e), e.tags || e.tg || []);
+    ENTRY_MAP.set(entryKey(e), e);
+  }
   function currentEntryTags(nd) { return ENTRY_TAGS.get(entryKey(nd)); }
   function refreshRuntimeTags(rt) {
     for (const nd of (rt.nodes || [])) {
@@ -191,18 +194,86 @@
   const memoryStatic = new Map(); // treeId -> payload (quota fallback)
   const memoryGen = new Map(); // treeId -> {key, res} generated-tree cache
   const LS_GEN = "chaosTree.gen.v1";
+
+  // Upgraded trees can be large enough to exceed localStorage when stored with
+  // full entry text (two ~1.7 MB snapshots plus caches is common). Store
+  // current-data nodes as compact rows and rebuild their display fields from
+  // entries.js on load. Nodes whose text differs from the current entry stay
+  // as full objects, so old/imported content is never rewritten.
+  function compactStatic(nodes, edges) {
+    const out = [];
+    for (const nd of nodes) {
+      const e = ENTRY_MAP.get(entryKey(nd));
+      const same = e &&
+        e.name === nd.name && (e.s || "") === (nd.source || "") &&
+        (e.t || "") === (nd.tag || "") && (e.d || "") === (nd.description || "") &&
+        JSON.stringify(e.m || []) === JSON.stringify(nd.meta || []);
+      if (!same) { out.push(nd); continue; }
+      const flags = (nd.nsfw ? 1 : 0) | (nd.noncon ? 2 : 0) | (nd.tech ? 4 : 0);
+      out.push([nd.id, nd.file, nd.number, nd.rarity,
+        (nd.pos || [0, 0, 0]).slice(), nd.r, flags]);
+    }
+    return {
+      v: 2,
+      nodes: out,
+      edges: edges.map(e => [e.a, e.b, e.d])
+    };
+  }
+  function expandStatic(p) {
+    if (!p || p.v !== 2 || !Array.isArray(p.nodes)) return p;
+    const nodes = p.nodes.map(row => {
+      if (!Array.isArray(row)) return row;
+      const [id, file, number, rarity, pos, r, flags] = row;
+      const e = ENTRY_MAP.get(file + "#" + number);
+      const nd = {
+        id, file, number, rarity,
+        name: e ? e.name : "#" + number,
+        source: e ? e.s : "",
+        tag: e ? e.t : "both",
+        description: e ? e.d : "",
+        meta: e ? (e.m || []).slice() : [],
+        tags: e ? (e.tags || e.tg || []).slice() : [],
+        pos: (pos || [0, 0, 0]).slice(), r
+      };
+      const f = flags | 0;
+      if (f & 1) nd.nsfw = true;
+      if (f & 2) nd.noncon = true;
+      if (f & 4) nd.tech = true;
+      return nd;
+    });
+    const edges = (p.edges || []).map(e =>
+      Array.isArray(e) ? { a: e[0], b: e[1], d: e[2] } : e);
+    const full = { nodes, edges, params: p.params || {} };
+    Object.defineProperty(full, "_compact", { value: true, enumerable: false });
+    return full;
+  }
   function loadStatic(id) {
     if (memoryStatic.has(id)) return memoryStatic.get(id);
     try {
       const raw = localStorage.getItem(LS_STATIC + "." + id);
-      if (raw) { const p = JSON.parse(raw); memoryStatic.set(id, p); return p; }
+      if (raw) {
+        const p = expandStatic(JSON.parse(raw));
+        memoryStatic.set(id, p);
+        return p;
+      }
     } catch (e) { /* ignore */ }
     return null;
   }
   function saveStatic(id, payload) {
     memoryStatic.set(id, payload);
     try { localStorage.setItem(LS_STATIC + "." + id, JSON.stringify(payload)); }
-    catch (e) { toast("Tree too big for browser storage; it will live in memory until you export it.", true); }
+    catch (e) { toast("Browser storage is full: this tree is only in memory. Delete old trees or export a backup, then try again.", true); }
+  }
+  function saveStaticCompact(id, nodes, edges) {
+    const full = { nodes, edges };
+    Object.defineProperty(full, "_compact", { value: true, enumerable: false });
+    memoryStatic.set(id, full);
+    try {
+      localStorage.setItem(LS_STATIC + "." + id,
+        JSON.stringify(compactStatic(nodes, edges)));
+    } catch (e) {
+      toast("Browser storage is full: this tree is only in memory. Delete old trees or export a backup, then try again.", true);
+    }
   }
   function getTree(id) { return DB.trees.find(t => t.id === id) || null; }
   function activeTree() { return getTree(DB.activeId); }
@@ -234,7 +305,7 @@
     let rt;
     if (tree.static) {
       const payload = loadStatic(tree.id);
-      if (!payload) throw new Error("static tree data missing (re-import the file)");
+      if (!payload) throw new Error("tree data is missing: browser storage may be full. Re-import a backup or delete old trees, then upgrade again.");
       rt = G.buildRuntime(payload);
       rt.params = payload.params || {};
     } else {
@@ -631,8 +702,11 @@
     };
     if (t.static) {
       const p = loadStatic(t.id);
-      if (!p) throw new Error("static tree data missing (re-import the file)");
-      saveStatic(nid, p);
+      if (!p) throw new Error("tree data is missing: browser storage may be full. Re-import a backup or delete old trees.");
+      // Fresh copies reset progress, so they never need the old full payload:
+      // compact them even when the source snapshot predates compact storage.
+      if (p._compact || fresh) saveStaticCompact(nid, p.nodes, p.edges);
+      else saveStatic(nid, p);
     } else {
       const hit = loadGenerated(t.id);
       const nk = genCacheKey(nt);
@@ -818,7 +892,7 @@
       }
     }
     const nid = uid();
-    saveStatic(nid, { nodes, edges });
+    saveStaticCompact(nid, nodes, edges);
     const nst = JSON.parse(JSON.stringify(st));
     delete nst.swaps; delete nst.added_links; delete nst.entry_swaps;
     const nt = {
