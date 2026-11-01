@@ -56,20 +56,29 @@
     const num = x.number != null ? x.number : x.n;
     return file + "#" + num;
   }
-  // Current tags by entry identity. Tags are display/filter metadata, not
-  // part of a tree's topology, so local trees can follow tag edits without
-  // resampling or changing node costs.
-  const ENTRY_TAGS = new Map(), ENTRY_MAP = new Map();
-  for (const e of (DATA.entries || [])) {
-    ENTRY_TAGS.set(entryKey(e), e.tags || e.tg || []);
-    ENTRY_MAP.set(entryKey(e), e);
+  // Saved trees identify entries only by category + number. Everything
+  // descriptive is looked up from the current bundle so name/description/tag
+  // fixes are automatic and free; only entry additions/removals need Upgrade.
+  const ENTRY_MAP = new Map();
+  for (const e of (DATA.entries || [])) ENTRY_MAP.set(entryKey(e), e);
+  function hydrateNode(nd) {
+    const e = ENTRY_MAP.get(entryKey(nd));
+    if (!e) return nd;               // removed entry: keep the saved fallback
+    nd.name = e.name;
+    nd.rarity = e.r;
+    nd.source = e.s;
+    nd.tag = e.t;
+    nd.description = e.d;
+    nd.meta = (e.m || []).slice();
+    nd.tags = (e.tags || e.tg || []).slice();
+    delete nd.nsfw; delete nd.noncon; delete nd.tech;
+    if (e.nsfw) nd.nsfw = true;
+    if (e.noncon) nd.noncon = true;
+    if (e.tech) nd.tech = true;
+    return nd;
   }
-  function currentEntryTags(nd) { return ENTRY_TAGS.get(entryKey(nd)); }
-  function refreshRuntimeTags(rt) {
-    for (const nd of (rt.nodes || [])) {
-      const tags = currentEntryTags(nd);
-      if (tags) nd.tags = tags.slice();
-    }
+  function hydrateRuntimeEntries(rt) {
+    for (const nd of (rt.nodes || [])) hydrateNode(nd);
   }
 
   function nodeTags(nd) { return (nd && (nd.tags || nd.tg)) || []; }
@@ -195,65 +204,62 @@
   const memoryGen = new Map(); // treeId -> {key, res} generated-tree cache
   const LS_GEN = "chaosTree.gen.v1";
 
-  // Upgraded trees can be large enough to exceed localStorage when stored with
-  // full entry text (two ~1.7 MB snapshots plus caches is common). Store
-  // current-data nodes as compact rows and rebuild their display fields from
-  // entries.js on load. Nodes whose text differs from the current entry stay
-  // as full objects, so old/imported content is never rewritten.
+  // Saved trees carry only entry identity and layout. Everything descriptive
+  // comes from entries.js at load; full objects are kept only for entries that
+  // no longer exist in the current data, so an old snapshot still has a
+  // readable fallback.
   function compactStatic(nodes, edges) {
     const out = [];
     for (const nd of nodes) {
-      const e = ENTRY_MAP.get(entryKey(nd));
-      const same = e &&
-        e.name === nd.name && (e.s || "") === (nd.source || "") &&
-        (e.t || "") === (nd.tag || "") && (e.d || "") === (nd.description || "") &&
-        JSON.stringify(e.m || []) === JSON.stringify(nd.meta || []);
-      if (!same) { out.push(nd); continue; }
-      const flags = (nd.nsfw ? 1 : 0) | (nd.noncon ? 2 : 0) | (nd.tech ? 4 : 0);
-      // Keep the identifying/display fields an older tree-app build needs
-      // (file/number/name) so a tab running pre-compact code does not count
-      // every row as a vanished entry. Only the bulky description is omitted;
-      // this build hydrates it from entries.js.
+      if (!ENTRY_MAP.has(entryKey(nd))) { out.push(nd); continue; }
       out.push({
-        _c: 1, id: nd.id, file: nd.file, number: nd.number, name: nd.name,
-        rarity: nd.rarity, tags: (nd.tags || nd.tg || []).slice(),
-        pos: (nd.pos || [0, 0, 0]).slice(), r: nd.r, flags
+        _c: 1, id: nd.id, file: nd.file, number: nd.number,
+        pos: (nd.pos || [0, 0, 0]).slice(), r: nd.r
       });
     }
     return {
-      v: 2,
+      v: 3,
       nodes: out,
       edges: edges.map(e => [e.a, e.b, e.d])
     };
   }
   function expandStatic(p) {
-    if (!p || p.v !== 2 || !Array.isArray(p.nodes)) return p;
+    if (!p || (p.v !== 2 && p.v !== 3) || !Array.isArray(p.nodes)) return p;
     const nodes = p.nodes.map(row => {
-      let id, file, number, rarity, pos, r, flags;
-      let oldName, oldTags;
-      if (Array.isArray(row)) {
+      let id, file, number, pos, r, rarity, flags;
+      let oldName, oldSource, oldTag, oldMeta, oldTags;
+      if (Array.isArray(row)) {      // v2 array row
         [id, file, number, rarity, pos, r, flags] = row;
-      } else if (row && row._c) {
-        ({ id, file, number, rarity, pos, r, flags } = row);
-        oldName = row.name; oldTags = row.tags;
+      } else if (row && row._c) {    // v3 identity row (or v2 object row)
+        ({ id, file, number, pos, r } = row);
+        rarity = row.rarity; flags = row.flags;
+        oldName = row.name; oldSource = row.source; oldTag = row.tag;
+        oldMeta = row.meta; oldTags = row.tags;
       } else {
-        return row;                 // full node, including an old/stale entry
+        return row;                 // full node / removed-entry fallback
       }
       const e = ENTRY_MAP.get(file + "#" + number);
       const nd = {
-        id, file, number, rarity,
+        id, file, number,
         name: e ? e.name : (oldName != null ? oldName : "#" + number),
-        source: e ? e.s : "",
-        tag: e ? e.t : "both",
+        rarity: e ? e.r : (rarity != null ? rarity : 0),
+        source: e ? e.s : (oldSource || ""),
+        tag: e ? e.t : (oldTag || "both"),
         description: e ? e.d : "",
-        meta: e ? (e.m || []).slice() : [],
+        meta: e ? (e.m || []).slice() : (oldMeta || []).slice(),
         tags: e ? (e.tags || e.tg || []).slice() : (oldTags || []).slice(),
         pos: (pos || [0, 0, 0]).slice(), r
       };
-      const f = flags | 0;
-      if (f & 1) nd.nsfw = true;
-      if (f & 2) nd.noncon = true;
-      if (f & 4) nd.tech = true;
+      if (e) {
+        if (e.nsfw) nd.nsfw = true;
+        if (e.noncon) nd.noncon = true;
+        if (e.tech) nd.tech = true;
+      } else {
+        const f = flags | 0;
+        if (f & 1) nd.nsfw = true;
+        if (f & 2) nd.noncon = true;
+        if (f & 4) nd.tech = true;
+      }
       return nd;
     });
     const edges = (p.edges || []).map(e =>
@@ -275,9 +281,7 @@
     return null;
   }
   function saveStatic(id, payload) {
-    memoryStatic.set(id, payload);
-    try { localStorage.setItem(LS_STATIC + "." + id, JSON.stringify(payload)); }
-    catch (e) { toast("Browser storage is full: this tree is only in memory. Delete old trees or export a backup, then try again.", true); }
+    saveStaticCompact(id, payload.nodes || [], payload.edges || []);
   }
   function saveStaticCompact(id, nodes, edges) {
     const full = { nodes, edges };
@@ -330,7 +334,11 @@
       const key = genCacheKey(tree);
       const hit = key && loadGenerated(tree.id);
       let res = (hit && hit.key === key) ? hit.res : null;
-      if (res) res = JSON.parse(JSON.stringify(res));
+      if (res) {
+        // Rewrite a legacy full cache without entry text on first use.
+        if (!hit.res._compact) saveGenerated(tree.id, key, hit.res);
+        res = JSON.parse(JSON.stringify(res));
+      }
       if (!res && hit && hit.res && hit.res.nodes && hit.res.nodes.length) {
         // Same seed/config but new data: regenerating would silently
         // reassign entries (and links) under saved progress, because node
@@ -374,7 +382,7 @@
     E.applySwaps(rt, st);
     E.applyAddedLinks(rt, st);
     E.applyEntrySwaps(rt, st);
-    refreshRuntimeTags(rt);
+    hydrateRuntimeEntries(rt);
     runtimes.set(tree.id, rt);
     return rt;
   }
@@ -389,7 +397,12 @@
     if (memoryGen.has(id)) return memoryGen.get(id);
     try {
       const raw = localStorage.getItem(LS_GEN + "." + id);
-      if (raw) { const p = JSON.parse(raw); memoryGen.set(id, p); return p; }
+      if (raw) {
+        const p = JSON.parse(raw);
+        if (p && p.res && (p.res.v === 2 || p.res.v === 3)) p.res = expandStatic(p.res);
+        memoryGen.set(id, p);
+        return p;
+      }
     } catch (e) { /* ignore */ }
     return null;
   }
@@ -397,11 +410,47 @@
     // Snapshot: the live runtime aliases its nodes, and swap application
     // mutates them in place, so the cache must own an isolated copy.
     let snap = null;
-    try { snap = JSON.parse(JSON.stringify({ key, res })); }
-    catch (e) { return; }
+    try {
+      const full = (res && (res.v === 2 || res.v === 3)) ? expandStatic(res) : res;
+      snap = JSON.parse(JSON.stringify({ key, res: full }));
+    } catch (e) { return; }
+    Object.defineProperty(snap.res, "_compact", { value: true, enumerable: false });
     memoryGen.set(id, snap);
-    try { localStorage.setItem(LS_GEN + "." + id, JSON.stringify(snap)); }
-    catch (e) { /* quota: regenerate next time, as today */ }
+    try {
+      localStorage.setItem(LS_GEN + "." + id, JSON.stringify({
+        key, res: compactStatic(snap.res.nodes || [], snap.res.edges || [])
+      }));
+    } catch (e) { /* quota: regenerate next time, as today */ }
+  }
+
+  // One-time bridge from the old data-version scheme: adopt the identity-only
+  // version, re-key generated caches, and rewrite static payloads without
+  // entry text. This also frees storage taken by old full snapshots.
+  function migrateTreeVersions() {
+    let changed = false;
+    for (const t of DB.trees) {
+      if (t.versionScheme === 2) continue;
+      t.versionScheme = 2;
+      t.dataVersion = DATA.dataVersion || null;
+      delete t.contentDataVersion;
+      changed = true;
+      if (!t.static) {
+        const hit = loadGenerated(t.id);
+        if (hit && hit.key) {
+          try {
+            const k = JSON.parse(hit.key);
+            if (Array.isArray(k) && k.length >= 5) {
+              k[4] = DATA.dataVersion || null;
+              saveGenerated(t.id, JSON.stringify(k), hit.res);
+            }
+          } catch (e) { /* leave the cache; it can regenerate */ }
+        }
+      } else {
+        const p = loadStatic(t.id);
+        if (p) saveStaticCompact(t.id, p.nodes || [], p.edges || []);
+      }
+    }
+    if (changed) saveDB();
   }
 
   // All known gacha sources, sorted. Snapshotted onto tree records as
@@ -442,6 +491,9 @@
   // no version at all is left alone.
   function treeMismatch(t) {
     if (!DATA.dataVersion) return false;
+    // A size-limited tree intentionally samples only part of the pool; new
+    // entries are not supposed to be added, so don't nag about them.
+    if (t.limit) return false;
     if (t.static) {
       // A static snapshot is deliberately frozen. Once the player chooses to
       // keep it, stop flagging its version; vanished entries still warn via
@@ -524,15 +576,13 @@
     if (at && (treeMismatch(at) || missCount)) {
       warn.style.display = "block";
       $("verWarnText").textContent =
-        `"${at.name}" was built from data v${at.contentDataVersion || at.dataVersion || "an older version"}, current data is ` +
-        `v${DATA.dataVersion}. ` +
+        `"${at.name}" predates the current entry list (data v${at.contentDataVersion || at.dataVersion || "older"}), ` +
+        `current data is v${DATA.dataVersion}. Names, descriptions, tags, rarity, and other entry details are already looked up live. ` +
         (at.static
-          ? `It is a frozen snapshot, so it keeps the entries it was built from; new entries and tags only enter it through Upgrade. `
-          : `It keeps the entries it was built from (regenerating would silently reassign entries and links under your progress). `) +
-        `Use Upgrade to keep your unlocked and visible nodes and resample the unseen ones from the current data` +
-        (at.static ? `.` : `, or generate a fresh tree below.`) +
+          ? `This frozen snapshot keeps its existing nodes; Upgrade adds newly introduced entries only. `
+          : `Existing nodes and links stay exactly where they are; Upgrade adds newly introduced entries (full trees only). `) +
         (missCount ? ` ${missCount} of its entries no longer exist in the current data.` : "") +
-        (offerKeep ? ` Keep this snapshot to stop this notice without resampling.` : "") +
+        (offerKeep ? ` Keep this snapshot to stop this notice without adding new entries.` : "") +
         ` Export a backup first if its progress matters.`;
     } else warn.style.display = "none";
     ul.innerHTML = "";
@@ -711,6 +761,7 @@
       seed: t.seed, params: JSON.parse(JSON.stringify(t.params || {})),
       limit: t.limit || null, filters: JSON.parse(JSON.stringify(t.filters || {})),
       knownSources: t.knownSources ? t.knownSources.slice() : undefined,
+      versionScheme: 2,
       static: !!t.static, createdAt: Date.now(),
       dataVersion: fresh && !t.static ? (DATA.dataVersion || null) : (t.dataVersion || null),
       snapshotKept: t.snapshotKept ? true : undefined
@@ -718,10 +769,7 @@
     if (t.static) {
       const p = loadStatic(t.id);
       if (!p) throw new Error("tree data is missing: browser storage may be full. Re-import a backup or delete old trees.");
-      // Fresh copies reset progress, so they never need the old full payload:
-      // compact them even when the source snapshot predates compact storage.
-      if (p._compact || fresh) saveStaticCompact(nid, p.nodes, p.edges);
-      else saveStatic(nid, p);
+      saveStatic(nid, p);
     } else {
       const hit = loadGenerated(t.id);
       const nk = genCacheKey(nt);
@@ -735,13 +783,14 @@
     saveDB(); renderTrees(); refreshAll();
     return nt;
   }
-  // Upgrade: like Copy, but the copy's unseen nodes are resampled from the
-  // current data version while unlocked + visible entries — and the whole
-  // inventory, wallet, and history — carry over. Full (unlimited) trees
-  // also grow: pool entries missing from the tree are appended as new
-  // nodes. Positions and links bake in as displayed, so recorded
-  // swaps/links/entry-swaps are dropped from the copied state. The result
-  // is stored as a static (custom) tree stamped with the current data version.
+  // Upgrade: like Copy, but appends entries introduced since the tree was
+  // made. Existing node identities, positions, and links are preserved —
+  // entry text/tags/rarity are always looked up live, so nothing needs
+  // resampling. Full (unlimited) trees grow; size-limited trees keep their
+  // sample. The inventory, wallet, and history carry over, swaps/links/
+  // entry-swaps are dropped (their effects are already baked into the
+  // topology), and the result is a static tree stamped with the current
+  // identity version.
   // Sources absent from a tree's filter, with the ones pre-checked that
   // should be added on upgrade. New sources default to included (matching
   // the New-Tree checkboxes); knownSources distinguishes them from
@@ -766,65 +815,22 @@
     let filters = Object.assign({}, t.filters || {});
     const extra = (extraSources || []).filter(s => !stored.has(s));
     if (hasFilter && extra.length) filters.sources = [...stored, ...extra];
-    const m = E.viewState(rt, st);
-    const keep = new Set(st.unlocked || []);
-    for (const id of E.visible(rt, st.unlocked, m)) keep.add(id);
     const pool = G.filterEntries(DATA.entries, filters);
     if (!pool.length) throw new Error("no entries match this tree's filters in the current data");
     const key = e => e.f + "#" + e.n;
     const used = new Set();
-    for (const nd of rt.nodes) if (keep.has(nd.id)) used.add(nd.file + "#" + nd.number);
-    const byKey = new Map(), byFile = new Map();
-    for (const e of pool) {
-      const k = e.f + "|" + classOf(e.r).name;
-      if (!byKey.has(k)) byKey.set(k, []);
-      byKey.get(k).push(e);
-      if (!byFile.has(e.f)) byFile.set(e.f, []);
-      byFile.get(e.f).push(e);
-    }
-    const pickFor = nd => {
-      const lists = [byKey.get(nd.file + "|" + classOf(nd.rarity).name) || [],
-        byFile.get(nd.file) || []];
-      for (const list of lists) {
-        const cands = list.filter(e => !used.has(key(e)));
-        if (cands.length) return cands[Math.floor(Math.random() * cands.length)];
-      }
-      return null;
-    };
-    const stampFlags = (node, src) => {
-      delete node.nsfw; delete node.noncon; delete node.tech;
-      if (src.nsfw) node.nsfw = true;
-      if (src.noncon) node.noncon = true;
-      if (src.tech) node.tech = true;
-      return node;
-    };
-    // Tags are display/filter metadata, not part of entry identity. Kept
-    // (unlocked/visible) nodes must still pick up tag edits from the current
-    // data; otherwise an upgraded tree keeps showing old tags forever.
-    const refreshTags = (node) => {
-      const tags = currentEntryTags(node);
-      if (tags) node.tags = tags.slice();
-      return node;
-    };
-    let refreshed = 0;
+    // Keep every existing node exactly where it is. Entry data is looked up
+    // live at runtime, so Upgrade only appends entries that are new to the
+    // tree (full trees only); it never reassigns unseen nodes.
     const nodes = rt.nodes.map(nd => {
-      const base = {
+      used.add(nd.file + "#" + nd.number);
+      return hydrateNode({
         id: nd.id, file: nd.file, number: nd.number, name: nd.name,
         rarity: nd.rarity, source: nd.source, tag: nd.tag,
         description: nd.description, meta: (nd.meta || []).slice(),
         tags: (nd.tags || nd.tg || []).slice(),
         pos: (nd.pos || [0, 0, 0]).slice(), r: nd.r
-      };
-      if (keep.has(nd.id)) return stampFlags(refreshTags(base), nd);
-      const e = pickFor(nd);
-      if (!e) return stampFlags(refreshTags(base), nd);
-      used.add(key(e));
-      refreshed++;
-      return stampFlags(Object.assign(base, {
-        file: e.f, number: e.n, name: e.name, rarity: e.r,
-        source: e.s, tag: e.t, description: e.d,
-        meta: (e.m || []).slice(), tags: (e.tags || e.tg || []).slice()
-      }), e);
+      });
     });
     const edges = [];
     const byId = {};
@@ -914,7 +920,7 @@
       id: nid, name: (t.name + " (upgraded)").slice(0, 60),
       seed: t.seed, params: JSON.parse(JSON.stringify(t.params || {})),
       limit: t.limit || null, filters: JSON.parse(JSON.stringify(filters)),
-      knownSources: currentSources.slice(),
+      knownSources: currentSources.slice(), versionScheme: 2,
       static: true, createdAt: Date.now(), dataVersion: DATA.dataVersion || null
     };
     DB.trees.push(nt);
@@ -922,9 +928,9 @@
     DB.activeId = nid;
     selectedId = 0;
     saveDB(); renderTrees(); refreshAll();
-    const hidden = nodes.length - keep.size - added;
-    toast(`Upgraded as "${nt.name}": kept ${keep.size}, refreshed ${refreshed} of ${hidden} unseen` +
-      (added ? `, +${added} new` : "") + ".");
+    const existing = nodes.length - added;
+    toast(`Upgraded as "${nt.name}": kept ${existing} nodes` +
+      (added ? `, +${added} new` : " (no new entries)") + ".");
     return nt;
   }
   // Inverse of readGenForm: load a saved (generated, non-static) tree's
@@ -1058,7 +1064,7 @@
       const tree = {
         id: uid(), name: form.name, seed: form.seed, params: form.params,
         limit: form.limit, filters: form.filters,
-        knownSources: form.knownSources || allSources(),
+        knownSources: form.knownSources || allSources(), versionScheme: 2,
         createdAt: Date.now(), dataVersion: DATA.dataVersion || null
       };
       DB.trees.push(tree);
@@ -1141,8 +1147,8 @@
         const tree = { id: uid(), name: String(td.name || f.name).slice(0, 60),
           seed: td.seed != null ? td.seed : Math.floor(Math.random() * 1e9),
           params: td.params || {}, limit: td.limit || null,
-          filters: td.filters || {}, dataVersion: td.dataVersion || null,
-          snapshotKept: !!td.snapshotKept,
+          filters: td.filters || {}, dataVersion: DATA.dataVersion || null,
+          snapshotKept: !!td.snapshotKept, versionScheme: 2,
           static: !!td.static, createdAt: Date.now() };
         if (td.static && td.topology) saveStatic(tree.id, td.topology);
         DB.trees.push(tree);
@@ -1153,7 +1159,7 @@
       } else if (payload && payload.format === "chaos-tree" && payload.nodes && payload.edges) {
         const tree = { id: uid(), name: f.name.replace(/\.json$/i, "").slice(0, 60),
           seed: payload.seed != null ? payload.seed : 0, params: {}, limit: null,
-          dataVersion: null, static: true, createdAt: Date.now() };
+          dataVersion: null, versionScheme: 2, static: true, createdAt: Date.now() };
         saveStatic(tree.id, { nodes: payload.nodes, edges: payload.edges });
         DB.trees.push(tree);
         DB.states[tree.id] = E.newState();
@@ -3108,6 +3114,7 @@
     const n = (DATA.entries || []).length;
     $("dataVer").textContent = `data v${DATA.dataVersion || "?"} · ${n} entries`;
   } catch (e) {}
+  migrateTreeVersions();
   renderTrees();
   if (DB.activeId && getTree(DB.activeId)) showTab("view3d");
   else showTab("trees");

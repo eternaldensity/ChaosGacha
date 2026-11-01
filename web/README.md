@@ -17,11 +17,12 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   `data/entries.js` (deterministic per seed; seeds are app-local, not
   identical to the Python generator's output for the same seed).
   The Trees tab offers copy (with progress) and fresh-clone (same
-  parameters, new progress). Each tree records the data version it was
-  generated with; a mismatch warns that regeneration may differ. Theme-tag
-  additions are excluded from that version, so tagging entries does not
-  invalidate saved trees; frozen snapshots can also be kept as-is without
-  resampling.
+  parameters, new progress). Saved trees store entry identity (category +
+  number) and layout only; names, descriptions, tags, rarity, source, meta,
+  and visibility are hydrated from the current bundle, so their edits are
+  automatic. Only entry additions/removals change the data version, and
+  Upgrade appends new entries to full trees without reassigning existing
+  nodes.
   A tree's current view can be shared as a read-only link (`tree.html?share=…`):
   the snapshot uploads to an anonymous paste host and carries what the owner
   can currently see plus their current jump targets — never the seed,

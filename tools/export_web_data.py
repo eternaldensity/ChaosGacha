@@ -190,22 +190,13 @@ def export_entries():
     entries = gt.load_entries(gt.ALL_FILES, None, None, set(), set(), True,
                               True, True)
     flags = flag_map()
-    # Data version: hash over topology/behaviour-relevant fields (file,
-    # number, rarity, source, tag, meta tokens, nsfw/tech/noncon flags).
-    # Display text (names, descriptions) and thematic tags are excluded:
-    # prose edits and adding a tag do not change an existing tree's nodes or
-    # links, so they must not invalidate saved trees. Trees record the version
-    # they were generated with; a mismatch warns that regenerating could
-    # produce a different tree.
+    # Data version: entry identity only (file + number). Saved trees store
+    # category + number and look up every other field from the current bundle,
+    # so descriptions, names, tags, rarity, source, meta, and visibility fixes
+    # are free. Only adding/removing entries requires an upgrade.
     h = hashlib.sha256()
     for e in entries:
-        toks = flags.get((e["file"], e["number"]), set())
-        h.update(("\x1f".join([e["file"], str(e["number"]), repr(e["rarity"]),
-                               e["source"] or "", e["tag"],
-                               ",".join(e.get("meta", [])),
-                               "nsfw" if "Nsfw" in toks else "",
-                               "tech" if "Tech" in toks else "",
-                               "noncon" if "Noncon" in toks else ""]) + "\n").encode("utf-8"))
+        h.update(("\x1f".join([e["file"], str(e["number"])]) + "\n").encode("utf-8"))
     data_version = h.hexdigest()[:10]
     compact = []
     for e in entries:

@@ -254,8 +254,9 @@ function boot(page, seed, fetchPayload) {
   // ---------- tree page: data-version mismatch offers Upgrade ----------
   {
     const stale = JSON.stringify({
-      trees: [{ id: "t1", name: "Stale tree", seed: 7, params: {}, limit: 60,
-                filters: {}, dataVersion: "oldversion", static: false, createdAt: 1 }],
+      trees: [{ id: "t1", name: "Stale tree", seed: 7, params: {}, limit: null,
+                filters: { sources: ["Generic"] }, dataVersion: "oldversion",
+                versionScheme: 2, static: false, createdAt: 1 }],
       states: { t1: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
       activeId: "t1", guideSeen: true, settings: {},
     });
@@ -282,15 +283,15 @@ function boot(page, seed, fetchPayload) {
     // snapshot was silently re-keyed to the current data. Content provenance
     // is the only thing that can flag it.
     const tree = JSON.stringify({
-      trees: [{ id: "t2", name: "Unversioned tree", seed: 7, params: {}, limit: 60,
-                filters: {}, static: false, createdAt: 1 }],
+      trees: [{ id: "t2", name: "Unversioned tree", seed: 7, params: {}, limit: null,
+                filters: {}, versionScheme: 2, static: false, createdAt: 1 }],
       states: { t2: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
       activeId: "t2", guideSeen: true, settings: {},
     });
     const nodes = [{ id: 0, file: "__root__", name: "Origin", rarity: 0, pos: [0, 0, 0], r: 0 },
                    { id: 1, file: "ability", name: "HyperQbe the Streamer", rarity: 3.4,
                      source: "Q-UP", tag: "both", description: "old entry", meta: [], pos: [1, 0, 0], r: 1 }];
-    const gen = JSON.stringify({ key: JSON.stringify([7, {}, {}, 60, "oldversion"]),
+    const gen = JSON.stringify({ key: JSON.stringify([7, {}, {}, null, "oldversion"]),
                                  res: { nodes, edges: [{ a: 0, b: 1, d: 1 }] } });
     const { dom, errors } = await boot("tree.html",
       { "chaosTree.v1": tree, "chaosTree.gen.v1.t2": gen });
@@ -315,7 +316,8 @@ function boot(page, seed, fetchPayload) {
   {
     const tree = JSON.stringify({
       trees: [{ id: "t3", name: "Imported primary", seed: 5, params: {}, limit: null,
-                filters: {}, dataVersion: "ee5d89ed5c", static: true, createdAt: 1 }],
+                filters: {}, dataVersion: "ee5d89ed5c", versionScheme: 2,
+                static: true, createdAt: 1 }],
       states: { t3: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
       activeId: "t3", guideSeen: true, settings: {},
     });
@@ -384,7 +386,8 @@ function boot(page, seed, fetchPayload) {
     });
     const tree = JSON.stringify({
       trees: [{ id: "t5", name: "Real static", seed: 5, params: {}, limit: null,
-                filters: {}, dataVersion: "ancient", static: true, createdAt: 1 }],
+                filters: {}, dataVersion: "ancient", versionScheme: 2,
+                static: true, createdAt: 1 }],
       states: { t5: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
       activeId: "t5", guideSeen: true, settings: {},
     });
@@ -433,7 +436,8 @@ function boot(page, seed, fetchPayload) {
   {
     const oldTree = JSON.stringify({
       trees: [{ id: "tu", name: "Upgrade tags", seed: 7, params: {}, limit: 20,
-                filters: {}, dataVersion: "old", static: true, createdAt: 1 }],
+                filters: {}, dataVersion: "old", versionScheme: 2,
+                static: true, createdAt: 1 }],
       states: { tu: { points: 0, cores: 0, inventory: [], unlocked: [0, 1] } },
       activeId: "tu", guideSeen: true, settings: {},
     });
@@ -443,7 +447,7 @@ function boot(page, seed, fetchPayload) {
         { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
           source: "System", tag: "both", description: "", meta: [], tags: [],
           pos: [0, 0, 0], r: 0 },
-        { id: 1, file: "familiar", number: 465, name: "Pengullet", rarity: 2.0,
+        { id: 1, file: "familiar", number: 465, name: "Old Penguin", rarity: 2.0,
           source: "Palworld", tag: "both",
           description: "A penguin Pal that loads itself into a launcher as living ammunition.",
           meta: [], tags: ["avian"], pos: [1, 0, 0], r: 1 },
@@ -459,7 +463,8 @@ function boot(page, seed, fetchPayload) {
     ownedTab.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
     await new Promise(r => setTimeout(r, 120));
     const ownedText = d.getElementById("ownedBody").textContent;
-    ok("tree: existing save shows current tags without upgrading",
+    ok("tree: existing save shows current name and tags without upgrading",
+      /Pengullet/.test(ownedText) && !/Old Penguin/.test(ownedText) &&
       /🏷 ice/.test(ownedText) && /🏷 water/.test(ownedText),
       ownedText.slice(0, 200));
     d.getElementById("btnUpgradeActive")
@@ -471,14 +476,14 @@ function boot(page, seed, fetchPayload) {
     const staticKey = up ? "chaosTree.static.v1." + up.id : null;
     const stored = staticKey ? w.localStorage.getItem(staticKey) : null;
     const topo = stored ? JSON.parse(stored) : null;
-    ok("tree: upgrade stores a compact snapshot",
-      topo && topo.v === 2 && topo.nodes.some(n => n && n._c === 1),
+    ok("tree: upgrade stores an identity-only compact snapshot",
+      topo && topo.v === 3 && topo.nodes.some(n => n && n._c === 1),
       topo && JSON.stringify(topo).slice(0, 80));
     const pengRow = topo && topo.nodes.find(n =>
       n && n._c === 1 && n.file === "familiar" && n.number === 465);
-    ok("tree: compact snapshot keeps the entry identity and current tags",
-      pengRow && pengRow.name === "Pengullet" &&
-      JSON.stringify(pengRow.tags) === JSON.stringify(["avian", "ice", "water"]),
+    ok("tree: compact snapshot stores identity and layout, not entry text",
+      pengRow && !("name" in pengRow) && !("tags" in pengRow) &&
+      !("description" in pengRow) && Array.isArray(pengRow.pos),
       JSON.stringify(pengRow));
 
     // Reload from storage: no missing-topology error, and the compact node
@@ -517,10 +522,114 @@ function boot(page, seed, fetchPayload) {
       const freshRaw = fresh && rw.localStorage.getItem("chaosTree.static.v1." + fresh.id);
       const freshPayload = freshRaw && JSON.parse(freshRaw);
       ok("tree: fresh copy of an upgraded tree stays compact",
-        freshPayload && freshPayload.v === 2,
+        freshPayload && freshPayload.v === 3,
         freshPayload && JSON.stringify(freshPayload).slice(0, 80));
     }
     reloaded.dom.window.close();
+    dom.window.close();
+  }
+
+  // ---------- upgrade appends new entries without reassigning existing ones --
+  {
+    const grow = JSON.stringify({
+      trees: [{ id: "tg", name: "Grow tree", seed: 7, params: {}, limit: null,
+                filters: { files: ["familiar"], sources: ["Palworld"],
+                           includeNsfw: true, includeNoncon: true, includeGachaOnly: true },
+                dataVersion: "old", versionScheme: 2, static: true, createdAt: 1 }],
+      states: { tg: { points: 0, cores: 0, inventory: [], unlocked: [0, 1] } },
+      activeId: "tg", guideSeen: true, settings: {},
+    });
+    const growTopo = JSON.stringify({
+      params: {},
+      nodes: [
+        { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
+          source: "System", tag: "both", description: "", meta: [], tags: [],
+          pos: [0, 0, 0], r: 0 },
+        { id: 1, file: "familiar", number: 465, name: "Old Penguin", rarity: 2.0,
+          source: "Palworld", tag: "both", description: "old entry", meta: [],
+          tags: ["avian"], pos: [1, 0, 0], r: 1 },
+      ],
+      edges: [{ a: 0, b: 1, d: 1 }],
+    });
+    const { dom } = await boot("tree.html", {
+      "chaosTree.v1": grow, "chaosTree.static.v1.tg": growTopo,
+    });
+    const w = dom.window, d = w.document;
+    d.getElementById("btnUpgradeActive")
+      .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 100));
+    const go = d.querySelector("#treeList .upPicker button.primary");
+    if (go) go.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 800));
+    const saved = JSON.parse(w.localStorage.getItem("chaosTree.v1") || "{}");
+    const up = (saved.trees || []).find(t => /upgraded/.test(t.name));
+    ok("tree: growth upgrade creates a tree", !!up, JSON.stringify(saved.trees));
+    const payload = up && JSON.parse(w.localStorage.getItem("chaosTree.static.v1." + up.id) || "null");
+    const old = payload && payload.nodes.find(n => n && n._c && n.id === 1);
+    const lamball = payload && payload.nodes.find(n =>
+      n && n._c && n.file === "familiar" && n.number === 461);
+    ok("tree: growth upgrade preserves the existing node identity and position",
+      old && old.number === 465 &&
+      JSON.stringify(old.pos) === JSON.stringify([1, 0, 0]),
+      JSON.stringify(old));
+    ok("tree: growth upgrade appends a newly added entry",
+      !!lamball && payload.nodes.length > 2,
+      payload && JSON.stringify(payload.nodes.slice(-2)));
+    ok("tree: growth upgrade is identity-only",
+      payload && payload.v === 3 &&
+      !("name" in (old || {})) && !("tags" in (old || {})),
+      payload && JSON.stringify(payload).slice(0, 80));
+    ok("tree: growth upgrade stamps the current identity version",
+      up && up.versionScheme === 2 && up.dataVersion === w.CHAOS_DATA.dataVersion);
+    dom.window.close();
+  }
+
+  // ---------- legacy saves migrate to identity-only storage for free --------
+  {
+    const legacy = JSON.stringify({
+      trees: [{ id: "tl", name: "Legacy save", seed: 5, params: {}, limit: null,
+                filters: {}, dataVersion: "legacy-version", static: true, createdAt: 1 }],
+      states: { tl: { points: 0, cores: 0, inventory: [], unlocked: [0, 1] } },
+      activeId: "tl", guideSeen: true, settings: {},
+    });
+    const legacyTopo = JSON.stringify({
+      params: {},
+      nodes: [
+        { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
+          source: "System", tag: "both", description: "", meta: [], tags: [],
+          pos: [0, 0, 0], r: 0 },
+        { id: 1, file: "familiar", number: 465, name: "Old Penguin",
+          rarity: 2.0, source: "Palworld", tag: "both", description: "old entry",
+          meta: [], tags: ["avian"], pos: [1, 0, 0], r: 1 },
+      ],
+      edges: [{ a: 0, b: 1, d: 1 }],
+    });
+    const { dom } = await boot("tree.html", {
+      "chaosTree.v1": legacy, "chaosTree.static.v1.tl": legacyTopo,
+    });
+    const w = dom.window, d = w.document;
+    const db = JSON.parse(w.localStorage.getItem("chaosTree.v1") || "{}");
+    const t = (db.trees || [])[0];
+    ok("tree: legacy save adopts the identity-only scheme",
+      t && t.versionScheme === 2 && t.dataVersion === w.CHAOS_DATA.dataVersion,
+      t && `${t.versionScheme}/${t.dataVersion}`);
+    ok("tree: legacy save no longer shows a version warning",
+      d.getElementById("verWarn").style.display === "none",
+      d.getElementById("verWarnText").textContent);
+    const stored = JSON.parse(w.localStorage.getItem("chaosTree.static.v1.tl") || "null");
+    const row = stored && stored.nodes.find(n =>
+      n && n._c === 1 && n.file === "familiar" && n.number === 465);
+    ok("tree: legacy save is rewritten without entry text",
+      stored && stored.v === 3 && row && !("name" in row) && !("tags" in row),
+      stored && JSON.stringify(stored).slice(0, 80));
+    const owned = [...d.querySelectorAll("#tabs button")]
+      .find(b => b.dataset.tab === "owned");
+    owned.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 120));
+    const text = d.getElementById("ownedBody").textContent;
+    ok("tree: legacy save shows current name and tags",
+      /Pengullet/.test(text) && !/Old Penguin/.test(text) &&
+      /🏷 ice/.test(text) && /🏷 water/.test(text), text.slice(0, 200));
     dom.window.close();
   }
 
@@ -529,23 +638,23 @@ function boot(page, seed, fetchPayload) {
     const jumpNodes = [
       { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
         pos: [0, 0, 0], r: 0 },
-      { id: 1, file: "ability", number: 1, name: "Super Jump",
-        rarity: 0, source: "Generic", tag: "both", description: "x",
+      { id: 1, file: "ability", number: 1, name: "Water Stream Crushing Rock",
+        rarity: 5.9, source: "One Punch Man", tag: "both", description: "x",
         meta: [], tags: [], pos: [5, 0, 0], r: 5 },
-      { id: 2, file: "item", number: 2, name: "Gae Bolg",
+      { id: 2, file: "item", number: 1, name: "Gae Bolg",
         rarity: 5.3, source: "Fate", tag: "both", description: "x",
         meta: [], tags: [], pos: [6, 0, 0], r: 6 },
-      { id: 3, file: "item", number: 3,
+      { id: 3, file: "item", number: 2,
         name: "Excalibur the Sword of Promised Victory",
         rarity: 7, source: "Fate", tag: "both", description: "x",
         meta: [], tags: [], pos: [7, 0, 0], r: 7 },
-      { id: 4, file: "item", number: 4, name: "Laevatein",
+      { id: 4, file: "item", number: 3, name: "Laevatein",
         rarity: 7.8, source: "Fate", tag: "both", description: "x",
         meta: [], tags: [], pos: [8, 0, 0], r: 8 },
-      { id: 5, file: "ability", number: 5, name: "Double Jump",
-        rarity: 0, source: "Generic", tag: "both", description: "x",
+      { id: 5, file: "ability", number: 2, name: "Intermediate Cooking",
+        rarity: 2.3, source: "Generic", tag: "both", description: "x",
         meta: [], tags: [], pos: [10, 0, 0], r: 10 },
-      { id: 6, file: "item", number: 6, name: "Vorpal Blade",
+      { id: 6, file: "item", number: 5, name: "Vorpal Blade",
         rarity: 4, source: "Black Souls", tag: "both", description: "x",
         meta: [], tags: [], pos: [11, 0, 0], r: 11 },
     ];
