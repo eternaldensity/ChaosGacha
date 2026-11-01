@@ -585,11 +585,15 @@ function boot(page, seed, fetchPayload) {
       JSON.stringify(hiddenPayload.view.jumpReach));
     ok("share: a farther visible node is not recorded as the jump pick",
       !hiddenPayload.view.jumpReach.some(h => h.id === 2));
+    ok("share: jump target node data travels with the snapshot",
+      hiddenPayload.view.jumpNodes.some(nd => nd.id === 4 &&
+        nd.name === "Hidden Jump Item"));
     const hidden = await openJumpPlanner(hiddenPayload);
     const hiddenText = hidden.rows.map(li => li.textContent).join(" | ");
-    ok("share: shared planner shows the hidden jump target",
-      hidden.rows.length === 1 && /Hidden node #4/.test(hiddenText) &&
-      /from #1/.test(hiddenText), hiddenText);
+    ok("share: shared planner names the hidden jump target",
+      hidden.rows.length === 1 && /#4 Hidden Jump Item/.test(hiddenText) &&
+      /from #1/.test(hiddenText) && /2 hops/.test(hiddenText) &&
+      !/Hidden node/.test(hiddenText), hiddenText);
     ok("share: shared planner does not invent a visible jump target",
       !/Distant Visible Item/.test(hiddenText), hiddenText);
     ok("share: shared planner has no page errors", hidden.errors.length === 0,
@@ -601,6 +605,7 @@ function boot(page, seed, fetchPayload) {
     // visible node that was never actually in reach.
     const legacyPayload = JSON.parse(JSON.stringify(hiddenPayload));
     delete legacyPayload.view.jumpReach;
+    delete legacyPayload.view.jumpNodes;
     legacyPayload.view.hiddenReach.jump.push({ id: 4, from: 0, ticket: 0, rank: 0 });
     w.ChaosShare.validate(legacyPayload);
     const legacy = await openJumpPlanner(legacyPayload);

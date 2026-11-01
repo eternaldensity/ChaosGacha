@@ -204,6 +204,11 @@
       const rt = G.buildRuntime({ nodes: p.nodes, edges: p.edges });
       rt.frozen = { vis: new Set(p.view.visible), unl: new Set(p.state.unlocked) };
       rt.sharedView = p.view;
+      // Jump targets are part of the owner's view even when not visible, so
+      // their data travels separately; make it available to node lookups.
+      for (const nd of (p.view.jumpNodes || [])) {
+        if (!rt.byId[nd.id]) rt.byId[nd.id] = nd;
+      }
       runtimes.set(tree.id, rt);
       return rt;
     }
@@ -2265,10 +2270,12 @@
           const nd = rt.byId[hit.id];
           if (!nd || !visNode(nd)) continue;
           const a = rt.byId[hit.from];
-          const dd = a ? Math.hypot(
+          const dd = typeof hit.d === "number" ? hit.d : a ? Math.hypot(
             a.pos[0] - nd.pos[0], a.pos[1] - nd.pos[1], a.pos[2] - nd.pos[2]) : null;
           rows.push({
-            id: nd.id, hops: dist[nd.id] == null ? null : dist[nd.id],
+            id: nd.id,
+            hops: hit.hops != null ? hit.hops
+              : (dist[nd.id] == null ? null : dist[nd.id]),
             via: `${ticketLabel(t)} from #${hit.from}` +
               (dd != null ? ` · ${dd.toFixed(1)} away` : ""),
             act: "jump",
@@ -2596,8 +2603,9 @@
     const banner = $("shareBanner");
     if (banner) {
       $("shareBannerText").textContent =
-        "Only the owner's visible and unlocked nodes are included: never the seed, " +
-        "generation settings, or hidden nodes. Unlocking and awarding are disabled." +
+        "Only the owner's visible and unlocked nodes, plus their current jump " +
+        "targets, are included: never the seed, generation settings, or other " +
+        "hidden nodes. Unlocking and awarding are disabled." +
         (SHARED && SHARED.url ? " Data loaded from " + SHARED.url : "");
       banner.style.display = "block";
     }

@@ -23,9 +23,10 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   invalidate saved trees; frozen snapshots can also be kept as-is without
   resampling.
   A tree's current view can be shared as a read-only link (`tree.html?share=…`):
-  the snapshot uploads to an anonymous paste host and carries only what the
-  owner can currently see — never the seed, generation settings, or hidden
-  nodes. Uploads expire after the chosen lifetime (1/7/30 days); the viewer
+  the snapshot uploads to an anonymous paste host and carries what the owner
+  can currently see plus their current jump targets — never the seed,
+  generation settings, or other hidden nodes. Uploads expire after the chosen
+  lifetime (1/7/30 days); the viewer
   reports expired or deleted pastes specifically. Loaded under `js/share.js`
   (snapshot/validation/load diagnostics) and `js/paste.js` (paste-host
   adapters).

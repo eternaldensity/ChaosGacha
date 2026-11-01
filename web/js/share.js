@@ -1,13 +1,14 @@
 "use strict";
 /* Chaos Tree shareable-view payloads.
  *
- * Builds a privacy-scoped snapshot of a tree: ONLY the nodes the owner can
+ * Builds a privacy-scoped snapshot of a tree: the nodes the owner can
  * currently see (visible + unlocked, minus display-hidden ones) and the
  * edges among them, plus the wallet/inventory and the precomputed
- * unlock-method buckets. It never includes the seed, generation params,
- * filters, or any hidden node's data. Hidden nodes that a skip/jump/hop
- * ticket can still reach are recorded by id and method only, so a viewer
- * can be told "something is reachable here" without seeing what it is.
+ * unlock-method buckets. It never includes the seed, generation params, or
+ * filters. Hidden skip/hop targets are recorded by id and method only, so a
+ * viewer can be told "something is reachable here" without seeing what it
+ * is. Jump targets are included with their node data because the owner can
+ * inspect them directly through the jump ticket.
  *
  * validate() hardens a snapshot fetched from an untrusted paste host. */
 window.ChaosShare = (function () {
@@ -98,8 +99,8 @@ window.ChaosShare = (function () {
     const jumps = st.inventory.filter(t => t.kind === "jump" || t.kind === "choice");
     // The viewer cannot recompute jump targets from a partial topology: a
     // hidden node may be the real closest pick, or the only one. Retain the
-    // owner's actual picks (visible and hidden) so the shared planner lists
-    // the same targets. Hidden picks still carry no node data.
+    // owner's actual picks (with distance and hops) plus the target node data
+    // so the shared planner lists the same rows the owner sees.
     const jumpReach = [];
     for (let ti = 0; ti < jumps.length; ti++) {
       const t = jumps[ti];
@@ -111,8 +112,12 @@ window.ChaosShare = (function () {
         try { cands = E.jumpCandidates(rt, t.category, from, st.unlocked); }
         catch (e) { continue; }
         cands.slice(0, lim).forEach(([d, nd], rank) => {
+          if (!nodeVisible(nd)) return;  // respect the owner's display filters
           const prev = best.get(nd.id);
-          if (!prev || d < prev.d) best.set(nd.id, { id: nd.id, from, ticket: ti, rank });
+          if (!prev || d < prev.d) best.set(nd.id, {
+            id: nd.id, from, ticket: ti, rank,
+            d: Math.round(d * 1e6) / 1e6, hops: dist[nd.id]
+          });
           if (unl.has(nd.id) || shareIds.has(nd.id)) return;
           if (hiddenReach.jump.length >= MAX_HIDDEN_JUMP) return;
           hiddenReach.jump.push({ id: nd.id, from, ticket: ti, rank });
@@ -122,6 +127,17 @@ window.ChaosShare = (function () {
         if (jumpReach.length >= MAX_JUMP_REACH) break;
         jumpReach.push(hit);
       }
+    }
+    // Jump targets the owner can inspect through the ticket are part of what
+    // the owner sees; include their data even when they are not "visible".
+    const jumpNodes = [];
+    const jumpNodeIds = new Set();
+    for (const hit of jumpReach) {
+      if (shareIds.has(hit.id) || jumpNodeIds.has(hit.id)) continue;
+      const nd = rt.byId[hit.id];
+      if (!nd) continue;
+      jumpNodeIds.add(hit.id);
+      jumpNodes.push(pickNode(nd));
     }
 
     // Names the owner can read beyond sight (Survey meta) are still "seen".
@@ -140,7 +156,7 @@ window.ChaosShare = (function () {
         meta_used: JSON.parse(JSON.stringify(st.meta_used || {}))
       },
       nodes, edges,
-      view: { visible, frontier, afford, hiddenReach, jumpReach, surveyed }
+      view: { visible, frontier, afford, hiddenReach, jumpReach, jumpNodes, surveyed }
     };
   }
 
@@ -151,8 +167,7 @@ window.ChaosShare = (function () {
     if (!Array.isArray(p.nodes) || !p.nodes.length) throw new Error("share data has no nodes");
     if (p.nodes.length > MAX_NODES) throw new Error("share data is too large");
     if (!Array.isArray(p.edges)) throw new Error("share data has no edges");
-    const ids = new Set();
-    for (const nd of p.nodes) {
+    const checkNode = nd => {
       if (!nd || !Number.isInteger(nd.id)) throw new Error("share data has a bad node id");
       if (!isNum(nd.rarity)) throw new Error("share data has a bad node rarity");
       if (!Array.isArray(nd.pos) || nd.pos.length !== 3 || !nd.pos.every(isNum)) {
@@ -160,6 +175,10 @@ window.ChaosShare = (function () {
       }
       if (nd.meta != null && !Array.isArray(nd.meta)) throw new Error("share data has bad node meta");
       if (nd.tags != null && !Array.isArray(nd.tags)) throw new Error("share data has bad node tags");
+    };
+    const ids = new Set();
+    for (const nd of p.nodes) {
+      checkNode(nd);
       ids.add(nd.id);
     }
     for (const e of p.edges) {
@@ -180,6 +199,9 @@ window.ChaosShare = (function () {
     // Older snapshots predate jumpReach: leave it null so the viewer falls
     // back to recomputing visible picks from the shared topology.
     p.view.jumpReach = Array.isArray(p.view.jumpReach) ? p.view.jumpReach : null;
+    p.view.jumpNodes = Array.isArray(p.view.jumpNodes) ? p.view.jumpNodes : [];
+    if (p.view.jumpNodes.length > MAX_JUMP_REACH) throw new Error("share data has too many jump nodes");
+    for (const nd of p.view.jumpNodes) checkNode(nd);
     return p;
   }
 
