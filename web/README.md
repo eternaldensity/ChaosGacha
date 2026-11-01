@@ -43,7 +43,8 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   points and a core), and a resolvable curse history. List source: the
   original site's curse list, vendored under `web/data/curses.txt`.
 - `docs.html` — tabbed documentation; the Story Start tab can seed the
-  ticket wallet with the CYOA opening tickets.
+  gacha ticket wallet with the CYOA opening tickets, or the active Chaos
+  Tree with Twin versions of them.
 
 Serve the `web/` directory over HTTP (e.g. `python3 -m http.server` inside
 `web/`) and open `tree.html` / `gacha.html`. `entries.js` is loaded with a

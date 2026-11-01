@@ -70,6 +70,13 @@
     <div class="card">
       <h2>Choose Your Own Start</h2>
       <p>The gacha is a story-writing tool first and a roller second. If you're starting a new adventure and want a template: how your character got the gacha, and what they begin with, pick one option from each list, or just take inspiration. It's all optional.</p>
+      <div style="margin-top:8px"><label for="cyoaTarget">Starting tickets go to</label>
+        <select id="cyoaTarget">
+          <option value="gacha">Gacha ticket wallet</option>
+          <option value="tree">Chaos Tree (active tree)</option>
+        </select></div>
+      <div class="muted small" id="cyoaTargetNote" style="margin-top:4px"></div>
+      <p class="muted small" style="margin-top:8px">Tree starts convert the listed tickets to <b>Twin</b> tickets and award them immediately (plain tickets are not held in the ticket inventory): each pays 2 cores instead of 1 but the same tier points, so you can branch out from the root further while still paying for every node. Changed Fate's Triple-Advantage Platinum becomes <b>3× Platinum Twin</b>.</p>
       <h3>Method of acquisition</h3>
       <p class="muted small">How you stumbled onto the Chaos Gacha and got hold of its power.</p>
       <ul>
@@ -227,6 +234,7 @@
     </div>
   </section>
 </main>
+<div id="toast" class="toast" style="display:none"></div>
 <footer class="sitefoot">
   <div>Disclaimer: I do not own, nor have any claim over any of the entries from the gacha that come from other works.</div>
   <div>Original Chaos Gacha by <a href="https://www.chaosgacha.com/" target="_blank" rel="noopener">BronzDeck</a></div>
@@ -252,6 +260,7 @@
   }
 })();
 </script>
+<script src="js/engine.js"></script>
 <script src="js/docs.js"></script>
 </body>
 </html>
