@@ -453,6 +453,14 @@ function boot(page, seed, fetchPayload) {
       "chaosTree.v1": oldTree, "chaosTree.static.v1.tu": oldTopo,
     });
     const w = dom.window, d = w.document;
+    const ownedTab = [...d.querySelectorAll("#tabs button")]
+      .find(b => b.dataset.tab === "owned");
+    ownedTab.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 120));
+    const ownedText = d.getElementById("ownedBody").textContent;
+    ok("tree: existing save shows current tags without upgrading",
+      /🏷 ice/.test(ownedText) && /🏷 water/.test(ownedText),
+      ownedText.slice(0, 200));
     d.getElementById("btnUpgradeActive")
       .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
     await new Promise(r => setTimeout(r, 800));

@@ -50,6 +50,25 @@
   // Whole-number rarities display with .0 for consistency.
   const fmtR = r => Number.isInteger(r) ? r.toFixed(1) : String(r);
 
+  function entryKey(x) {
+    if (!x) return "";
+    const file = x.file != null ? x.file : x.f;
+    const num = x.number != null ? x.number : x.n;
+    return file + "#" + num;
+  }
+  // Current tags by entry identity. Tags are display/filter metadata, not
+  // part of a tree's topology, so local trees can follow tag edits without
+  // resampling or changing node costs.
+  const ENTRY_TAGS = new Map();
+  for (const e of (DATA.entries || [])) ENTRY_TAGS.set(entryKey(e), e.tags || e.tg || []);
+  function currentEntryTags(nd) { return ENTRY_TAGS.get(entryKey(nd)); }
+  function refreshRuntimeTags(rt) {
+    for (const nd of (rt.nodes || [])) {
+      const tags = currentEntryTags(nd);
+      if (tags) nd.tags = tags.slice();
+    }
+  }
+
   function nodeTags(nd) { return (nd && (nd.tags || nd.tg)) || []; }
   // Tags ordered by how many entries carry them (the official taxonomy is
   // large, so the pickers lead with the common ones).
@@ -269,6 +288,7 @@
     E.applySwaps(rt, st);
     E.applyAddedLinks(rt, st);
     E.applyEntrySwaps(rt, st);
+    refreshRuntimeTags(rt);
     runtimes.set(tree.id, rt);
     return rt;
   }
@@ -692,11 +712,9 @@
     // Tags are display/filter metadata, not part of entry identity. Kept
     // (unlocked/visible) nodes must still pick up tag edits from the current
     // data; otherwise an upgraded tree keeps showing old tags forever.
-    const byEntry = new Map();
-    for (const e of (DATA.entries || [])) byEntry.set(key(e), e);
     const refreshTags = (node) => {
-      const e = byEntry.get(node.file + "#" + node.number);
-      if (e) node.tags = (e.tags || e.tg || []).slice();
+      const tags = currentEntryTags(node);
+      if (tags) node.tags = tags.slice();
       return node;
     };
     let refreshed = 0;
