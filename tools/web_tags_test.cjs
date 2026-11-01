@@ -536,12 +536,12 @@ function boot(page, seed, fetchPayload) {
       id, file, number: id, name, rarity, source: "Test", tag: "both",
       description: "x", meta: [], tags: [], pos: [x, 0, 0], r: x,
     });
-    const payloadFor = (nodes, edges) => {
+    const payloadFor = (nodes, edges, unlocked) => {
       const rt = w.ChaosGen.buildRuntime({ nodes, edges });
       const st = Object.assign(w.ChaosEngine.newState(), {
         points: 1e9, cores: 10,
         inventory: [{ kind: "jump", tier: null, category: "item" }],
-        unlocked: [0, 1],
+        unlocked: unlocked || [0, 1],
       });
       const payload = w.ChaosShare.collect(null, rt, st, { name: "Shared jump" });
       w.ChaosShare.validate(payload);
@@ -565,6 +565,8 @@ function boot(page, seed, fetchPayload) {
         dom, errors,
         rows: [...vd.querySelectorAll("#planList > li")],
         count: vd.getElementById("planCount").textContent,
+        invSelects: [...vd.querySelectorAll("#invList select")].map(sel =>
+          [...sel.options].map(o => o.textContent)),
       };
     };
 
@@ -596,6 +598,11 @@ function boot(page, seed, fetchPayload) {
       !/Hidden node/.test(hiddenText), hiddenText);
     ok("share: shared planner does not invent a visible jump target",
       !/Distant Visible Item/.test(hiddenText), hiddenText);
+    const hiddenPick = (hidden.invSelects[1] || []).join(" | ");
+    ok("share: inventory jump picker uses the shared jump targets",
+      hidden.invSelects.length >= 2 &&
+      /#4 Hidden Jump Item/.test(hiddenPick) &&
+      !/Distant Visible Item/.test(hiddenPick), hiddenPick);
     ok("share: shared planner has no page errors", hidden.errors.length === 0,
       hidden.errors[0]);
     hidden.dom.window.close();
@@ -615,6 +622,9 @@ function boot(page, seed, fetchPayload) {
       /from #1/.test(legacyText) && !/from #0/.test(legacyText), legacyText);
     ok("share: legacy snapshot drops the fake visible jump target",
       !/Distant Visible Item/.test(legacyText), legacyText);
+    const legacyPick = (legacy.invSelects[1] || []).join(" | ");
+    ok("share: legacy inventory jump picker keeps the real target",
+      /#4/.test(legacyPick) && !/Distant Visible Item/.test(legacyPick), legacyPick);
     legacy.dom.window.close();
 
     // A visible jump target keeps its full node data.
@@ -632,6 +642,35 @@ function boot(page, seed, fetchPayload) {
       visible.rows.length === 1 && /#2 Near Item/.test(visibleText) &&
       !/Hidden node/.test(visibleText), visibleText);
     visible.dom.window.close();
+
+    // Two launches can share the same closest target: keep both in the
+    // ticket's launch dropdown, but show the target once in the planner.
+    const duplicatePayload = payloadFor([
+      N(0, "__root__", "Origin", 0, 0),
+      N(1, "ability", "Launch A", 5, 1),
+      N(2, "item", "Far Item", 20, 3),
+      N(5, "ability", "Launch B", 7, 2),
+      N(7, "item", "Shared Target", 6, 4),
+      N(8, "ability", "Stepping Stone", 6, 2),
+    ], [
+      { a: 0, b: 1, d: 5 }, { a: 0, b: 2, d: 20 },
+      { a: 0, b: 5, d: 7 }, { a: 0, b: 8, d: 6 }, { a: 7, b: 8, d: 0.5 },
+    ], [0, 1, 5]);
+    const sharedHits = duplicatePayload.view.jumpReach.filter(h => h.id === 7);
+    ok("share: jumpReach keeps each launch's own pick",
+      sharedHits.length === 2 && sharedHits.some(h => h.from === 1) &&
+      sharedHits.some(h => h.from === 5), JSON.stringify(sharedHits));
+    const duplicate = await openJumpPlanner(duplicatePayload);
+    ok("share: planner dedupes a shared target across launches",
+      duplicate.rows.length === 1 && /#7 Shared Target/.test(
+        duplicate.rows[0].textContent));
+    const dupFroms = (duplicate.invSelects[0] || []).join(" | ");
+    ok("share: ticket dropdown keeps both launch nodes", /#1 Launch A/.test(dupFroms) &&
+      /#5 Launch B/.test(dupFroms), dupFroms);
+    ok("share: ticket picker shows the shared target",
+      (duplicate.invSelects[1] || []).some(o => /#7 Shared Target/.test(o)),
+      (duplicate.invSelects[1] || []).join(" | "));
+    duplicate.dom.window.close();
     src.window.close();
   }
 

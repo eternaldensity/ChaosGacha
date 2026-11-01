@@ -105,7 +105,6 @@ window.ChaosShare = (function () {
     for (let ti = 0; ti < jumps.length; ti++) {
       const t = jumps[ti];
       const lim = t.kind === "choice" ? t.n : 1;
-      const best = new Map();
       for (const from of st.unlocked) {
         if (from === ROOT_ID) continue;  // the planner never launches from root
         let cands;
@@ -113,19 +112,18 @@ window.ChaosShare = (function () {
         catch (e) { continue; }
         cands.slice(0, lim).forEach(([d, nd], rank) => {
           if (!nodeVisible(nd)) return;  // respect the owner's display filters
-          const prev = best.get(nd.id);
-          if (!prev || d < prev.d) best.set(nd.id, {
-            id: nd.id, from, ticket: ti, rank,
-            d: Math.round(d * 1e6) / 1e6, hops: dist[nd.id]
-          });
+          // Keep every launch's own pick: the ticket controls show one
+          // dropdown per launch, while the planner dedupes by target.
+          if (jumpReach.length < MAX_JUMP_REACH) {
+            jumpReach.push({
+              id: nd.id, from, ticket: ti, rank,
+              d: Math.round(d * 1e6) / 1e6, hops: dist[nd.id]
+            });
+          }
           if (unl.has(nd.id) || shareIds.has(nd.id)) return;
           if (hiddenReach.jump.length >= MAX_HIDDEN_JUMP) return;
           hiddenReach.jump.push({ id: nd.id, from, ticket: ti, rank });
         });
-      }
-      for (const hit of best.values()) {
-        if (jumpReach.length >= MAX_JUMP_REACH) break;
-        jumpReach.push(hit);
       }
     }
     // Jump targets the owner can inspect through the ticket are part of what

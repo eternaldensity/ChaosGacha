@@ -1801,7 +1801,7 @@
       const key = ticketLabel(t);
       let j = i + 1;
       while (j < inv.length && ticketLabel(inv[j]) === key) j++;
-      out.push({ t, count: j - i });
+      out.push({ t, count: j - i, index: i });
       i = j;
     }
     return out;
@@ -1811,6 +1811,56 @@
       const nd = rt.byId[id];
       return `<option value="${id}">#${id} ${esc(nd.name)} (${nd.file}, ${nd.rarity}${extra ? ", " + extra(nd) : ""})</option>`;
     }).join("");
+  }
+  // Actual jump picks for one ticket in a shared view. New snapshots carry
+  // jumpReach (and jumpNodes for target data); older ones are reconstructed
+  // from hiddenReach ranks against the visible-only candidate list.
+  function sharedJumpPicks(rt, st, t, ti) {
+    const sv = rt.sharedView || {};
+    if (Array.isArray(sv.jumpReach)) {
+      return sv.jumpReach.filter(h => h.ticket === ti).map(h => ({
+        id: h.id, from: h.from,
+        d: typeof h.d === "number" ? h.d : null,
+        hops: h.hops == null ? null : h.hops,
+        hidden: !rt.byId[h.id]
+      }));
+    }
+    const fromIds = st.unlocked.filter(u => u !== 0);
+    const lim = t.kind === "choice" ? t.n : 1;
+    const hiddenByFrom = new Map();
+    for (const h of ((sv.hiddenReach && sv.hiddenReach.jump) || [])) {
+      if (h.ticket !== ti) continue;
+      let byRank = hiddenByFrom.get(h.from);
+      if (!byRank) hiddenByFrom.set(h.from, byRank = new Map());
+      let hits = byRank.get(h.rank);
+      if (!hits) byRank.set(h.rank, hits = []);
+      hits.push(h);
+    }
+    const picks = [];
+    for (const from of fromIds) {
+      const hiddenRanks = hiddenByFrom.get(from) || new Map();
+      const visible = E.jumpCandidates(rt, t.category, from, st.unlocked);
+      let vi = 0, rank = 0;
+      while (rank < lim) {
+        const hits = hiddenRanks.get(rank);
+        if (hits) {
+          for (const h of hits) {
+            if (!rt.byId[h.id]) {
+              picks.push({ id: h.id, from, d: null, hops: null, hidden: true });
+            }
+          }
+          rank++;
+          continue;
+        }
+        if (vi >= visible.length) break;
+        const [dd, nd] = visible[vi++];
+        if (visNode(nd)) {
+          picks.push({ id: nd.id, from, d: dd, hops: null, hidden: false });
+        }
+        rank++;
+      }
+    }
+    return picks;
   }
 
   async function renderTickets() {
@@ -1853,7 +1903,7 @@
     // only runs that look the same collapse.
     inv.innerHTML = "";
     if (!st.inventory.length) inv.innerHTML = "<li class='muted'>No tickets: award one above.</li>";
-    const renderTicketRow = (t, count) => {
+    const renderTicketRow = (t, count, ti) => {
       const li = document.createElement("li");
       // Wrap: the label takes the first line, the 100%-wide controls
       // their own line below, instead of squeezing the label to nothing.
@@ -1897,8 +1947,50 @@
         }
       } else if (t.kind === "jump" || t.kind === "choice") {
         const fromIds = st.unlocked.filter(u => u !== 0);
-        if (!fromIds.length) {
+        const sharedHits = isShared() ? sharedJumpPicks(rt, st, t, ti) : null;
+        if (!fromIds.length && !(sharedHits && sharedHits.length)) {
           ctl.appendChild(emptyNote("Unlock a node first: jumps launch from unlocked nodes."));
+        } else if (sharedHits) {
+          // Shared topology is partial: the owner's recorded picks are the
+          // only reliable source for this ticket's actual targets.
+          const hits = sharedHits.slice().sort((a, b) =>
+            (a.from - b.from) ||
+            ((a.d == null ? Infinity : a.d) - (b.d == null ? Infinity : b.d)) ||
+            (a.id - b.id));
+          const froms = [...new Set(hits.map(h => h.from))]
+            .filter(f => fromIds.includes(f));
+          if (!froms.length) {
+            ctl.appendChild(emptyNote("No node in reach of this ticket."));
+          } else {
+            const fromSel = document.createElement("select");
+            fromSel.innerHTML = nodeOptions(froms, rt);
+            const pickSel = document.createElement("select");
+            const showCands = () => {
+              const from = parseInt(fromSel.value, 10);
+              const list = hits.filter(h => h.from === from);
+              pickSel.innerHTML = list.map(h => {
+                const nd = rt.byId[h.id];
+                const hops = h.hops == null ? "hops unknown"
+                  : `${h.hops} hop${h.hops === 1 ? "" : "s"}`;
+                const dd = typeof h.d === "number" ? `, ${h.d.toFixed(1)} away` : "";
+                return `<option value="${h.id}">#${h.id} ${nd ? esc(nd.name) : "hidden"}` +
+                  ` (${nd ? nd.rarity : "unknown"}${dd}, ${hops})</option>`;
+              }).join("");
+            };
+            fromSel.addEventListener("change", showCands);
+            ctl.append(fromSel, pickSel);
+            showCands();
+            ctl.append(useBtn(t.kind === "choice" ? "Choice jump →" : "Jump →",
+              ({ st, rt }) => {
+                const from = parseInt(fromSel.value, 10);
+                const id = parseInt(pickSel.value, 10);
+                const list = E.jumpCandidates(rt, t.category, from, st.unlocked)
+                  .slice(0, t.kind === "choice" ? t.n : 1);
+                const idx = list.findIndex(([, nd]) => nd.id === id);
+                if (idx < 0) throw new E.ChaosError("no longer in reach of that ticket");
+                return E.unlockJump(st, rt, t.category, from, idx);
+              }));
+          }
         } else {
           const fromSel = document.createElement("select");
           fromSel.innerHTML = nodeOptions(fromIds, rt);
@@ -1942,7 +2034,9 @@
       li.appendChild(wrap);
       inv.appendChild(li);
     };
-    for (const { t, count } of stackTickets(st.inventory)) renderTicketRow(t, count);
+    for (const { t, count, index } of stackTickets(st.inventory)) {
+      renderTicketRow(t, count, index);
+    }
 
     // meta abilities
     meta.innerHTML = "";
@@ -2258,86 +2352,38 @@
       jtSel.value = String(planJumpTi);
       const t = jumps[planJumpTi];
       const lim = t.kind === "choice" ? t.n : 1;
-      const sharedReach = isShared() && rt.sharedView &&
-        Array.isArray(rt.sharedView.jumpReach) ? rt.sharedView.jumpReach : null;
-      if (sharedReach) {
-        // The shared topology is partial; trust the owner's recorded picks
-        // instead of recomputing (a hidden node may be the real closest one).
-        const seen = new Set();
-        for (const hit of sharedReach) {
-          if (hit.ticket !== planJumpTi || seen.has(hit.id)) continue;
-          seen.add(hit.id);
-          const nd = rt.byId[hit.id];
-          if (!nd || !visNode(nd)) continue;
-          const a = rt.byId[hit.from];
-          const dd = typeof hit.d === "number" ? hit.d : a ? Math.hypot(
+      const sharedPicks = isShared()
+        ? sharedJumpPicks(rt, st, t, planJumpTi) : null;
+      if (sharedPicks) {
+        legacyJumpHidden = [];
+        // Planner rows are per target, so keep the closest launch for each.
+        const byId = new Map();
+        for (const pick of sharedPicks) {
+          const prev = byId.get(pick.id);
+          if (!prev || (pick.d != null && (prev.d == null || pick.d < prev.d))) {
+            byId.set(pick.id, pick);
+          }
+        }
+        for (const pick of byId.values()) {
+          const nd = rt.byId[pick.id];
+          if (pick.hidden || !nd) {
+            legacyJumpHidden.push({ hidden: true, id: pick.id,
+              hops: pick.hops, from: pick.from });
+            continue;
+          }
+          if (!visNode(nd)) continue;
+          const a = rt.byId[pick.from];
+          const dd = pick.d != null ? pick.d : a ? Math.hypot(
             a.pos[0] - nd.pos[0], a.pos[1] - nd.pos[1], a.pos[2] - nd.pos[2]) : null;
           rows.push({
             id: nd.id,
-            hops: hit.hops != null ? hit.hops
+            hops: pick.hops != null ? pick.hops
               : (dist[nd.id] == null ? null : dist[nd.id]),
-            via: `${ticketLabel(t)} from #${hit.from}` +
+            via: `${ticketLabel(t)} from #${pick.from}` +
               (dd != null ? ` · ${dd.toFixed(1)} away` : ""),
             act: "jump",
-            jump: { ticket: t, from: hit.from },
+            jump: { ticket: t, from: pick.from },
           });
-        }
-      } else if (isShared()) {
-        // Older snapshots lack jumpReach. Reconstruct the owner's picks from
-        // hiddenReach: hidden picks record their rank, so reinserting them
-        // into the visible-only candidate list restores the true top-N. A
-        // visible node ranked after a hidden pick was never actually in reach.
-        const hiddenByFrom = new Map();
-        const hiddenOld = (rt.sharedView && rt.sharedView.hiddenReach &&
-          rt.sharedView.hiddenReach.jump) || [];
-        for (const h of hiddenOld) {
-          if (h.ticket !== planJumpTi) continue;
-          let byRank = hiddenByFrom.get(h.from);
-          if (!byRank) hiddenByFrom.set(h.from, byRank = new Map());
-          let hits = byRank.get(h.rank);
-          if (!hits) byRank.set(h.rank, hits = []);
-          hits.push(h);
-        }
-        const picks = new Map();
-        for (const from of fromIds) {
-          const hiddenRanks = hiddenByFrom.get(from) || new Map();
-          const visible = E.jumpCandidates(rt, t.category, from, st.unlocked);
-          let vi = 0, rank = 0;
-          while (rank < lim) {
-            const hits = hiddenRanks.get(rank);
-            if (hits) {
-              for (const h of hits) {
-                if (!rt.byId[h.id] && !picks.has(h.id)) {
-                  picks.set(h.id, { id: h.id, from, dd: null, hidden: true });
-                }
-              }
-              rank++;
-              continue;
-            }
-            if (vi >= visible.length) break;
-            const [dd, nd] = visible[vi++];
-            if (visNode(nd)) {
-              const prev = picks.get(nd.id);
-              if (!prev || dd < prev.dd) {
-                picks.set(nd.id, { id: nd.id, from, dd, hidden: false });
-              }
-            }
-            rank++;
-          }
-        }
-        legacyJumpHidden = [];
-        for (const pick of picks.values()) {
-          if (pick.hidden) {
-            legacyJumpHidden.push({ hidden: true, id: pick.id,
-              hops: null, from: pick.from });
-          } else {
-            rows.push({
-              id: pick.id, hops: dist[pick.id] == null ? null : dist[pick.id],
-              via: `${ticketLabel(t)} from #${pick.from} · ${pick.dd.toFixed(1)} away`,
-              act: "jump",
-              jump: { ticket: t, from: pick.from },
-            });
-          }
         }
       } else {
         // A jump only reaches the closest candidate(s) from each launch node.
@@ -2352,7 +2398,7 @@
               if (!prev || dd < prev.dd) reachable.set(nd.id, { dd, nd, from });
             });
         }
-        if (!reachable.size && !isShared()) {
+        if (!reachable.size) {
           $("planCount").textContent = "";
           box.innerHTML = "<li class='muted'>No node in reach of this ticket.</li>";
           $("planPage").textContent = "";
@@ -2410,19 +2456,7 @@
       } else if (scope === "hop") {
         for (const h of (hv.hop || [])) hidden.push({ hidden: true, id: h.id, hops: null });
       } else if (scope === "jump") {
-        if (legacyJumpHidden) {
-          hidden.push(...legacyJumpHidden);
-        } else {
-          const sharedReach = rt.sharedView &&
-            Array.isArray(rt.sharedView.jumpReach) ? rt.sharedView.jumpReach : null;
-          const seenHidden = new Set();
-          for (const h of (sharedReach || hv.jump || [])) {
-            if (h.ticket !== planJumpTi || seenHidden.has(h.id)) continue;
-            seenHidden.add(h.id);
-            if (rt.byId[h.id]) continue;  // visible pick, already listed above
-            hidden.push({ hidden: true, id: h.id, hops: null, from: h.from });
-          }
-        }
+        hidden.push(...(legacyJumpHidden || []));
       }
       hidden.sort((a, b) => a.id - b.id);
       rows = rows.concat(hidden);
