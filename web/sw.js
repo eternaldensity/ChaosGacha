@@ -5,7 +5,7 @@
  * data bundles are network-first — they change on every export, and a
  * cache-first data file silently pins returning players to an old dataset
  * until the cache name is bumped. Bump CACHE when shell files change. */
-const CACHE = "chaos-gacha-web-v31";
+const CACHE = "chaos-gacha-web-v32";
 const ASSETS = [
   "./",
   "index.html",
@@ -24,6 +24,7 @@ const ASSETS = [
   "js/generator.js",
   "js/engine.js",
   "js/gacha.js",
+  "js/tickets.js",
   "js/tree-app.js",
   "js/share.js",
   "js/paste.js",

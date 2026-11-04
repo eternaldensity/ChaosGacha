@@ -3,6 +3,7 @@
  * import/export, canvas 3D view, SVG neighbour view, full engine UI. */
 (function () {
   const E = window.ChaosEngine, G = window.ChaosGen;
+  const T = window.ChaosTickets;
   const DATA = window.CHAOS_DATA || { entries: [], tiers: [], classes: [] };
   const LS_KEY = "chaosTree.v1";
   const LS_STATIC = "chaosTree.static.v1";
@@ -2722,6 +2723,18 @@
     });
     if (ok) toast(`Awarded ${count}× ${spec}: +${totalCores} core${totalCores === 1 ? "" : "s"}, +${E.fmt(totalPts)} pts.` +
       (notes.length ? ` 🎲 ${notes.join(" · ")}` : ""));
+  });
+
+  $("btnAwardBB").addEventListener("click", () => {
+    const tier = $("tkTier").value;
+    const ticket = {
+      tier,
+      cat: $("tkCat").value,
+      kind: $("tkKind").value,
+      n: parseInt($("tkN").value, 10) || 2,
+      twin: !!($("tkTwin") && $("tkTwin").checked)
+    };
+    copyText(T.bbcode(T.tree(ticket), T.tierColor(tier, DATA.tiers)), "BBCode");
   });
 
   $("btnTrace").addEventListener("click", async () => {

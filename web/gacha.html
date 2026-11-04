@@ -185,7 +185,10 @@
             <option value="6">6× advantage</option>
           </select></div>
       </div>
-      <div style="margin-top:10px"><button id="btnAddTicket" style="width:100%">+ Add ticket</button></div>
+      <div class="row" style="margin-top:10px">
+        <button id="btnAddTicket">+ Add ticket</button>
+        <button id="btnTicketBB" title="Copy the ticket above as BBCode with its tier colour">📋 BBCode</button>
+      </div>
       <ul class="list" id="ticketList"></ul>
     </div>
   </section>
@@ -223,6 +226,7 @@
 <script src="data/entries.js"></script>
 <script src="data/tags.js"></script>
 <script src="js/gacha.js"></script>
+<script src="js/tickets.js"></script>
 <script src="js/gacha-app.js"></script>
 </body>
 </html>

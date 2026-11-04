@@ -2,6 +2,7 @@
 /* Chaos Gacha web app: mobile-first roller with ticket wallet + history. */
 (function () {
   const G = window.ChaosGacha;
+  const T = window.ChaosTickets;
   const DATA = window.CHAOS_DATA || { entries: [], tiers: [], classes: [] };
   const LS = "chaosGacha.v1";
   const $ = id => document.getElementById(id);
@@ -105,6 +106,20 @@
     t.style.display = "block";
     clearTimeout(t._h);
     t._h = setTimeout(() => { t.style.display = "none"; }, 3000);
+  }
+
+  async function copyText(t, what) {
+    if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(t);
+    } else {
+      const ta = document.createElement("textarea");
+      ta.value = t;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      ta.remove();
+    }
+    toast(what ? `Copied ${what}!` : "Copied!");
   }
 
   function load() {
@@ -673,30 +688,30 @@
 
   $("btnCopy").addEventListener("click", async () => {
     if (!lastResult) return;
-    const t = resultText(lastResult);
-    try {
-      if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
-        await navigator.clipboard.writeText(t);
-      } else {
-        const ta = document.createElement("textarea");
-        ta.value = t;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand("copy");
-        ta.remove();
-      }
-      toast("Copied!");
-    } catch (e) { toast("Copy failed.", true); }
+    try { await copyText(resultText(lastResult)); }
+    catch (e) { toast("Copy failed.", true); }
   });
 
-  $("btnAddTicket").addEventListener("click", () => {
+  function formTicket() {
     const tag = $("tkTag") ? $("tkTag").value || "" : "";
     const adv = $("tkAdv") ? parseInt($("tkAdv").value, 10) || 1 : 1;
-    const t = { id: uid(), tier: $("tkTier").value, cat: $("tkCat").value };
-    if (tag) t.tag = tag;
-    if (adv > 1) t.adv = adv;
+    return { tier: $("tkTier").value, cat: $("tkCat").value, tag, adv };
+  }
+
+  $("btnAddTicket").addEventListener("click", () => {
+    const form = formTicket();
+    const t = { id: uid(), tier: form.tier, cat: form.cat };
+    if (form.tag) t.tag = form.tag;
+    if (form.adv > 1) t.adv = form.adv;
     DB.tickets.push(t);
     save(); renderTickets();
+  });
+
+  $("btnTicketBB").addEventListener("click", async () => {
+    const form = formTicket();
+    const code = T.bbcode(T.gacha(form), T.tierColor(form.tier, DATA.tiers));
+    try { await copyText(code, "BBCode"); }
+    catch (e) { toast("Copy failed.", true); }
   });
 
   function tierOf(name) { return DATA.tiers.find(t => t.name === name) || DATA.tiers.find(t => t.name === "gold"); }
