@@ -209,7 +209,7 @@
   // comes from entries.js at load; full objects are kept only for entries that
   // no longer exist in the current data, so an old snapshot still has a
   // readable fallback.
-  function compactStatic(nodes, edges) {
+  function compactStatic(nodes, edges, params) {
     const out = [];
     for (const nd of nodes) {
       if (!ENTRY_MAP.has(entryKey(nd))) { out.push(nd); continue; }
@@ -224,7 +224,10 @@
       // Accept both compact [a,b,d] rows (already-exported payloads) and
       // full {a,b,d} edge objects.
       edges: edges.map(e => Array.isArray(e)
-        ? [e[0], e[1], e[2]] : [e.a, e.b, e.d])
+        ? [e[0], e[1], e[2]] : [e.a, e.b, e.d]),
+      // Placement settings (radius, degrees, ...) must survive: Upgrade
+      // appends nodes using the tree's own radius, not the app default.
+      params: params || {}
     };
   }
   function expandStatic(p) {
@@ -289,15 +292,15 @@
     // the in-memory runtime needs full nodes and object edges, so expand
     // before handing it to saveStaticCompact.
     const p = expandStatic(payload) || payload || {};
-    saveStaticCompact(id, p.nodes || [], p.edges || []);
+    saveStaticCompact(id, p.nodes || [], p.edges || [], p.params || {});
   }
-  function saveStaticCompact(id, nodes, edges) {
-    const full = { nodes, edges };
+  function saveStaticCompact(id, nodes, edges, params) {
+    const full = { nodes, edges, params: params || {} };
     Object.defineProperty(full, "_compact", { value: true, enumerable: false });
     memoryStatic.set(id, full);
     try {
       localStorage.setItem(LS_STATIC + "." + id,
-        JSON.stringify(compactStatic(nodes, edges)));
+        JSON.stringify(compactStatic(nodes, edges, params)));
     } catch (e) {
       toast("Browser storage is full: this tree is only in memory. Delete old trees or export a backup, then try again.", true);
     }
@@ -455,7 +458,7 @@
         }
       } else {
         const p = loadStatic(t.id);
-        if (p) saveStaticCompact(t.id, p.nodes || [], p.edges || []);
+        if (p) saveStaticCompact(t.id, p.nodes || [], p.edges || [], p.params);
       }
     }
     if (changed) saveDB();
@@ -861,7 +864,9 @@
     // the least crowded), then link to nearest neighbours.
     let added = 0;
     if (!t.limit) {
-      const P = Object.assign({}, G.DEFAULTS, rt.params || {});
+      // Static snapshots store their placement params now; fall back to the
+    // tree record for older ones that predate that.
+    const P = Object.assign({}, G.DEFAULTS, t.params || rt.params || {});
       const radius = P.radius || 10;
       const inner = P.innerFraction != null ? P.innerFraction : 0.12;
       const prs = pool.map(e => e.r);
@@ -921,7 +926,7 @@
       }
     }
     const nid = uid();
-    saveStaticCompact(nid, nodes, edges);
+    saveStaticCompact(nid, nodes, edges, t.params);
     const nst = JSON.parse(JSON.stringify(st));
     delete nst.swaps; delete nst.added_links; delete nst.entry_swaps;
     const nt = {
@@ -1142,7 +1147,7 @@
         const p = loadStatic(t.id);
         // Static layouts already have swaps/added links baked in, and the
         // state no longer replays them.
-        if (p) topo = compactStatic(p.nodes || [], p.edges || []);
+        if (p) topo = compactStatic(p.nodes || [], p.edges || [], p.params);
       } else {
         // A seed alone is not enough to restore a tree once the entry list
         // changes: regenerating samples a different pool. Export the base
@@ -1150,7 +1155,9 @@
         // on load, so this must be the pre-mutation generation.
         await getRuntime(t);
         const hit = loadGenerated(t.id);
-        if (hit && hit.res) topo = compactStatic(hit.res.nodes || [], hit.res.edges || []);
+        if (hit && hit.res) {
+          topo = compactStatic(hit.res.nodes || [], hit.res.edges || [], t.params);
+        }
       }
     } catch (e) { err(e); return; }
     const payload = {
@@ -1188,17 +1195,50 @@
           dataVersion: td.dataVersion != null ? td.dataVersion : (DATA.dataVersion || null),
           snapshotKept: !!td.snapshotKept, versionScheme: 2,
           static: hasTopology ? true : !!td.static, createdAt: Date.now() };
-        if (hasTopology) saveStatic(tree.id, td.topology);
+        if (hasTopology) {
+          saveStatic(tree.id, Object.assign({}, td.topology, { params: tree.params }));
+        }
         DB.trees.push(tree);
         DB.states[tree.id] = Object.assign(E.newState(), payload.state || {});
         DB.activeId = tree.id; selectedId = 0; saveDB(); renderTrees(); refreshAll();
         toast(`Imported "${tree.name}".`);
         showTab("view3d");
       } else if (payload && payload.format === "chaos-tree" && payload.nodes && payload.edges) {
+        // Python trees carry snake_case placement params and filter settings;
+        // keep both so a later Upgrade places new nodes on the same radius
+        // and only appends entries from the tree's own filters.
+        const pp = payload.params || {};
+        const num = (v) => (typeof v === "number" ? v : undefined);
+        const conv = (o, k, v) => { if (v !== undefined) o[k] = v; };
+        const params = {};
+        conv(params, "radius", num(pp.radius));
+        conv(params, "distanceVariance", num(pp.distance_variance));
+        conv(params, "clustering", num(pp.clustering));
+        conv(params, "clusters", num(pp.clusters));
+        conv(params, "meanDegree", num(pp.mean_degree));
+        conv(params, "degreeMin", num(pp.degree_min));
+        conv(params, "degreeMax", num(pp.degree_max));
+        conv(params, "rejoinBias", num(pp.rejoin_bias));
+        conv(params, "linkFalloff", num(pp.link_falloff));
+        conv(params, "localLinkDistance", num(pp.local_link_distance));
+        conv(params, "maxLinkDistance", num(pp.max_link_distance));
+        conv(params, "rootLinks", num(pp.root_links));
+        if (typeof pp.connect === "boolean") params.connect = pp.connect;
+        const filters = {
+          files: Array.isArray(pp.files) ? pp.files : undefined,
+          rarityMin: num(pp.rarity_min) != null ? pp.rarity_min : null,
+          rarityMax: num(pp.rarity_max) != null ? pp.rarity_max : null,
+          sources: Array.isArray(pp.sources) ? pp.sources : undefined,
+          includeGachaOnly: !!pp.include_gacha_only,
+          includeNsfw: !!pp.include_nsfw,
+          includeNoncon: !!pp.include_noncon,
+        };
+        if (Array.isArray(pp.tags) && pp.tags.length) filters.tags = pp.tags;
         const tree = { id: uid(), name: f.name.replace(/\.json$/i, "").slice(0, 60),
-          seed: payload.seed != null ? payload.seed : 0, params: {}, limit: null,
+          seed: payload.seed != null ? payload.seed : 0, params,
+          limit: pp.limit != null ? pp.limit : null, filters,
           dataVersion: null, versionScheme: 2, static: true, createdAt: Date.now() };
-        saveStatic(tree.id, { nodes: payload.nodes, edges: payload.edges });
+        saveStatic(tree.id, { nodes: payload.nodes, edges: payload.edges, params });
         DB.trees.push(tree);
         DB.states[tree.id] = E.newState();
         DB.activeId = tree.id; selectedId = 0; saveDB(); renderTrees(); refreshAll();

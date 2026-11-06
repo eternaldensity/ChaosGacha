@@ -404,9 +404,9 @@ function boot(page, seed, fetchPayload) {
   // ---------- generated exports keep their exact layout ----------
   {
     const tree = JSON.stringify({
-      trees: [{ id: "tex", name: "Export me", seed: 7, params: {}, limit: null,
-                filters: {}, dataVersion: DATA_VERSION, versionScheme: 2,
-                static: false, createdAt: 1 }],
+      trees: [{ id: "tex", name: "Export me", seed: 7, params: { radius: 50 },
+                limit: null, filters: {}, dataVersion: DATA_VERSION,
+                versionScheme: 2, static: false, createdAt: 1 }],
       states: { tex: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
       activeId: "tex", guideSeen: true, settings: {},
     });
@@ -422,7 +422,7 @@ function boot(page, seed, fetchPayload) {
         pos: [2, 0, 0], r: 2 },
     ];
     const gen = JSON.stringify({
-      key: JSON.stringify([7, {}, {}, null, DATA_VERSION]),
+      key: JSON.stringify([7, { radius: 50 }, {}, null, DATA_VERSION]),
       res: { nodes, edges: [{ a: 0, b: 1, d: 1 }, { a: 1, b: 2, d: 1 }] },
     });
     const { dom } = await boot("tree.html",
@@ -464,16 +464,44 @@ function boot(page, seed, fetchPayload) {
     const stored = JSON.parse(w2.localStorage.getItem(
       "chaosTree.static.v1." + imported.id) || "null");
     ok("tree import: layout survives", !!stored && stored.nodes.length === 3);
+    ok("tree import: placement params survive",
+      !!stored && stored.params && stored.params.radius === 50,
+      JSON.stringify(stored && stored.params));
     ok("tree import: layout keeps its edges",
       !!stored && stored.edges.length === 2 &&
       stored.edges.every(e => e.length === 3 &&
         e.every(v => typeof v === "number")),
       JSON.stringify(stored && stored.edges));
     const rt = await w2.__treeDebug.runtime();
+    ok("tree import: runtime keeps the tree's radius", rt && rt.params && rt.params.radius === 50,
+      JSON.stringify(rt && rt.params));
     ok("tree import: imported layout stays connected",
       rt && rt.edges.length === 2 && Object.keys(rt.adj).length === 3 &&
       rt.nodes.every(nd => nd.name),
       rt ? `${rt.nodes.length} nodes, ${rt.edges.length} edges` : "no runtime");
+
+    // Python-generator trees carry snake_case params; keep them for Upgrade.
+    const py = {
+      format: "chaos-tree", version: 1, seed: 3,
+      params: { radius: 50, mean_degree: 4, max_link_distance: 0.5,
+                files: ["ability"], sources: "all", include_nsfw: false },
+      nodes: [{ id: 0, file: "__root__", number: 0, name: "Origin",
+                rarity: 0, pos: [0, 0, 0], r: 0 }],
+      edges: [],
+    };
+    const pyFile = new w2.File([JSON.stringify(py)], "python-tree.json",
+      { type: "application/json" });
+    Object.defineProperty(input, "files", { value: [pyFile], configurable: true });
+    input.dispatchEvent(new w2.Event("change", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 150));
+    const db2 = JSON.parse(w2.localStorage.getItem("chaosTree.v1") || "{}");
+    const pyt = (db2.trees || []).find(t => /python-tree/.test(t.name));
+    ok("tree import: python placement params are mapped",
+      !!pyt && pyt.params.radius === 50 && pyt.params.meanDegree === 4 &&
+      pyt.params.maxLinkDistance === 0.5, JSON.stringify(pyt && pyt.params));
+    ok("tree import: python filters are kept",
+      !!pyt && Array.isArray(pyt.filters.files) &&
+      pyt.filters.files[0] === "ability", JSON.stringify(pyt && pyt.filters));
     dom2.window.close();
     }
   }
