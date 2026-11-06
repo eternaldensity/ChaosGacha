@@ -344,7 +344,12 @@ window.ChaosGacha = (function () {
       const pool = GAMBLE_CATS.filter(x => x !== cat);
       c = pool[Math.floor((rnd || Math.random)() * pool.length)];
     }
-    return { d20, effect, tier: t, cat: c, advantage, destroyed };
+    // What actually moved, so the UI can say "gold → platinum" instead of
+    // just "Rank Up". No note when the tier is already at the end.
+    const note = effect === "changeType" ? `${cat} → ${c}`
+      : (effect === "rankUp" || effect === "rankDown") && t !== tier ? `${tier} → ${t}`
+      : "";
+    return { d20, effect, tier: t, cat: c, advantage, destroyed, note };
   }
   function gamblerLabel(g) {
     return { rankUp: "Rank Up", advantage: "Advantage", changeType: "Changed Type",

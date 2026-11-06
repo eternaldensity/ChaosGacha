@@ -59,6 +59,8 @@ function boot(page, seed, fetchPayload) {
       // jsdom has no canvas backend: give the 3D view a no-op 2D context so
       // an active tree can boot and draw without throwing.
       const noop = () => {};
+      // jsdom has no layout either; pages scroll results into view.
+      w.Element.prototype.scrollIntoView = noop;
       const ctx = new Proxy({}, {
         get: (t, k) => (k in t ? t[k] : noop),
         set: (t, k, v) => { t[k] = v; return true; },
@@ -235,6 +237,58 @@ function boot(page, seed, fetchPayload) {
     ok("gacha: filter is category-aware (skill)",
       skillOpts.includes("expertise") && !skillOpts.includes("medium-size"),
       skillOpts.slice(0, 8).join(","));
+    dom.window.close();
+  }
+
+  // ---------- gacha page: Gambler visibility ----------
+  {
+    const { dom, errors } = await boot("gacha.html");
+    const w = dom.window, d = w.document;
+    ok("gacha gambler: no page errors", errors.length === 0, errors[0]);
+    d.getElementById("spinSpeed").value = "off";
+    d.getElementById("spinSpeed").dispatchEvent(new w.Event("change", { bubbles: true }));
+    d.getElementById("gambler").checked = true;
+    d.getElementById("gambler").dispatchEvent(new w.Event("change", { bubbles: true }));
+
+    // An advantage ticket rolls several wheels and then waits for the keep
+    // choice. The d20 is already decided by then, so the prompt itself must
+    // say what Gambler did instead of waiting for the kept result's card.
+    const realRandom = w.Math.random;
+    w.Math.random = () => 0.5;   // d20 = 11: "No change"
+    d.getElementById("tkTier").value = "gold";
+    d.getElementById("tkAdv").value = "2";
+    d.getElementById("btnAddTicket").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const tkBtns = [...d.querySelectorAll("#ticketList button")];
+    tkBtns[tkBtns.length - 1].dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const prompt = d.getElementById("resultBody").textContent;
+    ok("gacha gambler: advantage prompt shows the d20 roll",
+      /wheels landed/.test(prompt) && /Gambler d20 → 11: No change/.test(prompt), prompt);
+    ok("gacha gambler: advantage prompt still lists every wheel",
+      d.querySelectorAll("#multiList li").length === 2,
+      String(d.querySelectorAll("#multiList li").length));
+
+    // Every x10 ticket rolls its own d20, so every row must show it. Force a
+    // rank up on the first ticket (d20 = 20) so the "gold → platinum" note is
+    // deterministic; the rest roll "No change".
+    let firstRoll = true;
+    w.Math.random = () => {
+      if (firstRoll) { firstRoll = false; return 0.99; }
+      return 0.5;
+    };
+    d.getElementById("btnMulti").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const rows = [...d.querySelectorAll("#multiList li")];
+    const rowText = rows.map(li => li.textContent).join(" | ");
+    ok("gacha gambler: every x10 row shows its own d20",
+      rows.length === 10 && rows.every(li => /🎲 \d+: /.test(li.textContent)),
+      String(rows.length) + " rows: " + rowText);
+    ok("gacha gambler: x10 spells out what a rank up moved",
+      /🎲 20: Rank Up \(gold → platinum\)/.test(rowText), rowText);
+    const db = JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}");
+    ok("gacha gambler: x10 records the d20 on every ticket",
+      (db.history || []).length === 10 &&
+      db.history.every(h => h.d20 != null && h.geffect),
+      JSON.stringify((db.history || [])[0] || {}).slice(0, 100));
+    ok("gacha gambler: no page errors after rolls", errors.length === 0, errors[0]);
     dom.window.close();
   }
 

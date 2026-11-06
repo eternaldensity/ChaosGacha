@@ -1757,7 +1757,7 @@
 879. Terrain Manipulator, 3.4, No Man's Sky
 #(Tag:earth)Reshape whole landscapes, mine underfoot, and flatten base sites with multitool modes.
 880. Boltcaster, 2.8, No Man's Sky
-#The trusty starting multitool weapon; rapid plasma bolts with endless upgrades.
+#The standard-issue multitool rifle: rapid plasma bolts, with room for upgrades. You might be able to buy or salvage standard upgrade modules for it; it can take up to three at a time.
 881. Blaze Javelin, 3.6, No Man's Sky
 #(Tag:fire)(Tag:weapon)A charged railbeam that pierces rock and sentinels alike.
 882. Hyperdrive, 4.6, No Man's Sky

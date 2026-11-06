@@ -16325,7 +16325,7 @@
 
 **Description**
 
-> The trusty starting multitool weapon; rapid plasma bolts with endless upgrades.
+> The standard-issue multitool rifle: rapid plasma bolts, with room for upgrades. You might be able to buy or salvage standard upgrade modules for it; it can take up to three at a time.
 
 **Decision**
 

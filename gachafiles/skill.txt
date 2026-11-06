@@ -611,7 +611,7 @@
 306. Colony Medicine, 3.6, RimWorld
 #(Tag:healing)Triage, surgery, and glitterworld care with whatever counts as a hospital.
 307. Colony Construction, 3.0, RimWorld
-#(Tag:craft)Raise bases fast and sturdy, from wooden shacks to plasteel fortresses.
+#(Tag:craft)Build and repair a colony's structures by hand: fast work, fewer botched jobs, and better quality, from wooden shacks to plasteel fortresses.
 308. Deep Space Survey, 3.4, Stellaris
 #(Tag:science)Chart stars, anomalies, and habitable worlds with professional thoroughness.
 309. Galactic Diplomacy, 3.8, Stellaris

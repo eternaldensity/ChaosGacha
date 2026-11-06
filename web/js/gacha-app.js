@@ -147,7 +147,7 @@
     const cls = G.rarityClass(DATA.classes, r.rarity);
     const tags = entryTags(r);
     return `${r.name}\n(${fmtR(r.rarity)}, ${cls.name}, ${r.category}${r.source ? ", " + r.source : ""}${tags.length ? ", #" + tags.join(" #") : ""})` +
-      (r.d20 != null ? ` 🎲${r.d20} ${G.gamblerLabel({ effect: r.geffect })}` : "") +
+      (r.d20 != null ? ` 🎲${r.d20} ${G.gamblerLabel({ effect: r.geffect })}${r.gambleNote ? ` (${r.gambleNote})` : ""}` : "") +
       (r.description ? `\n${r.description}` : "");
   }
   window.__gacha = window.__gacha || {};
@@ -436,7 +436,10 @@
     save(); renderTickets();
     const keep = (chosen) => {
       if (rolls > 1) chosen.advantage = rolls;
-      if (g) { chosen.d20 = g.d20; chosen.geffect = g.effect; }
+      if (g) {
+        chosen.d20 = g.d20; chosen.geffect = g.effect;
+        if (g.note) chosen.gambleNote = g.note;
+      }
       DB.history.unshift(Object.assign({ id: uid(), at: Date.now(), min, max, avg }, chosen));
       if (DB.history.length > 500) DB.history.length = 500;
       save(); renderStats();
@@ -446,7 +449,7 @@
     // How the batch is presented once the wheels settle.
     const present = () => {
       if (rolls <= 1) { keep(results[0]); return; }
-      showChoicePrompt(rolls);
+      showChoicePrompt(rolls, g);
       renderChoiceList(results, keep);
     };
     const speed = (DB.settings && DB.settings.spin) || "normal";
@@ -474,6 +477,10 @@
       `<b>${esc(r.name)}</b> <span class="pill">${esc(r.category)} ${fmtR(r.rarity)}</span>` +
       (entryTags(r).length ? " " + tagPills(entryTags(r), r.category) : "") +
       (extra || "") +
+      // Each ticket in a batch rolls its own d20, so the list says what
+      // Gambler did per result instead of only on the kept result's card.
+      (r.d20 != null ? `<br><span class="muted small">🎲 ${r.d20}: ${esc(G.gamblerLabel({ effect: r.geffect }))}` +
+        `${r.gambleNote ? ` (${esc(r.gambleNote)})` : ""}</span>` : "") +
       `<br><span class="muted small">${esc(r.source || "—")}</span></div>`;
     const b = document.createElement("button");
     b.textContent = "👁";
@@ -517,14 +524,16 @@
     $("multiCard").style.display = "block";
   }
 
-  function showChoicePrompt(n) {
+  function showChoicePrompt(n, g) {
     lastResult = null;
     $("resultCard").style.display = "block";
     $("resultCard").style.boxShadow = "";
     $("multiCard").style.display = "block";
     $("resultBody").innerHTML =
       `<div class="result-name">⚡ Advantage ×${n}</div>` +
-      `<div class="small muted">${n} wheels landed: read the results below and keep the one you want.</div>`;
+      `<div class="small muted">${n} wheels landed: read the results below and keep the one you want.</div>` +
+      (g ? `<div class="small muted">🎲 Gambler d20 → ${g.d20}: ${esc(G.gamblerLabel({ effect: g.effect }))}` +
+        `${g.note ? ` (${esc(g.note)})` : ""}</div>` : "");
     $("resultCard").scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
@@ -667,7 +676,10 @@
             r.gambleNote = `kept ${fmtR(r.rarity)} over ${fmtR(r2.rarity)}`;
           }
         }
-        if (g) { r.d20 = g.d20; r.geffect = g.effect; }
+        if (g) {
+          r.d20 = g.d20; r.geffect = g.effect;
+          if (!r.gambleNote && g.note) r.gambleNote = g.note;
+        }
         results.push(r);
       }
     } catch (e) { toast(e.message + (results.length ? ` (${results.length} landed first)` : ""), true); }
@@ -770,7 +782,7 @@
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
         `<b>${esc(h.name)}</b> <span class="pill">${esc(h.category)} ${fmtR(h.rarity)}</span>` +
         (entryTags(h).length ? " " + tagPills(entryTags(h), h.category) : "") +
-        (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }))}">🎲${h.d20}</span>` : "") +
+        (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }) + (h.gambleNote ? ` (${h.gambleNote})` : ""))}">🎲${h.d20}</span>` : "") +
         (h.advantage > 1 ? ` <span class="pill" title="Kept the best of ${h.advantage} wheels">⚡${h.advantage}</span>` : "") + `<br>` +
         `<span class="muted small">${esc(h.source || "—")} · ${new Date(h.at).toLocaleString()} · ${h.odds.toFixed(2)}%</span></div>`;
       const b = document.createElement("button");

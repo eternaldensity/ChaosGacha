@@ -5806,7 +5806,7 @@
 
 **Description**
 
-> (Tag:craft)Raise bases fast and sturdy, from wooden shacks to plasteel fortresses.
+> (Tag:craft)Build and repair a colony's structures by hand: fast work, fewer botched jobs, and better quality, from wooden shacks to plasteel fortresses.
 
 **Decision**
 
