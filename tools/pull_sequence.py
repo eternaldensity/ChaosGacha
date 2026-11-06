@@ -14,6 +14,10 @@ Usage:
     python3 tools/pull_sequence.py SEQ [--list OUT] [--md OUT]
 
 Defaults write <stem>.list.txt and <stem>.md next to the sequence file.
+
+The list contains only what was taken: entries flagged `(not chosen)` are
+omitted there. The markdown keeps them (flagged) so the offered
+alternatives stay on record; `(replaced)` entries appear in both.
 """
 import argparse
 import os
@@ -130,18 +134,28 @@ def load_index():
 
 
 def render_list(picks, index, curses):
+    """The pull list: only what was actually taken.
+
+    Offered-but-not-taken alternatives (flag `(not chosen)`) stay in the
+    sequence so the markdown can show them, but they are not pulls and are
+    omitted here. `(replaced)` entries were taken, so they stay.
+    """
     blocks = []
-    for i, p in enumerate(picks, 1):
+    n = 0
+    for p in picks:
+        if "not chosen" in p.get("flag", ""):
+            continue
+        n += 1
         if p["kind"] == "curse":
             c = curses[p["key"][1]]
-            block = (f"{i}\n[{c['label']}]\n|Severity {c['sev']}|\n"
+            block = (f"{n}\n[{c['label']}]\n|Severity {c['sev']}|\n"
                      f"{c['desc']}")
             if c["resolve"]:
                 block += f"\n|Resolve: {c['resolve']}|"
             blocks.append(block)
             continue
         e = index[p["key"]]
-        blocks.append(f"{i}\n[{e['name']}]\n"
+        blocks.append(f"{n}\n[{e['name']}]\n"
                       f"|{rarity_tier(e['rarity'])} "
                       f"{TYPE_SINGULAR[e['file']]}|\n"
                       f"{e['description']}")

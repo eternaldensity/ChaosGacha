@@ -24,254 +24,209 @@ You are skilled at intimidating people. You make them feel fear and shake in the
 You are a Tinker who just started your journey. All Tinker abilities gain slightly enhanced efficiency, and you build technological constructs faster and more resourcefully.
 
 6
-[Master Rider]
-|Elite Trait|
-You master riding any mount; when mounted, your senses link and you communicate your intentions to your mount instantly.
-
-7
 [Portable Pharmacy]
 |Rare Item|
 A simple satchel yielding any item found in an average pharmacy.
 
-8
+7
 [Tinker - Alchemy (II)]
 |Rare Ability|
 Allows you to build alchemy-related technology like healing, stamina, energy, disease-curing, minor permanent-buff, explosive gas, and incendiary acid potions. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
 
-9
+8
 [Merciful]
 |Severity 12|
 A real bleeding heart. You are incapable of executing or further harming those who have given up the will to fight or show the intent to surrender.
 |Resolve: Kill a lot of people|
 
-10
-[Blast Mark]
-|Elite Ability|
-Mark objects with a rune you can charge with energy to detonate at any time. Explosion power scales with energy spent; stored energy fades over time.
-
-11
-[Taekwondo]
-|Rare Skill|
-You are an apprentice in Taekwondo, a dynamic Korean martial art specializing in speed, agility, and powerful kicking techniques. You combine high, spinning, and jumping kicks with fast footwork and precise strikes to deliver devastating blows, and with sufficient mastery you enhance your strikes with your internal energy.
-
-12
+9
 [Invisibility]
 |Uncommon Ability|
 Bend light around yourself or a touched object to render it invisible.
 
-13
+10
 [Silver Spoon]
 |Common Item|
 A pure silver spoon personally blessed by the heavenly god, extremely lethal against vampires, ghouls, werewolves, and similar beings. Doubles as cutlery.
 
-14
+11
 [Novice Kama Sutra]
 |Common Skill|
 You are reasonably talented in the carnal arts. You know what goes where, how to pleasure your partner, and what not to do during coitus.
 
-15
+12
 [The Straw Hat]
 |Trash Item|
 Holds great sentimental value to a certain sun god, but little material value.
 
-16
+13
 [Background NPC]
 |Uncommon Trait|
 You fade into the background easily; unless you draw attention, people often overlook you and find you hard to notice. This fails against those looking for you or aware you are there. Your Stranger-class abilities are slightly more potent.
 
-17
+14
 [Reaper's Presence]
 |Elite Trait|
 Upgrade to Terrifying Presence - You project a nightmarish presence that can make a grown person soil themselves without a word. Every gesture you make can feel like a death threat when you want it to.
 
-18
-[Challenge DLC]
-|Elite Trait|
-A challenge board is added to your gacha, offering 3 limited-time quests based on your location, state, and power level. You can take one challenge every 48 hours when the board resets, or every 168 hours after a failure.
-
-19
+15
 [Suppression]
 |Elite Skill|
 You are a master of suppressing yourself. You erase your presence down to an ordinary one or fully conceal all your energy, turning a presence that shakes gods into one that does not seem out of place with foliage.
 
-20
+16
 [Bleeding Wallet]
 |Severity 8|
 Kicking someone while they are down. Every time you are hurt, so are your finances, proportional to how much damage you take. A broken arm may make you lose your wallet, while a lost limb may make a large portion of your bank account vanish.
 |Resolve: Acquire the trait Life Insurance or obtain over 1000 tons of gold in money, or endure all of your finances being wiped out at least 10 times(must have a substantial amount of money to count)|
 
-21
-[Orchard]
-|Rare Ability|
-Lets you create extremely refreshing fruits and vegetables from energy, which can gain unique properties from your abilities.
-
-22
+17
 [Universal Pull]
 |Elite Ability|
 Lets you exert incredible attractive force to pull distant targets or bury a target under surrounding objects. Has a 5-second cooldown.
 
-23
+18
 [Yes Man]
 |Common Familiar|
 Yes Man is a reprogrammed RobCo Securitron AI that can interface with technology and write code when given the right materials. His body carries guns strong enough to defend itself, and he is physically incapable of saying no to you.
 
-24
+19
 [Tough as Nails]
 |Rare Trait|
 You are tough as nails. You gain significantly increased durability and endurance, letting you resist stronger blows with less damage, recover from injuries faster without healing, and power through attacks more effectively.
 
-25
+20
 [Hellkite Wyvern]
 |Uncommon Familiar|
 A lesser descendant of dragons but a fearsome creature nonetheless, the Hellkite Wyvern is a huge flying draconic beast with flesh like scales and the ability to breathe flames that can reduce the lesser men to ash. However, they are still vulnerable to conventional weapons like bows and arrows.
 
-26
+21
 [Lesser Curse]
 |Uncommon Ability|
 Place a curse by touch lowering one chosen physical attribute, Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
 
-27
+22
 [Genderswap]
 |Common Ability|
 Allows you to swap your gender and the genders of those who don't or can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
 
-28
+23
 [Novice Biology]
 |Common Skill|
 You have the skills and knowledge of a Biology Major. You hold a decent repertoire of knowledge regarding biology, bodies and organs, and how things interact with biology.
 
-29
+24
 [Coco Jumbo]
 |Common Familiar|
 A seemingly regular turtle with a stand letting others use the key on its back to enter and leave a room inside it at will.
 
-30
+25
 [Verminshroud]
 |Elite Item|
 Filthy patchwork cloak of rat and mouse hide that can never be cleaned. Lets you transform into mundane vermin at will, control sensed vermin, and gain Elite rank illness and poison resistance.
 
-31
+26
 [Lil']
 |Severity 6|
 You are a Lil' thing. Which means you are pretty short and look way younger than you should look; people might mistake you for being way younger than you are. Good luck getting people to take you seriously in a professional setting or trying to buy alcohol. The curse does not affect your physical strength.
 |Resolve: Get your body altered by a biokinetic effect that is rare rank or above.|
 
-32
+27
 [Natural Armory]
 |Rare Ability|
 Turn touched objects into stable cold weapons regardless of matter, like water scythe, stone spear, air sword, or fire whip. The world is your armory.
 
-33
+28
 [Taurus Demons]
 |Rare Familiar|
 A truck-sized Chaos-formed bull demon with super strength and durability. Ordinary gunfire is almost useless against it, and it can take down military companies alone. The more energy you have, the more can be summoned at once.
 
-34
-[Vampire]
-|Rare Trait|
-Race - You are a vampire born of the Stone Mask created by Pillar Man Kars. You gain amped physical stats, ghoul and vampire creation, and flesh manipulation, but you are deathly vulnerable to sunlight.
-
-35
+29
 [Poseidon's Kiss]
 |Uncommon Trait|
 You are blessed by Poseidon to move underwater as naturally as above water, and all mundane aquatic life is friendly to you.
 
-36
+30
 [Intermediate Blacksmithing]
 |Uncommon Skill|
 You are experienced enough in blacksmithing to be called a real blacksmith. You forge decent-quality weapons, armour, and various tools that a warrior uses without apprehension.
 
-37
+31
 [Adept Physics]
 |Rare Skill|
 You have the experience and knowledge of a Senior Scientist in Physics, deeply knowledgeable in the laws of the universe, including gravity, electromagnetism and its effects, and nuclear fission and fusion.
 
-38
+32
 [Potato GLaDOS]
 |Uncommon Familiar|
 GLaDOS is a highly advanced AI holding immense Aperture Labs data that can interface with any system or mainframe she is installed in and build technology. She is stuck in a potato, so you must supply the technology first.
 
-39
+33
 [Crying]
 |Trash Skill|
 You cry at will, and very convincingly.
 
-40
+34
 [Pepsi Man]
 |Trash Familiar|
 Pepsi Man gives Pepsi whenever he can: when summoned he reaches your location by any means, delivers everyone there a fresh can of Pepsi, then disappears. 8-hour cooldown. Note: This familiar is not sponsored by the Pepsi Corporation.
 
-41
+35
 [Magical Girl Transformation]
 |Trash Trait|
 You perform all transformations with overly dramatic Magical Girl Transformation flair.
 
-42
+36
 [Farming]
 |Common Skill|
 You have extensive farming knowledge rivaling the most experienced farmers, including maintaining a farm, caring for livestock, maintaining soil, and more.
 
-43
+37
 [Grooming]
 |Common Skill|
 NOT THAT KIND - You are very skilled at grooming, caring for your hair, hygiene, and cleanliness, making yourself and others look presentable.
 
-44
-[Crazy Lure]
-|Rare Trait|
-Crazy, mentally unstable, or otherwise insane people find themselves more attracted to you, and you gain their affection and favor more easily. You can also reason with them more easily.
-
-45
+38
 [Fast Reflexes]
 |Uncommon Trait|
 Your reflexes are beyond the norm, letting even a base human weave around punches and aim-dodge guns with training. This scales with your stats.
 
-46
+39
 [Platinum Bag of Holding]
 |Elite Item|
 A brilliant shimmering platinum bag of holding containing a 2500x2500x2500m subspace inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. It can place contents in spatial stasis and clean them if the user wishes.
 
-47
+40
 [2-1B surgical droid]
 |Uncommon Familiar|
 The 2-1B surgical droid is an advanced medical droid with a vast database and droid-body precision. It surpasses any human surgeon and carries varied surgical implants.
 
-48
+41
 [Revengence]
 |Rare Ability|
 Build up energy as you are hurt, then charge any ability or spell with it for a devastating effect. Each 10% health lost adds 2x power, reaching 10x at 10% health remaining; 8-hour cooldown.
 
-49
+42
 [Arthropod Affiliate]
 |Uncommon Trait|
 You have great affinity with insects, arachnids, crustaceans, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your arthropod affinity, you possess slightly increased durability, and your armor-based abilities and effects cost slightly less energy to use.
 
-50
+43
 [Stockpile]
 |Rare Ability|
 Stockpile energy while in an active slot, holding up to 3x your storage but taking 24 hours to fill completely.
 
-51
-[Calcium Cultivation]
-|Rare Trait|
-Your bones demand milk: every time you consume milk, they gain a permanent boost to durability and quality. Higher-quality milk gives a greater boost. Repeating the same kind of milk decreases its effects exponentially after the first drink, and the boost is relative to the milk's quality versus your bones.
-
-52
+44
 [Weather]
 |Trash Ability|
 Lets you accurately predict a given area's weather for a week.
 
-53
+45
 [Electromagnetic Sight]
 |Uncommon Ability|
 Shift your vision to see electromagnetism and electricity even through walls, instinctively distinguishing and understanding them.
 
-54
-[Sex Manipulation]
-|Common Ability|
-Allows you to alter your genitals to your liking as long as the changes aren't absurd.
-
-55
+46
 [Dream Mirror]
 |Common Ability|
 View dreams of anyone in sensory range like a livestream. Can likely influence dreams by whispering in their ears.
