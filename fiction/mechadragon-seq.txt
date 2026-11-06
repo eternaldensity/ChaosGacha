@@ -6,6 +6,8 @@
 #   (not chosen)  offered but not taken
 #   (replaced)    pulled, later replaced/removed
 # Blank lines and #-comments are ignored.
+# New refs: python3 tools/match_pulls.py fiction/mechadragon-pulls.txt
+# (add --append to write the unambiguous ones), then run tools/pull_sequence.py.
 ability:1
 ability:577
 ability:207
