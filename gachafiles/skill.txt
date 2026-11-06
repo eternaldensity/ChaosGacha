@@ -67,7 +67,7 @@
 34. Divine Gaming, 7.0, Generic
 #(Tag:tech)You are godlike at all kinds of games, including chess, video games, gambling, bottle toss, and anything of the sort. You are nigh unbeatable at any game unless against another godlike being of a similar domain.
 35. Intermediate Riding, 1.8, Generic
-#(Tag:motor)(Tag:movement)You are pretty skilled at riding conventional mounts and vehicles, being familiar with how most things you ride on or drive will react to your inputs and actions. You could probably get a job as a Jockey or a Proffesional Driver.
+#(Tag:motor)(Tag:movement)You are pretty skilled at riding conventional mounts and vehicles, being familiar with how most things you ride on or drive will react to your inputs and actions. You could probably get a job as a jockey or a professional driver.
 36. Intermediate Leadership, 2.7, Generic
 #(Tag:social)You are an effective leader. You motivate, take charge of, and lead people with decent effectiveness, instilling confidence in them and making them do what you want.
 37. Intermediate Charisma, 3.8, Generic

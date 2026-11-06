@@ -428,6 +428,7 @@ DESC_FIXES = [
     (r"\belectrcitiy\b", "electricity"),
     (r"\bpin point\b", "pinpoint"),
     (r"\bassasins\b", "assassins"),
+    (r"\bproffesional\b", "professional"),
 ]
 
 # Site spellings that are outright wrong and safe to correct everywhere.
