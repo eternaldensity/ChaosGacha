@@ -48,6 +48,11 @@
       <label style="margin-top:8px" title="Tags from the original Chaos Gacha index (per-category taxonomy). Select any to show entries carrying at least one of them.">Theme tags <span class="muted small" id="eqTagCount"></span></label>
       <input type="search" id="eqTagQ" placeholder="filter tags (e.g. fire, anti-dragon, size)" style="margin-bottom:6px">
       <div class="catpick" id="eqTags"></div>
+      <div class="row" style="margin-top:8px">
+        <div><label for="eqExTags" title="Hide entries carrying any of these tags. Comma-separated; e.g. deleted hides entries the original list dropped.">Exclude tags</label>
+          <input type="search" id="eqExTags" list="eqExTagNames" placeholder="deleted, nsfw…"></div>
+      </div>
+      <datalist id="eqExTagNames"></datalist>
       <div class="row">
         <div><label for="eqMin">Rarity from</label>
           <input type="number" id="eqMin" step="0.1" min="0" placeholder="any"></div>

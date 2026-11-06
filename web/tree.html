@@ -109,7 +109,10 @@
             <input type="number" id="newRmax" step="0.1" min="0" placeholder="any" title="Only include entries at or below this rarity."></div>
           <div><label for="newTag" title="Only include entries carrying this thematic tag (e.g. dragonic, undead, holy). Blank = any.">Theme tag</label>
             <select id="newTag"><option value="">Any tag</option></select></div>
+          <div><label for="newExTags" title="Drop entries carrying any of these tags. Comma-separated; e.g. deleted leaves out entries the original list dropped.">Exclude tags</label>
+            <input type="search" id="newExTags" list="newTagNames" placeholder="deleted, nsfw…"></div>
         </div>
+        <datalist id="newTagNames"></datalist>
         <details id="srcBox" style="margin-top:8px">
           <summary title="Uncheck sources to exclude them. Uncheck all = include everything.">Sources (<span id="srcCount">all</span>)</summary>
           <div class="row" style="margin:6px 0">

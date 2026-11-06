@@ -6,8 +6,8 @@
 #(Tag:martial)(Tag:weapon)You practice a refined blade art that turns drawing the blade into blitzing fast, precise slashes. With experience, you imbue your scabbard with energy to propel your sword even faster and increase your attacks' potency.
 4. Intermediate Acting, 2.4, Generic
 #(Tag:social)You are a skilled actor. You portray yourself as you want to be seen and conceal your real emotions, but people familiar with you or with good intuition like detectives can probably see through your acting.
-5. Intermediate Shooting, 2.2, Generic
-#(Tag:ranged)You are a pretty decent shot. You handle most firearms and projectiles with familiarity, but you do not land headshot after headshot.
+5. Intermediate Marksmanship, 2.2, Generic
+#(Tag:ranged)You are decently skilled at handling and using ranged weapons such as Bows, Guns, Slings and Throwables, having good enough aim to make effective use of them in combat in most cases.
 6. Intermediate Hand-to-Hand Combat, 2.5, Generic
 #(Tag:martial)(Tag:unarmed)You are a seasoned fighter who knows how to move your body to hurt people. You pick up most martial arts far faster than others and completely thrash the average man in a fight.
 7. Intermediate Programming, 2.1, Generic
@@ -66,12 +66,12 @@
 #(Tag:medical)You are as skilled as an experienced masseuse. You relieve pressure, cause pleasure, and relax the muscles of people you massage.
 34. Divine Gaming, 7.0, Generic
 #(Tag:tech)You are godlike at all kinds of games, including chess, video games, gambling, bottle toss, and anything of the sort. You are nigh unbeatable at any game unless against another godlike being of a similar domain.
-35. Intermediate Driving, 1.8, Generic
-#(Tag:motor)(Tag:movement)You are a seasoned driver. You handle a variety of vehicles ranging from bikes and cars to aircraft with familiarity.
+35. Intermediate Riding, 1.8, Generic
+#(Tag:motor)(Tag:movement)You are pretty skilled at riding conventional mounts and vehicles, being familiar with how most things you ride on or drive will react to your inputs and actions. You could probably get a job as a Jockey or a Proffesional Driver.
 36. Intermediate Leadership, 2.7, Generic
 #(Tag:social)You are an effective leader. You motivate, take charge of, and lead people with decent effectiveness, instilling confidence in them and making them do what you want.
 37. Intermediate Charisma, 3.8, Generic
-#(Tag:social)You have an aura of charisma around you, less a skill than something just around you. People of note feel more attracted to your presence, paying more attention to you, taking you more seriously, and similar subtle effects.
+#(Tag:deleted)(Tag:social)You have an aura of charisma around you, less a skill than something just around you. People of note feel more attracted to your presence, paying more attention to you, taking you more seriously, and similar subtle effects.
 38. Throwing, 2.2, Generic
 #(Tag:ranged)You are fairly skilled at throwing various objects with speed and accuracy. You land a stone on a target's head from across the street without trouble.
 39. Intermediate Medicine, 2.9, Generic
@@ -100,8 +100,8 @@
 #(Tag:expertise)You are very skilled at surviving in the wilderness. You make temporary shelter from found materials, identify safe food sources, track animals, secure your belongings, and handle everything else needed to survive effectively.
 51. Novice Acting, 1.4, Generic
 #(Tag:social)You are a novice actor. You portray yourself as you want to be seen and hide your real emotions, but experienced people easily see through your acting, though you improve much faster than others if you train yourself.
-52. Novice Shooting, 1.6, Generic
-#(Tag:ranged)You know how to handle firearms. You are no marksman but aim and shoot projectiles as well as the average soldier, though you improve much faster than others if you train yourself.
+52. Novice Marksmanship, 1.6, Generic
+#(Tag:ranged)You know how to wield most types of basic ranged weapons such as slings, bows, guns and throwables. Not to any notable degree but you know how your weapon works and how to aim at the target.
 53. Novice Hand-to-Hand Combat, 1.5, Generic
 #(Tag:martial)(Tag:unarmed)You are reasonably talented in hand-to-hand combat. You know how and where to punch, enough for most people, and while you do not beat professionals, you confidently beat the average person and improve much faster than others if you train yourself.
 54. Novice Programming, 1.4, Generic
@@ -134,12 +134,12 @@
 #(Tag:social)You know how to tame wild creatures, but not very precisely. With trial and error you probably tame a creature, though it is not easy, while you easily tame and train mundane animals.
 68. Novice Massage, 1.2, Generic
 #(Tag:craft)You are as skilled as an apprentice masseuse. You give massages that feel good and relieve pressure but not much beyond that.
-69. Novice Driving, 1.1, Generic
-#(Tag:motor)(Tag:movement)You know how to drive most vehicles. You are no expert, but you do not fall off your bike or drive into pedestrians.
+69. Novice Riding, 1.1, Generic
+#(Tag:motor)(Tag:movement)You know how to ride most conventional mounts and vehicles, not to any notable skill but if you ride a horse you probably won't fall off and you probably won't crash your crash.
 70. Novice Leadership, 2.4, Generic
 #(Tag:social)You know a bit about leading and motivating people. You do not lead armies anytime soon, but your team probably finds you agreeable and you decently resolve member conflicts and motivate your team.
 71. Novice Charisma, 1.9, Generic
-#(Tag:social)You have an aura of charisma around you, less a skill than a change in your demeanour and how you hold yourself. People of note feel more attracted to your presence, paying more attention to you and taking you more seriously, though at this level it is not too noticeable.
+#(Tag:deleted)(Tag:social)You have an aura of charisma around you, less a skill than a change in your demeanour and how you hold yourself. People of note feel more attracted to your presence, paying more attention to you and taking you more seriously, though at this level it is not too noticeable.
 72. Novice Medicine, 1.5, Generic
 #(Tag:medical)You are about as skilled as a doctor in training. You perform first aid, apply medicine, know what most medicines do, and in a pinch improvise medical tools to perform basic surgery.
 73. Adept Cooking, 3.3, Generic
@@ -148,8 +148,8 @@
 #(Tag:expertise)(Tag:social)You know how to read effectively. You know all common and mundane languages of the world you are in, and you read books and grimoires much faster while digesting their information better.
 75. Adept Acting, 3.4, Generic
 #(Tag:social)You are as skilled as a veteran actor. You effectively present yourself as you want to be seen to invoke the emotions you want while hiding your real thoughts and feelings, and it takes a seasoned detective to suss you out.
-76. Adept Shooting, 3.5, Generic
-#(Tag:ranged)You are a natural crack shot, wielding most projectile weaponry with great accuracy and rarely missing except against opponents of similar skill.
+76. Adept Marksmanship, 3.5, Generic
+#(Tag:ranged)You are very skilled at handling and using ranged weapons such as Bows, Guns, Slings and even aiming your own Projectile Attacks, skilled enough to make most of your shots count even in chaotic situations.
 77. Adept Hand-to-Hand Combat, 3.6, Generic
 #(Tag:martial)(Tag:unarmed)You fight at the level of a veteran martial artist, moving your body to unleash powerful blows with arms and legs that are lethal weapons.
 78. Adept Programming, 3.1, Generic
@@ -182,12 +182,12 @@
 #(Tag:social)You are great at taming, making beings submit to your ownership or superiority, gaining the obedience and loyalty of eligible familiars and, to a lesser extent, people. You are also good at training them.
 92. Adept Massage, 3.6, Generic
 #(Tag:craft)You are as skilled as a seasoned masseuse, giving massages that relieve exhaustion, recover stamina, revitalize body and mind, and even invoke sexual pleasure. Few would leave your massage bed unsatisfied.
-93. Adept Driving, 3.0, Generic
-#(Tag:motor)(Tag:movement)You are as skilled as a veteran driver, handling any vehicle with ease. In a race, you would likely embarrass the competition.
+93. Adept Riding, 3.0, Generic
+#(Tag:motor)(Tag:movement)You are very skilled at riding most mounts and vehicles, being handle even unwieldy mounts such as supernatural beasts and overspecced vehciles with finesse, regardles of what kind of vehicle or mount it is, you can probably find a way to handle it.
 94. Adept Leadership, 4.2, Generic
 #(Tag:social)You are a skilled leader of small teams or even companies, able to earn loyalty, boost morale, manage, and lead. If you led a military into war, you would be known as a great commander.
 95. Adept Charisma, 4.4, Generic
-#(Tag:social)You have an aura of charisma that is less a skill and more something around you. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
+#(Tag:deleted)(Tag:social)You have an aura of charisma that is less a skill and more something around you. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
 96. Adept Medicine, 4.1, Generic
 #(Tag:medical)You are very skilled in all areas of medicine at a veteran level, able to perform surgery, diagnose conditions, and create medicine. Given ingredients, you can make your own medicines, even magical ones such as potions depending on the world you are in.
 97. Expert Cooking, 4.4, Generic
@@ -196,8 +196,8 @@
 #(Tag:expertise)NOT THAT KIND - You are very skilled at grooming, caring for your hair, hygiene, and cleanliness, making yourself and others look presentable.
 99. Expert Acting, 4.4, Generic
 #(Tag:social)You are an expert actor, skillfully portraying yourself as you want to be perceived to invoke or hide emotions at will. It would take a real expert to see through your mask.
-100. Expert Shooting, 4.6, Generic
-#(Tag:ranged)You are an expert marksman, handling all firearms and projectiles with such skill and finesse that others might wonder if you have a special power. You can curve shots, utilize ricochets, and better predict the trajectory of enemy projectiles.
+100. Expert Marksmanship, 4.6, Generic
+#(Tag:ranged)You are an Expert Marksman, handling and using ranged weapons such as Bows, Guns, Slings and even your own Projectiles with notable expertise. You are good enough to aim even with unwieldy weapons and projectiles and even calculate ballistic and richochet trajectories on the fly.
 101. Expert Hand-to-Hand Combat, 4.5, Generic
 #(Tag:martial)(Tag:unarmed)You are an expert martial artist, moving your body like a lethal weapon and knowing where and how to strike. You learn and master other unarmed martial arts much faster.
 102. Expert Programming, 4.1, Generic
@@ -230,12 +230,12 @@
 #(Tag:social)You are an expert in taming and domestication, able to turn a ferocious beast into your best buddy and skillfully train creatures to gain their obedience and loyalty. This also applies to people to a lesser extent.
 116. Expert Massage, 4.0, Generic
 #(Tag:craft)You are an expert masseuse on the level of a grandpa who spent his life refining his craft, giving massages that melt away exhaustion, revitalize the body, relieve tension, and give unmatched sexual pleasure.
-117. Expert Driving, 4.0, Generic
-#(Tag:motor)(Tag:movement)You are an expert driver of all vehicles from scooters to spaceships, able to outrace a motorcycle while riding a tricycle. If it has steering controls, you can make it purr as others can only hope to imitate.
+117. Expert Riding, 4.0, Generic
+#(Tag:motor)(Tag:movement)You are incredibly skilled at riding and handling any Mount or Vehicle, be it dragons, cars, shapeships, tricycles, wolves, you can very quickly figure out how to handle them and ride them effectively through instinct, even if you have never ridden one before.
 118. Expert Leadership, 5.3, Generic
 #(Tag:social)You are an expert leader on par with famous leaders like Iskandar or King Arthur, motivating, leading, and managing your people with finesse and efficiency. You could probably run your own country with some effort.
 119. Expert Charisma, 5.2, Generic
-#(Tag:social)You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
+#(Tag:deleted)(Tag:social)You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, and you are more intimidating when you want to be and more persuasive when you try to be.
 120. Expert Medicine, 4.9, Generic
 #(Tag:medical)You are an expert in all fields of medicine seldom matched by regular humans, performing surgery, making your own supernatural medicine, and diagnosing ailments with ease and finesse.
 121. Master Cooking, 5.6, Generic
@@ -244,8 +244,8 @@
 #(Tag:expertise)You are very skilled at applying makeup and enhancing natural beauty with products.
 123. Master Acting, 5.2, Generic
 #(Tag:social)You are a master actor, perhaps no longer able to tell where the mask ends and you begin. You can present yourself any way you want and perfectly mask your emotions when needed. It would take nothing less than the eyes of a truth seer to see beyond your mask.
-124. Master Shooting, 5.3, Generic
-#(Tag:ranged)You have marksmanship on the level of legends like Orion or Arash, or you could with enough training. Few mortals can dodge your projectiles, and in old times you would have been hailed as a legendary archer.
+124. Master Marksmanship, 5.3, Generic
+#(Tag:ranged)You are a Master Marksman, spoken of in the same leagues as Arash or Hayk, or you may be if you train enough. You are extremly skilled at handling and using ranged weapons such as Bows, Guns, Slings and aiming your own Projectiles, allowing you to wield practically any ranged weapon even ones completely foreign to you with extreme proficiency.
 125. Master Hand-to-Hand Combat, 5.5, Generic
 #(Tag:martial)(Tag:unarmed)You have martial skill and talent on the level of legends, a true prodigy. You quickly master most martial arts, comprehend unarmed combat incredibly well, and your hands and feet are weapons that would not lose to swords and spears.
 126. Master Programming, 5.7, Generic
@@ -278,18 +278,18 @@
 #(Tag:social)You are a true master tamer, able to turn even the most ferocious, bloodthirsty, manic beast into a living room pet, and to masterfully train familiars for obedience and loyalty. This also applies to people to a lesser extent.
 140. Master Massage, 5.5, Generic
 #(Tag:craft)(Tag:healing)You are a master masseuse beyond any mortal, whose massages can heal injuries and ailments, bringing therapy, immense pleasure, and comfort. Even the bodies of gods are like putty in your hands.
-141. Master Driving, 5.0, Generic
-#(Tag:motor)(Tag:movement)You are a true master at driving any vehicle or mount with steering, riding it as an extension of your body, ranging from rollerblades to star-sized spacecraft.
+141. Master Riding, 5.0, Generic
+#(Tag:motor)(Tag:movement)You have mastered the art of Riding, any Mount or Vehicle, you can handle riding and handling it with contemptuous ease. Any living mount under you, you can instinctively communicate your intentions with and understand their intentions and you can even handle completely foreign or completely technology completely by feel and instinct. You can joust from the back of an Elder Dragon or operate a Planet Sized spaceship, it doesn't matter to you, they may as well both be bicycles.
 142. Master Leadership, 5.8, Generic
 #(Tag:social)You are a master leader, excellent at managing, leading, motivating, and earning the loyalty of all under you. You could easily run your own country, and in old times you would be hailed as a legendary general.
 143. Master Charisma, 5.6, Generic
-#(Tag:social)You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, your presence strikes fear when you want to intimidate, and your aura appears serene when you want to calm others.
+#(Tag:deleted)(Tag:social)You have an aura of charisma that is less a skill and more something about your presence. People of note feel more attracted to your presence, your presence strikes fear when you want to intimidate, and your aura appears serene when you want to calm others.
 144. Master Medicine, 5.7, Generic
 #(Tag:medical)You are a true master in all fields of medicine seldom matched by regular humans, performing surgery, making your own medicine, and diagnosing ailments with extreme efficiency and precision. You can create and design your own medicines, and with practice, even superhuman medicines.
 145. Grandmaster Cooking, 6.6, Generic
 #(Tag:craft)You are a Grandmaster of Cooking, better than any mortal has any right to be, able to cook any meal from Elder Dragon steaks to Leviathan sushi. In addition to incredible taste, your foods gain special wondrous effects depending on what you cook.
-146. Grandmaster Shooting, 6.3, Generic
-#(Tag:ranged)You are a Grandmaster Marksman, better than any mortal has any right to be, in the vein of Bullseye. Your accuracy with any ranged weapon and projectile is almost absolute, and their lethality in your hands is unmatched. You could kill a man two streets away by flicking a toothpick through his eyesocket into his brain.
+146. Grandmaster Marksmanship, 6.3, Generic
+#(Tag:ranged)You are a Grandmaster Marksman, spoken of in the same leagues as Atalanta or Orion. You are inhumanly skilled at handling and using ranged weapons such as Bows, Guns, Slings and your own Projectiles to the point where there would be legends and myths written about your skill. However, you may need some practice to fully assimilate this skill.
 147. Grandmaster Hand-to-Hand Combat, 6.5, Generic
 #(Tag:martial)(Tag:unarmed)You have reached the Saint level in martial arts. Even without abilities or energy, your arms and legs can strike the intangible, kicking so hard you shatter souls or slapping magic from hands.
 148. Grandmaster Programming, 6.9, Generic
@@ -322,8 +322,8 @@
 #(Tag:medical)You stand beyond human but not quite divine in all fields of medicine and healing. You perform surgery, modify bodies, create legendary medicines, and identify and cure almost all illnesses and ailments. In a cultivation world you are titled the Medicine King.
 162. Divine Cooking, 7.3, Generic
 #(Tag:craft)Your cooking talent is on the level of the gods. Your food gives someone an epiphany and changes their life. Gods queue outside your restaurant to taste your cooking.
-163. Divine Shooting, 7.4, Generic
-#(Tag:ranged)Your skill with bow and arrow is on the level of the gods. With training, you take Artemis, Apollo, and Arjuna's lunch money.
+163. Divine Marksmanship, 7.4, Generic
+#(Tag:ranged)Your skill and talent with the bow and arrow are on the level of the God, your skill and comprehension with any ranged weapon or projectile is on a level mortals cannot match. With enough training to fully assimilate this skill, you could take Arjjuna, Artemis and Apollo's lunch money.
 164. Divine Hand-to-Hand Combat, 7.7, Generic
 #(Tag:martial)(Tag:unarmed)Your martial arts talent is godly. You learn someone's martial art just by exchanging blows with them, and you invent new martial arts on the spot that would normally take masters tens of years to create.
 165. Divine Programming, 7.6, Generic
@@ -353,7 +353,7 @@
 177. Divine Leadership, 7.4, Generic
 #(Tag:social)Your leadership and ruling skills are divine. You maintain a galaxy-spanning empire and handle all its bureaucracy yourself. Any army you lead fights with unstoppable morale and might, and any empire you lead prospers.
 178. Divine Charisma, 7.9, Generic
-#(Tag:social)You carry the presence and aura of a god. Your sheer charisma brings people to their knees, draws people of note to you, calms a raging beast, and inspires awe in the masses. You are the most popular being alive.
+#(Tag:deleted)(Tag:social)You carry the presence and aura of a god. Your sheer charisma brings people to their knees, draws people of note to you, calms a raging beast, and inspires awe in the masses. You are the most popular being alive.
 179. Divine Medicine, 7.5, Generic
 #(Tag:medical)You are as skilled as a god of health and medicine. You modify and heal bodies to your liking as long as you have the tools, cure any ailment, and create divine medicines like panaceas and elixirs of immortality. But this knowledge is too much for a mortal vessel, so it manifests as instinctive comprehension of all matters of life; the stronger you get, the more access you gain to the divine knowledge.
 180. Novice Interfacing, 1.4, Generic
@@ -740,3 +740,31 @@
 #The electromagnetic palm strike: discharge a point-blank shockwave from your palm that stuns flesh, stops weak hearts, and scrambles machines and cyborgs. It needs a conductive body or focus to channel, and each full-power strike numbs your own arm for minutes.
 371. Panzer Kunst, 8.5, Alita: Battle Angel
 #The cyborg martial art, mastered: anti-cyborg techniques that destroy stronger opponents by turning their own armor and momentum against them, fully effective in zero gravity. Demands constant practice to maintain; rust shows within weeks of idleness.
+372. Novice Seamstering, 1.4, Generic
+#(Tag:craft)You are a novice Seamster, having basic skill in working on tailoring, designing, mending and creating garment and items out of flexible and soft materials like Leather, Cloth, Fabric, Silk etc. at this level you can somewhat repair clothing and attempt to make your own attire, even if it won't look pretty.
+373. Intermediate Seamstering, 2.4, Generic
+#(Tag:craft)You are a novice Seamster, having basic skill in working on tailoring, designing, mending and creating garment and items out of flexible and soft materials like Leather, Cloth, Fabric, Silk etc. You show decent skill with those materials, being able to repair and alter most clothing and allowing you to create suitable and useable items.
+374. Adept Seamstering, 3.6, Generic
+#(Tag:craft)You are an Adept Seamster, having considerable skill in working on tailoring, designing, mending and creating garment and items out of flexible and soft materials like Leather, Cloth, Fabric, Silk etc. You can work well with most materials and fix and alter even complex garments and armors, and create clothing that would be acceptable by the standards of nobles or create soft/flexible armor good enough to be used in warfare. You can also alter the shape and form of items made of appropriate material below Rare level without making them weaker or having them lose their effectiveness.
+375. Expert Seamstering, 4.5, Generic
+#(Tag:craft)You are an Expert Seamster, having great skill in working on tailoring, designing, mending and creating garment and items out of flexible and soft materials like Leather, Cloth, Fabric, Silk etc. At this level fo skill, you can fix even the most elaborate gowns to the most tattered armor, and you can work with even the harder materials to work with like Dragon Leather, Arachne Silk, Mana Cloth, etc. to create suitable and high performance garments and armor. In addition, you can alter the shape and form of items who are made of the appropriate material provided they are Epic level or below without compromising their effects or their functions.
+376. Master Seamstering, 5.4, Generic
+#(Tag:craft)You are a Master Seamster, having masterful skill in working on tailoring, designing, mending and creating garment and items out of flexible and soft materials like Leather, Cloth, Fabric, Silk etc. At this level you can practically fix, mend and alter any garment and items made of appropriate materials. And work with even the most troublesome of materials, at this level you might even be able to sew and tailor even metals and other troublesome into thread to work with and are able to alter the form and shape of appropriate gacha items below Legendary rank. You can create items and garments of exceptional quality, bringing out the utmost of the items you use, even basic clothes you make out of fabric can be bulletproof.
+377. Grandmaster Seamstering, 6.5, Generic
+#(Tag:craft)You are a Grandmaster Seamster, having legendary skill in working on tailoring, designing, mending and creating garment and items out of flexible and soft materials like Leather, Cloth, Fabric, Silk etc. At this level you can masterfully fix, mend and alter any garment and items made of appropriate materials. And you can almost effortlessly work with even the most troublesome of materials, whether that is Dragon Skin, Mythril, or even raw energy, you can even weave metals and hard materials into flexible thread and fabric and alter the form and shape of all appropriate items below Mythical rank. You can create even legendary garments and items, you can even use your abilities to weave supernatural garments, such as using pyrokinesis alongside your skills to make a cloak of solid flame that can endure bullets and swords, and you are a true master at bringing out the utmost quality out of any material you use.
+378. Divine Seamstering, 8.2, Generic
+#(Tag:craft)You are a Divine Seamster, your level of mastery with Sewing, Stitching, Tailoring and Threads can be considered on the level of a god who specializes in it. You can weave, mend and alter garments and items out any kind of fabric, leather and thread, and even spin practically any material into thread to use for your arts, the items you create can be considered as true artifacts that can even reach the level of Mythical given enough time, experience and resources. In addition you are able to weave your energy itself, using it to create temporary divine garments on yourself or use the threads for combat or to unravel other items into fabric.
+379. Novice Flexible Weapon Mastery, 1.2, Generic
+#(Tag:martial)(Tag:weapon)You know how to wield flexible weapons such as whips, wires, strings, chains, flails, meteors hammers, rope darts, etc. with enough proficiency to hurt your enemy more often than you hurt yourself.
+380. Intermediate Flexible Weapon Mastery, 2.5, Generic
+#(Tag:martial)(Tag:weapon)You are able to wield flexible weapons such as whips, wires, strings, chains, flails, meteors hammers, rope darts, etc. with notable proficiency, being able to use them effectively in most forms of battle and confrontation.
+381. Adept Flexible Weapon Mastery, 3.4, Generic
+#(Tag:martial)(Tag:weapon)You are considerably skilled in wielding weapons such as whips, wires, strings, chains, flails, meteors hammers, rope darts, etc. being a lethal combatant with flexible weapons in your hands in both long, medium and close range.
+382. Expert Flexible Weapon Mastery, 4.2, Generic
+#(Tag:martial)(Tag:weapon)You are greatly skilled in wielding flexible weapons such as whips, wires, strings, chains, flails, meteors hammers, rope darts, etc. to the point where you'd be lauded in folk tales as someone who can flip a man in half with a single whip.
+383. Master Flexible Weapon Mastery, 5.8, Generic
+#(Tag:martial)(Tag:weapon)You a master of wielding flexible weapons such as whips, wires, strings, chains, flails, meteors hammers, rope darts, etc. controlling and wielding them as naturally as if they were a part of your body or a limb.
+384. Grandmaster Flexible Weapon mastery, 6.5, Generic
+#(Tag:martial)(Tag:weapon)You have entered the Saint with flexible weapons such as whips, wires, strings, chains, flails, meteors hammers, rope darts, etc. your innate skill with the weapons allowing you to interact with even the intagible with your whips, you could cut through a ghost with a whip without any abilities, and apply the principle of Flexibility to the world around you, grabbing a stream of water and imbuing it with your energy to wield that as a whip.
+385. Divine Flexible Weapon Mastery, 7.3, Generic
+#(Tag:martial)(Tag:weapon)You have reached the level of True Wielder with whips, wires, strings, chains, flails, meteors hammers, rope darts, etc. being able to wield any flexible weapon as an extension of your very existence and able to wield even the world even the world around yourself as your weapon with the principle of wielding a weapon of flow, being able to grab the wind around you and redirecting the streams of air, redirecting the stream of starlight into a razor whip that cuts across the world, etc. however, due to the sheer scale of knowledge and skill, your body and mind will need time and training to adapt to it.

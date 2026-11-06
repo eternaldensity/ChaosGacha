@@ -153,7 +153,7 @@ def parse_description(desc: str):
 
 def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
                  include_gacha_only, include_nsfw=False, include_noncon=False,
-                 tags=None):
+                 tags=None, exclude_tags=None):
     entries = []
     want = None
     if tags:
@@ -161,6 +161,12 @@ def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
             tags = [tags]
         want = {normalize_tag(t) for t in tags}
         want.discard("")
+    unwant = None
+    if exclude_tags:
+        if isinstance(exclude_tags, str):
+            exclude_tags = [exclude_tags]
+        unwant = {normalize_tag(t) for t in exclude_tags}
+        unwant.discard("")
     for file in files:
         path = os.path.join(GACHA_DIR, file + ".txt")
         if not os.path.exists(path):
@@ -175,7 +181,8 @@ def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
                 if cur is not None:
                     _finalize(file, cur, desc_lines, rarity_min, rarity_max,
                               sources, exclude_sources, include_gacha_only,
-                              include_nsfw, include_noncon, entries, want)
+                              include_nsfw, include_noncon, entries, want,
+                              unwant)
                 cur = {
                     "num": int(m.group(1)),
                     "name": m.group(2).strip(),
@@ -188,13 +195,13 @@ def load_entries(files, rarity_min, rarity_max, sources, exclude_sources,
         if cur is not None:
             _finalize(file, cur, desc_lines, rarity_min, rarity_max,
                       sources, exclude_sources, include_gacha_only,
-                      include_nsfw, include_noncon, entries, want)
+                      include_nsfw, include_noncon, entries, want, unwant)
     return entries
 
 
 def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
               include_gacha_only, include_nsfw, include_noncon, entries,
-              want_tags=None):
+              want_tags=None, exclude_tags=None):
     desc = " ".join(l.strip() for l in desc_lines if l.strip())
     tokens, visible = parse_description(desc)
     if "Tree" in tokens:
@@ -219,6 +226,8 @@ def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
         return
     entry_tags = parse_tags(tokens)
     if want_tags and not want_tags.issubset(set(entry_tags)):
+        return
+    if exclude_tags and exclude_tags.intersection(entry_tags):
         return
     entries.append({
         "file": file,
@@ -614,6 +623,8 @@ def main():
                     help="include (Noncon)-tagged entries (excluded by default)")
     ap.add_argument("--tags", default="",
                     help="comma-separated thematic tags to include (entry must have all of them)")
+    ap.add_argument("--exclude-tags", default="",
+                    help="comma-separated thematic tags to leave out (e.g. deleted)")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--radius", type=float, default=10.0)
     ap.add_argument("--distance-variance", type=float, default=0.05)
@@ -652,10 +663,13 @@ def main():
     sources = {s.strip() for s in args.sources.split(",") if s.strip()}
     excludes = {s.strip() for s in args.exclude_sources.split(",") if s.strip()}
     tag_filter = [t.strip() for t in args.tags.split(",") if t.strip()] or None
+    exclude_tag_filter = [t.strip() for t in args.exclude_tags.split(",")
+                          if t.strip()] or None
 
     items = load_entries(files, args.rarity_min, args.rarity_max,
                          sources, excludes, args.include_gacha_only,
-                         args.include_nsfw, args.include_noncon, tag_filter)
+                         args.include_nsfw, args.include_noncon, tag_filter,
+                         exclude_tag_filter)
     if args.limit and args.limit < len(items):
         rng = random.Random(args.seed)
         items = rng.sample(items, args.limit)
@@ -673,6 +687,7 @@ def main():
         "include_nsfw": args.include_nsfw,
         "include_noncon": args.include_noncon,
         "tags": sorted(tag_filter) if tag_filter else [],
+        "exclude_tags": sorted(exclude_tag_filter) if exclude_tag_filter else [],
         "limit": args.limit,
         "radius": args.radius,
         "distance_variance": args.distance_variance,

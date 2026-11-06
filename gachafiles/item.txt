@@ -59,23 +59,23 @@
 30. Grimoire of the Twice Dead Death Mage, 5.7, Death Mage
 #(Tag:grimoire)(Tag:magic)(Tag:necro)(Tome) Grimoire of a twice-died death magician. Teaches death-attribute magic. https://death-mage.fandom.com/wiki/Death-attribute_magic
 31. Grimoire of the White Mage, 4.1, Generic
-#(Tag:grimoire)(Tag:magic)(Tome) Teaches White Magic such as healing, curing, buffs, and warding.
+#(Tag:deleted)(Tag:grimoire)(Tag:magic)(Tome) Teaches White Magic such as healing, curing, buffs, and warding.
 32. Grimoire of the Pyromancer, 4.3, Generic
-#(Tag:fire)(Tome) Teaches Fire Magic of fire and flame.
+#(Tag:deleted)(Tag:fire)(Tome) Teaches Fire Magic of fire and flame.
 33. Grimoire of the Cryomancer, 4.2, Generic
-#(Tag:ice)(Tome) Teaches Ice Magic of ice and cold.
+#(Tag:deleted)(Tag:ice)(Tome) Teaches Ice Magic of ice and cold.
 34. Grimoire of the Aeromancer, 4.4, Generic
-#(Tag:grimoire)(Tag:magic)(Tome) Teaches Air Magic of wind and lightning.
-35. Alchemilia, 3.6, Generic
-#(Tag:magic)(Tome) Guide to brewing many minor useful potions like healing and energy recovery from mundane ingredients. Only those who have physically read it can craft its potions.
+#(Tag:deleted)(Tag:grimoire)(Tag:magic)(Tome) Teaches Air Magic of wind and lightning.
+35. Alchemilia Vol 1 - 3, 3.6, Generic
+#(Tag:magic)(Tome)Fear and Hunger - A set of books containing guides on how to make a lot of minor yet useful potions such as healing, poison, mental recovery, etc. with the recipes adapted to the native mundane and common ingredients found in the users world. Those who haven't read Alchemilia physically cannot craft the potions it gives knowledge about.
 36. The Assembly, 5.2, Generic
 #(Tag:machine)(Tag:production)(Tag:tech)(Tech) Room-sized machine that disassembles any item into its most basic components, down to snowflake size. Can reassemble them into ingots, materials, or finished items given a blueprint.
 37. Bar of Vibranium, 5.1, Marvel
 #(Tag:resource)Bar of pure refined Wakandan Vibranium, ready to process. Absorbs kinetic energy and vibrations, making it nigh unbreakable conventionally. Restock Timer: 168 hours.
 38. Angel Ring, 4.7, Minecraft
-#(Tag:holy)Ornate gold ring granting flight at the wearer's running speed.
+#(Tag:deleted)(Tag:holy)Ornate gold ring granting flight at the wearer's running speed.
 39. Black Barrel, 7.4, Fate
-#Gun imposing limited life on anything it hits; even absolute immortals become mortal.
+#(Tag:deleted)Gun imposing limited life on anything it hits; even absolute immortals become mortal.
 40. Black Key Rites, 4.2, Fate
 #(Tag:blade)(Tag:holy)(Tag:magic)(Tag:production)(Tag:tool)(Tag:weapon)Holy rite to create Black Keys by expending energy and praying per the rites.
 41. Shroud of Martin, 4.5, Fate
@@ -94,8 +94,8 @@
 #(Tag:divination)(Tag:tech)(Tag:tool)(Tech) Smart handheld device that scans, identifies, and analyzes any creature's race or species in under 10 seconds.
 48. The Infinite Magazine, 4.0, Generic
 #(Tag:material)Magazine that morphs to fit any projectile weapon and supplies infinite ammo while attached.
-49. Ticket to Belethor's General Goods, 4.2, Skyrim
-#(Tag:meta)(Tag:ticket)Teleports you to Belethor's General Goods in Skyrim, Tamriel for 1 hour. Cannot leave a 10-meter circle from arrival; can buy native goods like Soul Gems and Magic Books. Cooldown: 720 hours.
+49. Belethor's General Goods Catalogue, 4.2, Skyrim
+#(Tag:meta)(Tag:ticket)A shopping catalogue that allows the user to buy items directly from Belethors General Goods from Whiterun Skyrim. Allowing them to purchase goods native to the world of Skyrim and Tamriel such as Soul Gems, Magic Books, Ingots etc. however only includes goods from Belethors General Goods Store, so the selection is rather limited and expensive. Any item bought will instantly appear before the user.
 50. Hito Hito no Mi, 4.0, One Piece
 #(Tag:consumable)(Tag:curse)(Tag:race-change)Devil Fruit letting an object or animal assume human or hybrid form, at the cost of being unable to swim.
 51. Triactis True Paladinian Mage-Hammer of Might, 7.1, Calamity Mod
@@ -112,22 +112,22 @@
 #(Tag:agility+)(Tag:consumable)(Tag:elixir)(Tag:life+)(Tag:poison-resistance+)Rainbow gel in an ornate bottle. Consuming it grants Advanced Poison Resistance plus sizeable vitality and agility boosts.
 57. Ring of Swiftness, 2.1, Generic
 #(Tag:accessory)(Tag:agility+)(Tag:reflex+)Magical ornate silver ring improving agility, reflexes, and balance.
-58. Sand Cloak, 2.8, Generic
-#(Tag:armor)(Tag:earth)(Tag:stealth)Dusty brown cloak hiding your presence. Once every 8 hours, shroud yourself in a violent localized sandstorm to retreat or hide.
+58. Desperado Coat, 2.8, Generic
+#(Tag:armor)(Tag:earth)(Tag:stealth)A dusty coat belonging to a famous Desperado, when worn, increases the users Reflexes and Hand-to-Eye Coordination. In addition, once a day, this coat can cause a brief but violent sandstorm localized around it to disorient opponents and obscure the user.
 59. Ambrosial Ampule, 5.8, Calamity Mod
-#(Tag:consumable)(Tag:elixir)Ambrosia of the gods. Drinking it massively boosts vitality to near-regeneration and cures all illnesses and ailments.
+#(Tag:consumable)(Tag:deleted)(Tag:elixir)Ambrosia of the gods. Drinking it massively boosts vitality to near-regeneration and cures all illnesses and ailments.
 60. Bloom Stone, 3.2, Calamity Mod
 #(Tag:accessory)(Tag:health-regeneration+)Ancient green-gem necklace granting sunlight-based regeneration: Uncommon in morning, Rare at noon, Uncommon in afternoon, Common in evening, none at night.
 61. Butcher's Bag of Infinite Meat, 1.7, Generic
 #(Tag:production)(Tag:resource)(Tag:tool)Bag of limitless fresh mundane Earth animal meat in all cuts. Withdraw up to 100 kg every 24 hours by reaching in and thinking of the cut. Clean, not ethically sourced; ignore the implications.
 62. Living Dew, 5.2, Calamity Mod
-#(Tag:consumable)Living dew from the ancient jungle's depths. Consuming it significantly increases vitality and lifespan, granting strong ailment resistance and faster healing, amplified in jungles or forests.
+#(Tag:consumable)(Tag:deleted)Living dew from the ancient jungle's depths. Consuming it significantly increases vitality and lifespan, granting strong ailment resistance and faster healing, amplified in jungles or forests.
 63. Permafrost's Concoction, 6.2, Calamity Mod
 #(Tag:consumable)(Tag:elixir)(Tag:fire-resistance+)(Tag:ice+)(Tag:ice-resistance+)(Tag:maximum-energy+)Culmination of Archmage Permafrost's work. Greatly increases energy/mana reserves and regeneration, massively buffs frost abilities at reduced cost, and grants strong cold and flame resistance.
 64. THE Stop Sign, 4.5, Generic
 #(Tag:bludgeon)(Tag:kinetic)(Tag:weapon)Indestructible stop sign. Whatever its head contacts instantly loses all momentum.
 65. Trinket of Chi, 2.3, Calamity Mod
-#(Tag:accessory)Trinket of a monk who stood still until becoming a statue. Standing still over 3 seconds speeds energy/mana and health recovery.
+#(Tag:accessory)(Tag:deleted)Trinket of a monk who stood still until becoming a statue. Standing still over 3 seconds speeds energy/mana and health recovery.
 66. Evasion Scarf, 3.7, Calamity Mod
 #(Tag:accessory)(Tag:movement)Scarf of a shadow-swift rogue. Activate to gain a large speed boost and intangibility while moving straight for 1 second, slipping through attacks or walls. 30 second cooldown.
 67. Grimoire of Hemomancy, 4.6, Black Clover
@@ -157,11 +157,11 @@
 79. Sephiroth Graal, 7.4, Highschool DxD
 #Longinus created by God granting god-level knowledge of Soul, Death, and Life, allowing manipulation of souls and life if the user withstands its mind-crushing information.
 80. Alchemist's Cauldron, 3.6, Generic
-#(Tag:building)(Tag:magic)Large cauldron filling itself with a chosen basic potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, Healing, Minor Regeneration, Stone Skin, etc. Must know the potion (No Elixirs), Rare rank or below.
+#(Tag:building)(Tag:deleted)(Tag:magic)Large cauldron filling itself with a chosen basic potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, Healing, Minor Regeneration, Stone Skin, etc. Must know the potion (No Elixirs), Rare rank or below.
 81. Dragon Vessel Intermediate, 4.2, Generic
-#(Tag:draconic)Large cauldron filling itself with a chosen intermediate potion once daily: Strength, Agility, Waterbreathing, Healing, Regeneration, Iron Skin, energy recovery, fertility, vitality, etc. Must know the potion (No Elixirs), Elite rank or below.
+#(Tag:deleted)(Tag:draconic)Large cauldron filling itself with a chosen intermediate potion once daily: Strength, Agility, Waterbreathing, Healing, Regeneration, Iron Skin, energy recovery, fertility, vitality, etc. Must know the potion (No Elixirs), Elite rank or below.
 82. Dragon Vessel Major, 5.3, Generic
-#(Tag:draconic)Large cauldron filling itself with a chosen major potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, greater Healing, greater Regeneration, Iron Skin, dragon breath, etc. Must know the potion (No Elixirs), Epic rank or below.
+#(Tag:deleted)(Tag:draconic)Large cauldron filling itself with a chosen major potion once daily: Enhanced Strength, Enhanced Agility, Waterbreathing, greater Healing, greater Regeneration, Iron Skin, dragon breath, etc. Must know the potion (No Elixirs), Epic rank or below.
 83. Absorption Line, 4.7, Highschool DxD
 #(Tag:bound)(Tag:energy-recovery)(Tag:flexible)(Tag:holy)(Tag:weapon)Sacred Gear created by God. It allows the user to conjure energy lines that attach to targets to siphon energy. Can also bind opponents or swing like Spider-Man.
 84. Dreadon's Gaming Chair, 4.9, Calamity Mod
@@ -170,8 +170,8 @@
 #(Tag:time)(Tag:tool)Ornate antique hand clock with 3 unrefillable charges. Spend a charge to return to the morning of the current day. Turns to dust after all 3 are spent.
 86. Havel's Greatshield, 2.2, Dark Souls
 #(Tag:defence+)(Tag:earth)(Tag:shield)Magical stone shield of Havel the Rock. Grants enhanced durability and can expend energy to coat the body in stone for further reinforcement.
-87. Sanctus - Dark souls, 2.9, Dark Souls
-#(Tag:dark)Legendary Way of White weapon once blessed with white-flame protection. Its power has faded, now granting only slight regeneration.
+87. Sanctus, 2.9, Dark Souls
+#(Tag:dark)A legendary weapon of the Way of White, granted to an Undead paladin long ago. Once blessed with the protection of a white flame, but its power has all but faded, so now all that remains of it is providing its wielder a slight boost to their regeneration.
 88. Altar of Earth, 3.9, Hota
 #(Tag:barracks)(Tag:building)(Tag:earth)(Tag:spirit)Altar of fire collecting nature's mana to birth earth spirits naturally loyal to the altar's owner.
 89. Ring of Favor and Protection, 3.6, Dark Souls
@@ -211,7 +211,7 @@
 106. Amulet of Health, 1.5, Generic
 #(Tag:accessory)(Tag:vitality+)Gold amulet with red gem slightly increasing wearer vitality.
 107. Magical Beans, 3.5, Generic
-#(Tag:consumable)(Tag:magic)Pouch of magical bean seeds. Planted, they grow over 24 hours into a 50-meter-thick stem extending into space.
+#(Tag:consumable)(Tag:deleted)(Tag:magic)Pouch of magical bean seeds. Planted, they grow over 24 hours into a 50-meter-thick stem extending into space.
 108. Special Tattoo Kit, 3.5, Generic
 #(Tag:meta)(Tag:tool)Tattoo kit creating and inscribing magical tattoos with effects based on user abilities. Only one tattoo per individual; effects capped at Common Rarity Trait potency.
 109. The Collar of Obedience, 2.7, Generic
@@ -254,8 +254,8 @@
 #(Tag:avian)An ornate pure-ruby staff with gold engravings. Using it as a focus increases fire abilities' and spells' power while reducing their cost.
 128. Moonlight Greatsword, 3.1, Dark Souls
 #(Tag:blade)(Tag:catalyst)(Tag:magic+)(Tag:weapon)A moonlight sword crafted from Seath the Scaleless's severed tail. Wielding it strengthens your spells and lets you unleash blasts of magical power from the blade.
-129. Super Crown - Mario, 2.3, Generic
-#(Tag:accessory)(Tag:command)A magical crown that turns its wearer into a pretty girl.
+129. Super Crown, 2.3, Generic
+#(Tag:accessory)(Tag:command)A magical crown that turns whoever wears it into a pretty girl. Removing the crown does not undo the transformation.
 130. Crate of Explosives, 1.9, Generic
 #(Tag:consumable)(Tag:tool)A crate of 64 sticks of dynamite that restocks itself every 24 hours.
 131. Gold Apple, 2.4, Minecraft
@@ -313,7 +313,7 @@
 157. Mad Scientist's Steroids, 3.7, Hunter x Hunter
 #(Tag:consumable)(Tag:strength+)A box of seven 1-liter vials. Drink 1 liter daily for a full week to gain the Uncommon Trait Enhanced Strength. Restock Timer: 168 hours.
 158. Levitation Necklace, 2.4, Generic
-#(Tag:accessory)(Tag:gravity)(Tag:movement)A necklace that lets the wearer slowly fly at 10 km/h.
+#(Tag:accessory)(Tag:deleted)(Tag:gravity)(Tag:movement)A necklace that lets the wearer slowly fly at 10 km/h.
 159. Hero's Bandages, 2.1, Generic
 #(Tag:accessory)(Tag:flexible)(Tag:tool)Sentient bandages that automatically wrap wounds, stopping bleeding and stabilizing broken bones. With training, you can manipulate them yourself.
 160. Fairy Powder, 1.8, Black Souls
@@ -399,11 +399,11 @@
 200. Ice Blade, 2.8, Terraria
 #(Tag:blade)(Tag:ice)(Tag:ice+)(Tag:weapon)A magically enchanted solid-ice saber that holds its sharpness. Releases frigid energy with your own energy and boosts ice abilities when used as a focus.
 201. Space Dolphin Machine Gun, 3.8, Terraria
-#(Tag:gun)(Tag:machine)(Tag:space)(Tag:tech)(Tag:weapon)(Tech) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
+#(Tag:deleted)(Tag:gun)(Tag:machine)(Tag:space)(Tag:tech)(Tag:weapon)(Tech) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
 202. Onyx Blaster, 2.9, Terraria
 #(Tag:dark)(Tag:gun)(Tag:tech)(Tag:weapon)A shotgun crafted from pure-darkness shards. Converts energy/mana into dark onyx bullets dealing unholy damage instead of consuming bullets.
-203. Death's Sickle, 4.2, Terraria
-#(Tag:blade)(Tag:necro)A sickle from the Reaper's cold dead hands. Releases necrotic projections with your own energy and boosts Dark and Necrotic abilities when used as a focus.
+203. Death Sickle, 4.2, Terraria
+#(Tag:blade)(Tag:necro)A sickle taken from the cold dead hands of the reaper. While using this sickle, you can imbue your energy into it to unleash slashes of necrotic energy from the blade. In addition, using sickle as a focus for Necrotic and Spirit abilities and spells amplifies their potency.
 204. Inferno Fork, 4.1, Terraria
 #(Tag:fire)(Tag:fire+)(Tag:infernal)(Tag:infernal+)(Tag:polearm)(Tag:weapon)A crimson trident from the cursed dungeon's depths. Fires flame blasts with your energy/mana and boosts Fire and Unholy abilities when used as a focus.
 205. Last Prism, 5.4, Terraria
@@ -445,7 +445,7 @@
 223. Goku Uniform 3star, 5.5, Kill La Kill
 #(Tag:armor)(Tag:bio)(Tag:enhancer)(Tag:life)(Tag:transformation)A uniform of 30% Life Fibers granting superhuman strength to demolish buildings. Extremely durable beyond carbon fiber; choose colors and design before taking it out. Consuming your vitality unlocks a second form that further increases its abilities.
 224. Your Laptop, 3.6, Generic
-#(Tag:mundane)(Tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
+#(Tag:deleted)(Tag:mundane)(Tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
 225. Infinite Bowl of Spaghetti, 1.5, Generic
 #(Tag:production)An infinite spaghetti bowl that cannot be poured out, but servings can be taken infinitely. The spaghetti is always comfortably warm and tastes pretty good.
 226. Kaneda's Bike, 1.3, Akira
@@ -468,8 +468,8 @@
 #(Tag:meta)(Tag:ticket)(Gacha) A ticket acting as a 6x Advantage Platinum Skill Gacha Ticket.
 235. Uroboros Virus, 4.6, Resident Evil
 #(Tag:bio)(Tag:consumable)(Tag:transformation)A powerful transforming virus. Mismatched hosts become an anomalous mass of blackened matter with incredible regeneration; matched hosts gain enhanced stats and bio-immortality with commandable viral healing. Or pour the vial into the ocean and watch the apocalypse.
-236. Tvirus, 3.3, Resident Evil
-#(Tag:bio)(Tag:consumable)(Tag:transformation)A highly viral super-virus mutating victims into enhanced zombie-like creatures with little brain activity. Rare compatible hosts gain only superhuman capabilities and regeneration without mutation, and a scientist might refine it. Or pour the vial into the ocean and watch the apocalypse.
+236. T-virus, 3.3, Resident Evil
+#(Tag:bio)(Tag:consumable)(Tag:transformation)A super virus that is capable of mutating people into zombie-like creatures with enhanced physical ability but little brain activity, it is incredibly viral and easy to spread. There is a small chance of having appropriate resistance to the virus and only gaining positives from it like superhuman capabilities and regeneration without mutation and degradation but it is an incredibly rare chance of that level of compatibility. Maybe a scientist could refine it to make it more useful, you could pour the vial into the ocean and watch the apocalypse.
 237. Modified Tvirus, 5.8, Resident Evil
 #(Tag:bio)(Tag:consumable)(Tag:elixir)(Tag:enhancer)(Tag:health-regeneration+)(Tag:meta)A modified T-Virus syringe granting all T-virus benefits with none of the downsides: superhuman physical abilities, regeneration, and telekinesis.
 238. The Beherit, 2.5, Berserk
@@ -532,10 +532,10 @@
 #(Tag:accessory)A pair of simple earplugs that completely blocks the wearer's hearing while worn.
 267. Second Face, 2.4, Generic
 #(Tag:accessory)(Tag:illusion)A simple white mask that makes the wearer appear as a completely different, always identical person, serving as a second identity.
-268. Mirror Blade, 4.2, Generic
-#(Tag:blade)(Tag:weapon)A sword embodying envy that alone is only as strong as a sharp iron sword. It can temporarily become the strongest weapon within a 1 km radius for 1 hour, then enters a 24 hour cooldown.
+268. Mirror Weapon, 4.2, Generic
+#(Tag:blade)(Tag:weapon)A sword that embodies envy, by its lonesome, this sword is only as strong as a sharp Iron Sword. But has the ability to temporarily turn into the strongest weapon in a 1km radius for 1 hour before going on a 24 hour cooldown.
 269. Amulet of Imitation, 3.7, Generic
-#(Tag:accessory)An amulet that transforms you into the shape of any creature you touch while holding it until you dispel the transformation. Cooldown: 8 hours.
+#(Tag:accessory)(Tag:deleted)An amulet that transforms you into the shape of any creature you touch while holding it until you dispel the transformation. Cooldown: 8 hours.
 270. Light Sword, 1.6, Generic
 #(Tag:blade)(Tag:light)(Tag:weapon)Not a lightsaber, this sword is crafted purely from solid light and is incredibly light and sharp but somewhat fragile. If broken, leaving it where it receives light gradually repairs it.
 271. Private Jet, 3.7, Generic
@@ -547,7 +547,7 @@
 274. The Armageddon Blade, 5.4, Hota
 #(Tag:blade)(Tag:fire)(Tag:fire+)(Tag:infernal)(Tag:infernal+)(Tag:strength+)(Tag:weapon)The mythical Blade of Armageddon that imbues great power but burns to touch and boosts fire and unholy abilities when used as a focus. The user can expend energy to call down Armageddon, raining hellfire from the skies onto the mortal world.
 275. Sword of Hellfire, 3.3, Hota
-#(Tag:fire)(Tag:infernal)A sword forged and bathed in hellfire whose blade can be wreathed in violent flames by expending energy. It boosts fire abilities when used as a focus.
+#(Tag:deleted)(Tag:fire)(Tag:infernal)A sword forged and bathed in hellfire whose blade can be wreathed in violent flames by expending energy. It boosts fire abilities when used as a focus.
 276. Angellic Alliance, 6.0, Hota
 #(Tag:agility+)(Tag:blade)(Tag:defence+)(Tag:holy)(Tag:magic+)(Tag:strength+)(Tag:weapon)A divine heavenly sword that greatly increases the wielder's physical and magical abilities, strengthens and inspires any army or allies under their command, and boosts holy and light abilities when used as a focus. The user can also expend energy to grant any blessing of Rare tier or below.
 277. Titans Thunder, 5.5, Hota
@@ -555,7 +555,7 @@
 278. Armor of the Dammed, 5.8, Hota
 #(Tag:armor)(Tag:curse)(Tag:curse+)(Tag:dark)(Tag:dark+)(Tag:defence+)(Tag:strength+)Pitch-black armor with a demonic visage worn by the most wicked conquerors that augments physical abilities and amplifies darkness-based abilities when used as a focus. With training, it can unleash massive-scale curses like slow, misfortune, and weakness to debilitate entire armies.
 279. Power of the Dragon Father, 5.3, Hota
-#(Tag:draconic)Armor crafted from a mighty dragon's corpse that imbues great physical might and extreme magic resistance through its scales.
+#(Tag:deleted)(Tag:draconic)Armor crafted from a mighty dragon's corpse that imbues great physical might and extreme magic resistance through its scales.
 280. Spellbinders Hat, 5.7, Hota
 #(Tag:accessory)(Tag:magic)(Tag:summon)A legendary archwizard's hat containing echoes of his spells that grants Dimensional Door (100 km portal), Fly (fly at land speed), Magic Mirror (reflect magic back), Implosion (severe explosive damage), and Summon Elemental (summon a chosen elemental roughly as strong as you for 30 minutes). This artifact holds 3 charges at a time and recovers 1 charge every 8 hours.
 281. Admirals Hat, 4.9, Hota
@@ -613,15 +613,15 @@
 307. Pyre, 5.3, Hota
 #(Tag:barracks)(Tag:building)(Tag:fire)(Tag:life)An ash altar that births firebirds and phoenixes loyal to you as its owner when given enough wealth and energy sacrifices.
 308. Dragon's Hoard, 5.9, Generic
-#(Tag:draconic)- A cave with ideal dragon living conditions and plenty of treasure. Take its gold and gems for yourself or use it as storage for your valuables, which none can enter without your permission.
+#(Tag:deleted)(Tag:draconic)- A cave with ideal dragon living conditions and plenty of treasure. Take its gold and gems for yourself or use it as storage for your valuables, which none can enter without your permission.
 309. Dragon Utopia, 7.7, Hota
-#(Tag:draconic)A gigantic castle with ideal living conditions for practically any dragon, housing a horde of various loyal dragons. You can admit other dragons in exchange for servitude.
+#(Tag:deleted)(Tag:draconic)A gigantic castle with ideal living conditions for practically any dragon, housing a horde of various loyal dragons. You can admit other dragons in exchange for servitude.
 310. Hydra Pond, 4.8, Hota
-#(Tag:building)A large, incredibly poisonous swampy pond populated by Hydra loyal to you as its owner.
+#(Tag:building)(Tag:deleted)A large, incredibly poisonous swampy pond populated by Hydra loyal to you as its owner.
 311. Nymph Waterfall, 2.4, Hota
 #(Tag:barracks)(Tag:building)(Tag:spirit)(Tag:water)A magical waterfall where lesser water-spirit Nymphs are naturally born and remain loyal to you as its owner.
 312. Maelstrom, 4.9, Hota
-#(Tag:command)(Tag:summon)(Tag:water)A large water whirlpool containing many dangerous seabound creatures, including the sea serpent Haspid, under your command.
+#(Tag:command)(Tag:deleted)(Tag:summon)(Tag:water)A large water whirlpool containing many dangerous seabound creatures, including the sea serpent Haspid, under your command.
 313. Magic Forest, 6.8, Hota
 #(Tag:barracks)(Tag:building)(Tag:holy)(Tag:nature)A large forest with high magical concentration and unique herbs, populated by ents, treants, and even legendary unicorns under your command. It slowly replenishes itself over time.
 314. Crystal Cave, 6.3, Hota
@@ -649,7 +649,7 @@
 325. Stack of Gold Bars, 1.5, Generic
 #(Tag:mundane)A stack of ordinary gold bars totaling 33 kilograms.
 326. Greedy Ring, 3.5, Generic
-#(Tag:accessory)An ornate red-and-gold ring that attracts wealth, making it easier to make money and find treasures.
+#(Tag:accessory)(Tag:deleted)An ornate red-and-gold ring that attracts wealth, making it easier to make money and find treasures.
 327. Gold Ring Gift, 1.0, Generic
 #(Tag:accessory)A gold ring to gift a loved one whose patterns customize themselves to the recipient. Restock Timer: 48 hours.
 328. Chlorophyte Bar, 3.9, Calamity Mod
@@ -667,7 +667,7 @@
 334. Unbreakable Blade, 3.0, Generic
 #(Tag:blade)(Tag:weapon)A simple sharp steel longsword that is completely unbreakable and undamageable.
 335. Bag of Endless Coins, 3.4, Generic
-#(Tag:resource)(Tag:storage)A bag that produces 1000 gold coins every day.
+#(Tag:deleted)(Tag:resource)(Tag:storage)A bag that produces 1000 gold coins every day.
 336. Endless Bag of Ninja Supplies, 3.6, Generic
 #(Tag:production)(Tag:tool)A satchel-sized bag holding 100 shurikens, 100 kunai, 100 caltrops, 50 explosive tags, and a katana, all high-quality steel. Contents replenish every 24 hours.
 337. Portable Supercomputer, 4.8, Generic
@@ -679,7 +679,7 @@
 340. Droid Factory, 4.8, Star Wars
 #(Tag:barracks)(Tag:building)(Tag:production)(Tag:tech)(Tech) An autonomous factory producing droids under your command when supplied with appropriate materials.
 341. Flowing Water Crushing Rock Fist Manual, 6.8, One Punch Man
-#(Tag:water)Bang's manual with detailed training in Flowing Water Crushing Rock Fist. Those without it cannot replicate the art.
+#(Tag:deleted)(Tag:water)Bang's manual with detailed training in Flowing Water Crushing Rock Fist. Those without it cannot replicate the art.
 342. Grimoire of Izalith, 4.6, Dark Souls
 #(Tag:fire)(Tag:grimoire)(Tag:magic)(Tome) A grimoire teaching the Pyromancies of the Great Swamp and Izalith. Spell List: https://darksouls.fandom.com/wiki/Pyromancy_(Dark_Souls)
 343. Tome of the Way of the White, 3.6, Dark Souls
@@ -729,7 +729,7 @@
 365. Twilight Healing, 4.8, Highschool DxD
 #(Tag:accessory)(Tag:bound)(Tag:health-recovery)(Tag:holy)A Sacred Gear created by God manifesting as ornate rings that convert your energy into neutral healing energy for yourself or others, with potency scaling to energy expended.
 366. Gravity Jail, 3.8, Highschool DxD
-#(Tag:holy)A Sacred Gear created by God manifesting as glowing Magical Eyes that expend energy to increase gravity on any location or target in your line of sight. When taken from inventory, it appears as a marble that fuses with whoever swallows it.
+#(Tag:deleted)(Tag:holy)A Sacred Gear created by God manifesting as glowing Magical Eyes that expend energy to increase gravity on any location or target in your line of sight. When taken from inventory, it appears as a marble that fuses with whoever swallows it.
 367. Boosted Gear, 7.9, Highschool DxD
 #(Tag:armor)(Tag:bound)(Tag:draconic)(Tag:enhancer)(Tag:transformation)One of the Longinus created by God housing Ddraig's soul, the Heavenly Dragon of Domination. This gauntlet amplifies your stats by expending stamina, with higher boosts costing more stamina.
 368. Divine Dividing, 7.8, Highschool DxD
@@ -780,8 +780,8 @@
 #(Tag:implant)(Tag:tech)(Tag:ticket)(Tech) A ticket that transfers you to a mechanical Ripperdoc's clinic to install Cyberpunk 2077 implants or ones you bring, for the right price. His top-quality wares are expensive and may require bartering. You return upon leaving, can spend only 24 hours inside, and Restock Timer: 15 Days.
 391. Clover Amulet, 4.6, Generic
 #(Tag:accessory)(Tag:luck+)A golden amulet with jade engraved as a 4-leaf clover that grants good luck.
-392. Holy Antidote, 2.6, Generic
-#(Tag:holy)A vial of powerful holy antidote that cures all diseases and ailments below Legendary rank. Restock Timer: 7 Days.
+392. Universal Antidote, 2.6, Generic
+#(Tag:holy)A vial containing a powerful holy antidote that can cure all diseases and ailments Epic rank and below. Restock Timer: 168 Hours.
 393. Sandevistan, 4.6, Cyberpunk 2077
 #(Tag:implant)(Tag:perception+)(Tag:tech)(Tech) A cybernetic spine replacement that massively heightens time perception, slowing time around you while taxing your brain; overuse may cause brain damage. It manifests as a ticket installed instantly on whoever rips it.
 394. Omni Phone, 3.3, Generic
@@ -844,16 +844,16 @@
 #(Tag:electric)(Tag:grimoire)(Tag:magic)(Tome) A large scroll recording all Lightning Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 423. T-51b Power Armor, 2.6, Fallout
 #(Tag:armor)(Tag:tech)(Tech) Pre-Great War mass-produced power armour that shrugs off low-calibre bullets and lets an average man lift a car overhead. Powered by a fusion core replaced with a new one every 24 hours.
-424. Gene Seed Ticket, 4.2, Warhammer 40k
-#(Tag:growing)(Tag:meta)(Tag:nature)(Tag:ticket)(Tech) A ticket transporting you to robotic surgeons for a perfected Transhuman Astartes creation procedure, granting Astartes augments without downsides. It will not affect your looks or body shape.
+424. Adeptus Astartes Procedure Ticket, 4.2, Warhammer 40k
+#(Tag:growing)(Tag:meta)(Tag:nature)(Tag:ticket)(Tech)A ticket that when ripped transports you to a room full of robotic surgeons that allow you to undergo the creation procedure of a Transhuman Ultramarine Adeptus Astartes, granting numerous auxiliary organs and enhacements to your bones and muscles structure. The augments and gene seed are altered so that the user does not experience explosive growth and retains their natural genetic height and stature without any decrease in the effectiveness of the results.
 425. Justice's Shades, 1.8, Helltaker
 #(Tag:accessory)(Tag:divination)The blind demon's cool shades that let you tell when someone speaking to you thinks they are lying.
 426. E-11 medium blaster rifle, 2.7, Star Wars
 #(Tag:gun)(Tag:tech)(Tag:weapon)(Tech) A standard Stormtrooper rifle firing high-heat bolts that kill average light-armoured targets in one shot and blast concrete. It has Lethal, Stun, and Sting settings with a 500-shot cartridge, replaced daily.
 427. Soul Solid, 2.4, One Piece
-#(Tag:spirit)Brook's cane sword, extremely sharp, durable, and undulled after years of use. It is also extremely dapper.
+#(Tag:deleted)(Tag:spirit)Brook's cane sword, extremely sharp, durable, and undulled after years of use. It is also extremely dapper.
 428. Wado Ichimonji, 3.4, One Piece
-#A Wano master-crafted great-grade katana, extremely sharp and absurdly durable. Excellent at channelling energy, making abilities channelled through it cost slightly less.
+#(Tag:deleted)A Wano master-crafted great-grade katana, extremely sharp and absurdly durable. Excellent at channelling energy, making abilities channelled through it cost slightly less.
 429. Tozama, 1.7, Jujutsu Kaisen
 #(Tag:blade)(Tag:dagger)(Tag:spirit)(Tag:weapon)A basic cursed short-sword tool, sharp and durable, able to interact with and harm spiritual beings.
 430. Split Soul Katana, 5.2, Jujutsu Kaisen
@@ -1303,7 +1303,7 @@
 652. Cipher Pata, 1.7, Elden Ring
 #(Tag:fist)(Tag:holy)(Tag:weapon)A holy hand-worn blade of shapeless ciphers that is almost impossible to clash with. Its power scales with the user's maximum energy.
 653. Crystal Spear, 1.5, Elden Ring
-#(Tag:earth)(Tag:polearm)(Tag:resource)(Tag:weapon)A pure-crystal spear tougher than steel that can also serve as a magic-casting catalyst like a wand.
+#(Tag:deleted)(Tag:earth)(Tag:polearm)(Tag:resource)(Tag:weapon)A pure-crystal spear tougher than steel that can also serve as a magic-casting catalyst like a wand.
 654. Pharis' Bow, 1.8, Dark Souls
 #(Tag:bow)(Tag:weapon)The legendary archer Pharis' finely crafted powerful long-range bow, retaining essence that slightly aids aim. Comes with 30 standard arrows that restock every 24 hours.
 655. Glock, 0.7, Generic
@@ -2256,3 +2256,89 @@
 #(Tag:anti-holy)(Tag:blade)(Tag:infernal)(Tag:weapon)A colossal blade quenched in profane flame, so heavy it has to be dragged into its own swing. Its fire burns angels, paladins, and anything sanctified as readily as flesh, snuffs out holy wards on contact, and leaves wounds that do not close.
 1129. Replicating Nanobot, 1.8, Q-UP
 #(Tag:growing)(Tag:resource)(Tag:tech)A palm-sized swarm of self-copying nanobots. Once a day you give each bot one of two orders: split in two, or mint a single gold coin. Splitting doubles the swarm, so a batch told to replicate gives up today's income for a much larger one later, and the same swarm told to mint produces coins in proportion to its size. They never wear out and never stop following orders.
+1130. Ring of Flight, 3.4, Generic
+#(Tag:accessory)(Tag:movement)An ornate gold ring engraved with platinum wings, when worn, it allows the user to fly through the air at the same speed they can move on the ground.
+1133. Flying Ship, 2.4, Generic
+#(Tag:vehicle)A giant Galleon pirate ship that can fly through the air as well as it can sail, armed with canons and a crew of Ghosts who constantly maintain the ship and arm the canons but do little else.
+1134. Lasgun, 2.5, Warhammer
+#(Tag:gun)(Tag:tech)(Tag:weapon)A standard issue Guardmans Lasgun, a long barelled rifle that fires pin point accuracy lasers strong enough to punch a hole clear through the chest of a grown man and pierce through light metal armor and concrete cover. The battery that powers this gun is incredibly robust and can be charged in a variety of adaptable ways such as sunlight and electrcitiy.
+1135. Savings Safe, 4.4, Generic
+#(Tag:production)A large solid unbreakable metal safe that can only be opened by the owner and people registered by the owner. Somehow 1000 200-gram pure gold coins appear inside it every 24 hours.
+1136. Dryad Ring, 3.2, Generic
+#(Tag:accessory)(Tag:nature+)A ring made of still living brambles and roots, while worn it amplifies the power of the users Nature abilities and spells.
+1137. Morne's Ring, 3.2, Dark Souls
+#(Tag:accessory)(Tag:holy+)A malformed ring given to knights of Carim. While worn, this ring amplifies the power of all Holy abilities and spells of the user.
+1140. Harpe, 5.0, Type Moon
+#(Tag:anti-immortal)(Tag:anti-monster)(Tag:anti-recovery)(Tag:polearm)(Tag:weapon)The holy sword of Perseus granted to him by the gods. Despite being called a sword, the Harpe is a weapon in the form of a scythe that is especially effective against Monsters and Immortal Beings. Wounds inflicted by Harpe cannot be healed by outside intereference and can only heal naturally over time.
+1141. Gae Assali, 6.5, Generic
+#(Tag:divine)(Tag:fire)(Tag:holy)(Tag:polearm)(Tag:weapon)The indomitable spear of the Warrior and Sun God Lugh, the Gae Assali is a bloodthirsty spear of unimaginable power, when not drenched in water, the blade of the spear is perpetually wreathed in blazing fire and when thrown with the incantation "Ibar" the spear will travel at immense speeds like lightning and track the target until it pierces their body, and chanting "Athibar" will make the spear fly back to the user. However, the Spear is filled with unimaginable bloodlust, if left to its own devices or thrown without the command words, it will fly off on its own to indiscriminately kill.
+1142. Sleight of Hat, 2.1, Generic
+#(Tag:accessory)(Tag:movement)(Tag:tool)An otherwise unremarkable large magicians hat that has the special ability to allow anyone to plunge their hand inside and make their hand emerge from anywhere in their line of sight from a small portal. Technically, it's not limited to only hands but the opening is not that large.
+1143. Quick Change Cloth, 2.0, Generic
+#(Tag:movement)(Tag:tool)A rather ordinary looking large red cloth belonging to a stage magician. But unlike other acts, this one does not require sleight of hand. Whenever someone is completely obscured by this cape, the user can freely change their clothing to any piece of clothing or equipment the user owns... or just leave them naked. The previous clothing the target wore is swapped with the location of the clothes they are now wearing. Or the clothes are deposited as a neatly folded pile nearby if clothes were not swapped.
+1144. Showman's Wand, 1.3, Generic
+#(Tag:illusion)(Tag:tool)A rather cheap looking wand that looks as if it would belong a street magician. But unlike those cheap items, this one has the ability to unleash colorful bright lights, leave lingering trails of colorful sparkly light, and let off firework like colorful sparkly blasts. While rather useless at combat due to them just being normal light, it is the ultimate weapon for a children's entertainer.
+1145. Magicians Cape, 2.6, Generic
+#(Tag:illusion)(Tag:tool)A gaudy cape belonging a famous stage magician, echoes of his acts still linger in the cape. By flourishing the cape, the user can unleash a swarm of white doves that fly away from them before dissapearing shortly after. By bowing they can summon red curtains that drape down from above to cover an area for a minute By reaching into the cape, they can summon sets of metallic playing cards that disappear after a minute. By clapping, the user can summon a thunderous applause from all directions. By snapping their fingers, the user can summon blinding spotlights that last for a minute. The cape only has a limited amount of power and can only perform 7 acts per day.
+1146. Heavenly Cheque, 2.6, Generic
+#(Tag:holy)(Tag:tool)"Agents of the Heavenly Realm are always rewarded." A paper cheque with a metallic feel, this cheque can serve as a substitute for all financial payments according to the amount of money that is stored inside. The Cheque starts with zero money and you can fill up the cheque automatically by doing good deeds or vanquishing evil.
+1147. Lifetime Nuka-Cola Supply, 1.1, Fallout
+#(Tag:consumable)You have just earned yourself a lifetime supply of fresh Nuka-Cola delivered straight to your doorstep(or wherever is convenient for you) every day! Good for you. You receive one shipment of a box of Nuka-Cola every single day, every create contains a clipboard with which you can alter the types of Nuka Cola you receive with each shipment. You are able to request from any commercially available Nuka-Cola flavor. List of Nuka-Cola Flavors: https://fallout.fandom.com/wiki/List_of_Nuka-Cola_variants
+1148. Cuirasser, 1.9, Type Moon
+#(Tag:tech)(Tag:vehicle)A classy motorcyle somehow, in some way, that has been modified by the King of Knights into a motorcycle beyond human construction that is fit to be ridden by a king. This motorcycle is very powerful, fast and durable vehicle that is as mighty as it is unwieldy. Although this motorcyle needs a true skilled rider to be able to bring out its max performance, it will prove to be a great ride for anyone who can handle it.
+1149. Frost Pain, 3.1, Overlord
+#(Tag:blade)(Tag:dagger)(Tag:ice)(Tag:ice+)(Tag:weapon)the Frost Pain is a legendary artifact of the lizardman tribe, an oddly shapen dagger carved out of mystical ice that inflicts frostbite and freezing with every cut it inflicts in addition to boosting the Ice Resistance of the user when held. And, up to 3 times a day, the wielder can unleash "Icy Burst", an abiltiy that unleashes a wave of freezing icy mist towards where the user swings or into a burst around them.
+1150. The Hercules Method, 4.5, Image Comics
+#(Tag:grimoire)(Tag:martial)(Tag:mental)"Are you tired of being Puny?" The Hercules Method is a workout method devised by Cain, the first killer. This workout manual details a harsh yet potent workout routine and meditation method that allows the user to grow their muscles and body explosively while honing their mind and spirit to achieve their maximum potential, eventually allowing them to attain perfect control over their own body down to the individual muscle strands. However, practicing the Hercules Method can decrease the users empathy while bolstering their bloodlust so caution is advised. The talent required to progress with the Hercules method is incredibly rare and needs a special kind of person to be able to achieve its full potential.
+1151. Saint Quartz, 6.7, Type Moon
+#(Tag:summon)(Tag:tool)A piece of perfect Saint Quartz containing the infinite possibility of endless heroes from the Throne of Heroes. The user can break this crystal in order to bring forth a Heroic Spirit to become their servant, bound to them Holy Grail War style. The power and output of the summoned servant will be limited by the reserves of their Master, you also gain 3 Command Seals to command your servant with who replenish one by one every 24 hours. The servant you summon depends purely on the user and the kind of existence and person they are.
+1152. Cookie of Pain and Misery, 1.5, Generic
+#(Tag:consumable)An otherwise ordinary looking cookie imbued with pure pain and misery, whoever eats it will not have a great time.
+1153. Hrunting, 4.0, Type Moon
+#(Tag:blade)(Tag:weapon)Hrunting is the magical sword of Beowolf, a sword that can track the scent of blood and adjust itself to hit the opponent and track them with each swing, helping launch optimal slashes even with a lackluster wielder. It is nigh impossible to miss a slash while in range while using this sword.
+1154. Kanshou and Byakuya, 4.3, Type Moon
+#(Tag:anti-monster)(Tag:blade)(Tag:dagger)(Tag:weapon)Kanshou and Byakuya are a pair of “married” swords, one Black and One white, they are excellent swords that are made with exceptional material, skill and sacrifice. These blades are very effective against monstrous opponents and have the ability to return to the user when thrown as long as the other blade is held.
+1155. Around Round Shield, 6.2, Type Moon
+#(Tag:light)(Tag:shield)(Tag:summon)The Legendary Shield of Galahad made from the roundtable itself, the shield itself is nigh unbreakable and enhanced so that anyone who touches it other than the wielder will be pierced by spears of light. In addition, the true name of this shield can be unleashed to invoke “Lord Camelot” , a projection of the Castle of Camelot whose durability scales with the willpower of the user, able to turn into a wall that can withstand anything in the right hands.
+1156. Crocea Mors, 2.8, RWBY
+#(Tag:blade)(Tag:meta)(Tag:shield)(Tag:weapon)The Sword and Shield combo that belonged to the warrior Jaune Arc. The sword is exceptionally well made and durable, and its sheath has the ability to transform into a durable heather shield. In addition, this shield can enhance itself by expending a dust crystal, such as using a Gravity Crystal to repel attacks, or a Light Crystal to extend its defensive range. This set comes with a single expendable dust crystal with the element of the user's choice per day.
+1157. Dragon Tooth, 2.0, Dark Souls
+#(Tag:bludgeon)(Tag:draconic)(Tag:fire-resistance+)(Tag:magic-resistance+)(Tag:weapon)A large blunt weapon carved out of the fang of an eternal dragon. In addition to being nigh unbreakable, holding this club enhances the wielder's resistance to Fire and Magical effects.
+1158. Third Overlord’s Armor, 4.0, Overlord
+#(Tag:armor)(Tag:dark+)(Tag:infernal+)(Tag:summon+)The imposing armor of the legendary Third Overlord, a fearsome conqueror with his legion of minions. In addition to possessing great defensive power, this armor amplifies the power of the wearers Dark and Infernal abilities, and Empowers all troops and familiars under them who are of Infernal or Dark.
+1159. Rho Aias, 4.8, Type Moon
+#(Tag:shield)Rho Aias is a conceptual shield formed in the shape of seven layered barriers that are conjured in front of the user when they imbue energy into it, forming into the shape of a flower-like projection with strength similar to that of a fortress wall. The amount of petals that can be conjured at once depends on the amount of energy the user expends.
+1160. Mac an Luin, 5.1, Type Moon
+#(Tag:polearm)(Tag:water)(Tag:water+)(Tag:weapon)Mac an Luin is the legendary spear of Fionn mac Cumhaill, a very long spear of great power that has the ability to unleash tremendous volumes of water, either as a straight beam of pressurized beam, or as a large flood. In addition, it amplifies the power of Water abilities channeled through it.
+1161. Demon Arm - Beowulf, 5.2, Devil May Cry
+#(Tag:armor)(Tag:fist)(Tag:infernal)(Tag:light)(Tag:light+)(Tag:weapon)The Beowulf is a Demon Arm made out of the Lightbeast, as a Demon Arm, Beowulf takes the form of a set of Greaves and Gauntlets. In addition being nigh unbreakable, this Demon Arm is imbued with the power of light, releasing harmful explosions of light with every attack that uses them, and the light of the Demon Can be condensed into projectiles too. This Demon Arm also empowers all Light Abilities of the user while equipped.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1162. Demon Arm - Ifrit, 4.6, Devil May Cry
+#(Tag:anti-holy)(Tag:armor)(Tag:fire)(Tag:fire+)(Tag:fist)(Tag:infernal)(Tag:infernal+)(Tag:weapon)The Ifrit is a set of Gauntlets that carries the spirit of a demonic fire elemental, charging it with Hellfire. When worn, the Ifrit imbued the users strikes with powerful hellflames that deal additional damage to Holy targets and empowers all Fire and Infernal abilities channeled through them. But due to the power of the gauntlet and its demonic nature, it needs a user with strong willpower to be able to use them effectively.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1163. Demon Arm - Cerberus, 3.3, Devil May Cry
+#(Tag:bludgeon)(Tag:flexible)(Tag:ice)(Tag:ice+)(Tag:infernal)(Tag:weapon)The Cerberus is a triple nunchaku based on a Sanhokon, this Devil Arm has the ability to stretch to incredible lengths and is perpetually supercool to the touch for everyone but the user, in addition, it can further release its frosty aura and create chunks of ice by expending the users energy. The Demon Arm also empowers the potency of all Ice abilities when used as a focus.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1164. Demon Arm - Nevan, 4.0, Devil May Cry
+#(Tag:air)(Tag:air+)(Tag:blade)(Tag:electric)(Tag:electric+)(Tag:infernal)(Tag:infernal+)(Tag:tool)(Tag:weapon)The Nevan is a fucking badass Electrically Charged Demon Guitar with a scythe attached. The user of Nevan is capable of expending their energy to release shockwaves and electric bat projections by jamming the hell out with the guitar, the power of the electric demon bats they release and the shockwaves scales with the amount of energy they expended and the quality of the jam they jammed out. In addition, Nevan can also be used to amplify the potency of all Infernal, Air and Electric abilities by rocking out when using them, amplifying the abilities proportional to how hard you rocked out.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1165. Demon Arm - Artemis, 3.2, Devil May Cry
+#(Tag:bow)(Tag:gun)(Tag:infernal)(Tag:infernal+)(Tag:weapon)The Demon Arm Artemis is a arm mounted gun crossbow that fires off volleys of Infernal Energy by using the users energy, the more energy they expend, the more beams or stronger beams Artermis can release. In addition, Artemis can also manipulate the beams it releases, turning them circular or shooting them into the air to split into several beams to rain down.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1166. Demon Arm - Dr Faust, 5.4, Devil May Cry
+#(Tag:accessory)(Tag:infernal)(Tag:infernal+)(Tag:weapon)The Demon Arm Dr. Faust manifests as a stylish hat and scarf that allows its user to convert their energy into Crystal Orbs and Coins of Infernal Energy that they can summon and shoot at will, the more energy they expend, the more orbs and coins they can summon and unleash. In addition, the user can throw out the hat and enhance it with energy to use it as a weapon and control it remotely, or have the hat act as a turret while siphoning the user's energy. While Dr. Faust is worn, all Infernal abilities are empowered.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1167. Demon Arm - Alastor, 5.0, Devil May Cry
+#(Tag:agility+)(Tag:blade)(Tag:electric)(Tag:electric+)(Tag:infernal)(Tag:weapon)The Demon Arm Alastor manifests as a longsword that increases the user's speed and is capable of wreathing itself in lightning, dealing devastating damage to targets, the power of the lightning coating the blade and the lightning they can unleash scales with the amount of energy the user expends. Amplifies the power of Electric abilities when using the sword as a focus.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1168. Demon Arm - Gilgamesh, 5.2, Devil May Cry
+#(Tag:armor)(Tag:enhancer)(Tag:fist)(Tag:infernal)(Tag:weapon)The Demon Arm Alastor is an armor made of Demonic Metal that covers the users arms, face, legs, and back, it is incredibly durable and enhances the users physical performance as well as possessing numerous built in weapons like blades and buzzsaws. In addition, the armor has the ability to forcefully propel the user through expending their energy to turn into infernal energy that it uses like a jet boost.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1169. Demon Arm - Cavaliere, 3.8, Devil May Cry
+#(Tag:infernal)(Tag:vehicle)(Tag:weapon)The Demon Arm Cavaliere is a fucking badass demon motorycle buzzsaw hybrid. This badass motorcycle converts the user's Energy into Infernal Energy that it uses as fuel to propel itself and go at great speeds. The Cavaliere can scale even walls and can split into a pair of large buzzsaws that can tear through opponents. It is a demon buzzsaw motorcycle, expecting anything more is too much.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1170. Demon Arm - Lucifer, 5.8, Devil May Cry
+#(Tag:accessory)(Tag:blade)(Tag:infernal)(Tag:summon)(Tag:weapon)The Demon Arm Lucifer is a backpack-like attachment bound to the user that can summon floating blades supercharged with Infernal Power that it draws and converts from the user's energy. The user can control these swords to either shoot them out like projectiles, or swing them like normal swords and at will, detonate the Infernal Power inside to cause an explosion. The power of the blades and their explosions scales with the amount of energy the user expends.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1171. Demon Arm - King Cerberus, 4.9, Devil May Cry
+#(Tag:bludgeon)(Tag:electric)(Tag:fire)(Tag:flexible)(Tag:ice)(Tag:infernal)(Tag:polearm)(Tag:weapon)The Demon Arm King Cerberus takes the form of a three sectioned staff that can take multiple forms. First Form - Ice Nunchaku: A triple nunchaku that has the ability to convert the user's energy into a frosty aura and ice. Second Form - Lightning Three Sectioned Staff: A flexible three sectioned staff that converts the users energy into electricity that covers the staff. Third Form - Fire Staff: A long straight staff that converts the users energy into fire that covers the staff. King Cerberus can also switch between these forms rapidly.(Cannot be reverted to the original demon form, only functions as an inanimate Devil Arm)
+1172. Devil Arm - Pandora, 5.8, Devil May Cry
+#(Tag:growing)(Tag:infernal)(Tag:meta)(Tag:weapon)One of the strongest demonic armaments known as Calamitous Ordnance capable of assuming 666 different forms, however, due to the amount of times it has been used to store frozen pizza or been sold off to pay debts, it is locked into only 6 transformations(Epidemic, Jealousy, Hatred, Revenge, Argument, Grief), mainly ranged ones and needs familiarity and experience from the user to be able to re-unlock the other forms.
+1173. Yamato, 6.8, Devil May Cry
+#(Tag:blade)(Tag:infernal)(Tag:space)(Tag:weapon)The Yamato is one of the legendary swords wielded by Sparda. It has the ability to separate, the Yamato is a sword that is capable of cutting practically anything, material, the toughest of shields, space, and even the powers of a person. But to be able to use Yamato’s power to any meaningful extent requires extreme skill.
+1174. Dante’s Jacket, 2.4, Devil May Cry
+#(Tag:armor)(Tag:enhancer)(Tag:infernal+)The iconic jacket of Dante Sparda, wearing this jacket increases the power of the user's Infernal abilities and their physical abilities if they are an Infernal race. These effects are further amplified for 1 hour after consuming pizza.
+1175. Vergil’s Jacket, 3.1, Devil May Cry
+#(Tag:armor)(Tag:infernal+)(Tag:space+)The iconic jacket of Vergil Sparda, wearing this jacket increases the power of the user's Infernal and Space abilities, and further increases them if they are an Infernal race. It also makes the user far more effective at avoiding any blood related children they have.
+1176. Zora Armor, 2.2, The Legend of Zelda
+#(Tag:armor)(Tag:movement)(Tag:water)An armor made of hide and dragon scales by the princess of the Zora for her future husband. Wearing this armor provides considerable protection due to its great construction and allows the user to move in water extremely fast as if they were aquatic themselves.

@@ -53,6 +53,12 @@ window.ChaosGacha = (function () {
     return [];
   }
 
+  function unwantedTags(F) {
+    const raw = Array.isArray(F.notTags) ? F.notTags
+      : (F.notTag ? [F.notTag] : []);
+    return raw.map(t => String(t).toLowerCase()).filter(Boolean);
+  }
+
   // category: one of the 5, or "random".
   function buildPool(entries, category, filt, rnd) {
     rnd = rnd || Math.random;
@@ -61,6 +67,7 @@ window.ChaosGacha = (function () {
     const srcs = F.sources || (F.source ? [F.source] : null);
     const excl = F.exclude && F.exclude.length ? new Set(F.exclude) : null;
     const wt = wantedTags(F);
+    const nt = unwantedTags(F);
     const matchCat = cat => entries.filter(e => {
       if (e.f !== cat || e.t === "tree") return false;
       if (srcs && srcs.length && !srcs.includes(e.s)) return false;
@@ -73,6 +80,10 @@ window.ChaosGacha = (function () {
       if (wt.length) {
         const et = entryTags(e).map(t => String(t).toLowerCase());
         for (const w of wt) if (!et.includes(w)) return false;
+      }
+      if (nt.length) {
+        const et = entryTags(e).map(t => String(t).toLowerCase());
+        for (const t of nt) if (et.includes(t)) return false;
       }
       if (ql && !(e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql))) return false;
       return true;

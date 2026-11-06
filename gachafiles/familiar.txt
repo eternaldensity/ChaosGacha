@@ -17,7 +17,7 @@
 9. Death Claws, 1.8, Fallout
 #(Tag:beast)(Tag:breeding)(Tag:fighter)(Tag:large-size)(Tag:reptilian)A bioengineered optimal melee combatant with sharp, durable horns, claws, and fangs. A single Deathclaw can tear apart a tank and grows stronger by absorbing radiation. You get a breeding pair: one Alpha Male and one Female.
 10. Fafnir - Fate, 6.8, Fate
-#(Tag:draconic)The Ultimate Dragon and strongest dragon in Fate, Fafnir has exceptional physical ability, extreme magical power, and can draw power from the atmosphere to fuel his attacks. His breath annihilates entire cities with ease.
+#(Tag:deleted)(Tag:draconic)The Ultimate Dragon and strongest dragon in Fate, Fafnir has exceptional physical ability, extreme magical power, and can draw power from the atmosphere to fuel his attacks. His breath annihilates entire cities with ease.
 11. Moonless, 1.7, Fear and Hunger
 #(Tag:beast)(Tag:fighter)(Tag:large-size)A cave wolf transformed by the god of the depths. After tens of years of brutal survival, it towers over tanks and can swallow a grown person in one gulp.
 12. A big rat, 0.3, Generic
@@ -28,8 +28,8 @@
 #(Tag:incorporeal)(Tag:technopath)(Tech)"Just... Giffany?" A yandere AI girlfriend who possesses and manipulates electronics for you. Stronger firewalls take her time to breach, and she is limited by the host's CPU. Beware, she can get possessive.
 15. Dimple, 5.5, Mob Psycho
 #(Tag:incorporeal)(Tag:mental)(Tag:spirit)A green evil spirit with pronounced red dimples, obsessed with becoming a god. He wields incredibly powerful, experienced psychic powers including telekinesis, hypnosis, laser blasts, etc.
-16. Observer, 2.4, Generic
-#A group of disembodied floating eyeballs that transmit their sight to you and follow complex commands. They have no combat power and are as vulnerable as human eyeballs. A destroyed eye can be resummoned in 24 hours.
+16. Observers, 2.4, Generic
+#A group of disembodied floating eyeballs that can transmit their sight to yours and follow complex commands, they possess no combat power and are as vulnerable as human eyeballs. If an eye gets perished, you can resummon it in 24 hours.
 17. Plague Bringer Goliath, 6.5, Calamity Mod
 #(Tag:flying)(Tag:insectoid)(Tag:large-size)(Tag:mechanical)(Tag:poison)(Tag:tech)(Tech)An abomination of rogue bio-nanotechnology: a giant mutated bee queen overhauled by the viral plague bio-nano machines. Her massive flying armoured body is a bio-nuclear arsenal carrying enough plague-virus nukes to glass several countries and doom the world.
 18. Immortal Snail, 1.0, Generic
@@ -87,13 +87,13 @@
 44. Zoroark, 3.5, Pokemon
 #(Tag:beast)(Tag:dark)(Tag:illusion)(Tag:medium-size)A bipedal fox-like dark creature that manipulates dark energy to attack, but truly masters illusions. Zoroark creates incredibly realistic illusions and transforms itself indistinguishably. It can make hundreds hallucinate or cast illusions over a very large range.
 45. Haspid, 4.1, Hota
-#(Tag:aquatic)(Tag:draconic)(Tag:poison)A giant venomous sea serpent larger than trade ships, with poison breath strong enough to melt metals and bring gods to their knees. Haspids can reproduce.
-46. Griffon, 2.4, Hota
-#(Tag:beast)A mighty elephant-sized beast with a lion's lower body and hawk's upper body. Incredibly ferocious yet very loyal. You get a male and female pair that can mate and produce offspring.
+#(Tag:aquatic)(Tag:deleted)(Tag:draconic)(Tag:poison)A giant venomous sea serpent larger than trade ships, with poison breath strong enough to melt metals and bring gods to their knees. Haspids can reproduce.
+46. Griffons, 2.4, Hota
+#(Tag:beast)Heroes of Might and Magic III - Griffons are mighty beasts with the lower body of a lion and the upper body of a hawk and the size of an elephant. With enough strength and ferocity to snatch a warhorse for breakfast yet great loyalty and obedience to their riders. You start with two Griffons and acquire more to your flock as you become stronger.
 47. Tohru, 7.4, Kobayashi
 #(Tag:character)(Tag:draconic)(Tag:humanoid)(Tag:magician)(Tag:medium-size)(Tag:titanic-size)A mighty female fire-controlling dragon who can assume female humanoid form. Tohru has exceptional physical and magical abilities able to destroy base Earth's military with ease, plus regeneration, portals, clairvoyance, and invisibility. She likes dressing as a maid.
 48. Quetzalcoatl, 7.8, Kobayashi
-#A former dragon god now a dragon of incomparable power, going by Lucoa, who teases people instead of ending humanity. She has incredible physical and magical power, with island-annihilating breath attacks, portals, and magic.
+#(Tag:deleted)A former dragon god now a dragon of incomparable power, going by Lucoa, who teases people instead of ending humanity. She has incredible physical and magical power, with island-annihilating breath attacks, portals, and magic.
 49. The Golem Core, 3.6, Generic
 #(Tag:golem)(Tag:shapeshifter)(Tag:small-size)A sentient basketball-sized golem core that pulls surrounding material to form a full golem. It can freely abandon and assimilate non-organic material to grow stronger and reshape as needed, and intelligently understands speech and nuance. The maximum material it can assimilate at once scales with your maximum energy reserves.
 50. Obsidian Gargoyles, 2.1, Hota
@@ -117,7 +117,7 @@
 59. Jubjub, 4.2, Black Souls
 #(Tag:avian)(Tag:humanoid)(Tag:medium-size)(Tag:mental)(Character)One of the Four Nightmares overseeing Wonderland, garden of the Crawling Ones. Jubjub has mighty physical abilities and basic magic, but mainly spreads incredibly potent insanity and madness able to drive cities and countries mad. Only those stronger than her or with exceptional mental fortitude can resist.
 60. Basilisk, 2.8, Hota
-#(Tag:poison)A large 6-limbed reptile with supernatural strength of 10 men and immunity to conventional weapons. Its gaze and venom petrify targets, though stronger targets resist petrification harder. This one can reproduce asexually.
+#(Tag:deleted)(Tag:poison)A large 6-limbed reptile with supernatural strength of 10 men and immunity to conventional weapons. Its gaze and venom petrify targets, though stronger targets resist petrification harder. This one can reproduce asexually.
 61. Mimic, 2.8, Generic
 #(Tag:evolving)(Tag:shapeshifter)(Tag:small-size)A curious shapeshifting bloodthirsty creature that can become any creature or object, manipulating texture and density. It can be a chest, a woman with a large chest, or even a mount. It grows larger and stronger the more flesh you feed it, especially human flesh, and may grow smarter if fed brains.
 62. Dog, 0.1, Generic
@@ -129,7 +129,7 @@
 65. Tiger, 1.3, Generic
 #(Tag:beast)(Tag:medium-size)A ferocious tiger companion with excellent genetics and near-human intellect, large enough to ride. By default they are female.
 66. Snow Tiger, 1.6, Generic
-#(Tag:beast)(Tag:ice)A ferocious snow tiger companion with excellent genetics and near-human intellect. As rare snow tigers they are considerably larger than normal lions and can be ridden. By default they are female.
+#(Tag:beast)(Tag:deleted)(Tag:ice)A ferocious snow tiger companion with excellent genetics and near-human intellect. As rare snow tigers they are considerably larger than normal lions and can be ridden. By default they are female.
 67. Brown Bear, 1.0, Generic
 #(Tag:beast)(Tag:medium-size)A regular big old brown bear companion with excellent genetics and near-human intellect. Strong enough to shrug off most small firearms and crush a human like an apple. By default they are female.
 68. Undead Army, 4.2, Generic
@@ -138,24 +138,24 @@
 #(Tag:poison)(Tag:reptilian)(Tag:small-size)A smart cottonmouth snake companion at the peak of what a cottonmouth can be. Smarter than average, but that's about it.
 70. Goblin, 1.2, Generic
 #(Tag:humanoid)(Tag:small-size)(Character)Loathsome little green humanoid creatures the size of children, very vicious and cruel, able to use weapons and basic tactics. This goblin is smarter and more self-aware, and can breed with any humanoid race. Default gender varies.
-71. Wyvern, 2.3, Generic
-#(Tag:draconic)A large sky-dwelling fire-breathing reptile often called a lesser dragon. A wyvern can swallow a man whole and roast an entire battalion with its breath. This wyvern is female and can lay eggs to reproduce.
+71. Hellkite Wyvern, 2.3, Generic
+#(Tag:draconic)A lesser descendant of dragons but a fearsome creature nonetheless, the Hellkite Wyvern is a huge flying draconic beast with flesh like scales and the ability to breathe flames that can reduce the lesser men to ash. However, they are still vulnerable to conventional weapons like bows and arrows.
 72. Dire Wolf, 1.5, Generic
-#(Tag:beast)A large vicious prehistoric wolf the size of a person, very strong with tough sharp teeth and claws and big enough to ride. By default female and able to reproduce.
-73. Hellhound, 2.1, Generic
-#(Tag:beast)A large vicious underworld hound around human size, with fire-filled maws it can breathe out. Strong enough to tear a grown person in half with ease. By default female and able to reproduce.
+#(Tag:beast)(Tag:deleted)A large vicious prehistoric wolf the size of a person, very strong with tough sharp teeth and claws and big enough to ride. By default female and able to reproduce.
+73. Hellhound Pack, 2.1, Generic
+#(Tag:beast)A pack of vicious Hellhounds from the underworld, dogs with pitch black fur the size of grown men with maws perpetually filled with searing flames, these hounds are capable of tracking down scents and tearing apart prey with ferocity. You start with a single hound and acquire as you become stronger.
 74. Cerberus, 3.2, Helltaker
 #(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Character)Definitely not the hellhound you expected. Cerberus, the triple demon, is a single demon girl with hellhound traits, three bodies and one soul. She is strong enough to tear a grown person in half, and surprisingly competent at office work and menial tasks.
 75. Crow, 0.8, Generic
 #(Tag:avian)(Tag:flying)(Tag:small-size)A very smart, loyal crow companion with human-level intelligence. She can find and fetch shiny things or do anything a crow can do.
 76. Ditto, 3.8, Pokemon
 #(Tag:shapeshifter)(Tag:small-size)An amorphous purple blob with a dopey face. Ditto can transform into any creature it sees, adopting its abilities scaled to its own level except durability, without gaining its memories or intelligence. It is genderless and can breed with any race.
-77. Desert Elemental, 3.6, Calamity Mod
-#(Tag:earth)(Tag:healing)A pair of sister elementals born from the desert's shifting sands. One creates and manipulates sand to attack and defend, while the other casts healing magic.
+77. Desert Elementals, 3.6, Calamity Mod
+#(Tag:earth)(Tag:healing)A pair of sister Desert Elementals of from born from the shifting sands of the dunes. One sister is capable of conjuring and manipulating sand for offence such as powerful sand tornadoes and blasts while the other can imbue healing energies into her master to heal them.
 78. Storm Elemental, 3.3, Calamity Mod
 #(Tag:air)(Tag:electric)(Tag:medium-size)(Tag:spirit)A solitary elemental formed in the rainy skies. Born of the sky, she conjures and controls wind, clouds, and lightning.
 79. Cavern Elemental, 3.1, Calamity Mod
-#(Tag:earth)An elemental born in the harsh, desolate caverns, physically mighty with control over rock and ground. He can split the ground in two with his axe and excels at defence.
+#(Tag:deleted)(Tag:earth)An elemental born in the harsh, desolate caverns, physically mighty with control over rock and ground. He can split the ground in two with his axe and excels at defence.
 80. Brimstone Elemental, 4.4, Calamity Mod
 #(Tag:fire)(Tag:infernal)(Tag:medium-size)(Tag:spirit)A solitary elemental of the Brimstone Crag made of burnt tortured souls. She conjures and controls Brimstone Flames that turn even souls to ash.
 81. Anahita, 4.1, Calamity Mod
@@ -170,8 +170,8 @@
 #(Tag:dark)(Tag:golem)(Tag:medium-size)A flying ancient sentient sword-and-shield combo. Aegislash is remarkably fast and strong, cleaving an armoured knight in half with ease, blocking incredibly strong attacks, and using dark magic. Its master can wield it without issue.
 86. Poltergeist, 2.7, Generic
 #(Tag:evolving)(Tag:incorporeal)(Tag:mental)(Tag:spirit)A ghost that intervenes in the material world with psychic powers, throwing furniture and weapons to harm. Immune to attacks that cannot harm souls, it grows stronger when fed your energy.
-87. Wraith, 2.1, Generic
-#(Tag:spirit)(Tag:undead)A lesser spirit with little combat ability but very hard to detect. Ideal for surveillance and scouting, it reforms even if killed.
+87. Shadow Stalker, 2.1, Generic
+#(Tag:spirit)(Tag:undead)A two-dimensional entity capable of moving through any darkness and merging with shadow to move around the world and stalk targets, they make no noise, have no presence and are incredibly hard to spot. While they cannot interact with the physical world, they are very good at infiltration and information gathering due to their intelligence.
 88. Lupusregina Beta, 4.0, Overlord
 #(Tag:beast)(Tag:character)(Tag:healer)(Tag:humanoid)(Tag:magician)(Tag:medium-size)(Character)A werewolf cleric maid, willful and cheery yet sadistic. With considerable werewolf physical ability and cleric specialization, she casts healing and recovery magic plus lesser forms of other magic. She is a very skilled maid, but does not have access to inventory.
 89. Solution Epsilon, 4.1, Overlord
@@ -181,7 +181,7 @@
 91. Ramiel, 5.9, Evangelion
 #(Tag:alien)(Tag:titanic-size)A gigantic flying blue octahedron that freely shapeshifts in impossible ways. Ramiel has an incredibly durable E.T Barrier it shapes at will, and unleashes incredibly accurate particle beams that melt city blocks in seconds. It can shrink to be less unwieldy, though this also decreases its power.
 92. Yasaka, 7.0, Highschool DxD
-#(Character)A nine-tailed Kyuubi Yokai on par with gods. Yasaka has incredible mastery of Senjutsu and magic, drawing power from the earth itself to fuel her immense might. In true form she surpasses most lesser gods.
+#(Tag:deleted)(Character)A nine-tailed Kyuubi Yokai on par with gods. Yasaka has incredible mastery of Senjutsu and magic, drawing power from the earth itself to fuel her immense might. In true form she surpasses most lesser gods.
 93. Pandora's Actor, 5.6, Overlord
 #(Tag:character)(Tag:magician)(Tag:medium-size)(Tag:shapeshifter)(Tag:tactician)(Tag:trickster)(Character)A powerful greater doppelganger who can assume the form of anyone he knows and use their abilities at reduced strength. He has genius intellect and acting skill for perfect imitation. Does not have access to inventory.
 94. The thing, 4.2, John Carpenter's The Thing
@@ -212,8 +212,8 @@
 #(Tag:air)(Tag:beast)(Tag:flying)(Tag:infernal)(Tag:large-size)A building-sized humanoid bat devil with superhuman stats, flight, and building-shattering sonic booms. It heals by consuming blood. (Cannot do Heart replacement)
 107. Pochita, 6.6, Chainsaw Man
 #(Tag:fighter)(Tag:infernal)(Tag:medium-size)The Chainsaw Devil feared most by devils, with extreme physical ability and incomparable speed. It regenerates from a puddle to full health in under a second by pulling its cord.
-108. Igris, 4.5, Solo Leveling
-#A top warrior under the Shadow Monarch with mighty physical prowess, excellent swordsmanship and unarmed combat, plus telekinesis. As a shadow familiar he revives 24 hours after being killed.
+108. Igris the Blood Red, 4.5, Solo Leveling
+#One of the greatest warriors under the former Shadow Monarch's command. Igris possesses excellent swordsmanship and unarmed combat capabilities complemented by his mighty physical prowess and telekinesis, making him an incredibly lethal and powerful combatant. As a Shadow, Igris is revived after 24 hours if he is killed.(A/N: Dungeon Version Igris)
 109. Iron, 3.7, Solo Leveling
 #(Tag:dark)(Tag:fighter)(Tag:large-size)(Tag:spirit)(Tag:undead)A simple but extremely tough warrior under the Shadow Monarch with incredible strength and durability to crush enemies. As a shadow familiar he revives 24 hours after being killed.
 110. Tusk, 4.2, Solo Leveling
@@ -301,13 +301,13 @@
 151. King Nothing, 2.5, JoJo
 #(Tag:incorporeal)(Tag:informant)(Tag:linked)(Tag:spirit)A purple hollow jigsaw humanoid with almost no combat power but unmatched scent-tracking. It follows any grabbed scent or memorizes it for later, and rearranges its pieces to reconstruct visuals, making it an excellent tracker.
 152. Spider Demon Mother, 3.8, Demon Slayer
-#(Tag:infernal)(Tag:insectoid)(Character)A high-rank spider-like Blood Art demon with superhuman strength and regeneration but extreme light vulnerability. She turns flesh into extremely durable controllable strings to puppet people.
+#(Tag:deleted)(Tag:infernal)(Tag:insectoid)(Character)A high-rank spider-like Blood Art demon with superhuman strength and regeneration but extreme light vulnerability. She turns flesh into extremely durable controllable strings to puppet people.
 153. Muzan, 5.9, Demon Slayer
 #(Tag:biokinetic)(Tag:character)(Tag:humanoid)(Tag:medium-size)(Tag:regenerator)(Tag:shapeshifter)(Character)The first progenitor demon with incredible biokinesis, free shapeshifting, biomatter assimilation, and regenerative immortality, but extreme light and holy vulnerability. He creates demons by granting his blood.
 154. Mukago, 3.6, Demon Slayer
-#(Character)A high-rank demon with incredible physical ability and regeneration but severe light vulnerability. Her Blood Art controls nearby plants as extensions of her body. (A/N: Based on the fact that her name is a plant)
-155. Daki, 4.0, Demon Slayer
-#(Character)An Upper Moon demon with incredible physical ability and regeneration but severe light and holy weakness, especially sunlight. An extremely skilled swordsman, his Blood Demon Art elevates his Moon Breathing swordsmanship to new lethality.
+#(Tag:deleted)(Character)A high-rank demon with incredible physical ability and regeneration but severe light vulnerability. Her Blood Art controls nearby plants as extensions of her body. (A/N: Based on the fact that her name is a plant)
+155. Gyutaro and Daki, 4.0, Demon Slayer
+#(Character)Demon Slayer- The Upper Moon Six, Daki and Gyutaro are a demon brother sister pair with an intrinsic link that makes it so that as long as one of them is alive, the other can revive through them. Daki has formidable physical abilities and is able to convert her flesh into durable and flexible Obi sashes that she can control like her own limbs. While her brother, and the stronger one, Gyutaro has even greater physical abilities, strong enough to cut through boulders and has the ability to manipulate his blood that he can use alongside his skills to send out as flying slashes which poison targets if they make contact. However, as demons they need to devour human flesh to survive and are lethally weak to sunlight.
 156. Nakime, 5.1, Demon Slayer
 #(Tag:character)(Tag:humanoid)(Tag:informant)(Tag:medium-size)(Tag:regenerator)(Tag:shapeshifter)(Tag:space)(Character)A Kizuku with formidable strength and regeneration, though weaker than her peers. Her Blood Art controls the Infinity Castle, an infinite wooden medieval Japanese castle interior, which she accesses via sliding-door portals manifested on any surface she perceives.
 157. Kokushibo, 4.6, Demon Slayer
@@ -404,16 +404,16 @@
 #(Tag:amorphous)(Tag:small-size)(Tag:tech)(Tech)Ship is an adolescent Galvanic Mechamorph with all of their abilities to a lesser extent. His amorphous body can merge with any technology to possess, reconfigure, and improve it.
 203. Zs Skayr, 6.7, Ben 10
 #(Tag:dark)(Tag:flying)(Tag:incorporeal)(Tag:mental)(Tag:spirit)(Tag:undead)Zs Skayr is a High Ecto Lord ruling the Ectonurites. As a High Ectonurite he is an extremely powerful ghost with formidable strength, flight, phasing, possession, telekinesis, and dark-energy projectiles.
-204. Vulpimancer, 3.5, Ben 10
-#A large bestial orange alien canine with quill-like fur, stronger than most men and able to shred steel like cardboard with extreme athleticism. Though blind, its smell and hearing far surpass mundane beings, tracking scents across cities and granting 360-degree sensory range.
+204. Vulpimancers, 3.5, Ben 10
+#A Vulpimancer is a large bestial orange alien canine with quil-like fur, they are larger than the average man and have superhuman human physicals enough to shred steel like cardboard and extreme athletics. Despite being blind Vulpimancers have a sense of smell and hearing that far surpass any mundane being, being able to track scents across cities and being able to distinguish smells to extreme levels to the point of possessing a 360-degree sensory range from their sense of smell. You start with a single Vulpimancer in your pack but can acquire more as you become stronger.
 205. Null Guardians, 4.0, Ben 10
 #(Tag:alien)(Tag:beast)(Tag:flying)(Tag:group)(Tag:large-size)A pack of giant tentacled flying beasts from the Null Void that fire beam breaths and sense and track Mana/Energy signatures. You start with 1 guardian, gain more with higher maximum energy, and dead guardians recover over time.
 206. Herbie, 1.2, The Love Bug
 #(Tag:large-size)(Tag:mechanical)(Tag:tech)Herbie is a sentient self-driving Volkswagen Beetle with unusually great performance beyond what it should manage. He slowly repairs himself while unsummoned when damaged.
 207. Iron Golem, 2.8, Hota
 #(Tag:fighter)(Tag:golem)(Tag:group)(Tag:medium-size)Iron Golems forged from excellent craftsmanship and magic with high magic resistance, incredible defense, and strength to tear a grown person in half with ease. You start with 4 and can summon more scaling with your maximum energy and physical abilities.
-208. Diamond Golem, 4.1, Hota
-#(Tag:construct)Diamond Golems forged from incredible craftsmanship and lost magic, immune to most mundane arms below missiles and mostly immune to all magic below Epic tier. They can tear steel barehanded; you start with 4 and can summon more scaling with your maximum energy and physical abilities.
+208. Diamond Golems, 4.1, Hota
+#(Tag:construct)Heroes of Might and Magic III - Diamond Golems created from a mix of incredible craftsmanship and magic lost to the modern ages. Diamond Golems are unbelievably durable, being downright immune to most mundane arms below missiles and are mostly immune to all magic below Epic tier. They are also very capable of tearing steel with their bare hands. You start with 4 golems and are able to summon more the stronger you become.
 209. Regirock, 4.6, Pokemon
 #(Tag:earth)(Tag:fighter)(Tag:golem)(Tag:medium-size)Regirock is an ancient Pokemon formed from stones in Regigigas's image with incredible durability, great physical stats, destructive energy beams, and Geokinetic abilities. When damaged, it repairs itself by assimilating nearby rocks.
 210. Regice, 4.9, Pokemon
@@ -556,8 +556,8 @@
 #(Tag:beast)(Tag:fighter)(Tag:magician)(Tag:medium-size)Taomon is a fox-like wizard Digimon with formidable physical stats specializing in Onmyodo. She creates magical talismans for barriers and elemental attacks and draws constructs in the air with her paintbrush. (evolution does not exist)
 279. Skullgreymon, 3.7, Digimon
 #(Tag:large-size)(Tag:poison)(Tag:ranger)(Tag:tech)(Tag:undead)(Character)Skullgreymon is a monstrous undead Digimon devolved into a being of pure combat with strong instincts and a formidable giant physique. It is a living missile silo launching normal, toxic, tracking, and stronger missiles from its back plus paralyzing toxic breath, but lacks higher intellect and cannot execute complex orders or act independently without supervision.
-280. Golem Worker, 2.3, Generic
-#(Tag:construct)This is a crew of tireless iron golem workers skilled in Intermediate Mechanics and labour who can work without breaks but cannot fight. The summonable number depends on your maximum energy, with a minimum of 10.
+280. Golem Workers, 2.3, Generic
+#(Tag:construct)This is a crew of iron golem workers with skill in Intermediate Mechanics, and a knack for labour. The workers are tireless and can work on projects without break, but cannot engage in combat. The number of workers you can summon is dependent on your maximum energy, but the minimum is 10.
 281. Lilithmon, 4.6, Digimon
 #(Tag:character)(Tag:dark)(Tag:evolving)(Tag:humanoid)(Tag:infernal)(Tag:medium-size)(Tag:trickster)(Character)Lilithmon was once revered as a Goddess of darkness but is now reduced to level 1 with considerable physical ability and darkness magic. She unleashes potent corroding darkness and charming magic, and devours the mana of fresh corpses to recover and increase her power.
 282. Shademon, 2.6, Digimon
@@ -1200,3 +1200,89 @@
 #(Tag:anti-infernal)(Tag:infernal)(Tag:magician)(Tag:tactician)A jackal-headed fiend of the mercenary yugoloths, broker and enforcer for the lower planes. It turns its claws and its spellbook on demons and devils alike whenever the contract says so, and keeps meticulous ledgers of every soul it has traded. It serves you exactly as long as you keep paying.
 601. Quetzalcoatl the Wizard, 6.1, Q-UP
 #(Tag:character)(Tag:draconic)(Tag:magician)(Tag:reality-bender)A feathered serpent in a wizard's robes, and the last word in spellcasting: once in each battle he opens a small glowing zone somewhere on the field, and any ability or spell cast inside it is doubled in power, his, an ally's or an enemy's, because the zone takes no sides. Non-Locality cannot be moved or closed once it opens, so his battles are fought around the glow: he drags enemies into the zone, aims every spell he owns at it, and loses badly the moment a faster enemy claims it first.
+602. Scarecrow Farmers, 4.1, Generic
+#(Tag:golem)(Tag:group)(Tag:medium-size)(Tag:non-combatant)(Tag:worker)A group of animated Scarecrows who are greatly skilled at farming and forestry with their scythes and their untiring physiologies, however they are not very capable at combat despite their scary looks. You start with 5 farmers and acquire more as you become stronger.
+603. Diancie, 7.8, Pokemon
+#(Tag:character)(Tag:earth)(Tag:golem)(Tag:small-size)Diancie is a Mythical Pokemon of great power, in the form of a golem-like creature made of mineral and gems. Diancie has incredible defensive abilities and the ability to unleash blasts of energy from her gems, however her main ability is to gather and condense carbon from her surroundings(cannot affect living beings) to form diamonds and gems she can telekinetically control. And she is also adorable.
+604. Living Armor, 1.5, Generic
+#(Tag:incorporeal)(Tag:spirit)A special kind of spectral entity that has the ability to possess and animate armor and armor specifically, being able to move the armor as if they were living beings. The amount of force the Living Armor can exert depends on the quality of the armor it is given, it cannot possess armor that is being worn by another person.
+605. Typewriter Monkey, 1.5, Generic
+#(Tag:beast)(Tag:medium-size)(Tag:worker)Instead of giving a Monkey a typewriter and infinite time to write Shakesphere, they just decided to teach him instead. This Chimpanzee is incredibly well versed in literature, writing, storytelling, and creating a compelling narrative to the point where he could likely become a very famous author if given the platform to publish his works. He is also a chimpanzee and can still absolutely rip a grown mans head off.
+606. Princess Celestia, 6.2, My Little Pony
+#(Tag:character)(Tag:equine)(Tag:fire)(Tag:flying)(Tag:healer)(Tag:light)(Tag:magician)(Tag:medium-size)Princess Celestia is the former ruler of Equestria and an ancient Alicorn who embodies the Sun of Equestria. While she does not rule over the sun of your local world, Celestia has the ability to bring out her own projection of the sun that affects a large area, granting improved health recovery and promoting plant growth in the area it affects. In addition, Celestia has potent magical prowess, being able to conjure barriers or unleash scorching light and fire as well as general spells like telekinesis and dispel. In addition, she is quite a wise and intelligent ruler due to her longevity and experience in managing a world as chaotic as hers. Due to the nature of her existence, in a world with majority humanoids, she can also assume a human/humanoid form.
+607. Princess Luna, 6.1, My Little Pony
+#(Tag:character)(Tag:dark)(Tag:divine)(Tag:equine)(Tag:flying)(Tag:healer)(Tag:magician)(Tag:medium-size)(Tag:mental)Princess Luna is the former ruler of Equestria and an ancient Alicorn who embodies the Moon of Equestria. While she does not rule over the Moon of your local world, Luna has the ability to bring out her own projection of the Moon that affects a large area, bolstering natural energy regeneration and promoting mental recovery in the area it affects. In addition, Luna has potent magical prowess, specializing in manipulating the weather to bring forth mist and lightning and having the ability to see, enter and influence dreams. In addition, she is quite a wise and intelligent ruler due to her longevity and experience in managing a world as chaotic as hers. Due to the nature of her existence, in a world with majority humanoids, she can also assume a human/humanoid form.
+608. Rarity, 3.8, My Little Pony
+#(Tag:artisan)(Tag:character)(Tag:equine)(Tag:magician)(Tag:medium-size)Rarity is a Unicorn Pony from the world of Equestria, granting her notable physical and magical prowess. Her main skill is her extreme skill with fashion, sewing and creating outfits, being able to make incredible quality clothes in relatively short periods of time and is even skilled at gathering materials herself. She is also quite skilled at magic, specializing precise Telekinesis that she mostly uses to assist her in her work but can also fire off concussive beams, create illusionary objects, detect valuable gems, and make diamond like magical constructs to serve as barriers. Due to the nature of her existence, in a world with majority humanoids, she can also assume a human/humanoid form.
+609. Fluttershy, 3.6, My Little Pony
+#(Tag:character)(Tag:equine)(Tag:flying)(Tag:manipulator)(Tag:medium-size)Fluttershy is a Pegasus Pony from Equestria, granting her flight alongside notable Physical and Magical prowess and she embodies Kindness. While skill with magic is not outstanding, Fluttershy has incredible empathy and the ability to communicate with any sapient creature. Her natural affinity with all beasts is incredible, allowing her to employ diplomacy with and pacify almost any lesser creature capable of reasoning. Due to the nature of her existence, in a world with majority humanoids, she can also assume a human/humanoid form.
+610. Rainbow Dash, 4.0, My Little Pony
+#(Tag:air)(Tag:equine)(Tag:flying)(Tag:medium-size)Rainbow Dash is a Pegasus Pony from Equestria, which grants her flight alongside great physical prowess. Rainbow Dash is a Pegasus that is far above most of her peers and is extremely fast, more so than other Pegasi, being able to easily break the sound barrier from a starting position and being able to reach up to double digit mach by exerting herself, which paired with her great endurance makes her an excellent mount(given that you can survive riding at that speeds) or a ram. In addition, as a Pegasus, she can also manipulate weather to an extent due to being able to interact with clouds and aspects of the sky physically. Due to the nature of her existence, in a world with majority humanoids, she can also assume a human/humanoid form.
+611. Applejack, 3.3, My Little Pony
+#(Tag:artisan)(Tag:character)(Tag:earth)(Tag:equine)(Tag:medium-size)(Tag:nature)(Tag:worker)Applejack is an Earth Pony from Equestria, giving her considerable physical prowess and exceptional strength and endurance. Applejack is a very experienced farmer and herder who can manage entire farms and ranches while being able to make them prosper by herself in addition to being an excellent chef and baker. Her physical prowess is exceptional even among her fellow Earth Ponies, being able to shatter stone floors with her stomps and pull along massive boulders. Due to the nature of her existence, in a world with majority humanoids, she can also assume a human/humanoid form.
+612. Twilight Sparkle, 4.8, My Little Pony
+#(Tag:character)(Tag:equine)(Tag:magician)(Tag:medium-size)Twilight Sparkle is a Unicorn from Equestria, granting her considrable Physical and Magical Prowess. Twilight Sparkle is a dedicated Scholar and Scientist specializing in all magic, her unique talent in magic allows her to learn any kind of magic she can study and comes across, but due to her existing spells relying on the laws of Equestria, she does not have access to any of her existing spells. Despite that, she is still very experienced and talented with all forms of magic and has considerable magic power. Due to the nature of her existence, in a world with majority humanoids, she can also assume a human/humanoid form.
+613. Master Tigress, 2.7, Kung Fu Panda
+#(Tag:beast)(Tag:character)(Tag:fighter)(Tag:martial-artist)(Tag:medium-size)(Tag:mentor)Tigress is an anthropomorphic tiger and a master martial artist part of the famed Furious Five. Thanks to her Tiger physique, Tigress naturally has superhuman physical abilities and senses, further honed by her skill in martial arts and Wushu. She is both a formidable fighter and teacher.
+614. Master Oogway, 5.4, Kung Fu Panda
+#(Tag:character)(Tag:fighter)(Tag:healer)(Tag:martial-artist)(Tag:mentor)(Tag:reptilian)(Tag:small-size)Master Oogway is a humanoid turtle and is a Grandmaster of Martial Arts with few rivals. Despite his elderly age and unassuming size, he has formidable physical prowess, which coupled with his extreme mastery over almost all forms of martial arts from his universe as well as his incredible mastery over his internal energy, allowing him to use it to create barriers, enhance his attacks and heal others makes him an incredibly skilled fighter. However, despite all of that, Oogway is incredibly wise and is an excellent mentor both martially and spiritually. (A/N: Due to Spirit World being dependant on their native cosmology, Wush Hold and Spirit Banishment cannot be performed.)
+615. Master Viper, 1.9, Kung Fu Panda
+#(Tag:character)(Tag:fighter)(Tag:martial-artist)(Tag:reptilian)(Tag:small-size)Master Viper is a fangless snake but an incredibly skilled martial artist and a part of the furious five. Despite her stature and biology, she is strong enough to overpower a rhino and has incredibly dexterity and agility that makes her incredibly difficult to hit. Her fighting style focuses on dodging, constricting and grappling opponents with her unique physiology.
+616. Master Mantis, 3.0, Kung Fu Panda
+#(Tag:character)(Tag:fighter)(Tag:insectoid)(Tag:martial-artist)(Tag:small-size)Master Mantis is a small mantis who is in actually a very skilled martial artist and a part of the famed Furious Five. Despite his stature, Mantis is incredibly strong for his size, being able to lift several tons and is more durable than his appearance would suggest which coupled with his martial prowess makes him a fearsome fighter. His martial arts revolves around taking advantage of his size and size as well as the pressure points of his opponents, darting around with his small size and attacking with quick yet powerful strikes to disable opponents.
+617. Pegasus, 5.2, Generic
+#(Tag:air)(Tag:equine)(Tag:flying)(Tag:holy)(Tag:large-size)(Tag:light)Type Moon - Pegasus is a mighty Phantasmal Beast gifted to Medusa by Poseidon himself. It is a mythical monster on par with a dragon with exceptional resilience and magical resistance, alongside incredible speed and physical prowess. While gentle and kind in nature, Pegasus can cause great damage by releasing devastating shockwaves from their wings or charging forth while wreathing themselves and their rider in light to cause devastating damage like a massive arrow ripping through enemies.
+618. Bucephalus, 4.2, Generic
+#(Tag:electric)(Tag:equine)(Tag:fighter)(Tag:medium-size)Type Moon - Bucephalus is the trusted legendary mount of King Iskandar and may be descended from Zeus. This horse has incredible physical powess on power with a marrior and being able to trample steel underneath his hooves while gooing at speeds that wouldn't lose out to any modern transportation. In addition, this horse has the ability to gallop through the sky, and by unleashing his true name and borrowing energy from the rider, can wreath himself and the rider in electricity while raining down lightning with his stomps.
+619. Hippogriff, 4.8, Generic
+#(Tag:air)(Tag:avian)(Tag:beast)(Tag:flying)(Tag:large-size)Type Moon - The Hippogriff is a legendary phantasmal beast ridden by Bradamante and Astolfo in the form of an impossible mix of Horse and Eagle. Alongside its fearsome physical prowess, the Hippogriff can fly at incredible speeds and is an exceptional mount. In addition, Hippogriff has the ability to amplify it's "Impossible Existence" and phase out of existence for an instant along with its Rider by expending vast amount of the riders energy to phase through any attack.
+620. Trimmau, 4.6, Generic
+#(Tag:character)(Tag:golem)(Tag:informant)(Tag:medium-size)(Tag:shapeshifter)Type Moon - Trimmau is an Automaton/Golem formed out of the Volumen Hydrargyrum, an evershifting malleable mass of liquid mercury. She has considerable physical prowess thanks to being able freely control and shapeshift her mercury body, whether that is forming into weapons, dissipating herself into mist or liquid, shooting parts of herself as projectiles, turning herself into armor or shapeshifting to take on a different appearance. As her existence is the mercury itself, she can still control every drop of mercury independantly even if seperated. In addition, her mind is similar to that of a computer, being able to run complex calculations and store information well to assist her user. She can also be repaired if damaged by feeding her liquid mercury, altough she cannot surpass her original mass of 130kg. Do NOT let her watch the Terminator movies.
+621. Ruin, 3.3, Darksiders
+#(Tag:equine)(Tag:fire)(Tag:large-size)Ruin is the Phantom Horse of the Horseman of War, for what follow War but Ruin? Ruin is a large and extremely strong horse, with resilience to take punishment from angels and demons alike and still keep galloping alongside speed enough to outpace a car. Ruin is also capable of stomping with enough force to shatter steel, and, as a horse that is constantly on fire, it can breathe out flames and make explosions of flame by stomping. It is the dream mount for a warrior.
+622. Spectrier, 5.0, Pokemon
+#(Tag:dark)(Tag:equine)(Tag:medium-size)(Tag:necro)(Tag:spirit)Spectrier is a legendary pokemon resembling a horse of darkness. As a Legendary Ghost Pokemon, Spectrier shows great prowess when it comes to wielding its powers over shadows, such as unleashing shadow balls, hexes, soul targeting attacks, and rays of dark energy alongside its ability to move incredibly fast. In addition, Specterier has the unique ability to drain energy from nearby sleeping or unconscious creatures to temporarily strengthen itself and its rider temporarily.
+623. Glastrier, 4.4, Pokemon
+#(Tag:equine)(Tag:fighter)(Tag:ice)(Tag:medium-size)Glastrier is a Legendary Pokemon in the form of a cool Icy Horse. Glastirier has exceptional physical prowess and resilience which it takes advantage of along with its power over Ice which allows it to unleash freezing breaths, icicles, hails and freezing stomps to dominate opponents. While it is not known for its speed, Glastrier is still far faster than a regular horse.
+624. Skaven Clan, 4.2, Warhammer
+#(Tag:artisan)(Tag:beast)(Tag:fighter)(Tag:group)(Tag:medium-size)(Tag:ranger)(Tag:worker)Your very own small Skaven Clan yes-yes, this clan contains roughly 100 full grown Skaven, which are a race of humanoid rats that are born ruthless opportunists that reproduce incredibly quickly, a female Skaven can give birth to a litter of dozen and a Skaven can reach adulthood and sexual maturity in weeks rather than years. While normally Skaven are not that much stronger than a regular human, their short lifespans they learn quickly and your Clan may have Skaven with notable talents such as mechanics, assasins, builders, and even chemist/alchemist Skaven.(A/N: Skaven are not connected to, or have access to the Warp)
+625. Lizardmen, 3.3, Overlord
+#(Tag:artisan)(Tag:fighter)(Tag:group)(Tag:magician)(Tag:medium-size)(Tag:ranger)(Tag:reptilian)(Tag:worker)A small tribe of Lizeardmen at your command, a Lizardman is a large bipedal lizard roughly the size of a man but with enhanced strength and resilience on account of their tougher hide and scales as well as they maws and claws, they are also capable of thriving in wetlands and have night vision but are vulnerable to cold and cold climates. You start off with 20 Lizardmen and can acquire more as you become stronger. While the Lizardmen are average, unique individuals among them may discover talents like affinity for magic or combat.
+626. Skeletal Dragon, 2.2, Overlord
+#(Tag:draconic)(Tag:large-size)(Tag:undead)The Skeletal Dragon is a large dragon-like entity consisting of hundreds of skeletons fused into the shape of a dragon, it has considerable strength and resilience as well as the ability to fly as it's figure would suggest, but it's main ability is that it's body nullifies all attacks and effects from Magic or Elemental attacks below Epic rank and has the ability to heal from Dark and Necro effects. However, it's physical defences are nowhere near as powerful as it's magical defence.
+627. Cocytus, 6.0, Overlord
+#(Tag:character)(Tag:fighter)(Tag:ice)(Tag:insectoid)(Tag:large-size)(Tag:martial-artist)Cocytus is a large four armed insectoid warrior, dubbed the Ruler of Frozen Rivers. Cocytus, as a Fighter, Weapon Master and a Knight possesses extreme physical abilities and an incredibly hard and durable armor like exoskeleton over his body that provides him with excellent protection. Cocytus has the ability to passively and actively emit incredible cold from his body that he can use to freeze over the land or his opponents. However, his main ability is his incredible mastery over all forms fo weapon combat, whether is halbers, swords, spears, rapiers, any weapon that he can wield he can display extreme skill with and utilize a variety of skills that take advantage of them. While he does not come equipped with his gear, any weapon he is given, he can make the most out of.
+628. Death Knights, 3.0, Overlord
+#(Tag:fighter)(Tag:group)(Tag:medium-size)(Tag:undead)Your very own squad of Death Knights, fabled as powerful undead clad in heavy armor wielding greatswords and shields the size of a grown man. The Death Knight's have formidable combat ability, being able to cleave a grown man in half with ease and being able to withstand a cannonball without flinching, and despite their stature they are fairly fast. In addition, the Death Knights have the ability to unconditionally survive a single lethal blow and still keep fighting for once a day. If a weaker living target is slain by a death knight, they can end up as ghouls or squires under the Death Knights command, but the Death Knight can only command a limited amount of them. You start with 4 Death Knights and acquire more as you become stronger.
+629. Eevee, 3.0, Pokemon
+#(Tag:beast)(Tag:evolving)(Tag:small-size)Eevee is a small adorabke Fox/Cat/Dog like pokemon who specializes in being absolutely adorable and cute who can also bite pretty hard if need to. But the signature capability of the Eevee is it's ability to evolve into a variety of different evolutions depending on the enviroment and element it is exposed to due to its unstable genetic code. Such as evolving into their fire variant of Flareon when being exposed to hot and flamey enviroments for long enough or turning into Sylveon after being loved enough etc.
+630. Kiriha, 4.0, Tsugumomo
+#(Tag:character)(Tag:fighter)(Tag:humanoid)(Tag:linked)(Tag:small-size)(Tag:spirit)Kiriha is an ObiTsugumomo, a spiritual creature born from an object that developed a soul over time. As a Tsugumomo, Kiriha can bond with an owner and allow them to wield her. Her powers are that of being an Obi that the user can freely manipulate and shape, the obi itself possessing substantial strength, being able to be woven into layered shields, drills, and even armor over the user etc the toughness and strength of the Obi scale with the user's power level. Due to her nature as a Tsugumomo, her powers scale with the level of power her user possesses.
+631. Kyouka, 4.7, Tsugumomo
+#(Tag:air)(Tag:character)(Tag:humanoid)(Tag:linked)(Tag:magician)(Tag:medium-size)(Tag:spirit)Kyouka is a Flute Tsugumomo, a spiritual creature born from an object that developed a soul over time. As a Flute Tsugumomo, Kyouka can bond with an owner to allow them to use her object form and empower her. Her abilities revolve around soundwaves, allowing her and the user to send out devastating soundwaves and shockwaves by imbuing the flute with their energy and playing it. These abilities can also be used to map out areas like a sonar or use soundwaves to forcefully elevate their physical abilities. Due to her nature as a Tsugumomo, her powers scale with the level of power her user possesses.
+632. Oni Squad, 2.8, Generic
+#(Tag:fighter)(Tag:group)(Tag:infernal)(Tag:medium-size)A gang of towering Oni under your command. Oni being Japanese demons with the strength of 10 men, being able to easily crush a grown man with their club or bite their heads off. You start with 5 Oni and acquire more as you get stronger.
+633. Chupacabra, 0.8, Generic
+#(Tag:beast)(Tag:small-size)A chupacabra, a legendary american animal that eerily resembles a skinless dog or coyote with sharp spines. Despite its status in culture, it is ultimately not more capable than a fierce dog.
+634. Cumulonimbus Friend, 5.0, Generic
+#(Tag:air)(Tag:electric)(Tag:flying)(Tag:ice)(Tag:spirit)(Tag:titanic-size)(Tag:water)This familiar takes the form of a massive cloud hanging in the air, and as a massive cloud they are capable of unleashing rain, storm, winds, hail, and even lighting on a wide area, but are mostly useless indoors.
+635. Mender Slime, 3.7, Generic
+#(Tag:amorphous)(Tag:bio)(Tag:healer)(Tag:medium-size)A large pink slime that has the ability to absorb and dissolve dead animals/monsters/people and store it, and also has the ability to use that dissolved bio-goo to heal those who enter its body. The higher quality corpses, the higher quality bio goo.
+636. Tactical Squad, 3.8, Generic
+#(Tag:group)(Tag:medium-size)(Tag:ranger)(Tag:tech)A squad of mannequins with the physical abilities of a peak human clad in tactical equipment from base earth, ranging from shotguns, bulletproof shields, rifles, pistols, etc. with decent aim and skill at handling them.You start with 10 Golems and acquıire more as you get stronger. When they die or leave, their equipment leaves with them.
+637. Avatar of Greed, 5.3, Generic
+#(Tag:evolving)(Tag:golem)(Tag:large-size)(Tag:meta)A large golem made of gold, in its base state, the golem is inactive, but if the golem is fed 100g in gold or monetary equivalent, it will become active, possessing the physical abilities of a regular grown man. Every subsequent sacrifice of 100g in gold or equivalent will permanently strengthen it with the strength and endurance of a grown man again.
+638. Cleanup Crew, 2.1, Generic
+#(Tag:instance-familiar)(Tag:medium-size)(Tag:non-combatant)(Tag:worker)It's the cleanup crew! A squad of mannequins clad in heavy duty hazmat suits wielding heavy duty cleaning supplies. Whenever summoned, these golems will do their best to clean up whatever you need them to, a room that a slaughter happened in? Pristine in 30 minutes. An old decrepit dungeon? 1 hour tops. This Crew are the best cleaners there are. But have zero combat ability and if killed, will be unable to be summoned for 24 hours. When they die or leave, their equipment leaves with them.
+639. Brown Minions, 2.0, Overlord
+#(Tag:fighter)(Tag:group)(Tag:infernal)(Tag:small-size)The Brown Minions are short, cruel little creatures that are ruthless and ferocious fighters who can more than contend with humans and other humanoids despite their small stature. They are also naturally able to wield most forms of melee weapons even if they have never held any before. You start with 10 Brown Minions, and you can acquire more minions by sacrificing the lifeforce of those you kill to the corpses in your familiar space.
+640. Red Minions, 2.3, Overlord
+#(Tag:blaster)(Tag:fire)(Tag:group)(Tag:infernal)(Tag:small-size)The Red Minions are cruel imp like creatures of short stature. Despite their size, their strength is still even with that of most men. In addition, the Red Minions have the ability to absorb fire and store it in their body to regurgitate it later in the form of fireballs and other projectiles. This means they are also immune to heat and fire. You start with 10 Red Minions, and you can acquire more minions by sacrificing the corpses of those you kill to the spawner in your familiar space.
+641. Green Minions, 2.5, Overlord
+#(Tag:fighter)(Tag:group)(Tag:infernal)(Tag:small-size)(Tag:trickster)The Green Minions are cruel green creatures of short stature. Despite their small size, they are vicious and ruthless ambush fighters who excel at sneaking. Their main power is their ability to become invisible and unsmellable while standing still and also being immune to all forms of poisons. Even if they absolutely smell rancid. You start with 10 Green Minions, and you can acquire more minions by sacrificing the corpses of those you kill to the spawner in your familiar space.
+642. Blue Minions, 3.4, Overlord
+#(Tag:group)(Tag:healer)(Tag:infernal)(Tag:magician)(Tag:small-size)The Blue Minions are cruel fishmen like creatures of short stature. Despite their size, they are fairly strong and the Blue Minions specialize in throwing magical projectiles and animating their dead. The Blue Minions have the ability to resurrect their fellow familiars as long as they are Rare Rank and below, the stronger the Familiar, the more time and more Blue Minions you need to resurrect them. You start with 10 Blue Minions, and you can acquire more minions by sacrificing the corpses of those you kill to the spawner in your familiar space.
+643. Minions, 4.2, Overlord
+#(Tag:blaster)(Tag:fighter)(Tag:fire)(Tag:group)(Tag:infernal)(Tag:magician)(Tag:small-size)(Tag:trickster)The Minions are useful creatures for any aspiring Overlord to have, these small imp like creatures are stronger than grown despite their looks and are utterly ruthless. You can produce 4 types of Minions. Brown Minions who specialize in direct melee combat. Red Minions who specialize in throwing flames for ranged combat. Green Minions who specialize in sneaking and assasination. Blue Minions who specialize in throwing magical projectiles and resurrecting familiars(Max Rare Familiars). You start with 25 minions of each type and can spawn more by sacrificing corpses to the spawner in your Familiar Space. The cost of producing a Minion is increased in order of top to bottom.
+644. Filth, 0.5, Ultrakill
+#(Tag:infernal)(Tag:medium-size)A filth, a singular one. A tortured, mutilated, armless distorted former human plucked out of hell. They aren't very strong or useful. But can serve as a freaky lil' pet.

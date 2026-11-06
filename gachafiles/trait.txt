@@ -27,7 +27,7 @@
 14. Battle Continuation, 4.6, Generic
 #(Tag:martial)(Tag:mind)(Tag:survival)You fight through wounds, exhaustion, and injuries without dulling pain, and you recover fine as long as the wound is not lethal and you can still stand.
 15. Mountman, 2.5, Generic
-#You ride any vehicle as if you have years of experience with it.
+#(Tag:deleted)You ride any vehicle as if you have years of experience with it.
 16. Magic Resistance, 4.5, Generic
 #(Tag:magic)(Tag:magic-resistance+)You naturally resist magic and all magical effects, scaling with your energy level.
 17. Energy Acceleration, 4.4, Generic
@@ -61,21 +61,21 @@
 31. Animal Lover, 1.9, Generic
 #(Tag:nature)(Tag:social)Mundane animals like you, and non-mundane ones warm to you more easily.
 32. Taming Specialist, 2.6, Generic
-#You are skilled at turning wild animals into domesticated ones.
+#(Tag:deleted)You are skilled at turning wild animals into domesticated ones.
 33. Bitch Breaker, 2.9, Generic
 #(Tag:nsfw)(Tag:social)(Nsfw) You expertly correct bad attitudes through sex.
 34. Sunshine Charm, 2.4, Generic
 #(Tag:social)You exude goodness and purity, so good-aligned beings like you more and you more easily convince others you are doing good.
-35. Bad Boy/Girl Charm, 2.4, Generic
-#(Tag:mental)(Tag:social)You carry a raw bad boy/girl edge that attracts emos and edgy people, and your rudeness more often comes across as cool.
+35. Maverick Charm, 2.4, Generic
+#(Tag:mental)(Tag:social)You have that raw bad boy/girl edge, it is easier for you to earn the affection and admiration of rebellious people and goths. In addition, acts of rudeness are more likely to come across as cool or charming.
 36. I Know a Guy, 5.0, Generic
-#Once every 30 days, you retroactively rewrite reality to know someone who can help with your current situation. That person must already exist and not be a full tier above you in power. You do not choose who they are, only that you learn you know someone who can help.
+#(Tag:deleted)Once every 30 days, you retroactively rewrite reality to know someone who can help with your current situation. That person must already exist and not be a full tier above you in power. You do not choose who they are, only that you learn you know someone who can help.
 37. Serene Grace, 3.4, Generic
 #(Tag:mind)(Tag:social)You project a noticeable aura of refinement and grace that calms those around you.
 38. Voice, 3.1, Generic
 #(Tag:sound+)(Tag:talent)You have a powerful, versatile voice that can be loud, quiet, smooth, rugged, feminine, masculine, and more. It boosts the power of voice-based abilities.
 39. Tough Skin, 2.2, Generic
-#(Tag:body)(Tag:defence+)Your skin is abnormally tough, enhancing your durability beyond the norm.
+#(Tag:body)(Tag:defence+)(Tag:deleted)Your skin is abnormally tough, enhancing your durability beyond the norm.
 40. Fire Resistance, 3.5, Generic
 #(Tag:fire)(Tag:fire-resistance+)You resist fire and fire-based effects and attacks. This resistance scales with your basic stats.
 41. Water Resistance, 3.2, Generic
@@ -107,11 +107,11 @@
 54. Perfumer, 1.2, Generic
 #(Tag:lifestyle)You have no distinct scent and smell like whatever the person smelling you likes.
 55. Magpie's Eye, 2.4, Generic
-#(Tag:ocular)(Tag:sense)You spot treasure and valuables very easily, with treasures in sight highlighted.
+#(Tag:deleted)(Tag:ocular)(Tag:sense)You spot treasure and valuables very easily, with treasures in sight highlighted.
 56. Iron Palate, 3.1, Generic
 #(Tag:poison-resistance+)You can eat and digest just about anything that is not lethal poison to you.
 57. Prophecy, 6.7, Generic
-#(Tag:divination)(Tag:time)You see the future in your dreams, with or without your consent.
+#(Tag:deleted)(Tag:divination)(Tag:time)You see the future in your dreams, with or without your consent.
 58. Winner Takes All, 5.0, Generic
 #(Tag:rule)When you win against someone, you can force them to grant you a reward proportional to your victory. Minor victories yield minor rewards, while a fight to the death yields a reward equal in value to their life. The reward must be something they are capable of granting.
 59. Natural Scent, 2.4, Generic
@@ -158,10 +158,10 @@
 #(Tag:energy-regeneration+)(Tag:maximum-energy+)Your energy reserves and recovery speed are greater than average.
 80. Breathless, 2.1, Generic
 #(Tag:body)Your body does not need to breathe but still gains all breathing benefits even in airless environments. You can also speak without air.
-81. Red Tear, 3.5, Generic
-#Whenever you are near death, your energy output and strength increase considerably until you are no longer in danger or are healed.
+81. Urgency, 3.5, Generic
+#"Hurry up or die" the closer to death you are, the faster and more agile you become. In addition, injuries are less likely to be able to hinder your mobility.
 82. Blue Tear, 3.4, Generic
-#Whenever you are near death, your energy output, defense, and resistance increase considerably until you are no longer in danger or are healed.
+#(Tag:deleted)Whenever you are near death, your energy output, defense, and resistance increase considerably until you are no longer in danger or are healed.
 83. Magician, 4.1, Generic
 #(Tag:magic)(Tag:talent)You are a natural-born Magician who learns, understands, and develops magic far faster with unique intuition for it.
 84. Pugilist, 4.4, Generic
@@ -218,8 +218,8 @@
 #(Tag:nsfw)(Tag:rule)(Nsfw) Your partners feel no discomfort from your physical features; your anatomy somehow fits them even at ludicrous sizes.
 110. Salt Detection, 0.1, Generic
 #(Tag:perception+)You sense the location of salt, but only salt ready for human consumption.
-111. Commander, 3.6, Generic
-#(Tag:command)You exert authority and receive obedience from subordinates more effectively, and you organize, manage, command, and sustain their morale better.
+111. Leader, 3.6, Generic
+#(Tag:command)You are a natural leader, you are better at exerting your authority and receiving obedience from your subordinates. In addition, you are better at organizing, managing, and commanding personnel as well as managing their morale.
 112. Healing... Fluids, 3.7, Generic
 #(Tag:body)(Tag:health-recovery)Your sweat, saliva, and cum heal others, scaling with your physical stats. The effect is mild but real, someone can lick sweat off your abs to heal.
 113. Blessed Child, 3.5, Generic
@@ -230,8 +230,8 @@
 #(Tag:perception+)Your awareness far exceeds average; you easily detect problems in your body, resist surprise, and read your surroundings.
 116. Avian Ally, 2.5, Generic
 #(Tag:avian)(Tag:social)(Tag:talent)You share great affinity with birds, avians, and aligned creatures, earning their affection, favor, and relationships more easily. All flight also feels more natural and costs less energy to maintain.
-117. Thick Skin, 2.1, Generic
-#(Tag:body)Your skin is far denser and tougher than average yet smooth and pleasant to touch, scaling with your physical stats to serve as natural armor at higher levels.
+117. Tough Skin, 2.1, Generic
+#(Tag:body)Your skin is way denser and tougher than the average persons, yet it is very smooth and nice to touch. This toughness scales with your physical stats, being able to serve as natural armor at higher levels.
 118. Strong Legs, 2.4, Generic
 #(Tag:body)(Tag:strength+)Your legs are stronger and tougher than average, slightly increasing your speed and substantially boosting your kick power.
 119. Pyromaniac, 4.8, Generic
@@ -255,7 +255,7 @@
 128. Dramatic Tumbleweed, 0.3, Generic
 #(Tag:lifestyle)During tense, dramatic moments like standoffs, a stray tumbleweed passes dramatically between you and your opponent. It fades from existence the moment it stops being observed.
 129. Herbalist, 2.1, Generic
-#You hold vast knowledge of plants, discerning a plant's function and origin by sight, and you can make basic medicines.
+#(Tag:deleted)You hold vast knowledge of plants, discerning a plant's function and origin by sight, and you can make basic medicines.
 130. Feline Friend, 2.9, Generic
 #(Tag:agility+)(Tag:social)You share great affinity with cats, tigers, felines, and aligned creatures, earning their affection, favor, and relationships more easily. Your feline affinity also grants unusual flexibility, heightened balance, and slightly improved reflexes.
 131. Sexual Calibration, 2.3, Generic
@@ -303,7 +303,7 @@
 152. Constant, 5.3, Generic
 #(Tag:meta-resistance+)You are a constant; your body cannot be changed by outside influences without your consent (such as soul manipulation or biomancy, not regular attacks). You are immune to paradoxes, and only one of you exists since you cannot be cloned or replicated.
 153. Master Rider, 4.2, Generic
-#You master riding any mount; when mounted, your senses link and you communicate your intentions to your mount instantly.
+#(Tag:deleted)You master riding any mount; when mounted, your senses link and you communicate your intentions to your mount instantly.
 154. Dragon Rider, 4.4, Generic
 #(Tag:draconic)(Tag:social)(Tag:summon+)(Tag:talent)You are destined to ride dragons; all dragons view you more favorably and grant their affection far more easily.
 155. My Master, 3.2, Generic
@@ -354,8 +354,8 @@
 #(Tag:luck+)(Tag:nsfw)(Nsfw)(Noncon) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find someone changing.
 178. Spirit Affinity, 3.0, Generic
 #(Tag:spirit)(Tag:spirit+)You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
-179. Immortal Soul, 4.9, Generic
-#(Tag:spirit)Your soul is immortal; it can be wounded and shattered but never annihilated while you possess energy.
+179. Resilient Soul, 4.9, Generic
+#(Tag:spirit)Your soul is unsually tough and resilient, capable of enduring extreme amounts of punishment, even if torn apart, it can still somehow endure as long as it is not completely broken. This also has the affect of allowing you to persist for some time longer even if your vitals are damaged.
 180. Last Stand, 3.5, Generic
 #(Tag:physical+)When your health drops to 10% or you stand on the brink of death, your physical stats increase by a stage.
 181. Lord Death of Murder Mountain, 4.5, Generic
@@ -378,20 +378,20 @@
 #(Tag:dark+)(Tag:infernal)(Tag:infernal+)(Tag:physical+)(Tag:social)(Tag:summon+)You are a Demon Lord; all your Darkness and Unholy magic and abilities strengthen alongside your physical stats, increased further if your race is demonic or infernal. You greatly resist all Darkness and Unholy attributes. Demonic/Infernal beings serve you more readily and obey your authority more easily, and those under your service or command are easier to command and manage and gain minor buffs from you.
 190. Item Warranty, 3.5, Generic
 #(Tag:meta)Your gacha items carry a warranty; if equipment you own breaks beyond effective use, within 24 hours it and all its parts are replaced with a perfect replica, as long as it was not traded or given away. This applies only to breakage during intended use, not sacrifice, smelting, destruction during modification, etc., and not to consumables.
-191. Hero Time, 4.7, Generic
-#(Tag:time)You can activate this only once a week; when fighting to protect someone, all your enhancement abilities receive a full rank boost.
+191. Heroic Guardian, 4.7, Generic
+#(Tag:time)Whenever you are fighting to protect one or more people weaker than you, all physical abilities are increased, and physical and magic resistance is further increased.
 192. In Time of Need, 4.0, Generic
-#(Tag:time)-A Hero arises. Once every 120 hours, you restore your stamina and energy to full, but hours afterward you become extremely exhausted.
-193. Seamster, 2.3, Generic
-#You are naturally talented at sewing; you spot flaws in clothing and easily make or fix garments.
+#(Tag:deleted)(Tag:time)-A Hero arises. Once every 120 hours, you restore your stamina and energy to full, but hours afterward you become extremely exhausted.
+193. Armorer, 2.3, Generic
+#You have the makings of an armorer about you. Your natural talent in creating armor with your skills is increased. In addition, any armor you wear no longer inhibits your mobility or flexibility and also automatically adjusts to a perfect fit on your body.
 194. Wrath Made Manifest, 6.6, Generic
-#You are wrath given form; all your physical stats increase the angrier you get, capping at Epic Rank.
+#(Tag:deleted)You are wrath given form; all your physical stats increase the angrier you get, capping at Epic Rank.
 195. Pride King, 6.6, Generic
 #(Tag:rule)Your existence is oppression; in your presence, any creature below Epic rank has all energy lowered by one rank, and anyone more than two ranks below you cannot breathe without your permission.
 196. Gluttonous Abyss, 6.6, Generic
 #(Tag:energy-recovery)(Tag:growth+)(Tag:maximum-energy+)You extract energy from any object you eat to permanently increase your own energy reserves.
 197. Free Flier, 1.6, Generic
-#You master flight; flying is as natural as walking or breathing while you are capable of flight, and your ability-based flight costs less energy.
+#(Tag:deleted)You master flight; flying is as natural as walking or breathing while you are capable of flight, and your ability-based flight costs less energy.
 198. Stable, 2.6, Generic
 #(Tag:perception+)(Tag:talent)You never lose your balance short of your legs being sheared off.
 199. Zenkai Boost, 5.6, Generic
@@ -513,7 +513,7 @@
 257. Alluring Whisper, 2.8, Generic
 #(Tag:nsfw)(Tag:talent)(Nsfw) You possess a smooth, alluring top-tier singing voice that impresses even the pickiest listeners and sounds more convincing. It enhances your voice-based abilities.
 258. Charisma, 2.5, Generic
-#(Tag:social)You project a charismatic aura that draws people in and elevates you in their eyes.
+#(Tag:deleted)(Tag:social)You project a charismatic aura that draws people in and elevates you in their eyes.
 259. Sensual Presence, 3.6, Generic
 #(Nsfw) You project a subtle sensual presence that increasingly attracts and arouses those exposed to it. It only affects people friendly to you.
 260. Harem Keeper, 2.7, Generic
@@ -621,7 +621,7 @@
 311. Transhuman, 3.4, Generic
 #(Tag:body)(Tag:talent)You are transhuman, whatever your race. Genetic and mechanical augments work exceptionally well on you, and you suffer no penalty for changing race or installing cybernetics.
 312. All Trades, 3.9, Generic
-#You hold basic mastery over all mundane skills and mild talent in every field, cooking without burning eggs, basic mechanics, dancing without tripping, wielding a sword without cutting yourself.
+#(Tag:deleted)You hold basic mastery over all mundane skills and mild talent in every field, cooking without burning eggs, basic mechanics, dancing without tripping, wielding a sword without cutting yourself.
 313. Paper Trail, 1.8, Generic
 #(Tag:rule)(Tag:social)You and your familiars always carry the relevant papers. You can reach into your pocket and find whatever legal identification you need.
 314. No Strangers, 2.1, Generic
@@ -637,9 +637,9 @@
 319. Musk, 2.0, Generic
 #(Tag:nsfw)(Tag:social)(Nsfw) Your scent smells very good and slightly arousing.
 320. No Enemies, 4.8, Generic
-#Everyone you meet forms a good impression of you once they get to know you, even evil dictators, violent murderers, or mindless beasts. This only works on named characters.
+#(Tag:deleted)Everyone you meet forms a good impression of you once they get to know you, even evil dictators, violent murderers, or mindless beasts. This only works on named characters.
 321. My Friend Now, 5.5, Generic
-#Everyone you meet starts friendly toward you unless they already hold a preconceived opinion of you. You can share a drink with even Thanos or Death itself.
+#(Tag:deleted)Everyone you meet starts friendly toward you unless they already hold a preconceived opinion of you. You can share a drink with even Thanos or Death itself.
 322. Uchiha, 6.0, Naruto
 #(Tag:bloodline)(Tag:fire)(Tag:fire+)(Tag:martial)(Tag:maximum-energy+)(Tag:power)(Tag:talent)You carry Uchiha Clan blood, granting you increased Martial Talent, Energy Reserves, and Fire Affinity. You can potentially unlock a Natural Sharingan (Epic Ability) that costs no ability slot. (Does not give Chakra)
 323. Uzumaki, 6.4, Naruto
@@ -773,7 +773,7 @@
 387. Avaricious Greed, 7.2, Generic
 #(Tag:meta)More, more, more: you cannot get enough, as the restock timers and cooldown of all your items drop by 100x.
 388. Blood Demon, 5.4, Demon Slayer
-#(Tag:blood)(Tag:infernal)You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
+#(Tag:blood)(Tag:deleted)(Tag:infernal)You are a demon transformed by Muzan's blood with a superhuman physique and biological immortality. You suffer lethal harm from sunlight and the light attribute, develop your own demon blood art equal to an Uncommon rank ability, and must consume humans or starve to death.
 389. Progenitor Demon, 6.9, Demon Slayer
 #(Tag:health-regeneration+)(Tag:infernal)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:survival)You are a progenitor sharing all of Muzan Kibutsuji's powers with free shapeshifting, extremely powerful regeneration, and superhuman physical abilities. You turn others into demons with your blood, but sunlight is extremely lethal to you.
 390. Regenerative, 4.7, Generic
@@ -1230,12 +1230,12 @@
 #(Tag:meta)Your genetics are highly variable: you toggle racial traits at will, either returning to your original race or becoming 100% of another race trait you own, and back.
 615. Firebending, 5.1, Avatar
 #(Tag:electric)You have natural talent as a Firebender, naturally producing and bending fire. Its potency depends on your natural attunement, martial-arts skill, and energy levels. Skilled enough users generate and direct electricity. Potency follows the sun: weaker at night, stronger by day, unusable during an eclipse.
-616. Earthbending, 5.2, Avatar
-#(Tag:earth)You have natural talent as an Earthbender, bending and controlling Earth. Its potency scales with your attunement to Earth, martial-arts skill, and energy levels. Skilled enough users sense Earth through tremors and manipulate impure metals and lava.
-617. Waterbending, 6.2, Avatar
-#(Tag:healing)You have natural talent as a Waterbender, bending and controlling Water. Its potency scales with your attunement to Water, martial-arts skill and finesse, and energy levels. Skilled enough Waterbenders transform water into ice and heal wounds with bending, and some bend the blood of those weaker than them. Potency follows the moon: strongest at night and full moon, weaker by day.
-618. Airbending, 5.8, Avatar
-#You have natural talent as an Airbender, manipulating and bending Air. Its potency scales with your attunement to Air, martial-arts skill, mentality, and energy levels. Skilled enough Airbenders achieve flight, bend air from lungs, and sense vibrations through air.
+616. Earthbender, 5.2, Avatar
+#(Tag:earth)You have natural talent as an Earthbender, allowing you to bend and control Earth through Earthbending; the potency of your Earthbending scales with your attunement with the Earth, your skill in martial arts, and your energy levels. Skilled enough users of Earthbending can sense the Earth through tremors and even manipulate impure metals and lava.
+617. Waterbender, 6.2, Avatar
+#(Tag:healing)You have natural talent as a Waterbender, allowing you to bend and control Water through Waterbending; the potency of your Waterbending; the potency of your waterbending scales with your attunement with Water, your skill in martial arts and finesse, and your energy levels. Skilled enough Waterbenders can even transform water into ice and heal wounds with their bending... and some might even be able to bend the blood of those weaker than them. The potency of Waterbending is also affected by the position of the moon; it is at its strongest during the night and a full moon and weaker during day.
+618. Airbender, 5.8, Avatar
+#You have natural talent as an Airbender, allowing you to manipulate and bend Air through Airbending, the potency of your Airbending scales with your attunement to Air, your skill in martial arts, your mentality, and your energy levels. Skilled enough Airbenders can achieve flight and even bend air out of someone's lungs; they can also sense vibrations through the air.
 619. Hypertrophic Mechanic, 4.4, Generic
 #(Tag:growth+)(Tag:tech)(Tech) Whenever you use machinery or sufficiently complex technology, it develops hypertrophy. After use, letting it rest or repairing it makes it slightly more robust and powerful. Slow and steady wins the race.
 620. Item Hypertrophy, 5.3, Generic
@@ -1438,3 +1438,59 @@
 #A human computer: perfect computation, recall, and projection from available data, lips stained with sapho. You need the data first; garbage in, gospel out.
 719. Bene Gesserit Conditioning, 8.8, Dune
 #Prana-bindu body control, truth-sense, and the Voice: pitch-perfect vocal command that the unprepared cannot disobey. Strong minds, the deaf, and recording-equipment operators are immune.
+721. Concealed Carry, 2.0, Generic
+#(Tag:rule)Allows you to fit so many weapons under your clothes and appropriate body parts, do not ask how. You can fit the Buster Blade under your skirt, put a Katana in your pocket, fit an M1 Garand in between your chest, or even pull a literal weapon out your ass. The amount you can conceal carry is equal to your carry weight and do not weigh you down.
+722. Animal Understanding, 2.3, Generic
+#(Tag:nature)(Tag:social)When it comes to animals, beasts and monsters, you have a natural grasp of their intent and actions, understanding their body language and attitude as if you were the same species as them.
+723. Open Carry License, 1.7, Generic
+#(Tag:social)What? Going into a hospital with a sword or a gun is illegal? Preposterous. You are now allowed to take your weapons anywhere with you, it is legally allowed for you and you specifically. However this license does not cover the consequences of using the weapons.
+724. Technician, 4.2, Generic
+#(Tag:meta)(Tag:power+)The power of your abilities ranked Common and below are greatly empowered.
+725. Sparda, 6.7, Generic
+#(Tag:bloodline)(Tag:infernal)(Tag:infernal+)(Tag:talent)Devil May Cry - The blood of Sparda runs through your veins, marking you as one his Descendants. As a Sparda, your natural potential is massively enhanced and you can naturally convert your energy into Infernal Energy. In addition, with training and the proper awakening, you can further unlock the powers of your bloodline and unlock your very own Devil Trigger(Epic Ability).
+726. Future Fog, 2.7, Generic
+#(Tag:divination-resistance+)You are immune to your future getting seen, as it is obscured by a fog of chaos. All forms of precognition, prophecy and future telling that targets you specifically is denied. The more the future someone is trying to tell involves you, the more unreliable it is.
+727. Stalwart, 3.4, Generic
+#(Tag:defence+)"I can do this all day" the closer to death you are, the greater your physical resilience. In addition, your vital organs are less likely to shut down from injuries.
+729. Seniority, 2.7, Generic
+#(Tag:social)You are their senior. When interacting with someone younger than you, they are more likely to see you as reliable and trustworthy. It is also easier to exert authority over people who are less experienced than you in a particular field.
+730. Equine Equity, 2.0, Generic
+#(Tag:social)(Tag:summon+)You are a friend to Horse and Equine folk alike, making it easier to build rapport and relationhips with them. In addition, when riding an Equine, the stats of that equine are slightly increased and you can instinctually communicate with them without speaking while mounted.
+732. Xenophile, 4.3, Generic
+#(Tag:social)You are a Xenophile, making it easier for you to understand and reason better with beings of species other than yours that have Sapience and High Order Cognition. In addition, it is easier to build rapport and relationships with them and earn their affection and companionship.
+734. Newton, 2.5, Generic
+#(Tag:gravity+)"Watch out for apples!" The potency of all Gravity abilities are increased and consuming an apple strengthens Gravity abilities even further for 10 minutes.
+735. E Pluribus Unum, 5.7, Generic
+#(Tag:meta)(Tag:physical+)(Tag:power+)”From Many to One” for every Familiar that you possess that you do not have manifested, you receive a boost to your Physical abilities and the potency of all of your abilities are raised slightly scaling with the rarity of the familiars you do not have manifested.
+736. Arousal Arousal, 2.6, Generic
+#(Tag:nsfw)(Tag:social)You are able to project your sexual arousal loud and clear like an aura around yourself, allowing the people around you to simply instinctively feel just simply how aroused you are and it may also affect their excitement in return.
+737. Eternal Youth, 2.9, Generic
+#(Tag:lifestyle)You have eternal youth, meaning you will never age past your peak, regardless of your age, you will always have the appearance and physical abilities of your biological peak age. But this does not extend your lifespan or longevity and you can still die of old age. If you are older than your biological peak, you are aged down, and if you are younger, you will age normally until you reach your biological peak.
+738. Nutcracker, 2.8, Generic
+#(Tag:anti-defence)”Crack the shell.” Your attacks are more effective against armor and defensive equipment, the stronger the armor the more damage your attack deals against it.
+739. Minion Master, 2.5, Generic
+#(Tag:summon+)"Minions, tonight we steal the moon!" All Small Size minions under your command are empowered and have better co-ordination.
+740. Kaiju Commander, 3.4, Generic
+#(Tag:meta)(Tag:summon)"Mr. Gigantomachia" All Large and Titan Size Familiars are empowered and you can command and co-ordinate them better. Large and Titan size familiar can shrink down to weaker and smaller forms.
+741. Friendship is Magic, 4.7, Generic
+#(Tag:growth+)(Tag:maximum-energy+)"The true magic was the friends we made along the way." Whenever you consider someone a geniune friend and they consider you a friend too, or a relationship surpassing that bond, your Maximum Energy Reserves are permamently increased by a small amount.
+742. Sage Time, 2.8, Generic
+#(Tag:mind+)(Tag:nsfw)Whenever you reach climax with a partner during sexual intercourse, the moment you leave sexual intercourse, your mental clarity, memory retention, and mental processing speeds are augmented for one hour.
+743. Voyeur, 2.0, Generic
+#(Tag:nsfw)(Tag:rule)(Tag:social)You're a little creep aren't you? No? Well, people don't seem to think so anymore, at least not as much. You seem to be unnaturally good at spying and peeking on people, or at least very lucky at not being caught doing so. And even if you are caught doing so, you are far less likely to be reprimanded for it. In addition, people seem to far more likely to be aroused if they are aware of you watching them perform a sexual act.
+744. Mental Acuity, 1.7, Generic
+#(Tag:mind+)Your mind is slightly more efficient and robust compared to that of the average person. You are able to digest and recall information slightly better and are better at handling mental stress and burden.
+745. Robust Brain, 2.6, Generic
+#(Tag:mind+)Your brain is quite the marvel, it is far more robust than it should be, having pliability like rubber yet being as tough as bone, protecting you greatly from all forms of brain damage and concussions. Your brain can even regenerate on its own without real lasting damage. In addition, the robust composition of your brain allows it to handle mental stress and burden far better.
+746. Smart, 2.5, Generic
+#(Tag:mind+)You are pretty smart, your mind is good at digesting and internalizing information, you can reason faster with the information you have. But just because your mind works better doesn’t change who you are, or stop you from using information incorrectly.
+747. Robin Hood, 3.2, Generic
+#(Tag:agility+)(Tag:dexterity+)(Tag:martial)(Tag:talent)You are the successor to Robin Hood, enemy of the powerful and friend to the weak. Against opponents of great wealth or status, your Agility, Dexterity and accuracy with all Ranged Weapons is greatly increased.
+748. Fashionista, 3.5, Generic
+#(Tag:defence+)(Tag:talent)"Style IS substance.” Whenever you wear clothing or light armor, their defensive capabilities are increased proportionally to how well they fit you and look on you, regular fabric may act like chainmail if you can pull it off well enough. In addition, you naturally have an excellent sense of fashion and clothing.
+749. Sharpshooter, 4.5, Generic
+#(Tag:martial)(Tag:talent)You are a natural Sharpshooter, naturally having great talent with all forms of ranged combat whether that is with guns, bows, throwing weapons, or improvised projectiles. In addition, you naturally have enhanced accuracy with any ranged weapon regardless of your familiarity with the weapon.
+750. Sniper, 2.8, Generic
+#(Tag:martial)When using Ranged weapons, the longer the time between your attacks and the longer you take to attack, the faster and more accurate your projectiles are.
+751. Deadeye, 5.2, Generic
+#(Tag:martial)Your natural talent with all forms of Ranged Weapons is incredible, allowing you to wield any kind of ranged weapon whether guns, bows, throwing weapons, or improvised projectiles with incredible accuracy and familiarity. In addition, you can naturally enhance any ranged weapon you are wielding with your own energy, increasing the power and speed behind their projectiles.

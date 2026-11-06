@@ -51,6 +51,8 @@ window.ChaosGen = (function () {
     const wantTags = opts.tag ? [opts.tag]
       : Array.isArray(opts.tags) && opts.tags.length ? opts.tags : null;
     const wantLow = wantTags ? wantTags.map(t => String(t).toLowerCase()) : null;
+    const notTags = Array.isArray(opts.notTags)
+      ? opts.notTags.map(t => String(t).toLowerCase()).filter(Boolean) : [];
     return entries.filter(e => {
       if (!files.includes(e.f)) return false;
       if (e.t === "gacha" && !opts.includeGachaOnly) return false;
@@ -62,6 +64,10 @@ window.ChaosGen = (function () {
       if (wantLow) {
         const et = entryTags(e).map(t => String(t).toLowerCase());
         for (const w of wantLow) if (!et.includes(w)) return false;
+      }
+      if (notTags.length) {
+        const et = entryTags(e).map(t => String(t).toLowerCase());
+        for (const t of notTags) if (et.includes(t)) return false;
       }
       return true;
     });

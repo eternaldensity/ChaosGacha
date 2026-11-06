@@ -1,20 +1,44 @@
 {
-  "ability": [
-    {
-      "name": "Railway",
-      "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
-    }
-  ],
-  "item": [
-    {
-      "name": "Railway",
-      "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
-    }
-  ],
-  "skill": [
-    {
-      "name": "Railway",
-      "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
-    }
-  ]
+ "ability": [
+  {
+   "name": "Railway",
+   "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
+  },
+  {
+   "name": "Deleted",
+   "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  }
+ ],
+ "item": [
+  {
+   "name": "Railway",
+   "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
+  },
+  {
+   "name": "Deleted",
+   "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  }
+ ],
+ "skill": [
+  {
+   "name": "Railway",
+   "desc": "An entry related to railways and locomotives: trains, trams, rolling stock, track, or their operation."
+  },
+  {
+   "name": "Deleted",
+   "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  }
+ ],
+ "trait": [
+  {
+   "name": "Deleted",
+   "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  }
+ ],
+ "familiar": [
+  {
+   "name": "Deleted",
+   "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  }
+ ]
 }

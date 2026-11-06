@@ -35,13 +35,13 @@
 18. Pyromaster, 7.2, Generic
 #(Tag:fire)Control flames and ignition on the level of a Level 5 Esper from Toaru, with unmatched precision, range, and control.
 19. Unholy Flames, 5.7, Generic
-#(Tag:fire)(Tag:infernal)Wield Hell flames so potent even you are not fully immune, suffering burns from overuse. They deal severe damage to Holy and Light-based beings.
+#(Tag:deleted)(Tag:fire)(Tag:infernal)Wield Hell flames so potent even you are not fully immune, suffering burns from overuse. They deal severe damage to Holy and Light-based beings.
 20. Profaned Flames, 6.2, Calamity Mod
 #(Tag:fire)(Tag:holy)(Tag:infernal)Channel and control Providence's Profaned Flames, which are incomparably hot, turn all to impartial ash, and ignore all fire resistance.
 21. Profaned Guardian Transformation, 6.5, Calamity Mod
 #(Tag:fire)(Tag:holy)(Tag:infernal)(Tag:transformation)Temporarily take the form of one of Providence's guardians, massively boosting physical stats and granting flame wings and Profaned Flame manipulation. Maintaining it slowly burns you from the inside until released, mitigated only by fire resistance.
-22. Shadowflames, 4.7, Terraria
-#(Tag:fire)Emit and control Shadowflame, soundless flames with no energy signature that burn away light, making them extremely hard to perceive. An experienced user can hide them from all senses.
+22. Shadowflame, 4.7, Terraria
+#(Tag:fire)Allows the user to create and control Shadow Flames. The Shadow Flames are unique flames that do not emit light nor sound like a shadow yet still burn like flames. The darker your surroundings, the more powerful the flames are but the flames are also weakened under direct light.
 23. Fire Fist, 2.6, Generic
 #(Tag:fire)(Tag:martial)Coat your fists in flames that enhance strike power while burning the target. You can release the fire while punching to launch a burning fist projectile.
 24. Fire Logia, 7.6, One Piece
@@ -61,17 +61,17 @@
 31. Desolate Land, 5.2, Generic
 #(Tag:alter)(Tag:buff)(Tag:debuff)(Tag:earth)(Tag:fire)Transform weather and land into Desolate Land, with burning sunlight, scorched land, lava rivers, raised temperature, and no moisture. It largely amplifies Fire and Earth abilities, nullifies Water abilities below Epic rank, and weakens those above.
 32. Kamino, 3.9, Jujutsu Kaisen
-#Chant "Kamino" to manifest an immensely powerful, hot fire arrow. Its wind-up is slow, but its destructive power compensates.
+#(Tag:deleted)Chant "Kamino" to manifest an immensely powerful, hot fire arrow. Its wind-up is slow, but its destructive power compensates.
 33. Blazing Courage, 3.6, Jujutsu Kaisen
-#Coat an object in flames that imitate its aspects, such as sharp or blunt flames.
+#(Tag:deleted)Coat an object in flames that imitate its aspects, such as sharp or blunt flames.
 34. Dark Flames, 3.6, Generic
 #(Tag:dark)(Tag:fire)Emit and control humanity's Black Flames, which do not burn or emit heat but have mass greater than most metals, shredding what they touch instead of burning it.
 35. Extinguish Flames, 2.2, Generic
 #(Tag:alter)(Tag:fire)Remotely extinguish any fire or flame in sensory range; stronger flames cost more energy.
 36. Godslayer Apostle Flames, 4.7, Elden Ring
 #(Tag:anti-divine)(Tag:fire)Wield and control the Godskin Apostles' Godslayer Flames, already strong but significantly hotter and more potent against the divine. The more divine the enemy, the more potent the flames.
-37. Blood Flames, 4.3, Elden Ring
-#(Tag:blood)(Tag:fire)Wield and control Blood Flames, which cost vitality and health instead of energy. They are much more potent than regular flames, lacerate on contact, and are extremely hard to heal.
+37. Bloodflame, 4.3, Elden Ring
+#(Tag:blood)(Tag:fire)Allows you to conjure and control Bloodflame, a unique fire that does not expend energy but instead consumes your Vital Energy to fuel itself. In addition to being much more potent than regular flames, Bloodflame has the property of laceterating and haemorrhaging targets as they burn them. The more potent your vitality is, the more powerful the Blood Flames are. While Bloodflame is slotted in, you can also force other fire abilities to use Bloodflame and your Vital Energy.
 38. Bloodflame Talons, 2.9, Elden Ring
 #(Tag:fire)(Tag:life)Conjure talons of bloodflame that burn and lacerate. They cost health and vitality instead of energy, with more vitality producing stronger claws.
 39. Heat Vision, 3.6, DC
@@ -213,7 +213,7 @@
 107. Ice Sprout, 2.2, Generic
 #(Tag:ice)Sprout ice constructs like walls and pillars from the ground and other surfaces to barrier, hinder, crush, or block enemies.
 108. Black Ice, 4.3, Generic
-#(Tag:ice)Create and control black ice, an incredibly durable ice highly resistant to heat and fire.
+#(Tag:deleted)(Tag:ice)Create and control black ice, an incredibly durable ice highly resistant to heat and fire.
 109. Ice Formation, 5.0, Jujutsu Kaisen
 #(Tag:ice)Manifest extreme cold and ice at will under telekinetic control.
 110. Absolute Zero, 7.0, Generic
@@ -221,7 +221,7 @@
 111. Divinity Water & Ice, 8.0, Generic
 #(Tag:ice)(Tag:water)You are a god of water and ice, holding domain over both with all that entails.
 112. Typhoon, 4.2, Generic
-#(Tag:air)Manifest and control typhoons at will, from miniature direct attacks to area-wide devastation.
+#(Tag:air)(Tag:deleted)Manifest and control typhoons at will, from miniature direct attacks to area-wide devastation.
 113. Breeze, 0.4, Generic
 #(Tag:air)Conjure a light breeze from your body, far too weak to knock a grown person down.
 114. Gust, 1.6, Generic
@@ -242,8 +242,8 @@
 #(Tag:air)(Tag:buff)(Tag:martial)Cloak a held item in razor-sharp winds to boost its cutting ability. You can launch the cloak as a projectile to extend the effect.
 122. Delta Stream, 3.0, Generic
 #(Tag:air)(Tag:alter)(Tag:buff)Call forth winds that make the surrounding area very windy, enhancing the power and efficiency of all wind-based abilities.
-123. Floating, 2.4, Generic
-#(Tag:gravity)Cloak yourself in winds that carry you, allowing you to fly.
+123. Air Float, 2.4, Generic
+#(Tag:gravity)Allows the user to wrap themselves in air currents that allow them to slowly float through the air.
 124. Wind Flight, 3.0, Generic
 #(Tag:air)(Tag:movement)Push off the surrounding air to fly with precision and power.
 125. Air Jet, 3.3, Generic
@@ -251,7 +251,7 @@
 126. Wind Cloak, 3.2, Generic
 #(Tag:air)(Tag:buff)(Tag:movement)Cloak yourself in powerful winds that assist movement, letting you move faster, dash and float.
 127. Whirlwind, 4.0, MHA
-#(Tag:air)Create and control powerful whirlwinds and air currents, though control is imprecise.
+#(Tag:air)(Tag:deleted)Create and control powerful whirlwinds and air currents, though control is imprecise.
 128. Vacuum, 4.3, Generic
 #(Tag:air)Create and control vacuums in your sensory range to pull things in and cause implosions. Stronger vacuums expend more energy.
 129. Louden, 0.9, Generic
@@ -293,7 +293,7 @@
 147. Electric Discharge, 3.3, Generic
 #(Tag:electric)Channel potent electricity through your body and discharge it. With training, you can direct where it goes to aim more precisely.
 148. Lightning Channel, 3.0, Generic
-#(Tag:electric)Channel lightning through a held object to reinforce and empower it. The lightning imitates the object, becoming sharp with a sword and heavy with a hammer.
+#(Tag:deleted)(Tag:electric)Channel lightning through a held object to reinforce and empower it. The lightning imitates the object, becoming sharp with a sword and heavy with a hammer.
 149. Lightning Absorption, 3.4, Generic
 #(Tag:alter)(Tag:electric)Absorb electricity and lightning into your body for storage. You can convert it into energy to refill reserves, boost your power, or fire it as an attack.
 150. Call Lightning, 2.8, Generic
@@ -306,14 +306,14 @@
 #(Tag:electric)Freely call thunder and lightning from the skies to strike the ground with little energy consumption. You can charge it to smite with concentrated lightning.
 154. Lightning Form, 4.4, Generic
 #(Tag:electric)(Tag:movement)(Tag:transformation)Turn into a living bolt of lightning to travel extremely quickly while ignoring most conventional attacks. You are extremely vulnerable to grounding, which ejects and injures you.
-155. Radio Waves, 3.1, MHA
-#(Tag:sound)(Tech) Emit electromagnetic waves that disable and cripple all technology with an interface. With training, you can fine-tune them to activate or control electronics instead.
+155. EMP, 3.1, MHA
+#(Tag:sound)(Tech)Allows the user to directionally unleash Electromagnetic Pulses to disable and damage technology and equipment that uses electricity.
 156. Impulse, 2.0, Generic
 #(Tag:electric)(Tag:sense)Quicken your body's electrical signals to proportionally increase reflexes and speed. Overuse may cause nerve damage.
 157. Godspeed, 4.2, Hunter x Hunter
 #(Tag:electric)(Tag:movement)(Tag:sense)Overhaul your nervous system with your own lightning for near-instant reflexes and extreme speed. It damages your body over time, so extended use is not recommended.
 158. Electrokinesis, 4.8, Generic
-#(Tag:electric)Create and control electricity at will, from shooting lightning bolts to tweaking your own bioelectricity. You cannot control electromagnetic waves.
+#(Tag:deleted)(Tag:electric)Create and control electricity at will, from shooting lightning bolts to tweaking your own bioelectricity. You cannot control electromagnetic waves.
 159. Electromagnetokinesis, 6.0, Generic
 #(Tag:electric)Sense, interact with and control electromagnetism, a fundamental force of the universe, letting you control magnetic objects, create railguns, shoot lightning, tweak bioelectricity and more.
 160. Assign, 3.3, Generic
@@ -326,8 +326,8 @@
 #(Tag:electric)Charge and unleash a breath of devastating lightning waves. Longer charging and more energy mean a stronger breath.
 164. Railgun, 3.9, Generic
 #(Tag:electric)Turn any magnetic object in your grasp into a railgun projectile. Higher mass costs more, and you must aim it.
-165. Frozen Lightning, 3.5, Generic
-#(Tag:electric)Wield and control frozen lightning. Unlike incredibly hot regular lightning, it is proportionally colder, freezing whatever it electrocutes or passes through.
+165. Lightning Bomb, 3.5, Generic
+#(Tag:electric)Allows the user to condense electric energy into a circular mass that they can launch and detonate to cause an explosion of lightning. The more energy they expend and the longer they charge, the stronger the explosion.
 166. Lightning Spear, 2.6, Generic
 #(Tag:anti-draconic)(Tag:electric)Conjure a throwable spear of lightning (does not travel at lightning speed) with penetrative power that deals increased damage against draconic entities.
 167. Great Lightning Spear, 3.1, Generic
@@ -346,8 +346,8 @@
 #(Tag:electric)(Tag:enhancer)Create and control electricity (not kinesis) and use it to slightly enhance your stats. You can sense and see nearby currents even through walls, and ground opponents' lightning with your body.
 174. Attention, 1.5, Generic
 #(Tag:alter)Manifest a very eye-catching, distracting aura centered on yourself, making you incredibly noticeable in whatever you do.
-175. Lightning Claws, 2.6, Generic
-#(Tag:electric)Create claws of violent lightning over your hands to sever and electrocute enemies simultaneously.
+175. Force Lightning, 2.6, Generic
+#(Tag:electric)Allows the user to blast out surges of destructive lightning from their fingertips, the power of the lightning scales with the users current negative emotions and the amount of energy they expend. With training the user can make sure to leave targets alive or cause them even more agony with the lightning.
 176. Pebble Sling, 0.3, Generic
 #(Tag:earth)Conjure pebbles and small rocks to sling at enemies, minorly inconveniencing them or hurting them if they hit eyes.
 177. Rock Throw, 1.4, Generic
@@ -357,15 +357,15 @@
 179. Boulder Hurl, 2.8, Generic
 #(Tag:earth)Conjure and hurl a large boulder at enemies. Regardless of your strength, its weight does not affect your throwing, whether person-sized or house-sized.
 180. Rock Shotgun, 2.6, Generic
-#(Tag:earth)Conjure multiple small rocks and launch them at lethal speeds.
+#(Tag:deleted)(Tag:earth)Conjure multiple small rocks and launch them at lethal speeds.
 181. Bullet, 3.3, Generic
 #(Tag:earth)Conjure lead or other metal bullets from small to high calibre and launch them at supersonic to hypersonic speeds. More energy means higher calibre and speed.
 182. Move Earth, 2.5, Generic
 #(Tag:earth)Telekinetically move earth in your sensory range. It has little lethal power.
 183. Quicksand, 2.0, Generic
 #(Tag:alter)(Tag:earth)Turn ground into quicksand that grabs and pulls anyone who steps on it.
-184. Earth Spikes, 2.9, Generic
-#(Tag:earth)Create, control and launch spikes of earth and rock, including erupting them from the ground in sensory range.
+184. Earthen Spike, 2.9, Generic
+#(Tag:earth)Allows the user to strike the ground in order to make a stone spikes or blade burst out of the ground around them. The harder the blow they deliver to the earth, the stronger and more violently the earth rises up.
 185. Meteor Strike, 4.1, Generic
 #(Tag:earth)Call down meteors from the sky. Size and speed depend on energy expended.
 186. Chain & Shackle, 3.7, Generic
@@ -386,8 +386,8 @@
 #(Tag:earth)(Tag:kinesis)Telekinetically control and shape metal in sensory range, such as ripping it from buildings into spears, flying on metal bands, or controlling iron-rich blood.
 194. Terrakinesis, 4.5, Generic
 #(Tag:earth)(Tag:kinesis)Telekinetically control earth and rock in your sensory range.
-195. Armor, 3.1, Generic
-#(Tag:enhancer)Create very durable reinforced metal armour on your body that enhances endurance. Stronger users form stronger metal, and you can reshape it with concentration.
+195. Metal Armor, 3.1, Generic
+#(Tag:enhancer)Allows the user to conjure and form metal armor around their body, the toughness and resilience as well as the type of metal the armor is made out of depends on the experience of the user and the amount of energy they expend. With training they can also freely alter the shaoe of their armor.
 196. Metal Kaiser, 4.0, Worm
 #(Tag:earth)Create metal such as giant blades, walls and pillars from any non-organic surface. More energy creates more metal.
 197. Iron Manipulation, 3.6, Generic
@@ -399,7 +399,7 @@
 200. Sandshot, 1.1, Generic
 #(Tag:earth)Conjure and launch sand from your fingers at non-lethal but painful speeds.
 201. Sandstream, 2.2, Generic
-#Launch powerful sand streams from your body to hinder vision and injure enemies like sandblasting.
+#(Tag:deleted)Launch powerful sand streams from your body to hinder vision and injure enemies like sandblasting.
 202. Sandblast, 2.6, Generic
 #(Tag:earth)Launch blasts of high-velocity sand clouds that rend and shred metals and especially flesh.
 203. Death Valley Duster, 3.8, Generic
@@ -424,12 +424,12 @@
 #(Tag:earth)Fuse with earth to form gigantic kaiju-proportioned armour around yourself. Bigger armour expends more energy.
 213. Golem Armor, 3.6, Generic
 #(Tag:construct)(Tag:earth)(Tag:enhancer)Create a golem around yourself from ground beneath your feet or materials you touch, acting as armour that enhances physical stats.
-214. Stalagmite Burst, 2.6, Generic
-#(Tag:earth)Unleash stalagmite blades that erupt from the ground to impale enemies.
+214. Earth Burst, 2.6, Generic
+#(Tag:earth)Allows the user to explode the earth around them by striking the ground, creating explosions and generating shrapnel to maim opponents. The harder they strike the ground, the greater theiy can burst the earth.
 215. Thousand Arrows, 4.2, Pokemon
-#Create and launch spears or arrows of surrounding ground as artillery, traps or projectile bombardment.
-216. Metal Manipulation, 4.2, MHA
-#(Tag:earth)(Tag:kinesis)Control the shape and form of all metals you touch.
+#(Tag:deleted)Create and launch spears or arrows of surrounding ground as artillery, traps or projectile bombardment.
+216. Metalshape, 4.2, MHA
+#(Tag:earth)(Tag:kinesis)Allows the user to move and alter the shape of metals they are in contact with, making rebar act like a whip, a metal wall turn into a statue, turning your armor into a sword etc. the greater a mass they are trying to change the more energy they expend.
 217. Mud Manipulation, 3.4, Generic
 #(Tag:earth)(Tag:water)Conjure and control mud to create swamps underfoot or bombard opponents.
 218. Crystal Shower, 2.6, Generic
@@ -447,9 +447,9 @@
 224. Pure Gem Creation, 4.9, Generic
 #(Tag:earth)Create pure precious gems that hold immense energy and serve as vessels. Purer, more potent gems cost more energy.
 225. Sand Veil, 1.8, Generic
-#(Tag:earth)Create a small localized sandstorm on your location that hides your presence inside it while you see through it freely.
+#(Tag:deleted)(Tag:earth)Create a small localized sandstorm on your location that hides your presence inside it while you see through it freely.
 226. Fool Sand, 4.9, JoJo
-#(Tag:earth)Conjure autonomous sand that shapeshifts, attacks and defends without input to protect you, eliminate enemies or provide utility.
+#(Tag:deleted)(Tag:earth)Conjure autonomous sand that shapeshifts, attacks and defends without input to protect you, eliminate enemies or provide utility.
 227. Desert Weaponry, 3.5, Generic
 #(Tag:earth)Create sand-and-wind weapons and attacks such as giant sand blades, spears and hammers to unleash as projectiles.
 228. Sandstorm Body, 4.0, Generic
@@ -522,14 +522,14 @@
 #(Tag:anti-holy)(Tag:anti-recovery)(Tag:dark)Conjure and unleash dark-energy lances, exceptionally lethal to holy beings. Their wounds are difficult to heal.
 262. Abyss, 6.0, Generic
 #(Tag:alter)(Tag:buff)(Tag:dark)(Tag:debuff)Reality Marble - Pull targets into the Abyss, which rapidly drains their energy and vitality. All dark abilities are boosted inside.
-263. Void Tendril, 3.4, Generic
-#(Tag:dark)Conjure and control void tendrils to grapple, crush, whip, and pierce. You can share sensation with them.
+263. Shadow Tendril, 3.4, Generic
+#(Tag:dark)Allows the user to conjure and control tendrils and tentacles made out of dark energy, these appendages can grapple, crush, whip and pierce to their desires and can be manipulated with proper dexterity. They can also share sensations with the tentacles.
 264. Shade Cloak, 3.7, Generic
 #(Tag:dark)(Tag:movement)(Tag:transformation)Briefly shift into shadow to phase through attacks and magic. Weak only to light and holy magic; limited to 1 second at a time with a 3-second cooldown.
 265. Cursecraft, 4.8, Generic
 #(Tag:curse)(Tag:debuff)Create and apply curses based on your abilities. E.g. light becomes blinding, strength becomes weakness, etc.
 266. Darkness Devil, 7.8, Chainsaw Man
-#(Tag:dark)(Tag:infernal)As the fear of darkness incarnate, hold authority over all darkness and shadows to control them at will.
+#(Tag:dark)(Tag:deleted)(Tag:infernal)As the fear of darkness incarnate, hold authority over all darkness and shadows to control them at will.
 267. Black Hole, 5.0, Generic
 #(Tag:dark)(Tag:gravity)Conjure and control weaker small-scale virtual black holes. With training, you can conjure real black holes.
 268. Void Dragon's Breath, 4.0, Generic
@@ -541,29 +541,29 @@
 271. Chaos Entity Release, 5.1, Legendary Mechanic
 #(Tag:dark)(Tag:movement)(Tag:space)(Tag:transformation)Release physical form to become a Void Observer, a sentient grey energy cloud that slips into the void at will, intangible yet able to observe reality. Staying inside slowly drains energy and grants near-immunity to physical force, but damage taken reflects onto your real body.
 272. Void Path, 6.4, Legendary Mechanic
-#(Tag:dark)Open gates to the Void Dimension to traverse it, banish entities inside, or bring entities out. Use with caution.
+#(Tag:dark)(Tag:deleted)Open gates to the Void Dimension to traverse it, banish entities inside, or bring entities out. Use with caution.
 273. Void Distorter Form, 5.9, Legendary Mechanic
-#(Tag:alter)(Tag:dark)(Tag:transformation)Transform into a Void Distorter, a Void-native being that distorts and shapes void to ravage the natural world with spatial distortions. Can also use Void Travel.
-274. Abyssal Jail, 5.2, Generic
-#(Tag:dark)Manifest Abyss in the natural world to trap entities in a localized Abyss that isolates and drains their energy and vitality. Breaking out by force is possible but incredibly difficult.
+#(Tag:alter)(Tag:dark)(Tag:deleted)(Tag:transformation)Transform into a Void Distorter, a Void-native being that distorts and shapes void to ravage the natural world with spatial distortions. Can also use Void Travel.
+274. Abyssal Chains, 5.2, Generic
+#(Tag:dark)Allows the user to unleash chains woven out of the abyss itself that exhaust energy on contact, making them extremely resilient and hard to destroy but poor for inflicting direct damage. When wrapping living beings, they will also rapidly exhaust their energy and vitality.
 275. Abyss Skin, 3.8, Generic
 #(Tag:dark)(Tag:enhancer)(Tag:space)Cover your skin in Abyss for potent defense with no offensive benefit. It dissipates contacted energy, including kinetic and heat, but sudden powerful attacks can bypass absorption.
 276. Yami, 3.2, Yugioh
 #(Tag:alter)(Tag:buff)(Tag:dark)(Tag:debuff)Shroud surroundings in ominous darkness with rouge clouds, boosting dark abilities and infernal beings while weakening all Holy beings and abilities.
 277. Darkness Logia, 7.0, One Piece
-#(Tag:dark)Create, control, and turn into Darkness at will. It can absorb and store anything but amplifies your sense of pain.
+#(Tag:dark)(Tag:deleted)Create, control, and turn into Darkness at will. It can absorb and store anything but amplifies your sense of pain.
 278. Shadow Eyes, 3.0, Generic
 #(Tag:dark)(Tag:summon)Conjure small eye-shaped shadow familiars that autonomously observe and relay information. They have no combat ability but hide potently.
 279. Shadow Beast Form, 4.8, Generic
-#(Tag:dark)Turn into a giant amorphous shadow monster like Dark Shadow from MHA. Greatly vulnerable to holy and light effects.
+#(Tag:dark)(Tag:deleted)Turn into a giant amorphous shadow monster like Dark Shadow from MHA. Greatly vulnerable to holy and light effects.
 280. Shadow Armor, 4.2, Generic
 #(Tag:dark)(Tag:enhancer)Create lightweight, very durable shadow armor with freely alterable shape. While active, it boosts physical abilities and darkness abilities.
 281. Umbrakinesis, 4.8, Generic
 #(Tag:dark)(Tag:kinesis)Weave shadow and darkness into physical form and control it, such as shadow chains, spikes from a target's shadow, or darkness lances.
 282. Abyss Barrier, 5.1, Generic
 #(Tag:dark)(Tag:space)Weave Abyss into a physical barrier that absorbs and dissipates energy. Nigh unbreakable without overwhelming force, except against holy attacks.
-283. Shadow Monarch, 6.7, Solo Leveling
-#(Tag:dark)Extract shadows from corpses as commanded minions, immortal while restored by your mana. Raisable level and stored count depend on your energy.
+283. Shadow Extraction, 6.7, Solo Leveling
+#(Tag:dark)Allows the user to extract 'Shadows' from corpses and make them serve under them, Shadows are undead beings made of shadows under the users control who can always revived by the user as long as they have energy to rebuild their body with stronger shadows taking more energy. The stronger a target is compared to the user, the harder it is to extract their shadow and repeated failure prevents Shadow Extraction from being used. The user can only maintain a limited number of shadows under their command relative to their own energy reserves.
 284. Flashlight, 0.4, Generic
 #(Tag:light)Emit a moderate-intensity light beam from your hands. A handy flashlight replacement with little other use.
 285. Flash, 1.2, Generic
@@ -578,8 +578,8 @@
 #(Tag:light)Conjure a light ball that bursts into blinding flash and noise, disorienting enemies and heavily harming dark enemies.
 290. Light of Glory, 3.3, Generic
 #(Tag:buff)(Tag:light)(Tag:martial)(Tag:mental)Call victorious light from the heavens to bolster allies. Those touched gain slightly increased physical stats, mental resistance, vigor, and courage.
-291. Light Grenade, 2.8, Dragon Ball
-#(Tag:light)Conjure and launch a fast, powerful grenade of exploding light energy.
+291. Light Bullet, 2.8, Dragon Ball
+#(Tag:light)Allows the user to unleash bolts of condensed light energy that travel very quickly and deal additional damage to Dark entities.
 292. Beam, 3.4, Generic
 #(Tag:light)Shoot a near-instant beam of concentrated light and heat from your fingers.
 293. Lesser Blessing, 2.6, Generic
@@ -588,8 +588,8 @@
 #(Tag:buff)(Tag:holy)Grant a Holy Energy blessing: Augmentation (augments a chosen stat like strength, resilience, vitality, etc.), Might (slightly augments all attributes), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
 295. Greater Blessing, 4.7, Generic
 #(Tag:buff)(Tag:holy)Grant a greater Holy Energy blessing: Augmentation (significantly augments a chosen stat like strength, resiliency, vitality, regeneration, etc.), Boost (augments all attributes for more energy), or Mind (slightly augments Energy Regeneration and Output). Lasts one to three hours by energy spent; only one per target.
-296. Divine Blessing, 5.7, Generic
-#(Tag:buff)(Tag:fire)(Tag:holy)Bestow blessings once an hour for one hour: Recovery (Rare Rank Regeneration plus cure of all non-inborn ailments), Might (increases all attributes), or Warding (cleanses curses and raises resistances). Blessings can also mimic abilities, e.g. Ignite grants fire resistance and affinity.
+296. Grand Blessing, 5.7, Generic
+#(Tag:buff)(Tag:fire)(Tag:holy)Allows the user to grant a Grand Blessing to a target by making contact and suffusing them with Holy Energy, however only one blessing may be applied to a target at a time and the duration of the blessing depends on the amount of energy the user expends. The blessings they can give are: Blessing of Life: Continuously applies rare rank Purification and Regeneration on a target. Blessing of Providence: Grants the target a powerful Holy Barrier that shields them from harm and negative afflictions. The more effects the shield blocks, the faster it fades or breaks. Blessing of Champion: Greatly Increases the physical prowess of a target. Blessing of Exorcist: Greatly increases the Energy Output of a target. Blessing of Angel: Grants the user angellic wings that allow them to freely fly and automatically protect them danger.
 297. Law of Regression, 6.3, Elden Ring
 #(Tag:alter)(Tag:holy)(Tag:recovery)Regress causality to return something to its original or intended form while dispelling all negative status. Greater regression costs more energy.
 298. Disc of Light, 2.2, Elden Ring
@@ -630,8 +630,8 @@
 #(Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in healing light to heal even severe wounds. Scales with power; stronger targets cost more.
 316. Greater Healing Light, 4.3, Generic
 #(Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in healing light to heal even grievous wounds and lethal damage. Scales with power; stronger targets cost more.
-317. Divine Healing Light, 5.5, Generic
-#(Tag:holy)(Tag:light)(Tag:recovery)Bathe a target in healing light to restore them from even lethal damage; any wound short of death can be healed. Scales with power; stronger targets cost more.
+317. Sacred Healing Light, 5.5, Generic
+#(Tag:holy)(Tag:light)(Tag:recovery)Allows the user to heal a target by bathing them in Sacred Healing Light, capable of healing even lethal wounds inflicted by esoteric effects and restoring lost vitality. Effectiveness scales with the amount of energy expended and the stronger a target is compared to the user, the more energy they will need to heal them.
 318. Pillar of Light, 3.4, Generic
 #(Tag:light)Call down a pillar of searing light anywhere in sensory range. Deals extra damage to unholy beings.
 319. Judgement Call, 4.8, Epic Battle Fantasy
@@ -668,8 +668,8 @@
 #(Tag:bio)(Tag:draconic)Grow incredibly tough dragon scales, more durable than any human material, also reducing elemental damage taken. Toughness scales with physical stats.
 335. Powerful Wings, 2.7, Generic
 #(Tag:bio)(Tag:movement)Grow powerful wings that lift you regardless of weight. Stronger than your base physicality, they can shatter bones as weapons.
-336. Immunity System, 3.9, Generic
-#While Immutable is in an active ability slot, you are immune to poisons, diseases, and negative biological effects.
+336. Immunity Shot, 3.9, Generic
+#Allows the user to temporarily supercharge their immune system, making them incredibly powerful and potent at countering and destroying any foreign agent in their body such as Poisons, Illnesses, etc. and allowing them to combat those foreign influnces far better afterwards even without using the ability.
 337. Monomolecular Claws, 4.3, Generic
 #(Tag:bio)Transform nails into sleek black claws with molecule-thin edges and undiminished durability. Adjustable up to 1 meter long.
 338. Bone Manipulation, 4.8, Worm
@@ -686,10 +686,10 @@
 #(Tag:bio)Manifest a tail-like Bikaku RC-Cell appendage at the tailbone, shifting from fluid-like to steel-tough. Defend, whip, and pierce like a giant flesh tail.
 344. Kakuja, 5.0, Tokyo Ghoul
 #(Tag:bio)Manifest armor-like Kakuja RC Cells shifting from fluid-like to steel-tough, massively boosting stats. Form depends on the user, from building-sized wings to 16 pillar-thick tentacles tougher than titanium and faster than bullets.
-345. Ghoul Physiology, 4.7, Tokyo Ghoul
-#(Tag:necro)(Tag:transformation)Transform into a flesh-eating ghoul superhuman with a Special RC-Cell limb, gaining a random Kagune of the 4 types and near-immunity to conventional weapons below 9mm. You suffer ravenous hunger for human flesh and cannot eat other food; lingering hunger persists after deactivation until fed, but feeding slightly strengthens you.
-346. hybrid Ghoul Physiology, 5.5, Tokyo Ghoul
-#(Tag:necro)(Tag:transformation)Transform into a hybrid ghoul, far stronger than average ghouls with none of their weaknesses. Massively amplifies physical attributes, grants powerful regeneration and a random Kagune, and removes the need to eat human flesh while retaining its benefits.
+345. Ghoul Form, 4.7, Tokyo Ghoul
+#(Tag:necro)(Tag:transformation)Allows the user to temporarily transform themselves into a Ghoul, a flesh-eating superhuman creature with a special limb made up of Special RC Cells. As a ghoul, their physical prowess and natural regeneration is considerably enhanced and they develop a Kagune, an organ that can unleash a flew weapon limb under their control, out of the 4 types. But this form also comes with a ravenous hunger for human flesh and the inability to consume any other food. Even if they turn off the form, if they got hungry in the form they still have to consume human flesh even after turning it off. But consuming human flesh also permamently makes their ghoul form stronger.
+346. Hybrid Ghoul Form, 5.5, Tokyo Ghoul
+#(Tag:necro)(Tag:transformation)Allows the user to temporarily transform themselves into a Hybrid Ghoul, a flesh-eating superhuman creature with a special limb made up of Special RC Cells, however as a Hybrid, they suffer from none of the weaknesses that come with the form. As a Hybrid Ghoul, their physical prowess and natural regeneration are greatly augmented and they develop a Kagune, an organ that can unleash a flew weapon limb under their control, out of the 4 types. While the form does not come with the craving of human flesh like a regular ghoul, devouring human flesh will permamently strengthen this ability and form.
 347. Dragon Kakuja, 7.0, Tokyo Ghoul
 #(Tag:bio)(Tag:draconic)(Tag:transformation)"Become a true biological terror." Take the form of a Dragon Kakuja, an over 10km centipede-like dragon of RC cells stronger than any artificial material. Passively emit high-density RC clouds that turn nearby things into flesh-eating superhuman monsters under your telepathic control, and morph your body into tentacles or flesh monsters.
 348. Keratin Manipulation, 3.9, Generic
@@ -706,12 +706,12 @@
 #(Tag:bio)(Tag:growth)Refine bodies into a more ideal state: build muscle, remove impurities, and adjust size. Cannot alter genetics; stronger targets cost more energy.
 354. Absolute Control, 4.4, Generic
 #(Tag:bio)Gain complete instinctual control over your body and brain, down to hormones and blood flow. Operates on intent and prevents accidental self-harm.
-355. Shape Altering, 3.1, Generic
-#(Tag:alter)Alter your body's shape, but cannot create biological impossibilities like turning your head into tentacle whips. Larger alterations cost more energy.
+355. Lesser Shapeshifting, 3.1, Generic
+#(Tag:alter)Allows the user to alter the form of their body, such as lengthening their hair, changing their skin color, turning their nails into claws, etc. the more energy they expend, the greater the changes they can make and the faster they can make them. But at this level, they cannot shapeshift down to a cellular level, break conservation of physics, or create biological impossibilities in their body. Maintaining shapeshifed form costs energy.
 356. Shapeshifting, 4.7, Generic
 #(Tag:bio)(Tag:transformation)Freely morph your body without breaking conservation of mass or altering genetics. You are protected from harm caused by your own shapeshifting.
 357. Gene Refinement, 5.5, Generic
-#Alter and improve genetic structures by reinforcing, cutting, or overhauling them. Thereby improves the target's body and any biologically-based abilities.
+#(Tag:deleted)Alter and improve genetic structures by reinforcing, cutting, or overhauling them. Thereby improves the target's body and any biologically-based abilities.
 358. Minor Regeneration, 2.7, Generic
 #(Tag:bio)(Tag:recovery)Gain a minor healing factor that closes lacerations and stabs during a fight, but won't fully recover you mid-fight. Expend energy to heal faster.
 359. Regeneration, 3.6, Generic
@@ -726,8 +726,8 @@
 #(Tag:bio)(Tag:recovery)Survive like a cockroach: when wounded, your body adapts to keep you alive without blood, lungs, or even a heart by repurposing other parts as substitutes.
 364. Biological Adaptation, 5.7, Worm
 #(Tag:bio)(Tag:recovery)(Tag:transformation)Your body constantly rebuilds itself to counter stimuli, such as fire-resistant skin against fire, plating against cuts, or sharper claws. Adaptations are strictly biological and fade over time or when dispelled.
-365. Vampire Physique, 3.7, Generic
-#(Tag:vampiric)Become a classic vampire with superhuman physical abilities, bat transformation, and bloodsucking. Retain all traditional weaknesses: crucifixes, garlic, wooden stakes, sunlight, and holy water.
+365. Vampire Form, 3.7, Generic
+#(Tag:vampiric)Allows the user to transform into the Archetypal Vampire, granting them increased physical prowess, the ability to transform into a bat, drain blood to heal themselves and restore their energy. But you cannot transform others into vampires and deathly weak to sunlight.
 366. Animorph, 4.4, Generic
 #(Tag:bio)(Tag:transformation)Freely morph into any mundane animal you know. Retain all your abilities while gaining the animal's physical traits.
 367. Gills, 1.0, Generic
@@ -750,8 +750,8 @@
 #(Tag:poison)Freely create and manipulate poisonous substances, with potency scaling with energy expended.
 376. Paralysis, 3.0, Generic
 #(Tag:poison)Create a paralytic agent in your body to expel through pores or spray orally as gas.
-377. Blood Manipulation, 1.8, Generic
-#(Tag:blood)Telekinetically control your own blood. You cannot generate extra blood without regeneration, so spend it wisely.
+377. Blood Regeneration, 1.8, Generic
+#(Tag:blood)Allows the user to rapidly regenerate and replenish the blood in their body by expending energy.
 378. Hemokinesis, 3.8, Generic
 #(Tag:bio)(Tag:kinesis)(Tag:life)(Tag:vampiric)Telekinetically control blood within your sensory range, but not in quantities smaller than you can perceive. Controlling blood inside someone requires being stronger than them.
 379. Greater Hemokinesis, 5.2, Generic
@@ -796,8 +796,8 @@
 #(Tag:time)Manipulate time in a select area or target by speeding up, slowing down, stopping, or reversing it. Sufficiently strong targets can resist.
 399. Slow Down, 5.2, Generic
 #(Tag:time)Slow down time for everything except yourself. More energy expended yields slower time.
-400. Superhot, 6.2, SUPER HOT
-#(Tag:time)Time moves relative to you: it slows as you slow and speeds as you speed, stopping if you stand still. Strong enough targets may resist or ignore it.
+400. SUPER HOT, 6.2, SUPER HOT
+#(Tag:time)Time moves relative to you, the slower you go the slower time moves and the faster you go, the faster time moves, if you stand still, so will the world. Strong enough targets may be able to resist or ignore the effect. Has high energy expenditure to maintain and energy drains faster the slower you go.
 401. Doppelganger, 3.7, Generic
 #(Tag:summon)Produce a seamless doppelganger you control mentally, though it has none of your abilities. You may maintain a number equal to your ability slot count.
 402. Clone Split, 4.2, Generic
@@ -847,19 +847,19 @@
 424. Metallica, 4.8, Generic
 #(Tag:bio)(Tag:earth)(Tag:kinesis)Precisely manipulate and sense all iron in a 10-meter radius, forming elaborate constructs or blades from a target's blood. Can control blood inside living beings.
 425. Glass Manipulation, 3.1, Generic
-#(Tag:kinesis)Telekinetically control glass and glass-based objects within your sensory range.
-426. Oil Manipulation, 4.8, Generic
-#(Tag:kinesis)Telekinetically control oil and oil-based substances such as petrol, fuel, asphalt, crude oil, and plastic within your sensory range.
+#(Tag:deleted)(Tag:kinesis)Telekinetically control glass and glass-based objects within your sensory range.
+426. Hydrocarbon Manipulation, 4.8, Generic
+#(Tag:kinesis)Allows the user to sense and exert control over Hydrocarbon Molecules, allowing them to control Oils, most plastics, oil based substances, most natural gasses, etc. but cannot exert control over Carbon or Hydrogen individually. The more energy they expend, the greater their range and control.
 427. Silicon Manipulation, 5.7, Generic
 #(Tag:kinesis)Telekinetically shape and control silicon down to an atomic level, including glass, sand, quartz, silicone, and most electronics within your sensory range.
 428. Plastic Manipulation, 3.8, Generic
-#(Tag:kinesis)Telekinetically control plastic and plastic-based substances and objects within your sensory range.
+#(Tag:deleted)(Tag:kinesis)Telekinetically control plastic and plastic-based substances and objects within your sensory range.
 429. Fabric Manipulation, 4.2, MHA
 #(Tag:kinesis)(Tag:nature)Telekinetically control fabric within your sensory range, including cotton, silk, wool, and kevlar. Can create your own clothes or turn enemies' clothes against them.
 430. String Manipulation, 5.6, Generic
-#(Tag:kinesis)Generate and manipulate supernaturally durable strings with supernatural precision. You lose control if they lose contact with your body.
+#(Tag:deleted)(Tag:kinesis)Generate and manipulate supernaturally durable strings with supernatural precision. You lose control if they lose contact with your body.
 431. Copper Manipulation, 3.7, Generic
-#(Tag:earth)(Tag:kinesis)Telekinetically control copper and copper-based constructs within your sensory range.
+#(Tag:deleted)(Tag:earth)(Tag:kinesis)Telekinetically control copper and copper-based constructs within your sensory range.
 432. Rust Inducement, 1.4, Generic
 #(Tag:alter)(Tag:necro)Induce rust in metals through physical contact.
 433. Gold Manipulation, 3.2, Generic
@@ -878,8 +878,8 @@
 #(Tag:enhancer)Gain superhuman power: run faster than a train, punch harder than a missile, and shrug off tank shells, all scaling with physical stats. Training results are considerably enhanced.
 440. Haki, 6.3, One Piece
 #(Tag:enhancer)(Tag:mental)(Tag:sense)(Tag:spirit)Harness willpower physically to reinforce things, gain extrasensory perception, and exert spiritual pressure. Can train in all Haki types.
-441. Conqueror's Haki, 4.8, One Piece
-#(Tag:enhancer)(Tag:mental)(Tag:spirit)Exert your willpower as a wave of power that knocks unconscious those with weaker willpower.
+441. Conquerors Haki, 4.8, One Piece
+#(Tag:enhancer)(Tag:mental)(Tag:spirit)Allows the user to unleash their willpower as a circular wave of mental pressure that can stun or knock out targets who are weaker than the user or those of weaker willpower. Through extreme training and talent, the user can reach Advanced level which allows them to imbue their Conquerer's Haki into their body and weapons to greatly amplify their power. The power of their Haki scales with their willpower and the amount of energy they exert.
 442. Armament Haki, 4.5, One Piece
 #(Tag:enhancer)(Tag:spirit)Reinforce your body or a held object with an invisible hardening forcefield that can touch the intangible. At higher mastery it can be projected.
 443. Observation Haki, 5.6, One Piece
@@ -891,7 +891,7 @@
 446. Blood Tax, 3.8, Generic
 #(Tag:blood)(Tag:passive)(Tag:recovery)Whenever someone injures you, they lose a portion of energy or stamina to you, letting you recover even while damaged.
 447. Hook & Line, 3.4, Generic
-#Conjure an energy hook-and-line usable as a weapon. Wounding someone with the hook lets you reel them to you, one target at a time.
+#(Tag:deleted)Conjure an energy hook-and-line usable as a weapon. Wounding someone with the hook lets you reel them to you, one target at a time.
 448. Minefield, 4.1, Unordinary
 #(Tag:neutral)Conjure a grid pattern along terrain and detonate sections of it through the grid.
 449. Density Manipulation, 4.8, Generic
@@ -966,8 +966,8 @@
 #(Tag:ice)(Tag:kinesis)(Tag:recovery)(Tag:transformation)You are everything ice: plunge worlds into an ice age, rebuild your body from ice, or unleash absolute-zero temperatures at will.
 484. Phoenix Force, 8.5, Marvel
 #(Tag:avian)Hosts the Phoenix Force, source of all life and fire in the universe, but it exerts no control or influence over you; you simply channel its abilities.
-485. Stinger, 8.2, Generic
-#Imbues any attack with absolute inviolability, unstoppable even by dimensional boundaries or reality-warping.
+485. Sting, 8.2, Generic
+#Allows the user to imbue their projectiles with 'Sting', the ultimate weapon of the entities, making their projectile a multi-dimensional attack that can pierce any defense and barrier no matter what. Anything short of reality manipulation this ability will punch through easily.
 486. Rally, 3.3, Generic
 #(Tag:buff)(Tag:mental)Emits a rousing cry that bolsters allies with lion-like courage and endless motivation, turning even a chef into a warrior able to fell a soldier.
 487. Cybele, 5.4, Fate
@@ -999,13 +999,13 @@
 500. Telepathy, 4.9, Generic
 #(Tag:mental)Exchanges thoughts with others within energy-dependent range, reading surface thoughts or communicating one- or two-way. Multiple targets heavily strain your mind.
 501. Crimson Fucker, 6.8, Hellsing
-#You are a descendant of Alucard, the Crimson Fucker himself, sharing all his natural abilities.
+#(Tag:deleted)You are a descendant of Alucard, the Crimson Fucker himself, sharing all his natural abilities.
 502. Basilisk Form, 4.1, Generic
-#(Tag:transformation)Transforms into a basilisk at will, partially or fully. Your gaze petrifies and paralyzes, your scales grant natural armor, and you highly resist curses.
-503. Wendigo, 4.2, Generic
-#(Tag:ice)Transforms into a Wendigo partially or fully. Grants increased ice affinity, enhanced physical stats, blizzard summoning, and supernatural tracking, but may instill human-flesh appetite.
-504. Oni, 3.4, Generic
-#(Tag:infernal)Transforms into an Oni partially or fully. Grants enhanced physical stats and minor healing, but vulnerability to holy.
+#(Tag:deleted)(Tag:transformation)Transforms into a basilisk at will, partially or fully. Your gaze petrifies and paralyzes, your scales grant natural armor, and you highly resist curses.
+503. Wendigo Form, 4.2, Generic
+#(Tag:ice)Allows the user to transform into a Wendigo a man eating cryptid or a hybrid at will. As a wendigo, they have greatly enhanced physical prowess, immunity to ice based abilities, great ice affinity and the abiltiy summon blizzards and snowstorms into existence. However, instead of consuming energy, this ability consumes hunger, the longer it is active for and the more the user uses the ability the more their desire to eat human flesh grows. If the user grows too hungry the ability cannot be maintained, however if the hunger is sated, the next time the form is used, it will be slightly stronger.
+504. Oni Form, 3.4, Generic
+#(Tag:infernal)Alllows the user to transform into an Oni or an Oni Hybrid at will, an Oni being and Eastern species of demon/ogre. As an Oni, they gain increased physical prowess and recover from injuries faster, but in exchange, they are rendered vulnerable to Holy attacks.
 505. Phoenix Form, 6.7, Generic
 #(Tag:air)(Tag:avian)(Tag:fire)(Tag:life)(Tag:recovery)(Tag:transformation)Transforms into a Phoenix partially or fully. Grants enhanced physical stats, major fire affinity, incredible regeneration, and revival from death once every 30 days.
 506. Tinker - Redundant, 1.2, Generic
@@ -1082,8 +1082,8 @@
 #(Tag:buff)(Tag:debuff)(Tag:holy)"Let there be judgment." Casts judgment based on target karma; against irredeemable evil by a positive-karma user, victim power drops 10x while your power rises 10x against them. 8-hour cooldown.
 542. Salt King, 6.7, Generic
 #(Tag:earth)(Tag:transformation)Turns you into the Salt King, creating, controlling, and transmuting targets into supernaturally powerful salt within eyesight range. Targets need at least your parity to resist transmutation.
-543. Gravity, 5.5, Generic
-#(Tag:gravity)Creates and controls gravitational fields.
+543. Gravity Field, 5.5, Generic
+#(Tag:gravity)Allows the user to create gravitiation fields under their contro, letting them throw targets around, fly, crush an area, increase and decrease weight etc. the more energy they expend, the greater their control over the gravitational fields they create.
 544. Gravity Manipulation, 7.7, Generic
 #(Tag:gravity)Accurately controls gravity on a massive scale: invert gravity to hurl islands skyward, craft imitation black holes, or crush with extreme gravity. Limited by imagination and gravity's power, with training able to remove a planet's gravity.
 545. Optimization, 5.2, Generic
@@ -1137,7 +1137,7 @@
 569. Life Radar, 2.8, Generic
 #(Tag:life)(Tag:sense)Detects all lifeforms and shapes within a 100-meter radius, expandable with training.
 570. Devil Control, 8.3, Generic
-#(Tag:infernal)Completely and absolutely controls any lesser being, but you must first prove they are lesser.
+#(Tag:deleted)(Tag:infernal)Completely and absolutely controls any lesser being, but you must first prove they are lesser.
 571. Arbor, 4.6, MHA
 #(Tag:nature)Creates and extends controllable, reinforceable wood constructs from your body.
 572. Contractual Recreation, 4.0, Jujutsu Kaisen
@@ -1158,8 +1158,8 @@
 #(Tag:space)(Tag:time)A True Magic that lets you manipulate parallel worlds.
 580. Heaven's Feel, 9.0, Fate
 #(Tag:recovery)(Tag:spirit)A True Magic that turns your soul into an immortal, high-dimensional entity generating infinite energy.
-581. Denial of Nothingness, 9.2, Fate
-#A True Magic that lets you create anything creatable, given enough energy.
+581. True Creation, 9.2, Fate
+#Allows the user to expend their energy to bring about the miracle of creation, as long as they use enough energy they can create anything in their imagination proportional to the amount of energy they expend.
 582. Lycanthropy, 5.8, Generic
 #(Tag:beastkin)(Tag:enhancer)(Tag:recovery)(Tag:sense)(Tag:transformation)Lets you transform into a werewolf with enhanced physical abilities and common werewolf traits. You can spread it to turn others into werewolves.
 583. Despair Aura I, 1.3, Generic
@@ -1193,7 +1193,7 @@
 597. Azure Dragon Form, 7.8, One Piece
 #(Tag:air)(Tag:draconic)(Tag:electric)(Tag:fire)(Tag:transformation)Lets you transform into a giant Eastern Azure Dragon or hybrid at will, massively boosting physical abilities. Grants elemental breath attacks like fire, lightning, and air, plus fire clouds to lift things or fly.
 598. Buddha Form, 6.8, One Piece
-#(Tag:transformation)Lets you transform into a giant golden Buddha statue, massively boosting physical abilities. Grants golden shockwaves and near-invulnerability to most damage in this form.
+#(Tag:deleted)(Tag:transformation)Lets you transform into a giant golden Buddha statue, massively boosting physical abilities. Grants golden shockwaves and near-invulnerability to most damage in this form.
 599. Cow Form, 2.6, One Piece
 #(Tag:transformation)Lets you transform into a cow or cow hybrid at will, boosting physical abilities, vitality, and stamina. Grants bovine traits while transformed.
 600. Sea Snake Form, 5.8, Generic
@@ -1205,9 +1205,9 @@
 603. Pearl Jam, 3.9, Generic
 #(Tag:alter)(Tag:recovery)Lets you imbue Pearl Jam into your cooking to drastically improve it. Based on food quality, ingredients, and your power, it gains effects like healing and curing illness.
 604. Trace On, 3.8, Generic
-#Lets you create weapons from magical energy as long as you know their construction. Stronger weapons cost more energy.
-605. Structural Analysis, 3.1, Fate
-#(Tag:sense)Lets you run energy through an object or construct to build a detailed mental blueprint, revealing weaknesses and flaws.
+#(Tag:deleted)Lets you create weapons from magical energy as long as you know their construction. Stronger weapons cost more energy.
+605. Structural Grasping, 3.1, Fate
+#(Tag:sense)Type Moon - Allows the user to enact Structural Grasping, letting them run through energy through an object or an item to acquire a detailed breakdown of their structure and design as if they were viewing its blueprint.
 606. Hound Nose, 2.6, Generic
 #(Tag:passive)(Tag:sense)Passively boosts your smell to supernatural levels, letting you pick out one scent in a hundred and track week-old scents across a city. Can be further augmented with energy.
 607. Hawk Eyes, 2.8, Generic
@@ -1242,34 +1242,34 @@
 #(Tag:enhancer)(Tag:infernal)(Tag:transformation)Lets you tap inner demonic power to transform into a Devil form, greatly enhancing physical abilities and power. As a normal human you could tear tanks apart barehanded, scaling with your abilities.
 622. Sin Devil Trigger, 7.3, Devil May Cry
 #(Tag:enhancer)(Tag:infernal)(Tag:transformation)Lets you ascend your Devil form to its apotheosis, massively boosting power and physical abilities and wielding pure demonic power to boost existing abilities. Burns stamina and health extremely quickly; a wall-breaking fireball could annihilate city blocks.
-623. Angel Form, 4.7, Generic
-#(Tag:holy)Lets you transform into an angel or angel hybrid, boosting physical stats and energy. Lets you infuse abilities and items with holy energy and fly with wings.
+623. Angel Spark, 4.7, Generic
+#(Tag:holy)Allows the user to tune into their inner Angelic Power, letting them take on the form of an angelic entity. In this form, they gain increased physical prowess, wings, and a boost to their energy output that is even further augmented when it comes to Light and Holy abilities. In addition, they possess increased magical resistance and the ability to naturally use [Smite](Rare) at will without using up an ability slot. Angel Spark can be supplemented by using Items during the transformation in order to temporarily turn them into a Holy Armament which grants them the holy element and bolsters their capabilities.
 624. Archangel Form, 7.4, Generic
-#(Tag:holy)Lets you transform into an archangel or archangel hybrid, massively boosting physical stats. Lets you infuse abilities and items with pure holy energy and intuitively use blessings, healing, protection, and all Holy Abilities below Elite Rank.
+#(Tag:deleted)(Tag:holy)Lets you transform into an archangel or archangel hybrid, massively boosting physical stats. Lets you infuse abilities and items with pure holy energy and intuitively use blessings, healing, protection, and all Holy Abilities below Elite Rank.
 625. New Order, 7.4, MHA
 #(Tag:alter)Lets you place RULES on the world or objects, only as strong as you are. Examples include strengthening an object or granting yourself "Can grab lightning." Requires knowing a target's self-associated name, except for objects. Limited to 2 orders at once, increasable with training; stronger orders cost more energy.
 626. Word Magic, 6.4, Generic
 #(Tag:alter)(Tag:ice)Lets you actualize words written in the air, such as FREEZE to freeze, IMMOVABLE to pin mid-air, and BURN to ignite. Words too strong for your level fail.
 627. Life Fiber Creation, 5.8, Kill La Kill
 #(Tag:life)Lets you convert lifeforce into Life Fibers, stronger than any artificial material yet more elastic than silk. You can freely control them and surround yourself to significantly boost physical abilities.
-628. Life Fiber hybrid, 6.8, Generic
-#(Tag:life)(Tag:transformation)Your body is infused with Life Fibers, granting massively superhuman physical abilities, incredible healing, and immense vitality. Wounds pull back together, even rejoining halves split apart.
+628. Life Fiber Merging, 6.8, Generic
+#(Tag:life)(Tag:transformation)Allows the user to produce Life Fibers inside of their body that merge with their flesh and temporarily transfrom them into a Life Fiber Hybrid, greatly enhancing their physical prowess and combat ability while granting them extreme regenerative ability as the Life Fibers actively regenerate and stitch their body together to the point where they can even be split in half and the fibers will still bring them together. However, maintaining this ability taxes the users vitality. When the ability is deactivated, the life fibers will rapidly dissolve back into the user before returning to regular biological material.
 629. Infernal Chains, 3.8, Generic
 #(Tag:infernal)Lets you conjure infernal barbed chains to bind foes or wield as weapons.
 630. Angel Style, 2.7, Generic
 #(Tag:enhancer)(Tag:holy)(Tag:passive)One Punch Man, Puri Puri Prisoner - For each % of skin uncovered, energy output and physical abilities rise by the same %, reaching 2x when fully naked.
 631. Heavenly Restriction, 5.2, Jujutsu Kaisen
 #(Tag:enhancer)(Tag:meta)While active, you cannot use energy or mana in any way. In exchange, physical abilities rise with your energy reserves, you are immune to spells cast directly on you, and you cannot be detected or directly targeted by magical means.
-632. White Tiger Form, 3.1, Generic
-#(Tag:transformation)Lets you transform into a snow tiger or hybrid, gaining enhanced senses, predatory instincts, natural weapons, increased physical stats, and tiger traits.
+632. Tiger Form, 3.1, Generic
+#(Tag:transformation)Allows the user to transform into a Tiger or a Tiger Hybrid at will, enhancing their physical prowess, senses, and predatory instincts.
 633. Swamp Logia, 6.2, One Piece
 #(Tag:earth)(Tag:transformation)(Tag:water)Lets you generate, control, create, and turn into mud or bottomless swamp. You can drag objects or people inside to store them in stasis.
 634. Idle Death Gamble, 5.5, Jujutsu Kaisen
 #(Tag:alter)(Tag:spirit)(Tag:transformation)See https://jujutsu-kaisen.fandom.com/wiki/Idle_Death_Gamble
 635. Susanoo, 4.6, Naruto
 #(Tag:spirit)Lets you form a humanoid energy construct around your body with exceptional defense for attack and defense, while retaining selective intangibility to act from inside. Starts skeletal, growing stronger and more complete with training.
-636. Perfect Mangekyo Sharingan - Sasuke, 6.1, Naruto
-#Grants Sasuke Uchiha's Mangekyo Sharingan plus enhanced normal Sharingan abilities. Lets you summon and control Amaterasu and summon a Susanoo.
+636. Eternal Mangekyo Sharingan - Sasuke, 6.1, Naruto
+#Allows the user to wield the power of the Mangekyo Sharingan of Sasuke Uchiha, a sharingan which has been perfected. In addition to granting extreme visual prowess, photographic memory, and the ability to cast illusions, the Mangekyo Sharingan of Sasuke allows the user to naturally use both the Amaterasu(Epic) and Susanoo(Elite) abilities without the need for ability slots for as long it is active. However, this ability is very taxing on the eyes and consumes Stamina, Vitality and Energy to stay active.
 637. Susanoo Ribs, 3.7, Naruto
 #(Tag:spirit)Lets you form Susanoo's ribs from your energy as durable, selectively intangible defense you can attack from inside.
 638. Barrier, 4.8, Unordinary
@@ -1318,8 +1318,8 @@
 #(Tag:infernal)Lets you directly damage a target by pointing, causing lacerations.
 660. Dark Orb, 2.8, Generic
 #(Tag:dark)Lets you conjure a dark-energy orb to hurl as a projectile.
-661. Internet Access, 3.6, Generic
-#(Tech) Lets you access your local world's internet through your mind to instantly look up information.
+661. Network Access, 3.6, Generic
+#(Tech)Allows the user to access the internet and connected data networks through interfacing with them through electromagnetic waves that grant them access to the networks of the devces they can reach. While connected to the network, the user can navitage that network with their mind and retreive information from those resources easily. But that can prove to be very taxing on their mind.
 662. Frisk, 1.7, Generic
 #(Tag:divination)Lets you see a viewed target's full inventory, clothing, carried items, and a quick summary.
 663. Ripen, 1.2, Generic
@@ -1404,14 +1404,14 @@
 #(Tag:dark)(Tag:infernal)(Tag:martial)(Tag:recovery)(Tag:spirit)Drain lifeforce from grabbed people into yourself if they cannot resist. You can also coat your hand for extra damage or spread it as a medium-sized shield.
 703. Polymerization, 4.3, Generic
 #(Tag:spirit)(Tag:summon)Temporarily fuse your familiars together or with yourself. Stronger fusions cost more energy, and maintaining fusion drains energy over time.
-704. Viltrumite Physiology, 7.1, Invincible
-#(Tag:transformation)You are a pure-blooded Viltrumite with insane durability, space flight, incredible physical and sensory abilities, and a highly adaptable body.
-705. Kryptonian Physiology, 8.8, DC
-#(Tag:transformation)You are a pure-blood Kryptonian; yellow sun supercharges your cells, granting heat vision, ice breath, tactile telekinesis, flight, super physique, and all other Kryptonian abilities. Longer sunlight soak strengthens these abilities and permanently improves energy reserves.
-706. Saiyan Physiology, 6.8, Dragon Ball
-#(Tag:transformation)You are a pure-blooded Saiyan with superhuman physique, rapid improvement, and abnormal energy. Your tail paralyzes you when grabbed, full moon turns you into a mindless Oozaru with massively enhanced stats, and near-death recovery makes you significantly stronger.
+704. Viltrumite Form, 7.1, Invincible
+#(Tag:transformation)Allows the user to temporarily assume the abilities of a Pure Blooded Viltrumite, granting them extreme durability, resilience, great physical strength and speed, and the ability to survive even normally lethal wounds.
+705. Kryptonian Form, 8.8, DC
+#(Tag:transformation)Allows you to temporarily assume the form of a pure-blood Kryptonian, a yellow sun supercharges your cells granting you numerous superpowers such as heat vision, ice breath, tactile telekinesis, flight, and super physique alongside all of the abilities a Kryptonian otherwise has. The longer you soak in sunlight the stronger these abilities are, sunlight also permanently improves your energy reserves.
+706. Saiyan Form, 6.8, Dragon Ball
+#(Tag:transformation)Allows you to temporarily assume the form of a pure-blooded saiyan warrior, giving you a superhuman physique that can improve rapidly and abnormal energy levels, you also have a tail that is your weakness, paralyzing you when grabbed, under the full moon you turn into an Oozaru with massively enhanced stats but is mindless. Also, recovering from near-death injuries makes you significantly stronger. Just don't expect to bust planets too soon, it took Goku 20 years and training all his life to do so.
 707. Soft & Wet, 5.8, JoJo
-#Release soap bubbles that plunder a property from touched targets, like floor friction to make it slippery or hydration to cause thirst.
+#(Tag:deleted)Release soap bubbles that plunder a property from touched targets, like floor friction to make it slippery or hydration to cause thirst.
 708. Soften, 3.4, Generic
 #(Tag:alter)Soften touched objects while retaining other properties; steel becomes dough-like but stays as heavy and durable. Shapes stay changed while hardness slowly returns after release.
 709. Harden, 3.5, Generic
@@ -1441,15 +1441,15 @@
 721. Tetramand Transformation, 5.5, Ben 10
 #(Tag:enhancer)(Tag:transformation)Take Tetramand or Tetramand-hybrid form, among the galaxy's mightiest warriors with durable red skin, four eyes, four arms, and second-to-none strength.
 722. Cement Manipulation, 3.9, MHA
-#(Tag:kinesis)Conjure and manipulate cement into constructs, walls, weapons, and back into less solid form.
-723. Slime Physique, 3.1, Generic
-#(Tag:amorphous)Transform fully or partially into slime, mostly negating physical damage and exploiting a slimy physique.
+#(Tag:deleted)(Tag:kinesis)Conjure and manipulate cement into constructs, walls, weapons, and back into less solid form.
+723. Slime Form, 3.1, Generic
+#(Tag:amorphous)Allows the user to transform into the Archetypal Slime, either fully or partially. A slime being a gelatinous creature whose vital organs are stored in a core. As a slime, they are incredibly resistance towards all physical attacks and have a supremely malleable physique but will be inflicted with severe damage if their core is compromised.
 724. Cursed Flames, 3.4, Terraria
 #(Tag:curse)(Tag:fire)Throw green fireballs that cannot burn inanimates, bouncing off them like rubber, but devour living flesh and stick like glue.
 725. Burning Sea, 4.3, Calamity Mod
 #(Tag:curse)(Tag:fire)(Tag:infernal)Throw crimson flame balls strengthened by water; dousing with water is like throwing crude oil on fire.
-726. Brimstone, 4.7, Calamity Mod
-#(Tag:infernal)Conjure and wield Brimstone Crag flames tempered by tortured souls' agony. Incomparably hot, incinerating everything and burning intangibles like souls.
+726. Brimstone Crag Flame, 4.7, Calamity Mod
+#(Tag:infernal)Allows the user to summon and control the Flames of the Brimstone Crag, crimson flames fueled by the souls of the damned that burn with insane heat. These flames are incredibly difficult to put out by mundane means and can even incinerate intagible entities and the mind. But also consumes a lot of energy.
 727. Ranchor, 6.7, Calamity Mod
 #(Tag:fire)(Tag:infernal)(Tag:space)(Tag:spirit)Wield Ranchor, ultimate brimstone flames of malice and revenge. Burns anything including souls, energy, and flesh, but also burns the user to a lesser extent with more use.
 728. Banishing Fire, 3.6, Generic
@@ -1463,9 +1463,9 @@
 732. Rabbit Form, 2.7, Generic
 #(Tag:enhancer)(Tag:sense)(Tag:transformation)Partially or fully transform into a rabbit or hybrid, gaining enhanced physicality focused on leg jumping and kicking, plus a substantial libido boost.
 733. Ifrit, 5.2, Generic
-#(Tag:fire)Transform into an Ifrit, a fire-born spirit. Cannot use water or water-based abilities as one, but fire abilities are much stronger with natural flame generation.
+#(Tag:deleted)(Tag:fire)Transform into an Ifrit, a fire-born spirit. Cannot use water or water-based abilities as one, but fire abilities are much stronger with natural flame generation.
 734. Ifrit Sultan, 6.6, Generic
-#(Tag:draconic)(Tag:fire)(Tag:water)Transform into an Ifrit Sultan, ancient flame spirit ruling fire spirits with ancient-dragon-level power. Strengthens all fire abilities, disables cryo/hydrokinesis, and grants natural pyrokinesis plus fire immunity.
+#(Tag:deleted)(Tag:draconic)(Tag:fire)(Tag:water)Transform into an Ifrit Sultan, ancient flame spirit ruling fire spirits with ancient-dragon-level power. Strengthens all fire abilities, disables cryo/hydrokinesis, and grants natural pyrokinesis plus fire immunity.
 735. More Eyes, 1.0, Generic
 #(Tag:bio)(Tag:ocular)Manifest eyes anywhere on your body without disorientation from multiple vision.
 736. Extension, 4.8, Generic
@@ -1527,7 +1527,7 @@
 764. Blood Burn, 3.8, Generic
 #(Tag:blood)(Tag:enhancer)(Tag:life)Significantly enhance physical stats by burning blood, losing 1ml per second. Can raise to 10ml per second for up to 5x strength.
 765. Devil Regeneration, 5.9, Generic
-#(Tag:healing)(Tag:infernal)Gain extreme regeneration regrowing limbs in seconds, fueled by others' blood rather than energy. More blood means more regeneration; a large cup restores near-death to peak.
+#(Tag:deleted)(Tag:healing)(Tag:infernal)Gain extreme regeneration regrowing limbs in seconds, fueled by others' blood rather than energy. More blood means more regeneration; a large cup restores near-death to peak.
 766. Tower of Babel, 5.6, Generic
 #(Tag:mental)Scramble senses of everyone within 500 meters, causing extreme disorientation like falling sensation, nausea, vertigo, tinnitus, deafness, etc.
 767. Reactive Activation, 2.7, Generic
@@ -1633,7 +1633,7 @@
 817. Force of Will, 4.5, Generic
 #(Tag:mental)While active, makes you immune to status effects like fear, panic, sadness, and despair, leaving you highly motivated and determined.
 818. Frenzy, 3.2, Generic
-#Makes you immune to negative mental effects while blood-drunk, trading most inhibitions for a large instinct boost.
+#(Tag:deleted)Makes you immune to negative mental effects while blood-drunk, trading most inhibitions for a large instinct boost.
 819. Trance, 3.7, Generic
 #(Tag:command)(Tag:mental)Lets you snap your fingers to entrance anyone focused on you, letting you subtly influence them until harm snaps them out. Fails on the strongly strong-willed or stronger than you.
 820. Suggestion, 3.9, Generic
@@ -1653,7 +1653,7 @@
 827. Kingdom Soul, 7.7, Generic
 #(Tag:meta)(Tag:necro)(Tag:space)(Tag:spirit)(Tag:summon)Makes your soul a shapeable kingdom that absorbs souls of those you kill or wayward souls you find. You can house them, manifest them as physical soldiers, sacrifice them for power, or burn them to recover energy.
 828. Pixie Power, 2.7, Generic
-#(Tag:fae)Lets you transform into a pixie at will, gaining flight, energy reserves, and agility at the cost of size and physical power.
+#(Tag:deleted)(Tag:fae)Lets you transform into a pixie at will, gaining flight, energy reserves, and agility at the cost of size and physical power.
 829. Ajin Form, 6.8, Ajin
 #(Tag:recovery)(Tag:transformation)Makes you an Ajin with biological immortality, resurrecting at peak condition from your largest remaining flesh via Invisible Black Matter at no energy cost. You can summon IBM shadows to fight, defend, or scout on your orders.
 830. Measure King, 1.3, Generic
@@ -1666,16 +1666,16 @@
 #(Tag:alter)(Tag:illusion)(Tag:mental)(Tag:stealth)Makes people incapable of perceiving you as a threat, even while harming them, granting immunity to hostility. Fails against far superior mental abilities or divine-level beings stronger than you.
 834. The Imp, 7.1, Worm
 #(Tag:mental)(Tag:stealth)Makes you unperceivable while active, wiping you from minds and recordings the moment you are noticed. People can still deduce your existence and counter you without remembering you.
-835. Majin Physique, 7.6, Dragon Ball
-#(Tag:enhancer)Gives you a boneless, organless Majin body that freely morphs and regenerates from any piece larger than a walnut while you have energy. You gain greatly enhanced stats and can absorb others for a portion of their strength.
+835. Majin Form, 7.6, Dragon Ball
+#(Tag:enhancer)Allows you to temporarily turn into a kin of Majin Buu, while transformed your body is compromised of amorphous pink blob like flesh with no bones or organs, you can freely morph your body are regeneratively immortal as long a part of your body larger than a walnut remains and you have energy to fuel your regeneration. In addition, you possess greatly enhanced physical stats and the ability to absorb other people to gain a portion of their strength which will be added to this form.
 836. Disaster nature, 7.3, Jujutsu Kaisen
 #(Tag:nature)(Tag:spirit)Grants Hanami-level plant control, creating energy plants, binding roots, and energy-draining cursed buds. You can draw energy from existing nature to recharge.
 837. Shark Physique, 2.8, Generic
 #(Tag:aquatic)(Tag:enhancer)(Tag:transformation)(Tag:water)Lets you turn into a shark or shark hybrid at will, gaining enhanced stats boosted further underwater, razor teeth able to tear metal, water affinity, and other shark traits.
 838. Octopus Physique, 3.2, Generic
 #(Tag:aquatic)(Tag:enhancer)(Tag:transformation)(Tag:water)Lets you transform into an octopus or octopus hybrid at will, gaining enhanced stats boosted underwater, independent body control, slow limb and organ regeneration, and other octopus traits.
-839. Minotaur, 4.7, Generic
-#Lets you fully or partially transform into a minotaur, gaining massively enhanced strength, stamina, durability, and regeneration at the cost of inhibitions. Training improves control.
+839. Minotaur Form, 4.7, Generic
+#Allows the user to take on the form of the Legendary Minatour, granting them tremendous strength, endurance and vitality in exchange for losing their inhibitions and greatly amplified impulses. In addition, while in this form they recover from wounds very quickly. With training the user may attain greater control over this form.
 840. Outgun, 2.4, Generic
 #(Tag:tech)(Tag:transformation)Lets you transmute touched material into any known gun plus bullets. Gun power scales with material quality.
 841. Capture Token, 4.5, Generic
@@ -1685,7 +1685,7 @@
 845. Crystal Caesar, 5.2, Generic
 #(Tag:earth)(Tag:summon)Lets you create and finely control gem-like crystals, even as powder. You can make semi-autonomous crystal golems that crumble when disabled and slowly drain energy.
 846. Weaver, 3.0, Generic
-#Lets you conjure energy threads you control like limbs, with strength and number scaling with energy spent. Threads dissipate once detached from you.
+#(Tag:deleted)Lets you conjure energy threads you control like limbs, with strength and number scaling with energy spent. Threads dissipate once detached from you.
 847. Kirin Physique, 4.9, Monster Hunter
 #(Tag:enhancer)Lets you transform into a Kirin or Kirin hybrid, gaining enhanced stats, speed, and lightning affinity, plus the ability to call down powerful lightning bolts.
 848. Remember Me?, 4.1, Generic
@@ -1730,8 +1730,8 @@
 #(Tag:enhancer)Lets you modestly boost all physical capabilities equally with energy. Boost scales with base stats and energy spent.
 868. Physical Enhancement, 3.5, Generic
 #(Tag:enhancer)Lets you boost all physical capabilities equally with energy. Boost scales with base stats and energy spent.
-869. Iron Skin, 2.4, Generic
-#(Tag:earth)Reinforces your skin to metal-like toughness and mass, letting even a base human shrug off bats, small-caliber bullets, and survive car crashes. It can slow your movement.
+869. Iron Flesh, 2.4, Generic
+#(Tag:earth)Allows the user to reinforce their skin and flesh while increasing their toughness and density, making flesh resemble metal more than frail biology. Increasing the users durability and weight in exchange for hindering their mobility and speed. The more energy they expend, the tougher their flesh becomes.
 870. Aura, 5.9, RWBY
 #(Tag:enhancer)(Tag:spirit)Covers you in a soul barrier that boosts physical capabilities and absorbs attacks, letting you survive at least one hit before breaking.
 871. Alexandria, 7.5, Worm
@@ -1881,7 +1881,7 @@
 944. Blood Portals, 3.6, Generic
 #(Tag:blood)(Tag:life)(Tag:movement)You create portals by sacrificing health, a two-way portal costs 10% of maximum health. While portals remain open, you lose access to that 10% of maximum health and it cannot heal.
 945. Shadowverse, 6.6, Invincible
-#(Tag:dark)(Tag:stealth)You can access the shadow-verse by sinking into shadows. Inside you can jump from shadow to shadow, bring people in and trap them with its monsters, or bring monsters out.
+#(Tag:dark)(Tag:deleted)(Tag:stealth)You can access the shadow-verse by sinking into shadows. Inside you can jump from shadow to shadow, bring people in and trap them with its monsters, or bring monsters out.
 946. Bloody Escalation, 6.7, Generic
 #(Tag:enhancer)(Tag:life)"Power for Pain" With Blood Escalation active, every 1% of health lost increases all stats by 1%. The increase resets when you leave combat.
 947. D4C, 8.8, JoJo
@@ -1922,8 +1922,8 @@
 #(Tag:enhancer)(Tag:meta)You can freely change attributes through forms. Offensive Form trades defence for energy output and speed, Defensive Form raises defense and resilience while lowering speed, Recovery Form trades strength for regeneration and recovery, and Speed Form drastically raises speed while sacrificing attack and defence. You can also create your own forms.
 965. Murder Swarm, 3.6, Generic
 #(Tag:transformation)You can transform into a murder of 100 crows at will. You perfectly control each crow and are equally each crow, take 1% damage per crow killed, can partially transform to send messages or spy, and return to 100 crows once fully healed even after losing 30.
-966. Blood Overdrive, 3.8, Generic
-#(Tag:blood)"Go beyond you" For 10 minutes all parameters are greatly increased and all regenerations amplified. Afterwards, all parameters and regenerations are greatly decreased for 24 hours. 5 day cooldown.
+966. Extreme Overdrive, 3.8, Generic
+#(Tag:blood)"Go beyond you" For 10 minutes all parameters are greatly increased, all regenerations are amplified. After the 10 minutes are up, all parameters and regenerations are greatly decreased for 24 hours. 5 Day cooldown.
 967. Limit Break, 5.3, Generic
 #(Tag:enhancer)(Tag:recovery)"Time to go all out" Upon activation, for 4 minutes and 11 seconds all parameters and energy regeneration increase, plus ability slots are removed so you can use all abilities at once. This places immense strain on your body and can kill you. 7 day cooldown.
 968. Phosphorus, 5.3, Creature Commandos
@@ -1969,7 +1969,7 @@
 988. Metallurge, 6.4, Generic
 #(Tag:earth)(Tag:meta)You can conjure and control any metal whose composition you know, even legendary metals like Uru, Adamantium, or Vibranium. Higher-rank metals cost more energy, and you cannot permanently create metals stronger than your rank.
 989. Threshold, 4.8, Generic
-#While in an active slot, you take no damage from anything below a certain level. Anything that would hurt no more than a light cut is ignored completely.
+#(Tag:deleted)While in an active slot, you take no damage from anything below a certain level. Anything that would hurt no more than a light cut is ignored completely.
 990. Building, 2.5, Generic
 #(Tag:alter)You can perform transmutation on a macro scale. You cannot build complex constructs or small applications, but can turn the ground into a proper building in under an hour. It moves slowly, so combat use is limited.
 991. Compass, 0.2, Generic
@@ -2135,7 +2135,7 @@
 1071. The Tinkerer, 9.4, Worm
 #(Tag:tech)(Tag:tinker)(Tech) Allows you to build Entity technology such as Doomsday Drivers, Multiversal Travel, Time Bombs, and any Tinker specialisation from their universe.
 1072. Tinker - One Punch Man, 7.7, One Punch Man
-#(Tag:kinetic)(Tech) Allows you to build and replicate Metal Knight's technology like mass-produced weapons, Drone Bodies, giant mechs, and large-scale drones, including Dragon Class Mechs with enough time.
+#(Tag:deleted)(Tag:kinetic)(Tech) Allows you to build and replicate Metal Knight's technology like mass-produced weapons, Drone Bodies, giant mechs, and large-scale drones, including Dragon Class Mechs with enough time.
 1073. Tinker - Scraps, 3.0, Generic
 #(Tag:tech)(Tag:tinker)(Tech) - Allows you to build far more functional technology from scraps and easily jury-rig existing tech from subpar materials.
 1074. Tinker - Big MT, 6.7, Fallout
@@ -2150,8 +2150,8 @@
 #(Tag:earth)(Tag:martial)The Hammer of Continental Destruction allows you to conjure an earthen hammer that massively enhances strength and Earth attributes. Strikes reshape terrain, unleash quaking shockwaves that tear hit beings inside out, and with enough power and energy can alter an entire planet in one swing.
 1079. Hulk Out, 7.6, Marvel
 #(Tag:enhancer)(Tag:transformation)You can unleash a Gamma Mutate physique, growing large with godlike physical abilities. Physical strength grows with rage without discernible limit. (Note: Just the basic Hulk transformation, no connection shenanigans.).
-1080. Garm Physique, 6.7, God of War
-#(Tag:enhancer)You can transform into Garm or a Garm hybrid, gaining immense physical abilities and terrifying presence. Your teeth and claws tear even dimensional fabric, creating portals and breaking boundaries.
+1080. Garm Form, 6.7, God of War
+#(Tag:enhancer)You are capable of transforming into Garm or a Hybrid at will, the Hound of Hel. While transformed, You possess immense physical abilities and a terrifying presence. In addition, your teeth and claws can tear apart anything, even the fabric of dimensions, allowing you to chew portals into existence and break dimensional boundaries.
 1081. Ghost Ammunition, 2.7, Generic
 #(Tag:spirit)(Tag:tech)(Tech) Allows you to conjure ghost ammunition for your weapons that mimics normal ammo but costs energy and disappears 1 second after hitting.
 1082. Spectre Ammo, 3.5, Generic
@@ -2315,7 +2315,7 @@
 1161. Void Shadow, 2.2, Legendary Mechanic
 #(Tag:dark)(Tag:sense)(Tag:space)(Tag:summon)Conjure an invulnerable shadow copy of yourself that cannot interact with the world. It moves extremely fast, can disrupt others' vision, and lets you see through its eyes. Lasts 30 minutes at base, one at a time; duration can be increased by training.
 1162. Void Distortion, 5.9, Legendary Mechanic
-#(Tag:alter)(Tag:dark)Pull on the Void Dimension to cause spatial disruptions in the material world. It inflicts massive devastation and damage in exchange for incredibly taxing energy expenditure.
+#(Tag:alter)(Tag:dark)(Tag:deleted)Pull on the Void Dimension to cause spatial disruptions in the material world. It inflicts massive devastation and damage in exchange for incredibly taxing energy expenditure.
 1163. Choices & Choices, 4.3, Generic
 #(Tag:divination)When you need to make a choice, activate to view up to 3 relevant choices and their vague outcomes. For example, [We shouldn't go +reputation with X --Reputation with Y, Z Dies].
 1164. Tinker - Resources, 3.6, Generic
@@ -2533,7 +2533,7 @@
 1270. Creation, 6.2, Generic
 #(Tag:neutral)Create objects and matter with magical energy if you remember exactly how to make them, from phones to gold bars to magical swords. Higher mass and more magical objects cost more energy.
 1271. Inner Gate, 5.3, Re:Zero
-#(Tag:space)You hold an inner gate converting energy into elemental mana for varied elemental magic depending on aptitude.
+#(Tag:deleted)(Tag:space)You hold an inner gate converting energy into elemental mana for varied elemental magic depending on aptitude.
 1272. Highlight, 1.9, Generic
 #(Tag:divination)Mark a target by touch with a Highlight, giving them a colored outline you can see within eyesight range. Visible even if vision-impaired or blocked by obstacles.
 1273. Bequeath, 4.8, Generic
@@ -2728,8 +2728,8 @@
 #(Tag:bio)(Tag:life)Owl's Eyeball is a Branch of Sin expending vitality to form blood orbs you telekinetically control and detonate. Power scales with vitality and blood used.
 1368. Voljang Form, 5.1, Monster Hunter
 #(Tag:enhancer)(Tag:fire)(Tag:transformation)Transform into and maintain a Voljang or hybrid for energy: a towering fire-breathing gorilla with immense strength and volatile temper. Gain enhanced physicality, instincts, rage, fire breath, and body flames; surrendering to rage unlocks a stronger Berserk form.
-1369. Shogun Ceanatour, 4.7, Monster Hunter
-#(Tag:water)Transform into and maintain a Shogun Ceanatour or hybrid for energy: a massive bladed crustacean beast. Gain tough exoskeleton, large bladed arm-limbs, and underwater breathing/movement, but vulnerable when dry.
+1369. Shogun Ceanatour Form, 4.7, Monster Hunter
+#(Tag:water)Allows you to transform into and maintain the form of a Shogun Ceanatour, or a hybrid by expending energy. A Shogun Caenatour is a massive bladed crustacean-like beast. In the Ceanatour form, you are able to cover your body in an incredibly tough exoskeleton and transform their arms into large bladed limbs. You are also able to breathe and move underwater, but are vulnerable to being dry.
 1370. Lunagaron Form, 4.6, Monster Hunter
 #(Tag:enhancer)(Tag:ice)(Tag:transformation)Transform into and maintain a Lunagaron or hybrid for energy: an agile werewolf-like Fanged Beast expelling supercooled mist and icing its body. Gain enhanced physicality, senses, and agility, plus energy-fueled freezing breath and cold armoring ice.
 1371. Velkhana Form, 6.1, Monster Hunter
@@ -3012,3 +3012,153 @@
 #(Tag:teleport)Teleport anything you can precisely locate to anywhere else in the same star system, instantly, via hyperspace. Living cargo arrives nauseated; imprecise coordinates arrive scattered.
 1510. Tinker - AWESOME, 8.2, Satisfactory
 #(Tech) Allows you to build the AWESOME Shop and AWESOME Sink wherever you settle, given materials and a 30-megawatt power feed for the Sink. The Sink recycles anything you feed it into FICSIT coupons, raw ores worth least, complex tech most, each further coupon costing progressively more feedstock. The Shop spends coupons on Satisfactory gacha entries (10 coupons per rarity level), building-part blueprints and customizations, and small shipments of consumables, equipment, and parts; pioneering awards and statues arrive with tickets attached. For more info: https://satisfactory.wiki.gg/wiki/AWESOME_Shop
+1511. Dragon of the Darkness Flame, 5.3, YuYu Hakusho
+#(Tag:dark)(Tag:draconic)(Tag:fire)(Tag:infernal)The Dragon of the Darkness Flame allows the user to summon black flames from the deepest depths of the Demonic Realm in the form of vicious dragons that incinerate anything in their path with tremendous destructive power. However, this power is so destructive and uncontrollable that it will burn the user too upon use and can even cause them to lose control over it or even turn on the user without sufficent control. However with sufficent mastery these side effects can be mitigated and overcomed.
+1512. Searing Sunlight, 3.9, Generic
+#(Tag:alter)(Tag:fire)(Tag:light)Allows the user to amplify the potency in their sensory range, turning natural sunlight into searing light that can set targets and large areas on fire. The more they expend, the larger the area they can affect and the more potent the sunlight they can amplify.
+1513. Stoke, 3.6, Generic
+#(Tag:alter)(Tag:fire)Allows you to increase the power and explosiveness of existing fires and fire sources in your sensory range. Such as turning a candle into a bonfire, or making a torchfire explode. The more you stoke a flame, the more energy you have to expend.
+1514. Tundra, 3.2, Epic Battle Fantasy
+#(Tag:ice)Allows the user to strike or stab the ground in order make ice blades and constructs of ice violently burst out of the ground, the power of the ice burst they unleash scales with the amount of power they struck the ground with.
+1515. Big Brother, 5.0, Generic
+#(Tag:divination)(Tag:mental)(Tag:sense)"He is watching” when activated, allows the user to sense all targets in a massive radius and allows them to see through the eyes of all sapient beings in their range. The default range is 500m which increases depending on the level of the users Management and Leadership Skills.
+1517. Tornado, 3.8, Generic
+#(Tag:air)Allows the user to conjure and control Tornadoes, violent rotating columns of air that they can use to send foes flying, decimate areas or just generally toss targets around. The power and scale of their tornadoes scales with the amount of energy they expend.
+1518. Electrify, 3.0, Generic
+#(Tag:buff)(Tag:electric)(Tag:martial)Allows the user to channel violent currents of electricity and lightning though their weapon, enhancing their destructive power and allowing them to electrocute targets on contact. This current conforms to the weapon it is channeled through, appearing sharp in bladed weapons while appearing blunt and heavy with bludgeons. The more energy they expend, the greater the amplification and current.
+1519. Surge, 4.8, Generic
+#(Tag:electric)Allows you to create and control powerful surges of electricity and lightning, allowing you shoot bolts of lightning, unleash currents of electricity like a certain sith lord, electrocute opponents on contact, etc. With training you can improve your control and accuracy.
+1522. Pitfall, 2.6, Generic
+#(Tag:earth)Allows the user to stomp on the ground to create pitfalls on the ground of anywhere within sensory range. The pitfalls are temporary and slowly close themselves.
+1523. Desperado's Cloak, 2.2, Generic
+#(Tag:earth)Allows the user to summon a cloud of blinding sand around the user that they can see through. The more energy they expend, the larger the cloud and the longer it lasts.
+1525. Earthen Artillery, 4.2, Generic
+#(Tag:earth)Allows the user to transmute the earth around them into spears, arrows, and spikes alongside a variety of shaped projectiles that shoot upwards and act as bombardments, dealing extra damage to flying opponents. The more energy they expend, the more bombardments they can unleash with greater power.
+1527. Ground Grasp, 2.4, Generic
+#(Tag:earth)Allows the user to unleash hands and arms from the earth that can burst out and grab, crush and strike their targets. The more energy they expend, the larger and stronger the hands are.
+1528. Sand of Stagnation, 5.2, Generic
+#(Tag:earth)Allows the user to conjure and control translucent sand that has the ability to slow down time on a target that they touch, the greater the surface area of a target they make contact with, the more the sands can slow them down. If you stop putting energy into it, the sands stop slowing targets down.
+1530. Shadow Spike, 2.9, Generic
+#(Tag:dark)Allows the user to summon spikes and blades out of shadows and darkness in their sensory vision to impale their targets. The Shadows Spikes cannot exist in light. The more energy they expend, the stronger the spikes and blades and the more violently they can summon them.
+1531. Shadow Stranger, 2.6, Generic
+#(Tag:dark)(Tag:stealth)While Shadow Stranger is maintained, the users body and clothing absorbs all light and sound that comes into contact with them, making them appear as a living shadow and completely muffling all sounds they make with their physical body.
+1532. Abyss Blade, 4.6, Generic
+#(Tag:buff)(Tag:dark)(Tag:martial)Allows the user to wreathe their weapon or fists in the Abyss, while this does not increase the destructive power of the weapon, Abyss has the ability to continously exhaust and drain energy on contact, allowing their weapons and equipment to more effectivelly cut through or defend against attacks while exhausting the Energy and Vitality of enemies upon contact. The more energy the user expends, the faster they exhaust.
+1533. Shadow Crush, 2.0, Generic
+#(Tag:dark)(Tag:gravity)Allows the user to summon crushing attractive force through shadows and darkened surfaces they are in contact with, forcing the shadows to exert a powerful attractive force that crushes objects that contact with them and stops them from moving. The more energy they expend, the stronger the force.
+1534. Beast In Darkness, 4.8, Generic
+#(Tag:dark)(Tag:enhancer)(Tag:transformation)Allows the user to transform into a large amorphous monster made of shadows when in darkness, greatly augmenting their physical prowess, making them able to shift their body into weapons and increasing their regenerative abilities. But in exchange, they take lethal damage from light which will turn any exposed part into ash and all wounds received in this form reflext on the real body.
+1537. Greater Shapeshifting, 5.5, Generic
+#(Tag:bio)(Tag:transformation)Allows the user to freely alter and morph their flesh to change their form and appearance at will, such as turning their arms into armored blades, changing their appearance completely, and shifting and altering their organs. At this level, the user can alter their body down to the cellular level(Not DNA), being able to freely shape their body to their will, granted that form that still maintain their vital functions and does not break the conservation of mass. Shapeshifted form can be maintained at a constant small energy cost or be made into their 'true' form by expending great amounts of energy.
+1538. Threadmaker, 3.8, Generic
+#(Tag:neutral)Allows the user to conjure and control threads and strings made of energy they can use to slice, retrains and weave at will. The length and strength of the strings scales with the amount of energy the user expends. Once strings lose contact with the users body, they slowly dissipate.
+1539. Blood Stain, 1.8, Generic
+#(Tag:divination)(Tag:life)While this ability is active, you are able to accurately sense and locate your blood anywhere, allowing you to do things such as mark something with your blood to track it, or find an enemy during the fight with your blood that they spilled on themselves.
+1540. Conquest, 8.3, Chainsaw Man
+#(Tag:alter)(Tag:summon)Allows the user to completely and utterly control any being that is "lesser" than them by asserting themselves as absolutely "superior" through dominating them, whether through combat, mental domination or getting them to admit their inferiority to you. Once you establish absolute dominance over them, you can register them as your familiar and bind them to your will fully, even if they were to die, you could still manipulate their corpses.
+1541. Snake Form, 2.7, Generic
+#(Tag:enhancer)(Tag:poison)(Tag:transformation)Allows the user to transform into a Snake or a Snake hybrid at will, granting them increased physical abilities, unnatural flexibility, cold blood, and the ability to generate their own venom that they can inject through their bite whose potency scales with their physical stats.
+1542. Projection, 3.8, Generic
+#(Tag:neutral)Type Moon - Allows the user to wield the power of Projection Magic, letting them to construct the shape and form of an item that they are intimitely and fully familiar with out of their Magical Energy, letting them create near replicas in the form of 'Phantasms' that start fading out of existence over time. The more powerful and complex an object is, the more energy is needed to project it.
+1543. Sacred Angel Spark, 7.4, Generic
+#(Tag:holy)(Tag:light)(Tag:transformation)Allows the user to tune into their inner Angelic Power and push it to its limits, letting them take on the form of a Sacred Angelic being. In this form, they gain massively increased physical prowess and energy output as well as the ability to fly freely. Their true ability in this form is the ability to invoke Sacred Authority which allows them to slot in any Holy Ability Epic Rank and below into their ability slots while it is active. Sacred Angel Spark can be supplemented by using Items during the transformation in order to temporarily turn them into a Sacred Armament which grants them the holy element and greatly bolsters their capabilities.
+1545. Horse Form, 1.5, Generic
+#(Tag:enhancer)(Tag:transformation)Allows the user to transform into a horse or a horse hybrid at will, while transformed they have greater stamina and strength as well leg strength.
+1546. Retrocognition, 4.2, Generic
+#(Tag:divination)Allows the user to view past events that occured in an area as if rewinding the video on a tape, the longer back an event on a place they are trying to view, the more energy they have to expend. However, they can only obtain visual information.
+1547. Wicker, 3.3, Generic
+#(Tag:fire)(Tag:nature)(Tag:summon)Allows the user to unleash branches, brambles and twine from their body and earthen surfaces that they can control to bind and restrain targets. In addition, they can set these wickers on fire at will in order to burn targets. With enough experience and skill, the user can even bind the wicker into a burning wicker man golem to fight on their side.
+1548. Swarm, 4.2, Generic
+#(Tag:bio)(Tag:poison)(Tag:summon)Allows the user to summon and direct swarms of flying insects that can swarm, harass and attack your targets. By expending more energy, you can summon stronger insects that have venom they can inject into targets. The larger and stronge the swarm, the more energy you need to maintain it.
+1549. Blood Drink, 2.4, Generic
+#(Tag:life)(Tag:recovery)Allows the user to drain the lifeforce and vitality of others through biting them and drinking their blood, the amount of health you recover scales with the vitality of the target you drain.
+1550. Physical Release, 3.2, Generic
+#(Tag:martial)(Tag:mental)Allows the user to release the mental restraints of their mind and brain, letting them use 100% of their capacity such as their physical exertion or metabolism. However, this ability does not protect them from the consequences of removing mental limits that exist for a reason.
+1551. Teleporthrow, 1.6, Generic
+#(Tag:movement)Allows the user to conjure a glowing sphere in their hand that is roughly the same mass and size as a baseball, they can throw this ball and whatever surface it impacts, they will be teleported to. Only one ball may be conjured at a time.
+1552. Gravity Ray, 3.7, Generic
+#(Tag:gravity)Allows the user to create a ray of condensed violent fields of gravity that they can unleash as a super heavy and dense beam that rips through objects. The more energy the user expends and the longer they charge for, the more powerful the beam will be.
+1553. Absorption Blade, 5.2, Generic
+#(Tag:alter)Allows you conjure a blade of pure energy that is capable of absorbing elemental effects and assuming their characteristics and charging itself by absorbing them. It can slice a fireball in half and be charged with the fire element. Or break a sealing spell and temporarily gain sealing properties.
+1555. Sense Weapon, 2.1, Generic
+#(Tag:martial)(Tag:sense)Allows the user to sense nearby weapons through walls and any obstacles like a rader, a weapon being an object that was created with the purpose of being used in combat or hurting. The more the user trains and the greater experience they have, the greater their range.
+1556. Tinker - Metal Knight, 7.7, One Punch Man
+#(Tag:tech)(Tag:tinker)Allows the user to design, modify and build technological constructs or contraptions by drawing inspiration from the technology of Metal Knight from One Punch Man and directly replicate his work. Such as mass producing weapons, Drone Bodies, giant mechs, large-scale drones and much, much more. You can even build Dragon Class Mechs if given enough time. Tinker abilities work as tech trees whose effectiveness and range scale with the users experience and skills, and they can also draw inspiration from the users other abilities and traits to incorporate into their tech trees.
+1558. Shufle, 1.7, Generic
+#(Tag:movement)Allows the user to swap their location with any living target they lay their eyes on, the stronger the opponent and the greater the distance, the more energy is consumed.
+1559. Violent Repairs, 3.5, Generic
+#(Tag:recovery)(Tag:tech)Allows you to repair any machine through physical violence just like the Omnissiah intended. While this ability is active, the harder you strike a machine or a mechanical construct, the more repaired they become as the physical force of your attack converts into Repair Energy, don't question how. The amount of repair your strike deals is proportional to how much damage you would have dealt to the machine otherwise.
+1560. Moonlight, 2.3, Generic
+#(Tag:buff)(Tag:dark)(Tag:light)Allows the user to conjure balls of pure moonlight that emits light with the exact properties of natural moonlight, in addition, when exposed to this light, the power of Dark abilities are amplified.
+1561. Vermin bane, 2.0, Overlord
+#(Tag:poison)A special ability developed to deal with Vermin and Insects specifically, allows the user to release aerosol poison from their hands that while doing virtually nothing to humanoid targets, is incredibly deadly and effective against vermins like Rats, Arachnids, Insects and Insectoids and beings which posess a similar physiology.
+1562. Vanished Flames, 5.0, Generic
+#(Tag:fire)(Tag:illusion)(Tag:stealth)"No sound, no memory." The Vanished Flames are flames without sound, light or even an energy signature, even the trained eye would struggle to spot it. A skilled user of the Vanished Flames can even hide the flame from all senses, leaving behind only the burn it inflicts, and the ash it leaves behind.
+1563. Ricochet, 3.0, Generic
+#(Tag:buff)(Tag:martial)By imbuing the weapon you are holding with Ricochet, whenever a projectile fails to pierce an intended target, it will bounce off the surface it impacts and ricochet towards them without losing speed. The amount of times a projectile can richochet scales with your marksmanship skill(Novice/None = 1, Intermediate = 2, Adept = 3 etc.)
+1564. Snipe, 2.2, Generic
+#(Tag:buff)(Tag:martial)Allows you to buff your ranged weapon with Snipe, increasing the speed and accuracy of your next shot before having to be applied again. Charging Snipe on a weapon for longer amplifies the effects.
+1565. Combo Shot, 4.1, Generic
+#(Tag:buff)(Tag:martial)Allows you to imbue your weapon with Combo Shot, creating a phantom duplicate of your next shot with the exact same properties and effect alongside your projectile. According to your Marksmanship skill, The amount of times a projectile can be duplicated can be increased(Novice/None = +1, Intermediate = +2, Adept = +3 etc.) however each duplicate takes more energy.
+1566. Piercing Shot, 2.7, Generic
+#(Tag:buff)(Tag:martial)Allows you to imbue your Ranged Weapon with Piercing Shot, adding speed and increased penetrative power to your next shot, allowing to pierce physical obstacles and barriers easier.
+1567. Sharpshooter of Reversal, 5.2, Generic
+#(Tag:buff)(Tag:martial)When Sharpshooter of Reversal is active, the next attack you unleash with your ranged weapon becomes a "Miracle". The shot will bend causality and luck in order to find it's way to the target, whether that is your target losing their footing and getting hit, or it ricocheting off a fallen leaf to still find its mark. The miracle bullet will somehow find it's mark, even if god himself cannot predict how.
+1568. Blessing of Financial Assistance, 3.2, Generic
+#(Tag:holy)Allows you to pray to, or ask the Heavenly God for financial assistance. The level of financial assistance you receive from the Heavenly God depends on affinity towards Holy, your Alignment and how much you are favored by the Heavenly Realm. You could ask for 5 dollars for a cup of coffee and be granted it easily, and if you are favored enough, you could even be blessed with a pouch of gold if you need it. The financial assistance provided by the Heavenly God is tax free, using this ability in short succession greatly reduces its effectiveness.
+1569. Flirt Inert, 3.6, Generic
+#(Tag:command)"See that door over there? Put the moves on it." Allows you to "flirt" with inanimate objects, that being letting your charm do the speaking instead of your hands or your other skills, depending on your charisma, flirting skills and general appeal, you could talk a door into opening, a security system into shutting down, or your sword into lasting just a little longer. They are still inanimate objects who cannot respond to your flirting and you will look stupid but it can work.
+1570. Tantric Life Creator, 4.1, Generic
+#(Tag:nsfw)(Tag:summon)"Greek god style." Allows you to "bring life" to inanimate materials by spilling your Semen onto them, and by "bringing them to life" that means turning them into golems. The amount of seed you need to animate a golem depends on your own Vitality and the quality of the material you are using. The power of the animated golems also scales with your vitality. If you do not have the right 'Equipment' to 'spill' 'seed' you can temporarily grow one using this ability.
+1571. Supreme Blessing, 6.8, Generic
+#(Tag:buff)(Tag:holy)Allows the user to grant a Supreme Blessing to a target by making contact and suffusing them with Holy Energy, however only one blessing may be applied to a target at a time and the duration of the blessing depends on the amount of energy the user expends. The blessings they can give are: Blessing of Genesis: Continuously applies Elite rank Purification and Regeneration on a target. Blessing of Saint: Greatly increases the targets Energy Output and Energy Regeneration. Blessing of Sentinel: Massively increases the targets Resilience and Resistance towards all magic and negative ailments. Blessing of Champion: Greatly augments all physical attributes of a target alongside their natural vitality and energy regeneration. Blessing of Exaltation: Temporary transforms the race of the target into an Angel(Rare) and grants them all related benefits for the duration.
+1572. Sacred Purification, 5.3, Generic
+#(Tag:holy)(Tag:recovery)Allows you to bathe a target in Sacred Puriication, which purifies and purges all foreign agents and negative ailments from the target such as illness, curses, poison, etc. The scale and potency of the purification scales with the amount of energy expended.
+1573. Scary Monsters, 6.1, JoJo
+#(Tag:bio)(Tag:enhancer)(Tag:transformation)Allows the user to wield the power of the stand of Scary Monsters, allowing them to turn themselves into a Dinosaur form that enhances their physical prowess and senses or letting them turn other living beings into Dinosaurs through physical contact such as turning flies into tiny velociraptors or turning an elephant into a T-Rex and even more different shapes with training. To transform another target into a Dinosaur the user must overpower them first. The greater and larger the target you transform, the more energy they have to expend. The dinosaurs they transform automatically acknowledge them as the alpha and leader but cannot be familiars.
+1574. Gravity Bolt, 3.5, Generic
+#(Tag:gravity)Allows the user to unleash bolts and rays of gravitational energy that exerts great amounts of force and can press enemies down. The power of your gravity bolts scales with the amount of energy you expend.
+1575. Gravity Bomb, 4.0, Generic
+#(Tag:gravity)Allows the user to unleash spheres of compressed gravitational energy that has the ability to explode into attractive force that either crushes targets or repelling force to unleash an explosion of gravity. The power of your gravity bombs scales with the amount of energy expended.
+1576. Gravity Collapse, 5.2, Generic
+#(Tag:gravity)Allows the user to create large areas of extreme gravity in their line of sight, crushing all targets towards the ground with immense gravitational force. The amount of crushing force exerted scales with the amount of energy exerted.
+1577. Orbit Barrier, 3.8, Generic
+#(Tag:gravity)Allows the user to create a barrier of gravitational energy around themselves that automatically works to shift projectiles and attacks away from them by flowing gravity around them like a current. The force of the barrier scales with the amount of energy you expend, but against attacks that are too strong, the force of the barrier may not be enough to divert them.
+1578. Gravity Knuckles, 2.6, Generic
+#(Tag:gravity)(Tag:martial)Allows the user to create spheres of gravity centered on their hands that amplify the power of their blows by making them heavier and denser. The power of the knuckles scales with the amount of energy you expend.
+1579. Fall Away, 4.5, Generic
+#(Tag:gravity)Allows the user to create a large field of gravity around yourself that points away from you, making everything fall away from you. The more energy you expend, the larger an area you can affect.
+1580. Sling, 3.1, Generic
+#(Tag:gravity)Allows the user to affect inanimate objects in their line of vision and imbue them with gravity energy in order to fling them with great speeds towards targets. The more energy you expend, the larger objects you can sling and the faster you can sling them.
+1581. Gravity Jail, 3.6, Highschool DxD
+#(Tag:gravity)(Tag:ocular)The Magic Eye that Shackles, allows the user to create zones of high gravity in their line of sight to crush targets. The more energy they expand, the larger and stronger zones of gravity.
+1582. Raging Fire, 4.6, Generic
+#(Tag:buff)(Tag:debuff)(Tag:enhancer)(Tag:fire)”A heart afire” Allows you to set yourself ablaze to greatly increase your strength and speed, this fire will damage your body continuously for as long as it is active and consume your energy too. The more you increase the intensity of the flames, the greater your Strength and Speed increase. Using this ability in tandem with any other Fire ability will greatly augment their power but those flames will also be able to hurt you.
+1583. Burn, 3.8, RWBY
+#(Tag:enhancer)(Tag:fire)Burn allows the user to store energy from the hits they receive and then use that stored energy in the form of a flame like aura to increase the power of their physical strikes, with the enhancement being stronger the more hits they have taken. This ability does not decrease the amount of damage the user takes.
+1584. Shadow, 4.1, RWBY
+#(Tag:dark)(Tag:meta)(Tag:movement)Allows the user to create an inert shadow like clone of themselves while propelling themselves in any direction, leaving the clone behind in their place to take a hit for them or act as a distraction for a few seconds before dissipating. In addition, using an elemental ability in tandem with Shadow Leap changes the effect of the clone you leave behind. Fire: The clone explodes into a fireball after a moment. Water: The clone bursts into an explosion of mist after a moment. Ice: The clone bursts into shards of sharp ice after a moment. Electric: The shadow clone is electrified and electrocutes targets who come into contact with it. Earth: The shadow clone is replaced by a tough stone statue Wind: The path you dash in creates a shockwave that pushes targets away. Dark: The shadow clone acts like a dense sticky substance that can slow targets down. Light: The clone explodes into a burst of bright light that can blind enemies. Gravity: The range of the leap and its speed is greatly increased.
+1585. Breathlessness, 4.5, Generic
+#(Tag:air)(Tag:buff)(Tag:movement)”In a single breath.” While this ability is active, the user is unable to breathe and their oxygen/air is rapidly depleted, in exchange their speed and agility are greatly enhanced by violent winds cloaking, allowing them to move at immense speeds for short bursts. In addition, when Breathlessness is active, the potency of all Air abilities are greatly amplified.
+1586. Glyph, 5.8, RWBY
+#(Tag:meta)(Tag:neutral)(Tag:summon)Allows you to conjure and control 2d circular Glyphs that can have a variety of effects depending on how they are used. What a Glyph is capable of depends on the class of the abilities it is slotted alongside. The effects of the Glyphs you wield scale with your energy output. Neutral: Glyphs act as solid platforms that can repel on contact. Electric: Glyphs act as ethereal sigils that electrocute on contact. Fire: Glyphs act as solid platforms that can denote into explosions or set targets that touch it aflame. Ice: Glyphs act as solid platforms that rapidly freeze targets on contact or can release ice shards. Earth: Glyphs act as durable solid surfaces that can unleash stone constructs connected to the sigil such as a wall or spikes. Gravity: Glyphs act as ethereal sigils that create repelling and attracting forces. Air: Glyphs act as ethereal sigils that can unleash bursts of wind or detonate into shockwaves. Water: Glyphs act as solid slippery platforms or unleash torrents of water. Light: Glyphs act as ethereal sigils that accelerate targets in contact with them. Dark: Glyphs act as ethereal sigils that can hold targets in place. Summon: Glyphs can be used to create temporary projections of monsters in the shape of opponents that have fought before to fight for them. Multi: Using more than 3 attributes at once will instead unleash bursts of raw energy from the Glyph.
+1587. Spirit Gun, 4.1, YuYu Hakusho
+#(Tag:spirit)Spirit Gun allows you to draw upon your energy and soul and concentrate it in the tip of your finger before unleashing it as a powerful blast whose power scales with your energy output. But due to its sheer power, the Spirit Gun can only be used a limited amount of times per day depending on the user's mastery over it.
+1588. Spirit Sword, 4.0, YuYu Hakusho
+#(Tag:martial)(Tag:spirit)The Spirit Sword allows you to draw upon your energy and soul in order to create a formless sword of energy that with training, you can control the size and shape of. The power and sharpness of the sword scales with the amount of energy you expend. With enough training and mastery, you can evolve this ability into Dimensional Sword(Legendary Ability).
+1589. Dimensional Sword, 6.2, Generic
+#(Tag:martial)(Tag:space)(Tag:spirit)The Spirit Sword allows you to draw upon your energy and soul to create a powerful sword of energy in your hands that you can control the shape and size of. The power of the sword scales with the amount of energy you expend, and with enough energy the Dimensional Sword can cut apart virtually any material and even space to cut dimensions or travel short distances.
+1590. Cellulose Manipulation, 5.2, Generic
+#(Tag:bio)(Tag:kinesis)(Tag:nature)Allows the user to sense and exert control over Cellulose, allowing them to manipulate most plant life, paper, wood, hemp, fibers, cotton, etc. but cannot exert control over the components of cellulose. The more energy they expend, the greater their range and control. However, manipulating Cellulose that are a part of an animated being is exponentially harder and has far greater energy consumption, requiring the user to be substantially stronger than the target to be able to do it effectively.
+1591. Nitrogen Manipulation, 6.6, Generic
+#(Tag:air)(Tag:kinesis)(Tag:water)Allows the user to sense and exert control over the element of Nitrogen, letting them control Air with great power and precision and allows them to pull Nitrogen out of the air to from pure nitrogen gas and even freezing liquid nitrogen. However, manipulating Nitrogen atoms a part of living beings is exponentially harder and has far greater energy consumption, requiring the user to be substantially stronger than the target to be able to do it effectively.
+1592. Phosphor Manipulation, 4.2, Generic
+#(Tag:fire)(Tag:kinesis)(Tag:poison)Allows the user to sense and exert control over the element of Phosphor and form it's allotropes, allowing you to form and unleash White Phosphor, an incredibly poisonous and flammable compound as well as other Phosphor based martials. However, manipulating Phosphor atoms a part of living beings is exponentially harder and has far greater energy consumption, requiring the user to be substantially stronger than the target to be able to do it effectively.
+1593. Chlorine Manipulation, 4.2, Generic
+#(Tag:kinesis)(Tag:poison)Allows the user to sense and exert control over the element of Chlorine and it's compounds such as manipulating its base poisonous gas form, forming Hydrocloric Acid, controlling most Salt and Salt rocks, etc.. However, manipulating Chlorine atoms a part of living beings is exponentially harder and has far greater energy consumption, requiring the user to be substantially stronger than the target to be able to do it effectively.
+1594. Calcium Manipulation, 4.9, Generic
+#(Tag:bio)(Tag:earth)(Tag:kinesis)Allows the user to sense and exert control over the element of Calcium and Calcium based materials such as bones, teeth, chalk, limestone, concrete, calcite, shells etc. as well as being able to form Calcite mid air. However, manipulating Calcium atoms a part of living beings is exponentially harder and has far greater energy consumption, requiring the user to be substantially stronger than the target to be able to do it effectively.
+1595. Divine Healing Light, 6.2, Generic
+#(Tag:holy)(Tag:light)(Tag:recovery)Allows the user to heal a target by bathing them in Divine Healing Light, capable of healing any wound on any being that still breathes life. Effectiveness scales with the amount of energy expended and the stronger a target is compared to the user, the more energy they will need to heal them.
+1596. Divine Blessing, 7.7, Generic
+#(Tag:buff)(Tag:holy)Allows the user to grant a Divine Blessing to a target by making contact and suffusing them with Holy Energy, however only one blessing may be applied to a target at a time and the duration of the blessing depends on the amount of energy the user expends. The blessings they can give are: Blessing of Micheal: Massively amplifies the physical prowess and combat ability of the target. Blessing of Uriel: Massively amplifies the Energy Output and Energy Regeneration of the target. Blessing of Gabriel: Massively amplifies the targets mental prowess and heals and protects their mind. Blessing of Raphael: Constantly applies Epic level Purification and Healing on the target. Blessing of Remiel: While this blessing is applied, if the target dies, they will be revived with most of their wounds healed. Cannot be applied on corpses. Blessing of Ascendance: Temporary transforms the race of the target into an Dominion(Epic) and grants them all related benefits for the duration.

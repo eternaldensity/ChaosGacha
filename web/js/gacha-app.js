@@ -97,6 +97,10 @@
       $("fTag").title = "Tags for the selected category. " +
         "Hover an entry's pill to see what a tag means.";
     }
+    if ($("fTagNames")) {
+      $("fTagNames").innerHTML = tagsForCategory("")
+        .map(t => `<option value="${esc(t)}"></option>`).join("");
+    }
   }
 
   function toast(msg, isErr) {
@@ -241,6 +245,8 @@
   function collectFilters() {
     const rmin = parseFloat($("fRmin").value), rmax = parseFloat($("fRmax").value);
     const tag = $("fTag") ? $("fTag").value || "" : "";
+    const exRaw = $("fExTags") ? $("fExTags").value : "";
+    const notTags = exRaw.split(/[\s,]+/).map(t => t.trim().toLowerCase()).filter(Boolean);
     const F = {
       q: $("q").value,
       sources: allowedSourceList(),
@@ -252,11 +258,12 @@
       dedup: !!$("fDedup").checked
     };
     if (tag) F.tag = tag;
+    if (notTags.length) F.notTags = notTags;
     DB.settings.filters = {
       q: F.q, sources: F.sources, sourcesExcluded: [...excludedSources],
       rmin: $("fRmin").value, rmax: $("fRmax").value,
       hideNsfw: F.hideNsfw, hideNoncon: F.hideNoncon, hideTech: F.hideTech, dedup: F.dedup,
-      tag
+      tag, notTags: exRaw
     };
     save();
     return F;
@@ -271,6 +278,10 @@
     $("fTech").checked = !!F.hideTech;
     $("fDedup").checked = !!F.dedup;
     if ($("fTag")) $("fTag").value = F.tag || "";
+    if ($("fExTags")) {
+      $("fExTags").value = Array.isArray(F.notTags)
+        ? F.notTags.join(", ") : (F.notTags || "");
+    }
     updateNonconRow();
     // Exclusions are authoritative; migrate the older "allowed list" format
     // (and the even older single-source setting) once, then keep exclusions.
@@ -295,6 +306,8 @@
         tag: $("fTag") ? $("fTag").value || "" : ""
       };
       if (!F.tag) delete F.tag;
+      const exTags = ($("fExTags") ? $("fExTags").value : "")
+        .split(/[\s,]+/).map(t => t.trim().toLowerCase()).filter(Boolean);
       const cats = category === "random" ? CATS.slice(1) : [category];
       let n = 0;
       for (const c of cats) {
@@ -308,12 +321,14 @@
           if (F.hideNoncon && e.noncon) return false;
           if (F.hideTech && e.tech) return false;
           if (F.tag && !entryTags(e).includes(F.tag)) return false;
+          if (exTags.length && entryTags(e).some(t => exTags.includes(t.toLowerCase()))) return false;
           if (ql && !(e.name.toLowerCase().includes(ql) || (e.s || "").toLowerCase().includes(ql))) return false;
           return true;
         }).length;
       }
       const tagBit = F.tag ? ` · #${F.tag}` : "";
-      $("poolCount").textContent = `≈${n} entr${n === 1 ? "y" : "ies"} in pool${tagBit}.`;
+      const exBit = exTags.length ? ` · not ${exTags.map(t => "#" + t).join(" ")}` : "";
+      $("poolCount").textContent = `≈${n} entr${n === 1 ? "y" : "ies"} in pool${tagBit}${exBit}.`;
     } catch (e) { /* controls not ready */ }
   }
   function renderPickers() {

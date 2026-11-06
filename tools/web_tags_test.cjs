@@ -292,6 +292,73 @@ function boot(page, seed, fetchPayload) {
     dom.window.close();
   }
 
+  // ---------- tag exclusion ----------
+  {
+    const { dom, errors } = await boot("gacha.html");
+    const w = dom.window, d = w.document;
+    ok("exclude tags: gacha no page errors", errors.length === 0, errors[0]);
+
+    // engine level: notTags keeps matching entries out of the candidate pool
+    const sample = [
+      { f: "ability", t: "both", name: "Keep Me", r: 1.0, s: "X", d: "", tags: ["fire"] },
+      { f: "ability", t: "both", name: "Drop Me", r: 1.0, s: "X", d: "", tags: ["fire", "deleted"] },
+    ];
+    const pool = w.ChaosGacha.candidates(sample, "ability", 0, 2, { notTags: ["deleted"] });
+    ok("exclude tags: engine drops matching entries",
+      pool.length === 1 && pool[0].entry.name === "Keep Me",
+      pool.map(p => p.entry.name).join(","));
+
+    // UI level: include fire + exclude fire leaves nothing to roll
+    d.getElementById("spinSpeed").value = "off";
+    d.getElementById("spinSpeed").dispatchEvent(new w.Event("change", { bubbles: true }));
+    d.getElementById("fTag").value = "fire";
+    d.getElementById("fExTags").value = "fire";
+    d.getElementById("rollBtn").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    ok("exclude tags: conflicting include/exclude reports an empty pool",
+      /no entries match/.test(d.getElementById("toast").textContent),
+      d.getElementById("toast").textContent);
+
+    const histBefore = (JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}").history || []).length;
+    d.getElementById("fExTags").value = "";
+    d.getElementById("rollBtn").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const histAfter = (JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}").history || []).length;
+    ok("exclude tags: clearing the exclusion rolls again", histAfter === histBefore + 1,
+      `${histBefore} -> ${histAfter}`);
+    dom.window.close();
+  }
+  {
+    const { dom } = await boot("entries.html");
+    const w = dom.window, d = w.document;
+    const before = w.__entries.filtered().length;
+    const names = [...d.querySelectorAll("#eqExTagNames option")].map(o => o.value);
+    ok("exclude tags: entries page offers tag suggestions",
+      names.includes("deleted"), String(names.length));
+    d.getElementById("eqExTags").value = "deleted";
+    d.getElementById("eqExTags").dispatchEvent(new w.Event("input", { bubbles: true }));
+    const after = w.__entries.filtered();
+    ok("exclude tags: entries page hides deleted entries",
+      after.length < before &&
+      after.every(e => !((e.tags || e.tg || []).includes("deleted"))),
+      `${before} -> ${after.length}`);
+    dom.window.close();
+  }
+  {
+    const { dom } = await boot("tree.html");
+    const w = dom.window;
+    const ents = [
+      { f: "ability", n: 1, t: "both", name: "Keep Node", r: 1.0, s: "X", d: "", m: [], tags: ["fire"] },
+      { f: "ability", n: 2, t: "both", name: "Drop Node", r: 1.0, s: "X", d: "", m: [], tags: ["deleted"] },
+      { f: "ability", n: 3, t: "both", name: "Keep Two", r: 2.0, s: "X", d: "", m: [], tags: ["fire"] },
+    ];
+    const res = await w.ChaosGen.generate(ents, 5, { clusters: 1, connect: false },
+      { notTags: ["deleted"] });
+    ok("exclude tags: tree generation skips matching entries",
+      res.nodes.filter(n => n.name !== "Origin").length === 2 &&
+      !res.nodes.some(n => n.name === "Drop Node"),
+      res.nodes.map(n => n.name).join(","));
+    dom.window.close();
+  }
+
   // ---------- tree page ----------
   {
     const { dom, errors } = await boot("tree.html");

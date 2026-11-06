@@ -101,7 +101,7 @@
 
   const state = {
     sort: { key: "name", dir: 1 },
-    q: "", cats: new Set(CATS), tags: new Set(),
+    q: "", cats: new Set(CATS), tags: new Set(), exTags: "",
     rmin: null, rmax: null,
     shown: PAGE
   };
@@ -126,6 +126,8 @@
   function filtered() {
     const q = state.q.trim().toLowerCase();
     const srcs = checkedSources();
+    const ex = (state.exTags || "").split(/[\s,]+/)
+      .map(t => t.trim().toLowerCase()).filter(Boolean);
     return DATA.entries.filter(e => {
       if (!state.cats.has(e.f)) return false;
       if (srcs.length && !srcs.includes(e.s)) return false;
@@ -136,6 +138,10 @@
         let hit = false;
         for (const t of state.tags) if (et.includes(t)) { hit = true; break; }
         if (!hit) return false;
+      }
+      if (ex.length) {
+        const et = entryTags(e).map(t => t.toLowerCase());
+        for (const t of ex) if (et.includes(t)) return false;
       }
       if (!q) return true;
       if (e.name.toLowerCase().includes(q)) return true;
@@ -374,6 +380,19 @@
   });
   $("eqMore").addEventListener("click", () => { state.shown += PAGE; render(); });
   if ($("eqTagQ")) $("eqTagQ").addEventListener("input", renderTagChips);
+  if ($("eqExTags")) {
+    $("eqExTags").addEventListener("input", () => {
+      state.exTags = $("eqExTags").value;
+      state.shown = PAGE;
+      render();
+    });
+  }
+  if ($("eqExTagNames")) {
+    const all = new Set();
+    for (const e of (DATA.entries || [])) for (const t of entryTags(e)) all.add(t);
+    $("eqExTagNames").innerHTML = [...all].sort()
+      .map(t => `<option value="${esc(t)}"></option>`).join("");
+  }
 
   try {
     const n = (DATA.entries || []).length;

@@ -108,7 +108,10 @@
       <div class="row" style="margin-top:8px">
         <div><label for="fTag" title="Only roll entries carrying this thematic tag (e.g. dragonic, undead, holy). Blank = any.">Theme tag</label>
           <select id="fTag"><option value="">Any tag</option></select></div>
+        <div><label for="fExTags" title="Drop entries carrying any of these tags. Comma-separated; e.g. deleted hides entries the original list dropped.">Exclude tags</label>
+          <input type="search" id="fExTags" list="fTagNames" placeholder="deleted, nsfw…"></div>
       </div>
+      <datalist id="fTagNames"></datalist>
       <details id="gfBox" style="margin-top:8px">
         <summary title="Uncheck sources to exclude them. Uncheck all = include everything.">Sources (<span id="gfCount">all</span>)</summary>
         <div class="row" style="margin:6px 0">

@@ -968,6 +968,10 @@
       if ([...$("newTag").options].some(o => o.value === tag)) $("newTag").value = tag;
       else $("newTag").value = "";
     }
+    if ($("newExTags")) {
+      $("newExTags").value = Array.isArray(F.notTags)
+        ? F.notTags.join(", ") : (F.notTags || "");
+    }
     const srcs = Array.isArray(F.sources) ? F.sources : null;
     document.querySelectorAll(".srcCheck").forEach(c => {
       if (srcs == null || !srcs.length) c.checked = true;
@@ -988,6 +992,8 @@
     const srcs = [...document.querySelectorAll(".srcCheck")]
       .filter(c => c.checked).map(c => c.value);
     const tag = ($("newTag") && $("newTag").value) || "";
+    const notTags = ($("newExTags") ? $("newExTags").value : "")
+      .split(/[\s,]+/).map(t => t.trim().toLowerCase()).filter(Boolean);
     return {
       name: ($("newName").value.trim() || "Untitled tree").slice(0, 60),
       seed: parseInt($("newSeed").value, 10) || Math.floor(Math.random() * 1e9),
@@ -1016,7 +1022,8 @@
         includeGachaOnly: !!$("newGachaOnly").checked,
         includeNsfw: !!$("newNsfw").checked,
         includeNoncon: !!($("newNoncon") && $("newNoncon").checked),
-        ...(tag ? { tag } : {})
+        ...(tag ? { tag } : {}),
+        ...(notTags.length ? { notTags } : {})
       },
       knownSources: allSources()
     };
@@ -3099,6 +3106,8 @@
   if ($("ownTag")) $("ownTag").innerHTML = tagOpts;
   if ($("newTag")) $("newTag").innerHTML = `<option value="">Any tag</option>` +
     allTags().map(t => `<option value="${esc(t)}">${esc(t)} (${tagCounts()[t] || 0})</option>`).join("");
+  if ($("newTagNames")) $("newTagNames").innerHTML =
+    allTags().map(t => `<option value="${esc(t)}"></option>`).join("");
   $("ownQ").addEventListener("input", () => { if (currentTab === "owned") renderOwned(); });
   $("ownCat").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });
   if ($("ownTag")) $("ownTag").addEventListener("change", () => { if (currentTab === "owned") renderOwned(); });
