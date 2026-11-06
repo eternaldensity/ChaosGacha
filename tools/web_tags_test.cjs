@@ -469,6 +469,11 @@ function boot(page, seed, fetchPayload) {
       stored.edges.every(e => e.length === 3 &&
         e.every(v => typeof v === "number")),
       JSON.stringify(stored && stored.edges));
+    const rt = await w2.__treeDebug.runtime();
+    ok("tree import: imported layout stays connected",
+      rt && rt.edges.length === 2 && Object.keys(rt.adj).length === 3 &&
+      rt.nodes.every(nd => nd.name),
+      rt ? `${rt.nodes.length} nodes, ${rt.edges.length} edges` : "no runtime");
     dom2.window.close();
     }
   }

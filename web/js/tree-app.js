@@ -285,7 +285,11 @@
     return null;
   }
   function saveStatic(id, payload) {
-    saveStaticCompact(id, payload.nodes || [], payload.edges || []);
+    // Imports and exported backups may arrive in the compact v2/v3 shape;
+    // the in-memory runtime needs full nodes and object edges, so expand
+    // before handing it to saveStaticCompact.
+    const p = expandStatic(payload) || payload || {};
+    saveStaticCompact(id, p.nodes || [], p.edges || []);
   }
   function saveStaticCompact(id, nodes, edges) {
     const full = { nodes, edges };
@@ -1325,7 +1329,8 @@
       if (best && best[0] > 1e-6) { cam.yaw = best[1]; cam.pitch = best[2]; }
     }
   }
-  window.__treeDebug = { cam, getProjected: () => projected, stackTickets, ticketLabel };
+  window.__treeDebug = { cam, getProjected: () => projected, stackTickets, ticketLabel,
+    runtime: () => getRuntime(activeTree()) };
   function fitCanvas() {
     const r = canvas.getBoundingClientRect();
     const dpr = Math.min(2, window.devicePixelRatio || 1);
