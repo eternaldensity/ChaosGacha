@@ -9,6 +9,9 @@ const { spawn } = require("child_process");
 const { JSDOM, VirtualConsole } = require("jsdom");
 
 const REPO = path.resolve(__dirname, "..");
+const DATA_VERSION = (fs.readFileSync(
+  path.join(REPO, "web", "data", "entries.js"), "utf8")
+  .match(/"dataVersion":"([^"]+)"/) || [])[1];
 const PORT = 8151;
 const BASE = `http://127.0.0.1:${PORT}/`;
 let failures = 0;
@@ -396,6 +399,78 @@ function boot(page, seed, fetchPayload) {
     ok("tree: banner Upgrade opens the upgrade flow", picked,
       d.getElementById("treeList").textContent.slice(0, 120));
     dom.window.close();
+  }
+
+  // ---------- generated exports keep their exact layout ----------
+  {
+    const tree = JSON.stringify({
+      trees: [{ id: "tex", name: "Export me", seed: 7, params: {}, limit: null,
+                filters: {}, dataVersion: DATA_VERSION, versionScheme: 2,
+                static: false, createdAt: 1 }],
+      states: { tex: { points: 0, cores: 0, inventory: [], unlocked: [0] } },
+      activeId: "tex", guideSeen: true, settings: {},
+    });
+    const nodes = [
+      { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
+        source: "System", tag: "both", description: "", meta: [], tags: [],
+        pos: [0, 0, 0], r: 0 },
+      { id: 1, file: "ability", number: 1, name: "Tinder", rarity: 1.3,
+        source: "Generic", tag: "both", description: "weak flames", meta: [],
+        tags: [], pos: [1, 0, 0], r: 1 },
+      { id: 2, file: "item", number: 2, name: "Excalibur", rarity: 7.0,
+        source: "Fate", tag: "both", description: "sword", meta: [], tags: [],
+        pos: [2, 0, 0], r: 2 },
+    ];
+    const gen = JSON.stringify({
+      key: JSON.stringify([7, {}, {}, null, DATA_VERSION]),
+      res: { nodes, edges: [{ a: 0, b: 1, d: 1 }, { a: 1, b: 2, d: 1 }] },
+    });
+    const { dom } = await boot("tree.html",
+      { "chaosTree.v1": tree, "chaosTree.gen.v1.tex": gen });
+    const w = dom.window, d = w.document;
+    let captured = null;
+    w.URL.createObjectURL = (blob) => { captured = blob; return "blob:test"; };
+    w.URL.revokeObjectURL = () => {};
+    w.HTMLAnchorElement.prototype.click = function () {};
+    d.getElementById("btnExport").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 20));
+    ok("tree export: generated tree carries its layout", !!captured);
+    const payload = captured ? JSON.parse(await captured.text()) : {};
+    ok("tree export: layout holds the same nodes",
+      payload.tree && payload.tree.topology &&
+      payload.tree.topology.nodes.length === 3 &&
+      payload.tree.topology.nodes[1].file === "ability" &&
+      payload.tree.topology.nodes[1].number === 1);
+    ok("tree export: layout uses compact identity rows",
+      payload.tree && payload.tree.topology &&
+      payload.tree.topology.nodes[1]._c === 1 &&
+      !("name" in payload.tree.topology.nodes[1]));
+    dom.window.close();
+    if (payload.tree) {
+    // Import into a clean profile: freeze the layout instead of re-sampling.
+    const { dom: dom2 } = await boot("tree.html");
+    const w2 = dom2.window, d2 = w2.document;
+    const file = new w2.File([JSON.stringify(payload)], "export.json",
+      { type: "application/json" });
+    const input = d2.getElementById("fileImport");
+    Object.defineProperty(input, "files", { value: [file], configurable: true });
+    input.dispatchEvent(new w2.Event("change", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 200));
+    const db = JSON.parse(w2.localStorage.getItem("chaosTree.v1") || "{}");
+    const imported = (db.trees || [])[0] || {};
+    ok("tree import: layout import is frozen", imported.static === true);
+    ok("tree import: recorded data version is preserved",
+      imported.dataVersion === DATA_VERSION, String(imported.dataVersion));
+    const stored = JSON.parse(w2.localStorage.getItem(
+      "chaosTree.static.v1." + imported.id) || "null");
+    ok("tree import: layout survives", !!stored && stored.nodes.length === 3);
+    ok("tree import: layout keeps its edges",
+      !!stored && stored.edges.length === 2 &&
+      stored.edges.every(e => e.length === 3 &&
+        e.every(v => typeof v === "number")),
+      JSON.stringify(stored && stored.edges));
+    dom2.window.close();
+    }
   }
 
   // ---------- frozen content with no recorded version still warns ----------
@@ -1002,6 +1077,9 @@ function boot(page, seed, fetchPayload) {
   console.log(failures ? `${failures} FAILURES` : "ALL PASS");
   } finally {
     server.kill();
-    process.exit(failures ? 1 : 0);
+    process.exitCode = failures ? 1 : 0;
   }
-})().catch(e => { console.log("FAIL harness:", e && e.stack || e); process.exit(1); });
+})().catch(e => {
+  console.log("FAIL harness:", e && e.stack || e);
+  process.exitCode = 1;
+});

@@ -221,7 +221,10 @@
     return {
       v: 3,
       nodes: out,
-      edges: edges.map(e => [e.a, e.b, e.d])
+      // Accept both compact [a,b,d] rows (already-exported payloads) and
+      // full {a,b,d} edge objects.
+      edges: edges.map(e => Array.isArray(e)
+        ? [e[0], e[1], e[2]] : [e.a, e.b, e.d])
     };
   }
   function expandStatic(p) {
@@ -1126,15 +1129,32 @@
     lastFitKey = "";
     refreshAll();
   }
-  $("btnExport").addEventListener("click", () => {
+  $("btnExport").addEventListener("click", async () => {
     const t = activeTree();
     if (!t) return toast("No active tree to export.", true);
+    let topo = null;
+    try {
+      if (t.static) {
+        const p = loadStatic(t.id);
+        // Static layouts already have swaps/added links baked in, and the
+        // state no longer replays them.
+        if (p) topo = compactStatic(p.nodes || [], p.edges || []);
+      } else {
+        // A seed alone is not enough to restore a tree once the entry list
+        // changes: regenerating samples a different pool. Export the base
+        // layout too; the saved state still replays swaps/links/entry swaps
+        // on load, so this must be the pre-mutation generation.
+        await getRuntime(t);
+        const hit = loadGenerated(t.id);
+        if (hit && hit.res) topo = compactStatic(hit.res.nodes || [], hit.res.edges || []);
+      }
+    } catch (e) { err(e); return; }
     const payload = {
       app: "chaos-tree", v: 1, exportedAt: new Date().toISOString(),
       tree: { name: t.name, seed: t.seed, params: t.params || {}, limit: t.limit || null,
               filters: t.filters || {}, dataVersion: t.dataVersion || null,
               snapshotKept: !!t.snapshotKept,
-              static: !!t.static, topology: t.static ? loadStatic(t.id) : null },
+              static: !!t.static, topology: topo },
       state: DB.states[t.id] || E.newState()
     };
     const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
@@ -1152,13 +1172,19 @@
       const payload = JSON.parse(await f.text());
       if (payload && payload.app === "chaos-tree" && payload.tree) {
         const td = payload.tree;
+        const hasTopology = !!(td.topology && Array.isArray(td.topology.nodes) &&
+          td.topology.nodes.length);
         const tree = { id: uid(), name: String(td.name || f.name).slice(0, 60),
           seed: td.seed != null ? td.seed : Math.floor(Math.random() * 1e9),
           params: td.params || {}, limit: td.limit || null,
-          filters: td.filters || {}, dataVersion: DATA.dataVersion || null,
+          filters: td.filters || {},
+          // Keep the version the file was exported with: a generated tree
+          // without a topology will re-sample, and the mismatch notice is the
+          // only warning the player gets about that.
+          dataVersion: td.dataVersion != null ? td.dataVersion : (DATA.dataVersion || null),
           snapshotKept: !!td.snapshotKept, versionScheme: 2,
-          static: !!td.static, createdAt: Date.now() };
-        if (td.static && td.topology) saveStatic(tree.id, td.topology);
+          static: hasTopology ? true : !!td.static, createdAt: Date.now() };
+        if (hasTopology) saveStatic(tree.id, td.topology);
         DB.trees.push(tree);
         DB.states[tree.id] = Object.assign(E.newState(), payload.state || {});
         DB.activeId = tree.id; selectedId = 0; saveDB(); renderTrees(); refreshAll();
