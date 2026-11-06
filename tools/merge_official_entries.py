@@ -52,7 +52,7 @@ EXTRA_TAGS = {"large-size", "mechanical", "machine", "passive", "anti-draconic",
               "instance-familiar"}
 # Franchises the live feed cites that have no entry in our source column yet.
 EXTRA_SOURCES = {"My Little Pony", "YuYu Hakusho", "Tsugumomo", "Image Comics",
-                 "Darksiders", "Warhammer"}
+                 "Darksiders"}
 # Site spellings that map onto a source name the fork already uses.
 SOURCE_ALIASES = {
     "devi may cry": "Devil May Cry",
@@ -61,6 +61,7 @@ SOURCE_ALIASES = {
     "high school dxd": "Highschool DxD",
     "legend of zelda": "The Legend of Zelda",
     "overlord the game": "Overlord",
+    "warhammer": "Warhammer 40k",
 }
 
 # Known upstream rename families the similarity score cannot see on its own
@@ -423,6 +424,10 @@ DESC_FIXES = [
      " they can amplify"),
     (r"\bgolem like\b", "golem-like"),
     (r"\btwo dimensional\b", "two-dimensional"),
+    (r"\bbarelled\b", "barreled"),
+    (r"\belectrcitiy\b", "electricity"),
+    (r"\bpin point\b", "pinpoint"),
+    (r"\bassasins\b", "assassins"),
 ]
 
 # Site spellings that are outright wrong and safe to correct everywhere.

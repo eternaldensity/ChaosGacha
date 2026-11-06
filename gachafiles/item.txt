@@ -2260,8 +2260,8 @@
 #(Tag:accessory)(Tag:movement)An ornate gold ring engraved with platinum wings, when worn, it allows the user to fly through the air at the same speed they can move on the ground.
 1133. Flying Ship, 2.4, Generic
 #(Tag:vehicle)A giant Galleon pirate ship that can fly through the air as well as it can sail, armed with canons and a crew of Ghosts who constantly maintain the ship and arm the canons but do little else.
-1134. Lasgun, 2.5, Warhammer
-#(Tag:gun)(Tag:tech)(Tag:weapon)A standard issue Guardmans Lasgun, a long barelled rifle that fires pin point accuracy lasers strong enough to punch a hole clear through the chest of a grown man and pierce through light metal armor and concrete cover. The battery that powers this gun is incredibly robust and can be charged in a variety of adaptable ways such as sunlight and electrcitiy.
+1134. Lasgun, 2.5, Warhammer 40k
+#(Tag:gun)(Tag:tech)(Tag:weapon)A standard issue Guardmans Lasgun, a long barreled rifle that fires pinpoint accuracy lasers strong enough to punch a hole clear through the chest of a grown man and pierce through light metal armor and concrete cover. The battery that powers this gun is incredibly robust and can be charged in a variety of adaptable ways such as sunlight and electricity.
 1135. Savings Safe, 4.4, Generic
 #(Tag:production)A large solid unbreakable metal safe that can only be opened by the owner and people registered by the owner. Somehow 1000 200-gram pure gold coins appear inside it every 24 hours.
 1136. Dryad Ring, 3.2, Generic
