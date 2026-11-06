@@ -66,6 +66,63 @@
     }
     return "";
   }
+  // History rows store entry identity (f/n) plus roll metadata. Name,
+  // rarity, source, tags, and description are looked up live so data fixes
+  // reach old rolls (and saves stay small).
+  const ENTRY_MAP = new Map();
+  for (const e of (DATA.entries || [])) ENTRY_MAP.set(e.f + "#" + e.n, e);
+  const CAT_NAME = { ability: "Ability", item: "Item", skill: "Skill",
+                     trait: "Trait", familiar: "Familiar" };
+  function hydrateHistory(h) {
+    if (!h) return h;
+    const e = (h.f != null && h.n != null) ? ENTRY_MAP.get(h.f + "#" + h.n) : null;
+    if (!e) {
+      // Removed entry (or a pre-ID full row): fall back to what was stored.
+      return Object.assign({ category: h.f || h.category || "", tags: h.tags || h.tg || [] }, h);
+    }
+    return Object.assign({}, h, {
+      category: e.f, name: e.name, rarity: e.r, source: e.s || "",
+      description: e.d || "", meta: (e.m || []).slice(),
+      tags: (e.tags || e.tg || []).slice(),
+      nsfw: e.nsfw, noncon: e.noncon, tech: e.tech
+    });
+  }
+  function historyRows() { return (DB.history || []).map(hydrateHistory); }
+  function resolveEntry(name, category) {
+    if (!name) return null;
+    let hit = null;
+    for (const e of (DATA.entries || [])) {
+      if (e.name !== name) continue;
+      if (category && e.f !== category) continue;
+      if (hit) return null;          // ambiguous: keep the stored row
+      hit = e;
+    }
+    return hit;
+  }
+  // Old saves and imported files carry full rows; swap them to identity.
+  function migrateHistory() {
+    let changed = false;
+    for (const h of (DB.history || [])) {
+      if (h.f != null && h.n != null) continue;
+      const e = resolveEntry(h.name, h.category);
+      if (!e) continue;
+      h.f = e.f; h.n = e.n;
+      delete h.name; delete h.rarity; delete h.category; delete h.source;
+      delete h.description; delete h.tags; delete h.meta;
+      changed = true;
+    }
+    if (changed) save();
+    return changed;
+  }
+  // Distinct thematic tags across everything the player has rolled.
+  function ownedTags() {
+    const out = new Set();
+    for (const raw of (DB.history || [])) {
+      for (const t of entryTags(hydrateHistory(raw))) out.add(String(t).toLowerCase());
+    }
+    return out;
+  }
+
   function tagCount(tag) {
     if (DATA.tagCounts && DATA.tagCounts[tag] != null) return DATA.tagCounts[tag];
     let n = 0;
@@ -144,6 +201,7 @@
     catch (e) { toast("Storage full.", true); }
   }
   let DB = load();
+  migrateHistory();
   const uid = () => Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
   let lastResult = null;
 
@@ -259,6 +317,10 @@
     };
     if (tag) F.tag = tag;
     if (notTags.length) F.notTags = notTags;
+    if (DB.settings && DB.settings.resonance) {
+      const own = ownedTags();
+      if (own.size) F.tagBoost = [...own];
+    }
     DB.settings.filters = {
       q: F.q, sources: F.sources, sourcesExcluded: [...excludedSources],
       rmin: $("fRmin").value, rmax: $("fRmax").value,
@@ -328,7 +390,9 @@
       }
       const tagBit = F.tag ? ` · #${F.tag}` : "";
       const exBit = exTags.length ? ` · not ${exTags.map(t => "#" + t).join(" ")}` : "";
-      $("poolCount").textContent = `≈${n} entr${n === 1 ? "y" : "ies"} in pool${tagBit}${exBit}.`;
+      const own = (DB.settings && DB.settings.resonance) ? ownedTags().size : 0;
+      const resBit = own ? ` · resonance ${own} tag${own === 1 ? "" : "s"}` : "";
+      $("poolCount").textContent = `≈${n} entr${n === 1 ? "y" : "ies"} in pool${tagBit}${exBit}${resBit}.`;
     } catch (e) { /* controls not ready */ }
   }
   function renderPickers() {
@@ -420,7 +484,7 @@
     }
     const tp = DATA.tiers.find(t => t.name === (tierName || preset));
     F.flat = !!(tp && tp.flat);
-    if (F.dedup) F.exclude = DB.history.map(h => h.name);
+    if (F.dedup) F.exclude = historyRows().map(h => h.name);
     let g = null;
     if (DB.settings.gambler) {
       g = G.gamblerApply(tierNames(), tierName || "bronze", cat);
@@ -455,7 +519,7 @@
         chosen.d20 = g.d20; chosen.geffect = g.effect;
         if (g.note) chosen.gambleNote = g.note;
       }
-      DB.history.unshift(Object.assign({ id: uid(), at: Date.now(), min, max, avg }, chosen));
+      DB.history.unshift(historyRow(chosen, min, max, avg));
       if (DB.history.length > 500) DB.history.length = 500;
       save(); renderStats();
       showResult(chosen, rolls > 1);
@@ -659,7 +723,7 @@
     const min = parseFloat($("cMin").value), avg = parseFloat($("cAvg").value), max = parseFloat($("cMax").value);
     if (!(min < max) || isNaN(avg)) return toast("Need min < max and a numeric avg.", true);
     const F = collectFilters();
-    const histExcl = F.dedup ? DB.history.map(h => h.name) : [];
+    const histExcl = F.dedup ? historyRows().map(h => h.name) : [];
     const useGamble = !!DB.settings.gambler;
     const results = [];
     let destroyed = 0;
@@ -702,7 +766,7 @@
       showDestroyed({ d20: "—" }, "Gambler destroyed all ten tickets. Brutal.");
       return;
     }
-    const stamped = results.map(r => Object.assign({ id: uid(), at: Date.now(), min, max, avg }, r));
+    const stamped = results.map(r => historyRow(r, min, max, avg));
     DB.history.unshift(...stamped);
     if (DB.history.length > 500) DB.history.length = 500;
     save(); renderTickets(); renderStats();
@@ -766,9 +830,27 @@
     }
   }
 
+  // The persisted shape: identity + roll metadata only.
+  function historyRow(r, min, max, avg) {
+    const row = { id: uid(), at: Date.now(), min, max, avg,
+                  f: r.f, n: r.n, odds: r.odds, pull: r.pull };
+    if (r.advantage > 1) row.advantage = r.advantage;
+    if (r.d20 != null) { row.d20 = r.d20; row.geffect = r.geffect; }
+    if (r.gambleNote) row.gambleNote = r.gambleNote;
+    return row;
+  }
+
+  function historyCopyText() {
+    return historyRows().map((h, i) => {
+      const tier = G.rarityClass(DATA.classes, h.rarity).name;
+      const cat = CAT_NAME[h.category] || h.category || "";
+      return `${i + 1}\n[${h.name}]\n|${tier} ${cat}|\n${h.description || ""}`;
+    }).join("\n\n") + "\n";
+  }
+
   function renderStats() {
     const box = $("statBody");
-    const h = DB.history;
+    const h = historyRows();
     if (!h.length) { box.innerHTML = "<span class='muted'>No rolls yet.</span>"; return; }
     let best = h[0];
     const byClass = {};
@@ -791,7 +873,8 @@
     $("histCount").textContent = DB.history.length ? `(${DB.history.length})` : "";
     const ul = $("histList");
     ul.innerHTML = DB.history.length ? "" : "<li class='muted'>No rolls yet.</li>";
-    for (const h of DB.history.slice(0, 200)) {
+    DB.history.slice(0, 200).forEach(raw => {
+      const h = hydrateHistory(raw);
       const cls = G.rarityClass(DATA.classes, h.rarity);
       const li = document.createElement("li");
       li.innerHTML = `<div class="grow"><span class="dot" style="background:${esc(cls.color)}"></span>` +
@@ -799,7 +882,7 @@
         (entryTags(h).length ? " " + tagPills(entryTags(h), h.category) : "") +
         (h.d20 != null ? ` <span class="pill" title="${esc(G.gamblerLabel({ effect: h.geffect }) + (h.gambleNote ? ` (${h.gambleNote})` : ""))}">🎲${h.d20}</span>` : "") +
         (h.advantage > 1 ? ` <span class="pill" title="Kept the best of ${h.advantage} wheels">⚡${h.advantage}</span>` : "") + `<br>` +
-        `<span class="muted small">${esc(h.source || "—")} · ${new Date(h.at).toLocaleString()} · ${h.odds.toFixed(2)}%</span></div>`;
+        `<span class="muted small">${esc(h.source || "—")} · ${new Date(h.at).toLocaleString()} · ${h.odds != null ? h.odds.toFixed(2) : "—"}%</span></div>`;
       const b = document.createElement("button");
       b.textContent = "👁";
       b.title = "View";
@@ -809,14 +892,29 @@
         if (rollTab) rollTab.click();
         showResult(h);
       });
-      li.appendChild(b);
+      const del = document.createElement("button");
+      del.textContent = "✕";
+      del.title = "Remove from history";
+      del.addEventListener("click", () => {
+        const idx = DB.history.indexOf(raw);
+        if (idx < 0) return;
+        if (!confirm(`Remove ${h.name} from history?`)) return;
+        DB.history.splice(idx, 1);
+        save(); renderHistory();
+      });
+      li.append(b, del);
       ul.appendChild(li);
-    }
+    });
   }
 
   $("btnClearHist").addEventListener("click", () => {
     if (!DB.history.length || !confirm("Clear roll history?")) return;
     DB.history = []; save(); renderHistory();
+  });
+  if ($("btnCopyHist")) $("btnCopyHist").addEventListener("click", () => {
+    if (!DB.history.length) return toast("History is empty.", true);
+    copyText(historyCopyText(), `${DB.history.length} history entr${DB.history.length === 1 ? "y" : "ies"}`)
+      .catch(() => toast("Copy failed.", true));
   });
   $("btnExportHist").addEventListener("click", () => {
     const blob = new Blob([JSON.stringify({ app: "chaos-gacha", v: 1, tickets: DB.tickets, history: DB.history })], { type: "application/json" });
@@ -835,6 +933,7 @@
       if (!p || (p.app && p.app !== "chaos-gacha")) throw new Error("not a chaos-gacha file");
       DB.tickets = Array.isArray(p.tickets) ? p.tickets : [];
       DB.history = Array.isArray(p.history) ? p.history : [];
+      migrateHistory();
       save(); renderTickets(); renderHistory();
       toast("Imported.");
     } catch (e) { toast(e.message || "Import failed.", true); }
@@ -853,6 +952,13 @@
     DB.settings.gambler = $("gambler").checked;
     save();
   });
+  if ($("resonance")) {
+    $("resonance").checked = !!(DB.settings && DB.settings.resonance);
+    $("resonance").addEventListener("change", () => {
+      DB.settings.resonance = $("resonance").checked;
+      save(); updatePoolCount();
+    });
+  }
   $("spinSpeed").addEventListener("change", () => {
     DB.settings.spin = $("spinSpeed").value;
     save();

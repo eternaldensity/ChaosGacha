@@ -108,7 +108,22 @@ window.ChaosGacha = (function () {
     return { cat: category, pool };
   }
 
-  function drawOne(pool, min, max, avg, rnd, exp) {
+  // Optional Resonance weighting: an entry with N distinct tags matching
+  // tags the player owns rolls 2^N times as often (same rarity band).
+  function tagBoostSet(F) {
+    const raw = F && Array.isArray(F.tagBoost) ? F.tagBoost : [];
+    return raw.length ? new Set(raw.map(t => String(t).toLowerCase())) : null;
+  }
+  function tagFactor(e, boost) {
+    if (!boost) return 1;
+    const tags = entryTags(e);
+    if (!tags.length) return 1;
+    let n = 0;
+    for (const t of tags) if (boost.has(String(t).toLowerCase())) n++;
+    return n ? Math.pow(2, n) : 1;
+  }
+
+  function drawOne(pool, min, max, avg, rnd, exp, boost) {
     const pull = rarityPull(min, max, avg, rnd, exp);
     // Flat mode pairs its uniform pull with a wide window so sparse
     // regions (Trash, high tiers) actually resolve instead of missing.
@@ -116,7 +131,7 @@ window.ChaosGacha = (function () {
     const filt = pool.filter(e => Math.abs(e.r - pull) <= window);
     if (!filt.length) return null;
     const k = exp || 4;
-    const fw = filt.map(e => 1 / Math.pow(k, Math.abs(avg - e.r)));
+    const fw = filt.map(e => (1 / Math.pow(k, Math.abs(avg - e.r))) * tagFactor(e, boost));
     let total = 0;
     for (const w of fw) total += w;
     let pick = rnd() * total, acc = 0, idx = filt.length - 1;
@@ -147,6 +162,7 @@ window.ChaosGacha = (function () {
 
   function resultOf(cat, e, weight, weightsum, pull) {
     return {
+      f: e.f, n: e.n,
       category: cat, name: e.name, rarity: e.r,
       source: e.s || "", description: cleanDesc(e.d),
       meta: e.m || [], tags: entryTags(e).slice(),
@@ -156,14 +172,16 @@ window.ChaosGacha = (function () {
 
   function roll(entries, tiers, category, min, max, avg, filt, rnd) {
     rnd = rnd || Math.random;
-    const exp = normFilt(filt).flat ? 1 : 4;
+    const F = normFilt(filt);
+    const exp = F.flat ? 1 : 4;
+    const boost = tagBoostSet(F);
     const { cat, pool } = buildPool(entries, category, filt, rnd);
-    const wOf = e => 1 / Math.pow(exp, Math.abs(avg - e.r));
+    const wOf = e => (1 / Math.pow(exp, Math.abs(avg - e.r))) * tagFactor(e, boost);
     let weightsum = 0;
     for (const e of pool) if (e.r <= max && min < e.r) weightsum += wOf(e);
     if (weightsum <= 0) throw new Error("rarity range matches nothing");
     for (let attempt = 0; attempt < 200; attempt++) {
-      const hit = drawOne(pool, min, max, avg, rnd, exp);
+      const hit = drawOne(pool, min, max, avg, rnd, exp, boost);
       if (!hit) continue;
       return resultOf(cat, hit.entry, hit.weight, weightsum, hit.pull);
     }
@@ -173,9 +191,10 @@ window.ChaosGacha = (function () {
   // Weighted pick from {cat, entry} candidates. This is the fallback for a
   // distinct advantage wheel when the normal two-stage draw cannot land a
   // remaining candidate; it keeps the same rarity weighting.
-  function pickCandidate(cands, avg, exp, rnd) {
+  function pickCandidate(cands, avg, exp, rnd, boost) {
     const k = exp || 4;
-    const weights = cands.map(c => 1 / Math.pow(k, Math.abs(avg - c.entry.r)));
+    const weights = cands.map(c =>
+      (1 / Math.pow(k, Math.abs(avg - c.entry.r))) * tagFactor(c.entry, boost));
     let total = 0;
     for (const w of weights) total += w;
     let pick = (rnd || Math.random)() * total, acc = 0, idx = weights.length - 1;
@@ -227,7 +246,7 @@ window.ChaosGacha = (function () {
         if (!remaining.length) {
           throw lastErr || new Error("no entries match (loosen the filters)");
         }
-        r = pickCandidate(remaining, avg, exp, rnd);
+        r = pickCandidate(remaining, avg, exp, rnd, tagBoostSet(F));
       }
       used.add(r.name);
       out.push(r);

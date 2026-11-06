@@ -1494,3 +1494,5 @@
 #(Tag:martial)When using Ranged weapons, the longer the time between your attacks and the longer you take to attack, the faster and more accurate your projectiles are.
 751. Deadeye, 5.2, Generic
 #(Tag:martial)Your natural talent with all forms of Ranged Weapons is incredible, allowing you to wield any kind of ranged weapon whether guns, bows, throwing weapons, or improvised projectiles with incredible accuracy and familiarity. In addition, you can naturally enhance any ranged weapon you are wielding with your own energy, increasing the power and speed behind their projectiles.
+752. Thematic Magnetism, 4.2, Generic
+#(Tag:meta)(Gacha) Every entry you can roll is twice as likely per thematic tag it shares with an entry you already own. Only distinct tags count, not how many owned entries carry them. This trait can be toggled.

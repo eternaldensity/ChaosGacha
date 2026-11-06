@@ -195,9 +195,16 @@ function boot(page, seed, fetchPayload) {
     ok("gacha: tagged roll produced a result", /holy/.test(body), body.slice(0, 80));
     ok("gacha: result pill shows the tag", /🏷 holy/.test(d.getElementById("resultBody").innerHTML));
     const histTags = JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}");
+    const entryOf = h => (w.CHAOS_DATA.entries || [])
+      .find(e => e.f === h.f && e.n === h.n);
+    const h0 = (histTags.history || [])[0] || {};
+    const e0 = entryOf(h0);
     ok("gacha: history entry carries the tag",
-      (histTags.history || []).some(h => (h.tags || []).includes("holy")),
-      JSON.stringify((histTags.history || [])[0] || {}).slice(0, 120));
+      !!e0 && (e0.tags || []).includes("holy"), JSON.stringify(h0).slice(0, 120));
+    ok("gacha: history stores identity, not entry text",
+      h0.f != null && h0.n != null &&
+      !("name" in h0) && !("description" in h0) && !("tags" in h0),
+      JSON.stringify(h0).slice(0, 120));
 
     // a ticket carrying a tag rolls only that tag
     d.getElementById("tkTier").value = "legendary";
@@ -212,7 +219,10 @@ function boot(page, seed, fetchPayload) {
       ticketHtml.slice(0, 140));
     const hist2 = JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}");
     ok("gacha: tagged ticket history is tagged",
-      (hist2.history || []).some(h => (h.tags || []).includes("draconic")),
+      (hist2.history || []).some(h => {
+        const e = entryOf(h);
+        return !!e && (e.tags || []).includes("draconic");
+      }),
       JSON.stringify((hist2.history || [])[0] || {}).slice(0, 120));
     ok("gacha: ticket was spent",
       (hist2.tickets || []).length === 0, JSON.stringify(hist2.tickets));
@@ -240,6 +250,98 @@ function boot(page, seed, fetchPayload) {
     ok("gacha: filter is category-aware (skill)",
       skillOpts.includes("expertise") && !skillOpts.includes("medium-size"),
       skillOpts.slice(0, 8).join(","));
+    dom.window.close();
+  }
+
+  // ---------- gacha history: identity, migration, removal, copy ----------
+  {
+    const oldRow = {
+      id: "h1", at: Date.now(), min: 1.5, max: 5.3, avg: 3.3,
+      name: "Tinder", category: "ability", rarity: 1.3, source: "Generic",
+      description: "an old stored description", tags: ["fire"],
+      meta: [], odds: 1.23, pull: 1.3,
+    };
+    const db = JSON.stringify({ tickets: [], history: [oldRow], settings: {} });
+    const { dom, errors } = await boot("gacha.html", { "chaosGacha.v1": db });
+    const w = dom.window, d = w.document;
+    ok("gacha history: no page errors", errors.length === 0, errors[0]);
+    const saved = JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}");
+    const h0 = (saved.history || [])[0] || {};
+    ok("gacha history: legacy rows migrate to identity",
+      h0.f === "ability" && h0.n === 1 && !("description" in h0),
+      JSON.stringify(h0).slice(0, 140));
+
+    d.querySelector('#tabs [data-tab="history"]')
+      .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const rowText = d.getElementById("histList").textContent;
+    ok("gacha history: migrated row renders live data",
+      /Tinder/.test(rowText) && !/an old stored description/.test(rowText),
+      rowText.slice(0, 120));
+
+    // copy all: formatted pull list in the current data
+    let copied = "";
+    Object.defineProperty(w.navigator, "clipboard", {
+      configurable: true,
+      value: { writeText: async (t) => { copied = t; } },
+    });
+    d.getElementById("btnCopyHist")
+      .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 20));
+    ok("gacha history: copy-all produces the formatted list",
+      /\[Tinder\]/.test(copied) && /\|Common Ability\|/.test(copied),
+      copied.slice(0, 140));
+
+    // per-row removal
+    w.confirm = () => true;
+    const del = d.querySelector('#histList button[title="Remove from history"]');
+    ok("gacha history: row has a remove button", !!del);
+    if (del) del.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const after = JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}");
+    ok("gacha history: individual row removal", (after.history || []).length === 0,
+      String((after.history || []).length));
+
+    // importing an old wallet migrates its full rows to identity
+    const payload = { app: "chaos-gacha", v: 1, tickets: [], history: [oldRow] };
+    const file = new w.File([JSON.stringify(payload)], "hist.json",
+      { type: "application/json" });
+    const finput = d.getElementById("fileHist");
+    Object.defineProperty(finput, "files", { value: [file], configurable: true });
+    finput.dispatchEvent(new w.Event("change", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 100));
+    const imported = JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}");
+    ok("gacha history: importing an old wallet migrates rows",
+      (imported.history || []).length === 1 &&
+      imported.history[0].f === "ability" && imported.history[0].n === 1 &&
+      !("description" in imported.history[0]),
+      JSON.stringify((imported.history || [])[0] || {}).slice(0, 140));
+    dom.window.close();
+  }
+
+  // ---------- Resonance weighting ----------
+  {
+    const { dom } = await boot("gacha.html");
+    const w = dom.window;
+    const A = { f: "ability", n: 9001, t: "both", name: "A", r: 3,
+                s: "X", d: "", tags: ["fire", "dark"] };
+    const B = { f: "ability", n: 9002, t: "both", name: "B", r: 3,
+                s: "X", d: "", tags: ["ice"] };
+    const lcg = seed => () => (seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296;
+    const count = (boost) => {
+      let a = 0, b = 0;
+      const rnd = lcg(12345);
+      for (let i = 0; i < 800; i++) {
+        const r = w.ChaosGacha.roll([A, B], [], "ability", 0, 10, 3,
+          boost ? { tagBoost: boost } : {}, rnd);
+        if (r.name === "A") a++; else b++;
+      }
+      return [a, b];
+    };
+    const [plainA, plainB] = count(null);
+    ok("resonance: no boost is neutral",
+      Math.abs(plainA - plainB) < 120, `${plainA}/${plainB}`);
+    const [boostA, boostB] = count(["fire", "dark"]);
+    ok("resonance: each matching tag doubles the odds",
+      boostA > 2.5 * boostB, `${boostA}/${boostB}`);
     dom.window.close();
   }
 

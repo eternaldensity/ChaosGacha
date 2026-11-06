@@ -35,9 +35,11 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   desktop app, a ticket wallet (tickets may carry a theme tag or an
   Advantage count that rolls several wheels at once and lets you pick
   which to keep, avoiding duplicate prizes while the pool allows), roll
-  history, spin-wheel animation with adjustable
-  slowdown, filters, ×10 multi-pull, result sharing, history stats, and
-  history import/export.
+  history stored by entry identity and hydrated from the current data,
+  spin-wheel animation with adjustable
+  slowdown, filters, ×10 multi-pull, result sharing, history stats,
+  per-roll removal, formatted copy-all, wallet import/export, and the
+  Gambler / Thematic Magnetism trait toggles.
 - `curse.html` — Curse Roulette port: d20 spin with the original severity
   bands, resolve conditions, per-tier ticket rewards paid into the gacha
   wallet or the active Chaos Tree (skip / Choice Jump tickets plus the tier's

@@ -149,8 +149,10 @@
             <option value="slower">Slower</option>
           </select></div>
         <div><label for="gambler">Trait</label>
-          <label style="display:flex;gap:8px;align-items:center;min-height:44px">
-            <input type="checkbox" id="gambler" style="width:22px;height:22px"> 🎲 Gambler</label></div>
+          <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Gambler: roll a d20 per ticket before rolling.">
+            <input type="checkbox" id="gambler" style="width:22px;height:22px"> 🎲 Gambler</label>
+          <label style="display:flex;gap:8px;align-items:center;min-height:44px" title="Thematic Magnetism: an entry is twice as likely per thematic tag it shares with an entry already in your history (distinct tags, not owned copies).">
+            <input type="checkbox" id="resonance" style="width:22px;height:22px"> 🎯 Thematic Magnetism</label></div>
       </div>
       <div class="muted small" id="poolCount" style="margin-top:8px"></div>
     </details>
@@ -205,8 +207,9 @@
       <div class="row">
         <h2 style="flex:1">History <span class="muted small" id="histCount"></span></h2>
         <div style="flex:0 0 auto" class="row">
-          <button id="btnExportHist">⬇</button>
-          <button id="btnImportHist">⬆</button>
+          <button id="btnCopyHist" title="Copy the formatted history list">📋</button>
+          <button id="btnExportHist" title="Export wallet: tickets + history">⬇</button>
+          <button id="btnImportHist" title="Import a wallet file (tickets + history)">⬆</button>
           <button id="btnClearHist" class="danger">Clear</button>
           <input type="file" id="fileHist" accept=".json,application/json" style="display:none">
         </div>
