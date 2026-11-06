@@ -121,14 +121,14 @@ Yes Man is a reprogrammed RobCo Securitron AI that can interface with technology
 You are tough as nails. You gain significantly increased durability and endurance, letting you resist stronger blows with less damage, recover from injuries faster without healing, and power through attacks more effectively.
 
 25
-[Wyvern]
+[Hellkite Wyvern]
 |Uncommon Familiar|
-A large sky-dwelling fire-breathing reptile often called a lesser dragon. A wyvern can swallow a man whole and roast an entire battalion with its breath. This wyvern is female and can lay eggs to reproduce.
+A lesser descendant of dragons but a fearsome creature nonetheless, the Hellkite Wyvern is a huge flying draconic beast with flesh like scales and the ability to breathe flames that can reduce the lesser men to ash. However, they are still vulnerable to conventional weapons like bows and arrows.
 
 26
 [Lesser Curse]
 |Uncommon Ability|
-Place a curse by touch lowering one chosen physical attribute — Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
+Place a curse by touch lowering one chosen physical attribute, Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
 
 27
 [Genderswap]
@@ -215,3 +215,63 @@ You have extensive farming knowledge rivaling the most experienced farmers, incl
 [Grooming]
 |Common Skill|
 NOT THAT KIND - You are very skilled at grooming, caring for your hair, hygiene, and cleanliness, making yourself and others look presentable.
+
+44
+[Crazy Lure]
+|Rare Trait|
+Crazy, mentally unstable, or otherwise insane people find themselves more attracted to you, and you gain their affection and favor more easily. You can also reason with them more easily.
+
+45
+[Fast Reflexes]
+|Uncommon Trait|
+Your reflexes are beyond the norm, letting even a base human weave around punches and aim-dodge guns with training. This scales with your stats.
+
+46
+[Platinum Bag of Holding]
+|Elite Item|
+A brilliant shimmering platinum bag of holding containing a 2500x2500x2500m subspace inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. It can place contents in spatial stasis and clean them if the user wishes.
+
+47
+[2-1B surgical droid]
+|Uncommon Familiar|
+The 2-1B surgical droid is an advanced medical droid with a vast database and droid-body precision. It surpasses any human surgeon and carries varied surgical implants.
+
+48
+[Revengence]
+|Rare Ability|
+Build up energy as you are hurt, then charge any ability or spell with it for a devastating effect. Each 10% health lost adds 2x power, reaching 10x at 10% health remaining; 8-hour cooldown.
+
+49
+[Arthropod Affiliate]
+|Uncommon Trait|
+You have great affinity with insects, arachnids, crustaceans, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your arthropod affinity, you possess slightly increased durability, and your armor-based abilities and effects cost slightly less energy to use.
+
+50
+[Stockpile]
+|Rare Ability|
+Stockpile energy while in an active slot, holding up to 3x your storage but taking 24 hours to fill completely.
+
+51
+[Calcium Cultivation]
+|Rare Trait|
+Your bones demand milk: every time you consume milk, they gain a permanent boost to durability and quality. Higher-quality milk gives a greater boost. Repeating the same kind of milk decreases its effects exponentially after the first drink, and the boost is relative to the milk's quality versus your bones.
+
+52
+[Weather]
+|Trash Ability|
+Lets you accurately predict a given area's weather for a week.
+
+53
+[Electromagnetic Sight]
+|Uncommon Ability|
+Shift your vision to see electromagnetism and electricity even through walls, instinctively distinguishing and understanding them.
+
+54
+[Sex Manipulation]
+|Common Ability|
+Allows you to alter your genitals to your liking as long as the changes aren't absurd.
+
+55
+[Dream Mirror]
+|Common Ability|
+View dreams of anyone in sensory range like a livestream. Can likely influence dreams by whispering in their ears.

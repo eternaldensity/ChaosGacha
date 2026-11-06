@@ -50,3 +50,18 @@ familiar:231
 trait:378
 skill:268
 skill:98
+# Advantage Gold trait: Fast Reflexes taken (Crazy Lure offered).
+trait:524 (not chosen)
+trait:102
+item:751
+familiar:322
+ability:423
+trait:568
+# Advantage Gold random: Stockpile taken.
+ability:760
+trait:550 (not chosen)
+ability:657
+# Advantage Bronze random: Electromagnetic Sight taken.
+ability:172
+ability:1036 (not chosen)
+ability:745

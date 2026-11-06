@@ -270,3 +270,79 @@ bronze skill for surveilance
 [Grooming]
 |Common Skill|
 NOT THAT KIND- You are very skilled at grooming, taking care of your hair, your hygiene, your cleanliness, etc., basically, you are skilled at making yourself and others look presentable.
+
+
+advantage gold trait for furthest live fall
+
+[Crazy Lure] - not taken
+(3.2, Rare, trait, Generic)
+Crazy, mentally unstable, or otherwise insane people find themselves more attracted to you, and you gain their affection and favor more easily. You can also reason with them more easily.
+
+or
+
+[Fast Reflexes]
+(2.1, Uncommon, trait, Generic)
+Your reflexes are beyond the norm, letting even a base human weave around punches and aim-dodge guns with training. This scales with your stats.
+
+aluminium item ticket for the pepsi can selling quest
+
+[Platinum Bag of Holding]
+(4.2, Elite, item, Generic)
+A brilliant shimmering platinum bag of holding containing a 2500x2500x2500m subspace inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. It can place contents in spatial stasis and clean them if the user wishes.
+
+silver familiar for crush
+
+[2-1B surgical droid]
+(2.6, Uncommon, familiar, Star Wars)
+The 2-1B surgical droid is an advanced medical droid with a vast database and droid-body precision. It surpasses any human surgeon and carries varied surgical implants.
+
+gold ability for dragon slay
+
+10
+[Revengence]
+(3.5, Rare, ability, Generic)
+Build up energy as you are hurt, then charge any ability or spell with it for a devastating effect. Each 10% health lost adds 2x power, reaching 10x at 10% health remaining; 8-hour cooldown.
+
+silver trait for instant kill save
+
+Arthropod Affiliate]
+(2.4, Uncommon, trait, Generic)
+You have great affinity with insects, arachnids, crustaceans, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your arthropod affinity, you possess slightly increased durability, and your armor-based abilities and effects cost slightly less energy to use.
+
+advantage gold random for dragon triple kill
+
+11
+[Stockpile]
+(3.0, Rare, ability, Generic)
+Stockpile energy while in an active slot, holding up to 3x your storage but taking 24 hours to fill completely.
+
+OR
+
+[Calcium Cultivation] - not chosen
+(3.7, Rare, trait, Generic)
+Your bones demand milk: every time you consume milk, they gain a permanent boost to durability and quality. Higher-quality milk gives a greater boost. Repeating the same kind of milk decreases its effects exponentially after the first drink, and the boost is relative to the milk's quality versus your bones.
+
+bronze random for being on a boat
+
+12
+[Weather]
+(0.9, Trash, ability, Generic)
+Lets you accurately predict a given area's weather for a week.
+
+advantage bronze random for defeating serval
+
+13
+[Electromagnetic Sight]
+(2.2, Uncommon, ability, Generic, #lightning)
+Shift your vision to see electromagnetism and electricity even through walls, instinctively distinguishing and understanding them.
+OR
+[Sex Manipulation] - not chosen
+(1.0, Common, ability, Generic)
+Allows you to alter your genitals to your liking as long as the changes aren't absurd.
+
+silver ability for killing Cleff
+
+14
+[Dream Mirror]
+(1.7, Common, ability, Generic, #divination #mental)
+View dreams of anyone in sensory range like a livestream. Can likely influence dreams by whispering in their ears.

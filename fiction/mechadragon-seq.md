@@ -40,6 +40,18 @@ Turn touched objects into stable cold weapons regardless of matter, like water s
 
 Source: Generic
 
+#### Revengence
+
+Build up energy as you are hurt, then charge any ability or spell with it for a devastating effect. Each 10% health lost adds 2x power, reaching 10x at 10% health remaining; 8-hour cooldown.
+
+Source: Generic
+
+#### Stockpile
+
+Stockpile energy while in an active slot, holding up to 3x your storage but taking 24 hours to fill completely.
+
+Source: Generic
+
 ### Uncommon
 
 #### Burial
@@ -56,7 +68,13 @@ Source: Generic
 
 #### Lesser Curse
 
-Place a curse by touch lowering one chosen physical attribute — Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
+Place a curse by touch lowering one chosen physical attribute, Strength, Resilience, stamina, Vitality, or Agility. Potency and duration scale with your strength advantage and energy spent; only one curse per target.
+
+Source: Generic
+
+#### Electromagnetic Sight
+
+Shift your vision to see electromagnetism and electricity even through walls, instinctively distinguishing and understanding them.
 
 Source: Generic
 
@@ -74,6 +92,26 @@ Allows you to swap your gender and the genders of those who don't or can't resis
 
 Source: Generic
 
+#### Sex Manipulation (not chosen)
+
+Allows you to alter your genitals to your liking as long as the changes aren't absurd.
+
+Source: Generic
+
+#### Dream Mirror
+
+View dreams of anyone in sensory range like a livestream. Can likely influence dreams by whispering in their ears.
+
+Source: Generic
+
+### Trash
+
+#### Weather
+
+Lets you accurately predict a given area's weather for a week.
+
+Source: Generic
+
 ## Items
 
 ### Elite
@@ -83,6 +121,12 @@ Source: Generic
 Filthy patchwork cloak of rat and mouse hide that can never be cleaned. Lets you transform into mundane vermin at will, control sensed vermin, and gain Elite rank illness and poison resistance.
 
 Source: DnD
+
+#### Platinum Bag of Holding
+
+A brilliant shimmering platinum bag of holding containing a 2500x2500x2500m subspace inside. Anyone reaching inside instinctively knows its contents and how to retrieve what they want. It can place contents in spatial stasis and clean them if the user wishes.
+
+Source: Generic
 
 ### Rare
 
@@ -222,6 +266,18 @@ Race - You are a vampire born of the Stone Mask created by Pillar Man Kars. You 
 
 Source: JoJo
 
+#### Crazy Lure (not chosen)
+
+Crazy, mentally unstable, or otherwise insane people find themselves more attracted to you, and you gain their affection and favor more easily. You can also reason with them more easily.
+
+Source: Generic
+
+#### Calcium Cultivation (not chosen)
+
+Your bones demand milk: every time you consume milk, they gain a permanent boost to durability and quality. Higher-quality milk gives a greater boost. Repeating the same kind of milk decreases its effects exponentially after the first drink, and the boost is relative to the milk's quality versus your bones.
+
+Source: Generic
+
 ### Uncommon
 
 #### Background NPC
@@ -233,6 +289,18 @@ Source: Generic
 #### Poseidon's Kiss
 
 You are blessed by Poseidon to move underwater as naturally as above water, and all mundane aquatic life is friendly to you.
+
+Source: Generic
+
+#### Fast Reflexes
+
+Your reflexes are beyond the norm, letting even a base human weave around punches and aim-dodge guns with training. This scales with your stats.
+
+Source: Generic
+
+#### Arthropod Affiliate
+
+You have great affinity with insects, arachnids, crustaceans, and aligned creatures, making it easier to earn their affection and favor and form relationships with them. Thanks to your arthropod affinity, you possess slightly increased durability, and your armor-based abilities and effects cost slightly less energy to use.
 
 Source: Generic
 
@@ -256,9 +324,9 @@ Source: Dark Souls
 
 ### Uncommon
 
-#### Wyvern
+#### Hellkite Wyvern
 
-A large sky-dwelling fire-breathing reptile often called a lesser dragon. A wyvern can swallow a man whole and roast an entire battalion with its breath. This wyvern is female and can lay eggs to reproduce.
+A lesser descendant of dragons but a fearsome creature nonetheless, the Hellkite Wyvern is a huge flying draconic beast with flesh like scales and the ability to breathe flames that can reduce the lesser men to ash. However, they are still vulnerable to conventional weapons like bows and arrows.
 
 Source: Generic
 
@@ -267,6 +335,12 @@ Source: Generic
 GLaDOS is a highly advanced AI holding immense Aperture Labs data that can interface with any system or mainframe she is installed in and build technology. She is stuck in a potato, so you must supply the technology first.
 
 Source: Portal
+
+#### 2-1B surgical droid
+
+The 2-1B surgical droid is an advanced medical droid with a vast database and droid-body precision. It surpasses any human surgeon and carries varied surgical implants.
+
+Source: Star Wars
 
 ### Common
 
