@@ -317,6 +317,52 @@ function boot(page, seed, fetchPayload) {
     dom.window.close();
   }
 
+  // ---------- history sort order ----------
+  {
+    const rows = [
+      { id: "h2", at: 2, min: 1.5, max: 5.3, avg: 3.3, f: "ability", n: 2, odds: 1, pull: 2 },
+      { id: "h1", at: 1, min: 1.5, max: 5.3, avg: 3.3, f: "ability", n: 1, odds: 1, pull: 1 },
+    ];
+    const db = JSON.stringify({ tickets: [], history: rows, settings: {} });
+    const { dom } = await boot("gacha.html", { "chaosGacha.v1": db });
+    const w = dom.window, d = w.document;
+    d.querySelector('#tabs [data-tab="history"]')
+      .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    let copied = "";
+    Object.defineProperty(w.navigator, "clipboard", {
+      configurable: true,
+      value: { writeText: async (t) => { copied = t; } },
+    });
+    const copy = async () => {
+      copied = "";
+      d.getElementById("btnCopyHist")
+        .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+      await new Promise(r => setTimeout(r, 20));
+      return copied;
+    };
+    const order = () => [...d.querySelectorAll("#histList b")].map(b => b.textContent);
+    ok("history sort: newest first by default",
+      order()[0] === "Ember" && order()[1] === "Tinder", order().join(","));
+    copied = await copy();
+    ok("history sort: copy respects newest first",
+      copied.indexOf("[Ember]") < copied.indexOf("[Tinder]"), copied.slice(0, 80));
+    const sel = d.getElementById("histSort");
+    sel.value = "old"; sel.dispatchEvent(new w.Event("change", { bubbles: true }));
+    ok("history sort: oldest first reorders rows",
+      order()[0] === "Tinder" && order()[1] === "Ember", order().join(","));
+    copied = await copy();
+    ok("history sort: copy respects oldest first",
+      copied.indexOf("[Tinder]") < copied.indexOf("[Ember]"), copied.slice(0, 80));
+    sel.value = "rarityAsc"; sel.dispatchEvent(new w.Event("change", { bubbles: true }));
+    ok("history sort: rarity ascending",
+      order()[0] === "Tinder" && order()[1] === "Ember", order().join(","));
+    sel.value = "rarity"; sel.dispatchEvent(new w.Event("change", { bubbles: true }));
+    copied = await copy();
+    ok("history sort: copy respects rarity order",
+      copied.indexOf("[Ember]") < copied.indexOf("[Tinder]"), copied.slice(0, 80));
+    dom.window.close();
+  }
+
   // ---------- Resonance weighting ----------
   {
     const { dom } = await boot("gacha.html");

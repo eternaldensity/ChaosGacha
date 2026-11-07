@@ -88,6 +88,22 @@
     });
   }
   function historyRows() { return (DB.history || []).map(hydrateHistory); }
+  // Display/copy order. The stored array is newest-first (unshift); the other
+  // modes are views, never rewrites of the save.
+  function historyOrder() {
+    const mode = (DB.settings && DB.settings.histSort) || "new";
+    const rows = (DB.history || []).slice();
+    if (mode === "old") rows.reverse();
+    else if (mode === "rarity" || mode === "rarityAsc") {
+      const dir = mode === "rarity" ? -1 : 1;
+      rows.sort((a, b) => {
+        const ra = hydrateHistory(a).rarity || 0;
+        const rb = hydrateHistory(b).rarity || 0;
+        return (ra - rb) * dir || (b.at || 0) - (a.at || 0);
+      });
+    }
+    return rows;
+  }
   function resolveEntry(name, category) {
     if (!name) return null;
     let hit = null;
@@ -841,7 +857,7 @@
   }
 
   function historyCopyText() {
-    return historyRows().map((h, i) => {
+    return historyOrder().map(hydrateHistory).map((h, i) => {
       const tier = G.rarityClass(DATA.classes, h.rarity).name;
       const cat = CAT_NAME[h.category] || h.category || "";
       return `${i + 1}\n[${h.name}]\n|${tier} ${cat}|\n${h.description || ""}`;
@@ -873,7 +889,7 @@
     $("histCount").textContent = DB.history.length ? `(${DB.history.length})` : "";
     const ul = $("histList");
     ul.innerHTML = DB.history.length ? "" : "<li class='muted'>No rolls yet.</li>";
-    DB.history.slice(0, 200).forEach(raw => {
+    historyOrder().slice(0, 200).forEach(raw => {
       const h = hydrateHistory(raw);
       const cls = G.rarityClass(DATA.classes, h.rarity);
       const li = document.createElement("li");
@@ -916,6 +932,13 @@
     copyText(historyCopyText(), `${DB.history.length} history entr${DB.history.length === 1 ? "y" : "ies"}`)
       .catch(() => toast("Copy failed.", true));
   });
+  if ($("histSort")) {
+    $("histSort").value = (DB.settings && DB.settings.histSort) || "new";
+    $("histSort").addEventListener("change", () => {
+      DB.settings.histSort = $("histSort").value;
+      save(); renderHistory();
+    });
+  }
   $("btnExportHist").addEventListener("click", () => {
     const blob = new Blob([JSON.stringify({ app: "chaos-gacha", v: 1, tickets: DB.tickets, history: DB.history })], { type: "application/json" });
     const a = document.createElement("a");

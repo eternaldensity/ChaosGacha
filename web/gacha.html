@@ -214,6 +214,15 @@
           <input type="file" id="fileHist" accept=".json,application/json" style="display:none">
         </div>
       </div>
+      <div class="row" style="margin:6px 0">
+        <div><label for="histSort">Order</label>
+          <select id="histSort">
+            <option value="new">Newest first</option>
+            <option value="old">Oldest first</option>
+            <option value="rarity">Rarity, high to low</option>
+            <option value="rarityAsc">Rarity, low to high</option>
+          </select></div>
+      </div>
       <ul class="list" id="histList"></ul>
     </div>
   </section>

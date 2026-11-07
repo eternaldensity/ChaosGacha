@@ -38,7 +38,8 @@ Two single-purpose pages sharing `css/app.css` (mobile-first layout):
   history stored by entry identity and hydrated from the current data,
   spin-wheel animation with adjustable
   slowdown, filters, ×10 multi-pull, result sharing, history stats,
-  per-roll removal, formatted copy-all, wallet import/export, and the
+  per-roll removal, selectable history order, formatted copy-all
+  (following that order), wallet import/export, and the
   Gambler / Thematic Magnetism trait toggles.
 - `curse.html` — Curse Roulette port: d20 spin with the original severity
   bands, resolve conditions, per-tier ticket rewards paid into the gacha
