@@ -460,6 +460,21 @@ function boot(page, seed, fetchPayload) {
       d.querySelectorAll("#multiList li").length === 2,
       String(d.querySelectorAll("#multiList li").length));
 
+    // Copy while the advantage choice is pending: no single result exists
+    // yet, so the button copies every wheel.
+    let copied = "";
+    Object.defineProperty(w.navigator, "clipboard", {
+      configurable: true,
+      value: { writeText: async (t) => { copied = t; } },
+    });
+    const wheelNames = [...d.querySelectorAll("#multiList b")].map(b => b.textContent);
+    d.getElementById("btnCopy").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 20));
+    ok("gacha gambler: copy captures every advantage wheel before a pick",
+      wheelNames.length === 2 && wheelNames.every(n => copied.includes(n)) &&
+      copied.split("\n\n").length >= 2,
+      copied.slice(0, 200));
+
     // Every x10 ticket rolls its own d20, so every row must show it. Force a
     // rank up on the first ticket (d20 = 20) so the "gold → platinum" note is
     // deterministic; the rest roll "No change".

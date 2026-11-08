@@ -277,6 +277,7 @@
   migrateHistory();
   const uid = () => Date.now().toString(36) + Math.floor(Math.random() * 1e6).toString(36);
   let lastResult = null;
+  let lastResults = null;   // multi-pull rows shown before a single pick
 
   function resultText(r) {
     const cls = G.rarityClass(DATA.classes, r.rarity);
@@ -503,6 +504,7 @@
 
   function showResult(r, keepMulti) {
     lastResult = r;
+    lastResults = null;
     const cls = G.rarityClass(DATA.classes, r.rarity);
     const tags = entryTags(r);
     $("resultCard").style.display = "block";
@@ -521,6 +523,7 @@
 
   function showDestroyed(g, note) {
     lastResult = null;
+    lastResults = null;
     const cls = G.rarityClass(DATA.classes, 0);
     $("resultCard").style.display = "block";
     $("resultCard").style.boxShadow = "";
@@ -605,7 +608,7 @@
     // How the batch is presented once the wheels settle.
     const present = () => {
       if (rolls <= 1) { keep(results[0]); return; }
-      showChoicePrompt(rolls, g);
+      showChoicePrompt(rolls, g, results);
       renderChoiceList(results, keep);
     };
     const speed = (DB.settings && DB.settings.spin) || "normal";
@@ -680,8 +683,9 @@
     $("multiCard").style.display = "block";
   }
 
-  function showChoicePrompt(n, g) {
+  function showChoicePrompt(n, g, results) {
     lastResult = null;
+    lastResults = Array.isArray(results) ? results : null;
     $("resultCard").style.display = "block";
     $("resultCard").style.boxShadow = "";
     $("multiCard").style.display = "block";
@@ -855,8 +859,10 @@
   });
 
   $("btnCopy").addEventListener("click", async () => {
-    if (!lastResult) return;
-    try { await copyText(resultText(lastResult)); }
+    const rows = lastResult ? [lastResult] : (lastResults || []);
+    if (!rows.length) return toast("Nothing to copy yet.", true);
+    const text = rows.map(resultText).join("\n\n");
+    try { await copyText(text, lastResult ? "" : `${rows.length} results`); }
     catch (e) { toast("Copy failed.", true); }
   });
 
