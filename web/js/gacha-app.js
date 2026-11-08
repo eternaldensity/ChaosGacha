@@ -58,7 +58,8 @@
   // Tag descriptions from the original site's dictionaries (data/tags.js).
   const TAGDOCS = window.CHAOS_TAGS || {};
   function tagDesc(tag, cat) {
-    const hit = (cat && (TAGDOCS[cat] || [])).find(t => t.tag === tag);
+    const list = cat ? (TAGDOCS[cat] || []) : [];
+    const hit = list.find(t => t.tag === tag);
     if (hit) return hit.desc;
     for (const c of Object.keys(TAGDOCS)) {
       const h = TAGDOCS[c].find(t => t.tag === tag);
@@ -157,22 +158,78 @@
     return [...s].sort((a, b) => tagCount(b) - tagCount(a) || a.localeCompare(b));
   }
   function fillTagSelects() {
-    for (const id of ["fTag", "tkTag"]) {
-      const sel = $(id);
-      if (!sel) continue;
+    const sel = $("fTag");
+    if (sel) {
       const cur = sel.value;
       const list = tagsForCategory(category);
       sel.innerHTML = `<option value="">Any tag</option>` +
         list.map(t => `<option value="${esc(t)}">${esc(t)} (${tagCount(t)})</option>`).join("");
       if (cur && [...sel.options].some(o => o.value === cur)) sel.value = cur;
-    }
-    if ($("fTag")) {
-      $("fTag").title = "Tags for the selected category. " +
+      sel.title = "Tags for the selected category. " +
         "Hover an entry's pill to see what a tag means.";
     }
     if ($("fTagNames")) {
       $("fTagNames").innerHTML = tagsForCategory("")
         .map(t => `<option value="${esc(t)}"></option>`).join("");
+    }
+  }
+
+  // Ticket theme-tag picker (Entries-page model): searchable chips whose
+  // counts are constrained to the ticket's tier and category. Single-select;
+  // clicking the selected chip clears it.
+  function ticketTagCounts() {
+    const tier = tierOf($("tkTier") ? $("tkTier").value : "");
+    const cat = $("tkCat") ? $("tkCat").value : "random";
+    const counts = {};
+    for (const e of (DATA.entries || [])) {
+      if (e.t === "tree") continue;
+      if (cat && cat !== "random" && e.f !== cat) continue;
+      if (!(e.r > tier.min && e.r <= tier.max)) continue;
+      for (const t of entryTags(e)) counts[t] = (counts[t] || 0) + 1;
+    }
+    return counts;
+  }
+  function setTicketTag(tag) {
+    $("tkTag").value = tag || "";
+    if ($("tkTagPick")) $("tkTagPick").textContent = tag || "any";
+    renderTicketTags();
+  }
+  function renderTicketTags() {
+    const host = $("tkTags");
+    if (!host) return;
+    const q = ($("tkTagQ") && $("tkTagQ").value || "").trim().toLowerCase();
+    const counts = ticketTagCounts();
+    const selected = $("tkTag") ? $("tkTag").value : "";
+    if (selected && counts[selected] == null) counts[selected] = 0;
+    const tags = Object.keys(counts)
+      .filter(t => !q || t.includes(q) || tagDesc(t).toLowerCase().includes(q))
+      .sort((a, b) => counts[b] - counts[a] || a.localeCompare(b));
+    host.innerHTML = "";
+    if (!tags.length) {
+      host.innerHTML = "<span class='muted small'>No tags match these ticket parameters.</span>";
+      return;
+    }
+    const addChip = (t, before) => {
+      const b = document.createElement("button");
+      b.textContent = `${t} (${counts[t]})`;
+      const d = tagDesc(t);
+      b.title = d ? `${t} — ${d}` : `Only roll entries tagged ${t}`;
+      if (t === selected) b.classList.add("sel");
+      b.addEventListener("click", () => {
+        setTicketTag($("tkTag").value === t ? "" : t);
+      });
+      host.insertBefore(b, before || null);
+    };
+    const shown = q ? tags : tags.slice(0, 40);
+    for (const t of shown) addChip(t);
+    if (!q && tags.length > shown.length) {
+      const more = document.createElement("button");
+      more.textContent = `+${tags.length - shown.length} more (search above)`;
+      more.addEventListener("click", () => {
+        for (const t of tags.slice(shown.length)) addChip(t, more);
+        more.remove();
+      });
+      host.appendChild(more);
     }
   }
 
@@ -435,9 +492,13 @@
       b.addEventListener("click", () => { category = c; renderPickers(); refreshSources(); });
       cg.appendChild(b);
     }
+    const keepTier = $("tkTier").value, keepCat = $("tkCat").value;
     $("tkTier").innerHTML = DATA.tiers.map(t => `<option>${t.name}</option>`).join("");
     $("tkCat").innerHTML = CATS.map(c => `<option>${c}</option>`).join("");
+    if (keepTier && [...$("tkTier").options].some(o => o.value === keepTier)) $("tkTier").value = keepTier;
+    if (keepCat && [...$("tkCat").options].some(o => o.value === keepCat)) $("tkCat").value = keepCat;
     fillTagSelects();
+    renderTicketTags();
   }
 
   function showResult(r, keepMulti) {
@@ -960,6 +1021,9 @@
   });
 
   renderPickers();
+  if ($("tkTagQ")) $("tkTagQ").addEventListener("input", renderTicketTags);
+  if ($("tkTier")) $("tkTier").addEventListener("change", renderTicketTags);
+  if ($("tkCat")) $("tkCat").addEventListener("change", renderTicketTags);
   $("cMin").value = 1.5; $("cAvg").value = 3.3; $("cMax").value = 5.3;
   try {
     const n = (DATA.entries || []).length;

@@ -363,6 +363,48 @@ function boot(page, seed, fetchPayload) {
     dom.window.close();
   }
 
+  // ---------- ticket theme-tag picker ----------
+  {
+    const { dom } = await boot("gacha.html");
+    const w = dom.window, d = w.document;
+    const tier = d.getElementById("tkTier"), cat = d.getElementById("tkCat");
+    const q = d.getElementById("tkTagQ");
+    const chips = () => [...d.querySelectorAll("#tkTags button")].map(b => b.textContent);
+    const fireOf = () => {
+      const t = chips().find(x => /^fire \(/.test(x));
+      return t ? Number(t.match(/\((\d+)\)/)[1]) : null;
+    };
+    tier.value = "gold"; tier.dispatchEvent(new w.Event("change", { bubbles: true }));
+    cat.value = "random"; cat.dispatchEvent(new w.Event("change", { bubbles: true }));
+    q.value = "fire"; q.dispatchEvent(new w.Event("input", { bubbles: true }));
+    const randomFire = fireOf();
+    cat.value = "ability"; cat.dispatchEvent(new w.Event("change", { bubbles: true }));
+    const abilityFire = fireOf();
+    ok("ticket tags: counts follow the ticket category",
+      randomFire != null && abilityFire != null && randomFire >= abilityFire,
+      `${randomFire} vs ${abilityFire}`);
+    q.value = "zzzznotatag";
+    q.dispatchEvent(new w.Event("input", { bubbles: true }));
+    ok("ticket tags: search can empty the list",
+      /No tags match/.test(d.getElementById("tkTags").textContent),
+      d.getElementById("tkTags").textContent.slice(0, 80));
+    q.value = "fire"; q.dispatchEvent(new w.Event("input", { bubbles: true }));
+    const chip = [...d.querySelectorAll("#tkTags button")]
+      .find(b => /^fire \(/.test(b.textContent));
+    ok("ticket tags: fire chip is offered", !!chip);
+    if (chip) chip.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    ok("ticket tags: clicking selects the tag",
+      d.getElementById("tkTag").value === "fire" &&
+      d.getElementById("tkTagPick").textContent === "fire",
+      d.getElementById("tkTag").value);
+    d.getElementById("btnAddTicket").dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    const db = JSON.parse(w.localStorage.getItem("chaosGacha.v1") || "{}");
+    ok("ticket tags: added ticket carries the selection",
+      !!(db.tickets && db.tickets[0]) && db.tickets[0].tag === "fire",
+      JSON.stringify(db.tickets && db.tickets[0]));
+    dom.window.close();
+  }
+
   // ---------- Resonance weighting ----------
   {
     const { dom } = await boot("gacha.html");
