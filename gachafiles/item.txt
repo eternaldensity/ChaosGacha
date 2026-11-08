@@ -1341,7 +1341,7 @@
 671. Bondage of Enduring, 1.1, Generic
 #(Tag:armor)(Tag:defence+)(Tag:nsfw)(Tag:stamina+)(Nsfw) Bondage ropes worn in place of clothes that boost durability and stamina regeneration and convert pain into pleasure.
 672. Bunny's Blessings, 1.5, Generic
-#(Tag:accessory)(Tag:social)(Nsfw) A raunchy bunny-ears headband and bunny-tail buttplug set that slightly increases charm and appeal to others.
+#(Tag:accessory)(Tag:nsfw)(Tag:social)(Nsfw) A raunchy bunny-ears headband and bunny-tail buttplug set that slightly increases charm and appeal to others.
 673. Prayer Beads, 1.6, Generic
 #(Tag:accessory)(Tag:holy+)(Tag:nsfw)(Nsfw) Silver devotional beads that boost Holy and faith-based abilities and connection to Holy beings while all beads are inside the anal cavity.
 674. Whip of Ecstasy, 2.3, Generic
