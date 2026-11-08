@@ -7,6 +7,10 @@
   {
    "name": "Deleted",
    "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  },
+  {
+   "name": "Noncon",
+   "desc": "Sexual content involving non-consensual acts or themes. Hidden behind the Noncon toggle, which only appears when NSFW content is shown."
   }
  ],
  "item": [
@@ -17,6 +21,10 @@
   {
    "name": "Deleted",
    "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  },
+  {
+   "name": "Noncon",
+   "desc": "Sexual content involving non-consensual acts or themes. Hidden behind the Noncon toggle, which only appears when NSFW content is shown."
   }
  ],
  "skill": [
@@ -27,18 +35,30 @@
   {
    "name": "Deleted",
    "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  },
+  {
+   "name": "Noncon",
+   "desc": "Sexual content involving non-consensual acts or themes. Hidden behind the Noncon toggle, which only appears when NSFW content is shown."
   }
  ],
  "trait": [
   {
    "name": "Deleted",
    "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  },
+  {
+   "name": "Noncon",
+   "desc": "Sexual content involving non-consensual acts or themes. Hidden behind the Noncon toggle, which only appears when NSFW content is shown."
   }
  ],
  "familiar": [
   {
    "name": "Deleted",
    "desc": "Removed from the original Chaos Gacha lists. Kept in this fork for old saves and completists; exclude this tag to roll or generate only current entries."
+  },
+  {
+   "name": "Noncon",
+   "desc": "Sexual content involving non-consensual acts or themes. Hidden behind the Noncon toggle, which only appears when NSFW content is shown."
   }
  ]
 }

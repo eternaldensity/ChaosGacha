@@ -9,7 +9,7 @@
 5. Blind Eye, 1.1, Generic
 #(Tag:stealth+)You disappear in a crowd and go unnoticed as long as you should not stand out.
 6. What's Monogamy, 3.0, Generic
-#(Tag:social)(Noncon) Your potential partners accept your harem without questioning the logistics or logic of multiple lovers.
+#(Tag:noncon)(Tag:social) Your potential partners accept your harem without questioning the logistics or logic of multiple lovers.
 7. Antibody, 2.7, Generic
 #(Tag:poison-resistance+)You strongly resist most diseases.
 8. Longevity, 4.5, Generic
@@ -261,7 +261,7 @@
 131. Sexual Calibration, 2.3, Generic
 #(Tag:nsfw)(Tag:rule)(Tag:talent) You eliminate sex's minor inconveniences, adjusting how STDs, hygiene, and unwanted pregnancy affect you. You are also very talented in the tantric arts.
 132. Golden Shot, 1.3, Generic
-#(Tag:nsfw)(Tag:rule)(Noncon) Your swimmers are the strongest in the world; anyone you cum inside WILL get pregnant, even if they are more barren than arid deserts. (If you lack the right equipment, you gain it should you choose to. If not, reroll this trait.)
+#(Tag:noncon)(Tag:nsfw)(Tag:rule) Your swimmers are the strongest in the world; anyone you cum inside WILL get pregnant, even if they are more barren than arid deserts. (If you lack the right equipment, you gain it should you choose to. If not, reroll this trait.)
 133. Ygdar Orus Li Ox, 4.9, Generic
 #(Tag:energy-recovery)(Tag:health-recovery)(Tag:survival)"You only live once." At the moment of your death, you resuscitate with all lethal wounds healed and some energy restored, then this trait is deleted from your status.
 134. Hero Candidate, 3.3, Generic
@@ -351,7 +351,7 @@
 176. Boundless Stamina, 4.4, Generic
 #(Tag:stamina+)Your stamina is boundless; even as a regular person you can run a marathon with ease and need only a minute's rest afterward. Your stamina recovers incredibly quickly and exhaustion fades much faster.
 177. Lucky Sukebe, 2.3, Generic
-#(Tag:luck+)(Tag:nsfw)(Noncon) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find someone changing.
+#(Tag:luck+)(Tag:noncon)(Tag:nsfw) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find someone changing.
 178. Spirit Affinity, 3.0, Generic
 #(Tag:spirit)(Tag:spirit+)You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
 179. Resilient Soul, 4.9, Generic
@@ -597,15 +597,15 @@
 299. Blessing of Bast, 2.7, Generic
 #(Tag:agility+)(Tag:reflex+)(Tag:social)Blessed by Bast, goddess of cats and grace, you gain cat-like reflexes, agility, and night vision. Felines adore you.
 300. Fertility Calibration, 2.2, Generic
-#(Tag:nsfw)(Tag:rule)(Noncon) You freely adjust your own fertility from absolute sterility to extreme potency. You can impregnate even the completely infertile, or match the Goat of a Thousand Young.
+#(Tag:noncon)(Tag:nsfw)(Tag:rule) You freely adjust your own fertility from absolute sterility to extreme potency. You can impregnate even the completely infertile, or match the Goat of a Thousand Young.
 301. Draw of Fate, 3.3, Generic
 #(Tag:luck+)Your fate is strong and immoderate, curving toward you like a main protagonist. You draw plenty of luck, both good and bad.
 302. Dealmaker, 4.5, Generic
 #(Tag:fae)(Tag:rule)(Tag:social)"A Deal's a Deal." People feel compelled to fulfil their end of any explicit deal they make with you (No clever wording or Fae deals). It is also far easier for you to goad people into outrageous bets.
 303. Hentai Protagonist, 4.8, Generic
-#(Tag:nsfw)(Tag:rule)(Noncon) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
+#(Tag:noncon)(Tag:nsfw)(Tag:rule) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
 304. Ecchi Protagonist, 3.5, Generic
-#(Tag:nsfw)(Tag:rule)(Noncon) Your path is shaped by the Ecchi genre, drawing you into situations like walking in on someone changing, joining a dorm of attractive people, or getting locked in a closet with someone hot.
+#(Tag:noncon)(Tag:nsfw)(Tag:rule) Your path is shaped by the Ecchi genre, drawing you into situations like walking in on someone changing, joining a dorm of attractive people, or getting locked in a closet with someone hot.
 305. Honesty, 2.2, Generic
 #(Tag:social)You project an aura that draws honesty from others. People lie worse around you and feel greater remorse for deceiving you.
 306. Truthspeaker, 4.2, Generic

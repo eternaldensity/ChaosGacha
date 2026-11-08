@@ -14,8 +14,8 @@ original index page does.
 - `entry_tags.json` — per-entry tags parsed from
   `https://www.chaosgacha.com/gachalist.txt`:
   `[["ability", "Hellflames", ["Fire"]], ...]`
-- `custom_dicts.json` — fork-only tag dictionary additions (`Railway` and
-  `Deleted`). Same shape as `dicts.json`; `tools/export_web_data.py` merges
+- `custom_dicts.json` — fork-only tag dictionary additions (`Railway`,
+  `Deleted`, and `Noncon`). Same shape as `dicts.json`; `tools/export_web_data.py` merges
   these after the official dictionaries, so refreshing the vendored snapshot
   cannot erase them. Add fork-only tags here, not to `dicts.json`.
   `Deleted` marks entries the live site no longer lists (the merge tool keeps

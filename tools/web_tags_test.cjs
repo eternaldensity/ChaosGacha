@@ -521,6 +521,9 @@ function boot(page, seed, fetchPayload) {
       badNsfw.slice(0, 3).map(e => e.name).join(", "));
     ok("data: every tech tag sets the tech flag", badTech.length === 0,
       badTech.slice(0, 3).map(e => e.name).join(", "));
+    const badNoncon = entries.filter(e => (e.tags || []).includes("noncon") && !e.noncon);
+    ok("data: every noncon tag sets the noncon flag", badNoncon.length === 0,
+      badNoncon.slice(0, 3).map(e => e.name).join(", "));
     const tome = entries.find(e => /Tome of the Grand Rizzard/i.test(e.name));
     ok("data: a tag-only nsfw entry is gated", !!tome && tome.nsfw === true,
       tome ? tome.name : "not found");

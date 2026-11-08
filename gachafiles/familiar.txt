@@ -161,7 +161,7 @@
 81. Anahita, 4.1, Calamity Mod
 #(Tag:ice)(Tag:medium-size)(Tag:mental)(Tag:spirit)(Tag:water)Anahita, an elemental born of the clear oceans. She sings like a siren to enthral, conjures mists and spears of water and ice, and wields her glaive as a weapon.
 82. Clothes Melting Slime, 1.8, Generic
-#(Tag:amorphous)(Tag:large-size)(Tag:non-combatant)(Noncon) A grey amorphous ever-shifting slime that quickly melts all clothing. Strangely, its acid doesn't melt common clothing materials but conceptually melts anything classified as clothing. The more clothing it melts, the larger and stronger it gets.
+#(Tag:amorphous)(Tag:large-size)(Tag:non-combatant)(Tag:noncon) A grey amorphous ever-shifting slime that quickly melts all clothing. Strangely, its acid doesn't melt common clothing materials but conceptually melts anything classified as clothing. The more clothing it melts, the larger and stronger it gets.
 83. Shark, 0.4, Generic
 #(Tag:aquatic)(Tag:large-size)A regular old shark, only useful in water, but healthy, strong, and above-average in intelligence.
 84. Schrodinger's cat, 1.7, Generic

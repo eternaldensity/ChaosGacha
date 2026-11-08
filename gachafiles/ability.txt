@@ -983,7 +983,7 @@
 492. Vita Telum, 4.4, Generic
 #(Tag:life)Converts your life into supernaturally durable weapons of solidified blood emerging from an open wound. Greater vitality or sacrificed lifespan makes them stronger, with lifespan sacrifice also granting powerful effects based on your abilities and traits. Created weapons fade in power over time until returning to normal blood.
 493. Authority of Lust, 6.6, Generic
-#(Tag:command)(Tag:mental)(Tag:passive)(Noncon) When activated, everyone who can see you treats you as an object of affection, platonic or romantic, with stronger effect at larger power gaps in your favor. Mundanes may surrender life savings or spouse, while equals may only treat you as an ordinary friend.
+#(Tag:command)(Tag:mental)(Tag:noncon)(Tag:passive) When activated, everyone who can see you treats you as an object of affection, platonic or romantic, with stronger effect at larger power gaps in your favor. Mundanes may surrender life savings or spouse, while equals may only treat you as an ordinary friend.
 494. Steal, 3.3, Generic
 #(Tag:movement)Remotely steals an unbound target's possession within 10 meters without them noticing. More valuable objects cost more energy.
 495. Grand Theft, 5.3, Generic
@@ -991,7 +991,7 @@
 496. Record, 2.7, Generic
 #(Tag:mental)Trash Count - Records your sight into memory in perfect detail, recallable anytime as if constantly in mind, surpassing photographic memory.
 497. Arousal, 3.6, Generic
-#(Tag:alter)(Tag:nsfw)(Noncon) Makes targets in your vision aroused, or climax with enough arousal. Stronger targets cost more energy, and far stronger ones notice your attempts.
+#(Tag:alter)(Tag:noncon)(Tag:nsfw) Makes targets in your vision aroused, or climax with enough arousal. Stronger targets cost more energy, and far stronger ones notice your attempts.
 498. Audacity, 4.6, Generic
 #(Tag:mental)(Tag:stealth)Lets you go unnoticed as people ignore you to their utmost, allowing theft, break-ins, or kills without comment. Stronger targets resist more, noticing drastic acts; upkeep costs energy and stamina.
 499. Mind Reading, 4.5, Generic
@@ -1149,7 +1149,7 @@
 575. Somnabulist, 4.2, MHA
 #(Tag:bio)Emits very powerful sleeping gas from your skin as purple mist.
 576. Phantom Touch, 2.3, Generic
-#(Tag:mental)(Tag:spirit)(Noncon) Lets you touch a target at range, making them feel your hands or mouth on a spot of your choosing. These are phantom sensations only and cannot physically affect them.
+#(Tag:mental)(Tag:noncon)(Tag:spirit) Lets you touch a target at range, making them feel your hands or mouth on a spot of your choosing. These are phantom sensations only and cannot physically affect them.
 577. Collaring, 3.8, Generic
 #(Tag:command)Lets you collar a defeated or submitting target, preventing them from moving to harm you and forcing them to obey your orders. Manifests as a translucent, hideable collar and chain around their neck.
 578. Material Swim, 2.4, Generic
@@ -1977,7 +1977,7 @@
 992. Prophetic Compass, 3.5, Generic
 #(Tag:divination)You can conjure a phantasmal compass in your hands that points toward your target. As long as you know the target and carry something related to it, you can track it down.
 993. Tentacled Creature, 3.3, Generic
-#(Tag:bio)(Tag:nsfw)(Tag:transformation)(Noncon) You can turn into a hentai tentacle creature or manifest its tentacles at will. You resemble a ball with numerous tentacles that act as both limbs and reproductive organs.
+#(Tag:bio)(Tag:noncon)(Tag:nsfw)(Tag:transformation) You can turn into a hentai tentacle creature or manifest its tentacles at will. You resemble a ball with numerous tentacles that act as both limbs and reproductive organs.
 994. Madness Wavelength, 5.2, Generic
 #(Tag:command)(Tag:mental)(Tag:spirit)You emit a wavelength that alters the minds and perceptions of those it touches. You can drive a whole town to madness while passing by, and can tweak the madness exerted.
 995. Time Accel, 4.0, Fate
@@ -2057,7 +2057,7 @@
 1032. Sticky Icky, 0.4, Generic
 #(Tag:alter)Your skin is uncomfortably sticky to others, as if soaked in glue or soda, though you feel no difference.
 1033. Tinker - Erotics, 2.6, Generic
-#(Tag:nsfw)(Tag:tech)(Tag:tinker)(Noncon) Tinker - Allows you to build technological constructs or items related to sexual events, such as aphrodisiacs, sexual instruments, contraceptives, etc.
+#(Tag:noncon)(Tag:nsfw)(Tag:tech)(Tag:tinker) Tinker - Allows you to build technological constructs or items related to sexual events, such as aphrodisiacs, sexual instruments, contraceptives, etc.
 1034. Shrine, 6.1, Jujutsu Kaisen
 #(Tag:fire)(Tag:kinetic)The Cursed Technique of the King of Curses. Shrine grants Cleave, Dismantle, and Furnace. Dismantle sends flying invisible slashes of varying power, Cleave creates stronger instant slashes on touched targets, and Furnace manifests a powerful fire arrow. With enough mastery or enlightenment, you may unleash the Malevolent Shrine.
 1035. Imagine Breaker, 6.5, Toaru
@@ -2333,7 +2333,7 @@
 1170. Edict, 4.8, Generic
 #(Tag:command)(Tag:mental)Impose rules by touching targets and expending energy; targets feel incredible mental compulsion to follow them, like forbidding milk, forcing travel at set times, or banning clothes in a room. Stronger targets are harder to affect, and edicts against self-preservation are exponentially harder.
 1171. Phantom Sensation, 3.3, Generic
-#(Tag:illusion)(Tag:spirit)(Noncon) Project sensations of actions onto someone in your line of sight without physically affecting them. You can project groping, licking, scratching, choking, burning, stabbing, hanging, etc., provided you could do those things without the ability.
+#(Tag:illusion)(Tag:noncon)(Tag:spirit) Project sensations of actions onto someone in your line of sight without physically affecting them. You can project groping, licking, scratching, choking, burning, stabbing, hanging, etc., provided you could do those things without the ability.
 1172. Mind Blast, 2.5, Generic
 #(Tag:mental)Send a wave of shimmering psionic energy through your eyes. On hitting a sentient target it causes mental damage, confusion, and painful headaches. Effectiveness depends on the target's mental and magical power.
 1173. Geass - Command, 5.4, Code Geass
@@ -2491,7 +2491,7 @@
 1249. Fight Mode, 1.3, Generic
 #(Tag:bio)(Tag:martial)Fill your body with adrenaline, norepinephrine, cortisol, endorphins, testosterone, and dopamine to enter an enhanced fight mode. Get your head in the game without suffering overdose consequences.
 1250. Induce Lactation, 1.5, Generic
-#(Tag:bio)(Tag:nsfw)(Noncon) Induce lactation on targets in your line of sight, provided they are biologically capable.
+#(Tag:bio)(Tag:noncon)(Tag:nsfw) Induce lactation on targets in your line of sight, provided they are biologically capable.
 1251. Anchor Back, 1.8, Generic
 #(Tag:movement)Place a mark where you stand; while active you can teleport back to it. Greater distance costs more energy. Only one mark at a time.
 1252. Adventure Line, 2.4, Stanley Parable
