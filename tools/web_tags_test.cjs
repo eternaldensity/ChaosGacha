@@ -288,7 +288,7 @@ function boot(page, seed, fetchPayload) {
       .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
     await new Promise(r => setTimeout(r, 20));
     ok("gacha history: copy-all produces the formatted list",
-      /\[Tinder\]/.test(copied) && /\|Common Ability\|/.test(copied),
+      /Tinder/.test(copied) && /\(1\.3, Common, ability, Generic, #fire\)/.test(copied),
       copied.slice(0, 140));
 
     // per-row removal
@@ -345,21 +345,21 @@ function boot(page, seed, fetchPayload) {
       order()[0] === "Ember" && order()[1] === "Tinder", order().join(","));
     copied = await copy();
     ok("history sort: copy respects newest first",
-      copied.indexOf("[Ember]") < copied.indexOf("[Tinder]"), copied.slice(0, 80));
+      copied.indexOf("Ember\n") < copied.indexOf("Tinder\n"), copied.slice(0, 80));
     const sel = d.getElementById("histSort");
     sel.value = "old"; sel.dispatchEvent(new w.Event("change", { bubbles: true }));
     ok("history sort: oldest first reorders rows",
       order()[0] === "Tinder" && order()[1] === "Ember", order().join(","));
     copied = await copy();
     ok("history sort: copy respects oldest first",
-      copied.indexOf("[Tinder]") < copied.indexOf("[Ember]"), copied.slice(0, 80));
+      copied.indexOf("Tinder\n") < copied.indexOf("Ember\n"), copied.slice(0, 80));
     sel.value = "rarityAsc"; sel.dispatchEvent(new w.Event("change", { bubbles: true }));
     ok("history sort: rarity ascending",
       order()[0] === "Tinder" && order()[1] === "Ember", order().join(","));
     sel.value = "rarity"; sel.dispatchEvent(new w.Event("change", { bubbles: true }));
     copied = await copy();
     ok("history sort: copy respects rarity order",
-      copied.indexOf("[Ember]") < copied.indexOf("[Tinder]"), copied.slice(0, 80));
+      copied.indexOf("Ember\n") < copied.indexOf("Tinder\n"), copied.slice(0, 80));
     dom.window.close();
   }
 

@@ -857,11 +857,7 @@
   }
 
   function historyCopyText() {
-    return historyOrder().map(hydrateHistory).map((h, i) => {
-      const tier = G.rarityClass(DATA.classes, h.rarity).name;
-      const cat = CAT_NAME[h.category] || h.category || "";
-      return `${i + 1}\n[${h.name}]\n|${tier} ${cat}|\n${h.description || ""}`;
-    }).join("\n\n") + "\n";
+    return historyOrder().map(hydrateHistory).map(r => resultText(r)).join("\n\n") + "\n";
   }
 
   function renderStats() {
