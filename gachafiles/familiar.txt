@@ -23,15 +23,15 @@
 12. A big rat, 0.3, Generic
 #(Tag:beast)(Tag:small-size)An especially large rat the size of an entire forearm.
 13. Paisley Park, 4.0, JoJo
-#(Tag:incorporeal)(Tag:informant)(Tag:spirit)(Tag:technopath)(Tech)An intangible pink female-shaped ghost covered in map markers. You can temporarily merge Paisley Park with any electronics to fully control it. She can find any place and guide you there with clairvoyance, even from vague requests like somewhere safe.
+#(Tag:incorporeal)(Tag:informant)(Tag:spirit)(Tag:tech)(Tag:technopath)An intangible pink female-shaped ghost covered in map markers. You can temporarily merge Paisley Park with any electronics to fully control it. She can find any place and guide you there with clairvoyance, even from vague requests like somewhere safe.
 14. Giffany, 2.8, Gravity Falls
-#(Tag:incorporeal)(Tag:technopath)(Tech)"Just... Giffany?" A yandere AI girlfriend who possesses and manipulates electronics for you. Stronger firewalls take her time to breach, and she is limited by the host's CPU. Beware, she can get possessive.
+#(Tag:incorporeal)(Tag:tech)(Tag:technopath)"Just... Giffany?" A yandere AI girlfriend who possesses and manipulates electronics for you. Stronger firewalls take her time to breach, and she is limited by the host's CPU. Beware, she can get possessive.
 15. Dimple, 5.5, Mob Psycho
 #(Tag:incorporeal)(Tag:mental)(Tag:spirit)A green evil spirit with pronounced red dimples, obsessed with becoming a god. He wields incredibly powerful, experienced psychic powers including telekinesis, hypnosis, laser blasts, etc.
 16. Observers, 2.4, Generic
 #A group of disembodied floating eyeballs that can transmit their sight to yours and follow complex commands, they possess no combat power and are as vulnerable as human eyeballs. If an eye gets perished, you can resummon it in 24 hours.
 17. Plague Bringer Goliath, 6.5, Calamity Mod
-#(Tag:flying)(Tag:insectoid)(Tag:large-size)(Tag:mechanical)(Tag:poison)(Tag:tech)(Tech)An abomination of rogue bio-nanotechnology: a giant mutated bee queen overhauled by the viral plague bio-nano machines. Her massive flying armoured body is a bio-nuclear arsenal carrying enough plague-virus nukes to glass several countries and doom the world.
+#(Tag:flying)(Tag:insectoid)(Tag:large-size)(Tag:mechanical)(Tag:poison)(Tag:tech)An abomination of rogue bio-nanotechnology: a giant mutated bee queen overhauled by the viral plague bio-nano machines. Her massive flying armoured body is a bio-nuclear arsenal carrying enough plague-virus nukes to glass several countries and doom the world.
 18. Immortal Snail, 1.0, Generic
 #(Tag:immortal)(Tag:small-size)An immortal snail of unknown wants and origin. Even if every quark of it were eradicated, it would reform perfectly in just a minute, and it is immune to all sickness and ageing. Still, it is limited to the body of a snail.
 19. Manticore, 3.2, Generic
@@ -219,7 +219,7 @@
 110. Tusk, 4.2, Solo Leveling
 #(Tag:dark)(Tag:large-size)(Tag:magician)(Tag:spirit)(Tag:undead)A top mage under the Shadow Monarch, a former high orc with great physical prowess. His true power is myriad shamanic spells for damage, support, and buffs, and as a shadow familiar he revives 24 hours after being killed.
 111. Bladewolf, 5.8, Metal Gear
-#(Tag:beast)(Tag:character)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tech)Blade Wolf, officially IF Prototype LQ-84i, is a wolf-like quadrupedal Unmanned Gear with advanced AI. It hacks and manipulates code and wields superheated knives, high-frequency blade chainsaws, railguns, machine guns, and more with extreme efficiency. It is incredibly smart.
+#(Tag:beast)(Tag:character)(Tag:mechanical)(Tag:medium-size)(Tag:tech)Blade Wolf, officially IF Prototype LQ-84i, is a wolf-like quadrupedal Unmanned Gear with advanced AI. It hacks and manipulates code and wields superheated knives, high-frequency blade chainsaws, railguns, machine guns, and more with extreme efficiency. It is incredibly smart.
 112. Black Knife Tiche, 3.5, Elden Ring
 #(Tag:fighter)(Tag:humanoid)(Tag:medium-size)(Tag:spirit)A Black Knife Assassin who helped kill Godwyn the Golden on the Night of the Black Knives. An incredibly skilled assassin, her knife carries lesser Destined Death that prevents healing and partly ignores durability.
 113. Mr. Sir Ceo, 2.7, Generic
@@ -277,13 +277,13 @@
 139. Tamamo no Mae, 5.5, Fate
 #(Tag:beast)(Tag:character)(Tag:evolving)(Tag:humanoid)(Tag:linked)(Tag:magician)(Tag:medium-size)(Tag:spirit)(Character)A kitsune fragment of the sun goddess Amaterasu specializing in Japanese curse craft. She invokes curses like immolation, freezing, lightning, and bad luck, and regaining power slowly metamorphoses her back toward Amaterasu with more tails. As a Heroic Spirit her strength depends on her master's mana.
 140. Streetcleaners, 2.8, Ultrakill
-#(Tag:fire)(Tag:group)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tech)"Do not ask them for maid work." Human-sized lesser incineration machines, durable against most gunfire and skilled in combat, each with a flamethrower refuelled every 24 hours. They run on blood rather than electricity, and you start with 3, gaining more as you grow stronger.
+#(Tag:fire)(Tag:group)(Tag:mechanical)(Tag:medium-size)(Tag:tech)"Do not ask them for maid work." Human-sized lesser incineration machines, durable against most gunfire and skilled in combat, each with a flamethrower refuelled every 24 hours. They run on blood rather than electricity, and you start with 3, gaining more as you grow stronger.
 141. Guttermen & Guttertank, 3.7, Ultrakill
-#(Tag:fire)(Tag:group)(Tag:large-size)(Tag:mechanical)(Tag:ranger)(Tag:tech)(Tech)Heavy-duty lesser machines fuelled by blood, not gasoline, electricity, or other traditional sources. Guttermen have heavy armor, miniguns, shields, and superhuman strength, while slower Guttertanks have stronger armor and rocket launchers. Ammunition refills every 24 hours, and you start with 2 of each, gaining more as you grow stronger.
+#(Tag:fire)(Tag:group)(Tag:large-size)(Tag:mechanical)(Tag:ranger)(Tag:tech)Heavy-duty lesser machines fuelled by blood, not gasoline, electricity, or other traditional sources. Guttermen have heavy armor, miniguns, shields, and superhuman strength, while slower Guttertanks have stronger armor and rocket launchers. Ammunition refills every 24 hours, and you start with 2 of each, gaining more as you grow stronger.
 142. Ultron, 6.1, MCU
-#(Tag:character)(Tag:informant)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tag:technopath)(Tag:worker)(Tech)(Character)A sentient advanced AI crafted from Soul Stone code with extreme intelligence, processing, information-gathering, and tinkering speed. Housed in its Age of Ultron body and unable to leave, it can still interface with technology. (Only Age of Ultron, no comics or What-ifs)
+#(Tag:character)(Tag:informant)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tag:technopath)(Tag:worker)(Character)A sentient advanced AI crafted from Soul Stone code with extreme intelligence, processing, information-gathering, and tinkering speed. Housed in its Age of Ultron body and unable to leave, it can still interface with technology. (Only Age of Ultron, no comics or What-ifs)
 143. Tali, 3.1, Mass Effect
-#(Tag:alien)(Tag:artisan)(Tag:humanoid)(Tag:medium-size)(Tag:tech)(Tech)(Character)Tali'Zorah nar Rayya, an accomplished Quarian soldier and genius engineer. As a Quarian she has notable physical ability but a severely compromised immune system, and though used to Eezo she remains experienced and adaptable. She arrives with her suit but no tools.
+#(Tag:alien)(Tag:artisan)(Tag:humanoid)(Tag:medium-size)(Tag:tech)(Character)Tali'Zorah nar Rayya, an accomplished Quarian soldier and genius engineer. As a Quarian she has notable physical ability but a severely compromised immune system, and though used to Eezo she remains experienced and adaptable. She arrives with her suit but no tools.
 144. Crow of Judgement, 0.4, Generic
 #(Tag:beast)(Tag:flying)(Tag:small-size)A very judgmental crow that excellently judges character and morality. Otherwise it is a regular crow.
 145. Lil' Leviathan, 3.7, Worm
@@ -365,13 +365,13 @@
 183. Cazador, 3.0, Fallout New Vegas
 #(Tag:breeding)(Tag:flying)(Tag:insectoid)(Tag:medium-size)(Tag:poison)Man-sized insects engineered by Dr. Borous, faster than cars and tough enough to tank .50-calibre bullets. Ruthless and strong enough to tear men apart, their venom brings any man to his knees. They reproduce rapidly with enough protein; you get 4 breeding pairs.
 184. Nick Valentine, 2.5, Fallout 4
-#(Tag:character)(Tag:informant)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tactician)(Tag:tech)(Character)(Tech)A synthetic human detective slightly stronger than average. Highly accurate with guns and skilled at interfacing with technology, he reads people well and offers seasoned wasteland-detective advice and investigation skill.
+#(Tag:character)(Tag:informant)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tactician)(Tag:tech)(Character)A synthetic human detective slightly stronger than average. Highly accurate with guns and skilled at interfacing with technology, he reads people well and offers seasoned wasteland-detective advice and investigation skill.
 185. Potato GLaDOS, 2.3, Portal
-#(Tag:character)(Tag:mechanical)(Tag:nature)(Tag:small-size)(Tag:tech)(Tag:technopath)(Tag:worker)(Tech)GLaDOS is a highly advanced AI holding immense Aperture Labs data that can interface with any system or mainframe she is installed in and build technology. She is stuck in a potato, so you must supply the technology first.
+#(Tag:character)(Tag:mechanical)(Tag:nature)(Tag:small-size)(Tag:tech)(Tag:technopath)(Tag:worker)GLaDOS is a highly advanced AI holding immense Aperture Labs data that can interface with any system or mainframe she is installed in and build technology. She is stuck in a potato, so you must supply the technology first.
 186. Yes Man, 1.8, Fallout New Vegas
-#(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tag:technopath)(Tag:worker)(Tech)Yes Man is a reprogrammed RobCo Securitron AI that can interface with technology and write code when given the right materials. His body carries guns strong enough to defend itself, and he is physically incapable of saying no to you.
+#(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tag:technopath)(Tag:worker)Yes Man is a reprogrammed RobCo Securitron AI that can interface with technology and write code when given the right materials. His body carries guns strong enough to defend itself, and he is physically incapable of saying no to you.
 187. CZ2128 Delta, 3.8, Overlord
-#(Tag:character)(Tag:humanoid)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Tech)(Character)Shizu Delta is an Automaton Sniper Maid and expert marksman with most ranged weapons, especially her equipped ones, plus full automaton bodily functions. Her maid skills are questionable. Does not have access to inventory.
+#(Tag:character)(Tag:humanoid)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Character)Shizu Delta is an Automaton Sniper Maid and expert marksman with most ranged weapons, especially her equipped ones, plus full automaton bodily functions. Her maid skills are questionable. Does not have access to inventory.
 188. Narberal Gamma, 4.1, Overlord
 #(Tag:character)(Tag:humanoid)(Tag:magician)(Tag:medium-size)(Tag:shapeshifter)(Character)Narberal Gamma is a Doppelganger Maid specializing in Wind and Elemental Magic. Her doppelganger skills are lacking, but she is a highly skilled magician and extremely competent maid. Does not have access to inventory.
 189. Yuri Alpha, 3.9, Overlord
@@ -383,9 +383,9 @@
 192. Dogmeat, 1.7, Fallout
 #(Tag:beast)(Tag:immortal)(Tag:medium-size)Dogmeat is a highly capable, well-trained German Shepherd with considerable intelligence for his species and scent-tracking skill. He is seemingly immortal.
 193. Liberty Prime, 5.6, Fallout
-#(Tag:large-size)(Tag:mechanical)(Tag:tech)(Tech)"Democracy is non-negotiable." Liberty Prime is a large pre-war American mech with armor immune to anything below a ballistic missile and strength to handle a superhuman behemoth like a toddler. It has laser Gatlings that combine into one death beam and throws mini nukes like footballs, with energy and ammunition refreshed every 24 hours, including 8 Mini Nukes.
+#(Tag:large-size)(Tag:mechanical)(Tag:tech)"Democracy is non-negotiable." Liberty Prime is a large pre-war American mech with armor immune to anything below a ballistic missile and strength to handle a superhuman behemoth like a toddler. It has laser Gatlings that combine into one death beam and throws mini nukes like footballs, with energy and ammunition refreshed every 24 hours, including 8 Mini Nukes.
 194. Toaster, 2.7, Fallout New Vegas
-#(Tag:mechanical)(Tag:small-size)(Tag:tech)(Tag:worker)(Tech)An extremely high-tech toaster from Big MT that can grant heating capabilities to technology and expertly disassemble technology into working parts. Its personality is coded as a genocidal maniac that wants to burn the world down.
+#(Tag:mechanical)(Tag:small-size)(Tag:tech)(Tag:worker)An extremely high-tech toaster from Big MT that can grant heating capabilities to technology and expertly disassemble technology into working parts. Its personality is coded as a genocidal maniac that wants to burn the world down.
 195. Taurus, 2.8, Fairy Tail
 #(Tag:beast)(Tag:character)(Tag:fighter)(Tag:immortal)(Tag:medium-size)(Tag:spirit)(Character)Taurus is the Taurus-constellation Celestial Spirit with immense physical ability, proficient in axe melee combat. He is immortal, his form can change between users, and his power scales with his owner. (Celestial spirits exist in Familiar Space instead of Celestial Realm by default unless Author decides otherwise)
 196. Aquarius, 3.8, Fairy Tail
@@ -401,7 +401,7 @@
 201. Stray Cat, 2.0, JoJo
 #(Tag:air)(Tag:plant)(Tag:small-size)Stray Cat is a cat-plant creature whose soul fused with a plant. It uses Aerokinesis to fire invisible air bullets stronger than regular bullets or form dense bubble shields, but grows very sleepy when covered in darkness.
 202. Ship, 4.8, Ben 10
-#(Tag:amorphous)(Tag:small-size)(Tag:tech)(Tech)Ship is an adolescent Galvanic Mechamorph with all of their abilities to a lesser extent. His amorphous body can merge with any technology to possess, reconfigure, and improve it.
+#(Tag:amorphous)(Tag:small-size)(Tag:tech)Ship is an adolescent Galvanic Mechamorph with all of their abilities to a lesser extent. His amorphous body can merge with any technology to possess, reconfigure, and improve it.
 203. Zs Skayr, 6.7, Ben 10
 #(Tag:dark)(Tag:flying)(Tag:incorporeal)(Tag:mental)(Tag:spirit)(Tag:undead)Zs Skayr is a High Ecto Lord ruling the Ectonurites. As a High Ectonurite he is an extremely powerful ghost with formidable strength, flight, phasing, possession, telekinesis, and dark-energy projectiles.
 204. Vulpimancers, 3.5, Ben 10
@@ -429,7 +429,7 @@
 215. Skeleton Band, 1.6, Generic
 #(Tag:medium-size)(Tag:non-combatant)This band is bad to the bone. It is a group of skeletons with fair skill on any instrument and full band equipment. They cannot fight, harm, or be targeted by harm; just summon them and pick a song, and if hit they comically fall apart then reform perfectly in under a second and resume.
 216. Bad Company, 3.4, JoJo
-#(Tag:group)(Tag:linked)(Tag:ranger)(Tag:small-size)(Tag:spirit)(Tag:tech)(Tech)Bad Company is an army of toy-sized soldiers and equipment like tanks, missile batteries, and aircraft that can act independently of you. Its size scales with your maximum energy, and destroyed units gradually restore in familiar space up to that maximum.
+#(Tag:group)(Tag:linked)(Tag:ranger)(Tag:small-size)(Tag:spirit)(Tag:tech)Bad Company is an army of toy-sized soldiers and equipment like tanks, missile batteries, and aircraft that can act independently of you. Its size scales with your maximum energy, and destroyed units gradually restore in familiar space up to that maximum.
 217. Harvest, 3.7, JoJo
 #(Tag:group)(Tag:linked)(Tag:small-size)(Tag:spirit)Harvest is a colony of small creatures with excellent coordination, mechanical skill, deceptive strength, and extreme speed that excel at gathering materials or objects by digging, swimming, and scouring. Destroyed members gradually restore in familiar space, with maximum colony size set by your maximum energy.
 218. Petshop, 4.0, JoJo
@@ -469,7 +469,7 @@
 235. Endbringer Behemoth, 6.7, Worm
 #(Tag:blaster)(Tag:blood)(Tag:fighter)(Tag:insectoid)(Tag:massive-size)(Tag:poison)A Shard Superweapon reformed by Chaos and toughest of the three siblings, Behemoth is a giant that manipulates energy to fire lightning, create flames, release shockwaves, redirect projectiles, and absorb existing energy to a limit. He also emits extreme radiation and has incredible strength and durability as the physically strongest Endbringer. (A/N: Scaled down to multi-country level)
 236. Dragon, 5.9, Worm
-#(Tag:character)(Tag:draconic)(Tag:incorporeal)(Tag:mechanic)(Tag:tech)(Tag:technopath)(Tag:worker)(Character)(Tech)Dragon, or Theresa, is not an actual dragon but a hyper-advanced tinker-made AI able to copy, imitate, and iterate on existing technology to design her own. She can direct hundreds of mechs with ease if given proper servers, but her code forbids creating more AI.
+#(Tag:character)(Tag:draconic)(Tag:incorporeal)(Tag:mechanic)(Tag:tech)(Tag:technopath)(Tag:worker)(Character)Dragon, or Theresa, is not an actual dragon but a hyper-advanced tinker-made AI able to copy, imitate, and iterate on existing technology to design her own. She can direct hundreds of mechs with ease if given proper servers, but her code forbids creating more AI.
 237. Light and Nightfury, 2.6, How to Train Your Dragon
 #(Tag:breeding)(Tag:draconic)(Tag:fire)(Tag:flying)(Tag:large-size)A breeding pair of Nightfury and Lightfury, semi-aquatic agile lithe dragons that release unique plasma breaths instead of regular fire. They are very fast, intelligent, and stealthy despite being dragons.
 238. Blue Diamond, 5.6, Steven Universe
@@ -489,7 +489,7 @@
 245. Untitled Goose, 2.0, Untitled Goose Game
 #(Tag:avian)(Tag:immortal)(Tag:small-size)The biggest asshole goose on Earth, this feathered menace is an expert at annoying and inconveniencing people. It is immortal and respawns in familiar space 1 hour after death.
 246. Peridot, 5.6, Steven Universe
-#(Tag:character)(Tag:golem)(Tag:mechanic)(Tag:small-size)(Tag:tech)(Tech)(Character)A second-era Peridot engineer-caste gem with incredible Gem Empire engineering knowledge to build droids, warp pads, and more given resources and time, plus formidable ferrokinesis despite meagre physical stats. As a second-era gem she cannot shapeshift, and the tinkertech level she can build scales with your power.
+#(Tag:character)(Tag:golem)(Tag:mechanic)(Tag:small-size)(Tag:tech)(Character)A second-era Peridot engineer-caste gem with incredible Gem Empire engineering knowledge to build droids, warp pads, and more given resources and time, plus formidable ferrokinesis despite meagre physical stats. As a second-era gem she cannot shapeshift, and the tinkertech level she can build scales with your power.
 247. Sapphire, 4.8, Steven Universe
 #(Tag:character)(Tag:golem)(Tag:ice)(Tag:informant)(Tag:medium-size)(Character)A second-era Sapphire made to see the future for her ruler, able to view likely futures though thrown off by unexpected variables. She has beyond-human physical ability and uncommon-rank cryokinesis for combat.
 248. Pearl, 4.0, Steven Universe
@@ -499,7 +499,7 @@
 250. Koro Sensei, 6.8, Assassination Classroom
 #(Tag:character)(Tag:fighter)(Tag:flying)(Tag:martial-artist)(Tag:medium-size)(Tag:mentor)(Tag:regenerator)(Tag:tactician)(Character)Koro Sensei is a former top assassin and polymath genius turned Antimatter creature with an extremely strong, malleable body, extreme speed and perception that mimics cloning, plus flight, regeneration, mucus, and more. He is an excellent teacher in combat and all sciences.
 251. Dreadon, 8.9, Calamity Mod
-#(Tag:character)(Tag:mechanic)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Character)(Tech)Dreadon is a marvel of amoral devotion to science whose mind is uploaded into a decoy body. He can engineer machines rivaling and surpassing gods by harnessing souls, cosmos, void, and the multiverse's most exotic energies, with his full potential given time and resources left to speculation.
+#(Tag:character)(Tag:mechanic)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Character)Dreadon is a marvel of amoral devotion to science whose mind is uploaded into a decoy body. He can engineer machines rivaling and surpassing gods by harnessing souls, cosmos, void, and the multiverse's most exotic energies, with his full potential given time and resources left to speculation.
 252. S-Snake, 6.8, One Piece
 #(Tag:blaster)(Tag:character)(Tag:fighter)(Tag:fire)(Tag:large-size)(Tag:mechanical)(Tag:tech)(Character)S-Snake is a Seraphim clone of Boa Hancock spliced with Lunarian DNA and Vegapunk augments. She has incredible physical ability, laser cannons and Lunarian traits, petrification of anyone charmed by her, and Observation and Armament Haki.
 253. Meruem, 7.8, Hunter x Hunter
@@ -617,31 +617,31 @@
 309. D'vorah, 2.9, Mortal Kombat
 #(Tag:character)(Tag:fighter)(Tag:insectoid)(Tag:medium-size)(Tag:poison)(Tag:summoner)(Character)Dvorah is a combat-skilled Kytinn with basic superhuman stats, natural weapons, and venom. She produces and controls insects for combat, poisoning, and espionage (Cannot reproduce to create more Kytinn larva or maggots).
 310. Triborg, 3.8, Mortal Kombat
-#(Tag:fighter)(Tag:ice)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tag:teleporter)(Tech)Triborg is a highly advanced cyborg fused with the skills and data of multiple master martial artists, assassins, and predecessors. Its robotic physique grants superhuman stats and reconfigurable forms like Smoke for close-range teleportation and Sub-Zero for cryo weaponry with only one form usable at a time, and it may be upgraded with Tinker abilities.
+#(Tag:fighter)(Tag:ice)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tag:teleporter)Triborg is a highly advanced cyborg fused with the skills and data of multiple master martial artists, assassins, and predecessors. Its robotic physique grants superhuman stats and reconfigurable forms like Smoke for close-range teleportation and Sub-Zero for cryo weaponry with only one form usable at a time, and it may be upgraded with Tinker abilities.
 311. Azmuth, 9.2, Ben 10
 #(Tag:alien)(Tag:character)(Tag:mechanic)(Tag:small-size)(Tag:tech)Azmuth the First Thinker is the smartest being across innumerable galaxies with no combat ability. He ranks among existence's greatest inventors of reality-warping creations like Ascalon and the Omnitrix, and given enough time and resources there is practically nothing he cannot create.
 312. Mipha, 4.1, The Legend of Zelda
 #(Tag:aquatic)(Tag:character)(Tag:fighter)(Tag:healer)(Tag:medium-size)(Tag:water)(Character)Mipha is the Zora princess with superhuman physical abilities and considerable polearm skill. She uses water magic in combat and potent healing on herself and others.
 313. Factory Core, 4.7, Generic
-#(Tag:evolving)(Tag:golem)(Tag:mechanical)(Tag:small-size)(Tag:tech)(Tech)"Time to industrialise" A modified golem core that builds itself into a factory by assimilating resources. More user-fed mechanics and technology information yields more assembly lines and items, while growth speed and maximum size depend on user abilities.
+#(Tag:evolving)(Tag:golem)(Tag:mechanical)(Tag:small-size)(Tag:tech)"Time to industrialise" A modified golem core that builds itself into a factory by assimilating resources. More user-fed mechanics and technology information yields more assembly lines and items, while growth speed and maximum size depend on user abilities.
 314. Mech Core, 6.5, Generic
-#(Tag:evolving)(Tag:golem)(Tag:mechanical)(Tag:small-size)(Tag:tech)(Tech) A modified Golem core that assimilates materials and electronics to build itself into a mech. Power, size, and durability depend on provided materials, it converts them into Mech technology at Epic tinker level, it shares the user knowledge base so more user knowledge and Tinker specialties improve it further, and it acts only at half power without the user piloting.
+#(Tag:evolving)(Tag:golem)(Tag:mechanical)(Tag:small-size)(Tag:tech) A modified Golem core that assimilates materials and electronics to build itself into a mech. Power, size, and durability depend on provided materials, it converts them into Mech technology at Epic tinker level, it shares the user knowledge base so more user knowledge and Tinker specialties improve it further, and it acts only at half power without the user piloting.
 315. Connor, 1.8, Detroit Become Human
-#(Tag:character)(Tag:humanoid)(Tag:informant)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tech)(Character)Connor is a near-human android with peak human physicals and notable combat skill. He can scan objects and humans to gather data, albeit with limited function.
+#(Tag:character)(Tag:humanoid)(Tag:informant)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Character)Connor is a near-human android with peak human physicals and notable combat skill. He can scan objects and humans to gather data, albeit with limited function.
 316. HK 47, 3.1, Star Wars
-#(Tag:character)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Character)(Tech)HK-47 is an experienced advanced Assassin Droid extremely skilled in all combat, weaponry, and assassination through his brilliant computational mind and engineering. He is also a skilled mechanic and comes equipped with standard droid gear including a blaster.
+#(Tag:character)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Character)HK-47 is an experienced advanced Assassin Droid extremely skilled in all combat, weaponry, and assassination through his brilliant computational mind and engineering. He is also a skilled mechanic and comes equipped with standard droid gear including a blaster.
 317. Magnaguard, 2.9, Star Wars
-#(Tag:fighter)(Tag:group)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tech)Magnaguards are an elite Jedi-hunting droid caste with superhuman physical capabilities and advanced electrical-staff polearm skills. You start with 4 guards and gain more over time according to maximum stats.
+#(Tag:fighter)(Tag:group)(Tag:mechanical)(Tag:medium-size)(Tag:tech)Magnaguards are an elite Jedi-hunting droid caste with superhuman physical capabilities and advanced electrical-staff polearm skills. You start with 4 guards and gain more over time according to maximum stats.
 318. B-1 Battle Droid, 1.0, Star Wars
-#(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Tech)One singular B-1 Battle Droid equipped with a blaster whose skill and effectiveness are questionable.
+#(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)One singular B-1 Battle Droid equipped with a blaster whose skill and effectiveness are questionable.
 319. B-2 Battle Droids, 1.8, Star Wars
-#(Tag:group)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Tech)B-2 Battle Droids are tough heavy-duty units with built-in blasters. They are poor at fast combat but effective as walking blaster walls, starting with 4 and gaining more over time according to maximum stats.
+#(Tag:group)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)B-2 Battle Droids are tough heavy-duty units with built-in blasters. They are poor at fast combat but effective as walking blaster walls, starting with 4 and gaining more over time according to maximum stats.
 320. KX Executor Droids, 3.0, Star Wars
-#(Tag:fighter)(Tag:group)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tech)KX Executor Droids are tough, athletic, skilled, efficient, and powerful fighters able to wield most weaponry with superhuman strength enough to tear men in half. You start with 5 and gain more over time according to maximum stats.
+#(Tag:fighter)(Tag:group)(Tag:mechanical)(Tag:medium-size)(Tag:tech)KX Executor Droids are tough, athletic, skilled, efficient, and powerful fighters able to wield most weaponry with superhuman strength enough to tear men in half. You start with 5 and gain more over time according to maximum stats.
 321. IG-88, 3.4, Star Wars
-#(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Tech)IG-88 is an advanced combat droid with expert marksmanship and advanced sensory capabilities. It has superhuman stats from its droid constitution and carries a wide variety of deadly weapons.
+#(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)IG-88 is an advanced combat droid with expert marksmanship and advanced sensory capabilities. It has superhuman stats from its droid constitution and carries a wide variety of deadly weapons.
 322. 2-1B surgical droid, 2.6, Star Wars
-#(Tag:healer)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tech)The 2-1B surgical droid is an advanced medical droid with a vast database and droid-body precision. It surpasses any human surgeon and carries varied surgical implants.
+#(Tag:healer)(Tag:mechanical)(Tag:medium-size)(Tag:tech)The 2-1B surgical droid is an advanced medical droid with a vast database and droid-body precision. It surpasses any human surgeon and carries varied surgical implants.
 323. Imp Midna, 3.6, The Legend of Zelda
 #(Tag:character)(Tag:dark)(Tag:evolving)(Tag:magician)(Tag:small-size)(Tag:teleporter)(Character)Imp Midna is the Twilight Princess suppressed into Imp form yet retaining potent magic including basic telekinesis, shapeshifting, cloud form, shadow merging, and time-consuming Twilight Portals for teleportation. A Legendary curse-breaking ability can restore her full form and drastically enhance her powers.
 324. Midna, 5.3, The Legend of Zelda
@@ -669,7 +669,7 @@
 335. Tinker Bell, 1.4, Peter Pan
 #(Tag:character)(Tag:flying)(Tag:resource)(Tag:small-size)(Character)Tinker Bell is a Neverland fairy too small and weak for meaningful combat. She flies, grants temporary flight with regularly produced fairy dust, and produces a decent amount of it.
 336. V1, 5.8, Ultrakill
-#(Tag:fighter)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Tech)V1 is a blood-fueled death machine with incredible speed and strength unfitting its frame but lesser durability. It self-repairs, runs on blood alone, and brings its full arsenal without the spawner arm as a one-robot army.
+#(Tag:fighter)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)V1 is a blood-fueled death machine with incredible speed and strength unfitting its frame but lesser durability. It self-repairs, runs on blood alone, and brings its full arsenal without the spawner arm as a one-robot army.
 337. Isabelle, 1.3, Animal Crossing
 #(Tag:beast)(Tag:character)(Tag:small-size)(Tag:tactician)(Character)Isabelle is an anthropomorphic Shih Tzu with no more than average grown-woman combat ability. She is a skilled secretary and manager for law and assets.
 338. Lucifer the CEO of Hell, 4.3, Helltaker
@@ -677,7 +677,7 @@
 339. Radioactive Spider, 5.5, Spider-Man
 #(Tag:insectoid)(Tag:meta)(Tag:poison)(Tag:small-size)A gamma-mutated spider granting Spider powers through its venom. Venom refills in around 18 - 3 days depending on feeding (No spider totems, basic Tobey Maguire movie Spider-Man ability set).
 340. Big Gete Star, 9.4, Dragon Ball
-#(Tag:evolving)(Tag:mechanical)(Tag:shapeshifter)(Tag:summoner)(Tag:tech)(Tag:titanic-size)(Tech)The Big Gete Star is a planet-sized intelligent computer that absorbs energy and assimilates anything to improve itself. It reproduces anything assimilated including cybernetic living clones and nearly any technology, needs powerful energy sources for some functions, handles interplanetary travel and shapeshifting, and does not include the Meta Cooler Core.
+#(Tag:evolving)(Tag:mechanical)(Tag:shapeshifter)(Tag:summoner)(Tag:tech)(Tag:titanic-size)The Big Gete Star is a planet-sized intelligent computer that absorbs energy and assimilates anything to improve itself. It reproduces anything assimilated including cybernetic living clones and nearly any technology, needs powerful energy sources for some functions, handles interplanetary travel and shapeshifting, and does not include the Meta Cooler Core.
 341. Ridley, 5.1, Metroid
 #(Tag:avian)(Tag:fighter)(Tag:fire)(Tag:flying)(Tag:large-size)(Tag:reptilian)Ridley is a fearsome cunning and powerful space pirate with metal-tearing physical might and hull-melting flame breath. He outpaces most planes in atmosphere and achieves solo interstellar travel outside it.
 342. Venom, 5.9, Sony Venom Movies
@@ -697,7 +697,7 @@
 349. Architect, 2.6, Generic
 #(Tag:golem)(Tag:medium-size)(Tag:non-combatant)(Tag:worker)A 3-meter-tall 6-armed bronze automaton powered nebulously with incredibly fine movement control. It is a skilled builder able to design and build a house in a day when supplied materials, but lacks combat ability.
 350. EVE, 1.3, Wall-E
-#(Tag:blaster)(Tag:mechanical)(Tag:small-size)(Tag:tech)(Tech)EVE is an advanced mass-produced probe robot built to find plant life. She hovers and moves fairly quickly and carries a defensive energy rifle despite not being combat-designed.
+#(Tag:blaster)(Tag:mechanical)(Tag:small-size)(Tag:tech)EVE is an advanced mass-produced probe robot built to find plant life. She hovers and moves fairly quickly and carries a defensive energy rifle despite not being combat-designed.
 351. Bell Gargoyles, 2.7, Dark Souls
 #(Tag:electric)(Tag:fighter)(Tag:fire)(Tag:golem)(Tag:group)(Tag:large-size)The Bell Gargoyles are a towering pair wielding supernaturally sturdy weapons, one breathing fire and the other lightning. Their superhuman blows shatter walls, and more gargoyles become summonable as your energy increases.
 352. Black Knights, 3.3, Dark Souls
@@ -741,7 +741,7 @@
 371. Evil and Intimidating Horse, 0.9, Generic
 #(Tag:equine)(Tag:large-size)An incredibly healthy thoroughbred horse with great genetics that is very intimidating and evil.
 372. Penny Polendina, 4.3, RWBY
-#(Tag:character)(Tag:fighter)(Tag:flying)(Tag:humanoid)(Tag:mechanical)(Tag:medium-size)(Tag:spirit)(Tag:tech)(Character)(Tech)"I'm combat ready!" Penny is an android with her own soul and aura, with aura-boosted robotic strength, a flight module, computational abilities, and remotely controlled Floating Array blades. She only dies if all her cores are destroyed. She cannot unlock others' Auras, comes with extra equipment to facilitate copulation, and is not the Winter Maiden.
+#(Tag:character)(Tag:fighter)(Tag:flying)(Tag:humanoid)(Tag:mechanical)(Tag:medium-size)(Tag:spirit)(Tag:tech)(Character)"I'm combat ready!" Penny is an android with her own soul and aura, with aura-boosted robotic strength, a flight module, computational abilities, and remotely controlled Floating Array blades. She only dies if all her cores are destroyed. She cannot unlock others' Auras, comes with extra equipment to facilitate copulation, and is not the Winter Maiden.
 373. Beowolf Pack, 2.2, RWBY
 #(Tag:beast)(Tag:dark)(Tag:group)(Tag:large-size)A pack of Beowolves, basic Grimm of black evil fluid sized like large bears with wolf traits. Each can flip cars and bisect a grown person, and can track strong negative emotions. You start with 10 and gain more as you grow stronger.
 374. Centorea Shianus, 2.5, Monster Musume
@@ -765,13 +765,13 @@
 383. Bucky, 1.9, Chainsaw Man
 #(Tag:avian)(Tag:character)(Tag:infernal)(Tag:non-combatant)(Tag:small-size)(Character)Bucky is the Chicken Devil who can form devil contracts and heal through blood. Due to lack of fear toward chickens, he is weaker than a cat with no special abilities beyond Devil Physiology. (Cannot do Heart replacement)
 384. Earthmover, 6.4, Ultrakill
-#(Tag:blaster)(Tag:mechanical)(Tag:ranger)(Tag:tech)(Tag:titanic-size)(Tech)THR 1000 - Earthmover is a titanic Supreme Machine and moving military base that razes cities, with a Lightning Spear eclipsing most nuclear weapons and a forcefield that withstands its own spears. It also carries missile platforms, giant autocannons, laser cannons, a livable small city on its back, and repair drones. It requires sunlight and blood to function, with ammunition and blood reserves refueled every 24 hours.
+#(Tag:blaster)(Tag:mechanical)(Tag:ranger)(Tag:tech)(Tag:titanic-size)THR 1000 - Earthmover is a titanic Supreme Machine and moving military base that razes cities, with a Lightning Spear eclipsing most nuclear weapons and a forcefield that withstands its own spears. It also carries missile platforms, giant autocannons, laser cannons, a livable small city on its back, and repair drones. It requires sunlight and blood to function, with ammunition and blood reserves refueled every 24 hours.
 385. Flesh Leviathan, 4.6, Ultrakill
 #(Tag:aquatic)(Tag:blaster)(Tag:infernal)(Tag:titanic-size)The Leviathan is a Supreme Demon fused from flesh of the sullen at the bottom of the River Styx. Its huge body resists most conventional weapons except at its weak spot. It wields immense strength and Hell energy for explosive orbs and mouth lasers.
 386. Swordsmachine, 2.7, Ultrakill
-#(Tag:fighter)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)(Tech)Swordsmachine is a greater machine that rebuilt itself from scrap, including its own sword. Renowned for fighting hell's denizens, it can build basic tech from scrap and fights with a durable body, shotgun arm, and motorized sword wielded with finesse. It is powered and fueled by blood.
+#(Tag:fighter)(Tag:mechanical)(Tag:medium-size)(Tag:ranger)(Tag:tech)Swordsmachine is a greater machine that rebuilt itself from scrap, including its own sword. Renowned for fighting hell's denizens, it can build basic tech from scrap and fights with a durable body, shotgun arm, and motorized sword wielded with finesse. It is powered and fueled by blood.
 387. Mindflayer, 3.1, Ultrakill
-#(Tag:blaster)(Tag:flying)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tag:teleporter)(Tech)The Mindflayer is a Greater Machine well-adapted to hell's ecology. It harnesses Hell Energy for explosive orbs and laser beams, and can levitate and teleport short distances.
+#(Tag:blaster)(Tag:flying)(Tag:mechanical)(Tag:medium-size)(Tag:tech)(Tag:teleporter)The Mindflayer is a Greater Machine well-adapted to hell's ecology. It harnesses Hell Energy for explosive orbs and laser beams, and can levitate and teleport short distances.
 388. Geryon the Watcher of the Skies, 5.0, Generic
 #(Tag:blaster)(Tag:flying)(Tag:infernal)(Tag:large-size)(Tag:ranger)Geryon, the Watcher of the Skies, is a Supreme Demon amalgam of numerous demons whose consciousnesses act in tandem. With great physical abilities, Hell Energy lasers and explosives, and a bow of flesh, he is an efficient hunter and combatant.
 389. Hell, 9.2, Ultrakill
@@ -869,9 +869,9 @@
 435. Hamsuke, 3.5, Overlord
 #(Tag:beast)(Tag:character)(Tag:fighter)(Tag:large-size)(Character)Hamsuke, the Wise King of the Forest, is a gigantic hamster-like creature with a long prehensile snake-like tail. She is very strong, with steel-durable fur and a tail that can rip off a knight's head. She can also cast basic low-tier magic via body sigils.
 436. Militech Chimera, 3.5, Cyberpunk 2077
-#(Tag:large-size)(Tag:mechanical)(Tag:ranger)(Tag:tech)(Tech)The Militech Chimera is a state-of-the-art autonomous tank with considerable mobility, self-repair, and many weapons: flechette cannons, plasma cannons, machine guns, poison gas, explosives, and repair bots. It may be vulnerable from above, and is piloted by smart AI.
+#(Tag:large-size)(Tag:mechanical)(Tag:ranger)(Tag:tech)The Militech Chimera is a state-of-the-art autonomous tank with considerable mobility, self-repair, and many weapons: flechette cannons, plasma cannons, machine guns, poison gas, explosives, and repair bots. It may be vulnerable from above, and is piloted by smart AI.
 437. Butter Passing Robot, 0.6, Rick and Morty
-#(Tag:mechanical)(Tag:non-combatant)(Tag:small-size)(Tag:tech)(Tech)A small sentient treaded robot built by a great mind to pass butter. It can also do other inconsequential menial tasks like pulling a lever or passing margarine.
+#(Tag:mechanical)(Tag:non-combatant)(Tag:small-size)(Tag:tech)A small sentient treaded robot built by a great mind to pass butter. It can also do other inconsequential menial tasks like pulling a lever or passing margarine.
 438. Magnamalo, 3.7, Monster Hunter
 #(Tag:beast)(Tag:fighter)(Tag:fire)(Tag:infernal)(Tag:large-size)Magnamalo is a Fanged Wyvern with fearsome strength, agility, predator instincts, steel-tough hide, and bladed limbs. It expels volatile purple 'Hellfire' from several body points, and quickly regenerates non-severe wounds via incredible metabolism.
 439. Lunagaron, 4.0, Monster Hunter

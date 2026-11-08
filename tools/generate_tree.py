@@ -135,6 +135,21 @@ def parse_tags(tokens) -> list:
     return sorted(out)
 
 
+def content_flags(tokens, tags=None):
+    """NSFW / Noncon / Tech gates.
+
+    The thematic tag is authoritative (nsfw, noncon, tech); the older
+    system tokens (Nsfw, Noncon, Tech) remain accepted so older files and
+    imported data keep working."""
+    toks = set(tokens or ())
+    tset = set(tags) if tags is not None else set(parse_tags(toks))
+    return {
+        "nsfw": "Nsfw" in toks or "nsfw" in tset,
+        "noncon": "Noncon" in toks or "noncon" in tset,
+        "tech": "Tech" in toks or "tech" in tset,
+    }
+
+
 def parse_description(desc: str):
     """Split '#'-leading tokens (Nsfw/Tech/Character/Gacha/Tree/Tome/Tag/.../Meta:...)
     from the visible description text. Returns (token_set, visible_text)."""
@@ -220,11 +235,12 @@ def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
         return
     if tag == "gacha" and not include_gacha_only:
         return
-    if "Nsfw" in tokens and not include_nsfw:
-        return
-    if "Noncon" in tokens and not include_noncon:
-        return
     entry_tags = parse_tags(tokens)
+    flags = content_flags(tokens, entry_tags)
+    if flags["nsfw"] and not include_nsfw:
+        return
+    if flags["noncon"] and not include_noncon:
+        return
     if want_tags and not want_tags.issubset(set(entry_tags)):
         return
     if exclude_tags and exclude_tags.intersection(entry_tags):
@@ -239,8 +255,9 @@ def _finalize(file, cur, desc_lines, rmin, rmax, sources, exclude_sources,
         "description": visible,
         "meta": sorted(t for t in tokens if t.startswith("Meta:")),
         "tags": entry_tags,
-        **({"nsfw": True} if "Nsfw" in tokens else {}),
-        **({"noncon": True} if "Noncon" in tokens else {}),
+        **({"nsfw": True} if flags["nsfw"] else {}),
+        **({"noncon": True} if flags["noncon"] else {}),
+        **({"tech": True} if flags["tech"] else {}),
     })
 
 

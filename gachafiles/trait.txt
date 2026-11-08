@@ -63,7 +63,7 @@
 32. Taming Specialist, 2.6, Generic
 #(Tag:deleted)You are skilled at turning wild animals into domesticated ones.
 33. Bitch Breaker, 2.9, Generic
-#(Tag:nsfw)(Tag:social)(Nsfw) You expertly correct bad attitudes through sex.
+#(Tag:nsfw)(Tag:social) You expertly correct bad attitudes through sex.
 34. Sunshine Charm, 2.4, Generic
 #(Tag:social)You exude goodness and purity, so good-aligned beings like you more and you more easily convince others you are doing good.
 35. Maverick Charm, 2.4, Generic
@@ -171,9 +171,9 @@
 86. Poseidon's Kiss, 2.1, Generic
 #(Tag:social)(Tag:water)You are blessed by Poseidon to move underwater as naturally as above water, and all mundane aquatic life is friendly to you.
 87. Tinker, 3.5, Generic
-#(Tag:talent)(Tag:tech+)(Tech) You are a natural at building technology with more potent Tinker abilities, easier innovation and building, and further-pushed specializations. (A/N: If you pulled this perk without having a Tinker ability, reroll the ticket) 4/28288.
+#(Tag:talent)(Tag:tech)(Tag:tech+) You are a natural at building technology with more potent Tinker abilities, easier innovation and building, and further-pushed specializations. (A/N: If you pulled this perk without having a Tinker ability, reroll the ticket) 4/28288.
 88. Hacker, 2.1, Generic
-#(Tag:talent)(Tag:tech)(Tech) You have heightened intuition for interfacing with technology, bypassing code and technological defenses, infiltrating networks, and exploiting faults.
+#(Tag:talent)(Tag:tech) You have heightened intuition for interfacing with technology, bypassing code and technological defenses, infiltrating networks, and exploiting faults.
 89. Empath, 3.4, Generic
 #(Tag:social)(Tag:talent)You easily sense what people feel, understand emotions better, and control your own emotions far better.
 90. Grand Mage, 7.7, Generic
@@ -183,7 +183,7 @@
 92. Esgod, 7.4, Generic
 #(Tag:meta)(Tag:talent)You are an esper beyond espers whose monstrous potency makes using, developing, and mastering abilities as natural as breathing at much less energy cost. You can even train out hardcoded effects like cooldowns and limits.
 93. Tinker Supreme, 7.9, Generic
-#(Tag:talent)(Tag:tech)(Tech) You are the supreme Tinker who innovates wondrous constructs on your own merits without needing specializations, which now only boost your natural prowess. You cannot utilize Tinker abilities that are not from your native world.
+#(Tag:talent)(Tag:tech) You are the supreme Tinker who innovates wondrous constructs on your own merits without needing specializations, which now only boost your natural prowess. You cannot utilize Tinker abilities that are not from your native world.
 94. Gambler, 4.3, Generic
 #(Tag:meta)(Gacha) Every time you would roll the ticket, you first roll a D20: {20}= Ticket Rank Up, {19 - 17}= Advantage, {16 - 13}= Change Ticket Type, {12 - 8}= Nothing happens, {7 - 2}= Ticket Rank Down, {1}= Ticket is destroyed. This trait can be rerolled or toggled.
 95. Heartbreaker, 2.8, Generic
@@ -215,7 +215,7 @@
 108. Smell the Magic, 3.4, Generic
 #(Tag:magic)(Tag:perception+)You smell magic and mysticism, deciphering people through their magical scent, a necromancer reeks of death and decay, an ice magician smells like crisp winter air, etc.
 109. One Size Fits All, 1.0, Generic
-#(Tag:nsfw)(Tag:rule)(Nsfw) Your partners feel no discomfort from your physical features; your anatomy somehow fits them even at ludicrous sizes.
+#(Tag:nsfw)(Tag:rule) Your partners feel no discomfort from your physical features; your anatomy somehow fits them even at ludicrous sizes.
 110. Salt Detection, 0.1, Generic
 #(Tag:perception+)You sense the location of salt, but only salt ready for human consumption.
 111. Leader, 3.6, Generic
@@ -259,7 +259,7 @@
 130. Feline Friend, 2.9, Generic
 #(Tag:agility+)(Tag:social)You share great affinity with cats, tigers, felines, and aligned creatures, earning their affection, favor, and relationships more easily. Your feline affinity also grants unusual flexibility, heightened balance, and slightly improved reflexes.
 131. Sexual Calibration, 2.3, Generic
-#(Tag:nsfw)(Tag:rule)(Tag:talent)(Nsfw) You eliminate sex's minor inconveniences, adjusting how STDs, hygiene, and unwanted pregnancy affect you. You are also very talented in the tantric arts.
+#(Tag:nsfw)(Tag:rule)(Tag:talent) You eliminate sex's minor inconveniences, adjusting how STDs, hygiene, and unwanted pregnancy affect you. You are also very talented in the tantric arts.
 132. Golden Shot, 1.3, Generic
 #(Tag:nsfw)(Tag:rule)(Noncon) Your swimmers are the strongest in the world; anyone you cum inside WILL get pregnant, even if they are more barren than arid deserts. (If you lack the right equipment, you gain it should you choose to. If not, reroll this trait.)
 133. Ygdar Orus Li Ox, 4.9, Generic
@@ -351,7 +351,7 @@
 176. Boundless Stamina, 4.4, Generic
 #(Tag:stamina+)Your stamina is boundless; even as a regular person you can run a marathon with ease and need only a minute's rest afterward. Your stamina recovers incredibly quickly and exhaustion fades much faster.
 177. Lucky Sukebe, 2.3, Generic
-#(Tag:luck+)(Tag:nsfw)(Nsfw)(Noncon) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find someone changing.
+#(Tag:luck+)(Tag:nsfw)(Noncon) You often stumble into lucky perverted or lewd situations, as the chaos of infinity distills into making you more likely to find someone changing.
 178. Spirit Affinity, 3.0, Generic
 #(Tag:spirit)(Tag:spirit+)You are talented with all things spirits; spiritual creatures and objects take a liking to you, and your soul-based abilities are easier to master.
 179. Resilient Soul, 4.9, Generic
@@ -501,7 +501,7 @@
 251. Skyward, 4.2, Generic
 #(Tag:air)(Tag:air+)(Tag:air-resistance+)(Tag:energy-regeneration+)(Tag:talent)You belong to the skies. All wind-based abilities are more potent, cheaper, and easier to master, and you recover energy faster while in the sky.
 252. Electric Sheep, 3.6, Generic
-#(Tag:talent)(Tag:tech)(Tech) All Tinker abilities are easier for you to use and innovate with, and you interface with any existing machine and network with greater ease. (A/N: Reroll if you don't have a tinker ability)
+#(Tag:talent)(Tag:tech) All Tinker abilities are easier for you to use and innovate with, and you interface with any existing machine and network with greater ease. (A/N: Reroll if you don't have a tinker ability)
 253. Flexible, 1.7, Generic
 #(Tag:dexterity+)You are more flexible than an expert contortionist.
 254. Demon King, 5.6, Generic
@@ -511,11 +511,11 @@
 256. Chosen Champion, 7.7, Generic
 #(Tag:holy+)(Tag:light+)(Tag:physical+)(Tag:social)(Tag:talent)You are the chosen Hero of Humanity. Your Light and Holy-based abilities below Mythical rank gain a rank, your base physical abilities are massively enhanced, and all blessings on you are permanent. Divine and Clergy-aligned beings revere you and reward your service, and you gain a temporary boost to all stats when fighting to save someone, scaled to your willpower and the stakes.
 257. Alluring Whisper, 2.8, Generic
-#(Tag:nsfw)(Tag:talent)(Nsfw) You possess a smooth, alluring top-tier singing voice that impresses even the pickiest listeners and sounds more convincing. It enhances your voice-based abilities.
+#(Tag:nsfw)(Tag:talent) You possess a smooth, alluring top-tier singing voice that impresses even the pickiest listeners and sounds more convincing. It enhances your voice-based abilities.
 258. Charisma, 2.5, Generic
 #(Tag:deleted)(Tag:social)You project a charismatic aura that draws people in and elevates you in their eyes.
 259. Sensual Presence, 3.6, Generic
-#(Nsfw) You project a subtle sensual presence that increasingly attracts and arouses those exposed to it. It only affects people friendly to you.
+#(Tag:nsfw) You project a subtle sensual presence that increasingly attracts and arouses those exposed to it. It only affects people friendly to you.
 260. Harem Keeper, 2.7, Generic
 #(Tag:social)You face far less resistance from potential partners and society when building a harem, though it remains challenging.
 261. Harem Sovereign, 3.3, Generic
@@ -547,7 +547,7 @@
 274. Yog's Blessing, 4.6, Generic
 #(Tag:eldritch)(Tag:space+)(Tag:space-resistance+)Thanks to Yog's blessing, all drawbacks from your Space-related abilities are mitigated, they cost less energy, and their range is far higher. You also gain incredible resistance to Space attribute attacks.
 275. Carnal Engine, 2.7, Generic
-#(Tag:nsfw)(Tag:stamina+)(Nsfw) During sexual activity, your stamina recovery, endurance, and resilience are massively boosted, letting you continue for literal days without rest.
+#(Tag:nsfw)(Tag:stamina+) During sexual activity, your stamina recovery, endurance, and resilience are massively boosted, letting you continue for literal days without rest.
 276. Four Leaf Clover, 2.7, Generic
 #(Tag:luck+)You are modestly lucky, with fate's scales skewed toward you without reaching blatantly supernatural levels. (Does not affect Gacha)
 277. Rabbits Foot, 3.7, Generic
@@ -603,9 +603,9 @@
 302. Dealmaker, 4.5, Generic
 #(Tag:fae)(Tag:rule)(Tag:social)"A Deal's a Deal." People feel compelled to fulfil their end of any explicit deal they make with you (No clever wording or Fae deals). It is also far easier for you to goad people into outrageous bets.
 303. Hentai Protagonist, 4.8, Generic
-#(Tag:nsfw)(Tag:rule)(Nsfw)(Noncon) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
+#(Tag:nsfw)(Tag:rule)(Noncon) Your fate draws you into "erotic" situations, such as meeting a hot single mom next door, that often lead to sexual encounters. Others are also far more affected by sexual situations involving you.
 304. Ecchi Protagonist, 3.5, Generic
-#(Tag:nsfw)(Tag:rule)(Nsfw)(Noncon) Your path is shaped by the Ecchi genre, drawing you into situations like walking in on someone changing, joining a dorm of attractive people, or getting locked in a closet with someone hot.
+#(Tag:nsfw)(Tag:rule)(Noncon) Your path is shaped by the Ecchi genre, drawing you into situations like walking in on someone changing, joining a dorm of attractive people, or getting locked in a closet with someone hot.
 305. Honesty, 2.2, Generic
 #(Tag:social)You project an aura that draws honesty from others. People lie worse around you and feel greater remorse for deceiving you.
 306. Truthspeaker, 4.2, Generic
@@ -625,7 +625,7 @@
 313. Paper Trail, 1.8, Generic
 #(Tag:rule)(Tag:social)You and your familiars always carry the relevant papers. You can reach into your pocket and find whatever legal identification you need.
 314. No Strangers, 2.1, Generic
-#(Tag:nsfw)(Tag:social)(Nsfw) People do not mind your open displays of affection, so long as you are not too overt.
+#(Tag:nsfw)(Tag:social) People do not mind your open displays of affection, so long as you are not too overt.
 315. No Peeking, 5.1, Generic
 #(Tag:divination-resistance+)(Tag:meta-resistance+)Information gathering fails against you: scrying spells collapse, precognition fails, and cameras stop recording.
 316. Battery Saver, 4.6, Generic
@@ -633,9 +633,9 @@
 317. Rule 63, 3.3, Generic
 #(Tag:nsfw)(Tag:rule)You live in a reality retconned across all existence where some men are now women and some women are now men.
 318. Monster Master, 2.8, Generic
-#(Nsfw) The more monstrous a member of the opposite sex is, the more attracted they are to you. This only affects those you would find attractive yourself.
+#(Tag:nsfw) The more monstrous a member of the opposite sex is, the more attracted they are to you. This only affects those you would find attractive yourself.
 319. Musk, 2.0, Generic
-#(Tag:nsfw)(Tag:social)(Nsfw) Your scent smells very good and slightly arousing.
+#(Tag:nsfw)(Tag:social) Your scent smells very good and slightly arousing.
 320. No Enemies, 4.8, Generic
 #(Tag:deleted)Everyone you meet forms a good impression of you once they get to know you, even evil dictators, violent murderers, or mindless beasts. This only works on named characters.
 321. My Friend Now, 5.5, Generic
@@ -733,7 +733,7 @@
 367. The Taker, 4.0, Generic
 #(Tag:holy)(Tag:infernal)(Tag:social)You are the Taker whom Infernal, Holy, or Divine beings you find attractive find more attractive in return. You earn their affection more easily.
 368. Monstergirl Enthusiast, 2.5, Generic
-#(Tag:nsfw)(Tag:rule)(Nsfw) Hybrid girls and those of the opposite gender with monster or beast traits like you more and build relationships with you more easily. Some monsters you encounter seem oddly humanoid and compatible.
+#(Tag:nsfw)(Tag:rule) Hybrid girls and those of the opposite gender with monster or beast traits like you more and build relationships with you more easily. Some monsters you encounter seem oddly humanoid and compatible.
 369. Reaper's Presence, 4.4, Generic
 #(Tag:social)Upgrade to Terrifying Presence - You project a nightmarish presence that can make a grown person soil themselves without a word. Every gesture you make can feel like a death threat when you want it to.
 370. Magic Is Not Real, 7.4, Generic
@@ -827,7 +827,7 @@
 414. Cupid's Blessing, 3.8, Generic
 #(Tag:luck+)(Tag:rule)You hold greatly increased luck in romance. Remember to thank Cupid.
 415. Blessing of Zeus, 3.7, Generic
-#(Tag:electric)(Tag:electric+)(Tag:nsfw)(Tag:social)(Tag:talent)(Tag:transformation+)(Nsfw) You are a child blessed by Zeus who can bed anyone, with increased charisma, fertility, and talent in the carnal arts. Your Changer abilities are easier and cheaper to use and maintain, and your lightning-based abilities are stronger too.
+#(Tag:electric)(Tag:electric+)(Tag:nsfw)(Tag:social)(Tag:talent)(Tag:transformation+) You are a child blessed by Zeus who can bed anyone, with increased charisma, fertility, and talent in the carnal arts. Your Changer abilities are easier and cheaper to use and maintain, and your lightning-based abilities are stronger too.
 416. Infinite, 9.1, Generic
 #(Tag:maximum-energy+)(Tag:power+)You hold an infinite energy source for every use, from magical power to stamina to soul energy. Your energy output is massively increased, letting even a common rank fire ability dwarf nuclear bombs ten times over.
 417. Absolute Victory, 9.7, Generic
@@ -855,19 +855,19 @@
 428. Demon Kaiser, 7.7, Generic
 #(Tag:dark+)(Tag:health-regeneration+)(Tag:infernal)(Tag:magic-resistance+)(Tag:martial+)(Tag:physical+)(Tag:race-change)(Tag:social)(Tag:transformation)Race Change - You are a Demon Kaiser, a primordial Infernal. You gain increased magical ability, massively amplified physical abilities and regeneration, and can flatten hills with your fists at base. You can bend any weaker Infernal to your will. You gain incredible affinity for Infernal and Unholy, letting you augment related abilities below Legendary rank to a higher tier, but you gain vulnerability to Holy and Light. When you unleash your True Kaiser form, your physical stats massively amplify, you gain incredible magical resistance, and you lose your Holy and Light vulnerability, but your energy consumption amplifies and the form dispels once you run out of energy.
 429. Augmented, 2.6, Generic
-#(Tag:maximum-energy+)(Tag:physical+)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tech) Race Change - You are a convert, half flesh and half machine. You gain increased physical stats and energy reserves and increased affinity for Tinker abilities, technology, and interfacing, but you gain vulnerability to Electricity and Interfacing.
+#(Tag:maximum-energy+)(Tag:physical+)(Tag:race-change)(Tag:tech)(Tag:tech+) Race Change - You are a convert, half flesh and half machine. You gain increased physical stats and energy reserves and increased affinity for Tinker abilities, technology, and interfacing, but you gain vulnerability to Electricity and Interfacing.
 430. Android, 3.7, Generic
-#(Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are an Android, a higher-class machine-flesh hybrid. You gain increased physical abilities and energy reserves, but your natural energy regeneration lessens and you can charge yourself like a machine. You gain increased effectiveness with Tinker abilities and technology, but you gain vulnerability to Electricity and Interfacing. You possess basic augments such as a head computer and retractable mantis blades in your arms and legs (Cyberpunk). You can tinker with yourself to alter your body to an extent (You still have fleshy bits).
+#(Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+) Race Change - You are an Android, a higher-class machine-flesh hybrid. You gain increased physical abilities and energy reserves, but your natural energy regeneration lessens and you can charge yourself like a machine. You gain increased effectiveness with Tinker abilities and technology, but you gain vulnerability to Electricity and Interfacing. You possess basic augments such as a head computer and retractable mantis blades in your arms and legs (Cyberpunk). You can tinker with yourself to alter your body to an extent (You still have fleshy bits).
 431. Advanced Android, 4.8, Generic
-#(Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are an Advanced Model Android. You gain superhuman physical abilities and increased energy reserves, but your natural energy regeneration lessens and you can charge yourself like a machine. Your Tinker abilities progress faster and work more efficiently, and your capacity to handle technology greatly increases, but you gain vulnerability to Electricity and Interfacing. You possess a powerful integrated computer and combat implants such as Projectile Launcher System, Gorilla Arms, and Mantis Blades from Cyberpunk. You can tinker with yourself to alter your body to an extent (You still have fleshy bits).
+#(Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+) Race Change - You are an Advanced Model Android. You gain superhuman physical abilities and increased energy reserves, but your natural energy regeneration lessens and you can charge yourself like a machine. Your Tinker abilities progress faster and work more efficiently, and your capacity to handle technology greatly increases, but you gain vulnerability to Electricity and Interfacing. You possess a powerful integrated computer and combat implants such as Projectile Launcher System, Gorilla Arms, and Mantis Blades from Cyberpunk. You can tinker with yourself to alter your body to an extent (You still have fleshy bits).
 432. Biodroid, 5.0, Generic
-#(Tag:energy-regeneration+)(Tag:maximum-energy+)(Tag:physical+)(Tag:race-change)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are a Biodroid, a seamless merging of technology and flesh. You gain increased physical abilities, increased energy reserves, and a natural healing factor. You gain increased affinity for Tinker abilities and machines, and you can converse and interface with machines.
+#(Tag:energy-regeneration+)(Tag:maximum-energy+)(Tag:physical+)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+) Race Change - You are a Biodroid, a seamless merging of technology and flesh. You gain increased physical abilities, increased energy reserves, and a natural healing factor. You gain increased affinity for Tinker abilities and machines, and you can converse and interface with machines.
 433. Full Conversion, 5.5, Generic
-#(Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are a fully converted Cyborg with minimal flesh. You do not regenerate energy naturally, and instead absorb compatible outside energy sources to recharge. Your Tinker abilities become far more efficient, and you seamlessly interface with technology. You possess multiple augments such as a basic supercomputer and VI, can integrate compatible technology into your body, and carry basic combat implants such as hidden machine guns and a pair of mantis blades in each limb. You can tinker with yourself to alter your body to an extent (You still have fleshy bits), but you cannot benefit from biology-based abilities.
+#(Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+) Race Change - You are a fully converted Cyborg with minimal flesh. You do not regenerate energy naturally, and instead absorb compatible outside energy sources to recharge. Your Tinker abilities become far more efficient, and you seamlessly interface with technology. You possess multiple augments such as a basic supercomputer and VI, can integrate compatible technology into your body, and carry basic combat implants such as hidden machine guns and a pair of mantis blades in each limb. You can tinker with yourself to alter your body to an extent (You still have fleshy bits), but you cannot benefit from biology-based abilities.
 434. Mechlord, 6.7, Generic
-#(Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech+)(Tag:tinker+)(Tech) Race Change - You are a Mechlord, a higher-class machine-flesh hybrid. You gain superhuman stats and incredible energy storage. Your natural energy regeneration is lacking, but you can absorb energy reserves from nearby machines. Your Tinker efficiency is incredible, and any machine or technology you wield gains performance scaling with your capabilities. You can convert and command technology and AI below your rank, with effectiveness depending on the power difference. You can integrate outside technology into your body as augments. You also gain 3 Silver-tier Tech item rolls as starting augments.
+#(Tag:energy-recovery)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:tech)(Tag:tech+)(Tag:tinker+) Race Change - You are a Mechlord, a higher-class machine-flesh hybrid. You gain superhuman stats and incredible energy storage. Your natural energy regeneration is lacking, but you can absorb energy reserves from nearby machines. Your Tinker efficiency is incredible, and any machine or technology you wield gains performance scaling with your capabilities. You can convert and command technology and AI below your rank, with effectiveness depending on the power difference. You can integrate outside technology into your body as augments. You also gain 3 Silver-tier Tech item rolls as starting augments.
 435. The Prime, 7.8, Generic
-#(Tag:energy-recovery)(Tag:growth+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:social)(Tag:talent)(Tag:tinker+)(Tech) Race Change - You are the Prime Unit, the highest tier of machine-flesh hybrid. You gain massively increased physical stats and energy reserves. You can absorb energy from machines and compatible sources. All Tinker abilities become incredibly more efficient, you can reconfigure your body to emulate tech from your Tinker abilities, and you decipher and learn other tech incredibly fast. All Technology and Virtuals below your rank bend to your will and cannot contest your authority as the Prime Unit. You can seamlessly absorb and integrate outside technology of your rank or below. You also gain 3 Gold-tier Tech item rolls as starting augments.
+#(Tag:energy-recovery)(Tag:growth+)(Tag:maximum-energy+)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:social)(Tag:talent)(Tag:tech)(Tag:tinker+) Race Change - You are the Prime Unit, the highest tier of machine-flesh hybrid. You gain massively increased physical stats and energy reserves. You can absorb energy from machines and compatible sources. All Tinker abilities become incredibly more efficient, you can reconfigure your body to emulate tech from your Tinker abilities, and you decipher and learn other tech incredibly fast. All Technology and Virtuals below your rank bend to your will and cannot contest your authority as the Prime Unit. You can seamlessly absorb and integrate outside technology of your rank or below. You also gain 3 Gold-tier Tech item rolls as starting augments.
 436. Vital, 3.8, Generic
 #(Tag:healing)(Tag:health-regeneration+)(Tag:vitality+)You gain greatly increased vitality. You heal wounds faster, resist poison and illness better, stay more virile, live longer, and remain unbelievably healthy. Your natural healing resembles a slight healing factor, but you must eat a lot to compensate.
 437. Marathoner, 3.5, Generic
@@ -901,7 +901,7 @@
 451. Drunk Driver, 0.9, Generic
 #(Tag:talent)"It's the drunk crashers that give drunk drivers a bad name." The more inebriated you are, the more skilled you become at driving and operating vehicles.
 452. Ceaseless Discharge, 0.9, Generic
-#(Tag:body)(Tag:nsfw)(Nsfw) "Not the one you are thinking of" Your cum refills almost instantly, and your ejaculation volume substantially increases.
+#(Tag:body)(Tag:nsfw) "Not the one you are thinking of" Your cum refills almost instantly, and your ejaculation volume substantially increases.
 453. Scarousing, 3.3, Generic
 #(Tag:social)The scarier you act, the more the potential partners you consider find you arousing as well as terrifying. The mind works in mysterious ways.
 454. Larger than Life, 1.4, Generic
@@ -993,7 +993,7 @@
 497. Psionic, 4.5, Generic
 #(Tag:mental)(Tag:mental+)(Tag:talent)You are a psionic, a specialist in the Mind and Mental world. You gain greater control and finesse over mental abilities and use them more efficiently. You also train mental abilities faster and grasp them more naturally.
 498. Netoranger, 2.8, Generic
-#(Tag:nsfw)(Tag:social)(Nsfw) You are a Netoranger; no relationship is sacred to you. You more easily persuade people to betray their loved ones for you, and people in relationships find themselves more attracted to you.
+#(Tag:nsfw)(Tag:social) You are a Netoranger; no relationship is sacred to you. You more easily persuade people to betray their loved ones for you, and people in relationships find themselves more attracted to you.
 499. Natural Restoration, 5.3, Generic
 #(Tag:health-recovery)(Tag:meta)Your natural healing works differently; instead of regenerating, your body constantly restores itself to its healthiest state at your normal regeneration speed, affecting even curses, diseases, and afflictions. Of course, the more severe the effect, the longer and harder your restoration to full condition becomes.
 500. Tune Up, 3.3, Generic
@@ -1065,9 +1065,9 @@
 533. Dark Resistance, 3.5, Generic
 #(Tag:dark)(Tag:dark-resistance+)You naturally resist Darkness and Darkness-based effects such as shadow blasts, darkness chains, clouds of Darkness, shadow blades, etc. This resistance scales with your base stats.
 534. Tech Priest Diploma, 4.2, Generic
-#(Tag:growth+)(Tag:social)(Tag:tech)(Tech) Praise the Omnissiah! You pray and perform rituals that actually appease the machine spirit dwelling in machines. By burning incense, dancing, singing, drawing it, etc., you please it, and its pleasure increases the machine's power and efficiency. With enough worship you develop a relationship with the machine that endures through thick and thin.
+#(Tag:growth+)(Tag:social)(Tag:tech) Praise the Omnissiah! You pray and perform rituals that actually appease the machine spirit dwelling in machines. By burning incense, dancing, singing, drawing it, etc., you please it, and its pleasure increases the machine's power and efficiency. With enough worship you develop a relationship with the machine that endures through thick and thin.
 535. Blessing of the Omnissiah, 4.7, Generic
-#(Tag:buff)(Tech) You are blessed by the Omnissiah; they praise you. Any machine you handle or encounter eagerly favors you unless you lose that favor: charges deplete slower, cars go faster and handle better, slot machines give better odds, etc., because their machine spirit naturally likes you.
+#(Tag:buff)(Tag:tech) You are blessed by the Omnissiah; they praise you. Any machine you handle or encounter eagerly favors you unless you lose that favor: charges deplete slower, cars go faster and handle better, slot machines give better odds, etc., because their machine spirit naturally likes you.
 536. Kitsune, 4.6, Generic
 #(Tag:beastkin)(Tag:illusion)(Tag:illusion+)(Tag:maximum-energy+)(Tag:nature)(Tag:physical+)(Tag:power)(Tag:race-change)(Tag:spirit)Race Change - You are a single-tailed Kitsune, a Fox Yokai semi-spiritual being attuned to nature and illusions. Your humanoid form is naturally incredibly attractive, and you possess slightly increased physical stats and increased energy reserves. You naturally weave and use [Foxfire], and all Stranger abilities, illusion spells, and nature-based abilities you use are more potent. You shift between fox and humanoid form at will and hide your fox features with illusions. As you age or increase energy reserves, you gain up to 9 tails, each slightly enhancing the above capabilities.
 537. Kyubi, 5.7, Generic
@@ -1081,11 +1081,11 @@
 541. Deviant Fashion, 1.4, Generic
 #(Tag:rule)(Tag:social)You may wear whatever you want without it being illegal or morally unacceptable, though people may still feel uncomfortable. You can even enter high society wearing what you were born with.
 542. Machine Spirit Mechanic, 5.4, Generic
-#(Tag:growth+)(Tag:rule)(Tag:tech)(Tech) You are a special mechanic: whatever sufficiently advanced technology you make contains a newborn Machine Spirit. It passively improves the machine's quality and performance over time. Depending on its mood, it works more efficiently or worse and can even deny access. More mature spirits can operate their tech autonomously and independently. All spirits you create naturally see you as their creator.
+#(Tag:growth+)(Tag:rule)(Tag:tech) You are a special mechanic: whatever sufficiently advanced technology you make contains a newborn Machine Spirit. It passively improves the machine's quality and performance over time. Depending on its mood, it works more efficiently or worse and can even deny access. More mature spirits can operate their tech autonomously and independently. All spirits you create naturally see you as their creator.
 543. Necromantic Heart, 4.3, Generic
 #(Tag:growth+)(Tag:necro)(Tag:race-change)Race Change - You possess the Necromantic Heart, turning you undead while granting you the capacity to evolve. You start as (Uncommon trait) Skeleton, and the more time you spend alive, the more you kill, and the more negative energy you immerse yourself in, the faster you evolve into the next undead tier. You retain a humanoid facade with human functions that falls apart when you use undead traits or get damaged.
 544. Oedipus Simple, 2.5, Generic
-#(Tag:nsfw)(Tag:social)(Nsfw) There is nothing morally wrong with keeping it in the family, and society does not find you marrying your kin particularly wrong. All genetic problems from inbreeding are resolved. Any biological children you conceive inherit your traits far better and inherit at least two of your abilities. You more easily earn your family's affection, platonically or romantically. This trait can be rerolled for free.
+#(Tag:nsfw)(Tag:social) There is nothing morally wrong with keeping it in the family, and society does not find you marrying your kin particularly wrong. All genetic problems from inbreeding are resolved. Any biological children you conceive inherit your traits far better and inherit at least two of your abilities. You more easily earn your family's affection, platonically or romantically. This trait can be rerolled for free.
 545. Full Coverage Insurance Plan, 5.2, Generic
 #(Tag:meta)(Tag:summon)Your familiars carry full coverage insurance: as long as a familiar stays in familiar space for 24 hours straight uninterrupted, they return to perfect health. If a familiar dies, they resurrect in familiar space after 48 hours in perfect health.
 546. The Real Familiars, 5.1, Generic
@@ -1175,7 +1175,7 @@
 587. The Santa Clause, 1.9, Generic
 #(Tag:rule)You fall under Santa's clause: people do not mind you entering places you should not be or lingering where you are not meant to be. They still get offended and angry if you cause a disturbance or do something offensive.
 588. Sexercise, 1.5, Generic
-#(Tag:growth+)(Tag:nsfw)(Nsfw) Sexual activity functions as a very efficient, comprehensive full-body workout for you. Its effects apply only after the activity ends and scale with its effectiveness.
+#(Tag:growth+)(Tag:nsfw) Sexual activity functions as a very efficient, comprehensive full-body workout for you. Its effects apply only after the activity ends and scale with its effectiveness.
 589. Blessing of Atlas, 5.5, Generic
 #(Tag:mental-resistance+)(Tag:mind)You are blessed by Atlas, bearer of the world on his shoulders. You are extremely resilient toward all hardship: even under extreme agony, poison, bleeding out, or incomprehensible exhaustion, you still perform at your maximum.
 590. Sadist, 3.6, Generic
@@ -1183,7 +1183,7 @@
 591. Starman, 8.5, Generic
 #(Tag:energy-recovery)(Tag:energy-regeneration+)(Tag:health-recovery)(Tag:health-regeneration+)(Tag:survival)Your hope literally fuels you: the more hope and determination you hold, the faster your energy and vitality regenerate, and as long as you hold hope, you cannot be killed. Whenever someone places their hopes in you, that hope converts into energy and vitality to fuel you.
 592. CEO of Sex, 7.6, Generic
-#(Tag:nsfw)(Tag:power)(Tag:rule)(Nsfw) You are the CEO of Sex, chosen by sex. It is conceptually impossible for you to be an unsatisfying partner, no matter who you face. You tell someone's kinks and preferred partners at a glance, and all your sexual actions are greatly enhanced. You finger the earth to spurt a geyser and thrust into the ocean to let the waves carry you where you need to be.
+#(Tag:nsfw)(Tag:power)(Tag:rule) You are the CEO of Sex, chosen by sex. It is conceptually impossible for you to be an unsatisfying partner, no matter who you face. You tell someone's kinks and preferred partners at a glance, and all your sexual actions are greatly enhanced. You finger the earth to spurt a geyser and thrust into the ocean to let the waves carry you where you need to be.
 593. Firestarter, 1.3, Generic
 #(Tag:fire)(Tag:fire+)You are a novice firestarter, slightly more resistant to heat and fire-based effects, and your fire-based abilities and spells are slightly more efficient.
 594. Burner, 2.5, Generic
@@ -1217,9 +1217,9 @@
 608. Bully, 2.5, Generic
 #(Tag:physical+)(Tag:power+)Against opponents already greatly weaker than you, you possess increased physical stats and your abilities cost less energy.
 609. Luddite, 4.2, Generic
-#(Tag:anti-tech)(Tag:tech)(Tech) No machine takes your job or life. Whenever you face an opponent relying on high-level technology, you gain augmented reflexes, comprehension, and combat instincts against them, and attacks from high-technology constructs are less effective against you.
+#(Tag:anti-tech)(Tag:tech) No machine takes your job or life. Whenever you face an opponent relying on high-level technology, you gain augmented reflexes, comprehension, and combat instincts against them, and attacks from high-technology constructs are less effective against you.
 610. Technoclast, 7.1, Generic
-#(Tag:anti-tech)(Tag:tech)(Tech) You are the bane of Man and Machine. Against a high-technology target, all your abilities are greatly augmented and you gain massively increased combat instincts. You massively resist any effect from high technology, to the point a railgun hits like a slingshot. These effects amplify further if your opponent is an artificial high-tech lifeform.
+#(Tag:anti-tech)(Tag:tech) You are the bane of Man and Machine. Against a high-technology target, all your abilities are greatly augmented and you gain massively increased combat instincts. You massively resist any effect from high technology, to the point a railgun hits like a slingshot. These effects amplify further if your opponent is an artificial high-tech lifeform.
 611. Style, 4.2, Ultrakill
 #(Tag:energy-regeneration+)(Tag:health-regeneration+)You have a style meter: the more stylishly you fight, the faster you regenerate Vitality and Energy, up to 3x faster atop all multipliers, provided you stay stylish enough during the fight.
 612. Acid Reflux, 2.1, Generic
@@ -1237,7 +1237,7 @@
 618. Airbender, 5.8, Avatar
 #(Tag:air)(Tag:martial)(Tag:power)You have natural talent as an Airbender, allowing you to manipulate and bend Air through Airbending, the potency of your Airbending scales with your attunement to Air, your skill in martial arts, your mentality, and your energy levels. Skilled enough Airbenders can achieve flight and even bend air out of someone's lungs; they can also sense vibrations through the air.
 619. Hypertrophic Mechanic, 4.4, Generic
-#(Tag:growth+)(Tag:tech)(Tech) Whenever you use machinery or sufficiently complex technology, it develops hypertrophy. After use, letting it rest or repairing it makes it slightly more robust and powerful. Slow and steady wins the race.
+#(Tag:growth+)(Tag:tech) Whenever you use machinery or sufficiently complex technology, it develops hypertrophy. After use, letting it rest or repairing it makes it slightly more robust and powerful. Slow and steady wins the race.
 620. Item Hypertrophy, 5.3, Generic
 #(Tag:growth+)(Tag:tech)All items you use grow stronger over time through rigorous use and wear: letting an item rest or repairing it after great use makes it slightly more robust and powerful. Slow and steady wins the race.
 621. Super Sniffer, 5.4, Demon Slayer

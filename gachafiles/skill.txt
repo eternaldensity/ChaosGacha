@@ -57,7 +57,7 @@
 29. Sun Breathing, 4.4, Demon Slayer
 #(Tag:martial)(Tag:unique)(Tag:weapon)You practice Sun Breathing, the specialized swordsmanship style and breathing technique created by legendary swordsman Yoriichi Tsugikuni that mimics the sun through your movements, techniques, and abilities. All techniques and forms are extremely varied with no set pattern, making them the most versatile and effective against enemies, and with magical power you manifest solar flames effective against the unholy.
 30. Intermediate Kama Sutra, 2.2, Generic
-#(Tag:nsfw)(Nsfw) You are experienced in the sexual arts. You skillfully pleasure your partner, are a pleasant recipient, and know how to spot arousal and what your partner responds to.
+#(Tag:nsfw) You are experienced in the sexual arts. You skillfully pleasure your partner, are a pleasant recipient, and know how to spot arousal and what your partner responds to.
 31. Intermediate Taming, 2.1, Generic
 #(Tag:social)You are good at taming and training wild creatures. You make them submit and become obedient, submissive, and loyal to you, learn how to tame specific creatures, and apply this to people to an extent.
 32. Intermediate Pressure Points, 3.8, Generic
@@ -129,7 +129,7 @@
 65. Novice Item Construction, 2.1, Generic
 #(Tag:craft)(Tag:magic)You know how to create minor enchanted and special items. You cannot make anything called a proper item, but things like a self-heating plate or an air-purifying mask are possible as long as you have the proper knowledge base.
 66. Novice Kama Sutra, 1.5, Generic
-#(Tag:nsfw)(Nsfw) You are reasonably talented in the carnal arts. You know what goes where, how to pleasure your partner, and what not to do during coitus.
+#(Tag:nsfw) You are reasonably talented in the carnal arts. You know what goes where, how to pleasure your partner, and what not to do during coitus.
 67. Novice Taming, 1.1, Generic
 #(Tag:social)You know how to tame wild creatures, but not very precisely. With trial and error you probably tame a creature, though it is not easy, while you easily tame and train mundane animals.
 68. Novice Massage, 1.2, Generic
@@ -177,7 +177,7 @@
 89. Adept Item Construction, 4.9, Generic
 #(Tag:craft)(Tag:magic)You can create enchanted and special items based on your capabilities. If you know fire magic, you could turn a regular ring into one that deploys a fire barrier in an emergency, or if you have teleportation, you could create a ring that teleports people to a set location.
 90. Adept Kama Sutra, 3.3, Generic
-#(Tag:nsfw)(Nsfw) You are very talented in the carnal arts, able to spot signs of arousal and attraction, and you instinctively know how to pleasure your partner in bed while being a very pleasant recipient, enhancing pleasure for both of you.
+#(Tag:nsfw) You are very talented in the carnal arts, able to spot signs of arousal and attraction, and you instinctively know how to pleasure your partner in bed while being a very pleasant recipient, enhancing pleasure for both of you.
 91. Adept Taming, 3.1, Generic
 #(Tag:social)You are great at taming, making beings submit to your ownership or superiority, gaining the obedience and loyalty of eligible familiars and, to a lesser extent, people. You are also good at training them.
 92. Adept Massage, 3.6, Generic
@@ -225,7 +225,7 @@
 113. Expert Item Construction, 5.7, Generic
 #(Tag:craft)(Tag:magic)You can create great enchanted and special items based on your capabilities. If you know fire magic, you could turn a regular ring into one that deploys fireballs and walls of fire while making the user resistant to fire, or if you have teleportation, you could create a ring that teleports people to a set location.
 114. Expert Kama Sutra, 4.5, Generic
-#(Tag:nsfw)(Nsfw) You are an expert in the carnal arts, intimately familiar with reading signs of arousal and pleasuring partners in bed. Unless your partner is completely frigid, no one leaves your bed unsatisfied, and your skill is unmatched by most. If given magic, you could probably create Eromancy.
+#(Tag:nsfw) You are an expert in the carnal arts, intimately familiar with reading signs of arousal and pleasuring partners in bed. Unless your partner is completely frigid, no one leaves your bed unsatisfied, and your skill is unmatched by most. If given magic, you could probably create Eromancy.
 115. Expert Taming, 4.1, Generic
 #(Tag:social)You are an expert in taming and domestication, able to turn a ferocious beast into your best buddy and skillfully train creatures to gain their obedience and loyalty. This also applies to people to a lesser extent.
 116. Expert Massage, 4.0, Generic
@@ -273,7 +273,7 @@
 137. Master Item Construction, 6.3, Generic
 #(Tag:craft)(Tag:magic)You can create epic enchanted and special items based on your capabilities. If you know fire magic, you could turn a regular ring into one that lets the user use fire magic at a lower level, or if you have something like superhuman strength, you could create a ring that turns the average Joe into a super soldier. Stronger enchantments demand stronger base materials.
 138. Master Kama Sutra, 6.5, Generic
-#(Tag:nsfw)(Nsfw) You are a true master of lovemaking and passion whom no mortal man can match, with your partners' bodies as putty in your hands. Even gods would be reduced to helpless messes by your skills.
+#(Tag:nsfw) You are a true master of lovemaking and passion whom no mortal man can match, with your partners' bodies as putty in your hands. Even gods would be reduced to helpless messes by your skills.
 139. Master Taming, 5.1, Generic
 #(Tag:social)You are a true master tamer, able to turn even the most ferocious, bloodthirsty, manic beast into a living room pet, and to masterfully train familiars for obedience and loyalty. This also applies to people to a lesser extent.
 140. Master Massage, 5.5, Generic

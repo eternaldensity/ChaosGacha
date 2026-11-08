@@ -35,7 +35,7 @@
 18. A skeleton, 0.3, Generic
 #(Tag:mundane)Ordinary human skeleton from a completely ordinary person.
 19. Auric Tesla Armor, 7.0, Calamity Mod
-#(Tag:armor)(Tag:enhancer)(Tag:health-regeneration+)(Tag:movement)(Tag:tech)(Tech) Power armor modeled on the God Slaying Tyrant's. Grants extreme physical boost, Rare rank regeneration, hovering, and an extremely fast dash every 10 seconds. Managed by a virtual intelligence controlling its systems.
+#(Tag:armor)(Tag:enhancer)(Tag:health-regeneration+)(Tag:movement)(Tag:tech) Power armor modeled on the God Slaying Tyrant's. Grants extreme physical boost, Rare rank regeneration, hovering, and an extremely fast dash every 10 seconds. Managed by a virtual intelligence controlling its systems.
 20. Enuma Elish, 8.7, Fate
 #(Tag:blade)(Tag:space)(Tag:weapon)Gilgamesh - Sword of Rupture, Ea, granted by the gods and forged before swords existed. Releases red winds that shred spacetime without expending user energy, and at full power fires a beam that strips the world's texture, annihilating everything in its path.
 21. Pokeball Set, 3.3, Pokemon
@@ -69,7 +69,7 @@
 35. Alchemilia Vol 1 - 3, 3.6, Generic
 #(Tag:magic)(Tome)Fear and Hunger - A set of books containing guides on how to make a lot of minor yet useful potions such as healing, poison, mental recovery, etc. with the recipes adapted to the native mundane and common ingredients found in the users world. Those who haven't read Alchemilia physically cannot craft the potions it gives knowledge about.
 36. The Assembly, 5.2, Generic
-#(Tag:machine)(Tag:production)(Tag:tech)(Tech) Room-sized machine that disassembles any item into its most basic components, down to snowflake size. Can reassemble them into ingots, materials, or finished items given a blueprint.
+#(Tag:machine)(Tag:production)(Tag:tech) Room-sized machine that disassembles any item into its most basic components, down to snowflake size. Can reassemble them into ingots, materials, or finished items given a blueprint.
 37. Bar of Vibranium, 5.1, Marvel
 #(Tag:resource)Bar of pure refined Wakandan Vibranium, ready to process. Absorbs kinetic energy and vibrations, making it nigh unbreakable conventionally. Restock Timer: 168 hours.
 38. Angel Ring, 4.7, Minecraft
@@ -87,11 +87,11 @@
 44. Character Card Destiny's Child, 5.6, Legendary Mechanic
 #(Tag:card)(Tag:consumable)(Tag:divination)Predicts a future 'opportunity' like a mission, item, or person's action with accurate detail. Has 5 uses, then fades.
 45. HF Murasama, 4.7, Metal Gear Rising Revengeance
-#(Tag:blade)(Tag:tech)(Tag:weapon)(Tech) Crimson expert High Frequency blade, best of its kind, cutting practically any physical material. Includes a gunslash for Iai moves; sheath has infinite charge.
+#(Tag:blade)(Tag:tech)(Tag:weapon) Crimson expert High Frequency blade, best of its kind, cutting practically any physical material. Includes a gunslash for Iai moves; sheath has infinite charge.
 46. Playful Cloud, 4.1, Jujutsu Kaisen
 #(Tag:bludgeon)(Tag:flexible)(Tag:polearm)(Tag:weapon)Cursed three-section staff growing more destructive the stronger its user.
 47. Pokedex, 3.3, Pokemon
-#(Tag:divination)(Tag:tech)(Tag:tool)(Tech) Smart handheld device that scans, identifies, and analyzes any creature's race or species in under 10 seconds.
+#(Tag:divination)(Tag:tech)(Tag:tool) Smart handheld device that scans, identifies, and analyzes any creature's race or species in under 10 seconds.
 48. The Infinite Magazine, 4.0, Generic
 #(Tag:material)Magazine that morphs to fit any projectile weapon and supplies infinite ammo while attached.
 49. Belethor's General Goods Catalogue, 4.2, Skyrim
@@ -107,7 +107,7 @@
 54. Furniture Catalog, 2.5, Generic
 #(Tag:production)(Tag:tool)Instantly buys and teleports any mundane furniture from your current world to you at manufacturing cost. Unusable in combat or hostile territory.
 55. Abyssal Diving Suit, 4.2, Calamity Mod
-#(Tag:armor)(Tag:tech)(Tag:water-resistance+)(Tech) Extremely tough power armor for deep-sea exploration down to 3,000 km. Adapts flawlessly to poison, corrosion, and pressure, letting you move and live underwater with ease.
+#(Tag:armor)(Tag:tech)(Tag:water-resistance+) Extremely tough power armor for deep-sea exploration down to 3,000 km. Adapts flawlessly to poison, corrosion, and pressure, letting you move and live underwater with ease.
 56. Grand Gelatin, 4.8, Calamity Mod
 #(Tag:agility+)(Tag:consumable)(Tag:elixir)(Tag:life+)(Tag:poison-resistance+)Rainbow gel in an ornate bottle. Consuming it grants Advanced Poison Resistance plus sizeable vitality and agility boosts.
 57. Ring of Swiftness, 2.1, Generic
@@ -165,7 +165,7 @@
 83. Absorption Line, 4.7, Highschool DxD
 #(Tag:bound)(Tag:energy-recovery)(Tag:flexible)(Tag:holy)(Tag:weapon)Sacred Gear created by God. It allows the user to conjure energy lines that attach to targets to siphon energy. Can also bind opponents or swing like Spider-Man.
 84. Dreadon's Gaming Chair, 4.9, Calamity Mod
-#(Tag:machine)(Tag:movement)(Tag:tech)(Tech) Incredibly powerful floating chair with more compute than the strongest supercomputers. Flies at supersonic speeds with powerful protective forcefields. The ultimate gaming chair.
+#(Tag:machine)(Tag:movement)(Tag:tech) Incredibly powerful floating chair with more compute than the strongest supercomputers. Flies at supersonic speeds with powerful protective forcefields. The ultimate gaming chair.
 85. Returner's Clock, 4.9, Generic
 #(Tag:time)(Tag:tool)Ornate antique hand clock with 3 unrefillable charges. Spend a charge to return to the morning of the current day. Turns to dust after all 3 are spent.
 86. Havel's Greatshield, 2.2, Dark Souls
@@ -241,15 +241,15 @@
 121. Tome of the Starscourge, 4.7, Elden Ring
 #(Tag:gravity)(Tag:grimoire)(Tag:magic)(Tome) Contains Radahn the Starscourge's studies, teaching his gravity magic. Spell List: https://eldenring.wiki.fextralife.com/Gravity+Sorceries
 122. Cruise Ship, 3.0, Generic
-#(Tag:tech)(Tag:vehicle)(Tech) A 350m long, 80m wide luxury cruise ship with infinite fuel. It is crewed by automatons that can only perform their assigned ship duties.
+#(Tag:tech)(Tag:vehicle) A 350m long, 80m wide luxury cruise ship with infinite fuel. It is crewed by automatons that can only perform their assigned ship duties.
 123. Tank, 1.2, Generic
-#(Tag:tech)(Tag:vehicle)(Tech) A large military tank with infinite fuel and shells. Fuel and shells cannot be removed from the vehicle.
+#(Tag:tech)(Tag:vehicle) A large military tank with infinite fuel and shells. Fuel and shells cannot be removed from the vehicle.
 124. Pocket Armory, 2.2, Generic
 #(Tag:production)(Tag:tech)(Tag:weapon)A large grey duffel bag holding a copy of every cold weapon in high-quality steel. Only one weapon can be taken out at a time, and returning it restores it to perfect condition when next drawn.
 125. Servant Voucher, 5.3, Fate
 #(Tag:summon)(Tag:ticket)A coupon to summon your own Heroic Spirit based on you as a person. Bound in standard Grail War style with mana transfer via coitus and 3 command seals for absolute orders. Cannot summon Divine Servants (Divinity above C or explicitly a god) or Grand candidates, and the Servant cannot exceed Elite rank familiar performance.
 126. Stimpack, 2.3, Fallout
-#(Tag:bio)(Tag:consumable)(Tag:health-recovery)(Tag:tech)(Tech) A syringe pack of modified stem cells and healing agents that drives the body's regeneration into overdrive. WARNING: Use without sufficient nutrients or minerals in the body can cause more harm than good. Restock Timer: 24 hours.
+#(Tag:bio)(Tag:consumable)(Tag:health-recovery)(Tag:tech) A syringe pack of modified stem cells and healing agents that drives the body's regeneration into overdrive. WARNING: Use without sufficient nutrients or minerals in the body can cause more harm than good. Restock Timer: 24 hours.
 127. Staff of the Phoenix, 5.9, Generic
 #(Tag:avian)An ornate pure-ruby staff with gold engravings. Using it as a focus increases fire abilities' and spells' power while reducing their cost.
 128. Moonlight Greatsword, 3.1, Dark Souls
@@ -265,7 +265,7 @@
 133. Grimoire of Wind Magic, 4.7, Black Clover
 #(Tag:air)(Tag:grimoire)(Tag:magic)(Tome) A book of Wind Magic secrets from the Clover Kingdom for learning and using Aeromancy. Spell List: https://blackclover.fandom.com/wiki/Wind_Magic
 134. Lightsaber, 3.1, Star Wars
-#(Tag:blade)(Tag:tech)(Tag:weapon)(Tech) A classic Kyber Crystal lightsaber projecting an energy blade. No Force powers needed to use it.
+#(Tag:blade)(Tag:tech)(Tag:weapon) A classic Kyber Crystal lightsaber projecting an energy blade. No Force powers needed to use it.
 135. Wand of the Ice Fairy, 4.7, Generic
 #(Tag:catalyst)(Tag:fae)(Tag:ice)(Tag:ice+)A wand of blue ice crystals that feels pleasantly cool to the touch. Using it as a focus increases cold and ice abilities' and spells' potency while reducing their cost.
 136. Divine Shotgun, 3.5, Generic
@@ -329,7 +329,7 @@
 165. Evil Eye Ring, 2.2, Black Souls
 #(Tag:accessory)(Tag:health-regeneration+)"Did the eye just move?" A gold ring with an eye-shaped ruby that grants minor regeneration when worn.
 166. Hydrogen Bomb, 3.8, Generic
-#(Tag:mundane)(Tag:tech)(Tag:water)(Tech) A hydrogen bomb with a remote detonator. Try not to end up in the blast zone.
+#(Tag:mundane)(Tag:tech)(Tag:water) A hydrogen bomb with a remote detonator. Try not to end up in the blast zone.
 167. Cheshire Cat's ring, 2.1, Black Souls
 #(Tag:accessory)A gold ring engraved with a suspiciously smug cat. While worn, you are immune to falling damage even from 100,000 kilometers.
 168. Wind Gods Ring, 3.3, Black Souls
@@ -399,7 +399,7 @@
 200. Ice Blade, 2.8, Terraria
 #(Tag:blade)(Tag:ice)(Tag:ice+)(Tag:weapon)A magically enchanted solid-ice saber that holds its sharpness. Releases frigid energy with your own energy and boosts ice abilities when used as a focus.
 201. Space Dolphin Machine Gun, 3.8, Terraria
-#(Tag:deleted)(Tag:gun)(Tag:machine)(Tag:space)(Tag:tech)(Tag:weapon)(Tech) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
+#(Tag:deleted)(Tag:gun)(Tag:machine)(Tag:space)(Tag:tech)(Tag:weapon) A space dolphin crafted into a futuristic machine gun that shreds any mundane material. Its fire rate makes ammo consumption hard to keep up with.
 202. Onyx Blaster, 2.9, Terraria
 #(Tag:dark)(Tag:gun)(Tag:tech)(Tag:weapon)A shotgun crafted from pure-darkness shards. Converts energy/mana into dark onyx bullets dealing unholy damage instead of consuming bullets.
 203. Death Sickle, 4.2, Terraria
@@ -417,7 +417,7 @@
 209. Heavy Blade, 2.9, Generic
 #(Tag:blade)(Tag:weapon)A very durable longsword with controllable weight from 5 kg to 50,000 kg.
 210. Metal Gear Excelsus, 6.7, Metal Gear
-#(Tag:machine)(Tag:tech)(Tag:vehicle)(Tag:weapon)(Tech) A gigantic multi-city-block-sized arachnid mech with retractable blades, giant plasma cannons, and uncanny mobility and dexterity. Built to withstand advanced nuclear weaponry, constantly repaired by nanomachines, with living quarters.
+#(Tag:machine)(Tag:tech)(Tag:vehicle)(Tag:weapon) A gigantic multi-city-block-sized arachnid mech with retractable blades, giant plasma cannons, and uncanny mobility and dexterity. Built to withstand advanced nuclear weaponry, constantly repaired by nanomachines, with living quarters.
 211. The Straw Hat, 0.7, One Piece
 #(Tag:accessory)(Tag:mundane)Holds great sentimental value to a certain sun god, but little material value.
 212. Modified Compound V, 3.4, The Boys
@@ -427,7 +427,7 @@
 214. Byakugan Jar, 4.4, Naruto
 #(Tag:bio)(Tag:resource)A pair of freshly unlocked Byakugan from Neji Hyuga, stored in preservative fluid. Can be implanted by a skilled enough doctor.
 215. Iron Man Armor Mark III, 3.7, Marvel
-#(Tag:armor)(Tag:tech)(Tag:weapon)(Tech) Iron Man's iconic armored suit. Useful but not particularly powerful, and very hard to repair if broken.
+#(Tag:armor)(Tag:tech)(Tag:weapon) Iron Man's iconic armored suit. Useful but not particularly powerful, and very hard to repair if broken.
 216. Infinity Gauntlet, 2.6, Marvel
 #(Tag:armor)The gauntlet itself, very durable, but stones not included.
 217. Greed's Coin, 4.8, Generic
@@ -445,13 +445,13 @@
 223. Goku Uniform 3star, 5.5, Kill La Kill
 #(Tag:armor)(Tag:bio)(Tag:enhancer)(Tag:life)(Tag:transformation)A uniform of 30% Life Fibers granting superhuman strength to demolish buildings. Extremely durable beyond carbon fiber; choose colors and design before taking it out. Consuming your vitality unlocks a second form that further increases its abilities.
 224. Your Laptop, 3.6, Generic
-#(Tag:deleted)(Tag:mundane)(Tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
+#(Tag:deleted)(Tag:mundane)(Tag:tech) Your laptop or computer from back on Earth, still connected to your Earth internet.
 225. Infinite Bowl of Spaghetti, 1.5, Generic
 #(Tag:production)An infinite spaghetti bowl that cannot be poured out, but servings can be taken infinitely. The spaghetti is always comfortably warm and tastes pretty good.
 226. Kaneda's Bike, 1.3, Akira
-#(Tag:vehicle)(Tech) A very fancy, fast, iconic sci-fi-ish bike.
+#(Tag:tech)(Tag:vehicle) A very fancy, fast, iconic sci-fi-ish bike.
 227. Any Vehicle Voucher, 3.1, Generic
-#(Tag:ticket)(Tag:vehicle)(Tech) Exchangeable anytime for any Mundane Vehicle in your world, from supercar to cruise ship. The vehicle teleports in front of you with all legal work handled.
+#(Tag:tech)(Tag:ticket)(Tag:vehicle) Exchangeable anytime for any Mundane Vehicle in your world, from supercar to cruise ship. The vehicle teleports in front of you with all legal work handled.
 228. Refined Heart-Shaped Herb, 4.3, MCU
 #(Tag:consumable)(Tag:elixir)(Tag:enhancer)A Wakandan herb blessed by Bast, refined to remove side effects and mystical strings for safe consumption. Grants enhanced strength, speed, stamina, durability, reflexes, agility, and instincts. Restock Timer: 240 hours.
 229. Senzu Bean, 5.9, Dragon Ball
@@ -479,7 +479,7 @@
 240. Cloak of Levitation, 4.6, Marvel
 #(Tag:accessory)(Tag:movement)A Sorcerer Supreme relic allowing free flight. Self-aware, it can pull its wearer from danger and hinder opponents on its own.
 241. Plague Canister, 5.7, Calamity Mod
-#(Tag:bio)(Tag:poison)(Tag:tech)(Tech) A canister of the Plague, a self-replicating nanomachine virus devouring biomass and turning living things into mindless biomechanically enhanced zombies for its hivemind. Releasing it without sufficient biokinetic or techno mastery dooms the world, though without a core they lack a hivemind command center.
+#(Tag:bio)(Tag:poison)(Tag:tech) A canister of the Plague, a self-replicating nanomachine virus devouring biomass and turning living things into mindless biomechanically enhanced zombies for its hivemind. Releasing it without sufficient biokinetic or techno mastery dooms the world, though without a core they lack a hivemind command center.
 242. Mehrunes Razor, 7.1, Skyrim
 #(Tag:blade)(Tag:dagger)(Tag:space)(Tag:spirit)(Tag:time)(Tag:weapon)Mehrunes Dagon's dagger. Capable of cutting anything the user can interact with, space, time, soul, connections, etc. The only limit is the user, not the dagger.
 243. Skeleton Key, 8.2, Skyrim
@@ -671,13 +671,13 @@
 336. Endless Bag of Ninja Supplies, 3.6, Generic
 #(Tag:production)(Tag:tool)A satchel-sized bag holding 100 shurikens, 100 kunai, 100 caltrops, 50 explosive tags, and a katana, all high-quality steel. Contents replenish every 24 hours.
 337. Portable Supercomputer, 4.8, Generic
-#(Tag:machine)(Tag:tech)(Tag:tool)(Tech) A laptop with power on par with humanity's strongest supercomputers that stays connected to the native internet regardless of location.
+#(Tag:machine)(Tag:tech)(Tag:tool) A laptop with power on par with humanity's strongest supercomputers that stays connected to the native internet regardless of location.
 338. Bag of Ore, 3.8, Generic
 #(Tag:material)(Tag:production)(Tag:tool)A torso-sized duffel bag yielding 33 kilograms of any mundane ore every 24 hours.
 339. Portable Pharmacy, 3.2, Generic
 #(Tag:production)(Tag:tool)A simple satchel yielding any item found in an average pharmacy.
 340. Droid Factory, 4.8, Star Wars
-#(Tag:barracks)(Tag:building)(Tag:production)(Tag:tech)(Tech) An autonomous factory producing droids under your command when supplied with appropriate materials.
+#(Tag:barracks)(Tag:building)(Tag:production)(Tag:tech) An autonomous factory producing droids under your command when supplied with appropriate materials.
 341. Flowing Water Crushing Rock Fist Manual, 6.8, One Punch Man
 #(Tag:deleted)(Tag:water)Bang's manual with detailed training in Flowing Water Crushing Rock Fist. Those without it cannot replicate the art.
 342. Grimoire of Izalith, 4.6, Dark Souls
@@ -691,7 +691,7 @@
 346. Rites of the Dragon Cult, 4.9, Elden Ring
 #(Tag:draconic)(Tag:grimoire)(Tag:magic)(Tome) Dragon Cult rites teaching miracles that imitate the great dragons' power. Spell List: https://eldenring.wiki.fextralife.com/Dragon+Cult+Incantations
 347. Capsule Case, 4.7, Dragon Ball
-#(Tag:building)(Tag:tech)(Tag:tool)(Tech) A case of 20 Capsule Corp capsules holding a house, fridge, oven, large preserved food stores, boat, high-tech motorcycle, etc. Any slightly upgraded mundane appliance or vehicle counts as a capsule here. Restock Timer: 48 hours.
+#(Tag:building)(Tag:tech)(Tag:tool) A case of 20 Capsule Corp capsules holding a house, fridge, oven, large preserved food stores, boat, high-tech motorcycle, etc. Any slightly upgraded mundane appliance or vehicle counts as a capsule here. Restock Timer: 48 hours.
 348. Rites of the Erdtree, 5.2, Elden Ring
 #(Tome) Rites of the ancient Erdtree worshippers teaching its miracles. Spell List: https://eldenring.wiki.fextralife.com/Erdtree+Incantations
 349. Grimoire of Spatial Magic, 6.8, Black Clover
@@ -725,7 +725,7 @@
 363. Sage's Ring, 3.1, Dark Souls
 #(Tag:accessory)(Tag:magic+)A ring from a preacher twin, the Crystal Sages, to Farron's Undead Legion that eases learning and casting while worn, reducing spell energy costs.
 364. Sahelanthropus, 5.1, Metal Gear
-#(Tag:machine)(Tag:tech)(Tag:vehicle)(Tag:weapon)(Tech) A nuclear-armed bipedal tank modified for a human operator, armed with a high-power railgun, guided missile launchers, retractable flexible nanofiber HF blades, and independent sensory drones deploying explosives, flamethrowers, and high-caliber machine guns. Its depleted uranium armor can be enriched by its internal reactor and detonated as a nuclear explosion. Ammo and missiles restock every 24 hours, and it self-repairs via nanomachines.
+#(Tag:machine)(Tag:tech)(Tag:vehicle)(Tag:weapon) A nuclear-armed bipedal tank modified for a human operator, armed with a high-power railgun, guided missile launchers, retractable flexible nanofiber HF blades, and independent sensory drones deploying explosives, flamethrowers, and high-caliber machine guns. Its depleted uranium armor can be enriched by its internal reactor and detonated as a nuclear explosion. Ammo and missiles restock every 24 hours, and it self-repairs via nanomachines.
 365. Twilight Healing, 4.8, Highschool DxD
 #(Tag:accessory)(Tag:bound)(Tag:health-recovery)(Tag:holy)A Sacred Gear created by God manifesting as ornate rings that convert your energy into neutral healing energy for yourself or others, with potency scaling to energy expended.
 366. Gravity Jail, 3.8, Highschool DxD
@@ -741,11 +741,11 @@
 371. Dragon Slayer, 2.6, Berserk
 #(Tag:anti-dragon)(Tag:blade)(Tag:draconic)(Tag:spirit)(Tag:weapon)A massive dull unwieldy sword larger than a man and supernaturally durable. Having bathed in the blood of countless spirits and astral beings, it can harm and kill the immaterial.
 372. Wastelanders Survival Kit, 2.5, Fallout
-#(Tag:armor)(Tag:consumable)(Tag:gun)(Tag:health-recovery)(Tag:tool)(Tag:weapon)(Tech) A true courier's loadout containing Elite Riot Gear, a fully modified Anti-Material Sniper Rifle, Riot Shotgun, .44 Magnum revolver, bowie knife, 5 repair kits, 10 stim packs, 5 doctor's bags, and 200 ammo for each weapon.
+#(Tag:armor)(Tag:consumable)(Tag:gun)(Tag:health-recovery)(Tag:tech)(Tag:tool)(Tag:weapon) A true courier's loadout containing Elite Riot Gear, a fully modified Anti-Material Sniper Rifle, Riot Shotgun, .44 Magnum revolver, bowie knife, 5 repair kits, 10 stim packs, 5 doctor's bags, and 200 ammo for each weapon.
 373. The Courier's Stash, 1.5, Fallout
-#(Tag:armor)(Tag:consumable)(Tag:gun)(Tag:health-recovery)(Tag:tool)(Tag:weapon)(Tech) A large briefcase containing lightweight metal armour, a double-barrel shotgun with 20 packs of 20 shells, 4 basic repair kits, and 5 stim packs.
+#(Tag:armor)(Tag:consumable)(Tag:gun)(Tag:health-recovery)(Tag:tech)(Tag:tool)(Tag:weapon) A large briefcase containing lightweight metal armour, a double-barrel shotgun with 20 packs of 20 shells, 4 basic repair kits, and 5 stim packs.
 374. Hei Gui Stealth Suit, 2.8, Fallout
-#(Tag:armor)(Tag:stealth)(Tag:tech)(Tech) Chinese special-unit armour for infiltration and stealth with dense armour and mesh. It emits a light-bending forcefield that renders the user invisible.
+#(Tag:armor)(Tag:stealth)(Tag:tech) Chinese special-unit armour for infiltration and stealth with dense armour and mesh. It emits a light-bending forcefield that renders the user invisible.
 375. Feng Shui Engine, 4.3, Street Fighter
 #(Tag:agility+)(Tag:defence+)(Tag:implant)(Tag:strength+)An advanced prosthetic eye housing a miniature Tandem Engine that generates extreme artificial Qi to massively enhance all physical abilities. Overuse may cause strain.
 376. Enma, 4.4, One Piece
@@ -753,9 +753,9 @@
 377. Shusui, 3.6, One Piece
 #(Tag:blade)(Tag:buff+)(Tag:weapon)A masterpiece sword once wielded by Ryuma, its blade permanently blackened from absorbing his hardening. It is nigh unbreakable, razor-sharp, and an excellent conductor of energy.
 378. Pip-Boy 3000, 2.4, Fallout
-#(Tag:tech)(Tag:tool)(Tech) A wrist-worn Personal Information Processor powered by an internal fission battery. It autonomously monitors your health, connects to networks, maps areas, shines light, and more.
+#(Tag:tech)(Tag:tool) A wrist-worn Personal Information Processor powered by an internal fission battery. It autonomously monitors your health, connects to networks, maps areas, shines light, and more.
 379. Power Fist, 1.1, Fallout
-#(Tag:fist)(Tag:tech)(Tag:weapon)(Tech) A pneumatic power fist that boosts punches to superhuman level. It offers little benefit to those already superhuman.
+#(Tag:fist)(Tag:tech)(Tag:weapon) A pneumatic power fist that boosts punches to superhuman level. It offers little benefit to those already superhuman.
 380. Rasaka's Fang, 3.5, Solo Leveling
 #(Tag:anti-recovery)(Tag:blade)(Tag:dagger)(Tag:poison)(Tag:weapon)A dagger carved from Rasaka's venomous fang, perpetually imbued with venom that paralyzes those it cuts and makes their wounds harder to heal.
 381. Rasaka's Venom, 3.4, Solo Leveling
@@ -775,17 +775,17 @@
 388. Divine Crucifix, 3.8, Generic
 #(Tag:catalyst)(Tag:holy+)(Tag:light+)A holy crucifix blessed by a divine spirit whose presence immensely weakens unholy and dark beings and instantly kills weaker ones. Holy or light abilities channelled through it gain potency.
 389. Telepathic Implant, 3.6, Invincible
-#(Tag:implant)(Tag:mental)(Tag:tech)(Tech) A neural implant for two-way communication with one target at a time within your perception. It manifests as a ticket that automatically installs itself when torn.
+#(Tag:implant)(Tag:mental)(Tag:tech) A neural implant for two-way communication with one target at a time within your perception. It manifests as a ticket that automatically installs itself when torn.
 390. Ripperdoc Ticket, 4.2, Cyberpunk 2077
-#(Tag:implant)(Tag:tech)(Tag:ticket)(Tech) A ticket that transfers you to a mechanical Ripperdoc's clinic to install Cyberpunk 2077 implants or ones you bring, for the right price. His top-quality wares are expensive and may require bartering. You return upon leaving, can spend only 24 hours inside, and Restock Timer: 15 Days.
+#(Tag:implant)(Tag:tech)(Tag:ticket) A ticket that transfers you to a mechanical Ripperdoc's clinic to install Cyberpunk 2077 implants or ones you bring, for the right price. His top-quality wares are expensive and may require bartering. You return upon leaving, can spend only 24 hours inside, and Restock Timer: 15 Days.
 391. Clover Amulet, 4.6, Generic
 #(Tag:accessory)(Tag:luck+)A golden amulet with jade engraved as a 4-leaf clover that grants good luck.
 392. Universal Antidote, 2.6, Generic
 #(Tag:holy)A vial containing a powerful holy antidote that can cure all diseases and ailments Epic rank and below. Restock Timer: 168 Hours.
 393. Sandevistan, 4.6, Cyberpunk 2077
-#(Tag:implant)(Tag:perception+)(Tag:tech)(Tech) A cybernetic spine replacement that massively heightens time perception, slowing time around you while taxing your brain; overuse may cause brain damage. It manifests as a ticket installed instantly on whoever rips it.
+#(Tag:implant)(Tag:perception+)(Tag:tech) A cybernetic spine replacement that massively heightens time perception, slowing time around you while taxing your brain; overuse may cause brain damage. It manifests as a ticket installed instantly on whoever rips it.
 394. Omni Phone, 3.3, Generic
-#(Tag:tech)(Tag:tool)(Tech) A mobile phone that connects to networks regardless of distance, with vast storage, an aeon-grade firewall, and supercomputer-surpassing processing power.
+#(Tag:tech)(Tag:tool) A mobile phone that connects to networks regardless of distance, with vast storage, an aeon-grade firewall, and supercomputer-surpassing processing power.
 395. Ender Pearl, 3.2, Minecraft
 #(Tag:consumable)(Tag:movement)A round crystalline pearl of spatial energy that teleports the thrower to where it breaks. Restock Timer: 8 hours.
 396. Character Card Wolverine, 5.0, Generic
@@ -801,11 +801,11 @@
 401. Cupid's Ticket, 5.5, Generic
 #(Tag:mental)(Tag:social)(Tag:ticket)(Noncon) Think of the person you want to affect and rip the ticket to make them fall in love with you. It is not mind control but retroactive reality and probability bending, with no unwanted side effects.
 402. Auto Doc, 3.9, Fallout
-#(Tag:health-recovery)(Tag:machine)(Tag:tech)(Tech) An autonomous advanced doctor station from Big MT. created by Doctor Mobius. This large capsule performs even the most complicated procedures with near-perfect expertise from simple instructions when hooked to sufficient power.
+#(Tag:health-recovery)(Tag:machine)(Tag:tech) An autonomous advanced doctor station from Big MT. created by Doctor Mobius. This large capsule performs even the most complicated procedures with near-perfect expertise from simple instructions when hooked to sufficient power.
 403. Blight Spewer, 5.7, Calamity Mod
-#(Tag:bio)(Tag:gun)(Tag:poison)(Tag:tech)(Tag:weapon)(Tech) An advanced flamethrower spewing Plague Nanomachine clouds that seek flesh and devour it from the inside out. The nanomachines disintegrate after a few seconds as a safety precaution.
+#(Tag:bio)(Tag:gun)(Tag:poison)(Tag:tech)(Tag:weapon) An advanced flamethrower spewing Plague Nanomachine clouds that seek flesh and devour it from the inside out. The nanomachines disintegrate after a few seconds as a safety precaution.
 404. Shadethrower, 3.6, Calamity Mod
-#(Tag:fire)(Tag:gun)(Tag:necro)(Tag:tech)(Tech) A modified flamethrower converting regular burnable fuel into corrupted flames that rapidly rot whatever they burn.
+#(Tag:fire)(Tag:gun)(Tag:necro)(Tag:tech) A modified flamethrower converting regular burnable fuel into corrupted flames that rapidly rot whatever they burn.
 405. Heavenly Gale, 7.8, Calamity Mod
 #(Tag:air)(Tag:bow)(Tag:electric)(Tag:holy)(Tag:weapon)A divine bow crafted from earth and cosmos essences that converts any nocked arrow into exotic resonance crystals. They summon resonant lightning where they strike, powerful enough to flay gods alive and rend the surface world.
 406. Telluric Gale, 6.2, Calamity Mod
@@ -825,7 +825,7 @@
 413. Wolverine's Skeleton, 3.4, Marvel
 #(Tag:bio)(Tag:earth)(Tag:material)Wolverine's Adamantium-bonded skeleton, virtually unbreakable albeit short, with all genetic material scrubbed so no Wolverine will regenerate from it.
 414. Nano Machine Heart, 6.4, Metal Gear Rising Revengeance
-#(Tag:electric)(Tag:enhancer)(Tag:implant)(Tag:tech)(Tech) Senator Armstrong's high-tech nanomachine heart. Implanted, it massively enhances your physiology, absorbs other nanomachines, drains electricity to charge, and hardens against physical trauma or on command.
+#(Tag:electric)(Tag:enhancer)(Tag:implant)(Tag:tech) Senator Armstrong's high-tech nanomachine heart. Implanted, it massively enhances your physiology, absorbs other nanomachines, drains electricity to charge, and hardens against physical trauma or on command.
 415. Danzo's Right Arm, 6.5, Naruto
 #(Tag:bio)(Tag:illusion)(Tag:implant)(Tag:perception+)Danzo's right arm in mint condition, made of Hashirama cells and implanted with 10 Sharingans. Implant it for Sharingan and Hashirama cell benefits, or dismantle it to use all parts separately.
 416. Hashirama Cells, 5.4, Naruto
@@ -843,13 +843,13 @@
 422. Lightning Release Jutsu Scroll, 5.7, Naruto
 #(Tag:electric)(Tag:grimoire)(Tag:magic)(Tome) A large scroll recording all Lightning Release Jutsu up to A rank for study and training. Those without the user's permission cannot understand its contents.
 423. T-51b Power Armor, 2.6, Fallout
-#(Tag:armor)(Tag:tech)(Tech) Pre-Great War mass-produced power armour that shrugs off low-calibre bullets and lets an average man lift a car overhead. Powered by a fusion core replaced with a new one every 24 hours.
+#(Tag:armor)(Tag:tech) Pre-Great War mass-produced power armour that shrugs off low-calibre bullets and lets an average man lift a car overhead. Powered by a fusion core replaced with a new one every 24 hours.
 424. Adeptus Astartes Procedure Ticket, 4.2, Warhammer 40k
-#(Tag:growing)(Tag:meta)(Tag:nature)(Tag:ticket)(Tech)A ticket that when ripped transports you to a room full of robotic surgeons that allow you to undergo the creation procedure of a Transhuman Ultramarine Adeptus Astartes, granting numerous auxiliary organs and enhacements to your bones and muscles structure. The augments and gene seed are altered so that the user does not experience explosive growth and retains their natural genetic height and stature without any decrease in the effectiveness of the results.
+#(Tag:growing)(Tag:meta)(Tag:nature)(Tag:tech)(Tag:ticket)A ticket that when ripped transports you to a room full of robotic surgeons that allow you to undergo the creation procedure of a Transhuman Ultramarine Adeptus Astartes, granting numerous auxiliary organs and enhacements to your bones and muscles structure. The augments and gene seed are altered so that the user does not experience explosive growth and retains their natural genetic height and stature without any decrease in the effectiveness of the results.
 425. Justice's Shades, 1.8, Helltaker
 #(Tag:accessory)(Tag:divination)The blind demon's cool shades that let you tell when someone speaking to you thinks they are lying.
 426. E-11 medium blaster rifle, 2.7, Star Wars
-#(Tag:gun)(Tag:tech)(Tag:weapon)(Tech) A standard Stormtrooper rifle firing high-heat bolts that kill average light-armoured targets in one shot and blast concrete. It has Lethal, Stun, and Sting settings with a 500-shot cartridge, replaced daily.
+#(Tag:gun)(Tag:tech)(Tag:weapon) A standard Stormtrooper rifle firing high-heat bolts that kill average light-armoured targets in one shot and blast concrete. It has Lethal, Stun, and Sting settings with a 500-shot cartridge, replaced daily.
 427. Soul Solid, 2.4, One Piece
 #(Tag:deleted)(Tag:spirit)Brook's cane sword, extremely sharp, durable, and undulled after years of use. It is also extremely dapper.
 428. Wado Ichimonji, 3.4, One Piece
@@ -877,7 +877,7 @@
 439. Kubikiribocho, 2.2, Naruto
 #(Tag:blade)(Tag:weapon)An oversized cleaver curved sword of the Seven Swordsmen of the Mist, incredibly durable and energy-conductive. However damaged, it repairs itself by absorbing blood.
 440. Malorian Overture, 2.0, Cyberpunk 2077
-#(Tag:gun)(Tag:tech)(Tech) A heavy-duty powerful Malorian Arms double-action revolver that punches through half-borgs with each bullet. You get 30 bullets daily.
+#(Tag:gun)(Tag:tech) A heavy-duty powerful Malorian Arms double-action revolver that punches through half-borgs with each bullet. You get 30 bullets daily.
 441. Deed to Land, 2.4, Generic
 #(Tag:ticket)A land deed; rip it in half to have always owned land in a location favourable to you.
 442. Deed to Mansion, 3.8, Generic
@@ -887,23 +887,23 @@
 444. Five Hundred Cigarettes, 0.5, Generic
 #(Tag:mundane)500 generic non-brand cigarettes for taking the edge off.
 445. Rust Bucket, 3.7, Ben 10
-#(Tag:tech)(Tag:vehicle)(Tech) Maxwell Tennyson's large cozy RV repeatedly upgraded with Plumber Technology. An effective mobile home that flies and carries numerous offense and defense systems.
+#(Tag:tech)(Tag:vehicle) Maxwell Tennyson's large cozy RV repeatedly upgraded with Plumber Technology. An effective mobile home that flies and carries numerous offense and defense systems.
 446. Transformer Spark, 4.4, Transformers
-#(Tag:summon)(Tag:tech)(Tag:transformation)(Tech) A Transformer's being; imbue it into any sufficiently large technology to turn it into a Transformer registered as a familiar.
+#(Tag:summon)(Tag:tech)(Tag:transformation) A Transformer's being; imbue it into any sufficiently large technology to turn it into a Transformer registered as a familiar.
 447. ColorS, 1.2, Fairy Tail
 #(Tag:illusion)(Tag:tool)A small book-like magic item that changes your clothing's color scheme by sliding your finger over it.
 448. Gale Force Reading Glasses, 2.7, Fairy Tail
 #(Tag:accessory)(Tag:air)(Tag:mental)Magical spectacles letting you read any held book 64x faster without losing comprehension.
 449. Music Player, 1.6, Generic
-#(Tag:tech)(Tag:tool)(Tech) An indestructible music player with excellent sound, built-in speakers and headphones. It plays any song the holder has heard and archives it.
+#(Tag:tech)(Tag:tool) An indestructible music player with excellent sound, built-in speakers and headphones. It plays any song the holder has heard and archives it.
 450. Archenemy, 5.7, Fairy Tail
 #(Tag:blade)(Tag:weapon)A sealed sword imbued with extremely uncontrollable magical power that unleashes a slash cutting several city blocks at minimum when unsheathed. Keep it sheathed.
 451. Magic Ticket, 4.7, Fairy Tail
 #(Tag:grimoire)(Tag:magic)(Tag:ticket)(Tome) A magical ticket granting a grimoire of a chosen Fairy Tail magic branch upon ripping. Excludes Lost, Ancient, Time, Space, Dragonslayer, Archive, or any magic above Elite tier; the chosen category becomes a studyable Grimoire.
 452. FEV Vat, 4.0, Fallout
-#(Tag:bio)(Tag:tech)(Tag:transformation)(Tech) An industrial vat of Forced Evolutionary Virus turning any dropped-in human into a Super Mutant. Dropped-in animals gain increased abilities or die.
+#(Tag:bio)(Tag:tech)(Tag:transformation) An industrial vat of Forced Evolutionary Virus turning any dropped-in human into a Super Mutant. Dropped-in animals gain increased abilities or die.
 453. Null Void Projector, 6.8, Ben 10
-#(Tag:movement)(Tag:space)(Tag:tech)(Tag:tool)(Tech) A handheld projector opening portals to the Null Void or banishing whatever it hits there, requiring recharge between shots. Incapacitating someone via the Null Void grants no feat.
+#(Tag:movement)(Tag:space)(Tag:tech)(Tag:tool) A handheld projector opening portals to the Null Void or banishing whatever it hits there, requiring recharge between shots. Incapacitating someone via the Null Void grants no feat.
 454. Tome of Destruction, 3.7, Skyrim
 #(Tag:electric)(Tag:fire)(Tag:grimoire)(Tag:ice)(Tag:magic)(Tome) A tome compiling Skyrim's destruction spells for training and learning. Spell List: https://elderscrolls.fandom.com/wiki/Destruction_(Skyrim)
 455. Tome of Restoration, 4.6, Skyrim
@@ -927,7 +927,7 @@
 464. Stopwatch, 8.5, Generic
 #(Tag:time)(Tag:tool)A stopwatch stopping the universe's time around the user, often employed by Ugly Bastards or people whose hair obscures their eyes.
 465. Rick's Portal Gun, 7.2, Rick and Morty
-#(Tag:movement)(Tag:tech)(Tag:tool)(Tech) A portal gun from one of the multiverse's smartest yet stupidest and drunkest inventors, opening portals to any non-spatial-blocked location including other universes if you know coordinates or specifications. Portal fluid refills every 24 hours.
+#(Tag:movement)(Tag:tech)(Tag:tool) A portal gun from one of the multiverse's smartest yet stupidest and drunkest inventors, opening portals to any non-spatial-blocked location including other universes if you know coordinates or specifications. Portal fluid refills every 24 hours.
 466. Ring of the Bull, 3.1, Generic
 #(Tag:accessory)(Tag:defence+)(Tag:strength+)This golden ruby ring grants increased strength and endurance, half flat boost and half percentage boost.
 467. Riptide, 2.2, Percy Jackson
@@ -953,21 +953,21 @@
 477. Mansion of the Boundary, 8.8, Generic
 #(Tag:dimension)(Tag:movement)A taste-tailored mansion sitting in the middle of everything in its own impenetrable dimension even Outer Ones cannot breach. Enter through any door you touch and exit at any door in reality, even other multiverses or gardens.
 478. Plague Reaper Armor, 6.4, Calamity Mod
-#(Tag:armor)(Tag:bio)(Tag:bio+)(Tag:enhancer)(Tag:poison)(Tag:poison+)(Tag:poison-resistance+)(Tag:tech)(Tech) High-tech plague doctor armour fused with Plague Nanovirus, greatly amplifying physical stats with aiming HUD. Immune to diseases and poison below Divine Level, it greatly amplifies your poison and bio abilities and can temporarily release Nanoviruses to rot enemies from within before dissolving safely.
+#(Tag:armor)(Tag:bio)(Tag:bio+)(Tag:enhancer)(Tag:poison)(Tag:poison+)(Tag:poison-resistance+)(Tag:tech) High-tech plague doctor armour fused with Plague Nanovirus, greatly amplifying physical stats with aiming HUD. Immune to diseases and poison below Divine Level, it greatly amplifies your poison and bio abilities and can temporarily release Nanoviruses to rot enemies from within before dissolving safely.
 479. Wulfrum Armor, 2.8, Calamity Mod
-#(Tag:armor)(Tag:tech)(Tech) Simple high-tech wulfrum armour with reasonable defense and comfort. An activated switch turns it into power armour with a supplied powerful machine gun; this mode has a 24-hour cooldown.
+#(Tag:armor)(Tag:tech) Simple high-tech wulfrum armour with reasonable defense and comfort. An activated switch turns it into power armour with a supplied powerful machine gun; this mode has a 24-hour cooldown.
 480. Photon Ripper, 5.9, Calamity Mod
-#(Tag:blade)(Tag:light)(Tag:tool)(Tag:weapon)(Tech) Dreadon's Exo-material chainsaw projecting dozens of adjustable hard-light teeth spinning at insane speeds, shredding almost anything. Slight overkill for trees.
+#(Tag:blade)(Tag:light)(Tag:tech)(Tag:tool)(Tag:weapon) Dreadon's Exo-material chainsaw projecting dozens of adjustable hard-light teeth spinning at insane speeds, shredding almost anything. Slight overkill for trees.
 481. Master Ninja's Belt, 3.4, Generic
 #(Tag:accessory)(Tag:agility+)(Tag:movement)A master ninja's inconspicuous black belt granting incredible acrobatics, wall-sticking, fall damage immunity, and muffling of unintentional sounds up to speaking volume.
 482. Smoke Bomb, 2.7, Generic
 #(Tag:consumable)(Tag:movement)"Smoke Bomb!" A simple-looking smoke bomb that, thrown at your feet, teleports you anywhere within 25 meters you could enter if it obscures you from everyone. Restock Timer: 12 hours.
 483. ASTER Augmentation Ticket, 3.6, Halo
-#(Tag:defence+)(Tag:dexterity+)(Tag:implant)(Tag:mind+)(Tag:reflex+)(Tag:strength+)(Tag:ticket)(Tech) A ticket sending you to advanced robotic doctors for a perfected ASTER procedure turning you into a Spartan regardless of age or condition. It grants a more durable skeleton, enhanced musculature, visual acuity, reflexes, and mental clarity.
+#(Tag:defence+)(Tag:dexterity+)(Tag:implant)(Tag:mind+)(Tag:reflex+)(Tag:strength+)(Tag:tech)(Tag:ticket) A ticket sending you to advanced robotic doctors for a perfected ASTER procedure turning you into a Spartan regardless of age or condition. It grants a more durable skeleton, enhanced musculature, visual acuity, reflexes, and mental clarity.
 484. MJOLNIR Powered Assault Armor IV, 4.0, Halo
-#(Tag:armor)(Tag:enhancer)(Tag:tech)(Tech) Advanced power armour for superhumans, highly flexible without hindering mobility while enhancing physical capabilities and protecting against harm and terrain. It includes basic AI and HUD to manage features.
+#(Tag:armor)(Tag:enhancer)(Tag:tech) Advanced power armour for superhumans, highly flexible without hindering mobility while enhancing physical capabilities and protecting against harm and terrain. It includes basic AI and HUD to manage features.
 485. Ultimate Nullifier, 9.8, Marvel
-#(Tag:machine)(Tag:tech)(Tech) The Ultimate Weapon capable of destroying anything from small targets to universes and timelines, provided the user can wield it without perishing.
+#(Tag:machine)(Tag:tech) The Ultimate Weapon capable of destroying anything from small targets to universes and timelines, provided the user can wield it without perishing.
 486. The Infinity Gauntlet, 9.9, Marvel
 #(Tag:alter)(Tag:armor)(Tag:space)(Tag:spirit)(Tag:time)The Mad Titan's Infinity Gauntlet containing all Infinity Stones, letting the user wield their nigh-unlimited power as long as they can handle it. The perfected gauntlet withstands all Stones without issue.
 487. Chaos Card, 7.0, Binding of Isaac
@@ -989,13 +989,13 @@
 495. Ring of Suppression, 2.5, Generic
 #(Tag:accessory)(Tag:stealth)A smooth black nondescript ring that completely erases your energy signatures unless you are actively using abilities or spells.
 496. Neuralyzer, 3.8, Men in Black
-#(Tag:command)(Tag:mental)(Tag:tech)(Tag:tool)(Tech) The electro bio-mechanical neural transmitting zero synapse repositioner flashes targets to erase selected memories and leave them suggestible, with settings configurable on the device. Strong-willed or more powerful targets may resist.
+#(Tag:command)(Tag:mental)(Tag:tech)(Tag:tool) The electro bio-mechanical neural transmitting zero synapse repositioner flashes targets to erase selected memories and leave them suggestible, with settings configurable on the device. Strong-willed or more powerful targets may resist.
 497. Jarate Training Kit, 0.8, Team Fortress 2
 #(Tag:bio)(Tag:tool)"Comes with an infinite supply of kidney enlarging pills." A training manual for effectively utilizing piss in combat by training with kidney enlarging pills.
 498. 1 UP, 6.1, Mario
 #(Tag:consumable)(Tag:health-recovery)(Tag:life)A green, odd-looking mushroom that grants an extra life when consumed, instantly reviving the user at maximum health upon death.
 499. Portal Gun, 3.4, Portal
-#(Tag:movement)(Tag:space)(Tag:tech)(Tag:tool)(Tech) An Aperture Science Portal Gun firing blue and orange pulses that each open a person-sized portal where they land, linked to the opposite colour. Only one portal of each colour can exist at once.
+#(Tag:movement)(Tag:space)(Tag:tech)(Tag:tool) An Aperture Science Portal Gun firing blue and orange pulses that each open a person-sized portal where they land, linked to the opposite colour. Only one portal of each colour can exist at once.
 500. Gordon's Crowbar, 1.4, Half-Life
 #(Tag:anti-alien)(Tag:bludgeon)(Tag:weapon)Gordon Freeman's legendary crowbar, stained with innumerable aliens' blood. It deals conceptually more damage to all inhuman enemies.
 501. Stamin-Up, 1.8, Call of Duty
@@ -1045,17 +1045,17 @@
 523. Draupnir Spear, 4.6, God of War
 #(Tag:air)(Tag:air+)(Tag:polearm)(Tag:weapon)A spear forged for Kratos and imbued with the winds of all realms, worn as a ring that manifests up to 8 spears at once. Held spears project energy as wind and boost wind attribute, and summoned spears can be detonated into wind explosions at any time.
 524. Canto, 3.3, Cyberpunk 2077
-#(Tag:implant)(Tag:tech)(Tech) The Canto, a legendary mythic Cyberdeck implant functioning as a powerful brain-connected computer. Its sentient Super AI lets you interface with and easily hack even the toughest networks. Manifests as a ticket that installs itself when ripped.
+#(Tag:implant)(Tag:tech) The Canto, a legendary mythic Cyberdeck implant functioning as a powerful brain-connected computer. Its sentient Super AI lets you interface with and easily hack even the toughest networks. Manifests as a ticket that installs itself when ripped.
 525. Kano's Eye, 3.1, Mortal Kombat
-#(Tag:implant)(Tag:tech)(Tech) A high-tech cybernetic eye implant without the faceplate, switching between infrared, heat, electromagnetic, X-ray, and other vision modes. It fires variable-power condensed energy beams fueled by your energy reserves. Manifests as a ticket that perfectly implants itself in whoever rips it.
+#(Tag:implant)(Tag:tech) A high-tech cybernetic eye implant without the faceplate, switching between infrared, heat, electromagnetic, X-ray, and other vision modes. It fires variable-power condensed energy beams fueled by your energy reserves. Manifests as a ticket that perfectly implants itself in whoever rips it.
 526. Hsu's Cybernetic Heart, 4.5, Mortal Kombat
-#(Tag:defence+)(Tag:implant)(Tag:maximum-energy+)(Tag:stamina+)(Tag:strength+)(Tag:tech)(Tech) A high-tech cybernetic heart replacement granting superhuman physical abilities plus increased stamina and energy regeneration, weaker when your energy is lower. It can fire a chest death laser if left uncovered (implanted beneath muscle by default), charging extra reserves over time for the laser. Manifests as a ticket that perfectly implants itself in whoever rips it.
+#(Tag:defence+)(Tag:implant)(Tag:maximum-energy+)(Tag:stamina+)(Tag:strength+)(Tag:tech) A high-tech cybernetic heart replacement granting superhuman physical abilities plus increased stamina and energy regeneration, weaker when your energy is lower. It can fire a chest death laser if left uncovered (implanted beneath muscle by default), charging extra reserves over time for the laser. Manifests as a ticket that perfectly implants itself in whoever rips it.
 527. Classic Omnitrix, 5.8, Ben 10
-#(Tag:bound)(Tag:tech)(Tag:tool)(Tag:transformation)(Tech) The Classic Omnitrix, the first version released. This biologically-bound watch transforms the user into any of 10 aliens (possibly more with experimentation) for roughly 30 minutes before cooldown, and can capture DNA of contacted creatures to become them. Tampering requires at least Master Mechanics and Biology.
+#(Tag:bound)(Tag:tech)(Tag:tool)(Tag:transformation) The Classic Omnitrix, the first version released. This biologically-bound watch transforms the user into any of 10 aliens (possibly more with experimentation) for roughly 30 minutes before cooldown, and can capture DNA of contacted creatures to become them. Tampering requires at least Master Mechanics and Biology.
 528. Omnitrix, 9.3, Ben 10
-#(Tag:bound)(Tag:tech)(Tag:tool)(Tag:transformation)(Tech) The True Omnitrix, Azmuth's final version. It transforms the user into any of millions of stored aliens, from living gravity-manipulating planetoids to multiversal reality warpers.
+#(Tag:bound)(Tag:tech)(Tag:tool)(Tag:transformation) The True Omnitrix, Azmuth's final version. It transforms the user into any of millions of stored aliens, from living gravity-manipulating planetoids to multiversal reality warpers.
 529. Chaquetrix, 6.9, Ben 10
-#(Tag:bound)(Tag:summon)(Tag:tech)(Tag:tool)(Character) (Tech) A weird Omnitrix variant that creates and summons the selected alien as a breeding-compatible companion to help or "help" you. It holds only the original 10 but includes a lifeform analyser to eventually expand the roster.
+#(Tag:bound)(Tag:summon)(Tag:tech)(Tag:tool)(Character) A weird Omnitrix variant that creates and summons the selected alien as a breeding-compatible companion to help or "help" you. It holds only the original 10 but includes a lifeform analyser to eventually expand the roster.
 530. Divine Stone, 5.8, Arifureta
 #(Tag:consumable)(Tag:health-recovery)(Tag:resource)Despite its name, not of Divine Origin. This 10cm crystallised-energy crystal holds enchantments very well and melts over time into an Ambrosia with incredibly potent healing and curing properties.
 531. Falcon's Eye, 1.8, Xiaolin Showdown
@@ -1067,31 +1067,31 @@
 534. Guardian Shield, 2.5, God of War
 #(Tag:shield)An extremely durable bracelet unfolding into a supernaturally durable shield faster than a blink. It can also serve as a bludgeon.
 535. Shield Saw, 3.1, Doom
-#(Tag:blade)(Tag:shield)(Tag:weapon)(Tech) "You will never see a cooler shield" A high-tech chainsaw-shield hybrid that blocks extremely well and is incredibly durable. Its fast-spinning blades adjust trajectory mid-flight and return to the user when thrown.
+#(Tag:blade)(Tag:shield)(Tag:tech)(Tag:weapon) "You will never see a cooler shield" A high-tech chainsaw-shield hybrid that blocks extremely well and is incredibly durable. Its fast-spinning blades adjust trajectory mid-flight and return to the user when thrown.
 536. Feedbacker, 5.1, Ultrakill
-#(Tag:implant)(Tag:kinetic)(Tag:tech)(Tech) V1's disembodied arm as a prosthetic implant with tremendous strength and speed, able to punch bullets faster and parry energy blasts. It fuels itself by consuming the user's or others' blood, and can heal the user by stealing others' blood. Manifests as a ticket that installs the prosthetic when ripped.
+#(Tag:implant)(Tag:kinetic)(Tag:tech) V1's disembodied arm as a prosthetic implant with tremendous strength and speed, able to punch bullets faster and parry energy blasts. It fuels itself by consuming the user's or others' blood, and can heal the user by stealing others' blood. Manifests as a ticket that installs the prosthetic when ripped.
 537. Marksman Revolver, 4.8, Ultrakill
-#(Tag:gun)(Tag:kinetic)(Tag:tech)(Tech) An incredibly high-tech revolver outclassing anti-tank rounds, manifesting up to 4 throwable gold coins. Hitting a coin ricochets the bullet toward the closest hittable weak point, growing stronger with each chained coin. It fires high-velocity metal shards with extreme efficiency lasting days of shooting, replenishable by adding more metal.
+#(Tag:gun)(Tag:kinetic)(Tag:tech) An incredibly high-tech revolver outclassing anti-tank rounds, manifesting up to 4 throwable gold coins. Hitting a coin ricochets the bullet toward the closest hittable weak point, growing stronger with each chained coin. It fires high-velocity metal shards with extreme efficiency lasting days of shooting, replenishable by adding more metal.
 538. Dust Supply Crate, 5.1, RWBY
 #(Tag:production)(Tag:resource)A supply crate of refined high-quality Remnant dust for your own use, containing 5 kg of your chosen dust. Restock Timer: 120 hours.
 539. Crescent Rose, 2.2, RWBY
-#(Tag:gun)(Tag:polearm)(Tag:tech)(Tag:weapon)(Tech) An ungodly mechashift fusion of massive scythe and high-calibre sniper rifle, compactable and shiftable between rifle, war scythe, and other combat forms. Includes a magazine of chosen dust sniper rounds every 24 hours.
+#(Tag:gun)(Tag:polearm)(Tag:tech)(Tag:weapon) An ungodly mechashift fusion of massive scythe and high-calibre sniper rifle, compactable and shiftable between rifle, war scythe, and other combat forms. Includes a magazine of chosen dust sniper rounds every 24 hours.
 540. Myrtenaster, 2.9, RWBY
-#(Tag:blade)(Tag:gun)(Tag:tech)(Tag:weapon)(Tech) "Don't even try to spell it." A mechashift revolver rapier with 6 dust-round slots that cuts with flames, frost, and more depending on the activated cartridge. You get 6 dust rounds per day of your chosen type.
+#(Tag:blade)(Tag:gun)(Tag:tech)(Tag:weapon) "Don't even try to spell it." A mechashift revolver rapier with 6 dust-round slots that cuts with flames, frost, and more depending on the activated cartridge. You get 6 dust rounds per day of your chosen type.
 541. Sento, 4.9, Mortal Kombat
 #(Tag:blade)(Tag:perception+)(Tag:spirit)(Tag:summon)(Tag:weapon)Sento, an ancient blade of Kenshi's clan housing his ancestors' spirits, with exceptional durability and sharpness. Wielding grants enhanced senses and telekinetic sword control, and with enough spirit affinity, imbuing energy temporarily summons them to aid you.
 542. Light Cycle, 2.2, Tron 2.0
-#(Tag:light)(Tag:tech)(Tag:vehicle)(Tech) A high-tech sleek sci-fi bicycle that is extremely durable, fast, and cool. It never needs recharging or fuel.
+#(Tag:light)(Tag:tech)(Tag:vehicle) A high-tech sleek sci-fi bicycle that is extremely durable, fast, and cool. It never needs recharging or fuel.
 543. Robot Workbench, 4.6, Fallout
-#(Tag:machine)(Tag:production)(Tag:tech)(Tech) An advanced Robot Workbench recycling raw materials into parts to assemble or upgrade any configuration the original Workbench can produce. Appropriate materials are required.
+#(Tag:machine)(Tag:production)(Tag:tech) An advanced Robot Workbench recycling raw materials into parts to assemble or upgrade any configuration the original Workbench can produce. Appropriate materials are required.
 544. Robot Assembly, 5.6, Generic
-#(Tag:barracks)(Tag:building)(Tag:machine)(Tag:production)(Tag:tech)(Tech) An advanced room-sized station converting input raw materials into robot parts for assembly, limited to blueprints fed into it with Fallout Robots included by default. Part quality depends on input material quality.
+#(Tag:barracks)(Tag:building)(Tag:machine)(Tag:production)(Tag:tech) An advanced room-sized station converting input raw materials into robot parts for assembly, limited to blueprints fed into it with Fallout Robots included by default. Part quality depends on input material quality.
 545. Web Fluid & Shooters, 3.4, Spider-Man
-#(Tag:bio)(Tag:tech)(Tag:tool)(Tech) "Don't forget the hyphen!" A vial of patented web fluid and wrist-equippable webshooters, with one full vial granted every 24 hours.
+#(Tag:bio)(Tag:tech)(Tag:tool) "Don't forget the hyphen!" A vial of patented web fluid and wrist-equippable webshooters, with one full vial granted every 24 hours.
 546. Goblin Glider, 2.8, Spider-Man
-#(Tag:vehicle)(Tag:weapon)(Tech) A high-tech mind-controlled glider flying at great speeds with bladed weapon edges and some storage space. It refuels every 8 hours and slowly self-repairs unless completely damaged.
+#(Tag:tech)(Tag:vehicle)(Tag:weapon) A high-tech mind-controlled glider flying at great speeds with bladed weapon edges and some storage space. It refuels every 8 hours and slowly self-repairs unless completely damaged.
 547. Mechanical Tentacles, 3.1, Spider-Man
-#(Tag:implant)(Tag:tech)(Tech) A high-tech harness with 4 mechanical tentacle arms moved by thought or independently per commands. The arms have supernatural strength and task-dependent integrated tools.
+#(Tag:implant)(Tag:tech) A high-tech harness with 4 mechanical tentacle arms moved by thought or independently per commands. The arms have supernatural strength and task-dependent integrated tools.
 548. 2008 Menu #4 Cheese and Vegetable Omelette, 0.5, Generic
 #(Tag:consumable)(Tag:mundane)The infamous "Vomelette" MRE: unpalatable but edible and digestible food. Restock Timer: 10 minutes.
 549. Favour Cheque, 4.8, Generic
@@ -1109,13 +1109,13 @@
 555. Fairy Dust, 1.0, Peter Pan
 #(Tag:consumable)(Tag:fae)(Tag:movement)Fairy Dust freshly shaken from Tinker Bell. This pouch floats 5 grown people for 1 hour or one grown person for 5 hours. Restock Timer: 24 hours.
 556. Skippy, 1.7, Cyberpunk 2077
-#(Tag:gun)(Tag:tech)(Tech) Skippy, a Smart Handgun firing homing bullets with onboard AI that aims on the fly and distinguishes ally from enemy, while judging your actions. You get 5 magazines every 24 hours.
+#(Tag:gun)(Tag:tech) Skippy, a Smart Handgun firing homing bullets with onboard AI that aims on the fly and distinguishes ally from enemy, while judging your actions. You get 5 magazines every 24 hours.
 557. Herrera Outlaw, 1.0, Cyberpunk 2077
-#(Tag:tech)(Tag:vehicle)(Tech) The Herrera Outlaw, a stylish luxury limousine built for Night City with windows resisting anything below .50 calibre. Not the best car, but stylish wheels sure to impress.
+#(Tag:tech)(Tag:vehicle) The Herrera Outlaw, a stylish luxury limousine built for Night City with windows resisting anything below .50 calibre. Not the best car, but stylish wheels sure to impress.
 558. Regalia, 2.1, Final Fantasy
-#(Tag:tech)(Tag:vehicle)(Tech) This fully upgraded Regalia is a powerful, durable, self-driving, incredibly stylish supercar that converts into a flying vehicle. Fuel refills automatically every 8 hours.
+#(Tag:tech)(Tag:vehicle) This fully upgraded Regalia is a powerful, durable, self-driving, incredibly stylish supercar that converts into a flying vehicle. Fuel refills automatically every 8 hours.
 559. Zero Point Energy Gloves, 4.2, Incredibles
-#(Tag:kinetic)(Tag:tech)(Tag:tool)(Tech) High-tech gloves firing energy beams on point that immobilize on hit while letting you move victims as desired. Strong targets can resist or break free; the gloves draw on your energy reserves.
+#(Tag:kinetic)(Tag:tech)(Tag:tool) High-tech gloves firing energy beams on point that immobilize on hit while letting you move victims as desired. Strong targets can resist or break free; the gloves draw on your energy reserves.
 560. Demon-Slayer Blade, 5.7, Black Clover
 #(Tag:anti-magic)(Tag:blade)(Tag:infernal)(Tag:weapon)A large black blade dispelling any contacted magical spell or effect of Legendary rank or below. Its anti-magic energy fires black energy slashes or levitates the sword back to the user.
 561. The Slaughterhouse, 5.0, Generic
@@ -1135,13 +1135,13 @@
 568. Erza Fumo, 2.4, Fairy Tail
 #(Tag:fumo)(Tag:movement)An Erza Scarlet Fumo that instantly swaps your worn clothes with any owned clothing you picture when shaken violently, leaving the old clothes in their place.
 569. Lancelot Albion, 6.1, Code Geass
-#(Tag:armor)(Tag:draconic)(Tag:tech)(Tag:vehicle)(Tech) The Lancelot Albion, among the strongest, most advanced Britannian Knightmares. It carries reinforced armour, super high-speed energy-wing flight, slash harkens, advanced Factsphere detection, wing energy projectiles, Blaze Luminous energy shields, Super V.A.R.I.S. Rifle blasts or Hadron Cannon mode, and Maser Vibration Sword. Its Yggdrasil Drive refills every 24 hours, and it is nigh impossible for regular people to operate.
+#(Tag:armor)(Tag:draconic)(Tag:tech)(Tag:vehicle) The Lancelot Albion, among the strongest, most advanced Britannian Knightmares. It carries reinforced armour, super high-speed energy-wing flight, slash harkens, advanced Factsphere detection, wing energy projectiles, Blaze Luminous energy shields, Super V.A.R.I.S. Rifle blasts or Hadron Cannon mode, and Maser Vibration Sword. Its Yggdrasil Drive refills every 24 hours, and it is nigh impossible for regular people to operate.
 570. Gurenn Seiken, 6.3, Code Geass
-#(Tag:armor)(Tag:tech)(Tag:vehicle)(Tech) Gurenn, the strongest, most advanced Knightmare Frame: an incredibly mobile marvel of destruction with advanced armour, super high-speed energy-wing flight, slash harkens, and Radiant Wave Technology for offense and defense. It creates barriers that disintegrate or destroy projectiles and objects while blocking physically, and focuses into devastating blasts and close-range bursts. Radiation Wave ammo and Ygdrassil Drive Sakuradite replenish every 24 hours.
+#(Tag:armor)(Tag:tech)(Tag:vehicle) Gurenn, the strongest, most advanced Knightmare Frame: an incredibly mobile marvel of destruction with advanced armour, super high-speed energy-wing flight, slash harkens, and Radiant Wave Technology for offense and defense. It creates barriers that disintegrate or destroy projectiles and objects while blocking physically, and focuses into devastating blasts and close-range bursts. Radiation Wave ammo and Ygdrassil Drive Sakuradite replenish every 24 hours.
 571. Gawainn, 5.8, Code Geass
-#(Tag:armor)(Tag:tech)(Tag:vehicle)(Tech) Gawainn, a tall Experimental Knightmare perfected by the Black Knights for one or two pilots. It carries Reinforced Armour, Floatation flight systems, 10 finger-mounted slash harkens, and 2 shoulder-mounted devastating Hadron Cannons. Its Ygdrassil Drive replenishes every 24 hours.
+#(Tag:armor)(Tag:tech)(Tag:vehicle) Gawainn, a tall Experimental Knightmare perfected by the Black Knights for one or two pilots. It carries Reinforced Armour, Floatation flight systems, 10 finger-mounted slash harkens, and 2 shoulder-mounted devastating Hadron Cannons. Its Ygdrassil Drive replenishes every 24 hours.
 572. Sutherland, 3.0, Code Geass
-#(Tag:armor)(Tag:tech)(Tag:vehicle)(Tech) The Sutherland, the basic mass-produced Britannian Knightmare. It carries armour, mounted machine gun, landspinner propulsion, Factsphere sensor, two slash harkens, and basic Knightmare assault rifle. Its Ygdrassil Drive and weapon ammunition replenish every 24 hours.
+#(Tag:armor)(Tag:tech)(Tag:vehicle) The Sutherland, the basic mass-produced Britannian Knightmare. It carries armour, mounted machine gun, landspinner propulsion, Factsphere sensor, two slash harkens, and basic Knightmare assault rifle. Its Ygdrassil Drive and weapon ammunition replenish every 24 hours.
 573. Magic Reflecting Mirror, 4.8, Generic
 #(Tag:magic)(Tag:tool)An ornate golden hand mirror perfectly reversing any magical attack contacting its surface, instantly reversing its direction.
 574. Nazar, 3.4, Generic
@@ -1227,7 +1227,7 @@
 614. Escape Ticket, 1.6, Generic
 #(Tag:movement)(Tag:ticket)A ticket that when torn teleports the user to a 4x4x4m prison-like extradimensional bunker stocked with clean water and MREs for 8 hours. The user cannot leave early without spatial manipulation and can be tracked by those with spatial abilities; release is automatic after 8 hours.
 615. Gun Voucher, 1.6, Generic
-#(Tag:gun)(Tag:ticket)(Tech) A ticket redeemable by tearing and thinking of any commercially available gun sold in the USA in 2016. You also receive a magazine for the chosen weapon every 24 hours.
+#(Tag:gun)(Tag:tech)(Tag:ticket) A ticket redeemable by tearing and thinking of any commercially available gun sold in the USA in 2016. You also receive a magazine for the chosen weapon every 24 hours.
 616. Earring of Hearing, 1.7, Generic
 #(Tag:accessory)(Tag:perception+)A pair of clip-on earrings that boost the wearer's hearing and acuity to Barn Owl level.
 617. Hawk Glasses, 1.8, Generic
@@ -1253,7 +1253,7 @@
 627. Ferryman's Favor, 3.7, Generic
 #(Tag:spirit)(Tag:ticket)An IOU cheque proving Charon the Ferryman owes you a favor. Tearing it has Charon bring you any one dead soul from the world you tore it in, plus the largest part of their corpse, with soul and body in separate sealed containers.
 628. Sentry Turrets, 1.1, Portal
-#(Tag:gun)(Tag:machine)(Tag:tech)(Tech) A shipment of 9 Aperture Science Sentry Turrets with twin machine guns, cheap and reliable for keeping out intruders. Bullet reserves refill every 24 hours (bullets cannot be removed). Restock Timer: 168 hours.
+#(Tag:gun)(Tag:machine)(Tag:tech) A shipment of 9 Aperture Science Sentry Turrets with twin machine guns, cheap and reliable for keeping out intruders. Bullet reserves refill every 24 hours (bullets cannot be removed). Restock Timer: 168 hours.
 629. Barrel of Everflowing Oil, 1.9, Generic
 #(Tag:production)(Tag:resource)A standard black barrel containing infinite quality medium crude oil that flows at 10 gallons per minute when tipped. If damaged or forcefully modified, it loses this property.
 630. Job Application Form, 1.5, Generic
@@ -1307,7 +1307,7 @@
 654. Pharis' Bow, 1.8, Dark Souls
 #(Tag:bow)(Tag:weapon)The legendary archer Pharis' finely crafted powerful long-range bow, retaining essence that slightly aids aim. Comes with 30 standard arrows that restock every 24 hours.
 655. Glock, 0.7, Generic
-#(Tag:gun)(Tag:weapon)(Tech) The reliable, simple Glock 19 for most basic handgun needs. You get a magazine every 24 hours.
+#(Tag:gun)(Tag:tech)(Tag:weapon) The reliable, simple Glock 19 for most basic handgun needs. You get a magazine every 24 hours.
 656. Darkmoon Bow, 2.6, Dark Souls
 #(Tag:bow)(Tag:magic)(Tag:weapon)Gwyndolin's Darkmoon bow that empowers arrows with your magical energy plus moon energy, with greater effect on its special moonlight arrows. Comes with 24 arrows that restock every 48 hours.
 657. Silver Spoon, 1.3, Generic
@@ -1325,7 +1325,7 @@
 663. Holy Hand Grenade of Antioch, 1.8, Monty Python
 #(Tag:consumable)(Tag:holy)(Tag:weapon)A saint-blessed grenade with 1 kiloton of power that deals extra damage to unholy enemies. Restock Timer: 24 hours.
 664. Arc Reactor, 4.1, MCU
-#(Tag:machine)(Tag:tech)(Tech) Tony Stark's revolutionary Arc Reactor using a new element difficult even for tinkers to replicate. It runs indefinitely, providing over 5 gigajoules per second.
+#(Tag:machine)(Tag:tech) Tony Stark's revolutionary Arc Reactor using a new element difficult even for tinkers to replicate. It runs indefinitely, providing over 5 gigajoules per second.
 665. Vorpan, 1.6, Dead Cells
 #(Tag:bludgeon)(Tag:tool)(Tag:weapon)An unbreakable frying pan that doubles as a practical cooking utensil and hits slightly stronger than usual.
 666. Costume Wardrobe, 1.8, Generic
@@ -1337,15 +1337,15 @@
 669. Veil of Invisibility, 1.2, Generic
 #(Tag:accessory)(Tag:nsfw)(Tag:stealth)A cloak that turns the wearer invisible as long as it is their only clothing.
 670. Feline Attachment, 1.6, Generic
-#(Tag:accessory)(Tag:agility+)(Tag:nsfw)(Tag:reflex+)(Nsfw) A cat-tail buttplug that when worn increases reflexes, agility, balance, and acrobatics while reducing fall damage.
+#(Tag:accessory)(Tag:agility+)(Tag:nsfw)(Tag:reflex+) A cat-tail buttplug that when worn increases reflexes, agility, balance, and acrobatics while reducing fall damage.
 671. Bondage of Enduring, 1.1, Generic
-#(Tag:armor)(Tag:defence+)(Tag:nsfw)(Tag:stamina+)(Nsfw) Bondage ropes worn in place of clothes that boost durability and stamina regeneration and convert pain into pleasure.
+#(Tag:armor)(Tag:defence+)(Tag:nsfw)(Tag:stamina+) Bondage ropes worn in place of clothes that boost durability and stamina regeneration and convert pain into pleasure.
 672. Bunny's Blessings, 1.5, Generic
-#(Tag:accessory)(Tag:nsfw)(Tag:social)(Nsfw) A raunchy bunny-ears headband and bunny-tail buttplug set that slightly increases charm and appeal to others.
+#(Tag:accessory)(Tag:nsfw)(Tag:social) A raunchy bunny-ears headband and bunny-tail buttplug set that slightly increases charm and appeal to others.
 673. Prayer Beads, 1.6, Generic
-#(Tag:accessory)(Tag:holy+)(Tag:nsfw)(Nsfw) Silver devotional beads that boost Holy and faith-based abilities and connection to Holy beings while all beads are inside the anal cavity.
+#(Tag:accessory)(Tag:holy+)(Tag:nsfw) Silver devotional beads that boost Holy and faith-based abilities and connection to Holy beings while all beads are inside the anal cavity.
 674. Whip of Ecstasy, 2.3, Generic
-#(Tag:flexible)(Tag:nsfw)(Tag:weapon)(Nsfw) A supernaturally durable whip that deals only superficial harm, converting the rest of its normal damage into sexual pleasure.
+#(Tag:flexible)(Tag:nsfw)(Tag:weapon) A supernaturally durable whip that deals only superficial harm, converting the rest of its normal damage into sexual pleasure.
 675. Helltaker's Apron, 1.4, Helltaker
 #(Tag:accessory)(Tag:skill+)The Helltaker's black Satan-embroidered apron that speeds cooking improvement, especially pancakes.
 676. Second Skin, 2.1, Generic
@@ -1429,15 +1429,15 @@
 715. Ascalon, 9.6, Ben 10
 #(Tag:armor)(Tag:blade)(Tag:defence+)(Tag:enhancer)(Tag:mental-resistance+)(Tag:reality-manipulation)(Tag:weapon)Azmuth's Ascalon, one of the universe's greatest weapons, channeling reality's fundamental forces to create Cosmic-energy armor granting immense physical boost, defense, and mental immunity. It can cleave anything including realms, reality, and spacetime for teleportation, and project energy slashes. It can deflect, reflect, and cut energy itself, and drain the powers of opponents it stabs.
 716. Duffel of Hardware, 3.6, Generic
-#(Tag:machine)(Tag:production)(Tag:tech)(Tag:tool)(Tech) A simple backpack with unlimited average-hardware-store contents, retrieved by physically reaching in for a known item.
+#(Tag:machine)(Tag:production)(Tag:tech)(Tag:tool) A simple backpack with unlimited average-hardware-store contents, retrieved by physically reaching in for a known item.
 717. The Market Catalogue, 3.8, Generic
-#(Tag:production)(Tag:tech)(Tag:tool)(Tech) A catalogue ordering anything from any regularly accessible Base Earth store for instant delivery. Everything costs double, adjusted to your current world's economy.
+#(Tag:production)(Tag:tech)(Tag:tool) A catalogue ordering anything from any regularly accessible Base Earth store for instant delivery. Everything costs double, adjusted to your current world's economy.
 718. Surplus Stockpile, 2.9, Generic
-#(Tag:production)(Tag:resource)(Tag:tech)(Tech) A cardboard box of seemingly infinite mundane raw materials like wood, stone, ore, and rope, with only 50 kg removable every 24 hours. If lost or destroyed, you will stumble upon it intact when searching.
+#(Tag:production)(Tag:resource)(Tag:tech) A cardboard box of seemingly infinite mundane raw materials like wood, stone, ore, and rope, with only 50 kg removable every 24 hours. If lost or destroyed, you will stumble upon it intact when searching.
 719. Box of Scraps, 3.8, Generic
-#(Tag:machine)(Tag:production)(Tag:resource)(Tag:tech)(Tech) "If Tony Stark could make do with it, so can you" A box of unlimited scrapped Earth electronics the average Joe discarded, retrieved only by reaching in, no tipping.
+#(Tag:machine)(Tag:production)(Tag:resource)(Tag:tech) "If Tony Stark could make do with it, so can you" A box of unlimited scrapped Earth electronics the average Joe discarded, retrieved only by reaching in, no tipping.
 720. Scrapyard, 4.2, Generic
-#(Tag:building)(Tag:machine)(Tag:production)(Tag:resource)(Tag:tech)(Tech) A placeable 250 x 250 meter scrapyard that fills over time with scrap from Earth copies, from busted cars to discarded electronics, rarely an almost-intact military tank or a rotten bed.
+#(Tag:building)(Tag:machine)(Tag:production)(Tag:resource)(Tag:tech) A placeable 250 x 250 meter scrapyard that fills over time with scrap from Earth copies, from busted cars to discarded electronics, rarely an almost-intact military tank or a rotten bed.
 721. Peach Tree, 1.6, Chinese Myth
 #(Tag:holy)(Tag:nature)An apotropaic Peach Tree whose leaves, bark, wood, and fruit ward evil, curses, and demons, with wooden swords as effective as steel against ghosts or demons. Comes with multiple saplings.
 722. Thirty Dollars, 0.3, Generic
@@ -1477,7 +1477,7 @@
 739. Phone A Friend, 2.4, Generic
 #(Tag:tool)A simple one-use landline phone. Dial while picturing the face of someone whose name you know in your current universe and they receive a copy to answer with. Calls last at most 1 hour, after which the phone is erased from existence.
 740. Ejaculatte, 2.5, Generic
-#(Tag:consumable)(Tag:nsfw)(Nsfw)(Noncon) A strangely branded but normal-looking can of coffee that makes the drinker orgasm intensely and uncontrollably when drunk. Restock Timer: 8 hours.
+#(Tag:consumable)(Tag:nsfw)(Noncon) A strangely branded but normal-looking can of coffee that makes the drinker orgasm intensely and uncontrollably when drunk. Restock Timer: 8 hours.
 741. The Census, 6.8, Generic
 #(Tag:divination)(Tag:tool)A book listing name, address, occupation, and short bio of every named living sapient creature within a 1 million-kilometer range. It auto-sorts and filters by age, race, address, height, etc. per your specifications, and you can open directly to a being's page if you know their name and appearance.
 742. Extremely Loud Metal Pipe, 0.4, Generic
@@ -1513,7 +1513,7 @@
 757. Rubicante, 4.5, Akame ga Kill
 #(Tag:bound)(Tag:fire)(Tag:gun)(Tag:weapon)Dubbed "Purgatory's Invitation", Rubicante is a flamethrower Teigu with a large wearable canister. It fires extremely hot glue-like flames that melt metal and cannot be extinguished even by water, plus fireball projectiles or a near-nuclear self-destruct blast. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it.
 758. Pumpkin, 5.2, Akame ga Kill
-#(Tag:bound)(Tag:gun)(Tag:spirit)(Tag:tech)(Tag:weapon)(Tech) Dubbed "Roman Artillery", Pumpkin is a large gun Teigu that fires energy-beam projectiles using your energy reserves in sniper, rifle, and machine-gun modes. Output amplifies with your danger and emotional state. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it.
+#(Tag:bound)(Tag:gun)(Tag:spirit)(Tag:tech)(Tag:weapon) Dubbed "Roman Artillery", Pumpkin is a large gun Teigu that fires energy-beam projectiles using your energy reserves in sniper, rifle, and machine-gun modes. Output amplifies with your danger and emotional state. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it.
 759. Shambala, 5.1, Akame ga Kill
 #(Tag:accessory)(Tag:bound)(Tag:movement)(Tag:space)Dubbed "Dimensional Formation", Shambala is a pendant Teigu that teleports you and others over short and long distances via set sigils, but heavily strains stamina and usually needs time between uses. As this item is a Teigu, it is difficult to use and can only be used by people who are compatible with it. (A/N: Anime Exclusive Trump Card is not included).
 760. L'Arc Qui Ne Faut, 4.3, Akame ga Kill
@@ -1693,9 +1693,9 @@
 847. Heavenly Tribulation Ticket, 3.8, Generic
 #(Tag:electric)(Tag:holy)(Tag:ticket)"Pissing off the Heavens has never been easier." When ripped, it summons a Heavenly Tribulation of sky-aimed energized lightning equal to an Epic rank attack meant to kill you. Withstanding and tempering with it considerably improves physical abilities.
 848. Gravitational Beam Emitter, 5.9, Blame
-#(Tag:gravity)(Tag:gun)(Tag:tech)(Tag:weapon)(Tech) A super high-tech pistol-shaped device firing Condensed Graviton Energy Beams that rip through anything, with outputs from anti-personnel to anti-spacecraft. It draws energy from the user instead of ammo. Beware intense recoil.
+#(Tag:gravity)(Tag:gun)(Tag:tech)(Tag:weapon) A super high-tech pistol-shaped device firing Condensed Graviton Energy Beams that rip through anything, with outputs from anti-personnel to anti-spacecraft. It draws energy from the user instead of ammo. Beware intense recoil.
 849. The City, 9.6, Blame
-#(Tag:barracks)(Tag:growing)(Tag:machine)(Tag:production)(Tag:summon)(Tag:tech)(Tech) The City is a Dyson-sphere-origin megastructure of hyper-compressed defensive and computational layers, factories, cities, and terminals holding millions of impossibly advanced technologies and blueprints. Your key opens portals to any part and gives absolute command authority. For size it lives in a pocket universe but can open portals into your reality.
+#(Tag:barracks)(Tag:growing)(Tag:machine)(Tag:production)(Tag:summon)(Tag:tech) The City is a Dyson-sphere-origin megastructure of hyper-compressed defensive and computational layers, factories, cities, and terminals holding millions of impossibly advanced technologies and blueprints. Your key opens portals to any part and gives absolute command authority. For size it lives in a pocket universe but can open portals into your reality.
 850. Erdtree Seed, 4.2, Elden Ring
 #(Tag:curse-resistance+)(Tag:health-recovery)(Tag:nature)(Tag:poison-resistance+)A seed that sprouts a small ineffectual Erdtree, grown larger by supplying energy or ritually burying corpses beneath it. When strong enough it blesses those under its light, warding disease and curses, nourishing land, and boosting recovery and healing.
 851. Undo Stone, 3.5, Generic
@@ -2039,11 +2039,11 @@
 1020. Gambler's Transcendent Die, 9.3, Generic
 #(Tag:card)(Tag:meta)(Tree)(Meta:gamble:16)(Meta:gamble-twice) Unlocking this die lets you gamble 16 awarded tickets, and every gamble gets a second d20 roll whenever the first roll isn't a natural 20. Each roll uses the same table (20: tier up, 17-19: twin second core, 13-16: new ticket kind, 8-12: nothing, 2-7: tier down, 1: destroyed, no core and half points).
 1021. Morph Ball, 4.6, Metroid
-#(Tag:transformation)(Tech) Compress into an armored rolling sphere a third of your height, fast and nearly silent. Lay energy bombs, three active at a time, and boost-charge for a destructive burst of speed.
+#(Tag:tech)(Tag:transformation) Compress into an armored rolling sphere a third of your height, fast and nearly silent. Lay energy bombs, three active at a time, and boost-charge for a destructive burst of speed.
 1022. Varia Suit, 5.5, Metroid
-#(Tag:armor)(Tech) Powered exosuit with major damage reduction, full heat and cold immunity, and an arm cannon firing charged plasma bolts. Heavy, obvious, and hungry for energy cells.
+#(Tag:armor)(Tag:tech) Powered exosuit with major damage reduction, full heat and cold immunity, and an arm cannon firing charged plasma bolts. Heavy, obvious, and hungry for energy cells.
 1023. Gravity Suit, 5.7, Metroid
-#(Tag:armor)(Tag:gravity)(Tech) Upgraded powered exosuit that moves through liquid, lava, and crushing gravity as though they were air, with greater defense than lesser suits. Same appetite for energy cells.
+#(Tag:armor)(Tag:gravity)(Tag:tech) Upgraded powered exosuit that moves through liquid, lava, and crushing gravity as though they were air, with greater defense than lesser suits. Same appetite for energy cells.
 1024. Birthing Pod, 5.8, MTG
 #Feed this biomechanical pod a living creature or minion to dissolve it and birth a slightly stronger creature of a related kind. One hatching at a time; the pod hungers again within a day.
 1025. Mimic Vat, 5.5, MTG

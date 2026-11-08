@@ -307,7 +307,7 @@
 154. Lightning Form, 4.4, Generic
 #(Tag:electric)(Tag:movement)(Tag:transformation)Turn into a living bolt of lightning to travel extremely quickly while ignoring most conventional attacks. You are extremely vulnerable to grounding, which ejects and injures you.
 155. EMP, 3.1, MHA
-#(Tag:sound)(Tech)Allows the user to directionally unleash Electromagnetic Pulses to disable and damage technology and equipment that uses electricity.
+#(Tag:sound)(Tag:tech)Allows the user to directionally unleash Electromagnetic Pulses to disable and damage technology and equipment that uses electricity.
 156. Impulse, 2.0, Generic
 #(Tag:electric)(Tag:sense)Quicken your body's electrical signals to proportionally increase reflexes and speed. Overuse may cause nerve damage.
 157. Godspeed, 4.2, Hunter x Hunter
@@ -865,7 +865,7 @@
 433. Gold Manipulation, 3.2, Generic
 #(Tag:earth)(Tag:kinesis)Telekinetically control gold and gold-based constructs within your sensory range.
 434. Gearbox, 2.2, Generic
-#(Tag:tech)(Tech) Manipulate the output of machines you own, lowering output to preserve durability or pushing them to their very limits even without the means to do so.
+#(Tag:tech) Manipulate the output of machines you own, lowering output to preserve durability or pushing them to their very limits even without the means to do so.
 435. Mystic Eyes of Enchantment, 4.2, Generic
 #(Tag:command)(Tag:mental)(Tag:ocular)Hypnotise and mind-control those who make eye contact with you. High-willpower or stronger targets can break out.
 436. Conjure Vines, 3.6, Generic
@@ -991,7 +991,7 @@
 496. Record, 2.7, Generic
 #(Tag:mental)Trash Count - Records your sight into memory in perfect detail, recallable anytime as if constantly in mind, surpassing photographic memory.
 497. Arousal, 3.6, Generic
-#(Tag:alter)(Tag:nsfw)(Nsfw)(Noncon) Makes targets in your vision aroused, or climax with enough arousal. Stronger targets cost more energy, and far stronger ones notice your attempts.
+#(Tag:alter)(Tag:nsfw)(Noncon) Makes targets in your vision aroused, or climax with enough arousal. Stronger targets cost more energy, and far stronger ones notice your attempts.
 498. Audacity, 4.6, Generic
 #(Tag:mental)(Tag:stealth)Lets you go unnoticed as people ignore you to their utmost, allowing theft, break-ins, or kills without comment. Stronger targets resist more, noticing drastic acts; upkeep costs energy and stamina.
 499. Mind Reading, 4.5, Generic
@@ -1009,7 +1009,7 @@
 505. Phoenix Form, 6.7, Generic
 #(Tag:air)(Tag:avian)(Tag:fire)(Tag:life)(Tag:recovery)(Tag:transformation)Transforms into a Phoenix partially or fully. Grants enhanced physical stats, major fire affinity, incredible regeneration, and revival from death once every 30 days.
 506. Tinker - Redundant, 1.2, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Modifies existing technology in purposeless ways granting no tangible benefit, like yellowing a phone screen, adding useless car wheels, or fitting a car with a propeller too weak to lift it.
+#(Tag:tech)(Tag:tinker) Modifies existing technology in purposeless ways granting no tangible benefit, like yellowing a phone screen, adding useless car wheels, or fitting a car with a propeller too weak to lift it.
 507. Mirror Force, 5.0, Yugioh
 #(Tag:alter)(Tag:neutral)Reflects magical attacks back with a large forcefield.
 508. Disguise, 3.1, Generic
@@ -1199,7 +1199,7 @@
 600. Sea Snake Form, 5.8, Generic
 #(Tag:poison)(Tag:transformation)(Tag:water)Lets you transform into a sea snake or sea snake hybrid at will, greatly boosting physical abilities. Grants minor regeneration, water breathing and mobility, plus lethal poison breath.
 601. Tantric Healing, 3.3, Generic
-#(Tag:nsfw)(Tag:recovery)(Nsfw) Lets you heal ailments and negative status effects through sexual intimacy, including scars, old wounds, diseases, and mitigated curses. Greater intimacy and release increases effectiveness.
+#(Tag:nsfw)(Tag:recovery) Lets you heal ailments and negative status effects through sexual intimacy, including scars, old wounds, diseases, and mitigated curses. Greater intimacy and release increases effectiveness.
 602. Assembly, 4.3, Generic
 #(Tag:alter)Lets you automatically assemble accessible parts into any item you have built before or know how to make. Subpar materials produce lesser versions.
 603. Pearl Jam, 3.9, Generic
@@ -1319,7 +1319,7 @@
 660. Dark Orb, 2.8, Generic
 #(Tag:dark)Lets you conjure a dark-energy orb to hurl as a projectile.
 661. Network Access, 3.6, Generic
-#(Tech)Allows the user to access the internet and connected data networks through interfacing with them through electromagnetic waves that grant them access to the networks of the devces they can reach. While connected to the network, the user can navitage that network with their mind and retreive information from those resources easily. But that can prove to be very taxing on their mind.
+#(Tag:tech)Allows the user to access the internet and connected data networks through interfacing with them through electromagnetic waves that grant them access to the networks of the devces they can reach. While connected to the network, the user can navitage that network with their mind and retreive information from those resources easily. But that can prove to be very taxing on their mind.
 662. Frisk, 1.7, Generic
 #(Tag:divination)Lets you see a viewed target's full inventory, clothing, carried items, and a quick summary.
 663. Ripen, 1.2, Generic
@@ -1329,77 +1329,77 @@
 665. Tactile Telekinesis, 3.5, Generic
 #(Tag:kinesis)(Tag:kinetic)Lets you telekinetically manipulate objects you touch, such as crumpling a car. Less effective on stronger targets.
 666. Tinker - Bombs, 7.8, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build explosion-related technology and operate it, from simple explosives to time-freezing, glass-transmuting, or teleporting bombs, drawing on your abilities for inspiration.
+#(Tag:tech)(Tag:tinker) Lets you build explosion-related technology and operate it, from simple explosives to time-freezing, glass-transmuting, or teleporting bombs, drawing on your abilities for inspiration.
 667. Tinker - Efficiency, 4.5, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build efficiency-related technology and streamlined versions of existing tech.
+#(Tag:tech)(Tag:tinker) Lets you build efficiency-related technology and streamlined versions of existing tech.
 668. Tinker - Drones, 3.6, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build drone-related technology, such as surveillance, turret, or building drones.
+#(Tag:tech)(Tag:tinker) Lets you build drone-related technology, such as surveillance, turret, or building drones.
 669. Tinker - Blasto, 6.7, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Lets you build biology and minion-creation tech, including custom plants, drugs, clones, and homunculi from available materials. Can draw inspiration from your abilities and traits.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Lets you build biology and minion-creation tech, including custom plants, drugs, clones, and homunculi from available materials. Can draw inspiration from your abilities and traits.
 670. Tinker - Prosthetics, 3.2, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build prosthetic and limb-replacement tech like bionic arms, mecha legs, and weaponized arms with hidden guns and blades. Can draw inspiration from your abilities and traits.
+#(Tag:tech)(Tag:tinker) Lets you build prosthetic and limb-replacement tech like bionic arms, mecha legs, and weaponized arms with hidden guns and blades. Can draw inspiration from your abilities and traits.
 671. Tinker - Cryogenics, 4.4, Generic
-#(Tag:ice)(Tag:tech)(Tag:tinker)(Tech) Lets you build cryonics-related tech like stasis chambers, frost grenades, ice guns, and fridges. You'd make Doctor Freeze proud.
+#(Tag:ice)(Tag:tech)(Tag:tinker) Lets you build cryonics-related tech like stasis chambers, frost grenades, ice guns, and fridges. You'd make Doctor Freeze proud.
 672. Tinker - Pyrotechnics, 4.2, Generic
-#(Tag:fire)(Tag:tech)(Tag:tinker)(Tech) Lets you build pyrotechnics-related tech like flamethrowers, super napalm, and missiles. You'd make Firefly proud.
+#(Tag:fire)(Tag:tech)(Tag:tinker) Lets you build pyrotechnics-related tech like flamethrowers, super napalm, and missiles. You'd make Firefly proud.
 673. Tinker - Hacking, 3.5, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build hacking-related tech for hijacking and interfacing with other technology.
+#(Tag:tech)(Tag:tinker) Lets you build hacking-related tech for hijacking and interfacing with other technology.
 674. Tinker - Ai, 6.6, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build AI-related tech, from smart assistants and sentient companions to full Ultron.
+#(Tag:tech)(Tag:tinker) Lets you build AI-related tech, from smart assistants and sentient companions to full Ultron.
 675. Tinker - Bio, 7.8, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Lets you build biology-related tech for living organisms, including diseases, elixirs, clones, healing pods, and custom races.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Lets you build biology-related tech for living organisms, including diseases, elixirs, clones, healing pods, and custom races.
 676. Tinker - Vehicles, 4.2, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build vehicle and transportation tech, like laser-cannon cloaked cars or supersonic wave-immune ships. If it is a vehicle, you can build it.
+#(Tag:tech)(Tag:tinker) Lets you build vehicle and transportation tech, like laser-cannon cloaked cars or supersonic wave-immune ships. If it is a vehicle, you can build it.
 677. Tinker - Repair, 2.6, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build maintenance and repair tech. You can also spot flaws and fix almost any technology.
+#(Tag:tech)(Tag:tinker) Lets you build maintenance and repair tech. You can also spot flaws and fix almost any technology.
 678. Tinker - Travel, 5.8, Generic
-#(Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Lets you build transportation and travel tech like teleportation pods, hypersonic cars, and wingsuits. If it gets you from A to B, you can probably build it.
+#(Tag:movement)(Tag:tech)(Tag:tinker) Lets you build transportation and travel tech like teleportation pods, hypersonic cars, and wingsuits. If it gets you from A to B, you can probably build it.
 679. Tinker - Teleportation, 4.7, Generic
-#(Tag:movement)(Tag:space)(Tag:tech)(Tag:tinker)(Tech) Lets you build teleportation tech like telepads and teleportation pods.
+#(Tag:movement)(Tag:space)(Tag:tech)(Tag:tinker) Lets you build teleportation tech like telepads and teleportation pods.
 680. Tinker - Melee Weapons, 4.8, Generic
-#(Tag:martial)(Tag:tech)(Tag:tinker)(Tech) Lets you build melee-weapon tech like fire swords, vibration blades, and grenade hammers. If it is a non-magical melee weapon, you can probably build it.
+#(Tag:martial)(Tag:tech)(Tag:tinker) Lets you build melee-weapon tech like fire swords, vibration blades, and grenade hammers. If it is a non-magical melee weapon, you can probably build it.
 681. Tinker - Ranged Weapons, 5.6, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build ranged-weapon tech like laser cannons, revolvers, and missile batteries.
+#(Tag:tech)(Tag:tinker) Lets you build ranged-weapon tech like laser cannons, revolvers, and missile batteries.
 682. Tinker - Capture and Restraint, 4.3, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build capture and restraint tech such as power-suppressing cuffs, containment foam, and durable cells.
+#(Tag:tech)(Tag:tinker) Lets you build capture and restraint tech such as power-suppressing cuffs, containment foam, and durable cells.
 683. Tinker - Construction, 3.6, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build construction tech such as super cement, reinforced steel, and highly efficient schematics.
+#(Tag:tech)(Tag:tinker) Lets you build construction tech such as super cement, reinforced steel, and highly efficient schematics.
 684. Tinker - Cloaking, 4.1, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build cloaking tech like invisibility fields, anti-radars, and sound suppression.
+#(Tag:tech)(Tag:tinker) Lets you build cloaking tech like invisibility fields, anti-radars, and sound suppression.
 685. Tinker - Analysis, 4.6, Generic
-#(Tag:divination)(Tag:tinker)(Tech) Lets you build data-analysis tech like scouters, observation drones, and predictive programs.
+#(Tag:divination)(Tag:tech)(Tag:tinker) Lets you build data-analysis tech like scouters, observation drones, and predictive programs.
 686. Tinker - Mecha, 8.2, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build giant mechs like Evangelion, Code Geass, or Gundam.
+#(Tag:tech)(Tag:tinker) Lets you build giant mechs like Evangelion, Code Geass, or Gundam.
 687. Tinker - Cyberpunk 2077, 5.4, Cyberpunk 2077
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build technology from the Cyberpunk 2077 universe.
+#(Tag:tech)(Tag:tinker) Lets you build technology from the Cyberpunk 2077 universe.
 688. Tinker - Metal Gear, 7.3, Metal Gear
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build technology from the Metal Gear universe.
+#(Tag:tech)(Tag:tinker) Lets you build technology from the Metal Gear universe.
 689. Tinker - Androids, 5.2, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build android and artificial-lifeform construction tech.
+#(Tag:tech)(Tag:tinker) Lets you build android and artificial-lifeform construction tech.
 690. Tinker - RWBY, 6.2, RWBY
-#(Tag:tech)(Tag:tinker)(Tech) Lets you build technology from the RWBY Universe, including Dust synthesis.
+#(Tag:tech)(Tag:tinker) Lets you build technology from the RWBY Universe, including Dust synthesis.
 691. Tinker - Code Geass, 6.5, Code Geass
-#(Tag:tech)(Tag:tinker)(Tech) Build technological constructs or contraptions from the Code Geass universe.
+#(Tag:tech)(Tag:tinker) Build technological constructs or contraptions from the Code Geass universe.
 692. Tinker - Computers, 4.2, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Build tech related to personal computers, such as small supercomputers, etc.
+#(Tag:tech)(Tag:tinker) Build tech related to personal computers, such as small supercomputers, etc.
 693. Tinker - Games, 2.3, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Build tech related to games or entertainment programs. You are over 100x more efficient than an average experienced full dev team at making them.
+#(Tag:tech)(Tag:tinker) Build tech related to games or entertainment programs. You are over 100x more efficient than an average experienced full dev team at making them.
 694. Tinker - Dreadon, 8.3, Calamity Mod
-#(Tag:tech)(Tag:tinker)(Tech) Build tech emulating Dreadon from Calamity Mod, harnessing practically any energy. Includes hyper light chainsaws, black hole bombs, cosmic-energy godslaying mechs, a godslaying sword of damned souls, and an instant universe-range sniper; limits are creativity, resources, and time.
+#(Tag:tech)(Tag:tinker) Build tech emulating Dreadon from Calamity Mod, harnessing practically any energy. Includes hyper light chainsaws, black hole bombs, cosmic-energy godslaying mechs, a godslaying sword of damned souls, and an instant universe-range sniper; limits are creativity, resources, and time.
 695. Tinker - Sensors, 4.8, Generic
-#(Tag:sense)(Tag:tech)(Tag:tinker)(Tech) Build tech related to sensors, sensing, and tracking like radars, sonars, magic sensors, trackers, etc.
+#(Tag:sense)(Tag:tech)(Tag:tinker) Build tech related to sensors, sensing, and tracking like radars, sonars, magic sensors, trackers, etc.
 696. Tinker - Star Wars, 6.0, Star Wars
-#(Tag:tech)(Tag:tinker)(Tech) Build technological constructs or contraptions from the Star Wars universe, including Kyber Crystal synthesis.
+#(Tag:tech)(Tag:tinker) Build technological constructs or contraptions from the Star Wars universe, including Kyber Crystal synthesis.
 697. Tinker - Defense, 4.8, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Build tech related to defense or securement, like barrier projectors, reinforced chassis, turrets, etc.
+#(Tag:tech)(Tag:tinker) Build tech related to defense or securement, like barrier projectors, reinforced chassis, turrets, etc.
 698. Tinker - Armor, 5.8, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Build armored suits or power armor such as Iron Man Suit or Fallout Power Armor. Any powered suit up to 5x your size; larger counts as a mech.
+#(Tag:tech)(Tag:tinker) Build armored suits or power armor such as Iron Man Suit or Fallout Power Armor. Any powered suit up to 5x your size; larger counts as a mech.
 699. Tinker - Fallout, 5.3, Fallout
-#(Tag:tech)(Tag:tinker)(Tech) Build constructs from the Fallout universe, such as Fusion Batteries, Chems, Power Armor, Stealth Boys, etc. Excludes Big MT Technology.
+#(Tag:tech)(Tag:tinker) Build constructs from the Fallout universe, such as Fusion Batteries, Chems, Power Armor, Stealth Boys, etc. Excludes Big MT Technology.
 700. Toggle, 2.5, Generic
 #(Tag:alter)(Tag:meta)Toggle objects or targets on and off; does not work on living beings. Applies to radios and even your own abilities.
 701. Technopathy, 4.8, Generic
-#(Tag:mental)(Tag:tech)(Tech) "Talk to the power" to communicate with and command machines with code or interfaces. Resistance equals firewall strength.
+#(Tag:mental)(Tag:tech) "Talk to the power" to communicate with and command machines with code or interfaces. Resistance equals firewall strength.
 702. Dark Hand, 3.7, Dark Souls
 #(Tag:dark)(Tag:infernal)(Tag:martial)(Tag:recovery)(Tag:spirit)Drain lifeforce from grabbed people into yourself if they cannot resist. You can also coat your hand for extra damage or spread it as a medium-sized shield.
 703. Polymerization, 4.3, Generic
@@ -1745,7 +1745,7 @@
 876. Frozen Soul, 4.1, Generic
 #(Tag:enhancer)(Tag:ice)(Tag:mental)(Tag:spirit)Freezes your soul, dulling emotions while boosting defense and cryokinetic potency at the cost of speed and offense. The colder you grow, the tougher and more frigid you become.
 877. Certainty of Steel, 5.7, Generic
-#(Tag:bio)(Tag:tech)(Tag:transformation)(Tech) Lets you transform your body into any technology you understand, such as nanofiber muscles, weaponized prosthetics, or scanner eyes. Training can negate mass differences.
+#(Tag:bio)(Tag:tech)(Tag:transformation) Lets you transform your body into any technology you understand, such as nanofiber muscles, weaponized prosthetics, or scanner eyes. Training can negate mass differences.
 878. Invulnerable, 9.8, Generic
 #(Tag:alter)Makes you invulnerable to anything below reality manipulation while you wish to be unharmed, even surviving multiverse collapse unscathed.
 879. Immortal, 9.7, Generic
@@ -1799,7 +1799,7 @@
 903. Greater Material Absorption, 5.9, Ben 10/Marvel
 #(Tag:transformation)Lets you absorb a touched material to coat or transform your body and gain its properties, including esoteric ones like vibranium. You can also shape your body into weapons and create more of the material with energy.
 904. Galvanic Mechamorph Form, 5.7, Ben 10
-#(Tag:tech)(Tag:transformation)(Tech) Lets you transform into a Galvanic Mechamorph that fuses with and upgrades technology proportional to your power.
+#(Tag:tech)(Tag:transformation) Lets you transform into a Galvanic Mechamorph that fuses with and upgrades technology proportional to your power.
 905. Greater Throw, 3.6, Generic
 #(Tag:kinetic)(Tag:martial)Lets you imbue thrown objects with speed proportional to energy spent, reaching Mach speeds with enough energy.
 906. Launch, 4.8, Generic
@@ -1867,7 +1867,7 @@
 937. Rise Again, 5.5, Generic
 #(Tag:necro)(Tag:passive)(Tag:recovery)Nothing keeps you down. While in your active slot, at the moment of death you revive 10 seconds later with health and energy restored to 50%. 7 day cooldown.
 938. Tinker - The Baker, 9.9, Cookie Clicker
-#(Tag:tech)(Tag:tinker)(Tech) You can build the technology of THE BAKERY. With enough time and resources, you can make assembly lines that compress universes into little balls for bowling, then turn every atom inside them into cookies for shipment across the multiverse.
+#(Tag:tech)(Tag:tinker) You can build the technology of THE BAKERY. With enough time and resources, you can make assembly lines that compress universes into little balls for bowling, then turn every atom inside them into cookies for shipment across the multiverse.
 939. Militia, 5.2, Worm
 #(Tag:martial)(Tag:summon)(Tag:tech)You can summon a projection of any mundane weapon into your hands. It must not be tinkertech, must not exceed your current world's technology, and must not surpass Elite rank in power. You also control its ammunition, such as a beanbag shotgun, nuclear bomb launcher, automatic rifle, sword, or crossbow.
 940. Light Step, 3.2, Generic
@@ -2057,13 +2057,13 @@
 1032. Sticky Icky, 0.4, Generic
 #(Tag:alter)Your skin is uncomfortably sticky to others, as if soaked in glue or soda, though you feel no difference.
 1033. Tinker - Erotics, 2.6, Generic
-#(Tag:nsfw)(Tag:tech)(Tag:tinker)(Tech)(Noncon) Tinker - Allows you to build technological constructs or items related to sexual events, such as aphrodisiacs, sexual instruments, contraceptives, etc.
+#(Tag:nsfw)(Tag:tech)(Tag:tinker)(Noncon) Tinker - Allows you to build technological constructs or items related to sexual events, such as aphrodisiacs, sexual instruments, contraceptives, etc.
 1034. Shrine, 6.1, Jujutsu Kaisen
 #(Tag:fire)(Tag:kinetic)The Cursed Technique of the King of Curses. Shrine grants Cleave, Dismantle, and Furnace. Dismantle sends flying invisible slashes of varying power, Cleave creates stronger instant slashes on touched targets, and Furnace manifests a powerful fire arrow. With enough mastery or enlightenment, you may unleash the Malevolent Shrine.
 1035. Imagine Breaker, 6.5, Toaru
 #(Tag:alter)The Illusion Killer, Imagine Breaker is the ultimate negation tool. It can negate anything supernatural that could not exist on base Earth. It dwells in your right hand, but also negates your own supernatural capabilities like abilities and magic while active (Note: This is only the base Imagine Breaker and does not contain the beings sealed inside).
 1036. Sex Manipulation, 1.0, Generic
-#(Tag:nsfw)(Tag:transformation)(Nsfw) Allows you to alter your genitals to your liking as long as the changes aren't absurd.
+#(Tag:nsfw)(Tag:transformation) Allows you to alter your genitals to your liking as long as the changes aren't absurd.
 1037. Genderswap, 1.8, Generic
 #(Tag:transformation)Allows you to swap your gender and the genders of those who don't or can't resist. Swapped forms usually take a shape you find attractive, partial swaps are possible, and changes can include mental as well as physical aspects.
 1038. Deception, 3.1, Generic
@@ -2075,7 +2075,7 @@
 1041. Elemental Sublimation, 5.2, Generic
 #(Tag:air)(Tag:earth)(Tag:electric)(Tag:fire)(Tag:ice)(Tag:movement)(Tag:transformation)(Tag:water)Allows you to turn your body into any basic element while retaining control, such as fire to burn, lightning to travel cables, or wind to fly. Damage to destroyed mass in elemental form reflects back to you.
 1042. Video Travel, 4.6, Generic
-#(Tag:movement)(Tag:tech)(Tech) Video Travel allows you to slip into device screens and travel to other screened devices on the same network or wired together.
+#(Tag:movement)(Tag:tech) Video Travel allows you to slip into device screens and travel to other screened devices on the same network or wired together.
 1043. Luck Drain, 5.2, Generic
 #(Tag:alter)Allows you to drain others' luck by touch and add it to your own temporarily. More energy and longer contact steals more luck with exponentially scaling cost, and stolen luck fades over time, returning to its target.
 1044. Jinx, 3.0, Generic
@@ -2089,29 +2089,29 @@
 1048. United We Stand, 4.6, Yugioh
 #(Tag:enhancer)(Tag:meta)While United We Stand is active, you can select a familiar and add all its physical stats to your own. For each unused ability slot, you can draw strength from another familiar.
 1049. Tinker - Minimisation, 3.7, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build miniaturized versions of existing technology without losing quality and with reduced energy use, provided you already know how to build it.
+#(Tag:tech)(Tag:tinker) Allows you to build miniaturized versions of existing technology without losing quality and with reduced energy use, provided you already know how to build it.
 1050. Tinker - Macro, 4.1, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build scaled-up versions of existing technologies, such as hundred-meter warplanes, human-sized-shell cannons, or giant microwave death chambers.
+#(Tag:tech)(Tag:tinker) Allows you to build scaled-up versions of existing technologies, such as hundred-meter warplanes, human-sized-shell cannons, or giant microwave death chambers.
 1051. Tinker - Ecology, 3.2, Generic
-#(Tag:nature)(Tag:tech)(Tag:tinker)(Tech) Allows you to build nature-related contraptions that utilize, help, and benefit from it, such as Bio-Domes, efficient fertilizers, animal lures, solar panels, geothermal reactors, and terraforming equipment.
+#(Tag:nature)(Tag:tech)(Tag:tinker) Allows you to build nature-related contraptions that utilize, help, and benefit from it, such as Bio-Domes, efficient fertilizers, animal lures, solar panels, geothermal reactors, and terraforming equipment.
 1052. Tinker - Energy, 6.0, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build energy production and use contraptions, such as hyper-efficient solar panels and wind farms, microfusion, bio, hydro, and arc reactors.
+#(Tag:tech)(Tag:tinker) Allows you to build energy production and use contraptions, such as hyper-efficient solar panels and wind farms, microfusion, bio, hydro, and arc reactors.
 1053. Tinker - Industrialisation, 3.7, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build industrialisation contraptions like factories, efficient production lines, autonomous drone workers, and assembly lines to build things for you at larger scale.
+#(Tag:tech)(Tag:tinker) Allows you to build industrialisation contraptions like factories, efficient production lines, autonomous drone workers, and assembly lines to build things for you at larger scale.
 1054. Tinker - Augments, 4.5, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-augmenting contraptions like subdermal armour, biomonitors, hormone regulators, metal-bonded bone, and reinforced tendons and muscles.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build biology-augmenting contraptions like subdermal armour, biomonitors, hormone regulators, metal-bonded bone, and reinforced tendons and muscles.
 1055. Tinker - Nanomachines, 6.1, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build nanotechnology contraptions like cell-altering nanobots, trauma-hardening nanomachines, machine-disrupting nanobots, nanocameras, and nanomachine clothes.
+#(Tag:tech)(Tag:tinker) Allows you to build nanotechnology contraptions like cell-altering nanobots, trauma-hardening nanomachines, machine-disrupting nanobots, nanocameras, and nanomachine clothes.
 1056. Tinker - Dimensions, 8.2, Generic
-#(Tag:movement)(Tag:space)(Tag:tech)(Tag:tinker)(Tech) Allows you to build dimension-manipulating contraptions like pocket dimension generators, teleportation sealers, dimensional rams, interdimensional portals, unbreakable spatial barriers, and drawing energy from parallel dimensions.
+#(Tag:movement)(Tag:space)(Tag:tech)(Tag:tinker) Allows you to build dimension-manipulating contraptions like pocket dimension generators, teleportation sealers, dimensional rams, interdimensional portals, unbreakable spatial barriers, and drawing energy from parallel dimensions.
 1057. Tinker - Medicine, 5.7, Generic
-#(Tag:bio)(Tag:healing)(Tag:poison)(Tag:tech)(Tag:tinker)(Tech) Allows you to build medicine-related contraptions and production, such as poison-curing, health-bolstering, and other medicinal cures.
+#(Tag:bio)(Tag:healing)(Tag:poison)(Tag:tech)(Tag:tinker) Allows you to build medicine-related contraptions and production, such as poison-curing, health-bolstering, and other medicinal cures.
 1058. Tinker - Destruction, 8.0, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build destruction-related contraptions like Unstable Matter Rockets, Disintegration Cannons, Black Hole Generators, and general Doomsday Devices, generally inspired by your abilities and traits.
+#(Tag:tech)(Tag:tinker) Allows you to build destruction-related contraptions like Unstable Matter Rockets, Disintegration Cannons, Black Hole Generators, and general Doomsday Devices, generally inspired by your abilities and traits.
 1059. Tinker - Mind, 6.8, Generic
-#(Tag:command)(Tag:mental)(Tag:tech)(Tag:tinker)(Tech) Allows you to build mind-influencing and controlling contraptions like suggestion music, neuralyzers, mind control helmets, and mental reprogramming machines.
+#(Tag:command)(Tag:mental)(Tag:tech)(Tag:tinker) Allows you to build mind-influencing and controlling contraptions like suggestion music, neuralyzers, mind control helmets, and mental reprogramming machines.
 1060. Tinker - Time, 7.9, Generic
-#(Tag:tech)(Tag:time)(Tag:tinker)(Tech) Allows you to build time-related contraptions like aging grenades, time-dilated training rooms, time-stoppers, stasis barriers, and time-dilation FTL drives. This speciality is very expensive.
+#(Tag:tech)(Tag:time)(Tag:tinker) Allows you to build time-related contraptions like aging grenades, time-dilated training rooms, time-stoppers, stasis barriers, and time-dilation FTL drives. This speciality is very expensive.
 1061. Aid, 1.3, Generic
 #(Tag:recovery)You can heal yourself and others by expending energy, but only slightly, such as scratches, scrapes, and bruises. Effectiveness depends on your power difference to the target.
 1062. Minor Cure, 2.4, Generic
@@ -2131,17 +2131,17 @@
 1069. Greedy Healing, 5.5, Generic
 #(Tag:recovery)"Restoration, but at what cost?" Greedy Healing consumes wealth you own instead of mana, with more wealth yielding more potent restoration. A dollar barely recovers a chipped nail, while enough wealth can restore limbs or possibly a life; stronger targets and larger effects need more sacrifice of coins, artefacts, items, or even people (Infinite Money Glitch invalid).
 1070. Tinker - Gravity, 3.5, Generic
-#(Tag:gravity)(Tag:tech)(Tag:tinker)(Tech) Allows you to build gravity-manipulation technology like anti-gravity thrusters, Zero-G fields, gravity anchors, and weight training rooms. At this low rank, don't expect black hole projectors or gravitron crushers.
+#(Tag:gravity)(Tag:tech)(Tag:tinker) Allows you to build gravity-manipulation technology like anti-gravity thrusters, Zero-G fields, gravity anchors, and weight training rooms. At this low rank, don't expect black hole projectors or gravitron crushers.
 1071. The Tinkerer, 9.4, Worm
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build Entity technology such as Doomsday Drivers, Multiversal Travel, Time Bombs, and any Tinker specialisation from their universe.
+#(Tag:tech)(Tag:tinker) Allows you to build Entity technology such as Doomsday Drivers, Multiversal Travel, Time Bombs, and any Tinker specialisation from their universe.
 1072. Tinker - One Punch Man, 7.7, One Punch Man
-#(Tag:deleted)(Tag:kinetic)(Tech) Allows you to build and replicate Metal Knight's technology like mass-produced weapons, Drone Bodies, giant mechs, and large-scale drones, including Dragon Class Mechs with enough time.
+#(Tag:deleted)(Tag:kinetic)(Tag:tech) Allows you to build and replicate Metal Knight's technology like mass-produced weapons, Drone Bodies, giant mechs, and large-scale drones, including Dragon Class Mechs with enough time.
 1073. Tinker - Scraps, 3.0, Generic
-#(Tag:tech)(Tag:tinker)(Tech) - Allows you to build far more functional technology from scraps and easily jury-rig existing tech from subpar materials.
+#(Tag:tech)(Tag:tinker) - Allows you to build far more functional technology from scraps and easily jury-rig existing tech from subpar materials.
 1074. Tinker - Big MT, 6.7, Fallout
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build Big Mountain Think Tank technologies including teleporters, modified monsters, pacification fields, sonic weaponry, and lobotomites.
+#(Tag:tech)(Tag:tinker) Allows you to build Big Mountain Think Tank technologies including teleporters, modified monsters, pacification fields, sonic weaponry, and lobotomites.
 1075. Tinker - Kuseno, 7.2, One Punch Man
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build from Dr. Kuseno's knowledge base, including immensely powerful cyborg bodies scaling from city-block to continent-buster with enough time, testing, and resources.
+#(Tag:tech)(Tag:tinker) Allows you to build from Dr. Kuseno's knowledge base, including immensely powerful cyborg bodies scaling from city-block to continent-buster with enough time, testing, and resources.
 1076. Armageddon Blade, 7.2, Generic
 #(Tag:fire)(Tag:martial)The All Incinerating Armageddon Blade allows you to conjure a blade of destructive flame and heat that massively amplifies Pyro effects and cuts almost anything. Its Flames of Armageddon embody oblivion, erasing existence instead of leaving ash, growing stronger with you, and unleashable as a sword beam for enough energy.
 1077. Frozen Dawn, 7.1, Generic
@@ -2153,15 +2153,15 @@
 1080. Garm Form, 6.7, God of War
 #(Tag:enhancer)You are capable of transforming into Garm or a Hybrid at will, the Hound of Hel. While transformed, You possess immense physical abilities and a terrifying presence. In addition, your teeth and claws can tear apart anything, even the fabric of dimensions, allowing you to chew portals into existence and break dimensional boundaries.
 1081. Ghost Ammunition, 2.7, Generic
-#(Tag:spirit)(Tag:tech)(Tech) Allows you to conjure ghost ammunition for your weapons that mimics normal ammo but costs energy and disappears 1 second after hitting.
+#(Tag:spirit)(Tag:tech) Allows you to conjure ghost ammunition for your weapons that mimics normal ammo but costs energy and disappears 1 second after hitting.
 1082. Spectre Ammo, 3.5, Generic
-#(Tag:spirit)(Tag:tech)(Tech) Allows you to conjure spectre ammunition from energy for held weapons, mimicking normal ammo. You can imbue them for more power and combine them with other abilities for special properties.
+#(Tag:spirit)(Tag:tech) Allows you to conjure spectre ammunition from energy for held weapons, mimicking normal ammo. You can imbue them for more power and combine them with other abilities for special properties.
 1083. Tinker - Gel, 5.7, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build gel-related technology like super lubricant, impact absorption gel, hardening gel, restraint gel, fire retardant gel, and gel bombs.
+#(Tag:tech)(Tag:tinker) Allows you to build gel-related technology like super lubricant, impact absorption gel, hardening gel, restraint gel, fire retardant gel, and gel bombs.
 1084. Tinker - Crystals, 6.5, Generic
-#(Tag:earth)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Crystal-related technology like preservation crystals, self-repairing plates, high-capacity energy storage, and eventually crystal transmutation.
+#(Tag:earth)(Tag:tech)(Tag:tinker) Allows you to build Crystal-related technology like preservation crystals, self-repairing plates, high-capacity energy storage, and eventually crystal transmutation.
 1085. Tinker - Metallurgy, 4.9, Generic
-#(Tag:earth)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Metal and Alloy-related technology like metal fabricators, wondrous alloys from mundane metals, superconductors, impossible-property metals, and metal arms and armour.
+#(Tag:earth)(Tag:tech)(Tag:tinker) Allows you to build Metal and Alloy-related technology like metal fabricators, wondrous alloys from mundane metals, superconductors, impossible-property metals, and metal arms and armour.
 1086. Dampener, 3.2, Generic
 #(Tag:alter)(Tag:meta)You can weaken effects and abilities by contact. Weaker abilities and longer contact increase weakening until fully disabled.
 1087. Shut Off, 4.7, Generic
@@ -2169,81 +2169,81 @@
 1088. Power Oppression, 5.2, Generic
 #(Tag:enhancer)You can release a power-dampening aura around yourself. Effectiveness depends on your power difference to the target; weak targets are fully suppressed while strong targets resist.
 1089. Tinker - Vehicles (I), 1.7, Generic
-#(Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Makes you supernaturally good at designing, modifying, and building Vehicles, producing engineering marvels that cannot exceed your current world's level.
+#(Tag:movement)(Tag:tech)(Tag:tinker) Makes you supernaturally good at designing, modifying, and building Vehicles, producing engineering marvels that cannot exceed your current world's level.
 1090. Tinker - Vehicles (II), 2.6, Generic
-#(Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Allows you to build vehicle-related technology like a tank-armoured sports car, all-terrain including air motorcycle, or hard-light-track train. But no Killdozers yet.
+#(Tag:movement)(Tag:tech)(Tag:tinker) Allows you to build vehicle-related technology like a tank-armoured sports car, all-terrain including air motorcycle, or hard-light-track train. But no Killdozers yet.
 1091. Tinker - Vehicles (IV), 6.7, Generic
-#(Tag:movement)(Tag:tech)(Tag:tinker)(Tech) Allows you to build vehicle-related technology like space vessels, supersonic flying cars, weapons, hard-light shields, and borrowing ideas from weak minor tinker abilities.
+#(Tag:movement)(Tag:tech)(Tag:tinker) Allows you to build vehicle-related technology like space vessels, supersonic flying cars, weapons, hard-light shields, and borrowing ideas from weak minor tinker abilities.
 1092. Tinker Vehicles (V), 8.3, Generic
-#(Tag:movement)(Tag:tech)(Tag:tinker)(Tech) No vehicle overkill enough. Allows you to build any vehicle, from FTL starships and warp-drive motorcycles to goliath doomships, star-landing craft, or a dapper car.
+#(Tag:movement)(Tag:tech)(Tag:tinker) No vehicle overkill enough. Allows you to build any vehicle, from FTL starships and warp-drive motorcycles to goliath doomships, star-landing craft, or a dapper car.
 1093. Tinker - Bio (I), 3.4, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Makes you supernaturally good at designing, modifying, and building biological constructs. At this level, you can crossbreed and modify plants and create simple biology items like biomonitors.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Makes you supernaturally good at designing, modifying, and building biological constructs. At this level, you can crossbreed and modify plants and create simple biology items like biomonitors.
 1094. Tinker - Bio (II), 5.1, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-altering technology like operating tables, shock-absorbent dense bones, regeneration-granting artificial hearts, seamless replacement limbs, and homunculi.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build biology-altering technology like operating tables, shock-absorbent dense bones, regeneration-granting artificial hearts, seamless replacement limbs, and homunculi.
 1095. Tinker - Bio (III), 6.4, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-related constructs like homunculi vats, full biological overhauls, genetic alteration, scratch-built beings, and potent viruses.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build biology-related constructs like homunculi vats, full biological overhauls, genetic alteration, scratch-built beings, and potent viruses.
 1096. Tinker - Bio (IV), 7.8, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-related constructs like Cloning Vats, biological powers, cracking inherited-power genetics, full genetic overhauls, and sentient assimilating viruses.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build biology-related constructs like Cloning Vats, biological powers, cracking inherited-power genetics, full genetic overhauls, and sentient assimilating viruses.
 1097. Tinker - Bio (V), 8.3, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build biology-related constructs like decoding and granting scanned genetics-based abilities, scratch-building powerful creatures, and fabricating and assimilating Legendary rank and below biology abilities.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build biology-related constructs like decoding and granting scanned genetics-based abilities, scratch-building powerful creatures, and fabricating and assimilating Legendary rank and below biology abilities.
 1098. Tinker - Alchemy (I), 2.1, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related technology for reagents and potions like minor healing, stamina, toughening, or combat acids.
+#(Tag:tech)(Tag:tinker) Allows you to build alchemy-related technology for reagents and potions like minor healing, stamina, toughening, or combat acids.
 1099. Tinker - Alchemy (II), 3.8, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related technology like healing, stamina, energy, disease-curing, minor permanent-buff, explosive gas, and incendiary acid potions. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
+#(Tag:tech)(Tag:tinker) Allows you to build alchemy-related technology like healing, stamina, energy, disease-curing, minor permanent-buff, explosive gas, and incendiary acid potions. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
 1100. Tinker - Alchemy (III), 5.2, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related technology like body-altering, gunpowder, flesh-eating acid, Healing, mana, and Ironskin potions with notable potency. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
+#(Tag:tech)(Tag:tinker) Allows you to build alchemy-related technology like body-altering, gunpowder, flesh-eating acid, Healing, mana, and Ironskin potions with notable potency. Stronger consumers weaken effects and vice versa, and more potent potions need better materials.
 1101. Tinker - Alchemy (IV), 6.4, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related technology like limb-restoring healing, mana-boosting, ultra-steroid, and Epic Tier physical-trait permanent-buff potions plus many reagents.
+#(Tag:tech)(Tag:tinker) Allows you to build alchemy-related technology like limb-restoring healing, mana-boosting, ultra-steroid, and Epic Tier physical-trait permanent-buff potions plus many reagents.
 1102. Tinker - Alchemy (V), 7.8, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build alchemy-related miracles with enough resources, from Panaceas, Elixirs, and Ichor to Elixirs granting Legendary rank physical traits.
+#(Tag:tech)(Tag:tinker) Allows you to build alchemy-related miracles with enough resources, from Panaceas, Elixirs, and Ichor to Elixirs granting Legendary rank physical traits.
 1103. Tinker - Augments (I), 1.8, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology limited at this level to replacement limbs, metal bone plating, camera eyes, and metal teeth. You can surgically install them.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build Augment and Implant technology limited at this level to replacement limbs, metal bone plating, camera eyes, and metal teeth. You can surgically install them.
 1104. Tinker - Augments (II), 2.9, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology like enhanced camera eyes, subdermal armour, reinforced tendons, hormone regulators, and hidden blades and guns. You can surgically install them.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build Augment and Implant technology like enhanced camera eyes, subdermal armour, reinforced tendons, hormone regulators, and hidden blades and guns. You can surgically install them.
 1105. Tinker - Augments (III), 4.2, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology like mechanical bones, full-body augments enough for Augmented (trait), combat augments, transforming robotic arms, and metabolism regulators. You could make Robocops or Astartes-lites.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build Augment and Implant technology like mechanical bones, full-body augments enough for Augmented (trait), combat augments, transforming robotic arms, and metabolism regulators. You could make Robocops or Astartes-lites.
 1106. Tinker - Augments (IV), 6.5, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology for full-body conversions into tank-flipping, bullet-dodging Cyborgs, fitting impossibly many implants into one body. Go build your Adam Smashers.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build Augment and Implant technology for full-body conversions into tank-flipping, bullet-dodging Cyborgs, fitting impossibly many implants into one body. Go build your Adam Smashers.
 1107. Tinker - Augments (V), 8.2, Generic
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Augment and Implant technology to raise regular people to near-demigods, from brain supercomputers and time-dilating spines to million-ton-suplexing skeletons and laser eyes. Go build a Genos or Raiden.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build Augment and Implant technology to raise regular people to near-demigods, from brain supercomputers and time-dilating spines to million-ton-suplexing skeletons and laser eyes. Go build a Genos or Raiden.
 1108. Tinker - Defence (I), 1.8, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology, at this level limited to reinforcing existing things plus basic shields and bulletproof glass.
+#(Tag:tech)(Tag:tinker) Allows you to build Defence-related technology, at this level limited to reinforcing existing things plus basic shields and bulletproof glass.
 1109. Tinker - Defence (II), 2.9, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology like sturdier protection constructs, limited fireproof coating, impact suits, EMP threading, and bulletproof fabric.
+#(Tag:tech)(Tag:tinker) Allows you to build Defence-related technology like sturdier protection constructs, limited fireproof coating, impact suits, EMP threading, and bulletproof fabric.
 1110. Tinker - Defence (III), 4.5, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology like shield projectors, reinforced chassis, bullet-ignoring skintight suits, elemental coatings, and highly durable machines.
+#(Tag:tech)(Tag:tinker) Allows you to build Defence-related technology like shield projectors, reinforced chassis, bullet-ignoring skintight suits, elemental coatings, and highly durable machines.
 1111. Tinker - Defence (IV), 6.4, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology like city-covering forcefields, trauma-hardening cloth outfits, anti-teleport Spatial Locks, and elemental hyper-paint. With effort you could make a bicycle survive ocean depths, space, and volcanoes, or a phone survive nuclear war.
+#(Tag:tech)(Tag:tinker) Allows you to build Defence-related technology like city-covering forcefields, trauma-hardening cloth outfits, anti-teleport Spatial Locks, and elemental hyper-paint. With effort you could make a bicycle survive ocean depths, space, and volcanoes, or a phone survive nuclear war.
 1112. Tinker - Defence (V), 8.6, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build Defence-related technology like nigh-unbreakable space-time-bending forcefields, sun-resistant alloys, and nuclear-surviving suits. With time, resources, and experience, even gods cannot dent them.
+#(Tag:tech)(Tag:tinker) Allows you to build Defence-related technology like nigh-unbreakable space-time-bending forcefields, sun-resistant alloys, and nuclear-surviving suits. With time, resources, and experience, even gods cannot dent them.
 1113. Tinker - Ranged Weapon (I), 1.5, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build ranged-weapon technology, at this level mostly mundane but supernaturally well-made pistols, snipers, bows, and slingshots.
+#(Tag:tech)(Tag:tinker) Allows you to build ranged-weapon technology, at this level mostly mundane but supernaturally well-made pistols, snipers, bows, and slingshots.
 1114. Tinker - Ranged Weapon (II), 2.8, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build supernaturally efficient ranged weapons and ammo like steel-piercing revolvers and rudimentary railguns.
+#(Tag:tech)(Tag:tinker) Allows you to build supernaturally efficient ranged weapons and ammo like steel-piercing revolvers and rudimentary railguns.
 1115. Tinker - Ranged Weapon (III), 4.7, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build supernaturally powerful gunpowder, electromagnetic, and laser weapons and ammo, each with tradeoffs, such as bolter-rivaling thermite pistols or Gustav-dwarfing cannons.
+#(Tag:tech)(Tag:tinker) Allows you to build supernaturally powerful gunpowder, electromagnetic, and laser weapons and ammo, each with tradeoffs, such as bolter-rivaling thermite pistols or Gustav-dwarfing cannons.
 1116. Tinker - Ranged Weapon (IV), 6.4, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build supernaturally powerful gunpowder, laser, plasma, and electromagnetic guns and ammo, from army-mowing machine guns and block-wiping blasters to city-busting cannons and tank-ripping scrap guns.
+#(Tag:tech)(Tag:tinker) Allows you to build supernaturally powerful gunpowder, laser, plasma, and electromagnetic guns and ammo, from army-mowing machine guns and block-wiping blasters to city-busting cannons and tank-ripping scrap guns.
 1117. Tinker - Ranged Weapon (V), 8.5, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build god-rivaling ranged weapons limited only by resources and time, like space-ripping sniper rifles, nuclear-pistols, and Death Star-dwarfing cannons.
+#(Tag:tech)(Tag:tinker) Allows you to build god-rivaling ranged weapons limited only by resources and time, like space-ripping sniper rifles, nuclear-pistols, and Death Star-dwarfing cannons.
 1118. Tinker - Fortification, 4.9, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build fortification technology like self-repairing walls, hidden turrets, proximity sensors, missile batteries, laser traps, and spatial locks. Tech only works attached to a large enough building or area.
+#(Tag:tech)(Tag:tinker) Allows you to build fortification technology like self-repairing walls, hidden turrets, proximity sensors, missile batteries, laser traps, and spatial locks. Tech only works attached to a large enough building or area.
 1119. Tinker - Resident Evil, 6.0, Resident Evil
-#(Tag:bio)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Resident Evil technology, specifically cultivating viruses like Tyrant, Uroboros, Progenitor, and parasites. It is time-intensive and can eventually remove side effects with much trial and error.
+#(Tag:bio)(Tag:tech)(Tag:tinker) Allows you to build Resident Evil technology, specifically cultivating viruses like Tyrant, Uroboros, Progenitor, and parasites. It is time-intensive and can eventually remove side effects with much trial and error.
 1120. Tinker - Aperture Science, 5.7, Portal
-#(Tag:space)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Aperture Science technology including turrets, portal guns, speed and jump gel, anti-fall boots, basic non-combat robots, and strong AI. Breadth over raw power.
+#(Tag:space)(Tag:tech)(Tag:tinker) Allows you to build Aperture Science technology including turrets, portal guns, speed and jump gel, anti-fall boots, basic non-combat robots, and strong AI. Breadth over raw power.
 1121. Budding, 5.8, Generic
 #(Tag:growth)(Tag:meta)You can grant others abilities as buds of your own that manifest as sidegrades capped at Elite rank, with max level set by their innate talent. Your budded ability weakens until they assimilate it, when you can retrieve the bud to restore strength, though you can retrieve anytime.
 1122. Tinker - Taimanin, 7.0, Taimanin
-#(Tag:nsfw)(Tag:tech)(Tag:tinker)(Tech) (Nsfw) Allows you to research and build Taimanin technology like advanced prosthetics, genetic modification, basic cloning, augments, brainwashing, demonization, and lewd tech plus the basic sci-fi package.
+#(Tag:nsfw)(Tag:tech)(Tag:tinker) Allows you to research and build Taimanin technology like advanced prosthetics, genetic modification, basic cloning, augments, brainwashing, demonization, and lewd tech plus the basic sci-fi package.
 1123. Tinker - Cosmetics, 2.0, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build cosmetics-related technology like hyper-realistic masks, machine beautification, holograms, beauty cream, and perfumes.
+#(Tag:tech)(Tag:tinker) Allows you to build cosmetics-related technology like hyper-realistic masks, machine beautification, holograms, beauty cream, and perfumes.
 1124. Tinker - Electricity, 6.7, Generic
-#(Tag:electric)(Tag:tech)(Tag:tinker)(Tech) Allows you to build electricity-related technology like Ultra Tesla coils and thunder-harnessing constructs, separate from magnetism.
+#(Tag:electric)(Tag:tech)(Tag:tinker) Allows you to build electricity-related technology like Ultra Tesla coils and thunder-harnessing constructs, separate from magnetism.
 1125. Tinker - Dungeonmaster, 6.5, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Allows you to build dungeon-creation constructs, magical or technological, like bigger-inside rooms, indescrutable walls, dungeon-only traps, and utility rooms. Your dungeon needs an accessible entrance and plausible path to the core, tech only works inside, and inside tech is boosted.
+#(Tag:tech)(Tag:tinker) Allows you to build dungeon-creation constructs, magical or technological, like bigger-inside rooms, indescrutable walls, dungeon-only traps, and utility rooms. Your dungeon needs an accessible entrance and plausible path to the core, tech only works inside, and inside tech is boosted.
 1126. Tinker - Sustenance, 2.8, Generic
-#(Tag:nature)(Tag:tech)(Tag:tinker)(Tech) Allows you to build sustenance-related constructs like efficient farms, water purifiers and condensers, vampire blood alternatives, food bars, consumable life-force alternatives, and plant light projectors. More encountered sustenance needs unlock more varied tech.
+#(Tag:nature)(Tag:tech)(Tag:tinker) Allows you to build sustenance-related constructs like efficient farms, water purifiers and condensers, vampire blood alternatives, food bars, consumable life-force alternatives, and plant light projectors. More encountered sustenance needs unlock more varied tech.
 1127. Mystic Eyes of Depth Perception, 0.2, Generic
 #(Tag:ocular)(Tag:sense)These mystical eyes supernaturally reveal the depth of an object or location relative to something else.
 1128. Swiftness, 2.4, Generic
@@ -2281,15 +2281,15 @@
 1144. Subtitles, 3.0, Generic
 #(Tag:divination)Who needs dub? You get subtitles for relevant attended sounds, transcribing speech in any language with tone like "Good for you to finally join us (Sarcastically)" and effects like [Assassin's Footsteps] or [Fireball Chant].
 1145. Tinker - Robotics (I), 2.0, Generic
-#(Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Robotics technology, at this level only simple and mostly mundane robots like autonomous claw arms or butter-robots.
+#(Tag:summon)(Tag:tech)(Tag:tinker) Allows you to build Robotics technology, at this level only simple and mostly mundane robots like autonomous claw arms or butter-robots.
 1146. Tinker - Robotics (II), 3.8, Generic
-#(Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build Robotics technology like simple average-man-capable robots, gun-bots, up to B-1 Droids or B-2s with training.
+#(Tag:summon)(Tag:tech)(Tag:tinker) Allows you to build Robotics technology like simple average-man-capable robots, gun-bots, up to B-1 Droids or B-2s with training.
 1147. Tinker - Robotics (III), 4.4, Generic
-#(Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build complex capable robots like combat, maid, or worker bots, up to Sentry Bots, Executor Droids, or GLaDOS with mind and resources.
+#(Tag:summon)(Tag:tech)(Tag:tinker) Allows you to build complex capable robots like combat, maid, or worker bots, up to Sentry Bots, Executor Droids, or GLaDOS with mind and resources.
 1148. Tinker - Robotics (IV), 6.7, Generic
-#(Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build powerful useful robots like army-wasting giants, moving castles, and dust-sized repair bots. Go build your Metal Gears.
+#(Tag:summon)(Tag:tech)(Tag:tinker) Allows you to build powerful useful robots like army-wasting giants, moving castles, and dust-sized repair bots. Go build your Metal Gears.
 1149. Tinker - Robotics (V), 8.0, Generic
-#(Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Allows you to build nearly any autonomous mechanical unit, from Metal Gear armies and ninja clans to human-like 100x-strong biorobots and nuke-proof superintelligent machines. Integrated other-branch Tinker tech is significantly boosted.
+#(Tag:summon)(Tag:tech)(Tag:tinker) Allows you to build nearly any autonomous mechanical unit, from Metal Gear armies and ninja clans to human-like 100x-strong biorobots and nuke-proof superintelligent machines. Integrated other-branch Tinker tech is significantly boosted.
 1150. Kudoku, 4.9, Generic
 #(Tag:growth)(Tag:meta)(Tag:poison)Kudoku lets you expel very weak poison via pores, nails, or mouth. While active-slotted, surviving ingested or inflicted poisons raises Kudoku's potency proportionally with more imbueable effects, from mild paralytic to godslaying venom. Starting rating is Trash, and it grants poison resistance scaling with potency when slotted.
 1151. Cursebed, 5.1, Generic
@@ -2319,7 +2319,7 @@
 1163. Choices & Choices, 4.3, Generic
 #(Tag:divination)When you need to make a choice, activate to view up to 3 relevant choices and their vague outcomes. For example, [We shouldn't go +reputation with X --Reputation with Y, Z Dies].
 1164. Tinker - Resources, 3.6, Generic
-#(Tag:tech)(Tag:tinker)(Tech) This Tinker speciality lets you design, modify, and build technology related to acquiring materials.
+#(Tag:tech)(Tag:tinker) This Tinker speciality lets you design, modify, and build technology related to acquiring materials.
 1165. Fate Draw, 3.3, Generic
 #(Tag:meta)Roll a random number out of 22 to invoke the effect of that Major Arcana Tarot Card. Cooldown: 120 Hours.
 1166. Inanimate Interrogation, 3.8, Generic
@@ -2389,7 +2389,7 @@
 1198. Familiar Manifestation, 2.6, Generic
 #(Tag:summon)Temporarily call upon a limb or body part of a familiar you own to use as an attack. The familiar itself takes no damage.
 1199. Kill Process, 7.0, Generic
-#(Tag:tech)(Tech) "The End of Machine" enforces "Kill Process" on any technology eclipsing Mundane Earth, forcing ruin upon it: chips torn apart, processors melted, chassis shredded, code mangled, and non-souls sent to oblivion. Potency scales with divergence from Mundane Earth tech and your power difference to the target, but even a normal person could down a spaceship with a glare. Can only affect technology and tech-based targets.
+#(Tag:tech) "The End of Machine" enforces "Kill Process" on any technology eclipsing Mundane Earth, forcing ruin upon it: chips torn apart, processors melted, chassis shredded, code mangled, and non-souls sent to oblivion. Potency scales with divergence from Mundane Earth tech and your power difference to the target, but even a normal person could down a spaceship with a glare. Can only affect technology and tech-based targets.
 1200. Elemental Sight, 2.1, Generic
 #(Tag:air)(Tag:earth)(Tag:fire)(Tag:sense)(Tag:water)Attune to Elemental Forces and energy: feel air, see heat, hear lightning, taste earth. See all Fire, Water, Air, and Earth in line of sight through everything else, including brain electricity, blood water, and cable electricity. Magically charged elements appear more vibrant.
 1201. Corpus Weapon, 2.6, Generic
@@ -2421,7 +2421,7 @@
 1214. Divinity Sky, 8.6, Generic
 #(Tag:air)(Tag:electric)Possess divinity over the Sky. Bring down kilometer-wide lightning pillars, alter atmospheric composition at will, create city-flinging tornadoes, create a planet's atmosphere, and make adamantite-tough clouds to float on. As long as it is the sky and you have enough energy, you can do it.
 1215. Tinker - Arcology, 4.5, Generic
-#(Tag:nature)(Tag:tech)(Tag:tinker)(Tech) Design, build, modify, and construct technology for creating and maintaining Arcologies, self-sufficient megastructures housing people as self-contained cities. Includes construction drones, self-recycling soil, maintenance robots, surveillance, farming, recyclers, and all else needed for function. Such technology only works when creating or inside an Arcology.
+#(Tag:nature)(Tag:tech)(Tag:tinker) Design, build, modify, and construct technology for creating and maintaining Arcologies, self-sufficient megastructures housing people as self-contained cities. Includes construction drones, self-recycling soil, maintenance robots, surveillance, farming, recyclers, and all else needed for function. Such technology only works when creating or inside an Arcology.
 1216. Summon Lesser nature Spirit, 3.5, Generic
 #(Tag:nature)(Tag:spirit)(Tag:summon)Summon a lesser nature spirit, requiring sufficient fertile ground nearby, such as Junimo, Lesser Dryads, maneater plants, Ents, etc. Limited to Uncommon familiar power or less; strength depends on your power. It draws on your energy to stay manifested and use abilities, unsummoning if unfueled, but with proper skills, time, and energy you can make it permanent.
 1217. Summon nature Spirit, 4.5, Generic
@@ -2447,9 +2447,9 @@
 1227. Stun Spore, 3.1, Generic
 #(Tag:nature)(Tag:poison)Conjure pale-green spore clouds that paralyze and immobilize when breathed in. Stronger opponents are less affected, ranging from day-long knockout to mild limb stiffness. Uningested clouds dissipate in 5 minutes.
 1228. Overclock, 3.2, Generic
-#(Tag:enhancer)(Tag:tech)(Tech) Overclock technology with your own energy to push it beyond limits. It performs better but burns durability faster and risks damage. More energy means greater boost and greater potential damage.
+#(Tag:enhancer)(Tag:tech) Overclock technology with your own energy to push it beyond limits. It performs better but burns durability faster and risks damage. More energy means greater boost and greater potential damage.
 1229. Tinker - Redundancy, 3.2, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Give technology you create or modify heavy redundancies, making it frustratingly hard to disable. You can make a fragile phone work flawlessly with shattered screen, exposed wires, water immersion, and half-melted chassis.
+#(Tag:tech)(Tag:tinker) Give technology you create or modify heavy redundancies, making it frustratingly hard to disable. You can make a fragile phone work flawlessly with shattered screen, exposed wires, water immersion, and half-melted chassis.
 1230. Vanish, 6.0, Generic
 #(Tag:stealth)Temporarily vanish utterly from reality, erasing your existence so nothing can track, hit, affect, or predict you. While vanished you rest bodiless in white nothingness, able only to think until you end it and reappear in place. It consumes energy and ends automatically when depleted.
 1231. Thermal Vision, 0.8, Generic
@@ -2477,7 +2477,7 @@
 1242. Smoke Conduit Physiology, 5.2, Infamous
 #(Tag:air)(Tag:enhancer)(Tag:fire)(Tag:recovery)(Tag:transformation)Wield Smoke Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Smoke, and absorb smoke to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques.
 1243. Neon Conduit Physiology, 5.8, Infamous
-#(Tag:light)(Tag:movement)(Tag:recovery)(Tag:transformation)(Tech) Wield Neon Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Neon, greatly augmenting speed, and absorb Neon Light to augment regeneration. Conduit abilities use absorbed element, not your energy. Note: You do not move at or near light speed. You start with basics and must train for complex techniques.
+#(Tag:light)(Tag:movement)(Tag:recovery)(Tag:tech)(Tag:transformation) Wield Neon Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Neon, greatly augmenting speed, and absorb Neon Light to augment regeneration. Conduit abilities use absorbed element, not your energy. Note: You do not move at or near light speed. You start with basics and must train for complex techniques.
 1244. Oil/Napalm Conduit Physiology, 4.7, Infamous
 #(Tag:enhancer)(Tag:fire)(Tag:recovery)(Tag:transformation)Wield Oil/Napalm Conduit powers with a mild physical boost. Absorb, generate, manipulate, emit, and briefly become Napalm/Oil to fire blasts, douse foes, or restrain them, and absorb it to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. (Lowered rating due to scarcity of element).
 1245. Ice Conduit Physiology, 6.3, Infamous
@@ -2487,11 +2487,11 @@
 1247. Lightning Conduit Physiology, 6.7, Infamous
 #(Tag:electric)(Tag:enhancer)(Tag:recovery)(Tag:transformation)Wield Lightning Conduit powers with a mild physical boost. Absorb and manipulate Electricity and Magnetism to launch lightning bolts, EMPs, polarity fields, electromagnetic walls, etc., absorbing electricity to augment regeneration and with intensive training overdrive others' regeneration via bioelectricity. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. Note: No, you cannot time-travel or travel at lightning speed.
 1248. Video Conduit Physiology, 5.7, Infamous
-#(Tag:enhancer)(Tag:light)(Tag:recovery)(Tag:summon)(Tag:transformation)(Tech) Wield Video Conduit powers with a mild physical boost. Absorb artificial light from video displays to fuel Hard Light Constructs like weapons, armor, and temporary minions, angels, and demons, and with practice bend light for invisibility, absorbing Video to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. Note: You can't pull people into Video worlds.
+#(Tag:enhancer)(Tag:light)(Tag:recovery)(Tag:summon)(Tag:tech)(Tag:transformation) Wield Video Conduit powers with a mild physical boost. Absorb artificial light from video displays to fuel Hard Light Constructs like weapons, armor, and temporary minions, angels, and demons, and with practice bend light for invisibility, absorbing Video to augment regeneration. Conduit abilities use absorbed element, not your energy. You start with basics and must train for complex techniques. Note: You can't pull people into Video worlds.
 1249. Fight Mode, 1.3, Generic
 #(Tag:bio)(Tag:martial)Fill your body with adrenaline, norepinephrine, cortisol, endorphins, testosterone, and dopamine to enter an enhanced fight mode. Get your head in the game without suffering overdose consequences.
 1250. Induce Lactation, 1.5, Generic
-#(Tag:bio)(Tag:nsfw)(Nsfw)(Noncon) Induce lactation on targets in your line of sight, provided they are biologically capable.
+#(Tag:bio)(Tag:nsfw)(Noncon) Induce lactation on targets in your line of sight, provided they are biologically capable.
 1251. Anchor Back, 1.8, Generic
 #(Tag:movement)Place a mark where you stand; while active you can teleport back to it. Greater distance costs more energy. Only one mark at a time.
 1252. Adventure Line, 2.4, Stanley Parable
@@ -2513,7 +2513,7 @@
 1260. Thought Acceleration, 2.6, Fate
 #(Tag:mental)Concentrate to accelerate brain processing to think faster in less time. With practice and combat skill it can be used in combat. Overuse has negative consequences.
 1261. Eros Hide, 1.1, Generic
-#(Tag:nsfw)(Tag:stealth)(Nsfw) Erect an aura around yourself and your partner making actions inside not perceived as sexual or indecent. You could have sex in public and no one would bat an eye.
+#(Tag:nsfw)(Tag:stealth) Erect an aura around yourself and your partner making actions inside not perceived as sexual or indecent. You could have sex in public and no one would bat an eye.
 1262. Caladrious Form, 5.1, Generic
 #(Tag:avian)(Tag:enhancer)(Tag:movement)(Tag:recovery)(Tag:transformation)Turn into or hybridize the Caladrious, white bird of healing. You gain slightly enhanced physicals, can see sickness, and absorb ailments by touching diseased or cursed targets. You gain great curse and illness resistance, purging them by bathing in sunlight at a rate scaling with reserves. Unholy and dark abilities are blocked, while holy and recovery are enhanced.
 1263. Envenom, 3.2, Generic
@@ -2591,23 +2591,23 @@
 1299. Physical Trauma Response, 4.1, Generic
 #(Tag:bio)(Tag:enhancer)Flesh hardens against physical trauma: sudden impacts/strikes above a threshold compact muscles, fat, skin, and all layers at the impact point into brief armor without impeding movement.
 1300. Tinker - Mech (I), 2.5, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create basic mechs like construction exosuits or clunky mechs with standard armor and machine guns.
+#(Tag:tech)(Tag:tinker) Design, modify, and build Mech tech and large piloted armors. At this level, create basic mechs like construction exosuits or clunky mechs with standard armor and machine guns.
 1301. Tinker - Mech (II), 4.4, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create proper combat-ready mechs, sleek agile briefly-flying types, armored low-mobility types, or easily-repaired modular ones. Can also design mech-only weaponry/modules based on your other abilities and traits.
+#(Tag:tech)(Tag:tinker) Design, modify, and build Mech tech and large piloted armors. At this level, create proper combat-ready mechs, sleek agile briefly-flying types, armored low-mobility types, or easily-repaired modular ones. Can also design mech-only weaponry/modules based on your other abilities and traits.
 1302. Tinker - Mech (III), 5.8, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. At this level, create powerful versatile mechs rivaling Knightmares, e.g. large mechs enduring missile barrages with street-demolishing cannons and guns. Can also design mech-only weaponry/modules based on your other abilities and traits.
+#(Tag:tech)(Tag:tinker) Design, modify, and build Mech tech and large piloted armors. At this level, create powerful versatile mechs rivaling Knightmares, e.g. large mechs enduring missile barrages with street-demolishing cannons and guns. Can also design mech-only weaponry/modules based on your other abilities and traits.
 1303. Tinker - Mech (IV), 7.0, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. With enough resources and time, create skyscraper-sized esoteric energy-harnessing forcefield-protected Mecha with dozens of modules that withstand nuclear warfare and annihilate city blocks and cities with cannons.
+#(Tag:tech)(Tag:tinker) Design, modify, and build Mech tech and large piloted armors. With enough resources and time, create skyscraper-sized esoteric energy-harnessing forcefield-protected Mecha with dozens of modules that withstand nuclear warfare and annihilate city blocks and cities with cannons.
 1304. Tinker - Mech (V), 8.5, Generic
-#(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Mech tech and large piloted armors. With resources, knowledge, and time, create your dream Mecha to shame Gundams, antimatter-powered Hadron cannons, planet-sized spacefaring mechs with Death Star cannons. Can also design mech-only weaponry/modules based on your other abilities and traits.
+#(Tag:tech)(Tag:tinker) Design, modify, and build Mech tech and large piloted armors. With resources, knowledge, and time, create your dream Mecha to shame Gundams, antimatter-powered Hadron cannons, planet-sized spacefaring mechs with Death Star cannons. Can also design mech-only weaponry/modules based on your other abilities and traits.
 1305. Tinker - Hydro, 6.1, Generic
-#(Tag:tech)(Tag:tinker)(Tag:water)(Tech) Design, modify, and build Water-based tech, from dehydration guns, sprinklers, hydro cannons, and efficient irrigation up to 100-meter-radius water-ripping bombs and water-fueled engines, depending on skills, experience, and materials.
+#(Tag:tech)(Tag:tinker)(Tag:water) Design, modify, and build Water-based tech, from dehydration guns, sprinklers, hydro cannons, and efficient irrigation up to 100-meter-radius water-ripping bombs and water-fueled engines, depending on skills, experience, and materials.
 1306. Tinker - Aero, 6.5, Generic
-#(Tag:air)(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Air/atmosphere tech, from blow dryers, efficient turbines, wind bombs, flying machines, and blimps up to weather devices, tornado grenades, and vacuum bombs, depending on skills, experience, and materials.
+#(Tag:air)(Tag:tech)(Tag:tinker) Design, modify, and build Air/atmosphere tech, from blow dryers, efficient turbines, wind bombs, flying machines, and blimps up to weather devices, tornado grenades, and vacuum bombs, depending on skills, experience, and materials.
 1307. Tinker - Henshin, 5.9, Generic
-#(Tag:tech)(Tag:tinker)(Tag:transformation)(Tech) Design, modify, and build transformation tech, e.g. armor-donning belts, car-to-jet transformers, combining jets forming a mech, lion-pen, anti-transformation bands, and stylish mandatory themed armors harnessing exotic materials, depending on skills, experience, and materials.
+#(Tag:tech)(Tag:tinker)(Tag:transformation) Design, modify, and build transformation tech, e.g. armor-donning belts, car-to-jet transformers, combining jets forming a mech, lion-pen, anti-transformation bands, and stylish mandatory themed armors harnessing exotic materials, depending on skills, experience, and materials.
 1308. Tinker - Ultrakill, 5.8, Ultrakill
-#(Tag:bio)(Tag:life)(Tag:summon)(Tag:tech)(Tag:tinker)(Tech) Design, modify, and build Ultrakill tech, specializing in robots from hyper-mobile units to mobile artillery to skyscraper-sized ones with overwhelming weapons and defenses. Built tech must be fueled primarily by Blood.
+#(Tag:bio)(Tag:life)(Tag:summon)(Tag:tech)(Tag:tinker) Design, modify, and build Ultrakill tech, specializing in robots from hyper-mobile units to mobile artillery to skyscraper-sized ones with overwhelming weapons and defenses. Built tech must be fueled primarily by Blood.
 1309. Pyronite Form, 6.1, Ben 10
 #(Tag:enhancer)(Tag:fire)(Tag:transformation)Temporarily transform into a Pyronite or hybrid at will, gaining boosted physical stats, durability, and energy-scaling natural pyrokinesis. Greatly boosts Fire Affinities but disables Ice/Water abilities.
 1310. Ectonurite Form, 7.0, Ben 10
@@ -2761,7 +2761,7 @@
 1384. Weapon Mode, 2.6, Generic
 #(Tag:transformation)Turn yourself into a disposition-suited Weapon Form wieldable by others to share your abilities. Freedom is greatly restricted and damage taken reflects onto your real form.
 1385. Perfect Interface, 2.0, Generic
-#(Tag:mental)(Tag:tech)(Tech) Manipulate any machine interface as if wired to your nerves and brain via physical contact.
+#(Tag:mental)(Tag:tech) Manipulate any machine interface as if wired to your nerves and brain via physical contact.
 1386. Adamantine Sealing Chains, 5.7, Naruto
 #(Tag:debuff)(Tag:earth)(Tag:spirit)Manifest and control Uzumaki Adamantine Sealing Chains as incredibly durable chains that suppress and seal bound targets' energy. Suppression scales with energy spent and your power advantage; chain power and count scale with energy used.
 1387. Sight +1, 2.0, Generic
@@ -3011,7 +3011,7 @@
 1509. Culture Displace, 8.8, Culture
 #(Tag:teleport)Teleport anything you can precisely locate to anywhere else in the same star system, instantly, via hyperspace. Living cargo arrives nauseated; imprecise coordinates arrive scattered.
 1510. Tinker - AWESOME, 8.2, Satisfactory
-#(Tech) Allows you to build the AWESOME Shop and AWESOME Sink wherever you settle, given materials and a 30-megawatt power feed for the Sink. The Sink recycles anything you feed it into FICSIT coupons, raw ores worth least, complex tech most, each further coupon costing progressively more feedstock. The Shop spends coupons on Satisfactory gacha entries (10 coupons per rarity level), building-part blueprints and customizations, and small shipments of consumables, equipment, and parts; pioneering awards and statues arrive with tickets attached. For more info: https://satisfactory.wiki.gg/wiki/AWESOME_Shop
+#(Tag:tech) Allows you to build the AWESOME Shop and AWESOME Sink wherever you settle, given materials and a 30-megawatt power feed for the Sink. The Sink recycles anything you feed it into FICSIT coupons, raw ores worth least, complex tech most, each further coupon costing progressively more feedstock. The Shop spends coupons on Satisfactory gacha entries (10 coupons per rarity level), building-part blueprints and customizations, and small shipments of consumables, equipment, and parts; pioneering awards and statues arrive with tickets attached. For more info: https://satisfactory.wiki.gg/wiki/AWESOME_Shop
 1511. Dragon of the Darkness Flame, 5.3, YuYu Hakusho
 #(Tag:dark)(Tag:draconic)(Tag:fire)(Tag:infernal)The Dragon of the Darkness Flame allows the user to summon black flames from the deepest depths of the Demonic Realm in the form of vicious dragons that incinerate anything in their path with tremendous destructive power. However, this power is so destructive and uncontrollable that it will burn the user too upon use and can even cause them to lose control over it or even turn on the user without sufficent control. However with sufficent mastery these side effects can be mitigated and overcomed.
 1512. Searing Sunlight, 3.9, Generic

@@ -206,11 +206,12 @@ def export_entries():
                 "d": e["description"], "m": e.get("meta", [])}
         if e.get("tags"):
             item["tags"] = e["tags"]
-        if "Nsfw" in toks:
+        fl = gt.content_flags(toks)
+        if fl["nsfw"]:
             item["nsfw"] = True
-        if "Tech" in toks:
+        if fl["tech"]:
             item["tech"] = True
-        if "Noncon" in toks:
+        if fl["noncon"]:
             item["noncon"] = True
         compact.append(item)
     from collections import Counter

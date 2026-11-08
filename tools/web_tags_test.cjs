@@ -510,6 +510,23 @@ function boot(page, seed, fetchPayload) {
     dom.window.close();
   }
 
+  // ---------- content flags come from thematic tags ----------
+  {
+    const { dom } = await boot("gacha.html");
+    const w = dom.window;
+    const entries = w.CHAOS_DATA.entries || [];
+    const badNsfw = entries.filter(e => (e.tags || []).includes("nsfw") && !e.nsfw);
+    const badTech = entries.filter(e => (e.tags || []).includes("tech") && !e.tech);
+    ok("data: every nsfw tag sets the nsfw flag", badNsfw.length === 0,
+      badNsfw.slice(0, 3).map(e => e.name).join(", "));
+    ok("data: every tech tag sets the tech flag", badTech.length === 0,
+      badTech.slice(0, 3).map(e => e.name).join(", "));
+    const tome = entries.find(e => /Tome of the Grand Rizzard/i.test(e.name));
+    ok("data: a tag-only nsfw entry is gated", !!tome && tome.nsfw === true,
+      tome ? tome.name : "not found");
+    dom.window.close();
+  }
+
   // ---------- tree page ----------
   {
     const { dom, errors } = await boot("tree.html");
