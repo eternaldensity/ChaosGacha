@@ -4,3 +4,4 @@ node_modules/
 package-lock.json
 # Personal tree exports from the web app; not repository content.
 *.chaos-tree.json
+*.chaos-tree.json.bak

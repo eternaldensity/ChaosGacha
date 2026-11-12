@@ -727,6 +727,34 @@ function boot(page, seed, fetchPayload) {
     ok("tree import: python filters are kept",
       !!pyt && Array.isArray(pyt.filters.files) &&
       pyt.filters.files[0] === "ability", JSON.stringify(pyt && pyt.filters));
+
+    // App exports have kept placement params on the record, on the topology,
+    // or both. Keep whichever copy exists so a later Upgrade never sees an
+    // empty params object and falls back to the radius-10 default.
+    const legacyApp = {
+      app: "chaos-tree", v: 1,
+      tree: { name: "Topology params only", seed: 9, limit: null, filters: {},
+              dataVersion: DATA_VERSION, static: true,
+              topology: { v: 3, params: { radius: 50, meanDegree: 4 },
+                          nodes: [{ id: 0, file: "__root__", number: 0,
+                                    pos: [0, 0, 0], r: 0 }], edges: [] } },
+      state: {},
+    };
+    const legFile = new w2.File([JSON.stringify(legacyApp)], "topology-params.json",
+      { type: "application/json" });
+    Object.defineProperty(input, "files", { value: [legFile], configurable: true });
+    input.dispatchEvent(new w2.Event("change", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 150));
+    const db3 = JSON.parse(w2.localStorage.getItem("chaosTree.v1") || "{}");
+    const leg = (db3.trees || []).find(t => /topology params only/i.test(t.name));
+    ok("tree import: topology-only placement params survive",
+      !!leg && leg.params.radius === 50 && leg.params.meanDegree === 4,
+      JSON.stringify(leg && leg.params));
+    const legStored = leg && JSON.parse(
+      w2.localStorage.getItem("chaosTree.static.v1." + leg.id) || "null");
+    ok("tree import: topology-only params reach the snapshot",
+      !!legStored && legStored.params && legStored.params.radius === 50,
+      JSON.stringify(legStored && legStored.params));
     dom2.window.close();
     }
   }
@@ -1035,6 +1063,64 @@ function boot(page, seed, fetchPayload) {
       payload && JSON.stringify(payload).slice(0, 80));
     ok("tree: growth upgrade stamps the current identity version",
       up && up.versionScheme === 2 && up.dataVersion === w.CHAOS_DATA.dataVersion);
+    dom.window.close();
+  }
+
+  // ---------- upgrade infers a legacy tree's radius -------------------------
+  {
+    // A pre-fix snapshot has no placement params anywhere, but its nodes
+    // span radius 50. Upgrade must trust the layout instead of falling back
+    // to the app's radius-10 default (which used to drop high-rarity entries
+    // next to the low-rarity ones near the centre).
+    const legacy = JSON.stringify({
+      trees: [{ id: "tr", name: "Radiusless tree", seed: 7, params: {}, limit: null,
+                filters: { files: ["familiar"], sources: ["Palworld"],
+                           includeNsfw: true, includeNoncon: true, includeGachaOnly: true },
+                dataVersion: "old", versionScheme: 2, static: true, createdAt: 1 }],
+      states: { tr: { points: 0, cores: 0, inventory: [], unlocked: [0, 1] } },
+      activeId: "tr", guideSeen: true, settings: {},
+    });
+    const topo = JSON.stringify({
+      nodes: [
+        { id: 0, file: "__root__", number: 0, name: "Origin", rarity: 0,
+          source: "System", tag: "both", description: "", meta: [], tags: [],
+          pos: [0, 0, 0], r: 0 },
+        { id: 1, file: "familiar", number: 590, name: "Shaolong", rarity: 7.7,
+          source: "Palworld", tag: "both", description: "old entry", meta: [],
+          tags: [], pos: [50, 0, 0], r: 50 },
+      ],
+      edges: [{ a: 0, b: 1, d: 50 }],
+    });
+    const { dom } = await boot("tree.html", {
+      "chaosTree.v1": legacy, "chaosTree.static.v1.tr": topo,
+    });
+    const w = dom.window, d = w.document;
+    d.getElementById("btnUpgradeActive")
+      .dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 100));
+    const go = d.querySelector("#treeList .upPicker button.primary");
+    if (go) go.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+    await new Promise(r => setTimeout(r, 800));
+    const saved = JSON.parse(w.localStorage.getItem("chaosTree.v1") || "{}");
+    const up = (saved.trees || []).find(t => /upgraded/.test(t.name));
+    const payload = up && JSON.parse(
+      w.localStorage.getItem("chaosTree.static.v1." + up.id) || "null");
+    const lamball = payload && payload.nodes.find(n =>
+      n && n._c && n.file === "familiar" && n.number === 461);
+    // Shaolong (rarity 7.7) is already present; Lamball (1.2) is added.
+    // With the inferred radius 50 it belongs at r≈7.3, not the buggy r≈1.5.
+    ok("tree: upgrade infers the layout radius when params are missing",
+      !!lamball && lamball.r > 5 && lamball.r < 10,
+      lamball ? `r=${lamball.r}` : "no Lamball");
+    ok("tree: inferred node position matches its shell",
+      !!lamball && Math.abs(Math.hypot(...lamball.pos) - lamball.r) < 1e-4,
+      lamball && JSON.stringify(lamball.pos));
+    ok("tree: upgrade persists the inferred radius in the snapshot",
+      !!payload && payload.params && payload.params.radius === 50,
+      JSON.stringify(payload && payload.params));
+    ok("tree: upgraded record carries the inferred radius",
+      !!up && up.params && up.params.radius === 50,
+      JSON.stringify(up && up.params));
     dom.window.close();
   }
 

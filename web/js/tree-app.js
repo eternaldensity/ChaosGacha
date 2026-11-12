@@ -863,11 +863,27 @@
     // New nodes take shell-appropriate positions (a few tries each, keeping
     // the least crowded), then link to nearest neighbours.
     let added = 0;
+    // Merge both copies: snapshots record the layout they were drawn with,
+    // while older records may only have the tree-record params (or vice
+    // versa).
+    let savedParams = Object.assign({}, t.params || {}, rt.params || {});
     if (!t.limit) {
-      // Static snapshots store their placement params now; fall back to the
-    // tree record for older ones that predate that.
-    const P = Object.assign({}, G.DEFAULTS, t.params || rt.params || {});
-      const radius = P.radius || 10;
+      const P = Object.assign({}, G.DEFAULTS, savedParams);
+      // A tree can never have nodes outside its radius, so a larger observed
+      // extent means the saved radius is missing or stale. Trust the layout
+      // over the metadata; otherwise new nodes land near the centre and link
+      // to whatever low-rarity neighbours happen to be there.
+      let radius = Number(P.radius);
+      if (!(radius > 0)) radius = 0;
+      for (const nd of nodes) {
+        const nr = Number(nd.r);
+        const rr = nr > 0 ? nr : (Array.isArray(nd.pos)
+          ? Math.hypot(nd.pos[0] || 0, nd.pos[1] || 0, nd.pos[2] || 0) : 0);
+        if (rr > radius) radius = rr;
+      }
+      if (!(radius > 0)) radius = G.DEFAULTS.radius;
+      P.radius = radius;
+      savedParams = P;
       const inner = P.innerFraction != null ? P.innerFraction : 0.12;
       const prs = pool.map(e => e.r);
       const rmin = Math.min(...prs), span = (Math.max(...prs) - rmin) || 1.0;
@@ -926,12 +942,14 @@
       }
     }
     const nid = uid();
-    saveStaticCompact(nid, nodes, edges, t.params);
+    // Persist the merged params (including an inferred radius) so the next
+    // Upgrade appends on the same shell even for legacy/frozen trees.
+    saveStaticCompact(nid, nodes, edges, savedParams);
     const nst = JSON.parse(JSON.stringify(st));
     delete nst.swaps; delete nst.added_links; delete nst.entry_swaps;
     const nt = {
       id: nid, name: (t.name + " (upgraded)").slice(0, 60),
-      seed: t.seed, params: JSON.parse(JSON.stringify(t.params || {})),
+      seed: t.seed, params: JSON.parse(JSON.stringify(savedParams)),
       limit: t.limit || null, filters: JSON.parse(JSON.stringify(filters)),
       knownSources: currentSources.slice(), versionScheme: 2,
       static: true, createdAt: Date.now(), dataVersion: DATA.dataVersion || null
@@ -1185,9 +1203,14 @@
         const td = payload.tree;
         const hasTopology = !!(td.topology && Array.isArray(td.topology.nodes) &&
           td.topology.nodes.length);
+        // Placement params may live on the tree record, on the topology, or
+        // both (older exports varied). Keep everything so Upgrade never has
+        // to fall back to the app's radius-10 default.
+        const treeParams = Object.assign({},
+          (td.topology && td.topology.params) || {}, td.params || {});
         const tree = { id: uid(), name: String(td.name || f.name).slice(0, 60),
           seed: td.seed != null ? td.seed : Math.floor(Math.random() * 1e9),
-          params: td.params || {}, limit: td.limit || null,
+          params: treeParams, limit: td.limit || null,
           filters: td.filters || {},
           // Keep the version the file was exported with: a generated tree
           // without a topology will re-sample, and the mismatch notice is the
@@ -1196,7 +1219,7 @@
           snapshotKept: !!td.snapshotKept, versionScheme: 2,
           static: hasTopology ? true : !!td.static, createdAt: Date.now() };
         if (hasTopology) {
-          saveStatic(tree.id, Object.assign({}, td.topology, { params: tree.params }));
+          saveStatic(tree.id, Object.assign({}, td.topology, { params: treeParams }));
         }
         DB.trees.push(tree);
         DB.states[tree.id] = Object.assign(E.newState(), payload.state || {});
