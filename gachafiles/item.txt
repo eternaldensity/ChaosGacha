@@ -1786,8 +1786,8 @@
 #(Tag:gun)Double-barrel burst cannon that deletes headcrabs up close.
 894. Combine SMG, 3.4, Half-Life
 #(Tag:gun)Rapid-fire Combine automatic with an energy-ball secondary fire.
-895. Xen Grenade, 2.8, Half-Life
-#(Tag:consumable)Volatile Xen flora that detonates seconds after you grab it. Throw fast.
+895. Xen Grenade Pod, 2.8, Half-Life
+#(Tag:consumable)A teal, fleshy Xen pod that grows living grenades in its belly. Rub it or snatch a grenade from its grip; hesitate and it pulls the grenade back for a few seconds. Once taken, a grenade arms with a glow and a click, so throw it fast; the pod itself never explodes.
 896. Climbing Axe, 2.4, Tomb Raider
 #(Tag:movement)(Tag:weapon)Lara's iconic axe: climbs ice walls, pries doors, and ends fights.
 897. Recurve Bow, 2.8, Tomb Raider

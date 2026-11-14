@@ -673,7 +673,7 @@
 337. Belter Creole, 0.5, The Expanse
 #Basic Belter phrases for docking, haggling, and swearing. Your accent outs you instantly.
 338. Running Down Corridors, 0.4, Doctor Who
-#(Tag:movement)Run down corridors with purpose while shouting explanations. Slightly faster when pursued.
+#(Tag:movement)You know how to run down corridors with purpose while shouting explanations. You are slightly faster when pursued and never lose your breath mid-explanation.
 339. Small Talk, 0.2, Generic
 #Sustain conversations about the weather indefinitely. Any other topic ends them.
 340. Power Nap, 0.3, Generic
